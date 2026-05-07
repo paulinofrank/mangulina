@@ -7,67 +7,35 @@ import { useEffect, useState } from "react"
 import { supabase } from "@/lib/supabase"
 
 export default function HomePage() {
-  const [topArtists, setTopArtists] = useState<any[]>([])
-  const [regions, setRegions] = useState<any[]>([])
-  const [isLoadingArtists, setIsLoadingArtists] = useState(true)
+  const [artists, setArtists] = useState<any[]>([])
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    const fetchTopArtists = async () => {
+    const fetchArtists = async () => {
       try {
         const { data, error } = await supabase
-          .from('artists')
-          .select('id, name, origin_region, image_url, views')
-          .order('views', { ascending: false })
+          .from("artists")
+          .select("id, name, origin_region, image_url, views")
+          .order("views", { ascending: false })
           .limit(6)
 
         if (!error && data) {
-          setTopArtists(data)
+          setArtists(data)
         }
       } catch (err) {
         console.error(err)
       } finally {
-        setIsLoadingArtists(false)
+        setIsLoading(false)
       }
     }
 
-    const fetchRegions = async () => {
-      const { data, error } = await supabase
-        .from("artists")
-        .select("origin_region")
-        .not("origin_region", "is", null)
-
-      if (error || !data) return
-
-      const regionMap: Record<string, number> = {}
-
-      data.forEach((row) => {
-        if (!regionMap[row.origin_region]) {
-          regionMap[row.origin_region] = 1
-        } else {
-          regionMap[row.origin_region]++
-        }
-      })
-
-      // Convert to array + alphabetical sort
-      const regions = Object.entries(regionMap)
-        .map(([region, count]) => ({
-          origin_region: region,
-          count
-        }))
-        .sort((a, b) => a.origin_region.localeCompare(b.origin_region))
-
-      setRegions(regions)
-    }
-
-    fetchTopArtists()
-    fetchRegions()
+    fetchArtists()
   }, [])
 
-  const featuredArtist = topArtists[0]
+  const featuredArtist = artists[0]
 
   return (
     <div className="min-h-screen bg-transparent relative overflow-hidden">
-
       {/* Gradient Corners */}
       <div className="fixed inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-96 h-96 bg-linear-to-br from-[#002D62] via-[#002D62]/50 to-transparent rounded-full blur-3xl opacity-20" />
@@ -83,13 +51,13 @@ export default function HomePage() {
             <div className="mb-4 flex items-center gap-8">
 
               {/* Featured Artist Image */}
-              <div className="aspect-square w-full max-w-55 sm:max-w-75 mx-auto overflow-hidden rounded-xl">
+              <div className="w-100 h-100 rounded-lg shadow-2xl border border-black/20 overflow-hidden">
                 {featuredArtist ? (
                   <Image
-                    src={featuredArtist.image_url || "/placeholder.png"}
+                    src={featuredArtist.image_url}
                     alt={featuredArtist.name}
-                    width={500}
-                    height={500}
+                    width={300}
+                    height={300}
                     className="object-cover w-full h-full"
                   />
                 ) : (
@@ -109,7 +77,7 @@ export default function HomePage() {
 
                 <div className="flex items-center gap-4 mb-5 text-sm">
                   <span className="text-gray-600 font-semibold">
-                    {featuredArtist?.origin_region || "DL"}
+                    {featuredArtist?.origin_region || "Dominican Legend"}
                   </span>
                   <span className="text-gray-600 font-semibold">
                     {featuredArtist?.genre || "Merengue"}
@@ -120,21 +88,17 @@ export default function HomePage() {
                   Discover the greatest artists from Dominican music history with detailed information and cultural context.
                 </p>
 
-                {/* FLEX LINKS (NOT BUTTONS) */}
-                <div className="flex items-center gap-3">
-  <button className="flex items-center gap-2 bg-[#8B0000] hover:bg-[#6B0000] text-white font-semibold px-7 py-2.5 rounded-full shadow-sm transition-colors">
-    <Play className="w-4 h-4 fill-current" /> Play
-  </button>
-
-  <Link
-    href={`/artists/${featuredArtist?.id || ""}`}
-    className="flex items-center bg-[#002D62] hover:bg-[#001A3A] text-white font-semibold px-7 py-2.5 rounded-full shadow-sm transition-colors"
-  >
-    More Info
-  </Link>
-</div>
-
-
+                <div className="flex gap-3">
+                  <button className="flex items-center gap-2 bg-[#8B0000] hover:bg-[#6B0000] text-white font-semibold px-7 py-2.5 rounded-full shadow-sm transition-colors">
+                    <Play className="w-4 h-4 fill-current" /> Play
+                  </button>
+                  <Link
+                    href={`/artists/${featuredArtist?.id || ""}`}
+                    className="bg-[#002D62] hover:bg-[#001A3A] text-white font-semibold px-7 py-2.5 rounded-full shadow-sm transition-colors"
+                  >
+                    More Info
+                  </Link>
+                </div>
               </div>
 
             </div>
@@ -154,9 +118,9 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-none sm:grid sm:grid-cols-3 lg:grid-cols-6 sm:gap-5">
-            {topArtists.map((artist) => (
-              <Link key={artist.id} href={`/artists/${artist.id}`} className="group snap-start shrink-0 w-35 sm:w-auto">
+          <div className="grid gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+            {artists.map((artist) => (
+              <Link key={artist.id} href={`/artists/${artist.id}`} className="group">
                 <div className="aspect-square bg-white rounded-lg overflow-hidden mb-3 relative shadow-lg hover:shadow-xl transition-all group-hover:scale-105 border border-black/15 group-hover:border-[#8B0000]">
                   {artist.image_url ? (
                     <Image
@@ -174,7 +138,7 @@ export default function HomePage() {
                   {artist.name}
                 </h3>
                 <p className="text-xs text-gray-600 mt-1">
-                  {artist.origin_region || "Falta lugar de origen"}
+                  {artist.genre || "Dominican Artist"}
                 </p>
               </Link>
             ))}
@@ -190,9 +154,9 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-none sm:grid sm:grid-cols-3 lg:grid-cols-5 sm:gap-5">
-            {topArtists.map((artist) => (
-              <Link key={artist.id} href={`/artists/${artist.id}`} className="group snap-start shrink-0 w-35 sm:w-auto">
+          <div className="grid gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
+            {artists.map((artist) => (
+              <Link key={artist.id} href={`/artists/${artist.id}`} className="group">
                 <div className="aspect-square bg-white rounded-lg overflow-hidden mb-3 relative shadow-lg hover:shadow-xl transition-all group-hover:scale-105 border border-black/15 group-hover:border-[#8B0000]">
                   {artist.image_url ? (
                     <Image
@@ -210,41 +174,18 @@ export default function HomePage() {
                   {artist.name}
                 </h4>
                 <p className="text-xs text-gray-600 mt-1">
-                  {artist.origin_region || "Falta lugar de origen"}
+                  {artist.genre || "Dominican Legend"}
                 </p>
               </Link>
             ))}
           </div>
         </section>
 
-        {/* Browse by Region (DYNAMIC + FIXED WIDTH + TIGHTER SPACING) */}
-<section className="rounded-3xl border border-black/10 bg-white/85 p-6 shadow-lg sm:p-8">
-  <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#002D62]/25">
-    <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Browse by Region</h2>
-  </div>
-
-  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-    {regions.map((r) => (
-      <Link
-        key={r.origin_region}
-        href={`/artists?region=${encodeURIComponent(r.origin_region)}`}
-        className="group block rounded-lg px-3 py-2.5 bg-white border border-black/10 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all w-full"
-      >
-        <span className="text-[#002D62] font-semibold group-hover:text-[#8B0000] transition-colors">
-          → {r.origin_region} ({r.count})
-        </span>
-      </Link>
-    ))}
-  </div>
-</section>
-
-
         {/* Browse Categories */}
         <section className="bg-white/90 rounded-3xl p-8 sm:p-10 border border-[#002D62]/20 shadow-xl">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900 mb-8 pb-4 border-b border-[#8B0000]/25">
             Browse Artists by Category
           </h2>
-
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { label: "Genre", items: ["Merengue", "Bachata", "Salsa", "Dembow"], color: "#002D62" },
@@ -260,7 +201,6 @@ export default function HomePage() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-4" style={{ color: category.color }}>
                   {category.label}
                 </h3>
-
                 <div className="space-y-2.5">
                   {category.items.map((item) => (
                     <Link
@@ -275,12 +215,10 @@ export default function HomePage() {
                     </Link>
                   ))}
                 </div>
-
               </div>
             ))}
           </div>
         </section>
-
       </div>
     </div>
   )

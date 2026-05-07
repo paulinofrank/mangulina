@@ -74,7 +74,7 @@ export default function Navbar() {
         <Link href="/" className="pr-6 border-r border-white/30 flex items-center">
           <Image 
             src="/icon0.svg" 
-            alt="Mangulina.do Logo" 
+            alt="Mangulina Logo" 
             width={28} 
             height={28} 
             className="w-7 h-7 object-contain"

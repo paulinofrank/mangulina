@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-outfit" });
 const instrumentSerif = Instrument_Serif({ subsets: ["latin"], weight: "400", variable: "--font-serif" });
 
 export const metadata: Metadata = {
-  title: "Dominican Music Database | Mangulina.do",
+  title: "Dominican Music Database | Mangulina",
   description: "Explore artists and songs_old with lyrics, translations, and cultural notes.",
 };
 

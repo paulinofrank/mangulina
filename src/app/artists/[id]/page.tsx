@@ -21,6 +21,13 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
 
   if (error || !artist) return notFound();
 
+  // Increment views when page is visited using RPC
+  if (artist.id) {
+    await supabase.rpc('increment_artist_views', { row_id: artist.id }).catch(() => {
+      // Silently fail if RPC doesn't exist, don't block rendering
+    });
+  }
+
   return (
     <div className="min-h-screen bg-[#fbfbfd] font-outfit text-[#1d1d1f]">
       <header className="fixed top-0 w-full z-50 p-8 md:p-12 flex justify-between items-center mix-blend-difference text-white pointer-events-none">
@@ -124,7 +131,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
 
       <footer className="p-20 text-center border-t border-black/5">
         <div className="text-[10px] font-bold uppercase tracking-[0.4em] opacity-20">
-          domidb.do © 2026
+          domidb © 2026
         </div>
       </footer>
     </div>

@@ -9,14 +9,14 @@ export default function TopBanner() {
         <Link href="/" className="flex min-w-0 items-center gap-4 transition-opacity hover:opacity-90">
           <Image
             src="/icon0.svg"
-            alt="Mangulina.do logo"
+            alt="Mangulina logo"
             width={44}
             height={44}
             className="h-11 w-11 shrink-0 object-contain"
             priority
           />
           <div className="min-w-0">
-            <p className="truncate text-2xl font-semibold tracking-tight text-ink">Mangulina.do</p>
+            <p className="truncate text-2xl font-semibold tracking-tight text-ink">Mangulina</p>
             <p className="truncate text-xs font-semibold uppercase tracking-[0.24em] text-wikicrimson/80">
               Dominican Music Database
             </p>
@@ -34,7 +34,7 @@ export default function TopBanner() {
               type="search"
               placeholder="Search artists, songs, genres..."
               className="w-full bg-transparent text-sm text-ink outline-none placeholder:text-black/45"
-              aria-label="Search Mangulina.do"
+              aria-label="Search Mangulina"
             />
           </label>
         </div>

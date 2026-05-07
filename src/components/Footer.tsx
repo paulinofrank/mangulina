@@ -61,14 +61,14 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <Image
               src="/icon0.svg"
-              alt="Mangulina.do logo"
+              alt="Mangulina logo"
               width={24}
               height={24}
               className="h-6 w-6 object-contain"
             />
-            <span className="text-sm font-semibold tracking-tight text-ink">Mangulina.do</span>
+            <span className="text-sm font-semibold tracking-tight text-ink">Mangulina</span>
           </div>
-          <p className="text-xs text-ink/65">© 2026 Mangulina.do. Dominican music data, curated with care.</p>
+          <p className="text-xs text-ink/65">© 2026 Mangulina. Dominican music data, curated with care.</p>
         </div>
       </div>
     </footer>
