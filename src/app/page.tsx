@@ -86,11 +86,16 @@ export default function HomePage() {
               <div className="aspect-square w-full max-w-55 sm:max-w-75 mx-auto overflow-hidden rounded-xl">
                 {featuredArtist ? (
                   <Image
-                    src={featuredArtist.image_url || "/placeholder.png"}
+                    src={
+                      featuredArtist.image_url
+                        ? `${featuredArtist.image_url}?width=500`
+                        : "/placeholder.png"
+                    }
                     alt={featuredArtist.name}
                     width={500}
                     height={500}
                     className="object-cover w-full h-full"
+                    priority
                   />
                 ) : (
                   <div className="w-full h-full bg-gray-200 animate-pulse" />
@@ -120,20 +125,19 @@ export default function HomePage() {
                   Discover the greatest artists from Dominican music history with detailed information and cultural context.
                 </p>
 
-                {/* FLEX LINKS (NOT BUTTONS) */}
+                {/* Featured buttons (red + blue, rounded) */}
                 <div className="flex items-center gap-3">
-  <button className="flex items-center gap-2 bg-[#8B0000] hover:bg-[#6B0000] text-white font-semibold px-7 py-2.5 rounded-full shadow-sm transition-colors">
-    <Play className="w-4 h-4 fill-current" /> Play
-  </button>
+                  <button className="flex items-center gap-2 bg-[#8B0000] hover:bg-[#6B0000] text-white font-semibold px-7 py-2.5 rounded-full shadow-sm transition-colors">
+                    <Play className="w-4 h-4 fill-current" /> Play
+                  </button>
 
-  <Link
-    href={`/artists/${featuredArtist?.id || ""}`}
-    className="flex items-center bg-[#002D62] hover:bg-[#001A3A] text-white font-semibold px-7 py-2.5 rounded-full shadow-sm transition-colors"
-  >
-    More Info
-  </Link>
-</div>
-
+                  <Link
+                    href={`/artists/${featuredArtist?.id || ""}`}
+                    className="flex items-center bg-[#002D62] hover:bg-[#001A3A] text-white font-semibold px-7 py-2.5 rounded-full shadow-sm transition-colors"
+                  >
+                    More Info
+                  </Link>
+                </div>
 
               </div>
 
@@ -154,17 +158,22 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-none sm:grid sm:grid-cols-3 lg:grid-cols-6 sm:gap-5">
+          <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory scrollbar-none sm:grid sm:grid-cols-3 lg:grid-cols-6 sm:gap-4">
             {topArtists.map((artist) => (
-              <Link key={artist.id} href={`/artists/${artist.id}`} className="group snap-start shrink-0 w-35 sm:w-auto">
+              <Link
+                key={artist.id}
+                href={`/artists/${artist.id}`}
+                className="group snap-start shrink-0 w-32 sm:w-auto"
+              >
                 <div className="aspect-square bg-white rounded-lg overflow-hidden mb-3 relative shadow-lg hover:shadow-xl transition-all group-hover:scale-105 border border-black/15 group-hover:border-[#8B0000]">
                   {artist.image_url ? (
                     <Image
-                      src={artist.image_url}
+                      src={`${artist.image_url}?width=300`}
                       alt={artist.name}
                       width={300}
                       height={300}
                       className="object-cover w-full h-full"
+                      loading="lazy"
                     />
                   ) : (
                     <div className="w-full h-full bg-gray-200" />
@@ -190,17 +199,22 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-none sm:grid sm:grid-cols-3 lg:grid-cols-5 sm:gap-5">
+          <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory scrollbar-none sm:grid sm:grid-cols-3 lg:grid-cols-5 sm:gap-4">
             {topArtists.map((artist) => (
-              <Link key={artist.id} href={`/artists/${artist.id}`} className="group snap-start shrink-0 w-35 sm:w-auto">
+              <Link
+                key={artist.id}
+                href={`/artists/${artist.id}`}
+                className="group snap-start shrink-0 w-32 sm:w-auto"
+              >
                 <div className="aspect-square bg-white rounded-lg overflow-hidden mb-3 relative shadow-lg hover:shadow-xl transition-all group-hover:scale-105 border border-black/15 group-hover:border-[#8B0000]">
                   {artist.image_url ? (
                     <Image
-                      src={artist.image_url}
+                      src={`${artist.image_url}?width=300`}
                       alt={artist.name}
                       width={300}
                       height={300}
                       className="object-cover w-full h-full"
+                      loading="lazy"
                     />
                   ) : (
                     <div className="w-full h-full bg-gray-200" />
@@ -218,26 +232,25 @@ export default function HomePage() {
         </section>
 
         {/* Browse by Region (DYNAMIC + FIXED WIDTH + TIGHTER SPACING) */}
-<section className="rounded-3xl border border-black/10 bg-white/85 p-6 shadow-lg sm:p-8">
-  <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#002D62]/25">
-    <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Browse by Region</h2>
-  </div>
+        <section className="rounded-3xl border border-black/10 bg-white/85 p-6 shadow-lg sm:p-8">
+          <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#002D62]/25">
+            <h2 className="text-3xl font-semibold tracking-tight text-gray-900">Browse by Region</h2>
+          </div>
 
-  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-    {regions.map((r) => (
-      <Link
-        key={r.origin_region}
-        href={`/artists?region=${encodeURIComponent(r.origin_region)}`}
-        className="group block rounded-lg px-3 py-2.5 bg-white border border-black/10 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all w-full"
-      >
-        <span className="text-[#002D62] font-semibold group-hover:text-[#8B0000] transition-colors">
-          → {r.origin_region} ({r.count})
-        </span>
-      </Link>
-    ))}
-  </div>
-</section>
-
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {regions.map((r) => (
+              <Link
+                key={r.origin_region}
+                href={`/artists?region=${encodeURIComponent(r.origin_region)}`}
+                className="group block rounded-lg px-3 py-2.5 bg-white border border-black/10 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all w-full"
+              >
+                <span className="text-[#002D62] font-semibold group-hover:text-[#8B0000] transition-colors">
+                  → {r.origin_region} ({r.count})
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
 
         {/* Browse Categories */}
         <section className="bg-white/90 rounded-3xl p-8 sm:p-10 border border-[#002D62]/20 shadow-xl">

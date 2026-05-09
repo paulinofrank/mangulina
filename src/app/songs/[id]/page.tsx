@@ -84,7 +84,7 @@ export default async function SongPage({ params }: { params: Promise<{ id: strin
           {song.youtube_id ? (
             <MusicPlayer videoId={song.youtube_id} />
           ) : (
-            <div className="p-8 rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-md opacity-40 italic text-center text-xs tracking-widest">
+            <div className="p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md opacity-40 italic text-center text-xs tracking-widest">
               Audio retrieval in progress...
             </div>
           )}

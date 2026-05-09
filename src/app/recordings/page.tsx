@@ -48,7 +48,7 @@ export default function RecordingsPage() {
     <div className="max-w-5xl mx-auto px-6 py-10 font-outfit">
 
       {/* HEADER */}
-      <h1 className="text-3xl font-serif font-bold mb-6 text-(--color-ink)">
+      <h1 className="text-3xl font-serif font-bold mb-6 text-ink">
         Recordings
       </h1>
 
@@ -70,7 +70,7 @@ export default function RecordingsPage() {
 
                   {/* LEFT */}
                   <div>
-                    <div className="text-lg font-semibold text-(--color-ink)">
+                    <div className="text-lg font-semibold text-ink">
                       {rec.title}
                     </div>
 
@@ -96,7 +96,7 @@ export default function RecordingsPage() {
                 className={`px-4 py-2 rounded-lg font-semibold transition ${
                   currentPage === 1
                     ? "bg-black/10 text-black/30 cursor-not-allowed"
-                    : "bg-white/40 backdrop-blur-sm border hover:bg-white/60 text-(--color-ink)"
+                    : "bg-white/40 backdrop-blur-sm border hover:bg-white/60 text-ink"
                 }`}
               >
                 ← Previous
@@ -112,7 +112,7 @@ export default function RecordingsPage() {
                 className={`px-4 py-2 rounded-lg font-semibold transition ${
                   currentPage === totalPages
                     ? "bg-black/10 text-black/30 cursor-not-allowed"
-                    : "bg-white/40 backdrop-blur-sm border hover:bg-white/60 text-(--color-ink)"
+                    : "bg-white/40 backdrop-blur-sm border hover:bg-white/60 text-ink"
                 }`}
               >
                 Next →

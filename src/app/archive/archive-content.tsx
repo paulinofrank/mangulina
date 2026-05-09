@@ -134,7 +134,7 @@ export default function ArchiveContent() {
                     {song.artists_old?.name}
                   </Link>
 
-                  <Link href={`/songs_old/${song.id}`} className="flex-1 flex items-center gap-4 min-w-0 group/song">
+                  <Link href={`/songs/${song.id}`} className="flex-1 flex items-center gap-4 min-w-0 group/song">
                     <span className="text-xl font-serif italic text-ink/80 group-hover:text-ink truncate transition-colors">
                       {song.title}
                     </span>

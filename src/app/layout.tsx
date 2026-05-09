@@ -10,7 +10,7 @@ const instrumentSerif = Instrument_Serif({ subsets: ["latin"], weight: "400", va
 
 export const metadata: Metadata = {
   title: "Dominican Music Database | Mangulina",
-  description: "Explore artists and songs_old with lyrics, translations, and cultural notes.",
+  description: "Explore artists and songs with lyrics, translations, and cultural notes.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

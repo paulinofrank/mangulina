@@ -39,7 +39,7 @@ export default function RecordingsPage() {
     <div className="max-w-5xl mx-auto px-6 py-10 font-outfit">
 
       {/* HEADER */}
-      <h1 className="text-3xl font-serif font-bold mb-6 text-(--color-ink)">
+      <h1 className="text-3xl font-serif font-bold mb-6 text-ink">
         Recordings
       </h1>
 

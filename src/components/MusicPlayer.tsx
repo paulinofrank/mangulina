@@ -51,7 +51,7 @@ export default function MusicPlayer({ videoId }: { videoId: string }) {
   };
 
   return (
-    <section className="p-8 rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-md">
+    <section className="p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md">
       <div id="youtube-hidden-player" className="hidden"></div>
       
       <div className="flex items-center justify-between mb-8">
