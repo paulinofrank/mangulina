@@ -1,4 +1,4 @@
-import { supabase } from "@/lib/supabase"
+import { getSupabaseClient } from "@/lib/supabase"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
@@ -9,6 +9,7 @@ export default async function ArtistPage({
   params: { id: string }
 }) {
   const { id } = params
+  const supabase = getSupabaseClient()
 
   // Fetch from NEW artists table + NEW recordings table
   const { data: artist, error } = await supabase
@@ -25,17 +26,17 @@ export default async function ArtistPage({
   if (error || !artist) return notFound()
 
   // Increment views using RPC (fixed)
-  if (artist.id) {
+  if ((artist as any).id) {
     const { error: rpcError } = await supabase.rpc("increment_artist_views", {
-      row_id: artist.id,
-    })
+      row_id: (artist as any).id,
+    } as any)
     if (rpcError) {
       // silently fail
     }
   }
 
   // Normalize recordings + extract year from metadata if present
-  const recordings = (artist.recordings || [])
+  const recordings = ((artist as any).recordings || [])
     .map((rec: any) => ({
       ...rec,
       year: rec.metadata?.year || null,
@@ -47,10 +48,10 @@ export default async function ArtistPage({
 
       {/* Gradient Corners (same as homepage) */}
       <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-linear-to-br from-[#002D62] via-[#002D62]/50 to-transparent rounded-full blur-3xl opacity-20" />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-linear-to-bl from-[#8B0000] via-[#8B0000]/50 to-transparent rounded-full blur-3xl opacity-20" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-linear-to-tr from-[#8B0000] via-[#8B0000]/50 to-transparent rounded-full blur-3xl opacity-20" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-linear-to-tl from-[#002D62] via-[#002D62]/50 to-transparent rounded-full blur-3xl opacity-20" />
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-[#002D62] via-[#002D62]/50 to-transparent rounded-full blur-3xl opacity-20" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#8B0000] via-[#8B0000]/50 to-transparent rounded-full blur-3xl opacity-20" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-[#8B0000] via-[#8B0000]/50 to-transparent rounded-full blur-3xl opacity-20" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-[#002D62] via-[#002D62]/50 to-transparent rounded-full blur-3xl opacity-20" />
       </div>
 
       {/* Header */}
@@ -76,10 +77,10 @@ export default async function ArtistPage({
 
             {/* Artist Image */}
             <div className="aspect-square w-full max-w-80 mx-auto overflow-hidden rounded-2xl border border-black/10 shadow-lg">
-              {artist.image_url ? (
+              {(artist as any).image_url ? (
                 <Image
-                  src={`${artist.image_url}?width=600`}
-                  alt={artist.name}
+                  src={`${(artist as any).image_url}?width=600`}
+                  alt={(artist as any).name}
                   width={600}
                   height={600}
                   className="object-cover w-full h-full"
@@ -97,35 +98,35 @@ export default async function ArtistPage({
               </p>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-gray-900">
-                {artist.name}
+                {(artist as any).name}
               </h1>
 
               <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-gray-700">
-                {artist.origin_region && (
+                {(artist as any).origin_region && (
                   <span className="inline-flex items-center rounded-full border border-black/10 px-3 py-1 bg-white/80">
-                    {artist.origin_region}
+                    {(artist as any).origin_region}
                   </span>
                 )}
-                {artist.genre && (
+                {(artist as any).genre && (
                   <span className="inline-flex items-center rounded-full border border-black/10 px-3 py-1 bg-white/80">
-                    {artist.genre}
+                    {(artist as any).genre}
                   </span>
                 )}
-                {artist.birth_year && (
+                {(artist as any).birth_year && (
                   <span className="inline-flex items-center rounded-full border border-black/10 px-3 py-1 bg-white/80">
-                    Born / Formed: {artist.birth_year}
+                    Born / Formed: {(artist as any).birth_year}
                   </span>
                 )}
-                {artist.death_year && (
+                {(artist as any).death_year && (
                   <span className="inline-flex items-center rounded-full border border-black/10 px-3 py-1 bg-white/80">
-                    Passed: {artist.death_year}
+                    Passed: {(artist as any).death_year}
                   </span>
                 )}
               </div>
 
-              {artist.bio && (
+              {(artist as any).bio && (
                 <p className="text-gray-700 text-base leading-relaxed max-w-xl">
-                  {artist.bio}
+                  {(artist as any).bio}
                 </p>
               )}
             </div>
@@ -146,7 +147,7 @@ export default async function ArtistPage({
             </div>
 
             <p className="text-base leading-relaxed text-gray-800">
-              {artist.bio || "No biography available for this artist yet."}
+              {(artist as any).bio || "No biography available for this artist yet."}
             </p>
 
             <div className="grid grid-cols-2 gap-6 pt-4">
@@ -155,7 +156,7 @@ export default async function ArtistPage({
                   Born / Formed
                 </span>
                 <span className="text-lg font-medium text-gray-900">
-                  {artist.birth_year || "Unknown"}
+                  {(artist as any).birth_year || "Unknown"}
                 </span>
               </div>
               <div>
@@ -163,7 +164,7 @@ export default async function ArtistPage({
                   Status
                 </span>
                 <span className="text-lg font-medium text-gray-900">
-                  {artist.death_year ? `Passed ${artist.death_year}` : "Active / Unknown"}
+                  {(artist as any).death_year ? `Passed ${(artist as any).death_year}` : "Active / Unknown"}
                 </span>
               </div>
             </div>

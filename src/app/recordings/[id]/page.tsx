@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabase";
+import { getSupabaseClient } from "@/lib/supabase";
 import Link from "next/link";
 
 export default function RecordingsPage() {
   const [recordings, setRecordings] = useState<any[]>([]);
+  const supabase = getSupabaseClient();
 
   useEffect(() => {
     fetchRecordings();

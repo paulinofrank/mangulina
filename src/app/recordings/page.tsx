@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabase";
+import { getSupabaseClient } from "@/lib/supabase";
 import Link from "next/link";
 
+const supabase = getSupabaseClient();
 const ITEMS_PER_PAGE = 25;
 
 export default function RecordingsPage() {
@@ -18,8 +19,8 @@ export default function RecordingsPage() {
   async function fetchRecordings() {
     const { data } = await supabase
       .from("recordings")
-      .select("id, title, youtube_id")
-      .order("created_at", { ascending: false });
+      .select("id, title, recording_year, releases(cover_image_url)")
+      .order("recording_year", { ascending: false });
 
     setRecordings(data || []);
     setLoading(false);
@@ -47,7 +48,6 @@ export default function RecordingsPage() {
   return (
     <div className="max-w-5xl mx-auto px-6 py-10 font-outfit">
 
-      {/* HEADER */}
       <h1 className="text-3xl font-serif font-bold mb-6 text-ink">
         Recordings
       </h1>
@@ -56,7 +56,6 @@ export default function RecordingsPage() {
         Browse your music catalog
       </p>
 
-      {/* LIST */}
       <div>
         {loading ? (
           <div className="text-center text-black/60 py-8">Loading...</div>
@@ -68,18 +67,24 @@ export default function RecordingsPage() {
               <Link key={rec.id} href={`/recordings/${rec.id}`}>
                 <div className="p-4 mb-3 rounded-lg bg-white/40 backdrop-blur-sm border hover:bg-white/60 transition flex justify-between items-center">
 
-                  {/* LEFT */}
-                  <div>
-                    <div className="text-lg font-semibold text-ink">
-                      {rec.title}
-                    </div>
+                  <div className="flex items-center gap-4">
+                    <img
+                      src={rec.releases?.cover_image_url || "/placeholder.png"}
+                      alt={rec.title}
+                      className="w-14 h-14 rounded-md object-cover border"
+                    />
 
-                    <div className="text-sm text-black/60">
-                      Recording
+                    <div>
+                      <div className="text-lg font-semibold text-ink">
+                        {rec.title}
+                      </div>
+
+                      <div className="text-sm text-black/60">
+                        {rec.recording_year || "Unknown year"}
+                      </div>
                     </div>
                   </div>
 
-                  {/* RIGHT ICON */}
                   <div className="text-black/40 text-sm">
                     ▶
                   </div>
@@ -88,7 +93,6 @@ export default function RecordingsPage() {
               </Link>
             ))}
 
-            {/* PAGINATION */}
             <div className="mt-12 flex items-center justify-between">
               <button
                 onClick={goToPreviousPage}
