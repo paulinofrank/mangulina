@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef } from "react"
 import Link from "next/link"
 import SectionTitle from "@/components/atoms/SectionTitle"
@@ -13,7 +15,8 @@ export default function TopArtistsSection({ topArtists }: TopArtistsSectionProps
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current
-      const scrollTo = direction === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth
+      // Scrolling by clientWidth * 0.8 ensures we don't skip cards entirely
+      const scrollTo = direction === "left" ? scrollLeft - clientWidth * 0.8 : scrollLeft + clientWidth * 0.8
       scrollRef.current.scrollTo({ left: scrollTo, behavior: "smooth" })
     }
   }
@@ -21,9 +24,6 @@ export default function TopArtistsSection({ topArtists }: TopArtistsSectionProps
   return (
     <section className="relative mx-6 overflow-hidden rounded-3xl border border-black/10 bg-white/90 shadow-xl sm:mx-12">
       <div className="px-8 py-10 sm:px-12 sm:py-12">
-        {/* REMOVED 'max-w-4xl' HERE. 
-            By using 'w-full', the content will now span the entire inside of the white card.
-        */}
         <div className="w-full">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-[#002D62]/25">
             <SectionTitle>Top 10 Artists</SectionTitle>
@@ -55,17 +55,21 @@ export default function TopArtistsSection({ topArtists }: TopArtistsSectionProps
             </div>
           </div>
 
-          {/* The Carousel now spans the full width.
-              The 'w-64 sm:w-80' ensures the cards stay large.
+          {/* THE FIX: 
+              1. Removed snap-mandatory (it fights with custom widths sometimes).
+              2. Changed card widths to percentages.
           */}
           <div 
             ref={scrollRef}
-            className="flex w-full gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4"
+            className="flex w-full gap-6 overflow-x-auto scrollbar-none pb-4"
           >
             {topArtists.map((artist) => (
               <div 
                 key={artist.id} 
-                className="snap-start shrink-0 w-64 sm:w-80" 
+                className="shrink-0 transition-transform duration-300 hover:scale-[1.02]
+                           w-[70%] 
+                           sm:w-[35%] 
+                           lg:w-[22%]" 
               >
                 <ArtistCard artist={artist} titleAs="h3" />
               </div>

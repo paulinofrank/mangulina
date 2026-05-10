@@ -28,7 +28,6 @@ function ArtistsContent() {
   useEffect(() => {
     const fetchArtists = async () => {
       setLoading(true);
-
       try {
         let query = supabase
           .from('artists')
@@ -55,84 +54,77 @@ function ArtistsContent() {
     fetchArtists();
   }, [region, search, supabase]);
 
-  const filterLabel = region
-    ? `Region: ${region}`
-    : search
-      ? `Search: ${search}`
-      : 'All Artists';
-
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
       {/* HEADER */}
-      <div className="mb-12 border-b border-black/10 pb-8">
-        <h1 className="text-5xl font-semibold tracking-tight text-ink mb-2">
+      <div className="mb-12 border-b border-black/5 pb-10">
+        <h1 className="text-6xl font-black tracking-tighter text-[#002D62] mb-3">
           Artists
         </h1>
-        <p className="text-sm text-black/60">
-          {filterLabel} • {loading ? '...' : `${totalCount} artist${totalCount !== 1 ? 's' : ''}`}
-        </p>
-      </div>
-
-      {(region || search) && (
-        <div className="mb-8 inline-block">
-          <Link
-            href="/artists"
-            className="text-sm px-4 py-2 rounded-full bg-wikicrimson/10 text-wikicrimson hover:bg-wikicrimson/20 transition-colors border border-wikicrimson/30"
-          >
-            ✕ Clear Filters
-          </Link>
+        <div className="flex items-center gap-4">
+          <span className="bg-[#CE1126]/10 text-[#CE1126] text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
+            {region || (search ? 'Search' : 'Archive')}
+          </span>
+          <p className="text-xs font-bold text-gray-400 uppercase tracking-tight">
+             {loading ? 'Consulting Ledger...' : `${totalCount} entries indexed`}
+          </p>
         </div>
-      )}
+      </div>
 
       {/* ARTISTS GRID */}
       <div>
         {loading ? (
-          <div className="text-center py-20 text-black/40">
-            <div className="inline-block animate-spin">⏳</div> Loading artists...
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+            {[...Array(10)].map((_, i) => (
+              <div key={i} className="animate-pulse space-y-4">
+                <div className="aspect-square bg-gray-100 rounded-4xl" />
+                <div className="h-4 bg-gray-100 rounded w-2/3" />
+              </div>
+            ))}
           </div>
         ) : artists.length > 0 ? (
-          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             {artists.map((artist) => (
-              <Link key={artist.id} href={`/artists/${artist.id}`} className="group">
-                <div className="aspect-square bg-white rounded-lg overflow-hidden mb-3 relative shadow-lg hover:shadow-xl transition-all group-hover:scale-105 border border-black/15 group-hover:border-wikicrimson">
+              <Link key={artist.id} href={`/artists/${artist.id}`} className="group relative">
+                <div className="aspect-square bg-white rounded-4xl overflow-hidden mb-4 relative shadow-sm group-hover:shadow-2xl transition-all duration-500 border border-black/5 group-hover:border-[#CE1126]/30">
                   {artist.image_url ? (
                     <Image
                       src={`${artist.image_url}?width=400`}
                       alt={artist.name}
-                      width={400}
-                      height={400}
-                      className="object-cover w-full h-full"
-                      loading="lazy"
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                      sizes="(max-width: 768px) 100vw, 20vw"
                     />
                   ) : (
-                    <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                      <span className="text-gray-400 text-sm">No Image</span>
+                    <div className="w-full h-full bg-gray-50 flex items-center justify-center text-gray-200">
+                      <span className="text-4xl font-serif">M</span>
                     </div>
                   )}
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-linear-to-t from-[#002D62]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                     <span className="text-white text-[10px] font-black uppercase tracking-[0.2em]">View Profile →</span>
+                  </div>
                 </div>
 
-                <h3 className="text-sm font-semibold text-ink group-hover:text-wikicrimson line-clamp-2 transition-colors">
+                <h3 className="text-lg font-bold text-[#002D62] group-hover:text-[#CE1126] transition-colors leading-tight">
                   {artist.name}
                 </h3>
-
-                <p className="text-xs text-black/60 mt-1">
-                  {artist.origin_region || 'Dominican Republic'}
-                </p>
-
-                <p className="text-xs text-black/40 mt-1">
-                  {artist.views?.toLocaleString() || '0'} views
-                </p>
+                <div className="flex items-center justify-between mt-2">
+                  <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest">
+                    {artist.origin_region || 'Dominican Republic'}
+                  </p>
+                  <span className="text-[10px] font-bold text-gray-300">
+                    {artist.views?.toLocaleString() || '0'} 👁️
+                  </span>
+                </div>
               </Link>
             ))}
           </div>
         ) : (
-          <div className="text-center py-20 text-black/40">
-            <p className="text-base mb-4">No artists found</p>
-            <Link
-              href="/artists"
-              className="text-sm text-wikicrimson hover:text-wikicrimson/80 underline"
-            >
-              View all artists
+          <div className="py-32 text-center">
+            <p className="text-gray-400 italic">No artists found in this sector of the archive.</p>
+            <Link href="/artists" className="mt-4 inline-block text-[#CE1126] font-black text-xs uppercase tracking-widest border-b border-[#CE1126]">
+              Reset Search
             </Link>
           </div>
         )}
@@ -143,7 +135,7 @@ function ArtistsContent() {
 
 export default function ArtistsPage() {
   return (
-    <Suspense fallback={<div className="max-w-7xl mx-auto px-6 py-12 text-center text-black/40">Loading artists...</div>}>
+    <Suspense fallback={<div className="max-w-7xl mx-auto px-6 py-24 text-center text-gray-400 font-black uppercase tracking-widest">Loading Mangulina Archive...</div>}>
       <ArtistsContent />
     </Suspense>
   );

@@ -1,74 +1,51 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Globe, Music2, Radio, Star } from "lucide-react";
 
-const socialLinks = [
-  { label: "Instagram", href: "#", icon: Star },
-  { label: "YouTube", href: "#", icon: Radio },
-  { label: "Facebook", href: "#", icon: Globe },
-  { label: "Sound", href: "#", icon: Music2 },
-];
-
-const helpfulLinks = [
-  { label: "About", href: "#" },
-  { label: "Discover", href: "/recordings" },
-  { label: "Artists", href: "/artists" },
-  { label: "Archive", href: "/archive" },
-  { label: "Support", href: "#" },
-];
-
-const legalLinks = [
-  { label: "Terms of Use", href: "#" },
-  { label: "Privacy Policy", href: "#" },
-  { label: "Cookie Preferences", href: "#" },
-  { label: "Accessibility", href: "#" },
-];
-
 export default function Footer() {
   return (
     <footer className="mt-20 border-t border-black/10 bg-white/70 backdrop-blur-sm">
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-6 py-12 sm:px-10">
-        <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-start">
-          {socialLinks.map(({ label, href, icon: Icon }) => (
-            <Link
-              key={label}
-              href={href}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-white text-ink/70 shadow-sm transition-all hover:-translate-y-0.5 hover:border-flagblue/40 hover:text-flagblue"
-              aria-label={label}
-            >
-              <Icon className="h-4 w-4" />
-            </Link>
-          ))}
-        </div>
-
-        <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-medium text-ink/75">
-          {helpfulLinks.map((link) => (
-            <Link key={link.label} href={link.href} className="transition-colors hover:text-wikicrimson">
-              {link.label}
-            </Link>
-          ))}
-        </div>
-
-        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-ink/60">
-          {legalLinks.map((link) => (
-            <Link key={link.label} href={link.href} className="transition-colors hover:text-ink">
-              {link.label}
-            </Link>
-          ))}
-        </div>
-
-        <div className="flex flex-wrap items-center justify-between gap-4 border-t border-black/10 pt-6">
-          <div className="flex items-center gap-2">
-            <Image
-              src="/icon0.svg"
-              alt="Mangulina logo"
-              width={24}
-              height={24}
-              className="h-6 w-6 object-contain"
-            />
-            <span className="text-sm font-semibold tracking-tight text-ink">Mangulina</span>
+      {/* REMOVED max-w-7xl. 
+          Using ONLY mx-6 sm:mx-12 to match the Genre sections' natural stretch.
+      */}
+      <div className="mx-6 sm:mx-12 py-12">
+        <div className="flex flex-col gap-10">
+          
+          {/* Social Icons */}
+          <div className="flex items-center gap-4">
+            {[
+              { icon: Star, label: "IG" },
+              { icon: Radio, label: "YT" },
+              { icon: Globe, label: "FB" },
+              { icon: Music2, label: "Sound" }
+            ].map((social, i) => (
+              <div key={i} className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-white text-[#002D62] shadow-sm transition-transform hover:-translate-y-1">
+                <social.icon className="h-4 w-4" />
+              </div>
+            ))}
           </div>
-          <p className="text-xs text-ink/65">© 2026 Mangulina. Dominican music data, curated with care.</p>
+
+          {/* Navigation */}
+          <div className="flex flex-wrap gap-x-8 gap-y-2 text-sm font-bold text-[#002D62]">
+            <Link href="/about" className="hover:text-[#CE1126]">About</Link>
+            <Link href="/recordings" className="hover:text-[#CE1126]">Discover</Link>
+            <Link href="/artists" className="hover:text-[#CE1126]">Artists</Link>
+            <Link href="/archive" className="hover:text-[#CE1126]">Archive</Link>
+            <Link href="/support" className="hover:text-[#CE1126]">Support</Link>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="flex items-center justify-between border-t border-black/5 pt-8">
+            <div className="flex items-center gap-2">
+              <Image src="/icon0.svg" alt="logo" width={24} height={24} />
+              <span className="text-sm font-bold tracking-tight text-[#002D62]">Mangulina&trade;</span>
+            </div>
+            <p className="text-[10px] uppercase tracking-widest text-gray-400">
+              Dominican Music Database &copy; 2026
+            </p>
+          </div>
         </div>
       </div>
     </footer>

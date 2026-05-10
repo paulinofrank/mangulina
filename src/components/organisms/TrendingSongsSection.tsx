@@ -6,20 +6,15 @@ import SectionTitle from "@/components/atoms/SectionTitle";
 import Image from "next/image";
 
 // --- Types ---
-// Defined locally to ensure compatibility with Supabase nested joins
 interface Song {
   id: string | number;
   title: string;
   views?: number;
   release?: {
     cover_image_url?: string | null;
-    artist?: {
-      name: string;
-    } | { name: string }[];
+    artist?: { name: string } | { name: string }[];
   } | { cover_image_url?: string | null; artist?: { name: string } | { name: string }[] }[];
-  artist?: {
-    name: string;
-  } | { name: string }[];
+  artist?: { name: string } | { name: string }[];
 }
 
 interface TrendingSongsSectionProps {
@@ -32,8 +27,7 @@ export default function TrendingSongsSection({ songs }: TrendingSongsSectionProp
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current;
-      const scrollTo =
-        direction === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth;
+      const scrollTo = direction === "left" ? scrollLeft - clientWidth * 0.8 : scrollLeft + clientWidth * 0.8;
       scrollRef.current.scrollTo({ left: scrollTo, behavior: "smooth" });
     }
   };
@@ -78,44 +72,51 @@ export default function TrendingSongsSection({ songs }: TrendingSongsSectionProp
           {/* Horizontal Scroll Container */}
           <div
             ref={scrollRef}
-            className="flex w-full gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4"
+            className="flex w-full gap-6 overflow-x-auto scrollbar-none pb-4"
           >
             {songs.map((song: Song) => {
-              // 1. Get the release (handle array vs object returned by Supabase)
+              // Normalize Release Object
               const rel = Array.isArray(song.release) ? song.release[0] : song.release;
-
-              // 2. Multi-path artist name fallback
-              // Checks: Nested Alias -> Nested Table Name -> Direct Join -> Fallback
+              
+              // Normalize Artist Name
               const artistName =
                 (Array.isArray(rel?.artist) ? rel.artist[0]?.name : (rel?.artist as any)?.name) ||
                 (Array.isArray(song.artist) ? (song.artist[0] as any)?.name : (song.artist as any)?.name) ||
                 "Unknown Artist";
 
-              const coverUrl = rel?.cover_image_url;
+              // 1. IMPROVED: Cover URL Protection (Handles empty strings and 'null' values)
+              const coverUrl = (rel?.cover_image_url && rel.cover_image_url !== "" && rel.cover_image_url !== "null") 
+                ? rel.cover_image_url 
+                : null;
 
               return (
                 <Link
                   key={song.id}
                   href={`/recordings/${song.id}`}
-                  className="group snap-start shrink-0 w-64 sm:w-80"
+                  className="group shrink-0 transition-transform duration-300 hover:scale-[1.02]
+                             w-[70%] 
+                             sm:w-[35%] 
+                             lg:w-[22%]" 
                 >
-                  {/* Cover Image Container */}
+                  {/* Image Container */}
                   <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gray-100 border border-black/5 shadow-sm">
                     {coverUrl ? (
                       <Image
                         src={coverUrl}
                         alt={song.title}
                         fill
+                        // 2. IMPROVED: Added sizes to help Next.js optimize the fetch for responsive widths
+                        sizes="(max-width: 640px) 70vw, (max-width: 1024px) 35vw, 22vw"
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (
-                      <div className="flex items-center justify-center h-full bg-gray-200 text-gray-400 italic text-xs">
+                      <div className="flex flex-center items-center justify-center h-full bg-gray-200 text-gray-400 italic text-[10px] font-black uppercase tracking-widest">
                         No Cover
                       </div>
                     )}
                   </div>
 
-                  {/* Metadata Section */}
+                  {/* Metadata */}
                   <div className="mt-4 px-1">
                     <h4 className="font-bold text-base text-[#002D62] truncate group-hover:text-[#8B0000] transition-colors">
                       {song.title}
@@ -123,7 +124,7 @@ export default function TrendingSongsSection({ songs }: TrendingSongsSectionProp
                     <p className="text-sm text-gray-600 truncate mt-1">
                       {artistName}
                     </p>
-                    <p className="text-xs text-gray-400 mt-2 font-medium">
+                    <p className="text-[10px] font-black text-gray-400 mt-2 uppercase tracking-wider">
                       {song.views?.toLocaleString() ?? 0} views
                     </p>
                   </div>

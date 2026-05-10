@@ -1,34 +1,31 @@
-import Image from "next/image"
+import Image from "next/image";
+import { FeaturedArtist } from "../organisms/FeaturedArtistSection";
 
-type FeaturedArtist = {
-  name: string
-  image_url: string | null
-}
-
-type FeaturedArtistImageProps = {
-  featuredArtist?: FeaturedArtist | null
+interface FeaturedArtistImageProps {
+  featuredArtist: FeaturedArtist | null;
 }
 
 export default function FeaturedArtistImage({ featuredArtist }: FeaturedArtistImageProps) {
   return (
-    <div className="aspect-square w-full max-w-55 sm:max-w-75 mx-auto overflow-hidden rounded-xl bg-gray-100">
-      {featuredArtist ? (
+    /* FIX: Added 'aspect-square' and 'w-full'. 
+      On mobile, without a fixed height or aspect ratio, 
+      a relative container with a 'fill' image collapses to 0px.
+    */
+    <div className="relative w-full aspect-square sm:aspect-auto sm:h-full min-h-75 rounded-2xl overflow-hidden shadow-lg border border-black/5 bg-gray-100">
+      {featuredArtist?.image_url ? (
         <Image
-          src={
-            featuredArtist.image_url
-              ? `${featuredArtist.image_url}?width=500`
-              : "/placeholder.png"
-          }
+          src={featuredArtist.image_url}
           alt={featuredArtist.name || "Featured Artist"}
-          width={500}
-          height={500}
-          className="object-cover w-full h-full transition-opacity duration-500"
+          fill
+          className="object-cover transition-transform duration-700 hover:scale-105"
           priority
+          sizes="(max-width: 640px) 100vw, 50vw"
         />
       ) : (
-        // Loading state: shows while Supabase is fetching the data
-        <div className="w-full h-full bg-gray-200 animate-pulse" />
+        <div className="flex h-full w-full items-center justify-center text-gray-400 italic text-sm">
+          No Image Available
+        </div>
       )}
     </div>
-  )
+  );
 }

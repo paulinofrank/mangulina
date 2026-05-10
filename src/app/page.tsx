@@ -6,7 +6,7 @@ import { getSupabaseClient } from "@/lib/supabase";
 import FeaturedArtistSection from "@/components/organisms/FeaturedArtistSection";
 import TopArtistsSection from "@/components/organisms/TopArtistsSection";
 import TrendingSongsSection from "@/components/organisms/TrendingSongsSection";
-import BrowseCategoriesSection from "@/components/organisms/BrowseCategoriesSection";
+import BrowseByGenreSection from "@/components/organisms/BrowseByGenreSection";
 import BrowseByRegionSection from "@/components/organisms/BrowseByRegionSection";
 
 import type { Artist } from "@/types/Artist";
@@ -95,18 +95,18 @@ export default function HomePage() {
   if (loading) {
     return (
       <div className="flex h-screen items-center justify-center text-gray-400">
-        <div className="animate-pulse font-medium">Loading DOMIDB…</div>
+        <div className="animate-pulse font-medium">Loading Mangulina&trade;…</div>
       </div>
     );
   }
 
-  return (
-    <main className="space-y-16 p-6">
+return (
+    <main className="space-y-16 p-6 pb-[40vh]"> {/* Added pb-[40vh] */}
       <FeaturedArtistSection featuredArtist={featuredArtist} />
       <TopArtistsSection topArtists={topArtists} />
       <TrendingSongsSection songs={trendingSongs} />
       <BrowseByRegionSection regions={regions} />
-      <BrowseCategoriesSection />
-    </main>
+      <BrowseByGenreSection />
+       </main>
   );
 }

@@ -1,8 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Move it to the root level if experimental didn't work
+  // If it still warns, you can safely remove it; it's mostly for HMR/Fast Refresh
+  // experimental: { }, 
+  
   images: {
-    unoptimized: true, // ← makes localhost image loading MUCH faster
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
