@@ -24,7 +24,8 @@ export default function BrowseByRegionSection({ regions }: BrowseByRegionSection
         {validRegions.map((region) => (
           <Link
             key={region.name}
-            href={`/regions/${encodeURIComponent(region.name.toLowerCase())}`}
+            // Updated to point to /artists with the region query parameter
+            href={`/artists?region=${encodeURIComponent(region.name)}`}
             className="group relative flex items-center justify-between p-4 rounded-2xl border border-black/5 bg-gray-50 transition-all duration-300 hover:bg-[#002D62] hover:shadow-md hover:-translate-y-1"
           >
             <span className="relative z-10 font-bold text-[#002D62] group-hover:text-white transition-colors truncate">

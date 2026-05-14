@@ -44,7 +44,7 @@ export default function BrowseByGenreSection() {
       {/* Separate Christian Music Section */}
       <div className="pt-4 pb-12">
         <Link
-          href="/genres/musica-cristiana"
+          href="/artists?religious=true&page=1"
           /* Shadow: Soft indigo bloom to make it feel special */
           className="group relative flex w-full items-center justify-between overflow-hidden rounded-3xl border border-black/5 bg-white p-8 transition-all hover:border-[#7C3AED]/30"
           style={{ 

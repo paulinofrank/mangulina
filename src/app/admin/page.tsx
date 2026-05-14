@@ -1,26 +1,34 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabase';
+import { getSupabaseClient } from '@/lib/supabase';
 
 export default function AdminDashboard() {
+  const supabase = getSupabaseClient();
+  
   // Data State
   const [artists, setArtists] = useState<any[]>([]);
   const [featuredId, setFeaturedId] = useState<string>('');
   const [loading, setLoading] = useState(false);
 
-  // Form State for New Artist
-  const [newName, setNewName] = useState('');
-  const [newRegion, setNewRegion] = useState('');
-  const [newGenre, setNewGenre] = useState('');
+  // Form State aligned with public.artists schema
+  const [selectedArtistId, setSelectedArtistId] = useState<string>('');
+  const [name, setName] = useState('');
+  const [province, setProvince] = useState('');
+  const [dateOfBirth, setDateOfBirth] = useState(''); 
+  const [birthPlace, setBirthPlace] = useState(''); 
+  const [bio, setBio] = useState('');
+  const [imageUrl, setImageUrl] = useState(''); // Mapping "picture" to image_url
+  const [isReligious, setIsReligious] = useState(false);
+  const [facebook, setFacebook] = useState('');
+  const [instagram, setInstagram] = useState('');
+  const [genres, setGenres] = useState(''); // Will be converted to text[]
 
-  // 1. Load data on mount
   useEffect(() => {
     fetchData();
   }, []);
 
   async function fetchData() {
-    // Get all artists for the list and dropdown
     const { data: artistsData, error: aError } = await supabase
       .from('artists')
       .select('*')
@@ -29,7 +37,6 @@ export default function AdminDashboard() {
     if (artistsData) setArtists(artistsData);
     if (aError) console.error('Error fetching artists:', aError);
 
-    // Get current featured artist
     const { data: featData } = await supabase
       .from('featured_artist')
       .select('artist_id')
@@ -38,153 +45,186 @@ export default function AdminDashboard() {
     if (featData) setFeaturedId(featData.artist_id);
   }
 
-  // 2. Handle Update Featured
+  const handleSelectArtistForEdit = (id: string) => {
+    const artist = artists.find(a => a.id === id);
+    if (artist) {
+      setSelectedArtistId(artist.id);
+      setName(artist.name || '');
+      setProvince(artist.province || '');
+      setDateOfBirth(artist.date_of_birth || '');
+      setBirthPlace(artist.birth_place || '');
+      setBio(artist.bio || '');
+      setImageUrl(artist.image_url || '');
+      setIsReligious(artist.is_religious || false);
+      setFacebook(artist.facebook || '');
+      setInstagram(artist.instagram || '');
+      setGenres(artist.genres?.join(', ') || '');
+    } else {
+      resetForm();
+    }
+  };
+
+  const resetForm = () => {
+    setSelectedArtistId('');
+    setName('');
+    setProvince('');
+    setDateOfBirth('');
+    setBirthPlace('');
+    setBio('');
+    setImageUrl('');
+    setIsReligious(false);
+    setFacebook('');
+    setInstagram('');
+    setGenres('');
+  };
+
   async function updateFeatured() {
     setLoading(true);
-    // Uses upsert on ID 1 to ensure we only ever have one featured row
     const { error } = await supabase
       .from('featured_artist')
       .upsert({ id: 1, artist_id: featuredId });
 
-    if (error) {
-      alert('Failed to update featured artist: ' + error.message);
+    if (error) alert('Security/Policy Error: ' + error.message);
+    else alert('Success! Spotlight updated.');
+    setLoading(false);
+  }
+
+  async function handleSaveArtist(e: React.FormEvent) {
+    e.preventDefault();
+    setLoading(true);
+
+    // Prepare data for SQL types
+    const artistData = {
+      name,
+      province,
+      date_of_birth: dateOfBirth || null,
+      birth_place: birthPlace,
+      bio,
+      image_url: imageUrl,
+      is_religious: isReligious,
+      facebook,
+      instagram,
+      genres: genres.split(',').map(g => g.trim()).filter(g => g !== '')
+    };
+
+    let error;
+    if (selectedArtistId) {
+      const { error: updateError } = await supabase
+        .from('artists')
+        .update(artistData)
+        .eq('id', selectedArtistId);
+      error = updateError;
     } else {
-      alert('Success! Homepage updated.');
+      const { error: insertError } = await supabase
+        .from('artists')
+        .insert([artistData]);
+      error = insertError;
+    }
+
+    if (error) {
+      alert('Error saving artist: ' + error.message);
+    } else {
+      alert(`Success! ${name} has been saved.`);
+      resetForm();
       fetchData();
     }
     setLoading(false);
   }
 
-  // 3. Handle Add New Artist
-  async function addArtist(e: React.FormEvent) {
-    e.preventDefault();
-    if (!newName) return;
-
-    const { error } = await supabase
-      .from('artists')
-      .insert([{ 
-        name: newName, 
-        origin_region: newRegion, 
-        genre: newGenre 
-      }]);
-
-    if (error) {
-      alert('Error adding artist: ' + error.message);
-    } else {
-      alert(`${newName} added to database!`);
-      setNewName('');
-      setNewRegion('');
-      setNewGenre('');
-      fetchData(); // Refresh the list
-    }
-  }
-
-  // 4. Handle Delete Artist (Careful!)
-  async function deleteArtist(id: string) {
-    if (!confirm('Are you sure? This will remove the artist from the database.')) return;
-
-    const { error } = await supabase.from('artists').delete().eq('id', id);
-    if (error) alert(error.message);
-    else fetchData();
-  }
-
   return (
-    <div style={{ padding: '40px', maxWidth: '900px', margin: '0 auto', fontFamily: 'system-ui, sans-serif', color: '#333' }}>
-      <h1 style={{ fontSize: '2rem', marginBottom: '10px' }}>DOMIDB Control Center</h1>
-      <p style={{ color: '#666', marginBottom: '30px' }}>Manage your database content and homepage spotlight.</p>
+    <div style={{ padding: '40px', maxWidth: '800px', margin: '0 auto', fontFamily: 'var(--font-outfit), sans-serif', color: 'var(--color-flagblue)' }}>
+      <header style={{ marginBottom: '40px', borderBottom: '2px solid #eee', paddingBottom: '20px' }}>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: 900, letterSpacing: '-0.05em' }}>
+          MANGULINA<span style={{ color: 'var(--color-wikicrimson)' }}>™</span> ADMIN
+        </h1>
+      </header>
       
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px' }}>
-        
-        {/* LEFT COLUMN: MANAGEMENT */}
-        <div>
-          <section style={{ background: '#f9f9f9', padding: '20px', borderRadius: '12px', border: '1px solid #eee', marginBottom: '30px' }}>
-            <h2 style={{ marginTop: 0 }}>Spotlight Settings</h2>
-            <p style={{ fontSize: '0.9rem', color: '#555' }}>Choose who appears in the Featured Artist section.</p>
-            
-            <div style={{ display: 'flex', gap: '10px', marginTop: '15px' }}>
-              <select 
-                value={featuredId} 
-                onChange={(e) => setFeaturedId(e.target.value)}
-                style={{ flex: 1, padding: '10px', borderRadius: '6px', border: '1px solid #ccc' }}
-              >
-                <option value="">-- Select Artist --</option>
-                {artists.map(a => (
-                  <option key={a.id} value={a.id}>{a.name}</option>
-                ))}
-              </select>
-              <button 
-                onClick={updateFeatured} 
-                disabled={loading || !featuredId}
-                style={{ padding: '10px 20px', background: '#000', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', opacity: loading ? 0.5 : 1 }}
-              >
-                Update Homepage
-              </button>
-            </div>
-          </section>
+      {/* SPOTLIGHT CONTROL */}
+      <section style={{ background: '#fff', padding: '25px', borderRadius: '16px', border: '1px solid #eee', boxShadow: '0 4px 20px rgba(0,0,0,0.05)', marginBottom: '30px' }}>
+        <h2 style={{ marginTop: 0, fontSize: '1.2rem', fontWeight: 800, textTransform: 'uppercase' }}>Homepage Spotlight</h2>
+        <div style={{ display: 'flex', gap: '12px', marginTop: '15px' }}>
+          <select 
+            value={featuredId} 
+            onChange={(e) => setFeaturedId(e.target.value)}
+            style={{ flex: 1, padding: '12px', borderRadius: '8px', border: '1px solid #ddd' }}
+          >
+            <option value="">-- Select Featured Artist --</option>
+            {artists.map(a => <option key={a.id} value={a.id}>{a.name}</option>)}
+          </select>
+          <button onClick={updateFeatured} disabled={loading || !featuredId} style={{ padding: '12px 24px', background: 'var(--color-flagblue)', color: '#fff', border: 'none', borderRadius: '8px', cursor: 'pointer', fontWeight: 'bold' }}>
+            Update Spotlight
+          </button>
+        </div>
+      </section>
 
-          <section style={{ background: '#fff', padding: '20px', borderRadius: '12px', border: '1px solid #eee' }}>
-            <h2 style={{ marginTop: 0 }}>Add New Artist</h2>
-            <form onSubmit={addArtist} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <input 
-                placeholder="Artist Name (e.g. Fefita la Grande)" 
-                value={newName} 
-                onChange={e => setNewName(e.target.value)} 
-                required 
-                style={{ padding: '10px', borderRadius: '6px', border: '1px solid #ccc' }}
-              />
-              <input 
-                placeholder="Origin Region (e.g. Santiago)" 
-                value={newRegion} 
-                onChange={e => setNewRegion(e.target.value)} 
-                style={{ padding: '10px', borderRadius: '6px', border: '1px solid #ccc' }}
-              />
-              <input 
-                placeholder="Genre (e.g. Merengue Típico)" 
-                value={newGenre} 
-                onChange={e => setNewGenre(e.target.value)} 
-                style={{ padding: '10px', borderRadius: '6px', border: '1px solid #ccc' }}
-              />
-              <button 
-                type="submit" 
-                style={{ padding: '12px', background: '#8B0000', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}
-              >
-                Save to Database
-              </button>
-            </form>
-          </section>
+      {/* ARTIST EDITOR */}
+      <section style={{ background: '#fdfdfd', padding: '30px', borderRadius: '16px', border: '1px solid #eee' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+          <h2 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 800, textTransform: 'uppercase' }}>
+            {selectedArtistId ? 'Edit Artist Profile' : 'Create New Artist'}
+          </h2>
+          {selectedArtistId && <button onClick={resetForm} style={{ fontSize: '0.8rem', color: 'var(--color-wikicrimson)', background: 'none', border: 'none', cursor: 'pointer' }}>Cancel Edit</button>}
         </div>
 
-        {/* RIGHT COLUMN: LIST */}
-        <div style={{ borderLeft: '1px solid #eee', paddingLeft: '40px' }}>
-          <h2 style={{ marginTop: 0 }}>Current Artist List ({artists.length})</h2>
-          <div style={{ maxHeight: '500px', overflowY: 'auto', marginTop: '20px' }}>
-            {artists.map(artist => (
-              <div 
-                key={artist.id} 
-                style={{ 
-                  display: 'flex', 
-                  justifyContent: 'space-between', 
-                  alignItems: 'center', 
-                  padding: '12px 0', 
-                  borderBottom: '1px solid #f0f0f0' 
-                }}
-              >
-                <div>
-                  <strong>{artist.name}</strong>
-                  <div style={{ fontSize: '0.8rem', color: '#888' }}>{artist.origin_region || 'No Region'} • {artist.genre || 'No Genre'}</div>
-                </div>
-                <button 
-                  onClick={() => deleteArtist(artist.id)}
-                  style={{ color: '#ff4444', background: 'none', border: 'none', cursor: 'pointer', fontSize: '0.8rem' }}
-                >
-                  Delete
-                </button>
-              </div>
-            ))}
+        <div style={{ marginBottom: '25px', paddingBottom: '20px', borderBottom: '1px solid #eee' }}>
+          <label style={{ fontSize: '0.8rem', fontWeight: 700, display: 'block', marginBottom: '8px' }}>SEARCH ARCHIVE TO EDIT</label>
+          <select 
+            value={selectedArtistId} 
+            onChange={(e) => handleSelectArtistForEdit(e.target.value)}
+            style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid var(--color-flagblue)' }}
+          >
+            <option value="">-- Start New Entry --</option>
+            {artists.map(a => <option key={a.id} value={a.id}>{a.name}</option>)}
+          </select>
+        </div>
+
+        <form onSubmit={handleSaveArtist} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
+            <input placeholder="Full Name" value={name} onChange={e => setName(e.target.value)} required style={inputStyle} />
+            <input placeholder="Province" value={province} onChange={e => setProvince(e.target.value)} style={inputStyle} />
+            <input type="date" value={dateOfBirth} onChange={e => setDateOfBirth(e.target.value)} style={inputStyle} />
+            <input placeholder="Birth Place" value={birthPlace} onChange={e => setBirthPlace(e.target.value)} style={inputStyle} />
           </div>
-        </div>
 
-      </div>
+          <input placeholder="Picture URL (image_url)" value={imageUrl} onChange={e => setImageUrl(e.target.value)} style={inputStyle} />
+          
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
+            <input placeholder="Facebook URL" value={facebook} onChange={e => setFacebook(e.target.value)} style={inputStyle} />
+            <input placeholder="Instagram URL" value={instagram} onChange={e => setInstagram(e.target.value)} style={inputStyle} />
+          </div>
+
+          <input placeholder="Genres (comma separated)" value={genres} onChange={e => setGenres(e.target.value)} style={inputStyle} />
+          
+          <textarea placeholder="Biography / Archive Notes" value={bio} onChange={e => setBio(e.target.value)} style={{ ...inputStyle, minHeight: '120px', resize: 'vertical' }} />
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '15px', padding: '10px 0' }}>
+            <label style={{ fontWeight: 700, fontSize: '0.9rem' }}>Christian / Religious Artist?</label>
+            <div 
+              onClick={() => setIsReligious(!isReligious)}
+              style={{
+                width: '50px', height: '26px', background: isReligious ? 'var(--color-flagblue)' : '#ccc',
+                borderRadius: '13px', position: 'relative', cursor: 'pointer', transition: '0.3s'
+              }}
+            >
+              <div style={{
+                width: '20px', height: '20px', background: '#fff', borderRadius: '50%',
+                position: 'absolute', top: '3px', left: isReligious ? '27px' : '3px', transition: '0.3s'
+              }} />
+            </div>
+          </div>
+
+          <button type="submit" disabled={loading} style={{ padding: '18px', background: 'var(--color-flagblue)', color: '#fff', border: 'none', borderRadius: '8px', cursor: 'pointer', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+            {loading ? 'Processing...' : selectedArtistId ? 'Update Archive Entry' : 'Save New Artist'}
+          </button>
+        </form>
+      </section>
     </div>
   );
 }
+
+const inputStyle = {
+  padding: '12px',
+  borderRadius: '8px',
+  border: '1px solid #ddd',
+  fontFamily: 'inherit'
+};

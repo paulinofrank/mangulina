@@ -1,141 +1,156 @@
-'use client';
+"use client";
 
-import { useEffect, useState, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
-import { getSupabaseClient } from '@/lib/supabase';
-import Link from 'next/link';
-import Image from 'next/image';
+import { useEffect, useState, Suspense } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
+import { getSupabaseClient } from "@/lib/supabase";
 
-type Artist = {
-  id: string | number;
-  name: string;
-  origin_region?: string | null;
-  image_url?: string | null;
-  views?: number;
-};
+import ArtistCard from "@/components/molecules/ArtistCard";
+import type { Artist } from "@/components/molecules/ArtistCard";
+
+const ITEMS_PER_PAGE = 16;
 
 function ArtistsContent() {
   const supabase = getSupabaseClient();
   const searchParams = useSearchParams();
+  const router = useRouter();
 
   const [artists, setArtists] = useState<Artist[]>([]);
   const [loading, setLoading] = useState(true);
   const [totalCount, setTotalCount] = useState(0);
 
-  const region = searchParams.get('region');
-  const search = searchParams.get('search');
+  const region = searchParams.get("region");
+  const search = searchParams.get("search");
+  const isReligiousFilter = searchParams.get("religious") === "true";
+  const currentPage = parseInt(searchParams.get("page") || "1");
 
   useEffect(() => {
-    const fetchArtists = async () => {
+    async function loadArtists() {
       setLoading(true);
       try {
-        let query = supabase
-          .from('artists')
-          .select('id, name, origin_region, image_url, views', { count: 'exact' });
+        const from = (currentPage - 1) * ITEMS_PER_PAGE;
+        const to = from + ITEMS_PER_PAGE - 1;
 
-        if (region) query = query.eq('origin_region', region);
-        if (search) query = query.ilike('name', `%${search}%`);
+        let query = supabase
+          .from("artists")
+          .select("*", { count: "exact" });
+
+        if (region) query = query.eq("province", region);
+        if (search) query = query.ilike("name", `%${search}%`);
+        if (isReligiousFilter) query = query.eq("is_religious", true);
 
         const { data, count, error } = await query
-          .order('views', { ascending: false })
-          .limit(100);
+          .order("views", { ascending: false })
+          .range(from, to);
 
         if (!error && data) {
-          setArtists(data);
+          setArtists(data as Artist[]);
           setTotalCount(count || 0);
         }
       } catch (err) {
-        console.error('Error fetching artists:', err);
+        console.error("Archive fetch failed:", err);
       } finally {
         setLoading(false);
       }
-    };
+    }
+    loadArtists();
+  }, [region, search, isReligiousFilter, currentPage, supabase]);
 
-    fetchArtists();
-  }, [region, search, supabase]);
+  const totalPages = Math.ceil(totalCount / ITEMS_PER_PAGE);
 
-  return (
-    <div className="max-w-7xl mx-auto px-6 py-12">
-      {/* HEADER */}
-      <div className="mb-12 border-b border-black/5 pb-10">
-        <h1 className="text-6xl font-black tracking-tighter text-[#002D62] mb-3">
-          Artists
-        </h1>
-        <div className="flex items-center gap-4">
-          <span className="bg-[#CE1126]/10 text-[#CE1126] text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
-            {region || (search ? 'Search' : 'Archive')}
-          </span>
-          <p className="text-xs font-bold text-gray-400 uppercase tracking-tight">
-             {loading ? 'Consulting Ledger...' : `${totalCount} entries indexed`}
-          </p>
+  const handlePageChange = (newPage: number) => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("page", newPage.toString());
+    router.push(`/artists?${params.toString()}`);
+  };
+
+  /**
+   * Renders the inscription with specific styling for the province name
+   */
+  const renderInscription = () => {
+    if (isReligiousFilter) return "All Christian Artists";
+    
+    if (region) {
+      return (
+        <>
+          All Artists from the Province{" "}
+          <span className="text-[var(--color-wikicrimson)]">{region}</span>
+        </>
+      );
+    }
+    
+    return "All Artists";
+  };
+
+  if (loading) {
+    return (
+      <div className="flex h-screen items-center justify-center text-gray-400">
+        <div className="animate-pulse font-medium text-[var(--color-flagblue)]">
+          Consulting Mangulina&trade; records…
         </div>
       </div>
+    );
+  }
 
-      {/* ARTISTS GRID */}
-      <div>
-        {loading ? (
-          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-            {[...Array(10)].map((_, i) => (
-              <div key={i} className="animate-pulse space-y-4">
-                <div className="aspect-square bg-gray-100 rounded-4xl" />
-                <div className="h-4 bg-gray-100 rounded w-2/3" />
+  return (
+    <main className="space-y-12 p-6 pb-[20vh] max-w-[1600px] mx-auto">
+      
+      {/* INSCRIPTION SECTION */}
+      <section>
+        <div className="border-t border-black/5" />
+        <div className="py-4 flex justify-center">
+          <h2 className="font-[family-name:var(--font-outfit)] text-4xl font-bold text-[var(--color-flagblue)] tracking-tight text-center">
+            {renderInscription()}
+          </h2>
+        </div>
+        <div className="border-b border-black/5" />
+      </section>
+
+      {/* PAGINATION SECTION */}
+      {totalPages > 1 && (
+        <section className="flex items-center justify-between">
+          <div className="flex gap-2">
+            <button onClick={() => handlePageChange(1)} disabled={currentPage === 1} className="btn-archive px-4 py-2 text-[10px] font-bold uppercase tracking-widest disabled:opacity-20">First</button>
+            <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1} className="btn-archive px-4 py-2 text-[10px] font-bold uppercase tracking-widest disabled:opacity-20">Previous</button>
+          </div>
+
+          <div className="hidden sm:flex flex-col items-center">
+            <span className="text-sm font-black text-[var(--color-flagblue)] uppercase tracking-tighter">
+              Folio {currentPage} / {totalPages}
+            </span>
+          </div>
+
+          <div className="flex gap-2">
+            <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} className="btn-archive px-4 py-2 text-[10px] font-bold uppercase tracking-widest disabled:opacity-20">Next</button>
+            <button onClick={() => handlePageChange(totalPages)} disabled={currentPage === totalPages} className="btn-archive px-4 py-2 text-[10px] font-bold uppercase tracking-widest disabled:opacity-20">Last</button>
+          </div>
+        </section>
+      )}
+
+      {/* GRID SECTION */}
+      <section className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
+        {artists.length > 0 ? (
+          artists.map((artist) => (
+            <div key={artist.id} className="flex justify-center sm:justify-start">
+              <div className="w-full max-w-[160px] sm:max-w-none">
+                <ArtistCard artist={artist} />
               </div>
-            ))}
-          </div>
-        ) : artists.length > 0 ? (
-          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-            {artists.map((artist) => (
-              <Link key={artist.id} href={`/artists/${artist.id}`} className="group relative">
-                <div className="aspect-square bg-white rounded-4xl overflow-hidden mb-4 relative shadow-sm group-hover:shadow-2xl transition-all duration-500 border border-black/5 group-hover:border-[#CE1126]/30">
-                  {artist.image_url ? (
-                    <Image
-                      src={`${artist.image_url}?width=400`}
-                      alt={artist.name}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
-                      sizes="(max-width: 768px) 100vw, 20vw"
-                    />
-                  ) : (
-                    <div className="w-full h-full bg-gray-50 flex items-center justify-center text-gray-200">
-                      <span className="text-4xl font-serif">M</span>
-                    </div>
-                  )}
-                  {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-linear-to-t from-[#002D62]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                     <span className="text-white text-[10px] font-black uppercase tracking-[0.2em]">View Profile →</span>
-                  </div>
-                </div>
-
-                <h3 className="text-lg font-bold text-[#002D62] group-hover:text-[#CE1126] transition-colors leading-tight">
-                  {artist.name}
-                </h3>
-                <div className="flex items-center justify-between mt-2">
-                  <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest">
-                    {artist.origin_region || 'Dominican Republic'}
-                  </p>
-                  <span className="text-[10px] font-bold text-gray-300">
-                    {artist.views?.toLocaleString() || '0'} 👁️
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
+            </div>
+          ))
         ) : (
-          <div className="py-32 text-center">
-            <p className="text-gray-400 italic">No artists found in this sector of the archive.</p>
-            <Link href="/artists" className="mt-4 inline-block text-[#CE1126] font-black text-xs uppercase tracking-widest border-b border-[#CE1126]">
-              Reset Search
-            </Link>
+          <div className="col-span-full py-20 text-center">
+            <p className="font-[family-name:var(--font-serif)] text-2xl italic text-gray-300">
+              No matching records found in the archive.
+            </p>
           </div>
         )}
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 
 export default function ArtistsPage() {
   return (
-    <Suspense fallback={<div className="max-w-7xl mx-auto px-6 py-24 text-center text-gray-400 font-black uppercase tracking-widest">Loading Mangulina Archive...</div>}>
+    <Suspense fallback={null}>
       <ArtistsContent />
     </Suspense>
   );

@@ -14,7 +14,7 @@ export default function Navbar() {
     { name: 'Home', href: '/' },
     { name: 'Artists', href: '/artists' },
     { name: 'Songs', href: '/recordings' },
-    { name: 'Christians', href: '/genres/christian' }, // Placeholder for your future page
+    { name: 'Christians', href: '/artists?religious=true&page=1'}, // Placeholder for your future page
   ];
 
   useEffect(() => {

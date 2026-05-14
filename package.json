@@ -1,20 +1,23 @@
 {
-  "name": "domidb",
+  "name": "mangulina",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "ingest": "tsx scripts/ingest/index.ts"
   },
   "dependencies": {
     "@supabase/auth-helpers-nextjs": "^0.15.0",
     "@supabase/supabase-js": "^2.105.4",
+    "axios": "^1.16.0",
     "dotenv": "^17.4.2",
     "lucide-react": "^1.14.0",
     "next": "16.2.4",
-    "node-fetch": "^2.7.0",
+    "node-fetch": "^3.3.2",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
@@ -30,7 +33,21 @@
     "postcss": "^8.5.12",
     "tailwindcss": "^4.2.4",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "description": "A modern web application built to explore, preserve, and showcase Dominican music culture.",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulinofrank/mangulina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulinofrank/mangulina/issues"
+  },
+  "homepage": "https://github.com/paulinofrank/mangulina#readme"
 }

@@ -15,8 +15,8 @@ export default function TopArtistsSection({ topArtists }: TopArtistsSectionProps
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current
-      // Scrolling by clientWidth * 0.8 ensures we don't skip cards entirely
-      const scrollTo = direction === "left" ? scrollLeft - clientWidth * 0.8 : scrollLeft + clientWidth * 0.8
+      const scrollAmount = clientWidth * 0.8;
+      const scrollTo = direction === "left" ? scrollLeft - scrollAmount : scrollLeft + scrollAmount
       scrollRef.current.scrollTo({ left: scrollTo, behavior: "smooth" })
     }
   }
@@ -55,10 +55,6 @@ export default function TopArtistsSection({ topArtists }: TopArtistsSectionProps
             </div>
           </div>
 
-          {/* THE FIX: 
-              1. Removed snap-mandatory (it fights with custom widths sometimes).
-              2. Changed card widths to percentages.
-          */}
           <div 
             ref={scrollRef}
             className="flex w-full gap-6 overflow-x-auto scrollbar-none pb-4"
@@ -66,10 +62,12 @@ export default function TopArtistsSection({ topArtists }: TopArtistsSectionProps
             {topArtists.map((artist) => (
               <div 
                 key={artist.id} 
-                className="shrink-0 transition-transform duration-300 hover:scale-[1.02]
-                           w-[70%] 
-                           sm:w-[35%] 
-                           lg:w-[22%]" 
+                /* 
+                   FIXED: Removed hover:scale and transition-transform.
+                   The "magnifier" zoom is now handled entirely inside 
+                   the ArtistCard's image container.
+                */
+                className="shrink-0 w-[70%] sm:w-[35%] lg:w-[22%]" 
               >
                 <ArtistCard artist={artist} titleAs="h3" />
               </div>

@@ -1,0 +1,27 @@
+≡ƒÜÇ Starting repair for 597 artists...
+
+[1/597] Γ¥î Frank Reyes               | No structured data found.
+[2/597] Γ¥î Voz a Voz                 | No structured data found.
+[3/597] Γ¥î Luis Miguel del Amargue   | No structured data found.
+[4/597] Γ¥î Junior & Jorge            | No structured data found.
+[5/597] Γ¥î Dominic                   | No structured data found.
+[6/597] Γ¥î Juliana O'Neal            | No structured data found.
+[7/597] Γ¥î ├üngela Carrasco           | No structured data found.
+[8/597] Γ¥î Alberto Beltr├ín           | No structured data found.
+[9/597] Γ¥î Tercer Cielo              | No structured data found.
+[10/597] Γ¥î Las Chicas del Can        | No structured data found.
+[11/597] Γ¥î Ra├║l Acosta               | No structured data found.
+[12/597] Γ¥î Amarfis y La Banda de Atakke | No structured data found.
+[13/597] Γ¥î N O R M a L               | No structured data found.
+[14/597] Γ¥î Mickey Taveras            | No structured data found.
+[15/597] Γ¥î Ram├│n Orlando             | No structured data found.
+[16/597] Γ¥î Kiko Rodr├¡guez            | No structured data found.
+[17/597] Γ¥î Jossie Esteban y La Patrulla 15 | No structured data found.
+[18/597] Γ¥î Los Toros Band            | No structured data found.
+[19/597] Γ¥î Grupo Extra               | No structured data found.
+[20/597] Γ¥î La Familia Andr├⌐          | No structured data found.
+[21/597] Γ¥î Raul├¡n Rosendo            | No structured data found.
+[22/597] Γ¥î Joe Veras                 | No structured data found.
+[23/597] Γ¥î Ram├│n Torres              | No structured data found.
+[24/597] Γ¥î Vicente Garc├¡a            | No structured data found.
+[25/597] Γ¥î Bonny Cepeda              | No structured data found.

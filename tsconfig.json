@@ -32,13 +32,18 @@
     "next-env.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx",
+    "scripts/**/*.ts", // <-- ADD THIS
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules",
-    "AddRecordingForm.jsx",
-    "RecordingPage.jsx",
-    "RecordingsList.tsx"
-  ]
+    "node_modules"
+  ],
+  // ADD THIS BLOCK AT THE END:
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "moduleResolution": "node"
+    }
+  }
 }
