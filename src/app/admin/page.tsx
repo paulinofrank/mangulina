@@ -18,11 +18,11 @@ export default function AdminDashboard() {
   const [dateOfBirth, setDateOfBirth] = useState(''); 
   const [birthPlace, setBirthPlace] = useState(''); 
   const [bio, setBio] = useState('');
-  const [imageUrl, setImageUrl] = useState(''); // Mapping "picture" to image_url
+  const [imageUrl, setImageUrl] = useState('');
   const [isReligious, setIsReligious] = useState(false);
   const [facebook, setFacebook] = useState('');
   const [instagram, setInstagram] = useState('');
-  const [genres, setGenres] = useState(''); // Will be converted to text[]
+  const [genres, setGenres] = useState(''); 
 
   useEffect(() => {
     fetchData();
@@ -42,7 +42,8 @@ export default function AdminDashboard() {
       .select('artist_id')
       .maybeSingle();
     
-    if (featData) setFeaturedId(featData.artist_id);
+    // Fixed "never" error for fetchData
+    if (featData) setFeaturedId((featData as any).artist_id);
   }
 
   const handleSelectArtistForEdit = (id: string) => {
@@ -80,9 +81,10 @@ export default function AdminDashboard() {
 
   async function updateFeatured() {
     setLoading(true);
+    // Fixed "never" error for Featured Artist upsert
     const { error } = await supabase
       .from('featured_artist')
-      .upsert({ id: 1, artist_id: featuredId });
+      .upsert({ id: 1, artist_id: featuredId } as any);
 
     if (error) alert('Security/Policy Error: ' + error.message);
     else alert('Success! Spotlight updated.');
@@ -93,7 +95,6 @@ export default function AdminDashboard() {
     e.preventDefault();
     setLoading(true);
 
-    // Prepare data for SQL types
     const artistData = {
       name,
       province,
@@ -109,17 +110,18 @@ export default function AdminDashboard() {
 
     let error;
     if (selectedArtistId) {
-      const { error: updateError } = await supabase
-        .from('artists')
-        .update(artistData)
-        .eq('id', selectedArtistId);
-      error = updateError;
+  const { error: updateError } = await (supabase
+    .from('artists') as any) // Force the table itself to 'any'
+    .update(artistData)
+    .eq('id', selectedArtistId);
+  error = updateError;
+
     } else {
-      const { error: insertError } = await supabase
-        .from('artists')
-        .insert([artistData]);
-      error = insertError;
-    }
+  const { error: insertError } = await (supabase
+    .from('artists') as any) // Force the table itself to 'any'
+    .insert([artistData]);
+  error = insertError;
+}
 
     if (error) {
       alert('Error saving artist: ' + error.message);

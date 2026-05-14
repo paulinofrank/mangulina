@@ -1,8 +1,11 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react"; // Added useState
 import SectionTitle from "@/components/atoms/SectionTitle";
-import ArtistCard, { Artist } from "@/components/molecules/ArtistCard";
+// 1. Rename the imported type from ArtistCard to avoid the duplicate name error
+import ArtistCard, { type Artist as CardArtistType } from "@/components/molecules/ArtistCard";
+// 2. This is your master definition that includes date_of_birth
+import { Artist } from '@/types/music';
 
 type BirthdaySectionProps = {
   birthdayArtists: Artist[];
@@ -11,7 +14,7 @@ type BirthdaySectionProps = {
 export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const calculateAge = (dobString: string | null) => {
+  const calculateAge = (dobString: string | null | undefined) => {
     if (!dobString) return null;
     const birthDate = new Date(dobString);
     const today = new Date();
@@ -61,28 +64,28 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
             </div>
           ) : (
             <div ref={scrollRef} className="flex w-full gap-6 overflow-x-auto scrollbar-none pb-4">
-{birthdayArtists.map((artist) => {
-  const age = calculateAge(artist.date_of_birth);
-  return (
-    <div key={artist.id} className="shrink-0 w-[75%] sm:w-[35%] lg:w-[22%]">
-      <div className="relative group">
-        {/* The scaling now happens inside ArtistCard or its wrapper */}
-        <ArtistCard artist={artist} titleAs="h3" />
-        
-{/* Pill Age Badge - Static with custom colors */}
-{age !== null && (
-  <div className="absolute bottom-[56px] left-1/2 -translate-x-1/2 translate-y-1/2 z-30 
-                bg-[#FFFFFF] text-[#8B0000] 
-                px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider
-                border border-black/10 shadow-xl whitespace-nowrap
-                pointer-events-none">
-    {age} Years Old
-  </div>
-)}
-      </div>
-    </div>
-  );
-})}
+              {birthdayArtists.map((artist) => {
+                // Now TypeScript knows artist has date_of_birth from '@/types/music'
+                const age = calculateAge(artist.date_of_birth);
+                return (
+                  <div key={artist.id} className="shrink-0 w-[75%] sm:w-[35%] lg:w-[22%]">
+                    <div className="relative group">
+                      {/* Cast to any if ArtistCard still uses the old restricted Artist type */}
+                      <ArtistCard artist={artist as any} titleAs="h3" />
+                      
+                      {age !== null && (
+                        <div className="absolute bottom-14 left-1/2 -translate-x-1/2 translate-y-1/2 z-30 
+                                      bg-[#FFFFFF] text-[#8B0000] 
+                                      px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider
+                                      border border-black/10 shadow-xl whitespace-nowrap
+                                      pointer-events-none">
+                          {age} Years Old
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           )}
         </div>

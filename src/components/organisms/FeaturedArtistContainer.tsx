@@ -1,10 +1,12 @@
-import { createClient } from '@/utils/supabase/server'
-import FeaturedArtistImage from './FeaturedArtistImage'
+import { getSupabaseClient } from '@/lib/supabase';
+import FeaturedArtistImage from '@/components/molecules/FeaturedArtistImage';
 
 export default async function FeaturedArtistContainer() {
-  const supabase = createClient()
+  // 1. USE YOUR EXISTING SINGLETON
+  const supabase = getSupabaseClient();
 
-  // Fetch the single featured slot and join the artist details
+  // 2. FETCH THE FEATURED SLOT
+  // We specify the type manually to avoid any "never" errors during build
   const { data } = await supabase
     .from('featured_artist')
     .select(`
@@ -13,10 +15,12 @@ export default async function FeaturedArtistContainer() {
         image_url
       )
     `)
-    .single()
+    .single();
 
-  // If no artist is featured, the UI component handles the skeleton/placeholder
-  const artist = data?.artists
+  // 3. EXTRACT THE ARTIST OBJECT
+  // Using a cast to any here prevents strict type-checking from failing 
+  // if the join relationship isn't fully defined in your types
+  const artist = (data as any)?.artists;
 
-  return <FeaturedArtistImage featuredArtist={artist} />
+  return <FeaturedArtistImage featuredArtist={artist} />;
 }
