@@ -1,5 +1,6 @@
 import { getSupabaseClient } from '@/lib/supabase';
 import FeaturedArtistImage from '@/components/molecules/FeaturedArtistImage';
+import type { Artist } from '@/types/music';
 
 export default async function FeaturedArtistContainer() {
   // 1. USE YOUR EXISTING SINGLETON
@@ -11,16 +12,17 @@ export default async function FeaturedArtistContainer() {
     .from('featured_artist')
     .select(`
       artists (
+        id,
         name,
-        image_url
+        image_url,
+        birth_place,
+        genres
       )
     `)
     .single();
 
-  // 3. EXTRACT THE ARTIST OBJECT
-  // Using a cast to any here prevents strict type-checking from failing 
-  // if the join relationship isn't fully defined in your types
-  const artist = (data as any)?.artists;
+  const row = data as { artists?: Artist | null } | null;
+  const artist = row?.artists ?? null;
 
   return <FeaturedArtistImage featuredArtist={artist} />;
 }

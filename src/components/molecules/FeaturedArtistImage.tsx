@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { FeaturedArtist } from "../organisms/FeaturedArtistSection";
+import type { Artist } from "@/types/music";
 
 interface FeaturedArtistImageProps {
-  featuredArtist: FeaturedArtist | null;
+  featuredArtist: Artist | null;
 }
 
 export default function FeaturedArtistImage({ featuredArtist }: FeaturedArtistImageProps) {

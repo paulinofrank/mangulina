@@ -6,12 +6,44 @@ import MusicPlayer from '@/components/MusicPlayer';
 
 const STORAGE_URL = "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/artist-images/";
 
+type SongMetadata = {
+  trivia?: string[];
+  composer?: string;
+  studio?: string;
+};
+
+type ArtistsOld = {
+  name: string;
+  image_url?: string | null;
+};
+
+type SongRow = {
+  id: string;
+  title: string;
+  album?: string | null;
+  year?: number | null;
+  artist_id: string;
+  youtube_id?: string | null;
+  lyrics_raw?: string | null;
+  metadata?: unknown;
+  artists_old?: ArtistsOld | null;
+};
+
+function parseMetadata(raw: unknown): SongMetadata {
+  if (!raw || typeof raw !== 'object') return {};
+  const o = raw as Record<string, unknown>;
+  const trivia = Array.isArray(o.trivia) ? o.trivia.filter((x): x is string => typeof x === 'string') : undefined;
+  return {
+    trivia,
+    composer: typeof o.composer === 'string' ? o.composer : undefined,
+    studio: typeof o.studio === 'string' ? o.studio : undefined,
+  };
+}
+
 export default async function SongPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const supabase = getSupabaseClient();
 
-  // Updated: songs → songs_old
-  // Updated: artists → artists_old
   const { data: song, error } = await supabase
     .from('songs_old')
     .select(`
@@ -23,18 +55,16 @@ export default async function SongPage({ params }: { params: Promise<{ id: strin
 
   if (error || !song) return notFound();
 
-  const metadata = ((song as any).metadata as { 
-    trivia?: string[], 
-    composer?: string, 
-    studio?: string 
-  }) || {};
+  const s = song as SongRow;
+  const metadata = parseMetadata(s.metadata);
+  const artist = s.artists_old;
 
   return (
     <div className="min-h-screen bg-black text-white font-outfit overflow-hidden">
       <div className="fixed inset-0 z-0">
-        {(song as any).artists_old?.image_url && (
+        {artist?.image_url && (
           <Image 
-            src={`${STORAGE_URL}${encodeURIComponent((song as any).artists_old.image_url)}`}
+            src={`${STORAGE_URL}${encodeURIComponent(artist.image_url)}`}
             alt=""
             fill
             priority
@@ -46,12 +76,12 @@ export default async function SongPage({ params }: { params: Promise<{ id: strin
       </div>
 
       <header className="relative z-50 p-8 flex justify-between items-center">
-        <Link href={`/artists/${(song as any).artist_id}`} className="group flex items-center gap-4">
+        <Link href={`/artists/${s.artist_id}`} className="group flex items-center gap-4">
           <div className="w-10 h-10 rounded-full overflow-hidden relative border border-white/20">
-            {(song as any).artists_old?.image_url && (
+            {artist?.image_url && (
               <Image 
-                src={`${STORAGE_URL}${encodeURIComponent((song as any).artists_old.image_url)}`}
-                alt={(song as any).artists_old.name}
+                src={`${STORAGE_URL}${encodeURIComponent(artist.image_url)}`}
+                alt={artist.name}
                 fill
                 sizes="40px"
                 className="object-cover"
@@ -59,7 +89,7 @@ export default async function SongPage({ params }: { params: Promise<{ id: strin
             )}
           </div>
           <span className="text-[10px] font-bold uppercase tracking-[0.3em] opacity-60 group-hover:opacity-100 transition-opacity">
-            Return to {(song as any).artists_old.name}
+            Return to {artist?.name ?? 'Artist'}
           </span>
         </Link>
         <div className="text-wikicrimson font-serif italic text-xl">domidb</div>
@@ -73,17 +103,17 @@ export default async function SongPage({ params }: { params: Promise<{ id: strin
               Now Playing
             </span>
             <h1 className="text-6xl md:text-8xl font-serif italic mb-6 leading-tight">
-              {(song as any).title}
+              {s.title}
             </h1>
             <div className="flex items-center gap-6 opacity-40 text-sm tracking-widest uppercase">
-              <span>{(song as any).album}</span>
+              <span>{s.album ?? ''}</span>
               <span className="w-1 h-1 bg-white rounded-full" />
-              <span>{(song as any).year}</span>
+              <span>{s.year ?? ''}</span>
             </div>
           </section>
 
-          {(song as any).youtube_id ? (
-            <MusicPlayer videoId={(song as any).youtube_id} />
+          {s.youtube_id ? (
+            <MusicPlayer videoId={s.youtube_id} />
           ) : (
             <div className="p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md opacity-40 italic text-center text-xs tracking-widest">
               Audio retrieval in progress...
@@ -122,9 +152,9 @@ export default async function SongPage({ params }: { params: Promise<{ id: strin
             Lyrics Archive
           </h3>
           <div className="space-y-8">
-            {(song as any).lyrics_raw ? (
+            {s.lyrics_raw ? (
               <pre className="font-serif text-2xl md:text-4xl leading-[1.6] whitespace-pre-wrap text-white/95 italic">
-                {(song as any).lyrics_raw}
+                {s.lyrics_raw}
               </pre>
             ) : (
               <div className="py-20 text-center opacity-20 italic">

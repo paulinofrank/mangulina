@@ -1,14 +1,8 @@
 import ButtonSecondary from "@/components/atoms/ButtonSecondary"
-
-type FeaturedArtist = {
-  id: string | number
-  name: string
-  origin_region?: string | null
-  genre?: string | null
-}
+import type { Artist } from "@/types/music"
 
 type FeaturedArtistInfoProps = {
-  featuredArtist?: FeaturedArtist | null
+  featuredArtist?: Artist | null
 }
 
 export default function FeaturedArtistInfo({ featuredArtist }: FeaturedArtistInfoProps) {
@@ -23,20 +17,20 @@ export default function FeaturedArtistInfo({ featuredArtist }: FeaturedArtistInf
       </h1>
 
       <div className="flex items-center gap-4 mb-5 text-sm font-medium">
-        {featuredArtist?.origin_region && (
+        {featuredArtist?.birth_place && (
           <span className="text-gray-600">
             <span className="text-gray-400 mr-1">From:</span>
             <span className="bg-gray-100 px-2 py-1 rounded">
-              {featuredArtist.origin_region}
+              {featuredArtist.birth_place}
             </span>
           </span>
         )}
-        
-        {featuredArtist?.genre && (
+
+        {featuredArtist?.genres && featuredArtist.genres.length > 0 && (
           <span className="text-gray-600">
             <span className="text-gray-400 mr-1">Genre:</span>
             <span className="bg-gray-100 px-2 py-1 rounded">
-              {featuredArtist.genre}
+              {featuredArtist.genres.join(", ")}
             </span>
           </span>
         )}

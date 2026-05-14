@@ -1,15 +1,9 @@
 import FeaturedArtistImage from "@/components/molecules/FeaturedArtistImage"
 import FeaturedArtistInfo from "@/components/molecules/FeaturedArtistInfo"
-
-export type FeaturedArtist = {
-  id: string
-  name: string
-  origin_region?: string | null
-  image_url?: string | null
-}
+import type { Artist } from "@/types/music"
 
 type FeaturedArtistSectionProps = {
-  featuredArtist: FeaturedArtist | null
+  featuredArtist: Artist | null
 }
 
 export default function FeaturedArtistSection({ featuredArtist }: FeaturedArtistSectionProps) {

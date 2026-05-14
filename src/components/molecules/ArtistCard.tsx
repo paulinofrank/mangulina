@@ -2,14 +2,7 @@ import Link from "next/link"
 import ArtistImage from "@/components/atoms/ArtistImage"
 import ArtistName from "@/components/atoms/ArtistName"
 import ArtistRegion from "@/components/atoms/ArtistRegion"
-
-export type Artist = {
-  id: string
-  name: string
-  // UPDATED: Changed from origin_region to birth_place
-  birth_place: string | null
-  image_url: string | null
-}
+import type { Artist } from "@/types/music"
 
 type ArtistCardProps = {
   artist: Artist

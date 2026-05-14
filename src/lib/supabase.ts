@@ -1,6 +1,4 @@
 import { createClient } from "@supabase/supabase-js";
-// Keeping the import for future use, but we will stop enforcing it on the client
-import type { Database } from "../types/supabase";
 
 // 1. RESOLVE CONFIGURATION
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;

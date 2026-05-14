@@ -3,7 +3,8 @@
 import { useRef } from "react"
 import Link from "next/link"
 import SectionTitle from "@/components/atoms/SectionTitle"
-import ArtistCard, { Artist } from "@/components/molecules/ArtistCard"
+import ArtistCard from "@/components/molecules/ArtistCard"
+import type { Artist } from "@/types/music"
 
 type TopArtistsSectionProps = {
   topArtists: Artist[]

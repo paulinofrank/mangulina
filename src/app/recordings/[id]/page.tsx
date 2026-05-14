@@ -1,18 +1,33 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { getSupabaseClient } from "@/lib/supabase";
 import Link from "next/link";
 
+type RecordingCredit = {
+  role: string;
+  artists: { name: string } | { name: string }[] | null;
+};
+
+type RecordingWithCredits = {
+  id: string;
+  title: string;
+  recording_credits?: RecordingCredit[] | null;
+};
+
+function mainArtistName(rec: RecordingWithCredits): string {
+  const main = rec.recording_credits?.find((c) => c.role === "main");
+  const raw = main?.artists;
+  if (!raw) return "Unknown";
+  const first = Array.isArray(raw) ? raw[0] : raw;
+  return first?.name ?? "Unknown";
+}
+
 export default function RecordingsPage() {
-  const [recordings, setRecordings] = useState<any[]>([]);
+  const [recordings, setRecordings] = useState<RecordingWithCredits[]>([]);
   const supabase = getSupabaseClient();
 
-  useEffect(() => {
-    fetchRecordings();
-  }, []);
-
-  async function fetchRecordings() {
+  const fetchRecordings = useCallback(async () => {
     const { data, error } = await supabase
       .from("recordings")
       .select(`
@@ -33,48 +48,39 @@ export default function RecordingsPage() {
       return;
     }
 
-    setRecordings(data || []);
-  }
+    setRecordings((data as unknown as RecordingWithCredits[]) || []);
+  }, [supabase]);
+
+  useEffect(() => {
+    queueMicrotask(() => {
+      void fetchRecordings();
+    });
+  }, [fetchRecordings]);
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-10 font-outfit">
+      <h1 className="text-3xl font-serif font-bold mb-6 text-ink">Recordings</h1>
 
-      {/* HEADER */}
-      <h1 className="text-3xl font-serif font-bold mb-6 text-ink">
-        Recordings
-      </h1>
+      <p className="text-sm text-black/60 mb-8">Browse your music catalog</p>
 
-      <p className="text-sm text-black/60 mb-8">
-        Browse your music catalog
-      </p>
-
-      {/* LIST */}
       <div>
-        {recordings.map((rec) => (
-          <Link key={rec.id} href={`/recordings/${rec.id}`}>
-            <div className="p-4 mb-3 rounded-lg bg-white/40 backdrop-blur-sm border hover:bg-white/60 transition flex justify-between items-center">
+        {recordings.map((rec) => {
+          const artistName = mainArtistName(rec);
 
-              {/* LEFT */}
-              <div>
-                <div className="text-lg font-semibold">
-                  {rec.title}
+          return (
+            <Link key={rec.id} href={`/recordings/${rec.id}`}>
+              <div className="p-4 mb-3 rounded-lg bg-white/40 backdrop-blur-sm border hover:bg-white/60 transition flex justify-between items-center">
+                <div>
+                  <div className="text-lg font-semibold">{rec.title}</div>
+
+                  <div className="text-sm text-black/60">Artist: {artistName}</div>
                 </div>
 
-                <div className="text-sm text-black/60">
-                  Artist:{" "}
-                  {rec.recording_credits?.find((c: any) => c.role === "main")?.artists?.name
-                    || "Unknown"}
-                </div>
+                <div className="text-black/40 text-sm">▶</div>
               </div>
-
-              {/* RIGHT ICON */}
-              <div className="text-black/40 text-sm">
-                ▶
-              </div>
-
-            </div>
-          </Link>
-        ))}
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

@@ -33,7 +33,7 @@ export default function Footer() {
             <Link href="/recordings" className="hover:text-[#CE1126]">Discover</Link>
             <Link href="/artists" className="hover:text-[#CE1126]">Artists</Link>
             <Link href="/archive" className="hover:text-[#CE1126]">Archive</Link>
-            <Link href="/support" className="hover:text-[#CE1126]">Support</Link>
+            <Link href="/admin" className="hover:text-[#CE1126]">Admin</Link>
           </div>
 
           {/* Bottom Bar */}

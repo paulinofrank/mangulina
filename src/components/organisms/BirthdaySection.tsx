@@ -1,11 +1,9 @@
 "use client";
 
-import { useRef, useState } from "react"; // Added useState
+import { useRef } from "react";
 import SectionTitle from "@/components/atoms/SectionTitle";
-// 1. Rename the imported type from ArtistCard to avoid the duplicate name error
-import ArtistCard, { type Artist as CardArtistType } from "@/components/molecules/ArtistCard";
-// 2. This is your master definition that includes date_of_birth
-import { Artist } from '@/types/music';
+import ArtistCard from "@/components/molecules/ArtistCard";
+import type { Artist } from "@/types/music";
 
 type BirthdaySectionProps = {
   birthdayArtists: Artist[];
@@ -70,8 +68,7 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
                 return (
                   <div key={artist.id} className="shrink-0 w-[75%] sm:w-[35%] lg:w-[22%]">
                     <div className="relative group">
-                      {/* Cast to any if ArtistCard still uses the old restricted Artist type */}
-                      <ArtistCard artist={artist as any} titleAs="h3" />
+                      <ArtistCard artist={artist} titleAs="h3" />
                       
                       {age !== null && (
                         <div className="absolute bottom-14 left-1/2 -translate-x-1/2 translate-y-1/2 z-30 

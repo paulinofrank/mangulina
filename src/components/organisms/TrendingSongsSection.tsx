@@ -71,50 +71,50 @@ export default function TrendingSongsSection({ songs }: TrendingSongsSectionProp
           </div>
 
           <div ref={scrollRef} className="flex w-full gap-6 overflow-x-auto scrollbar-none pb-4">
-            
-{songs.map((song: any) => {
-  // 1. YOUR WORKING ARTIST NAME LOGIC (RESTORED)
-  const credits = song.recording_credits || [];
-  const artistName = credits.length > 0 
-    ? credits.map((c: any) => c.artist?.name).filter(Boolean).join(" & ") 
-    : "Frank Reyes"; 
+            {songs.map((song) => {
+              const credits = song.recording_credits ?? [];
+              const artistName =
+                credits.length > 0
+                  ? credits.map((c) => c.artist?.name).filter(Boolean).join(" & ")
+                  : "Frank Reyes";
 
-  // 2. WORKING IMAGE LOGIC
-  const supabaseBase = "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/";
-  let finalImageUrl = "";
-  
-  if (song.release?.cover_image_url) {
-    const path = song.release.cover_image_url;
-    finalImageUrl = path.startsWith('http') ? path : `${supabaseBase}${path}`;
-  } else if (credits[0]?.artist?.image_url) {
-    finalImageUrl = credits[0].artist.image_url;
-  }
+              const supabaseBase =
+                "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/";
+              let finalImageUrl = "";
 
-  return (
-    <div key={song.id} className="shrink-0 w-50">
-      <div className="relative aspect-square overflow-hidden rounded-2xl bg-gray-200">
-        {/* FIX: Only render img if finalImageUrl is not empty to stop console errors */}
-        {finalImageUrl !== "" ? (
-          <img
-            src={finalImageUrl}
-            alt={song.title}
-            className="h-full w-full object-cover"
-            onError={(e: any) => {
-              e.target.src = `${supabaseBase}cover-art/${song.id}/front.jpg`;
-            }}
-          />
-        ) : (
-          <div className="h-full w-full bg-gray-300 animate-pulse" />
-        )}
-      </div>
-      <div className="mt-3">
-        <h4 className="truncate font-bold text-[#002D62]">{song.title}</h4>
-        {/* Using your confirmed working artistName variable */}
-        <p className="truncate text-sm text-gray-600">{artistName}</p>
-      </div>
-    </div>
-  );
-})}
+              if (song.release?.cover_image_url) {
+                const path = song.release.cover_image_url;
+                finalImageUrl = path.startsWith("http") ? path : `${supabaseBase}${path}`;
+              } else if (credits[0]?.artist?.image_url) {
+                finalImageUrl = credits[0].artist.image_url ?? "";
+              }
+
+              return (
+                <div key={song.id} className="shrink-0 w-50">
+                  <div className="relative aspect-square overflow-hidden rounded-2xl bg-gray-200">
+                    {finalImageUrl !== "" ? (
+                      <Image
+                        src={finalImageUrl}
+                        alt={song.title}
+                        fill
+                        className="object-cover"
+                        sizes="200px"
+                        unoptimized
+                        onError={(e) => {
+                          e.currentTarget.src = `${supabaseBase}cover-art/${song.id}/front.jpg`;
+                        }}
+                      />
+                    ) : (
+                      <div className="h-full w-full bg-gray-300 animate-pulse" />
+                    )}
+                  </div>
+                  <div className="mt-3">
+                    <h4 className="truncate font-bold text-[#002D62]">{song.title}</h4>
+                    <p className="truncate text-sm text-gray-600">{artistName}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

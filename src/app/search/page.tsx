@@ -42,7 +42,10 @@ export default async function SearchResultsPage({
     <main className="mx-6 sm:mx-12 py-24 min-h-screen">
       <header className="mb-12 border-b border-[#8B0000]/10 pb-6">
         <h1 className="text-4xl font-serif text-[#002D62]">
-          Results for <span className="italic text-[#8B0000]">"{query}"</span>
+          Results for{" "}
+          <span className="italic text-[#8B0000]">
+            &ldquo;{query}&rdquo;
+          </span>
         </h1>
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-gray-400 mt-2">
           {artists?.length || 0} Records Found

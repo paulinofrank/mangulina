@@ -3,6 +3,8 @@
 export interface Artist {
   id: string; // Changed to string to match Supabase UUIDs
   name: string;
+  /** Alternate billing / search name when different from `name` */
+  stage_name?: string | null;
   date_of_birth?: string | null; // Needed for BirthdaySection.tsx
   province?: string | null;      // Matches your DB column
   birth_place?: string | null;

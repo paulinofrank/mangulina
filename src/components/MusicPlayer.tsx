@@ -2,8 +2,37 @@
 
 import { useEffect, useRef, useState } from 'react';
 
+type YTPlayerInstance = {
+  playVideo: () => void;
+  pauseVideo: () => void;
+};
+
+type YTStateChangeEvent = { data: number };
+
+declare global {
+  interface Window {
+    YT?: {
+      Player: new (
+        elementId: string,
+        options: {
+          height: string;
+          width: string;
+          videoId: string;
+          playerVars?: Record<string, number>;
+          events?: {
+            onReady?: () => void;
+            onStateChange?: (event: YTStateChangeEvent) => void;
+          };
+        }
+      ) => YTPlayerInstance;
+      PlayerState: { PLAYING: number };
+    };
+    onYouTubeIframeAPIReady?: () => void;
+  }
+}
+
 export default function MusicPlayer({ videoId }: { videoId: string }) {
-  const playerRef = useRef<any>(null);
+  const playerRef = useRef<YTPlayerInstance | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isReady, setIsReady] = useState(false);
 
@@ -16,7 +45,9 @@ export default function MusicPlayer({ videoId }: { videoId: string }) {
     }
 
     window.onYouTubeIframeAPIReady = () => {
-      playerRef.current = new window.YT.Player('youtube-hidden-player', {
+      const YT = window.YT;
+      if (!YT) return;
+      playerRef.current = new YT.Player('youtube-hidden-player', {
         height: '0',
         width: '0',
         videoId: videoId,
@@ -26,15 +57,15 @@ export default function MusicPlayer({ videoId }: { videoId: string }) {
         },
         events: {
           onReady: () => setIsReady(true),
-          onStateChange: (event: any) => {
-            setIsPlaying(event.data === window.YT.PlayerState.PLAYING);
+          onStateChange: (event: YTStateChangeEvent) => {
+            setIsPlaying(event.data === YT.PlayerState.PLAYING);
           },
         },
       });
     };
 
     if (window.YT && window.YT.Player) {
-      window.onYouTubeIframeAPIReady();
+      window.onYouTubeIframeAPIReady?.();
     }
   }, [videoId]);
 
@@ -87,11 +118,4 @@ export default function MusicPlayer({ videoId }: { videoId: string }) {
       </p>
     </section>
   );
-}
-
-declare global {
-  interface Window {
-    YT: any;
-    onYouTubeIframeAPIReady: any;
-  }
 }

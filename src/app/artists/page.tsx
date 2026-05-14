@@ -5,7 +5,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import { getSupabaseClient } from "@/lib/supabase";
 
 import ArtistCard from "@/components/molecules/ArtistCard";
-import type { Artist } from "@/components/molecules/ArtistCard";
+import type { Artist } from "@/types/music";
 
 const ITEMS_PER_PAGE = 16;
 
