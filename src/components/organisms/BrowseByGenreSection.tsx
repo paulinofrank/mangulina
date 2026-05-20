@@ -1,72 +1,58 @@
 import Link from "next/link";
-import SectionTitle from "@/components/atoms/SectionTitle";
+import { Music, Heart, Flame, Mic2, Disc3, Sparkles } from "lucide-react";
 
 export default function BrowseByGenreSection() {
   const mainGenres = [
-    { name: "Merengue", color: "from-amber-500 to-orange-600" },
-    { name: "Bachata", color: "from-blue-500 to-indigo-600" },
-    { name: "Salsa", color: "from-red-500 to-rose-600" },
-    /* UPDATED: Reggaeton is now Black/Gray to respect the Christian color reservation */
-    { name: "Reggaeton", color: "from-zinc-800 to-black" }, 
-    { name: "Dembow", color: "from-pink-500 to-fuchsia-600" },
-    { name: "Bolero/Balada", color: "from-teal-500 to-emerald-600" },
+    { name: "Merengue", color: "bg-amber-500", icon: Music },
+    { name: "Bachata", color: "bg-blue-500", icon: Heart },
+    { name: "Salsa", color: "bg-red-500", icon: Flame },
+    { name: "Reggaeton", color: "bg-zinc-700", icon: Mic2 }, 
+    { name: "Dembow", color: "bg-pink-500", icon: Disc3 },
+    { name: "Bolero", color: "bg-teal-500", icon: Sparkles },
   ];
 
   return (
-    <section className="mx-6 sm:mx-12 space-y-8">
-      <div>
-        <div className="mb-8 pb-4 border-b border-[#002D62]/25">
-          <SectionTitle>Browse by Genre</SectionTitle>
-        </div>
-
-        {/* Main Genre Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {mainGenres.map((genre) => (
+    <section className="space-y-4">
+      <h2 className="text-base font-normal uppercase tracking-wider text-[#002D62]">Explore by Genre</h2>
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
+        {mainGenres.map((genre) => {
+          const IconComponent = genre.icon;
+          return (
             <Link
               key={genre.name}
               href={`/genres/${genre.name.toLowerCase()}`}
-              className="group relative overflow-hidden rounded-2xl aspect-4/3 flex items-center justify-center transition-transform hover:-translate-y-1"
+              className="group relative overflow-hidden rounded-lg aspect-[5/3] flex flex-col items-center justify-center gap-1.5 transition-all duration-200 hover:scale-[1.02]"
             >
-              {/* Background Gradient */}
-              <div className={`absolute inset-0 bg-linear-to-br ${genre.color} opacity-90 transition-opacity group-hover:opacity-100`} />
-              
-              {/* Decorative Glass Overlay */}
-              <div className="absolute inset-0 bg-white/5 backdrop-blur-[1px] opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className={`absolute inset-0 ${genre.color} opacity-75 transition-opacity group-hover:opacity-90`} />
 
-              <span className="relative z-10 text-lg font-bold text-white tracking-tight drop-shadow-md">
+              <IconComponent className="relative z-10 w-6 h-6 text-white/90" strokeWidth={1.5} />
+              <span className="relative z-10 text-lg font-normal text-white tracking-wide">
                 {genre.name}
               </span>
             </Link>
-          ))}
-        </div>
+          );
+        })}
       </div>
 
-      {/* Separate Christian Music Section */}
-      <div className="pt-4 pb-12">
+      <div className="pt-2 pb-4">
         <Link
           href="/artists?religious=true&page=1"
-          /* Shadow: Soft indigo bloom to make it feel special */
-          className="group relative flex w-full items-center justify-between overflow-hidden rounded-3xl border border-black/5 bg-white p-8 transition-all hover:border-[#7C3AED]/30"
-          style={{ 
-            boxShadow: '0 20px 40px -12px rgba(124, 58, 237, 0.2)' 
-          }}
+          className="group relative flex w-full items-center justify-between overflow-hidden rounded-lg border border-black/5 bg-white/60 px-4 py-3 transition-all hover:border-[#7C3AED]/20"
         >
-          {/* Spiritual Background Gradient */}
-          <div className="absolute right-0 top-0 h-full w-1/3 bg-linear-to-l from-[#7C3AED]/5 to-transparent opacity-50" />
+          <div className="absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-[#7C3AED]/3 to-transparent" />
           
-          <div className="relative z-10 flex items-center gap-6">
-            {/* The ✝️ Icon stays in its reserved Purple/Indigo theme */}
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#7C3AED]/10 text-3xl shadow-[0_0_15px_rgba(124,58,237,0.25)] group-hover:scale-110 transition-transform">
-              <span className="drop-shadow-sm">✝️</span>
+          <div className="relative z-10 flex items-center gap-3">
+            <div className="flex h-9 w-9 items-center justify-center rounded-md bg-[#7C3AED]/10 text-base group-hover:scale-105 transition-transform">
+              <span>&#10013;</span>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-[#002D62]">Música Cristiana</h3>
-              <p className="text-sm text-gray-500">Explore uplifting spiritual and gospel recordings</p>
+              <h3 className="text-base font-normal text-[#002D62]">Musica Cristiana</h3>
+              <p className="text-sm text-gray-600">Spiritual and gospel</p>
             </div>
           </div>
 
-          <div className="relative z-10 flex items-center gap-2 font-bold text-[#7C3AED] opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all">
-            Browse Section <span className="text-xl">→</span>
+          <div className="relative z-10 flex items-center gap-1 text-sm font-normal text-[#7C3AED]/70 group-hover:text-[#7C3AED] transition-colors">
+            Browse <span>&#8594;</span>
           </div>
         </Link>
       </div>

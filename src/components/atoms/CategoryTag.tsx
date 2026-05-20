@@ -9,12 +9,15 @@ type CategoryTagProps = {
 export default function CategoryTag({ label, item, color }: CategoryTagProps) {
   return (
     <Link
-      href={`/artists?${label.toLowerCase()}=${encodeURIComponent(item)}`}
-      className="group block rounded-lg px-3 py-2 text-sm font-medium transition-all hover:bg-black/3"
-      style={{ color }}
+      href={`/genres/${label.toLowerCase()}/${item.toLowerCase()}`}
+      className="flex items-center gap-2 py-1.5 px-2 rounded-lg hover:bg-gray-50 transition-colors group"
     >
-      <span className="inline-flex items-center transition-transform group-hover:translate-x-1">
-        → {item}
+      <span 
+        className="w-2 h-2 rounded-full shrink-0"
+        style={{ backgroundColor: color }}
+      />
+      <span className="text-sm text-gray-700 group-hover:text-gray-900 truncate">
+        {item}
       </span>
     </Link>
   )

@@ -1,30 +1,14 @@
+// TrendingSongsSection.tsx  (Organism)
 "use client";
 
 import { useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import SectionTitle from "@/components/atoms/SectionTitle";
-
-interface Song {
-  id: string;
-  title: string;
-  views: number;
-  release?: {
-    cover_image_url?: string | null;
-  };
-  recording_credits?: {
-    artist?: {
-      name: string;
-      image_url?: string | null;
-    };
-  }[];
-}
+import type { TrendingSong } from "@/types/home";
 
 interface TrendingSongsSectionProps {
-  songs: Song[];
+  songs?: TrendingSong[];
 }
 
-export default function TrendingSongsSection({ songs }: TrendingSongsSectionProps) {
+export default function TrendingSongsSection({ songs = [] }: TrendingSongsSectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
@@ -39,83 +23,94 @@ export default function TrendingSongsSection({ songs }: TrendingSongsSectionProp
     }
   };
 
+  const safeSongs = Array.isArray(songs) ? songs : [];
+
+  const supabaseBase =
+    "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/";
+
   return (
-    <section className="relative mx-6 overflow-hidden rounded-3xl border border-black/10 bg-white/90 shadow-xl sm:mx-12">
-      <div className="px-8 py-10 sm:px-12 sm:py-12">
+    <section className="relative overflow-hidden rounded-xl border border-black/5 bg-white/60 backdrop-blur-md">
+      <div className="px-5 py-6 sm:px-6">
         <div className="w-full">
-          <div className="flex items-center justify-between mb-8 pb-4 border-b border-[#002D62]/25">
-            <SectionTitle>Trending Songs</SectionTitle>
-            <div className="flex items-center gap-4">
-              <div className="hidden sm:flex gap-2">
+          {/* Section Header */}
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-sm font-medium uppercase tracking-wider text-[#002D62]">
+              Most Searched Songs
+            </h2>
+            <div className="flex items-center gap-3">
+              <div className="hidden sm:flex gap-1.5">
                 <button
                   onClick={() => scroll("left")}
-                  className="p-2 rounded-full border border-black/10 hover:bg-[#8B0000] hover:text-white transition-all shadow-sm"
+                  className="p-1.5 rounded-md border border-black/5 hover:bg-[#002D62] hover:text-white transition-all shadow-xs cursor-pointer"
+                  aria-label="Scroll left"
                 >
-                  <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
                   </svg>
                 </button>
                 <button
                   onClick={() => scroll("right")}
-                  className="p-2 rounded-full border border-black/10 hover:bg-[#8B0000] hover:text-white transition-all shadow-sm"
+                  className="p-1.5 rounded-md border border-black/5 hover:bg-[#002D62] hover:text-white transition-all shadow-xs cursor-pointer"
+                  aria-label="Scroll right"
                 >
-                  <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
               </div>
-              <Link href="/songs" className="ml-4 text-[#8B0000] hover:text-[#6B0000] font-semibold text-sm">
-                See All →
-              </Link>
+              <a
+                href="/songs"
+                className="text-[#8B0000] hover:text-[#6B0000] font-normal text-xs uppercase tracking-wider transition-colors"
+              >
+                See All
+              </a>
             </div>
           </div>
 
-          <div ref={scrollRef} className="flex w-full gap-6 overflow-x-auto scrollbar-none pb-4">
-            {songs.map((song) => {
+          {/* Cards Carousel */}
+          <div ref={scrollRef} className="flex w-full gap-4 overflow-x-auto scrollbar-none pb-2">
+            {safeSongs.map((song) => {
+              if (!song) return null;
+
               const credits = song.recording_credits ?? [];
               const artistName =
                 credits.length > 0
                   ? credits.map((c) => c.artist?.name).filter(Boolean).join(" & ")
-                  : "Frank Reyes";
+                  : "Unknown Artist";
 
-              const supabaseBase =
-                "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/";
-              let finalImageUrl = "";
-
-              if (song.release?.cover_image_url) {
-                const path = song.release.cover_image_url;
-                finalImageUrl = path.startsWith("http") ? path : `${supabaseBase}${path}`;
-              } else if (credits[0]?.artist?.image_url) {
-                finalImageUrl = credits[0].artist.image_url ?? "";
-              }
+              // IMAGE: only cover-art or placeholder
+              const coverUrl = song.release?.id
+                ? `${supabaseBase}cover-art/${song.release.id}.jpg`
+                : "/images/placeholder-song.jpg";
 
               return (
-                <div key={song.id} className="shrink-0 w-50">
-                  <div className="relative aspect-square overflow-hidden rounded-2xl bg-gray-200">
-                    {finalImageUrl !== "" ? (
-                      <Image
-                        src={finalImageUrl}
-                        alt={song.title}
-                        fill
-                        className="object-cover"
-                        sizes="200px"
-                        unoptimized
-                        onError={(e) => {
-                          e.currentTarget.src = `${supabaseBase}cover-art/${song.id}/front.jpg`;
-                        }}
-                      />
-                    ) : (
-                      <div className="h-full w-full bg-gray-300 animate-pulse" />
-                    )}
+                <div key={song.id} className="shrink-0 w-32 group">
+                  <div className="relative aspect-square overflow-hidden rounded-lg bg-gray-100 border border-black/5 transition-transform duration-350 ease-out group-hover:scale-[1.02]">
+                    <img
+                      src={coverUrl}
+                      alt={song.title}
+                      className="absolute inset-0 w-full h-full object-cover"
+                      loading="lazy"
+                      onError={(e) => {
+                        // Always fall back to placeholder, never artist image
+                        e.currentTarget.src = "/images/placeholder-song.jpg";
+                      }}
+                    />
                   </div>
-                  <div className="mt-3">
-                    <h4 className="truncate font-bold text-[#002D62]">{song.title}</h4>
-                    <p className="truncate text-sm text-gray-600">{artistName}</p>
+
+                  <div className="mt-2">
+                    <h4 className="truncate text-sm font-normal text-[#002D62] group-hover:text-[#CE1126] transition-colors duration-200">
+                      {song.title}
+                    </h4>
+                    <p className="truncate text-xs text-gray-500">
+                      {artistName}
+                    </p>
                   </div>
                 </div>
               );
             })}
           </div>
+
         </div>
       </div>
     </section>

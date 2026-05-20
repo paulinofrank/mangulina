@@ -1,24 +1,50 @@
-import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Instrument_Serif } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import TopBanner from "@/components/TopBanner";
-import Footer from "@/components/Footer";
+import { Finlandica, Inter, Instrument_Serif } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-outfit" });
-const instrumentSerif = Instrument_Serif({ subsets: ["latin"], weight: "400", variable: "--font-serif" });
+import GradientBackground from "@/components/atoms/GradientBackground";
+import TopBanner from "@/components/organisms/TopBanner";
+import Navbar from "@/components/organisms/Navbar";
+import Footer from "@/components/organisms/Footer";
+
+const finlandica = Finlandica({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-finlandica",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-serif",
+});
 
 export const metadata: Metadata = {
   title: "Dominican Music Database | Mangulina",
-  description: "Explore artists and songs with lyrics, translations, and cultural notes.",
+  description:
+    "Discover the greatest artists from Dominican music history with detailed information and cultural context.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className={`${inter.variable} ${instrumentSerif.variable}`} suppressHydrationWarning>
-      <body className="min-h-screen relative font-outfit antialiased bg-white">
-        {/* Dominican Flag Inspired Background */}
-        <div 
+    <html
+      lang="en"
+      className={`${finlandica.variable} ${inter.variable} ${instrumentSerif.variable}`}
+    >
+      <body className={`${finlandica.className} antialiased min-h-screen`}>
+        <GradientBackground />
+
+        <div
           className="fixed inset-0 -z-20 pointer-events-none"
           style={{
             background: `
@@ -29,14 +55,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `,
           }}
         />
-        
+
         <TopBanner />
         <Navbar />
 
-        <div className="pt-24">
-          {children}
-          <Footer />
-        </div>
+        {/* IMPORTANT: no padding wrapper here */}
+        {children}
+
+        <Footer />
+
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   );

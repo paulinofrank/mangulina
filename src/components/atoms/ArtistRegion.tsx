@@ -1,11 +1,13 @@
 type ArtistRegionProps = {
-  region?: string | null
+  region: string | null | undefined
 }
 
 export default function ArtistRegion({ region }: ArtistRegionProps) {
+  if (!region) return null
+
   return (
-    <p className="text-xs text-gray-600 mt-1">
-      {region || "Falta lugar de origen"}
+    <p className="text-sm text-gray-600 truncate">
+      {region}
     </p>
   )
 }

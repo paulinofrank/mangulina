@@ -20,6 +20,12 @@
 # production
 /build
 
+#scripts
+/scripts
+/ingest
+/backups
+/steps
+
 # misc
 .DS_Store
 *.pem

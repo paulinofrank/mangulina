@@ -2,7 +2,7 @@ import { getSupabaseClient } from '@/lib/supabase';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import MusicPlayer from '@/components/MusicPlayer';
+import MusicPlayer from '@/components/organisms/MusicPlayer';
 
 const STORAGE_URL = "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/artist-images/";
 
@@ -72,7 +72,7 @@ export default async function SongPage({ params }: { params: Promise<{ id: strin
             className="object-cover opacity-20 blur-3xl scale-110"
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/80 to-black" />
       </div>
 
       <header className="relative z-50 p-8 flex justify-between items-center">
@@ -122,7 +122,7 @@ export default async function SongPage({ params }: { params: Promise<{ id: strin
 
           {(metadata.trivia || metadata.composer) && (
             <section className="space-y-8 pt-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-              <div className="h-px bg-gradient-to-r from-wikicrimson/50 to-transparent w-full" />
+              <div className="h-px bg-linear-to-r from-wikicrimson/50 to-transparent w-full" />
               
               {metadata.composer && (
                 <div>

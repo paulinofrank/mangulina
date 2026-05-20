@@ -82,39 +82,39 @@ export default function MusicPlayer({ videoId }: { videoId: string }) {
   };
 
   return (
-    <section className="p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md">
+    <section className="p-5 rounded-xl border border-white/5 bg-white/2">
       <div id="youtube-hidden-player" className="hidden"></div>
       
-      <div className="flex items-center justify-between mb-8">
-        <div className="text-[10px] font-bold uppercase tracking-widest opacity-40">
-          {isReady ? 'Live Feed' : 'Connecting...'}
+      <div className="flex items-center justify-between mb-4">
+        <div className="text-[9px] font-normal uppercase tracking-wider text-white/30">
+          {isReady ? 'Ready' : 'Loading...'}
         </div>
-        <div className="flex gap-1 h-4 items-end">
-          <span className={`w-1 bg-wikicrimson transition-all ${isPlaying ? 'animate-bounce h-3' : 'h-1 opacity-20'}`} />
-          <span className={`w-1 bg-wikicrimson transition-all ${isPlaying ? 'animate-bounce h-5 [animation-delay:0.2s]' : 'h-1 opacity-20'}`} />
-          <span className={`w-1 bg-wikicrimson transition-all ${isPlaying ? 'animate-bounce h-2 [animation-delay:0.4s]' : 'h-1 opacity-20'}`} />
+        <div className="flex gap-0.5 h-3 items-end">
+          <span className={`w-0.5 bg-[#8B0000]/60 transition-all ${isPlaying ? 'animate-bounce h-2' : 'h-0.5 opacity-20'}`} />
+          <span className={`w-0.5 bg-[#8B0000]/60 transition-all ${isPlaying ? 'animate-bounce h-3 [animation-delay:0.2s]' : 'h-0.5 opacity-20'}`} />
+          <span className={`w-0.5 bg-[#8B0000]/60 transition-all ${isPlaying ? 'animate-bounce h-1.5 [animation-delay:0.4s]' : 'h-0.5 opacity-20'}`} />
         </div>
       </div>
 
       <button 
         onClick={togglePlay}
         disabled={!isReady}
-        className={`aspect-video w-full bg-black/40 rounded-2xl flex items-center justify-center border border-white/5 group transition-all duration-500 ${isReady ? 'cursor-pointer hover:border-wikicrimson/50' : 'cursor-wait opacity-50'}`}
+        className={`aspect-video w-full bg-black/20 rounded-lg flex items-center justify-center border border-white/5 group transition-all duration-300 ${isReady ? 'cursor-pointer hover:border-white/10' : 'cursor-wait opacity-50'}`}
       >
-        <div className={`w-16 h-16 rounded-full bg-wikicrimson flex items-center justify-center transition-transform group-hover:scale-110 ${isPlaying ? 'bg-white/10 border border-white/20' : 'shadow-xl shadow-wikicrimson/20'}`}>
+        <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-transform group-hover:scale-105 ${isPlaying ? 'bg-white/5 border border-white/10' : 'bg-[#8B0000]/80'}`}>
           {isPlaying ? (
-            <div className="flex gap-1.5">
-              <div className="w-1.5 h-6 bg-white rounded-full" />
-              <div className="w-1.5 h-6 bg-white rounded-full" />
+            <div className="flex gap-1">
+              <div className="w-1 h-4 bg-white rounded-full" />
+              <div className="w-1 h-4 bg-white rounded-full" />
             </div>
           ) : (
-            <div className="w-0 h-0 border-t-10 border-t-transparent border-l-18 border-l-white border-b-10 border-b-transparent ml-1" />
+            <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-white border-b-8 border-b-transparent ml-0.5" />
           )}
         </div>
       </button>
 
-      <p className="text-[9px] text-center mt-6 opacity-30 uppercase tracking-[0.2em]">
-        Dominican Music Database — Verified Archive
+      <p className="text-[8px] text-center mt-4 text-white/20 uppercase tracking-wider">
+        Archive Playback
       </p>
     </section>
   );

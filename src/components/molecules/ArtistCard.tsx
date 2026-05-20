@@ -1,39 +1,74 @@
-import Link from "next/link"
-import ArtistImage from "@/components/atoms/ArtistImage"
-import ArtistName from "@/components/atoms/ArtistName"
-import ArtistRegion from "@/components/atoms/ArtistRegion"
-import type { Artist } from "@/types/music"
+// ArtistCard.tsx  (Molecule)
+import Link from "next/link";
+
+import ArtistImage from "@/components/atoms/ArtistImage";
+import ArtistName from "@/components/atoms/ArtistName";
+import ArtistRegion from "@/components/atoms/ArtistRegion";
+
+import type { Artist } from "@/types/music";
 
 type ArtistCardProps = {
-  artist: Artist
-  titleAs?: "h3" | "h4"
-}
+  artist: Artist;
+  titleAs?: "h3" | "h4";
+};
 
-export default function ArtistCard({ artist, titleAs = "h3" }: ArtistCardProps) {
+export default function ArtistCard({
+  artist,
+  titleAs = "h3",
+}: ArtistCardProps) {
+
+  /**
+   * Artist image path
+   * Derived dynamically from Supabase Storage
+   */
+  const imageUrl =
+    `${process.env.NEXT_PUBLIC_SUPABASE_URL}` +
+    `/storage/v1/object/public/artists-images/` +
+    `${artist.id}/profile.jpg`;
+
   return (
     <Link
       href={`/artists/${artist.id}`}
-      // "group" is essential here so the image knows when the mouse is over the card
-      className="group block w-full" 
+      className="group block w-full"
     >
-      {/* 1. THE FRAME: This stays exactly the same size always */}
-      <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-gray-100 border border-black/5 shadow-sm">
-        
-        {/* 2. THE IMAGE: The magnifier effect happens only here */}
-        <div className="h-full w-full transition-transform duration-500 ease-out group-hover:scale-110">
-          <ArtistImage 
-            imageUrl={artist.image_url} 
-            name={artist.name} 
+
+      {/* ========================================= */}
+      {/* IMAGE FRAME */}
+      {/* ========================================= */}
+
+      <div className="relative aspect-square w-full overflow-hidden rounded-lg border border-black/5 bg-gray-100 shadow-[0_1px_2px_rgba(0,0,0,0.04)] transition-all duration-300">
+
+        {/* IMAGE */}
+        <div className="relative h-full w-full transition-transform duration-500 ease-out group-hover:scale-[1.06]">
+
+          <ArtistImage
+            imageUrl={imageUrl}
+            name={artist.name}
           />
+
         </div>
 
+        {/* SUBTLE ARCHIVE OVERLAY */}
+        <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/3" />
+
       </div>
 
-      {/* 3. THE TEXT: Since the frame above is locked, this never moves */}
-      <div className="mt-3">
-        <ArtistName name={artist.name} as={titleAs} />
-        <ArtistRegion region={artist.birth_place} />
+      {/* ========================================= */}
+      {/* TEXT */}
+      {/* ========================================= */}
+
+      <div className="mt-3 space-y-1">
+
+        <ArtistName
+          name={artist.name}
+          as={titleAs}
+        />
+
+        <ArtistRegion
+          region={artist.province}
+        />
+
       </div>
     </Link>
-  )
+  );
 }

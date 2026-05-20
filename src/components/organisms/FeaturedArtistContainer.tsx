@@ -1,3 +1,4 @@
+//FeaturedArtistContainer.tsx
 import { getSupabaseClient } from '@/lib/supabase';
 import FeaturedArtistImage from '@/components/molecules/FeaturedArtistImage';
 import type { Artist } from '@/types/music';
@@ -8,21 +9,29 @@ export default async function FeaturedArtistContainer() {
 
   // 2. FETCH THE FEATURED SLOT
   // We specify the type manually to avoid any "never" errors during build
-  const { data } = await supabase
-    .from('featured_artist')
-    .select(`
-      artists (
-        id,
-        name,
-        image_url,
-        birth_place,
-        genres
-      )
-    `)
-    .single();
+const featured = await supabase
+  .from("featured_artist")
+  .select(`
+    artist:artists!fk_featured_artist_artist (
+      id,
+      name,
+      stage_name,
+      province,
+      birth_place,
+      bio,
+      image_url,
+      is_religious,
+      facebook,
+      instagram,
+      genres,
+      views
+    )
+  `)
+  .eq("id", 1)
+  .single();
 
-  const row = data as { artists?: Artist | null } | null;
-  const artist = row?.artists ?? null;
+const featuredArtist =
+  (featured.data as any)?.artist ?? null;
 
-  return <FeaturedArtistImage featuredArtist={artist} />;
+  return <FeaturedArtistImage featuredArtist={featuredArtist} />;
 }

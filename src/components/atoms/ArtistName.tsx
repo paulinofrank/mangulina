@@ -3,18 +3,10 @@ type ArtistNameProps = {
   as?: "h3" | "h4"
 }
 
-export default function ArtistName({ name, as = "h3" }: ArtistNameProps) {
-  if (as === "h4") {
-    return (
-      <h4 className="text-sm font-semibold text-gray-900 group-hover:text-[#8B0000] line-clamp-2">
-        {name}
-      </h4>
-    )
-  }
-
+export default function ArtistName({ name, as: Tag = "h3" }: ArtistNameProps) {
   return (
-    <h3 className="text-sm font-semibold text-gray-900 group-hover:text-[#8B0000] line-clamp-2">
+    <Tag className="font-normal text-[#002D62] leading-snug truncate text-base">
       {name}
-    </h3>
+    </Tag>
   )
 }
