@@ -10,7 +10,7 @@ export default function FeaturedArtistImage({ featuredArtist }: FeaturedArtistIm
   return (
     <div className="relative aspect-square w-full sm:w-56 lg:w-64 shrink-0 overflow-hidden rounded-lg bg-gray-100 border border-black/5">
       {featuredArtist?.image_url ? (
-        <div className="h-full w-full transition-transform duration-300 ease-out hover:scale-105">
+        <div className="relative h-full w-full transition-transform duration-300 ease-out hover:scale-105">
           <Image
             src={featuredArtist.image_url}
             alt={featuredArtist.name || "Featured Artist"}
