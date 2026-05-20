@@ -14,7 +14,7 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Artists', href: '/artists' },
-    { name: 'Songs', href: '/recordings' },
+    { name: 'Songs', href: '/songs' },
     { name: 'Christians', href: '/artists?religious=true&page=1'},
   ];
 

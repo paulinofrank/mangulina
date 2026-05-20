@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="flex items-center justify-between border-t border-black/10 pt-6">
             <div className="flex items-center gap-2">
               <Image src="/icon.svg" alt="logo" width={28} height={28} />
-              <span className="text-lg font-medium tracking-tight text-[#002D62]">Mangulina&trade;</span>
+              <span className="text-lg font-medium tracking-tight text-[#002D62]">Mangulina<span className="tm-fix">&trade;</span></span>
             </div>
             <p className="text-sm text-gray-600">
               &copy; All Rights Reserved 2026
