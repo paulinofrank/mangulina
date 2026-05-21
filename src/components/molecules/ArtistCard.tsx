@@ -45,6 +45,13 @@ export default function ArtistCard({
             imageUrl={imageUrl}
             name={artist.name}
           />
+          {artist.views ? (
+            <span className="absolute top-2 right-2 text-[12px] text-gray-500 text-right leading-none">
+              {artist.views.toLocaleString()}
+              <br />
+              <span className="text-[10px]">views</span>
+            </span>
+          ) : null}
 
         </div>
 
@@ -57,7 +64,7 @@ export default function ArtistCard({
       {/* TEXT */}
       {/* ========================================= */}
 
-      <div className="mt-3 space-y-1">
+      <div className="relative mt-3 space-y-1">
 
         <ArtistName
           name={artist.name}

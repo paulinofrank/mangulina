@@ -1,175 +1,102 @@
-import { getSupabaseClient } from '@/lib/supabase';
-import Image from 'next/image';
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
-import MusicPlayer from '@/components/organisms/MusicPlayer';
+// app/songs/[id]/page.tsx
+import SongHeader from "@/components/organisms/SongHeader";
+import SongYouTubePlayer from "@/components/organisms/SongYouTubePlayer";
+import SongCreditsSection from "@/components/organisms/SongCreditsSection";
+import SongLyricsSection from "@/components/organisms/SongLyricsSection";
+import SongFunFactsSection from "@/components/organisms/SongFunFactsSection";
+import SongSlangSection from "@/components/organisms/SongSlangSection";
+import RelatedSongsSection from "@/components/organisms/RelatedSongsSection";
 
-const STORAGE_URL = "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/artist-images/";
+import {
+  getSongById,
+  getSongCredits,
+  getSongFunFacts,
+  getSongSlang,
+  getRelatedSongs,
+} from "@/lib/queries/songs";
 
-type SongMetadata = {
-  trivia?: string[];
-  composer?: string;
-  studio?: string;
+type PageProps = {
+  params: { id: string };
 };
 
-type ArtistsOld = {
-  name: string;
-  image_url?: string | null;
-};
-
-type SongRow = {
-  id: string;
-  title: string;
-  album?: string | null;
-  year?: number | null;
-  artist_id: string;
-  youtube_id?: string | null;
-  lyrics_raw?: string | null;
-  metadata?: unknown;
-  artists_old?: ArtistsOld | null;
-};
-
-function parseMetadata(raw: unknown): SongMetadata {
-  if (!raw || typeof raw !== 'object') return {};
-  const o = raw as Record<string, unknown>;
-  const trivia = Array.isArray(o.trivia) ? o.trivia.filter((x): x is string => typeof x === 'string') : undefined;
-  return {
-    trivia,
-    composer: typeof o.composer === 'string' ? o.composer : undefined,
-    studio: typeof o.studio === 'string' ? o.studio : undefined,
-  };
-}
-
-export default async function SongPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function SongProfilePage({ params }: PageProps) {
   const { id } = await params;
-  const supabase = getSupabaseClient();
 
-  const { data: song, error } = await supabase
-    .from('songs_old')
-    .select(`
-      *,
-      artists_old (*)
-    `)
-    .eq('id', id)
-    .single();
 
-  if (error || !song) return notFound();
 
-  const s = song as SongRow;
-  const metadata = parseMetadata(s.metadata);
-  const artist = s.artists_old;
+  // Clean the ID
+  const cleanId = decodeURIComponent(id).trim().replace(/^"|"$/g, "");
+
+  // Debug logs (server console)
+  console.log("RAW ID:", JSON.stringify(id));
+  console.log("CLEAN ID:", JSON.stringify(cleanId));
+
+  // Fetch data
+  const song = await getSongById(cleanId);
+  const credits = await getSongCredits(cleanId);
+  const funFacts = await getSongFunFacts(cleanId);
+  const slang = await getSongSlang(cleanId);
+  const related = await getRelatedSongs(cleanId);
+
+  // Prevent crash if song is null
+  if (!song) {
+    console.log("SONG IS NULL — ID DID NOT MATCH ANY ROW");
+    return (
+      <div className="mx-auto max-w-3xl px-5 py-8">
+        <p className="text-red-600 font-semibold">Song not found.</p>
+      </div>
+    );
+  }
+
+  // Normalize credits
+const normalizedCredits = (credits as any[]).map((c) => ({
+  role: c.role,
+  name: Array.isArray(c.artist)
+    ? c.artist[0]?.name ?? "Unknown"
+    : c.artist?.name ?? "Unknown",
+}));
+console.log("YOUTUBE ID:", song.youtube_id);
 
   return (
-    <div className="min-h-screen bg-black text-white font-outfit overflow-hidden">
-      <div className="fixed inset-0 z-0">
-        {artist?.image_url && (
-          <Image 
-            src={`${STORAGE_URL}${encodeURIComponent(artist.image_url)}`}
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover opacity-20 blur-3xl scale-110"
-          />
-        )}
-        <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/80 to-black" />
-      </div>
+    <main className="pb-16 pt-16 bg-blend-color">
+      <div className="mt-6 space-y-6">
+        <div className="mx-auto max-w-3xl px-5 py-8">
+      <SongHeader
+        title={song.recording_title}
+        artist={song.artist_name}
+        year={song.release_year}
+        views={song.views}
+      />
 
-      <header className="relative z-50 p-8 flex justify-between items-center">
-        <Link href={`/artists/${s.artist_id}`} className="group flex items-center gap-4">
-          <div className="w-10 h-10 rounded-full overflow-hidden relative border border-white/20">
-            {artist?.image_url && (
-              <Image 
-                src={`${STORAGE_URL}${encodeURIComponent(artist.image_url)}`}
-                alt={artist.name}
-                fill
-                sizes="40px"
-                className="object-cover"
-              />
-            )}
-          </div>
-          <span className="text-[10px] font-bold uppercase tracking-[0.3em] opacity-60 group-hover:opacity-100 transition-opacity">
-            Return to {artist?.name ?? 'Artist'}
-          </span>
-        </Link>
-        <div className="text-wikicrimson font-serif italic text-xl">domidb</div>
-      </header>
+{song.youtube_id && (
+  <SongYouTubePlayer
+    videoId={song.youtube_id}
+    coverArtUrl={song.cover_image_url}   // ⭐ ADD THIS
+  />
+)}
 
-      <main className="relative z-10 max-w-5xl mx-auto px-8 pt-12 pb-40 grid md:grid-cols-2 gap-20 items-start">
-        
-        <div className="sticky top-12 space-y-12">
-          <section>
-            <span className="text-wikicrimson text-[11px] font-bold uppercase tracking-[0.5em] block mb-4">
-              Now Playing
-            </span>
-            <h1 className="text-6xl md:text-8xl font-serif italic mb-6 leading-tight">
-              {s.title}
-            </h1>
-            <div className="flex items-center gap-6 opacity-40 text-sm tracking-widest uppercase">
-              <span>{s.album ?? ''}</span>
-              <span className="w-1 h-1 bg-white rounded-full" />
-              <span>{s.year ?? ''}</span>
-            </div>
-          </section>
 
-          {s.youtube_id ? (
-            <MusicPlayer videoId={s.youtube_id} />
-          ) : (
-            <div className="p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md opacity-40 italic text-center text-xs tracking-widest">
-              Audio retrieval in progress...
-            </div>
-          )}
 
-          {(metadata.trivia || metadata.composer) && (
-            <section className="space-y-8 pt-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-              <div className="h-px bg-linear-to-r from-wikicrimson/50 to-transparent w-full" />
-              
-              {metadata.composer && (
-                <div>
-                  <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] opacity-40 mb-2">Composer</h4>
-                  <p className="text-xl font-serif italic text-white/90">{metadata.composer}</p>
-                </div>
-              )}
+      <SongCreditsSection
+        credits={normalizedCredits}
+        labelName={song.label_name}
+        releaseInfo={song.release_info}
+      />
 
-              {metadata.trivia && (
-                <div className="space-y-4">
-                  <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] opacity-40">Liner Notes</h4>
-                  <div className="space-y-3">
-                    {metadata.trivia.map((fact, i) => (
-                      <div key={i} className="p-5 rounded-2xl bg-white/3 border border-white/5 text-sm text-white/70 leading-relaxed hover:border-white/10 transition-colors">
-                        {fact}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </section>
-          )}
-        </div>
+      {song.lyrics && (
+        <SongLyricsSection
+          lyrics={song.lyrics}
+          notice="Lyrics displayed with permission from rights holders."
+        />
+      )}
 
-        <section className="md:pt-20">
-          <h3 className="text-[11px] font-bold uppercase tracking-[0.3em] opacity-30 mb-12 border-b border-white/10 pb-4">
-            Lyrics Archive
-          </h3>
-          <div className="space-y-8">
-            {s.lyrics_raw ? (
-              <pre className="font-serif text-2xl md:text-4xl leading-[1.6] whitespace-pre-wrap text-white/95 italic">
-                {s.lyrics_raw}
-              </pre>
-            ) : (
-              <div className="py-20 text-center opacity-20 italic">
-                Lyrics for this record are currently being transcribed.
-              </div>
-            )}
-          </div>
+      <SongFunFactsSection facts={funFacts} />
 
-          <div className="mt-20 pt-12 border-t border-white/10">
-              <button className="text-[10px] font-bold uppercase tracking-[0.3em] text-wikicrimson hover:tracking-[0.5em] transition-all">
-                View Community Discussions →
-              </button>
-          </div>
-        </section>
-      </main>
+      <SongSlangSection slang={slang} />
+
+      <RelatedSongsSection songs={related} />
     </div>
+      </div>
+    </main>
   );
 }

@@ -4,7 +4,7 @@ import { getHomeData } from "@/lib/homeApi";
 
 import FeaturedArtistSection from "@/components/organisms/FeaturedArtistSection";
 import TopArtistsSection from "@/components/organisms/TopArtistsSection";
-import TrendingSongsSection from "@/components/organisms/TrendingSongsSection";
+import TrendingSongsSection from "@/components/organisms/MostSearchedSongs";
 import BrowseByGenreSection from "@/components/organisms/BrowseByGenreSection";
 import BrowseByRegionSection from "@/components/organisms/BrowseByRegionSection";
 import BirthdaySection from "@/components/organisms/BirthdaySection";

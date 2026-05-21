@@ -1,7 +1,7 @@
 // /songspage.tsx
 
 import { getHomeData } from "@/lib/homeApi";
-import TrendingSongsSection from "@/components/organisms/TrendingSongsSection";
+import TrendingSongsSection from "@/components/organisms/MostSearchedSongs";
 
 export const revalidate = 600;
 
