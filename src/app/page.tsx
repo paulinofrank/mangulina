@@ -28,22 +28,20 @@ export default async function HomePage() {
         </section>
 
         <section className="mx-4 sm:mx-8 lg:mx-12">
-          <TrendingSongsSection songs={data.trendingSongs} />
+          <BrowseByRegionSection regions={data.regions} />
         </section>
 
         <section className="mx-4 sm:mx-8 lg:mx-12">
-          <BrowseByRegionSection regions={data.regions} />
+          <TrendingSongsSection songs={data.trendingSongs} />
         </section>
 
         <section className="mx-4 sm:mx-8 lg:mx-12">
           <BrowseByGenreSection />
         </section>
 
-        {data.birthdayArtists.length > 0 && (
           <section className="mx-4 sm:mx-8 lg:mx-12">
             <BirthdaySection birthdayArtists={data.birthdayArtists} />
           </section>
-        )}
       </div>
     </main>
   );

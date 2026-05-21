@@ -22,7 +22,7 @@ export default function BrowseByGenreSection() {
             <Link
               key={genre.name}
               href={`/genres/${genre.name.toLowerCase()}`}
-              className="group relative overflow-hidden rounded-lg aspect-[5/3] flex flex-col items-center justify-center gap-1.5 transition-all duration-200 hover:scale-[1.02]"
+              className="group relative overflow-hidden rounded-lg aspect-5/3 flex flex-col items-center justify-center gap-1.5 transition-all duration-200 hover:scale-[1.02]"
             >
               <div className={`absolute inset-0 ${genre.color} opacity-75 transition-opacity group-hover:opacity-90`} />
 

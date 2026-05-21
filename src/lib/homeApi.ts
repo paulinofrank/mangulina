@@ -35,17 +35,18 @@ const featured = await supabase
 const featuredArtist =
   (featured.data as any)?.artist ?? null;
 
-  // 2. Birthday Artists
-  const now = new Date();
+// 2. Birthday Artists
+const now = new Date();
 
-  const birthdayResponse = await supabase.rpc(
-    "get_artists_by_day_month",
-    {
-      target_month: now.getMonth() + 1,
-      target_day: now.getDate(),
-    }
-  );
+const month = now.getMonth() + 1;
+const day = now.getDate();
 
+const birthdayResponse = await supabase
+  .from("artists")
+  .select("*")
+  .eq("birth_month", month)
+  .eq("birth_day", day)
+  
 // 3. Trending Songs
 const trendingResponse = await supabase
   .from("trending_recordings_mv")

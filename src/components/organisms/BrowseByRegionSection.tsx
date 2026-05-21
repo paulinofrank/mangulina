@@ -1,3 +1,4 @@
+// BrowseByRegionSection component that shows the regions and the count of artists in that region. It is used in the archive page to show the regions that users can browse by.
 import Link from "next/link";
 
 type RegionData = {

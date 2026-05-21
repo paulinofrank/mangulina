@@ -15,4 +15,5 @@ export interface Artist {
   instagram?: string | null;
   genres?: string[];             // Array for multiple genres
   views?: number | null;         // Kept from your other file
+death_year?: number | null;
 }
