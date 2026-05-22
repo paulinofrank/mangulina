@@ -4,8 +4,8 @@ import Link from "next/link";
 import ArtistImage from "@/components/atoms/ArtistImage";
 import ArtistName from "@/components/atoms/ArtistName";
 import ArtistRegion from "@/components/atoms/ArtistRegion";
-
 import type { Artist } from "@/types/music";
+import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 
 type ArtistCardProps = {
   artist: Artist;
@@ -17,14 +17,8 @@ export default function ArtistCard({
   titleAs = "h3",
 }: ArtistCardProps) {
 
-  /**
-   * Artist image path
-   * Derived dynamically from Supabase Storage
-   */
-  const imageUrl =
-    `${process.env.NEXT_PUBLIC_SUPABASE_URL}` +
-    `/storage/v1/object/public/artists-images/` +
-    `${artist.id}.jpg`;
+  // Build dynamic image URL
+  const imageUrl = getArtistImageUrl(artist.id);
 
   return (
     <Link
@@ -45,6 +39,7 @@ export default function ArtistCard({
             imageUrl={imageUrl}
             name={artist.name}
           />
+
           {artist.views ? (
             <span className="absolute top-2 right-2 text-[12px] text-gray-500 text-right leading-none">
               {artist.views.toLocaleString()}
