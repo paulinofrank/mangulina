@@ -9,7 +9,6 @@ export interface Artist {
   province?: string | null;      // Matches your DB column
   birth_place?: string | null;
   bio?: string | null;
-  image_url?: string | null;
   is_religious?: boolean;        // Used in your Admin form
   facebook?: string | null;
   instagram?: string | null;

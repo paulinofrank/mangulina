@@ -1,7 +1,8 @@
 // app/page.tsx
 
+import MainWrapper from "@/components/layout/MainWrapper";
+import PageSection from "@/components/layout/PageSection";
 import { getHomeData } from "@/lib/homeApi";
-
 import FeaturedArtistSection from "@/components/organisms/FeaturedArtistSection";
 import TopArtistsSection from "@/components/organisms/TopArtistsSection";
 import TrendingSongsSection from "@/components/organisms/MostSearchedSongs";
@@ -15,34 +16,32 @@ export default async function HomePage() {
   const data = await getHomeData();
 
   return (
-    <main className="pb-16 pt-16">
+    <MainWrapper>
       {/* HERO */}
-      <section className="mx-4 sm:mx-8 lg:mx-12">
+      <PageSection>
         <FeaturedArtistSection featuredArtist={data.featuredArtist} />
-      </section>
+      </PageSection>
 
       {/* CONTENT */}
-      <div className="mt-6 space-y-6">
-        <section className="mx-4 sm:mx-8 lg:mx-12">
-          <TopArtistsSection topArtists={data.topArtists} />
-        </section>
+      <PageSection>
+        <TopArtistsSection topArtists={data.topArtists} />
+      </PageSection>
 
-        <section className="mx-4 sm:mx-8 lg:mx-12">
-          <BrowseByRegionSection regions={data.regions} />
-        </section>
+      <PageSection>
+        <BrowseByRegionSection regions={data.regions} />
+      </PageSection>
 
-        <section className="mx-4 sm:mx-8 lg:mx-12">
-          <TrendingSongsSection songs={data.trendingSongs} />
-        </section>
+      <PageSection>
+        <TrendingSongsSection songs={data.trendingSongs} />
+      </PageSection>
 
-        <section className="mx-4 sm:mx-8 lg:mx-12">
-          <BrowseByGenreSection />
-        </section>
+      <PageSection>
+        <BrowseByGenreSection />
+      </PageSection>
 
-          <section className="mx-4 sm:mx-8 lg:mx-12">
-            <BirthdaySection birthdayArtists={data.birthdayArtists} />
-          </section>
-      </div>
-    </main>
+      <PageSection>
+        <BirthdaySection birthdayArtists={data.birthdayArtists} />
+      </PageSection>
+    </MainWrapper>
   );
 }

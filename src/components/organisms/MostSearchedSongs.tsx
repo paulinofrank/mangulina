@@ -1,3 +1,4 @@
+//most searched songs section on homepage
 "use client";
 
 import { useRef } from "react";
@@ -5,6 +6,7 @@ import Link from "next/link";
 import type { TrendingSong } from "@/types/home";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import SongCard from "@/components/molecules/SongCard";
+import SectionCard from "@/components/layout/SectionCard";
 
 interface MostSearchedSongsProps {
   songs?: TrendingSong[];
@@ -31,15 +33,15 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
     "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/";
 
   return (
-    <section className="relative overflow-hidden rounded-xl border border-black/5 bg-white/60 backdrop-blur-md">
+    <SectionCard>
       <CarouselArrows onLeft={() => scroll("left")} onRight={() => scroll("right")} />
 
-      <div className="px-5 py-6 sm:px-6">
+      <div className="px-5 py-0 sm:px-6">
         <div className="w-full">
 
           {/* Header */}
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-sm font-medium uppercase tracking-wider text-[#002D62]">
+          <div className="section-header">
+            <h2>
               Most Searched Songs
             </h2>
 
@@ -66,7 +68,7 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
                   : "Unknown Artist";
 
               const coverUrl = song.release?.id
-                ? `${supabaseBase}cover-art/${song.release.id}.jpg`
+                ? `${supabaseBase}cover-art/${song.release.id}.webp`
                 : "/images/placeholder-song.jpg";
 
               return (
@@ -81,9 +83,8 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
               );
             })}
           </div>
-
         </div>
       </div>
-    </section>
+    </SectionCard>
   );
 }

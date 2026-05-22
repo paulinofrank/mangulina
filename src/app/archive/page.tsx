@@ -1,5 +1,7 @@
 // src/app/archive/page.tsx
 
+import MainWrapper from "@/components/layout/MainWrapper";
+import PageSection from "@/components/layout/PageSection";
 import { getHomeData } from "@/lib/homeApi";
 import TrendingSongsSection from "@/components/organisms/MostSearchedSongs";
 import ArchiveClient from "./ArchiveClient";
@@ -10,17 +12,14 @@ export default async function ArchivePage() {
   const homeData = await getHomeData();
 
   return (
-    <main className="pb-16 pt-16">
-      <div className="mt-6 space-y-6">
+    <MainWrapper>
+      {/* ⭐ MOST SEARCHED SONGS */}
+      <PageSection>
+        <TrendingSongsSection songs={homeData.trendingSongs} />
+      </PageSection>
 
-        {/* ⭐ MOST SEARCHED SONGS */}
-        <section className="mx-4 sm:mx-8 lg:mx-12">
-          <TrendingSongsSection songs={homeData.trendingSongs} />
-        </section>
-
-        {/* ⭐ ARCHIVE INTERACTIVE CLIENT SECTION */}
-        <ArchiveClient />
-      </div>
-    </main>
+      {/* ⭐ ARCHIVE INTERACTIVE CLIENT SECTION */}
+      <ArchiveClient />
+    </MainWrapper>
   );
 }

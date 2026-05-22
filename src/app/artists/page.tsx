@@ -328,6 +328,7 @@ function ArtistsContent() {
   );
 }
 
+
 export default function ArtistsPage() {
   return (
     <Suspense fallback={null}>

@@ -5,7 +5,7 @@ export async function getSongsByYear(year: number) {
   const { data, error } = await supabase
     .from("recordings_with_release_info")
     .select("*")
-    .eq("release_year", year)
+    .eq("release_year_actual", year)
     .order("recording_title", { ascending: true });
 
   if (error) {

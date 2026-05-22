@@ -24,7 +24,7 @@ export default function ArtistCard({
   const imageUrl =
     `${process.env.NEXT_PUBLIC_SUPABASE_URL}` +
     `/storage/v1/object/public/artists-images/` +
-    `${artist.id}/profile.jpg`;
+    `${artist.id}.jpg`;
 
   return (
     <Link

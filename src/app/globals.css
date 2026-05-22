@@ -140,6 +140,11 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
+
+    h2 {
+        color: var(--color-flagblue);
+        @apply text-base font-normal uppercase tracking-wider mb-4;
+    }
 }
 
 /* ========================= COMPONENTS ========================= */
@@ -174,11 +179,22 @@
         font-weight: 500;
         /* Fine-tuned with design modernization font weights */
     }
-}
 
-.tm-fix {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 0.65em;      /* Manually shrinks it to balance with Finlandica */
-  vertical-align: 0.4em;  /* Perfectly positions it near the top of the text */
-  line-height: 0;         /* Prevents the symbol from altering your paragraph spacing */
+    .tm-fix {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 0.65em;
+        /* Manually shrinks it to balance with Finlandica */
+        vertical-align: 0.4em;
+        /* Perfectly positions it near the top of the text */
+        line-height: 0;
+        /* Prevents the symbol from altering your paragraph spacing */
+    }
+
+    .section-header {
+        @apply flex items-center justify-between mb-0;
+    }
+
+    .section-inner {
+        @apply px-5 py-0 sm:px-6;
+    }
 }
