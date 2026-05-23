@@ -19,14 +19,13 @@ export default function SongsByYearList({ songs }: { songs: SongRow[] }) {
         <span>Artist</span>
         <span>Category / Genre</span>   {/* ← updated label */}
         <span className="text-right">Duration</span>
-        <span className="text-center">Play</span>
       </div>
 
       {/* Rows */}
       {songs.map((song) => (
         <div
           key={song.recording_id}
-          className="grid grid-cols-5 py-1 border-b last:border-none text-sm items-center" // was py-2
+          className="grid grid-cols-4 py-1 border-b last:border-none text-sm items-center" // was py-2
         >
           <span className="truncate text-[#002D62]">{song.recording_title}</span>
 
@@ -34,17 +33,12 @@ export default function SongsByYearList({ songs }: { songs: SongRow[] }) {
           <span className="truncate">{song.artist_name ?? ""}</span>
 
           {/* Category / Genre */}
-          <span className="truncate">{song.genre_name ?? ""}</span>
+          <span className="hidden md:inline truncate">{song.genre_name ?? ""}</span>
 
           {/* Duration */}
           <span className="text-right text-gray-600">
             {song.duration ? formatDuration(song.duration) : "--:--"}
           </span>
-          {/* Play button (no box, smaller) */}
-          <button className="mx-auto text-[#002D62] hover:text-[#8B0000] transition">
-            ▶
-          </button>
-
         </div>
       ))}
     </div>
@@ -60,4 +54,3 @@ function formatDuration(ms: number) {
 
   return `${minutes}:${seconds.toString().padStart(2, "0")}`;
 }
-
