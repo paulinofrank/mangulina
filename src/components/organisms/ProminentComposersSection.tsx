@@ -1,42 +1,47 @@
 // ProminentComposersSection.tsx
 "use client";
 
-import { useRef } from "react"
+import { useRef } from "react";
+import Link from "next/link";
 import SectionCard from "@/components/layout/SectionCard";
-import ArtistCard from "@/components/molecules/ArtistCard"
+import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
-
-type Composer = {
-  id: string
-  name: string
-  image_url?: string | null
-  province?: string | null
-  views?: number
-}
+import type { ArtistSummary } from "@/types/home";
 
 type ProminentComposersSectionProps = {
-  composers: Composer[]
-}
+  composers: ArtistSummary[];
+};
 
-export default function ProminentComposersSection({ composers }: ProminentComposersSectionProps) {
-  const scrollRef = useRef<HTMLDivElement>(null)
+export default function ProminentComposersSection({
+  composers,
+}: ProminentComposersSectionProps) {
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
-      const { scrollLeft, clientWidth } = scrollRef.current
+      const { scrollLeft, clientWidth } = scrollRef.current;
       const scrollAmount = clientWidth * 0.8;
-      const scrollTo = direction === "left" ? scrollLeft - scrollAmount : scrollLeft + scrollAmount
-      scrollRef.current.scrollTo({ left: scrollTo, behavior: "smooth" })
+      const scrollTo =
+        direction === "left"
+          ? scrollLeft - scrollAmount
+          : scrollLeft + scrollAmount;
+
+      scrollRef.current.scrollTo({ left: scrollTo, behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <SectionCard>
       <div className="section-inner">
-
         {/* HEADER */}
         <div className="section-header">
           <h2>Behind the Scenes Composers</h2>
+          <Link
+            href="/artists"
+            className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
+          >
+            See All
+          </Link>
         </div>
 
         {/* DESKTOP ARROWS */}
@@ -59,5 +64,5 @@ export default function ProminentComposersSection({ composers }: ProminentCompos
         </div>
       </div>
     </SectionCard>
-  )
+  );
 }

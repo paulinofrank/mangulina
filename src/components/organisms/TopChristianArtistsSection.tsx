@@ -1,4 +1,4 @@
-// TopArtistsSection.tsx
+// TopChristianArtistsSection.tsx
 "use client";
 
 import { useRef } from "react";
@@ -8,11 +8,13 @@ import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
 import type { ArtistSummary } from "@/types/home";
 
-type TopArtistsSectionProps = {
-  topArtists: ArtistSummary[];
+type TopChristianArtistsSectionProps = {
+  christianArtists: ArtistSummary[];
 };
 
-export default function TopArtistsSection({ topArtists }: TopArtistsSectionProps) {
+export default function TopChristianArtistsSection({
+  christianArtists,
+}: TopChristianArtistsSectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
@@ -33,14 +35,13 @@ export default function TopArtistsSection({ topArtists }: TopArtistsSectionProps
       <div className="section-inner">
         {/* HEADER */}
         <div className="section-header">
-          <h2>Top 10 Artists</h2>
+          <h2>Top Christian Artists</h2>
           <Link
-            href="/artists"
+            href="/artists?religious=true"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
             See All
-          </Link>
-        </div>
+          </Link></div>
 
         {/* DESKTOP ARROWS */}
         <CarouselArrow direction="left" onClick={() => scroll("left")} />
@@ -51,7 +52,7 @@ export default function TopArtistsSection({ topArtists }: TopArtistsSectionProps
           ref={scrollRef}
           className="flex w-full gap-3 overflow-x-auto scrollbar-none pb-2"
         >
-          {topArtists.map((artist) => (
+          {christianArtists.map((artist) => (
             <div
               key={artist.id}
               className="shrink-0 w-[42%] sm:w-[26%] lg:w-[14%]"

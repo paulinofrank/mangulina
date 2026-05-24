@@ -23,6 +23,14 @@ export type TrendingSong = {
   }[];
 };
 
+export type ArtistSummary = {
+  id: string;
+  name: string;
+  image_url: string | null;
+  province: string | null;
+  views: number;
+};
+
 export type RegionCount = {
   name: string;
   count: number;

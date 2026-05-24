@@ -40,18 +40,19 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
         <div className="w-full">
 
           {/* Header */}
-          <div className="section-header">
-            <h2>
-              Most Searched Songs
-            </h2>
+   <div className="section-header flex items-center justify-between">
+  <h2>
+    Most Searched Songs
+  </h2>
 
-            <Link
-              href="/archive"
-              className="text-[#8B0000] hover:text-[#6B0000] font-normal text-xs uppercase tracking-wider transition-colors"
-            >
-              See All
-            </Link>
-          </div>
+  <Link
+    href="/archive"
+    className="text-[#8B0000] hover:text-[#6B0000] text-base uppercase tracking-wider transition-colors"
+  >
+    See All
+  </Link>
+</div>
+
 
           {/* Carousel */}
           <div
