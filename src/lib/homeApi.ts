@@ -22,7 +22,6 @@ export async function getHomeData() {
         birth_place,
         bio,
         image_url,
-        is_religious,
         facebook,
         instagram,
         genres,
@@ -122,6 +121,18 @@ export async function getHomeData() {
       image_url: null, // resolved in UI
     }));
 
+// 8. Rising Stars (Emerging Artists)
+const risingResponse = await supabase.rpc("get_rising_stars");
+
+const risingStars: ArtistSummary[] =
+  ((risingResponse.data as ArtistSummary[]) || []).map((a) => ({
+    id: a.id,
+    name: a.name,
+    province: a.province,
+    views: a.views,
+    image_url: null,
+  }));
+
   return {
     featuredArtist,
     birthdayArtists: (birthdayResponse.data as Artist[]) || [],
@@ -130,5 +141,6 @@ export async function getHomeData() {
     regions,
     composers,
     christianArtists,
+    risingStars
   };
 }

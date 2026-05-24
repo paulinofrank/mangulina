@@ -197,4 +197,17 @@
     .section-inner {
         @apply px-5 py-0 sm:px-6;
     }
+
+    /* ========================================= */
+    /* PAGINATION (GLOBAL UTILITY CLASSES)       */
+    /* ========================================= */
+
+    .pagination-container {
+        @apply mb-8 flex items-center justify-between w-full;
+    }
+
+    .pagination-btn {
+        @apply rounded-md px-4 py-2 shadow border border-black/60 bg-white text-[10px] uppercase tracking-[0.25em] text-gray-900 transition-all hover:bg-(--color-flagblue) hover:text-white hover:border-(--color-flagblue) disabled:opacity-30 disabled:hover:bg-white disabled:hover:text-gray-900;
+    }
+
 }

@@ -11,6 +11,7 @@ import BrowseByRegionSection from "@/components/organisms/BrowseByRegionSection"
 import ProminentComposersSection from "@/components/organisms/ProminentComposersSection";
 import BirthdaySection from "@/components/organisms/BirthdaySection";
 import TopChristianArtistsSection from "@/components/organisms/TopChristianArtistsSection";
+import TopRisingStarsSection from "@/components/organisms/TopRisingStarsSection";
 
 export const revalidate = 600; // 10 minutes
 
@@ -45,6 +46,10 @@ export default async function HomePage() {
 
       <PageSection>
         <ProminentComposersSection composers={data.composers} />
+      </PageSection>
+
+      <PageSection>
+        <TopRisingStarsSection risingStars={data.risingStars} />
       </PageSection>
 
       <PageSection>

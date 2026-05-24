@@ -1,20 +1,17 @@
-// TopChristianArtistsSection.tsx
 "use client";
 
 import { useRef } from "react";
-import Link from "next/link";
 import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
 import type { ArtistSummary } from "@/types/home";
+import Link from "next/link";
 
-type TopChristianArtistsSectionProps = {
-  christianArtists: ArtistSummary[];
+type TopRisingStarsSectionProps = {
+  risingStars: ArtistSummary[];
 };
 
-export default function TopChristianArtistsSection({
-  christianArtists,
-}: TopChristianArtistsSectionProps) {
+export default function TopRisingStarsSection({ risingStars }: TopRisingStarsSectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
@@ -33,26 +30,24 @@ export default function TopChristianArtistsSection({
   return (
     <SectionCard>
       <div className="section-inner">
-        {/* HEADER */}
         <div className="section-header">
-          <h2>Top Christian Artists</h2>
-          <Link
-            href="/artists?occupation=christian"
+          <h2>Rising Stars &rarr; Emerging Dominican Artists</h2>
+           <Link
+            href="/artists?occupation=emerging"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
             See All
-          </Link></div>
+          </Link>
+        </div>
 
-        {/* DESKTOP ARROWS */}
         <CarouselArrow direction="left" onClick={() => scroll("left")} />
         <CarouselArrow direction="right" onClick={() => scroll("right")} />
 
-        {/* CAROUSEL */}
         <div
           ref={scrollRef}
           className="flex w-full gap-3 overflow-x-auto scrollbar-none pb-2"
         >
-          {christianArtists.map((artist) => (
+          {risingStars.map((artist) => (
             <div
               key={artist.id}
               className="shrink-0 w-[42%] sm:w-[26%] lg:w-[14%]"
