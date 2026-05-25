@@ -8,7 +8,7 @@ import type { Artist } from '@/types/music';
 import { getSupabaseClient } from "@/lib/supabase";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 
-export default function ArtistProfile({ params }: { params: Promise<{ id: string }> }) {
+export default function ArtistProfile({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = use(params);
   const supabase = getSupabaseClient();
 
@@ -21,7 +21,7 @@ export default function ArtistProfile({ params }: { params: Promise<{ id: string
         const { data, error } = await supabase
           .from('artists')
           .select('*')
-          .eq('id', resolvedParams.id)
+          .eq('slug', resolvedParams.slug)
           .single();
 
         if (error || !data) {
@@ -38,7 +38,7 @@ export default function ArtistProfile({ params }: { params: Promise<{ id: string
     }
 
     fetchArtist();
-  }, [resolvedParams.id, supabase]);
+  }, [resolvedParams.slug, supabase]);
 
   if (loading) {
     return (

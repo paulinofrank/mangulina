@@ -9,6 +9,7 @@ import TrendingSongsSection from "@/components/organisms/MostSearchedSongs";
 import BrowseByGenreSection from "@/components/organisms/BrowseByGenreSection";
 import BrowseByRegionSection from "@/components/organisms/BrowseByRegionSection";
 import ProminentComposersSection from "@/components/organisms/ProminentComposersSection";
+import TopDjsSection from "@/components/organisms/TopDjsSection";
 import BirthdaySection from "@/components/organisms/BirthdaySection";
 import TopChristianArtistsSection from "@/components/organisms/TopChristianArtistsSection";
 import TopRisingStarsSection from "@/components/organisms/TopRisingStarsSection";
@@ -46,6 +47,10 @@ export default async function HomePage() {
 
       <PageSection>
         <ProminentComposersSection composers={data.composers} />
+      </PageSection>
+
+      <PageSection>
+        <TopDjsSection djs={data.djs} />
       </PageSection>
 
       <PageSection>

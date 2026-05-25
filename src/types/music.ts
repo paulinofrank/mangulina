@@ -2,6 +2,7 @@
 
 export interface Artist {
   id: string; // Changed to string to match Supabase UUIDs
+  slug: string;
   name: string;
   /** Alternate billing / search name when different from `name` */
   stage_name?: string | null;

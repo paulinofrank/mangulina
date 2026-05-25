@@ -68,7 +68,7 @@ export default function FeaturedArtistInfo({
         <ButtonSecondary
           href={
             featuredArtist
-              ? `/artists/${featuredArtist.id}`
+              ? `/artists/${featuredArtist.slug}`
               : "#"
           }
         />

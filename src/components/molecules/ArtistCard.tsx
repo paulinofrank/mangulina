@@ -22,7 +22,7 @@ export default function ArtistCard({
 
   return (
     <Link
-      href={`/artists/${artist.id}`}
+      href={`/artists/${artist.slug}`}
       className="group block w-full"
     >
 

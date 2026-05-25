@@ -109,13 +109,12 @@ export async function getHomeData() {
   const djsResponse = await supabase
     .from("artists")
     .select("id, slug, name, province, views")
-    .contains("occupations", JSON.stringify(["dj"]))
+    .contains("occupations", ["dj"])
     .order("views", {
       ascending: false,
       nullsFirst: false,
     })
     .limit(10);
-
 
   const djs: ArtistSummary[] =
     ((djsResponse.data as ArtistSummary[]) || []).map((a) => ({

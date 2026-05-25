@@ -2,6 +2,7 @@
 
 export type TopArtist = {
   id: string;
+  slug: string;
   name: string;
   image_url: string | null;
   province: string | null;
@@ -25,6 +26,7 @@ export type TrendingSong = {
 
 export type ArtistSummary = {
   id: string;
+  slug: string;
   name: string;
   image_url: string | null;
   province: string | null;
