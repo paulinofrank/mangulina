@@ -35,7 +35,7 @@ export default function TopDjsSection({ djs }: TopDjsSectionProps) {
         <div className="section-header">
           <h2>Top 10 DJs</h2>
           <Link
-            href="/artists?occupation=dj"
+            href="/artists?role=dj"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
             See All

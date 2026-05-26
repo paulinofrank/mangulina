@@ -37,7 +37,7 @@ export default function TopChristianArtistsSection({
         <div className="section-header">
           <h2>Top Christian Artists</h2>
           <Link
-            href="/artists?occupation=christian"
+            href="/artists?tag=christian"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
             See All

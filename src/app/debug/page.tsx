@@ -191,7 +191,7 @@ function ArtistsContent() {
   const handlePageChange = (page: number) => {
     const params = new URLSearchParams(searchParams.toString());
     params.set("page", page.toString());
-    router.push(`/debug?${params.toString()}`);
+    router.push(`/artists?${params.toString()}`);
   };
 
   const handleFilter = (type: "role" | "tag", key: string) => {
@@ -205,11 +205,11 @@ function ArtistsContent() {
     }
 
     params.set("page", "1");
-    router.push(`/debug?${params.toString()}`);
+    router.push(`/artists?${params.toString()}`);
   };
 
   const clearFilters = () => {
-    router.push("/debug?");
+    router.push("/artists?");
   };
 
   const activeFilters = useMemo(() => {
@@ -274,7 +274,7 @@ function ArtistsContent() {
                   const params = new URLSearchParams(searchParams.toString());
                   params.set("sort", e.target.value);
                   params.set("page", "1");
-                  router.push(`/debug?${params.toString()}`);
+                  router.push(`/artists?${params.toString()}`);
                 }}
                 value={sort}
                 className="h-10 rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
@@ -315,7 +315,7 @@ function ArtistsContent() {
             </div>
           </div>
 
-          <div className="my-4 h-px w-full bg-gradient-to-r from-transparent via-[#8B0000]/25 to-transparent" />
+          <div className="my-4 h-px w-full bg-linear-to-r from-transparent via-[#8B0000]/25 to-transparent" />
 
           {/* TAGS */}
           <div className="flex flex-wrap gap-3">
