@@ -1,0 +1,68 @@
+// ClassicalArtistsSection.tsx
+"use client";
+
+import { useRef } from "react";
+import Link from "next/link";
+import SectionCard from "@/components/layout/SectionCard";
+import ArtistCard from "@/components/molecules/ArtistCard";
+import CarouselArrow from "@/components/molecules/CarouselArrow";
+import type { ArtistSummary } from "@/types/home";
+
+type ClassicalArtistsSectionProps = {
+  classicalArtists: ArtistSummary[];
+};
+
+export default function ClassicalArtistsSection({
+  classicalArtists,
+}: ClassicalArtistsSectionProps) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: "left" | "right") => {
+    if (scrollRef.current) {
+      const { scrollLeft, clientWidth } = scrollRef.current;
+      const scrollAmount = clientWidth * 0.8;
+      const scrollTo =
+        direction === "left"
+          ? scrollLeft - scrollAmount
+          : scrollLeft + scrollAmount;
+
+      scrollRef.current.scrollTo({ left: scrollTo, behavior: "smooth" });
+    }
+  };
+
+  return (
+    <SectionCard>
+      <div className="section-inner">
+        {/* HEADER */}
+        <div className="section-header">
+          <h2>INSTRUMENTAL & CLASSICAL ARTISTS</h2>
+          <Link
+            href="/artists?occupation=instrumentalist"
+            className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
+          >
+            See All
+          </Link>
+        </div>
+
+        {/* DESKTOP ARROWS */}
+        <CarouselArrow direction="left" onClick={() => scroll("left")} />
+        <CarouselArrow direction="right" onClick={() => scroll("right")} />
+
+        {/* CAROUSEL */}
+        <div
+          ref={scrollRef}
+          className="flex w-full gap-3 overflow-x-auto scrollbar-none pb-2"
+        >
+          {classicalArtists.map((artist) => (
+            <div
+              key={artist.id}
+              className="shrink-0 w-[42%] sm:w-[26%] lg:w-[14%]"
+            >
+              <ArtistCard artist={artist} titleAs="h3" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </SectionCard>
+  );
+}

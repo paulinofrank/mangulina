@@ -12,6 +12,7 @@ import ProminentComposersSection from "@/components/organisms/ProminentComposers
 import TopDjsSection from "@/components/organisms/TopDjsSection";
 import BirthdaySection from "@/components/organisms/BirthdaySection";
 import TopChristianArtistsSection from "@/components/organisms/TopChristianArtistsSection";
+import ClassicalArtistsSection from "@/components/organisms/ClassicalArtistsSection";
 import TopRisingStarsSection from "@/components/organisms/TopRisingStarsSection";
 
 export const revalidate = 600; // 10 minutes
@@ -43,6 +44,10 @@ export default async function HomePage() {
 
       <PageSection>
         <TopChristianArtistsSection christianArtists={data.christianArtists} />
+      </PageSection>
+
+      <PageSection>
+        <ClassicalArtistsSection classicalArtists={data.classicalArtists} />
       </PageSection>
 
       <PageSection>

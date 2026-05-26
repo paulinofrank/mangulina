@@ -1,13 +1,28 @@
-// src/app/artists/page.tsx
 "use client";
 
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useMemo, useState, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
+import { SlidersHorizontal } from "lucide-react";
 import { getSupabaseClient } from "@/lib/supabase";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import type { Artist } from "@/types/music";
 
 const ITEMS_PER_PAGE = 24;
+
+const ROLE_FILTERS = [
+  { key: "singer", label: "Singer" },
+  { key: "composer", label: "Composer" },
+  { key: "songwriter", label: "Songwriter" },
+  { key: "lyricist", label: "Lyricist" },
+  { key: "dj", label: "DJs" },
+  { key: "musician", label: "Musician" },
+];
+
+const TAG_FILTERS = [
+  { key: "christian", label: "Christian" },
+  { key: "classical", label: "Classical" },
+  { key: "emerging", label: "Emerging" },
+];
 
 function Pagination({
   currentPage,
@@ -18,87 +33,97 @@ function Pagination({
   totalPages: number;
   onPageChange: (page: number) => void;
 }) {
-
   if (totalPages <= 1) return null;
 
   return (
-    <section className="mb-8 flex items-center justify-between w-full">
+    <section className="my-10 flex items-center justify-center gap-2 flex-wrap">
+      <button
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+        className="cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30"
+      >
+        Previous
+      </button>
 
-      {/* LEFT */}
-      <div className="flex gap-2">
-        <button
-          onClick={() => onPageChange(1)}
-          disabled={currentPage === 1}
-          className="rounded-md border border-black/5 bg-white/80 px-3 py-2 
-                     text-[9px] uppercase tracking-[0.25em] text-gray-500 
-                     transition-all hover:bg-black hover:text-white 
-                     disabled:opacity-25"
-        >
-          First
-        </button>
+      {Array.from({ length: Math.min(totalPages, 5) }).map((_, i) => {
+        const page = i + 1;
+        return (
+          <button
+            key={page}
+            onClick={() => onPageChange(page)}
+            className={`h-10 w-10 cursor-pointer rounded-full border text-sm transition
+              ${
+                currentPage === page
+                  ? "bg-(--color-flagblue) text-white border-(--color-flagblue)"
+                  : "border-black/10 bg-white text-gray-600 hover:bg-gray-100"
+              }`}
+          >
+            {page}
+          </button>
+        );
+      })}
 
-        <button
-          onClick={() => onPageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-          className="rounded-md border border-black/5 bg-white/80 px-3 py-2 
-                     text-[9px] uppercase tracking-[0.25em] text-gray-500 
-                     transition-all hover:bg-black hover:text-white 
-                     disabled:opacity-25"
-        >
-          Previous
-        </button>
-      </div>
-
-      {/* CENTER */}
-      <div className="hidden sm:flex flex-col items-center">
-        <span className="text-[10px] uppercase tracking-[0.3em] text-gray-400">
-          Page {currentPage} of {totalPages}
-        </span>
-      </div>
-
-      {/* RIGHT */}
-      <div className="flex gap-2">
-        <button
-          onClick={() => onPageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-          className="rounded-md border border-black/5 bg-white/80 px-3 py-2 
-                     text-[9px] uppercase tracking-[0.25em] text-gray-500 
-                     transition-all hover:bg-black hover:text-white 
-                     disabled:opacity-25"
-        >
-          Next
-        </button>
-
-        <button
-          onClick={() => onPageChange(totalPages)}
-          disabled={currentPage === totalPages}
-          className="rounded-md border border-black/5 bg-white/80 px-3 py-2 
-                     text-[9px] uppercase tracking-[0.25em] text-gray-500 
-                     transition-all hover:bg-black hover:text-white 
-                     disabled:opacity-25"
-        >
-          Last
-        </button>
-      </div>
-
+      <button
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+        className="cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30"
+      >
+        Next
+      </button>
     </section>
+  );
+}
+
+function FilterPill({
+  active,
+  label,
+  onClick,
+  tone = "blue",
+}: {
+  active: boolean;
+  label: string;
+  onClick: () => void;
+  tone?: "blue" | "red";
+}) {
+  const inactiveClass =
+    tone === "red"
+      ? "bg-white border-[#8B0000]/20 text-gray-600 hover:bg-[#8B0000]/5"
+      : "bg-white border-(--color-flagblue)/20 text-gray-600 hover:bg-(--color-flagblue)/5";
+  const activeClass =
+    tone === "red"
+      ? "bg-[#8B0000] text-white border-[#8B0000]"
+      : "bg-(--color-flagblue) text-white border-(--color-flagblue)";
+
+  return (
+    <button
+      onClick={onClick}
+      className={`
+        flex-1 basis-28 cursor-pointer rounded-full px-4 py-2 text-sm border text-center transition-all
+        ${
+          active
+            ? activeClass
+            : inactiveClass
+        }
+      `}
+    >
+      {label}
+    </button>
   );
 }
 
 function ArtistsContent() {
   const supabase = getSupabaseClient();
-  const searchParams = useSearchParams();
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   const [artists, setArtists] = useState<Artist[]>([]);
   const [loading, setLoading] = useState(true);
   const [totalCount, setTotalCount] = useState(0);
 
-  const region = searchParams.get("region");
-  const search = searchParams.get("search");
-  const occupation = searchParams.get("occupation");
-
-  const currentPage = parseInt(searchParams.get("page") || "1");
+  const role = searchParams.get("role");
+  const tag = searchParams.get("tag");
+  const sort = searchParams.get("sort") ?? "views";
+  const currentPage = parseInt(searchParams.get("page") ?? "1");
 
   useEffect(() => {
     async function loadArtists() {
@@ -114,26 +139,34 @@ function ArtistsContent() {
           .from("artists")
           .select("*", { count: "exact" });
 
-        if (region) {
-          query = query.eq("province", region);
-        }
-
+        const search = searchParams.get("search");
         if (search) {
           query = query.ilike("name", `%${search}%`);
         }
 
-        // ⭐ Strict composer filter
-        if (occupation === "composer_strict") {
-          query = query.eq("occupations", ["composer"]);
+        // ROLE FILTER
+        if (role === "composer_strict") {
+          query = query.eq("primary_role", "composer");
+        } else if (role) {
+          query = query.eq("primary_role", role);
         }
 
-        // ⭐ Normal occupation filter
-        else if (occupation) {
-          query = query.filter("occupations", "cs", `["${occupation}"]`);
+        // GENRE FILTER
+        if (tag) {
+          query = query.contains("genres", [tag]);
         }
 
         const { data, count, error } = await query
-          .order("views", { ascending: false })
+          .order(
+            sort === "name"
+              ? "name"
+              : sort === "newest"
+              ? "created_at"
+              : "views",
+            {
+              ascending: sort === "name",
+            }
+          )
           .range(from, to);
 
         if (error) {
@@ -141,131 +174,166 @@ function ArtistsContent() {
           return;
         }
 
-        setArtists((data || []) as Artist[]);
-        setTotalCount(count || 0);
+        setArtists((data ?? []) as Artist[]);
+        setTotalCount(count ?? 0);
       } catch (err) {
-        console.error("Archive fetch failed:", err);
+        console.error(err);
       } finally {
         setLoading(false);
       }
     }
 
     loadArtists();
-  }, [region, search, occupation, currentPage, supabase]);
+  }, [supabase, searchParams, currentPage, role, tag, sort]);
 
   const totalPages = Math.ceil(totalCount / ITEMS_PER_PAGE);
 
-  const handlePageChange = (newPage: number) => {
+  const handlePageChange = (page: number) => {
     const params = new URLSearchParams(searchParams.toString());
-    params.set("page", newPage.toString());
-    router.push(`/artists?${params.toString()}`);
+    params.set("page", page.toString());
+    router.push(`/debug?${params.toString()}`);
   };
 
-  const renderInscription = () => {
-    if (occupation === "composer_strict") return "Composers (Only)";
+  const handleFilter = (type: "role" | "tag", key: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    const current = params.get(type);
 
-    if (occupation)
-      return `${occupation.charAt(0).toUpperCase() + occupation.slice(1)} Artists`;
+    if (current === key) {
+      params.delete(type);
+    } else {
+      params.set(type, key);
+    }
 
-    if (region)
-      return (
-        <>
-          Artists from{" "}
-          <span className="text-(--color-wikicrimson)/80">{region}</span>
-        </>
-      );
+    params.set("page", "1");
+    router.push(`/debug?${params.toString()}`);
+  };
+
+  const clearFilters = () => {
+    router.push("/debug?");
+  };
+
+  const activeFilters = useMemo(() => {
+    return [role, tag].filter(Boolean).length;
+  }, [role, tag]);
+
+  const pageTitle = useMemo(() => {
+    const roleLabel = ROLE_FILTERS.find((item) => item.key === role)?.label;
+    const tagLabel = TAG_FILTERS.find((item) => item.key === tag)?.label;
+
+    if (tagLabel && roleLabel) {
+      return `All ${tagLabel} ${roleLabel}`;
+    }
+
+    if (tagLabel) {
+      return `All ${tagLabel} Artists`;
+    }
+
+    if (roleLabel) {
+      return `All ${roleLabel}`;
+    }
 
     return "All Artists";
-  };
+  }, [role, tag]);
 
   if (loading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-white">
-        <div className="flex flex-col items-center gap-4">
-          <div className="relative">
-            <div className="h-9 w-9 rounded-full border border-black/10" />
-            <div className="absolute inset-0 h-9 w-9 animate-spin rounded-full border border-transparent border-t-(--color-flagblue)" />
-          </div>
-
-          <p className="text-[10px] uppercase tracking-[0.3em] text-gray-400">
-            Consulting Mangulina™ Archives
-          </p>
-        </div>
+      <div className="flex min-h-screen items-center justify-center">
+        <div className="h-10 w-10 rounded-full border-2 border-black/10 border-t-(--color-flagblue) animate-spin" />
       </div>
     );
   }
 
   return (
-    <main className="mx-auto max-w-400 px-4 sm:px-8 lg:px-12 py-16 pb-32">
-
+    <main className="mx-auto max-w-450 px-4 sm:px-6 lg:px-10 py-10 pb-28">
       {/* HEADER */}
-      <section className="mb-10">
-        <div className="border-t border-black/5 mb-4" />
+      <section className="mt-6 mb-2">
+        {/* DISCOVERY PANEL */}
+        <div className="rounded-4xl border border-black/5 bg-white/80 backdrop-blur-sm p-5 sm:p-7 shadow-[0_4px_30px_rgba(0,0,0,0.03)]">
 
-        <div className="flex flex-col gap-2">
-          <p className="text-[10px] uppercase tracking-[0.3em] text-gray-400">
-            Mangulina™ Musical Archive
-          </p>
+          {/* TITLE + CONTROLS */}
+          <div className="flex flex-col gap-4 mb-8 lg:flex-row lg:items-center">
+            <div className="flex flex-1 flex-col justify-center text-center lg:text-left">
+              <h1 className="text-2xl font-bold tracking-tight text-(--color-flagblue) md:text-3xl">
+                {pageTitle}
+              </h1>
+            </div>
 
-          <div className="flex flex-col gap-1 md:flex-row md:items-end md:justify-between">
-            <h1 className="font-(family-name:--font-outfit) text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-(--color-flagblue)">
-              {renderInscription()}
-            </h1>
+            <div className="flex flex-1 items-center justify-center lg:justify-start">
+              <p className="text-sm text-gray-500">
+                Showing{" "}
+                <span className="font-semibold text-(--color-flagblue)">
+                  {artists.length}
+                </span>{" "}
+                of {totalCount.toLocaleString()} artists
+              </p>
+            </div>
 
-            <div className="text-[11px] uppercase tracking-[0.25em] text-gray-400">
-              {totalCount.toLocaleString()} Records
+            <div className="flex items-center justify-center gap-3 lg:justify-end">
+              <select
+                onChange={(e) => {
+                  const params = new URLSearchParams(searchParams.toString());
+                  params.set("sort", e.target.value);
+                  params.set("page", "1");
+                  router.push(`/artists?${params.toString()}`);
+                }}
+                value={sort}
+                className="h-10 rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
+              >
+                <option value="views">Most Viewed</option>
+                <option value="name">Name A-Z</option>
+                <option value="newest">Newest</option>
+              </select>
+
+              <button className="flex cursor-pointer items-center gap-2 rounded-xl border border-black/10 px-5 h-10 text-sm text-gray-600">
+                <SlidersHorizontal size={16} />
+                Filters ({activeFilters})
+              </button>
+
+              {activeFilters > 0 && (
+                <button
+                  onClick={clearFilters}
+                  className="cursor-pointer text-sm text-(--color-flagblue)"
+                >
+                  Clear all
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* ROLES */}
+          <div className="mb-3 flex flex-wrap gap-3">
+            <div className="flex w-full flex-wrap gap-3">
+              {ROLE_FILTERS.map((item) => (
+                <FilterPill
+                  key={item.key}
+                  label={item.label}
+                  active={role === item.key}
+                  onClick={() => handleFilter("role", item.key)}
+                  tone="blue"
+                />
+              ))}
+            </div>
+          </div>
+
+          <div className="my-4 h-px w-full bg-gradient-to-r from-transparent via-[#8B0000]/25 to-transparent" />
+
+          {/* TAGS */}
+          <div className="flex flex-wrap gap-3">
+            <div className="flex w-full flex-wrap gap-3">
+              {TAG_FILTERS.map((item) => (
+                <FilterPill
+                  key={item.key}
+                  label={item.label}
+                  active={tag === item.key}
+                  onClick={() => handleFilter("tag", item.key)}
+                  tone="red"
+                />
+              ))}
             </div>
           </div>
         </div>
-
-        <div className="border-b border-black/5 mt-4" />
       </section>
 
-      {/* OCCUPATION FILTERS */}
-      <section className="mb-8 flex flex-wrap gap-2 w-full">
-
-        {[
-          { key: "singer", label: "Singer" },
-          { key: "composer", label: "Composer" },
-          { key: "composer_strict", label: "Composer Only" },
-          { key: "lyricist", label: "Lyricist" },
-          { key: "producer", label: "Producer" },
-          { key: "musician", label: "Musician" },
-          { key: "christian", label: "Christian" },
-          { key: "emerging", label: "Emerging" },
-        ].map(({ key, label }) => {
-          const isActive = occupation === key;
-
-          return (
-            <button
-              key={key}
-              onClick={() => {
-                const params = new URLSearchParams(searchParams.toString());
-
-                if (isActive) {
-                  params.delete("occupation");
-                } else {
-                  params.set("occupation", key);
-                  params.set("page", "1");
-                }
-
-                router.push(`/artists?${params.toString()}`);
-              }}
-              className={`flex-1 min-w-30 text-center px-4 py-2 rounded-full cursor-pointer text-sm border transition-all
-  ${isActive
-                  ? "bg-(--color-flagblue) text-white border-(--color-flagblue)"
-                  : "bg-white text-gray-600 border-gray-300 hover:bg-gray-100"
-                }
-`}
-
-            >
-              {label}
-            </button>
-          );
-        })}
-      </section>
-
-      {/* TOP PAGINATION */}
       <Pagination
         currentPage={currentPage}
         totalPages={totalPages}
@@ -273,32 +341,21 @@ function ArtistsContent() {
       />
 
       {/* GRID */}
-      <section className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
-        {artists.length > 0 ? (
-          artists.map((artist) => (
-            <div key={artist.id} className="flex justify-center sm:justify-start">
-              <div className="w-full max-w-42.5">
-                <ArtistCard artist={artist} />
-              </div>
+      <section className="rounded-4xl border border-black/5 bg-white/80 backdrop-blur-sm p-6 sm:p-8 shadow-[0_4px_30px_rgba(0,0,0,0.03)]">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-4 sm:gap-5">
+          {artists.map((artist) => (
+            <div key={artist.id} className="mx-auto w-[90%]">
+              <ArtistCard artist={artist} />
             </div>
-          ))
-        ) : (
-          <div className="col-span-full py-24 text-center">
-            <p className="font-serif text-xl italic text-gray-300">
-              No matching records found in the archive.
-            </p>
-          </div>
-        )}
+          ))}
+        </div>
       </section>
 
-      {/* BOTTOM PAGINATION */}
-      <div className="mt-12"></div>
       <Pagination
         currentPage={currentPage}
         totalPages={totalPages}
         onPageChange={handlePageChange}
       />
-
     </main>
   );
 }

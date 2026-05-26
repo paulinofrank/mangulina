@@ -4,6 +4,7 @@ export interface Artist {
   id: string; // Changed to string to match Supabase UUIDs
   slug: string;
   name: string;
+  primary_role?: string | null;
   /** Alternate billing / search name when different from `name` */
   stage_name?: string | null;
   date_of_birth?: string | null; // Needed for BirthdaySection.tsx

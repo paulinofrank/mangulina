@@ -109,7 +109,7 @@ export async function getHomeData() {
   const djsResponse = await supabase
     .from("artists")
     .select("id, slug, name, province, views")
-    .contains("occupations", JSON.stringify(["dj"]))
+    .eq("primary_role", "dj")
     .order("views", {
       ascending: false,
       nullsFirst: false,
@@ -128,7 +128,15 @@ export async function getHomeData() {
     }));
 
   // 8. Top Christian Artists
-  const christianResponse = await supabase.rpc("get_top_christian_artists");
+  const christianResponse = await supabase
+    .from("artists")
+    .select("id, slug, name, province, views")
+    .contains("genres", ["christian"])
+    .order("views", {
+      ascending: false,
+      nullsFirst: false,
+    })
+    .limit(10);
 
   const christianArtists: ArtistSummary[] =
     ((christianResponse.data as ArtistSummary[]) || []).map((a) => ({
@@ -140,18 +148,47 @@ export async function getHomeData() {
       image_url: null, // resolved in UI
     }));
 
-// 9. Rising Stars (Emerging Artists)
-const risingResponse = await supabase.rpc("get_rising_stars");
+  // 9. Classical Artists
+  const classicalResponse = await supabase
+    .from("artists")
+    .select("id, slug, name, province, views")
+    .eq("primary_role", "instrumentalist")
+    .order("views", {
+      ascending: false,
+      nullsFirst: false,
+    })
+    .limit(10);
 
-const risingStars: ArtistSummary[] =
-  ((risingResponse.data as ArtistSummary[]) || []).map((a) => ({
-    id: a.id,
-    slug: a.slug,
-    name: a.name,
-    province: a.province,
-    views: a.views,
-    image_url: null,
-  }));
+  const classicalArtists: ArtistSummary[] =
+    ((classicalResponse.data as ArtistSummary[]) || []).map((a) => ({
+      id: a.id,
+      slug: a.slug,
+      name: a.name,
+      province: a.province,
+      views: a.views,
+      image_url: null,
+    }));
+
+  // 10. Rising Stars (Emerging Artists)
+  const risingResponse = await supabase
+    .from("artists")
+    .select("id, slug, name, province, views")
+    .contains("genres", ["emerging"])
+    .order("views", {
+      ascending: false,
+      nullsFirst: false,
+    })
+    .limit(10);
+
+  const risingStars: ArtistSummary[] =
+    ((risingResponse.data as ArtistSummary[]) || []).map((a) => ({
+      id: a.id,
+      slug: a.slug,
+      name: a.name,
+      province: a.province,
+      views: a.views,
+      image_url: null,
+    }));
 
   return {
     featuredArtist,
@@ -162,6 +199,7 @@ const risingStars: ArtistSummary[] =
     composers,
     djs,
     christianArtists,
+    classicalArtists,
     risingStars
   };
 }
