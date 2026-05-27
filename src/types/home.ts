@@ -4,7 +4,6 @@ export type TopArtist = {
   id: string;
   slug: string;
   name: string;
-  image_url: string | null;
   province: string | null;
   views: number;
 };
@@ -18,8 +17,8 @@ export type TrendingSong = {
   } | null;
   recording_credits: {
     artist: {
+      id: string | null;
       name: string;
-      image_url: string | null;
     } | null;
   }[];
 };
@@ -28,12 +27,11 @@ export type ArtistSummary = {
   id: string;
   slug: string;
   name: string;
-  image_url: string | null;
   province: string | null;
   views: number;
 };
 
 export type RegionCount = {
-  name: string;
+  province: string;
   count: number;
 };

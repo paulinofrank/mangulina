@@ -49,7 +49,7 @@ export default function FeaturedArtistInfo({
         {featuredArtist?.genres &&
           featuredArtist.genres.length > 0 && (
             <span className="text-gray-700">
-              <span className="text-gray-600 mr-1">Genre:</span>
+              <span className="text-gray-600 mr-1">Musical Genres:</span>
 
               <span className="bg-gray-100 px-2 py-0.5 rounded text-gray-700">
                 {featuredArtist.genres.join(", ")}

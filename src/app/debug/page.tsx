@@ -24,6 +24,8 @@ const TAG_FILTERS = [
   { key: "emerging", label: "Emerging" },
 ];
 
+const ARTIST_TAG_FILTERS = new Set(["christian", "emerging"]);
+
 function Pagination({
   currentPage,
   totalPages,
@@ -151,9 +153,11 @@ function ArtistsContent() {
           query = query.eq("primary_role", role);
         }
 
-        // GENRE FILTER
+        // Classification tags live in artist_tags; musical genres stay in genres.
         if (tag) {
-          query = query.contains("genres", [tag]);
+          query = ARTIST_TAG_FILTERS.has(tag)
+            ? query.contains("artist_tags", [tag])
+            : query.contains("genres", [tag]);
         }
 
         const { data, count, error } = await query

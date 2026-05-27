@@ -14,7 +14,8 @@ export interface Artist {
   is_religious?: boolean;        // Used in your Admin form
   facebook?: string | null;
   instagram?: string | null;
-  genres?: string[];             // Array for multiple genres
+  genres?: string[] | null;      // Musical genres/styles only
+  artist_tags?: string[] | null; // Editorial/category tags
   views?: number | null;         // Kept from your other file
 death_year?: number | null;
 }

@@ -33,7 +33,7 @@ export default function TopRisingStarsSection({ risingStars }: TopRisingStarsSec
         <div className="section-header">
           <h2>Rising Stars &rarr; Emerging Dominican Artists</h2>
            <Link
-            href="/artists?occupation=emerging"
+            href="/artists?tag=emerging"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
             See All

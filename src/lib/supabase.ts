@@ -19,7 +19,7 @@ if (!supabaseUrl || !keyToUse) {
 
 // 4. THE SINGLETON INSTANCE
 // REMOVED <Database> generic to stop the "never" type errors.
-// This allows you to access custom columns like image_url without TypeScript blocking you.
+// This allows access to project-specific columns without TypeScript blocking you.
 export const supabase = createClient(
   supabaseUrl || "",
   keyToUse || ""

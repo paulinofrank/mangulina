@@ -17,7 +17,7 @@ export default async function SearchResultsPage({
   // 1. UPDATED SELECT: Fetching 'birth_place' instead of 'origin_region'
   const { data: artists, error } = await supabase
     .from('artists')
-    .select('id, slug, name, stage_name, image_url, birth_place') 
+    .select('id, slug, name, stage_name, birth_place')
     .or(`name.ilike.%${query}%,stage_name.ilike.%${query}%`)
     .order('views', { ascending: false });
 

@@ -24,6 +24,13 @@ const TAG_FILTERS = [
   { key: "emerging", label: "Emerging" },
 ];
 
+const ARTIST_TAG_FILTERS = new Set(["christian", "emerging"]);
+
+type ProvinceOption = {
+  province: string;
+  count: number;
+};
+
 function Pagination({
   currentPage,
   totalPages,
@@ -117,13 +124,37 @@ function ArtistsContent() {
   const searchParams = useSearchParams();
 
   const [artists, setArtists] = useState<Artist[]>([]);
+  const [provinces, setProvinces] = useState<ProvinceOption[]>([]);
   const [loading, setLoading] = useState(true);
   const [totalCount, setTotalCount] = useState(0);
 
   const role = searchParams.get("role");
   const tag = searchParams.get("tag");
+  const province = searchParams.get("province") ?? searchParams.get("region");
   const sort = searchParams.get("sort") ?? "views";
   const currentPage = parseInt(searchParams.get("page") ?? "1");
+
+  useEffect(() => {
+    async function loadProvinces() {
+      if (!supabase) return;
+
+      const { data, error } = await supabase.rpc("get_artist_provinces");
+
+      if (error) {
+        console.error(error);
+        return;
+      }
+
+      setProvinces(
+        ((data ?? []) as ProvinceOption[]).map((item) => ({
+          province: item.province,
+          count: Number(item.count || 0),
+        }))
+      );
+    }
+
+    loadProvinces();
+  }, [supabase]);
 
   useEffect(() => {
     async function loadArtists() {
@@ -151,9 +182,15 @@ function ArtistsContent() {
           query = query.eq("primary_role", role);
         }
 
-        // GENRE FILTER
+        // Classification tags live in artist_tags; musical genres stay in genres.
         if (tag) {
-          query = query.contains("genres", [tag]);
+          query = ARTIST_TAG_FILTERS.has(tag)
+            ? query.contains("artist_tags", [tag])
+            : query.contains("genres", [tag]);
+        }
+
+        if (province) {
+          query = query.eq("province", province);
         }
 
         const { data, count, error } = await query
@@ -184,7 +221,7 @@ function ArtistsContent() {
     }
 
     loadArtists();
-  }, [supabase, searchParams, currentPage, role, tag, sort]);
+  }, [supabase, searchParams, currentPage, role, tag, province, sort]);
 
   const totalPages = Math.ceil(totalCount / ITEMS_PER_PAGE);
 
@@ -208,17 +245,47 @@ function ArtistsContent() {
     router.push(`/artists?${params.toString()}`);
   };
 
+  const handleProvinceChange = (value: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+
+    if (value) {
+      params.set("province", value);
+    } else {
+      params.delete("province");
+    }
+
+    params.delete("region");
+    params.set("page", "1");
+    router.push(`/artists?${params.toString()}`);
+  };
+
   const clearFilters = () => {
     router.push("/artists?");
   };
 
   const activeFilters = useMemo(() => {
-    return [role, tag].filter(Boolean).length;
-  }, [role, tag]);
+    return [role, tag, province].filter(Boolean).length;
+  }, [role, tag, province]);
 
   const pageTitle = useMemo(() => {
     const roleLabel = ROLE_FILTERS.find((item) => item.key === role)?.label;
     const tagLabel = TAG_FILTERS.find((item) => item.key === tag)?.label;
+
+    if (province && tagLabel && roleLabel) {
+      return `${province} ${tagLabel} ${roleLabel}`;
+    }
+
+    if (province && tagLabel) {
+      return `${province} ${tagLabel} Artists`;
+    }
+
+    if (province && roleLabel) {
+      return `${province} ${roleLabel}`;
+    }
+
+    if (province) {
+      return `Artists from ${province}`;
+    }
 
     if (tagLabel && roleLabel) {
       return `All ${tagLabel} ${roleLabel}`;
@@ -233,7 +300,7 @@ function ArtistsContent() {
     }
 
     return "All Artists";
-  }, [role, tag]);
+  }, [role, tag, province]);
 
   if (loading) {
     return (
@@ -268,7 +335,20 @@ function ArtistsContent() {
               </p>
             </div>
 
-            <div className="flex items-center justify-center gap-3 lg:justify-end">
+            <div className="flex flex-wrap items-center justify-center gap-3 lg:justify-end">
+              <select
+                onChange={(e) => handleProvinceChange(e.target.value)}
+                value={province ?? ""}
+                className="h-10 max-w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
+              >
+                <option value="">All Provinces</option>
+                {provinces.map((item) => (
+                  <option key={item.province} value={item.province}>
+                    {item.province} ({item.count})
+                  </option>
+                ))}
+              </select>
+
               <select
                 onChange={(e) => {
                   const params = new URLSearchParams(searchParams.toString());

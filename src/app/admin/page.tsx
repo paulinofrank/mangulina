@@ -29,6 +29,7 @@ export default function AdminDashboard() {
   const [facebook, setFacebook] = useState('');
   const [instagram, setInstagram] = useState('');
   const [genres, setGenres] = useState('');
+  const [artistTags, setArtistTags] = useState('');
 
   const fetchData = useCallback(async () => {
     const { data: artistsData, error: aError } = await supabase
@@ -67,6 +68,7 @@ export default function AdminDashboard() {
       setFacebook(artist.facebook || '');
       setInstagram(artist.instagram || '');
       setGenres(artist.genres?.join(', ') || '');
+      setArtistTags(artist.artist_tags?.join(', ') || '');
     } else {
       resetForm();
     }
@@ -83,6 +85,7 @@ export default function AdminDashboard() {
     setFacebook('');
     setInstagram('');
     setGenres('');
+    setArtistTags('');
   };
 
   async function updateFeatured() {
@@ -110,7 +113,8 @@ export default function AdminDashboard() {
       is_religious: isReligious,
       facebook,
       instagram,
-      genres: genres.split(',').map(g => g.trim()).filter(g => g !== '')
+      genres: genres.split(',').map(g => g.trim()).filter(g => g !== ''),
+      artist_tags: artistTags.split(',').map(tag => tag.trim()).filter(tag => tag !== '')
     };
 
     let error: { message: string } | null = null;
@@ -197,7 +201,8 @@ export default function AdminDashboard() {
             <input placeholder="Instagram URL" value={instagram} onChange={e => setInstagram(e.target.value)} style={inputStyle} />
           </div>
 
-          <input placeholder="Genres (comma separated)" value={genres} onChange={e => setGenres(e.target.value)} style={inputStyle} />
+          <input placeholder="Musical genres/styles (comma separated)" value={genres} onChange={e => setGenres(e.target.value)} style={inputStyle} />
+          <input placeholder="Tags / classification (comma separated)" value={artistTags} onChange={e => setArtistTags(e.target.value)} style={inputStyle} />
 
           <textarea placeholder="Biography / Archive Notes" value={bio} onChange={e => setBio(e.target.value)} style={{ ...inputStyle, minHeight: '120px', resize: 'vertical' }} />
 

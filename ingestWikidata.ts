@@ -85,6 +85,7 @@ interface ArtistUpdate {
   instagram?:        string;
   occupations?:      string[];
   genres?:           string[];
+  artist_tags?:      string[];
 }
 
 type EnrichResult = "updated" | "skipped" | "error";

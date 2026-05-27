@@ -9,7 +9,7 @@ type RegionCardProps = {
 export default function RegionCard({ region, count }: RegionCardProps) {
   return (
     <Link
-      href={`/artists?region=${encodeURIComponent(region)}`}
+      href={`/artists?province=${encodeURIComponent(region)}`}
       className="group block rounded-lg px-3 py-2.5 bg-white border border-black/10 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all w-full"
     >
       <RegionTag region={region} count={count} />

@@ -22,10 +22,10 @@ export async function getHomeData() {
         province,
         birth_place,
         bio,
-        image_url,
         facebook,
         instagram,
         genres,
+        artist_tags,
         views
       )
     `)
@@ -46,8 +46,8 @@ export async function getHomeData() {
       recording_title,
       views,
       release_id,
-      artist_name,
-      artist_image_url
+      artist_id,
+      artist_name
     `)
     .order("views", { ascending: false })
     .limit(12);
@@ -62,8 +62,8 @@ export async function getHomeData() {
         {
           artist: r.artist_name
             ? {
+              id: r.artist_id,
               name: r.artist_name,
-              image_url: r.artist_image_url ?? null,
             }
             : null,
         },
@@ -80,15 +80,14 @@ export async function getHomeData() {
       name: a.name,
       province: a.province,
       views: a.views,
-      image_url: null, // resolved in UI
     }));
 
   // 5. Regions
-  const regionsResponse = await supabase.rpc("get_region_counts");
+  const regionsResponse = await supabase.rpc("get_artist_provinces");
 
   const regions: RegionCount[] =
     (regionsResponse.data || []).map((r: any) => ({
-      name: r.name,
+      province: r.province,
       count: Number(r.count || 0),
     }));
 
@@ -102,7 +101,6 @@ export async function getHomeData() {
       name: a.name,
       province: a.province,
       views: a.views,
-      image_url: null, // resolved in UI
     }));
 
   // 7. Top DJs
@@ -124,14 +122,13 @@ export async function getHomeData() {
       name: a.name,
       province: a.province,
       views: a.views,
-      image_url: null,
     }));
 
   // 8. Top Christian Artists
   const christianResponse = await supabase
     .from("artists")
     .select("id, slug, name, province, views")
-    .contains("genres", ["christian"])
+    .contains("artist_tags", ["christian"])
     .order("views", {
       ascending: false,
       nullsFirst: false,
@@ -145,7 +142,6 @@ export async function getHomeData() {
       name: a.name,
       province: a.province,
       views: a.views,
-      image_url: null, // resolved in UI
     }));
 
   // 9. Classical Artists
@@ -166,14 +162,13 @@ export async function getHomeData() {
       name: a.name,
       province: a.province,
       views: a.views,
-      image_url: null,
     }));
 
   // 10. Rising Stars (Emerging Artists)
   const risingResponse = await supabase
     .from("artists")
     .select("id, slug, name, province, views")
-    .contains("genres", ["emerging"])
+    .contains("artist_tags", ["emerging"])
     .order("views", {
       ascending: false,
       nullsFirst: false,
@@ -187,7 +182,6 @@ export async function getHomeData() {
       name: a.name,
       province: a.province,
       views: a.views,
-      image_url: null,
     }));
 
   return {
