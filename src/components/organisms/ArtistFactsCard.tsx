@@ -8,7 +8,6 @@ function formatDate(date: string | null) {
   if (!date) return null;
 
   const parsed = new Date(`${date}T00:00:00`);
-
   if (Number.isNaN(parsed.getTime())) return null;
 
   return parsed
@@ -90,6 +89,7 @@ export default function ArtistFactsCard({ artist }: Props) {
   const birthDate = formatDate(artist.date_of_birth);
   const birthPlace = getBirthPlace(artist);
   const occupations = getOccupationList(artist.occupations);
+  const deathDate = formatDate(artist.date_of_death);
 
   return (
     <section className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
@@ -120,6 +120,12 @@ export default function ArtistFactsCard({ artist }: Props) {
             {birthPlace && <div>Place: {birthPlace}</div>}
           </div>
         </Field>
+
+        {artist.death_year && (
+          <Field label="Death">
+            {deathDate || artist.death_year}
+          </Field>
+        )}
 
         <Field label="Real Name">{realName}</Field>
 

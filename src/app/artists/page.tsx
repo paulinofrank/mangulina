@@ -25,6 +25,24 @@ const TAG_FILTERS = [
 ];
 
 const ARTIST_TAG_FILTERS = new Set(["christian", "emerging"]);
+const ARTISTS_QUERY_TIMEOUT_MS = 20000;
+const ARTIST_LIST_SELECT = [
+  "id",
+  "slug",
+  "name",
+  "primary_role",
+  "stage_name",
+  "date_of_birth",
+  "province",
+  "birth_place",
+  "bio",
+  "facebook",
+  "instagram",
+  "genres",
+  "artist_tags",
+  "views",
+  "death_year",
+].join(",");
 
 type ProvinceOption = {
   province: string;
@@ -122,10 +140,12 @@ function ArtistsContent() {
   const supabase = getSupabaseClient();
   const router = useRouter();
   const searchParams = useSearchParams();
+  const searchParamsString = searchParams.toString();
 
   const [artists, setArtists] = useState<Artist[]>([]);
   const [provinces, setProvinces] = useState<ProvinceOption[]>([]);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [totalCount, setTotalCount] = useState(0);
 
   const role = searchParams.get("role");
@@ -135,6 +155,8 @@ function ArtistsContent() {
   const currentPage = parseInt(searchParams.get("page") ?? "1");
 
   useEffect(() => {
+    let isActive = true;
+
     async function loadProvinces() {
       if (!supabase) return;
 
@@ -145,6 +167,8 @@ function ArtistsContent() {
         return;
       }
 
+      if (!isActive) return;
+
       setProvinces(
         ((data ?? []) as ProvinceOption[]).map((item) => ({
           province: item.province,
@@ -154,13 +178,37 @@ function ArtistsContent() {
     }
 
     loadProvinces();
+
+    return () => {
+      isActive = false;
+    };
   }, [supabase]);
 
   useEffect(() => {
+    let isActive = true;
+    const abortController = new AbortController();
+    let timeoutId: number | undefined;
+
     async function loadArtists() {
-      if (!supabase) return;
+      if (!supabase) {
+        if (isActive) {
+          setLoadError("Artist data is not configured.");
+          setLoading(false);
+        }
+        return;
+      }
 
       setLoading(true);
+      setLoadError(null);
+      timeoutId = window.setTimeout(() => {
+        abortController.abort();
+        if (isActive) {
+          setArtists([]);
+          setTotalCount(0);
+          setLoadError("Artist data took too long to respond.");
+          setLoading(false);
+        }
+      }, ARTISTS_QUERY_TIMEOUT_MS);
 
       try {
         const from = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -168,7 +216,7 @@ function ArtistsContent() {
 
         let query = supabase
           .from("artists")
-          .select("*", { count: "exact" });
+          .select(ARTIST_LIST_SELECT, { count: "exact" });
 
         const search = searchParams.get("search");
         if (search) {
@@ -204,24 +252,46 @@ function ArtistsContent() {
               ascending: sort === "name",
             }
           )
+          .abortSignal(abortController.signal)
           .range(from, to);
+
+        if (!isActive || abortController.signal.aborted) return;
 
         if (error) {
           console.error(error);
+          setArtists([]);
+          setTotalCount(0);
+          setLoadError("Unable to load artists right now.");
           return;
         }
 
-        setArtists((data ?? []) as Artist[]);
+        setArtists(((data ?? []) as unknown) as Artist[]);
         setTotalCount(count ?? 0);
       } catch (err) {
+        if (!isActive) return;
+
         console.error(err);
+        setArtists([]);
+        setTotalCount(0);
+        setLoadError(
+          abortController.signal.aborted
+            ? "Artist data took too long to respond."
+            : "Unable to load artists right now."
+        );
       } finally {
-        setLoading(false);
+        if (timeoutId) window.clearTimeout(timeoutId);
+        if (isActive) setLoading(false);
       }
     }
 
     loadArtists();
-  }, [supabase, searchParams, currentPage, role, tag, province, sort]);
+
+    return () => {
+      isActive = false;
+      abortController.abort();
+      if (timeoutId) window.clearTimeout(timeoutId);
+    };
+  }, [supabase, searchParamsString, currentPage, role, tag, province, sort]);
 
   const totalPages = Math.ceil(totalCount / ITEMS_PER_PAGE);
 
@@ -261,6 +331,11 @@ function ArtistsContent() {
 
   const clearFilters = () => {
     router.push("/artists?");
+  };
+
+  const retryLoad = () => {
+    router.refresh();
+    window.location.reload();
   };
 
   const activeFilters = useMemo(() => {
@@ -422,13 +497,29 @@ function ArtistsContent() {
 
       {/* GRID */}
       <section className="rounded-4xl border border-black/5 bg-white/80 backdrop-blur-sm p-6 sm:p-8 shadow-[0_4px_30px_rgba(0,0,0,0.03)]">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-4 sm:gap-5">
-          {artists.map((artist) => (
-            <div key={artist.id} className="mx-auto w-[90%]">
-              <ArtistCard artist={artist} />
-            </div>
-          ))}
-        </div>
+        {loadError ? (
+          <div className="flex min-h-60 flex-col items-center justify-center gap-4 text-center">
+            <p className="text-sm text-gray-500">{loadError}</p>
+            <button
+              onClick={retryLoad}
+              className="cursor-pointer rounded-xl border border-black/10 bg-white px-5 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white"
+            >
+              Retry
+            </button>
+          </div>
+        ) : artists.length > 0 ? (
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-4 sm:gap-5">
+            {artists.map((artist) => (
+              <div key={artist.id} className="mx-auto w-[90%]">
+                <ArtistCard artist={artist} />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="flex min-h-60 items-center justify-center text-center">
+            <p className="text-sm text-gray-500">No artists found.</p>
+          </div>
+        )}
       </section>
 
       <Pagination

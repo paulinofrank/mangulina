@@ -25,6 +25,7 @@
 /ingest
 /backups
 /steps
+/UNUSED
 
 # misc
 .DS_Store

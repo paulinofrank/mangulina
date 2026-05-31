@@ -7,10 +7,35 @@ type Props = {
   coverArtUrl: string;
 };
 
+type YouTubePlayer = {
+  loadVideoById: (videoId: string) => void;
+  destroy?: () => void;
+};
+
+declare global {
+  interface Window {
+    YT?: {
+      Player: new (
+        element: HTMLElement,
+        options: {
+          height: string;
+          width: string;
+          videoId: string;
+          playerVars: Record<string, number>;
+          events: {
+            onReady: () => void;
+            onStateChange: (event: { data: number }) => void;
+          };
+        },
+      ) => YouTubePlayer;
+    };
+    onYouTubeIframeAPIReady?: () => void;
+  }
+}
 
 export default function SongYouTubePlayer({ videoId, coverArtUrl }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const playerRef = useRef<any>(null);
+  const playerRef = useRef<YouTubePlayer | null>(null);
 
   const [isReady, setIsReady] = useState(false);
   const [embedError, setEmbedError] = useState(false);
@@ -26,7 +51,7 @@ export default function SongYouTubePlayer({ videoId, coverArtUrl }: Props) {
         return;
       }
 
-      playerRef.current = new window.YT.Player(containerRef.current as any, {
+      playerRef.current = new window.YT.Player(containerRef.current, {
         height: "360",
         width: "640",
         videoId,
@@ -37,7 +62,7 @@ export default function SongYouTubePlayer({ videoId, coverArtUrl }: Props) {
         },
 events: {
   onReady: () => setIsReady(true),
-  onStateChange: (event: any) => {
+  onStateChange: (event) => {
     // Detect embed restriction
     if (event.data === -1 || event.data === 5) {
       console.log("YouTube embed blocked");

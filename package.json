@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "recover-discogs-covers": "tsx scripts/recoverDiscogsCovers.ts",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,7 +13,15 @@
     "run-sql": "ts-node --project tsconfig.scripts.json scripts/runSqlFile.ts",
     "wipe-ingest": "ts-node --project tsconfig.scripts.json scripts/wipeIngestTables.ts",
     "dry-run": "ts-node --project tsconfig.scripts.json scripts/dryRunFiveArtists.ts",
-    "ingest": "ts-node --project tsconfig.scripts.json ingest.ts"
+    "ingest": "ts-node --project tsconfig.scripts.json ingest.ts",
+    "classify-recordings": "tsx scripts/classifyRecordingGenres.ts",
+    "audit-db-health": "tsx scripts/auditDatabaseHealth.ts",
+    "recover-covers": "tsx scripts/fetchMissingCoverArtRecovery.ts",
+    "recover-covers-discogs-local": "tsx scripts/fetchMissingCoverArtDiscogsLocal.ts",
+    "recover-covers-web-local": "tsx scripts/fetchMissingCoverArtWebLocal.ts",
+    "recover-covers-broad-web-local": "tsx scripts/fetchMissingCoverArtBroadWebLocal.ts",
+    "recover-covers-streaming-local": "tsx scripts/fetchMissingCoverArtStreamingLocal.ts",
+    "recover-covers-wikimedia-local": "tsx scripts/fetchMissingCoverArtWikimediaLocal.ts"
   },
   "dependencies": {
     "@next/eslint-plugin-next": "^16.2.6",

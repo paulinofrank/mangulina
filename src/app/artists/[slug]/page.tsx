@@ -3,7 +3,8 @@ import Image from "next/image";
 import MainWrapper from "@/components/layout/MainWrapper";
 import ArtistAwardsSection from "@/components/organisms/ArtistAwardsSection";
 import ArtistFactsCard from "@/components/organisms/ArtistFactsCard";
-import { getArtistProfile } from "@/lib/artistApi";
+import ArtistDiscographyAccordion from "@/components/organisms/ArtistDiscographyAccordion";
+import { getArtistProfile, getArtistDiscography } from "@/lib/artistApi";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 
 type PageProps = {
@@ -28,6 +29,7 @@ export default async function ArtistProfile({ params }: PageProps) {
 
   const imageUrl = getArtistImageUrl(artist.id);
   const bioParagraphs = getBioParagraphs(artist.bio);
+  const discography = await getArtistDiscography(artist.id);
 
   return (
     <MainWrapper>
@@ -73,6 +75,8 @@ export default async function ArtistProfile({ params }: PageProps) {
                 </p>
               )}
             </section>
+
+            <ArtistDiscographyAccordion releases={discography} />
           </main>
         </div>
       </div>
