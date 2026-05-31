@@ -1,29 +1,38 @@
 // src/lib/supabase.ts
-import { createClient } from "@supabase/supabase-js";
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
-// 1. RESOLVE CONFIGURATION
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+let cachedClient: SupabaseClient | null = null;
 
-// 2. CONTEXT-AWARE KEY SELECTION
-const isBrowser = typeof window !== "undefined";
-const keyToUse = isBrowser ? supabaseAnonKey : (supabaseServiceKey || supabaseAnonKey);
+function resolveSupabaseConfig() {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY;
+  const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const isBrowser = typeof window !== "undefined";
+  const keyToUse = isBrowser ? supabaseAnonKey : (supabaseServiceKey || supabaseAnonKey);
 
-// 3. SILENT VALIDATION
-if (!supabaseUrl || !keyToUse) {
-  if (process.env.NODE_ENV === 'development') {
-    console.warn("⚠️ Supabase Client: Missing URL or Key. Check your .env file.");
-  }
+  return { supabaseUrl, keyToUse };
 }
 
-// 4. THE SINGLETON INSTANCE
-// REMOVED <Database> generic to stop the "never" type errors.
-// This allows access to project-specific columns without TypeScript blocking you.
-export const supabase = createClient(
-  supabaseUrl || "",
-  keyToUse || ""
-);
+function createSupabaseClient() {
+  if (cachedClient) return cachedClient;
+
+  const { supabaseUrl, keyToUse } = resolveSupabaseConfig();
+
+  if (!supabaseUrl || !keyToUse) {
+    throw new Error(
+      "Missing Supabase configuration. Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY in the deployment environment.",
+    );
+  }
+
+  cachedClient = createClient(supabaseUrl, keyToUse);
+  return cachedClient;
+}
+
+export const supabase = new Proxy({} as SupabaseClient, {
+  get(_target, property, receiver) {
+    return Reflect.get(createSupabaseClient(), property, receiver);
+  },
+});
 
 export function getSupabaseClient() {
   return supabase;
