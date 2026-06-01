@@ -7,6 +7,7 @@ export type SearchResult = {
   slug: string | null;
   subtitle: string | null;
   year: number | null;
+  cover_url: string | null;
 };
 
 export type GlobalSearchResponse = {
@@ -14,6 +15,53 @@ export type GlobalSearchResponse = {
   songs: SearchResult[];
   releases: SearchResult[];
 };
+
+function getArtistImageUrlFromId(id: string) {
+  return supabase.storage.from("artists-images").getPublicUrl(`${id}.webp`).data.publicUrl;
+}
+
+async function getPublishedArtistIds(ids: string[]) {
+  const uniqueIds = [...new Set(ids.filter(Boolean))];
+
+  if (!uniqueIds.length) return new Set<string>();
+
+  const { data, error } = await supabase
+    .from("artists")
+    .select("id")
+    .eq("status", "published")
+    .in("id", uniqueIds);
+
+  if (error) {
+    console.error("globalSearch published artist filter error:", error);
+    return new Set<string>();
+  }
+
+  return new Set((data ?? []).map((artist) => artist.id));
+}
+
+async function imageExists(url: string | null | undefined) {
+  if (!url) return false;
+
+  try {
+    const response = await fetch(url, { method: "HEAD" });
+    return response.ok;
+  } catch {
+    return false;
+  }
+}
+
+async function withExistingArtistImages(results: SearchResult[]) {
+  return Promise.all(
+    results.map(async (result) => {
+      const coverUrl = result.cover_url || getArtistImageUrlFromId(result.id);
+
+      return {
+        ...result,
+        cover_url: (await imageExists(coverUrl)) ? coverUrl : null,
+      };
+    })
+  );
+}
 
 export async function globalSearch(query: string): Promise<GlobalSearchResponse> {
   const cleaned = query.trim();
@@ -26,7 +74,7 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
     };
   }
 
-  const { data: artistData, error: artistError } = await supabase
+  const { data: fallbackArtistData, error: artistError } = await supabase
     .from("artists")
     .select("id, slug, name, province, birth_year")
     .eq("status", "published")
@@ -38,37 +86,42 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
     console.error("globalSearch artists error:", artistError);
   }
 
-  const { data, error } = await supabase.rpc("global_search", {
-    search_text: cleaned,
-  });
-
-  if (error) {
-    console.error("globalSearch error:", error);
-    return {
-      artists: ((artistData ?? []) as any[]).map((artist) => ({
-        type: "artist",
-        id: artist.id,
-        title: artist.name,
-        slug: artist.slug,
-        subtitle: artist.province,
-        year: artist.birth_year,
-      })),
-      songs: [],
-      releases: [],
-    };
-  }
-
-  const results = data as GlobalSearchResponse;
-
-  return {
-    ...results,
-    artists: ((artistData ?? []) as any[]).map((artist) => ({
+  const fallbackArtists: SearchResult[] = ((fallbackArtistData ?? []) as any[]).map(
+    (artist) => ({
       type: "artist",
       id: artist.id,
       title: artist.name,
       slug: artist.slug,
       subtitle: artist.province,
       year: artist.birth_year,
-    })),
+      cover_url: getArtistImageUrlFromId(artist.id),
+    })
+  );
+
+  const { data, error } = await supabase.rpc("global_search", {
+    search_text: cleaned,
+  });
+
+  if (error) {
+    console.error("globalSearch error:", error);
+
+    return {
+      artists: await withExistingArtistImages(fallbackArtists),
+      songs: [],
+      releases: [],
+    };
+  }
+
+  const results = data as Partial<GlobalSearchResponse> | null;
+  const rpcArtists = results?.artists ?? [];
+  const publishedArtistIds = await getPublishedArtistIds(rpcArtists.map((artist) => artist.id));
+  const publishedRpcArtists = rpcArtists.filter((artist) => publishedArtistIds.has(artist.id));
+
+  return {
+    artists: await withExistingArtistImages(
+      publishedRpcArtists.length ? publishedRpcArtists : fallbackArtists
+    ),
+    songs: results?.songs ?? [],
+    releases: results?.releases ?? [],
   };
 }

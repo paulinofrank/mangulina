@@ -25,7 +25,7 @@ export default async function ArtistDiscographyGrouped({
   if (releases.length === 0) {
     return (
       <section className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
-        <h3 className="text-xs font-bold text-(--color-wikicrimson) uppercase mb-4">
+        <h3 className="text-xs font-normal text-(--color-wikicrimson) uppercase mb-4">
           Discography
         </h3>
 

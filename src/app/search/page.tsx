@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import MainWrapper from "@/components/layout/MainWrapper";
 import { globalSearch, SearchResult } from "@/lib/searchApi";
@@ -7,11 +6,7 @@ type SearchPageProps = {
   searchParams: Promise<{ q?: string }>;
 };
 
-type EnhancedSearchResult = SearchResult & {
-  cover_url?: string | null;
-};
-
-function getHref(result: EnhancedSearchResult) {
+function getHref(result: SearchResult) {
   if (result.type === "artist" && result.slug) return `/artists/${result.slug}`;
   if (result.type === "song") return `/songs/${result.id}`;
   if (result.type === "release") return `/releases/${result.id}`;
@@ -31,7 +26,7 @@ function ResultGroup({
   results,
 }: {
   title: string;
-  results: EnhancedSearchResult[];
+  results: SearchResult[];
 }) {
   if (!results.length) return null;
 
@@ -49,13 +44,12 @@ function ResultGroup({
             className="group flex items-center gap-4 rounded-xl border border-gray-100 p-3 transition hover:border-(--color-wikicrimson) hover:bg-gray-50"
           >
             {result.cover_url ? (
-              <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-gray-100">
-                <Image
+              <div className="h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-gray-100">
+                <img
                   src={result.cover_url}
                   alt={result.title}
-                  fill
-                  sizes="64px"
-                  className="object-cover"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
                 />
               </div>
             ) : (
@@ -119,20 +113,11 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
           </div>
         ) : (
           <div className="space-y-6">
-            <ResultGroup
-              title="Artists"
-              results={results.artists as EnhancedSearchResult[]}
-            />
+            <ResultGroup title="Artists" results={results.artists} />
 
-            <ResultGroup
-              title="Songs"
-              results={results.songs as EnhancedSearchResult[]}
-            />
+            <ResultGroup title="Songs" results={results.songs} />
 
-            <ResultGroup
-              title="Albums"
-              results={results.releases as EnhancedSearchResult[]}
-            />
+            <ResultGroup title="Albums" results={results.releases} />
           </div>
         )}
       </div>
