@@ -63,14 +63,76 @@ function normalizeSocialUsername(value: string | null | undefined) {
     .replace(/^https?:\/\/(www\.)?/i, "")
     .replace(/^facebook\.com\//i, "")
     .replace(/^instagram\.com\//i, "")
+    .replace(/^youtube\.com\//i, "")
+    .replace(/^youtu\.be\//i, "")
     .replace(/^@/, "")
     .replace(/\/$/, "");
+}
+
+function normalizeYoutubeDisplay(value: string | null | undefined) {
+  if (!value) return null;
+
+  const cleanValue = value.trim();
+
+  if (!cleanValue) return null;
+
+  if (cleanValue.startsWith("@")) {
+    return cleanValue;
+  }
+
+  if (cleanValue.includes("youtube.com/@")) {
+    return `@${cleanValue.split("youtube.com/@")[1].replace(/\/$/, "")}`;
+  }
+
+  if (cleanValue.includes("youtube.com/channel/")) {
+    return cleanValue.split("youtube.com/channel/")[1].replace(/\/$/, "");
+  }
+
+  if (cleanValue.includes("youtube.com/c/")) {
+    return cleanValue.split("youtube.com/c/")[1].replace(/\/$/, "");
+  }
+
+  if (cleanValue.includes("youtube.com/user/")) {
+    return cleanValue.split("youtube.com/user/")[1].replace(/\/$/, "");
+  }
+
+  return normalizeSocialUsername(cleanValue);
 }
 
 function getWebsiteUrl(value: string | null | undefined) {
   if (!value) return null;
 
   return value.startsWith("http") ? value : `https://${value}`;
+}
+
+function getYoutubeUrl(value: string | null | undefined) {
+  if (!value) return null;
+
+  const cleanValue = value.trim();
+
+  if (!cleanValue) return null;
+
+  if (cleanValue.startsWith("http")) {
+    return cleanValue;
+  }
+
+  if (cleanValue.startsWith("@")) {
+    return `https://www.youtube.com/${cleanValue}`;
+  }
+
+  if (cleanValue.startsWith("channel/")) {
+    return `https://www.youtube.com/${cleanValue}`;
+  }
+
+  if (cleanValue.startsWith("c/")) {
+    return `https://www.youtube.com/${cleanValue}`;
+  }
+
+  if (cleanValue.startsWith("user/")) {
+    return `https://www.youtube.com/${cleanValue}`;
+  }
+
+  return `https://www.youtube.com/@${cleanValue.replace(/^@/, "")}`;
 }
 
 function getFacebookUrl(value: string | null | undefined) {
@@ -136,12 +198,18 @@ function ExternalLink({
 export default function ArtistFactsCard({ artist }: Props) {
   const realName = getRealName(artist);
   const birthDate = formatDate(artist.date_of_birth);
+  const deathDate = formatDate(artist.date_of_death);
   const birthPlace = getBirthPlace(artist);
   const occupations = getOccupationList(artist.occupations);
 
   const websiteUrl = getWebsiteUrl(artist.website);
+
+  const youtubeDisplay = normalizeYoutubeDisplay(artist.youtube);
+  const youtubeUrl = getYoutubeUrl(artist.youtube);
+
   const facebookUsername = normalizeSocialUsername(artist.facebook);
   const facebookUrl = getFacebookUrl(artist.facebook);
+
   const instagramUsername = normalizeSocialUsername(artist.instagram);
   const instagramUrl = getInstagramUrl(artist.instagram);
 
@@ -157,6 +225,8 @@ export default function ArtistFactsCard({ artist }: Props) {
         <Field label="Real Name">{realName}</Field>
 
         <Field label="Date of Birth">{birthDate}</Field>
+
+        <Field label="Date of Death">{deathDate}</Field>
 
         <Field label="Place of Birth">{birthPlace}</Field>
 
@@ -186,6 +256,10 @@ export default function ArtistFactsCard({ artist }: Props) {
 
         <Field label="Official Website">
           <ExternalLink href={websiteUrl}>{artist.website}</ExternalLink>
+        </Field>
+
+        <Field label="YouTube">
+          <ExternalLink href={youtubeUrl}>{youtubeDisplay}</ExternalLink>
         </Field>
 
         <Field label="Facebook">
