@@ -1,4 +1,8 @@
 //artist facts card component
+import { Globe } from "lucide-react";
+import { SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
+import type { IconType } from "react-icons";
+
 import type { ArtistProfileData } from "@/lib/artistApi";
 
 type Props = {
@@ -105,6 +109,12 @@ function getWebsiteUrl(value: string | null | undefined) {
   return value.startsWith("http") ? value : `https://${value}`;
 }
 
+function getWebsiteDisplay(value: string | null | undefined) {
+  if (!value) return null;
+
+  return value.replace(/^https?:\/\//i, "").replace(/\/$/, "");
+}
+
 function getYoutubeUrl(value: string | null | undefined) {
   if (!value) return null;
 
@@ -145,11 +155,17 @@ function getInstagramUrl(value: string | null | undefined) {
   return username ? `https://www.instagram.com/${username}` : null;
 }
 
-function Chip({ children }: { children: React.ReactNode }) {
+function InlineList({ values }: { values: Array<string | null> }) {
+  const visibleValues = values.filter(Boolean);
+
+  if (visibleValues.length === 0) return null;
+
+  return <>{visibleValues.join(", ")}</>;
+}
+
+function SectionDivider() {
   return (
-    <span className="inline-flex rounded-full bg-gray-100 px-2.5 py-1 text-xs font-normal text-gray-700">
-      {children}
-    </span>
+    <div className="h-px bg-linear-to-r from-transparent via-gray-200 to-transparent" />
   );
 }
 
@@ -177,8 +193,35 @@ function Field({
 function ExternalLink({
   href,
   children,
+  className = "",
 }: {
   href: string | null;
+  children: React.ReactNode;
+  className?: string;
+}) {
+  if (!href || !children) return null;
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`text-(--color-ink) underline-offset-4 hover:text-(--color-wikicrimson) hover:underline ${className}`}
+    >
+      {children}
+    </a>
+  );
+}
+
+function SocialLink({
+  href,
+  label,
+  Icon,
+  children,
+}: {
+  href: string | null;
+  label: string;
+  Icon: IconType | React.ComponentType<{ className?: string; "aria-hidden"?: boolean }>;
   children: React.ReactNode;
 }) {
   if (!href || !children) return null;
@@ -188,11 +231,20 @@ function ExternalLink({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-(--color-flagblue) underline-offset-4 hover:text-(--color-wikicrimson) hover:underline"
+      aria-label={label}
+      title={label}
+      className="flex w-fit items-center gap-2 text-sm font-normal leading-snug text-(--color-ink) underline-offset-4 hover:text-(--color-wikicrimson) hover:underline"
     >
-      {children}
+      <Icon className="h-4 w-4 shrink-0" aria-hidden={true} />
+      <span>{children}</span>
     </a>
   );
+}
+
+function LinkGroup({ children }: { children: React.ReactNode }) {
+  if (!children) return null;
+
+  return <div className="space-y-2">{children}</div>;
 }
 
 export default function ArtistFactsCard({ artist }: Props) {
@@ -203,6 +255,8 @@ export default function ArtistFactsCard({ artist }: Props) {
   const occupations = getOccupationList(artist.occupations);
 
   const websiteUrl = getWebsiteUrl(artist.website);
+  const websiteDisplay = getWebsiteDisplay(artist.website);
+  const hasWebsiteLink = Boolean(websiteUrl && artist.website);
 
   const youtubeDisplay = normalizeYoutubeDisplay(artist.youtube);
   const youtubeUrl = getYoutubeUrl(artist.youtube);
@@ -212,6 +266,12 @@ export default function ArtistFactsCard({ artist }: Props) {
 
   const instagramUsername = normalizeSocialUsername(artist.instagram);
   const instagramUrl = getInstagramUrl(artist.instagram);
+  const hasSocialLinks = Boolean(
+    hasWebsiteLink ||
+    (youtubeUrl && youtubeDisplay) ||
+      (facebookUrl && facebookUsername) ||
+      (instagramUrl && instagramUsername)
+  );
 
   return (
     <section className="rounded-xl border border-gray-100 bg-white p-6 font-sans shadow-sm">
@@ -230,66 +290,56 @@ export default function ArtistFactsCard({ artist }: Props) {
 
         <Field label="Place of Birth">{birthPlace}</Field>
 
+        {!!artist.aliases?.length && (
+          <Field label="Aliases">
+            <InlineList values={artist.aliases} />
+          </Field>
+        )}
+
+        {!!artist.aliases?.length && <SectionDivider />}
+
         <Field label="Artist Type">{formatLabel(artist.type)}</Field>
 
         <Field label="Primary Role">{formatLabel(artist.primary_role)}</Field>
 
         {occupations.length > 0 && (
           <Field label="Other Roles">
-            <div className="flex flex-wrap gap-2">
-              {occupations.map((occupation) => (
-                <Chip key={occupation}>{formatLabel(occupation)}</Chip>
-              ))}
-            </div>
+            <InlineList values={occupations.map((occupation) => formatLabel(occupation))} />
           </Field>
         )}
 
         {!!artist.genres?.length && (
           <Field label="Musical Genres">
-            <div className="flex flex-wrap gap-2">
-              {artist.genres.map((genre) => (
-                <Chip key={genre}>{formatLabel(genre)}</Chip>
-              ))}
-            </div>
-          </Field>
-        )}
-
-        <Field label="Official Website">
-          <ExternalLink href={websiteUrl}>{artist.website}</ExternalLink>
-        </Field>
-
-        <Field label="YouTube">
-          <ExternalLink href={youtubeUrl}>{youtubeDisplay}</ExternalLink>
-        </Field>
-
-        <Field label="Facebook">
-          <ExternalLink href={facebookUrl}>{facebookUsername}</ExternalLink>
-        </Field>
-
-        <Field label="Instagram">
-          <ExternalLink href={instagramUrl}>
-            {instagramUsername ? `@${instagramUsername}` : null}
-          </ExternalLink>
-        </Field>
-
-        {!!artist.aliases?.length && (
-          <Field label="Aliases">
-            <div className="flex flex-wrap gap-2">
-              {artist.aliases.map((alias) => (
-                <Chip key={alias}>{alias}</Chip>
-              ))}
-            </div>
+            <InlineList values={artist.genres.map((genre) => formatLabel(genre))} />
           </Field>
         )}
 
         {!!artist.artist_tags?.length && (
           <Field label="Tags">
-            <div className="flex flex-wrap gap-2">
-              {artist.artist_tags.map((tag) => (
-                <Chip key={tag}>{formatLabel(tag)}</Chip>
-              ))}
-            </div>
+            <InlineList values={artist.artist_tags.map((tag) => formatLabel(tag))} />
           </Field>
+        )}
+
+        {!!artist.artist_tags?.length && <SectionDivider />}
+
+        {hasSocialLinks && (
+          <LinkGroup>
+            <SocialLink href={websiteUrl} label="Official Website" Icon={Globe}>
+              {websiteDisplay}
+            </SocialLink>
+
+            <SocialLink href={youtubeUrl} label="YouTube" Icon={SiYoutube}>
+              {youtubeDisplay}
+            </SocialLink>
+
+            <SocialLink href={facebookUrl} label="Facebook" Icon={SiFacebook}>
+              {facebookUsername}
+            </SocialLink>
+
+            <SocialLink href={instagramUrl} label="Instagram" Icon={SiInstagram}>
+              {instagramUsername ? `@${instagramUsername}` : null}
+            </SocialLink>
+          </LinkGroup>
         )}
       </div>
     </section>

@@ -6,22 +6,13 @@ import MainWrapper from "@/components/layout/MainWrapper";
 import ArtistAwardsSection from "@/components/organisms/ArtistAwardsSection";
 import ArtistFactsCard from "@/components/organisms/ArtistFactsCard";
 import ArtistDiscographyAccordion from "@/components/organisms/ArtistDiscographyAccordion";
+import BioText from "@/components/molecules/BioText";
 import { getArtistProfile, getArtistDiscography } from "@/lib/artistApi";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
-
-function getBioParagraphs(bio: string | null) {
-  if (!bio) return [];
-
-  return bio
-    .replace(/\r\n/g, "\n")
-    .split(/\n\s*\n/)
-    .map((paragraph) => paragraph.trim())
-    .filter(Boolean);
-}
 
 export default async function ArtistProfile({ params }: PageProps) {
   const { slug } = await params;
@@ -30,7 +21,7 @@ export default async function ArtistProfile({ params }: PageProps) {
   if (!artist) return notFound();
 
   const imageUrl = getArtistImageUrl(artist.id);
-  const bioParagraphs = getBioParagraphs(artist.bio);
+  const hasBio = Boolean(artist.bio?.trim());
   const discography = await getArtistDiscography(artist.id);
 
   return (
@@ -66,12 +57,8 @@ export default async function ArtistProfile({ params }: PageProps) {
                 Biography
               </h3>
 
-              {bioParagraphs.length > 0 ? (
-                <div className="space-y-4 text-sm leading-relaxed text-gray-700 sm:text-base">
-                  {bioParagraphs.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                  ))}
-                </div>
+              {hasBio ? (
+                <BioText bio={artist.bio} />
               ) : (
                 <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
                   No biography available for this artist.

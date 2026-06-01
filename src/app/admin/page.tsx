@@ -2,11 +2,12 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { FormEvent } from "react";
 import { getSupabaseClient } from "@/lib/supabase";
 import type { Artist } from "@/types/music";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
+import BioText from "@/components/molecules/BioText";
 
 type ArtistStatus =
   | "draft"
@@ -174,6 +175,7 @@ export default function AdminDashboard() {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
   const [imageVersion, setImageVersion] = useState(0);
+  const bioTextareaRef = useRef<HTMLTextAreaElement>(null);
 
   const selectedArtist = useMemo(
     () => artists.find((artist) => artist.id === selectedArtistId) || null,
@@ -259,6 +261,54 @@ export default function AdminDashboard() {
     setSelectedArtistId("");
     setForm({ ...emptyForm });
     setStatus("");
+  }
+
+  function focusBioSelection(start: number, end: number) {
+    window.setTimeout(() => {
+      bioTextareaRef.current?.focus();
+      bioTextareaRef.current?.setSelectionRange(start, end);
+    }, 0);
+  }
+
+  function wrapBioSelection(prefix: string, suffix = prefix, placeholder = "text") {
+    const textarea = bioTextareaRef.current;
+    const value = form.bio ?? "";
+    const start = textarea?.selectionStart ?? value.length;
+    const end = textarea?.selectionEnd ?? value.length;
+    const selectedText = value.slice(start, end) || placeholder;
+    const nextBio = `${value.slice(0, start)}${prefix}${selectedText}${suffix}${value.slice(end)}`;
+    const nextStart = start + prefix.length;
+    const nextEnd = nextStart + selectedText.length;
+
+    updateForm("bio", nextBio);
+    focusBioSelection(nextStart, nextEnd);
+  }
+
+  function formatBioLines(prefix: string, placeholder = "New line") {
+    const textarea = bioTextareaRef.current;
+    const value = form.bio ?? "";
+    const start = textarea?.selectionStart ?? value.length;
+    const end = textarea?.selectionEnd ?? value.length;
+    const selectedText = value.slice(start, end) || placeholder;
+    const formattedText = selectedText
+      .split("\n")
+      .map((line) => {
+        const trimmed = line.trim();
+        return trimmed ? `${prefix}${trimmed}` : line;
+      })
+      .join("\n");
+    const nextBio = `${value.slice(0, start)}${formattedText}${value.slice(end)}`;
+
+    updateForm("bio", nextBio);
+    focusBioSelection(start, start + formattedText.length);
+  }
+
+  function insertBioLink() {
+    const href = window.prompt("Paste the full URL for this link:");
+
+    if (!href?.trim()) return;
+
+    wrapBioSelection("[", `](${href.trim()})`, "link text");
   }
 
   function handleSelectArtistForEdit(id: string) {
@@ -936,11 +986,78 @@ async function updateFeatured() {
               </Field>
 
               <Field label="Biography">
-                <textarea
-                  value={form.bio ?? ""}
-                  onChange={(event) => updateForm("bio", event.target.value)}
-                  className={`${inputClass} min-h-55 resize-y leading-relaxed`}
-                />
+                <div className="overflow-hidden rounded-lg border border-gray-200 bg-white focus-within:border-(--color-flagblue)">
+                  <div className="flex flex-wrap gap-2 border-b border-gray-100 bg-gray-50 px-3 py-2">
+                    <button
+                      type="button"
+                      onClick={() => wrapBioSelection("**", "**", "bold text")}
+                      className={toolbarButtonClass}
+                    >
+                      B
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => wrapBioSelection("*", "*", "italic text")}
+                      className={`${toolbarButtonClass} italic`}
+                    >
+                      I
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => formatBioLines("## ", "Section title")}
+                      className={toolbarButtonClass}
+                    >
+                      H
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => formatBioLines("- ", "List item")}
+                      className={toolbarButtonClass}
+                    >
+                      List
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => formatBioLines("> ", "Quoted text")}
+                      className={toolbarButtonClass}
+                    >
+                      Quote
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={insertBioLink}
+                      className={toolbarButtonClass}
+                    >
+                      Link
+                    </button>
+                  </div>
+
+                  <textarea
+                    ref={bioTextareaRef}
+                    value={form.bio ?? ""}
+                    onChange={(event) => updateForm("bio", event.target.value)}
+                    className="min-h-55 w-full resize-y bg-white px-3 py-3 text-sm font-normal leading-relaxed text-gray-800 outline-none"
+                  />
+                </div>
+
+                <div className="mt-3 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3">
+                  <p className="mb-2 text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
+                    Preview
+                  </p>
+
+                  {form.bio.trim() ? (
+                    <BioText bio={form.bio} />
+                  ) : (
+                    <p className="text-sm text-gray-400">
+                      Biography preview will appear here.
+                    </p>
+                  )}
+                </div>
               </Field>
 
               <button
@@ -970,15 +1087,18 @@ function Field({
   children: React.ReactNode;
 }) {
   return (
-    <label className="block">
+    <div className="block">
       <span className="mb-1 block text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
         {label}
       </span>
 
       {children}
-    </label>
+    </div>
   );
 }
 
 const inputClass =
   "w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm font-normal text-gray-800 outline-none transition focus:border-(--color-flagblue)";
+
+const toolbarButtonClass =
+  "rounded-md border border-gray-200 bg-white px-2.5 py-1 text-xs font-normal text-gray-700 transition hover:border-(--color-flagblue) hover:text-(--color-flagblue)";
