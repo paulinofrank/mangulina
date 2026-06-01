@@ -1,3 +1,5 @@
+// src/app/artists/[slug]/page.tsx
+
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import MainWrapper from "@/components/layout/MainWrapper";
@@ -33,22 +35,23 @@ export default async function ArtistProfile({ params }: PageProps) {
 
   return (
     <MainWrapper>
-      <div className="max-w-5xl mx-auto px-6 py-12">
-        <header className="mb-10">
+      <div className="mx-auto max-w-5xl px-5 py-10 sm:px-6 sm:py-12">
+        <header className="mb-8 sm:mb-10">
           <h1 className="text-4xl sm:text-5xl font-black uppercase tracking-tight text-(--color-flagblue)">
             {artist.name}
           </h1>
         </header>
 
-        <div className="grid md:grid-cols-[300px_1fr] gap-10">
-          <aside className="space-y-6">
-            <div className="relative w-75 h-75 overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
+        <div className="grid gap-8 md:grid-cols-[300px_1fr] md:gap-10">
+          <aside className="w-full space-y-6">
+            <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
               <Image
                 src={imageUrl}
                 alt={artist.name}
                 fill
                 className="object-cover"
                 priority
+                sizes="(max-width: 768px) calc(100vw - 40px), 300px"
               />
             </div>
 
@@ -57,20 +60,20 @@ export default async function ArtistProfile({ params }: PageProps) {
             <ArtistAwardsSection awards={artist.awards || []} />
           </aside>
 
-          <main className="space-y-6">
-            <section className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
-              <h3 className="text-xs font-bold text-(--color-wikicrimson) uppercase mb-4">
+          <main className="w-full space-y-6">
+            <section className="rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+              <h3 className="mb-4 text-xs font-normal uppercase text-(--color-wikicrimson)">
                 Biography
               </h3>
 
               {bioParagraphs.length > 0 ? (
-                <div className="space-y-4 text-gray-700 leading-relaxed">
+                <div className="space-y-4 text-sm leading-relaxed text-gray-700 sm:text-base">
                   {bioParagraphs.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                   ))}
                 </div>
               ) : (
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
                   No biography available for this artist.
                 </p>
               )}

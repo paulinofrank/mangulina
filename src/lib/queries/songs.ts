@@ -1,6 +1,31 @@
 // src/lib/queries/songs.ts
 import { supabase } from "@/lib/supabase";
 
+async function getPublishedArtistIds(artistIds: unknown[]) {
+  const ids = [...new Set(artistIds.filter((id): id is string => typeof id === "string" && id.length > 0))];
+
+  if (!ids.length) return new Set<string>();
+
+  const { data, error } = await supabase
+    .from("artists")
+    .select("id")
+    .eq("status", "published")
+    .in("id", ids);
+
+  if (error) {
+    console.error("published artist status check error:", error);
+    return new Set<string>();
+  }
+
+  return new Set((data ?? []).map((artist) => artist.id));
+}
+
+async function isPublishedArtist(artistId: unknown) {
+  if (typeof artistId !== "string" || !artistId) return true;
+  const publishedIds = await getPublishedArtistIds([artistId]);
+  return publishedIds.has(artistId);
+}
+
 // ----------------------
 // SONG BY ID
 // ----------------------
@@ -18,6 +43,10 @@ export async function getSongById(id: string) {
     return null;
   }
 
+  if (!(await isPublishedArtist((data as any)?.artist_id))) {
+    return null;
+  }
+
   return data;
 }
 
@@ -26,7 +55,7 @@ export async function getSongById(id: string) {
 // ----------------------
 export type RawCredit = {
   role: string;
-  artist: { name: string }[];
+  artist: { name: string; status?: string }[];
 };
 
 export async function getSongCredits(id: string): Promise<RawCredit[]> {
@@ -34,7 +63,8 @@ export async function getSongCredits(id: string): Promise<RawCredit[]> {
 
   const { data, error } = await supabase
     .from("recording_credits")
-    .select("role, artist:artists(name)")
+    .select("role, artist:artists!inner(name, status)")
+    .eq("artist.status", "published")
     .eq("recording_id", cleanId);
 
   return error ? [] : (data as RawCredit[]);
@@ -78,5 +108,10 @@ export async function getRelatedSongs(id: string) {
     song_id: cleanId,
   });
 
-  return error ? [] : data;
+  if (error) return [];
+
+  const rows = (data ?? []) as any[];
+  const publishedArtistIds = await getPublishedArtistIds(rows.map((row) => row.artist_id));
+
+  return rows.filter((row) => !row.artist_id || publishedArtistIds.has(row.artist_id));
 }

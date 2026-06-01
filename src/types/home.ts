@@ -1,4 +1,5 @@
 // home.ts  (Type)
+import type { Artist } from "@/types/music";
 
 export type TopArtist = {
   id: string;
@@ -27,6 +28,7 @@ export type ArtistSummary = {
   id: string;
   slug: string;
   name: string;
+  status?: Artist["status"];
   province: string | null;
   views: number;
 };

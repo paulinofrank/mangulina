@@ -14,7 +14,7 @@ export async function getHomeData() {
   const featured = await supabase
     .from("featured_artist")
     .select(`
-      artist:artist_id (
+      artist:artist_id!inner (
         id,
         slug,
         name,
@@ -26,10 +26,12 @@ export async function getHomeData() {
         instagram,
         genres,
         artist_tags,
+        status,
         views
       )
     `)
     .eq("id", 1)
+    .eq("artist.status", "published")
     .single();
 
   const featuredArtist = (featured.data as any)?.artist ?? null;
@@ -52,8 +54,31 @@ export async function getHomeData() {
     .order("views", { ascending: false })
     .limit(12);
 
+  const trendingArtistIds = [
+    ...new Set(
+      ((trendingResponse.data || []) as any[])
+        .map((recording) => recording.artist_id)
+        .filter(Boolean)
+    ),
+  ];
+  const publishedTrendingArtistIds = new Set<string>();
+
+  if (trendingArtistIds.length > 0) {
+    const { data: publishedTrendingArtists } = await supabase
+      .from("artists")
+      .select("id")
+      .eq("status", "published")
+      .in("id", trendingArtistIds);
+
+    for (const artist of publishedTrendingArtists || []) {
+      publishedTrendingArtistIds.add(artist.id);
+    }
+  }
+
   const trendingSongs: TrendingSong[] =
-    (trendingResponse.data || []).map((r: any) => ({
+    (trendingResponse.data || [])
+      .filter((r: any) => !r.artist_id || publishedTrendingArtistIds.has(r.artist_id))
+      .map((r: any) => ({
       id: r.recording_id,
       title: r.recording_title,
       views: Number(r.views || 0),
@@ -71,7 +96,16 @@ export async function getHomeData() {
     }));
 
   // 4. Top Artists (Singers)
-  const topResponse = await supabase.rpc("get_top_artists");
+  const topResponse = await supabase
+    .from("artists")
+    .select("id, slug, name, province, views")
+    .eq("status", "published")
+    .eq("primary_role", "singer")
+    .order("views", {
+      ascending: false,
+      nullsFirst: false,
+    })
+    .limit(10);
 
   const topArtists: ArtistSummary[] =
     ((topResponse.data as ArtistSummary[]) || []).map((a) => ({
@@ -83,16 +117,33 @@ export async function getHomeData() {
     }));
 
   // 5. Regions
-  const regionsResponse = await supabase.rpc("get_artist_provinces");
+  const regionsResponse = await supabase
+    .from("artists")
+    .select("province")
+    .eq("status", "published")
+    .not("province", "is", null);
 
-  const regions: RegionCount[] =
-    (regionsResponse.data || []).map((r: any) => ({
-      province: r.province,
-      count: Number(r.count || 0),
-    }));
+  const regionCounts = new Map<string, number>();
+  for (const row of (regionsResponse.data || []) as Array<{ province: string | null }>) {
+    if (!row.province) continue;
+    regionCounts.set(row.province, (regionCounts.get(row.province) || 0) + 1);
+  }
+
+  const regions: RegionCount[] = Array.from(regionCounts.entries())
+    .map(([province, count]) => ({ province, count }))
+    .sort((a, b) => b.count - a.count || a.province.localeCompare(b.province));
 
   // 6. Prominent Composers (ONLY composers)
-  const composersResponse = await supabase.rpc("get_top_composers");
+  const composersResponse = await supabase
+    .from("artists")
+    .select("id, slug, name, province, views")
+    .eq("status", "published")
+    .eq("primary_role", "composer")
+    .order("views", {
+      ascending: false,
+      nullsFirst: false,
+    })
+    .limit(10);
 
   const composers: ArtistSummary[] =
     ((composersResponse.data as ArtistSummary[]) || []).map((a) => ({
@@ -107,6 +158,7 @@ export async function getHomeData() {
   const djsResponse = await supabase
     .from("artists")
     .select("id, slug, name, province, views")
+    .eq("status", "published")
     .eq("primary_role", "dj")
     .order("views", {
       ascending: false,
@@ -128,6 +180,7 @@ export async function getHomeData() {
   const christianResponse = await supabase
     .from("artists")
     .select("id, slug, name, province, views")
+    .eq("status", "published")
     .contains("artist_tags", ["christian"])
     .order("views", {
       ascending: false,
@@ -148,6 +201,7 @@ export async function getHomeData() {
   const classicalResponse = await supabase
     .from("artists")
     .select("id, slug, name, province, views")
+    .eq("status", "published")
     .eq("primary_role", "instrumentalist")
     .order("views", {
       ascending: false,
@@ -168,6 +222,7 @@ export async function getHomeData() {
   const risingResponse = await supabase
     .from("artists")
     .select("id, slug, name, province, views")
+    .eq("status", "published")
     .contains("artist_tags", ["emerging"])
     .order("views", {
       ascending: false,

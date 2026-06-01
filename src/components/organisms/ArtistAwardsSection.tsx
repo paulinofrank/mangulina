@@ -46,20 +46,20 @@ export default function ArtistAwardsSection({ awards }: Props) {
   return (
     <section className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
       <div className="mb-5">
-        <h3 className="text-xs font-bold text-(--color-wikicrimson) uppercase tracking-wider mb-3">
+        <h3 className="text-xs font-normal text-(--color-wikicrimson) uppercase tracking-wider mb-3">
           Awards & Nominations
         </h3>
 
         <div className="flex flex-wrap gap-2 text-xs">
-          <span className="rounded-full border border-yellow-200 bg-yellow-50 px-3 py-1 font-semibold text-gray-800">
+          <span className="rounded-full border border-yellow-200 bg-yellow-50 px-3 py-1 font-normal text-gray-800">
             🏆 {wins} Wins
           </span>
 
-          <span className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 font-semibold text-gray-800">
+          <span className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 font-normal text-gray-800">
             🎖️ {totalNominations} Nominations
           </span>
 
-          <span className="rounded-full border border-(--color-flagblue)/15 bg-(--color-flagblue)/5 px-3 py-1 font-semibold text-gray-800">
+          <span className="rounded-full border border-(--color-flagblue)/15 bg-(--color-flagblue)/5 px-3 py-1 font-normal text-gray-800">
             🌎 {organizations} Organizations
           </span>
         </div>
@@ -80,14 +80,14 @@ export default function ArtistAwardsSection({ awards }: Props) {
                 onClick={() => setOpenAward(isOpen ? null : awardName)}
                 className="w-full flex items-center justify-between gap-4 px-4 py-3 text-left transition hover:bg-gray-50"
               >
-                <span className="flex items-center gap-2 text-sm font-semibold tracking-wide text-(--color-flagblue)">
+                <span className="flex items-center gap-2 text-sm font-normal tracking-wide text-(--color-flagblue)">
                   <span className="text-xs text-gray-400">
                     {isOpen ? "▼" : "▶"}
                   </span>
                   {awardName}
                 </span>
 
-                <span className="text-[11px] font-semibold uppercase tracking-wider text-gray-400">
+                <span className="text-[11px] font-normal uppercase tracking-wider text-gray-400">
                   {awardWins} {awardWins === 1 ? "Win" : "Wins"}
                 </span>
               </button>
@@ -111,7 +111,7 @@ export default function ArtistAwardsSection({ awards }: Props) {
                           </span>
                         </div>
 
-                        <p className="mt-1 text-sm font-semibold leading-snug text-gray-800">
+                        <p className="mt-1 text-sm font-normal leading-snug text-gray-800">
                           {item.category || "Special Recognition"}
                         </p>
 

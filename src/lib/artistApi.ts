@@ -48,6 +48,20 @@ export type ArtistProfileData = {
 export async function getArtistProfile(slug: string) {
   const supabase = getSupabaseClient();
 
+  const { data: publishedArtist, error: publishedArtistError } = await supabase
+    .from("artists")
+    .select("id")
+    .eq("slug", slug)
+    .eq("status", "published")
+    .maybeSingle();
+
+  if (publishedArtistError || !publishedArtist) {
+    if (publishedArtistError) {
+      console.error("getArtistProfile published artist check error:", publishedArtistError);
+    }
+    return null;
+  }
+
   const { data, error } = await supabase.rpc("get_artist_profile_page", {
     artist_slug: slug,
   });

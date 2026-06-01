@@ -21,16 +21,28 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
       const today = new Date();
       const supabase = getSupabaseClient();
 
-      const { data, error } = await supabase.rpc("get_artists_by_day_month", {
-        target_month: today.getMonth() + 1,
-        target_day: today.getDate(),
-      });
+      const { data, error } = await supabase
+        .from("artists")
+        .select("id, slug, name, status, date_of_birth, province, birth_place, bio, genres, artist_tags, views, death_year")
+        .eq("status", "published")
+        .not("date_of_birth", "is", null);
 
       if (error) {
         console.error("Birthday artists fetch failed:", error);
         setLocalBirthdayArtists(birthdayArtists);
       } else {
-        setLocalBirthdayArtists((data ?? []) as Artist[]);
+        const month = today.getMonth() + 1;
+        const day = today.getDate();
+        setLocalBirthdayArtists(
+          ((data ?? []) as Artist[]).filter((artist) => {
+            const [, artistMonth, artistDay] = (artist.date_of_birth ?? "")
+              .split("T")[0]
+              .split("-")
+              .map(Number);
+
+            return artistMonth === month && artistDay === day;
+          })
+        );
       }
 
       setLoadingLocalBirthdays(false);

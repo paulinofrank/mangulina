@@ -139,7 +139,8 @@ function ArtistsContent() {
 
         let query = supabase
           .from("artists")
-          .select("*", { count: "exact" });
+          .select("*", { count: "exact" })
+          .eq("status", "published");
 
         const search = searchParams.get("search");
         if (search) {

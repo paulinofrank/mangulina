@@ -52,7 +52,7 @@ export default async function ArtistDiscographyGrouped({
 
   return (
     <section className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
-      <h3 className="text-xs font-bold text-(--color-wikicrimson) uppercase mb-6">
+      <h3 className="text-xs font-normal text-(--color-wikicrimson) uppercase mb-6">
         Discography
       </h3>
 

@@ -30,6 +30,7 @@ const ARTIST_LIST_SELECT = [
   "id",
   "slug",
   "name",
+  "status",
   "primary_role",
   "stage_name",
   "date_of_birth",
@@ -160,7 +161,11 @@ function ArtistsContent() {
     async function loadProvinces() {
       if (!supabase) return;
 
-      const { data, error } = await supabase.rpc("get_artist_provinces");
+      const { data, error } = await supabase
+        .from("artists")
+        .select("province")
+        .eq("status", "published")
+        .not("province", "is", null);
 
       if (error) {
         console.error(error);
@@ -170,10 +175,20 @@ function ArtistsContent() {
       if (!isActive) return;
 
       setProvinces(
-        ((data ?? []) as ProvinceOption[]).map((item) => ({
-          province: item.province,
-          count: Number(item.count || 0),
-        }))
+        Array.from(
+          ((data ?? []) as Array<{ province: string | null }>).reduce(
+            (map, item) => {
+              if (item.province) {
+                map.set(item.province, (map.get(item.province) || 0) + 1);
+              }
+
+              return map;
+            },
+            new Map<string, number>()
+          )
+        )
+          .map(([province, count]) => ({ province, count }))
+          .sort((a, b) => b.count - a.count || a.province.localeCompare(b.province))
       );
     }
 
@@ -216,7 +231,8 @@ function ArtistsContent() {
 
         let query = supabase
           .from("artists")
-          .select(ARTIST_LIST_SELECT, { count: "exact" });
+          .select(ARTIST_LIST_SELECT, { count: "exact" })
+          .eq("status", "published");
 
         const search = searchParams.get("search");
         if (search) {

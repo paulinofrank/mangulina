@@ -6,7 +6,7 @@ import Link from "next/link";
 
 type RecordingCredit = {
   role: string;
-  artists: { name: string } | { name: string }[] | null;
+  artists: { name: string; status?: string } | { name: string; status?: string }[] | null;
 };
 
 type RecordingWithCredits = {
@@ -36,11 +36,13 @@ export default function RecordingsPage() {
         youtube_id,
         recording_credits (
           role,
-          artists (
-            name
+          artists!inner (
+            name,
+            status
           )
         )
       `)
+      .eq("recording_credits.artists.status", "published")
       .order("created_at", { ascending: false });
 
     if (error) {

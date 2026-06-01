@@ -198,6 +198,41 @@
         @apply px-5 py-0 sm:px-6;
     }
 
+
+
+    /* ========================================= */
+    /* ARTIST FACTS CARD                         */
+    /* ========================================= */
+
+    .artist-facts-card {
+        font-family: var(--font-sans);
+        @apply rounded-xl border border-gray-100 bg-white p-6 shadow-sm;
+    }
+
+    .artist-facts-title {
+        @apply mb-4 text-xs font-normal uppercase tracking-[0.18em] text-(--color-wikicrimson);
+    }
+
+    .artist-facts-list {
+        @apply space-y-4;
+    }
+
+    .artist-facts-label {
+        @apply block text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400;
+    }
+
+    .artist-facts-value {
+        @apply mt-1 text-sm font-normal leading-snug text-(--color-ink);
+    }
+
+    .artist-facts-chip {
+        @apply inline-flex rounded-full bg-gray-100 px-2.5 py-1 text-xs font-normal text-gray-700;
+    }
+
+    .artist-facts-link {
+        @apply text-(--color-flagblue) underline-offset-4 hover:text-(--color-wikicrimson) hover:underline;
+    }
+
     /* ========================================= */
     /* PAGINATION (GLOBAL UTILITY CLASSES)       */
     /* ========================================= */
