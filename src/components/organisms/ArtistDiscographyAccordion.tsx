@@ -2,6 +2,7 @@
 //artistDiscographyaccordion.tsx
 
 import Image from "next/image";
+import Link from "next/link";
 import { getSignedCoverUrl } from "@/utils/getSignedCoverUrl";
 import type { DiscographyRelease } from "@/lib/artistApi";
 
@@ -103,35 +104,43 @@ export default async function ArtistDiscographyGrouped({
                   </summary>
 
                   <div className="border-t border-gray-100">
-                    {release.tracks.map((track) => (
-                      <div
-                        key={track.track_id}
-                        className="flex items-center gap-3 px-3 py-1.5 text-sm border-b border-gray-100 last:border-b-0 leading-[0.9]"
-                      >
-                        <span className="w-6 text-gray-400 tabular-nums text-xs">
-                          {String(track.track_number ?? "").padStart(2, "0")}
-                        </span>
-
-                        <div className="flex-1 truncate">
-                          <span className="text-gray-800 text-sm">
-                            {track.recording_title}
+                    {release.tracks.map((track) => {
+                      const rowContent = (
+                        <>
+                          <span className="w-6 text-gray-400 tabular-nums text-xs shrink-0">
+                            {String(track.track_number ?? "").padStart(2, "0")}
                           </span>
 
-                          {(track.genre || track.subgenre) && (
-                            <span className="text-gray-400 text-xs">
-                              {" · "}
-                              {[track.genre, track.subgenre]
-                                .filter(Boolean)
-                                .join(" / ")}
+                          <div className="flex-1 truncate">
+                            <span className="text-sm">
+                              {track.recording_title}
                             </span>
-                          )}
-                        </div>
+                            {(track.genre || track.subgenre) && (
+                              <span className="text-gray-400 text-xs">
+                                {" · "}
+                                {[track.genre, track.subgenre].filter(Boolean).join(" / ")}
+                              </span>
+                            )}
+                          </div>
 
-                        <span className="text-gray-400 tabular-nums text-xs">
-                          {formatDuration(track.duration_ms)}
-                        </span>
-                      </div>
-                    ))}
+                          <span className="text-gray-400 tabular-nums text-xs shrink-0">
+                            {formatDuration(track.duration_ms)}
+                          </span>
+                        </>
+                      );
+
+                      const href = `/songs/${track.slug ?? track.recording_id}`;
+
+                      return (
+                        <Link
+                          key={track.track_id}
+                          href={href}
+                          className="flex items-center gap-3 px-3 py-2 text-sm border-b border-gray-100 last:border-b-0 leading-snug text-gray-800 hover:bg-gray-50 hover:text-(--color-wikicrimson) transition-colors group"
+                        >
+                          {rowContent}
+                        </Link>
+                      );
+                    })}
                   </div>
                 </details>
               ))}

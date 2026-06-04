@@ -20,6 +20,19 @@ function getArtistImageUrlFromId(id: string) {
   return supabase.storage.from("artists-images").getPublicUrl(`${id}.webp`).data.publicUrl;
 }
 
+function normalizeCoverArtUrl(url: string | null | undefined) {
+  if (!url) return null;
+  if (url.includes("/cover-art/150px/")) return url;
+  return url.replace("/cover-art/", "/cover-art/150px/");
+}
+
+function withCurrentCoverArtUrls(results: SearchResult[]) {
+  return results.map((result) => ({
+    ...result,
+    cover_url: normalizeCoverArtUrl(result.cover_url),
+  }));
+}
+
 async function getPublishedArtistIds(ids: string[]) {
   const uniqueIds = [...new Set(ids.filter(Boolean))];
 
@@ -63,6 +76,10 @@ async function withExistingArtistImages(results: SearchResult[]) {
   );
 }
 
+function normalizeQuery(q: string) {
+  return q.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+}
+
 export async function globalSearch(query: string): Promise<GlobalSearchResponse> {
   const cleaned = query.trim();
 
@@ -74,11 +91,13 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
     };
   }
 
+  const normalized = normalizeQuery(cleaned);
+
   const { data: fallbackArtistData, error: artistError } = await supabase
     .from("artists")
     .select("id, slug, name, province, birth_year")
     .eq("status", "published")
-    .ilike("name", `%${cleaned}%`)
+    .or(`name.ilike.%${cleaned}%,name.ilike.%${normalized}%`)
     .order("views", { ascending: false, nullsFirst: false })
     .limit(10);
 
@@ -99,7 +118,7 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
   );
 
   const { data, error } = await supabase.rpc("global_search", {
-    search_text: cleaned,
+    search_text: normalized,
   });
 
   if (error) {
@@ -121,7 +140,7 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
     artists: await withExistingArtistImages(
       publishedRpcArtists.length ? publishedRpcArtists : fallbackArtists
     ),
-    songs: results?.songs ?? [],
-    releases: results?.releases ?? [],
+    songs: withCurrentCoverArtUrls(results?.songs ?? []),
+    releases: withCurrentCoverArtUrls(results?.releases ?? []),
   };
 }

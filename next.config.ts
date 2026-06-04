@@ -1,18 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Move it to the root level if experimental didn't work
-  // If it still warns, you can safely remove it; it's mostly for HMR/Fast Refresh
-  // experimental: { }, 
-  
+  allowedDevOrigins: ["192.168.1.249"],
+
   images: {
     unoptimized: true,
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'srulenjahemkuxtkfmzt.supabase.co',
-        port: '',
-        pathname: '/storage/v1/object/public/**',
+        protocol: "https",
+        hostname: "srulenjahemkuxtkfmzt.supabase.co",
+        port: "",
+        pathname: "/storage/v1/object/public/**",
       },
     ],
   },

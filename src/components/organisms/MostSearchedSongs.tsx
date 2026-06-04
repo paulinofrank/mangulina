@@ -69,13 +69,14 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
                   : "Unknown Artist";
 
               const coverUrl = song.release?.id
-                ? `${supabaseBase}cover-art/${song.release.id}.webp`
+                ? `${supabaseBase}cover-art/150px/${song.release.id}.webp`
                 : "/images/placeholder-song.jpg";
 
               return (
                 <SongCard
                   key={song.id}
                   id={song.id}
+                  slug={song.slug}
                   title={song.title}
                   artistName={artistName}
                   coverUrl={coverUrl}

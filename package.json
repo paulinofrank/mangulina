@@ -5,7 +5,7 @@
   "type": "module",
   "recover-discogs-covers": "tsx scripts/recoverDiscogsCovers.ts",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
@@ -21,9 +21,12 @@
     "recover-covers-web-local": "tsx scripts/fetchMissingCoverArtWebLocal.ts",
     "recover-covers-broad-web-local": "tsx scripts/fetchMissingCoverArtBroadWebLocal.ts",
     "recover-covers-streaming-local": "tsx scripts/fetchMissingCoverArtStreamingLocal.ts",
-    "recover-covers-wikimedia-local": "tsx scripts/fetchMissingCoverArtWikimediaLocal.ts"
+    "recover-covers-wikimedia-local": "tsx scripts/fetchMissingCoverArtWikimediaLocal.ts",
+    "script:platform-links": "tsx scripts/populateRecordingPlatformLinks.ts",
+    "script:recording-slugs": "tsx scripts/populateRecordingSlugs.ts"
   },
   "dependencies": {
+    "@iconify/react": "^6.0.2",
     "@next/eslint-plugin-next": "^16.2.6",
     "@supabase/auth-helpers-nextjs": "^0.15.0",
     "@supabase/supabase-js": "^2.106.1",

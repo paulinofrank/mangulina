@@ -1,0 +1,15 @@
+{
+  "platform": "songlink",
+  "importantTriggerPlatforms": [
+    "spotify",
+    "amazon_music",
+    "youtube"
+  ],
+  "currentOffset": 0,
+  "nextRowIndex": 252,
+  "pageSize": 1000,
+  "startedAt": "2026-06-04T16:54:05.636Z",
+  "updatedAt": "2026-06-04T20:39:55.936Z",
+  "totalInserted": 545,
+  "totalPages": 0
+}

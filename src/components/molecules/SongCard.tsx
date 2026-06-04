@@ -4,6 +4,7 @@ import Link from "next/link";
 
 type SongCardProps = {
   id: string | number;
+  slug?: string | null;
   title: string;
   artistName: string;
   coverUrl: string;
@@ -12,13 +13,15 @@ type SongCardProps = {
 
 export default function SongCard({
   id,
+  slug,
   title,
   artistName,
   coverUrl,
   views,
 }: SongCardProps) {
+  const href = slug ? `/songs/${slug}` : `/songs/${id}`;
   return (
-    <Link href={`/songs/${id}`} className="shrink-0 w-32 group">
+    <Link href={href} className="shrink-0 w-32 group">
       <div className="relative aspect-square overflow-hidden rounded-lg bg-gray-100 border border-black/5 transition-transform duration-350 ease-out group-hover:scale-[1.02]">
         <img
           src={coverUrl}

@@ -3,7 +3,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import { Church, Disc3, Ellipsis, Flame, Heart, Music, Music4, Sparkles } from "lucide-react";
+import { Disc3, Ellipsis, Flame, Heart, Music, Music2, Music4, Sparkles, Waves } from "lucide-react";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import SectionCard from "@/components/layout/SectionCard";
 
@@ -11,13 +11,6 @@ export default function BrowseByGenreSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const genreGroups = [
-    {
-      title: "Christian",
-      labels: ["Religious", "Catholic"],
-      href: "/genres/christian",
-      color: "bg-purple-500",
-      icon: Church,
-    },
     {
       title: "Merengue",
       labels: ["Pambiche", "Típico"],
@@ -61,9 +54,23 @@ export default function BrowseByGenreSection() {
       icon: Sparkles,
     },
     {
+      title: "Folklore",
+      labels: ["Traditional", "Roots"],
+      href: "/genres/folklore",
+      color: "bg-emerald-600",
+      icon: Music2,
+    },
+    {
+      title: "Fusion",
+      labels: ["Jazz", "Experimental"],
+      href: "/genres/fusion",
+      color: "bg-indigo-500",
+      icon: Waves,
+    },
+    {
       title: "More Genre",
-      labels: ["Folklore", "Fusion"],
-      href: "/genres",
+      labels: [],
+      href: "/genres/more",
       color: "bg-gray-300",
       icon: Ellipsis,
     },
@@ -87,7 +94,7 @@ export default function BrowseByGenreSection() {
 
       <div className="section-inner">
         <div className="section-header">
-          <h2>Explore Music by Genre</h2>
+          <h2>EXPLORE BY GENRE & STYLE</h2>
         </div>
         <div
           ref={scrollRef}

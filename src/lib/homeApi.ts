@@ -40,24 +40,18 @@ export async function getHomeData() {
   // Loaded in BirthdaySection using the visitor's local browser date.
   const birthdayArtists: Artist[] = [];
 
-  // 3. Trending Songs
+  // 3. Trending Songs — top by real view count from recordings_with_release_info
+  // Fetch extra rows to account for filtering out unpublished artists
   const trendingResponse = await supabase
-    .from("trending_recordings_mv")
-    .select(`
-      recording_id,
-      recording_title,
-      views,
-      release_id,
-      artist_id,
-      artist_name
-    `)
-    .order("views", { ascending: false })
-    .limit(12);
+    .from("recordings_with_release_info")
+    .select("recording_id, recording_title, views, release_id, artist_id, artist_name")
+    .order("views", { ascending: false, nullsFirst: false })
+    .limit(20);
 
   const trendingArtistIds = [
     ...new Set(
       ((trendingResponse.data || []) as any[])
-        .map((recording) => recording.artist_id)
+        .map((r) => r.artist_id)
         .filter(Boolean)
     ),
   ];
@@ -75,25 +69,37 @@ export async function getHomeData() {
     }
   }
 
-  const trendingSongs: TrendingSong[] =
-    (trendingResponse.data || [])
-      .filter((r: any) => !r.artist_id || publishedTrendingArtistIds.has(r.artist_id))
-      .map((r: any) => ({
-      id: r.recording_id,
-      title: r.recording_title,
-      views: Number(r.views || 0),
-      release: r.release_id ? { id: r.release_id } : null,
-      recording_credits: [
-        {
-          artist: r.artist_name
-            ? {
-              id: r.artist_id,
-              name: r.artist_name,
-            }
-            : null,
-        },
-      ],
-    }));
+  const filteredTrending = (trendingResponse.data || [])
+    .filter((r: any) => !r.artist_id || publishedTrendingArtistIds.has(r.artist_id))
+    .slice(0, 12);
+
+  // Fetch slugs for the filtered recording IDs
+  const trendingRecordingIds = filteredTrending.map((r: any) => r.recording_id).filter(Boolean);
+  const slugMap = new Map<string, string | null>();
+  if (trendingRecordingIds.length > 0) {
+    const { data: slugRows } = await supabase
+      .from("recordings")
+      .select("id, slug")
+      .in("id", trendingRecordingIds);
+    for (const row of (slugRows || []) as { id: string; slug: string | null }[]) {
+      slugMap.set(row.id, row.slug);
+    }
+  }
+
+  const trendingSongs: TrendingSong[] = filteredTrending.map((r: any) => ({
+    id: r.recording_id,
+    slug: slugMap.get(r.recording_id) ?? null,
+    title: r.recording_title,
+    views: Number(r.views || 0),
+    release: r.release_id ? { id: r.release_id } : null,
+    recording_credits: [
+      {
+        artist: r.artist_name
+          ? { id: r.artist_id, name: r.artist_name }
+          : null,
+      },
+    ],
+  }));
 
   // 4. Top Artists (Singers)
   const topResponse = await supabase

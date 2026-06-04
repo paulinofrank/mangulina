@@ -308,6 +308,8 @@ export default function ArtistFactsCard({ artist }: Props) {
           </Field>
         )}
 
+        <Field label="Main Genre">{formatLabel(artist.primary_genre)}</Field>
+
         {!!artist.genres?.length && (
           <Field label="Musical Genres">
             <InlineList values={artist.genres.map((genre) => formatLabel(genre))} />

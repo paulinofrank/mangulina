@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 type Props = {
   videoId: string;
-  coverArtUrl: string;
+  coverArtUrl?: string | null;
 };
 
 type YouTubePlayer = {
@@ -65,7 +65,6 @@ events: {
   onStateChange: (event) => {
     // Detect embed restriction
     if (event.data === -1 || event.data === 5) {
-      console.log("YouTube embed blocked");
       setEmbedError(true);
     }
   },
@@ -95,7 +94,7 @@ if (embedError) {
     <div
       className="w-full max-w-3xl mx-auto my-8 rounded-xl overflow-hidden shadow-md relative aspect-video bg-black"
 style={{
-  backgroundImage: `url(${coverArtUrl})`,
+  backgroundImage: coverArtUrl ? `url(${coverArtUrl})` : undefined,
   backgroundSize: "cover",
   backgroundPosition: "center",
 }}

@@ -30,6 +30,7 @@ export type ArtistProfileData = {
   province: string | null;
 
   primary_role: string | null;
+  primary_genre: string | null;
   occupations: Record<string, unknown> | string[] | null;
 
   genres: string[] | null;
@@ -50,7 +51,7 @@ export async function getArtistProfile(slug: string) {
 
   const { data: publishedArtist, error: publishedArtistError } = await supabase
     .from("artists")
-    .select("id")
+    .select("id, primary_genre")
     .eq("slug", slug)
     .eq("status", "published")
     .maybeSingle();
@@ -71,7 +72,13 @@ export async function getArtistProfile(slug: string) {
     return null;
   }
 
-  return data as ArtistProfileData;
+  return {
+    ...(data as ArtistProfileData),
+    primary_genre:
+      (data as Partial<ArtistProfileData>).primary_genre ??
+      publishedArtist.primary_genre ??
+      null,
+  };
 }
 
 /* ==========================================================
@@ -109,6 +116,8 @@ export type DiscographyTrack = {
   genre: string | null;
   subgenre: string | null;
   recording_context: string | null;
+
+  slug: string | null;
 };
 
 export type DiscographyRelease = {
@@ -141,6 +150,20 @@ export async function getArtistDiscography(
   }
 
   const rows = (data ?? []) as DiscographyRow[];
+
+  // Fetch slugs for all recordings returned by the RPC
+  const allRecordingIds = [...new Set(rows.map((r) => r.recording_id).filter(Boolean))];
+  const slugMap = new Map<string, string | null>();
+  if (allRecordingIds.length > 0) {
+    const { data: slugRows } = await supabase
+      .from("recordings")
+      .select("id, slug")
+      .in("id", allRecordingIds);
+    for (const row of (slugRows ?? []) as { id: string; slug: string | null }[]) {
+      slugMap.set(row.id, row.slug);
+    }
+  }
+
   const releases = new Map<string, DiscographyRelease>();
 
   for (const row of rows) {
@@ -164,6 +187,7 @@ export async function getArtistDiscography(
       genre: row.genre,
       subgenre: row.subgenre,
       recording_context: row.recording_context,
+      slug: slugMap.get(row.recording_id) ?? null,
     });
   }
 

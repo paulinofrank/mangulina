@@ -8,7 +8,7 @@ type SearchPageProps = {
 
 function getHref(result: SearchResult) {
   if (result.type === "artist" && result.slug) return `/artists/${result.slug}`;
-  if (result.type === "song") return `/songs/${result.id}`;
+  if (result.type === "song") return `/songs/${result.slug ?? result.id}`;
   if (result.type === "release") return `/releases/${result.id}`;
   return "#";
 }

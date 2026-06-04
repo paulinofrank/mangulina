@@ -11,6 +11,7 @@ export type TopArtist = {
 
 export type TrendingSong = {
   id: string;
+  slug: string | null;
   title: string;
   views: number;
   release: {
