@@ -55,7 +55,7 @@ export default function SongCreditsSection({
   const sortedRoles = sortRoles([...grouped.keys()]);
 
   return (
-    <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
+    <section className="h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
         Recording Credits
       </h2>

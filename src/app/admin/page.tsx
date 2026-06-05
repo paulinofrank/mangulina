@@ -10,6 +10,7 @@ import {
   Mic2,
   Music,
 } from "lucide-react";
+import AdminHomepageSpotlight from "@/components/organisms/AdminHomepageSpotlight";
 
 type AdminTool = {
   title: string;
@@ -154,6 +155,8 @@ export default function AdminPortalPage() {
             music database.
           </p>
         </header>
+
+        <AdminHomepageSpotlight />
 
         <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {adminTools.map((tool) => (

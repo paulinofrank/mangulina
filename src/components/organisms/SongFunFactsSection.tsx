@@ -2,7 +2,9 @@
 
 type FunFact = {
   id: string | number;
-  text: string;
+  fact?: string | null;
+  text?: string | null;
+  source_url?: string | null;
 };
 
 type SongFunFactsSectionProps = {
@@ -13,7 +15,7 @@ export default function SongFunFactsSection({ facts }: SongFunFactsSectionProps)
   if (!facts.length) return null;
 
   return (
-    <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
+    <section className="h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
         Fun Facts
       </h2>
@@ -30,7 +32,21 @@ export default function SongFunFactsSection({ facts }: SongFunFactsSectionProps)
             >
               {String(i + 1).padStart(2, "0")}
             </span>
-            <p className="text-sm leading-relaxed text-gray-700">{fact.text}</p>
+            <div className="min-w-0 flex-1">
+              <p className="text-sm leading-relaxed text-gray-700">
+                {fact.fact ?? fact.text}
+              </p>
+              {fact.source_url && (
+                <a
+                  href={fact.source_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-flex text-xs font-medium text-gray-400 underline-offset-2 hover:text-[#002D62] hover:underline"
+                >
+                  Source
+                </a>
+              )}
+            </div>
           </li>
         ))}
       </ol>

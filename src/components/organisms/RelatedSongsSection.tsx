@@ -1,6 +1,10 @@
-// components/organisms/RelatedSongsSection.tsx
+"use client";
 
 import Link from "next/link";
+import { useRef } from "react";
+
+import CarouselArrows from "@/components/molecules/CarouselArrows";
+import SongCard from "@/components/molecules/SongCard";
 import type { ArtistSongRecord } from "@/lib/queries/songs";
 
 type RelatedSong = {
@@ -21,15 +25,31 @@ export default function RelatedSongsSection({
   moreSongs = [],
   artistName,
 }: RelatedSongsSectionProps) {
+  const scrollRef = useRef<HTMLDivElement>(null);
   const hasRelated = songs.length > 0;
   const hasMore    = moreSongs.length > 0;
   if (!hasRelated && !hasMore) return null;
 
+  const scroll = (direction: "left" | "right") => {
+    if (!scrollRef.current) return;
+
+    const { scrollLeft, clientWidth } = scrollRef.current;
+    const amount = clientWidth * 0.8;
+
+    scrollRef.current.scrollTo({
+      left: direction === "left" ? scrollLeft - amount : scrollLeft + amount,
+      behavior: "smooth",
+    });
+  };
+
+  const supabaseBase =
+    "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/";
+
   return (
-    <div className="space-y-5">
+    <div className="grid min-w-0 items-start gap-5 lg:grid-cols-2">
       {/* Related Songs */}
       {hasRelated && (
-        <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
+        <section className="h-fit min-w-0 rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
           <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
             Related Songs
           </h2>
@@ -53,27 +73,37 @@ export default function RelatedSongsSection({
 
       {/* More Songs by Artist */}
       {hasMore && artistName && (
-        <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
-          <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-            More by {artistName}
-          </h2>
-          <ul className="divide-y divide-gray-50">
-            {moreSongs.map((song) => (
-              <li key={song.id}>
-                <Link
-                  href={`/songs/${song.slug ?? song.id}`}
-                  className="flex items-center justify-between gap-3 py-2.5 text-sm text-[#002D62] transition-colors hover:text-[#CE1126]"
-                >
-                  <span className="truncate font-medium">{song.title}</span>
-                  {song.release_year_actual && (
-                    <span className="shrink-0 text-xs text-gray-400">
-                      {song.release_year_actual}
-                    </span>
-                  )}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <section className="relative h-fit min-w-0 overflow-hidden rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6 lg:col-span-2">
+          <CarouselArrows onLeft={() => scroll("left")} onRight={() => scroll("right")} />
+
+          <div className="section-header mb-4 flex items-center justify-between">
+            <h2>
+              More by {artistName}
+            </h2>
+          </div>
+
+          <div
+            ref={scrollRef}
+            className="flex min-w-0 max-w-full gap-4 overflow-x-auto scrollbar-none pb-2"
+          >
+            {moreSongs.map((song) => {
+              const coverUrl = song.release_id
+                ? `${supabaseBase}cover-art/150px/${song.release_id}.webp`
+                : song.cover_image_url ?? "/images/placeholder-song.jpg";
+
+              return (
+                <SongCard
+                  key={song.id}
+                  id={song.id}
+                  slug={song.slug}
+                  title={song.title}
+                  artistName={song.artist_name ?? artistName}
+                  coverUrl={coverUrl}
+                  views={song.views}
+                />
+              );
+            })}
+          </div>
         </section>
       )}
     </div>

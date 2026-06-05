@@ -51,10 +51,6 @@ type AdminArtist = Artist & {
   wikidata_id?: string | null;
 };
 
-type FeaturedArtistRow = {
-  artist_id?: string | null;
-};
-
 type ArtistForm = {
   name: string;
   sort_name: string;
@@ -90,12 +86,88 @@ type ArtistForm = {
   ended: boolean;
 };
 
+type AdminArtistMedia = {
+  id: string;
+  artist_id: string;
+  media_type: string;
+  title: string;
+  url: string;
+  platform: string;
+  external_id: string | null;
+  thumbnail_url: string | null;
+  published_date: string | null;
+  is_official: boolean;
+  is_featured: boolean;
+  display_order: number;
+  notes: string | null;
+};
+
+type ArtistMediaForm = {
+  media_type: string;
+  title: string;
+  url: string;
+  platform: string;
+  external_id: string;
+  thumbnail_url: string;
+  published_date: string;
+  is_official: boolean;
+  is_featured: boolean;
+  display_order: string;
+  notes: string;
+};
+
 type AdminWriteResponse = {
   ok: boolean;
   id?: string;
   artistId?: string;
   error?: string;
 };
+
+type ArtistMediaListResponse = {
+  ok: boolean;
+  media?: AdminArtistMedia[];
+  error?: string;
+};
+
+const emptyMediaForm: ArtistMediaForm = {
+  media_type: "interview",
+  title: "",
+  url: "",
+  platform: "youtube",
+  external_id: "",
+  thumbnail_url: "",
+  published_date: "",
+  is_official: false,
+  is_featured: false,
+  display_order: "0",
+  notes: "",
+};
+
+const mediaTypeOptions = [
+  { value: "interview", label: "Interview" },
+  { value: "video", label: "Video" },
+  { value: "live_performance", label: "Live Performance" },
+  { value: "tv_performance", label: "TV Performance" },
+  { value: "documentary", label: "Documentary" },
+  { value: "behind_the_scenes", label: "Behind the Scenes" },
+  { value: "short_clip", label: "Short Clip" },
+  { value: "audio", label: "Audio" },
+  { value: "podcast", label: "Podcast" },
+  { value: "other", label: "Other" },
+];
+
+const platformOptions = [
+  { value: "youtube", label: "YouTube" },
+  { value: "facebook", label: "Facebook" },
+  { value: "instagram", label: "Instagram" },
+  { value: "tiktok", label: "TikTok" },
+  { value: "vimeo", label: "Vimeo" },
+  { value: "spotify", label: "Spotify" },
+  { value: "apple_podcasts", label: "Apple Podcasts" },
+  { value: "website", label: "Website" },
+  { value: "archive", label: "Archive" },
+  { value: "other", label: "Other" },
+];
 
 const emptyForm: ArtistForm = {
   name: "",
@@ -229,15 +301,65 @@ function normalizeStatus(value: string | null | undefined): ArtistStatus {
   return "published";
 }
 
+function detectMediaPlatform(url: string) {
+  const normalized = url.toLowerCase();
+
+  if (normalized.includes("youtube.com") || normalized.includes("youtu.be")) {
+    return "youtube";
+  }
+
+  if (normalized.includes("facebook.com") || normalized.includes("fb.watch")) {
+    return "facebook";
+  }
+
+  if (normalized.includes("instagram.com")) return "instagram";
+  if (normalized.includes("tiktok.com")) return "tiktok";
+  if (normalized.includes("vimeo.com")) return "vimeo";
+  if (normalized.includes("spotify.com")) return "spotify";
+  if (normalized.includes("podcasts.apple.com")) return "apple_podcasts";
+  if (normalized.includes("archive.org")) return "archive";
+
+  return "other";
+}
+
+function extractYouTubeId(url: string) {
+  try {
+    const parsedUrl = new URL(url);
+    const hostname = parsedUrl.hostname.replace(/^www\./, "");
+
+    if (hostname === "youtu.be") {
+      return parsedUrl.pathname.split("/").filter(Boolean)[0] ?? "";
+    }
+
+    if (hostname.endsWith("youtube.com")) {
+      if (parsedUrl.pathname === "/watch") {
+        return parsedUrl.searchParams.get("v") ?? "";
+      }
+
+      const [section, id] = parsedUrl.pathname.split("/").filter(Boolean);
+
+      if (section === "embed" || section === "shorts" || section === "live") {
+        return id ?? "";
+      }
+    }
+  } catch {
+    return "";
+  }
+
+  return "";
+}
+
 export default function AdminDashboard() {
   const supabase = getSupabaseClient();
 
   const [mounted, setMounted] = useState(false);
   const [artists, setArtists] = useState<AdminArtist[]>([]);
-  const [featuredId, setFeaturedId] = useState("");
   const [selectedArtistId, setSelectedArtistId] = useState("");
   const [search, setSearch] = useState("");
   const [form, setForm] = useState<ArtistForm>(emptyForm);
+  const [artistMedia, setArtistMedia] = useState<AdminArtistMedia[]>([]);
+  const [mediaForm, setMediaForm] = useState<ArtistMediaForm>(emptyMediaForm);
+  const [editingMediaId, setEditingMediaId] = useState("");
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
   const [imageVersion, setImageVersion] = useState(0);
@@ -287,23 +409,26 @@ export default function AdminDashboard() {
       setArtists(artistsData as AdminArtist[]);
     }
 
-    const { data: featuredData, error: featuredError } = await supabase
-      .from("featured_artist")
-      .select("artist_id")
-      .maybeSingle();
-
-    if (featuredError) {
-      console.error("Error fetching featured artist:", featuredError);
-    }
-
-    const featuredRow = featuredData as FeaturedArtistRow | null;
-
-    if (featuredRow?.artist_id) {
-      setFeaturedId(String(featuredRow.artist_id));
-    }
-
     setLoading(false);
   }, [supabase]);
+
+  const fetchArtistMedia = useCallback(
+    async (artistId: string) => {
+      const response = await fetch(
+        `/api/admin/artist-media?artistId=${encodeURIComponent(artistId)}`
+      );
+      const result = (await response.json()) as ArtistMediaListResponse;
+
+      if (!response.ok || !result.ok) {
+        setStatus(`Error loading artist media: ${result.error || response.statusText}`);
+        setArtistMedia([]);
+        return;
+      }
+
+      setArtistMedia(result.media ?? []);
+    },
+    []
+  );
 
   useEffect(() => {
     setMounted(true);
@@ -323,9 +448,40 @@ export default function AdminDashboard() {
     }));
   }
 
+  function updateMediaForm<K extends keyof ArtistMediaForm>(
+    key: K,
+    value: ArtistMediaForm[K]
+  ) {
+    setMediaForm((current) => {
+      if (key !== "url" || typeof value !== "string") {
+        return {
+          ...current,
+          [key]: value,
+        };
+      }
+
+      const platform = detectMediaPlatform(value);
+      const externalId = platform === "youtube" ? extractYouTubeId(value) : "";
+
+      return {
+        ...current,
+        url: value,
+        platform,
+        external_id: externalId || current.external_id,
+      };
+    });
+  }
+
+  function resetMediaForm() {
+    setMediaForm({ ...emptyMediaForm });
+    setEditingMediaId("");
+  }
+
   function resetForm() {
     setSelectedArtistId("");
     setForm({ ...emptyForm });
+    setArtistMedia([]);
+    resetMediaForm();
     setStatus("");
   }
 
@@ -387,6 +543,8 @@ export default function AdminDashboard() {
 
     setSelectedArtistId(artist.id);
     setImageVersion(Date.now());
+    resetMediaForm();
+    void fetchArtistMedia(artist.id);
 
     setForm({
       name: artist.name ?? "",
@@ -424,31 +582,6 @@ export default function AdminDashboard() {
     });
 
     setStatus("");
-  }
-
-async function updateFeatured() {
-    if (!featuredId) return;
-
-    setLoading(true);
-    setStatus("");
-
-    const response = await fetch("/api/admin/featured-artist", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ artistId: featuredId }),
-    });
-
-    const result = (await response.json()) as AdminWriteResponse;
-
-    if (!response.ok || !result.ok) {
-      setStatus(`Error updating spotlight: ${result.error || response.statusText}`);
-    } else {
-      setStatus("Homepage spotlight updated.");
-    }
-
-    setLoading(false);
   }
 
   async function handleUploadArtistImage(file: File) {
@@ -499,6 +632,110 @@ async function updateFeatured() {
     setImageVersion(Date.now());
 
     await fetchData();
+
+    setLoading(false);
+  }
+
+  function handleEditArtistMedia(item: AdminArtistMedia) {
+    setEditingMediaId(item.id);
+    setMediaForm({
+      media_type: item.media_type ?? "interview",
+      title: item.title ?? "",
+      url: item.url ?? "",
+      platform: item.platform ?? "other",
+      external_id: item.external_id ?? "",
+      thumbnail_url: item.thumbnail_url ?? "",
+      published_date: item.published_date ?? "",
+      is_official: Boolean(item.is_official),
+      is_featured: Boolean(item.is_featured),
+      display_order: String(item.display_order ?? 0),
+      notes: item.notes ?? "",
+    });
+  }
+
+  async function handleSaveArtistMedia() {
+    if (!selectedArtistId) {
+      setStatus("Select and save an artist before adding media.");
+      return;
+    }
+
+    if (!mediaForm.title.trim() || !mediaForm.url.trim()) {
+      setStatus("Media title and URL are required.");
+      return;
+    }
+
+    setLoading(true);
+    setStatus("");
+
+    const payload = {
+      artist_id: selectedArtistId,
+      media_type: mediaForm.media_type || "interview",
+      title: mediaForm.title.trim(),
+      url: mediaForm.url.trim(),
+      platform: mediaForm.platform || detectMediaPlatform(mediaForm.url),
+      external_id: nullable(mediaForm.external_id),
+      thumbnail_url: nullable(mediaForm.thumbnail_url),
+      published_date: nullable(mediaForm.published_date),
+      is_official: mediaForm.is_official,
+      is_featured: mediaForm.is_featured,
+      display_order: mediaForm.display_order
+        ? Number(mediaForm.display_order)
+        : 0,
+      notes: nullable(mediaForm.notes),
+      updated_at: new Date().toISOString(),
+    };
+
+    const response = await fetch("/api/admin/artist-media", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        mediaId: editingMediaId || null,
+        mediaData: payload,
+      }),
+    });
+    const result = (await response.json()) as AdminWriteResponse;
+
+    if (!response.ok || !result.ok) {
+      setStatus(`Error saving artist media: ${result.error || response.statusText}`);
+    } else {
+      setStatus(editingMediaId ? "Artist media updated." : "Artist media added.");
+      resetMediaForm();
+      await fetchArtistMedia(selectedArtistId);
+    }
+
+    setLoading(false);
+  }
+
+  async function handleDeleteArtistMedia(item: AdminArtistMedia) {
+    if (!selectedArtistId) return;
+
+    const confirmed = window.confirm(`Delete this media link?\n\n${item.title}`);
+    if (!confirmed) return;
+
+    setLoading(true);
+    setStatus("");
+
+    const response = await fetch("/api/admin/artist-media", {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        mediaId: item.id,
+        artistId: selectedArtistId,
+      }),
+    });
+    const result = (await response.json()) as AdminWriteResponse;
+
+    if (!response.ok || !result.ok) {
+      setStatus(`Error deleting artist media: ${result.error || response.statusText}`);
+    } else {
+      setStatus("Artist media deleted.");
+      if (editingMediaId === item.id) resetMediaForm();
+      await fetchArtistMedia(selectedArtistId);
+    }
 
     setLoading(false);
   }
@@ -616,40 +853,6 @@ async function updateFeatured() {
         </div>
       )}
 
-      <section className="mb-8 rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
-        <h2 className="mb-4 text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
-          Homepage Spotlight
-        </h2>
-
-        <div className="grid gap-3 sm:grid-cols-[1fr_auto]">
-          <select
-            value={featuredId ?? ""}
-            onChange={(event) => setFeaturedId(event.target.value)}
-            className="rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-(--color-flagblue)"
-          >
-            <option value="">-- Select Featured Artist --</option>
-
-            {artists.map((artist) => (
-              <option key={artist.id} value={artist.id}>
-                {artist.name}
-                {artist.status && artist.status !== "published"
-                  ? ` — ${artist.status}`
-                  : ""}
-              </option>
-            ))}
-          </select>
-
-          <button
-            type="button"
-            onClick={updateFeatured}
-            disabled={Boolean(loading || !featuredId)}
-            className="rounded-lg bg-(--color-flagblue) px-5 py-2 text-sm text-white transition disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            Update Spotlight
-          </button>
-        </div>
-      </section>
-
       <div className="grid gap-8 lg:grid-cols-[320px_1fr]">
         <aside className="space-y-5">
           <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
@@ -729,9 +932,224 @@ async function updateFeatured() {
               </div>
             )}
           </section>
+
+          <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
+            <div className="mb-4 flex items-start justify-between gap-3">
+              <div>
+                <h2 className="text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
+                  Artist Media / Interviews
+                  {selectedArtistId ? ` (${artistMedia.length})` : ""}
+                </h2>
+                <p className="mt-1 text-xs text-gray-400">
+                  Interviews, performances, and other artist media.
+                </p>
+              </div>
+
+              {editingMediaId && (
+                <button
+                  type="button"
+                  onClick={resetMediaForm}
+                  className="shrink-0 text-xs font-semibold text-(--color-wikicrimson)"
+                >
+                  Cancel
+                </button>
+              )}
+            </div>
+
+            {!selectedArtistId ? (
+              <p className="rounded-lg border border-dashed border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-500">
+                Select an artist before adding media links.
+              </p>
+            ) : (
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  {artistMedia.length ? (
+                    artistMedia.map((item) => (
+                      <div
+                        key={item.id}
+                        className="rounded-lg border border-gray-200 bg-gray-50 px-3 py-3"
+                      >
+                        <p className="line-clamp-2 text-sm font-semibold leading-snug text-(--color-flagblue)">
+                          {item.title}
+                        </p>
+                        <p className="mt-1 text-xs text-gray-400">
+                          {item.platform} - {item.media_type} - order {item.display_order}
+                        </p>
+                        {item.notes && (
+                          <p className="mt-1 line-clamp-2 text-xs text-gray-500">
+                            {item.notes}
+                          </p>
+                        )}
+
+                        <div className="mt-3 flex items-center gap-2">
+                          <button
+                            type="button"
+                            onClick={() => handleEditArtistMedia(item)}
+                            className="rounded-md border border-gray-200 bg-white px-3 py-2 text-xs text-(--color-flagblue) transition hover:border-(--color-flagblue)"
+                          >
+                            Edit
+                          </button>
+
+                          <button
+                            type="button"
+                            onClick={() => void handleDeleteArtistMedia(item)}
+                            className="rounded-md border border-red-100 bg-white px-3 py-2 text-xs text-(--color-wikicrimson) transition hover:border-(--color-wikicrimson)"
+                          >
+                            Delete
+                          </button>
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <p className="rounded-lg border border-dashed border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-400">
+                      No media links saved for this artist yet.
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-3 border-t border-gray-100 pt-4">
+                  <p className="text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
+                    {editingMediaId ? "Edit Media Link" : "Add Media Link"}
+                  </p>
+
+                  <Field label="Media Title">
+                    <input
+                      value={mediaForm.title ?? ""}
+                      onChange={(event) => updateMediaForm("title", event.target.value)}
+                      placeholder="Original video or interview title"
+                      className={inputClass}
+                    />
+                  </Field>
+
+                  <Field label="URL">
+                    <input
+                      value={mediaForm.url ?? ""}
+                      onChange={(event) => updateMediaForm("url", event.target.value)}
+                      placeholder="https://www.youtube.com/watch?v=..."
+                      className={inputClass}
+                    />
+                  </Field>
+
+                  <Field label="Media Type">
+                    <select
+                      value={mediaForm.media_type ?? "interview"}
+                      onChange={(event) => updateMediaForm("media_type", event.target.value)}
+                      className={inputClass}
+                    >
+                      {mediaTypeOptions.map((option) => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
+                  </Field>
+
+                  <Field label="Platform">
+                    <select
+                      value={mediaForm.platform ?? "other"}
+                      onChange={(event) => updateMediaForm("platform", event.target.value)}
+                      className={inputClass}
+                    >
+                      {platformOptions.map((option) => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
+                  </Field>
+
+                  <Field label="External ID">
+                    <input
+                      value={mediaForm.external_id ?? ""}
+                      onChange={(event) => updateMediaForm("external_id", event.target.value)}
+                      placeholder="YouTube video ID, Facebook post ID..."
+                      className={inputClass}
+                    />
+                  </Field>
+
+                  <Field label="Thumbnail URL">
+                    <input
+                      value={mediaForm.thumbnail_url ?? ""}
+                      onChange={(event) => updateMediaForm("thumbnail_url", event.target.value)}
+                      placeholder="Optional custom thumbnail"
+                      className={inputClass}
+                    />
+                  </Field>
+
+                  <div className="grid grid-cols-2 gap-3">
+                    <Field label="Published Date">
+                      <input
+                        type="date"
+                        value={mediaForm.published_date ?? ""}
+                        onChange={(event) =>
+                          updateMediaForm("published_date", event.target.value)
+                        }
+                        className={inputClass}
+                      />
+                    </Field>
+
+                    <Field label="Display Order">
+                      <input
+                        type="number"
+                        value={mediaForm.display_order ?? "0"}
+                        onChange={(event) =>
+                          updateMediaForm("display_order", event.target.value)
+                        }
+                        className={inputClass}
+                      />
+                    </Field>
+                  </div>
+
+                  <Field label="Notes">
+                    <textarea
+                      value={mediaForm.notes ?? ""}
+                      onChange={(event) => updateMediaForm("notes", event.target.value)}
+                      className={`${inputClass} min-h-24 resize-y`}
+                      placeholder="Channel name, context, source note..."
+                    />
+                  </Field>
+
+                  <div className="flex flex-wrap gap-3 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3">
+                    <label className="flex items-center gap-2 text-sm text-gray-700">
+                      <input
+                        type="checkbox"
+                        checked={Boolean(mediaForm.is_official)}
+                        onChange={(event) =>
+                          updateMediaForm("is_official", event.target.checked)
+                        }
+                        className="h-4 w-4"
+                      />
+                      Official
+                    </label>
+
+                    <label className="flex items-center gap-2 text-sm text-gray-700">
+                      <input
+                        type="checkbox"
+                        checked={Boolean(mediaForm.is_featured)}
+                        onChange={(event) =>
+                          updateMediaForm("is_featured", event.target.checked)
+                        }
+                        className="h-4 w-4"
+                      />
+                      Featured
+                    </label>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={handleSaveArtistMedia}
+                    disabled={Boolean(loading)}
+                    className="w-full rounded-lg bg-(--color-flagblue) px-5 py-3 text-xs uppercase tracking-[0.18em] text-white transition disabled:cursor-not-allowed disabled:opacity-40"
+                  >
+                    {editingMediaId ? "Update Media Link" : "Add Media Link"}
+                  </button>
+                </div>
+              </div>
+            )}
+          </section>
         </aside>
 
-        <main>
+        <main className="flex flex-col gap-6">
           <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
             <div className="mb-6 flex items-center justify-between gap-4">
               <h2 className="text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
@@ -879,6 +1297,29 @@ async function updateFeatured() {
               </div>
 
               <div className="grid gap-4 md:grid-cols-2">
+                <Field label="Gender">
+                  <input
+                    value={form.gender ?? ""}
+                    onChange={(event) => updateForm("gender", event.target.value)}
+                    placeholder="male, female, group"
+                    className={inputClass}
+                  />
+                </Field>
+
+                <label className="flex items-end gap-3 text-sm text-gray-700">
+                  <input
+                    type="checkbox"
+                    checked={Boolean(form.ended)}
+                    onChange={(event) =>
+                      updateForm("ended", event.target.checked)
+                    }
+                    className="mb-3 h-4 w-4"
+                  />
+                  Ended / Inactive
+                </label>
+              </div>
+
+              <div className="grid gap-4 md:grid-cols-2">
                 <Field label="Place of Birth">
                   <input
                     value={form.birth_place ?? ""}
@@ -978,45 +1419,49 @@ async function updateFeatured() {
                 />
               </Field>
 
-              <Field label="Instruments">
-                <input
-                  value={form.instruments ?? ""}
-                  onChange={(event) =>
-                    updateForm("instruments", event.target.value)
-                  }
-                  placeholder="piano, guitar, güira, tambora"
-                  className={inputClass}
-                />
-              </Field>
+              <div className="grid gap-4 md:grid-cols-2">
+                <Field label="Musical Genres">
+                  <input
+                    value={form.genres ?? ""}
+                    onChange={(event) => updateForm("genres", event.target.value)}
+                    placeholder="merengue, bachata, salsa"
+                    className={inputClass}
+                  />
+                </Field>
 
-              <Field label="Musical Genres">
-                <input
-                  value={form.genres ?? ""}
-                  onChange={(event) => updateForm("genres", event.target.value)}
-                  placeholder="merengue, bachata, salsa"
-                  className={inputClass}
-                />
-              </Field>
+                <Field label="Instruments">
+                  <input
+                    value={form.instruments ?? ""}
+                    onChange={(event) =>
+                      updateForm("instruments", event.target.value)
+                    }
+                    placeholder="piano, guitar, güira, tambora"
+                    className={inputClass}
+                  />
+                </Field>
+              </div>
 
-              <Field label="Artist Tags">
-                <input
-                  value={form.artist_tags ?? ""}
-                  onChange={(event) =>
-                    updateForm("artist_tags", event.target.value)
-                  }
-                  placeholder="christian, religious, classic-merengue, 1980s"
-                  className={inputClass}
-                />
-              </Field>
+              <div className="grid gap-4 md:grid-cols-2">
+                <Field label="Aliases">
+                  <input
+                    value={form.aliases ?? ""}
+                    onChange={(event) => updateForm("aliases", event.target.value)}
+                    placeholder="El Mayimbe, El Caballo Mayor"
+                    className={inputClass}
+                  />
+                </Field>
 
-              <Field label="Aliases">
-                <input
-                  value={form.aliases ?? ""}
-                  onChange={(event) => updateForm("aliases", event.target.value)}
-                  placeholder="El Mayimbe, El Caballo Mayor"
-                  className={inputClass}
-                />
-              </Field>
+                <Field label="Artist Tags">
+                  <input
+                    value={form.artist_tags ?? ""}
+                    onChange={(event) =>
+                      updateForm("artist_tags", event.target.value)
+                    }
+                    placeholder="christian, religious, classic-merengue, 1980s"
+                    className={inputClass}
+                  />
+                </Field>
+              </div>
 
               <div className="grid gap-4 md:grid-cols-2">
                 <Field label="Official Website">
@@ -1058,40 +1503,6 @@ async function updateFeatured() {
                     className={inputClass}
                   />
                 </Field>
-              </div>
-
-              <div className="grid gap-4 md:grid-cols-3">
-                <Field label="Gender">
-                  <input
-                    value={form.gender ?? ""}
-                    onChange={(event) => updateForm("gender", event.target.value)}
-                    placeholder="male, female, group"
-                    className={inputClass}
-                  />
-                </Field>
-
-                <Field label="Wikidata ID">
-                  <input
-                    value={form.wikidata_id ?? ""}
-                    onChange={(event) =>
-                      updateForm("wikidata_id", event.target.value)
-                    }
-                    placeholder="Q123456"
-                    className={inputClass}
-                  />
-                </Field>
-
-                <label className="flex items-end gap-3 text-sm text-gray-700">
-                  <input
-                    type="checkbox"
-                    checked={Boolean(form.ended)}
-                    onChange={(event) =>
-                      updateForm("ended", event.target.checked)
-                    }
-                    className="mb-3 h-4 w-4"
-                  />
-                  Ended / Inactive
-                </label>
               </div>
 
               <Field label="Disambiguation">
@@ -1193,6 +1604,7 @@ async function updateFeatured() {
               </button>
             </form>
           </section>
+
         </main>
       </div>
     </div>

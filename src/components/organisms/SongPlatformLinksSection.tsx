@@ -61,7 +61,7 @@ export default function SongPlatformLinksSection({ links }: Props) {
   if (visible.length === 0) return null;
 
   return (
-    <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
+    <section className="h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
         Listen on your favorite Platforms
       </h2>

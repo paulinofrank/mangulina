@@ -62,7 +62,7 @@ export default function BioText({ bio }: BioTextProps) {
     .filter(Boolean);
 
   return (
-    <div className="space-y-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+    <div className="min-w-0 space-y-4 text-sm leading-relaxed text-gray-700 [overflow-wrap:anywhere] sm:text-base">
       {blocks.map((block, index) => {
         const lines = block.split("\n").map((line) => line.trimEnd());
         const firstLine = lines[0]?.trim() ?? "";
@@ -71,7 +71,7 @@ export default function BioText({ bio }: BioTextProps) {
           return (
             <h4
               key={index}
-              className="pt-2 text-base font-semibold leading-snug text-(--color-flagblue) sm:text-lg"
+            className="pt-2 text-base font-semibold leading-snug text-(--color-flagblue) [overflow-wrap:anywhere] sm:text-lg"
             >
               {parseInline(firstLine.replace(/^##\s+/, ""))}
             </h4>
@@ -99,7 +99,7 @@ export default function BioText({ bio }: BioTextProps) {
           );
         }
 
-        return <p key={index}>{renderInlineLines(lines)}</p>;
+          return <p key={index} className="min-w-0 [overflow-wrap:anywhere]">{renderInlineLines(lines)}</p>;
       })}
     </div>
   );

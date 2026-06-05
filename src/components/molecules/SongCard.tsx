@@ -21,7 +21,7 @@ export default function SongCard({
 }: SongCardProps) {
   const href = slug ? `/songs/${slug}` : `/songs/${id}`;
   return (
-    <Link href={href} className="shrink-0 w-32 group">
+    <Link href={href} className="group w-28 shrink-0 sm:w-32 lg:w-36">
       <div className="relative aspect-square overflow-hidden rounded-lg bg-gray-100 border border-black/5 transition-transform duration-350 ease-out group-hover:scale-[1.02]">
         <img
           src={coverUrl}

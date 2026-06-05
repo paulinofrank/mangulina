@@ -58,12 +58,83 @@ export type SongRecord = {
   bandcamp_url?: string | null;
 };
 
+type RecordingEditorial = {
+  recording_id: string;
+  story: string | null;
+  inspiration: string | null;
+  historical_context: string | null;
+  cultural_significance: string | null;
+  notes: string | null;
+};
+
 export type RelatedSongRecord = {
   id: string;
   slug: string | null;
   title: string;
   artist_name: string;
   artist_id?: string | null;
+};
+
+export type SongFunFactRecord = {
+  id: string | number;
+  recording_id: string;
+  fact: string;
+  source_url: string | null;
+  display_order: number | null;
+};
+
+export type SongSlangRecord = {
+  id: string | number;
+  recording_id: string;
+  expression_id: string | number;
+  meaning_in_song: string | null;
+  cultural_note: string | null;
+  lyric_excerpt: string | null;
+  display_order: number | null;
+  source_url: string | null;
+  expression: {
+    id: string | number;
+    term: string;
+    definition: string | null;
+    example: string | null;
+    notes: string | null;
+  } | null;
+};
+
+export type SongSourceRecord = {
+  id: string | number;
+  recording_id: string;
+  source_usage: string | null;
+  source: {
+    id: string | number;
+    title: string;
+    source_type: string | null;
+    author: string | null;
+    publisher: string | null;
+    url: string | null;
+    publication_date: string | null;
+    notes: string | null;
+  } | null;
+};
+
+export type SongMediaRecord = {
+  id: string | number;
+  recording_id: string;
+  media_type: string;
+  title: string;
+  url: string;
+  platform: string | null;
+  external_id: string | null;
+  is_official: boolean | null;
+  is_primary: boolean | null;
+  notes: string | null;
+  source_id: string | number | null;
+  display_order: number | null;
+  source: {
+    id: string | number;
+    title: string;
+    url: string | null;
+  } | null;
 };
 
 async function getPublishedArtistIds(artistIds: unknown[]) {
@@ -91,6 +162,41 @@ async function isPublishedArtist(artistId: unknown) {
   return publishedIds.has(artistId);
 }
 
+async function getRecordingEditorial(recordingId: string): Promise<RecordingEditorial | null> {
+  const { data, error } = await supabase
+    .from("recording_editorial")
+    .select("recording_id, story, inspiration, historical_context, cultural_significance, notes")
+    .eq("recording_id", recordingId)
+    .maybeSingle();
+
+  if (error) {
+    console.error("getRecordingEditorial error:", error);
+    return null;
+  }
+
+  return data as RecordingEditorial | null;
+}
+
+function applyEditorial(song: SongRecord, editorial: RecordingEditorial | null): SongRecord {
+  if (!editorial) return song;
+
+  return {
+    ...song,
+    song_about: editorial.story ?? song.song_about,
+    inspiration: editorial.inspiration ?? song.inspiration,
+    cultural_context:
+      editorial.cultural_significance ??
+      editorial.historical_context ??
+      song.cultural_context,
+    notes: editorial.notes ?? song.notes,
+  };
+}
+
+function firstRelated<T>(value: T | T[] | null | undefined): T | null {
+  if (Array.isArray(value)) return value[0] ?? null;
+  return value ?? null;
+}
+
 // ----------------------
 // SONG BY ID
 // ----------------------
@@ -114,7 +220,8 @@ export async function getSongById(id: string): Promise<SongRecord | null> {
     return null;
   }
 
-  return song;
+  const editorial = await getRecordingEditorial(song.recording_id);
+  return applyEditorial(song, editorial);
 }
 
 // ----------------------
@@ -140,29 +247,58 @@ export async function getSongCredits(id: string): Promise<RawCredit[]> {
 // ----------------------
 // FUN FACTS
 // ----------------------
-export async function getSongFunFacts(id: string) {
+export async function getSongFunFacts(id: string): Promise<SongFunFactRecord[]> {
   const cleanId = decodeURIComponent(id).trim().replace(/^"|"$/g, "");
 
   const { data, error } = await supabase
-    .from("song_fun_facts")
-    .select("*")
-    .eq("song_id", cleanId);
+    .from("recording_fun_facts")
+    .select("id, recording_id, fact, source_url, display_order")
+    .eq("recording_id", cleanId)
+    .order("display_order", { ascending: true, nullsFirst: false })
+    .order("id", { ascending: true });
 
-  return error ? [] : data;
+  if (error) {
+    console.error("getSongFunFacts error:", error);
+    return [];
+  }
+
+  return (data ?? []) as SongFunFactRecord[];
 }
 
 // ----------------------
 // SLANG
 // ----------------------
-export async function getSongSlang(id: string) {
+export async function getSongSlang(id: string): Promise<SongSlangRecord[]> {
   const cleanId = decodeURIComponent(id).trim().replace(/^"|"$/g, "");
 
   const { data, error } = await supabase
-    .from("song_slang")
-    .select("*")
-    .eq("song_id", cleanId);
+    .from("recording_expressions")
+    .select(`
+      id,
+      recording_id,
+      expression_id,
+      meaning_in_song,
+      cultural_note,
+      lyric_excerpt,
+      display_order,
+      source_url,
+      expression:expressions(id, term, definition, example, notes)
+    `)
+    .eq("recording_id", cleanId)
+    .order("display_order", { ascending: true, nullsFirst: false })
+    .order("id", { ascending: true });
 
-  return error ? [] : data;
+  if (error) {
+    console.error("getSongSlang error:", error);
+    return [];
+  }
+
+  return ((data ?? []) as (Omit<SongSlangRecord, "expression"> & {
+    expression?: SongSlangRecord["expression"] | SongSlangRecord["expression"][];
+  })[]).map((row) => ({
+    ...row,
+    expression: firstRelated(row.expression),
+  }));
 }
 
 // ----------------------
@@ -261,8 +397,11 @@ export type ArtistSongRecord = {
   id: string;
   slug: string | null;
   title: string;
+  artist_name?: string | null;
+  release_id: string | null;
   release_year_actual: number | null;
   cover_image_url: string | null;
+  views: number | null;
 };
 
 export async function getMoreSongsByArtist(
@@ -274,15 +413,23 @@ export async function getMoreSongsByArtist(
 
   const { data, error } = await supabase
     .from("recordings_with_release_info")
-    .select("recording_id, recording_title, release_year_actual, cover_image_url")
+    .select("recording_id, recording_title, artist_name, release_id, release_year_actual, cover_image_url, views")
     .eq("artist_id", artistId)
     .neq("recording_id", excludeId)
-    .order("release_year_actual", { ascending: false, nullsFirst: false })
+    .order("views", { ascending: false, nullsFirst: false })
     .limit(limit);
 
   if (error || !data) return [];
 
-  const rows = data as { recording_id: string; recording_title: string; release_year_actual: number | null; cover_image_url: string | null }[];
+  const rows = data as {
+    recording_id: string;
+    recording_title: string;
+    artist_name: string | null;
+    release_id: string | null;
+    release_year_actual: number | null;
+    cover_image_url: string | null;
+    views: number | null;
+  }[];
 
   // Fetch slugs
   const ids = rows.map((r) => r.recording_id);
@@ -299,7 +446,81 @@ export async function getMoreSongsByArtist(
     id:                 r.recording_id,
     slug:               slugMap.get(r.recording_id) ?? null,
     title:              r.recording_title,
+    artist_name:        r.artist_name,
+    release_id:         r.release_id,
     release_year_actual: r.release_year_actual,
     cover_image_url:    r.cover_image_url,
+    views:              r.views,
+  }));
+}
+
+// ----------------------
+// SOURCES
+// ----------------------
+export async function getSongSources(recordingId: string): Promise<SongSourceRecord[]> {
+  const cleanId = decodeURIComponent(recordingId).trim().replace(/^"|"$/g, "");
+
+  const { data, error } = await supabase
+    .from("recording_sources")
+    .select(`
+      id,
+      recording_id,
+      source_usage,
+      source:sources(id, title, source_type, author, publisher, url, publication_date, notes)
+    `)
+    .eq("recording_id", cleanId)
+    .order("id", { ascending: true });
+
+  if (error) {
+    console.error("getSongSources error:", error);
+    return [];
+  }
+
+  return ((data ?? []) as (Omit<SongSourceRecord, "source"> & {
+    source?: SongSourceRecord["source"] | SongSourceRecord["source"][];
+  })[]).map((row) => ({
+    ...row,
+    source: firstRelated(row.source),
+  }));
+}
+
+// ----------------------
+// MEDIA
+// ----------------------
+export async function getSongMedia(recordingId: string): Promise<SongMediaRecord[]> {
+  const cleanId = decodeURIComponent(recordingId).trim().replace(/^"|"$/g, "");
+
+  const { data, error } = await supabase
+    .from("recording_media")
+    .select(`
+      id,
+      recording_id,
+      media_type,
+      title,
+      url,
+      platform,
+      external_id,
+      is_official,
+      is_primary,
+      notes,
+      source_id,
+      display_order,
+      source:sources(id, title, url)
+    `)
+    .eq("recording_id", cleanId)
+    .order("is_primary", { ascending: false, nullsFirst: false })
+    .order("display_order", { ascending: true, nullsFirst: false })
+    .order("id", { ascending: true });
+
+  if (error) {
+    console.error("getSongMedia error:", error);
+    return [];
+  }
+
+  return ((data ?? []) as (Omit<SongMediaRecord, "source"> & {
+    source?: SongMediaRecord["source"] | SongMediaRecord["source"][];
+  })[]).map((row) => ({
+    ...row,
+    source: firstRelated(row.source),
   }));
 }

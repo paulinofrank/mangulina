@@ -10,6 +10,22 @@ export type ArtistAward = {
   source: string | null;
 };
 
+export type ArtistMedia = {
+  id: string;
+  artist_id: string;
+  media_type: string;
+  title: string;
+  url: string;
+  platform: string;
+  external_id: string | null;
+  thumbnail_url: string | null;
+  published_date: string | null;
+  is_official: boolean;
+  is_featured: boolean;
+  display_order: number;
+  notes: string | null;
+};
+
 export type ArtistProfileData = {
   id: string;
   name: string;
@@ -192,4 +208,32 @@ export async function getArtistDiscography(
   }
 
   return Array.from(releases.values());
+}
+
+export async function getArtistMedia(artistId: string): Promise<ArtistMedia[]> {
+  const supabase = getSupabaseClient();
+
+  const { data, error } = await supabase
+    .from("artist_media")
+    .select(
+      "id, artist_id, media_type, title, url, platform, external_id, thumbnail_url, published_date, is_official, is_featured, display_order, notes"
+    )
+    .eq("artist_id", artistId)
+    .order("is_featured", { ascending: false })
+    .order("display_order", { ascending: true })
+    .order("published_date", { ascending: false, nullsFirst: false })
+    .order("created_at", { ascending: true });
+
+  if (error) {
+    console.error("getArtistMedia error:", {
+      code: error.code,
+      message: error.message,
+      details: error.details,
+      hint: error.hint,
+    });
+
+    return [];
+  }
+
+  return (data ?? []) as ArtistMedia[];
 }

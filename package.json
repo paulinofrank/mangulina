@@ -22,6 +22,7 @@
     "recover-covers-broad-web-local": "tsx scripts/fetchMissingCoverArtBroadWebLocal.ts",
     "recover-covers-streaming-local": "tsx scripts/fetchMissingCoverArtStreamingLocal.ts",
     "recover-covers-wikimedia-local": "tsx scripts/fetchMissingCoverArtWikimediaLocal.ts",
+    "seed:song-demo": "tsx scripts/seed-song-profile-demo-data.ts",
     "script:platform-links": "tsx scripts/populateRecordingPlatformLinks.ts",
     "script:recording-slugs": "tsx scripts/populateRecordingSlugs.ts"
   },

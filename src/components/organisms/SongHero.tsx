@@ -12,6 +12,7 @@ type SongHeroProps = {
   genre?: string | null;       // genre_name from view
   subgenre?: string | null;    // subgenre_name from view
   duration?: number | null;    // milliseconds
+  isrcs?: string[] | null;
   views?: number | null;
   coverImageUrl?: string | null;
   releaseTitle?: string | null;
@@ -58,20 +59,27 @@ export default function SongHero({
   genre,
   subgenre,
   duration,
+  isrcs,
   views,
   coverImageUrl,
   releaseTitle,
 }: SongHeroProps) {
   const genreChips = [genre, subgenre].filter(Boolean) as string[];
+  const isrcText = (isrcs ?? []).filter(Boolean).join(" · ");
   const durationStr = duration && duration > 0 ? formatDuration(duration) : null;
   const heroFacts = [
     releaseTitle ? { label: "Album", value: releaseTitle } : null,
     year ? { label: "Release Year", value: String(year) } : null,
     durationStr ? { label: "Duration", value: durationStr } : null,
   ].filter(Boolean) as { label: string; value: string }[];
+  const hasMetadata =
+    heroFacts.length > 0 ||
+    Boolean(views != null && views > 0) ||
+    Boolean(isrcText) ||
+    genreChips.length > 0;
 
   return (
-    <section className="relative overflow-hidden rounded-xl border border-black/5 bg-white/60">
+    <section className="relative h-fit overflow-hidden rounded-xl border border-black/5 bg-white/60">
       <div className="px-5 py-6 sm:px-6">
         <div className="flex flex-col items-start gap-6 md:flex-row">
           <div className="group relative aspect-square w-full shrink-0 overflow-hidden rounded-lg border border-black/5 bg-gray-100 sm:w-56 lg:w-64">
@@ -92,55 +100,77 @@ export default function SongHero({
           </div>
 
           <div className="flex min-w-0 flex-1 flex-col justify-center gap-4 md:min-h-56 lg:min-h-64">
-            <div>
-              <h1 className="text-3xl font-bold leading-tight text-[#002D62] sm:text-4xl lg:text-5xl">
-                {title}
+            <div className="min-w-0">
+              <h1 className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-3xl font-bold leading-tight text-[#002D62] sm:text-4xl lg:text-5xl">
+                <span>{title}</span>
+                <span className="text-xl font-semibold text-gray-500 sm:text-2xl lg:text-3xl">
+                  by{" "}
+                  {artistSlug ? (
+                    <Link
+                      href={`/artists/${artistSlug}`}
+                      className="transition-colors hover:text-[#CE1126]"
+                    >
+                      {artist}
+                    </Link>
+                  ) : (
+                    <span>{artist}</span>
+                  )}
+                </span>
               </h1>
-              {artistSlug ? (
-                <Link
-                  href={`/artists/${artistSlug}`}
-                  className="mt-2 block text-lg font-medium text-gray-600 transition-colors hover:text-[#CE1126] sm:text-xl"
-                >
-                  {artist}
-                </Link>
-              ) : (
-                <p className="mt-2 text-lg font-medium text-gray-600 sm:text-xl">
-                  {artist}
-                </p>
-              )}
             </div>
 
-            {heroFacts.length > 0 && (
-              <dl className="grid gap-3 text-sm text-gray-600 sm:grid-cols-3">
+            {hasMetadata && (
+              <dl className="grid gap-x-8 gap-y-3 text-sm text-gray-600 sm:grid-cols-2 xl:grid-cols-3">
                 {heroFacts.map((fact) => (
-                  <div key={fact.label} className="min-w-0">
-                    <dt className="text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                  <div key={fact.label} className="flex min-w-0 items-center gap-3">
+                    <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-400">
                       {fact.label}
                     </dt>
-                    <dd className="mt-1 truncate">{fact.value}</dd>
+                    <dd className="min-w-0 truncate text-gray-600">{fact.value}</dd>
                   </div>
                 ))}
+
+                {views != null && views > 0 && (
+                  <div className="flex min-w-0 items-center gap-3">
+                    <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                      Views
+                    </dt>
+                    <dd className="min-w-0 truncate text-gray-600">
+                      {views.toLocaleString()}
+                    </dd>
+                  </div>
+                )}
+
+                {isrcText && (
+                  <div className="flex min-w-0 items-center gap-3">
+                    <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                      ISRC
+                    </dt>
+                    <dd className="min-w-0 truncate text-gray-600">
+                      {isrcText}
+                    </dd>
+                  </div>
+                )}
+
+                {genreChips.length > 0 && (
+                  <div className="flex min-w-0 items-center gap-3 sm:col-span-2 xl:col-span-1">
+                    <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                      Genres
+                    </dt>
+                    <dd className="flex min-w-0 flex-wrap gap-2">
+                      {genreChips.map((chip) => (
+                        <Link
+                          key={chip}
+                          href={getGenreHref(chip)}
+                          className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-500 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:text-gray-700"
+                        >
+                          {chip}
+                        </Link>
+                      ))}
+                    </dd>
+                  </div>
+                )}
               </dl>
-            )}
-
-            {genreChips.length > 0 && (
-              <div className="flex flex-wrap gap-2">
-                {genreChips.map((chip) => (
-                  <Link
-                    key={chip}
-                    href={getGenreHref(chip)}
-                    className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-500 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:text-gray-700"
-                  >
-                    {chip}
-                  </Link>
-                ))}
-              </div>
-            )}
-
-            {views != null && views > 0 && (
-              <p className="text-xs text-gray-400">
-                {views.toLocaleString()} views
-              </p>
             )}
           </div>
         </div>

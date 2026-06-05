@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { ChevronDown } from "lucide-react";
 import { getSignedCoverUrl } from "@/utils/getSignedCoverUrl";
 import type { DiscographyRelease } from "@/lib/artistApi";
 
@@ -25,7 +26,7 @@ export default async function ArtistDiscographyGrouped({
 }) {
   if (releases.length === 0) {
     return (
-      <section className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+      <section className="min-w-0 bg-white p-5 rounded-xl border border-gray-100 shadow-sm sm:p-6">
         <h3 className="text-xs font-normal text-(--color-wikicrimson) uppercase mb-4">
           Discography
         </h3>
@@ -52,33 +53,33 @@ export default async function ArtistDiscographyGrouped({
   })).filter((group) => group.items.length > 0);
 
   return (
-    <section className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
-      <h3 className="text-xs font-normal text-(--color-wikicrimson) uppercase mb-6">
+    <section className="h-fit min-w-0 bg-white p-5 rounded-xl border border-gray-100 shadow-sm sm:p-6">
+      <h3 className="text-xs font-normal text-(--color-wikicrimson) uppercase mb-5">
         Discography
       </h3>
 
-      <div className="space-y-8">
+      <div className="space-y-7">
         {grouped.map((group) => (
           <div key={group.type}>
             <h4 className="text-sm font-normal uppercase tracking-wider text-(--color-flagblue) mb-2">
               {group.type}s
             </h4>
 
-            <div className="space-y-2">
+            <div className="grid min-w-0 gap-2 2xl:grid-cols-2">
               {group.items.map((release) => (
                 <details
                   key={release.release_id}
                   className="group rounded-lg border border-gray-100 bg-gray-50 open:bg-white"
                 >
-                  <summary className="cursor-pointer list-none px-3 py-2">
-                    <div className="flex items-center gap-3">
-                      <div className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-md overflow-hidden bg-gray-200 shrink-0">
+                  <summary className="cursor-pointer list-none px-3 py-1.5 transition-colors hover:bg-white [&::-webkit-details-marker]:hidden">
+                    <div className="flex min-w-0 items-center gap-2.5">
+                      <div className="relative w-11 h-11 rounded-md overflow-hidden bg-gray-200 shrink-0">
                         {release.cover_url ? (
                           <Image
                             src={release.cover_url}
                             alt={release.release_title}
                             fill
-                            sizes="56px"
+                            sizes="44px"
                             className="object-cover"
                           />
                         ) : (
@@ -86,7 +87,7 @@ export default async function ArtistDiscographyGrouped({
                         )}
                       </div>
 
-                      <div className="flex-1 min-w-0 leading-tight">
+                      <div className="min-w-0 flex-1 leading-tight">
                         <p className="text-(--color-flagblue) text-sm font-normal truncate">
                           {release.release_title}
                         </p>
@@ -97,8 +98,11 @@ export default async function ArtistDiscographyGrouped({
                         </p>
                       </div>
 
-                      <span className="text-xs text-gray-400 group-open:rotate-180 transition">
-                        ↓
+                      <span
+                        aria-hidden
+                        className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 shadow-sm transition group-hover:border-[#002D62]/30 group-hover:text-[#002D62] group-open:rotate-180"
+                      >
+                        <ChevronDown className="h-4 w-4" strokeWidth={2} />
                       </span>
                     </div>
                   </summary>
