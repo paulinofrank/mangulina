@@ -175,6 +175,7 @@ export default async function GenrePage({ params }: PageProps) {
                 <SongCard
                   key={song.id}
                   id={song.id}
+                  slug={song.slug}
                   title={song.title}
                   artistName={song.artistName}
                   coverUrl={song.coverUrl}

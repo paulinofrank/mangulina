@@ -8,9 +8,12 @@ import {
 import type { ArtistSummary } from "@/types/home";
 
 const SECTION_LIMIT = 12;
+const SUPABASE_STORAGE_BASE =
+  "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public";
 
 export type GenreSongSummary = {
   id: string;
+  slug: string | null;
   title: string;
   artistName: string;
   coverUrl: string;
@@ -59,12 +62,12 @@ type SubgenreRow = {
 
 type RecordingRow = {
   id: string;
+  slug: string | null;
   title: string;
   views: number | null;
   artist_id: string | null;
   release_id: string | null;
   artists?: { name: string | null } | { name: string | null }[] | null;
-  releases?: { cover_image_url: string | null } | { cover_image_url: string | null }[] | null;
 };
 
 type ReleaseRow = {
@@ -273,7 +276,7 @@ async function getPopularSongs(aliases: string[]) {
 
   const response = await supabase
     .from("recordings")
-    .select("id,title,views,artist_id,release_id,artists:artist_id(name),releases:release_id(cover_image_url)")
+    .select("id,slug,title,views,artist_id,release_id,artists:artist_id(name)")
     .or(filters)
     .order("views", { ascending: false, nullsFirst: false })
     .limit(SECTION_LIMIT);
@@ -282,9 +285,12 @@ async function getPopularSongs(aliases: string[]) {
 
   return ((response.data ?? []) as RecordingRow[]).map((recording) => ({
     id: recording.id,
+    slug: recording.slug ?? null,
     title: recording.title,
     artistName: firstRelation(recording.artists)?.name ?? "Unknown artist",
-    coverUrl: firstRelation(recording.releases)?.cover_image_url ?? "/images/placeholder-song.jpg",
+    coverUrl: recording.release_id
+      ? `${SUPABASE_STORAGE_BASE}/cover-art/150px/${recording.release_id}.webp`
+      : "/images/placeholder-song.jpg",
     views: recording.views,
   }));
 }
