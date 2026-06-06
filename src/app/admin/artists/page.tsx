@@ -169,6 +169,60 @@ const platformOptions = [
   { value: "other", label: "Other" },
 ];
 
+const artistTypeOptions = [
+  { value: "", label: "-- Select Artist Type --" },
+  { value: "solo_artist", label: "Solo Artist" },
+  { value: "group", label: "Group" },
+  { value: "duo", label: "Duo" },
+  { value: "orchestra", label: "Orchestra" },
+  { value: "band", label: "Band" },
+  { value: "choir", label: "Choir" },
+  { value: "collective", label: "Collective" },
+  { value: "dj", label: "DJ" },
+  { value: "producer", label: "Producer" },
+  { value: "composer", label: "Composer" },
+  { value: "other", label: "Other" },
+];
+
+const primaryRoleOptions = [
+  { value: "", label: "-- Select Primary Role --" },
+  { value: "singer", label: "Singer" },
+  { value: "musician", label: "Musician" },
+  { value: "composer", label: "Composer" },
+  { value: "songwriter", label: "Songwriter" },
+  { value: "producer", label: "Producer" },
+  { value: "arranger", label: "Arranger" },
+  { value: "bandleader", label: "Bandleader" },
+  { value: "orchestra", label: "Orchestra" },
+  { value: "dj", label: "DJ" },
+  { value: "rapper", label: "Rapper" },
+  { value: "instrumentalist", label: "Instrumentalist" },
+  { value: "other", label: "Other" },
+];
+
+const instrumentOptions = [
+  "accordion",
+  "bass",
+  "bongos",
+  "congas",
+  "drums",
+  "guitar",
+  "guira",
+  "keyboard",
+  "maracas",
+  "piano",
+  "saxophone",
+  "tambora",
+  "trombone",
+  "trumpet",
+  "violin",
+  "voice",
+];
+
+const religiousTagOptions = ["christian", "secular"];
+const careerStageTagOptions = ["legend", "emerging"];
+const genderOptions = ["male", "female", "other", "group"];
+
 const emptyForm: ArtistForm = {
   name: "",
   sort_name: "",
@@ -228,7 +282,10 @@ const primaryGenreOptions = [
   { value: "other", label: "Other Genre" },
 ];
 
+const musicalGenreOptions = primaryGenreOptions.filter((option) => option.value);
+
 const provinceOptions = [
+  "X - Born Outside",
   "Azua",
   "Bahoruco",
   "Barahona",
@@ -282,9 +339,53 @@ function toCsv(value: string[] | Record<string, unknown> | null | undefined) {
   return Object.keys(value).filter(Boolean).join(", ");
 }
 
+function toggleCsvValue(value: string, option: string) {
+  const items = parseCsv(value);
+  const normalized = option.toLowerCase();
+  const exists = items.some((item) => item.toLowerCase() === normalized);
+  const nextItems = exists
+    ? items.filter((item) => item.toLowerCase() !== normalized)
+    : [...items, option];
+
+  return nextItems.join(", ");
+}
+
+function toggleExclusiveCsvValue(
+  value: string,
+  options: string[],
+  selectedOption: string
+) {
+  const items = parseCsv(value);
+  const isSelected = items.some(
+    (item) => item.toLowerCase() === selectedOption.toLowerCase()
+  );
+  const optionSet = new Set(options.map((option) => option.toLowerCase()));
+  const remainingItems = items.filter(
+    (item) => !optionSet.has(item.toLowerCase())
+  );
+
+  return isSelected ? remainingItems.join(", ") : [...remainingItems, selectedOption].join(", ");
+}
+
 function nullable(value: string | null | undefined) {
   const trimmed = (value ?? "").trim();
   return trimmed ? trimmed : null;
+}
+
+function slugify(value: string) {
+  return value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .replace(/-{2,}/g, "-");
+}
+
+function yearFromDate(value: string) {
+  const year = value.slice(0, 4);
+  return /^\d{4}$/.test(year) ? year : "";
 }
 
 function normalizeStatus(value: string | null | undefined): ArtistStatus {
@@ -356,6 +457,7 @@ export default function AdminDashboard() {
   const [artists, setArtists] = useState<AdminArtist[]>([]);
   const [selectedArtistId, setSelectedArtistId] = useState("");
   const [search, setSearch] = useState("");
+  const [artistPickerOpen, setArtistPickerOpen] = useState(false);
   const [form, setForm] = useState<ArtistForm>(emptyForm);
   const [artistMedia, setArtistMedia] = useState<AdminArtistMedia[]>([]);
   const [mediaForm, setMediaForm] = useState<ArtistMediaForm>(emptyMediaForm);
@@ -383,6 +485,7 @@ export default function AdminDashboard() {
       [
         artist.name,
         artist.stage_name,
+        artist.sort_name,
         artist.slug,
         artist.province,
         artist.status,
@@ -448,6 +551,32 @@ export default function AdminDashboard() {
     }));
   }
 
+  function updateArtistName(value: string) {
+    setForm((current) => ({
+      ...current,
+      name: value,
+      slug:
+        selectedArtistId ||
+        (current.slug.trim() && current.slug !== slugify(current.name))
+          ? current.slug
+          : slugify(value),
+    }));
+  }
+
+  function updateDateWithYear(
+    dateKey: "date_of_birth" | "date_of_death",
+    yearKey: "birth_year" | "death_year",
+    value: string
+  ) {
+    const nextYear = yearFromDate(value);
+
+    setForm((current) => ({
+      ...current,
+      [dateKey]: value,
+      [yearKey]: nextYear || current[yearKey],
+    }));
+  }
+
   function updateMediaForm<K extends keyof ArtistMediaForm>(
     key: K,
     value: ArtistMediaForm[K]
@@ -479,6 +608,8 @@ export default function AdminDashboard() {
 
   function resetForm() {
     setSelectedArtistId("");
+    setSearch("");
+    setArtistPickerOpen(false);
     setForm({ ...emptyForm });
     setArtistMedia([]);
     resetMediaForm();
@@ -542,6 +673,8 @@ export default function AdminDashboard() {
     }
 
     setSelectedArtistId(artist.id);
+    setSearch(artist.name ?? "");
+    setArtistPickerOpen(false);
     setImageVersion(Date.now());
     resetMediaForm();
     void fetchArtistMedia(artist.id);
@@ -746,10 +879,12 @@ export default function AdminDashboard() {
     setLoading(true);
     setStatus("");
 
+    const resolvedSlug = form.slug.trim() || slugify(form.name);
+
     const artistData = {
       name: form.name.trim(),
       sort_name: nullable(form.sort_name),
-      slug: nullable(form.slug),
+      slug: nullable(resolvedSlug),
       stage_name: nullable(form.stage_name),
 
       first_name: nullable(form.first_name),
@@ -802,18 +937,53 @@ export default function AdminDashboard() {
 
     const result = (await response.json()) as AdminWriteResponse;
 
+    const wasEditing = Boolean(selectedArtistId);
+
     if (!response.ok || !result.ok) {
       setStatus(`Error saving artist: ${result.error || response.statusText}`);
     } else {
-      setStatus(
-        selectedArtistId ? "Artist profile updated." : "New artist created."
-      );
+      const successMessage = wasEditing
+        ? "Artist profile updated. Ready for a new artist."
+        : "New artist created. Ready for another profile.";
 
       await fetchData();
+      resetForm();
+      setStatus(successMessage);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
 
-      if (!selectedArtistId) {
-        resetForm();
-      }
+    setLoading(false);
+  }
+
+  async function handleDeleteArtist() {
+    if (!selectedArtistId || !selectedArtist) return;
+
+    const confirmed = window.confirm(
+      `Permanently delete this artist?\n\n${selectedArtist.name}\n\nThis will also delete associated releases, recordings, credits, media, links, lyrics, and other cascaded data. This cannot be undone.`
+    );
+
+    if (!confirmed) return;
+
+    setLoading(true);
+    setStatus("");
+
+    const response = await fetch("/api/admin/artists", {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        artistId: selectedArtistId,
+      }),
+    });
+    const result = (await response.json()) as AdminWriteResponse;
+
+    if (!response.ok || !result.ok) {
+      setStatus(`Error deleting artist: ${result.error || response.statusText}`);
+    } else {
+      setStatus(`Artist deleted: ${selectedArtist.name}`);
+      resetForm();
+      await fetchData();
     }
 
     setLoading(false);
@@ -824,17 +994,20 @@ export default function AdminDashboard() {
   }
 
   return (
-    <div className="mx-auto max-w-6xl px-5 pb-10 pt-24 font-sans text-(--color-ink)">
-      <header className="mb-10 border-b border-gray-200 pb-6">
+    <div className="mx-auto max-w-6xl px-5 pb-10 pt-8 font-sans text-(--color-ink) sm:pt-10">
+      <header className="mb-8 rounded-xl border border-black/5 bg-white p-6 shadow-sm sm:p-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <div>
-            <h1 className="text-3xl font-normal tracking-tight text-(--color-flagblue) sm:text-4xl">
-              MANGULINA
-              <span className="text-(--color-wikicrimson)">™</span> ADMIN
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-(--color-wikicrimson)">
+              Mangulina Admin
+            </p>
+            <h1 className="mt-3 text-3xl font-black uppercase tracking-tight text-(--color-flagblue) sm:text-4xl">
+              Artist Profile Editor
             </h1>
 
-            <p className="mt-2 text-sm text-gray-500">
-              Artist profile editor and homepage spotlight control.
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-gray-600 sm:text-base">
+              Create, review, update, and safely remove curated artist profiles
+              from Mangulina.
             </p>
           </div>
 
@@ -860,29 +1033,87 @@ export default function AdminDashboard() {
               Select Artist
             </h2>
 
-            <input
-              value={search ?? ""}
-              onChange={(event) => setSearch(event.target.value)}
-              placeholder="Search artist..."
-              className="mb-3 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-(--color-flagblue)"
-            />
+            <div className="relative">
+              <input
+                value={search ?? ""}
+                onChange={(event) => {
+                  setSearch(event.target.value);
+                  setArtistPickerOpen(true);
+                }}
+                onFocus={() => setArtistPickerOpen(true)}
+                onBlur={() => {
+                  window.setTimeout(() => setArtistPickerOpen(false), 120);
+                }}
+                placeholder="Search or select artist..."
+                className="w-full rounded-lg border border-gray-200 px-3 py-2 pr-9 text-sm outline-none focus:border-(--color-flagblue)"
+                role="combobox"
+                aria-expanded={artistPickerOpen}
+                aria-controls="admin-artist-picker-results"
+              />
 
-            <select
-              value={selectedArtistId ?? ""}
-              onChange={(event) => handleSelectArtistForEdit(event.target.value)}
-              className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-(--color-flagblue)"
-            >
-              <option value="">-- Create New Artist --</option>
+              <button
+                type="button"
+                onClick={() => setArtistPickerOpen((open) => !open)}
+                className="absolute right-2 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-md text-gray-400 transition hover:bg-gray-100 hover:text-(--color-flagblue)"
+                aria-label="Toggle artist list"
+              >
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 20 20"
+                  className="h-4 w-4"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.17l3.71-3.94a.75.75 0 1 1 1.08 1.04l-4.25 4.5a.75.75 0 0 1-1.08 0l-4.25-4.5a.75.75 0 0 1 .02-1.06Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
 
-              {filteredArtists.map((artist) => (
-                <option key={artist.id} value={artist.id}>
-                  {artist.name}
-                  {artist.status && artist.status !== "published"
-                    ? ` — ${artist.status}`
-                    : ""}
-                </option>
-              ))}
-            </select>
+              {artistPickerOpen && (
+                <div
+                  id="admin-artist-picker-results"
+                  className="absolute left-0 right-0 top-[calc(100%+0.35rem)] z-30 max-h-72 overflow-y-auto rounded-lg border border-gray-200 bg-white shadow-lg"
+                >
+                  <button
+                    type="button"
+                    onMouseDown={(event) => event.preventDefault()}
+                    onClick={resetForm}
+                    className="block w-full border-b border-gray-100 px-3 py-2 text-left text-sm font-medium text-(--color-flagblue) transition hover:bg-(--color-flagblue)/5"
+                  >
+                    Create New Artist
+                  </button>
+
+                  {filteredArtists.length ? (
+                    filteredArtists.map((artist) => (
+                      <button
+                        key={artist.id}
+                        type="button"
+                        onMouseDown={(event) => event.preventDefault()}
+                        onClick={() => handleSelectArtistForEdit(artist.id)}
+                        className={`block w-full border-b border-gray-100 px-3 py-2 text-left text-sm transition last:border-none hover:bg-(--color-flagblue)/5 ${
+                          selectedArtistId === artist.id
+                            ? "bg-(--color-flagblue)/8 text-(--color-flagblue)"
+                            : "text-gray-700"
+                        }`}
+                      >
+                        <span className="block truncate font-medium">{artist.name}</span>
+                        {artist.status && artist.status !== "published" && (
+                          <span className="mt-0.5 block text-[10px] uppercase tracking-[0.14em] text-gray-400">
+                            {artist.status}
+                          </span>
+                        )}
+                      </button>
+                    ))
+                  ) : (
+                    <p className="px-3 py-2 text-sm text-gray-400">
+                      No artists found.
+                    </p>
+                  )}
+                </div>
+              )}
+            </div>
 
             {selectedArtist && (
               <div className="mt-5">
@@ -1156,15 +1387,13 @@ export default function AdminDashboard() {
                 {selectedArtistId ? "Edit Artist Profile" : "Create New Artist"}
               </h2>
 
-              {selectedArtistId && (
-                <button
-                  type="button"
-                  onClick={resetForm}
-                  className="text-sm text-(--color-wikicrimson)"
-                >
-                  Cancel edit
-                </button>
-              )}
+              <button
+                type="button"
+                onClick={resetForm}
+                className="rounded-lg border border-(--color-wikicrimson)/25 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-(--color-wikicrimson) shadow-sm transition hover:border-(--color-wikicrimson) hover:bg-(--color-wikicrimson) hover:text-white"
+              >
+                New Artist
+              </button>
             </div>
 
             <form onSubmit={handleSaveArtist} className="space-y-6">
@@ -1172,7 +1401,7 @@ export default function AdminDashboard() {
                 <Field label="Artist Name">
                   <input
                     value={form.name ?? ""}
-                    onChange={(event) => updateForm("name", event.target.value)}
+                    onChange={(event) => updateArtistName(event.target.value)}
                     required
                     className={inputClass}
                   />
@@ -1192,7 +1421,7 @@ export default function AdminDashboard() {
                   <input
                     value={form.slug ?? ""}
                     onChange={(event) => updateForm("slug", event.target.value)}
-                    required
+                    placeholder="Auto-created from artist name"
                     className={inputClass}
                   />
                 </Field>
@@ -1256,7 +1485,11 @@ export default function AdminDashboard() {
                     type="date"
                     value={form.date_of_birth ?? ""}
                     onChange={(event) =>
-                      updateForm("date_of_birth", event.target.value)
+                      updateDateWithYear(
+                        "date_of_birth",
+                        "birth_year",
+                        event.target.value
+                      )
                     }
                     className={inputClass}
                   />
@@ -1278,7 +1511,11 @@ export default function AdminDashboard() {
                     type="date"
                     value={form.date_of_death ?? ""}
                     onChange={(event) =>
-                      updateForm("date_of_death", event.target.value)
+                      updateDateWithYear(
+                        "date_of_death",
+                        "death_year",
+                        event.target.value
+                      )
                     }
                     className={inputClass}
                   />
@@ -1296,27 +1533,48 @@ export default function AdminDashboard() {
                 </Field>
               </div>
 
-              <div className="grid gap-4 md:grid-cols-2">
+              <div>
                 <Field label="Gender">
-                  <input
-                    value={form.gender ?? ""}
-                    onChange={(event) => updateForm("gender", event.target.value)}
-                    placeholder="male, female, group"
-                    className={inputClass}
-                  />
-                </Field>
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-lg border border-gray-200 bg-white px-3 py-2">
+                    {genderOptions.map((gender) => {
+                      const selected = form.gender === gender;
 
-                <label className="flex items-end gap-3 text-sm text-gray-700">
-                  <input
-                    type="checkbox"
-                    checked={Boolean(form.ended)}
-                    onChange={(event) =>
-                      updateForm("ended", event.target.checked)
-                    }
-                    className="mb-3 h-4 w-4"
-                  />
-                  Ended / Inactive
-                </label>
+                      return (
+                        <label
+                          key={gender}
+                          className="flex items-center gap-2 text-sm capitalize text-gray-700"
+                        >
+                          <input
+                            type="checkbox"
+                            checked={selected}
+                            onChange={() =>
+                              updateForm("gender", selected ? "" : gender)
+                            }
+                            className="h-4 w-4"
+                          />
+                          {gender}
+                        </label>
+                      );
+                    })}
+
+                    <span
+                      aria-hidden="true"
+                      className="hidden h-5 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent sm:block"
+                    />
+
+                    <label className="flex items-center gap-2 text-sm text-gray-700 sm:ml-auto">
+                      <input
+                        type="checkbox"
+                        checked={Boolean(form.ended)}
+                        onChange={(event) =>
+                          updateForm("ended", event.target.checked)
+                        }
+                        className="h-4 w-4"
+                      />
+                      Ended / Inactive
+                    </label>
+                  </div>
+                </Field>
               </div>
 
               <div className="grid gap-4 md:grid-cols-2">
@@ -1350,23 +1608,33 @@ export default function AdminDashboard() {
 
               <div className="grid gap-4 md:grid-cols-4">
                 <Field label="Artist Type">
-                  <input
+                  <select
                     value={form.type ?? ""}
                     onChange={(event) => updateForm("type", event.target.value)}
-                    placeholder="solo_artist, group, orchestra..."
                     className={inputClass}
-                  />
+                  >
+                    {artistTypeOptions.map((option) => (
+                      <option key={option.value || "empty-artist-type"} value={option.value}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </select>
                 </Field>
 
                 <Field label="Primary Role">
-                  <input
+                  <select
                     value={form.primary_role ?? ""}
                     onChange={(event) =>
                       updateForm("primary_role", event.target.value)
                     }
-                    placeholder="singer, composer, musician..."
                     className={inputClass}
-                  />
+                  >
+                    {primaryRoleOptions.map((option) => (
+                      <option key={option.value || "empty-primary-role"} value={option.value}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </select>
                 </Field>
 
                 <Field label="Primary Genre">
@@ -1421,47 +1689,156 @@ export default function AdminDashboard() {
 
               <div className="grid gap-4 md:grid-cols-2">
                 <Field label="Musical Genres">
-                  <input
-                    value={form.genres ?? ""}
-                    onChange={(event) => updateForm("genres", event.target.value)}
-                    placeholder="merengue, bachata, salsa"
-                    className={inputClass}
-                  />
+                  <div className="grid gap-2 rounded-lg border border-gray-200 bg-white p-3 sm:grid-cols-2">
+                    {musicalGenreOptions.map((option) => {
+                      const selected = parseCsv(form.genres).some(
+                        (item) => item.toLowerCase() === option.value.toLowerCase()
+                      );
+
+                      return (
+                        <label
+                          key={option.value}
+                          className="flex items-center gap-2 text-sm text-gray-700"
+                        >
+                          <input
+                            type="checkbox"
+                            checked={selected}
+                            onChange={() =>
+                              updateForm(
+                                "genres",
+                                toggleCsvValue(form.genres, option.value)
+                              )
+                            }
+                            className="h-4 w-4"
+                          />
+                          {option.label}
+                        </label>
+                      );
+                    })}
+                  </div>
                 </Field>
 
                 <Field label="Instruments">
-                  <input
-                    value={form.instruments ?? ""}
-                    onChange={(event) =>
-                      updateForm("instruments", event.target.value)
-                    }
-                    placeholder="piano, guitar, güira, tambora"
-                    className={inputClass}
-                  />
+                  <div className="grid gap-2 rounded-lg border border-gray-200 bg-white p-3 sm:grid-cols-2">
+                    {instrumentOptions.map((instrument) => {
+                      const selected = parseCsv(form.instruments).some(
+                        (item) => item.toLowerCase() === instrument.toLowerCase()
+                      );
+
+                      return (
+                        <label
+                          key={instrument}
+                          className="flex items-center gap-2 text-sm capitalize text-gray-700"
+                        >
+                          <input
+                            type="checkbox"
+                            checked={selected}
+                            onChange={() =>
+                              updateForm(
+                                "instruments",
+                                toggleCsvValue(form.instruments, instrument)
+                              )
+                            }
+                            className="h-4 w-4"
+                          />
+                          {instrument}
+                        </label>
+                      );
+                    })}
+                  </div>
                 </Field>
               </div>
 
-              <div className="grid gap-4 md:grid-cols-2">
-                <Field label="Aliases">
-                  <input
-                    value={form.aliases ?? ""}
-                    onChange={(event) => updateForm("aliases", event.target.value)}
-                    placeholder="El Mayimbe, El Caballo Mayor"
-                    className={inputClass}
-                  />
-                </Field>
+              <Field label="Aliases">
+                <input
+                  value={form.aliases ?? ""}
+                  onChange={(event) => updateForm("aliases", event.target.value)}
+                  placeholder="El Mayimbe, El Caballo Mayor"
+                  className={inputClass}
+                />
+              </Field>
 
-                <Field label="Artist Tags">
-                  <input
-                    value={form.artist_tags ?? ""}
-                    onChange={(event) =>
-                      updateForm("artist_tags", event.target.value)
-                    }
-                    placeholder="christian, religious, classic-merengue, 1980s"
-                    className={inputClass}
-                  />
-                </Field>
-              </div>
+              <Field label="Disambiguation">
+                <input
+                  value={form.disambiguation ?? ""}
+                  onChange={(event) =>
+                    updateForm("disambiguation", event.target.value)
+                  }
+                  placeholder="Dominican merengue singer, not the composer..."
+                  className={inputClass}
+                />
+              </Field>
+
+              <Field label="Artist Tags">
+                <div className="flex flex-wrap items-stretch gap-2 rounded-lg border border-gray-200 bg-white p-3">
+                    {religiousTagOptions.map((tag) => {
+                      const selected = parseCsv(form.artist_tags).some(
+                        (item) => item.toLowerCase() === tag.toLowerCase()
+                      );
+
+                      return (
+                        <button
+                          key={tag}
+                          type="button"
+                          aria-pressed={selected}
+                          onClick={() =>
+                            updateForm(
+                              "artist_tags",
+                              toggleExclusiveCsvValue(
+                                form.artist_tags,
+                                religiousTagOptions,
+                                tag
+                              )
+                            )
+                          }
+                          className={`rounded-lg border px-3 py-2 text-sm capitalize transition ${
+                            selected
+                              ? "border-(--color-flagblue) bg-(--color-flagblue) text-white"
+                              : "border-gray-200 bg-white text-gray-700 hover:border-(--color-flagblue)"
+                          } flex min-w-24 flex-1 items-center justify-center text-center`}
+                        >
+                          {tag}
+                        </button>
+                      );
+                    })}
+
+                    <span
+                      aria-hidden="true"
+                      className="mx-1 h-8 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent"
+                    />
+
+                    {careerStageTagOptions.map((tag) => {
+                      const selected = parseCsv(form.artist_tags).some(
+                        (item) => item.toLowerCase() === tag.toLowerCase()
+                      );
+
+                      return (
+                        <button
+                          key={tag}
+                          type="button"
+                          aria-pressed={selected}
+                          onClick={() =>
+                            updateForm(
+                              "artist_tags",
+                              toggleExclusiveCsvValue(
+                                form.artist_tags,
+                                careerStageTagOptions,
+                                tag
+                              )
+                            )
+                          }
+                          className={`rounded-lg border px-3 py-2 text-sm capitalize transition ${
+                            selected
+                              ? "border-(--color-flagblue) bg-(--color-flagblue) text-white"
+                              : "border-gray-200 bg-white text-gray-700 hover:border-(--color-flagblue)"
+                          } flex min-w-24 flex-1 items-center justify-center text-center`}
+                        >
+                          {tag}
+                        </button>
+                      );
+                    })}
+                </div>
+              </Field>
 
               <div className="grid gap-4 md:grid-cols-2">
                 <Field label="Official Website">
@@ -1469,16 +1846,6 @@ export default function AdminDashboard() {
                     value={form.website ?? ""}
                     onChange={(event) =>
                       updateForm("website", event.target.value)
-                    }
-                    className={inputClass}
-                  />
-                </Field>
-
-                <Field label="YouTube">
-                  <input
-                    value={form.youtube ?? ""}
-                    onChange={(event) =>
-                      updateForm("youtube", event.target.value)
                     }
                     className={inputClass}
                   />
@@ -1494,6 +1861,16 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
+                <Field label="YouTube">
+                  <input
+                    value={form.youtube ?? ""}
+                    onChange={(event) =>
+                      updateForm("youtube", event.target.value)
+                    }
+                    className={inputClass}
+                  />
+                </Field>
+
                 <Field label="Instagram">
                   <input
                     value={form.instagram ?? ""}
@@ -1504,17 +1881,6 @@ export default function AdminDashboard() {
                   />
                 </Field>
               </div>
-
-              <Field label="Disambiguation">
-                <input
-                  value={form.disambiguation ?? ""}
-                  onChange={(event) =>
-                    updateForm("disambiguation", event.target.value)
-                  }
-                  placeholder="Dominican merengue singer, not the composer..."
-                  className={inputClass}
-                />
-              </Field>
 
               <Field label="Biography">
                 <div className="overflow-hidden rounded-lg border border-gray-200 bg-white focus-within:border-(--color-flagblue)">
@@ -1603,6 +1969,26 @@ export default function AdminDashboard() {
                     : "Create Artist"}
               </button>
             </form>
+
+            {selectedArtistId && selectedArtist && (
+              <div className="mt-5 rounded-xl border border-red-100 bg-red-50/70 p-4">
+                <p className="text-[10px] font-normal uppercase tracking-[0.18em] text-red-700">
+                  Danger Zone
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-red-900">
+                  Permanently delete {selectedArtist.name} and all associated
+                  cascaded data after verification.
+                </p>
+                <button
+                  type="button"
+                  onClick={handleDeleteArtist}
+                  disabled={Boolean(loading)}
+                  className="mt-4 w-full rounded-lg border border-red-300 bg-white px-5 py-3 text-sm uppercase tracking-[0.18em] text-red-700 transition hover:bg-red-700 hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
+                >
+                  Delete Artist Permanently
+                </button>
+              </div>
+            )}
           </section>
 
         </main>

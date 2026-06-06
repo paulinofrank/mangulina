@@ -1,46 +1,62 @@
 // SongsByYearList.tsx
 "use client";
 
+import Link from "next/link";
+
 type SongRow = {
   recording_id: string;
+  recording_slug?: string | null;
   recording_title: string;
   artist_name: string | null;
   duration: number | null;
   genre_name?: string | null;
   subgenre_name?: string | null;
+  genre?: string | null;
+  subgenre?: string | null;
 };
 
 export default function SongsByYearList({ songs }: { songs: SongRow[] }) {
   return (
     <div className="mt-8 rounded-xl border border-black/5 bg-white/70 p-4">
       {/* Header */}
-      <div className="grid grid-cols-5 text-xs font-semibold uppercase tracking-wider text-gray-500 border-b pb-1 mb-2">
+      <div className="hidden grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,1fr)_5rem] gap-3 border-b pb-2 text-xs font-semibold uppercase tracking-wider text-gray-500 md:grid">
         <span>Song</span>
         <span>Artist</span>
-        <span>Category / Genre</span>   {/* ← updated label */}
+        <span>Genre</span>
         <span className="text-right">Duration</span>
       </div>
 
       {/* Rows */}
-      {songs.map((song) => (
-        <div
-          key={song.recording_id}
-          className="grid grid-cols-4 py-1 border-b last:border-none text-sm items-center" // was py-2
-        >
-          <span className="truncate text-[#002D62]">{song.recording_title}</span>
+      {songs.map((song) => {
+        const genreText = [song.genre_name ?? song.genre, song.subgenre_name ?? song.subgenre]
+          .filter(Boolean)
+          .join(" / ");
+        const href = `/songs/${song.recording_slug ?? song.recording_id}`;
 
-          {/* Artist */}
-          <span className="truncate">{song.artist_name ?? ""}</span>
+        return (
+          <Link
+            key={song.recording_id}
+            href={href}
+            className="grid gap-1 border-b py-3 text-sm transition hover:bg-[#002D62]/5 last:border-none md:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,1fr)_5rem] md:items-center md:gap-3 md:py-2"
+          >
+            <span className="truncate font-medium text-[#002D62]">
+              {song.recording_title}
+            </span>
 
-          {/* Category / Genre */}
-          <span className="hidden md:inline truncate">{song.genre_name ?? ""}</span>
+            <span className="truncate text-gray-700">
+              {song.artist_name ?? "Unknown Artist"}
+            </span>
 
-          {/* Duration */}
-          <span className="text-right text-gray-600">
-            {song.duration ? formatDuration(song.duration) : "--:--"}
-          </span>
-        </div>
-      ))}
+            <span className="truncate text-gray-500">
+              {genreText || "Uncategorized"}
+            </span>
+
+            <span className="font-mono text-xs text-gray-600 md:text-right md:text-sm">
+              {song.duration ? formatDuration(song.duration) : "--:--"}
+            </span>
+          </Link>
+        );
+      })}
     </div>
   );
 }

@@ -188,7 +188,7 @@ function ArtistsContent() {
           )
         )
           .map(([province, count]) => ({ province, count }))
-          .sort((a, b) => b.count - a.count || a.province.localeCompare(b.province))
+          .sort((a, b) => a.province.localeCompare(b.province))
       );
     }
 

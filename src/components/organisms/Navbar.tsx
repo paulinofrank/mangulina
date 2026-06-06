@@ -2,14 +2,10 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { useEffect, useState, useRef } from 'react';
 
 export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
-  const [isFooterVisible, setIsFooterVisible] = useState(false);
-  const [footerHeight, setFooterHeight] = useState(0);
-  const navRef = useRef<HTMLElement>(null);
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -18,45 +14,11 @@ export default function Navbar() {
     { name: 'Christians', href: '/artists?tag=christian'},
   ];
 
-  useEffect(() => {
-    const footer = document.querySelector('footer');
-    if (!footer) return;
-
-    // Get footer height for positioning
-    const updateFooterHeight = () => {
-      setFooterHeight(footer.offsetHeight);
-    };
-    updateFooterHeight();
-    window.addEventListener('resize', updateFooterHeight);
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Trigger when footer top edge enters viewport
-        setIsFooterVisible(entry.isIntersecting);
-      },
-      {
-        threshold: 0,
-        rootMargin: '0px 0px 0px 0px',
-      }
-    );
-
-    observer.observe(footer);
-
-    return () => {
-      observer.disconnect();
-      window.removeEventListener('resize', updateFooterHeight);
-    };
-  }, []);
-
   return (
-    <nav 
-      ref={navRef}
-      style={isFooterVisible ? { bottom: `${footerHeight + 16}px` } : undefined}
-      className={`fixed left-1/2 -translate-x-1/2 z-100 w-fit transition-all duration-300 ${
-        isFooterVisible ? '' : 'bottom-8'
-      }`}
+    <nav
+      className="fixed bottom-4 left-1/2 z-100 w-[calc(100%-2rem)] max-w-fit -translate-x-1/2 pb-[env(safe-area-inset-bottom)] sm:bottom-6"
     >
-      <div className="flex items-center gap-4 px-5 py-2.5 bg-white/70 backdrop-blur-xl border border-black/5 rounded-full shadow-sm">
+      <div className="flex items-center justify-center gap-3 rounded-full border border-black/5 bg-white/80 px-4 py-2.5 shadow-sm backdrop-blur-xl sm:gap-4 sm:px-5">
         
         {/* Back Button */}
         <button 
@@ -83,7 +45,7 @@ export default function Navbar() {
         <div className="h-3 w-px bg-black/10" />
 
         {/* Navigation Links */}
-        <div className="flex gap-5">
+        <div className="flex min-w-0 gap-3 sm:gap-5">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (

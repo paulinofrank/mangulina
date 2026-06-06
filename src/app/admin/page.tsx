@@ -50,12 +50,12 @@ const adminTools: AdminTool[] = [
     Icon: Library,
   },
   {
-    title: "Releases / Albums Editor",
-    eyebrow: "Releases",
+    title: "Discography Manager",
+    eyebrow: "Discography",
     description:
-      "Maintain albums, singles, release dates, cover art, labels, tracklists, and release credits.",
-    href: "/admin/releases",
-    status: "planned",
+      "Add and update artist releases, release dates, labels, catalog details, and discography metadata.",
+    href: "/admin/discography",
+    status: "available",
     Icon: Disc3,
   },
   {
@@ -141,19 +141,30 @@ function ToolCard({ tool }: { tool: AdminTool }) {
 
 export default function AdminPortalPage() {
   return (
-    <main className="min-h-screen bg-gray-50 px-5 pb-10 pt-24 font-sans text-gray-900 sm:px-6 sm:pb-12">
+    <main className="min-h-screen bg-gray-50 px-5 pb-10 pt-8 font-sans text-gray-900 sm:px-6 sm:pb-12 sm:pt-10">
       <div className="mx-auto max-w-6xl">
         <header className="rounded-xl border border-black/5 bg-white p-6 shadow-sm sm:p-8">
-          <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#CE1126]">
-            Mangulina Admin
-          </p>
-          <h1 className="mt-3 text-3xl font-black uppercase tracking-tight text-[#002D62] sm:text-4xl">
-            Admin Portal
-          </h1>
-          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-gray-600 sm:text-base">
-            Editorial tools for maintaining Mangulina&apos;s curated Dominican
-            music database.
-          </p>
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#CE1126]">
+                Mangulina Admin
+              </p>
+              <h1 className="mt-3 text-3xl font-black uppercase tracking-tight text-[#002D62] sm:text-4xl">
+                Admin Portal
+              </h1>
+              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-gray-600 sm:text-base">
+                Editorial tools for maintaining Mangulina&apos;s curated Dominican
+                music database.
+              </p>
+            </div>
+
+            <Link
+              href="/"
+              className="inline-flex w-fit shrink-0 items-center rounded-lg border border-[#CE1126]/25 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-[#CE1126] shadow-sm transition hover:border-[#CE1126] hover:bg-[#CE1126] hover:text-white"
+            >
+              Exit to Homepage
+            </Link>
+          </div>
         </header>
 
         <AdminHomepageSpotlight />

@@ -229,7 +229,10 @@ export async function getSongById(id: string): Promise<SongRecord | null> {
 // ----------------------
 export type RawCredit = {
   role: string | null;
-  artist: { name: string | null; status?: string | null } | { name: string | null; status?: string | null }[] | null;
+  artist:
+    | { id: string; slug: string | null; name: string | null; status?: string | null }
+    | { id: string; slug: string | null; name: string | null; status?: string | null }[]
+    | null;
 };
 
 export async function getSongCredits(id: string): Promise<RawCredit[]> {
@@ -237,7 +240,7 @@ export async function getSongCredits(id: string): Promise<RawCredit[]> {
 
   const { data, error } = await supabase
     .from("recording_credits")
-    .select("role, artist:artists!inner(name, status)")
+    .select("role, artist:artists!inner(id, slug, name, status)")
     .eq("artist.status", "published")
     .eq("recording_id", cleanId);
 

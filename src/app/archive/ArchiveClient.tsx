@@ -3,21 +3,53 @@
 import { useState, useEffect } from "react";
 import DecadeSelector from "@/app/archive/DecadeSelector";
 import SongsByYearList from "@/app/archive/SongsByYearList";
-import { getSongsByYear } from "@/lib/getSongsByYear";
+
+type ArchiveSongsResponse = {
+  ok: boolean;
+  songs?: Parameters<typeof SongsByYearList>[0]["songs"];
+  error?: string;
+};
 
 export default function ArchiveClient() {
   const [year, setYear] = useState<number | null>(null);
-  const [songs, setSongs] = useState<any[]>([]);
+  const [songs, setSongs] = useState<Parameters<typeof SongsByYearList>[0]["songs"]>([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     if (!year) return;
 
+    let cancelled = false;
     setLoading(true);
+    setError("");
 
-    getSongsByYear(year)
-      .then((data) => setSongs(data))
-      .finally(() => setLoading(false));
+    fetch(`/api/archive/songs-by-year?year=${encodeURIComponent(String(year))}`)
+      .then(async (response) => {
+        const result = (await response.json()) as ArchiveSongsResponse;
+
+        if (!response.ok || !result.ok) {
+          throw new Error(result.error || response.statusText);
+        }
+
+        if (!cancelled) {
+          setSongs(result.songs ?? []);
+        }
+      })
+      .catch((fetchError: unknown) => {
+        if (!cancelled) {
+          setSongs([]);
+          setError(fetchError instanceof Error ? fetchError.message : "Error loading songs.");
+        }
+      })
+      .finally(() => {
+        if (!cancelled) {
+          setLoading(false);
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
   }, [year]);
 
   return (
@@ -38,11 +70,17 @@ export default function ArchiveClient() {
             </p>
           )}
 
+          {!loading && error && (
+            <p className="text-center text-gray-500">
+              {error}
+            </p>
+          )}
+
           {!loading && songs.length > 0 && (
             <SongsByYearList songs={songs} />
           )}
 
-          {!loading && songs.length === 0 && (
+          {!loading && !error && songs.length === 0 && (
             <p className="text-center text-gray-500">
               No recordings found for {year}.
             </p>

@@ -127,6 +127,7 @@ function normalizeCredits(credits: RawCredit[]) {
     return {
       role: credit.role ?? "Credit",
       name: artist?.name ?? "Unknown",
+      slug: artist?.slug ?? null,
     };
   });
 }

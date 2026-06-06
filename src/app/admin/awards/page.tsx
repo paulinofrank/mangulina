@@ -521,7 +521,7 @@ export default function AdminAwardsPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50 px-5 pb-10 pt-24 font-sans text-gray-900 sm:px-6 sm:pb-12">
+    <main className="min-h-screen bg-gray-50 px-5 pb-10 pt-8 font-sans text-gray-900 sm:px-6 sm:pb-12 sm:pt-10">
       <div className="mx-auto max-w-6xl">
         <header className="mb-8 rounded-xl border border-black/5 bg-white p-6 shadow-sm sm:p-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">

@@ -1,9 +1,11 @@
 // components/organisms/SongCreditsSection.tsx
 // Groups credits by role for a liner-notes style display.
+import Link from "next/link";
 
 export type CreditItem = {
   role: string;
   name: string;
+  slug?: string | null;
 };
 
 type SongCreditsSectionProps = {
@@ -12,17 +14,57 @@ type SongCreditsSectionProps = {
   releaseInfo?: string;
 };
 
-// Role display order — common roles shown first, others follow alphabetically
+const ROLE_LABELS: Record<string, string> = {
+  performer: "Performed by",
+  vocalist: "Vocals",
+  vocal: "Vocals",
+  vocals: "Vocals",
+  singer: "Vocals",
+  composer: "Composed by",
+  songwriter: "Written by",
+  writer: "Written by",
+  lyricist: "Lyrics by",
+  lyrics: "Lyrics by",
+  arranger: "Arranged by",
+  producer: "Produced by",
+  "co-producer": "Co-produced by",
+  "executive producer": "Executive producer",
+  conductor: "Conducted by",
+  "musical director": "Musical director",
+  "recording engineer": "Recording engineer",
+  engineer: "Engineer",
+  "mix engineer": "Mix engineer",
+  "mastering engineer": "Mastering engineer",
+  guitar: "Guitar",
+  piano: "Piano",
+  bass: "Bass",
+  "bass guitar": "Bass guitar",
+  drums: "Drums",
+  percussion: "Percussion",
+  trumpet: "Trumpet",
+  saxophone: "Saxophone",
+  violin: "Violin",
+  chorus: "Chorus",
+  "backing vocals": "Backing vocals",
+  "background vocals": "Background vocals",
+};
+
 const ROLE_ORDER = [
-  "Lead Vocal", "Lead Vocals", "Vocals", "Vocalist",
-  "Composer", "Songwriter", "Lyricist",
-  "Producer", "Co-Producer", "Executive Producer",
-  "Arranger",
-  "Recording Engineer", "Engineer", "Mix Engineer", "Mastering Engineer",
-  "Guitar", "Bass Guitar", "Bass", "Piano", "Keyboards", "Drums", "Percussion",
-  "Trumpet", "Saxophone", "Violin", "Horn",
-  "Chorus", "Backing Vocals", "Background Vocals",
-  "Conductor",
+  "Performed by",
+  "Vocals",
+  "Written by",
+  "Composed by",
+  "Lyrics by",
+  "Arranged by",
+  "Produced by",
+  "Co-produced by",
+  "Executive producer",
+  "Musical director",
+  "Conducted by",
+  "Recording engineer",
+  "Engineer",
+  "Mix engineer",
+  "Mastering engineer",
 ];
 
 function sortRoles(roles: string[]): string[] {
@@ -36,6 +78,19 @@ function sortRoles(roles: string[]): string[] {
   });
 }
 
+function titleCase(value: string) {
+  return value
+    .replace(/[_-]+/g, " ")
+    .trim()
+    .replace(/\s+/g, " ")
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function normalizeRole(role: string) {
+  const normalized = role.trim().toLowerCase();
+  return ROLE_LABELS[normalized] ?? titleCase(role);
+}
+
 export default function SongCreditsSection({
   credits,
   labelName,
@@ -45,19 +100,21 @@ export default function SongCreditsSection({
   const hasExtra = Boolean(labelName || releaseInfo);
   if (!hasCredits && !hasExtra) return null;
 
-  // Group by role
-  const grouped = new Map<string, string[]>();
+  const grouped = new Map<string, CreditItem[]>();
   for (const c of credits) {
-    const role = c.role || "Credit";
+    const role = normalizeRole(c.role || "Credit");
     if (!grouped.has(role)) grouped.set(role, []);
-    grouped.get(role)!.push(c.name);
+    const names = grouped.get(role)!;
+    if (!names.some((item) => item.name === c.name && item.slug === c.slug)) {
+      names.push(c);
+    }
   }
   const sortedRoles = sortRoles([...grouped.keys()]);
 
   return (
     <section className="h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-        Recording Credits
+        Song Credits
       </h2>
 
       {/* Label / Release info */}
@@ -80,21 +137,36 @@ export default function SongCreditsSection({
 
       {/* Credit rows */}
       {sortedRoles.length > 0 && (
-        <dl className="grid gap-y-3 sm:grid-cols-[160px_1fr]">
+        <dl className="grid gap-y-3 sm:grid-cols-[140px_1fr]">
           {sortedRoles.map((role) => {
             const names = grouped.get(role) ?? [];
             return (
-              <>
+              <div key={role} className="contents">
                 <dt
-                  key={`dt-${role}`}
                   className="text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-400 sm:py-0.5"
                 >
                   {role}
                 </dt>
-                <dd key={`dd-${role}`} className="text-sm text-gray-700 sm:py-0.5">
-                  {names.join(", ")}
+                <dd className="text-sm text-gray-700 sm:py-0.5">
+                  <span className="flex flex-wrap gap-x-1.5 gap-y-1">
+                    {names.map((credit, index) => (
+                      <span key={`${role}-${credit.name}-${credit.slug ?? index}`}>
+                        {credit.slug ? (
+                          <Link
+                            href={`/artists/${credit.slug}`}
+                            className="font-medium text-[#002D62] transition hover:text-[#CE1126]"
+                          >
+                            {credit.name}
+                          </Link>
+                        ) : (
+                          <span>{credit.name}</span>
+                        )}
+                        {index < names.length - 1 && <span>,</span>}
+                      </span>
+                    ))}
+                  </span>
                 </dd>
-              </>
+              </div>
             );
           })}
         </dl>

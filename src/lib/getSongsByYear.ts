@@ -34,6 +34,32 @@ export async function getSongsByYear(year: number) {
 
   const rows = data ?? [];
   const publishedArtistIds = await getPublishedArtistIds(rows.map((row: any) => row.artist_id));
+  const visibleRows = rows.filter((row: any) => !row.artist_id || publishedArtistIds.has(row.artist_id));
+  const recordingIds = visibleRows
+    .map((row: any) => row.recording_id)
+    .filter((id: unknown): id is string => typeof id === "string" && id.length > 0);
 
-  return rows.filter((row: any) => !row.artist_id || publishedArtistIds.has(row.artist_id));
+  if (!recordingIds.length) return visibleRows;
+
+  const { data: slugRows, error: slugError } = await supabase
+    .from("recordings")
+    .select("id, slug")
+    .in("id", recordingIds);
+
+  if (slugError) {
+    console.error(slugError);
+    return visibleRows;
+  }
+
+  const slugMap = new Map(
+    ((slugRows ?? []) as { id: string; slug: string | null }[]).map((row) => [
+      row.id,
+      row.slug,
+    ])
+  );
+
+  return visibleRows.map((row: any) => ({
+    ...row,
+    recording_slug: slugMap.get(row.recording_id) ?? null,
+  }));
 }

@@ -344,7 +344,7 @@ export default function AdminPlatformLinksPage() {
 
   // ── Render ────────────────────────────────────────────────────────────────
   return (
-    <main className="min-h-screen bg-gray-50 px-5 pb-12 pt-24 font-sans text-gray-900 sm:px-6">
+    <main className="min-h-screen bg-gray-50 px-5 pb-12 pt-8 font-sans text-gray-900 sm:px-6 sm:pt-10">
       <div className="mx-auto max-w-6xl">
 
         {/* ── Header ──────────────────────────────────────────────────────── */}
@@ -365,7 +365,7 @@ export default function AdminPlatformLinksPage() {
               href="/admin"
               className="inline-flex w-fit shrink-0 items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-[#002D62] shadow-sm transition hover:border-[#CE1126] hover:text-[#CE1126]"
             >
-              ← Admin Portal
+              Admin Portal
             </Link>
           </div>
         </header>

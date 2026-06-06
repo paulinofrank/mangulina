@@ -4,9 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 import GradientBackground from "@/components/atoms/GradientBackground";
-import TopBanner from "@/components/organisms/TopBanner";
-import Navbar from "@/components/organisms/Navbar";
-import Footer from "@/components/organisms/Footer";
+import SiteChrome from "@/components/layout/SiteChrome";
 
 const finlandica = Finlandica({
   subsets: ["latin"],
@@ -56,13 +54,10 @@ export default function RootLayout({
           }}
         />
 
-        <TopBanner />
-        <Navbar />
-
         {/* IMPORTANT: no padding wrapper here */}
         {children}
 
-        <Footer />
+        <SiteChrome />
 
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
