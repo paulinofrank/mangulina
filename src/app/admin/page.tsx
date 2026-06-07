@@ -7,10 +7,14 @@ import {
   ExternalLink,
   FileClock,
   Library,
+  LogOut,
   Mic2,
   Music,
+  UserPlus,
 } from "lucide-react";
 import AdminHomepageSpotlight from "@/components/organisms/AdminHomepageSpotlight";
+import { getCurrentUser } from "@/lib/auth";
+import { getAdminAccessProfile } from "@/lib/adminAccess";
 
 type AdminTool = {
   title: string;
@@ -18,6 +22,7 @@ type AdminTool = {
   description: string;
   href: string;
   status: "available" | "planned";
+  minimumRole?: "owner" | "admin" | "editor";
   Icon: ComponentType<{ className?: string; "aria-hidden"?: boolean }>;
 };
 
@@ -75,6 +80,16 @@ const adminTools: AdminTool[] = [
     href: "/admin/platform-links",
     status: "available",
     Icon: ExternalLink,
+  },
+  {
+    title: "Admin Invites",
+    eyebrow: "Access",
+    description:
+      "Invite editors, review pending invite links, and confirm active admin members.",
+    href: "/admin/invites",
+    status: "available",
+    minimumRole: "admin",
+    Icon: UserPlus,
   },
   {
     title: "Pending Reviews",
@@ -139,7 +154,14 @@ function ToolCard({ tool }: { tool: AdminTool }) {
   );
 }
 
-export default function AdminPortalPage() {
+export default async function AdminPortalPage() {
+  const user = await getCurrentUser();
+  const profile = await getAdminAccessProfile(user);
+  const canManageAccess = profile?.role === "owner" || profile?.role === "admin";
+  const visibleAdminTools = adminTools.filter(
+    (tool) => tool.minimumRole !== "admin" || canManageAccess,
+  );
+
   return (
     <main className="min-h-screen bg-gray-50 px-5 pb-10 pt-8 font-sans text-gray-900 sm:px-6 sm:pb-12 sm:pt-10">
       <div className="mx-auto max-w-6xl">
@@ -158,19 +180,42 @@ export default function AdminPortalPage() {
               </p>
             </div>
 
-            <Link
-              href="/"
-              className="inline-flex w-fit shrink-0 items-center rounded-lg border border-[#CE1126]/25 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-[#CE1126] shadow-sm transition hover:border-[#CE1126] hover:bg-[#CE1126] hover:text-white"
-            >
-              Exit to Homepage
-            </Link>
+            <div className="flex shrink-0 flex-col items-start gap-3 sm:items-end">
+              <p className="max-w-64 truncate text-sm text-gray-500">
+                {user?.email}
+                {profile?.role && (
+                  <span className="ml-2 rounded-full bg-gray-100 px-2 py-1 text-[10px] uppercase tracking-[0.14em] text-gray-500">
+                    {profile.role}
+                  </span>
+                )}
+              </p>
+
+              <div className="flex flex-wrap items-center gap-2">
+                <Link
+                  href="/"
+                  className="inline-flex w-fit items-center rounded-lg border border-[#CE1126]/25 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-[#CE1126] shadow-sm transition hover:border-[#CE1126] hover:bg-[#CE1126] hover:text-white"
+                >
+                  Exit to Homepage
+                </Link>
+
+                <form action="/auth/sign-out" method="post">
+                  <button
+                    type="submit"
+                    className="inline-flex w-fit items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-gray-600 shadow-sm transition hover:border-[#002D62] hover:text-[#002D62]"
+                  >
+                    <LogOut className="h-4 w-4" aria-hidden={true} />
+                    Sign Out
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </header>
 
         <AdminHomepageSpotlight />
 
         <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {adminTools.map((tool) => (
+          {visibleAdminTools.map((tool) => (
             <ToolCard key={tool.href} tool={tool} />
           ))}
         </section>

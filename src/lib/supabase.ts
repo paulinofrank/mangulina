@@ -1,5 +1,7 @@
 // src/lib/supabase.ts
+import { createBrowserClient } from "@supabase/auth-helpers-nextjs";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import { getSupabasePublicConfig } from "@/lib/supabaseConfig";
 
 let cachedClient: SupabaseClient | null = null;
 
@@ -15,6 +17,12 @@ function resolveSupabaseConfig() {
 
 function createSupabaseClient() {
   if (cachedClient) return cachedClient;
+
+  if (typeof window !== "undefined") {
+    const { supabaseUrl, supabaseAnonKey } = getSupabasePublicConfig();
+    cachedClient = createBrowserClient(supabaseUrl, supabaseAnonKey);
+    return cachedClient;
+  }
 
   const { supabaseUrl, keyToUse } = resolveSupabaseConfig();
 
