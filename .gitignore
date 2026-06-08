@@ -46,3 +46,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+supabase_json_*/
+recordings*.json
+tracks*.json
+releases*.json
