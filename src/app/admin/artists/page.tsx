@@ -6,6 +6,13 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { FormEvent } from "react";
 import { getSupabaseClient } from "@/lib/supabase";
+import {
+  artistRelationshipTypeLabels,
+  formatArtistRelationshipType,
+  formatRelationshipYears,
+  type ArtistRelationship,
+  type ArtistRelationshipType,
+} from "@/lib/artistRelationships";
 import type { Artist } from "@/types/music";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 import BioText from "@/components/molecules/BioText";
@@ -129,6 +136,57 @@ type ArtistMediaListResponse = {
   error?: string;
 };
 
+type ArtistRelationshipForm = {
+  target_artist_id: string;
+  relationship_type: ArtistRelationshipType;
+  start_year: string;
+  end_year: string;
+  notes: string;
+};
+
+type ArtistRelationshipListResponse = {
+  ok: boolean;
+  outgoing?: ArtistRelationship[];
+  incoming?: ArtistRelationship[];
+  error?: string;
+};
+
+type GenreCatalogRow = {
+  id: string | number;
+  name: string;
+  slug?: string | null;
+  display_order?: number | null;
+};
+
+type SubgenreCatalogRow = {
+  id: string | number;
+  genre_id: string | number;
+  name: string;
+};
+
+type AdminGenresResponse = {
+  ok: boolean;
+  genres?: GenreCatalogRow[];
+  error?: string;
+};
+
+type AdminSubgenresResponse = {
+  ok: boolean;
+  subgenres?: SubgenreCatalogRow[];
+  error?: string;
+};
+
+type MusicalGenreOption = {
+  value: string;
+  label: string;
+  searchValues: string[];
+};
+
+type PrimaryGenreOption = {
+  value: string;
+  label: string;
+};
+
 const emptyMediaForm: ArtistMediaForm = {
   media_type: "interview",
   title: "",
@@ -140,6 +198,14 @@ const emptyMediaForm: ArtistMediaForm = {
   is_official: false,
   is_featured: false,
   display_order: "0",
+  notes: "",
+};
+
+const emptyRelationshipForm: ArtistRelationshipForm = {
+  target_artist_id: "",
+  relationship_type: "member_of",
+  start_year: "",
+  end_year: "",
   notes: "",
 };
 
@@ -171,18 +237,19 @@ const platformOptions = [
 
 const artistTypeOptions = [
   { value: "", label: "-- Select Artist Type --" },
-  { value: "solo_artist", label: "Solo Artist" },
-  { value: "group", label: "Group" },
+  { value: "person", label: "Person" },
   { value: "duo", label: "Duo" },
+  { value: "group", label: "Group" },
   { value: "orchestra", label: "Orchestra" },
-  { value: "band", label: "Band" },
   { value: "choir", label: "Choir" },
-  { value: "collective", label: "Collective" },
-  { value: "dj", label: "DJ" },
-  { value: "producer", label: "Producer" },
-  { value: "composer", label: "Composer" },
   { value: "other", label: "Other" },
 ];
+
+const relationshipTypeOptions = [
+  { value: "member_of", label: "Member" },
+  { value: "founder_of", label: "Founder" },
+  { value: "leader_of", label: "Leader" },
+] satisfies { value: ArtistRelationshipType; label: string }[];
 
 const primaryRoleOptions = [
   { value: "", label: "-- Select Primary Role --" },
@@ -257,32 +324,6 @@ const emptyForm: ArtistForm = {
   bio: "",
   ended: false,
 };
-
-const primaryGenreOptions = [
-  { value: "", label: "-- Select Primary Genre --" },
-  { value: "merengue", label: "Merengue" },
-  { value: "bachata", label: "Bachata" },
-  { value: "salsa", label: "Salsa" },
-  { value: "urban", label: "Urban / Urbano" },
-  { value: "dembow", label: "Dembow" },
-  { value: "reggaeton", label: "Reggaeton" },
-  { value: "rap", label: "Rap" },
-  { value: "hip-hop", label: "Hip-Hop" },
-  { value: "trap", label: "Trap" },
-  { value: "ballads", label: "Ballads / Balada" },
-  { value: "bolero", label: "Bolero" },
-  { value: "pop", label: "Pop" },
-  { value: "rock", label: "Rock" },
-  { value: "instrumental", label: "Instrumental" },
-  { value: "classical", label: "Classical / Clásica" },
-  { value: "jazz", label: "Jazz" },
-  { value: "folklore", label: "Folklore" },
-  { value: "fusion", label: "Fusion" },
-  { value: "electronic", label: "Electronic" },
-  { value: "other", label: "Other Genre" },
-];
-
-const musicalGenreOptions = primaryGenreOptions.filter((option) => option.value);
 
 const provinceOptions = [
   "X - Born Outside",
@@ -402,6 +443,45 @@ function normalizeStatus(value: string | null | undefined): ArtistStatus {
   return "published";
 }
 
+function buildPrimaryGenreOptions(genres: GenreCatalogRow[]): PrimaryGenreOption[] {
+  return [
+    { value: "", label: "-- Select Primary Genre --" },
+    ...genres
+      .map((genre) => ({
+        value: genre.slug || genre.name,
+        label: genre.name,
+      }))
+      .filter((option) => option.value && option.label)
+      .sort((a, b) => a.label.localeCompare(b.label)),
+  ];
+}
+
+function buildMusicalGenreOptions(subgenres: SubgenreCatalogRow[]): MusicalGenreOption[] {
+  const options = new Map<string, MusicalGenreOption>();
+
+  for (const subgenre of subgenres) {
+    if (!subgenre.name) continue;
+
+    const value = subgenre.name;
+    const key = value.toLowerCase();
+
+    options.set(key, {
+      value,
+      label: subgenre.name,
+      searchValues: [value, subgenre.name].map((item) => item.toLowerCase()),
+    });
+  }
+
+  return Array.from(options.values()).sort((a, b) => a.label.localeCompare(b.label));
+}
+
+function isMusicalGenreSelected(selectedValues: string[], option: MusicalGenreOption) {
+  return selectedValues.some((item) => {
+    const normalized = item.toLowerCase();
+    return option.searchValues.includes(normalized);
+  });
+}
+
 function detectMediaPlatform(url: string) {
   const normalized = url.toLowerCase();
 
@@ -459,9 +539,19 @@ export default function AdminDashboard() {
   const [search, setSearch] = useState("");
   const [artistPickerOpen, setArtistPickerOpen] = useState(false);
   const [form, setForm] = useState<ArtistForm>(emptyForm);
+  const [primaryGenreOptions, setPrimaryGenreOptions] = useState<PrimaryGenreOption[]>([
+    { value: "", label: "-- Select Primary Genre --" },
+  ]);
+  const [musicalGenreOptions, setMusicalGenreOptions] = useState<MusicalGenreOption[]>([]);
   const [artistMedia, setArtistMedia] = useState<AdminArtistMedia[]>([]);
   const [mediaForm, setMediaForm] = useState<ArtistMediaForm>(emptyMediaForm);
   const [editingMediaId, setEditingMediaId] = useState("");
+  const [outgoingRelationships, setOutgoingRelationships] = useState<ArtistRelationship[]>([]);
+  const [incomingRelationships, setIncomingRelationships] = useState<ArtistRelationship[]>([]);
+  const [relationshipForm, setRelationshipForm] = useState<ArtistRelationshipForm>(emptyRelationshipForm);
+  const [editingRelationshipId, setEditingRelationshipId] = useState("");
+  const [relationshipArtistSearch, setRelationshipArtistSearch] = useState("");
+  const [relationshipArtistPickerOpen, setRelationshipArtistPickerOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
   const [imageVersion, setImageVersion] = useState(0);
@@ -495,6 +585,32 @@ export default function AdminDashboard() {
     );
   }, [artists, search]);
 
+  const selectedRelationshipArtist = useMemo(
+    () => artists.find((artist) => artist.id === relationshipForm.target_artist_id) || null,
+    [artists, relationshipForm.target_artist_id]
+  );
+
+  const filteredRelationshipArtists = useMemo(() => {
+    const query = relationshipArtistSearch.trim().toLowerCase();
+
+    return artists
+      .filter((artist) => artist.id !== selectedArtistId)
+      .filter((artist) => {
+        if (!query) return true;
+
+        return [
+          artist.name,
+          artist.stage_name,
+          artist.sort_name,
+          artist.slug,
+          artist.type,
+        ]
+          .filter(Boolean)
+          .some((value) => String(value).toLowerCase().includes(query));
+      })
+      .slice(0, 40);
+  }, [artists, relationshipArtistSearch, selectedArtistId]);
+
   const fetchData = useCallback(async () => {
     setLoading(true);
 
@@ -515,6 +631,28 @@ export default function AdminDashboard() {
     setLoading(false);
   }, [supabase]);
 
+  const fetchGenreCatalog = useCallback(async () => {
+    const [genresResponse, subgenresResponse] = await Promise.all([
+      fetch("/api/admin/genres"),
+      fetch("/api/admin/subgenres?all=1"),
+    ]);
+    const genresResult = (await genresResponse.json()) as AdminGenresResponse;
+    const subgenresResult = (await subgenresResponse.json()) as AdminSubgenresResponse;
+
+    if (!genresResponse.ok || !genresResult.ok) {
+      setStatus(`Error loading genres: ${genresResult.error || genresResponse.statusText}`);
+      return;
+    }
+
+    if (!subgenresResponse.ok || !subgenresResult.ok) {
+      setStatus(`Error loading subgenres: ${subgenresResult.error || subgenresResponse.statusText}`);
+      return;
+    }
+
+    setPrimaryGenreOptions(buildPrimaryGenreOptions(genresResult.genres ?? []));
+    setMusicalGenreOptions(buildMusicalGenreOptions(subgenresResult.subgenres ?? []));
+  }, []);
+
   const fetchArtistMedia = useCallback(
     async (artistId: string) => {
       const response = await fetch(
@@ -533,6 +671,26 @@ export default function AdminDashboard() {
     []
   );
 
+  const fetchArtistRelationships = useCallback(
+    async (artistId: string) => {
+      const response = await fetch(
+        `/api/admin/artist-relationships?artistId=${encodeURIComponent(artistId)}`
+      );
+      const result = (await response.json()) as ArtistRelationshipListResponse;
+
+      if (!response.ok || !result.ok) {
+        setStatus(`Error loading artist relationships: ${result.error || response.statusText}`);
+        setOutgoingRelationships([]);
+        setIncomingRelationships([]);
+        return;
+      }
+
+      setOutgoingRelationships(result.outgoing ?? []);
+      setIncomingRelationships(result.incoming ?? []);
+    },
+    []
+  );
+
   useEffect(() => {
     setMounted(true);
     setImageVersion(Date.now());
@@ -542,7 +700,8 @@ export default function AdminDashboard() {
     if (!mounted) return;
 
     void fetchData();
-  }, [fetchData, mounted]);
+    void fetchGenreCatalog();
+  }, [fetchData, fetchGenreCatalog, mounted]);
 
   function updateForm<K extends keyof ArtistForm>(key: K, value: ArtistForm[K]) {
     setForm((current) => ({
@@ -601,9 +760,26 @@ export default function AdminDashboard() {
     });
   }
 
+  function updateRelationshipForm<K extends keyof ArtistRelationshipForm>(
+    key: K,
+    value: ArtistRelationshipForm[K]
+  ) {
+    setRelationshipForm((current) => ({
+      ...current,
+      [key]: value,
+    }));
+  }
+
   function resetMediaForm() {
     setMediaForm({ ...emptyMediaForm });
     setEditingMediaId("");
+  }
+
+  function resetRelationshipForm() {
+    setRelationshipForm({ ...emptyRelationshipForm });
+    setEditingRelationshipId("");
+    setRelationshipArtistSearch("");
+    setRelationshipArtistPickerOpen(false);
   }
 
   function resetForm() {
@@ -612,7 +788,10 @@ export default function AdminDashboard() {
     setArtistPickerOpen(false);
     setForm({ ...emptyForm });
     setArtistMedia([]);
+    setOutgoingRelationships([]);
+    setIncomingRelationships([]);
     resetMediaForm();
+    resetRelationshipForm();
     setStatus("");
   }
 
@@ -677,7 +856,9 @@ export default function AdminDashboard() {
     setArtistPickerOpen(false);
     setImageVersion(Date.now());
     resetMediaForm();
+    resetRelationshipForm();
     void fetchArtistMedia(artist.id);
+    void fetchArtistRelationships(artist.id);
 
     setForm({
       name: artist.name ?? "",
@@ -868,6 +1049,109 @@ export default function AdminDashboard() {
       setStatus("Artist media deleted.");
       if (editingMediaId === item.id) resetMediaForm();
       await fetchArtistMedia(selectedArtistId);
+    }
+
+    setLoading(false);
+  }
+
+  function handleSelectRelationshipArtist(artist: AdminArtist) {
+    updateRelationshipForm("target_artist_id", artist.id);
+    setRelationshipArtistSearch(artist.name ?? "");
+    setRelationshipArtistPickerOpen(false);
+  }
+
+  function handleEditRelationship(item: ArtistRelationship) {
+    setEditingRelationshipId(item.id);
+    setRelationshipForm({
+      target_artist_id: item.target_artist_id,
+      relationship_type: item.relationship_type,
+      start_year: item.start_year ? String(item.start_year) : "",
+      end_year: item.end_year ? String(item.end_year) : "",
+      notes: item.notes ?? "",
+    });
+    setRelationshipArtistSearch(item.target_artist?.name ?? "");
+    setRelationshipArtistPickerOpen(false);
+  }
+
+  async function handleSaveRelationship() {
+    if (!selectedArtistId) {
+      setStatus("Select and save an artist before adding groups or projects.");
+      return;
+    }
+
+    if (!relationshipForm.target_artist_id) {
+      setStatus("Choose a related artist, group, duo, or orchestra.");
+      return;
+    }
+
+    if (relationshipForm.target_artist_id === selectedArtistId) {
+      setStatus("An artist cannot be related to itself.");
+      return;
+    }
+
+    setLoading(true);
+    setStatus("");
+
+    const payload = {
+      source_artist_id: selectedArtistId,
+      target_artist_id: relationshipForm.target_artist_id,
+      relationship_type: relationshipForm.relationship_type,
+      start_year: relationshipForm.start_year ? Number(relationshipForm.start_year) : null,
+      end_year: relationshipForm.end_year ? Number(relationshipForm.end_year) : null,
+      notes: nullable(relationshipForm.notes),
+    };
+
+    const response = await fetch("/api/admin/artist-relationships", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        relationshipId: editingRelationshipId || null,
+        relationshipData: payload,
+      }),
+    });
+    const result = (await response.json()) as AdminWriteResponse;
+
+    if (!response.ok || !result.ok) {
+      setStatus(`Error saving artist relationship: ${result.error || response.statusText}`);
+    } else {
+      setStatus(editingRelationshipId ? "Artist relationship updated." : "Artist relationship added.");
+      resetRelationshipForm();
+      await fetchArtistRelationships(selectedArtistId);
+    }
+
+    setLoading(false);
+  }
+
+  async function handleDeleteRelationship(item: ArtistRelationship) {
+    if (!selectedArtistId) return;
+
+    const relatedName = item.target_artist?.name ?? "this relationship";
+    const confirmed = window.confirm(`Delete this artist relationship?\n\n${relatedName}`);
+    if (!confirmed) return;
+
+    setLoading(true);
+    setStatus("");
+
+    const response = await fetch("/api/admin/artist-relationships", {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        relationshipId: item.id,
+        artistId: selectedArtistId,
+      }),
+    });
+    const result = (await response.json()) as AdminWriteResponse;
+
+    if (!response.ok || !result.ok) {
+      setStatus(`Error deleting artist relationship: ${result.error || response.statusText}`);
+    } else {
+      setStatus("Artist relationship deleted.");
+      if (editingRelationshipId === item.id) resetRelationshipForm();
+      await fetchArtistRelationships(selectedArtistId);
     }
 
     setLoading(false);
@@ -1535,44 +1819,46 @@ export default function AdminDashboard() {
 
               <div>
                 <Field label="Gender">
-                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-lg border border-gray-200 bg-white px-3 py-2">
-                    {genderOptions.map((gender) => {
-                      const selected = form.gender === gender;
+                  <div className="rounded-lg border border-gray-200 bg-white px-3 py-3">
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                      {genderOptions.map((gender) => {
+                        const selected = form.gender === gender;
 
-                      return (
-                        <label
-                          key={gender}
-                          className="flex items-center gap-2 text-sm capitalize text-gray-700"
-                        >
-                          <input
-                            type="checkbox"
-                            checked={selected}
-                            onChange={() =>
-                              updateForm("gender", selected ? "" : gender)
-                            }
-                            className="h-4 w-4"
-                          />
-                          {gender}
-                        </label>
-                      );
-                    })}
+                        return (
+                          <label
+                            key={gender}
+                            className="flex items-center gap-2 text-sm capitalize text-gray-700"
+                          >
+                            <input
+                              type="checkbox"
+                              checked={selected}
+                              onChange={() =>
+                                updateForm("gender", selected ? "" : gender)
+                              }
+                              className="h-4 w-4"
+                            />
+                            {gender}
+                          </label>
+                        );
+                      })}
+                    </div>
 
-                    <span
-                      aria-hidden="true"
-                      className="hidden h-5 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent sm:block"
-                    />
-
-                    <label className="flex items-center gap-2 text-sm text-gray-700 sm:ml-auto">
-                      <input
-                        type="checkbox"
-                        checked={Boolean(form.ended)}
-                        onChange={(event) =>
-                          updateForm("ended", event.target.checked)
-                        }
-                        className="h-4 w-4"
-                      />
-                      Ended / Inactive
-                    </label>
+                    <div className="mt-3 border-t border-gray-100 pt-3">
+                      <label className="flex items-center gap-2 text-sm text-gray-700">
+                        <input
+                          type="checkbox"
+                          checked={Boolean(form.ended)}
+                          onChange={(event) =>
+                            updateForm("ended", event.target.checked)
+                          }
+                          className="h-4 w-4"
+                        />
+                        Ended / No longer active
+                      </label>
+                      <p className="mt-1 max-w-2xl pl-6 text-xs leading-relaxed text-gray-400">
+                        Use this for duos, groups, orchestras, choirs, or projects that are no longer active. For people, use death date/year instead.
+                      </p>
+                    </div>
                   </div>
                 </Field>
               </div>
@@ -1690,31 +1976,38 @@ export default function AdminDashboard() {
               <div className="grid gap-4 md:grid-cols-2">
                 <Field label="Musical Genres">
                   <div className="grid gap-2 rounded-lg border border-gray-200 bg-white p-3 sm:grid-cols-2">
-                    {musicalGenreOptions.map((option) => {
-                      const selected = parseCsv(form.genres).some(
-                        (item) => item.toLowerCase() === option.value.toLowerCase()
-                      );
+                    {musicalGenreOptions.length ? (
+                      musicalGenreOptions.map((option) => {
+                        const selected = isMusicalGenreSelected(
+                          parseCsv(form.genres),
+                          option
+                        );
 
-                      return (
-                        <label
-                          key={option.value}
-                          className="flex items-center gap-2 text-sm text-gray-700"
-                        >
-                          <input
-                            type="checkbox"
-                            checked={selected}
-                            onChange={() =>
-                              updateForm(
-                                "genres",
-                                toggleCsvValue(form.genres, option.value)
-                              )
-                            }
-                            className="h-4 w-4"
-                          />
-                          {option.label}
-                        </label>
-                      );
-                    })}
+                        return (
+                          <label
+                            key={option.value}
+                            className="flex items-center gap-2 text-sm text-gray-700"
+                          >
+                            <input
+                              type="checkbox"
+                              checked={selected}
+                              onChange={() =>
+                                updateForm(
+                                  "genres",
+                                  toggleCsvValue(form.genres, option.value)
+                                )
+                              }
+                              className="h-4 w-4"
+                            />
+                            {option.label}
+                          </label>
+                        );
+                      })
+                    ) : (
+                      <p className="text-sm text-gray-400">
+                        Loading subgenres...
+                      </p>
+                    )}
                   </div>
                 </Field>
 
@@ -1851,21 +2144,21 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
-                <Field label="Facebook">
-                  <input
-                    value={form.facebook ?? ""}
-                    onChange={(event) =>
-                      updateForm("facebook", event.target.value)
-                    }
-                    className={inputClass}
-                  />
-                </Field>
-
                 <Field label="YouTube">
                   <input
                     value={form.youtube ?? ""}
                     onChange={(event) =>
                       updateForm("youtube", event.target.value)
+                    }
+                    className={inputClass}
+                  />
+                </Field>
+
+                <Field label="Facebook">
+                  <input
+                    value={form.facebook ?? ""}
+                    onChange={(event) =>
+                      updateForm("facebook", event.target.value)
                     }
                     className={inputClass}
                   />
@@ -1990,6 +2283,262 @@ export default function AdminDashboard() {
               </div>
             )}
           </section>
+
+          <details className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm" open>
+            <summary className="cursor-pointer text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
+              Groups & Projects
+              {selectedArtistId ? ` (${outgoingRelationships.length})` : ""}
+            </summary>
+
+            <div className="mt-5 space-y-5">
+              {!selectedArtistId ? (
+                <p className="rounded-lg border border-dashed border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-500">
+                  Select and save an artist before adding groups or projects.
+                </p>
+              ) : (
+                <>
+                  <div className="overflow-x-auto rounded-lg border border-gray-100">
+                    <table className="min-w-full divide-y divide-gray-100 text-sm">
+                      <thead className="bg-gray-50 text-left text-[10px] uppercase tracking-[0.16em] text-gray-400">
+                        <tr>
+                          <th className="px-3 py-2 font-normal">Artist</th>
+                          <th className="px-3 py-2 font-normal">Relationship</th>
+                          <th className="px-3 py-2 font-normal">From</th>
+                          <th className="px-3 py-2 font-normal">To</th>
+                          <th className="px-3 py-2 font-normal">Notes</th>
+                          <th className="px-3 py-2 text-right font-normal">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-gray-100">
+                        {outgoingRelationships.length ? (
+                          outgoingRelationships.map((item) => (
+                            <tr key={item.id} className="align-top">
+                              <td className="px-3 py-3 text-(--color-flagblue)">
+                                {item.target_artist?.name ?? "Unknown artist"}
+                              </td>
+                              <td className="px-3 py-3 text-gray-700">
+                                {formatArtistRelationshipType(item.relationship_type)}
+                              </td>
+                              <td className="px-3 py-3 text-gray-500">
+                                {item.start_year ?? "-"}
+                              </td>
+                              <td className="px-3 py-3 text-gray-500">
+                                {item.end_year ?? "-"}
+                              </td>
+                              <td className="max-w-52 px-3 py-3 text-gray-500">
+                                <span className="line-clamp-2">{item.notes || "-"}</span>
+                              </td>
+                              <td className="px-3 py-3">
+                                <div className="flex justify-end gap-2">
+                                  <button
+                                    type="button"
+                                    onClick={() => handleEditRelationship(item)}
+                                    className="rounded-md border border-gray-200 bg-white px-3 py-1.5 text-xs text-(--color-flagblue) transition hover:border-(--color-flagblue)"
+                                  >
+                                    Edit
+                                  </button>
+                                  <button
+                                    type="button"
+                                    onClick={() => void handleDeleteRelationship(item)}
+                                    className="rounded-md border border-red-100 bg-white px-3 py-1.5 text-xs text-(--color-wikicrimson) transition hover:border-(--color-wikicrimson)"
+                                  >
+                                    Delete
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                          ))
+                        ) : (
+                          <tr>
+                            <td colSpan={6} className="px-3 py-4 text-sm text-gray-400">
+                              No groups or projects saved for this artist yet.
+                            </td>
+                          </tr>
+                        )}
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div className="rounded-lg border border-gray-100 bg-gray-50 p-4">
+                    <div className="mb-4 flex items-center justify-between gap-3">
+                      <p className="text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
+                        {editingRelationshipId ? "Edit Relationship" : "Add Relationship"}
+                      </p>
+
+                      {editingRelationshipId && (
+                        <button
+                          type="button"
+                          onClick={resetRelationshipForm}
+                          className="text-xs font-semibold text-(--color-wikicrimson)"
+                        >
+                          Cancel
+                        </button>
+                      )}
+                    </div>
+
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <Field label="Related Artist">
+                        <div className="relative">
+                          <input
+                            value={
+                              relationshipArtistSearch ||
+                              selectedRelationshipArtist?.name ||
+                              ""
+                            }
+                            onChange={(event) => {
+                              setRelationshipArtistSearch(event.target.value);
+                              updateRelationshipForm("target_artist_id", "");
+                              setRelationshipArtistPickerOpen(true);
+                            }}
+                            onFocus={() => setRelationshipArtistPickerOpen(true)}
+                            onBlur={() => {
+                              window.setTimeout(
+                                () => setRelationshipArtistPickerOpen(false),
+                                120
+                              );
+                            }}
+                            placeholder="Search group, duo, orchestra..."
+                            className={inputClass}
+                            role="combobox"
+                            aria-expanded={relationshipArtistPickerOpen}
+                            aria-controls="relationship-artist-picker-results"
+                          />
+
+                          {relationshipArtistPickerOpen && (
+                            <div
+                              id="relationship-artist-picker-results"
+                              className="absolute left-0 right-0 top-[calc(100%+0.35rem)] z-30 max-h-64 overflow-y-auto rounded-lg border border-gray-200 bg-white shadow-lg"
+                            >
+                              {filteredRelationshipArtists.length ? (
+                                filteredRelationshipArtists.map((artist) => (
+                                  <button
+                                    key={artist.id}
+                                    type="button"
+                                    onMouseDown={(event) => event.preventDefault()}
+                                    onClick={() => handleSelectRelationshipArtist(artist)}
+                                    className="block w-full border-b border-gray-100 px-3 py-2 text-left text-sm text-gray-700 transition last:border-none hover:bg-(--color-flagblue)/5"
+                                  >
+                                    <span className="block truncate font-medium">
+                                      {artist.name}
+                                    </span>
+                                    <span className="mt-0.5 block text-[10px] uppercase tracking-[0.14em] text-gray-400">
+                                      {artist.type || "artist"}
+                                    </span>
+                                  </button>
+                                ))
+                              ) : (
+                                <p className="px-3 py-2 text-sm text-gray-400">
+                                  No artists found.
+                                </p>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      </Field>
+
+                      <Field label="Relationship Type">
+                        <select
+                          value={relationshipForm.relationship_type}
+                          onChange={(event) =>
+                            updateRelationshipForm(
+                              "relationship_type",
+                              event.target.value as ArtistRelationshipType
+                            )
+                          }
+                          className={inputClass}
+                        >
+                          {relationshipTypeOptions.map((option) => (
+                            <option key={option.value} value={option.value}>
+                              {option.label}
+                            </option>
+                          ))}
+                        </select>
+                      </Field>
+
+                      <Field label="Start Year">
+                        <input
+                          type="number"
+                          value={relationshipForm.start_year}
+                          onChange={(event) =>
+                            updateRelationshipForm("start_year", event.target.value)
+                          }
+                          className={inputClass}
+                        />
+                      </Field>
+
+                      <Field label="End Year">
+                        <input
+                          type="number"
+                          value={relationshipForm.end_year}
+                          onChange={(event) =>
+                            updateRelationshipForm("end_year", event.target.value)
+                          }
+                          className={inputClass}
+                        />
+                      </Field>
+                    </div>
+
+                    <div className="mt-4">
+                      <Field label="Notes">
+                        <textarea
+                          value={relationshipForm.notes}
+                          onChange={(event) =>
+                            updateRelationshipForm("notes", event.target.value)
+                          }
+                          className={`${inputClass} min-h-20 resize-y`}
+                          placeholder="Optional context for this group or project."
+                        />
+                      </Field>
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={() => void handleSaveRelationship()}
+                      disabled={Boolean(loading)}
+                      className="mt-4 w-full rounded-lg bg-(--color-flagblue) px-5 py-3 text-xs uppercase tracking-[0.18em] text-white transition disabled:cursor-not-allowed disabled:opacity-40"
+                    >
+                      {editingRelationshipId ? "Update Relationship" : "Add Relationship"}
+                    </button>
+                  </div>
+
+                  {incomingRelationships.length > 0 && (
+                    <div className="rounded-lg border border-gray-100 bg-white p-4">
+                      <h3 className="text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
+                        Members
+                      </h3>
+                      <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                        {incomingRelationships.map((item) => {
+                          const years = formatRelationshipYears(
+                            item.start_year,
+                            item.end_year
+                          );
+
+                          return (
+                            <div
+                              key={item.id}
+                              className="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2"
+                            >
+                              <p className="truncate text-sm font-medium text-(--color-flagblue)">
+                                {item.source_artist?.name ?? "Unknown artist"}
+                              </p>
+                              <p className="mt-0.5 text-xs text-gray-500">
+                                {[
+                                  formatArtistRelationshipType(item.relationship_type),
+                                  years,
+                                ]
+                                  .filter(Boolean)
+                                  .join(", ")}
+                              </p>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
+          </details>
 
         </main>
       </div>

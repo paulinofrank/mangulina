@@ -13,6 +13,7 @@ import {
   getArtistDiscography,
   getArtistMedia,
 } from "@/lib/artistApi";
+import { getArtistRelationships } from "@/lib/artistRelationships";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 
 type PageProps = {
@@ -27,10 +28,12 @@ export default async function ArtistProfile({ params }: PageProps) {
 
   const imageUrl = getArtistImageUrl(artist.id);
   const hasBio = Boolean(artist.bio?.trim());
-  const [discography, interviews] = await Promise.all([
+  const [discography, interviews, relationships] = await Promise.all([
     getArtistDiscography(artist.id),
     getArtistMedia(artist.id),
+    getArtistRelationships(artist.id),
   ]);
+  const isPerson = artist.type === "person";
 
   return (
     <MainWrapper>
@@ -60,7 +63,11 @@ export default async function ArtistProfile({ params }: PageProps) {
               )}
             </div>
 
-            <ArtistFactsCard artist={artist} />
+            <ArtistFactsCard
+              artist={artist}
+              groupsAndProjects={isPerson ? relationships.outgoing : []}
+              members={isPerson ? [] : relationships.incoming}
+            />
 
             <ArtistAwardsSection awards={artist.awards || []} />
           </aside>

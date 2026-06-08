@@ -4,17 +4,23 @@ import { getSupabaseClient } from "@/lib/supabase";
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const genreId = searchParams.get("genreId");
+  const includeAll = searchParams.get("all") === "1";
 
-  if (!genreId) {
+  if (!genreId && !includeAll) {
     return NextResponse.json({ ok: true, subgenres: [] });
   }
 
   const supabase = getSupabaseClient();
-  const { data, error } = await supabase
+  let query = supabase
     .from("subgenres")
     .select("id,genre_id,name,description")
-    .eq("genre_id", genreId)
     .order("name", { ascending: true });
+
+  if (genreId) {
+    query = query.eq("genre_id", genreId);
+  }
+
+  const { data, error } = await query;
 
   if (error) {
     return NextResponse.json(

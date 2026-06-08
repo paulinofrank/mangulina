@@ -30,7 +30,16 @@ export type ArtistProfileData = {
   id: string;
   name: string;
   slug: string;
-  type: "person" | "duo" | "group" | null;
+  type:
+    | "person"
+    | "duo"
+    | "group"
+    | "orchestra"
+    | "choir"
+    | "collective"
+    | "other"
+    | null;
+  ended: boolean | null;
   bio: string | null;
   views: number | null;
 
@@ -68,7 +77,7 @@ export async function getArtistProfile(slug: string) {
 
   const { data: publishedArtist, error: publishedArtistError } = await supabase
     .from("artists")
-    .select("id, primary_genre, views")
+    .select("id, type, ended, primary_genre, views, date_of_death, death_year")
     .eq("slug", slug)
     .eq("status", "published")
     .maybeSingle();
@@ -91,6 +100,22 @@ export async function getArtistProfile(slug: string) {
 
   return {
     ...(data as ArtistProfileData),
+    type:
+      (data as Partial<ArtistProfileData>).type ??
+      publishedArtist.type ??
+      null,
+    ended:
+      (data as Partial<ArtistProfileData>).ended ??
+      publishedArtist.ended ??
+      null,
+    date_of_death:
+      (data as Partial<ArtistProfileData>).date_of_death ??
+      publishedArtist.date_of_death ??
+      null,
+    death_year:
+      (data as Partial<ArtistProfileData>).death_year ??
+      publishedArtist.death_year ??
+      null,
     primary_genre:
       (data as Partial<ArtistProfileData>).primary_genre ??
       publishedArtist.primary_genre ??

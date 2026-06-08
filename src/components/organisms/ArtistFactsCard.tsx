@@ -1,12 +1,19 @@
 //artist facts card component
+import Link from "next/link";
 import { Globe } from "lucide-react";
 import { SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
 import type { IconType } from "react-icons";
 
 import type { ArtistProfileData } from "@/lib/artistApi";
+import {
+  formatArtistRelationshipDisplay,
+  type ArtistRelationship,
+} from "@/lib/artistRelationships";
 
 type Props = {
   artist: ArtistProfileData;
+  groupsAndProjects?: ArtistRelationship[];
+  members?: ArtistRelationship[];
 };
 
 function formatDate(date: string | null) {
@@ -58,6 +65,29 @@ function getOccupationList(occupations: ArtistProfileData["occupations"]) {
   }
 
   return Object.keys(occupations);
+}
+
+function getArtistStatus(artist: ArtistProfileData) {
+  if (artist.type === "person") {
+    return artist.date_of_death || artist.death_year ? "Deceased" : null;
+  }
+
+  if (
+    artist.type === "duo" ||
+    artist.type === "group" ||
+    artist.type === "orchestra" ||
+    artist.type === "choir" ||
+    artist.type === "collective" ||
+    artist.type === "other"
+  ) {
+    return artist.ended ? "No longer active" : "Active";
+  }
+
+  return null;
+}
+
+function getOriginLabel(artist: ArtistProfileData) {
+  return artist.type === "person" ? "Place of Birth" : "Origin";
 }
 
 function normalizeSocialUsername(value: string | null | undefined) {
@@ -247,12 +277,74 @@ function LinkGroup({ children }: { children: React.ReactNode }) {
   return <div className="space-y-2">{children}</div>;
 }
 
-export default function ArtistFactsCard({ artist }: Props) {
+function GroupsAndProjectsList({
+  label,
+  relationships,
+  direction,
+}: {
+  label: string;
+  relationships: ArtistRelationship[];
+  direction: "outgoing" | "incoming";
+}) {
+  if (!relationships.length) return null;
+
+  return (
+    <Field label={label}>
+      <div className="space-y-2">
+        {relationships.map((relationship) => {
+          const artist =
+            direction === "outgoing"
+              ? relationship.target_artist
+              : relationship.source_artist;
+          const detailText = formatArtistRelationshipDisplay(
+            relationship.relationship_type,
+            relationship.start_year,
+            relationship.end_year
+          );
+          const content = (
+            <>
+              <span className="block font-normal text-(--color-ink)">
+                {artist?.name ?? "Unknown artist"}
+              </span>
+              {detailText && (
+                <span className="mt-0.5 block text-xs text-gray-500">
+                  {detailText}
+                </span>
+              )}
+            </>
+          );
+
+          return artist?.slug ? (
+            <Link
+              key={relationship.id}
+              href={`/artists/${artist.slug}`}
+              className="block text-sm leading-snug underline-offset-4 hover:text-(--color-wikicrimson) hover:underline"
+            >
+              {content}
+            </Link>
+          ) : (
+            <div key={relationship.id} className="text-sm leading-snug">
+              {content}
+            </div>
+          );
+        })}
+      </div>
+    </Field>
+  );
+}
+
+export default function ArtistFactsCard({
+  artist,
+  groupsAndProjects = [],
+  members = [],
+}: Props) {
   const realName = getRealName(artist);
   const birthDate = formatDate(artist.date_of_birth);
   const deathDate = formatDate(artist.date_of_death);
   const birthPlace = getBirthPlace(artist);
+  const originLabel = getOriginLabel(artist);
   const occupations = getOccupationList(artist.occupations);
+  const artistStatus = getArtistStatus(artist);
 
   const websiteUrl = getWebsiteUrl(artist.website);
   const websiteDisplay = getWebsiteDisplay(artist.website);
@@ -288,7 +380,7 @@ export default function ArtistFactsCard({ artist }: Props) {
 
         <Field label="Date of Death">{deathDate}</Field>
 
-        <Field label="Place of Birth">{birthPlace}</Field>
+        <Field label={originLabel}>{birthPlace}</Field>
 
         {!!artist.aliases?.length && (
           <Field label="Aliases">
@@ -299,6 +391,8 @@ export default function ArtistFactsCard({ artist }: Props) {
         {!!artist.aliases?.length && <SectionDivider />}
 
         <Field label="Artist Type">{formatLabel(artist.type)}</Field>
+
+        <Field label="Status">{artistStatus}</Field>
 
         <Field label="Primary Role">{formatLabel(artist.primary_role)}</Field>
 
@@ -342,6 +436,22 @@ export default function ArtistFactsCard({ artist }: Props) {
               {instagramUsername ? `@${instagramUsername}` : null}
             </SocialLink>
           </LinkGroup>
+        )}
+
+        {(groupsAndProjects.length > 0 || members.length > 0) && (
+          <>
+            <SectionDivider />
+            <GroupsAndProjectsList
+              label="Groups & Projects"
+              relationships={groupsAndProjects}
+              direction="outgoing"
+            />
+            <GroupsAndProjectsList
+              label="Members"
+              relationships={members}
+              direction="incoming"
+            />
+          </>
         )}
       </div>
     </section>
