@@ -75,10 +75,9 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
     const birthDate = parseLocalDate(dob);
     if (!birthDate) return null;
 
-    const birthYear = birthDate.getFullYear();
     if (deathYear) return `Deceased on ${deathYear}`;
     const age = calculateAge(dob);
-    return `${age} years old - Born on ${birthYear}`;
+    return `${age} years old`;
   };
 
   const scroll = (direction: "left" | "right") => {
@@ -129,10 +128,10 @@ const sortedArtists = [...localBirthdayArtists].sort((a, b) => {
           /* CAROUSEL — identical sizing to TopArtistsSection */
           <div
             ref={scrollRef}
-            className="flex w-full gap-3 overflow-x-auto scrollbar-none pb-2"
+            className="flex w-full gap-4 overflow-x-auto scrollbar-none pb-2"
           >
            {sortedArtists.map((artist) => (
-    <div key={artist.id} className="shrink-0 w-[42%] sm:w-[26%] lg:w-[14%]">
+    <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
       <div className="relative group">
         <ArtistCard artist={artist} titleAs="h3" />
         {(artist.date_of_birth || artist.death_year) && (

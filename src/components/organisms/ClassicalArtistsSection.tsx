@@ -35,7 +35,7 @@ export default function ClassicalArtistsSection({
       <div className="section-inner">
         {/* HEADER */}
         <div className="section-header">
-          <h2>INSTRUMENTAL & CLASSICAL ARTISTS</h2>
+          <h2>Instrumental & Classical</h2>
           <Link
             href="/artists?occupation=instrumentalist"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
@@ -51,12 +51,12 @@ export default function ClassicalArtistsSection({
         {/* CAROUSEL */}
         <div
           ref={scrollRef}
-          className="flex w-full gap-3 overflow-x-auto scrollbar-none pb-2"
+          className="flex w-full gap-4 overflow-x-auto scrollbar-none pb-2"
         >
           {classicalArtists.map((artist) => (
             <div
               key={artist.id}
-              className="shrink-0 w-[42%] sm:w-[26%] lg:w-[14%]"
+              className="shrink-0 w-28 sm:w-32 lg:w-36"
             >
               <ArtistCard artist={artist} titleAs="h3" />
             </div>

@@ -49,12 +49,12 @@ export default function TopDjsSection({ djs }: TopDjsSectionProps) {
         {/* CAROUSEL */}
         <div
           ref={scrollRef}
-          className="flex w-full gap-3 overflow-x-auto scrollbar-none pb-2"
+          className="flex w-full gap-4 overflow-x-auto scrollbar-none pb-2"
         >
           {djs.map((artist) => (
             <div
               key={artist.id}
-              className="shrink-0 w-[42%] sm:w-[26%] lg:w-[14%]"
+              className="shrink-0 w-28 sm:w-32 lg:w-36"
             >
               <ArtistCard artist={artist} titleAs="h3" />
             </div>

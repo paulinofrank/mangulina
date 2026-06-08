@@ -40,14 +40,6 @@ export default function ArtistCard({
             name={artist.name}
           />
 
-          {artist.views ? (
-            <span className="absolute top-2 right-2 text-[12px] text-gray-500 text-right leading-none">
-              {artist.views.toLocaleString()}
-              <br />
-              <span className="text-[10px]">views</span>
-            </span>
-          ) : null}
-
         </div>
 
         {/* SUBTLE ARCHIVE OVERLAY */}
@@ -59,7 +51,7 @@ export default function ArtistCard({
       {/* TEXT */}
       {/* ========================================= */}
 
-      <div className="relative mt-3 space-y-1">
+      <div className="relative mt-3">
 
         <ArtistName
           name={artist.name}
@@ -69,6 +61,12 @@ export default function ArtistCard({
         <ArtistRegion
           region={artist.province}
         />
+
+        {artist.views ? (
+          <p className="text-[11px] text-gray-500 leading-tight">
+            {artist.views.toLocaleString()} views
+          </p>
+        ) : null}
 
       </div>
     </Link>

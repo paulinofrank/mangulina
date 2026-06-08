@@ -31,7 +31,7 @@ export default function TopRisingStarsSection({ risingStars }: TopRisingStarsSec
     <SectionCard>
       <div className="section-inner">
         <div className="section-header">
-          <h2>Rising Stars &rarr; Emerging Dominican Artists</h2>
+          <h2>Emerging Artists</h2>
            <Link
             href="/artists?tag=emerging"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
@@ -45,12 +45,12 @@ export default function TopRisingStarsSection({ risingStars }: TopRisingStarsSec
 
         <div
           ref={scrollRef}
-          className="flex w-full gap-3 overflow-x-auto scrollbar-none pb-2"
+          className="flex w-full gap-4 overflow-x-auto scrollbar-none pb-2"
         >
           {risingStars.map((artist) => (
             <div
               key={artist.id}
-              className="shrink-0 w-[42%] sm:w-[26%] lg:w-[14%]"
+              className="shrink-0 w-28 sm:w-32 lg:w-36"
             >
               <ArtistCard artist={artist} titleAs="h3" />
             </div>

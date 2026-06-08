@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 function ReleaseCard({ release }: { release: GenreReleaseSummary }) {
   return (
-    <article className="shrink-0 w-36 sm:w-40">
+    <article className="w-28 shrink-0 sm:w-32 lg:w-36">
       <div className="relative aspect-square overflow-hidden rounded-lg border border-black/5 bg-gray-100">
         {release.coverUrl ? (
           <img
@@ -152,7 +152,7 @@ export default async function GenrePage({ params }: PageProps) {
           {mainArtists.length > 0 && (
             <GenreCarouselSection title={`Top ${genre.title} Artists`}>
               {mainArtists.map((artist) => (
-                <div key={artist.id} className="shrink-0 w-[42%] sm:w-[26%] lg:w-[14%]">
+                <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
                   <ArtistCard artist={artist} titleAs="h3" />
                 </div>
               ))}
@@ -162,7 +162,7 @@ export default async function GenrePage({ params }: PageProps) {
           {connectedArtists.length > 0 && (
             <GenreCarouselSection title={`Artists Connected to ${genre.title}`}>
               {connectedArtists.map((artist) => (
-                <div key={artist.id} className="shrink-0 w-[42%] sm:w-[26%] lg:w-[14%]">
+                <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
                   <ArtistCard artist={artist} titleAs="h3" />
                 </div>
               ))}
@@ -196,7 +196,7 @@ export default async function GenrePage({ params }: PageProps) {
           {recentlyAdded.length > 0 && (
             <GenreCarouselSection title="Recently Added">
               {recentlyAdded.map((artist) => (
-                <div key={artist.id} className="shrink-0 w-[42%] sm:w-[26%] lg:w-[14%]">
+                <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
                   <ArtistCard artist={artist} titleAs="h3" />
                 </div>
               ))}

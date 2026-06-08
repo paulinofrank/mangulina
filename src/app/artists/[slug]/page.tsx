@@ -35,31 +35,29 @@ export default async function ArtistProfile({ params }: PageProps) {
   return (
     <MainWrapper>
       <div className="mx-auto w-full max-w-[1780px] overflow-hidden px-4 py-10 sm:px-6 sm:py-12 2xl:px-10">
-        <header className="mb-8 sm:mb-10">
-          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <h1 className="text-3xl font-black uppercase tracking-tight text-(--color-flagblue) min-[380px]:text-4xl sm:text-5xl">
+        <div className="grid min-w-0 items-start gap-8 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-10 2xl:grid-cols-[320px_minmax(0,1fr)]">
+          <aside className="w-full min-w-0 space-y-6">
+            <h1 className="text-center text-3xl font-black uppercase tracking-tight text-(--color-flagblue) min-[380px]:text-4xl sm:text-5xl lg:text-4xl">
               {artist.name}
             </h1>
 
-            {artist.views != null && (
-              <p className="whitespace-nowrap text-xs font-normal uppercase tracking-[0.14em] text-(--color-wikicrimson) sm:text-sm sm:tracking-[0.16em]">
-                {artist.views.toLocaleString()} views
-              </p>
-            )}
-          </div>
-        </header>
+            <div className="relative aspect-square w-full rounded-2xl shadow-lg">
+              <div className="absolute inset-0 overflow-hidden rounded-2xl bg-gray-100">
+                <Image
+                  src={imageUrl}
+                  alt={artist.name}
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 768px) calc(100vw - 40px), 300px"
+                />
+              </div>
 
-        <div className="grid min-w-0 items-start gap-8 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-10 2xl:grid-cols-[320px_minmax(0,1fr)]">
-          <aside className="w-full min-w-0 space-y-6">
-            <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-gray-100 shadow-lg">
-              <Image
-                src={imageUrl}
-                alt={artist.name}
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) calc(100vw - 40px), 300px"
-              />
+              {artist.views != null && (
+                <div className="absolute bottom-0 left-1/2 z-10 -translate-x-1/2 translate-y-1/2 rounded-full border border-black/5 bg-white px-3 py-1 text-[11px] font-normal uppercase tracking-wider text-[#8B0000]/80 shadow-sm">
+                  {artist.views.toLocaleString()} views
+                </div>
+              )}
             </div>
 
             <ArtistFactsCard artist={artist} />

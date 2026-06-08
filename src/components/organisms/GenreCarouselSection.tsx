@@ -40,7 +40,7 @@ export default function GenreCarouselSection({
 
         <div
           ref={scrollRef}
-          className={`scrollbar-none flex w-full gap-3 overflow-x-auto pb-2 ${className}`}
+          className={`scrollbar-none flex w-full gap-4 overflow-x-auto pb-2 ${className}`}
         >
           {children}
         </div>

@@ -98,7 +98,7 @@ export default function BrowseByGenreSection() {
         </div>
         <div
           ref={scrollRef}
-          className="scrollbar-none flex w-full gap-3 overflow-x-auto pb-2"
+          className="scrollbar-none flex w-full gap-4 overflow-x-auto pb-2"
         >
           {genreGroups.map((genre) => {
             const IconComponent = genre.icon;
@@ -106,7 +106,7 @@ export default function BrowseByGenreSection() {
               <Link
                 key={genre.title}
                 href={genre.href}
-                className="group relative flex aspect-[4/3] min-w-[138px] flex-col justify-between overflow-hidden rounded-lg p-4 transition-all duration-200 hover:scale-[1.02] sm:min-w-[160px] md:min-w-[180px]"
+                className="group relative flex aspect-square w-28 shrink-0 flex-col justify-between overflow-hidden rounded-lg p-3 transition-all duration-200 hover:scale-[1.02] sm:w-32 sm:p-4 lg:w-36"
               >
                 <div
                   className={`absolute inset-0 ${genre.color} opacity-75 transition-opacity group-hover:opacity-90`}
@@ -118,11 +118,11 @@ export default function BrowseByGenreSection() {
                 />
 
                 <div className="relative z-10 text-white">
-                  <span className="block text-[15px] font-normal leading-tight sm:text-base md:text-lg">
+                  <span className="block text-sm font-normal leading-tight sm:text-base">
                     {genre.title}
                   </span>
                   {genre.labels.length > 0 && (
-                    <span className="mt-1 block text-[12px] font-normal leading-tight text-white/85 sm:text-[13px]">
+                    <span className="mt-1 block text-[11px] font-normal leading-tight text-white/85 sm:text-xs">
                       {genre.labels.join(", ")}
                     </span>
                   )}

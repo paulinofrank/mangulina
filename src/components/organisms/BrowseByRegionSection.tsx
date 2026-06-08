@@ -27,13 +27,13 @@ function RegionLink({ region }: { region: RegionData }) {
   return (
     <Link
       href={`/artists?province=${encodeURIComponent(region.province)}`}
-      className="group relative flex items-center justify-between rounded-md border border-black/5 bg-gray-50/30 px-3 py-2.5 transition-all duration-200 hover:border-[#002D62] hover:bg-[#002D62]"
+      className="group relative flex items-center justify-between rounded-md border border-[#002D62]/15 bg-white px-3 py-2.5 shadow-[0_1px_0_rgba(0,45,98,0.05)] transition-all duration-200 hover:border-[#002D62]/45 hover:bg-[#002D62]/5"
     >
-      <span className="relative z-10 truncate text-sm font-normal text-[#002D62] transition-colors group-hover:text-white">
+      <span className="relative z-10 truncate text-sm font-normal text-[#002D62] transition-colors">
         {region.province}
       </span>
 
-      <span className="relative z-10 ml-2 font-mono text-xs text-gray-600 transition-all group-hover:text-white/70">
+      <span className="relative z-10 ml-2 font-mono text-xs text-gray-500 transition-colors group-hover:text-[#002D62]">
         {region.count}
       </span>
     </Link>
