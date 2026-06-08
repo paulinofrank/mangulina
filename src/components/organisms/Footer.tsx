@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Navigation */}
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-base font-normal text-gray-600">
             <Link href="/about" className="hover:text-[#002D62] transition-colors">About</Link>
-            <Link href="/recordings" className="hover:text-[#002D62] transition-colors">Discover</Link>
+            <Link href="/artists?tag=emerging" className="hover:text-[#002D62] transition-colors">Discover</Link>
             <Link href="/artists" className="hover:text-[#002D62] transition-colors">Artists</Link>
             <Link href="/archive" className="hover:text-[#002D62] transition-colors">Archive</Link>
             <Link href="/admin" className="hover:text-[#002D62] transition-colors">Admin</Link>
