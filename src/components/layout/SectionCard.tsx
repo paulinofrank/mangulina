@@ -1,10 +1,14 @@
 export default function SectionCard({
   children,
   className = "",
+  compact = false,
 }: {
   children: React.ReactNode;
   className?: string;
+  compact?: boolean;
 }) {
+  const paddingClass = compact ? "px-5 pt-4 pb-3 sm:px-6" : "px-5 py-6 sm:px-6";
+
   return (
     <section
       className={`
@@ -14,7 +18,7 @@ export default function SectionCard({
         bg-white/60 
         backdrop-blur-md 
         shadow-sm 
-        px-5 py-6 sm:px-6
+        ${paddingClass}
         ${className}
       `}
     >

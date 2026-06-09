@@ -11,7 +11,7 @@ export default function Navbar() {
     { name: 'Home', href: '/' },
     { name: 'Artists', href: '/artists' },
     { name: 'Songs', href: '/archive' },
-    { name: 'Christians', href: '/artists?tag=christian'},
+    { name: 'Christian', href: '/artists?tag=christian'},
   ];
 
   return (

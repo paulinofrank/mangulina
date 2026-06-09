@@ -89,7 +89,7 @@ export default function BrowseByGenreSection() {
   };
 
   return (
-    <SectionCard>
+    <SectionCard compact>
       <CarouselArrows onLeft={() => scroll("left")} onRight={() => scroll("right")} />
 
       <div className="section-inner">

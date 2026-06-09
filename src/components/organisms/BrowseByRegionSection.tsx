@@ -45,7 +45,7 @@ export default function BrowseByRegionSection({ regions }: BrowseByRegionSection
   const mobileColumns = chunkRegions(validRegions, 3);
 
   return (
-    <SectionCard>
+    <SectionCard compact>
       <div className="section-inner">
         <div className="section-header">
           <h2>Browse Artists by Region</h2>

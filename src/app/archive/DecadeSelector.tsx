@@ -3,6 +3,7 @@
 
 import { useRef, useState, useEffect } from "react";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
+import SectionCard from "@/components/layout/SectionCard";
 
 const FIRST_ARCHIVE_DECADE = 1920;
 const currentYear = new Date().getFullYear();
@@ -89,14 +90,14 @@ export default function DecadeSelector({
   };
 
   return (
-    <section className="relative overflow-hidden rounded-xl border border-black/5 bg-white/60 backdrop-blur-md">
+    <SectionCard>
       <CarouselArrows onLeft={() => scroll("left")} onRight={() => scroll("right")} />
 
-      <div className="px-5 py-3 sm:px-6">
+      <div className="section-inner">
         <div className="w-full">
 
           {/* Header */}
-          <div className="section-header mb-0 flex items-center justify-between gap-3">
+          <div className="section-header">
             <h2>
               Browse Archive by Decade
             </h2>
@@ -194,6 +195,6 @@ export default function DecadeSelector({
 
         </div>
       </div>
-    </section>
+    </SectionCard>
   );
 }

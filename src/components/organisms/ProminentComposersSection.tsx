@@ -31,7 +31,7 @@ export default function ProminentComposersSection({
   };
 
   return (
-    <SectionCard>
+    <SectionCard compact>
       <div className="section-inner">
         {/* HEADER */}
         <div className="section-header">

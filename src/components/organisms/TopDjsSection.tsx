@@ -29,7 +29,7 @@ export default function TopDjsSection({ djs }: TopDjsSectionProps) {
   };
 
   return (
-    <SectionCard>
+    <SectionCard compact>
       <div className="section-inner">
         {/* HEADER */}
         <div className="section-header">

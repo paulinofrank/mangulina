@@ -28,7 +28,7 @@ export default function TopRisingStarsSection({ risingStars }: TopRisingStarsSec
   };
 
   return (
-    <SectionCard>
+    <SectionCard compact>
       <div className="section-inner">
         <div className="section-header">
           <h2>Emerging Artists</h2>

@@ -1,4 +1,4 @@
-// ClassicalArtistsSection.tsx
+// MostAwardedArtistsSection.tsx
 "use client";
 
 import { useRef } from "react";
@@ -6,16 +6,30 @@ import Link from "next/link";
 import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
-import type { ArtistSummary } from "@/types/home";
+import type { MostAwardedArtistSummary } from "@/types/home";
 
-type ClassicalArtistsSectionProps = {
-  classicalArtists: ArtistSummary[];
+type MostAwardedArtistsSectionProps = {
+  artists: MostAwardedArtistSummary[];
 };
 
-export default function ClassicalArtistsSection({
-  classicalArtists,
-}: ClassicalArtistsSectionProps) {
+function getAwardLabel(artist: MostAwardedArtistSummary) {
+  const total = artist.awardCount + artist.nominationCount;
+
+  if (artist.awardCount > 0) {
+    return `${artist.awardCount.toLocaleString()} ${
+      artist.awardCount === 1 ? "award" : "awards"
+    }`;
+  }
+
+  return `${total.toLocaleString()} ${total === 1 ? "nomination" : "nominations"}`;
+}
+
+export default function MostAwardedArtistsSection({
+  artists,
+}: MostAwardedArtistsSectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  if (!artists.length) return null;
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
@@ -35,10 +49,10 @@ export default function ClassicalArtistsSection({
       <div className="section-inner">
         {/* HEADER */}
         <div className="section-header">
-          <h2>Instrumental & Classical</h2>
+          <h2>Most Awarded Artists</h2>
           <Link
-            href="/artists?occupation=instrumentalist"
-            className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
+            href="/artists"
+            className="ml-auto text-sm font-normal uppercase tracking-wider text-[#8B0000] transition-colors hover:text-[#6B0000]"
           >
             See All
           </Link>
@@ -53,12 +67,15 @@ export default function ClassicalArtistsSection({
           ref={scrollRef}
           className="flex w-full gap-4 overflow-x-auto scrollbar-none pb-2"
         >
-          {classicalArtists.map((artist) => (
+          {artists.map((artist) => (
             <div
               key={artist.id}
-              className="shrink-0 w-28 sm:w-32 lg:w-36"
+              className="w-28 shrink-0 sm:w-32 lg:w-36"
             >
-              <ArtistCard artist={artist} titleAs="h3" />
+              <ArtistCard artist={{ ...artist, views: 0 }} titleAs="h3" />
+              <p className="mt-1 text-[11px] font-medium leading-tight text-[#8B0000]">
+                {getAwardLabel(artist)}
+              </p>
             </div>
           ))}
         </div>

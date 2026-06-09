@@ -33,7 +33,7 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
     "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/";
 
   return (
-    <SectionCard>
+    <SectionCard compact>
       <CarouselArrows onLeft={() => scroll("left")} onRight={() => scroll("right")} />
 
       <div className="px-5 py-0 sm:px-6">

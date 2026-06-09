@@ -97,7 +97,7 @@ const sortedArtists = [...localBirthdayArtists].sort((a, b) => {
 
 
   return (
-    <SectionCard>
+    <SectionCard compact>
       <div className="section-inner">
 
         {/* HEADER — now identical structure */}

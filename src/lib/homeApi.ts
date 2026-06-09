@@ -1,6 +1,12 @@
 // homeApi.ts  (API)
 import { getSupabaseClient } from "@/lib/supabase";
-import type { TopArtist, TrendingSong, RegionCount, ArtistSummary } from "@/types/home";
+import type {
+  TopArtist,
+  TrendingSong,
+  RegionCount,
+  ArtistSummary,
+  MostAwardedArtistSummary,
+} from "@/types/home";
 import type { Artist } from "@/types/music";
 
 export async function getHomeData() {
@@ -203,7 +209,71 @@ export async function getHomeData() {
       views: a.views,
     }));
 
-  // 9. Classical Artists
+  // 9. Most Awarded Artists
+  const awardRowsResponse = await supabase
+    .from("artist_awards")
+    .select("artist_id, won");
+
+  const awardCounts = new Map<string, { awardCount: number; nominationCount: number }>();
+
+  for (const row of (awardRowsResponse.data ?? []) as Array<{
+    artist_id: string | null;
+    won: boolean | null;
+  }>) {
+    if (!row.artist_id) continue;
+
+    const current = awardCounts.get(row.artist_id) ?? {
+      awardCount: 0,
+      nominationCount: 0,
+    };
+
+    if (row.won) {
+      current.awardCount += 1;
+    } else {
+      current.nominationCount += 1;
+    }
+
+    awardCounts.set(row.artist_id, current);
+  }
+
+  const awardedArtistIds = [...awardCounts.keys()];
+  let mostAwardedArtists: MostAwardedArtistSummary[] = [];
+
+  if (awardedArtistIds.length > 0) {
+    const awardedArtistsResponse = await supabase
+      .from("artists")
+      .select("id, slug, name, province, views")
+      .eq("status", "published")
+      .in("id", awardedArtistIds);
+
+    mostAwardedArtists = ((awardedArtistsResponse.data as ArtistSummary[]) || [])
+      .map((artist) => {
+        const counts = awardCounts.get(artist.id) ?? {
+          awardCount: 0,
+          nominationCount: 0,
+        };
+
+        return {
+          id: artist.id,
+          slug: artist.slug,
+          name: artist.name,
+          province: artist.province,
+          views: artist.views,
+          awardCount: counts.awardCount,
+          nominationCount: counts.nominationCount,
+        };
+      })
+      .sort(
+        (a, b) =>
+          b.awardCount - a.awardCount ||
+          b.awardCount + b.nominationCount - (a.awardCount + a.nominationCount) ||
+          Number(b.views || 0) - Number(a.views || 0) ||
+          a.name.localeCompare(b.name),
+      )
+      .slice(0, 10);
+  }
+
+  // 10. Classical Artists
   const classicalResponse = await supabase
     .from("artists")
     .select("id, slug, name, province, views")
@@ -224,7 +294,7 @@ export async function getHomeData() {
       views: a.views,
     }));
 
-  // 10. Rising Stars (Emerging Artists)
+  // 11. Rising Stars (Emerging Artists)
   const risingResponse = await supabase
     .from("artists")
     .select("id, slug, name, province, views")
@@ -254,6 +324,7 @@ export async function getHomeData() {
     composers,
     djs,
     christianArtists,
+    mostAwardedArtists,
     classicalArtists,
     risingStars
   };

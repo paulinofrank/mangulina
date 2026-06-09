@@ -8,6 +8,7 @@ import TopArtistsSection from "@/components/organisms/TopArtistsSection";
 import TrendingSongsSection from "@/components/organisms/MostSearchedSongs";
 import BrowseByGenreSection from "@/components/organisms/BrowseByGenreSection";
 import BrowseByRegionSection from "@/components/organisms/BrowseByRegionSection";
+import MostAwardedArtistsSection from "@/components/organisms/MostAwardedArtistsSection";
 import ProminentComposersSection from "@/components/organisms/ProminentComposersSection";
 import TopDjsSection from "@/components/organisms/TopDjsSection";
 import BirthdaySection from "@/components/organisms/BirthdaySection";
@@ -21,7 +22,7 @@ export default async function HomePage() {
   const data = await getHomeData();
 
   return (
-    <MainWrapper>
+    <MainWrapper className="!pb-0">
       <PageSection>
         <FeaturedArtistSection featuredArtist={data.featuredArtist} />
       </PageSection>
@@ -35,7 +36,7 @@ export default async function HomePage() {
       </PageSection>
 
       <PageSection>
-        <TrendingSongsSection songs={data.trendingSongs} />
+        <TopChristianArtistsSection christianArtists={data.christianArtists} />
       </PageSection>
 
       <PageSection>
@@ -43,7 +44,11 @@ export default async function HomePage() {
       </PageSection>
 
       <PageSection>
-        <TopChristianArtistsSection christianArtists={data.christianArtists} />
+        <MostAwardedArtistsSection artists={data.mostAwardedArtists} />
+      </PageSection>
+
+      <PageSection>
+        <TrendingSongsSection songs={data.trendingSongs} />
       </PageSection>
 
       <PageSection>
@@ -62,7 +67,7 @@ export default async function HomePage() {
         <TopRisingStarsSection risingStars={data.risingStars} />
       </PageSection>
 
-      <PageSection>
+      <PageSection className="!mb-2">
         <BirthdaySection birthdayArtists={data.birthdayArtists} />
       </PageSection>
     </MainWrapper>

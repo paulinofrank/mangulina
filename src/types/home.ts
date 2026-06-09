@@ -34,6 +34,11 @@ export type ArtistSummary = {
   views: number;
 };
 
+export type MostAwardedArtistSummary = ArtistSummary & {
+  awardCount: number;
+  nominationCount: number;
+};
+
 export type RegionCount = {
   province: string;
   count: number;
