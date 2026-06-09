@@ -15,6 +15,7 @@ type SongRow = {
   subgenre_name?: string | null;
   genre?: string | null;
   subgenre?: string | null;
+  views?: number | null;
 };
 
 export default function SongsByYearList({ songs }: { songs: SongRow[] }) {
@@ -24,11 +25,13 @@ export default function SongsByYearList({ songs }: { songs: SongRow[] }) {
   return (
     <div className="mt-4 rounded-xl border border-black/5 bg-white/70 p-2.5 md:mt-8 md:p-4">
       {/* Header */}
-      <div className="hidden grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,1fr)_5rem] gap-3 border-b pb-2 text-xs font-semibold uppercase tracking-wider text-gray-500 md:grid">
+      <div className="hidden grid-cols-[3rem_minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,1fr)_5rem_6rem] gap-3 border-b pb-2 text-xs font-semibold uppercase tracking-wider text-gray-500 md:grid">
+        <span aria-hidden="true" />
         <span>Song</span>
         <span>Artist</span>
         <span>Genre</span>
         <span className="text-right">Duration</span>
+        <span className="text-right">Views</span>
       </div>
 
       {/* Rows */}
@@ -40,14 +43,15 @@ export default function SongsByYearList({ songs }: { songs: SongRow[] }) {
         const coverUrl = song.release_id
           ? `${supabaseBase}cover-art/150px/${song.release_id}.webp`
           : song.cover_image_url ?? "/images/placeholder-song.jpg";
+        const viewsText = formatViews(song.views);
 
         return (
           <Link
             key={song.recording_id}
             href={href}
-            className="grid grid-cols-[2rem_minmax(0,1fr)_minmax(5.5rem,auto)] gap-x-2.5 gap-y-0.5 border-b py-2 text-sm transition hover:bg-[#002D62]/5 last:border-none md:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,1fr)_5rem] md:items-center md:gap-3 md:py-2"
+            className="grid grid-cols-[2rem_minmax(0,1fr)_minmax(6.75rem,auto)] gap-x-2.5 gap-y-0.5 border-b py-2 text-sm text-[#002D62] transition hover:bg-[#002D62]/5 last:border-none md:grid-cols-[3rem_minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,1fr)_5rem_6rem] md:items-center md:gap-3 md:py-2"
           >
-            <span className="relative col-start-1 row-span-2 row-start-1 block h-8 w-8 overflow-hidden rounded-md border border-black/5 bg-gray-100 md:hidden">
+            <span className="relative col-start-1 row-span-2 row-start-1 block h-8 w-8 overflow-hidden rounded-md border border-black/5 bg-gray-100 md:row-span-1 md:h-10 md:w-10">
               <img
                 src={coverUrl}
                 alt=""
@@ -59,26 +63,40 @@ export default function SongsByYearList({ songs }: { songs: SongRow[] }) {
               />
             </span>
 
-            <span className="col-start-2 row-start-1 truncate font-medium text-[#002D62] md:col-start-auto md:row-start-auto">
+            <span className="col-start-2 row-start-1 truncate font-semibold md:col-start-2 md:row-start-auto">
               {song.recording_title}
             </span>
 
-            <span className="col-start-2 row-start-2 truncate text-gray-700 md:col-start-auto md:row-start-auto">
+            <span className="col-start-2 row-start-2 truncate font-normal text-[#002D62] md:col-start-3 md:row-start-auto">
               {song.artist_name ?? "Unknown Artist"}
             </span>
 
-            <span className="col-start-3 row-start-1 truncate text-right text-xs text-gray-500 md:col-start-auto md:row-start-auto md:text-left md:text-sm">
+            <span className="col-start-3 row-start-1 truncate text-right text-xs font-normal text-[#002D62]/70 md:col-start-4 md:row-start-auto md:text-left md:text-sm">
               {genreText || "Uncategorized"}
             </span>
 
-            <span className="col-start-3 row-start-2 font-mono text-xs text-right text-gray-600 md:col-start-auto md:row-start-auto md:text-sm">
-              {song.duration ? formatDuration(song.duration) : "--:--"}
+            <span className="col-start-3 row-start-2 text-right text-xs font-normal text-[#002D62]/70 md:col-start-5 md:row-start-auto md:text-sm">
+              <span className="md:hidden">
+                views {viewsText}
+              </span>
+              <span className="hidden md:inline">
+                {song.duration ? formatDuration(song.duration) : "--:--"}
+              </span>
+            </span>
+
+            <span className="hidden text-sm font-normal text-right text-[#002D62]/70 md:col-start-6 md:block">
+              {viewsText}
             </span>
           </Link>
         );
       })}
     </div>
   );
+}
+
+function formatViews(views?: number | null) {
+  if (views == null) return "0";
+  return views.toLocaleString();
 }
 
 function formatDuration(ms: number) {

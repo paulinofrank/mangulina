@@ -25,8 +25,8 @@ const MOBILE_TAG_FILTERS = [
 ];
 
 const CONTEXT_FILTERS = [
-  { key: "christian", label: "Christian" },
   { key: "secular", label: "Secular" },
+  { key: "christian", label: "Christian" },
 ];
 
 const STATUS_FILTERS = [
@@ -92,19 +92,106 @@ function Pagination({
   currentPage,
   totalPages,
   onPageChange,
+  hideMobile = false,
+  mobileOnly = false,
+  insideBox = false,
 }: {
   currentPage: number;
   totalPages: number;
   onPageChange: (page: number) => void;
+  hideMobile?: boolean;
+  mobileOnly?: boolean;
+  insideBox?: boolean;
 }) {
   if (totalPages <= 1) return null;
 
+  const mobileWindowSize = Math.min(totalPages, 3);
+  const mobileWindowStart =
+    currentPage <= 3
+      ? 1
+      : Math.min(currentPage - 1, totalPages - mobileWindowSize + 1);
+  const mobilePages = Array.from({ length: mobileWindowSize }).map(
+    (_, index) => mobileWindowStart + index,
+  );
+  const showMobileLeadingEllipsis = mobilePages[0] > 1;
+  const showMobileTrailingEllipsis = mobilePages[mobilePages.length - 1] < totalPages;
+  const mobileClass = hideMobile ? "hidden sm:hidden" : mobileOnly ? "flex sm:hidden" : "flex sm:hidden";
+  const desktopClass = mobileOnly ? "hidden" : "hidden sm:block";
+  const sectionClass = mobileOnly
+    ? "mb-4 mt-0 flex flex-wrap items-center justify-between gap-x-2 gap-y-1 sm:hidden"
+    : hideMobile
+      ? "hidden sm:my-7 sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-2"
+      : insideBox
+        ? "mt-6 mb-0 flex items-center justify-center gap-2 flex-wrap sm:mt-8"
+        : "my-3 flex items-center justify-center gap-2 flex-wrap sm:my-7";
+
   return (
-    <section className="my-10 flex items-center justify-center gap-2 flex-wrap">
+    <section className={sectionClass}>
+      <button
+        onClick={() => onPageChange(1)}
+        disabled={currentPage === 1}
+        className={`${mobileClass} cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30`}
+      >
+        First
+      </button>
+
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30"
+        className={`${mobileClass} cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30`}
+      >
+        Previous
+      </button>
+
+      <div className={`${mobileClass} flex-1 items-center justify-center gap-2`}>
+        {showMobileLeadingEllipsis && (
+          <span className="px-1 text-sm text-gray-400" aria-hidden="true">
+            ...
+          </span>
+        )}
+
+        {mobilePages.map((page) => (
+          <button
+            key={page}
+            onClick={() => onPageChange(page)}
+            className={`cursor-pointer text-sm underline-offset-4 transition hover:underline
+              ${
+                currentPage === page
+                  ? "font-semibold text-(--color-flagblue)"
+                  : "text-gray-500 hover:text-(--color-flagblue)"
+              }`}
+          >
+            {page}
+          </button>
+        ))}
+
+        {showMobileTrailingEllipsis && (
+          <span className="px-1 text-sm text-gray-400" aria-hidden="true">
+            ...
+          </span>
+        )}
+      </div>
+
+      <button
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+        className={`${mobileClass} cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30`}
+      >
+        Next
+      </button>
+
+      <button
+        onClick={() => onPageChange(totalPages)}
+        disabled={currentPage === totalPages}
+        className={`${mobileClass} cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30`}
+      >
+        Last
+      </button>
+
+      <button
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+        className={`${desktopClass} cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30`}
       >
         Previous
       </button>
@@ -115,7 +202,7 @@ function Pagination({
           <button
             key={page}
             onClick={() => onPageChange(page)}
-            className={`h-10 w-10 cursor-pointer rounded-full border text-sm transition
+            className={`${desktopClass} h-10 w-10 cursor-pointer rounded-full border text-sm transition
               ${
                 currentPage === page
                   ? "bg-(--color-flagblue) text-white border-(--color-flagblue)"
@@ -130,7 +217,7 @@ function Pagination({
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30"
+        className={`${desktopClass} cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30`}
       >
         Next
       </button>
@@ -162,7 +249,8 @@ function FilterPill({
     <button
       onClick={onClick}
       className={`
-        flex-1 basis-28 cursor-pointer rounded-full px-4 py-2 text-sm border text-center transition-all
+        cursor-pointer rounded-full border px-4 py-1.5 text-center text-sm transition-all
+        ${tone === "red" ? "flex-none basis-20" : "flex-1 basis-28"}
         ${
           active
             ? activeClass
@@ -172,6 +260,64 @@ function FilterPill({
     >
       {label}
     </button>
+  );
+}
+
+function ContextToggle({
+  value,
+  onChange,
+}: {
+  value: string;
+  onChange: (key: string) => void;
+}) {
+  return (
+    <div className="flex h-9 w-full max-w-64 rounded-full border border-[#8B0000]/20 bg-white p-0.5">
+      {CONTEXT_FILTERS.map((item) => {
+        const active = value === item.key;
+
+        return (
+          <button
+            key={item.key}
+            onClick={() => onChange(item.key)}
+            className={`h-full flex-1 cursor-pointer rounded-full px-3 text-sm transition-all
+              ${
+                active
+                  ? "bg-[#8B0000] text-white shadow-sm"
+                  : "text-gray-600 hover:bg-[#8B0000]/5"
+              }`}
+          >
+            {item.label}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function StatusToggleGroup({
+  statuses,
+  onChange,
+}: {
+  statuses: string[];
+  onChange: (key: string) => void;
+}) {
+  return (
+    <div className="grid w-full grid-cols-2 gap-3 lg:w-64">
+      {STATUS_FILTERS.map((item) => (
+        <button
+          key={item.key}
+          onClick={() => onChange(item.key)}
+          className={`flex h-9 cursor-pointer items-center justify-center rounded-xl border px-4 text-sm transition
+            ${
+              statuses.includes(item.key)
+                ? "border-[#8B0000] bg-[#8B0000] text-white"
+                : "border-black/10 bg-white text-gray-600 hover:bg-[#8B0000]/5"
+            }`}
+        >
+          {item.label}
+        </button>
+      ))}
+    </div>
   );
 }
 
@@ -194,9 +340,21 @@ function ArtistsContent() {
   const context =
     searchParams.get("context") ??
     (tag && CONTEXT_FILTER_KEYS.has(tag) ? tag : null);
-  const artistStatus =
-    searchParams.get("artist_status") ??
-    (tag && STATUS_FILTER_KEYS.has(tag) ? tag : null);
+  const selectedContext = context ?? "secular";
+  const artistStatusParam = searchParams.get("artist_status");
+  const artistStatuses = useMemo(
+    () =>
+      artistStatusParam
+        ? artistStatusParam
+            .split(",")
+            .map((item) => item.trim())
+            .filter((item) => STATUS_FILTER_KEYS.has(item))
+            .slice(0, 1)
+        : tag && STATUS_FILTER_KEYS.has(tag)
+          ? [tag]
+          : [],
+    [artistStatusParam, tag],
+  );
   const genreFilter =
     searchParams.get("genre") ??
     (searchParams.get("classical") === "1" || tag === "classical" ? "classical" : null);
@@ -337,12 +495,14 @@ function ArtistsContent() {
         }
 
         // Classification tags live in artist_tags; musical genres stay in genres.
-        if (context) {
-          query = query.contains("artist_tags", [context]);
+        if (selectedContext) {
+          query = query.contains("artist_tags", [selectedContext]);
         }
 
-        if (artistStatus) {
-          query = query.contains("artist_tags", [artistStatus]);
+        if (artistStatuses.length === 1) {
+          query = query.contains("artist_tags", [artistStatuses[0]]);
+        } else if (artistStatuses.length > 1) {
+          query = query.overlaps("artist_tags", artistStatuses);
         }
 
         if (legacyTag) {
@@ -418,8 +578,8 @@ function ArtistsContent() {
     searchParamsString,
     currentPage,
     role,
-    context,
-    artistStatus,
+    selectedContext,
+    artistStatuses,
     legacyTag,
     genreFilter,
     subgenreFilter,
@@ -449,16 +609,46 @@ function ArtistsContent() {
     router.push(`/artists?${params.toString()}`);
   };
 
-  const handleDesktopFilter = (type: "context" | "artist_status", key: string) => {
+  const handleRoleChange = (value: string) => {
     const params = new URLSearchParams(searchParams.toString());
-    const current = params.get(type);
+
+    if (value) {
+      params.set("role", value);
+    } else {
+      params.delete("role");
+    }
+
+    params.set("page", "1");
+    router.push(`/artists?${params.toString()}`);
+  };
+
+  const handleContextFilter = (key: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    const current = params.get("context");
 
     params.delete("tag");
 
     if (current === key) {
-      params.delete(type);
+      params.delete("context");
     } else {
-      params.set(type, key);
+      params.set("context", key);
+    }
+
+    params.set("page", "1");
+    router.push(`/artists?${params.toString()}`);
+  };
+
+  const handleStatusFilter = (key: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    const currentStatus = params.get("artist_status")?.split(",")[0] ??
+      (params.get("tag") && STATUS_FILTER_KEYS.has(params.get("tag")!) ? params.get("tag") : null);
+
+    params.delete("tag");
+
+    if (currentStatus === key) {
+      params.delete("artist_status");
+    } else {
+      params.set("artist_status", key);
     }
 
     params.set("page", "1");
@@ -489,23 +679,11 @@ function ArtistsContent() {
     }
 
     if (CONTEXT_FILTER_KEYS.has(key)) {
-      const current = params.get("context") ?? (params.get("tag") === key ? key : null);
-      params.delete("tag");
-
-      if (current === key) {
-        params.delete("context");
-      } else {
-        params.set("context", key);
-      }
+      handleContextFilter(key);
+      return;
     } else if (STATUS_FILTER_KEYS.has(key)) {
-      const current = params.get("artist_status") ?? (params.get("tag") === key ? key : null);
-      params.delete("tag");
-
-      if (current === key) {
-        params.delete("artist_status");
-      } else {
-        params.set("artist_status", key);
-      }
+      handleStatusFilter(key);
+      return;
     } else {
       const current = params.get("tag");
 
@@ -567,19 +745,22 @@ function ArtistsContent() {
   const activeFilters = useMemo(() => {
     return [
       role,
-      context,
-      artistStatus,
+      selectedContext,
+      ...artistStatuses,
       legacyTag,
       province,
       genreFilter,
       subgenreFilter,
     ].filter(Boolean).length;
-  }, [role, context, artistStatus, legacyTag, province, genreFilter, subgenreFilter]);
+  }, [role, selectedContext, artistStatuses, legacyTag, province, genreFilter, subgenreFilter]);
 
   const pageTitle = useMemo(() => {
     const roleLabel = ROLE_FILTERS.find((item) => item.key === role)?.label;
-    const contextLabel = CONTEXT_FILTERS.find((item) => item.key === context)?.label;
-    const statusLabel = STATUS_FILTERS.find((item) => item.key === artistStatus)?.label;
+    const contextLabel = CONTEXT_FILTERS.find((item) => item.key === selectedContext)?.label;
+    const statusLabel = artistStatuses
+      .map((status) => STATUS_FILTERS.find((item) => item.key === status)?.label)
+      .filter(Boolean)
+      .join(" ");
     const legacyTagLabel = MOBILE_TAG_FILTERS.find((item) => item.key === legacyTag)?.label;
     const tagLabel = [contextLabel, statusLabel, legacyTagLabel].filter(Boolean).join(" ");
     const genreLabel =
@@ -638,8 +819,8 @@ function ArtistsContent() {
     return "All Artists";
   }, [
     role,
-    context,
-    artistStatus,
+    selectedContext,
+    artistStatuses,
     legacyTag,
     genreFilter,
     subgenreFilter,
@@ -657,20 +838,20 @@ function ArtistsContent() {
   }
 
   return (
-    <main className="mx-auto max-w-450 px-4 sm:px-6 lg:px-10 py-10 pb-28">
+    <main className="mx-auto max-w-450 px-4 pb-4 pt-10 sm:px-6 sm:pb-6 lg:px-10 lg:pb-10">
       {/* HEADER */}
-      <section className="mt-6 mb-2">
+      <section className="mt-6 mb-3 sm:mb-1">
         {/* DISCOVERY PANEL */}
         <div className="rounded-4xl border border-black/5 bg-white/80 px-5 py-2.5 backdrop-blur-sm shadow-[0_4px_30px_rgba(0,0,0,0.03)] sm:px-7 sm:py-3.5">
 
           {/* TITLE + CONTROLS */}
-          <div className="mb-4 flex flex-col gap-4">
-            <div className="flex flex-col gap-2 text-center lg:flex-row lg:items-center lg:justify-between lg:text-left">
-              <h1 className="text-2xl font-bold tracking-tight text-(--color-flagblue) md:text-3xl">
+          <div className="mb-2 flex flex-col gap-2 lg:mb-4 lg:gap-4">
+            <div className="flex flex-row items-center justify-between gap-3 text-left lg:text-left">
+              <h1 className="min-w-0 truncate text-xl font-bold tracking-tight text-(--color-flagblue) md:text-3xl">
                 {pageTitle}
               </h1>
 
-              <p className="text-sm text-gray-500">
+              <p className="shrink-0 text-right text-xs text-gray-500 sm:text-sm">
                 Showing{" "}
                 <span className="font-semibold text-(--color-flagblue)">
                   {artists.length}
@@ -679,13 +860,13 @@ function ArtistsContent() {
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+            <div className="hidden flex-wrap items-center justify-center gap-3 lg:flex lg:justify-start">
               <label className="hidden min-w-64 lg:block">
                 <span className="sr-only">Genre / Subgenre</span>
                 <select
                   value={selectedGenreValue}
                   onChange={(event) => handleGenreSelection(event.target.value)}
-                  className="h-10 w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
+                  className="h-9 w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
                 >
                   <option value="">All Genres</option>
                   {genreOptions.map((genre) => {
@@ -709,7 +890,7 @@ function ArtistsContent() {
               <select
                 onChange={(e) => handleProvinceChange(e.target.value)}
                 value={province ?? ""}
-                className="h-10 max-w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
+                className="h-9 max-w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
               >
                 <option value="">All Provinces</option>
                 {provinces.map((item) => (
@@ -727,14 +908,14 @@ function ArtistsContent() {
                   router.push(`/artists?${params.toString()}`);
                 }}
                 value={sort}
-                className="h-10 rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
+                className="h-9 rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
               >
-                <option value="views">Most Viewed</option>
+                <option value="views">Sorted by Views</option>
                 <option value="name">Name A-Z</option>
                 <option value="newest">Newest</option>
               </select>
 
-              <button className="flex cursor-pointer items-center gap-2 rounded-xl border border-black/10 px-5 h-10 text-sm text-gray-600">
+              <button className="flex h-9 cursor-pointer items-center gap-2 rounded-xl border border-black/10 px-5 text-sm text-gray-600">
                 <SlidersHorizontal size={16} />
                 Filters ({activeFilters})
               </button>
@@ -742,7 +923,7 @@ function ArtistsContent() {
               {activeFilters > 0 && (
                 <button
                   onClick={clearFilters}
-                  className="flex h-10 cursor-pointer items-center rounded-xl border border-black/10 px-5 text-sm text-gray-600 transition hover:bg-gray-50 hover:text-(--color-flagblue)"
+                  className="flex h-9 cursor-pointer items-center rounded-xl border border-black/10 px-5 text-sm text-gray-600 transition hover:bg-gray-50 hover:text-(--color-flagblue)"
                 >
                   Clear all
                 </button>
@@ -750,43 +931,72 @@ function ArtistsContent() {
             </div>
           </div>
 
-          <div className="lg:hidden">
-            {/* ROLES */}
-            <div className="mb-3 flex flex-wrap gap-3">
-              <div className="flex w-full flex-wrap gap-3">
-                {ROLE_FILTERS.map((item) => (
-                  <FilterPill
-                    key={item.key}
-                    label={item.label}
-                    active={role === item.key}
-                    onClick={() => handleFilter("role", item.key)}
-                    tone="blue"
-                  />
-                ))}
-              </div>
+          <div className="grid gap-2 lg:hidden">
+            <div className="flex justify-center">
+              <ContextToggle value={selectedContext} onChange={handleContextFilter} />
             </div>
 
-            <div className="my-4 h-px w-full bg-linear-to-r from-transparent via-[#8B0000]/25 to-transparent" />
-
-            {/* TAGS */}
-            <div className="flex flex-wrap gap-3">
-              <div className="flex w-full flex-wrap gap-3">
-                {MOBILE_TAG_FILTERS.map((item) => (
-                  <FilterPill
-                    key={item.key}
-                    label={item.label}
-                    active={
-                      item.key === "classical"
-                        ? genreFilter === "classical"
-                        : item.key === "christian"
-                          ? context === item.key
-                          : artistStatus === item.key
-                    }
-                    onClick={() => handleMobileTagFilter(item.key)}
-                    tone="red"
-                  />
+            <label className="block">
+              <span className="sr-only">Province</span>
+              <select
+                onChange={(event) => handleProvinceChange(event.target.value)}
+                value={province ?? ""}
+                className="h-9 w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
+              >
+                <option value="">All Provinces</option>
+                {provinces.map((item) => (
+                  <option key={item.province} value={item.province}>
+                    {item.province} ({item.count})
+                  </option>
                 ))}
-              </div>
+              </select>
+            </label>
+
+            <div className="grid grid-cols-2 gap-3">
+              <select
+                value={role ?? ""}
+                onChange={(event) => handleRoleChange(event.target.value)}
+                className="h-9 min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
+              >
+                <option value="">All Roles</option>
+                {ROLE_FILTERS.map((item) => (
+                  <option key={item.key} value={item.key}>
+                    {item.label}
+                  </option>
+                ))}
+              </select>
+
+              <select
+                onChange={(e) => {
+                  const params = new URLSearchParams(searchParams.toString());
+                  params.set("sort", e.target.value);
+                  params.set("page", "1");
+                  router.push(`/artists?${params.toString()}`);
+                }}
+                value={sort}
+                className="h-9 min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
+              >
+                <option value="views">Sorted by Views</option>
+                <option value="name">Name A-Z</option>
+                <option value="newest">Newest</option>
+              </select>
+            </div>
+
+            <StatusToggleGroup statuses={artistStatuses} onChange={handleStatusFilter} />
+
+            <div className="grid grid-cols-2 gap-3">
+              <button className="flex h-9 cursor-pointer items-center justify-center gap-2 rounded-xl border border-black/10 px-4 text-sm text-gray-600">
+                <SlidersHorizontal size={16} />
+                Filters ({activeFilters})
+              </button>
+
+              <button
+                onClick={clearFilters}
+                disabled={activeFilters === 0}
+                className="flex h-9 cursor-pointer items-center justify-center rounded-xl border border-black/10 px-4 text-sm text-gray-600 transition hover:bg-gray-50 hover:text-(--color-flagblue) disabled:cursor-default disabled:opacity-40"
+              >
+                Clear all
+              </button>
             </div>
           </div>
 
@@ -808,31 +1018,15 @@ function ArtistsContent() {
 
             <div className="my-4 h-px w-full bg-linear-to-r from-transparent via-[#8B0000]/25 to-transparent" />
 
-            <div className="flex flex-wrap items-center gap-3">
-              {CONTEXT_FILTERS.map((item) => (
-                <FilterPill
-                  key={item.key}
-                  label={item.label}
-                  active={context === item.key}
-                  onClick={() => handleDesktopFilter("context", item.key)}
-                  tone="red"
-                />
-              ))}
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <ContextToggle value={selectedContext} onChange={handleContextFilter} />
 
               <span
                 aria-hidden="true"
-                className="mx-1 h-8 w-px bg-linear-to-b from-transparent via-[#8B0000]/30 to-transparent"
+                className="mx-1 h-6 w-px bg-linear-to-b from-transparent via-[#8B0000]/30 to-transparent"
               />
 
-              {STATUS_FILTERS.map((item) => (
-                <FilterPill
-                  key={item.key}
-                  label={item.label}
-                  active={artistStatus === item.key}
-                  onClick={() => handleDesktopFilter("artist_status", item.key)}
-                  tone="red"
-                />
-              ))}
+              <StatusToggleGroup statuses={artistStatuses} onChange={handleStatusFilter} />
             </div>
           </div>
         </div>
@@ -842,10 +1036,20 @@ function ArtistsContent() {
         currentPage={currentPage}
         totalPages={totalPages}
         onPageChange={handlePageChange}
+        hideMobile
       />
 
       {/* GRID */}
       <section className="rounded-4xl border border-black/5 bg-white/80 backdrop-blur-sm p-6 sm:p-8 shadow-[0_4px_30px_rgba(0,0,0,0.03)]">
+        <div className="sm:hidden">
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={handlePageChange}
+            mobileOnly
+          />
+        </div>
+
         {loadError ? (
           <div className="flex min-h-60 flex-col items-center justify-center gap-4 text-center">
             <p className="text-sm text-gray-500">{loadError}</p>
@@ -869,13 +1073,14 @@ function ArtistsContent() {
             <p className="text-sm text-gray-500">No artists found.</p>
           </div>
         )}
-      </section>
 
-      <Pagination
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={handlePageChange}
-      />
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+          insideBox
+        />
+      </section>
     </main>
   );
 }

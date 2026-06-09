@@ -2,32 +2,65 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
+import CarouselArrows from "@/components/molecules/CarouselArrows";
 
-const decades = [
-  "1920s", "1930s", "1940s", "1950s", "1960s",
-  "1970s", "1980s", "1990s", "2000s", "2010s", "2020s"
-];
+const FIRST_ARCHIVE_DECADE = 1920;
+const currentYear = new Date().getFullYear();
+const currentDecadeStart = Math.floor(currentYear / 10) * 10;
+const currentDecade = `${currentDecadeStart}s`;
 
-const yearsByDecade: Record<string, number[]> = {
-  "1920s": Array.from({ length: 10 }, (_, i) => 1920 + i),
-  "1930s": Array.from({ length: 10 }, (_, i) => 1930 + i),
-  "1940s": Array.from({ length: 10 }, (_, i) => 1940 + i),
-  "1950s": Array.from({ length: 10 }, (_, i) => 1950 + i),
-  "1960s": Array.from({ length: 10 }, (_, i) => 1960 + i),
-  "1970s": Array.from({ length: 10 }, (_, i) => 1970 + i),
-  "1980s": Array.from({ length: 10 }, (_, i) => 1980 + i),
-  "1990s": Array.from({ length: 10 }, (_, i) => 1990 + i),
-  "2000s": Array.from({ length: 10 }, (_, i) => 2000 + i),
-  "2010s": Array.from({ length: 10 }, (_, i) => 2010 + i),
-  "2020s": Array.from({ length: 10 }, (_, i) => 2020 + i),
+const decades = Array.from(
+  { length: (currentDecadeStart - FIRST_ARCHIVE_DECADE) / 10 + 1 },
+  (_, index) => `${currentDecadeStart - index * 10}s`,
+);
+
+const yearsByDecade = decades.reduce<Record<string, number[]>>((map, decade) => {
+  const start = Number(decade.replace("s", ""));
+  const end = decade === currentDecade ? currentYear : start + 9;
+  map[decade] = Array.from({ length: end - start + 1 }, (_, index) => end - index);
+  return map;
+}, {});
+
+type ArchiveCountsResponse = {
+  ok: boolean;
+  decadeCounts?: Record<string, number>;
 };
 
-export default function DecadeSelector({ onYearSelect }: { onYearSelect: (year: number | null) => void }) {
+export default function DecadeSelector({
+  selectedYear,
+  onYearSelect,
+}: {
+  selectedYear: number | null;
+  onYearSelect: (year: number | null) => void;
+}) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const [selectedDecade, setSelectedDecade] = useState<string | null>(null);
-  const [selectedYear, setSelectedYear] = useState<number | null>(null);
+  const selectedDecade = selectedYear ? `${Math.floor(selectedYear / 10) * 10}s` : null;
   const [isOverflowing, setIsOverflowing] = useState(false);
+  const [decadeCounts, setDecadeCounts] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    let cancelled = false;
+
+    fetch("/api/archive/counts")
+      .then(async (response) => {
+        const result = (await response.json()) as ArchiveCountsResponse;
+        if (!response.ok || !result.ok) return;
+
+        if (!cancelled) {
+          setDecadeCounts(result.decadeCounts ?? {});
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setDecadeCounts({});
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   useEffect(() => {
     const el = scrollRef.current;
@@ -57,34 +90,16 @@ export default function DecadeSelector({ onYearSelect }: { onYearSelect: (year: 
 
   return (
     <section className="relative overflow-hidden rounded-xl border border-black/5 bg-white/60 backdrop-blur-md">
-      <div className="px-5 py-6 sm:px-6">
+      <CarouselArrows onLeft={() => scroll("left")} onRight={() => scroll("right")} />
+
+      <div className="px-5 py-3 sm:px-6">
         <div className="w-full">
 
           {/* Header */}
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-sm font-medium uppercase tracking-wider text-[#002D62]">
+          <div className="section-header mb-0 flex items-center justify-between gap-3">
+            <h2>
               Browse Archive by Decade
             </h2>
-
-            <div className="hidden sm:flex gap-1.5">
-              <button
-                onClick={() => scroll("left")}
-                className="p-1.5 rounded-md border border-black/5 hover:bg-[#002D62] hover:text-white transition-all shadow-xs cursor-pointer"
-              >
-                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-
-              <button
-                onClick={() => scroll("right")}
-                className="p-1.5 rounded-md border border-black/5 hover:bg-[#002D62] hover:text-white transition-all shadow-xs cursor-pointer"
-              >
-                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
           </div>
 
           {/* DECADE CAROUSEL */}
@@ -101,14 +116,13 @@ export default function DecadeSelector({ onYearSelect }: { onYearSelect: (year: 
                 <button
                   key={decade}
                   onClick={() => {
-                    setSelectedDecade(isActive ? null : decade);
-                    setSelectedYear(null);
-                    onYearSelect(null);
+                    const nextYear = yearsByDecade[decade][0] ?? null;
+                    onYearSelect(nextYear);
                   }}
                   className="shrink-0 w-28 group"
                 >
                   <div
-                    className={`relative aspect-[1/0.7] overflow-hidden rounded-lg border transition-all duration-300 ease-out flex flex-col items-center justify-center shadow-[0_2px_4px_rgba(0,0,0,0.05)]
+                    className={`relative h-16 overflow-hidden rounded-lg border transition-all duration-300 ease-out flex flex-col items-center justify-center shadow-[0_2px_4px_rgba(0,0,0,0.05)]
                       ${isActive
                         ? "bg-[#002D62] border-[#002D62]"
                         : "bg-white border-[#B0C4DE] hover:bg-[#002D62] hover:border-[#002D62]"
@@ -116,28 +130,19 @@ export default function DecadeSelector({ onYearSelect }: { onYearSelect: (year: 
                       group-hover:scale-[1.03]
                     `}
                   >
-                    <svg
-                      width="28"
-                      height="28"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      className={`mb-1 transition-colors ${
-                        isActive ? "text-white" : "text-[#002D62] group-hover:text-white"
-                      }`}
-                    >
-                      <path d="M9 18V5l12-2v13" strokeLinecap="round" strokeLinejoin="round" />
-                      <circle cx="6" cy="18" r="3" />
-                      <circle cx="18" cy="16" r="3" />
-                    </svg>
-
                     <span
                       className={`text-lg font-semibold transition-colors ${
                         isActive ? "text-white" : "text-[#002D62] group-hover:text-white"
                       }`}
                     >
                       {decade}
+                    </span>
+                    <span
+                      className={`mt-0.5 text-[10px] font-medium leading-none transition-colors ${
+                        isActive ? "text-white/80" : "text-gray-500 group-hover:text-white/80"
+                      }`}
+                    >
+                      {(decadeCounts[decade] ?? 0).toLocaleString()} songs
                     </span>
                   </div>
                 </button>
@@ -159,7 +164,6 @@ export default function DecadeSelector({ onYearSelect }: { onYearSelect: (year: 
                     key={year}
                     onClick={() => {
                       const newYear = isActive ? null : year;
-                      setSelectedYear(newYear);
                       onYearSelect(newYear);
                     }}
                     className="flex-[1_1_60px] max-w-22.5 group"

@@ -191,7 +191,15 @@
     }
 
     .section-header {
-        @apply flex items-center justify-between mb-0;
+        @apply flex items-center justify-between mb-4;
+    }
+
+    .section-header>h2 {
+        @apply mb-0 leading-none;
+    }
+
+    .section-header>a {
+        @apply leading-none;
     }
 
     .section-inner {

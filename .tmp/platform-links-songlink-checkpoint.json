@@ -5,11 +5,11 @@
     "amazon_music",
     "youtube"
   ],
-  "currentOffset": 1000,
-  "nextRowIndex": 962,
+  "currentOffset": 2000,
+  "nextRowIndex": 304,
   "pageSize": 1000,
   "startedAt": "2026-06-04T16:54:05.636Z",
-  "updatedAt": "2026-06-08T19:29:51.462Z",
-  "totalInserted": 4872,
-  "totalPages": 1
+  "updatedAt": "2026-06-09T17:22:30.724Z",
+  "totalInserted": 5740,
+  "totalPages": 2
 }

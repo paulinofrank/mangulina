@@ -1,10 +1,16 @@
 import { NextResponse } from "next/server";
 
-import { getSongsByYear } from "@/lib/getSongsByYear";
+import { getSongsByYear, getTopSongsByViews } from "@/lib/getSongsByYear";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const yearParam = searchParams.get("year");
+
+  if (!yearParam) {
+    const songs = await getTopSongsByViews(100);
+    return NextResponse.json({ ok: true, songs });
+  }
+
   const year = yearParam ? Number(yearParam) : NaN;
 
   if (!Number.isInteger(year) || year < 1800 || year > 2100) {
