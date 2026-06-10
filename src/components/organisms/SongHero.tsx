@@ -16,6 +16,7 @@ type SongHeroProps = {
   views?: number | null;
   coverImageUrl?: string | null;
   releaseTitle?: string | null;
+  releaseSlug?: string | null;
 };
 
 function formatDuration(ms: number): string {
@@ -63,6 +64,7 @@ export default function SongHero({
   views,
   coverImageUrl,
   releaseTitle,
+  releaseSlug,
 }: SongHeroProps) {
   const genreChips = [genre, subgenre].filter(Boolean) as string[];
   const isrcText = (isrcs ?? []).filter(Boolean).join(" · ");
@@ -126,7 +128,18 @@ export default function SongHero({
                     <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-400">
                       {fact.label}
                     </dt>
-                    <dd className="min-w-0 truncate text-gray-600">{fact.value}</dd>
+                    <dd className="min-w-0 truncate text-gray-600">
+                      {fact.label === "Album" && releaseSlug ? (
+                        <Link
+                          href={`/releases/${releaseSlug}`}
+                          className="transition-colors hover:text-[#CE1126]"
+                        >
+                          {fact.value}
+                        </Link>
+                      ) : (
+                        fact.value
+                      )}
+                    </dd>
                   </div>
                 ))}
 

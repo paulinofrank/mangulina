@@ -88,9 +88,18 @@ export default async function ArtistDiscographyGrouped({
                       </div>
 
                       <div className="min-w-0 flex-1 leading-tight">
-                        <p className="text-(--color-flagblue) text-sm font-normal truncate">
-                          {release.release_title}
-                        </p>
+                        {release.release_slug ? (
+                          <Link
+                            href={`/releases/${release.release_slug}`}
+                            className="block truncate text-sm font-normal text-(--color-flagblue) underline-offset-4 hover:text-(--color-wikicrimson) hover:underline"
+                          >
+                            {release.release_title}
+                          </Link>
+                        ) : (
+                          <p className="truncate text-sm font-normal text-(--color-flagblue)">
+                            {release.release_title}
+                          </p>
+                        )}
 
                         <p className="text-xs text-gray-500 tracking-wide mt-0.5">
                           {release.release_year} · {release.release_type} ·{" "}

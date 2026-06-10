@@ -225,6 +225,7 @@ export default async function SongProfilePage({ params }: PageProps) {
             views={song.views}
             coverImageUrl={coverImageUrl}
             releaseTitle={song.release_title}
+            releaseSlug={song.release_slug}
           />
 
           <div className="space-y-5">

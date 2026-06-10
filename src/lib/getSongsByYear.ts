@@ -55,22 +55,40 @@ async function filterToPublishedArtists(rows: any[]) {
   return rows.filter((row: any) => !row.artist_id || publishedArtistIds.has(row.artist_id));
 }
 
-export async function getSongsByYear(year: number) {
+type SongsByYearOptions = {
+  limit?: number;
+  offset?: number;
+  sort?: "title" | "views";
+};
+
+export async function getSongsByYear(year: number, options: SongsByYearOptions = {}) {
+  const sort = options.sort === "views" ? "views" : "title";
+
   const { data, error } = await supabase
     .from("recordings_with_release_info")
     .select("*")
     .eq("release_year_actual", year)
-    .order("recording_title", { ascending: true });
+    .order(sort === "views" ? "views" : "recording_title", {
+      ascending: sort === "title",
+      nullsFirst: false,
+    });
 
   if (error) {
     console.error(error);
-    return [];
+    return { songs: [], total: 0, hasMore: false };
   }
 
   const rows = data ?? [];
   const visibleRows = await filterToPublishedArtists(rows);
+  const offset = Math.max(0, options.offset ?? 0);
+  const limit = Math.max(1, options.limit ?? 50);
+  const songs = await addRecordingSlugs(visibleRows.slice(offset, offset + limit));
 
-  return addRecordingSlugs(visibleRows);
+  return {
+    songs,
+    total: visibleRows.length,
+    hasMore: offset + songs.length < visibleRows.length,
+  };
 }
 
 export async function getTopSongsByViews(limit = 100) {

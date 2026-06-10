@@ -8,6 +8,8 @@ export type SearchResult = {
   subtitle: string | null;
   year: number | null;
   cover_url: string | null;
+  artist_name?: string | null;
+  release_title?: string | null;
 };
 
 export type GlobalSearchResponse = {
@@ -30,6 +32,68 @@ function withCurrentCoverArtUrls(results: SearchResult[]) {
   return results.map((result) => ({
     ...result,
     cover_url: normalizeCoverArtUrl(result.cover_url),
+  }));
+}
+
+async function withSongReleaseDetails(results: SearchResult[]) {
+  const recordingIds = results.map((result) => result.id).filter(Boolean);
+
+  if (!recordingIds.length) return results;
+
+  const { data, error } = await supabase
+    .from("recordings_with_release_info")
+    .select("recording_id, artist_name, release_title")
+    .in("recording_id", recordingIds);
+
+  if (error) {
+    console.error("globalSearch song release details error:", error);
+    return results;
+  }
+
+  const detailsByRecordingId = new Map(
+    ((data ?? []) as Array<{
+      recording_id: string;
+      artist_name: string | null;
+      release_title: string | null;
+    }>).map((row) => [row.recording_id, row]),
+  );
+
+  return results.map((result) => {
+    const details = detailsByRecordingId.get(result.id);
+
+    return {
+      ...result,
+      artist_name: details?.artist_name ?? result.subtitle,
+      release_title: details?.release_title ?? null,
+    };
+  });
+}
+
+async function withReleaseSlugs(results: SearchResult[]) {
+  const releaseIds = results.map((result) => result.id).filter(Boolean);
+
+  if (!releaseIds.length) return results;
+
+  const { data, error } = await supabase
+    .from("releases")
+    .select("id, slug")
+    .in("id", releaseIds);
+
+  if (error) {
+    console.error("globalSearch release slug error:", error);
+    return results;
+  }
+
+  const slugByReleaseId = new Map(
+    ((data ?? []) as Array<{ id: string; slug: string | null }>).map((row) => [
+      row.id,
+      row.slug,
+    ]),
+  );
+
+  return results.map((result) => ({
+    ...result,
+    slug: slugByReleaseId.get(result.id) ?? result.slug,
   }));
 }
 
@@ -140,7 +204,7 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
     artists: await withExistingArtistImages(
       publishedRpcArtists.length ? publishedRpcArtists : fallbackArtists
     ),
-    songs: withCurrentCoverArtUrls(results?.songs ?? []),
-    releases: withCurrentCoverArtUrls(results?.releases ?? []),
+    songs: await withSongReleaseDetails(withCurrentCoverArtUrls(results?.songs ?? [])),
+    releases: await withReleaseSlugs(withCurrentCoverArtUrls(results?.releases ?? [])),
   };
 }

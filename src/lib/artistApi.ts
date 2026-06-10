@@ -168,6 +168,7 @@ export type DiscographyTrack = {
 
 export type DiscographyRelease = {
   release_id: string;
+  release_slug: string | null;
   release_title: string;
   release_year: number | null;
   release_type: string | null;
@@ -197,7 +198,7 @@ export async function getArtistDiscography(
 
   const rows = (data ?? []) as DiscographyRow[];
 
-  // Fetch slugs for all recordings returned by the RPC
+  // Fetch slugs for all recordings and releases returned by the RPC
   const allRecordingIds = [...new Set(rows.map((r) => r.recording_id).filter(Boolean))];
   const slugMap = new Map<string, string | null>();
   if (allRecordingIds.length > 0) {
@@ -210,12 +211,25 @@ export async function getArtistDiscography(
     }
   }
 
+  const allReleaseIds = [...new Set(rows.map((r) => r.release_id).filter(Boolean))];
+  const releaseSlugMap = new Map<string, string | null>();
+  if (allReleaseIds.length > 0) {
+    const { data: releaseSlugRows } = await supabase
+      .from("releases")
+      .select("id, slug")
+      .in("id", allReleaseIds);
+    for (const row of (releaseSlugRows ?? []) as { id: string; slug: string | null }[]) {
+      releaseSlugMap.set(row.id, row.slug);
+    }
+  }
+
   const releases = new Map<string, DiscographyRelease>();
 
   for (const row of rows) {
     if (!releases.has(row.release_id)) {
       releases.set(row.release_id, {
         release_id: row.release_id,
+        release_slug: releaseSlugMap.get(row.release_id) ?? null,
         release_title: row.release_title,
         release_year: row.release_year,
         release_type: row.release_type,

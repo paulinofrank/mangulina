@@ -16,6 +16,7 @@ export type SongRecord = {
   release_year_actual?: number | null; // view: release_year_actual
   release_id?: string | null;        // view: release_id (used to build cover URL)
   release_title?: string | null;     // view: release_title (album)
+  release_slug?: string | null;      // fetched separately from releases.slug
   label?: string | null;             // view: label
   duration?: number | null;          // view: duration (milliseconds)
   country?: string | null;           // view: country (ISO code)
@@ -218,6 +219,15 @@ export async function getSongById(id: string): Promise<SongRecord | null> {
 
   if (!(await isPublishedArtist(song.artist_id))) {
     return null;
+  }
+
+  if (song.release_id) {
+    const { data: rel } = await supabase
+      .from("releases")
+      .select("slug")
+      .eq("id", song.release_id)
+      .maybeSingle();
+    song.release_slug = rel?.slug ?? null;
   }
 
   const editorial = await getRecordingEditorial(song.recording_id);

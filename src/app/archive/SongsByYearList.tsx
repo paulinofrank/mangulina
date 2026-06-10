@@ -18,7 +18,17 @@ type SongRow = {
   views?: number | null;
 };
 
-export default function SongsByYearList({ songs }: { songs: SongRow[] }) {
+export default function SongsByYearList({
+  songs,
+  hasMore = false,
+  loadingMore = false,
+  onShowMore,
+}: {
+  songs: SongRow[];
+  hasMore?: boolean;
+  loadingMore?: boolean;
+  onShowMore?: () => void;
+}) {
   const supabaseBase =
     "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/";
 
@@ -90,6 +100,17 @@ export default function SongsByYearList({ songs }: { songs: SongRow[] }) {
           </Link>
         );
       })}
+
+      {hasMore && (
+        <button
+          type="button"
+          onClick={onShowMore}
+          disabled={loadingMore}
+          className="block w-full py-3 text-center text-sm font-semibold uppercase tracking-wider text-[#8B0000] transition hover:bg-[#8B0000]/5 hover:text-[#6B0000] disabled:cursor-wait disabled:text-[#8B0000]/50"
+        >
+          {loadingMore ? "Loading more..." : "Show more..."}
+        </button>
+      )}
     </div>
   );
 }

@@ -9,7 +9,7 @@ type SearchPageProps = {
 function getHref(result: SearchResult) {
   if (result.type === "artist" && result.slug) return `/artists/${result.slug}`;
   if (result.type === "song") return `/songs/${result.slug ?? result.id}`;
-  if (result.type === "release") return `/releases/${result.id}`;
+  if (result.type === "release" && result.slug) return `/releases/${result.slug}`;
   return "#";
 }
 
@@ -30,6 +30,14 @@ function ResultGroup({
 }) {
   if (!results.length) return null;
 
+  function getMetaLine(result: SearchResult) {
+    if (result.type === "song") {
+      return [result.year, result.release_title].filter(Boolean).join(" · ");
+    }
+
+    return [result.year, result.subtitle].filter(Boolean).join(" · ");
+  }
+
   return (
     <section className="rounded-2xl border border-gray-100 bg-white p-5 shadow-sm">
       <h2 className="mb-4 text-sm font-black uppercase tracking-widest text-(--color-wikicrimson)">
@@ -37,37 +45,48 @@ function ResultGroup({
       </h2>
 
       <div className="space-y-2">
-        {results.map((result) => (
-          <Link
-            key={`${result.type}-${result.id}`}
-            href={getHref(result)}
-            className="group flex items-center gap-4 rounded-xl border border-gray-100 p-3 transition hover:border-(--color-wikicrimson) hover:bg-gray-50"
-          >
-            {result.cover_url ? (
-              <div className="h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-gray-100">
-                <img
-                  src={result.cover_url}
-                  alt={result.title}
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
+        {results.map((result) => {
+          const metaLine = getMetaLine(result);
+
+          return (
+            <Link
+              key={`${result.type}-${result.id}`}
+              href={getHref(result)}
+              className="group flex items-center gap-4 rounded-xl border border-gray-100 p-3 transition hover:border-(--color-wikicrimson) hover:bg-gray-50"
+            >
+              {result.cover_url ? (
+                <div className="h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-gray-100">
+                  <img
+                    src={result.cover_url}
+                    alt={result.title}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              ) : (
+                <PlaceholderCover label={result.title} />
+              )}
+
+              <div className="min-w-0 flex-1">
+                <h3 className="truncate font-bold text-gray-950 group-hover:text-(--color-wikicrimson)">
+                  {result.title}
+                </h3>
+
+                {metaLine && (
+                  <p className="mt-1 truncate text-sm text-gray-500">
+                    {metaLine}
+                  </p>
+                )}
+
+                {result.type === "song" && result.artist_name && (
+                  <p className="truncate text-sm text-gray-500">
+                    by {result.artist_name}
+                  </p>
+                )}
               </div>
-            ) : (
-              <PlaceholderCover label={result.title} />
-            )}
-
-            <div className="min-w-0 flex-1">
-              <h3 className="truncate font-bold text-gray-950 group-hover:text-(--color-wikicrimson)">
-                {result.title}
-              </h3>
-
-              <p className="mt-1 truncate text-sm text-gray-500">
-                {result.year ? `${result.year} · ` : ""}
-                {result.subtitle || ""}
-              </p>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          );
+        })}
       </div>
     </section>
   );
