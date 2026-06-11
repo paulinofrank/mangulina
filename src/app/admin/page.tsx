@@ -10,6 +10,7 @@ import {
   LogOut,
   Mic2,
   Music,
+  Users,
   UserPlus,
 } from "lucide-react";
 import AdminHomepageSpotlight from "@/components/organisms/AdminHomepageSpotlight";
@@ -80,6 +81,15 @@ const adminTools: AdminTool[] = [
     href: "/admin/platform-links",
     status: "available",
     Icon: ExternalLink,
+  },
+  {
+    title: "Contributors Manager",
+    eyebrow: "Contributors",
+    description:
+      "Create and maintain contributor profiles, specialties, publishing status, ordering, and profile images.",
+    href: "/admin/contributors",
+    status: "available",
+    Icon: Users,
   },
   {
     title: "Admin Invites",

@@ -13,7 +13,7 @@ const SOCIAL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="mt-12 border-t border-black/10 bg-white/50">
+    <footer className="mt-2 border-t border-black/10 bg-white/50">
       <div className="mx-4 pt-10 pb-28 sm:mx-8 sm:py-10 lg:mx-12">
         <div className="flex flex-col gap-6">
 
@@ -37,6 +37,7 @@ export default function Footer() {
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-base font-normal text-gray-600">
             <Link href="/about" className="hover:text-[#002D62] transition-colors">About</Link>
             <Link href="/contact" className="hover:text-[#002D62] transition-colors">Contact</Link>
+            <Link href="/contributors" className="hover:text-[#002D62] transition-colors">Contributors</Link>
             <Link href="/dmca" className="hover:text-[#002D62] transition-colors">Copyrights & DMCA</Link>
           </div>
 
