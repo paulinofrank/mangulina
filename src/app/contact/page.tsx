@@ -221,7 +221,7 @@ export default function ContactPage() {
               <a
                 key={email}
                 href={`mailto:${email}`}
-                className="flex items-center gap-4 rounded-2xl border border-[#002D62]/10 bg-[#002D62]/[0.03] p-5 text-[#002D62] transition hover:border-[#8B0000]/25 hover:bg-[#8B0000]/[0.03] hover:text-[#8B0000]"
+                className="flex items-center gap-4 rounded-2xl border border-[#002D62]/10 bg-[#002D62]/3 p-5 text-[#002D62] transition hover:border-[#8B0000]/25 hover:bg-[#8B0000]/3 hover:text-[#8B0000]"
               >
                 <Mail className="h-5 w-5 shrink-0" aria-hidden={true} />
                 <span className="min-w-0 break-all font-semibold">{email}</span>
@@ -230,7 +230,7 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section className="rounded-3xl border border-[#8B0000]/15 bg-[#8B0000]/[0.03] p-8 shadow-sm sm:p-10">
+        <section className="rounded-3xl border border-[#8B0000]/15 bg-[#8B0000]/3 p-8 shadow-sm sm:p-10">
           <SectionEyebrow>Help Preserve Dominican Music</SectionEyebrow>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-gray-700">
