@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import ArtistImage from "@/components/atoms/ArtistImage";
+import BirthdayBrowseMode, {
+  type BirthdayBrowseModeValue,
+} from "@/components/artists/BirthdayBrowseMode";
+import BirthdayYearSelect from "@/components/artists/BirthdayYearSelect";
 import { getSupabaseClient } from "@/lib/supabase";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 
@@ -41,6 +45,22 @@ type BirthdayMonthGroup = {
   days: BirthdayDayGroup[];
 };
 
+type BirthdayZodiacGroup = {
+  name: string;
+  artists: BirthdayArtist[];
+};
+
+type BirthYearRow = {
+  birth_year: number | null;
+};
+
+type ArtistBirthdaysPageProps = {
+  searchParams: Promise<{
+    view?: string | string[];
+    year?: string | string[];
+  }>;
+};
+
 const MONTH_NAMES = [
   "January",
   "February",
@@ -54,6 +74,21 @@ const MONTH_NAMES = [
   "October",
   "November",
   "December",
+] as const;
+
+const ZODIAC_SIGNS = [
+  "Aries",
+  "Taurus",
+  "Gemini",
+  "Cancer",
+  "Leo",
+  "Virgo",
+  "Libra",
+  "Scorpio",
+  "Sagittarius",
+  "Capricorn",
+  "Aquarius",
+  "Pisces",
 ] as const;
 
 const ARTIST_SELECT = [
@@ -112,6 +147,38 @@ function groupArtistsByBirthday(artists: BirthdayArtist[]): BirthdayMonthGroup[]
     });
 }
 
+function getAvailableBirthYears(rows: BirthYearRow[]) {
+  return Array.from(
+    new Set(
+      rows
+        .map((row) => row.birth_year)
+        .filter(
+          (year): year is number =>
+            year !== null && Number.isInteger(year) && year > 0,
+        ),
+    ),
+  ).sort((a, b) => b - a);
+}
+
+function getSelectedYear(
+  value: string | string[] | undefined,
+  availableYears: number[],
+) {
+  if (typeof value !== "string" || !/^\d{4}$/.test(value)) return undefined;
+
+  const year = Number(value);
+  return availableYears.includes(year) ? year : undefined;
+}
+
+function getBrowseMode(
+  view: string | string[] | undefined,
+  selectedYear: number | undefined,
+): BirthdayBrowseModeValue {
+  if (view === "zodiac") return "zodiac";
+  if (view === "year" || selectedYear) return "year";
+  return "month";
+}
+
 function formatArtistDetail(value: string | null) {
   if (!value) return null;
 
@@ -132,14 +199,54 @@ function formatBirthDate(dateOfBirth: string) {
   return `${String(day).padStart(2, "0")}-${monthName}-${year}`;
 }
 
-function getLifeStatus(artist: BirthdayArtist) {
-  if (artist.death_year) return `Deceased on ${artist.death_year}`;
+function getZodiacSign(month: number, day: number) {
+  const monthDay = month * 100 + day;
 
+  if (monthDay >= 1222 || monthDay <= 119) return "Capricorn";
+  if (monthDay <= 218) return "Aquarius";
+  if (monthDay <= 320) return "Pisces";
+  if (monthDay <= 419) return "Aries";
+  if (monthDay <= 520) return "Taurus";
+  if (monthDay <= 620) return "Gemini";
+  if (monthDay <= 722) return "Cancer";
+  if (monthDay <= 822) return "Leo";
+  if (monthDay <= 922) return "Virgo";
+  if (monthDay <= 1022) return "Libra";
+  if (monthDay <= 1121) return "Scorpio";
+  return "Sagittarius";
+}
+
+function groupArtistsByZodiac(artists: BirthdayArtist[]): BirthdayZodiacGroup[] {
+  const groups = new Map<string, BirthdayArtist[]>();
+
+  for (const artist of artists) {
+    const sign = getZodiacSign(artist.birth_month, artist.birth_day);
+    const signArtists = groups.get(sign) ?? [];
+    signArtists.push(artist);
+    groups.set(sign, signArtists);
+  }
+
+  return ZODIAC_SIGNS.map((name) => ({
+    name,
+    artists: (groups.get(name) ?? []).slice().sort(
+      (a, b) =>
+        b.date_of_birth.localeCompare(a.date_of_birth) ||
+        a.name.localeCompare(b.name, undefined, { sensitivity: "base" }),
+    ),
+  })).filter((group) => group.artists.length > 0);
+}
+
+function getLifeStatus(artist: BirthdayArtist) {
   const [year, month, day] = artist.date_of_birth
     .split("T")[0]
     .split("-")
     .map(Number);
   if (!year || !month || !day) return null;
+
+  const zodiacSign = getZodiacSign(month, day);
+  if (artist.death_year) {
+    return { label: "Deceased", zodiacSign };
+  }
 
   const today = new Date();
   let age = today.getFullYear() - year;
@@ -148,7 +255,7 @@ function getLifeStatus(artist: BirthdayArtist) {
     (today.getMonth() + 1 === month && today.getDate() >= day);
 
   if (!birthdayHasPassed) age -= 1;
-  return `${age} years old`;
+  return { label: `${age} years old`, zodiacSign };
 }
 
 function SectionEyebrow({ children }: { children: React.ReactNode }) {
@@ -179,7 +286,8 @@ function BirthdayArtistRow({ artist }: { artist: BirthdayArtist }) {
           {artist.name}
           {lifeStatus && (
             <span className="text-gray-600">
-              {" "}· {lifeStatus}
+              {" "}· {lifeStatus.label}
+              <span className="hidden sm:inline"> · {lifeStatus.zodiacSign}</span>
             </span>
           )}
         </span>
@@ -192,15 +300,42 @@ function BirthdayArtistRow({ artist }: { artist: BirthdayArtist }) {
   );
 }
 
-export default async function ArtistBirthdaysPage() {
-  const { data, error } = await getSupabaseClient()
+export default async function ArtistBirthdaysPage({
+  searchParams,
+}: ArtistBirthdaysPageProps) {
+  const params = await searchParams;
+  const supabase = getSupabaseClient();
+  const { data: yearData, error: yearError } = await supabase
+    .from("artists")
+    .select("birth_year")
+    .eq("status", "published")
+    .not("date_of_birth", "is", null)
+    .not("birth_year", "is", null);
+
+  const availableYears = yearError
+    ? []
+    : getAvailableBirthYears((yearData ?? []) as BirthYearRow[]);
+  const selectedYear = getSelectedYear(params.year, availableYears);
+  const browseMode = getBrowseMode(params.view, selectedYear);
+
+  let artistQuery = supabase
     .from("artists")
     .select(ARTIST_SELECT)
     .eq("status", "published")
-    .not("date_of_birth", "is", null)
-    .order("birth_month", { ascending: true })
-    .order("birth_day", { ascending: true })
-    .order("name", { ascending: true });
+    .not("date_of_birth", "is", null);
+
+  artistQuery = browseMode === "year" && selectedYear
+    ? artistQuery
+        .eq("birth_year", selectedYear)
+        .order("date_of_birth", { ascending: true })
+        .order("name", { ascending: true })
+    : artistQuery
+        .order("birth_month", { ascending: true })
+        .order("birth_day", { ascending: true })
+        .order("name", { ascending: true });
+
+  const { data, error: artistError } = await artistQuery;
+  const error = yearError ?? artistError;
 
   if (error) {
     console.error("Artist birthdays fetch failed:", error);
@@ -208,10 +343,11 @@ export default async function ArtistBirthdaysPage() {
 
   const artists = error ? [] : ((data ?? []) as unknown as BirthdayArtist[]);
   const monthGroups = groupArtistsByBirthday(artists);
+  const zodiacGroups = groupArtistsByZodiac(artists);
 
   return (
-    <main className="mx-auto max-w-6xl px-6 pb-3 pt-20 sm:pt-32">
-      <header className="mb-10 rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-12">
+    <main className="mx-auto max-w-6xl px-6 pb-3 pt-20">
+      <header className="mb-10 rounded-3xl border border-black/10 bg-white px-8 py-6 shadow-sm sm:px-12 sm:py-10">
         <SectionEyebrow>Birthday Archive</SectionEyebrow>
 
         <h1 className="mb-4 text-3xl font-normal tracking-tight text-gray-800 sm:text-4xl">
@@ -222,6 +358,12 @@ export default async function ArtistBirthdaysPage() {
           Browse Dominican artists by birthday and discover the people who
           helped shape Dominican music across generations.
         </p>
+
+        <BirthdayBrowseMode mode={browseMode} />
+
+        {!yearError && browseMode === "year" && (
+          <BirthdayYearSelect years={availableYears} selectedYear={selectedYear} />
+        )}
       </header>
 
       {error ? (
@@ -230,6 +372,78 @@ export default async function ArtistBirthdaysPage() {
             The birthday archive is temporarily unavailable.
           </p>
         </section>
+      ) : browseMode === "year" && selectedYear ? (
+        <section aria-labelledby="selected-birth-year">
+          <div className="mb-5">
+            <h2
+              id="selected-birth-year"
+              className="mb-0! text-base font-normal normal-case! tracking-normal! text-[#002D62]"
+            >
+              Artists born in {selectedYear}
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-gray-600">
+              Showing Dominican artists in Mangulina born in {selectedYear},
+              ordered by date of birth.
+            </p>
+          </div>
+
+          {artists.length === 0 ? (
+            <div className="rounded-3xl border border-black/10 bg-white p-8 text-center shadow-sm sm:p-10">
+              <p className="text-base text-gray-600">
+                No published artists with birthdays in this year are currently
+                available.
+              </p>
+            </div>
+          ) : (
+            <div className="overflow-hidden rounded-xl border border-black/5 bg-[#FAF9F6] px-2 shadow-sm sm:px-3">
+              {artists.map((artist) => (
+                <BirthdayArtistRow key={artist.id} artist={artist} />
+              ))}
+            </div>
+          )}
+        </section>
+      ) : browseMode === "year" ? (
+        <section className="rounded-3xl border border-black/10 bg-white p-8 text-center shadow-sm sm:p-10">
+          <p className="text-base text-gray-600">
+            Select a birth year to browse artists in date-of-birth order.
+          </p>
+        </section>
+      ) : browseMode === "zodiac" ? (
+        zodiacGroups.length === 0 ? (
+          <section className="rounded-3xl border border-black/10 bg-white p-8 text-center shadow-sm sm:p-10">
+            <p className="text-base text-gray-600">
+              No artist birthdays are currently available.
+            </p>
+          </section>
+        ) : (
+          <section aria-label="Artist birthdays by zodiacal sign" className="space-y-4">
+            {zodiacGroups.map((zodiacGroup) => (
+              <details
+                key={zodiacGroup.name}
+                className="group overflow-hidden rounded-3xl border border-black/10 bg-white shadow-sm"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-2 text-[#002D62] transition hover:bg-[#FAF9F6] sm:px-8 [&::-webkit-details-marker]:hidden">
+                  <h2 className="mb-0! text-sm font-normal normal-case! leading-none! tracking-normal!">
+                    <span className="uppercase">{zodiacGroup.name}</span>{" "}
+                    <span>({zodiacGroup.artists.length} Artists)</span>
+                  </h2>
+                  <ChevronDown
+                    className="h-5 w-5 shrink-0 transition-transform duration-200 group-open:rotate-180"
+                    aria-hidden={true}
+                  />
+                </summary>
+
+                <div className="border-t border-black/5 px-6 py-7 sm:px-8 sm:py-9">
+                  <div className="overflow-hidden rounded-xl border border-black/5 bg-[#FAF9F6] px-2 sm:px-3">
+                    {zodiacGroup.artists.map((artist) => (
+                      <BirthdayArtistRow key={artist.id} artist={artist} />
+                    ))}
+                  </div>
+                </div>
+              </details>
+            ))}
+          </section>
+        )
       ) : monthGroups.length === 0 ? (
         <section className="rounded-3xl border border-black/10 bg-white p-8 text-center shadow-sm sm:p-10">
           <p className="text-base text-gray-600">
@@ -244,7 +458,7 @@ export default async function ArtistBirthdaysPage() {
               className="group overflow-hidden rounded-3xl border border-black/10 bg-white shadow-sm"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-2 text-[#002D62] transition hover:bg-[#FAF9F6] sm:px-8 [&::-webkit-details-marker]:hidden">
-                <h2 className="!mb-0 text-sm font-normal !normal-case !leading-none !tracking-normal">
+                <h2 className="mb-0! text-sm font-normal normal-case! leading-none! tracking-normal!">
                   <span className="uppercase">{monthGroup.name}</span>{" "}
                   <span>({monthGroup.count} Artists)</span>
                 </h2>

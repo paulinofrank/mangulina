@@ -14,11 +14,11 @@ const SOCIAL_LINKS = [
 export default function Footer() {
   return (
     <footer className="mt-2 border-t border-black/10 bg-white/50">
-      <div className="mx-4 pt-10 pb-28 sm:mx-8 sm:py-10 lg:mx-12">
-        <div className="flex flex-col gap-6">
+      <div className="mx-5 pb-32 pt-8 sm:mx-8 sm:pb-28 sm:pt-10 lg:mx-12">
+        <div className="flex flex-col gap-7 sm:gap-6">
 
           {/* Social Icons */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center justify-center gap-3">
             {SOCIAL_LINKS.map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
@@ -34,22 +34,44 @@ export default function Footer() {
           </div>
 
           {/* Navigation */}
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-base font-normal text-gray-600">
-            <Link href="/about" className="hover:text-[#002D62] transition-colors">About</Link>
-            <Link href="/contact" className="hover:text-[#002D62] transition-colors">Contact</Link>
-            <Link href="/contributors" className="hover:text-[#002D62] transition-colors">Contributors</Link>
-            <Link href="/terms-of-use" className="hover:text-[#002D62] transition-colors">Terms of Use</Link>
-            <Link href="/dmca" className="hover:text-[#002D62] transition-colors">Copyrights & DMCA</Link>
-          </div>
+          <nav aria-label="Footer navigation" className="text-sm font-normal text-gray-600 sm:text-base">
+            <div className="grid grid-cols-2 gap-x-6 sm:hidden">
+              <div className="flex flex-col gap-3 pl-[5ch]">
+                <Link href="/about" className="transition-colors hover:text-[#002D62]">About</Link>
+                <Link href="/contact" className="transition-colors hover:text-[#002D62]">Contact</Link>
+                <Link href="/contributors" className="transition-colors hover:text-[#002D62]">Contributors</Link>
+              </div>
+              <div className="flex flex-col gap-3">
+                <Link href="/terms-of-use" className="transition-colors hover:text-[#002D62]">Terms of Use</Link>
+                <Link href="/privacy-policy" className="transition-colors hover:text-[#002D62]">Privacy Policy</Link>
+                <Link href="/dmca" className="transition-colors hover:text-[#002D62]">Copyrights & DMCA</Link>
+              </div>
+            </div>
+
+            <div className="hidden flex-wrap justify-center gap-x-6 gap-y-2 sm:flex">
+              <Link href="/about" className="transition-colors hover:text-[#002D62]">About</Link>
+              <Link href="/contact" className="transition-colors hover:text-[#002D62]">Contact</Link>
+              <Link href="/contributors" className="transition-colors hover:text-[#002D62]">Contributors</Link>
+              <Link href="/privacy-policy" className="transition-colors hover:text-[#002D62]">Privacy Policy</Link>
+              <Link href="/terms-of-use" className="transition-colors hover:text-[#002D62]">Terms of Use</Link>
+              <Link href="/dmca" className="transition-colors hover:text-[#002D62]">Copyrights & DMCA</Link>
+            </div>
+          </nav>
 
           {/* Bottom Bar */}
-          <div className="flex items-center justify-between border-t border-black/10 pt-6">
-            <div className="flex items-center gap-2">
-              <Image src="/icon.svg" alt="logo" width={28} height={28} />
-              <span className="text-lg font-medium tracking-tight text-[#002D62]">Mangulina<span className="tm-fix">&trade;</span></span>
-              <span className="text-sm text-gray-600">The Dominican Music Database</span>
+          <div className="flex flex-col items-center gap-0 border-t border-black/10 pt-6 text-center">
+            <div className="flex flex-col items-center gap-0">
+              <div className="flex items-center gap-2">
+                <Image src="/icon.svg" alt="Mangulina logo" width={28} height={28} />
+                <span className="text-lg font-medium tracking-tight text-[#002D62]">
+                  Mangulina<span className="tm-fix">&trade;</span>
+                </span>
+              </div>
+              <span className="max-w-56 text-sm leading-relaxed text-gray-600 sm:max-w-none">
+                The Dominican Music Database
+              </span>
             </div>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm leading-relaxed text-gray-600">
               &copy; 2026 Mangulina. All Rights Reserved.
             </p>
           </div>
