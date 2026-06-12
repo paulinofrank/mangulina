@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Finlandica, Inter, Instrument_Serif } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 import GradientBackground from "@/components/atoms/GradientBackground";
@@ -60,6 +61,7 @@ export default function RootLayout({
         <SiteChrome />
 
         {process.env.NODE_ENV === "production" && <Analytics />}
+        {process.env.NODE_ENV === "production" && <SpeedInsights />}
       </body>
     </html>
   );
