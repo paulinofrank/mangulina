@@ -165,7 +165,7 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
             {localBirthdayArtists.map((artist) => (
               <div key={artist.id} className="w-28 shrink-0 sm:w-32 lg:w-36">
                 <div className="group relative">
-                  <ArtistCard artist={artist} titleAs="h3" />
+                  <ArtistCard artist={artist} titleAs="h3" showViews={false} />
                   {(artist.date_of_birth || artist.death_year) && (
                     <div className="pointer-events-none absolute bottom-15 left-1/2 z-30 -translate-x-1/2 translate-y-1/2 whitespace-nowrap rounded-full border border-black/5 bg-white px-2.5 py-1 text-[11px] font-normal uppercase tracking-wider text-[#8B0000]/80">
                       {getLifeLabel(artist.date_of_birth, artist.death_year)}

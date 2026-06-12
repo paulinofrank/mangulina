@@ -10,11 +10,13 @@ import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 type ArtistCardProps = {
   artist: Artist;
   titleAs?: "h3" | "h4";
+  showViews?: boolean;
 };
 
 export default function ArtistCard({
   artist,
   titleAs = "h3",
+  showViews = true,
 }: ArtistCardProps) {
 
   // Build dynamic image URL
@@ -62,7 +64,7 @@ export default function ArtistCard({
           region={artist.province}
         />
 
-        {artist.views ? (
+        {showViews && artist.views ? (
           <p className="text-[11px] text-gray-500 leading-tight">
             {artist.views.toLocaleString()} views
           </p>
