@@ -1,0 +1,17 @@
+[start] NULL genre_id remaining: 3956; resuming after id 8946d5f9-cdb7-4286-a82e-ad7cd27bd94a
+[batch 34] updated=63 skipped=37 | {"Urban":9,"Bachata":24,"Merengue":19,"Electronic":1,"Ballads":3,"Salsa":4,"Pop":1,"Worship":1,"Rock":1} | cursor=8d8576f0-b54f-44ba-91d3-9ca5957410c3 | remaining≈3856 | 89s | ETA ~55 min
+   skip: "Olemua" — Martín Valoy: no recording-level evidence found
+   skip: "Mi noche fatal" — Elenita Santos: no recording-level evidence found
+   skip: "Pregunto al cielo" — Chery Jimenez y su Tercera Brigada: no recording-level evidence found
+[batch 35] updated=68 skipped=32 | {"Merengue":26,"Instrumental":2,"Bachata":19,"Urban":11,"Jazz":1,"Salsa":3,"Fusion":2,"Ballads":3,"Pop":1} | cursor=91b0b63f-0573-4241-8842-0ab70996cc0d | remaining≈3756 | 77s | ETA ~54 min
+   skip: "No vale la pena" — Marino Perez: latin label without artist prior (apple=Latin)
+   skip: "Aerofobia" — Sharlene: specific label conflicts with artist prior (apple=Urbano latino, prior=Pop)
+   skip: "Amar es mucho más" — Cherito: no recording-level evidence found
+[batch 36] updated=68 skipped=32 | {"Bachata":24,"Merengue":25,"Salsa":5,"Ballads":4,"Fusion":2,"Urban":6,"Worship":1,"Electronic":1} | cursor=95f26cf6-e633-4945-b5ad-82db461efcf8 | remaining≈3656 | 74s | ETA ~52 min
+   skip: "Aceite" — Raúl Acosta: no recording-level evidence found
+   skip: "No E Como Ante" — El Trio: specific label conflicts with artist prior (apple=Rock, prior=Ballads)
+   skip: "No saber de ti" — Monchy & Nathalia: no recording-level evidence found
+[batch 37] updated=57 skipped=43 | {"Merengue":22,"Worship":2,"Bachata":18,"Pop":2,"Urban":11,"Ballads":1,"Rock":1} | cursor=99d1a98d-e674-4ac7-975d-931e67f967d4 | remaining≈3556 | 115s | ETA ~52 min
+   skip: "Virgencita del Consuelo" — Víctor Irizarry: latin label without artist prior (apple=Latin)
+   skip: "Tu Mi Amor" — Niní Cáffaro: no recording-level evidence found
+   skip: "El amanecer" — Tatico Henríquez: no recording-level evidence found
