@@ -15,3 +15,39 @@
    skip: "Virgencita del Consuelo" — Víctor Irizarry: latin label without artist prior (apple=Latin)
    skip: "Tu Mi Amor" — Niní Cáffaro: no recording-level evidence found
    skip: "El amanecer" — Tatico Henríquez: no recording-level evidence found
+[batch 38] updated=62 skipped=38 | {"Bachata":18,"Merengue":21,"Urban":11,"Salsa":3,"Ballads":3,"Worship":3,"Pop":2,"Instrumental":1} | cursor=9d81e70c-a858-4369-bfb8-09914d64eeeb | remaining≈3456 | 96s | ETA ~52 min
+   skip: "San Antonio" — Rafael Labasta: no recording-level evidence found
+   skip: "She Has Left (Empty Void) (Remastered)" — Morbid: no recording-level evidence found
+   skip: "La Fiesta" — Ilegales: unmapped labels: apple=Contemporary Latin
+[batch 39] updated=68 skipped=32 | {"Bachata":22,"Merengue":23,"Salsa":4,"Urban":10,"Ballads":2,"Fusion":2,"Pop":3,"Worship":1,"Rock":1} | cursor=a16cc1cf-dd2c-4d6a-9a3f-2d6b2430ea3a | remaining≈3356 | 70s | ETA ~51 min
+   skip: "Déjame llorar" — Voz a Voz: no recording-level evidence found
+   skip: "Ten cuidado (con El Gallo Lester)" — Mula: specific label conflicts with artist prior (apple=Electronic, prior=Urban)
+   skip: "Siren" — Mula: no recording-level evidence found
+[batch 40] updated=70 skipped=30 | {"Merengue":19,"Urban":9,"Bachata":27,"Ballads":4,"Rock":2,"Fusion":1,"Worship":3,"Salsa":3,"Pop":1,"Instrumental":1} | cursor=a5f3ce4a-68b7-4258-a68b-e52530b0cae6 | remaining≈3256 | 63s | ETA ~47 min
+   skip: "Soy el perdedor" — Voz a Voz: tropical label but artist prior missing not tropical (apple=Música tropical)
+   skip: "San Pedro" — Sharlene: specific label conflicts with artist prior (apple=Urbano latino, prior=Pop)
+   skip: "El son del campesino" — Martín Valoy: no recording-level evidence found
+[batch 41] updated=68 skipped=32 | {"Merengue":24,"Bachata":23,"Urban":7,"Fusion":3,"Pop":2,"Salsa":2,"Worship":3,"Electronic":1,"Ballads":2,"Rock":1} | cursor=a9f0c0cc-c623-4613-86f5-df6a32c16350 | remaining≈3156 | 83s | ETA ~45 min
+   skip: "Haiti" — La Armada Roja: no recording-level evidence found
+   skip: "Mi muñeca" — Prophex: latin label without artist prior (apple=Latin)
+   skip: "Gozadera" — Raúl Acosta: no recording-level evidence found
+[batch 42] updated=61 skipped=39 | {"Ballads":1,"Urban":6,"Worship":2,"Bachata":29,"Merengue":15,"Fusion":2,"Salsa":2,"Rock":1,"Electronic":2,"Pop":1} | cursor=adf3e3af-57dc-464f-bf7e-ac2a186e684d | remaining≈3056 | 96s | ETA ~44 min
+   skip: "De cigarro en cigarro" — Los Ahijados: no recording-level evidence found
+   skip: "Espumas" — Los Toros Band: no recording-level evidence found
+   skip: "Manisero" — Primitivo Santos y su Orquesta: no recording-level evidence found
+[batch 43] updated=68 skipped=32 | {"Bachata":28,"Salsa":7,"Fusion":1,"Instrumental":1,"Merengue":18,"Urban":7,"Ballads":3,"Rock":1,"Worship":1,"Pop":1} | cursor=b205992c-52d0-4f22-a5b2-99e1a495d446 | remaining≈2956 | 83s | ETA ~42 min
+   skip: "Bajo la lluvia" — Fernando Echavarría: no recording-level evidence found
+   skip: "La Cosquillita" — Junior & Jorge: no recording-level evidence found
+   skip: "Pum pum" — Ilegales: no recording-level evidence found
+[batch 44] updated=63 skipped=37 | {"Urban":5,"Bachata":20,"Rock":2,"Pop":3,"Merengue":26,"Worship":1,"Fusion":2,"Salsa":2,"Ballads":2} | cursor=b757f442-f964-42c5-bd38-e5389dc882e2 | remaining≈2856 | 79s | ETA ~40 min
+   skip: "Clásicos I (Popurrí): Amor divino / La fotografía / Faltaste a la cita / Cuándo llegarás" — Los Toros Band: no recording-level evidence found
+   skip: "En un caracol" — José Manuel Calderón: no recording-level evidence found
+   skip: "El loco" — Pochy y su Cocoband: no recording-level evidence found
+[batch 45] updated=66 skipped=34 | {"Bachata":30,"Merengue":21,"Urban":5,"Pop":2,"Salsa":3,"Ballads":3,"Rock":1,"Worship":1} | cursor=bac0354a-2821-42c6-a390-f8a54aa89ff0 | remaining≈2756 | 90s | ETA ~39 min
+   skip: "Los ejes de mi carreta" — Los Ahijados: no recording-level evidence found
+   skip: "Menor de edad (remix)" — O.G. Black: no recording-level evidence found
+   skip: "Las mujeres quieren macho" — Raúl Acosta: no recording-level evidence found
+[batch 46] updated=72 skipped=28 | {"Bachata":32,"Electronic":2,"Urban":6,"Ballads":8,"Merengue":17,"Salsa":4,"Pop":2,"Rock":1} | cursor=bee75c66-11ed-4d86-8981-d92bc26fb7e2 | remaining≈2656 | 80s | ETA ~38 min
+   skip: "Mía para siempre" — Maffio: no recording-level evidence found
+   skip: "Niña de Pelo Negro" — Junior & Jorge: no recording-level evidence found
+   skip: "Vendedor de agua" — Santiago Cerón: no recording-level evidence found

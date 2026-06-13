@@ -1,9 +1,9 @@
 {
-  "lastId": "99d1a98d-e674-4ac7-975d-931e67f967d4",
-  "processed": 3700,
-  "updated": 2455,
-  "skipped": 1245,
-  "batches": 37,
+  "lastId": "bee75c66-11ed-4d86-8981-d92bc26fb7e2",
+  "processed": 4600,
+  "updated": 3053,
+  "skipped": 1547,
+  "batches": 46,
   "ambiguous": [
     {
       "id": "001ccd44-b69d-4e01-ae10-0cb88155c906",
@@ -7474,6 +7474,1818 @@
       "title": "El amanecer",
       "artist": "Tatico Henríquez",
       "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9a1e5c6a-f28d-4a6a-8571-dbd0e3705baf",
+      "title": "La espumita",
+      "artist": "Chery Jimenez y su Tercera Brigada",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9a39d61b-36d6-4d60-8cb3-2e70d2af3ee1",
+      "title": "Maldita soledad",
+      "artist": "Voz a Voz",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "9a52fdb1-ddf8-4c1c-8b9a-b6d3c7208f03",
+      "title": "No volveré",
+      "artist": "Rafael Labasta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9a63c166-29c4-4230-954c-913ca92bbfd7",
+      "title": "Qu te vaya bien",
+      "artist": "Martín Valoy",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9a715309-44d7-4839-a952-3b7fb16cc635",
+      "title": "Así es ella (Bella)",
+      "artist": "Cherito",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9a889ab9-3d3b-4015-8cdb-cb94583afc1d",
+      "title": "Guanguacó bongó",
+      "artist": "Rafael Labasta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9a974695-1568-4e6a-9ce6-d2473e4d7d14",
+      "title": "El último golpe",
+      "artist": "Marino Perez",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "9a9baa28-eb32-4f2e-a980-e3a938ac62b4",
+      "title": "Sala mala",
+      "artist": "Joseíto Mateo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9a9fbf8d-f9aa-44cd-a2ac-c8d81a0fd944",
+      "title": "You're Free",
+      "artist": "Migz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9ab06a43-647b-48ba-829b-03f8a2525bc5",
+      "title": "La muchachita",
+      "artist": "Rokabanda",
+      "reason": "tropical label but artist prior Rock not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "9ab7b5d6-0cdf-49a0-bf93-265cca9cfb46",
+      "title": "Dime por qué",
+      "artist": "Ilegales",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9ac88283-a84b-46cd-b245-5601671643b2",
+      "title": "Alegre gozamba",
+      "artist": "Los Toros Band",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9ad3ff66-e4de-42ea-ad44-0a9c7fe2071e",
+      "title": "De que tu privas",
+      "artist": "Marino Perez",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9afbe540-4fd0-498d-b4a6-cabf4daf3e0a",
+      "title": "Mamaupa",
+      "artist": "Los Ahijados",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9afcf467-2889-497f-b5b8-45c567505f09",
+      "title": "Vámonos caballito",
+      "artist": "Marino Perez",
+      "reason": "latin label without artist prior (deezer=Latin Music)"
+    },
+    {
+      "id": "9b0cea80-4ceb-4dac-88d5-727524f7b2a8",
+      "title": "Baila (original mix)",
+      "artist": "Ilegales",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9b412539-20b8-4ffd-8372-03e59d50d697",
+      "title": "El fucú",
+      "artist": "Víctor Irizarry",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "9b6cd8cc-c03c-465d-b9db-2547c16963dc",
+      "title": "Dos cosas",
+      "artist": "Chery Jimenez y su Tercera Brigada",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9b88abca-b149-4e66-966e-5ad564dfbb6e",
+      "title": "Pista 2",
+      "artist": "Tercer Cielo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9b8a0aa7-5509-46bf-b7ec-f19c7bc6d80e",
+      "title": "Pa' lo' olvidadizo",
+      "artist": "Ilegales",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9b9a4a86-2096-41f5-ae72-f9969f7c5d3d",
+      "title": "No Puedo Mas",
+      "artist": "Marino Perez",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "9baf5c81-95ca-4296-a9ab-9563dcd931cd",
+      "title": "Mi Cartera Vieja",
+      "artist": "Negrito Chapuseaux",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9bc60849-95ed-4bcd-b91b-7fa76a1ca0a1",
+      "title": "Tú te lo pierdes",
+      "artist": "Carlos Manuel",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "9bd397c0-8d3b-406a-b4c6-2519777a4f98",
+      "title": "Freestyle",
+      "artist": "Índigo",
+      "reason": "specific label conflicts with artist prior (deezer=Rap/Hip Hop, prior=Rock)"
+    },
+    {
+      "id": "9bd8558b-ae7f-4549-af75-3f6cb165ae55",
+      "title": "Una nalgadita",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9c2b0507-9ba0-42e3-8a34-42d1385bc2ad",
+      "title": "La vida",
+      "artist": "Martín Valoy",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9c3ea197-b6f4-4e27-83b8-5b3700287c38",
+      "title": "Voy pa'llá",
+      "artist": "Los Homeboys",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9c4e96c7-dcea-457f-acdd-bb8cd90db1c0",
+      "title": "Necesito",
+      "artist": "Julio Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9c73241e-094a-4a3f-a1bf-88efc22a7d8b",
+      "title": "Rescate #1: Anoche soñé / Compadre Pedro Juan / El negrito del batey / San Antonio / El pájaro chowi / La agarradera",
+      "artist": "Los Toros Band",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9c9f51b7-9802-4768-a556-9a462cff665c",
+      "title": "Anoche soñe",
+      "artist": "Joseíto Mateo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9cebab4e-5a48-469c-b5b3-f0d5ab4b4e13",
+      "title": "Casado pero no capado",
+      "artist": "Sandro Reyes",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "9d10bbec-109b-4290-b5b1-ba7770a86502",
+      "title": "Night Lights",
+      "artist": "Morbid",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9d2e2635-a634-4d5f-b231-c27108e0ad57",
+      "title": "No queda nada",
+      "artist": "Ilegales",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9d3e80e0-c246-48b4-a14b-ff92808681e9",
+      "title": "Comprensión",
+      "artist": "Santiago Cerón",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9d5e7bd2-2d18-4324-8448-dfed371dbf6e",
+      "title": "Nadie me quita esa mujer",
+      "artist": "Marino Perez",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9d700a72-e2f9-46df-88b4-6cf1afdad1c6",
+      "title": "San Antonio",
+      "artist": "Rafael Labasta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9d72da56-da10-4c58-9d17-ebe4a127fb7e",
+      "title": "She Has Left (Empty Void) (Remastered)",
+      "artist": "Morbid",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9d81441f-615a-4966-aa5e-6e1ebd762349",
+      "title": "La Fiesta",
+      "artist": "Ilegales",
+      "reason": "unmapped labels: apple=Contemporary Latin"
+    },
+    {
+      "id": "9d9c3791-989b-4eb6-bad3-cde4a4962ffa",
+      "title": "Solo importas tú",
+      "artist": "Carlos David",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "9da3473b-d972-433e-9cc5-d2c77df663dc",
+      "title": "Con la baraja completa",
+      "artist": "Marino Perez",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "9dee9ee5-2168-49ef-b643-e0127a6dd799",
+      "title": "Dios no te olvida",
+      "artist": "Tercer Cielo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "9e1f3cfb-878c-467a-90f1-c6b6b9c7d1b7",
+      "title": "18",
+      "artist": "Químico Ultra Mega",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9e4fd774-d49c-450c-84e2-35c26664f948",
+      "title": "Vuélveme a querer",
+      "artist": "Sin Fronteras",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "9e5bf599-8701-426e-abf2-a94705b34ab2",
+      "title": "El picoteao",
+      "artist": "Joseíto Mateo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9e64ec74-5992-41ba-a857-0c7019adb714",
+      "title": "Qué barbaridad",
+      "artist": "Ramón Gallardo",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "9e782c8c-b02f-47c0-9348-a23b0d9d0dbc",
+      "title": "Hazla volver",
+      "artist": "Tercer Cielo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "9e9266a1-ecc2-4b64-b1b0-36c80cda61e1",
+      "title": "OG",
+      "artist": "Dary Hezz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9eb5c4fa-fe24-43db-b1af-f770dbc74737",
+      "title": "Dona Josefa",
+      "artist": "Chery Jimenez y su Tercera Brigada",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9eb7a7dc-f9cb-4876-91bb-8e12a1693cfb",
+      "title": "Homenaje a la sufrida",
+      "artist": "Marino Perez",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "9ed89ef6-9beb-4d2c-83e2-6f6fa8c771bf",
+      "title": "María la del padre",
+      "artist": "Fefita la Grande",
+      "reason": "unmapped labels: apple=Contemporary Latin"
+    },
+    {
+      "id": "9eeb0f6a-d88e-4e44-b2ab-618f1e83fed5",
+      "title": "Take the A Train (Duke Ellington+Billy Stryhorn)",
+      "artist": "Crispín Fernández",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9f416aef-ef69-44f2-8aa9-28e5923e41d5",
+      "title": "A papi si",
+      "artist": "Luis Vargas",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9f4b02ae-1349-45e8-b835-b86cfaec31bf",
+      "title": "Y tú no correspondes",
+      "artist": "Tony Seval",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9f532ddb-fa1b-4426-bfc8-82362d843357",
+      "title": "Cuando tu me traicionaste",
+      "artist": "Marino Perez",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "9f5cb768-d550-419f-aabb-7b8de66bdb50",
+      "title": "El rey de los pollos",
+      "artist": "Rafael Labasta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9fad3c56-4768-4f06-9981-25bad640b715",
+      "title": "Mi ritmo",
+      "artist": "Santiago Cerón",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "9fe16e15-a661-4092-b78c-b6e31dfcdf31",
+      "title": "El pilón",
+      "artist": "Víctor Irizarry",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "9ffae29f-07fd-4c7a-9ffe-2a1aa2b63c2e",
+      "title": "La toalla",
+      "artist": "Rafael Labasta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a0216575-2c3f-4653-b97b-a4214764e035",
+      "title": "Llegó Navidad",
+      "artist": "Jossie Esteban y La Patrulla 15",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a0270f07-bca7-41d5-a1ab-8f6ac33fde72",
+      "title": "Primorosa",
+      "artist": "Los Homeboys",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a058cbcf-8dec-4fea-983c-c7d7bb260b66",
+      "title": "Y Don´t U",
+      "artist": "The Cat Lady",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a064d76b-5ee2-4487-8e86-213996b1b4a8",
+      "title": "Yo no soy un monstruo (latin club remix)",
+      "artist": "Ilegales",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a085966f-4930-42a1-8a01-3ed440f589e9",
+      "title": "Envidia na' ma'",
+      "artist": "Wilfrido Vargas y sus Beduinos",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a090f0ed-50df-4709-afb7-415c8f30b86e",
+      "title": "No hay amor",
+      "artist": "Santiago Cerón",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a0c01ea7-14da-4b54-946b-2e5aa63df847",
+      "title": "Pirata de amor",
+      "artist": "Yanfourd",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "a0c8a1c1-b194-4442-a2bb-74392b27aa14",
+      "title": "De mal en peor",
+      "artist": "Orquesta La Muralla",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a0cf9f32-9717-4280-9233-ac5834f1c7d7",
+      "title": "Perdóname",
+      "artist": "Voz a Voz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a12d74fb-900b-4368-ac20-f35c2ed9dc0e",
+      "title": "Déjame llorar",
+      "artist": "Voz a Voz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a131247f-8846-479b-9240-261623effd7c",
+      "title": "Ten cuidado (con El Gallo Lester)",
+      "artist": "Mula",
+      "reason": "specific label conflicts with artist prior (apple=Electronic, prior=Urban)"
+    },
+    {
+      "id": "a149df88-c654-40f4-9a00-0a884cdd86ea",
+      "title": "Siren",
+      "artist": "Mula",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a17dce85-cf53-4d3d-b5a1-572451c3609c",
+      "title": "Popurrí navideño: El cascabel / Salsa pa' mi lechón / Volvió Juanita / Regreso navideño / El rondón",
+      "artist": "Los Toros Band",
+      "reason": "title keyword Salsa conflicts with prior Merengue"
+    },
+    {
+      "id": "a1808019-6849-4fe6-a6ea-d4d0d953106b",
+      "title": "Déjenme llorar",
+      "artist": "Voz a Voz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a1a03e6e-8b80-40c2-9247-f0800f4a8384",
+      "title": "Sufrimientos",
+      "artist": "Martín Valoy",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a1a10bab-62d1-46bd-8e16-95ba6993be94",
+      "title": "Esta pega'o",
+      "artist": "Ilegales",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a1eed454-8e1d-4492-80a9-09c9722ad86f",
+      "title": "Buenas Noches",
+      "artist": "El Trio",
+      "reason": "specific label conflicts with artist prior (apple=Rock, prior=Ballads)"
+    },
+    {
+      "id": "a227f6a7-a228-4382-a42f-26e07e2e3c42",
+      "title": "Quién y por qué",
+      "artist": "Charytin",
+      "reason": "specific label conflicts with artist prior (apple=Baladas y Boleros, prior=Pop)"
+    },
+    {
+      "id": "a23e6777-4562-4777-aa0c-fbaa964422d6",
+      "title": "Se vende",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a24a113a-e6e9-4206-bb2f-11e51d0d4e20",
+      "title": "Piel de Leather",
+      "artist": "Whitest Taino Alive",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a26bfcba-7d3f-41a3-9548-a2b00804719d",
+      "title": "El merengue más lento del mundo",
+      "artist": "Raúl Acosta",
+      "reason": "title keyword Merengue conflicts with prior Salsa"
+    },
+    {
+      "id": "a28cec10-01e9-45b7-923b-74e8a182caed",
+      "title": "La reina de la discoteca (remix)",
+      "artist": "Sandy",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a31e271d-ad26-4d8d-9477-485db30b71dc",
+      "title": "Corazón de goma",
+      "artist": "Juliana O'Neal",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a35f2706-d24e-49b5-8c69-2f62780a1157",
+      "title": "Veneno",
+      "artist": "Fernando Echavarría",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a368d10d-b57f-449f-9960-af4822e768e5",
+      "title": "My Mechanical Bull",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a372d491-8bc2-4c93-b4f4-24360b5d3a45",
+      "title": "Pensando en ti",
+      "artist": "Marielle Hazlo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "a3ef0841-e4cc-4148-8164-f463a48da6d5",
+      "title": "Donde está mi mujer",
+      "artist": "Marino Perez",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "a40e5e67-bb08-42d9-9752-6f5ac3debdba",
+      "title": "Lluvia",
+      "artist": "Yanfourd",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "a41687e8-d914-48c8-9c89-80eb933a95d0",
+      "title": "Corazón de hierro",
+      "artist": "Teodoro Reyes",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a4223d7c-9a6a-4b50-aea3-4ec426ec7aa5",
+      "title": "Canterbule Pt. III",
+      "artist": "El Trio",
+      "reason": "specific label conflicts with artist prior (apple=Rock, prior=Ballads)"
+    },
+    {
+      "id": "a42bdc32-48f0-444e-ab6c-551b4a94f36a",
+      "title": "Viene de Ti",
+      "artist": "Tercer Cielo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "a456b326-1024-4284-a72c-b5cfb4bb206d",
+      "title": "La Bala",
+      "artist": "Negrito Chapuseaux",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a4616e4d-edda-44ea-80d8-930861a31121",
+      "title": "Canta",
+      "artist": "Martín Valoy",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a470cd21-20f3-45d0-ba8e-a3aa94cecf49",
+      "title": "Contigo estoy",
+      "artist": "Tercer Cielo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "a4ccbd3a-7dbd-41ec-bc53-4c8365da8340",
+      "title": "Ni tú, ni yo",
+      "artist": "Charytin",
+      "reason": "specific label conflicts with artist prior (apple=Baladas y Boleros, prior=Pop)"
+    },
+    {
+      "id": "a4f87375-e4f9-49f4-8c5c-d63a47a930ab",
+      "title": "El mambo es mío",
+      "artist": "Kiko Rodríguez",
+      "reason": "title keyword Merengue conflicts with prior Bachata"
+    },
+    {
+      "id": "a51b15b2-de98-4e7c-86e0-525cd74a5650",
+      "title": "Anja-Uju",
+      "artist": "July Mateo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a5482109-cafa-4eda-a3ae-9d33a4b1bbef",
+      "title": "El manique",
+      "artist": "Joe Veras",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a54a1184-471f-4793-86f8-f9071d356f64",
+      "title": "La dieta",
+      "artist": "Sharlene",
+      "reason": "specific label conflicts with artist prior (apple=Urbano latino, prior=Pop)"
+    },
+    {
+      "id": "a55afd47-c83c-40eb-8b38-d353392aa95b",
+      "title": "Soy el perdedor",
+      "artist": "Voz a Voz",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "a59c3339-b118-4a3e-b98e-a2081f18b98d",
+      "title": "San Pedro",
+      "artist": "Sharlene",
+      "reason": "specific label conflicts with artist prior (apple=Urbano latino, prior=Pop)"
+    },
+    {
+      "id": "a5bfbd92-fcd8-444e-83e1-3deeb34d9e8c",
+      "title": "El son del campesino",
+      "artist": "Martín Valoy",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a5f88d51-f659-4f69-9a1f-57ed5fe652fc",
+      "title": "Mi secreto",
+      "artist": "Melida Rodriguez",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a605520e-e7d9-413d-bf7b-09beac2088d8",
+      "title": "Caliente",
+      "artist": "Joseíto Mateo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a609e15c-9154-4431-a9f2-abafa94e1c56",
+      "title": "Demasiado niña",
+      "artist": "Los Toros Band",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a6167e77-32ec-464c-bece-c608d62f77c4",
+      "title": "Himno Vaquero",
+      "artist": "Maffio",
+      "reason": "specific label conflicts with artist prior (apple=Soundtrack, prior=Urban)"
+    },
+    {
+      "id": "a62ed18f-4bf9-4f89-a665-ed1ad6dda737",
+      "title": "Atom Pilgrim",
+      "artist": "TANGOWHISKYMAN",
+      "reason": "specific label conflicts with artist prior (apple=Alternative, prior=Fusion)"
+    },
+    {
+      "id": "a6781e94-7538-4334-8689-d52af9688b03",
+      "title": "Soy un adicto a ti",
+      "artist": "Los Toros Band",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a67c4175-cd47-41c9-aa81-91863782eb23",
+      "title": "María Teresa",
+      "artist": "Los Ahijados",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a67fe67e-3aff-4b19-aeb2-79a39f964438",
+      "title": "Trasplante",
+      "artist": "Pochy y su Cocoband",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a6836549-0ccd-4564-acb1-96ce5da9b021",
+      "title": "Esa mujer a mí me gusta",
+      "artist": "Carlos Manuel",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "a6914527-c4f1-4898-a02c-531e810257fe",
+      "title": "Sube, sube",
+      "artist": "Chery Jimenez y su Tercera Brigada",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a6d2fcb6-1f38-4a3e-b037-41faa2d1e6f9",
+      "title": "La nalgadita",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a6e7681a-8715-4eb4-8d96-ee6fc8452449",
+      "title": "Disimula",
+      "artist": "Raulín Rosendo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a6e797b9-ceb2-4181-b9d4-55c939cc2830",
+      "title": "La Necia",
+      "artist": "El Trio",
+      "reason": "specific label conflicts with artist prior (apple=Rock, prior=Ballads)"
+    },
+    {
+      "id": "a6fbaff2-1f92-490d-a399-05a83f21bdcb",
+      "title": "Orgulloso de ty",
+      "artist": "Migz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a73efe87-bd85-4901-b7fc-5c23e6e9e011",
+      "title": "Te gusta",
+      "artist": "Migz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a74b4dbd-a52a-4340-bd91-8806a5b64dd7",
+      "title": "Esa mujer",
+      "artist": "Carlos David",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "a75c3ff5-b24d-453c-94ab-bd543aa2b630",
+      "title": "Carbon Sport",
+      "artist": "Químico Ultra Mega",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a77391db-e08e-4037-b4e8-0878bc72ccf6",
+      "title": "Ya te Olvidé",
+      "artist": "Juliana O'Neal",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a7786958-566a-4517-8e18-f43e7cefd915",
+      "title": "litEral viEja 2.0 (Remix)",
+      "artist": "Poeta Callejero",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a77a85ba-4e39-4a40-bedf-59ebe3965cb9",
+      "title": "Que Tu Has Pensado De Mi",
+      "artist": "Niní Cáffaro",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a786c78e-0152-4d7b-89d9-9ff0a1efdba3",
+      "title": "Ya te olvidé",
+      "artist": "Juliana O'Neal",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a7aceec1-9939-48e2-87f7-5e8b5fceb2aa",
+      "title": "Krazy",
+      "artist": "King Streetz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a7f2603a-13b6-4dd3-ac8e-9e5fba98a845",
+      "title": "Noche Fría",
+      "artist": "Luis Vargas",
+      "reason": "specific label conflicts with artist prior (apple=Urbano latino, prior=Bachata)"
+    },
+    {
+      "id": "a7fb0a04-d60d-48df-81e8-d6f0859db441",
+      "title": "Se Me Ha Soltado el Mono",
+      "artist": "Juliana O'Neal",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a8a8f24d-c0d4-4369-8c6f-cf7d0e77bd89",
+      "title": "En las nubes",
+      "artist": "Químico Ultra Mega",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a8fd729d-49c9-4bac-a69b-68d78cf34d27",
+      "title": "Pesadilla de amor",
+      "artist": "Juliana O'Neal",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a91e1e52-f9af-43fd-8812-bc53433341db",
+      "title": "Ya nos queremos",
+      "artist": "Martín Valoy",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a924280b-81a3-40eb-90e8-593ce173b3bc",
+      "title": "Si no fuera sincera mi amor",
+      "artist": "Santiago Cerón",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a92d3d3f-6a34-4864-b13c-d28449c0d0cb",
+      "title": "El recuento de Marino",
+      "artist": "Marino Perez",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "a94896f6-a59c-4e3e-bfea-46e26eb2cacf",
+      "title": "Haiti",
+      "artist": "La Armada Roja",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a950ebe9-f246-4566-9fec-0e2b3d73010f",
+      "title": "Mi muñeca",
+      "artist": "Prophex",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "a9b5e2ee-6dad-4718-882d-eb4ff15aeb94",
+      "title": "Gozadera",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a9f3e12f-39e9-4526-8d80-2d0cd80080bd",
+      "title": "Chicharrón",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "a9f62ae2-df62-49f6-9238-ded968bc77a5",
+      "title": "Héroe",
+      "artist": "Tercer Cielo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "aa0b4b05-6d02-419e-bf2c-fedd84c6b6f9",
+      "title": "El último acto",
+      "artist": "Rafael Labasta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "aa2579cc-a575-4b32-a7ac-b8781b830858",
+      "title": "Me siento bien",
+      "artist": "Sharlene",
+      "reason": "specific label conflicts with artist prior (apple=Urbano latino, prior=Pop)"
+    },
+    {
+      "id": "aa461317-69bc-478e-9e5b-379e6a16b576",
+      "title": "Como no podrá salvar",
+      "artist": "Jairo Puello",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "aa4d4bd8-f83f-4677-af7f-c12956352986",
+      "title": "Colé 2000 (the cambio mix)",
+      "artist": "Cherito",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "aa6e88ba-e58c-4c79-8db5-3fe46875913e",
+      "title": "Tú no me conoces",
+      "artist": "Julio Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "aa7defcf-8832-45a6-aa29-9c790e3bf5c0",
+      "title": "Una sola fuerza",
+      "artist": "Marielle Hazlo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "aa961ac5-0098-463f-a86e-21acb9f10f7e",
+      "title": "Dos extraños locos",
+      "artist": "Ramón Orlando",
+      "reason": "specific label conflicts with artist prior (apple=Baladas y Boleros, prior=Merengue)"
+    },
+    {
+      "id": "aab19f0a-bedb-42c5-ae55-5da8d676397e",
+      "title": "Mil lágrimas",
+      "artist": "Voz a Voz",
+      "reason": "pop label without usable artist prior (apple=Pop Latino)"
+    },
+    {
+      "id": "aae67750-4733-48fc-bd58-7f8d353d49cd",
+      "title": "El puerquito de la yuca",
+      "artist": "Los Ahijados",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "aae80aa6-f185-4e07-b3dd-f57c7146bf34",
+      "title": "Si entendieras",
+      "artist": "Voz a Voz",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "ab6313a3-9461-4687-868b-39459b2e352d",
+      "title": "Mi gallito",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ab7e3bd7-70b2-40a2-bf8e-f5808514efa4",
+      "title": "Amor real",
+      "artist": "Tercer Cielo",
+      "reason": "pop label without usable artist prior (apple=Pop Latino)"
+    },
+    {
+      "id": "ab86905f-0f85-4e5b-ad63-c5a7c1308dc8",
+      "title": "La niña doña María",
+      "artist": "José Manuel Calderón",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ab8c6fe2-4cbf-4e96-a537-bac842fc0601",
+      "title": "La morena (Burn It Up) (Candela dub)",
+      "artist": "Ilegales",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ab8cdac8-e46b-47bb-88cc-5e1fb8f22233",
+      "title": "Es increíble",
+      "artist": "Julio Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "aba1ac0a-3ddc-42c8-83e0-3fadc97f403a",
+      "title": "Mañana",
+      "artist": "Fritz",
+      "reason": "specific label conflicts with artist prior (apple=Singer/Songwriter, prior=Urban)"
+    },
+    {
+      "id": "aba44f93-102c-42a0-bbc7-5e9e0655bb35",
+      "title": "Taqui-taqui (Key club dub)",
+      "artist": "Ilegales",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "aba7ad28-6909-4c8e-89bb-294b2e8ee331",
+      "title": "Gratos recuerdos",
+      "artist": "Santiago Cerón",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ac1c3489-ef5a-4aec-af14-9bce1a66f589",
+      "title": "Saludo a Puerto Rico",
+      "artist": "Ramón Gallardo",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "ac35c347-b8f6-4f98-af0d-e75af8767a29",
+      "title": "Tú vota por mí",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ac5a61b9-5db2-4642-84e7-66d4ce5881f1",
+      "title": "Algo sabroso",
+      "artist": "Los Ahijados",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ac64822e-dbe3-4d9b-85b6-461c00a7ebaf",
+      "title": "Remnants of a Supernova",
+      "artist": "Morbid",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ac706eb7-91bf-4f75-8d34-f25d1d1f2652",
+      "title": "Nunca notaste (versión salsa)",
+      "artist": "Luis Miguel del Amargue",
+      "reason": "title keyword Salsa conflicts with prior Bachata"
+    },
+    {
+      "id": "ac93c672-ee40-4eef-92ac-2c5694cc3aa9",
+      "title": "Mareo",
+      "artist": "Topo la Máskara",
+      "reason": "pop label without usable artist prior (apple=Pop Latino)"
+    },
+    {
+      "id": "aca6ffb2-5aae-4a8f-b661-d95ab59bcca5",
+      "title": "El pegao",
+      "artist": "Joseíto Mateo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "accc9aab-b28a-4cea-9b76-80925ae5d3c8",
+      "title": "Tú votas por mí",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "acddedc6-e27a-4b4b-a192-516df48ab8f4",
+      "title": "Así no se puede",
+      "artist": "Marielle Hazlo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ace5a58a-1c89-44e0-a418-a133a82abb8d",
+      "title": "María Isabel",
+      "artist": "Los Ahijados",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "acfec48a-bf4f-4141-a5dc-2cfd0a80cfc8",
+      "title": "Un clásico",
+      "artist": "O.G. Black",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ad400b42-babf-4e6d-be49-22ec6ab765c0",
+      "title": "Se muy bien",
+      "artist": "Rafael Solano",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ad59d02f-49b7-40dd-a179-2d9b0bb6cde7",
+      "title": "Es un angel",
+      "artist": "Primitivo Santos y su Orquesta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ad91ef59-316d-429a-94d3-9a407618f843",
+      "title": "El amor de su vida",
+      "artist": "Sandro Reyes",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "adb14209-a372-46e1-ba4d-0c5b587b461c",
+      "title": "Si tú te vas a.k.a. Si te vas (remix 2008)",
+      "artist": "Daniel Monción",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "adbb101b-9583-4184-a0c5-ffea98bc34a7",
+      "title": "Mix Ilegales: Fiesta caliente / La morena / Las mujeres / Taqui taqui / Como un trueno / Sueño contigo / A que te pongo / Solo te quiero amar / Solo tú / Chucuchá",
+      "artist": "Ilegales",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "adc0dca9-a27b-4b13-ba49-6ffa0cbf4b4d",
+      "title": "De cigarro en cigarro",
+      "artist": "Los Ahijados",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "adcd6c16-98ec-41ca-8949-2b732dc6e660",
+      "title": "Espumas",
+      "artist": "Los Toros Band",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "adf3e3af-57dc-464f-bf7e-ac2a186e684d",
+      "title": "Manisero",
+      "artist": "Primitivo Santos y su Orquesta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ae236023-784f-4809-afa4-729f3b9f2f9c",
+      "title": "El baile del beeper (versión México)",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ae426f7a-a56d-4064-8ee1-78bfc48a9afc",
+      "title": "Regresa mi amor",
+      "artist": "Marino Perez",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "aeab781c-f06a-4cd4-8d00-a56739294ddf",
+      "title": "Yo lloro",
+      "artist": "Migz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "aee1b169-19e4-4a08-9750-9712de11a05f",
+      "title": "La verdad",
+      "artist": "El Trio",
+      "reason": "specific label conflicts with artist prior (apple=Rock, prior=Ballads)"
+    },
+    {
+      "id": "aef795dc-2c59-44db-af3a-4a1f5b5906e9",
+      "title": "Haciendo Ejercicio en la Cama",
+      "artist": "King Caballero",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "af307513-5927-4a11-b482-fc375de4596f",
+      "title": "Lo Que Paso en Mi Pueblo",
+      "artist": "Teodoro Reyes",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "af38c5d3-fb8e-4509-9bfd-118f6c8300d0",
+      "title": "Soca salsa",
+      "artist": "Raulín Rosendo",
+      "reason": "title keyword Salsa conflicts with prior Merengue"
+    },
+    {
+      "id": "af6a56b2-9856-409e-b2ab-7c2112b66440",
+      "title": "Desde el principio",
+      "artist": "Tercer Cielo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "af6e50bc-7932-432a-a50b-6da8600a6639",
+      "title": "Pajarito",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b00a3dd2-6a91-4d65-8cf3-1396479ce430",
+      "title": "No se que hacer",
+      "artist": "Carlos Manuel",
+      "reason": "latin label without artist prior (deezer=Latin Music)"
+    },
+    {
+      "id": "b014cfcd-01ad-4ae2-bcb3-3c4f58137875",
+      "title": "Mal de amor",
+      "artist": "Sharlene",
+      "reason": "tropical label but artist prior Pop not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "b01d8bb7-0061-475c-a3aa-60d7dfe5efe8",
+      "title": "Da la vuelta",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b029b549-5781-4d27-becd-d9681a16c6d5",
+      "title": "La paleta",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b0327c21-c20e-4bd9-9e5d-0c2011449611",
+      "title": "Cómo me duele",
+      "artist": "Sin Fronteras",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b0583033-3e83-4b0f-a933-66be4497168b",
+      "title": "Mercy",
+      "artist": "Messiah",
+      "reason": "specific label conflicts with artist prior (deezer=Rock, prior=Urban)"
+    },
+    {
+      "id": "b0705a35-a46d-4beb-9d8a-53924ce431e7",
+      "title": "Baila Riddim",
+      "artist": "Químico Ultra Mega",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b081fb01-36d5-4a37-a2b5-f8ee18055cfc",
+      "title": "La tanguita roja",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b09e1a23-7cb5-4a3e-adfe-394d0d0fcdb9",
+      "title": "¿Y qué hago yo?",
+      "artist": "Sin Fronteras",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b0c5c0ff-9d7d-4c3b-9364-d1fcde217ec9",
+      "title": "Agua fresca",
+      "artist": "La Familia André",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b0ea7c4c-7a37-4d77-bb08-9da5ba75c758",
+      "title": "La cabesita loca",
+      "artist": "El Prodigio",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b0effecb-6454-4e78-b7fb-c1adf5d1e28f",
+      "title": "Te Deum en do mayor, WAB 45: Te Deum laudamus (Allegro)",
+      "artist": "Orquesta in Art",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b0f645c7-37b0-4d43-8625-2789bf138724",
+      "title": "Porque se fue",
+      "artist": "Los Homeboys",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b129addc-f8a1-4f4c-ac23-3c88fc97fd40",
+      "title": "Panamera (remix)",
+      "artist": "Químico Ultra Mega",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b14efa32-b852-49f5-bcab-17cf1e555b20",
+      "title": "Homenaje a July Mateo (Rasputín): Oye / Primavera / Toda la vida / El ilegal / Te olvidé",
+      "artist": "Los Toros Band",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b152ae0c-22e8-4368-b596-1fc6eaf555ed",
+      "title": "GirlFriend (Ae, Ae)",
+      "artist": "Prophex",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b18bb317-bf8c-4d4a-9a9e-ab409bd555a4",
+      "title": "Ta' caché",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b1ae1ab0-30bf-4fed-82f9-b5c19711765b",
+      "title": "Te 'ta picando",
+      "artist": "Cherito",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b1bec6ef-1bab-4475-a31b-0bc25106dc72",
+      "title": "Mintiéndonos",
+      "artist": "O.G. Black",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b1f2d8f1-38be-48d3-b2ad-015739f5df78",
+      "title": "Bajo La Sombra Del Sol Negro",
+      "artist": "Necro",
+      "reason": "specific label conflicts with artist prior (apple=Metal, prior=Urban)"
+    },
+    {
+      "id": "b1f7a25d-85dc-4ee6-bfe8-6a0e817485ac",
+      "title": "Bajo la lluvia",
+      "artist": "Fernando Echavarría",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b2036cbc-2dee-43a7-ae9b-e267e19275e2",
+      "title": "La Cosquillita",
+      "artist": "Junior & Jorge",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b205992c-52d0-4f22-a5b2-99e1a495d446",
+      "title": "Pum pum",
+      "artist": "Ilegales",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b207c47a-5821-4f55-bc71-783c5d4ccc82",
+      "title": "No importa",
+      "artist": "Tercer Cielo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b271085a-02d4-49fa-b34d-0379852ac434",
+      "title": "Mal Acostumbrado",
+      "artist": "Ilegales",
+      "reason": "unmapped labels: apple=Contemporary Latin"
+    },
+    {
+      "id": "b2845f3b-17fa-436e-8603-637f019539ce",
+      "title": "No Me Dejes Morir",
+      "artist": "Tribu del Sol",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b28b4988-485d-464c-88dc-d2fffbe79aa4",
+      "title": "Something Wrong With You",
+      "artist": "TANGOWHISKYMAN",
+      "reason": "specific label conflicts with artist prior (apple=Alternative, prior=Fusion)"
+    },
+    {
+      "id": "b2978b59-703a-41f5-9536-da1d0a111aa4",
+      "title": "El tiempo",
+      "artist": "Víctor Irizarry",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b2e152f9-51d6-476c-b30e-a959299c80c8",
+      "title": "Dulce piel",
+      "artist": "Fritz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b31376a4-856a-480d-81a6-1a60296352f4",
+      "title": "El protagonista",
+      "artist": "Cherito",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b320a9a5-54e6-4b43-83b5-fadc5a27a98c",
+      "title": "La mujer que yo mas quiero",
+      "artist": "Marino Perez",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "b329820d-d6ff-48d5-bf2b-d7ae1e48a79a",
+      "title": "El me diseñó",
+      "artist": "Tercer Cielo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b339e59f-2ed7-46ac-b9a3-5b2654166ad1",
+      "title": "Maliciosamente",
+      "artist": "O.G. Black",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b3581aa4-6c82-4756-aa20-2024241c8967",
+      "title": "Los condes",
+      "artist": "Jochy Hernández",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b373377a-9fe5-4ae4-af36-385aeca43e8a",
+      "title": "Hoy te permito odiar",
+      "artist": "Tercer Cielo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b38fe6a0-f7fa-4429-b474-d21e7280a9b4",
+      "title": "Son retosón",
+      "artist": "Los Ahijados",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b3b1792c-8d39-4a80-805f-72a76c03e02a",
+      "title": "Inténtalo",
+      "artist": "Tercer Cielo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b3b1e0c0-6931-492a-8be9-527f8c274850",
+      "title": "Mi palito de oro",
+      "artist": "Luis Kalaff y sus Alegres Dominicanos",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b3d88fc2-701d-4bca-9c9d-22eddcda1818",
+      "title": "Up & Down (Cris†ian Z. Remix)",
+      "artist": "Mula",
+      "reason": "specific label conflicts with artist prior (deezer=Electro, deezer=Dance, prior=Urban)"
+    },
+    {
+      "id": "b3d9f994-3416-4b1a-89b9-cef4548d620e",
+      "title": "Tú eres ajena",
+      "artist": "Raulín Rodríguez",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b44e536c-d121-45a1-931f-a5308f4005fa",
+      "title": "Cruel condena",
+      "artist": "Marino Perez",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "b4769333-5869-45ae-956d-dff964e57c19",
+      "title": "Dime si voy",
+      "artist": "Índigo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b479301b-6e2b-4d97-a02e-7e8596553aab",
+      "title": "La Isla Bonita",
+      "artist": "Juliana O'Neal",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b48b4384-b6a2-4a91-9f4e-bea1b623a595",
+      "title": "Requiem en re menor, WAB 39: Domine Jesu",
+      "artist": "Orquesta in Art",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b4c5d93f-6bdd-442d-a021-3a0581eed375",
+      "title": "Coqueta / Usted abusó",
+      "artist": "Tito Chicoma",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b4cd7856-ac34-441f-af2b-e38036017e35",
+      "title": "Popurrí",
+      "artist": "Jossie Esteban y La Patrulla 15",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b4ea508f-950f-4b7c-a37b-00b9b91d9947",
+      "title": "Fiebre juvenil",
+      "artist": "Los Vecinos",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b4f177ac-b302-44a1-8964-58d2be1ac0b4",
+      "title": "Pensando en ti...",
+      "artist": "Fritz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b5156f64-3b9d-44d0-a072-0e6009c727f0",
+      "title": "Marinero (Sosa Mas Nada Remix)",
+      "artist": "Mula",
+      "reason": "specific label conflicts with artist prior (deezer=Electro, deezer=Dance, prior=Urban)"
+    },
+    {
+      "id": "b53e00e2-212b-418e-8665-4324b14bb60a",
+      "title": "Del pechito a la cintura",
+      "artist": "Marino Perez",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b5412a90-5e59-4409-a6a5-5de6d4a777c4",
+      "title": "Pata e' catre",
+      "artist": "Hugo Pérez y sus Quisqueyanos Modernos",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b54b4c4b-7375-4aca-a506-d2e5e48e5574",
+      "title": "Olvida el Amor",
+      "artist": "Prophex",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "b565a16e-3150-4439-bd29-89db67ba8440",
+      "title": "Remix Clásicos (radio)",
+      "artist": "Conjunto Quisqueya",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b5d0cc44-f837-404b-b97d-898e66f1dd86",
+      "title": "Locus Control",
+      "artist": "CANOTO",
+      "reason": "unmapped labels: apple=Dubstep"
+    },
+    {
+      "id": "b5f9f777-678c-4986-b4fb-fc3367281926",
+      "title": "El rezador",
+      "artist": "Los Ahijados",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b60c02e2-d23c-42ed-954f-d0927671b670",
+      "title": "Mi bonita",
+      "artist": "Fritz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b61a14d1-41b2-49ad-b05b-aee50e67064c",
+      "title": "Interlude (Heavy Hitters)",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b6251088-7bcf-426e-971f-c6939a76b086",
+      "title": "Clásicos I (Popurrí): Amor divino / La fotografía / Faltaste a la cita / Cuándo llegarás",
+      "artist": "Los Toros Band",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b6e368bc-4d21-4657-9831-a929ecd61562",
+      "title": "En un caracol",
+      "artist": "José Manuel Calderón",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b6ef7d61-a8e0-4837-917d-6ed4d8d0db6f",
+      "title": "El loco",
+      "artist": "Pochy y su Cocoband",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b7703a29-a831-4cde-be6d-dc6d31df36d5",
+      "title": "Vete",
+      "artist": "Sandro Reyes",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b797a860-8c30-4c5a-a95a-f09335613edf",
+      "title": "Esto es para ti",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b79d5ff7-cfe4-4045-9505-b21111760d6c",
+      "title": "Un domingo sin ti",
+      "artist": "Joseíto Mateo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b7bd42a3-e817-4b87-ac60-367dc2e4ea16",
+      "title": "Ojos indios",
+      "artist": "Martín Valoy",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b7c3c2ea-dd04-411a-9398-54fe869cda7e",
+      "title": "Triste decisión (Mi macuto)",
+      "artist": "Fernando Echavarría",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b7ced751-bf87-4419-a205-c47e5568f137",
+      "title": "Intro",
+      "artist": "Voz a Voz",
+      "reason": "latin label without artist prior (deezer=Latin Music)"
+    },
+    {
+      "id": "b844bedb-7e6b-478c-aeac-b9976b4bc8b2",
+      "title": "Mucho Under parte 2",
+      "artist": "O.G. Black",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b8637b6c-4aee-4686-bc16-23928bc4df34",
+      "title": "Canta",
+      "artist": "Tercer Cielo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b86b1bb7-6eb2-4bbf-b62f-c5b1266127fc",
+      "title": "Purity",
+      "artist": "Necro",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b86bd509-5f8a-4995-9254-e3d4b84f74ef",
+      "title": "Fuentes",
+      "artist": "El Trio",
+      "reason": "specific label conflicts with artist prior (apple=Rock, prior=Ballads)"
+    },
+    {
+      "id": "b8884bba-bc41-441b-9896-1d598b25f164",
+      "title": "Potpurri no. 1",
+      "artist": "Damirón",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b892a5b2-4896-40cc-9f8c-b0821ae440f9",
+      "title": "Quizás",
+      "artist": "Los Vecinos",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b8fbef04-b854-4fb7-8515-b896d79959b5",
+      "title": "Antes muerta que sencilla",
+      "artist": "Juliana O'Neal",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b92bf7a2-24a5-4ebb-8921-5e01c65a93db",
+      "title": "Ay mami!",
+      "artist": "Marino Perez",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "b94d611c-8511-4ecd-962b-02033d8db44e",
+      "title": "El week-end y el pesacador",
+      "artist": "Hugo Pérez y sus Quisqueyanos Modernos",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b94f2a8a-da14-4877-9d5c-60df06d71901",
+      "title": "Qué rico",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b967cf1e-e4fb-41c3-868e-6e9fb15687d4",
+      "title": "Lo Lograre",
+      "artist": "Dary Hezz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b97743a8-1fc6-42c7-af17-4ef7924dc93a",
+      "title": "Ya te olvidé",
+      "artist": "Sandro Reyes",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "b97eb165-40cc-4830-8648-9374bf9a66e8",
+      "title": "Olas del mar",
+      "artist": "Marielle Hazlo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b9a19373-1421-4ce4-90e1-310ebeac7d10",
+      "title": "A Charlie Parker (D.R)",
+      "artist": "Crispín Fernández",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b9a71322-6221-4690-a234-6001a91038fb",
+      "title": "Esa me la llevo yo",
+      "artist": "Marino Perez",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "b9adf1f8-55fb-4505-87ee-05e96bf7f44a",
+      "title": "El Lloron",
+      "artist": "Junior & Jorge",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b9b8dc2e-b58a-4831-a6f9-ff5dfdf48d7d",
+      "title": "Lo mejor de mí",
+      "artist": "Jairo Puello",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "b9cfcd14-12a1-44ba-91d6-19ebc995bdce",
+      "title": "Te quiero para",
+      "artist": "El Trio",
+      "reason": "specific label conflicts with artist prior (deezer=Rock, prior=Ballads)"
+    },
+    {
+      "id": "b9e45a08-a4d2-4cd0-ab85-17e6474002c9",
+      "title": "La morena (Burn It Up) (Cibola remix)",
+      "artist": "Ilegales",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ba20699d-9830-48c6-867f-2674992b9237",
+      "title": "El ñoñito",
+      "artist": "Rokabanda",
+      "reason": "tropical label but artist prior Rock not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "ba260a42-00ab-4692-b349-0851c324a350",
+      "title": "El cigarro",
+      "artist": "Los Homeboys",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ba2c17bd-7601-45ec-a819-42b09bc6b647",
+      "title": "Cual noche",
+      "artist": "Fritz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ba31bacc-a071-401a-84d7-0468c0e76e03",
+      "title": "Acordándome de ti",
+      "artist": "Fefita la Grande",
+      "reason": "unmapped labels: apple=Contemporary Latin"
+    },
+    {
+      "id": "ba71c12e-d475-413c-ab56-9fe9b7249187",
+      "title": "De eternidad a eternidad",
+      "artist": "Jairo Puello",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "ba7aae5c-efc7-4f44-880e-d7ee28b7c7d2",
+      "title": "El labio hinchao",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "baab6497-e343-43d0-bc86-c36a58fcee1d",
+      "title": "Los ejes de mi carreta",
+      "artist": "Los Ahijados",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "baae82c8-12f5-4b0d-a019-6af07b9e0a4c",
+      "title": "Menor de edad (remix)",
+      "artist": "O.G. Black",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "baafbb7f-a2b4-40b1-bc4f-a32f0877ca74",
+      "title": "Las mujeres quieren macho",
+      "artist": "Raúl Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bac7a9d3-97c2-4f16-833d-2b7ffe6b1e94",
+      "title": "Acelerando",
+      "artist": "Hugo Pérez y sus Quisqueyanos Modernos",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "baca466f-a30a-40ff-ab71-a01f510042a7",
+      "title": "Donde Están?",
+      "artist": "Tribu del Sol",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bacb1246-9009-4833-8577-db3415fe6594",
+      "title": "Cosa buena",
+      "artist": "Rafael Solano",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bb3350df-4536-4bf7-b561-6bd143b57d61",
+      "title": "Entre tú y yo",
+      "artist": "Tercer Cielo",
+      "reason": "pop label without usable artist prior (apple=Pop Latino)"
+    },
+    {
+      "id": "bb47ee76-8b2f-47e0-92d2-d95b6631b8b7",
+      "title": "After Party",
+      "artist": "Messiah",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bb9577c1-2c8e-4c20-a7a5-b7d9ee402845",
+      "title": "Tú no te lo mereces",
+      "artist": "Los Vecinos",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bc1dab68-10da-49b2-b966-0b0efb281b8a",
+      "title": "Me tiene asficiao",
+      "artist": "Los Toros Band",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bc5a95fe-b553-420e-89d2-f63d00fc148e",
+      "title": "Cuando No Estas",
+      "artist": "Niní Cáffaro",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bc8046a8-6c17-49e2-84fd-9120a3f93a79",
+      "title": "Yesterday",
+      "artist": "Primitivo Santos y su Orquesta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bca78dcd-1562-40d5-b59e-bb3db9bd9582",
+      "title": "Déjenme beber",
+      "artist": "Sandro Reyes",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "bcbf11e9-e431-4e34-bc27-710759e64faa",
+      "title": "Bolichan",
+      "artist": "Los Ahijados",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bd009ded-3d18-48ae-ba7e-94241bd56055",
+      "title": "Ni parientes somos",
+      "artist": "Sandro Reyes",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "bd13707d-f056-489c-8c1a-c13228b2c127",
+      "title": "I Love Merengue",
+      "artist": "Raúl Acosta",
+      "reason": "title keyword Merengue conflicts with prior Salsa"
+    },
+    {
+      "id": "bd1646c3-125c-4464-a8b5-0dc1b97dddc3",
+      "title": "Que no me toquen mi violin",
+      "artist": "Yoyito Cabrera",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bd1767c7-e3ba-4d05-9d5b-306d26ea8ea4",
+      "title": "Demons & Angels",
+      "artist": "King Streetz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bd1816a8-a501-40ef-b794-24d0d93008a5",
+      "title": "Otra vez",
+      "artist": "Julio Acosta",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bd24c5c7-13bf-43f7-b9d4-e0faa3669986",
+      "title": "The Power in You",
+      "artist": "Fritz",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bd43b14e-d16a-4c16-aecc-55f7b1a9b243",
+      "title": "Anciedad",
+      "artist": "Raulín Rosendo",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bd920f06-e95b-45e5-b159-b84a14c434db",
+      "title": "Balada a beltre",
+      "artist": "Rafael Solano",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bd9d1c7e-426c-442e-aa43-1e826612b929",
+      "title": "El amargao",
+      "artist": "Martín Valoy",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "bda60e97-ef89-4646-b7c3-ee44f0e3dd45",
+      "title": "Voces 2",
+      "artist": "Xantos",
+      "reason": "latin label without artist prior (deezer=Latin Music)"
+    },
+    {
+      "id": "bdc07191-cea3-4009-b657-fd800646546c",
+      "title": "Así es el amor",
+      "artist": "Tercer Cielo",
+      "reason": "latin label without artist prior (apple=Latin)"
+    },
+    {
+      "id": "bdf40559-8665-40a6-885c-3a42c373200b",
+      "title": "Caliente",
+      "artist": "Tali Goya",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "be276271-9c27-4fe3-a88b-9ad2cc0e7317",
+      "title": "Si piensas en volver",
+      "artist": "Víctor Irizarry",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "be36e4d8-babc-4177-8efc-617b596484e9",
+      "title": "Llegaste tarde",
+      "artist": "Marino Perez",
+      "reason": "tropical label but artist prior missing not tropical (apple=Música tropical)"
+    },
+    {
+      "id": "be7defee-94ed-46ac-89a3-93c9506daf9c",
+      "title": "Mía para siempre",
+      "artist": "Maffio",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "be980fac-f31a-4e56-bfbb-0c92b1cbfe55",
+      "title": "Niña de Pelo Negro",
+      "artist": "Junior & Jorge",
+      "reason": "no recording-level evidence found"
+    },
+    {
+      "id": "beb141dc-d74e-4efe-93d6-1d6c41de2575",
+      "title": "Vendedor de agua",
+      "artist": "Santiago Cerón",
+      "reason": "no recording-level evidence found"
     }
   ],
   "batchSeconds": [
@@ -7513,6 +9325,15 @@
     89,
     77,
     74,
-    115
+    115,
+    96,
+    70,
+    63,
+    83,
+    96,
+    83,
+    79,
+    90,
+    80
   ]
 }
