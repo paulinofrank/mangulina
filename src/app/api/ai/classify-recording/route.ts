@@ -5,6 +5,7 @@ type ClassifyRecordingBody = {
   recording_id?: unknown;
   genre_id?: unknown;
   subgenre_id?: unknown;
+  recording_context?: unknown;
 };
 
 function isNonEmptyString(value: unknown): value is string {
@@ -53,6 +54,10 @@ export async function POST(req: Request) {
   const subgenreId = isIdValue(body.subgenre_id)
     ? normalizeIdValue(body.subgenre_id)
     : null;
+  const recordingContext =
+    body.recording_context === "christian" || body.recording_context === "secular"
+      ? body.recording_context
+      : null;
 
   const supabaseUrl = process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL;
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -77,6 +82,17 @@ export async function POST(req: Request) {
 
   if (error) {
     return NextResponse.json({ ok: false, error: error.message }, { status: 500 });
+  }
+
+  if (recordingContext) {
+    const { error: contextError } = await supabase
+      .from("recordings")
+      .update({ recording_context: recordingContext })
+      .eq("id", recordingId);
+
+    if (contextError) {
+      return NextResponse.json({ ok: false, error: contextError.message }, { status: 500 });
+    }
   }
 
   return NextResponse.json({ ok: true, data });

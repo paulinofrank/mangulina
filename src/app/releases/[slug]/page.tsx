@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import MainWrapper from "@/components/layout/MainWrapper";
+import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
 import PageSection from "@/components/layout/PageSection";
+import ReleaseCoverImage from "@/components/genres/ReleaseCoverImage";
 import {
   formatReleaseType,
   getReleaseBySlug,
@@ -48,13 +49,10 @@ function ReleaseHero({ release }: { release: ReleasePageData }) {
       <div className="grid gap-6 md:grid-cols-[220px_minmax(0,1fr)] md:items-center lg:grid-cols-[280px_minmax(0,1fr)]">
         <div className="relative mx-auto aspect-square w-full max-w-[280px] overflow-hidden rounded-2xl border border-black/5 bg-gray-100 shadow-sm md:mx-0">
           {release.coverImageUrl ? (
-            <Image
+            <ReleaseCoverImage
               src={release.coverImageUrl}
               alt={release.title}
-              fill
               priority
-              sizes="(max-width: 768px) 280px, 320px"
-              className="object-cover"
             />
           ) : (
             <div className="flex h-full w-full items-center justify-center bg-linear-to-br from-gray-100 to-gray-200 text-5xl font-black text-gray-300">
@@ -241,6 +239,7 @@ export default async function ReleasePage({ params }: PageProps) {
 
   return (
     <MainWrapper>
+      <AnalyticsPageView eventType="release_view" entityId={release.id} />
       <ReleaseJsonLd release={release} />
       <PageSection className="mt-4">
         <div className="mx-auto max-w-6xl space-y-5">

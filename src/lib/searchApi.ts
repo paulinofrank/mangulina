@@ -1,4 +1,5 @@
 import { supabase } from "@/lib/supabase";
+import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 
 export type SearchResult = {
   type: "artist" | "song" | "release";
@@ -31,7 +32,10 @@ function normalizeCoverArtUrl(url: string | null | undefined) {
 function withCurrentCoverArtUrls(results: SearchResult[]) {
   return results.map((result) => ({
     ...result,
-    cover_url: normalizeCoverArtUrl(result.cover_url),
+    cover_url:
+      result.type === "release"
+        ? getPublicReleaseCoverUrl(result.id, 150)
+        : normalizeCoverArtUrl(result.cover_url),
   }));
 }
 
@@ -42,7 +46,7 @@ async function withSongReleaseDetails(results: SearchResult[]) {
 
   const { data, error } = await supabase
     .from("recordings_with_release_info")
-    .select("recording_id, artist_name, release_title")
+    .select("recording_id, artist_name, release_id, release_title")
     .in("recording_id", recordingIds);
 
   if (error) {
@@ -54,6 +58,7 @@ async function withSongReleaseDetails(results: SearchResult[]) {
     ((data ?? []) as Array<{
       recording_id: string;
       artist_name: string | null;
+      release_id: string | null;
       release_title: string | null;
     }>).map((row) => [row.recording_id, row]),
   );
@@ -64,6 +69,9 @@ async function withSongReleaseDetails(results: SearchResult[]) {
     return {
       ...result,
       artist_name: details?.artist_name ?? result.subtitle,
+      cover_url: details?.release_id
+        ? getPublicReleaseCoverUrl(details.release_id, 150)
+        : result.cover_url,
       release_title: details?.release_title ?? null,
     };
   });

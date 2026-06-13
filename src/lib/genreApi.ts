@@ -1,4 +1,5 @@
 import { getSupabaseClient } from "@/lib/supabase";
+import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 import {
   createGenericGenreDefinition,
   getGenreDefinition,
@@ -8,8 +9,6 @@ import {
 import type { ArtistSummary } from "@/types/home";
 
 const SECTION_LIMIT = 12;
-const SUPABASE_STORAGE_BASE =
-  "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public";
 
 export type GenreSongSummary = {
   id: string;
@@ -22,6 +21,7 @@ export type GenreSongSummary = {
 
 export type GenreReleaseSummary = {
   id: string;
+  slug: string | null;
   title: string;
   releaseYear: number | null;
   coverUrl: string | null;
@@ -56,7 +56,7 @@ type GenreRow = {
 type SubgenreRow = {
   id: number;
   name: string;
-  genre_id: number;
+  parent_id: number;
   description?: string | null;
 };
 
@@ -72,10 +72,10 @@ type RecordingRow = {
 
 type ReleaseRow = {
   id: string;
+  slug: string | null;
   title: string;
   release_year: number | null;
   year: number | null;
-  cover_image_url: string | null;
   label: string | null;
 };
 
@@ -126,6 +126,9 @@ async function getCatalogGenre(slug: string) {
     .from("genres")
     .select("id,name,description,slug,display_order,is_home_featured")
     .eq("slug", slug)
+    .eq("level", 0)
+    .eq("active", true)
+    .is("parent_id", null)
     .maybeSingle();
 
   if (genreResponse.error) throw genreResponse.error;
@@ -133,9 +136,12 @@ async function getCatalogGenre(slug: string) {
 
   const genre = genreResponse.data as GenreRow;
   const subgenreResponse = await supabase
-    .from("subgenres")
-    .select("id,genre_id,name,description")
-    .eq("genre_id", genre.id)
+    .from("genres")
+    .select("id,parent_id,name,description")
+    .eq("parent_id", genre.id)
+    .eq("level", 1)
+    .eq("active", true)
+    .order("sort_order", { ascending: true })
     .order("name", { ascending: true });
 
   if (subgenreResponse.error) throw subgenreResponse.error;
@@ -235,8 +241,16 @@ async function getGenreIds(aliases: string[]) {
 
   const supabase = getSupabaseClient();
   const [genresResponse, subgenresResponse] = await Promise.all([
-    supabase.from("genres").select("id,name,slug"),
-    supabase.from("subgenres").select("id,name,genre_id"),
+    supabase
+      .from("genres")
+      .select("id,name,slug")
+      .eq("level", 0)
+      .eq("active", true),
+    supabase
+      .from("genres")
+      .select("id,name,parent_id")
+      .eq("level", 1)
+      .eq("active", true),
   ]);
 
   if (genresResponse.error) throw genresResponse.error;
@@ -289,7 +303,7 @@ async function getPopularSongs(aliases: string[]) {
     title: recording.title,
     artistName: firstRelation(recording.artists)?.name ?? "Unknown artist",
     coverUrl: recording.release_id
-      ? `${SUPABASE_STORAGE_BASE}/cover-art/150px/${recording.release_id}.webp`
+      ? getPublicReleaseCoverUrl(recording.release_id, 150)
       : "/images/placeholder-song.jpg",
     views: recording.views,
   }));
@@ -301,7 +315,7 @@ async function getImportantReleases(artistIds: string[]) {
   const supabase = getSupabaseClient();
   const response = await supabase
     .from("releases")
-    .select("id,title,release_year,year,cover_image_url,label")
+    .select("id,slug,title,release_year,year,label")
     .in("release_artist_id", artistIds)
     .order("release_year", { ascending: false, nullsFirst: false })
     .limit(SECTION_LIMIT);
@@ -310,9 +324,10 @@ async function getImportantReleases(artistIds: string[]) {
 
   return ((response.data ?? []) as ReleaseRow[]).map((release) => ({
     id: release.id,
+    slug: release.slug,
     title: release.title,
     releaseYear: release.release_year ?? release.year,
-    coverUrl: release.cover_image_url,
+    coverUrl: getPublicReleaseCoverUrl(release.id, 150),
     label: release.label,
   }));
 }

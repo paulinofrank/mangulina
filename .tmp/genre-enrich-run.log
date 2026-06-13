@@ -1,0 +1,125 @@
+[start] NULL genre_id remaining: 6015; resuming after id 07f75486-3dda-4b59-8d4f-177a3bed2e0a
+[batch 3] updated=69 skipped=31 | {"Merengue":22,"Bachata":23,"Ballads":5,"Instrumental":1,"Urban":9,"Worship":3,"Rock":1,"Folklore":1,"Fusion":1,"Salsa":1,"Pop":2} | cursor=0bbdd8aa-784e-4ae6-aa67-8b38faefd6e9 | remaining≈5915 | 80s | ETA ~79 min
+   skip: "M (Eme)" — Pochy y su Cocoband: no recording-level evidence found
+   skip: "Pampuna" — Ramón Gallardo: tropical label but artist prior missing not tropical (apple=Música tropical)
+   skip: "La algarabía" — Fernando Echavarría: no recording-level evidence found
+[batch 4] updated=64 skipped=36 | {"Urban":7,"Bachata":18,"Folklore":1,"Merengue":28,"Pop":4,"Worship":2,"Salsa":2,"Ballads":1,"Fusion":1} | cursor=0fc668fd-9494-4ab1-b266-5f8e854798f9 | remaining≈5815 | 90s | ETA ~80 min
+   skip: "Me juraste amor (El anillito)" — Voz a Voz: no recording-level evidence found
+   skip: "Princesita" — Marino Perez: no recording-level evidence found
+   skip: "La leche" — Raúl Acosta: no recording-level evidence found
+[batch 5] updated=71 skipped=29 | {"Merengue":22,"Fusion":1,"Urban":14,"Bachata":20,"Pop":3,"Rock":3,"Ballads":3,"Salsa":2,"Jazz":1,"Worship":2} | cursor=13e0f135-366d-4d85-bf6d-866afd8c1c47 | remaining≈5715 | 73s | ETA ~77 min
+   skip: "Cuanto mas te necesito" — Marino Perez: tropical label but artist prior missing not tropical (apple=Música tropical)
+   skip: "Zum zum bá bá é" — Rafael Labasta: no recording-level evidence found
+   skip: "DALE CINTURA (Kuliki)" — Kiko el Crazy: no recording-level evidence found
+[batch 6] updated=70 skipped=30 | {"Urban":15,"Bachata":21,"Salsa":3,"Merengue":25,"Instrumental":1,"Electronic":1,"Worship":1,"Pop":2,"Rock":1} | cursor=189229c5-2f2e-4791-8db2-58996e8a5338 | remaining≈5615 | 76s | ETA ~75 min
+   skip: "Cómo poder vivir" — Fernando Echavarría: no recording-level evidence found
+   skip: "Activo" — Tali Goya: no recording-level evidence found
+   skip: "Enamorado solo" — Voz a Voz: tropical label but artist prior missing not tropical (apple=Música tropical)
+[batch 7] updated=65 skipped=35 | {"Bachata":18,"Merengue":28,"Urban":9,"Fusion":2,"Pop":1,"Ballads":4,"Folklore":1,"Salsa":2} | cursor=1cf69ca7-3b02-4709-957b-005424722892 | remaining≈5515 | 73s | ETA ~73 min
+   skip: "Warm" — N O R M a L: unmapped labels: apple=Old School Rap
+   skip: "Tu Donde Estas" — Niní Cáffaro: no recording-level evidence found
+   skip: "Un poco más" — Tony Seval: no recording-level evidence found
+[batch 8] updated=70 skipped=30 | {"Pop":5,"Merengue":28,"Urban":3,"Salsa":2,"Bachata":25,"Rock":2,"Ballads":3,"Worship":2} | cursor=216ad77e-6162-4bad-b8eb-977b8d6251c1 | remaining≈5415 | 63s | ETA ~69 min
+   skip: "A beber y a gozar" — Sandro Reyes: latin label without artist prior (apple=Latin)
+   skip: "Si tú no estás" — Yanfourd: tropical label but artist prior missing not tropical (apple=Música tropical)
+   skip: "Blood Drinkers Requiem" — Soul of Death: no recording-level evidence found
+[batch 9] updated=61 skipped=39 | {"Merengue":25,"Bachata":21,"Urban":6,"Fusion":1,"Ballads":1,"Worship":1,"Pop":1,"Salsa":3,"Jazz":1,"Electronic":1} | cursor=2505a8cd-219e-42dc-a3e0-0e5df527093e | remaining≈5315 | 96s | ETA ~70 min
+   skip: "Zona Oriental" — Whitest Taino Alive: unmapped labels: deezer=Electro, deezer=Dubstep
+   skip: "Qué agonía" — Sandro Reyes: latin label without artist prior (apple=Latin)
+   skip: "Me llueven 2" — Químico Ultra Mega: no recording-level evidence found
+[batch 10] updated=68 skipped=32 | {"Merengue":27,"Ballads":3,"Bachata":19,"Pop":3,"Worship":1,"Urban":9,"Salsa":4,"Rock":1,"Electronic":1} | cursor=29a66c25-0eea-49bd-98fd-3d301ca46fa5 | remaining≈5215 | 70s | ETA ~68 min
+   skip: "El truquito" — Yanfourd: tropical label but artist prior missing not tropical (apple=Música tropical)
+   skip: "Más de lo que pedí" — Tercer Cielo: latin label without artist prior (apple=Latin)
+   skip: "No te vayas" — Fritz: no recording-level evidence found
+[batch 11] updated=64 skipped=36 | {"Bachata":20,"Merengue":23,"Urban":10,"Rock":2,"Pop":1,"Ballads":6,"Fusion":1,"Salsa":1} | cursor=2e1655c6-d4aa-483e-a1c0-f7e7c48ba838 | remaining≈5115 | 93s | ETA ~68 min
+   skip: "Seguimos Normal" — Dary Hezz: no recording-level evidence found
+   skip: "A cuca le pica" — Raúl Acosta: no recording-level evidence found
+   skip: "Labasta llegó" — Rafael Labasta: tropical label but artist prior missing not tropical (apple=Música tropical)
+[batch 12] updated=66 skipped=34 | {"Merengue":22,"Rock":1,"Bachata":22,"Salsa":2,"Worship":2,"Fusion":3,"Urban":8,"Ballads":4,"Pop":2} | cursor=316f1235-de78-4c77-98c5-a6b3d16afae5 | remaining≈5015 | 86s | ETA ~67 min
+   skip: "Sigo siendo tuyo" — Marino Perez: tropical label but artist prior missing not tropical (apple=Música tropical)
+   skip: "Lo prohibido" — Fernando Echavarría: no recording-level evidence found
+   skip: "Limplimb (Moonlight Ebb)" — TANGOWHISKYMAN: specific label conflicts with artist prior (apple=Alternative, prior=Fusion)
+[batch 13] updated=66 skipped=34 | {"Merengue":22,"Urban":10,"Fusion":1,"Ballads":6,"Bachata":22,"Salsa":3,"Worship":1,"Pop":1} | cursor=358521cb-a6c3-417e-8d67-5d9842035e0e | remaining≈4915 | 74s | ETA ~65 min
+   skip: "Interlude (Heavy Hitters)" — Raúl Acosta: no recording-level evidence found
+   skip: "Entonces yo me cansaré de ti" — Carlos David: tropical label but artist prior missing not tropical (apple=Música tropical)
+   skip: "La comezón" — Marino Perez: tropical label but artist prior missing not tropical (apple=Música tropical)
+[batch 14] updated=66 skipped=34 | {"Bachata":24,"Merengue":21,"Ballads":2,"Urban":11,"Worship":1,"Jazz":1,"Salsa":4,"Fusion":2} | cursor=39dbf634-746f-4f23-98ac-7f99be69459b | remaining≈4815 | 100s | ETA ~65 min
+   skip: "El trust de los tenorios" — Los Ahijados: no recording-level evidence found
+   skip: "Lo siento mi amigo" — Mickey Taveras: no recording-level evidence found
+   skip: "Playa y arena" — Gabriel Pagán: no recording-level evidence found
+[batch 15] updated=70 skipped=30 | {"Bachata":30,"Merengue":19,"Urban":11,"Ballads":3,"Salsa":4,"Rock":1,"Fusion":1,"Jazz":1} | cursor=3e0fa372-67bb-49e2-b510-04104f5e8e1b | remaining≈4715 | 53s | ETA ~62 min
+   skip: "Lost & Found (Companion Mix)" — CANOTO: no recording-level evidence found
+   skip: "Ta' encendío" — Raúl Acosta: no recording-level evidence found
+   skip: "Porque me martiriza" — Marino Perez: tropical label but artist prior missing not tropical (apple=Música tropical)
+[batch 16] updated=73 skipped=27 | {"Merengue":32,"Urban":11,"Ballads":3,"Bachata":22,"Salsa":2,"Fusion":1,"Pop":1,"Worship":1} | cursor=41a0a8e6-137f-4cc6-925b-5e4b3b14aeaa | remaining≈4615 | 87s | ETA ~61 min
+   skip: "El tema" — Martín Valoy: no recording-level evidence found
+   skip: "El pegao" — Joseíto Mateo: no recording-level evidence found
+   skip: "Ella baila (remix)" — Messiah: no recording-level evidence found
+[batch 17] updated=64 skipped=36 | {"Rock":2,"Urban":13,"Bachata":19,"Worship":1,"Merengue":21,"Salsa":1,"Ballads":4,"Pop":2,"Fusion":1} | cursor=45cf51aa-7d6b-462c-ac89-ac9819fd1464 | remaining≈4515 | 86s | ETA ~61 min
+   skip: "UniKorN" — mediopicky: latin label without artist prior (apple=Latin)
+   skip: "disilence" — mediopicky: latin label without artist prior (apple=Latin)
+   skip: "Para olvidarme de ti" — Joseíto Mateo: no recording-level evidence found
+[batch 18] updated=64 skipped=36 | {"Merengue":22,"Pop":1,"Urban":10,"Bachata":22,"Fusion":4,"Worship":2,"Jazz":1,"Rock":1,"Ballads":1} | cursor=49c59d53-be6b-48dd-b4bc-a9cef09fb6e4 | remaining≈4415 | 91s | ETA ~62 min
+   skip: "La paleta" — Raúl Acosta: no recording-level evidence found
+   skip: "Súbeme el volumen" — Sin Fronteras: latin label without artist prior (apple=Latin)
+   skip: "Te Deum en do mayor, WAB 45: In Te, Domine, speravi (Mäßig bewegt)" — Orquesta in Art: no recording-level evidence found
+[batch 19] updated=74 skipped=26 | {"Bachata":25,"Urban":12,"Merengue":27,"Ballads":3,"Worship":3,"Jazz":1,"Salsa":1,"Fusion":1,"Electronic":1} | cursor=4e0fb16c-68ce-4ead-8b31-84b7bb99cccd | remaining≈4315 | 80s | ETA ~59 min
+   skip: "Piensa en mí" — Elenita Santos: no recording-level evidence found
+   skip: "Como quieras" — O.G. Black: no recording-level evidence found
+   skip: "Quédate" — Voz a Voz: pop label without usable artist prior (apple=Pop Latino)
+[batch 20] updated=58 skipped=42 | {"Bachata":20,"Merengue":17,"Worship":2,"Urban":12,"Pop":1,"Ballads":4,"Salsa":2} | cursor=5285619b-5b96-4269-a396-18761f954392 | remaining≈4215 | 116s | ETA ~61 min
+   skip: "El jueguito" — Los Ahijados: no recording-level evidence found
+   skip: "El pariguayo" — Chery Jimenez y su Tercera Brigada: no recording-level evidence found
+   skip: "Woops! La policía" — Raúl Acosta: no recording-level evidence found
+[batch 21] updated=66 skipped=34 | {"Bachata":19,"Worship":3,"Salsa":4,"Merengue":19,"Urban":9,"Pop":4,"Instrumental":1,"Ballads":6,"Folklore":1} | cursor=565e47f2-367e-45d1-802a-033c54fc5a90 | remaining≈4115 | 87s | ETA ~59 min
+   skip: "Que va" — Tito Chicoma: tropical label but artist prior missing not tropical (apple=Música tropical)
+   skip: "Delirio" — Negrito Chapuseaux: no recording-level evidence found
+   skip: "Latinoamerica" — La Armada Roja: specific label conflicts with artist prior (musicbrainz=punk, musicbrainz=rock, musicbrainz=punk, musicbrainz=rock, prior=Urban)
+[batch 22] updated=66 skipped=34 | {"Merengue":22,"Bachata":22,"Urban":11,"Worship":3,"Ballads":4,"Pop":1,"Instrumental":1,"Jazz":1,"Fusion":1} | cursor=5a9f7f3b-6534-491d-b9b2-09bebc69ad6c | remaining≈4015 | 66s | ETA ~56 min
+   skip: "Playa" — Mula: specific label conflicts with artist prior (apple=Electronica, prior=Urban)
+   skip: "Galería de fotos" — Juan Luis Guerra 4.40: no recording-level evidence found
+   skip: "Yo vi a Mari con" — Manikkomio: tropical label but artist prior missing not tropical (apple=Música tropical)
+[batch 23] updated=76 skipped=24 | {"Urban":14,"Bachata":29,"Merengue":21,"Salsa":4,"Worship":3,"Fusion":2,"Ballads":2,"Pop":1} | cursor=5eb72153-4662-42aa-ada9-d4838a221f7b | remaining≈3915 | 73s | ETA ~55 min
+   skip: "Billetes de 100" — Messiah: no recording-level evidence found
+   skip: "Los h'nos Pinzones" — Hugo Pérez y sus Quisqueyanos Modernos: no recording-level evidence found
+   skip: "La Miseria (Felix Lopez)" — Crispín Fernández: no recording-level evidence found
+[batch 24] updated=66 skipped=34 | {"Worship":1,"Urban":6,"Merengue":26,"Bachata":26,"Ballads":5,"Salsa":1,"Pop":1} | cursor=6339f396-7e0c-42af-898c-12254c8d1f18 | remaining≈3815 | 83s | ETA ~52 min
+   skip: "Reina de las flores" — Víctor Irizarry: no recording-level evidence found
+   skip: "Con el alma destrozada" — Melida Rodriguez: no recording-level evidence found
+   skip: "En alta" — Ilegales: specific label conflicts with artist prior (apple=Latin Rap, prior=Merengue)
+[batch 25] updated=64 skipped=36 | {"Bachata":25,"Merengue":22,"Worship":2,"Urban":8,"Salsa":1,"Ballads":1,"Pop":1,"Fusion":3,"Jazz":1} | cursor=67bc4fcc-7c42-4c44-aa20-d63e96ac74a7 | remaining≈3715 | 66s | ETA ~52 min
+   skip: "Ya basta" — Raulín Rodríguez: no recording-level evidence found
+   skip: "Amor caliente y frío" — Charytin: specific label conflicts with artist prior (apple=Baladas y Boleros, prior=Pop)
+   skip: "Nos equivocamos" — Voz a Voz: tropical label but artist prior missing not tropical (apple=Música tropical)
+[batch 26] updated=71 skipped=29 | {"Bachata":15,"Merengue":29,"Worship":3,"Urban":12,"Pop":2,"Ballads":7,"Salsa":2,"Fusion":1} | cursor=6c14e433-e67b-4584-899a-2ff41cd42ef4 | remaining≈3615 | 86s | ETA ~50 min
+   skip: "Todos me miran" — Juliana O'Neal: no recording-level evidence found
+   skip: "Mosaico gallardo No. 3" — Ramón Gallardo: tropical label but artist prior missing not tropical (apple=Música tropical)
+   skip: "La leche" — Raúl Acosta: no recording-level evidence found
+[batch 27] updated=61 skipped=39 | {"Bachata":18,"Urban":10,"Merengue":20,"Ballads":2,"Pop":2,"Worship":3,"Fusion":1,"Salsa":5} | cursor=6f879cc8-3ded-48e3-8e8e-e5f0e7cb16c0 | remaining≈3515 | 92s | ETA ~49 min
+   skip: "¡Ay! Pandora" — Fernando Echavarría: no recording-level evidence found
+   skip: "La voa sazona" — Víctor Irizarry: latin label without artist prior (apple=Latin)
+   skip: "Tu amor es un sueño" — Tercer Cielo: pop label without usable artist prior (apple=Pop Latino)
+[batch 28] updated=64 skipped=36 | {"Salsa":3,"Merengue":18,"Bachata":24,"Ballads":2,"Urban":15,"Rock":1,"Fusion":1} | cursor=7472b859-8847-493e-af4b-45e4f5611e8d | remaining≈3415 | 73s | ETA ~47 min
+   skip: "Mi esquema" — Xantos: latin label without artist prior (deezer=Latin Music)
+   skip: "SPEED" — mediopicky: latin label without artist prior (apple=Latin)
+   skip: "Me Equivoque" — Junior & Jorge: no recording-level evidence found
+[batch 29] updated=69 skipped=31 | {"Bachata":21,"Urban":10,"Merengue":31,"Jazz":1,"Ballads":2,"Salsa":2,"Fusion":1,"Electronic":1} | cursor=78659993-5d34-4e23-aca7-4b583aeab26a | remaining≈3315 | 66s | ETA ~45 min
+   skip: "El Envidioso" — Teodoro Reyes: no recording-level evidence found
+   skip: "La piquiña" — Víctor Irizarry: latin label without artist prior (apple=Latin)
+   skip: "El Hablador" — Tito Chicoma: tropical label but artist prior missing not tropical (apple=Música tropical)
+[batch 30] updated=58 skipped=42 | {"Worship":4,"Bachata":24,"Ballads":4,"Merengue":17,"Urban":7,"Salsa":1,"Pop":1} | cursor=7c92193c-8ea9-43b9-8bf9-3a43b54ae615 | remaining≈3215 | 109s | ETA ~43 min
+   skip: "Voy a jugar mi pollo" — El Prodigio: no recording-level evidence found
+   skip: "Mi amigo en el baño" — Juliana O'Neal: no recording-level evidence found
+   skip: "El huerfanito" — Los Ahijados: no recording-level evidence found
+[batch 31] updated=72 skipped=28 | {"Ballads":5,"Urban":11,"Merengue":25,"Bachata":24,"Worship":2,"Salsa":1,"Pop":1,"Electronic":1,"Fusion":1,"Rock":1} | cursor=80ad2c2a-0e3e-4410-b635-5dcf003b09f6 | remaining≈3115 | 80s | ETA ~41 min
+   skip: "Evocación Caracas vieja" — Damirón: no recording-level evidence found
+   skip: "Y qué me pasa (balada)" — Mickey Taveras: no recording-level evidence found
+   skip: "Gracias" — Yanfourd: tropical label but artist prior missing not tropical (apple=Música tropical)
+[batch 32] updated=63 skipped=37 | {"Bachata":22,"Merengue":21,"Urban":9,"Worship":1,"Pop":3,"Salsa":1,"Ballads":3,"Jazz":1,"Rock":2} | cursor=84d628c8-70cc-40f9-8514-7df90e3735a4 | remaining≈3015 | 93s | ETA ~41 min
+   skip: "La maquinita" — Ilegales: no recording-level evidence found
+   skip: "Born Free" — Negrito Chapuseaux: no recording-level evidence found
+   skip: "Dártelo todo" — Maffio: no recording-level evidence found
+[batch 33] updated=60 skipped=40 | {"Worship":2,"Merengue":25,"Bachata":19,"Ballads":5,"Urban":4,"Salsa":3,"Instrumental":1,"Pop":1} | cursor=8946d5f9-cdb7-4286-a82e-ad7cd27bd94a | remaining≈2915 | 100s | ETA ~41 min
+   skip: "Salvador" — Shamir Massih: pop label without usable artist prior (apple=Pop Latino)
+   skip: "Amor Y Delirio" — Niní Cáffaro: no recording-level evidence found
+   skip: "Valor de Hombre" — Teodoro Reyes: no recording-level evidence found

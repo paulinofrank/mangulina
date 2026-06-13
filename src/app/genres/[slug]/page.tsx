@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MainWrapper from "@/components/layout/MainWrapper";
+import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
 import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import SongCard from "@/components/molecules/SongCard";
 import GenreCarouselSection from "@/components/organisms/GenreCarouselSection";
+import GenreSubgenreSongs from "@/components/genres/GenreSubgenreSongs";
+import ReleaseCoverImage from "@/components/genres/ReleaseCoverImage";
 import { getGenrePageData, getGenrePageSlugs, type GenreReleaseSummary } from "@/lib/genreApi";
 import { genreDefinitions, getGenreDefinition } from "@/lib/genres";
 
@@ -39,15 +42,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 function ReleaseCard({ release }: { release: GenreReleaseSummary }) {
-  return (
-    <article className="w-28 shrink-0 sm:w-32 lg:w-36">
+  const content = (
+    <article className="group w-28 shrink-0 sm:w-32 lg:w-36">
       <div className="relative aspect-square overflow-hidden rounded-lg border border-black/5 bg-gray-100">
         {release.coverUrl ? (
-          <img
+          <ReleaseCoverImage
             src={release.coverUrl}
             alt={release.title}
-            className="absolute inset-0 h-full w-full object-cover"
-            loading="lazy"
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center px-3 text-center text-xs text-gray-400">
@@ -57,7 +58,7 @@ function ReleaseCard({ release }: { release: GenreReleaseSummary }) {
       </div>
 
       <div className="mt-2">
-        <h4 className="line-clamp-2 text-sm font-normal text-[#002D62]">
+        <h4 className="line-clamp-2 text-sm font-normal text-[#002D62] transition-colors group-hover:text-[#CE1126]">
           {release.title}
         </h4>
         <p className="mt-1 text-xs text-gray-500">
@@ -65,6 +66,18 @@ function ReleaseCard({ release }: { release: GenreReleaseSummary }) {
         </p>
       </div>
     </article>
+  );
+
+  if (!release.slug) return content;
+
+  return (
+    <Link
+      href={`/releases/${release.slug}`}
+      className="shrink-0 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#002D62] focus-visible:ring-offset-2"
+      aria-label={`View ${release.title}`}
+    >
+      {content}
+    </Link>
   );
 }
 
@@ -82,13 +95,11 @@ export default async function GenrePage({ params }: PageProps) {
 
   return (
     <MainWrapper>
-      <div className="w-full px-5 py-10 sm:px-6 sm:py-12">
+      <AnalyticsPageView eventType="genre_view" entityId={genre.slug} />
+      <div className="w-full px-5 pb-10 pt-5 sm:px-6 sm:pb-12 sm:pt-6">
         <header className="mb-8 overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm">
           <div className="grid gap-0 md:grid-cols-[1fr_280px]">
             <div className="p-6 sm:p-8">
-              <span className="mb-4 inline-flex rounded-full bg-[#002D62]/10 px-3 py-1 text-xs font-normal uppercase tracking-wider text-[#002D62]">
-                Dominican Music Database
-              </span>
               <h1 className="text-4xl font-black uppercase tracking-tight text-[#002D62] sm:text-5xl">
                 {genre.title}
               </h1>
@@ -98,6 +109,14 @@ export default async function GenrePage({ params }: PageProps) {
               <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-700 sm:text-lg">
                 {genre.description}
               </p>
+              {genre.history && (
+                <a
+                  href="#genre-history"
+                  className="mt-4 inline-flex text-sm font-semibold text-[#8B0000] underline decoration-[#8B0000]/30 underline-offset-4 transition-colors hover:text-[#CE1126]"
+                >
+                  Learn more about {genre.title} history...
+                </a>
+              )}
             </div>
 
             <div className={`flex min-h-48 items-center justify-center ${genre.color}`}>
@@ -107,46 +126,8 @@ export default async function GenrePage({ params }: PageProps) {
         </header>
 
         <div className="space-y-8">
-          {genre.history && (
-            <SectionCard>
-              <div className="section-inner">
-                <div className="section-header">
-                  <h2>History</h2>
-                </div>
-                <div className="max-w-5xl space-y-4 text-sm leading-relaxed text-gray-700 sm:text-base">
-                  {genre.history.split("\n\n").map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
-                  ))}
-                </div>
-              </div>
-            </SectionCard>
-          )}
-
           {subgenres.length > 0 && (
-            <SectionCard>
-              <div className="section-inner">
-                <div className="section-header">
-                  <h2>Subgenres & Styles</h2>
-                </div>
-                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {subgenres.map((subgenre) => (
-                    <article
-                      key={subgenre.id}
-                      className="rounded-lg border border-black/5 bg-white px-4 py-3"
-                    >
-                      <h3 className="text-sm font-semibold text-[#002D62]">
-                        {subgenre.name}
-                      </h3>
-                      {subgenre.description && (
-                        <p className="mt-1 text-sm leading-relaxed text-gray-600">
-                          {subgenre.description}
-                        </p>
-                      )}
-                    </article>
-                  ))}
-                </div>
-              </div>
-            </SectionCard>
+            <GenreSubgenreSongs genreId={genre.catalogId ?? 0} subgenres={subgenres} />
           )}
 
           {mainArtists.length > 0 && (
@@ -201,6 +182,23 @@ export default async function GenrePage({ params }: PageProps) {
                 </div>
               ))}
             </GenreCarouselSection>
+          )}
+
+          {genre.history && (
+            <div id="genre-history" className="scroll-mt-6">
+              <SectionCard>
+                <div className="section-inner">
+                  <div className="section-header">
+                    <h2>{genre.title} History</h2>
+                  </div>
+                  <div className="max-w-5xl space-y-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+                    {genre.history.split("\n\n").map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                </div>
+              </SectionCard>
+            </div>
           )}
 
           {relatedGenres.length > 0 && (

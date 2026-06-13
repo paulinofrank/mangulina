@@ -5,8 +5,12 @@ export async function GET() {
   const supabase = getSupabaseClient();
   const { data, error } = await supabase
     .from("genres")
-    .select("id,name,description,slug,display_order,is_home_featured")
+    .select("id,name,description,slug,display_order,is_home_featured,sort_order")
+    .eq("level", 0)
+    .eq("active", true)
+    .is("parent_id", null)
     .order("display_order", { ascending: true, nullsFirst: false })
+    .order("sort_order", { ascending: true })
     .order("name", { ascending: true });
 
   if (error) {
@@ -20,7 +24,17 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
-  const { genreId, genreData } = await request.json();
+  const body = (await request.json()) as {
+    genreId?: string | number | null;
+    genreData?: {
+      name?: string;
+      slug?: string;
+      description?: string | null;
+      display_order?: number | null;
+      is_home_featured?: boolean;
+    };
+  };
+  const { genreId, genreData } = body;
 
   if (!genreData?.name) {
     return NextResponse.json(
@@ -30,14 +44,26 @@ export async function POST(request: Request) {
   }
 
   const supabase = getSupabaseClient();
+  const payload = {
+    name: genreData.name.trim(),
+    slug: genreData.slug?.trim() || null,
+    description: genreData.description ?? null,
+    display_order: genreData.display_order ?? null,
+    sort_order: genreData.display_order ?? 0,
+    is_home_featured: Boolean(genreData.is_home_featured),
+    parent_id: null,
+    level: 0,
+    active: true,
+  };
   const response = genreId
     ? await supabase
         .from("genres")
-        .update(genreData)
+        .update(payload)
         .eq("id", genreId)
+        .eq("level", 0)
         .select("id")
         .maybeSingle()
-    : await supabase.from("genres").insert([genreData]).select("id").maybeSingle();
+    : await supabase.from("genres").insert([payload]).select("id").maybeSingle();
 
   if (response.error) {
     return NextResponse.json(

@@ -6,6 +6,7 @@ import Link from "next/link";
 import type { TrendingSong } from "@/types/home";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import SongCard from "@/components/molecules/SongCard";
+import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 import SectionCard from "@/components/layout/SectionCard";
 
 interface MostSearchedSongsProps {
@@ -28,9 +29,6 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
   };
 
   const safeSongs = Array.isArray(songs) ? songs : [];
-
-  const supabaseBase =
-    "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/";
 
   return (
     <SectionCard compact>
@@ -69,7 +67,7 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
                   : "Unknown Artist";
 
               const coverUrl = song.release?.id
-                ? `${supabaseBase}cover-art/150px/${song.release.id}.webp`
+                ? getPublicReleaseCoverUrl(song.release.id, 150)
                 : "/images/placeholder-song.jpg";
 
               return (

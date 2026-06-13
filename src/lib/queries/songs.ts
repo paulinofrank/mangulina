@@ -37,7 +37,6 @@ export type SongRecord = {
   // ── Other view / legacy fields ─────────────────────────────────────
   views?: number | null;
   recording_year?: number | null;
-  cover_image_url?: string | null;
   youtube_id?: string | null;
   youtube_url?: string | null;
   official_video_url?: string | null;
@@ -413,7 +412,6 @@ export type ArtistSongRecord = {
   artist_name?: string | null;
   release_id: string | null;
   release_year_actual: number | null;
-  cover_image_url: string | null;
   views: number | null;
 };
 
@@ -426,7 +424,7 @@ export async function getMoreSongsByArtist(
 
   const { data, error } = await supabase
     .from("recordings_with_release_info")
-    .select("recording_id, recording_title, artist_name, release_id, release_year_actual, cover_image_url, views")
+    .select("recording_id, recording_title, artist_name, release_id, release_year_actual, views")
     .eq("artist_id", artistId)
     .neq("recording_id", excludeId)
     .order("views", { ascending: false, nullsFirst: false })
@@ -440,7 +438,6 @@ export async function getMoreSongsByArtist(
     artist_name: string | null;
     release_id: string | null;
     release_year_actual: number | null;
-    cover_image_url: string | null;
     views: number | null;
   }[];
 
@@ -462,7 +459,6 @@ export async function getMoreSongsByArtist(
     artist_name:        r.artist_name,
     release_id:         r.release_id,
     release_year_actual: r.release_year_actual,
-    cover_image_url:    r.cover_image_url,
     views:              r.views,
   }));
 }

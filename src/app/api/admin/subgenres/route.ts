@@ -1,6 +1,22 @@
 import { NextResponse } from "next/server";
 import { getSupabaseClient } from "@/lib/supabase";
 
+type SubgenrePayload = {
+  genre_id?: string | number;
+  name?: string;
+  description?: string | null;
+};
+
+function slugify(value: string) {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const genreId = searchParams.get("genreId");
@@ -12,12 +28,16 @@ export async function GET(request: Request) {
 
   const supabase = getSupabaseClient();
   let query = supabase
-    .from("subgenres")
-    .select("id,genre_id,name,description")
+    .from("genres")
+    .select("id,parent_id,name,description,sort_order")
+    .eq("level", 1)
+    .eq("active", true)
+    .not("parent_id", "is", null)
+    .order("sort_order", { ascending: true })
     .order("name", { ascending: true });
 
   if (genreId) {
-    query = query.eq("genre_id", genreId);
+    query = query.eq("parent_id", genreId);
   }
 
   const { data, error } = await query;
@@ -29,11 +49,22 @@ export async function GET(request: Request) {
     );
   }
 
-  return NextResponse.json({ ok: true, subgenres: data ?? [] });
+  const subgenres = (data ?? []).map((row) => ({
+    id: row.id,
+    genre_id: row.parent_id,
+    name: row.name,
+    description: row.description,
+  }));
+
+  return NextResponse.json({ ok: true, subgenres });
 }
 
 export async function POST(request: Request) {
-  const { subgenreId, subgenreData } = await request.json();
+  const body = (await request.json()) as {
+    subgenreId?: string | number | null;
+    subgenreData?: SubgenrePayload;
+  };
+  const { subgenreId, subgenreData } = body;
 
   if (!subgenreData?.name) {
     return NextResponse.json(
@@ -50,16 +81,61 @@ export async function POST(request: Request) {
   }
 
   const supabase = getSupabaseClient();
+  const existingResponse = subgenreId
+    ? await supabase
+        .from("genres")
+        .select("id,parent_id,slug,sort_order")
+        .eq("id", subgenreId)
+        .eq("level", 1)
+        .maybeSingle()
+    : null;
+  const parentId = subgenreData.genre_id ?? existingResponse?.data?.parent_id;
+
+  if (!parentId) {
+    return NextResponse.json(
+      { ok: false, error: "A valid parent genre is required." },
+      { status: 400 },
+    );
+  }
+
+  const { data: parent, error: parentError } = await supabase
+    .from("genres")
+    .select("id,slug")
+    .eq("id", parentId)
+    .eq("level", 0)
+    .eq("active", true)
+    .maybeSingle();
+
+  if (parentError || !parent) {
+    return NextResponse.json(
+      { ok: false, error: parentError?.message || "Parent genre was not found." },
+      { status: 400 },
+    );
+  }
+
+  const payload = {
+    name: subgenreData.name.trim(),
+    description: subgenreData.description ?? null,
+    parent_id: parent.id,
+    level: 1,
+    active: true,
+    is_home_featured: false,
+    slug:
+      existingResponse?.data?.slug ||
+      `${parent.slug}-${slugify(subgenreData.name)}`,
+    sort_order: existingResponse?.data?.sort_order ?? 0,
+  };
   const response = subgenreId
     ? await supabase
-        .from("subgenres")
-        .update(subgenreData)
+        .from("genres")
+        .update(payload)
         .eq("id", subgenreId)
+        .eq("level", 1)
         .select("id")
         .maybeSingle()
     : await supabase
-        .from("subgenres")
-        .insert([subgenreData])
+        .from("genres")
+        .insert([payload])
         .select("id")
         .maybeSingle();
 

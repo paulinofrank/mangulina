@@ -1,5 +1,7 @@
-// components/organisms/SongPlatformLinksSection.tsx
+"use client";
+
 import { Icon } from "@iconify/react";
+import { trackPlatformClick } from "@/lib/analytics";
 
 export type SongPlatformLink = {
   platform: string;
@@ -51,9 +53,12 @@ function getPlatformConfig(platform: string): PlatformConfig {
   );
 }
 
-type Props = { links: SongPlatformLink[] };
+type Props = {
+  recordingId: string;
+  links: SongPlatformLink[];
+};
 
-export default function SongPlatformLinksSection({ links }: Props) {
+export default function SongPlatformLinksSection({ recordingId, links }: Props) {
   const visible = links
     .filter((l) => isValidUrl(l.url))
     .sort((a, b) => getPlatformConfig(a.platform).order - getPlatformConfig(b.platform).order);
@@ -78,6 +83,9 @@ export default function SongPlatformLinksSection({ links }: Props) {
               rel="noopener noreferrer"
               title={label}
               aria-label={label}
+              onClick={() =>
+                trackPlatformClick(recordingId, link.platform, link.url ?? undefined)
+              }
               className={`inline-flex w-full items-center justify-center gap-2 rounded-full border px-3 py-2 text-sm font-medium transition-opacity hover:opacity-80 ${cfg.bg}`}
             >
               <Icon

@@ -1,5 +1,19 @@
 import type { LucideIcon } from "lucide-react";
-import { Disc3, Ellipsis, Flame, Heart, Music, Music2, Music4, Sparkles, Waves } from "lucide-react";
+import {
+  AudioWaveform,
+  Disc3,
+  Ellipsis,
+  Flame,
+  Guitar,
+  Heart,
+  Headphones,
+  Music,
+  Music2,
+  Music4,
+  Radio,
+  Sparkles,
+  Waves,
+} from "lucide-react";
 
 export type GenreDefinition = {
   slug: string;
@@ -88,14 +102,79 @@ export const genreDefinitions = [
     icon: Disc3,
   },
   {
+    slug: "pop",
+    title: "Pop",
+    subtitle: "Latin Pop, Contemporary",
+    description:
+      "Pop highlights Dominican artists and recordings shaped by contemporary songwriting, mainstream production, and Latin pop influences.",
+    primaryGenre: "pop",
+    aliases: ["pop", "latin pop", "pop latino", "christian pop", "pop cristiano"],
+    relatedGenres: ["ballads", "rock", "electronic", "urbano"],
+    href: "/genres/pop",
+    color: "bg-fuchsia-500",
+    icon: Radio,
+  },
+  {
+    slug: "rock",
+    title: "Rock",
+    subtitle: "Rock, Alternative",
+    description:
+      "Rock covers Dominican rock, alternative, punk, metal, and guitar-driven music across generations.",
+    primaryGenre: "rock",
+    aliases: ["rock", "alternative", "alternativo", "punk", "metal", "latin rock"],
+    relatedGenres: ["pop", "electronic", "fusion"],
+    href: "/genres/rock",
+    color: "bg-zinc-700",
+    icon: Guitar,
+  },
+  {
+    slug: "reggae",
+    title: "Reggae",
+    subtitle: "Reggae, Caribbean",
+    description:
+      "Reggae includes Dominican recordings connected to reggae, dancehall, and wider Caribbean musical exchange.",
+    primaryGenre: "reggae",
+    aliases: ["reggae", "dancehall", "tropical reggae"],
+    relatedGenres: ["urbano", "fusion", "rock"],
+    href: "/genres/reggae",
+    color: "bg-lime-600",
+    icon: Headphones,
+  },
+  {
+    slug: "jazz",
+    title: "Jazz",
+    subtitle: "Jazz, Latin Jazz",
+    description:
+      "Jazz documents Dominican jazz musicians, improvisers, ensembles, and recordings shaped by Latin and Caribbean traditions.",
+    primaryGenre: "jazz",
+    aliases: ["jazz", "latin jazz", "jazz fusion"],
+    relatedGenres: ["instrumental", "fusion", "folklore"],
+    href: "/genres/jazz",
+    color: "bg-violet-700",
+    icon: Music4,
+  },
+  {
+    slug: "electronic",
+    title: "Electronic",
+    subtitle: "Electronic, Dance",
+    description:
+      "Electronic covers Dominican DJs, producers, dance music, and recordings built around electronic production and experimentation.",
+    primaryGenre: "electronic",
+    aliases: ["electronic", "electrónica", "electronica", "edm", "dance", "dj"],
+    relatedGenres: ["pop", "rock", "fusion", "urbano"],
+    href: "/genres/electronic",
+    color: "bg-cyan-600",
+    icon: AudioWaveform,
+  },
+  {
     slug: "instrumental",
     title: "Instrumental",
     subtitle: "Classical",
     description:
       "Instrumental music highlights Dominican musicians, arrangers, orchestras, classical performers, and instrumental works connected to Dominican musical culture.",
     primaryGenre: "instrumental",
-    aliases: ["instrumental", "classical", "clásica", "clasica", "orchestral", "orquesta", "jazz instrumental"],
-    relatedGenres: ["fusion", "folklore", "ballads"],
+    aliases: ["instrumental", "classical", "clásica", "clasica", "orchestral", "orquesta", "piano"],
+    relatedGenres: ["jazz", "fusion", "folklore", "ballads"],
     href: "/genres/instrumental",
     color: "bg-[#7A3E1C]",
     icon: Music4,
@@ -129,12 +208,12 @@ export const genreDefinitions = [
   {
     slug: "fusion",
     title: "Fusion",
-    subtitle: "Jazz, Experimental",
+    subtitle: "Tropical, Experimental",
     description:
-      "Fusion includes Dominican artists and recordings that blend genres, experiment with new sounds, or connect Dominican music with jazz, rock, electronic, and global influences.",
+      "Fusion includes Dominican artists and recordings that deliberately blend established genres, tropical traditions, and global influences.",
     primaryGenre: "fusion",
-    aliases: ["fusion", "fusión", "jazz", "experimental", "rock", "electronic", "alternativo", "alternative"],
-    relatedGenres: ["instrumental", "urbano", "folklore", "merengue"],
+    aliases: ["fusion", "fusión", "experimental", "tropical fusion", "afro-caribbean fusion"],
+    relatedGenres: ["instrumental", "jazz", "rock", "electronic", "urbano", "folklore", "merengue"],
     href: "/genres/fusion",
     color: "bg-indigo-500",
     icon: Waves,
@@ -147,7 +226,7 @@ export const genreDefinitions = [
       "Explore additional Dominican genres, styles, and musical categories that do not fit into the main groups.",
     primaryGenre: null,
     aliases: [],
-    relatedGenres: ["merengue", "bachata", "salsa", "urbano", "instrumental", "ballads", "folklore", "fusion"],
+    relatedGenres: ["merengue", "bachata", "salsa", "urbano", "ballads", "pop", "rock", "reggae", "jazz", "electronic", "instrumental", "folklore", "fusion"],
     href: "/genres/more",
     color: "bg-gray-300",
     icon: Ellipsis,

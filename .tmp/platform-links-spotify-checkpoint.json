@@ -1,12 +1,12 @@
 {
   "platform": "spotify",
-  "lastCompletedOffset": 6000,
-  "currentOffset": 7000,
-  "nextRowIndex": 634,
+  "lastCompletedOffset": 7000,
+  "currentOffset": 8000,
+  "nextRowIndex": 585,
   "pageSize": 1000,
   "startedAt": "2026-06-05T15:36:52.663Z",
-  "updatedAt": "2026-06-12T04:27:09.168Z",
-  "totalInserted": 5184,
+  "updatedAt": "2026-06-12T13:25:19.859Z",
+  "totalInserted": 5909,
   "totalUpdated": 74,
-  "totalPages": 7
+  "totalPages": 8
 }

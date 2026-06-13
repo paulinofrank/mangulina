@@ -1,4 +1,5 @@
 import { supabase } from "@/lib/supabase";
+import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 
 export type ReleaseTrack = {
   id: string;
@@ -43,7 +44,6 @@ type ReleaseRow = {
   country: string | null;
   barcode: string | null;
   catalog_number: string | null;
-  cover_image_url: string | null;
   release_artist_id: string | null;
 };
 
@@ -64,13 +64,8 @@ type RecordingRow = {
   duration: number | null;
 };
 
-export function getReleaseCoverUrl(releaseId: string, fallback?: string | null) {
-  if (fallback) return fallback;
-
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-  if (!supabaseUrl) return null;
-
-  return `${supabaseUrl}/storage/v1/object/public/cover-art/300px/${releaseId}.webp`;
+export function getReleaseCoverUrl(releaseId: string) {
+  return getPublicReleaseCoverUrl(releaseId, 300);
 }
 
 export function formatReleaseType(type?: string | null) {
@@ -82,7 +77,7 @@ export async function getReleaseBySlug(slug: string): Promise<ReleasePageData | 
   const { data: release, error: releaseError } = await supabase
     .from("releases")
     .select(
-      "id, slug, title, type, release_year, year, date, label, country, barcode, catalog_number, cover_image_url, release_artist_id",
+      "id, slug, title, type, release_year, year, date, label, country, barcode, catalog_number, release_artist_id",
     )
     .eq("slug", slug)
     .maybeSingle();
@@ -169,7 +164,7 @@ export async function getReleaseBySlug(slug: string): Promise<ReleasePageData | 
     country: releaseRow.country,
     barcode: releaseRow.barcode,
     catalogNumber: releaseRow.catalog_number,
-    coverImageUrl: getReleaseCoverUrl(releaseRow.id, releaseRow.cover_image_url),
+    coverImageUrl: getReleaseCoverUrl(releaseRow.id),
     artist,
     tracks,
   };

@@ -5,6 +5,7 @@ import { useRef } from "react";
 
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import SongCard from "@/components/molecules/SongCard";
+import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 import type { ArtistSongRecord } from "@/lib/queries/songs";
 
 type RelatedSong = {
@@ -41,9 +42,6 @@ export default function RelatedSongsSection({
       behavior: "smooth",
     });
   };
-
-  const supabaseBase =
-    "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/";
 
   return (
     <div className="grid min-w-0 items-start gap-5 lg:grid-cols-2">
@@ -88,8 +86,8 @@ export default function RelatedSongsSection({
           >
             {moreSongs.map((song) => {
               const coverUrl = song.release_id
-                ? `${supabaseBase}cover-art/150px/${song.release_id}.webp`
-                : song.cover_image_url ?? "/images/placeholder-song.jpg";
+                ? getPublicReleaseCoverUrl(song.release_id, 150)
+                : "/images/placeholder-song.jpg";
 
               return (
                 <SongCard

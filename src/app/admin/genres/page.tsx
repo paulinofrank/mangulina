@@ -393,7 +393,7 @@ export default function AdminGenresPage() {
               className={inputClass}
             />
 
-            <div className="mt-4 max-h-[680px] space-y-2 overflow-y-auto pr-1">
+            <div className="mt-4 max-h-170 space-y-2 overflow-y-auto pr-1">
               {filteredGenres.map((genre) => (
                 <button
                   key={genre.id}

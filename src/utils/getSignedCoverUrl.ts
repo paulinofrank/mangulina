@@ -1,6 +1,5 @@
-export async function getSignedCoverUrl(releaseId: string) {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
-  if (!supabaseUrl) return null;
+import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 
-  return `${supabaseUrl}/storage/v1/object/public/cover-art/150px/${releaseId}.webp`;
+export async function getSignedCoverUrl(releaseId: string) {
+  return getPublicReleaseCoverUrl(releaseId, 150);
 }

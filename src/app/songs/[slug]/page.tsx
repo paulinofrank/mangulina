@@ -1,8 +1,10 @@
 // app/songs/[slug]/page.tsx
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 
 import MainWrapper from "@/components/layout/MainWrapper";
+import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
 import PageSection from "@/components/layout/PageSection";
 import RelatedSongsSection from "@/components/organisms/RelatedSongsSection";
 import SongArtistPreviewCard from "@/components/organisms/SongArtistPreviewCard";
@@ -17,7 +19,6 @@ import SongPlatformLinksSection, {
 } from "@/components/organisms/SongPlatformLinksSection";
 import SongSlangSection from "@/components/organisms/SongSlangSection";
 import SongSourcesSection from "@/components/organisms/SongSourcesSection";
-import SongYouTubePlayer from "@/components/organisms/SongYouTubePlayer";
 
 import {
   getMoreSongsByArtist,
@@ -30,7 +31,6 @@ import {
   getSongSlang,
   getSongSources,
   type RawCredit,
-  type SongMediaRecord,
   type SongRecord,
 } from "@/lib/queries/songs";
 
@@ -67,21 +67,6 @@ function getYouTubeUrl(song: SongRecord): string | null {
   );
 }
 
-function isEmbeddedYouTubeMedia(media: SongMediaRecord, youtubeId: string | null | undefined) {
-  if (!youtubeId) return false;
-
-  const platform = media.platform?.toLowerCase() ?? "";
-  const url = media.url.toLowerCase();
-  const externalId = media.external_id?.toLowerCase();
-  const normalizedYouTubeId = youtubeId.toLowerCase();
-
-  return (
-    externalId === normalizedYouTubeId ||
-    ((platform.includes("youtube") || url.includes("youtube.com") || url.includes("youtu.be")) &&
-      url.includes(normalizedYouTubeId))
-  );
-}
-
 /**
  * Merge platform links from recording_platform_links (curated, shown first)
  * with legacy URL fields on the song record (shown only if no DB link exists
@@ -106,7 +91,7 @@ function mergePlatformLinks(
     {
       platform: "youtube",
       label: "Watch on YouTube",
-      url: song.youtube_embed_allowed ? null : youtubeUrl,
+      url: youtubeUrl,
     },
   ].filter((l) => !dbPlatforms.has(l.platform.toLowerCase()));
 
@@ -195,22 +180,18 @@ export default async function SongProfilePage({ params }: PageProps) {
   const labelName   = pick(song.label,                song.label_name);
 
   // Song pages use the larger cover-art variant: 300px/{release_id}.webp.
-  // There is no reliable cover_image_url column — always build from release_id.
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
+  // Cover artwork is keyed by the Mangulina release ID in Supabase Storage.
   const coverImageUrl = song.release_id
-    ? `${supabaseUrl}/storage/v1/object/public/cover-art/300px/${song.release_id}.webp`
+    ? getPublicReleaseCoverUrl(song.release_id, 300)
     : null;
 
   const normalizedCredits = normalizeCredits(credits);
   const platformLinks     = mergePlatformLinks(song, dbPlatformLinks);
-  const canEmbedYouTube   = Boolean(song.youtube_id && song.youtube_embed_allowed === true);
   const canShowLyrics     = Boolean(song.lyrics && song.lyrics_authorized === true);
-  const mediaItems        = canEmbedYouTube
-    ? media.filter((item) => !isEmbeddedYouTubeMedia(item, song.youtube_id))
-    : media;
 
   return (
     <MainWrapper>
+      <AnalyticsPageView eventType="recording_view" entityId={recordingId} />
       <PageSection className="mt-4">
         <div className="grid items-start gap-5 xl:grid-cols-[minmax(0,1.45fr)_minmax(320px,0.85fr)]">
           <SongHero
@@ -229,7 +210,7 @@ export default async function SongProfilePage({ params }: PageProps) {
           />
 
           <div className="space-y-5">
-            <SongPlatformLinksSection links={platformLinks} />
+            <SongPlatformLinksSection recordingId={recordingId} links={platformLinks} />
             <SongArtistPreviewCard artist={artistPreview} />
           </div>
         </div>
@@ -244,13 +225,6 @@ export default async function SongProfilePage({ params }: PageProps) {
           </aside>
 
           <div className="order-2 space-y-5 xl:order-1">
-            {canEmbedYouTube && (
-              <SongYouTubePlayer
-                videoId={song.youtube_id ?? ""}
-                coverArtUrl={song.cover_image_url}
-              />
-            )}
-
             <div className="grid items-start gap-5 xl:grid-cols-2">
               <SongAboutSection
                 about={song.song_about}
@@ -259,7 +233,7 @@ export default async function SongProfilePage({ params }: PageProps) {
                 notes={song.notes}
               />
 
-              <SongMediaSection media={mediaItems} />
+              <SongMediaSection media={media} />
             </div>
 
             {canShowLyrics && (

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SearchAnalytics from "@/components/analytics/SearchAnalytics";
 import MainWrapper from "@/components/layout/MainWrapper";
 import { globalSearch, SearchResult } from "@/lib/searchApi";
 
@@ -105,6 +106,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
 
   return (
     <MainWrapper>
+      {query && <SearchAnalytics query={query} resultsCount={total} />}
       <div className="mx-auto max-w-5xl px-6 py-12">
         <header className="mb-8">
           <h1 className="text-4xl font-black uppercase tracking-tight text-(--color-flagblue)">

@@ -2,6 +2,7 @@
 
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
 import MainWrapper from "@/components/layout/MainWrapper";
 import ArtistAwardsSection from "@/components/organisms/ArtistAwardsSection";
 import ArtistFactsCard from "@/components/organisms/ArtistFactsCard";
@@ -37,6 +38,7 @@ export default async function ArtistProfile({ params }: PageProps) {
 
   return (
     <MainWrapper>
+      <AnalyticsPageView eventType="artist_view" entityId={artist.id} />
       <div className="mx-auto w-full max-w-[1780px] overflow-hidden px-4 py-10 sm:px-6 sm:py-12 2xl:px-10">
         <div className="grid min-w-0 items-start gap-8 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-10 2xl:grid-cols-[320px_minmax(0,1fr)]">
           <aside className="w-full min-w-0 space-y-6">

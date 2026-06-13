@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ComponentType } from "react";
 import {
   Award,
+  BarChart3,
   BadgeCheck,
   Disc3,
   ExternalLink,
@@ -28,6 +29,15 @@ type AdminTool = {
 };
 
 const adminTools: AdminTool[] = [
+  {
+    title: "Analytics",
+    eyebrow: "Insights",
+    description:
+      "Review recent artist and recording views, unanswered searches, and listening-platform engagement.",
+    href: "/admin/analytics",
+    status: "available",
+    Icon: BarChart3,
+  },
   {
     title: "Artist Profile Editor",
     eyebrow: "Artists",
