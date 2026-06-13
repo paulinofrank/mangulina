@@ -51,3 +51,51 @@
    skip: "Mía para siempre" — Maffio: no recording-level evidence found
    skip: "Niña de Pelo Negro" — Junior & Jorge: no recording-level evidence found
    skip: "Vendedor de agua" — Santiago Cerón: no recording-level evidence found
+[batch 47] updated=57 skipped=43 | {"Bachata":25,"Ballads":6,"Merengue":13,"Salsa":1,"Urban":7,"Electronic":1,"Worship":2,"Fusion":1,"Jazz":1} | cursor=c2b2c020-ac71-4480-bc90-7477c0a38bda | remaining≈2556 | 102s | ETA ~36 min
+   skip: "Lo que te puedo dar" — Voz a Voz: no recording-level evidence found
+   skip: "Tú mi cigarrillo" — Tony Seval: no recording-level evidence found
+   skip: "2k15 Takeova" — King Streetz: no recording-level evidence found
+[batch 48] updated=61 skipped=39 | {"Bachata":19,"Merengue":23,"Ballads":2,"Pop":4,"Urban":7,"Rock":2,"Electronic":1,"Worship":2,"Fusion":1} | cursor=c66cc13e-e2fb-4fdb-86c0-80b5fa561a6e | remaining≈2456 | 80s | ETA ~34 min
+   skip: "Cambio mi vida" — Julio de Arzuaga: no recording-level evidence found
+   skip: "El jueguito" — Martín Valoy: no recording-level evidence found
+   skip: "Cumbia pa' gozar" — Joseíto Mateo: no recording-level evidence found
+[batch 49] updated=69 skipped=31 | {"Merengue":19,"Worship":4,"Bachata":25,"Ballads":6,"Urban":9,"Pop":2,"Salsa":3,"Fusion":1} | cursor=ca82f402-700b-4e2c-ae46-499892325023 | remaining≈2356 | 80s | ETA ~33 min
+   skip: "Sacrificio vivo" — Jairo Puello: no recording-level evidence found
+   skip: "Demasiado brutal" — Marielle Hazlo: pop label without usable artist prior (deezer=Pop)
+   skip: "Amor ingrato" — Los Vecinos: no recording-level evidence found
+[batch 50] updated=72 skipped=28 | {"Pop":2,"Merengue":19,"Urban":12,"Bachata":28,"Instrumental":1,"Ballads":3,"Salsa":3,"Rock":2,"Electronic":1,"Worship":1} | cursor=ced62403-156b-4225-8096-87f9c8704061 | remaining≈2256 | 83s | ETA ~32 min
+   skip: "Estoy amargado" — Joseíto Mateo: no recording-level evidence found
+   skip: "Mi ultima guaracha" — Rafael Solano: no recording-level evidence found
+   skip: "Santa Cena (feat. Pastor Magdiel Taveras)" — Tercer Cielo: latin label without artist prior (apple=Latin)
+[batch 51] updated=78 skipped=22 | {"Merengue":26,"Urban":15,"Bachata":24,"Salsa":2,"Worship":3,"Ballads":5,"Pop":2,"Instrumental":1} | cursor=d3ac9f0c-0d1c-4ad8-bfdb-22c9867d3de3 | remaining≈2156 | 61s | ETA ~30 min
+   skip: "Que Te Aproveche" — Junior & Jorge: no recording-level evidence found
+   skip: "Ay, mi cien pesos!" — Los Ahijados: no recording-level evidence found
+   skip: "Pájaro Chogui" — Ramón Gallardo: no recording-level evidence found
+[batch 52] updated=54 skipped=46 | {"Merengue":24,"Salsa":4,"Bachata":15,"Ballads":4,"Fusion":2,"Urban":2,"Folklore":1,"Pop":1,"Worship":1} | cursor=d800fb82-6b32-4f58-bf9a-5bb270898817 | remaining≈2056 | 86s | ETA ~28 min
+   skip: "Ammarren el toro" — Luis Kalaff y sus Alegres Dominicanos: no recording-level evidence found
+   skip: "Popsy 404" — Mula: specific label conflicts with artist prior (apple=Electronic, prior=Urban)
+   skip: "Customized Boyfriend (ILLUMINVTY Remix)" — Mula: specific label conflicts with artist prior (deezer=Electro, deezer=Dance, prior=Urban)
+[batch 53] updated=69 skipped=31 | {"Ballads":6,"Merengue":26,"Bachata":17,"Salsa":2,"Urban":11,"Jazz":1,"Rock":2,"Fusion":2,"Pop":1,"Worship":1} | cursor=dc381833-db39-4f62-a307-9436c0e22573 | remaining≈1956 | 73s | ETA ~27 min
+   skip: "I'll Be There (Allí estaré)" — Karlos Rosé: no recording-level evidence found
+   skip: "Fiesta latina" — Juliana O'Neal: no recording-level evidence found
+   skip: "Amante perfecta" — Voz a Voz: tropical label but artist prior missing not tropical (apple=Música tropical)
+[batch 54] updated=71 skipped=29 | {"Merengue":29,"Bachata":21,"Instrumental":2,"Ballads":4,"Fusion":3,"Rock":2,"Urban":5,"Worship":1,"Jazz":1,"Pop":2,"Salsa":1} | cursor=e0a0e5e1-8766-4c8a-957d-c475938697c2 | remaining≈1856 | 53s | ETA ~24 min
+   skip: "Mujer Traidora" — Marino Perez: no recording-level evidence found
+   skip: "Corazón salvaje" — Orquesta La Muralla: no recording-level evidence found
+   skip: "Requiem en re menor, WAB 39: Dies irae" — Orquesta in Art: no recording-level evidence found
+[batch 55] updated=72 skipped=28 | {"Bachata":25,"Merengue":27,"Salsa":3,"Electronic":1,"Worship":4,"Urban":10,"Ballads":2} | cursor=e52efe39-7bb5-4d19-bc41-65be7527aa0e | remaining≈1756 | 73s | ETA ~23 min
+   skip: "Después te explicio" — Joseíto Mateo: no recording-level evidence found
+   skip: "Coco cumbia: Que será de mi vida / Qué tiene la cumbia / Pollera colorá / La piragua" — Pochy y su Cocoband: no recording-level evidence found
+   skip: "Luis Chacón" — Rafael Labasta: no recording-level evidence found
+[batch 56] updated=72 skipped=28 | {"Bachata":24,"Urban":12,"Merengue":26,"Ballads":4,"Worship":3,"Rock":1,"Fusion":1,"Salsa":1} | cursor=e98633e3-926b-46e0-902c-1bb91cf8b66f | remaining≈1656 | 73s | ETA ~21 min
+   skip: "Te vas" — Monchy & Nathalia: no recording-level evidence found
+   skip: "Te amaré" — Cherito: no recording-level evidence found
+   skip: "Cosmic Catharsis" — Morbid: no recording-level evidence found
+[batch 57] updated=70 skipped=30 | {"Merengue":27,"Bachata":25,"Urban":10,"Ballads":2,"Salsa":2,"Worship":2,"Fusion":1,"Pop":1} | cursor=edf0933b-4524-4e76-85b8-4e9bbeacff06 | remaining≈1556 | 73s | ETA ~19 min
+   skip: "La paleta" — Raúl Acosta: no recording-level evidence found
+   skip: "Malli" — Los Ahijados: no recording-level evidence found
+   skip: "Ice Cream and Cake" — Raúl Acosta: no recording-level evidence found
+[batch 58] updated=70 skipped=30 | {"Merengue":20,"Bachata":28,"Electronic":2,"Salsa":4,"Urban":7,"Fusion":1,"Ballads":5,"Rock":1,"Worship":2} | cursor=f1718eca-ae94-4407-90eb-a58f43e71d45 | remaining≈1456 | 73s | ETA ~18 min
+   skip: "Esta noche la paso contigo" — Rafael Labasta: no recording-level evidence found
+   skip: "Colorete" — Joseíto Mateo: no recording-level evidence found
+   skip: "María se fue" — Raúl Acosta: no recording-level evidence found

@@ -4,7 +4,7 @@ export const SITE_NAME = "Mangulina";
 export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL ??
   process.env.SITE_URL ??
-  "https://mangulina.com"
+  "https://mangulina.vercel.app"
 ).replace(/\/$/, "");
 
 export const DEFAULT_DESCRIPTION =
