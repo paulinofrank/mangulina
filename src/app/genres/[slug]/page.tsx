@@ -11,6 +11,7 @@ import GenreSubgenreSongs from "@/components/genres/GenreSubgenreSongs";
 import ReleaseCoverImage from "@/components/genres/ReleaseCoverImage";
 import { getGenrePageData, getGenrePageSlugs, type GenreReleaseSummary } from "@/lib/genreApi";
 import { genreDefinitions, getGenreDefinition } from "@/lib/genres";
+import { createPageMetadata, genreSeoTitle } from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -30,15 +31,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const data = await getGenrePageData(slug);
 
   if (!data) {
-    return {
-      title: "Genre Not Found | Mangulina",
-    };
+    return createPageMetadata({
+      title: "Genre Not Found",
+      description: "This genre is not available in the Dominican Music Database.",
+      path: `/genres/${slug}`,
+      noIndex: true,
+    });
   }
 
-  return {
-    title: `${data.genre.title} | Mangulina`,
-    description: `Explore ${data.genre.title} artists, songs, albums, and Dominican music history in Mangulina.`,
-  };
+  return createPageMetadata({
+    title: genreSeoTitle(data.genre),
+    description: `Explore ${data.genre.title} artists, songs, albums and recordings in the Dominican Music Database.`,
+    path: `/genres/${data.genre.slug}`,
+  });
 }
 
 function ReleaseCard({ release }: { release: GenreReleaseSummary }) {

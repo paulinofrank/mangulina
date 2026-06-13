@@ -8,13 +8,14 @@ import BirthdayBrowseMode, {
 import BirthdayYearSelect from "@/components/artists/BirthdayYearSelect";
 import { getSupabaseClient } from "@/lib/supabase";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Artist Birthdays | Mangulina",
+export const metadata: Metadata = createPageMetadata({
+  title: "Artist Birthdays",
   description:
-    "Browse Dominican artists by birthday. Discover artists born on every day of the year and explore Dominican music history through Mangulina.",
-  alternates: { canonical: "/artists/birthdays" },
-};
+    "Browse Dominican artists by birthday and explore Dominican music history in Mangulina, the Dominican Music Database.",
+  path: "/artists/birthdays",
+});
 
 export const revalidate = 600;
 

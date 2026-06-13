@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About Mangulina | Dominican Music Database",
+export const metadata: Metadata = createPageMetadata({
+  title: "About",
   description:
     "Mangulina is a curated Dominican music database dedicated to preserving and documenting Dominican artists, songs, releases, credits, genres, and musical history.",
-  alternates: { canonical: "/about" },
-};
+  path: "/about",
+});
 
 const WHAT_WE_COVER = [
   "Artists from every region and era of Dominican music",

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy | Mangulina",
+export const metadata: Metadata = createPageMetadata({
+  title: "Privacy Policy",
   description:
     "Read Mangulina's Privacy Policy and learn how information is collected, used, and protected on the Dominican Music Database.",
-  alternates: { canonical: "/privacy-policy" },
-};
+  path: "/privacy-policy",
+});
 
 type PrivacySection = {
   title: string;

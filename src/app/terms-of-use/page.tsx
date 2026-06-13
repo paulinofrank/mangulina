@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Terms of Use | Mangulina",
+export const metadata: Metadata = createPageMetadata({
+  title: "Terms of Use",
   description:
     "Read the Terms of Use for Mangulina, the Dominican Music Database dedicated to documenting and preserving Dominican music history.",
-  alternates: { canonical: "/terms-of-use" },
-};
+  path: "/terms-of-use",
+});
 
 type TermsSection = {
   title: string;

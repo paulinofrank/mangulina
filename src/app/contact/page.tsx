@@ -15,13 +15,14 @@ import {
   UserRoundCheck,
   UsersRound,
 } from "lucide-react";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact | Mangulina",
+export const metadata: Metadata = createPageMetadata({
+  title: "Contact",
   description:
-    "Contact Mangulina for artist updates, corrections, contributor opportunities, partnerships, copyright inquiries, and general questions about Dominican music.",
-  alternates: { canonical: "/contact" },
-};
+    "Contact Mangulina, the Dominican Music Database, for artist updates, corrections, contributor opportunities, partnerships and copyright inquiries.",
+  path: "/contact",
+});
 
 type ContactCard = {
   title: string;

@@ -6,6 +6,7 @@ import "./globals.css";
 
 import GradientBackground from "@/components/atoms/GradientBackground";
 import SiteChrome from "@/components/layout/SiteChrome";
+import { DEFAULT_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const finlandica = Finlandica({
   subsets: ["latin"],
@@ -25,9 +26,25 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Dominican Music Database | Mangulina",
-  description:
-    "Discover the greatest artists from Dominican music history with detailed information and cultural context.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Mangulina | Dominican Music Database",
+    template: "%s | Mangulina",
+  },
+  description: DEFAULT_DESCRIPTION,
+  applicationName: SITE_NAME,
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    title: "Mangulina | Dominican Music Database",
+    description: DEFAULT_DESCRIPTION,
+    url: SITE_URL,
+  },
+  twitter: {
+    card: "summary",
+    title: "Mangulina | Dominican Music Database",
+    description: DEFAULT_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({

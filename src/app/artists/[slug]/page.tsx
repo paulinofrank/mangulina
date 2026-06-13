@@ -1,6 +1,7 @@
 // src/app/artists/[slug]/page.tsx
 
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Image from "next/image";
 import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
 import MainWrapper from "@/components/layout/MainWrapper";
@@ -16,10 +17,38 @@ import {
 } from "@/lib/artistApi";
 import { getArtistRelationships } from "@/lib/artistRelationships";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
+import {
+  artistSeoTitle,
+  createPageMetadata,
+} from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const artist = await getArtistProfile(slug);
+
+  if (!artist) {
+    return createPageMetadata({
+      title: "Artist Not Found",
+      description: "This artist profile is not available in the Dominican Music Database.",
+      path: `/artists/${slug}`,
+      noIndex: true,
+    });
+  }
+
+  const description = `Explore the biography, songs, albums, awards and career of ${artist.name} in the Dominican Music Database.`;
+
+  return createPageMetadata({
+    title: artistSeoTitle(artist),
+    description,
+    path: `/artists/${artist.slug}`,
+    image: getArtistImageUrl(artist.id),
+    openGraphType: "profile",
+  });
+}
 
 export default async function ArtistProfile({ params }: PageProps) {
   const { slug } = await params;

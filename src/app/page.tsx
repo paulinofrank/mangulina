@@ -15,6 +15,13 @@ import BirthdaySection from "@/components/organisms/BirthdaySection";
 import TopChristianArtistsSection from "@/components/organisms/TopChristianArtistsSection";
 import ClassicalArtistsSection from "@/components/organisms/ClassicalArtistsSection";
 import TopRisingStarsSection from "@/components/organisms/TopRisingStarsSection";
+import { createPageMetadata, DEFAULT_DESCRIPTION } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+  title: "Dominican Music Database",
+  description: DEFAULT_DESCRIPTION,
+  path: "/",
+});
 
 export const revalidate = 600; // 10 minutes
 

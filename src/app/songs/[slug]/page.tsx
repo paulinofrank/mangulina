@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
+import { createPageMetadata, songSeoTitle } from "@/lib/seo";
 
 import MainWrapper from "@/components/layout/MainWrapper";
 import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
@@ -122,17 +123,27 @@ function normalizeCredits(credits: RawCredit[]) {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const song = await getSongBySlug(cleanSongParam(slug));
-  if (!song) return { title: "Song Not Found | Mangulina" };
+  if (!song) {
+    return createPageMetadata({
+      title: "Song Not Found",
+      description: "This recording is not available in the Dominican Music Database.",
+      path: `/songs/${slug}`,
+      noIndex: true,
+    });
+  }
 
-  const genre   = pick(song.genre_name, song.genre);
-  const genreTxt = genre ? ` · ${genre}` : "";
+  const description = `Song information, credits, releases and platform links for ${song.recording_title} in the Dominican Music Database.`;
+  const image = song.release_id
+    ? getPublicReleaseCoverUrl(song.release_id, 300)
+    : null;
 
-  return {
-    title: `${song.recording_title} by ${song.artist_name} | Mangulina`,
-    description:
-      `Explore ${song.recording_title} by ${song.artist_name}${genreTxt}: ` +
-      `credits, genre, release details, cultural context, fun facts, and official listening links.`,
-  };
+  return createPageMetadata({
+    title: songSeoTitle(song),
+    description,
+    path: `/songs/${slug}`,
+    image,
+    openGraphType: "music.song",
+  });
 }
 
 // ── Page ──────────────────────────────────────────────────────────────────────

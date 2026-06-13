@@ -3,13 +3,14 @@ import Link from "next/link";
 import ContributorImage from "@/components/atoms/ContributorImage";
 import { supabase } from "@/lib/supabase";
 import type { Contributor } from "@/types/contributor";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contributors | Mangulina",
+export const metadata: Metadata = createPageMetadata({
+  title: "Contributors",
   description:
-    "Meet the contributors helping preserve, document, and enrich Dominican music through Mangulina.",
-  alternates: { canonical: "/contributors" },
-};
+    "Meet the contributors helping Mangulina, the Dominican Music Database, preserve, document and enrich Dominican music.",
+  path: "/contributors",
+});
 
 function SectionEyebrow({ children }: { children: React.ReactNode }) {
   return (

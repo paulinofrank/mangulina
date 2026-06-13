@@ -12,6 +12,7 @@ import {
   type ReleasePageData,
   type ReleaseTrack,
 } from "@/lib/releaseApi";
+import { createPageMetadata, releaseSeoTitle } from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -215,20 +216,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const release = await getReleaseBySlug(cleanSlug(slug));
 
-  if (!release) return { title: "Release Not Found | Mangulina" };
+  if (!release) {
+    return createPageMetadata({
+      title: "Release Not Found",
+      description: "This release is not available in the Dominican Music Database.",
+      path: `/releases/${slug}`,
+      noIndex: true,
+    });
+  }
 
-  const artistName = release.artist?.name ?? "Unknown Artist";
-  const releaseType = release.type ? formatReleaseType(release.type) : null;
-
-  return {
-    title: releaseType
-      ? `${release.title} - ${releaseType} by ${artistName} | Mangulina`
-      : `${release.title} - ${artistName} | Mangulina`,
-    description: `Explore ${release.title} by ${artistName}, including release details, track listing, year, label, and related Dominican music information on Mangulina.`,
-    alternates: {
-      canonical: `/releases/${release.slug}`,
-    },
-  };
+  return createPageMetadata({
+    title: releaseSeoTitle(release),
+    description: `Track listing, release details and credits for ${release.title} in the Dominican Music Database.`,
+    path: `/releases/${release.slug}`,
+    image: release.coverImageUrl,
+    openGraphType: "music.album",
+  });
 }
 
 export default async function ReleasePage({ params }: PageProps) {

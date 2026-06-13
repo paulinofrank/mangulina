@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Copyright & DMCA | Mangulina",
+export const metadata: Metadata = createPageMetadata({
+  title: "Copyright & DMCA",
   description:
-    "Mangulina's copyright and DMCA policy, including procedures for reporting copyright concerns, requesting corrections, and contacting rights holders.",
-  alternates: { canonical: "/dmca" },
-};
+    "Mangulina's copyright and DMCA policy for the Dominican Music Database, including procedures for reporting copyright concerns.",
+  path: "/dmca",
+});
 
 function SectionEyebrow({ children }: { children: React.ReactNode }) {
   return (
