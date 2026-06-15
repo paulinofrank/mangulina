@@ -38,7 +38,7 @@ export default function TopBanner() {
               Mangulina<span className="tm-fix">&trade;</span>
             </p>
             <p className="hidden sm:block truncate text-xs font-normal uppercase tracking-wider text-[#8B0000]">
-              Dominican Music Database
+              The Dominican Music Database
             </p>
           </div>
         </Link>

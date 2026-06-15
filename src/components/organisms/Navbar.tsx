@@ -9,16 +9,16 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Artists', href: '/artists' },
+    { name: 'Singers', href: '/artists' },
     { name: 'Songs', href: '/archive' },
-    { name: 'Christian', href: '/artists?tag=christian'},
+    { name: 'Christian', href: '/christian'},
   ];
 
   return (
     <nav
       className="fixed bottom-4 left-1/2 z-100 w-[calc(100%-2rem)] max-w-fit -translate-x-1/2 pb-[env(safe-area-inset-bottom)] sm:bottom-6"
     >
-      <div className="flex items-center justify-center gap-3 rounded-full border border-black/5 bg-white/80 px-4 py-2.5 shadow-sm backdrop-blur-xl sm:gap-4 sm:px-5">
+      <div className="flex items-center justify-center gap-3 rounded-full border border-[#002D62]/10 bg-white/80 px-4 py-2.5 shadow-[0_4px_18px_rgba(0,45,98,0.22)] backdrop-blur-xl sm:gap-4 sm:px-5">
         
         {/* Back Button */}
         <button 

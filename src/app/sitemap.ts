@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 import { genreDefinitions } from "@/lib/genres";
 import { buildCanonical } from "@/lib/seo";
 import { getSupabaseClient } from "@/lib/supabase";
+import { getPublishedProvinces } from "@/lib/provinces";
 
 const PAGE_SIZE = 1000;
 
@@ -105,11 +106,12 @@ function entry(path: string, priority?: number): MetadataRoute.Sitemap[number] {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [artists, releases, recordings, databaseGenres] = await Promise.all([
+  const [artists, releases, recordings, databaseGenres, provinces] = await Promise.all([
     getPublishedArtists(),
     getReleases(),
     getRecordings(),
     getActiveGenreSlugs(),
+    getPublishedProvinces(),
   ]);
 
   const publishedArtistIds = new Set(artists.map((artist) => artist.id));
@@ -129,12 +131,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     entry("/", 1),
+    entry("/discover", 0.8),
     entry("/artists", 0.9),
+    entry("/artists/legends", 0.8),
+    entry("/artists/emerging", 0.8),
+    entry("/artists/most-awarded", 0.8),
+    entry("/instrumental-classical", 0.7),
+    entry("/composers", 0.8),
+    entry("/songwriters", 0.8),
+    entry("/lyricists", 0.8),
+    entry("/musicians", 0.8),
+    entry("/djs", 0.8),
+    entry("/producers", 0.8),
+    entry("/christian", 0.8),
     entry("/archive", 0.9),
     entry("/artists/birthdays", 0.7),
     entry("/about", 0.6),
     entry("/contact", 0.5),
     entry("/contributors", 0.5),
+    entry("/privacy-policy", 0.4),
+    entry("/terms-of-use", 0.4),
+    entry("/dmca", 0.4),
+    ...provinces.map((province) => entry(`/provinces/${province.slug}`, 0.8)),
     ...artists.map((artist) => entry(`/artists/${artist.slug}`, 0.8)),
     ...publicRecordings.map((recording) => entry(`/songs/${recording.slug}`, 0.7)),
     ...publicReleases.map((release) => entry(`/releases/${release.slug}`, 0.7)),

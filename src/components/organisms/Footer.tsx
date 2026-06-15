@@ -48,7 +48,19 @@ export default function Footer() {
               </div>
             </div>
 
+            <div className="mt-5 flex justify-center sm:hidden">
+              <Link
+                href="/discover"
+                className="inline-flex items-center gap-2 text-[1.2em] font-medium text-[#002D62] transition-colors hover:text-[#8B0000]"
+              >
+                <span aria-hidden="true" className="text-[#8B0000]">✦</span>
+                Discover
+                <span aria-hidden="true" className="text-[#8B0000]">✦</span>
+              </Link>
+            </div>
+
             <div className="hidden flex-wrap justify-center gap-x-6 gap-y-2 sm:flex">
+              <Link href="/discover" className="transition-colors hover:text-[#002D62]">Discover</Link>
               <Link href="/about" className="transition-colors hover:text-[#002D62]">About</Link>
               <Link href="/contact" className="transition-colors hover:text-[#002D62]">Contact</Link>
               <Link href="/contributors" className="transition-colors hover:text-[#002D62]">Contributors</Link>

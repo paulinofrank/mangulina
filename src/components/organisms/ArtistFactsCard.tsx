@@ -67,6 +67,16 @@ function getOccupationList(occupations: ArtistProfileData["occupations"]) {
   return Object.keys(occupations);
 }
 
+function getInstrumentList(instruments: ArtistProfileData["instruments"]) {
+  if (!instruments) return [];
+
+  if (Array.isArray(instruments)) {
+    return instruments.map(String);
+  }
+
+  return Object.keys(instruments);
+}
+
 function getArtistStatus(artist: ArtistProfileData) {
   if (artist.type === "person") {
     return artist.date_of_death || artist.death_year ? "Deceased" : null;
@@ -344,6 +354,7 @@ export default function ArtistFactsCard({
   const birthPlace = getBirthPlace(artist);
   const originLabel = getOriginLabel(artist);
   const occupations = getOccupationList(artist.occupations);
+  const instruments = getInstrumentList(artist.instruments);
   const artistStatus = getArtistStatus(artist);
 
   const websiteUrl = getWebsiteUrl(artist.website);
@@ -399,6 +410,12 @@ export default function ArtistFactsCard({
         {occupations.length > 0 && (
           <Field label="Other Roles">
             <InlineList values={occupations.map((occupation) => formatLabel(occupation))} />
+          </Field>
+        )}
+
+        {instruments.length > 0 && (
+          <Field label="Instruments">
+            <InlineList values={instruments.map((instrument) => formatLabel(instrument))} />
           </Field>
         )}
 

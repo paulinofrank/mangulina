@@ -6,6 +6,8 @@ export interface Artist {
   name: string;
   status?: "draft" | "published" | "hidden" | "needs_review" | "duplicate";
   primary_role?: string | null;
+  occupations?: string[] | Record<string, unknown> | null;
+  instruments?: string[] | Record<string, unknown> | null;
   /** Alternate billing / search name when different from `name` */
   stage_name?: string | null;
   date_of_birth?: string | null; // Needed for BirthdaySection.tsx

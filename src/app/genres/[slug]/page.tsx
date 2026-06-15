@@ -9,9 +9,11 @@ import SongCard from "@/components/molecules/SongCard";
 import GenreCarouselSection from "@/components/organisms/GenreCarouselSection";
 import GenreSubgenreSongs from "@/components/genres/GenreSubgenreSongs";
 import ReleaseCoverImage from "@/components/genres/ReleaseCoverImage";
+import JsonLd from "@/components/seo/JsonLd";
 import { getGenrePageData, getGenrePageSlugs, type GenreReleaseSummary } from "@/lib/genreApi";
 import { genreDefinitions, getGenreDefinition } from "@/lib/genres";
 import { createPageMetadata, genreSeoTitle } from "@/lib/seo";
+import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -100,6 +102,20 @@ export default async function GenrePage({ params }: PageProps) {
 
   return (
     <MainWrapper>
+      <JsonLd
+        data={[
+          collectionPageSchema({
+            name: `${genre.title} Artists, Songs & Albums`,
+            description: `Explore ${genre.title} artists, songs, albums and recordings in the Dominican Music Database.`,
+            path: `/genres/${genre.slug}`,
+          }),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Genres", path: "/discover#genres" },
+            { name: genre.title, path: `/genres/${genre.slug}` },
+          ]),
+        ]}
+      />
       <AnalyticsPageView eventType="genre_view" entityId={genre.slug} />
       <div className="w-full px-5 pb-10 pt-5 sm:px-6 sm:pb-12 sm:pt-6">
         <header className="mb-8 overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm">

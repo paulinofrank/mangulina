@@ -37,7 +37,7 @@ export default function ClassicalArtistsSection({
         <div className="section-header">
           <h2>Instrumental & Classical</h2>
           <Link
-            href="/artists?occupation=instrumentalist"
+            href="/instrumental-classical"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
             See All

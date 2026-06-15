@@ -15,7 +15,10 @@ import BirthdaySection from "@/components/organisms/BirthdaySection";
 import TopChristianArtistsSection from "@/components/organisms/TopChristianArtistsSection";
 import ClassicalArtistsSection from "@/components/organisms/ClassicalArtistsSection";
 import TopRisingStarsSection from "@/components/organisms/TopRisingStarsSection";
+import TopLegendsArtistsSection from "@/components/organisms/TopLegendsArtistsSection";
 import { createPageMetadata, DEFAULT_DESCRIPTION } from "@/lib/seo";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_NAME, SITE_URL } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
   title: "Dominican Music Database",
@@ -30,6 +33,33 @@ export default async function HomePage() {
 
   return (
     <MainWrapper className="!pb-0">
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: SITE_NAME,
+            alternateName: "Dominican Music Database",
+            url: SITE_URL,
+            description:
+              "Mangulina is a Dominican Music Database dedicated to documenting artists, songs, releases, genres, and Dominican music history.",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: `${SITE_URL}/search?q={search_term_string}`,
+              "query-input": "required name=search_term_string",
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: SITE_NAME,
+            alternateName: "Dominican Music Database",
+            url: SITE_URL,
+            description:
+              "Mangulina is a Dominican Music Database dedicated to documenting artists, songs, releases, genres, and Dominican music history.",
+          },
+        ]}
+      />
       <PageSection>
         <FeaturedArtistSection featuredArtist={data.featuredArtist} />
       </PageSection>
@@ -56,6 +86,10 @@ export default async function HomePage() {
 
       <PageSection>
         <TrendingSongsSection songs={data.trendingSongs} />
+      </PageSection>
+
+      <PageSection>
+        <TopLegendsArtistsSection artists={data.legendsArtists} />
       </PageSection>
 
       <PageSection>

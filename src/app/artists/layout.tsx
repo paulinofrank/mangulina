@@ -3,16 +3,16 @@ import type { Metadata } from "next";
 import { createPageMetadata } from "@/lib/seo";
 
 const baseMetadata = createPageMetadata({
-  title: "Dominican Artists",
+  title: "Dominican Singers",
   description:
-    "Browse Dominican artists, singers, composers, musicians and groups in Mangulina, the Dominican Music Database.",
+    "Browse Dominican singers by genre, province and musical context in Mangulina, the Dominican Music Database.",
   path: "/artists",
 });
 
 export const metadata: Metadata = {
   ...baseMetadata,
   title: {
-    default: "Dominican Artists",
+    default: "Dominican Singers",
     template: "%s | Mangulina",
   },
 };

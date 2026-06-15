@@ -33,7 +33,7 @@ export default function TopArtistsSection({ topArtists }: TopArtistsSectionProps
       <div className="section-inner">
         {/* HEADER */}
         <div className="section-header">
-          <h2>Top Artists by Views</h2>
+          <h2>Top Singers by Views</h2>
           <Link
             href="/artists"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"

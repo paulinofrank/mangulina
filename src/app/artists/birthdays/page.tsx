@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import ArtistImage from "@/components/atoms/ArtistImage";
+import JsonLd from "@/components/seo/JsonLd";
 import BirthdayBrowseMode, {
   type BirthdayBrowseModeValue,
 } from "@/components/artists/BirthdayBrowseMode";
@@ -9,6 +10,7 @@ import BirthdayYearSelect from "@/components/artists/BirthdayYearSelect";
 import { getSupabaseClient } from "@/lib/supabase";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 import { createPageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Artist Birthdays",
@@ -348,6 +350,21 @@ export default async function ArtistBirthdaysPage({
 
   return (
     <main className="mx-auto max-w-6xl px-6 pb-3 pt-20">
+      <JsonLd
+        data={[
+          collectionPageSchema({
+            name: "Artist Birthdays",
+            description:
+              "Browse Dominican artists by birthday and explore Dominican music history in Mangulina, the Dominican Music Database.",
+            path: "/artists/birthdays",
+          }),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Singers", path: "/artists" },
+            { name: "Artist Birthdays", path: "/artists/birthdays" },
+          ]),
+        ]}
+      />
       <header className="mb-10 rounded-3xl border border-black/10 bg-white px-8 py-6 shadow-sm sm:px-12 sm:py-10">
         <SectionEyebrow>Birthday Archive</SectionEyebrow>
 

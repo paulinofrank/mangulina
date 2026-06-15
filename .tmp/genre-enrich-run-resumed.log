@@ -99,3 +99,21 @@
    skip: "Esta noche la paso contigo" — Rafael Labasta: no recording-level evidence found
    skip: "Colorete" — Joseíto Mateo: no recording-level evidence found
    skip: "María se fue" — Raúl Acosta: no recording-level evidence found
+[batch 59] updated=71 skipped=29 | {"Merengue":27,"Ballads":6,"Bachata":22,"Rock":1,"Worship":2,"Urban":7,"Electronic":1,"Instrumental":1,"Pop":1,"Fusion":1,"Salsa":2} | cursor=f5d63fcc-18b4-49b6-8caa-dc6e02fcccf2 | remaining≈1356 | 74s | ETA ~16 min
+   skip: "De guañangue" — Ramón Gallardo: no recording-level evidence found
+   skip: "Pasarla bien" — Ilegales: specific label conflicts with artist prior (apple=Latin Rap, prior=Merengue)
+   skip: "Acudiran al llamado" — Expresión Joven: no recording-level evidence found
+[batch 60] updated=70 skipped=30 | {"Merengue":25,"Urban":11,"Ballads":3,"Fusion":2,"Salsa":3,"Bachata":19,"Pop":3,"Worship":2,"Rock":2} | cursor=fa34b5e4-0e62-44d1-b33f-4171cb1eb917 | remaining≈1256 | 83s | ETA ~15 min
+   skip: "Cumbia pícara" — Raúl Acosta: no recording-level evidence found
+   skip: "Humilde" — Dary Hezz: no recording-level evidence found
+   skip: "Quiéreme" — Santiago Cerón: no recording-level evidence found
+[batch 61] updated=62 skipped=38 | {"Bachata":21,"Merengue":20,"Ballads":7,"Rock":1,"Urban":8,"Worship":4,"Pop":1} | cursor=fd8be647-bc76-495c-b4f4-5b6d2d608b31 | remaining≈1156 | 79s | ETA ~14 min
+   skip: "Bachata rosa" — Juan Luis Guerra 4.40: title keyword Bachata conflicts with prior Merengue
+   skip: "Mi Mundo Gira" — Tribu del Sol: no recording-level evidence found
+   skip: "Chupa tu paleta" — Raúl Acosta: no recording-level evidence found
+[batch 62] updated=35 skipped=20 | {"Bachata":17,"Urban":3,"Merengue":10,"Pop":2,"Fusion":1,"Worship":1,"Ballads":1} | cursor=fff738b1-a617-4a7e-9b33-a3473ce6bfe1 | remaining≈1101 | 45s | ETA ~13 min
+   skip: "Chill Baby" — Raúl Acosta: no recording-level evidence found
+   skip: "PELAME LA PAPA" — mediopicky: latin label without artist prior (apple=Latin)
+   skip: "Palo santo" — Enerolisa Núñez: no recording-level evidence found
+[done] no more NULL-genre recordings past cursor
+[totals] processed=6155 updated=4106 skipped=2049 (ambiguous list in .tmp/genre-enrich-checkpoint.json)

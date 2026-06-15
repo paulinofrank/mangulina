@@ -20,6 +20,7 @@ import SongPlatformLinksSection, {
 } from "@/components/organisms/SongPlatformLinksSection";
 import SongSlangSection from "@/components/organisms/SongSlangSection";
 import SongSourcesSection from "@/components/organisms/SongSourcesSection";
+import JsonLd from "@/components/seo/JsonLd";
 
 import {
   getMoreSongsByArtist,
@@ -34,6 +35,7 @@ import {
   type RawCredit,
   type SongRecord,
 } from "@/lib/queries/songs";
+import { absoluteUrl, breadcrumbSchema, isoDuration } from "@/lib/structuredData";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -199,9 +201,48 @@ export default async function SongProfilePage({ params }: PageProps) {
   const normalizedCredits = normalizeCredits(credits);
   const platformLinks     = mergePlatformLinks(song, dbPlatformLinks);
   const canShowLyrics     = Boolean(song.lyrics && song.lyrics_authorized === true);
+  const sameAs = platformLinks
+    .map((link) => link.url)
+    .filter((url): url is string => Boolean(url));
+  const songPath = `/songs/${cleanSlug}`;
+  const recordingSchema = {
+    "@context": "https://schema.org",
+    "@type": "MusicRecording",
+    name: song.recording_title,
+    url: absoluteUrl(songPath),
+    byArtist: song.artist_name
+      ? {
+          "@type": "MusicGroup",
+          name: song.artist_name,
+          url: artistSlug ? absoluteUrl(`/artists/${artistSlug}`) : undefined,
+        }
+      : undefined,
+    inAlbum: song.release_title
+      ? {
+          "@type": "MusicAlbum",
+          name: song.release_title,
+          url: song.release_slug ? absoluteUrl(`/releases/${song.release_slug}`) : undefined,
+        }
+      : undefined,
+    duration: isoDuration(song.duration),
+    isrcCode: song.isrcs?.[0] ?? undefined,
+    genre: [genre, subgenre].filter(Boolean),
+    datePublished: releaseYear ? String(releaseYear) : song.recording_year ? String(song.recording_year) : undefined,
+    sameAs: sameAs.length ? sameAs : undefined,
+  };
 
   return (
     <MainWrapper>
+      <JsonLd
+        data={[
+          recordingSchema,
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Songs", path: "/archive" },
+            { name: song.recording_title, path: songPath },
+          ]),
+        ]}
+      />
       <AnalyticsPageView eventType="recording_view" entityId={recordingId} />
       <PageSection className="mt-4">
         <div className="grid items-start gap-5 xl:grid-cols-[minmax(0,1.45fr)_minmax(320px,0.85fr)]">

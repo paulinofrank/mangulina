@@ -37,7 +37,7 @@ export default function ProminentComposersSection({
         <div className="section-header">
           <h2>Composers</h2>
           <Link
-            href="/artists"
+            href="/composers"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
             See All

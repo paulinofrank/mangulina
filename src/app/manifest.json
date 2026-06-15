@@ -1,6 +1,7 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Mangulina - Dominican Music Database",
+  "short_name": "Mangulina",
+  "description": "Explore Dominican artists, songs, albums, genres, awards and music history",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +16,9 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#002D62",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
 }

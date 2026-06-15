@@ -6,6 +6,7 @@ import MainWrapper from "@/components/layout/MainWrapper";
 import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
 import PageSection from "@/components/layout/PageSection";
 import ReleaseCoverImage from "@/components/genres/ReleaseCoverImage";
+import JsonLd from "@/components/seo/JsonLd";
 import {
   formatReleaseType,
   getReleaseBySlug,
@@ -13,6 +14,7 @@ import {
   type ReleaseTrack,
 } from "@/lib/releaseApi";
 import { createPageMetadata, releaseSeoTitle } from "@/lib/seo";
+import { absoluteUrl, breadcrumbSchema } from "@/lib/structuredData";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -180,38 +182,6 @@ function ReleaseTrackList({ tracks }: { tracks: ReleaseTrack[] }) {
   );
 }
 
-function ReleaseJsonLd({ release }: { release: ReleasePageData }) {
-  const type = release.type?.toLowerCase() === "album" ? "MusicAlbum" : "MusicRelease";
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": type,
-    name: release.title,
-    byArtist: release.artist
-      ? {
-          "@type": "MusicGroup",
-          name: release.artist.name,
-          url: release.artist.slug ? `/artists/${release.artist.slug}` : undefined,
-        }
-      : undefined,
-    datePublished: release.date ?? release.releaseYear ?? release.year ?? undefined,
-    image: release.coverImageUrl ?? undefined,
-    numTracks: release.tracks.length,
-    track: release.tracks.map((track, index) => ({
-      "@type": "MusicRecording",
-      position: track.trackNumber ?? index + 1,
-      name: track.title,
-      url: getTrackHref(track) ?? undefined,
-    })),
-  };
-
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
-  );
-}
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const release = await getReleaseBySlug(cleanSlug(slug));
@@ -239,11 +209,47 @@ export default async function ReleasePage({ params }: PageProps) {
   const release = await getReleaseBySlug(cleanSlug(slug));
 
   if (!release) notFound();
+  const releasePath = `/releases/${release.slug}`;
+  const releaseSchema = {
+    "@context": "https://schema.org",
+    "@type": "MusicAlbum",
+    name: release.title,
+    url: absoluteUrl(releasePath),
+    byArtist: release.artist
+      ? {
+          "@type": "MusicGroup",
+          name: release.artist.name,
+          url: release.artist.slug
+            ? absoluteUrl(`/artists/${release.artist.slug}`)
+            : undefined,
+        }
+      : undefined,
+    image: release.coverImageUrl ?? undefined,
+    datePublished: formatDate(release) ?? undefined,
+    numTracks: release.tracks.length || undefined,
+    track: release.tracks.length
+      ? release.tracks.map((track, index) => ({
+          "@type": "MusicRecording",
+          position: track.trackNumber ?? index + 1,
+          name: track.title,
+          url: getTrackHref(track) ? absoluteUrl(getTrackHref(track)!) : undefined,
+        }))
+      : undefined,
+  };
 
   return (
     <MainWrapper>
       <AnalyticsPageView eventType="release_view" entityId={release.id} />
-      <ReleaseJsonLd release={release} />
+      <JsonLd
+        data={[
+          releaseSchema,
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Releases", path: "/archive" },
+            { name: release.title, path: releasePath },
+          ]),
+        ]}
+      />
       <PageSection className="mt-4">
         <div className="mx-auto max-w-6xl space-y-5">
           <ReleaseHero release={release} />

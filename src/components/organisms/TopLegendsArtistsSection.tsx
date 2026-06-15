@@ -1,0 +1,55 @@
+"use client";
+
+import { useRef } from "react";
+import Link from "next/link";
+
+import SectionCard from "@/components/layout/SectionCard";
+import ArtistCard from "@/components/molecules/ArtistCard";
+import CarouselArrow from "@/components/molecules/CarouselArrow";
+import type { ArtistSummary } from "@/types/home";
+
+export default function TopLegendsArtistsSection({
+  artists,
+}: {
+  artists: ArtistSummary[];
+}) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  if (!artists.length) return null;
+
+  const scroll = (direction: "left" | "right") => {
+    if (!scrollRef.current) return;
+    const { scrollLeft, clientWidth } = scrollRef.current;
+    scrollRef.current.scrollTo({
+      left: direction === "left" ? scrollLeft - clientWidth * 0.8 : scrollLeft + clientWidth * 0.8,
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <SectionCard compact>
+      <div className="section-inner">
+        <div className="section-header">
+          <h2>Top Legends Artists</h2>
+          <Link
+            href="/artists/legends"
+            className="ml-auto text-sm font-normal uppercase tracking-wider text-[#8B0000] transition-colors hover:text-[#6B0000]"
+          >
+            See All
+          </Link>
+        </div>
+
+        <CarouselArrow direction="left" onClick={() => scroll("left")} />
+        <CarouselArrow direction="right" onClick={() => scroll("right")} />
+
+        <div ref={scrollRef} className="flex w-full gap-4 overflow-x-auto pb-2 scrollbar-none">
+          {artists.map((artist) => (
+            <div key={artist.id} className="w-28 shrink-0 sm:w-32 lg:w-36">
+              <ArtistCard artist={artist} titleAs="h3" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </SectionCard>
+  );
+}

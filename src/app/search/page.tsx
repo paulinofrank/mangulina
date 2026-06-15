@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import SearchAnalytics from "@/components/analytics/SearchAnalytics";
 import MainWrapper from "@/components/layout/MainWrapper";
 import { globalSearch, SearchResult } from "@/lib/searchApi";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Search Dominican Music",
+  description:
+    "Search Dominican artists, songs, releases, genres, and music history in Mangulina, the Dominican Music Database.",
+  path: "/search",
+});
 
 type SearchPageProps = {
   searchParams: Promise<{ q?: string }>;

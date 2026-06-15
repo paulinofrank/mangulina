@@ -51,7 +51,7 @@ export default function MostAwardedArtistsSection({
         <div className="section-header">
           <h2>Most Awarded Artists</h2>
           <Link
-            href="/artists"
+            href="/artists/most-awarded"
             className="ml-auto text-sm font-normal uppercase tracking-wider text-[#8B0000] transition-colors hover:text-[#6B0000]"
           >
             See All

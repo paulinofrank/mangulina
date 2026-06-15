@@ -315,6 +315,24 @@ export async function getHomeData() {
       views: a.views,
     }));
 
+  // 12. Top Legends Artists
+  const legendsResponse = await supabase
+    .from("artists")
+    .select("id, slug, name, province, views")
+    .eq("status", "published")
+    .contains("artist_tags", ["legend"])
+    .order("views", { ascending: false, nullsFirst: false })
+    .limit(10);
+
+  const legendsArtists: ArtistSummary[] =
+    ((legendsResponse.data as ArtistSummary[]) || []).map((artist) => ({
+      id: artist.id,
+      slug: artist.slug,
+      name: artist.name,
+      province: artist.province,
+      views: artist.views,
+    }));
+
   return {
     featuredArtist,
     birthdayArtists,
@@ -326,6 +344,7 @@ export async function getHomeData() {
     christianArtists,
     mostAwardedArtists,
     classicalArtists,
-    risingStars
+    risingStars,
+    legendsArtists,
   };
 }

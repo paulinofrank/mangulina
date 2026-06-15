@@ -10,6 +10,7 @@ import ArtistFactsCard from "@/components/organisms/ArtistFactsCard";
 import ArtistDiscographyAccordion from "@/components/organisms/ArtistDiscographyAccordion";
 import ArtistInterviewsCarousel from "@/components/organisms/ArtistInterviewsCarousel";
 import BioText from "@/components/molecules/BioText";
+import JsonLd from "@/components/seo/JsonLd";
 import {
   getArtistProfile,
   getArtistDiscography,
@@ -21,6 +22,7 @@ import {
   artistSeoTitle,
   createPageMetadata,
 } from "@/lib/seo";
+import { absoluteUrl, breadcrumbSchema } from "@/lib/structuredData";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -64,9 +66,41 @@ export default async function ArtistProfile({ params }: PageProps) {
     getArtistRelationships(artist.id),
   ]);
   const isPerson = artist.type === "person";
+  const sameAs = [artist.website, artist.youtube, artist.facebook, artist.instagram]
+    .filter((value): value is string => Boolean(value && /^https?:\/\//i.test(value)));
+  const alternateNames = [...(artist.aliases ?? []), ...(artist.pseudonyms ?? [])];
+  const artistSchema = {
+    "@context": "https://schema.org",
+    "@type": isPerson ? "Person" : "MusicGroup",
+    name: artist.name,
+    alternateName: alternateNames.length ? alternateNames : artist.stage_name ?? undefined,
+    url: absoluteUrl(`/artists/${artist.slug}`),
+    image: imageUrl,
+    birthDate: isPerson ? artist.date_of_birth ?? undefined : undefined,
+    deathDate: isPerson ? artist.date_of_death ?? undefined : undefined,
+    birthPlace:
+      isPerson && (artist.birth_place || artist.province)
+        ? {
+            "@type": "Place",
+            name: [artist.birth_place, artist.province].filter(Boolean).join(", "),
+          }
+        : undefined,
+    genre: [artist.primary_genre, ...(artist.genres ?? [])].filter(Boolean),
+    sameAs: sameAs.length ? sameAs : undefined,
+  };
 
   return (
     <MainWrapper>
+      <JsonLd
+        data={[
+          artistSchema,
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Singers", path: "/artists" },
+            { name: artist.name, path: `/artists/${artist.slug}` },
+          ]),
+        ]}
+      />
       <AnalyticsPageView eventType="artist_view" entityId={artist.id} />
       <div className="mx-auto w-full max-w-[1780px] overflow-hidden px-4 py-10 sm:px-6 sm:py-12 2xl:px-10">
         <div className="grid min-w-0 items-start gap-8 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-10 2xl:grid-cols-[320px_minmax(0,1fr)]">
