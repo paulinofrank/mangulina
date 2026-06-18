@@ -4,6 +4,7 @@ import { genreDefinitions } from "@/lib/genres";
 import { buildCanonical } from "@/lib/seo";
 import { getSupabaseClient } from "@/lib/supabase";
 import { getPublishedProvinces } from "@/lib/provinces";
+import { getArchiveCounts } from "@/lib/getSongsByYear";
 
 const PAGE_SIZE = 1000;
 
@@ -113,6 +114,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     getActiveGenreSlugs(),
     getPublishedProvinces(),
   ]);
+  const { decadeCounts, yearCounts } = await getArchiveCounts();
 
   const publishedArtistIds = new Set(artists.map((artist) => artist.id));
   const publicReleases = releases.filter(
@@ -152,6 +154,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     entry("/privacy-policy", 0.4),
     entry("/terms-of-use", 0.4),
     entry("/dmca", 0.4),
+    ...Object.keys(decadeCounts)
+      .filter((decade) => decadeCounts[decade] > 0)
+      .sort((a, b) => Number(b.slice(0, 4)) - Number(a.slice(0, 4)))
+      .map((decade) => entry(`/archive/${decade}`, 0.8)),
+    ...Object.keys(yearCounts)
+      .filter((year) => yearCounts[year] > 0)
+      .sort((a, b) => Number(b) - Number(a))
+      .map((year) => entry(`/archive/${year}`, 0.7)),
     ...provinces.map((province) => entry(`/provinces/${province.slug}`, 0.8)),
     ...artists.map((artist) => entry(`/artists/${artist.slug}`, 0.8)),
     ...publicRecordings.map((recording) => entry(`/songs/${recording.slug}`, 0.7)),

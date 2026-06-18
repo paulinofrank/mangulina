@@ -10,8 +10,8 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Singers', href: '/artists' },
-    { name: 'Songs', href: '/archive' },
-    { name: 'Christian', href: '/christian'},
+    { name: 'Christian', href: '/christian' },
+    { name: 'Discover', href: '/discover'},
   ];
 
   return (

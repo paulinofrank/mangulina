@@ -1,69 +1,74 @@
 // src/components/DecadeSelector.tsx
 "use client";
 
+import Link from "next/link";
+import { Music2 } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import SectionCard from "@/components/layout/SectionCard";
-
-const FIRST_ARCHIVE_DECADE = 1920;
-const currentYear = new Date().getFullYear();
-const currentDecadeStart = Math.floor(currentYear / 10) * 10;
-const currentDecade = `${currentDecadeStart}s`;
-
-const decades = Array.from(
-  { length: (currentDecadeStart - FIRST_ARCHIVE_DECADE) / 10 + 1 },
-  (_, index) => `${currentDecadeStart - index * 10}s`,
-);
-
-const yearsByDecade = decades.reduce<Record<string, number[]>>((map, decade) => {
-  const start = Number(decade.replace("s", ""));
-  const end = decade === currentDecade ? currentYear : start + 9;
-  map[decade] = Array.from({ length: end - start + 1 }, (_, index) => end - index);
-  return map;
-}, {});
+import { getArchiveDecades, getDecadeForYear, getYearsForDecade } from "@/lib/archivePeriods";
 
 type ArchiveCountsResponse = {
   ok: boolean;
   decadeCounts?: Record<string, number>;
+  yearCounts?: Record<string, number>;
+};
+
+type DecadeSelectorProps = {
+  mode?: "decades" | "years";
+  selectedDecade?: string | null;
+  selectedYear?: number | null;
+  selectedYearCount?: number;
 };
 
 export default function DecadeSelector({
+  mode = "decades",
+  selectedDecade,
   selectedYear,
-  onYearSelect,
-}: {
-  selectedYear: number | null;
-  onYearSelect: (year: number | null) => void;
-}) {
+  selectedYearCount,
+}: DecadeSelectorProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const selectedItemRef = useRef<HTMLAnchorElement | null>(null);
+  const [hydrated, setHydrated] = useState(false);
 
-  const selectedDecade = selectedYear ? `${Math.floor(selectedYear / 10) * 10}s` : null;
+  const activeDecade = selectedDecade ?? (selectedYear ? getDecadeForYear(selectedYear) : null);
   const [isOverflowing, setIsOverflowing] = useState(false);
   const [decadeCounts, setDecadeCounts] = useState<Record<string, number>>({});
+  const [yearCounts, setYearCounts] = useState<Record<string, number>>({});
 
   useEffect(() => {
     let cancelled = false;
+    const params = mode === "years" && activeDecade ? `?decade=${encodeURIComponent(activeDecade)}` : "";
 
-    fetch("/api/archive/counts")
+    fetch(`/api/archive/counts${params}`)
       .then(async (response) => {
         const result = (await response.json()) as ArchiveCountsResponse;
         if (!response.ok || !result.ok) return;
 
         if (!cancelled) {
           setDecadeCounts(result.decadeCounts ?? {});
+          setYearCounts(result.yearCounts ?? {});
         }
       })
       .catch(() => {
         if (!cancelled) {
           setDecadeCounts({});
+          setYearCounts({});
         }
       });
 
     return () => {
       cancelled = true;
     };
+  }, [mode, activeDecade]);
+
+  useEffect(() => {
+    setHydrated(true);
   }, []);
 
   useEffect(() => {
+    if (!hydrated) return;
+
     const el = scrollRef.current;
     if (!el) return;
 
@@ -75,7 +80,7 @@ export default function DecadeSelector({
     window.addEventListener("resize", checkOverflow);
 
     return () => window.removeEventListener("resize", checkOverflow);
-  }, []);
+  }, [mode, activeDecade, decadeCounts, yearCounts, hydrated]);
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
@@ -89,110 +94,132 @@ export default function DecadeSelector({
     }
   };
 
+  const decades = getArchiveDecades();
+  const visibleYears = activeDecade
+    ? [...getYearsForDecade(activeDecade)].sort((a, b) => a - b)
+    : [];
+  const showYears = mode === "years" && activeDecade;
+
+  useEffect(() => {
+    if (!showYears || !selectedYear) return;
+
+    const timeout = window.setTimeout(() => {
+      selectedItemRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "center",
+      });
+    }, 0);
+
+    return () => window.clearTimeout(timeout);
+  }, [showYears, selectedYear, visibleYears.length]);
+
   return (
     <SectionCard>
       <CarouselArrows onLeft={() => scroll("left")} onRight={() => scroll("right")} />
 
       <div className="section-inner">
         <div className="w-full">
-
-          {/* Header */}
           <div className="section-header">
             <h2>
-              Browse Archive by Decade
+              {showYears ? `${activeDecade} Archive` : "Browse Archive by Decade"}
             </h2>
           </div>
 
-          {/* DECADE CAROUSEL */}
           <div
             ref={scrollRef}
             className={`flex w-full gap-4 overflow-x-auto scrollbar-none pb-2 transition-all
-              ${isOverflowing ? "justify-start" : "justify-center"}
+              ${hydrated && isOverflowing ? "justify-start" : "justify-center"}
             `}
           >
-            {decades.map((decade) => {
-              const isActive = selectedDecade === decade;
+            {showYears
+              ? visibleYears.map((year) => {
+                  const isActive = selectedYear === year;
+                  const count =
+                    isActive && selectedYearCount !== undefined
+                      ? selectedYearCount
+                      : (yearCounts[String(year)] ?? 0);
 
-              return (
-                <button
-                  key={decade}
-                  onClick={() => {
-                    const nextYear = yearsByDecade[decade][0] ?? null;
-                    onYearSelect(nextYear);
-                  }}
-                  className="shrink-0 w-28 group"
-                >
-                  <div
-                    className={`relative h-16 overflow-hidden rounded-lg border transition-all duration-300 ease-out flex flex-col items-center justify-center shadow-[0_2px_4px_rgba(0,0,0,0.05)]
-                      ${isActive
-                        ? "bg-[#002D62] border-[#002D62]"
-                        : "bg-white border-[#B0C4DE] hover:bg-[#002D62] hover:border-[#002D62]"
-                      }
-                      group-hover:scale-[1.03]
-                    `}
-                  >
-                    <span
-                      className={`text-lg font-semibold transition-colors ${
-                        isActive ? "text-white" : "text-[#002D62] group-hover:text-white"
-                      }`}
+                  return (
+                    <Link
+                      key={year}
+                      href={`/archive/${year}`}
+                      ref={isActive ? selectedItemRef : null}
+                      aria-current={isActive ? "page" : undefined}
+                      className="shrink-0 w-36 group"
                     >
-                      {decade}
-                    </span>
-                    <span
-                      className={`mt-0.5 text-[10px] font-medium leading-none transition-colors ${
-                        isActive ? "text-white/80" : "text-gray-500 group-hover:text-white/80"
-                      }`}
-                    >
-                      {(decadeCounts[decade] ?? 0).toLocaleString()} songs
-                    </span>
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* YEARS */}
-          {selectedDecade && (
-            <div
-              className="mt-3 flex flex-wrap gap-2 justify-center opacity-0 data-[active=true]:opacity-100 transition-opacity duration-300 ease-out"
-              data-active={true}
-            >
-              {yearsByDecade[selectedDecade].map((year) => {
-                const isActive = selectedYear === year;
-
-                return (
-                  <button
-                    key={year}
-                    onClick={() => {
-                      const newYear = isActive ? null : year;
-                      onYearSelect(newYear);
-                    }}
-                    className="flex-[1_1_60px] max-w-22.5 group"
-                  >
-                    <div
-                      className={`relative h-12 overflow-hidden rounded-lg border shadow-[0_2px_4px_rgba(0,0,0,0.05)]
-                        transition-all duration-300 ease-out flex items-center justify-center
-                        ${isActive
-                          ? "bg-[#8B0000] border-[#8B0000]"
-                          : "bg-white border-[#CE1126] hover:bg-[#8B0000] hover:border-[#8B0000]"
-                        }
-                        group-hover:scale-[1.03]
-                      `}
-                    >
-                      <span
-                        className={`text-sm font-medium transition-colors ${
-                          isActive ? "text-white" : "text-[#002D62] group-hover:text-white"
-                        }`}
+                      <div
+                        className={`relative h-28 overflow-hidden rounded-lg border shadow-[0_2px_4px_rgba(0,0,0,0.05)]
+                          transition-all duration-300 ease-out flex flex-col items-center justify-center
+                          ${isActive
+                            ? "bg-[#8B0000] border-[#8B0000]"
+                            : "bg-white border-[#B0C4DE] hover:bg-[#002D62] hover:border-[#002D62]"
+                          }
+                          group-hover:scale-[1.03]
+                        `}
                       >
-                        {year}
-                      </span>
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-          )}
+                        <Music2
+                          className={`mb-2 h-5 w-5 transition-colors ${
+                            isActive ? "text-white" : "text-[#CE1126] group-hover:text-white"
+                          }`}
+                          aria-hidden="true"
+                        />
+                        <span
+                          className={`text-xl font-semibold transition-colors ${
+                            isActive ? "text-white" : "text-[#002D62] group-hover:text-white"
+                          }`}
+                        >
+                          {year}
+                        </span>
+                        <span
+                          className={`mt-1 text-xs font-medium leading-none transition-colors ${
+                            isActive ? "text-white/80" : "text-gray-500 group-hover:text-white/80"
+                          }`}
+                        >
+                          {count.toLocaleString()} songs
+                        </span>
+                      </div>
+                    </Link>
+                  );
+                })
+              : decades.map((decade) => {
+                  const isActive = activeDecade === decade;
 
+                  return (
+                    <Link
+                      key={decade}
+                      href={`/archive/${decade}`}
+                      aria-current={isActive ? "page" : undefined}
+                      className="shrink-0 w-28 group"
+                    >
+                      <div
+                        className={`relative h-16 overflow-hidden rounded-lg border transition-all duration-300 ease-out flex flex-col items-center justify-center shadow-[0_2px_4px_rgba(0,0,0,0.05)]
+                          ${isActive
+                            ? "bg-[#002D62] border-[#002D62]"
+                            : "bg-white border-[#B0C4DE] hover:bg-[#002D62] hover:border-[#002D62]"
+                          }
+                          group-hover:scale-[1.03]
+                        `}
+                      >
+                        <span
+                          className={`text-lg font-semibold transition-colors ${
+                            isActive ? "text-white" : "text-[#002D62] group-hover:text-white"
+                          }`}
+                        >
+                          {decade}
+                        </span>
+                        <span
+                          className={`mt-0.5 text-[10px] font-medium leading-none transition-colors ${
+                            isActive ? "text-white/80" : "text-gray-500 group-hover:text-white/80"
+                          }`}
+                        >
+                          {(decadeCounts[decade] ?? 0).toLocaleString()} songs
+                        </span>
+                      </div>
+                    </Link>
+                  );
+                })}
+          </div>
         </div>
       </div>
     </SectionCard>

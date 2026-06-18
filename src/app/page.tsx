@@ -16,6 +16,8 @@ import TopChristianArtistsSection from "@/components/organisms/TopChristianArtis
 import ClassicalArtistsSection from "@/components/organisms/ClassicalArtistsSection";
 import TopRisingStarsSection from "@/components/organisms/TopRisingStarsSection";
 import TopLegendsArtistsSection from "@/components/organisms/TopLegendsArtistsSection";
+import DecadeTimelineCarousel from "@/components/home/DecadeTimelineCarousel";
+import { getArchiveCounts } from "@/lib/getSongsByYear";
 import { createPageMetadata, DEFAULT_DESCRIPTION } from "@/lib/seo";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
@@ -29,10 +31,13 @@ export const metadata = createPageMetadata({
 export const revalidate = 600; // 10 minutes
 
 export default async function HomePage() {
-  const data = await getHomeData();
+  const [data, archiveCounts] = await Promise.all([
+    getHomeData(),
+    getArchiveCounts(),
+  ]);
 
   return (
-    <MainWrapper className="!pb-0">
+    <MainWrapper className="homepage-section-titles-red !pb-0">
       <JsonLd
         data={[
           {
@@ -69,7 +74,7 @@ export default async function HomePage() {
       </PageSection>
 
       <PageSection>
-        <BrowseByRegionSection regions={data.regions} />
+        <DecadeTimelineCarousel decadeCounts={archiveCounts.decadeCounts} />
       </PageSection>
 
       <PageSection>
@@ -90,6 +95,10 @@ export default async function HomePage() {
 
       <PageSection>
         <TopLegendsArtistsSection artists={data.legendsArtists} />
+      </PageSection>
+
+      <PageSection>
+        <BrowseByRegionSection regions={data.regions} />
       </PageSection>
 
       <PageSection>

@@ -1,5 +1,16 @@
 // src/lib/getSongsByYear.ts
 import { supabase } from "@/lib/supabase";
+import type { ArchiveSongRow } from "@/app/archive/SongsByYearList";
+
+type RecordingArchiveRow = ArchiveSongRow & {
+  release_year_actual: number | null;
+  artist_id?: string | null;
+};
+
+type ArchiveCounts = {
+  decadeCounts: Record<string, number>;
+  yearCounts: Record<string, number>;
+};
 
 async function getPublishedArtistIds(artistIds: unknown[]) {
   const ids = [...new Set(artistIds.filter((id): id is string => typeof id === "string" && id.length > 0))];
@@ -20,9 +31,9 @@ async function getPublishedArtistIds(artistIds: unknown[]) {
   return new Set((data ?? []).map((artist) => artist.id));
 }
 
-async function addRecordingSlugs(rows: any[]) {
+async function addRecordingSlugs(rows: RecordingArchiveRow[]) {
   const recordingIds = rows
-    .map((row: any) => row.recording_id)
+    .map((row) => row.recording_id)
     .filter((id: unknown): id is string => typeof id === "string" && id.length > 0);
 
   if (!recordingIds.length) return rows;
@@ -44,15 +55,15 @@ async function addRecordingSlugs(rows: any[]) {
     ])
   );
 
-  return rows.map((row: any) => ({
+  return rows.map((row) => ({
     ...row,
     recording_slug: slugMap.get(row.recording_id) ?? null,
   }));
 }
 
-async function filterToPublishedArtists(rows: any[]) {
-  const publishedArtistIds = await getPublishedArtistIds(rows.map((row: any) => row.artist_id));
-  return rows.filter((row: any) => !row.artist_id || publishedArtistIds.has(row.artist_id));
+async function filterToPublishedArtists<T extends { artist_id?: string | null }>(rows: T[]) {
+  const publishedArtistIds = await getPublishedArtistIds(rows.map((row) => row.artist_id));
+  return rows.filter((row) => !row.artist_id || publishedArtistIds.has(row.artist_id));
 }
 
 type SongsByYearOptions = {
@@ -61,13 +72,18 @@ type SongsByYearOptions = {
   sort?: "title" | "views";
 };
 
-export async function getSongsByYear(year: number, options: SongsByYearOptions = {}) {
+export async function getSongsByYearRange(
+  startYear: number,
+  endYear: number,
+  options: SongsByYearOptions = {},
+) {
   const sort = options.sort === "views" ? "views" : "title";
 
   const { data, error } = await supabase
     .from("recordings_with_release_info")
     .select("*")
-    .eq("release_year_actual", year)
+    .gte("release_year_actual", startYear)
+    .lte("release_year_actual", endYear)
     .order(sort === "views" ? "views" : "recording_title", {
       ascending: sort === "title",
       nullsFirst: false,
@@ -78,7 +94,7 @@ export async function getSongsByYear(year: number, options: SongsByYearOptions =
     return { songs: [], total: 0, hasMore: false };
   }
 
-  const rows = data ?? [];
+  const rows = (data ?? []) as RecordingArchiveRow[];
   const visibleRows = await filterToPublishedArtists(rows);
   const offset = Math.max(0, options.offset ?? 0);
   const limit = Math.max(1, options.limit ?? 50);
@@ -89,6 +105,10 @@ export async function getSongsByYear(year: number, options: SongsByYearOptions =
     total: visibleRows.length,
     hasMore: offset + songs.length < visibleRows.length,
   };
+}
+
+export async function getSongsByYear(year: number, options: SongsByYearOptions = {}) {
+  return getSongsByYearRange(year, year, options);
 }
 
 export async function getTopSongsByViews(limit = 100) {
@@ -103,30 +123,37 @@ export async function getTopSongsByViews(limit = 100) {
     return [];
   }
 
-  const rows = data ?? [];
+  const rows = (data ?? []) as RecordingArchiveRow[];
   const visibleRows = await filterToPublishedArtists(rows);
 
   return addRecordingSlugs(visibleRows);
 }
 
-export async function getArchiveDecadeCounts() {
+export async function getArchiveCountsForYearRange(
+  startYear?: number,
+  endYear?: number,
+): Promise<ArchiveCounts> {
   const pageSize = 1000;
   let from = 0;
-  const rows: any[] = [];
+  const rows: Pick<RecordingArchiveRow, "release_year_actual" | "artist_id">[] = [];
 
   while (true) {
-    const { data, error } = await supabase
+    let query = supabase
       .from("recordings_with_release_info")
       .select("release_year_actual, artist_id")
-      .not("release_year_actual", "is", null)
-      .range(from, from + pageSize - 1);
+      .not("release_year_actual", "is", null);
+
+    if (startYear !== undefined) query = query.gte("release_year_actual", startYear);
+    if (endYear !== undefined) query = query.lte("release_year_actual", endYear);
+
+    const { data, error } = await query.range(from, from + pageSize - 1);
 
     if (error) {
       console.error(error);
-      return {};
+      return { decadeCounts: {}, yearCounts: {} };
     }
 
-    rows.push(...(data ?? []));
+    rows.push(...((data ?? []) as Pick<RecordingArchiveRow, "release_year_actual" | "artist_id">[]));
 
     if (!data || data.length < pageSize) break;
     from += pageSize;
@@ -134,12 +161,26 @@ export async function getArchiveDecadeCounts() {
 
   const visibleRows = await filterToPublishedArtists(rows);
 
-  return visibleRows.reduce<Record<string, number>>((counts, row: any) => {
-    const year = Number(row.release_year_actual);
-    if (!Number.isInteger(year)) return counts;
+  return visibleRows.reduce(
+    (counts, row) => {
+      const year = Number(row.release_year_actual);
+      if (!Number.isInteger(year)) return counts;
 
-    const decade = `${Math.floor(year / 10) * 10}s`;
-    counts[decade] = (counts[decade] ?? 0) + 1;
-    return counts;
-  }, {});
+      const yearKey = String(year);
+      const decade = `${Math.floor(year / 10) * 10}s`;
+      counts.yearCounts[yearKey] = (counts.yearCounts[yearKey] ?? 0) + 1;
+      counts.decadeCounts[decade] = (counts.decadeCounts[decade] ?? 0) + 1;
+      return counts;
+    },
+    { decadeCounts: {}, yearCounts: {} } as ArchiveCounts,
+  );
+}
+
+export async function getArchiveCounts(): Promise<ArchiveCounts> {
+  return getArchiveCountsForYearRange();
+}
+
+export async function getArchiveDecadeCounts() {
+  const { decadeCounts } = await getArchiveCounts();
+  return decadeCounts;
 }

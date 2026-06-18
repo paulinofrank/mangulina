@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import DecadeSelector from "@/app/archive/DecadeSelector";
 import SongsByYearList from "@/app/archive/SongsByYearList";
+import type { ArchivePeriod } from "@/lib/archivePeriods";
 
 type ArchiveSort = "title" | "views";
 
@@ -26,8 +27,10 @@ type CacheEntry = {
 const ARCHIVE_PAGE_SIZE = 50;
 const SCROLL_KEY = "archive:scrollY";
 
-function cacheKey(year: number | null, sort: ArchiveSort) {
-  return `archive:songs:${year ?? "top"}:${sort}`;
+function cacheKey(period: ArchivePeriod | null, sort: ArchiveSort, page: number) {
+  if (!period) return `archive:songs:top:${sort}:page:${page}`;
+  if (period.type === "year") return `archive:songs:${period.year}:${sort}:page:${page}`;
+  return `archive:songs:${period.startYear}-${period.endYear}:${sort}:page:${page}`;
 }
 
 function readCache(key: string): CacheEntry | null {
@@ -47,32 +50,232 @@ function writeCache(key: string, entry: CacheEntry) {
   }
 }
 
-function parseYear(value: string | null) {
-  if (!value) return null;
-  const year = Number(value);
-  return Number.isInteger(year) && year >= 1800 && year <= 2100 ? year : null;
-}
-
 function parseSort(value: string | null): ArchiveSort {
   return value === "title" ? "title" : "views";
 }
 
-export default function ArchiveClient() {
+function parsePage(value: string | null) {
+  const page = Number(value);
+  return Number.isInteger(page) && page > 0 ? page : 1;
+}
+
+function buildArchiveUrl(period: ArchivePeriod | null, sortBy: ArchiveSort, page = 1) {
+  const basePath = period ? `/archive/${period.slug}` : "/archive";
+  const params = new URLSearchParams();
+
+  if (sortBy === "title") params.set("sort", "title");
+  if (page > 1) params.set("page", String(page));
+
+  const query = params.toString();
+  return query ? `${basePath}?${query}` : basePath;
+}
+
+function buildFetchUrl(period: ArchivePeriod | null, sortBy: ArchiveSort, page: number) {
+  const params = new URLSearchParams({
+    limit: String(ARCHIVE_PAGE_SIZE),
+    offset: String((page - 1) * ARCHIVE_PAGE_SIZE),
+    sort: sortBy,
+  });
+
+  if (!period) {
+    return `/api/archive/songs-by-year?${params.toString()}`;
+  }
+
+  if (period.type === "year") {
+    params.set("year", String(period.year));
+  } else {
+    params.set("startYear", String(period.startYear));
+    params.set("endYear", String(period.endYear));
+  }
+
+  return `/api/archive/songs-by-year?${params.toString()}`;
+}
+
+function getListingPeriod(period: ArchivePeriod | null): ArchivePeriod | null {
+  if (!period || period.type === "year") return period;
+
+  return {
+    type: "year",
+    slug: String(period.startYear),
+    year: period.startYear,
+    decade: period.decade,
+    startYear: period.startYear,
+    endYear: period.startYear,
+  };
+}
+
+function getRangeLabel({
+  loading,
+  totalSongs,
+  currentPage,
+  period,
+}: {
+  loading: boolean;
+  totalSongs: number;
+  currentPage: number;
+  period: ArchivePeriod | null;
+}) {
+  if (loading) return "Loading songs";
+  if (totalSongs === 0) return "0 songs";
+
+  const start = (currentPage - 1) * ARCHIVE_PAGE_SIZE + 1;
+  const end = Math.min(currentPage * ARCHIVE_PAGE_SIZE, totalSongs);
+
+  return `Showing ${start.toLocaleString()} to ${end.toLocaleString()} of ${totalSongs.toLocaleString()}`;
+}
+
+function ArchivePagination({
+  currentPage,
+  totalPages,
+  onPageChange,
+}: {
+  currentPage: number;
+  totalPages: number;
+  onPageChange: (page: number) => void;
+}) {
+  if (totalPages <= 1) return null;
+
+  const mobileWindowSize = Math.min(totalPages, 3);
+  const mobileWindowStart =
+    currentPage <= 3
+      ? 1
+      : Math.min(currentPage - 1, totalPages - mobileWindowSize + 1);
+  const mobilePages = Array.from({ length: mobileWindowSize }).map(
+    (_, index) => mobileWindowStart + index,
+  );
+  const desktopWindowSize = Math.min(totalPages, 5);
+  const desktopWindowStart = Math.min(
+    Math.max(currentPage - 2, 1),
+    totalPages - desktopWindowSize + 1,
+  );
+  const desktopPages = Array.from({ length: desktopWindowSize }).map(
+    (_, index) => desktopWindowStart + index,
+  );
+  const showMobileLeadingEllipsis = mobilePages[0] > 1;
+  const showMobileTrailingEllipsis = mobilePages[mobilePages.length - 1] < totalPages;
+
+  return (
+    <section className="my-3 flex flex-wrap items-center justify-center gap-2 sm:my-7">
+      <button
+        onClick={() => onPageChange(1)}
+        disabled={currentPage === 1}
+        className="flex cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30 sm:hidden"
+      >
+        First
+      </button>
+
+      <button
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+        className="flex cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30 sm:hidden"
+      >
+        Previous
+      </button>
+
+      <div className="flex flex-1 items-center justify-center gap-2 sm:hidden">
+        {showMobileLeadingEllipsis && (
+          <span className="px-1 text-sm text-gray-400" aria-hidden="true">
+            ...
+          </span>
+        )}
+
+        {mobilePages.map((page) => (
+          <button
+            key={page}
+            onClick={() => onPageChange(page)}
+            className={`cursor-pointer text-sm underline-offset-4 transition hover:underline
+              ${
+                currentPage === page
+                  ? "font-semibold text-(--color-flagblue)"
+                  : "text-gray-500 hover:text-(--color-flagblue)"
+              }`}
+          >
+            {page}
+          </button>
+        ))}
+
+        {showMobileTrailingEllipsis && (
+          <span className="px-1 text-sm text-gray-400" aria-hidden="true">
+            ...
+          </span>
+        )}
+      </div>
+
+      <button
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+        className="flex cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30 sm:hidden"
+      >
+        Next
+      </button>
+
+      <button
+        onClick={() => onPageChange(totalPages)}
+        disabled={currentPage === totalPages}
+        className="flex cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30 sm:hidden"
+      >
+        Last
+      </button>
+
+      <button
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+        className="hidden cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30 sm:block"
+      >
+        Previous
+      </button>
+
+      {desktopPages.map((page) => (
+        <button
+          key={page}
+          onClick={() => onPageChange(page)}
+          className={`hidden h-10 w-10 cursor-pointer rounded-full border text-sm transition sm:block
+            ${
+              currentPage === page
+                ? "bg-(--color-flagblue) text-white border-(--color-flagblue)"
+                : "border-black/10 bg-white text-gray-600 hover:bg-gray-100"
+            }`}
+        >
+          {page}
+        </button>
+      ))}
+
+      <button
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+        className="hidden cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30 sm:block"
+      >
+        Next
+      </button>
+    </section>
+  );
+}
+
+function getPeriodHeading(period: ArchivePeriod | null) {
+  if (!period) return "Dominican Songs & Recordings";
+  if (period.type === "year") return `Dominican Music Released in ${period.year}`;
+  return `Dominican Music from the ${period.decade}`;
+}
+
+export default function ArchiveClient({ period = null }: { period?: ArchivePeriod | null }) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const year = parseYear(searchParams.get("year"));
   const sortBy = parseSort(searchParams.get("sort"));
+  const currentPage = parsePage(searchParams.get("page"));
+  const listingPeriod = useMemo(() => getListingPeriod(period), [period]);
+  const periodKey = listingPeriod?.slug ?? "top";
 
   // Seed state from sessionStorage synchronously so the list renders on first
   // paint and the browser's native scroll restoration finds content to scroll to.
-  const initialCache = useMemo(() => readCache(cacheKey(year, sortBy)), [year, sortBy]);
+  const initialCache = useMemo(
+    () => readCache(cacheKey(listingPeriod, sortBy, currentPage)),
+    [listingPeriod, sortBy, currentPage],
+  );
 
   const [songs, setSongs] = useState<SongRow[]>(initialCache?.songs ?? []);
   const [totalSongs, setTotalSongs] = useState(initialCache?.total ?? 0);
-  const [hasMoreSongs, setHasMoreSongs] = useState(initialCache?.hasMore ?? false);
   const [loading, setLoading] = useState(!initialCache);
-  const [loadingMore, setLoadingMore] = useState(false);
   const [error, setError] = useState("");
 
   // After restoring from cache, scroll to saved position.
@@ -93,27 +296,13 @@ export default function ArchiveClient() {
     }
   }, [initialCache]);
 
-  const updateArchiveParams = (next: { year?: number | null; sort?: ArchiveSort }) => {
-    const params = new URLSearchParams(searchParams.toString());
+  const updateSort = (nextSort: ArchiveSort) => {
+    router.push(buildArchiveUrl(period, nextSort), { scroll: false });
+  };
 
-    if ("year" in next) {
-      if (next.year) {
-        params.set("year", String(next.year));
-      } else {
-        params.delete("year");
-      }
-    }
-
-    if ("sort" in next) {
-      if (next.sort && next.sort !== "views") {
-        params.set("sort", next.sort);
-      } else {
-        params.delete("sort");
-      }
-    }
-
-    const query = params.toString();
-    router.push(query ? `/archive?${query}` : "/archive", { scroll: false });
+  const updatePage = (nextPage: number) => {
+    const page = Math.max(1, nextPage);
+    router.push(buildArchiveUrl(period, sortBy, page), { scroll: true });
   };
 
   useEffect(() => {
@@ -126,11 +315,8 @@ export default function ArchiveClient() {
 
     setLoading(true);
     setError("");
-    setHasMoreSongs(false);
 
-    const url = year
-      ? `/api/archive/songs-by-year?year=${encodeURIComponent(String(year))}&limit=${ARCHIVE_PAGE_SIZE}&offset=0&sort=${encodeURIComponent(sortBy)}`
-      : "/api/archive/songs-by-year";
+    const url = buildFetchUrl(listingPeriod, sortBy, currentPage);
 
     fetch(url)
       .then(async (response) => {
@@ -146,15 +332,13 @@ export default function ArchiveClient() {
           const hasMore = Boolean(result.hasMore);
           setSongs(fetched);
           setTotalSongs(total);
-          setHasMoreSongs(hasMore);
-          writeCache(cacheKey(year, sortBy), { songs: fetched, total, hasMore });
+          writeCache(cacheKey(listingPeriod, sortBy, currentPage), { songs: fetched, total, hasMore });
         }
       })
       .catch((fetchError: unknown) => {
         if (!cancelled) {
           setSongs([]);
           setTotalSongs(0);
-          setHasMoreSongs(false);
           setError(fetchError instanceof Error ? fetchError.message : "Error loading songs.");
         }
       })
@@ -168,7 +352,7 @@ export default function ArchiveClient() {
       cancelled = true;
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [year, sortBy]);
+  }, [periodKey, sortBy, currentPage]);
 
   // Save scroll position whenever the user leaves the page (navigates to a song).
   useEffect(() => {
@@ -191,38 +375,8 @@ export default function ArchiveClient() {
     };
   }, []);
 
-  const loadMoreSongs = async () => {
-    if (!year || loadingMore || !hasMoreSongs) return;
-
-    setLoadingMore(true);
-    setError("");
-
-    try {
-      const response = await fetch(
-        `/api/archive/songs-by-year?year=${encodeURIComponent(String(year))}&limit=${ARCHIVE_PAGE_SIZE}&offset=${songs.length}&sort=${encodeURIComponent(sortBy)}`,
-      );
-      const result = (await response.json()) as ArchiveSongsResponse;
-
-      if (!response.ok || !result.ok) {
-        throw new Error(result.error || response.statusText);
-      }
-
-      const newSongs = [...songs, ...(result.songs ?? [])];
-      const newTotal = result.total ?? totalSongs;
-      const newHasMore = Boolean(result.hasMore);
-      setSongs(newSongs);
-      setTotalSongs(newTotal);
-      setHasMoreSongs(newHasMore);
-      writeCache(cacheKey(year, sortBy), { songs: newSongs, total: newTotal, hasMore: newHasMore });
-    } catch (fetchError: unknown) {
-      setError(fetchError instanceof Error ? fetchError.message : "Error loading more songs.");
-    } finally {
-      setLoadingMore(false);
-    }
-  };
-
   const sortedSongs = useMemo(() => {
-    if (year) return songs;
+    if (listingPeriod) return songs;
 
     return [...songs].sort((a, b) => {
       if (sortBy === "title") {
@@ -231,30 +385,40 @@ export default function ArchiveClient() {
 
       return (b.views ?? 0) - (a.views ?? 0);
     });
-  }, [songs, sortBy, year]);
+  }, [songs, sortBy, listingPeriod]);
+  const totalPages = Math.ceil(totalSongs / ARCHIVE_PAGE_SIZE);
 
   return (
     <>
       <section className="mx-4 sm:mx-8 lg:mx-12">
         <DecadeSelector
-          selectedYear={year}
-          onYearSelect={(nextYear) => updateArchiveParams({ year: nextYear })}
+          mode={period ? "years" : "decades"}
+          selectedDecade={period?.type === "decade" ? period.decade : undefined}
+          selectedYear={listingPeriod?.type === "year" ? listingPeriod.year : null}
+          selectedYearCount={listingPeriod?.type === "year" && !loading ? totalSongs : undefined}
         />
       </section>
 
       <section className="mx-4 sm:mx-8 lg:mx-12 mt-6">
+        <h1 className="mb-4 text-left text-2xl font-semibold normal-case tracking-normal text-[#002D62]">
+          {getPeriodHeading(period)}
+        </h1>
+
         <div className="mb-4 flex items-center justify-between gap-3">
           <h2 className="!mb-0 text-left text-xl font-semibold normal-case tracking-normal text-[#002D62]">
-            {year
-              ? loading
-                ? `Recordings from ${year}`
-                : `${totalSongs.toLocaleString()} recordings from ${year}`
-              : "Top 100 songs by views"}
+            {period
+              ? getRangeLabel({
+                  loading,
+                  totalSongs,
+                  currentPage,
+                  period: listingPeriod,
+                })
+              : "Top 50 songs by views"}
           </h2>
 
           <select
             value={sortBy}
-            onChange={(event) => updateArchiveParams({ sort: event.target.value as ArchiveSort })}
+            onChange={(event) => updateSort(event.target.value as ArchiveSort)}
             className="h-8 shrink-0 rounded-lg border border-[#B0C4DE] bg-white px-3 font-sans text-xs font-medium tracking-normal text-[#002D62] outline-none transition hover:border-[#002D62]"
             aria-label="Sort archive songs"
           >
@@ -276,17 +440,26 @@ export default function ArchiveClient() {
         )}
 
         {!loading && sortedSongs.length > 0 && (
-          <SongsByYearList
-            songs={sortedSongs}
-            hasMore={Boolean(year && hasMoreSongs)}
-            loadingMore={loadingMore}
-            onShowMore={loadMoreSongs}
-          />
+          <>
+            <ArchivePagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={updatePage}
+            />
+            <SongsByYearList songs={sortedSongs} />
+            <ArchivePagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={updatePage}
+            />
+          </>
         )}
 
         {!loading && !error && sortedSongs.length === 0 && (
           <p className="text-center text-gray-500">
-            {year ? `No recordings found for ${year}.` : "No recordings found."}
+            {period
+              ? `No recordings found for ${period.type === "year" ? period.year : period.decade}.`
+              : "No recordings found."}
           </p>
         )}
       </section>
