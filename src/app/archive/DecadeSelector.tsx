@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { Music2 } from "lucide-react";
-import { useRef, useState, useEffect } from "react";
+import { useCallback, useRef, useState, useEffect } from "react";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import SectionCard from "@/components/layout/SectionCard";
 import { getArchiveDecades, getDecadeForYear, getYearsForDecade } from "@/lib/archivePeriods";
@@ -100,19 +100,42 @@ export default function DecadeSelector({
     : [];
   const showYears = mode === "years" && activeDecade;
 
+  const centerSelectedYear = useCallback((behavior: ScrollBehavior = "auto") => {
+    const scroller = scrollRef.current;
+    const selectedItem = selectedItemRef.current;
+
+    if (!scroller || !selectedItem) return;
+
+    const scrollerRect = scroller.getBoundingClientRect();
+    const selectedRect = selectedItem.getBoundingClientRect();
+    const selectedCenter =
+      selectedRect.left - scrollerRect.left + scroller.scrollLeft + selectedRect.width / 2;
+    const scrollLeft = selectedCenter - scroller.clientWidth / 2;
+
+    scroller.scrollTo({ left: scrollLeft, behavior });
+  }, []);
+
   useEffect(() => {
-    if (!showYears || !selectedYear) return;
+    if (!hydrated || !showYears || !selectedYear) return;
 
-    const timeout = window.setTimeout(() => {
-      selectedItemRef.current?.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "center",
-      });
-    }, 0);
+    const frame = window.requestAnimationFrame(() => {
+      centerSelectedYear();
+    });
 
-    return () => window.clearTimeout(timeout);
-  }, [showYears, selectedYear, visibleYears.length]);
+    return () => window.cancelAnimationFrame(frame);
+  }, [centerSelectedYear, hydrated, isOverflowing, showYears, selectedYear, visibleYears.length]);
+
+  useEffect(() => {
+    if (!hydrated || !showYears || !selectedYear) return;
+
+    const handleResize = () => {
+      centerSelectedYear();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [centerSelectedYear, hydrated, showYears, selectedYear]);
 
   return (
     <SectionCard>
@@ -121,14 +144,23 @@ export default function DecadeSelector({
       <div className="section-inner">
         <div className="w-full">
           <div className="section-header">
-            <h2>
+            <h2 className={showYears ? "normal-case" : undefined}>
               {showYears ? `${activeDecade} Archive` : "Browse Archive by Decade"}
             </h2>
+            {showYears && (
+              <Link
+                href="/archive"
+                className="ml-auto text-sm font-normal uppercase tracking-wider text-[#8B0000] transition-colors hover:text-[#6B0000]"
+              >
+                Archive
+              </Link>
+            )}
           </div>
 
           <div
             ref={scrollRef}
             className={`flex w-full gap-4 overflow-x-auto scrollbar-none pb-2 transition-all
+              ${showYears ? "archive-year-carousel" : ""}
               ${hydrated && isOverflowing ? "justify-start" : "justify-center"}
             `}
           >

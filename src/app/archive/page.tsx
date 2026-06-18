@@ -3,9 +3,12 @@
 import { Suspense } from "react";
 import { permanentRedirect } from "next/navigation";
 import MainWrapper from "@/components/layout/MainWrapper";
+import PageSection from "@/components/layout/PageSection";
+import DecadeTimelineCarousel from "@/components/home/DecadeTimelineCarousel";
 import ArchiveClient from "./ArchiveClient";
 import { createPageMetadata } from "@/lib/seo";
 import { parseArchivePeriod } from "@/lib/archivePeriods";
+import { getArchiveCounts } from "@/lib/getSongsByYear";
 
 export const metadata = createPageMetadata({
   title: "Dominican Songs & Recordings",
@@ -40,9 +43,18 @@ export default async function ArchivePage({ searchParams }: ArchivePageProps) {
     permanentRedirect(`/archive/${decade}`);
   }
 
+  const archiveCounts = await getArchiveCounts();
+
   return (
     <MainWrapper>
-      {/* ⭐ ARCHIVE INTERACTIVE CLIENT SECTION */}
+      <PageSection>
+        <DecadeTimelineCarousel
+          decadeCounts={archiveCounts.decadeCounts}
+          ctaHref="/"
+          ctaLabel="Home"
+        />
+      </PageSection>
+
       <Suspense fallback={null}>
         <ArchiveClient />
       </Suspense>

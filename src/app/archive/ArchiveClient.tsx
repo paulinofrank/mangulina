@@ -264,37 +264,12 @@ export default function ArchiveClient({ period = null }: { period?: ArchivePerio
   const sortBy = parseSort(searchParams.get("sort"));
   const currentPage = parsePage(searchParams.get("page"));
   const listingPeriod = useMemo(() => getListingPeriod(period), [period]);
-  const periodKey = listingPeriod?.slug ?? "top";
 
-  // Seed state from sessionStorage synchronously so the list renders on first
-  // paint and the browser's native scroll restoration finds content to scroll to.
-  const initialCache = useMemo(
-    () => readCache(cacheKey(listingPeriod, sortBy, currentPage)),
-    [listingPeriod, sortBy, currentPage],
-  );
-
-  const [songs, setSongs] = useState<SongRow[]>(initialCache?.songs ?? []);
-  const [totalSongs, setTotalSongs] = useState(initialCache?.total ?? 0);
-  const [loading, setLoading] = useState(!initialCache);
+  const [songs, setSongs] = useState<SongRow[]>([]);
+  const [totalSongs, setTotalSongs] = useState(0);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-
-  // After restoring from cache, scroll to saved position.
   const scrollRestored = useRef(false);
-  useEffect(() => {
-    if (initialCache && !scrollRestored.current) {
-      scrollRestored.current = true;
-      try {
-        const saved = sessionStorage.getItem(SCROLL_KEY);
-        if (saved) {
-          const y = Number(saved);
-          // Small delay lets the browser finish layout before we force scroll.
-          setTimeout(() => window.scrollTo({ top: y, behavior: "instant" }), 0);
-        }
-      } catch {
-        // ignore
-      }
-    }
-  }, [initialCache]);
 
   const updateSort = (nextSort: ArchiveSort) => {
     router.push(buildArchiveUrl(period, nextSort), { scroll: false });
@@ -307,12 +282,34 @@ export default function ArchiveClient({ period = null }: { period?: ArchivePerio
 
   useEffect(() => {
     let cancelled = false;
+    const requestCacheKey = cacheKey(listingPeriod, sortBy, currentPage);
+    const cached = readCache(requestCacheKey);
 
-    // If we already seeded from cache, skip the fetch (data is fresh enough
-    // for this session). The cache gets replaced when the user actively changes
-    // year/sort, because initialCache will be null for that new key.
-    if (initialCache) return;
+    if (cached) {
+      setSongs(cached.songs);
+      setTotalSongs(cached.total);
+      setError("");
+      setLoading(false);
 
+      if (!scrollRestored.current) {
+        scrollRestored.current = true;
+        try {
+          const saved = sessionStorage.getItem(SCROLL_KEY);
+          if (saved) {
+            const y = Number(saved);
+            // Small delay lets the browser finish layout before we force scroll.
+            setTimeout(() => window.scrollTo({ top: y, behavior: "instant" }), 0);
+          }
+        } catch {
+          // ignore
+        }
+      }
+
+      return;
+    }
+
+    setSongs([]);
+    setTotalSongs(0);
     setLoading(true);
     setError("");
 
@@ -332,7 +329,7 @@ export default function ArchiveClient({ period = null }: { period?: ArchivePerio
           const hasMore = Boolean(result.hasMore);
           setSongs(fetched);
           setTotalSongs(total);
-          writeCache(cacheKey(listingPeriod, sortBy, currentPage), { songs: fetched, total, hasMore });
+          writeCache(requestCacheKey, { songs: fetched, total, hasMore });
         }
       })
       .catch((fetchError: unknown) => {
@@ -351,8 +348,7 @@ export default function ArchiveClient({ period = null }: { period?: ArchivePerio
     return () => {
       cancelled = true;
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [periodKey, sortBy, currentPage]);
+  }, [listingPeriod, sortBy, currentPage]);
 
   // Save scroll position whenever the user leaves the page (navigates to a song).
   useEffect(() => {
@@ -390,14 +386,16 @@ export default function ArchiveClient({ period = null }: { period?: ArchivePerio
 
   return (
     <>
-      <section className="mx-4 sm:mx-8 lg:mx-12">
-        <DecadeSelector
-          mode={period ? "years" : "decades"}
-          selectedDecade={period?.type === "decade" ? period.decade : undefined}
-          selectedYear={listingPeriod?.type === "year" ? listingPeriod.year : null}
-          selectedYearCount={listingPeriod?.type === "year" && !loading ? totalSongs : undefined}
-        />
-      </section>
+      {period && (
+        <section className="mx-4 sm:mx-8 lg:mx-12">
+          <DecadeSelector
+            mode="years"
+            selectedDecade={period.type === "decade" ? period.decade : undefined}
+            selectedYear={listingPeriod?.type === "year" ? listingPeriod.year : null}
+            selectedYearCount={listingPeriod?.type === "year" && !loading ? totalSongs : undefined}
+          />
+        </section>
+      )}
 
       <section className="mx-4 sm:mx-8 lg:mx-12 mt-6">
         <h1 className="mb-4 text-left text-2xl font-semibold normal-case tracking-normal text-[#002D62]">

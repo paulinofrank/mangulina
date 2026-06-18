@@ -10,9 +10,15 @@ import { getArchiveDecades } from "@/lib/archivePeriods";
 
 type DecadeTimelineCarouselProps = {
   decadeCounts: Record<string, number>;
+  ctaHref?: string;
+  ctaLabel?: string;
 };
 
-export default function DecadeTimelineCarousel({ decadeCounts }: DecadeTimelineCarouselProps) {
+export default function DecadeTimelineCarousel({
+  decadeCounts,
+  ctaHref = "/archive",
+  ctaLabel = "Archive",
+}: DecadeTimelineCarouselProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isOverflowing, setIsOverflowing] = useState(false);
 
@@ -57,10 +63,10 @@ export default function DecadeTimelineCarousel({ decadeCounts }: DecadeTimelineC
             <span className="hidden sm:inline">Dominican Music Through the Decades</span>
           </h2>
           <Link
-            href="/archive"
+            href={ctaHref}
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
-            Archive
+            {ctaLabel}
           </Link>
         </div>
 
