@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 import GradientBackground from "@/components/atoms/GradientBackground";
+import RoutePageView from "@/components/analytics/RoutePageView";
 import SiteChrome from "@/components/layout/SiteChrome";
 import { DEFAULT_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/seo";
 
@@ -73,6 +74,7 @@ export default function RootLayout({
         />
 
         {/* IMPORTANT: no padding wrapper here */}
+        <RoutePageView />
         {children}
 
         <SiteChrome />

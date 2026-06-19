@@ -9,6 +9,7 @@ import SongCard from "@/components/molecules/SongCard";
 import GenreCarouselSection from "@/components/organisms/GenreCarouselSection";
 import GenreSubgenreSongs from "@/components/genres/GenreSubgenreSongs";
 import ReleaseCoverImage from "@/components/genres/ReleaseCoverImage";
+import ReleaseGrid from "@/components/releases/ReleaseGrid";
 import JsonLd from "@/components/seo/JsonLd";
 import { getGenrePageData, getGenrePageSlugs, type GenreReleaseSummary } from "@/lib/genreApi";
 import { genreDefinitions, getGenreDefinition } from "@/lib/genres";
@@ -94,7 +95,17 @@ export default async function GenrePage({ params }: PageProps) {
 
   if (!data) return notFound();
 
-  const { genre, subgenres, mainArtists, connectedArtists, popularSongs, importantReleases, recentlyAdded } = data;
+  const {
+    genre,
+    subgenres,
+    mainArtists,
+    connectedArtists,
+    popularSongs,
+    importantReleases,
+    mostViewedReleases,
+    recentReleases,
+    recentlyAdded,
+  } = data;
   const Icon = genre.icon;
   const relatedGenres = genre.relatedGenres
     .map((relatedSlug) => getGenreDefinition(relatedSlug))
@@ -193,6 +204,34 @@ export default async function GenrePage({ params }: PageProps) {
                 <ReleaseCard key={release.id} release={release} />
               ))}
             </GenreCarouselSection>
+          )}
+
+          {(mostViewedReleases.length > 0 || recentReleases.length > 0) && (
+            <SectionCard>
+              <div className="section-inner space-y-7">
+                <div className="section-header">
+                  <h2>Releases in {genre.title}</h2>
+                </div>
+
+                {mostViewedReleases.length > 0 && (
+                  <div>
+                    <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#8B0000]">
+                      Most Viewed Releases
+                    </h3>
+                    <ReleaseGrid releases={mostViewedReleases} />
+                  </div>
+                )}
+
+                {recentReleases.length > 0 && (
+                  <div>
+                    <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#8B0000]">
+                      Recent Releases
+                    </h3>
+                    <ReleaseGrid releases={recentReleases} />
+                  </div>
+                )}
+              </div>
+            </SectionCard>
           )}
 
           {recentlyAdded.length > 0 && (

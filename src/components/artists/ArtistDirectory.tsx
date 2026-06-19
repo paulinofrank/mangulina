@@ -553,6 +553,8 @@ function ArtistsContent({
           query = query.eq("province", province);
         }
 
+        // Large-ID audit: award rankings are unbounded and can exceed 100 artist IDs;
+        // the ranked/filterable directory should eventually be backed by an RPC.
         const response = rankedArtistIds?.length
           ? await query.in("id", rankedArtistIds).abortSignal(abortController.signal)
           : await query

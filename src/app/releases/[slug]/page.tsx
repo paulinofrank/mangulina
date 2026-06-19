@@ -7,9 +7,13 @@ import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
 import PageSection from "@/components/layout/PageSection";
 import ReleaseCoverImage from "@/components/genres/ReleaseCoverImage";
 import JsonLd from "@/components/seo/JsonLd";
+import ReleaseSection from "@/components/releases/ReleaseSection";
 import {
   formatReleaseType,
   getReleaseBySlug,
+  getMoreReleasesFromArtist,
+  getMoreReleasesFromDecade,
+  getMoreReleasesInDominantGenre,
   type ReleasePageData,
   type ReleaseTrack,
 } from "@/lib/releaseApi";
@@ -210,6 +214,15 @@ export default async function ReleasePage({ params }: PageProps) {
 
   if (!release) notFound();
   const releasePath = `/releases/${release.slug}`;
+  const releaseYear = release.releaseYear ?? release.year;
+  const recordingIds = release.tracks
+    .map((track) => track.recordingId)
+    .filter((id): id is string => Boolean(id));
+  const [moreFromArtist, moreFromDecade, dominantGenreResult] = await Promise.all([
+    getMoreReleasesFromArtist(release.artist?.id, release.id),
+    getMoreReleasesFromDecade(releaseYear, release.id),
+    getMoreReleasesInDominantGenre(recordingIds, release.id),
+  ]);
   const releaseSchema = {
     "@context": "https://schema.org",
     "@type": "MusicAlbum",
@@ -245,7 +258,7 @@ export default async function ReleasePage({ params }: PageProps) {
           releaseSchema,
           breadcrumbSchema([
             { name: "Home", path: "/" },
-            { name: "Releases", path: "/archive" },
+            { name: "Releases", path: "/releases" },
             { name: release.title, path: releasePath },
           ]),
         ]}
@@ -258,6 +271,32 @@ export default async function ReleasePage({ params }: PageProps) {
             <ReleaseFactsCard release={release} />
             <ReleaseTrackList tracks={release.tracks} />
           </div>
+
+          {moreFromArtist.length > 0 && (
+            <ReleaseSection
+              title="More from this Artist"
+              releases={moreFromArtist}
+            />
+          )}
+
+          {moreFromDecade.length > 0 && releaseYear && (
+            <ReleaseSection
+              title={`More from the ${Math.floor(releaseYear / 10) * 10}s`}
+              releases={moreFromDecade}
+            />
+          )}
+
+          {dominantGenreResult.genre && dominantGenreResult.releases.length > 0 && (
+            <ReleaseSection
+              title={`More in ${dominantGenreResult.genre.name}`}
+              releases={dominantGenreResult.releases}
+              href={
+                dominantGenreResult.genre.slug
+                  ? `/genres/${dominantGenreResult.genre.slug}`
+                  : undefined
+              }
+            />
+          )}
         </div>
       </PageSection>
     </MainWrapper>

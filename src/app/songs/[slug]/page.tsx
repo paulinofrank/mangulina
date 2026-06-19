@@ -22,6 +22,7 @@ import SongSlangSection from "@/components/organisms/SongSlangSection";
 import SongSourcesSection from "@/components/organisms/SongSourcesSection";
 import JsonLd from "@/components/seo/JsonLd";
 
+import { getVisiblePlatformLinks } from "@/lib/platformLinks";
 import {
   getMoreSongsByArtist,
   getRelatedSongs,
@@ -200,8 +201,9 @@ export default async function SongProfilePage({ params }: PageProps) {
 
   const normalizedCredits = normalizeCredits(credits);
   const platformLinks     = mergePlatformLinks(song, dbPlatformLinks);
+  const visiblePlatformLinks = getVisiblePlatformLinks(platformLinks);
   const canShowLyrics     = Boolean(song.lyrics && song.lyrics_authorized === true);
-  const sameAs = platformLinks
+  const sameAs = visiblePlatformLinks
     .map((link) => link.url)
     .filter((url): url is string => Boolean(url));
   const songPath = `/songs/${cleanSlug}`;
@@ -262,7 +264,7 @@ export default async function SongProfilePage({ params }: PageProps) {
           />
 
           <div className="space-y-5">
-            <SongPlatformLinksSection recordingId={recordingId} links={platformLinks} />
+            <SongPlatformLinksSection recordingId={recordingId} links={visiblePlatformLinks} />
             <SongArtistPreviewCard artist={artistPreview} />
           </div>
         </div>

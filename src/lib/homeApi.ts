@@ -240,6 +240,8 @@ export async function getHomeData() {
   let mostAwardedArtists: MostAwardedArtistSummary[] = [];
 
   if (awardedArtistIds.length > 0) {
+    // Large-ID audit: the complete awarded-artist set is unbounded and can exceed
+    // 100 IDs; migrate the ranking to an RPC as the awards catalog grows.
     const awardedArtistsResponse = await supabase
       .from("artists")
       .select("id, slug, name, province, views")

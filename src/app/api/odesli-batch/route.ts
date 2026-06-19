@@ -70,14 +70,15 @@ async function fetchOdesli(appleUrl: string) {
 
 // --- Insert missing platforms ---
 async function insertMissingPlatforms(sb: any, recording_id: string, odesli: any) {
-  const PLATFORM_MAP: Record<string, string> = {
-    youtube: "youtube",
-    spotify: "spotify",
-    deezer: "deezer",
-    amazonMusic: "amazon_music",
-    tidal: "tidal",
-    pandora: "pandora",
-    audiomack: "audiomack",
+  const PLATFORM_MAP: Record<string, { platform: string; label: string; display_order: number }> = {
+    youtube: { platform: "youtube", label: "YouTube", display_order: 1 },
+    spotify: { platform: "spotify", label: "Spotify", display_order: 2 },
+    deezer: { platform: "deezer", label: "Deezer", display_order: 4 },
+    amazonMusic: { platform: "amazon_music", label: "Amazon Music", display_order: 5 },
+    tidal: { platform: "tidal", label: "TIDAL", display_order: 6 },
+    pandora: { platform: "pandora", label: "Pandora", display_order: 7 },
+    audiomack: { platform: "audiomack", label: "Audiomack", display_order: 8 },
+    boomplay: { platform: "boomplay", label: "Boomplay", display_order: 8 },
   };
 
   const { data: existing } = await sb
@@ -87,18 +88,20 @@ async function insertMissingPlatforms(sb: any, recording_id: string, odesli: any
 
   const existingSet = new Set(existing?.map((e: any) => e.platform) ?? []);
 
-  for (const [key, platform] of Object.entries(PLATFORM_MAP)) {
+  for (const [key, config] of Object.entries(PLATFORM_MAP)) {
     const link = odesli.linksByPlatform?.[key];
     if (!link?.url) continue;
-    if (existingSet.has(platform)) continue;
+    if (existingSet.has(config.platform)) continue;
 
     await sb.from("recording_platform_links").upsert({
       recording_id,
-      platform,
+      platform: config.platform,
       url: link.url,
+      label: config.label,
       link_type: "stream",
       is_official: true,
       status: "approved_auto",
+      display_order: config.display_order,
       confidence: 0.95,
       source: "songlink",
       checked_at: new Date().toISOString(),

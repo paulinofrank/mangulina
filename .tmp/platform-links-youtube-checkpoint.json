@@ -1,13 +1,13 @@
 {
   "platform": "youtube",
-  "lastCompletedOffset": 4000,
+  "lastCompletedOffset": 12000,
   "pageSize": 1000,
   "startedAt": "2026-06-17T03:27:41.967Z",
-  "updatedAt": "2026-06-17T20:44:33.946Z",
-  "totalInserted": 2162,
-  "totalUpdated": 44,
-  "totalPages": 5,
-  "quotaDate": "2026-06-17",
+  "updatedAt": "2026-06-19T14:32:53.652Z",
+  "totalInserted": 5107,
+  "totalUpdated": 121,
+  "totalPages": 13,
+  "quotaDate": "2026-06-19",
   "quotaUsedToday": 1900,
   "quotaUsedByKeyToday": [
     95,
@@ -31,6 +31,6 @@
     95,
     95
   ],
-  "currentKeyIndex": 9,
+  "currentKeyIndex": 5,
   "keyCount": 20
 }

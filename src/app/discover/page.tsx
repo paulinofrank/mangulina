@@ -33,7 +33,7 @@ const CREATOR_LINKS = [
 
 const MUSIC_LINKS = [
   { label: "Songs", href: "/archive" },
-  { label: "Releases", href: "/archive" },
+  { label: "Releases", href: "/releases" },
   { label: "Genres", href: "#genres" },
 ];
 

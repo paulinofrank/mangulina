@@ -5,6 +5,7 @@ import { buildCanonical } from "@/lib/seo";
 import { getSupabaseClient } from "@/lib/supabase";
 import { getPublishedProvinces } from "@/lib/provinces";
 import { getArchiveCounts } from "@/lib/getSongsByYear";
+import { getReleaseDecadeCounts, getReleaseTypeCounts } from "@/lib/releaseApi";
 
 const PAGE_SIZE = 1000;
 
@@ -114,7 +115,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     getActiveGenreSlugs(),
     getPublishedProvinces(),
   ]);
-  const { decadeCounts, yearCounts } = await getArchiveCounts();
+  const [{ decadeCounts, yearCounts }, releaseTypeCounts, releaseDecadeCounts] = await Promise.all([
+    getArchiveCounts(),
+    getReleaseTypeCounts(),
+    getReleaseDecadeCounts(),
+  ]);
 
   const publishedArtistIds = new Set(artists.map((artist) => artist.id));
   const publicReleases = releases.filter(
@@ -147,6 +152,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     entry("/producers", 0.8),
     entry("/christian", 0.8),
     entry("/archive", 0.9),
+    entry("/releases", 0.9),
+    entry("/releases/most-viewed", 0.8),
+    entry("/releases/recent", 0.8),
+    entry("/releases/essential", 0.7),
     entry("/artists/birthdays", 0.7),
     entry("/about", 0.6),
     entry("/contact", 0.5),
@@ -162,6 +171,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       .filter((year) => yearCounts[year] > 0)
       .sort((a, b) => Number(b) - Number(a))
       .map((year) => entry(`/archive/${year}`, 0.7)),
+    ...releaseTypeCounts.map((type) => entry(`/releases/${type.slug}`, 0.7)),
+    ...releaseDecadeCounts.map((decade) => entry(`/releases/${decade.slug}`, 0.7)),
     ...provinces.map((province) => entry(`/provinces/${province.slug}`, 0.8)),
     ...artists.map((artist) => entry(`/artists/${artist.slug}`, 0.8)),
     ...publicRecordings.map((recording) => entry(`/songs/${recording.slug}`, 0.7)),

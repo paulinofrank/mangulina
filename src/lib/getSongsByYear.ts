@@ -17,6 +17,8 @@ async function getPublishedArtistIds(artistIds: unknown[]) {
 
   if (!ids.length) return new Set<string>();
 
+  // Large-ID audit: decade/archive result sets can contain more than 100 artists;
+  // publication filtering should move into the archive query/RPC, not be chunked here.
   const { data, error } = await supabase
     .from("artists")
     .select("id")

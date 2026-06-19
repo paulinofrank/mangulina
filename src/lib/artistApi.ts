@@ -207,6 +207,8 @@ export async function getArtistDiscography(
   const allRecordingIds = [...new Set(rows.map((r) => r.recording_id).filter(Boolean))];
   const slugMap = new Map<string, string | null>();
   if (allRecordingIds.length > 0) {
+    // Large-ID audit: prolific artists can exceed 100 recordings; move slug hydration
+    // into get_artist_discography (or a UUID-array RPC) instead of chunking this request.
     const { data: slugRows } = await supabase
       .from("recordings")
       .select("id, slug")
@@ -219,6 +221,8 @@ export async function getArtistDiscography(
   const allReleaseIds = [...new Set(rows.map((r) => r.release_id).filter(Boolean))];
   const releaseSlugMap = new Map<string, string | null>();
   if (allReleaseIds.length > 0) {
+    // Large-ID audit: a large discography can also exceed 100 releases; this belongs
+    // in the discography RPC rather than a growing PostgREST URL.
     const { data: releaseSlugRows } = await supabase
       .from("releases")
       .select("id, slug")

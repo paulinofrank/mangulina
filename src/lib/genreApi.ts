@@ -1,5 +1,6 @@
 import { getSupabaseClient } from "@/lib/supabase";
 import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
+import { getReleasesForGenreIds, type ReleaseSummary } from "@/lib/releaseApi";
 import {
   createGenericGenreDefinition,
   getGenreDefinition,
@@ -35,6 +36,8 @@ export type GenrePageData = {
   connectedArtists: ArtistSummary[];
   popularSongs: GenreSongSummary[];
   importantReleases: GenreReleaseSummary[];
+  mostViewedReleases: ReleaseSummary[];
+  recentReleases: ReleaseSummary[];
   recentlyAdded: ArtistSummary[];
 };
 
@@ -332,6 +335,20 @@ async function getImportantReleases(artistIds: string[]) {
   }));
 }
 
+async function getGenreReleaseSections(aliases: string[]) {
+  const { genreIds, subgenreIds } = await getGenreIds(aliases);
+  if (genreIds.length === 0 && subgenreIds.length === 0) {
+    return { mostViewedReleases: [], recentReleases: [] };
+  }
+
+  const [mostViewedReleases, recentReleases] = await Promise.all([
+    getReleasesForGenreIds({ genreIds, subgenreIds, sort: "views" }),
+    getReleasesForGenreIds({ genreIds, subgenreIds, sort: "recent" }),
+  ]);
+
+  return { mostViewedReleases, recentReleases };
+}
+
 export async function getGenrePageData(slug: string): Promise<GenrePageData | null> {
   const staticGenre = getGenreDefinition(slug);
   const catalogGenre = await safeQuery("catalogGenre", () => getCatalogGenre(slug));
@@ -352,6 +369,11 @@ export async function getGenrePageData(slug: string): Promise<GenrePageData | nu
     (await safeQuery("importantReleases", () =>
       getImportantReleases(mainArtistRows.slice(0, 40).map((artist) => artist.id)),
     )) ?? [];
+  const releaseSections =
+    (await safeQuery("genreReleaseSections", () => getGenreReleaseSections(genre.aliases))) ?? {
+      mostViewedReleases: [],
+      recentReleases: [],
+    };
 
   const recentlyAdded = mainArtistRows
     .slice()
@@ -366,6 +388,8 @@ export async function getGenrePageData(slug: string): Promise<GenrePageData | nu
     connectedArtists,
     popularSongs,
     importantReleases,
+    mostViewedReleases: releaseSections.mostViewedReleases,
+    recentReleases: releaseSections.recentReleases,
     recentlyAdded,
   };
 }

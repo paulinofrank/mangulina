@@ -1,8 +1,19 @@
+export type PageViewEvent = {
+  event_type: "page_view";
+  path: string;
+  page_type?: string;
+  entity_id?: string;
+  entity_slug?: string;
+  referrer?: string;
+  source?: string;
+};
+
 export type AnalyticsEvent =
   | { event_type: "artist_view"; artist_id: string; source?: string }
   | { event_type: "recording_view"; recording_id: string; source?: string }
   | { event_type: "release_view"; release_id: string; source?: string }
   | { event_type: "genre_view"; genre_slug: string; source?: string }
+  | PageViewEvent
   | {
       event_type: "search";
       query: string;
@@ -58,6 +69,13 @@ export function trackReleaseView(releaseId: string) {
 
 export function trackGenreView(genreSlug: string) {
   if (genreSlug.trim()) sendAnalyticsEvent({ event_type: "genre_view", genre_slug: genreSlug });
+}
+
+export function trackPageView(event: Omit<PageViewEvent, "event_type">) {
+  const path = event.path.trim();
+  if (!path) return;
+
+  sendAnalyticsEvent({ ...event, event_type: "page_view", path });
 }
 
 export function trackSearch(query: string, resultsCount: number) {

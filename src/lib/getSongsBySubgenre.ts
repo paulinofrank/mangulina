@@ -56,6 +56,8 @@ export async function getSongsBySubgenre(
   let publishedArtistIds = new Set<string>();
 
   if (artistIds.length > 0) {
+    // Large-ID audit: popular subgenres can span more than 100 artists; publication
+    // filtering should move into the database query/RPC instead of growing this URL.
     const { data: artists, error: artistsError } = await supabase
       .from("artists")
       .select("id")

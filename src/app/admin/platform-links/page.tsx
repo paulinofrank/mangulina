@@ -59,13 +59,16 @@ type ManualLinkForm = {
 // Constants
 // ---------------------------------------------------------------------------
 const PLATFORMS = [
-  "deezer",
+  "youtube",
   "spotify",
   "apple_music",
-  "youtube_music",
+  "deezer",
   "amazon_music",
   "tidal",
-  "youtube",
+  "pandora",
+  "audiomack",
+  "boomplay",
+  "youtube_music",
   "soundcloud",
   "bandcamp",
 ];

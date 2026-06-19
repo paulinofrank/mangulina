@@ -9,6 +9,7 @@ const EVENT_TYPES = new Set([
   "recording_view",
   "release_view",
   "genre_view",
+  "page_view",
   "search",
   "platform_click",
 ]);
@@ -32,7 +33,8 @@ function sanitizeReferrer(value: string | null) {
   try {
     const referrer = new URL(value);
     if (referrer.protocol !== "http:" && referrer.protocol !== "https:") return null;
-    return `${referrer.origin}${referrer.pathname}`.slice(0, 500);
+    // Keep attribution without retaining URL paths that may contain personal data.
+    return referrer.origin.slice(0, 500);
   } catch {
     return null;
   }
@@ -73,18 +75,21 @@ export async function POST(request: Request) {
     return invalid("Invalid event_type.");
   }
 
+  const referrer = sanitizeReferrer(
+    textValue(body.referrer, 500) ?? request.headers.get("referer"),
+  );
   const metadata = {
     source: textValue(body.source, 100),
-    referrer: sanitizeReferrer(request.headers.get("referer")),
+    referrer,
     user_agent: textValue(request.headers.get("user-agent"), 500),
     ip_hash: hashIp(request),
   };
-  const supabase = getSupabaseServiceClient();
 
   try {
     if (eventType === "artist_view") {
       const artistId = uuidValue(body.artist_id);
       if (!artistId) return invalid("artist_id must be a valid UUID.");
+      const supabase = getSupabaseServiceClient();
 
       const { error } = await supabase
         .from("artist_view_events")
@@ -100,6 +105,7 @@ export async function POST(request: Request) {
     if (eventType === "recording_view") {
       const recordingId = uuidValue(body.recording_id);
       if (!recordingId) return invalid("recording_id must be a valid UUID.");
+      const supabase = getSupabaseServiceClient();
 
       const { error } = await supabase
         .from("recording_view_events")
@@ -115,20 +121,50 @@ export async function POST(request: Request) {
     if (eventType === "release_view") {
       const releaseId = uuidValue(body.release_id);
       if (!releaseId) return invalid("release_id must be a valid UUID.");
+      const supabase = getSupabaseServiceClient();
 
       const { error } = await supabase
         .from("release_view_events")
         .insert({ release_id: releaseId, ...metadata });
       if (error) throw error;
+
+      const { error: incrementError } = await supabase.rpc("increment_release_views", {
+        p_release_id: releaseId,
+      });
+      if (incrementError) {
+        console.warn("Release view increment skipped:", incrementError.message);
+      }
     }
 
     if (eventType === "genre_view") {
       const genreSlug = textValue(body.genre_slug, 160);
       if (!genreSlug) return invalid("genre_slug is required.");
+      const supabase = getSupabaseServiceClient();
 
       const { error } = await supabase
         .from("genre_view_events")
         .insert({ genre_slug: genreSlug, ...metadata });
+      if (error) throw error;
+    }
+
+    if (eventType === "page_view") {
+      const path = textValue(body.path, 500);
+      if (!path) return invalid("path is required.");
+
+      const rawEntityId = textValue(body.entity_id, 36);
+      const entityId = uuidValue(body.entity_id);
+      if (rawEntityId && !entityId) return invalid("entity_id must be a valid UUID.");
+      const supabase = getSupabaseServiceClient();
+
+      const { error } = await supabase.from("page_view_events").insert({
+        path,
+        page_type: textValue(body.page_type, 100),
+        entity_id: entityId,
+        entity_slug: textValue(body.entity_slug, 200),
+        referrer,
+        source: textValue(body.source, 100),
+        user_agent: textValue(request.headers.get("user-agent"), 500),
+      });
       if (error) throw error;
     }
 
@@ -139,6 +175,7 @@ export async function POST(request: Request) {
       if (!Number.isInteger(resultsCount) || Number(resultsCount) < 0) {
         return invalid("results_count must be a non-negative integer.");
       }
+      const supabase = getSupabaseServiceClient();
 
       const { error } = await supabase.from("search_events").insert({
         query,
@@ -154,6 +191,7 @@ export async function POST(request: Request) {
       const url = textValue(body.url, 1000);
       if (!recordingId) return invalid("recording_id must be a valid UUID.");
       if (!platform) return invalid("platform is required.");
+      const supabase = getSupabaseServiceClient();
 
       const { error } = await supabase.from("platform_click_events").insert({
         recording_id: recordingId,
@@ -167,9 +205,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   } catch (error) {
     console.error("Analytics tracking failed:", error);
-    return NextResponse.json(
-      { ok: false, error: "Unable to record analytics event." },
-      { status: 500 },
-    );
+    return NextResponse.json({ ok: false }, { status: 200 });
   }
 }

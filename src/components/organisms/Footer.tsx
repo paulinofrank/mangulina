@@ -38,6 +38,7 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-x-6 sm:hidden">
               <div className="flex flex-col gap-3 pl-[5ch]">
                 <Link href="/about" className="transition-colors hover:text-[#002D62]">About</Link>
+                <Link href="/releases" className="transition-colors hover:text-[#002D62]">Releases</Link>
                 <Link href="/contact" className="transition-colors hover:text-[#002D62]">Contact</Link>
                 <Link href="/contributors" className="transition-colors hover:text-[#002D62]">Contributors</Link>
               </div>
@@ -61,6 +62,7 @@ export default function Footer() {
 
             <div className="hidden flex-wrap justify-center gap-x-6 gap-y-2 sm:flex">
               <Link href="/discover" className="transition-colors hover:text-[#002D62]">Discover</Link>
+              <Link href="/releases" className="transition-colors hover:text-[#002D62]">Releases</Link>
               <Link href="/about" className="transition-colors hover:text-[#002D62]">About</Link>
               <Link href="/contact" className="transition-colors hover:text-[#002D62]">Contact</Link>
               <Link href="/contributors" className="transition-colors hover:text-[#002D62]">Contributors</Link>

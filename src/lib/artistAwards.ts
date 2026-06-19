@@ -35,6 +35,8 @@ export async function getAwardFilterOptions(): Promise<AwardFilterOption[]> {
     .filter((award) => usedAwardIds.has(award.id))
     .map((award) => ({ value: `award:${award.id}`, label: award.name }));
 
+  // Large-ID audit: the full set of used award categories can eventually exceed 100;
+  // replace this filter with an RPC if the taxonomy grows to that size.
   const { data: specialCategories, error: categoryError } = await supabase
     .from("award_categories")
     .select("id,name")
@@ -83,6 +85,8 @@ export async function getRankedAwardedArtistIds(filter?: AwardFilter) {
 
   if (counts.size === 0) return [];
 
+  // Large-ID audit: the awarded-artist set is unbounded and can exceed 100 IDs;
+  // ranking and publication filtering should ultimately happen in PostgreSQL.
   const { data: artists, error: artistsError } = await supabase
     .from("artists")
     .select("id,name,views")

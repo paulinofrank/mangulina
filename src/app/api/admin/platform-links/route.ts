@@ -48,6 +48,8 @@ export async function GET(request: Request) {
   }
 
   // ── 2. Fetch recordings ──────────────────────────────────────────────────
+  // Large-ID audit: this endpoint permits 200 rows, so the recording/release/artist
+  // lookups below should move to UUID-array RPCs before raising that cap.
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const recordingIds = [...new Set((linkRows as any[]).map((r) => r.recording_id as string))];
   const { data: recordings, error: recErr } = await supabase
