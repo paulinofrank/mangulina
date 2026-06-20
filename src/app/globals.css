@@ -267,4 +267,9 @@
         @apply rounded-md px-4 py-2 shadow border border-black/60 bg-white text-[10px] uppercase tracking-[0.25em] text-gray-900 transition-all hover:bg-(--color-flagblue) hover:text-white hover:border-(--color-flagblue) disabled:opacity-30 disabled:hover:bg-white disabled:hover:text-gray-900;
     }
 
+    /* SVG Chart Text Sizing */
+    svg text {
+        font-size: 14px;
+    }
+
 }

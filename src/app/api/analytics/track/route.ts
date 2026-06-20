@@ -12,6 +12,7 @@ import {
   processPageViewEvent,
   processSearchEvent,
   processPlatformClickEvent,
+  isBot,
 } from "@/lib/analyticsValidation";
 
 type RequestBody = Record<string, unknown>;
@@ -22,6 +23,11 @@ type RequestBody = Record<string, unknown>;
  * Returns 200 OK regardless of success/failure to not break client behavior.
  */
 export async function POST(request: Request) {
+  // Skip bot/crawler requests
+  if (isBot(request)) {
+    return NextResponse.json({ ok: true }, { status: 200 });
+  }
+
   let body: RequestBody;
 
   try {
@@ -59,7 +65,23 @@ export async function POST(request: Request) {
     await handler(body, metadata);
     return NextResponse.json({ ok: true });
   } catch (error) {
-    console.error("Analytics tracking failed:", error instanceof Error ? error.message : error);
+    const errorMsg = error instanceof Error ? error.message : String(error);
+    console.error("Analytics tracking failed:", errorMsg);
+
+    // If session_id column doesn't exist yet, strip it and retry
+    if (errorMsg.includes("session_id") && errorMsg.includes("schema cache")) {
+      try {
+        const metadataWithoutSession = { ...metadata };
+        delete metadataWithoutSession.session_id;
+
+        const handler = handlers[eventType];
+        if (handler) await handler(body, metadataWithoutSession);
+        return NextResponse.json({ ok: true });
+      } catch (retryError) {
+        console.error("Retry failed:", retryError);
+      }
+    }
+
     // Return 200 OK so client doesn't retry; analytics must never interrupt user actions
     return NextResponse.json({ ok: false }, { status: 200 });
   }

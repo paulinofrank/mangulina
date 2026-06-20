@@ -59,6 +59,40 @@ export function sanitizeReferrer(value: string | null): string | null {
 }
 
 /**
+ * Detects if request is from a bot/crawler
+ * @param request - The incoming request
+ * @returns true if bot detected, false otherwise
+ */
+export function isBot(request: Request): boolean {
+  const userAgent = request.headers.get("user-agent")?.toLowerCase() ?? "";
+
+  // Common bot patterns
+  const botPatterns = [
+    "googlebot",
+    "bingbot",
+    "slurp",
+    "duckduckbot",
+    "baiduspider",
+    "yandexbot",
+    "discordbot",
+    "twitterbot",
+    "facebookexternalhit",
+    "whatsapp",
+    "linkedinbot",
+    "curl",
+    "wget",
+    "python",
+    "scrapy",
+    "robots",
+    "crawler",
+    "spider",
+    "bot",
+  ];
+
+  return botPatterns.some(pattern => userAgent.includes(pattern));
+}
+
+/**
  * Extracts IP address from request headers
  * @param request - The incoming request
  * @returns IP address string or null if not found
@@ -113,6 +147,7 @@ export function buildEventMetadata(
 
 /**
  * Processes artist view event and increments view counter
+ * Deduplicates views from the same session within 1 minute
  */
 export async function processArtistViewEvent(
   data: RequestBody,
@@ -122,6 +157,23 @@ export async function processArtistViewEvent(
   if (!artistId) throw new Error("Invalid artist_id");
 
   const supabase = getSupabaseServiceClient();
+  const sessionId = metadata.session_id as string | undefined;
+
+  // Deduplication: Check if same session viewed this artist in the last 60 seconds
+  if (sessionId) {
+    const oneMinuteAgo = new Date(Date.now() - 60 * 1000).toISOString();
+    const { data: recentViews } = await supabase
+      .from("artist_view_events")
+      .select("id", { count: "exact", head: true })
+      .eq("artist_id", artistId)
+      .eq("session_id", sessionId)
+      .gt("created_at", oneMinuteAgo);
+
+    if (recentViews && recentViews.length > 0) {
+      // Duplicate view detected, skip tracking
+      return;
+    }
+  }
 
   const { error } = await supabase.from("artist_view_events").insert({
     artist_id: artistId,
@@ -137,6 +189,7 @@ export async function processArtistViewEvent(
 
 /**
  * Processes recording view event and increments view counter
+ * Deduplicates views from the same session within 1 minute
  */
 export async function processRecordingViewEvent(
   data: RequestBody,
@@ -146,6 +199,23 @@ export async function processRecordingViewEvent(
   if (!recordingId) throw new Error("Invalid recording_id");
 
   const supabase = getSupabaseServiceClient();
+  const sessionId = metadata.session_id as string | undefined;
+
+  // Deduplication: Check if same session viewed this recording in the last 60 seconds
+  if (sessionId) {
+    const oneMinuteAgo = new Date(Date.now() - 60 * 1000).toISOString();
+    const { data: recentViews } = await supabase
+      .from("recording_view_events")
+      .select("id", { count: "exact", head: true })
+      .eq("recording_id", recordingId)
+      .eq("session_id", sessionId)
+      .gt("created_at", oneMinuteAgo);
+
+    if (recentViews && recentViews.length > 0) {
+      // Duplicate view detected, skip tracking
+      return;
+    }
+  }
 
   const { error } = await supabase.from("recording_view_events").insert({
     recording_id: recordingId,

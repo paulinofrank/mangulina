@@ -32,40 +32,62 @@ export type AnalyticsEvent =
  * Gets or creates a session ID for this browser
  * Stored in sessionStorage to distinguish devices on same network
  * Unlike IP hash, this persists only for the current browsing session
+ * Falls back to memory storage if sessionStorage is unavailable
  */
-function getSessionId(): string | null {
-  if (typeof window === "undefined" || !window.sessionStorage) return null;
+let fallbackSessionId: string | null = null;
 
-  let sessionId = window.sessionStorage.getItem("analytics_session_id");
-  if (!sessionId) {
-    sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
-    try {
-      window.sessionStorage.setItem("analytics_session_id", sessionId);
-    } catch {
-      // sessionStorage might be disabled
-      return null;
+function getSessionId(): string | null {
+  if (typeof window === "undefined") return fallbackSessionId || null;
+
+  try {
+    if (window.sessionStorage) {
+      let sessionId = window.sessionStorage.getItem("analytics_session_id");
+      if (!sessionId) {
+        sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+        window.sessionStorage.setItem("analytics_session_id", sessionId);
+      }
+      return sessionId;
     }
+  } catch {
+    // sessionStorage might be disabled or in private mode
   }
-  return sessionId;
+
+  // Fallback: generate and cache in memory for this session
+  if (!fallbackSessionId) {
+    fallbackSessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+  }
+  return fallbackSessionId;
 }
 
 function sendAnalyticsEvent(event: AnalyticsEvent) {
   if (typeof window === "undefined") return;
 
+  // Skip analytics on localhost (development environment)
+  if (typeof window !== "undefined" && window.location.hostname === "localhost") {
+    return;
+  }
+
   try {
+    const sessionId = getSessionId();
     const body = JSON.stringify({
       ...event,
-      session_id: getSessionId(), // Add session ID for device-level tracking
+      session_id: sessionId, // Add session ID for device-level tracking
     });
 
+    // sendBeacon is most reliable for events before navigation
     if (typeof navigator.sendBeacon === "function") {
-      const queued = navigator.sendBeacon(
-        "/api/analytics/track",
-        new Blob([body], { type: "application/json" }),
-      );
-      if (queued) return;
+      try {
+        const queued = navigator.sendBeacon(
+          "/api/analytics/track",
+          new Blob([body], { type: "application/json" }),
+        );
+        if (queued) return;
+      } catch {
+        // sendBeacon failed, fall through to fetch
+      }
     }
 
+    // Fallback to fetch with keepalive
     void fetch("/api/analytics/track", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

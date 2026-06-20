@@ -1,9 +1,5 @@
-import { Suspense } from "react";
 import Link from "next/link";
-import { AnalyticsErrorBoundary } from "@/components/analytics/AnalyticsErrorBoundary";
-import { AnalyticsLoadingGrid } from "@/components/analytics/LoadingSkeleton";
-import AdminAnalyticsContent from "./AdminAnalyticsContent";
-import AnalyticsControls from "./AnalyticsControls";
+import AdminAnalyticsClientWrapper from "./AdminAnalyticsClientWrapper";
 
 /**
  * Admin Analytics Dashboard Page (Server Component)
@@ -15,8 +11,7 @@ import AnalyticsControls from "./AnalyticsControls";
  * - Platform click engagement metrics
  * - View trends over time
  */
-export default async function AdminAnalyticsPage() {
-
+export default function AdminAnalyticsPage() {
   return (
     <main className="min-h-screen bg-gray-50 px-5 pb-10 pt-8 font-sans text-gray-900 sm:px-6 sm:pb-12 sm:pt-10">
       <div className="mx-auto max-w-6xl">
@@ -45,13 +40,7 @@ export default async function AdminAnalyticsPage() {
           </div>
         </header>
 
-        <AnalyticsControls />
-
-        <AnalyticsErrorBoundary>
-          <Suspense fallback={<AnalyticsLoadingGrid />}>
-            <AdminAnalyticsContent />
-          </Suspense>
-        </AnalyticsErrorBoundary>
+        <AdminAnalyticsClientWrapper />
       </div>
     </main>
   );
