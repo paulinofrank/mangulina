@@ -3,6 +3,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
@@ -13,6 +14,8 @@ type TopArtistsSectionProps = {
 };
 
 export default function TopArtistsSection({ topArtists }: TopArtistsSectionProps) {
+  const t = useTranslations("sections");
+  const nav = useTranslations("navigation");
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
@@ -33,12 +36,12 @@ export default function TopArtistsSection({ topArtists }: TopArtistsSectionProps
       <div className="section-inner">
         {/* HEADER */}
         <div className="section-header">
-          <h2>Top Singers by Views</h2>
+          <h2>{t("topSingers")}</h2>
           <Link
             href="/artists"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
-            See All
+            {nav("seeAll")}
           </Link>
         </div>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import { ChevronDown } from "lucide-react";
 import ArtistImage from "@/components/atoms/ArtistImage";
 import JsonLd from "@/components/seo/JsonLd";
@@ -306,6 +307,7 @@ function BirthdayArtistRow({ artist }: { artist: BirthdayArtist }) {
 export default async function ArtistBirthdaysPage({
   searchParams,
 }: ArtistBirthdaysPageProps) {
+  const t = await getTranslations();
   const params = await searchParams;
   const supabase = getSupabaseClient();
   const { data: yearData, error: yearError } = await supabase
@@ -366,7 +368,7 @@ export default async function ArtistBirthdaysPage({
         ]}
       />
       <header className="mb-10 rounded-3xl border border-black/10 bg-white px-8 py-6 shadow-sm sm:px-12 sm:py-10">
-        <SectionEyebrow>Birthday Archive</SectionEyebrow>
+        <SectionEyebrow>{t("birthdays.ui.archiveTitle")}</SectionEyebrow>
 
         <h1 className="mb-4 text-3xl font-normal tracking-tight text-gray-800 sm:text-4xl">
           Artist Birthdays
@@ -387,7 +389,7 @@ export default async function ArtistBirthdaysPage({
       {error ? (
         <section className="rounded-3xl border border-black/10 bg-white p-8 text-center shadow-sm sm:p-10">
           <p className="text-base text-gray-600">
-            The birthday archive is temporarily unavailable.
+            {t("birthdays.ui.unavailable")}
           </p>
         </section>
       ) : browseMode === "year" && selectedYear ? (
@@ -408,8 +410,7 @@ export default async function ArtistBirthdaysPage({
           {artists.length === 0 ? (
             <div className="rounded-3xl border border-black/10 bg-white p-8 text-center shadow-sm sm:p-10">
               <p className="text-base text-gray-600">
-                No published artists with birthdays in this year are currently
-                available.
+                {t("birthdays.ui.noArtists")}
               </p>
             </div>
           ) : (
@@ -423,14 +424,14 @@ export default async function ArtistBirthdaysPage({
       ) : browseMode === "year" ? (
         <section className="rounded-3xl border border-black/10 bg-white p-8 text-center shadow-sm sm:p-10">
           <p className="text-base text-gray-600">
-            Select a birth year to browse artists in date-of-birth order.
+            {t("birthdays.ui.selectYear")}
           </p>
         </section>
       ) : browseMode === "zodiac" ? (
         zodiacGroups.length === 0 ? (
           <section className="rounded-3xl border border-black/10 bg-white p-8 text-center shadow-sm sm:p-10">
             <p className="text-base text-gray-600">
-              No artist birthdays are currently available.
+              {t("birthdays.ui.noBirthdays")}
             </p>
           </section>
         ) : (
@@ -465,7 +466,7 @@ export default async function ArtistBirthdaysPage({
       ) : monthGroups.length === 0 ? (
         <section className="rounded-3xl border border-black/10 bg-white p-8 text-center shadow-sm sm:p-10">
           <p className="text-base text-gray-600">
-            No artist birthdays are currently available.
+            {t("birthdays.ui.noBirthdays")}
           </p>
         </section>
       ) : (
@@ -513,3 +514,6 @@ export default async function ArtistBirthdaysPage({
     </main>
   );
 }
+
+// Note: Birthday page strings are hardcoded for now. They will be migrated to translations
+// in a follow-up update when the i18n infrastructure is fully in place.

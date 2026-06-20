@@ -1,6 +1,7 @@
 "use client";
 
 import { Icon } from "@iconify/react";
+import { useTranslations } from "next-intl";
 import { trackPlatformClick } from "@/lib/analytics";
 import {
   getPlatformConfig,
@@ -16,6 +17,7 @@ type Props = {
 };
 
 export default function SongPlatformLinksSection({ recordingId, links }: Props) {
+  const t = useTranslations("song");
   const visible = getVisiblePlatformLinks(links);
 
   if (visible.length === 0) return null;
@@ -23,7 +25,7 @@ export default function SongPlatformLinksSection({ recordingId, links }: Props) 
   return (
     <section className="h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-        Listen on your favorite Platforms
+        {t("listenOn")}
       </h2>
 
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">

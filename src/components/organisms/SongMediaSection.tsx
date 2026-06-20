@@ -1,4 +1,5 @@
 // components/organisms/SongMediaSection.tsx
+import { useTranslations } from "next-intl";
 
 type SongMedia = {
   id: string | number;
@@ -29,15 +30,17 @@ function formatLabel(value: string | null | undefined) {
 }
 
 export default function SongMediaSection({ media }: SongMediaSectionProps) {
+  const t = useTranslations("song");
+  const tBadge = useTranslations("badge");
   if (!media.length) return null;
 
   return (
     <section className="h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-        Media
+        {t("media")}
       </h2>
       <p className="mb-4 text-xs text-gray-400">
-        Videos, performances, interviews, and other media connected to this recording.
+        {t("mediaDescription")}
       </p>
 
       <div className="space-y-3">
@@ -58,12 +61,12 @@ export default function SongMediaSection({ media }: SongMediaSectionProps) {
                     </span>
                     {item.is_official && (
                       <span className="rounded-full bg-[#CE1126]/8 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[#CE1126]">
-                        Official
+                        {tBadge("official")}
                       </span>
                     )}
                     {item.is_primary && (
                       <span className="rounded-full bg-gray-200 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-600">
-                        Primary
+                        {tBadge("primary")}
                       </span>
                     )}
                   </div>
@@ -85,7 +88,7 @@ export default function SongMediaSection({ media }: SongMediaSectionProps) {
                   rel="noopener noreferrer"
                   className="shrink-0 text-xs font-semibold text-[#CE1126] underline-offset-2 hover:underline"
                 >
-                  Open Media
+                  {t("openMedia")}
                 </a>
               </div>
 
@@ -97,7 +100,7 @@ export default function SongMediaSection({ media }: SongMediaSectionProps) {
 
               {item.source?.title && (
                 <p className="mt-2 text-xs text-gray-500">
-                  Source:{" "}
+                  {t("source")}:{" "}
                   {item.source.url ? (
                     <a
                       href={item.source.url}

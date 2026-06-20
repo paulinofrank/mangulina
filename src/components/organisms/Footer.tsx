@@ -71,7 +71,7 @@ export default function Footer() {
                   onClick={handleLanguageSwitch}
                   className="text-left transition-colors hover:text-[#002D62]"
                 >
-                  {locale === "en" ? "Cambiar a Español" : "Switch to English"}
+                  {locale === "en" ? t("languageSwitchToSpanish") : t("languageSwitchToEnglish")}
                 </button>
                 <Link href="/about" className="transition-colors hover:text-[#002D62]">{nav("about")}</Link>
                 <Link href="/contact" className="transition-colors hover:text-[#002D62]">{nav("contact")}</Link>

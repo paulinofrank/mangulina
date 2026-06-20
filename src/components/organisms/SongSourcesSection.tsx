@@ -1,4 +1,5 @@
 // components/organisms/SongSourcesSection.tsx
+import { useTranslations } from "next-intl";
 
 type SongSource = {
   id: string | number;
@@ -39,16 +40,17 @@ function formatLabel(value: string | null | undefined) {
 }
 
 export default function SongSourcesSection({ sources }: SongSourcesSectionProps) {
+  const t = useTranslations("song");
   const visibleSources = sources.filter((item) => item.source?.title);
   if (!visibleSources.length) return null;
 
   return (
     <section className="h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-        Sources
+        {t("sources")}
       </h2>
       <p className="mb-4 text-xs text-gray-400">
-        References connected to this song profile.
+        {t("sourcesDescription")}
       </p>
 
       <div className="space-y-3">
@@ -87,7 +89,7 @@ export default function SongSourcesSection({ sources }: SongSourcesSectionProps)
                     rel="noopener noreferrer"
                     className="shrink-0 text-xs font-semibold text-[#CE1126] underline-offset-2 hover:underline"
                   >
-                    Open Source
+                    {t("openSource")}
                   </a>
                 )}
               </div>

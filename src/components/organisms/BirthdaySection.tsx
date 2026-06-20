@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
@@ -67,11 +68,12 @@ function filterAndSortUpcomingBirthdays(artists: Artist[], today: Date) {
 function getLifeLabel(
   dob: string | null | undefined,
   deathYear: number | null | undefined,
+  t: any,
 ) {
   const birthday = parseBirthday(dob);
   if (!birthday) return null;
 
-  if (deathYear) return `Deceased on ${deathYear}`;
+  if (deathYear) return t("status.deceased", { year: deathYear });
 
   const today = new Date();
   let age = today.getFullYear() - birthday.year;
@@ -80,10 +82,14 @@ function getLifeLabel(
     (today.getMonth() + 1 === birthday.month && today.getDate() >= birthday.day);
 
   if (!birthdayHasPassed) age -= 1;
-  return `${age} years old`;
+  return t("status.yearsOld", { age });
 }
 
 export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProps) {
+  const t = useTranslations("sections");
+  const tCommon = useTranslations("common");
+  const nav = useTranslations("navigation");
+  const tStatus = useTranslations("status");
   const scrollRef = useRef<HTMLDivElement>(null);
   const [localBirthdayArtists, setLocalBirthdayArtists] = useState<Artist[]>([]);
   const [loadingLocalBirthdays, setLoadingLocalBirthdays] = useState(true);
@@ -131,12 +137,12 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
     <SectionCard compact>
       <div className="section-inner">
         <div className="section-header">
-          <h2>Born This Week ({localBirthdayArtists.length})</h2>
+          <h2>{t("birthdaysThisWeek")} ({localBirthdayArtists.length})</h2>
           <Link
             href="/artists/birthdays"
             className="ml-auto text-sm font-normal uppercase tracking-wider text-[#8B0000] transition-colors hover:text-[#6B0000]"
           >
-            See All
+            {nav("seeAll")}
           </Link>
         </div>
 
@@ -154,7 +160,7 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
         ) : localBirthdayArtists.length === 0 ? (
           <div className="py-10 text-center">
             <p className="text-sm font-light text-gray-400">
-              No artist birthdays this week
+              {tCommon("noBirthdaysThisWeek")}
             </p>
           </div>
         ) : (
@@ -168,7 +174,7 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
                   <ArtistCard artist={artist} titleAs="h3" showViews={false} />
                   {(artist.date_of_birth || artist.death_year) && (
                     <div className="pointer-events-none absolute bottom-15 left-1/2 z-30 -translate-x-1/2 translate-y-1/2 whitespace-nowrap rounded-full border border-black/5 bg-white px-2.5 py-1 text-[11px] font-normal uppercase tracking-wider text-[#8B0000]/80">
-                      {getLifeLabel(artist.date_of_birth, artist.death_year)}
+                      {getLifeLabel(artist.date_of_birth, artist.death_year, tStatus)}
                     </div>
                   )}
                 </div>

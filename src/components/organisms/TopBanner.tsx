@@ -62,7 +62,7 @@ export default function TopBanner() {
                 type="search"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder={t("search.ui.placeholder")}
+                placeholder={t("ui.placeholder")}
                 className="w-full min-w-0 bg-transparent text-sm text-[#002D62] outline-none placeholder:text-gray-500"
               />
             </label>

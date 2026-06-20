@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { ChevronDown } from "lucide-react";
 import { getSignedCoverUrl } from "@/utils/getSignedCoverUrl";
 import type { DiscographyRelease } from "@/lib/artistApi";
@@ -24,15 +25,18 @@ export default async function ArtistDiscographyGrouped({
 }: {
   releases: DiscographyRelease[];
 }) {
+  const { getTranslations } = await import("next-intl/server");
+  const t = await getTranslations("artist");
+
   if (releases.length === 0) {
     return (
       <section className="min-w-0 bg-white p-5 rounded-xl border border-gray-100 shadow-sm sm:p-6">
         <h3 className="text-xs font-normal text-(--color-wikicrimson) uppercase mb-4">
-          Discography
+          {t("discography")}
         </h3>
 
         <p className="text-gray-700 leading-relaxed">
-          No discography available for this artist.
+          {t("noDiscography")}
         </p>
       </section>
     );
@@ -55,7 +59,7 @@ export default async function ArtistDiscographyGrouped({
   return (
     <section className="h-fit min-w-0 bg-white p-5 rounded-xl border border-gray-100 shadow-sm sm:p-6">
       <h3 className="text-xs font-normal text-(--color-wikicrimson) uppercase mb-5">
-        Discography
+        {t("discography")}
       </h3>
 
       <div className="space-y-7">

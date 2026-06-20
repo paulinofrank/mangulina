@@ -1,17 +1,20 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
 import type { ArtistSummary } from "@/types/home";
-import Link from "next/link";
 
 type TopRisingStarsSectionProps = {
   risingStars: ArtistSummary[];
 };
 
 export default function TopRisingStarsSection({ risingStars }: TopRisingStarsSectionProps) {
+  const t = useTranslations("sections");
+  const nav = useTranslations("navigation");
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
@@ -31,12 +34,12 @@ export default function TopRisingStarsSection({ risingStars }: TopRisingStarsSec
     <SectionCard compact>
       <div className="section-inner">
         <div className="section-header">
-          <h2>Emerging Artists</h2>
+          <h2>{t("risingStars")}</h2>
            <Link
             href="/artists/emerging"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
-            See All
+            {nav("seeAll")}
           </Link>
         </div>
 

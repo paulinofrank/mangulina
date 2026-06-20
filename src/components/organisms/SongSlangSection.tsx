@@ -1,5 +1,6 @@
 // components/organisms/SongSlangSection.tsx
 // Cultural vocabulary boxes — unique to Mangulina.
+import { useTranslations } from "next-intl";
 
 type SlangItem = {
   id: string | number;
@@ -23,15 +24,17 @@ type SongSlangSectionProps = {
 };
 
 export default function SongSlangSection({ slang }: SongSlangSectionProps) {
+  const t = useTranslations("song");
+  const tCommon = useTranslations("common");
   if (!slang.length) return null;
 
   return (
     <section className="h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-        Dominican Slang & Expressions
+        {t("slang")}
       </h2>
       <p className="mb-4 text-xs text-gray-400">
-        Cultural vocabulary used or referenced in this song.
+        {t("slangDescription")}
       </p>
 
       <div className="space-y-3">
@@ -60,7 +63,7 @@ export default function SongSlangSection({ slang }: SongSlangSectionProps) {
               )}
               {example && (
                 <p className="mt-2 text-xs text-gray-500">
-                  <span className="font-medium uppercase tracking-wide">Example: </span>
+                  <span className="font-medium uppercase tracking-wide">{t("example")}: </span>
                   <span className="italic">{example}</span>
                 </p>
               )}
@@ -71,7 +74,7 @@ export default function SongSlangSection({ slang }: SongSlangSectionProps) {
                   rel="noopener noreferrer"
                   className="mt-3 inline-flex text-xs font-medium text-gray-400 underline-offset-2 hover:text-[#002D62] hover:underline"
                 >
-                  Source
+                  {tCommon("source")}
                 </a>
               )}
             </div>

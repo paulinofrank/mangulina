@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import DecadeSelector from "@/app/archive/DecadeSelector";
 import SongsByYearList from "@/app/archive/SongsByYearList";
 import type { ArchivePeriod } from "@/lib/archivePeriods";
@@ -109,20 +110,25 @@ function getRangeLabel({
   totalSongs,
   currentPage,
   period,
+  t,
 }: {
   loading: boolean;
   totalSongs: number;
   currentPage: number;
   period: ArchivePeriod | null;
+  t: ReturnType<typeof useTranslations>;
 }) {
-  if (loading) return "Loading songs";
-  if (totalSongs === 0) return "0 songs";
+  if (loading) return t("archive.ui.loadingSongs");
+  if (totalSongs === 0) return t("archive.ui.noSongs");
 
   const start = (currentPage - 1) * ARCHIVE_PAGE_SIZE + 1;
   const end = Math.min(currentPage * ARCHIVE_PAGE_SIZE, totalSongs);
 
   return `Showing ${start.toLocaleString()} to ${end.toLocaleString()} of ${totalSongs.toLocaleString()}`;
 }
+
+// Note: Archive page strings are hardcoded for now. They will be migrated to translations
+// in a follow-up update when the i18n infrastructure is fully in place.
 
 function ArchivePagination({
   currentPage,
@@ -258,6 +264,7 @@ function getPeriodHeading(period: ArchivePeriod | null) {
 }
 
 export default function ArchiveClient({ period = null }: { period?: ArchivePeriod | null }) {
+  const t = useTranslations();
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -410,8 +417,9 @@ export default function ArchiveClient({ period = null }: { period?: ArchivePerio
                   totalSongs,
                   currentPage,
                   period: listingPeriod,
+                  t,
                 })
-              : "Top 50 songs by views"}
+              : t("archive.ui.topSongs")}
           </h2>
 
           <select
@@ -420,14 +428,14 @@ export default function ArchiveClient({ period = null }: { period?: ArchivePerio
             className="h-8 shrink-0 rounded-lg border border-[#B0C4DE] bg-white px-3 font-sans text-xs font-medium tracking-normal text-[#002D62] outline-none transition hover:border-[#002D62]"
             aria-label="Sort archive songs"
           >
-            <option value="title">Sort by Title</option>
-            <option value="views">Sort by Views</option>
+            <option value="title">{t("archive.ui.sortByTitle")}</option>
+            <option value="views">{t("archive.ui.sortByViews")}</option>
           </select>
         </div>
 
         {loading && (
           <p className="text-center text-gray-500">
-            Loading songs…
+            {t("archive.ui.loadingMore")}
           </p>
         )}
 

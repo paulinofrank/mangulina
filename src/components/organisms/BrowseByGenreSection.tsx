@@ -3,11 +3,13 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Disc3, Ellipsis, Flame, Heart, Music, Music2, Music4, Sparkles, Waves } from "lucide-react";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import SectionCard from "@/components/layout/SectionCard";
 
 export default function BrowseByGenreSection() {
+  const t = useTranslations("sections");
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const genreGroups = [
@@ -94,7 +96,7 @@ export default function BrowseByGenreSection() {
 
       <div className="section-inner">
         <div className="section-header">
-          <h2>EXPLORE BY GENRE & STYLE</h2>
+          <h2>{t("browseByGenre")}</h2>
         </div>
         <div
           ref={scrollRef}

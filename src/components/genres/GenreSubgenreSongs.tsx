@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 import SongsByYearList, { type ArchiveSongRow } from "@/app/archive/SongsByYearList";
 import SectionCard from "@/components/layout/SectionCard";
@@ -25,6 +26,7 @@ export default function GenreSubgenreSongs({
   genreId: number;
   subgenres: GenreSubgenre[];
 }) {
+  const t = useTranslations();
   const [selectedId, setSelectedId] = useState(subgenres[0]?.id ?? 0);
   const [sortBy, setSortBy] = useState<SongSort>("views");
   const [songs, setSongs] = useState<ArchiveSongRow[]>([]);
@@ -142,8 +144,8 @@ export default function GenreSubgenreSongs({
             className="h-8 shrink-0 rounded-lg border border-[#B0C4DE] bg-white px-3 font-sans text-xs font-medium tracking-normal text-[#002D62] outline-none transition hover:border-[#002D62]"
             aria-label="Sort subgenre songs"
           >
-            <option value="title">Sort by Title</option>
-            <option value="views">Sort by Views</option>
+            <option value="title">{t("archive.ui.sortByTitle")}</option>
+            <option value="views">{t("archive.ui.sortByViews")}</option>
           </select>
         </div>
 

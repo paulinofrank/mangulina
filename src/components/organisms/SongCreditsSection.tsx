@@ -1,6 +1,7 @@
 // components/organisms/SongCreditsSection.tsx
 // Groups credits by role for a liner-notes style display.
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export type CreditItem = {
   role: string;
@@ -14,39 +15,39 @@ type SongCreditsSectionProps = {
   releaseInfo?: string;
 };
 
-const ROLE_LABELS: Record<string, string> = {
-  performer: "Performed by",
-  vocalist: "Vocals",
-  vocal: "Vocals",
-  vocals: "Vocals",
-  singer: "Vocals",
-  composer: "Composed by",
-  songwriter: "Written by",
-  writer: "Written by",
-  lyricist: "Lyrics by",
-  lyrics: "Lyrics by",
-  arranger: "Arranged by",
-  producer: "Produced by",
-  "co-producer": "Co-produced by",
-  "executive producer": "Executive producer",
-  conductor: "Conducted by",
-  "musical director": "Musical director",
-  "recording engineer": "Recording engineer",
-  engineer: "Engineer",
-  "mix engineer": "Mix engineer",
-  "mastering engineer": "Mastering engineer",
-  guitar: "Guitar",
-  piano: "Piano",
-  bass: "Bass",
-  "bass guitar": "Bass guitar",
-  drums: "Drums",
-  percussion: "Percussion",
-  trumpet: "Trumpet",
-  saxophone: "Saxophone",
-  violin: "Violin",
-  chorus: "Chorus",
-  "backing vocals": "Backing vocals",
-  "background vocals": "Background vocals",
+const ROLE_LABELS_KEYS: Record<string, string> = {
+  performer: "performedBy",
+  vocalist: "vocals",
+  vocal: "vocals",
+  vocals: "vocals",
+  singer: "vocals",
+  composer: "composedBy",
+  songwriter: "writtenBy",
+  writer: "writtenBy",
+  lyricist: "lyricsBy",
+  lyrics: "lyricsBy",
+  arranger: "arrangedBy",
+  producer: "producedBy",
+  "co-producer": "coProducedBy",
+  "executive producer": "executiveProducer",
+  conductor: "conductedBy",
+  "musical director": "musicalDirector",
+  "recording engineer": "recordingEngineer",
+  engineer: "engineer",
+  "mix engineer": "mixEngineer",
+  "mastering engineer": "masteringEngineer",
+  guitar: "guitar",
+  piano: "piano",
+  bass: "bass",
+  "bass guitar": "bassGuitar",
+  drums: "drums",
+  percussion: "percussion",
+  trumpet: "trumpet",
+  saxophone: "saxophone",
+  violin: "violin",
+  chorus: "chorus",
+  "backing vocals": "backingVocals",
+  "background vocals": "backgroundVocals",
 };
 
 const ROLE_ORDER = [
@@ -86,9 +87,10 @@ function titleCase(value: string) {
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
-function normalizeRole(role: string) {
+function normalizeRole(role: string, t: any) {
   const normalized = role.trim().toLowerCase();
-  return ROLE_LABELS[normalized] ?? titleCase(role);
+  const key = ROLE_LABELS_KEYS[normalized];
+  return key ? t(key) : titleCase(role);
 }
 
 export default function SongCreditsSection({
@@ -96,13 +98,15 @@ export default function SongCreditsSection({
   labelName,
   releaseInfo,
 }: SongCreditsSectionProps) {
+  const t = useTranslations("creditRoles");
+  const tSong = useTranslations("song");
   const hasCredits = credits.length > 0;
   const hasExtra = Boolean(labelName || releaseInfo);
   if (!hasCredits && !hasExtra) return null;
 
   const grouped = new Map<string, CreditItem[]>();
   for (const c of credits) {
-    const role = normalizeRole(c.role || "Credit");
+    const role = normalizeRole(c.role || "Credit", t);
     if (!grouped.has(role)) grouped.set(role, []);
     const names = grouped.get(role)!;
     if (!names.some((item) => item.name === c.name && item.slug === c.slug)) {
@@ -114,7 +118,7 @@ export default function SongCreditsSection({
   return (
     <section className="h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-        Song Credits
+        {tSong("credits")}
       </h2>
 
       {/* Label / Release info */}
@@ -122,13 +126,13 @@ export default function SongCreditsSection({
         <div className="mb-5 flex flex-wrap gap-x-6 gap-y-2 border-b border-gray-50 pb-5 text-sm">
           {labelName && (
             <div>
-              <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-400">Label</span>
+              <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-400">{tSong("label")}</span>
               <span className="text-gray-700">{labelName}</span>
             </div>
           )}
           {releaseInfo && (
             <div>
-              <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-400">Release</span>
+              <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-400">{tSong("release")}</span>
               <span className="text-gray-700">{releaseInfo}</span>
             </div>
           )}

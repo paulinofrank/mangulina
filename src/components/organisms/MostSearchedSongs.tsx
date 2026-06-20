@@ -3,6 +3,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import type { TrendingSong } from "@/types/home";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import SongCard from "@/components/molecules/SongCard";
@@ -14,6 +15,8 @@ interface MostSearchedSongsProps {
 }
 
 export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps) {
+  const t = useTranslations("sections");
+  const nav = useTranslations("navigation");
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
@@ -40,14 +43,14 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
           {/* Header */}
    <div className="section-header flex items-center justify-between">
   <h2>
-    Most Searched Songs
+    {t("trendingSongs")}
   </h2>
 
   <Link
     href="/archive"
     className="text-[#8B0000] hover:text-[#6B0000] text-base uppercase tracking-wider transition-colors"
   >
-    See All
+    {nav("seeAll")}
   </Link>
 </div>
 

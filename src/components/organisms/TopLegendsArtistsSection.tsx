@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
@@ -13,6 +14,8 @@ export default function TopLegendsArtistsSection({
 }: {
   artists: ArtistSummary[];
 }) {
+  const t = useTranslations("sections");
+  const nav = useTranslations("navigation");
   const scrollRef = useRef<HTMLDivElement>(null);
 
   if (!artists.length) return null;
@@ -30,12 +33,12 @@ export default function TopLegendsArtistsSection({
     <SectionCard compact>
       <div className="section-inner">
         <div className="section-header">
-          <h2>Top Legends Artists</h2>
+          <h2>{t("legends")}</h2>
           <Link
             href="/artists/legends"
             className="ml-auto text-sm font-normal uppercase tracking-wider text-[#8B0000] transition-colors hover:text-[#6B0000]"
           >
-            See All
+            {nav("seeAll")}
           </Link>
         </div>
 

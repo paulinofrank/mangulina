@@ -2,6 +2,7 @@
 
 // BrowseByRegionSection component that shows the regions and the count of artists in that region. It is used in the archive page to show the regions that users can browse by.
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import SectionCard from "@/components/layout/SectionCard";
 import { isValidProvinceName, provinceToSlug } from "@/lib/provinceSlug";
 
@@ -42,6 +43,7 @@ function RegionLink({ region }: { region: RegionData }) {
 }
 
 export default function BrowseByRegionSection({ regions }: BrowseByRegionSectionProps) {
+  const t = useTranslations("sections");
   const validRegions = regions.filter((region) => isValidProvinceName(region?.province));
   const mobileColumns = chunkRegions(validRegions, 3);
 
@@ -49,7 +51,7 @@ export default function BrowseByRegionSection({ regions }: BrowseByRegionSection
     <SectionCard compact>
       <div className="section-inner">
         <div className="section-header">
-          <h2>Browse Artists by Region</h2>
+          <h2>{t("browseByRegion")}</h2>
         </div>
 
         <div className="flex snap-x gap-3 overflow-x-auto pb-2 md:hidden scrollbar-none">

@@ -3,6 +3,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
@@ -15,6 +16,8 @@ type TopChristianArtistsSectionProps = {
 export default function TopChristianArtistsSection({
   christianArtists,
 }: TopChristianArtistsSectionProps) {
+  const t = useTranslations("sections");
+  const nav = useTranslations("navigation");
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
@@ -35,12 +38,12 @@ export default function TopChristianArtistsSection({
       <div className="section-inner">
         {/* HEADER */}
         <div className="section-header">
-          <h2>Top Christian Artists</h2>
+          <h2>{t("christianArtists")}</h2>
           <Link
             href="/christian"
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
-            See All
+            {nav("seeAll")}
           </Link></div>
 
         {/* DESKTOP ARROWS */}

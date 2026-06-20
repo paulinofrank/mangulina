@@ -1,5 +1,6 @@
 // components/organisms/SongRecordingDetails.tsx
 // Clean encyclopedia-style facts table for a recording.
+import { useTranslations } from "next-intl";
 
 const COUNTRY_NAMES: Record<string, string> = {
   DO: "Dominican Republic",
@@ -73,24 +74,26 @@ export default function SongRecordingDetails({
   mbid,
   releaseMetadata,
 }: SongRecordingDetailsProps) {
+  const t = useTranslations("recordingFields");
+  const tSong = useTranslations("song");
   const rows: Row[] = [];
 
   if (recordingYear && recordingYear !== releaseYear)
-                       rows.push({ label: "Recorded",     value: String(recordingYear) });
-  if (label)           rows.push({ label: "Label",        value: label });
+                       rows.push({ label: t("recorded"),     value: String(recordingYear) });
+  if (label)           rows.push({ label: t("label"),        value: label });
 
   const countryName = country ? (COUNTRY_NAMES[country] ?? country) : null;
-  if (countryName)     rows.push({ label: "Country",      value: countryName });
+  if (countryName)     rows.push({ label: t("country"),      value: countryName });
 
   const language = getLanguage(releaseMetadata);
-  if (language)        rows.push({ label: "Language",     value: language });
+  if (language)        rows.push({ label: t("language"),     value: language });
 
   const isrcList = (isrcs ?? []).filter(Boolean);
   if (isrcList.length > 0)
-                       rows.push({ label: "ISRC",         value: isrcList.join(" · ") });
+                       rows.push({ label: t("isrc"),         value: isrcList.join(" · ") });
 
   if (mbid)            rows.push({
-    label: "MusicBrainz ID",
+    label: t("musicBrainzId"),
     value: mbid,
   });
 
@@ -99,7 +102,7 @@ export default function SongRecordingDetails({
   return (
     <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-        Recording Details
+        {tSong("recordingDetails")}
       </h2>
 
       <dl className="divide-y divide-gray-50">
@@ -112,7 +115,7 @@ export default function SongRecordingDetails({
               {rowLabel}
             </dt>
             <dd className="text-right text-gray-700 break-all">
-              {rowLabel === "MusicBrainz ID" ? (
+              {rowLabel === t("musicBrainzId") ? (
                 <a
                   href={`https://musicbrainz.org/recording/${value}`}
                   target="_blank"

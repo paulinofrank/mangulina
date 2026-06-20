@@ -1,4 +1,5 @@
 // components/organisms/SongFunFactsSection.tsx
+import { useTranslations } from "next-intl";
 
 type FunFact = {
   id: string | number;
@@ -12,12 +13,14 @@ type SongFunFactsSectionProps = {
 };
 
 export default function SongFunFactsSection({ facts }: SongFunFactsSectionProps) {
+  const t = useTranslations("song");
+  const tCommon = useTranslations("common");
   if (!facts.length) return null;
 
   return (
     <section className="h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-        Fun Facts
+        {t("funFacts")}
       </h2>
 
       <ol className="space-y-3">
@@ -43,7 +46,7 @@ export default function SongFunFactsSection({ facts }: SongFunFactsSectionProps)
                   rel="noopener noreferrer"
                   className="mt-2 inline-flex text-xs font-medium text-gray-400 underline-offset-2 hover:text-[#002D62] hover:underline"
                 >
-                  Source
+                  {tCommon("source")}
                 </a>
               )}
             </div>

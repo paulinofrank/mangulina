@@ -127,19 +127,19 @@ export default function SearchContent({
 
       {!query ? (
         <div className="rounded-2xl border border-dashed border-gray-200 bg-white p-8 text-gray-500">
-          {t("search.ui.noQuery")}
+          {t("ui.noQuery")}
         </div>
       ) : total === 0 ? (
         <div className="rounded-2xl border border-dashed border-gray-200 bg-white p-8 text-gray-500">
-          {t("search.ui.noResults")}
+          {t("ui.noResults")}
         </div>
       ) : (
         <div className="space-y-6">
-          <ResultGroup title={t("search.ui.artistsGroup")} results={results.artists} />
+          <ResultGroup title={t("ui.artistsGroup")} results={results.artists} />
 
-          <ResultGroup title={t("search.ui.songsGroup")} results={results.songs} />
+          <ResultGroup title={t("ui.songsGroup")} results={results.songs} />
 
-          <ResultGroup title={t("search.ui.albumsGroup")} results={results.releases} />
+          <ResultGroup title={t("ui.albumsGroup")} results={results.releases} />
         </div>
       )}
     </div>

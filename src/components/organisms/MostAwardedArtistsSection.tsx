@@ -3,6 +3,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
@@ -27,6 +28,8 @@ function getAwardLabel(artist: MostAwardedArtistSummary) {
 export default function MostAwardedArtistsSection({
   artists,
 }: MostAwardedArtistsSectionProps) {
+  const t = useTranslations("sections");
+  const nav = useTranslations("navigation");
   const scrollRef = useRef<HTMLDivElement>(null);
 
   if (!artists.length) return null;
@@ -49,12 +52,12 @@ export default function MostAwardedArtistsSection({
       <div className="section-inner">
         {/* HEADER */}
         <div className="section-header">
-          <h2>Most Awarded Artists</h2>
+          <h2>{t("mostAwarded")}</h2>
           <Link
             href="/artists/most-awarded"
             className="ml-auto text-sm font-normal uppercase tracking-wider text-[#8B0000] transition-colors hover:text-[#6B0000]"
           >
-            See All
+            {nav("seeAll")}
           </Link>
         </div>
 

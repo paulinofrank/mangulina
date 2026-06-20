@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 import {
   formatArtistRelationshipDisplay,
@@ -16,6 +19,7 @@ export default function ArtistRelationshipsSection({
   relationships,
   direction,
 }: ArtistRelationshipsSectionProps) {
+  const t = useTranslations();
   if (!relationships.length) return null;
 
   return (
@@ -38,7 +42,7 @@ export default function ArtistRelationshipsSection({
           const content = (
             <>
               <span className="truncate text-sm font-medium text-(--color-flagblue)">
-                {artist?.name ?? "Unknown artist"}
+                {artist?.name ?? t("fallback.unknownArtist")}
               </span>
               {details && (
                 <span className="shrink-0 text-xs text-gray-500">

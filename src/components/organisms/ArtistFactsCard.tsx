@@ -1,5 +1,8 @@
 //artist facts card component
+"use client";
+
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Globe } from "lucide-react";
 import { SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
 import type { IconType } from "react-icons";
@@ -77,9 +80,12 @@ function getInstrumentList(instruments: ArtistProfileData["instruments"]) {
   return Object.keys(instruments);
 }
 
-function getArtistStatus(artist: ArtistProfileData) {
+function getArtistStatus(
+  artist: ArtistProfileData,
+  t: ReturnType<typeof useTranslations>
+) {
   if (artist.type === "person") {
-    return artist.date_of_death || artist.death_year ? "Deceased" : null;
+    return artist.date_of_death || artist.death_year ? t("status.deceased", { year: artist.death_year || "" }) : null;
   }
 
   if (
@@ -291,10 +297,12 @@ function GroupsAndProjectsList({
   label,
   relationships,
   direction,
+  t,
 }: {
   label: string;
   relationships: ArtistRelationship[];
   direction: "outgoing" | "incoming";
+  t: ReturnType<typeof useTranslations>;
 }) {
   if (!relationships.length) return null;
 
@@ -314,7 +322,7 @@ function GroupsAndProjectsList({
           const content = (
             <>
               <span className="block font-normal text-(--color-ink)">
-                {artist?.name ?? "Unknown artist"}
+                {artist?.name ?? t("fallback.unknownArtist")}
               </span>
               {detailText && (
                 <span className="mt-0.5 block text-xs text-gray-500">
@@ -348,6 +356,7 @@ export default function ArtistFactsCard({
   groupsAndProjects = [],
   members = [],
 }: Props) {
+  const t = useTranslations();
   const realName = getRealName(artist);
   const birthDate = formatDate(artist.date_of_birth);
   const deathDate = formatDate(artist.date_of_death);
@@ -355,7 +364,7 @@ export default function ArtistFactsCard({
   const originLabel = getOriginLabel(artist);
   const occupations = getOccupationList(artist.occupations);
   const instruments = getInstrumentList(artist.instruments);
-  const artistStatus = getArtistStatus(artist);
+  const artistStatus = getArtistStatus(artist, t);
 
   const websiteUrl = getWebsiteUrl(artist.website);
   const websiteDisplay = getWebsiteDisplay(artist.website);
@@ -462,11 +471,13 @@ export default function ArtistFactsCard({
               label="Groups & Projects"
               relationships={groupsAndProjects}
               direction="outgoing"
+              t={t}
             />
             <GroupsAndProjectsList
               label="Members"
               relationships={members}
               direction="incoming"
+              t={t}
             />
           </>
         )}
