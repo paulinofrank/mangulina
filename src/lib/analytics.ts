@@ -28,11 +28,35 @@ export type AnalyticsEvent =
       source?: string;
     };
 
+/**
+ * Gets or creates a session ID for this browser
+ * Stored in sessionStorage to distinguish devices on same network
+ * Unlike IP hash, this persists only for the current browsing session
+ */
+function getSessionId(): string | null {
+  if (typeof window === "undefined" || !window.sessionStorage) return null;
+
+  let sessionId = window.sessionStorage.getItem("analytics_session_id");
+  if (!sessionId) {
+    sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+    try {
+      window.sessionStorage.setItem("analytics_session_id", sessionId);
+    } catch {
+      // sessionStorage might be disabled
+      return null;
+    }
+  }
+  return sessionId;
+}
+
 function sendAnalyticsEvent(event: AnalyticsEvent) {
   if (typeof window === "undefined") return;
 
   try {
-    const body = JSON.stringify(event);
+    const body = JSON.stringify({
+      ...event,
+      session_id: getSessionId(), // Add session ID for device-level tracking
+    });
 
     if (typeof navigator.sendBeacon === "function") {
       const queued = navigator.sendBeacon(

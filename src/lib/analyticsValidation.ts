@@ -107,6 +107,7 @@ export function buildEventMetadata(
     ),
     user_agent: textValue(request.headers.get("user-agent"), 500),
     ip_hash: hashIp(request),
+    session_id: textValue(body.session_id, 100), // Device-level tracking
   };
 }
 
