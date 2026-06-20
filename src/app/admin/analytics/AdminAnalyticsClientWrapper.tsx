@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { TrendChart } from "@/components/analytics/TrendChart";
 import { ExportButton } from "@/components/analytics/ExportButton";
 import { AnalyticsErrorBoundary } from "@/components/analytics/AnalyticsErrorBoundary";
@@ -32,8 +33,8 @@ function ReportCard({
   );
 }
 
-function EmptyRow() {
-  return <p className="py-5 text-center text-sm text-gray-500">No activity recorded yet.</p>;
+function EmptyRow({ message }: { message: string }) {
+  return <p className="py-5 text-center text-sm text-gray-500">{message}</p>;
 }
 
 interface AnalyticsData {
@@ -55,6 +56,7 @@ export default function AdminAnalyticsClientWrapper({
 }: {
   onRefreshStateChange?: (isRefreshing: boolean, lastUpdated: string | null) => void;
 }) {
+  const t = useTranslations("admin.analytics");
   const [data, setData] = useState<AnalyticsData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -71,7 +73,7 @@ export default function AdminAnalyticsClientWrapper({
       setError(null);
       onRefreshStateChange?.(false, new Date().toLocaleTimeString());
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      setError(err instanceof Error ? err.message : t("unknownError"));
       onRefreshStateChange?.(false, lastUpdated);
     } finally {
       setIsLoading(false);
@@ -87,7 +89,7 @@ export default function AdminAnalyticsClientWrapper({
     return (
       <div className="rounded-xl border border-[#CE1126]/20 bg-white px-6 py-8 text-center">
         <p className="text-sm text-[#8B0000]">
-          Failed to load analytics data: {error}
+          {t("failedToLoad", { error })}
         </p>
       </div>
     );
@@ -118,41 +120,41 @@ export default function AdminAnalyticsClientWrapper({
 
   const exportData = [
     {
-      title: "Artist Views",
+      title: t("sheets.artistViews"),
       data: data.artistViewsData.map((row) => {
         const artist = artistMap.get(row.artist_id);
         return {
-          Artist: artist?.name || "Unknown",
+          Artist: artist?.name || t("labels.unknownArtist"),
           Views: (row.views_7d || 0).toString(),
         };
       }),
     },
     {
-      title: "Recording Views",
+      title: t("sheets.recordingViews"),
       data: data.recordingViewsData.map((row) => {
         const recording = recordingMap.get(row.recording_id);
         return {
-          Recording: recording?.title || "Unknown",
+          Recording: recording?.title || t("labels.unknownRecording"),
           Views: (row.views_7d || 0).toString(),
         };
       }),
     },
     {
-      title: "Genre Views",
+      title: t("sheets.genreViews"),
       data: data.genreViewsData.map((row) => ({
         Genre: row.genre_slug,
         Views: (row.views_7d || 0).toString(),
       })),
     },
     {
-      title: "Platform Clicks",
+      title: t("sheets.platformClicks"),
       data: data.clicksData.map((row) => ({
         Platform: formatPlatform(row.platform),
         Clicks: row.clicks_30d.toString(),
       })),
     },
     {
-      title: "Searches With No Results",
+      title: t("sheets.searchesNoResults"),
       data: data.searchesData.map((row) => ({
         Query: row.query,
         Count: row.search_count.toString(),
@@ -169,10 +171,10 @@ export default function AdminAnalyticsClientWrapper({
           <div className="text-xs text-gray-600">
             {lastUpdated ? (
               <span>
-                Last updated: <span className="font-medium text-[#002D62]">{lastUpdated}</span>
+                {t("lastUpdated")}<span className="font-medium text-[#002D62]">{lastUpdated}</span>
               </span>
             ) : (
-              <span>Loading data...</span>
+              <span>{t("loadingData")}</span>
             )}
           </div>
           <button
@@ -196,7 +198,7 @@ export default function AdminAnalyticsClientWrapper({
                 d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
               />
             </svg>
-            {isLoading ? "Refreshing..." : "Refresh Now"}
+            {isLoading ? t("refreshing") : t("refreshNow")}
           </button>
         </div>
 
@@ -207,33 +209,33 @@ export default function AdminAnalyticsClientWrapper({
         {/* Trend Charts */}
         <div className="grid gap-6 lg:grid-cols-1">
           <ReportCard
-            title="Artist Views Trend"
-            description="Daily views across the past 7 days"
+            title={t("reports.artistViewsTrend.title")}
+            description={t("reports.artistViewsTrend.description")}
           >
             <TrendChart
-              title="Views per day"
+              title={t("charts.viewsPerDay")}
               data={data.artistTrendsData}
               color="crimson"
             />
           </ReportCard>
 
           <ReportCard
-            title="Recording Views Trend"
-            description="Daily views across the past 7 days"
+            title={t("reports.recordingViewsTrend.title")}
+            description={t("reports.recordingViewsTrend.description")}
           >
             <TrendChart
-              title="Views per day"
+              title={t("charts.viewsPerDay")}
               data={data.recordingTrendsData}
               color="blue"
             />
           </ReportCard>
 
           <ReportCard
-            title="Search Trends"
-            description="Search activity across the past 7 days"
+            title={t("reports.searchTrend.title")}
+            description={t("reports.searchTrend.description")}
           >
             <TrendChart
-              title="Searches per day"
+              title={t("charts.searchesPerDay")}
               data={data.searchTrendsData}
               color="crimson"
             />
@@ -243,11 +245,11 @@ export default function AdminAnalyticsClientWrapper({
         {/* Main Reports */}
         <div className="grid gap-6 lg:grid-cols-2">
           <ReportCard
-            title="Top Artist Views - Last 7 Days"
-            description="Artists with the highest profile views. Use this to identify emerging interest, feature trending artists, and plan curated collections."
+            title={t("reports.topArtistViews.title")}
+            description={t("reports.topArtistViews.description")}
           >
             {data.artistViewsData.length === 0 ? (
-              <EmptyRow />
+              <EmptyRow message={t("noActivityYet")} />
             ) : (
               <div className="divide-y divide-gray-100">
                 {data.artistViewsData.map((row) => {
@@ -266,7 +268,7 @@ export default function AdminAnalyticsClientWrapper({
                           {artist.name}
                         </Link>
                       ) : (
-                        <span className="truncate text-sm text-gray-500">Unknown artist</span>
+                        <span className="truncate text-sm text-gray-500">{t("labels.unknownArtist")}</span>
                       )}
                       <span className="shrink-0 text-sm tabular-nums text-gray-600">
                         {views.toLocaleString()}
@@ -279,11 +281,11 @@ export default function AdminAnalyticsClientWrapper({
           </ReportCard>
 
           <ReportCard
-            title="Top Recording Views - Last 7 Days"
-            description="Songs with the most profile views. Indicates user interest in specific recordings and popular musical moments. Use to recommend songs and understand listening patterns."
+            title={t("reports.topRecordingViews.title")}
+            description={t("reports.topRecordingViews.description")}
           >
             {data.recordingViewsData.length === 0 ? (
-              <EmptyRow />
+              <EmptyRow message={t("noActivityYet")} />
             ) : (
               <div className="divide-y divide-gray-100">
                 {data.recordingViewsData.map((row) => {
@@ -302,7 +304,7 @@ export default function AdminAnalyticsClientWrapper({
                           {recording.title}
                         </Link>
                       ) : (
-                        <span className="truncate text-sm text-gray-500">Unknown recording</span>
+                        <span className="truncate text-sm text-gray-500">{t("labels.unknownRecording")}</span>
                       )}
                       <span className="shrink-0 text-sm tabular-nums text-gray-600">
                         {views.toLocaleString()}
@@ -315,11 +317,11 @@ export default function AdminAnalyticsClientWrapper({
           </ReportCard>
 
           <ReportCard
-            title="Top Genre Views - Last 7 Days"
-            description="Genre pages with the highest views. Shows which music styles resonate most with your audience. Use to prioritize genre curation and editorial features."
+            title={t("reports.topGenreViews.title")}
+            description={t("reports.topGenreViews.description")}
           >
             {data.genreViewsData.length === 0 ? (
-              <EmptyRow />
+              <EmptyRow message={t("noActivityYet")} />
             ) : (
               <div className="divide-y divide-gray-100">
                 {data.genreViewsData.map((row) => {
@@ -346,11 +348,11 @@ export default function AdminAnalyticsClientWrapper({
           </ReportCard>
 
           <ReportCard
-            title="Platform Clicks - Last 30 Days"
-            description="Aggregate clicks to streaming services (Spotify, Apple Music, YouTube, etc.). High clicks indicate strong user intent to listen. Monitor platform distribution to understand user preferences."
+            title={t("reports.platformClicks.title")}
+            description={t("reports.platformClicks.description")}
           >
             {data.clicksData.length === 0 ? (
-              <EmptyRow />
+              <EmptyRow message={t("noActivityYet")} />
             ) : (
               <div className="divide-y divide-gray-100">
                 {data.clicksData.map((row) => (
@@ -368,11 +370,11 @@ export default function AdminAnalyticsClientWrapper({
           </ReportCard>
 
           <ReportCard
-            title="Searches With No Results"
-            description="Queries that returned no matches. Critical indicator of catalog gaps. Shows what users are looking for that you don't have. Priority for content curation and database expansion."
+            title={t("reports.searchesNoResults.title")}
+            description={t("reports.searchesNoResults.description")}
           >
             {data.searchesData.length === 0 ? (
-              <EmptyRow />
+              <EmptyRow message={t("noActivityYet")} />
             ) : (
               <div className="divide-y divide-gray-100">
                 {data.searchesData.map((row) => (
@@ -380,7 +382,7 @@ export default function AdminAnalyticsClientWrapper({
                     <div className="min-w-0">
                       <p className="truncate text-sm font-medium text-[#002D62]">{row.query}</p>
                       <p className="mt-1 text-xs text-gray-400">
-                        Last searched {new Date(row.last_searched_at).toLocaleDateString()}
+                        {t("labels.lastSearched")}{new Date(row.last_searched_at).toLocaleDateString()}
                       </p>
                     </div>
                     <span className="shrink-0 text-sm tabular-nums text-gray-600">

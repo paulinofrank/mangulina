@@ -1,7 +1,8 @@
 "use client";
 
-import React, { ReactNode } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 import { AlertCircle, RotateCcw } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface Props {
   children: ReactNode;
@@ -38,28 +39,37 @@ export class AnalyticsErrorBoundary extends React.Component<Props, State> {
 
   render() {
     if (this.state.hasError) {
-      return (
-        <div className="rounded-xl border border-[#CE1126]/20 bg-white p-6 shadow-sm sm:p-8">
-          <div className="flex flex-col items-center text-center">
-            <AlertCircle className="mb-4 h-12 w-12 text-[#CE1126]" />
-            <h3 className="mb-2 text-lg font-semibold text-[#002D62]">
-              Something went wrong
-            </h3>
-            <p className="mb-6 max-w-sm text-sm text-gray-600">
-              {this.state.error?.message || "Failed to load analytics data. Please try again."}
-            </p>
-            <button
-              onClick={this.handleReset}
-              className="inline-flex items-center gap-2 rounded-lg bg-[#CE1126] px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-[#8B0000]"
-            >
-              <RotateCcw className="h-4 w-4" />
-              Try Again
-            </button>
-          </div>
-        </div>
-      );
+      return <ErrorBoundaryContent error={this.state.error} onReset={this.handleReset} />;
     }
 
     return this.props.children;
   }
+}
+
+/**
+ * Client component to display error boundary UI with translations
+ */
+function ErrorBoundaryContent({ error, onReset }: { error: Error | null; onReset: () => void }) {
+  const t = useTranslations("admin.analytics");
+
+  return (
+    <div className="rounded-xl border border-[#CE1126]/20 bg-white p-6 shadow-sm sm:p-8">
+      <div className="flex flex-col items-center text-center">
+        <AlertCircle className="mb-4 h-12 w-12 text-[#CE1126]" />
+        <h3 className="mb-2 text-lg font-semibold text-[#002D62]">
+          Something went wrong
+        </h3>
+        <p className="mb-6 max-w-sm text-sm text-gray-600">
+          {error?.message || t("failedToLoadGeneral")}
+        </p>
+        <button
+          onClick={onReset}
+          className="inline-flex items-center gap-2 rounded-lg bg-[#CE1126] px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-[#8B0000]"
+        >
+          <RotateCcw className="h-4 w-4" />
+          Try Again
+        </button>
+      </div>
+    </div>
+  );
 }

@@ -240,5 +240,216 @@
     "tracks": "tracks",
     "source": "Source",
     "logo": "Mangulina logo"
+  },
+  "admin": {
+    "tools": {
+      "analytics": {
+        "title": "Analytics",
+        "eyebrow": "Insights",
+        "description": "Review recent artist and recording views, unanswered searches, and listening-platform engagement."
+      },
+      "artists": {
+        "title": "Artist Profile Editor",
+        "eyebrow": "Artists",
+        "description": "Create, review, and update curated artist profiles, biographies, images, and editorial classification."
+      },
+      "songs": {
+        "title": "Songs / Recordings Editor",
+        "eyebrow": "Recordings",
+        "description": "Manage song identity, credits, genre metadata, cultural context, and authorized lyric details."
+      },
+      "genres": {
+        "title": "Genre Pages Manager",
+        "eyebrow": "Genres",
+        "description": "Curate genre landing pages, primary genre mappings, aliases, descriptions, and cultural notes."
+      },
+      "discography": {
+        "title": "Discography Manager",
+        "eyebrow": "Discography",
+        "description": "Add and update artist releases, release dates, labels, catalog details, and discography metadata."
+      },
+      "awards": {
+        "title": "Awards Manager",
+        "eyebrow": "Awards",
+        "description": "Review artist awards, categories, sources, countries, years, and award-page relationships."
+      },
+      "platformLinks": {
+        "title": "Platform Links Review",
+        "eyebrow": "Links",
+        "description": "Approve official listening links for Spotify, Apple Music, YouTube, Deezer, TIDAL, and more."
+      },
+      "contributors": {
+        "title": "Contributors Manager",
+        "eyebrow": "Contributors",
+        "description": "Create and maintain contributor profiles, specialties, publishing status, ordering, and profile images."
+      },
+      "invites": {
+        "title": "Admin Invites",
+        "eyebrow": "Access",
+        "description": "Invite editors, review pending invite links, and confirm active admin members."
+      },
+      "reviews": {
+        "title": "Pending Reviews",
+        "eyebrow": "Editorial Queue",
+        "description": "Triage profiles, recordings, links, metadata, and other database entries that need human review."
+      }
+    },
+    "ui": {
+      "header": "Mangulina Admin",
+      "portal": "Admin Portal",
+      "description": "Editorial tools for maintaining Mangulina's curated Dominican music database.",
+      "statusOpen": "Open",
+      "statusComingSoon": "Coming Soon",
+      "goToTool": "Go to tool"
+    },
+    "buttons": {
+      "exitToHome": "Exit to Homepage",
+      "signOut": "Sign Out",
+      "newArtist": "New Artist",
+      "createNewArtist": "Create New Artist",
+      "updateArtistProfile": "Update Artist Profile",
+      "createArtist": "Create Artist",
+      "processing": "Processing..."
+    },
+    "forms": {
+      "selectPrimaryGenre": "-- Select Primary Genre --",
+      "editArtistProfile": "Edit Artist Profile",
+      "createNewArtist": "Create New Artist",
+      "artistProfileEditor": "Artist Profile Editor",
+      "selectArtist": "Select Artist",
+      "searchOrSelectArtist": "Search or select artist..."
+    },
+    "labels": {
+      "artistName": "Artist Name",
+      "sortName": "Sort Name",
+      "slug": "Slug",
+      "stageName": "Stage Name",
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "secondLastName": "Second Last Name",
+      "dateOfBirth": "Date of Birth",
+      "birthYear": "Birth Year",
+      "dateOfDeath": "Date of Death",
+      "deathYear": "Death Year",
+      "placeOfBirth": "Place of Birth",
+      "province": "Province",
+      "artistType": "Artist Type",
+      "primaryRole": "Primary Role",
+      "primaryGenre": "Primary Genre",
+      "profileStatus": "Profile Status",
+      "otherRoles": "Other Roles / Occupations",
+      "musicalGenres": "Musical Genres",
+      "instruments": "Instruments",
+      "aliases": "Aliases",
+      "disambiguation": "Disambiguation",
+      "artistTags": "Artist Tags",
+      "officialWebsite": "Official Website",
+      "gender": "Gender"
+    },
+    "panels": {
+      "artistMedia": "Artist Media / Interviews",
+      "groupsAndProjects": "Groups & Projects",
+      "addMediaLink": "Add Media Link",
+      "editMediaLink": "Edit Media Link",
+      "addRelationship": "Add Relationship",
+      "editRelationship": "Edit Relationship"
+    },
+    "analytics": {
+      "noActivityYet": "No activity recorded yet.",
+      "unknownError": "Unknown error",
+      "failedToLoad": "Failed to load analytics data: {{error}}",
+      "failedToLoadGeneral": "Failed to load analytics data. Please try again.",
+      "failedToLoadPage": "Failed to load analytics data. Please try refreshing the page.",
+      "refreshing": "Refreshing...",
+      "refreshNow": "Refresh Now",
+      "lastUpdated": "Last updated: ",
+      "loadingData": "Loading data...",
+      "sheets": {
+        "artistViews": "Artist Views",
+        "recordingViews": "Recording Views",
+        "genreViews": "Genre Views",
+        "platformClicks": "Platform Clicks",
+        "searchesNoResults": "Searches With No Results"
+      },
+      "charts": {
+        "viewsPerDay": "Views per day",
+        "searchesPerDay": "Searches per day"
+      },
+      "reports": {
+        "artistViewsTrend": {
+          "title": "Artist Views Trend",
+          "description": "Daily views across the past 7 days"
+        },
+        "recordingViewsTrend": {
+          "title": "Recording Views Trend",
+          "description": "Daily views across the past 7 days"
+        },
+        "searchTrend": {
+          "title": "Search Trends",
+          "description": "Search activity across the past 7 days"
+        },
+        "topArtistViews": {
+          "title": "Top Artist Views - Last 7 Days",
+          "description": "Artists with the highest profile views. Use this to identify emerging interest, feature trending artists, and plan curated collections."
+        },
+        "topRecordingViews": {
+          "title": "Top Recording Views - Last 7 Days",
+          "description": "Songs with the most profile views. Indicates user interest in specific recordings and popular musical moments. Use to recommend songs and understand listening patterns."
+        },
+        "topGenreViews": {
+          "title": "Top Genre Views - Last 7 Days",
+          "description": "Genre pages with the highest views. Shows which music styles resonate most with your audience. Use to prioritize genre curation and editorial features."
+        },
+        "platformClicks": {
+          "title": "Platform Clicks - Last 30 Days",
+          "description": "Aggregate clicks to streaming services (Spotify, Apple Music, YouTube, etc.). High clicks indicate strong user intent to listen. Monitor platform distribution to understand user preferences."
+        },
+        "searchesNoResults": {
+          "title": "Searches With No Results",
+          "description": "Queries that returned no matches. Critical indicator of catalog gaps. Shows what users are looking for that you don't have. Priority for content curation and database expansion."
+        }
+      },
+      "labels": {
+        "lastSearched": "Last searched ",
+        "unknownArtist": "Unknown",
+        "unknownRecording": "Unknown recording"
+      }
+    }
+  },
+  "archive": {
+    "ui": {
+      "loadingSongs": "Loading songs",
+      "noSongs": "0 songs",
+      "topSongs": "Top 50 songs by views",
+      "sortByTitle": "Sort by Title",
+      "sortByViews": "Sort by Views",
+      "loadingMore": "Loading songs…"
+    }
+  },
+  "search": {
+    "ui": {
+      "placeholder": "Search artists, songs, and albums.",
+      "noQuery": "Type something in the search box to begin.",
+      "noResults": "No results found.",
+      "artistsGroup": "Artists",
+      "songsGroup": "Songs",
+      "albumsGroup": "Albums"
+    }
+  },
+  "birthdays": {
+    "ui": {
+      "archiveTitle": "Birthday Archive",
+      "unavailable": "The birthday archive is temporarily unavailable.",
+      "noArtists": "No published artists with birthdays in this year are currently available.",
+      "selectYear": "Select a birth year to browse artists in date-of-birth order.",
+      "noBirthdays": "No artist birthdays are currently available."
+    }
+  },
+  "fallback": {
+    "unknownArtist": "Unknown artist",
+    "deceased": "Deceased",
+    "openExternal": "Open ↗",
+    "openYoutube": "Open on YouTube"
   }
 }

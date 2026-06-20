@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { RotateCcw, Clock } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { DateRangeSelector, type DateRangeType } from "@/components/analytics/DateRangeSelector";
 
 type AutoRefreshInterval = "off" | "5m" | "15m" | "30m";
@@ -11,6 +12,7 @@ type AutoRefreshInterval = "off" | "5m" | "15m" | "30m";
  * Handles date range selection, manual refresh, and auto-refresh
  */
 export default function AnalyticsControls() {
+  const t = useTranslations("admin.analytics");
   const [dateRange, setDateRange] = useState<DateRangeType>("7d");
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [autoRefresh, setAutoRefresh] = useState<AutoRefreshInterval>("off");
@@ -58,7 +60,7 @@ export default function AnalyticsControls() {
           className="inline-flex w-fit items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-gray-600 shadow-sm transition hover:border-[#CE1126] hover:text-[#CE1126] disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <RotateCcw className={`h-4 w-4 ${isRefreshing ? "animate-spin" : ""}`} />
-          {isRefreshing ? "Refreshing..." : "Refresh"}
+          {isRefreshing ? t("refreshing") : t("refreshNow")}
         </button>
       </div>
 

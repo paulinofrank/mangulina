@@ -240,5 +240,216 @@
     "tracks": "pistas",
     "source": "Fuente",
     "logo": "Logo de Mangulina"
+  },
+  "admin": {
+    "tools": {
+      "analytics": {
+        "title": "Analytics",
+        "eyebrow": "Información",
+        "description": "Revisa las vistas recientes de artistas y grabaciones, búsquedas sin respuesta y participación en plataformas de escucha."
+      },
+      "artists": {
+        "title": "Editor de Perfil de Artista",
+        "eyebrow": "Artistas",
+        "description": "Crear, revisar y actualizar perfiles de artistas curados, biografías, imágenes y clasificación editorial."
+      },
+      "songs": {
+        "title": "Editor de Canciones / Grabaciones",
+        "eyebrow": "Grabaciones",
+        "description": "Gestiona la identidad de canciones, créditos, metadatos de género, contexto cultural y detalles de letras autorizadas."
+      },
+      "genres": {
+        "title": "Gestor de Páginas de Género",
+        "eyebrow": "Géneros",
+        "description": "Curar páginas de destino de género, asignaciones de género primario, alias, descripciones y notas culturales."
+      },
+      "discography": {
+        "title": "Gestor de Discografía",
+        "eyebrow": "Discografía",
+        "description": "Agregar y actualizar lanzamientos de artistas, fechas de lanzamiento, sellos discográficos, detalles de catálogo y metadatos de discografía."
+      },
+      "awards": {
+        "title": "Gestor de Premios",
+        "eyebrow": "Premios",
+        "description": "Revisar premios de artistas, categorías, fuentes, países, años y relaciones de páginas de premios."
+      },
+      "platformLinks": {
+        "title": "Revisión de Enlaces de Plataforma",
+        "eyebrow": "Enlaces",
+        "description": "Aprueba enlaces de escucha oficiales para Spotify, Apple Music, YouTube, Deezer, TIDAL y más."
+      },
+      "contributors": {
+        "title": "Gestor de Colaboradores",
+        "eyebrow": "Colaboradores",
+        "description": "Crear y mantener perfiles de colaboradores, especialidades, estado de publicación, ordenamiento e imágenes de perfil."
+      },
+      "invites": {
+        "title": "Invitaciones de Admin",
+        "eyebrow": "Acceso",
+        "description": "Invita editores, revisa enlaces de invitación pendientes y confirma miembros de administración activos."
+      },
+      "reviews": {
+        "title": "Revisiones Pendientes",
+        "eyebrow": "Cola Editorial",
+        "description": "Clasifica perfiles, grabaciones, enlaces, metadatos y otras entradas de base de datos que necesitan revisión humana."
+      }
+    },
+    "ui": {
+      "header": "Mangulina Admin",
+      "portal": "Portal de Administración",
+      "description": "Herramientas editoriales para mantener la base de datos de música dominicana curada de Mangulina.",
+      "statusOpen": "Abierto",
+      "statusComingSoon": "Próximamente",
+      "goToTool": "Ir a herramienta"
+    },
+    "buttons": {
+      "exitToHome": "Salir a Inicio",
+      "signOut": "Cerrar Sesión",
+      "newArtist": "Nuevo Artista",
+      "createNewArtist": "Crear Nuevo Artista",
+      "updateArtistProfile": "Actualizar Perfil del Artista",
+      "createArtist": "Crear Artista",
+      "processing": "Procesando..."
+    },
+    "forms": {
+      "selectPrimaryGenre": "-- Selecciona Género Principal --",
+      "editArtistProfile": "Editar Perfil del Artista",
+      "createNewArtist": "Crear Nuevo Artista",
+      "artistProfileEditor": "Editor de Perfil de Artista",
+      "selectArtist": "Seleccionar Artista",
+      "searchOrSelectArtist": "Buscar o seleccionar artista..."
+    },
+    "labels": {
+      "artistName": "Nombre del Artista",
+      "sortName": "Nombre de Ordenamiento",
+      "slug": "Slug",
+      "stageName": "Nombre Artístico",
+      "firstName": "Nombre",
+      "middleName": "Segundo Nombre",
+      "lastName": "Apellido",
+      "secondLastName": "Segundo Apellido",
+      "dateOfBirth": "Fecha de Nacimiento",
+      "birthYear": "Año de Nacimiento",
+      "dateOfDeath": "Fecha de Muerte",
+      "deathYear": "Año de Muerte",
+      "placeOfBirth": "Lugar de Nacimiento",
+      "province": "Provincia",
+      "artistType": "Tipo de Artista",
+      "primaryRole": "Rol Principal",
+      "primaryGenre": "Género Principal",
+      "profileStatus": "Estado del Perfil",
+      "otherRoles": "Otros Roles / Ocupaciones",
+      "musicalGenres": "Géneros Musicales",
+      "instruments": "Instrumentos",
+      "aliases": "Alias",
+      "disambiguation": "Aclaración",
+      "artistTags": "Etiquetas de Artista",
+      "officialWebsite": "Sitio Web Oficial",
+      "gender": "Género"
+    },
+    "panels": {
+      "artistMedia": "Media / Entrevistas del Artista",
+      "groupsAndProjects": "Grupos y Proyectos",
+      "addMediaLink": "Agregar Enlace de Media",
+      "editMediaLink": "Editar Enlace de Media",
+      "addRelationship": "Agregar Relación",
+      "editRelationship": "Editar Relación"
+    },
+    "analytics": {
+      "noActivityYet": "Aún no hay actividad registrada.",
+      "unknownError": "Error desconocido",
+      "failedToLoad": "Error al cargar datos de análisis: {{error}}",
+      "failedToLoadGeneral": "Error al cargar datos de análisis. Por favor, inténtalo de nuevo.",
+      "failedToLoadPage": "Error al cargar datos de análisis. Por favor, actualiza la página.",
+      "refreshing": "Actualizando...",
+      "refreshNow": "Actualizar Ahora",
+      "lastUpdated": "Última actualización: ",
+      "loadingData": "Cargando datos...",
+      "sheets": {
+        "artistViews": "Vistas de Artistas",
+        "recordingViews": "Vistas de Grabaciones",
+        "genreViews": "Vistas de Géneros",
+        "platformClicks": "Clics en Plataformas",
+        "searchesNoResults": "Búsquedas Sin Resultados"
+      },
+      "charts": {
+        "viewsPerDay": "Vistas por día",
+        "searchesPerDay": "Búsquedas por día"
+      },
+      "reports": {
+        "artistViewsTrend": {
+          "title": "Tendencia de Vistas de Artistas",
+          "description": "Vistas diarias en los últimos 7 días"
+        },
+        "recordingViewsTrend": {
+          "title": "Tendencia de Vistas de Grabaciones",
+          "description": "Vistas diarias en los últimos 7 días"
+        },
+        "searchTrend": {
+          "title": "Tendencias de Búsqueda",
+          "description": "Actividad de búsqueda en los últimos 7 días"
+        },
+        "topArtistViews": {
+          "title": "Top Vistas de Artistas - Últimos 7 Días",
+          "description": "Artistas con el mayor número de vistas de perfil. Úsalo para identificar interés emergente, destacar artistas en tendencia y planificar colecciones seleccionadas."
+        },
+        "topRecordingViews": {
+          "title": "Top Vistas de Grabaciones - Últimos 7 Días",
+          "description": "Canciones con el mayor número de vistas de perfil. Indica interés del usuario en grabaciones específicas y momentos musicales populares. Úsalo para recomendar canciones y comprender patrones de escucha."
+        },
+        "topGenreViews": {
+          "title": "Top Vistas de Géneros - Últimos 7 Días",
+          "description": "Páginas de género con el mayor número de vistas. Muestra qué estilos musicales resuenan más con tu audiencia. Úsalo para priorizar la curaduría de géneros y características editoriales."
+        },
+        "platformClicks": {
+          "title": "Clics en Plataformas - Últimos 30 Días",
+          "description": "Clics agregados en servicios de transmisión (Spotify, Apple Music, YouTube, etc.). Los clics altos indican una intención fuerte del usuario de escuchar. Monitorea la distribución de plataformas para comprender las preferencias del usuario."
+        },
+        "searchesNoResults": {
+          "title": "Búsquedas Sin Resultados",
+          "description": "Consultas que no devolvieron coincidencias. Indicador crítico de brechas en el catálogo. Muestra lo que los usuarios están buscando que no tienes. Prioridad para la curaduría de contenido y la expansión de la base de datos."
+        }
+      },
+      "labels": {
+        "lastSearched": "Última búsqueda ",
+        "unknownArtist": "Desconocido",
+        "unknownRecording": "Grabación desconocida"
+      }
+    }
+  },
+  "archive": {
+    "ui": {
+      "loadingSongs": "Cargando canciones",
+      "noSongs": "0 canciones",
+      "topSongs": "Top 50 canciones por vistas",
+      "sortByTitle": "Ordenar por Título",
+      "sortByViews": "Ordenar por Vistas",
+      "loadingMore": "Cargando canciones…"
+    }
+  },
+  "search": {
+    "ui": {
+      "placeholder": "Buscar artistas, canciones y álbumes.",
+      "noQuery": "Escribe algo en el cuadro de búsqueda para empezar.",
+      "noResults": "No se encontraron resultados.",
+      "artistsGroup": "Artistas",
+      "songsGroup": "Canciones",
+      "albumsGroup": "Álbumes"
+    }
+  },
+  "birthdays": {
+    "ui": {
+      "archiveTitle": "Archivo de Cumpleaños",
+      "unavailable": "El archivo de cumpleaños no está disponible temporalmente.",
+      "noArtists": "No hay artistas publicados con cumpleaños en este año disponibles actualmente.",
+      "selectYear": "Selecciona un año de nacimiento para explorar artistas en orden de fecha de nacimiento.",
+      "noBirthdays": "Actualmente no hay cumpleaños de artistas disponibles."
+    }
+  },
+  "fallback": {
+    "unknownArtist": "Artista desconocido",
+    "deceased": "Fallecido",
+    "openExternal": "Abrir ↗",
+    "openYoutube": "Abrir en YouTube"
   }
 }
