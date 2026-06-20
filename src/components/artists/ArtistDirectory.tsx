@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { SlidersHorizontal } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { getSupabaseClient } from "@/lib/supabase";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import JsonLd from "@/components/seo/JsonLd";
@@ -1285,7 +1286,7 @@ function ArtistsContent({
           </div>
         ) : (
           <div className="flex min-h-60 items-center justify-center text-center">
-            <p className="text-sm text-gray-500">No artists found.</p>
+            <NoArtistsMessage />
           </div>
         )}
 
@@ -1298,6 +1299,11 @@ function ArtistsContent({
       </section>
     </main>
   );
+}
+
+function NoArtistsMessage() {
+  const t = useTranslations("components");
+  return <p className="text-sm text-gray-500">{t("noArtistsFound")}</p>;
 }
 
 export default function ArtistDirectory(props: ArtistDirectoryProps) {

@@ -1,8 +1,11 @@
 import { Suspense } from "react";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import LoginForm from "./LoginForm";
 
-export default function AdminLoginPage() {
+export default async function AdminLoginPage() {
+  const t = await getTranslations("pages");
+
   return (
     <main className="flex min-h-screen items-center justify-center bg-gray-50 px-5 py-10 font-sans text-gray-900">
       <div className="w-full max-w-md">
@@ -19,7 +22,7 @@ export default function AdminLoginPage() {
             href="/"
             className="text-xs font-medium uppercase tracking-[0.18em] text-gray-500 transition hover:text-[#CE1126]"
           >
-            Back to Homepage
+            {t("login.backToHomepage")}
           </Link>
         </div>
       </div>

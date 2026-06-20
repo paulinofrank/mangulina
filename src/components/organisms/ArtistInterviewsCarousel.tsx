@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import { SiYoutube } from "react-icons/si";
 import { X } from "lucide-react";
 
@@ -38,6 +39,8 @@ function getYouTubeVideoId(interview: ArtistInterview) {
 export default function ArtistInterviewsCarousel({
   interviews,
 }: ArtistInterviewsCarouselProps) {
+  const t = useTranslations();
+  const tc = useTranslations("components");
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeInterview, setActiveInterview] = useState<ArtistInterview | null>(null);
 
@@ -94,7 +97,7 @@ export default function ArtistInterviewsCarousel({
                     />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center text-xs italic text-gray-400">
-                      No preview
+                      {tc("noPreview")}
                     </div>
                   )}
                   {isYouTube && (
@@ -189,14 +192,14 @@ export default function ArtistInterviewsCarousel({
             </div>
 
             <div className="flex flex-col gap-2 px-4 py-3 text-xs text-gray-500 sm:flex-row sm:items-center sm:justify-between sm:px-5">
-              <span>Playing inside Mangulina</span>
+              <span>{tc("playingInMangulina")}</span>
               <a
                 href={activeInterview.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-[#CE1126] underline-offset-2 hover:underline"
               >
-                Open on YouTube
+                {t("fallback.openYoutube")}
               </a>
             </div>
           </div>

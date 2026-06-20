@@ -1,4 +1,7 @@
 //FeaturedArtistInfo.tsx
+"use client";
+
+import { useTranslations } from "next-intl";
 import ButtonSecondary from "@/components/atoms/ButtonSecondary";
 import type { Artist } from "@/types/music";
 
@@ -21,22 +24,23 @@ function getBioExcerpt(bio?: string | null, maxLength = 420) {
 export default function FeaturedArtistInfo({
   featuredArtist,
 }: FeaturedArtistInfoProps) {
+  const t = useTranslations("components");
   const bioExcerpt = getBioExcerpt(featuredArtist?.bio);
 
   return (
     <div className="flex-1">
       <p className="text-sm font-normal uppercase tracking-wider text-[#8B0000] mb-2">
-        Featured Artist
+        {t("featuredArtist")}
       </p>
 
       <h1 className="text-3xl sm:text-4xl font-normal tracking-tight text-gray-800 mb-4">
-        {featuredArtist?.name || "Featured Artist"}
+        {featuredArtist?.name || t("featuredArtist")}
       </h1>
 
       <div className="flex flex-wrap items-center gap-2 mb-4 text-sm font-normal">
         {(featuredArtist?.birth_place || featuredArtist?.province) && (
           <span className="text-gray-700">
-            <span className="text-gray-600 mr-1">From:</span>
+            <span className="text-gray-600 mr-1">{t("from")}</span>
 
             <span className="bg-gray-100 px-2 py-0.5 rounded text-gray-700">
                {[featuredArtist?.birth_place, featuredArtist?.province]
@@ -49,7 +53,7 @@ export default function FeaturedArtistInfo({
         {featuredArtist?.genres &&
           featuredArtist.genres.length > 0 && (
             <span className="text-gray-700">
-              <span className="text-gray-600 mr-1">Musical Genres:</span>
+              <span className="text-gray-600 mr-1">{t("musicalGenres")}</span>
 
               <span className="bg-gray-100 px-2 py-0.5 rounded text-gray-700">
                 {featuredArtist.genres.join(", ")}

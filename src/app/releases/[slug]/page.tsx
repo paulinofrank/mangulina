@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 
 import MainWrapper from "@/components/layout/MainWrapper";
 import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
@@ -108,7 +109,9 @@ function ReleaseHero({ release }: { release: ReleasePageData }) {
   );
 }
 
-function ReleaseFactsCard({ release }: { release: ReleasePageData }) {
+async function ReleaseFactsCard({ release }: { release: ReleasePageData }) {
+  const t = await getTranslations("pages");
+
   const facts = [
     ["Type", formatReleaseType(release.type)],
     ["Release", formatDate(release)],
@@ -121,7 +124,7 @@ function ReleaseFactsCard({ release }: { release: ReleasePageData }) {
   return (
     <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-        Release Details
+        {t("releases.releaseDetails")}
       </h2>
 
       <dl className="divide-y divide-gray-100">
@@ -138,15 +141,17 @@ function ReleaseFactsCard({ release }: { release: ReleasePageData }) {
   );
 }
 
-function ReleaseTrackList({ tracks }: { tracks: ReleaseTrack[] }) {
+async function ReleaseTrackList({ tracks }: { tracks: ReleaseTrack[] }) {
+  const t = await getTranslations("pages");
+
   return (
     <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6">
       <h2 className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-        Track Listing
+        {t("releases.trackListing")}
       </h2>
 
       {tracks.length === 0 ? (
-        <p className="text-sm text-gray-600">No tracks available for this release yet.</p>
+        <p className="text-sm text-gray-600">{t("releases.noTracksAvailable")}</p>
       ) : (
         <div className="divide-y divide-gray-100">
           {tracks.map((track) => {

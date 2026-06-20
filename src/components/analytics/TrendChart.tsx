@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 interface TrendDataPoint {
   date: string;
   views: number;
@@ -21,10 +23,12 @@ export function TrendChart({
   data,
   color = "crimson",
 }: TrendChartProps) {
+  const t = useTranslations("components");
+
   if (!data || data.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-8">
-        <p className="text-sm text-gray-500">No data available</p>
+        <p className="text-sm text-gray-500">{t("noData")}</p>
       </div>
     );
   }

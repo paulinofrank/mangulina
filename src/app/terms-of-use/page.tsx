@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
@@ -154,7 +155,9 @@ function SectionEyebrow({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function TermsOfUsePage() {
+export default async function TermsOfUsePage() {
+  const t = await getTranslations("pages");
+
   return (
     <main className="mx-auto max-w-5xl px-6 pb-10 pt-20 sm:pb-16 sm:pt-32">
       <header className="mb-12 rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-12">
@@ -169,7 +172,7 @@ export default function TermsOfUsePage() {
           documenting and preserving the history of Dominican music.
         </p>
 
-        <p className="mt-6 text-sm text-gray-500">Last Updated: June 2026</p>
+        <p className="mt-6 text-sm text-gray-500">{t("termsOfUse.lastUpdated")}</p>
       </header>
 
       <div className="space-y-10">

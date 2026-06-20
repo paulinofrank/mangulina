@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 
 import MainWrapper from "@/components/layout/MainWrapper";
 import PageSection from "@/components/layout/PageSection";
@@ -29,15 +30,17 @@ export const metadata = createPageMetadata({
 
 export const revalidate = 3600;
 
-function FeaturedRelease({ release }: { release: ReleaseSummary | null }) {
+async function FeaturedRelease({ release }: { release: ReleaseSummary | null }) {
+  const t = await getTranslations("pages");
+
   if (!release) {
     return (
       <SectionCard>
         <div className="section-inner">
           <div className="section-header">
-            <h2>Featured Release</h2>
+            <h2>{t("releases.releaseDetails")}</h2>
           </div>
-          <p className="text-sm text-gray-500">A featured release will appear here soon.</p>
+          <p className="text-sm text-gray-500">{t("releases.featuredComingSoon")}</p>
         </div>
       </SectionCard>
     );

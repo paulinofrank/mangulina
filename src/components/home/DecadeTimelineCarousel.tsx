@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Music2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import SectionCard from "@/components/layout/SectionCard";
@@ -19,6 +20,7 @@ export default function DecadeTimelineCarousel({
   ctaHref = "/archive",
   ctaLabel = "Archive",
 }: DecadeTimelineCarouselProps) {
+  const t = useTranslations("components");
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isOverflowing, setIsOverflowing] = useState(false);
 
@@ -59,8 +61,8 @@ export default function DecadeTimelineCarousel({
       <div className="section-inner">
         <div className="section-header">
           <h2>
-            <span className="sm:hidden">Through the Decades</span>
-            <span className="hidden sm:inline">Dominican Music Through the Decades</span>
+            <span className="sm:hidden">{t("throughTheDecades")}</span>
+            <span className="hidden sm:inline">{t("domincanMusicDecades")}</span>
           </h2>
           <Link
             href={ctaHref}

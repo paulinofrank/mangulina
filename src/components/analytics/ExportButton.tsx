@@ -1,6 +1,7 @@
 "use client";
 
 import { Download } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface ExportData {
   title: string;
@@ -16,6 +17,8 @@ interface ExportButtonProps {
  * Combines multiple data sources into a single CSV file
  */
 export function ExportButton({ exports }: ExportButtonProps) {
+  const t = useTranslations("components");
+
   const handleExport = () => {
     if (exports.length === 0) return;
 
@@ -27,7 +30,7 @@ export function ExportButton({ exports }: ExportButtonProps) {
       csvParts.push(`\n${dataset.title}`);
 
       if (dataset.data.length === 0) {
-        csvParts.push("No data available\n");
+        csvParts.push(`${t("noData")}\n`);
         return;
       }
 
@@ -70,7 +73,7 @@ export function ExportButton({ exports }: ExportButtonProps) {
       className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-gray-600 shadow-sm transition hover:border-[#CE1126] hover:text-[#CE1126]"
     >
       <Download className="h-4 w-4" />
-      Export CSV
+      {t("exportCSV")}
     </button>
   );
 }

@@ -241,6 +241,53 @@
     "source": "Fuente",
     "logo": "Logo de Mangulina"
   },
+  "pages": {
+    "login": {
+      "backToHomepage": "Volver a Inicio"
+    },
+    "signup": {
+      "backToHomepage": "Volver a Inicio"
+    },
+    "releases": {
+      "featuredComingSoon": "Un lanzamiento destacado aparecerá aquí pronto.",
+      "releaseDetails": "Detalles del Lanzamiento",
+      "trackListing": "Lista de Pistas",
+      "noTracksAvailable": "No hay pistas disponibles para este lanzamiento aún."
+    },
+    "privacyPolicy": {
+      "lastUpdated": "Última Actualización: Junio 2026"
+    },
+    "termsOfUse": {
+      "lastUpdated": "Última Actualización: Junio 2026"
+    }
+  },
+  "table": {
+    "headers": {
+      "song": "Canción",
+      "artist": "Artista",
+      "genre": "Género",
+      "duration": "Duración",
+      "views": "Vistas"
+    }
+  },
+  "components": {
+    "noData": "No hay datos disponibles",
+    "noArtistsFound": "No se encontraron artistas.",
+    "noPreview": "Sin vista previa",
+    "playingInMangulina": "Reproduciendo dentro de Mangulina",
+    "exportCSV": "Exportar CSV",
+    "throughTheDecades": "A Través de las Décadas",
+    "domincanMusicDecades": "Música Dominicana A Través de las Décadas",
+    "featuredArtist": "Artista Destacado",
+    "from": "De:",
+    "musicalGenres": "Géneros Musicales:",
+    "loadingArtists": "Cargando artistas...",
+    "selectFeaturedArtist": "-- Selecciona Artista Destacado --",
+    "updating": "Actualizando...",
+    "updateSpotlight": "Actualizar Destacado",
+    "releaseTypeCounts": "Los recuentos de tipo de lanzamiento aún no están disponibles.",
+    "decadeCounts": "Los recuentos de décadas aún no están disponibles."
+  },
   "admin": {
     "tools": {
       "analytics": {

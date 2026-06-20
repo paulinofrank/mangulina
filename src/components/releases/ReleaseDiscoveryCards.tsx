@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import type { ReleaseDecadeCount, ReleaseTypeCount } from "@/lib/releaseApi";
 
 type ReleaseTypeCardsProps = {
@@ -34,8 +35,10 @@ function CountCard({
 }
 
 export function ReleaseTypeCards({ types }: ReleaseTypeCardsProps) {
+  const t = useTranslations("components");
+
   if (types.length === 0) {
-    return <p className="text-sm text-gray-500">Release type counts are not available yet.</p>;
+    return <p className="text-sm text-gray-500">{t("releaseTypeCounts")}</p>;
   }
 
   return (
@@ -54,8 +57,10 @@ export function ReleaseTypeCards({ types }: ReleaseTypeCardsProps) {
 }
 
 export function ReleaseDecadeCards({ decades }: ReleaseDecadeCardsProps) {
+  const t = useTranslations("components");
+
   if (decades.length === 0) {
-    return <p className="text-sm text-gray-500">Decade counts are not available yet.</p>;
+    return <p className="text-sm text-gray-500">{t("decadeCounts")}</p>;
   }
 
   return (

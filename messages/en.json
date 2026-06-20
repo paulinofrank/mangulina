@@ -241,6 +241,53 @@
     "source": "Source",
     "logo": "Mangulina logo"
   },
+  "pages": {
+    "login": {
+      "backToHomepage": "Back to Homepage"
+    },
+    "signup": {
+      "backToHomepage": "Back to Homepage"
+    },
+    "releases": {
+      "featuredComingSoon": "A featured release will appear here soon.",
+      "releaseDetails": "Release Details",
+      "trackListing": "Track Listing",
+      "noTracksAvailable": "No tracks available for this release yet."
+    },
+    "privacyPolicy": {
+      "lastUpdated": "Last Updated: June 2026"
+    },
+    "termsOfUse": {
+      "lastUpdated": "Last Updated: June 2026"
+    }
+  },
+  "table": {
+    "headers": {
+      "song": "Song",
+      "artist": "Artist",
+      "genre": "Genre",
+      "duration": "Duration",
+      "views": "Views"
+    }
+  },
+  "components": {
+    "noData": "No data available",
+    "noArtistsFound": "No artists found.",
+    "noPreview": "No preview",
+    "playingInMangulina": "Playing inside Mangulina",
+    "exportCSV": "Export CSV",
+    "throughTheDecades": "Through the Decades",
+    "domincanMusicDecades": "Dominican Music Through the Decades",
+    "featuredArtist": "Featured Artist",
+    "from": "From:",
+    "musicalGenres": "Musical Genres:",
+    "loadingArtists": "Loading artists...",
+    "selectFeaturedArtist": "-- Select Featured Artist --",
+    "updating": "Updating...",
+    "updateSpotlight": "Update Spotlight",
+    "releaseTypeCounts": "Release type counts are not available yet.",
+    "decadeCounts": "Decade counts are not available yet."
+  },
   "admin": {
     "tools": {
       "analytics": {

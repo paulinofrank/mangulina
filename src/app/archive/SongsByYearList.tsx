@@ -2,6 +2,7 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 
 export type ArchiveSongRow = {
@@ -29,16 +30,18 @@ export default function SongsByYearList({
   loadingMore?: boolean;
   onShowMore?: () => void;
 }) {
+  const t = useTranslations("table");
+
   return (
     <div className="mt-4 rounded-xl border border-black/5 bg-white/70 p-2.5 md:mt-8 md:p-4">
       {/* Header */}
       <div className="hidden grid-cols-[3rem_minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,1fr)_5rem_6rem] gap-3 border-b pb-2 text-xs font-semibold uppercase tracking-wider text-gray-500 md:grid">
         <span aria-hidden="true" />
-        <span>Song</span>
-        <span>Artist</span>
-        <span>Genre</span>
-        <span className="text-right">Duration</span>
-        <span className="text-right">Views</span>
+        <span>{t("headers.song")}</span>
+        <span>{t("headers.artist")}</span>
+        <span>{t("headers.genre")}</span>
+        <span className="text-right">{t("headers.duration")}</span>
+        <span className="text-right">{t("headers.views")}</span>
       </div>
 
       {/* Rows */}
