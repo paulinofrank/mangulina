@@ -630,7 +630,7 @@ export default function AdminPlatformLinksPage() {
                   value={recSearch}
                   onChange={(e) => setRecSearch(e.target.value)}
                   onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); void searchRecordings(); } }}
-                  placeholder="Type a recording title…"
+                  placeholder={t("form.placeholders.recordingTitle")}
                   className={inputCls}
                 />
               </Field>

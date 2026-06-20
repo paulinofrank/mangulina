@@ -833,7 +833,7 @@ export default function AdminAwardsPage() {
               <input
                 value={artistSearch}
                 onChange={(event) => setArtistSearch(event.target.value)}
-                placeholder="Search artists..."
+                placeholder={t("admin.awards.searchArtistsPlaceholder")}
                 className={inputClass}
               />
 
