@@ -79,20 +79,20 @@ const emptyReleaseForm: ReleaseForm = {
 };
 
 const releaseTypeOptions = [
-  { value: "Album", label: "Album" },
-  { value: "EP", label: "EP" },
-  { value: "Single", label: "Single" },
-  { value: "Compilation", label: "Compilation" },
-  { value: "Live", label: "Live" },
-  { value: "Other", label: "Other" },
+  { value: "Album", translationKey: "admin.discography.typeAlbum" },
+  { value: "EP", translationKey: "admin.discography.typeEp" },
+  { value: "Single", translationKey: "admin.discography.typeSingle" },
+  { value: "Compilation", translationKey: "admin.discography.typeCompilation" },
+  { value: "Live", translationKey: "admin.discography.typeLive" },
+  { value: "Other", translationKey: "admin.discography.typeOther" },
 ];
 
 const releaseStatusOptions = [
-  { value: "Official", label: "Official" },
-  { value: "Promotion", label: "Promotion" },
-  { value: "Bootleg", label: "Bootleg" },
-  { value: "Pseudo-Release", label: "Pseudo-Release" },
-  { value: "Withdrawn", label: "Withdrawn" },
+  { value: "Official", translationKey: "admin.discography.statusOfficial" },
+  { value: "Promotion", translationKey: "admin.discography.statusPromotion" },
+  { value: "Bootleg", translationKey: "admin.discography.statusBootleg" },
+  { value: "Pseudo-Release", translationKey: "admin.discography.statusPseudoRelease" },
+  { value: "Withdrawn", translationKey: "admin.discography.statusWithdrawn" },
 ];
 
 function nullable(value: string | null | undefined) {
@@ -388,8 +388,8 @@ export default function AdminDiscographyPage() {
                         {release.title}
                       </p>
                       <p className="mt-1 text-xs text-gray-400">
-                        {release.release_year ?? release.year ?? "No year"} -{" "}
-                        {release.type ?? "Album"} - {release.track_count} tracks
+                        {release.release_year ?? release.year ?? t("admin.discography.noYear")} -{" "}
+                        {release.type ?? t("admin.discography.typeAlbum")} - {release.track_count} {t("common.tracks")}
                       </p>
                     </button>
                   ))
@@ -448,7 +448,7 @@ export default function AdminDiscographyPage() {
                   >
                     {releaseTypeOptions.map((option) => (
                       <option key={option.value} value={option.value}>
-                        {option.label}
+                        {t(option.translationKey)}
                       </option>
                     ))}
                   </select>
@@ -491,7 +491,7 @@ export default function AdminDiscographyPage() {
                   >
                     {releaseStatusOptions.map((option) => (
                       <option key={option.value} value={option.value}>
-                        {option.label}
+                        {t(option.translationKey)}
                       </option>
                     ))}
                   </select>

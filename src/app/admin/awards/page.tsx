@@ -875,10 +875,10 @@ export default function AdminAwardsPage() {
                     >
                       <div className="flex items-start justify-between gap-3">
                         <p className="font-medium text-[#002D62]">
-                          {artistAward.year ?? "No year"} · {award?.name ?? "Award"}
+                          {artistAward.year ?? t("admin.awards.noYear")} · {award?.name ?? t("admin.awards.defaultAwardName")}
                         </p>
                         <span className="rounded-full bg-gray-100 px-2 py-1 text-[10px] uppercase tracking-[0.12em] text-gray-600">
-                          {artistAward.won ? "Won" : "Nominated"}
+                          {artistAward.won ? t("admin.awards.statusWon") : t("admin.awards.statusNominated")}
                         </span>
                       </div>
                       <p className="mt-1 text-xs text-gray-500">
