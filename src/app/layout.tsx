@@ -58,9 +58,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const headersList = await headers();
-  const localeFromHeader = (headersList.get('x-locale') || 'en') as 'en' | 'es';
-  const locale = localeFromHeader;
-
+  const locale = (headersList.get('x-locale') || 'en') as 'en' | 'es';
   const messages = locale === 'es' ? esMessages : enMessages;
 
   return (
