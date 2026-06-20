@@ -1,0 +1,47 @@
+key,en,es
+language.modal.title,Choose Your Language,Selecciona Tu Idioma
+language.modal.description,Mangulina is available in English and Spanish.,Mangulina está disponible en inglés y español.
+language.modal.english,English,English
+language.modal.spanish,Español,Español
+language.selector.label,Language,Idioma
+language.selector.english,English,English
+language.selector.spanish,Español,Español
+language.selector.switchTo,Switch to {{language}},Cambiar a {{language}}
+navigation.home,Home,Inicio
+navigation.singers,Singers,Cantantes
+navigation.christian,Christian,Cristiana
+navigation.discover,Discover,Descubrir
+navigation.releases,Releases,Lanzamientos
+navigation.about,About,Acerca de
+navigation.contact,Contact,Contacto
+navigation.contributors,Contributors,Colaboradores
+navigation.privacyPolicy,Privacy Policy,Política de Privacidad
+navigation.termsOfUse,Terms of Use,Términos de Uso
+navigation.copyrights,Copyrights & DMCA,Derechos de Autor y DMCA
+navigation.goBack,Go Back,Atrás
+navigation.goToTop,Go to top,Ir al principio
+navigation.seeAll,See All,Ver Todos
+search.placeholder,Search artists, songs...,Buscar artistas, canciones...
+search.label,Site search,Búsqueda del sitio
+footer.tagline,The Dominican Music Database,La Base de Datos de Música Dominicana
+footer.copyright,© 2026 Mangulina. All Rights Reserved.,© 2026 Mangulina. Todos los Derechos Reservados.
+footer.social.facebook,Facebook,Facebook
+footer.social.instagram,Instagram,Instagram
+footer.social.youtube,YouTube,YouTube
+footer.social.tiktok,TikTok,TikTok
+sections.topSingers,Top Singers by Views,Cantantes Principales por Vistas
+sections.trendingSongs,Trending Songs,Canciones Tendencia
+sections.browseByGenre,Browse by Genre,Explorar por Género
+sections.browseByRegion,Browse by Region,Explorar por Región
+sections.mostAwarded,Most Awarded Artists,Artistas Más Galardonados
+sections.composers,Prominent Composers,Compositores Destacados
+sections.djs,Top DJs,DJs Principales
+sections.birthdays,Birthdays,Cumpleaños
+sections.christianArtists,Top Christian Artists,Artistas Cristianos Principales
+sections.classicalArtists,Classical & Instrumental Artists,Artistas Clásicos e Instrumentales
+sections.risingStars,Top Rising Stars,Estrellas Emergentes Principales
+sections.legends,Top Legends,Leyendas Principales
+common.loading,Loading...,Cargando...
+common.error,An error occurred,Ocurrió un error
+common.noResults,No results found,No se encontraron resultados
+common.views,views,vistas

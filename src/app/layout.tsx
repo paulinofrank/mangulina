@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Finlandica, Inter, Instrument_Serif } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { NextIntlClientProvider } from "next-intl";
+import enMessages from "../../messages/en.json";
+import esMessages from "../../messages/es.json";
+import { getLocale } from "next-intl/server";
 import "./globals.css";
 
 import GradientBackground from "@/components/atoms/GradientBackground";
@@ -48,39 +52,44 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const locale = (await getLocale()) as 'en' | 'es' || 'en';
+  const messages = locale === 'es' ? esMessages : enMessages;
+
   return (
     <html
-      lang="en"
+      lang={locale}
       className={`${finlandica.variable} ${inter.variable} ${instrumentSerif.variable}`}
     >
       <body className={`${finlandica.className} antialiased min-h-screen`}>
-        <GradientBackground />
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <GradientBackground />
 
-        <div
-          className="fixed inset-0 -z-20 pointer-events-none"
-          style={{
-            background: `
-              linear-gradient(135deg, rgba(0, 45, 98, 0.08) 0%, transparent 35%),
-              linear-gradient(45deg, transparent 65%, rgba(206, 17, 38, 0.08) 100%),
-              radial-gradient(ellipse at 50% 0%, rgba(0, 45, 98, 0.12) 0%, transparent 50%),
-              radial-gradient(ellipse at 100% 100%, rgba(206, 17, 38, 0.12) 0%, transparent 50%)
-            `,
-          }}
-        />
+          <div
+            className="fixed inset-0 -z-20 pointer-events-none"
+            style={{
+              background: `
+                linear-gradient(135deg, rgba(0, 45, 98, 0.08) 0%, transparent 35%),
+                linear-gradient(45deg, transparent 65%, rgba(206, 17, 38, 0.08) 100%),
+                radial-gradient(ellipse at 50% 0%, rgba(0, 45, 98, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse at 100% 100%, rgba(206, 17, 38, 0.12) 0%, transparent 50%)
+              `,
+            }}
+          />
 
-        {/* IMPORTANT: no padding wrapper here */}
-        <RoutePageView />
-        {children}
+          {/* IMPORTANT: no padding wrapper here */}
+          <RoutePageView />
+          {children}
 
-        <SiteChrome />
+          <SiteChrome />
 
-        {process.env.NODE_ENV === "production" && <Analytics />}
-        {process.env.NODE_ENV === "production" && <SpeedInsights />}
+          {process.env.NODE_ENV === "production" && <Analytics />}
+          {process.env.NODE_ENV === "production" && <SpeedInsights />}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

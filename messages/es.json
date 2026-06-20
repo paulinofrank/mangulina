@@ -1,0 +1,66 @@
+{
+  "language": {
+    "modal": {
+      "title": "Selecciona Tu Idioma",
+      "description": "Mangulina está disponible en inglés y español.",
+      "english": "English",
+      "spanish": "Español"
+    },
+    "selector": {
+      "label": "Idioma",
+      "english": "English",
+      "spanish": "Español",
+      "switchTo": "Cambiar a {{language}}"
+    }
+  },
+  "navigation": {
+    "home": "Inicio",
+    "singers": "Cantantes",
+    "christian": "Cristiana",
+    "discover": "Descubrir",
+    "releases": "Lanzamientos",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "contributors": "Colaboradores",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfUse": "Términos de Uso",
+    "copyrights": "Derechos de Autor y DMCA",
+    "goBack": "Atrás",
+    "goToTop": "Ir al principio",
+    "seeAll": "Ver Todos"
+  },
+  "search": {
+    "placeholder": "Buscar artistas, canciones...",
+    "label": "Búsqueda del sitio"
+  },
+  "footer": {
+    "tagline": "La Base de Datos de Música Dominicana",
+    "copyright": "© 2026 Mangulina. Todos los Derechos Reservados.",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "tiktok": "TikTok"
+    }
+  },
+  "sections": {
+    "topSingers": "Cantantes Principales por Vistas",
+    "trendingSongs": "Canciones Tendencia",
+    "browseByGenre": "Explorar por Género",
+    "browseByRegion": "Explorar por Región",
+    "mostAwarded": "Artistas Más Galardonados",
+    "composers": "Compositores Destacados",
+    "djs": "DJs Principales",
+    "birthdays": "Cumpleaños",
+    "christianArtists": "Artistas Cristianos Principales",
+    "classicalArtists": "Artistas Clásicos e Instrumentales",
+    "risingStars": "Estrellas Emergentes Principales",
+    "legends": "Leyendas Principales"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "noResults": "No se encontraron resultados",
+    "views": "vistas"
+  }
+}

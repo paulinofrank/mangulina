@@ -30,6 +30,8 @@
   },
   "include": [
     "next-env.d.ts",
+    "middleware.ts",
+    "i18n.config.ts",
     "src/**/*.ts",
     "src/**/*.tsx",
     ".next/types/**/*.ts",

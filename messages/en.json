@@ -1,0 +1,66 @@
+{
+  "language": {
+    "modal": {
+      "title": "Choose Your Language",
+      "description": "Mangulina is available in English and Spanish.",
+      "english": "English",
+      "spanish": "Español"
+    },
+    "selector": {
+      "label": "Language",
+      "english": "English",
+      "spanish": "Español",
+      "switchTo": "Switch to {{language}}"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "singers": "Singers",
+    "christian": "Christian",
+    "discover": "Discover",
+    "releases": "Releases",
+    "about": "About",
+    "contact": "Contact",
+    "contributors": "Contributors",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "copyrights": "Copyrights & DMCA",
+    "goBack": "Go Back",
+    "goToTop": "Go to top",
+    "seeAll": "See All"
+  },
+  "search": {
+    "placeholder": "Search artists, songs...",
+    "label": "Site search"
+  },
+  "footer": {
+    "tagline": "The Dominican Music Database",
+    "copyright": "© 2026 Mangulina. All Rights Reserved.",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "tiktok": "TikTok"
+    }
+  },
+  "sections": {
+    "topSingers": "Top Singers by Views",
+    "trendingSongs": "Trending Songs",
+    "browseByGenre": "Browse by Genre",
+    "browseByRegion": "Browse by Region",
+    "mostAwarded": "Most Awarded Artists",
+    "composers": "Prominent Composers",
+    "djs": "Top DJs",
+    "birthdays": "Birthdays",
+    "christianArtists": "Top Christian Artists",
+    "classicalArtists": "Classical & Instrumental Artists",
+    "risingStars": "Top Rising Stars",
+    "legends": "Top Legends"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "noResults": "No results found",
+    "views": "views"
+  }
+}

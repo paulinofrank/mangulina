@@ -2,39 +2,48 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
+  const t = useTranslations('navigation');
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Singers', href: '/artists' },
-    { name: 'Christian', href: '/christian' },
-    { name: 'Discover', href: '/discover'},
+    { key: 'home', href: '/' },
+    { key: 'singers', href: '/artists' },
+    { key: 'christian', href: '/christian' },
+    { key: 'discover', href: '/discover'},
   ];
+
+  // Extract clean path without locale prefix for comparison
+  const getCleanPath = (path: string) => {
+    return path.replace(/^\/es/, '') || '/';
+  };
+
+  const cleanPathname = getCleanPath(pathname);
 
   return (
     <nav
       className="fixed bottom-4 left-1/2 z-100 w-[calc(100%-2rem)] max-w-fit -translate-x-1/2 pb-[env(safe-area-inset-bottom)] sm:bottom-6"
     >
       <div className="flex items-center justify-center gap-3 rounded-full border border-[#002D62]/10 bg-white/80 px-4 py-2.5 shadow-[0_4px_18px_rgba(0,45,98,0.22)] backdrop-blur-xl sm:gap-4 sm:px-5">
-        
+
         {/* Back Button */}
-        <button 
+        <button
           onClick={() => router.back()}
           className="flex items-center justify-center w-6 h-6 rounded-full hover:bg-black/5 transition-colors group"
-          aria-label="Go Back"
+          aria-label={t('goBack')}
         >
-          <svg 
-            width="14" 
-            height="14" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="2" 
-            strokeLinecap="round" 
-            strokeLinejoin="round" 
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="text-gray-400 group-hover:text-[#CE1126] transition-colors"
           >
             <path d="M19 12H5M12 19l-7-7 7-7"/>
@@ -47,7 +56,7 @@ export default function Navbar() {
         {/* Navigation Links */}
         <div className="flex min-w-0 gap-3 sm:gap-5">
           {navLinks.map((link) => {
-            const isActive = pathname === link.href;
+            const isActive = cleanPathname === link.href;
             return (
               <Link
                 key={link.href}
@@ -56,7 +65,7 @@ export default function Navbar() {
                   isActive ? 'text-[#CE1126]' : 'text-gray-700 hover:text-[#CE1126]'
                 }`}
               >
-                {link.name}
+                {t(link.key as any)}
               </Link>
             );
           })}
@@ -70,7 +79,7 @@ export default function Navbar() {
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="group flex h-6 w-6 items-center justify-center rounded-full transition-colors hover:bg-black/5"
-          aria-label="Go to top"
+          aria-label={t('goToTop')}
         >
           <svg
             width="14"
