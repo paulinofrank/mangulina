@@ -10,7 +10,7 @@
       "label": "Idioma",
       "english": "English",
       "spanish": "Español",
-      "switchTo": "Cambiar a {{language}}"
+      "switchTo": "Cambiar a {language}"
     }
   },
   "navigation": {
@@ -136,8 +136,8 @@
     "primary": "Principal"
   },
   "status": {
-    "deceased": "Fallecido en {{year}}",
-    "yearsOld": "{{age}} años de edad"
+    "deceased": "Fallecido en {year}",
+    "yearsOld": "{age} años"
   },
   "genres": {
     "merengue": "Merengue",
@@ -216,11 +216,11 @@
     "previous": "Anterior",
     "next": "Siguiente",
     "last": "Última",
-    "showing": "Mostrando {{count}} de {{total}} artistas"
+    "showing": "Mostrando {count} de {total} artistas"
   },
   "buttons": {
     "apply": "Aplicar",
-    "filters": "Filtros ({{count}})",
+    "filters": "Filtros ({count})",
     "clearAll": "Limpiar todo",
     "clear": "Limpiar",
     "retry": "Reintentar"
@@ -405,7 +405,7 @@
     "analytics": {
       "noActivityYet": "Aún no hay actividad registrada.",
       "unknownError": "Error desconocido",
-      "failedToLoad": "Error al cargar datos de análisis: {{error}}",
+      "failedToLoad": "Error al cargar datos de análisis: {error}",
       "failedToLoadGeneral": "Error al cargar datos de análisis. Por favor, inténtalo de nuevo.",
       "failedToLoadPage": "Error al cargar datos de análisis. Por favor, actualiza la página.",
       "refreshing": "Actualizando...",

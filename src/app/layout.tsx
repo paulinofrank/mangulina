@@ -64,7 +64,7 @@ export default async function RootLayout({
       className={`${finlandica.variable} ${inter.variable} ${instrumentSerif.variable}`}
     >
       <body className={`${finlandica.className} antialiased min-h-screen`}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <GradientBackground />
 
           <div

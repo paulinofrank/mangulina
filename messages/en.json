@@ -10,7 +10,7 @@
       "label": "Language",
       "english": "English",
       "spanish": "Español",
-      "switchTo": "Switch to {{language}}"
+      "switchTo": "Switch to {language}"
     }
   },
   "navigation": {
@@ -136,8 +136,8 @@
     "primary": "Primary"
   },
   "status": {
-    "deceased": "Deceased on {{year}}",
-    "yearsOld": "{{age}} years old"
+    "deceased": "Deceased on {year}",
+    "yearsOld": "{age} years old"
   },
   "genres": {
     "merengue": "Merengue",
@@ -216,11 +216,11 @@
     "previous": "Previous",
     "next": "Next",
     "last": "Last",
-    "showing": "Showing {{count}} of {{total}} artists"
+    "showing": "Showing {count} of {total} artists"
   },
   "buttons": {
     "apply": "Apply",
-    "filters": "Filters ({{count}})",
+    "filters": "Filters ({count})",
     "clearAll": "Clear all",
     "clear": "Clear",
     "retry": "Retry"
@@ -405,7 +405,7 @@
     "analytics": {
       "noActivityYet": "No activity recorded yet.",
       "unknownError": "Unknown error",
-      "failedToLoad": "Failed to load analytics data: {{error}}",
+      "failedToLoad": "Failed to load analytics data: {error}",
       "failedToLoadGeneral": "Failed to load analytics data. Please try again.",
       "failedToLoadPage": "Failed to load analytics data. Please try refreshing the page.",
       "refreshing": "Refreshing...",

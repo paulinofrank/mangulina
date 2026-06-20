@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
+import { getPathForLocale, type AppLocale } from "@/i18n/pathname";
+import { saveLocalePreference } from "@/i18n/preference";
 
 export default function LanguageSelectionModal() {
   const t = useTranslations("language.modal");
@@ -22,20 +24,11 @@ export default function LanguageSelectionModal() {
     }
   }, []);
 
-  const handleLanguageSelect = (locale: "en" | "es") => {
-    // Set cookie for 365 days
-    const date = new Date();
-    date.setTime(date.getTime() + 365 * 24 * 60 * 60 * 1000);
-    document.cookie = `mangulina_locale=${locale}; expires=${date.toUTCString()}; path=/`;
+  const handleLanguageSelect = (locale: AppLocale) => {
+    saveLocalePreference(locale);
+    const newPath = getPathForLocale(pathname, locale);
 
-    // Redirect to appropriate locale
-    if (locale === "en") {
-      // Remove /es prefix if exists
-      const newPath = pathname.replace(/^\/es/, "") || "/";
-      router.push(newPath);
-    } else {
-      // Add /es prefix if not exists
-      const newPath = pathname.startsWith("/es") ? pathname : `/es${pathname}`;
+    if (newPath !== pathname) {
       router.push(newPath);
     }
 

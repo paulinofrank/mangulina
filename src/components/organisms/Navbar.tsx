@@ -3,11 +3,17 @@
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+import {
+  addSpanishPrefix,
+  getLocaleFromPathname,
+  removeSpanishPrefix,
+} from '@/i18n/pathname';
 
 export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations('navigation');
+  const locale = getLocaleFromPathname(pathname);
 
   const navLinks = [
     { key: 'home', href: '/' },
@@ -16,12 +22,7 @@ export default function Navbar() {
     { key: 'discover', href: '/discover'},
   ];
 
-  // Extract clean path without locale prefix for comparison
-  const getCleanPath = (path: string) => {
-    return path.replace(/^\/es/, '') || '/';
-  };
-
-  const cleanPathname = getCleanPath(pathname);
+  const cleanPathname = removeSpanishPrefix(pathname);
 
   return (
     <nav
@@ -60,7 +61,7 @@ export default function Navbar() {
             return (
               <Link
                 key={link.href}
-                href={link.href}
+                href={locale === 'es' ? addSpanishPrefix(link.href) : link.href}
                 className={`text-sm font-normal uppercase tracking-wider transition-colors ${
                   isActive ? 'text-[#CE1126]' : 'text-gray-700 hover:text-[#CE1126]'
                 }`}

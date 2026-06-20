@@ -73,7 +73,7 @@ function getLifeLabel(
   const birthday = parseBirthday(dob);
   if (!birthday) return null;
 
-  if (deathYear) return t("status.deceased", { year: deathYear });
+  if (deathYear) return t("deceased", { year: deathYear });
 
   const today = new Date();
   let age = today.getFullYear() - birthday.year;
@@ -82,7 +82,7 @@ function getLifeLabel(
     (today.getMonth() + 1 === birthday.month && today.getDate() >= birthday.day);
 
   if (!birthdayHasPassed) age -= 1;
-  return t("status.yearsOld", { age });
+  return t("yearsOld", { age });
 }
 
 export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProps) {

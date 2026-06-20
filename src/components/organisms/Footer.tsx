@@ -3,16 +3,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
+import { usePathname } from "next/navigation";
 import { FaFacebook, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa6";
+import {
+  addSpanishPrefix,
+  getAlternateLocalePath,
+  getLocaleFromPathname,
+} from "@/i18n/pathname";
+import { saveLocalePreference } from "@/i18n/preference";
 
 export default function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("navigation");
-  const locale = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
+  const locale = getLocaleFromPathname(pathname);
+  const alternateLocale = locale === "en" ? "es" : "en";
+  const alternateLocalePath = getAlternateLocalePath(pathname);
+  const localizeHref = (href: string) =>
+    locale === "es" ? addSpanishPrefix(href) : href;
 
   const SOCIAL_LINKS = [
     { icon: FaFacebook, key: "facebook", href: "https://facebook.com/MangulinaDo" },
@@ -20,26 +28,6 @@ export default function Footer() {
     { icon: FaYoutube, key: "youtube", href: "https://youtube.com/@MangulinaDo" },
     { icon: FaTiktok, key: "tiktok", href: "https://tiktok.com/@MangulinaDo" },
   ];
-
-  const handleLanguageSwitch = () => {
-    const newLocale = locale === "en" ? "es" : "en";
-    // Set cookie
-    const date = new Date();
-    date.setTime(date.getTime() + 365 * 24 * 60 * 60 * 1000);
-    document.cookie = `mangulina_locale=${newLocale}; expires=${date.toUTCString()}; path=/`;
-
-    // Build new path
-    let newPath = pathname;
-    if (newLocale === "en") {
-      newPath = pathname.replace(/^\/es/, "") || "/";
-    } else {
-      if (!pathname.startsWith("/es")) {
-        newPath = `/es${pathname}`;
-      }
-    }
-
-    router.push(newPath);
-  };
 
   return (
     <footer className="mt-2 border-t border-black/10 bg-white/50">
@@ -66,33 +54,34 @@ export default function Footer() {
           <nav aria-label="Footer navigation" className="text-sm font-normal text-gray-600 sm:text-base">
             <div className="grid grid-cols-2 gap-x-6 sm:hidden">
               <div className="flex flex-col gap-3 pl-[5ch]">
-                <Link href="/discover" className="transition-colors hover:text-[#002D62]">{nav("discover")}</Link>
-                <button
-                  onClick={handleLanguageSwitch}
+                <Link href={localizeHref("/discover")} className="transition-colors hover:text-[#002D62]">{nav("discover")}</Link>
+                <Link
+                  href={alternateLocalePath}
+                  onClick={() => saveLocalePreference(alternateLocale)}
                   className="text-left transition-colors hover:text-[#002D62]"
                 >
                   {locale === "en" ? t("languageSwitchToSpanish") : t("languageSwitchToEnglish")}
-                </button>
-                <Link href="/about" className="transition-colors hover:text-[#002D62]">{nav("about")}</Link>
-                <Link href="/contact" className="transition-colors hover:text-[#002D62]">{nav("contact")}</Link>
+                </Link>
+                <Link href={localizeHref("/about")} className="transition-colors hover:text-[#002D62]">{nav("about")}</Link>
+                <Link href={localizeHref("/contact")} className="transition-colors hover:text-[#002D62]">{nav("contact")}</Link>
               </div>
               <div className="flex flex-col gap-3">
-                <Link href="/contributors" className="transition-colors hover:text-[#002D62]">{nav("contributors")}</Link>
-                <Link href="/terms-of-use" className="transition-colors hover:text-[#002D62]">{nav("termsOfUse")}</Link>
-                <Link href="/privacy-policy" className="transition-colors hover:text-[#002D62]">{nav("privacyPolicy")}</Link>
-                <Link href="/dmca" className="transition-colors hover:text-[#002D62]">{nav("copyrights")}</Link>
+                <Link href={localizeHref("/contributors")} className="transition-colors hover:text-[#002D62]">{nav("contributors")}</Link>
+                <Link href={localizeHref("/terms-of-use")} className="transition-colors hover:text-[#002D62]">{nav("termsOfUse")}</Link>
+                <Link href={localizeHref("/privacy-policy")} className="transition-colors hover:text-[#002D62]">{nav("privacyPolicy")}</Link>
+                <Link href={localizeHref("/dmca")} className="transition-colors hover:text-[#002D62]">{nav("copyrights")}</Link>
               </div>
             </div>
 
             <div className="hidden sm:flex flex-wrap justify-center gap-x-6 gap-y-2">
-              <Link href="/discover" className="transition-colors hover:text-[#002D62]">{nav("discover")}</Link>
-              <Link href="/releases" className="transition-colors hover:text-[#002D62]">{nav("releases")}</Link>
-              <Link href="/about" className="transition-colors hover:text-[#002D62]">{nav("about")}</Link>
-              <Link href="/contact" className="transition-colors hover:text-[#002D62]">{nav("contact")}</Link>
-              <Link href="/contributors" className="transition-colors hover:text-[#002D62]">{nav("contributors")}</Link>
-              <Link href="/privacy-policy" className="transition-colors hover:text-[#002D62]">{nav("privacyPolicy")}</Link>
-              <Link href="/terms-of-use" className="transition-colors hover:text-[#002D62]">{nav("termsOfUse")}</Link>
-              <Link href="/dmca" className="transition-colors hover:text-[#002D62]">{nav("copyrights")}</Link>
+              <Link href={localizeHref("/discover")} className="transition-colors hover:text-[#002D62]">{nav("discover")}</Link>
+              <Link href={localizeHref("/releases")} className="transition-colors hover:text-[#002D62]">{nav("releases")}</Link>
+              <Link href={localizeHref("/about")} className="transition-colors hover:text-[#002D62]">{nav("about")}</Link>
+              <Link href={localizeHref("/contact")} className="transition-colors hover:text-[#002D62]">{nav("contact")}</Link>
+              <Link href={localizeHref("/contributors")} className="transition-colors hover:text-[#002D62]">{nav("contributors")}</Link>
+              <Link href={localizeHref("/privacy-policy")} className="transition-colors hover:text-[#002D62]">{nav("privacyPolicy")}</Link>
+              <Link href={localizeHref("/terms-of-use")} className="transition-colors hover:text-[#002D62]">{nav("termsOfUse")}</Link>
+              <Link href={localizeHref("/dmca")} className="transition-colors hover:text-[#002D62]">{nav("copyrights")}</Link>
             </div>
           </nav>
 
@@ -100,7 +89,7 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-0 border-t border-black/10 pt-6 text-center">
             <div className="flex flex-col items-center gap-0">
               <div className="flex items-center gap-2">
-                <Image src="/icon.svg" alt="Mangulina logo" width={28} height={28} />
+                <Image src="/icon.svg" alt={t("logo")} width={28} height={28} />
                 <span className="text-lg font-medium tracking-tight text-[#002D62]">
                   Mangulina<span className="tm-fix">&trade;</span>
                 </span>

@@ -1,22 +1,28 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { Search } from "lucide-react";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { addSpanishPrefix, getLocaleFromPathname } from "@/i18n/pathname";
 
 export default function TopBanner() {
   const [searchTerm, setSearchTerm] = useState("");
   const router = useRouter();
+  const pathname = usePathname();
+  const locale = getLocaleFromPathname(pathname);
+  const homeHref = locale === "es" ? addSpanishPrefix("/") : "/";
+  const searchHref = locale === "es" ? addSpanishPrefix("/search") : "/search";
   const t = useTranslations("search");
+  const tFooter = useTranslations("footer");
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (!searchTerm.trim()) return;
-    router.push(`/search?q=${encodeURIComponent(searchTerm.trim())}`);
+    router.push(`${searchHref}?q=${encodeURIComponent(searchTerm.trim())}`);
   };
 
   return (
@@ -25,12 +31,12 @@ export default function TopBanner() {
 
         {/* Logo */}
         <Link
-          href="/"
+          href={homeHref}
           className="flex shrink-0 items-center gap-2.5 transition-opacity hover:opacity-90 min-w-0"
         >
           <Image
             src="/icon.svg"
-            alt="Mangulina logo"
+            alt={tFooter("logo")}
             width={36}
             height={36}
             className="h-8 w-8 shrink-0 object-contain"
@@ -41,7 +47,7 @@ export default function TopBanner() {
               Mangulina<span className="tm-fix">&trade;</span>
             </p>
             <p className="hidden sm:block truncate text-xs font-normal uppercase tracking-wider text-[#8B0000]">
-              The Dominican Music Database
+              {tFooter("tagline")}
             </p>
           </div>
         </Link>
