@@ -3,9 +3,7 @@ import { Finlandica, Inter, Instrument_Serif } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { NextIntlClientProvider } from "next-intl";
-import enMessages from "../../messages/en.json";
-import esMessages from "../../messages/es.json";
-import { headers } from "next/headers";
+import { getLocale, getMessages } from "next-intl/server";
 import "./globals.css";
 
 import GradientBackground from "@/components/atoms/GradientBackground";
@@ -57,9 +55,8 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const headersList = await headers();
-  const locale = (headersList.get('x-locale') || 'en') as 'en' | 'es';
-  const messages = locale === 'es' ? esMessages : enMessages;
+  const locale = await getLocale();
+  const messages = await getMessages();
 
   return (
     <html
@@ -67,7 +64,7 @@ export default async function RootLayout({
       className={`${finlandica.variable} ${inter.variable} ${instrumentSerif.variable}`}
     >
       <body className={`${finlandica.className} antialiased min-h-screen`}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider messages={messages}>
           <GradientBackground />
 
           <div
