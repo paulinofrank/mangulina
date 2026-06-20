@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { NextIntlClientProvider } from "next-intl";
 import enMessages from "../../messages/en.json";
 import esMessages from "../../messages/es.json";
-import { getLocale } from "next-intl/server";
+import { headers } from "next/headers";
 import "./globals.css";
 
 import GradientBackground from "@/components/atoms/GradientBackground";
@@ -57,7 +57,10 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const locale = (await getLocale()) as 'en' | 'es' || 'en';
+  const headersList = await headers();
+  const localeFromHeader = (headersList.get('x-locale') || 'en') as 'en' | 'es';
+  const locale = localeFromHeader;
+
   const messages = locale === 'es' ? esMessages : enMessages;
 
   return (
