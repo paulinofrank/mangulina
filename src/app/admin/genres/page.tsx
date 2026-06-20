@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { FormEvent } from "react";
+import { useTranslations } from "next-intl";
 
 type GenreRow = {
   id: string | number;
@@ -89,6 +90,7 @@ function sortGenres(genres: GenreRow[]) {
 }
 
 export default function AdminGenresPage() {
+  const t = useTranslations();
   const [genres, setGenres] = useState<GenreRow[]>([]);
   const [subgenres, setSubgenres] = useState<SubgenreRow[]>([]);
   const [subgenreForms, setSubgenreForms] = useState<Record<string, SubgenreForm>>({});
@@ -97,7 +99,7 @@ export default function AdminGenresPage() {
   const [newSubgenreForm, setNewSubgenreForm] = useState<SubgenreForm>(emptySubgenreForm);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState("Loading genres...");
+  const [status, setStatus] = useState(t("admin.status.loadingGenres"));
 
   const selectedGenre = useMemo(
     () => genres.find((genre) => String(genre.id) === String(selectedGenreId)) ?? null,
@@ -118,13 +120,13 @@ export default function AdminGenresPage() {
 
   const loadGenres = useCallback(async () => {
     setLoading(true);
-    setStatus("Loading genres...");
+    setStatus(t("admin.status.loadingGenres"));
 
     const response = await fetch("/api/admin/genres");
     const result = (await response.json()) as AdminGenresResponse;
 
     if (!response.ok || !result.ok) {
-      setStatus(`Error loading genres: ${result.error || response.statusText}`);
+      setStatus(`${t("admin.errors.loadingGenres").replace("{error}", result.error || response.statusText)}`);
       setLoading(false);
       return;
     }
@@ -132,7 +134,7 @@ export default function AdminGenresPage() {
     setGenres(sortGenres(result.genres ?? []));
     setStatus("");
     setLoading(false);
-  }, []);
+  }, [t]);
 
   const loadSubgenres = useCallback(
     async (genreId: string | number | null) => {
@@ -150,7 +152,7 @@ export default function AdminGenresPage() {
       const result = (await response.json()) as AdminSubgenresResponse;
 
       if (!response.ok || !result.ok) {
-        setStatus(`Error loading subgenres: ${result.error || response.statusText}`);
+        setStatus(`${t("admin.errors.loadingSubgenres").replace("{error}", result.error || response.statusText)}`);
         return;
       }
 
@@ -170,7 +172,7 @@ export default function AdminGenresPage() {
       );
       setStatus("");
     },
-    [],
+    [t],
   );
 
   useEffect(() => {
@@ -215,7 +217,7 @@ export default function AdminGenresPage() {
     event.preventDefault();
 
     if (!genreForm.name.trim()) {
-      setStatus("Genre name is required.");
+      setStatus(t("admin.genres.nameRequired"));
       return;
     }
 
@@ -230,7 +232,7 @@ export default function AdminGenresPage() {
     };
 
     setLoading(true);
-    setStatus("Saving genre...");
+    setStatus(t("admin.status.savingGenre"));
 
     const response = await fetch("/api/admin/genres", {
       method: "POST",
@@ -245,7 +247,7 @@ export default function AdminGenresPage() {
     const result = (await response.json()) as AdminWriteResponse;
 
     if (!response.ok || !result.ok) {
-      setStatus(`Error saving genre: ${result.error || response.statusText}`);
+      setStatus(`${t("admin.errors.savingGenre").replace("{error}", result.error || response.statusText)}`);
       setLoading(false);
       return;
     }
@@ -254,7 +256,7 @@ export default function AdminGenresPage() {
 
     await loadGenres();
     setSelectedGenreId(savedId ?? null);
-    setStatus("Genre saved.");
+    setStatus(t("admin.status.genreSaved"));
     setLoading(false);
   }
 
@@ -262,12 +264,12 @@ export default function AdminGenresPage() {
     const form = subgenreForms[String(subgenre.id)];
 
     if (!form?.name.trim()) {
-      setStatus("Subgenre name is required.");
+      setStatus(t("admin.genres.subgenreNameRequired"));
       return;
     }
 
     setLoading(true);
-    setStatus("Saving subgenre...");
+    setStatus(t("admin.status.savingSubgenre"));
 
     const response = await fetch("/api/admin/subgenres", {
       method: "POST",
@@ -285,13 +287,13 @@ export default function AdminGenresPage() {
     const result = (await response.json()) as AdminWriteResponse;
 
     if (!response.ok || !result.ok) {
-      setStatus(`Error saving subgenre: ${result.error || response.statusText}`);
+      setStatus(`${t("admin.errors.savingSubgenre").replace("{error}", result.error || response.statusText)}`);
       setLoading(false);
       return;
     }
 
     await loadSubgenres(selectedGenreId);
-    setStatus("Subgenre saved.");
+    setStatus(t("admin.status.subgenreSaved"));
     setLoading(false);
   }
 
@@ -299,12 +301,12 @@ export default function AdminGenresPage() {
     event.preventDefault();
 
     if (!selectedGenreId) {
-      setStatus("Select or save a genre before managing subgenres.");
+      setStatus(t("admin.genres.selectGenreFirst"));
       return;
     }
 
     if (!newSubgenreForm.name.trim()) {
-      setStatus("Subgenre name is required.");
+      setStatus(t("admin.genres.subgenreNameRequired"));
       return;
     }
 
@@ -328,14 +330,14 @@ export default function AdminGenresPage() {
     const result = (await response.json()) as AdminWriteResponse;
 
     if (!response.ok || !result.ok) {
-      setStatus(`Error adding subgenre: ${result.error || response.statusText}`);
+      setStatus(`${t("admin.errors.addingSubgenre").replace("{error}", result.error || response.statusText)}`);
       setLoading(false);
       return;
     }
 
     setNewSubgenreForm(emptySubgenreForm);
     await loadSubgenres(selectedGenreId);
-    setStatus("Subgenre saved.");
+    setStatus(t("admin.status.subgenreSaved"));
     setLoading(false);
   }
 
@@ -346,13 +348,13 @@ export default function AdminGenresPage() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#CE1126]">
-                Mangulina Admin
+                {t("admin.ui.branding")}
               </p>
               <h1 className="mt-3 text-3xl font-black uppercase tracking-tight text-[#002D62] sm:text-4xl">
-                Genre Pages Manager
+                {t("admin.genres.title")}
               </h1>
               <p className="mt-4 max-w-3xl text-sm leading-relaxed text-gray-600 sm:text-base">
-                Manage genres and subgenres used across Mangulina.
+                {t("admin.genres.description")}
               </p>
             </div>
 
@@ -360,7 +362,7 @@ export default function AdminGenresPage() {
               href="/admin"
               className="inline-flex w-fit items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-normal uppercase tracking-[0.18em] text-[#002D62] shadow-sm transition hover:border-[#CE1126] hover:text-[#CE1126]"
             >
-              Admin Portal
+              {t("admin.navigation.portal")}
             </Link>
           </div>
         </header>
@@ -375,21 +377,21 @@ export default function AdminGenresPage() {
           <aside className="rounded-xl border border-black/5 bg-white p-5 shadow-sm">
             <div className="mb-4 flex items-center justify-between gap-3">
               <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
-                Genres
+                {t("admin.genres.listHeading")}
               </h2>
               <button
                 type="button"
                 onClick={resetGenreForm}
                 className="rounded-lg border border-gray-200 bg-white px-3 py-2 text-xs font-medium uppercase tracking-[0.14em] text-[#002D62] transition hover:border-[#CE1126] hover:text-[#CE1126]"
               >
-                New
+                {t("admin.buttons.new")}
               </button>
             </div>
 
             <input
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-              placeholder="Search genres..."
+              placeholder={t("admin.genres.searchPlaceholder")}
               className={inputClass}
             />
 
@@ -412,19 +414,19 @@ export default function AdminGenresPage() {
                     </div>
                     {genre.is_home_featured && (
                       <span className="rounded-full bg-[#CE1126]/10 px-2 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-[#CE1126]">
-                        Home
+                        {t("admin.genres.homeFeatured")}
                       </span>
                     )}
                   </div>
                   <p className="mt-2 text-xs text-gray-500">
-                    Order: {genre.display_order ?? "None"}
+                    {t("admin.genres.displayOrder").replace("{order}", String(genre.display_order ?? "None"))}
                   </p>
                 </button>
               ))}
 
               {!filteredGenres.length && (
                 <p className="rounded-xl border border-dashed border-gray-200 px-4 py-6 text-center text-sm text-gray-500">
-                  No genres found.
+                  {t("admin.genres.noGenres")}
                 </p>
               )}
             </div>
@@ -434,7 +436,7 @@ export default function AdminGenresPage() {
             <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm">
               <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                 <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
-                  {selectedGenre ? "Edit Genre" : "Create Genre"}
+                  {selectedGenre ? t("admin.genres.editHeading") : t("admin.genres.createHeading")}
                 </h2>
                 <button
                   type="button"
@@ -446,13 +448,13 @@ export default function AdminGenresPage() {
                   }
                   className="w-fit rounded-lg border border-gray-200 bg-white px-3 py-2 text-xs font-medium uppercase tracking-[0.14em] text-[#002D62] transition hover:border-[#CE1126] hover:text-[#CE1126]"
                 >
-                  Generate Slug
+                  {t("admin.buttons.generateSlug")}
                 </button>
               </div>
 
               <form onSubmit={saveGenre} className="space-y-4">
                 <div className="grid gap-4 md:grid-cols-2">
-                  <Field label="Genre Name">
+                  <Field label={t("form.labels.genreName")}>
                     <input
                       value={genreForm.name}
                       onChange={(event) => updateGenreName(event.target.value)}
@@ -461,7 +463,7 @@ export default function AdminGenresPage() {
                     />
                   </Field>
 
-                  <Field label="Slug">
+                  <Field label={t("form.labels.slug")}>
                     <input
                       value={genreForm.slug}
                       onChange={(event) =>
@@ -475,7 +477,7 @@ export default function AdminGenresPage() {
                   </Field>
                 </div>
 
-                <Field label="Description">
+                <Field label={t("form.labels.description")}>
                   <textarea
                     value={genreForm.description}
                     onChange={(event) =>
@@ -489,7 +491,7 @@ export default function AdminGenresPage() {
                 </Field>
 
                 <div className="grid gap-4 md:grid-cols-[1fr_auto]">
-                  <Field label="Display Order">
+                  <Field label={t("form.labels.displayOrder")}>
                     <input
                       type="number"
                       value={genreForm.display_order}
@@ -515,7 +517,7 @@ export default function AdminGenresPage() {
                       }
                       className="h-4 w-4"
                     />
-                    Home Featured
+                    {t("form.labels.homeFeatured")}
                   </label>
                 </div>
 
@@ -525,14 +527,14 @@ export default function AdminGenresPage() {
                     disabled={loading}
                     className="rounded-lg bg-[#002D62] px-5 py-3 text-sm font-medium uppercase tracking-[0.16em] text-white transition disabled:cursor-not-allowed disabled:opacity-50"
                   >
-                    Save Genre
+                    {t("admin.buttons.saveGenre")}
                   </button>
                   <button
                     type="button"
                     onClick={resetGenreForm}
                     className="rounded-lg border border-gray-200 bg-white px-5 py-3 text-sm font-medium uppercase tracking-[0.16em] text-[#002D62] transition hover:border-[#CE1126] hover:text-[#CE1126]"
                   >
-                    Reset / Create New
+                    {t("admin.buttons.resetForm")}
                   </button>
                 </div>
               </form>
@@ -540,12 +542,12 @@ export default function AdminGenresPage() {
 
             <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm">
               <h2 className="mb-5 text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
-                Subgenres
+                {t("admin.genres.subgenresHeading")}
               </h2>
 
               {!selectedGenreId ? (
                 <p className="rounded-xl border border-dashed border-gray-200 px-4 py-6 text-sm text-gray-500">
-                  Select or save a genre before managing subgenres.
+                  {t("admin.genres.selectGenreFirst")}
                 </p>
               ) : (
                 <div className="space-y-5">
@@ -559,7 +561,7 @@ export default function AdminGenresPage() {
                           className="rounded-xl border border-gray-100 bg-gray-50 p-4"
                         >
                           <div className="grid gap-3 md:grid-cols-[220px_1fr_auto] md:items-end">
-                            <Field label="Name">
+                            <Field label={t("form.labels.name")}>
                               <input
                                 value={form.name}
                                 onChange={(event) =>
@@ -575,7 +577,7 @@ export default function AdminGenresPage() {
                               />
                             </Field>
 
-                            <Field label="Description">
+                            <Field label={t("form.labels.description")}>
                               <input
                                 value={form.description}
                                 onChange={(event) =>
@@ -597,7 +599,7 @@ export default function AdminGenresPage() {
                               onClick={() => void saveSubgenre(subgenre)}
                               className="rounded-lg bg-[#002D62] px-4 py-2 text-sm font-medium text-white transition disabled:cursor-not-allowed disabled:opacity-50"
                             >
-                              Save
+                              {t("admin.buttons.save")}
                             </button>
                           </div>
                         </div>
@@ -606,7 +608,7 @@ export default function AdminGenresPage() {
 
                     {!subgenres.length && (
                       <p className="rounded-xl border border-dashed border-gray-200 px-4 py-6 text-sm text-gray-500">
-                        No subgenres yet.
+                        {t("admin.genres.noSubgenres")}
                       </p>
                     )}
                   </div>
@@ -616,10 +618,10 @@ export default function AdminGenresPage() {
                     className="rounded-xl border border-[#002D62]/10 bg-[#002D62]/5 p-4"
                   >
                     <h3 className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-[#002D62]">
-                      Add New Subgenre
+                      {t("admin.genres.addSubgenreHeading")}
                     </h3>
                     <div className="grid gap-3 md:grid-cols-[220px_1fr_auto] md:items-end">
-                      <Field label="Name">
+                      <Field label={t("form.labels.name")}>
                         <input
                           value={newSubgenreForm.name}
                           onChange={(event) =>
@@ -632,7 +634,7 @@ export default function AdminGenresPage() {
                         />
                       </Field>
 
-                      <Field label="Description">
+                      <Field label={t("form.labels.description")}>
                         <input
                           value={newSubgenreForm.description}
                           onChange={(event) =>
@@ -650,7 +652,7 @@ export default function AdminGenresPage() {
                         disabled={loading}
                         className="rounded-lg bg-[#CE1126] px-4 py-2 text-sm font-medium text-white transition disabled:cursor-not-allowed disabled:opacity-50"
                       >
-                        Add
+                        {t("admin.buttons.add")}
                       </button>
                     </div>
                   </form>

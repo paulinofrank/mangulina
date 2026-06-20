@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import type { FormEvent } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { LockKeyhole, LogIn } from "lucide-react";
 import { createBrowserClient } from "@supabase/auth-helpers-nextjs";
 import { getSupabasePublicConfig } from "@/lib/supabaseConfig";
@@ -17,6 +18,7 @@ function sanitizeNextPath(value: string | null) {
 }
 
 export default function LoginForm() {
+  const t = useTranslations();
   const router = useRouter();
   const searchParams = useSearchParams();
   const nextPath = sanitizeNextPath(searchParams.get("next"));
@@ -36,7 +38,7 @@ export default function LoginForm() {
     const normalizedEmail = email.trim().toLowerCase();
 
     if (!normalizedEmail) {
-      setMessage("Enter your email before signing in.");
+      setMessage(t("auth.login.emailRequired"));
       return;
     }
 
@@ -63,7 +65,7 @@ export default function LoginForm() {
     const normalizedEmail = email.trim().toLowerCase();
 
     if (!normalizedEmail) {
-      setMessage("Enter your email before requesting a magic link.");
+      setMessage(t("auth.login.magicLinkEmailRequired"));
       return;
     }
 
@@ -83,7 +85,7 @@ export default function LoginForm() {
     setMessage(
       error
         ? error.message
-        : "Magic link sent. Check your email to finish signing in.",
+        : t("auth.login.magicLinkSent"),
     );
   }
 
@@ -98,17 +100,17 @@ export default function LoginForm() {
 
       <div className="mt-6">
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
-          Mangulina Admin
+          {t("admin.ui.branding")}
         </p>
         <h1 className="mt-2 text-3xl font-black uppercase tracking-tight text-[#002D62]">
-          Sign In
+          {t("auth.login.title")}
         </h1>
       </div>
 
       <div className="mt-6 space-y-4">
         <label className="block">
           <span className="mb-1 block text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
-            Email
+            {t("form.labels.email")}
           </span>
           <input
             type="email"
@@ -122,7 +124,7 @@ export default function LoginForm() {
 
         <label className="block">
           <span className="mb-1 block text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
-            Password
+            {t("form.labels.password")}
           </span>
           <input
             type="password"
@@ -147,7 +149,7 @@ export default function LoginForm() {
           className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#002D62] px-4 py-3 text-sm font-medium uppercase tracking-[0.16em] text-white transition hover:bg-[#CE1126] disabled:cursor-not-allowed disabled:opacity-50"
         >
           <LogIn className="h-4 w-4" aria-hidden={true} />
-          {loading ? "Signing In..." : "Sign In"}
+          {loading ? t("auth.login.signingIn") : t("auth.login.submitButton")}
         </button>
 
         <button
@@ -156,14 +158,14 @@ export default function LoginForm() {
           disabled={loading}
           className="rounded-lg border border-[#CE1126]/25 bg-white px-4 py-3 text-sm font-medium uppercase tracking-[0.16em] text-[#CE1126] transition hover:border-[#CE1126] disabled:cursor-not-allowed disabled:opacity-50"
         >
-          Send Magic Link
+          {t("auth.login.magicLinkButton")}
         </button>
 
         <Link
           href="/admin/sign-up"
           className="rounded-lg border border-gray-200 bg-white px-4 py-3 text-center text-sm font-medium uppercase tracking-[0.16em] text-gray-600 transition hover:border-[#002D62] hover:text-[#002D62]"
         >
-          Create Account
+          {t("auth.signup.linkButton")}
         </Link>
       </div>
     </form>

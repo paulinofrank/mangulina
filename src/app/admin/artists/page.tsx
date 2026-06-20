@@ -4,6 +4,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import type { FormEvent } from "react";
 import { getSupabaseClient } from "@/lib/supabase";
 import {
@@ -531,6 +532,7 @@ function extractYouTubeId(url: string) {
 }
 
 export default function AdminDashboard() {
+  const t = useTranslations();
   const supabase = getSupabaseClient();
 
   const [mounted, setMounted] = useState(false);
@@ -1668,7 +1670,7 @@ export default function AdminDashboard() {
           <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
             <div className="mb-6 flex items-center justify-between gap-4">
               <h2 className="text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
-                {selectedArtistId ? "Edit Artist Profile" : "Create New Artist"}
+                {selectedArtistId ? t("admin.forms.editArtistProfile") : t("admin.forms.createNewArtist")}
               </h2>
 
               <button
@@ -1676,13 +1678,13 @@ export default function AdminDashboard() {
                 onClick={resetForm}
                 className="rounded-lg border border-(--color-wikicrimson)/25 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-(--color-wikicrimson) shadow-sm transition hover:border-(--color-wikicrimson) hover:bg-(--color-wikicrimson) hover:text-white"
               >
-                New Artist
+                {t("admin.buttons.newArtist")}
               </button>
             </div>
 
             <form onSubmit={handleSaveArtist} className="space-y-6">
               <div className="grid gap-4 md:grid-cols-2">
-                <Field label="Artist Name">
+                <Field label={t("admin.labels.artistName")}>
                   <input
                     value={form.name ?? ""}
                     onChange={(event) => updateArtistName(event.target.value)}
@@ -1691,7 +1693,7 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
-                <Field label="Sort Name">
+                <Field label={t("admin.labels.sortName")}>
                   <input
                     value={form.sort_name ?? ""}
                     onChange={(event) =>
@@ -1701,7 +1703,7 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
-                <Field label="Slug">
+                <Field label={t("admin.labels.slug")}>
                   <input
                     value={form.slug ?? ""}
                     onChange={(event) => updateForm("slug", event.target.value)}
@@ -1710,7 +1712,7 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
-                <Field label="Stage Name">
+                <Field label={t("admin.labels.stageName")}>
                   <input
                     value={form.stage_name ?? ""}
                     onChange={(event) =>
@@ -1722,7 +1724,7 @@ export default function AdminDashboard() {
               </div>
 
               <div className="grid gap-4 md:grid-cols-4">
-                <Field label="First Name">
+                <Field label={t("admin.labels.firstName")}>
                   <input
                     value={form.first_name ?? ""}
                     onChange={(event) =>
@@ -1732,7 +1734,7 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
-                <Field label="Middle Name">
+                <Field label={t("admin.labels.middleName")}>
                   <input
                     value={form.middle_name ?? ""}
                     onChange={(event) =>
@@ -1742,7 +1744,7 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
-                <Field label="Last Name">
+                <Field label={t("admin.labels.lastName")}>
                   <input
                     value={form.last_name ?? ""}
                     onChange={(event) =>
@@ -1752,7 +1754,7 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
-                <Field label="Second Last Name">
+                <Field label={t("admin.labels.secondLastName")}>
                   <input
                     value={form.second_last_name ?? ""}
                     onChange={(event) =>
@@ -1764,7 +1766,7 @@ export default function AdminDashboard() {
               </div>
 
               <div className="grid gap-4 md:grid-cols-4">
-                <Field label="Date of Birth">
+                <Field label={t("admin.labels.dateOfBirth")}>
                   <input
                     type="date"
                     value={form.date_of_birth ?? ""}
@@ -1779,7 +1781,7 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
-                <Field label="Birth Year">
+                <Field label={t("admin.labels.birthYear")}>
                   <input
                     type="number"
                     value={form.birth_year ?? ""}
@@ -1790,7 +1792,7 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
-                <Field label="Date of Death">
+                <Field label={t("admin.labels.dateOfDeath")}>
                   <input
                     type="date"
                     value={form.date_of_death ?? ""}
@@ -1805,7 +1807,7 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
-                <Field label="Death Year">
+                <Field label={t("admin.labels.deathYear")}>
                   <input
                     type="number"
                     value={form.death_year ?? ""}
@@ -1818,7 +1820,7 @@ export default function AdminDashboard() {
               </div>
 
               <div>
-                <Field label="Gender">
+                <Field label={t("admin.labels.gender")}>
                   <div className="rounded-lg border border-gray-200 bg-white px-3 py-3">
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                       {genderOptions.map((gender) => {
@@ -1864,7 +1866,7 @@ export default function AdminDashboard() {
               </div>
 
               <div className="grid gap-4 md:grid-cols-2">
-                <Field label="Place of Birth">
+                <Field label={t("admin.labels.placeOfBirth")}>
                   <input
                     value={form.birth_place ?? ""}
                     onChange={(event) =>
@@ -1874,7 +1876,7 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
-                <Field label="Province">
+                <Field label={t("admin.labels.province")}>
                   <select
                     value={form.province ?? ""}
                     onChange={(event) =>
@@ -1893,7 +1895,7 @@ export default function AdminDashboard() {
               </div>
 
               <div className="grid gap-4 md:grid-cols-4">
-                <Field label="Artist Type">
+                <Field label={t("admin.labels.artistType")}>
                   <select
                     value={form.type ?? ""}
                     onChange={(event) => updateForm("type", event.target.value)}
@@ -1907,7 +1909,7 @@ export default function AdminDashboard() {
                   </select>
                 </Field>
 
-                <Field label="Primary Role">
+                <Field label={t("admin.labels.primaryRole")}>
                   <select
                     value={form.primary_role ?? ""}
                     onChange={(event) =>
@@ -1923,7 +1925,7 @@ export default function AdminDashboard() {
                   </select>
                 </Field>
 
-                <Field label="Primary Genre">
+                <Field label={t("admin.labels.primaryGenre")}>
                   <select
                     value={form.primary_genre ?? ""}
                     onChange={(event) =>
@@ -1942,7 +1944,7 @@ export default function AdminDashboard() {
                   </select>
                 </Field>
 
-                <Field label="Profile Status">
+                <Field label={t("admin.labels.profileStatus")}>
                   <select
                     value={form.status ?? "published"}
                     onChange={(event) =>
@@ -1962,7 +1964,7 @@ export default function AdminDashboard() {
                 </Field>
               </div>
 
-              <Field label="Other Roles / Occupations">
+              <Field label={t("admin.labels.otherRoles")}>
                 <input
                   value={form.occupations ?? ""}
                   onChange={(event) =>
@@ -1974,7 +1976,7 @@ export default function AdminDashboard() {
               </Field>
 
               <div className="grid gap-4 md:grid-cols-2">
-                <Field label="Musical Genres">
+                <Field label={t("admin.labels.musicalGenres")}>
                   <div className="grid gap-2 rounded-lg border border-gray-200 bg-white p-3 sm:grid-cols-2">
                     {musicalGenreOptions.length ? (
                       musicalGenreOptions.map((option) => {
@@ -2011,7 +2013,7 @@ export default function AdminDashboard() {
                   </div>
                 </Field>
 
-                <Field label="Instruments">
+                <Field label={t("admin.labels.instruments")}>
                   <div className="grid gap-2 rounded-lg border border-gray-200 bg-white p-3 sm:grid-cols-2">
                     {instrumentOptions.map((instrument) => {
                       const selected = parseCsv(form.instruments).some(
@@ -2042,7 +2044,7 @@ export default function AdminDashboard() {
                 </Field>
               </div>
 
-              <Field label="Aliases">
+              <Field label={t("admin.labels.aliases")}>
                 <input
                   value={form.aliases ?? ""}
                   onChange={(event) => updateForm("aliases", event.target.value)}
@@ -2051,7 +2053,7 @@ export default function AdminDashboard() {
                 />
               </Field>
 
-              <Field label="Disambiguation">
+              <Field label={t("admin.labels.disambiguation")}>
                 <input
                   value={form.disambiguation ?? ""}
                   onChange={(event) =>
@@ -2062,7 +2064,7 @@ export default function AdminDashboard() {
                 />
               </Field>
 
-              <Field label="Artist Tags">
+              <Field label={t("admin.labels.artistTags")}>
                 <div className="flex flex-wrap items-stretch gap-2 rounded-lg border border-gray-200 bg-white p-3">
                     {religiousTagOptions.map((tag) => {
                       const selected = parseCsv(form.artist_tags).some(
@@ -2134,7 +2136,7 @@ export default function AdminDashboard() {
               </Field>
 
               <div className="grid gap-4 md:grid-cols-2">
-                <Field label="Official Website">
+                <Field label={t("admin.labels.officialWebsite")}>
                   <input
                     value={form.website ?? ""}
                     onChange={(event) =>
@@ -2256,10 +2258,10 @@ export default function AdminDashboard() {
                 className="w-full rounded-lg bg-(--color-flagblue) px-5 py-4 text-sm uppercase tracking-[0.18em] text-white transition disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {loading
-                  ? "Processing..."
+                  ? t("admin.buttons.processing")
                   : selectedArtistId
-                    ? "Update Artist Profile"
-                    : "Create Artist"}
+                    ? t("admin.buttons.updateArtistProfile")
+                    : t("admin.buttons.createArtist")}
               </button>
             </form>
 

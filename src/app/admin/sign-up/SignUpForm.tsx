@@ -4,9 +4,11 @@ import Link from "next/link";
 import { useState } from "react";
 import type { FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { LockKeyhole, UserPlus } from "lucide-react";
 
 export default function SignUpForm() {
+  const t = useTranslations();
   const searchParams = useSearchParams();
   const inviteToken = searchParams.get("invite") ?? "";
   const [email, setEmail] = useState("");
@@ -19,7 +21,7 @@ export default function SignUpForm() {
     const normalizedEmail = email.trim().toLowerCase();
 
     if (!normalizedEmail) {
-      setMessage("Enter your invited admin email.");
+      setMessage(t("auth.signup.emailRequired"));
       return;
     }
 
@@ -42,7 +44,7 @@ export default function SignUpForm() {
     };
 
     setLoading(false);
-    setMessage(result.message || result.error || "Signup request finished.");
+    setMessage(result.message || result.error || t("auth.signup.requestFinished"));
 
     if (response.ok && result.ok) {
       setPassword("");
@@ -60,22 +62,22 @@ export default function SignUpForm() {
 
       <div className="mt-6">
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
-          Mangulina Admin
+          {t("admin.ui.branding")}
         </p>
         <h1 className="mt-2 text-3xl font-black uppercase tracking-tight text-[#002D62]">
-          Create Account
+          {t("auth.signup.title")}
         </h1>
         <p className="mt-3 text-sm leading-relaxed text-gray-600">
           {inviteToken
-            ? "Use the invited email address to create your admin account."
-            : "Signup requires an invite link from an existing admin."}
+            ? t("auth.signup.withInviteText")
+            : t("auth.signup.requiresInviteText")}
         </p>
       </div>
 
       <div className="mt-6 space-y-4">
         <label className="block">
           <span className="mb-1 block text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
-            Email
+            {t("form.labels.email")}
           </span>
           <input
             type="email"
@@ -89,7 +91,7 @@ export default function SignUpForm() {
 
         <label className="block">
           <span className="mb-1 block text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
-            Password
+            {t("form.labels.password")}
           </span>
           <input
             type="password"
@@ -116,14 +118,14 @@ export default function SignUpForm() {
           className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#002D62] px-4 py-3 text-sm font-medium uppercase tracking-[0.16em] text-white transition hover:bg-[#CE1126] disabled:cursor-not-allowed disabled:opacity-50"
         >
           <UserPlus className="h-4 w-4" aria-hidden={true} />
-          {loading ? "Creating..." : "Create Account"}
+          {loading ? t("auth.signup.creating") : t("auth.signup.submitButton")}
         </button>
 
         <Link
           href="/admin/login"
           className="rounded-lg border border-[#CE1126]/25 bg-white px-4 py-3 text-center text-sm font-medium uppercase tracking-[0.16em] text-[#CE1126] transition hover:border-[#CE1126]"
         >
-          Back to Sign In
+          {t("auth.login.backButton")}
         </Link>
       </div>
     </form>

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
+import { useTranslations } from "next-intl";
 import { Clipboard, LinkIcon, RefreshCw, Send, Trash2, Users } from "lucide-react";
 
 type AdminInvite = {
@@ -40,6 +41,7 @@ function formatDate(value: string) {
 }
 
 export default function InvitesClient() {
+  const t = useTranslations();
   const [email, setEmail] = useState("");
   const [role, setRole] = useState("editor");
   const [inviteUrl, setInviteUrl] = useState("");
@@ -55,7 +57,7 @@ export default function InvitesClient() {
     setLoading(false);
 
     if (!response.ok || !result.ok) {
-      setStatus(result.error || "Unable to load admin access.");
+      setStatus(result.error || t("admin.invites.loadError"));
       return;
     }
 
@@ -78,7 +80,7 @@ export default function InvitesClient() {
     setLoading(false);
 
     if (!response.ok || !result.ok || !result.inviteUrl) {
-      setStatus(result.error || "Unable to create invite.");
+      setStatus(result.error || t("admin.invites.createError"));
       return;
     }
 
@@ -86,10 +88,8 @@ export default function InvitesClient() {
     setEmail("");
     setStatus(
       result.emailSent
-        ? "Invite email sent. The link is also available below."
-        : `Invite link created, but email was not sent: ${
-            result.emailError || "unknown email error"
-          }`,
+        ? t("admin.invites.emailSent")
+        : `${t("admin.invites.emailNotSent").replace("{error}", result.emailError || t("fallback.unknownError"))}`,
     );
     await loadAccess();
   }
@@ -97,12 +97,12 @@ export default function InvitesClient() {
   async function copyInvite() {
     if (!inviteUrl) return;
     await navigator.clipboard.writeText(inviteUrl);
-    setStatus("Invite link copied.");
+    setStatus(t("admin.invites.linkCopied"));
   }
 
   async function revokeInvite(invite: AdminInvite) {
     const confirmed = window.confirm(
-      `Revoke the pending invite for ${invite.email}?`,
+      t("admin.invites.revokeConfirm").replace("{email}", invite.email),
     );
 
     if (!confirmed) return;
@@ -119,11 +119,11 @@ export default function InvitesClient() {
     setLoading(false);
 
     if (!response.ok || !result.ok) {
-      setStatus(result.error || "Unable to revoke invite.");
+      setStatus(result.error || t("admin.invites.revokeError"));
       return;
     }
 
-    setStatus("Pending invite revoked.");
+    setStatus(t("admin.invites.revoked"));
     await loadAccess();
   }
 
@@ -138,10 +138,10 @@ export default function InvitesClient() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#CE1126]">
-                Admin Access
+                {t("admin.ui.adminAccess")}
               </p>
               <h1 className="mt-3 text-3xl font-black uppercase tracking-tight text-[#002D62] sm:text-4xl">
-                Invites
+                {t("admin.invites.title")}
               </h1>
             </div>
 
@@ -149,7 +149,7 @@ export default function InvitesClient() {
               href="/admin"
               className="inline-flex w-fit items-center rounded-lg border border-[#CE1126]/25 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-[#CE1126] shadow-sm transition hover:border-[#CE1126] hover:bg-[#CE1126] hover:text-white"
             >
-              Back to Admin
+              {t("admin.navigation.backToAdmin")}
             </Link>
           </div>
         </header>
@@ -164,14 +164,14 @@ export default function InvitesClient() {
                 <Send className="h-5 w-5" aria-hidden={true} />
               </div>
               <h2 className="text-lg font-semibold text-[#002D62]">
-                Send Invite
+                {t("admin.invites.sendHeading")}
               </h2>
             </div>
 
             <div className="mt-5 space-y-4">
               <label className="block">
                 <span className="mb-1 block text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
-                  Email
+                  {t("form.labels.email")}
                 </span>
                 <input
                   type="email"
@@ -184,16 +184,16 @@ export default function InvitesClient() {
 
               <label className="block">
                 <span className="mb-1 block text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
-                  Role
+                  {t("form.labels.role")}
                 </span>
                 <select
                   value={role}
                   onChange={(event) => setRole(event.target.value)}
                   className="w-full rounded-lg border border-gray-200 bg-white px-3 py-3 text-sm text-gray-900 outline-none transition focus:border-[#002D62]"
                 >
-                  <option value="editor">Editor</option>
-                  <option value="admin">Admin</option>
-                  <option value="owner">Owner</option>
+                  <option value="editor">{t("admin.roles.editor")}</option>
+                  <option value="admin">{t("admin.roles.admin")}</option>
+                  <option value="owner">{t("admin.roles.owner")}</option>
                 </select>
               </label>
             </div>
@@ -204,7 +204,7 @@ export default function InvitesClient() {
               className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#002D62] px-4 py-3 text-sm font-medium uppercase tracking-[0.16em] text-white transition hover:bg-[#CE1126] disabled:cursor-not-allowed disabled:opacity-50"
             >
               <LinkIcon className="h-4 w-4" aria-hidden={true} />
-              Send Invite
+              {t("admin.invites.sendHeading")}
             </button>
 
             {inviteUrl && (
@@ -216,7 +216,7 @@ export default function InvitesClient() {
                   className="mt-3 inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-xs font-medium uppercase tracking-[0.14em] text-gray-600 transition hover:border-[#002D62] hover:text-[#002D62]"
                 >
                   <Clipboard className="h-4 w-4" aria-hidden={true} />
-                  Copy
+                  {t("admin.buttons.copy")}
                 </button>
               </div>
             )}
@@ -235,7 +235,7 @@ export default function InvitesClient() {
                   <Users className="h-5 w-5" aria-hidden={true} />
                 </div>
                 <h2 className="text-lg font-semibold text-[#002D62]">
-                  Members
+                  {t("admin.invites.membersHeading")}
                 </h2>
               </div>
 
@@ -244,7 +244,7 @@ export default function InvitesClient() {
                 onClick={loadAccess}
                 disabled={loading}
                 className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-600 transition hover:border-[#002D62] hover:text-[#002D62] disabled:opacity-50"
-                aria-label="Refresh admin access"
+                aria-label={t("admin.buttons.refresh")}
               >
                 <RefreshCw className="h-4 w-4" aria-hidden={true} />
               </button>
@@ -253,7 +253,7 @@ export default function InvitesClient() {
             <div className="mt-5 overflow-hidden rounded-lg border border-gray-100">
               {members.length === 0 ? (
                 <p className="px-4 py-5 text-sm text-gray-500">
-                  No admin members found.
+                  {t("admin.invites.noMembers")}
                 </p>
               ) : (
                 <div className="divide-y divide-gray-100">
@@ -277,13 +277,13 @@ export default function InvitesClient() {
 
         <section className="mt-5 rounded-xl border border-black/5 bg-white p-5 shadow-sm">
           <h2 className="text-lg font-semibold text-[#002D62]">
-            Recent Invites
+            {t("admin.invites.recentHeading")}
           </h2>
 
           <div className="mt-5 overflow-hidden rounded-lg border border-gray-100">
             {invites.length === 0 ? (
               <p className="px-4 py-5 text-sm text-gray-500">
-                No invites created yet.
+                {t("admin.invites.noInvites")}
               </p>
             ) : (
               <div className="divide-y divide-gray-100">
@@ -297,10 +297,10 @@ export default function InvitesClient() {
                     </span>
                     <span className="text-gray-500">{invite.role}</span>
                     <span className="text-gray-500">
-                      {invite.accepted_at ? "Accepted" : "Pending"}
+                      {invite.accepted_at ? t("admin.invites.statusAccepted") : t("admin.invites.statusPending")}
                     </span>
                     <span className="text-gray-500">
-                      Expires {formatDate(invite.expires_at)}
+                      {t("admin.invites.expiresLabel").replace("{date}", formatDate(invite.expires_at))}
                     </span>
                     {invite.accepted_at ? (
                       <span className="text-gray-400">-</span>
@@ -312,7 +312,7 @@ export default function InvitesClient() {
                         className="inline-flex items-center justify-center gap-2 rounded-lg border border-red-200 bg-white px-3 py-2 text-xs font-medium uppercase tracking-[0.14em] text-red-700 transition hover:bg-red-700 hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
                       >
                         <Trash2 className="h-4 w-4" aria-hidden={true} />
-                        Revoke
+                        {t("admin.buttons.revoke")}
                       </button>
                     )}
                   </div>

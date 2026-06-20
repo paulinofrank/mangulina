@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { FormEvent } from "react";
+import { useTranslations } from "next-intl";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -157,6 +158,7 @@ async function apiFetch(path: string, opts?: RequestInit) {
 // Page
 // ---------------------------------------------------------------------------
 export default function AdminPlatformLinksPage() {
+  const t = useTranslations();
   const [rows, setRows]         = useState<PlatformLinkRow[]>([]);
   const [forms, setForms]       = useState<Record<string, PlatformLinkForm>>({});
   const [platform, setPlatform] = useState("deezer");
@@ -195,7 +197,7 @@ export default function AdminPlatformLinksPage() {
     abortRef.current = new AbortController();
 
     setLoading(true);
-    setMsg({ text: "Loading platform links…", kind: "info" });
+    setMsg({ text: t("admin.status.loadingLinks"), kind: "info" });
 
     try {
       const params = new URLSearchParams({
@@ -214,21 +216,21 @@ export default function AdminPlatformLinksPage() {
 
       if (loaded.length === 0) {
         setMsg({
-          text: `No ${platform} links found for status "${statusFilter}". Try switching status to "all" or "approved_auto".`,
+          text: t("admin.platformLinks.suggestAllStatuses").replace("{platform}", platform).replace("{status}", statusFilter),
           kind: "info",
         });
       } else {
-        setMsg({ text: `Loaded ${loaded.length} link${loaded.length === 1 ? "" : "s"}.`, kind: "ok" });
+        setMsg({ text: t("admin.platformLinks.linksLoaded").replace("{count}", String(loaded.length)), kind: "ok" });
       }
     } catch (err) {
       if ((err as Error).name === "AbortError") return;
       const msg = err instanceof Error ? err.message : String(err);
       console.error("[platform-links] load error:", msg);
-      setMsg({ text: `Error loading platform links: ${msg}`, kind: "err" });
+      setMsg({ text: `${t("admin.errors.loadingLinks").replace("{error}", msg)}`, kind: "err" });
     } finally {
       setLoading(false);
     }
-  }, [platform, statusFilter, minConfidence, limit]);
+  }, [platform, statusFilter, minConfidence, limit, t]);
 
   useEffect(() => { void loadLinks(); }, [loadLinks]);
 
@@ -239,7 +241,7 @@ export default function AdminPlatformLinksPage() {
     successMsg: string,
   ) {
     setLoading(true);
-    setMsg({ text: "Updating…", kind: "info" });
+    setMsg({ text: t("admin.status.updating"), kind: "info" });
     try {
       await apiFetch("/api/admin/platform-links", {
         method: "PATCH",
@@ -254,7 +256,7 @@ export default function AdminPlatformLinksPage() {
     } catch (err) {
       const m = err instanceof Error ? err.message : String(err);
       console.error("[platform-links] update error:", m);
-      setMsg({ text: `Error updating platform link: ${m}`, kind: "err" });
+      setMsg({ text: `${t("admin.errors.updatingLink").replace("{error}", m)}`, kind: "err" });
     } finally {
       setLoading(false);
     }
@@ -278,7 +280,7 @@ export default function AdminPlatformLinksPage() {
         external_id:   nullable(form.external_id),
         checked_at:    new Date().toISOString(),
       },
-      "Platform link updated.",
+      t("admin.status.linkUpdated"),
     );
   }
 
@@ -304,10 +306,10 @@ export default function AdminPlatformLinksPage() {
   // ── Manual add ────────────────────────────────────────────────────────────
   async function addManualLink(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (!manualForm.recording_id) { setMsg({ text: "Select a recording first.", kind: "err" }); return; }
-    if (!manualForm.url.trim())   { setMsg({ text: "URL is required.",           kind: "err" }); return; }
+    if (!manualForm.recording_id) { setMsg({ text: t("form.placeholders.selectRecording"), kind: "err" }); return; }
+    if (!manualForm.url.trim())   { setMsg({ text: t("form.labels.urlRequired"),           kind: "err" }); return; }
     setLoading(true);
-    setMsg({ text: "Adding platform link…", kind: "info" });
+    setMsg({ text: t("admin.status.addingLink"), kind: "info" });
     try {
       await apiFetch("/api/admin/platform-links", {
         method: "POST",
@@ -327,10 +329,10 @@ export default function AdminPlatformLinksPage() {
       setRecSearch("");
       setRecOptions([]);
       await loadLinks();
-      setMsg({ text: "Platform link added.", kind: "ok" });
+      setMsg({ text: t("admin.status.linkAdded"), kind: "ok" });
     } catch (err) {
       const m = err instanceof Error ? err.message : String(err);
-      setMsg({ text: `Error adding platform link: ${m}`, kind: "err" });
+      setMsg({ text: `${t("admin.errors.addingLink").replace("{error}", m)}`, kind: "err" });
     } finally {
       setLoading(false);
     }
@@ -355,20 +357,20 @@ export default function AdminPlatformLinksPage() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#CE1126]">
-                Mangulina Admin
+                {t("admin.ui.branding")}
               </p>
               <h1 className="mt-3 text-3xl font-black uppercase tracking-tight text-[#002D62] sm:text-4xl">
-                Platform Links Review
+                {t("admin.platformLinks.title")}
               </h1>
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-gray-500">
-                Review automated Deezer candidates. Approve, reject, or edit before they appear on song pages.
+                {t("admin.platformLinks.description")}
               </p>
             </div>
             <Link
               href="/admin"
               className="inline-flex w-fit shrink-0 items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-[#002D62] shadow-sm transition hover:border-[#CE1126] hover:text-[#CE1126]"
             >
-              Admin Portal
+              {t("admin.navigation.portal")}
             </Link>
           </div>
         </header>
@@ -389,20 +391,20 @@ export default function AdminPlatformLinksPage() {
         {/* ── Filters ─────────────────────────────────────────────────────── */}
         <section className="mb-6 rounded-xl border border-black/5 bg-white p-5 shadow-sm">
           <h2 className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
-            Filters
+            {t("admin.platformLinks.filtersHeading")}
           </h2>
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-5">
-            <Field label="Platform">
+            <Field label={t("form.labels.platform")}>
               <select value={platform} onChange={(e) => setPlatform(e.target.value)} className={inputCls}>
                 {PLATFORMS.map((p) => <option key={p} value={p}>{p}</option>)}
               </select>
             </Field>
-            <Field label="Status">
+            <Field label={t("form.labels.status")}>
               <select value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)} className={inputCls}>
                 {STATUSES.map((s) => <option key={s} value={s}>{s}</option>)}
               </select>
             </Field>
-            <Field label="Min Confidence">
+            <Field label={t("form.labels.minConfidence")}>
               <input
                 type="number" step="0.01" min="0" max="1"
                 value={minConfidence}
@@ -411,7 +413,7 @@ export default function AdminPlatformLinksPage() {
                 className={inputCls}
               />
             </Field>
-            <Field label="Limit">
+            <Field label={t("form.labels.limit")}>
               <select value={limit} onChange={(e) => setLimit(e.target.value)} className={inputCls}>
                 {["25","50","100","200"].map((n) => <option key={n} value={n}>{n}</option>)}
               </select>
@@ -421,16 +423,16 @@ export default function AdminPlatformLinksPage() {
                 type="button" onClick={() => void loadLinks()} disabled={loading}
                 className={primaryBtn}
               >
-                {loading ? "Loading…" : "Refresh"}
+                {loading ? t("admin.status.loading") : t("admin.buttons.refresh")}
               </button>
             </div>
           </div>
           <div className="mt-4">
-            <Field label="Search loaded rows">
+            <Field label={t("form.labels.searchRows")}>
               <input
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="Filter by title, artist, URL, external ID…"
+                placeholder={t("admin.platformLinks.searchPlaceholder")}
                 className={inputCls}
               />
             </Field>
@@ -442,7 +444,7 @@ export default function AdminPlatformLinksPage() {
           {filteredRows.length === 0 && !loading && (
             <div className="rounded-xl border border-dashed border-gray-200 bg-white px-4 py-10 text-center">
               <p className="text-sm text-gray-500">
-                No {platform} links found for status &ldquo;{statusFilter}&rdquo;.
+                {t("admin.platformLinks.noLinksFound").replace("{platform}", platform).replace("{status}", statusFilter)}
               </p>
               {statusFilter !== "all" && (
                 <button
@@ -450,7 +452,7 @@ export default function AdminPlatformLinksPage() {
                   onClick={() => setStatusFilter("all")}
                   className="mt-3 text-sm font-medium text-[#002D62] underline-offset-2 hover:underline"
                 >
-                  Show all statuses
+                  {t("admin.buttons.showAllStatuses")}
                 </button>
               )}
             </div>
@@ -503,36 +505,36 @@ export default function AdminPlatformLinksPage() {
                       href={row.url} target="_blank" rel="noopener noreferrer"
                       className={secondaryBtn}
                     >
-                      Open ↗
+                      {t("admin.buttons.openLink")}
                     </a>
                     {row.status !== "approved_manual" && (
                       <button
                         type="button"
-                        onClick={() => void updateLink(row.id, { status: "approved_manual", is_official: true, checked_at: new Date().toISOString() }, "Platform link approved.")}
+                        onClick={() => void updateLink(row.id, { status: "approved_manual", is_official: true, checked_at: new Date().toISOString() }, t("admin.status.linkApproved"))}
                         disabled={loading}
                         className={primaryBtn}
                       >
-                        Approve
+                        {t("admin.buttons.approve")}
                       </button>
                     )}
                     {row.status !== "rejected" && (
                       <button
                         type="button"
-                        onClick={() => void updateLink(row.id, { status: "rejected", checked_at: new Date().toISOString() }, "Platform link rejected.")}
+                        onClick={() => void updateLink(row.id, { status: "rejected", checked_at: new Date().toISOString() }, t("admin.status.linkRejected"))}
                         disabled={loading}
                         className={dangerBtn}
                       >
-                        Reject
+                        {t("admin.buttons.reject")}
                       </button>
                     )}
                     {row.status !== "needs_review" && (
                       <button
                         type="button"
-                        onClick={() => void updateLink(row.id, { status: "needs_review", checked_at: new Date().toISOString() }, "Marked for review.")}
+                        onClick={() => void updateLink(row.id, { status: "needs_review", checked_at: new Date().toISOString() }, t("admin.status.markedForReview"))}
                         disabled={loading}
                         className={secondaryBtn}
                       >
-                        Needs Review
+                        {t("admin.buttons.needsReview")}
                       </button>
                     )}
                     <button
@@ -540,56 +542,56 @@ export default function AdminPlatformLinksPage() {
                       onClick={() => toggleExpanded(row.id)}
                       className={secondaryBtn}
                     >
-                      {isExpanded ? "Collapse" : "Edit"}
+                      {isExpanded ? t("admin.buttons.collapse") : t("admin.buttons.edit")}
                     </button>
                   </div>
                 </div>
 
                 {/* ── Audit metadata strip ─────────────────────────────── */}
                 <div className="grid grid-cols-2 gap-2 border-t border-gray-50 px-5 py-3 md:grid-cols-4">
-                  <Meta label="Title Found"  value={row.title_found  ?? "—"} />
-                  <Meta label="Artist Found" value={row.artist_found ?? "—"} />
-                  <Meta label="External ID"  value={row.external_id  ?? "—"} />
-                  <Meta label="Source"       value={row.source       ?? "—"} />
-                  <Meta label="Checked"      value={formatDate(row.checked_at)} />
-                  <Meta label="Created"      value={formatDate(row.created_at)} />
-                  <Meta label="URL" value={row.url} truncate />
+                  <Meta label={t("admin.platformLinks.titleFound")}  value={row.title_found  ?? "—"} />
+                  <Meta label={t("admin.platformLinks.artistFound")} value={row.artist_found ?? "—"} />
+                  <Meta label={t("admin.platformLinks.externalId")}  value={row.external_id  ?? "—"} />
+                  <Meta label={t("admin.platformLinks.source")}       value={row.source       ?? "—"} />
+                  <Meta label={t("admin.platformLinks.checked")}      value={formatDate(row.checked_at)} />
+                  <Meta label={t("admin.platformLinks.created")}      value={formatDate(row.created_at)} />
+                  <Meta label={t("admin.platformLinks.url")} value={row.url} truncate />
                 </div>
 
                 {/* ── Edit form (collapsed by default) ────────────────── */}
                 {isExpanded && (
                   <div className="border-t border-gray-100 p-5">
                     <p className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-gray-400">
-                      Edit fields
+                      {t("admin.platformLinks.editFieldsHeading")}
                     </p>
                     <div className="grid gap-4 md:grid-cols-3">
-                      <Field label="URL">
+                      <Field label={t("form.labels.url")}>
                         <input value={form.url} onChange={(e) => patchForm(row.id, form, "url", e.target.value)} className={inputCls} />
                       </Field>
-                      <Field label="Label">
+                      <Field label={t("form.labels.label")}>
                         <input value={form.label} onChange={(e) => patchForm(row.id, form, "label", e.target.value)} className={inputCls} />
                       </Field>
-                      <Field label="Link Type">
+                      <Field label={t("form.labels.linkType")}>
                         <input value={form.link_type} onChange={(e) => patchForm(row.id, form, "link_type", e.target.value)} className={inputCls} />
                       </Field>
-                      <Field label="Status">
+                      <Field label={t("form.labels.status")}>
                         <select value={form.status} onChange={(e) => patchForm(row.id, form, "status", e.target.value)} className={inputCls}>
                           {STATUSES.filter((s) => s !== "all").map((s) => <option key={s} value={s}>{s}</option>)}
                         </select>
                       </Field>
-                      <Field label="Confidence">
+                      <Field label={t("form.labels.confidence")}>
                         <input type="number" step="0.001" min="0" max="1" value={form.confidence} onChange={(e) => patchForm(row.id, form, "confidence", e.target.value)} className={inputCls} />
                       </Field>
-                      <Field label="Display Order">
+                      <Field label={t("form.labels.displayOrder")}>
                         <input type="number" value={form.display_order} onChange={(e) => patchForm(row.id, form, "display_order", e.target.value)} className={inputCls} />
                       </Field>
-                      <Field label="Title Found">
+                      <Field label={t("admin.platformLinks.titleFound")}>
                         <input value={form.title_found} onChange={(e) => patchForm(row.id, form, "title_found", e.target.value)} className={inputCls} />
                       </Field>
-                      <Field label="Artist Found">
+                      <Field label={t("admin.platformLinks.artistFound")}>
                         <input value={form.artist_found} onChange={(e) => patchForm(row.id, form, "artist_found", e.target.value)} className={inputCls} />
                       </Field>
-                      <Field label="External ID">
+                      <Field label={t("admin.platformLinks.externalId")}>
                         <input value={form.external_id} onChange={(e) => patchForm(row.id, form, "external_id", e.target.value)} className={inputCls} />
                       </Field>
                     </div>
@@ -599,7 +601,7 @@ export default function AdminPlatformLinksPage() {
                         onChange={(e) => patchForm(row.id, form, "is_official", e.target.checked)}
                         className="h-4 w-4 rounded"
                       />
-                      Official link
+                      {t("form.labels.officialLink")}
                     </label>
                     <button
                       type="button"
@@ -607,7 +609,7 @@ export default function AdminPlatformLinksPage() {
                       disabled={loading}
                       className={`${primaryBtn} mt-4`}
                     >
-                      Save Edits
+                      {t("admin.buttons.saveEdits")}
                     </button>
                   </div>
                 )}
@@ -619,11 +621,11 @@ export default function AdminPlatformLinksPage() {
         {/* ── Manual Add ──────────────────────────────────────────────────── */}
         <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm">
           <h2 className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
-            Add Manual Link
+            {t("admin.platformLinks.addManualHeading")}
           </h2>
           <form onSubmit={addManualLink} className="space-y-4">
             <div className="grid gap-4 md:grid-cols-[1fr_auto]">
-              <Field label="Search Recording">
+              <Field label={t("form.labels.searchRecording")}>
                 <input
                   value={recSearch}
                   onChange={(e) => setRecSearch(e.target.value)}
@@ -634,19 +636,19 @@ export default function AdminPlatformLinksPage() {
               </Field>
               <div className="flex items-end">
                 <button type="button" onClick={() => void searchRecordings()} disabled={recSearchLoading} className={secondaryBtn}>
-                  {recSearchLoading ? "…" : "Search"}
+                  {recSearchLoading ? "…" : t("admin.buttons.search")}
                 </button>
               </div>
             </div>
 
             {recOptions.length > 0 && (
-              <Field label="Select Recording">
+              <Field label={t("form.labels.selectRecording")}>
                 <select
                   value={manualForm.recording_id}
                   onChange={(e) => setManualForm((f) => ({ ...f, recording_id: e.target.value }))}
                   className={inputCls}
                 >
-                  <option value="">— Select —</option>
+                  <option value="">{t("form.placeholders.select")}</option>
                   {recOptions.map((r) => (
                     <option key={r.id} value={r.id}>
                       {r.title} · {r.artist_name}{r.recording_year ? ` (${r.recording_year})` : ""}
@@ -657,35 +659,35 @@ export default function AdminPlatformLinksPage() {
             )}
 
             <div className="grid gap-4 md:grid-cols-3">
-              <Field label="Platform">
+              <Field label={t("form.labels.platform")}>
                 <select value={manualForm.platform} onChange={(e) => setManualForm((f) => ({ ...f, platform: e.target.value }))} className={inputCls}>
                   {PLATFORMS.map((p) => <option key={p} value={p}>{p}</option>)}
                 </select>
               </Field>
-              <Field label="Link Type">
+              <Field label={t("form.labels.linkType")}>
                 <input value={manualForm.link_type} onChange={(e) => setManualForm((f) => ({ ...f, link_type: e.target.value }))} className={inputCls} />
               </Field>
-              <Field label="Display Order">
+              <Field label={t("form.labels.displayOrder")}>
                 <input type="number" value={manualForm.display_order} onChange={(e) => setManualForm((f) => ({ ...f, display_order: e.target.value }))} className={inputCls} />
               </Field>
             </div>
 
             <div className="grid gap-4 md:grid-cols-2">
-              <Field label="URL *">
-                <input value={manualForm.url} onChange={(e) => setManualForm((f) => ({ ...f, url: e.target.value }))} placeholder="https://…" className={inputCls} />
+              <Field label={t("form.labels.urlRequired")}>
+                <input value={manualForm.url} onChange={(e) => setManualForm((f) => ({ ...f, url: e.target.value }))} placeholder={t("form.placeholders.url")} className={inputCls} />
               </Field>
-              <Field label="Label">
-                <input value={manualForm.label} onChange={(e) => setManualForm((f) => ({ ...f, label: e.target.value }))} placeholder="e.g. Deezer" className={inputCls} />
+              <Field label={t("form.labels.label")}>
+                <input value={manualForm.label} onChange={(e) => setManualForm((f) => ({ ...f, label: e.target.value }))} placeholder={t("form.placeholders.labelExample")} className={inputCls} />
               </Field>
             </div>
 
             <label className="flex items-center gap-2 text-sm text-gray-600">
               <input type="checkbox" checked={manualForm.is_official} onChange={(e) => setManualForm((f) => ({ ...f, is_official: e.target.checked }))} className="h-4 w-4 rounded" />
-              Official link
+              {t("form.labels.officialLink")}
             </label>
 
             <button type="submit" disabled={loading} className={primaryBtn}>
-              Add as Approved Link
+              {t("admin.buttons.addAsApprovedLink")}
             </button>
           </form>
         </section>

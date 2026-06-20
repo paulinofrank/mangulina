@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
 
 import { getSupabaseClient } from "@/lib/supabase";
 
@@ -105,6 +106,7 @@ function yearFromDate(value: string) {
 }
 
 export default function AdminDiscographyPage() {
+  const t = useTranslations();
   const supabase = useMemo(() => getSupabaseClient(), []);
   const [artists, setArtists] = useState<AdminArtist[]>([]);
   const [selectedArtistId, setSelectedArtistId] = useState("");
@@ -140,13 +142,13 @@ export default function AdminDiscographyPage() {
       .order("name", { ascending: true });
 
     if (error) {
-      setStatus(`Error loading artists: ${error.message}`);
+      setStatus(`${t("admin.errors.loadingArtists").replace("{error}", error.message)}`);
     } else {
       setArtists((data ?? []) as AdminArtist[]);
     }
 
     setLoading(false);
-  }, [supabase]);
+  }, [supabase, t]);
 
   const fetchArtistDiscography = useCallback(async (artistId: string) => {
     const response = await fetch(
@@ -155,7 +157,7 @@ export default function AdminDiscographyPage() {
     const result = (await response.json()) as ArtistDiscographyResponse;
 
     if (!response.ok || !result.ok) {
-      setStatus(`Error loading artist discography: ${result.error || response.statusText}`);
+      setStatus(`${t("admin.errors.loadingDiscography").replace("{error}", result.error || response.statusText)}`);
       setDiscography([]);
       return;
     }
@@ -232,12 +234,12 @@ export default function AdminDiscographyPage() {
 
   async function handleSaveRelease() {
     if (!selectedArtistId) {
-      setStatus("Select an artist before editing discography.");
+      setStatus(t("admin.discography.selectArtistFirst"));
       return;
     }
 
     if (!releaseForm.title.trim()) {
-      setStatus("Release title is required.");
+      setStatus(t("admin.discography.titleRequired"));
       return;
     }
 
@@ -276,9 +278,9 @@ export default function AdminDiscographyPage() {
     const result = (await response.json()) as AdminWriteResponse;
 
     if (!response.ok || !result.ok) {
-      setStatus(`Error saving release: ${result.error || response.statusText}`);
+      setStatus(`${t("admin.errors.savingRelease").replace("{error}", result.error || response.statusText)}`);
     } else {
-      setStatus(editingReleaseId ? "Release updated." : "Release added.");
+      setStatus(editingReleaseId ? t("admin.status.releaseUpdated") : t("admin.status.releaseAdded"));
       resetReleaseForm();
       await fetchArtistDiscography(selectedArtistId);
     }
@@ -292,13 +294,13 @@ export default function AdminDiscographyPage() {
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-(--color-wikicrimson)">
-              Mangulina Admin
+              {t("admin.ui.branding")}
             </p>
             <h1 className="mt-3 text-3xl font-black uppercase tracking-tight text-(--color-flagblue) sm:text-4xl">
-              Discography Manager
+              {t("admin.discography.title")}
             </h1>
             <p className="mt-4 max-w-3xl text-sm leading-relaxed text-gray-600 sm:text-base">
-              Add and update releases attached to artist profiles.
+              {t("admin.discography.description")}
             </p>
           </div>
 
@@ -306,7 +308,7 @@ export default function AdminDiscographyPage() {
             href="/admin"
             className="inline-flex w-fit items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-normal uppercase tracking-[0.18em] text-(--color-flagblue) shadow-sm transition hover:border-(--color-wikicrimson) hover:text-(--color-wikicrimson)"
           >
-            Admin Portal
+            {t("admin.navigation.portal")}
           </Link>
         </div>
       </header>
@@ -321,13 +323,13 @@ export default function AdminDiscographyPage() {
         <aside className="space-y-5">
           <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
             <h2 className="mb-4 text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
-              Select Artist
+              {t("admin.discography.selectArtistHeading")}
             </h2>
 
             <input
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-              placeholder="Search artist..."
+              placeholder={t("admin.discography.searchPlaceholder")}
               className="mb-3 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-(--color-flagblue)"
             />
 
@@ -336,7 +338,7 @@ export default function AdminDiscographyPage() {
               onChange={(event) => handleSelectArtist(event.target.value)}
               className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-(--color-flagblue)"
             >
-              <option value="">-- Select Artist --</option>
+              <option value="">{t("form.placeholders.selectArtist")}</option>
               {filteredArtists.map((artist) => (
                 <option key={artist.id} value={artist.id}>
                   {artist.name}
@@ -353,7 +355,7 @@ export default function AdminDiscographyPage() {
                   {selectedArtist.name}
                 </p>
                 <p className="mt-1 text-xs text-gray-400">
-                  {discography.length} releases loaded
+                  {t("admin.discography.releasesLoaded").replace("{count}", String(discography.length))}
                 </p>
               </div>
             )}
@@ -361,12 +363,12 @@ export default function AdminDiscographyPage() {
 
           <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
             <h2 className="mb-4 text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
-              Releases
+              {t("admin.discography.releasesHeading")}
             </h2>
 
             {!selectedArtistId ? (
               <p className="rounded-lg border border-dashed border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-500">
-                Select an artist to load releases.
+                {t("admin.discography.selectArtistFirst")}
               </p>
             ) : (
               <div className="max-h-[34rem] space-y-2 overflow-y-auto pr-1">
@@ -393,7 +395,7 @@ export default function AdminDiscographyPage() {
                   ))
                 ) : (
                   <p className="rounded-lg border border-dashed border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-400">
-                    No releases saved for this artist yet.
+                    {t("admin.discography.noReleases")}
                   </p>
                 )}
               </div>
@@ -405,10 +407,10 @@ export default function AdminDiscographyPage() {
           <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <h2 className="text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
-                {editingReleaseId ? "Edit Release" : "Add Release"}
+                {editingReleaseId ? t("admin.discography.editHeading") : t("admin.discography.addHeading")}
               </h2>
               <p className="mt-1 text-xs text-gray-400">
-                Release-level metadata. Track editing will be added as the next layer.
+                {t("admin.discography.formDescription")}
               </p>
             </div>
 
@@ -418,19 +420,19 @@ export default function AdminDiscographyPage() {
                 onClick={resetReleaseForm}
                 className="w-fit text-xs font-semibold text-(--color-wikicrimson)"
               >
-                Cancel release edit
+                {t("admin.buttons.cancelEdit")}
               </button>
             )}
           </div>
 
           {!selectedArtistId ? (
             <p className="rounded-lg border border-dashed border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-500">
-              Select an artist before editing discography.
+              {t("admin.discography.selectArtistFirst")}
             </p>
           ) : (
             <>
               <div className="grid gap-4 md:grid-cols-2">
-                <Field label="Release Title">
+                <Field label={t("form.labels.releaseTitle")}>
                   <input
                     value={releaseForm.title}
                     onChange={(event) => updateReleaseForm("title", event.target.value)}
@@ -438,7 +440,7 @@ export default function AdminDiscographyPage() {
                   />
                 </Field>
 
-                <Field label="Release Type">
+                <Field label={t("form.labels.releaseType")}>
                   <select
                     value={releaseForm.type}
                     onChange={(event) => updateReleaseForm("type", event.target.value)}
@@ -452,7 +454,7 @@ export default function AdminDiscographyPage() {
                   </select>
                 </Field>
 
-                <Field label="Release Date">
+                <Field label={t("form.labels.releaseDate")}>
                   <input
                     type="date"
                     value={releaseForm.date}
@@ -461,7 +463,7 @@ export default function AdminDiscographyPage() {
                   />
                 </Field>
 
-                <Field label="Release Year">
+                <Field label={t("form.labels.releaseYear")}>
                   <input
                     type="number"
                     value={releaseForm.release_year}
@@ -472,7 +474,7 @@ export default function AdminDiscographyPage() {
                   />
                 </Field>
 
-                <Field label="Sort Year">
+                <Field label={t("form.labels.sortYear")}>
                   <input
                     type="number"
                     value={releaseForm.year}
@@ -481,7 +483,7 @@ export default function AdminDiscographyPage() {
                   />
                 </Field>
 
-                <Field label="Release Status">
+                <Field label={t("form.labels.releaseStatus")}>
                   <select
                     value={releaseForm.status}
                     onChange={(event) => updateReleaseForm("status", event.target.value)}
@@ -495,7 +497,7 @@ export default function AdminDiscographyPage() {
                   </select>
                 </Field>
 
-                <Field label="Label">
+                <Field label={t("form.labels.label")}>
                   <input
                     value={releaseForm.label}
                     onChange={(event) => updateReleaseForm("label", event.target.value)}
@@ -503,16 +505,16 @@ export default function AdminDiscographyPage() {
                   />
                 </Field>
 
-                <Field label="Country">
+                <Field label={t("form.labels.country")}>
                   <input
                     value={releaseForm.country}
                     onChange={(event) => updateReleaseForm("country", event.target.value)}
-                    placeholder="DO"
+                    placeholder={t("form.placeholders.countryDefault")}
                     className={inputClass}
                   />
                 </Field>
 
-                <Field label="Catalog Number">
+                <Field label={t("form.labels.catalogNumber")}>
                   <input
                     value={releaseForm.catalog_number}
                     onChange={(event) =>
@@ -522,7 +524,7 @@ export default function AdminDiscographyPage() {
                   />
                 </Field>
 
-                <Field label="Barcode">
+                <Field label={t("form.labels.barcode")}>
                   <input
                     value={releaseForm.barcode}
                     onChange={(event) => updateReleaseForm("barcode", event.target.value)}
@@ -532,13 +534,13 @@ export default function AdminDiscographyPage() {
               </div>
 
               <div className="mt-4">
-                <Field label="Disambiguation">
+                <Field label={t("form.labels.disambiguation")}>
                   <input
                     value={releaseForm.disambiguation}
                     onChange={(event) =>
                       updateReleaseForm("disambiguation", event.target.value)
                     }
-                    placeholder="Remaster, live edition, alternate release..."
+                    placeholder={t("form.placeholders.disambiguation")}
                     className={inputClass}
                   />
                 </Field>
@@ -551,10 +553,10 @@ export default function AdminDiscographyPage() {
                 className="mt-5 w-full rounded-lg bg-(--color-flagblue) px-5 py-4 text-sm uppercase tracking-[0.18em] text-white transition disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {loading
-                  ? "Processing..."
+                  ? t("admin.status.processing")
                   : editingReleaseId
-                    ? "Update Release"
-                    : "Add Release"}
+                    ? t("admin.buttons.updateRelease")
+                    : t("admin.buttons.addRelease")}
               </button>
             </>
           )}

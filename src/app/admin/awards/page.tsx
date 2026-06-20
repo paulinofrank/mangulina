@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { FormEvent } from "react";
+import { useTranslations } from "next-intl";
 import { getSupabaseClient } from "@/lib/supabase";
 
 type AdminTab = "awards" | "categories" | "artist-awards";
@@ -115,6 +116,7 @@ function firstRelation<T>(value: T | T[] | null | undefined) {
 }
 
 export default function AdminAwardsPage() {
+  const t = useTranslations();
   const supabase = getSupabaseClient();
 
   const [activeTab, setActiveTab] = useState<AdminTab>("awards");
@@ -138,7 +140,7 @@ export default function AdminAwardsPage() {
   const [awardSearch, setAwardSearch] = useState("");
   const [artistSearch, setArtistSearch] = useState("");
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState("Loading awards...");
+  const [status, setStatus] = useState(t("admin.status.loadingAwards"));
 
   const filteredAwards = useMemo(() => {
     const query = awardSearch.trim().toLowerCase();
@@ -176,7 +178,7 @@ export default function AdminAwardsPage() {
 
   const loadAwards = useCallback(async () => {
     setLoading(true);
-    setStatus("Loading awards...");
+    setStatus(t("admin.status.loadingAwards"));
 
     const { data, error } = await supabase
       .from("awards")
@@ -184,7 +186,7 @@ export default function AdminAwardsPage() {
       .order("name", { ascending: true });
 
     if (error) {
-      setStatus(`Error loading awards: ${error.message}`);
+      setStatus(`${t("admin.errors.loadingAwards").replace("{error}", error.message)}`);
       setLoading(false);
       return;
     }
@@ -192,7 +194,7 @@ export default function AdminAwardsPage() {
     setAwards((data ?? []) as AwardRow[]);
     setStatus("");
     setLoading(false);
-  }, [supabase]);
+  }, [supabase, t]);
 
   const loadAllCategories = useCallback(async () => {
     const { data, error } = await supabase
@@ -201,12 +203,12 @@ export default function AdminAwardsPage() {
       .order("name", { ascending: true });
 
     if (error) {
-      setStatus(`Error loading categories: ${error.message}`);
+      setStatus(`${t("admin.errors.loadingCategories").replace("{error}", error.message)}`);
       return;
     }
 
     setAllCategories((data ?? []) as AwardCategoryRow[]);
-  }, [supabase]);
+  }, [supabase, t]);
 
   const loadArtists = useCallback(async () => {
     const { data, error } = await supabase
@@ -215,12 +217,12 @@ export default function AdminAwardsPage() {
       .order("name", { ascending: true });
 
     if (error) {
-      setStatus(`Error loading artists: ${error.message}`);
+      setStatus(`${t("admin.errors.loadingArtists").replace("{error}", error.message)}`);
       return;
     }
 
     setArtists((data ?? []) as ArtistRow[]);
-  }, [supabase]);
+  }, [supabase, t]);
 
   const loadCategoriesForAward = useCallback(
     async (awardId: string) => {
@@ -229,7 +231,7 @@ export default function AdminAwardsPage() {
         return;
       }
 
-      setStatus("Loading categories...");
+      setStatus(t("admin.status.loadingCategories"));
 
       const { data, error } = await supabase
         .from("award_categories")
@@ -238,14 +240,14 @@ export default function AdminAwardsPage() {
         .order("name", { ascending: true });
 
       if (error) {
-        setStatus(`Error loading categories: ${error.message}`);
+        setStatus(`${t("admin.errors.loadingCategories").replace("{error}", error.message)}`);
         return;
       }
 
       setCategories((data ?? []) as AwardCategoryRow[]);
       setStatus("");
     },
-    [supabase],
+    [supabase, t],
   );
 
   const loadArtistAwards = useCallback(
@@ -255,7 +257,7 @@ export default function AdminAwardsPage() {
         return;
       }
 
-      setStatus("Loading artist awards...");
+      setStatus(t("admin.status.loadingArtistAwards"));
 
       const { data, error } = await supabase
         .from("artist_awards")
@@ -285,14 +287,14 @@ export default function AdminAwardsPage() {
         .order("year", { ascending: false, nullsFirst: false });
 
       if (error) {
-        setStatus(`Error loading artist awards: ${error.message}`);
+        setStatus(`${t("admin.errors.loadingArtistAwards").replace("{error}", error.message)}`);
         return;
       }
 
       setArtistAwards((data ?? []) as ArtistAwardRow[]);
       setStatus("");
     },
-    [supabase],
+    [supabase, t],
   );
 
   useEffect(() => {
@@ -330,12 +332,12 @@ export default function AdminAwardsPage() {
     event.preventDefault();
 
     if (!awardForm.name.trim()) {
-      setStatus("Award name is required.");
+      setStatus(t("admin.awards.nameRequired"));
       return;
     }
 
     setLoading(true);
-    setStatus("Saving award...");
+    setStatus(t("admin.status.savingAward"));
 
     const payload = {
       name: awardForm.name.trim(),
@@ -354,14 +356,14 @@ export default function AdminAwardsPage() {
       : await supabase.from("awards").insert([payload]).select("id").maybeSingle();
 
     if (response.error) {
-      setStatus(`Error saving award: ${response.error.message}`);
+      setStatus(`${t("admin.errors.savingAward").replace("{error}", response.error.message)}`);
       setLoading(false);
       return;
     }
 
     await loadAwards();
     setSelectedAwardId(response.data?.id ?? selectedAwardId);
-    setStatus("Award saved.");
+    setStatus(t("admin.status.awardSaved"));
     setLoading(false);
   }
 
@@ -389,17 +391,17 @@ export default function AdminAwardsPage() {
     event.preventDefault();
 
     if (!categoryForm.award_id) {
-      setStatus("Award is required for a category.");
+      setStatus(t("admin.awards.categoryAwardRequired"));
       return;
     }
 
     if (!categoryForm.name.trim()) {
-      setStatus("Category name is required.");
+      setStatus(t("admin.awards.categoryNameRequired"));
       return;
     }
 
     setLoading(true);
-    setStatus("Saving category...");
+    setStatus(t("admin.status.savingCategory"));
 
     const payload = {
       award_id: categoryForm.award_id,
@@ -421,7 +423,7 @@ export default function AdminAwardsPage() {
           .maybeSingle();
 
     if (response.error) {
-      setStatus(`Error saving category: ${response.error.message}`);
+      setStatus(`${t("admin.errors.savingCategory").replace("{error}", response.error.message)}`);
       setLoading(false);
       return;
     }
@@ -430,7 +432,7 @@ export default function AdminAwardsPage() {
     await loadCategoriesForAward(categoryForm.award_id);
     await loadAllCategories();
     setSelectedCategoryId(response.data?.id ?? selectedCategoryId);
-    setStatus("Category saved.");
+    setStatus(t("admin.status.categorySaved"));
     setLoading(false);
   }
 
@@ -472,17 +474,17 @@ export default function AdminAwardsPage() {
     event.preventDefault();
 
     if (!artistAwardForm.artist_id) {
-      setStatus("Artist is required.");
+      setStatus(t("admin.awards.artistRequired"));
       return;
     }
 
     if (!artistAwardForm.award_id) {
-      setStatus("Award is required.");
+      setStatus(t("admin.awards.awardRequired"));
       return;
     }
 
     setLoading(true);
-    setStatus("Saving artist award...");
+    setStatus(t("admin.status.savingArtistAward"));
 
     const payload = {
       artist_id: artistAwardForm.artist_id,
@@ -508,7 +510,7 @@ export default function AdminAwardsPage() {
           .maybeSingle();
 
     if (response.error) {
-      setStatus(`Error saving artist award: ${response.error.message}`);
+      setStatus(`${t("admin.errors.savingArtistAward").replace("{error}", response.error.message)}`);
       setLoading(false);
       return;
     }
@@ -516,7 +518,7 @@ export default function AdminAwardsPage() {
     await loadArtistAwards(artistAwardForm.artist_id);
     setSelectedArtistId(artistAwardForm.artist_id);
     setSelectedArtistAwardId(response.data?.id ?? selectedArtistAwardId);
-    setStatus("Artist award saved.");
+    setStatus(t("admin.status.artistAwardSaved"));
     setLoading(false);
   }
 
@@ -527,13 +529,13 @@ export default function AdminAwardsPage() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#CE1126]">
-                Mangulina Admin
+                {t("admin.ui.branding")}
               </p>
               <h1 className="mt-3 text-3xl font-black uppercase tracking-tight text-[#002D62] sm:text-4xl">
-                Awards Manager
+                {t("admin.awards.title")}
               </h1>
               <p className="mt-4 max-w-3xl text-sm leading-relaxed text-gray-600 sm:text-base">
-                Manage awards, categories, and artist awards/nominations.
+                {t("admin.awards.description")}
               </p>
             </div>
 
@@ -541,16 +543,16 @@ export default function AdminAwardsPage() {
               href="/admin"
               className="inline-flex w-fit items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-normal uppercase tracking-[0.18em] text-[#002D62] shadow-sm transition hover:border-[#CE1126] hover:text-[#CE1126]"
             >
-              Admin Portal
+              {t("admin.navigation.portal")}
             </Link>
           </div>
         </header>
 
         <div className="mb-6 flex flex-wrap gap-2">
           {[
-            { id: "awards", label: "Awards" },
-            { id: "categories", label: "Categories" },
-            { id: "artist-awards", label: "Artist Awards" },
+            { id: "awards", label: t("admin.awards.tabAwards") },
+            { id: "categories", label: t("admin.awards.tabCategories") },
+            { id: "artist-awards", label: t("admin.awards.tabArtistAwards") },
           ].map((tab) => (
             <button
               key={tab.id}
@@ -578,21 +580,21 @@ export default function AdminAwardsPage() {
             <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm">
               <div className="mb-4 flex items-center justify-between gap-3">
                 <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
-                  Awards
+                  {t("admin.awards.listHeading")}
                 </h2>
                 <button
                   type="button"
                   onClick={resetAwardForm}
                   className={secondaryButtonClass}
                 >
-                  New
+                  {t("admin.buttons.new")}
                 </button>
               </div>
 
               <input
                 value={awardSearch}
                 onChange={(event) => setAwardSearch(event.target.value)}
-                placeholder="Search awards..."
+                placeholder={t("admin.awards.searchPlaceholder")}
                 className={inputClass}
               />
 
@@ -611,7 +613,7 @@ export default function AdminAwardsPage() {
                     <p className="font-medium text-[#002D62]">{award.name}</p>
                     <p className="mt-1 text-xs text-gray-500">
                       {[award.organization, award.country].filter(Boolean).join(" · ") ||
-                        "No organization"}
+                        t("admin.awards.noOrganization")}
                     </p>
                   </button>
                 ))}
@@ -620,11 +622,11 @@ export default function AdminAwardsPage() {
 
             <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm">
               <h2 className="mb-5 text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
-                {selectedAwardId ? "Edit Award" : "Create Award"}
+                {selectedAwardId ? t("admin.awards.editHeading") : t("admin.awards.createHeading")}
               </h2>
 
               <form onSubmit={saveAward} className="space-y-4">
-                <Field label="Award Name">
+                <Field label={t("form.labels.awardName")}>
                   <input
                     value={awardForm.name}
                     onChange={(event) =>
@@ -639,7 +641,7 @@ export default function AdminAwardsPage() {
                 </Field>
 
                 <div className="grid gap-4 md:grid-cols-2">
-                  <Field label="Organization">
+                  <Field label={t("form.labels.organization")}>
                     <input
                       value={awardForm.organization}
                       onChange={(event) =>
@@ -652,7 +654,7 @@ export default function AdminAwardsPage() {
                     />
                   </Field>
 
-                  <Field label="Country">
+                  <Field label={t("form.labels.country")}>
                     <input
                       value={awardForm.country}
                       onChange={(event) =>
@@ -666,7 +668,7 @@ export default function AdminAwardsPage() {
                   </Field>
                 </div>
 
-                <Field label="Description">
+                <Field label={t("form.labels.description")}>
                   <textarea
                     value={awardForm.description}
                     onChange={(event) =>
@@ -681,10 +683,10 @@ export default function AdminAwardsPage() {
 
                 <div className="flex flex-wrap gap-3">
                   <button type="submit" disabled={loading} className={primaryButtonClass}>
-                    Save Award
+                    {t("admin.buttons.saveAward")}
                   </button>
                   <button type="button" onClick={resetAwardForm} className={secondaryButtonClass}>
-                    Reset / Create New Award
+                    {t("admin.buttons.resetAwardForm")}
                   </button>
                 </div>
               </form>

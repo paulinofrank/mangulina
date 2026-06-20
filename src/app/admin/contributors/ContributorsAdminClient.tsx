@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { FormEvent, ReactNode } from "react";
+import { useTranslations } from "next-intl";
 import ContributorImage from "@/components/atoms/ContributorImage";
 import { getSupabaseClient } from "@/lib/supabase";
 import type { Contributor } from "@/types/contributor";
@@ -81,12 +82,13 @@ export default function ContributorsAdminClient({
   initialContributors,
   initialError,
 }: Props) {
+  const t = useTranslations();
   const [contributors, setContributors] = useState(() => sortContributors(initialContributors));
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [form, setForm] = useState<ContributorForm>(emptyForm);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState(initialError ? `Error loading contributors: ${initialError}` : "");
+  const [message, setMessage] = useState(initialError ? `${t("admin.errors.updatingContributor")} ${initialError}` : "");
   const [messageType, setMessageType] = useState<"success" | "error" | "info">(
     initialError ? "error" : "info",
   );
@@ -167,16 +169,16 @@ export default function ContributorsAdminClient({
     const displayOrder = Number(form.display_order);
     const resolvedSlug = form.slug.trim() || (!selectedId ? slugify(form.name) : "");
     if (!form.name.trim() || !resolvedSlug || !form.role.trim()) {
-      showMessage("Name, slug, and role are required.", "error");
+      showMessage(t("admin.contributors.requiredFieldsError"), "error");
       return;
     }
     if (!form.display_order.trim() || !Number.isFinite(displayOrder)) {
-      showMessage("Display order must be a number.", "error");
+      showMessage(t("admin.contributors.displayOrderError"), "error");
       return;
     }
 
     setLoading(true);
-    showMessage("Saving contributor...", "info");
+    showMessage(t("admin.status.savingContributor"), "info");
 
     try {
       const response = await fetch("/api/admin/contributors", {
@@ -207,10 +209,10 @@ export default function ContributorsAdminClient({
       }
 
       await refreshContributors(result.contributor.id);
-      showMessage("Contributor saved.", "success");
+      showMessage(t("admin.status.contributorSaved"), "success");
     } catch (error) {
       showMessage(
-        `Error saving contributor: ${error instanceof Error ? error.message : "Unknown error"}`,
+        `${t("admin.errors.savingContributor").replace("{error}", error instanceof Error ? error.message : "Unknown error")}`,
         "error",
       );
     } finally {
@@ -220,7 +222,7 @@ export default function ContributorsAdminClient({
 
   async function toggleActive(contributor: Contributor) {
     setLoading(true);
-    showMessage(`${contributor.active ? "Deactivating" : "Activating"} contributor...`, "info");
+    showMessage(`${contributor.active ? t("admin.status.deactivatingContributor") : t("admin.status.activatingContributor")}`, "info");
 
     try {
       const response = await fetch("/api/admin/contributors", {
@@ -235,10 +237,10 @@ export default function ContributorsAdminClient({
       }
 
       await refreshContributors(selectedId ?? undefined);
-      showMessage(`Contributor ${result.contributor.active ? "activated" : "deactivated"}.`, "success");
+      showMessage(t("admin.status.contributorToggled").replace("{status}", result.contributor.active ? t("admin.contributors.statusActive") : t("admin.contributors.statusInactive")), "success");
     } catch (error) {
       showMessage(
-        `Error updating contributor: ${error instanceof Error ? error.message : "Unknown error"}`,
+        `${t("admin.errors.updatingContributor").replace("{error}", error instanceof Error ? error.message : "Unknown error")}`,
         "error",
       );
     } finally {
@@ -248,18 +250,18 @@ export default function ContributorsAdminClient({
 
   async function uploadImage(file: File) {
     if (!selectedId) {
-      showMessage("Save the contributor before uploading an image.", "error");
+      showMessage(t("admin.contributors.saveBeforeImage"), "error");
       return;
     }
 
     const isWebp = file.type === "image/webp" || file.name.toLowerCase().endsWith(".webp");
     if (!isWebp) {
-      showMessage("Please upload a .webp image file.", "error");
+      showMessage(t("admin.contributors.webpRequired"), "error");
       return;
     }
 
     setLoading(true);
-    showMessage(`Uploading image as ${selectedId}.webp...`, "info");
+    showMessage(t("admin.status.uploadingImage").replace("{id}", selectedId), "info");
 
     const filePath = `${selectedId}.webp`;
     const webpFile = new File([file], filePath, { type: "image/webp" });
@@ -272,10 +274,10 @@ export default function ContributorsAdminClient({
       });
 
     if (error) {
-      showMessage(`Error uploading image: ${error.message}`, "error");
+      showMessage(`${t("admin.errors.uploadingImage").replace("{error}", error.message)}`, "error");
     } else {
       setImageCacheKeys((current) => ({ ...current, [selectedId]: Date.now() }));
-      showMessage("Contributor image uploaded.", "success");
+      showMessage(t("admin.status.imageUploaded"), "success");
     }
     setLoading(false);
   }
@@ -286,11 +288,11 @@ export default function ContributorsAdminClient({
         <header className="mb-8 rounded-xl border border-black/5 bg-white p-6 shadow-sm sm:p-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div>
-              <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#CE1126]">Mangulina Admin</p>
-              <h1 className="mt-3 text-3xl font-black uppercase tracking-tight text-[#002D62] sm:text-4xl">Contributors Manager</h1>
-              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-gray-600 sm:text-base">Create, edit, order, and publish Mangulina contributor profiles.</p>
+              <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#CE1126]">{t("admin.ui.branding")}</p>
+              <h1 className="mt-3 text-3xl font-black uppercase tracking-tight text-[#002D62] sm:text-4xl">{t("admin.contributors.title")}</h1>
+              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-gray-600 sm:text-base">{t("admin.contributors.description")}</p>
             </div>
-            <Link href="/admin" className="inline-flex w-fit items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs uppercase tracking-[0.18em] text-[#002D62] shadow-sm transition hover:border-[#CE1126] hover:text-[#CE1126]">Admin Portal</Link>
+            <Link href="/admin" className="inline-flex w-fit items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs uppercase tracking-[0.18em] text-[#002D62] shadow-sm transition hover:border-[#CE1126] hover:text-[#CE1126]">{t("admin.navigation.portal")}</Link>
           </div>
         </header>
 
@@ -303,10 +305,10 @@ export default function ContributorsAdminClient({
         <div className="grid gap-6 lg:grid-cols-[380px_1fr]">
           <aside className="rounded-xl border border-black/5 bg-white p-5 shadow-sm">
             <div className="mb-4 flex items-center justify-between gap-3">
-              <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">Contributors</h2>
-              <button type="button" onClick={createNew} className="rounded-lg border border-gray-200 px-3 py-2 text-xs font-medium uppercase tracking-[0.14em] text-[#002D62] transition hover:border-[#CE1126] hover:text-[#CE1126]">New</button>
+              <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">{t("admin.contributors.listHeading")}</h2>
+              <button type="button" onClick={createNew} className="rounded-lg border border-gray-200 px-3 py-2 text-xs font-medium uppercase tracking-[0.14em] text-[#002D62] transition hover:border-[#CE1126] hover:text-[#CE1126]">{t("admin.buttons.new")}</button>
             </div>
-            <input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search contributors..." className={inputClass} />
+            <input value={search} onChange={(event) => setSearch(event.target.value)} placeholder={t("admin.contributors.searchPlaceholder")} className={inputClass} />
             <div className="mt-4 max-h-[780px] space-y-2 overflow-y-auto pr-1">
               {filteredContributors.map((contributor) => (
                 <div key={contributor.id} className={`rounded-xl border p-3 transition ${selectedId === contributor.id ? "border-[#CE1126]/40 bg-[#CE1126]/5" : "border-gray-100"}`}>
@@ -314,58 +316,58 @@ export default function ContributorsAdminClient({
                     <ContributorImage contributorId={contributor.id} alt="" cacheKey={imageCacheKeys[contributor.id]} className="h-14 w-14 shrink-0 rounded-lg object-cover" />
                     <span className="min-w-0 flex-1">
                       <span className="block truncate font-medium text-[#002D62]">{contributor.name}</span>
-                      <span className="mt-1 block truncate text-xs text-gray-500">{contributor.role} · Order {contributor.display_order}</span>
-                      <span className={`mt-1 inline-block text-[10px] font-medium uppercase tracking-[0.12em] ${contributor.active ? "text-green-700" : "text-gray-400"}`}>{contributor.active ? "Active" : "Inactive"}</span>
+                      <span className="mt-1 block truncate text-xs text-gray-500">{contributor.role} · {t("admin.contributors.displayOrder").replace("{number}", String(contributor.display_order))}</span>
+                      <span className={`mt-1 inline-block text-[10px] font-medium uppercase tracking-[0.12em] ${contributor.active ? "text-green-700" : "text-gray-400"}`}>{contributor.active ? t("admin.contributors.statusActive") : t("admin.contributors.statusInactive")}</span>
                     </span>
                   </button>
                   <div className="mt-3 flex gap-2 border-t border-gray-100 pt-3">
-                    <button type="button" onClick={() => selectContributor(contributor)} className="rounded-lg border border-gray-200 px-3 py-1.5 text-xs font-medium text-[#002D62]">Edit</button>
-                    <button type="button" disabled={loading} onClick={() => void toggleActive(contributor)} className="rounded-lg border border-gray-200 px-3 py-1.5 text-xs font-medium text-[#CE1126] disabled:opacity-50">{contributor.active ? "Deactivate" : "Activate"}</button>
+                    <button type="button" onClick={() => selectContributor(contributor)} className="rounded-lg border border-gray-200 px-3 py-1.5 text-xs font-medium text-[#002D62]">{t("admin.buttons.edit")}</button>
+                    <button type="button" disabled={loading} onClick={() => void toggleActive(contributor)} className="rounded-lg border border-gray-200 px-3 py-1.5 text-xs font-medium text-[#CE1126] disabled:opacity-50">{contributor.active ? t("admin.buttons.deactivate") : t("admin.buttons.activate")}</button>
                   </div>
                 </div>
               ))}
-              {!filteredContributors.length && <p className="rounded-xl border border-dashed border-gray-200 px-4 py-6 text-sm text-gray-500">No contributors found.</p>}
+              {!filteredContributors.length && <p className="rounded-xl border border-dashed border-gray-200 px-4 py-6 text-sm text-gray-500">{t("admin.contributors.emptyState")}</p>}
             </div>
           </aside>
 
           <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
             <div className="mb-5 flex items-center justify-between gap-3">
-              <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">{selectedContributor ? "Edit Contributor" : "Create Contributor"}</h2>
-              {!selectedId && <button type="button" onClick={() => setForm((current) => ({ ...current, slug: slugify(current.name) }))} className="rounded-lg border border-gray-200 px-3 py-2 text-xs font-medium uppercase tracking-[0.14em] text-[#002D62]">Generate Slug</button>}
+              <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">{selectedContributor ? t("admin.contributors.editHeading") : t("admin.contributors.createHeading")}</h2>
+              {!selectedId && <button type="button" onClick={() => setForm((current) => ({ ...current, slug: slugify(current.name) }))} className="rounded-lg border border-gray-200 px-3 py-2 text-xs font-medium uppercase tracking-[0.14em] text-[#002D62]">{t("admin.buttons.generateSlug")}</button>}
             </div>
 
             {selectedContributor && (
               <div className="mb-6 flex flex-col gap-4 rounded-xl border border-gray-100 bg-gray-50 p-4 sm:flex-row sm:items-center">
                 <ContributorImage contributorId={selectedContributor.id} alt={selectedContributor.name} cacheKey={imageCacheKeys[selectedContributor.id]} className="aspect-square w-32 rounded-xl object-cover" />
                 <label className="block flex-1">
-                  <span className="mb-2 block text-[10px] font-medium uppercase tracking-[0.18em] text-gray-400">Replace Contributor Image</span>
+                  <span className="mb-2 block text-[10px] font-medium uppercase tracking-[0.18em] text-gray-400">{t("admin.contributors.replaceImage")}</span>
                   <input type="file" accept=".webp,image/webp" disabled={loading} onChange={(event) => { const file = event.target.files?.[0]; if (file) void uploadImage(file); event.target.value = ""; }} className="block w-full text-sm text-gray-600 file:mr-4 file:rounded-lg file:border-0 file:bg-[#002D62] file:px-4 file:py-2 file:text-sm file:text-white disabled:opacity-50" />
-                  <span className="mt-2 block text-xs text-gray-500">WebP only. Uploads as {selectedContributor.id}.webp.</span>
+                  <span className="mt-2 block text-xs text-gray-500">{t("admin.contributors.webpOnlyHint").replace("{id}", selectedContributor.id)}</span>
                 </label>
               </div>
             )}
 
             <form onSubmit={saveContributor} className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
-                <Field label="Name"><input value={form.name} onChange={(event) => updateName(event.target.value)} required className={inputClass} /></Field>
-                <Field label="Slug"><input value={form.slug} onChange={(event) => setForm((current) => ({ ...current, slug: event.target.value }))} required className={inputClass} /></Field>
-                <Field label="Role"><input value={form.role} onChange={(event) => setForm((current) => ({ ...current, role: event.target.value }))} required className={inputClass} /></Field>
-                <Field label="Location"><input value={form.location} onChange={(event) => setForm((current) => ({ ...current, location: event.target.value }))} className={inputClass} /></Field>
+                <Field label={t("form.labels.name")}><input value={form.name} onChange={(event) => updateName(event.target.value)} required className={inputClass} /></Field>
+                <Field label={t("form.labels.slug")}><input value={form.slug} onChange={(event) => setForm((current) => ({ ...current, slug: event.target.value }))} required className={inputClass} /></Field>
+                <Field label={t("form.labels.role")}><input value={form.role} onChange={(event) => setForm((current) => ({ ...current, role: event.target.value }))} required className={inputClass} /></Field>
+                <Field label={t("form.labels.location")}><input value={form.location} onChange={(event) => setForm((current) => ({ ...current, location: event.target.value }))} className={inputClass} /></Field>
               </div>
-              <Field label="Bio"><textarea value={form.bio} onChange={(event) => setForm((current) => ({ ...current, bio: event.target.value }))} className={`${inputClass} min-h-32 resize-y leading-relaxed`} /></Field>
-              <Field label="Specialty (comma-separated)"><input value={form.specialty} onChange={(event) => setForm((current) => ({ ...current, specialty: event.target.value }))} placeholder="Dominican music, Merengue, Music history" className={inputClass} /></Field>
+              <Field label={t("form.labels.bio")}><textarea value={form.bio} onChange={(event) => setForm((current) => ({ ...current, bio: event.target.value }))} className={`${inputClass} min-h-32 resize-y leading-relaxed`} /></Field>
+              <Field label={t("form.labels.specialty")}><input value={form.specialty} onChange={(event) => setForm((current) => ({ ...current, specialty: event.target.value }))} placeholder={t("form.placeholders.specialtyExample")} className={inputClass} /></Field>
               <div className="grid gap-4 md:grid-cols-2">
                 {(["website", "facebook", "instagram", "youtube"] as const).map((field) => (
-                  <Field key={field} label={field[0].toUpperCase() + field.slice(1)}><input type="url" value={form[field]} onChange={(event) => setForm((current) => ({ ...current, [field]: event.target.value }))} className={inputClass} /></Field>
+                  <Field key={field} label={t(`form.labels.${field}`)}><input type="url" value={form[field]} onChange={(event) => setForm((current) => ({ ...current, [field]: event.target.value }))} className={inputClass} /></Field>
                 ))}
               </div>
               <div className="grid gap-4 md:grid-cols-[1fr_auto]">
-                <Field label="Display Order"><input type="number" value={form.display_order} onChange={(event) => setForm((current) => ({ ...current, display_order: event.target.value }))} required className={inputClass} /></Field>
-                <label className="flex items-end gap-3 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3 text-sm text-gray-700"><input type="checkbox" checked={form.active} onChange={(event) => setForm((current) => ({ ...current, active: event.target.checked }))} className="h-4 w-4" />Active</label>
+                <Field label={t("form.labels.displayOrder")}><input type="number" value={form.display_order} onChange={(event) => setForm((current) => ({ ...current, display_order: event.target.value }))} required className={inputClass} /></Field>
+                <label className="flex items-end gap-3 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3 text-sm text-gray-700"><input type="checkbox" checked={form.active} onChange={(event) => setForm((current) => ({ ...current, active: event.target.checked }))} className="h-4 w-4" />{t("form.labels.active")}</label>
               </div>
               <div className="flex flex-wrap gap-3 pt-2">
-                <button type="submit" disabled={loading} className="rounded-lg bg-[#002D62] px-5 py-3 text-sm font-medium uppercase tracking-[0.16em] text-white disabled:cursor-not-allowed disabled:opacity-50">Save Contributor</button>
-                <button type="button" onClick={createNew} className="rounded-lg border border-gray-200 bg-white px-5 py-3 text-sm font-medium uppercase tracking-[0.16em] text-[#002D62] transition hover:border-[#CE1126] hover:text-[#CE1126]">Reset / Create New</button>
+                <button type="submit" disabled={loading} className="rounded-lg bg-[#002D62] px-5 py-3 text-sm font-medium uppercase tracking-[0.16em] text-white disabled:cursor-not-allowed disabled:opacity-50">{t("admin.buttons.saveContributor")}</button>
+                <button type="button" onClick={createNew} className="rounded-lg border border-gray-200 bg-white px-5 py-3 text-sm font-medium uppercase tracking-[0.16em] text-[#002D62] transition hover:border-[#CE1126] hover:text-[#CE1126]">{t("admin.buttons.resetForm")}</button>
               </div>
             </form>
           </section>
