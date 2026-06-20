@@ -698,10 +698,10 @@ export default function AdminAwardsPage() {
           <div className="grid gap-6 lg:grid-cols-[360px_1fr]">
             <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm">
               <h2 className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
-                Award Categories
+                {t("admin.awards.categoriesHeading")}
               </h2>
 
-              <Field label="Award">
+              <Field label={t("form.labels.award")}>
                 <select
                   value={selectedCategoryAwardId}
                   onChange={(event) => {
@@ -715,7 +715,7 @@ export default function AdminAwardsPage() {
                   }}
                   className={inputClass}
                 >
-                  <option value="">-- Select Award --</option>
+                  <option value="">{t("form.placeholders.selectAward")}</option>
                   {awards.map((award) => (
                     <option key={award.id} value={award.id}>
                       {award.name}
@@ -754,7 +754,7 @@ export default function AdminAwardsPage() {
             <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm">
               <div className="mb-5 flex items-center justify-between gap-3">
                 <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
-                  {selectedCategoryId ? "Edit Category" : "Create Category"}
+                  {selectedCategoryId ? t("admin.awards.editCategoryHeading") : t("admin.awards.createCategoryHeading")}
                 </h2>
                 <button type="button" onClick={resetCategoryForm} className={secondaryButtonClass}>
                   New
@@ -762,7 +762,7 @@ export default function AdminAwardsPage() {
               </div>
 
               <form onSubmit={saveCategory} className="space-y-4">
-                <Field label="Award">
+                <Field label={t("form.labels.award")}>
                   <select
                     value={categoryForm.award_id}
                     onChange={(event) =>
@@ -774,7 +774,7 @@ export default function AdminAwardsPage() {
                     className={inputClass}
                     required
                   >
-                    <option value="">-- Select Award --</option>
+                    <option value="">{t("form.placeholders.selectAward")}</option>
                     {awards.map((award) => (
                       <option key={award.id} value={award.id}>
                         {award.name}
@@ -783,7 +783,7 @@ export default function AdminAwardsPage() {
                   </select>
                 </Field>
 
-                <Field label="Category Name">
+                <Field label={t("form.labels.categoryName")}>
                   <input
                     value={categoryForm.name}
                     onChange={(event) =>
@@ -797,7 +797,7 @@ export default function AdminAwardsPage() {
                   />
                 </Field>
 
-                <Field label="Description">
+                <Field label={t("form.labels.description")}>
                   <textarea
                     value={categoryForm.description}
                     onChange={(event) =>
@@ -900,15 +900,15 @@ export default function AdminAwardsPage() {
             <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm">
               <div className="mb-5 flex items-center justify-between gap-3">
                 <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
-                  {selectedArtistAwardId ? "Edit Artist Award" : "Add Artist Award"}
+                  {selectedArtistAwardId ? t("admin.awards.editArtistAwardHeading") : t("admin.awards.addArtistAwardHeading")}
                 </h2>
                 <button type="button" onClick={resetArtistAwardForm} className={secondaryButtonClass}>
-                  New
+                  {t("admin.buttons.new")}
                 </button>
               </div>
 
               <form onSubmit={saveArtistAward} className="space-y-4">
-                <Field label="Artist">
+                <Field label={t("form.labels.artist")}>
                   <select
                     value={artistAwardForm.artist_id}
                     onChange={(event) => updateArtistSelection(event.target.value)}
@@ -925,7 +925,7 @@ export default function AdminAwardsPage() {
                 </Field>
 
                 <div className="grid gap-4 md:grid-cols-2">
-                  <Field label="Award">
+                  <Field label={t("form.labels.award")}>
                     <select
                       value={artistAwardForm.award_id}
                       onChange={(event) =>
@@ -938,7 +938,7 @@ export default function AdminAwardsPage() {
                       className={inputClass}
                       required
                     >
-                      <option value="">-- Select Award --</option>
+                      <option value="">{t("form.placeholders.selectAward")}</option>
                       {awards.map((award) => (
                         <option key={award.id} value={award.id}>
                           {award.name}
@@ -947,7 +947,7 @@ export default function AdminAwardsPage() {
                     </select>
                   </Field>
 
-                  <Field label="Category">
+                  <Field label={t("form.labels.category")}>
                     <select
                       value={artistAwardForm.category_id}
                       onChange={(event) =>
@@ -958,7 +958,7 @@ export default function AdminAwardsPage() {
                       }
                       className={inputClass}
                     >
-                      <option value="">-- No Category --</option>
+                      <option value="">{t("form.options.noCategory")}</option>
                       {artistAwardCategories.map((category) => (
                         <option key={category.id} value={category.id}>
                           {category.name}
@@ -969,7 +969,7 @@ export default function AdminAwardsPage() {
                 </div>
 
                 <div className="grid gap-4 md:grid-cols-[1fr_1fr_auto]">
-                  <Field label="Year">
+                  <Field label={t("form.labels.year")}>
                     <input
                       type="number"
                       value={artistAwardForm.year}
@@ -983,7 +983,7 @@ export default function AdminAwardsPage() {
                     />
                   </Field>
 
-                  <Field label="Work">
+                  <Field label={t("form.labels.work")}>
                     <input
                       value={artistAwardForm.work}
                       onChange={(event) =>
@@ -1008,11 +1008,11 @@ export default function AdminAwardsPage() {
                       }
                       className="h-4 w-4"
                     />
-                    Won
+                    {t("form.labels.won")}
                   </label>
                 </div>
 
-                <Field label="Source">
+                <Field label={t("form.labels.source")}>
                   <input
                     value={artistAwardForm.source}
                     onChange={(event) =>
