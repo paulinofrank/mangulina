@@ -36,6 +36,8 @@
   "footer": {
     "tagline": "The Dominican Music Database",
     "copyright": "© 2026 Mangulina. All Rights Reserved.",
+    "languageSwitchToSpanish": "Cambiar a Español",
+    "languageSwitchToEnglish": "Switch to English",
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",
@@ -45,22 +47,198 @@
   },
   "sections": {
     "topSingers": "Top Singers by Views",
-    "trendingSongs": "Trending Songs",
-    "browseByGenre": "Browse by Genre",
-    "browseByRegion": "Browse by Region",
+    "trendingSongs": "Most Searched Songs",
+    "browseByGenre": "EXPLORE BY GENRE & STYLE",
+    "browseByRegion": "Browse Artists by Region",
     "mostAwarded": "Most Awarded Artists",
-    "composers": "Prominent Composers",
-    "djs": "Top DJs",
+    "composers": "Composers",
+    "topDjs": "Top 10 DJs",
     "birthdays": "Birthdays",
+    "birthdaysThisWeek": "Born This Week",
     "christianArtists": "Top Christian Artists",
-    "classicalArtists": "Classical & Instrumental Artists",
-    "risingStars": "Top Rising Stars",
-    "legends": "Top Legends"
+    "classicalArtists": "Instrumental & Classical",
+    "risingStars": "Emerging Artists",
+    "legends": "Top Legends Artists"
+  },
+  "song": {
+    "credits": "Song Credits",
+    "media": "Media",
+    "mediaDescription": "Videos, performances, interviews, and other media connected to this recording.",
+    "lyrics": "Lyrics",
+    "listenOn": "Listen on your favorite Platforms",
+    "sources": "Sources",
+    "sourcesDescription": "References connected to this song profile.",
+    "openSource": "Open Source",
+    "funFacts": "Fun Facts",
+    "slang": "Dominican Slang & Expressions",
+    "slangDescription": "Cultural vocabulary used or referenced in this song.",
+    "example": "Example",
+    "label": "Label",
+    "release": "Release",
+    "openMedia": "Open Media",
+    "source": "Source",
+    "recordingDetails": "Recording Details",
+    "about": "About This Song",
+    "aboutTheSong": "About the Song",
+    "inspirationAndStory": "Inspiration & Story",
+    "historicalContext": "Historical Context",
+    "culturalSignificance": "Cultural Significance",
+    "culturalContext": "Cultural Context",
+    "notes": "Notes"
+  },
+  "songAbout": {
+    "aboutTheSong": "About the Song",
+    "inspirationAndStory": "Inspiration & Story",
+    "historicalContext": "Historical Context",
+    "culturalSignificance": "Cultural Significance",
+    "culturalContext": "Cultural Context",
+    "notes": "Notes"
+  },
+  "recordingFields": {
+    "recorded": "Recorded",
+    "label": "Label",
+    "country": "Country",
+    "language": "Language",
+    "isrc": "ISRC",
+    "musicBrainzId": "MusicBrainz ID"
+  },
+  "creditRoles": {
+    "performedBy": "Performed by",
+    "vocals": "Vocals",
+    "composedBy": "Composed by",
+    "writtenBy": "Written by",
+    "lyricsBy": "Lyrics by",
+    "arrangedBy": "Arranged by",
+    "producedBy": "Produced by",
+    "coProducedBy": "Co-produced by",
+    "executiveProducer": "Executive producer",
+    "conductedBy": "Conducted by",
+    "musicalDirector": "Musical director",
+    "recordingEngineer": "Recording engineer",
+    "engineer": "Engineer",
+    "mixEngineer": "Mix engineer",
+    "masteringEngineer": "Mastering engineer",
+    "guitar": "Guitar",
+    "piano": "Piano",
+    "bass": "Bass",
+    "bassGuitar": "Bass guitar",
+    "drums": "Drums",
+    "percussion": "Percussion",
+    "trumpet": "Trumpet",
+    "saxophone": "Saxophone",
+    "violin": "Violin",
+    "chorus": "Chorus",
+    "backingVocals": "Backing vocals",
+    "backgroundVocals": "Background vocals"
+  },
+  "badge": {
+    "official": "Official",
+    "primary": "Primary"
+  },
+  "status": {
+    "deceased": "Deceased on {{year}}",
+    "yearsOld": "{{age}} years old"
+  },
+  "genres": {
+    "merengue": "Merengue",
+    "pambiche": "Pambiche",
+    "tipico": "Típico",
+    "bachata": "Bachata",
+    "salsa": "Salsa",
+    "urbano": "Urbano",
+    "dembow": "Dembow",
+    "reggaeton": "Reggaeton",
+    "instrumental": "Instrumental",
+    "classical": "Classical",
+    "ballads": "Ballads",
+    "bolero": "Bolero",
+    "romantic": "Romantic",
+    "folklore": "Folklore",
+    "traditional": "Traditional",
+    "roots": "Roots",
+    "fusion": "Fusion",
+    "jazz": "Jazz",
+    "experimental": "Experimental",
+    "moreGenre": "More Genre"
+  },
+  "artist": {
+    "discography": "Discography",
+    "noDiscography": "No discography available for this artist."
+  },
+  "releaseType": {
+    "album": "Album",
+    "ep": "EP",
+    "single": "Single",
+    "compilation": "Compilation",
+    "live": "Live",
+    "other": "Other"
+  },
+  "controls": {
+    "sort": "Sort",
+    "decade": "Decade"
+  },
+  "filters": {
+    "allDecades": "All decades",
+    "allGenres": "All Genres",
+    "allRoles": "All Roles",
+    "allProvinces": "All Provinces",
+    "allAwards": "All Awards",
+    "role": "Role",
+    "instrument": "Instrument",
+    "roleLabels": {
+      "singers": "Singers",
+      "composers": "Composers",
+      "songwriters": "Songwriters",
+      "lyricists": "Lyricists",
+      "musicians": "Musicians",
+      "djs": "DJs",
+      "producers": "Producers"
+    },
+    "contextLabels": {
+      "secular": "Secular",
+      "christian": "Christian"
+    },
+    "statusLabels": {
+      "legends": "Legends",
+      "emerging": "Emerging"
+    }
+  },
+  "sortOptions": {
+    "mostViewed": "Most viewed",
+    "nameAZ": "Name A-Z",
+    "newest": "Newest",
+    "title": "Title",
+    "sortedByViews": "Sorted by Views",
+    "viewsMobile": "Sort: Views"
+  },
+  "pagination": {
+    "first": "First",
+    "previous": "Previous",
+    "next": "Next",
+    "last": "Last",
+    "showing": "Showing {{count}} of {{total}} artists"
+  },
+  "buttons": {
+    "apply": "Apply",
+    "filters": "Filters ({{count}})",
+    "clearAll": "Clear all",
+    "clear": "Clear",
+    "retry": "Retry"
+  },
+  "errors": {
+    "artistDataNotConfigured": "Artist data is not configured.",
+    "artistDataTimeout": "Artist data took too long to respond.",
+    "unableToLoadArtists": "Unable to load artists right now."
   },
   "common": {
     "loading": "Loading...",
     "error": "An error occurred",
     "noResults": "No results found",
-    "views": "views"
+    "noArtistsFound": "No artists found.",
+    "noBirthdaysThisWeek": "No artist birthdays this week",
+    "views": "views",
+    "tracks": "tracks",
+    "source": "Source",
+    "logo": "Mangulina logo"
   }
 }

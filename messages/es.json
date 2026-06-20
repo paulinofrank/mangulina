@@ -27,7 +27,7 @@
     "copyrights": "Derechos de Autor y DMCA",
     "goBack": "Atrás",
     "goToTop": "Ir al principio",
-    "seeAll": "Ver Todos"
+    "seeAll": "Ver Todo"
   },
   "search": {
     "placeholder": "Buscar artistas, canciones...",
@@ -36,6 +36,8 @@
   "footer": {
     "tagline": "La Base de Datos de Música Dominicana",
     "copyright": "© 2026 Mangulina. Todos los Derechos Reservados.",
+    "languageSwitchToSpanish": "Cambiar a Español",
+    "languageSwitchToEnglish": "Switch to English",
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",
@@ -45,22 +47,198 @@
   },
   "sections": {
     "topSingers": "Cantantes Principales por Vistas",
-    "trendingSongs": "Canciones Tendencia",
-    "browseByGenre": "Explorar por Género",
-    "browseByRegion": "Explorar por Región",
-    "mostAwarded": "Artistas Más Galardonados",
-    "composers": "Compositores Destacados",
-    "djs": "DJs Principales",
+    "trendingSongs": "Canciones Más Buscadas",
+    "browseByGenre": "EXPLORAR POR GÉNERO Y ESTILO",
+    "browseByRegion": "Explorar Artistas por Región",
+    "mostAwarded": "Artistas Más Premiados",
+    "composers": "Compositores",
+    "topDjs": "Top 10 DJs",
     "birthdays": "Cumpleaños",
+    "birthdaysThisWeek": "Cumpleaños Esta Semana",
     "christianArtists": "Artistas Cristianos Principales",
-    "classicalArtists": "Artistas Clásicos e Instrumentales",
-    "risingStars": "Estrellas Emergentes Principales",
-    "legends": "Leyendas Principales"
+    "classicalArtists": "Instrumentales & Clásicos",
+    "risingStars": "Artistas Emergentes",
+    "legends": "Artistas Legendarios Principales"
+  },
+  "song": {
+    "credits": "Créditos de la Canción",
+    "media": "Medios",
+    "mediaDescription": "Videos, actuaciones, entrevistas y otros medios conectados a esta grabación.",
+    "lyrics": "Letras",
+    "listenOn": "Escucha en tus Plataformas Favoritas",
+    "sources": "Fuentes",
+    "sourcesDescription": "Referencias conectadas a este perfil de canción.",
+    "openSource": "Abrir Fuente",
+    "funFacts": "Datos Curiosos",
+    "slang": "Argot Dominicano y Expresiones",
+    "slangDescription": "Vocabulario cultural utilizado o referenciado en esta canción.",
+    "example": "Ejemplo",
+    "label": "Sello Discográfico",
+    "release": "Lanzamiento",
+    "openMedia": "Abrir Media",
+    "source": "Fuente",
+    "recordingDetails": "Detalles de Grabación",
+    "about": "Sobre Esta Canción",
+    "aboutTheSong": "Sobre la Canción",
+    "inspirationAndStory": "Inspiración e Historia",
+    "historicalContext": "Contexto Histórico",
+    "culturalSignificance": "Significancia Cultural",
+    "culturalContext": "Contexto Cultural",
+    "notes": "Notas"
+  },
+  "songAbout": {
+    "aboutTheSong": "Sobre la Canción",
+    "inspirationAndStory": "Inspiración e Historia",
+    "historicalContext": "Contexto Histórico",
+    "culturalSignificance": "Significancia Cultural",
+    "culturalContext": "Contexto Cultural",
+    "notes": "Notas"
+  },
+  "recordingFields": {
+    "recorded": "Grabado",
+    "label": "Sello",
+    "country": "País",
+    "language": "Idioma",
+    "isrc": "ISRC",
+    "musicBrainzId": "ID de MusicBrainz"
+  },
+  "creditRoles": {
+    "performedBy": "Interpretado por",
+    "vocals": "Vocals",
+    "composedBy": "Compuesto por",
+    "writtenBy": "Escrito por",
+    "lyricsBy": "Letras por",
+    "arrangedBy": "Arreglado por",
+    "producedBy": "Producido por",
+    "coProducedBy": "Coproducido por",
+    "executiveProducer": "Productor ejecutivo",
+    "conductedBy": "Dirigido por",
+    "musicalDirector": "Director musical",
+    "recordingEngineer": "Ingeniero de grabación",
+    "engineer": "Ingeniero",
+    "mixEngineer": "Ingeniero de mezcla",
+    "masteringEngineer": "Ingeniero de masterización",
+    "guitar": "Guitarra",
+    "piano": "Piano",
+    "bass": "Bajo",
+    "bassGuitar": "Guitarra baja",
+    "drums": "Batería",
+    "percussion": "Percusión",
+    "trumpet": "Trompeta",
+    "saxophone": "Saxófono",
+    "violin": "Violín",
+    "chorus": "Coro",
+    "backingVocals": "Vocals de apoyo",
+    "backgroundVocals": "Vocals de fondo"
+  },
+  "badge": {
+    "official": "Oficial",
+    "primary": "Principal"
+  },
+  "status": {
+    "deceased": "Fallecido en {{year}}",
+    "yearsOld": "{{age}} años de edad"
+  },
+  "genres": {
+    "merengue": "Merengue",
+    "pambiche": "Pambiche",
+    "tipico": "Típico",
+    "bachata": "Bachata",
+    "salsa": "Salsa",
+    "urbano": "Urbano",
+    "dembow": "Dembow",
+    "reggaeton": "Reggaeton",
+    "instrumental": "Instrumental",
+    "classical": "Clásica",
+    "ballads": "Baladas",
+    "bolero": "Bolero",
+    "romantic": "Romántica",
+    "folklore": "Folclore",
+    "traditional": "Tradicional",
+    "roots": "Raíces",
+    "fusion": "Fusión",
+    "jazz": "Jazz",
+    "experimental": "Experimental",
+    "moreGenre": "Más Géneros"
+  },
+  "artist": {
+    "discography": "Discografía",
+    "noDiscography": "Sin discografía disponible para este artista."
+  },
+  "releaseType": {
+    "album": "Álbum",
+    "ep": "EP",
+    "single": "Sencillo",
+    "compilation": "Compilación",
+    "live": "En Vivo",
+    "other": "Otro"
+  },
+  "controls": {
+    "sort": "Ordenar",
+    "decade": "Década"
+  },
+  "filters": {
+    "allDecades": "Todas las décadas",
+    "allGenres": "Todos los Géneros",
+    "allRoles": "Todos los Roles",
+    "allProvinces": "Todas las Provincias",
+    "allAwards": "Todos los Premios",
+    "role": "Rol",
+    "instrument": "Instrumento",
+    "roleLabels": {
+      "singers": "Cantantes",
+      "composers": "Compositores",
+      "songwriters": "Compositores de Canciones",
+      "lyricists": "Letristas",
+      "musicians": "Músicos",
+      "djs": "DJs",
+      "producers": "Productores"
+    },
+    "contextLabels": {
+      "secular": "Secular",
+      "christian": "Cristiano"
+    },
+    "statusLabels": {
+      "legends": "Leyendas",
+      "emerging": "Emergentes"
+    }
+  },
+  "sortOptions": {
+    "mostViewed": "Más visto",
+    "nameAZ": "Nombre A-Z",
+    "newest": "Más reciente",
+    "title": "Título",
+    "sortedByViews": "Ordenado por Vistas",
+    "viewsMobile": "Ordenar: Vistas"
+  },
+  "pagination": {
+    "first": "Primera",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "last": "Última",
+    "showing": "Mostrando {{count}} de {{total}} artistas"
+  },
+  "buttons": {
+    "apply": "Aplicar",
+    "filters": "Filtros ({{count}})",
+    "clearAll": "Limpiar todo",
+    "clear": "Limpiar",
+    "retry": "Reintentar"
+  },
+  "errors": {
+    "artistDataNotConfigured": "Los datos del artista no están configurados.",
+    "artistDataTimeout": "Los datos del artista tardaron demasiado en responder.",
+    "unableToLoadArtists": "No es posible cargar artistas en este momento."
   },
   "common": {
     "loading": "Cargando...",
     "error": "Ocurrió un error",
     "noResults": "No se encontraron resultados",
-    "views": "vistas"
+    "noArtistsFound": "No se encontraron artistas.",
+    "noBirthdaysThisWeek": "Sin cumpleaños de artistas esta semana",
+    "views": "vistas",
+    "tracks": "pistas",
+    "source": "Fuente",
+    "logo": "Logo de Mangulina"
   }
 }

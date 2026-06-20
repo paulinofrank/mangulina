@@ -20,28 +20,170 @@ navigation.termsOfUse,Terms of Use,Términos de Uso
 navigation.copyrights,Copyrights & DMCA,Derechos de Autor y DMCA
 navigation.goBack,Go Back,Atrás
 navigation.goToTop,Go to top,Ir al principio
-navigation.seeAll,See All,Ver Todos
+navigation.seeAll,See All,Ver Todo
 search.placeholder,Search artists, songs...,Buscar artistas, canciones...
 search.label,Site search,Búsqueda del sitio
 footer.tagline,The Dominican Music Database,La Base de Datos de Música Dominicana
 footer.copyright,© 2026 Mangulina. All Rights Reserved.,© 2026 Mangulina. Todos los Derechos Reservados.
+footer.languageSwitchToSpanish,Cambiar a Español,Cambiar a Español
+footer.languageSwitchToEnglish,Switch to English,Switch to English
 footer.social.facebook,Facebook,Facebook
 footer.social.instagram,Instagram,Instagram
 footer.social.youtube,YouTube,YouTube
 footer.social.tiktok,TikTok,TikTok
 sections.topSingers,Top Singers by Views,Cantantes Principales por Vistas
-sections.trendingSongs,Trending Songs,Canciones Tendencia
-sections.browseByGenre,Browse by Genre,Explorar por Género
-sections.browseByRegion,Browse by Region,Explorar por Región
-sections.mostAwarded,Most Awarded Artists,Artistas Más Galardonados
-sections.composers,Prominent Composers,Compositores Destacados
-sections.djs,Top DJs,DJs Principales
+sections.trendingSongs,Most Searched Songs,Canciones Más Buscadas
+sections.browseByGenre,EXPLORE BY GENRE & STYLE,EXPLORAR POR GÉNERO Y ESTILO
+sections.browseByRegion,Browse Artists by Region,Explorar Artistas por Región
+sections.mostAwarded,Most Awarded Artists,Artistas Más Premiados
+sections.composers,Composers,Compositores
+sections.topDjs,Top 10 DJs,Top 10 DJs
 sections.birthdays,Birthdays,Cumpleaños
+sections.birthdaysThisWeek,Born This Week,Cumpleaños Esta Semana
 sections.christianArtists,Top Christian Artists,Artistas Cristianos Principales
-sections.classicalArtists,Classical & Instrumental Artists,Artistas Clásicos e Instrumentales
-sections.risingStars,Top Rising Stars,Estrellas Emergentes Principales
-sections.legends,Top Legends,Leyendas Principales
+sections.classicalArtists,Instrumental & Classical,Instrumentales & Clásicos
+sections.risingStars,Emerging Artists,Artistas Emergentes
+sections.legends,Top Legends Artists,Artistas Legendarios Principales
+song.credits,Song Credits,Créditos de la Canción
+song.media,Media,Medios
+song.mediaDescription,Videos, performances, interviews, and other media connected to this recording.,Videos, actuaciones, entrevistas y otros medios conectados a esta grabación.
+song.lyrics,Lyrics,Letras
+song.listenOn,Listen on your favorite Platforms,Escucha en tus Plataformas Favoritas
+song.sources,Sources,Fuentes
+song.sourcesDescription,References connected to this song profile.,Referencias conectadas a este perfil de canción.
+song.openSource,Open Source,Abrir Fuente
+song.funFacts,Fun Facts,Datos Curiosos
+song.slang,Dominican Slang & Expressions,Argot Dominicano y Expresiones
+song.slangDescription,Cultural vocabulary used or referenced in this song.,Vocabulario cultural utilizado o referenciado en esta canción.
+song.example,Example,Ejemplo
+song.label,Label,Sello Discográfico
+song.release,Release,Lanzamiento
+song.openMedia,Open Media,Abrir Media
+song.source,Source,Fuente
+song.recordingDetails,Recording Details,Detalles de Grabación
+song.about,About This Song,Sobre Esta Canción
+song.aboutTheSong,About the Song,Sobre la Canción
+song.inspirationAndStory,Inspiration & Story,Inspiración e Historia
+song.historicalContext,Historical Context,Contexto Histórico
+song.culturalSignificance,Cultural Significance,Significancia Cultural
+song.culturalContext,Cultural Context,Contexto Cultural
+song.notes,Notes,Notas
+songAbout.aboutTheSong,About the Song,Sobre la Canción
+songAbout.inspirationAndStory,Inspiration & Story,Inspiración e Historia
+songAbout.historicalContext,Historical Context,Contexto Histórico
+songAbout.culturalSignificance,Cultural Significance,Significancia Cultural
+songAbout.culturalContext,Cultural Context,Contexto Cultural
+songAbout.notes,Notes,Notas
+recordingFields.recorded,Recorded,Grabado
+recordingFields.label,Label,Sello
+recordingFields.country,Country,País
+recordingFields.language,Language,Idioma
+recordingFields.isrc,ISRC,ISRC
+recordingFields.musicBrainzId,MusicBrainz ID,ID de MusicBrainz
+creditRoles.performedBy,Performed by,Interpretado por
+creditRoles.vocals,Vocals,Vocals
+creditRoles.composedBy,Composed by,Compuesto por
+creditRoles.writtenBy,Written by,Escrito por
+creditRoles.lyricsBy,Lyrics by,Letras por
+creditRoles.arrangedBy,Arranged by,Arreglado por
+creditRoles.producedBy,Produced by,Producido por
+creditRoles.coProducedBy,Co-produced by,Coproducido por
+creditRoles.executiveProducer,Executive producer,Productor ejecutivo
+creditRoles.conductedBy,Conducted by,Dirigido por
+creditRoles.musicalDirector,Musical director,Director musical
+creditRoles.recordingEngineer,Recording engineer,Ingeniero de grabación
+creditRoles.engineer,Engineer,Ingeniero
+creditRoles.mixEngineer,Mix engineer,Ingeniero de mezcla
+creditRoles.masteringEngineer,Mastering engineer,Ingeniero de masterización
+creditRoles.guitar,Guitar,Guitarra
+creditRoles.piano,Piano,Piano
+creditRoles.bass,Bass,Bajo
+creditRoles.bassGuitar,Bass guitar,Guitarra baja
+creditRoles.drums,Drums,Batería
+creditRoles.percussion,Percussion,Percusión
+creditRoles.trumpet,Trumpet,Trompeta
+creditRoles.saxophone,Saxophone,Saxófono
+creditRoles.violin,Violin,Violín
+creditRoles.chorus,Chorus,Coro
+creditRoles.backingVocals,Backing vocals,Vocals de apoyo
+creditRoles.backgroundVocals,Background vocals,Vocals de fondo
+badge.official,Official,Oficial
+badge.primary,Primary,Principal
+status.deceased,Deceased on {{year}},Fallecido en {{year}}
+status.yearsOld,{{age}} years old,{{age}} años de edad
+genres.merengue,Merengue,Merengue
+genres.pambiche,Pambiche,Pambiche
+genres.tipico,Típico,Típico
+genres.bachata,Bachata,Bachata
+genres.salsa,Salsa,Salsa
+genres.urbano,Urbano,Urbano
+genres.dembow,Dembow,Dembow
+genres.reggaeton,Reggaeton,Reggaeton
+genres.instrumental,Instrumental,Instrumental
+genres.classical,Classical,Clásica
+genres.ballads,Ballads,Baladas
+genres.bolero,Bolero,Bolero
+genres.romantic,Romantic,Romántica
+genres.folklore,Folklore,Folclore
+genres.traditional,Traditional,Tradicional
+genres.roots,Roots,Raíces
+genres.fusion,Fusion,Fusión
+genres.jazz,Jazz,Jazz
+genres.experimental,Experimental,Experimental
+genres.moreGenre,More Genre,Más Géneros
+artist.discography,Discography,Discografía
+artist.noDiscography,No discography available for this artist.,Sin discografía disponible para este artista.
+releaseType.album,Album,Álbum
+releaseType.ep,EP,EP
+releaseType.single,Single,Sencillo
+releaseType.compilation,Compilation,Compilación
+releaseType.live,Live,En Vivo
+releaseType.other,Other,Otro
+controls.sort,Sort,Ordenar
+controls.decade,Decade,Década
+filters.allDecades,All decades,Todas las décadas
+filters.allGenres,All Genres,Todos los Géneros
+filters.allRoles,All Roles,Todos los Roles
+filters.allProvinces,All Provinces,Todas las Provincias
+filters.allAwards,All Awards,Todos los Premios
+filters.role,Role,Rol
+filters.instrument,Instrument,Instrumento
+filters.roleLabels.singers,Singers,Cantantes
+filters.roleLabels.composers,Composers,Compositores
+filters.roleLabels.songwriters,Songwriters,Compositores de Canciones
+filters.roleLabels.lyricists,Lyricists,Letristas
+filters.roleLabels.musicians,Musicians,Músicos
+filters.roleLabels.djs,DJs,DJs
+filters.roleLabels.producers,Producers,Productores
+filters.contextLabels.secular,Secular,Secular
+filters.contextLabels.christian,Christian,Cristiano
+filters.statusLabels.legends,Legends,Leyendas
+filters.statusLabels.emerging,Emerging,Emergentes
+sortOptions.mostViewed,Most viewed,Más visto
+sortOptions.nameAZ,Name A-Z,Nombre A-Z
+sortOptions.newest,Newest,Más reciente
+sortOptions.title,Title,Título
+sortOptions.sortedByViews,Sorted by Views,Ordenado por Vistas
+sortOptions.viewsMobile,Sort: Views,Ordenar: Vistas
+pagination.first,First,Primera
+pagination.previous,Previous,Anterior
+pagination.next,Next,Siguiente
+pagination.last,Last,Última
+pagination.showing,Showing {{count}} of {{total}} artists,Mostrando {{count}} de {{total}} artistas
+buttons.apply,Apply,Aplicar
+buttons.filters,Filters ({{count}}),Filtros ({{count}})
+buttons.clearAll,Clear all,Limpiar todo
+buttons.clear,Clear,Limpiar
+buttons.retry,Retry,Reintentar
+errors.artistDataNotConfigured,Artist data is not configured.,Los datos del artista no están configurados.
+errors.artistDataTimeout,Artist data took too long to respond.,Los datos del artista tardaron demasiado en responder.
+errors.unableToLoadArtists,Unable to load artists right now.,No es posible cargar artistas en este momento.
 common.loading,Loading...,Cargando...
 common.error,An error occurred,Ocurrió un error
 common.noResults,No results found,No se encontraron resultados
+common.noArtistsFound,No artists found.,No se encontraron artistas.
+common.noBirthdaysThisWeek,No artist birthdays this week,Sin cumpleaños de artistas esta semana
 common.views,views,vistas
+common.tracks,tracks,pistas
+common.source,Source,Fuente
+common.logo,Mangulina logo,Logo de Mangulina
