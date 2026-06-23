@@ -19,6 +19,8 @@ export type ArtistRolePageConfig = {
   heading: string;
   description: string;
   intro: string;
+  /** Key into the `artistDirectory` message namespace for the localized heading/intro. */
+  i18nKey?: ArtistRolePageKey;
   hideGenreFilter?: boolean;
   hideProvinceSelector?: boolean;
   rolePageOptions?: Array<{ href: string; label: string }>;
@@ -34,6 +36,7 @@ const WRITING_ROLE_PAGES = [
 export const ARTIST_ROLE_PAGES: Record<ArtistRolePageKey, ArtistRolePageConfig> = {
   artists: {
     path: "/artists",
+    i18nKey: "artists",
     role: "singer",
     roleLabel: "Singers",
     heading: "Dominican Singers",
@@ -45,6 +48,7 @@ export const ARTIST_ROLE_PAGES: Record<ArtistRolePageKey, ArtistRolePageConfig> 
   },
   composers: {
     path: "/composers",
+    i18nKey: "composers",
     role: "composer",
     roleLabel: "Composers",
     heading: "Dominican Composers and Songwriters",
@@ -58,6 +62,7 @@ export const ARTIST_ROLE_PAGES: Record<ArtistRolePageKey, ArtistRolePageConfig> 
   },
   songwriters: {
     path: "/songwriters",
+    i18nKey: "songwriters",
     role: "songwriter",
     roleLabel: "Songwriters",
     heading: "Dominican Songwriters",
@@ -71,6 +76,7 @@ export const ARTIST_ROLE_PAGES: Record<ArtistRolePageKey, ArtistRolePageConfig> 
   },
   lyricists: {
     path: "/lyricists",
+    i18nKey: "lyricists",
     role: "lyricist",
     roleLabel: "Lyricists",
     heading: "Dominican Lyricists",
@@ -84,6 +90,7 @@ export const ARTIST_ROLE_PAGES: Record<ArtistRolePageKey, ArtistRolePageConfig> 
   },
   musicians: {
     path: "/musicians",
+    i18nKey: "musicians",
     role: "musician",
     roleLabel: "Musicians",
     heading: "Dominican Musicians",
@@ -97,6 +104,7 @@ export const ARTIST_ROLE_PAGES: Record<ArtistRolePageKey, ArtistRolePageConfig> 
   },
   djs: {
     path: "/djs",
+    i18nKey: "djs",
     role: "dj",
     roleLabel: "DJs",
     heading: "Dominican DJs",
@@ -109,6 +117,7 @@ export const ARTIST_ROLE_PAGES: Record<ArtistRolePageKey, ArtistRolePageConfig> 
   },
   producers: {
     path: "/producers",
+    i18nKey: "producers",
     role: "producer",
     roleLabel: "Producers",
     heading: "Dominican Music Producers",

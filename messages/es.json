@@ -16,10 +16,10 @@
   "navigation": {
     "home": "Inicio",
     "singers": "Cantantes",
-    "christian": "Cristiana",
-    "discover": "Descubrir",
-    "releases": "Lanzamientos",
-    "about": "Acerca de",
+    "christian": "Cristianos",
+    "discover": "Explorar",
+    "releases": "Albumes",
+    "about": "Información",
     "contact": "Contacto",
     "contributors": "Colaboradores",
     "privacyPolicy": "Política de Privacidad",
@@ -27,14 +27,24 @@
     "copyrights": "Derechos de Autor y DMCA",
     "goBack": "Atrás",
     "goToTop": "Ir al principio",
-    "seeAll": "Ver Todo"
+    "seeAll": "Todos▶"
   },
   "search": {
     "placeholder": "Buscar artistas, canciones...",
-    "label": "Búsqueda del sitio"
+    "label": "Búsqueda del sitio",
+    "ui": {
+      "placeholder": "Buscar artistas, canciones y álbumes.",
+      "noQuery": "Escribe algo en el cuadro de búsqueda para empezar.",
+      "noResults": "No se encontraron resultados.",
+      "artistsGroup": "Artistas",
+      "songsGroup": "Canciones",
+      "albumsGroup": "Álbumes",
+      "resultsFor": "Resultados para"
+    }
   },
   "footer": {
     "tagline": "La Base de Datos de Música Dominicana",
+    "logo": "Logo de Mangulina",
     "copyright": "© 2026 Mangulina. Todos los Derechos Reservados.",
     "languageSwitchToSpanish": "Cambiar a Español",
     "languageSwitchToEnglish": "Switch to English",
@@ -46,19 +56,19 @@
     }
   },
   "sections": {
-    "topSingers": "Cantantes Principales por Vistas",
+    "topSingers": "Cantantes Más Vistos",
     "trendingSongs": "Canciones Más Buscadas",
-    "browseByGenre": "EXPLORAR POR GÉNERO Y ESTILO",
-    "browseByRegion": "Explorar Artistas por Región",
+    "browseByGenre": "Géneros y Estilos",
+    "browseByRegion": "Artistas por Provincias",
     "mostAwarded": "Artistas Más Premiados",
     "composers": "Compositores",
     "topDjs": "Top 10 DJs",
     "birthdays": "Cumpleaños",
-    "birthdaysThisWeek": "Cumpleaños Esta Semana",
-    "christianArtists": "Artistas Cristianos Principales",
+    "birthdaysThisWeek": "Cumpleaños",
+    "christianArtists": "Cristianos Más Vistos",
     "classicalArtists": "Instrumentales & Clásicos",
     "risingStars": "Artistas Emergentes",
-    "legends": "Artistas Legendarios Principales"
+    "legends": "Artistas Legendarios"
   },
   "song": {
     "credits": "Créditos de la Canción",
@@ -74,7 +84,7 @@
     "slangDescription": "Vocabulario cultural utilizado o referenciado en esta canción.",
     "example": "Ejemplo",
     "label": "Sello Discográfico",
-    "release": "Lanzamiento",
+    "release": "Álbum",
     "openMedia": "Abrir Media",
     "source": "Fuente",
     "recordingDetails": "Detalles de Grabación",
@@ -84,7 +94,10 @@
     "historicalContext": "Contexto Histórico",
     "culturalSignificance": "Significancia Cultural",
     "culturalContext": "Contexto Cultural",
-    "notes": "Notas"
+    "notes": "Notas",
+    "hero": {
+      "by": "por", "album": "Álbum", "releaseYear": "Año de Lanzamiento", "duration": "Duración", "views": "Vistas", "genres": "Géneros", "relatedSongs": "Canciones Relacionadas", "moreBy": "Más de {artist}", "aboutArtist": "Acerca del Artista", "artistFallback": "Explora el perfil, las canciones, los créditos y la historia musical dominicana relacionada con este artista."
+    }
   },
   "songAbout": {
     "aboutTheSong": "Sobre la Canción",
@@ -163,7 +176,51 @@
   },
   "artist": {
     "discography": "Discografía",
-    "noDiscography": "Sin discografía disponible para este artista."
+    "noDiscography": "Sin discografía disponible para este artista.",
+    "biography": "Biografía",
+    "noBiography": "No hay biografía disponible para este artista.",
+    "technicalSheet": "Ficha Técnica",
+    "stageName": "Nombre Artístico",
+    "realName": "Nombre Real",
+    "dateOfBirth": "Fecha de Nacimiento",
+    "dateOfDeath": "Fecha de Fallecimiento",
+    "placeOfBirth": "Lugar de Nacimiento",
+    "origin": "Origen",
+    "aliases": "Alias",
+    "artistType": "Tipo de Artista",
+    "statusLabel": "Estado",
+    "active": "Activo",
+    "noLongerActive": "Ya no activo",
+    "primaryRole": "Rol Principal",
+    "otherRoles": "Otros Roles",
+    "instruments": "Instrumentos",
+    "mainGenre": "Género Principal",
+    "musicalGenres": "Géneros Musicales",
+    "tags": "Etiquetas",
+    "officialWebsite": "Sitio Web Oficial",
+    "groupsAndProjects": "Grupos y Proyectos",
+    "members": "Integrantes",
+    "awardsNominations": "Premios y Nominaciones",
+    "winsCount": "{count} Victorias",
+    "nominationsCount": "{count} Nominaciones",
+    "organizationsCount": "{count} Organizaciones",
+    "winsShort": "{count, plural, one {# Victoria} other {# Victorias}}",
+    "winner": "Ganador",
+    "nominee": "Nominado",
+    "specialRecognition": "Reconocimiento Especial",
+    "videoInterviews": "Entrevistas en Video",
+    "interviewsSubtitle": "Entrevistas, conversaciones y material de archivo relacionado con este artista.",
+    "playAria": "Reproducir {title}",
+    "closeVideo": "Cerrar video",
+    "tracksCount": "{count, plural, one {# canción} other {# canciones}}",
+    "releaseGroups": {
+      "Album": "Álbumes",
+      "EP": "EPs",
+      "Single": "Sencillos",
+      "Compilation": "Recopilaciones",
+      "Live": "En Vivo",
+      "Other": "Otros"
+    }
   },
   "releaseType": {
     "album": "Álbum",
@@ -173,9 +230,92 @@
     "live": "En Vivo",
     "other": "Otro"
   },
+  "releaseTypePlural": {
+    "albums": "Álbumes",
+    "singles": "Sencillos",
+    "eps": "EPs",
+    "compilations": "Recopilaciones",
+    "live": "En Vivo",
+    "soundtracks": "Bandas Sonoras",
+    "other": "Otros"
+  },
   "controls": {
     "sort": "Ordenar",
     "decade": "Década"
+  },
+  "a11y": {
+    "scrollLeft": "Desplazar a la izquierda",
+    "scrollRight": "Desplazar a la derecha",
+    "viewProfile": "Ver el perfil de {name}",
+    "viewItem": "Ver {title}",
+    "footerNav": "Navegación del pie de página"
+  },
+  "artistDirectory": {
+    "artists": {
+      "heading": "Cantantes Dominicanos",
+      "intro": "Explora cantantes dominicanos de todas las generaciones, géneros y provincias en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "composers": {
+      "heading": "Compositores y Autores Dominicanos",
+      "intro": "Descubre compositores, autores y creadores dominicanos detrás de la música en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "songwriters": {
+      "heading": "Autores Dominicanos",
+      "intro": "Explora autores dominicanos y las canciones que ayudaron a dar forma en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "lyricists": {
+      "heading": "Letristas Dominicanos",
+      "intro": "Explora letristas dominicanos cuyas palabras forman parte del registro musical preservado por Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "musicians": {
+      "heading": "Músicos Dominicanos",
+      "intro": "Descubre músicos, instrumentistas e intérpretes dominicanos en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "djs": {
+      "heading": "DJs Dominicanos",
+      "intro": "Explora DJs dominicanos y los selectores que impulsan la cultura musical dominicana en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "producers": {
+      "heading": "Productores Musicales Dominicanos",
+      "intro": "Descubre productores dominicanos y el trabajo creativo detrás de la música grabada en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "legends": {
+      "heading": "Leyendas de la Música Dominicana",
+      "intro": "Explora artistas dominicanos legendarios y figuras influyentes que dieron forma a la historia de la música dominicana en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "emerging": {
+      "heading": "Artistas Dominicanos Emergentes",
+      "intro": "Descubre artistas dominicanos emergentes y talento en ascenso en toda la música dominicana en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "mostAwarded": {
+      "heading": "Artistas Dominicanos Más Premiados",
+      "intro": "Explora artistas dominicanos reconocidos a través de premios y nominaciones en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "christian": {
+      "heading": "Artistas Cristianos Dominicanos",
+      "intro": "Explora artistas cristianos dominicanos en adoración, merengue, bachata, música cristiana contemporánea y otras expresiones de música dominicana basada en la fe en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "instrumentalClassical": {
+      "heading": "Artistas Instrumentales y Clásicos Dominicanos",
+      "intro": "Explora instrumentistas dominicanos, músicos clásicos, intérpretes orquestales y artistas relacionados en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "provinceHeading": "Artistas Dominicanos de la Provincia {province}",
+    "provinceMobilePrefix": "Artistas Dominicanos de la Provincia",
+    "provinceIntro": "Explora artistas dominicanos de la provincia de {province} y sus contribuciones a la música dominicana en Mangulina, la Base de Datos de Música Dominicana."
+  },
+  "directoryTitles": {
+    "provinceGenreTagRole": "{role} {tag} de {genre} de {province}",
+    "dominicanGenreTagRole": "{role} {tag} Dominicanos de {genre}",
+    "dominicanGenreRole": "{role} Dominicanos de {genre}",
+    "allGenreTagArtists": "Artistas {tag} de {genre}",
+    "allGenreArtists": "Artistas de {genre}",
+    "provinceTagRole": "{role} {tag} de {province}",
+    "provinceTagArtists": "Artistas {tag} de {province}",
+    "provinceRole": "{role} de {province}",
+    "artistsFromProvince": "Artistas de {province}",
+    "dominicanTagRole": "{role} {tag} Dominicanos",
+    "allTagArtists": "Artistas {tag}",
+    "roleOnly": "{role} Dominicanos"
   },
   "filters": {
     "allDecades": "Todas las décadas",
@@ -185,10 +325,17 @@
     "allAwards": "Todos los Premios",
     "role": "Rol",
     "instrument": "Instrumento",
+    "province": "Provincia",
+    "genreSubgenre": "Género / Subgénero",
+    "ariaRole": "Filtrar por rol",
+    "ariaOtherRole": "Filtrar por otro rol",
+    "ariaInstrument": "Filtrar por instrumento",
+    "ariaBrowseRole": "Explorar por rol creativo",
+    "ariaAward": "Filtrar por premio",
     "roleLabels": {
       "singers": "Cantantes",
       "composers": "Compositores",
-      "songwriters": "Compositores de Canciones",
+      "songwriters": "Autores",
       "lyricists": "Letristas",
       "musicians": "Músicos",
       "djs": "DJs",
@@ -196,7 +343,7 @@
     },
     "contextLabels": {
       "secular": "Secular",
-      "christian": "Cristiano"
+      "christian": "Cristianos"
     },
     "statusLabels": {
       "legends": "Leyendas",
@@ -235,13 +382,57 @@
     "error": "Ocurrió un error",
     "noResults": "No se encontraron resultados",
     "noArtistsFound": "No se encontraron artistas.",
-    "noBirthdaysThisWeek": "Sin cumpleaños de artistas esta semana",
+    "noBirthdaysThisWeek": "Sin cumpleaños esta semana",
     "views": "vistas",
     "tracks": "pistas",
+    "songs": "canciones",
     "source": "Fuente",
-    "logo": "Logo de Mangulina"
+    "logo": "Logo de Mangulina",
+    "noImage": "Sin imagen",
+    "noCover": "Sin portada",
+    "viewArtistProfile": "Ver perfil de {name}",
+    "viewRelease": "Ver {title}",
+    "unknownArtist": "Artista Desconocido",
+    "viewFullProfile": "Ver Perfil Completo"
   },
   "pages": {
+    "releasesHub": {
+      "eyebrow": "Lanzamientos",
+      "heading": "Álbumes y Lanzamientos Dominicanos",
+      "description": "Explora álbumes, sencillos, EPs, recopilaciones, grabaciones en vivo y otros lanzamientos dominicanos de artistas de merengue, bachata, salsa, urbano, música cristiana y más.",
+      "featuredRelease": "Lanzamiento Destacado",
+      "viewRelease": "Ver Lanzamiento",
+      "mostViewed": "Lanzamientos Más Vistos",
+      "recent": "Lanzamientos Recientes",
+      "browseByType": "Explorar por Tipo",
+      "browseByDecade": "Explorar por Décadas",
+      "essential": "Álbumes Dominicanos Esenciales",
+      "essentialEmpty": "La lista editorial de álbumes esenciales está en preparación.",
+      "releaseCount": "{count, plural, one {# lanzamiento} other {# lanzamientos}}"
+    },
+    "genreDetail": {
+      "learnMoreHistory": "Conoce más sobre la historia de {genre}...",
+      "topArtists": "Mejores Artistas de {genre}",
+      "connectedArtists": "Artistas Conectados con {genre}",
+      "popularSongs": "Canciones Populares",
+      "importantReleases": "Álbumes / Lanzamientos Importantes",
+      "releasesIn": "Lanzamientos en {genre}",
+      "mostViewedReleases": "Lanzamientos Más Vistos",
+      "recentReleases": "Lanzamientos Recientes",
+      "recentlyAdded": "Agregados Recientemente",
+      "history": "Historia de {genre}",
+      "relatedGenres": "Géneros y Estilos Relacionados",
+      "subgenresStyles": "Subgéneros y Estilos",
+      "subgenreSongs": "Canciones de {name}",
+      "subgenreFallback": "Subgénero",
+      "noSongsAssigned": "Actualmente no hay canciones asignadas a {name}.",
+      "sortAria": "Ordenar canciones del subgénero",
+      "loadError": "No es posible cargar las canciones.",
+      "loadMoreError": "No es posible cargar más canciones.",
+      "noCover": "Sin portada",
+      "releaseFallback": "Lanzamiento",
+      "viewAria": "Ver {title}"
+    },
     "login": {
       "backToHomepage": "Volver a Inicio"
     },
@@ -252,13 +443,157 @@
       "featuredComingSoon": "Un lanzamiento destacado aparecerá aquí pronto.",
       "releaseDetails": "Detalles del Lanzamiento",
       "trackListing": "Lista de Pistas",
-      "noTracksAvailable": "No hay pistas disponibles para este lanzamiento aún."
+      "noTracksAvailable": "No hay pistas disponibles para este lanzamiento aún.",
+      "noReleases": "Aún no hay lanzamientos disponibles.",
+      "by": "por",
+      "notFoundTitle": "Lanzamiento No Encontrado",
+      "notFoundDescription": "Este lanzamiento no está disponible en la Base de Datos de Música Dominicana.",
+      "metadataDescription": "Lista de pistas, detalles y créditos de {title} en la Base de Datos de Música Dominicana.",
+      "moreFromArtist": "Más de este Artista",
+      "moreFromDecade": "Más de los {decade}",
+      "moreInGenre": "Más de {genre}",
+      "facts": {"type": "Tipo", "release": "Lanzamiento", "label": "Sello", "country": "País", "catalog": "Catálogo", "barcode": "Código de Barras"}
     },
     "privacyPolicy": {
       "lastUpdated": "Última Actualización: Junio 2026"
     },
     "termsOfUse": {
       "lastUpdated": "Última Actualización: Junio 2026"
+    },
+    "about": {
+      "metadataTitle": "Acerca de",
+      "metadataDescription": "Mangulina es una base de datos curada de música dominicana dedicada a preservar y documentar artistas, canciones, lanzamientos, créditos, géneros e historia musical dominicana.",
+      "eyebrow": "Base de Datos de Música Dominicana",
+      "title": "Acerca de Mangulina™",
+      "heroDescription": "Mangulina es una base de datos curada de música dominicana dedicada a preservar, documentar y celebrar a los artistas, canciones, grabaciones, lanzamientos, créditos e historias que dan forma a la música dominicana.",
+      "missionTitle": "Nuestra Misión",
+      "missionReference": "Construir la referencia más completa y confiable de la música dominicana, preservando su historia, documentando a sus creadores y haciendo que su legado cultural sea más accesible para todos.",
+      "missionAudience": "Mangulina sirve a artistas, investigadores, historiadores, coleccionistas, educadores, desarrolladores, periodistas y amantes de la música que buscan información estructurada y confiable sobre la música dominicana.",
+      "missionBelief": "Creemos que la música dominicana merece un hogar dedicado donde su gente, grabaciones, lanzamientos y logros puedan preservarse, descubrirse y apreciarse a través de las generaciones.",
+      "whyTitle": "Por Qué Mangulina",
+      "whyName": "El nombre Mangulina se inspira en el género musical tradicional dominicano del mismo nombre, un ritmo alegre con profundas raíces en el patrimonio cultural del país.",
+      "whyPurpose": "Aunque la plataforma abarca todos los géneros y épocas de la música dominicana, el nombre rinde homenaje a las tradiciones que ayudaron a formar la identidad musical de la nación. Refleja el propósito más amplio del proyecto: preservar y celebrar la música dominicana en todas sus formas.",
+      "coverTitle": "Lo Que Documentamos",
+      "coverDescription": "Mangulina está construyendo una referencia creciente de la música dominicana que conecta artistas, grabaciones, lanzamientos, colaboradores, géneros y contexto histórico en un solo lugar de búsqueda.",
+      "coverItems": {
+        "artists": "Artistas de cada región y época de la música dominicana",
+        "recordings": "Grabaciones con créditos, clasificaciones de género y detalles de lanzamiento",
+        "albums": "Álbumes y lanzamientos con listas completas de canciones",
+        "creators": "Compositores, letristas, productores, músicos y otros colaboradores",
+        "history": "Premios, historia musical y contexto cultural",
+        "sources": "Enlaces a plataformas de streaming y fuentes oficiales"
+      },
+      "principlesTitle": "Principios Editoriales",
+      "principlesReview": "Mangulina se cura con revisión humana. Organizamos la información cuidadosamente, verificamos los detalles siempre que es posible y aceptamos correcciones de artistas, representantes, investigadores, coleccionistas, colaboradores y el público.",
+      "principlesRole": "Nuestro objetivo no es reemplazar los sitios oficiales de artistas, plataformas de streaming, sellos discográficos, editoras ni titulares de derechos. Buscamos conectar información, mejorar el descubrimiento y ayudar a preservar la historia de la música dominicana.",
+      "principlesEvolution": "La información musical evoluciona constantemente. A medida que aparece nueva información, las entradas pueden actualizarse, ampliarse, corregirse o refinarse.",
+      "principleItems": {
+        "reviewed": "Información musical curada y revisada por personas",
+        "corrections": "Aceptamos correcciones de artistas, familias, investigadores y el público",
+        "respect": "Respeto por artistas, titulares de derechos, sellos y fuentes oficiales",
+        "heritage": "Enfoque en preservar el patrimonio musical dominicano para futuras generaciones"
+      },
+      "artistNoteTitle": "Una nota para artistas y titulares de derechos",
+      "artistNoteMission": "Mangulina se dedica a preservar, documentar y celebrar la música dominicana y a las personas que la crean. Cada artista, compositor, letrista, productor, músico y colaborador incluido en esta base de datos representa una parte importante de esa historia.",
+      "artistNoteRights": "No alojamos, vendemos, transmitimos ni distribuimos música. No reclamamos propiedad sobre grabaciones, arte, letras, marcas u otras obras creativas. Nuestra función se limita a organizar y presentar información y metadatos musicales con fines educativos, informativos y de referencia.",
+      "artistNoteContact": "Si eres artista, representante, titular de derechos o familiar y deseas actualizar, corregir, enriquecer o conversar sobre información que aparece en el sitio, te invitamos a contactarnos.",
+      "discoveryTitle": "Creado para Descubrir",
+      "discoveryDescription": "Mangulina ayuda a descubrir conexiones en la música dominicana —artistas, grabaciones, lanzamientos, géneros, colaboradores, premios y contexto histórico— mediante un catálogo estructurado y fácil de explorar.",
+      "archiveTitle": "Un Archivo Vivo",
+      "archiveDescription": "La música dominicana continúa evolucionando cada día. Mangulina está diseñada como un archivo vivo que crece junto con la música mediante investigación, contribuciones de la comunidad, colaboración de artistas y revisión editorial continua.",
+      "involvedTitle": "Participa",
+      "involvedWelcome": "Mangulina recibe la participación de artistas, investigadores, historiadores, coleccionistas, profesionales de la música y aficionados que comparten el interés por preservar el patrimonio musical dominicano.",
+      "involvedInvitation": "Si deseas enviar correcciones, aportar información, enriquecer perfiles de artistas, proporcionar investigación histórica o convertirte en colaborador, nos encantaría saber de ti.",
+      "contactButton": "Contactar a Mangulina",
+      "contributorsButton": "Colaboradores",
+      "dmcaButton": "Derechos de Autor y DMCA"
+    },
+    "contact": {
+      "metadataTitle": "Contacto",
+      "metadataDescription": "Contacta a Mangulina, la Base de Datos de Música Dominicana, para actualizaciones de artistas, correcciones, oportunidades de colaboración, alianzas y consultas de derechos de autor.",
+      "eyebrow": "Contacto",
+      "title": "Ponte en Contacto",
+      "intro": "Si eres artista, investigador, colaborador, titular de derechos o amante de la música, nos encantaría saber de ti.",
+      "welcome": "Mangulina recibe correcciones, colaboraciones, investigaciones históricas, actualizaciones de artistas y consultas generales relacionadas con la música dominicana.",
+      "helpTitle": "¿Cómo Podemos Ayudarte?",
+      "helpDescription": "Elige el área de contacto que mejor corresponda a tu consulta para que llegue al equipo adecuado de Mangulina.",
+      "cards": {
+        "artists": {"title": "Artistas y Representantes", "description": "¿Necesitas actualizar una biografía, agregar lanzamientos, enviar correcciones, proporcionar información oficial o enriquecer un perfil de artista?", "button": "Contactar Soporte de Artistas"},
+        "correction": {"title": "Enviar una Corrección", "description": "¿Encontraste información incorrecta, créditos faltantes, fechas equivocadas u otros problemas de datos?", "button": "Reportar un Problema"},
+        "contributor": {"title": "Ser Colaborador", "description": "¿Te interesa ayudar a preservar la música dominicana mediante investigación, documentación, información histórica o revisión editorial?", "button": "Ser Colaborador"},
+        "partnerships": {"title": "Medios y Alianzas", "description": "Consultas de prensa, instituciones educativas, organizaciones culturales, archivos y oportunidades de colaboración.", "button": "Contactar Alianzas"},
+        "copyright": {"title": "Derechos de Autor y DMCA", "description": "¿Tienes preguntas sobre derechos de autor, atribución, imágenes o propiedad intelectual?", "button": "Derechos de Autor y DMCA"},
+        "general": {"title": "Preguntas Generales", "description": "Para cualquier tema no cubierto anteriormente.", "button": "Contacto General"}
+      },
+      "followTitle": "Sigue a Mangulina",
+      "followDescription": "Sigue a @MangulinaDO para noticias del proyecto, artistas destacados, historia de la música dominicana y actualizaciones de la base de datos.",
+      "emailTitle": "Directorio de Correos",
+      "emailDescription": "Contacta directamente al buzón correspondiente. Las preguntas generales pueden enviarse a hello@mangulina.do.",
+      "preserveTitle": "Ayuda a Preservar la Música Dominicana",
+      "preserveCommunity": "Mangulina crece gracias a las contribuciones de artistas, historiadores, investigadores, coleccionistas, profesionales de la música y aficionados apasionados.",
+      "preserveInvitation": "Si tienes información que pueda ayudar a documentar la música dominicana con mayor precisión, nos encantaría saber de ti.",
+      "contributorButton": "Ser Colaborador",
+      "contactButton": "Contáctanos"
+    },
+    "contributors": {
+      "metadataTitle": "Colaboradores",
+      "metadataDescription": "Conoce a los colaboradores que ayudan a Mangulina, la Base de Datos de Música Dominicana, a preservar, documentar y enriquecer la música dominicana.",
+      "eyebrow": "Colaboradores",
+      "title": "Personas que Ayudan a Preservar la Música Dominicana",
+      "description": "Mangulina se construye mediante investigación, revisión, corrección y colaboración. Esta página reconoce a quienes ayudan a documentar la música dominicana, sus artistas, grabaciones, lanzamientos, créditos e historia cultural.",
+      "currentTitle": "Colaboradores Actuales",
+      "empty": "Los colaboradores aparecerán aquí próximamente.",
+      "website": "Sitio Web",
+      "communityTitle": "Esfuerzo Comunitario",
+      "communityWelcome": "Mangulina recibe a colaboradores, investigadores, coleccionistas, artistas, músicos, historiadores y amantes de la música que desean ayudar a preservar el patrimonio musical dominicano.",
+      "communityWork": "Los colaboradores pueden ayudar revisando perfiles de artistas, corrigiendo discografías, identificando créditos, documentando historia regional o proporcionando referencias confiables.",
+      "joinTitle": "Ser Colaborador",
+      "joinKnowledge": "Si tienes conocimientos sobre música dominicana, artistas, grabaciones, créditos, estilos regionales, contexto histórico o lanzamientos poco comunes, a Mangulina le encantaría saber de ti.",
+      "joinImpact": "Los colaboradores ayudan a que la música dominicana sea más fácil de descubrir, estudiar y preservar para las generaciones futuras.",
+      "contactButton": "Contactar a Mangulina"
+    },
+    "discover": {
+      "metadataTitle": "Descubre la Música Dominicana",
+      "metadataDescription": "Explora Mangulina, la Base de Datos de Música Dominicana. Descubre artistas, canciones, lanzamientos, géneros, regiones, creadores, cumpleaños, música cristiana, leyendas y artistas emergentes dominicanos.",
+      "eyebrow": "Explora Mangulina",
+      "title": "Descubre la Música Dominicana",
+      "description": "Explora la Base de Datos de Música Dominicana a través de artistas, canciones, lanzamientos, géneros, regiones, creadores, cumpleaños y categorías culturales.",
+      "artistsTitle": "Artistas",
+      "creatorsTitle": "Creadores",
+      "musicTitle": "Música",
+      "informationTitle": "Información",
+      "genresTitle": "Géneros",
+      "regionsTitle": "Regiones",
+      "links": {
+        "singers": "Cantantes", "christianArtists": "Artistas Cristianos", "legends": "Leyendas", "emergingArtists": "Artistas Emergentes", "mostAwarded": "Artistas Más Premiados", "birthdays": "Cumpleaños", "instrumentalClassical": "Instrumental y Clásica",
+        "composers": "Compositores", "songwriters": "Autores de Canciones", "lyricists": "Letristas", "djs": "DJs", "musicians": "Músicos", "producers": "Productores",
+        "songs": "Canciones", "releases": "Lanzamientos", "genres": "Géneros", "home": "Inicio", "about": "Acerca de", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de Privacidad", "terms": "Términos de Uso", "dmca": "Derechos de Autor y DMCA"
+      },
+      "genreLabels": {"worship": "Adoración", "merengue": "Merengue", "bachata": "Bachata", "urban": "Urbano", "salsa": "Salsa", "ballads": "Baladas", "pop": "Pop", "rock": "Rock", "reggae": "Reggae", "jazz": "Jazz", "electronic": "Electrónica", "instrumental": "Instrumental", "folklore": "Folclore", "fusion": "Fusión"}
+    },
+    "releaseListing": {
+      "eyebrow": "Lanzamientos",
+      "paginationAria": "Paginación de lanzamientos",
+      "pageOf": "Página {page} de {total}",
+      "showing": "Mostrando {count} de {total} lanzamientos",
+      "homeBreadcrumb": "Inicio",
+      "releasesBreadcrumb": "Lanzamientos",
+      "decadeTitle": "Lanzamientos Dominicanos de los {decade}",
+      "decadeDescription": "Explora lanzamientos dominicanos de los {decade}, incluidos álbumes, sencillos, EPs, recopilaciones, grabaciones en vivo y más.",
+      "mostViewedTitle": "Lanzamientos Dominicanos Más Vistos",
+      "mostViewedDescription": "Explora los lanzamientos dominicanos que reciben más atención de los visitantes de Mangulina.",
+      "recentTitle": "Lanzamientos Dominicanos Recientes",
+      "recentDescription": "Explora álbumes, sencillos, EPs, recopilaciones, grabaciones en vivo y otros lanzamientos dominicanos recientes.",
+      "essentialTitle": "Álbumes Dominicanos Esenciales",
+      "essentialDescription": "Una guía editorial de álbumes y lanzamientos dominicanos de importancia cultural en Mangulina.",
+      "types": {
+        "albums": {"title": "Álbumes Dominicanos", "description": "Explora álbumes dominicanos de merengue, bachata, salsa, urbano, adoración y otros estilos en Mangulina."},
+        "singles": {"title": "Sencillos Dominicanos", "description": "Explora sencillos dominicanos de artistas de escenas clásicas, contemporáneas y emergentes."},
+        "eps": {"title": "EPs Dominicanos", "description": "Explora EPs dominicanos y proyectos breves documentados en la Base de Datos de Música Dominicana."},
+        "compilations": {"title": "Recopilaciones Dominicanas", "description": "Descubre recopilaciones, colecciones y proyectos de múltiples artistas dominicanos en Mangulina."},
+        "live": {"title": "Álbumes Dominicanos en Vivo", "description": "Explora álbumes en vivo y grabaciones de conciertos dominicanos del catálogo de Mangulina."},
+        "soundtracks": {"title": "Bandas Sonoras Dominicanas", "description": "Explora bandas sonoras dominicanas y música vinculada al cine, la televisión y el teatro."}
+      }
     }
   },
   "table": {
@@ -276,8 +611,9 @@
     "noPreview": "Sin vista previa",
     "playingInMangulina": "Reproduciendo dentro de Mangulina",
     "exportCSV": "Exportar CSV",
-    "throughTheDecades": "A Través de las Décadas",
-    "domincanMusicDecades": "Música Dominicana A Través de las Décadas",
+    "throughTheDecades": "Viaje en el Tiempo",
+    "archiveCta": "Archivo",
+    "domincanMusicDecades": "Viaje en el Tiempo",
     "featuredArtist": "Artista Destacado",
     "from": "De:",
     "musicalGenres": "Géneros Musicales:",
@@ -347,7 +683,9 @@
       "description": "Herramientas editoriales para mantener la base de datos de música dominicana curada de Mangulina.",
       "statusOpen": "Abierto",
       "statusComingSoon": "Próximamente",
-      "goToTool": "Ir a herramienta"
+      "goToTool": "Ir a herramienta",
+      "branding": "Mangulina Admin",
+      "adminAccess": "Acceso de Administración"
     },
     "buttons": {
       "exitToHome": "Salir a Inicio",
@@ -356,7 +694,37 @@
       "createNewArtist": "Crear Nuevo Artista",
       "updateArtistProfile": "Actualizar Perfil del Artista",
       "createArtist": "Crear Artista",
-      "processing": "Procesando..."
+      "processing": "Procesando...",
+      "new": "Nuevo",
+      "edit": "Editar",
+      "deactivate": "Desactivar",
+      "activate": "Activar",
+      "generateSlug": "Generar Slug",
+      "saveContributor": "Guardar Colaborador",
+      "resetForm": "Reiniciar / Crear Nuevo",
+      "copy": "Copiar",
+      "refresh": "Actualizar acceso de administración",
+      "revoke": "Revocar",
+      "saveAward": "Guardar Premio",
+      "resetAwardForm": "Reiniciar / Crear Nuevo Premio",
+      "saveCategory": "Guardar Categoría",
+      "resetCategoryForm": "Reiniciar / Crear Nueva Categoría",
+      "saveArtistAward": "Guardar Premio del Artista",
+      "saveGenre": "Guardar Género",
+      "save": "Guardar",
+      "add": "Agregar",
+      "updateRelease": "Actualizar Lanzamiento",
+      "addRelease": "Agregar Lanzamiento",
+      "cancelEdit": "Cancelar edición de lanzamiento",
+      "openLink": "Abrir ↗",
+      "approve": "Aprobar",
+      "reject": "Rechazar",
+      "needsReview": "Necesita Revisión",
+      "collapse": "Contraer",
+      "saveEdits": "Guardar Cambios",
+      "search": "Buscar",
+      "addAsApprovedLink": "Agregar como Enlace Aprobado",
+      "showAllStatuses": "Mostrar todos los estados"
     },
     "forms": {
       "selectPrimaryGenre": "-- Selecciona Género Principal --",
@@ -462,175 +830,10 @@
         "unknownArtist": "Desconocido",
         "unknownRecording": "Grabación desconocida"
       }
-    }
-  },
-  "archive": {
-    "ui": {
-      "loadingSongs": "Cargando canciones",
-      "noSongs": "0 canciones",
-      "topSongs": "Top 50 canciones por vistas",
-      "sortByTitle": "Ordenar por Título",
-      "sortByViews": "Ordenar por Vistas",
-      "loadingMore": "Cargando canciones…"
-    }
-  },
-  "search": {
-    "ui": {
-      "placeholder": "Buscar artistas, canciones y álbumes.",
-      "noQuery": "Escribe algo en el cuadro de búsqueda para empezar.",
-      "noResults": "No se encontraron resultados.",
-      "artistsGroup": "Artistas",
-      "songsGroup": "Canciones",
-      "albumsGroup": "Álbumes"
-    }
-  },
-  "birthdays": {
-    "ui": {
-      "archiveTitle": "Archivo de Cumpleaños",
-      "unavailable": "El archivo de cumpleaños no está disponible temporalmente.",
-      "noArtists": "No hay artistas publicados con cumpleaños en este año disponibles actualmente.",
-      "selectYear": "Selecciona un año de nacimiento para explorar artistas en orden de fecha de nacimiento.",
-      "noBirthdays": "Actualmente no hay cumpleaños de artistas disponibles."
-    }
-  },
-  "fallback": {
-    "unknownArtist": "Artista desconocido",
-    "deceased": "Fallecido",
-    "openExternal": "Abrir ↗",
-    "openYoutube": "Abrir en YouTube"
-  },
-  "auth": {
-    "login": {
-      "title": "Iniciar Sesión",
-      "emailRequired": "Ingresa tu correo electrónico antes de iniciar sesión.",
-      "magicLinkEmailRequired": "Ingresa tu correo electrónico antes de solicitar un enlace mágico.",
-      "magicLinkSent": "Enlace mágico enviado. Revisa tu correo para terminar de iniciar sesión.",
-      "signingIn": "Iniciando Sesión...",
-      "submitButton": "Iniciar Sesión",
-      "magicLinkButton": "Enviar Enlace Mágico",
-      "backButton": "Volver a Iniciar Sesión"
-    },
-    "signup": {
-      "title": "Crear Cuenta",
-      "emailRequired": "Ingresa tu correo de administrador invitado.",
-      "requestFinished": "La solicitud de registro se completó.",
-      "withInviteText": "Usa la dirección de correo invitada para crear tu cuenta de administrador.",
-      "requiresInviteText": "El registro requiere un enlace de invitación de un administrador existente.",
-      "creating": "Creando...",
-      "submitButton": "Crear Cuenta",
-      "linkButton": "Crear Cuenta"
-    }
-  },
-  "form": {
-    "labels": {
-      "email": "Correo Electrónico",
-      "password": "Contraseña",
-      "name": "Nombre",
-      "slug": "Slug",
-      "role": "Rol",
-      "location": "Ubicación",
-      "bio": "Biografía",
-      "specialty": "Especialidad (separadas por comas)",
-      "website": "Sitio Web",
-      "facebook": "Facebook",
-      "instagram": "Instagram",
-      "youtube": "Youtube",
-      "displayOrder": "Orden de Visualización",
-      "active": "Activo",
-      "awardName": "Nombre del Premio",
-      "organization": "Organización",
-      "country": "País",
-      "description": "Descripción",
-      "award": "Premio",
-      "categoryName": "Nombre de la Categoría",
-      "artist": "Artista",
-      "category": "Categoría",
-      "year": "Año",
-      "work": "Obra",
-      "won": "Ganado",
-      "source": "Fuente",
-      "genreName": "Nombre del Género",
-      "homeFeatured": "Destacado en Inicio",
-      "releaseTitle": "Título del Lanzamiento",
-      "releaseType": "Tipo de Lanzamiento",
-      "releaseDate": "Fecha de Lanzamiento",
-      "releaseYear": "Año de Lanzamiento",
-      "sortYear": "Año de Ordenamiento",
-      "releaseStatus": "Estado del Lanzamiento",
-      "label": "Sello Discográfico",
-      "catalogNumber": "Número de Catálogo",
-      "barcode": "Código de Barras",
-      "disambiguation": "Aclaración",
-      "platform": "Plataforma",
-      "status": "Estado",
-      "minConfidence": "Confianza Mínima",
-      "limit": "Límite",
-      "searchRows": "Buscar filas cargadas",
-      "url": "URL",
-      "linkType": "Tipo de Enlace",
-      "confidence": "Confianza",
-      "titleFound": "Título Encontrado",
-      "artistFound": "Artista Encontrado",
-      "externalId": "ID Externo",
-      "officialLink": "Enlace oficial",
-      "searchRecording": "Buscar Grabación",
-      "selectRecording": "Seleccionar Grabación",
-      "urlRequired": "URL *"
-    },
-    "placeholders": {
-      "specialtyExample": "Música dominicana, Merengue, Historia de la música",
-      "selectAward": "-- Selecciona Premio --",
-      "selectArtist": "-- Selecciona Artista --",
-      "noCategory": "-- Sin Categoría --",
-      "select": "— Seleccionar —",
-      "disambiguation": "Remasterizado, edición en vivo, lanzamiento alternativo...",
-      "countryDefault": "DO",
-      "confidence": "ej. 0.85",
-      "recordingTitle": "Escribe un título de grabación…",
-      "url": "https://…",
-      "labelExample": "ej. Deezer"
-    }
-  },
-  "admin": {
-    "ui": {
-      "branding": "Mangulina Admin",
-      "adminAccess": "Acceso de Administración"
     },
     "navigation": {
       "portal": "Portal de Administración",
       "backToAdmin": "Volver a Admin"
-    },
-    "buttons": {
-      "new": "Nuevo",
-      "edit": "Editar",
-      "deactivate": "Desactivar",
-      "activate": "Activar",
-      "generateSlug": "Generar Slug",
-      "saveContributor": "Guardar Colaborador",
-      "resetForm": "Reiniciar / Crear Nuevo",
-      "copy": "Copiar",
-      "refresh": "Actualizar acceso de administración",
-      "revoke": "Revocar",
-      "saveAward": "Guardar Premio",
-      "resetAwardForm": "Reiniciar / Crear Nuevo Premio",
-      "saveCategory": "Guardar Categoría",
-      "resetCategoryForm": "Reiniciar / Crear Nueva Categoría",
-      "saveArtistAward": "Guardar Premio del Artista",
-      "saveGenre": "Guardar Género",
-      "save": "Guardar",
-      "add": "Agregar",
-      "updateRelease": "Actualizar Lanzamiento",
-      "addRelease": "Agregar Lanzamiento",
-      "cancelEdit": "Cancelar edición de lanzamiento",
-      "openLink": "Abrir ↗",
-      "approve": "Aprobar",
-      "reject": "Rechazar",
-      "needsReview": "Necesita Revisión",
-      "collapse": "Contraer",
-      "saveEdits": "Guardar Cambios",
-      "search": "Buscar",
-      "addAsApprovedLink": "Agregar como Enlace Aprobado",
-      "showAllStatuses": "Mostrar todos los estados"
     },
     "contributors": {
       "title": "Gestor de Colaboradores",
@@ -827,6 +1030,158 @@
       "loadingLinks": "Error al cargar enlaces de plataforma: {error}",
       "updatingLink": "Error al actualizar enlace de plataforma: {error}",
       "addingLink": "Error al agregar enlace de plataforma: {error}"
+    }
+  },
+  "archive": {
+    "ui": {
+      "loadingSongs": "Cargando canciones",
+      "noSongs": "0 canciones",
+      "topSongs": "Top 50 canciones por vistas",
+      "sortByTitle": "Ordenar por Título",
+      "sortByViews": "Ordenar por Vistas",
+      "loadingMore": "Cargando canciones…",
+      "showingRange": "Mostrando {start} a {end} de {total}",
+      "sortAria": "Ordenar canciones del archivo",
+      "allHeading": "Canciones y Grabaciones Dominicanas",
+      "yearHeading": "Música Dominicana Lanzada en {year}",
+      "decadeHeading": "Música Dominicana de los {decade}",
+      "browseByDecade": "Explorar el Archivo por Décadas",
+      "decadeArchive": "Archivo de los {decade}",
+      "archive": "Archivo",
+      "songCount": "{count, plural, one {# canción} other {# canciones}}",
+      "loadError": "Error al cargar las canciones.",
+      "noRecordingsFor": "No se encontraron grabaciones para {period}.",
+      "noRecordings": "No se encontraron grabaciones."
+    }
+  },
+  "birthdays": {
+    "ui": {
+      "archiveTitle": "Archivo de Cumpleaños",
+      "unavailable": "El archivo de cumpleaños no está disponible temporalmente.",
+      "noArtists": "No hay artistas publicados con cumpleaños en este año disponibles actualmente.",
+      "selectYear": "Selecciona un año de nacimiento para explorar artistas en orden de fecha de nacimiento.",
+      "noBirthdays": "Actualmente no hay cumpleaños de artistas disponibles.",
+      "metadataTitle": "Cumpleaños de Artistas",
+      "metadataDescription": "Explora artistas dominicanos por cumpleaños y descubre la historia de la música dominicana en Mangulina, la Base de Datos de Música Dominicana.",
+      "title": "Cumpleaños de Artistas",
+      "description": "Explora artistas dominicanos por cumpleaños y descubre a las personas que ayudaron a dar forma a la música dominicana a través de las generaciones.",
+      "bornIn": "Artistas nacidos en {year}",
+      "showingBornIn": "Mostrando artistas dominicanos en Mangulina nacidos en {year}, ordenados por fecha de nacimiento.",
+      "zodiacAria": "Cumpleaños de artistas por signo zodiacal",
+      "monthAria": "Cumpleaños de artistas por mes",
+      "artistCount": "{count, plural, one {# Artista} other {# Artistas}}",
+      "deceased": "Fallecido",
+      "browseAria": "Explorar cumpleaños por",
+      "byMonth": "Por Mes",
+      "byYear": "Por Año",
+      "byZodiac": "Por Signo Zodiacal",
+      "yearAria": "Explorar cumpleaños de artistas por año",
+      "selectYearPlaceholder": "Seleccionar Año",
+      "browseByMonth": "Explorar por Mes"
+    },
+    "months": {
+      "january": "Enero", "february": "Febrero", "march": "Marzo", "april": "Abril", "may": "Mayo", "june": "Junio", "july": "Julio", "august": "Agosto", "september": "Septiembre", "october": "Octubre", "november": "Noviembre", "december": "Diciembre"
+    },
+    "zodiac": {
+      "aries": "Aries", "taurus": "Tauro", "gemini": "Géminis", "cancer": "Cáncer", "leo": "Leo", "virgo": "Virgo", "libra": "Libra", "scorpio": "Escorpio", "sagittarius": "Sagitario", "capricorn": "Capricornio", "aquarius": "Acuario", "pisces": "Piscis"
+    }
+  },
+  "fallback": {
+    "unknownArtist": "Artista desconocido",
+    "deceased": "Fallecido",
+    "openExternal": "Abrir ↗",
+    "openYoutube": "Abrir en YouTube"
+  },
+  "auth": {
+    "login": {
+      "title": "Iniciar Sesión",
+      "emailRequired": "Ingresa tu correo electrónico antes de iniciar sesión.",
+      "magicLinkEmailRequired": "Ingresa tu correo electrónico antes de solicitar un enlace mágico.",
+      "magicLinkSent": "Enlace mágico enviado. Revisa tu correo para terminar de iniciar sesión.",
+      "signingIn": "Iniciando Sesión...",
+      "submitButton": "Iniciar Sesión",
+      "magicLinkButton": "Enviar Enlace Mágico",
+      "backButton": "Volver a Iniciar Sesión"
+    },
+    "signup": {
+      "title": "Crear Cuenta",
+      "emailRequired": "Ingresa tu correo de administrador invitado.",
+      "requestFinished": "La solicitud de registro se completó.",
+      "withInviteText": "Usa la dirección de correo invitada para crear tu cuenta de administrador.",
+      "requiresInviteText": "El registro requiere un enlace de invitación de un administrador existente.",
+      "creating": "Creando...",
+      "submitButton": "Crear Cuenta",
+      "linkButton": "Crear Cuenta"
+    }
+  },
+  "form": {
+    "labels": {
+      "email": "Correo Electrónico",
+      "password": "Contraseña",
+      "name": "Nombre",
+      "slug": "Slug",
+      "role": "Rol",
+      "location": "Ubicación",
+      "bio": "Biografía",
+      "specialty": "Especialidad (separadas por comas)",
+      "website": "Sitio Web",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "youtube": "Youtube",
+      "displayOrder": "Orden de Visualización",
+      "active": "Activo",
+      "awardName": "Nombre del Premio",
+      "organization": "Organización",
+      "country": "País",
+      "description": "Descripción",
+      "award": "Premio",
+      "categoryName": "Nombre de la Categoría",
+      "artist": "Artista",
+      "category": "Categoría",
+      "year": "Año",
+      "work": "Obra",
+      "won": "Ganado",
+      "source": "Fuente",
+      "genreName": "Nombre del Género",
+      "homeFeatured": "Destacado en Inicio",
+      "releaseTitle": "Título del Lanzamiento",
+      "releaseType": "Tipo de Lanzamiento",
+      "releaseDate": "Fecha de Lanzamiento",
+      "releaseYear": "Año de Lanzamiento",
+      "sortYear": "Año de Ordenamiento",
+      "releaseStatus": "Estado del Lanzamiento",
+      "label": "Sello Discográfico",
+      "catalogNumber": "Número de Catálogo",
+      "barcode": "Código de Barras",
+      "disambiguation": "Aclaración",
+      "platform": "Plataforma",
+      "status": "Estado",
+      "minConfidence": "Confianza Mínima",
+      "limit": "Límite",
+      "searchRows": "Buscar filas cargadas",
+      "url": "URL",
+      "linkType": "Tipo de Enlace",
+      "confidence": "Confianza",
+      "titleFound": "Título Encontrado",
+      "artistFound": "Artista Encontrado",
+      "externalId": "ID Externo",
+      "officialLink": "Enlace oficial",
+      "searchRecording": "Buscar Grabación",
+      "selectRecording": "Seleccionar Grabación",
+      "urlRequired": "URL *"
+    },
+    "placeholders": {
+      "specialtyExample": "Música dominicana, Merengue, Historia de la música",
+      "selectAward": "-- Selecciona Premio --",
+      "selectArtist": "-- Selecciona Artista --",
+      "noCategory": "-- Sin Categoría --",
+      "select": "— Seleccionar —",
+      "disambiguation": "Remasterizado, edición en vivo, lanzamiento alternativo...",
+      "countryDefault": "DO",
+      "confidence": "ej. 0.85",
+      "recordingTitle": "Escribe un título de grabación…",
+      "url": "https://…",
+      "labelExample": "ej. Deezer"
     }
   }
 }

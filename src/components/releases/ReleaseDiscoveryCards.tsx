@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import type { ReleaseDecadeCount, ReleaseTypeCount } from "@/lib/releaseApi";
 
@@ -14,28 +14,27 @@ function CountCard({
   href,
   title,
   count,
-  suffix,
 }: {
   href: string;
   title: string;
   count: number;
-  suffix: string;
 }) {
+  const t = useTranslations("pages.releasesHub");
+
   return (
     <Link
       href={href}
       className="rounded-xl border border-[#002D62]/10 bg-white px-5 py-4 shadow-sm transition hover:border-[#CE1126]/30 hover:bg-[#CE1126]/3"
     >
       <h3 className="text-base font-semibold text-[#002D62]">{title}</h3>
-      <p className="mt-2 text-sm text-gray-500">
-        {count.toLocaleString()} {suffix}
-      </p>
+      <p className="mt-2 text-sm text-gray-500">{t("releaseCount", { count })}</p>
     </Link>
   );
 }
 
 export function ReleaseTypeCards({ types }: ReleaseTypeCardsProps) {
   const t = useTranslations("components");
+  const tType = useTranslations("releaseTypePlural");
 
   if (types.length === 0) {
     return <p className="text-sm text-gray-500">{t("releaseTypeCounts")}</p>;
@@ -47,9 +46,8 @@ export function ReleaseTypeCards({ types }: ReleaseTypeCardsProps) {
         <CountCard
           key={type.slug}
           href={`/releases/${type.slug}`}
-          title={type.label}
+          title={tType.has(type.slug) ? tType(type.slug) : type.label}
           count={type.count}
-          suffix={type.count === 1 ? "release" : "releases"}
         />
       ))}
     </div>
@@ -71,7 +69,6 @@ export function ReleaseDecadeCards({ decades }: ReleaseDecadeCardsProps) {
           href={`/releases/${decade.slug}`}
           title={decade.label}
           count={decade.count}
-          suffix={decade.count === 1 ? "release" : "releases"}
         />
       ))}
     </div>

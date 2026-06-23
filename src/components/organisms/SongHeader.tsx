@@ -1,4 +1,5 @@
 // components/organisms/SongHeader.tsx
+import { useTranslations } from "next-intl";
 type SongHeaderProps = {
   title: string;
   artist: string;
@@ -24,6 +25,7 @@ export default function SongHeader({
   genre,
   subgenre,
 }: SongHeaderProps) {
+  const t = useTranslations("common");
   const genreText = [formatLabel(genre), formatLabel(subgenre)].filter(Boolean).join(" / ");
 
   return (
@@ -35,7 +37,7 @@ export default function SongHeader({
       </p>
       {views != null && (
         <p className="mt-1 text-xs text-gray-500">
-          {views.toLocaleString()} views
+          {views.toLocaleString()} {t("views")}
         </p>
       )}
       {genreText && (

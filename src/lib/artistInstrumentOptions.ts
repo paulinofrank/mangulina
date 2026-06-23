@@ -22,7 +22,7 @@ export async function getArtistInstrumentOptions(baseRole: string) {
       .from("artists")
       .select("instruments")
       .eq("status", "published")
-      .or(`primary_role.eq.${baseRole},occupations.cs.${JSON.stringify([baseRole])}`)
+      .eq("primary_role", baseRole)
       .range(from, from + PAGE_SIZE - 1);
 
     if (error) {

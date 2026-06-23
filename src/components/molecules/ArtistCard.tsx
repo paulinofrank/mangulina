@@ -1,5 +1,6 @@
 // ArtistCard.tsx  (Molecule)
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 import ArtistImage from "@/components/atoms/ArtistImage";
 import ArtistName from "@/components/atoms/ArtistName";
@@ -18,6 +19,8 @@ export default function ArtistCard({
   titleAs = "h3",
   showViews = true,
 }: ArtistCardProps) {
+
+  const t = useTranslations("common");
 
   // Build dynamic image URL
   const imageUrl = getArtistImageUrl(artist.id);
@@ -66,7 +69,7 @@ export default function ArtistCard({
 
         {showViews && artist.views ? (
           <p className="text-[11px] text-gray-500 leading-tight">
-            {artist.views.toLocaleString()} views
+            {artist.views.toLocaleString()} {t("views")}
           </p>
         ) : null}
 

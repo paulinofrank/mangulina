@@ -1,5 +1,6 @@
 // components/organisms/SongArtistPreviewCard.tsx
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 import ArtistImage from "@/components/atoms/ArtistImage";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
@@ -14,8 +15,8 @@ type SongArtistPreviewCardProps = {
   } | null;
 };
 
-function getExcerpt(value: string | null | undefined) {
-  if (!value?.trim()) return "Explore this artist profile, songs, credits, and related Dominican music history.";
+function getExcerpt(value: string | null | undefined, fallback: string) {
+  if (!value?.trim()) return fallback;
 
   const normalized = value.replace(/\s+/g, " ").trim();
   if (normalized.length <= 170) return normalized;
@@ -24,6 +25,7 @@ function getExcerpt(value: string | null | undefined) {
 }
 
 export default function SongArtistPreviewCard({ artist }: SongArtistPreviewCardProps) {
+  const t = useTranslations();
   if (!artist?.slug) return null;
 
   const imageUrl = getArtistImageUrl(artist.id);
@@ -34,7 +36,7 @@ export default function SongArtistPreviewCard({ artist }: SongArtistPreviewCardP
       className="group block h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6"
     >
       <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-        About the Artist
+        {t("song.hero.aboutArtist")}
       </h2>
 
       <div className="flex gap-4">
@@ -50,13 +52,13 @@ export default function SongArtistPreviewCard({ artist }: SongArtistPreviewCardP
 
             {artist.views != null && artist.views > 0 && (
               <p className="shrink-0 text-xs text-gray-400">
-                {artist.views.toLocaleString()} views
+                {artist.views.toLocaleString()} {t("common.views")}
               </p>
             )}
           </div>
 
           <p className="mt-2 text-sm leading-relaxed text-gray-600">
-            {getExcerpt(artist.bio)}
+            {getExcerpt(artist.bio, t("song.hero.artistFallback"))}
           </p>
         </div>
       </div>

@@ -1,19 +1,12 @@
 'use client';
 
-import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useTranslations } from 'next-intl';
-import {
-  addSpanishPrefix,
-  getLocaleFromPathname,
-  removeSpanishPrefix,
-} from '@/i18n/pathname';
 
 export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations('navigation');
-  const locale = getLocaleFromPathname(pathname);
 
   const navLinks = [
     { key: 'home', href: '/' },
@@ -21,8 +14,6 @@ export default function Navbar() {
     { key: 'christian', href: '/christian' },
     { key: 'discover', href: '/discover'},
   ];
-
-  const cleanPathname = removeSpanishPrefix(pathname);
 
   return (
     <nav
@@ -57,11 +48,11 @@ export default function Navbar() {
         {/* Navigation Links */}
         <div className="flex min-w-0 gap-3 sm:gap-5">
           {navLinks.map((link) => {
-            const isActive = cleanPathname === link.href;
+            const isActive = pathname === link.href;
             return (
               <Link
                 key={link.href}
-                href={locale === 'es' ? addSpanishPrefix(link.href) : link.href}
+                href={link.href}
                 className={`text-sm font-normal uppercase tracking-wider transition-colors ${
                   isActive ? 'text-[#CE1126]' : 'text-gray-700 hover:text-[#CE1126]'
                 }`}

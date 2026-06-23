@@ -1,5 +1,6 @@
 // ArtistImage.tsx  (Molecule)
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
 type ArtistImageProps = {
   imageUrl: string | null | undefined
@@ -7,10 +8,12 @@ type ArtistImageProps = {
 }
 
 export default function ArtistImage({ imageUrl, name }: ArtistImageProps) {
+  const t = useTranslations("common")
+
   if (!imageUrl) {
     return (
       <div className="relative h-full w-full flex items-center justify-center bg-gray-100 text-gray-400 text-xs italic">
-        No Image
+        {t("noImage")}
       </div>
     )
   }

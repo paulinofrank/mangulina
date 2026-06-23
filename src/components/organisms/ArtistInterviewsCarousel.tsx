@@ -67,10 +67,10 @@ export default function ArtistInterviewsCarousel({
 
         <div className="mb-4">
           <h3 className="text-xs font-normal uppercase text-(--color-wikicrimson)">
-            Video Interviews
+            {t("artist.videoInterviews")}
           </h3>
           <p className="mt-2 text-xs text-gray-400">
-            Interviews, conversations, and archival media connected to this artist.
+            {t("artist.interviewsSubtitle")}
           </p>
         </div>
 
@@ -132,7 +132,7 @@ export default function ArtistInterviewsCarousel({
                 type="button"
                 onClick={() => setActiveInterview({ ...interview, videoId })}
                 className={cardClassName}
-                aria-label={`Play ${interview.title}`}
+                aria-label={t("artist.playAria", { title: interview.title })}
               >
                 {cardContent}
               </button>
@@ -175,7 +175,7 @@ export default function ArtistInterviewsCarousel({
                 type="button"
                 onClick={closeModal}
                 className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gray-200 text-gray-500 transition-colors hover:border-[#002D62]/30 hover:text-[#002D62]"
-                aria-label="Close video"
+                aria-label={t("artist.closeVideo")}
               >
                 <X className="h-4 w-4" aria-hidden="true" />
               </button>

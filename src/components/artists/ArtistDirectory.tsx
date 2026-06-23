@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useState, Suspense } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { SlidersHorizontal } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
 import { getSupabaseClient } from "@/lib/supabase";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import JsonLd from "@/components/seo/JsonLd";
@@ -31,8 +32,9 @@ export type ArtistBrowseRole =
 
 type ArtistDirectoryProps = {
   path: string;
-  heading: string;
-  intro: string;
+  heading?: string;
+  intro?: string;
+  i18nKey?: string;
   role?: ArtistBrowseRole;
   roleLabel?: string;
   fixedContext?: "secular" | "christian";
@@ -63,15 +65,23 @@ const ROLE_FILTERS: Array<{ key: ArtistBrowseRole; label: string }> = [
 ];
 const ROLE_FILTER_KEYS = new Set<ArtistBrowseRole>(ROLE_FILTERS.map((item) => item.key));
 
-const CONTEXT_FILTERS = [
-  { key: "secular", label: "Secular" },
-  { key: "christian", label: "Christian" },
-];
+// Maps a singular role to its plural key in the `filters.roleLabels` namespace.
+const ROLE_LABEL_KEYS: Record<ArtistBrowseRole, string> = {
+  singer: "singers",
+  composer: "composers",
+  songwriter: "songwriters",
+  lyricist: "lyricists",
+  musician: "musicians",
+  dj: "djs",
+  producer: "producers",
+  instrumentalist: "musicians",
+};
 
-const STATUS_FILTERS = [
-  { key: "legend", label: "Legends" },
-  { key: "emerging", label: "Emerging" },
-];
+// Maps an artist status to its key in the `filters.statusLabels` namespace.
+const STATUS_LABEL_KEYS: Record<string, string> = {
+  legend: "legends",
+  emerging: "emerging",
+};
 
 const ARTISTS_QUERY_TIMEOUT_MS = 20000;
 const ARTIST_LIST_SELECT = [
@@ -142,6 +152,8 @@ function Pagination({
   mobileOnly?: boolean;
   insideBox?: boolean;
 }) {
+  const t = useTranslations("pagination");
+
   if (totalPages <= 1) return null;
 
   const mobileWindowSize = Math.min(totalPages, 3);
@@ -171,7 +183,7 @@ function Pagination({
         disabled={currentPage === 1}
         className={`${mobileClass} cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30`}
       >
-        First
+        {t("first")}
       </button>
 
       <button
@@ -179,7 +191,7 @@ function Pagination({
         disabled={currentPage === 1}
         className={`${mobileClass} cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30`}
       >
-        Previous
+        {t("previous")}
       </button>
 
       <div className={`${mobileClass} flex-1 items-center justify-center gap-2`}>
@@ -216,7 +228,7 @@ function Pagination({
         disabled={currentPage === totalPages}
         className={`${mobileClass} cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30`}
       >
-        Next
+        {t("next")}
       </button>
 
       <button
@@ -224,7 +236,7 @@ function Pagination({
         disabled={currentPage === totalPages}
         className={`${mobileClass} cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30`}
       >
-        Last
+        {t("last")}
       </button>
 
       <button
@@ -232,7 +244,7 @@ function Pagination({
         disabled={currentPage === 1}
         className={`${desktopClass} cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30`}
       >
-        Previous
+        {t("previous")}
       </button>
 
       {Array.from({ length: Math.min(totalPages, 5) }).map((_, i) => {
@@ -258,7 +270,7 @@ function Pagination({
         disabled={currentPage === totalPages}
         className={`${desktopClass} cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30`}
       >
-        Next
+        {t("next")}
       </button>
     </section>
   );
@@ -268,6 +280,7 @@ function ArtistsContent({
   path: basePath,
   heading,
   intro,
+  i18nKey,
   role: fixedRole,
   roleLabel: fixedRoleLabel,
   fixedContext,
@@ -287,9 +300,15 @@ function ArtistsContent({
   awardOptions = [],
 }: ArtistDirectoryProps) {
   const supabase = getSupabaseClient();
+  const t = useTranslations();
   const router = useRouter();
   const searchParams = useSearchParams();
   const searchParamsString = searchParams.toString();
+
+  // Localized heading/intro for the role directory pages; fall back to the
+  // literal props for directory variants that don't pass an i18nKey.
+  const displayHeading = i18nKey ? t(`artistDirectory.${i18nKey}.heading`) : (heading ?? "");
+  const displayIntro = i18nKey ? t(`artistDirectory.${i18nKey}.intro`) : (intro ?? "");
 
   const [artists, setArtists] = useState<Artist[]>([]);
   const [provinces, setProvinces] = useState<ProvinceOption[]>([]);
@@ -309,8 +328,15 @@ function ArtistsContent({
       ? (roleParam as ArtistBrowseRole)
       : undefined;
   const role = fixedRole ?? (showRoleFilters ? selectedRole : undefined);
-  const roleLabel =
-    fixedRoleLabel ?? ROLE_FILTERS.find((item) => item.key === role)?.label;
+  const roleLabel = role
+    ? t(`filters.roleLabels.${ROLE_LABEL_KEYS[role]}`)
+    : fixedRoleLabel;
+  // Role-page selector options come from config with English labels; translate
+  // them via filters.roleLabels using the slug derived from the href.
+  const rolePageLabel = (option: { href: string; label: string }) => {
+    const key = `filters.roleLabels.${option.href.replace(/^\//, "")}`;
+    return t.has(key) ? t(key) : option.label;
+  };
   const tag = searchParams.get("tag");
   const selectedContext = fixedContext ?? "";
   const artistStatuses = useMemo(
@@ -472,7 +498,7 @@ function ArtistsContent({
     async function loadArtists() {
       if (!supabase) {
         if (isActive) {
-          setLoadError("Artist data is not configured.");
+          setLoadError(t("errors.artistDataNotConfigured"));
           setLoading(false);
         }
         return;
@@ -485,7 +511,7 @@ function ArtistsContent({
         if (isActive) {
           setArtists([]);
           setTotalCount(0);
-          setLoadError("Artist data took too long to respond.");
+          setLoadError(t("errors.artistDataTimeout"));
           setLoading(false);
         }
       }, ARTISTS_QUERY_TIMEOUT_MS);
@@ -506,9 +532,7 @@ function ArtistsContent({
 
         // ROLE FILTER
         if (role) {
-          query = query.or(
-            `primary_role.eq.${role},occupations.cs.${JSON.stringify([role])}`,
-          );
+          query = query.eq("primary_role", role);
         }
 
         // Classification tags live in artist_tags; musical genres stay in genres.
@@ -579,7 +603,7 @@ function ArtistsContent({
           console.error(error);
           setArtists([]);
           setTotalCount(0);
-          setLoadError("Unable to load artists right now.");
+          setLoadError(t("errors.unableToLoadArtists"));
           return;
         }
 
@@ -604,8 +628,8 @@ function ArtistsContent({
         setTotalCount(0);
         setLoadError(
           abortController.signal.aborted
-            ? "Artist data took too long to respond."
-            : "Unable to load artists right now."
+            ? t("errors.artistDataTimeout")
+            : t("errors.unableToLoadArtists")
         );
       } finally {
         if (timeoutId) window.clearTimeout(timeoutId);
@@ -744,9 +768,15 @@ function ArtistsContent({
   ]);
 
   const pageTitle = useMemo(() => {
-    const contextLabel = CONTEXT_FILTERS.find((item) => item.key === selectedContext)?.label;
+    const contextLabel = selectedContext
+      ? t(`filters.contextLabels.${selectedContext}`)
+      : undefined;
     const statusLabel = artistStatuses
-      .map((status) => STATUS_FILTERS.find((item) => item.key === status)?.label)
+      .map((status) =>
+        STATUS_LABEL_KEYS[status]
+          ? t(`filters.statusLabels.${STATUS_LABEL_KEYS[status]}`)
+          : null,
+      )
       .filter(Boolean)
       .join(" ");
     const tagLabel = [contextLabel, statusLabel].filter(Boolean).join(" ");
@@ -756,11 +786,11 @@ function ArtistsContent({
       null;
 
     if (fixedContext && !role && !province && !genreLabel && artistStatuses.length === 0) {
-      return heading;
+      return displayHeading;
     }
 
     if (fixedArtistStatus && !province && !genreLabel) {
-      return heading;
+      return displayHeading;
     }
 
     if (
@@ -769,7 +799,7 @@ function ArtistsContent({
       !genreLabel &&
       artistStatuses.length === 0
     ) {
-      return heading;
+      return displayHeading;
     }
 
     if (
@@ -779,60 +809,80 @@ function ArtistsContent({
       !selectedContext &&
       artistStatuses.length === 0
     ) {
-      return heading;
+      return displayHeading;
     }
 
     if (province && genreLabel && tagLabel && roleLabel) {
-      return `${province} ${genreLabel} ${tagLabel} ${roleLabel}`;
+      return t("directoryTitles.provinceGenreTagRole", {
+        province,
+        genre: genreLabel,
+        tag: tagLabel,
+        role: roleLabel,
+      });
     }
 
     if (genreLabel && tagLabel && roleLabel) {
-      return `Dominican ${genreLabel} ${tagLabel} ${roleLabel}`;
+      return t("directoryTitles.dominicanGenreTagRole", {
+        genre: genreLabel,
+        tag: tagLabel,
+        role: roleLabel,
+      });
     }
 
     if (genreLabel && roleLabel) {
-      return `Dominican ${genreLabel} ${roleLabel}`;
+      return t("directoryTitles.dominicanGenreRole", {
+        genre: genreLabel,
+        role: roleLabel,
+      });
     }
 
     if (genreLabel && tagLabel) {
-      return `All ${genreLabel} ${tagLabel} Artists`;
+      return t("directoryTitles.allGenreTagArtists", {
+        genre: genreLabel,
+        tag: tagLabel,
+      });
     }
 
     if (genreLabel) {
-      return `All ${genreLabel} Artists`;
+      return t("directoryTitles.allGenreArtists", { genre: genreLabel });
     }
 
     if (province && tagLabel && roleLabel) {
-      return `${province} ${tagLabel} ${roleLabel}`;
+      return t("directoryTitles.provinceTagRole", {
+        province,
+        tag: tagLabel,
+        role: roleLabel,
+      });
     }
 
     if (province && tagLabel) {
-      return `${province} ${tagLabel} Artists`;
+      return t("directoryTitles.provinceTagArtists", { province, tag: tagLabel });
     }
 
     if (province && roleLabel) {
-      return `${province} ${roleLabel}`;
+      return t("directoryTitles.provinceRole", { province, role: roleLabel });
     }
 
     if (province) {
-      return `Artists from ${province}`;
+      return t("directoryTitles.artistsFromProvince", { province });
     }
 
     if (tagLabel && roleLabel) {
-      return `Dominican ${tagLabel} ${roleLabel}`;
+      return t("directoryTitles.dominicanTagRole", { tag: tagLabel, role: roleLabel });
     }
 
     if (tagLabel) {
-      return `All ${tagLabel} Artists`;
+      return t("directoryTitles.allTagArtists", { tag: tagLabel });
     }
 
     if (roleLabel) {
-      return `Dominican ${roleLabel}`;
+      return t("directoryTitles.roleOnly", { role: roleLabel });
     }
 
-    return heading;
+    return displayHeading;
   }, [
-    heading,
+    t,
+    displayHeading,
     fixedContext,
     fixedRole,
     fixedArtistStatus,
@@ -859,10 +909,10 @@ function ArtistsContent({
     <main className="mx-auto max-w-450 px-4 pb-4 pt-10 sm:px-6 sm:pb-6 lg:px-10 lg:pb-10">
       <JsonLd
         data={[
-          collectionPageSchema({ name: heading, description: intro, path: basePath }),
+          collectionPageSchema({ name: displayHeading, description: displayIntro, path: basePath }),
           breadcrumbSchema([
             { name: "Home", path: "/" },
-            { name: heading, path: basePath },
+            { name: displayHeading, path: basePath },
           ]),
         ]}
       />
@@ -879,7 +929,7 @@ function ArtistsContent({
                   fixedProvince ? "leading-tight" : "truncate"
                 }`}
               >
-                {mobileTitlePrefix && mobileTitleHighlight && pageTitle === heading ? (
+                {mobileTitlePrefix && mobileTitleHighlight && pageTitle === displayHeading ? (
                   <>
                     <span className="hidden lg:inline">{pageTitle}</span>
                     <span className="block text-center lg:hidden">
@@ -893,16 +943,15 @@ function ArtistsContent({
               </h1>
 
               <p className="hidden shrink-0 text-right text-xs text-gray-500 lg:block lg:text-sm">
-                Showing{" "}
-                <span className="font-semibold text-(--color-flagblue)">
-                  {artists.length}
-                </span>{" "}
-                of {totalCount.toLocaleString()} artists
+                {t("pagination.showing", {
+                  count: artists.length,
+                  total: totalCount.toLocaleString(),
+                })}
               </p>
             </div>
 
             <p className="max-w-3xl text-sm leading-relaxed text-gray-600 sm:text-base">
-              {intro}
+              {displayIntro}
             </p>
 
             <div
@@ -910,13 +959,13 @@ function ArtistsContent({
             >
               {!hideGenreSelector && (
               <label className="block min-w-0">
-                <span className="sr-only">Genre / Subgenre</span>
+                <span className="sr-only">{t("filters.genreSubgenre")}</span>
                 <select
                   value={selectedGenreValue}
                   onChange={(event) => handleGenreSelection(event.target.value)}
                   className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
                 >
-                  <option value="">All Genres</option>
+                  <option value="">{t("filters.allGenres")}</option>
                   {genreOptions.map((genre) => {
                     const genreValue = genre.slug || genre.name;
                     const subgenres = subgenresByGenreId.get(String(genre.id)) ?? [];
@@ -941,12 +990,12 @@ function ArtistsContent({
                   value={role ?? ""}
                   onChange={(event) => handleRoleChange(event.target.value)}
                   className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
-                  aria-label="Filter by role"
+                  aria-label={t("filters.ariaRole")}
                 >
-                  <option value="">All Roles</option>
+                  <option value="">{t("filters.allRoles")}</option>
                   {ROLE_FILTERS.map((item) => (
                     <option key={item.key} value={item.key}>
-                      {item.label}
+                      {t(`filters.roleLabels.${ROLE_LABEL_KEYS[item.key]}`)}
                     </option>
                   ))}
                 </select>
@@ -958,7 +1007,7 @@ function ArtistsContent({
                   value={province ?? ""}
                   className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
                 >
-                  <option value="">All Provinces</option>
+                  <option value="">{t("filters.allProvinces")}</option>
                   {provinces.map((item) => (
                     <option key={item.province} value={item.province}>
                       {item.province} ({item.count})
@@ -972,9 +1021,9 @@ function ArtistsContent({
                   value={occupationFilter ?? ""}
                   onChange={(event) => handleOccupationChange(event.target.value)}
                   className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
-                  aria-label="Filter by other role"
+                  aria-label={t("filters.ariaOtherRole")}
                 >
-                  <option value="">Role</option>
+                  <option value="">{t("filters.role")}</option>
                   {occupationOptions.map((option) => (
                     <option key={option.value} value={option.value}>
                       {option.label}
@@ -988,9 +1037,9 @@ function ArtistsContent({
                   value={instrumentFilter ?? ""}
                   onChange={(event) => handleInstrumentChange(event.target.value)}
                   className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
-                  aria-label="Filter by instrument"
+                  aria-label={t("filters.ariaInstrument")}
                 >
-                  <option value="">Instrument</option>
+                  <option value="">{t("filters.instrument")}</option>
                   {instrumentOptions.map((option) => (
                     <option key={option.value} value={option.value}>
                       {option.label}
@@ -1004,11 +1053,11 @@ function ArtistsContent({
                   value={basePath}
                   onChange={(event) => router.push(event.target.value)}
                   className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
-                  aria-label="Browse creator role"
+                  aria-label={t("filters.ariaBrowseRole")}
                 >
                   {rolePageOptions.map((option) => (
                     <option key={option.href} value={option.href}>
-                      {option.label}
+                      {rolePageLabel(option)}
                     </option>
                   ))}
                 </select>
@@ -1019,9 +1068,9 @@ function ArtistsContent({
                   value={awardFilter ?? ""}
                   onChange={(event) => handleAwardChange(event.target.value)}
                   className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
-                  aria-label="Filter by award"
+                  aria-label={t("filters.ariaAward")}
                 >
-                  <option value="">All Awards</option>
+                  <option value="">{t("filters.allAwards")}</option>
                   {awardOptions.map((option) => (
                     <option key={option.value} value={option.value}>
                       {option.label}
@@ -1040,14 +1089,14 @@ function ArtistsContent({
                 value={sort}
                 className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
               >
-                <option value="views">Sorted by Views</option>
-                <option value="name">Name A-Z</option>
-                <option value="newest">Newest</option>
+                <option value="views">{t("sortOptions.sortedByViews")}</option>
+                <option value="name">{t("sortOptions.nameAZ")}</option>
+                <option value="newest">{t("sortOptions.newest")}</option>
               </select>
 
               <button className="flex h-9 w-full min-w-0 cursor-pointer items-center justify-center gap-2 rounded-xl border border-black/10 px-3 text-sm text-gray-600">
                 <SlidersHorizontal size={16} />
-                Filters ({activeFilters})
+                {t("buttons.filters", { count: activeFilters })}
               </button>
 
               <button
@@ -1055,7 +1104,7 @@ function ArtistsContent({
                 disabled={activeFilters === 0}
                 className="flex h-9 w-full min-w-0 cursor-pointer items-center justify-center rounded-xl border border-black/10 px-3 text-sm text-gray-600 transition hover:bg-gray-50 hover:text-(--color-flagblue) disabled:cursor-default disabled:opacity-40"
               >
-                Clear all
+                {t("buttons.clearAll")}
               </button>
             </div>
           </div>
@@ -1075,13 +1124,13 @@ function ArtistsContent({
             >
               {!hideGenreSelector && (
                 <label className="min-w-0">
-                  <span className="sr-only">Genre / Subgenre</span>
+                  <span className="sr-only">{t("filters.genreSubgenre")}</span>
                   <select
                     value={selectedGenreValue}
                     onChange={(event) => handleGenreSelection(event.target.value)}
                     className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
                   >
-                    <option value="">All Genres</option>
+                    <option value="">{t("filters.allGenres")}</option>
                     {genreOptions.map((genre) => {
                       const genreValue = genre.slug || genre.name;
                       const subgenres = subgenresByGenreId.get(String(genre.id)) ?? [];
@@ -1103,16 +1152,16 @@ function ArtistsContent({
 
               {showRoleFilters && (
                 <label className="block min-w-0">
-                  <span className="sr-only">Role</span>
+                  <span className="sr-only">{t("filters.role")}</span>
                   <select
                     value={role ?? ""}
                     onChange={(event) => handleRoleChange(event.target.value)}
                     className="h-9 w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
                   >
-                    <option value="">All Roles</option>
+                    <option value="">{t("filters.allRoles")}</option>
                     {ROLE_FILTERS.map((item) => (
                       <option key={item.key} value={item.key}>
-                        {item.label}
+                        {t(`filters.roleLabels.${ROLE_LABEL_KEYS[item.key]}`)}
                       </option>
                     ))}
                   </select>
@@ -1127,13 +1176,13 @@ function ArtistsContent({
                       : ""
                   }`}
                 >
-                  <span className="sr-only">Province</span>
+                  <span className="sr-only">{t("filters.province")}</span>
                   <select
                     onChange={(event) => handleProvinceChange(event.target.value)}
                     value={province ?? ""}
                     className="h-9 w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
                   >
-                    <option value="">All Provinces</option>
+                    <option value="">{t("filters.allProvinces")}</option>
                     {provinces.map((item) => (
                       <option key={item.province} value={item.province}>
                         {item.province} ({item.count})
@@ -1150,9 +1199,9 @@ function ArtistsContent({
                 value={occupationFilter ?? ""}
                 onChange={(event) => handleOccupationChange(event.target.value)}
                 className="h-9 w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
-                aria-label="Filter by other role"
+                aria-label={t("filters.ariaOtherRole")}
               >
-                <option value="">Role</option>
+                <option value="">{t("filters.role")}</option>
                 {occupationOptions.map((option) => (
                   <option key={option.value} value={option.value}>
                     {option.label}
@@ -1166,9 +1215,9 @@ function ArtistsContent({
                 value={instrumentFilter ?? ""}
                 onChange={(event) => handleInstrumentChange(event.target.value)}
                 className="h-9 w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
-                aria-label="Filter by instrument"
+                aria-label={t("filters.ariaInstrument")}
               >
-                <option value="">Instrument</option>
+                <option value="">{t("filters.instrument")}</option>
                 {instrumentOptions.map((option) => (
                   <option key={option.value} value={option.value}>
                     {option.label}
@@ -1182,11 +1231,11 @@ function ArtistsContent({
                 value={basePath}
                 onChange={(event) => router.push(event.target.value)}
                 className="h-9 w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
-                aria-label="Browse creator role"
+                aria-label={t("filters.ariaBrowseRole")}
               >
                 {rolePageOptions.map((option) => (
                   <option key={option.href} value={option.href}>
-                    {option.label}
+                    {rolePageLabel(option)}
                   </option>
                 ))}
               </select>
@@ -1197,9 +1246,9 @@ function ArtistsContent({
                 value={awardFilter ?? ""}
                 onChange={(event) => handleAwardChange(event.target.value)}
                 className="h-9 w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
-                aria-label="Filter by award"
+                aria-label={t("filters.ariaAward")}
               >
-                <option value="">All Awards</option>
+                <option value="">{t("filters.allAwards")}</option>
                 {awardOptions.map((option) => (
                   <option key={option.value} value={option.value}>
                     {option.label}
@@ -1219,13 +1268,13 @@ function ArtistsContent({
                 value={sort}
                 className="h-9 min-w-0 rounded-xl border border-black/10 bg-white px-2 text-xs text-gray-600 outline-none sm:text-sm"
               >
-                <option value="views">Sort: Views</option>
-                <option value="name">Name A-Z</option>
-                <option value="newest">Newest</option>
+                <option value="views">{t("sortOptions.viewsMobile")}</option>
+                <option value="name">{t("sortOptions.nameAZ")}</option>
+                <option value="newest">{t("sortOptions.newest")}</option>
               </select>
               <button className="flex h-9 min-w-0 cursor-pointer items-center justify-center gap-1 rounded-xl border border-black/10 px-2 text-xs text-gray-600 sm:text-sm">
                 <SlidersHorizontal size={16} />
-                Filters
+                {t("buttons.filters", { count: activeFilters })}
               </button>
 
               <button
@@ -1233,14 +1282,15 @@ function ArtistsContent({
                 disabled={activeFilters === 0}
                 className="flex h-9 min-w-0 cursor-pointer items-center justify-center rounded-xl border border-black/10 px-2 text-xs text-gray-600 transition hover:bg-gray-50 hover:text-(--color-flagblue) disabled:cursor-default disabled:opacity-40 sm:text-sm"
               >
-                Clear
+                {t("buttons.clear")}
               </button>
             </div>
 
             <p className="pt-1 text-center text-xs text-gray-500 sm:text-sm">
-              Showing{" "}
-              <span className="font-semibold text-(--color-flagblue)">{artists.length}</span>{" "}
-              of {totalCount.toLocaleString()} artists
+              {t("pagination.showing", {
+                count: artists.length,
+                total: totalCount.toLocaleString(),
+              })}
             </p>
           </div>
 
@@ -1273,7 +1323,7 @@ function ArtistsContent({
               onClick={retryLoad}
               className="cursor-pointer rounded-xl border border-black/10 bg-white px-5 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white"
             >
-              Retry
+              {t("buttons.retry")}
             </button>
           </div>
         ) : artists.length > 0 ? (

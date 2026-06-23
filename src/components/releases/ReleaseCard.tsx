@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import ReleaseCoverImage from "@/components/genres/ReleaseCoverImage";
 import { formatReleaseType, type ReleaseSummary } from "@/lib/releaseApi";
 
@@ -7,9 +8,10 @@ type ReleaseCardProps = {
 };
 
 export default function ReleaseCard({ release }: ReleaseCardProps) {
+  const t = useTranslations("common");
   const year = release.releaseYear ? String(release.releaseYear) : null;
   const type = formatReleaseType(release.type);
-  const artistName = release.artist?.name ?? "Unknown Artist";
+  const artistName = release.artist?.name ?? t("unknownArtist");
 
   const content = (
     <article className="group h-full">
@@ -18,7 +20,7 @@ export default function ReleaseCard({ release }: ReleaseCardProps) {
           <ReleaseCoverImage src={release.coverImageUrl} alt={release.title} />
         ) : (
           <div className="flex h-full w-full items-center justify-center bg-gray-100 px-4 text-center text-sm text-gray-400">
-            No cover
+            {t("noCover")}
           </div>
         )}
       </div>
@@ -41,7 +43,7 @@ export default function ReleaseCard({ release }: ReleaseCardProps) {
     <Link
       href={`/releases/${release.slug}`}
       className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#002D62] focus-visible:ring-offset-2"
-      aria-label={`View ${release.title}`}
+      aria-label={t("viewRelease", { title: release.title })}
     >
       {content}
     </Link>

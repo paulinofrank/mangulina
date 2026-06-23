@@ -2099,7 +2099,7 @@ export default function AdminDashboard() {
 
                     <span
                       aria-hidden="true"
-                      className="mx-1 h-8 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent"
+                      className="mx-1 h-8 w-px bg-linear-to-b from-transparent via-gray-300 to-transparent"
                     />
 
                     {careerStageTagOptions.map((tag) => {

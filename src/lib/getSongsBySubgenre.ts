@@ -1,4 +1,4 @@
-import type { ArchiveSongRow } from "@/app/archive/SongsByYearList";
+import type { ArchiveSongRow } from "@/app/[locale]/archive/SongsByYearList";
 import { supabase } from "@/lib/supabase";
 
 type RecordingViewRow = ArchiveSongRow & {

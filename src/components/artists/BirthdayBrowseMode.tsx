@@ -1,6 +1,7 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export type BirthdayBrowseModeValue = "month" | "year" | "zodiac";
 
@@ -9,14 +10,14 @@ type BirthdayBrowseModeProps = {
 };
 
 const modes: Array<{
-  label: string;
+  labelKey: "byMonth" | "byYear" | "byZodiac";
   value: BirthdayBrowseModeValue;
   href: string;
 }> = [
-  { label: "By Month", value: "month", href: "/artists/birthdays" },
-  { label: "By Year", value: "year", href: "/artists/birthdays?view=year" },
+  { labelKey: "byMonth", value: "month", href: "/artists/birthdays" },
+  { labelKey: "byYear", value: "year", href: "/artists/birthdays?view=year" },
   {
-    label: "By Zodiacal Sign",
+    labelKey: "byZodiac",
     value: "zodiac",
     href: "/artists/birthdays?view=zodiac",
   },
@@ -24,9 +25,10 @@ const modes: Array<{
 
 export default function BirthdayBrowseMode({ mode }: BirthdayBrowseModeProps) {
   const router = useRouter();
+  const t = useTranslations("birthdays.ui");
 
   return (
-    <div className="mx-auto mt-6 grid w-full max-w-xl grid-cols-3 gap-2" aria-label="Browse birthdays by">
+    <div className="mx-auto mt-6 grid w-full max-w-xl grid-cols-3 gap-2" aria-label={t("browseAria")}>
       {modes.map((item) => {
         const active = mode === item.value;
 
@@ -36,13 +38,13 @@ export default function BirthdayBrowseMode({ mode }: BirthdayBrowseModeProps) {
             type="button"
             aria-pressed={active}
             onClick={() => router.push(item.href)}
-            className={`rounded-xl border px-3 py-2 text-xs font-normal transition sm:text-sm ${
+            className={`cursor-pointer rounded-xl border px-3 py-2 text-xs font-normal transition sm:text-sm ${
               active
                 ? "border-[#002D62] bg-[#002D62] text-white"
                 : "border-black/10 bg-white text-gray-600 hover:bg-[#002D62]/5"
             }`}
           >
-            {item.label}
+            {t(item.labelKey)}
           </button>
         );
       })}

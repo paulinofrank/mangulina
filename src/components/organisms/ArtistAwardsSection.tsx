@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
 import type { ArtistAward } from "@/lib/artistApi";
 
 type Props = {
@@ -15,6 +16,7 @@ const priority = [
 ];
 
 export default function ArtistAwardsSection({ awards }: Props) {
+  const t = useTranslations("artist");
   const [openAward, setOpenAward] = useState<string | null>(null);
 
   const grouped = useMemo(() => {
@@ -47,20 +49,20 @@ export default function ArtistAwardsSection({ awards }: Props) {
     <section className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
       <div className="mb-5">
         <h3 className="text-xs font-normal text-(--color-wikicrimson) uppercase tracking-wider mb-3">
-          Awards & Nominations
+          {t("awardsNominations")}
         </h3>
 
         <div className="flex flex-wrap gap-2 text-xs">
           <span className="rounded-full border border-yellow-200 bg-yellow-50 px-3 py-1 font-normal text-gray-800">
-            🏆 {wins} Wins
+            🏆 {t("winsCount", { count: wins })}
           </span>
 
           <span className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 font-normal text-gray-800">
-            🎖️ {totalNominations} Nominations
+            🎖️ {t("nominationsCount", { count: totalNominations })}
           </span>
 
           <span className="rounded-full border border-(--color-flagblue)/15 bg-(--color-flagblue)/5 px-3 py-1 font-normal text-gray-800">
-            🌎 {organizations} Organizations
+            🌎 {t("organizationsCount", { count: organizations })}
           </span>
         </div>
       </div>
@@ -88,7 +90,7 @@ export default function ArtistAwardsSection({ awards }: Props) {
                 </span>
 
                 <span className="text-[11px] font-normal uppercase tracking-wider text-gray-400">
-                  {awardWins} {awardWins === 1 ? "Win" : "Wins"}
+                  {t("winsShort", { count: awardWins })}
                 </span>
               </button>
 
@@ -107,12 +109,12 @@ export default function ArtistAwardsSection({ awards }: Props) {
                           </span>
 
                           <span className="text-[11px] font-bold uppercase tracking-wider text-gray-500">
-                            {item.won ? "🏆 Winner" : "🎖️ Nominee"}
+                            {item.won ? `🏆 ${t("winner")}` : `🎖️ ${t("nominee")}`}
                           </span>
                         </div>
 
                         <p className="mt-1 text-sm font-normal leading-snug text-gray-800">
-                          {item.category || "Special Recognition"}
+                          {item.category || t("specialRecognition")}
                         </p>
 
                         {item.work && (

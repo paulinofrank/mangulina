@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Music2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
@@ -18,9 +18,10 @@ type DecadeTimelineCarouselProps = {
 export default function DecadeTimelineCarousel({
   decadeCounts,
   ctaHref = "/archive",
-  ctaLabel = "Archive",
+  ctaLabel,
 }: DecadeTimelineCarouselProps) {
   const t = useTranslations("components");
+  const tCommon = useTranslations("common");
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isOverflowing, setIsOverflowing] = useState(false);
 
@@ -68,7 +69,7 @@ export default function DecadeTimelineCarousel({
             href={ctaHref}
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
-            {ctaLabel}
+            {ctaLabel ?? t("archiveCta")}
           </Link>
         </div>
 
@@ -95,7 +96,7 @@ export default function DecadeTimelineCarousel({
                   {decade}
                 </span>
                 <span className="mt-1 text-xs font-medium leading-none text-gray-500 transition-colors group-hover:text-white/80">
-                  {(decadeCounts[decade] ?? 0).toLocaleString()} songs
+                  {(decadeCounts[decade] ?? 0).toLocaleString()} {tCommon("songs")}
                 </span>
               </div>
             </Link>

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useTranslations } from "next-intl";
 
 type CarouselArrowProps = {
   direction: "left" | "right";
@@ -13,12 +14,13 @@ export default function CarouselArrow({
   onClick,
   className = "",
 }: CarouselArrowProps) {
+  const t = useTranslations("a11y");
   const isLeft = direction === "left";
 
   return (
     <button
       onClick={onClick}
-      aria-label={`Scroll ${direction}`}
+      aria-label={isLeft ? t("scrollLeft") : t("scrollRight")}
       className={`
         hidden md:flex absolute top-1/2 -translate-y-1/2 z-20
         p-2 rounded-full bg-white shadow-md border border-black/10

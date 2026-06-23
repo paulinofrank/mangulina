@@ -1,15 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "next/navigation";
-import { getPathForLocale, type AppLocale } from "@/i18n/pathname";
+import { useTranslations, useLocale } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { type AppLocale } from "@/i18n/pathname";
 import { saveLocalePreference } from "@/i18n/preference";
 
 export default function LanguageSelectionModal() {
   const t = useTranslations("language.modal");
   const router = useRouter();
   const pathname = usePathname();
+  const currentLocale = useLocale() as AppLocale;
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
@@ -25,14 +26,22 @@ export default function LanguageSelectionModal() {
   }, []);
 
   const handleLanguageSelect = (locale: AppLocale) => {
+    // Remember the choice so the modal does not reappear.
     saveLocalePreference(locale);
-    const newPath = getPathForLocale(pathname, locale);
-
-    if (newPath !== pathname) {
-      router.push(newPath);
-    }
-
     setShowModal(false);
+
+    // Send the user to the chosen locale's URL (English stays unprefixed).
+    // Preserve query parameters (e.g., ?view=zodiac).
+    if (locale !== currentLocale) {
+      const search = typeof window !== "undefined" ? window.location.search : "";
+      const params = new URLSearchParams(search);
+      const query = Object.fromEntries(params.entries());
+
+      router.replace(
+        Object.keys(query).length > 0 ? { pathname, query } : pathname,
+        { locale },
+      );
+    }
   };
 
   if (!showModal) return null;

@@ -1,6 +1,6 @@
 // components/organisms/SongCreditsSection.tsx
 // Groups credits by role for a liner-notes style display.
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
 export type CreditItem = {

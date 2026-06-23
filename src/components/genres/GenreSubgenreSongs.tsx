@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
-import SongsByYearList, { type ArchiveSongRow } from "@/app/archive/SongsByYearList";
+import SongsByYearList, { type ArchiveSongRow } from "@/app/[locale]/archive/SongsByYearList";
 import SectionCard from "@/components/layout/SectionCard";
 import type { GenreSubgenre } from "@/lib/genres";
 
@@ -62,7 +62,7 @@ export default function GenreSubgenreSongs({
       })
       .catch((fetchError: unknown) => {
         if (fetchError instanceof DOMException && fetchError.name === "AbortError") return;
-        setError(fetchError instanceof Error ? fetchError.message : "Unable to load songs.");
+        setError(fetchError instanceof Error ? fetchError.message : t("pages.genreDetail.loadError"));
       })
       .finally(() => {
         if (!controller.signal.aborted) setLoading(false);
@@ -88,7 +88,7 @@ export default function GenreSubgenreSongs({
       setTotal(result.total ?? total);
       setHasMore(Boolean(result.hasMore));
     } catch (fetchError: unknown) {
-      setError(fetchError instanceof Error ? fetchError.message : "Unable to load more songs.");
+      setError(fetchError instanceof Error ? fetchError.message : t("pages.genreDetail.loadMoreError"));
     } finally {
       setLoadingMore(false);
     }
@@ -99,7 +99,7 @@ export default function GenreSubgenreSongs({
       <SectionCard>
         <div className="section-inner">
           <div className="section-header">
-            <h2>Subgenres &amp; Styles</h2>
+            <h2>{t("pages.genreDetail.subgenresStyles")}</h2>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {subgenres.map((subgenre) => {
@@ -135,21 +135,23 @@ export default function GenreSubgenreSongs({
       <section aria-live="polite">
         <div className="mb-4 flex items-center justify-between gap-3 px-1">
           <h2 className="!mb-0 text-xl font-semibold normal-case tracking-normal text-[#002D62]">
-            {selectedSubgenre?.name ?? "Subgenre"} Songs
+            {t("pages.genreDetail.subgenreSongs", {
+              name: selectedSubgenre?.name ?? t("pages.genreDetail.subgenreFallback"),
+            })}
             {!loading && !error ? ` (${total.toLocaleString()})` : ""}
           </h2>
           <select
             value={sortBy}
             onChange={(event) => setSortBy(event.target.value as SongSort)}
             className="h-8 shrink-0 rounded-lg border border-[#B0C4DE] bg-white px-3 font-sans text-xs font-medium tracking-normal text-[#002D62] outline-none transition hover:border-[#002D62]"
-            aria-label="Sort subgenre songs"
+            aria-label={t("pages.genreDetail.sortAria")}
           >
             <option value="title">{t("archive.ui.sortByTitle")}</option>
             <option value="views">{t("archive.ui.sortByViews")}</option>
           </select>
         </div>
 
-        {loading && <p className="py-8 text-center text-gray-500">Loading songs...</p>}
+        {loading && <p className="py-8 text-center text-gray-500">{t("archive.ui.loadingSongs")}</p>}
         {!loading && error && <p className="py-8 text-center text-gray-500">{error}</p>}
         {!loading && !error && songs.length > 0 && (
           <SongsByYearList
@@ -161,7 +163,9 @@ export default function GenreSubgenreSongs({
         )}
         {!loading && !error && songs.length === 0 && (
           <div className="rounded-xl border border-black/5 bg-white/70 px-5 py-10 text-center text-gray-500">
-            No songs are currently assigned to {selectedSubgenre?.name ?? "this subgenre"}.
+            {t("pages.genreDetail.noSongsAssigned", {
+              name: selectedSubgenre?.name ?? t("pages.genreDetail.subgenreFallback"),
+            })}
           </div>
         )}
       </section>

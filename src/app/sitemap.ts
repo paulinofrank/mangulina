@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { genreDefinitions } from "@/lib/genres";
-import { buildCanonical } from "@/lib/seo";
+import { buildCanonical, localeAlternates } from "@/lib/seo";
 import { getSupabaseClient } from "@/lib/supabase";
 import { getPublishedProvinces } from "@/lib/provinces";
 import { getArchiveCounts } from "@/lib/getSongsByYear";
@@ -104,6 +104,8 @@ function entry(path: string, priority?: number): MetadataRoute.Sitemap[number] {
     url: buildCanonical(path),
     changeFrequency: "weekly",
     priority,
+    // Every public URL declares its English/Spanish equivalents (hreflang).
+    alternates: { languages: localeAlternates(path) },
   };
 }
 

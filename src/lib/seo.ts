@@ -15,6 +15,20 @@ export function buildCanonical(path: string) {
   return `${SITE_URL}${normalizedPath || "/"}`;
 }
 
+// Spanish twin of an English path: "/" -> "/es", "/artists" -> "/es/artists".
+export function spanishPath(path: string) {
+  const normalized = `/${path.replace(/^\/+|\/+$/g, "")}`;
+  return normalized === "/" ? "/es" : `/es${normalized}`;
+}
+
+// hreflang alternates shared by an English page and its Spanish twin.
+export function localeAlternates(path: string) {
+  return {
+    en: buildCanonical(path),
+    es: buildCanonical(spanishPath(path)),
+  };
+}
+
 export function truncateDescription(text: string | null | undefined, fallback: string) {
   const clean = text?.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
   if (!clean) return fallback;
@@ -68,7 +82,12 @@ export function createPageMetadata({
   return {
     title,
     description,
-    alternates: { canonical },
+    alternates: {
+      canonical,
+      // hreflang annotations so search engines treat /es/<path> as the Spanish
+      // equivalent of the English canonical.
+      languages: localeAlternates(path),
+    },
     openGraph: {
       type: openGraphType,
       siteName: SITE_NAME,

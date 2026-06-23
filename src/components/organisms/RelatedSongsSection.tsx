@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import SongCard from "@/components/molecules/SongCard";
@@ -26,6 +27,7 @@ export default function RelatedSongsSection({
   moreSongs = [],
   artistName,
 }: RelatedSongsSectionProps) {
+  const t = useTranslations("song.hero");
   const scrollRef = useRef<HTMLDivElement>(null);
   const hasRelated = songs.length > 0;
   const hasMore    = moreSongs.length > 0;
@@ -49,7 +51,7 @@ export default function RelatedSongsSection({
       {hasRelated && (
         <section className="h-fit min-w-0 rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
           <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
-            Related Songs
+            {t("relatedSongs")}
           </h2>
           <ul className="divide-y divide-gray-50">
             {songs.map((song) => (
@@ -76,7 +78,7 @@ export default function RelatedSongsSection({
 
           <div className="section-header mb-4 flex items-center justify-between">
             <h2>
-              More by {artistName}
+              {t("moreBy", { artist: artistName })}
             </h2>
           </div>
 

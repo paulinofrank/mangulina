@@ -1,87 +1,58 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "next/navigation";
-import { ChevronDown } from "lucide-react";
-import { useState, useRef, useEffect } from "react";
-import {
-  getLocaleFromPathname,
-  getPathForLocale,
-  type AppLocale,
-} from "@/i18n/pathname";
-import { saveLocalePreference } from "@/i18n/preference";
+import { useTranslations, useLocale } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { type AppLocale } from "@/i18n/pathname";
 
 export default function LanguageSwitcher() {
   const t = useTranslations("language.selector");
   const router = useRouter();
   const pathname = usePathname();
-  const locale = getLocaleFromPathname(pathname);
-  const [open, setOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const locale = useLocale() as AppLocale;
 
   const handleLanguageChange = (newLocale: AppLocale) => {
-    saveLocalePreference(newLocale);
-    const newPath = getPathForLocale(pathname, newLocale);
+    if (newLocale !== locale) {
+      // Navigate to the same page in the target locale: /artists <-> /es/artists.
+      // The URL is the source of truth; next-intl persists the preference cookie.
+      // Preserve query parameters (e.g., ?view=zodiac).
+      const search = typeof window !== "undefined" ? window.location.search : "";
+      const params = new URLSearchParams(search);
+      const query = Object.fromEntries(params.entries());
 
-    if (newPath !== pathname) {
-      router.push(newPath);
+      router.replace(
+        Object.keys(query).length > 0 ? { pathname, query } : pathname,
+        { locale: newLocale },
+      );
     }
-    setOpen(false);
   };
 
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
-        setOpen(false);
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  const options: Array<{ value: AppLocale; label: string; activeClass: string }> = [
+    { value: "en", label: t("english"), activeClass: "bg-[#002D62] text-white" },
+    { value: "es", label: t("spanish"), activeClass: "bg-[#CE1126] text-white" },
+  ];
 
   return (
-    <div className="relative" ref={dropdownRef}>
-      <button
-        type="button"
-        onClick={() => setOpen(!open)}
-        aria-expanded={open}
-        aria-haspopup="menu"
-        className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#002D62]/10 hover:border-[#002D62]/30 transition-colors text-sm font-normal text-gray-700 hover:text-[#002D62] whitespace-nowrap"
-      >
-        <span>{locale === "en" ? t("english") : t("spanish")}</span>
-        <ChevronDown className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`} />
-      </button>
-
-      {open && (
-        <div className="absolute right-0 mt-2 w-40 rounded-lg border border-[#002D62]/10 bg-white shadow-lg z-50">
+    <div
+      role="group"
+      aria-label={t("label")}
+      className="inline-flex items-center rounded-full border border-[#002D62]/10 bg-white p-0.5"
+    >
+      {options.map((option) => {
+        const isActive = locale === option.value;
+        return (
           <button
+            key={option.value}
             type="button"
-            onClick={() => handleLanguageChange("en")}
-            className={`w-full px-4 py-2 text-left text-sm transition-colors ${
-              locale === "en"
-                ? "bg-[#002D62]/5 text-[#002D62] font-semibold"
-                : "text-gray-700 hover:bg-gray-50"
+            onClick={() => handleLanguageChange(option.value)}
+            aria-pressed={isActive}
+            className={`cursor-pointer rounded-full px-3 py-1 text-sm font-normal whitespace-nowrap transition-colors ${
+              isActive ? option.activeClass : "text-gray-600 hover:text-[#002D62]"
             }`}
           >
-            {t("english")}
+            {option.label}
           </button>
-          <button
-            type="button"
-            onClick={() => handleLanguageChange("es")}
-            className={`w-full px-4 py-2 text-left text-sm transition-colors ${
-              locale === "es"
-                ? "bg-[#CE1126]/5 text-[#CE1126] font-semibold"
-                : "text-gray-700 hover:bg-gray-50"
-            }`}
-          >
-            {t("spanish")}
-          </button>
-        </div>
-      )}
+        );
+      })}
     </div>
   );
 }

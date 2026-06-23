@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import {
   Select,
   SelectContent,
@@ -18,6 +19,7 @@ export default function BirthdayYearSelect({
   years,
   selectedYear,
 }: BirthdayYearSelectProps) {
+  const t = useTranslations("birthdays.ui");
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -41,13 +43,13 @@ export default function BirthdayYearSelect({
         onValueChange={handleYearChange}
       >
         <SelectTrigger
-          aria-label="Browse artist birthdays by year"
+          aria-label={t("yearAria")}
           className="h-10 w-full justify-center rounded-xl border border-[#002D62] bg-white px-4 text-center text-sm text-[#002D62] transition hover:bg-[#002D62]/5 focus-visible:ring-2 focus-visible:ring-[#002D62]/30"
         >
-          <SelectValue placeholder="Select Year" className="flex-1 text-center" />
+          <SelectValue placeholder={t("selectYearPlaceholder")} className="flex-1 text-center" />
         </SelectTrigger>
         <SelectContent className="text-center">
-          <SelectItem value="month">Browse by Month</SelectItem>
+          <SelectItem value="month">{t("browseByMonth")}</SelectItem>
         {years.map((year) => (
           <SelectItem key={year} value={String(year)}>
             {year}

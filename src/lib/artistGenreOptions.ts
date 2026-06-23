@@ -92,9 +92,7 @@ export async function getArtistGenreOptions(
     }
 
     if (baseFilter.role) {
-      query = query.or(
-        `primary_role.eq.${baseFilter.role},occupations.cs.${JSON.stringify([baseFilter.role])}`,
-      );
+      query = query.eq("primary_role", baseFilter.role);
     }
 
     if (baseFilter.province) {

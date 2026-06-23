@@ -1,21 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+import { Link, useRouter } from "@/i18n/navigation";
 import { Search } from "lucide-react";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { addSpanishPrefix, getLocaleFromPathname } from "@/i18n/pathname";
 
 export default function TopBanner() {
   const [searchTerm, setSearchTerm] = useState("");
   const router = useRouter();
-  const pathname = usePathname();
-  const locale = getLocaleFromPathname(pathname);
-  const homeHref = locale === "es" ? addSpanishPrefix("/") : "/";
-  const searchHref = locale === "es" ? addSpanishPrefix("/search") : "/search";
+  const homeHref = "/";
+  const searchHref = "/search";
   const t = useTranslations("search");
   const tFooter = useTranslations("footer");
 

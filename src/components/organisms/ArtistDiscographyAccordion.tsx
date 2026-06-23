@@ -2,7 +2,7 @@
 //artistDiscographyaccordion.tsx
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { ChevronDown } from "lucide-react";
 import { getSignedCoverUrl } from "@/utils/getSignedCoverUrl";
@@ -66,7 +66,7 @@ export default async function ArtistDiscographyGrouped({
         {grouped.map((group) => (
           <div key={group.type}>
             <h4 className="text-sm font-normal uppercase tracking-wider text-(--color-flagblue) mb-2">
-              {group.type}s
+              {t(`releaseGroups.${group.type}`)}
             </h4>
 
             <div className="grid min-w-0 gap-2 2xl:grid-cols-2">
@@ -107,7 +107,7 @@ export default async function ArtistDiscographyGrouped({
 
                         <p className="text-xs text-gray-500 tracking-wide mt-0.5">
                           {release.release_year} · {release.release_type} ·{" "}
-                          {release.tracks.length} tracks
+                          {t("tracksCount", { count: release.tracks.length })}
                         </p>
                       </div>
 

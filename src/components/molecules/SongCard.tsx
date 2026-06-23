@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 type SongCardProps = {
   id: string | number;
@@ -19,6 +20,7 @@ export default function SongCard({
   coverUrl,
   views,
 }: SongCardProps) {
+  const t = useTranslations("common");
   const href = slug ? `/songs/${slug}` : `/songs/${id}`;
   return (
     <Link href={href} className="group w-28 shrink-0 sm:w-32 lg:w-36">
@@ -45,7 +47,7 @@ export default function SongCard({
 
         {views != null && (
           <p className="text-[11px] text-gray-500 leading-tight">
-            {views.toLocaleString()} views
+            {views.toLocaleString()} {t("views")}
           </p>
         )}
       </div>

@@ -8,7 +8,6 @@ import "./globals.css";
 
 import GradientBackground from "@/components/atoms/GradientBackground";
 import RoutePageView from "@/components/analytics/RoutePageView";
-import SiteChrome from "@/components/layout/SiteChrome";
 import { DEFAULT_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const finlandica = Finlandica({
@@ -83,7 +82,8 @@ export default async function RootLayout({
           <RoutePageView />
           {children}
 
-          <SiteChrome />
+          {/* SiteChrome (TopBanner/Navbar/Footer/modal) is rendered by
+              app/[locale]/layout.tsx so it re-renders with the active locale. */}
 
           {process.env.NODE_ENV === "production" && <Analytics />}
           {process.env.NODE_ENV === "production" && <SpeedInsights />}

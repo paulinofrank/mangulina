@@ -2,7 +2,7 @@
 "use client";
 
 import { useRef } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import type { TrendingSong } from "@/types/home";
 import CarouselArrows from "@/components/molecules/CarouselArrows";

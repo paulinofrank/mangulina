@@ -1,8 +1,8 @@
 //artist facts card component
 "use client";
 
-import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { useTranslations, useLocale } from "next-intl";
 import { Globe } from "lucide-react";
 import { SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
 import type { IconType } from "react-icons";
@@ -19,14 +19,14 @@ type Props = {
   members?: ArtistRelationship[];
 };
 
-function formatDate(date: string | null) {
+function formatDate(date: string | null, locale: string) {
   if (!date) return null;
 
   const parsed = new Date(`${date}T00:00:00`);
   if (Number.isNaN(parsed.getTime())) return null;
 
   return parsed
-    .toLocaleDateString("en-GB", {
+    .toLocaleDateString(locale === "es" ? "es-ES" : "en-GB", {
       day: "2-digit",
       month: "short",
       year: "numeric",
@@ -96,14 +96,10 @@ function getArtistStatus(
     artist.type === "collective" ||
     artist.type === "other"
   ) {
-    return artist.ended ? "No longer active" : "Active";
+    return artist.ended ? t("artist.noLongerActive") : t("artist.active");
   }
 
   return null;
-}
-
-function getOriginLabel(artist: ArtistProfileData) {
-  return artist.type === "person" ? "Place of Birth" : "Origin";
 }
 
 function normalizeSocialUsername(value: string | null | undefined) {
@@ -357,11 +353,13 @@ export default function ArtistFactsCard({
   members = [],
 }: Props) {
   const t = useTranslations();
+  const locale = useLocale();
   const realName = getRealName(artist);
-  const birthDate = formatDate(artist.date_of_birth);
-  const deathDate = formatDate(artist.date_of_death);
+  const birthDate = formatDate(artist.date_of_birth, locale);
+  const deathDate = formatDate(artist.date_of_death, locale);
   const birthPlace = getBirthPlace(artist);
-  const originLabel = getOriginLabel(artist);
+  const originLabel =
+    artist.type === "person" ? t("artist.placeOfBirth") : t("artist.origin");
   const occupations = getOccupationList(artist.occupations);
   const instruments = getInstrumentList(artist.instruments);
   const artistStatus = getArtistStatus(artist, t);
@@ -388,56 +386,56 @@ export default function ArtistFactsCard({
   return (
     <section className="rounded-xl border border-gray-100 bg-white p-6 font-sans shadow-sm">
       <h3 className="mb-4 text-xs font-normal uppercase tracking-[0.18em] text-(--color-wikicrimson)">
-        Technical Sheet
+        {t("artist.technicalSheet")}
       </h3>
 
       <div className="space-y-4">
-        <Field label="Stage Name">{artist.stage_name}</Field>
+        <Field label={t("artist.stageName")}>{artist.stage_name}</Field>
 
-        <Field label="Real Name">{realName}</Field>
+        <Field label={t("artist.realName")}>{realName}</Field>
 
-        <Field label="Date of Birth">{birthDate}</Field>
+        <Field label={t("artist.dateOfBirth")}>{birthDate}</Field>
 
-        <Field label="Date of Death">{deathDate}</Field>
+        <Field label={t("artist.dateOfDeath")}>{deathDate}</Field>
 
         <Field label={originLabel}>{birthPlace}</Field>
 
         {!!artist.aliases?.length && (
-          <Field label="Aliases">
+          <Field label={t("artist.aliases")}>
             <InlineList values={artist.aliases} />
           </Field>
         )}
 
         {!!artist.aliases?.length && <SectionDivider />}
 
-        <Field label="Artist Type">{formatLabel(artist.type)}</Field>
+        <Field label={t("artist.artistType")}>{formatLabel(artist.type)}</Field>
 
-        <Field label="Status">{artistStatus}</Field>
+        <Field label={t("artist.statusLabel")}>{artistStatus}</Field>
 
-        <Field label="Primary Role">{formatLabel(artist.primary_role)}</Field>
+        <Field label={t("artist.primaryRole")}>{formatLabel(artist.primary_role)}</Field>
 
         {occupations.length > 0 && (
-          <Field label="Other Roles">
+          <Field label={t("artist.otherRoles")}>
             <InlineList values={occupations.map((occupation) => formatLabel(occupation))} />
           </Field>
         )}
 
         {instruments.length > 0 && (
-          <Field label="Instruments">
+          <Field label={t("artist.instruments")}>
             <InlineList values={instruments.map((instrument) => formatLabel(instrument))} />
           </Field>
         )}
 
-        <Field label="Main Genre">{formatLabel(artist.primary_genre)}</Field>
+        <Field label={t("artist.mainGenre")}>{formatLabel(artist.primary_genre)}</Field>
 
         {!!artist.genres?.length && (
-          <Field label="Musical Genres">
+          <Field label={t("artist.musicalGenres")}>
             <InlineList values={artist.genres.map((genre) => formatLabel(genre))} />
           </Field>
         )}
 
         {!!artist.artist_tags?.length && (
-          <Field label="Tags">
+          <Field label={t("artist.tags")}>
             <InlineList values={artist.artist_tags.map((tag) => formatLabel(tag))} />
           </Field>
         )}
@@ -446,7 +444,7 @@ export default function ArtistFactsCard({
 
         {hasSocialLinks && (
           <LinkGroup>
-            <SocialLink href={websiteUrl} label="Official Website" Icon={Globe}>
+            <SocialLink href={websiteUrl} label={t("artist.officialWebsite")} Icon={Globe}>
               {websiteDisplay}
             </SocialLink>
 
@@ -468,13 +466,13 @@ export default function ArtistFactsCard({
           <>
             <SectionDivider />
             <GroupsAndProjectsList
-              label="Groups & Projects"
+              label={t("artist.groupsAndProjects")}
               relationships={groupsAndProjects}
               direction="outgoing"
               t={t}
             />
             <GroupsAndProjectsList
-              label="Members"
+              label={t("artist.members")}
               relationships={members}
               direction="incoming"
               t={t}

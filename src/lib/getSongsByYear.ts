@@ -1,6 +1,6 @@
 // src/lib/getSongsByYear.ts
 import { supabase } from "@/lib/supabase";
-import type { ArchiveSongRow } from "@/app/archive/SongsByYearList";
+import type { ArchiveSongRow } from "@/app/[locale]/archive/SongsByYearList";
 
 type RecordingArchiveRow = ArchiveSongRow & {
   release_year_actual: number | null;

@@ -1,11 +1,11 @@
+import createMiddleware from "next-intl/middleware";
 import { createServerClient } from "@supabase/auth-helpers-nextjs";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { canManageAdminAccess, hasAdminAccess } from "@/lib/adminAccess";
-import {
-  getLocaleFromPathname,
-  removeSpanishPrefix,
-} from "@/i18n/pathname";
+import { routing } from "@/i18n/routing";
+
+const intlMiddleware = createMiddleware(routing);
 
 function getRequiredSupabaseConfig() {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
@@ -40,68 +40,8 @@ function sanitizeNextPath(value: string | null) {
   return value;
 }
 
-export async function proxy(req: NextRequest) {
-  const pathname = req.nextUrl.pathname;
-  const locale = getLocaleFromPathname(pathname);
-
-  // Check if this is an admin route
-  const isAdminPath = pathname === "/admin" || pathname.startsWith("/admin/");
-  const isAdminApiPath =
-    pathname === "/api/admin" || pathname.startsWith("/api/admin/");
-  const isApiPath = pathname === "/api" || pathname.startsWith("/api/");
-
-  if (isApiPath && !isAdminApiPath) {
-    return NextResponse.next();
-  }
-
-  // For non-admin routes, handle locale routing with next-intl
-  if (!isAdminPath && !isAdminApiPath) {
-    // Create headers with locale
-    const requestHeaders = new Headers(req.headers);
-    requestHeaders.set("x-locale", locale);
-
-    // For Spanish locale paths, rewrite internally
-    // /es/* → /* (Next.js can find the pages)
-    // But preserve locale in headers for next-intl
-    if (locale === "es") {
-      const rewritePath = removeSpanishPrefix(pathname);
-
-      // Admin and API routes are intentionally not localized.
-      if (
-        rewritePath === "/admin" ||
-        rewritePath.startsWith("/admin/") ||
-        rewritePath === "/api" ||
-        rewritePath.startsWith("/api/")
-      ) {
-        return NextResponse.next();
-      }
-
-      const rewriteUrl = req.nextUrl.clone();
-      rewriteUrl.pathname = rewritePath;
-
-      return NextResponse.rewrite(rewriteUrl, {
-        request: {
-          headers: requestHeaders,
-        },
-      });
-    }
-
-    // For English (default), just pass through with locale header
-    return NextResponse.next({
-      request: {
-        headers: requestHeaders,
-      },
-    });
-  }
-
-  // Admin route - perform authentication checks
-  const requestHeaders = new Headers(req.headers);
-  requestHeaders.set("x-locale", locale);
-  const res = NextResponse.next({
-    request: {
-      headers: requestHeaders,
-    },
-  });
+async function handleAdmin(req: NextRequest) {
+  const res = NextResponse.next();
 
   const { supabaseUrl, supabaseAnonKey } = getRequiredSupabaseConfig();
   const supabase = createServerClient(supabaseUrl, supabaseAnonKey, {
@@ -122,6 +62,11 @@ export async function proxy(req: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
+  const isAdminPath =
+    req.nextUrl.pathname === "/admin" || req.nextUrl.pathname.startsWith("/admin/");
+  const isAdminApiPath =
+    req.nextUrl.pathname === "/api/admin" ||
+    req.nextUrl.pathname.startsWith("/api/admin/");
   const isAccessManagementPath =
     req.nextUrl.pathname === "/admin/invites" ||
     req.nextUrl.pathname.startsWith("/api/admin/invites");
@@ -172,8 +117,37 @@ export async function proxy(req: NextRequest) {
   return res;
 }
 
+export async function proxy(req: NextRequest) {
+  const pathname = req.nextUrl.pathname;
+
+  const isAdminPath = pathname === "/admin" || pathname.startsWith("/admin/");
+  const isAdminApiPath =
+    pathname === "/api/admin" || pathname.startsWith("/api/admin/");
+  const isApiPath = pathname === "/api" || pathname.startsWith("/api/");
+  const isAuthPath = pathname === "/auth" || pathname.startsWith("/auth/");
+  const isDebugPath = pathname === "/debug" || pathname.startsWith("/debug/");
+
+  // Admin pages and admin APIs: authenticate. Never localized.
+  if (isAdminPath || isAdminApiPath) {
+    return handleAdmin(req);
+  }
+
+  // Public APIs, OAuth routes and the debug page: pass through untouched.
+  // These are intentionally English-only (no /es equivalents).
+  if (isApiPath || isAuthPath || isDebugPath) {
+    return NextResponse.next();
+  }
+
+  // Everything else is a public, localized page. next-intl resolves the locale
+  // from the URL (/es prefix → Spanish, otherwise English) and rewrites to the
+  // [locale] segment internally.
+  return intlMiddleware(req);
+}
+
 export const config = {
   matcher: [
+    // Run on every path except Next internals and files with an extension
+    // (sitemap.xml, robots.txt, icons, manifest, _next assets, etc.).
     "/((?!_next|_vercel|.*\\..*).*)",
     "/admin/:path*",
     "/api/admin/:path*",

@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import ReleaseCard from "@/components/releases/ReleaseCard";
 import type { ReleaseSummary } from "@/lib/releaseApi";
 
@@ -8,12 +9,14 @@ type ReleaseGridProps = {
 
 export default function ReleaseGrid({
   releases,
-  emptyMessage = "No releases available yet.",
+  emptyMessage,
 }: ReleaseGridProps) {
+  const t = useTranslations("pages.releases");
+
   if (releases.length === 0) {
     return (
       <div className="rounded-xl border border-dashed border-gray-200 bg-white/70 px-5 py-10 text-center text-sm text-gray-500">
-        {emptyMessage}
+        {emptyMessage ?? t("noReleases")}
       </div>
     );
   }

@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import SectionCard from "@/components/layout/SectionCard";
 import ReleaseGrid from "@/components/releases/ReleaseGrid";
 import type { ReleaseSummary } from "@/lib/releaseApi";
@@ -16,6 +17,8 @@ export default function ReleaseSection({
   href,
   emptyMessage,
 }: ReleaseSectionProps) {
+  const t = useTranslations("navigation");
+
   return (
     <SectionCard>
       <div className="section-inner">
@@ -26,7 +29,7 @@ export default function ReleaseSection({
               href={href}
               className="shrink-0 text-sm font-medium uppercase tracking-wider text-[#8B0000] transition-colors hover:text-[#CE1126]"
             >
-              See All
+              {t("seeAll")}
             </Link>
           )}
         </div>

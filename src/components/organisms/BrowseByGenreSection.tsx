@@ -2,7 +2,7 @@
 "use client";
 
 import { useRef } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { Disc3, Ellipsis, Flame, Heart, Music, Music2, Music4, Sparkles, Waves } from "lucide-react";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
@@ -10,72 +10,19 @@ import SectionCard from "@/components/layout/SectionCard";
 
 export default function BrowseByGenreSection() {
   const t = useTranslations("sections");
+  const tg = useTranslations("genres");
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const genreGroups = [
-    {
-      title: "Merengue",
-      labels: ["Pambiche", "Típico"],
-      href: "/genres/merengue",
-      color: "bg-amber-500",
-      icon: Music,
-    },
-    {
-      title: "Bachata",
-      labels: [],
-      href: "/genres/bachata",
-      color: "bg-blue-500",
-      icon: Heart,
-    },
-    {
-      title: "Salsa",
-      labels: [],
-      href: "/genres/salsa",
-      color: "bg-red-500",
-      icon: Flame,
-    },
-    {
-      title: "Urbano",
-      labels: ["Dembow", "Reggaeton"],
-      href: "/genres/urbano",
-      color: "bg-gradient-to-br from-pink-500 to-zinc-700",
-      icon: Disc3,
-    },
-    {
-      title: "Instrumental",
-      labels: ["Classical"],
-      href: "/genres/instrumental",
-      color: "bg-[#7A3E1C]",
-      icon: Music4,
-    },
-    {
-      title: "Ballads",
-      labels: ["Bolero", "Romantic"],
-      href: "/genres/ballads",
-      color: "bg-teal-500",
-      icon: Sparkles,
-    },
-    {
-      title: "Folklore",
-      labels: ["Traditional", "Roots"],
-      href: "/genres/folklore",
-      color: "bg-emerald-600",
-      icon: Music2,
-    },
-    {
-      title: "Fusion",
-      labels: ["Jazz", "Experimental"],
-      href: "/genres/fusion",
-      color: "bg-indigo-500",
-      icon: Waves,
-    },
-    {
-      title: "More Genre",
-      labels: [],
-      href: "/genres/more",
-      color: "bg-gray-300",
-      icon: Ellipsis,
-    },
+    { titleKey: "merengue", labelKeys: ["pambiche", "tipico"], href: "/genres/merengue", color: "bg-amber-500", icon: Music },
+    { titleKey: "bachata", labelKeys: [], href: "/genres/bachata", color: "bg-blue-500", icon: Heart },
+    { titleKey: "salsa", labelKeys: [], href: "/genres/salsa", color: "bg-red-500", icon: Flame },
+    { titleKey: "urbano", labelKeys: ["dembow", "reggaeton"], href: "/genres/urbano", color: "bg-gradient-to-br from-pink-500 to-zinc-700", icon: Disc3 },
+    { titleKey: "instrumental", labelKeys: ["classical"], href: "/genres/instrumental", color: "bg-[#7A3E1C]", icon: Music4 },
+    { titleKey: "ballads", labelKeys: ["bolero", "romantic"], href: "/genres/ballads", color: "bg-teal-500", icon: Sparkles },
+    { titleKey: "folklore", labelKeys: ["traditional", "roots"], href: "/genres/folklore", color: "bg-emerald-600", icon: Music2 },
+    { titleKey: "fusion", labelKeys: ["jazz", "experimental"], href: "/genres/fusion", color: "bg-indigo-500", icon: Waves },
+    { titleKey: "moreGenre", labelKeys: [], href: "/genres/more", color: "bg-gray-300", icon: Ellipsis },
   ];
 
   const scroll = (direction: "left" | "right") => {
@@ -106,7 +53,7 @@ export default function BrowseByGenreSection() {
             const IconComponent = genre.icon;
             return (
               <Link
-                key={genre.title}
+                key={genre.href}
                 href={genre.href}
                 className="group relative flex aspect-square w-28 shrink-0 flex-col justify-between overflow-hidden rounded-lg p-3 transition-all duration-200 hover:scale-[1.02] sm:w-32 sm:p-4 lg:w-36"
               >
@@ -121,11 +68,11 @@ export default function BrowseByGenreSection() {
 
                 <div className="relative z-10 text-white">
                   <span className="block text-sm font-normal leading-tight sm:text-base">
-                    {genre.title}
+                    {tg(genre.titleKey)}
                   </span>
-                  {genre.labels.length > 0 && (
+                  {genre.labelKeys.length > 0 && (
                     <span className="mt-1 block text-[11px] font-normal leading-tight text-white/85 sm:text-xs">
-                      {genre.labels.join(", ")}
+                      {genre.labelKeys.map((k) => tg(k)).join(", ")}
                     </span>
                   )}
                 </div>

@@ -1,7 +1,7 @@
 "use client";
 
 // BrowseByRegionSection component that shows the regions and the count of artists in that region. It is used in the archive page to show the regions that users can browse by.
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import SectionCard from "@/components/layout/SectionCard";
 import { isValidProvinceName, provinceToSlug } from "@/lib/provinceSlug";
