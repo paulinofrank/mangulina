@@ -47,7 +47,7 @@
     "logo": "Logo de Mangulina",
     "copyright": "© 2026 Mangulina. Todos los Derechos Reservados.",
     "languageSwitchToSpanish": "Cambiar a Español",
-    "languageSwitchToEnglish": "Switch to English",
+    "languageSwitchToEnglish": "Cambiar a Inglés",
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",
@@ -395,6 +395,320 @@
     "unknownArtist": "Artista Desconocido",
     "viewFullProfile": "Ver Perfil Completo"
   },
+  "legal": {
+    "privacy": {
+      "metadata": {
+        "title": "Política de Privacidad",
+        "description": "Lee la Política de Privacidad de Mangulina y conoce cómo se recopila, utiliza y protege la información en la Base de Datos de Música Dominicana."
+      },
+      "eyebrow": "Política de Privacidad",
+      "title": "Política de Privacidad",
+      "heroDescription": "Mangulina se compromete a proteger tu privacidad. Esta Política de Privacidad explica qué información recopilamos, cómo la utilizamos y las opciones disponibles para los visitantes de la Base de Datos de Música Dominicana.",
+      "lastUpdated": "Última Actualización: Junio 2026",
+      "welcome": {
+        "eyebrow": "Bienvenido a Mangulina",
+        "introduction": "Te damos la bienvenida a Mangulina («Mangulina», «nosotros», «nuestro» o «nos»).",
+        "description": "Esta Política de Privacidad describe cómo se puede recopilar, utilizar y proteger la información cuando visitas el sitio web de Mangulina o interactúas con él.",
+        "acceptance": "Al utilizar este sitio web, aceptas las prácticas descritas en esta Política de Privacidad."
+      },
+      "sections": {
+        "information": {
+          "title": "1. Información que Recopilamos",
+          "introduction": "Mangulina puede recopilar información limitada cuando los visitantes utilizan el sitio web, incluida la siguiente:",
+          "items": {
+            "browser": "Tipo y versión del navegador",
+            "device": "Información del dispositivo",
+            "operatingSystem": "Sistema operativo",
+            "pagesVisited": "Páginas visitadas",
+            "referringWebsites": "Sitios web de referencia",
+            "visitDate": "Fecha y hora de las visitas",
+            "region": "Región geográfica general basada en la dirección IP",
+            "performance": "Datos de rendimiento y análisis del sitio web"
+          },
+          "closing": "No vendemos información personal."
+        },
+        "voluntary": {
+          "title": "2. Información que Proporcionas Voluntariamente",
+          "introduction": "Puedes optar por proporcionar información cuando:",
+          "items": {
+            "contacting": "Te comunicas con nosotros",
+            "corrections": "Envías correcciones",
+            "edits": "Sugieres adiciones o modificaciones",
+            "copyright": "Informas inquietudes sobre derechos de autor",
+            "contributor": "Participas como colaborador"
+          },
+          "detailsIntroduction": "La información que proporcionas voluntariamente puede incluir:",
+          "details": {
+            "name": "Nombre",
+            "email": "Dirección de correo electrónico",
+            "organization": "Organización o afiliación",
+            "message": "Contenido del mensaje"
+          },
+          "closing": "Utilizamos esta información únicamente para responder consultas y mejorar la exactitud de la base de datos."
+        },
+        "cookies": {
+          "title": "3. Cookies y Análisis",
+          "introduction": "Mangulina puede utilizar cookies o tecnologías similares para:",
+          "items": {
+            "performance": "Mejorar el rendimiento del sitio web",
+            "behavior": "Comprender el comportamiento de los visitantes",
+            "traffic": "Medir el tráfico y la interacción",
+            "security": "Mantener la seguridad del sitio web"
+          },
+          "analytics": "Podemos utilizar servicios de análisis para comprender mejor cómo interactúan los visitantes con el sitio web.",
+          "disabling": "Los usuarios pueden desactivar las cookies mediante la configuración de su navegador, aunque es posible que algunas funciones no operen según lo previsto."
+        },
+        "use": {
+          "title": "4. Cómo Utilizamos la Información",
+          "introduction": "La información recopilada a través del sitio web se puede utilizar para:",
+          "items": {
+            "operate": "Operar y mantener el sitio web",
+            "experience": "Mejorar el contenido y la experiencia del usuario",
+            "respond": "Responder consultas",
+            "investigate": "Investigar abusos o problemas de seguridad",
+            "monitor": "Supervisar el rendimiento del sitio web",
+            "accuracy": "Preservar la exactitud y la calidad de la base de datos"
+          }
+        },
+        "sharing": {
+          "title": "5. Divulgación de Información",
+          "noSale": "Mangulina no vende, alquila ni intercambia información personal.",
+          "introduction": "La información solo se puede compartir cuando:",
+          "items": {
+            "law": "Lo exige la ley",
+            "rights": "Es necesario para proteger derechos legales",
+            "investigate": "Es necesario para investigar fraudes, abusos o incidentes de seguridad",
+            "vendors": "Es necesario para operar servicios proporcionados por proveedores externos de confianza"
+          }
+        },
+        "thirdParty": {
+          "title": "6. Servicios de Terceros",
+          "introduction": "Mangulina puede incluir enlaces a sitios web externos, entre ellos:",
+          "items": {
+            "artistWebsites": "Sitios web de artistas",
+            "socialMedia": "Plataformas de redes sociales",
+            "streaming": "Servicios de streaming de música",
+            "video": "Plataformas de video",
+            "resources": "Otros recursos relacionados con la música"
+          },
+          "responsibility": "No somos responsables de las prácticas de privacidad de sitios web de terceros.",
+          "review": "Los visitantes deben revisar por separado las políticas de privacidad de esos servicios."
+        },
+        "security": {
+          "title": "7. Seguridad de los Datos",
+          "measures": "Tomamos medidas razonables para proteger la información contra el acceso no autorizado, el uso indebido, la alteración o la divulgación.",
+          "limitation": "Sin embargo, no se puede garantizar que un sitio web o una transmisión por internet sean completamente seguros."
+        },
+        "children": {
+          "title": "8. Privacidad de los Menores",
+          "audience": "Mangulina está concebida como un recurso informativo para el público general.",
+          "collection": "No recopilamos deliberadamente información personal de menores de 13 años.",
+          "removal": "Si se descubre dicha información, se realizarán esfuerzos razonables para eliminarla."
+        },
+        "international": {
+          "title": "9. Visitantes Internacionales",
+          "access": "Los visitantes pueden acceder a Mangulina desde países fuera de los Estados Unidos.",
+          "processing": "Al utilizar el sitio web, los visitantes entienden que la información puede ser procesada y almacenada en las jurisdicciones donde operan el sitio web y sus proveedores de servicios."
+        },
+        "changes": {
+          "title": "10. Cambios a Esta Política de Privacidad",
+          "updates": "Podemos actualizar periódicamente esta Política de Privacidad.",
+          "posting": "Cualquier cambio se publicará en esta página junto con una fecha actualizada de «Última Actualización».",
+          "acceptance": "El uso continuado del sitio web después de que los cambios entren en vigor constituye la aceptación de la política revisada."
+        },
+        "contact": {
+          "title": "11. Contacto",
+          "contactPage": "Las preguntas relacionadas con esta Política de Privacidad se pueden enviar a través de la <contact>página de Contacto</contact>.",
+          "dmcaPage": "Las solicitudes, correcciones e inquietudes relacionadas con la privacidad también se pueden enviar a través de la <dmca>página de Derechos de Autor y DMCA</dmca> cuando corresponda."
+        }
+      },
+      "questions": {
+        "title": "Preguntas sobre Privacidad",
+        "description": "Si tienes preguntas sobre esta Política de Privacidad, la información que has proporcionado voluntariamente o la manera en que Mangulina gestiona las inquietudes sobre privacidad, comunícate con nosotros.",
+        "contactButton": "Contactar a Mangulina",
+        "termsButton": "Términos de Uso"
+      }
+    },
+    "terms": {
+      "metadata": {
+        "title": "Términos de Uso",
+        "description": "Lee los Términos de Uso de Mangulina, la Base de Datos de Música Dominicana dedicada a documentar y preservar la historia de la música dominicana."
+      },
+      "eyebrow": "Términos de Uso",
+      "title": "Términos de Uso",
+      "heroDescription": "Mangulina es una Base de Datos de Música Dominicana independiente dedicada a documentar y preservar la historia de la música dominicana.",
+      "lastUpdated": "Última Actualización: Junio 2026",
+      "welcome": {
+        "eyebrow": "Bienvenido a Mangulina",
+        "introduction": "Te damos la bienvenida a Mangulina («Mangulina», «nosotros», «nuestro» o «nos»), la Base de Datos de Música Dominicana.",
+        "acceptance": "Al acceder a este sitio web o utilizarlo, aceptas estos Términos de Uso. Si no estás de acuerdo con estos términos, no utilices el sitio web."
+      },
+      "sections": {
+        "about": {
+          "title": "1. Acerca de Mangulina",
+          "description": "Mangulina es una base de datos de referencia independiente dedicada a documentar, preservar y promover información sobre la música dominicana, sus artistas, grabaciones, lanzamientos, géneros y la historia cultural relacionada.",
+          "informationalResource": "Mangulina es un recurso informativo y no ofrece streaming de música, descargas digitales ni venta de música, salvo que se indique expresamente."
+        },
+        "informational": {
+          "title": "2. Solo con Fines Informativos",
+          "purposes": "La información proporcionada en Mangulina está destinada a fines educativos, de investigación, históricos, editoriales e informativos.",
+          "accuracy": "Aunque procuramos mantener información exacta y actualizada, no garantizamos que todo el contenido esté completo, vigente, sea exacto o esté libre de errores.",
+          "verification": "Los usuarios deben verificar la información de manera independiente al tomar decisiones basadas en los datos encontrados en el sitio web."
+        },
+        "intellectualProperty": {
+          "title": "3. Propiedad Intelectual",
+          "ownership": "El nombre, el logotipo, el diseño, el texto original, la estructura de la base de datos y el contenido original de Mangulina son propiedad de Mangulina, salvo que se indique lo contrario.",
+          "permittedUse": "Los usuarios pueden consultar el contenido para uso personal, compartir enlaces a páginas del sitio web y citar información con la atribución correspondiente.",
+          "prohibitedIntroduction": "Los usuarios no pueden:",
+          "items": {
+            "copy": "Copiar partes sustanciales de la base de datos",
+            "republish": "Volver a publicar grandes cantidades de contenido sin permiso",
+            "competingDatabase": "Crear bases de datos competidoras mediante datos obtenidos de Mangulina",
+            "removeNotices": "Eliminar avisos de derechos de autor o atribuciones"
+          }
+        },
+        "thirdPartyContent": {
+          "title": "4. Contenido de Terceros",
+          "examples": "Mangulina puede mostrar o hacer referencia a nombres de artistas, títulos de álbumes, títulos de grabaciones, información de lanzamientos, portadas, fotografías, enlaces a plataformas externas y contenido multimedia insertado.",
+          "ownership": "Dicho contenido continúa siendo propiedad de sus respectivos titulares.",
+          "noAffiliation": "La inclusión de contenido de terceros no implica propiedad, respaldo, patrocinio ni afiliación, salvo que se indique expresamente."
+        },
+        "externalLinks": {
+          "title": "5. Enlaces Externos",
+          "examples": "Mangulina puede proporcionar enlaces a servicios y plataformas de terceros, incluidos servicios de streaming de música, plataformas de redes sociales, sitios web de artistas y otros recursos externos.",
+          "responsibility": "No somos responsables del contenido, la disponibilidad, las prácticas de privacidad ni las políticas de sitios web de terceros."
+        },
+        "rightsHolders": {
+          "title": "6. Derechos de Autor y Titulares de Derechos",
+          "respect": "Mangulina respeta los derechos de propiedad intelectual.",
+          "contact": "Los artistas, sellos discográficos, fotógrafos, titulares de derechos y representantes autorizados que consideren que el contenido publicado en el sitio web infringe sus derechos pueden comunicarse con nosotros a través de nuestra <dmca>página de Derechos de Autor y DMCA</dmca>.",
+          "review": "Revisaremos todas las solicitudes legítimas y tomaremos las medidas correspondientes cuando sea necesario."
+        },
+        "conduct": {
+          "title": "7. Conducta del Usuario",
+          "introduction": "Los usuarios aceptan no:",
+          "items": {
+            "unlawful": "Utilizar el sitio web con fines ilícitos",
+            "unauthorizedAccess": "Intentar obtener acceso no autorizado",
+            "interfere": "Interferir con el funcionamiento del sitio web",
+            "security": "Eludir las medidas de seguridad",
+            "scrape": "Extraer o recopilar datos de forma excesiva",
+            "damage": "Participar en actividades que puedan dañar el sitio web o sus servicios"
+          },
+          "indexing": "Se permite el acceso razonable de motores de búsqueda y servicios legítimos de indexación."
+        },
+        "availability": {
+          "title": "8. Disponibilidad del Servicio",
+          "modification": "Podemos modificar, suspender, restringir o interrumpir cualquier parte del sitio web en cualquier momento y sin previo aviso.",
+          "noGuarantee": "No garantizamos la disponibilidad ininterrumpida del sitio web ni de sus servicios."
+        },
+        "warranties": {
+          "title": "9. Ausencia de Garantías",
+          "asIs": "El sitio web y su contenido se proporcionan «tal cual» y «según disponibilidad».",
+          "disclaimer": "En la máxima medida permitida por la ley, Mangulina rechaza todas las garantías, expresas o implícitas, incluidas las garantías de exactitud, comerciabilidad, idoneidad para un fin determinado y no infracción."
+        },
+        "liability": {
+          "title": "10. Limitación de Responsabilidad",
+          "limitation": "En la máxima medida permitida por la ley, Mangulina no será responsable de ningún daño directo, indirecto, incidental, consecuente o especial que surja del uso del sitio web o de su contenido, o de la imposibilidad de utilizarlos."
+        },
+        "changes": {
+          "title": "11. Cambios a Estos Términos",
+          "updates": "Podemos actualizar estos Términos de Uso ocasionalmente.",
+          "posting": "La versión actualizada se publicará en esta página con una fecha revisada de «Última Actualización».",
+          "acceptance": "El uso continuado del sitio web después de que los cambios entren en vigor constituye la aceptación de los términos revisados."
+        },
+        "contact": {
+          "title": "12. Contacto",
+          "description": "Las preguntas relacionadas con estos Términos de Uso se pueden enviar a través de nuestra <contact>página de Contacto</contact>."
+        }
+      },
+      "editorial": {
+        "title": "Nota Editorial",
+        "description": "La misión de Mangulina es preservar y documentar la historia, la cultura y las personas de la música dominicana. Recibimos correcciones, información adicional y contribuciones de artistas, familias, investigadores, historiadores y titulares de derechos para ayudar a mejorar la exactitud y la integridad de la base de datos.",
+        "contactButton": "Contactar a Mangulina",
+        "aboutButton": "Acerca de Mangulina"
+      }
+    },
+    "dmca": {
+      "metadata": {
+        "title": "Derechos de Autor y DMCA",
+        "description": "Política de derechos de autor y DMCA de Mangulina para la Base de Datos de Música Dominicana, incluidos los procedimientos para informar inquietudes sobre derechos de autor."
+      },
+      "eyebrow": "Derechos de Autor y DMCA",
+      "title": "Política de Derechos de Autor",
+      "heroDescription": "Mangulina respeta los derechos de propiedad intelectual de artistas, autores de canciones, editores, sellos discográficos, fotógrafos y otros titulares de derechos. Esta página explica cómo se pueden informar y revisar las inquietudes sobre derechos de autor.",
+      "lastUpdated": "Última Actualización: Junio 2026",
+      "overview": {
+        "title": "Descripción General",
+        "database": "Mangulina es una base de datos curada de música dominicana dedicada a documentar y preservar información sobre la música dominicana y las personas que la crean.",
+        "reference": "El sitio web proporciona información de referencia, como perfiles de artistas, información de grabaciones, detalles de lanzamientos, créditos, premios, información histórica y enlaces a plataformas de terceros.",
+        "noHosting": "Mangulina no aloja, transmite, vende, distribuye ni proporciona copias descargables de grabaciones musicales protegidas por derechos de autor."
+      },
+      "policy": {
+        "title": "Política de Derechos de Autor",
+        "respect": "Respetamos los derechos de propiedad intelectual de artistas, autores de canciones, compositores, editores, sellos discográficos, fotógrafos y todos los demás titulares de derechos.",
+        "action": "Si tenemos conocimiento de material que infringe derechos de autor u otros derechos de propiedad intelectual, revisaremos el asunto de inmediato y tomaremos las medidas correspondientes cuando sea necesario.",
+        "goal": "Nuestro objetivo es preservar y organizar información sobre la música dominicana a la vez que respetamos los derechos de los creadores y titulares de derechos."
+      },
+      "thirdParty": {
+        "title": "Contenido de Terceros",
+        "introduction": "Mangulina puede mostrar o hacer referencia a información obtenida de fuentes disponibles públicamente, incluida la siguiente:",
+        "items": {
+          "artistInformation": "Nombres y biografías de artistas",
+          "metadata": "Metadatos de grabaciones y lanzamientos",
+          "titles": "Títulos de álbumes y lanzamientos",
+          "credits": "Créditos e información del personal",
+          "images": "Imágenes disponibles públicamente",
+          "youtube": "Videos de YouTube insertados",
+          "links": "Enlaces a servicios de streaming y sitios web oficiales"
+        },
+        "ownership": "Todas las marcas comerciales, logotipos, grabaciones, videos, imágenes y demás materiales protegidos por derechos de autor continúan siendo propiedad de sus respectivos titulares.",
+        "noAffiliation": "La inclusión de información en Mangulina no implica propiedad, respaldo, patrocinio ni afiliación, salvo que se indique expresamente."
+      },
+      "claims": {
+        "title": "Reclamaciones por Infracción de Derechos de Autor",
+        "introduction": "Si consideras que el material publicado en Mangulina infringe tus derechos de autor u otros derechos de propiedad intelectual, envía una notificación por escrito que contenga:",
+        "items": {
+          "contactInformation": "Tu nombre completo e información de contacto.",
+          "identification": "La identificación de la obra protegida por derechos de autor que afirmas que ha sido infringida.",
+          "location": "La URL o ubicación específica del material en cuestión.",
+          "goodFaith": "Una declaración de que crees de buena fe que el uso no está autorizado.",
+          "accuracy": "Una declaración de que la información proporcionada es exacta y de que eres el titular de los derechos de autor o un representante autorizado.",
+          "signature": "Tu firma física o electrónica."
+        },
+        "action": "Al recibir una notificación válida, revisaremos la solicitud y tomaremos las medidas correspondientes, que pueden incluir la corrección, eliminación, restricción o investigación adicional del material."
+      },
+      "counterNotice": {
+        "title": "Contranotificación",
+        "objection": "Si consideras que un material fue eliminado, restringido o modificado como resultado de un error o una identificación equivocada, puedes enviar una contranotificación en la que expliques el fundamento de tu objeción.",
+        "review": "Revisaremos todas las contranotificaciones y podremos restaurar o modificar el material cuando corresponda y lo permita la ley aplicable."
+      },
+      "rightsHolders": {
+        "title": "Artistas y Titulares de Derechos",
+        "introduction": "Los artistas, representantes, editores, sellos discográficos, sucesiones y representantes autorizados también pueden comunicarse con nosotros para:",
+        "items": {
+          "correct": "Corregir información inexacta",
+          "update": "Actualizar biografías de artistas o detalles de perfiles",
+          "credits": "Agregar créditos o información discográfica faltantes",
+          "review": "Solicitar la revisión de imágenes u otro contenido",
+          "attribution": "Tratar inquietudes sobre atribución"
+        },
+        "collaboration": "Mangulina recibe con agrado la colaboración y procura mantener información exacta, respetuosa y bien documentada."
+      },
+      "goodFaith": {
+        "title": "Compromiso de Buena Fe",
+        "mission": "La misión de Mangulina es educativa, informativa y cultural.",
+        "commitment": "Nos comprometemos a preservar el patrimonio musical dominicano y, al mismo tiempo, respetar los derechos e intereses de artistas, creadores y titulares de derechos.",
+        "contact": "Si tienes preguntas relacionadas con esta política, comunícate con nosotros y haremos todo esfuerzo razonable para resolver las inquietudes de manera oportuna y profesional."
+      },
+      "contact": {
+        "title": "Contacto",
+        "description": "Para consultas sobre derechos de autor, reclamaciones por infracción, inquietudes sobre atribución o solicitudes de titulares de derechos, comunícate con:",
+        "contactButton": "Contáctanos",
+        "aboutButton": "Acerca de Mangulina"
+      }
+    }
+  },
   "pages": {
     "releasesHub": {
       "eyebrow": "Lanzamientos",
@@ -453,12 +767,6 @@
       "moreFromDecade": "Más de los {decade}",
       "moreInGenre": "Más de {genre}",
       "facts": {"type": "Tipo", "release": "Lanzamiento", "label": "Sello", "country": "País", "catalog": "Catálogo", "barcode": "Código de Barras"}
-    },
-    "privacyPolicy": {
-      "lastUpdated": "Última Actualización: Junio 2026"
-    },
-    "termsOfUse": {
-      "lastUpdated": "Última Actualización: Junio 2026"
     },
     "about": {
       "metadataTitle": "Acerca de",

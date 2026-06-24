@@ -159,6 +159,21 @@ const zodiacIcons = {
   Pisces: ZodiacPisces,
 } as const;
 
+const zodiacColors = {
+  Aries: "#D7192A",
+  Taurus: "#007A3D",
+  Gemini: "#F6C344",
+  Cancer: "#25268A",
+  Leo: "#FF8C1A",
+  Virgo: "#8B5E2A",
+  Libra: "#F36BA5",
+  Scorpio: "#000000",
+  Sagittarius: "#6B2AA0",
+  Capricorn: "#8A8A8A",
+  Aquarius: "#25A9E0",
+  Pisces: "#6BCBA5",
+} as const;
+
 export default function BirthdayZodiacCarousel({ zodiacGroups }: BirthdayZodiacCarouselProps) {
   const t = useTranslations("birthdays");
   const birthdayUi = useTranslations("birthdays.ui");
@@ -243,16 +258,25 @@ export default function BirthdayZodiacCarousel({ zodiacGroups }: BirthdayZodiacC
         >
           {zodiacGroups.map((group) => {
             const isSelected = group.name === selectedGroup.name;
+            const zodiacColor =
+              zodiacColors[group.name as keyof typeof zodiacColors] ?? "#002D62";
             return (
               <button
                 key={group.name}
                 type="button"
                 onClick={() => selectZodiac(group.name)}
                 aria-pressed={isSelected}
-                className={`group relative block aspect-square w-28 shrink-0 cursor-pointer overflow-hidden rounded-3xl transition-all duration-200 hover:scale-[1.02] sm:w-32 lg:w-36 ${isSelected ? "shadow-lg" : ""}`}
+                className={[
+                  "group relative block aspect-square w-28 shrink-0 cursor-pointer overflow-hidden rounded-3xl transition-all duration-200 hover:scale-[1.02] sm:w-32 lg:w-36",
+                  isSelected ? "shadow-sm ring-2 ring-[#002D62]/25" : "",
+                ].join(" ")}
               >
                 <div
-                  className={`absolute inset-0 transition-opacity ${isSelected ? "bg-[#002D62] opacity-90" : "bg-[#002D62] opacity-70 group-hover:opacity-85"}`}
+                  className={[
+                    "absolute inset-0 transition-opacity",
+                    isSelected ? "opacity-100" : "opacity-85 group-hover:opacity-100",
+                  ].join(" ")}
+                  style={{ backgroundColor: zodiacColor }}
                 />
 
                 <span className="absolute left-3 right-3 top-4 z-20 block whitespace-nowrap text-center text-[11px] font-normal uppercase leading-none tracking-wide text-white/85 sm:top-5 sm:text-xs">

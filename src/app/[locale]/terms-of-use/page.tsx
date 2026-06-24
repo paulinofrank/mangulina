@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
-import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
+
+import { Link } from "@/i18n/navigation";
 import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = createPageMetadata({
-  title: "Terms of Use",
-  description:
-    "Read the Terms of Use for Mangulina, the Dominican Music Database dedicated to documenting and preserving Dominican music history.",
-  path: "/terms-of-use",
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("legal.terms.metadata");
+
+  return createPageMetadata({
+    title: t("title"),
+    description: t("description"),
+    path: "/terms-of-use",
+  });
+}
 
 type TermsSection = {
   title: string;
@@ -16,136 +20,6 @@ type TermsSection = {
   items?: string[];
   closingParagraphs?: React.ReactNode[];
 };
-
-const TERMS_SECTIONS: TermsSection[] = [
-  {
-    title: "1. About Mangulina",
-    paragraphs: [
-      "Mangulina is an independent reference database dedicated to documenting, preserving, and promoting information about Dominican music, artists, recordings, releases, genres, and related cultural history.",
-      "Mangulina is an informational resource and does not provide music streaming, digital downloads, or music sales unless explicitly stated.",
-    ],
-  },
-  {
-    title: "2. Informational Purposes Only",
-    paragraphs: [
-      "The information provided on Mangulina is intended for educational, research, historical, editorial, and informational purposes.",
-      "While we strive to maintain accurate and up-to-date information, we do not guarantee that all content is complete, current, accurate, or free of errors.",
-      "Users should independently verify information when making decisions based on data found on the website.",
-    ],
-  },
-  {
-    title: "3. Intellectual Property",
-    paragraphs: [
-      "The Mangulina name, logo, design, original text, database structure, and original content are the property of Mangulina unless otherwise noted.",
-      "Users may view content for personal use, share links to pages on the website, and cite information with proper attribution.",
-      "Users may not:",
-    ],
-    items: [
-      "Copy substantial portions of the database",
-      "Republish large amounts of content without permission",
-      "Create competing databases using data obtained from Mangulina",
-      "Remove copyright notices or attribution",
-    ],
-  },
-  {
-    title: "4. Third-Party Content",
-    paragraphs: [
-      "Mangulina may display or reference artist names, album titles, recording titles, release information, cover artwork, photographs, external platform links, and embedded media.",
-      "Such content remains the property of its respective owners.",
-      "The inclusion of third-party content does not imply ownership, endorsement, sponsorship, or affiliation unless expressly stated.",
-    ],
-  },
-  {
-    title: "5. External Links",
-    paragraphs: [
-      "Mangulina may provide links to third-party services and platforms, including music streaming services, social media platforms, artist websites, and other external resources.",
-      "We are not responsible for the content, availability, privacy practices, or policies of third-party websites.",
-    ],
-  },
-  {
-    title: "6. Copyright and Rights Holders",
-    paragraphs: [
-      "Mangulina respects intellectual property rights.",
-      <span key="rights-holder-contact">
-        Artists, labels, photographers, rights holders, and authorized
-        representatives who believe that content appearing on the website
-        infringes their rights may contact us through our{" "}
-        <Link
-          href="/dmca"
-          className="font-medium text-[#002D62] underline underline-offset-4 hover:text-[#8B0000]"
-        >
-          Copyright &amp; DMCA page
-        </Link>
-        .
-      </span>,
-      "We will review all legitimate requests and take appropriate action when necessary.",
-    ],
-  },
-  {
-    title: "7. User Conduct",
-    paragraphs: ["Users agree not to:"],
-    items: [
-      "Use the website for unlawful purposes",
-      "Attempt unauthorized access",
-      "Interfere with website operations",
-      "Circumvent security measures",
-      "Excessively scrape or harvest data",
-      "Engage in activity that may damage the website or its services",
-    ],
-    closingParagraphs: [
-      "Reasonable access by search engines and legitimate indexing services is permitted.",
-    ],
-  },
-  {
-    title: "8. Availability of Service",
-    paragraphs: [
-      "We may modify, suspend, restrict, or discontinue any part of the website at any time without notice.",
-      "We do not guarantee uninterrupted availability of the website or its services.",
-    ],
-  },
-  {
-    title: "9. No Warranties",
-    paragraphs: [
-      <span key="as-is">
-        The website and its content are provided on an &quot;as is&quot; and
-        &quot;as available&quot; basis.
-      </span>,
-      "To the fullest extent permitted by law, Mangulina disclaims all warranties, express or implied, including warranties of accuracy, merchantability, fitness for a particular purpose, and non-infringement.",
-    ],
-  },
-  {
-    title: "10. Limitation of Liability",
-    paragraphs: [
-      "To the fullest extent permitted by law, Mangulina shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from the use of, or inability to use, the website or its content.",
-    ],
-  },
-  {
-    title: "11. Changes to These Terms",
-    paragraphs: [
-      "We may update these Terms of Use from time to time.",
-      <span key="updated-version">
-        The updated version will be posted on this page with a revised
-        &quot;Last Updated&quot; date.
-      </span>,
-      "Continued use of the website after changes become effective constitutes acceptance of the revised terms.",
-    ],
-  },
-  {
-    title: "12. Contact",
-    paragraphs: [
-      <span key="contact">
-        Questions regarding these Terms of Use may be directed through our{" "}
-        <Link
-          href="/contact"
-          className="font-medium text-[#002D62] underline underline-offset-4 hover:text-[#8B0000]"
-        >
-          Contact page
-        </Link>
-        .
-      </span>,
-    ],
-  },
-];
 
 function SectionEyebrow({ children }: { children: React.ReactNode }) {
   return (
@@ -155,46 +29,153 @@ function SectionEyebrow({ children }: { children: React.ReactNode }) {
   );
 }
 
+const legalLinkClass =
+  "font-medium text-[#002D62] underline underline-offset-4 hover:text-[#8B0000]";
+
 export default async function TermsOfUsePage() {
-  const t = await getTranslations("pages");
+  const t = await getTranslations("legal.terms");
+
+  const sections: TermsSection[] = [
+    {
+      title: t("sections.about.title"),
+      paragraphs: [
+        t("sections.about.description"),
+        t("sections.about.informationalResource"),
+      ],
+    },
+    {
+      title: t("sections.informational.title"),
+      paragraphs: [
+        t("sections.informational.purposes"),
+        t("sections.informational.accuracy"),
+        t("sections.informational.verification"),
+      ],
+    },
+    {
+      title: t("sections.intellectualProperty.title"),
+      paragraphs: [
+        t("sections.intellectualProperty.ownership"),
+        t("sections.intellectualProperty.permittedUse"),
+        t("sections.intellectualProperty.prohibitedIntroduction"),
+      ],
+      items: [
+        t("sections.intellectualProperty.items.copy"),
+        t("sections.intellectualProperty.items.republish"),
+        t("sections.intellectualProperty.items.competingDatabase"),
+        t("sections.intellectualProperty.items.removeNotices"),
+      ],
+    },
+    {
+      title: t("sections.thirdPartyContent.title"),
+      paragraphs: [
+        t("sections.thirdPartyContent.examples"),
+        t("sections.thirdPartyContent.ownership"),
+        t("sections.thirdPartyContent.noAffiliation"),
+      ],
+    },
+    {
+      title: t("sections.externalLinks.title"),
+      paragraphs: [
+        t("sections.externalLinks.examples"),
+        t("sections.externalLinks.responsibility"),
+      ],
+    },
+    {
+      title: t("sections.rightsHolders.title"),
+      paragraphs: [
+        t("sections.rightsHolders.respect"),
+        t.rich("sections.rightsHolders.contact", {
+          dmca: (chunks) => (
+            <Link href="/dmca" className={legalLinkClass}>
+              {chunks}
+            </Link>
+          ),
+        }),
+        t("sections.rightsHolders.review"),
+      ],
+    },
+    {
+      title: t("sections.conduct.title"),
+      paragraphs: [t("sections.conduct.introduction")],
+      items: [
+        t("sections.conduct.items.unlawful"),
+        t("sections.conduct.items.unauthorizedAccess"),
+        t("sections.conduct.items.interfere"),
+        t("sections.conduct.items.security"),
+        t("sections.conduct.items.scrape"),
+        t("sections.conduct.items.damage"),
+      ],
+      closingParagraphs: [t("sections.conduct.indexing")],
+    },
+    {
+      title: t("sections.availability.title"),
+      paragraphs: [
+        t("sections.availability.modification"),
+        t("sections.availability.noGuarantee"),
+      ],
+    },
+    {
+      title: t("sections.warranties.title"),
+      paragraphs: [
+        t("sections.warranties.asIs"),
+        t("sections.warranties.disclaimer"),
+      ],
+    },
+    {
+      title: t("sections.liability.title"),
+      paragraphs: [t("sections.liability.limitation")],
+    },
+    {
+      title: t("sections.changes.title"),
+      paragraphs: [
+        t("sections.changes.updates"),
+        t("sections.changes.posting"),
+        t("sections.changes.acceptance"),
+      ],
+    },
+    {
+      title: t("sections.contact.title"),
+      paragraphs: [
+        t.rich("sections.contact.description", {
+          contact: (chunks) => (
+            <Link href="/contact" className={legalLinkClass}>
+              {chunks}
+            </Link>
+          ),
+        }),
+      ],
+    },
+  ];
 
   return (
     <main className="mx-auto max-w-5xl px-6 pb-10 pt-20 sm:pb-16 sm:pt-32">
       <header className="mb-12 rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-12">
-        <SectionEyebrow>Terms of Use</SectionEyebrow>
+        <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
 
         <h1 className="mb-5 text-4xl font-bold tracking-tight text-[#002D62] sm:text-5xl">
-          Terms of Use
+          {t("title")}
         </h1>
 
         <p className="max-w-3xl text-lg leading-relaxed text-gray-700 sm:text-xl">
-          Mangulina is an independent Dominican Music Database dedicated to
-          documenting and preserving the history of Dominican music.
+          {t("heroDescription")}
         </p>
 
-        <p className="mt-6 text-sm text-gray-500">{t("termsOfUse.lastUpdated")}</p>
+        <p className="mt-6 text-sm text-gray-500">{t("lastUpdated")}</p>
       </header>
 
       <div className="space-y-10">
         <section className="rounded-3xl bg-[#002D62] p-8 text-white shadow-xl sm:p-12">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-white/70">
-            Welcome to Mangulina
+            {t("welcome.eyebrow")}
           </p>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-white/90">
-            <p>
-              Welcome to Mangulina (&quot;Mangulina,&quot; &quot;we,&quot;
-              &quot;our,&quot; or &quot;us&quot;), the Dominican Music Database.
-            </p>
-            <p>
-              By accessing or using this website, you agree to these Terms of
-              Use. If you do not agree with these terms, please do not use the
-              website.
-            </p>
+            <p>{t("welcome.introduction")}</p>
+            <p>{t("welcome.acceptance")}</p>
           </div>
         </section>
 
-        {TERMS_SECTIONS.map((section) => (
+        {sections.map((section) => (
           <section
             key={section.title}
             className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-10"
@@ -222,16 +203,10 @@ export default async function TermsOfUsePage() {
         ))}
 
         <section className="rounded-3xl border border-[#8B0000]/15 bg-[#8B0000]/[0.03] p-8 shadow-sm sm:p-10">
-          <SectionEyebrow>Editorial Note</SectionEyebrow>
+          <SectionEyebrow>{t("editorial.title")}</SectionEyebrow>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-gray-700">
-            <p>
-              Mangulina&apos;s mission is to preserve and document the history,
-              culture, and people of Dominican music. We welcome corrections,
-              additional information, and contributions from artists, families,
-              researchers, historians, and rights holders to help improve the
-              accuracy and completeness of the database.
-            </p>
+            <p>{t("editorial.description")}</p>
           </div>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -239,13 +214,13 @@ export default async function TermsOfUsePage() {
               href="/contact"
               className="rounded-full bg-[#8B0000] px-6 py-3 text-center text-sm font-bold uppercase tracking-widest text-white transition-colors hover:bg-[#6f0000]"
             >
-              Contact Mangulina
+              {t("editorial.contactButton")}
             </Link>
             <Link
               href="/about"
               className="rounded-full border border-[#002D62]/20 px-6 py-3 text-center text-sm font-bold uppercase tracking-widest text-[#002D62] transition-colors hover:bg-[#002D62]/5"
             >
-              About Mangulina
+              {t("editorial.aboutButton")}
             </Link>
           </div>
         </section>

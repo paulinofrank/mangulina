@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+
 import { Link } from "@/i18n/navigation";
 import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = createPageMetadata({
-  title: "Copyright & DMCA",
-  description:
-    "Mangulina's copyright and DMCA policy for the Dominican Music Database, including procedures for reporting copyright concerns.",
-  path: "/dmca",
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("legal.dmca.metadata");
+
+  return createPageMetadata({
+    title: t("title"),
+    description: t("description"),
+    path: "/dmca",
+  });
+}
 
 function SectionEyebrow({ children }: { children: React.ReactNode }) {
   return (
@@ -17,230 +22,146 @@ function SectionEyebrow({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default function DmcaPage() {
+export default async function DmcaPage() {
+  const t = await getTranslations("legal.dmca");
+
+  const thirdPartyItems = [
+    t("thirdParty.items.artistInformation"),
+    t("thirdParty.items.metadata"),
+    t("thirdParty.items.titles"),
+    t("thirdParty.items.credits"),
+    t("thirdParty.items.images"),
+    t("thirdParty.items.youtube"),
+    t("thirdParty.items.links"),
+  ];
+  const claimItems = [
+    t("claims.items.contactInformation"),
+    t("claims.items.identification"),
+    t("claims.items.location"),
+    t("claims.items.goodFaith"),
+    t("claims.items.accuracy"),
+    t("claims.items.signature"),
+  ];
+  const rightsHolderItems = [
+    t("rightsHolders.items.correct"),
+    t("rightsHolders.items.update"),
+    t("rightsHolders.items.credits"),
+    t("rightsHolders.items.review"),
+    t("rightsHolders.items.attribution"),
+  ];
+
   return (
-    <main className="mx-auto max-w-5xl px-6 pt-20 pb-10 sm:pt-32 sm:pb-16">
-      {/* Hero */}
+    <main className="mx-auto max-w-5xl px-6 pb-10 pt-20 sm:pb-16 sm:pt-32">
       <header className="mb-12 rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-12">
-        <SectionEyebrow>Copyright & DMCA</SectionEyebrow>
+        <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
 
         <h1 className="mb-5 text-4xl font-bold tracking-tight text-[#002D62] sm:text-5xl">
-          Copyright Policy
+          {t("title")}
         </h1>
 
         <p className="max-w-3xl text-lg leading-relaxed text-gray-700 sm:text-xl">
-          Mangulina respects the intellectual property rights of artists,
-          songwriters, publishers, record labels, photographers, and other
-          rights holders. This page explains how copyright concerns may be
-          reported and reviewed.
+          {t("heroDescription")}
         </p>
 
-        <p className="mt-6 text-sm text-gray-500">
-          Last Updated: June 2026
-        </p>
+        <p className="mt-6 text-sm text-gray-500">{t("lastUpdated")}</p>
       </header>
 
       <div className="space-y-10">
-        {/* Overview */}
         <section className="rounded-3xl bg-[#002D62] p-8 text-white shadow-xl sm:p-12">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-white/70">
-            Overview
+            {t("overview.title")}
           </p>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-white/90">
-            <p>
-              Mangulina is a curated Dominican music database dedicated to
-              documenting and preserving information about Dominican music and
-              the people who create it.
-            </p>
-
-            <p>
-              The website provides reference information such as artist
-              profiles, recording information, release details, credits,
-              awards, historical information, and links to third-party
-              platforms.
-            </p>
-
-            <p>
-              Mangulina does not host, stream, sell, distribute, or provide
-              downloadable copies of copyrighted music recordings.
-            </p>
+            <p>{t("overview.database")}</p>
+            <p>{t("overview.reference")}</p>
+            <p>{t("overview.noHosting")}</p>
           </div>
         </section>
 
-        {/* Copyright Policy */}
         <section className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-10">
-          <SectionEyebrow>Copyright Policy</SectionEyebrow>
+          <SectionEyebrow>{t("policy.title")}</SectionEyebrow>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-gray-700">
-            <p>
-              We respect the intellectual property rights of artists,
-              songwriters, composers, publishers, record labels, photographers,
-              and all other rights holders.
-            </p>
-
-            <p>
-              If we become aware of material that infringes copyright or other
-              intellectual property rights, we will review the matter promptly
-              and take appropriate action where necessary.
-            </p>
-
-            <p>
-              Our goal is to preserve and organize information about Dominican
-              music while respecting the rights of creators and rights holders.
-            </p>
+            <p>{t("policy.respect")}</p>
+            <p>{t("policy.action")}</p>
+            <p>{t("policy.goal")}</p>
           </div>
         </section>
 
-        {/* Third Party Content */}
         <section className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-10">
-          <SectionEyebrow>Third-Party Content</SectionEyebrow>
+          <SectionEyebrow>{t("thirdParty.title")}</SectionEyebrow>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-gray-700">
-            <p>
-              Mangulina may display or reference information obtained from
-              publicly available sources, including:
-            </p>
+            <p>{t("thirdParty.introduction")}</p>
 
-            <ul className="space-y-3 pl-6 list-disc">
-              <li>Artist names and biographies</li>
-              <li>Recording and release metadata</li>
-              <li>Album and release titles</li>
-              <li>Credits and personnel information</li>
-              <li>Publicly available images</li>
-              <li>Embedded YouTube videos</li>
-              <li>Links to streaming services and official websites</li>
+            <ul className="list-disc space-y-3 pl-6">
+              {thirdPartyItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
 
-            <p>
-              All trademarks, logos, recordings, videos, images, and other
-              copyrighted materials remain the property of their respective
-              owners.
-            </p>
-
-            <p>
-              The inclusion of information within Mangulina does not imply
-              ownership, endorsement, sponsorship, or affiliation unless
-              explicitly stated.
-            </p>
+            <p>{t("thirdParty.ownership")}</p>
+            <p>{t("thirdParty.noAffiliation")}</p>
           </div>
         </section>
 
-        {/* DMCA Notice */}
         <section className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-10">
-          <SectionEyebrow>Copyright Infringement Claims</SectionEyebrow>
+          <SectionEyebrow>{t("claims.title")}</SectionEyebrow>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-gray-700">
-            <p>
-              If you believe that material appearing on Mangulina infringes
-              your copyright or other intellectual property rights, please
-              submit a written notice containing:
-            </p>
+            <p>{t("claims.introduction")}</p>
 
-            <ol className="space-y-3 pl-6 list-decimal">
-              <li>Your full name and contact information.</li>
-              <li>
-                Identification of the copyrighted work claimed to have been
-                infringed.
-              </li>
-              <li>
-                The URL or specific location of the material in question.
-              </li>
-              <li>
-                A statement that you have a good-faith belief that the use is
-                unauthorized.
-              </li>
-              <li>
-                A statement that the information provided is accurate and that
-                you are the copyright owner or authorized representative.
-              </li>
-              <li>Your physical or electronic signature.</li>
+            <ol className="list-decimal space-y-3 pl-6">
+              {claimItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ol>
 
-            <p>
-              Upon receipt of a valid notice, we will review the request and
-              take appropriate action, which may include correction, removal,
-              restriction, or further investigation of the material.
-            </p>
+            <p>{t("claims.action")}</p>
           </div>
         </section>
 
-        {/* Counter Notice */}
         <section className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-10">
-          <SectionEyebrow>Counter-Notification</SectionEyebrow>
+          <SectionEyebrow>{t("counterNotice.title")}</SectionEyebrow>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-gray-700">
-            <p>
-              If you believe that material was removed, restricted, or modified
-              as a result of a mistake or misidentification, you may submit a
-              counter-notification explaining the basis for your objection.
-            </p>
-
-            <p>
-              We will review all counter-notifications and may restore or
-              revise material where appropriate and permitted by applicable
-              law.
-            </p>
+            <p>{t("counterNotice.objection")}</p>
+            <p>{t("counterNotice.review")}</p>
           </div>
         </section>
 
-        {/* Artists & Rights Holders */}
         <section className="rounded-3xl border border-[#8B0000]/15 bg-[#8B0000]/[0.03] p-8 shadow-sm sm:p-10">
-          <SectionEyebrow>Artists & Rights Holders</SectionEyebrow>
+          <SectionEyebrow>{t("rightsHolders.title")}</SectionEyebrow>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-gray-700">
-            <p>
-              Artists, managers, publishers, record labels, estates, and
-              authorized representatives may also contact us to:
-            </p>
+            <p>{t("rightsHolders.introduction")}</p>
 
-            <ul className="space-y-3 pl-6 list-disc">
-              <li>Correct inaccurate information</li>
-              <li>Update artist biographies or profile details</li>
-              <li>Add missing credits or discography information</li>
-              <li>Request review of images or other content</li>
-              <li>Discuss attribution concerns</li>
+            <ul className="list-disc space-y-3 pl-6">
+              {rightsHolderItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
 
-            <p>
-              Mangulina welcomes collaboration and strives to maintain
-              accurate, respectful, and well-sourced information.
-            </p>
+            <p>{t("rightsHolders.collaboration")}</p>
           </div>
         </section>
 
-        {/* Good Faith */}
         <section className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-10">
-          <SectionEyebrow>Good-Faith Commitment</SectionEyebrow>
+          <SectionEyebrow>{t("goodFaith.title")}</SectionEyebrow>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-gray-700">
-            <p>
-              Mangulina's mission is educational, informational, and cultural.
-            </p>
-
-            <p>
-              We are committed to preserving Dominican musical heritage while
-              respecting the rights and interests of artists, creators, and
-              rights holders.
-            </p>
-
-            <p>
-              If you have questions regarding this policy, please contact us
-              and we will make every reasonable effort to resolve concerns
-              promptly and professionally.
-            </p>
+            <p>{t("goodFaith.mission")}</p>
+            <p>{t("goodFaith.commitment")}</p>
+            <p>{t("goodFaith.contact")}</p>
           </div>
         </section>
 
-        {/* Contact */}
         <section className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-10">
-          <SectionEyebrow>Contact</SectionEyebrow>
+          <SectionEyebrow>{t("contact.title")}</SectionEyebrow>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-gray-700">
-            <p>
-              For copyright inquiries, infringement claims, attribution
-              concerns, or rights-holder requests, please contact:
-            </p>
+            <p>{t("contact.description")}</p>
 
             <div className="rounded-2xl border border-[#002D62]/10 bg-[#002D62]/[0.03] p-6">
               <p className="font-semibold text-[#002D62]">
@@ -254,14 +175,14 @@ export default function DmcaPage() {
               href="/contact"
               className="rounded-full bg-[#8B0000] px-6 py-3 text-center text-sm font-bold uppercase tracking-widest text-white transition-colors hover:bg-[#6f0000]"
             >
-              Contact Us
+              {t("contact.contactButton")}
             </Link>
 
             <Link
               href="/about"
               className="rounded-full border border-[#002D62]/20 px-6 py-3 text-center text-sm font-bold uppercase tracking-widest text-[#002D62] transition-colors hover:bg-[#002D62]/5"
             >
-              About Mangulina
+              {t("contact.aboutButton")}
             </Link>
           </div>
         </section>

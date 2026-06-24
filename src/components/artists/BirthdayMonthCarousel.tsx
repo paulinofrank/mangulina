@@ -37,6 +37,21 @@ type BirthdayMonthCarouselProps = {
   monthGroups: BirthdayMonthGroup[];
 };
 
+const monthGradients = {
+  1: "linear-gradient(135deg, #C62E4B 0%, #E4473F 100%)",
+  2: "linear-gradient(135deg, #E95C2A 0%, #F28C28 100%)",
+  3: "linear-gradient(135deg, #F0A51F 0%, #F4C430 100%)",
+  4: "linear-gradient(135deg, #D9C91E 0%, #A9C93A 100%)",
+  5: "linear-gradient(135deg, #72B84B 0%, #35A861 100%)",
+  6: "linear-gradient(135deg, #27A98E 0%, #1B9CB2 100%)",
+  7: "linear-gradient(135deg, #2687C9 0%, #1269A8 100%)",
+  8: "linear-gradient(135deg, #1F5FA8 0%, #223E92 100%)",
+  9: "linear-gradient(135deg, #3D3A9F 0%, #5A35A5 100%)",
+  10: "linear-gradient(135deg, #6B2AA0 0%, #9A2E9D 100%)",
+  11: "linear-gradient(135deg, #B83280 0%, #D63A6F 100%)",
+  12: "linear-gradient(135deg, #B91C3C 0%, #8B0000 100%)",
+} as const;
+
 function formatArtistDetail(value: string | null) {
   if (!value) return null;
   return value
@@ -138,6 +153,7 @@ function BirthdayArtistRow({ artist, locale }: { artist: BirthdayArtist; locale:
 
 export default function BirthdayMonthCarousel({ monthGroups }: BirthdayMonthCarouselProps) {
   const t = useTranslations("birthdays");
+  const birthdayUi = useTranslations("birthdays.ui");
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -217,23 +233,68 @@ export default function BirthdayMonthCarousel({ monthGroups }: BirthdayMonthCaro
           {monthGroups.map((monthGroup) => {
             const monthKey = monthGroup.name.toLowerCase();
             const isSelected = monthGroup.month === selectedGroup.month;
+            const monthNumber = String(monthGroup.month).padStart(2, "0");
+            const monthGradient =
+              monthGradients[monthGroup.month as keyof typeof monthGradients] ??
+              "linear-gradient(135deg, #002D62 0%, #174A7C 100%)";
+            const monthLabel = t(`months.${monthKey}`);
+
             return (
               <button
                 key={monthGroup.month}
                 type="button"
-                onClick={() => selectMonth(monthGroup.month)}
                 aria-pressed={isSelected}
-                className={`group relative flex aspect-square w-28 shrink-0 cursor-pointer flex-col justify-between overflow-hidden rounded-3xl p-4 text-left transition-all duration-200 hover:scale-[1.02] sm:w-32 lg:w-36 ${isSelected ? "bg-[#002D62]/90 border border-white/20 shadow-lg" : "bg-[#002D62]/70"}`}
+                onClick={() => selectMonth(monthGroup.month)}
+                className={[
+                  "group relative block aspect-square w-28 shrink-0 cursor-pointer overflow-hidden rounded-lg text-left transition-all duration-200 hover:scale-[1.02] sm:w-32 lg:w-36",
+                  isSelected ? "shadow-md" : "shadow-sm",
+                ].join(" ")}
               >
-                <div className="absolute inset-0 bg-linear-to-br from-[#002D62]/90 to-[#002D62]/70 opacity-95" />
-                <div className="relative z-10 flex h-full flex-col justify-between">
-                  <span className="text-sm font-medium uppercase tracking-wide text-white">
-                    {t(`months.${monthKey}`)}
-                  </span>
-                  <span className="text-sm text-white/80">
-                    {t("ui.artistCount", { count: monthGroup.count })}
-                  </span>
-                </div>
+                <div
+                  className={[
+                    "absolute inset-0 transition-opacity",
+                    isSelected ? "opacity-100 brightness-110" : "opacity-90 group-hover:opacity-100",
+                  ].join(" ")}
+                  style={{ background: monthGradient }}
+                />
+
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-linear-to-br from-white/14 via-transparent to-black/12"
+                />
+
+                <span
+                  aria-hidden="true"
+                  className={[
+                    "absolute right-3 top-3 h-5 w-5 border-r border-t",
+                    isSelected ? "border-2 border-white/85" : "border border-white/35",
+                  ].join(" ")}
+                />
+                <span
+                  aria-hidden="true"
+                  className={[
+                    "absolute bottom-3 right-3 h-5 w-5 border-b border-r",
+                    isSelected ? "border-2 border-white/80" : "border border-white/25",
+                  ].join(" ")}
+                />
+
+                <span
+                  aria-hidden="true"
+                  className={[
+                    "absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-5xl font-semibold leading-none tracking-tight sm:text-6xl",
+                    isSelected ? "text-white/78" : "text-white/28",
+                  ].join(" ")}
+                >
+                  {monthNumber}
+                </span>
+
+                <span className="absolute left-4 right-4 top-4 z-20 block text-xs font-bold uppercase tracking-wide text-white sm:text-sm">
+                  {monthLabel}
+                </span>
+
+                <span className="absolute bottom-4 left-4 right-4 z-20 block text-sm font-normal text-white/95">
+                  {birthdayUi("artistCount", { count: monthGroup.count })}
+                </span>
               </button>
             );
           })}

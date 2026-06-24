@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
-import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
+
+import { Link } from "@/i18n/navigation";
 import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = createPageMetadata({
-  title: "Privacy Policy",
-  description:
-    "Read Mangulina's Privacy Policy and learn how information is collected, used, and protected on the Dominican Music Database.",
-  path: "/privacy-policy",
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("legal.privacy.metadata");
+
+  return createPageMetadata({
+    title: t("title"),
+    description: t("description"),
+    path: "/privacy-policy",
+  });
+}
 
 type PrivacySection = {
   title: string;
@@ -18,164 +22,6 @@ type PrivacySection = {
   secondaryIntroduction?: string;
   closingParagraphs?: React.ReactNode[];
 };
-
-const PRIVACY_SECTIONS: PrivacySection[] = [
-  {
-    title: "1. Information We Collect",
-    paragraphs: [
-      "Mangulina may collect limited information when visitors use the website, including:",
-    ],
-    items: [
-      "Browser type and version",
-      "Device information",
-      "Operating system",
-      "Pages visited",
-      "Referring websites",
-      "Date and time of visits",
-      "General geographic region based on IP address",
-      "Website performance and analytics data",
-    ],
-    closingParagraphs: ["We do not sell personal information."],
-  },
-  {
-    title: "2. Information You Voluntarily Provide",
-    paragraphs: ["You may choose to provide information when:"],
-    items: [
-      "Contacting us",
-      "Submitting corrections",
-      "Suggesting additions or edits",
-      "Reporting copyright concerns",
-      "Participating as a contributor",
-    ],
-    secondaryIntroduction: "Information you voluntarily provide may include:",
-    secondaryItems: [
-      "Name",
-      "Email address",
-      "Organization or affiliation",
-      "Message content",
-    ],
-    closingParagraphs: [
-      "We only use this information to respond to inquiries and improve the accuracy of the database.",
-    ],
-  },
-  {
-    title: "3. Cookies and Analytics",
-    paragraphs: [
-      "Mangulina may use cookies or similar technologies to:",
-    ],
-    items: [
-      "Improve website performance",
-      "Understand visitor behavior",
-      "Measure traffic and engagement",
-      "Maintain website security",
-    ],
-    closingParagraphs: [
-      "We may use analytics services to better understand how visitors interact with the website.",
-      "Users may disable cookies through their browser settings, although some features may not function as intended.",
-    ],
-  },
-  {
-    title: "4. How We Use Information",
-    paragraphs: ["Information collected through the website may be used to:"],
-    items: [
-      "Operate and maintain the website",
-      "Improve content and user experience",
-      "Respond to inquiries",
-      "Investigate abuse or security issues",
-      "Monitor website performance",
-      "Preserve the accuracy and quality of the database",
-    ],
-  },
-  {
-    title: "5. Information Sharing",
-    paragraphs: [
-      "Mangulina does not sell, rent, or trade personal information.",
-      "Information may be shared only when:",
-    ],
-    items: [
-      "Required by law",
-      "Necessary to protect legal rights",
-      "Necessary to investigate fraud, abuse, or security incidents",
-      "Required to operate services provided by trusted third-party vendors",
-    ],
-  },
-  {
-    title: "6. Third-Party Services",
-    paragraphs: [
-      "Mangulina may include links to external websites, including:",
-    ],
-    items: [
-      "Artist websites",
-      "Social media platforms",
-      "Music streaming services",
-      "Video platforms",
-      "Other music-related resources",
-    ],
-    closingParagraphs: [
-      "We are not responsible for the privacy practices of third-party websites.",
-      "Visitors should review the privacy policies of those services separately.",
-    ],
-  },
-  {
-    title: "7. Data Security",
-    paragraphs: [
-      "We take reasonable measures to protect information from unauthorized access, misuse, alteration, or disclosure.",
-      "However, no website or internet transmission can be guaranteed completely secure.",
-    ],
-  },
-  {
-    title: "8. Children's Privacy",
-    paragraphs: [
-      "Mangulina is intended as a general audience informational resource.",
-      "We do not knowingly collect personal information from children under the age of 13.",
-      "If such information is discovered, reasonable efforts will be made to remove it.",
-    ],
-  },
-  {
-    title: "9. International Visitors",
-    paragraphs: [
-      "Visitors may access Mangulina from countries outside the United States.",
-      "By using the website, visitors understand that information may be processed and stored in jurisdictions where the website and its service providers operate.",
-    ],
-  },
-  {
-    title: "10. Changes to This Privacy Policy",
-    paragraphs: [
-      "We may update this Privacy Policy periodically.",
-      <span key="updated-date">
-        Any changes will be posted on this page together with an updated
-        &quot;Last Updated&quot; date.
-      </span>,
-      "Continued use of the website after changes become effective constitutes acceptance of the revised policy.",
-    ],
-  },
-  {
-    title: "11. Contact",
-    paragraphs: [
-      <span key="contact-page">
-        Questions regarding this Privacy Policy may be submitted through the{" "}
-        <Link
-          href="/contact"
-          className="font-medium text-[#002D62] underline underline-offset-4 hover:text-[#8B0000]"
-        >
-          Contact page
-        </Link>
-        .
-      </span>,
-      <span key="dmca-page">
-        Privacy requests, corrections, and concerns may also be submitted
-        through the{" "}
-        <Link
-          href="/dmca"
-          className="font-medium text-[#002D62] underline underline-offset-4 hover:text-[#8B0000]"
-        >
-          Copyright &amp; DMCA page
-        </Link>{" "}
-        when applicable.
-      </span>,
-    ],
-  },
-];
 
 function SectionEyebrow({ children }: { children: React.ReactNode }) {
   return (
@@ -195,51 +41,182 @@ function PolicyList({ items }: { items: string[] }) {
   );
 }
 
+const legalLinkClass =
+  "font-medium text-[#002D62] underline underline-offset-4 hover:text-[#8B0000]";
+
 export default async function PrivacyPolicyPage() {
-  const t = await getTranslations("pages");
+  const t = await getTranslations("legal.privacy");
+
+  const sections: PrivacySection[] = [
+    {
+      title: t("sections.information.title"),
+      paragraphs: [t("sections.information.introduction")],
+      items: [
+        t("sections.information.items.browser"),
+        t("sections.information.items.device"),
+        t("sections.information.items.operatingSystem"),
+        t("sections.information.items.pagesVisited"),
+        t("sections.information.items.referringWebsites"),
+        t("sections.information.items.visitDate"),
+        t("sections.information.items.region"),
+        t("sections.information.items.performance"),
+      ],
+      closingParagraphs: [t("sections.information.closing")],
+    },
+    {
+      title: t("sections.voluntary.title"),
+      paragraphs: [t("sections.voluntary.introduction")],
+      items: [
+        t("sections.voluntary.items.contacting"),
+        t("sections.voluntary.items.corrections"),
+        t("sections.voluntary.items.edits"),
+        t("sections.voluntary.items.copyright"),
+        t("sections.voluntary.items.contributor"),
+      ],
+      secondaryIntroduction: t("sections.voluntary.detailsIntroduction"),
+      secondaryItems: [
+        t("sections.voluntary.details.name"),
+        t("sections.voluntary.details.email"),
+        t("sections.voluntary.details.organization"),
+        t("sections.voluntary.details.message"),
+      ],
+      closingParagraphs: [t("sections.voluntary.closing")],
+    },
+    {
+      title: t("sections.cookies.title"),
+      paragraphs: [t("sections.cookies.introduction")],
+      items: [
+        t("sections.cookies.items.performance"),
+        t("sections.cookies.items.behavior"),
+        t("sections.cookies.items.traffic"),
+        t("sections.cookies.items.security"),
+      ],
+      closingParagraphs: [
+        t("sections.cookies.analytics"),
+        t("sections.cookies.disabling"),
+      ],
+    },
+    {
+      title: t("sections.use.title"),
+      paragraphs: [t("sections.use.introduction")],
+      items: [
+        t("sections.use.items.operate"),
+        t("sections.use.items.experience"),
+        t("sections.use.items.respond"),
+        t("sections.use.items.investigate"),
+        t("sections.use.items.monitor"),
+        t("sections.use.items.accuracy"),
+      ],
+    },
+    {
+      title: t("sections.sharing.title"),
+      paragraphs: [
+        t("sections.sharing.noSale"),
+        t("sections.sharing.introduction"),
+      ],
+      items: [
+        t("sections.sharing.items.law"),
+        t("sections.sharing.items.rights"),
+        t("sections.sharing.items.investigate"),
+        t("sections.sharing.items.vendors"),
+      ],
+    },
+    {
+      title: t("sections.thirdParty.title"),
+      paragraphs: [t("sections.thirdParty.introduction")],
+      items: [
+        t("sections.thirdParty.items.artistWebsites"),
+        t("sections.thirdParty.items.socialMedia"),
+        t("sections.thirdParty.items.streaming"),
+        t("sections.thirdParty.items.video"),
+        t("sections.thirdParty.items.resources"),
+      ],
+      closingParagraphs: [
+        t("sections.thirdParty.responsibility"),
+        t("sections.thirdParty.review"),
+      ],
+    },
+    {
+      title: t("sections.security.title"),
+      paragraphs: [
+        t("sections.security.measures"),
+        t("sections.security.limitation"),
+      ],
+    },
+    {
+      title: t("sections.children.title"),
+      paragraphs: [
+        t("sections.children.audience"),
+        t("sections.children.collection"),
+        t("sections.children.removal"),
+      ],
+    },
+    {
+      title: t("sections.international.title"),
+      paragraphs: [
+        t("sections.international.access"),
+        t("sections.international.processing"),
+      ],
+    },
+    {
+      title: t("sections.changes.title"),
+      paragraphs: [
+        t("sections.changes.updates"),
+        t("sections.changes.posting"),
+        t("sections.changes.acceptance"),
+      ],
+    },
+    {
+      title: t("sections.contact.title"),
+      paragraphs: [
+        t.rich("sections.contact.contactPage", {
+          contact: (chunks) => (
+            <Link href="/contact" className={legalLinkClass}>
+              {chunks}
+            </Link>
+          ),
+        }),
+        t.rich("sections.contact.dmcaPage", {
+          dmca: (chunks) => (
+            <Link href="/dmca" className={legalLinkClass}>
+              {chunks}
+            </Link>
+          ),
+        }),
+      ],
+    },
+  ];
 
   return (
     <main className="mx-auto max-w-5xl px-6 pb-10 pt-20 sm:pb-16 sm:pt-32">
       <header className="mb-12 rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-12">
-        <SectionEyebrow>Privacy Policy</SectionEyebrow>
+        <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
 
         <h1 className="mb-5 text-4xl font-bold tracking-tight text-[#002D62] sm:text-5xl">
-          Privacy Policy
+          {t("title")}
         </h1>
 
         <p className="max-w-3xl text-lg leading-relaxed text-gray-700 sm:text-xl">
-          Mangulina is committed to protecting your privacy. This Privacy
-          Policy explains what information we collect, how we use it, and the
-          choices available to visitors of the Dominican Music Database.
+          {t("heroDescription")}
         </p>
 
-        <p className="mt-6 text-sm text-gray-500">{t("privacyPolicy.lastUpdated")}</p>
+        <p className="mt-6 text-sm text-gray-500">{t("lastUpdated")}</p>
       </header>
 
       <div className="space-y-10">
         <section className="rounded-3xl bg-[#002D62] p-8 text-white shadow-xl sm:p-12">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-white/70">
-            Welcome to Mangulina
+            {t("welcome.eyebrow")}
           </p>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-white/90">
-            <p>
-              Welcome to Mangulina (&quot;Mangulina,&quot; &quot;we,&quot;
-              &quot;our,&quot; or &quot;us&quot;).
-            </p>
-            <p>
-              This Privacy Policy describes how information may be collected,
-              used, and protected when you visit or interact with the Mangulina
-              website.
-            </p>
-            <p>
-              By using this website, you agree to the practices described in
-              this Privacy Policy.
-            </p>
+            <p>{t("welcome.introduction")}</p>
+            <p>{t("welcome.description")}</p>
+            <p>{t("welcome.acceptance")}</p>
           </div>
         </section>
 
-        {PRIVACY_SECTIONS.map((section) => (
+        {sections.map((section) => (
           <section
             key={section.title}
             className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-10"
@@ -269,14 +246,10 @@ export default async function PrivacyPolicyPage() {
         ))}
 
         <section className="rounded-3xl border border-[#8B0000]/15 bg-[#8B0000]/[0.03] p-8 shadow-sm sm:p-10">
-          <SectionEyebrow>Privacy Questions</SectionEyebrow>
+          <SectionEyebrow>{t("questions.title")}</SectionEyebrow>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-gray-700">
-            <p>
-              If you have questions about this Privacy Policy, information you
-              have voluntarily provided, or how Mangulina handles privacy
-              concerns, please contact us.
-            </p>
+            <p>{t("questions.description")}</p>
           </div>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -284,13 +257,13 @@ export default async function PrivacyPolicyPage() {
               href="/contact"
               className="rounded-full bg-[#8B0000] px-6 py-3 text-center text-sm font-bold uppercase tracking-widest text-white transition-colors hover:bg-[#6f0000]"
             >
-              Contact Mangulina
+              {t("questions.contactButton")}
             </Link>
             <Link
               href="/terms-of-use"
               className="rounded-full border border-[#002D62]/20 px-6 py-3 text-center text-sm font-bold uppercase tracking-widest text-[#002D62] transition-colors hover:bg-[#002D62]/5"
             >
-              Terms of Use
+              {t("questions.termsButton")}
             </Link>
           </div>
         </section>
