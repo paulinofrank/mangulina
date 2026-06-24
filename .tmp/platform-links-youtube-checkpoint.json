@@ -1,15 +1,23 @@
 {
   "platform": "youtube",
-  "lastCompletedOffset": 16000,
+  "lastCompletedOffset": 1000,
   "pageSize": 1000,
-  "startedAt": "2026-06-17T03:27:41.967Z",
-  "updatedAt": "2026-06-22T22:14:54.142Z",
-  "totalInserted": 6586,
-  "totalUpdated": 121,
-  "totalPages": 17,
-  "quotaDate": "2026-06-22",
-  "quotaUsedToday": 1140,
+  "startedAt": "2026-06-24T11:55:44.863Z",
+  "updatedAt": "2026-06-24T12:39:50.899Z",
+  "totalInserted": 3,
+  "totalUpdated": 906,
+  "totalPages": 2,
+  "quotaDate": "2026-06-24",
+  "quotaUsedToday": 1900,
   "quotaUsedByKeyToday": [
+    95,
+    95,
+    95,
+    95,
+    95,
+    95,
+    95,
+    95,
     95,
     95,
     95,
@@ -23,6 +31,6 @@
     95,
     95
   ],
-  "currentKeyIndex": 3,
-  "keyCount": 12
+  "currentKeyIndex": 19,
+  "keyCount": 20
 }

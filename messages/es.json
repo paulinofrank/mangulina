@@ -45,9 +45,9 @@
   "footer": {
     "tagline": "La Base de Datos de Música Dominicana",
     "logo": "Logo de Mangulina",
-    "copyright": "© 2026 Mangulina. Todos los Derechos Reservados.",
+    "copyright": "© 2026 Mangulina. Todos los derechos reservados.",
     "languageSwitchToSpanish": "Cambiar a Español",
-    "languageSwitchToEnglish": "Cambiar a Inglés",
+    "languageSwitchToEnglish": "Cambiar a inglés",
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",
@@ -96,7 +96,7 @@
     "culturalContext": "Contexto Cultural",
     "notes": "Notas",
     "hero": {
-      "by": "por", "album": "Álbum", "releaseYear": "Año de Lanzamiento", "duration": "Duración", "views": "Vistas", "genres": "Géneros", "relatedSongs": "Canciones Relacionadas", "moreBy": "Más de {artist}", "aboutArtist": "Acerca del Artista", "artistFallback": "Explora el perfil, las canciones, los créditos y la historia musical dominicana relacionada con este artista."
+      "by": "por", "album": "Álbum", "releaseYear": "Año de Publicación", "duration": "Duración", "views": "Vistas", "genres": "Géneros", "relatedSongs": "Canciones Relacionadas", "moreBy": "Más de {artist}", "aboutArtist": "Acerca del Artista", "artistFallback": "Explora el perfil, las canciones, los créditos y la historia musical dominicana relacionada con este artista."
     }
   },
   "songAbout": {
@@ -215,7 +215,7 @@
     "tracksCount": "{count, plural, one {# canción} other {# canciones}}",
     "releaseGroups": {
       "Album": "Álbumes",
-      "EP": "EPs",
+      "EP": "EP",
       "Single": "Sencillos",
       "Compilation": "Recopilaciones",
       "Live": "En Vivo",
@@ -233,7 +233,7 @@
   "releaseTypePlural": {
     "albums": "Álbumes",
     "singles": "Sencillos",
-    "eps": "EPs",
+    "eps": "EP",
     "compilations": "Recopilaciones",
     "live": "En Vivo",
     "soundtracks": "Bandas Sonoras",
@@ -407,7 +407,7 @@
       "lastUpdated": "Última Actualización: Junio 2026",
       "welcome": {
         "eyebrow": "Bienvenido a Mangulina",
-        "introduction": "Te damos la bienvenida a Mangulina («Mangulina», «nosotros», «nuestro» o «nos»).",
+        "introduction": "Te damos la bienvenida a Mangulina™, La Base de Datos de Música Dominicana.",
         "description": "Esta Política de Privacidad describe cómo se puede recopilar, utilizar y proteger la información cuando visitas el sitio web de Mangulina o interactúas con él.",
         "acceptance": "Al utilizar este sitio web, aceptas las prácticas descritas en esta Política de Privacidad."
       },
@@ -540,13 +540,13 @@
       "lastUpdated": "Última Actualización: Junio 2026",
       "welcome": {
         "eyebrow": "Bienvenido a Mangulina",
-        "introduction": "Te damos la bienvenida a Mangulina («Mangulina», «nosotros», «nuestro» o «nos»), la Base de Datos de Música Dominicana.",
+        "introduction": "Te damos la bienvenida a Mangulina™, la Base de Datos de Música Dominicana.",
         "acceptance": "Al acceder a este sitio web o utilizarlo, aceptas estos Términos de Uso. Si no estás de acuerdo con estos términos, no utilices el sitio web."
       },
       "sections": {
         "about": {
-          "title": "1. Acerca de Mangulina",
-          "description": "Mangulina es una base de datos de referencia independiente dedicada a documentar, preservar y promover información sobre la música dominicana, sus artistas, grabaciones, lanzamientos, géneros y la historia cultural relacionada.",
+          "title": "1. Mangulina",
+          "description": "Mangulina es una base de datos de referencia independiente dedicada a documentar, preservar y promover información sobre la música dominicana, sus artistas, grabaciones, publicaciones musicales, géneros y la historia cultural relacionada.",
           "informationalResource": "Mangulina es un recurso informativo y no ofrece streaming de música, descargas digitales ni venta de música, salvo que se indique expresamente."
         },
         "informational": {
@@ -569,7 +569,7 @@
         },
         "thirdPartyContent": {
           "title": "4. Contenido de Terceros",
-          "examples": "Mangulina puede mostrar o hacer referencia a nombres de artistas, títulos de álbumes, títulos de grabaciones, información de lanzamientos, portadas, fotografías, enlaces a plataformas externas y contenido multimedia insertado.",
+          "examples": "Mangulina puede mostrar o hacer referencia a nombres de artistas, títulos de álbumes, títulos de grabaciones, información sobre publicaciones musicales, portadas, fotografías, enlaces a plataformas externas y contenido multimedia insertado.",
           "ownership": "Dicho contenido continúa siendo propiedad de sus respectivos titulares.",
           "noAffiliation": "La inclusión de contenido de terceros no implica propiedad, respaldo, patrocinio ni afiliación, salvo que se indique expresamente."
         },
@@ -626,7 +626,7 @@
         "title": "Nota Editorial",
         "description": "La misión de Mangulina es preservar y documentar la historia, la cultura y las personas de la música dominicana. Recibimos correcciones, información adicional y contribuciones de artistas, familias, investigadores, historiadores y titulares de derechos para ayudar a mejorar la exactitud y la integridad de la base de datos.",
         "contactButton": "Contactar a Mangulina",
-        "aboutButton": "Acerca de Mangulina"
+        "aboutButton": "Más información"
       }
     },
     "dmca": {
@@ -635,38 +635,38 @@
         "description": "Política de derechos de autor y DMCA de Mangulina para la Base de Datos de Música Dominicana, incluidos los procedimientos para informar inquietudes sobre derechos de autor."
       },
       "eyebrow": "Derechos de Autor y DMCA",
-      "title": "Política de Derechos de Autor",
-      "heroDescription": "Mangulina respeta los derechos de propiedad intelectual de artistas, autores de canciones, editores, sellos discográficos, fotógrafos y otros titulares de derechos. Esta página explica cómo se pueden informar y revisar las inquietudes sobre derechos de autor.",
-      "lastUpdated": "Última Actualización: Junio 2026",
+      "title": "Política de derechos de autor",
+      "heroDescription": "Mangulina respeta los derechos de propiedad intelectual de artistas, compositores, autores, editoras musicales, sellos discográficos, fotógrafos y otros titulares de derechos. Esta página explica cómo se pueden informar y revisar las inquietudes sobre derechos de autor.",
+      "lastUpdated": "Última actualización: Junio 2026",
       "overview": {
-        "title": "Descripción General",
-        "database": "Mangulina es una base de datos curada de música dominicana dedicada a documentar y preservar información sobre la música dominicana y las personas que la crean.",
-        "reference": "El sitio web proporciona información de referencia, como perfiles de artistas, información de grabaciones, detalles de lanzamientos, créditos, premios, información histórica y enlaces a plataformas de terceros.",
+        "title": "Descripción general",
+        "database": "Mangulina es una base de datos de música dominicana seleccionada y revisada editorialmente, dedicada a documentar y preservar información sobre la música dominicana y las personas que la crean.",
+        "reference": "El sitio web proporciona información de referencia, como perfiles de artistas, información de grabaciones, detalles de publicaciones musicales, créditos, premios, información histórica y enlaces a plataformas de terceros.",
         "noHosting": "Mangulina no aloja, transmite, vende, distribuye ni proporciona copias descargables de grabaciones musicales protegidas por derechos de autor."
       },
       "policy": {
-        "title": "Política de Derechos de Autor",
-        "respect": "Respetamos los derechos de propiedad intelectual de artistas, autores de canciones, compositores, editores, sellos discográficos, fotógrafos y todos los demás titulares de derechos.",
+        "title": "Política de derechos de autor",
+        "respect": "Respetamos los derechos de propiedad intelectual de artistas, compositores, autores, editoras musicales, sellos discográficos, fotógrafos y todos los demás titulares de derechos.",
         "action": "Si tenemos conocimiento de material que infringe derechos de autor u otros derechos de propiedad intelectual, revisaremos el asunto de inmediato y tomaremos las medidas correspondientes cuando sea necesario.",
         "goal": "Nuestro objetivo es preservar y organizar información sobre la música dominicana a la vez que respetamos los derechos de los creadores y titulares de derechos."
       },
       "thirdParty": {
-        "title": "Contenido de Terceros",
+        "title": "Contenido de terceros",
         "introduction": "Mangulina puede mostrar o hacer referencia a información obtenida de fuentes disponibles públicamente, incluida la siguiente:",
         "items": {
           "artistInformation": "Nombres y biografías de artistas",
-          "metadata": "Metadatos de grabaciones y lanzamientos",
-          "titles": "Títulos de álbumes y lanzamientos",
-          "credits": "Créditos e información del personal",
+          "metadata": "Metadatos de grabaciones y publicaciones musicales",
+          "titles": "Títulos de álbumes, sencillos, EP y otras publicaciones musicales",
+          "credits": "Créditos e información de colaboradores",
           "images": "Imágenes disponibles públicamente",
-          "youtube": "Videos de YouTube insertados",
+          "youtube": "Videos de YouTube incrustados",
           "links": "Enlaces a servicios de streaming y sitios web oficiales"
         },
         "ownership": "Todas las marcas comerciales, logotipos, grabaciones, videos, imágenes y demás materiales protegidos por derechos de autor continúan siendo propiedad de sus respectivos titulares.",
         "noAffiliation": "La inclusión de información en Mangulina no implica propiedad, respaldo, patrocinio ni afiliación, salvo que se indique expresamente."
       },
       "claims": {
-        "title": "Reclamaciones por Infracción de Derechos de Autor",
+        "title": "Reclamaciones por infracción de derechos de autor",
         "introduction": "Si consideras que el material publicado en Mangulina infringe tus derechos de autor u otros derechos de propiedad intelectual, envía una notificación por escrito que contenga:",
         "items": {
           "contactInformation": "Tu nombre completo e información de contacto.",
@@ -684,8 +684,8 @@
         "review": "Revisaremos todas las contranotificaciones y podremos restaurar o modificar el material cuando corresponda y lo permita la ley aplicable."
       },
       "rightsHolders": {
-        "title": "Artistas y Titulares de Derechos",
-        "introduction": "Los artistas, representantes, editores, sellos discográficos, sucesiones y representantes autorizados también pueden comunicarse con nosotros para:",
+        "title": "Artistas y titulares de derechos",
+        "introduction": "Los artistas, representantes, editoras musicales, sellos discográficos, sucesiones y representantes autorizados también pueden comunicarse con nosotros para:",
         "items": {
           "correct": "Corregir información inexacta",
           "update": "Actualizar biografías de artistas o detalles de perfiles",
@@ -693,13 +693,13 @@
           "review": "Solicitar la revisión de imágenes u otro contenido",
           "attribution": "Tratar inquietudes sobre atribución"
         },
-        "collaboration": "Mangulina recibe con agrado la colaboración y procura mantener información exacta, respetuosa y bien documentada."
+        "collaboration": "Mangulina agradece la colaboración y procura mantener información exacta, respetuosa y bien documentada."
       },
       "goodFaith": {
-        "title": "Compromiso de Buena Fe",
+        "title": "Compromiso de buena fe",
         "mission": "La misión de Mangulina es educativa, informativa y cultural.",
         "commitment": "Nos comprometemos a preservar el patrimonio musical dominicano y, al mismo tiempo, respetar los derechos e intereses de artistas, creadores y titulares de derechos.",
-        "contact": "Si tienes preguntas relacionadas con esta política, comunícate con nosotros y haremos todo esfuerzo razonable para resolver las inquietudes de manera oportuna y profesional."
+        "contact": "Si tienes preguntas relacionadas con esta política, comunícate con nosotros y haremos todos los esfuerzos razonables para resolver las inquietudes de manera oportuna y profesional."
       },
       "contact": {
         "title": "Contacto",
@@ -711,28 +711,28 @@
   },
   "pages": {
     "releasesHub": {
-      "eyebrow": "Lanzamientos",
-      "heading": "Álbumes y Lanzamientos Dominicanos",
-      "description": "Explora álbumes, sencillos, EPs, recopilaciones, grabaciones en vivo y otros lanzamientos dominicanos de artistas de merengue, bachata, salsa, urbano, música cristiana y más.",
-      "featuredRelease": "Lanzamiento Destacado",
-      "viewRelease": "Ver Lanzamiento",
-      "mostViewed": "Lanzamientos Más Vistos",
-      "recent": "Lanzamientos Recientes",
+      "eyebrow": "Publicaciones Musicales",
+      "heading": "Álbumes y Otras Publicaciones Musicales Dominicanas",
+      "description": "Explora álbumes, sencillos, EP, recopilaciones, grabaciones en vivo y otras publicaciones musicales dominicanas de artistas de merengue, bachata, salsa, urbano, música cristiana y más.",
+      "featuredRelease": "Publicación Destacada",
+      "viewRelease": "Ver Publicación",
+      "mostViewed": "Publicaciones Más Vistas",
+      "recent": "Publicaciones Recientes",
       "browseByType": "Explorar por Tipo",
       "browseByDecade": "Explorar por Décadas",
       "essential": "Álbumes Dominicanos Esenciales",
       "essentialEmpty": "La lista editorial de álbumes esenciales está en preparación.",
-      "releaseCount": "{count, plural, one {# lanzamiento} other {# lanzamientos}}"
+      "releaseCount": "{count, plural, one {# publicación} other {# publicaciones}}"
     },
     "genreDetail": {
       "learnMoreHistory": "Conoce más sobre la historia de {genre}...",
       "topArtists": "Mejores Artistas de {genre}",
       "connectedArtists": "Artistas Conectados con {genre}",
       "popularSongs": "Canciones Populares",
-      "importantReleases": "Álbumes / Lanzamientos Importantes",
-      "releasesIn": "Lanzamientos en {genre}",
-      "mostViewedReleases": "Lanzamientos Más Vistos",
-      "recentReleases": "Lanzamientos Recientes",
+      "importantReleases": "Álbumes y Otras Publicaciones Musicales Importantes",
+      "releasesIn": "Publicaciones Musicales de {genre}",
+      "mostViewedReleases": "Publicaciones Más Vistas",
+      "recentReleases": "Publicaciones Recientes",
       "recentlyAdded": "Agregados Recientemente",
       "history": "Historia de {genre}",
       "relatedGenres": "Géneros y Estilos Relacionados",
@@ -744,7 +744,7 @@
       "loadError": "No es posible cargar las canciones.",
       "loadMoreError": "No es posible cargar más canciones.",
       "noCover": "Sin portada",
-      "releaseFallback": "Lanzamiento",
+      "releaseFallback": "Publicación Musical",
       "viewAria": "Ver {title}"
     },
     "login": {
@@ -754,49 +754,49 @@
       "backToHomepage": "Volver a Inicio"
     },
     "releases": {
-      "featuredComingSoon": "Un lanzamiento destacado aparecerá aquí pronto.",
-      "releaseDetails": "Detalles del Lanzamiento",
+      "featuredComingSoon": "Una publicación destacada aparecerá aquí pronto.",
+      "releaseDetails": "Detalles de la Publicación",
       "trackListing": "Lista de Pistas",
-      "noTracksAvailable": "No hay pistas disponibles para este lanzamiento aún.",
-      "noReleases": "Aún no hay lanzamientos disponibles.",
+      "noTracksAvailable": "Aún no hay pistas disponibles para esta publicación.",
+      "noReleases": "Aún no hay publicaciones disponibles.",
       "by": "por",
-      "notFoundTitle": "Lanzamiento No Encontrado",
-      "notFoundDescription": "Este lanzamiento no está disponible en la Base de Datos de Música Dominicana.",
+      "notFoundTitle": "Publicación No Encontrada",
+      "notFoundDescription": "Esta publicación musical no está disponible en la Base de Datos de Música Dominicana.",
       "metadataDescription": "Lista de pistas, detalles y créditos de {title} en la Base de Datos de Música Dominicana.",
       "moreFromArtist": "Más de este Artista",
       "moreFromDecade": "Más de los {decade}",
       "moreInGenre": "Más de {genre}",
-      "facts": {"type": "Tipo", "release": "Lanzamiento", "label": "Sello", "country": "País", "catalog": "Catálogo", "barcode": "Código de Barras"}
+      "facts": {"type": "Tipo", "release": "Fecha de Publicación", "label": "Sello", "country": "País", "catalog": "Catálogo", "barcode": "Código de Barras"}
     },
     "about": {
       "metadataTitle": "Acerca de",
-      "metadataDescription": "Mangulina es una base de datos curada de música dominicana dedicada a preservar y documentar artistas, canciones, lanzamientos, créditos, géneros e historia musical dominicana.",
+      "metadataDescription": "Mangulina es una base de datos de música dominicana seleccionada y revisada editorialmente, dedicada a preservar y documentar artistas, canciones, publicaciones musicales, créditos, géneros e historia musical dominicana.",
       "eyebrow": "Base de Datos de Música Dominicana",
-      "title": "Acerca de Mangulina™",
-      "heroDescription": "Mangulina es una base de datos curada de música dominicana dedicada a preservar, documentar y celebrar a los artistas, canciones, grabaciones, lanzamientos, créditos e historias que dan forma a la música dominicana.",
+      "title": "Mangulina™",
+      "heroDescription": "Mangulina es una base de datos de música dominicana seleccionada y revisada editorialmente, dedicada a preservar, documentar y celebrar a los artistas, canciones, grabaciones, publicaciones musicales, créditos e historias que dan forma a la música dominicana.",
       "missionTitle": "Nuestra Misión",
       "missionReference": "Construir la referencia más completa y confiable de la música dominicana, preservando su historia, documentando a sus creadores y haciendo que su legado cultural sea más accesible para todos.",
       "missionAudience": "Mangulina sirve a artistas, investigadores, historiadores, coleccionistas, educadores, desarrolladores, periodistas y amantes de la música que buscan información estructurada y confiable sobre la música dominicana.",
-      "missionBelief": "Creemos que la música dominicana merece un hogar dedicado donde su gente, grabaciones, lanzamientos y logros puedan preservarse, descubrirse y apreciarse a través de las generaciones.",
+      "missionBelief": "Creemos que la música dominicana merece un hogar dedicado donde su gente, grabaciones, publicaciones musicales y logros puedan preservarse, descubrirse y apreciarse a través de las generaciones.",
       "whyTitle": "Por Qué Mangulina",
       "whyName": "El nombre Mangulina se inspira en el género musical tradicional dominicano del mismo nombre, un ritmo alegre con profundas raíces en el patrimonio cultural del país.",
       "whyPurpose": "Aunque la plataforma abarca todos los géneros y épocas de la música dominicana, el nombre rinde homenaje a las tradiciones que ayudaron a formar la identidad musical de la nación. Refleja el propósito más amplio del proyecto: preservar y celebrar la música dominicana en todas sus formas.",
       "coverTitle": "Lo Que Documentamos",
-      "coverDescription": "Mangulina está construyendo una referencia creciente de la música dominicana que conecta artistas, grabaciones, lanzamientos, colaboradores, géneros y contexto histórico en un solo lugar de búsqueda.",
+      "coverDescription": "Mangulina está construyendo una referencia creciente de la música dominicana que conecta artistas, grabaciones, publicaciones musicales, colaboradores, géneros y contexto histórico en un solo lugar de búsqueda.",
       "coverItems": {
         "artists": "Artistas de cada región y época de la música dominicana",
-        "recordings": "Grabaciones con créditos, clasificaciones de género y detalles de lanzamiento",
-        "albums": "Álbumes y lanzamientos con listas completas de canciones",
+        "recordings": "Grabaciones con créditos, clasificaciones de género y datos de publicación",
+        "albums": "Álbumes, sencillos, EP y otras publicaciones musicales con listas completas de canciones",
         "creators": "Compositores, letristas, productores, músicos y otros colaboradores",
         "history": "Premios, historia musical y contexto cultural",
         "sources": "Enlaces a plataformas de streaming y fuentes oficiales"
       },
       "principlesTitle": "Principios Editoriales",
-      "principlesReview": "Mangulina se cura con revisión humana. Organizamos la información cuidadosamente, verificamos los detalles siempre que es posible y aceptamos correcciones de artistas, representantes, investigadores, coleccionistas, colaboradores y el público.",
+      "principlesReview": "La información de Mangulina se selecciona y revisa editorialmente con intervención humana. Organizamos la información cuidadosamente, verificamos los detalles siempre que es posible y aceptamos correcciones de artistas, representantes, investigadores, coleccionistas, colaboradores y el público.",
       "principlesRole": "Nuestro objetivo no es reemplazar los sitios oficiales de artistas, plataformas de streaming, sellos discográficos, editoras ni titulares de derechos. Buscamos conectar información, mejorar el descubrimiento y ayudar a preservar la historia de la música dominicana.",
       "principlesEvolution": "La información musical evoluciona constantemente. A medida que aparece nueva información, las entradas pueden actualizarse, ampliarse, corregirse o refinarse.",
       "principleItems": {
-        "reviewed": "Información musical curada y revisada por personas",
+        "reviewed": "Información musical seleccionada y revisada editorialmente",
         "corrections": "Aceptamos correcciones de artistas, familias, investigadores y el público",
         "respect": "Respeto por artistas, titulares de derechos, sellos y fuentes oficiales",
         "heritage": "Enfoque en preservar el patrimonio musical dominicano para futuras generaciones"
@@ -806,11 +806,11 @@
       "artistNoteRights": "No alojamos, vendemos, transmitimos ni distribuimos música. No reclamamos propiedad sobre grabaciones, arte, letras, marcas u otras obras creativas. Nuestra función se limita a organizar y presentar información y metadatos musicales con fines educativos, informativos y de referencia.",
       "artistNoteContact": "Si eres artista, representante, titular de derechos o familiar y deseas actualizar, corregir, enriquecer o conversar sobre información que aparece en el sitio, te invitamos a contactarnos.",
       "discoveryTitle": "Creado para Descubrir",
-      "discoveryDescription": "Mangulina ayuda a descubrir conexiones en la música dominicana —artistas, grabaciones, lanzamientos, géneros, colaboradores, premios y contexto histórico— mediante un catálogo estructurado y fácil de explorar.",
+      "discoveryDescription": "Mangulina ayuda a descubrir conexiones en la música dominicana —artistas, grabaciones, publicaciones musicales, géneros, colaboradores, premios y contexto histórico— mediante un catálogo estructurado y fácil de explorar.",
       "archiveTitle": "Un Archivo Vivo",
       "archiveDescription": "La música dominicana continúa evolucionando cada día. Mangulina está diseñada como un archivo vivo que crece junto con la música mediante investigación, contribuciones de la comunidad, colaboración de artistas y revisión editorial continua.",
       "involvedTitle": "Participa",
-      "involvedWelcome": "Mangulina recibe la participación de artistas, investigadores, historiadores, coleccionistas, profesionales de la música y aficionados que comparten el interés por preservar el patrimonio musical dominicano.",
+      "involvedWelcome": "Mangulina está abierta a la colaboración de artistas, investigadores, historiadores, coleccionistas, profesionales de la música y aficionados que comparten el interés de preservar y documentar el patrimonio musical dominicano.",
       "involvedInvitation": "Si deseas enviar correcciones, aportar información, enriquecer perfiles de artistas, proporcionar investigación histórica o convertirte en colaborador, nos encantaría saber de ti.",
       "contactButton": "Contactar a Mangulina",
       "contributorsButton": "Colaboradores",
@@ -826,7 +826,7 @@
       "helpTitle": "¿Cómo Podemos Ayudarte?",
       "helpDescription": "Elige el área de contacto que mejor corresponda a tu consulta para que llegue al equipo adecuado de Mangulina.",
       "cards": {
-        "artists": {"title": "Artistas y Representantes", "description": "¿Necesitas actualizar una biografía, agregar lanzamientos, enviar correcciones, proporcionar información oficial o enriquecer un perfil de artista?", "button": "Contactar Soporte de Artistas"},
+        "artists": {"title": "Artistas y Representantes", "description": "¿Necesitas actualizar una biografía o discografía, enviar correcciones, proporcionar información oficial o enriquecer un perfil de artista?", "button": "Contactar Soporte de Artistas"},
         "correction": {"title": "Enviar una Corrección", "description": "¿Encontraste información incorrecta, créditos faltantes, fechas equivocadas u otros problemas de datos?", "button": "Reportar un Problema"},
         "contributor": {"title": "Ser Colaborador", "description": "¿Te interesa ayudar a preservar la música dominicana mediante investigación, documentación, información histórica o revisión editorial?", "button": "Ser Colaborador"},
         "partnerships": {"title": "Medios y Alianzas", "description": "Consultas de prensa, instituciones educativas, organizaciones culturales, archivos y oportunidades de colaboración.", "button": "Contactar Alianzas"},
@@ -848,7 +848,7 @@
       "metadataDescription": "Conoce a los colaboradores que ayudan a Mangulina, la Base de Datos de Música Dominicana, a preservar, documentar y enriquecer la música dominicana.",
       "eyebrow": "Colaboradores",
       "title": "Personas que Ayudan a Preservar la Música Dominicana",
-      "description": "Mangulina se construye mediante investigación, revisión, corrección y colaboración. Esta página reconoce a quienes ayudan a documentar la música dominicana, sus artistas, grabaciones, lanzamientos, créditos e historia cultural.",
+      "description": "Mangulina se construye mediante investigación, revisión, corrección y colaboración. Esta página reconoce a quienes ayudan a documentar la música dominicana, sus artistas, grabaciones, publicaciones musicales, créditos e historia cultural.",
       "currentTitle": "Colaboradores Actuales",
       "empty": "Los colaboradores aparecerán aquí próximamente.",
       "website": "Sitio Web",
@@ -856,16 +856,16 @@
       "communityWelcome": "Mangulina recibe a colaboradores, investigadores, coleccionistas, artistas, músicos, historiadores y amantes de la música que desean ayudar a preservar el patrimonio musical dominicano.",
       "communityWork": "Los colaboradores pueden ayudar revisando perfiles de artistas, corrigiendo discografías, identificando créditos, documentando historia regional o proporcionando referencias confiables.",
       "joinTitle": "Ser Colaborador",
-      "joinKnowledge": "Si tienes conocimientos sobre música dominicana, artistas, grabaciones, créditos, estilos regionales, contexto histórico o lanzamientos poco comunes, a Mangulina le encantaría saber de ti.",
+      "joinKnowledge": "Si tienes conocimientos sobre música dominicana, artistas, grabaciones, créditos, estilos regionales, contexto histórico o publicaciones musicales poco comunes, a Mangulina le encantaría saber de ti.",
       "joinImpact": "Los colaboradores ayudan a que la música dominicana sea más fácil de descubrir, estudiar y preservar para las generaciones futuras.",
       "contactButton": "Contactar a Mangulina"
     },
     "discover": {
       "metadataTitle": "Descubre la Música Dominicana",
-      "metadataDescription": "Explora Mangulina, la Base de Datos de Música Dominicana. Descubre artistas, canciones, lanzamientos, géneros, regiones, creadores, cumpleaños, música cristiana, leyendas y artistas emergentes dominicanos.",
+      "metadataDescription": "Explora Mangulina, la Base de Datos de Música Dominicana. Descubre artistas, canciones, publicaciones musicales, géneros, regiones, creadores, cumpleaños, música cristiana, leyendas y artistas emergentes dominicanos.",
       "eyebrow": "Explora Mangulina",
       "title": "Descubre la Música Dominicana",
-      "description": "Explora la Base de Datos de Música Dominicana a través de artistas, canciones, lanzamientos, géneros, regiones, creadores, cumpleaños y categorías culturales.",
+      "description": "Explora la Base de Datos de Música Dominicana a través de artistas, canciones, publicaciones musicales, géneros, regiones, creadores, cumpleaños y categorías culturales.",
       "artistsTitle": "Artistas",
       "creatorsTitle": "Creadores",
       "musicTitle": "Música",
@@ -875,29 +875,29 @@
       "links": {
         "singers": "Cantantes", "christianArtists": "Artistas Cristianos", "legends": "Leyendas", "emergingArtists": "Artistas Emergentes", "mostAwarded": "Artistas Más Premiados", "birthdays": "Cumpleaños", "instrumentalClassical": "Instrumental y Clásica",
         "composers": "Compositores", "songwriters": "Autores de Canciones", "lyricists": "Letristas", "djs": "DJs", "musicians": "Músicos", "producers": "Productores",
-        "songs": "Canciones", "releases": "Lanzamientos", "genres": "Géneros", "home": "Inicio", "about": "Acerca de", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de Privacidad", "terms": "Términos de Uso", "dmca": "Derechos de Autor y DMCA"
+        "songs": "Canciones", "releases": "Publicaciones", "genres": "Géneros", "home": "Inicio", "about": "Acerca de", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de Privacidad", "terms": "Términos de Uso", "dmca": "Derechos de Autor y DMCA"
       },
       "genreLabels": {"worship": "Adoración", "merengue": "Merengue", "bachata": "Bachata", "urban": "Urbano", "salsa": "Salsa", "ballads": "Baladas", "pop": "Pop", "rock": "Rock", "reggae": "Reggae", "jazz": "Jazz", "electronic": "Electrónica", "instrumental": "Instrumental", "folklore": "Folclore", "fusion": "Fusión"}
     },
     "releaseListing": {
-      "eyebrow": "Lanzamientos",
-      "paginationAria": "Paginación de lanzamientos",
+      "eyebrow": "Publicaciones Musicales",
+      "paginationAria": "Paginación de publicaciones",
       "pageOf": "Página {page} de {total}",
-      "showing": "Mostrando {count} de {total} lanzamientos",
+      "showing": "Mostrando {count} de {total} publicaciones",
       "homeBreadcrumb": "Inicio",
-      "releasesBreadcrumb": "Lanzamientos",
-      "decadeTitle": "Lanzamientos Dominicanos de los {decade}",
-      "decadeDescription": "Explora lanzamientos dominicanos de los {decade}, incluidos álbumes, sencillos, EPs, recopilaciones, grabaciones en vivo y más.",
-      "mostViewedTitle": "Lanzamientos Dominicanos Más Vistos",
-      "mostViewedDescription": "Explora los lanzamientos dominicanos que reciben más atención de los visitantes de Mangulina.",
-      "recentTitle": "Lanzamientos Dominicanos Recientes",
-      "recentDescription": "Explora álbumes, sencillos, EPs, recopilaciones, grabaciones en vivo y otros lanzamientos dominicanos recientes.",
+      "releasesBreadcrumb": "Publicaciones",
+      "decadeTitle": "Publicaciones Musicales Dominicanas de los {decade}",
+      "decadeDescription": "Explora publicaciones musicales dominicanas de los {decade}, incluidos álbumes, sencillos, EP, recopilaciones, grabaciones en vivo y más.",
+      "mostViewedTitle": "Publicaciones Musicales Dominicanas Más Vistas",
+      "mostViewedDescription": "Explora las publicaciones musicales dominicanas que reciben más atención de los visitantes de Mangulina.",
+      "recentTitle": "Publicaciones Musicales Dominicanas Recientes",
+      "recentDescription": "Explora álbumes, sencillos, EP, recopilaciones, grabaciones en vivo y otras publicaciones musicales dominicanas recientes.",
       "essentialTitle": "Álbumes Dominicanos Esenciales",
-      "essentialDescription": "Una guía editorial de álbumes y lanzamientos dominicanos de importancia cultural en Mangulina.",
+      "essentialDescription": "Una guía editorial de álbumes y otras publicaciones musicales dominicanas de importancia cultural en Mangulina.",
       "types": {
         "albums": {"title": "Álbumes Dominicanos", "description": "Explora álbumes dominicanos de merengue, bachata, salsa, urbano, adoración y otros estilos en Mangulina."},
         "singles": {"title": "Sencillos Dominicanos", "description": "Explora sencillos dominicanos de artistas de escenas clásicas, contemporáneas y emergentes."},
-        "eps": {"title": "EPs Dominicanos", "description": "Explora EPs dominicanos y proyectos breves documentados en la Base de Datos de Música Dominicana."},
+        "eps": {"title": "EP Dominicanos", "description": "Explora EP dominicanos y proyectos breves documentados en la Base de Datos de Música Dominicana."},
         "compilations": {"title": "Recopilaciones Dominicanas", "description": "Descubre recopilaciones, colecciones y proyectos de múltiples artistas dominicanos en Mangulina."},
         "live": {"title": "Álbumes Dominicanos en Vivo", "description": "Explora álbumes en vivo y grabaciones de conciertos dominicanos del catálogo de Mangulina."},
         "soundtracks": {"title": "Bandas Sonoras Dominicanas", "description": "Explora bandas sonoras dominicanas y música vinculada al cine, la televisión y el teatro."}
@@ -929,7 +929,7 @@
     "selectFeaturedArtist": "-- Selecciona Artista Destacado --",
     "updating": "Actualizando...",
     "updateSpotlight": "Actualizar Destacado",
-    "releaseTypeCounts": "Los recuentos de tipo de lanzamiento aún no están disponibles.",
+    "releaseTypeCounts": "Los recuentos por tipo de publicación aún no están disponibles.",
     "decadeCounts": "Los recuentos de décadas aún no están disponibles."
   },
   "admin": {
@@ -942,7 +942,7 @@
       "artists": {
         "title": "Editor de Perfil de Artista",
         "eyebrow": "Artistas",
-        "description": "Crear, revisar y actualizar perfiles de artistas curados, biografías, imágenes y clasificación editorial."
+        "description": "Crear, revisar y actualizar perfiles de artistas seleccionados y revisados editorialmente, biografías, imágenes y clasificación editorial."
       },
       "songs": {
         "title": "Editor de Canciones / Grabaciones",
@@ -952,12 +952,12 @@
       "genres": {
         "title": "Gestor de Páginas de Género",
         "eyebrow": "Géneros",
-        "description": "Curar páginas de destino de género, asignaciones de género primario, alias, descripciones y notas culturales."
+        "description": "Gestionar editorialmente páginas de destino de género, asignaciones de género primario, alias, descripciones y notas culturales."
       },
       "discography": {
         "title": "Gestor de Discografía",
         "eyebrow": "Discografía",
-        "description": "Agregar y actualizar lanzamientos de artistas, fechas de lanzamiento, sellos discográficos, detalles de catálogo y metadatos de discografía."
+        "description": "Agregar y actualizar publicaciones de artistas, fechas de publicación, sellos discográficos, detalles de catálogo y metadatos de discografía."
       },
       "awards": {
         "title": "Gestor de Premios",
@@ -988,7 +988,7 @@
     "ui": {
       "header": "Mangulina Admin",
       "portal": "Portal de Administración",
-      "description": "Herramientas editoriales para mantener la base de datos de música dominicana curada de Mangulina.",
+      "description": "Herramientas editoriales para mantener la base de datos de música dominicana seleccionada y revisada editorialmente de Mangulina.",
       "statusOpen": "Abierto",
       "statusComingSoon": "Próximamente",
       "goToTool": "Ir a herramienta",
@@ -1021,9 +1021,9 @@
       "saveGenre": "Guardar Género",
       "save": "Guardar",
       "add": "Agregar",
-      "updateRelease": "Actualizar Lanzamiento",
-      "addRelease": "Agregar Lanzamiento",
-      "cancelEdit": "Cancelar edición de lanzamiento",
+      "updateRelease": "Actualizar Publicación",
+      "addRelease": "Agregar Publicación",
+      "cancelEdit": "Cancelar edición de publicación",
       "openLink": "Abrir ↗",
       "approve": "Aprobar",
       "reject": "Rechazar",
@@ -1231,13 +1231,13 @@
     },
     "discography": {
       "title": "Gestor de Discografía",
-      "description": "Agrega y actualiza lanzamientos asociados a perfiles de artistas.",
+      "description": "Agrega y actualiza publicaciones asociadas a perfiles de artistas.",
       "selectArtistHeading": "Seleccionar Artista",
       "searchPlaceholder": "Buscar artista...",
-      "releasesLoaded": "{count} lanzamientos cargados",
-      "releasesHeading": "Lanzamientos",
-      "selectArtistFirst": "Selecciona un artista para cargar lanzamientos.",
-      "noReleases": "Aún no hay lanzamientos guardados para este artista.",
+      "releasesLoaded": "{count} publicaciones cargadas",
+      "releasesHeading": "Publicaciones",
+      "selectArtistFirst": "Selecciona un artista para cargar publicaciones.",
+      "noReleases": "Aún no hay publicaciones guardadas para este artista.",
       "releaseMetadata": "{year} - {type} - {count} pistas",
       "noYear": "Sin año",
       "typeAlbum": "Álbum",
@@ -1249,12 +1249,12 @@
       "statusOfficial": "Oficial",
       "statusPromotion": "Promoción",
       "statusBootleg": "Bootleg",
-      "statusPseudoRelease": "Pseudo-Lanzamiento",
+      "statusPseudoRelease": "Pseudopublicación",
       "statusWithdrawn": "Retirado",
-      "editHeading": "Editar Lanzamiento",
-      "addHeading": "Agregar Lanzamiento",
-      "formDescription": "Metadatos a nivel de lanzamiento. La edición de pistas se agregará como la siguiente capa.",
-      "titleRequired": "El título del lanzamiento es obligatorio."
+      "editHeading": "Editar Publicación",
+      "addHeading": "Agregar Publicación",
+      "formDescription": "Metadatos de la publicación. La edición de pistas se agregará como la siguiente capa.",
+      "titleRequired": "El título de la publicación es obligatorio."
     },
     "platformLinks": {
       "title": "Revisión de Enlaces de Plataforma",
@@ -1303,8 +1303,8 @@
       "savingSubgenre": "Guardando subgénero...",
       "subgenreSaved": "Subgénero guardado.",
       "loadingSubgenres": "Cargando subgéneros...",
-      "releaseUpdated": "Lanzamiento actualizado.",
-      "releaseAdded": "Lanzamiento agregado.",
+      "releaseUpdated": "Publicación actualizada.",
+      "releaseAdded": "Publicación agregada.",
       "processing": "Procesando...",
       "loading": "Cargando…",
       "loadingLinks": "Cargando enlaces de plataforma…",
@@ -1334,7 +1334,7 @@
       "savingSubgenre": "Error al guardar subgénero: {error}",
       "loadingArtists": "Error al cargar artistas: {error}",
       "loadingDiscography": "Error al cargar discografía del artista: {error}",
-      "savingRelease": "Error al guardar lanzamiento: {error}",
+      "savingRelease": "Error al guardar la publicación: {error}",
       "loadingLinks": "Error al cargar enlaces de plataforma: {error}",
       "updatingLink": "Error al actualizar enlace de plataforma: {error}",
       "addingLink": "Error al agregar enlace de plataforma: {error}"
@@ -1452,12 +1452,12 @@
       "source": "Fuente",
       "genreName": "Nombre del Género",
       "homeFeatured": "Destacado en Inicio",
-      "releaseTitle": "Título del Lanzamiento",
-      "releaseType": "Tipo de Lanzamiento",
-      "releaseDate": "Fecha de Lanzamiento",
-      "releaseYear": "Año de Lanzamiento",
+      "releaseTitle": "Título de la Publicación",
+      "releaseType": "Tipo de Publicación",
+      "releaseDate": "Fecha de Publicación",
+      "releaseYear": "Año de Publicación",
       "sortYear": "Año de Ordenamiento",
-      "releaseStatus": "Estado del Lanzamiento",
+      "releaseStatus": "Estado de la Publicación",
       "label": "Sello Discográfico",
       "catalogNumber": "Número de Catálogo",
       "barcode": "Código de Barras",
@@ -1484,7 +1484,7 @@
       "selectArtist": "-- Selecciona Artista --",
       "noCategory": "-- Sin Categoría --",
       "select": "— Seleccionar —",
-      "disambiguation": "Remasterizado, edición en vivo, lanzamiento alternativo...",
+      "disambiguation": "Remasterizado, edición en vivo, publicación alternativa...",
       "countryDefault": "DO",
       "confidence": "ej. 0.85",
       "recordingTitle": "Escribe un título de grabación…",
