@@ -131,7 +131,7 @@ export default async function DmcaPage() {
           </div>
         </section>
 
-        <section className="rounded-3xl border border-[#8B0000]/15 bg-[#8B0000]/[0.03] p-8 shadow-sm sm:p-10">
+        <section className="rounded-3xl border border-[#8B0000]/15 bg-[#8B0000]/3 p-8 shadow-sm sm:p-10">
           <SectionEyebrow>{t("rightsHolders.title")}</SectionEyebrow>
 
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-gray-700">
@@ -163,7 +163,7 @@ export default async function DmcaPage() {
           <div className="max-w-4xl space-y-5 text-lg leading-relaxed text-gray-700">
             <p>{t("contact.description")}</p>
 
-            <div className="rounded-2xl border border-[#002D62]/10 bg-[#002D62]/[0.03] p-6">
+            <div className="rounded-2xl border border-[#002D62]/10 bg-[#002D62]/3 p-6">
               <p className="font-semibold text-[#002D62]">
                 copyright@mangulina.do
               </p>

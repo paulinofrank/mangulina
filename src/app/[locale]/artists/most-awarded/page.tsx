@@ -1,7 +1,7 @@
 import ArtistDirectory from "@/components/artists/ArtistDirectory";
 import {
+  getAwardedArtistRankings,
   getAwardFilterOptions,
-  getRankedAwardedArtistIds,
 } from "@/lib/artistAwards";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -25,9 +25,10 @@ export default async function MostAwardedArtistsPage({
     ? award
     : undefined;
   const [type, id] = selectedAward?.split(":") ?? [];
-  const rankedArtistIds = await getRankedAwardedArtistIds(
+  const awardRankings = await getAwardedArtistRankings(
     type === "award" || type === "category" ? { type, id } : undefined,
   );
+  const rankedArtistIds = awardRankings.map((ranking) => ranking.artist_id);
 
   return (
     <ArtistDirectory
@@ -36,6 +37,7 @@ export default async function MostAwardedArtistsPage({
       hideGenreFilter
       hideProvinceSelector
       rankedArtistIds={rankedArtistIds}
+      awardRankings={awardRankings}
       awardOptions={awardOptions}
     />
   );

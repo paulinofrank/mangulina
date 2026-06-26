@@ -14,7 +14,7 @@ import type {
   ArtistSubgenreOption,
   FilteredArtistGenreOptions,
 } from "@/lib/artistGenreOptions";
-import type { AwardFilterOption } from "@/lib/artistAwards";
+import type { AwardedArtistRanking, AwardFilterOption } from "@/lib/artistAwards";
 import { isValidProvinceName, provinceToSlug } from "@/lib/provinceSlug";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
 
@@ -48,6 +48,7 @@ type ArtistDirectoryProps = {
   mobileTitleHighlight?: string;
   fixedArtistStatus?: "legend" | "emerging";
   rankedArtistIds?: string[];
+  awardRankings?: AwardedArtistRanking[];
   occupationOptions?: Array<{ value: string; label: string }>;
   instrumentOptions?: Array<{ value: string; label: string }>;
   rolePageOptions?: Array<{ href: string; label: string }>;
@@ -294,6 +295,7 @@ function ArtistsContent({
   mobileTitleHighlight,
   fixedArtistStatus,
   rankedArtistIds,
+  awardRankings = [],
   occupationOptions = [],
   instrumentOptions = [],
   rolePageOptions = [],
@@ -354,6 +356,17 @@ function ArtistsContent({
   const sort = searchParams.get("sort") ?? "views";
   const currentPage = parseInt(searchParams.get("page") ?? "1");
   const rankedArtistIdsKey = rankedArtistIds?.join(",") ?? "";
+  const awardRankingsKey = awardRankings
+    .map(
+      (ranking) =>
+        `${ranking.artist_id}:${ranking.award_count}:${ranking.nomination_count}`,
+    )
+    .join(",");
+  const awardRankingsById = useMemo(
+    () => new Map(awardRankings.map((ranking) => [ranking.artist_id, ranking])),
+    [awardRankingsKey, awardRankings],
+  );
+  const showAwardRankings = awardRankings.length > 0;
   const hideGenreSelector =
     hideGenreFilter || Boolean(filteredGenreOptions && genreOptions.length === 0);
   const showProvinceControl =
@@ -366,7 +379,7 @@ function ArtistsContent({
     (instrumentOptions.length > 0 ? 1 : 0) +
     (rolePageOptions.length > 0 ? 1 : 0) +
     (awardOptions.length > 0 ? 1 : 0) +
-    3;
+    (showAwardRankings ? 2 : 3);
   const desktopGridClass =
     desktopControlCount === 6
       ? "grid-cols-6"
@@ -385,6 +398,26 @@ function ArtistsContent({
     : genreFilter
       ? `genre:${genreFilter}`
       : "";
+
+  const formatAwardRankingLabel = (ranking?: AwardedArtistRanking) => {
+    if (!ranking) return null;
+
+    const parts = [
+      t("artistDirectory.awardRanking.awards", {
+        count: ranking.award_count,
+      }),
+    ];
+
+    if (ranking.nomination_count > 0) {
+      parts.push(
+        t("artistDirectory.awardRanking.nominations", {
+          count: ranking.nomination_count,
+        }),
+      );
+    }
+
+    return parts.join(" · ");
+  };
 
   const subgenresByGenreId = useMemo(() => {
     return subgenreOptions.reduce((map, subgenre) => {
@@ -1079,20 +1112,22 @@ function ArtistsContent({
                 </select>
               )}
 
-              <select
-                onChange={(e) => {
-                  const params = new URLSearchParams(searchParams.toString());
-                  params.set("sort", e.target.value);
-                  params.set("page", "1");
-                  router.push(routeWithParams(params));
-                }}
-                value={sort}
-                className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
-              >
-                <option value="views">{t("sortOptions.sortedByViews")}</option>
-                <option value="name">{t("sortOptions.nameAZ")}</option>
-                <option value="newest">{t("sortOptions.newest")}</option>
-              </select>
+              {!showAwardRankings && (
+                <select
+                  onChange={(e) => {
+                    const params = new URLSearchParams(searchParams.toString());
+                    params.set("sort", e.target.value);
+                    params.set("page", "1");
+                    router.push(routeWithParams(params));
+                  }}
+                  value={sort}
+                  className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
+                >
+                  <option value="views">{t("sortOptions.sortedByViews")}</option>
+                  <option value="name">{t("sortOptions.nameAZ")}</option>
+                  <option value="newest">{t("sortOptions.newest")}</option>
+                </select>
+              )}
 
               <button className="flex h-9 w-full min-w-0 cursor-pointer items-center justify-center gap-2 rounded-xl border border-black/10 px-3 text-sm text-gray-600">
                 <SlidersHorizontal size={16} />
@@ -1257,21 +1292,23 @@ function ArtistsContent({
               </select>
             )}
 
-            <div className="grid grid-cols-3 gap-2">
-              <select
-                onChange={(e) => {
-                  const params = new URLSearchParams(searchParams.toString());
-                  params.set("sort", e.target.value);
-                  params.set("page", "1");
-                  router.push(routeWithParams(params));
-                }}
-                value={sort}
-                className="h-9 min-w-0 rounded-xl border border-black/10 bg-white px-2 text-xs text-gray-600 outline-none sm:text-sm"
-              >
-                <option value="views">{t("sortOptions.viewsMobile")}</option>
-                <option value="name">{t("sortOptions.nameAZ")}</option>
-                <option value="newest">{t("sortOptions.newest")}</option>
-              </select>
+            <div className={`grid gap-2 ${showAwardRankings ? "grid-cols-2" : "grid-cols-3"}`}>
+              {!showAwardRankings && (
+                <select
+                  onChange={(e) => {
+                    const params = new URLSearchParams(searchParams.toString());
+                    params.set("sort", e.target.value);
+                    params.set("page", "1");
+                    router.push(routeWithParams(params));
+                  }}
+                  value={sort}
+                  className="h-9 min-w-0 rounded-xl border border-black/10 bg-white px-2 text-xs text-gray-600 outline-none sm:text-sm"
+                >
+                  <option value="views">{t("sortOptions.viewsMobile")}</option>
+                  <option value="name">{t("sortOptions.nameAZ")}</option>
+                  <option value="newest">{t("sortOptions.newest")}</option>
+                </select>
+              )}
               <button className="flex h-9 min-w-0 cursor-pointer items-center justify-center gap-1 rounded-xl border border-black/10 px-2 text-xs text-gray-600 sm:text-sm">
                 <SlidersHorizontal size={16} />
                 {t("buttons.filters", { count: activeFilters })}
@@ -1330,7 +1367,12 @@ function ArtistsContent({
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-4 sm:gap-5">
             {artists.map((artist) => (
               <div key={artist.id} className="mx-auto w-[90%]">
-                <ArtistCard artist={artist} />
+                <ArtistCard artist={artist} showViews={!showAwardRankings} />
+                {showAwardRankings ? (
+                  <p className="mt-1 text-[11px] font-medium leading-tight text-[#8B0000]">
+                    {formatAwardRankingLabel(awardRankingsById.get(artist.id))}
+                  </p>
+                ) : null}
               </div>
             ))}
           </div>

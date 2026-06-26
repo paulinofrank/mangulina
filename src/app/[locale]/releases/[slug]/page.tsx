@@ -56,7 +56,7 @@ async function ReleaseHero({ release }: { release: ReleasePageData }) {
   return (
     <section className="rounded-2xl border border-black/5 bg-white/70 p-5 shadow-sm sm:p-6">
       <div className="grid gap-6 md:grid-cols-[220px_minmax(0,1fr)] md:items-center lg:grid-cols-[280px_minmax(0,1fr)]">
-        <div className="relative mx-auto aspect-square w-full max-w-[280px] overflow-hidden rounded-2xl border border-black/5 bg-gray-100 shadow-sm md:mx-0">
+        <div className="relative mx-auto aspect-square w-full max-w-70 overflow-hidden rounded-2xl border border-black/5 bg-gray-100 shadow-sm md:mx-0">
           {release.coverImageUrl ? (
             <ReleaseCoverImage
               src={release.coverImageUrl}

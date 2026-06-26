@@ -321,6 +321,10 @@
       "heading": "Most Awarded Dominican Artists",
       "intro": "Explore Dominican artists recognized through awards and nominations in Mangulina, the Dominican Music Database."
     },
+    "awardRanking": {
+      "awards": "{count, plural, one {# award} other {# awards}}",
+      "nominations": "{count, plural, one {# nomination} other {# nominations}}"
+    },
     "christian": {
       "heading": "Dominican Christian Artists",
       "intro": "Explore Dominican Christian artists across worship, merengue, bachata, contemporary Christian music, and other expressions of faith-based Dominican music in Mangulina, the Dominican Music Database."

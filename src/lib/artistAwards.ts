@@ -5,6 +5,13 @@ type ArtistAwardRow = {
   won: boolean | null;
 };
 
+export type AwardedArtistRanking = {
+  artist_id: string;
+  award_count: number;
+  nomination_count: number;
+  total_count: number;
+};
+
 export type AwardFilterOption = {
   value: string;
   label: string;
@@ -58,7 +65,9 @@ export async function getAwardFilterOptions(): Promise<AwardFilterOption[]> {
   ];
 }
 
-export async function getRankedAwardedArtistIds(filter?: AwardFilter) {
+export async function getAwardedArtistRankings(
+  filter?: AwardFilter,
+): Promise<AwardedArtistRanking[]> {
   const supabase = getSupabaseClient();
   let query = supabase
     .from("artist_awards")
@@ -104,11 +113,22 @@ export async function getRankedAwardedArtistIds(filter?: AwardFilter) {
       const rightCount = counts.get(right.id) ?? { wins: 0, nominations: 0 };
       return (
         rightCount.wins - leftCount.wins ||
-        rightCount.wins + rightCount.nominations -
-          (leftCount.wins + leftCount.nominations) ||
-        Number(right.views ?? 0) - Number(left.views ?? 0) ||
+        rightCount.nominations - leftCount.nominations ||
         left.name.localeCompare(right.name)
       );
     })
-    .map((artist) => artist.id);
+    .map((artist) => {
+      const count = counts.get(artist.id) ?? { wins: 0, nominations: 0 };
+      return {
+        artist_id: artist.id,
+        award_count: count.wins,
+        nomination_count: count.nominations,
+        total_count: count.wins + count.nominations,
+      };
+    });
+}
+
+export async function getRankedAwardedArtistIds(filter?: AwardFilter) {
+  const rankings = await getAwardedArtistRankings(filter);
+  return rankings.map((ranking) => ranking.artist_id);
 }

@@ -18,7 +18,7 @@
     "singers": "Cantantes",
     "christian": "Cristianos",
     "discover": "Explorar",
-    "releases": "Albumes",
+    "releases": "Álbumes",
     "about": "Sobre Mangulina",
     "contact": "Contacto",
     "contributors": "Colaboradores",
@@ -320,6 +320,10 @@
     "mostAwarded": {
       "heading": "Artistas Dominicanos Más Premiados",
       "intro": "Explora artistas dominicanos reconocidos a través de premios y nominaciones en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "awardRanking": {
+      "awards": "{count, plural, one {# premio} other {# premios}}",
+      "nominations": "{count, plural, one {# nominación} other {# nominaciones}}"
     },
     "christian": {
       "heading": "Artistas Cristianos Dominicanos",
@@ -744,9 +748,9 @@
       "eyebrow": "Publicaciones Musicales",
       "heading": "Álbumes y Otras Publicaciones Musicales Dominicanas",
       "description": "Explora álbumes, sencillos, EP, recopilaciones, grabaciones en vivo y otras publicaciones musicales dominicanas de artistas de merengue, bachata, salsa, urbano, música cristiana y más.",
-      "featuredRelease": "Publicación Destacada",
-      "viewRelease": "Ver Publicación",
-      "mostViewed": "Publicaciones Más Vistas",
+      "featuredRelease": "Álbum Destacado",
+      "viewRelease": "Ver Álbum",
+      "mostViewed": "Álbumes Más Vistos",
       "recent": "Publicaciones Recientes",
       "browseByType": "Explorar por Tipo",
       "browseByDecade": "Explorar por Décadas",
@@ -761,7 +765,7 @@
       "popularSongs": "Canciones Populares",
       "importantReleases": "Álbumes y Otras Publicaciones Musicales Importantes",
       "releasesIn": "Publicaciones Musicales de {genre}",
-      "mostViewedReleases": "Publicaciones Más Vistas",
+      "mostViewedReleases": "Álbumes Más Vistos",
       "recentReleases": "Publicaciones Recientes",
       "recentlyAdded": "Agregados Recientemente",
       "history": "Historia de {genre}",
@@ -910,15 +914,15 @@
       "genreLabels": {"worship": "Adoración", "merengue": "Merengue", "bachata": "Bachata", "urban": "Urbano", "salsa": "Salsa", "ballads": "Baladas", "pop": "Pop", "rock": "Rock", "reggae": "Reggae", "jazz": "Jazz", "electronic": "Electrónica", "instrumental": "Instrumental", "folklore": "Folclore", "fusion": "Fusión"}
     },
     "releaseListing": {
-      "eyebrow": "Publicaciones Musicales",
+      "eyebrow": "Lista de Álbumes",
       "paginationAria": "Paginación de publicaciones",
       "pageOf": "Página {page} de {total}",
       "showing": "Mostrando {count} de {total} publicaciones",
       "homeBreadcrumb": "Inicio",
       "releasesBreadcrumb": "Publicaciones",
-      "decadeTitle": "Publicaciones Musicales Dominicanas de los {decade}",
+      "decadeTitle": "Álbumes Dominicanos de los {decade}",
       "decadeDescription": "Explora publicaciones musicales dominicanas de los {decade}, incluidos álbumes, sencillos, EP, recopilaciones, grabaciones en vivo y más.",
-      "mostViewedTitle": "Publicaciones Musicales Dominicanas Más Vistas",
+      "mostViewedTitle": "Álbumes Dominicanos Más Vistos",
       "mostViewedDescription": "Explora las publicaciones musicales dominicanas que reciben más atención de los visitantes de Mangulina.",
       "recentTitle": "Publicaciones Musicales Dominicanas Recientes",
       "recentDescription": "Explora álbumes, sencillos, EP, recopilaciones, grabaciones en vivo y otras publicaciones musicales dominicanas recientes.",
