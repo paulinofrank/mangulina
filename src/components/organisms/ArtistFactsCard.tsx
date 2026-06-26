@@ -43,6 +43,34 @@ function formatLabel(value: string | null | undefined) {
     .replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
+function translateArtistType(
+  value: string | null | undefined,
+  t: ReturnType<typeof useTranslations>,
+) {
+  if (!value) return null;
+
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+
+  const key = `artistFields.types.${trimmed.toLowerCase()}`;
+  return t.has(key) ? t(key) : trimmed;
+}
+
+// Translates role-like artist values via next-intl without mutating DB values.
+// Unknown values are returned unchanged so editorial data remains visible.
+function translateRoleLikeValue(
+  value: string | null | undefined,
+  t: ReturnType<typeof useTranslations>,
+) {
+  if (!value) return null;
+
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+
+  const key = `artistFields.roles.${trimmed.toLowerCase().replace(/[\s-]+/g, "_")}`;
+  return t.has(key) ? t(key) : trimmed;
+}
+
 function getRealName(artist: ArtistProfileData) {
   const realName = [
     artist.first_name,
@@ -379,8 +407,8 @@ export default function ArtistFactsCard({
   const hasSocialLinks = Boolean(
     hasWebsiteLink ||
     (youtubeUrl && youtubeDisplay) ||
-      (facebookUrl && facebookUsername) ||
-      (instagramUrl && instagramUsername)
+    (facebookUrl && facebookUsername) ||
+    (instagramUrl && instagramUsername)
   );
 
   return (
@@ -408,15 +436,15 @@ export default function ArtistFactsCard({
 
         {!!artist.aliases?.length && <SectionDivider />}
 
-        <Field label={t("artist.artistType")}>{formatLabel(artist.type)}</Field>
+        <Field label={t("artist.artistType")}>{translateArtistType(artist.type, t)}</Field>
 
         <Field label={t("artist.statusLabel")}>{artistStatus}</Field>
 
-        <Field label={t("artist.primaryRole")}>{formatLabel(artist.primary_role)}</Field>
+        <Field label={t("artist.primaryRole")}>{translateRoleLikeValue(artist.primary_role, t)}</Field>
 
         {occupations.length > 0 && (
           <Field label={t("artist.otherRoles")}>
-            <InlineList values={occupations.map((occupation) => formatLabel(occupation))} />
+            <InlineList values={occupations.map((occupation) => translateRoleLikeValue(occupation, t))} />
           </Field>
         )}
 
@@ -433,8 +461,9 @@ export default function ArtistFactsCard({
             <InlineList values={artist.genres.map((genre) => formatLabel(genre))} />
           </Field>
         )}
-
+<SectionDivider />
         {hasSocialLinks && (
+          
           <LinkGroup>
             <SocialLink href={websiteUrl} label={t("artist.officialWebsite")} Icon={Globe}>
               {websiteDisplay}

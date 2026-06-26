@@ -118,7 +118,7 @@ export default async function ArtistProfile({ params }: PageProps) {
         ]}
       />
       <AnalyticsPageView eventType="artist_view" entityId={artist.id} />
-      <div className="mx-auto w-full max-w-[1780px] overflow-hidden px-4 py-10 sm:px-6 sm:py-12 2xl:px-10">
+      <div className="mx-auto w-full max-w-445 overflow-hidden px-4 py-10 sm:px-6 sm:py-12 2xl:px-10">
         <div className="grid min-w-0 items-start gap-8 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-10 2xl:grid-cols-[320px_minmax(0,1fr)]">
           <aside className="w-full min-w-0 space-y-6">
             <h1 className="text-center text-3xl font-black uppercase tracking-tight text-(--color-flagblue) min-[380px]:text-4xl sm:text-5xl lg:text-4xl">

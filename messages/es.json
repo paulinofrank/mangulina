@@ -174,6 +174,36 @@
     "experimental": "Experimental",
     "moreGenre": "Más Géneros"
   },
+  "artistFields": {
+    "types": {
+      "person": "Solista",
+      "duo": "Dúo",
+      "group": "Grupo"
+    },
+    "roles": {
+      "vocalist": "Vocalista",
+      "composer": "Compositor",
+      "musician": "Músico",
+      "singer": "Cantante",
+      "producer": "Productor",
+      "songwriter": "Autor",
+      "bandleader": "Director de orquesta",
+      "arranger": "Arreglista",
+      "guitarist": "Guitarrista",
+      "dj": "DJ",
+      "pianist": "Pianista",
+      "conductor": "Director musical",
+      "lyricist": "Letrista",
+      "percussionist": "Percusionista",
+      "saxophonist": "Saxofonista",
+      "violinist": "Violinista",
+      "accordionist": "Acordeonista",
+      "bassist": "Bajista",
+      "drummer": "Baterista",
+      "instrumentalist": "Instrumentista",
+      "singer_songwriter": "Cantautor"
+    }
+  },
   "artist": {
     "discography": "Discografía",
     "noDiscography": "Sin discografía disponible para este artista.",
@@ -862,10 +892,10 @@
     },
     "discover": {
       "metadataTitle": "Descubre la Música Dominicana",
-      "metadataDescription": "Explora Mangulina, la Base de Datos de Música Dominicana. Descubre artistas, canciones, publicaciones musicales, géneros, regiones, creadores, cumpleaños, música cristiana, leyendas y artistas emergentes dominicanos.",
+      "metadataDescription": "Explora Mangulina, la Base de Datos de Música Dominicana. Descubre artistas, canciones, álbumes, géneros, regiones, creadores, cumpleaños, música cristiana, leyendas y artistas emergentes dominicanos.",
       "eyebrow": "Explora Mangulina",
       "title": "Descubre la Música Dominicana",
-      "description": "Explora la Base de Datos de Música Dominicana a través de artistas, canciones, publicaciones musicales, géneros, regiones, creadores, cumpleaños y categorías culturales.",
+      "description": "Explora la Base de Datos de Música Dominicana a través de artistas, canciones, álbumes, géneros, regiones, creadores, cumpleaños y categorías culturales.",
       "artistsTitle": "Artistas",
       "creatorsTitle": "Creadores",
       "musicTitle": "Música",
@@ -875,7 +905,7 @@
       "links": {
         "singers": "Cantantes", "christianArtists": "Artistas Cristianos", "legends": "Leyendas", "emergingArtists": "Artistas Emergentes", "mostAwarded": "Artistas Más Premiados", "birthdays": "Cumpleaños", "instrumentalClassical": "Instrumental y Clásica",
         "composers": "Compositores", "songwriters": "Autores de Canciones", "lyricists": "Letristas", "djs": "DJs", "musicians": "Músicos", "producers": "Productores",
-        "songs": "Canciones", "releases": "Publicaciones", "genres": "Géneros", "home": "Inicio", "about": "Acerca de", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de privacidad", "terms": "Términos de uso", "dmca": "Derechos de Autor y DMCA"
+        "songs": "Canciones", "releases": "Albumes", "genres": "Géneros", "home": "Inicio", "about": "Acerca de", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de privacidad", "terms": "Términos de uso", "dmca": "Derechos de Autor y DMCA"
       },
       "genreLabels": {"worship": "Adoración", "merengue": "Merengue", "bachata": "Bachata", "urban": "Urbano", "salsa": "Salsa", "ballads": "Baladas", "pop": "Pop", "rock": "Rock", "reggae": "Reggae", "jazz": "Jazz", "electronic": "Electrónica", "instrumental": "Instrumental", "folklore": "Folclore", "fusion": "Fusión"}
     },
