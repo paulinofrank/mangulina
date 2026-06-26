@@ -53,6 +53,8 @@ type AdminArtist = Artist & {
   artist_tags?: string[] | null;
   aliases?: string[] | null;
   bio?: string | null;
+  bio_en?: string | null;
+  bio_es?: string | null;
   gender?: string | null;
   disambiguation?: string | null;
   ended?: boolean | null;
@@ -90,6 +92,8 @@ type ArtistForm = {
   gender: string;
   disambiguation: string;
   wikidata_id: string;
+  bio_en: string;
+  bio_es: string;
   bio: string;
   ended: boolean;
 };
@@ -322,6 +326,8 @@ const emptyForm: ArtistForm = {
   gender: "",
   disambiguation: "",
   wikidata_id: "",
+  bio_en: "",
+  bio_es: "",
   bio: "",
   ended: false,
 };
@@ -893,6 +899,8 @@ export default function AdminDashboard() {
       gender: artist.gender ?? "",
       disambiguation: artist.disambiguation ?? "",
       wikidata_id: artist.wikidata_id ?? "",
+      bio_en: artist.bio_en ?? "",
+      bio_es: artist.bio_es ?? "",
       bio: artist.bio ?? "",
       ended: Boolean(artist.ended),
     });
@@ -1206,6 +1214,8 @@ export default function AdminDashboard() {
       disambiguation: nullable(form.disambiguation),
       wikidata_id: nullable(form.wikidata_id),
 
+      bio_en: nullable(form.bio_en),
+      bio_es: nullable(form.bio_es),
       bio: nullable(form.bio),
       ended: form.ended,
     };
@@ -2177,7 +2187,23 @@ export default function AdminDashboard() {
                 </Field>
               </div>
 
-              <Field label="Biography">
+              <Field label="Biography English">
+                <textarea
+                  value={form.bio_en ?? ""}
+                  onChange={(event) => updateForm("bio_en", event.target.value)}
+                  className={`${inputClass} min-h-55 resize-y leading-relaxed`}
+                />
+              </Field>
+
+              <Field label="Biography Spanish">
+                <textarea
+                  value={form.bio_es ?? ""}
+                  onChange={(event) => updateForm("bio_es", event.target.value)}
+                  className={`${inputClass} min-h-55 resize-y leading-relaxed`}
+                />
+              </Field>
+
+              <Field label="Biography Legacy">
                 <div className="overflow-hidden rounded-lg border border-gray-200 bg-white focus-within:border-(--color-flagblue)">
                   <div className="flex flex-wrap gap-2 border-b border-gray-100 bg-gray-50 px-3 py-2">
                     <button

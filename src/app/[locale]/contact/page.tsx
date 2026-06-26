@@ -46,7 +46,7 @@ const CONTACT_CARDS: ContactCard[] = [
   },
   {
     key: "contributor",
-    href: "/contributors",
+    href: "mailto:contributor@mangulina.do",
     Icon: UsersRound,
   },
   {
@@ -88,6 +88,7 @@ const EMAIL_DIRECTORY = [
   "hello@mangulina.do",
   "artists@mangulina.do",
   "corrections@mangulina.do",
+  "contributor@mangulina.do",
   "partnerships@mangulina.do",
   "copyright@mangulina.do",
 ];

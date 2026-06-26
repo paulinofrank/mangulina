@@ -16,9 +16,9 @@ type SearchContentProps = {
 
 function getHref(result: SearchResult) {
   if (result.type === "artist" && result.slug) return `/artists/${result.slug}`;
-  if (result.type === "song") return `/songs/${result.slug ?? result.id}`;
+  if (result.type === "song" && result.slug) return `/songs/${result.slug}`;
   if (result.type === "release" && result.slug) return `/releases/${result.slug}`;
-  return "#";
+  return null;
 }
 
 function PlaceholderCover({ label }: { label: string }) {
@@ -55,13 +55,11 @@ function ResultGroup({
       <div className="space-y-2">
         {results.map((result) => {
           const metaLine = getMetaLine(result);
-
-          return (
-            <Link
-              key={`${result.type}-${result.id}`}
-              href={getHref(result)}
-              className="group flex items-center gap-4 rounded-xl border border-gray-100 p-3 transition hover:border-(--color-wikicrimson) hover:bg-gray-50"
-            >
+          const href = getHref(result);
+          const className =
+            "group flex items-center gap-4 rounded-xl border border-gray-100 p-3 transition hover:border-(--color-wikicrimson) hover:bg-gray-50";
+          const content = (
+            <>
               {result.cover_url ? (
                 <div className="h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-gray-100">
                   <img
@@ -92,7 +90,25 @@ function ResultGroup({
                   </p>
                 )}
               </div>
+            </>
+          );
+
+          return href ? (
+            <Link
+              key={`${result.type}-${result.id}`}
+              href={href}
+              className={className}
+            >
+              {content}
             </Link>
+          ) : (
+            <div
+              key={`${result.type}-${result.id}`}
+              className={className}
+              aria-disabled="true"
+            >
+              {content}
+            </div>
           );
         })}
       </div>

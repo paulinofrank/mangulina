@@ -2,7 +2,20 @@
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { BadgeCheck, LogOut } from "lucide-react";
+import {
+  Award,
+  BadgeCheck,
+  BarChart3,
+  Disc3,
+  ExternalLink,
+  FileClock,
+  Library,
+  LogOut,
+  Mic2,
+  Music,
+  Users,
+  UserPlus,
+} from "lucide-react";
 import type { ComponentType } from "react";
 import AdminHomepageSpotlight from "@/components/organisms/AdminHomepageSpotlight";
 
@@ -13,10 +26,24 @@ type AdminTool = {
   href: string;
   status: "available" | "planned";
   minimumRole?: "owner" | "admin" | "editor";
+  icon: string;
   Icon: ComponentType<{ className?: string; "aria-hidden"?: boolean }>;
 };
 
-type AdminToolConfig = Omit<AdminTool, "title" | "eyebrow" | "description">;
+type AdminToolConfig = Omit<AdminTool, "title" | "eyebrow" | "description" | "Icon">;
+
+const toolIcons: Record<string, ComponentType<{ className?: string; "aria-hidden"?: boolean }>> = {
+  analytics: BarChart3,
+  artists: Mic2,
+  songs: Music,
+  genres: Library,
+  discography: Disc3,
+  awards: Award,
+  platformLinks: ExternalLink,
+  contributors: Users,
+  invites: UserPlus,
+  reviews: FileClock,
+};
 
 type AdminPortalContentProps = {
   user: { email?: string } | null;
@@ -39,6 +66,7 @@ export default function AdminPortalContent({
       title: t(`admin.tools.${toolKey}.title`),
       eyebrow: t(`admin.tools.${toolKey}.eyebrow`),
       description: t(`admin.tools.${toolKey}.description`),
+      Icon: toolIcons[config.icon] ?? BadgeCheck,
     };
   });
 

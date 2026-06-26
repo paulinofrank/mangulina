@@ -3,7 +3,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
 import MainWrapper from "@/components/layout/MainWrapper";
 import ArtistAwardsSection from "@/components/organisms/ArtistAwardsSection";
@@ -11,6 +11,7 @@ import ArtistFactsCard from "@/components/organisms/ArtistFactsCard";
 import ArtistDiscographyAccordion from "@/components/organisms/ArtistDiscographyAccordion";
 import ArtistInterviewsCarousel from "@/components/organisms/ArtistInterviewsCarousel";
 import BioText from "@/components/molecules/BioText";
+import type { ArtistProfileData } from "@/lib/artistApi";
 import JsonLd from "@/components/seo/JsonLd";
 import {
   getArtistProfile,
@@ -28,6 +29,16 @@ import { absoluteUrl, breadcrumbSchema } from "@/lib/structuredData";
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+function firstNonEmpty(...values: Array<string | null | undefined>) {
+  return values.find((value) => value?.trim()) ?? null;
+}
+
+function getLocalizedArtistBio(artist: ArtistProfileData, locale: string) {
+  return locale === "es"
+    ? firstNonEmpty(artist.bio_es, artist.bio_en, artist.bio)
+    : firstNonEmpty(artist.bio_en, artist.bio, artist.bio_es);
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
@@ -59,10 +70,12 @@ export default async function ArtistProfile({ params }: PageProps) {
 
   if (!artist) return notFound();
 
+  const locale = await getLocale();
   const t = await getTranslations("artist");
   const tCommon = await getTranslations("common");
   const imageUrl = getArtistImageUrl(artist.id);
-  const hasBio = Boolean(artist.bio?.trim());
+  const localizedBio = getLocalizedArtistBio(artist, locale);
+  const hasBio = Boolean(localizedBio?.trim());
   const [discography, interviews, relationships] = await Promise.all([
     getArtistDiscography(artist.id),
     getArtistMedia(artist.id),
@@ -143,19 +156,15 @@ export default async function ArtistProfile({ params }: PageProps) {
           <main className="w-full min-w-0 space-y-6">
             <div className="grid min-w-0 items-start gap-6 xl:grid-cols-[minmax(0,0.62fr)_minmax(0,1.38fr)]">
               <div className="min-w-0 space-y-6">
-                <section className="min-w-0 rounded-xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6">
-                  <h3 className="mb-4 text-xs font-normal uppercase text-(--color-wikicrimson)">
-                    {t("biography")}
-                  </h3>
+                {hasBio && (
+                  <section className="min-w-0 rounded-xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6">
+                    <h3 className="mb-4 text-xs font-normal uppercase text-(--color-wikicrimson)">
+                      {t("biography")}
+                    </h3>
 
-                  {hasBio ? (
-                    <BioText bio={artist.bio} />
-                  ) : (
-                    <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-                      {t("noBiography")}
-                    </p>
-                  )}
-                </section>
+                    <BioText bio={localizedBio} />
+                  </section>
+                )}
 
                 <ArtistInterviewsCarousel interviews={interviews} />
               </div>

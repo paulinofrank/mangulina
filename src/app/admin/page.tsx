@@ -1,19 +1,3 @@
-import type { ComponentType } from "react";
-import {
-  Award,
-  BarChart3,
-  BadgeCheck,
-  Disc3,
-  ExternalLink,
-  FileClock,
-  Library,
-  LogOut,
-  Mic2,
-  Music,
-  Users,
-  UserPlus,
-} from "lucide-react";
-import AdminHomepageSpotlight from "@/components/organisms/AdminHomepageSpotlight";
 import { getCurrentUser } from "@/lib/auth";
 import { getAdminAccessProfile } from "@/lib/adminAccess";
 import AdminPortalContent from "./AdminPortalContent";
@@ -25,60 +9,60 @@ type AdminTool = {
   href: string;
   status: "available" | "planned";
   minimumRole?: "owner" | "admin" | "editor";
-  Icon: ComponentType<{ className?: string; "aria-hidden"?: boolean }>;
+  icon: string;
 };
 
 const ADMIN_TOOLS_CONFIG: Omit<AdminTool, "title" | "eyebrow" | "description">[] = [
   {
     href: "/admin/analytics",
     status: "available",
-    Icon: BarChart3,
+    icon: "analytics",
   },
   {
     href: "/admin/artists",
     status: "available",
-    Icon: Mic2,
+    icon: "artists",
   },
   {
     href: "/admin/songs",
     status: "planned",
-    Icon: Music,
+    icon: "songs",
   },
   {
     href: "/admin/genres",
     status: "available",
-    Icon: Library,
+    icon: "genres",
   },
   {
     href: "/admin/discography",
     status: "available",
-    Icon: Disc3,
+    icon: "discography",
   },
   {
     href: "/admin/awards",
     status: "available",
-    Icon: Award,
+    icon: "awards",
   },
   {
     href: "/admin/platform-links",
     status: "available",
-    Icon: ExternalLink,
+    icon: "platformLinks",
   },
   {
     href: "/admin/contributors",
     status: "available",
-    Icon: Users,
+    icon: "contributors",
   },
   {
     href: "/admin/invites",
     status: "available",
     minimumRole: "admin",
-    Icon: UserPlus,
+    icon: "invites",
   },
   {
     href: "/admin/reviews",
     status: "planned",
-    Icon: FileClock,
+    icon: "reviews",
   },
 ];
 

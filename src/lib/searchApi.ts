@@ -40,27 +40,42 @@ function withCurrentCoverArtUrls(results: SearchResult[]) {
 }
 
 async function withSongReleaseDetails(results: SearchResult[]) {
-  const recordingIds = results.map((result) => result.id).filter(Boolean);
+  const recordingIds = [...new Set(results.map((result) => result.id).filter(Boolean))];
 
   if (!recordingIds.length) return results;
 
-  const { data, error } = await supabase
-    .from("recordings_with_release_info")
-    .select("recording_id, artist_name, release_id, release_title")
-    .in("recording_id", recordingIds);
+  const [detailsResponse, slugResponse] = await Promise.all([
+    supabase
+      .from("recordings_with_release_info")
+      .select("recording_id, artist_name, release_id, release_title")
+      .in("recording_id", recordingIds),
+    supabase
+      .from("recordings")
+      .select("id, slug")
+      .in("id", recordingIds),
+  ]);
 
-  if (error) {
-    console.error("globalSearch song release details error:", error);
-    return results;
+  if (detailsResponse.error) {
+    console.error("globalSearch song release details error:", detailsResponse.error);
+  }
+
+  if (slugResponse.error) {
+    console.error("globalSearch song slug error:", slugResponse.error);
   }
 
   const detailsByRecordingId = new Map(
-    ((data ?? []) as Array<{
+    ((detailsResponse.data ?? []) as Array<{
       recording_id: string;
       artist_name: string | null;
       release_id: string | null;
       release_title: string | null;
     }>).map((row) => [row.recording_id, row]),
+  );
+  const slugByRecordingId = new Map(
+    ((slugResponse.data ?? []) as Array<{ id: string; slug: string | null }>).map((row) => [
+      row.id,
+      row.slug,
+    ]),
   );
 
   return results.map((result) => {
@@ -68,6 +83,7 @@ async function withSongReleaseDetails(results: SearchResult[]) {
 
     return {
       ...result,
+      slug: slugByRecordingId.get(result.id) ?? result.slug,
       artist_name: details?.artist_name ?? result.subtitle,
       cover_url: details?.release_id
         ? getPublicReleaseCoverUrl(details.release_id, 150)

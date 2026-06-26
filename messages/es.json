@@ -19,11 +19,11 @@
     "christian": "Cristianos",
     "discover": "Explorar",
     "releases": "Albumes",
-    "about": "Información",
+    "about": "Sobre Mangulina",
     "contact": "Contacto",
     "contributors": "Colaboradores",
-    "privacyPolicy": "Política de Privacidad",
-    "termsOfUse": "Términos de Uso",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfUse": "Términos de uso",
     "copyrights": "Derechos de Autor y DMCA",
     "goBack": "Atrás",
     "goToTop": "Ir al principio",
@@ -398,22 +398,22 @@
   "legal": {
     "privacy": {
       "metadata": {
-        "title": "Política de Privacidad",
-        "description": "Lee la Política de Privacidad de Mangulina y conoce cómo se recopila, utiliza y protege la información en la Base de Datos de Música Dominicana."
+        "title": "Política de privacidad",
+        "description": "Lee la Política de privacidad de Mangulina y conoce cómo se recopila, utiliza y protege la información en la Base de Datos de Música Dominicana."
       },
-      "eyebrow": "Política de Privacidad",
-      "title": "Política de Privacidad",
-      "heroDescription": "Mangulina se compromete a proteger tu privacidad. Esta Política de Privacidad explica qué información recopilamos, cómo la utilizamos y las opciones disponibles para los visitantes de la Base de Datos de Música Dominicana.",
-      "lastUpdated": "Última Actualización: Junio 2026",
+      "eyebrow": "Privacidad y datos",
+      "title": "Política de privacidad",
+      "heroDescription": "Mangulina se compromete a proteger tu privacidad. Esta Política de privacidad explica qué información recopilamos, cómo la utilizamos y las opciones disponibles para los visitantes de la Base de Datos de Música Dominicana.",
+      "lastUpdated": "Última actualización: junio de 2026",
       "welcome": {
         "eyebrow": "Bienvenido a Mangulina",
-        "introduction": "Te damos la bienvenida a Mangulina™, La Base de Datos de Música Dominicana.",
-        "description": "Esta Política de Privacidad describe cómo se puede recopilar, utilizar y proteger la información cuando visitas el sitio web de Mangulina o interactúas con él.",
-        "acceptance": "Al utilizar este sitio web, aceptas las prácticas descritas en esta Política de Privacidad."
+        "introduction": "Te damos la bienvenida a Mangulina™, la Base de Datos de Música Dominicana.",
+        "description": "Esta Política de privacidad describe cómo se recopila, utiliza y protege la información cuando visitas el sitio web de Mangulina o interactúas con él.",
+        "acceptance": "Al utilizar este sitio web, aceptas las prácticas descritas en esta Política de privacidad."
       },
       "sections": {
         "information": {
-          "title": "1. Información que Recopilamos",
+          "title": "1. Información que recopilamos",
           "introduction": "Mangulina puede recopilar información limitada cuando los visitantes utilizan el sitio web, incluida la siguiente:",
           "items": {
             "browser": "Tipo y versión del navegador",
@@ -428,7 +428,7 @@
           "closing": "No vendemos información personal."
         },
         "voluntary": {
-          "title": "2. Información que Proporcionas Voluntariamente",
+          "title": "2. Información que proporcionas voluntariamente",
           "introduction": "Puedes optar por proporcionar información cuando:",
           "items": {
             "contacting": "Te comunicas con nosotros",
@@ -447,7 +447,7 @@
           "closing": "Utilizamos esta información únicamente para responder consultas y mejorar la exactitud de la base de datos."
         },
         "cookies": {
-          "title": "3. Cookies y Análisis",
+          "title": "3. Cookies y análisis",
           "introduction": "Mangulina puede utilizar cookies o tecnologías similares para:",
           "items": {
             "performance": "Mejorar el rendimiento del sitio web",
@@ -456,11 +456,11 @@
             "security": "Mantener la seguridad del sitio web"
           },
           "analytics": "Podemos utilizar servicios de análisis para comprender mejor cómo interactúan los visitantes con el sitio web.",
-          "disabling": "Los usuarios pueden desactivar las cookies mediante la configuración de su navegador, aunque es posible que algunas funciones no operen según lo previsto."
+          "disabling": "Los usuarios pueden desactivar las cookies desde la configuración de su navegador, aunque es posible que algunas funciones no operen según lo previsto."
         },
         "use": {
-          "title": "4. Cómo Utilizamos la Información",
-          "introduction": "La información recopilada a través del sitio web se puede utilizar para:",
+          "title": "4. Cómo utilizamos la información",
+          "introduction": "La información recopilada a través del sitio web puede utilizarse para:",
           "items": {
             "operate": "Operar y mantener el sitio web",
             "experience": "Mejorar el contenido y la experiencia del usuario",
@@ -471,9 +471,9 @@
           }
         },
         "sharing": {
-          "title": "5. Divulgación de Información",
+          "title": "5. Divulgación de información",
           "noSale": "Mangulina no vende, alquila ni intercambia información personal.",
-          "introduction": "La información solo se puede compartir cuando:",
+          "introduction": "La información solo puede compartirse cuando:",
           "items": {
             "law": "Lo exige la ley",
             "rights": "Es necesario para proteger derechos legales",
@@ -482,7 +482,7 @@
           }
         },
         "thirdParty": {
-          "title": "6. Servicios de Terceros",
+          "title": "6. Servicios de terceros",
           "introduction": "Mangulina puede incluir enlaces a sitios web externos, entre ellos:",
           "items": {
             "artistWebsites": "Sitios web de artistas",
@@ -495,53 +495,53 @@
           "review": "Los visitantes deben revisar por separado las políticas de privacidad de esos servicios."
         },
         "security": {
-          "title": "7. Seguridad de los Datos",
+          "title": "7. Seguridad de los datos",
           "measures": "Tomamos medidas razonables para proteger la información contra el acceso no autorizado, el uso indebido, la alteración o la divulgación.",
           "limitation": "Sin embargo, no se puede garantizar que un sitio web o una transmisión por internet sean completamente seguros."
         },
         "children": {
-          "title": "8. Privacidad de los Menores",
+          "title": "8. Privacidad de los menores",
           "audience": "Mangulina está concebida como un recurso informativo para el público general.",
-          "collection": "No recopilamos deliberadamente información personal de menores de 13 años.",
-          "removal": "Si se descubre dicha información, se realizarán esfuerzos razonables para eliminarla."
+          "collection": "No recopilamos intencionalmente información personal de menores de 13 años.",
+          "removal": "Si se descubre dicha información, haremos esfuerzos razonables para eliminarla."
         },
         "international": {
-          "title": "9. Visitantes Internacionales",
+          "title": "9. Visitantes internacionales",
           "access": "Los visitantes pueden acceder a Mangulina desde países fuera de los Estados Unidos.",
-          "processing": "Al utilizar el sitio web, los visitantes entienden que la información puede ser procesada y almacenada en las jurisdicciones donde operan el sitio web y sus proveedores de servicios."
+          "processing": "Al utilizar el sitio web, los visitantes entienden que la información puede procesarse y almacenarse en las jurisdicciones donde operan el sitio web y sus proveedores de servicios."
         },
         "changes": {
-          "title": "10. Cambios a Esta Política de Privacidad",
-          "updates": "Podemos actualizar periódicamente esta Política de Privacidad.",
-          "posting": "Cualquier cambio se publicará en esta página junto con una fecha actualizada de «Última Actualización».",
+          "title": "10. Cambios a esta Política de privacidad",
+          "updates": "Podemos actualizar periódicamente esta Política de privacidad.",
+          "posting": "Cualquier cambio se publicará en esta página junto con una fecha actualizada de «Última actualización».",
           "acceptance": "El uso continuado del sitio web después de que los cambios entren en vigor constituye la aceptación de la política revisada."
         },
         "contact": {
           "title": "11. Contacto",
-          "contactPage": "Las preguntas relacionadas con esta Política de Privacidad se pueden enviar a través de la <contact>página de Contacto</contact>.",
+          "contactPage": "Las preguntas relacionadas con esta Política de privacidad se pueden enviar a través de la <contact>página de Contacto</contact>.",
           "dmcaPage": "Las solicitudes, correcciones e inquietudes relacionadas con la privacidad también se pueden enviar a través de la <dmca>página de Derechos de Autor y DMCA</dmca> cuando corresponda."
         }
       },
       "questions": {
-        "title": "Preguntas sobre Privacidad",
-        "description": "Si tienes preguntas sobre esta Política de Privacidad, la información que has proporcionado voluntariamente o la manera en que Mangulina gestiona las inquietudes sobre privacidad, comunícate con nosotros.",
+        "title": "Preguntas sobre privacidad",
+        "description": "Si tienes preguntas sobre esta Política de privacidad, la información que has proporcionado voluntariamente o la manera en que Mangulina gestiona las inquietudes sobre privacidad, comunícate con nosotros.",
         "contactButton": "Contactar a Mangulina",
-        "termsButton": "Términos de Uso"
+        "termsButton": "Términos de uso"
       }
     },
     "terms": {
       "metadata": {
-        "title": "Términos de Uso",
-        "description": "Lee los Términos de Uso de Mangulina, la Base de Datos de Música Dominicana dedicada a documentar y preservar la historia de la música dominicana."
+        "title": "Términos de uso",
+        "description": "Lee los Términos de uso de Mangulina, la Base de Datos de Música Dominicana dedicada a documentar y preservar la historia de la música dominicana."
       },
-      "eyebrow": "Términos de Uso",
-      "title": "Términos de Uso",
+      "eyebrow": "Documento legal",
+      "title": "Términos de uso",
       "heroDescription": "Mangulina es una Base de Datos de Música Dominicana independiente dedicada a documentar y preservar la historia de la música dominicana.",
       "lastUpdated": "Última Actualización: Junio 2026",
       "welcome": {
         "eyebrow": "Bienvenido a Mangulina",
         "introduction": "Te damos la bienvenida a Mangulina™, la Base de Datos de Música Dominicana.",
-        "acceptance": "Al acceder a este sitio web o utilizarlo, aceptas estos Términos de Uso. Si no estás de acuerdo con estos términos, no utilices el sitio web."
+        "acceptance": "Al acceder a este sitio web o utilizarlo, aceptas estos Términos de uso. Si no estás de acuerdo con estos términos, no utilices el sitio web."
       },
       "sections": {
         "about": {
@@ -613,13 +613,13 @@
         },
         "changes": {
           "title": "11. Cambios a Estos Términos",
-          "updates": "Podemos actualizar estos Términos de Uso ocasionalmente.",
+          "updates": "Podemos actualizar estos Términos de uso ocasionalmente.",
           "posting": "La versión actualizada se publicará en esta página con una fecha revisada de «Última Actualización».",
           "acceptance": "El uso continuado del sitio web después de que los cambios entren en vigor constituye la aceptación de los términos revisados."
         },
         "contact": {
           "title": "12. Contacto",
-          "description": "Las preguntas relacionadas con estos Términos de Uso se pueden enviar a través de nuestra <contact>página de Contacto</contact>."
+          "description": "Las preguntas relacionadas con estos Términos de uso se pueden enviar a través de nuestra <contact>página de Contacto</contact>."
         }
       },
       "editorial": {
@@ -634,7 +634,7 @@
         "title": "Derechos de Autor y DMCA",
         "description": "Política de derechos de autor y DMCA de Mangulina para la Base de Datos de Música Dominicana, incluidos los procedimientos para informar inquietudes sobre derechos de autor."
       },
-      "eyebrow": "Derechos de Autor y DMCA",
+      "eyebrow": "Derechos de autor",
       "title": "Política de derechos de autor",
       "heroDescription": "Mangulina respeta los derechos de propiedad intelectual de artistas, compositores, autores, editoras musicales, sellos discográficos, fotógrafos y otros titulares de derechos. Esta página explica cómo se pueden informar y revisar las inquietudes sobre derechos de autor.",
       "lastUpdated": "Última actualización: Junio 2026",
@@ -875,7 +875,7 @@
       "links": {
         "singers": "Cantantes", "christianArtists": "Artistas Cristianos", "legends": "Leyendas", "emergingArtists": "Artistas Emergentes", "mostAwarded": "Artistas Más Premiados", "birthdays": "Cumpleaños", "instrumentalClassical": "Instrumental y Clásica",
         "composers": "Compositores", "songwriters": "Autores de Canciones", "lyricists": "Letristas", "djs": "DJs", "musicians": "Músicos", "producers": "Productores",
-        "songs": "Canciones", "releases": "Publicaciones", "genres": "Géneros", "home": "Inicio", "about": "Acerca de", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de Privacidad", "terms": "Términos de Uso", "dmca": "Derechos de Autor y DMCA"
+        "songs": "Canciones", "releases": "Publicaciones", "genres": "Géneros", "home": "Inicio", "about": "Acerca de", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de privacidad", "terms": "Términos de uso", "dmca": "Derechos de Autor y DMCA"
       },
       "genreLabels": {"worship": "Adoración", "merengue": "Merengue", "bachata": "Bachata", "urban": "Urbano", "salsa": "Salsa", "ballads": "Baladas", "pop": "Pop", "rock": "Rock", "reggae": "Reggae", "jazz": "Jazz", "electronic": "Electrónica", "instrumental": "Instrumental", "folklore": "Folclore", "fusion": "Fusión"}
     },

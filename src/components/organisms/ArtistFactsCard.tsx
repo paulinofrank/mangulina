@@ -434,14 +434,6 @@ export default function ArtistFactsCard({
           </Field>
         )}
 
-        {!!artist.artist_tags?.length && (
-          <Field label={t("artist.tags")}>
-            <InlineList values={artist.artist_tags.map((tag) => formatLabel(tag))} />
-          </Field>
-        )}
-
-        {!!artist.artist_tags?.length && <SectionDivider />}
-
         {hasSocialLinks && (
           <LinkGroup>
             <SocialLink href={websiteUrl} label={t("artist.officialWebsite")} Icon={Globe}>
