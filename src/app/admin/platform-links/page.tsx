@@ -216,17 +216,23 @@ export default function AdminPlatformLinksPage() {
 
       if (loaded.length === 0) {
         setMsg({
-          text: t("admin.platformLinks.suggestAllStatuses").replace("{platform}", platform).replace("{status}", statusFilter),
+          text: t("admin.platformLinks.suggestAllStatuses", {
+            platform,
+            status: statusFilter,
+          }),
           kind: "info",
         });
       } else {
-        setMsg({ text: t("admin.platformLinks.linksLoaded").replace("{count}", String(loaded.length)), kind: "ok" });
+        setMsg({
+          text: t("admin.platformLinks.linksLoaded", { count: loaded.length }),
+          kind: "ok",
+        });
       }
     } catch (err) {
       if ((err as Error).name === "AbortError") return;
       const msg = err instanceof Error ? err.message : String(err);
       console.error("[platform-links] load error:", msg);
-      setMsg({ text: `${t("admin.errors.loadingLinks").replace("{error}", msg)}`, kind: "err" });
+      setMsg({ text: t("admin.errors.loadingLinks", { error: msg }), kind: "err" });
     } finally {
       setLoading(false);
     }
@@ -256,7 +262,7 @@ export default function AdminPlatformLinksPage() {
     } catch (err) {
       const m = err instanceof Error ? err.message : String(err);
       console.error("[platform-links] update error:", m);
-      setMsg({ text: `${t("admin.errors.updatingLink").replace("{error}", m)}`, kind: "err" });
+      setMsg({ text: t("admin.errors.updatingLink", { error: m }), kind: "err" });
     } finally {
       setLoading(false);
     }
@@ -332,7 +338,7 @@ export default function AdminPlatformLinksPage() {
       setMsg({ text: t("admin.status.linkAdded"), kind: "ok" });
     } catch (err) {
       const m = err instanceof Error ? err.message : String(err);
-      setMsg({ text: `${t("admin.errors.addingLink").replace("{error}", m)}`, kind: "err" });
+      setMsg({ text: t("admin.errors.addingLink", { error: m }), kind: "err" });
     } finally {
       setLoading(false);
     }
@@ -444,7 +450,10 @@ export default function AdminPlatformLinksPage() {
           {filteredRows.length === 0 && !loading && (
             <div className="rounded-xl border border-dashed border-gray-200 bg-white px-4 py-10 text-center">
               <p className="text-sm text-gray-500">
-                {t("admin.platformLinks.noLinksFound").replace("{platform}", platform).replace("{status}", statusFilter)}
+                {t("admin.platformLinks.noLinksFound", {
+                  platform,
+                  status: statusFilter,
+                })}
               </p>
               {statusFilter !== "all" && (
                 <button

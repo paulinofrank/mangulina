@@ -142,7 +142,7 @@ export default function AdminDiscographyPage() {
       .order("name", { ascending: true });
 
     if (error) {
-      setStatus(`${t("admin.errors.loadingArtists").replace("{error}", error.message)}`);
+      setStatus(t("admin.errors.loadingArtists", { error: error.message }));
     } else {
       setArtists((data ?? []) as AdminArtist[]);
     }
@@ -157,7 +157,11 @@ export default function AdminDiscographyPage() {
     const result = (await response.json()) as ArtistDiscographyResponse;
 
     if (!response.ok || !result.ok) {
-      setStatus(`${t("admin.errors.loadingDiscography").replace("{error}", result.error || response.statusText)}`);
+      setStatus(
+        t("admin.errors.loadingDiscography", {
+          error: result.error || response.statusText,
+        }),
+      );
       setDiscography([]);
       return;
     }
@@ -278,7 +282,11 @@ export default function AdminDiscographyPage() {
     const result = (await response.json()) as AdminWriteResponse;
 
     if (!response.ok || !result.ok) {
-      setStatus(`${t("admin.errors.savingRelease").replace("{error}", result.error || response.statusText)}`);
+      setStatus(
+        t("admin.errors.savingRelease", {
+          error: result.error || response.statusText,
+        }),
+      );
     } else {
       setStatus(editingReleaseId ? t("admin.status.releaseUpdated") : t("admin.status.releaseAdded"));
       resetReleaseForm();
@@ -355,7 +363,9 @@ export default function AdminDiscographyPage() {
                   {selectedArtist.name}
                 </p>
                 <p className="mt-1 text-xs text-gray-400">
-                  {t("admin.discography.releasesLoaded").replace("{count}", String(discography.length))}
+                  {t("admin.discography.releasesLoaded", {
+                    count: discography.length,
+                  })}
                 </p>
               </div>
             )}

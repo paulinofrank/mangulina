@@ -33,7 +33,8 @@ export default function AdminHomepageSpotlight() {
   const supabase = useMemo(() => getSupabaseClient(), []);
   const [artists, setArtists] = useState<SpotlightArtist[]>([]);
   const [featuredId, setFeaturedId] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [mounted, setMounted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
   const [status, setStatus] = useState("");
 
@@ -67,8 +68,14 @@ export default function AdminHomepageSpotlight() {
   }, [supabase]);
 
   useEffect(() => {
+    setMounted(true);
     void fetchSpotlightData();
   }, [fetchSpotlightData]);
+
+  const controlsLoading = mounted && loading;
+  const updateDisabled = mounted
+    ? Boolean(loading || saving || !featuredId)
+    : false;
 
   async function updateFeatured() {
     if (!featuredId) return;
@@ -118,11 +125,11 @@ export default function AdminHomepageSpotlight() {
         <select
           value={featuredId ?? ""}
           onChange={(event) => setFeaturedId(event.target.value)}
-          disabled={loading}
+          disabled={controlsLoading}
           className="rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm outline-none transition focus:border-[#002D62] disabled:cursor-not-allowed disabled:opacity-50"
         >
           <option value="">
-            {loading ? "Loading artists..." : "-- Select Featured Artist --"}
+            {controlsLoading ? "Loading artists..." : "-- Select Featured Artist --"}
           </option>
 
           {artists.map((artist) => (
@@ -138,7 +145,7 @@ export default function AdminHomepageSpotlight() {
         <button
           type="button"
           onClick={updateFeatured}
-          disabled={Boolean(loading || saving || !featuredId)}
+          disabled={updateDisabled}
           className="rounded-lg bg-[#002D62] px-5 py-2 text-sm text-white transition hover:bg-[#CE1126] disabled:cursor-not-allowed disabled:opacity-40"
         >
           {saving ? "Updating..." : "Update Spotlight"}
