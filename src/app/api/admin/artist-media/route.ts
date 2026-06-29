@@ -11,6 +11,11 @@ type ArtistMediaPayload = {
   external_id?: string | null;
   thumbnail_url?: string | null;
   published_date?: string | null;
+  youtube_channel_id?: string | null;
+  youtube_channel_name?: string | null;
+  youtube_channel_url?: string | null;
+  youtube_channel_avatar_url?: string | null;
+  youtube_metadata_fetched_at?: string | null;
   is_official?: boolean;
   is_featured?: boolean;
   display_order?: number;
@@ -18,7 +23,7 @@ type ArtistMediaPayload = {
 };
 
 const SELECT_FIELDS =
-  "id, artist_id, media_type, title, url, platform, external_id, thumbnail_url, published_date, is_official, is_featured, display_order, notes";
+  "id, artist_id, media_type, title, url, platform, external_id, thumbnail_url, published_date, youtube_channel_id, youtube_channel_name, youtube_channel_url, youtube_channel_avatar_url, youtube_metadata_fetched_at, is_official, is_featured, display_order, notes";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);

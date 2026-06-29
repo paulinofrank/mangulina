@@ -35,8 +35,9 @@ export default function FeaturedArtistImage({
         alt={featuredArtist.name || "Featured Artist"}
         fill
         className="object-cover transition-all duration-300 group-hover:scale-105 group-hover:brightness-110"
-        priority
         sizes="(max-width: 640px) 100vw, 256px"
+        loading="eager"
+        fetchPriority="high"
       />
     </Link>
   );

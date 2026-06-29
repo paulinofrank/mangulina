@@ -1,19 +1,32 @@
 'use client';
 
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+import { type AppLocale } from "@/i18n/pathname";
 
 export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
+  const locale = useLocale() as AppLocale;
   const t = useTranslations('navigation');
+  const alternateLocale = locale === "en" ? "es" : "en";
+  const alternateLanguageLabel = locale === "en" ? "Spanish" : "English";
 
   const navLinks = [
     { key: 'home', href: '/' },
-    { key: 'singers', href: '/artists' },
-    { key: 'christian', href: '/christian' },
     { key: 'discover', href: '/discover'},
   ];
+
+  const handleLanguageSwitch = () => {
+    const search = typeof window !== "undefined" ? window.location.search : "";
+    const params = new URLSearchParams(search);
+    const query = Object.fromEntries(params.entries());
+
+    router.replace(
+      Object.keys(query).length > 0 ? { pathname, query } : pathname,
+      { locale: alternateLocale },
+    );
+  };
 
   return (
     <nav
@@ -24,7 +37,7 @@ export default function Navbar() {
         {/* Back Button */}
         <button
           onClick={() => router.back()}
-          className="flex items-center justify-center w-6 h-6 rounded-full hover:bg-black/5 transition-colors group"
+          className="group flex h-6 w-6 cursor-pointer items-center justify-center rounded-full transition-colors hover:bg-black/5"
           aria-label={t('goBack')}
         >
           <svg
@@ -46,21 +59,39 @@ export default function Navbar() {
         <div className="h-3 w-px bg-black/10" />
 
         {/* Navigation Links */}
-        <div className="flex min-w-0 gap-3 sm:gap-5">
+        <div className="flex min-w-0 items-center gap-3 sm:gap-5">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`text-sm font-normal uppercase tracking-wider transition-colors ${
-                  isActive ? 'text-[#CE1126]' : 'text-gray-700 hover:text-[#CE1126]'
-                }`}
-              >
-                {t(link.key as any)}
-              </Link>
+              <div key={link.href} className="contents">
+                <Link
+                  href={link.href}
+                  className={`text-sm font-normal uppercase tracking-wider transition-colors ${
+                    isActive ? 'text-[#CE1126]' : 'text-gray-700 hover:text-[#CE1126]'
+                  }`}
+                >
+                  {t(link.key as any)}
+                </Link>
+                {link.key === 'home' && (
+                  <span aria-hidden="true" className="text-sm text-gray-300">
+                    |
+                  </span>
+                )}
+              </div>
             );
           })}
+
+          <span aria-hidden="true" className="text-sm text-gray-300">
+            |
+          </span>
+
+          <button
+            type="button"
+            onClick={handleLanguageSwitch}
+            className="cursor-pointer text-sm font-normal uppercase tracking-wider text-gray-700 transition-colors hover:text-[#CE1126]"
+          >
+            {alternateLanguageLabel}
+          </button>
         </div>
 
         {/* Divider */}
@@ -70,7 +101,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="group flex h-6 w-6 items-center justify-center rounded-full transition-colors hover:bg-black/5"
+          className="group flex h-6 w-6 cursor-pointer items-center justify-center rounded-full transition-colors hover:bg-black/5"
           aria-label={t('goToTop')}
         >
           <svg

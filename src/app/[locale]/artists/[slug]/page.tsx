@@ -132,8 +132,9 @@ export default async function ArtistProfile({ params }: PageProps) {
                   alt={artist.name}
                   fill
                   className="object-cover"
-                  priority
                   sizes="(max-width: 768px) calc(100vw - 40px), 300px"
+                  loading="eager"
+                  fetchPriority="high"
                 />
               </div>
 

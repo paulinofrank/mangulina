@@ -1,8 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { SiYoutube } from "react-icons/si";
 import { X } from "lucide-react";
 
 import CarouselArrows from "@/components/molecules/CarouselArrows";
@@ -15,6 +15,12 @@ export type ArtistInterview = {
   media_type?: string | null;
   external_id?: string | null;
   thumbnail_url?: string | null;
+  published_date?: string | null;
+  youtube_channel_id?: string | null;
+  youtube_channel_name?: string | null;
+  youtube_channel_url?: string | null;
+  youtube_channel_avatar_url?: string | null;
+  youtube_metadata_fetched_at?: string | null;
   videoId?: string | null;
   notes?: string | null;
 };
@@ -34,6 +40,24 @@ function getYouTubeVideoId(interview: ArtistInterview) {
   }
 
   return undefined;
+}
+
+function formatDate(value: string) {
+  const [year, month, day] = value.split("T")[0].split("-").map(Number);
+  if (!year || !month || !day) return value;
+
+  const date = new Date(Date.UTC(year, month - 1, day));
+  const monthLabel = new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    timeZone: "UTC",
+  }).format(date);
+  const dayLabel = String(day).padStart(2, "0");
+  const yearLabel = new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+
+  return `${monthLabel} ${dayLabel}, ${yearLabel}`;
 }
 
 export default function ArtistInterviewsCarousel({
@@ -76,18 +100,21 @@ export default function ArtistInterviewsCarousel({
 
         <div
           ref={scrollRef}
-          className="flex min-w-0 max-w-full gap-4 overflow-x-auto scrollbar-none pb-2 lg:flex-col lg:overflow-visible lg:pb-0"
+          className="flex min-w-0 max-w-full gap-4 overflow-x-auto scrollbar-none pb-2"
         >
           {interviews.map((interview) => {
             const videoId = getYouTubeVideoId(interview);
             const thumbnail = interview.thumbnail_url ?? getYouTubeThumbnail(videoId);
             const isYouTube = Boolean(videoId);
+            const showChannelRow = Boolean(
+              interview.youtube_channel_name || interview.youtube_channel_avatar_url
+            );
             const cardClassName =
-              "group w-[min(16rem,78vw)] shrink-0 sm:w-72 lg:flex lg:w-full lg:gap-4";
+              "group w-[min(16rem,78vw)] shrink-0 cursor-pointer sm:w-72 lg:w-80";
 
             const cardContent = (
               <>
-                <div className="relative aspect-video overflow-hidden rounded-lg border border-black/5 bg-gray-100 lg:w-48 lg:shrink-0">
+                <div className="relative aspect-video overflow-hidden rounded-lg border border-black/5 bg-gray-100">
                   {thumbnail ? (
                     <img
                       src={thumbnail}
@@ -100,26 +127,65 @@ export default function ArtistInterviewsCarousel({
                       {tc("noPreview")}
                     </div>
                   )}
-                  {isYouTube && (
-                    <span
-                      aria-label={interview.platform}
-                      className="absolute bottom-2 left-2 inline-flex text-[#FF0000] drop-shadow-[0_1px_1px_rgba(255,255,255,0.95)]"
-                    >
-                      <SiYoutube
-                        className="h-5 w-5 stroke-white"
-                        aria-hidden="true"
-                      />
-                    </span>
-                  )}
                 </div>
 
-                <div className="mt-3 min-w-0 text-left lg:mt-0 lg:flex lg:flex-1 lg:flex-col lg:justify-center">
+                <div className="mt-3 min-w-0 space-y-2 text-left">
                   <h4 className="line-clamp-2 text-sm font-semibold leading-snug text-(--color-flagblue) transition-colors group-hover:text-(--color-wikicrimson)">
                     {interview.title}
                   </h4>
-                  {interview.notes && (
-                    <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-gray-500">
-                      {interview.notes}
+
+                  {showChannelRow && (
+                    <div className="flex items-start gap-2">
+                      {interview.youtube_channel_avatar_url ? (
+                        <Image
+                          src={interview.youtube_channel_avatar_url}
+                          alt={
+                            interview.youtube_channel_name
+                              ? `${interview.youtube_channel_name} channel logo`
+                              : "YouTube channel logo"
+                          }
+                          width={24}
+                          height={24}
+                          className="h-6 w-6 shrink-0 rounded-full object-cover"
+                          sizes="24px"
+                        />
+                      ) : (
+                        <div
+                          className="h-6 w-6 shrink-0 rounded-full bg-gray-200"
+                          aria-hidden="true"
+                        />
+                      )}
+
+                      <div className="min-w-0">
+                        {interview.youtube_channel_url &&
+                        interview.youtube_channel_name ? (
+                          <a
+                            href={interview.youtube_channel_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="line-clamp-1 text-xs font-medium text-gray-700 hover:text-(--color-wikicrimson)"
+                            onClick={(event) => event.stopPropagation()}
+                          >
+                            {interview.youtube_channel_name}
+                          </a>
+                        ) : interview.youtube_channel_name ? (
+                          <span className="line-clamp-1 text-xs font-medium text-gray-700">
+                            {interview.youtube_channel_name}
+                          </span>
+                        ) : null}
+
+                        {interview.published_date && (
+                          <p className="text-xs text-gray-400">
+                            {formatDate(interview.published_date)}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  )}
+
+                  {!showChannelRow && interview.published_date && (
+                    <p className="text-xs text-gray-400">
+                      {formatDate(interview.published_date)}
                     </p>
                   )}
                 </div>
@@ -127,15 +193,22 @@ export default function ArtistInterviewsCarousel({
             );
 
             return isYouTube ? (
-              <button
+              <div
                 key={interview.url}
-                type="button"
+                role="button"
+                tabIndex={0}
                 onClick={() => setActiveInterview({ ...interview, videoId })}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    setActiveInterview({ ...interview, videoId });
+                  }
+                }}
                 className={cardClassName}
                 aria-label={t("artist.playAria", { title: interview.title })}
               >
                 {cardContent}
-              </button>
+              </div>
             ) : (
               <a
                 key={interview.url}

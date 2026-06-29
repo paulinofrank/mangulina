@@ -35,6 +35,8 @@ type AdminToolConfig = Omit<AdminTool, "title" | "eyebrow" | "description" | "Ic
 const toolIcons: Record<string, ComponentType<{ className?: string; "aria-hidden"?: boolean }>> = {
   analytics: BarChart3,
   artists: Mic2,
+  releases: Disc3,
+  recordings: Music,
   songs: Music,
   genres: Library,
   discography: Disc3,
@@ -197,6 +199,8 @@ function getToolKey(href: string): string {
   const keyMap: Record<string, string> = {
     analytics: "analytics",
     artists: "artists",
+    releases: "releases",
+    recordings: "recordings",
     songs: "songs",
     genres: "genres",
     discography: "discography",

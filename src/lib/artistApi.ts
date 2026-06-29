@@ -20,6 +20,11 @@ export type ArtistMedia = {
   external_id: string | null;
   thumbnail_url: string | null;
   published_date: string | null;
+  youtube_channel_id: string | null;
+  youtube_channel_name: string | null;
+  youtube_channel_url: string | null;
+  youtube_channel_avatar_url: string | null;
+  youtube_metadata_fetched_at: string | null;
   is_official: boolean;
   is_featured: boolean;
   display_order: number;
@@ -279,28 +284,61 @@ export async function getArtistDiscography(
 
 export async function getArtistMedia(artistId: string): Promise<ArtistMedia[]> {
   const supabase = getSupabaseClient();
+  const baseFields =
+    "id, artist_id, media_type, title, url, platform, external_id, thumbnail_url, published_date, is_official, is_featured, display_order, notes";
+  const youtubeFields =
+    "youtube_channel_id, youtube_channel_name, youtube_channel_url, youtube_channel_avatar_url, youtube_metadata_fetched_at";
 
-  const { data, error } = await supabase
-    .from("artist_media")
-    .select(
-      "id, artist_id, media_type, title, url, platform, external_id, thumbnail_url, published_date, is_official, is_featured, display_order, notes"
-    )
-    .eq("artist_id", artistId)
-    .order("is_featured", { ascending: false })
-    .order("display_order", { ascending: true })
-    .order("published_date", { ascending: false, nullsFirst: false })
-    .order("created_at", { ascending: true });
+  const queryArtistMedia = (selectFields: string) =>
+    supabase
+      .from("artist_media")
+      .select(selectFields)
+      .eq("artist_id", artistId)
+      .order("is_featured", { ascending: false })
+      .order("display_order", { ascending: true })
+      .order("published_date", { ascending: false, nullsFirst: false })
+      .order("created_at", { ascending: true });
 
-  if (error) {
+  const { data, error } = await queryArtistMedia(`${baseFields}, ${youtubeFields}`);
+  const fallbackResponse = error ? await queryArtistMedia(baseFields) : null;
+  const resolvedData = fallbackResponse?.data ?? data;
+  const resolvedError = fallbackResponse?.error ?? null;
+
+  if (resolvedError) {
     console.error("getArtistMedia error:", {
-      code: error.code,
-      message: error.message,
-      details: error.details,
-      hint: error.hint,
+      code: resolvedError.code,
+      message: resolvedError.message,
+      details: resolvedError.details,
+      hint: resolvedError.hint,
     });
 
     return [];
   }
 
-  return (data ?? []) as ArtistMedia[];
+  const rows = (resolvedData ?? []) as unknown as Partial<ArtistMedia>[];
+
+  return rows.map((item) => ({
+    ...(item as Omit<
+      ArtistMedia,
+      | "youtube_channel_id"
+      | "youtube_channel_name"
+      | "youtube_channel_url"
+      | "youtube_channel_avatar_url"
+      | "youtube_metadata_fetched_at"
+    >),
+    youtube_channel_id:
+      "youtube_channel_id" in item ? item.youtube_channel_id : null,
+    youtube_channel_name:
+      "youtube_channel_name" in item ? item.youtube_channel_name : null,
+    youtube_channel_url:
+      "youtube_channel_url" in item ? item.youtube_channel_url : null,
+    youtube_channel_avatar_url:
+      "youtube_channel_avatar_url" in item
+        ? item.youtube_channel_avatar_url
+        : null,
+    youtube_metadata_fetched_at:
+      "youtube_metadata_fetched_at" in item
+        ? item.youtube_metadata_fetched_at
+        : null,
+  })) as ArtistMedia[];
 }

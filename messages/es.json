@@ -19,7 +19,7 @@
     "christian": "Cristianos",
     "discover": "Explorar",
     "releases": "Álbumes",
-    "about": "Sobre Mangulina",
+    "about": "Información",
     "contact": "Contacto",
     "contributors": "Colaboradores",
     "privacyPolicy": "Política de privacidad",
@@ -47,7 +47,7 @@
     "logo": "Logo de Mangulina",
     "copyright": "© 2026 Mangulina. Todos los derechos reservados.",
     "languageSwitchToSpanish": "Cambiar a Español",
-    "languageSwitchToEnglish": "Cambiar a inglés",
+    "languageSwitchToEnglish": "Switch to English",
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",
@@ -238,7 +238,7 @@
     "winner": "Ganador",
     "nominee": "Nominado",
     "specialRecognition": "Reconocimiento Especial",
-    "videoInterviews": "Entrevistas en Video",
+    "videoInterviews": "Videos relacionados",
     "interviewsSubtitle": "Entrevistas, conversaciones y material de archivo relacionado con este artista.",
     "playAria": "Reproducir {title}",
     "closeVideo": "Cerrar video",
@@ -977,6 +977,16 @@
         "title": "Editor de Perfil de Artista",
         "eyebrow": "Artistas",
         "description": "Crear, revisar y actualizar perfiles de artistas seleccionados y revisados editorialmente, biografías, imágenes y clasificación editorial."
+      },
+      "releases": {
+        "title": "Admin de Publicaciones / Álbumes",
+        "eyebrow": "Catálogo",
+        "description": "Crea y edita álbumes, sencillos, EPs, compilaciones, metadatos de publicaciones, artistas, sellos y listas de canciones."
+      },
+      "recordings": {
+        "title": "Admin de Grabaciones / Canciones",
+        "eyebrow": "Catálogo",
+        "description": "Crea y edita canciones, artistas, IDs de YouTube, géneros, contexto, ISRCs, duración y enlaces a publicaciones."
       },
       "songs": {
         "title": "Editor de Canciones / Grabaciones",

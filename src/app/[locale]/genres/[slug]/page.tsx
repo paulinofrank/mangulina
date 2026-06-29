@@ -253,7 +253,7 @@ export default async function GenrePage({ params }: PageProps) {
           )}
 
           {genre.history && (
-            <div id="genre-history" className="scroll-mt-6">
+            <div id="genre-history" className="scroll-mt-20 sm:scroll-mt-24">
               <SectionCard>
                 <div className="section-inner">
                   <div className="section-header">

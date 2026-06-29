@@ -33,9 +33,9 @@ export default function TopBanner() {
           <Image
             src="/icon.svg"
             alt={tFooter("logo")}
-            width={36}
-            height={36}
-            className="h-8 w-8 shrink-0 object-contain"
+            width={47}
+            height={47}
+            className="h-10 w-10 shrink-0 object-contain"
             priority
           />
           <div className="min-w-0 flex flex-col justify-center">

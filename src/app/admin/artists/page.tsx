@@ -16,6 +16,7 @@ import {
 } from "@/lib/artistRelationships";
 import type { Artist } from "@/types/music";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
+import { extractYouTubeVideoId } from "@/utils/youtube";
 import BioText from "@/components/molecules/BioText";
 
 type ArtistStatus =
@@ -108,6 +109,11 @@ type AdminArtistMedia = {
   external_id: string | null;
   thumbnail_url: string | null;
   published_date: string | null;
+  youtube_channel_id: string | null;
+  youtube_channel_name: string | null;
+  youtube_channel_url: string | null;
+  youtube_channel_avatar_url: string | null;
+  youtube_metadata_fetched_at: string | null;
   is_official: boolean;
   is_featured: boolean;
   display_order: number;
@@ -122,6 +128,11 @@ type ArtistMediaForm = {
   external_id: string;
   thumbnail_url: string;
   published_date: string;
+  youtube_channel_id: string;
+  youtube_channel_name: string;
+  youtube_channel_url: string;
+  youtube_channel_avatar_url: string;
+  youtube_metadata_fetched_at: string;
   is_official: boolean;
   is_featured: boolean;
   display_order: string;
@@ -138,6 +149,22 @@ type AdminWriteResponse = {
 type ArtistMediaListResponse = {
   ok: boolean;
   media?: AdminArtistMedia[];
+  error?: string;
+};
+
+type YouTubeMetadata = {
+  title: string | null;
+  thumbnail_url: string | null;
+  published_date: string | null;
+  youtube_channel_id: string | null;
+  youtube_channel_name: string | null;
+  youtube_channel_url: string | null;
+  youtube_channel_avatar_url: string | null;
+};
+
+type YouTubeMetadataResponse = {
+  ok: boolean;
+  metadata?: YouTubeMetadata;
   error?: string;
 };
 
@@ -200,6 +227,11 @@ const emptyMediaForm: ArtistMediaForm = {
   external_id: "",
   thumbnail_url: "",
   published_date: "",
+  youtube_channel_id: "",
+  youtube_channel_name: "",
+  youtube_channel_url: "",
+  youtube_channel_avatar_url: "",
+  youtube_metadata_fetched_at: "",
   is_official: false,
   is_featured: false,
   display_order: "0",
@@ -510,33 +542,6 @@ function detectMediaPlatform(url: string) {
   return "other";
 }
 
-function extractYouTubeId(url: string) {
-  try {
-    const parsedUrl = new URL(url);
-    const hostname = parsedUrl.hostname.replace(/^www\./, "");
-
-    if (hostname === "youtu.be") {
-      return parsedUrl.pathname.split("/").filter(Boolean)[0] ?? "";
-    }
-
-    if (hostname.endsWith("youtube.com")) {
-      if (parsedUrl.pathname === "/watch") {
-        return parsedUrl.searchParams.get("v") ?? "";
-      }
-
-      const [section, id] = parsedUrl.pathname.split("/").filter(Boolean);
-
-      if (section === "embed" || section === "shorts" || section === "live") {
-        return id ?? "";
-      }
-    }
-  } catch {
-    return "";
-  }
-
-  return "";
-}
-
 export default function AdminDashboard() {
   const t = useTranslations();
   const supabase = getSupabaseClient();
@@ -573,6 +578,14 @@ export default function AdminDashboard() {
   const selectedArtistImageUrl = selectedArtist
     ? `${getArtistImageUrl(selectedArtist.id)}?v=${imageVersion}`
     : "";
+
+  const mediaYouTubeVideoId =
+    mediaForm.platform === "youtube"
+      ? mediaForm.external_id.trim() || extractYouTubeVideoId(mediaForm.url)
+      : "";
+  const canAutofillYouTubeMetadata = Boolean(
+    mediaForm.platform === "youtube" && mediaYouTubeVideoId && !loading
+  );
 
   const filteredArtists = useMemo(() => {
     const query = search.trim().toLowerCase();
@@ -757,7 +770,7 @@ export default function AdminDashboard() {
       }
 
       const platform = detectMediaPlatform(value);
-      const externalId = platform === "youtube" ? extractYouTubeId(value) : "";
+      const externalId = platform === "youtube" ? extractYouTubeVideoId(value) : "";
 
       return {
         ...current,
@@ -970,11 +983,79 @@ export default function AdminDashboard() {
       external_id: item.external_id ?? "",
       thumbnail_url: item.thumbnail_url ?? "",
       published_date: item.published_date ?? "",
+      youtube_channel_id: item.youtube_channel_id ?? "",
+      youtube_channel_name: item.youtube_channel_name ?? "",
+      youtube_channel_url: item.youtube_channel_url ?? "",
+      youtube_channel_avatar_url: item.youtube_channel_avatar_url ?? "",
+      youtube_metadata_fetched_at: item.youtube_metadata_fetched_at ?? "",
       is_official: Boolean(item.is_official),
       is_featured: Boolean(item.is_featured),
       display_order: String(item.display_order ?? 0),
       notes: item.notes ?? "",
     });
+  }
+
+  async function handleAutofillYouTubeMetadata() {
+    const videoId = mediaYouTubeVideoId;
+
+    if (!videoId && !mediaForm.url.trim()) {
+      setStatus("Paste a YouTube URL or enter a YouTube video ID first.");
+      return;
+    }
+
+    setLoading(true);
+    setStatus("Loading YouTube metadata...");
+
+    try {
+      const response = await fetch("/api/admin/youtube-metadata", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          videoId: videoId || undefined,
+          url: mediaForm.url.trim() || undefined,
+        }),
+      });
+      const result = (await response.json()) as YouTubeMetadataResponse;
+
+      if (!response.ok || !result.ok || !result.metadata) {
+        setStatus(
+          `Could not load YouTube metadata: ${result.error || response.statusText}`
+        );
+        return;
+      }
+
+      const metadata = result.metadata;
+      setMediaForm((current) => ({
+        ...current,
+        title: current.title.trim() || metadata.title || current.title,
+        thumbnail_url:
+          current.thumbnail_url.trim() ||
+          metadata.thumbnail_url ||
+          current.thumbnail_url,
+        published_date: metadata.published_date || current.published_date,
+        youtube_channel_id:
+          metadata.youtube_channel_id || current.youtube_channel_id,
+        youtube_channel_name:
+          metadata.youtube_channel_name || current.youtube_channel_name,
+        youtube_channel_url:
+          metadata.youtube_channel_url || current.youtube_channel_url,
+        youtube_channel_avatar_url:
+          metadata.youtube_channel_avatar_url ||
+          current.youtube_channel_avatar_url,
+        youtube_metadata_fetched_at: new Date().toISOString(),
+      }));
+      setStatus("YouTube metadata loaded.");
+    } catch (error) {
+      setStatus(
+        `Could not load YouTube metadata: ${
+          error instanceof Error ? error.message : "Unknown error"
+        }`
+      );
+    } finally {
+      setLoading(false);
+    }
   }
 
   async function handleSaveArtistMedia() {
@@ -1000,6 +1081,11 @@ export default function AdminDashboard() {
       external_id: nullable(mediaForm.external_id),
       thumbnail_url: nullable(mediaForm.thumbnail_url),
       published_date: nullable(mediaForm.published_date),
+      youtube_channel_id: nullable(mediaForm.youtube_channel_id),
+      youtube_channel_name: nullable(mediaForm.youtube_channel_name),
+      youtube_channel_url: nullable(mediaForm.youtube_channel_url),
+      youtube_channel_avatar_url: nullable(mediaForm.youtube_channel_avatar_url),
+      youtube_metadata_fetched_at: nullable(mediaForm.youtube_metadata_fetched_at),
       is_official: mediaForm.is_official,
       is_featured: mediaForm.is_featured,
       display_order: mediaForm.display_order
@@ -1502,6 +1588,13 @@ export default function AdminDashboard() {
                         <p className="mt-1 text-xs text-gray-400">
                           {item.platform} - {item.media_type} - order {item.display_order}
                         </p>
+                        {(item.youtube_channel_name || item.published_date) && (
+                          <p className="mt-1 text-xs text-gray-500">
+                            {[item.youtube_channel_name, item.published_date]
+                              .filter(Boolean)
+                              .join(" - ")}
+                          </p>
+                        )}
                         {item.notes && (
                           <p className="mt-1 line-clamp-2 text-xs text-gray-500">
                             {item.notes}
@@ -1594,11 +1687,67 @@ export default function AdminDashboard() {
                     />
                   </Field>
 
+                  <button
+                    type="button"
+                    onClick={() => void handleAutofillYouTubeMetadata()}
+                    disabled={!canAutofillYouTubeMetadata}
+                    className="w-full rounded-lg border border-(--color-flagblue)/20 bg-white px-4 py-2.5 text-xs font-medium uppercase tracking-[0.16em] text-(--color-flagblue) transition hover:border-(--color-flagblue) disabled:cursor-not-allowed disabled:opacity-40"
+                  >
+                    Auto-fill from YouTube
+                  </button>
+
                   <Field label="Thumbnail URL">
                     <input
                       value={mediaForm.thumbnail_url ?? ""}
                       onChange={(event) => updateMediaForm("thumbnail_url", event.target.value)}
                       placeholder="Optional custom thumbnail"
+                      className={inputClass}
+                    />
+                  </Field>
+
+                  <Field label="YouTube Channel ID">
+                    <input
+                      value={mediaForm.youtube_channel_id ?? ""}
+                      onChange={(event) =>
+                        updateMediaForm("youtube_channel_id", event.target.value)
+                      }
+                      placeholder="YouTube channel ID"
+                      className={inputClass}
+                    />
+                  </Field>
+
+                  <Field label="YouTube Channel Name">
+                    <input
+                      value={mediaForm.youtube_channel_name ?? ""}
+                      onChange={(event) =>
+                        updateMediaForm("youtube_channel_name", event.target.value)
+                      }
+                      placeholder="Channel name"
+                      className={inputClass}
+                    />
+                  </Field>
+
+                  <Field label="YouTube Channel URL">
+                    <input
+                      value={mediaForm.youtube_channel_url ?? ""}
+                      onChange={(event) =>
+                        updateMediaForm("youtube_channel_url", event.target.value)
+                      }
+                      placeholder="https://www.youtube.com/channel/..."
+                      className={inputClass}
+                    />
+                  </Field>
+
+                  <Field label="YouTube Channel Logo URL">
+                    <input
+                      value={mediaForm.youtube_channel_avatar_url ?? ""}
+                      onChange={(event) =>
+                        updateMediaForm(
+                          "youtube_channel_avatar_url",
+                          event.target.value
+                        )
+                      }
+                      placeholder="Channel avatar/logo URL"
                       className={inputClass}
                     />
                   </Field>

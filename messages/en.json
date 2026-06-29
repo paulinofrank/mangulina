@@ -238,7 +238,7 @@
     "winner": "Winner",
     "nominee": "Nominee",
     "specialRecognition": "Special Recognition",
-    "videoInterviews": "Video Interviews",
+    "videoInterviews": "Artist's Videos",
     "interviewsSubtitle": "Interviews, conversations, and archival media connected to this artist.",
     "playAria": "Play {title}",
     "closeVideo": "Close video",
@@ -977,6 +977,16 @@
         "title": "Artist Profile Editor",
         "eyebrow": "Artists",
         "description": "Create, review, and update curated artist profiles, biographies, images, and editorial classification."
+      },
+      "releases": {
+        "title": "Releases / Albums Admin",
+        "eyebrow": "Catalog",
+        "description": "Create and edit albums, singles, EPs, compilations, release metadata, artist links, labels, and tracklists."
+      },
+      "recordings": {
+        "title": "Recordings / Songs Admin",
+        "eyebrow": "Catalog",
+        "description": "Create and edit songs, artists, YouTube IDs, genres, context, ISRCs, duration, and release links."
       },
       "songs": {
         "title": "Songs / Recordings Editor",

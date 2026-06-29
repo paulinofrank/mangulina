@@ -1,5 +1,63 @@
 import { NextResponse } from "next/server";
+import { requireAdminApiRole } from "@/lib/adminApiAuth";
 import { getSupabaseClient } from "@/lib/supabase";
+
+export async function GET(request: Request) {
+  const auth = await requireAdminApiRole();
+  if (auth.response) return auth.response;
+
+  const { searchParams } = new URL(request.url);
+  const id = searchParams.get("id");
+  const q = searchParams.get("q")?.trim() ?? "";
+  const limit = Math.min(Number(searchParams.get("limit") ?? "25"), 50);
+
+  let query = getSupabaseClient()
+    .from("artists")
+    .select("id,name,slug,stage_name,sort_name,status,primary_role,primary_genre,province,aliases")
+    .order("name", { ascending: true })
+    .limit(limit);
+
+  if (id) {
+    query = query.eq("id", id).limit(1);
+  } else if (q) {
+    const pattern = `%${q.replace(/[%_]/g, "")}%`;
+    query = query.or(
+      [
+        `name.ilike.${pattern}`,
+        `slug.ilike.${pattern}`,
+        `stage_name.ilike.${pattern}`,
+        `sort_name.ilike.${pattern}`,
+      ].join(","),
+    );
+  }
+
+  const { data, error } = await query;
+  if (error) {
+    return NextResponse.json({ ok: false, error: error.message }, { status: 500 });
+  }
+
+  let rows = data ?? [];
+
+  if (!id && q) {
+    const { data: aliasRows } = await getSupabaseClient()
+      .from("artists")
+      .select("id,name,slug,stage_name,sort_name,status,primary_role,primary_genre,province,aliases")
+      .contains("aliases", [q])
+      .limit(limit);
+    const byId = new Map(rows.map((artist) => [artist.id, artist]));
+    for (const artist of aliasRows ?? []) byId.set(artist.id, artist);
+    rows = [...byId.values()].slice(0, limit);
+  }
+
+  const artists = rows.map((artist) => ({
+    ...artist,
+    subtitle: [artist.primary_role, artist.primary_genre, artist.province, artist.stage_name]
+      .filter(Boolean)
+      .join(" · "),
+  }));
+
+  return NextResponse.json({ ok: true, artists });
+}
 
 export async function POST(request: Request) {
   const { artistId, artistData } = await request.json();
