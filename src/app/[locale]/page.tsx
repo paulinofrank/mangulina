@@ -1,5 +1,6 @@
 // app/page.tsx
 
+import type { Metadata } from "next";
 import MainWrapper from "@/components/layout/MainWrapper";
 import PageSection from "@/components/layout/PageSection";
 import { getHomeData } from "@/lib/homeApi";
@@ -18,15 +19,39 @@ import TopRisingStarsSection from "@/components/organisms/TopRisingStarsSection"
 import TopLegendsArtistsSection from "@/components/organisms/TopLegendsArtistsSection";
 import DecadeTimelineCarousel from "@/components/home/DecadeTimelineCarousel";
 import { getArchiveCounts } from "@/lib/getSongsByYear";
-import { createPageMetadata, DEFAULT_DESCRIPTION } from "@/lib/seo";
+import { createPageMetadata, type SeoLocale } from "@/lib/seo";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
 
-export const metadata = createPageMetadata({
-  title: "Dominican Music Database",
-  description: DEFAULT_DESCRIPTION,
-  path: "/",
-});
+const HOME_METADATA: Record<SeoLocale, { title: string; description: string }> = {
+  en: {
+    title: "Mangulina — The Dominican Music Database",
+    description:
+      "Explore Dominican artists, songs, albums, genres, awards, and music history.",
+  },
+  es: {
+    title: "Mangulina — La Base de Datos de Música Dominicana",
+    description:
+      "Explora artistas, canciones, álbumes, géneros, premios e historia de la música dominicana.",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale: routeLocale } = await params;
+  const locale: SeoLocale = routeLocale === "es" ? "es" : "en";
+  const { title, description } = HOME_METADATA[locale];
+
+  return createPageMetadata({
+    title,
+    description,
+    path: "/",
+    locale,
+  });
+}
 
 export const revalidate = 600; // 10 minutes
 

@@ -3,14 +3,37 @@ import SearchAnalytics from "@/components/analytics/SearchAnalytics";
 import MainWrapper from "@/components/layout/MainWrapper";
 import SearchContent from "./SearchContent";
 import { globalSearch } from "@/lib/searchApi";
-import { createPageMetadata } from "@/lib/seo";
+import { createPageMetadata, type SeoLocale } from "@/lib/seo";
 
-export const metadata: Metadata = createPageMetadata({
-  title: "Search Dominican Music",
-  description:
-    "Search Dominican artists, songs, releases, genres, and music history in Mangulina, the Dominican Music Database.",
-  path: "/search",
-});
+const SEARCH_METADATA: Record<SeoLocale, { title: string; description: string }> = {
+  en: {
+    title: "Search Dominican Music",
+    description:
+      "Search Dominican artists, songs, releases, genres, and music history in Mangulina, the Dominican Music Database.",
+  },
+  es: {
+    title: "Buscar Música Dominicana",
+    description:
+      "Busca artistas, canciones, álbumes, géneros e historia de la música dominicana en Mangulina, la Base de Datos de Música Dominicana.",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale: routeLocale } = await params;
+  const locale: SeoLocale = routeLocale === "es" ? "es" : "en";
+  const { title, description } = SEARCH_METADATA[locale];
+
+  return createPageMetadata({
+    title,
+    description,
+    path: "/search",
+    locale,
+  });
+}
 
 type SearchPageProps = {
   searchParams: Promise<{ q?: string }>;

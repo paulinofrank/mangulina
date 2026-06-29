@@ -2,15 +2,22 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
-import { createPageMetadata } from "@/lib/seo";
+import { createPageMetadata, type SeoLocale } from "@/lib/seo";
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale: routeLocale } = await params;
+  const locale: SeoLocale = routeLocale === "es" ? "es" : "en";
   const t = await getTranslations("legal.terms.metadata");
 
   return createPageMetadata({
     title: t("title"),
     description: t("description"),
     path: "/terms-of-use",
+    locale,
   });
 }
 

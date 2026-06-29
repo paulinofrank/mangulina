@@ -3,12 +3,23 @@ import { getTranslations } from "next-intl/server";
 import JsonLd from "@/components/seo/JsonLd";
 
 import { getPublishedProvinces } from "@/lib/provinces";
-import { createPageMetadata } from "@/lib/seo";
+import { createPageMetadata, type SeoLocale } from "@/lib/seo";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
 
-export async function generateMetadata() {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale: routeLocale } = await params;
+  const locale: SeoLocale = routeLocale === "es" ? "es" : "en";
   const t = await getTranslations("pages.discover");
-  return createPageMetadata({title: t("metadataTitle"), description: t("metadataDescription"), path: "/discover"});
+  return createPageMetadata({
+    title: t("metadataTitle"),
+    description: t("metadataDescription"),
+    path: "/discover",
+    locale,
+  });
 }
 
 const ARTIST_LINKS = [

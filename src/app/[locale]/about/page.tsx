@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
-import { createPageMetadata } from "@/lib/seo";
+import { createPageMetadata, type SeoLocale } from "@/lib/seo";
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale: routeLocale } = await params;
+  const locale: SeoLocale = routeLocale === "es" ? "es" : "en";
   const t = await getTranslations("pages.about");
   return createPageMetadata({
     title: t("metadataTitle"),
     description: t("metadataDescription"),
     path: "/about",
+    locale,
   });
 }
 

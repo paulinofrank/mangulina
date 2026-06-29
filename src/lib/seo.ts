@@ -8,11 +8,24 @@ export const SITE_URL = (
 ).replace(/\/$/, "");
 
 export const DEFAULT_DESCRIPTION =
-  "Explore Dominican artists, songs, albums, genres, awards and music history in Mangulina, the Dominican Music Database.";
+  "Explore Dominican artists, songs, albums, genres, awards, and music history.";
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
+
+export type SeoLocale = "en" | "es";
 
 export function buildCanonical(path: string) {
   const normalizedPath = path === "/" ? "" : `/${path.replace(/^\/+|\/+$/g, "")}`;
   return `${SITE_URL}${normalizedPath || "/"}`;
+}
+
+export function localizedPath(path: string, locale: SeoLocale) {
+  const normalized = `/${path.replace(/^\/+|\/+$/g, "")}`;
+  if (locale === "es") return normalized === "/" ? "/es" : `/es${normalized}`;
+  return normalized === "/" ? "/en" : `/en${normalized}`;
+}
+
+export function buildLocalizedCanonical(path: string, locale: SeoLocale) {
+  return buildCanonical(localizedPath(path, locale));
 }
 
 // Spanish twin of an English path: "/" -> "/es", "/artists" -> "/es/artists".
@@ -24,7 +37,7 @@ export function spanishPath(path: string) {
 // hreflang alternates shared by an English page and its Spanish twin.
 export function localeAlternates(path: string) {
   return {
-    en: buildCanonical(path),
+    en: buildCanonical(localizedPath(path, "en")),
     es: buildCanonical(spanishPath(path)),
   };
 }
@@ -64,6 +77,7 @@ type PageMetadataOptions = {
   description: string;
   path: string;
   image?: string | null;
+  locale?: SeoLocale;
   openGraphType?: "website" | "profile" | "article" | "music.song" | "music.album";
   noIndex?: boolean;
 };
@@ -73,11 +87,16 @@ export function createPageMetadata({
   description,
   path,
   image,
+  locale = "en",
   openGraphType = "website",
   noIndex = false,
 }: PageMetadataOptions): Metadata {
-  const canonical = buildCanonical(path);
-  const images = image ? [{ url: image }] : undefined;
+  const canonical = buildLocalizedCanonical(path, locale);
+  const imageUrl = image
+    ? image.startsWith("http")
+      ? image
+      : buildCanonical(image)
+    : DEFAULT_OG_IMAGE;
 
   return {
     title,
@@ -91,16 +110,24 @@ export function createPageMetadata({
     openGraph: {
       type: openGraphType,
       siteName: SITE_NAME,
+      locale: locale === "es" ? "es_DO" : "en_US",
       title,
       description,
       url: canonical,
-      images,
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
     twitter: {
-      card: image ? "summary_large_image" : "summary",
+      card: "summary_large_image",
       title,
       description,
-      images: image ? [image] : undefined,
+      images: [imageUrl],
     },
     robots: noIndex ? { index: false, follow: false } : undefined,
   };

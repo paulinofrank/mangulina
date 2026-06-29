@@ -8,7 +8,7 @@ import "./globals.css";
 
 import GradientBackground from "@/components/atoms/GradientBackground";
 import RoutePageView from "@/components/analytics/RoutePageView";
-import { DEFAULT_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/seo";
+import { DEFAULT_DESCRIPTION, DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const finlandica = Finlandica({
   subsets: ["latin"],
@@ -49,14 +49,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
-    title: "Mangulina | Dominican Music Database",
+    title: "Mangulina — The Dominican Music Database",
     description: DEFAULT_DESCRIPTION,
     url: SITE_URL,
+    locale: "en_US",
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: "Mangulina — The Dominican Music Database",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
-    title: "Mangulina | Dominican Music Database",
+    card: "summary_large_image",
+    title: "Mangulina — The Dominican Music Database",
     description: DEFAULT_DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

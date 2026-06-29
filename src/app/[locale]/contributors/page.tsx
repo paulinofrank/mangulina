@@ -4,11 +4,22 @@ import { getTranslations } from "next-intl/server";
 import ContributorImage from "@/components/atoms/ContributorImage";
 import { supabase } from "@/lib/supabase";
 import type { Contributor } from "@/types/contributor";
-import { createPageMetadata } from "@/lib/seo";
+import { createPageMetadata, type SeoLocale } from "@/lib/seo";
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale: routeLocale } = await params;
+  const locale: SeoLocale = routeLocale === "es" ? "es" : "en";
   const t = await getTranslations("pages.contributors");
-  return createPageMetadata({title: t("metadataTitle"), description: t("metadataDescription"), path: "/contributors"});
+  return createPageMetadata({
+    title: t("metadataTitle"),
+    description: t("metadataDescription"),
+    path: "/contributors",
+    locale,
+  });
 }
 
 function SectionEyebrow({ children }: { children: React.ReactNode }) {
