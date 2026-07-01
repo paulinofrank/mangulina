@@ -37,6 +37,27 @@ function EmptyRow({ message }: { message: string }) {
   return <p className="py-5 text-center text-sm text-gray-500">{message}</p>;
 }
 
+function SectionHeading({ title, description }: { title: string; description?: string }) {
+  return (
+    <div className="mb-4">
+      <h3 className="text-sm font-bold uppercase tracking-[0.18em] text-[#002D62]">{title}</h3>
+      {description && <p className="mt-1 text-xs text-gray-500">{description}</p>}
+    </div>
+  );
+}
+
+function ComingSoonCard({ title }: { title: string }) {
+  return (
+    <ReportCard title={title}>
+      <div className="flex items-center justify-center py-8">
+        <span className="rounded-full border border-dashed border-gray-300 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.16em] text-gray-400">
+          Coming Soon
+        </span>
+      </div>
+    </ReportCard>
+  );
+}
+
 interface AnalyticsData {
   artistViewsData: Array<{ artist_id: string; views_7d: number; views_30d: number }>;
   recordingViewsData: Array<{ recording_id: string; views_7d: number; views_30d: number }>;
@@ -204,195 +225,241 @@ export default function AdminAnalyticsClientWrapper({
 
       </div>
 
-      {/* Analytics Data */}
-      <div className="space-y-6">
-        {/* Trend Charts */}
-        <div className="grid gap-6 lg:grid-cols-1">
-          <ReportCard
-            title={t("reports.artistViewsTrend.title")}
-            description={t("reports.artistViewsTrend.description")}
-          >
-            <TrendChart
-              title={t("charts.viewsPerDay")}
-              data={data.artistTrendsData}
-              color="crimson"
-            />
-          </ReportCard>
+      {/* Product Analytics — Mangulina-specific data, grouped into sections. */}
+      <div className="space-y-10">
+        {/* ===================== VIEWS ===================== */}
+        <div>
+          <SectionHeading title="Views" description="Profile views by entity and over time." />
+          <div className="grid gap-6 lg:grid-cols-2">
+            <ReportCard
+              title={t("reports.artistViewsTrend.title")}
+              description={t("reports.artistViewsTrend.description")}
+            >
+              <TrendChart
+                title={t("charts.viewsPerDay")}
+                data={data.artistTrendsData}
+                color="crimson"
+              />
+            </ReportCard>
 
-          <ReportCard
-            title={t("reports.recordingViewsTrend.title")}
-            description={t("reports.recordingViewsTrend.description")}
-          >
-            <TrendChart
-              title={t("charts.viewsPerDay")}
-              data={data.recordingTrendsData}
-              color="blue"
-            />
-          </ReportCard>
+            <ReportCard
+              title={t("reports.recordingViewsTrend.title")}
+              description={t("reports.recordingViewsTrend.description")}
+            >
+              <TrendChart
+                title={t("charts.viewsPerDay")}
+                data={data.recordingTrendsData}
+                color="blue"
+              />
+            </ReportCard>
+          </div>
 
-          <ReportCard
-            title={t("reports.searchTrend.title")}
-            description={t("reports.searchTrend.description")}
-          >
-            <TrendChart
-              title={t("charts.searchesPerDay")}
-              data={data.searchTrendsData}
-              color="crimson"
-            />
-          </ReportCard>
+          <div className="mt-6 grid gap-6 lg:grid-cols-2">
+            <ReportCard
+              title={t("reports.topArtistViews.title")}
+              description={t("reports.topArtistViews.description")}
+            >
+              {data.artistViewsData.length === 0 ? (
+                <EmptyRow message={t("noActivityYet")} />
+              ) : (
+                <div className="divide-y divide-gray-100">
+                  {data.artistViewsData.map((row) => {
+                    const artist = artistMap.get(row.artist_id);
+                    const views = row.views_7d || row.views_30d || 0;
+                    return (
+                      <div
+                        key={row.artist_id}
+                        className="flex items-center justify-between gap-4 py-1.5"
+                      >
+                        {artist ? (
+                          <Link
+                            href={`/artists/${artist.slug}`}
+                            className="min-w-0 truncate text-sm font-medium text-[#002D62] hover:text-[#CE1126]"
+                          >
+                            {artist.name}
+                          </Link>
+                        ) : (
+                          <span className="truncate text-sm text-gray-500">{t("labels.unknownArtist")}</span>
+                        )}
+                        <span className="shrink-0 text-sm tabular-nums text-gray-600">
+                          {views.toLocaleString()}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </ReportCard>
+
+            <ReportCard
+              title={t("reports.topRecordingViews.title")}
+              description={t("reports.topRecordingViews.description")}
+            >
+              {data.recordingViewsData.length === 0 ? (
+                <EmptyRow message={t("noActivityYet")} />
+              ) : (
+                <div className="divide-y divide-gray-100">
+                  {data.recordingViewsData.map((row) => {
+                    const recording = recordingMap.get(row.recording_id);
+                    const views = row.views_7d || row.views_30d || 0;
+                    return (
+                      <div
+                        key={row.recording_id}
+                        className="flex items-center justify-between gap-4 py-1.5"
+                      >
+                        {recording ? (
+                          <Link
+                            href={`/songs/${recording.slug ?? recording.id}`}
+                            className="min-w-0 truncate text-sm font-medium text-[#002D62] hover:text-[#CE1126]"
+                          >
+                            {recording.title}
+                          </Link>
+                        ) : (
+                          <span className="truncate text-sm text-gray-500">{t("labels.unknownRecording")}</span>
+                        )}
+                        <span className="shrink-0 text-sm tabular-nums text-gray-600">
+                          {views.toLocaleString()}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </ReportCard>
+
+            <ReportCard
+              title={t("reports.topGenreViews.title")}
+              description={t("reports.topGenreViews.description")}
+            >
+              {data.genreViewsData.length === 0 ? (
+                <EmptyRow message={t("noActivityYet")} />
+              ) : (
+                <div className="divide-y divide-gray-100">
+                  {data.genreViewsData.map((row) => {
+                    const views = row.views_7d || row.views_30d || 0;
+                    return (
+                      <div
+                        key={row.genre_slug}
+                        className="flex items-center justify-between gap-4 py-1.5"
+                      >
+                        <Link
+                          href={`/genres/${row.genre_slug}`}
+                          className="min-w-0 truncate text-sm font-medium text-[#002D62] hover:text-[#CE1126]"
+                        >
+                          {row.genre_slug}
+                        </Link>
+                        <span className="shrink-0 text-sm tabular-nums text-gray-600">
+                          {views.toLocaleString()}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </ReportCard>
+
+            <ComingSoonCard title="Release Views" />
+          </div>
         </div>
 
-        {/* Main Reports */}
-        <div className="grid gap-6 lg:grid-cols-2">
-          <ReportCard
-            title={t("reports.topArtistViews.title")}
-            description={t("reports.topArtistViews.description")}
-          >
-            {data.artistViewsData.length === 0 ? (
-              <EmptyRow message={t("noActivityYet")} />
-            ) : (
-              <div className="divide-y divide-gray-100">
-                {data.artistViewsData.map((row) => {
-                  const artist = artistMap.get(row.artist_id);
-                  const views = row.views_7d || row.views_30d || 0;
-                  return (
-                    <div
-                      key={row.artist_id}
-                      className="flex items-center justify-between gap-4 py-1.5"
-                    >
-                      {artist ? (
-                        <Link
-                          href={`/artists/${artist.slug}`}
-                          className="min-w-0 truncate text-sm font-medium text-[#002D62] hover:text-[#CE1126]"
-                        >
-                          {artist.name}
-                        </Link>
-                      ) : (
-                        <span className="truncate text-sm text-gray-500">{t("labels.unknownArtist")}</span>
-                      )}
+        {/* ===================== SEARCH ===================== */}
+        <div>
+          <SectionHeading title="Search" description="What visitors are looking for." />
+          <div className="grid gap-6 lg:grid-cols-1">
+            <ReportCard
+              title={t("reports.searchTrend.title")}
+              description={t("reports.searchTrend.description")}
+            >
+              <TrendChart
+                title={t("charts.searchesPerDay")}
+                data={data.searchTrendsData}
+                color="crimson"
+              />
+            </ReportCard>
+          </div>
+
+          <div className="mt-6 grid gap-6 lg:grid-cols-2">
+            <ReportCard
+              title={t("reports.searchesNoResults.title")}
+              description={t("reports.searchesNoResults.description")}
+            >
+              {data.searchesData.length === 0 ? (
+                <EmptyRow message={t("noActivityYet")} />
+              ) : (
+                <div className="divide-y divide-gray-100">
+                  {data.searchesData.map((row) => (
+                    <div key={row.query} className="flex items-center justify-between gap-4 py-3">
+                      <div className="min-w-0">
+                        <p className="truncate text-sm font-medium text-[#002D62]">{row.query}</p>
+                        <p className="mt-1 text-xs text-gray-400">
+                          {t("labels.lastSearched")}{new Date(row.last_searched_at).toLocaleDateString()}
+                        </p>
+                      </div>
                       <span className="shrink-0 text-sm tabular-nums text-gray-600">
-                        {views.toLocaleString()}
+                        {row.search_count.toLocaleString()}
                       </span>
                     </div>
-                  );
-                })}
-              </div>
-            )}
-          </ReportCard>
+                  ))}
+                </div>
+              )}
+            </ReportCard>
 
-          <ReportCard
-            title={t("reports.topRecordingViews.title")}
-            description={t("reports.topRecordingViews.description")}
-          >
-            {data.recordingViewsData.length === 0 ? (
-              <EmptyRow message={t("noActivityYet")} />
-            ) : (
-              <div className="divide-y divide-gray-100">
-                {data.recordingViewsData.map((row) => {
-                  const recording = recordingMap.get(row.recording_id);
-                  const views = row.views_7d || row.views_30d || 0;
-                  return (
-                    <div
-                      key={row.recording_id}
-                      className="flex items-center justify-between gap-4 py-1.5"
-                    >
-                      {recording ? (
-                        <Link
-                          href={`/songs/${recording.slug ?? recording.id}`}
-                          className="min-w-0 truncate text-sm font-medium text-[#002D62] hover:text-[#CE1126]"
-                        >
-                          {recording.title}
-                        </Link>
-                      ) : (
-                        <span className="truncate text-sm text-gray-500">{t("labels.unknownRecording")}</span>
-                      )}
-                      <span className="shrink-0 text-sm tabular-nums text-gray-600">
-                        {views.toLocaleString()}
+            <ComingSoonCard title="Trending Searches" />
+          </div>
+        </div>
+
+        {/* ===================== PLATFORM CLICKS ===================== */}
+        <div>
+          <SectionHeading title="Platform Clicks" description="Streaming-link engagement." />
+          <div className="grid gap-6 lg:grid-cols-2">
+            <ReportCard
+              title={t("reports.platformClicks.title")}
+              description={t("reports.platformClicks.description")}
+            >
+              {data.clicksData.length === 0 ? (
+                <EmptyRow message={t("noActivityYet")} />
+              ) : (
+                <div className="divide-y divide-gray-100">
+                  {data.clicksData.map((row) => (
+                    <div key={row.platform} className="flex items-center justify-between gap-4 py-1.5">
+                      <span className="text-sm font-medium text-[#002D62]">
+                        {formatPlatform(row.platform)}
+                      </span>
+                      <span className="text-sm tabular-nums text-gray-600">
+                        {row.clicks_30d.toLocaleString()}
                       </span>
                     </div>
-                  );
-                })}
-              </div>
-            )}
-          </ReportCard>
+                  ))}
+                </div>
+              )}
+            </ReportCard>
 
-          <ReportCard
-            title={t("reports.topGenreViews.title")}
-            description={t("reports.topGenreViews.description")}
-          >
-            {data.genreViewsData.length === 0 ? (
-              <EmptyRow message={t("noActivityYet")} />
-            ) : (
-              <div className="divide-y divide-gray-100">
-                {data.genreViewsData.map((row) => {
-                  const views = row.views_7d || row.views_30d || 0;
-                  return (
-                    <div
-                      key={row.genre_slug}
-                      className="flex items-center justify-between gap-4 py-1.5"
-                    >
-                      <Link
-                        href={`/genres/${row.genre_slug}`}
-                        className="min-w-0 truncate text-sm font-medium text-[#002D62] hover:text-[#CE1126]"
-                      >
-                        {row.genre_slug}
-                      </Link>
-                      <span className="shrink-0 text-sm tabular-nums text-gray-600">
-                        {views.toLocaleString()}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            )}
-          </ReportCard>
+            <ComingSoonCard title="Clicks by Artist" />
+            <ComingSoonCard title="Clicks by Recording" />
+          </div>
+        </div>
 
-          <ReportCard
-            title={t("reports.platformClicks.title")}
-            description={t("reports.platformClicks.description")}
-          >
-            {data.clicksData.length === 0 ? (
-              <EmptyRow message={t("noActivityYet")} />
-            ) : (
-              <div className="divide-y divide-gray-100">
-                {data.clicksData.map((row) => (
-                  <div key={row.platform} className="flex items-center justify-between gap-4 py-1.5">
-                    <span className="text-sm font-medium text-[#002D62]">
-                      {formatPlatform(row.platform)}
-                    </span>
-                    <span className="text-sm tabular-nums text-gray-600">
-                      {row.clicks_30d.toLocaleString()}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            )}
-          </ReportCard>
+        {/* ===================== POPULARITY ===================== */}
+        <div>
+          <SectionHeading
+            title="Popularity"
+            description="Rankings (currently powered on the public site; admin views coming soon)."
+          />
+          <div className="grid gap-6 lg:grid-cols-3">
+            <ComingSoonCard title="Most Viewed" />
+            <ComingSoonCard title="Trending" />
+            <ComingSoonCard title="Rising" />
+          </div>
+        </div>
 
-          <ReportCard
-            title={t("reports.searchesNoResults.title")}
-            description={t("reports.searchesNoResults.description")}
-          >
-            {data.searchesData.length === 0 ? (
-              <EmptyRow message={t("noActivityYet")} />
-            ) : (
-              <div className="divide-y divide-gray-100">
-                {data.searchesData.map((row) => (
-                  <div key={row.query} className="flex items-center justify-between gap-4 py-3">
-                    <div className="min-w-0">
-                      <p className="truncate text-sm font-medium text-[#002D62]">{row.query}</p>
-                      <p className="mt-1 text-xs text-gray-400">
-                        {t("labels.lastSearched")}{new Date(row.last_searched_at).toLocaleDateString()}
-                      </p>
-                    </div>
-                    <span className="shrink-0 text-sm tabular-nums text-gray-600">
-                      {row.search_count.toLocaleString()}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            )}
-          </ReportCard>
+        {/* ===================== REPORTS ===================== */}
+        <div>
+          <SectionHeading title="Reports" description="Periodic summaries." />
+          <div className="grid gap-6 lg:grid-cols-3">
+            <ComingSoonCard title="Daily" />
+            <ComingSoonCard title="Weekly" />
+            <ComingSoonCard title="Monthly" />
+          </div>
         </div>
 
         {/* Export Section */}

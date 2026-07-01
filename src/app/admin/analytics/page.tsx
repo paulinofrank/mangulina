@@ -1,10 +1,16 @@
 import Link from "next/link";
 import AdminAnalyticsClientWrapper from "./AdminAnalyticsClientWrapper";
+import AnalyticsHealthSection from "./AnalyticsHealthSection";
+import AnalyticsTabs from "./AnalyticsTabs";
+
+// Always render fresh so the health diagnostics reflect the latest state.
+export const dynamic = "force-dynamic";
 
 /**
  * Admin Analytics Dashboard Page (Server Component)
  *
  * Comprehensive analytics dashboard for editorial team to monitor:
+ * - Pipeline health (read-only diagnostics, top of page)
  * - Top viewed artists and recordings
  * - Genre views and trends
  * - Searches with no results (catalog gaps)
@@ -40,7 +46,12 @@ export default function AdminAnalyticsPage() {
           </div>
         </header>
 
-        <AdminAnalyticsClientWrapper />
+        {/* Tabbed analytics area. Overview = read-only ops/health (server-rendered).
+            Product Analytics = the Mangulina data dashboard (loads on tab open). */}
+        <AnalyticsTabs
+          overview={<AnalyticsHealthSection />}
+          product={<AdminAnalyticsClientWrapper />}
+        />
       </div>
     </main>
   );

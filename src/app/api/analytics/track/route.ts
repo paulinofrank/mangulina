@@ -68,20 +68,6 @@ export async function POST(request: Request) {
     const errorMsg = error instanceof Error ? error.message : String(error);
     console.error("Analytics tracking failed:", errorMsg);
 
-    // If session_id column doesn't exist yet, strip it and retry
-    if (errorMsg.includes("session_id") && errorMsg.includes("schema cache")) {
-      try {
-        const metadataWithoutSession = { ...metadata };
-        delete metadataWithoutSession.session_id;
-
-        const handler = handlers[eventType];
-        if (handler) await handler(body, metadataWithoutSession);
-        return NextResponse.json({ ok: true });
-      } catch (retryError) {
-        console.error("Retry failed:", retryError);
-      }
-    }
-
     // Return 200 OK so client doesn't retry; analytics must never interrupt user actions
     return NextResponse.json({ ok: false }, { status: 200 });
   }

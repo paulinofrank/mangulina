@@ -29,32 +29,48 @@ export type AnalyticsEvent =
     };
 
 /**
- * Gets or creates a session ID for this browser
- * Stored in sessionStorage to distinguish devices on same network
- * Unlike IP hash, this persists only for the current browsing session
- * Falls back to memory storage if sessionStorage is unavailable
+ * Gets or creates a stable, anonymous visitor ID for this browser.
+ *
+ * Stored in localStorage (not sessionStorage) so it persists across tabs and
+ * browser restarts — this is what makes "one view per visitor per day"
+ * deduplication possible (the per-day bucket is applied server-side). The ID
+ * is an opaque random value: no login, no IP, no personal data.
+ *
+ * Falls back to memory storage if localStorage is unavailable (private mode).
  */
+const VISITOR_ID_KEY = "mangulina_visitor_id";
 let fallbackSessionId: string | null = null;
+
+function generateVisitorId(): string {
+  try {
+    if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
+      return crypto.randomUUID();
+    }
+  } catch {
+    // crypto unavailable, fall through to Math.random
+  }
+  return `v_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+}
 
 function getSessionId(): string | null {
   if (typeof window === "undefined") return fallbackSessionId || null;
 
   try {
-    if (window.sessionStorage) {
-      let sessionId = window.sessionStorage.getItem("analytics_session_id");
-      if (!sessionId) {
-        sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
-        window.sessionStorage.setItem("analytics_session_id", sessionId);
+    if (window.localStorage) {
+      let visitorId = window.localStorage.getItem(VISITOR_ID_KEY);
+      if (!visitorId) {
+        visitorId = generateVisitorId();
+        window.localStorage.setItem(VISITOR_ID_KEY, visitorId);
       }
-      return sessionId;
+      return visitorId;
     }
   } catch {
-    // sessionStorage might be disabled or in private mode
+    // localStorage might be disabled or in private mode
   }
 
-  // Fallback: generate and cache in memory for this session
+  // Fallback: generate and cache in memory for this page session
   if (!fallbackSessionId) {
-    fallbackSessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+    fallbackSessionId = generateVisitorId();
   }
   return fallbackSessionId;
 }
@@ -62,8 +78,11 @@ function getSessionId(): string | null {
 function sendAnalyticsEvent(event: AnalyticsEvent) {
   if (typeof window === "undefined") return;
 
-  // Skip analytics on localhost (development environment)
-  if (typeof window !== "undefined" && window.location.hostname === "localhost") {
+  // Only track when analytics is explicitly enabled. Set
+  // NEXT_PUBLIC_ENABLE_ANALYTICS="true" in the production environment ONLY so
+  // that local dev, 127.0.0.1, LAN testing, and Vercel preview deployments
+  // never write into the production analytics tables.
+  if (process.env.NEXT_PUBLIC_ENABLE_ANALYTICS !== "true") {
     return;
   }
 

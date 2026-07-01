@@ -146,8 +146,24 @@ export function buildEventMetadata(
 }
 
 /**
- * Processes artist view event and increments view counter
- * Deduplicates views from the same session within 1 minute
+ * Common RPC params shared by every record_*_view function.
+ * Dedup (one view per session per day) and the atomic counter increment are
+ * enforced inside the database function — see
+ * 20260630000000_atomic_dedup_view_tracking.sql.
+ */
+function viewRpcParams(metadata: Record<string, unknown>) {
+  return {
+    p_session: (metadata.session_id as string | null) ?? null,
+    p_source: (metadata.source as string | null) ?? null,
+    p_referrer: (metadata.referrer as string | null) ?? null,
+    p_user_agent: (metadata.user_agent as string | null) ?? null,
+    p_ip_hash: (metadata.ip_hash as string | null) ?? null,
+  };
+}
+
+/**
+ * Processes artist view event. Insert + dedup + counter increment happen
+ * atomically inside record_artist_view (idempotent per session per day).
  */
 export async function processArtistViewEvent(
   data: RequestBody,
@@ -157,39 +173,15 @@ export async function processArtistViewEvent(
   if (!artistId) throw new Error("Invalid artist_id");
 
   const supabase = getSupabaseServiceClient();
-  const sessionId = metadata.session_id as string | undefined;
-
-  // Deduplication: Check if same session viewed this artist in the last 60 seconds
-  if (sessionId) {
-    const oneMinuteAgo = new Date(Date.now() - 60 * 1000).toISOString();
-    const { data: recentViews } = await supabase
-      .from("artist_view_events")
-      .select("id", { count: "exact", head: true })
-      .eq("artist_id", artistId)
-      .eq("session_id", sessionId)
-      .gt("created_at", oneMinuteAgo);
-
-    if (recentViews && recentViews.length > 0) {
-      // Duplicate view detected, skip tracking
-      return;
-    }
-  }
-
-  const { error } = await supabase.from("artist_view_events").insert({
-    artist_id: artistId,
-    ...metadata,
+  const { error } = await supabase.rpc("record_artist_view", {
+    p_artist_id: artistId,
+    ...viewRpcParams(metadata),
   });
   if (error) throw error;
-
-  const { error: incrementError } = await supabase.rpc("increment_artist_views", {
-    p_artist_id: artistId,
-  });
-  if (incrementError) throw incrementError;
 }
 
 /**
- * Processes recording view event and increments view counter
- * Deduplicates views from the same session within 1 minute
+ * Processes recording view event (atomic dedup + counter increment).
  */
 export async function processRecordingViewEvent(
   data: RequestBody,
@@ -199,38 +191,15 @@ export async function processRecordingViewEvent(
   if (!recordingId) throw new Error("Invalid recording_id");
 
   const supabase = getSupabaseServiceClient();
-  const sessionId = metadata.session_id as string | undefined;
-
-  // Deduplication: Check if same session viewed this recording in the last 60 seconds
-  if (sessionId) {
-    const oneMinuteAgo = new Date(Date.now() - 60 * 1000).toISOString();
-    const { data: recentViews } = await supabase
-      .from("recording_view_events")
-      .select("id", { count: "exact", head: true })
-      .eq("recording_id", recordingId)
-      .eq("session_id", sessionId)
-      .gt("created_at", oneMinuteAgo);
-
-    if (recentViews && recentViews.length > 0) {
-      // Duplicate view detected, skip tracking
-      return;
-    }
-  }
-
-  const { error } = await supabase.from("recording_view_events").insert({
-    recording_id: recordingId,
-    ...metadata,
+  const { error } = await supabase.rpc("record_recording_view", {
+    p_recording_id: recordingId,
+    ...viewRpcParams(metadata),
   });
   if (error) throw error;
-
-  const { error: incrementError } = await supabase.rpc("increment_recording_views", {
-    p_recording_id: recordingId,
-  });
-  if (incrementError) throw incrementError;
 }
 
 /**
- * Processes release view event and increments view counter
+ * Processes release view event (atomic dedup + counter increment).
  */
 export async function processReleaseViewEvent(
   data: RequestBody,
@@ -240,23 +209,15 @@ export async function processReleaseViewEvent(
   if (!releaseId) throw new Error("Invalid release_id");
 
   const supabase = getSupabaseServiceClient();
-
-  const { error } = await supabase.from("release_view_events").insert({
-    release_id: releaseId,
-    ...metadata,
+  const { error } = await supabase.rpc("record_release_view", {
+    p_release_id: releaseId,
+    ...viewRpcParams(metadata),
   });
   if (error) throw error;
-
-  const { error: incrementError } = await supabase.rpc("increment_release_views", {
-    p_release_id: releaseId,
-  });
-  if (incrementError) {
-    console.warn("Release view increment skipped:", incrementError.message);
-  }
 }
 
 /**
- * Processes genre view event
+ * Processes genre view event (atomic dedup; genres have no counter today).
  */
 export async function processGenreViewEvent(
   data: RequestBody,
@@ -266,10 +227,9 @@ export async function processGenreViewEvent(
   if (!genreSlug) throw new Error("Invalid genre_slug");
 
   const supabase = getSupabaseServiceClient();
-
-  const { error } = await supabase.from("genre_view_events").insert({
-    genre_slug: genreSlug,
-    ...metadata,
+  const { error } = await supabase.rpc("record_genre_view", {
+    p_genre_slug: genreSlug,
+    ...viewRpcParams(metadata),
   });
   if (error) throw error;
 }

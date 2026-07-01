@@ -8,6 +8,7 @@ import type {
   MostAwardedArtistSummary,
 } from "@/types/home";
 import type { Artist } from "@/types/music";
+import { getRecordingViews7d, getArtistViews7d } from "@/lib/analyticsRollups";
 
 export async function getHomeData() {
   const supabase = getSupabaseClient();
@@ -46,20 +47,50 @@ export async function getHomeData() {
   // Loaded in BirthdaySection using the visitor's local browser date.
   const birthdayArtists: Artist[] = [];
 
-  // 3. Trending Songs — top by real view count from recordings_with_release_info
-  // Fetch extra rows to account for filtering out unpublished artists
-  const trendingResponse = await supabase
-    .from("recordings_with_release_info")
-    .select("recording_id, recording_title, views, release_id, artist_id, artist_name")
-    .order("views", { ascending: false, nullsFirst: false })
-    .limit(20);
+  // 3. Trending Songs — ranked by REAL last-7-day activity (mv_recording_views_7d),
+  // not all-time views. Falls back to all-time `views` when the 7-day window is
+  // sparse so the section is never empty. The card still displays the all-time
+  // view count; only the ordering reflects recent momentum.
+  const recordingViews7d = await getRecordingViews7d();
+
+  const top7dRecordingIds = [...recordingViews7d.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 40)
+    .map(([id]) => id);
+
+  const [hot7dRes, allTimeTrendingRes] = await Promise.all([
+    top7dRecordingIds.length
+      ? supabase
+          .from("recordings_with_release_info")
+          .select("recording_id, recording_title, views, release_id, artist_id, artist_name")
+          .in("recording_id", top7dRecordingIds)
+      : Promise.resolve({ data: [] as any[] }),
+    supabase
+      .from("recordings_with_release_info")
+      .select("recording_id, recording_title, views, release_id, artist_id, artist_name")
+      .order("views", { ascending: false, nullsFirst: false })
+      .limit(60),
+  ]);
+
+  // Merge unique by recording_id, then rank by 7-day views with all-time tiebreak.
+  const trendingPool = new Map<string, any>();
+  for (const r of [
+    ...(((hot7dRes.data as any[]) || [])),
+    ...(((allTimeTrendingRes.data as any[]) || [])),
+  ]) {
+    if (r?.recording_id && !trendingPool.has(r.recording_id)) {
+      trendingPool.set(r.recording_id, r);
+    }
+  }
+
+  const rankedTrending = [...trendingPool.values()].sort((a, b) => {
+    const av = recordingViews7d.get(a.recording_id) || 0;
+    const bv = recordingViews7d.get(b.recording_id) || 0;
+    return bv - av || Number(b.views || 0) - Number(a.views || 0);
+  });
 
   const trendingArtistIds = [
-    ...new Set(
-      ((trendingResponse.data || []) as any[])
-        .map((r) => r.artist_id)
-        .filter(Boolean)
-    ),
+    ...new Set(rankedTrending.map((r) => r.artist_id).filter(Boolean)),
   ];
   const publishedTrendingArtistIds = new Set<string>();
 
@@ -75,7 +106,7 @@ export async function getHomeData() {
     }
   }
 
-  const filteredTrending = (trendingResponse.data || [])
+  const filteredTrending = rankedTrending
     .filter((r: any) => !r.artist_id || publishedTrendingArtistIds.has(r.artist_id))
     .slice(0, 12);
 
@@ -296,7 +327,9 @@ export async function getHomeData() {
       views: a.views,
     }));
 
-  // 11. Rising Stars (Emerging Artists)
+  // 11. Rising Stars — emerging-tagged artists ranked by REAL last-7-day views
+  // (weekly trending), with all-time `views` as a tiebreak so the section is
+  // never empty while the 7-day window is sparse. Card still shows all-time views.
   const risingResponse = await supabase
     .from("artists")
     .select("id, slug, name, province, views")
@@ -306,16 +339,22 @@ export async function getHomeData() {
       ascending: false,
       nullsFirst: false,
     })
-    .limit(10);
+    .limit(100);
+
+  const artistViews7d = await getArtistViews7d();
 
   const risingStars: ArtistSummary[] =
-    ((risingResponse.data as ArtistSummary[]) || []).map((a) => ({
-      id: a.id,
-      slug: a.slug,
-      name: a.name,
-      province: a.province,
-      views: a.views,
-    }));
+    ((risingResponse.data as ArtistSummary[]) || [])
+      .map((a) => ({ a, v7: artistViews7d.get(a.id) || 0 }))
+      .sort((x, y) => y.v7 - x.v7 || Number(y.a.views || 0) - Number(x.a.views || 0))
+      .slice(0, 10)
+      .map(({ a }) => ({
+        id: a.id,
+        slug: a.slug,
+        name: a.name,
+        province: a.province,
+        views: a.views,
+      }));
 
   // 12. Top Legends Artists
   const legendsResponse = await supabase

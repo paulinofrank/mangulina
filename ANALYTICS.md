@@ -39,8 +39,23 @@ Validates, sanitizes, and persists events to Supabase:
 
 3. **Storage**
    - Events inserted into type-specific tables
-   - View counters incremented on parent entities
+   - View counters incremented on parent entities **atomically and deduplicated
+     in the database** — one view per visitor per day per entity (enforced by a
+     partial UNIQUE index + `record_*_view` SECURITY DEFINER functions). Browser
+     refresh, reload, back-navigation, React re-mount, and multiple tabs no
+     longer inflate counters.
    - All database access uses service role (no client access)
+
+### Most Viewed vs. Trending vs. Rising
+
+These are distinct concepts backed by different sources:
+
+- **Most Viewed / "Top …" sections** — all-time, deduplicated `views` column on
+  `artists` / `recordings` / `releases`.
+- **Trending Songs** — last 7 days, from `mv_recording_views_7d` (materialized,
+  refreshed every 15 min), with all-time fallback when the window is sparse.
+- **Rising Stars** — `emerging`-tagged artists ranked by last-7-day views
+  (`mv_artist_views_7d`), with all-time fallback.
 
 ### Database Schema
 
@@ -280,9 +295,14 @@ CREATE TABLE public.my_view_events (
 
 ### Retention
 
-- **90-day granular events**: Full detail on what happened
-- **Long-term trending**: Aggregations kept indefinitely for historical analysis
-- **Automatic cleanup**: SQL function runs daily at 2 AM to delete events older than 90 days
+- **90-day granular events** (planned target): Full detail on what happened
+- **Long-term trending**: Aggregations / `views` counters kept indefinitely for historical analysis
+- **Automatic cleanup**: a `delete_old_analytics_events(days)` function and an
+  `analytics_retention_preview` view are installed but **DORMANT** — nothing is
+  scheduled and no rows are deleted. Review `analytics_retention_preview`, then
+  schedule the cleanup explicitly when approved (see the commented block in
+  `20260701001000_analytics_retention_plan.sql`). The `views` counters are never
+  affected by retention.
 
 ## Privacy & Compliance
 

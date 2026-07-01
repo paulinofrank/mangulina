@@ -146,7 +146,7 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-0 border-t border-black/10 pt-6 text-center">
             <div className="flex flex-col items-center gap-0">
               <div className="flex items-center gap-2">
-                <Image src="/icon.svg" alt={t("logo")} width={28} height={28} />
+                <Image src="/icon.svg" alt={t("logo")} width={28} height={28} className="w-auto" />
                 <span className="text-lg font-medium tracking-tight text-[#002D62]">
                   Mangulina<span className="tm-fix">&trade;</span>
                 </span>
