@@ -36,8 +36,8 @@ function firstNonEmpty(...values: Array<string | null | undefined>) {
 
 function getLocalizedArtistBio(artist: ArtistProfileData, locale: string) {
   return locale === "es"
-    ? firstNonEmpty(artist.bio_es, artist.bio_en, artist.bio)
-    : firstNonEmpty(artist.bio_en, artist.bio, artist.bio_es);
+    ? firstNonEmpty(artist.bio_es, artist.bio_en)
+    : firstNonEmpty(artist.bio_en);
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

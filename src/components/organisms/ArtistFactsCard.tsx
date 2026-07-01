@@ -322,11 +322,13 @@ function GroupsAndProjectsList({
   relationships,
   direction,
   t,
+  locale,
 }: {
   label: string;
   relationships: ArtistRelationship[];
   direction: "outgoing" | "incoming";
   t: ReturnType<typeof useTranslations>;
+  locale: string;
 }) {
   if (!relationships.length) return null;
 
@@ -341,7 +343,8 @@ function GroupsAndProjectsList({
           const detailText = formatArtistRelationshipDisplay(
             relationship.relationship_type,
             relationship.start_year,
-            relationship.end_year
+            relationship.end_year,
+            locale
           );
           const content = (
             <>
@@ -491,12 +494,14 @@ export default function ArtistFactsCard({
               relationships={groupsAndProjects}
               direction="outgoing"
               t={t}
+              locale={locale}
             />
             <GroupsAndProjectsList
               label={t("artist.members")}
               relationships={members}
               direction="incoming"
               t={t}
+              locale={locale}
             />
           </>
         )}

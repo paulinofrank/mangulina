@@ -40,25 +40,52 @@ export const artistRelationshipTypeLabels: Record<ArtistRelationshipType, string
   leader_of: "Leader",
 };
 
+const spanishArtistRelationshipTypeLabels: Record<ArtistRelationshipType, string> = {
+  member_of: "Miembro",
+  founder_of: "Fundador",
+  leader_of: "Líder",
+};
+
+const spanishFormerArtistRelationshipTypeLabels: Record<ArtistRelationshipType, string> = {
+  member_of: "Ex-Miembro",
+  founder_of: "Ex-Fundador",
+  leader_of: "Ex-Líder",
+};
+
 export function isArtistRelationshipType(value: unknown): value is ArtistRelationshipType {
   return value === "member_of" || value === "founder_of" || value === "leader_of";
 }
 
-export function formatArtistRelationshipType(value: string | null | undefined) {
-  return isArtistRelationshipType(value) ? artistRelationshipTypeLabels[value] : null;
+export function formatArtistRelationshipType(
+  value: string | null | undefined,
+  locale = "en"
+) {
+  if (!isArtistRelationshipType(value)) return null;
+
+  return locale === "es"
+    ? spanishArtistRelationshipTypeLabels[value]
+    : artistRelationshipTypeLabels[value];
 }
 
 export function formatArtistRelationshipDisplay(
   value: string | null | undefined,
   startYear: number | null | undefined,
-  endYear: number | null | undefined
+  endYear: number | null | undefined,
+  locale = "en"
 ) {
-  const label = formatArtistRelationshipType(value);
+  const label = formatArtistRelationshipType(value, locale);
   if (!label) return null;
 
-  const displayLabel = endYear ? `Former ${label}` : label;
+  const displayLabel =
+    endYear && locale === "es" && isArtistRelationshipType(value)
+      ? spanishFormerArtistRelationshipTypeLabels[value]
+      : endYear
+        ? `Former ${label}`
+        : label;
 
   if (startYear && endYear) return `${displayLabel}, ${startYear}–${endYear}`;
+  if (locale === "es" && startYear) return `${displayLabel} desde ${startYear}`;
+  if (locale === "es" && endYear) return `${displayLabel}, hasta ${endYear}`;
   if (startYear) return `${displayLabel} since ${startYear}`;
   if (endYear) return `${displayLabel}, Until ${endYear}`;
   return displayLabel;

@@ -95,9 +95,10 @@ type ArtistForm = {
   wikidata_id: string;
   bio_en: string;
   bio_es: string;
-  bio: string;
   ended: boolean;
 };
+
+type LocalizedBioField = "bio_en" | "bio_es";
 
 type AdminArtistMedia = {
   id: string;
@@ -360,7 +361,6 @@ const emptyForm: ArtistForm = {
   wikidata_id: "",
   bio_en: "",
   bio_es: "",
-  bio: "",
   ended: false,
 };
 
@@ -568,7 +568,10 @@ export default function AdminDashboard() {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
   const [imageVersion, setImageVersion] = useState(0);
-  const bioTextareaRef = useRef<HTMLTextAreaElement>(null);
+  const bioTextareaRefs = useRef<Record<LocalizedBioField, HTMLTextAreaElement | null>>({
+    bio_en: null,
+    bio_es: null,
+  });
 
   const selectedArtist = useMemo(
     () => artists.find((artist) => artist.id === selectedArtistId) || null,
@@ -816,16 +819,21 @@ export default function AdminDashboard() {
     setStatus("");
   }
 
-  function focusBioSelection(start: number, end: number) {
+  function focusBioSelection(field: LocalizedBioField, start: number, end: number) {
     window.setTimeout(() => {
-      bioTextareaRef.current?.focus();
-      bioTextareaRef.current?.setSelectionRange(start, end);
+      bioTextareaRefs.current[field]?.focus();
+      bioTextareaRefs.current[field]?.setSelectionRange(start, end);
     }, 0);
   }
 
-  function wrapBioSelection(prefix: string, suffix = prefix, placeholder = "text") {
-    const textarea = bioTextareaRef.current;
-    const value = form.bio ?? "";
+  function wrapBioSelection(
+    field: LocalizedBioField,
+    prefix: string,
+    suffix = prefix,
+    placeholder = "text"
+  ) {
+    const textarea = bioTextareaRefs.current[field];
+    const value = form[field] ?? "";
     const start = textarea?.selectionStart ?? value.length;
     const end = textarea?.selectionEnd ?? value.length;
     const selectedText = value.slice(start, end) || placeholder;
@@ -833,13 +841,17 @@ export default function AdminDashboard() {
     const nextStart = start + prefix.length;
     const nextEnd = nextStart + selectedText.length;
 
-    updateForm("bio", nextBio);
-    focusBioSelection(nextStart, nextEnd);
+    updateForm(field, nextBio);
+    focusBioSelection(field, nextStart, nextEnd);
   }
 
-  function formatBioLines(prefix: string, placeholder = "New line") {
-    const textarea = bioTextareaRef.current;
-    const value = form.bio ?? "";
+  function formatBioLines(
+    field: LocalizedBioField,
+    prefix: string,
+    placeholder = "New line"
+  ) {
+    const textarea = bioTextareaRefs.current[field];
+    const value = form[field] ?? "";
     const start = textarea?.selectionStart ?? value.length;
     const end = textarea?.selectionEnd ?? value.length;
     const selectedText = value.slice(start, end) || placeholder;
@@ -852,16 +864,16 @@ export default function AdminDashboard() {
       .join("\n");
     const nextBio = `${value.slice(0, start)}${formattedText}${value.slice(end)}`;
 
-    updateForm("bio", nextBio);
-    focusBioSelection(start, start + formattedText.length);
+    updateForm(field, nextBio);
+    focusBioSelection(field, start, start + formattedText.length);
   }
 
-  function insertBioLink() {
+  function insertBioLink(field: LocalizedBioField) {
     const href = window.prompt("Paste the full URL for this link:");
 
     if (!href?.trim()) return;
 
-    wrapBioSelection("[", `](${href.trim()})`, "link text");
+    wrapBioSelection(field, "[", `](${href.trim()})`, "link text");
   }
 
   function handleSelectArtistForEdit(id: string) {
@@ -914,7 +926,6 @@ export default function AdminDashboard() {
       wikidata_id: artist.wikidata_id ?? "",
       bio_en: artist.bio_en ?? "",
       bio_es: artist.bio_es ?? "",
-      bio: artist.bio ?? "",
       ended: Boolean(artist.ended),
     });
 
@@ -1302,7 +1313,6 @@ export default function AdminDashboard() {
 
       bio_en: nullable(form.bio_en),
       bio_es: nullable(form.bio_es),
-      bio: nullable(form.bio),
       ended: form.ended,
     };
 
@@ -2336,96 +2346,87 @@ export default function AdminDashboard() {
                 </Field>
               </div>
 
-              <Field label="Biography English">
-                <textarea
-                  value={form.bio_en ?? ""}
-                  onChange={(event) => updateForm("bio_en", event.target.value)}
-                  className={`${inputClass} min-h-55 resize-y leading-relaxed`}
-                />
-              </Field>
+              {(["bio_en", "bio_es"] as const).map((field) => (
+                <Field
+                  key={field}
+                  label={field === "bio_en" ? "English Bio" : "Spanish Bio"}
+                >
+                  <div className="overflow-hidden rounded-lg border border-gray-200 bg-white focus-within:border-(--color-flagblue)">
+                    <div className="flex flex-wrap gap-2 border-b border-gray-100 bg-gray-50 px-3 py-2">
+                      <button
+                        type="button"
+                        onClick={() => wrapBioSelection(field, "**", "**", "bold text")}
+                        className={toolbarButtonClass}
+                      >
+                        B
+                      </button>
 
-              <Field label="Biography Spanish">
-                <textarea
-                  value={form.bio_es ?? ""}
-                  onChange={(event) => updateForm("bio_es", event.target.value)}
-                  className={`${inputClass} min-h-55 resize-y leading-relaxed`}
-                />
-              </Field>
+                      <button
+                        type="button"
+                        onClick={() => wrapBioSelection(field, "*", "*", "italic text")}
+                        className={`${toolbarButtonClass} italic`}
+                      >
+                        I
+                      </button>
 
-              <Field label="Biography Legacy">
-                <div className="overflow-hidden rounded-lg border border-gray-200 bg-white focus-within:border-(--color-flagblue)">
-                  <div className="flex flex-wrap gap-2 border-b border-gray-100 bg-gray-50 px-3 py-2">
-                    <button
-                      type="button"
-                      onClick={() => wrapBioSelection("**", "**", "bold text")}
-                      className={toolbarButtonClass}
-                    >
-                      B
-                    </button>
+                      <button
+                        type="button"
+                        onClick={() => formatBioLines(field, "## ", "Section title")}
+                        className={toolbarButtonClass}
+                      >
+                        H
+                      </button>
 
-                    <button
-                      type="button"
-                      onClick={() => wrapBioSelection("*", "*", "italic text")}
-                      className={`${toolbarButtonClass} italic`}
-                    >
-                      I
-                    </button>
+                      <button
+                        type="button"
+                        onClick={() => formatBioLines(field, "- ", "List item")}
+                        className={toolbarButtonClass}
+                      >
+                        List
+                      </button>
 
-                    <button
-                      type="button"
-                      onClick={() => formatBioLines("## ", "Section title")}
-                      className={toolbarButtonClass}
-                    >
-                      H
-                    </button>
+                      <button
+                        type="button"
+                        onClick={() => formatBioLines(field, "> ", "Quoted text")}
+                        className={toolbarButtonClass}
+                      >
+                        Quote
+                      </button>
 
-                    <button
-                      type="button"
-                      onClick={() => formatBioLines("- ", "List item")}
-                      className={toolbarButtonClass}
-                    >
-                      List
-                    </button>
+                      <button
+                        type="button"
+                        onClick={() => insertBioLink(field)}
+                        className={toolbarButtonClass}
+                      >
+                        Link
+                      </button>
+                    </div>
 
-                    <button
-                      type="button"
-                      onClick={() => formatBioLines("> ", "Quoted text")}
-                      className={toolbarButtonClass}
-                    >
-                      Quote
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={insertBioLink}
-                      className={toolbarButtonClass}
-                    >
-                      Link
-                    </button>
+                    <textarea
+                      ref={(element) => {
+                        bioTextareaRefs.current[field] = element;
+                      }}
+                      value={form[field] ?? ""}
+                      onChange={(event) => updateForm(field, event.target.value)}
+                      className="min-h-55 w-full resize-y bg-white px-3 py-3 text-sm font-normal leading-relaxed text-gray-800 outline-none"
+                    />
                   </div>
 
-                  <textarea
-                    ref={bioTextareaRef}
-                    value={form.bio ?? ""}
-                    onChange={(event) => updateForm("bio", event.target.value)}
-                    className="min-h-55 w-full resize-y bg-white px-3 py-3 text-sm font-normal leading-relaxed text-gray-800 outline-none"
-                  />
-                </div>
-
-                <div className="mt-3 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3">
-                  <p className="mb-2 text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
-                    Preview
-                  </p>
-
-                  {form.bio.trim() ? (
-                    <BioText bio={form.bio} />
-                  ) : (
-                    <p className="text-sm text-gray-400">
-                      Biography preview will appear here.
+                  <div className="mt-3 rounded-lg border border-gray-100 bg-gray-50 px-4 py-3">
+                    <p className="mb-2 text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
+                      Preview
                     </p>
-                  )}
-                </div>
-              </Field>
+
+                    {form[field].trim() ? (
+                      <BioText bio={form[field]} />
+                    ) : (
+                      <p className="text-sm text-gray-400">
+                        Biography preview will appear here.
+                      </p>
+                    )}
+                  </div>
+                </Field>
+              ))}
 
               <button
                 type="submit"

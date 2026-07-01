@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import {
   formatArtistRelationshipDisplay,
@@ -20,6 +20,7 @@ export default function ArtistRelationshipsSection({
   direction,
 }: ArtistRelationshipsSectionProps) {
   const t = useTranslations();
+  const locale = useLocale();
   if (!relationships.length) return null;
 
   return (
@@ -37,7 +38,8 @@ export default function ArtistRelationshipsSection({
           const details = formatArtistRelationshipDisplay(
             relationship.relationship_type,
             relationship.start_year,
-            relationship.end_year
+            relationship.end_year,
+            locale
           );
           const content = (
             <>
