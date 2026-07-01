@@ -13,6 +13,12 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 export type SeoLocale = "en" | "es";
 
+// Normalize an arbitrary route locale (e.g. the raw `[locale]` param) to a
+// supported SeoLocale. Anything that isn't Spanish falls back to English.
+export function resolveSeoLocale(locale: string | null | undefined): SeoLocale {
+  return locale === "es" ? "es" : "en";
+}
+
 export function buildCanonical(path: string) {
   const normalizedPath = path === "/" ? "" : `/${path.replace(/^\/+|\/+$/g, "")}`;
   return `${SITE_URL}${normalizedPath || "/"}`;
@@ -21,7 +27,11 @@ export function buildCanonical(path: string) {
 export function localizedPath(path: string, locale: SeoLocale) {
   const normalized = `/${path.replace(/^\/+|\/+$/g, "")}`;
   if (locale === "es") return normalized === "/" ? "/es" : `/es${normalized}`;
-  return normalized === "/" ? "/en" : `/en${normalized}`;
+  // English is the default locale. Under next-intl `localePrefix: "as-needed"`
+  // it is served WITHOUT a prefix (/artists, not /en/artists), and /en/* only
+  // 307-redirects to the unprefixed URL. The canonical/hreflang must therefore
+  // point at the unprefixed path, never at /en/*.
+  return normalized;
 }
 
 export function buildLocalizedCanonical(path: string, locale: SeoLocale) {
@@ -35,10 +45,14 @@ export function spanishPath(path: string) {
 }
 
 // hreflang alternates shared by an English page and its Spanish twin.
+// `x-default` points at the unprefixed English URL so search engines have a
+// canonical fallback for unmatched languages/regions.
 export function localeAlternates(path: string) {
+  const enUrl = buildCanonical(localizedPath(path, "en"));
   return {
-    en: buildCanonical(localizedPath(path, "en")),
+    en: enUrl,
     es: buildCanonical(spanishPath(path)),
+    "x-default": enUrl,
   };
 }
 
@@ -77,7 +91,9 @@ type PageMetadataOptions = {
   description: string;
   path: string;
   image?: string | null;
-  locale?: SeoLocale;
+  // Accepts either a resolved SeoLocale or the raw `[locale]` route param;
+  // anything that isn't "es" is treated as English.
+  locale?: SeoLocale | string;
   openGraphType?: "website" | "profile" | "article" | "music.song" | "music.album";
   noIndex?: boolean;
 };
@@ -87,10 +103,11 @@ export function createPageMetadata({
   description,
   path,
   image,
-  locale = "en",
+  locale: rawLocale = "en",
   openGraphType = "website",
   noIndex = false,
 }: PageMetadataOptions): Metadata {
+  const locale = resolveSeoLocale(rawLocale);
   const canonical = buildLocalizedCanonical(path, locale);
   const imageUrl = image
     ? image.startsWith("http")

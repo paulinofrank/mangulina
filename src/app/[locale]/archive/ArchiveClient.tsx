@@ -7,8 +7,12 @@ import { useRouter } from "@/i18n/navigation";
 import DecadeSelector from "@/app/[locale]/archive/DecadeSelector";
 import SongsByYearList from "@/app/[locale]/archive/SongsByYearList";
 import type { ArchivePeriod } from "@/lib/archivePeriods";
-
-type ArchiveSort = "title" | "views";
+import {
+  ARCHIVE_PAGE_SIZE,
+  getArchiveCacheKey,
+  getArchiveListingPeriod,
+  type ArchiveSort,
+} from "@/lib/archiveShared";
 
 type SongRow = Parameters<typeof SongsByYearList>[0]["songs"][number];
 
@@ -26,14 +30,11 @@ type CacheEntry = {
   hasMore: boolean;
 };
 
-const ARCHIVE_PAGE_SIZE = 50;
-const SCROLL_KEY = "archive:scrollY";
+export type ArchiveInitialData = CacheEntry & {
+  cacheKey: string;
+};
 
-function cacheKey(period: ArchivePeriod | null, sort: ArchiveSort, page: number) {
-  if (!period) return `archive:songs:top:${sort}:page:${page}`;
-  if (period.type === "year") return `archive:songs:${period.year}:${sort}:page:${page}`;
-  return `archive:songs:${period.startYear}-${period.endYear}:${sort}:page:${page}`;
-}
+const SCROLL_KEY = "archive:scrollY";
 
 function readCache(key: string): CacheEntry | null {
   try {
@@ -91,19 +92,6 @@ function buildFetchUrl(period: ArchivePeriod | null, sortBy: ArchiveSort, page: 
   }
 
   return `/api/archive/songs-by-year?${params.toString()}`;
-}
-
-function getListingPeriod(period: ArchivePeriod | null): ArchivePeriod | null {
-  if (!period || period.type === "year") return period;
-
-  return {
-    type: "year",
-    slug: String(period.startYear),
-    year: period.startYear,
-    decade: period.decade,
-    startYear: period.startYear,
-    endYear: period.startYear,
-  };
 }
 
 function getRangeLabel({
@@ -267,18 +255,24 @@ function getPeriodHeading(period: ArchivePeriod | null, t: ReturnType<typeof use
   return t("archive.ui.decadeHeading", { decade: period.decade });
 }
 
-export default function ArchiveClient({ period = null }: { period?: ArchivePeriod | null }) {
+export default function ArchiveClient({
+  period = null,
+  initialData,
+}: {
+  period?: ArchivePeriod | null;
+  initialData?: ArchiveInitialData;
+}) {
   const t = useTranslations();
   const router = useRouter();
   const searchParams = useSearchParams();
 
   const sortBy = parseSort(searchParams.get("sort"));
   const currentPage = parsePage(searchParams.get("page"));
-  const listingPeriod = useMemo(() => getListingPeriod(period), [period]);
+  const listingPeriod = useMemo(() => getArchiveListingPeriod(period), [period]);
 
-  const [songs, setSongs] = useState<SongRow[]>([]);
-  const [totalSongs, setTotalSongs] = useState(0);
-  const [loading, setLoading] = useState(true);
+  const [songs, setSongs] = useState<SongRow[]>(initialData?.songs ?? []);
+  const [totalSongs, setTotalSongs] = useState(initialData?.total ?? 0);
+  const [loading, setLoading] = useState(!initialData);
   const [error, setError] = useState("");
   const scrollRestored = useRef(false);
 
@@ -293,7 +287,16 @@ export default function ArchiveClient({ period = null }: { period?: ArchivePerio
 
   useEffect(() => {
     let cancelled = false;
-    const requestCacheKey = cacheKey(listingPeriod, sortBy, currentPage);
+    const requestCacheKey = getArchiveCacheKey(listingPeriod, sortBy, currentPage);
+    if (initialData?.cacheKey === requestCacheKey) {
+      setSongs(initialData.songs);
+      setTotalSongs(initialData.total);
+      setError("");
+      setLoading(false);
+      writeCache(requestCacheKey, initialData);
+      return;
+    }
+
     const cached = readCache(requestCacheKey);
 
     if (cached) {
@@ -359,7 +362,7 @@ export default function ArchiveClient({ period = null }: { period?: ArchivePerio
     return () => {
       cancelled = true;
     };
-  }, [listingPeriod, sortBy, currentPage]);
+  }, [listingPeriod, sortBy, currentPage, initialData]);
 
   // Save scroll position whenever the user leaves the page (navigates to a song).
   useEffect(() => {
@@ -412,6 +415,12 @@ export default function ArchiveClient({ period = null }: { period?: ArchivePerio
         <h1 className="mb-4 text-left text-2xl font-semibold normal-case tracking-normal text-[#002D62]">
           {getPeriodHeading(period, t)}
         </h1>
+
+        {!period && (
+          <p className="mb-4 max-w-3xl text-sm leading-relaxed text-gray-600 sm:text-base">
+            {t("archive.ui.allIntro")}
+          </p>
+        )}
 
         <div className="mb-4 flex items-center justify-between gap-3">
           <h2 className="!mb-0 text-left text-xl font-semibold normal-case tracking-normal text-[#002D62]">

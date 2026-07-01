@@ -1,6 +1,13 @@
 import { ReleaseDecadePage, metadataForReleaseDecade } from "@/app/[locale]/releases/_releasePages";
 
-export const metadata = metadataForReleaseDecade("1960s");
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return metadataForReleaseDecade("1960s", locale);
+}
 export const revalidate = 3600;
 
 export default function Releases1960sPage({ searchParams }: { searchParams: Promise<{ sort?: string | string[]; page?: string | string[] }> }) {

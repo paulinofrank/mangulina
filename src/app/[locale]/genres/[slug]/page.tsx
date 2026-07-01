@@ -20,7 +20,7 @@ import { createPageMetadata, genreSeoTitle } from "@/lib/seo";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
 
 type PageProps = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: string }>;
 };
 
 export const dynamic = "force-dynamic";
@@ -33,7 +33,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug, locale } = await params;
   const data = await getGenrePageData(slug);
 
   if (!data) {
@@ -41,6 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: "Genre Not Found",
       description: "This genre is not available in the Dominican Music Database.",
       path: `/genres/${slug}`,
+      locale,
       noIndex: true,
     });
   }
@@ -49,6 +50,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: genreSeoTitle(data.genre),
     description: `Explore ${data.genre.title} artists, songs, albums and recordings in the Dominican Music Database.`,
     path: `/genres/${data.genre.slug}`,
+    locale,
   });
 }
 

@@ -15,9 +15,14 @@ import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 import { createPageMetadata } from "@/lib/seo";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations("birthdays.ui");
-  return createPageMetadata({title: t("metadataTitle"), description: t("metadataDescription"), path: "/artists/birthdays"});
+  return createPageMetadata({title: t("metadataTitle"), description: t("metadataDescription"), path: "/artists/birthdays", locale});
 }
 
 export const revalidate = 600;

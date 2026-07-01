@@ -27,7 +27,7 @@
     "copyrights": "Derechos de Autor y DMCA",
     "goBack": "Atrás",
     "goToTop": "Ir al principio",
-    "seeAll": "Todos▶"
+    "seeAll": "Ver todos"
   },
   "search": {
     "placeholder": "Buscar artistas, canciones...",
@@ -56,19 +56,22 @@
     }
   },
   "sections": {
-    "topSingers": "Cantantes Más Vistos",
-    "trendingSongs": "Canciones Más Buscadas",
+    "topSingers": "Cantantes más vistos",
+    "trendingSongs": "Canciones más vistas",
     "browseByGenre": "Géneros y Estilos",
-    "browseByRegion": "Artistas por Provincias",
-    "mostAwarded": "Artistas Más Premiados",
-    "composers": "Compositores",
-    "topDjs": "Top 10 DJs",
+    "browseByRegion": "Artistas por provincia",
+    "mostAwarded": "Artistas más premiados",
+    "composers": "Compositores más vistos",
+    "topDjs": "DJs más vistos",
     "birthdays": "Cumpleaños",
-    "birthdaysThisWeek": "Cumpleaños",
-    "christianArtists": "Cristianos Más Vistos",
-    "classicalArtists": "Instrumentales & Clásicos",
+    "birthdaysThisWeek": "Cumpleaños esta semana",
+    "christianArtists": "Artistas cristianos más vistos",
+    "classicalArtists": "Artistas instrumentales y clásicos más vistos",
     "risingStars": "Artistas Emergentes",
-    "legends": "Artistas Legendarios"
+    "legends": "Artistas legendarios más vistos"
+  },
+  "homePage": {
+    "intro": "Mangulina es la Base de Datos de Música Dominicana, dedicada a preservar y documentar artistas, grabaciones, publicaciones musicales, géneros e historia musical dominicana. Explora las personas y canciones que dan forma a la música dominicana a través de las generaciones."
   },
   "song": {
     "credits": "Créditos de la Canción",
@@ -760,9 +763,9 @@
     },
     "genreDetail": {
       "learnMoreHistory": "Conoce más sobre la historia de {genre}...",
-      "topArtists": "Mejores Artistas de {genre}",
+      "topArtists": "Artistas más vistos de {genre}",
       "connectedArtists": "Artistas Conectados con {genre}",
-      "popularSongs": "Canciones Populares",
+      "popularSongs": "Canciones más vistas",
       "importantReleases": "Álbumes y Otras Publicaciones Musicales Importantes",
       "releasesIn": "Publicaciones Musicales de {genre}",
       "mostViewedReleases": "Álbumes Más Vistos",
@@ -909,7 +912,7 @@
       "links": {
         "singers": "Cantantes", "christianArtists": "Artistas Cristianos", "legends": "Leyendas", "emergingArtists": "Artistas Emergentes", "mostAwarded": "Artistas Más Premiados", "birthdays": "Cumpleaños", "instrumentalClassical": "Instrumental y Clásica",
         "composers": "Compositores", "songwriters": "Autores de Canciones", "lyricists": "Letristas", "djs": "DJs", "musicians": "Músicos", "producers": "Productores",
-        "songs": "Canciones", "releases": "Albumes", "genres": "Géneros", "home": "Inicio", "about": "Acerca de", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de privacidad", "terms": "Términos de uso", "dmca": "Derechos de Autor y DMCA"
+        "songs": "Canciones", "releases": "Álbumes", "genres": "Géneros", "home": "Inicio", "about": "Acerca de", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de privacidad", "terms": "Términos de uso", "dmca": "Derechos de Autor y DMCA"
       },
       "genreLabels": {"worship": "Adoración", "merengue": "Merengue", "bachata": "Bachata", "urban": "Urbano", "salsa": "Salsa", "ballads": "Baladas", "pop": "Pop", "rock": "Rock", "reggae": "Reggae", "jazz": "Jazz", "electronic": "Electrónica", "instrumental": "Instrumental", "folklore": "Folclore", "fusion": "Fusión"}
     },
@@ -1388,13 +1391,14 @@
     "ui": {
       "loadingSongs": "Cargando canciones",
       "noSongs": "0 canciones",
-      "topSongs": "Top 50 canciones por vistas",
+      "topSongs": "50 canciones más vistas",
       "sortByTitle": "Ordenar por Título",
-      "sortByViews": "Ordenar por Vistas",
+      "sortByViews": "Ordenar por vistas",
       "loadingMore": "Cargando canciones…",
       "showingRange": "Mostrando {start} a {end} de {total}",
       "sortAria": "Ordenar canciones del archivo",
       "allHeading": "Canciones y Grabaciones Dominicanas",
+      "allIntro": "Explora grabaciones dominicanas por año, década, título o popularidad para recorrer canciones y publicaciones musicales del archivo de Mangulina.",
       "yearHeading": "Música Dominicana Lanzada en {year}",
       "decadeHeading": "Música Dominicana de los {decade}",
       "browseByDecade": "Explorar el Archivo por Décadas",

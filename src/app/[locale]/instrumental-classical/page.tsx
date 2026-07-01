@@ -1,16 +1,35 @@
 import ArtistDirectory from "@/components/artists/ArtistDirectory";
 import { getArtistOccupationOptions } from "@/lib/artistOccupationOptions";
+import { getArtistDirectoryInitialData } from "@/lib/artistDirectoryData";
 import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = createPageMetadata({
-  title: "Dominican Instrumental and Classical Artists",
-  description:
-    "Explore Dominican instrumentalists, classical musicians, orchestral performers, and related artists in Mangulina, the Dominican Music Database.",
-  path: "/instrumental-classical",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return createPageMetadata({
+    title: "Dominican Instrumental and Classical Artists",
+    description:
+      "Explore Dominican instrumentalists, classical musicians, orchestral performers, and related artists in Mangulina, the Dominican Music Database.",
+    path: "/instrumental-classical",
+    locale,
+  });
+}
 
-export default async function InstrumentalClassicalPage() {
+type InstrumentalClassicalPageProps = {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
+
+export default async function InstrumentalClassicalPage({
+  searchParams,
+}: InstrumentalClassicalPageProps) {
   const occupationOptions = await getArtistOccupationOptions("instrumentalist");
+  const initialData = await getArtistDirectoryInitialData({
+    searchParams: await searchParams,
+    role: "instrumentalist",
+  });
 
   return (
     <ArtistDirectory
@@ -20,6 +39,7 @@ export default async function InstrumentalClassicalPage() {
       hideGenreFilter
       hideProvinceSelector
       occupationOptions={occupationOptions}
+      initialData={initialData}
     />
   );
 }

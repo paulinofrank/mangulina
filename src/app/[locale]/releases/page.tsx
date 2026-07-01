@@ -22,11 +22,19 @@ import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
 const DESCRIPTION =
   "Explore Dominican albums, singles, EPs, compilations, live recordings, and other releases from artists across merengue, bachata, salsa, urban, worship, and more.";
 
-export const metadata = createPageMetadata({
-  title: "Dominican Albums & Releases | Mangulina",
-  description: DESCRIPTION,
-  path: "/releases",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return createPageMetadata({
+    title: "Dominican Albums & Releases | Mangulina",
+    description: DESCRIPTION,
+    path: "/releases",
+    locale,
+  });
+}
 
 export const revalidate = 3600;
 

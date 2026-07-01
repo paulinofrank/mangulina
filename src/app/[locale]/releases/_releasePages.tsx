@@ -202,7 +202,7 @@ async function ReleaseListingPage({
   );
 }
 
-export function metadataForReleaseType(slug: string): Metadata {
+export function metadataForReleaseType(slug: string, locale?: string): Metadata {
   const type = getReleaseTypeDefinition(slug);
   if (!type) return {};
 
@@ -210,10 +210,11 @@ export function metadataForReleaseType(slug: string): Metadata {
     title: type.title,
     description: type.description,
     path: `/releases/${type.slug}`,
+    locale,
   });
 }
 
-export function metadataForReleaseDecade(slug: string): Metadata {
+export function metadataForReleaseDecade(slug: string, locale?: string): Metadata {
   const decade = getReleaseDecade(slug);
   if (!decade) return {};
 
@@ -221,6 +222,7 @@ export function metadataForReleaseDecade(slug: string): Metadata {
     title: `Dominican Releases of the ${decade.label} | Mangulina`,
     description: `Explore Dominican albums, singles, EPs, compilations, live recordings, and other releases from the ${decade.label}.`,
     path: `/releases/${decade.slug}`,
+    locale,
   });
 }
 

@@ -15,10 +15,13 @@ import type {
   FilteredArtistGenreOptions,
 } from "@/lib/artistGenreOptions";
 import type { AwardedArtistRanking, AwardFilterOption } from "@/lib/artistAwards";
+import {
+  ARTIST_DIRECTORY_ITEMS_PER_PAGE,
+  ARTIST_LIST_SELECT,
+  type ArtistDirectoryInitialData,
+} from "@/lib/artistDirectoryShared";
 import { isValidProvinceName, provinceToSlug } from "@/lib/provinceSlug";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
-
-const ITEMS_PER_PAGE = 24;
 
 export type ArtistBrowseRole =
   | "singer"
@@ -53,6 +56,7 @@ type ArtistDirectoryProps = {
   instrumentOptions?: Array<{ value: string; label: string }>;
   rolePageOptions?: Array<{ href: string; label: string }>;
   awardOptions?: AwardFilterOption[];
+  initialData?: ArtistDirectoryInitialData;
 };
 
 const ROLE_FILTERS: Array<{ key: ArtistBrowseRole; label: string }> = [
@@ -85,26 +89,6 @@ const STATUS_LABEL_KEYS: Record<string, string> = {
 };
 
 const ARTISTS_QUERY_TIMEOUT_MS = 20000;
-const ARTIST_LIST_SELECT = [
-  "id",
-  "slug",
-  "name",
-  "status",
-  "primary_role",
-  "occupations",
-  "primary_genre",
-  "stage_name",
-  "date_of_birth",
-  "province",
-  "birth_place",
-  "bio",
-  "facebook",
-  "instagram",
-  "genres",
-  "artist_tags",
-  "views",
-  "death_year",
-].join(",");
 
 type ProvinceOption = {
   province: string;
@@ -136,6 +120,10 @@ function buildGenreMatchFilter(values: string[]) {
       return [`primary_genre.eq.${quoted}`, `genres.cs.{${quoted}}`];
     })
     .join(",");
+}
+
+function buildRoleMatchFilter(role: ArtistBrowseRole) {
+  return `primary_role.eq.${role},occupations.cs.${JSON.stringify([role])}`;
 }
 
 function Pagination({
@@ -300,6 +288,7 @@ function ArtistsContent({
   instrumentOptions = [],
   rolePageOptions = [],
   awardOptions = [],
+  initialData,
 }: ArtistDirectoryProps) {
   const supabase = getSupabaseClient();
   const t = useTranslations();
@@ -312,7 +301,7 @@ function ArtistsContent({
   const displayHeading = i18nKey ? t(`artistDirectory.${i18nKey}.heading`) : (heading ?? "");
   const displayIntro = i18nKey ? t(`artistDirectory.${i18nKey}.intro`) : (intro ?? "");
 
-  const [artists, setArtists] = useState<Artist[]>([]);
+  const [artists, setArtists] = useState<Artist[]>(initialData?.artists ?? []);
   const [provinces, setProvinces] = useState<ProvinceOption[]>([]);
   const [genreOptions, setGenreOptions] = useState<GenreOption[]>(
     filteredGenreOptions?.genres ?? [],
@@ -320,9 +309,9 @@ function ArtistsContent({
   const [subgenreOptions, setSubgenreOptions] = useState<SubgenreOption[]>(
     filteredGenreOptions?.subgenres ?? [],
   );
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!initialData);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const [totalCount, setTotalCount] = useState(0);
+  const [totalCount, setTotalCount] = useState(initialData?.totalCount ?? 0);
 
   const roleParam = searchParams.get("role");
   const selectedRole =
@@ -550,8 +539,8 @@ function ArtistsContent({
       }, ARTISTS_QUERY_TIMEOUT_MS);
 
       try {
-        const from = (currentPage - 1) * ITEMS_PER_PAGE;
-        const to = from + ITEMS_PER_PAGE - 1;
+        const from = (currentPage - 1) * ARTIST_DIRECTORY_ITEMS_PER_PAGE;
+        const to = from + ARTIST_DIRECTORY_ITEMS_PER_PAGE - 1;
 
         let query = supabase
           .from("artists")
@@ -565,7 +554,7 @@ function ArtistsContent({
 
         // ROLE FILTER
         if (role) {
-          query = query.eq("primary_role", role);
+          query = query.or(buildRoleMatchFilter(role));
         }
 
         // Classification tags live in artist_tags; musical genres stay in genres.
@@ -670,6 +659,35 @@ function ArtistsContent({
       }
     }
 
+    const requestKey = [
+      searchParamsString,
+      currentPage,
+      role ?? "",
+      selectedContext,
+      artistStatuses.join(","),
+      genreFilter ?? "",
+      subgenreFilter ?? "",
+      occupationFilter ?? "",
+      instrumentFilter ?? "",
+      province ?? "",
+      sort,
+      rankedArtistIdsKey,
+      genreOptions.map((item) => `${item.id}:${item.slug ?? item.name}`).join("|"),
+      subgenreOptions.map((item) => `${item.id}:${item.name}`).join("|"),
+    ].join("::");
+
+    if (initialData?.cacheKey === requestKey) {
+      setArtists(initialData.artists);
+      setTotalCount(initialData.totalCount);
+      setLoadError(null);
+      setLoading(false);
+      return () => {
+        isActive = false;
+        abortController.abort();
+        if (timeoutId) window.clearTimeout(timeoutId);
+      };
+    }
+
     loadArtists();
 
     return () => {
@@ -691,9 +709,12 @@ function ArtistsContent({
     province,
     sort,
     rankedArtistIdsKey,
+    genreOptions,
+    subgenreOptions,
+    initialData,
   ]);
 
-  const totalPages = Math.ceil(totalCount / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(totalCount / ARTIST_DIRECTORY_ITEMS_PER_PAGE);
 
   const handlePageChange = (page: number) => {
     const params = new URLSearchParams(searchParams.toString());

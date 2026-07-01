@@ -27,7 +27,7 @@ import {
 import { absoluteUrl, breadcrumbSchema } from "@/lib/structuredData";
 
 type PageProps = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: string }>;
 };
 
 function firstNonEmpty(...values: Array<string | null | undefined>) {
@@ -41,7 +41,7 @@ function getLocalizedArtistBio(artist: ArtistProfileData, locale: string) {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug, locale } = await params;
   const artist = await getArtistProfile(slug);
 
   if (!artist) {
@@ -49,6 +49,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: "Artist Not Found",
       description: "This artist profile is not available in the Dominican Music Database.",
       path: `/artists/${slug}`,
+      locale,
       noIndex: true,
     });
   }
@@ -61,6 +62,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     path: `/artists/${artist.slug}`,
     image: getArtistImageUrl(artist.id),
     openGraphType: "profile",
+    locale,
   });
 }
 
@@ -112,7 +114,7 @@ export default async function ArtistProfile({ params }: PageProps) {
           artistSchema,
           breadcrumbSchema([
             { name: "Home", path: "/" },
-            { name: "Singers", path: "/artists" },
+            { name: "Artists", path: "/artists" },
             { name: artist.name, path: `/artists/${artist.slug}` },
           ]),
         ]}

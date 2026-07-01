@@ -130,11 +130,15 @@ export const ARTIST_ROLE_PAGES: Record<ArtistRolePageKey, ArtistRolePageConfig> 
   },
 };
 
-export function createArtistRoleMetadata(key: ArtistRolePageKey): Metadata {
+export function createArtistRoleMetadata(
+  key: ArtistRolePageKey,
+  locale?: string,
+): Metadata {
   const config = ARTIST_ROLE_PAGES[key];
   return createPageMetadata({
     title: config.heading,
     description: config.description,
     path: config.path,
+    locale,
   });
 }

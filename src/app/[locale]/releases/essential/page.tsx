@@ -11,11 +11,19 @@ import { getTranslations } from "next-intl/server";
 const DESCRIPTION =
   "An editorial guide to culturally important Dominican albums and releases in Mangulina.";
 
-export const metadata = createPageMetadata({
-  title: "Essential Dominican Albums | Mangulina",
-  description: DESCRIPTION,
-  path: "/releases/essential",
-});
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return createPageMetadata({
+    title: "Essential Dominican Albums | Mangulina",
+    description: DESCRIPTION,
+    path: "/releases/essential",
+    locale,
+  });
+}
 
 export const revalidate = 3600;
 

@@ -39,7 +39,7 @@ import {
 import { absoluteUrl, breadcrumbSchema, isoDuration } from "@/lib/structuredData";
 
 type PageProps = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: string }>;
 };
 
 type SongArtistPreview = {
@@ -124,13 +124,14 @@ function normalizeCredits(credits: RawCredit[]) {
 // ── Metadata ──────────────────────────────────────────────────────────────────
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug, locale } = await params;
   const song = await getSongBySlug(cleanSongParam(slug));
   if (!song) {
     return createPageMetadata({
       title: "Song Not Found",
       description: "This recording is not available in the Dominican Music Database.",
       path: `/songs/${slug}`,
+      locale,
       noIndex: true,
     });
   }
@@ -146,6 +147,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     path: `/songs/${slug}`,
     image,
     openGraphType: "music.song",
+    locale,
   });
 }
 

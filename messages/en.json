@@ -56,19 +56,22 @@
     }
   },
   "sections": {
-    "topSingers": "Top Singers by Views",
-    "trendingSongs": "Most Searched Songs",
-    "browseByGenre": "EXPLORE BY GENRE & STYLE",
+    "topSingers": "Most Viewed Singers",
+    "trendingSongs": "Most Viewed Songs",
+    "browseByGenre": "Browse by Genre & Style",
     "browseByRegion": "Browse Artists by Region",
     "mostAwarded": "Most Awarded Artists",
-    "composers": "Composers",
-    "topDjs": "Top 10 DJs",
+    "composers": "Most Viewed Composers",
+    "topDjs": "Most Viewed DJs",
     "birthdays": "Birthdays",
     "birthdaysThisWeek": "Born This Week",
-    "christianArtists": "Top Christian Artists",
-    "classicalArtists": "Instrumental & Classical",
+    "christianArtists": "Most Viewed Christian Artists",
+    "classicalArtists": "Most Viewed Instrumental & Classical Artists",
     "risingStars": "Emerging Artists",
-    "legends": "Top Legends Artists"
+    "legends": "Most Viewed Legendary Artists"
+  },
+  "homePage": {
+    "intro": "Mangulina is the Dominican Music Database, dedicated to preserving and documenting Dominican artists, recordings, releases, genres, and music history. Explore the people and songs that shape Dominican music across generations."
   },
   "song": {
     "credits": "Song Credits",
@@ -760,9 +763,9 @@
     },
     "genreDetail": {
       "learnMoreHistory": "Learn more about {genre} history...",
-      "topArtists": "Top {genre} Artists",
+      "topArtists": "Most Viewed {genre} Artists",
       "connectedArtists": "Artists Connected to {genre}",
-      "popularSongs": "Popular Songs",
+      "popularSongs": "Most Viewed Songs",
       "importantReleases": "Important Albums / Releases",
       "releasesIn": "Releases in {genre}",
       "mostViewedReleases": "Most Viewed Releases",
@@ -1388,13 +1391,14 @@
     "ui": {
       "loadingSongs": "Loading songs",
       "noSongs": "0 songs",
-      "topSongs": "Top 50 songs by views",
+      "topSongs": "50 Most Viewed Songs",
       "sortByTitle": "Sort by Title",
       "sortByViews": "Sort by Views",
       "loadingMore": "Loading songs…",
       "showingRange": "Showing {start} to {end} of {total}",
       "sortAria": "Sort archive songs",
       "allHeading": "Dominican Songs & Recordings",
+      "allIntro": "Browse Dominican recordings by year, decade, title, or popularity to explore songs and releases across Mangulina's music archive.",
       "yearHeading": "Dominican Music Released in {year}",
       "decadeHeading": "Dominican Music from the {decade}",
       "browseByDecade": "Browse Archive by Decade",

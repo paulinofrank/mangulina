@@ -22,7 +22,7 @@ import { createPageMetadata, releaseSeoTitle } from "@/lib/seo";
 import { absoluteUrl, breadcrumbSchema } from "@/lib/structuredData";
 
 type PageProps = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string; locale: string }>;
 };
 
 function cleanSlug(raw: string) {
@@ -194,7 +194,7 @@ async function ReleaseTrackList({ tracks }: { tracks: ReleaseTrack[] }) {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const t = await getTranslations("pages.releases");
-  const { slug } = await params;
+  const { slug, locale } = await params;
   const release = await getReleaseBySlug(cleanSlug(slug));
 
   if (!release) {
@@ -202,6 +202,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: t("notFoundTitle"),
       description: t("notFoundDescription"),
       path: `/releases/${slug}`,
+      locale,
       noIndex: true,
     });
   }
@@ -212,6 +213,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     path: `/releases/${release.slug}`,
     image: release.coverImageUrl,
     openGraphType: "music.album",
+    locale,
   });
 }
 

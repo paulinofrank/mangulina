@@ -1,8 +1,24 @@
 import ArtistRoleDirectoryPage from "@/components/artists/ArtistRoleDirectoryPage";
 import { ARTIST_ROLE_PAGES, createArtistRoleMetadata } from "@/lib/artist-role-pages";
 
-export const metadata = createArtistRoleMetadata("djs");
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return createArtistRoleMetadata("djs", locale);
+}
 
-export default function DjsPage() {
-  return <ArtistRoleDirectoryPage config={ARTIST_ROLE_PAGES.djs} />;
+type DjsPageProps = {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
+
+export default async function DjsPage({ searchParams }: DjsPageProps) {
+  return (
+    <ArtistRoleDirectoryPage
+      config={ARTIST_ROLE_PAGES.djs}
+      searchParams={await searchParams}
+    />
+  );
 }
