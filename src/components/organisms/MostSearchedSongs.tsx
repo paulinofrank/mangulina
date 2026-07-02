@@ -37,7 +37,7 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
     <SectionCard compact>
       <CarouselArrows onLeft={() => scroll("left")} onRight={() => scroll("right")} />
 
-      <div className="px-5 py-0 sm:px-6">
+      <div className="px-[7px] py-0 sm:px-6">
         <div className="w-full">
 
           {/* Header */}
@@ -48,7 +48,7 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
 
   <Link
     href="/archive"
-    className="text-[#8B0000] hover:text-[#6B0000] text-base uppercase tracking-wider transition-colors"
+    className="text-[#8B0000] hover:text-[#6B0000] text-sm uppercase tracking-wider transition-colors"
   >
     {nav("seeAll")}
   </Link>

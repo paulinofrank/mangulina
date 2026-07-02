@@ -206,10 +206,12 @@
 
     .section-header>h2 {
         @apply mb-0 leading-none;
+        font-size: 0.875rem;
     }
 
     .section-header>a {
         @apply leading-none;
+        font-size: 0.875rem;
     }
 
     .homepage-section-titles-red .section-header>h2 {
@@ -217,7 +219,7 @@
     }
 
     .section-inner {
-        @apply px-5 py-0 sm:px-6;
+        @apply px-[7px] py-0 sm:px-6;
     }
 
 
