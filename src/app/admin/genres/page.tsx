@@ -52,6 +52,22 @@ type AdminWriteResponse = {
   error?: string;
 };
 
+async function readAdminJson<T extends { ok?: boolean; error?: string }>(
+  response: Response,
+  fallbackMessage: string
+): Promise<T> {
+  const contentType = response.headers.get("content-type") ?? "";
+
+  if (contentType.includes("application/json")) {
+    return (await response.json()) as T;
+  }
+
+  return {
+    ok: false,
+    error: `${fallbackMessage} (${response.status} ${response.statusText})`,
+  } as T;
+}
+
 const emptyGenreForm: GenreForm = {
   name: "",
   slug: "",
@@ -149,7 +165,10 @@ export default function AdminGenresPage() {
       const response = await fetch(
         `/api/admin/subgenres?genreId=${encodeURIComponent(String(genreId))}`,
       );
-      const result = (await response.json()) as AdminSubgenresResponse;
+      const result = await readAdminJson<AdminSubgenresResponse>(
+        response,
+        "Subgenres endpoint did not return JSON"
+      );
 
       if (!response.ok || !result.ok) {
         setStatus(`${t("admin.errors.loadingSubgenres").replace("{error}", result.error || response.statusText)}`);

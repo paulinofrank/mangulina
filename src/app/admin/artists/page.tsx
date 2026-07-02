@@ -209,6 +209,22 @@ type AdminSubgenresResponse = {
   error?: string;
 };
 
+async function readAdminJson<T extends { ok?: boolean; error?: string }>(
+  response: Response,
+  fallbackMessage: string
+): Promise<T> {
+  const contentType = response.headers.get("content-type") ?? "";
+
+  if (contentType.includes("application/json")) {
+    return (await response.json()) as T;
+  }
+
+  return {
+    ok: false,
+    error: `${fallbackMessage} (${response.status} ${response.statusText})`,
+  } as T;
+}
+
 type MusicalGenreOption = {
   value: string;
   label: string;
@@ -660,8 +676,14 @@ export default function AdminDashboard() {
       fetch("/api/admin/genres"),
       fetch("/api/admin/subgenres?all=1"),
     ]);
-    const genresResult = (await genresResponse.json()) as AdminGenresResponse;
-    const subgenresResult = (await subgenresResponse.json()) as AdminSubgenresResponse;
+    const genresResult = await readAdminJson<AdminGenresResponse>(
+      genresResponse,
+      "Genres endpoint did not return JSON"
+    );
+    const subgenresResult = await readAdminJson<AdminSubgenresResponse>(
+      subgenresResponse,
+      "Subgenres endpoint did not return JSON"
+    );
 
     if (!genresResponse.ok || !genresResult.ok) {
       setStatus(`Error loading genres: ${genresResult.error || genresResponse.statusText}`);

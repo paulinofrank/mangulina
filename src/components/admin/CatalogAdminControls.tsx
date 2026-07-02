@@ -41,6 +41,19 @@ export const adminInputClass =
 export const adminButtonClass =
   "rounded-lg bg-(--color-flagblue) px-5 py-3 text-xs uppercase tracking-[0.18em] text-white transition disabled:cursor-not-allowed disabled:opacity-40";
 
+async function readAdminJson(response: Response) {
+  const contentType = response.headers.get("content-type") ?? "";
+
+  if (contentType.includes("application/json")) {
+    return response.json() as Promise<Record<string, unknown>>;
+  }
+
+  return {
+    ok: false,
+    error: `Admin endpoint did not return JSON (${response.status} ${response.statusText})`,
+  };
+}
+
 type AdminSearchPickerProps = {
   label: string;
   value: string;
@@ -200,8 +213,8 @@ export function AdminGenrePicker({
 
   useEffect(() => {
     void Promise.all([
-      fetch("/api/admin/genres").then((response) => response.json()),
-      fetch("/api/admin/subgenres?all=1").then((response) => response.json()),
+      fetch("/api/admin/genres").then(readAdminJson),
+      fetch("/api/admin/subgenres?all=1").then(readAdminJson),
     ]).then(([genreResult, subgenreResult]) => {
       setGenres((genreResult.genres ?? []) as GenreRow[]);
       setSubgenres((subgenreResult.subgenres ?? []) as GenreRow[]);
