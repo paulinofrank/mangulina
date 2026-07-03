@@ -14,6 +14,7 @@ const RELEASE_SUMMARY_SELECT_WITH_VIEWS = `${RELEASE_SUMMARY_SELECT},views`;
 export type ReleaseArtistInfo = {
   artist_id: string | null;
   artist_name: string | null;
+  credited_as: string | null;
 };
 
 // ============================================================================
@@ -26,7 +27,7 @@ export async function getReleaseArtistInfo(releaseId: string): Promise<ReleaseAr
   // Try to get from release_artists table first (new model)
   const { data: releaseArtistsData } = await supabase
     .from("release_artists")
-    .select("artist_id,artists!inner(name)")
+    .select("artist_id,credited_as,artists!inner(name)")
     .eq("release_id", releaseId)
     .eq("role", "primary")
     .order("display_order", { ascending: true, nullsFirst: true })
@@ -37,10 +38,11 @@ export async function getReleaseArtistInfo(releaseId: string): Promise<ReleaseAr
     return {
       artist_id: releaseArtistsData.artist_id,
       artist_name: (releaseArtistsData.artists as any).name || null,
+      credited_as: releaseArtistsData.credited_as || null,
     };
   }
 
-  // Fallback: get from releases.release_artist_id (legacy field)
+  // Fallback: get from releases.release_artist_id (legacy field, no credited_as)
   const { data: releaseData } = await supabase
     .from("releases")
     .select("release_artist_id,artists!release_artist_id(name)")
@@ -51,10 +53,11 @@ export async function getReleaseArtistInfo(releaseId: string): Promise<ReleaseAr
     return {
       artist_id: releaseData.release_artist_id,
       artist_name: (releaseData.artists as any).name || null,
+      credited_as: null,
     };
   }
 
-  return { artist_id: null, artist_name: null };
+  return { artist_id: null, artist_name: null, credited_as: null };
 }
 
 // ============================================================================
@@ -71,7 +74,7 @@ async function getReleaseArtistsInfo(releaseIds: string[]): Promise<Map<string, 
   // First, try to get from release_artists table (new model)
   const { data: releaseArtists } = await supabase
     .from("release_artists")
-    .select("release_id,artist_id,artists!inner(name)")
+    .select("release_id,artist_id,credited_as,artists!inner(name)")
     .in("release_id", releaseIds)
     .eq("role", "primary")
     .order("release_id")
@@ -82,6 +85,7 @@ async function getReleaseArtistsInfo(releaseIds: string[]): Promise<Map<string, 
       result.set(row.release_id, {
         artist_id: row.artist_id,
         artist_name: (row.artists as any)?.name || null,
+        credited_as: row.credited_as || null,
       });
     }
   }
@@ -90,7 +94,7 @@ async function getReleaseArtistsInfo(releaseIds: string[]): Promise<Map<string, 
   const remainingIds = releaseIds.filter((id) => !result.has(id));
 
   if (remainingIds.length > 0) {
-    // Fallback: get from releases.release_artist_id (legacy field)
+    // Fallback: get from releases.release_artist_id (legacy field, no credited_as)
     const { data: releases } = await supabase
       .from("releases")
       .select("id,release_artist_id,artists!release_artist_id(name)")
@@ -102,9 +106,10 @@ async function getReleaseArtistsInfo(releaseIds: string[]): Promise<Map<string, 
           result.set(row.id, {
             artist_id: row.release_artist_id,
             artist_name: (row.artists as any)?.name || null,
+            credited_as: null,
           });
         } else {
-          result.set(row.id, { artist_id: null, artist_name: null });
+          result.set(row.id, { artist_id: null, artist_name: null, credited_as: null });
         }
       }
     }
@@ -113,7 +118,7 @@ async function getReleaseArtistsInfo(releaseIds: string[]): Promise<Map<string, 
   // Ensure all releases have entries (even if null)
   for (const id of releaseIds) {
     if (!result.has(id)) {
-      result.set(id, { artist_id: null, artist_name: null });
+      result.set(id, { artist_id: null, artist_name: null, credited_as: null });
     }
   }
 
@@ -454,6 +459,8 @@ async function hydrateReleaseSummaries(rows: ReleaseRow[]): Promise<ReleaseSumma
     .map((release) => {
       const artistInfo = releaseArtistsMap.get(release.id);
       const artist = artistInfo?.artist_id ? artistMap.get(artistInfo.artist_id) : null;
+      // Use credited_as (historical credit text) if available, otherwise use canonical name
+      const displayName = artistInfo?.credited_as || artist?.name || null;
       return {
         id: release.id,
         slug: release.slug,
@@ -467,7 +474,7 @@ async function hydrateReleaseSummaries(rows: ReleaseRow[]): Promise<ReleaseSumma
           ? {
               id: artist.id,
               slug: artist.slug,
-              name: artist.name,
+              name: displayName,
             }
           : null,
       };
@@ -976,7 +983,15 @@ export async function getReleaseBySlug(slug: string): Promise<ReleasePageData | 
     };
   });
 
-  const artist = artistResponse.data as { id: string; slug: string | null; name: string } | null;
+  const artistData = artistResponse.data as { id: string; slug: string | null; name: string } | null;
+  // Use credited_as (historical credit text) if available, otherwise use canonical name
+  const displayArtist = artistData && artistInfo
+    ? {
+        id: artistData.id,
+        slug: artistData.slug,
+        name: artistInfo.credited_as || artistData.name,
+      }
+    : artistData;
 
   return {
     id: releaseRow.id,
@@ -992,7 +1007,7 @@ export async function getReleaseBySlug(slug: string): Promise<ReleasePageData | 
     catalogNumber: releaseRow.catalog_number,
     views: releaseRow.views ?? null,
     coverImageUrl: getReleaseCoverUrl(releaseRow.id),
-    artist,
+    artist: displayArtist,
     tracks,
   };
 }
