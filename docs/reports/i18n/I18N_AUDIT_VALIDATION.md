@@ -1,3 +1,18 @@
+# Historical Report
+
+**Status:** Historical Snapshot (2026-06-20)
+
+**Current Source of Truth:**
+- [I18N_ARCHITECTURE_DIAGRAMS.md](../../I18N_ARCHITECTURE_DIAGRAMS.md)
+
+**Purpose:**
+Independent validation and red-team review of conclusions from the forensic audit, verifying findings against actual repository evidence.
+
+**Note:**
+This is a historical validation report. Consult current i18n documentation for authoritative guidance.
+
+---
+
 # Mangulina i18n — Audit Validation (Red-Team Review)
 
 **Date:** June 20, 2026

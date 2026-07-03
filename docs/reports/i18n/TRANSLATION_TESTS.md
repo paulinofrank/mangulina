@@ -1,3 +1,18 @@
+# Historical Report
+
+**Status:** Historical Snapshot (2026-06-20)
+
+**Current Source of Truth:**
+- [I18N_ARCHITECTURE_DIAGRAMS.md](../../I18N_ARCHITECTURE_DIAGRAMS.md)
+
+**Purpose:**
+Test plan and manual verification procedures for the multilingual translation system during development.
+
+**Note:**
+This is a historical test plan. Consult current i18n documentation for authoritative testing procedures.
+
+---
+
 # Translation System Test Plan
 
 ## Prerequisites

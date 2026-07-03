@@ -1,3 +1,12 @@
+# Historical Report
+
+**Status:** Living Document (Updated as system evolves)
+
+**Note:**
+While this document is in docs/reports/, it represents ongoing implementation details rather than a historical snapshot. Keep it here for organization but update it as the analytics system evolves.
+
+---
+
 # Analytics System Documentation
 
 ## Overview

@@ -54,3 +54,13 @@ releases*.json
 
 #Temp files
 .tmp/
+
+# Temporary AI output
+*.tmp.md
+*.draft.md
+*.bak.md
+*.old.md
+
+# Local notes
+notes/
+scratch/

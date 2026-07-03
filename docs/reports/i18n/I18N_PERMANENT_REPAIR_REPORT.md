@@ -1,3 +1,18 @@
+# Historical Report
+
+**Status:** Historical Snapshot (2026-06-20)
+
+**Current Source of Truth:**
+- [I18N_ARCHITECTURE_DIAGRAMS.md](../../I18N_ARCHITECTURE_DIAGRAMS.md)
+
+**Purpose:**
+Documents the permanent architecture repair for the multilingual system, addressing critical failures identified in forensic audit and implementing a production-ready solution.
+
+**Note:**
+This is a historical report documenting the repair process. Consult current i18n documentation for the authoritative current implementation.
+
+---
+
 # Mangulina i18n — Permanent Architecture Repair Report
 
 **Date:** June 20, 2026

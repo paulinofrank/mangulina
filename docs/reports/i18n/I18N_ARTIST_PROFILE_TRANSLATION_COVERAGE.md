@@ -1,3 +1,18 @@
+# Historical Report
+
+**Status:** Historical Snapshot (2026-06-20)
+
+**Current Source of Truth:**
+- [I18N_ARCHITECTURE_DIAGRAMS.md](../../I18N_ARCHITECTURE_DIAGRAMS.md)
+
+**Purpose:**
+Documentation of translation key extraction and coverage for the artist profile page during Phase 1 multilingual implementation.
+
+**Note:**
+This is a historical coverage report. Consult current i18n documentation for authoritative implementation details.
+
+---
+
 # Artist Profile — Translation Coverage
 
 **Scope:** Translation coverage only for the artist profile page and the components it renders. No changes to routing, middleware/proxy, `app/[locale]` structure, or next-intl configuration. No Supabase query changes.

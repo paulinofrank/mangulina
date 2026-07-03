@@ -36,7 +36,7 @@ DECLARE
         'sources',
         'sponsors',
         'translations',
-        'work_credits'
+        'credited_work_credits'
     ];
     service_only_tables text[] := ARRAY[
         'admin_invites',
