@@ -160,7 +160,39 @@ export async function POST(request: Request) {
   if (response.error) return jsonError(response.error.message, 500);
   if (!response.data?.id) return jsonError("No release row was saved.", 500);
 
-  return NextResponse.json({ ok: true, id: response.data.id });
+  const finalReleaseId = response.data.id;
+
+  // Also write to release_artists table if artist_id is set (Phase 3A support)
+  // This maintains backward compatibility while populating the new table
+  if (releaseArtist.value) {
+    const releaseArtistPayload = {
+      release_id: finalReleaseId,
+      artist_id: releaseArtist.value,
+      role: "primary",
+      display_order: 0,
+    };
+
+    // Try to update existing primary artist, insert if doesn't exist
+    const existingCheck = await supabase
+      .from("release_artists")
+      .select("id")
+      .eq("release_id", finalReleaseId)
+      .eq("role", "primary")
+      .maybeSingle();
+
+    if (existingCheck.data?.id) {
+      // Update existing primary artist entry
+      await supabase
+        .from("release_artists")
+        .update(releaseArtistPayload)
+        .eq("id", existingCheck.data.id);
+    } else {
+      // Insert new primary artist entry
+      await supabase.from("release_artists").insert(releaseArtistPayload).select().maybeSingle();
+    }
+  }
+
+  return NextResponse.json({ ok: true, id: finalReleaseId });
 }
 
 export async function DELETE(request: Request) {
@@ -175,6 +207,7 @@ export async function DELETE(request: Request) {
     ["recordings", "release_id"],
     ["artist_credits", "release_id"],
     ["release_view_events", "release_id"],
+    ["release_artists", "release_id"],
   ] as const;
 
   const blockers: string[] = [];

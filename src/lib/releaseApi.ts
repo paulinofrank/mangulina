@@ -7,6 +7,56 @@ const RELEASE_SUMMARY_SELECT =
   "id,slug,title,type,release_year,year,label,release_artist_id";
 const RELEASE_SUMMARY_SELECT_WITH_VIEWS = `${RELEASE_SUMMARY_SELECT},views`;
 
+// ============================================================================
+// Helper type for release artist info
+// ============================================================================
+
+export type ReleaseArtistInfo = {
+  artist_id: string | null;
+  artist_name: string | null;
+};
+
+// ============================================================================
+// Helper function: Get release artist (prefer release_artists, fallback to legacy)
+// ============================================================================
+// Returns artist info from release_artists table if available, otherwise falls back
+// to releases.release_artist_id. Maintains backward compatibility during transition.
+
+export async function getReleaseArtistInfo(releaseId: string): Promise<ReleaseArtistInfo> {
+  // Try to get from release_artists table first (new model)
+  const { data: releaseArtistsData } = await supabase
+    .from("release_artists")
+    .select("artist_id,artists!inner(name)")
+    .eq("release_id", releaseId)
+    .eq("role", "primary")
+    .order("display_order", { ascending: true, nullsFirst: true })
+    .limit(1)
+    .single();
+
+  if (releaseArtistsData && releaseArtistsData.artists) {
+    return {
+      artist_id: releaseArtistsData.artist_id,
+      artist_name: (releaseArtistsData.artists as any).name || null,
+    };
+  }
+
+  // Fallback: get from releases.release_artist_id (legacy field)
+  const { data: releaseData } = await supabase
+    .from("releases")
+    .select("release_artist_id,artists!release_artist_id(name)")
+    .eq("id", releaseId)
+    .single();
+
+  if (releaseData?.release_artist_id && releaseData.artists) {
+    return {
+      artist_id: releaseData.release_artist_id,
+      artist_name: (releaseData.artists as any).name || null,
+    };
+  }
+
+  return { artist_id: null, artist_name: null };
+}
+
 export type ReleaseSort = "views" | "recent" | "title";
 
 export type ReleaseTypeDefinition = {
