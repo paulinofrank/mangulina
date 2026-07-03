@@ -14,6 +14,19 @@
 -- ============================================================================
 
 -- ============================================================================
+-- TRIGGER FUNCTION: update_timestamp
+-- ============================================================================
+-- Creates or updates the update_timestamp trigger function if it doesn't exist
+
+CREATE OR REPLACE FUNCTION public.update_timestamp()
+RETURNS TRIGGER AS $$
+BEGIN
+    NEW.updated_at = NOW();
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+-- ============================================================================
 -- CREATE TABLE: release_artists
 -- ============================================================================
 
@@ -76,6 +89,15 @@ CREATE POLICY release_artists_manage_admin ON public.release_artists
     WITH CHECK (auth.jwt()->>'role' = 'admin');
 
 -- ============================================================================
+-- TRIGGER: Auto-update updated_at
+-- ============================================================================
+
+CREATE TRIGGER release_artists_update_timestamp
+    BEFORE UPDATE ON public.release_artists
+    FOR EACH ROW
+    EXECUTE FUNCTION public.update_timestamp();
+
+-- ============================================================================
 -- BACKFILL: Populate from releases.release_artist_id
 -- ============================================================================
 
@@ -91,16 +113,7 @@ WHERE release_artist_id IS NOT NULL
 ON CONFLICT (release_id, artist_id, role) DO NOTHING;
 
 -- ============================================================================
--- TRIGGER: Auto-update updated_at
--- ============================================================================
-
-CREATE TRIGGER release_artists_update_timestamp
-    BEFORE UPDATE ON public.release_artists
-    FOR EACH ROW
-    EXECUTE FUNCTION public.update_timestamp();
-
--- ============================================================================
--- COMMENT
+-- COMMENTS
 -- ============================================================================
 
 COMMENT ON TABLE public.release_artists IS
