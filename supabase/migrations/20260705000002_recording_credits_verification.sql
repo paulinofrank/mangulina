@@ -328,6 +328,31 @@ LIMIT 10;
 -- Shows recent credits for spot-checking
 
 -- ============================================================================
+-- 21. Legacy Performer Audit
+-- ============================================================================
+
+SELECT
+    rc.id,
+    rc.recording_id,
+    r.title as recording_title,
+    rc.artist_id,
+    a.name as artist_name,
+    rc.role,
+    rc.credited_as,
+    rc.display_order,
+    rc.created_at
+FROM public.recording_credits rc
+JOIN public.recordings r ON r.id = rc.recording_id
+JOIN public.artists a ON a.id = rc.artist_id
+WHERE rc.role = 'performer'
+ORDER BY r.title, a.name;
+
+-- Lists all legacy 'performer' role entries that need manual review/classification
+-- These should be updated to explicit roles: lead_performer, featured_performer,
+-- guest_performer, orchestra, choir, instrumentalist, etc.
+-- This is a manual task for editors (can be done in Phase 3C-B admin UI)
+
+-- ============================================================================
 -- END OF VERIFICATION QUERIES
 -- ============================================================================
 -- All queries above should execute without error.

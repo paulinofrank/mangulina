@@ -39,6 +39,12 @@ Roles are organized by credit level (per ADR-001: Three-Level Credit Architectur
 | `choir` | Vocal ensemble/chorus on this recording | Gospel choir ensemble | Full vocal group |
 | `orchestra` | Full orchestra ensemble on this recording | Philharmonic orchestra | Full orchestral ensemble |
 
+### Legacy/Deprecated Roles
+
+| Role | Definition | Status | Action |
+|------|-----------|--------|--------|
+| `performer` | Generic performer (no specific type) | ⚠️ LEGACY | DO NOT USE for new entries. Mark for manual review. See legacy_performer_audit query. |
+
 ### Instrumental Roles
 
 | Role | Definition | Example | Notes |
@@ -108,8 +114,11 @@ Roles are organized by credit level (per ADR-001: Three-Level Credit Architectur
 
 ### When in Doubt: Use Explicit Roles
 
-**DON'T:** Use generic `performer` or `instrumentalist` unless truly unclear  
-**DO:** Use specific roles: `lead_performer`, `featured_performer`, `guest_performer`, `vocalist`, `guitar`, etc.
+**DON'T:** Use generic `performer` — this is a legacy role that must be manually reviewed  
+**DON'T:** Use generic `instrumentalist` unless truly no other information available  
+**DO:** Use specific roles: `lead_performer`, `featured_performer`, `guest_performer`, `vocalist`, `guitar`, `drums`, `orchestra`, `choir`, etc.
+
+**IMPORTANT:** The role `performer` exists in legacy data (13 rows as of 2026-07-05) but should NOT be used for new entries. New entries MUST use explicit performer types.
 
 ### Performer Type Decisions
 
@@ -192,7 +201,8 @@ To remove a role:
 ### Recording-Level Roles Currently Used
 
 From initial data audit (2026-07-05):
-- `lead_performer` — 13 rows (migrated from generic `performer`)
+- `performer` — 13 rows (LEGACY, marked for manual review, NOT migrated)
+- New entries must use explicit roles: `lead_performer`, `featured_performer`, `guest_performer`, etc.
 
 ### Work-Level Roles Currently Used
 
@@ -206,6 +216,15 @@ From Phase 3B:
 - `compilation` — Ready for use
 - `various_artists` — Ready for use
 - `presenter` — Ready for use
+
+### Legacy Data Notes
+
+**Role `performer` (13 rows in recording_credits):**
+- Preserved as-is (not migrated)
+- Status: Requires manual review
+- Action: Editors should review and update each row to specific performer type (lead_performer, featured_performer, guest_performer, etc.)
+- Timeline: Can be addressed in Phase 3C-B when building admin UI
+- Query: Use `legacy_performer_audit()` to list all legacy performer rows for review
 
 ---
 

@@ -233,6 +233,45 @@ COMMENT ON FUNCTION public.get_recording_performers_summary(UUID) IS
     'Uses credited_as for historical accuracy when available.';
 
 -- ============================================================================
+-- 8. get_legacy_performer_credits()
+-- ============================================================================
+-- Returns all recording_credits rows with legacy role='performer'
+-- These entries need manual review and classification to specific performer types
+-- Used for audit and editorial review (Phase 3C-B admin UI)
+
+CREATE OR REPLACE FUNCTION public.get_legacy_performer_credits()
+RETURNS TABLE (
+    id UUID,
+    recording_id UUID,
+    recording_title TEXT,
+    artist_id UUID,
+    artist_name TEXT,
+    credited_as TEXT,
+    display_order INTEGER,
+    created_at TIMESTAMP WITH TIME ZONE
+) LANGUAGE SQL STABLE AS $$
+SELECT
+    rc.id,
+    rc.recording_id,
+    r.title as recording_title,
+    rc.artist_id,
+    a.name as artist_name,
+    rc.credited_as,
+    rc.display_order,
+    rc.created_at
+FROM public.recording_credits rc
+JOIN public.recordings r ON r.id = rc.recording_id
+JOIN public.artists a ON a.id = rc.artist_id
+WHERE rc.role = 'performer'
+ORDER BY r.title ASC, a.name ASC
+$$;
+
+COMMENT ON FUNCTION public.get_legacy_performer_credits() IS
+    'Get all recording_credits rows with legacy role="performer" that need manual review. '
+    'These should be updated to explicit roles: lead_performer, featured_performer, guest_performer, orchestra, choir, instrumentalist, etc. '
+    'Used for editorial audit and admin UI for manual reclassification.';
+
+-- ============================================================================
 -- END OF HELPER FUNCTIONS
 -- ============================================================================
 -- All functions:
