@@ -51,3 +51,6 @@ supabase_json_*/
 recordings*.json
 tracks*.json
 releases*.json
+
+#Temp files
+.tmp/

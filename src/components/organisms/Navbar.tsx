@@ -3,6 +3,7 @@
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useLocale, useTranslations } from 'next-intl';
 import { type AppLocale } from "@/i18n/pathname";
+import { saveLocalePreference } from "@/i18n/preference";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -18,6 +19,8 @@ export default function Navbar() {
   ];
 
   const handleLanguageSwitch = () => {
+    saveLocalePreference(alternateLocale);
+
     const search = typeof window !== "undefined" ? window.location.search : "";
     const params = new URLSearchParams(search);
     const query = Object.fromEntries(params.entries());

@@ -4,7 +4,11 @@ import { useEffect, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { type AppLocale } from "@/i18n/pathname";
-import { saveLocalePreference } from "@/i18n/preference";
+import {
+  getBrowserLocalePreference,
+  getSavedLocalePreference,
+  saveLocalePreference,
+} from "@/i18n/preference";
 
 export default function LanguageSelectionModal() {
   const t = useTranslations("language.modal");
@@ -14,15 +18,20 @@ export default function LanguageSelectionModal() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    // Check if user has already selected a language
-    const hasLocalePreference = document.cookie
-      .split("; ")
-      .some((cookie) => cookie.startsWith("mangulina_locale="));
-
-    if (!hasLocalePreference) {
-      // Show modal on first visit only
-      setShowModal(true);
+    const savedLocale = getSavedLocalePreference();
+    if (savedLocale) {
+      setShowModal(false);
+      return;
     }
+
+    const browserLocale = getBrowserLocalePreference();
+    if (browserLocale) {
+      saveLocalePreference(browserLocale);
+      setShowModal(false);
+      return;
+    }
+
+    setShowModal(true);
   }, []);
 
   const handleLanguageSelect = (locale: AppLocale) => {

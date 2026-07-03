@@ -6,6 +6,7 @@ import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { FaFacebook, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa6";
 import { type AppLocale } from "@/i18n/pathname";
+import { saveLocalePreference } from "@/i18n/preference";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -17,6 +18,8 @@ export default function Footer() {
   const alternateLocale = locale === "en" ? "es" : "en";
 
   const handleLanguageSwitch = () => {
+    saveLocalePreference(alternateLocale);
+
     const search = typeof window !== "undefined" ? window.location.search : "";
     const params = new URLSearchParams(search);
     const query = Object.fromEntries(params.entries());

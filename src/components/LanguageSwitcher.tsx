@@ -3,6 +3,7 @@
 import { useTranslations, useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { type AppLocale } from "@/i18n/pathname";
+import { saveLocalePreference } from "@/i18n/preference";
 
 export default function LanguageSwitcher() {
   const t = useTranslations("language.selector");
@@ -11,9 +12,10 @@ export default function LanguageSwitcher() {
   const locale = useLocale() as AppLocale;
 
   const handleLanguageChange = (newLocale: AppLocale) => {
+    saveLocalePreference(newLocale);
+
     if (newLocale !== locale) {
       // Navigate to the same page in the target locale: /artists <-> /es/artists.
-      // The URL is the source of truth; next-intl persists the preference cookie.
       // Preserve query parameters (e.g., ?view=zodiac).
       const search = typeof window !== "undefined" ? window.location.search : "";
       const params = new URLSearchParams(search);
