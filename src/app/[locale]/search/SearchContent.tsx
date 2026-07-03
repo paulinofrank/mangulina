@@ -2,6 +2,7 @@
 
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import SearchFeedbackCard from "@/components/search/SearchFeedbackCard";
 import type { SearchResult } from "@/lib/searchApi";
 
 type SearchContentProps = {
@@ -141,23 +142,27 @@ export default function SearchContent({
         </p>
       </header>
 
-      {!query ? (
-        <div className="rounded-2xl border border-dashed border-gray-200 bg-white p-8 text-gray-500">
-          {t("ui.noQuery")}
-        </div>
-      ) : total === 0 ? (
-        <div className="rounded-2xl border border-dashed border-gray-200 bg-white p-8 text-gray-500">
-          {t("ui.noResults")}
-        </div>
-      ) : (
-        <div className="space-y-6">
-          <ResultGroup title={t("ui.artistsGroup")} results={results.artists} />
+      <div className="space-y-8">
+        {!query ? (
+          <div className="rounded-2xl border border-dashed border-gray-200 bg-white p-8 text-gray-500">
+            {t("ui.noQuery")}
+          </div>
+        ) : total === 0 ? (
+          <div className="rounded-2xl border border-dashed border-gray-200 bg-white p-8 text-gray-500">
+            {t("ui.noResults")}
+          </div>
+        ) : (
+          <div className="space-y-6">
+            <ResultGroup title={t("ui.artistsGroup")} results={results.artists} />
 
-          <ResultGroup title={t("ui.songsGroup")} results={results.songs} />
+            <ResultGroup title={t("ui.songsGroup")} results={results.songs} />
 
-          <ResultGroup title={t("ui.albumsGroup")} results={results.releases} />
-        </div>
-      )}
+            <ResultGroup title={t("ui.albumsGroup")} results={results.releases} />
+          </div>
+        )}
+
+        {query && total === 0 && <SearchFeedbackCard />}
+      </div>
     </div>
   );
 }

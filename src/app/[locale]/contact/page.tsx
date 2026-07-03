@@ -5,6 +5,7 @@ import { getTranslations } from "next-intl/server";
 import {
   FaFacebook,
   FaInstagram,
+  FaTiktok,
   FaYoutube,
 } from "react-icons/fa6";
 import {
@@ -88,6 +89,11 @@ const SOCIAL_LINKS = [
     icon: FaYoutube,
     label: "YouTube",
     href: "https://youtube.com/@MangulinaDO",
+  },
+  {
+    icon: FaTiktok,
+    label: "TikTok",
+    href: "https://tiktok.com/@MangulinaDO",
   },
 ];
 
@@ -175,20 +181,20 @@ export default async function ContactPage() {
             {t("followDescription")}
           </p>
 
-          <div className="mt-7 grid gap-4 sm:grid-cols-3">
+          <div className="mt-7 grid gap-4 lg:grid-cols-4">
             {SOCIAL_LINKS.map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 rounded-2xl border border-white/15 bg-white/10 p-5 transition hover:border-white/30 hover:bg-white/15"
+                className="group flex min-w-0 items-center gap-3 rounded-2xl border border-white/15 bg-white/10 p-4 transition hover:border-white/30 hover:bg-white/15 xl:gap-4 xl:p-5"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#002D62]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-[#002D62] xl:h-11 xl:w-11">
                   <Icon className="h-5 w-5" aria-hidden={true} />
                 </span>
-                <span>
-                  <span className="block font-semibold text-white">{label}</span>
+                <span className="min-w-0">
+                  <span className="block truncate font-semibold text-white">{label}</span>
                   <span className="mt-0.5 block text-sm text-white/70">
                     @MangulinaDO
                   </span>

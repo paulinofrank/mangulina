@@ -40,6 +40,12 @@
       "songsGroup": "Songs",
       "albumsGroup": "Albums",
       "resultsFor": "Results for"
+    },
+    "feedback": {
+      "title": "Didn't find what you were looking for?",
+      "body": "Help us make Mangulina even better. If an artist, song, album, or other information is missing—or if you spot something that needs updating—we'd love your contribution.",
+      "footer": "Suggest an addition or report a correction. Every contribution helps preserve and document Dominican music for everyone.",
+      "button": "Contact Us"
     }
   },
   "footer": {

@@ -40,6 +40,12 @@
       "songsGroup": "Canciones",
       "albumsGroup": "Álbumes",
       "resultsFor": "Resultados para"
+    },
+    "feedback": {
+      "title": "¿No encontraste lo que estabas buscando?",
+      "body": "Ayúdanos a hacer de Mangulina una base de datos aún mejor. Si falta un artista, canción, álbum u otra información, o si detectas algo que necesita actualización, nos encantaría tu colaboración.",
+      "footer": "Sugiere una adición o reporta una corrección. Cada contribución ayuda a preservar y documentar la música dominicana para todos.",
+      "button": "Contáctanos"
     }
   },
   "footer": {
@@ -864,18 +870,18 @@
       "helpTitle": "¿Cómo Podemos Ayudarte?",
       "helpDescription": "Elige el área de contacto que mejor corresponda a tu consulta para que llegue al equipo adecuado de Mangulina.",
       "cards": {
-        "artists": {"title": "Artistas y Representantes", "description": "¿Necesitas actualizar una biografía o discografía, enviar correcciones, proporcionar información oficial o enriquecer un perfil de artista?", "button": "Contactar Soporte de Artistas"},
-        "correction": {"title": "Enviar una Corrección", "description": "¿Encontraste información incorrecta, créditos faltantes, fechas equivocadas u otros problemas de datos?", "button": "Reportar un Problema"},
+        "artists": {"title": "Artistas y Representantes", "description": "¿Necesitas actualizar una biografía o discografía, enviar correcciones, proporcionar información oficial o enriquecer un perfil de artista?", "button": "Soporte de Artistas"},
+        "correction": {"title": "Correcciones", "description": "¿Encontraste información incorrecta, créditos faltantes, fechas equivocadas u otros problemas de datos?", "button": "Reportar un Problema"},
         "contributor": {"title": "Ser Colaborador", "description": "¿Te interesa ayudar a preservar la música dominicana mediante investigación, documentación, información histórica o revisión editorial?", "button": "Ser Colaborador"},
         "partnerships": {"title": "Medios y Alianzas", "description": "Consultas de prensa, instituciones educativas, organizaciones culturales, archivos y oportunidades de colaboración.", "button": "Contactar Alianzas"},
-        "copyright": {"title": "Derechos de Autor y DMCA", "description": "¿Tienes preguntas sobre derechos de autor, atribución, imágenes o propiedad intelectual?", "button": "Derechos de Autor y DMCA"},
+        "copyright": {"title": "Derechos de Autor", "description": "¿Tienes preguntas sobre derechos de autor, atribución, imágenes o propiedad intelectual?", "button": "Derechos de Autor"},
         "general": {"title": "Preguntas Generales", "description": "Para cualquier tema no cubierto anteriormente.", "button": "Contacto General"}
       },
       "followTitle": "Sigue a Mangulina",
       "followDescription": "Sigue a @MangulinaDO para noticias del proyecto, artistas destacados, historia de la música dominicana y actualizaciones de la base de datos.",
       "emailTitle": "Directorio de Correos",
       "emailDescription": "Contacta directamente al buzón correspondiente. Las preguntas generales pueden enviarse a hello@mangulina.do.",
-      "preserveTitle": "Ayuda a Preservar la Música Dominicana",
+      "preserveTitle": "Ayúdanos a Preservar la Música Dominicana",
       "preserveCommunity": "Mangulina crece gracias a las contribuciones de artistas, historiadores, investigadores, coleccionistas, profesionales de la música y aficionados apasionados.",
       "preserveInvitation": "Si tienes información que pueda ayudar a documentar la música dominicana con mayor precisión, nos encantaría saber de ti.",
       "contributorButton": "Ser Colaborador",
