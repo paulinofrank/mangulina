@@ -4,9 +4,11 @@
 import { useRef } from "react";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { Disc3, Ellipsis, Flame, Heart, Music, Music2, Music4, Sparkles, Waves } from "lucide-react";
+import { BoomBox, Disc3, Drum, Ellipsis, Guitar, Heart, MicVocal } from "lucide-react";
+import { GiMusicalNotes, GiMusicalScore, GiSaxophone } from "react-icons/gi";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import SectionCard from "@/components/layout/SectionCard";
+import { genreSpectrumGradients } from "@/lib/genres";
 
 export default function BrowseByGenreSection() {
   const t = useTranslations("sections");
@@ -14,15 +16,16 @@ export default function BrowseByGenreSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const genreGroups = [
-    { titleKey: "merengue", labelKeys: ["pambiche", "tipico"], href: "/genres/merengue", color: "bg-amber-500", icon: Music },
-    { titleKey: "bachata", labelKeys: [], href: "/genres/bachata", color: "bg-blue-500", icon: Heart },
-    { titleKey: "salsa", labelKeys: [], href: "/genres/salsa", color: "bg-red-500", icon: Flame },
-    { titleKey: "urbano", labelKeys: ["dembow", "reggaeton"], href: "/genres/urbano", color: "bg-gradient-to-br from-pink-500 to-zinc-700", icon: Disc3 },
-    { titleKey: "instrumental", labelKeys: ["classical"], href: "/genres/instrumental", color: "bg-[#7A3E1C]", icon: Music4 },
-    { titleKey: "ballads", labelKeys: ["bolero", "romantic"], href: "/genres/ballads", color: "bg-teal-500", icon: Sparkles },
-    { titleKey: "folklore", labelKeys: ["traditional", "roots"], href: "/genres/folklore", color: "bg-emerald-600", icon: Music2 },
-    { titleKey: "fusion", labelKeys: ["jazz", "experimental"], href: "/genres/fusion", color: "bg-indigo-500", icon: Waves },
-    { titleKey: "moreGenre", labelKeys: [], href: "/genres/more", color: "bg-gray-300", icon: Ellipsis },
+    { titleKey: "merengue", labelKeys: ["pambiche", "tipico"], href: "/genres/merengue", color: genreSpectrumGradients.merengue, icon: GiMusicalNotes },
+    { titleKey: "bachata", labelKeys: [], href: "/genres/bachata", color: genreSpectrumGradients.bachata, icon: Heart },
+    { titleKey: "salsa", labelKeys: [], href: "/genres/salsa", color: genreSpectrumGradients.salsa, icon: Drum },
+    { titleKey: "urbano", labelKeys: ["dembow", "reggaeton"], href: "/genres/urbano", color: genreSpectrumGradients.urbano, icon: Disc3 },
+    { titleKey: "ballads", labelKeys: ["bolero", "romantic"], href: "/genres/ballads", color: genreSpectrumGradients.ballads, icon: MicVocal },
+    { titleKey: "rock", labelKeys: [], href: "/genres/rock", color: genreSpectrumGradients.rock, icon: Guitar },
+    { titleKey: "instrumental", labelKeys: ["classical"], href: "/genres/instrumental", color: genreSpectrumGradients.instrumental, icon: GiMusicalScore },
+    { titleKey: "fusion", labelKeys: ["jazz", "experimental"], href: "/genres/fusion", color: genreSpectrumGradients.fusion, icon: GiSaxophone },
+    { titleKey: "folklore", labelKeys: ["traditional", "roots"], href: "/genres/folklore", color: genreSpectrumGradients.folklore, icon: BoomBox },
+    { titleKey: "moreGenre", labelKeys: [], href: "/genres/more", color: genreSpectrumGradients.more, icon: Ellipsis },
   ];
 
   const scroll = (direction: "left" | "right") => {

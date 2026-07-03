@@ -174,9 +174,9 @@ export default async function GenrePage({ params }: PageProps) {
 
           {mainArtists.length > 0 && (
             <GenreCarouselSection title={t("topArtists", { genre: genre.title })}>
-              {mainArtists.map((artist) => (
+              {mainArtists.map((artist, index) => (
                 <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
-                  <ArtistCard artist={artist} titleAs="h3" />
+                  <ArtistCard artist={artist} titleAs="h3" priorityImage={index === 0} />
                 </div>
               ))}
             </GenreCarouselSection>
@@ -184,9 +184,13 @@ export default async function GenrePage({ params }: PageProps) {
 
           {connectedArtists.length > 0 && (
             <GenreCarouselSection title={t("connectedArtists", { genre: genre.title })}>
-              {connectedArtists.map((artist) => (
+              {connectedArtists.map((artist, index) => (
                 <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
-                  <ArtistCard artist={artist} titleAs="h3" />
+                  <ArtistCard
+                    artist={artist}
+                    titleAs="h3"
+                    priorityImage={mainArtists.length === 0 && index === 0}
+                  />
                 </div>
               ))}
             </GenreCarouselSection>
@@ -246,9 +250,15 @@ export default async function GenrePage({ params }: PageProps) {
 
           {recentlyAdded.length > 0 && (
             <GenreCarouselSection title={t("recentlyAdded")}>
-              {recentlyAdded.map((artist) => (
+              {recentlyAdded.map((artist, index) => (
                 <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
-                  <ArtistCard artist={artist} titleAs="h3" />
+                  <ArtistCard
+                    artist={artist}
+                    titleAs="h3"
+                    priorityImage={
+                      mainArtists.length === 0 && connectedArtists.length === 0 && index === 0
+                    }
+                  />
                 </div>
               ))}
             </GenreCarouselSection>

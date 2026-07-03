@@ -5,9 +5,10 @@ import { useTranslations } from "next-intl"
 type ArtistImageProps = {
   imageUrl: string | null | undefined
   name: string
+  priority?: boolean
 }
 
-export default function ArtistImage({ imageUrl, name }: ArtistImageProps) {
+export default function ArtistImage({ imageUrl, name, priority = false }: ArtistImageProps) {
   const t = useTranslations("common")
 
   if (!imageUrl) {
@@ -25,6 +26,8 @@ export default function ArtistImage({ imageUrl, name }: ArtistImageProps) {
       fill
       className="object-cover"
       sizes="(max-width: 640px) 70vw, (max-width: 1024px) 35vw, 22vw"
+      loading={priority ? "eager" : "lazy"}
+      fetchPriority={priority ? "high" : "auto"}
     />
   )
 }

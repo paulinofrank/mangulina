@@ -1,19 +1,26 @@
-import type { LucideIcon } from "lucide-react";
+import type { ComponentType, SVGProps } from "react";
 import {
   AudioWaveform,
+  BoomBox,
   Disc3,
+  Drum,
   Ellipsis,
-  Flame,
   Guitar,
   Heart,
   Headphones,
+  MicVocal,
   Music,
-  Music2,
   Music4,
   Radio,
-  Sparkles,
   Waves,
 } from "lucide-react";
+import { GiMusicalNotes, GiMusicalScore, GiSaxophone } from "react-icons/gi";
+
+type GenreIcon = ComponentType<
+  SVGProps<SVGSVGElement> & {
+    "aria-hidden"?: boolean;
+  }
+>;
 
 export type GenreDefinition = {
   slug: string;
@@ -28,7 +35,7 @@ export type GenreDefinition = {
   subgenres?: GenreSubgenre[];
   href: string;
   color: string;
-  icon: LucideIcon;
+  icon: GenreIcon;
 };
 
 export type GenreSubgenre = {
@@ -36,6 +43,19 @@ export type GenreSubgenre = {
   name: string;
   description: string | null;
 };
+
+export const genreSpectrumGradients = {
+  merengue: "bg-gradient-to-br from-red-500 to-orange-500",
+  bachata: "bg-gradient-to-br from-orange-500 to-amber-500",
+  salsa: "bg-gradient-to-br from-amber-500 to-emerald-600",
+  urbano: "bg-gradient-to-br from-emerald-600 to-teal-500",
+  ballads: "bg-gradient-to-br from-teal-500 to-sky-500",
+  rock: "bg-gradient-to-br from-sky-500 to-blue-600",
+  instrumental: "bg-gradient-to-br from-blue-600 to-indigo-500",
+  fusion: "bg-gradient-to-br from-indigo-500 to-violet-500",
+  folklore: "bg-gradient-to-br from-violet-500 to-gray-300",
+  more: "bg-gradient-to-br from-gray-300 to-gray-400",
+} as const;
 
 export const genreDefinitions = [
   {
@@ -48,8 +68,8 @@ export const genreDefinitions = [
     aliases: ["merengue", "pambiche", "típico", "tipico", "merengue típico", "merengue tipico"],
     relatedGenres: ["bachata", "salsa", "folklore", "fusion"],
     href: "/genres/merengue",
-    color: "bg-amber-500",
-    icon: Music,
+    color: genreSpectrumGradients.merengue,
+    icon: GiMusicalNotes,
   },
   {
     slug: "bachata",
@@ -72,7 +92,7 @@ export const genreDefinitions = [
     aliases: ["bachata", "bachata tradicional", "bachata moderna", "bachata romántica", "bachata romantica"],
     relatedGenres: ["merengue", "ballads", "urbano"],
     href: "/genres/bachata",
-    color: "bg-blue-500",
+    color: genreSpectrumGradients.bachata,
     icon: Heart,
   },
   {
@@ -85,8 +105,8 @@ export const genreDefinitions = [
     aliases: ["salsa", "salsa dominicana", "tropical"],
     relatedGenres: ["merengue", "bachata", "ballads"],
     href: "/genres/salsa",
-    color: "bg-red-500",
-    icon: Flame,
+    color: genreSpectrumGradients.salsa,
+    icon: Drum,
   },
   {
     slug: "urbano",
@@ -98,7 +118,7 @@ export const genreDefinitions = [
     aliases: ["urban", "urbano", "dembow", "reggaeton", "rap", "hip-hop", "hip hop", "trap"],
     relatedGenres: ["fusion", "bachata", "merengue"],
     href: "/genres/urbano",
-    color: "bg-gradient-to-br from-pink-500 to-zinc-700",
+    color: genreSpectrumGradients.urbano,
     icon: Disc3,
   },
   {
@@ -124,7 +144,7 @@ export const genreDefinitions = [
     aliases: ["rock", "alternative", "alternativo", "punk", "metal", "latin rock"],
     relatedGenres: ["pop", "electronic", "fusion"],
     href: "/genres/rock",
-    color: "bg-zinc-700",
+    color: genreSpectrumGradients.rock,
     icon: Guitar,
   },
   {
@@ -176,8 +196,8 @@ export const genreDefinitions = [
     aliases: ["instrumental", "classical", "clásica", "clasica", "orchestral", "orquesta", "piano"],
     relatedGenres: ["jazz", "fusion", "folklore", "ballads"],
     href: "/genres/instrumental",
-    color: "bg-[#7A3E1C]",
-    icon: Music4,
+    color: genreSpectrumGradients.instrumental,
+    icon: GiMusicalScore,
   },
   {
     slug: "ballads",
@@ -189,8 +209,8 @@ export const genreDefinitions = [
     aliases: ["ballads", "ballad", "balada", "baladas", "bolero", "romantic", "romántica", "romantica"],
     relatedGenres: ["bachata", "salsa", "instrumental"],
     href: "/genres/ballads",
-    color: "bg-teal-500",
-    icon: Sparkles,
+    color: genreSpectrumGradients.ballads,
+    icon: MicVocal,
   },
   {
     slug: "folklore",
@@ -202,8 +222,8 @@ export const genreDefinitions = [
     aliases: ["folklore", "folklórico", "folklorico", "traditional", "tradicional", "roots", "raices", "raíces"],
     relatedGenres: ["merengue", "instrumental", "fusion"],
     href: "/genres/folklore",
-    color: "bg-emerald-600",
-    icon: Music2,
+    color: genreSpectrumGradients.folklore,
+    icon: BoomBox,
   },
   {
     slug: "fusion",
@@ -215,8 +235,8 @@ export const genreDefinitions = [
     aliases: ["fusion", "fusión", "experimental", "tropical fusion", "afro-caribbean fusion"],
     relatedGenres: ["instrumental", "jazz", "rock", "electronic", "urbano", "folklore", "merengue"],
     href: "/genres/fusion",
-    color: "bg-indigo-500",
-    icon: Waves,
+    color: genreSpectrumGradients.fusion,
+    icon: GiSaxophone,
   },
   {
     slug: "more",
@@ -228,7 +248,7 @@ export const genreDefinitions = [
     aliases: [],
     relatedGenres: ["merengue", "bachata", "salsa", "urbano", "ballads", "pop", "rock", "reggae", "jazz", "electronic", "instrumental", "folklore", "fusion"],
     href: "/genres/more",
-    color: "bg-gray-300",
+    color: genreSpectrumGradients.more,
     icon: Ellipsis,
   },
 ] satisfies GenreDefinition[];

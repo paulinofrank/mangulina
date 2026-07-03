@@ -12,12 +12,14 @@ type ArtistCardProps = {
   artist: Artist;
   titleAs?: "h3" | "h4";
   showViews?: boolean;
+  priorityImage?: boolean;
 };
 
 export default function ArtistCard({
   artist,
   titleAs = "h3",
   showViews = true,
+  priorityImage = false,
 }: ArtistCardProps) {
 
   const t = useTranslations("common");
@@ -43,6 +45,7 @@ export default function ArtistCard({
           <ArtistImage
             imageUrl={imageUrl}
             name={artist.name}
+            priority={priorityImage}
           />
 
         </div>
