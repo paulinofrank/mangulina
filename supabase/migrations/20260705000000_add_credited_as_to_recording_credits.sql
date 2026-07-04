@@ -26,10 +26,16 @@ ADD COLUMN IF NOT EXISTS credited_as TEXT;
 ALTER TABLE public.recording_credits
 ADD COLUMN IF NOT EXISTS display_order INTEGER NOT NULL DEFAULT 0;
 
--- Add constraint to prevent empty strings in credited_as
-ALTER TABLE public.recording_credits
-ADD CONSTRAINT recording_credits_credited_as_check
-    CHECK (credited_as IS NULL OR length(trim(credited_as)) > 0);
+-- Add constraint to prevent empty strings in credited_as (safe: ignore if already exists)
+DO $$
+BEGIN
+    ALTER TABLE public.recording_credits
+    ADD CONSTRAINT recording_credits_credited_as_check
+        CHECK (credited_as IS NULL OR length(trim(credited_as)) > 0);
+EXCEPTION WHEN duplicate_object THEN
+    -- Constraint already exists, this is fine
+    NULL;
+END $$;
 
 -- ============================================================================
 -- UPDATE table comments for clarity
