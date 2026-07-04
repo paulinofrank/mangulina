@@ -66,18 +66,17 @@ WHERE constraint_schema = 'public'
 -- ============================================================================
 
 SELECT
-    constraint_name,
-    table_name,
-    column_name,
-    referenced_table_name,
-    referenced_column_name,
-    delete_rule
-FROM information_schema.referential_constraints
-JOIN information_schema.key_column_usage
-    ON referential_constraints.constraint_name = key_column_usage.constraint_name
-WHERE key_column_usage.table_schema = 'public'
-  AND key_column_usage.table_name = 'recording_credits'
-ORDER BY constraint_name;
+    rc.constraint_name,
+    kcu.table_name,
+    kcu.column_name,
+    rc.unique_constraint_name,
+    rc.delete_rule
+FROM information_schema.referential_constraints rc
+JOIN information_schema.key_column_usage kcu
+    ON rc.constraint_name = kcu.constraint_name
+WHERE kcu.table_schema = 'public'
+  AND kcu.table_name = 'recording_credits'
+ORDER BY rc.constraint_name;
 
 -- Expected:
 -- recording_id → recordings.id (CASCADE)
