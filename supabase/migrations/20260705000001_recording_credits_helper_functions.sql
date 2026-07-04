@@ -126,7 +126,6 @@ SELECT
 FROM public.recording_credits rc
 JOIN public.recordings r ON r.id = rc.recording_id
 WHERE rc.artist_id = $1
-AND r.status = 'published'
 ORDER BY r.created_at DESC, rc.display_order NULLS LAST
 $$;
 

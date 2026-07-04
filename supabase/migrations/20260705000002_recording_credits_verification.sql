@@ -302,8 +302,7 @@ FROM public.recordings r
 WHERE NOT EXISTS (
     SELECT 1 FROM public.recording_credits rc
     WHERE rc.recording_id = r.id
-)
-AND r.status = 'published';
+);
 
 -- Identifies gaps in data entry
 
@@ -320,8 +319,7 @@ SELECT
 FROM public.recording_credits rc
 JOIN public.recordings r ON r.id = rc.recording_id
 JOIN public.artists a ON a.id = rc.artist_id
-WHERE r.status = 'published'
-  AND a.status = 'published'
+WHERE a.status = 'published'
 ORDER BY rc.created_at DESC
 LIMIT 10;
 
@@ -345,7 +343,7 @@ FROM public.recording_credits rc
 JOIN public.recordings r ON r.id = rc.recording_id
 JOIN public.artists a ON a.id = rc.artist_id
 WHERE rc.role = 'performer'
-ORDER BY r.title, a.name;
+ORDER BY r.title ASC, a.name ASC;
 
 -- Lists all legacy 'performer' role entries that need manual review/classification
 -- These should be updated to explicit roles: lead_performer, featured_performer,
