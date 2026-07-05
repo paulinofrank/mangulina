@@ -524,22 +524,27 @@ export default function AdminCatalogRecordingsPage() {
             <div className="grid gap-4 md:grid-cols-2">
               <AdminField label="Title"><input value={form.title} onChange={(event) => updateForm("title", event.target.value)} className={adminInputClass} /></AdminField>
               <AdminField label="Slug"><input value={form.slug} onChange={(event) => updateForm("slug", event.target.value)} placeholder="Auto-created if empty" className={adminInputClass} /></AdminField>
-              <AdminSearchPicker
-                label="Artist"
-                value={form.artist_id}
-                displayValue={form.artist_name}
-                placeholder="Search artist..."
-                endpoint="/api/admin/artists"
-                resultKey="artists"
-                onSelect={(option: PickerOption) => {
-                  updateForm("artist_id", option.id);
-                  updateForm("artist_name", option.name ?? "");
-                }}
-                onClear={() => {
-                  updateForm("artist_id", "");
-                  updateForm("artist_name", "");
-                }}
-              />
+              <div>
+                <AdminSearchPicker
+                  label="Primary Performer"
+                  value={form.artist_id}
+                  displayValue={form.artist_name}
+                  placeholder="Search artist..."
+                  endpoint="/api/admin/artists"
+                  resultKey="artists"
+                  onSelect={(option: PickerOption) => {
+                    updateForm("artist_id", option.id);
+                    updateForm("artist_name", option.name ?? "");
+                  }}
+                  onClear={() => {
+                    updateForm("artist_id", "");
+                    updateForm("artist_name", "");
+                  }}
+                />
+                <p className="mt-1 text-xs text-gray-500">
+                  This artist is saved as the legacy recording artist and as the primary performer in recording_credits.
+                </p>
+              </div>
               <AdminSearchPicker
                 label="Release"
                 value={form.release_id}
@@ -578,7 +583,7 @@ export default function AdminCatalogRecordingsPage() {
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               <AdminField label="ISRCs"><input value={form.isrcs} onChange={(event) => updateForm("isrcs", event.target.value)} placeholder="USRC17607839, ..." className={adminInputClass} /></AdminField>
               <AdminField label="Disambiguation"><input value={form.disambiguation} onChange={(event) => updateForm("disambiguation", event.target.value)} className={adminInputClass} /></AdminField>
-              <AdminField label="MBID"><input value={form.mbid} onChange={(event) => updateForm("mbid", event.target.value)} className={adminInputClass} /></AdminField>
+              <AdminField label="Recording ID"><input value={selectedRecording?.id ?? ""} readOnly className={`${adminInputClass} bg-gray-50 cursor-not-allowed`} /></AdminField>
               <AdminField label="Work ID"><input value={form.work_id} onChange={(event) => updateForm("work_id", event.target.value)} className={adminInputClass} /></AdminField>
             </div>
 

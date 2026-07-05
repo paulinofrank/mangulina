@@ -20,6 +20,7 @@ import {
 } from "@/lib/artistApi";
 import { getArtistRelationships } from "@/lib/artistRelationships";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
+import ArtistWorksPortfolio from "@/components/organisms/ArtistWorksPortfolio";
 import {
   artistSeoTitle,
   createPageMetadata,
@@ -172,8 +173,12 @@ export default async function ArtistProfile({ params }: PageProps) {
                 <ArtistInterviewsCarousel interviews={interviews} />
               </div>
 
-              <div className="min-w-0">
-                <ArtistDiscographyAccordion releases={discography} />
+              <div className="min-w-0 space-y-6">
+                {discography.length > 0 && (
+                  <ArtistDiscographyAccordion releases={discography} />
+                )}
+
+                <ArtistWorksPortfolio artistId={artist.id} />
               </div>
             </div>
           </main>

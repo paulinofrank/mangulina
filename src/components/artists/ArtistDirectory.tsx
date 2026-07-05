@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { SlidersHorizontal } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
 import { getSupabaseClient } from "@/lib/supabase";
 import ArtistCard from "@/components/molecules/ArtistCard";
@@ -142,6 +142,7 @@ function Pagination({
   insideBox?: boolean;
 }) {
   const t = useTranslations("pagination");
+  const locale = useLocale();
 
   if (totalPages <= 1) return null;
 
@@ -180,7 +181,7 @@ function Pagination({
         disabled={currentPage === 1}
         className={`${mobileClass} cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30`}
       >
-        {t("previous")}
+        {mobileOnly && locale === "es" ? t("previousMobile") : t("previous")}
       </button>
 
       <div className={`${mobileClass} flex-1 items-center justify-center gap-2`}>
@@ -217,7 +218,7 @@ function Pagination({
         disabled={currentPage === totalPages}
         className={`${mobileClass} cursor-pointer px-1 text-sm text-gray-500 underline-offset-4 transition hover:text-(--color-flagblue) hover:underline disabled:cursor-default disabled:opacity-30`}
       >
-        {t("next")}
+        {mobileOnly && locale === "es" ? t("nextMobile") : t("next")}
       </button>
 
       <button
@@ -229,6 +230,14 @@ function Pagination({
       </button>
 
       <button
+        onClick={() => onPageChange(1)}
+        disabled={currentPage === 1}
+        className={`${desktopClass} cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30`}
+      >
+        {t("first")}
+      </button>
+
+      <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
         className={`${desktopClass} cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30`}
@@ -236,23 +245,49 @@ function Pagination({
         {t("previous")}
       </button>
 
-      {Array.from({ length: Math.min(totalPages, 5) }).map((_, i) => {
-        const page = i + 1;
-        return (
-          <button
-            key={page}
-            onClick={() => onPageChange(page)}
-            className={`${desktopClass} h-10 w-10 cursor-pointer rounded-full border text-sm transition
-              ${
-                currentPage === page
-                  ? "bg-(--color-flagblue) text-white border-(--color-flagblue)"
-                  : "border-black/10 bg-white text-gray-600 hover:bg-gray-100"
-              }`}
-          >
-            {page}
-          </button>
+      {(() => {
+        const desktopWindowSize = Math.min(totalPages, 3);
+        const desktopWindowStart =
+          currentPage <= 3
+            ? 1
+            : Math.min(currentPage - 1, totalPages - desktopWindowSize + 1);
+        const desktopPages = Array.from({ length: desktopWindowSize }).map(
+          (_, index) => desktopWindowStart + index,
         );
-      })}
+        const showDesktopLeadingEllipsis = desktopPages[0] > 1;
+        const showDesktopTrailingEllipsis = desktopPages[desktopPages.length - 1] < totalPages;
+
+        return (
+          <>
+            {showDesktopLeadingEllipsis && (
+              <span className={`${desktopClass} px-1 text-sm text-gray-400`} aria-hidden="true">
+                ...
+              </span>
+            )}
+
+            {desktopPages.map((page) => (
+              <button
+                key={page}
+                onClick={() => onPageChange(page)}
+                className={`${desktopClass} h-10 w-10 cursor-pointer rounded-full border text-sm transition
+                  ${
+                    currentPage === page
+                      ? "bg-(--color-flagblue) text-white border-(--color-flagblue)"
+                      : "border-black/10 bg-white text-gray-600 hover:bg-gray-100"
+                  }`}
+              >
+                {page}
+              </button>
+            ))}
+
+            {showDesktopTrailingEllipsis && (
+              <span className={`${desktopClass} px-1 text-sm text-gray-400`} aria-hidden="true">
+                ...
+              </span>
+            )}
+          </>
+        );
+      })()}
 
       <button
         onClick={() => onPageChange(currentPage + 1)}
@@ -260,6 +295,14 @@ function Pagination({
         className={`${desktopClass} cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30`}
       >
         {t("next")}
+      </button>
+
+      <button
+        onClick={() => onPageChange(totalPages)}
+        disabled={currentPage === totalPages}
+        className={`${desktopClass} cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30`}
+      >
+        {t("last")}
       </button>
     </section>
   );
@@ -342,8 +385,9 @@ function ArtistsContent({
   const instrumentFilter = searchParams.get("instrument");
   const awardFilter = searchParams.get("award");
   const province = fixedProvince ?? searchParams.get("province") ?? searchParams.get("region");
-  const sort = searchParams.get("sort") ?? "views";
+  const sort = searchParams.get("sort") ?? "name";
   const currentPage = parseInt(searchParams.get("page") ?? "1");
+  const letterFilter = searchParams.get("letter");
   const rankedArtistIdsKey = rankedArtistIds?.join(",") ?? "";
   const awardRankingsKey = awardRankings
     .map(
@@ -600,6 +644,10 @@ function ArtistsContent({
           query = query.eq("province", province);
         }
 
+        if (letterFilter) {
+          query = query.ilike("name", `${letterFilter}%`);
+        }
+
         // Large-ID audit: award rankings are unbounded and can exceed 100 artist IDs;
         // the ranked/filterable directory should eventually be backed by an RPC.
         const response = rankedArtistIds?.length
@@ -671,6 +719,7 @@ function ArtistsContent({
       instrumentFilter ?? "",
       province ?? "",
       sort,
+      letterFilter ?? "",
       rankedArtistIdsKey,
       genreOptions.map((item) => `${item.id}:${item.slug ?? item.name}`).join("|"),
       subgenreOptions.map((item) => `${item.id}:${item.name}`).join("|"),
@@ -708,6 +757,7 @@ function ArtistsContent({
     instrumentFilter,
     province,
     sort,
+    letterFilter,
     rankedArtistIdsKey,
     genreOptions,
     subgenreOptions,
@@ -790,6 +840,14 @@ function ArtistsContent({
     router.push(routeWithParams(params));
   };
 
+  const handleLetterChange = (letter: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (letter) params.set("letter", letter);
+    else params.delete("letter");
+    params.set("page", "1");
+    router.push(routeWithParams(params));
+  };
+
   const clearFilters = () => {
     router.push(basePath);
   };
@@ -808,6 +866,7 @@ function ArtistsContent({
       occupationFilter,
       instrumentFilter,
       awardFilter,
+      letterFilter,
     ].filter(Boolean).length;
   }, [
     role,
@@ -819,6 +878,7 @@ function ArtistsContent({
     occupationFilter,
     instrumentFilter,
     awardFilter,
+    letterFilter,
   ]);
 
   const pageTitle = useMemo(() => {
@@ -997,8 +1057,7 @@ function ArtistsContent({
               </h1>
 
               <p className="hidden shrink-0 text-right text-xs text-gray-500 lg:block lg:text-sm">
-                {t("pagination.showing", {
-                  count: artists.length,
+                {t("pagination.showingTotal", {
                   total: totalCount.toLocaleString(),
                 })}
               </p>
@@ -1162,6 +1221,37 @@ function ArtistsContent({
               >
                 {t("buttons.clearAll")}
               </button>
+            </div>
+
+            <div className="hidden w-full pt-2 lg:block">
+              <div className="flex gap-0.5">
+                <button
+                  onClick={() => handleLetterChange("")}
+                  className={`flex-1 py-1 text-xs font-medium rounded transition ${
+                    !letterFilter
+                      ? "bg-(--color-flagblue) text-white"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  }`}
+                >
+                  {t("filters.all")}
+                </button>
+                {Array.from({ length: 26 }).map((_, i) => {
+                  const letter = String.fromCharCode(65 + i);
+                  return (
+                    <button
+                      key={letter}
+                      onClick={() => handleLetterChange(letter)}
+                      className={`flex-1 py-1 rounded text-xs font-medium transition ${
+                        letterFilter === letter
+                          ? "bg-(--color-flagblue) text-white"
+                          : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                      }`}
+                    >
+                      {letter}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
@@ -1345,8 +1435,7 @@ function ArtistsContent({
             </div>
 
             <p className="pt-1 text-center text-xs text-gray-500 sm:text-sm">
-              {t("pagination.showing", {
-                count: artists.length,
+              {t("pagination.showingTotal", {
                 total: totalCount.toLocaleString(),
               })}
             </p>
@@ -1385,7 +1474,7 @@ function ArtistsContent({
             </button>
           </div>
         ) : artists.length > 0 ? (
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-4 sm:gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 gap-4 sm:gap-5 mb-8 sm:mb-12">
             {artists.map((artist) => (
               <div key={artist.id} className="mx-auto w-[90%]">
                 <ArtistCard artist={artist} showViews={!showAwardRankings} />
@@ -1403,10 +1492,21 @@ function ArtistsContent({
           </div>
         )}
 
+        <div className="sm:hidden">
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={handlePageChange}
+            mobileOnly
+            insideBox
+          />
+        </div>
+
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={handlePageChange}
+          hideMobile
           insideBox
         />
       </section>

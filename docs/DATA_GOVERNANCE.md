@@ -611,9 +611,157 @@ Release table: release_artist = Aventura
 (Stored once at natural level; relationships clarify role)
 ```
 
+### Important: Version 1 Scope
+
+The three-layer architecture is extensible and designed to support complete credit networks.
+
+However, **Version 1 of Works & Credits documents only the contributions of the Dominican artist whose profile is being viewed.**
+
+Examples above show the complete structure, but in practice:
+- A Dominican composer's profile shows works they composed
+- A Dominican performer's profile shows recordings they performed on
+- A Dominican lyricist's profile shows works they wrote lyrics for
+
+Version 1 does **not** strive for complete session information (all engineers, all session musicians, all producers not connected to the featured artist).
+
+Complete collaborative credit networks are a future expansion. See Section 9 (Editorial Philosophy) for the reasoning behind this scope.
+
 ---
 
-## 9. Data Modeling Rules
+## 9. Editorial Philosophy — Dominican Artist-Centered Credits
+
+The Works & Credits system is guided by a fundamental editorial philosophy: **Mangulina documents the creative careers and contributions of Dominican artists.**
+
+### Primary Mission
+
+Mangulina exists to preserve and present the body of work created or contributed to by Dominican artists throughout their careers.
+
+**Critical:** Mangulina is NOT attempting to reconstruct the complete worldwide credit history of every musical work.
+
+The Dominican artist is the center of the model. Every feature, every credit, every relationship is evaluated against one question:
+
+**"How does this document or serve a Dominican artist's creative contribution?"**
+
+---
+
+### Artist-Centered Approach
+
+Every record in the Works & Credits system answers one specific question:
+
+**"What contribution did this Dominican artist make to this work?"**
+
+Not:
+
+**"Who contributed to this work?"**
+
+Those are different editorial goals with different data models and different scopes.
+
+Mangulina prioritizes documenting the Dominican artist's career. We are building the artist's resume, not the work's credits.
+
+---
+
+### Progressive Documentation
+
+**The absence of other collaborators must never prevent documenting the contribution of a Dominican artist.**
+
+Example:
+
+If Luny Tunes is credited as a Producer on a song, that credit should be preserved and documented even if every other producer, writer, arranger, engineer, or musician on that work has not yet been documented.
+
+Additional collaborators may be added later as Mangulina grows and expands its editorial coverage.
+
+**This is not incompleteness. This is prioritization.**
+
+The Dominican artist's verified contribution stands independently. It does not depend on completeness of other credits.
+
+---
+
+### Accuracy Before Completeness
+
+**Never invent missing collaborators. Never delay documenting a verified Dominican credit because other credits are still unknown.**
+
+These principles guide editorial decisions:
+
+1. **Unknown information remains empty** until verified
+2. **Verified information is always preserved** and visible
+3. **Incomplete credits are acceptable** if the Dominican contribution is accurate
+4. **We never guess** to fill gaps
+
+Example:
+
+```
+CORRECT:
+Work: "La Bella y La Bestia"
+Composer: Luny Tunes
+(No other credits documented yet)
+
+INCORRECT:
+Work: "La Bella y La Bestia"
+Composer: Luny Tunes
+Lyricist: Unknown
+Producer: Unknown
+[Guessing to appear complete]
+```
+
+The verified Dominican composer credit stands alone. It does not require padding with empty guesses.
+
+---
+
+### Scope of Version 1
+
+**Version 1 of Works & Credits documents only the contributions of the Dominican artist whose profile is being viewed.**
+
+A composer's profile shows:
+- Works composed by that composer
+- Works where they contributed as lyricist
+- Works where they arranged or orchestrated
+- Works in any creative role they held
+
+It does **not** show complete credits for those works (other contributors, studio engineers, session musicians).
+
+Future versions may expand to include complete collaborative credit networks and detailed session information.
+
+**That future expansion is not required for Version 1 to succeed.**
+
+Version 1 succeeds by accurately and completely documenting the Dominican artist's career.
+
+---
+
+### Design Consequences
+
+This philosophy intentionally keeps the system:
+
+- **Simpler:** Focused scope, fewer edge cases, clearer editorial decisions
+- **Editorially Consistent:** Clear rules for what to include and what to exclude
+- **Historically Accurate:** No invented credits, no padding, no guesses
+- **Scalable:** Can expand to include collaborators without breaking the foundation
+
+Future versions can add:
+- Complete session credits
+- Producer/engineer credits
+- Arranger/orchestrator details
+- Collaborative credit networks
+- Studio and session information
+
+But the foundation remains: the Dominican artist's career is properly documented first.
+
+---
+
+### Relationship to Other Sections
+
+This philosophy informs:
+
+- **Section 7 (National vs. International Scope):** International works are included ONLY when they document Dominican artist contributions
+- **Section 8 (Credits Architecture):** The three-layer system preserves each level of Dominican creative contribution
+- **Section 10 (Editorial Rules):** Rules for creation/merging/deletion follow this artist-centered model
+
+When editorial decisions are ambiguous, refer back to this question:
+
+**"How does this decision serve documentation of the Dominican artist's creative contribution?"**
+
+---
+
+## 11. Data Modeling Rules
 
 These rules codify how entities relate to each other.
 
@@ -710,7 +858,7 @@ This is historical data, not duplication of the canonical name.
 
 ---
 
-## 10. Editorial Rules
+## 12. Editorial Rules
 
 These rules govern when to create, reuse, or merge entities.
 
@@ -871,7 +1019,7 @@ Karaoke versions are:
 
 ---
 
-## 11. Naming Conventions
+## 13. Naming Conventions
 
 Consistency in naming ensures searchability and clarity.
 
@@ -943,7 +1091,7 @@ Handle consistently:
 
 ---
 
-## 12. Future Compatibility
+## 14. Future Compatibility
 
 Mangulina's model is intentionally extensible for future features.
 
@@ -1002,7 +1150,7 @@ When adding future features:
 
 ---
 
-## 13. Examples
+## 15. Examples
 
 Complete, real-world examples demonstrating the data model.
 
@@ -1267,7 +1415,7 @@ But each Track has its own Primary Artist (the recording performer)
 
 ---
 
-## 14. Guiding Philosophy
+## 16. Guiding Philosophy
 
 Mangulina is more than a database. It is a historical record of Dominican music.
 
@@ -1318,7 +1466,7 @@ But the core principle remains: accuracy, clarity, respect.
 
 ---
 
-## 15. Conclusion: The Constitution of Mangulina
+## 17. Conclusion: The Constitution of Mangulina
 
 This document is the constitution of Mangulina's data model.
 
