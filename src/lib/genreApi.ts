@@ -316,16 +316,45 @@ async function getImportantReleases(artistIds: string[]) {
   if (artistIds.length === 0) return [];
 
   const supabase = getSupabaseClient();
-  const response = await supabase
+
+  // Get releases from release_artists table (prefer new model)
+  const { data: newModelReleases, error: newModelError } = await supabase
+    .from("release_artists")
+    .select("release_id")
+    .in("artist_id", artistIds)
+    .eq("role", "primary");
+
+  if (newModelError) throw newModelError;
+
+  const releaseIds = new Set(
+    (newModelReleases ?? []).map((row: any) => row.release_id as string)
+  );
+
+  // Also get releases from legacy release_artist_id field
+  const { data: legacyReleases, error: legacyError } = await supabase
+    .from("releases")
+    .select("id")
+    .in("release_artist_id", artistIds);
+
+  if (legacyError) throw legacyError;
+
+  for (const row of (legacyReleases ?? []) as Array<{ id: string }>) {
+    releaseIds.add(row.id);
+  }
+
+  // Fetch release details for all found releases
+  if (releaseIds.size === 0) return [];
+
+  const { data: releases, error: releasesError } = await supabase
     .from("releases")
     .select("id,slug,title,release_year,year,label")
-    .in("release_artist_id", artistIds)
+    .in("id", Array.from(releaseIds))
     .order("release_year", { ascending: false, nullsFirst: false })
     .limit(SECTION_LIMIT);
 
-  if (response.error) throw response.error;
+  if (releasesError) throw releasesError;
 
-  return ((response.data ?? []) as ReleaseRow[]).map((release) => ({
+  return ((releases ?? []) as ReleaseRow[]).map((release) => ({
     id: release.id,
     slug: release.slug,
     title: release.title,

@@ -44,6 +44,10 @@ export async function getSongsBySubgenre(
 
   if (error) throw error;
 
+  type RecordingViewRow = ArchiveSongRow & {
+    artist_id: string | null;
+  };
+
   const rows = (data ?? []) as RecordingViewRow[];
   const artistIds = [
     ...new Set(

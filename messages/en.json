@@ -217,6 +217,12 @@
   "artist": {
     "discography": "Discography",
     "noDiscography": "No discography available for this artist.",
+    "worksAndCredits": "Works & Credits",
+    "work": "Work",
+    "works": "Works",
+    "role": "Role",
+    "performer": "Performer",
+    "release": "Release",
     "biography": "Biography",
     "noBiography": "No biography available for this artist.",
     "technicalSheet": "Technical Sheet",
@@ -362,6 +368,7 @@
     "roleOnly": "Dominican {role}"
   },
   "filters": {
+    "all": "All",
     "allDecades": "All decades",
     "allGenres": "All Genres",
     "allRoles": "All Roles",
@@ -407,7 +414,8 @@
     "previous": "Previous",
     "next": "Next",
     "last": "Last",
-    "showing": "Showing {count} of {total} artists"
+    "showing": "Showing {count} of {total} artists",
+    "showingTotal": "Showing {total} artists"
   },
   "buttons": {
     "apply": "Apply",

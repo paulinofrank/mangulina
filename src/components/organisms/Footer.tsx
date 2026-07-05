@@ -85,7 +85,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <nav aria-label={a11y("footerNav")} className="text-sm font-normal text-gray-600 sm:text-base">
-            <div className="grid grid-cols-2 gap-x-18 sm:hidden">
+            <div className="grid grid-cols-2 gap-x-4 sm:hidden">
               <div className="flex flex-col gap-3 justify-self-end text-right">
                 <Link href="/about" className="transition-colors hover:text-[#002D62]">
                   {nav("about")}
@@ -99,13 +99,13 @@ export default function Footer() {
               </div>
 
               <div className="flex flex-col gap-3 justify-self-start text-left">
-                <Link href="/terms-of-use" className="transition-colors hover:text-[#002D62]">
+                <Link href="/terms-of-use" className="whitespace-nowrap transition-colors hover:text-[#002D62]">
                   {nav("termsOfUse")}
                 </Link>
-                <Link href="/privacy-policy" className="transition-colors hover:text-[#002D62]">
+                <Link href="/privacy-policy" className="whitespace-nowrap transition-colors hover:text-[#002D62]">
                   {nav("privacyPolicy")}
                 </Link>
-                <Link href="/dmca" className="transition-colors hover:text-[#002D62]">
+                <Link href="/dmca" className="whitespace-nowrap transition-colors hover:text-[#002D62]">
                   {nav("copyrights")}
                 </Link>
               </div>

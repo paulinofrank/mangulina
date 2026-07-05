@@ -126,7 +126,7 @@
   },
   "creditRoles": {
     "performedBy": "Interpretado por",
-    "vocals": "Vocals",
+    "vocals": "Voz",
     "composedBy": "Compuesto por",
     "writtenBy": "Escrito por",
     "lyricsBy": "Letras por",
@@ -150,8 +150,19 @@
     "saxophone": "Saxófono",
     "violin": "Violín",
     "chorus": "Coro",
-    "backingVocals": "Vocals de apoyo",
-    "backgroundVocals": "Vocals de fondo"
+    "backingVocals": "Voz de apoyo",
+    "backgroundVocals": "Voz de fondo"
+  },
+  "roles": {
+    "producer": "Productor",
+    "composer": "Compositor",
+    "arranger": "Arreglista",
+    "co_producer": "Co-productor",
+    "executive_producer": "Productor Ejecutivo",
+    "mastering_engineer": "Ingeniero de Masterización",
+    "mix_engineer": "Ingeniero de Mezcla",
+    "beat_programmer": "Creador de Ritmos",
+    "remixer": "Remezclador"
   },
   "badge": {
     "official": "Oficial",
@@ -217,6 +228,12 @@
   "artist": {
     "discography": "Discografía",
     "noDiscography": "Sin discografía disponible para este artista.",
+    "worksAndCredits": "Trabajos y Créditos",
+    "work": "Trabajo",
+    "works": "Trabajos",
+    "role": "Rol",
+    "performer": "Intérprete",
+    "release": "Disco",
     "biography": "Biografía",
     "noBiography": "No hay biografía disponible para este artista.",
     "technicalSheet": "Ficha Técnica",
@@ -362,6 +379,7 @@
     "roleOnly": "{role} Dominicanos"
   },
   "filters": {
+    "all": "Todos",
     "allDecades": "Todas las décadas",
     "allGenres": "Todos los Géneros",
     "allRoles": "Todos los Roles",
@@ -403,11 +421,14 @@
     "viewsMobile": "Ordenar: Vistas"
   },
   "pagination": {
-    "first": "Primera",
+    "first": "Primero",
     "previous": "Anterior",
-    "next": "Siguiente",
-    "last": "Última",
-    "showing": "Mostrando {count} de {total} artistas"
+    "previousMobile": "Ant",
+    "next": "Próximo",
+    "nextMobile": "Próx",
+    "last": "Último",
+    "showing": "Mostrando {count} de {total} artistas",
+    "showingTotal": "Mostrando {total} artistas"
   },
   "buttons": {
     "apply": "Aplicar",

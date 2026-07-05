@@ -222,7 +222,39 @@ export async function POST(request: Request) {
   if (response.error) return jsonError(response.error.message, 500);
   if (!response.data?.id) return jsonError("No recording row was saved.", 500);
 
-  return NextResponse.json({ ok: true, id: response.data.id });
+  const finalRecordingId = response.data.id;
+
+  // Phase 3C-B: Also write to recording_credits table if artist_id is set
+  // This synchronizes the new recording_credits table with the legacy recordings.artist_id field
+  if (artist.value) {
+    const recordingCreditsPayload = {
+      recording_id: finalRecordingId,
+      artist_id: artist.value,
+      role: "lead_performer",
+      display_order: 0,
+    };
+
+    // Check if entry already exists
+    const existingCheck = await supabase
+      .from("recording_credits")
+      .select("id")
+      .eq("recording_id", finalRecordingId)
+      .eq("role", "lead_performer")
+      .maybeSingle();
+
+    if (existingCheck.data?.id) {
+      // Update existing
+      await supabase
+        .from("recording_credits")
+        .update(recordingCreditsPayload)
+        .eq("id", existingCheck.data.id);
+    } else {
+      // Insert new
+      await supabase.from("recording_credits").insert(recordingCreditsPayload);
+    }
+  }
+
+  return NextResponse.json({ ok: true, id: finalRecordingId });
 }
 
 export async function DELETE(request: Request) {
