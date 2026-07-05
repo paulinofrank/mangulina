@@ -13,6 +13,8 @@ function getRoleTranslation(role: string, locale: string): string {
       "mix engineer": "Ingeniero de Mezcla",
       "beat programmer": "Creador de Ritmos",
       remixer: "Remezclador",
+      lyricist: "Letrista",
+      performer: "Intérprete",
     };
     return roleMap[role.toLowerCase()] || formatRoleName(role);
   }
@@ -147,29 +149,20 @@ export default async function ArtistWorksPortfolio({ artistId }: { artistId: str
                 {work.release_year ?? "Year Unknown"} • {work.title}
               </h5>
 
+              {/* Metadata: Performer */}
+              {work.performer_text && (
+                <div className="text-sm text-gray-500 mb-1">
+                  <span className="text-gray-400">{t("performer")}: </span>
+                  <span>{work.performer_text}</span>
+                </div>
+              )}
+
               {/* Roles */}
-              <div className="text-xs text-gray-600">
+              <div className="text-sm text-gray-600">
                 <span className="text-gray-400">{t("role")}: </span>
                 <span className="font-medium">
                   {work.roles.map((role) => getRoleTranslation(role, locale)).join(", ")}
                 </span>
-              </div>
-
-              {/* Metadata: Performer, Release */}
-              <div className="text-xs text-gray-500 space-y-0">
-                {work.performer_text && (
-                  <div>
-                    <span className="text-gray-400">{t("performer")}: </span>
-                    <span>{work.performer_text}</span>
-                  </div>
-                )}
-
-                {work.release_title && (
-                  <div>
-                    <span className="text-gray-400">{t("release")}: </span>
-                    <span>{work.release_title}</span>
-                  </div>
-                )}
               </div>
             </div>
           ))
