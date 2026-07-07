@@ -30,6 +30,7 @@ export default function ArtistCard({
   return (
     <Link
       href={`/artists/${artist.slug}`}
+      prefetch={false}
       className="group block w-full"
     >
 

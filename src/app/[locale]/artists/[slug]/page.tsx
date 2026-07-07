@@ -15,7 +15,7 @@ import type { ArtistProfileData } from "@/lib/artistApi";
 import JsonLd from "@/components/seo/JsonLd";
 import {
   getArtistProfile,
-  getArtistDiscography,
+  getArtistDiscographySummaries,
   getArtistMedia,
 } from "@/lib/artistApi";
 import { getArtistRelationships } from "@/lib/artistRelationships";
@@ -80,7 +80,7 @@ export default async function ArtistProfile({ params }: PageProps) {
   const localizedBio = getLocalizedArtistBio(artist, locale);
   const hasBio = Boolean(localizedBio?.trim());
   const [discography, interviews, relationships] = await Promise.all([
-    getArtistDiscography(artist.id),
+    getArtistDiscographySummaries(artist.id),
     getArtistMedia(artist.id),
     getArtistRelationships(artist.id),
   ]);

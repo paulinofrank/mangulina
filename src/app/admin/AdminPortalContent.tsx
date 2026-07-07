@@ -45,6 +45,7 @@ const toolIcons: Record<string, ComponentType<{ className?: string; "aria-hidden
   contributors: Users,
   invites: UserPlus,
   reviews: FileClock,
+  creativeWorks: Library,
 };
 
 type AdminPortalContentProps = {
@@ -206,6 +207,7 @@ function getToolKey(href: string): string {
     discography: "discography",
     awards: "awards",
     "platform-links": "platformLinks",
+    "creative-works": "creativeWorks",
     contributors: "contributors",
     invites: "invites",
     reviews: "reviews",

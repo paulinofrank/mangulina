@@ -48,7 +48,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="mt-2 border-t border-black/10 bg-white/50">
+    <footer className="mt-2 min-h-[430px] border-t border-black/10 bg-white/50 sm:min-h-[330px] lg:min-h-[350px]">
       <div className="mx-5 pb-32 pt-8 sm:mx-8 sm:pb-28 sm:pt-10 lg:mx-12">
         <div className="flex flex-col gap-7 sm:gap-6">
           {/* Social Icons */}

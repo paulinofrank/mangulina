@@ -19,8 +19,22 @@ export type GlobalSearchResponse = {
   releases: SearchResult[];
 };
 
+export const MIN_SEARCH_QUERY_LENGTH = 2;
+const SEARCH_RESULT_LIMIT = 10;
+
 function getArtistImageUrlFromId(id: string) {
   return supabase.storage.from("artists-images").getPublicUrl(`${id}.webp`).data.publicUrl;
+}
+
+function limitResults(results: SearchResult[]) {
+  return results.slice(0, SEARCH_RESULT_LIMIT);
+}
+
+function withArtistImageUrls(results: SearchResult[]) {
+  return results.map((result) => ({
+    ...result,
+    cover_url: result.cover_url || getArtistImageUrlFromId(result.id),
+  }));
 }
 
 function normalizeCoverArtUrl(url: string | null | undefined) {
@@ -140,30 +154,6 @@ async function getPublishedArtistIds(ids: string[]) {
   return new Set((data ?? []).map((artist) => artist.id));
 }
 
-async function imageExists(url: string | null | undefined) {
-  if (!url) return false;
-
-  try {
-    const response = await fetch(url, { method: "HEAD" });
-    return response.ok;
-  } catch {
-    return false;
-  }
-}
-
-async function withExistingArtistImages(results: SearchResult[]) {
-  return Promise.all(
-    results.map(async (result) => {
-      const coverUrl = result.cover_url || getArtistImageUrlFromId(result.id);
-
-      return {
-        ...result,
-        cover_url: (await imageExists(coverUrl)) ? coverUrl : null,
-      };
-    })
-  );
-}
-
 function normalizeQuery(q: string) {
   return q.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 }
@@ -171,7 +161,7 @@ function normalizeQuery(q: string) {
 export async function globalSearch(query: string): Promise<GlobalSearchResponse> {
   const cleaned = query.trim();
 
-  if (!cleaned) {
+  if (cleaned.length < MIN_SEARCH_QUERY_LENGTH) {
     return {
       artists: [],
       songs: [],
@@ -213,22 +203,23 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
     console.error("globalSearch error:", error);
 
     return {
-      artists: await withExistingArtistImages(fallbackArtists),
+      artists: withArtistImageUrls(fallbackArtists),
       songs: [],
       releases: [],
     };
   }
 
   const results = data as Partial<GlobalSearchResponse> | null;
-  const rpcArtists = results?.artists ?? [];
+  const rpcArtists = limitResults(results?.artists ?? []);
   const publishedArtistIds = await getPublishedArtistIds(rpcArtists.map((artist) => artist.id));
   const publishedRpcArtists = rpcArtists.filter((artist) => publishedArtistIds.has(artist.id));
+  const artists = limitResults(publishedRpcArtists.length ? publishedRpcArtists : fallbackArtists);
+  const songs = limitResults(results?.songs ?? []);
+  const releases = limitResults(results?.releases ?? []);
 
   return {
-    artists: await withExistingArtistImages(
-      publishedRpcArtists.length ? publishedRpcArtists : fallbackArtists
-    ),
-    songs: await withSongReleaseDetails(withCurrentCoverArtUrls(results?.songs ?? [])),
-    releases: await withReleaseSlugs(withCurrentCoverArtUrls(results?.releases ?? [])),
+    artists: withArtistImageUrls(artists),
+    songs: await withSongReleaseDetails(withCurrentCoverArtUrls(songs)),
+    releases: await withReleaseSlugs(withCurrentCoverArtUrls(releases)),
   };
 }

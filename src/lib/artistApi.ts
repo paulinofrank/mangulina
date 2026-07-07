@@ -195,6 +195,154 @@ export type DiscographyRelease = {
   tracks: DiscographyTrack[];
 };
 
+export type DiscographyReleaseSummary = {
+  release_id: string;
+  release_slug: string | null;
+  release_title: string;
+  release_year: number | null;
+  release_type: string | null;
+  track_count: number;
+};
+
+type ReleaseSummaryRow = {
+  id: string;
+  slug: string | null;
+  title: string;
+  release_year: number | null;
+  year: number | null;
+  type: string | null;
+  release_group_id: string | null;
+  country: string | null;
+  date: string | null;
+  created_at: string | null;
+  release_group:
+    | ReleaseGroupSummaryRow
+    | null;
+  tracks: Array<{ count: number }> | null;
+};
+
+type ReleaseGroupSummaryRow = {
+  id: string;
+  title: string | null;
+  release_year: number | null;
+  primary_type: string | null;
+};
+
+function getReleaseRank(row: ReleaseSummaryRow) {
+  const countryRank =
+    row.country === "DO" ? 0 : row.country === "XW" ? 1 : row.country == null ? 2 : 3;
+  const dateRank = row.date ? Date.parse(row.date) : Number.MAX_SAFE_INTEGER;
+  const createdRank = row.created_at ? Date.parse(row.created_at) : Number.MAX_SAFE_INTEGER;
+
+  return [countryRank, dateRank, createdRank] as const;
+}
+
+function compareReleaseRows(a: ReleaseSummaryRow, b: ReleaseSummaryRow) {
+  const aRank = getReleaseRank(a);
+  const bRank = getReleaseRank(b);
+
+  for (let index = 0; index < aRank.length; index += 1) {
+    const diff = aRank[index] - bRank[index];
+    if (diff !== 0) return diff;
+  }
+
+  return a.title.localeCompare(b.title);
+}
+
+export async function getArtistDiscographySummaries(
+  artistId: string,
+): Promise<DiscographyReleaseSummary[]> {
+  const supabase = getSupabaseClient();
+
+  const { data, error } = await supabase
+    .from("releases")
+    .select(
+      `
+        id,
+        slug,
+        title,
+        release_year,
+        year,
+        type,
+        release_group_id,
+        country,
+        date,
+        created_at,
+        tracks(count)
+      `,
+    )
+    .eq("release_artist_id", artistId);
+
+  if (error) {
+    console.error("getArtistDiscographySummaries error:", {
+      code: error.code,
+      message: error.message,
+      details: error.details,
+      hint: error.hint,
+    });
+
+    return [];
+  }
+
+  const rows = (data ?? []) as unknown as ReleaseSummaryRow[];
+  const releaseGroupIds = [...new Set(rows.map((row) => row.release_group_id).filter(Boolean))];
+  const releaseGroupsById = new Map<string, ReleaseGroupSummaryRow>();
+
+  if (releaseGroupIds.length > 0) {
+    const { data: releaseGroupRows, error: releaseGroupsError } = await supabase
+      .from("release_groups")
+      .select("id, title, release_year, primary_type")
+      .in("id", releaseGroupIds);
+
+    if (releaseGroupsError) {
+      console.error("getArtistDiscographySummaries release groups error:", {
+        code: releaseGroupsError.code,
+        message: releaseGroupsError.message,
+        details: releaseGroupsError.details,
+        hint: releaseGroupsError.hint,
+      });
+    } else {
+      for (const releaseGroup of (releaseGroupRows ?? []) as ReleaseGroupSummaryRow[]) {
+        releaseGroupsById.set(releaseGroup.id, releaseGroup);
+      }
+    }
+  }
+
+  const selectedRows = new Map<string, ReleaseSummaryRow>();
+
+  for (const row of rows) {
+    const key = row.release_group_id ?? row.id;
+    row.release_group = row.release_group_id
+      ? releaseGroupsById.get(row.release_group_id) ?? null
+      : null;
+    const current = selectedRows.get(key);
+
+    if (!current || compareReleaseRows(row, current) < 0) {
+      selectedRows.set(key, row);
+    }
+  }
+
+  return Array.from(selectedRows.values())
+    .map((row) => {
+      const releaseGroup = row.release_group;
+
+      return {
+        release_id: row.id,
+        release_slug: row.slug,
+        release_title: releaseGroup?.title ?? row.title,
+        release_year: releaseGroup?.release_year ?? row.release_year ?? row.year,
+        release_type: releaseGroup?.primary_type ?? row.type,
+        track_count: row.tracks?.[0]?.count ?? 0,
+      };
+    })
+    .sort((a, b) => {
+      const aYear = a.release_year ?? Number.MAX_SAFE_INTEGER;
+      const bYear = b.release_year ?? Number.MAX_SAFE_INTEGER;
+      if (aYear !== bYear) return aYear - bYear;
+      return a.release_title.localeCompare(b.release_title);
+    });
+}
+
 export async function getArtistDiscography(
   artistId: string
 ): Promise<DiscographyRelease[]> {

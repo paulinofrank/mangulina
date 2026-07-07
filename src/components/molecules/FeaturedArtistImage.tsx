@@ -33,9 +33,11 @@ export default function FeaturedArtistImage({
       <Image
         src={imageUrl}
         alt={featuredArtist.name || "Featured Artist"}
-        fill
-        className="object-cover transition-all duration-300 group-hover:scale-105 group-hover:brightness-110"
+        width={512}
+        height={512}
+        className="h-full w-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:brightness-110"
         sizes="(max-width: 640px) 100vw, 256px"
+        priority
         loading="eager"
         fetchPriority="high"
       />

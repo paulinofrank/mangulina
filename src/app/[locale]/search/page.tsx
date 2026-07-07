@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SearchAnalytics from "@/components/analytics/SearchAnalytics";
 import MainWrapper from "@/components/layout/MainWrapper";
 import SearchContent from "./SearchContent";
-import { globalSearch } from "@/lib/searchApi";
+import { MIN_SEARCH_QUERY_LENGTH, globalSearch } from "@/lib/searchApi";
 import { createPageMetadata, type SeoLocale } from "@/lib/seo";
 
 const SEARCH_METADATA: Record<SeoLocale, { title: string; description: string }> = {
@@ -42,8 +42,9 @@ type SearchPageProps = {
 export default async function SearchPage({ searchParams }: SearchPageProps) {
   const { q = "" } = await searchParams;
   const query = q.trim();
+  const shouldSearch = query.length >= MIN_SEARCH_QUERY_LENGTH;
 
-  const results = query
+  const results = shouldSearch
     ? await globalSearch(query)
     : { artists: [], songs: [], releases: [] };
 
@@ -52,7 +53,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
 
   return (
     <MainWrapper>
-      {query && <SearchAnalytics query={query} resultsCount={total} />}
+      {shouldSearch && <SearchAnalytics query={query} resultsCount={total} />}
       <SearchContent
         query={query}
         total={total}

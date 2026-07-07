@@ -35,10 +35,6 @@ function buildGenreMatchFilter(values: string[]) {
     .join(",");
 }
 
-function buildRoleMatchFilter(role: ArtistBrowseRole) {
-  return `primary_role.eq.${role},occupations.cs.${JSON.stringify([role])}`;
-}
-
 function toSearchParamsString(searchParams?: Record<string, string | string[] | undefined>) {
   const params = new URLSearchParams();
 
@@ -118,7 +114,7 @@ export async function getArtistDirectoryInitialData(
 
   const search = params.get("search");
   if (search) query = query.ilike("name", `%${search}%`);
-  if (options.role) query = query.or(buildRoleMatchFilter(options.role));
+  if (options.role) query = query.eq("primary_role", options.role);
   if (options.fixedContext) query = query.contains("artist_tags", [options.fixedContext]);
   if (artistStatuses.length === 1) query = query.contains("artist_tags", [artistStatuses[0]]);
   if (genreFilter) {

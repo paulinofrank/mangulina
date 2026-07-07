@@ -1034,6 +1034,11 @@
         "eyebrow": "Discografía",
         "description": "Agregar y actualizar publicaciones de artistas, fechas de publicación, sellos discográficos, detalles de catálogo y metadatos de discografía."
       },
+      "creativeWorks": {
+        "title": "Gestor de Obras Creativas",
+        "eyebrow": "Obras y Créditos",
+        "description": "Crea y mantiene portafolios de obras creativas, obras acreditadas y roles de artistas."
+      },
       "awards": {
         "title": "Gestor de Premios",
         "eyebrow": "Premios",

@@ -42,6 +42,7 @@ export default function ReleaseCard({ release }: ReleaseCardProps) {
   return (
     <Link
       href={`/releases/${release.slug}`}
+      prefetch={false}
       className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#002D62] focus-visible:ring-offset-2"
       aria-label={t("viewRelease", { title: release.title })}
     >
