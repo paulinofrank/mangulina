@@ -1021,6 +1021,11 @@
         "eyebrow": "Discography",
         "description": "Add and update artist releases, release dates, labels, catalog details, and discography metadata."
       },
+      "creativeWorks": {
+        "title": "Creative Works Manager",
+        "eyebrow": "Works & Credits",
+        "description": "Create and maintain artist Creative Works portfolios, credited works, and role credits."
+      },
       "awards": {
         "title": "Awards Manager",
         "eyebrow": "Awards",

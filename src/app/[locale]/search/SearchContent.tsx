@@ -98,6 +98,7 @@ function ResultGroup({
             <Link
               key={`${result.type}-${result.id}`}
               href={href}
+              prefetch={false}
               className={className}
             >
               {content}

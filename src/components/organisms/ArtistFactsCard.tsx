@@ -43,6 +43,46 @@ function formatLabel(value: string | null | undefined) {
     .replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
+function formatDisplayValue(value: string | null | undefined, locale: string) {
+  if (!value) return null;
+
+  const normalized = value.trim().replace(/[-_]/g, " ");
+  if (!normalized) return null;
+
+  return normalized
+    .split(/\s+/)
+    .map((word) => {
+      const [firstChar, ...rest] = Array.from(word);
+      return firstChar ? `${firstChar.toLocaleUpperCase(locale)}${rest.join("")}` : word;
+    })
+    .join(" ");
+}
+
+function normalizeGenreKey(value: string) {
+  const normalized = value
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[\s-]+/g, "_");
+
+  if (normalized === "romantica") return "romantic";
+  if (normalized === "balada" || normalized === "baladas") return "ballads";
+
+  return normalized;
+}
+
+function translateGenreValue(
+  value: string | null | undefined,
+  t: ReturnType<typeof useTranslations>,
+  locale: string,
+) {
+  if (!value) return null;
+
+  const key = `genres.${normalizeGenreKey(value)}`;
+  return t.has(key) ? t(key) : formatDisplayValue(value, locale);
+}
+
 function translateArtistType(
   value: string | null | undefined,
   t: ReturnType<typeof useTranslations>,
@@ -457,11 +497,13 @@ export default function ArtistFactsCard({
           </Field>
         )}
 
-        <Field label={t("artist.mainGenre")}>{formatLabel(artist.primary_genre)}</Field>
+        <Field label={t("artist.mainGenre")}>
+          {translateGenreValue(artist.primary_genre, t, locale)}
+        </Field>
 
         {!!artist.genres?.length && (
           <Field label={t("artist.musicalGenres")}>
-            <InlineList values={artist.genres.map((genre) => formatLabel(genre))} />
+            <InlineList values={artist.genres.map((genre) => translateGenreValue(genre, t, locale))} />
           </Field>
         )}
 <SectionDivider />

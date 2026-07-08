@@ -27,15 +27,18 @@ export default function FeaturedArtistImage({
   return (
     <Link
       href={`/artists/${featuredArtist.slug}`}
+      prefetch={false}
       className="group relative block aspect-square w-full shrink-0 overflow-hidden rounded-lg border border-black/5 bg-gray-100 sm:w-56 lg:w-64"
       aria-label={t("viewArtistProfile", { name: featuredArtist.name })}
     >
       <Image
         src={imageUrl}
         alt={featuredArtist.name || "Featured Artist"}
-        fill
-        className="object-cover transition-all duration-300 group-hover:scale-105 group-hover:brightness-110"
+        width={512}
+        height={512}
+        className="h-full w-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:brightness-110"
         sizes="(max-width: 640px) 100vw, 256px"
+        priority
         loading="eager"
         fetchPriority="high"
       />

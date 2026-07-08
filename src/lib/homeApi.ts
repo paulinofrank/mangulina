@@ -9,6 +9,22 @@ import type {
 } from "@/types/home";
 import type { Artist } from "@/types/music";
 import { getRecordingViews7d, getArtistViews7d } from "@/lib/analyticsRollups";
+import { HOME_ARTIST_CARD_LIMIT, HOME_SONG_CARD_LIMIT } from "@/lib/homepageLimits";
+
+type HomepageMostAwardedArtistRow = {
+  id: string;
+  slug: string;
+  name: string;
+  province: string | null;
+  views: number | string | null;
+  award_count: number | string | null;
+  nomination_count: number | string | null;
+};
+
+type HomepageRegionCountRow = {
+  province: string | null;
+  count: number | string | null;
+};
 
 export async function getHomeData() {
   const supabase = getSupabaseClient();
@@ -55,7 +71,7 @@ export async function getHomeData() {
 
   const top7dRecordingIds = [...recordingViews7d.entries()]
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 40)
+    .slice(0, HOME_SONG_CARD_LIMIT * 4)
     .map(([id]) => id);
 
   const [hot7dRes, allTimeTrendingRes] = await Promise.all([
@@ -69,7 +85,7 @@ export async function getHomeData() {
       .from("recordings_with_release_info")
       .select("recording_id, recording_title, views, release_id, artist_id, artist_name")
       .order("views", { ascending: false, nullsFirst: false })
-      .limit(60),
+      .limit(HOME_SONG_CARD_LIMIT * 5),
   ]);
 
   // Merge unique by recording_id, then rank by 7-day views with all-time tiebreak.
@@ -108,7 +124,7 @@ export async function getHomeData() {
 
   const filteredTrending = rankedTrending
     .filter((r: any) => !r.artist_id || publishedTrendingArtistIds.has(r.artist_id))
-    .slice(0, 12);
+    .slice(0, HOME_SONG_CARD_LIMIT);
 
   // Fetch slugs for the filtered recording IDs
   const trendingRecordingIds = filteredTrending.map((r: any) => r.recording_id).filter(Boolean);
@@ -148,7 +164,7 @@ export async function getHomeData() {
       ascending: false,
       nullsFirst: false,
     })
-    .limit(10);
+    .limit(HOME_ARTIST_CARD_LIMIT);
 
   const topArtists: ArtistSummary[] =
     ((topResponse.data as ArtistSummary[]) || []).map((a) => ({
@@ -160,21 +176,35 @@ export async function getHomeData() {
     }));
 
   // 5. Regions
-  const regionsResponse = await supabase
-    .from("artists")
-    .select("province")
-    .eq("status", "published")
-    .not("province", "is", null);
+  let regions: RegionCount[] = [];
+  const regionsResponse = await supabase.rpc("get_homepage_region_counts");
 
-  const regionCounts = new Map<string, number>();
-  for (const row of (regionsResponse.data || []) as Array<{ province: string | null }>) {
-    if (!row.province) continue;
-    regionCounts.set(row.province, (regionCounts.get(row.province) || 0) + 1);
+  if (regionsResponse.error) {
+    console.error("Unable to load homepage region counts:", regionsResponse.error);
+
+    const fallbackRegionsResponse = await supabase
+      .from("artists")
+      .select("province")
+      .eq("status", "published")
+      .not("province", "is", null);
+
+    const regionCounts = new Map<string, number>();
+    for (const row of (fallbackRegionsResponse.data || []) as Array<{ province: string | null }>) {
+      if (!row.province) continue;
+      regionCounts.set(row.province, (regionCounts.get(row.province) || 0) + 1);
+    }
+
+    regions = Array.from(regionCounts.entries())
+      .map(([province, count]) => ({ province, count }))
+      .sort((a, b) => b.count - a.count || a.province.localeCompare(b.province));
+  } else {
+    regions = ((regionsResponse.data ?? []) as HomepageRegionCountRow[])
+      .filter((row) => row.province)
+      .map((row) => ({
+        province: row.province as string,
+        count: Number(row.count || 0),
+      }));
   }
-
-  const regions: RegionCount[] = Array.from(regionCounts.entries())
-    .map(([province, count]) => ({ province, count }))
-    .sort((a, b) => b.count - a.count || a.province.localeCompare(b.province));
 
   // 6. Prominent Composers (ONLY composers)
   const composersResponse = await supabase
@@ -186,7 +216,7 @@ export async function getHomeData() {
       ascending: false,
       nullsFirst: false,
     })
-    .limit(10);
+    .limit(HOME_ARTIST_CARD_LIMIT);
 
   const composers: ArtistSummary[] =
     ((composersResponse.data as ArtistSummary[]) || []).map((a) => ({
@@ -207,7 +237,7 @@ export async function getHomeData() {
       ascending: false,
       nullsFirst: false,
     })
-    .limit(10);
+    .limit(HOME_ARTIST_CARD_LIMIT);
 
 
   const djs: ArtistSummary[] =
@@ -229,7 +259,7 @@ export async function getHomeData() {
       ascending: false,
       nullsFirst: false,
     })
-    .limit(10);
+    .limit(HOME_ARTIST_CARD_LIMIT);
 
   const christianArtists: ArtistSummary[] =
     ((christianResponse.data as ArtistSummary[]) || []).map((a) => ({
@@ -240,70 +270,88 @@ export async function getHomeData() {
       views: a.views,
     }));
 
-  // 9. Most Awarded Artists
-  const awardRowsResponse = await supabase
-    .from("artist_awards")
-    .select("artist_id, won");
-
-  const awardCounts = new Map<string, { awardCount: number; nominationCount: number }>();
-
-  for (const row of (awardRowsResponse.data ?? []) as Array<{
-    artist_id: string | null;
-    won: boolean | null;
-  }>) {
-    if (!row.artist_id) continue;
-
-    const current = awardCounts.get(row.artist_id) ?? {
-      awardCount: 0,
-      nominationCount: 0,
-    };
-
-    if (row.won) {
-      current.awardCount += 1;
-    } else {
-      current.nominationCount += 1;
-    }
-
-    awardCounts.set(row.artist_id, current);
-  }
-
-  const awardedArtistIds = [...awardCounts.keys()];
   let mostAwardedArtists: MostAwardedArtistSummary[] = [];
 
-  if (awardedArtistIds.length > 0) {
-    // Large-ID audit: the complete awarded-artist set is unbounded and can exceed
-    // 100 IDs; migrate the ranking to an RPC as the awards catalog grows.
-    const awardedArtistsResponse = await supabase
-      .from("artists")
-      .select("id, slug, name, province, views")
-      .eq("status", "published")
-      .in("id", awardedArtistIds);
+  const mostAwardedResponse = await supabase.rpc("get_homepage_most_awarded_artists", {
+    p_limit: HOME_ARTIST_CARD_LIMIT,
+  });
 
-    mostAwardedArtists = ((awardedArtistsResponse.data as ArtistSummary[]) || [])
-      .map((artist) => {
-        const counts = awardCounts.get(artist.id) ?? {
-          awardCount: 0,
-          nominationCount: 0,
-        };
+  if (mostAwardedResponse.error) {
+    console.error("Unable to load homepage most awarded artists:", mostAwardedResponse.error);
 
-        return {
-          id: artist.id,
-          slug: artist.slug,
-          name: artist.name,
-          province: artist.province,
-          views: artist.views,
-          awardCount: counts.awardCount,
-          nominationCount: counts.nominationCount,
-        };
-      })
-      .sort(
-        (a, b) =>
-          b.awardCount - a.awardCount ||
-          b.awardCount + b.nominationCount - (a.awardCount + a.nominationCount) ||
-          Number(b.views || 0) - Number(a.views || 0) ||
-          a.name.localeCompare(b.name),
-      )
-      .slice(0, 10);
+    const awardRowsResponse = await supabase
+      .from("artist_awards")
+      .select("artist_id, won");
+
+    const awardCounts = new Map<string, { awardCount: number; nominationCount: number }>();
+
+    for (const row of (awardRowsResponse.data ?? []) as Array<{
+      artist_id: string | null;
+      won: boolean | null;
+    }>) {
+      if (!row.artist_id) continue;
+
+      const current = awardCounts.get(row.artist_id) ?? {
+        awardCount: 0,
+        nominationCount: 0,
+      };
+
+      if (row.won) {
+        current.awardCount += 1;
+      } else {
+        current.nominationCount += 1;
+      }
+
+      awardCounts.set(row.artist_id, current);
+    }
+
+    const awardedArtistIds = [...awardCounts.keys()];
+
+    if (awardedArtistIds.length > 0) {
+      const awardedArtistsResponse = await supabase
+        .from("artists")
+        .select("id, slug, name, province, views")
+        .eq("status", "published")
+        .in("id", awardedArtistIds);
+
+      mostAwardedArtists = ((awardedArtistsResponse.data as ArtistSummary[]) || [])
+        .map((artist) => {
+          const counts = awardCounts.get(artist.id) ?? {
+            awardCount: 0,
+            nominationCount: 0,
+          };
+
+          return {
+            id: artist.id,
+            slug: artist.slug,
+            name: artist.name,
+            province: artist.province,
+            views: artist.views,
+            awardCount: counts.awardCount,
+            nominationCount: counts.nominationCount,
+          };
+        })
+        .sort(
+          (a, b) =>
+            b.awardCount - a.awardCount ||
+            b.awardCount + b.nominationCount - (a.awardCount + a.nominationCount) ||
+            Number(b.views || 0) - Number(a.views || 0) ||
+            a.name.localeCompare(b.name),
+        )
+        .slice(0, HOME_ARTIST_CARD_LIMIT);
+    }
+  } else {
+    mostAwardedArtists = ((mostAwardedResponse.data ?? []) as HomepageMostAwardedArtistRow[]).map(
+      (artist) => ({
+        id: artist.id,
+        slug: artist.slug,
+        name: artist.name,
+        province: artist.province,
+        views: Number(artist.views || 0),
+        awardCount: Number(artist.award_count || 0),
+        nominationCount: Number(artist.nomination_count || 0),
+      }),
+    );
   }
 
   // 10. Classical Artists
@@ -316,7 +364,7 @@ export async function getHomeData() {
       ascending: false,
       nullsFirst: false,
     })
-    .limit(10);
+    .limit(HOME_ARTIST_CARD_LIMIT);
 
   const classicalArtists: ArtistSummary[] =
     ((classicalResponse.data as ArtistSummary[]) || []).map((a) => ({
@@ -339,7 +387,7 @@ export async function getHomeData() {
       ascending: false,
       nullsFirst: false,
     })
-    .limit(100);
+    .limit(HOME_ARTIST_CARD_LIMIT * 4);
 
   const artistViews7d = await getArtistViews7d();
 
@@ -347,7 +395,7 @@ export async function getHomeData() {
     ((risingResponse.data as ArtistSummary[]) || [])
       .map((a) => ({ a, v7: artistViews7d.get(a.id) || 0 }))
       .sort((x, y) => y.v7 - x.v7 || Number(y.a.views || 0) - Number(x.a.views || 0))
-      .slice(0, 10)
+      .slice(0, HOME_ARTIST_CARD_LIMIT)
       .map(({ a }) => ({
         id: a.id,
         slug: a.slug,
@@ -363,7 +411,7 @@ export async function getHomeData() {
     .eq("status", "published")
     .contains("artist_tags", ["legend"])
     .order("views", { ascending: false, nullsFirst: false })
-    .limit(10);
+    .limit(HOME_ARTIST_CARD_LIMIT);
 
   const legendsArtists: ArtistSummary[] =
     ((legendsResponse.data as ArtistSummary[]) || []).map((artist) => ({

@@ -7,6 +7,7 @@ import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
 import type { ArtistSummary } from "@/types/home";
+import { HOME_ARTIST_CARD_LIMIT } from "@/lib/homepageLimits";
 
 type TopRisingStarsSectionProps = {
   risingStars: ArtistSummary[];
@@ -37,6 +38,7 @@ export default function TopRisingStarsSection({ risingStars }: TopRisingStarsSec
           <h2>{t("risingStars")}</h2>
            <Link
             href="/artists/emerging"
+            prefetch={false}
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
             {nav("seeAll")}
@@ -50,7 +52,7 @@ export default function TopRisingStarsSection({ risingStars }: TopRisingStarsSec
           ref={scrollRef}
           className="flex w-full gap-4 overflow-x-auto scrollbar-none pb-2"
         >
-          {risingStars.map((artist) => (
+          {risingStars.slice(0, HOME_ARTIST_CARD_LIMIT).map((artist) => (
             <div
               key={artist.id}
               className="shrink-0 w-28 sm:w-32 lg:w-36"

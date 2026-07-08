@@ -122,10 +122,6 @@ function buildGenreMatchFilter(values: string[]) {
     .join(",");
 }
 
-function buildRoleMatchFilter(role: ArtistBrowseRole) {
-  return `primary_role.eq.${role},occupations.cs.${JSON.stringify([role])}`;
-}
-
 function Pagination({
   currentPage,
   totalPages,
@@ -598,7 +594,7 @@ function ArtistsContent({
 
         // ROLE FILTER
         if (role) {
-          query = query.or(buildRoleMatchFilter(role));
+          query = query.eq("primary_role", role);
         }
 
         // Classification tags live in artist_tags; musical genres stay in genres.

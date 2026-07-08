@@ -17,8 +17,9 @@ export default function TopBanner() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!searchTerm.trim()) return;
-    router.push(`${searchHref}?q=${encodeURIComponent(searchTerm.trim())}`);
+    const query = searchTerm.trim();
+    if (query.length < 2) return;
+    router.push(`${searchHref}?q=${encodeURIComponent(query)}`);
   };
 
   return (
@@ -36,7 +37,6 @@ export default function TopBanner() {
             width={47}
             height={47}
             className="h-10 w-10 shrink-0 object-contain"
-            priority
           />
           <div className="min-w-0 flex flex-col justify-center">
             <p className="truncate text-2xl sm:text-3xl font-medium tracking-tight text-[#002D62] leading-tight">
