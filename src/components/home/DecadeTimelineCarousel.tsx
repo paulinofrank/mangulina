@@ -67,6 +67,7 @@ export default function DecadeTimelineCarousel({
           </h2>
           <Link
             href={ctaHref}
+            prefetch={false}
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
             {ctaLabel ?? t("archiveCta")}
@@ -83,6 +84,7 @@ export default function DecadeTimelineCarousel({
             <Link
               key={decade}
               href={`/archive/${decade}`}
+              prefetch={false}
               className="shrink-0 w-28 sm:w-32 lg:w-36 group"
             >
               <div

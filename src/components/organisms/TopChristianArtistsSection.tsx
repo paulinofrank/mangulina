@@ -8,6 +8,7 @@ import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
 import type { ArtistSummary } from "@/types/home";
+import { HOME_ARTIST_CARD_LIMIT } from "@/lib/homepageLimits";
 
 type TopChristianArtistsSectionProps = {
   christianArtists: ArtistSummary[];
@@ -41,6 +42,7 @@ export default function TopChristianArtistsSection({
           <h2>{t("christianArtists")}</h2>
           <Link
             href="/christian"
+            prefetch={false}
             className="text-[#8B0000] hover:text-[#6B0000] font-normal text-sm uppercase tracking-wider transition-colors ml-auto"
           >
             {nav("seeAll")}
@@ -55,7 +57,7 @@ export default function TopChristianArtistsSection({
           ref={scrollRef}
           className="flex w-full gap-4 overflow-x-auto scrollbar-none pb-2"
         >
-          {christianArtists.map((artist) => (
+          {christianArtists.slice(0, HOME_ARTIST_CARD_LIMIT).map((artist) => (
             <div
               key={artist.id}
               className="shrink-0 w-28 sm:w-32 lg:w-36"

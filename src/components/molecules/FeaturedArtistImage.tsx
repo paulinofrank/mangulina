@@ -27,6 +27,7 @@ export default function FeaturedArtistImage({
   return (
     <Link
       href={`/artists/${featuredArtist.slug}`}
+      prefetch={false}
       className="group relative block aspect-square w-full shrink-0 overflow-hidden rounded-lg border border-black/5 bg-gray-100 sm:w-56 lg:w-64"
       aria-label={t("viewArtistProfile", { name: featuredArtist.name })}
     >

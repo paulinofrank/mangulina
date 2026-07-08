@@ -8,6 +8,7 @@ import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
 import { getSupabaseClient } from "@/lib/supabase";
 import type { Artist } from "@/types/music";
+import { HOME_ARTIST_CARD_LIMIT } from "@/lib/homepageLimits";
 
 type BirthdaySectionProps = {
   birthdayArtists: Artist[];
@@ -20,6 +21,14 @@ type BirthdayParts = {
 };
 
 const BIRTHDAY_WINDOW_DAYS = 7;
+
+function formatLocalDate(date: Date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+
+  return `${year}-${month}-${day}`;
+}
 
 function parseBirthday(dateString: string | null | undefined): BirthdayParts | null {
   if (!dateString) return null;
@@ -99,21 +108,16 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
       const today = new Date();
       const supabase = getSupabaseClient();
 
-      const { data, error } = await supabase
-        .from("artists")
-        .select(
-          "id, slug, name, status, date_of_birth, province, birth_place, bio, genres, artist_tags, views, death_year",
-        )
-        .eq("status", "published")
-        .not("date_of_birth", "is", null);
+      const { data, error } = await supabase.rpc("get_homepage_birthday_artists", {
+        p_today: formatLocalDate(today),
+        p_limit: HOME_ARTIST_CARD_LIMIT,
+      });
 
       if (error) {
-        console.error("Birthday artists fetch failed:", error);
+        console.error("Birthday artists RPC failed:", error);
         setLocalBirthdayArtists(filterAndSortUpcomingBirthdays(birthdayArtists, today));
       } else {
-        setLocalBirthdayArtists(
-          filterAndSortUpcomingBirthdays((data ?? []) as Artist[], today),
-        );
+        setLocalBirthdayArtists((data ?? []) as Artist[]);
       }
 
       setLoadingLocalBirthdays(false);
@@ -140,6 +144,7 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
           <h2>{t("birthdaysThisWeek")} ({localBirthdayArtists.length})</h2>
           <Link
             href="/artists/birthdays"
+            prefetch={false}
             className="ml-auto text-sm font-normal uppercase tracking-wider text-[#8B0000] transition-colors hover:text-[#6B0000]"
           >
             {nav("seeAll")}
@@ -168,7 +173,7 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
             ref={scrollRef}
             className="scrollbar-none flex w-full gap-4 overflow-x-auto pb-2"
           >
-            {localBirthdayArtists.map((artist) => (
+            {localBirthdayArtists.slice(0, HOME_ARTIST_CARD_LIMIT).map((artist) => (
               <div key={artist.id} className="w-28 shrink-0 sm:w-32 lg:w-36">
                 <div className="group relative">
                   <ArtistCard artist={artist} titleAs="h3" showViews={false} />

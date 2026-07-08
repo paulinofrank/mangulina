@@ -8,6 +8,7 @@ import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import CarouselArrow from "@/components/molecules/CarouselArrow";
 import type { MostAwardedArtistSummary } from "@/types/home";
+import { HOME_ARTIST_CARD_LIMIT } from "@/lib/homepageLimits";
 
 type MostAwardedArtistsSectionProps = {
   artists: MostAwardedArtistSummary[];
@@ -55,6 +56,7 @@ export default function MostAwardedArtistsSection({
           <h2>{t("mostAwarded")}</h2>
           <Link
             href="/artists/most-awarded"
+            prefetch={false}
             className="ml-auto text-sm font-normal uppercase tracking-wider text-[#8B0000] transition-colors hover:text-[#6B0000]"
           >
             {nav("seeAll")}
@@ -70,7 +72,7 @@ export default function MostAwardedArtistsSection({
           ref={scrollRef}
           className="flex w-full gap-4 overflow-x-auto scrollbar-none pb-2"
         >
-          {artists.map((artist) => (
+          {artists.slice(0, HOME_ARTIST_CARD_LIMIT).map((artist) => (
             <div
               key={artist.id}
               className="w-28 shrink-0 sm:w-32 lg:w-36"

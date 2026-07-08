@@ -58,6 +58,7 @@ export default function BrowseByGenreSection() {
               <Link
                 key={genre.href}
                 href={genre.href}
+                prefetch={false}
                 className="group relative flex aspect-square w-28 shrink-0 flex-col justify-between overflow-hidden rounded-lg p-3 transition-all duration-200 hover:scale-[1.02] sm:w-32 sm:p-4 lg:w-36"
               >
                 <div

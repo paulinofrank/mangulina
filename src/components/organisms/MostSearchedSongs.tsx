@@ -9,6 +9,7 @@ import CarouselArrows from "@/components/molecules/CarouselArrows";
 import SongCard from "@/components/molecules/SongCard";
 import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 import SectionCard from "@/components/layout/SectionCard";
+import { HOME_SONG_CARD_LIMIT } from "@/lib/homepageLimits";
 
 interface MostSearchedSongsProps {
   songs?: TrendingSong[];
@@ -48,6 +49,7 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
 
   <Link
     href="/archive"
+    prefetch={false}
     className="text-[#8B0000] hover:text-[#6B0000] text-sm uppercase tracking-wider transition-colors"
   >
     {nav("seeAll")}
@@ -60,7 +62,7 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
             ref={scrollRef}
             className="flex w-full gap-4 overflow-x-auto scrollbar-none pb-2"
           >
-            {safeSongs.map((song) => {
+            {safeSongs.slice(0, HOME_SONG_CARD_LIMIT).map((song) => {
               if (!song) return null;
 
               const credits = song.recording_credits ?? [];
