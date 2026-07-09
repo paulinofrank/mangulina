@@ -33,6 +33,7 @@ export type ArtistSummary = {
   status?: Artist["status"];
   province: string | null;
   has_image?: boolean | null;
+  image_updated_at?: string | null;
   views: number;
 };
 

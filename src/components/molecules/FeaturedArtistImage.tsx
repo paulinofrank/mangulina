@@ -22,7 +22,15 @@ export default function FeaturedArtistImage({
     );
   }
 
-  const imageUrl = getArtistImageUrl(featuredArtist.id);
+  if (!featuredArtist.has_image) {
+    return (
+      <div className="relative aspect-square w-full sm:w-56 lg:w-64 shrink-0 overflow-hidden rounded-lg bg-gray-100 border border-black/5 flex items-center justify-center text-gray-400 text-xs italic">
+        {t("noImage")}
+      </div>
+    );
+  }
+
+  const imageUrl = getArtistImageUrl(featuredArtist.id, featuredArtist.image_updated_at);
 
   return (
     <Link

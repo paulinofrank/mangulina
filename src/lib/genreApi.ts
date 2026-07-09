@@ -121,6 +121,7 @@ function toArtistSummary(artist: ArtistGenreRow): ArtistSummary {
     name: artist.name,
     province: artist.province,
     has_image: artist.has_image,
+    image_updated_at: artist.image_updated_at,
     views: artist.views,
   };
 }
@@ -209,7 +210,7 @@ async function getMainArtists(primaryGenre: string | null) {
   const supabase = getSupabaseClient();
   const response = await supabase
     .from("artists")
-    .select("id, slug, name, province, has_image, views, primary_role, primary_genre, genres, created_at")
+    .select("id, slug, name, province, has_image, image_updated_at, views, primary_role, primary_genre, genres, created_at")
     .eq("status", "published")
     .eq("primary_genre", primaryGenre)
     .order("views", { ascending: false, nullsFirst: false })
@@ -227,7 +228,7 @@ async function getConnectedArtists(genre: GenreDefinition) {
   const supabase = getSupabaseClient();
   const response = await supabase
     .from("artists")
-    .select("id, slug, name, province, has_image, views, primary_role, primary_genre, genres, created_at")
+    .select("id, slug, name, province, has_image, image_updated_at, views, primary_role, primary_genre, genres, created_at")
     .eq("status", "published")
     .overlaps("genres", genre.aliases)
     .order("views", { ascending: false, nullsFirst: false })

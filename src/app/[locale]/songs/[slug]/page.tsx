@@ -178,7 +178,7 @@ export default async function SongProfilePage({ params }: PageProps) {
         ? import("@/lib/supabase").then(({ supabase }) =>
             supabase
               .from("artists")
-              .select("id, slug, name, bio, has_image, views")
+              .select("id, slug, name, bio, has_image, image_updated_at, views")
               .eq("id", song.artist_id!)
               .single()
               .then(({ data }) => data)

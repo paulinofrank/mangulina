@@ -20,6 +20,7 @@ export const ARTIST_LIST_SELECT = [
   "genres",
   "artist_tags",
   "has_image",
+  "image_updated_at",
   "views",
   "death_year",
 ].join(",");

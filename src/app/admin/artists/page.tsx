@@ -584,6 +584,7 @@ export default function AdminDashboard() {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
   const [imageVersion, setImageVersion] = useState(0);
+  const [previewImageUrl, setPreviewImageUrl] = useState("");
   const bioTextareaRefs = useRef<Record<LocalizedBioField, HTMLTextAreaElement | null>>({
     bio_en: null,
     bio_es: null,
@@ -594,9 +595,9 @@ export default function AdminDashboard() {
     [artists, selectedArtistId]
   );
 
-  const selectedArtistImageUrl = selectedArtist
-    ? `${getArtistImageUrl(selectedArtist.id)}?v=${imageVersion}`
-    : "";
+  const selectedArtistImageUrl = previewImageUrl || (selectedArtist
+    ? getArtistImageUrl(selectedArtist.id, selectedArtist.image_updated_at ?? imageVersion)
+    : "");
 
   const mediaYouTubeVideoId =
     mediaForm.platform === "youtube"
@@ -748,6 +749,14 @@ export default function AdminDashboard() {
     void fetchData();
     void fetchGenreCatalog();
   }, [fetchData, fetchGenreCatalog, mounted]);
+
+  useEffect(() => {
+    return () => {
+      if (previewImageUrl.startsWith("blob:")) {
+        URL.revokeObjectURL(previewImageUrl);
+      }
+    };
+  }, [previewImageUrl]);
 
   function updateForm<K extends keyof ArtistForm>(key: K, value: ArtistForm[K]) {
     setForm((current) => ({
@@ -909,6 +918,7 @@ export default function AdminDashboard() {
     setSelectedArtistId(artist.id);
     setSearch(artist.name ?? "");
     setArtistPickerOpen(false);
+    setPreviewImageUrl("");
     setImageVersion(Date.now());
     resetMediaForm();
     resetRelationshipForm();
@@ -982,7 +992,7 @@ export default function AdminDashboard() {
       .upload(filePath, webpFile, {
         upsert: true,
         contentType: "image/webp",
-        cacheControl: "3600",
+        cacheControl: "0",
       });
 
     if (error) {
@@ -1000,7 +1010,7 @@ export default function AdminDashboard() {
 
     const { error: artistUpdateError } = await supabase
       .from("artists")
-      .update({ has_image: true })
+      .update({ has_image: true, image_updated_at: new Date().toISOString() })
       .eq("id", selectedArtistId);
 
     if (artistUpdateError) {
@@ -1013,6 +1023,13 @@ export default function AdminDashboard() {
     }
 
     setStatus(`Artist image uploaded successfully as ${filePath}.`);
+    setPreviewImageUrl((currentUrl) => {
+      if (currentUrl.startsWith("blob:")) {
+        URL.revokeObjectURL(currentUrl);
+      }
+
+      return URL.createObjectURL(file);
+    });
     setImageVersion(Date.now());
 
     await fetchData();
@@ -1546,13 +1563,21 @@ export default function AdminDashboard() {
             {selectedArtist && (
               <div className="mt-5">
                 <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-gray-100">
-                  <Image
-                    src={selectedArtistImageUrl}
-                    alt={selectedArtist.name}
-                    fill
-                    className="object-cover"
-                    sizes="320px"
-                  />
+                  {selectedArtistImageUrl.startsWith("blob:") ? (
+                    <img
+                      src={selectedArtistImageUrl}
+                      alt={selectedArtist.name}
+                      className="h-full w-full object-cover"
+                    />
+                  ) : (
+                    <Image
+                      src={selectedArtistImageUrl}
+                      alt={selectedArtist.name}
+                      fill
+                      className="object-cover"
+                      sizes="320px"
+                    />
+                  )}
                 </div>
 
                 <div className="mt-3 flex flex-wrap items-center gap-2">

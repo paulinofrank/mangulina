@@ -25,7 +25,7 @@ export default function ArtistCard({
   const t = useTranslations("common");
 
   // Build dynamic image URL
-  const imageUrl = artist.has_image ? getArtistImageUrl(artist.id) : null;
+  const imageUrl = artist.has_image ? getArtistImageUrl(artist.id, artist.image_updated_at) : null;
 
   return (
     <Link

@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: artistSeoTitle(artist),
     description,
     path: `/artists/${artist.slug}`,
-    image: artist.has_image ? getArtistImageUrl(artist.id) : null,
+    image: artist.has_image ? getArtistImageUrl(artist.id, artist.image_updated_at) : null,
     openGraphType: "profile",
     locale,
   });
@@ -76,7 +76,7 @@ export default async function ArtistProfile({ params }: PageProps) {
   const locale = await getLocale();
   const t = await getTranslations("artist");
   const tCommon = await getTranslations("common");
-  const imageUrl = artist.has_image ? getArtistImageUrl(artist.id) : null;
+  const imageUrl = artist.has_image ? getArtistImageUrl(artist.id, artist.image_updated_at) : null;
   const localizedBio = getLocalizedArtistBio(artist, locale);
   const hasBio = Boolean(localizedBio?.trim());
   const [discography, interviews, relationships] = await Promise.all([

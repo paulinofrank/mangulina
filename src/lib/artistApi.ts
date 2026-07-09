@@ -50,6 +50,7 @@ export type ArtistProfileData = {
   bio_es: string | null;
   views: number | null;
   has_image: boolean | null;
+  image_updated_at: string | null;
 
   first_name: string | null;
   middle_name: string | null;
@@ -86,7 +87,7 @@ export async function getArtistProfile(slug: string) {
 
   const { data: publishedArtist, error: publishedArtistError } = await supabase
     .from("artists")
-    .select("id, type, ended, bio_en, bio_es, primary_genre, views, has_image, date_of_death, death_year, instruments")
+    .select("id, type, ended, bio_en, bio_es, primary_genre, views, has_image, image_updated_at, date_of_death, death_year, instruments")
     .eq("slug", slug)
     .eq("status", "published")
     .maybeSingle();
@@ -145,6 +146,10 @@ export async function getArtistProfile(slug: string) {
       (data as Partial<ArtistProfileData>).has_image ??
       publishedArtist.has_image ??
       false,
+    image_updated_at:
+      (data as Partial<ArtistProfileData>).image_updated_at ??
+      publishedArtist.image_updated_at ??
+      null,
     instruments:
       (data as Partial<ArtistProfileData>).instruments ??
       publishedArtist.instruments ??

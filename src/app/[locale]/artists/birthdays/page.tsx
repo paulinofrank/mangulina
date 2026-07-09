@@ -40,6 +40,7 @@ type BirthdayArtist = {
   primary_genre: string | null;
   province: string | null;
   has_image: boolean | null;
+  image_updated_at: string | null;
   views: number | null;
 };
 
@@ -114,6 +115,7 @@ const ARTIST_SELECT = [
   "primary_genre",
   "province",
   "has_image",
+  "image_updated_at",
   "views",
 ].join(",");
 
@@ -287,7 +289,7 @@ function BirthdayArtistRow({ artist, locale, t }: { artist: BirthdayArtist; loca
     >
       <span className="relative block h-13 w-13 shrink-0 overflow-hidden rounded-md border border-black/5 bg-gray-100">
         <ArtistImage
-          imageUrl={artist.has_image ? getArtistImageUrl(artist.id) : null}
+          imageUrl={artist.has_image ? getArtistImageUrl(artist.id, artist.image_updated_at) : null}
           name={artist.name}
         />
       </span>
