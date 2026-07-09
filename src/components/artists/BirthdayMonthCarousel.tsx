@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import ArtistImage from "@/components/atoms/ArtistImage";
-import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
+import { getArtistImageUrlIfAvailable } from "@/utils/getArtistImageUrl";
 
 type BirthdayArtist = {
   id: string;
@@ -127,7 +127,7 @@ function BirthdayArtistRow({ artist, locale }: { artist: BirthdayArtist; locale:
     >
       <span className="relative block h-13 w-13 shrink-0 overflow-hidden rounded-md border border-black/5 bg-gray-100">
         <ArtistImage
-          imageUrl={artist.has_image ? getArtistImageUrl(artist.id, artist.image_updated_at) : null}
+          imageUrl={getArtistImageUrlIfAvailable(artist)}
           name={artist.name}
         />
       </span>

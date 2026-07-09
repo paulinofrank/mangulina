@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 
 import ArtistImage from "@/components/atoms/ArtistImage";
-import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
+import { getArtistImageUrlIfAvailable } from "@/utils/getArtistImageUrl";
 
 type SongArtistPreviewCardProps = {
   artist: {
@@ -30,7 +30,7 @@ export default function SongArtistPreviewCard({ artist }: SongArtistPreviewCardP
   const t = useTranslations();
   if (!artist?.slug) return null;
 
-  const imageUrl = artist.has_image ? getArtistImageUrl(artist.id, artist.image_updated_at) : null;
+  const imageUrl = getArtistImageUrlIfAvailable(artist);
 
   return (
     <Link

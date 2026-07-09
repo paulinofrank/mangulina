@@ -6,7 +6,7 @@ import ArtistImage from "@/components/atoms/ArtistImage";
 import ArtistName from "@/components/atoms/ArtistName";
 import ArtistRegion from "@/components/atoms/ArtistRegion";
 import type { Artist } from "@/types/music";
-import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
+import { getArtistImageUrlIfAvailable } from "@/utils/getArtistImageUrl";
 
 type ArtistCardProps = {
   artist: Artist;
@@ -25,7 +25,7 @@ export default function ArtistCard({
   const t = useTranslations("common");
 
   // Build dynamic image URL
-  const imageUrl = artist.has_image ? getArtistImageUrl(artist.id, artist.image_updated_at) : null;
+  const imageUrl = getArtistImageUrlIfAvailable(artist);
 
   return (
     <Link

@@ -11,7 +11,7 @@ import BirthdayMonthCarousel from "@/components/artists/BirthdayMonthCarousel";
 import BirthdayYearSelect from "@/components/artists/BirthdayYearSelect";
 import BirthdayZodiacCarousel from "@/components/artists/BirthdayZodiacCarousel";
 import { getSupabaseClient } from "@/lib/supabase";
-import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
+import { getArtistImageUrlIfAvailable } from "@/utils/getArtistImageUrl";
 import { createPageMetadata } from "@/lib/seo";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
 
@@ -289,7 +289,7 @@ function BirthdayArtistRow({ artist, locale, t }: { artist: BirthdayArtist; loca
     >
       <span className="relative block h-13 w-13 shrink-0 overflow-hidden rounded-md border border-black/5 bg-gray-100">
         <ArtistImage
-          imageUrl={artist.has_image ? getArtistImageUrl(artist.id, artist.image_updated_at) : null}
+          imageUrl={getArtistImageUrlIfAvailable(artist)}
           name={artist.name}
         />
       </span>

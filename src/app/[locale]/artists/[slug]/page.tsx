@@ -2,9 +2,9 @@
 
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
+import ArtistImage from "@/components/atoms/ArtistImage";
 import MainWrapper from "@/components/layout/MainWrapper";
 import ArtistAwardsSection from "@/components/organisms/ArtistAwardsSection";
 import ArtistFactsCard from "@/components/organisms/ArtistFactsCard";
@@ -19,7 +19,7 @@ import {
   getArtistMedia,
 } from "@/lib/artistApi";
 import { getArtistRelationships } from "@/lib/artistRelationships";
-import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
+import { getArtistImageUrlIfAvailable } from "@/utils/getArtistImageUrl";
 import ArtistWorksPortfolio from "@/components/organisms/ArtistWorksPortfolio";
 import {
   artistSeoTitle,
@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: artistSeoTitle(artist),
     description,
     path: `/artists/${artist.slug}`,
-    image: artist.has_image ? getArtistImageUrl(artist.id, artist.image_updated_at) : null,
+    image: getArtistImageUrlIfAvailable(artist),
     openGraphType: "profile",
     locale,
   });
@@ -76,7 +76,7 @@ export default async function ArtistProfile({ params }: PageProps) {
   const locale = await getLocale();
   const t = await getTranslations("artist");
   const tCommon = await getTranslations("common");
-  const imageUrl = artist.has_image ? getArtistImageUrl(artist.id, artist.image_updated_at) : null;
+  const imageUrl = getArtistImageUrlIfAvailable(artist);
   const localizedBio = getLocalizedArtistBio(artist, locale);
   const hasBio = Boolean(localizedBio?.trim());
   const [discography, interviews, relationships] = await Promise.all([
@@ -130,21 +130,12 @@ export default async function ArtistProfile({ params }: PageProps) {
 
             <div className="relative aspect-square w-full rounded-2xl shadow-lg">
               <div className="absolute inset-0 overflow-hidden rounded-2xl bg-gray-100">
-                {imageUrl ? (
-                  <Image
-                    src={imageUrl}
-                    alt={artist.name}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) calc(100vw - 40px), 300px"
-                    loading="eager"
-                    fetchPriority="high"
-                  />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-gray-100 px-6 text-center text-sm italic text-gray-400">
-                    {tCommon("noImage")}
-                  </div>
-                )}
+                <ArtistImage
+                  imageUrl={imageUrl}
+                  name={artist.name}
+                  priority
+                  sizes="(max-width: 768px) calc(100vw - 40px), 300px"
+                />
               </div>
 
               {artist.views != null && (

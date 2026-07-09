@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { requireAdminApiRole } from "@/lib/adminApiAuth";
 import { getSupabaseClient } from "@/lib/supabase";
+import { revalidateArtistProfilePaths } from "@/lib/revalidateArtistProfile";
 
 export async function GET(request: Request) {
   const auth = await requireAdminApiRole();
@@ -69,15 +70,30 @@ export async function POST(request: Request) {
     );
   }
 
+  const normalizedArtistData = {
+    ...artistData,
+    image_updated_at:
+      artistData.has_image === true && !artistData.image_updated_at
+        ? new Date().toISOString()
+        : artistData.image_updated_at,
+  };
+
   const supabase = getSupabaseClient();
+  const previousSlugResponse = artistId
+    ? await supabase
+        .from("artists")
+        .select("slug")
+        .eq("id", artistId)
+        .maybeSingle()
+    : null;
   const response = artistId
     ? await supabase
         .from("artists")
-        .update(artistData)
+        .update(normalizedArtistData)
         .eq("id", artistId)
-        .select("id")
+        .select("id, slug")
         .maybeSingle()
-    : await supabase.from("artists").insert([artistData]).select("id").maybeSingle();
+    : await supabase.from("artists").insert([normalizedArtistData]).select("id, slug").maybeSingle();
 
   if (response.error) {
     return NextResponse.json(
@@ -91,6 +107,14 @@ export async function POST(request: Request) {
       { ok: false, error: "No artist row was saved." },
       { status: 500 }
     );
+  }
+
+  if (previousSlugResponse?.data?.slug && previousSlugResponse.data.slug !== response.data.slug) {
+    revalidateArtistProfilePaths(previousSlugResponse.data.slug);
+  }
+
+  if (response.data.slug) {
+    revalidateArtistProfilePaths(response.data.slug);
   }
 
   return NextResponse.json({ ok: true, id: response.data.id });

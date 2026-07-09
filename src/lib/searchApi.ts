@@ -1,5 +1,6 @@
 import { supabase } from "@/lib/supabase";
 import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
+import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 
 export type SearchResult = {
   type: "artist" | "song" | "release";
@@ -21,11 +22,6 @@ export type GlobalSearchResponse = {
 
 export const MIN_SEARCH_QUERY_LENGTH = 2;
 const SEARCH_RESULT_LIMIT = 10;
-
-function getArtistImageUrlFromId(id: string, version?: string | number | null) {
-  const url = supabase.storage.from("artists-images").getPublicUrl(`${id}.webp`).data.publicUrl;
-  return version ? `${url}?v=${encodeURIComponent(String(version))}` : url;
-}
 
 function limitResults(results: SearchResult[]) {
   return results.slice(0, SEARCH_RESULT_LIMIT);
@@ -245,7 +241,9 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
       slug: artist.slug,
       subtitle: artist.province,
       year: artist.birth_year,
-      cover_url: artist.has_image ? getArtistImageUrlFromId(artist.id, artist.image_updated_at) : null,
+      cover_url: artist.has_image === true
+        ? getArtistImageUrl(artist.id, artist.image_updated_at)
+        : null,
     })
   );
 
@@ -276,7 +274,7 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
     artists: artists.map((artist) => ({
       ...artist,
       cover_url: artistImageVersions.has(artist.id)
-        ? getArtistImageUrlFromId(artist.id, artistImageVersions.get(artist.id))
+        ? getArtistImageUrl(artist.id, artistImageVersions.get(artist.id))
         : null,
     })),
     songs: await withSongReleaseDetails(withCurrentCoverArtUrls(songs)),

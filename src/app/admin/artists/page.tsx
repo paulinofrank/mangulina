@@ -15,7 +15,7 @@ import {
   type ArtistRelationshipType,
 } from "@/lib/artistRelationships";
 import type { Artist } from "@/types/music";
-import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
+import { getArtistImageUrlIfAvailable } from "@/utils/getArtistImageUrl";
 import { extractYouTubeVideoId } from "@/utils/youtube";
 import BioText from "@/components/molecules/BioText";
 
@@ -583,7 +583,6 @@ export default function AdminDashboard() {
   const [relationshipArtistPickerOpen, setRelationshipArtistPickerOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
-  const [imageVersion, setImageVersion] = useState(0);
   const [previewImageUrl, setPreviewImageUrl] = useState("");
   const bioTextareaRefs = useRef<Record<LocalizedBioField, HTMLTextAreaElement | null>>({
     bio_en: null,
@@ -595,9 +594,7 @@ export default function AdminDashboard() {
     [artists, selectedArtistId]
   );
 
-  const selectedArtistImageUrl = previewImageUrl || (selectedArtist
-    ? getArtistImageUrl(selectedArtist.id, selectedArtist.image_updated_at ?? imageVersion)
-    : "");
+  const selectedArtistImageUrl = previewImageUrl || getArtistImageUrlIfAvailable(selectedArtist) || "";
 
   const mediaYouTubeVideoId =
     mediaForm.platform === "youtube"
@@ -740,7 +737,6 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     setMounted(true);
-    setImageVersion(Date.now());
   }, []);
 
   useEffect(() => {
@@ -919,7 +915,6 @@ export default function AdminDashboard() {
     setSearch(artist.name ?? "");
     setArtistPickerOpen(false);
     setPreviewImageUrl("");
-    setImageVersion(Date.now());
     resetMediaForm();
     resetRelationshipForm();
     void fetchArtistMedia(artist.id);
@@ -1022,7 +1017,31 @@ export default function AdminDashboard() {
       return;
     }
 
-    setStatus(`Artist image uploaded successfully as ${filePath}.`);
+    let freshnessWarning = "";
+    const selectedArtistSlug = selectedArtist?.slug?.trim();
+
+    if (selectedArtistSlug) {
+      try {
+        const revalidateResponse = await fetch("/api/admin/revalidate-artist-profile", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ slug: selectedArtistSlug }),
+        });
+        const revalidateResult = (await revalidateResponse.json()) as AdminWriteResponse;
+
+        if (!revalidateResponse.ok || !revalidateResult.ok) {
+          freshnessWarning = ` Profile revalidation failed: ${revalidateResult.error || revalidateResponse.statusText}`;
+        }
+      } catch (error) {
+        freshnessWarning = ` Profile revalidation failed: ${error instanceof Error ? error.message : "Unknown error"}`;
+      }
+    } else {
+      freshnessWarning = " Profile revalidation skipped because the artist slug is missing.";
+    }
+
+    setStatus(`Artist image uploaded successfully as ${filePath}.${freshnessWarning}`);
     setPreviewImageUrl((currentUrl) => {
       if (currentUrl.startsWith("blob:")) {
         URL.revokeObjectURL(currentUrl);
@@ -1030,8 +1049,6 @@ export default function AdminDashboard() {
 
       return URL.createObjectURL(file);
     });
-    setImageVersion(Date.now());
-
     await fetchData();
 
     setLoading(false);

@@ -9,9 +9,15 @@ type ArtistImageProps = {
   imageUrl: string | null | undefined
   name: string
   priority?: boolean
+  sizes?: string
 }
 
-export default function ArtistImage({ imageUrl, name, priority = false }: ArtistImageProps) {
+export default function ArtistImage({
+  imageUrl,
+  name,
+  priority = false,
+  sizes = "(max-width: 640px) 112px, (max-width: 1024px) 128px, 144px",
+}: ArtistImageProps) {
   const t = useTranslations("common")
   const [hasError, setHasError] = useState(false)
 
@@ -33,7 +39,7 @@ export default function ArtistImage({ imageUrl, name, priority = false }: Artist
       alt={name}
       fill
       className="object-cover"
-      sizes="(max-width: 640px) 112px, (max-width: 1024px) 128px, 144px"
+      sizes={sizes}
       loading={priority ? "eager" : "lazy"}
       fetchPriority={priority ? "high" : "auto"}
       onError={() => setHasError(true)}
