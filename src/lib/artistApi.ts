@@ -1,4 +1,5 @@
 import { getSupabaseClient } from "@/lib/supabase";
+import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 
 export type ArtistAward = {
   year: number;
@@ -48,6 +49,7 @@ export type ArtistProfileData = {
   bio_en: string | null;
   bio_es: string | null;
   views: number | null;
+  has_image: boolean | null;
 
   first_name: string | null;
   middle_name: string | null;
@@ -84,7 +86,7 @@ export async function getArtistProfile(slug: string) {
 
   const { data: publishedArtist, error: publishedArtistError } = await supabase
     .from("artists")
-    .select("id, type, ended, bio_en, bio_es, primary_genre, views, date_of_death, death_year, instruments")
+    .select("id, type, ended, bio_en, bio_es, primary_genre, views, has_image, date_of_death, death_year, instruments")
     .eq("slug", slug)
     .eq("status", "published")
     .maybeSingle();
@@ -139,6 +141,10 @@ export async function getArtistProfile(slug: string) {
       (data as Partial<ArtistProfileData>).views ??
       publishedArtist.views ??
       null,
+    has_image:
+      (data as Partial<ArtistProfileData>).has_image ??
+      publishedArtist.has_image ??
+      false,
     instruments:
       (data as Partial<ArtistProfileData>).instruments ??
       publishedArtist.instruments ??
@@ -201,6 +207,8 @@ export type DiscographyReleaseSummary = {
   release_title: string;
   release_year: number | null;
   release_type: string | null;
+  has_cover_image: boolean;
+  cover_url: string | null;
   track_count: number;
 };
 
@@ -215,6 +223,7 @@ type ReleaseSummaryRow = {
   country: string | null;
   date: string | null;
   created_at: string | null;
+  has_cover_image: boolean | null;
   release_group:
     | ReleaseGroupSummaryRow
     | null;
@@ -268,6 +277,7 @@ export async function getArtistDiscographySummaries(
         country,
         date,
         created_at,
+        has_cover_image,
         tracks(count)
       `,
     )
@@ -332,6 +342,8 @@ export async function getArtistDiscographySummaries(
         release_title: releaseGroup?.title ?? row.title,
         release_year: releaseGroup?.release_year ?? row.release_year ?? row.year,
         release_type: releaseGroup?.primary_type ?? row.type,
+        has_cover_image: row.has_cover_image === true,
+        cover_url: row.has_cover_image ? getPublicReleaseCoverUrl(row.id, 150) : null,
         track_count: row.tracks?.[0]?.count ?? 0,
       };
     })

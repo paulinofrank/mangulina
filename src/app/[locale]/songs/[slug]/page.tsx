@@ -137,7 +137,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const description = `Song information, credits, releases and platform links for ${song.recording_title} in the Dominican Music Database.`;
-  const image = song.release_id
+  const image = song.release_id && song.has_cover_image
     ? getPublicReleaseCoverUrl(song.release_id, 300)
     : null;
 
@@ -178,7 +178,7 @@ export default async function SongProfilePage({ params }: PageProps) {
         ? import("@/lib/supabase").then(({ supabase }) =>
             supabase
               .from("artists")
-              .select("id, slug, name, bio, views")
+              .select("id, slug, name, bio, has_image, views")
               .eq("id", song.artist_id!)
               .single()
               .then(({ data }) => data)
@@ -197,7 +197,7 @@ export default async function SongProfilePage({ params }: PageProps) {
 
   // Song pages use the larger cover-art variant: 300px/{release_id}.webp.
   // Cover artwork is keyed by the Mangulina release ID in Supabase Storage.
-  const coverImageUrl = song.release_id
+  const coverImageUrl = song.release_id && song.has_cover_image
     ? getPublicReleaseCoverUrl(song.release_id, 300)
     : null;
 

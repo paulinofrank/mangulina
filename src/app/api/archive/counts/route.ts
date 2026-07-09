@@ -12,5 +12,8 @@ export async function GET(request: Request) {
       ? await getArchiveCountsForYearRange(decadePeriod.startYear, decadePeriod.endYear)
       : await getArchiveCounts();
 
-  return NextResponse.json({ ok: true, ...counts });
+  return NextResponse.json(
+    { ok: true, ...counts },
+    { headers: { "Cache-Control": "no-store" } },
+  );
 }

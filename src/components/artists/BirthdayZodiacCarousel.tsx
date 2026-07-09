@@ -34,6 +34,7 @@ type BirthdayArtist = {
   death_year: number | null;
   primary_role: string | null;
   primary_genre: string | null;
+  has_image?: boolean | null;
 };
 
 type BirthdayZodiacGroup = {
@@ -117,7 +118,10 @@ function BirthdayArtistRow({ artist, locale }: { artist: BirthdayArtist; locale:
       className="group flex items-center gap-3 border-b border-black/5 px-2 py-2.5 text-[#002D62] transition hover:bg-[#002D62]/5 last:border-none sm:px-3"
     >
       <span className="relative block h-13 w-13 shrink-0 overflow-hidden rounded-md border border-black/5 bg-gray-100">
-        <ArtistImage imageUrl={getArtistImageUrl(artist.id)} name={artist.name} />
+        <ArtistImage
+          imageUrl={artist.has_image ? getArtistImageUrl(artist.id) : null}
+          name={artist.name}
+        />
       </span>
 
       <span className="min-w-0">

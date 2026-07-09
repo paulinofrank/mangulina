@@ -23,6 +23,7 @@ export default function BirthdayYearSelect({
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const selectedYearValue = selectedYear ? String(selectedYear) : "";
 
   function handleYearChange(value: string) {
     if (value === "month") {
@@ -39,7 +40,7 @@ export default function BirthdayYearSelect({
   return (
     <div className="mx-auto mt-3 w-full max-w-64">
       <Select
-        value={selectedYear ? String(selectedYear) : undefined}
+        value={selectedYearValue}
         onValueChange={handleYearChange}
       >
         <SelectTrigger

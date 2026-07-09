@@ -12,6 +12,11 @@ type ArchiveCounts = {
   yearCounts: Record<string, number>;
 };
 
+type ArchiveYearCountRow = {
+  year: number | string | null;
+  count: number | string | null;
+};
+
 async function getPublishedArtistIds(artistIds: unknown[]) {
   const ids = [...new Set(artistIds.filter((id): id is string => typeof id === "string" && id.length > 0))];
 
@@ -63,6 +68,40 @@ async function addRecordingSlugs(rows: RecordingArchiveRow[]) {
   }));
 }
 
+async function addReleaseCoverAvailability<T extends { release_id?: string | null }>(rows: T[]) {
+  const releaseIds = [
+    ...new Set(
+      rows
+        .map((row) => row.release_id)
+        .filter((id): id is string => typeof id === "string" && id.length > 0),
+    ),
+  ];
+
+  if (!releaseIds.length) return rows;
+
+  const { data, error } = await supabase
+    .from("releases")
+    .select("id, has_cover_image")
+    .in("id", releaseIds);
+
+  if (error) {
+    console.error(error);
+    return rows;
+  }
+
+  const coverMap = new Map(
+    ((data ?? []) as Array<{ id: string; has_cover_image: boolean | null }>).map((release) => [
+      release.id,
+      release.has_cover_image === true,
+    ]),
+  );
+
+  return rows.map((row) => ({
+    ...row,
+    has_cover_image: row.release_id ? coverMap.get(row.release_id) === true : false,
+  }));
+}
+
 async function filterToPublishedArtists<T extends { artist_id?: string | null }>(rows: T[]) {
   const publishedArtistIds = await getPublishedArtistIds(rows.map((row) => row.artist_id));
   return rows.filter((row) => !row.artist_id || publishedArtistIds.has(row.artist_id));
@@ -100,7 +139,9 @@ export async function getSongsByYearRange(
   const visibleRows = await filterToPublishedArtists(rows);
   const offset = Math.max(0, options.offset ?? 0);
   const limit = Math.max(1, options.limit ?? 50);
-  const songs = await addRecordingSlugs(visibleRows.slice(offset, offset + limit));
+  const songs = await addReleaseCoverAvailability(
+    await addRecordingSlugs(visibleRows.slice(offset, offset + limit)),
+  );
 
   return {
     songs,
@@ -128,13 +169,39 @@ export async function getTopSongsByViews(limit = 100) {
   const rows = (data ?? []) as RecordingArchiveRow[];
   const visibleRows = await filterToPublishedArtists(rows);
 
-  return addRecordingSlugs(visibleRows);
+  return addReleaseCoverAvailability(await addRecordingSlugs(visibleRows));
 }
 
 export async function getArchiveCountsForYearRange(
   startYear?: number,
   endYear?: number,
 ): Promise<ArchiveCounts> {
+  if (startYear !== undefined && endYear !== undefined) {
+    const { data, error } = await supabase.rpc("get_archive_year_counts", {
+      p_start_year: startYear,
+      p_end_year: endYear,
+    });
+
+    if (!error) {
+      return ((data ?? []) as ArchiveYearCountRow[]).reduce(
+        (counts, row) => {
+          const year = Number(row.year);
+          const count = Number(row.count ?? 0);
+          if (!Number.isInteger(year) || !Number.isFinite(count)) return counts;
+
+          const yearKey = String(year);
+          const decade = `${Math.floor(year / 10) * 10}s`;
+          counts.yearCounts[yearKey] = count;
+          counts.decadeCounts[decade] = (counts.decadeCounts[decade] ?? 0) + count;
+          return counts;
+        },
+        { decadeCounts: {}, yearCounts: {} } as ArchiveCounts,
+      );
+    }
+
+    console.error("get_archive_year_counts failed; falling back to archive row count:", error);
+  }
+
   const pageSize = 1000;
   let from = 0;
   const rows: Pick<RecordingArchiveRow, "release_year_actual" | "artist_id">[] = [];
@@ -143,7 +210,9 @@ export async function getArchiveCountsForYearRange(
     let query = supabase
       .from("recordings_with_release_info")
       .select("release_year_actual, artist_id")
-      .not("release_year_actual", "is", null);
+      .not("release_year_actual", "is", null)
+      .order("release_year_actual", { ascending: true })
+      .order("artist_id", { ascending: true, nullsFirst: true });
 
     if (startYear !== undefined) query = query.gte("release_year_actual", startYear);
     if (endYear !== undefined) query = query.lte("release_year_actual", endYear);

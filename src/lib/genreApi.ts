@@ -80,6 +80,7 @@ type ReleaseRow = {
   release_year: number | null;
   year: number | null;
   label: string | null;
+  has_cover_image?: boolean | null;
 };
 
 function normalize(value: string) {
@@ -119,6 +120,7 @@ function toArtistSummary(artist: ArtistGenreRow): ArtistSummary {
     slug: artist.slug,
     name: artist.name,
     province: artist.province,
+    has_image: artist.has_image,
     views: artist.views,
   };
 }
@@ -207,7 +209,7 @@ async function getMainArtists(primaryGenre: string | null) {
   const supabase = getSupabaseClient();
   const response = await supabase
     .from("artists")
-    .select("id, slug, name, province, views, primary_role, primary_genre, genres, created_at")
+    .select("id, slug, name, province, has_image, views, primary_role, primary_genre, genres, created_at")
     .eq("status", "published")
     .eq("primary_genre", primaryGenre)
     .order("views", { ascending: false, nullsFirst: false })
@@ -225,7 +227,7 @@ async function getConnectedArtists(genre: GenreDefinition) {
   const supabase = getSupabaseClient();
   const response = await supabase
     .from("artists")
-    .select("id, slug, name, province, views, primary_role, primary_genre, genres, created_at")
+    .select("id, slug, name, province, has_image, views, primary_role, primary_genre, genres, created_at")
     .eq("status", "published")
     .overlaps("genres", genre.aliases)
     .order("views", { ascending: false, nullsFirst: false })
@@ -300,12 +302,28 @@ async function getPopularSongs(aliases: string[]) {
 
   if (response.error) throw response.error;
 
-  return ((response.data ?? []) as RecordingRow[]).map((recording) => ({
+  const rows = (response.data ?? []) as RecordingRow[];
+  const releaseIds = [...new Set(rows.map((recording) => recording.release_id).filter(Boolean))];
+  const releaseCoverMap = new Map<string, boolean>();
+
+  if (releaseIds.length > 0) {
+    const { data: releases, error: releasesError } = await supabase
+      .from("releases")
+      .select("id, has_cover_image")
+      .in("id", releaseIds);
+
+    if (releasesError) throw releasesError;
+    for (const release of (releases ?? []) as Array<{ id: string; has_cover_image: boolean | null }>) {
+      releaseCoverMap.set(release.id, release.has_cover_image === true);
+    }
+  }
+
+  return rows.map((recording) => ({
     id: recording.id,
     slug: recording.slug ?? null,
     title: recording.title,
     artistName: firstRelation(recording.artists)?.name ?? "Unknown artist",
-    coverUrl: recording.release_id
+    coverUrl: recording.release_id && releaseCoverMap.get(recording.release_id)
       ? getPublicReleaseCoverUrl(recording.release_id, 150)
       : "/images/placeholder-song.jpg",
     views: recording.views,
@@ -347,7 +365,7 @@ async function getImportantReleases(artistIds: string[]) {
 
   const { data: releases, error: releasesError } = await supabase
     .from("releases")
-    .select("id,slug,title,release_year,year,label")
+    .select("id,slug,title,release_year,year,label,has_cover_image")
     .in("id", Array.from(releaseIds))
     .order("release_year", { ascending: false, nullsFirst: false })
     .limit(SECTION_LIMIT);
@@ -359,7 +377,7 @@ async function getImportantReleases(artistIds: string[]) {
     slug: release.slug,
     title: release.title,
     releaseYear: release.release_year ?? release.year,
-    coverUrl: getPublicReleaseCoverUrl(release.id, 150),
+    coverUrl: release.has_cover_image ? getPublicReleaseCoverUrl(release.id, 150) : null,
     label: release.label,
   }));
 }

@@ -1,6 +1,9 @@
+"use client"
+
 // ArtistImage.tsx  (Molecule)
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { useEffect, useState } from "react"
 
 type ArtistImageProps = {
   imageUrl: string | null | undefined
@@ -10,8 +13,13 @@ type ArtistImageProps = {
 
 export default function ArtistImage({ imageUrl, name, priority = false }: ArtistImageProps) {
   const t = useTranslations("common")
+  const [hasError, setHasError] = useState(false)
 
-  if (!imageUrl) {
+  useEffect(() => {
+    setHasError(false)
+  }, [imageUrl])
+
+  if (!imageUrl || hasError) {
     return (
       <div className="relative h-full w-full flex items-center justify-center bg-gray-100 text-gray-400 text-xs italic">
         {t("noImage")}
@@ -25,9 +33,10 @@ export default function ArtistImage({ imageUrl, name, priority = false }: Artist
       alt={name}
       fill
       className="object-cover"
-      sizes="(max-width: 640px) 70vw, (max-width: 1024px) 35vw, 22vw"
+      sizes="(max-width: 640px) 112px, (max-width: 1024px) 128px, 144px"
       loading={priority ? "eager" : "lazy"}
       fetchPriority={priority ? "high" : "auto"}
+      onError={() => setHasError(true)}
     />
   )
 }

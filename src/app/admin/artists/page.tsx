@@ -998,6 +998,20 @@ export default function AdminDashboard() {
 
     console.log("Image upload success:", data);
 
+    const { error: artistUpdateError } = await supabase
+      .from("artists")
+      .update({ has_image: true })
+      .eq("id", selectedArtistId);
+
+    if (artistUpdateError) {
+      console.error("Error marking artist image as available:", artistUpdateError);
+      setStatus(
+        `Artist image uploaded as ${filePath}, but has_image was not updated: ${artistUpdateError.message}`
+      );
+      setLoading(false);
+      return;
+    }
+
     setStatus(`Artist image uploaded successfully as ${filePath}.`);
     setImageVersion(Date.now());
 

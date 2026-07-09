@@ -79,7 +79,11 @@ export async function getSongsBySubgenre(
   const limit = Math.min(Math.max(1, options.limit ?? 25), 100);
   const pageRows = visibleRows.slice(offset, offset + limit);
   const recordingIds = pageRows.map((row) => row.recording_id);
+  const releaseIds = [
+    ...new Set(pageRows.map((row) => row.release_id).filter((id): id is string => Boolean(id))),
+  ];
   let slugMap = new Map<string, string | null>();
+  let coverMap = new Map<string, boolean>();
 
   if (recordingIds.length > 0) {
     const { data: slugRows, error: slugError } = await supabase
@@ -91,9 +95,22 @@ export async function getSongsBySubgenre(
     slugMap = new Map((slugRows ?? []).map((row) => [row.id, row.slug]));
   }
 
+  if (releaseIds.length > 0) {
+    const { data: releaseRows, error: releaseError } = await supabase
+      .from("releases")
+      .select("id, has_cover_image")
+      .in("id", releaseIds);
+
+    if (releaseError) throw releaseError;
+    coverMap = new Map(
+      (releaseRows ?? []).map((row) => [row.id, row.has_cover_image === true]),
+    );
+  }
+
   const songs = pageRows.map((row) => ({
     ...row,
     recording_slug: slugMap.get(row.recording_id) ?? null,
+    has_cover_image: row.release_id ? coverMap.get(row.release_id) === true : false,
   }));
 
   return {

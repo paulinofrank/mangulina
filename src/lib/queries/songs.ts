@@ -15,6 +15,7 @@ export type SongRecord = {
   subgenre_name?: string | null;     // view: subgenre_name
   release_year_actual?: number | null; // view: release_year_actual
   release_id?: string | null;        // view: release_id (used to build cover URL)
+  has_cover_image?: boolean | null;
   release_title?: string | null;     // view: release_title (album)
   release_slug?: string | null;      // fetched separately from releases.slug
   label?: string | null;             // view: label
@@ -223,10 +224,11 @@ export async function getSongById(id: string): Promise<SongRecord | null> {
   if (song.release_id) {
     const { data: rel } = await supabase
       .from("releases")
-      .select("slug")
+      .select("slug, has_cover_image")
       .eq("id", song.release_id)
       .maybeSingle();
     song.release_slug = rel?.slug ?? null;
+    song.has_cover_image = rel?.has_cover_image === true;
   }
 
   const editorial = await getRecordingEditorial(song.recording_id);
@@ -411,6 +413,7 @@ export type ArtistSongRecord = {
   title: string;
   artist_name?: string | null;
   release_id: string | null;
+  has_cover_image?: boolean | null;
   release_year_actual: number | null;
   views: number | null;
 };
@@ -437,9 +440,24 @@ export async function getMoreSongsByArtist(
     recording_title: string;
     artist_name: string | null;
     release_id: string | null;
+    has_cover_image?: boolean | null;
     release_year_actual: number | null;
     views: number | null;
   }[];
+
+  const releaseIds = [...new Set(rows.map((row) => row.release_id).filter(Boolean))];
+  const releaseCoverMap = new Map<string, boolean>();
+
+  if (releaseIds.length > 0) {
+    const { data: releases } = await supabase
+      .from("releases")
+      .select("id, has_cover_image")
+      .in("id", releaseIds);
+
+    for (const release of (releases ?? []) as Array<{ id: string; has_cover_image: boolean | null }>) {
+      releaseCoverMap.set(release.id, release.has_cover_image === true);
+    }
+  }
 
   // Fetch slugs
   const ids = rows.map((r) => r.recording_id);
@@ -458,6 +476,7 @@ export async function getMoreSongsByArtist(
     title:              r.recording_title,
     artist_name:        r.artist_name,
     release_id:         r.release_id,
+    has_cover_image:    r.release_id ? releaseCoverMap.get(r.release_id) === true : false,
     release_year_actual: r.release_year_actual,
     views:              r.views,
   }));

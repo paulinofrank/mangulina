@@ -17,6 +17,7 @@ type HomepageMostAwardedArtistRow = {
   name: string;
   province: string | null;
   views: number | string | null;
+  has_image: boolean | null;
   award_count: number | string | null;
   nomination_count: number | string | null;
 };
@@ -129,6 +130,7 @@ export async function getHomeData() {
   // Fetch slugs for the filtered recording IDs
   const trendingRecordingIds = filteredTrending.map((r: any) => r.recording_id).filter(Boolean);
   const slugMap = new Map<string, string | null>();
+  const releaseCoverMap = new Map<string, boolean>();
   if (trendingRecordingIds.length > 0) {
     const { data: slugRows } = await supabase
       .from("recordings")
@@ -139,12 +141,27 @@ export async function getHomeData() {
     }
   }
 
+  const trendingReleaseIds = [
+    ...new Set(filteredTrending.map((r: any) => r.release_id).filter(Boolean)),
+  ];
+  if (trendingReleaseIds.length > 0) {
+    const { data: releaseRows } = await supabase
+      .from("releases")
+      .select("id, has_cover_image")
+      .in("id", trendingReleaseIds);
+    for (const row of (releaseRows || []) as { id: string; has_cover_image: boolean | null }[]) {
+      releaseCoverMap.set(row.id, row.has_cover_image === true);
+    }
+  }
+
   const trendingSongs: TrendingSong[] = filteredTrending.map((r: any) => ({
     id: r.recording_id,
     slug: slugMap.get(r.recording_id) ?? null,
     title: r.recording_title,
     views: Number(r.views || 0),
-    release: r.release_id ? { id: r.release_id } : null,
+    release: r.release_id
+      ? { id: r.release_id, has_cover_image: releaseCoverMap.get(r.release_id) === true }
+      : null,
     recording_credits: [
       {
         artist: r.artist_name
@@ -157,7 +174,7 @@ export async function getHomeData() {
   // 4. Top Artists (Singers)
   const topResponse = await supabase
     .from("artists")
-    .select("id, slug, name, province, views")
+    .select("id, slug, name, province, has_image, views")
     .eq("status", "published")
     .eq("primary_role", "singer")
     .order("views", {
@@ -172,6 +189,7 @@ export async function getHomeData() {
       slug: a.slug,
       name: a.name,
       province: a.province,
+      has_image: a.has_image,
       views: a.views,
     }));
 
@@ -209,7 +227,7 @@ export async function getHomeData() {
   // 6. Prominent Composers (ONLY composers)
   const composersResponse = await supabase
     .from("artists")
-    .select("id, slug, name, province, views")
+    .select("id, slug, name, province, has_image, views")
     .eq("status", "published")
     .eq("primary_role", "composer")
     .order("views", {
@@ -224,13 +242,14 @@ export async function getHomeData() {
       slug: a.slug,
       name: a.name,
       province: a.province,
+      has_image: a.has_image,
       views: a.views,
     }));
 
   // 7. Top DJs
   const djsResponse = await supabase
     .from("artists")
-    .select("id, slug, name, province, views")
+    .select("id, slug, name, province, has_image, views")
     .eq("status", "published")
     .eq("primary_role", "dj")
     .order("views", {
@@ -246,13 +265,14 @@ export async function getHomeData() {
       slug: a.slug,
       name: a.name,
       province: a.province,
+      has_image: a.has_image,
       views: a.views,
     }));
 
   // 8. Top Christian Artists
   const christianResponse = await supabase
     .from("artists")
-    .select("id, slug, name, province, views")
+    .select("id, slug, name, province, has_image, views")
     .eq("status", "published")
     .contains("artist_tags", ["christian"])
     .order("views", {
@@ -267,6 +287,7 @@ export async function getHomeData() {
       slug: a.slug,
       name: a.name,
       province: a.province,
+      has_image: a.has_image,
       views: a.views,
     }));
 
@@ -310,7 +331,7 @@ export async function getHomeData() {
     if (awardedArtistIds.length > 0) {
       const awardedArtistsResponse = await supabase
         .from("artists")
-        .select("id, slug, name, province, views")
+        .select("id, slug, name, province, has_image, views")
         .eq("status", "published")
         .in("id", awardedArtistIds);
 
@@ -326,6 +347,7 @@ export async function getHomeData() {
             slug: artist.slug,
             name: artist.name,
             province: artist.province,
+            has_image: artist.has_image,
             views: artist.views,
             awardCount: counts.awardCount,
             nominationCount: counts.nominationCount,
@@ -348,6 +370,7 @@ export async function getHomeData() {
         name: artist.name,
         province: artist.province,
         views: Number(artist.views || 0),
+        has_image: artist.has_image,
         awardCount: Number(artist.award_count || 0),
         nominationCount: Number(artist.nomination_count || 0),
       }),
@@ -357,7 +380,7 @@ export async function getHomeData() {
   // 10. Classical Artists
   const classicalResponse = await supabase
     .from("artists")
-    .select("id, slug, name, province, views")
+    .select("id, slug, name, province, has_image, views")
     .eq("status", "published")
     .eq("primary_role", "instrumentalist")
     .order("views", {
@@ -372,6 +395,7 @@ export async function getHomeData() {
       slug: a.slug,
       name: a.name,
       province: a.province,
+      has_image: a.has_image,
       views: a.views,
     }));
 
@@ -380,7 +404,7 @@ export async function getHomeData() {
   // never empty while the 7-day window is sparse. Card still shows all-time views.
   const risingResponse = await supabase
     .from("artists")
-    .select("id, slug, name, province, views")
+    .select("id, slug, name, province, has_image, views")
     .eq("status", "published")
     .contains("artist_tags", ["emerging"])
     .order("views", {
@@ -401,13 +425,14 @@ export async function getHomeData() {
         slug: a.slug,
         name: a.name,
         province: a.province,
+        has_image: a.has_image,
         views: a.views,
       }));
 
   // 12. Top Legends Artists
   const legendsResponse = await supabase
     .from("artists")
-    .select("id, slug, name, province, views")
+    .select("id, slug, name, province, has_image, views")
     .eq("status", "published")
     .contains("artist_tags", ["legend"])
     .order("views", { ascending: false, nullsFirst: false })
@@ -419,6 +444,7 @@ export async function getHomeData() {
       slug: artist.slug,
       name: artist.name,
       province: artist.province,
+      has_image: artist.has_image,
       views: artist.views,
     }));
 

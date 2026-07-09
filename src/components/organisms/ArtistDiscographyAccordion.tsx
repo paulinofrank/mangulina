@@ -1,7 +1,6 @@
 
 //artistDiscographyaccordion.tsx
 
-import { getSignedCoverUrl } from "@/utils/getSignedCoverUrl";
 import type { DiscographyReleaseSummary } from "@/lib/artistApi";
 import ArtistDiscographyRelease from "@/components/organisms/ArtistDiscographyRelease";
 
@@ -37,7 +36,7 @@ export default async function ArtistDiscographyGrouped({
       release_year: release.release_year,
       release_type: release.release_type,
       track_count: release.track_count,
-      cover_url: await getSignedCoverUrl(release.release_id),
+      cover_url: release.cover_url,
     }))
   );
 

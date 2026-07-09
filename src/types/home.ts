@@ -16,6 +16,7 @@ export type TrendingSong = {
   views: number;
   release: {
     id: string;
+    has_cover_image?: boolean | null;
   } | null;
   recording_credits: {
     artist: {
@@ -31,6 +32,7 @@ export type ArtistSummary = {
   name: string;
   status?: Artist["status"];
   province: string | null;
+  has_image?: boolean | null;
   views: number;
 };
 

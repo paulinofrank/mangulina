@@ -42,7 +42,7 @@ export default function DecadeSelector({
     let cancelled = false;
     const params = mode === "years" && activeDecade ? `?decade=${encodeURIComponent(activeDecade)}` : "";
 
-    fetch(`/api/archive/counts${params}`)
+    fetch(`/api/archive/counts${params}`, { cache: "no-store" })
       .then(async (response) => {
         const result = (await response.json()) as ArchiveCountsResponse;
         if (!response.ok || !result.ok) return;
@@ -171,10 +171,11 @@ export default function DecadeSelector({
             {showYears
               ? visibleYears.map((year) => {
                   const isActive = selectedYear === year;
+                  const fetchedCount = yearCounts[String(year)];
                   const count =
                     isActive && selectedYearCount !== undefined
                       ? selectedYearCount
-                      : (yearCounts[String(year)] ?? 0);
+                      : (fetchedCount ?? 0);
 
                   return (
                     <Link

@@ -21,6 +21,7 @@ export interface Artist {
   instagram?: string | null;
   genres?: string[] | null;      // Musical genres/styles only
   artist_tags?: string[] | null; // Editorial/category tags
+  has_image?: boolean | null;
   views?: number | null;         // Kept from your other file
 death_year?: number | null;
 }

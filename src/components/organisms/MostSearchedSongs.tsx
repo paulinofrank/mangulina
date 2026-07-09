@@ -72,7 +72,9 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
                   : "Unknown Artist";
 
               const coverUrl = song.release?.id
-                ? getPublicReleaseCoverUrl(song.release.id, 150)
+                ? song.release.has_cover_image
+                  ? getPublicReleaseCoverUrl(song.release.id, 150)
+                  : "/images/placeholder-song.jpg"
                 : "/images/placeholder-song.jpg";
 
               return (

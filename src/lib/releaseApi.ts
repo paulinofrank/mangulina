@@ -4,7 +4,7 @@ import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 const RELEASE_LIST_PAGE_SIZE = 24;
 const RELEASE_SECTION_LIMIT = 12;
 const RELEASE_SUMMARY_SELECT =
-  "id,slug,title,type,release_year,year,label,release_artist_id";
+  "id,slug,title,type,release_year,year,label,has_cover_image,release_artist_id";
 const RELEASE_SUMMARY_SELECT_WITH_VIEWS = `${RELEASE_SUMMARY_SELECT},views`;
 
 // ============================================================================
@@ -234,6 +234,7 @@ export type ReleasePageData = {
   barcode: string | null;
   catalogNumber: string | null;
   views: number | null;
+  has_cover_image: boolean | null;
   coverImageUrl: string | null;
   artist: {
     id: string;
@@ -251,6 +252,7 @@ export type ReleaseSummary = {
   releaseYear: number | null;
   label: string | null;
   views: number | null;
+  has_cover_image?: boolean | null;
   coverImageUrl: string | null;
   artist: {
     id: string;
@@ -293,6 +295,7 @@ type ReleaseRow = {
   barcode: string | null;
   catalog_number: string | null;
   release_artist_id: string | null;
+  has_cover_image?: boolean | null;
   views?: number | null;
 };
 
@@ -305,6 +308,7 @@ type ReleaseSummaryRpcRow = {
   year: number | null;
   label: string | null;
   views: number | null;
+  has_cover_image: boolean | null;
   release_artist_id: string | null;
   artist_name: string | null;
   artist_slug: string | null;
@@ -364,6 +368,13 @@ function isMissingReleaseViewsColumn(error: unknown) {
 
 export function getReleaseCoverUrl(releaseId: string) {
   return getPublicReleaseCoverUrl(releaseId, 300);
+}
+
+export function getReleaseCoverUrlIfAvailable(
+  releaseId: string,
+  hasCoverImage: boolean | null | undefined,
+) {
+  return hasCoverImage ? getReleaseCoverUrl(releaseId) : null;
 }
 
 export function formatReleaseType(type?: string | null) {
@@ -469,7 +480,8 @@ async function hydrateReleaseSummaries(rows: ReleaseRow[]): Promise<ReleaseSumma
         releaseYear: release.release_year ?? release.year,
         label: release.label,
         views: release.views ?? null,
-        coverImageUrl: getReleaseCoverUrl(release.id),
+        has_cover_image: release.has_cover_image ?? false,
+        coverImageUrl: getReleaseCoverUrlIfAvailable(release.id, release.has_cover_image),
         artist: artist
           ? {
               id: artist.id,
@@ -635,7 +647,8 @@ export async function getReleaseSummariesByIds(
     releaseYear: release.release_year ?? release.year,
     label: release.label,
     views: release.views,
-    coverImageUrl: getReleaseCoverUrl(release.id),
+    has_cover_image: release.has_cover_image,
+    coverImageUrl: getReleaseCoverUrlIfAvailable(release.id, release.has_cover_image),
     artist: release.release_artist_id
       ? {
           id: release.release_artist_id,
@@ -896,8 +909,8 @@ export async function getReleaseBySlug(slug: string): Promise<ReleasePageData | 
       .from("releases")
       .select(
         includeViews
-          ? "id, slug, title, type, release_year, year, date, label, country, barcode, catalog_number, release_artist_id, views"
-          : "id, slug, title, type, release_year, year, date, label, country, barcode, catalog_number, release_artist_id",
+          ? "id, slug, title, type, release_year, year, date, label, country, barcode, catalog_number, has_cover_image, release_artist_id, views"
+          : "id, slug, title, type, release_year, year, date, label, country, barcode, catalog_number, has_cover_image, release_artist_id",
       )
       .eq("slug", slug)
       .maybeSingle();
@@ -1006,7 +1019,8 @@ export async function getReleaseBySlug(slug: string): Promise<ReleasePageData | 
     barcode: releaseRow.barcode,
     catalogNumber: releaseRow.catalog_number,
     views: releaseRow.views ?? null,
-    coverImageUrl: getReleaseCoverUrl(releaseRow.id),
+    has_cover_image: releaseRow.has_cover_image ?? false,
+    coverImageUrl: getReleaseCoverUrlIfAvailable(releaseRow.id, releaseRow.has_cover_image),
     artist: displayArtist,
     tracks,
   };

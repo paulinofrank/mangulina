@@ -10,6 +10,7 @@ export type ArchiveSongRow = {
   recording_slug?: string | null;
   recording_title: string;
   release_id?: string | null;
+  has_cover_image?: boolean | null;
   artist_name: string | null;
   duration: number | null;
   genre_name?: string | null;
@@ -51,7 +52,7 @@ export default function SongsByYearList({
           .filter(Boolean)
           .join(" / ");
         const href = `/songs/${song.recording_slug ?? song.recording_id}`;
-        const coverUrl = song.release_id
+        const coverUrl = song.release_id && song.has_cover_image
           ? getPublicReleaseCoverUrl(song.release_id, 150)
           : "/images/placeholder-song.jpg";
         const viewsText = formatViews(song.views);

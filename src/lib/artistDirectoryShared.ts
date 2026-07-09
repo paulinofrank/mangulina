@@ -19,6 +19,7 @@ export const ARTIST_LIST_SELECT = [
   "instagram",
   "genres",
   "artist_tags",
+  "has_image",
   "views",
   "death_year",
 ].join(",");

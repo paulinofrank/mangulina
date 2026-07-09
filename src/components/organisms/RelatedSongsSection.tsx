@@ -87,7 +87,7 @@ export default function RelatedSongsSection({
             className="flex min-w-0 max-w-full gap-4 overflow-x-auto scrollbar-none pb-2"
           >
             {moreSongs.map((song) => {
-              const coverUrl = song.release_id
+              const coverUrl = song.release_id && song.has_cover_image
                 ? getPublicReleaseCoverUrl(song.release_id, 150)
                 : "/images/placeholder-song.jpg";
 

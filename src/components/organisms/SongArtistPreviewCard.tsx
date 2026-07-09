@@ -11,6 +11,7 @@ type SongArtistPreviewCardProps = {
     slug: string;
     name: string;
     bio?: string | null;
+    has_image?: boolean | null;
     views?: number | null;
   } | null;
 };
@@ -28,7 +29,7 @@ export default function SongArtistPreviewCard({ artist }: SongArtistPreviewCardP
   const t = useTranslations();
   if (!artist?.slug) return null;
 
-  const imageUrl = getArtistImageUrl(artist.id);
+  const imageUrl = artist.has_image ? getArtistImageUrl(artist.id) : null;
 
   return (
     <Link

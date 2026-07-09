@@ -216,6 +216,14 @@ function ArchivePagination({
       </button>
 
       <button
+        onClick={() => onPageChange(1)}
+        disabled={currentPage === 1}
+        className="hidden cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30 sm:block"
+      >
+        {t("pagination.first")}
+      </button>
+
+      <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
         className="hidden cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30 sm:block"
@@ -244,6 +252,14 @@ function ArchivePagination({
         className="hidden cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30 sm:block"
       >
         {t("pagination.next")}
+      </button>
+
+      <button
+        onClick={() => onPageChange(totalPages)}
+        disabled={currentPage === totalPages}
+        className="hidden cursor-pointer rounded-xl border border-black/10 bg-white px-4 py-2 text-sm text-gray-600 transition hover:bg-black hover:text-white disabled:cursor-default disabled:opacity-30 sm:block"
+      >
+        {t("pagination.last")}
       </button>
     </section>
   );

@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: artistSeoTitle(artist),
     description,
     path: `/artists/${artist.slug}`,
-    image: getArtistImageUrl(artist.id),
+    image: artist.has_image ? getArtistImageUrl(artist.id) : null,
     openGraphType: "profile",
     locale,
   });
@@ -76,7 +76,7 @@ export default async function ArtistProfile({ params }: PageProps) {
   const locale = await getLocale();
   const t = await getTranslations("artist");
   const tCommon = await getTranslations("common");
-  const imageUrl = getArtistImageUrl(artist.id);
+  const imageUrl = artist.has_image ? getArtistImageUrl(artist.id) : null;
   const localizedBio = getLocalizedArtistBio(artist, locale);
   const hasBio = Boolean(localizedBio?.trim());
   const [discography, interviews, relationships] = await Promise.all([
@@ -94,7 +94,7 @@ export default async function ArtistProfile({ params }: PageProps) {
     name: artist.name,
     alternateName: alternateNames.length ? alternateNames : artist.stage_name ?? undefined,
     url: absoluteUrl(`/artists/${artist.slug}`),
-    image: imageUrl,
+    image: imageUrl ?? undefined,
     birthDate: isPerson ? artist.date_of_birth ?? undefined : undefined,
     deathDate: isPerson ? artist.date_of_death ?? undefined : undefined,
     birthPlace:
@@ -130,15 +130,21 @@ export default async function ArtistProfile({ params }: PageProps) {
 
             <div className="relative aspect-square w-full rounded-2xl shadow-lg">
               <div className="absolute inset-0 overflow-hidden rounded-2xl bg-gray-100">
-                <Image
-                  src={imageUrl}
-                  alt={artist.name}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) calc(100vw - 40px), 300px"
-                  loading="eager"
-                  fetchPriority="high"
-                />
+                {imageUrl ? (
+                  <Image
+                    src={imageUrl}
+                    alt={artist.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) calc(100vw - 40px), 300px"
+                    loading="eager"
+                    fetchPriority="high"
+                  />
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center bg-gray-100 px-6 text-center text-sm italic text-gray-400">
+                    {tCommon("noImage")}
+                  </div>
+                )}
               </div>
 
               {artist.views != null && (

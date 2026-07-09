@@ -33,7 +33,7 @@ function limitResults(results: SearchResult[]) {
 function withArtistImageUrls(results: SearchResult[]) {
   return results.map((result) => ({
     ...result,
-    cover_url: result.cover_url || getArtistImageUrlFromId(result.id),
+    cover_url: result.cover_url,
   }));
 }
 
@@ -46,11 +46,31 @@ function normalizeCoverArtUrl(url: string | null | undefined) {
 function withCurrentCoverArtUrls(results: SearchResult[]) {
   return results.map((result) => ({
     ...result,
-    cover_url:
-      result.type === "release"
-        ? getPublicReleaseCoverUrl(result.id, 150)
-        : normalizeCoverArtUrl(result.cover_url),
+    cover_url: result.type === "release" ? result.cover_url : normalizeCoverArtUrl(result.cover_url),
   }));
+}
+
+async function getReleaseCoverAvailability(ids: string[]) {
+  const uniqueIds = [...new Set(ids.filter(Boolean))];
+
+  if (!uniqueIds.length) return new Map<string, boolean>();
+
+  const { data, error } = await supabase
+    .from("releases")
+    .select("id, has_cover_image")
+    .in("id", uniqueIds);
+
+  if (error) {
+    console.error("globalSearch release cover availability error:", error);
+    return new Map<string, boolean>();
+  }
+
+  return new Map(
+    ((data ?? []) as Array<{ id: string; has_cover_image: boolean | null }>).map((release) => [
+      release.id,
+      release.has_cover_image === true,
+    ]),
+  );
 }
 
 async function withSongReleaseDetails(results: SearchResult[]) {
@@ -91,6 +111,14 @@ async function withSongReleaseDetails(results: SearchResult[]) {
       row.slug,
     ]),
   );
+  const releaseIds = [
+    ...new Set(
+      [...detailsByRecordingId.values()]
+        .map((details) => details.release_id)
+        .filter((id): id is string => Boolean(id)),
+    ),
+  ];
+  const releaseCoverMap = await getReleaseCoverAvailability(releaseIds);
 
   return results.map((result) => {
     const details = detailsByRecordingId.get(result.id);
@@ -99,7 +127,7 @@ async function withSongReleaseDetails(results: SearchResult[]) {
       ...result,
       slug: slugByRecordingId.get(result.id) ?? result.slug,
       artist_name: details?.artist_name ?? result.subtitle,
-      cover_url: details?.release_id
+      cover_url: details?.release_id && releaseCoverMap.get(details.release_id)
         ? getPublicReleaseCoverUrl(details.release_id, 150)
         : result.cover_url,
       release_title: details?.release_title ?? null,
@@ -128,10 +156,12 @@ async function withReleaseSlugs(results: SearchResult[]) {
       row.slug,
     ]),
   );
+  const releaseCoverMap = await getReleaseCoverAvailability(releaseIds);
 
   return results.map((result) => ({
     ...result,
     slug: slugByReleaseId.get(result.id) ?? result.slug,
+    cover_url: releaseCoverMap.get(result.id) ? getPublicReleaseCoverUrl(result.id, 150) : null,
   }));
 }
 
@@ -154,6 +184,30 @@ async function getPublishedArtistIds(ids: string[]) {
   return new Set((data ?? []).map((artist) => artist.id));
 }
 
+async function getArtistImageAvailability(ids: string[]) {
+  const uniqueIds = [...new Set(ids.filter(Boolean))];
+
+  if (!uniqueIds.length) return new Map<string, boolean>();
+
+  const { data, error } = await supabase
+    .from("artists")
+    .select("id, has_image")
+    .eq("status", "published")
+    .in("id", uniqueIds);
+
+  if (error) {
+    console.error("globalSearch artist image availability error:", error);
+    return new Map<string, boolean>();
+  }
+
+  return new Map(
+    ((data ?? []) as Array<{ id: string; has_image: boolean | null }>).map((artist) => [
+      artist.id,
+      artist.has_image === true,
+    ]),
+  );
+}
+
 function normalizeQuery(q: string) {
   return q.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 }
@@ -173,7 +227,7 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
 
   const { data: fallbackArtistData, error: artistError } = await supabase
     .from("artists")
-    .select("id, slug, name, province, birth_year")
+    .select("id, slug, name, province, birth_year, has_image")
     .eq("status", "published")
     .or(`name.ilike.%${cleaned}%,name.ilike.%${normalized}%`)
     .order("views", { ascending: false, nullsFirst: false })
@@ -191,7 +245,7 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
       slug: artist.slug,
       subtitle: artist.province,
       year: artist.birth_year,
-      cover_url: getArtistImageUrlFromId(artist.id),
+      cover_url: artist.has_image ? getArtistImageUrlFromId(artist.id) : null,
     })
   );
 
@@ -214,11 +268,15 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
   const publishedArtistIds = await getPublishedArtistIds(rpcArtists.map((artist) => artist.id));
   const publishedRpcArtists = rpcArtists.filter((artist) => publishedArtistIds.has(artist.id));
   const artists = limitResults(publishedRpcArtists.length ? publishedRpcArtists : fallbackArtists);
+  const artistImageAvailability = await getArtistImageAvailability(artists.map((artist) => artist.id));
   const songs = limitResults(results?.songs ?? []);
   const releases = limitResults(results?.releases ?? []);
 
   return {
-    artists: withArtistImageUrls(artists),
+    artists: artists.map((artist) => ({
+      ...artist,
+      cover_url: artistImageAvailability.get(artist.id) ? getArtistImageUrlFromId(artist.id) : null,
+    })),
     songs: await withSongReleaseDetails(withCurrentCoverArtUrls(songs)),
     releases: await withReleaseSlugs(withCurrentCoverArtUrls(releases)),
   };
