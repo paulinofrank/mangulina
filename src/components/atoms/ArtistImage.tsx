@@ -42,6 +42,7 @@ export default function ArtistImage({
       sizes={sizes}
       loading={priority ? "eager" : "lazy"}
       fetchPriority={priority ? "high" : "auto"}
+      unoptimized={true}
       onError={() => setHasError(true)}
     />
   )
