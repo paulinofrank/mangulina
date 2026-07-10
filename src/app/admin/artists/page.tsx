@@ -982,7 +982,7 @@ export default function AdminDashboard() {
       type: "image/webp",
     });
 
-    const { data, error } = await supabase.storage
+    const { error } = await supabase.storage
       .from("artists-images")
       .upload(filePath, webpFile, {
         upsert: true,
@@ -1001,30 +1001,42 @@ export default function AdminDashboard() {
       return;
     }
 
-    console.log("Image upload success:", data);
+    // The metadata update runs server-side: the browser client's artists
+    // update is silently filtered to zero rows by RLS. The endpoint also
+    // revalidates the public profile paths.
+    let imageUpdatedAt: string;
 
-    const imageUpdatedAt = new Date().toISOString();
+    try {
+      const response = await fetch("/api/admin/artist-image", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ artistId: selectedArtistId }),
+      });
 
-    const { data: updatedArtist, error: artistUpdateError } = await supabase
-      .from("artists")
-      .update({ has_image: true, image_updated_at: imageUpdatedAt })
-      .eq("id", selectedArtistId)
-      .select("id, has_image, image_updated_at")
-      .single();
+      const contentType = response.headers.get("content-type");
+      if (!contentType?.includes("application/json")) {
+        const body = await response.text();
+        throw new Error(
+          `Expected JSON from artist-image endpoint, received ${contentType ?? "unknown content type"}: ${body.slice(0, 200)}`,
+        );
+      }
 
-    if (artistUpdateError) {
-      console.error("Error marking artist image as available:", artistUpdateError);
+      const result = (await response.json()) as AdminWriteResponse & {
+        has_image?: boolean;
+        image_updated_at?: string;
+      };
+
+      if (!response.ok || !result.ok || result.has_image !== true || !result.image_updated_at) {
+        throw new Error(result.error || "Artist image metadata update failed.");
+      }
+
+      imageUpdatedAt = result.image_updated_at;
+    } catch (error) {
+      console.error("Artist image metadata update failed:", error);
       setStatus(
-        `Artist image uploaded as ${filePath}, but database metadata was not updated: ${artistUpdateError.message}`
-      );
-      setLoading(false);
-      return;
-    }
-
-    if (!updatedArtist || updatedArtist.has_image !== true || !updatedArtist.image_updated_at) {
-      console.error("Artist update verification failed:", { updatedArtist });
-      setStatus(
-        `Artist image uploaded as ${filePath}, but database metadata verification failed.`
+        `Artist image uploaded as ${filePath}, but the metadata update failed: ${error instanceof Error ? error.message : "Unknown error"}`
       );
       setLoading(false);
       return;
@@ -1035,47 +1047,14 @@ export default function AdminDashboard() {
         artist.id === selectedArtistId
           ? {
               ...artist,
-              has_image: updatedArtist.has_image,
-              image_updated_at: updatedArtist.image_updated_at,
+              has_image: true,
+              image_updated_at: imageUpdatedAt,
             }
           : artist,
       ),
     );
 
-    let freshnessWarning = "";
-    const selectedArtistSlug = selectedArtist?.slug?.trim();
-
-    if (selectedArtistSlug) {
-      try {
-        const revalidateResponse = await fetch("/api/admin/revalidate-artist-profile", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ slug: selectedArtistSlug }),
-        });
-
-        const contentType = revalidateResponse.headers.get("content-type");
-        if (!contentType?.includes("application/json")) {
-          const body = await revalidateResponse.text();
-          throw new Error(
-            `Expected JSON from revalidate endpoint, received ${contentType ?? "unknown content type"}: ${body.slice(0, 200)}`,
-          );
-        }
-
-        const revalidateResult = (await revalidateResponse.json()) as AdminWriteResponse;
-
-        if (!revalidateResponse.ok || !revalidateResult.ok) {
-          freshnessWarning = ` Profile revalidation failed: ${revalidateResult.error || revalidateResponse.statusText}`;
-        }
-      } catch (error) {
-        freshnessWarning = ` Profile revalidation failed: ${error instanceof Error ? error.message : "Unknown error"}`;
-      }
-    } else {
-      freshnessWarning = " Profile revalidation skipped because the artist slug is missing.";
-    }
-
-    setStatus(`Artist image uploaded successfully as ${filePath}.${freshnessWarning}`);
+    setStatus(`Artist image uploaded successfully as ${filePath}.`);
     setPreviewImageUrl((currentUrl) => {
       if (currentUrl?.startsWith("blob:")) {
         URL.revokeObjectURL(currentUrl);
