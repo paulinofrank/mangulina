@@ -16,6 +16,7 @@ import {
 } from "@/lib/artistRelationships";
 import type { Artist } from "@/types/music";
 import { getArtistImageUrlIfAvailable } from "@/utils/getArtistImageUrl";
+import { resizeArtistImage } from "@/utils/resizeArtistImage";
 import { extractYouTubeVideoId } from "@/utils/youtube";
 import BioText from "@/components/molecules/BioText";
 
@@ -965,26 +966,30 @@ export default function AdminDashboard() {
       return;
     }
 
-    const isWebp =
-      file.type === "image/webp" || file.name.toLowerCase().endsWith(".webp");
+    setLoading(true);
+    setStatus("Processing image (300x300 WebP)...");
 
-    if (!isWebp) {
-      setStatus("Please upload a .webp image file.");
+    // Never upload the original file: resize + re-encode to WebP first.
+    let processedFile: File;
+
+    try {
+      processedFile = await resizeArtistImage(file);
+    } catch (error) {
+      console.error("Image processing error:", error);
+      setStatus(
+        `Error processing image: ${error instanceof Error ? error.message : "Unknown error"}`
+      );
+      setLoading(false);
       return;
     }
 
-    setLoading(true);
     setStatus(`Uploading image as ${selectedArtistId}.webp...`);
 
     const filePath = `${selectedArtistId}.webp`;
 
-    const webpFile = new File([file], filePath, {
-      type: "image/webp",
-    });
-
     const { error } = await supabase.storage
       .from("artists-images")
-      .upload(filePath, webpFile, {
+      .upload(filePath, processedFile, {
         upsert: true,
         contentType: "image/webp",
         cacheControl: "0",
@@ -1060,7 +1065,7 @@ export default function AdminDashboard() {
         URL.revokeObjectURL(currentUrl);
       }
 
-      return URL.createObjectURL(file);
+      return URL.createObjectURL(processedFile);
     });
     await fetchData();
 
@@ -1632,7 +1637,7 @@ export default function AdminDashboard() {
 
                   <input
                     type="file"
-                    accept=".webp,image/webp"
+                    accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp"
                     disabled={Boolean(!selectedArtistId || loading)}
                     onChange={(event) => {
                       const file = event.target.files?.[0];
@@ -1647,7 +1652,7 @@ export default function AdminDashboard() {
                   />
 
                   <p className="mt-2 text-xs text-gray-400">
-                    Uploads as {selectedArtist.id}.webp
+                    JPG, PNG, or WebP. Resized to 300x300 and uploaded as {selectedArtist.id}.webp
                   </p>
                 </label>
               </div>
