@@ -583,7 +583,7 @@ export default function AdminDashboard() {
   const [relationshipArtistPickerOpen, setRelationshipArtistPickerOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
-  const [previewImageUrl, setPreviewImageUrl] = useState("");
+  const [previewImageUrl, setPreviewImageUrl] = useState<string | null>(null);
   const bioTextareaRefs = useRef<Record<LocalizedBioField, HTMLTextAreaElement | null>>({
     bio_en: null,
     bio_es: null,
@@ -594,7 +594,7 @@ export default function AdminDashboard() {
     [artists, selectedArtistId]
   );
 
-  const selectedArtistImageUrl = previewImageUrl || getArtistImageUrlIfAvailable(selectedArtist) || "";
+  const selectedArtistImageUrl = previewImageUrl || getArtistImageUrlIfAvailable(selectedArtist) || null;
 
   const mediaYouTubeVideoId =
     mediaForm.platform === "youtube"
@@ -748,7 +748,7 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     return () => {
-      if (previewImageUrl.startsWith("blob:")) {
+      if (previewImageUrl?.startsWith("blob:")) {
         URL.revokeObjectURL(previewImageUrl);
       }
     };
@@ -914,7 +914,7 @@ export default function AdminDashboard() {
     setSelectedArtistId(artist.id);
     setSearch(artist.name ?? "");
     setArtistPickerOpen(false);
-    setPreviewImageUrl("");
+    setPreviewImageUrl(null);
     resetMediaForm();
     resetRelationshipForm();
     void fetchArtistMedia(artist.id);
@@ -1003,19 +1003,44 @@ export default function AdminDashboard() {
 
     console.log("Image upload success:", data);
 
-    const { error: artistUpdateError } = await supabase
+    const imageUpdatedAt = new Date().toISOString();
+
+    const { data: updatedArtist, error: artistUpdateError } = await supabase
       .from("artists")
-      .update({ has_image: true, image_updated_at: new Date().toISOString() })
-      .eq("id", selectedArtistId);
+      .update({ has_image: true, image_updated_at: imageUpdatedAt })
+      .eq("id", selectedArtistId)
+      .select("id, has_image, image_updated_at")
+      .single();
 
     if (artistUpdateError) {
       console.error("Error marking artist image as available:", artistUpdateError);
       setStatus(
-        `Artist image uploaded as ${filePath}, but has_image was not updated: ${artistUpdateError.message}`
+        `Artist image uploaded as ${filePath}, but database metadata was not updated: ${artistUpdateError.message}`
       );
       setLoading(false);
       return;
     }
+
+    if (!updatedArtist || updatedArtist.has_image !== true || !updatedArtist.image_updated_at) {
+      console.error("Artist update verification failed:", { updatedArtist });
+      setStatus(
+        `Artist image uploaded as ${filePath}, but database metadata verification failed.`
+      );
+      setLoading(false);
+      return;
+    }
+
+    setArtists((current) =>
+      current.map((artist) =>
+        artist.id === selectedArtistId
+          ? {
+              ...artist,
+              has_image: updatedArtist.has_image,
+              image_updated_at: updatedArtist.image_updated_at,
+            }
+          : artist,
+      ),
+    );
 
     let freshnessWarning = "";
     const selectedArtistSlug = selectedArtist?.slug?.trim();
@@ -1029,6 +1054,15 @@ export default function AdminDashboard() {
           },
           body: JSON.stringify({ slug: selectedArtistSlug }),
         });
+
+        const contentType = revalidateResponse.headers.get("content-type");
+        if (!contentType?.includes("application/json")) {
+          const body = await revalidateResponse.text();
+          throw new Error(
+            `Expected JSON from revalidate endpoint, received ${contentType ?? "unknown content type"}: ${body.slice(0, 200)}`,
+          );
+        }
+
         const revalidateResult = (await revalidateResponse.json()) as AdminWriteResponse;
 
         if (!revalidateResponse.ok || !revalidateResult.ok) {
@@ -1043,7 +1077,7 @@ export default function AdminDashboard() {
 
     setStatus(`Artist image uploaded successfully as ${filePath}.${freshnessWarning}`);
     setPreviewImageUrl((currentUrl) => {
-      if (currentUrl.startsWith("blob:")) {
+      if (currentUrl?.startsWith("blob:")) {
         URL.revokeObjectURL(currentUrl);
       }
 
@@ -1580,20 +1614,27 @@ export default function AdminDashboard() {
             {selectedArtist && (
               <div className="mt-5">
                 <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-gray-100">
-                  {selectedArtistImageUrl.startsWith("blob:") ? (
-                    <img
-                      src={selectedArtistImageUrl}
-                      alt={selectedArtist.name}
-                      className="h-full w-full object-cover"
-                    />
+                  {selectedArtistImageUrl ? (
+                    selectedArtistImageUrl.startsWith("blob:") ? (
+                      <img
+                        src={selectedArtistImageUrl}
+                        alt={selectedArtist.name}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <Image
+                        src={selectedArtistImageUrl}
+                        alt={selectedArtist.name}
+                        fill
+                        className="object-cover"
+                        sizes="320px"
+                        unoptimized
+                      />
+                    )
                   ) : (
-                    <Image
-                      src={selectedArtistImageUrl}
-                      alt={selectedArtist.name}
-                      fill
-                      className="object-cover"
-                      sizes="320px"
-                    />
+                    <div className="flex h-full w-full items-center justify-center text-gray-400 text-sm">
+                      No image
+                    </div>
                   )}
                 </div>
 
