@@ -39,7 +39,7 @@ export default function FeaturedArtistImage({
       className="group relative block aspect-square w-full shrink-0 overflow-hidden rounded-lg border border-black/5 bg-gray-100 sm:w-56 lg:w-64"
       aria-label={t("viewArtistProfile", { name: featuredArtist.name })}
     >
-      <div className="h-full w-full transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
+      <div className="relative h-full w-full transition-all duration-300 group-hover:scale-105 group-hover:brightness-110">
         <ArtistImage
           imageUrl={imageUrl}
           name={featuredArtist.name || "Featured Artist"}

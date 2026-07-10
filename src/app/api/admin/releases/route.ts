@@ -153,8 +153,50 @@ export async function POST(request: Request) {
   };
 
   const supabase = getSupabaseClient();
+
+  // Changing the primary artist of an existing release must move the release,
+  // its recordings, and its primary performer credits together. That runs
+  // through one transactional RPC; releases.release_artist_id is then owned by
+  // the RPC and excluded from the plain field update below.
+  let reassignment: Record<string, unknown> | null = null;
+
+  if (releaseId) {
+    const { data: currentRelease, error: currentError } = await supabase
+      .from("releases")
+      .select("release_artist_id")
+      .eq("id", releaseId)
+      .maybeSingle();
+
+    if (currentError) return jsonError(currentError.message, 500);
+    if (!currentRelease) return jsonError("Release not found.", 404);
+
+    const currentArtistId = (currentRelease.release_artist_id as string | null) ?? null;
+
+    if (currentArtistId && releaseArtist.value && currentArtistId !== releaseArtist.value) {
+      const { data: reassignResult, error: reassignError } = await supabase.rpc(
+        "reassign_release_primary_artist",
+        {
+          p_release_id: releaseId,
+          p_old_artist_id: currentArtistId,
+          p_new_artist_id: releaseArtist.value,
+        },
+      );
+
+      if (reassignError) {
+        return jsonError(`Artist reassignment failed: ${reassignError.message}`, 500);
+      }
+
+      reassignment = (reassignResult ?? null) as Record<string, unknown> | null;
+    }
+  }
+
+  const artistHandledByRpc = reassignment !== null;
+  const updatePayload = artistHandledByRpc
+    ? (({ release_artist_id: _ignored, ...rest }) => rest)(payload)
+    : payload;
+
   const response = releaseId
-    ? await supabase.from("releases").update(payload).eq("id", releaseId).select("id").maybeSingle()
+    ? await supabase.from("releases").update(updatePayload).eq("id", releaseId).select("id").maybeSingle()
     : await supabase.from("releases").insert(payload).select("id").maybeSingle();
 
   if (response.error) return jsonError(response.error.message, 500);
@@ -163,8 +205,9 @@ export async function POST(request: Request) {
   const finalReleaseId = response.data.id;
 
   // Also write to release_artists table if artist_id is set (Phase 3A support)
-  // This maintains backward compatibility while populating the new table
-  if (releaseArtist.value) {
+  // This maintains backward compatibility while populating the new table.
+  // Skipped when the RPC ran: it already moved the primary credit row.
+  if (releaseArtist.value && !artistHandledByRpc) {
     const releaseArtistPayload = {
       release_id: finalReleaseId,
       artist_id: releaseArtist.value,
@@ -192,7 +235,7 @@ export async function POST(request: Request) {
     }
   }
 
-  return NextResponse.json({ ok: true, id: finalReleaseId });
+  return NextResponse.json({ ok: true, id: finalReleaseId, reassignment });
 }
 
 export async function DELETE(request: Request) {

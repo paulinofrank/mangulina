@@ -6,6 +6,20 @@ import ArtistDiscographyRelease from "@/components/organisms/ArtistDiscographyRe
 
 const TYPE_ORDER = ["Album", "EP", "Single", "Compilation", "Live", "Other"];
 
+// Release types come from release_groups.primary_type or the legacy
+// releases.type column, so casing and vocabulary vary ("album", "Broadcast",
+// null). Every release must land in a bucket — anything unrecognized goes to
+// "Other" so a non-empty discography can never render as an empty section.
+function normalizeReleaseType(type: string | null | undefined): string {
+  const normalized = type?.trim().toLowerCase();
+
+  if (!normalized) return "Other";
+
+  return (
+    TYPE_ORDER.find((bucket) => bucket.toLowerCase() === normalized) ?? "Other"
+  );
+}
+
 export default async function ArtistDiscographyGrouped({
   releases,
 }: {
@@ -43,7 +57,7 @@ export default async function ArtistDiscographyGrouped({
   const grouped = TYPE_ORDER.map((type) => ({
     type,
     items: releasesWithCovers.filter(
-      (release) => release.release_type === type
+      (release) => normalizeReleaseType(release.release_type) === type
     ),
   })).filter((group) => group.items.length > 0);
 
