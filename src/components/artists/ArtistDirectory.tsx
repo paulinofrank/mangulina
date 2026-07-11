@@ -1223,7 +1223,7 @@ function ArtistsContent({
               <div className="flex gap-0.5">
                 <button
                   onClick={() => handleLetterChange("")}
-                  className={`flex-1 py-1 text-xs font-medium rounded transition ${
+                  className={`flex-1 cursor-pointer py-1 text-xs font-medium rounded transition ${
                     !letterFilter
                       ? "bg-(--color-flagblue) text-white"
                       : "bg-gray-100 text-gray-600 hover:bg-gray-200"
@@ -1237,7 +1237,7 @@ function ArtistsContent({
                     <button
                       key={letter}
                       onClick={() => handleLetterChange(letter)}
-                      className={`flex-1 py-1 rounded text-xs font-medium transition ${
+                      className={`flex-1 cursor-pointer py-1 rounded text-xs font-medium transition ${
                         letterFilter === letter
                           ? "bg-(--color-flagblue) text-white"
                           : "bg-gray-100 text-gray-600 hover:bg-gray-200"

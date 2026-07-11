@@ -1940,21 +1940,42 @@ export default function AdminDashboard() {
 
         <main className="flex flex-col gap-6">
           <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
-            <div className="mb-6 flex items-center justify-between gap-4">
-              <h2 className="text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
-                {selectedArtistId ? t("admin.forms.editArtistProfile") : t("admin.forms.createNewArtist")}
-              </h2>
+            <div className="sticky top-2 z-30 -mx-5 -mt-5 mb-6 border-b border-gray-100 bg-white/95 px-5 py-4 shadow-sm backdrop-blur sm:top-4">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+                <div className="min-w-0">
+                  <h2 className="text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
+                    {selectedArtistId ? t("admin.forms.editArtistProfile") : t("admin.forms.createNewArtist")}
+                  </h2>
+                  <p className="mt-1 truncate text-lg font-semibold text-(--color-flagblue)">
+                    {form.name || t("admin.forms.createNewArtist")}
+                  </p>
+                </div>
 
-              <button
-                type="button"
-                onClick={resetForm}
-                className="rounded-lg border border-(--color-wikicrimson)/25 bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-(--color-wikicrimson) shadow-sm transition hover:border-(--color-wikicrimson) hover:bg-(--color-wikicrimson) hover:text-white"
-              >
-                {t("admin.buttons.newArtist")}
-              </button>
+                <div className="flex flex-wrap gap-2 sm:shrink-0 sm:justify-end">
+                  <button
+                    type="button"
+                    onClick={resetForm}
+                    className="rounded-lg border border-(--color-wikicrimson)/25 bg-white px-3 py-2 text-xs font-medium uppercase tracking-[0.14em] text-(--color-wikicrimson) shadow-sm transition hover:border-(--color-wikicrimson) hover:bg-(--color-wikicrimson) hover:text-white sm:px-4"
+                  >
+                    {t("admin.buttons.newArtist")}
+                  </button>
+                  <button
+                    type="submit"
+                    form="artist-profile-form"
+                    disabled={Boolean(loading)}
+                    className="flex-1 rounded-lg bg-(--color-flagblue) px-4 py-2 text-xs font-medium uppercase tracking-[0.14em] text-white shadow-sm transition hover:bg-(--color-flagblue)/90 disabled:cursor-not-allowed disabled:opacity-40 sm:flex-none"
+                  >
+                    {loading
+                      ? t("admin.buttons.processing")
+                      : selectedArtistId
+                        ? t("admin.buttons.updateArtistProfile")
+                        : t("admin.buttons.createArtist")}
+                  </button>
+                </div>
+              </div>
             </div>
 
-            <form onSubmit={handleSaveArtist} className="space-y-6">
+            <form id="artist-profile-form" onSubmit={handleSaveArtist} className="space-y-6">
               <div className="grid gap-4 md:grid-cols-2">
                 <Field label={t("admin.labels.artistName")}>
                   <input
