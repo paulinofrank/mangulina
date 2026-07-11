@@ -1,7 +1,10 @@
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
+import { Sparkles } from "lucide-react";
 import JsonLd from "@/components/seo/JsonLd";
 
+import { getArchiveDecades } from "@/lib/archivePeriods";
+import { getArchiveCounts } from "@/lib/getSongsByYear";
 import { getPublishedProvinces } from "@/lib/provinces";
 import { createPageMetadata, type SeoLocale } from "@/lib/seo";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
@@ -71,7 +74,13 @@ function LinkGrid({ links, label }: { links: DirectoryLink[]; label: (key: strin
 
 export default async function DiscoverPage() {
   const t = await getTranslations("pages.discover");
-  const provinces = await getPublishedProvinces();
+  const [provinces, archiveCounts] = await Promise.all([
+    getPublishedProvinces(),
+    getArchiveCounts(),
+  ]);
+  const decades = getArchiveDecades().filter(
+    (decade) => (archiveCounts.decadeCounts[decade] ?? 0) > 0,
+  );
 
   return (
     <main className="mx-auto max-w-5xl px-6 pb-10 pt-20 sm:pb-16 sm:pt-32">
@@ -88,14 +97,34 @@ export default async function DiscoverPage() {
           ]),
         ]}
       />
-      <header className="mb-10 rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-12">
-        <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
-        <h1 className="mb-5 text-4xl font-bold tracking-tight text-[#002D62] sm:text-5xl">
-          {t("title")}
-        </h1>
-        <p className="max-w-4xl text-lg leading-relaxed text-gray-700 sm:text-xl">
-          {t("description")}
-        </p>
+      <header className="relative mb-10 overflow-hidden rounded-3xl border border-amber-300/60 bg-gradient-to-br from-amber-50 via-white to-orange-50 p-7 shadow-sm sm:p-10 lg:p-12 dark:border-amber-400/20 dark:from-amber-950/40 dark:via-gray-950 dark:to-orange-950/30">
+        <Sparkles
+          aria-hidden="true"
+          className="absolute right-7 top-7 size-9 text-amber-500/25 sm:right-10 sm:top-10 sm:size-12 dark:text-amber-300/20"
+          strokeWidth={1.5}
+        />
+        <div className="relative max-w-4xl">
+          <span className="inline-flex rounded-full border border-amber-500/30 bg-amber-400/15 px-3 py-1 text-xs font-bold tracking-widest text-amber-900 dark:border-amber-300/25 dark:bg-amber-300/10 dark:text-amber-200">
+            {t("betaHero.badge")}
+          </span>
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-[#002D62] sm:text-5xl lg:text-6xl dark:text-white">
+            {t("betaHero.title")}
+          </h1>
+          <p className="mt-3 text-xl font-semibold text-[#8B0000] sm:text-2xl dark:text-amber-300">
+            {t("betaHero.subtitle")}
+          </p>
+          <div className="mt-8 space-y-5 text-base leading-relaxed text-gray-700 sm:text-lg dark:text-gray-200">
+            <p>{t("betaHero.paragraphOne")}</p>
+            <p>{t("betaHero.paragraphTwo")}</p>
+            <p className="font-medium text-[#002D62] dark:text-amber-50">
+              {t("betaHero.paragraphThree")}
+            </p>
+            <p className="rounded-2xl border border-amber-400/30 bg-white/70 px-5 py-4 font-medium text-amber-950 dark:border-amber-300/15 dark:bg-white/5 dark:text-amber-100">
+              {t("betaHero.invitation")}
+            </p>
+            <p>{t("betaHero.thanks")}</p>
+          </div>
+        </div>
       </header>
 
       <div className="grid gap-6 md:grid-cols-2">
@@ -166,6 +195,45 @@ export default async function DiscoverPage() {
             ))}
           </div>
         </section>
+      )}
+
+      {decades.length > 0 && (
+        <nav
+          aria-labelledby="discover-decades-title"
+          className="mt-6 rounded-3xl border border-black/10 bg-white p-7 shadow-sm sm:p-10 dark:border-white/10 dark:bg-gray-950"
+        >
+          <h2
+            id="discover-decades-title"
+            className="mb-4 text-sm font-semibold uppercase tracking-widest text-[#8B0000] dark:text-amber-300"
+          >
+            {t("decadesTitle")}
+          </h2>
+          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            {decades.map((decade) => {
+              const count = archiveCounts.decadeCounts[decade];
+
+              return (
+                <li key={decade}>
+                  <Link
+                    href={`/archive/${decade}`}
+                    prefetch={false}
+                    aria-label={t("decadeLinkAria", {
+                      decade,
+                      decadeYear: decade.slice(0, -1),
+                      count,
+                    })}
+                    className="flex min-h-14 w-full items-center justify-between gap-3 rounded-2xl border border-[#002D62]/10 bg-[#FAF9F6] px-4 py-4 text-[#002D62] transition hover:border-[#002D62]/30 hover:bg-[#002D62]/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B0000] focus-visible:ring-offset-2 dark:border-white/10 dark:bg-white/5 dark:text-gray-100 dark:hover:border-amber-300/30 dark:hover:bg-white/10 dark:focus-visible:ring-amber-300 dark:focus-visible:ring-offset-gray-950"
+                  >
+                    <span className="min-w-0 truncate font-medium">{decade}</span>
+                    <span className="shrink-0 text-xs text-gray-500 dark:text-gray-400" aria-hidden="true">
+                      {count.toLocaleString()}
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       )}
     </main>
   );
