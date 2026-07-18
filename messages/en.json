@@ -32,6 +32,14 @@
   "search": {
     "placeholder": "Search artists, songs...",
     "label": "Site search",
+    "worksCredits": {
+      "eyebrow": "Mangulina Admin", "title": "Works & Credits", "description": "Manage composition, songwriting, arrangement, lyric, and other creator credits for every artist.",
+      "addWork": "Add Work", "editWork": "Edit Work", "artist": "Artist", "searchArtist": "Search any artist...", "search": "Search", "searchPlaceholder": "Title, performer, or release", "role": "Role", "allRoles": "All roles", "year": "Year", "clearFilters": "Clear filters", "performerMode": "Performer type", "mangulinaArtist": "Mangulina artist", "externalPerformer": "External performer", "externalPerformerName": "External performer name", "creditedAs": "Credited as", "searchPerformer": "Search performer...", "performerFilter": "Linked performer", "performerStatus": "Performer status", "allPerformers": "All performers", "linkedPerformers": "Linked Mangulina artists", "externalPerformers": "External performers", "differentPerformerName": "Linked name differs from credit", "linkedArtist": "Linked artist", "confirmExternalMode": "Switching to an external performer will remove the artist relationship but preserve the credited name. Continue?", "confirmCreditedAs": "Replace the current credited name with {name}? Choose Cancel to preserve the custom credit.",
+      "totalWorks": "Total works", "creditsOnPage": "Credits on page", "rolesRepresented": "Roles represented", "work": "Work title", "performer": "Performer", "release": "Release", "creditedArtists": "Credited artists", "rolesHeader": "Roles", "roles": { "composer": "Composer", "lyricist": "Lyricist", "writer": "Writer", "songwriter": "Songwriter", "orchestrator": "Orchestrator", "arranger": "Arranger", "co-composer": "Co-composer", "co-writer": "Co-writer" },
+      "updated": "Updated", "actions": "Actions", "edit": "Edit", "removeCredit": "Remove artist credit", "loading": "Loading works...", "emptyArtist": "No Works & Credits have been added for this artist.", "emptyAll": "No works match the current filters.", "pageOf": "Page {page} of {pages} · {total} works", "previous": "Previous", "next": "Next", "workTitle": "Work title", "credits": "Artist credits", "addCredit": "Add credit", "save": "Save work", "saving": "Saving...", "saved": "Work and credits saved.", "removed": "Artist credit removed; the shared work was preserved.", "deleted": "Entire work deleted.",
+      "duplicateWarning": "A possible matching work already exists. Create a separate work anyway?", "confirmRemove": "Remove {artist}'s credits from “{work}”? The shared work will not be deleted.", "confirmDelete": "This shared work has {credits} credit records. To delete the entire work, type its exact title: {title}",
+      "errors": { "titleRequired": "Work title is required.", "yearInvalid": "Enter a valid release year.", "creditRequired": "At least one artist credit is required.", "performerRequired": "A performer credit name is required.", "performerArtistRequired": "Select a Mangulina performer.", "performerArtistInvalid": "The selected performer no longer exists.", "duplicateCredit": "That artist already has that exact role on this work.", "possibleDuplicate": "A possible duplicate was found." }
+    },
     "ui": {
       "placeholder": "Search artists, songs, and albums.",
       "noQuery": "Type something in the search box to begin.",
@@ -222,7 +230,12 @@
     "works": "Works",
     "role": "Role",
     "performer": "Performer",
+    "performedBy": "Performed by",
     "release": "Release",
+    "worksCreditsRelease": "Release",
+    "workRoles": {
+      "composer": "Composer", "songwriter": "Songwriter", "lyricist": "Lyricist", "writer": "Writer", "producer": "Producer", "co_producer": "Co-producer", "executive_producer": "Executive producer", "arranger": "Arranger", "orchestrator": "Orchestrator", "conductor": "Conductor", "musician": "Musician", "session_musician": "Session musician", "instrumentalist": "Instrumentalist", "engineer": "Engineer", "recording_engineer": "Recording engineer", "mixing_engineer": "Mixing engineer", "mix_engineer": "Mix engineer", "mixing": "Mixing", "mastering_engineer": "Mastering engineer", "mastering": "Mastering", "beat_programmer": "Beat programmer", "remixer": "Remixer"
+    },
     "biography": "Biography",
     "noBiography": "No biography available for this artist.",
     "technicalSheet": "Technical Sheet",
@@ -259,6 +272,12 @@
     "playAria": "Play {title}",
     "closeVideo": "Close video",
     "tracksCount": "{count, plural, one {# track} other {# tracks}}",
+    "editionsCount": "{count, plural, one {# edition} other {# editions}}",
+    "otherEditions": "Other editions",
+    "representativeEdition": "Representative edition",
+    "worldwide": "Worldwide",
+    "unknownCountry": "Unknown country",
+    "unknownYear": "Unknown year",
     "releaseGroups": {
       "Album": "Albums",
       "EP": "EPs",
@@ -779,7 +798,7 @@
     "genreDetail": {
       "learnMoreHistory": "Learn more about {genre} history...",
       "topArtists": "Most Viewed {genre} Artists",
-      "connectedArtists": "Artists Connected to {genre}",
+      "connectedArtists": "Most Viewed Artists of {genre}",
       "popularSongs": "Most Viewed Songs",
       "importantReleases": "Important Albums / Releases",
       "releasesIn": "Releases in {genre}",
@@ -797,7 +816,16 @@
       "loadMoreError": "Unable to load more songs.",
       "noCover": "No cover",
       "releaseFallback": "Release",
-      "viewAria": "View {title}"
+      "viewAria": "View {title}",
+      "genreSelectorLabel": "Select genre",
+      "subgenreSelector": {
+        "label": "Subgenre",
+        "all": "All"
+      },
+      "publicMedia": {
+        "title": "Videos about {genre}",
+        "subtitle": "Interviews, documentaries, performances, and other selected videos."
+      }
     },
     "login": {
       "backToHomepage": "Back to Homepage"
@@ -998,6 +1026,42 @@
     "decadeCounts": "Decade counts are not available yet."
   },
   "admin": {
+    "recordingCredits": {
+      "title": "Credits",
+      "viewSong": "View public song page",
+      "add": "Add credit",
+      "edit": "Edit credit",
+      "loading": "Loading credits...",
+      "missingArtist": "Missing artist",
+      "order": "Order {order}",
+      "moveUp": "Move {artist} up",
+      "moveDown": "Move {artist} down",
+      "editFor": "Edit credit for {artist}",
+      "removeFor": "Remove credit for {artist}",
+      "empty": "No credits have been added to this recording.",
+      "cancel": "Cancel",
+      "artist": "Artist",
+      "searchArtist": "Search artists",
+      "role": "Role",
+      "creditedAs": "Credited as",
+      "creditedAsHelp": "Optional. Enter the name exactly as it appears in the original recording credits.",
+      "joinPhrase": "Join phrase after this artist",
+      "joinPhraseHelp": "Optional. Used when multiple artists share the same credit (for example: &, feat., with).",
+      "save": "Save credit",
+      "artistRequired": "Select an artist.",
+      "loadFailed": "Credits could not be loaded.",
+      "duplicateCredit": "That artist already has this role on the recording.",
+      "saveFailed": "The credit could not be saved.",
+      "updated": "Credit updated.",
+      "added": "Credit added.",
+      "removeConfirm": "Remove this credit? The artist and recording will not be deleted.",
+      "removed": "Credit removed.",
+      "removeFailed": "The credit could not be removed.",
+      "reorderFailed": "The new credit order could not be saved.",
+      "roles": {
+        "lead_performer": "Lead performer", "featured_performer": "Featured performer", "guest_performer": "Guest performer", "instrumentalist": "Instrumentalist", "vocalist": "Vocalist", "choir": "Choir", "orchestra": "Orchestra", "guitar": "Guitar", "drums": "Drums", "piano": "Piano", "bass": "Bass", "trumpet": "Trumpet", "saxophone": "Saxophone", "trombone": "Trombone", "strings": "Strings", "horns": "Horns", "percussion": "Percussion", "conductor": "Conductor", "producer": "Producer", "engineer": "Engineer", "recording_engineer": "Recording engineer", "mixing_engineer": "Mixing engineer", "mixing": "Mixing", "mastering_engineer": "Mastering engineer", "mastering": "Mastering", "session_musician": "Session musician", "arranger": "Arranger", "composer": "Composer"
+      }
+    },
     "tools": {
       "analytics": {
         "title": "Analytics",
@@ -1298,6 +1362,11 @@
       "listHeading": "Genres",
       "searchPlaceholder": "Search genres...",
       "noGenres": "No genres found.",
+      "selectGenreLabel": "Genre",
+      "selectGenreOption": "— Select Genre —",
+      "selectSubgenreLabel": "Subgenre",
+      "selectSubgenreOption": "— Select Subgenre —",
+      "selectSubgenreToEdit": "Select a subgenre above to edit it.",
       "homeFeatured": "Home",
       "displayOrder": "Order: {order}",
       "editHeading": "Edit Genre",
@@ -1307,7 +1376,34 @@
       "selectGenreFirst": "Select or save a genre before managing subgenres.",
       "noSubgenres": "No subgenres yet.",
       "addSubgenreHeading": "Add New Subgenre",
-      "subgenreNameRequired": "Subgenre name is required."
+      "subgenreNameRequired": "Subgenre name is required.",
+      "historyHeading": "Genre History",
+      "selectGenreForHistory": "Select or save a genre before editing its history.",
+      "historyEnglish": "History — English",
+      "historySpanish": "History — Spanish",
+      "historyPreview": "Preview",
+      "saveHistory": "Save History",
+      "media": {
+        "heading": "Videos for {genre}",
+        "title": "Video title",
+        "url": "Video URL",
+        "videoId": "YouTube video ID",
+        "order": "Display order",
+        "notes": "Notes",
+        "official": "Official",
+        "featured": "Featured",
+        "loadMetadata": "Load YouTube Metadata",
+        "metadataLoaded": "YouTube metadata loaded.",
+        "youtubeRequired": "Enter a YouTube URL or video ID first.",
+        "required": "Title and URL are required.",
+        "saved": "Genre video saved.",
+        "edit": "Edit",
+        "delete": "Delete",
+        "deleteConfirm": "Delete {title}?",
+        "add": "Add Video",
+        "update": "Update Video",
+        "cancel": "Cancel"
+      }
     },
     "discography": {
       "title": "Discography Manager",

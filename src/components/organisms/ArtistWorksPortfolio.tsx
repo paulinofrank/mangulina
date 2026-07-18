@@ -1,172 +1,126 @@
-import { getArtistWorksPortfolio, getArtistWorksPortfolioRoleSummary } from "@/lib/getArtistWorksPortfolio";
+import { Fragment } from "react";
+import { getArtistWorksPortfolio, summarizePortfolioRoles, type PortfolioWork } from "@/lib/getArtistWorksPortfolio";
 import { formatRoleName } from "@/lib/roleNameFormatter";
+import { normalizeArtistWorkCreditRole } from "@/lib/artistWorkCreditRoles";
+import { Link } from "@/i18n/navigation";
 
-function getRoleTranslation(role: string, locale: string): string {
-  if (locale === "es") {
-    const roleMap: { [key: string]: string } = {
-      producer: "Productor",
-      composer: "Compositor",
-      arranger: "Arreglista",
-      "co-producer": "Co-productor",
-      "executive producer": "Productor Ejecutivo",
-      "mastering engineer": "Ingeniero de Masterización",
-      "mix engineer": "Ingeniero de Mezcla",
-      "beat programmer": "Creador de Ritmos",
-      remixer: "Remezclador",
-      lyricist: "Letrista",
-      performer: "Intérprete",
-    };
-    return roleMap[role.toLowerCase()] || formatRoleName(role);
-  }
-  return formatRoleName(role);
+type Translator = Awaited<ReturnType<typeof import("next-intl/server").getTranslations>>;
+
+function roleLabel(role: string, t: Translator) {
+  const normalized = normalizeArtistWorkCreditRole(role);
+  const key = `workRoles.${normalized}` as const;
+  return t.has(key) ? t(key) : formatRoleName(role);
 }
 
-interface YearGroup {
-  year: number | null;
-  works: Array<{
-    id: string;
-    title: string;
-    performer_text: string | null;
-    release_title: string | null;
-    release_year: number | null;
-    roles: string[];
-  }>;
-}
-
-interface ProcessedData {
-  yearGroups: YearGroup[];
-  totalWorks: number;
-  roleStats: Array<{ role: string; count: number }>;
-}
-
-async function processPortfolioData(artistId: string): Promise<ProcessedData> {
-  const [works, roleSummary] = await Promise.all([
-    getArtistWorksPortfolio(artistId),
-    getArtistWorksPortfolioRoleSummary(artistId),
-  ]);
-
-  if (works.length === 0) {
-    return {
-      yearGroups: [],
-      totalWorks: 0,
-      roleStats: [],
-    };
-  }
-
-  // Group by year
-  const yearMap = new Map<number | null, YearGroup["works"]>();
-  for (const work of works) {
-    const year = work.release_year ?? null;
-    if (!yearMap.has(year)) {
-      yearMap.set(year, []);
-    }
-    yearMap.get(year)!.push(work);
-  }
-
-  // Sort years descending (null at end)
-  const yearGroups: YearGroup[] = Array.from(yearMap.entries())
-    .sort(([yearA], [yearB]) => {
-      if (yearA === null && yearB === null) return 0;
-      if (yearA === null) return 1;
-      if (yearB === null) return -1;
-      return yearB - yearA;
-    })
-    .map(([year, groupWorks]) => ({
-      year,
-      works: groupWorks,
-    }));
-
-  return {
-    yearGroups,
-    totalWorks: works.length,
-    roleStats: roleSummary,
-  };
+function PerformerList({ work }: { work: PortfolioWork }) {
+  return (
+    <>
+      {work.performers.map((performer, index) => {
+        const name = performer.creditedAs?.trim() || performer.artistName?.trim();
+        if (!name) return null;
+        return (
+          <Fragment key={`${performer.artistId ?? name}-${index}`}>
+            {performer.artistSlug ? (
+              <Link
+                href={`/artists/${performer.artistSlug}`}
+                prefetch={false}
+                className="font-medium text-(--color-flagblue) underline-offset-2 transition-colors hover:text-(--color-wikicrimson) hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-flagblue)"
+              >
+                {name}
+              </Link>
+            ) : <span>{name}</span>}
+            {performer.joinPhrase ? ` ${performer.joinPhrase} ` : index < work.performers.length - 1 ? ", " : ""}
+          </Fragment>
+        );
+      })}
+    </>
+  );
 }
 
 export default async function ArtistWorksPortfolio({ artistId }: { artistId: string }) {
-  const { getTranslations, getLocale } = await import("next-intl/server");
+  const { getTranslations } = await import("next-intl/server");
   const t = await getTranslations("artist");
-  const locale = await getLocale();
+  const works = await getArtistWorksPortfolio(artistId);
+  if (!works.length) return null;
 
-  const data = await processPortfolioData(artistId);
-
-  if (data.totalWorks === 0) {
-    return null;
+  const roleStats = summarizePortfolioRoles(works);
+  const yearGroups = new Map<number | null, PortfolioWork[]>();
+  for (const work of works) {
+    yearGroups.set(work.releaseYear, [...(yearGroups.get(work.releaseYear) ?? []), work]);
   }
 
-  const { yearGroups, totalWorks, roleStats } = data;
-
   return (
-    <section className="min-w-0 bg-white p-5 rounded-xl border border-gray-100 shadow-sm sm:p-6">
-      {/* Header */}
+    <section className="min-w-0 rounded-xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6">
       <div className="mb-6">
-        <h3 className="text-xs font-normal text-(--color-wikicrimson) uppercase mb-4 text-center">
-          {t("worksAndCredits") || "Works & Credits"}
-        </h3>
-
-        {/* Portfolio Summary - Centered with Cloud Style */}
-        <div className="text-center pb-6 border-b border-gray-200">
-          <div className="flex justify-center items-baseline gap-2 mb-4">
-            <p className="text-xl font-black text-(--color-flagblue)">
-              {totalWorks}
-            </p>
-            <p className="text-xl text-gray-500 uppercase tracking-wide font-medium">
-              {totalWorks === 1 ? t("work") : t("works")}
-            </p>
+        <h3 className="mb-4 text-center text-xs font-normal uppercase text-(--color-wikicrimson)">{t("worksAndCredits")}</h3>
+        <div className="border-b border-gray-200 pb-6 text-center">
+          <div className="mb-4 flex items-baseline justify-center gap-2">
+            <p className="text-xl font-black text-(--color-flagblue)">{works.length}</p>
+            <p className="text-xl font-medium uppercase tracking-wide text-gray-500">{works.length === 1 ? t("work") : t("works")}</p>
           </div>
-
-          {/* Role Summary Cloud - Centered with vertical dots */}
-          {roleStats.length > 0 && (
-            <div className="flex flex-wrap justify-center gap-1 items-center">
-              {roleStats.map((stat, idx) => (
-                <div key={stat.role} className="flex items-center gap-1">
-                  <span className="text-xs font-medium text-(--color-flagblue)">
-                    {getRoleTranslation(stat.role, locale)}
-                  </span>
-                  <span className="text-xs text-gray-400">
-                    ({stat.count})
-                  </span>
-                  {idx < roleStats.length - 1 && (
-                    <span className="text-xs text-gray-300 mx-1">•</span>
-                  )}
-                </div>
-              ))}
-            </div>
-          )}
+          <div className="flex flex-wrap items-center justify-center gap-1">
+            {roleStats.map((stat, index) => (
+              <div key={stat.role} className="flex items-center gap-1">
+                <span className="text-xs font-medium text-(--color-flagblue)">{roleLabel(stat.role, t)}</span>
+                <span className="text-xs text-gray-400">({stat.count})</span>
+                {index < roleStats.length - 1 && <span className="mx-1 text-xs text-gray-300">•</span>}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* Works List */}
       <div className="space-y-2">
-        {yearGroups.flatMap((yearGroup) =>
-          yearGroup.works.map((work) => (
-            <div
-              key={work.id}
-              className="pb-2 border-b border-gray-100 last:border-b-0"
-            >
-              {/* Year • Title */}
-              <h5 className="text-sm font-semibold text-(--color-flagblue) mb-1">
-                {work.release_year ?? "Year Unknown"} • {work.title}
+        {[...yearGroups].flatMap(([, groupWorks]) => groupWorks.map((work) => (
+          <article key={work.id} className="grid grid-cols-1 gap-x-6 gap-y-1 border-b border-gray-100 pb-2 last:border-b-0 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
+            <div className="min-w-0">
+              <h5 className="mb-1 text-sm font-semibold text-(--color-flagblue)">
+                {work.recordingSlug ? (
+                  <Link
+                    href={`/songs/${work.recordingSlug}`}
+                    prefetch={false}
+                    className="underline-offset-2 hover:text-(--color-wikicrimson) hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-flagblue)"
+                  >
+                    {work.title}
+                  </Link>
+                ) : work.title}
               </h5>
 
-              {/* Metadata: Performer */}
-              {work.performer_text && (
-                <div className="text-sm text-gray-500 mb-1">
-                  <span className="text-gray-400">{t("performer")}: </span>
-                  <span>{work.performer_text}</span>
+              {work.performers.length > 0 && (
+                <div className="mb-1 text-sm text-gray-500">
+                  <span className="text-gray-400">{t("performedBy")}: </span>
+                  <PerformerList work={work} />
+                </div>
+              )}
+            </div>
+
+            <div className="min-w-0">
+              {(work.releaseTitle || work.releaseYear) && (
+                <div className="mb-1 text-sm text-gray-500">
+                  <span className="text-gray-400">{t("worksCreditsRelease")}: </span>
+                  {work.releaseTitle && work.releaseSlug ? (
+                    <Link
+                      href={`/releases/${work.releaseSlug}`}
+                      prefetch={false}
+                      className="font-medium text-(--color-flagblue) underline-offset-2 hover:text-(--color-wikicrimson) hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-flagblue)"
+                    >
+                      {work.releaseTitle}
+                    </Link>
+                  ) : work.releaseTitle}
+                  {work.releaseTitle && work.releaseYear ? " • " : ""}
+                  {work.releaseYear}
                 </div>
               )}
 
-              {/* Roles */}
-              <div className="text-sm text-gray-600">
-                <span className="text-gray-400">{t("role")}: </span>
-                <span className="font-medium">
-                  {work.roles.map((role) => getRoleTranslation(role, locale)).join(", ")}
-                </span>
-              </div>
+              {work.roles.length > 0 && (
+                <div className="text-sm text-gray-600">
+                  <span className="text-gray-400">{t("role")}: </span>
+                  <span className="font-medium">{work.roles.map((role) => roleLabel(role, t)).join(" • ")}</span>
+                </div>
+              )}
             </div>
-          ))
-        )}
+          </article>
+        )))}
       </div>
     </section>
   );

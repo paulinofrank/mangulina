@@ -27,6 +27,8 @@ export type ArtistInterview = {
 
 type ArtistInterviewsCarouselProps = {
   interviews: ArtistInterview[];
+  title?: string;
+  subtitle?: string;
 };
 
 function getYouTubeThumbnail(videoId: string | undefined) {
@@ -62,6 +64,8 @@ function formatDate(value: string) {
 
 export default function ArtistInterviewsCarousel({
   interviews,
+  title,
+  subtitle,
 }: ArtistInterviewsCarouselProps) {
   const t = useTranslations();
   const tc = useTranslations("components");
@@ -91,10 +95,10 @@ export default function ArtistInterviewsCarousel({
 
         <div className="mb-4">
           <h3 className="text-xs font-normal uppercase text-(--color-wikicrimson)">
-            {t("artist.videoInterviews")}
+            {title ?? t("artist.videoInterviews")}
           </h3>
           <p className="mt-2 text-xs text-gray-400">
-            {t("artist.interviewsSubtitle")}
+            {subtitle ?? t("artist.interviewsSubtitle")}
           </p>
         </div>
 

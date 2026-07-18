@@ -5,12 +5,13 @@ import { getSongsBySubgenre } from "@/lib/getSongsBySubgenre";
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const genreId = Number(searchParams.get("genreId"));
-  const subgenreId = Number(searchParams.get("subgenreId"));
+  const subgenreValue = searchParams.get("subgenreId");
+  const subgenreId = subgenreValue ? Number(subgenreValue) : null;
   const limit = Number(searchParams.get("limit") ?? 25);
   const offset = Number(searchParams.get("offset") ?? 0);
   const sort = searchParams.get("sort") === "title" ? "title" : "views";
 
-  if (!Number.isInteger(genreId) || !Number.isInteger(subgenreId)) {
+  if (!Number.isInteger(genreId) || (subgenreId !== null && !Number.isInteger(subgenreId))) {
     return NextResponse.json(
       { ok: false, error: "Valid genre and subgenre IDs are required.", songs: [] },
       { status: 400 },

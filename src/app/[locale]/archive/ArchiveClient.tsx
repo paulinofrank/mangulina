@@ -120,7 +120,7 @@ function getRangeLabel({
   });
 }
 
-function ArchivePagination({
+export function ArchivePagination({
   currentPage,
   totalPages,
   onPageChange,
@@ -482,7 +482,7 @@ export default function ArchiveClient({
               onPageChange={updatePage}
               t={t}
             />
-            <SongsByYearList songs={sortedSongs} />
+            <SongsByYearList songs={sortedSongs} compact />
             <ArchivePagination
               currentPage={currentPage}
               totalPages={totalPages}

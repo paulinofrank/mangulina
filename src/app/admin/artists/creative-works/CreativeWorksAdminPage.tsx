@@ -1,398 +1,56 @@
 "use client";
 
-import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Plus, Search, Trash2, X } from "lucide-react";
+import { AdminField, AdminSearchPicker, adminButtonClass, adminInputClass } from "@/components/admin/CatalogAdminControls";
 
-import {
-  AdminField,
-  AdminSearchPicker,
-  AdminStatusMessage,
-  adminButtonClass,
-  adminInputClass,
-  type PickerOption,
-} from "@/components/admin/CatalogAdminControls";
-
-type AdminArtist = {
-  id: string;
-  name: string;
-};
-
-type CreativeWork = {
-  id: string;
-  title: string;
-  performer_text: string | null;
-  release_title: string | null;
-  release_year: number | null;
-  roles: string[];
-};
-
-type CreativeWorkForm = {
-  title: string;
-  performer_text: string;
-  release_title: string;
-  release_year: string;
-  roles: string;
-};
-
-const emptyForm: CreativeWorkForm = {
-  title: "",
-  performer_text: "",
-  release_title: "",
-  release_year: "",
-  roles: "",
-};
-
-function formFromWork(work: CreativeWork): CreativeWorkForm {
-  return {
-    title: work.title ?? "",
-    performer_text: work.performer_text ?? "",
-    release_title: work.release_title ?? "",
-    release_year: work.release_year ? String(work.release_year) : "",
-    roles: work.roles.join(", "),
-  };
-}
-
-function displayYear(year: number | null) {
-  return year == null ? "Unknown" : String(year);
-}
+type Artist = { id: string; name: string };
+type Credit = { id: string; artist_id: string; role: string; artists: { id: string; name: string } | null };
+type Work = { id: string; title: string; performer_artist_id: string | null; performer_text: string; performer_artist: { id: string; name: string; slug: string | null } | null; release_title: string | null; release_year: number | null; updated_at: string | null; credits: Credit[] };
+type DraftCredit = { artistId: string; artistName: string; role: string };
+type PerformerMode = "linked" | "external";
+const roles = ["composer", "lyricist", "writer", "songwriter", "orchestrator", "arranger", "co-composer", "co-writer"];
+const blank = { title: "", performer_artist_id: "", performer_text: "", release_title: "", release_year: "" };
 
 export default function CreativeWorksAdminPage({ initialArtistId = "" }: { initialArtistId?: string }) {
-  const router = useRouter();
-  const [selectedArtist, setSelectedArtist] = useState<AdminArtist | null>(null);
-  const [works, setWorks] = useState<CreativeWork[]>([]);
-  const [selectedWorkId, setSelectedWorkId] = useState("");
-  const [form, setForm] = useState<CreativeWorkForm>(emptyForm);
-  const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState("");
+  const t = useTranslations("search.worksCredits");
+  const adminT = useTranslations("admin.ui");
+  const router = useRouter(); const searchParams = useSearchParams();
+  const [artist, setArtist] = useState<Artist | null>(null); const [performerFilter, setPerformerFilter] = useState<Artist | null>(null);
+  const [works, setWorks] = useState<Work[]>([]); const [summary, setSummary] = useState({ totalWorks: 0, pageCredits: 0, roles: 0 }); const [pagination, setPagination] = useState({ page: 1, pages: 1, total: 0 });
+  const [loading, setLoading] = useState(false); const [message, setMessage] = useState(""); const [open, setOpen] = useState(false); const [editing, setEditing] = useState<Work | null>(null);
+  const [form, setForm] = useState(blank); const [performerMode, setPerformerMode] = useState<PerformerMode>("linked"); const [performerArtist, setPerformerArtist] = useState<Artist | null>(null);
+  const [credits, setCredits] = useState<DraftCredit[]>([]); const [creditArtist, setCreditArtist] = useState<Artist | null>(null); const [creditRole, setCreditRole] = useState(roles[0]);
+  const artistId = artist?.id ?? searchParams.get("artist") ?? initialArtistId; const search = searchParams.get("search") ?? ""; const role = searchParams.get("role") ?? ""; const year = searchParams.get("year") ?? ""; const performerStatus = searchParams.get("performerStatus") ?? ""; const performerArtistId = performerFilter?.id ?? searchParams.get("performerArtist") ?? ""; const page = Number(searchParams.get("page") ?? "1");
+  const roleLabel = (value: string) => t.has(`roles.${value.toLowerCase()}`) ? t(`roles.${value.toLowerCase()}`) : value.replace(/[-_]+/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
+  const setParams = useCallback((changes: Record<string, string>) => { const params = new URLSearchParams(searchParams.toString()); Object.entries(changes).forEach(([key, value]) => value ? params.set(key, value) : params.delete(key)); router.replace(`/admin/works-credits${params.size ? `?${params}` : ""}`); }, [router, searchParams]);
+  const load = useCallback(async () => { setLoading(true); const params = new URLSearchParams({ page: String(page), pageSize: "25" }); if (artistId) params.set("artist", artistId); if (search) params.set("search", search); if (role) params.set("role", role); if (year) params.set("year", year); if (performerStatus) params.set("performerStatus", performerStatus); if (performerArtistId) params.set("performerArtist", performerArtistId); const response = await fetch(`/api/admin/creative-works?${params}`); const result = await response.json(); setLoading(false); if (!response.ok) return setMessage(result.error); setWorks(result.works); setSummary(result.summary); setPagination(result.pagination); }, [artistId, page, performerArtistId, performerStatus, role, search, year]);
+  // eslint-disable-next-line react-hooks/set-state-in-effect
+  useEffect(() => { void load(); }, [load]);
+  useEffect(() => { if (!artistId || artist) return; void fetch(`/api/admin/artists?id=${artistId}`).then((r) => r.json()).then((r) => r.artists?.[0] && setArtist(r.artists[0])); }, [artist, artistId]);
 
-  const selectedWork = works.find((work) => work.id === selectedWorkId) ?? null;
-
-  const loadWorks = useCallback(async (artistId: string) => {
-    const response = await fetch(`/api/admin/creative-works?artistId=${encodeURIComponent(artistId)}`);
-    const result = await response.json();
-    if (!response.ok || !result.ok) {
-      setWorks([]);
-      setStatus(`Error loading creative works: ${result.error || response.statusText}`);
-      return;
-    }
-
-    setWorks((result.works ?? []) as CreativeWork[]);
-  }, []);
-
-  const loadArtist = useCallback(async (artistId: string) => {
-    const response = await fetch(`/api/admin/artists?id=${encodeURIComponent(artistId)}`);
-    const result = await response.json();
-    if (!response.ok || !result.ok || !result.artists?.[0]) {
-      setStatus(`Error loading artist: ${result.error || response.statusText}`);
-      return;
-    }
-
-    const artist = result.artists[0] as AdminArtist;
-    setSelectedArtist(artist);
-    setSelectedWorkId("");
-    setForm(emptyForm);
-    await loadWorks(artist.id);
-  }, [loadWorks]);
-
-  useEffect(() => {
-    if (initialArtistId) void loadArtist(initialArtistId);
-  }, [initialArtistId, loadArtist]);
-
-  function selectArtist(option: PickerOption) {
-    const artist = { id: option.id, name: option.name ?? "" };
-    setSelectedArtist(artist);
-    setSelectedWorkId("");
-    setForm(emptyForm);
-    setStatus("");
-    router.replace(`/admin/artists/${encodeURIComponent(option.id)}/creative-works`);
-    void loadWorks(option.id);
+  function begin(work?: Work) {
+    setEditing(work ?? null); const linked = Boolean(work?.performer_artist_id); setPerformerMode(work ? linked ? "linked" : "external" : "linked");
+    setPerformerArtist(work?.performer_artist ? { id: work.performer_artist.id, name: work.performer_artist.name } : null);
+    setForm(work ? { title: work.title, performer_artist_id: work.performer_artist_id ?? "", performer_text: work.performer_text ?? "", release_title: work.release_title ?? "", release_year: work.release_year?.toString() ?? "" } : blank);
+    setCredits(work ? work.credits.map((credit) => ({ artistId: credit.artist_id, artistName: credit.artists?.name ?? "", role: credit.role })) : artist ? [{ artistId: artist.id, artistName: artist.name, role: roles[0] }] : []); setOpen(true); setMessage("");
   }
+  function changeMode(mode: PerformerMode) { if (mode === performerMode) return; if (performerMode === "linked" && performerArtist && !window.confirm(t("confirmExternalMode"))) return; setPerformerMode(mode); if (mode === "external") { setPerformerArtist(null); setForm((current) => ({ ...current, performer_artist_id: "" })); } }
+  function selectPerformer(option: { id: string; name?: string | null }) { const selected = { id: option.id, name: option.name ?? "" }; const shouldReplace = !form.performer_text || form.performer_text === performerArtist?.name || window.confirm(t("confirmCreditedAs", { name: selected.name })); setPerformerArtist(selected); setForm((current) => ({ ...current, performer_artist_id: selected.id, performer_text: shouldReplace ? selected.name : current.performer_text })); }
+  function addCredit() { if (!creditArtist || credits.some((credit) => credit.artistId === creditArtist.id && credit.role === creditRole)) return setMessage(t("errors.duplicateCredit")); setCredits((current) => [...current, { artistId: creditArtist.id, artistName: creditArtist.name, role: creditRole }]); setCreditArtist(null); }
+  async function save(event: React.FormEvent) { event.preventDefault(); if (performerMode === "linked" && !performerArtist) return setMessage(t("errors.performerArtistRequired")); setLoading(true); const body = { workId: editing?.id, work: { ...form, performer_artist_id: performerMode === "linked" ? performerArtist?.id : null }, credits }; const response = await fetch("/api/admin/creative-works", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) }); const result = await response.json(); if (response.status === 409 && result.error === "possibleDuplicate" && window.confirm(t("duplicateWarning"))) { const retry = await fetch("/api/admin/creative-works", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...body, confirmCreate: true, workId: null }) }); if (retry.ok) { setOpen(false); setMessage(t("saved")); await load(); } setLoading(false); return; } setLoading(false); if (!response.ok) return setMessage(t.has(`errors.${result.error}`) ? t(`errors.${result.error}`) : result.error); setOpen(false); setMessage(t("saved")); await load(); }
+  async function removeArtistCredit(work: Work) { if (!artist || !window.confirm(t("confirmRemove", { artist: artist.name, work: work.title }))) return; const response = await fetch("/api/admin/creative-works", { method: "DELETE", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ workId: work.id, artistId: artist.id }) }); if (response.ok) { setMessage(t("removed")); await load(); } }
+  async function deleteWork(work: Work) { const value = window.prompt(t("confirmDelete", { title: work.title, credits: work.credits.length })); if (value !== work.title) return; const response = await fetch("/api/admin/creative-works", { method: "DELETE", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ workId: work.id, deleteEntireWork: true, title: work.title, confirmTitle: value }) }); if (response.ok) { setMessage(t("deleted")); await load(); } }
 
-  function clearArtist() {
-    setSelectedArtist(null);
-    setWorks([]);
-    setSelectedWorkId("");
-    setForm(emptyForm);
-    router.replace("/admin/artists/creative-works");
-    setStatus("Select an artist to manage Creative Works.");
-  }
-
-  function updateForm<K extends keyof CreativeWorkForm>(key: K, value: CreativeWorkForm[K]) {
-    setForm((current) => ({ ...current, [key]: value }));
-  }
-
-  function startNewWork() {
-    setSelectedWorkId("");
-    setForm(emptyForm);
-    setStatus(selectedArtist ? `Adding a new Creative Work for ${selectedArtist.name}.` : "Select an artist first.");
-  }
-
-  function editWork(work: CreativeWork) {
-    setSelectedWorkId(work.id);
-    setForm(formFromWork(work));
-    setStatus(`Editing ${work.title}.`);
-  }
-
-  async function saveWork(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    if (!selectedArtist) {
-      setStatus("Select an artist before saving.");
-      return;
-    }
-
-    setLoading(true);
-    setStatus("");
-
-    const response = await fetch("/api/admin/creative-works", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        artistId: selectedArtist.id,
-        workId: selectedWorkId || null,
-        workData: form,
-      }),
-    });
-    const result = await response.json();
-    setLoading(false);
-
-    if (!response.ok || !result.ok) {
-      setStatus(`Error saving creative work: ${result.error || response.statusText}`);
-      return;
-    }
-
-    setStatus(selectedWorkId ? "Creative Work updated." : "Creative Work saved.");
-    setSelectedWorkId("");
-    setForm(emptyForm);
-    await loadWorks(selectedArtist.id);
-  }
-
-  async function deleteCredit(work: CreativeWork) {
-    if (!selectedArtist) return;
-    const confirmed = window.confirm(`Remove ${selectedArtist.name}'s Creative Works credit for "${work.title}"?`);
-    if (!confirmed) return;
-
-    setLoading(true);
-    const response = await fetch("/api/admin/creative-works", {
-      method: "DELETE",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ artistId: selectedArtist.id, workId: work.id }),
-    });
-    const result = await response.json();
-    setLoading(false);
-
-    if (!response.ok || !result.ok) {
-      setStatus(`Error deleting credit: ${result.error || response.statusText}`);
-      return;
-    }
-
-    if (selectedWorkId === work.id) {
-      setSelectedWorkId("");
-      setForm(emptyForm);
-    }
-    setStatus("Artist credit removed.");
-    await loadWorks(selectedArtist.id);
-  }
-
-  return (
-    <main className="mx-auto max-w-6xl px-5 pb-10 pt-8 font-sans text-(--color-ink) sm:pt-10">
-      <header className="mb-8 rounded-xl border border-black/5 bg-white p-6 shadow-sm sm:p-8">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-          <div>
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-(--color-wikicrimson)">
-              Mangulina Admin
-            </p>
-            <h1 className="mt-3 text-3xl font-black uppercase tracking-tight text-(--color-flagblue) sm:text-4xl">
-              Creative Works
-            </h1>
-            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-gray-600 sm:text-base">
-              Maintain Works & Credits portfolios independently from Discography, recordings, and release artists.
-            </p>
-          </div>
-
-          <div className="flex flex-wrap gap-2">
-            <Link
-              href="/admin/artists"
-              className="inline-flex w-fit items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-normal uppercase tracking-[0.18em] text-(--color-flagblue) shadow-sm transition hover:border-(--color-wikicrimson) hover:text-(--color-wikicrimson)"
-            >
-              Artists
-            </Link>
-            <Link
-              href="/admin"
-              className="inline-flex w-fit items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-normal uppercase tracking-[0.18em] text-(--color-flagblue) shadow-sm transition hover:border-(--color-wikicrimson) hover:text-(--color-wikicrimson)"
-            >
-              Admin Portal
-            </Link>
-          </div>
-        </div>
-      </header>
-
-      <AdminStatusMessage message={status} />
-
-      <div className="grid gap-6 lg:grid-cols-[380px_minmax(0,1fr)]">
-        <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
-          <p className="text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
-            {selectedWork ? "Edit Work" : "Add Work"}
-          </p>
-          <h2 className="mt-1 text-xl font-semibold text-(--color-flagblue)">
-            {selectedWork?.title ?? "Creative Work Details"}
-          </h2>
-
-          <div className="mt-5">
-            <AdminSearchPicker
-              label="Artist"
-              value={selectedArtist?.id ?? ""}
-              displayValue={selectedArtist?.name ?? ""}
-              placeholder="Search artist..."
-              endpoint="/api/admin/artists"
-              resultKey="artists"
-              onSelect={selectArtist}
-              onClear={clearArtist}
-            />
-            {selectedArtist && (
-              <p className="mt-3 text-sm text-gray-500">
-                Managing Works & Credits for{" "}
-                <span className="font-medium text-(--color-flagblue)">{selectedArtist.name}</span>.
-              </p>
-            )}
-          </div>
-
-          <form className="mt-5 space-y-4" onSubmit={(event) => void saveWork(event)}>
-            <AdminField label="Title">
-              <input
-                value={form.title}
-                onChange={(event) => updateForm("title", event.target.value)}
-                className={adminInputClass}
-                placeholder="Gasolina"
-                required
-              />
-            </AdminField>
-
-            <AdminField label="Performer">
-              <input
-                value={form.performer_text}
-                onChange={(event) => updateForm("performer_text", event.target.value)}
-                className={adminInputClass}
-                placeholder="Daddy Yankee"
-              />
-            </AdminField>
-
-            <AdminField label="Release / Album">
-              <input
-                value={form.release_title}
-                onChange={(event) => updateForm("release_title", event.target.value)}
-                className={adminInputClass}
-                placeholder="Barrio Fino"
-              />
-            </AdminField>
-
-            <AdminField label="Year">
-              <input
-                value={form.release_year}
-                onChange={(event) => updateForm("release_year", event.target.value)}
-                className={adminInputClass}
-                inputMode="numeric"
-                placeholder="2004"
-              />
-            </AdminField>
-
-            <AdminField label="Roles">
-              <textarea
-                value={form.roles}
-                onChange={(event) => updateForm("roles", event.target.value)}
-                className={`${adminInputClass} min-h-24 resize-y`}
-                placeholder="Producer, Composer, Mix Engineer"
-                required
-              />
-            </AdminField>
-
-            <div className="flex flex-wrap gap-3 pt-2">
-              <button type="submit" className={adminButtonClass} disabled={!selectedArtist || loading}>
-                {loading ? "Saving..." : selectedWork ? "Update Creative Work" : "Add Creative Work"}
-              </button>
-              <button
-                type="button"
-                onClick={startNewWork}
-                className="rounded-lg border border-gray-200 bg-white px-5 py-3 text-xs uppercase tracking-[0.18em] text-(--color-flagblue) transition hover:border-(--color-wikicrimson) hover:text-(--color-wikicrimson)"
-              >
-                {selectedWork ? "Cancel Edit" : "Reset"}
-              </button>
-              {selectedWork && (
-                <button
-                  type="button"
-                  onClick={() => void deleteCredit(selectedWork)}
-                  className="rounded-lg border border-(--color-wikicrimson)/30 bg-white px-5 py-3 text-xs uppercase tracking-[0.18em] text-(--color-wikicrimson) transition hover:border-(--color-wikicrimson) hover:bg-(--color-wikicrimson) hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
-                  disabled={loading}
-                >
-                  Delete
-                </button>
-              )}
-            </div>
-          </form>
-        </section>
-
-        <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
-          <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
-                Artist Portfolio
-              </p>
-              <h2 className="mt-1 text-xl font-semibold text-(--color-flagblue)">
-                {works.length} Creative {works.length === 1 ? "Work" : "Works"}
-              </h2>
-            </div>
-            <button
-              type="button"
-              onClick={startNewWork}
-              className={adminButtonClass}
-              disabled={!selectedArtist || loading}
-            >
-              Add Work
-            </button>
-          </div>
-
-          <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-100 text-left text-sm">
-              <thead>
-                <tr className="text-[10px] uppercase tracking-[0.18em] text-gray-400">
-                  <th className="py-2 pr-4 font-normal">Year</th>
-                  <th className="py-2 pr-4 font-normal">Title</th>
-                  <th className="py-2 pr-4 font-normal">Performer</th>
-                  <th className="py-2 pr-4 font-normal">Roles</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                {works.map((work) => {
-                  const isSelected = selectedWorkId === work.id;
-                  return (
-                  <tr
-                    key={work.id}
-                    onClick={() => editWork(work)}
-                    className={`cursor-pointer transition hover:bg-(--color-flagblue)/5 ${
-                      isSelected ? "bg-(--color-flagblue)/10 ring-1 ring-inset ring-(--color-flagblue)/20" : ""
-                    }`}
-                    aria-selected={isSelected}
-                  >
-                    <td className="whitespace-nowrap py-3 pr-4 text-gray-500">{displayYear(work.release_year)}</td>
-                    <td className="min-w-40 py-3 pr-4 font-medium text-gray-800">{work.title}</td>
-                    <td className="min-w-36 py-3 pr-4 text-gray-600">{work.performer_text || "Unknown"}</td>
-                    <td className="min-w-48 py-3 pr-4 text-gray-600">{work.roles.join(", ")}</td>
-                  </tr>
-                  );
-                })}
-                {!works.length && (
-                  <tr>
-                    <td colSpan={4} className="py-8 text-center text-sm text-gray-400">
-                      {selectedArtist ? "No Creative Works found for this artist." : "Select an artist to load Creative Works."}
-                    </td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-      </div>
-    </main>
-  );
+  return <main className="mx-auto max-w-7xl px-5 pb-12 pt-8 text-gray-900">
+    <header className="rounded-xl border bg-white p-6 shadow-sm"><div className="flex flex-wrap items-end justify-between gap-4"><div><p className="text-xs uppercase tracking-[.22em] text-(--color-wikicrimson)">{t("eyebrow")}</p><h1 className="mt-3 text-3xl font-black uppercase text-(--color-flagblue)">{t("title")}</h1><p className="mt-3 max-w-3xl text-gray-600">{t("description")}</p></div><div className="flex flex-wrap gap-2"><Link href="/admin" className="rounded-lg border border-gray-200 bg-white px-5 py-3 text-xs uppercase tracking-[0.18em] text-(--color-flagblue) transition hover:border-(--color-wikicrimson) hover:text-(--color-wikicrimson)">{adminT("portal")}</Link><button className={adminButtonClass} onClick={() => begin()}><Plus className="mr-2 inline h-4 w-4"/>{t("addWork")}</button></div></div></header>
+    {message && <div className="mt-5 rounded-lg border bg-white p-3 text-sm">{message}</div>}
+    <section className="mt-6 grid gap-4 rounded-xl border bg-white p-5 shadow-sm md:grid-cols-3"><AdminSearchPicker label={t("artist")} value={artist?.id ?? ""} displayValue={artist?.name ?? ""} placeholder={t("searchArtist")} endpoint="/api/admin/artists" resultKey="artists" onSelect={(o) => { setArtist({ id: o.id, name: o.name ?? "" }); setParams({ artist: o.id, page: "1" }); }} onClear={() => { setArtist(null); setParams({ artist: "", page: "1" }); }}/><AdminSearchPicker label={t("performerFilter")} value={performerFilter?.id ?? ""} displayValue={performerFilter?.name ?? ""} placeholder={t("searchPerformer")} endpoint="/api/admin/artists" resultKey="artists" onSelect={(o) => { setPerformerFilter({ id: o.id, name: o.name ?? "" }); setParams({ performerArtist: o.id, page: "1" }); }} onClear={() => { setPerformerFilter(null); setParams({ performerArtist: "", page: "1" }); }}/><AdminField label={t("performerStatus")}><select className={adminInputClass} value={performerStatus} onChange={(e) => setParams({ performerStatus: e.target.value, page: "1" })}><option value="">{t("allPerformers")}</option><option value="linked">{t("linkedPerformers")}</option><option value="external">{t("externalPerformers")}</option><option value="different">{t("differentPerformerName")}</option></select></AdminField><AdminField label={t("search")}><div className="relative"><Search className="absolute left-3 top-2.5 h-4 w-4 text-gray-400"/><input defaultValue={search} onKeyDown={(e) => e.key === "Enter" && setParams({ search: e.currentTarget.value, page: "1" })} className={`${adminInputClass} pl-9`} placeholder={t("searchPlaceholder")}/></div></AdminField><AdminField label={t("role")}><select value={role} onChange={(e) => setParams({ role: e.target.value, page: "1" })} className={adminInputClass}><option value="">{t("allRoles")}</option>{roles.map((value) => <option key={value} value={value}>{roleLabel(value)}</option>)}</select></AdminField><AdminField label={t("year")}><input value={year} onChange={(e) => setParams({ year: e.target.value, page: "1" })} className={adminInputClass}/></AdminField></section>
+    <section className="mt-4 grid grid-cols-3 gap-3">{[[t("totalWorks"),summary.totalWorks],[t("creditsOnPage"),summary.pageCredits],[t("rolesRepresented"),summary.roles]].map(([label,value]) => <div key={String(label)} className="rounded-xl border bg-white p-4"><p className="text-xs uppercase text-gray-400">{label}</p><p className="text-2xl font-bold text-(--color-flagblue)">{value}</p></div>)}</section>
+    <section className="mt-4 overflow-hidden rounded-xl border bg-white"><div className="overflow-x-auto"><table className="min-w-full text-left text-sm"><thead className="border-b bg-gray-50 text-[10px] uppercase text-gray-500"><tr>{["work","performer","release","year","creditedArtists","rolesHeader","updated","actions"].map((key) => <th key={key} className="px-4 py-3">{t(key)}</th>)}</tr></thead><tbody className="divide-y">{works.map((work) => <tr key={work.id} className="align-top"><td className="px-4 py-4 font-semibold text-(--color-flagblue)">{work.title}</td><td className="px-4 py-4"><div>{work.performer_text}</div><span className={`mt-1 inline-flex rounded-full px-2 py-0.5 text-[10px] ${work.performer_artist_id ? "bg-blue-50 text-blue-700" : "bg-gray-100 text-gray-600"}`}>{work.performer_artist_id ? t("linkedArtist") : t("externalPerformer")}</span></td><td className="px-4 py-4">{work.release_title || "—"}</td><td className="px-4 py-4">{work.release_year || "—"}</td><td className="px-4 py-4">{[...new Set(work.credits.map((credit) => credit.artists?.name).filter(Boolean))].join(", ")}</td><td className="px-4 py-4">{work.credits.map((credit) => roleLabel(credit.role)).join(", ")}</td><td className="px-4 py-4">{work.updated_at ? new Date(work.updated_at).toLocaleDateString() : "—"}</td><td className="whitespace-nowrap px-4 py-4"><button onClick={() => begin(work)} className="mr-3 text-(--color-flagblue)">{t("edit")}</button>{artist && <button onClick={() => void removeArtistCredit(work)} className="mr-3 text-amber-700">{t("removeCredit")}</button>}<button onClick={() => void deleteWork(work)} className="text-(--color-wikicrimson)"><Trash2 className="h-4 w-4"/></button></td></tr>)}{!works.length && <tr><td colSpan={8} className="p-12 text-center text-gray-500">{loading ? t("loading") : t("emptyAll")}</td></tr>}</tbody></table></div><div className="flex justify-between border-t p-4 text-sm"><span>{t("pageOf", { page: pagination.page, pages: Math.max(1,pagination.pages), total: pagination.total })}</span><div className="space-x-2"><button disabled={page <= 1} onClick={() => setParams({ page: String(page - 1) })} className="rounded border px-3 py-1 disabled:opacity-30">{t("previous")}</button><button disabled={page >= pagination.pages} onClick={() => setParams({ page: String(page + 1) })} className="rounded border px-3 py-1 disabled:opacity-30">{t("next")}</button></div></div></section>
+    {open && <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4"><form onSubmit={(event) => void save(event)} className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-xl bg-white p-6"><div className="flex justify-between"><h2 className="text-xl font-bold text-(--color-flagblue)">{editing ? t("editWork") : t("addWork")}</h2><button type="button" onClick={() => setOpen(false)}><X/></button></div><div className="mt-5 grid gap-4 sm:grid-cols-2"><AdminField label={t("workTitle")}><input required value={form.title} onChange={(e) => setForm({...form,title:e.target.value})} className={adminInputClass}/></AdminField><AdminField label={t("performerMode")}><select value={performerMode} onChange={(e) => changeMode(e.target.value as PerformerMode)} className={adminInputClass}><option value="linked">{t("mangulinaArtist")}</option><option value="external">{t("externalPerformer")}</option></select></AdminField>{performerMode === "linked" ? <><AdminSearchPicker label={t("performer")} value={performerArtist?.id ?? ""} displayValue={performerArtist?.name ?? ""} placeholder={t("searchPerformer")} endpoint="/api/admin/artists" resultKey="artists" onSelect={selectPerformer} onClear={() => { setPerformerArtist(null); setForm({...form,performer_artist_id:""}); }}/><AdminField label={t("creditedAs")}><input required value={form.performer_text} onChange={(e) => setForm({...form,performer_text:e.target.value})} className={adminInputClass}/></AdminField></> : <AdminField label={t("externalPerformerName")}><input required value={form.performer_text} onChange={(e) => setForm({...form,performer_text:e.target.value})} className={adminInputClass}/></AdminField>}<AdminField label={t("release")}><input value={form.release_title} onChange={(e) => setForm({...form,release_title:e.target.value})} className={adminInputClass}/></AdminField><AdminField label={t("year")}><input value={form.release_year} onChange={(e) => setForm({...form,release_year:e.target.value})} className={adminInputClass}/></AdminField></div><div className="mt-6"><h3 className="font-semibold">{t("credits")}</h3>{credits.map((credit,index) => <div key={`${credit.artistId}-${credit.role}`} className="mt-2 flex justify-between rounded border p-3"><span>{credit.artistName} · {roleLabel(credit.role)}</span><button type="button" onClick={() => setCredits(credits.filter((_,i)=>i!==index))}><X className="h-4 w-4"/></button></div>)}<div className="mt-3 grid gap-3 sm:grid-cols-[1fr_180px_auto]"><AdminSearchPicker label={t("artist")} value={creditArtist?.id ?? ""} displayValue={creditArtist?.name ?? ""} placeholder={t("searchArtist")} endpoint="/api/admin/artists" resultKey="artists" onSelect={(o)=>setCreditArtist({id:o.id,name:o.name??""})} onClear={()=>setCreditArtist(null)}/><AdminField label={t("role")}><select value={creditRole} onChange={(e)=>setCreditRole(e.target.value)} className={adminInputClass}>{roles.map((value)=><option key={value} value={value}>{roleLabel(value)}</option>)}</select></AdminField><button type="button" onClick={addCredit} className="self-end rounded border px-4 py-2">{t("addCredit")}</button></div></div><button disabled={loading || !credits.length} className={`${adminButtonClass} mt-6`}>{loading ? t("saving") : t("save")}</button></form></div>}
+  </main>;
 }

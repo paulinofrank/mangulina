@@ -131,6 +131,40 @@ export async function DELETE(request: Request) {
   }
 
   const supabase = getSupabaseClient();
+  const { data: artist, error: artistError } = await supabase
+    .from("artists")
+    .select("id,slug")
+    .eq("id", artistId)
+    .maybeSingle();
+
+  if (artistError) {
+    return NextResponse.json(
+      { ok: false, error: artistError.message },
+      { status: 500 },
+    );
+  }
+
+  if (!artist) {
+    return NextResponse.json(
+      { ok: false, error: "Artist not found." },
+      { status: 404 },
+    );
+  }
+
+  const { error: imageError } = await supabase.storage
+    .from("artists-images")
+    .remove([`${artistId}.webp`]);
+
+  if (imageError) {
+    return NextResponse.json(
+      {
+        ok: false,
+        error: `Artist image could not be deleted: ${imageError.message}`,
+      },
+      { status: 500 },
+    );
+  }
+
   const { error } = await supabase
     .from("artists")
     .delete()
@@ -143,5 +177,13 @@ export async function DELETE(request: Request) {
     );
   }
 
-  return NextResponse.json({ ok: true, id: artistId });
+  if (artist.slug) {
+    revalidateArtistProfilePaths(artist.slug);
+  }
+
+  return NextResponse.json({
+    ok: true,
+    id: artistId,
+    imageCleanupCompleted: true,
+  });
 }

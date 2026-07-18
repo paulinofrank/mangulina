@@ -208,6 +208,7 @@ function getToolKey(href: string): string {
     awards: "awards",
     "platform-links": "platformLinks",
     "creative-works": "creativeWorks",
+    "works-credits": "creativeWorks",
     contributors: "contributors",
     invites: "invites",
     reviews: "reviews",

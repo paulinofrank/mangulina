@@ -4,8 +4,10 @@ import Image from "next/image";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
+import type { DiscographyEditionSummary } from "@/lib/artistApi";
 
 type LazyDiscographyTrack = {
   track_id: string;
@@ -29,6 +31,9 @@ type ArtistDiscographyReleaseProps = {
     release_type: string | null;
     track_count: number;
     cover_url: string | null;
+    release_group_id: string | null;
+    edition_count: number;
+    editions: DiscographyEditionSummary[];
   };
 };
 
@@ -48,6 +53,7 @@ export default function ArtistDiscographyRelease({
   const t = useTranslations("artist");
   const components = useTranslations("components");
   const releases = useTranslations("releases");
+  const locale = useLocale();
   const [isOpen, setIsOpen] = useState(false);
   const [tracks, setTracks] = useState<LazyDiscographyTrack[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -90,6 +96,16 @@ export default function ArtistDiscographyRelease({
     if (nextOpen) void loadTracks();
   };
 
+  const countryName = (country: string | null) => {
+    if (!country) return t("unknownCountry");
+    if (country === "XW") return t("worldwide");
+    try {
+      return new Intl.DisplayNames([locale], { type: "region" }).of(country) ?? country;
+    } catch {
+      return country;
+    }
+  };
+
   return (
     <article className="group rounded-lg border border-gray-100 bg-gray-50 open:bg-white">
       <div className="px-3 py-1.5 transition-colors hover:bg-white">
@@ -127,6 +143,33 @@ export default function ArtistDiscographyRelease({
               {release.release_year} · {release.release_type} ·{" "}
               {t("tracksCount", { count: release.track_count })}
             </p>
+            {release.edition_count > 1 && (
+              <details className="relative mt-1 text-xs">
+                <summary className="w-fit cursor-pointer list-none rounded-sm font-medium text-(--color-flagblue) underline-offset-2 hover:text-(--color-wikicrimson) hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-flagblue)">
+                  {t("editionsCount", { count: release.edition_count })}
+                </summary>
+                <div className="mt-2 space-y-1.5 rounded-md border border-gray-200 bg-white p-2 shadow-sm">
+                  <p className="font-medium text-gray-500">{t("otherEditions")}</p>
+                  {release.editions.map((edition) => {
+                    const content = (
+                      <span className="block">
+                        <span className="font-medium text-gray-800">{countryName(edition.country)}</span>
+                        <span className="block text-gray-500">
+                          {edition.release_year ?? t("unknownYear")} · {t("tracksCount", { count: edition.track_count })}
+                          {edition.packaging ? ` · ${edition.packaging}` : ""}
+                        </span>
+                        {edition.is_representative && <span className="text-[10px] uppercase tracking-wide text-(--color-wikicrimson)">{t("representativeEdition")}</span>}
+                      </span>
+                    );
+                    return edition.release_slug ? (
+                      <Link key={edition.release_id} href={`/releases/${edition.release_slug}`} prefetch={false} className="block rounded px-2 py-1.5 hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-(--color-flagblue)">{content}</Link>
+                    ) : (
+                      <div key={edition.release_id} className="px-2 py-1.5">{content}</div>
+                    );
+                  })}
+                </div>
+              </details>
+            )}
           </div>
 
           <button

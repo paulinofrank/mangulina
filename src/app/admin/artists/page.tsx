@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 import type { FormEvent } from "react";
 import { getSupabaseClient } from "@/lib/supabase";
 import {
@@ -19,6 +20,7 @@ import { getArtistImageUrlIfAvailable } from "@/utils/getArtistImageUrl";
 import { resizeArtistImage } from "@/utils/resizeArtistImage";
 import { extractYouTubeVideoId } from "@/utils/youtube";
 import BioText from "@/components/molecules/BioText";
+import { normalizeSearchText, rankSearchText } from "@/lib/searchRanking";
 
 type ArtistStatus =
   | "draft"
@@ -187,26 +189,16 @@ type ArtistRelationshipListResponse = {
 
 type GenreCatalogRow = {
   id: string | number;
+  parent_id: string | number | null;
+  level: number;
   name: string;
   slug?: string | null;
   display_order?: number | null;
 };
 
-type SubgenreCatalogRow = {
-  id: string | number;
-  genre_id: string | number;
-  name: string;
-};
-
 type AdminGenresResponse = {
   ok: boolean;
   genres?: GenreCatalogRow[];
-  error?: string;
-};
-
-type AdminSubgenresResponse = {
-  ok: boolean;
-  subgenres?: SubgenreCatalogRow[];
   error?: string;
 };
 
@@ -235,6 +227,8 @@ type MusicalGenreOption = {
 type PrimaryGenreOption = {
   value: string;
   label: string;
+  isChild?: boolean;
+  searchValues: string[];
 };
 
 const emptyMediaForm: ArtistMediaForm = {
@@ -382,7 +376,7 @@ const emptyForm: ArtistForm = {
 };
 
 const provinceOptions = [
-  "X - Born Outside",
+  "Born Abroad",
   "Azua",
   "Bahoruco",
   "Barahona",
@@ -500,35 +494,75 @@ function normalizeStatus(value: string | null | undefined): ArtistStatus {
 }
 
 function buildPrimaryGenreOptions(genres: GenreCatalogRow[]): PrimaryGenreOption[] {
-  return [
-    { value: "", label: "-- Select Primary Genre --" },
-    ...genres
-      .map((genre) => ({
-        value: genre.slug || genre.name,
-        label: genre.name,
-      }))
-      .filter((option) => option.value && option.label)
-      .sort((a, b) => a.label.localeCompare(b.label)),
+  const parents = genres
+    .filter((genre) => genre.parent_id === null)
+    .sort((a, b) => a.name.localeCompare(b.name));
+  const childrenByParent = new Map<string, GenreCatalogRow[]>();
+
+  for (const genre of genres) {
+    if (genre.parent_id === null) continue;
+    const key = String(genre.parent_id);
+    childrenByParent.set(key, [...(childrenByParent.get(key) ?? []), genre]);
+  }
+
+  const options: PrimaryGenreOption[] = [
+    { value: "", label: "-- Select Primary Genre --", searchValues: [] },
   ];
+
+  for (const parent of parents) {
+    const parentValue = parent.slug || parent.name;
+    options.push({
+      value: parentValue,
+      label: parent.name,
+      searchValues: [parentValue, parent.name].map((value) => value.toLowerCase()),
+    });
+
+    for (const child of (childrenByParent.get(String(parent.id)) ?? [])
+      .sort((a, b) => a.name.localeCompare(b.name))) {
+      const childValue = child.slug || child.name;
+      options.push({
+        value: childValue,
+        label: child.name,
+        isChild: true,
+        searchValues: [childValue, child.name].map((value) => value.toLowerCase()),
+      });
+    }
+  }
+
+  return options;
 }
 
-function buildMusicalGenreOptions(subgenres: SubgenreCatalogRow[]): MusicalGenreOption[] {
+function buildMusicalGenreOptions(genres: GenreCatalogRow[]): MusicalGenreOption[] {
   const options = new Map<string, MusicalGenreOption>();
 
-  for (const subgenre of subgenres) {
-    if (!subgenre.name) continue;
+  for (const genre of genres) {
+    if (!genre.name) continue;
 
-    const value = subgenre.name;
+    const value = genre.slug || genre.name;
     const key = value.toLowerCase();
 
     options.set(key, {
       value,
-      label: subgenre.name,
-      searchValues: [value, subgenre.name].map((item) => item.toLowerCase()),
+      label: genre.name,
+      searchValues: [value, genre.name].map((item) => item.toLowerCase()),
     });
   }
 
   return Array.from(options.values()).sort((a, b) => a.label.localeCompare(b.label));
+}
+
+function addGenreIfMissing(value: string, option: { searchValues: string[] }) {
+  const items = parseCsv(value);
+  const selected = items.some((item) => option.searchValues.includes(item.toLowerCase()));
+  return selected ? value : [...items, option.searchValues[0]].join(", ");
+}
+
+function toggleMusicalGenre(value: string, option: MusicalGenreOption) {
+  const items = parseCsv(value);
+  const selected = items.some((item) => option.searchValues.includes(item.toLowerCase()));
+  return selected
+    ? items.filter((item) => !option.searchValues.includes(item.toLowerCase())).join(", ")
+    : [...items, option.value].join(", ");
 }
 
 function isMusicalGenreSelected(selectedValues: string[], option: MusicalGenreOption) {
@@ -568,9 +602,10 @@ export default function AdminDashboard() {
   const [selectedArtistId, setSelectedArtistId] = useState("");
   const [search, setSearch] = useState("");
   const [artistPickerOpen, setArtistPickerOpen] = useState(false);
+  const [activeArtistIndex, setActiveArtistIndex] = useState(-1);
   const [form, setForm] = useState<ArtistForm>(emptyForm);
   const [primaryGenreOptions, setPrimaryGenreOptions] = useState<PrimaryGenreOption[]>([
-    { value: "", label: "-- Select Primary Genre --" },
+    { value: "", label: "-- Select Primary Genre --", searchValues: [] },
   ]);
   const [musicalGenreOptions, setMusicalGenreOptions] = useState<MusicalGenreOption[]>([]);
   const [artistMedia, setArtistMedia] = useState<AdminArtistMedia[]>([]);
@@ -589,11 +624,24 @@ export default function AdminDashboard() {
     bio_en: null,
     bio_es: null,
   });
+  const artistPickerRef = useRef<HTMLDivElement>(null);
+  const artistSearchInputRef = useRef<HTMLInputElement>(null);
+  const activeArtistOptionRef = useRef<HTMLButtonElement>(null);
+  const pathname = usePathname();
+
+  const closeArtistPicker = useCallback(() => {
+    setArtistPickerOpen(false);
+    setActiveArtistIndex(-1);
+  }, []);
 
   const selectedArtist = useMemo(
     () => artists.find((artist) => artist.id === selectedArtistId) || null,
     [artists, selectedArtistId]
   );
+  const matchedPrimaryGenreOption = primaryGenreOptions.find((option) =>
+    option.searchValues.includes((form.primary_genre ?? "").toLowerCase()),
+  );
+  const primaryGenreSelectValue = matchedPrimaryGenreOption?.value ?? form.primary_genre ?? "";
 
   const selectedArtistImageUrl = previewImageUrl || getArtistImageUrlIfAvailable(selectedArtist) || null;
 
@@ -606,22 +654,27 @@ export default function AdminDashboard() {
   );
 
   const filteredArtists = useMemo(() => {
-    const query = search.trim().toLowerCase();
+    const query = normalizeSearchText(search);
 
-    if (!query) return artists;
+    if (!query) return artists.slice(0, 40);
 
-    return artists.filter((artist) =>
-      [
+    return artists
+      .map((artist) => ({
+        artist,
+        rank: rankSearchText([
         artist.name,
         artist.stage_name,
         artist.sort_name,
         artist.slug,
         artist.province,
         artist.status,
-      ]
-        .filter(Boolean)
-        .some((value) => String(value).toLowerCase().includes(query))
-    );
+        ...(artist.aliases ?? []),
+        ], query),
+      }))
+      .filter(({ rank }) => rank !== Number.MAX_SAFE_INTEGER)
+      .sort((a, b) => a.rank - b.rank || (a.artist.name ?? "").localeCompare(b.artist.name ?? ""))
+      .slice(0, 40)
+      .map(({ artist }) => artist);
   }, [artists, search]);
 
   const selectedRelationshipArtist = useMemo(
@@ -671,31 +724,19 @@ export default function AdminDashboard() {
   }, [supabase]);
 
   const fetchGenreCatalog = useCallback(async () => {
-    const [genresResponse, subgenresResponse] = await Promise.all([
-      fetch("/api/admin/genres"),
-      fetch("/api/admin/subgenres?all=1"),
-    ]);
+    const genresResponse = await fetch("/api/admin/genres?hierarchy=1");
     const genresResult = await readAdminJson<AdminGenresResponse>(
       genresResponse,
       "Genres endpoint did not return JSON"
     );
-    const subgenresResult = await readAdminJson<AdminSubgenresResponse>(
-      subgenresResponse,
-      "Subgenres endpoint did not return JSON"
-    );
-
     if (!genresResponse.ok || !genresResult.ok) {
       setStatus(`Error loading genres: ${genresResult.error || genresResponse.statusText}`);
       return;
     }
 
-    if (!subgenresResponse.ok || !subgenresResult.ok) {
-      setStatus(`Error loading subgenres: ${subgenresResult.error || subgenresResponse.statusText}`);
-      return;
-    }
-
-    setPrimaryGenreOptions(buildPrimaryGenreOptions(genresResult.genres ?? []));
-    setMusicalGenreOptions(buildMusicalGenreOptions(subgenresResult.subgenres ?? []));
+    const taxonomy = genresResult.genres ?? [];
+    setPrimaryGenreOptions(buildPrimaryGenreOptions(taxonomy));
+    setMusicalGenreOptions(buildMusicalGenreOptions(taxonomy));
   }, []);
 
   const fetchArtistMedia = useCallback(
@@ -748,6 +789,25 @@ export default function AdminDashboard() {
   }, [fetchData, fetchGenreCatalog, mounted]);
 
   useEffect(() => {
+    const handlePointerDown = (event: PointerEvent) => {
+      if (artistPickerRef.current && !artistPickerRef.current.contains(event.target as Node)) {
+        closeArtistPicker();
+      }
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => document.removeEventListener("pointerdown", handlePointerDown);
+  }, [closeArtistPicker]);
+
+  useEffect(() => {
+    closeArtistPicker();
+  }, [closeArtistPicker, pathname]);
+
+  useEffect(() => {
+    activeArtistOptionRef.current?.scrollIntoView({ block: "nearest" });
+  }, [activeArtistIndex]);
+
+  useEffect(() => {
     return () => {
       if (previewImageUrl?.startsWith("blob:")) {
         URL.revokeObjectURL(previewImageUrl);
@@ -759,6 +819,15 @@ export default function AdminDashboard() {
     setForm((current) => ({
       ...current,
       [key]: value,
+    }));
+  }
+
+  function updatePrimaryGenre(value: string) {
+    const option = primaryGenreOptions.find((item) => item.value === value);
+    setForm((current) => ({
+      ...current,
+      primary_genre: value,
+      genres: value && option ? addGenreIfMissing(current.genres, option) : current.genres,
     }));
   }
 
@@ -837,7 +906,7 @@ export default function AdminDashboard() {
   function resetForm() {
     setSelectedArtistId("");
     setSearch("");
-    setArtistPickerOpen(false);
+    closeArtistPicker();
     setForm({ ...emptyForm });
     setArtistMedia([]);
     setOutgoingRelationships([]);
@@ -905,6 +974,7 @@ export default function AdminDashboard() {
   }
 
   function handleSelectArtistForEdit(id: string) {
+    closeArtistPicker();
     const artist = artists.find((item) => item.id === id);
 
     if (!artist) {
@@ -914,12 +984,17 @@ export default function AdminDashboard() {
 
     setSelectedArtistId(artist.id);
     setSearch(artist.name ?? "");
-    setArtistPickerOpen(false);
     setPreviewImageUrl(null);
     resetMediaForm();
     resetRelationshipForm();
     void fetchArtistMedia(artist.id);
     void fetchArtistRelationships(artist.id);
+
+    const existingPrimaryGenre = artist.primary_genre ?? "";
+    const existingPrimaryOption = primaryGenreOptions.find((option) =>
+      option.searchValues.includes(existingPrimaryGenre.toLowerCase()),
+    );
+    const existingMusicalGenres = toCsv(artist.genres);
 
     setForm({
       name: artist.name ?? "",
@@ -935,14 +1010,20 @@ export default function AdminDashboard() {
       date_of_death: artist.date_of_death ?? "",
       death_year: artist.death_year ? String(artist.death_year) : "",
       birth_place: artist.birth_place ?? "",
-      province: artist.province ?? "",
+      province:
+        artist.province === "X - Born Outside"
+          ? "Born Abroad"
+          : artist.province ?? "",
       type: artist.type ?? "",
       primary_role: artist.primary_role ?? "",
-      primary_genre: artist.primary_genre ?? "",
+      primary_genre: existingPrimaryGenre,
       status: normalizeStatus(artist.status),
       occupations: toCsv(artist.occupations),
       instruments: toCsv(artist.instruments),
-      genres: toCsv(artist.genres),
+      genres:
+        existingPrimaryGenre && existingPrimaryOption
+          ? addGenreIfMissing(existingMusicalGenres, existingPrimaryOption)
+          : existingMusicalGenres,
       artist_tags: toCsv(artist.artist_tags),
       aliases: toCsv(artist.aliases),
       website: artist.website ?? "",
@@ -1092,6 +1173,34 @@ export default function AdminDashboard() {
       display_order: String(item.display_order ?? 0),
       notes: item.notes ?? "",
     });
+  }
+
+  function handleArtistPickerKeyDown(event: React.KeyboardEvent) {
+    if (event.target !== artistSearchInputRef.current) return;
+    if (event.key === "Tab") return;
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeArtistPicker();
+      return;
+    }
+    if (event.key === "Enter") {
+      if (artistPickerOpen && activeArtistIndex >= 0 && activeArtistIndex < filteredArtists.length) {
+        event.preventDefault();
+        handleSelectArtistForEdit(filteredArtists[activeArtistIndex].id);
+      }
+      return;
+    }
+    if (event.key === "ArrowDown") {
+      if (!artistPickerOpen || !filteredArtists.length) return;
+      event.preventDefault();
+      setActiveArtistIndex((current) => current < 0 ? 0 : Math.min(current + 1, filteredArtists.length - 1));
+      return;
+    }
+    if (event.key === "ArrowUp") {
+      if (!artistPickerOpen || !filteredArtists.length) return;
+      event.preventDefault();
+      setActiveArtistIndex((current) => current <= 0 ? 0 : current - 1);
+    }
   }
 
   async function handleAutofillYouTubeMetadata() {
@@ -1359,6 +1468,13 @@ export default function AdminDashboard() {
     setStatus("");
 
     const resolvedSlug = form.slug.trim() || slugify(form.name);
+    const primaryGenreOption = primaryGenreOptions.find((option) =>
+      option.searchValues.includes(form.primary_genre.toLowerCase()),
+    );
+    const synchronizedGenres =
+      form.primary_genre && primaryGenreOption
+        ? addGenreIfMissing(form.genres, primaryGenreOption)
+        : form.genres;
 
     const artistData = {
       name: form.name.trim(),
@@ -1386,7 +1502,7 @@ export default function AdminDashboard() {
 
       occupations: parseCsv(form.occupations),
       instruments: parseCsv(form.instruments),
-      genres: parseCsv(form.genres),
+      genres: parseCsv(synchronizedGenres),
       artist_tags: parseCsv(form.artist_tags),
       aliases: parseCsv(form.aliases),
 
@@ -1513,27 +1629,41 @@ export default function AdminDashboard() {
               Select Artist
             </h2>
 
-            <div className="relative">
+            <div ref={artistPickerRef} className="relative">
               <input
+                ref={artistSearchInputRef}
                 value={search ?? ""}
                 onChange={(event) => {
                   setSearch(event.target.value);
                   setArtistPickerOpen(true);
+                  setActiveArtistIndex(-1);
                 }}
-                onFocus={() => setArtistPickerOpen(true)}
-                onBlur={() => {
-                  window.setTimeout(() => setArtistPickerOpen(false), 120);
+                onFocus={() => {
+                  if (!selectedArtist || normalizeSearchText(search) !== normalizeSearchText(selectedArtist.name ?? "")) {
+                    setArtistPickerOpen(true);
+                  }
                 }}
+                onKeyDown={handleArtistPickerKeyDown}
                 placeholder="Search or select artist..."
                 className="w-full rounded-lg border border-gray-200 px-3 py-2 pr-9 text-sm outline-none focus:border-(--color-flagblue)"
                 role="combobox"
                 aria-expanded={artistPickerOpen}
                 aria-controls="admin-artist-picker-results"
+                aria-activedescendant={artistPickerOpen && activeArtistIndex >= 0 && activeArtistIndex < filteredArtists.length ? `admin-artist-option-${filteredArtists[activeArtistIndex].id}` : undefined}
+                aria-autocomplete="list"
+                aria-haspopup="listbox"
               />
 
               <button
                 type="button"
-                onClick={() => setArtistPickerOpen((open) => !open)}
+                onClick={() => {
+                  artistSearchInputRef.current?.focus();
+                  if (artistPickerOpen) closeArtistPicker();
+                  else {
+                    setActiveArtistIndex(-1);
+                    setArtistPickerOpen(true);
+                  }
+                }}
                 className="absolute right-2 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-md text-gray-400 transition hover:bg-gray-100 hover:text-(--color-flagblue)"
                 aria-label="Toggle artist list"
               >
@@ -1553,7 +1683,6 @@ export default function AdminDashboard() {
 
               {artistPickerOpen && (
                 <div
-                  id="admin-artist-picker-results"
                   className="absolute left-0 right-0 top-[calc(100%+0.35rem)] z-30 max-h-72 overflow-y-auto rounded-lg border border-gray-200 bg-white shadow-lg"
                 >
                   <button
@@ -1565,15 +1694,22 @@ export default function AdminDashboard() {
                     Create New Artist
                   </button>
 
+                  <div id="admin-artist-picker-results" role="listbox" aria-label="Artist search results">
                   {filteredArtists.length ? (
-                    filteredArtists.map((artist) => (
+                    filteredArtists.map((artist, index) => (
                       <button
                         key={artist.id}
+                        id={`admin-artist-option-${artist.id}`}
+                        ref={index === activeArtistIndex ? activeArtistOptionRef : null}
                         type="button"
+                        role="option"
+                        aria-selected={index === activeArtistIndex}
                         onMouseDown={(event) => event.preventDefault()}
                         onClick={() => handleSelectArtistForEdit(artist.id)}
+                        onMouseEnter={() => setActiveArtistIndex(index)}
+                        onMouseLeave={() => setActiveArtistIndex(-1)}
                         className={`block w-full border-b border-gray-100 px-3 py-2 text-left text-sm transition last:border-none hover:bg-(--color-flagblue)/5 ${
-                          selectedArtistId === artist.id
+                          index === activeArtistIndex
                             ? "bg-(--color-flagblue)/8 text-(--color-flagblue)"
                             : "text-gray-700"
                         }`}
@@ -1591,6 +1727,7 @@ export default function AdminDashboard() {
                       No artists found.
                     </p>
                   )}
+                  </div>
                 </div>
               )}
             </div>
@@ -2220,18 +2357,19 @@ export default function AdminDashboard() {
 
                 <Field label={t("admin.labels.primaryGenre")}>
                   <select
-                    value={form.primary_genre ?? ""}
-                    onChange={(event) =>
-                      updateForm("primary_genre", event.target.value)
-                    }
+                    value={primaryGenreSelectValue}
+                    onChange={(event) => updatePrimaryGenre(event.target.value)}
                     className={inputClass}
                   >
+                    {form.primary_genre && !matchedPrimaryGenreOption && (
+                      <option value={form.primary_genre}>{form.primary_genre}</option>
+                    )}
                     {primaryGenreOptions.map((option) => (
                       <option
                         key={option.value || "empty-primary-genre"}
                         value={option.value}
                       >
-                        {option.label}
+                        {option.isChild ? `\u00A0\u00A0${option.label}` : option.label}
                       </option>
                     ))}
                   </select>
@@ -2289,7 +2427,7 @@ export default function AdminDashboard() {
                               onChange={() =>
                                 updateForm(
                                   "genres",
-                                  toggleCsvValue(form.genres, option.value)
+                                  toggleMusicalGenre(form.genres, option)
                                 )
                               }
                               className="h-4 w-4"

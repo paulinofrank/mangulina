@@ -207,6 +207,7 @@ export type DiscographyRelease = {
 };
 
 export type DiscographyReleaseSummary = {
+  release_group_id: string | null;
   release_id: string;
   release_slug: string | null;
   release_title: string;
@@ -215,6 +216,25 @@ export type DiscographyReleaseSummary = {
   has_cover_image: boolean;
   cover_url: string | null;
   track_count: number;
+  edition_count: number;
+  editions: DiscographyEditionSummary[];
+};
+
+export type DiscographyEditionSummary = {
+  release_id: string;
+  release_slug: string | null;
+  release_title: string;
+  country: string | null;
+  release_year: number | null;
+  date: string | null;
+  release_type: string | null;
+  status: string | null;
+  packaging: string | null;
+  track_count: number;
+  cover_url: string | null;
+  barcode: string | null;
+  metadata_barcode: string | null;
+  is_representative: boolean;
 };
 
 type ReleaseSummaryRow = {
@@ -224,6 +244,10 @@ type ReleaseSummaryRow = {
   release_year: number | null;
   year: number | null;
   type: string | null;
+  status: string | null;
+  packaging: string | null;
+  barcode: string | null;
+  metadata: { barcode?: string | null } | null;
   release_group_id: string | null;
   country: string | null;
   date: string | null;
@@ -278,6 +302,10 @@ export async function getArtistDiscographySummaries(
         release_year,
         year,
         type,
+        status,
+        packaging,
+        barcode,
+        metadata,
         release_group_id,
         country,
         date,
@@ -323,25 +351,40 @@ export async function getArtistDiscographySummaries(
     }
   }
 
-  const selectedRows = new Map<string, ReleaseSummaryRow>();
+  const groupedRows = new Map<string, ReleaseSummaryRow[]>();
 
   for (const row of rows) {
     const key = row.release_group_id ?? row.id;
     row.release_group = row.release_group_id
       ? releaseGroupsById.get(row.release_group_id) ?? null
       : null;
-    const current = selectedRows.get(key);
-
-    if (!current || compareReleaseRows(row, current) < 0) {
-      selectedRows.set(key, row);
-    }
+    groupedRows.set(key, [...(groupedRows.get(key) ?? []), row]);
   }
 
-  return Array.from(selectedRows.values())
-    .map((row) => {
+  return Array.from(groupedRows.values())
+    .map((editionRows) => {
+      const sortedEditions = [...editionRows].sort(compareReleaseRows);
+      const row = sortedEditions[0];
       const releaseGroup = row.release_group;
+      const editions: DiscographyEditionSummary[] = sortedEditions.map((edition) => ({
+        release_id: edition.id,
+        release_slug: edition.slug,
+        release_title: edition.title,
+        country: edition.country,
+        release_year: edition.release_year ?? edition.year,
+        date: edition.date,
+        release_type: edition.type,
+        status: edition.status,
+        packaging: edition.packaging,
+        track_count: edition.tracks?.[0]?.count ?? 0,
+        cover_url: edition.has_cover_image ? getPublicReleaseCoverUrl(edition.id, 150) : null,
+        barcode: edition.barcode,
+        metadata_barcode: edition.metadata?.barcode ?? null,
+        is_representative: edition.id === row.id,
+      }));
 
       return {
+        release_group_id: row.release_group_id,
         release_id: row.id,
         release_slug: row.slug,
         release_title: releaseGroup?.title ?? row.title,
@@ -350,6 +393,8 @@ export async function getArtistDiscographySummaries(
         has_cover_image: row.has_cover_image === true,
         cover_url: row.has_cover_image ? getPublicReleaseCoverUrl(row.id, 150) : null,
         track_count: row.tracks?.[0]?.count ?? 0,
+        edition_count: editions.length,
+        editions,
       };
     })
     .sort((a, b) => {

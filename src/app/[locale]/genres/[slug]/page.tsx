@@ -1,26 +1,31 @@
 import type { Metadata } from "next";
-import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
-import { useTranslations } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
 import { localizeGenreContent } from "@/lib/genreContent.es";
 import MainWrapper from "@/components/layout/MainWrapper";
 import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
 import SectionCard from "@/components/layout/SectionCard";
 import ArtistCard from "@/components/molecules/ArtistCard";
-import SongCard from "@/components/molecules/SongCard";
+import BioText from "@/components/molecules/BioText";
 import GenreCarouselSection from "@/components/organisms/GenreCarouselSection";
+import ArtistInterviewsCarousel from "@/components/organisms/ArtistInterviewsCarousel";
+import SubgenreSelector from "@/components/genres/SubgenreSelector";
+import GenreTitleSelector from "@/components/genres/GenreTitleSelector";
 import GenreSubgenreSongs from "@/components/genres/GenreSubgenreSongs";
-import ReleaseCoverImage from "@/components/genres/ReleaseCoverImage";
-import ReleaseGrid from "@/components/releases/ReleaseGrid";
 import JsonLd from "@/components/seo/JsonLd";
-import { getGenrePageData, getGenrePageSlugs, type GenreReleaseSummary } from "@/lib/genreApi";
-import { genreDefinitions, getGenreDefinition } from "@/lib/genres";
+import {
+  getGenrePageData,
+  getGenrePageSlugs,
+  getGenreMedia,
+  getTopGenreOptions,
+} from "@/lib/genreApi";
+import { genreDefinitions } from "@/lib/genres";
 import { createPageMetadata, genreSeoTitle } from "@/lib/seo";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
 
 type PageProps = {
   params: Promise<{ slug: string; locale: string }>;
+  searchParams: Promise<{ subgenre?: string | string[] }>;
 };
 
 export const dynamic = "force-dynamic";
@@ -54,50 +59,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   });
 }
 
-function ReleaseCard({ release }: { release: GenreReleaseSummary }) {
-  const t = useTranslations("pages.genreDetail");
-  const content = (
-    <article className="group w-28 shrink-0 sm:w-32 lg:w-36">
-      <div className="relative aspect-square overflow-hidden rounded-lg border border-black/5 bg-gray-100">
-        {release.coverUrl ? (
-          <ReleaseCoverImage
-            src={release.coverUrl}
-            alt={release.title}
-          />
-        ) : (
-          <div className="flex h-full w-full items-center justify-center px-3 text-center text-xs text-gray-400">
-            {t("noCover")}
-          </div>
-        )}
-      </div>
-
-      <div className="mt-2">
-        <h4 className="line-clamp-2 text-sm font-normal text-[#002D62] transition-colors group-hover:text-[#CE1126]">
-          {release.title}
-        </h4>
-        <p className="mt-1 text-xs text-gray-500">
-          {[release.releaseYear, release.label].filter(Boolean).join(" · ") || t("releaseFallback")}
-        </p>
-      </div>
-    </article>
-  );
-
-  if (!release.slug) return content;
-
-  return (
-    <Link
-      href={`/releases/${release.slug}`}
-      className="shrink-0 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#002D62] focus-visible:ring-offset-2"
-      aria-label={t("viewAria", { title: release.title })}
-    >
-      {content}
-    </Link>
-  );
-}
-
-export default async function GenrePage({ params }: PageProps) {
+export default async function GenrePage({ params, searchParams }: PageProps) {
   const { slug } = await params;
-  const data = await getGenrePageData(slug);
+  const requestedValue = (await searchParams).subgenre;
+  const requestedSubgenre = typeof requestedValue === "string" ? requestedValue : undefined;
+  const [data, topGenreOptions] = await Promise.all([
+    getGenrePageData(slug, requestedSubgenre),
+    getTopGenreOptions(),
+  ]);
 
   if (!data) return notFound();
 
@@ -106,20 +75,24 @@ export default async function GenrePage({ params }: PageProps) {
 
   const {
     subgenres,
-    mainArtists,
     connectedArtists,
-    popularSongs,
-    importantReleases,
-    mostViewedReleases,
-    recentReleases,
-    recentlyAdded,
   } = data;
   const genre = localizeGenreContent(data.genre, locale);
+  const selectedSubgenre = requestedSubgenre
+    ? subgenres.find((subgenre) => subgenre.slug === requestedSubgenre) ?? null
+    : null;
+  const genreMediaId = selectedSubgenre?.id ?? genre.catalogId;
+  const genreMedia = genreMediaId ? await getGenreMedia(genreMediaId) : [];
+  const activeGenreName = selectedSubgenre?.name ?? genre.title;
+  const activeHistory = selectedSubgenre
+    ? locale === "es"
+      ? selectedSubgenre.historyEs || selectedSubgenre.history
+      : selectedSubgenre.history
+    : genre.history;
+  const sortedSubgenres = subgenres.slice().sort((a, b) =>
+    a.name.localeCompare(b.name, locale, { sensitivity: "base" }),
+  );
   const Icon = genre.icon;
-  const relatedGenres = genre.relatedGenres
-    .map((relatedSlug) => getGenreDefinition(relatedSlug))
-    .filter((relatedGenre): relatedGenre is NonNullable<typeof relatedGenre> => Boolean(relatedGenre))
-    .map((relatedGenre) => localizeGenreContent(relatedGenre, locale));
 
   return (
     <MainWrapper>
@@ -142,39 +115,53 @@ export default async function GenrePage({ params }: PageProps) {
         <header className="mb-8 overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm">
           <div className="grid gap-0 md:grid-cols-[1fr_280px]">
             <div className="p-6 sm:p-8">
-              <h1 className="text-4xl font-black uppercase tracking-tight text-[#002D62] sm:text-5xl">
-                {genre.title}
-              </h1>
-              <p className="mt-2 text-sm font-normal uppercase tracking-wider text-[#CE1126]">
-                {genre.subtitle}
-              </p>
+              <GenreTitleSelector
+                currentSlug={genre.slug}
+                currentTitle={genre.title}
+                options={topGenreOptions}
+                label={t("genreSelectorLabel")}
+              />
               <p className="mt-5 max-w-3xl text-base leading-relaxed text-gray-700 sm:text-lg">
                 {genre.description}
               </p>
-              {genre.history && (
+              {activeHistory && (
                 <a
                   href="#genre-history"
                   className="mt-4 inline-flex text-sm font-semibold text-[#8B0000] underline decoration-[#8B0000]/30 underline-offset-4 transition-colors hover:text-[#CE1126]"
                 >
-                  {t("learnMoreHistory", { genre: genre.title })}
+                  {t("learnMoreHistory", { genre: activeGenreName })}
                 </a>
               )}
             </div>
 
-            <div className={`flex min-h-48 items-center justify-center ${genre.color}`}>
+            <div className={`flex min-h-48 flex-col items-center justify-center py-6 ${genre.color}`}>
               <Icon className="h-20 w-20 text-white/90" strokeWidth={1.4} />
+              {sortedSubgenres.length > 0 && (
+                <>
+                  <p className="mt-4 text-center text-sm font-semibold uppercase tracking-[0.16em] text-white">
+                    {t("subgenresStyles")}
+                  </p>
+                  <SubgenreSelector
+                    options={sortedSubgenres}
+                    selectedSlug={selectedSubgenre?.slug ?? null}
+                    hasInvalidSelection={Boolean(requestedSubgenre && !selectedSubgenre)}
+                    label={t("subgenreSelector.label")}
+                    allLabel={t("subgenreSelector.all")}
+                  />
+                </>
+              )}
             </div>
           </div>
         </header>
 
         <div className="space-y-8">
-          {subgenres.length > 0 && (
-            <GenreSubgenreSongs genreId={genre.catalogId ?? 0} subgenres={subgenres} />
-          )}
-
-          {mainArtists.length > 0 && (
-            <GenreCarouselSection title={t("topArtists", { genre: genre.title })}>
-              {mainArtists.map((artist, index) => (
+          {connectedArtists.length > 0 && (
+            <GenreCarouselSection
+              title={t("connectedArtists", {
+                genre: activeGenreName,
+              })}
+            >
+              {connectedArtists.map((artist, index) => (
                 <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
                   <ArtistCard artist={artist} titleAs="h3" priorityImage={index === 0} />
                 </div>
@@ -182,125 +169,36 @@ export default async function GenrePage({ params }: PageProps) {
             </GenreCarouselSection>
           )}
 
-          {connectedArtists.length > 0 && (
-            <GenreCarouselSection title={t("connectedArtists", { genre: genre.title })}>
-              {connectedArtists.map((artist, index) => (
-                <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
-                  <ArtistCard
-                    artist={artist}
-                    titleAs="h3"
-                    priorityImage={mainArtists.length === 0 && index === 0}
-                  />
-                </div>
-              ))}
-            </GenreCarouselSection>
+          {genre.catalogId && (
+            <GenreSubgenreSongs
+              key={selectedSubgenre?.slug ?? "all"}
+              genreId={genre.catalogId}
+              genreName={genre.title}
+              subgenre={selectedSubgenre}
+            />
           )}
 
-          {popularSongs.length > 0 && (
-            <GenreCarouselSection title={t("popularSongs")} className="gap-4">
-              {popularSongs.map((song) => (
-                <SongCard
-                  key={song.id}
-                  id={song.id}
-                  slug={song.slug}
-                  title={song.title}
-                  artistName={song.artistName}
-                  coverUrl={song.coverUrl}
-                  views={song.views}
-                />
-              ))}
-            </GenreCarouselSection>
-          )}
+          <ArtistInterviewsCarousel
+            interviews={genreMedia}
+            title={t("publicMedia.title", { genre: activeGenreName })}
+            subtitle={t("publicMedia.subtitle")}
+          />
 
-          {importantReleases.length > 0 && (
-            <GenreCarouselSection title={t("importantReleases")} className="gap-4">
-              {importantReleases.map((release) => (
-                <ReleaseCard key={release.id} release={release} />
-              ))}
-            </GenreCarouselSection>
-          )}
-
-          {(mostViewedReleases.length > 0 || recentReleases.length > 0) && (
-            <SectionCard>
-              <div className="section-inner space-y-7">
-                <div className="section-header">
-                  <h2>{t("releasesIn", { genre: genre.title })}</h2>
-                </div>
-
-                {mostViewedReleases.length > 0 && (
-                  <div>
-                    <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#8B0000]">
-                      {t("mostViewedReleases")}
-                    </h3>
-                    <ReleaseGrid releases={mostViewedReleases} />
-                  </div>
-                )}
-
-                {recentReleases.length > 0 && (
-                  <div>
-                    <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#8B0000]">
-                      {t("recentReleases")}
-                    </h3>
-                    <ReleaseGrid releases={recentReleases} />
-                  </div>
-                )}
-              </div>
-            </SectionCard>
-          )}
-
-          {recentlyAdded.length > 0 && (
-            <GenreCarouselSection title={t("recentlyAdded")}>
-              {recentlyAdded.map((artist, index) => (
-                <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
-                  <ArtistCard
-                    artist={artist}
-                    titleAs="h3"
-                    priorityImage={
-                      mainArtists.length === 0 && connectedArtists.length === 0 && index === 0
-                    }
-                  />
-                </div>
-              ))}
-            </GenreCarouselSection>
-          )}
-
-          {genre.history && (
+          {activeHistory && (
             <div id="genre-history" className="scroll-mt-20 sm:scroll-mt-24">
               <SectionCard>
                 <div className="section-inner">
                   <div className="section-header">
-                    <h2>{t("history", { genre: genre.title })}</h2>
+                    <h2>{t("history", { genre: activeGenreName })}</h2>
                   </div>
-                  <div className="max-w-5xl space-y-4 text-sm leading-relaxed text-gray-700 sm:text-base">
-                    {genre.history.split("\n\n").map((paragraph) => (
-                      <p key={paragraph}>{paragraph}</p>
-                    ))}
+                  <div className="max-w-5xl">
+                    <BioText bio={activeHistory} />
                   </div>
                 </div>
               </SectionCard>
             </div>
           )}
 
-          {relatedGenres.length > 0 && (
-            <SectionCard>
-              <div className="section-inner">
-                <div className="section-header">
-                  <h2>{t("relatedGenres")}</h2>
-                </div>
-                <div className="flex flex-wrap gap-3">
-                  {relatedGenres.map((relatedGenre) => (
-                    <Link
-                      key={relatedGenre.slug}
-                      href={relatedGenre.href}
-                      className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm text-[#002D62] transition-colors hover:border-[#CE1126]/40 hover:text-[#CE1126]"
-                    >
-                      {relatedGenre.title}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </SectionCard>
-          )}
         </div>
       </div>
     </MainWrapper>

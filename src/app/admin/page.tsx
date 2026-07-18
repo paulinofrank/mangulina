@@ -24,9 +24,9 @@ const ADMIN_TOOLS_CONFIG: Omit<AdminTool, "title" | "eyebrow" | "description">[]
     icon: "artists",
   },
   {
-    href: "/admin/artists/creative-works",
+    href: "/admin/works-credits",
     status: "available",
-    icon: "artists",
+    icon: "creativeWorks",
   },
   {
     href: "/admin/catalog/releases",
@@ -37,11 +37,6 @@ const ADMIN_TOOLS_CONFIG: Omit<AdminTool, "title" | "eyebrow" | "description">[]
     href: "/admin/catalog/recordings",
     status: "available",
     icon: "recordings",
-  },
-  {
-    href: "/admin/songs",
-    status: "planned",
-    icon: "songs",
   },
   {
     href: "/admin/genres",

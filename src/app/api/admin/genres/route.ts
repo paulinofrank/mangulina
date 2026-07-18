@@ -1,17 +1,22 @@
 import { NextResponse } from "next/server";
 import { getSupabaseClient } from "@/lib/supabase";
 
-export async function GET() {
+export async function GET(request: Request) {
+  const includeHierarchy = new URL(request.url).searchParams.get("hierarchy") === "1";
   const supabase = getSupabaseClient();
-  const { data, error } = await supabase
+  let query = supabase
     .from("genres")
-    .select("id,name,description,slug,display_order,is_home_featured,sort_order")
-    .eq("level", 0)
+    .select("id,parent_id,level,name,description,history_en,history_es,slug,display_order,is_home_featured,sort_order")
     .eq("active", true)
-    .is("parent_id", null)
     .order("display_order", { ascending: true, nullsFirst: false })
     .order("sort_order", { ascending: true })
     .order("name", { ascending: true });
+
+  if (!includeHierarchy) {
+    query = query.eq("level", 0).is("parent_id", null);
+  }
+
+  const { data, error } = await query;
 
   if (error) {
     return NextResponse.json(
@@ -30,6 +35,8 @@ export async function POST(request: Request) {
       name?: string;
       slug?: string;
       description?: string | null;
+      history_en?: string | null;
+      history_es?: string | null;
       display_order?: number | null;
       is_home_featured?: boolean;
     };
@@ -48,6 +55,8 @@ export async function POST(request: Request) {
     name: genreData.name.trim(),
     slug: genreData.slug?.trim() || null,
     description: genreData.description ?? null,
+    history_en: genreData.history_en ?? null,
+    history_es: genreData.history_es ?? null,
     display_order: genreData.display_order ?? null,
     sort_order: genreData.display_order ?? 0,
     is_home_featured: Boolean(genreData.is_home_featured),

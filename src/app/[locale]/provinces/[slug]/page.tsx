@@ -7,6 +7,7 @@ import { getArtistDirectoryInitialData } from "@/lib/artistDirectoryData";
 import {
   getPublishedProvinceBySlug,
   getPublishedProvinces,
+  getProvinceDisplayName,
 } from "@/lib/provinces";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -28,11 +29,12 @@ export async function generateMetadata({ params }: ProvincePageProps): Promise<M
   const { slug, locale } = await params;
   const province = await getPublishedProvinceBySlug(slug);
   if (!province) return {};
+  const provinceDisplayName = getProvinceDisplayName(province.name);
 
-  const title = `Dominican Artists from the Province ${province.name}`;
+  const title = `Dominican Artists from ${provinceDisplayName}`;
   return createPageMetadata({
     title,
-    description: `Explore Dominican artists from the province of ${province.name}, including singers, composers, musicians, DJs, and other figures in Dominican music.`,
+    description: `Explore Dominican artists from ${provinceDisplayName}, including singers, composers, musicians, DJs, and other figures in Dominican music.`,
     path: `/provinces/${province.slug}`,
     locale,
   });
@@ -45,6 +47,7 @@ export default async function ProvinceArtistsPage({
   const { slug } = await params;
   const province = await getPublishedProvinceBySlug(slug);
   if (!province) notFound();
+  const provinceDisplayName = getProvinceDisplayName(province.name);
 
   const t = await getTranslations("artistDirectory");
   const initialData = await getArtistDirectoryInitialData({
@@ -55,10 +58,10 @@ export default async function ProvinceArtistsPage({
   return (
     <ArtistDirectory
       path={`/provinces/${province.slug}`}
-      heading={t("provinceHeading", { province: province.name })}
+      heading={t("provinceHeading", { province: provinceDisplayName })}
       mobileTitlePrefix={t("provinceMobilePrefix")}
-      mobileTitleHighlight={province.name}
-      intro={t("provinceIntro", { province: province.name })}
+      mobileTitleHighlight={provinceDisplayName}
+      intro={t("provinceIntro", { province: provinceDisplayName })}
       fixedProvince={province.name}
       showProvinceSelector
       hideGenreFilter

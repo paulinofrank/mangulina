@@ -28,6 +28,7 @@ export type GenreDefinition = {
   subtitle: string;
   description: string;
   history?: string;
+  historyEs?: string;
   primaryGenre: string | null;
   aliases: string[];
   relatedGenres: string[];
@@ -40,8 +41,11 @@ export type GenreDefinition = {
 
 export type GenreSubgenre = {
   id: number;
+  slug: string;
   name: string;
   description: string | null;
+  history?: string | null;
+  historyEs?: string | null;
 };
 
 export const genreSpectrumGradients = {

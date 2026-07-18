@@ -1,260 +1,118 @@
 import { NextResponse } from "next/server";
-
 import { requireAdminApiRole } from "@/lib/adminApiAuth";
 import { getSupabaseClient } from "@/lib/supabase";
 
-type CreativeWorkPayload = {
-  title?: string;
-  performer_text?: string | null;
-  release_title?: string | null;
-  release_year?: number | string | null;
-  roles?: string[] | string | null;
-};
+const WORK_FIELDS = "id,title,performer_artist_id,performer_text,release_title,release_year,created_at,updated_at";
+const WORK_ROLES = new Set(["composer", "lyricist", "writer", "songwriter", "orchestrator", "arranger", "co-composer", "co-writer"]);
 
-type CreditRow = {
-  id: string;
-  credited_work_id: string;
-  artist_id: string;
-  role: string;
-  credited_works: {
-    id: string;
-    title: string;
-    performer_text: string | null;
-    release_title: string | null;
-    release_year: number | null;
-    created_at: string | null;
-    updated_at: string | null;
-  } | null;
-};
+type WorkInput = { title?: unknown; performer_artist_id?: unknown; performer_text?: unknown; release_title?: unknown; release_year?: unknown; roles?: unknown };
+type CreditInput = { artistId?: unknown; role?: unknown };
+type CreditRow = { id: string; artist_id: string; role: string; artists: { id: string; name: string; primary_role: string | null } | null };
+type WorkRow = { id: string; title: string; performer_artist_id: string | null; performer_text: string; performer_artist: { id: string; name: string; slug: string | null } | null; release_title: string | null; release_year: number | null; created_at: string | null; updated_at: string | null; credited_work_credits: CreditRow[] | null };
 
-const WORK_FIELDS = "id,title,performer_text,release_title,release_year,created_at,updated_at";
+const text = (value: unknown) => typeof value === "string" ? value.replace(/\s+/g, " ").trim() : "";
+const nullable = (value: unknown) => text(value) || null;
+function year(value: unknown) { if (value == null || value === "") return null; const result = Number(value); return Number.isInteger(result) && result >= 1000 && result <= new Date().getFullYear() + 1 ? result : Number.NaN; }
+function escapeLike(value: string) { return value.replace(/[%_,()]/g, " ").trim(); }
 
-function cleanText(value: unknown) {
-  return typeof value === "string" ? value.trim() : "";
-}
-
-function nullableText(value: unknown) {
-  const trimmed = cleanText(value);
-  return trimmed ? trimmed : null;
-}
-
-function parseYear(value: unknown) {
-  if (value == null || value === "") return null;
-  const year = Number(value);
-  if (!Number.isInteger(year) || year < 0 || year > 9999) return Number.NaN;
-  return year;
-}
-
-function normalizeRole(role: string) {
-  return role.replace(/\s+/g, " ").trim();
-}
-
-function parseRoles(value: CreativeWorkPayload["roles"]) {
-  const rawRoles = Array.isArray(value)
-    ? value
-    : typeof value === "string"
-      ? value.split(",")
-      : [];
-  const roles = rawRoles.map(normalizeRole).filter(Boolean);
-  return [...new Map(roles.map((role) => [role.toLocaleLowerCase(), role])).values()];
-}
-
-async function findOrCreateWork(payload: {
-  title: string;
-  performer_text: string | null;
-  release_title: string | null;
-  release_year: number | null;
-}) {
-  const supabase = getSupabaseClient();
-  let query = supabase
-    .from("credited_works")
-    .select("id")
-    .eq("title", payload.title);
-
-  query = payload.performer_text == null
-    ? query.is("performer_text", null)
-    : query.eq("performer_text", payload.performer_text);
-  query = payload.release_title == null
-    ? query.is("release_title", null)
-    : query.eq("release_title", payload.release_title);
-  query = payload.release_year == null
-    ? query.is("release_year", null)
-    : query.eq("release_year", payload.release_year);
-
-  const existing = await query.maybeSingle();
-  if (existing.error) return existing;
-  if (existing.data?.id) return existing;
-
-  return supabase
-    .from("credited_works")
-    .insert(payload)
-    .select("id")
-    .maybeSingle();
-}
-
-function groupCredits(rows: CreditRow[]) {
-  const byWork = new Map<string, CreditRow[]>();
-  for (const row of rows) {
-    if (!row.credited_works) continue;
-    const current = byWork.get(row.credited_work_id) ?? [];
-    current.push(row);
-    byWork.set(row.credited_work_id, current);
+function parseCredits(value: unknown): Array<{ artist_id: string; role: string }> {
+  if (!Array.isArray(value)) return [];
+  const unique = new Map<string, { artist_id: string; role: string }>();
+  for (const item of value as CreditInput[]) {
+    const artist_id = text(item.artistId);
+    const role = text(item.role).toLowerCase();
+    if (artist_id && WORK_ROLES.has(role)) unique.set(`${artist_id}:${role}`, { artist_id, role });
   }
-
-  return [...byWork.values()].map((credits) => {
-    const work = credits[0].credited_works!;
-    return {
-      ...work,
-      roles: credits.map((credit) => credit.role).sort((a, b) => a.localeCompare(b)),
-      credit_ids: credits.map((credit) => credit.id),
-    };
-  });
+  return [...unique.values()];
 }
 
 export async function GET(request: Request) {
-  const auth = await requireAdminApiRole();
-  if (auth.response) return auth.response;
-
-  const { searchParams } = new URL(request.url);
-  const artistId = searchParams.get("artistId");
-
-  if (!artistId) {
-    return NextResponse.json({ ok: false, error: "Artist id is required." }, { status: 400 });
-  }
-
-  const { data, error } = await getSupabaseClient()
-    .from("credited_work_credits")
-    .select(`id,credited_work_id,artist_id,role,credited_works(${WORK_FIELDS})`)
-    .eq("artist_id", artistId)
-    .order("role", { ascending: true });
-
-  if (error) {
-    return NextResponse.json({ ok: false, error: error.message }, { status: 500 });
-  }
-
-  const works = groupCredits((data ?? []) as unknown as CreditRow[]).sort((a, b) => {
-    const yearDiff = (b.release_year ?? -1) - (a.release_year ?? -1);
-    return yearDiff || a.title.localeCompare(b.title);
-  });
-
-  return NextResponse.json({ ok: true, works });
+  const auth = await requireAdminApiRole(); if (auth.response) return auth.response;
+  const params = new URL(request.url).searchParams;
+  const page = Math.max(1, Number(params.get("page")) || 1);
+  const pageSize = Math.min(100, Math.max(10, Number(params.get("pageSize")) || 25));
+  const artist = text(params.get("artist") ?? params.get("artistId"));
+  const search = escapeLike(text(params.get("search")));
+  const role = text(params.get("role")).toLowerCase();
+  const performerArtist = text(params.get("performerArtist"));
+  const performerStatus = text(params.get("performerStatus"));
+  const filterYear = Number(params.get("year"));
+  const sort = params.get("sort") ?? "year";
+  const ascending = params.get("direction") === "asc";
+  const supabase = getSupabaseClient();
+  let query = supabase.from("credited_works").select(`${WORK_FIELDS},performer_artist:artists!credited_works_performer_artist_id_fkey(id,name,slug),credited_work_credits!inner(id,artist_id,role,artists(id,name,primary_role))`, { count: "exact" });
+  if (artist) query = query.eq("credited_work_credits.artist_id", artist);
+  if (role) query = query.eq("credited_work_credits.role", role);
+  if (performerArtist) query = query.eq("performer_artist_id", performerArtist);
+  if (performerStatus === "linked") query = query.not("performer_artist_id", "is", null);
+  if (performerStatus === "external") query = query.is("performer_artist_id", null);
+  if (performerStatus === "different") query = query.not("performer_artist_id", "is", null).not("performer_text", "is", null);
+  if (Number.isInteger(filterYear) && filterYear > 0) query = query.eq("release_year", filterYear);
+  if (search) query = query.or(`title.ilike.%${search}%,performer_text.ilike.%${search}%,release_title.ilike.%${search}%`);
+  const sortColumn = sort === "title" ? "title" : sort === "updated" ? "updated_at" : "release_year";
+  const from = (page - 1) * pageSize;
+  const response = await query.order(sortColumn, { ascending, nullsFirst: false }).order("title", { ascending: true }).range(from, from + pageSize - 1);
+  if (response.error) return NextResponse.json({ ok: false, error: response.error.message }, { status: 500 });
+  const works = ((response.data ?? []) as unknown as WorkRow[])
+    .map((work) => ({ ...work, credits: work.credited_work_credits ?? [], credited_work_credits: undefined }))
+    .filter((work) => performerStatus !== "different" || Boolean(work.performer_artist && text(work.performer_artist.name).toLocaleLowerCase() !== text(work.performer_text).toLocaleLowerCase()));
+  const totalCredits = works.reduce((sum, work) => sum + work.credits.length, 0);
+  const roles = [...new Set(works.flatMap((work) => work.credits.map((credit) => credit.role)))];
+  return NextResponse.json({ ok: true, works, pagination: { page, pageSize, total: response.count ?? 0, pages: Math.ceil((response.count ?? 0) / pageSize) }, summary: { totalWorks: response.count ?? 0, pageCredits: totalCredits, roles: roles.length } });
 }
 
 export async function POST(request: Request) {
-  const auth = await requireAdminApiRole();
-  if (auth.response) return auth.response;
-
-  const { artistId, workId, workData } = await request.json();
-  const payload = workData as CreativeWorkPayload | undefined;
-  const title = cleanText(payload?.title);
-  const roles = parseRoles(payload?.roles);
-  const releaseYear = parseYear(payload?.release_year);
-
-  if (!artistId) return NextResponse.json({ ok: false, error: "Artist id is required." }, { status: 400 });
-  if (!title) return NextResponse.json({ ok: false, error: "Title is required." }, { status: 400 });
-  if (Number.isNaN(releaseYear)) return NextResponse.json({ ok: false, error: "Year must be a valid number." }, { status: 400 });
-  if (roles.length === 0) return NextResponse.json({ ok: false, error: "At least one role is required." }, { status: 400 });
-
+  const auth = await requireAdminApiRole(); if (auth.response) return auth.response;
+  const body = await request.json();
+  const work = (body.workData ?? body.work ?? {}) as WorkInput;
+  const title = text(work.title); const release_year = year(work.release_year);
+  const performer_artist_id = nullable(work.performer_artist_id);
+  const performer_text = text(work.performer_text);
+  const credits = parseCredits(body.credits ?? (body.artistId ? [{ artistId: body.artistId, role: Array.isArray(work.roles) ? work.roles[0] : text(work.roles).split(",")[0] }] : []));
+  if (!title) return NextResponse.json({ ok: false, error: "titleRequired" }, { status: 400 });
+  if (!performer_text) return NextResponse.json({ ok: false, error: "performerRequired" }, { status: 400 });
+  if (Number.isNaN(release_year)) return NextResponse.json({ ok: false, error: "yearInvalid" }, { status: 400 });
+  if (!credits.length) return NextResponse.json({ ok: false, error: "creditRequired" }, { status: 400 });
   const supabase = getSupabaseClient();
-  const normalizedWork = {
-    title,
-    performer_text: nullableText(payload?.performer_text),
-    release_title: nullableText(payload?.release_title),
-    release_year: releaseYear as number | null,
-  };
-
-  let creditedWorkId = workId as string | undefined;
-  if (creditedWorkId) {
-    const response = await supabase
-      .from("credited_works")
-      .update(normalizedWork)
-      .eq("id", creditedWorkId)
-      .select("id")
-      .maybeSingle();
-    if (response.error) {
-      return NextResponse.json({ ok: false, error: response.error.message }, { status: 500 });
-    }
-    if (!response.data?.id) {
-      return NextResponse.json({ ok: false, error: "No creative work row was saved." }, { status: 500 });
-    }
+  if (performer_artist_id) {
+    const performer = await supabase.from("artists").select("id").eq("id", performer_artist_id).maybeSingle();
+    if (performer.error || !performer.data) return NextResponse.json({ ok: false, error: "performerArtistInvalid" }, { status: 400 });
+  }
+  const payload = { title, performer_artist_id, performer_text, release_title: nullable(work.release_title), release_year };
+  let workId = text(body.workId);
+  if (!workId) {
+    let duplicate = supabase.from("credited_works").select("id,title,performer_artist_id,performer_text,release_title,release_year").ilike("title", title);
+    duplicate = performer_artist_id
+      ? duplicate.or(`performer_artist_id.eq.${performer_artist_id},performer_text.ilike.${performer_text}`)
+      : duplicate.ilike("performer_text", performer_text);
+    duplicate = payload.release_title ? duplicate.ilike("release_title", payload.release_title) : duplicate.is("release_title", null);
+    duplicate = payload.release_year ? duplicate.eq("release_year", payload.release_year) : duplicate.is("release_year", null);
+    const existing = await duplicate.limit(5);
+    if (existing.error) return NextResponse.json({ ok: false, error: existing.error.message }, { status: 500 });
+    if (existing.data?.length && !body.useExistingId && !body.confirmCreate) return NextResponse.json({ ok: false, error: "possibleDuplicate", matches: existing.data }, { status: 409 });
+    workId = text(body.useExistingId);
+    if (!workId) { const created = await supabase.from("credited_works").insert(payload).select("id").single(); if (created.error) return NextResponse.json({ ok: false, error: created.error.message }, { status: 500 }); workId = created.data.id; }
   } else {
-    const response = await findOrCreateWork(normalizedWork);
-    if (response.error) {
-      return NextResponse.json({ ok: false, error: response.error.message }, { status: 500 });
-    }
-    creditedWorkId = response.data?.id;
+    const updated = await supabase.from("credited_works").update(payload).eq("id", workId); if (updated.error) return NextResponse.json({ ok: false, error: updated.error.message }, { status: 500 });
   }
-
-  if (!creditedWorkId) {
-    return NextResponse.json({ ok: false, error: "No creative work row was saved." }, { status: 500 });
-  }
-
-  const { data: existingCredits, error: existingCreditsError } = await supabase
-    .from("credited_work_credits")
-    .select("id,role")
-    .eq("credited_work_id", creditedWorkId)
-    .eq("artist_id", artistId);
-
-  if (existingCreditsError) {
-    return NextResponse.json({ ok: false, error: existingCreditsError.message }, { status: 500 });
-  }
-
-  const requestedRoleKeys = new Set(roles.map((role) => role.toLocaleLowerCase()));
-  const existingRoleKeys = new Map(
-    (existingCredits ?? []).map((credit) => [String(credit.role).toLocaleLowerCase(), credit]),
-  );
-  const roleIdsToDelete = (existingCredits ?? [])
-    .filter((credit) => !requestedRoleKeys.has(String(credit.role).toLocaleLowerCase()))
-    .map((credit) => credit.id);
-  const rolesToInsert = roles.filter((role) => !existingRoleKeys.has(role.toLocaleLowerCase()));
-
-  if (roleIdsToDelete.length > 0) {
-    const { error: deleteError } = await supabase
-      .from("credited_work_credits")
-      .delete()
-      .in("id", roleIdsToDelete);
-
-    if (deleteError) {
-      return NextResponse.json({ ok: false, error: deleteError.message }, { status: 500 });
-    }
-  }
-
-  if (rolesToInsert.length > 0) {
-    const { error: insertError } = await supabase.from("credited_work_credits").insert(
-      rolesToInsert.map((role) => ({
-        credited_work_id: creditedWorkId,
-        artist_id: artistId,
-        role,
-      })),
-    );
-
-    if (insertError) {
-      return NextResponse.json({ ok: false, error: insertError.message }, { status: 500 });
-    }
-  }
-
-  return NextResponse.json({ ok: true, id: creditedWorkId });
+  const existing = await supabase.from("credited_work_credits").select("id,artist_id,role").eq("credited_work_id", workId);
+  if (existing.error) return NextResponse.json({ ok: false, error: existing.error.message }, { status: 500 });
+  const wanted = new Set(credits.map((credit) => `${credit.artist_id}:${credit.role}`));
+  const remove = (existing.data ?? []).filter((credit) => !wanted.has(`${credit.artist_id}:${credit.role}`)).map((credit) => credit.id);
+  const have = new Set((existing.data ?? []).map((credit) => `${credit.artist_id}:${credit.role}`));
+  if (remove.length) { const result = await supabase.from("credited_work_credits").delete().in("id", remove); if (result.error) return NextResponse.json({ ok: false, error: result.error.message }, { status: 500 }); }
+  const additions = credits.filter((credit) => !have.has(`${credit.artist_id}:${credit.role}`)).map((credit) => ({ credited_work_id: workId, ...credit }));
+  if (additions.length) { const result = await supabase.from("credited_work_credits").insert(additions); if (result.error) return NextResponse.json({ ok: false, error: result.error.code === "23505" ? "duplicateCredit" : result.error.message }, { status: 409 }); }
+  return NextResponse.json({ ok: true, id: workId });
 }
 
 export async function DELETE(request: Request) {
-  const auth = await requireAdminApiRole();
-  if (auth.response) return auth.response;
-
-  const { artistId, workId } = await request.json();
-
-  if (!artistId || !workId) {
-    return NextResponse.json({ ok: false, error: "Artist id and work id are required." }, { status: 400 });
-  }
-
-  const { error } = await getSupabaseClient()
-    .from("credited_work_credits")
-    .delete()
-    .eq("artist_id", artistId)
-    .eq("credited_work_id", workId);
-
-  if (error) {
-    return NextResponse.json({ ok: false, error: error.message }, { status: 500 });
-  }
-
-  return NextResponse.json({ ok: true, id: workId });
+  const auth = await requireAdminApiRole("admin"); if (auth.response) return auth.response;
+  const body = await request.json(); const workId = text(body.workId); const artistId = text(body.artistId);
+  if (!workId) return NextResponse.json({ ok: false, error: "workRequired" }, { status: 400 });
+  const supabase = getSupabaseClient();
+  if (artistId && !body.deleteEntireWork) { const result = await supabase.from("credited_work_credits").delete().eq("credited_work_id", workId).eq("artist_id", artistId); if (result.error) return NextResponse.json({ ok: false, error: result.error.message }, { status: 500 }); return NextResponse.json({ ok: true }); }
+  if (body.confirmTitle !== body.title) return NextResponse.json({ ok: false, error: "confirmationMismatch" }, { status: 400 });
+  const result = await supabase.from("credited_works").delete().eq("id", workId); if (result.error) return NextResponse.json({ ok: false, error: result.error.message }, { status: 500 });
+  return NextResponse.json({ ok: true });
 }

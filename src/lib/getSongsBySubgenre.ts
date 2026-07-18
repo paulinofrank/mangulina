@@ -1,54 +1,77 @@
 import type { ArchiveSongRow } from "@/app/[locale]/archive/SongsByYearList";
 import { supabase } from "@/lib/supabase";
 
-type RecordingViewRow = ArchiveSongRow & {
-  artist_id: string | null;
-};
-
 type SubgenreSongOptions = {
   limit?: number;
   offset?: number;
   sort?: "title" | "views";
 };
 
+const SUPABASE_BATCH_SIZE = 1000;
+const ARTIST_ID_BATCH_SIZE = 500;
+
+type RecordingViewRow = ArchiveSongRow & {
+  artist_id: string | null;
+};
+
 export async function getSongsBySubgenre(
   genreId: number,
-  subgenreId: number,
+  subgenreId: number | null,
   options: SubgenreSongOptions = {},
 ) {
-  const { data: subgenre, error: subgenreError } = await supabase
+  const { data: genre, error: genreError } = await supabase
     .from("genres")
-    .select("id,parent_id,name")
-    .eq("id", subgenreId)
-    .eq("parent_id", genreId)
-    .eq("level", 1)
+    .select("id,name")
+    .eq("id", genreId)
+    .eq("level", 0)
     .eq("active", true)
     .maybeSingle();
 
+  if (genreError) throw genreError;
+  if (!genre) return null;
+
+  const { data: subgenre, error: subgenreError } = subgenreId === null
+    ? { data: null, error: null }
+    : await supabase
+        .from("genres")
+        .select("id,parent_id,name")
+        .eq("id", subgenreId)
+        .eq("parent_id", genreId)
+        .eq("level", 1)
+        .eq("active", true)
+        .maybeSingle();
+
   if (subgenreError) throw subgenreError;
-  if (!subgenre) return null;
+  if (subgenreId !== null && !subgenre) return null;
 
   const sort = options.sort === "title" ? "title" : "views";
 
-  const { data, error } = await supabase
-    .from("recordings_with_release_info")
-    .select(
-      "recording_id,recording_title,artist_id,artist_name,duration,views,genre_id,genre_name,subgenre_id,subgenre_name,release_id",
-    )
-    .eq("genre_id", genreId)
-    .eq("subgenre_id", subgenreId)
-    .order(sort === "title" ? "recording_title" : "views", {
-      ascending: sort === "title",
-      nullsFirst: false,
-    });
+  const rows: RecordingViewRow[] = [];
 
-  if (error) throw error;
+  for (let from = 0; ; from += SUPABASE_BATCH_SIZE) {
+    let query = supabase
+      .from("recordings_with_release_info")
+      .select(
+        "recording_id,recording_title,artist_id,artist_name,duration,views,genre_id,genre_name,subgenre_id,subgenre_name,release_id",
+      )
+      .eq("genre_id", genreId);
 
-  type RecordingViewRow = ArchiveSongRow & {
-    artist_id: string | null;
-  };
+    if (subgenreId !== null) query = query.eq("subgenre_id", subgenreId);
 
-  const rows = (data ?? []) as RecordingViewRow[];
+    const { data, error } = await query
+      .order(sort === "title" ? "recording_title" : "views", {
+        ascending: sort === "title",
+        nullsFirst: false,
+      })
+      .order("recording_id", { ascending: true })
+      .range(from, from + SUPABASE_BATCH_SIZE - 1);
+
+    if (error) throw error;
+
+    const batch = (data ?? []) as RecordingViewRow[];
+    rows.push(...batch);
+    if (batch.length < SUPABASE_BATCH_SIZE) break;
+  }
   const artistIds = [
     ...new Set(
       rows
@@ -60,16 +83,17 @@ export async function getSongsBySubgenre(
   let publishedArtistIds = new Set<string>();
 
   if (artistIds.length > 0) {
-    // Large-ID audit: popular subgenres can span more than 100 artists; publication
-    // filtering should move into the database query/RPC instead of growing this URL.
-    const { data: artists, error: artistsError } = await supabase
-      .from("artists")
-      .select("id")
-      .eq("status", "published")
-      .in("id", artistIds);
+    publishedArtistIds = new Set<string>();
+    for (let index = 0; index < artistIds.length; index += ARTIST_ID_BATCH_SIZE) {
+      const { data: artists, error: artistsError } = await supabase
+        .from("artists")
+        .select("id")
+        .eq("status", "published")
+        .in("id", artistIds.slice(index, index + ARTIST_ID_BATCH_SIZE));
 
-    if (artistsError) throw artistsError;
-    publishedArtistIds = new Set((artists ?? []).map((artist) => artist.id));
+      if (artistsError) throw artistsError;
+      for (const artist of artists ?? []) publishedArtistIds.add(artist.id);
+    }
   }
 
   const visibleRows = rows.filter(
@@ -114,7 +138,7 @@ export async function getSongsBySubgenre(
   }));
 
   return {
-    subgenreName: subgenre.name,
+    subgenreName: subgenre?.name ?? genre.name,
     songs,
     total: visibleRows.length,
     hasMore: offset + songs.length < visibleRows.length,

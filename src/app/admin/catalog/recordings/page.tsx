@@ -12,6 +12,7 @@ import {
   adminInputClass,
   type PickerOption,
 } from "@/components/admin/CatalogAdminControls";
+import RecordingCreditsManager from "@/components/admin/RecordingCreditsManager";
 
 type AdminRecording = {
   id: string;
@@ -480,7 +481,7 @@ export default function AdminCatalogRecordingsPage() {
                           recording.artist_name,
                           recording.recording_year,
                           recording.release_title,
-                          recording.youtube_id,
+                          recording.isrcs?.join(", "),
                         ]
                           .filter(Boolean)
                           .join(" · ")}
@@ -562,7 +563,7 @@ export default function AdminCatalogRecordingsPage() {
                 }}
               />
               <AdminField label="Recording Year"><input type="number" value={form.recording_year} onChange={(event) => updateForm("recording_year", event.target.value)} className={adminInputClass} /></AdminField>
-              <AdminField label="YouTube ID / URL"><input value={form.youtube_id} onChange={(event) => updateForm("youtube_id", event.target.value)} className={adminInputClass} /></AdminField>
+              <AdminField label="ISRCs"><input value={form.isrcs} onChange={(event) => updateForm("isrcs", event.target.value)} placeholder="USRC17607839, ..." className={adminInputClass} /></AdminField>
               <AdminField label="Duration"><input value={form.duration} onChange={(event) => updateForm("duration", event.target.value)} placeholder="215 or 3:35" className={adminInputClass} /></AdminField>
               <AdminField label="Recording Context">
                 <select value={form.recording_context} onChange={(event) => updateForm("recording_context", event.target.value)} className={adminInputClass}>
@@ -581,7 +582,7 @@ export default function AdminCatalogRecordingsPage() {
             </div>
 
             <div className="mt-4 grid gap-4 md:grid-cols-2">
-              <AdminField label="ISRCs"><input value={form.isrcs} onChange={(event) => updateForm("isrcs", event.target.value)} placeholder="USRC17607839, ..." className={adminInputClass} /></AdminField>
+              <AdminField label="Release ID"><input value={form.release_id} readOnly className={`${adminInputClass} cursor-not-allowed bg-gray-50`} /></AdminField>
               <AdminField label="Disambiguation"><input value={form.disambiguation} onChange={(event) => updateForm("disambiguation", event.target.value)} className={adminInputClass} /></AdminField>
               <AdminField label="Recording ID"><input value={selectedRecording?.id ?? ""} readOnly className={`${adminInputClass} bg-gray-50 cursor-not-allowed`} /></AdminField>
               <AdminField label="Work ID"><input value={form.work_id} onChange={(event) => updateForm("work_id", event.target.value)} className={adminInputClass} /></AdminField>
@@ -609,6 +610,11 @@ export default function AdminCatalogRecordingsPage() {
 
           {selectedRecordingId && (
             <>
+              <RecordingCreditsManager
+                recordingId={selectedRecordingId}
+                recordingSlug={selectedRecording?.slug ?? null}
+              />
+
               <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
                 <h2 className="text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">Platform Links Summary</h2>
                 <div className="mt-4 space-y-2">

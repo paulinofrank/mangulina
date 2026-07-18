@@ -2,11 +2,9 @@
  * Spanish editorial content for genre pages.
  *
  * Genre title/subtitle/description/history are sourced from the Supabase
- * `genres` table (falling back to `genres.ts`), and that content is authored in
- * English. Rather than add `*_es` columns + a migration + an editor workflow
- * for ~14 mostly-static genres, the Spanish copy lives here, version-controlled
- * and reviewable, and is applied as an override when the active locale is `es`.
- * Genres without an entry fall back to the English source.
+ * `genres` table (falling back to `genres.ts` for general editorial copy).
+ * History is database-authored only; Spanish history falls back to the
+ * database-authored English history when no Spanish value is available.
  *
  * Coverage is enforced by `npm run i18n:audit` (genre-content parity check).
  */
@@ -120,6 +118,7 @@ export function localizeGenreContent<
     subtitle?: string | null;
     description?: string | null;
     history?: string | null;
+    historyEs?: string | null;
   },
 >(genre: T, locale: string): T {
   if (locale !== "es") return genre;
@@ -130,6 +129,6 @@ export function localizeGenreContent<
     title: es.title ?? genre.title,
     subtitle: es.subtitle ?? genre.subtitle,
     description: es.description ?? genre.description,
-    history: es.history ?? genre.history,
+    history: genre.historyEs ?? genre.history,
   };
 }

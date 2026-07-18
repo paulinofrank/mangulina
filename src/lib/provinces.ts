@@ -9,6 +9,10 @@ export type PublishedProvince = {
   count: number;
 };
 
+export function getProvinceDisplayName(province: string) {
+  return province === "X - Born Outside" ? "Born Abroad" : province;
+}
+
 export async function getPublishedProvinces(): Promise<PublishedProvince[]> {
   const supabase = getSupabaseClient();
   const counts = new Map<string, number>();

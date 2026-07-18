@@ -5,7 +5,7 @@ import JsonLd from "@/components/seo/JsonLd";
 
 import { getArchiveDecades } from "@/lib/archivePeriods";
 import { getArchiveCounts } from "@/lib/getSongsByYear";
-import { getPublishedProvinces } from "@/lib/provinces";
+import { getProvinceDisplayName, getPublishedProvinces } from "@/lib/provinces";
 import { createPageMetadata, type SeoLocale } from "@/lib/seo";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
 
@@ -189,7 +189,9 @@ export default async function DiscoverPage() {
                 href={`/provinces/${province.slug}`}
                 className="flex items-center justify-between gap-3 rounded-2xl border border-[#002D62]/10 bg-[#FAF9F6] px-4 py-4 text-[#002D62] transition hover:border-[#002D62]/30 hover:bg-[#002D62]/5"
               >
-                <span className="min-w-0 truncate font-medium">{province.name}</span>
+                <span className="min-w-0 truncate font-medium">
+                  {getProvinceDisplayName(province.name)}
+                </span>
                 <span className="shrink-0 text-xs text-gray-500">{province.count}</span>
               </Link>
             ))}

@@ -51,6 +51,9 @@ export default async function ArtistDiscographyGrouped({
       release_type: release.release_type,
       track_count: release.track_count,
       cover_url: release.cover_url,
+      release_group_id: release.release_group_id,
+      edition_count: release.edition_count,
+      editions: release.editions,
     }))
   );
 

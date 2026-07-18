@@ -32,6 +32,14 @@
   "search": {
     "placeholder": "Buscar artistas, canciones...",
     "label": "Búsqueda del sitio",
+    "worksCredits": {
+      "eyebrow": "Administración de Mangulina", "title": "Obras y Créditos", "description": "Gestiona créditos de composición, escritura, arreglos, letras y otros aportes creativos para todos los artistas.",
+      "addWork": "Agregar obra", "editWork": "Editar obra", "artist": "Artista", "searchArtist": "Buscar cualquier artista...", "search": "Buscar", "searchPlaceholder": "Título, intérprete o publicación", "role": "Rol", "allRoles": "Todos los roles", "year": "Año", "clearFilters": "Limpiar filtros", "performerMode": "Tipo de intérprete", "mangulinaArtist": "Artista de Mangulina", "externalPerformer": "Intérprete externo", "externalPerformerName": "Nombre del intérprete externo", "creditedAs": "Acreditado como", "searchPerformer": "Buscar intérprete...", "performerFilter": "Intérprete vinculado", "performerStatus": "Estado del intérprete", "allPerformers": "Todos los intérpretes", "linkedPerformers": "Artistas vinculados de Mangulina", "externalPerformers": "Intérpretes externos", "differentPerformerName": "El nombre vinculado difiere del crédito", "linkedArtist": "Artista vinculado", "confirmExternalMode": "Cambiar a intérprete externo quitará la relación con el artista, pero conservará el nombre acreditado. ¿Continuar?", "confirmCreditedAs": "¿Reemplazar el nombre acreditado actual con {name}? Elige Cancelar para conservar el crédito personalizado.",
+      "totalWorks": "Total de obras", "creditsOnPage": "Créditos en la página", "rolesRepresented": "Roles representados", "work": "Título de la obra", "performer": "Intérprete", "release": "Publicación", "creditedArtists": "Artistas acreditados", "rolesHeader": "Roles", "roles": { "composer": "Compositor", "lyricist": "Letrista", "writer": "Autor", "songwriter": "Cantautor", "orchestrator": "Orquestador", "arranger": "Arreglista", "co-composer": "Cocompositor", "co-writer": "Coautor" },
+      "updated": "Actualizada", "actions": "Acciones", "edit": "Editar", "removeCredit": "Quitar crédito del artista", "loading": "Cargando obras...", "emptyArtist": "No se han agregado Obras y Créditos para este artista.", "emptyAll": "Ninguna obra coincide con los filtros actuales.", "pageOf": "Página {page} de {pages} · {total} obras", "previous": "Anterior", "next": "Siguiente", "workTitle": "Título de la obra", "credits": "Créditos de artistas", "addCredit": "Agregar crédito", "save": "Guardar obra", "saving": "Guardando...", "saved": "Obra y créditos guardados.", "removed": "Se quitó el crédito del artista; la obra compartida se conservó.", "deleted": "Se eliminó la obra completa.",
+      "duplicateWarning": "Ya existe una posible obra coincidente. ¿Crear otra obra de todos modos?", "confirmRemove": "¿Quitar los créditos de {artist} de «{work}»? La obra compartida no se eliminará.", "confirmDelete": "Esta obra compartida tiene {credits} créditos. Para eliminarla por completo, escribe su título exacto: {title}",
+      "errors": { "titleRequired": "El título de la obra es obligatorio.", "yearInvalid": "Ingresa un año de publicación válido.", "creditRequired": "Se requiere al menos un crédito de artista.", "performerRequired": "El nombre acreditado del intérprete es obligatorio.", "performerArtistRequired": "Selecciona un intérprete de Mangulina.", "performerArtistInvalid": "El intérprete seleccionado ya no existe.", "duplicateCredit": "Ese artista ya tiene exactamente ese rol en esta obra.", "possibleDuplicate": "Se encontró un posible duplicado." }
+    },
     "ui": {
       "placeholder": "Buscar artistas, canciones y álbumes.",
       "noQuery": "Escribe algo en el cuadro de búsqueda para empezar.",
@@ -233,7 +241,12 @@
     "works": "Trabajos",
     "role": "Rol",
     "performer": "Intérprete",
+    "performedBy": "Interpretado por",
     "release": "Disco",
+    "worksCreditsRelease": "Lanzado en",
+    "workRoles": {
+      "composer": "Compositor", "songwriter": "Compositor de canciones", "lyricist": "Letrista", "writer": "Autor", "producer": "Productor", "co_producer": "Coproductor", "executive_producer": "Productor ejecutivo", "arranger": "Arreglista", "orchestrator": "Orquestador", "conductor": "Director", "musician": "Músico", "session_musician": "Músico de sesión", "instrumentalist": "Instrumentista", "engineer": "Ingeniero", "recording_engineer": "Ingeniero de grabación", "mixing_engineer": "Ingeniero de mezcla", "mix_engineer": "Ingeniero de mezcla", "mixing": "Mezcla", "mastering_engineer": "Ingeniero de masterización", "mastering": "Masterización", "beat_programmer": "Programador de ritmos", "remixer": "Remezclador"
+    },
     "biography": "Biografía",
     "noBiography": "No hay biografía disponible para este artista.",
     "technicalSheet": "Ficha Técnica",
@@ -269,7 +282,13 @@
     "interviewsSubtitle": "Entrevistas, conversaciones y material de archivo relacionado con este artista.",
     "playAria": "Reproducir {title}",
     "closeVideo": "Cerrar video",
-    "tracksCount": "{count, plural, one {# canción} other {# canciones}}",
+    "tracksCount": "{count, plural, one {# pista} other {# pistas}}",
+    "editionsCount": "{count, plural, one {# edición} other {# ediciones}}",
+    "otherEditions": "Otras ediciones",
+    "representativeEdition": "Edición representativa",
+    "worldwide": "Mundial",
+    "unknownCountry": "País desconocido",
+    "unknownYear": "Año desconocido",
     "releaseGroups": {
       "Album": "Álbumes",
       "EP": "EP",
@@ -792,7 +811,7 @@
     "genreDetail": {
       "learnMoreHistory": "Conoce más sobre la historia de {genre}...",
       "topArtists": "Artistas más vistos de {genre}",
-      "connectedArtists": "Artistas Conectados con {genre}",
+      "connectedArtists": "Artistas más vistos de {genre}",
       "popularSongs": "Canciones más vistas",
       "importantReleases": "Álbumes y Otras Publicaciones Musicales Importantes",
       "releasesIn": "Publicaciones Musicales de {genre}",
@@ -810,7 +829,16 @@
       "loadMoreError": "No es posible cargar más canciones.",
       "noCover": "Sin portada",
       "releaseFallback": "Publicación Musical",
-      "viewAria": "Ver {title}"
+      "viewAria": "Ver {title}",
+      "genreSelectorLabel": "Seleccionar género",
+      "subgenreSelector": {
+        "label": "Subgénero",
+        "all": "Todos"
+      },
+      "publicMedia": {
+        "title": "Videos sobre {genre}",
+        "subtitle": "Entrevistas, documentales, presentaciones y otros videos seleccionados."
+      }
     },
     "login": {
       "backToHomepage": "Volver a Inicio"
@@ -1011,6 +1039,42 @@
     "decadeCounts": "Los recuentos de décadas aún no están disponibles."
   },
   "admin": {
+    "recordingCredits": {
+      "title": "Créditos",
+      "viewSong": "Ver página pública de la canción",
+      "add": "Agregar crédito",
+      "edit": "Editar crédito",
+      "loading": "Cargando créditos...",
+      "missingArtist": "Artista no disponible",
+      "order": "Orden {order}",
+      "moveUp": "Mover a {artist} hacia arriba",
+      "moveDown": "Mover a {artist} hacia abajo",
+      "editFor": "Editar crédito de {artist}",
+      "removeFor": "Eliminar crédito de {artist}",
+      "empty": "Esta grabación aún no tiene créditos.",
+      "cancel": "Cancelar",
+      "artist": "Artista",
+      "searchArtist": "Buscar artistas",
+      "role": "Rol",
+      "creditedAs": "Acreditado como",
+      "creditedAsHelp": "Opcional. Escriba el nombre exactamente como aparece en los créditos originales de la grabación.",
+      "joinPhrase": "Frase de unión después de este artista",
+      "joinPhraseHelp": "Opcional. Se utiliza cuando varios artistas comparten el mismo crédito (por ejemplo: &, feat., con).",
+      "save": "Guardar crédito",
+      "artistRequired": "Selecciona un artista.",
+      "loadFailed": "No se pudieron cargar los créditos.",
+      "duplicateCredit": "Ese artista ya tiene este rol en la grabación.",
+      "saveFailed": "No se pudo guardar el crédito.",
+      "updated": "Crédito actualizado.",
+      "added": "Crédito agregado.",
+      "removeConfirm": "¿Eliminar este crédito? El artista y la grabación no se eliminarán.",
+      "removed": "Crédito eliminado.",
+      "removeFailed": "No se pudo eliminar el crédito.",
+      "reorderFailed": "No se pudo guardar el nuevo orden de créditos.",
+      "roles": {
+        "lead_performer": "Intérprete principal", "featured_performer": "Artista invitado destacado", "guest_performer": "Intérprete invitado", "instrumentalist": "Instrumentista", "vocalist": "Vocalista", "choir": "Coro", "orchestra": "Orquesta", "guitar": "Guitarra", "drums": "Batería", "piano": "Piano", "bass": "Bajo", "trumpet": "Trompeta", "saxophone": "Saxofón", "trombone": "Trombón", "strings": "Cuerdas", "horns": "Metales", "percussion": "Percusión", "conductor": "Director", "producer": "Productor", "engineer": "Ingeniero", "recording_engineer": "Ingeniero de grabación", "mixing_engineer": "Ingeniero de mezcla", "mixing": "Mezcla", "mastering_engineer": "Ingeniero de masterización", "mastering": "Masterización", "session_musician": "Músico de sesión", "arranger": "Arreglista", "composer": "Compositor"
+      }
+    },
     "tools": {
       "analytics": {
         "title": "Analytics",
@@ -1311,6 +1375,11 @@
       "listHeading": "Géneros",
       "searchPlaceholder": "Buscar géneros...",
       "noGenres": "No se encontraron géneros.",
+      "selectGenreLabel": "Género",
+      "selectGenreOption": "— Seleccionar Género —",
+      "selectSubgenreLabel": "Subgénero",
+      "selectSubgenreOption": "— Seleccionar Subgénero —",
+      "selectSubgenreToEdit": "Selecciona un subgénero arriba para editarlo.",
       "homeFeatured": "Inicio",
       "displayOrder": "Orden: {order}",
       "editHeading": "Editar Género",
@@ -1320,7 +1389,34 @@
       "selectGenreFirst": "Selecciona o guarda un género antes de gestionar subgéneros.",
       "noSubgenres": "Sin subgéneros aún.",
       "addSubgenreHeading": "Agregar Nuevo Subgénero",
-      "subgenreNameRequired": "El nombre del subgénero es obligatorio."
+      "subgenreNameRequired": "El nombre del subgénero es obligatorio.",
+      "historyHeading": "Historia del Género",
+      "selectGenreForHistory": "Selecciona o guarda un género antes de editar su historia.",
+      "historyEnglish": "Historia — Inglés",
+      "historySpanish": "Historia — Español",
+      "historyPreview": "Vista Previa",
+      "saveHistory": "Guardar Historia",
+      "media": {
+        "heading": "Videos de {genre}",
+        "title": "Título del video",
+        "url": "URL del video",
+        "videoId": "ID del video de YouTube",
+        "order": "Orden de visualización",
+        "notes": "Notas",
+        "official": "Oficial",
+        "featured": "Destacado",
+        "loadMetadata": "Cargar Metadatos de YouTube",
+        "metadataLoaded": "Metadatos de YouTube cargados.",
+        "youtubeRequired": "Introduce una URL o ID de YouTube primero.",
+        "required": "El título y la URL son obligatorios.",
+        "saved": "Video del género guardado.",
+        "edit": "Editar",
+        "delete": "Eliminar",
+        "deleteConfirm": "¿Eliminar {title}?",
+        "add": "Agregar Video",
+        "update": "Actualizar Video",
+        "cancel": "Cancelar"
+      }
     },
     "discography": {
       "title": "Gestor de Discografía",

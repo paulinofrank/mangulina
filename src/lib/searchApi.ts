@@ -1,6 +1,7 @@
 import { supabase } from "@/lib/supabase";
 import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
+import { normalizeSearchText } from "@/lib/searchRanking";
 
 export type SearchResult = {
   type: "artist" | "song" | "release";
@@ -204,10 +205,6 @@ async function getArtistImageVersions(ids: string[]) {
   );
 }
 
-function normalizeQuery(q: string) {
-  return q.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-}
-
 export async function globalSearch(query: string): Promise<GlobalSearchResponse> {
   const cleaned = query.trim();
 
@@ -219,7 +216,7 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
     };
   }
 
-  const normalized = normalizeQuery(cleaned);
+  const normalized = normalizeSearchText(cleaned);
 
   const { data: fallbackArtistData, error: artistError } = await supabase
     .from("artists")

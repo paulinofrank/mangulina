@@ -5,6 +5,8 @@ type SubgenrePayload = {
   genre_id?: string | number;
   name?: string;
   description?: string | null;
+  history_en?: string | null;
+  history_es?: string | null;
 };
 
 function slugify(value: string) {
@@ -29,7 +31,7 @@ export async function GET(request: Request) {
   const supabase = getSupabaseClient();
   let query = supabase
     .from("genres")
-    .select("id,parent_id,name,description,sort_order")
+    .select("id,parent_id,name,description,history_en,history_es,sort_order")
     .eq("level", 1)
     .eq("active", true)
     .not("parent_id", "is", null)
@@ -54,6 +56,8 @@ export async function GET(request: Request) {
     genre_id: row.parent_id,
     name: row.name,
     description: row.description,
+    history_en: row.history_en,
+    history_es: row.history_es,
   }));
 
   return NextResponse.json({ ok: true, subgenres });
@@ -116,6 +120,8 @@ export async function POST(request: Request) {
   const payload = {
     name: subgenreData.name.trim(),
     description: subgenreData.description ?? null,
+    history_en: subgenreData.history_en ?? null,
+    history_es: subgenreData.history_es ?? null,
     parent_id: parent.id,
     level: 1,
     active: true,

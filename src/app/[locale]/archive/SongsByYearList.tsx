@@ -25,11 +25,13 @@ export default function SongsByYearList({
   hasMore = false,
   loadingMore = false,
   onShowMore,
+  compact = false,
 }: {
   songs: ArchiveSongRow[];
   hasMore?: boolean;
   loadingMore?: boolean;
   onShowMore?: () => void;
+  compact?: boolean;
 }) {
   const t = useTranslations("table");
   const tCommon = useTranslations("common");
@@ -61,18 +63,20 @@ export default function SongsByYearList({
           <Link
             key={song.recording_id}
             href={href}
-            className="grid grid-cols-[2rem_minmax(0,1fr)_minmax(6.75rem,auto)] gap-x-2.5 gap-y-0.5 border-b py-2 text-sm text-[#002D62] transition hover:bg-[#002D62]/5 last:border-none md:grid-cols-[3rem_minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,1fr)_5rem_6rem] md:items-center md:gap-3 md:py-2"
+            className={`grid grid-cols-[2rem_minmax(0,1fr)_minmax(6.75rem,auto)] gap-x-2.5 gap-y-0.5 border-b text-sm text-[#002D62] transition hover:bg-[#002D62]/5 last:border-none md:grid-cols-[3rem_minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,1fr)_5rem_6rem] md:items-center md:gap-3 ${compact ? "py-[3px] md:py-[3px]" : "py-2 md:py-2"}`}
           >
-            <span className="relative col-start-1 row-span-2 row-start-1 block h-8 w-8 overflow-hidden rounded-md border border-black/5 bg-gray-100 md:row-span-1 md:h-10 md:w-10">
-              <img
-                src={coverUrl}
-                alt=""
-                className="h-full w-full object-cover"
-                loading="lazy"
-                onError={(event) => {
-                  event.currentTarget.src = "/images/placeholder-song.jpg";
-                }}
-              />
+            <span className="col-start-1 row-span-2 row-start-1 flex h-full items-center md:row-span-1">
+              <span className="relative block h-8 w-8 overflow-hidden rounded-md border border-black/5 bg-gray-100 md:h-10 md:w-10">
+                <img
+                  src={coverUrl}
+                  alt=""
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                  onError={(event) => {
+                    event.currentTarget.src = "/images/placeholder-song.jpg";
+                  }}
+                />
+              </span>
             </span>
 
             <span className="col-start-2 row-start-1 truncate font-semibold md:col-start-2 md:row-start-auto">

@@ -1,14 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { FormEvent } from "react";
 import { useTranslations } from "next-intl";
+import BioText from "@/components/molecules/BioText";
+import GenreMediaManager from "@/components/admin/GenreMediaManager";
 
 type GenreRow = {
   id: string | number;
   name: string;
   description: string | null;
+  history_en: string | null;
+  history_es: string | null;
   slug: string;
   display_order: number | null;
   is_home_featured: boolean | null;
@@ -19,12 +23,16 @@ type SubgenreRow = {
   genre_id: string | number;
   name: string;
   description: string | null;
+  history_en: string | null;
+  history_es: string | null;
 };
 
 type GenreForm = {
   name: string;
   slug: string;
   description: string;
+  history_en: string;
+  history_es: string;
   display_order: string;
   is_home_featured: boolean;
 };
@@ -32,6 +40,8 @@ type GenreForm = {
 type SubgenreForm = {
   name: string;
   description: string;
+  history_en: string;
+  history_es: string;
 };
 
 type AdminGenresResponse = {
@@ -72,6 +82,8 @@ const emptyGenreForm: GenreForm = {
   name: "",
   slug: "",
   description: "",
+  history_en: "",
+  history_es: "",
   display_order: "",
   is_home_featured: false,
 };
@@ -79,6 +91,8 @@ const emptyGenreForm: GenreForm = {
 const emptySubgenreForm: SubgenreForm = {
   name: "",
   description: "",
+  history_en: "",
+  history_es: "",
 };
 
 function slugify(value: string) {
@@ -111,9 +125,9 @@ export default function AdminGenresPage() {
   const [subgenres, setSubgenres] = useState<SubgenreRow[]>([]);
   const [subgenreForms, setSubgenreForms] = useState<Record<string, SubgenreForm>>({});
   const [selectedGenreId, setSelectedGenreId] = useState<string | number | null>(null);
+  const [selectedSubgenreId, setSelectedSubgenreId] = useState<string | number | null>(null);
   const [genreForm, setGenreForm] = useState<GenreForm>(emptyGenreForm);
   const [newSubgenreForm, setNewSubgenreForm] = useState<SubgenreForm>(emptySubgenreForm);
-  const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState(t("admin.status.loadingGenres"));
 
@@ -122,17 +136,13 @@ export default function AdminGenresPage() {
     [genres, selectedGenreId],
   );
 
-  const filteredGenres = useMemo(() => {
-    const query = search.trim().toLowerCase();
-
-    if (!query) return genres;
-
-    return genres.filter((genre) =>
-      [genre.name, genre.slug, genre.description]
-        .filter(Boolean)
-        .some((value) => String(value).toLowerCase().includes(query)),
-    );
-  }, [genres, search]);
+  const selectedSubgenre = useMemo(
+    () => subgenres.find((subgenre) => String(subgenre.id) === String(selectedSubgenreId)) ?? null,
+    [selectedSubgenreId, subgenres],
+  );
+  const selectedSubgenreForm = selectedSubgenre
+    ? subgenreForms[String(selectedSubgenre.id)] ?? emptySubgenreForm
+    : null;
 
   const loadGenres = useCallback(async () => {
     setLoading(true);
@@ -142,7 +152,7 @@ export default function AdminGenresPage() {
     const result = (await response.json()) as AdminGenresResponse;
 
     if (!response.ok || !result.ok) {
-      setStatus(`${t("admin.errors.loadingGenres").replace("{error}", result.error || response.statusText)}`);
+      setStatus(t("admin.errors.loadingGenres", { error: result.error || response.statusText }));
       setLoading(false);
       return;
     }
@@ -157,6 +167,7 @@ export default function AdminGenresPage() {
       if (!genreId) {
         setSubgenres([]);
         setSubgenreForms({});
+        setSelectedSubgenreId(null);
         return;
       }
 
@@ -171,13 +182,16 @@ export default function AdminGenresPage() {
       );
 
       if (!response.ok || !result.ok) {
-        setStatus(`${t("admin.errors.loadingSubgenres").replace("{error}", result.error || response.statusText)}`);
+        setStatus(t("admin.errors.loadingSubgenres", { error: result.error || response.statusText }));
         return;
       }
 
       const rows = result.subgenres ?? [];
 
       setSubgenres(rows);
+      setSelectedSubgenreId((current) =>
+        rows.some((subgenre) => String(subgenre.id) === String(current)) ? current : null,
+      );
       setSubgenreForms(
         Object.fromEntries(
           rows.map((subgenre) => [
@@ -185,6 +199,8 @@ export default function AdminGenresPage() {
             {
               name: subgenre.name ?? "",
               description: subgenre.description ?? "",
+              history_en: subgenre.history_en ?? "",
+              history_es: subgenre.history_es ?? "",
             },
           ]),
         ),
@@ -204,6 +220,7 @@ export default function AdminGenresPage() {
 
   function resetGenreForm() {
     setSelectedGenreId(null);
+    setSelectedSubgenreId(null);
     setGenreForm(emptyGenreForm);
     setSubgenres([]);
     setSubgenreForms({});
@@ -213,10 +230,13 @@ export default function AdminGenresPage() {
 
   function selectGenre(genre: GenreRow) {
     setSelectedGenreId(genre.id);
+    setSelectedSubgenreId(null);
     setGenreForm({
       name: genre.name ?? "",
       slug: genre.slug ?? "",
       description: genre.description ?? "",
+      history_en: genre.history_en ?? "",
+      history_es: genre.history_es ?? "",
       display_order: genre.display_order == null ? "" : String(genre.display_order),
       is_home_featured: Boolean(genre.is_home_featured),
     });
@@ -244,6 +264,8 @@ export default function AdminGenresPage() {
       name: genreForm.name.trim(),
       slug: genreForm.slug.trim() || slugify(genreForm.name),
       description: nullable(genreForm.description),
+      history_en: nullable(genreForm.history_en),
+      history_es: nullable(genreForm.history_es),
       display_order: genreForm.display_order.trim()
         ? Number(genreForm.display_order)
         : null,
@@ -266,7 +288,7 @@ export default function AdminGenresPage() {
     const result = (await response.json()) as AdminWriteResponse;
 
     if (!response.ok || !result.ok) {
-      setStatus(`${t("admin.errors.savingGenre").replace("{error}", result.error || response.statusText)}`);
+      setStatus(t("admin.errors.savingGenre", { error: result.error || response.statusText }));
       setLoading(false);
       return;
     }
@@ -298,15 +320,17 @@ export default function AdminGenresPage() {
       body: JSON.stringify({
         subgenreId: subgenre.id,
         subgenreData: {
-        name: form.name.trim(),
-        description: nullable(form.description),
+          name: form.name.trim(),
+          description: nullable(form.description),
+          history_en: nullable(form.history_en),
+          history_es: nullable(form.history_es),
         },
       }),
     });
     const result = (await response.json()) as AdminWriteResponse;
 
     if (!response.ok || !result.ok) {
-      setStatus(`${t("admin.errors.savingSubgenre").replace("{error}", result.error || response.statusText)}`);
+      setStatus(t("admin.errors.savingSubgenre", { error: result.error || response.statusText }));
       setLoading(false);
       return;
     }
@@ -340,22 +364,25 @@ export default function AdminGenresPage() {
       body: JSON.stringify({
         subgenreId: null,
         subgenreData: {
-        genre_id: selectedGenreId,
-        name: newSubgenreForm.name.trim(),
-        description: nullable(newSubgenreForm.description),
+          genre_id: selectedGenreId,
+          name: newSubgenreForm.name.trim(),
+          description: nullable(newSubgenreForm.description),
+          history_en: null,
+          history_es: null,
         },
       }),
     });
     const result = (await response.json()) as AdminWriteResponse;
 
     if (!response.ok || !result.ok) {
-      setStatus(`${t("admin.errors.addingSubgenre").replace("{error}", result.error || response.statusText)}`);
+      setStatus(t("admin.errors.addingSubgenre", { error: result.error || response.statusText }));
       setLoading(false);
       return;
     }
 
     setNewSubgenreForm(emptySubgenreForm);
     await loadSubgenres(selectedGenreId);
+    setSelectedSubgenreId(result.id ?? null);
     setStatus(t("admin.status.subgenreSaved"));
     setLoading(false);
   }
@@ -407,47 +434,45 @@ export default function AdminGenresPage() {
               </button>
             </div>
 
-            <input
-              value={search}
-              onChange={(event) => setSearch(event.target.value)}
-              placeholder={t("admin.genres.searchPlaceholder")}
-              className={inputClass}
-            />
-
-            <div className="mt-4 max-h-170 space-y-2 overflow-y-auto pr-1">
-              {filteredGenres.map((genre) => (
-                <button
-                  key={genre.id}
-                  type="button"
-                  onClick={() => selectGenre(genre)}
-                  className={`w-full rounded-xl border px-4 py-3 text-left transition ${
-                    String(selectedGenreId) === String(genre.id)
-                      ? "border-[#CE1126]/40 bg-[#CE1126]/5"
-                      : "border-gray-100 bg-white hover:border-[#002D62]/20"
-                  }`}
+            <div className="space-y-4">
+              <Field label={t("admin.genres.selectGenreLabel")}>
+                <select
+                  value={selectedGenreId ?? ""}
+                  onChange={(event) => {
+                    const genre = genres.find(
+                      (item) => String(item.id) === event.target.value,
+                    );
+                    if (genre) selectGenre(genre);
+                    else resetGenreForm();
+                  }}
+                  className={inputClass}
                 >
-                  <div className="flex items-start justify-between gap-3">
-                    <div>
-                      <p className="font-medium text-[#002D62]">{genre.name}</p>
-                      <p className="mt-1 text-xs text-gray-500">{genre.slug}</p>
-                    </div>
-                    {genre.is_home_featured && (
-                      <span className="rounded-full bg-[#CE1126]/10 px-2 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-[#CE1126]">
-                        {t("admin.genres.homeFeatured")}
-                      </span>
-                    )}
-                  </div>
-                  <p className="mt-2 text-xs text-gray-500">
-                    {t("admin.genres.displayOrder").replace("{order}", String(genre.display_order ?? "None"))}
-                  </p>
-                </button>
-              ))}
+                  <option value="">{t("admin.genres.selectGenreOption")}</option>
+                  {genres.map((genre) => (
+                    <option key={genre.id} value={genre.id}>
+                      {genre.name}
+                    </option>
+                  ))}
+                </select>
+              </Field>
 
-              {!filteredGenres.length && (
-                <p className="rounded-xl border border-dashed border-gray-200 px-4 py-6 text-center text-sm text-gray-500">
-                  {t("admin.genres.noGenres")}
-                </p>
-              )}
+              <Field label={t("admin.genres.selectSubgenreLabel")}>
+                <select
+                  value={selectedSubgenreId ?? ""}
+                  onChange={(event) => {
+                    if (!selectedGenreId) return;
+                    setSelectedSubgenreId(event.target.value || null);
+                  }}
+                  className={inputClass}
+                >
+                  <option value="">{t("admin.genres.selectSubgenreOption")}</option>
+                  {subgenres.map((subgenre) => (
+                    <option key={subgenre.id} value={subgenre.id}>
+                      {subgenre.name}
+                    </option>
+                  ))}
+                </select>
+              </Field>
             </div>
           </aside>
 
@@ -471,7 +496,7 @@ export default function AdminGenresPage() {
                 </button>
               </div>
 
-              <form onSubmit={saveGenre} className="space-y-4">
+              <form id="genre-form" onSubmit={saveGenre} className="space-y-4">
                 <div className="grid gap-4 md:grid-cols-2">
                   <Field label={t("form.labels.genreName")}>
                     <input
@@ -571,61 +596,60 @@ export default function AdminGenresPage() {
               ) : (
                 <div className="space-y-5">
                   <div className="space-y-3">
-                    {subgenres.map((subgenre) => {
-                      const form = subgenreForms[String(subgenre.id)] ?? emptySubgenreForm;
+                    {selectedSubgenre ? (
+                      <div className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+                        <div className="grid gap-3 md:grid-cols-[220px_1fr_auto] md:items-end">
+                          <Field label={t("form.labels.name")}>
+                            <input
+                              value={
+                                subgenreForms[String(selectedSubgenre.id)]?.name ?? ""
+                              }
+                              onChange={(event) =>
+                                setSubgenreForms((current) => ({
+                                  ...current,
+                                  [String(selectedSubgenre.id)]: {
+                                    ...(current[String(selectedSubgenre.id)] ?? emptySubgenreForm),
+                                    name: event.target.value,
+                                  },
+                                }))
+                              }
+                              className={inputClass}
+                            />
+                          </Field>
 
-                      return (
-                        <div
-                          key={subgenre.id}
-                          className="rounded-xl border border-gray-100 bg-gray-50 p-4"
-                        >
-                          <div className="grid gap-3 md:grid-cols-[220px_1fr_auto] md:items-end">
-                            <Field label={t("form.labels.name")}>
-                              <input
-                                value={form.name}
-                                onChange={(event) =>
-                                  setSubgenreForms((current) => ({
-                                    ...current,
-                                    [String(subgenre.id)]: {
-                                      ...form,
-                                      name: event.target.value,
-                                    },
-                                  }))
-                                }
-                                className={inputClass}
-                              />
-                            </Field>
+                          <Field label={t("form.labels.description")}>
+                            <input
+                              value={
+                                subgenreForms[String(selectedSubgenre.id)]?.description ?? ""
+                              }
+                              onChange={(event) =>
+                                setSubgenreForms((current) => ({
+                                  ...current,
+                                  [String(selectedSubgenre.id)]: {
+                                    ...(current[String(selectedSubgenre.id)] ?? emptySubgenreForm),
+                                    description: event.target.value,
+                                  },
+                                }))
+                              }
+                              className={inputClass}
+                            />
+                          </Field>
 
-                            <Field label={t("form.labels.description")}>
-                              <input
-                                value={form.description}
-                                onChange={(event) =>
-                                  setSubgenreForms((current) => ({
-                                    ...current,
-                                    [String(subgenre.id)]: {
-                                      ...form,
-                                      description: event.target.value,
-                                    },
-                                  }))
-                                }
-                                className={inputClass}
-                              />
-                            </Field>
-
-                            <button
-                              type="button"
-                              disabled={loading}
-                              onClick={() => void saveSubgenre(subgenre)}
-                              className="rounded-lg bg-[#002D62] px-4 py-2 text-sm font-medium text-white transition disabled:cursor-not-allowed disabled:opacity-50"
-                            >
-                              {t("admin.buttons.save")}
-                            </button>
-                          </div>
+                          <button
+                            type="button"
+                            disabled={loading}
+                            onClick={() => void saveSubgenre(selectedSubgenre)}
+                            className="rounded-lg bg-[#002D62] px-4 py-2 text-sm font-medium text-white transition disabled:cursor-not-allowed disabled:opacity-50"
+                          >
+                            {t("admin.buttons.save")}
+                          </button>
                         </div>
-                      );
-                    })}
-
-                    {!subgenres.length && (
+                      </div>
+                    ) : subgenres.length ? (
+                      <p className="rounded-xl border border-dashed border-gray-200 px-4 py-6 text-sm text-gray-500">
+                        {t("admin.genres.selectSubgenreToEdit")}
+                      </p>
+                    ) : (
                       <p className="rounded-xl border border-dashed border-gray-200 px-4 py-6 text-sm text-gray-500">
                         {t("admin.genres.noSubgenres")}
                       </p>
@@ -678,10 +702,160 @@ export default function AdminGenresPage() {
                 </div>
               )}
             </section>
+
+            <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm">
+              <h2 className="mb-5 text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">
+                {t("admin.genres.historyHeading")}
+              </h2>
+
+              {!selectedGenreId ? (
+                <p className="rounded-xl border border-dashed border-gray-200 px-4 py-6 text-sm text-gray-500">
+                  {t("admin.genres.selectGenreForHistory")}
+                </p>
+              ) : (
+                <div className="space-y-6">
+                  <RichTextEditor
+                    label={t("admin.genres.historyEnglish")}
+                    value={selectedSubgenreForm?.history_en ?? genreForm.history_en}
+                    onChange={(history_en) => {
+                      if (selectedSubgenre) {
+                        setSubgenreForms((current) => ({
+                          ...current,
+                          [String(selectedSubgenre.id)]: {
+                            ...(current[String(selectedSubgenre.id)] ?? emptySubgenreForm),
+                            history_en,
+                          },
+                        }));
+                      } else setGenreForm((current) => ({ ...current, history_en }));
+                    }}
+                    previewLabel={t("admin.genres.historyPreview")}
+                  />
+                  <RichTextEditor
+                    label={t("admin.genres.historySpanish")}
+                    value={selectedSubgenreForm?.history_es ?? genreForm.history_es}
+                    onChange={(history_es) => {
+                      if (selectedSubgenre) {
+                        setSubgenreForms((current) => ({
+                          ...current,
+                          [String(selectedSubgenre.id)]: {
+                            ...(current[String(selectedSubgenre.id)] ?? emptySubgenreForm),
+                            history_es,
+                          },
+                        }));
+                      } else setGenreForm((current) => ({ ...current, history_es }));
+                    }}
+                    previewLabel={t("admin.genres.historyPreview")}
+                  />
+                  <button
+                    type="button"
+                    disabled={loading}
+                    onClick={() => {
+                      if (selectedSubgenre) void saveSubgenre(selectedSubgenre);
+                      else (document.getElementById("genre-form") as HTMLFormElement | null)?.requestSubmit();
+                    }}
+                    className="rounded-lg bg-[#002D62] px-5 py-3 text-sm font-medium uppercase tracking-[0.16em] text-white transition disabled:cursor-not-allowed disabled:opacity-50"
+                  >
+                    {t("admin.genres.saveHistory")}
+                  </button>
+                </div>
+              )}
+            </section>
+
+            {(selectedSubgenre ?? selectedGenre) && (
+              <GenreMediaManager
+                key={String(selectedSubgenre?.id ?? selectedGenre?.id)}
+                genreId={selectedSubgenre?.id ?? selectedGenre!.id}
+                genreName={selectedSubgenre?.name ?? selectedGenre!.name}
+              />
+            )}
           </div>
         </div>
       </div>
     </main>
+  );
+}
+
+function RichTextEditor({
+  label,
+  value,
+  onChange,
+  previewLabel,
+}: {
+  label: string;
+  value: string;
+  onChange: (value: string) => void;
+  previewLabel: string;
+}) {
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  const wrapSelection = (prefix: string, suffix = "", placeholder = "Text") => {
+    const textarea = textareaRef.current;
+    if (!textarea) return;
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const selected = value.slice(start, end) || placeholder;
+    const next = `${value.slice(0, start)}${prefix}${selected}${suffix}${value.slice(end)}`;
+    onChange(next);
+    requestAnimationFrame(() => {
+      textarea.focus();
+      textarea.setSelectionRange(start + prefix.length, start + prefix.length + selected.length);
+    });
+  };
+
+  const formatLines = (prefix: string, placeholder: string) => {
+    const textarea = textareaRef.current;
+    if (!textarea) return;
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const selected = value.slice(start, end) || placeholder;
+    const formatted = selected
+      .split("\n")
+      .map((line) => `${prefix}${line}`)
+      .join("\n");
+    onChange(`${value.slice(0, start)}${formatted}${value.slice(end)}`);
+  };
+
+  return (
+    <div className="overflow-hidden rounded-xl border border-gray-200">
+      <div className="border-b border-gray-200 bg-gray-50 px-4 py-3">
+        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#002D62]">{label}</p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <EditorButton label="H2" onClick={() => formatLines("## ", "Section title")} />
+          <EditorButton label="Bold" onClick={() => wrapSelection("**", "**")} />
+          <EditorButton label="Italic" onClick={() => wrapSelection("*", "*")} />
+          <EditorButton label="List" onClick={() => formatLines("- ", "List item")} />
+          <EditorButton label="Quote" onClick={() => formatLines("> ", "Quoted text")} />
+          <EditorButton
+            label="Link"
+            onClick={() => wrapSelection("[", "](https://example.com)", "Link text")}
+          />
+        </div>
+      </div>
+      <textarea
+        ref={textareaRef}
+        value={value}
+        onChange={(event) => onChange(event.target.value)}
+        className="min-h-64 w-full resize-y px-4 py-3 text-sm leading-relaxed text-gray-800 outline-none"
+      />
+      <div className="border-t border-gray-200 bg-gray-50 px-4 py-4">
+        <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.18em] text-gray-400">
+          {previewLabel}
+        </p>
+        {value.trim() ? <BioText bio={value} /> : <p className="text-sm text-gray-400">—</p>}
+      </div>
+    </div>
+  );
+}
+
+function EditorButton({ label, onClick }: { label: string; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="rounded-md border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-[#002D62] transition hover:border-[#002D62]/30 hover:bg-[#002D62]/5"
+    >
+      {label}
+    </button>
   );
 }
 
