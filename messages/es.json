@@ -206,6 +206,7 @@
   "artistFields": {
     "types": {
       "person": "Solista",
+      "solo_artist": "Solista",
       "duo": "Dúo",
       "group": "Grupo"
     },

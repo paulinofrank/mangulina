@@ -479,7 +479,9 @@ export default function ArtistFactsCard({
 
         {!!artist.aliases?.length && <SectionDivider />}
 
-        <Field label={t("artist.artistType")}>{translateArtistType(artist.type, t)}</Field>
+        <Field label={t("artist.artistType")}>
+          {translateArtistType(artist.type, t) ?? "—"}
+        </Field>
 
         <Field label={t("artist.statusLabel")}>{artistStatus}</Field>
 

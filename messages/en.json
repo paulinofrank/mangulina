@@ -194,7 +194,8 @@
   },
   "artistFields": {
     "types": {
-      "person": "Solo artist",
+      "person": "Solo Artist",
+      "solo_artist": "Solo Artist",
       "duo": "Duo",
       "group": "Group"
     },

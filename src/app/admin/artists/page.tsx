@@ -286,12 +286,9 @@ const platformOptions = [
 
 const artistTypeOptions = [
   { value: "", label: "-- Select Artist Type --" },
-  { value: "person", label: "Person" },
+  { value: "solo_artist", label: "Solo Artist" },
   { value: "duo", label: "Duo" },
   { value: "group", label: "Group" },
-  { value: "orchestra", label: "Orchestra" },
-  { value: "choir", label: "Choir" },
-  { value: "other", label: "Other" },
 ];
 
 const relationshipTypeOptions = [
@@ -534,9 +531,26 @@ function buildPrimaryGenreOptions(genres: GenreCatalogRow[]): PrimaryGenreOption
 
 function buildMusicalGenreOptions(genres: GenreCatalogRow[]): MusicalGenreOption[] {
   const options = new Map<string, MusicalGenreOption>();
+  const excludedLabels = new Set([
+    "afro-caribbean",
+    "classic",
+    "de calle",
+    "popular",
+    "romantic",
+    "singer-songwriter",
+    "de orquesta",
+    "dominicana",
+    "dura",
+    "gospel",
+    "orchestral",
+    "piano",
+    "tropical",
+    "urbano",
+  ]);
 
   for (const genre of genres) {
     if (!genre.name) continue;
+    if (excludedLabels.has(genre.name.trim().toLowerCase())) continue;
 
     const value = genre.slug || genre.name;
     const key = value.toLowerCase();
@@ -548,13 +562,21 @@ function buildMusicalGenreOptions(genres: GenreCatalogRow[]): MusicalGenreOption
     });
   }
 
-  return Array.from(options.values()).sort((a, b) => a.label.localeCompare(b.label));
-}
+  const sortedOptions = Array.from(options.values()).sort((a, b) =>
+    a.label.localeCompare(b.label)
+  );
+  const preferredBolero = sortedOptions.find(
+    (option) => option.value === "ballads-bolero"
+  );
+  let hasBolero = false;
 
-function addGenreIfMissing(value: string, option: { searchValues: string[] }) {
-  const items = parseCsv(value);
-  const selected = items.some((item) => option.searchValues.includes(item.toLowerCase()));
-  return selected ? value : [...items, option.searchValues[0]].join(", ");
+  return sortedOptions.filter((option) => {
+    if (option.label.trim().toLowerCase() !== "bolero") return true;
+    if (preferredBolero && option !== preferredBolero) return false;
+    if (hasBolero) return false;
+    hasBolero = true;
+    return true;
+  });
 }
 
 function toggleMusicalGenre(value: string, option: MusicalGenreOption) {
@@ -823,11 +845,9 @@ export default function AdminDashboard() {
   }
 
   function updatePrimaryGenre(value: string) {
-    const option = primaryGenreOptions.find((item) => item.value === value);
     setForm((current) => ({
       ...current,
       primary_genre: value,
-      genres: value && option ? addGenreIfMissing(current.genres, option) : current.genres,
     }));
   }
 
@@ -990,12 +1010,6 @@ export default function AdminDashboard() {
     void fetchArtistMedia(artist.id);
     void fetchArtistRelationships(artist.id);
 
-    const existingPrimaryGenre = artist.primary_genre ?? "";
-    const existingPrimaryOption = primaryGenreOptions.find((option) =>
-      option.searchValues.includes(existingPrimaryGenre.toLowerCase()),
-    );
-    const existingMusicalGenres = toCsv(artist.genres);
-
     setForm({
       name: artist.name ?? "",
       sort_name: artist.sort_name ?? "",
@@ -1016,14 +1030,11 @@ export default function AdminDashboard() {
           : artist.province ?? "",
       type: artist.type ?? "",
       primary_role: artist.primary_role ?? "",
-      primary_genre: existingPrimaryGenre,
+      primary_genre: artist.primary_genre ?? "",
       status: normalizeStatus(artist.status),
       occupations: toCsv(artist.occupations),
       instruments: toCsv(artist.instruments),
-      genres:
-        existingPrimaryGenre && existingPrimaryOption
-          ? addGenreIfMissing(existingMusicalGenres, existingPrimaryOption)
-          : existingMusicalGenres,
+      genres: toCsv(artist.genres),
       artist_tags: toCsv(artist.artist_tags),
       aliases: toCsv(artist.aliases),
       website: artist.website ?? "",
@@ -1468,14 +1479,6 @@ export default function AdminDashboard() {
     setStatus("");
 
     const resolvedSlug = form.slug.trim() || slugify(form.name);
-    const primaryGenreOption = primaryGenreOptions.find((option) =>
-      option.searchValues.includes(form.primary_genre.toLowerCase()),
-    );
-    const synchronizedGenres =
-      form.primary_genre && primaryGenreOption
-        ? addGenreIfMissing(form.genres, primaryGenreOption)
-        : form.genres;
-
     const artistData = {
       name: form.name.trim(),
       sort_name: nullable(form.sort_name),
@@ -1502,7 +1505,7 @@ export default function AdminDashboard() {
 
       occupations: parseCsv(form.occupations),
       instruments: parseCsv(form.instruments),
-      genres: parseCsv(synchronizedGenres),
+      genres: parseCsv(form.genres),
       artist_tags: parseCsv(form.artist_tags),
       aliases: parseCsv(form.aliases),
 
@@ -2195,6 +2198,28 @@ export default function AdminDashboard() {
                 </Field>
               </div>
 
+              <div className="grid gap-4 md:grid-cols-2">
+                <Field label={t("admin.labels.aliases")}>
+                  <input
+                    value={form.aliases ?? ""}
+                    onChange={(event) => updateForm("aliases", event.target.value)}
+                    placeholder="El Mayimbe, El Caballo Mayor"
+                    className={inputClass}
+                  />
+                </Field>
+
+                <Field label={t("admin.labels.disambiguation")}>
+                  <input
+                    value={form.disambiguation ?? ""}
+                    onChange={(event) =>
+                      updateForm("disambiguation", event.target.value)
+                    }
+                    placeholder="Dominican merengue singer, not the composer..."
+                    className={inputClass}
+                  />
+                </Field>
+              </div>
+
               <div className="grid gap-4 md:grid-cols-4">
                 <Field label={t("admin.labels.dateOfBirth")}>
                   <input
@@ -2406,46 +2431,9 @@ export default function AdminDashboard() {
                 />
               </Field>
 
-              <div className="grid gap-4 md:grid-cols-2">
-                <Field label={t("admin.labels.musicalGenres")}>
-                  <div className="grid gap-2 rounded-lg border border-gray-200 bg-white p-3 sm:grid-cols-2">
-                    {musicalGenreOptions.length ? (
-                      musicalGenreOptions.map((option) => {
-                        const selected = isMusicalGenreSelected(
-                          parseCsv(form.genres),
-                          option
-                        );
-
-                        return (
-                          <label
-                            key={option.value}
-                            className="flex items-center gap-2 text-sm text-gray-700"
-                          >
-                            <input
-                              type="checkbox"
-                              checked={selected}
-                              onChange={() =>
-                                updateForm(
-                                  "genres",
-                                  toggleMusicalGenre(form.genres, option)
-                                )
-                              }
-                              className="h-4 w-4"
-                            />
-                            {option.label}
-                          </label>
-                        );
-                      })
-                    ) : (
-                      <p className="text-sm text-gray-400">
-                        Loading subgenres...
-                      </p>
-                    )}
-                  </div>
-                </Field>
-
+              {form.primary_role.trim().toLowerCase() === "musician" && (
                 <Field label={t("admin.labels.instruments")}>
-                  <div className="grid gap-2 rounded-lg border border-gray-200 bg-white p-3 sm:grid-cols-2">
+                  <div className="grid grid-cols-2 gap-2 rounded-lg border border-gray-200 bg-white p-3 md:grid-cols-4">
                     {instrumentOptions.map((instrument) => {
                       const selected = parseCsv(form.instruments).some(
                         (item) => item.toLowerCase() === instrument.toLowerCase()
@@ -2473,26 +2461,43 @@ export default function AdminDashboard() {
                     })}
                   </div>
                 </Field>
-              </div>
+              )}
 
-              <Field label={t("admin.labels.aliases")}>
-                <input
-                  value={form.aliases ?? ""}
-                  onChange={(event) => updateForm("aliases", event.target.value)}
-                  placeholder="El Mayimbe, El Caballo Mayor"
-                  className={inputClass}
-                />
-              </Field>
+              <Field label={t("admin.labels.musicalGenres")}>
+                <div className="grid grid-cols-2 gap-2 rounded-lg border border-gray-200 bg-white p-3 md:grid-cols-4">
+                  {musicalGenreOptions.length ? (
+                    musicalGenreOptions.map((option) => {
+                      const selected = isMusicalGenreSelected(
+                        parseCsv(form.genres),
+                        option
+                      );
 
-              <Field label={t("admin.labels.disambiguation")}>
-                <input
-                  value={form.disambiguation ?? ""}
-                  onChange={(event) =>
-                    updateForm("disambiguation", event.target.value)
-                  }
-                  placeholder="Dominican merengue singer, not the composer..."
-                  className={inputClass}
-                />
+                      return (
+                        <label
+                          key={option.value}
+                          className="flex items-center gap-2 text-sm text-gray-700"
+                        >
+                          <input
+                            type="checkbox"
+                            checked={selected}
+                            onChange={() =>
+                              updateForm(
+                                "genres",
+                                toggleMusicalGenre(form.genres, option)
+                              )
+                            }
+                            className="h-4 w-4"
+                          />
+                          {option.label}
+                        </label>
+                      );
+                    })
+                  ) : (
+                    <p className="text-sm text-gray-400">
+                      Loading subgenres...
+                    </p>
+                  )}
+                </div>
               </Field>
 
               <Field label={t("admin.labels.artistTags")}>
