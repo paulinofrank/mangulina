@@ -9,6 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "tsx --test \"tests/**/*.test.ts\"",
     "i18n:audit": "node scripts/i18n-audit.mjs",
     "validate-schema": "ts-node --project tsconfig.scripts.json scripts/schemaValidator.ts",
     "run-sql": "ts-node --project tsconfig.scripts.json scripts/runSqlFile.ts",

@@ -1,11 +1,14 @@
 "use client";
 
+/* eslint-disable react-hooks/exhaustive-deps -- The initial analytics fetch intentionally runs once on mount. */
+
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { TrendChart } from "@/components/analytics/TrendChart";
 import { ExportButton } from "@/components/analytics/ExportButton";
 import { AnalyticsErrorBoundary } from "@/components/analytics/AnalyticsErrorBoundary";
+import { normalizeSevenDayViews } from "@/lib/analyticsPresentation";
 
 function formatPlatform(platform: string) {
   return platform
@@ -64,9 +67,9 @@ interface AnalyticsData {
   genreViewsData: Array<{ genre_slug: string; views_7d: number; views_30d: number }>;
   searchesData: Array<{ query: string; search_count: number; last_searched_at: string }>;
   clicksData: Array<{ platform: string; clicks_30d: number }>;
-  artistTrendsData: any[];
-  recordingTrendsData: any[];
-  searchTrendsData: any[];
+  artistTrendsData: Array<{ date: string; views: number }>;
+  recordingTrendsData: Array<{ date: string; views: number }>;
+  searchTrendsData: Array<{ date: string; views: number; zeroResults?: number }>;
   artists: Array<{ id: string; name: string; slug: string }>;
   recordings: Array<{ id: string; title: string; slug: string | null }>;
   timestamp: string;
@@ -103,7 +106,8 @@ export default function AdminAnalyticsClientWrapper({
 
   // Initial load
   useEffect(() => {
-    fetchData();
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- This starts the initial remote data load.
+    void fetchData();
   }, []);
 
   if (error) {
@@ -146,7 +150,7 @@ export default function AdminAnalyticsClientWrapper({
         const artist = artistMap.get(row.artist_id);
         return {
           Artist: artist?.name || t("labels.unknownArtist"),
-          Views: (row.views_7d || 0).toString(),
+          Views: normalizeSevenDayViews(row.views_7d).toString(),
         };
       }),
     },
@@ -156,7 +160,7 @@ export default function AdminAnalyticsClientWrapper({
         const recording = recordingMap.get(row.recording_id);
         return {
           Recording: recording?.title || t("labels.unknownRecording"),
-          Views: (row.views_7d || 0).toString(),
+          Views: normalizeSevenDayViews(row.views_7d).toString(),
         };
       }),
     },
@@ -164,7 +168,7 @@ export default function AdminAnalyticsClientWrapper({
       title: t("sheets.genreViews"),
       data: data.genreViewsData.map((row) => ({
         Genre: row.genre_slug,
-        Views: (row.views_7d || 0).toString(),
+        Views: normalizeSevenDayViews(row.views_7d).toString(),
       })),
     },
     {
@@ -265,7 +269,7 @@ export default function AdminAnalyticsClientWrapper({
                 <div className="divide-y divide-gray-100">
                   {data.artistViewsData.map((row) => {
                     const artist = artistMap.get(row.artist_id);
-                    const views = row.views_7d || row.views_30d || 0;
+                    const views = normalizeSevenDayViews(row.views_7d);
                     return (
                       <div
                         key={row.artist_id}
@@ -301,7 +305,7 @@ export default function AdminAnalyticsClientWrapper({
                 <div className="divide-y divide-gray-100">
                   {data.recordingViewsData.map((row) => {
                     const recording = recordingMap.get(row.recording_id);
-                    const views = row.views_7d || row.views_30d || 0;
+                    const views = normalizeSevenDayViews(row.views_7d);
                     return (
                       <div
                         key={row.recording_id}
@@ -336,7 +340,7 @@ export default function AdminAnalyticsClientWrapper({
               ) : (
                 <div className="divide-y divide-gray-100">
                   {data.genreViewsData.map((row) => {
-                    const views = row.views_7d || row.views_30d || 0;
+                    const views = normalizeSevenDayViews(row.views_7d);
                     return (
                       <div
                         key={row.genre_slug}

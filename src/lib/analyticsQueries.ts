@@ -1,4 +1,5 @@
 import { getSupabaseServiceClient } from "@/lib/adminAccess";
+import { chronologicalTrendRows } from "@/lib/analyticsPresentation";
 
 /**
  * Fetches top artists with both 7-day and 30-day view metrics
@@ -109,11 +110,11 @@ export async function fetchArtistViewTrends(daysBack: number = 30) {
   const { data, error } = await supabase
     .from("artist_views_by_day_last_30_days")
     .select("view_date,daily_views")
-    .order("view_date", { ascending: true })
+    .order("view_date", { ascending: false })
     .limit(daysBack);
 
   if (error) throw error;
-  return (data || []).map((row: { view_date: string; daily_views: number }) => ({
+  return chronologicalTrendRows(data, daysBack).map((row: { view_date: string; daily_views: number }) => ({
     date: row.view_date,
     views: row.daily_views,
   }));
@@ -128,11 +129,11 @@ export async function fetchRecordingViewTrends(daysBack: number = 30) {
   const { data, error } = await supabase
     .from("recording_views_by_day_last_30_days")
     .select("view_date,daily_views")
-    .order("view_date", { ascending: true })
+    .order("view_date", { ascending: false })
     .limit(daysBack);
 
   if (error) throw error;
-  return (data || []).map((row: { view_date: string; daily_views: number }) => ({
+  return chronologicalTrendRows(data, daysBack).map((row: { view_date: string; daily_views: number }) => ({
     date: row.view_date,
     views: row.daily_views,
   }));
@@ -147,11 +148,11 @@ export async function fetchSearchTrends(daysBack: number = 30) {
   const { data, error } = await supabase
     .from("search_events_by_day_last_30_days")
     .select("search_date,total_searches,zero_result_searches")
-    .order("search_date", { ascending: true })
+    .order("search_date", { ascending: false })
     .limit(daysBack);
 
   if (error) throw error;
-  return (data || []).map((row: { search_date: string; total_searches: number; zero_result_searches: number }) => ({
+  return chronologicalTrendRows(data, daysBack).map((row: { search_date: string; total_searches: number; zero_result_searches: number }) => ({
     date: row.search_date,
     views: row.total_searches,
     zeroResults: row.zero_result_searches,
