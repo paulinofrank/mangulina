@@ -8,15 +8,12 @@ import { SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
 import type { IconType } from "react-icons";
 
 import type { ArtistProfileData } from "@/lib/artistApi";
-import {
-  formatArtistRelationshipDisplay,
-  type ArtistRelationship,
-} from "@/lib/artistRelationships";
+import type { ArtistMembership } from "@/lib/artistRelationships";
 
 type Props = {
   artist: ArtistProfileData;
-  groupsAndProjects?: ArtistRelationship[];
-  members?: ArtistRelationship[];
+  groupsAndProjects?: ArtistMembership[];
+  members?: ArtistMembership[];
 };
 
 function formatDate(date: string | null, locale: string) {
@@ -152,7 +149,7 @@ function getArtistStatus(
   artist: ArtistProfileData,
   t: ReturnType<typeof useTranslations>
 ) {
-  if (artist.type === "person") {
+  if (artist.type === "solo_artist" || artist.type === "person") {
     return artist.date_of_death || artist.death_year ? t("status.deceased", { year: artist.death_year || "" }) : null;
   }
 
@@ -357,18 +354,25 @@ function LinkGroup({ children }: { children: React.ReactNode }) {
   return <div className="space-y-2">{children}</div>;
 }
 
-function GroupsAndProjectsList({
+function formatMembershipYears(
+  startYear: number | null,
+  endYear: number | null,
+  t: ReturnType<typeof useTranslations>,
+) {
+  if (startYear && endYear) return `${startYear}–${endYear}`;
+  if (startYear) return `${startYear}–${t("artist.present")}`;
+  if (endYear) return `${t("artist.untilYear", { year: endYear })}`;
+  return null;
+}
+
+function MembershipList({
   label,
   relationships,
-  direction,
   t,
-  locale,
 }: {
   label: string;
-  relationships: ArtistRelationship[];
-  direction: "outgoing" | "incoming";
+  relationships: ArtistMembership[];
   t: ReturnType<typeof useTranslations>;
-  locale: string;
 }) {
   if (!relationships.length) return null;
 
@@ -376,33 +380,28 @@ function GroupsAndProjectsList({
     <Field label={label}>
       <div className="space-y-2">
         {relationships.map((relationship) => {
-          const artist =
-            direction === "outgoing"
-              ? relationship.target_artist
-              : relationship.source_artist;
-          const detailText = formatArtistRelationshipDisplay(
-            relationship.relationship_type,
-            relationship.start_year,
-            relationship.end_year,
-            locale
+          const years = formatMembershipYears(
+            relationship.startYear,
+            relationship.endYear,
+            t
           );
           const content = (
             <>
               <span className="block font-normal text-(--color-ink)">
-                {artist?.name ?? t("fallback.unknownArtist")}
+                {relationship.relatedArtistName || t("fallback.unknownArtist")}
               </span>
-              {detailText && (
+              {years && (
                 <span className="mt-0.5 block text-xs text-gray-500">
-                  {detailText}
+                  {years}
                 </span>
               )}
             </>
           );
 
-          return artist?.slug ? (
+          return relationship.relatedArtistSlug ? (
             <Link
               key={relationship.id}
-              href={`/artists/${artist.slug}`}
+              href={`/artists/${relationship.relatedArtistSlug}`}
               className="block text-sm leading-snug underline-offset-4 hover:text-(--color-wikicrimson) hover:underline"
             >
               {content}
@@ -430,7 +429,9 @@ export default function ArtistFactsCard({
   const deathDate = formatDate(artist.date_of_death, locale);
   const birthPlace = getBirthPlace(artist);
   const originLabel =
-    artist.type === "person" ? t("artist.placeOfBirth") : t("artist.origin");
+    artist.type === "solo_artist" || artist.type === "person"
+      ? t("artist.placeOfBirth")
+      : t("artist.origin");
   const occupations = getOccupationList(artist.occupations);
   const instruments = getInstrumentList(artist.instruments);
   const artistStatus = getArtistStatus(artist, t);
@@ -453,6 +454,10 @@ export default function ArtistFactsCard({
     (facebookUrl && facebookUsername) ||
     (instagramUrl && instagramUsername)
   );
+  const currentMembershipGroups = groupsAndProjects.filter((relationship) => !relationship.isFormer);
+  const formerMembershipGroups = groupsAndProjects.filter((relationship) => relationship.isFormer);
+  const currentMembers = members.filter((relationship) => !relationship.isFormer);
+  const formerMembers = members.filter((relationship) => relationship.isFormer);
 
   return (
     <section className="rounded-xl border border-gray-100 bg-white p-6 font-sans shadow-sm">
@@ -533,19 +538,25 @@ export default function ArtistFactsCard({
         {(groupsAndProjects.length > 0 || members.length > 0) && (
           <>
             <SectionDivider />
-            <GroupsAndProjectsList
-              label={t("artist.groupsAndProjects")}
-              relationships={groupsAndProjects}
-              direction="outgoing"
+            <MembershipList
+              label={t("artist.memberOf")}
+              relationships={currentMembershipGroups}
               t={t}
-              locale={locale}
             />
-            <GroupsAndProjectsList
-              label={t("artist.members")}
-              relationships={members}
-              direction="incoming"
+            <MembershipList
+              label={t("artist.formerMemberOf")}
+              relationships={formerMembershipGroups}
               t={t}
-              locale={locale}
+            />
+            <MembershipList
+              label={t("artist.members")}
+              relationships={currentMembers}
+              t={t}
+            />
+            <MembershipList
+              label={t("artist.formerMembers")}
+              relationships={formerMembers}
+              t={t}
             />
           </>
         )}

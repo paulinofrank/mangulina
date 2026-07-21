@@ -37,6 +37,7 @@ export type ArtistProfileData = {
   name: string;
   slug: string;
   type:
+    | "solo_artist"
     | "person"
     | "duo"
     | "group"

@@ -84,21 +84,21 @@ export default async function ArtistProfile({ params }: PageProps) {
     getArtistMedia(artist.id),
     getArtistRelationships(artist.id),
   ]);
-  const isPerson = artist.type === "person";
+  const isSoloArtist = artist.type === "solo_artist" || artist.type === "person";
   const sameAs = [artist.website, artist.youtube, artist.facebook, artist.instagram]
     .filter((value): value is string => Boolean(value && /^https?:\/\//i.test(value)));
   const alternateNames = [...(artist.aliases ?? []), ...(artist.pseudonyms ?? [])];
   const artistSchema = {
     "@context": "https://schema.org",
-    "@type": isPerson ? "Person" : "MusicGroup",
+    "@type": isSoloArtist ? "Person" : "MusicGroup",
     name: artist.name,
     alternateName: alternateNames.length ? alternateNames : artist.stage_name ?? undefined,
     url: absoluteUrl(`/artists/${artist.slug}`),
     image: imageUrl ?? undefined,
-    birthDate: isPerson ? artist.date_of_birth ?? undefined : undefined,
-    deathDate: isPerson ? artist.date_of_death ?? undefined : undefined,
+    birthDate: isSoloArtist ? artist.date_of_birth ?? undefined : undefined,
+    deathDate: isSoloArtist ? artist.date_of_death ?? undefined : undefined,
     birthPlace:
-      isPerson && (artist.birth_place || artist.province)
+      isSoloArtist && (artist.birth_place || artist.province)
         ? {
             "@type": "Place",
             name: [artist.birth_place, artist.province].filter(Boolean).join(", "),
@@ -147,8 +147,8 @@ export default async function ArtistProfile({ params }: PageProps) {
 
             <ArtistFactsCard
               artist={artist}
-              groupsAndProjects={isPerson ? relationships.outgoing : []}
-              members={isPerson ? [] : relationships.incoming}
+              groupsAndProjects={relationships.membershipGroups}
+              members={relationships.memberArtists}
             />
 
             <ArtistAwardsSection awards={artist.awards || []} />

@@ -22,6 +22,27 @@ export type ArtistRelationship = {
   target_artist?: ArtistRelationshipArtist | null;
 };
 
+export type ArtistMembershipRelationshipType = "member_of" | "former_member_of";
+
+export type ArtistMembership = {
+  id: string;
+  relatedArtistId: string;
+  relatedArtistName: string;
+  relatedArtistSlug: string | null;
+  artistType: string | null;
+  relationshipType: ArtistMembershipRelationshipType;
+  startYear: number | null;
+  endYear: number | null;
+  isFormer: boolean;
+};
+
+export type NormalizedArtistRelationships = {
+  outgoing: ArtistRelationship[];
+  incoming: ArtistRelationship[];
+  membershipGroups: ArtistMembership[];
+  memberArtists: ArtistMembership[];
+};
+
 const RELATIONSHIP_SELECT = `
   id,
   source_artist_id,
@@ -118,7 +139,52 @@ function normalizeRelationship(row: unknown): ArtistRelationship {
   };
 }
 
-export async function getArtistRelationships(artistId: string) {
+function normalizeMembership({
+  relationship,
+  artist,
+}: {
+  relationship: ArtistRelationship;
+  artist: ArtistRelationshipArtist | null | undefined;
+}): ArtistMembership | null {
+  if (relationship.relationship_type !== "member_of" || !artist?.id) {
+    return null;
+  }
+
+  const isFormer = Boolean(relationship.end_year);
+
+  return {
+    id: relationship.id,
+    relatedArtistId: artist.id,
+    relatedArtistName: artist.name,
+    relatedArtistSlug: artist.slug ?? null,
+    artistType: artist.type ?? null,
+    relationshipType: isFormer ? "former_member_of" : "member_of",
+    startYear: relationship.start_year,
+    endYear: relationship.end_year,
+    isFormer,
+  };
+}
+
+function dedupeMemberships(relationships: ArtistMembership[]) {
+  const seen = new Set<string>();
+
+  return relationships.filter((relationship) => {
+    const key = [
+      relationship.relatedArtistId,
+      relationship.relationshipType,
+      relationship.startYear ?? "",
+      relationship.endYear ?? "",
+    ].join(":");
+
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+export async function getArtistRelationships(
+  artistId: string
+): Promise<NormalizedArtistRelationships> {
   const supabase = getSupabaseClient();
 
   const [outgoingResponse, incomingResponse] = await Promise.all([
@@ -144,8 +210,35 @@ export async function getArtistRelationships(artistId: string) {
     console.error("getArtistRelationships incoming error:", incomingResponse.error);
   }
 
+  const outgoing = (outgoingResponse.data ?? []).map(normalizeRelationship);
+  const incoming = (incomingResponse.data ?? []).map(normalizeRelationship);
+
+  const membershipGroups = dedupeMemberships(
+    outgoing
+      .map((relationship) =>
+        normalizeMembership({
+          relationship,
+          artist: relationship.target_artist,
+        })
+      )
+      .filter((relationship): relationship is ArtistMembership => Boolean(relationship))
+  );
+
+  const memberArtists = dedupeMemberships(
+    incoming
+      .map((relationship) =>
+        normalizeMembership({
+          relationship,
+          artist: relationship.source_artist,
+        })
+      )
+      .filter((relationship): relationship is ArtistMembership => Boolean(relationship))
+  );
+
   return {
-    outgoing: (outgoingResponse.data ?? []).map(normalizeRelationship),
-    incoming: (incomingResponse.data ?? []).map(normalizeRelationship),
+    outgoing,
+    incoming,
+    membershipGroups,
+    memberArtists,
   };
 }
