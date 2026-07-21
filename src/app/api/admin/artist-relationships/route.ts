@@ -38,6 +38,49 @@ function validatePayload(payload: ArtistRelationshipPayload | undefined) {
   return null;
 }
 
+type RelationshipArtist = {
+  id: string;
+  type: string | null;
+};
+
+function isIndividualArtistType(value: string | null | undefined) {
+  return value === "solo_artist" || value === "person";
+}
+
+async function canonicalizeRelationshipPayload(
+  supabase: ReturnType<typeof getSupabaseClient>,
+  payload: Required<Pick<ArtistRelationshipPayload, "source_artist_id" | "target_artist_id" | "relationship_type">> &
+    Pick<ArtistRelationshipPayload, "start_year" | "end_year" | "notes">
+) {
+  const { data, error } = await supabase
+    .from("artists")
+    .select("id,type")
+    .in("id", [payload.source_artist_id, payload.target_artist_id]);
+
+  if (error) {
+    throw error;
+  }
+
+  const artistsById = new Map(
+    ((data ?? []) as RelationshipArtist[]).map((artist) => [artist.id, artist])
+  );
+  const source = artistsById.get(payload.source_artist_id);
+  const target = artistsById.get(payload.target_artist_id);
+  const shouldSwap =
+    source &&
+    target &&
+    !isIndividualArtistType(source.type) &&
+    isIndividualArtistType(target.type);
+
+  return shouldSwap
+    ? {
+        ...payload,
+        source_artist_id: payload.target_artist_id,
+        target_artist_id: payload.source_artist_id,
+      }
+    : payload;
+}
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const artistId = searchParams.get("artistId");
@@ -66,22 +109,43 @@ export async function POST(request: Request) {
     );
   }
 
-  const writePayload = {
-    source_artist_id: payload!.source_artist_id,
-    target_artist_id: payload!.target_artist_id,
-    relationship_type: payload!.relationship_type,
-    start_year: normalizeYear(payload!.start_year),
-    end_year: normalizeYear(payload!.end_year),
-    notes: payload!.notes?.trim() || null,
-  };
-
   const supabase = getSupabaseClient();
-  const response = relationshipId
+  const validPayload = payload as ArtistRelationshipPayload & {
+    source_artist_id: string;
+    target_artist_id: string;
+    relationship_type: ArtistRelationshipType;
+  };
+  const writePayload = await canonicalizeRelationshipPayload(supabase, {
+    source_artist_id: validPayload.source_artist_id,
+    target_artist_id: validPayload.target_artist_id,
+    relationship_type: validPayload.relationship_type,
+    start_year: normalizeYear(validPayload.start_year),
+    end_year: normalizeYear(validPayload.end_year),
+    notes: validPayload.notes?.trim() || null,
+  });
+
+  const existingResponse = await supabase
+    .from("artist_relationships")
+    .select("id")
+    .eq("source_artist_id", writePayload.source_artist_id)
+    .eq("target_artist_id", writePayload.target_artist_id)
+    .eq("relationship_type", writePayload.relationship_type)
+    .maybeSingle();
+
+  if (existingResponse.error) {
+    return NextResponse.json(
+      { ok: false, error: existingResponse.error.message },
+      { status: 500 }
+    );
+  }
+
+  const existingId = existingResponse.data?.id ?? null;
+  const idToUpdate = relationshipId || existingId;
+  const response = idToUpdate
     ? await supabase
         .from("artist_relationships")
         .update(writePayload)
-        .eq("id", relationshipId)
-        .eq("source_artist_id", writePayload.source_artist_id)
+        .eq("id", idToUpdate)
         .select("id")
         .maybeSingle()
     : await supabase

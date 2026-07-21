@@ -147,8 +147,12 @@ export default async function ArtistProfile({ params }: PageProps) {
 
             <ArtistFactsCard
               artist={artist}
-              groupsAndProjects={relationships.membershipGroups}
-              members={relationships.memberArtists}
+              memberships={relationships.memberships}
+              foundedProjects={relationships.foundedProjects}
+              ledProjects={relationships.ledProjects}
+              members={relationships.members}
+              founders={relationships.founders}
+              leaders={relationships.leaders}
             />
 
             <ArtistAwardsSection awards={artist.awards || []} />

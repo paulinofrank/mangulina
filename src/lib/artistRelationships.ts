@@ -22,15 +22,20 @@ export type ArtistRelationship = {
   target_artist?: ArtistRelationshipArtist | null;
 };
 
-export type ArtistMembershipRelationshipType = "member_of" | "former_member_of";
+export type ArtistRelationshipRole =
+  | "member_of"
+  | "former_member_of"
+  | "founder_of"
+  | "leader_of"
+  | "former_leader_of";
 
-export type ArtistMembership = {
+export type ArtistRelationshipItem = {
   id: string;
   relatedArtistId: string;
   relatedArtistName: string;
   relatedArtistSlug: string | null;
   artistType: string | null;
-  relationshipType: ArtistMembershipRelationshipType;
+  relationshipType: ArtistRelationshipRole;
   startYear: number | null;
   endYear: number | null;
   isFormer: boolean;
@@ -39,8 +44,12 @@ export type ArtistMembership = {
 export type NormalizedArtistRelationships = {
   outgoing: ArtistRelationship[];
   incoming: ArtistRelationship[];
-  membershipGroups: ArtistMembership[];
-  memberArtists: ArtistMembership[];
+  memberships: ArtistRelationshipItem[];
+  foundedProjects: ArtistRelationshipItem[];
+  ledProjects: ArtistRelationshipItem[];
+  members: ArtistRelationshipItem[];
+  founders: ArtistRelationshipItem[];
+  leaders: ArtistRelationshipItem[];
 };
 
 const RELATIONSHIP_SELECT = `
@@ -139,18 +148,29 @@ function normalizeRelationship(row: unknown): ArtistRelationship {
   };
 }
 
-function normalizeMembership({
+function normalizeRelationshipItem({
   relationship,
   artist,
 }: {
   relationship: ArtistRelationship;
   artist: ArtistRelationshipArtist | null | undefined;
-}): ArtistMembership | null {
-  if (relationship.relationship_type !== "member_of" || !artist?.id) {
+}): ArtistRelationshipItem | null {
+  if (!artist?.id) {
     return null;
   }
 
-  const isFormer = Boolean(relationship.end_year);
+  const isFormer =
+    relationship.relationship_type === "member_of" ||
+    relationship.relationship_type === "leader_of"
+      ? Boolean(relationship.end_year)
+      : false;
+
+  const relationshipType =
+    relationship.relationship_type === "member_of" && isFormer
+      ? "former_member_of"
+      : relationship.relationship_type === "leader_of" && isFormer
+        ? "former_leader_of"
+        : relationship.relationship_type;
 
   return {
     id: relationship.id,
@@ -158,14 +178,14 @@ function normalizeMembership({
     relatedArtistName: artist.name,
     relatedArtistSlug: artist.slug ?? null,
     artistType: artist.type ?? null,
-    relationshipType: isFormer ? "former_member_of" : "member_of",
+    relationshipType,
     startYear: relationship.start_year,
     endYear: relationship.end_year,
     isFormer,
   };
 }
 
-function dedupeMemberships(relationships: ArtistMembership[]) {
+function dedupeRelationshipItems(relationships: ArtistRelationshipItem[]) {
   const seen = new Set<string>();
 
   return relationships.filter((relationship) => {
@@ -213,32 +233,56 @@ export async function getArtistRelationships(
   const outgoing = (outgoingResponse.data ?? []).map(normalizeRelationship);
   const incoming = (incomingResponse.data ?? []).map(normalizeRelationship);
 
-  const membershipGroups = dedupeMemberships(
-    outgoing
-      .map((relationship) =>
-        normalizeMembership({
-          relationship,
-          artist: relationship.target_artist,
-        })
-      )
-      .filter((relationship): relationship is ArtistMembership => Boolean(relationship))
-  );
+  const outgoingItems = outgoing
+    .map((relationship) =>
+      normalizeRelationshipItem({
+        relationship,
+        artist: relationship.target_artist,
+      })
+    )
+    .filter((relationship): relationship is ArtistRelationshipItem => Boolean(relationship));
 
-  const memberArtists = dedupeMemberships(
-    incoming
-      .map((relationship) =>
-        normalizeMembership({
-          relationship,
-          artist: relationship.source_artist,
-        })
-      )
-      .filter((relationship): relationship is ArtistMembership => Boolean(relationship))
-  );
+  const incomingItems = incoming
+    .map((relationship) =>
+      normalizeRelationshipItem({
+        relationship,
+        artist: relationship.source_artist,
+      })
+    )
+    .filter((relationship): relationship is ArtistRelationshipItem => Boolean(relationship));
 
   return {
     outgoing,
     incoming,
-    membershipGroups,
-    memberArtists,
+    memberships: dedupeRelationshipItems(
+      outgoingItems.filter((relationship) =>
+        relationship.relationshipType === "member_of" ||
+        relationship.relationshipType === "former_member_of"
+      )
+    ),
+    foundedProjects: dedupeRelationshipItems(
+      outgoingItems.filter((relationship) => relationship.relationshipType === "founder_of")
+    ),
+    ledProjects: dedupeRelationshipItems(
+      outgoingItems.filter((relationship) =>
+        relationship.relationshipType === "leader_of" ||
+        relationship.relationshipType === "former_leader_of"
+      )
+    ),
+    members: dedupeRelationshipItems(
+      incomingItems.filter((relationship) =>
+        relationship.relationshipType === "member_of" ||
+        relationship.relationshipType === "former_member_of"
+      )
+    ),
+    founders: dedupeRelationshipItems(
+      incomingItems.filter((relationship) => relationship.relationshipType === "founder_of")
+    ),
+    leaders: dedupeRelationshipItems(
+      incomingItems.filter((relationship) =>
+        relationship.relationshipType === "leader_of" ||
+        relationship.relationshipType === "former_leader_of"
+      )
+    ),
   };
 }

@@ -8,12 +8,16 @@ import { SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
 import type { IconType } from "react-icons";
 
 import type { ArtistProfileData } from "@/lib/artistApi";
-import type { ArtistMembership } from "@/lib/artistRelationships";
+import type { ArtistRelationshipItem } from "@/lib/artistRelationships";
 
 type Props = {
   artist: ArtistProfileData;
-  groupsAndProjects?: ArtistMembership[];
-  members?: ArtistMembership[];
+  memberships?: ArtistRelationshipItem[];
+  foundedProjects?: ArtistRelationshipItem[];
+  ledProjects?: ArtistRelationshipItem[];
+  members?: ArtistRelationshipItem[];
+  founders?: ArtistRelationshipItem[];
+  leaders?: ArtistRelationshipItem[];
 };
 
 function formatDate(date: string | null, locale: string) {
@@ -371,7 +375,7 @@ function MembershipList({
   t,
 }: {
   label: string;
-  relationships: ArtistMembership[];
+  relationships: ArtistRelationshipItem[];
   t: ReturnType<typeof useTranslations>;
 }) {
   if (!relationships.length) return null;
@@ -419,8 +423,12 @@ function MembershipList({
 
 export default function ArtistFactsCard({
   artist,
-  groupsAndProjects = [],
+  memberships = [],
+  foundedProjects = [],
+  ledProjects = [],
   members = [],
+  founders = [],
+  leaders = [],
 }: Props) {
   const t = useTranslations();
   const locale = useLocale();
@@ -454,10 +462,22 @@ export default function ArtistFactsCard({
     (facebookUrl && facebookUsername) ||
     (instagramUrl && instagramUsername)
   );
-  const currentMembershipGroups = groupsAndProjects.filter((relationship) => !relationship.isFormer);
-  const formerMembershipGroups = groupsAndProjects.filter((relationship) => relationship.isFormer);
+  const currentMemberships = memberships.filter((relationship) => !relationship.isFormer);
+  const formerMemberships = memberships.filter((relationship) => relationship.isFormer);
+  const currentLedProjects = ledProjects.filter((relationship) => !relationship.isFormer);
+  const formerLedProjects = ledProjects.filter((relationship) => relationship.isFormer);
   const currentMembers = members.filter((relationship) => !relationship.isFormer);
   const formerMembers = members.filter((relationship) => relationship.isFormer);
+  const currentLeaders = leaders.filter((relationship) => !relationship.isFormer);
+  const formerLeaders = leaders.filter((relationship) => relationship.isFormer);
+  const hasRelationships = [
+    memberships,
+    foundedProjects,
+    ledProjects,
+    members,
+    founders,
+    leaders,
+  ].some((relationships) => relationships.length > 0);
 
   return (
     <section className="rounded-xl border border-gray-100 bg-white p-6 font-sans shadow-sm">
@@ -535,17 +555,32 @@ export default function ArtistFactsCard({
           </LinkGroup>
         )}
 
-        {(groupsAndProjects.length > 0 || members.length > 0) && (
+        {hasRelationships && (
           <>
             <SectionDivider />
             <MembershipList
               label={t("artist.memberOf")}
-              relationships={currentMembershipGroups}
+              relationships={currentMemberships}
               t={t}
             />
             <MembershipList
               label={t("artist.formerMemberOf")}
-              relationships={formerMembershipGroups}
+              relationships={formerMemberships}
+              t={t}
+            />
+            <MembershipList
+              label={t("artist.founderOf")}
+              relationships={foundedProjects}
+              t={t}
+            />
+            <MembershipList
+              label={t("artist.leaderOf")}
+              relationships={currentLedProjects}
+              t={t}
+            />
+            <MembershipList
+              label={t("artist.formerLeaderOf")}
+              relationships={formerLedProjects}
               t={t}
             />
             <MembershipList
@@ -556,6 +591,21 @@ export default function ArtistFactsCard({
             <MembershipList
               label={t("artist.formerMembers")}
               relationships={formerMembers}
+              t={t}
+            />
+            <MembershipList
+              label={t("artist.founders", { count: founders.length })}
+              relationships={founders}
+              t={t}
+            />
+            <MembershipList
+              label={t("artist.leaders", { count: currentLeaders.length })}
+              relationships={currentLeaders}
+              t={t}
+            />
+            <MembershipList
+              label={t("artist.formerLeaders", { count: formerLeaders.length })}
+              relationships={formerLeaders}
               t={t}
             />
           </>
