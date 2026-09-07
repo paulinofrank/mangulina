@@ -63,10 +63,29 @@ type PageProps = {
 // verified by response header on fresh cache misses in both locales.
 //
 // 2678400 is 31 days rather than the round 2592000 precisely to stay off the
-// value that misbehaved. That is a guess about a cause nobody established, so
-// VERIFY THE SERVED Cache-Control on this route after deploying rather than
-// trusting this source: the two have diverged silently once already. If it
-// serves 600 again, fall back to 604800 and note it here.
+// value that misbehaved. That is a guess about a cause nobody established.
+//
+// THAT VERIFICATION IS NO LONGER POSSIBLE THE WAY IT IS DESCRIBED ABOVE, and
+// the next reader should not go hunting for a header that is gone. Checked on
+// production after deploying 63a54e8: none of the three profile routes serves
+// s-maxage at all any more. What they serve is
+//
+//   Cache-Control: public, max-age=0, must-revalidate
+//   X-Nextjs-Prerender: 1
+//   X-Vercel-Cache: HIT | MISS      Age: <seconds>
+//
+// Vercel now keeps the ISR entry behind x-vercel-cache instead of announcing
+// its lifetime to the client, so the declared revalidate cannot be read back
+// off the response. Beware of X-Nextjs-Stale-Time: 300, which looks like the
+// answer and is not — that is the client router cache, whose static default is
+// 300 regardless of this export.
+//
+// What can still be checked is that ISR is on at all (X-Nextjs-Prerender: 1)
+// and that entries survive (X-Vercel-Cache: HIT with a rising Age). Whether the
+// declared value took effect now shows up only in the ISR write volume on the
+// usage dashboard over the following days: a clock this long should drop the
+// catalogue's clock-driven writes from roughly 747K a month to roughly 19K.
+// If they do not fall, suspect this value before suspecting the traffic.
 export const revalidate = 2678400; // 31 days -- see ARTIST_PROFILE_REVALIDATE_SECONDS
 
 export function generateStaticParams() {

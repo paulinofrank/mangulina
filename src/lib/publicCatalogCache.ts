@@ -41,11 +41,17 @@ export const PUBLIC_GENRE_REVALIDATE_SECONDS = 86400;
  * releases are ~40,400 URLs that are essentially never edited after creation,
  * and a year costs almost nothing.
  *
- * VERIFY THE SERVED HEADER AFTER CHANGING THESE. At 2592000 the artist route
- * once served s-maxage=600 instead of the declared value, for reasons bisection
- * never established; at 604800 it honoured it. That is why the artist value
- * below is 31 days rather than exactly 2592000. Check the header on a fresh
- * cache miss in both locales rather than trusting this source.
+ * THE OLD VERIFICATION NO LONGER WORKS. At 2592000 the artist route once served
+ * s-maxage=600 instead of the declared value, for reasons bisection never
+ * established; at 604800 it honoured it. That history is why the artist value
+ * below is 31 days rather than exactly 2592000 — it stays off the number that
+ * misbehaved.
+ *
+ * But the check that history prescribes cannot be run any more: as of the
+ * deploy of 63a54e8, none of the three profile routes serves s-maxage. Vercel
+ * keeps the ISR entry behind x-vercel-cache rather than announcing its lifetime,
+ * so these values cannot be read back off a response. See the longer note on
+ * the artist route for what the headers do say and what to check instead.
  */
 export const ARTIST_PROFILE_REVALIDATE_SECONDS = 2678400; // 31 days
 export const CATALOG_PROFILE_REVALIDATE_SECONDS = 31536000; // 365 days
