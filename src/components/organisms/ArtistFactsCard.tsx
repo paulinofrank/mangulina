@@ -12,6 +12,17 @@ import type { ArtistRelationshipItem } from "@/lib/artistRelationships";
 import type { FamilyRelationshipItem } from "@/lib/artistFamilyRelationships";
 import { formatOrigin } from "@/lib/artistDirectoryShared";
 import ShareButton from "@/components/atoms/ShareButton";
+import {
+  getFacebookDisplay,
+  getFacebookUrl,
+  getInstagramUrl,
+  getWebsiteDisplay,
+  getWebsiteUrl,
+  getYoutubeUrl,
+  normalizeSocialUsername,
+  normalizeYoutubeDisplay,
+} from "@/lib/artistSocialLinks";
+
 
 type Props = {
   artist: ArtistProfileData;
@@ -190,115 +201,6 @@ function getArtistStatus(
   }
 
   return null;
-}
-
-function normalizeSocialUsername(value: string | null | undefined) {
-  if (!value) return null;
-
-  return value
-    .replace(/^https?:\/\/(www\.)?/i, "")
-    .replace(/^facebook\.com\//i, "")
-    .replace(/^instagram\.com\//i, "")
-    .replace(/^youtube\.com\//i, "")
-    .replace(/^youtu\.be\//i, "")
-    .replace(/^@/, "")
-    .replace(/\/$/, "");
-}
-
-function normalizeYoutubeDisplay(value: string | null | undefined) {
-  if (!value) return null;
-
-  const cleanValue = value.trim();
-
-  if (!cleanValue) return null;
-
-  if (cleanValue.startsWith("@")) {
-    return cleanValue;
-  }
-
-  if (cleanValue.includes("youtube.com/@")) {
-    return `@${cleanValue.split("youtube.com/@")[1].replace(/\/$/, "")}`;
-  }
-
-  if (cleanValue.includes("youtube.com/channel/")) {
-    return cleanValue.split("youtube.com/channel/")[1].replace(/\/$/, "");
-  }
-
-  if (cleanValue.includes("youtube.com/c/")) {
-    return cleanValue.split("youtube.com/c/")[1].replace(/\/$/, "");
-  }
-
-  if (cleanValue.includes("youtube.com/user/")) {
-    return cleanValue.split("youtube.com/user/")[1].replace(/\/$/, "");
-  }
-
-  return normalizeSocialUsername(cleanValue);
-}
-
-function getWebsiteUrl(value: string | null | undefined) {
-  if (!value) return null;
-
-  return value.startsWith("http") ? value : `https://${value}`;
-}
-
-function getWebsiteDisplay(value: string | null | undefined) {
-  if (!value) return null;
-
-  return value.replace(/^https?:\/\//i, "").replace(/\/$/, "");
-}
-
-function getYoutubeUrl(value: string | null | undefined) {
-  if (!value) return null;
-
-  const cleanValue = value.trim();
-
-  if (!cleanValue) return null;
-
-  if (cleanValue.startsWith("http")) {
-    return cleanValue;
-  }
-
-  if (cleanValue.startsWith("@")) {
-    return `https://www.youtube.com/${cleanValue}`;
-  }
-
-  if (cleanValue.startsWith("channel/")) {
-    return `https://www.youtube.com/${cleanValue}`;
-  }
-
-  if (cleanValue.startsWith("c/")) {
-    return `https://www.youtube.com/${cleanValue}`;
-  }
-
-  if (cleanValue.startsWith("user/")) {
-    return `https://www.youtube.com/${cleanValue}`;
-  }
-
-  return `https://www.youtube.com/@${cleanValue.replace(/^@/, "")}`;
-}
-
-function getFacebookUrl(value: string | null | undefined) {
-  const username = normalizeSocialUsername(value);
-  return username ? `https://www.facebook.com/${username}` : null;
-}
-
-/**
- * Some artists have no Facebook vanity URL, only a numeric identifier — stored
- * either as "profile.php?id=100044569503508" or as the bare "100044564523848".
- * Both link correctly but read as noise, so show the network name instead of
- * the raw identifier.
- */
-function getFacebookDisplay(value: string | null | undefined) {
-  const username = normalizeSocialUsername(value);
-  if (!username) return null;
-  const isNumericIdentifier =
-    username.startsWith("profile.php") || /^\d{6,}$/.test(username);
-  return isNumericIdentifier ? "Facebook" : username;
-}
-
-function getInstagramUrl(value: string | null | undefined) {
-  const username = normalizeSocialUsername(value);
-  return username ? `https://www.instagram.com/${username}` : null;
 }
 
 function InlineList({ values }: { values: Array<string | null> }) {
