@@ -32,6 +32,8 @@ import type { ArtistSummary } from "@/types/home";
  * its subgenres — so they are all resolved up front.
  */
 type GenreSubgenreValue = {
+  /** The genre this page is about. Needed to build links out of it. */
+  genreSlug: string;
   subgenres: GenreSubgenre[];
   selected: GenreSubgenre | null;
   loading: boolean;
@@ -158,6 +160,7 @@ export default function GenreSubgenreProvider({
       ? (locale === "es" ? selected.historyEs || selected.history : selected.history) ?? null
       : genreHistory;
     return {
+      genreSlug,
       subgenres,
       selected,
       loading,
@@ -177,6 +180,7 @@ export default function GenreSubgenreProvider({
     canonicalMedia,
     filtered,
     genreHistory,
+    genreSlug,
     labels,
     loading,
     locale,

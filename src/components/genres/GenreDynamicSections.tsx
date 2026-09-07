@@ -6,6 +6,7 @@ import GenreCarouselSection from "@/components/organisms/GenreCarouselSection";
 import ArtistInterviewsCarousel from "@/components/organisms/ArtistInterviewsCarousel";
 import GenreSubgenreSongs from "@/components/genres/GenreSubgenreSongs";
 import SectionCard from "@/components/layout/SectionCard";
+import { useTranslations } from "next-intl";
 import { useGenreSubgenre } from "@/components/genres/GenreSubgenreProvider";
 
 /**
@@ -32,12 +33,22 @@ export function GenreHistoryLink() {
 }
 
 export default function GenreDynamicSections({ genreCatalogId }: { genreCatalogId: number | null }) {
-  const { artists, media, selected, activeHistory, labels, sharedLabels } = useGenreSubgenre();
+  const { artists, media, selected, activeHistory, labels, sharedLabels, genreSlug } =
+    useGenreSubgenre();
+  const nav = useTranslations("navigation");
 
   return (
     <>
+      {/* The "see all" link goes to the genre, not to the selected subgenre:
+          the directory matches subgenres by name rather than by slug, so
+          passing one from here would be a filter that silently misses. "Every
+          artist of this genre" stays true in both states. */}
       {artists.length > 0 && (
-        <GenreCarouselSection title={labels.connectedArtists}>
+        <GenreCarouselSection
+          title={labels.connectedArtists}
+          linkHref={`/artists?genre=${encodeURIComponent(genreSlug)}`}
+          linkLabel={nav("seeAll")}
+        >
           {artists.map((artist, index) => (
             <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
               <ArtistCard artist={artist} titleAs="h3" priorityImage={index === 0} />
