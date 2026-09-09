@@ -156,8 +156,8 @@ stored string must match exactly across artists.
 | `producer` | Produces recordings | | |
 | `bandleader` | Leads an ensemble | Johnny Ventura | |
 | `conductor` | Conducts an ensemble | | |
-| `musician` | General instrumental practice | | Prefer a specific instrument when known |
-| `instrumentalist` | Plays instruments, unspecified | | Prefer a specific instrument when known |
+| `musician` | General instrumental practice | Michel Camilo | Prefer a specific instrument when known |
+| ~~`instrumentalist`~~ | **Retired 2026-09-09.** Not popular usage: to a reader, someone who plays an instrument is a musician. Use `musician`, and the specific instrument in `instruments`. | | The 38 rows that carried it as `primary_role` were swept in migration `20260909012600`. The identically named **recording credit role** in the Decision Rules below is a different vocabulary and stays. |
 | `accordionist` · `bassist` · `drummer` · `guitarist` · `percussionist` · `pianist` · `saxophonist` · `violinist` | Instrument-specific practice | | |
 | `dj` | DJ | | |
 | `singer-songwriter` | Performs own material | | Renders via key `singer_songwriter` |
