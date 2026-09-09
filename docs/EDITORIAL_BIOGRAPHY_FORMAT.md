@@ -104,6 +104,36 @@ Use `bulletList` blocks for enumerations — notable recordings, awards,
 performers who carried an artist's material. Prose paragraphs for everything
 else. Do not build a whole biography out of lists.
 
+### Rule 4b: Titles go in guillemets, in both locales
+
+Names of **works** — albums, songs, films, documentaries — and of **entities
+that have no row in the catalogue** — bands, labels, festivals, television
+programmes — are written between `«` and `»`. This applies to the English
+entry as well as the Spanish one: one marker for the whole catalogue.
+
+```
+RIGHT:
+  "Su primer álbum, «Sigo siendo yo», trajo «Lo que tiene ella» y «Me voy»."
+  "He recorded «La Cosquillita» for «Fogaraté», issued by «Karen Records»."
+
+WRONG:
+  "Su primer álbum, Sigo siendo yo, trajo Lo que tiene ella y Me voy."
+  'He recorded "La Cosquillita" for Fogaraté.'
+  "Su primer álbum, _Sigo siendo yo_, trajo..."
+```
+
+Three things stay outside the rule:
+
+- **People.** Names of persons are plain text, always.
+- **Artists that do have a row.** They are `artistReference` nodes, and the
+  link is what marks them. Do not wrap a reference in guillemets — and note
+  that `displayText` must still equal `artists.name` character for character,
+  so any guillemet would have to sit in the neighbouring text node anyway.
+- **Single common words.** A genre, an instrument, a city.
+
+Entries written before this rule was adopted use plain text or straight
+quotes and are being retrofitted; they are legacy, not a precedent.
+
 ### Rule 5: Both locales
 
 Write `en` and `es`. The Spanish version is an independent piece of writing, not
