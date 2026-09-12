@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { SlidersHorizontal } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
@@ -308,6 +307,19 @@ function Pagination({
   );
 }
 
+function subscribeToUrl(callback: () => void) {
+  window.addEventListener("popstate", callback);
+  return () => window.removeEventListener("popstate", callback);
+}
+
+function getUrlSnapshot() {
+  return window.location.search;
+}
+
+function getServerUrlSnapshot() {
+  return "";
+}
+
 function ArtistsContent({
   path: basePath,
   heading,
@@ -337,8 +349,13 @@ function ArtistsContent({
   const t = useTranslations();
   const directoryLocale = useLocale();
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const searchParamsString = searchParams.toString();
+  const searchString = useSyncExternalStore(
+    subscribeToUrl,
+    getUrlSnapshot,
+    getServerUrlSnapshot,
+  );
+  const searchParams = useMemo(() => new URLSearchParams(searchString), [searchString]);
+  const searchParamsString = searchString.startsWith("?") ? searchString.slice(1) : searchString;
 
   // Localized heading/intro for the role directory pages; fall back to the
   // literal props for directory variants that don't pass an i18nKey.
@@ -441,10 +458,28 @@ function ArtistsContent({
         : desktopControlCount === 4
           ? "grid-cols-4"
           : "grid-cols-3";
-  const routeWithParams = (params: URLSearchParams) => {
-    const query = params.toString();
-    return query ? `${basePath}?${query}` : basePath;
-  };
+  const routeWithParams = useCallback(
+    (params: URLSearchParams) => {
+      const query = params.toString();
+      return query ? `${basePath}?${query}` : basePath;
+    },
+    [basePath],
+  );
+
+  const navigateParams = useCallback(
+    (params: URLSearchParams, replace = false) => {
+      const nextUrl = routeWithParams(params);
+      if (typeof window !== "undefined") {
+        if (replace) {
+          window.history.replaceState(null, "", nextUrl);
+        } else {
+          window.history.pushState(null, "", nextUrl);
+        }
+        window.dispatchEvent(new Event("popstate"));
+      }
+    },
+    [routeWithParams],
+  );
 
   const selectedGenreValue = subgenreFilter
     ? `subgenre:${subgenreFilter}`
@@ -791,7 +826,7 @@ function ArtistsContent({
   const handlePageChange = (page: number) => {
     const params = new URLSearchParams(searchParams.toString());
     params.set("page", page.toString());
-    router.push(routeWithParams(params));
+    navigateParams(params);
   };
 
   const handleRoleChange = (value: string) => {
@@ -804,7 +839,7 @@ function ArtistsContent({
     }
 
     params.set("page", "1");
-    router.push(routeWithParams(params));
+    navigateParams(params);
   };
 
   const handleGenreSelection = (value: string) => {
@@ -825,7 +860,7 @@ function ArtistsContent({
     }
 
     params.set("page", "1");
-    router.push(routeWithParams(params));
+    navigateParams(params);
   };
 
   const handleProvinceChange = (value: string) => {
@@ -843,7 +878,7 @@ function ArtistsContent({
     if (value) params.set("occupation", value);
     else params.delete("occupation");
     params.set("page", "1");
-    router.push(routeWithParams(params));
+    navigateParams(params);
   };
 
   const handleInstrumentChange = (value: string) => {
@@ -851,7 +886,7 @@ function ArtistsContent({
     if (value) params.set("instrument", value);
     else params.delete("instrument");
     params.set("page", "1");
-    router.push(routeWithParams(params));
+    navigateParams(params);
   };
 
   const handleAwardChange = (value: string) => {
@@ -859,7 +894,7 @@ function ArtistsContent({
     if (value) params.set("award", value);
     else params.delete("award");
     params.set("page", "1");
-    router.push(routeWithParams(params));
+    navigateParams(params);
   };
 
   const handleLetterChange = (letter: string) => {
@@ -867,11 +902,11 @@ function ArtistsContent({
     if (letter) params.set("letter", letter);
     else params.delete("letter");
     params.set("page", "1");
-    router.push(routeWithParams(params));
+    navigateParams(params);
   };
 
   const clearFilters = () => {
-    router.push(basePath);
+    navigateParams(new URLSearchParams());
   };
 
   const retryLoad = () => {
@@ -1220,7 +1255,7 @@ function ArtistsContent({
                     const params = new URLSearchParams(searchParams.toString());
                     params.set("sort", e.target.value);
                     params.set("page", "1");
-                    router.push(routeWithParams(params));
+                    navigateParams(params);
                   }}
                   value={sort}
                   className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
@@ -1432,7 +1467,7 @@ function ArtistsContent({
                     const params = new URLSearchParams(searchParams.toString());
                     params.set("sort", e.target.value);
                     params.set("page", "1");
-                    router.push(routeWithParams(params));
+                    navigateParams(params);
                   }}
                   value={sort}
                   className="h-9 min-w-0 rounded-xl border border-black/10 bg-white px-2 text-xs text-gray-600 outline-none sm:text-sm"
@@ -1546,9 +1581,5 @@ function NoArtistsMessage({ i18nKey }: { i18nKey?: string }) {
 }
 
 export default function ArtistDirectory(props: ArtistDirectoryProps) {
-  return (
-    <Suspense fallback={null}>
-      <ArtistsContent {...props} />
-    </Suspense>
-  );
+  return <ArtistsContent {...props} />;
 }

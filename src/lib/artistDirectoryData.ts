@@ -9,7 +9,7 @@ import {
 import { getSupabaseClient } from "@/lib/supabase";
 import {
   PUBLIC_ARTIST_DIRECTORY_CACHE_TAG,
-  PUBLIC_CATALOG_REVALIDATE_SECONDS,
+  PUBLIC_ARTIST_DIRECTORY_REVALIDATE_SECONDS,
 } from "@/lib/publicCatalogCache";
 import type { Artist } from "@/types/music";
 
@@ -87,6 +87,7 @@ export function createArtistDirectoryInitialDataKey({
     params.get("instrument") ?? "",
     province ?? "",
     sort,
+    params.get("letter") ?? "",
     rankedArtistIds?.join(",") ?? "",
     genreOptions.map((item) => `${item.id}:${item.slug ?? item.name}`).join("|"),
     subgenreOptions.map((item) => `${item.id}:${item.name}`).join("|"),
@@ -188,7 +189,7 @@ export const getArtistDirectoryInitialData = unstable_cache(
   loadArtistDirectoryInitialData,
   ["public-artist-directory-initial-data-v1"],
   {
-    revalidate: PUBLIC_CATALOG_REVALIDATE_SECONDS,
+    revalidate: PUBLIC_ARTIST_DIRECTORY_REVALIDATE_SECONDS,
     tags: [PUBLIC_ARTIST_DIRECTORY_CACHE_TAG],
   },
 );
