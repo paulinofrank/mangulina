@@ -21,6 +21,8 @@ type ArtistDirectoryQueryOptions = {
   fixedProvince?: string;
   fixedArtistStatus?: "legend" | "emerging";
   rankedArtistIds?: string[];
+  fixedArtistTypes?: string[];
+  fixedOrFilter?: string;
 };
 
 function firstParam(value: string | string[] | undefined) {
@@ -61,6 +63,8 @@ export function createArtistDirectoryInitialDataKey({
   fixedProvince,
   fixedArtistStatus,
   rankedArtistIds,
+  fixedArtistTypes,
+  fixedOrFilter,
 }: ArtistDirectoryQueryOptions) {
   const params = new URLSearchParams(toSearchParamsString(searchParams));
   const currentPage = Number.parseInt(params.get("page") ?? "1", 10) || 1;
@@ -89,6 +93,8 @@ export function createArtistDirectoryInitialDataKey({
     sort,
     params.get("letter") ?? "",
     rankedArtistIds?.join(",") ?? "",
+    fixedArtistTypes ? [...fixedArtistTypes].sort().join(",") : "",
+    fixedOrFilter ?? "",
     genreOptions.map((item) => `${item.id}:${item.slug ?? item.name}`).join("|"),
     subgenreOptions.map((item) => `${item.id}:${item.name}`).join("|"),
   ].join("::");
@@ -123,7 +129,9 @@ async function loadArtistDirectoryInitialData(
   const search = params.get("search");
   if (search) query = query.ilike("name", `%${search}%`);
   if (options.role) query = query.eq("primary_role", options.role);
+  if (options.fixedArtistTypes?.length) query = query.in("type", options.fixedArtistTypes);
   if (options.fixedContext) query = query.contains("artist_tags", [options.fixedContext]);
+  if (options.fixedOrFilter) query = query.or(options.fixedOrFilter);
   if (artistStatuses.length === 1) query = query.contains("artist_tags", [artistStatuses[0]]);
   if (genreFilter) {
     const option = genreOptions.find((item) => (item.slug || item.name) === genreFilter);
@@ -159,6 +167,7 @@ async function loadArtistDirectoryInitialData(
       fixedContext: options.fixedContext ?? null,
       fixedProvince: options.fixedProvince ?? null,
       fixedArtistStatus: options.fixedArtistStatus ?? null,
+      fixedArtistTypes: options.fixedArtistTypes ?? null,
       page: currentPage,
     });
     return {

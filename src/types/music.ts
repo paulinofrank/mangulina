@@ -4,6 +4,7 @@ export interface Artist {
   id: string; // Changed to string to match Supabase UUIDs
   slug: string;
   name: string;
+  type?: string | null;
   status?: "draft" | "published" | "hidden" | "needs_review" | "duplicate";
   primary_role?: string | null;
   occupations?: string[] | Record<string, unknown> | null;

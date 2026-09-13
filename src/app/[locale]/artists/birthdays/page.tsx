@@ -324,6 +324,7 @@ export default async function ArtistBirthdaysPage({
     .from("artists")
     .select("birth_year")
     .eq("status", "published")
+    .eq("type", "solo_artist")
     .not("date_of_birth", "is", null)
     .not("birth_year", "is", null);
 
@@ -337,6 +338,7 @@ export default async function ArtistBirthdaysPage({
     .from("artists")
     .select(ARTIST_SELECT)
     .eq("status", "published")
+    .eq("type", "solo_artist")
     .not("date_of_birth", "is", null);
 
   artistQuery = browseMode === "year" && selectedYear

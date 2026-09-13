@@ -22,6 +22,8 @@ export type ArtistForm = {
   birth_year: string;
   date_of_death: string;
   death_year: string;
+  formation_year: string;
+  dissolution_year: string;
   birth_place: string;
   province: string;
   type: string;
@@ -89,6 +91,8 @@ export function buildArtistWrite(form: ArtistForm) {
     birth_year: form.birth_year ? Number(form.birth_year) : null,
     date_of_death: nullable(form.date_of_death),
     death_year: form.death_year ? Number(form.death_year) : null,
+    formation_year: form.formation_year ? Number(form.formation_year) : null,
+    dissolution_year: form.dissolution_year ? Number(form.dissolution_year) : null,
 
     birth_place: nullable(form.birth_place),
     province: nullable(form.province),

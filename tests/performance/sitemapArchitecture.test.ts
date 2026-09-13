@@ -233,8 +233,8 @@ test("chunk queries are bounded, deterministically ordered, and range-paginated"
   );
 });
 
-test("caching is explicit: force-static route handlers with a 24h fallback TTL", () => {
-  assert.equal(SITEMAP_REVALIDATE_SECONDS, 86400);
+test("caching is explicit: force-static route handlers with a 7d fallback TTL", () => {
+  assert.equal(SITEMAP_REVALIDATE_SECONDS, 604800);
 
   for (const [label, source] of [
     ["index", indexRoute],
@@ -260,7 +260,7 @@ test("caching is explicit: force-static route handlers with a 24h fallback TTL",
   assert.match(childRoute, /status: 404/, "unknown or past-the-end chunks return 404");
 });
 
-test("the static family keeps its own 24h cache entry", () => {
+test("the static family keeps its own 7d cache entry", () => {
   // Next.js resolves a route's revalidate as the MINIMUM across everything it
   // reads. The archive/genre/province helpers are shared with the hub pages
   // and carry a 600s TTL, which silently dragged /sitemaps/static.xml down to

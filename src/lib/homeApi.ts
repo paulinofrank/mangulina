@@ -96,7 +96,8 @@ async function loadHomeData(locale: EditorialLocale) {
     .from("artists")
     .select(artistFields)
     .eq("status", "published")
-    .eq("primary_role", "singer")
+    .in("primary_role", ["singer", "rapper"])
+    .eq("type", "solo_artist")
     .gt("views", 0)
     .order("views", { ascending: false, nullsFirst: false })
     .limit(HOME_ARTIST_CARD_LIMIT));
@@ -122,6 +123,8 @@ async function loadHomeData(locale: EditorialLocale) {
     .select(artistFields)
     .eq("status", "published")
     .contains("artist_tags", ["christian"])
+    .in("primary_role", ["singer", "rapper"])
+    .eq("type", "solo_artist")
     .gt("views", 0)
     .order("views", { ascending: false, nullsFirst: false })
     .limit(HOME_ARTIST_CARD_LIMIT));
@@ -132,7 +135,7 @@ async function loadHomeData(locale: EditorialLocale) {
     .from("artists")
     .select(artistFields)
     .eq("status", "published")
-    .eq("primary_role", "instrumentalist")
+    .or("artist_tags.cs.{instrumental},primary_genre.eq.instrumental-classical,genres.cs.{instrumental-classical}")
     .gt("views", 0)
     .order("views", { ascending: false, nullsFirst: false })
     .limit(HOME_ARTIST_CARD_LIMIT));
@@ -148,7 +151,7 @@ async function loadHomeData(locale: EditorialLocale) {
     .from("artists")
     .select(artistFields)
     .eq("status", "published")
-    .contains("artist_tags", ["legend"])
+    .in("type", ["group", "duo"])
     .gt("views", 0)
     .order("views", { ascending: false, nullsFirst: false })
     .limit(HOME_ARTIST_CARD_LIMIT));

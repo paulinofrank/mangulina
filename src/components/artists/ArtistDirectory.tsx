@@ -52,12 +52,14 @@ type ArtistDirectoryProps = {
   mobileTitleHighlight?: string;
   fixedArtistStatus?: "legend" | "emerging";
   rankedArtistIds?: string[];
+  fixedArtistTypes?: string[];
   awardRankings?: AwardedArtistRanking[];
   occupationOptions?: Array<{ value: string; label: string }>;
   instrumentOptions?: Array<{ value: string; label: string }>;
   rolePageOptions?: Array<{ href: string; label: string }>;
   awardOptions?: AwardFilterOption[];
   initialData?: ArtistDirectoryInitialData;
+  fixedOrFilter?: string;
 };
 
 const ROLE_FILTERS: Array<{ key: ArtistBrowseRole; label: string }> = [
@@ -338,12 +340,14 @@ function ArtistsContent({
   mobileTitleHighlight,
   fixedArtistStatus,
   rankedArtistIds,
+  fixedArtistTypes,
   awardRankings = [],
   occupationOptions = [],
   instrumentOptions = [],
   rolePageOptions = [],
   awardOptions = [],
   initialData,
+  fixedOrFilter,
 }: ArtistDirectoryProps) {
   const supabase = getSupabaseClient();
   const t = useTranslations();
@@ -426,6 +430,7 @@ function ArtistsContent({
   const currentPage = parseInt(searchParams.get("page") ?? "1");
   const letterFilter = searchParams.get("letter");
   const rankedArtistIdsKey = rankedArtistIds?.join(",") ?? "";
+  const fixedArtistTypesKey = fixedArtistTypes ? [...fixedArtistTypes].sort().join(",") : "";
   const awardRankingsKey = awardRankings
     .map(
       (ranking) =>
@@ -656,6 +661,14 @@ function ArtistsContent({
           query = query.eq("primary_role", role);
         }
 
+        if (fixedArtistTypes?.length) {
+          query = query.in("type", fixedArtistTypes);
+        }
+
+        if (fixedOrFilter) {
+          query = query.or(fixedOrFilter);
+        }
+
         // Classification tags live in artist_tags; musical genres stay in genres.
         if (selectedContext) {
           query = query.contains("artist_tags", [selectedContext]);
@@ -776,6 +789,7 @@ function ArtistsContent({
       sort,
       letterFilter ?? "",
       rankedArtistIdsKey,
+      fixedArtistTypesKey,
       genreOptions.map((item) => `${item.id}:${item.slug ?? item.name}`).join("|"),
       subgenreOptions.map((item) => `${item.id}:${item.name}`).join("|"),
     ].join("::");
@@ -816,6 +830,9 @@ function ArtistsContent({
     sort,
     letterFilter,
     rankedArtistIdsKey,
+    fixedArtistTypes,
+    fixedArtistTypesKey,
+    fixedOrFilter,
     genreOptions,
     subgenreOptions,
     initialData,
@@ -964,6 +981,10 @@ function ArtistsContent({
       return displayHeading;
     }
 
+    if (fixedArtistTypes?.length && !province && !genreLabel) {
+      return displayHeading;
+    }
+
     if (
       fixedRole &&
       !province &&
@@ -1057,6 +1078,7 @@ function ArtistsContent({
     fixedContext,
     fixedRole,
     fixedArtistStatus,
+    fixedArtistTypes,
     fixedProvince,
     roleLabel,
     selectedContext,

@@ -19,10 +19,14 @@ type ChristianArtistsPageProps = {
 export default async function ChristianArtistsPage({
   searchParams,
 }: ChristianArtistsPageProps) {
-  const filteredGenreOptions = await getArtistGenreOptions({ context: "christian" });
+  const filteredGenreOptions = await getArtistGenreOptions({
+    context: "christian",
+    artistTypes: ["solo_artist"],
+  });
   const initialData = await getArtistDirectoryInitialData({
     searchParams: await searchParams,
     fixedContext: "christian",
+    fixedArtistTypes: ["solo_artist"],
     filteredGenreOptions,
   });
 
@@ -31,6 +35,7 @@ export default async function ChristianArtistsPage({
       path="/christian"
       i18nKey="christian"
       fixedContext="christian"
+      fixedArtistTypes={["solo_artist"]}
       showRoleFilters
       filteredGenreOptions={filteredGenreOptions}
       initialData={initialData}

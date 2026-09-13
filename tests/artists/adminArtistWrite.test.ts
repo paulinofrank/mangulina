@@ -20,6 +20,8 @@ const base: ArtistForm = {
   birth_year: "1980",
   date_of_death: "",
   death_year: "",
+  formation_year: "",
+  dissolution_year: "",
   birth_place: "Santo Domingo",
   province: "Distrito Nacional",
   type: "solo_artist",
@@ -98,4 +100,19 @@ test("every form field can round-trip into the payload", () => {
   assert.equal(changed.name, "Changed");
   assert.equal(changed.birth_year, 1981);
   assert.equal(changed.ended, true);
+});
+
+test("formation_year and dissolution_year convert to number and diff correctly", () => {
+  const baseline = buildArtistWrite(base);
+  const next = buildArtistWrite({
+    ...base,
+    type: "group",
+    formation_year: "1985",
+    dissolution_year: "2010",
+  });
+  const changed = changedArtistFields(baseline, next);
+
+  assert.equal(changed.type, "group");
+  assert.equal(changed.formation_year, 1985);
+  assert.equal(changed.dissolution_year, 2010);
 });

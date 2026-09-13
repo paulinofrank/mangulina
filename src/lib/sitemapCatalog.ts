@@ -41,7 +41,7 @@ import { getSupabaseClient } from "@/lib/supabase";
  *
  * Because chunks are cached independently, a shift can briefly leave one URL
  * listed in two chunks or in neither until the affected chunks revalidate
- * (bounded by the 24h TTL). Sitemaps are discovery hints, not authority: the
+ * (bounded by the 7-day TTL). Sitemaps are discovery hints, not authority: the
  * public route itself enforces publication immediately, so both conditions are
  * harmless and self-healing. This is deliberately not engineered away —
  * immutable membership would require keyset boundaries and far more machinery
@@ -66,7 +66,7 @@ export const SITEMAP_CHUNK_SIZE = 5000;
  * position. tests/performance/sitemapArchitecture.test.ts asserts the two
  * stay in sync.
  */
-export const SITEMAP_REVALIDATE_SECONDS = 86400;
+export const SITEMAP_REVALIDATE_SECONDS = 604800; // 7 days
 
 export const SITEMAP_FAMILIES = ["artists", "songs", "releases"] as const;
 export type SitemapFamily = (typeof SITEMAP_FAMILIES)[number];
@@ -442,6 +442,7 @@ export const STATIC_SITEMAP_PATHS: SitemapPath[] = [
   { path: "/artists/legends", priority: 0.8 },
   { path: "/artists/emerging", priority: 0.8 },
   { path: "/artists/most-awarded", priority: 0.8 },
+  { path: "/artists/groups", priority: 0.8 },
   { path: "/instrumental-classical", priority: 0.7 },
   { path: "/composers", priority: 0.8 },
   { path: "/songwriters", priority: 0.8 },
@@ -523,7 +524,7 @@ async function buildStaticSitemapPaths(): Promise<SitemapPath[]> {
  * hub pages, where they carry a 600s TTL. Next.js resolves a route's
  * revalidate as the minimum across everything it reads, so calling them
  * directly dragged this sitemap down to 600s — regenerating it 144x a day
- * instead of once. Isolating them here restores the intended 24h TTL without
+ * instead of once. Isolating them here restores the intended 7-day TTL without
  * touching the shared helpers (whose own TTL is out of scope for Phase 2).
  */
 export const loadStaticSitemapPaths = unstable_cache(

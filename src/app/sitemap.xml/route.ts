@@ -15,7 +15,7 @@ import {
  * family needs. No entity rows are read here.
  *
  * Caching (explicit, not inherited defaults): `force-static` opts this GET
- * handler into the full route cache, and `revalidate` gives it a 24h fallback
+ * handler into the full route cache, and `revalidate` gives it a 7-day fallback
  * TTL — so repeat crawler requests are served from cache without touching
  * Supabase. `revalidate` must be a literal Next.js can analyze statically,
  * which is why SITEMAP_REVALIDATE_SECONDS is mirrored rather than imported.
@@ -25,7 +25,7 @@ import {
  * crawlers.
  */
 export const dynamic = "force-static";
-export const revalidate = 86400; // SITEMAP_REVALIDATE_SECONDS
+export const revalidate = 604800; // SITEMAP_REVALIDATE_SECONDS
 
 export async function GET() {
   const counts = await getSitemapFamilyCounts();

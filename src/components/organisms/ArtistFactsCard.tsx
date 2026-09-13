@@ -369,14 +369,14 @@ export default function ArtistFactsCard({
 }: Props) {
   const t = useTranslations();
   const locale = useLocale();
+  const isSoloArtist = artist.type === "solo_artist" || artist.type === "person";
   const realName = getRealName(artist);
   const birthDate = formatDate(artist.date_of_birth, locale);
   const deathDate = formatDate(artist.date_of_death, locale);
   const birthPlace = getBirthPlace(artist);
-  const originLabel =
-    artist.type === "solo_artist" || artist.type === "person"
-      ? t("artist.placeOfBirth")
-      : t("artist.origin");
+  const originLabel = isSoloArtist
+    ? t("artist.placeOfBirth")
+    : t("artist.origin");
   const occupations = getOccupationList(artist.occupations);
   const instruments = getInstrumentList(artist.instruments);
   const artistStatus = getArtistStatus(artist, t);
@@ -429,11 +429,19 @@ export default function ArtistFactsCard({
       <div className="space-y-4">
         <Field label={t("artist.stageName")}>{artist.stage_name}</Field>
 
-        <Field label={t("artist.realName")}>{realName}</Field>
+        {isSoloArtist && <Field label={t("artist.realName")}>{realName}</Field>}
 
-        <Field label={t("artist.dateOfBirth")}>{birthDate}</Field>
+        {isSoloArtist && <Field label={t("artist.dateOfBirth")}>{birthDate}</Field>}
 
-        <Field label={t("artist.dateOfDeath")}>{deathDate}</Field>
+        {isSoloArtist && <Field label={t("artist.dateOfDeath")}>{deathDate}</Field>}
+
+        {!isSoloArtist && (
+          <Field label={t("artist.formationYear")}>{artist.formation_year}</Field>
+        )}
+
+        {!isSoloArtist && (
+          <Field label={t("artist.dissolutionYear")}>{artist.dissolution_year}</Field>
+        )}
 
         <Field label={originLabel}>{birthPlace}</Field>
 
@@ -466,15 +474,17 @@ export default function ArtistFactsCard({
 
         <Field label={t("artist.statusLabel")}>{artistStatus}</Field>
 
-        <Field label={t("artist.primaryRole")}>{translateRoleLikeValue(artist.primary_role, t)}</Field>
+        {isSoloArtist && (
+          <Field label={t("artist.primaryRole")}>{translateRoleLikeValue(artist.primary_role, t)}</Field>
+        )}
 
-        {occupations.length > 0 && (
+        {isSoloArtist && occupations.length > 0 && (
           <Field label={t("artist.otherRoles")}>
             <InlineList values={occupations.map((occupation) => translateRoleLikeValue(occupation, t))} />
           </Field>
         )}
 
-        {instruments.length > 0 && (
+        {isSoloArtist && instruments.length > 0 && (
           <Field label={t("artist.instruments")}>
             <InlineList
               values={instruments.map((instrument) => translateInstrumentValue(instrument, t))}

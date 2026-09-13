@@ -51,6 +51,8 @@ type AdminArtist = Artist & {
   birth_year?: number | null;
   date_of_death?: string | null;
   death_year?: number | null;
+  formation_year?: number | null;
+  dissolution_year?: number | null;
   birth_place?: string | null;
   province?: string | null;
   website?: string | null;
@@ -289,6 +291,7 @@ const primaryRoleOptions = [
   { value: "musician", label: "Musician" },
   { value: "composer", label: "Composer" },
   { value: "songwriter", label: "Songwriter" },
+  { value: "lyricist", label: "Lyricist" },
   { value: "producer", label: "Producer" },
   { value: "arranger", label: "Arranger" },
   { value: "bandleader", label: "Bandleader" },
@@ -296,8 +299,6 @@ const primaryRoleOptions = [
   { value: "orchestra", label: "Orchestra" },
   { value: "dj", label: "DJ" },
   { value: "rapper", label: "Rapper" },
-  { value: "instrumentalist", label: "Instrumentalist" },
-  { value: "other", label: "Other" },
 ];
 
 const instrumentOptions = [
@@ -336,6 +337,8 @@ const emptyForm: ArtistForm = {
   birth_year: "",
   date_of_death: "",
   death_year: "",
+  formation_year: "",
+  dissolution_year: "",
   birth_place: "",
   province: "",
   type: "",
@@ -925,6 +928,8 @@ export default function AdminDashboard() {
       birth_year: artist.birth_year ? String(artist.birth_year) : "",
       date_of_death: artist.date_of_death ?? "",
       death_year: artist.death_year ? String(artist.death_year) : "",
+      formation_year: artist.formation_year ? String(artist.formation_year) : "",
+      dissolution_year: artist.dissolution_year ? String(artist.dissolution_year) : "",
       birth_place: artist.birth_place ?? "",
       province:
         artist.province === "X - Born Outside" || artist.province === "Born Abroad"
@@ -2109,59 +2114,85 @@ export default function AdminDashboard() {
                 </Field>
               </div>
 
-              <div className="grid gap-4 md:grid-cols-4">
-                <Field label={t("admin.labels.dateOfBirth")}>
-                  <input
-                    type="date"
-                    value={form.date_of_birth ?? ""}
-                    onChange={(event) =>
-                      updateDateWithYear(
-                        "date_of_birth",
-                        "birth_year",
-                        event.target.value
-                      )
-                    }
-                    className={inputClass}
-                  />
-                </Field>
+              {form.type === "group" || form.type === "duo" ? (
+                <div className="grid gap-4 md:grid-cols-2">
+                  <Field label={t("admin.labels.formationYear")}>
+                    <input
+                      type="number"
+                      value={form.formation_year ?? ""}
+                      onChange={(event) =>
+                        updateForm("formation_year", event.target.value)
+                      }
+                      className={inputClass}
+                    />
+                  </Field>
 
-                <Field label={t("admin.labels.birthYear")}>
-                  <input
-                    type="number"
-                    value={form.birth_year ?? ""}
-                    onChange={(event) =>
-                      updateForm("birth_year", event.target.value)
-                    }
-                    className={inputClass}
-                  />
-                </Field>
+                  <Field label={t("admin.labels.dissolutionYear")}>
+                    <input
+                      type="number"
+                      value={form.dissolution_year ?? ""}
+                      onChange={(event) =>
+                        updateForm("dissolution_year", event.target.value)
+                      }
+                      className={inputClass}
+                    />
+                  </Field>
+                </div>
+              ) : (
+                <div className="grid gap-4 md:grid-cols-4">
+                  <Field label={t("admin.labels.dateOfBirth")}>
+                    <input
+                      type="date"
+                      value={form.date_of_birth ?? ""}
+                      onChange={(event) =>
+                        updateDateWithYear(
+                          "date_of_birth",
+                          "birth_year",
+                          event.target.value
+                        )
+                      }
+                      className={inputClass}
+                    />
+                  </Field>
 
-                <Field label={t("admin.labels.dateOfDeath")}>
-                  <input
-                    type="date"
-                    value={form.date_of_death ?? ""}
-                    onChange={(event) =>
-                      updateDateWithYear(
-                        "date_of_death",
-                        "death_year",
-                        event.target.value
-                      )
-                    }
-                    className={inputClass}
-                  />
-                </Field>
+                  <Field label={t("admin.labels.birthYear")}>
+                    <input
+                      type="number"
+                      value={form.birth_year ?? ""}
+                      onChange={(event) =>
+                        updateForm("birth_year", event.target.value)
+                      }
+                      className={inputClass}
+                    />
+                  </Field>
 
-                <Field label={t("admin.labels.deathYear")}>
-                  <input
-                    type="number"
-                    value={form.death_year ?? ""}
-                    onChange={(event) =>
-                      updateForm("death_year", event.target.value)
-                    }
-                    className={inputClass}
-                  />
-                </Field>
-              </div>
+                  <Field label={t("admin.labels.dateOfDeath")}>
+                    <input
+                      type="date"
+                      value={form.date_of_death ?? ""}
+                      onChange={(event) =>
+                        updateDateWithYear(
+                          "date_of_death",
+                          "death_year",
+                          event.target.value
+                        )
+                      }
+                      className={inputClass}
+                    />
+                  </Field>
+
+                  <Field label={t("admin.labels.deathYear")}>
+                    <input
+                      type="number"
+                      value={form.death_year ?? ""}
+                      onChange={(event) =>
+                        updateForm("death_year", event.target.value)
+                      }
+                      className={inputClass}
+                    />
+                  </Field>
+                </div>
+              )}
 
               <div>
                 <Field label={t("admin.labels.gender")}>

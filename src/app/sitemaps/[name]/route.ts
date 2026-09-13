@@ -19,7 +19,7 @@ import {
  *
  * Each request runs only the bounded queries for its own family window (see
  * sitemapCatalog.ts). Caching is explicit and per-URL: `force-static` puts each
- * generated child in the full route cache and `revalidate` gives it a 24h
+ * generated child in the full route cache and `revalidate` gives it a 7-day
  * fallback TTL, so a repeat crawler request for the same chunk is served from
  * cache without re-querying Supabase, and each chunk ages on its own clock.
  *
@@ -28,7 +28,7 @@ import {
  * on first request via dynamicParams, exactly like the profile routes.
  */
 export const dynamic = "force-static";
-export const revalidate = 86400; // SITEMAP_REVALIDATE_SECONDS
+export const revalidate = 604800; // SITEMAP_REVALIDATE_SECONDS
 
 export function generateStaticParams() {
   return [];

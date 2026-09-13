@@ -40,7 +40,7 @@ export default function ArtistAwardsSection({ awards }: Props) {
   }, [awards]);
 
   const wins = awards.filter((a) => a.won).length;
-  const totalNominations = awards.length;
+  const nominations = awards.filter((a) => !a.won).length;
   const organizations = grouped.length;
 
   if (!awards.length) return null;
@@ -52,17 +52,17 @@ export default function ArtistAwardsSection({ awards }: Props) {
           {t("awardsNominations")}
         </h3>
 
-        <div className="flex flex-wrap gap-2 text-xs">
-          <span className="rounded-full border border-yellow-200 bg-yellow-50 px-3 py-1 font-normal text-gray-800">
+        <div className="flex flex-wrap items-center justify-center gap-2 text-xs">
+          <span className="rounded-full border border-yellow-200 bg-yellow-50 px-3 py-1 text-center font-normal text-gray-800">
             🏆 {t("winsCount", { count: wins })}
           </span>
 
-          <span className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 font-normal text-gray-800">
-            🎖️ {t("nominationsCount", { count: totalNominations })}
+          <span className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-center font-normal text-gray-800">
+            🎖️ {t("nominationsCount", { count: nominations })}
           </span>
 
-          <span className="rounded-full border border-(--color-flagblue)/15 bg-(--color-flagblue)/5 px-3 py-1 font-normal text-gray-800">
-            🌎 {t("organizationsCount", { count: organizations })}
+          <span className="rounded-full border border-(--color-flagblue)/15 bg-(--color-flagblue)/5 px-3 py-1 text-center font-normal text-gray-800">
+            🌐 {t("organizationsCount", { count: organizations })}
           </span>
         </div>
       </div>
@@ -70,7 +70,7 @@ export default function ArtistAwardsSection({ awards }: Props) {
       <div className="space-y-2">
         {grouped.map(([awardName, items]) => {
           const isOpen = openAward === awardName;
-          const awardWins = items.filter((item) => item.won).length;
+          const winsCount = items.filter((item) => item.won).length;
 
           return (
             <div
@@ -89,8 +89,8 @@ export default function ArtistAwardsSection({ awards }: Props) {
                   {awardName}
                 </span>
 
-                <span className="text-[11px] font-normal uppercase tracking-wider text-gray-400">
-                  {t("winsShort", { count: awardWins })}
+                <span className="text-xs font-normal tabular-nums text-gray-400">
+                  {winsCount}
                 </span>
               </button>
 

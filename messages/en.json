@@ -83,7 +83,7 @@
     "christianArtists": "Most Viewed Christian",
     "classicalArtists": "Most Viewed Instrumental",
     "risingStars": "Emerging Artists",
-    "legends": "Most Viewed Legendaries"
+    "legends": "Bands, Orchestras & Duos"
   },
   "homePage": {
     "intro": "Mangulina is the Dominican Music Database, dedicated to preserving and documenting Dominican artists, recordings, releases, genres, and music history. Explore the people and songs that shape Dominican music across generations."
@@ -336,6 +336,8 @@
     "realName": "Real Name",
     "dateOfBirth": "Date of Birth",
     "dateOfDeath": "Date of Death",
+    "formationYear": "Formation Year",
+    "dissolutionYear": "Dissolution Year",
     "placeOfBirth": "Place of Birth",
     "origin": "Origin",
     "aliases": "Aliases",
@@ -364,9 +366,9 @@
     "present": "present",
     "untilYear": "Until {year}",
     "awardsNominations": "Awards & Nominations",
-    "winsCount": "{count} Wins",
-    "nominationsCount": "{count} Nominations",
-    "organizationsCount": "{count} Organizations",
+    "winsCount": "{count, plural, one {# award won} other {# awards won}}",
+    "nominationsCount": "{count, plural, one {# nomination} other {# nominations}}",
+    "organizationsCount": "{count, plural, one {# organization} other {# organizations}}",
     "winsShort": "{count, plural, one {# Win} other {# Wins}}",
     "winner": "Winner",
     "nominee": "Nominee",
@@ -494,6 +496,12 @@
     "mostAwarded": {
       "heading": "Most Awarded Dominican Artists",
       "intro": "Explore Dominican artists recognized through awards and nominations in Mangulina, the Dominican Music Database."
+    },
+    "groups": {
+      "heading": "Bands, Orchestras & Duos",
+      "intro": "Explore Dominican bands, orchestras, duos, and musical ensembles in Mangulina, the Dominican Music Database.",
+      "metadataTitle": "Dominican Bands, Orchestras & Duos",
+      "metadataDescription": "Discover Dominican bands, orchestras, duos, and musical groups across genres and generations in Mangulina, the Dominican Music Database."
     },
     "awardRanking": {
       "awards": "{count, plural, one {# award} other {# awards}}",
@@ -1110,7 +1118,7 @@
       "decadesTitle": "Decades",
       "decadeLinkAria": "Browse {count, plural, one {# recording} other {# recordings}} from the {decade}",
       "links": {
-        "singers": "Singers", "christianArtists": "Christian Artists", "legends": "Legends", "emergingArtists": "Emerging Artists", "mostAwarded": "Most Awarded Artists", "birthdays": "Artist Birthdays", "instrumentalClassical": "Instrumental & Classical",
+        "singers": "Singers", "christianArtists": "Christian Artists", "legends": "Legends", "emergingArtists": "Emerging Artists", "mostAwarded": "Most Awarded Artists", "birthdays": "Artist Birthdays", "instrumentalClassical": "Instrumental & Classical", "groups": "Bands, Orchestras & Duos",
         "composers": "Composers", "songwriters": "Songwriters", "lyricists": "Lyricists", "arrangers": "Arrangers", "musicalDirectors": "Musical Directors", "djs": "DJs", "musicians": "Musicians", "producers": "Producers",
         "songs": "Songs", "releases": "Releases", "genres": "Genres", "home": "Home", "about": "About", "contact": "Contact", "contributors": "Contributors", "privacy": "Privacy Policy", "terms": "Terms of Use", "dmca": "Copyrights & DMCA"
       },
@@ -1415,6 +1423,8 @@
       "birthYear": "Birth Year",
       "dateOfDeath": "Date of Death",
       "deathYear": "Death Year",
+      "formationYear": "Formation Year",
+      "dissolutionYear": "Dissolution Year",
       "placeOfBirth": "Place of Birth",
       "province": "Province",
       "artistType": "Artist Type",

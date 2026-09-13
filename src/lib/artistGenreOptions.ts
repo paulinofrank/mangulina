@@ -22,6 +22,7 @@ export type ArtistGenreBaseFilter = {
   role?: string;
   province?: string;
   artistStatus?: "legend" | "emerging";
+  artistTypes?: string[];
 };
 
 export type FilteredArtistGenreOptions = {
@@ -101,6 +102,10 @@ export async function getArtistGenreOptions(
 
     if (baseFilter.artistStatus) {
       query = query.contains("artist_tags", [baseFilter.artistStatus]);
+    }
+
+    if (baseFilter.artistTypes?.length) {
+      query = query.in("type", baseFilter.artistTypes);
     }
 
     const { data, error } = await query.range(from, from + PAGE_SIZE - 1);

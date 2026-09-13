@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import type { TrendingSong } from "@/types/home";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
+import ArtistCarousel from "@/components/molecules/ArtistCarousel";
 import SongCard from "@/components/molecules/SongCard";
 import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 import SectionCard from "@/components/layout/SectionCard";
@@ -40,59 +41,52 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
     <SectionCard compact>
       <CarouselArrows onLeft={() => scroll("left")} onRight={() => scroll("right")} />
 
-      <div className="px-[7px] py-0 sm:px-6">
-        <div className="w-full">
+      <div className="section-inner">
+        {/* Header */}
+        <div className="section-header">
+          <h2>
+            {t("trendingSongs")}
+          </h2>
 
-          {/* Header */}
-   <div className="section-header flex items-center justify-between">
-  <h2>
-    {t("trendingSongs")}
-  </h2>
-
-  <Link
-    href="/archive"
-    prefetch={false}
-    className="text-[#8B0000] hover:text-[#6B0000] text-sm uppercase tracking-wider transition-colors"
-  >
-    {nav("seeAll")}
-  </Link>
-</div>
-
-
-          {/* Carousel */}
-          <div
-            ref={scrollRef}
-            className="flex w-full gap-4 overflow-x-auto scrollbar-none pb-2"
+          <Link
+            href="/archive"
+            prefetch={false}
+            className="text-[#8B0000] hover:text-[#6B0000] text-sm uppercase tracking-wider transition-colors"
           >
-            {safeSongs.slice(0, HOME_SONG_CARD_LIMIT).map((song) => {
-              if (!song) return null;
-
-              const credits = song.recording_credits ?? [];
-              const artistName =
-                credits.length > 0
-                  ? credits.map((c) => c.artist?.name).filter(Boolean).join(" & ")
-                  : "Unknown Artist";
-
-              const coverUrl = song.release?.id
-                ? song.release.has_cover_image
-                  ? getPublicReleaseCoverUrl(song.release.id, 150)
-                  : "/images/placeholder-song.jpg"
-                : "/images/placeholder-song.jpg";
-
-              return (
-                <SongCard
-                  key={song.id}
-                  id={song.id}
-                  slug={song.slug}
-                  title={song.title}
-                  artistName={artistName}
-                  coverUrl={coverUrl}
-                  views={song.views}
-                />
-              );
-            })}
-          </div>
+            {nav("seeAll")}
+          </Link>
         </div>
+
+        {/* Carousel */}
+        <ArtistCarousel ref={scrollRef}>
+          {safeSongs.slice(0, HOME_SONG_CARD_LIMIT).map((song) => {
+            if (!song) return null;
+
+            const credits = song.recording_credits ?? [];
+            const artistName =
+              credits.length > 0
+                ? credits.map((c) => c.artist?.name).filter(Boolean).join(" & ")
+                : "Unknown Artist";
+
+            const coverUrl = song.release?.id
+              ? song.release.has_cover_image
+                ? getPublicReleaseCoverUrl(song.release.id, 150)
+                : "/images/placeholder-song.jpg"
+              : "/images/placeholder-song.jpg";
+
+            return (
+              <SongCard
+                key={song.id}
+                id={song.id}
+                slug={song.slug}
+                title={song.title}
+                artistName={artistName}
+                coverUrl={coverUrl}
+                views={song.views}
+              />
+            );
+          })}
+        </ArtistCarousel>
       </div>
     </SectionCard>
   );

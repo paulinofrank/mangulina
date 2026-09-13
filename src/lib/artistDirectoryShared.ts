@@ -96,6 +96,7 @@ export const ARTIST_LIST_SELECT = [
   "image_updated_at",
   "views",
   "death_year",
+  "type",
 ].join(",");
 
 export type ArtistDirectoryInitialData = {

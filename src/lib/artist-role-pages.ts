@@ -28,6 +28,7 @@ export type ArtistRolePageConfig = {
   hideProvinceSelector?: boolean;
   rolePageOptions?: Array<{ href: string; label: string }>;
   showInstrumentFilter?: boolean;
+  fixedArtistTypes?: string[];
 };
 
 const WRITING_ROLE_PAGES = [
@@ -48,6 +49,7 @@ export const ARTIST_ROLE_PAGES: Record<ArtistRolePageKey, ArtistRolePageConfig> 
     intro:
       "Explore Dominican singers across generations, genres and provinces in Mangulina, the Dominican Music Database.",
     hideProvinceSelector: true,
+    fixedArtistTypes: ["solo_artist"],
   },
   composers: {
     path: "/composers",

@@ -37,7 +37,7 @@ export default function TopLegendsArtistsSection({
         <div className="section-header">
           <h2>{t("legends")}</h2>
           <Link
-            href="/artists/legends"
+            href="/artists/groups"
             prefetch={false}
             className="ml-auto text-sm font-normal uppercase tracking-wider text-[#8B0000] transition-colors hover:text-[#6B0000]"
           >

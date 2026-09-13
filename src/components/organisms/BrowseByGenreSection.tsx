@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import { BoomBox, Disc3, Drum, Ellipsis, Guitar, Heart, MicVocal } from "lucide-react";
 import { GiMusicalNotes, GiMusicalScore, GiSaxophone } from "react-icons/gi";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
+import ArtistCarousel from "@/components/molecules/ArtistCarousel";
 import SectionCard from "@/components/layout/SectionCard";
 import { genreSpectrumGradients } from "@/lib/genres";
 
@@ -48,10 +49,7 @@ export default function BrowseByGenreSection() {
         <div className="section-header">
           <h2>{t("browseByGenre")}</h2>
         </div>
-        <div
-          ref={scrollRef}
-          className="scrollbar-none flex w-full gap-4 overflow-x-auto pb-2"
-        >
+        <ArtistCarousel ref={scrollRef}>
           {genreGroups.map((genre) => {
             const IconComponent = genre.icon;
             return (
@@ -83,7 +81,7 @@ export default function BrowseByGenreSection() {
               </Link>
             );
           })}
-        </div>
+        </ArtistCarousel>
       </div>
     </SectionCard>
   );

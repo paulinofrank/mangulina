@@ -59,6 +59,11 @@ function filterAndSortUpcomingBirthdays(artists: Artist[], today: Date) {
   const upcomingOffsets = buildUpcomingBirthdayOffsets(today);
 
   return artists
+    .filter(
+      (artist) =>
+        artist.type === "solo_artist" &&
+        (!artist.status || artist.status === "published"),
+    )
     .map((artist) => {
       const birthday = parseBirthday(artist.date_of_birth);
       if (!birthday) return null;

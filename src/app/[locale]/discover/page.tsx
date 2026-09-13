@@ -26,7 +26,14 @@ export async function generateMetadata({
 }
 
 const ARTIST_LINKS = [
-  { key: "singers", href: "/artists" }, { key: "christianArtists", href: "/christian" }, { key: "legends", href: "/artists/legends" }, { key: "emergingArtists", href: "/artists/emerging" }, { key: "mostAwarded", href: "/artists/most-awarded" }, { key: "birthdays", href: "/artists/birthdays" }, { key: "instrumentalClassical", href: "/instrumental-classical" },
+  { key: "singers", href: "/artists" },
+  { key: "christianArtists", href: "/christian" },
+  { key: "legends", href: "/artists/legends" },
+  { key: "emergingArtists", href: "/artists/emerging" },
+  { key: "mostAwarded", href: "/artists/most-awarded" },
+  { key: "instrumentalClassical", href: "/instrumental-classical" },
+  { key: "groups", href: "/artists/groups" },
+  { key: "birthdays", href: "/artists/birthdays" },
 ];
 
 const CREATOR_LINKS = [

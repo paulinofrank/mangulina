@@ -16,6 +16,7 @@ export default async function ArtistRoleDirectoryPage({
     : await getArtistGenreOptions({
         context: "secular",
         role: config.role,
+        artistTypes: config.fixedArtistTypes,
       });
   const instrumentOptions = config.showInstrumentFilter
     ? await getArtistInstrumentOptions(config.role)
@@ -24,6 +25,7 @@ export default async function ArtistRoleDirectoryPage({
     searchParams,
     role: config.role,
     filteredGenreOptions,
+    fixedArtistTypes: config.fixedArtistTypes,
   });
 
   return (

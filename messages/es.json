@@ -83,7 +83,7 @@
     "christianArtists": "Cristianos más vistos",
     "classicalArtists": "Instrumentales más vistos",
     "risingStars": "Artistas Emergentes",
-    "legends": "Legendarios más vistos"
+    "legends": "Bandas, Orquestas y Dúos"
   },
   "homePage": {
     "intro": "Mangulina es la Base de Datos de Música Dominicana, dedicada a preservar y documentar artistas, grabaciones, publicaciones musicales, géneros e historia musical dominicana. Explora las personas y canciones que dan forma a la música dominicana a través de las generaciones."
@@ -347,13 +347,15 @@
     "realName": "Nombre Real",
     "dateOfBirth": "Fecha de Nacimiento",
     "dateOfDeath": "Fecha de Fallecimiento",
+    "formationYear": "Año de Formación",
+    "dissolutionYear": "Año de Disolución",
     "placeOfBirth": "Lugar de Nacimiento",
     "origin": "Origen",
     "aliases": "Alias",
     "artistType": "Tipo de Artista",
     "statusLabel": "Estado",
     "active": "Activo",
-    "noLongerActive": "Ya no activo",
+    "noLongerActive": "Inactivo",
     "primaryRole": "Rol Principal",
     "otherRoles": "Otros Roles",
     "instruments": "Instrumentos",
@@ -375,9 +377,9 @@
     "present": "Actualidad",
     "untilYear": "Hasta {year}",
     "awardsNominations": "Premios y Nominaciones",
-    "winsCount": "{count} Victorias",
-    "nominationsCount": "{count} Nominaciones",
-    "organizationsCount": "{count} Organizaciones",
+    "winsCount": "{count, plural, one {# premio ganado} other {# premios ganados}}",
+    "nominationsCount": "{count, plural, one {# nominación} other {# nominaciones}}",
+    "organizationsCount": "{count, plural, one {# organización} other {# organizaciones}}",
     "winsShort": "{count, plural, one {# Victoria} other {# Victorias}}",
     "winner": "Ganador",
     "nominee": "Nominado",
@@ -505,6 +507,12 @@
     "mostAwarded": {
       "heading": "Artistas Dominicanos Más Premiados",
       "intro": "Explora artistas dominicanos reconocidos a través de premios y nominaciones en Mangulina, la Base de Datos de Música Dominicana."
+    },
+    "groups": {
+      "heading": "Bandas, Orquestas y Dúos",
+      "intro": "Explora bandas, orquestas, dúos y agrupaciones musicales dominicanas en Mangulina, la Base de Datos de Música Dominicana.",
+      "metadataTitle": "Bandas, Orquestas y Dúos Dominicanos",
+      "metadataDescription": "Descubre bandas, orquestas, dúos y agrupaciones musicales dominicanas a través de géneros y generaciones en Mangulina, la Base de Datos de Música Dominicana."
     },
     "awardRanking": {
       "awards": "{count, plural, one {# premio} other {# premios}}",
@@ -1123,7 +1131,7 @@
       "decadesTitle": "Décadas",
       "decadeLinkAria": "Explorar {count, plural, one {# grabación} other {# grabaciones}} de la década de {decadeYear}",
       "links": {
-        "singers": "Cantantes", "christianArtists": "Artistas Cristianos", "legends": "Leyendas", "emergingArtists": "Artistas Emergentes", "mostAwarded": "Artistas Más Premiados", "birthdays": "Cumpleaños", "instrumentalClassical": "Instrumental y Clásica",
+        "singers": "Cantantes", "christianArtists": "Artistas Cristianos", "legends": "Leyendas", "emergingArtists": "Artistas Emergentes", "mostAwarded": "Artistas Más Premiados", "birthdays": "Cumpleaños", "instrumentalClassical": "Instrumental y Clásica", "groups": "Bandas, Orquestas y Dúos",
         "composers": "Compositores", "songwriters": "Autores de Canciones", "lyricists": "Letristas", "arrangers": "Arreglistas", "musicalDirectors": "Directores Musicales", "djs": "DJs", "musicians": "Músicos", "producers": "Productores",
         "songs": "Canciones", "releases": "Álbumes", "genres": "Géneros", "home": "Inicio", "about": "Acerca de", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de privacidad", "terms": "Términos de uso", "dmca": "Derechos de Autor y DMCA"
       },
@@ -1428,6 +1436,8 @@
       "birthYear": "Año de Nacimiento",
       "dateOfDeath": "Fecha de Muerte",
       "deathYear": "Año de Muerte",
+      "formationYear": "Año de Formación",
+      "dissolutionYear": "Año de Disolución",
       "placeOfBirth": "Lugar de Nacimiento",
       "province": "Provincia",
       "artistType": "Tipo de Artista",

@@ -61,6 +61,7 @@ releases*.json
 
 #Temp files
 .tmp/
+tmp/
 
 # Temporary AI output
 *.tmp.md
