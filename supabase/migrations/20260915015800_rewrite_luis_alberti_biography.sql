@@ -1,0 +1,88 @@
+BEGIN;
+
+-- Ficha de Luis Alberti.
+--
+-- La biografía existente no era relleno genérico, pero omitía por completo el papel de la
+-- dictadura de Trujillo en la creación del merengue de orquesta -el hecho histórico más
+-- importante de la carrera de Alberti- así que se reescribió entera en vez de solo
+-- traducirla. birth_place/province corregidos de San Pedro de Macorís a La Vega (Wikipedia
+-- y begin-area de MusicBrainz); aliases ampliado con los nombres históricos de su orquesta.
+
+UPDATE artists SET birth_place = 'La Vega', province = 'La Vega', aliases = ARRAY['Orquesta Generalisimo Trujillo','Orquesta Presidente Trujillo','Orquesta Santa Cecilia']::text[]
+       WHERE slug = 'luis-alberti';
+
+INSERT INTO editorial_documents (document_type, locale, schema_version, document, status, owner_artist_id, revision)
+SELECT 'artist_biography', 'en', 1, '{"type":"doc","content":[{"type":"paragraph","content":[{"type":"text","text":"Luis Felipe Alberti Mieses, born in La Vega on 6 April 1906 and died in Santiago de los Caballeros on 26 January 1976, was a Dominican violinist, arranger and bandleader who, more than any other single musician, gave merengue the big-band form that would define it for the rest of the twentieth century."}]},{"type":"paragraph","content":[{"type":"text","text":"From La Vega to Trujillo’s personal orchestra","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"Trained on violin after his family moved to Santiago, he accompanied silent films in local theaters before forming the orchestra Liras del Yaque in 1932. When Rafael Trujillo took power that same decade, he had the group brought to Santo Domingo and renamed it his own — first Orquesta Presidente Trujillo, later Orquesta Generalísimo Trujillo — installing it as the dictatorship’s house band and the flagship of its campaign to impose merengue on every level of Dominican society it had previously been excluded from."}]},{"type":"paragraph","content":[{"type":"text","text":"«Compadre Pedro Juan»","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"Under Alberti, that promotion took a specific musical form: replacing the folk accordion with a brass section modeled on American big bands while keeping the tambora and güira, and writing lyrics acceptable to the middle class the regime wanted to win over. The approach produced merengue’s first hit to succeed across all classes, «Compadre Pedro Juan» (1936) — itself a new lyric set to «Ecos del Cibao», a 1918 melody by "},{"type":"artistReference","attrs":{"occurrenceId":"401b96cc-c583-4854-8313-61bdbb33a25c","artistId":"a4f98603-5d27-4971-bea9-d8c1c9e996da","displayText":"Juan Francisco García"}},{"type":"text","text":", continuing merengue’s own tradition of recycling old tunes with new words. Promoted nationally on the state radio station La Voz Dominicana, the song has since been recorded by dozens of artists, among them "},{"type":"artistReference","attrs":{"occurrenceId":"2a12aaed-cbd9-4667-ac58-6b6b7b3f58df","artistId":"2bc36959-dcce-4e10-9ecf-2cd418eaa489","displayText":"Wilfrido Vargas"}},{"type":"text","text":" and "},{"type":"artistReference","attrs":{"occurrenceId":"a7a43eb6-9372-40bb-add3-3d039441205c","artistId":"c6551ff1-ed33-4191-9c51-f89eec7d2be9","displayText":"Ángel Viloria y su Conjunto Típico Cibaeño"}},{"type":"text","text":"."}]},{"type":"paragraph","content":[{"type":"text","text":"After Trujillo","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"The orchestra outlived the regime that renamed it, continuing under Alberti as Orquesta Santa Cecilia; he spent a decade, from 1944 to 1954, as the resident band at Santo Domingo’s Hotel Jaragua, and in 1977, the year after his death, an album of Christmas merengues he had made with "},{"type":"artistReference","attrs":{"occurrenceId":"9519800c-18d7-4d6e-96be-75e37462fc28","artistId":"3f8bafec-e5ee-415d-8405-9551cceeeb9b","displayText":"Johnny Ventura"}},{"type":"text","text":" — whose own Combo Show would go on to reinvent orquesta merengue for the post-Trujillo era — was released as «Navidades Dominicanas»."}]},{"type":"paragraph","content":[{"type":"text","text":"Legacy","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"«Compadre Pedro Juan» remains merengue’s best-known standard, still recorded and played nearly a century after Alberti wrote it under a dictatorship that treated the genre as a tool of the state — a history the song’s enduring popularity has long since outgrown."}]}]}'::jsonb, 'published', id, 1 FROM artists WHERE slug = 'luis-alberti'
+ON CONFLICT (document_type, owner_artist_id, locale) WHERE document_type = 'artist_biography' DO UPDATE
+   SET document = excluded.document, status = 'published', revision = editorial_documents.revision + 1, updated_at = now();
+DELETE FROM editorial_entity_references WHERE editorial_document_id IN
+  (SELECT d.id FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+    WHERE a.slug = 'luis-alberti' AND d.locale = 'en' AND d.document_type = 'artist_biography');
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+SELECT d.id, '401b96cc-c583-4854-8313-61bdbb33a25c', 'artist', 'a4f98603-5d27-4971-bea9-d8c1c9e996da' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+ WHERE a.slug = 'luis-alberti' AND d.locale = 'en' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+SELECT d.id, '2a12aaed-cbd9-4667-ac58-6b6b7b3f58df', 'artist', '2bc36959-dcce-4e10-9ecf-2cd418eaa489' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+ WHERE a.slug = 'luis-alberti' AND d.locale = 'en' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+SELECT d.id, 'a7a43eb6-9372-40bb-add3-3d039441205c', 'artist', 'c6551ff1-ed33-4191-9c51-f89eec7d2be9' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+ WHERE a.slug = 'luis-alberti' AND d.locale = 'en' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+SELECT d.id, '9519800c-18d7-4d6e-96be-75e37462fc28', 'artist', '3f8bafec-e5ee-415d-8405-9551cceeeb9b' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+ WHERE a.slug = 'luis-alberti' AND d.locale = 'en' AND d.document_type = 'artist_biography';
+UPDATE artists SET bio_en = 'Luis Felipe Alberti Mieses, born in La Vega on 6 April 1906 and died in Santiago de los Caballeros on 26 January 1976, was a Dominican violinist, arranger and bandleader who, more than any other single musician, gave merengue the big-band form that would define it for the rest of the twentieth century.
+
+**From La Vega to Trujillo’s personal orchestra**
+
+Trained on violin after his family moved to Santiago, he accompanied silent films in local theaters before forming the orchestra Liras del Yaque in 1932. When Rafael Trujillo took power that same decade, he had the group brought to Santo Domingo and renamed it his own — first Orquesta Presidente Trujillo, later Orquesta Generalísimo Trujillo — installing it as the dictatorship’s house band and the flagship of its campaign to impose merengue on every level of Dominican society it had previously been excluded from.
+
+**«Compadre Pedro Juan»**
+
+Under Alberti, that promotion took a specific musical form: replacing the folk accordion with a brass section modeled on American big bands while keeping the tambora and güira, and writing lyrics acceptable to the middle class the regime wanted to win over. The approach produced merengue’s first hit to succeed across all classes, «Compadre Pedro Juan» (1936) — itself a new lyric set to «Ecos del Cibao», a 1918 melody by Juan Francisco García, continuing merengue’s own tradition of recycling old tunes with new words. Promoted nationally on the state radio station La Voz Dominicana, the song has since been recorded by dozens of artists, among them Wilfrido Vargas and Ángel Viloria y su Conjunto Típico Cibaeño.
+
+**After Trujillo**
+
+The orchestra outlived the regime that renamed it, continuing under Alberti as Orquesta Santa Cecilia; he spent a decade, from 1944 to 1954, as the resident band at Santo Domingo’s Hotel Jaragua, and in 1977, the year after his death, an album of Christmas merengues he had made with Johnny Ventura — whose own Combo Show would go on to reinvent orquesta merengue for the post-Trujillo era — was released as «Navidades Dominicanas».
+
+**Legacy**
+
+«Compadre Pedro Juan» remains merengue’s best-known standard, still recorded and played nearly a century after Alberti wrote it under a dictatorship that treated the genre as a tool of the state — a history the song’s enduring popularity has long since outgrown.' WHERE slug = 'luis-alberti';
+
+INSERT INTO editorial_documents (document_type, locale, schema_version, document, status, owner_artist_id, revision)
+SELECT 'artist_biography', 'es', 1, '{"type":"doc","content":[{"type":"paragraph","content":[{"type":"text","text":"Luis Felipe Alberti Mieses, nacido en La Vega el 6 de abril de 1906 y fallecido en Santiago de los Caballeros el 26 de enero de 1976, fue violinista, arreglista y director de orquesta dominicano que, más que ningún otro músico, le dio al merengue la forma de big band que lo definiría el resto del siglo XX."}]},{"type":"paragraph","content":[{"type":"text","text":"De La Vega a la orquesta personal de Trujillo","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"Formado en violín tras la mudanza de su familia a Santiago, acompañó al cine mudo en teatros locales antes de fundar la orquesta Liras del Yaque en 1932. Cuando Rafael Trujillo tomó el poder esa misma década, hizo traer al grupo a Santo Domingo y lo rebautizó con su propio nombre —primero Orquesta Presidente Trujillo, luego Orquesta Generalísimo Trujillo—, instalándolo como banda oficial de la dictadura y punta de lanza de su campaña para imponer el merengue en todos los niveles de la sociedad dominicana de los que antes había sido excluido."}]},{"type":"paragraph","content":[{"type":"text","text":"«Compadre Pedro Juan»","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"Bajo la dirección de Alberti, esa promoción tomó una forma musical concreta: sustituir el acordeón folclórico por una sección de metales al estilo de las big bands estadounidenses, conservando la tambora y la güira, y escribiendo letras aceptables para la clase media que el régimen quería ganarse. El resultado fue el primer éxito del merengue capaz de triunfar en todas las clases sociales, «Compadre Pedro Juan» (1936) —una nueva letra sobre «Ecos del Cibao», melodía de 1918 de "},{"type":"artistReference","attrs":{"occurrenceId":"f3e55438-6715-414d-b5e3-d3051fe318ad","artistId":"a4f98603-5d27-4971-bea9-d8c1c9e996da","displayText":"Juan Francisco García"}},{"type":"text","text":", dentro de la propia tradición del merengue de reciclar melodías viejas con letras nuevas. Promovida a escala nacional por la emisora estatal La Voz Dominicana, la canción ha sido grabada desde entonces por decenas de artistas, entre ellos "},{"type":"artistReference","attrs":{"occurrenceId":"124f6607-dbc1-40dc-90f4-8e2eb7191a01","artistId":"2bc36959-dcce-4e10-9ecf-2cd418eaa489","displayText":"Wilfrido Vargas"}},{"type":"text","text":" y "},{"type":"artistReference","attrs":{"occurrenceId":"d32c6915-6394-4daf-8e72-45b98eb1bb25","artistId":"c6551ff1-ed33-4191-9c51-f89eec7d2be9","displayText":"Ángel Viloria y su Conjunto Típico Cibaeño"}},{"type":"text","text":"."}]},{"type":"paragraph","content":[{"type":"text","text":"Después de Trujillo","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"La orquesta sobrevivió al régimen que la rebautizó, continuando bajo Alberti como Orquesta Santa Cecilia; pasó una década, de 1944 a 1954, como banda residente del Hotel Jaragua de Santo Domingo, y en 1977, el año después de su muerte, se publicó «Navidades Dominicanas», un disco de merengues navideños que había grabado con "},{"type":"artistReference","attrs":{"occurrenceId":"1303ce1c-8566-4447-97b2-93077ec613b6","artistId":"3f8bafec-e5ee-415d-8405-9551cceeeb9b","displayText":"Johnny Ventura"}},{"type":"text","text":", cuyo propio Combo Show reinventaría después el merengue de orquesta para la era posterior a Trujillo."}]},{"type":"paragraph","content":[{"type":"text","text":"Legado","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"«Compadre Pedro Juan» sigue siendo el estándar más conocido del merengue, todavía grabado y tocado casi un siglo después de que Alberti lo escribiera bajo una dictadura que trató al género como herramienta de Estado —una historia que la vigencia de la canción hace tiempo dejó atrás."}]}]}'::jsonb, 'published', id, 1 FROM artists WHERE slug = 'luis-alberti'
+ON CONFLICT (document_type, owner_artist_id, locale) WHERE document_type = 'artist_biography' DO UPDATE
+   SET document = excluded.document, status = 'published', revision = editorial_documents.revision + 1, updated_at = now();
+DELETE FROM editorial_entity_references WHERE editorial_document_id IN
+  (SELECT d.id FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+    WHERE a.slug = 'luis-alberti' AND d.locale = 'es' AND d.document_type = 'artist_biography');
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+SELECT d.id, 'f3e55438-6715-414d-b5e3-d3051fe318ad', 'artist', 'a4f98603-5d27-4971-bea9-d8c1c9e996da' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+ WHERE a.slug = 'luis-alberti' AND d.locale = 'es' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+SELECT d.id, '124f6607-dbc1-40dc-90f4-8e2eb7191a01', 'artist', '2bc36959-dcce-4e10-9ecf-2cd418eaa489' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+ WHERE a.slug = 'luis-alberti' AND d.locale = 'es' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+SELECT d.id, 'd32c6915-6394-4daf-8e72-45b98eb1bb25', 'artist', 'c6551ff1-ed33-4191-9c51-f89eec7d2be9' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+ WHERE a.slug = 'luis-alberti' AND d.locale = 'es' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+SELECT d.id, '1303ce1c-8566-4447-97b2-93077ec613b6', 'artist', '3f8bafec-e5ee-415d-8405-9551cceeeb9b' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+ WHERE a.slug = 'luis-alberti' AND d.locale = 'es' AND d.document_type = 'artist_biography';
+UPDATE artists SET bio_es = 'Luis Felipe Alberti Mieses, nacido en La Vega el 6 de abril de 1906 y fallecido en Santiago de los Caballeros el 26 de enero de 1976, fue violinista, arreglista y director de orquesta dominicano que, más que ningún otro músico, le dio al merengue la forma de big band que lo definiría el resto del siglo XX.
+
+**De La Vega a la orquesta personal de Trujillo**
+
+Formado en violín tras la mudanza de su familia a Santiago, acompañó al cine mudo en teatros locales antes de fundar la orquesta Liras del Yaque en 1932. Cuando Rafael Trujillo tomó el poder esa misma década, hizo traer al grupo a Santo Domingo y lo rebautizó con su propio nombre —primero Orquesta Presidente Trujillo, luego Orquesta Generalísimo Trujillo—, instalándolo como banda oficial de la dictadura y punta de lanza de su campaña para imponer el merengue en todos los niveles de la sociedad dominicana de los que antes había sido excluido.
+
+**«Compadre Pedro Juan»**
+
+Bajo la dirección de Alberti, esa promoción tomó una forma musical concreta: sustituir el acordeón folclórico por una sección de metales al estilo de las big bands estadounidenses, conservando la tambora y la güira, y escribiendo letras aceptables para la clase media que el régimen quería ganarse. El resultado fue el primer éxito del merengue capaz de triunfar en todas las clases sociales, «Compadre Pedro Juan» (1936) —una nueva letra sobre «Ecos del Cibao», melodía de 1918 de Juan Francisco García, dentro de la propia tradición del merengue de reciclar melodías viejas con letras nuevas. Promovida a escala nacional por la emisora estatal La Voz Dominicana, la canción ha sido grabada desde entonces por decenas de artistas, entre ellos Wilfrido Vargas y Ángel Viloria y su Conjunto Típico Cibaeño.
+
+**Después de Trujillo**
+
+La orquesta sobrevivió al régimen que la rebautizó, continuando bajo Alberti como Orquesta Santa Cecilia; pasó una década, de 1944 a 1954, como banda residente del Hotel Jaragua de Santo Domingo, y en 1977, el año después de su muerte, se publicó «Navidades Dominicanas», un disco de merengues navideños que había grabado con Johnny Ventura, cuyo propio Combo Show reinventaría después el merengue de orquesta para la era posterior a Trujillo.
+
+**Legado**
+
+«Compadre Pedro Juan» sigue siendo el estándar más conocido del merengue, todavía grabado y tocado casi un siglo después de que Alberti lo escribiera bajo una dictadura que trató al género como herramienta de Estado —una historia que la vigencia de la canción hace tiempo dejó atrás.' WHERE slug = 'luis-alberti';
+
+COMMIT;
