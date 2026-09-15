@@ -1,0 +1,18 @@
+BEGIN;
+
+-- Revierte 20260914011000_rewrite_musicologo_the_libro_biography.sql con los documentos
+-- que la ficha tenía justo antes de aplicarla (capturados por el script).
+
+DELETE FROM editorial_entity_references WHERE editorial_document_id IN (
+  SELECT d.id FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'musicologo-the-libro' AND d.document_type = 'artist_biography');
+DELETE FROM editorial_documents WHERE owner_artist_id = (SELECT id FROM artists WHERE slug = 'musicologo-the-libro') AND document_type = 'artist_biography';
+INSERT INTO editorial_documents (document_type, locale, schema_version, document, status, owner_artist_id, revision)
+SELECT 'artist_biography', 'en', 1, '{"type":"doc","content":[{"type":"paragraph","content":[{"text":"Musicólogo the Libro is a Dominican rapper and lyricist who has earned a reputation as one of the most intellectually rigorous and verbally gifted artists in the country''s urban music scene. Born in 1987 in Loma de Cabrera, a small municipality in the mountainous Dajabón province near the Haitian border, his origins in a rural and relatively remote corner of the Dominican Republic give his artistic identity a distinctive geographical grounding rarely found among urban music artists from the capital.","type":"text"}]},{"type":"paragraph","content":[{"text":"His stage name itself signals his self-conception as a scholar of the form — a student and practitioner of hip hop whose approach to the craft is characterized by careful attention to language, wordplay, and conceptual coherence. Musicólogo has been associated with the broader movement to establish a credible, literate Dominican hip hop culture that can stand on its own terms rather than simply imitating styles developed elsewhere.","type":"text"}]},{"type":"paragraph","content":[{"text":"His output has been appreciated by hip hop heads and critics who value technical ability and lyrical substance, and he has collaborated with other respected figures in the Dominican and broader Caribbean urban music community. He represents the independent, underground side of Dominican hip hop — an artist driven by artistic conviction rather than commercial calculation.","type":"text"}]}]}'::jsonb, 'published', id, 1 FROM artists WHERE slug = 'musicologo-the-libro';
+UPDATE artists SET bio_en = 'Musicólogo the Libro is a Dominican rapper and lyricist who has earned a reputation as one of the most intellectually rigorous and verbally gifted artists in the country''s urban music scene. Born in 1987 in Loma de Cabrera, a small municipality in the mountainous Dajabón province near the Haitian border, his origins in a rural and relatively remote corner of the Dominican Republic give his artistic identity a distinctive geographical grounding rarely found among urban music artists from the capital.
+
+His stage name itself signals his self-conception as a scholar of the form — a student and practitioner of hip hop whose approach to the craft is characterized by careful attention to language, wordplay, and conceptual coherence. Musicólogo has been associated with the broader movement to establish a credible, literate Dominican hip hop culture that can stand on its own terms rather than simply imitating styles developed elsewhere.
+
+His output has been appreciated by hip hop heads and critics who value technical ability and lyrical substance, and he has collaborated with other respected figures in the Dominican and broader Caribbean urban music community. He represents the independent, underground side of Dominican hip hop — an artist driven by artistic conviction rather than commercial calculation.', bio_es = NULL WHERE slug = 'musicologo-the-libro';
+
+COMMIT;
