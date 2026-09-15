@@ -47,21 +47,6 @@ function redirectLegacyArchiveQuery(req: NextRequest) {
   return NextResponse.redirect(url, 308);
 }
 
-function redirectLegacySongSlug(req: NextRequest) {
-  const pathname = req.nextUrl.pathname;
-  if (pathname === "/es/songs/pagame-tu-vicio-antony-santos") {
-    const url = req.nextUrl.clone();
-    url.pathname = "/es/songs/pegame-tu-vicio-antony-santos-6";
-    return NextResponse.redirect(url, 308);
-  }
-  if (pathname === "/songs/pagame-tu-vicio-antony-santos") {
-    const url = req.nextUrl.clone();
-    url.pathname = "/songs/pegame-tu-vicio-antony-santos-6";
-    return NextResponse.redirect(url, 308);
-  }
-  return null;
-}
-
 function getRequiredSupabaseConfig() {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
   const supabaseAnonKey =
@@ -205,9 +190,6 @@ export async function proxy(req: NextRequest) {
 
   const legacyArchiveRedirect = redirectLegacyArchiveQuery(req);
   if (legacyArchiveRedirect) return legacyArchiveRedirect;
-
-  const legacySongRedirect = redirectLegacySongSlug(req);
-  if (legacySongRedirect) return legacySongRedirect;
 
   const response = intlMiddleware(req);
   response.headers.set("Content-Language", isSpanishPath(pathname) ? "es" : "en");
