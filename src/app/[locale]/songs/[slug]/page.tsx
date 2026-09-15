@@ -1,6 +1,6 @@
 // app/songs/[slug]/page.tsx
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 import { createPageMetadata, songSeoTitle } from "@/lib/seo";
@@ -143,7 +143,12 @@ function normalizeCredits(credits: RawCredit[]) {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug, locale } = await params;
-  const song = await getSongBySlug(cleanSongParam(slug));
+  const cleanSlug = cleanSongParam(slug);
+  if (cleanSlug === "pagame-tu-vicio-antony-santos") {
+    permanentRedirect(locale === "es" ? "/es/songs/pegame-tu-vicio-antony-santos-6" : "/songs/pegame-tu-vicio-antony-santos-6");
+  }
+
+  const song = await getSongBySlug(cleanSlug);
   if (!song) {
     return createPageMetadata({
       title: "Song Not Found",
@@ -177,6 +182,10 @@ export default async function SongProfilePage({ params }: PageProps) {
   const { slug, locale } = await params;
   setRequestLocale(locale);
   const cleanSlug = cleanSongParam(slug);
+
+  if (cleanSlug === "pagame-tu-vicio-antony-santos") {
+    permanentRedirect(locale === "es" ? "/es/songs/pegame-tu-vicio-antony-santos-6" : "/songs/pegame-tu-vicio-antony-santos-6");
+  }
 
   const song = await getSongBySlug(cleanSlug);
   if (!song) notFound();

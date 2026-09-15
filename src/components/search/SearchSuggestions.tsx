@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useEffect, useRef, useState, useCallback, forwardRef, useImperativeHandle } from "react";
+import { useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import { isBornAbroadProvince } from "@/lib/provinceSlug";
 import {
   MIN_SEARCH_QUERY_LENGTH,
   type GlobalSearchResponse,
@@ -19,6 +21,26 @@ export type SearchSuggestionsHandle = {
   reset: () => void;
 };
 
+// The API returns up to 10 of each type; the dropdown shows a short preview of
+// each section so it stays compact. The full /search page lists everything.
+const ARTIST_SUGGESTION_LIMIT = 5;
+const SONG_ALBUM_SUGGESTION_LIMIT = 5;
+// Songs come first in the "Songs & Albums" section, but when both types match
+// albums keep at least this many slots so they are never crowded out.
+const MIN_ALBUM_SLOTS = 2;
+
+function pickSongsAndAlbums(songs: SearchResult[], releases: SearchResult[]) {
+  const albumSlots = Math.min(
+    releases.length,
+    Math.max(SONG_ALBUM_SUGGESTION_LIMIT - songs.length, MIN_ALBUM_SLOTS),
+  );
+  const songSlots = Math.min(songs.length, SONG_ALBUM_SUGGESTION_LIMIT - albumSlots);
+  return [
+    ...songs.slice(0, songSlots),
+    ...releases.slice(0, SONG_ALBUM_SUGGESTION_LIMIT - songSlots),
+  ];
+}
+
 function getHref(result: SearchResult) {
   if (result.type === "artist" && result.slug) return `/artists/${result.slug}`;
   if (result.type === "song" && result.slug) return `/songs/${result.slug}`;
@@ -29,20 +51,30 @@ function getHref(result: SearchResult) {
 interface SuggestionItemProps {
   result: SearchResult;
   isActive: boolean;
+  // Alternate rows get a light tint so each line is easy to follow.
+  isStriped: boolean;
   onMouseEnter: () => void;
   onMouseLeave: () => void;
   onSelect: () => void;
 }
 
 const SuggestionItem = forwardRef<HTMLDivElement, SuggestionItemProps>(
-  ({ result, isActive, onMouseEnter, onMouseLeave, onSelect }, ref) => {
+  ({ result, isActive, isStriped, onMouseEnter, onMouseLeave, onSelect }, ref) => {
+    const tDirectory = useTranslations("artistDirectory");
+    const tSearch = useTranslations("search.ui");
     const href = getHref(result);
     if (!href) return null;
 
-    const subtitle =
-      result.type === "song"
-        ? [result.year, result.release_title].filter(Boolean).join(" · ")
-        : [result.year, result.subtitle].filter(Boolean).join(" · ");
+    // An artist's subtitle is their stored province; the born-abroad sentinel
+    // is shown in the page language instead of its stored Spanish form.
+    const resultSubtitle =
+      result.type === "artist" && isBornAbroadProvince(result.subtitle)
+        ? tDirectory("abroadLabel")
+        : result.subtitle;
+    const subtitle = [result.year, resultSubtitle].filter(Boolean).join(" · ");
+    // Songs and albums show only "Title by Artist". Songs carry artist_name;
+    // for albums the API puts the release artist in subtitle.
+    const artistName = result.type === "artist" ? null : result.artist_name ?? result.subtitle;
 
     return (
       <div
@@ -56,15 +88,30 @@ const SuggestionItem = forwardRef<HTMLDivElement, SuggestionItemProps>(
         <Link
           href={href}
           onClick={onSelect}
-          className={`block px-4 py-3 text-left text-sm transition-colors ${
+          className={`block px-4 py-1.5 text-left text-sm leading-tight transition-colors ${
             isActive
               ? "bg-[#CE1126]/10 text-[#CE1126]"
-              : "hover:bg-gray-100 text-gray-800"
+              : `${isStriped ? "bg-gray-100" : "bg-white"} hover:bg-gray-200 text-gray-800`
           }`}
         >
-          <div className="font-medium truncate">{result.title}</div>
-          {subtitle && (
-            <div className="text-xs text-gray-500 truncate">{subtitle}</div>
+          {result.type === "artist" ? (
+            <>
+              <div className="font-medium truncate">{result.title}</div>
+              {subtitle && (
+                <div className="text-xs leading-tight text-gray-600 truncate">{subtitle}</div>
+              )}
+            </>
+          ) : (
+            // Title and "by Artist" share one line from sm up; on phones the
+            // dropdown is narrow, so the artist drops below the title.
+            <div className="min-w-0 sm:flex sm:items-baseline sm:gap-1">
+              <div className="truncate font-medium sm:min-w-0 sm:shrink">{result.title}</div>
+              {artistName && (
+                <div className="truncate text-xs leading-tight text-gray-600 sm:max-w-[45%] sm:shrink-0">
+                  {tSearch("byArtist", { artist: artistName })}
+                </div>
+              )}
+            </div>
           )}
         </Link>
       </div>
@@ -80,7 +127,11 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
   onStateChange,
   formRef,
 }, ref) {
+  const t = useTranslations("search.ui");
+  // One flat list keeps keyboard navigation continuous across both sections:
+  // the first `artistCount` entries are artists, the rest songs and albums.
   const [suggestions, setSuggestions] = useState<SearchResult[]>([]);
+  const [artistCount, setArtistCount] = useState(0);
   const [activeIndex, setActiveIndex] = useState(-1);
   const [isOpen, setIsOpen] = useState(false);
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -187,11 +238,9 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
 
         const results = payload;
         if (requestId !== requestIdRef.current) return;
-        const all = [
-          ...results.artists,
-          ...results.songs,
-          ...results.releases,
-        ];
+        const artists = results.artists.slice(0, ARTIST_SUGGESTION_LIMIT);
+        const all = [...artists, ...pickSongsAndAlbums(results.songs, results.releases)];
+        setArtistCount(artists.length);
         setSuggestions(all);
         setIsOpen(all.length > 0);
         setActiveIndex(-1);
@@ -265,6 +314,12 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
     return null;
   }
 
+  // A section with no matches is left out entirely, header included.
+  const sections = [
+    { key: "artists", label: t("artistsGroup"), start: 0, items: suggestions.slice(0, artistCount) },
+    { key: "songs-albums", label: t("songsAndAlbumsGroup"), start: artistCount, items: suggestions.slice(artistCount) },
+  ].filter((section) => section.items.length > 0);
+
   return (
     <div
       ref={suggestionsRef}
@@ -272,20 +327,43 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
       role="listbox"
       id="site-search-suggestions"
     >
-      {suggestions.map((result, index) => (
-        <SuggestionItem
-          key={`${result.type}-${result.id}`}
-          ref={index === activeIndex ? activeItemRef : null}
-          result={result}
-          isActive={index === activeIndex}
-          onMouseEnter={() => setActiveIndex(index)}
-          onMouseLeave={() => setActiveIndex(-1)}
-          onSelect={() => {
-            resetAutocomplete();
-            onNavigate?.();
-          }}
-        />
-      ))}
+      {sections.map((section, sectionIndex) => {
+        const labelId = `site-search-suggestions-${section.key}`;
+        return (
+          <div
+            key={section.key}
+            role="group"
+            aria-labelledby={labelId}
+            className={sectionIndex > 0 ? "border-t border-[#8B0000]/10" : undefined}
+          >
+            <div
+              id={labelId}
+              role="presentation"
+              className="px-4 pb-0.5 pt-2 text-xs leading-tight font-normal uppercase tracking-wider text-[#8B0000]"
+            >
+              {section.label}
+            </div>
+            {section.items.map((result, itemIndex) => {
+              const index = section.start + itemIndex;
+              return (
+                <SuggestionItem
+                  key={`${result.type}-${result.id}`}
+                  ref={index === activeIndex ? activeItemRef : null}
+                  result={result}
+                  isActive={index === activeIndex}
+                  isStriped={itemIndex % 2 === 0}
+                  onMouseEnter={() => setActiveIndex(index)}
+                  onMouseLeave={() => setActiveIndex(-1)}
+                  onSelect={() => {
+                    resetAutocomplete();
+                    onNavigate?.();
+                  }}
+                />
+              );
+            })}
+          </div>
+        );
+      })}
     </div>
   );
 });

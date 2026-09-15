@@ -4,7 +4,7 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import SectionCard from "@/components/layout/SectionCard";
-import { isValidProvinceName, provinceToSlug } from "@/lib/provinceSlug";
+import { isBornAbroadProvince, isValidProvinceName, provinceToSlug } from "@/lib/provinceSlug";
 
 type RegionData = {
   province: string;
@@ -26,14 +26,23 @@ function chunkRegions(regions: RegionData[], size: number) {
 }
 
 function RegionLink({ region }: { region: RegionData }) {
+  const tDirectory = useTranslations("artistDirectory");
+  // The born-abroad sentinel is stored in Spanish; show it in the page language.
+  const bornAbroad = isBornAbroadProvince(region.province);
+  const label = bornAbroad ? tDirectory("abroadLabel") : region.province;
+
   return (
     <Link
       href={`/provinces/${provinceToSlug(region.province)}`}
       prefetch={false}
       className="group relative flex items-center justify-between rounded-md border border-[#002D62]/15 bg-white px-3 py-2.5 shadow-[0_1px_0_rgba(0,45,98,0.05)] transition-all duration-200 hover:border-[#002D62]/45 hover:bg-[#002D62]/5"
     >
-      <span className="relative z-10 truncate text-sm font-normal text-[#002D62] transition-colors">
-        {region.province}
+      <span
+        className={`relative z-10 truncate text-sm font-normal transition-colors ${
+          bornAbroad ? "text-[#8B0000]" : "text-[#002D62]"
+        }`}
+      >
+        {label}
       </span>
 
       <span className="relative z-10 ml-2 font-mono text-xs text-gray-500 transition-colors group-hover:text-[#002D62]">
@@ -45,7 +54,12 @@ function RegionLink({ region }: { region: RegionData }) {
 
 export default function BrowseByRegionSection({ regions }: BrowseByRegionSectionProps) {
   const t = useTranslations("sections");
-  const validRegions = regions.filter((region) => isValidProvinceName(region?.province));
+  const provinces = regions.filter((region) => isValidProvinceName(region?.province));
+  // Born abroad is not a province, so it always closes the list, whatever its count.
+  const validRegions = [
+    ...provinces.filter((region) => !isBornAbroadProvince(region.province)),
+    ...provinces.filter((region) => isBornAbroadProvince(region.province)),
+  ];
   const mobileColumns = chunkRegions(validRegions, 3);
 
   return (

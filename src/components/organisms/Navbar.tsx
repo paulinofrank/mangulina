@@ -35,7 +35,7 @@ export default function Navbar() {
     <nav
       className="fixed bottom-4 left-1/2 z-100 w-[calc(100%-2rem)] max-w-fit -translate-x-1/2 pb-[env(safe-area-inset-bottom)] sm:bottom-6"
     >
-      <div className="flex items-center justify-center gap-3 rounded-full border border-[#002D62]/10 bg-white/80 px-4 py-2.5 shadow-[0_4px_18px_rgba(0,45,98,0.22)] backdrop-blur-xl sm:gap-4 sm:px-5">
+      <div className="flex items-center justify-center gap-3 rounded-full border border-[#002D62]/10 bg-white/80 px-4 py-2.5 shadow-[0_4px_18px_rgba(0,45,98,0.22),0_2px_8px_rgba(0,0,0,0.10),0_0_0_1px_rgba(206,17,38,0.12),0_0_18px_5px_rgba(206,17,38,0.35),0_0_38px_11px_rgba(206,17,38,0.18)] backdrop-blur-xl sm:gap-4 sm:px-5">
 
         {/* Back Button */}
         <button
@@ -52,7 +52,7 @@ export default function Navbar() {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="text-gray-400 group-hover:text-[#CE1126] transition-colors"
+            className="text-gray-400 group-hover:text-[#8B0000] transition-colors"
           >
             <path d="M19 12H5M12 19l-7-7 7-7"/>
           </svg>
@@ -70,7 +70,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   className={`text-sm font-normal uppercase tracking-wider transition-colors ${
-                    isActive ? 'text-[#CE1126]' : 'text-gray-700 hover:text-[#CE1126]'
+                    isActive ? 'text-[#8B0000]' : 'text-gray-700 hover:text-[#8B0000]'
                   }`}
                 >
                   {t(link.key as any)}
@@ -91,7 +91,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={handleLanguageSwitch}
-            className="cursor-pointer text-sm font-normal uppercase tracking-wider text-gray-700 transition-colors hover:text-[#CE1126]"
+            className="cursor-pointer text-sm font-normal uppercase tracking-wider text-gray-700 transition-colors hover:text-[#8B0000]"
           >
             {alternateLanguageLabel}
           </button>
@@ -116,7 +116,7 @@ export default function Navbar() {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="text-gray-400 transition-colors group-hover:text-[#CE1126]"
+            className="text-gray-400 transition-colors group-hover:text-[#8B0000]"
           >
             <path d="M12 19V5M5 12l7-7 7 7" />
           </svg>

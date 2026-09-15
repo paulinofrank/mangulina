@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link, useRouter } from "@/i18n/navigation";
 import { Search } from "lucide-react";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 import SearchSuggestions, { type SearchSuggestionsHandle } from "@/components/search/SearchSuggestions";
 
 export default function TopBanner() {
@@ -65,8 +64,9 @@ export default function TopBanner() {
           </div>
         </Link>
 
-        {/* Search Bar and Language Switcher */}
-        <div className="flex flex-1 justify-end gap-2 max-w-48 xs:max-w-[220px] sm:max-w-sm">
+        {/* Search Bar — language switching lives in the floating bottom nav and the footer.
+            The cap keeps it balanced against the logo on very wide screens. */}
+        <div className="flex flex-1 justify-end max-w-48 xs:max-w-[220px] sm:max-w-md lg:max-w-xl">
           <form
             ref={searchFormRef}
             onSubmit={handleSearch}
@@ -109,11 +109,6 @@ export default function TopBanner() {
               onStateChange={handleAutocompleteStateChange}
             />
           </form>
-
-          {/* Desktop Language Switcher */}
-          <div className="hidden sm:block">
-            <LanguageSwitcher />
-          </div>
         </div>
       </div>
     </header>

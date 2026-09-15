@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useState, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { SlidersHorizontal } from "lucide-react";
 import { getSupabaseClient } from "@/lib/supabase";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import type { Artist } from "@/types/music";
@@ -288,11 +287,6 @@ function ArtistsContent() {
                 <option value="name">Name A-Z</option>
                 <option value="newest">Newest</option>
               </select>
-
-              <button className="flex cursor-pointer items-center gap-2 rounded-xl border border-black/10 px-5 h-10 text-sm text-gray-600">
-                <SlidersHorizontal size={16} />
-                Filters ({activeFilters})
-              </button>
 
               {activeFilters > 0 && (
                 <button

@@ -85,7 +85,8 @@ For Phase 1.5 or Phase 2:
 - **Messages:** `messages/en.json`, `messages/es.json` (root)
 - **Components:** 
   - `src/components/providers/LanguageSelectionModal.tsx`
-  - `src/components/LanguageSwitcher.tsx`
+  - `src/components/organisms/Navbar.tsx` (language link in the floating bottom nav — the site's only language switcher after the first-visit modal)
+  - The header toggle (`src/components/LanguageSwitcher.tsx`) and the footer's mobile-only language link were removed.
 
 ## Configuration Files
 

@@ -11,7 +11,7 @@ export default function ButtonSecondary({ href, label }: ButtonSecondaryProps) {
   return (
     <Link
       href={href}
-      className="group inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm font-normal text-[#002D62] transition-all hover:bg-[#002D62] hover:text-white hover:border-[#002D62]"
+      className="group inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm font-normal text-[#002D62] transition-all hover:bg-[#002D62] hover:text-white hover:border-[#002D62] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B0000] focus-visible:ring-offset-2"
     >
       <span>{label ?? t("viewFullProfile")}</span>
       <svg 

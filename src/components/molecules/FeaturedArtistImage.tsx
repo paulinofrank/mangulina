@@ -2,6 +2,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import ArtistImage from "@/components/atoms/ArtistImage";
+import ArtistPhotoFallback from "@/components/atoms/ArtistPhotoFallback";
 import type { Artist } from "@/types/music";
 import { getArtistImageUrlIfAvailable } from "@/utils/getArtistImageUrl";
 
@@ -16,21 +17,15 @@ export default function FeaturedArtistImage({
 
   if (!featuredArtist) {
     return (
-      <div className="relative aspect-square w-full sm:w-56 lg:w-64 shrink-0 overflow-hidden rounded-lg bg-gray-100 border border-black/5 flex items-center justify-center text-gray-400 text-xs italic">
-        {t("noImage")}
+      <div className="relative aspect-square w-full sm:w-56 lg:w-64 shrink-0 overflow-hidden rounded-lg bg-gray-100 border border-black/5">
+        <ArtistPhotoFallback />
       </div>
     );
   }
 
+  // An artist without a photo keeps the same linked frame; ArtistImage fills it
+  // with the branded fallback.
   const imageUrl = getArtistImageUrlIfAvailable(featuredArtist);
-
-  if (!imageUrl) {
-    return (
-      <div className="relative aspect-square w-full sm:w-56 lg:w-64 shrink-0 overflow-hidden rounded-lg bg-gray-100 border border-black/5 flex items-center justify-center text-gray-400 text-xs italic">
-        {t("noImage")}
-      </div>
-    );
-  }
 
   return (
     <Link

@@ -2,33 +2,14 @@
 
 import { Fragment } from "react";
 import Image from "next/image";
-import { Link, usePathname, useRouter } from "@/i18n/navigation";
-import { useTranslations, useLocale } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import { FaFacebook, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa6";
-import { type AppLocale } from "@/i18n/pathname";
-import { saveLocalePreference } from "@/i18n/preference";
 
 export default function Footer() {
   const t = useTranslations("footer");
   const nav = useTranslations("navigation");
   const a11y = useTranslations("a11y");
-  const router = useRouter();
-  const pathname = usePathname();
-  const locale = useLocale() as AppLocale;
-  const alternateLocale = locale === "en" ? "es" : "en";
-
-  const handleLanguageSwitch = () => {
-    saveLocalePreference(alternateLocale);
-
-    const search = typeof window !== "undefined" ? window.location.search : "";
-    const params = new URLSearchParams(search);
-    const query = Object.fromEntries(params.entries());
-
-    router.replace(
-      Object.keys(query).length > 0 ? { pathname, query } : pathname,
-      { locale: alternateLocale },
-    );
-  };
 
   const SOCIAL_LINKS = [
     { icon: FaFacebook, key: "facebook", href: "https://facebook.com/MangulinaDo" },
@@ -83,7 +64,7 @@ export default function Footer() {
             </Link>
           </div>
 
-          {/* Navigation */}
+          {/* Navigation — language switching lives in the floating bottom nav. */}
           <nav aria-label={a11y("footerNav")} className="text-sm font-normal text-gray-600 sm:text-base">
             <div className="grid grid-cols-2 gap-x-4 sm:hidden">
               <div className="flex flex-col gap-3 justify-self-end text-right">
@@ -109,23 +90,6 @@ export default function Footer() {
                   {nav("copyrights")}
                 </Link>
               </div>
-            </div>
-
-            {/* Mobile Language Switch */}
-            <div className="mt-5 flex justify-center sm:hidden">
-              <button
-                type="button"
-                onClick={handleLanguageSwitch}
-                className="inline-flex items-center gap-2 text-[1.2em] font-medium text-[#8B0000] transition-colors hover:text-[#002D62]"
-              >
-                <span aria-hidden="true" className="text-[#002D62]">
-                  ✦
-                </span>
-                {locale === "en" ? t("languageSwitchToSpanish") : t("languageSwitchToEnglish")}
-                <span aria-hidden="true" className="text-[#002D62]">
-                  ✦
-                </span>
-              </button>
             </div>
 
             {/* Desktop Navigation */}

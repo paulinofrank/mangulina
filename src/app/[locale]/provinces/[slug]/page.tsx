@@ -7,7 +7,7 @@ import { getArtistDirectoryInitialData } from "@/lib/artistDirectoryData";
 import {
   getPublishedProvinceBySlug,
   getPublishedProvinces,
-  getProvinceDisplayName,
+  isBornAbroadProvince,
 } from "@/lib/provinces";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -29,12 +29,16 @@ export async function generateMetadata({ params }: ProvincePageProps): Promise<M
   const { slug, locale } = await params;
   const province = await getPublishedProvinceBySlug(slug);
   if (!province) return {};
-  const provinceDisplayName = getProvinceDisplayName(province.name);
+  const t = await getTranslations({ locale, namespace: "artistDirectory" });
+  const bornAbroad = isBornAbroadProvince(province.name);
 
-  const title = `Dominican Artists from ${provinceDisplayName}`;
   return createPageMetadata({
-    title,
-    description: `Explore Dominican artists from ${provinceDisplayName}, including singers, composers, musicians, DJs, and other figures in Dominican music.`,
+    title: bornAbroad
+      ? t("abroadMetadataTitle")
+      : t("provinceMetadataTitle", { province: province.name }),
+    description: bornAbroad
+      ? t("abroadMetadataDescription")
+      : t("provinceMetadataDescription", { province: province.name }),
     path: `/provinces/${province.slug}`,
     locale,
   });
@@ -47,7 +51,9 @@ export default async function ProvinceArtistsPage({
   const { slug } = await params;
   const province = await getPublishedProvinceBySlug(slug);
   if (!province) notFound();
-  const provinceDisplayName = getProvinceDisplayName(province.name);
+  // Artists born outside the country share this page, but "Nacido en el
+  // Exterior" is not a province, so it gets its own wording.
+  const bornAbroad = isBornAbroadProvince(province.name);
 
   const t = await getTranslations("artistDirectory");
   const initialData = await getArtistDirectoryInitialData({
@@ -58,10 +64,10 @@ export default async function ProvinceArtistsPage({
   return (
     <ArtistDirectory
       path={`/provinces/${province.slug}`}
-      heading={t("provinceHeading", { province: provinceDisplayName })}
-      mobileTitlePrefix={t("provinceMobilePrefix")}
-      mobileTitleHighlight={provinceDisplayName}
-      intro={t("provinceIntro", { province: provinceDisplayName })}
+      heading={bornAbroad ? t("abroadHeading") : t("provinceHeading", { province: province.name })}
+      mobileTitlePrefix={bornAbroad ? t("abroadMobilePrefix") : t("provinceMobilePrefix")}
+      mobileTitleHighlight={bornAbroad ? t("abroadMobileHighlight") : province.name}
+      intro={bornAbroad ? t("abroadIntro") : t("provinceIntro", { province: province.name })}
       fixedProvince={province.name}
       showProvinceSelector
       hideGenreFilter

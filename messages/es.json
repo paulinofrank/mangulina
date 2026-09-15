@@ -5,12 +5,6 @@
       "description": "Mangulina está disponible en inglés y español.",
       "english": "English",
       "spanish": "Español"
-    },
-    "selector": {
-      "label": "Idioma",
-      "english": "English",
-      "spanish": "Español",
-      "switchTo": "Cambiar a {language}"
     }
   },
   "navigation": {
@@ -48,6 +42,8 @@
       "artistsGroup": "Artistas",
       "songsGroup": "Canciones",
       "albumsGroup": "Álbumes",
+      "songsAndAlbumsGroup": "Canciones y Álbumes",
+      "byArtist": "por {artist}",
       "resultsFor": "Resultados para"
     },
     "feedback": {
@@ -61,8 +57,6 @@
     "tagline": "La Base de Datos de Música Dominicana",
     "logo": "Logo de Mangulina",
     "copyright": "© 2026 Mangulina. Todos los derechos reservados.",
-    "languageSwitchToSpanish": "Cambiar a Español",
-    "languageSwitchToEnglish": "Switch to English",
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",
@@ -384,7 +378,7 @@
     "winner": "Ganador",
     "nominee": "Nominado",
     "specialRecognition": "Reconocimiento Especial",
-    "videoInterviews": "Videos relacionados",
+    "videoInterviews": "Entrevistas y documentales",
     "interviewsSubtitle": "Entrevistas, conversaciones y material de archivo relacionado con este artista.",
     "playAria": "Reproducir {title}",
     "closeVideo": "Cerrar video",
@@ -532,7 +526,16 @@
     },
     "provinceHeading": "Artistas Dominicanos de la Provincia {province}",
     "provinceMobilePrefix": "Artistas Dominicanos de la Provincia",
-    "provinceIntro": "Explora artistas dominicanos de la provincia de {province} y sus contribuciones a la música dominicana en Mangulina, la Base de Datos de Música Dominicana."
+    "provinceIntro": "Explora artistas dominicanos de la provincia de {province} y sus contribuciones a la música dominicana en Mangulina, la Base de Datos de Música Dominicana.",
+    "provinceMetadataTitle": "Artistas Dominicanos de {province}",
+    "provinceMetadataDescription": "Explora artistas dominicanos de {province}, incluidos cantantes, compositores, músicos, DJs y otras figuras de la música dominicana.",
+    "abroadLabel": "Nacido en el Exterior",
+    "abroadHeading": "Artistas Dominicanos Nacidos en el Exterior",
+    "abroadMobilePrefix": "Artistas Dominicanos",
+    "abroadMobileHighlight": "Nacidos en el Exterior",
+    "abroadIntro": "Explora artistas dominicanos nacidos fuera de la República Dominicana y sus contribuciones a la música dominicana en Mangulina, la Base de Datos de Música Dominicana.",
+    "abroadMetadataTitle": "Artistas Dominicanos Nacidos en el Exterior",
+    "abroadMetadataDescription": "Explora artistas dominicanos nacidos fuera de la República Dominicana, incluidos cantantes, compositores, músicos, DJs y otras figuras de la música dominicana."
   },
   "directoryTitles": {
     "provinceGenreTagRole": "{role} {tag} de {genre} de {province}",
@@ -586,11 +589,12 @@
   },
   "sortOptions": {
     "mostViewed": "Más visto",
-    "nameAZ": "Nombre A-Z",
     "newest": "Más reciente",
     "title": "Título",
     "sortedByViews": "Ordenado por Vistas",
-    "viewsMobile": "Ordenar: Vistas"
+    "sortedByName": "Ordenado por Nombre",
+    "viewsMobile": "Ordenar: Vistas",
+    "nameMobile": "Ordenar: Nombre"
   },
   "pagination": {
     "first": "Primero",
@@ -604,7 +608,6 @@
   },
   "buttons": {
     "apply": "Aplicar",
-    "filters": "Filtros ({count})",
     "clearAll": "Limpiar todo",
     "clear": "Limpiar",
     "retry": "Reintentar"
@@ -1875,6 +1878,15 @@
     "zodiac": {
       "aries": "Aries", "taurus": "Tauro", "gemini": "Géminis", "cancer": "Cáncer", "leo": "Leo", "virgo": "Virgo", "libra": "Libra", "scorpio": "Escorpio", "sagittarius": "Sagitario", "capricorn": "Capricornio", "aquarius": "Acuario", "pisces": "Piscis"
     }
+  },
+  "notFound": {
+    "metadataTitle": "Página no encontrada — Mangulina",
+    "eyebrow": "Página no encontrada",
+    "title": "Parece que esta página desafinó.",
+    "body": "No pudimos encontrar la página que buscabas. Es posible que se haya movido o que el enlace esté desactualizado.",
+    "searchLabel": "Buscar en Mangulina",
+    "searchPlaceholder": "Buscar artistas, canciones y álbumes.",
+    "searchSubmit": "Buscar"
   },
   "fallback": {
     "unknownArtist": "Artista desconocido",

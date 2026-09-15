@@ -74,7 +74,9 @@ export function createArtistDirectoryInitialDataKey({
     (params.get("classical") === "1" || tag === "classical" ? "classical" : null);
   const subgenreFilter = params.get("subgenre");
   const province = fixedProvince ?? params.get("province") ?? params.get("region");
-  const sort = params.get("sort") ?? "views";
+  // Must match the default in ArtistDirectory.tsx, or the server page is sorted
+  // differently and the client discards it and fetches again.
+  const sort = params.get("sort") ?? "name";
   const artistStatuses = fixedArtistStatus ? [fixedArtistStatus] : [];
   const genreOptions = filteredGenreOptions?.genres ?? [];
   const subgenreOptions = filteredGenreOptions?.subgenres ?? [];
@@ -116,7 +118,9 @@ async function loadArtistDirectoryInitialData(
   const occupationFilter = params.get("occupation");
   const instrumentFilter = params.get("instrument");
   const province = options.fixedProvince ?? params.get("province") ?? params.get("region");
-  const sort = params.get("sort") ?? "views";
+  // Must match the default in ArtistDirectory.tsx, or the server page is sorted
+  // differently and the client discards it and fetches again.
+  const sort = params.get("sort") ?? "name";
   const artistStatuses = options.fixedArtistStatus ? [options.fixedArtistStatus] : [];
   const genreOptions = options.filteredGenreOptions?.genres ?? [];
   const subgenreOptions = options.filteredGenreOptions?.subgenres ?? [];
@@ -152,7 +156,7 @@ async function loadArtistDirectoryInitialData(
   const response = options.rankedArtistIds?.length
     ? await query.in("id", options.rankedArtistIds)
     : await query
-        .order(sort === "name" ? "name" : sort === "newest" ? "created_at" : "views", {
+        .order(sort === "name" ? "name" : "views", {
           ascending: sort === "name",
         })
         .range(from, to);
@@ -196,7 +200,9 @@ async function loadArtistDirectoryInitialData(
 
 export const getArtistDirectoryInitialData = unstable_cache(
   loadArtistDirectoryInitialData,
-  ["public-artist-directory-initial-data-v1"],
+  // v2: the default sort changed from views to name. A new key keeps previously
+  // cached, views-sorted pages from being served after deploy.
+  ["public-artist-directory-initial-data-v2"],
   {
     revalidate: PUBLIC_ARTIST_DIRECTORY_REVALIDATE_SECONDS,
     tags: [PUBLIC_ARTIST_DIRECTORY_CACHE_TAG],

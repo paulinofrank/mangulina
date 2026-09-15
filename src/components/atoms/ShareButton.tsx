@@ -77,7 +77,7 @@ export default function ShareButton({ url, title, subject, placement }: ShareBut
         onClick={handleShare}
         aria-label={copied ? t("linkCopied") : t("label")}
         title={copied ? t("linkCopied") : t("label")}
-        className={`flex size-11 items-center justify-center rounded-full transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-wikicrimson) ${buttonStyle}`}
+        className={`flex size-11 cursor-pointer items-center justify-center rounded-full transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-wikicrimson) ${buttonStyle}`}
       >
         {copied ? <Check className="size-5" aria-hidden="true" /> : <Share2 className="size-5" aria-hidden="true" />}
       </button>

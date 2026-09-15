@@ -3,6 +3,8 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import SearchFeedbackCard from "@/components/search/SearchFeedbackCard";
+import ArtistImage from "@/components/atoms/ArtistImage";
+import { isBornAbroadProvince } from "@/lib/provinceSlug";
 import type { SearchResult } from "@/lib/searchTypes";
 
 type SearchContentProps = {
@@ -37,6 +39,7 @@ function ResultGroup({
   title: string;
   results: SearchResult[];
 }) {
+  const tDirectory = useTranslations("artistDirectory");
   if (!results.length) return null;
 
   function getMetaLine(result: SearchResult) {
@@ -44,7 +47,13 @@ function ResultGroup({
       return [result.year, result.release_title].filter(Boolean).join(" · ");
     }
 
-    return [result.year, result.subtitle].filter(Boolean).join(" · ");
+    // An artist's subtitle is their stored province; the born-abroad sentinel
+    // is shown in the page language instead of its stored Spanish form.
+    const subtitle =
+      result.type === "artist" && isBornAbroadProvince(result.subtitle)
+        ? tDirectory("abroadLabel")
+        : result.subtitle;
+    return [result.year, subtitle].filter(Boolean).join(" · ");
   }
 
   return (
@@ -61,7 +70,12 @@ function ResultGroup({
             "group flex items-center gap-4 rounded-xl border border-gray-100 p-3 transition hover:border-(--color-wikicrimson) hover:bg-gray-50";
           const content = (
             <>
-              {result.cover_url ? (
+              {result.type === "artist" ? (
+                // Artist photos use the site-wide branded fallback; song and album covers keep the letter tile.
+                <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-gray-100">
+                  <ArtistImage imageUrl={result.cover_url} name={result.title} sizes="64px" />
+                </div>
+              ) : result.cover_url ? (
                 <div className="h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-gray-100">
                   <img
                     src={result.cover_url}

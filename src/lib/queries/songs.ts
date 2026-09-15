@@ -344,6 +344,11 @@ export const getSongBySlug = cache(async function getSongBySlug(
     return getSongById(clean);
   }
 
+  // Legacy slug aliases
+  if (clean === "pagame-tu-vicio-antony-santos") {
+    return getSongBySlug("pegame-tu-vicio-antony-santos-6");
+  }
+
   return null;
 });
 

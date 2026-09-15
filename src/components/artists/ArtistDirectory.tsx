@@ -1,9 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
-import { SlidersHorizontal } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
-import { useRouter } from "@/i18n/navigation";
+import { getPathname, useRouter } from "@/i18n/navigation";
 import { getSupabaseClient } from "@/lib/supabase";
 import ArtistCard from "@/components/molecules/ArtistCard";
 import JsonLd from "@/components/seo/JsonLd";
@@ -19,7 +18,7 @@ import {
   ARTIST_LIST_SELECT,
   type ArtistDirectoryInitialData,
 } from "@/lib/artistDirectoryShared";
-import { isValidProvinceName, provinceToSlug } from "@/lib/provinceSlug";
+import { isBornAbroadProvince, isValidProvinceName, provinceToSlug } from "@/lib/provinceSlug";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
 
 export type ArtistBrowseRole =
@@ -454,21 +453,27 @@ function ArtistsContent({
     (instrumentOptions.length > 0 ? 1 : 0) +
     (rolePageOptions.length > 0 ? 1 : 0) +
     (awardOptions.length > 0 ? 1 : 0) +
-    (showAwardRankings ? 2 : 3);
+    // Sort (hidden on award-ranking pages) and "Clear all".
+    (showAwardRankings ? 1 : 2);
+  // One column per control, so the row never leaves an empty column.
   const desktopGridClass =
-    desktopControlCount === 6
-      ? "grid-cols-6"
-      : desktopControlCount === 5
-        ? "grid-cols-5"
-        : desktopControlCount === 4
-          ? "grid-cols-4"
-          : "grid-cols-3";
+    ({
+      1: "grid-cols-1",
+      2: "grid-cols-2",
+      3: "grid-cols-3",
+      4: "grid-cols-4",
+      5: "grid-cols-5",
+      6: "grid-cols-6",
+    } as Record<number, string>)[desktopControlCount] ?? "grid-cols-3";
   const routeWithParams = useCallback(
     (params: URLSearchParams) => {
       const query = params.toString();
-      return query ? `${basePath}?${query}` : basePath;
+      // Filters update the URL with history.pushState, which bypasses the
+      // locale-aware router, so the /es prefix has to be added here.
+      const localizedPath = getPathname({ href: basePath, locale: directoryLocale });
+      return query ? `${localizedPath}?${query}` : localizedPath;
     },
-    [basePath],
+    [basePath, directoryLocale],
   );
 
   const navigateParams = useCallback(
@@ -485,6 +490,29 @@ function ArtistsContent({
     },
     [routeWithParams],
   );
+
+  // The province column also holds the born-abroad sentinel, which is not a
+  // place name: it gets its translated label and is listed last, after a
+  // separator, instead of being sorted among the provinces. Option values stay
+  // the stored province so navigation is unchanged.
+  const { provinceOptions, bornAbroadOption } = useMemo(() => {
+    const labelled = provinces
+      .map((item) => ({
+        ...item,
+        label: isBornAbroadProvince(item.province)
+          ? t("artistDirectory.abroadLabel")
+          : item.province,
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label, directoryLocale));
+
+    return {
+      provinceOptions: labelled.filter((item) => !isBornAbroadProvince(item.province)),
+      bornAbroadOption: labelled.find((item) => isBornAbroadProvince(item.province)) ?? null,
+    };
+  }, [provinces, t, directoryLocale]);
+  // The closed selector takes the born-abroad red when that option is selected.
+  // Every other option sets its own gray, so the open list is not tinted too.
+  const provinceSelectTone = isBornAbroadProvince(province) ? "text-[#8B0000]" : "text-gray-600";
 
   const selectedGenreValue = subgenreFilter
     ? `subgenre:${subgenreFilter}`
@@ -721,14 +749,7 @@ function ArtistsContent({
         const response = rankedArtistIds?.length
           ? await query.in("id", rankedArtistIds).abortSignal(abortController.signal)
           : await query
-              .order(
-                sort === "name"
-                  ? "name"
-                  : sort === "newest"
-                    ? "created_at"
-                    : "views",
-                { ascending: sort === "name" },
-              )
+              .order(sort === "name" ? "name" : "views", { ascending: sort === "name" })
               .abortSignal(abortController.signal)
               .range(from, to);
 
@@ -775,8 +796,18 @@ function ArtistsContent({
       }
     }
 
+    // Built exactly like createArtistDirectoryInitialDataKey in
+    // artistDirectoryData.ts — same fields in the same order, first value per
+    // param, empty values dropped, params sorted — so the server-rendered page
+    // is reused instead of being discarded and fetched again.
+    const keyParams = new URLSearchParams();
+    new URLSearchParams(searchParamsString).forEach((value, key) => {
+      if (value && !keyParams.has(key)) keyParams.set(key, value);
+    });
+    keyParams.sort();
+
     const requestKey = [
-      searchParamsString,
+      keyParams.toString(),
       currentPage,
       role ?? "",
       selectedContext,
@@ -790,6 +821,7 @@ function ArtistsContent({
       letterFilter ?? "",
       rankedArtistIdsKey,
       fixedArtistTypesKey,
+      fixedOrFilter ?? "",
       genreOptions.map((item) => `${item.id}:${item.slug ?? item.name}`).join("|"),
       subgenreOptions.map((item) => `${item.id}:${item.name}`).join("|"),
     ].join("::");
@@ -1197,14 +1229,22 @@ function ArtistsContent({
                 <select
                   onChange={(e) => handleProvinceChange(e.target.value)}
                   value={province ?? ""}
-                  className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
+                  className={`h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm outline-none ${provinceSelectTone}`}
                 >
-                  <option value="">{t("filters.allProvinces")}</option>
-                  {provinces.map((item) => (
-                    <option key={item.province} value={item.province}>
-                      {item.province} ({item.count})
+                  <option value="" className="text-gray-600">{t("filters.allProvinces")}</option>
+                  {provinceOptions.map((item) => (
+                    <option key={item.province} value={item.province} className="text-gray-600">
+                      {item.label} ({item.count})
                     </option>
                   ))}
+                  {bornAbroadOption && (
+                    <>
+                      <hr />
+                      <option value={bornAbroadOption.province} className="text-[#8B0000]">
+                        {bornAbroadOption.label} ({bornAbroadOption.count})
+                      </option>
+                    </>
+                  )}
                 </select>
               )}
 
@@ -1279,19 +1319,13 @@ function ArtistsContent({
                     params.set("page", "1");
                     navigateParams(params);
                   }}
-                  value={sort}
+                  value={sort === "name" ? "name" : "views"}
                   className="h-9 w-full min-w-0 rounded-xl border border-black/10 bg-white px-3 text-sm text-gray-600 outline-none"
                 >
                   <option value="views">{t("sortOptions.sortedByViews")}</option>
-                  <option value="name">{t("sortOptions.nameAZ")}</option>
-                  <option value="newest">{t("sortOptions.newest")}</option>
+                  <option value="name">{t("sortOptions.sortedByName")}</option>
                 </select>
               )}
-
-              <button className="flex h-9 w-full min-w-0 cursor-pointer items-center justify-center gap-2 rounded-xl border border-black/10 px-3 text-sm text-gray-600">
-                <SlidersHorizontal size={16} />
-                {t("buttons.filters", { count: activeFilters })}
-              </button>
 
               <button
                 onClick={clearFilters}
@@ -1405,14 +1439,22 @@ function ArtistsContent({
                   <select
                     onChange={(event) => handleProvinceChange(event.target.value)}
                     value={province ?? ""}
-                    className="h-9 w-full rounded-xl border border-black/10 bg-white px-4 text-sm text-gray-600 outline-none"
+                    className={`h-9 w-full rounded-xl border border-black/10 bg-white px-4 text-sm outline-none ${provinceSelectTone}`}
                   >
-                    <option value="">{t("filters.allProvinces")}</option>
-                    {provinces.map((item) => (
-                      <option key={item.province} value={item.province}>
-                        {item.province} ({item.count})
+                    <option value="" className="text-gray-600">{t("filters.allProvinces")}</option>
+                    {provinceOptions.map((item) => (
+                      <option key={item.province} value={item.province} className="text-gray-600">
+                        {item.label} ({item.count})
                       </option>
                     ))}
+                    {bornAbroadOption && (
+                      <>
+                        <hr />
+                        <option value={bornAbroadOption.province} className="text-[#8B0000]">
+                          {bornAbroadOption.label} ({bornAbroadOption.count})
+                        </option>
+                      </>
+                    )}
                   </select>
                 </label>
               )}
@@ -1482,7 +1524,7 @@ function ArtistsContent({
               </select>
             )}
 
-            <div className={`grid gap-2 ${showAwardRankings ? "grid-cols-2" : "grid-cols-3"}`}>
+            <div className={`grid gap-2 ${showAwardRankings ? "grid-cols-1" : "grid-cols-2"}`}>
               {!showAwardRankings && (
                 <select
                   onChange={(e) => {
@@ -1491,18 +1533,13 @@ function ArtistsContent({
                     params.set("page", "1");
                     navigateParams(params);
                   }}
-                  value={sort}
+                  value={sort === "name" ? "name" : "views"}
                   className="h-9 min-w-0 rounded-xl border border-black/10 bg-white px-2 text-xs text-gray-600 outline-none sm:text-sm"
                 >
                   <option value="views">{t("sortOptions.viewsMobile")}</option>
-                  <option value="name">{t("sortOptions.nameAZ")}</option>
-                  <option value="newest">{t("sortOptions.newest")}</option>
+                  <option value="name">{t("sortOptions.nameMobile")}</option>
                 </select>
               )}
-              <button className="flex h-9 min-w-0 cursor-pointer items-center justify-center gap-1 rounded-xl border border-black/10 px-2 text-xs text-gray-600 sm:text-sm">
-                <SlidersHorizontal size={16} />
-                {t("buttons.filters", { count: activeFilters })}
-              </button>
 
               <button
                 onClick={clearFilters}

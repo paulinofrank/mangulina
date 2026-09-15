@@ -5,12 +5,6 @@
       "description": "Mangulina is available in English and Spanish.",
       "english": "English",
       "spanish": "Español"
-    },
-    "selector": {
-      "label": "Language",
-      "english": "English",
-      "spanish": "Español",
-      "switchTo": "Switch to {language}"
     }
   },
   "navigation": {
@@ -48,6 +42,8 @@
       "artistsGroup": "Artists",
       "songsGroup": "Songs",
       "albumsGroup": "Albums",
+      "songsAndAlbumsGroup": "Songs & Albums",
+      "byArtist": "by {artist}",
       "resultsFor": "Results for"
     },
     "feedback": {
@@ -61,8 +57,6 @@
     "tagline": "The Dominican Music Database",
     "logo": "Mangulina logo",
     "copyright": "© 2026 Mangulina. All Rights Reserved.",
-    "languageSwitchToSpanish": "Cambiar a Español",
-    "languageSwitchToEnglish": "Switch to English",
     "social": {
       "facebook": "Facebook",
       "instagram": "Instagram",
@@ -373,7 +367,7 @@
     "winner": "Winner",
     "nominee": "Nominee",
     "specialRecognition": "Special Recognition",
-    "videoInterviews": "Artist's Videos",
+    "videoInterviews": "Interviews & Documentaries",
     "interviewsSubtitle": "Interviews, conversations, and archival media connected to this artist.",
     "playAria": "Play {title}",
     "closeVideo": "Close video",
@@ -521,7 +515,16 @@
     },
     "provinceHeading": "Dominican Artists from the Province {province}",
     "provinceMobilePrefix": "Dominican Artists from the Province",
-    "provinceIntro": "Explore Dominican artists from the province of {province} and their contributions to Dominican music in Mangulina, the Dominican Music Database."
+    "provinceIntro": "Explore Dominican artists from the province of {province} and their contributions to Dominican music in Mangulina, the Dominican Music Database.",
+    "provinceMetadataTitle": "Dominican Artists from {province}",
+    "provinceMetadataDescription": "Explore Dominican artists from {province}, including singers, composers, musicians, DJs, and other figures in Dominican music.",
+    "abroadLabel": "Born Abroad",
+    "abroadHeading": "Dominican Artists Born Abroad",
+    "abroadMobilePrefix": "Dominican Artists",
+    "abroadMobileHighlight": "Born Abroad",
+    "abroadIntro": "Explore Dominican artists born outside the Dominican Republic and their contributions to Dominican music in Mangulina, the Dominican Music Database.",
+    "abroadMetadataTitle": "Dominican Artists Born Abroad",
+    "abroadMetadataDescription": "Explore Dominican artists born outside the Dominican Republic, including singers, composers, musicians, DJs, and other figures in Dominican music."
   },
   "directoryTitles": {
     "provinceGenreTagRole": "{province} {genre} {tag} {role}",
@@ -575,11 +578,12 @@
   },
   "sortOptions": {
     "mostViewed": "Most viewed",
-    "nameAZ": "Name A-Z",
     "newest": "Newest",
     "title": "Title",
     "sortedByViews": "Sorted by Views",
-    "viewsMobile": "Sort: Views"
+    "sortedByName": "Sorted by Name",
+    "viewsMobile": "Sort: Views",
+    "nameMobile": "Sort: Name"
   },
   "pagination": {
     "first": "First",
@@ -591,7 +595,6 @@
   },
   "buttons": {
     "apply": "Apply",
-    "filters": "Filters ({count})",
     "clearAll": "Clear all",
     "clear": "Clear",
     "retry": "Retry"
@@ -1862,6 +1865,15 @@
     "zodiac": {
       "aries": "Aries", "taurus": "Taurus", "gemini": "Gemini", "cancer": "Cancer", "leo": "Leo", "virgo": "Virgo", "libra": "Libra", "scorpio": "Scorpio", "sagittarius": "Sagittarius", "capricorn": "Capricorn", "aquarius": "Aquarius", "pisces": "Pisces"
     }
+  },
+  "notFound": {
+    "metadataTitle": "Page not found — Mangulina",
+    "eyebrow": "Page not found",
+    "title": "Looks like this page hit a wrong note.",
+    "body": "We couldn't find the page you were looking for. It may have moved, or the link might be out of date.",
+    "searchLabel": "Search Mangulina",
+    "searchPlaceholder": "Search artists, songs, and albums.",
+    "searchSubmit": "Search"
   },
   "fallback": {
     "unknownArtist": "Unknown artist",

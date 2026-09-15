@@ -5,7 +5,7 @@ import JsonLd from "@/components/seo/JsonLd";
 
 import { getArchiveDecades } from "@/lib/archivePeriods";
 import { getArchiveCounts } from "@/lib/getSongsByYear";
-import { getProvinceDisplayName, getPublishedProvinces } from "@/lib/provinces";
+import { getPublishedProvinces, isBornAbroadProvince } from "@/lib/provinces";
 import { createPageMetadata, type SeoLocale } from "@/lib/seo";
 import { breadcrumbSchema, collectionPageSchema } from "@/lib/structuredData";
 
@@ -87,10 +87,16 @@ export default async function DiscoverPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("pages.discover");
+  const tDirectory = await getTranslations("artistDirectory");
   const [provinces, archiveCounts] = await Promise.all([
     getPublishedProvinces(),
     getArchiveCounts(),
   ]);
+  // Born abroad is not a province, so it closes the alphabetical list.
+  const orderedProvinces = [
+    ...provinces.filter((province) => !isBornAbroadProvince(province.name)),
+    ...provinces.filter((province) => isBornAbroadProvince(province.name)),
+  ];
   const decades = getArchiveDecades().filter(
     (decade) => (archiveCounts.decadeCounts[decade] ?? 0) > 0,
   );
@@ -196,14 +202,18 @@ export default async function DiscoverPage({
         <section className="mt-6 rounded-3xl border border-black/10 bg-white p-7 shadow-sm sm:p-10">
           <SectionEyebrow>{t("regionsTitle")}</SectionEyebrow>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-            {provinces.map((province) => (
+            {orderedProvinces.map((province) => (
               <Link
                 key={province.slug}
                 href={`/provinces/${province.slug}`}
                 className="flex items-center justify-between gap-3 rounded-2xl border border-[#002D62]/10 bg-[#FAF9F6] px-4 py-4 text-[#002D62] transition hover:border-[#002D62]/30 hover:bg-[#002D62]/5"
               >
-                <span className="min-w-0 truncate font-medium">
-                  {getProvinceDisplayName(province.name)}
+                <span
+                  className={`min-w-0 truncate font-medium ${
+                    isBornAbroadProvince(province.name) ? "text-[#8B0000]" : ""
+                  }`}
+                >
+                  {isBornAbroadProvince(province.name) ? tDirectory("abroadLabel") : province.name}
                 </span>
                 <span className="shrink-0 text-xs text-gray-500">{province.count}</span>
               </Link>
