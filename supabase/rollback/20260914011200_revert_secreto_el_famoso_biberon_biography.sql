@@ -1,0 +1,16 @@
+BEGIN;
+
+-- Revierte 20260914011200_rewrite_secreto_el_famoso_biberon_biography.sql con los documentos
+-- que la ficha tenía justo antes de aplicarla (capturados por el script).
+
+DELETE FROM editorial_entity_references WHERE editorial_document_id IN (
+  SELECT d.id FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'secreto-el-famoso-biberon' AND d.document_type = 'artist_biography');
+DELETE FROM editorial_documents WHERE owner_artist_id = (SELECT id FROM artists WHERE slug = 'secreto-el-famoso-biberon') AND document_type = 'artist_biography';
+INSERT INTO editorial_documents (document_type, locale, schema_version, document, status, owner_artist_id, revision)
+SELECT 'artist_biography', 'en', 1, '{"type":"doc","content":[{"type":"paragraph","content":[{"text":"Secreto El Famoso Biberón, born in 1987 in Santo Domingo, is one of the most recognized and influential figures in the Dominican dembow and urban music scene, an artist who helped define the harder, more street-oriented sound of Dominican urban music as it differentiated itself from Puerto Rican reggaeton in the 2000s and 2010s. His stage name became a brand synonymous with Dominican urban authenticity — raw, aggressive, and uncompromising in its representation of street culture and the realities of life in Santo Domingo''s popular neighborhoods.","type":"text"}]},{"type":"paragraph","content":[{"text":"Secreto''s music incorporated elements of urban merengue alongside dembow rhythms, reflecting the way Dominican urban artists integrated national musical traditions into the international urban Latin framework. His recordings achieved wide circulation through digital platforms and nightclub circuits, and his influence on the aesthetic and attitude of Dominican dembow has been significant enough to inspire a generation of younger artists who followed in his footsteps. He remains one of the defining voices of Dominican urban music''s formative era.","type":"text"}]}]}'::jsonb, 'published', id, 1 FROM artists WHERE slug = 'secreto-el-famoso-biberon';
+UPDATE artists SET bio_en = 'Secreto El Famoso Biberón, born in 1987 in Santo Domingo, is one of the most recognized and influential figures in the Dominican dembow and urban music scene, an artist who helped define the harder, more street-oriented sound of Dominican urban music as it differentiated itself from Puerto Rican reggaeton in the 2000s and 2010s. His stage name became a brand synonymous with Dominican urban authenticity — raw, aggressive, and uncompromising in its representation of street culture and the realities of life in Santo Domingo''s popular neighborhoods.
+
+Secreto''s music incorporated elements of urban merengue alongside dembow rhythms, reflecting the way Dominican urban artists integrated national musical traditions into the international urban Latin framework. His recordings achieved wide circulation through digital platforms and nightclub circuits, and his influence on the aesthetic and attitude of Dominican dembow has been significant enough to inspire a generation of younger artists who followed in his footsteps. He remains one of the defining voices of Dominican urban music''s formative era.', bio_es = NULL WHERE slug = 'secreto-el-famoso-biberon';
+
+COMMIT;
