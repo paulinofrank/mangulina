@@ -50,7 +50,7 @@ export default function SongAboutSection({
         {visible.map(({ key, labelKey }) => (
           <div key={key}>
             {visible.length > 1 && (
-              <h3 className="mb-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+              <h3 className="mb-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-500">
                 {t(labelKey)}
               </h3>
             )}

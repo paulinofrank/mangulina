@@ -53,7 +53,7 @@ export default function SongArtistPreviewCard({ artist }: SongArtistPreviewCardP
             </h3>
 
             {artist.views != null && artist.views > 0 && (
-              <p className="shrink-0 text-xs text-gray-400">
+              <p className="shrink-0 text-xs text-gray-500">
                 {artist.views.toLocaleString()} {t("common.views")}
               </p>
             )}

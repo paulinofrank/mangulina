@@ -138,13 +138,13 @@ export default function SongCreditsSection({
         <div className="mb-5 flex flex-wrap gap-x-6 gap-y-2 border-b border-gray-50 pb-5 text-sm">
           {labelName && (
             <div>
-              <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-400">{tSong("label")}</span>
+              <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-500">{tSong("label")}</span>
               <span className="text-gray-700">{labelName}</span>
             </div>
           )}
           {releaseInfo && (
             <div>
-              <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-400">{tSong("release")}</span>
+              <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-500">{tSong("release")}</span>
               <span className="text-gray-700">{releaseInfo}</span>
             </div>
           )}
@@ -159,7 +159,7 @@ export default function SongCreditsSection({
             return (
               <div key={role} className="contents">
                 <dt
-                  className="text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-400 sm:py-0.5"
+                  className="text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-500 sm:py-0.5"
                 >
                   {role}
                 </dt>

@@ -100,7 +100,7 @@ export default function SongHero({
                 unoptimized
               />
             ) : (
-              <div className="flex h-full w-full items-center justify-center bg-gray-100 text-xs italic text-gray-400">
+              <div className="flex h-full w-full items-center justify-center bg-gray-100 text-xs italic text-gray-500">
                 {t("common.noImage")}
               </div>
             )}
@@ -130,7 +130,7 @@ export default function SongHero({
               <dl className="grid gap-x-8 gap-y-3 text-sm text-gray-600 sm:grid-cols-2 xl:grid-cols-3">
                 {heroFacts.map((fact) => (
                   <div key={fact.key} className="flex min-w-0 items-center gap-3">
-                    <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                    <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-500">
                       {fact.label}
                     </dt>
                     <dd className="min-w-0 truncate text-gray-600">
@@ -150,7 +150,7 @@ export default function SongHero({
 
                 {views != null && views > 0 && (
                   <div className="flex min-w-0 items-center gap-3">
-                    <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                    <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-500">
                       {t("song.hero.views")}
                     </dt>
                     <dd className="min-w-0 truncate text-gray-600">
@@ -161,7 +161,7 @@ export default function SongHero({
 
                 {isrcText && (
                   <div className="flex min-w-0 items-center gap-3">
-                    <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                    <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-500">
                       ISRC
                     </dt>
                     <dd className="min-w-0 truncate text-gray-600">
@@ -172,7 +172,7 @@ export default function SongHero({
 
                 {genreChips.length > 0 && (
                   <div className="flex min-w-0 items-center gap-3 sm:col-span-2 xl:col-span-1">
-                    <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                    <dt className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-500">
                       {t("song.hero.genres")}
                     </dt>
                     <dd className="flex min-w-0 flex-wrap gap-2">

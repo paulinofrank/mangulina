@@ -33,7 +33,7 @@ export default function SongHeader({
       <h1 className="text-2xl font-semibold text-[#002D62]">{title}</h1>
       <p className="mt-1 text-sm text-gray-600">
         {artist}
-        {year ? <span className="text-gray-400"> · {year}</span> : null}
+        {year ? <span className="text-gray-500"> · {year}</span> : null}
       </p>
       {views != null && (
         <p className="mt-1 text-xs text-gray-500">

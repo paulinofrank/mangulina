@@ -420,9 +420,11 @@ export default function ArtistFactsCard({
   return (
     <section className="rounded-xl border border-gray-100 bg-white p-6 font-sans shadow-sm">
       <div className="mb-4 flex items-center justify-between gap-3">
-        <h3 className="text-xs font-normal uppercase tracking-[0.18em] text-(--color-wikicrimson)">
+        {/* h2: the page goes H1 (artist name) straight to this section. mb-0
+            cancels the global h2 margin so the flex row keeps its layout. */}
+        <h2 className="mb-0 text-xs font-normal uppercase tracking-[0.18em] text-(--color-wikicrimson)">
           {t("artist.technicalSheet")}
-        </h3>
+        </h2>
         <ShareButton url={shareUrl} title={artist.name} subject={artist.name} placement="facts" />
       </div>
 

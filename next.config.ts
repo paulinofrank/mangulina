@@ -32,6 +32,13 @@ const nextConfig: NextConfig = {
         destination: "/es/songs/pegame-tu-vicio-antony-santos-6",
         permanent: true,
       },
+      // There is no /genres or /songs index page; the genre hub lives on
+      // /discover and the song browser is /archive. Temporary redirects so a
+      // real index page can take these paths later without cached 308s.
+      { source: "/genres", destination: "/discover#genres", permanent: false },
+      { source: "/es/genres", destination: "/es/discover#genres", permanent: false },
+      { source: "/songs", destination: "/archive", permanent: false },
+      { source: "/es/songs", destination: "/es/archive", permanent: false },
     ];
   },
 

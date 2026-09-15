@@ -40,7 +40,7 @@ export default function Navbar() {
         {/* Back Button */}
         <button
           onClick={() => router.back()}
-          className="group flex h-6 w-6 cursor-pointer items-center justify-center rounded-full transition-colors hover:bg-black/5"
+          className="group relative flex h-6 w-6 shrink-0 cursor-pointer items-center justify-center rounded-full transition-colors hover:bg-black/5 after:absolute after:-inset-2.5"
           aria-label={t('goBack')}
         >
           <svg
@@ -69,7 +69,9 @@ export default function Navbar() {
               <div key={link.href} className="contents">
                 <Link
                   href={link.href}
-                  className={`text-sm font-normal uppercase tracking-wider transition-colors ${
+                  // The invisible ::after extends the tap target to 44px tall
+                  // without changing the pill's size (WCAG 2.5.8 / 44px comfort).
+                  className={`relative text-sm font-normal uppercase tracking-wider transition-colors after:absolute after:-inset-x-2 after:-inset-y-3 ${
                     isActive ? 'text-[#8B0000]' : 'text-gray-700 hover:text-[#8B0000]'
                   }`}
                 >
@@ -91,7 +93,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={handleLanguageSwitch}
-            className="cursor-pointer text-sm font-normal uppercase tracking-wider text-gray-700 transition-colors hover:text-[#8B0000]"
+            className="relative cursor-pointer text-sm font-normal uppercase tracking-wider text-gray-700 transition-colors hover:text-[#8B0000] after:absolute after:-inset-x-2 after:-inset-y-3"
           >
             {alternateLanguageLabel}
           </button>
@@ -104,7 +106,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="group flex h-6 w-6 cursor-pointer items-center justify-center rounded-full transition-colors hover:bg-black/5"
+          className="group relative flex h-6 w-6 shrink-0 cursor-pointer items-center justify-center rounded-full transition-colors hover:bg-black/5 after:absolute after:-inset-2.5"
           aria-label={t('goToTop')}
         >
           <svg

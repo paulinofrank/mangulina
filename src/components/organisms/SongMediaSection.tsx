@@ -39,7 +39,7 @@ export default function SongMediaSection({ media }: SongMediaSectionProps) {
       <h2 className="mb-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
         {t("media")}
       </h2>
-      <p className="mb-4 text-xs text-gray-400">
+      <p className="mb-4 text-xs text-gray-500">
         {t("mediaDescription")}
       </p>
 

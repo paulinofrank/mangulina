@@ -16,7 +16,7 @@ export default function SongLyricsSection({ lyrics, notice }: SongLyricsSectionP
         {t("lyrics")}
       </h2>
       {notice && (
-        <p className="mb-3 text-[10px] text-gray-400 uppercase tracking-wide">{notice}</p>
+        <p className="mb-3 text-[10px] text-gray-500 uppercase tracking-wide">{notice}</p>
       )}
       <pre className="whitespace-pre-wrap font-sans text-sm leading-7 text-gray-700">
         {lyrics}

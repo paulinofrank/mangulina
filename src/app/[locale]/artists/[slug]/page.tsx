@@ -240,9 +240,10 @@ export default async function ArtistProfile({ params }: PageProps) {
               <div className="min-w-0 space-y-6">
                 {hasBio && (
                   <section className="min-w-0 rounded-xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6">
-                    <h3 className="mb-4 text-xs font-normal uppercase text-(--color-wikicrimson)">
+                    {/* h2 under the artist-name H1; tracking-normal cancels the global h2 letter spacing. */}
+                    <h2 className="mb-4 text-xs font-normal uppercase tracking-normal text-(--color-wikicrimson)">
                       {t("biography")}
-                    </h3>
+                    </h2>
 
                     {biography.kind === "structured" ? (
                       <EditorialDocumentRenderer resolvedDocument={biography.document} />

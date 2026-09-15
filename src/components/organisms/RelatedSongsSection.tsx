@@ -61,7 +61,7 @@ export default function RelatedSongsSection({
                   className="flex items-center justify-between gap-3 py-2.5 text-sm text-[#002D62] transition-colors hover:text-[#CE1126]"
                 >
                   <span className="truncate font-medium">{song.title}</span>
-                  <span className="shrink-0 text-xs text-gray-400">
+                  <span className="shrink-0 text-xs text-gray-500">
                     {song.artist_name}
                   </span>
                 </Link>

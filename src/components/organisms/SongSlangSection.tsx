@@ -33,7 +33,7 @@ export default function SongSlangSection({ slang }: SongSlangSectionProps) {
       <h2 className="mb-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[#CE1126]">
         {t("slang")}
       </h2>
-      <p className="mb-4 text-xs text-gray-400">
+      <p className="mb-4 text-xs text-gray-500">
         {t("slangDescription")}
       </p>
 
@@ -72,7 +72,7 @@ export default function SongSlangSection({ slang }: SongSlangSectionProps) {
                   href={item.source_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 inline-flex text-xs font-medium text-gray-400 underline-offset-2 hover:text-[#002D62] hover:underline"
+                  className="mt-3 inline-flex text-xs font-medium text-gray-500 underline-offset-2 hover:text-[#002D62] hover:underline"
                 >
                   {tCommon("source")}
                 </a>

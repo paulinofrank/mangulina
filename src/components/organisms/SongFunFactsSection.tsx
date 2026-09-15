@@ -44,7 +44,7 @@ export default function SongFunFactsSection({ facts }: SongFunFactsSectionProps)
                   href={fact.source_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 inline-flex text-xs font-medium text-gray-400 underline-offset-2 hover:text-[#002D62] hover:underline"
+                  className="mt-2 inline-flex text-xs font-medium text-gray-500 underline-offset-2 hover:text-[#002D62] hover:underline"
                 >
                   {tCommon("source")}
                 </a>

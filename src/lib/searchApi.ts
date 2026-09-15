@@ -61,6 +61,26 @@ async function getReleaseCoverAvailability(ids: string[]) {
   );
 }
 
+// A song exists as several recordings (studio, live, remaster, video), each a
+// separate MusicBrainz recording. Listing them all made search repeat the same
+// title and artist, so keep one row per song and artist: the earliest
+// recording. The song's own page carries the other versions.
+function collapseSongVersions(results: SearchResult[]) {
+  const versionKey = (result: SearchResult) =>
+    `${result.title.trim().toLowerCase()}::${(result.artist_name ?? result.subtitle ?? "").trim().toLowerCase()}`;
+  const keptByKey = new Map<string, SearchResult>();
+
+  for (const result of results) {
+    const key = versionKey(result);
+    const kept = keptByKey.get(key);
+    if (!kept || (result.year ?? Number.MAX_SAFE_INTEGER) < (kept.year ?? Number.MAX_SAFE_INTEGER)) {
+      keptByKey.set(key, result);
+    }
+  }
+
+  return results.filter((result) => keptByKey.get(versionKey(result)) === result);
+}
+
 async function withSongReleaseDetails(results: SearchResult[]) {
   const recordingIds = [...new Set(results.map((result) => result.id).filter(Boolean))];
 
@@ -130,7 +150,7 @@ async function withReleaseSlugs(results: SearchResult[]) {
 
   const { data, error } = await supabase
     .from("releases")
-    .select("id, slug")
+    .select("id, slug, release_group_id, release_year, year, country")
     .in("id", releaseIds);
 
   if (error) {
@@ -138,15 +158,41 @@ async function withReleaseSlugs(results: SearchResult[]) {
     return results;
   }
 
-  const slugByReleaseId = new Map(
-    ((data ?? []) as Array<{ id: string; slug: string | null }>).map((row) => [
-      row.id,
-      row.slug,
-    ]),
-  );
-  const releaseCoverMap = await getReleaseCoverAvailability(releaseIds);
+  type ReleaseRow = {
+    id: string;
+    slug: string | null;
+    release_group_id: string | null;
+    release_year: number | null;
+    year: number | null;
+    country: string | null;
+  };
+  const rows = (data ?? []) as ReleaseRow[];
+  const slugByReleaseId = new Map(rows.map((row) => [row.id, row.slug]));
 
-  return results.map((result) => ({
+  // An album is stored once per edition (MusicBrainz releases: each country,
+  // format and reissue), all sharing a release group. Listing every edition
+  // made search show the same album up to ten times, so keep one per group:
+  // the earliest edition, preferring the Dominican release when years tie.
+  const editionRank = (row: ReleaseRow) => [row.release_year ?? row.year ?? 9999, row.country === "DO" ? 0 : 1];
+  const keptByGroup = new Map<string, ReleaseRow>();
+  for (const row of rows) {
+    if (!row.release_group_id) continue;
+    const kept = keptByGroup.get(row.release_group_id);
+    const [year, country] = editionRank(row);
+    const [keptYear, keptCountry] = kept ? editionRank(kept) : [Infinity, Infinity];
+    if (!kept || year < keptYear || (year === keptYear && country < keptCountry)) {
+      keptByGroup.set(row.release_group_id, row);
+    }
+  }
+  const groupByReleaseId = new Map(rows.map((row) => [row.id, row.release_group_id]));
+  const uniqueResults = results.filter((result) => {
+    const groupId = groupByReleaseId.get(result.id);
+    return !groupId || keptByGroup.get(groupId)?.id === result.id;
+  });
+
+  const releaseCoverMap = await getReleaseCoverAvailability(uniqueResults.map((result) => result.id));
+
+  return uniqueResults.map((result) => ({
     ...result,
     slug: slugByReleaseId.get(result.id) ?? result.slug,
     cover_url: releaseCoverMap.get(result.id) ? getPublicReleaseCoverUrl(result.id, 150) : null,
@@ -272,7 +318,7 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
         ? getArtistImageUrl(artist.id, artistImageVersions.get(artist.id))
         : null,
     })),
-    songs: await withSongReleaseDetails(withCurrentCoverArtUrls(songs)),
+    songs: collapseSongVersions(await withSongReleaseDetails(withCurrentCoverArtUrls(songs))),
     releases: await withReleaseSlugs(withCurrentCoverArtUrls(releases)),
   };
 }

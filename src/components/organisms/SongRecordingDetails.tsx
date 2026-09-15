@@ -111,7 +111,7 @@ export default function SongRecordingDetails({
             key={rowLabel}
             className="flex items-start justify-between gap-4 py-2.5 text-sm first:pt-0 last:pb-0"
           >
-            <dt className="w-32 shrink-0 text-xs font-medium uppercase tracking-[0.12em] text-gray-400">
+            <dt className="w-32 shrink-0 text-xs font-medium uppercase tracking-[0.12em] text-gray-500">
               {rowLabel}
             </dt>
             <dd className="text-right text-gray-700 break-all">
