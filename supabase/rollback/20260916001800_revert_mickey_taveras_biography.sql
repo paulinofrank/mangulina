@@ -1,0 +1,19 @@
+BEGIN;
+
+-- Revierte 20260916001800_rewrite_mickey_taveras_biography.sql con los documentos que la ficha
+-- tenía justo antes de aplicarla (capturados por el script).
+
+DELETE FROM editorial_entity_references WHERE editorial_document_id IN (
+  SELECT d.id FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'mickey-taveras' AND d.document_type = 'artist_biography');
+DELETE FROM editorial_documents WHERE owner_artist_id = (SELECT id FROM artists WHERE slug = 'mickey-taveras') AND document_type = 'artist_biography';
+INSERT INTO editorial_documents (document_type, locale, schema_version, document, status, owner_artist_id, revision)
+SELECT 'artist_biography', 'en', 1, '{"type":"doc","content":[{"type":"paragraph","content":[{"text":"Mickey Taveras is one of the most commercially successful and stylistically versatile Dominican singers of his generation, an artist who built an enduring career by mastering the full range of tropical Latin music. Born in 1970 in Santo Domingo, he demonstrated musical ability from a young age and worked his way through the local music circuit before achieving national and international recognition as a solo artist.","type":"text"}]},{"type":"paragraph","content":[{"text":"Taveras is equally at home in salsa, merengue, bachata, and Latin pop, a breadth that has allowed him to adapt to shifting audience tastes over a career stretching across three decades. His voice is smooth and appealing, with a romantic warmth that suits the love-song material he favors, and his stage presence has made him a consistently popular live performer throughout the Dominican Republic and the Dominican diaspora.","type":"text"}]},{"type":"paragraph","content":[{"text":"He achieved significant hit records in the 1990s and 2000s, and his albums sold strongly in markets across Latin America, the United States, and Europe. Taveras has collaborated with a wide range of producers and fellow artists, and his willingness to experiment with different sounds while maintaining a broadly accessible style has kept him relevant through multiple cycles of musical fashion. He remains an active and beloved figure in Dominican popular music, regarded by fans as one of the most reliable romantic singers the country has produced.","type":"text"}]}]}'::jsonb, 'published', id, 1 FROM artists WHERE slug = 'mickey-taveras';
+UPDATE artists SET bio_en = 'Mickey Taveras is one of the most commercially successful and stylistically versatile Dominican singers of his generation, an artist who built an enduring career by mastering the full range of tropical Latin music. Born in 1970 in Santo Domingo, he demonstrated musical ability from a young age and worked his way through the local music circuit before achieving national and international recognition as a solo artist.
+
+Taveras is equally at home in salsa, merengue, bachata, and Latin pop, a breadth that has allowed him to adapt to shifting audience tastes over a career stretching across three decades. His voice is smooth and appealing, with a romantic warmth that suits the love-song material he favors, and his stage presence has made him a consistently popular live performer throughout the Dominican Republic and the Dominican diaspora.
+
+He achieved significant hit records in the 1990s and 2000s, and his albums sold strongly in markets across Latin America, the United States, and Europe. Taveras has collaborated with a wide range of producers and fellow artists, and his willingness to experiment with different sounds while maintaining a broadly accessible style has kept him relevant through multiple cycles of musical fashion. He remains an active and beloved figure in Dominican popular music, regarded by fans as one of the most reliable romantic singers the country has produced.', bio_es = NULL
+       WHERE slug = 'mickey-taveras';
+
+COMMIT;
