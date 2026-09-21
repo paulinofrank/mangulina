@@ -1,0 +1,99 @@
+BEGIN;
+
+-- Chiquito Team Band: orquesta de salsa de Santo Domingo, no de merengue; la ficha solo tenía una frase vacía. Fuentes: Diario Libre (23 ene. 2018, entrevista a Rafael Berroa y Emmanuel Frías; 23 mar. 2023, ganadores del Soberano), El Caribe (11 sep. 2018, 'seis años de creada'), la página oficial del grupo en YouTube (fundada el 30 jun. 2012), páginas de historia de la salsa (Tom Datos, La Salsa es mi Vida), discografía de MusicBrainz (nueve entradas 2014-2022). Conflicto: un directorio da 2011 y a Kelvin Saviñón como cofundador; el resto da 30 jun. 2012: se usa 2012. Los cuatro Soberano que el grupo dice haber ganado en 2018 (uno como revelación, tres como agrupación salsera) no se registran como premios: falta comprobar cada edición; queda anotado en el texto como declaración suya. Campos: birth_year 2012 (formación), primary_genre salsa (la fila decía merengue).
+
+UPDATE artists SET birth_year = 2012, primary_genre = 'salsa' WHERE slug = 'chiquito-team-band';
+
+INSERT INTO editorial_documents (document_type, locale, schema_version, document, status, owner_artist_id, revision)
+SELECT 'artist_biography', 'en', 1, '{"type":"doc","content":[{"type":"paragraph","content":[{"type":"text","text":"Chiquito Team Band is a Dominican salsa orchestra from Santo Domingo, led by the timbalero Rafael Berroa, known as Chiquito, and by Emmanuel Frías. Its own channel dates its founding to 30 June 2012."}]},{"type":"paragraph","content":[{"type":"text","text":"Formation","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"Salsa-history pages say the two decided to start a new project called Chiquito Team Band, which gradually caught on; a music directory instead dates the group to 2011 and names Kelvin Saviñón as a co-founder. Berroa and Frías told Diario Libre in 2018 that it had taken them twenty years to reach success, and that they came from humble backgrounds."}]},{"type":"paragraph","content":[{"type":"text","text":"Records","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"The group released the single «Lejos de ti» in March 2014 and its first album, «La industria salsera», in September 2014. «Tengo que colgar» and «Me marcho» followed in 2017, and its second album, «Los creadores del sonido», appeared in March 2018. The single «Ábreme los caminos», an unreleased song by the composer Osmany Espinosa produced by Frías, announced that album, which carried a symphonic sound with arrangements by "},{"type":"artistReference","attrs":{"occurrenceId":"de8cbc66-3472-47ad-a2f8-5cec590c7de3","artistId":"ead3e58c-4592-489b-b5d4-0319f1f6f374","displayText":"Amaury Sánchez"}},{"type":"text","text":"; the band had previewed the concept at the Festival Presidente. It later released «Me voy a gozar la vida» and «La rumba ta’ buena» (2021), «Ya supérame» (February 2022) and the album «Sin rodeos» (September 2022)."}]},{"type":"paragraph","content":[{"type":"text","text":"Touring and awards","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"In 2018 the band planned a tour of the United States and appearances at the Veracruz carnivals in Mexico, where it said its music is played, and looked back on 2017 visits to Panama, the United States, Colombia and Puerto Rico. It said then that it had been nominated to the Premios Soberano every year since its debut and had won four statuettes, one as Revelation and the rest as salsa group of the year. In March 2023 Diario Libre reported that it was named best salsa group again at that year’s Soberano ceremony."}]},{"type":"paragraph","content":[{"type":"text","text":"Legacy","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"In 2018 Berroa named as other Dominican acts that keep salsa alive Yiyo Sarante, "},{"type":"artistReference","attrs":{"occurrenceId":"f4915f54-70ea-4947-9c4e-50780b0f35df","artistId":"e324ca2d-27a5-491b-97e7-f8c81396cfcc","displayText":"Asdrubar"}},{"type":"text","text":", "},{"type":"artistReference","attrs":{"occurrenceId":"ec0e32d8-7512-4b97-933a-0f10cc45e619","artistId":"33a84471-9f35-4a4f-9b56-b6a61e13212a","displayText":"Revolución Salsera"}},{"type":"text","text":", "},{"type":"artistReference","attrs":{"occurrenceId":"3ebc6a0e-d27d-4bfe-b3ef-1d0d95e8c05a","artistId":"d1e84a54-f60c-4b1a-8c12-5195d39c6f5a","displayText":"Sexappeal"}},{"type":"text","text":", "},{"type":"artistReference","attrs":{"occurrenceId":"c26bfbe6-b4d2-46ae-9c21-c8a411ded9f0","artistId":"14777546-5b72-4dcf-b18a-15320124a0ee","displayText":"Alex Matos"}},{"type":"text","text":", "},{"type":"artistReference","attrs":{"occurrenceId":"bd16b8ed-b1eb-42c8-84bd-be05f092f522","artistId":"d9ef5d29-573a-4812-b717-18a783d95a70","displayText":"Michel el Buenón"}},{"type":"text","text":" and "},{"type":"artistReference","attrs":{"occurrenceId":"0208279a-aa02-4314-9d8b-727171ab3f9d","artistId":"69ca4e3b-2a3a-4e61-a5bd-2210606c5f13","displayText":"David Kada"}},{"type":"text","text":", among others."}]}]}'::jsonb, 'published', id, 1 FROM artists WHERE slug = 'chiquito-team-band'
+ON CONFLICT (document_type, owner_artist_id, locale) WHERE document_type = 'artist_biography' DO UPDATE
+   SET document = excluded.document, status = 'published', revision = editorial_documents.revision + 1, updated_at = now();
+DELETE FROM editorial_entity_references WHERE editorial_document_id IN
+  (SELECT d.id FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+    WHERE a.slug = 'chiquito-team-band' AND d.locale = 'en' AND d.document_type = 'artist_biography');
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, 'de8cbc66-3472-47ad-a2f8-5cec590c7de3', 'artist', 'ead3e58c-4592-489b-b5d4-0319f1f6f374' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'en' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, 'f4915f54-70ea-4947-9c4e-50780b0f35df', 'artist', 'e324ca2d-27a5-491b-97e7-f8c81396cfcc' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'en' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, 'ec0e32d8-7512-4b97-933a-0f10cc45e619', 'artist', '33a84471-9f35-4a4f-9b56-b6a61e13212a' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'en' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, '3ebc6a0e-d27d-4bfe-b3ef-1d0d95e8c05a', 'artist', 'd1e84a54-f60c-4b1a-8c12-5195d39c6f5a' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'en' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, 'c26bfbe6-b4d2-46ae-9c21-c8a411ded9f0', 'artist', '14777546-5b72-4dcf-b18a-15320124a0ee' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'en' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, 'bd16b8ed-b1eb-42c8-84bd-be05f092f522', 'artist', 'd9ef5d29-573a-4812-b717-18a783d95a70' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'en' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, '0208279a-aa02-4314-9d8b-727171ab3f9d', 'artist', '69ca4e3b-2a3a-4e61-a5bd-2210606c5f13' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'en' AND d.document_type = 'artist_biography';
+UPDATE artists SET bio_en = 'Chiquito Team Band is a Dominican salsa orchestra from Santo Domingo, led by the timbalero Rafael Berroa, known as Chiquito, and by Emmanuel Frías. Its own channel dates its founding to 30 June 2012.
+
+**Formation**
+
+Salsa-history pages say the two decided to start a new project called Chiquito Team Band, which gradually caught on; a music directory instead dates the group to 2011 and names Kelvin Saviñón as a co-founder. Berroa and Frías told Diario Libre in 2018 that it had taken them twenty years to reach success, and that they came from humble backgrounds.
+
+**Records**
+
+The group released the single «Lejos de ti» in March 2014 and its first album, «La industria salsera», in September 2014. «Tengo que colgar» and «Me marcho» followed in 2017, and its second album, «Los creadores del sonido», appeared in March 2018. The single «Ábreme los caminos», an unreleased song by the composer Osmany Espinosa produced by Frías, announced that album, which carried a symphonic sound with arrangements by Amaury Sánchez; the band had previewed the concept at the Festival Presidente. It later released «Me voy a gozar la vida» and «La rumba ta’ buena» (2021), «Ya supérame» (February 2022) and the album «Sin rodeos» (September 2022).
+
+**Touring and awards**
+
+In 2018 the band planned a tour of the United States and appearances at the Veracruz carnivals in Mexico, where it said its music is played, and looked back on 2017 visits to Panama, the United States, Colombia and Puerto Rico. It said then that it had been nominated to the Premios Soberano every year since its debut and had won four statuettes, one as Revelation and the rest as salsa group of the year. In March 2023 Diario Libre reported that it was named best salsa group again at that year’s Soberano ceremony.
+
+**Legacy**
+
+In 2018 Berroa named as other Dominican acts that keep salsa alive Yiyo Sarante, Asdrubar, Revolución Salsera, Sexappeal, Alex Matos, Michel el Buenón and David Kada, among others.' WHERE slug = 'chiquito-team-band';
+
+INSERT INTO editorial_documents (document_type, locale, schema_version, document, status, owner_artist_id, revision)
+SELECT 'artist_biography', 'es', 1, '{"type":"doc","content":[{"type":"paragraph","content":[{"type":"text","text":"Chiquito Team Band es una orquesta dominicana de salsa de Santo Domingo, dirigida por el timbalero Rafael Berroa, conocido como Chiquito, y por Emmanuel Frías. Su propio canal fecha su fundación el 30 de junio de 2012."}]},{"type":"paragraph","content":[{"type":"text","text":"Formación","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"Páginas de historia de la salsa dicen que ambos decidieron formar un proyecto nuevo llamado Chiquito Team Band, que poco a poco fue calando; un directorio musical, en cambio, fecha el grupo en 2011 y nombra a Kelvin Saviñón como cofundador. Berroa y Frías dijeron a Diario Libre en 2018 que les había costado veinte años alcanzar el éxito y que llegaron desde orígenes humildes."}]},{"type":"paragraph","content":[{"type":"text","text":"Discos","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"El grupo publicó el sencillo «Lejos de ti» en marzo de 2014 y su primer álbum, «La industria salsera», en septiembre de 2014. «Tengo que colgar» y «Me marcho» siguieron en 2017, y su segundo álbum, «Los creadores del sonido», apareció en marzo de 2018. El sencillo «Ábreme los caminos», una canción inédita del compositor Osmany Espinosa producida por Frías, anunció ese álbum, que llevó un sonido sinfónico con arreglos de "},{"type":"artistReference","attrs":{"occurrenceId":"dca4afb9-bcd2-4167-a168-72518ba9d61b","artistId":"ead3e58c-4592-489b-b5d4-0319f1f6f374","displayText":"Amaury Sánchez"}},{"type":"text","text":"; la banda había adelantado el concepto en el Festival Presidente. Después publicó «Me voy a gozar la vida» y «La rumba ta’ buena» (2021), «Ya supérame» (febrero de 2022) y el álbum «Sin rodeos» (septiembre de 2022)."}]},{"type":"paragraph","content":[{"type":"text","text":"Giras y premios","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"En 2018 la banda preparaba una gira por Estados Unidos y presentaciones en los carnavales de Veracruz, en México, donde dijo que se escucha su música, y recordó visitas en 2017 a Panamá, Estados Unidos, Colombia y Puerto Rico. Dijo entonces que había sido nominada a los Premios Soberano todos los años desde su debut y que había ganado cuatro estatuillas, una como Revelación y las demás como agrupación salsera del año. En marzo de 2023 Diario Libre informó que fue nombrada de nuevo mejor agrupación salsera en la ceremonia de ese año."}]},{"type":"paragraph","content":[{"type":"text","text":"Legado","marks":[{"type":"bold"}]}]},{"type":"paragraph","content":[{"type":"text","text":"En 2018 Berroa nombró como otros exponentes dominicanos que mantienen vivo el género a Yiyo Sarante, "},{"type":"artistReference","attrs":{"occurrenceId":"591e1718-cf94-4899-a2f4-569bc3596148","artistId":"e324ca2d-27a5-491b-97e7-f8c81396cfcc","displayText":"Asdrubar"}},{"type":"text","text":", "},{"type":"artistReference","attrs":{"occurrenceId":"7bca1b91-1316-4430-8801-d2307c2c5f44","artistId":"33a84471-9f35-4a4f-9b56-b6a61e13212a","displayText":"Revolución Salsera"}},{"type":"text","text":", "},{"type":"artistReference","attrs":{"occurrenceId":"41bd6b95-3085-4178-8f71-dc04f18b1d59","artistId":"d1e84a54-f60c-4b1a-8c12-5195d39c6f5a","displayText":"Sexappeal"}},{"type":"text","text":", "},{"type":"artistReference","attrs":{"occurrenceId":"12ce4856-24e6-49f6-a327-6bb9409d2e60","artistId":"14777546-5b72-4dcf-b18a-15320124a0ee","displayText":"Alex Matos"}},{"type":"text","text":", "},{"type":"artistReference","attrs":{"occurrenceId":"106584de-9029-44c5-aad1-ad841d7e5ab0","artistId":"d9ef5d29-573a-4812-b717-18a783d95a70","displayText":"Michel el Buenón"}},{"type":"text","text":" y "},{"type":"artistReference","attrs":{"occurrenceId":"75b06e22-8e76-46b2-8863-dcf2869d24b0","artistId":"69ca4e3b-2a3a-4e61-a5bd-2210606c5f13","displayText":"David Kada"}},{"type":"text","text":", entre otros."}]}]}'::jsonb, 'published', id, 1 FROM artists WHERE slug = 'chiquito-team-band'
+ON CONFLICT (document_type, owner_artist_id, locale) WHERE document_type = 'artist_biography' DO UPDATE
+   SET document = excluded.document, status = 'published', revision = editorial_documents.revision + 1, updated_at = now();
+DELETE FROM editorial_entity_references WHERE editorial_document_id IN
+  (SELECT d.id FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+    WHERE a.slug = 'chiquito-team-band' AND d.locale = 'es' AND d.document_type = 'artist_biography');
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, 'dca4afb9-bcd2-4167-a168-72518ba9d61b', 'artist', 'ead3e58c-4592-489b-b5d4-0319f1f6f374' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'es' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, '591e1718-cf94-4899-a2f4-569bc3596148', 'artist', 'e324ca2d-27a5-491b-97e7-f8c81396cfcc' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'es' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, '7bca1b91-1316-4430-8801-d2307c2c5f44', 'artist', '33a84471-9f35-4a4f-9b56-b6a61e13212a' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'es' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, '41bd6b95-3085-4178-8f71-dc04f18b1d59', 'artist', 'd1e84a54-f60c-4b1a-8c12-5195d39c6f5a' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'es' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, '12ce4856-24e6-49f6-a327-6bb9409d2e60', 'artist', '14777546-5b72-4dcf-b18a-15320124a0ee' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'es' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, '106584de-9029-44c5-aad1-ad841d7e5ab0', 'artist', 'd9ef5d29-573a-4812-b717-18a783d95a70' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'es' AND d.document_type = 'artist_biography';
+INSERT INTO editorial_entity_references (editorial_document_id, occurrence_id, entity_type, target_artist_id)
+  SELECT d.id, '75b06e22-8e76-46b2-8863-dcf2869d24b0', 'artist', '69ca4e3b-2a3a-4e61-a5bd-2210606c5f13' FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'chiquito-team-band' AND d.locale = 'es' AND d.document_type = 'artist_biography';
+UPDATE artists SET bio_es = 'Chiquito Team Band es una orquesta dominicana de salsa de Santo Domingo, dirigida por el timbalero Rafael Berroa, conocido como Chiquito, y por Emmanuel Frías. Su propio canal fecha su fundación el 30 de junio de 2012.
+
+**Formación**
+
+Páginas de historia de la salsa dicen que ambos decidieron formar un proyecto nuevo llamado Chiquito Team Band, que poco a poco fue calando; un directorio musical, en cambio, fecha el grupo en 2011 y nombra a Kelvin Saviñón como cofundador. Berroa y Frías dijeron a Diario Libre en 2018 que les había costado veinte años alcanzar el éxito y que llegaron desde orígenes humildes.
+
+**Discos**
+
+El grupo publicó el sencillo «Lejos de ti» en marzo de 2014 y su primer álbum, «La industria salsera», en septiembre de 2014. «Tengo que colgar» y «Me marcho» siguieron en 2017, y su segundo álbum, «Los creadores del sonido», apareció en marzo de 2018. El sencillo «Ábreme los caminos», una canción inédita del compositor Osmany Espinosa producida por Frías, anunció ese álbum, que llevó un sonido sinfónico con arreglos de Amaury Sánchez; la banda había adelantado el concepto en el Festival Presidente. Después publicó «Me voy a gozar la vida» y «La rumba ta’ buena» (2021), «Ya supérame» (febrero de 2022) y el álbum «Sin rodeos» (septiembre de 2022).
+
+**Giras y premios**
+
+En 2018 la banda preparaba una gira por Estados Unidos y presentaciones en los carnavales de Veracruz, en México, donde dijo que se escucha su música, y recordó visitas en 2017 a Panamá, Estados Unidos, Colombia y Puerto Rico. Dijo entonces que había sido nominada a los Premios Soberano todos los años desde su debut y que había ganado cuatro estatuillas, una como Revelación y las demás como agrupación salsera del año. En marzo de 2023 Diario Libre informó que fue nombrada de nuevo mejor agrupación salsera en la ceremonia de ese año.
+
+**Legado**
+
+En 2018 Berroa nombró como otros exponentes dominicanos que mantienen vivo el género a Yiyo Sarante, Asdrubar, Revolución Salsera, Sexappeal, Alex Matos, Michel el Buenón y David Kada, entre otros.' WHERE slug = 'chiquito-team-band';
+
+COMMIT;
