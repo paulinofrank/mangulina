@@ -23,6 +23,16 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/artists/manuel-de-jesus-jimenez-ortega",
+        destination: "/artists/manuel-jimenez",
+        permanent: true,
+      },
+      {
+        source: "/es/artists/manuel-de-jesus-jimenez-ortega",
+        destination: "/es/artists/manuel-jimenez",
+        permanent: true,
+      },
+      {
         source: "/songs/pagame-tu-vicio-antony-santos",
         destination: "/songs/pegame-tu-vicio-antony-santos-6",
         permanent: true,
