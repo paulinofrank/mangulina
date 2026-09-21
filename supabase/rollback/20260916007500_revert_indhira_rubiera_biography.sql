@@ -1,0 +1,13 @@
+BEGIN;
+
+-- Revierte 20260916007500_rewrite_indhira_rubiera_biography.sql con los documentos y campos previos.
+
+DELETE FROM editorial_entity_references WHERE editorial_document_id IN (
+  SELECT d.id FROM editorial_documents d JOIN artists a ON a.id = d.owner_artist_id
+   WHERE a.slug = 'indhira-rubiera' AND d.document_type = 'artist_biography');
+DELETE FROM editorial_documents WHERE owner_artist_id = (SELECT id FROM artists WHERE slug = 'indhira-rubiera') AND document_type = 'artist_biography';
+INSERT INTO editorial_documents (document_type, locale, schema_version, document, status, owner_artist_id, revision)
+SELECT 'artist_biography', 'en', 1, '{"type":"doc","content":[{"type":"paragraph","content":[{"text":"Indhira Rubiera is a Dominican lyric soprano and classical vocalist based in Santo Domingo whose work in opera and classical music places her within the small but distinguished community of Dominican operatic singers. The operatic tradition demands years of rigorous vocal training and the mastery of multiple languages, and Rubiera has pursued that demanding path with dedication. Her career in the classical and lyric tradition represents a Dominican voice reaching into one of the most technically exacting and culturally prestigious forms of musical performance. In a country more celebrated internationally for merengue and bachata, Rubiera exemplifies the full breadth of Dominican musical ambition and achievement.","type":"text"}]}]}'::jsonb, 'published', id, 1 FROM artists WHERE slug = 'indhira-rubiera';
+UPDATE artists SET bio_en = 'Indhira Rubiera is a Dominican lyric soprano and classical vocalist based in Santo Domingo whose work in opera and classical music places her within the small but distinguished community of Dominican operatic singers. The operatic tradition demands years of rigorous vocal training and the mastery of multiple languages, and Rubiera has pursued that demanding path with dedication. Her career in the classical and lyric tradition represents a Dominican voice reaching into one of the most technically exacting and culturally prestigious forms of musical performance. In a country more celebrated internationally for merengue and bachata, Rubiera exemplifies the full breadth of Dominican musical ambition and achievement.', bio_es = NULL, name = 'Indhira Rubiera', first_name = 'Indhira', aliases = ARRAY[]::text[], birth_place = 'Santo Domingo', province = 'Distrito Nacional', primary_role = 'singer', primary_genre = 'instrumental-classical', occupations = '[]'::jsonb, artist_tags = ARRAY['secular','instrumental']::text[] WHERE slug = 'indhira-rubiera';
+
+COMMIT;
