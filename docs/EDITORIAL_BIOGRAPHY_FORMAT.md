@@ -139,6 +139,24 @@ quotes and are being retrofitted; they are legacy, not a precedent.
 Write `en` and `es`. The Spanish version is an independent piece of writing, not
 a machine translation of the English.
 
+### Rule 6: No figures that change from day to day
+
+A biography is read for years; a count that was true on the day it was written
+is wrong within weeks. Do not publish:
+
+- views, plays, streams or listens (including "passed a million views"),
+- subscribers, followers or likes on any platform, and monthly listeners,
+- any "has more than N ..." or "over N ..." phrasing built on those figures.
+
+Say what the song or channel *is* and when it appeared; if the reception matters,
+name the event, not the counter (a viral moment, a remix by another artist, a
+chart position on a dated chart).
+
+Keep figures that are fixed to a moment or belong to a closed event: "eight
+million views in two weeks" after release, sales and certifications, tour
+grosses, an award or chart position with its date, the audience of one
+broadcast. If a source gives only a live counter, leave the number out.
+
 ---
 
 ## Linking Other Artists
