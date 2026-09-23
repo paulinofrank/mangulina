@@ -21,6 +21,9 @@ import {
 import {
   revalidateReleasesContainingRecording,
   revalidateSongProfilePaths,
+  revalidateSongProfileByRecordingId,
+  revalidateSongsLinkedToWork,
+  revalidateArtistProfilesByArtistIds,
 } from "@/lib/revalidateCatalogProfiles";
 
 type RecordingPayload = Record<string, unknown>;
@@ -229,6 +232,7 @@ export async function POST(request: Request) {
   const title = recordingData.title.trim();
   const artistName = nullableString(recordingData.artist_name);
   const slug = nullableString(recordingData.slug) ?? slugify([title, artistName].filter(Boolean).join(" "));
+  if (slug.startsWith("work-")) return jsonError("Recording slugs cannot use the work- prefix reserved for composition pages.");
 
   const payload = {
     title,
@@ -249,7 +253,7 @@ export async function POST(request: Request) {
 
   const supabase = createServiceRoleClient();
   const previousSlugResponse = recordingId
-    ? await supabase.from("recordings").select("slug").eq("id", recordingId).maybeSingle()
+    ? await supabase.from("recordings").select("slug,work_id,artist_id").eq("id", recordingId).maybeSingle()
     : null;
   const response = recordingId
     ? await supabase.from("recordings").update(payload).eq("id", recordingId).select("id").maybeSingle()
@@ -265,6 +269,9 @@ export async function POST(request: Request) {
   const previousSlug = previousSlugResponse?.data?.slug as string | null | undefined;
   if (previousSlug && previousSlug !== slug) revalidateSongProfilePaths(previousSlug);
   if (slug) revalidateSongProfilePaths(slug);
+  await revalidateSongProfileByRecordingId(finalRecordingId);
+  if (previousSlugResponse?.data?.work_id) await revalidateSongsLinkedToWork(previousSlugResponse.data.work_id);
+  if (previousSlugResponse?.data?.artist_id) await revalidateArtistProfilesByArtistIds([previousSlugResponse.data.artist_id]);
   await revalidateReleasesContainingRecording(finalRecordingId);
 
   revalidateHomepageData();
@@ -323,7 +330,7 @@ export async function DELETE(request: Request) {
   const supabase = createServiceRoleClient();
   const { data: deletedRecording } = await supabase
     .from("recordings")
-    .select("slug")
+    .select("slug,work_id,artist_id")
     .eq("id", recordingId)
     .maybeSingle();
   const { error } = await supabase.from("recordings").delete().eq("id", recordingId);
@@ -331,6 +338,8 @@ export async function DELETE(request: Request) {
   // Regenerating the deleted slug turns the cached page into a 404. The
   // blockers above guarantee no tracks remain, so no release fan-out needed.
   if (deletedRecording?.slug) revalidateSongProfilePaths(deletedRecording.slug);
+  if (deletedRecording?.work_id) await revalidateSongsLinkedToWork(deletedRecording.work_id);
+  if (deletedRecording?.artist_id) await revalidateArtistProfilesByArtistIds([deletedRecording.artist_id]);
   revalidateHomepageData();
   revalidateHomepageArchiveCounts();
   return NextResponse.json({ ok: true, id: recordingId });

@@ -935,7 +935,25 @@ export const getReleaseBySlug = cache(async function getReleaseBySlug(
     return null;
   }
 
-  if (!release) return null;
+  if (!release) {
+    const { data: redirect } = await supabase
+      .from("release_redirects")
+      .select("canonical_release_id")
+      .eq("old_slug", slug)
+      .maybeSingle();
+
+    if (redirect?.canonical_release_id) {
+      const { data: canRel } = await supabase
+        .from("releases")
+        .select("slug")
+        .eq("id", redirect.canonical_release_id)
+        .maybeSingle();
+      if (canRel?.slug && canRel.slug !== slug) {
+        return getReleaseBySlug(canRel.slug);
+      }
+    }
+    return null;
+  }
 
   const releaseRow = release as unknown as ReleaseRow;
 

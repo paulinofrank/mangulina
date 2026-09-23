@@ -3,7 +3,7 @@ import { unstable_cache } from "next/cache";
 import { genreDefinitions } from "@/lib/genres";
 import { getArchiveCounts } from "@/lib/getSongsByYear";
 import { getPublishedProvinces } from "@/lib/provinces";
-import { getReleaseDecadeCounts, getReleaseTypeCounts } from "@/lib/releaseApi";
+import { workSongSlug } from "@/lib/songIdentity";
 import { buildCanonical, localizedPath, spanishPath } from "@/lib/seo";
 import { getSupabaseClient } from "@/lib/supabase";
 
@@ -454,10 +454,7 @@ export const STATIC_SITEMAP_PATHS: SitemapPath[] = [
   { path: "/producers", priority: 0.8 },
   { path: "/christian", priority: 0.8 },
   { path: "/archive", priority: 0.9 },
-  { path: "/releases", priority: 0.9 },
-  { path: "/releases/most-viewed", priority: 0.8 },
-  { path: "/releases/recent", priority: 0.8 },
-  { path: "/releases/essential", priority: 0.7 },
+  { path: "/songs", priority: 0.9 },
   { path: "/artists/birthdays", priority: 0.7 },
   { path: "/about", priority: 0.6 },
   { path: "/contact", priority: 0.5 },
@@ -483,14 +480,14 @@ async function getActiveGenreSlugs() {
 }
 
 async function buildStaticSitemapPaths(): Promise<SitemapPath[]> {
-  const [{ decadeCounts, yearCounts }, releaseTypeCounts, releaseDecadeCounts, provinces, dbGenreSlugs] =
+  const [{ decadeCounts, yearCounts }, provinces, dbGenreSlugs, workResponse] =
     await Promise.all([
       getArchiveCounts(),
-      getReleaseTypeCounts(),
-      getReleaseDecadeCounts(),
       getPublishedProvinces(),
       getActiveGenreSlugs(),
+      getSupabaseClient().from("works").select("id,slug").eq("status", "published"),
     ]);
+  if (workResponse.error) throw new Error(workResponse.error.message);
 
   const genreSlugs = new Set([
     ...genreDefinitions.map((genre) => genre.slug),
@@ -507,8 +504,7 @@ async function buildStaticSitemapPaths(): Promise<SitemapPath[]> {
       .filter((year) => yearCounts[year] > 0)
       .sort((a, b) => Number(b) - Number(a))
       .map((year) => ({ path: `/archive/${year}`, priority: 0.7 })),
-    ...releaseTypeCounts.map((type) => ({ path: `/releases/${type.slug}`, priority: 0.7 })),
-    ...releaseDecadeCounts.map((decade) => ({ path: `/releases/${decade.slug}`, priority: 0.7 })),
+    ...(workResponse.data ?? []).map((work) => ({ path: `/songs/${workSongSlug(work)}`, priority: 0.7 })),
     ...provinces.map((province) => ({ path: `/provinces/${province.slug}`, priority: 0.8 })),
     ...[...genreSlugs].map((slug) => ({ path: `/genres/${slug}`, priority: 0.7 })),
   ];
@@ -529,6 +525,6 @@ async function buildStaticSitemapPaths(): Promise<SitemapPath[]> {
  */
 export const loadStaticSitemapPaths = unstable_cache(
   buildStaticSitemapPaths,
-  ["public-sitemap-static-v1"],
+  ["public-sitemap-static-v2-songs"],
   { revalidate: SITEMAP_REVALIDATE_SECONDS },
 );

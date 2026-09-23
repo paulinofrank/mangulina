@@ -10,8 +10,13 @@ import {
   isArtistWorkCreditRole,
   normalizeArtistWorkCreditRole,
 } from "@/lib/artistWorkCreditRoles";
-import { groupPortfolioRecordings, type GroupedPortfolio } from "@/lib/artistPortfolioPresentation";
+import {
+  groupPortfolioRecordings,
+  suppressRecordingRolesRepresentedAtWork,
+  type GroupedPortfolio,
+} from "@/lib/artistPortfolioPresentation";
 import type { RecordingIdentitySummary } from "@/types/recordingVersion";
+import { workSongSlug } from "@/lib/songIdentity";
 
 export type PortfolioPerformer = {
   artistId: string | null;
@@ -22,7 +27,8 @@ export type PortfolioPerformer = {
 };
 
 export type PortfolioRecording = {
-  source: "recording" | "editorial";
+  source: "recording" | "editorial" | "work";
+  songHref?: string;
   id: string;
   title: string;
   roles: string[];
@@ -254,7 +260,7 @@ async function getRecordingPortfolio(artistId: string): Promise<PortfolioRecordi
       creditedAs: recordingCredits.find((credit) => credit.credited_as?.trim())?.credited_as ?? null,
       recordingId: recording.id,
       recordingSlug: recording.slug,
-      workId: recording.work_id,
+      workId: work?.id ?? null,
       workTitle: work?.preferred_title ?? null,
       recordingYear: recording.recording_year,
       identityLabel: structuredIdentityLabel(identitySummary, recording.disambiguation),
@@ -324,12 +330,15 @@ async function getEditorialPortfolio(artistId: string): Promise<PortfolioRecordi
 
 async function loadArtistWorksPortfolio(artistId: string): Promise<PortfolioWork[]> {
   try {
-    const [recordingWorks, editorialWorks] = await Promise.all([
+    const [recordingWorks, editorialWorks, compositionWorks] = await Promise.all([
       getRecordingPortfolio(artistId),
       getEditorialPortfolio(artistId),
+      getCompositionPortfolio(artistId),
     ]);
+    const scopedWorks = suppressRecordingRolesRepresentedAtWork([...compositionWorks, ...recordingWorks]);
+    const visibleRecordingWorks = scopedWorks.filter((work) => work.source === "recording");
     const recordingKeys = new Set(
-      recordingWorks.flatMap((work) =>
+      visibleRecordingWorks.flatMap((work) =>
         work.roles.map((role) => `${work.recordingId}|${artistId}|${normalizeArtistWorkCreditRole(role)}`),
       ),
     );
@@ -340,11 +349,55 @@ async function loadArtistWorksPortfolio(artistId: string): Promise<PortfolioWork
       );
       return roles.length ? [{ ...work, roles }] : [];
     });
-    return sortPortfolio(groupPortfolioRecordings([...recordingWorks, ...deduplicatedEditorial]));
+    return sortPortfolio(groupPortfolioRecordings([...scopedWorks, ...deduplicatedEditorial]));
   } catch (error) {
     console.error("Exception in getArtistWorksPortfolio:", error);
     return [];
   }
+}
+
+// Composition contributions are counted once at Work scope, independently of
+// recordings and appearances. Never manufacture a Recording to display a Work.
+async function getCompositionPortfolio(artistId: string): Promise<PortfolioRecording[]> {
+  const { data, error } = await supabase.from("work_credits")
+    .select("id,role,credited_as,created_at,work:works!inner(id,slug,preferred_title,composition_year,status)")
+    .eq("artist_id", artistId).eq("work.status", "published").neq("verification_status", "superseded");
+  if (error) throw error;
+  type Row = { id: string; role: string; credited_as: string | null; created_at: string;
+    work: Related<{ id: string; slug: string | null; preferred_title: string; composition_year: number | null }> };
+  type PublicRecordingRow = { id: string; work_id: string | null; artist_id: string | null;
+    artist_name: string | null; artist_slug: string | null; year: number | null };
+  const rows = (data ?? []) as unknown as Row[];
+  const workIds = [...new Set(rows.map((row) => firstRelated(row.work)?.id).filter((id): id is string => Boolean(id)))];
+  const { data: publicRecordings, error: publicRecordingsError } = workIds.length
+    ? await supabase.from("public_song_recordings")
+      .select("id,work_id,artist_id,artist_name,artist_slug,year")
+      .in("work_id", workIds)
+      .order("year", { ascending: true, nullsFirst: false })
+    : { data: [], error: null };
+  if (publicRecordingsError) console.error("Composition portfolio performer query failed:", publicRecordingsError);
+  const representativeByWork = new Map<string, PublicRecordingRow>();
+  for (const recording of (publicRecordings ?? []) as unknown as PublicRecordingRow[]) {
+    if (recording.work_id && !representativeByWork.has(recording.work_id)) representativeByWork.set(recording.work_id, recording);
+  }
+  const byWork = new Map<string, PortfolioRecording>();
+  for (const row of rows) {
+    const work = firstRelated(row.work);
+    if (!work) continue;
+    const representative = representativeByWork.get(work.id);
+    const existing = byWork.get(work.id);
+    if (existing) { existing.roles = [...new Set([...existing.roles, row.role])]; continue; }
+    byWork.set(work.id, { source: "work", id: `work-credit:${work.id}`, songHref: `/songs/${workSongSlug(work)}`,
+      title: work.preferred_title, roles: [row.role], creditedAs: row.credited_as,
+      recordingId: null, recordingSlug: null, workId: work.id, workTitle: work.preferred_title,
+      recordingYear: null, identityLabel: null, identitySummary: null, duration: null,
+      performers: representative?.artist_name ? [{ artistId: representative.artist_id, artistName: representative.artist_name,
+        artistSlug: representative.artist_slug, creditedAs: null, joinPhrase: null }] : [],
+      releaseId: null, releaseTitle: null, releaseSlug: null, releaseYear: representative?.year ?? null,
+      releaseType: null, releaseCountry: null, releaseGroupTitle: null, creditedWorkId: null,
+      sourceUrl: null, sourceConfidence: null, createdAt: row.created_at });
+  }
+  return [...byWork.values()];
 }
 
 /**
@@ -362,7 +415,7 @@ async function loadArtistWorksPortfolio(artistId: string): Promise<PortfolioWork
 export function getArtistWorksPortfolio(artistId: string): Promise<PortfolioWork[]> {
   return unstable_cache(
     loadArtistWorksPortfolio,
-    ["artist-works-portfolio-v4-public-hierarchy", artistId],
+    ["artist-works-portfolio-v6-performer-names", artistId],
     {
       // Caps the artist profile route's TTL if shortened — see
       // ARTIST_PROFILE_REVALIDATE_SECONDS. Invalidated on demand by

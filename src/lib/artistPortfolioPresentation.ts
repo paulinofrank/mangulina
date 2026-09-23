@@ -2,6 +2,8 @@ export type PortfolioSortFields = { recordingYear: number | null; identityLabel:
 
 export type GroupablePortfolioRecording = PortfolioSortFields & { workId: string | null; workTitle: string | null; roles: string[] };
 
+type ScopedPortfolioContribution = GroupablePortfolioRecording & { source: "work" | "recording" | "editorial" };
+
 export type GroupedPortfolio<T extends GroupablePortfolioRecording> = {
   id: string;
   workId: string | null;
@@ -33,6 +35,30 @@ export function groupPortfolioRecordings<T extends GroupablePortfolioRecording>(
     }
   }
   return [...groups.values()].map((group) => ({ ...group, recordings: group.recordings.sort(comparePortfolioRecordings) }));
+}
+
+/**
+ * Prefer an authoritative Work credit when the same artist/role is also
+ * recorded on one of that Work's Recordings. Distinct Recording roles remain
+ * visible, and legacy Recording-only credits remain visible until editors can
+ * review them. This changes presentation only; it never mutates catalog data.
+ */
+export function suppressRecordingRolesRepresentedAtWork<T extends ScopedPortfolioContribution>(
+  contributions: T[],
+): T[] {
+  const workRoles = new Set(
+    contributions
+      .filter((item) => item.source === "work" && item.workId)
+      .flatMap((item) => item.roles.map((role) => `${item.workId}|${role.trim().toLowerCase().replace(/[\s-]+/g, "_")}`)),
+  );
+
+  return contributions.flatMap((item) => {
+    if (item.source !== "recording" || !item.workId) return [item];
+    const roles = item.roles.filter(
+      (role) => !workRoles.has(`${item.workId}|${role.trim().toLowerCase().replace(/[\s-]+/g, "_")}`),
+    );
+    return roles.length ? [{ ...item, roles }] : [];
+  });
 }
 
 export function formatDurationMilliseconds(milliseconds: number | null | undefined): string | null {

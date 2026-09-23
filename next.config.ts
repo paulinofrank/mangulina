@@ -42,13 +42,17 @@ const nextConfig: NextConfig = {
         destination: "/es/songs/pegame-tu-vicio-antony-santos-6",
         permanent: true,
       },
-      // There is no /genres or /songs index page; the genre hub lives on
-      // /discover and the song browser is /archive. Temporary redirects so a
-      // real index page can take these paths later without cached 308s.
+      // The genre hub remains on Discover; Songs now has its own directory.
       { source: "/genres", destination: "/discover#genres", permanent: false },
       { source: "/es/genres", destination: "/es/discover#genres", permanent: false },
-      { source: "/songs", destination: "/archive", permanent: false },
-      { source: "/es/songs", destination: "/es/archive", permanent: false },
+      ...["", "/en", "/es"].flatMap((locale) => [
+        { source: `${locale}/albums`, destination: `${locale}/songs`, permanent: true },
+        { source: `${locale}/releases`, destination: `${locale}/songs`, permanent: true },
+        ...["albums", "singles", "eps", "compilations", "soundtracks", "live", "recent", "most-viewed", "essential",
+          "1950s", "1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020s"].map((section) => ({
+          source: `${locale}/releases/${section}`, destination: `${locale}/songs`, permanent: true,
+        })),
+      ]),
     ];
   },
 

@@ -268,7 +268,7 @@ test("the static family keeps its own 7d cache entry", () => {
   // cache entry restores the intended TTL without altering the shared helpers.
   assert.match(
     catalogLib,
-    /export const loadStaticSitemapPaths = unstable_cache\(\s*buildStaticSitemapPaths,\s*\["public-sitemap-static-v1"\],\s*\{ revalidate: SITEMAP_REVALIDATE_SECONDS \},?\s*\)/,
+    /export const loadStaticSitemapPaths = unstable_cache\(\s*buildStaticSitemapPaths,\s*\["public-sitemap-static-v2-songs"\],\s*\{ revalidate: SITEMAP_REVALIDATE_SECONDS \},?\s*\)/,
     "static family is wrapped in its own cache entry at the sitemap TTL",
   );
 });

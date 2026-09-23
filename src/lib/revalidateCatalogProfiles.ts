@@ -2,6 +2,7 @@ import { revalidatePath } from "next/cache";
 import { routing } from "@/i18n/routing";
 import { createServiceRoleClient } from "@/lib/supabaseService";
 import { revalidateArtistProfilePaths } from "@/lib/revalidateArtistProfile";
+import { workSongSlug } from "@/lib/songIdentity";
 
 /**
  * Targeted on-demand revalidation for public Song and Release profiles.
@@ -70,14 +71,25 @@ export async function revalidateSongProfileByRecordingId(recordingId: string) {
   try {
     const { data, error } = await createServiceRoleClient()
       .from("recordings")
-      .select("slug")
+      .select("slug,work_id,artist_id")
       .eq("id", recordingId)
       .maybeSingle();
     if (error) throw error;
     if (data?.slug) revalidateSongProfilePaths(data.slug);
+    if (data?.work_id) await revalidateWorkSong(data.work_id);
+    const { data: credits, error: creditError } = await createServiceRoleClient()
+      .from("recording_credits").select("artist_id").eq("recording_id", recordingId);
+    if (creditError) throw creditError;
+    await revalidateArtistProfilesByArtistIds([data?.artist_id, ...(credits ?? []).map((credit) => credit.artist_id)]);
   } catch (error) {
     logLookupFailure(`song lookup for recording ${recordingId} failed`, error);
   }
+}
+
+async function revalidateWorkSong(workId: string) {
+  const { data, error } = await createServiceRoleClient().from("works").select("id,slug").eq("id", workId).maybeSingle();
+  if (error) throw error;
+  if (data) revalidateSongProfilePaths(workSongSlug(data));
 }
 
 /** Revalidates the public Release profile for one release id. */
@@ -105,11 +117,11 @@ export async function revalidateArtistProfilesByArtistIds(
   try {
     const { data, error } = await createServiceRoleClient()
       .from("artists")
-      .select("slug")
+      .select("id,slug")
       .in("id", ids);
     if (error) throw error;
     for (const artist of data ?? []) {
-      if (artist.slug) revalidateArtistProfilePaths(artist.slug);
+      if (artist.slug) revalidateArtistProfilePaths(artist.slug, artist.id);
     }
   } catch (error) {
     logLookupFailure(`artist lookup for ${ids.join(", ")} failed`, error);
@@ -156,12 +168,12 @@ export async function revalidateSongsOnRelease(releaseId: string) {
   if (!releaseId) return;
   try {
     const { data, error } = await createServiceRoleClient()
-      .from("recordings")
-      .select("slug")
+      .from("tracks")
+      .select("recording_id")
       .eq("release_id", releaseId);
     if (error) throw error;
-    for (const recording of data ?? []) {
-      if (recording.slug) revalidateSongProfilePaths(recording.slug);
+    for (const recordingId of new Set((data ?? []).map((track) => track.recording_id).filter(Boolean))) {
+      await revalidateSongProfileByRecordingId(recordingId);
     }
   } catch (error) {
     logLookupFailure(`song fan-out for release ${releaseId} failed`, error);
@@ -176,6 +188,11 @@ export async function revalidateSongsOnRelease(releaseId: string) {
 export async function revalidateSongsLinkedToWork(workId: string) {
   if (!workId) return;
   try {
+    await revalidateWorkSong(workId);
+    const { data: credits, error: creditError } = await createServiceRoleClient()
+      .from("work_credits").select("artist_id").eq("work_id", workId);
+    if (creditError) throw creditError;
+    await revalidateArtistProfilesByArtistIds((credits ?? []).map((credit) => credit.artist_id));
     const { data, error } = await createServiceRoleClient()
       .from("recordings")
       .select("slug")

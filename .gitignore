@@ -27,8 +27,10 @@
 !/scripts/i18n-audit.mjs
 !/scripts/instagram/
 !/scripts/revalidate.ts
+!/scripts/dev-watchpack.cjs
 /ingest
 /backups
+/_discography_backup_*/
 /steps
 /UNUSED
 

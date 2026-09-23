@@ -1,0 +1,10 @@
+BEGIN;
+DELETE FROM public.release_credits WHERE id IN ('2f329810-e9e5-406d-af87-816c77ab590e','3d4b3bfb-c237-453f-a40a-0e15aaf6ef28','2de0d4e7-f793-46de-91d6-fe70307deead','10cebadb-0093-4a6b-820d-ca22599eabe9','3cb759f7-ac73-46c6-b659-5de70e81d98e');
+DELETE FROM public.recording_credits WHERE id IN ('34fc11e6-8f08-4644-bc09-4a2b02e03a7f','8a5d94d1-00d3-4163-b689-cac0a158a7ae','e9d4c195-7f4d-453c-8810-adae82ee38c4');
+UPDATE public.releases SET label=NULL,catalog_number=NULL,metadata=metadata-'recorded_at'-'phonographic_copyright'-'phonographic_copyright_catalog_number'-'credit_source',updated_at=now() WHERE id='b8d7126a-6277-4b5c-939e-8398bc51460f';
+DELETE FROM public.external_contributors WHERE id IN ('f258755d-8ac2-4def-9668-3a92b0e73f10','643b5d20-889e-4572-8b33-2340c444e11e','c9764756-26f8-4ee1-9594-0720268ce44b','a6793e60-d826-4432-8cf0-7e52234d31c2','a127be5f-d6c1-4166-9e95-1e51b6c4711d');
+DROP TABLE IF EXISTS public.release_credits;
+DELETE FROM public.credit_role_scopes WHERE role_id IN (SELECT id FROM public.credit_roles WHERE code IN ('backing_vocalist','graphic_designer','art_director'));
+DELETE FROM public.credit_role_scopes WHERE role_id=(SELECT id FROM public.credit_roles WHERE code='recording_engineer') AND scope='release';
+DELETE FROM public.credit_roles WHERE code IN ('backing_vocalist','graphic_designer','art_director');
+COMMIT;

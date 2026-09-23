@@ -9,6 +9,47 @@
 
 ## 1. Mission
 
+### Release redirect access (2026-09-22)
+
+`public.release_redirects` preserves old release IDs and slugs and maps them to
+`canonical_release_id`. Public release lookup reads this existing table when a
+slug no longer matches a release. RLS permits `SELECT` for `anon` and
+`authenticated`; maintenance remains with the service role/database owner.
+Public roles have no insert, update, delete, truncate, references, or trigger
+privileges. Migration `20260922010000_secure_release_redirects.sql` enables this
+protection without changing any redirect mappings.
+
+`public.recording_slug_redirects` similarly preserves old recording IDs/slugs
+and maps them to `canonical_recording_id` for merged-song lookups. Migration
+`20260922011000_secure_recording_slug_redirects.sql` applies the same public-read,
+service-maintained permissions and RLS protection without changing mappings.
+
+### Public Song projection (2026-09-17)
+
+The public `/songs` vocabulary does not merge Work and Recording entities.
+Published Works use `/songs/work-<work slug or UUID>`; existing Recording URLs
+remain valid. The `work-` prefix is reserved and must not be assigned to new
+Recording slugs, including imports. An unlinked Recording remains a Recording
+until an editor establishes its Work identity; titles and external identifiers
+are never automatic merge keys. Artist discography lists each Recording once,
+regardless of its number of release appearances, and retains distinct versions.
+
+The current authoritative composition relationship is `work_credits`, with
+`work_credit_sources` and the existing assertion/evidence workflow for provenance.
+`credited_works` / `credited_work_credits` remain legacy editorial portfolio data.
+Recording-specific arrangement and production belong to `recording_credits`;
+legacy Work arrangement credits are not automatically reinterpreted. Release
+credits remain at their documented scope; no automatic mastering-credit moves.
+
+`public_song_recordings` and three public read functions project this model;
+they do not create entities, copy credits, or move platform links. Only published
+Works and publicly visible recordings appear. Platform availability is selected
+by exact Recording UUID and approved status. Release `status` describes the
+release (e.g. Official), not editorial publication.
+
+See [the implementation and backup report](DISCOGRAPHY_SONGS_IMPLEMENTATION.md)
+for observed coverage, reversible migration, and unresolved editorial issues.
+
 **Mangulina is the Dominican Music Database.**
 
 Our objective is to preserve, document, and organize Dominican music with historical accuracy and editorial integrity.

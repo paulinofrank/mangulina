@@ -135,6 +135,9 @@
     "musicBrainzId": "ID de MusicBrainz"
   },
   "creditRoles": {
+    "leadPerformer": "Intérprete",
+    "featuredPerformer": "Artista invitado",
+    "guestPerformer": "Intérprete invitado",
     "performedBy": "Interpretado por",
     "vocals": "Voz",
     "composedBy": "Compuesto por",
@@ -160,7 +163,7 @@
     "saxophone": "Saxófono",
     "violin": "Violín",
     "chorus": "Coro",
-    "backingVocals": "Voz de apoyo",
+    "backingVocals": "Coros",
     "backgroundVocals": "Voz de fondo"
   },
   "roles": {
@@ -309,6 +312,7 @@
     }
   },
   "artist": {
+    "composition": "Composición",
     "discography": "Discografía",
     "noDiscography": "Sin discografía disponible para este artista.",
     "worksAndCredits": "Trabajos y Créditos",
@@ -328,6 +332,9 @@
     "countryWorldwide": "Mundial",
     "otherRecordingCredits": "Otros créditos de grabación",
     "recording": "Grabación",
+    "byArtist": "por {artist}",
+    "artistUnknown": "por artista desconocido",
+    "worksRoleTabs": { "label": "Filtrar trabajos por tipo de crédito" },
     "recordingIdentity": {
       "live": "En vivo", "demo": "Demo", "rehearsal": "Ensayo", "other": "Versión alternativa", "rerecording": "Nueva grabación", "remix": "Remezcla", "edit": "Edición", "alternate_take": "Toma alternativa", "medley": "Popurrí"
     },
@@ -1020,9 +1027,13 @@
     "about": {
       "metadataTitle": "Acerca de",
       "metadataDescription": "Mangulina es una base de datos de música dominicana seleccionada y revisada editorialmente, dedicada a preservar y documentar artistas, canciones, publicaciones musicales, créditos, géneros e historia musical dominicana.",
-      "eyebrow": "Base de Datos de Música Dominicana",
-      "title": "Mangulina™",
-      "heroDescription": "Mangulina es una base de datos de música dominicana seleccionada y revisada editorialmente, dedicada a preservar, documentar y celebrar a los artistas, canciones, grabaciones, publicaciones musicales, créditos e historias que dan forma a la música dominicana.",
+      "betaHero": {
+        "badge": "FASE BETA",
+        "title": "Acerca de Mangulina™",
+        "subtitle": "La Base de Datos de Música Dominicana",
+        "paragraphOne": "Mangulina es un ambicioso proyecto dedicado a documentar y preservar la rica historia de la música dominicana. Aunque ya puedes explorar miles de artistas, grabaciones, álbumes, créditos y premios, la base de datos continúa creciendo cada día.",
+        "paragraphThree": "Piensa en Mangulina como un archivo musical vivo, uno que se vuelve más completo con cada visita."
+      },
       "missionTitle": "Nuestra Misión",
       "missionReference": "Construir la referencia más completa y confiable de la música dominicana, preservando su historia, documentando a sus creadores y haciendo que su legado cultural sea más accesible para todos.",
       "missionAudience": "Mangulina sirve a artistas, investigadores, historiadores, coleccionistas, educadores, desarrolladores, periodistas y amantes de la música que buscan información estructurada y confiable sobre la música dominicana.",
@@ -1041,9 +1052,7 @@
         "sources": "Enlaces a plataformas de streaming y fuentes oficiales"
       },
       "principlesTitle": "Principios Editoriales",
-      "principlesReview": "La información de Mangulina se selecciona y revisa editorialmente con intervención humana. Organizamos la información cuidadosamente, verificamos los detalles siempre que es posible y aceptamos correcciones de artistas, representantes, investigadores, coleccionistas, colaboradores y el público.",
       "principlesRole": "Nuestro objetivo no es reemplazar los sitios oficiales de artistas, plataformas de streaming, sellos discográficos, editoras ni titulares de derechos. Buscamos conectar información, mejorar el descubrimiento y ayudar a preservar la historia de la música dominicana.",
-      "principlesEvolution": "La información musical evoluciona constantemente. A medida que aparece nueva información, las entradas pueden actualizarse, ampliarse, corregirse o refinarse.",
       "principleItems": {
         "reviewed": "Información musical seleccionada y revisada editorialmente",
         "corrections": "Aceptamos correcciones de artistas, familias, investigadores y el público",
@@ -1054,13 +1063,11 @@
       "artistNoteMission": "Mangulina se dedica a preservar, documentar y celebrar la música dominicana y a las personas que la crean. Cada artista, compositor, letrista, productor, músico y colaborador incluido en esta base de datos representa una parte importante de esa historia.",
       "artistNoteRights": "No alojamos, vendemos, transmitimos ni distribuimos música. No reclamamos propiedad sobre grabaciones, arte, letras, marcas u otras obras creativas. Nuestra función se limita a organizar y presentar información y metadatos musicales con fines educativos, informativos y de referencia.",
       "artistNoteContact": "Si eres artista, representante, titular de derechos o familiar y deseas actualizar, corregir, enriquecer o conversar sobre información que aparece en el sitio, te invitamos a contactarnos.",
-      "discoveryTitle": "Creado para Descubrir",
-      "discoveryDescription": "Mangulina ayuda a descubrir conexiones en la música dominicana —artistas, grabaciones, publicaciones musicales, géneros, colaboradores, premios y contexto histórico— mediante un catálogo estructurado y fácil de explorar.",
-      "archiveTitle": "Un Archivo Vivo",
-      "archiveDescription": "La música dominicana continúa evolucionando cada día. Mangulina está diseñada como un archivo vivo que crece junto con la música mediante investigación, contribuciones de la comunidad, colaboración de artistas y revisión editorial continua.",
       "involvedTitle": "Participa",
       "involvedWelcome": "Mangulina está abierta a la colaboración de artistas, investigadores, historiadores, coleccionistas, profesionales de la música y aficionados que comparten el interés de preservar y documentar el patrimonio musical dominicano.",
       "involvedInvitation": "Si deseas enviar correcciones, aportar información, enriquecer perfiles de artistas, proporcionar investigación histórica o convertirte en colaborador, nos encantaría saber de ti.",
+      "involvedReturn": "Te invitamos a regresar con frecuencia. Cada semana descubrirás nuevos artistas, más grabaciones, créditos ampliados, información histórica restaurada y nuevas funciones para explorar la música dominicana como nunca antes.",
+      "involvedThanks": "Gracias por acompañarnos desde esta etapa inicial y por formar parte de la construcción de La Base de Datos de Música Dominicana.",
       "contactButton": "Contactar a Mangulina",
       "contributorsButton": "Colaboradores",
       "dmcaButton": "Derechos de Autor y DMCA"
@@ -1115,16 +1122,6 @@
       "eyebrow": "Explora Mangulina",
       "title": "Descubre la Música Dominicana",
       "description": "Explora la Base de Datos de Música Dominicana a través de artistas, canciones, álbumes, géneros, regiones, creadores, cumpleaños y categorías culturales.",
-      "betaHero": {
-        "badge": "FASE BETA",
-        "title": "Bienvenido a Mangulina",
-        "subtitle": "La Base de Datos de Música Dominicana",
-        "paragraphOne": "Mangulina es un ambicioso proyecto dedicado a documentar y preservar la rica historia de la música dominicana. Aunque ya puedes explorar miles de artistas, grabaciones, álbumes, créditos y premios, la base de datos continúa creciendo cada día.",
-        "paragraphTwo": "Encontrarás nuevas biografías, discografías, créditos de compositores y productores, imágenes, videos, premios e información histórica agregándose de forma constante. Además, las páginas existentes se revisan y mejoran continuamente para ofrecer la información más precisa posible.",
-        "paragraphThree": "Piensa en Mangulina como un archivo musical vivo, uno que se vuelve más completo con cada visita.",
-        "invitation": "✨ Te invitamos a regresar con frecuencia. Cada semana descubrirás nuevos artistas, más grabaciones, créditos ampliados, información histórica restaurada y nuevas funciones para explorar la música dominicana como nunca antes.",
-        "thanks": "Gracias por acompañarnos desde esta etapa inicial y por formar parte de la construcción de La Base de Datos de Música Dominicana."
-      },
       "artistsTitle": "Artistas",
       "creatorsTitle": "Creadores",
       "musicTitle": "Música",
@@ -1136,7 +1133,7 @@
       "links": {
         "singers": "Cantantes", "christianArtists": "Artistas Cristianos", "legends": "Leyendas", "emergingArtists": "Artistas Emergentes", "mostAwarded": "Artistas Más Premiados", "birthdays": "Cumpleaños", "instrumentalClassical": "Instrumental y Clásica", "groups": "Bandas, Orquestas y Dúos",
         "composers": "Compositores", "songwriters": "Autores de Canciones", "lyricists": "Letristas", "arrangers": "Arreglistas", "musicalDirectors": "Directores Musicales", "djs": "DJs", "musicians": "Músicos", "producers": "Productores",
-        "songs": "Canciones", "releases": "Álbumes", "genres": "Géneros", "home": "Inicio", "about": "Acerca de", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de privacidad", "terms": "Términos de uso", "dmca": "Derechos de Autor y DMCA"
+        "songs": "Canciones", "releases": "Álbumes", "genres": "Géneros", "home": "Inicio", "about": "Acerca de Mangulina", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de privacidad", "terms": "Términos de uso", "dmca": "Derechos de Autor y DMCA"
       },
       "genreLabels": {"worship": "Adoración", "merengue": "Merengue", "bachata": "Bachata", "urban": "Urbano", "salsa": "Salsa", "ballads": "Baladas", "pop": "Pop", "rock": "Rock", "reggae": "Reggae", "jazz": "Jazz", "electronic": "Electrónica", "instrumental": "Instrumental", "folklore": "Folclore", "fusion": "Fusión"}
     },
@@ -1262,7 +1259,7 @@
       "removeFailed": "No se pudo eliminar el crédito.",
       "reorderFailed": "No se pudo guardar el nuevo orden de créditos.",
       "roles": {
-        "lead_performer": "Intérprete principal", "featured_performer": "Artista invitado destacado", "guest_performer": "Intérprete invitado", "instrumentalist": "Instrumentista", "vocalist": "Vocalista", "choir": "Coro", "orchestra": "Orquesta", "guitar": "Guitarra", "drums": "Batería", "piano": "Piano", "bass": "Bajo", "trumpet": "Trompeta", "saxophone": "Saxofón", "trombone": "Trombón", "strings": "Cuerdas", "horns": "Metales", "percussion": "Percusión", "conductor": "Director", "producer": "Productor", "engineer": "Ingeniero", "recording_engineer": "Ingeniero de grabación", "mixing_engineer": "Ingeniero de mezcla", "mixing": "Mezcla", "mastering_engineer": "Ingeniero de masterización", "mastering": "Masterización", "session_musician": "Músico de sesión", "arranger": "Arreglista", "composer": "Compositor"
+        "lead_performer": "Intérprete", "featured_performer": "Artista invitado destacado", "guest_performer": "Intérprete invitado", "instrumentalist": "Instrumentista", "vocalist": "Vocalista", "choir": "Coro", "orchestra": "Orquesta", "guitar": "Guitarra", "drums": "Batería", "piano": "Piano", "bass": "Bajo", "trumpet": "Trompeta", "saxophone": "Saxofón", "trombone": "Trombón", "strings": "Cuerdas", "horns": "Metales", "percussion": "Percusión", "conductor": "Director", "producer": "Productor", "engineer": "Ingeniero", "recording_engineer": "Ingeniero de grabación", "mixing_engineer": "Ingeniero de mezcla", "mixing": "Mezcla", "mastering_engineer": "Ingeniero de masterización", "mastering": "Masterización", "session_musician": "Músico de sesión", "arranger": "Arreglista", "composer": "Compositor"
       }
     },
     "tools": {
@@ -1984,6 +1981,60 @@
       "recordingTitle": "Escribe un título de grabación…",
       "url": "https://…",
       "labelExample": "ej. Deezer"
+    }
+  },
+  "songCatalog": {
+    "workCredits": "Créditos de la composición",
+    "recordingCredits": "Créditos de la grabación",
+    "fullCredits": {
+      "eyebrow": "Créditos",
+      "title": "Personal completo",
+      "count": "{count, plural, one {# crédito} other {# créditos}}",
+      "people": "{count, plural, one {# persona} other {# personas}}",
+      "composition": "Composición",
+      "performance": "Voces y músicos",
+      "production": "Arreglos y producción",
+      "engineering": "Grabación e ingeniería"
+    },
+    "releaseDocumentation": "Información del lanzamiento",
+    "title": "Canciones",
+    "description": "Explora canciones, sus grabaciones documentadas, créditos creativos e historial de lanzamientos.",
+    "search": "Buscar canciones",
+    "empty": "No se encontraron canciones.",
+    "pagination": "Páginas del directorio de canciones",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "page": "Página {page} de {total}",
+    "work": "Composición",
+    "workExplanation": "Una composición puede tener varias grabaciones. Cada versión tiene sus propios intérpretes, créditos y enlaces de plataformas.",
+    "workPending": "La composición aún no ha sido identificada públicamente. Esta entrada documenta una grabación; no se presupone una relación con canciones de títulos similares.",
+    "compositionYear": "Año de composición",
+    "publicationYear": "Año de publicación",
+    "language": "Idioma",
+    "allVersions": "Ver la composición y todas sus grabaciones documentadas",
+    "versions": "Grabaciones / versiones",
+    "noRecordings": "Esta composición aún no tiene grabaciones públicas documentadas.",
+    "versionPending": "Detalles de la versión aún no documentados",
+    "firstRelease": "Primer año documentado: {year}",
+    "appearances": "Apariciones en lanzamientos",
+    "trackPosition": "Disco {disc} · Pista {track}",
+    "releasedAs": "Título en el lanzamiento: {title}",
+    "noAppearances": "Aún no hay apariciones en lanzamientos documentadas.",
+    "recordingDetails": "Historia, medios y fuentes de esta grabación",
+    "performance": {
+      "studio": "Estudio",
+      "live": "En vivo",
+      "demo": "Demo",
+      "rehearsal": "Ensayo",
+      "other": "Otra interpretación"
+    },
+    "derivation": {
+      "rerecording": "Nueva grabación",
+      "remix": "Remix",
+      "edit": "Edición",
+      "alternate_take": "Toma alternativa",
+      "medley": "Medley",
+      "other": "Otra versión derivada"
     }
   }
 }

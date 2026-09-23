@@ -1,7 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
-import { formatDurationMilliseconds, groupPortfolioRecordings, type GroupablePortfolioRecording } from "../../src/lib/artistPortfolioPresentation";
+import {
+  formatDurationMilliseconds,
+  groupPortfolioRecordings,
+  suppressRecordingRolesRepresentedAtWork,
+  type GroupablePortfolioRecording,
+} from "../../src/lib/artistPortfolioPresentation";
 
 const recording = (overrides: Partial<GroupablePortfolioRecording>): GroupablePortfolioRecording => ({ id: "recording-a", workId: "work-a", workTitle: "Colegiala", title: "Colegiala", roles: ["arranger"], recordingYear: null, identityLabel: null, releaseYear: null, ...overrides });
 
@@ -25,6 +30,19 @@ test("unlinked Recordings are never grouped by normalized title", () => {
   assert.equal(result.length, 2);
 });
 
+test("Work credits suppress only matching legacy Recording roles", () => {
+  const result = suppressRecordingRolesRepresentedAtWork([
+    { ...recording({ id: "composition", roles: ["composer"] }), source: "work" as const },
+    { ...recording({ id: "recording", roles: ["composer", "producer"] }), source: "recording" as const },
+    { ...recording({ id: "legacy", workId: "work-b", roles: ["lyricist"] }), source: "recording" as const },
+  ]);
+  assert.deepEqual(result.map((item) => [item.id, item.roles]), [
+    ["composition", ["composer"]],
+    ["recording", ["producer"]],
+    ["legacy", ["lyricist"]],
+  ]);
+});
+
 test("duration formatter handles catalog milliseconds consistently", () => {
   assert.equal(formatDurationMilliseconds(null), null);
   assert.equal(formatDurationMilliseconds(45_000), "0:45");
@@ -33,11 +51,15 @@ test("duration formatter handles catalog milliseconds consistently", () => {
   assert.equal(formatDurationMilliseconds(3_735_000), "1:02:15");
 });
 
-test("public portfolio uses neutral recording language and a compact hierarchy", () => {
-  const component = readFileSync("src/components/organisms/ArtistWorksPortfolio.tsx", "utf8");
-  assert.match(component, /t\("recording"\)/);
-  assert.match(component, /t\("otherRecordingCredits"\)/);
-  assert.doesNotMatch(component, /unlinkedRecordingCreditsDescription/);
-  assert.doesNotMatch(component, /sm:grid-cols-2/);
-  assert.doesNotMatch(component, /return recording\.releaseTitle/);
+test("public portfolio uses role tabs and a title-by-artist list", () => {
+  const shell = readFileSync("src/components/organisms/ArtistWorksPortfolio.tsx", "utf8");
+  const tabs = readFileSync("src/components/organisms/ArtistWorksTabs.tsx", "utf8");
+  assert.match(shell, /ArtistWorksTabs/);
+  assert.match(tabs, /role="tablist"/);
+  assert.match(tabs, /"composer"/);
+  assert.match(tabs, /"lyricist"/);
+  assert.match(tabs, /"arranger"/);
+  assert.match(tabs, /t\("byArtist"/);
+  assert.doesNotMatch(tabs, /font-(?:bold|semibold|black)/);
+  assert.doesNotMatch(tabs, /Composition →/);
 });

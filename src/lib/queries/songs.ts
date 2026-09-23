@@ -20,6 +20,7 @@ export type SongRecord = {
   has_cover_image?: boolean | null;
   release_title?: string | null;     // view: release_title (album)
   release_slug?: string | null;      // fetched separately from releases.slug
+  recording_slug?: string | null;    // fetched from recordings.slug
   label?: string | null;             // view: label
   duration?: number | null;          // view: duration (milliseconds)
   country?: string | null;           // view: country (ISO code)
@@ -231,6 +232,13 @@ export async function getSongById(id: string): Promise<SongRecord | null> {
     song.has_cover_image = rel?.has_cover_image === true;
   }
 
+  const { data: rec } = await supabase
+    .from("recordings")
+    .select("slug")
+    .eq("id", song.recording_id)
+    .maybeSingle();
+  song.recording_slug = rec?.slug ?? null;
+
   const editorial = await getRecordingEditorial(song.recording_id);
   return applyEditorial(song, editorial);
 }
@@ -245,6 +253,9 @@ export type RawCredit = {
   display_name: string;
   artist_slug: string | null;
   country: string | null;
+  role_family?: "composition" | "performance" | "production" | "arrangement" | "engineering" | "direction" | null;
+  credit_detail?: string | null;
+  instruments?: { code: string; name_en: string; name_es: string }[];
 };
 
 export async function getSongCredits(id: string): Promise<RawCredit[]> {
@@ -347,6 +358,17 @@ export const getSongBySlug = cache(async function getSongBySlug(
   // Legacy slug aliases
   if (clean === "pagame-tu-vicio-antony-santos") {
     return getSongBySlug("pegame-tu-vicio-antony-santos-6");
+  }
+
+  // Check recording_slug_redirects for merged recordings
+  const { data: redir } = await supabase
+    .from("recording_slug_redirects")
+    .select("canonical_recording_id")
+    .eq("old_slug", clean)
+    .maybeSingle();
+
+  if (redir?.canonical_recording_id) {
+    return getSongById(redir.canonical_recording_id);
   }
 
   return null;

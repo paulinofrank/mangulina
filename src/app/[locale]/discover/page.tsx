@@ -1,6 +1,5 @@
 import { Link } from "@/i18n/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Sparkles } from "lucide-react";
 import JsonLd from "@/components/seo/JsonLd";
 
 import { getArchiveDecades } from "@/lib/archivePeriods";
@@ -41,7 +40,7 @@ const CREATOR_LINKS = [
 ];
 
 const MUSIC_LINKS = [
-  { key: "songs", href: "/archive" }, { key: "releases", href: "/releases" }, { key: "genres", href: "#genres" },
+  { key: "songs", href: "/songs" }, { key: "genres", href: "#genres" },
 ];
 
 const GENRES = [
@@ -102,7 +101,7 @@ export default async function DiscoverPage({
   );
 
   return (
-    <main className="mx-auto max-w-5xl px-6 pb-10 pt-20 sm:pb-16 sm:pt-32">
+    <main className="mx-auto max-w-5xl px-6 pb-10 pt-20 sm:pb-16 sm:pt-23">
       <JsonLd
         data={[
           collectionPageSchema({
@@ -116,34 +115,17 @@ export default async function DiscoverPage({
           ]),
         ]}
       />
-      <header className="relative mb-10 overflow-hidden rounded-3xl border border-amber-300/60 bg-gradient-to-br from-amber-50 via-white to-orange-50 p-7 shadow-sm sm:p-10 lg:p-12 dark:border-amber-400/20 dark:from-amber-950/40 dark:via-gray-950 dark:to-orange-950/30">
-        <Sparkles
-          aria-hidden="true"
-          className="absolute right-7 top-7 size-9 text-amber-500/25 sm:right-10 sm:top-10 sm:size-12 dark:text-amber-300/20"
-          strokeWidth={1.5}
-        />
-        <div className="relative max-w-4xl">
-          <span className="inline-flex rounded-full border border-amber-500/30 bg-amber-400/15 px-3 py-1 text-xs font-bold tracking-widest text-amber-900 dark:border-amber-300/25 dark:bg-amber-300/10 dark:text-amber-200">
-            {t("betaHero.badge")}
-          </span>
-          <h1 className="mt-6 text-4xl font-bold tracking-tight text-[#002D62] sm:text-5xl lg:text-6xl dark:text-white">
-            {t("betaHero.title")}
-          </h1>
-          <p className="mt-3 text-xl font-semibold text-[#8B0000] sm:text-2xl dark:text-amber-300">
-            {t("betaHero.subtitle")}
-          </p>
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-gray-700 sm:text-lg dark:text-gray-200">
-            <p>{t("betaHero.paragraphOne")}</p>
-            <p>{t("betaHero.paragraphTwo")}</p>
-            <p className="font-medium text-[#002D62] dark:text-amber-50">
-              {t("betaHero.paragraphThree")}
-            </p>
-            <p className="rounded-2xl border border-amber-400/30 bg-white/70 px-5 py-4 font-medium text-amber-950 dark:border-amber-300/15 dark:bg-white/5 dark:text-amber-100">
-              {t("betaHero.invitation")}
-            </p>
-            <p>{t("betaHero.thanks")}</p>
-          </div>
-        </div>
+      {/* Hero */}
+      <header className="mb-10 rounded-3xl border border-black/10 bg-white p-8 shadow-sm sm:p-12">
+        <SectionEyebrow>{t("eyebrow")}</SectionEyebrow>
+
+        <h1 className="mb-5 text-4xl font-bold tracking-tight text-[#002D62] sm:text-5xl">
+          {t("title")}
+        </h1>
+
+        <p className="max-w-3xl text-lg leading-relaxed text-gray-700 sm:text-xl">
+          {t("description")}
+        </p>
       </header>
 
       <div className="grid gap-6 md:grid-cols-2">
@@ -157,21 +139,9 @@ export default async function DiscoverPage({
           <LinkGrid links={CREATOR_LINKS} label={(key) => t(`links.${key}`)} />
         </section>
 
-        <section className="rounded-3xl bg-[#002D62] p-7 text-white shadow-xl sm:p-8">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-white/70">
-            {t("musicTitle")}
-          </p>
-          <div className="grid gap-3">
-            {MUSIC_LINKS.map((link) => (
-              <Link
-                key={link.key}
-                href={link.href}
-                className="rounded-2xl border border-white/15 bg-white/10 px-5 py-4 font-medium text-white transition hover:border-white/30 hover:bg-white/15"
-              >
-                {t(`links.${link.key}`)}
-              </Link>
-            ))}
-          </div>
+        <section className="rounded-3xl border border-black/10 bg-white p-7 shadow-sm sm:p-8">
+          <SectionEyebrow>{t("musicTitle")}</SectionEyebrow>
+          <LinkGrid links={MUSIC_LINKS} label={(key) => t(`links.${key}`)} />
         </section>
 
         <section className="rounded-3xl border border-black/10 bg-white p-7 shadow-sm sm:p-8">

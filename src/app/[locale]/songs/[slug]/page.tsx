@@ -1,44 +1,35 @@
 // app/songs/[slug]/page.tsx
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { setRequestLocale } from "next-intl/server";
+import { redirect } from "@/i18n/navigation";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import SongVersionsSection from "@/components/organisms/SongVersionsSection";
+import { getSongContext } from "@/lib/queries/songCatalog";
+import { workSongSlug } from "@/lib/songIdentity";
 import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 import { createPageMetadata, songSeoTitle } from "@/lib/seo";
 
 import MainWrapper from "@/components/layout/MainWrapper";
 import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
 import PageSection from "@/components/layout/PageSection";
-import RelatedSongsSection from "@/components/organisms/RelatedSongsSection";
-import SongArtistPreviewCard from "@/components/organisms/SongArtistPreviewCard";
 import SongAboutSection from "@/components/organisms/SongAboutSection";
-import SongCreditsSection from "@/components/organisms/SongCreditsSection";
 import SongFunFactsSection from "@/components/organisms/SongFunFactsSection";
 import SongHero from "@/components/organisms/SongHero";
 import SongLyricsSection from "@/components/organisms/SongLyricsSection";
 import SongMediaSection from "@/components/organisms/SongMediaSection";
-import SongPlatformLinksSection, {
-  type SongPlatformLink,
-} from "@/components/organisms/SongPlatformLinksSection";
 import SongSlangSection from "@/components/organisms/SongSlangSection";
 import SongSourcesSection from "@/components/organisms/SongSourcesSection";
 import JsonLd from "@/components/seo/JsonLd";
 
 import { getVisiblePlatformLinks } from "@/lib/platformLinks";
 import {
-  getMoreSongsByArtist,
-  getRelatedSongs,
   getSongBySlug,
-  getSongCredits,
   getSongFunFacts,
   getSongMedia,
-  getSongPlatformLinks,
   getSongSlang,
   getSongSources,
-  type RawCredit,
-  type SongRecord,
 } from "@/lib/queries/songs";
 import { absoluteUrl, breadcrumbSchema, isoDuration } from "@/lib/structuredData";
-import { getPublishedEditorialPlainText } from "@/lib/editorial/publicData";
 
 type PageProps = {
   params: Promise<{ slug: string; locale: string }>;
@@ -62,14 +53,6 @@ export function generateStaticParams() {
   return [];
 }
 
-type SongArtistPreview = {
-  id: string;
-  slug: string;
-  name: string;
-  biography: string | null;
-  views: number | null;
-};
-
 function cleanSongParam(raw: string) {
   return decodeURIComponent(raw).trim().replace(/^"|"$/g, "");
 }
@@ -82,68 +65,18 @@ function pick<T>(...values: (T | null | undefined)[]): T | null {
   return null;
 }
 
-function getYouTubeUrl(song: SongRecord): string | null {
-  return (
-    song.official_video_url ??
-    song.youtube_url ??
-    (song.youtube_id ? `https://www.youtube.com/watch?v=${song.youtube_id}` : null) ??
-    null
-  );
-}
-
-/**
- * Merge platform links from recording_platform_links (curated, shown first)
- * with legacy URL fields on the song record (shown only if no DB link exists
- * for that platform).
- */
-function mergePlatformLinks(
-  song: SongRecord,
-  dbLinks: { platform: string; url: string; label: string | null; link_type: string }[],
-): SongPlatformLink[] {
-  const dbPlatforms = new Set(dbLinks.map((l) => l.platform.toLowerCase()));
-  const youtubeUrl = getYouTubeUrl(song);
-
-  const legacyLinks: SongPlatformLink[] = [
-    { platform: "spotify",       url: song.spotify_url },
-    { platform: "apple_music",   url: song.apple_music_url },
-    { platform: "youtube_music", url: song.youtube_music_url },
-    { platform: "amazon_music",  url: song.amazon_music_url },
-    { platform: "deezer",        url: song.deezer_url },
-    { platform: "tidal",         url: song.tidal_url },
-    { platform: "soundcloud",    url: song.soundcloud_url },
-    { platform: "bandcamp",      url: song.bandcamp_url },
-    {
-      platform: "youtube",
-      label: "Watch on YouTube",
-      url: youtubeUrl,
-    },
-  ].filter((l) => !dbPlatforms.has(l.platform.toLowerCase()));
-
-  const dbFormatted: SongPlatformLink[] = dbLinks.map((l) => ({
-    platform: l.platform,
-    url:      l.url,
-    label:    l.label ?? undefined,
-  }));
-
-  return [...dbFormatted, ...legacyLinks];
-}
-
-function normalizeCredits(credits: RawCredit[]) {
-  return credits.map((credit) => ({
-    role: credit.role ?? "Credit",
-    name: credit.display_name || "Unknown",
-    slug: credit.identity_type === "artist" ? credit.artist_slug : null,
-    externalContributorId:
-      credit.identity_type === "external_contributor" ? credit.identity_id : null,
-    country: credit.identity_type === "external_contributor" ? credit.country : null,
-  }));
-}
-
 // ── Metadata ──────────────────────────────────────────────────────────────────
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug, locale } = await params;
   const cleanSlug = cleanSongParam(slug);
+
+  if (cleanSlug.startsWith("work-")) {
+    const context = await getSongContext("work", cleanSlug.slice(5));
+    const t = await getTranslations({ locale, namespace: "songCatalog" });
+    return createPageMetadata({ title: context?.work?.title ?? t("title"),
+      description: t("description"), path: `/songs/${cleanSlug}`, locale, noIndex: !context?.work });
+  }
 
   const song = await getSongBySlug(cleanSlug);
   if (!song) {
@@ -180,23 +113,36 @@ export default async function SongProfilePage({ params }: PageProps) {
   setRequestLocale(locale);
   const cleanSlug = cleanSongParam(slug);
 
+  if (cleanSlug.startsWith("work-")) {
+    const context = await getSongContext("work", cleanSlug.slice(5));
+    if (!context?.work) notFound();
+    return <MainWrapper><PageSection className="mt-4">
+      <div className="mx-auto max-w-5xl space-y-5">
+        <h1 className="text-3xl font-semibold text-(--color-flagblue)">{context.work.title}</h1>
+        <JsonLd data={{ "@context": "https://schema.org", "@type": "MusicComposition",
+          name: context.work.title, url: absoluteUrl(`/songs/${workSongSlug(context.work)}`,locale),
+          recordedAs: context.recordings.map((recording) => ({ "@type": "MusicRecording", name: recording.title,
+            url: absoluteUrl(`/songs/${workSongSlug(context.work!)}#recording-${recording.id}`,locale) })) }} />
+        <SongVersionsSection context={context} workPage />
+      </div>
+    </PageSection></MainWrapper>;
+  }
+
   const song = await getSongBySlug(cleanSlug);
   if (!song) notFound();
+  if (song.recording_slug && song.recording_slug !== cleanSlug) {
+    redirect({ href: `/songs/${song.recording_slug}`, locale });
+  }
 
   const recordingId = song.recording_id;
+  const songContext = await getSongContext("recording", recordingId);
 
-  const [credits, funFacts, slang, sources, media, related, dbPlatformLinks, moreSongs, artistRow] =
+  const [funFacts, slang, sources, media, artistRow] =
     await Promise.all([
-      getSongCredits(recordingId),
       getSongFunFacts(recordingId),
       getSongSlang(recordingId),
       getSongSources(recordingId),
       getSongMedia(recordingId),
-      getRelatedSongs(recordingId),
-      getSongPlatformLinks(recordingId),
-      song.artist_id
-        ? getMoreSongsByArtist(song.artist_id, recordingId, 12)
-        : Promise.resolve([]),
       song.artist_id
         ? import("@/lib/supabase").then(({ supabase }) =>
             supabase
@@ -209,10 +155,7 @@ export default async function SongProfilePage({ params }: PageProps) {
         : Promise.resolve(null),
     ]);
 
-  const artistPreview = artistRow
-    ? { ...(artistRow as Omit<SongArtistPreview, "biography">), biography: await getPublishedEditorialPlainText(song.artist_id!, "en") }
-    : null;
-  const artistSlug = artistPreview?.slug ?? null;
+  const artistSlug = artistRow?.slug ?? null;
 
   // Resolve the correctly named view fields with fallbacks for legacy names
   const genre       = pick(song.genre_name,          song.genre);
@@ -226,9 +169,7 @@ export default async function SongProfilePage({ params }: PageProps) {
     ? getPublicReleaseCoverUrl(song.release_id, 300)
     : null;
 
-  const normalizedCredits = normalizeCredits(credits);
-  const platformLinks     = mergePlatformLinks(song, dbPlatformLinks);
-  const visiblePlatformLinks = getVisiblePlatformLinks(platformLinks);
+  const visiblePlatformLinks = getVisiblePlatformLinks(songContext?.recordings[0]?.platform_links ?? []);
   const canShowLyrics     = Boolean(song.lyrics && song.lyrics_authorized === true);
   const sameAs = visiblePlatformLinks
     .map((link) => link.url)
@@ -267,14 +208,14 @@ export default async function SongProfilePage({ params }: PageProps) {
           recordingSchema,
           breadcrumbSchema([
             { name: "Home", path: "/" },
-            { name: "Songs", path: "/archive" },
+            { name: "Songs", path: "/songs" },
             { name: song.recording_title, path: songPath },
           ], locale),
         ]}
       />
       <AnalyticsPageView eventType="recording_view" entityId={recordingId} />
       <PageSection className="mt-4">
-        <div className="grid items-start gap-5 xl:grid-cols-[minmax(0,1.45fr)_minmax(320px,0.85fr)]">
+        <div className="mx-auto max-w-5xl">
           <SongHero
             title={song.recording_title}
             artist={song.artist_name}
@@ -292,22 +233,10 @@ export default async function SongProfilePage({ params }: PageProps) {
             shareTitle={songSeoTitle(song, locale)}
           />
 
-          <div className="space-y-5">
-            <SongPlatformLinksSection recordingId={recordingId} links={visiblePlatformLinks} />
-            <SongArtistPreviewCard artist={artistPreview} />
-          </div>
-        </div>
+          {songContext && <div className="mt-5"><SongVersionsSection context={songContext}
+            labelName={labelName ?? undefined} releaseInfo={song.release_info ?? undefined} /></div>}
 
-        <div className="mt-5 grid items-start gap-5 xl:grid-cols-[minmax(0,1.45fr)_minmax(320px,0.85fr)]">
-          <aside className="order-1 space-y-5 xl:order-2">
-            <SongCreditsSection
-              credits={normalizedCredits}
-              labelName={labelName ?? undefined}
-              releaseInfo={song.release_info ?? undefined}
-            />
-          </aside>
-
-          <div className="order-2 space-y-5 xl:order-1">
+          <div className="mt-5 space-y-5">
             <div className="grid items-start gap-5 xl:grid-cols-2">
               <SongAboutSection
                 about={song.song_about}
@@ -332,14 +261,6 @@ export default async function SongProfilePage({ params }: PageProps) {
 
             <SongSourcesSection sources={sources} />
           </div>
-        </div>
-
-        <div className="mt-5">
-          <RelatedSongsSection
-            songs={related}
-            moreSongs={moreSongs}
-            artistName={song.artist_name}
-          />
         </div>
       </PageSection>
     </MainWrapper>

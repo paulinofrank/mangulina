@@ -55,6 +55,20 @@ For development vs. production builds, you can check the build environment and a
 
 ## Testing Development Build
 
+### Windows drive-root watcher workaround
+
+Use `npm run dev` to start the development server. Next.js 16.3.1 watches the
+project's parent directory to detect project deletion. For a checkout such as
+`C:\Mangulina`, Watchpack scans `C:\` and can report `EINVAL` for protected
+Windows system files.
+
+The dev command preloads `scripts/dev-watchpack.cjs`, which adds an ignore filter
+for drive-root swap, hibernation, and dump-stack files on Windows. It preserves
+existing watcher filters, config reloads, and directory-deletion detection.
+The preload is inherited by Next.js restart workers; production commands and
+non-Windows watchers are unaffected. Restart an already running dev server to
+apply it. Recheck whether this workaround is needed when upgrading Next.js.
+
 The development server should work without issues:
 
 ```bash

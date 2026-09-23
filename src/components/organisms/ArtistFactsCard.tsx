@@ -52,6 +52,20 @@ function formatDate(date: string | null, locale: string) {
     .toUpperCase();
 }
 
+function calculateAge(birthDate: string, referenceDate: string): number | null {
+  const birth = new Date(`${birthDate}T00:00:00`);
+  const reference = new Date(`${referenceDate}T00:00:00`);
+  if (Number.isNaN(birth.getTime()) || Number.isNaN(reference.getTime())) return null;
+
+  let age = reference.getFullYear() - birth.getFullYear();
+  const monthDiff = reference.getMonth() - birth.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && reference.getDate() < birth.getDate())) {
+    age--;
+  }
+
+  return age;
+}
+
 function formatLabel(value: string | null | undefined) {
   if (!value) return null;
 
@@ -373,6 +387,13 @@ export default function ArtistFactsCard({
   const realName = getRealName(artist);
   const birthDate = formatDate(artist.date_of_birth, locale);
   const deathDate = formatDate(artist.date_of_death, locale);
+  const isDeceased = Boolean(artist.date_of_death);
+  const ageReferenceDate = isDeceased
+    ? artist.date_of_death
+    : new Date().toISOString().slice(0, 10);
+  const age = artist.date_of_birth && ageReferenceDate
+    ? calculateAge(artist.date_of_birth, ageReferenceDate)
+    : null;
   const birthPlace = getBirthPlace(artist);
   const originLabel = isSoloArtist
     ? t("artist.placeOfBirth")
@@ -433,9 +454,35 @@ export default function ArtistFactsCard({
 
         {isSoloArtist && <Field label={t("artist.realName")}>{realName}</Field>}
 
-        {isSoloArtist && <Field label={t("artist.dateOfBirth")}>{birthDate}</Field>}
+        {isSoloArtist && (
+          <Field label={t("artist.dateOfBirth")}>
+            {birthDate && (
+              <>
+                {birthDate}
+                {!isDeceased && age !== null && (
+                  <span className="ml-1.5 text-xs font-normal text-gray-500">
+                    ({t("status.yearsOld", { age })})
+                  </span>
+                )}
+              </>
+            )}
+          </Field>
+        )}
 
-        {isSoloArtist && <Field label={t("artist.dateOfDeath")}>{deathDate}</Field>}
+        {isSoloArtist && (
+          <Field label={t("artist.dateOfDeath")}>
+            {deathDate && (
+              <>
+                {deathDate}
+                {age !== null && (
+                  <span className="ml-1.5 text-xs font-normal text-gray-500">
+                    ({t("status.yearsOld", { age })})
+                  </span>
+                )}
+              </>
+            )}
+          </Field>
+        )}
 
         {!isSoloArtist && (
           <Field label={t("artist.formationYear")}>{artist.formation_year}</Field>

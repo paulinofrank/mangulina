@@ -135,6 +135,9 @@
     "musicBrainzId": "MusicBrainz ID"
   },
   "creditRoles": {
+    "leadPerformer": "Lead performer",
+    "featuredPerformer": "Featured performer",
+    "guestPerformer": "Guest performer",
     "performedBy": "Performed by",
     "vocals": "Vocals",
     "composedBy": "Composed by",
@@ -298,6 +301,7 @@
     }
   },
   "artist": {
+    "composition": "Composition",
     "discography": "Discography",
     "noDiscography": "No discography available for this artist.",
     "worksAndCredits": "Works & Credits",
@@ -317,6 +321,9 @@
     "countryWorldwide": "Worldwide",
     "otherRecordingCredits": "Other recording credits",
     "recording": "Recording",
+    "byArtist": "by {artist}",
+    "artistUnknown": "by unknown artist",
+    "worksRoleTabs": { "label": "Filter works by credit role" },
     "recordingIdentity": {
       "live": "Live", "demo": "Demo", "rehearsal": "Rehearsal", "other": "Alternate version", "rerecording": "Rerecording", "remix": "Remix", "edit": "Edit", "alternate_take": "Alternate take", "medley": "Medley"
     },
@@ -1007,9 +1014,13 @@
     "about": {
       "metadataTitle": "About",
       "metadataDescription": "Mangulina is a curated Dominican music database dedicated to preserving and documenting Dominican artists, songs, releases, credits, genres, and musical history.",
-      "eyebrow": "Dominican Music Database",
-      "title": "About Mangulina™",
-      "heroDescription": "Mangulina is a curated Dominican music database dedicated to preserving, documenting, and celebrating the artists, songs, recordings, releases, credits, and stories that shape Dominican music.",
+      "betaHero": {
+        "badge": "BETA PHASE",
+        "title": "About Mangulina™",
+        "subtitle": "The Dominican Music Database",
+        "paragraphOne": "Mangulina is an ambitious project to document and preserve the rich history of Dominican music. While thousands of artists, recordings, albums, credits, and awards are already available, this database is still expanding every day.",
+        "paragraphThree": "Think of Mangulina as a living musical archive—one that becomes more complete with every visit."
+      },
       "missionTitle": "Our Mission",
       "missionReference": "To build the most comprehensive and reliable reference for Dominican music — preserving its history, documenting its creators, and making its cultural legacy more accessible to everyone.",
       "missionAudience": "Mangulina serves artists, researchers, historians, collectors, educators, developers, journalists, and music fans seeking structured and trustworthy information about Dominican music.",
@@ -1028,9 +1039,7 @@
         "sources": "Links to streaming platforms and official sources"
       },
       "principlesTitle": "Editorial Principles",
-      "principlesReview": "Mangulina is curated with human review. We organize information carefully, verify details whenever possible, and welcome corrections from artists, representatives, researchers, collectors, contributors, and the public.",
       "principlesRole": "Our goal is not to replace official artist websites, streaming platforms, record labels, publishers, or rights holders. Instead, we aim to connect information, improve discoverability, and help preserve the history of Dominican music.",
-      "principlesEvolution": "Music information is constantly evolving. As new information becomes available, entries may be updated, expanded, corrected, or refined over time.",
       "principleItems": {
         "reviewed": "Human-reviewed and curated music information",
         "corrections": "Corrections welcomed from artists, families, researchers, and the public",
@@ -1041,13 +1050,11 @@
       "artistNoteMission": "Mangulina is dedicated to preserving, documenting, and celebrating Dominican music — and the people who create it. Every artist, songwriter, composer, producer, musician, and contributor included in this database represents an important part of that story.",
       "artistNoteRights": "We do not host, sell, stream, or distribute music. We do not claim ownership of recordings, artwork, lyrics, trademarks, or other creative works. Our role is limited to organizing and presenting music-related information and metadata for educational, informational, and reference purposes.",
       "artistNoteContact": "If you are an artist, representative, rights holder, or family member and would like to update, correct, enrich, or discuss any information appearing on the site, we encourage you to contact us.",
-      "discoveryTitle": "Built for Discovery",
-      "discoveryDescription": "Mangulina helps people discover connections across Dominican music — artists, recordings, releases, genres, contributors, awards, and historical context — through a structured and searchable catalog.",
-      "archiveTitle": "A Living Archive",
-      "archiveDescription": "Dominican music continues to evolve every day. Mangulina is designed as a living archive that grows alongside the music, expanding through research, community contributions, artist collaboration, and ongoing editorial review.",
       "involvedTitle": "Get Involved",
       "involvedWelcome": "Mangulina welcomes participation from artists, researchers, historians, collectors, music professionals, and passionate fans who share an interest in preserving Dominican musical heritage.",
       "involvedInvitation": "Whether you would like to submit corrections, contribute information, enrich artist profiles, provide historical research, or become a contributor, we would love to hear from you.",
+      "involvedReturn": "We invite you to come back often. Every week you'll discover new artists, additional recordings, expanded credits, restored historical information, and new features designed to help you explore Dominican music like never before.",
+      "involvedThanks": "Thank you for being one of our early visitors and for joining us as we build The Dominican Music Database.",
       "contactButton": "Contact Mangulina",
       "contributorsButton": "Contributors",
       "dmcaButton": "Copyright & DMCA"
@@ -1102,16 +1109,6 @@
       "eyebrow": "Explore Mangulina",
       "title": "Discover Dominican Music",
       "description": "Explore the Dominican Music Database through artists, songs, releases, genres, regions, creators, birthdays, and cultural categories.",
-      "betaHero": {
-        "badge": "BETA PHASE",
-        "title": "Welcome to Mangulina",
-        "subtitle": "The Dominican Music Database",
-        "paragraphOne": "Mangulina is an ambitious project to document and preserve the rich history of Dominican music. While thousands of artists, recordings, albums, credits, and awards are already available, this database is still expanding every day.",
-        "paragraphTwo": "You'll notice new biographies, discographies, songwriter credits, producer portfolios, images, videos, awards, and historical information being added on a regular basis. Many existing pages are also continuously reviewed and improved to ensure the highest level of accuracy.",
-        "paragraphThree": "Think of Mangulina as a living musical archive—one that becomes more complete with every visit.",
-        "invitation": "✨ We invite you to come back often. Every week you'll discover new artists, additional recordings, expanded credits, restored historical information, and new features designed to help you explore Dominican music like never before.",
-        "thanks": "Thank you for being one of our early visitors and for joining us as we build The Dominican Music Database."
-      },
       "artistsTitle": "Artists",
       "creatorsTitle": "Creators",
       "musicTitle": "Music",
@@ -1971,6 +1968,60 @@
       "recordingTitle": "Type a recording title…",
       "url": "https://…",
       "labelExample": "e.g. Deezer"
+    }
+  },
+  "songCatalog": {
+    "workCredits": "Composition credits",
+    "recordingCredits": "Recording credits",
+    "fullCredits": {
+      "eyebrow": "Credits",
+      "title": "Complete personnel",
+      "count": "{count, plural, one {# credit} other {# credits}}",
+      "people": "{count, plural, one {# person} other {# people}}",
+      "composition": "Composition",
+      "performance": "Vocals and musicians",
+      "production": "Arrangement and production",
+      "engineering": "Recording and engineering"
+    },
+    "releaseDocumentation": "Release information",
+    "title": "Songs",
+    "description": "Explore songs, their documented recordings, creative credits and release history.",
+    "search": "Search songs",
+    "empty": "No songs found.",
+    "pagination": "Song directory pages",
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page {page} of {total}",
+    "work": "Composition",
+    "workExplanation": "A composition can have several recordings. Each version has its own performers, credits and platform links.",
+    "workPending": "The underlying composition has not yet been publicly identified. This entry documents a recording; no relationship to similarly titled songs is assumed.",
+    "compositionYear": "Composed",
+    "publicationYear": "Published",
+    "language": "Language",
+    "allVersions": "View the composition and all documented recordings",
+    "versions": "Recordings / versions",
+    "noRecordings": "No public recordings are documented for this composition yet.",
+    "versionPending": "Version details not yet documented",
+    "firstRelease": "Earliest documented year: {year}",
+    "appearances": "Release appearances",
+    "trackPosition": "Disc {disc} · Track {track}",
+    "releasedAs": "Listed as: {title}",
+    "noAppearances": "No release appearances documented yet.",
+    "recordingDetails": "Recording story, media and sources",
+    "performance": {
+      "studio": "Studio",
+      "live": "Live",
+      "demo": "Demo",
+      "rehearsal": "Rehearsal",
+      "other": "Other performance"
+    },
+    "derivation": {
+      "rerecording": "Re-recording",
+      "remix": "Remix",
+      "edit": "Edit",
+      "alternate_take": "Alternate take",
+      "medley": "Medley",
+      "other": "Other derived version"
     }
   }
 }

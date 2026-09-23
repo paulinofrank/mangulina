@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Link } from "@/i18n/navigation";
+import { Link, redirect } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
@@ -242,6 +242,9 @@ export default async function ReleasePage({ params }: PageProps) {
   const release = await getReleaseBySlug(cleanSlug(slug));
 
   if (!release) notFound();
+  if (release.slug && release.slug !== cleanSlug(slug)) {
+    redirect({ href: `/releases/${release.slug}`, locale });
+  }
   const releasePath = `/releases/${release.slug}`;
   const releaseYear = release.releaseYear ?? release.year;
   const recordingIds = release.tracks
