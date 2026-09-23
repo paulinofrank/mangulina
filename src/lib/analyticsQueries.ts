@@ -78,8 +78,8 @@ export async function fetchSearchesWithNoResults(limit: number = 30) {
   const { data, error } = await supabase
     .from("searches_with_no_results")
     .select("query,search_count,last_searched_at")
-    .order("search_count", { ascending: false })
     .order("last_searched_at", { ascending: false })
+    .order("search_count", { ascending: false })
     .limit(limit);
 
   if (error) throw error;
