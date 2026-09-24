@@ -90,6 +90,10 @@
   "song": {
     "close": "Close",
     "countryNotDocumented": "Country not documented",
+    "externalContributorDescription": "{nationality} {role}",
+    "externalContributorFromCountry": "{role} from {country}",
+    "externalContributorRoles": { "composer": "composer", "lyricist": "lyricist", "author": "author", "singer": "singer", "arranger": "arranger", "producer": "producer" },
+    "nationalities": { "VE": "Venezuelan" },
     "credits": "Song Credits",
     "media": "Media",
     "mediaDescription": "Videos, performances, interviews, and other media connected to this recording.",
@@ -164,7 +168,10 @@
     "violin": "Violin",
     "chorus": "Chorus",
     "backingVocals": "Backing vocals",
-    "backgroundVocals": "Background vocals"
+    "backgroundVocals": "Background vocals",
+    "instrumentalist": "Instrumentalist",
+    "pianist": "Piano",
+    "beatProgrammer": "Beat programmer"
   },
   "badge": {
     "official": "Official",

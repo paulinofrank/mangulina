@@ -90,6 +90,10 @@
   "song": {
     "close": "Cerrar",
     "countryNotDocumented": "País no documentado",
+    "externalContributorDescription": "{role} {nationality}",
+    "externalContributorFromCountry": "{role} de {country}",
+    "externalContributorRoles": { "composer": "Compositor", "lyricist": "Letrista", "author": "Autor", "singer": "Cantante", "arranger": "Arreglista", "producer": "Productor" },
+    "nationalities": { "VE": "venezolano" },
     "credits": "Créditos de la Canción",
     "media": "Medios",
     "mediaDescription": "Videos, actuaciones, entrevistas y otros medios conectados a esta grabación.",
@@ -164,7 +168,10 @@
     "violin": "Violín",
     "chorus": "Coro",
     "backingVocals": "Coros",
-    "backgroundVocals": "Voz de fondo"
+    "backgroundVocals": "Voz de fondo",
+    "instrumentalist": "Instrumentista",
+    "pianist": "Piano",
+    "beatProgrammer": "Programador de ritmos"
   },
   "roles": {
     "producer": "Productor",

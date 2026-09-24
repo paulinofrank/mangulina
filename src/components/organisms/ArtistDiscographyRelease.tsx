@@ -43,7 +43,7 @@ export default function ArtistDiscographyRelease({
 }: ArtistDiscographyReleaseProps) {
   const t = useTranslations("artist");
   const components = useTranslations("components");
-  const releases = useTranslations("releases");
+  const releases = useTranslations("pages.releases");
   const locale = useLocale();
   const [isOpen, setIsOpen] = useState(false);
   const [tracks, setTracks] = useState<LazyDiscographyTrack[] | null>(null);

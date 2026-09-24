@@ -2,7 +2,7 @@
 // Groups credits by role for a liner-notes style display.
 import { Link } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 export type CreditItem = {
   role: string;
@@ -37,8 +37,8 @@ const ROLE_LABELS_KEYS: Record<string, string> = {
   vocals: "vocals",
   singer: "vocals",
   composer: "composedBy",
-  songwriter: "writtenBy",
-  writer: "writtenBy",
+  songwriter: "lyricsBy",
+  writer: "lyricsBy",
   lyricist: "lyricsBy",
   lyrics: "lyricsBy",
   arranger: "arrangedBy",
@@ -63,12 +63,18 @@ const ROLE_LABELS_KEYS: Record<string, string> = {
   chorus: "chorus",
   "backing vocals": "backingVocals",
   backing_vocalist: "backingVocals",
+  instrumentalist: "instrumentalist",
+  pianist: "pianist",
+  co_producer: "coProducedBy",
+  beat_programmer: "beatProgrammer",
+  musical_director: "musicalDirector",
   "background vocals": "backgroundVocals",
 };
 
 const ROLE_ORDER = [
   "lead_performer",
   "performer",
+  "featured_performer",
   "lyricist",
   "lyrics",
   "composer",
@@ -82,10 +88,24 @@ const ROLE_ORDER = [
   "backing_vocalist",
   "backing vocals",
   "background vocals",
+  "instrumentalist",
+  "pianist",
+  "guitar",
+  "piano",
+  "bass",
+  "bass guitar",
+  "drums",
+  "percussion",
+  "trumpet",
+  "saxophone",
+  "violin",
   "producer",
   "co-producer",
+  "co_producer",
+  "beat_programmer",
   "executive producer",
   "musical director",
+  "musical_director",
   "conductor",
   "recording_engineer",
   "recording engineer",
@@ -95,6 +115,45 @@ const ROLE_ORDER = [
   "mastering_engineer",
   "mastering engineer",
 ];
+
+const INSTRUMENT_ROLES = new Set([
+  "instrumentalist", "pianist", "guitar", "piano", "bass", "bass guitar",
+  "drums", "percussion", "trumpet", "saxophone", "violin",
+]);
+
+const EXTERNAL_ROLE_KEYS: Record<string, string> = {
+  composer: "composer",
+  songwriter: "author",
+  writer: "author",
+  lyricist: "lyricist",
+  lyrics: "lyricist",
+  performer: "singer",
+  lead_performer: "singer",
+  vocalist: "singer",
+  vocal: "singer",
+  vocals: "singer",
+  singer: "singer",
+  arranger: "arranger",
+  producer: "producer",
+};
+
+function externalRoleKeys(credits: CreditItem[], contributorId: string) {
+  const order = ["composer", "lyricist", "author", "singer", "arranger", "producer"];
+  return [...new Set(credits
+    .filter((credit) => credit.externalContributorId === contributorId)
+    .map((credit) => EXTERNAL_ROLE_KEYS[credit.role.trim().toLowerCase()])
+    .filter((role): role is string => Boolean(role)))]
+    .sort((left, right) => order.indexOf(left) - order.indexOf(right));
+}
+
+function countryName(country: string, locale: string) {
+  if (!/^[A-Z]{2}$/i.test(country)) return country;
+  try {
+    return new Intl.DisplayNames([locale], { type: "region" }).of(country.toUpperCase()) ?? country;
+  } catch {
+    return country;
+  }
+}
 
 function roleOrder(role: string) {
   const normalized = role.trim().toLowerCase();
@@ -150,8 +209,10 @@ export default function SongCreditsSection({
 
   const grouped = new Map<string, CreditItem[]>();
   const rolePriorities = new Map<string, number>();
+  const instrumentRoleLabels = new Set<string>();
   for (const c of credits) {
     const role = normalizeRole(c.role || "Credit", t);
+    if (INSTRUMENT_ROLES.has(c.role.trim().toLowerCase()) || c.instruments?.length) instrumentRoleLabels.add(role);
     rolePriorities.set(role, Math.min(rolePriorities.get(role) ?? Number.MAX_SAFE_INTEGER, roleOrder(c.role)));
     if (!grouped.has(role)) grouped.set(role, []);
     const names = grouped.get(role)!;
@@ -160,6 +221,26 @@ export default function SongCreditsSection({
     }
   }
   const sortedRoles = sortRoles([...grouped.keys()], rolePriorities);
+  const firstInstrumentIndex = sortedRoles.findIndex((role) => instrumentRoleLabels.has(role));
+  const lastInstrumentIndex = sortedRoles.findLastIndex((role) => instrumentRoleLabels.has(role));
+  const openExternalRoleKeys = openExternal?.externalContributorId
+    ? externalRoleKeys(credits, openExternal.externalContributorId)
+    : [];
+  const openExternalCountry = openExternal?.country?.trim() || null;
+  const nationalityKey = openExternalCountry?.toUpperCase() === "VE" || openExternalCountry?.toLowerCase() === "venezuela"
+    ? "VE"
+    : null;
+  const externalDescriptions = openExternalRoleKeys.map((role) => nationalityKey
+    ? tSong("externalContributorDescription", {
+        role: tSong(`externalContributorRoles.${role}`),
+        nationality: tSong(`nationalities.${nationalityKey}`),
+      })
+    : openExternalCountry
+      ? tSong("externalContributorFromCountry", {
+          role: tSong(`externalContributorRoles.${role}`),
+          country: countryName(openExternalCountry, locale),
+        })
+      : tSong(`externalContributorRoles.${role}`));
 
   return (
     <section className={embedded ? "" : "h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6"}>
@@ -168,14 +249,16 @@ export default function SongCreditsSection({
       </h2>}
 
       {/* Credit rows */}
-      {sortedRoles.length > 0 && (
-        <dl className="grid gap-y-3 sm:grid-cols-[140px_1fr]">
-          {sortedRoles.map((role) => {
+      {(sortedRoles.length > 0 || hasExtra) && (
+        <dl className="grid gap-y-3 sm:grid-cols-[240px_minmax(0,1fr)]">
+          {sortedRoles.map((role, roleIndex) => {
             const names = grouped.get(role) ?? [];
             return (
-              <div key={role} className="contents">
+              <Fragment key={role}>
+                {roleIndex === firstInstrumentIndex && <div aria-hidden="true" className="col-span-full my-1 border-t border-gray-100" />}
+                <div className="contents">
                 <dt
-                  className="text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-500 sm:py-0.5"
+                  className="text-xs font-semibold uppercase tracking-[0.14em] text-gray-500 sm:whitespace-nowrap sm:py-0.5"
                 >
                   {role}
                 </dt>
@@ -203,28 +286,23 @@ export default function SongCreditsSection({
                     ))}
                   </span>
                 </dd>
-              </div>
+                </div>
+                {roleIndex === lastInstrumentIndex && <div aria-hidden="true" className="col-span-full my-1 border-t border-gray-100" />}
+              </Fragment>
             );
           })}
+          {sortedRoles.length > 0 && hasExtra && <div aria-hidden="true" className="col-span-full my-1 border-t border-gray-100" />}
+          {labelName && <div className="contents">
+            <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-gray-500 sm:whitespace-nowrap sm:py-0.5">{tSong("label")}</dt>
+            <dd className="text-sm text-gray-700 sm:py-0.5">{labelName}</dd>
+          </div>}
+          {releaseInfo && <div className="contents">
+            <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-gray-500 sm:whitespace-nowrap sm:py-0.5">{tSong("release")}</dt>
+            <dd className="text-sm text-gray-700 sm:py-0.5">{releaseInfo}</dd>
+          </div>}
         </dl>
       )}
-      {hasExtra && (
-        <div className={`${sortedRoles.length ? "mt-5 border-t border-gray-100 pt-4" : ""} flex flex-wrap gap-x-6 gap-y-2 text-sm`}>
-          {labelName && (
-            <div>
-              <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-500">{tSong("label")}</span>
-              <span className="text-gray-700">{labelName}</span>
-            </div>
-          )}
-          {releaseInfo && (
-            <div>
-              <span className="mr-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-gray-500">{tSong("release")}</span>
-              <span className="text-gray-700">{releaseInfo}</span>
-            </div>
-          )}
-        </div>
-      )}
-      {openExternal && <div role="dialog" aria-modal="true" aria-labelledby="external-contributor-name" className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" onClick={() => setOpenExternal(null)}><div className="w-full max-w-sm rounded-xl bg-white p-5 shadow-xl" onClick={(event) => event.stopPropagation()}><h3 id="external-contributor-name" className="text-lg font-bold text-[#002D62]">{openExternal.name}</h3><p className="mt-2 text-sm text-gray-600">{openExternal.country ?? tSong("countryNotDocumented")}</p><button type="button" autoFocus onClick={() => setOpenExternal(null)} className="mt-5 rounded-lg border px-4 py-2 text-sm">{tSong("close")}</button></div></div>}
+      {openExternal && <div role="dialog" aria-modal="true" aria-labelledby="external-contributor-name" className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" onClick={() => setOpenExternal(null)}><div className="w-full max-w-sm rounded-xl bg-white p-5 shadow-xl" onClick={(event) => event.stopPropagation()}><h3 id="external-contributor-name" className="text-lg font-bold text-[#002D62]">{openExternal.name}</h3><p className="mt-2 text-sm text-gray-600">{externalDescriptions.length ? externalDescriptions.join(" / ") : openExternalCountry ? countryName(openExternalCountry, locale) : tSong("countryNotDocumented")}</p><button type="button" autoFocus onClick={() => setOpenExternal(null)} className="mt-5 rounded-lg border px-4 py-2 text-sm">{tSong("close")}</button></div></div>}
     </section>
   );
 }
