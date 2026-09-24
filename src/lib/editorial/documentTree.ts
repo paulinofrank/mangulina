@@ -38,3 +38,25 @@ export function mapEditorialInlineNodes(
   };
   return { ...document, content: document.content.map(mapBlock) };
 }
+
+export function sanitizeEditorialDocumentTree(document: EditorialDocumentV1): EditorialDocumentV1 {
+  const sanitizeBlock = (block: EditorialBlockNode): EditorialBlockNode => {
+    if (block.type === "paragraph" || block.type === "heading") {
+      if (!block.content) return block;
+      const content = block.content.filter(
+        (node) => !(node.type === "text" && typeof node.text === "string" && node.text.length === 0),
+      );
+      return { ...block, ...(content.length > 0 ? { content } : {}) };
+    }
+    if (block.type === "horizontalRule") return block;
+    return {
+      ...block,
+      content: block.content.map((child) =>
+        child.type === "listItem"
+          ? { ...child, content: child.content.map(sanitizeBlock) }
+          : sanitizeBlock(child),
+      ),
+    } as EditorialBlockNode;
+  };
+  return { ...document, content: document.content.map(sanitizeBlock) };
+}

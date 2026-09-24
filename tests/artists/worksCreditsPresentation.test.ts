@@ -51,15 +51,29 @@ test("duration formatter handles catalog milliseconds consistently", () => {
   assert.equal(formatDurationMilliseconds(3_735_000), "1:02:15");
 });
 
-test("public portfolio uses role tabs and a title-by-artist list", () => {
+test("public portfolio uses role tabs, catalog covers, and an international works section", () => {
   const shell = readFileSync("src/components/organisms/ArtistWorksPortfolio.tsx", "utf8");
   const tabs = readFileSync("src/components/organisms/ArtistWorksTabs.tsx", "utf8");
   assert.match(shell, /ArtistWorksTabs/);
+  assert.match(shell, /t\("creditsCount", \{ count: linkedWorks\.length \}\)/);
+  assert.doesNotMatch(shell, /linkedWorks\.length === 1 \? t\("work"\)/);
   assert.match(tabs, /role="tablist"/);
   assert.match(tabs, /"composer"/);
   assert.match(tabs, /"lyricist"/);
   assert.match(tabs, /"arranger"/);
-  assert.match(tabs, /t\("byArtist"/);
+  assert.match(tabs, /getPublicReleaseCoverUrl/);
+  assert.match(tabs, /getArtistImageUrl/);
+  assert.match(tabs, /t\("internationalWorks"/);
+  assert.match(tabs, /t\("performedByArtist"/);
+  assert.match(tabs, /\$\{year\} · /);
   assert.doesNotMatch(tabs, /font-(?:bold|semibold|black)/);
   assert.doesNotMatch(tabs, /Composition →/);
+});
+
+test("Works & Credits is limited to work performed by other artists", () => {
+  const shell = readFileSync("src/components/organisms/ArtistWorksPortfolio.tsx", "utf8");
+  const query = readFileSync("src/lib/getArtistWorksPortfolio.ts", "utf8");
+  assert.match(shell, /performer\.artistId !== artistId/);
+  assert.match(shell, /!sameArtistName/);
+  assert.match(query, /recording\.artist_id !== artistId/);
 });

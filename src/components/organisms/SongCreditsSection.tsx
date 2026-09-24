@@ -67,30 +67,46 @@ const ROLE_LABELS_KEYS: Record<string, string> = {
 };
 
 const ROLE_ORDER = [
-  "Performed by",
-  "Vocals",
-  "Written by",
-  "Composed by",
-  "Lyrics by",
-  "Arranged by",
-  "Produced by",
-  "Co-produced by",
-  "Executive producer",
-  "Musical director",
-  "Conducted by",
-  "Recording engineer",
-  "Engineer",
-  "Mix engineer",
-  "Mastering engineer",
+  "lead_performer",
+  "performer",
+  "lyricist",
+  "lyrics",
+  "composer",
+  "songwriter",
+  "writer",
+  "arranger",
+  "vocalist",
+  "vocal",
+  "vocals",
+  "singer",
+  "backing_vocalist",
+  "backing vocals",
+  "background vocals",
+  "producer",
+  "co-producer",
+  "executive producer",
+  "musical director",
+  "conductor",
+  "recording_engineer",
+  "recording engineer",
+  "engineer",
+  "mixing_engineer",
+  "mix engineer",
+  "mastering_engineer",
+  "mastering engineer",
 ];
 
-function sortRoles(roles: string[]): string[] {
+function roleOrder(role: string) {
+  const normalized = role.trim().toLowerCase();
+  const index = ROLE_ORDER.indexOf(normalized);
+  return index === -1 ? Number.MAX_SAFE_INTEGER : index;
+}
+
+function sortRoles(roles: string[], priorities: Map<string, number>): string[] {
   return roles.sort((a, b) => {
-    const ia = ROLE_ORDER.findIndex((r) => r.toLowerCase() === a.toLowerCase());
-    const ib = ROLE_ORDER.findIndex((r) => r.toLowerCase() === b.toLowerCase());
-    if (ia !== -1 && ib !== -1) return ia - ib;
-    if (ia !== -1) return -1;
-    if (ib !== -1) return 1;
+    const ia = priorities.get(a) ?? Number.MAX_SAFE_INTEGER;
+    const ib = priorities.get(b) ?? Number.MAX_SAFE_INTEGER;
+    if (ia !== ib) return ia - ib;
     return a.localeCompare(b);
   });
 }
@@ -133,15 +149,17 @@ export default function SongCreditsSection({
   if (!hasCredits && !hasExtra) return null;
 
   const grouped = new Map<string, CreditItem[]>();
+  const rolePriorities = new Map<string, number>();
   for (const c of credits) {
     const role = normalizeRole(c.role || "Credit", t);
+    rolePriorities.set(role, Math.min(rolePriorities.get(role) ?? Number.MAX_SAFE_INTEGER, roleOrder(c.role)));
     if (!grouped.has(role)) grouped.set(role, []);
     const names = grouped.get(role)!;
     if (!names.some((item) => item.name === c.name && item.slug === c.slug && item.externalContributorId === c.externalContributorId)) {
       names.push(c);
     }
   }
-  const sortedRoles = sortRoles([...grouped.keys()]);
+  const sortedRoles = sortRoles([...grouped.keys()], rolePriorities);
 
   return (
     <section className={embedded ? "" : "h-fit rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6"}>

@@ -144,6 +144,11 @@ An artist may have multiple occupations:
 - **Grupo Manía:** Group (collective)
 - **Aventura:** Group (now famous individually)
 
+#### Artist Creation & Draft Status Policy
+- **Verify Dominican Heritage First:** Before creating a new artist, confirm they are Dominican (non-Dominican contributors belong in external contributors/credits).
+- **Default to Draft Status:** Any new artist created during discography, works, or credits entry must ALWAYS be saved with `status: 'draft'` (never published immediately).
+- **Editorial Review & Imagery:** Leaving the entity in `draft` status allows editors to verify biographical facts and upload high-resolution profile imagery before publishing.
+
 ---
 
 ### 3.2 Work
@@ -486,6 +491,26 @@ Creative Contributors:
 
 The **Work** (composition) has the same creators across all versions.  
 The **Recordings** have different performers.
+
+### 5.5 Self-Performance Presentation Rule (Discography vs. Works Portfolio)
+
+**Rule:** On an artist profile, songs that the artist performs themselves belong exclusively to their **Discography (Repertoire)** tab. An artist's **Works / Compositions / Production** portfolio tab must **NEVER** duplicate songs performed by themselves.
+
+- **Self-Performed Songs**: If Artist A is the primary/lead performer of Song X (even if Artist A also wrote, composed, or arranged Song X), Song X appears solely in Artist A's **Discography** tab. It is **suppressed from Artist A's Works / Compositions Portfolio** tab to eliminate redundant self-duplication.
+  - *Example:* Luys Bien sang *«Cuando Ya Dolía»* and *«Mujer Amiga»*. These appear exclusively under Luys Bien's Discography. His Works portfolio does NOT duplicate them.
+  - *Example:* Juan Luis Guerra sang *«Burbujas de Amor»* and *«Bachata Rosa»*. These appear under his Discography, not duplicated in his Works portfolio.
+- **External Works Portfolio (Written / Produced for Others)**: An artist's **Works / Compositions** tab is reserved strictly for compositions, lyrics, arrangements, or productions created for **OTHER artists** (or external compositions).
+  - *Example:* Cristino Gómez wrote lyrics for Luys Bien (*«Mujer Amiga»*) → Appears in Cristino Gómez's Works Portfolio.
+  - *Example:* Palmer Hernández composed for Lalo Rodríguez (*«Ven, Devórame Otra Vez»*) and David Pabón (*«Aquel Viejo Motel»*) → Appears in Palmer Hernández's Works Portfolio.
+  - *Example:* Juan Luis Guerra wrote *«Te Propongo»* for Gilberto Santa Rosa → Appears in Juan Luis Guerra's Works Portfolio.
+
+### 5.6 Recording-Driven Work & Credit Creation (No Standalone Works)
+
+**Rule:** When documenting compositions, lyrics, arrangements, or productions for an arranger, composer, or lyricist, their corresponding work must **NEVER** be created directly as a detached standalone Work entity.
+
+- **Anchor in Performer Discography:** Songs must always be created as part of the **Performer's Discography** (attached to the relevant Release and Recording).
+- **Credit via Work/Recording Credits:** The arranger, composer, or lyricist is then linked via `work_credits` or `recording_credits` on that recording/work.
+- **Natural Projection:** This anchors all creative credits to verified historical releases while automatically populating the creator's **Works Portfolio** tab on their profile without duplicate or orphaned entities.
 
 ---
 

@@ -24,5 +24,14 @@ Before making code or schema changes, adhere to the authoritative project govern
 
 - **Preserve Editorial Accuracy**: Historical credit text, original titles, and relationships must be preserved as released.
 - **Preserve Backward Compatibility**: Existing pages, APIs, queries, and features must continue working.
+- **Dominican Artist Creation & Draft Status Policy**:
+  - Before creating any missing artist discovered during discography, works, or credits workflows, confirm that the artist is **Dominican**.
+  - Newly created artists must ALWAYS be saved with `status = 'draft'` (NEVER published immediately).
+  - Leaving new artists in `draft` status allows the editor to review details and upload their photo before publishing.
+- **Recording-Driven Work & Credit Creation Rule**:
+  - When creating or documenting the catalogue of an arranger, composer, or lyricist, do NOT create standalone/floating Work entities directly without release context.
+  - Always create the song/track within the **Performer's Discography** (on their Release/Recording), and attach the composer, lyricist, or arranger through credits (`work_credits` / `recording_credits`).
+  - This anchors the song to historical release evidence and automatically populates the creator's Works Portfolio tab.
+- **Self-Performance Presentation Rule**: Songs performed by an artist belong strictly in their **Discography** tab. An artist's **Works / Compositions Portfolio** tab must NEVER duplicate songs performed by themselves, but is reserved exclusively for works written, composed, arranged, or produced for OTHER artists (DATA_GOVERNANCE.md Section 5.5).
 - **Search Before Creating**: Check existing schema, tables, columns, and previous migrations before adding new structures.
 - **Verification**: Ensure TypeScript compiles cleanly (`npx tsc --noEmit`) and existing functionality remains unbroken before completing a task.

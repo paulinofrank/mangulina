@@ -316,6 +316,7 @@
     "discography": "Discografía",
     "noDiscography": "Sin discografía disponible para este artista.",
     "worksAndCredits": "Trabajos y Créditos",
+    "creditsCount": "{count} Créditos",
     "work": "Trabajo",
     "works": "Trabajos",
     "role": "Rol",
@@ -334,6 +335,8 @@
     "recording": "Grabación",
     "byArtist": "por {artist}",
     "artistUnknown": "por artista desconocido",
+    "internationalWorks": "Trabajos internacionales",
+    "performedByArtist": "Interpretado por {artist}",
     "worksRoleTabs": { "label": "Filtrar trabajos por tipo de crédito" },
     "recordingIdentity": {
       "live": "En vivo", "demo": "Demo", "rehearsal": "Ensayo", "other": "Versión alternativa", "rerecording": "Nueva grabación", "remix": "Remezcla", "edit": "Edición", "alternate_take": "Toma alternativa", "medley": "Popurrí"

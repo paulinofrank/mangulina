@@ -221,6 +221,45 @@ RIGHT:
 4. Document the relationship in DATA_GOVERNANCE.md
 ```
 
+### Rule 9: Self-Performed Songs Must NOT Be Duplicated in Works Portfolio
+```
+WRONG:
+Listing "Burbujas de Amor" in Juan Luis Guerra's Works Portfolio tab
+(He is the lead performer; it belongs exclusively in his Discography tab)
+
+RIGHT:
+1. Songs performed by the artist appear in their Discography tab
+2. Songs composed/written/produced for OTHER artists appear in their Works Portfolio tab
+3. Example: Cristino Gómez lyrics for Luys Bien appear in Cristino's Works tab
+4. Example: Palmer Hernández compositions for Lalo Rodríguez appear in Palmer's Works tab
+(See DATA_GOVERNANCE.md Section 5.5)
+```
+
+### Rule 10: Dominican Artist Verification & Draft Status Policy
+```
+WRONG:
+1. Automatically creating and immediately setting status = 'published' on an artist record.
+2. Creating an artist without verifying they are of Dominican heritage/origin.
+
+RIGHT:
+1. When encountering a missing artist during discography/works entry, verify they are Dominican.
+2. Non-Dominican contributors must be handled as external contributors where applicable.
+3. Newly created artists must ALWAYS be saved with status = 'draft' (never 'published').
+4. The editor will review the artist, verify biographical details, and upload their picture before publishing.
+```
+
+### Rule 11: Recording-Driven Work & Credit Creation (No Standalone Works)
+```
+WRONG:
+Creating a standalone, detached Work record directly for a composer/arranger/lyricist without anchoring it to a recording or release.
+
+RIGHT:
+1. Create the song/track within the actual Performer's Discography (on their Release/Recording).
+2. Credit the composer, lyricist, or arranger through work_credits or recording_credits linked to that recording/work.
+3. The composer/arranger/lyricist's Works Portfolio tab will naturally and accurately project the work from the performer's discography.
+(See DATA_GOVERNANCE.md Section 5.6)
+```
+
 ---
 
 ## Credits Model (Summary)

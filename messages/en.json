@@ -305,6 +305,7 @@
     "discography": "Discography",
     "noDiscography": "No discography available for this artist.",
     "worksAndCredits": "Works & Credits",
+    "creditsCount": "{count} Credits",
     "work": "Work",
     "works": "Works",
     "role": "Role",
@@ -323,6 +324,8 @@
     "recording": "Recording",
     "byArtist": "by {artist}",
     "artistUnknown": "by unknown artist",
+    "internationalWorks": "International Works",
+    "performedByArtist": "performed by {artist}",
     "worksRoleTabs": { "label": "Filter works by credit role" },
     "recordingIdentity": {
       "live": "Live", "demo": "Demo", "rehearsal": "Rehearsal", "other": "Alternate version", "rerecording": "Rerecording", "remix": "Remix", "edit": "Edit", "alternate_take": "Alternate take", "medley": "Medley"

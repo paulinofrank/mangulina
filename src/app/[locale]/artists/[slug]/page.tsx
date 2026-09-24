@@ -269,7 +269,7 @@ export default async function ArtistProfile({ params }: PageProps) {
                     />
                   }
                 >
-                  <ArtistWorksPortfolio artistId={artist.id} />
+                  <ArtistWorksPortfolio artistId={artist.id} artistName={artist.name} />
                 </Suspense>
               </div>
             </div>
