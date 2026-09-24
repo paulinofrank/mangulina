@@ -9,8 +9,6 @@ SET performer_artist_id = 'a69ae2ce-2571-4816-b367-f78e63fcac62',
     END,
     updated_at = now()
 WHERE id IN (
-  '78622cf4-813a-4c2e-b05a-cc365c4065c9',
-  '09c0d076-216d-477a-9538-fb566c42d07a',
-  '02e0760a-a9fb-4ba4-9b1f-98fdfc0c0182',
-  'e3b7ce9a-5d0b-4e6a-8b80-16f2ce0a7f81'
+  'f742ae2c-8372-43ce-9030-e02043a5ba95',
+  '45d09b50-cac4-4a8b-8faf-28a0d07f75ff'
 );
