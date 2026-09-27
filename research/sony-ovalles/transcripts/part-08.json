@@ -1,0 +1,234 @@
+{
+  "source": "C:\\Users\\fvpg\\OneDrive\\Downloads\\LOS ARREGLOS DE SONY OVALLES_part-08.mp3",
+  "part": 8,
+  "duration": 899.989,
+  "duration_after_vad": 672.409,
+  "model": "faster-whisper-small-int8",
+  "complete": true,
+  "segments": [
+    {
+      "start": 1.3,
+      "end": 40.84,
+      "text": "Que yo pagué con mil besos y caminé por la senta, Con mi bagaje de un sueño. Y caminé por la senda, Con mi bagaje del sueño. La movienda, Yo dejando desde aquí, Estas almas que una vez le prometí. Sanvadecer la primera, Pa' que sea fuerte de mí",
+      "avg_logprob": -0.42764206118881704,
+      "no_speech_prob": 0.40425780415534973,
+      "compression_ratio": 1.505952380952381
+    },
+    {
+      "start": 42.77,
+      "end": 79.12,
+      "text": "Samba de ser la primera. Patresa fuerte de mi. Rocándote. Cásicos de fin de semana. Cásicos de semana. En ese tiempo, el maestro Sony Ovalles pertenecía al sello Karen. Bienvenido a Rodríguez y por eso... La mayoría de temas de Sergio Vargas de ese tiempo. La mayoría de temas de Wolfriedo Vargas de ese tiempo, la mayoría de las chicas del can de ese tiempo. De Ruby Perez de ese tiempo pertenecen...",
+      "avg_logprob": -0.34252213935057324,
+      "no_speech_prob": 0.13418221473693848,
+      "compression_ratio": 1.8061674008810573
+    },
+    {
+      "start": 79.35,
+      "end": 104.11,
+      "text": "Al maestro Sony Ovalles. Hola, buenas saludos. Hola. Hola. Richie Herrera. Díganme, hermano mío. El abogado del helado. Dígame, abogado. Cuénteme lo todo. Richie Herrera, estoy haciendo una celebración aquí en Lowell. Ajá. Una apuesta que gané, Richie Herrera. ¿Qué pasó? ¿Qué pasó?",
+      "avg_logprob": -0.17478193839391074,
+      "no_speech_prob": 0.004570151213556528,
+      "compression_ratio": 1.4702970297029703
+    },
+    {
+      "start": 105.14,
+      "end": 124.2,
+      "text": "Richie Herrera, yo apotezco a un amigo mío. El dueño de José Oro-Servis. Sí señor. Un galón de tequila Don Julio. La reserva reposado. ¡El demonio! Paldecaja de cerveza. Ay Dios. Tuve 20 libras de carne. ¿Qué apostó? Que él iba a Donald Trump",
+      "avg_logprob": -0.35213333261864527,
+      "no_speech_prob": 0.02121279202401638,
+      "compression_ratio": 1.233009708737864
+    },
+    {
+      "start": 124.79,
+      "end": 151.24,
+      "text": "¡Ay, Dios! Y yo iba a llevarlo. Bueno, ahí está. ¿Usted ganó? ¿Qué vamos a hacer? Richie Herrera, aquí estamos para volver a saludarlo a los muchachos, Richie. Si tiene tiempo... Salud, claro que sí. Esto es suyo. Mira, ahí está José Julio, el dueño del garaje. Sí. Ahí está Don Colla. Ahí está el amigo B-PAPI, carillosamente bolo. Sí. Mi pana Vitufo.",
+      "avg_logprob": -0.39238345387734863,
+      "no_speech_prob": 0.04749014228582382,
+      "compression_ratio": 1.4198473282442747
+    },
+    {
+      "start": 151.41,
+      "end": 181.58,
+      "text": "Y ahí está Ramón, el mecánico que está todo arrogado y plegado. Ay mi madre. ¡Algo además! Ay Dios mío, Ramón te cayó gas. Bueno pues, miren guarde este tequila porque la próxima hora es en boleros precisamente para tomar tequila. ¡Ya, bro Richie Herrera! ¡Esta casa te te comía parte papá! Gracias abogado un abrazo hermanos y a todos los que están ahí contigo. Thank you very much. El maestro Sony Ovalles",
+      "avg_logprob": -0.3845701319539649,
+      "no_speech_prob": 0.0040279049426317215,
+      "compression_ratio": 1.5017667844522968
+    },
+    {
+      "start": 182.96,
+      "end": 333.04,
+      "text": "El merengue les debe demasiado. Mire, escuche, vamos! ¡Eh! ¿Cómo el Fridurga también hizo esto?",
+      "avg_logprob": -0.49956698218981427,
+      "no_speech_prob": 0.08711256086826324,
+      "compression_ratio": 0.9803921568627451
+    },
+    {
+      "start": 333.3,
+      "end": 361.46,
+      "text": "En mi campo hay un viejo llamado José Tirado. Tú dije en 28 años, todavía no se ha casado. Tú dije en28 años, todavía no se han casado. En su casa, don José, nos permite enamorado. En su casa Don José, nos permite enamorar. Don José toda la vida siempre ha vivido equivocado. Don José toda la vidas siempre ha vivido engañado. En estos días por campo, un del mane de Don José.",
+      "avg_logprob": -0.28915336319044527,
+      "no_speech_prob": 0.3770112693309784,
+      "compression_ratio": 1.9948979591836735
+    },
+    {
+      "start": 361.46,
+      "end": 399.88,
+      "text": "Y después de mucho hablar, la trago a la capital. La muchacha se ha soltado que no se puede aguantar. La muchacha tengo una forma en que eso da ganellora. Como el Frido Vargas. También hizo esto. Usted me decía una vez que tú te casé. A tu mujer no las dejé bailar.",
+      "avg_logprob": -0.3735930192006099,
+      "no_speech_prob": 0.16607658565044403,
+      "compression_ratio": 1.4240837696335078
+    },
+    {
+      "start": 401.36,
+      "end": 438.67,
+      "text": "Mira que una vez por un descuido mi casa se se metemos. También me decía a usted nunca le compre un caro que si un semáforo la manda para él y ella lo logra violar el otro que viene a cruzar Se puede. Oye, mirad acá, Juana yo no creo verdad que un caso así de mí. ¿Cómo el frío Vargas? Esto también.",
+      "avg_logprob": -0.39786850200610213,
+      "no_speech_prob": 0.11109037697315216,
+      "compression_ratio": 1.4136363636363636
+    },
+    {
+      "start": 438.9,
+      "end": 474.35,
+      "text": "Yo viví en el pueblo abajo y hablaba de un pabillo. Yo viví en el pulpo abajo y hablaba de una familia. Que villa si es verdad, que le da un brillo a la evilla. Que villa si era verdad, que le da brilla a la evilla. Es mentira! Y ahí yo conocí, porque en ti ya yo conocí una chica encantadora. Cuando andas rebotoso parece una batidora. Cuando andas rebotsoso parece una batidore no es mentira.",
+      "avg_logprob": -0.6719002046827542,
+      "no_speech_prob": 0.31340423226356506,
+      "compression_ratio": 2.030456852791878
+    },
+    {
+      "start": 476.47,
+      "end": 504.01,
+      "text": "Qué mucho le debe el merengue a Sony Ovalles. Este tema lo usan mucho, los tocan mucho ahora en tiempo navideño.",
+      "avg_logprob": -0.22489452175796032,
+      "no_speech_prob": 0.037634167820215225,
+      "compression_ratio": 1.1274509803921569
+    },
+    {
+      "start": 504.66,
+      "end": 536.46,
+      "text": "Con este cerramos ya por hoy lo que se llama parte del repertorio hecho arreglado por el maestro Sony Ovalles. Si usted se topa por ahí con el maestro Sony Ovalle cuando vaya República Dominicana, dígale que aquí en los clásicos le hicimos ese homenaje en vida al maestro Sony Ovalles vamos a ver si lo traemos para el escándalo",
+      "avg_logprob": -0.16542968340218067,
+      "no_speech_prob": 0.007847986184060574,
+      "compression_ratio": 1.6028708133971292
+    },
+    {
+      "start": 536.88,
+      "end": 567.24,
+      "text": "Rompad que está a mi lado. La próxima hora viene con boleros. No se despegue. Clásicos de fin de semana, el espectáculo.",
+      "avg_logprob": -0.277238401206764,
+      "no_speech_prob": 0.1779940277338028,
+      "compression_ratio": 1.1261261261261262
+    },
+    {
+      "start": 567.28,
+      "end": 596.98,
+      "text": "Para enviar su carga a la República Dominicana, hay una empresa pionera en este servicio. Cargo Express Corporation. Entregando de puerta a puerta cajas, dinero, paquetes, mudanzas y electrodomésticos. Cargo Express Corporation, confianza y seriedad en el servicio de cargas a la República Dominicana. Estimados gratis. Llave para que recojan su carga en su casa al 978-691-5409 y la línea gratis 1 800",
+      "avg_logprob": -0.21086539041011707,
+      "no_speech_prob": 0.4591180086135864,
+      "compression_ratio": 1.6345381526104417
+    },
+    {
+      "start": 596.98,
+      "end": 620.75,
+      "text": "La pionera.",
+      "avg_logprob": -0.9072694182395935,
+      "no_speech_prob": 0.3200308382511139,
+      "compression_ratio": 0.6
+    },
+    {
+      "start": 620.98,
+      "end": 650.69,
+      "text": "Para la reparación general de tu vehículo debes ponerlo en manos de mecánicos profesionales porque tu carro merece el mejor cuidado. Eso solo lo encuentras en lugar, el Adios Auto Reaper. Mecanica en general. Alineación y balanceo. La reparación completa del muffler con más nuevas y usadas y muchos servicios más. El Adios Auto Reaper 25 de la Calle West en Lawrence. El Maestro Eladio es el mecánico de los clásicos y el Rey del Muffler.",
+      "avg_logprob": -0.22901278259479893,
+      "no_speech_prob": 0.5511560440063477,
+      "compression_ratio": 1.6209386281588447
+    },
+    {
+      "start": 650.69,
+      "end": 677.95,
+      "text": "Y escucha bien si vas para la República Dominicana y necesitas un vehículo rentado, llama a el Adios Auto Reaper. 978-397-5502. 978-399-75502 El mecánico de los clásicos es el maestro el Adio y su súper taller 25 de la Cali West en Lorenz. Cedar View Health & Rehab ofrece el mejor cuidado de salud en un ambiente cálido y familiar",
+      "avg_logprob": -0.2941863801744249,
+      "no_speech_prob": 0.243926540017128,
+      "compression_ratio": 1.379591836734694
+    },
+    {
+      "start": 677.95,
+      "end": 706.13,
+      "text": "Cuando necesite cuidado postoperatorio de corto o de largo plazo. Cedarfield Health and Rehab ofrece la diferencia. Terapias 7 días a la semana y su equipo de terapeuta, expertos utiliza la última tecnología y técnicas de rehabilitación para acelerar su recuperación. Tiene especializado en enfermedades de los riñones también programa de rehabilitación pulmular son certificados de excelencia en cuidados de heridas",
+      "avg_logprob": -0.25243207369700515,
+      "no_speech_prob": 0.36192336678504944,
+      "compression_ratio": 1.595505617977528
+    },
+    {
+      "start": 706.13,
+      "end": 726.64,
+      "text": "En Cedarview Health and Rehab. Tendrás servicios religiosos en español, comida hispana e información en español para tu conveniencia. Llame a Mari Lin, directora del programa para solicitar más información. 978-943-3774 es Cedarview Health y Rehab",
+      "avg_logprob": -0.19613236647385818,
+      "no_speech_prob": 0.09028405696153641,
+      "compression_ratio": 1.4111111111111112
+    },
+    {
+      "start": 727.03,
+      "end": 753.01,
+      "text": "Esto es un llamado a los americanos que regresan a su tierra y a los turistas que nos visitan. Global Rent-A-Car quiere recibirte como te lo mereces bien montado. Global Rent-A car con carros de este 35 dólares en adelante pequeños, medianos y jefetas en las mejores condiciones para que te muevas seguro. Global Rent-A Car llama Tony directo desde los Estados Unidos 617 314 7735",
+      "avg_logprob": -0.21231621348609528,
+      "no_speech_prob": 0.10030443221330643,
+      "compression_ratio": 1.5892116182572613
+    },
+    {
+      "start": 753.01,
+      "end": 771.85,
+      "text": "O desde la República Dominicana 8094987634. Global Rent-A-Car, con servicios a todos los aeropuertos. Búscalos en Internet como Global Rent-A-Cars y saliendo del aeropuerto sibao a mano izquierda. Ahí está Global Rent-A-CAR. Yo te lo recomiendo.",
+      "avg_logprob": -0.30838343384978056,
+      "no_speech_prob": 0.2394401580095291,
+      "compression_ratio": 1.3966480446927374
+    },
+    {
+      "start": 772.63,
+      "end": 785.5,
+      "text": "Escuche bien, para sus trámites de bienes raíces o sea compra o venta de propiedad debe buscar la persona correcta que tenga la experiencia necesaria para que usted se sienta confiado en el negocio.",
+      "avg_logprob": -0.1425885940497776,
+      "no_speech_prob": 0.19455182552337646,
+      "compression_ratio": 1.425531914893617
+    },
+    {
+      "start": 785.5,
+      "end": 809.14,
+      "text": "Le recomiendo a Lenin Roa. Hola, soy Lenin Roa y te quiero invitar a que sigas escuchando los clásicos con Richie Herrera Los sábados por la mega Lenin Roa me puedes contactar al 6463699549 para tu venta o compra de bienes raíces o venta o compra de negocios. Los clásicos con Richie Herera",
+      "avg_logprob": -0.2120495318681344,
+      "no_speech_prob": 0.1687869280576706,
+      "compression_ratio": 1.5775401069518717
+    },
+    {
+      "start": 809.14,
+      "end": 835.09,
+      "text": "Rangilo, papo. Hola ¿Qué tal? Yo soy más pere de Mastro Quiltsa Tropical en el 324 de la calle Proboen Lorenz con el teléfono 9782087440 para Delivery 97820874 40 estamos laborando aquí para ti desde las 12 de la tarde hasta la 1 de la madrugada llama para Delivery al 978208 74 40 si quieres recoger tu comida tienes que llamar por adelantado y solamente dejamos",
+      "avg_logprob": -0.42349049990827387,
+      "no_speech_prob": 0.15244175493717194,
+      "compression_ratio": 1.476
+    },
+    {
+      "start": 835.09,
+      "end": 862.38,
+      "text": "El",
+      "avg_logprob": -4.203076362609863,
+      "no_speech_prob": 0.3247389793395996,
+      "compression_ratio": 0.2727272727272727
+    },
+    {
+      "start": 862.38,
+      "end": 880.53,
+      "text": "Pregunta por Manuel. Es de Leon, auto ripper en towing. Están en el 46 de la Winchrop Avenue. Eso es en South Lawrence. El horario de 8 de la mañana 6 de la tarde del lunes a sábado. De Leon, auto ripper in towing. Pregunta por Manuel 9 7 8",
+      "avg_logprob": -0.4005517214536667,
+      "no_speech_prob": 0.0426681824028492,
+      "compression_ratio": 1.515527950310559
+    },
+    {
+      "start": 880.53,
+      "end": 899.99,
+      "text": "423. 62 49 y ahora de Leon está reparando el aire acondicionado de tu vehículo pasa por el 47 de la calle Winchrop en South Lawrence es de león auto riper en towin.",
+      "avg_logprob": -0.5196254912843096,
+      "no_speech_prob": 0.22561053931713104,
+      "compression_ratio": 1.2352941176470589
+    }
+  ]
+}

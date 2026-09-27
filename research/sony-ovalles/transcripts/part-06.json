@@ -1,0 +1,130 @@
+{
+  "source": "C:\\Users\\fvpg\\OneDrive\\Downloads\\LOS ARREGLOS DE SONY OVALLES_part-06.mp3",
+  "part": 6,
+  "duration": 899.989,
+  "duration_after_vad": 374.112,
+  "model": "faster-whisper-small-int8",
+  "complete": true,
+  "segments": [
+    {
+      "start": 0.15,
+      "end": 46.73,
+      "text": "Francis.",
+      "avg_logprob": -0.8576656977335612,
+      "no_speech_prob": 0.4602507948875427,
+      "compression_ratio": 0.5294117647058824
+    },
+    {
+      "start": 47.38,
+      "end": 146.09,
+      "text": "Ando. Richie Herrera.",
+      "avg_logprob": -0.45608313878377277,
+      "no_speech_prob": 0.18927457928657532,
+      "compression_ratio": 0.7333333333333333
+    },
+    {
+      "start": 147.41,
+      "end": 176.65,
+      "text": "De semana.",
+      "avg_logprob": -0.6489977985620499,
+      "no_speech_prob": 0.3868591785430908,
+      "compression_ratio": 0.5789473684210527
+    },
+    {
+      "start": 177.11,
+      "end": 206.76,
+      "text": "Punto uno FM. Mega o la mil cuatrocientos si nos están escuchando a través de las gente AM verdad que sí, que también tienen derecho a escuchar clases. Claro. También tengo gente a través del canal de YouTube. Usted lo que tiene que hacer es darle like y dale share. También activar la campanita ahí para cuando estemos en vivo ya eso le activa a ustedes también. Y les dije saber que estamos en vivo gracias papá Dios otro sábado más este es el número catorce de este mes. Que bueno",
+      "avg_logprob": -0.3264548747967451,
+      "no_speech_prob": 0.16770674288272858,
+      "compression_ratio": 1.6622073578595318
+    },
+    {
+      "start": 208.02,
+      "end": 232.01,
+      "text": "No me canso o no me paro del asombro de asombrarme de este arreglista dominicano, del merengue y la música. Ha hablado varias salsas también yo lo voy a poner también. Algunas salsas que ha hecho Sony. Ese sabor que le plasmaba a cada arreglo si usted pone a ver los arreglos de serio no se parecen a los de los rosarios",
+      "avg_logprob": -0.19640721615992093,
+      "no_speech_prob": 0.03189651295542717,
+      "compression_ratio": 1.6119402985074627
+    },
+    {
+      "start": 232.4,
+      "end": 265.13,
+      "text": "Y este que voy a tocar en este momento tampoco se parece a lo que yo he puesto anteriormente. Por eso es la grandeza de este ser humano grandioso, que se llama el maestro Sony Ovalle. Haciendo historia en la Radio de Nueva Inglaterra. Radio de Nueva Interna. Desajoma en el corazón del Sibao. Él es Richie Herrera. El papá de los clásicos. Escuche esto...",
+      "avg_logprob": -0.19232812370221639,
+      "no_speech_prob": 0.014809956774115562,
+      "compression_ratio": 1.5254237288135593
+    },
+    {
+      "start": 267.22,
+      "end": 510.35,
+      "text": "Arreglos del maestro Sony Ovalles. Las chicanas, las chicas del can cantando Miriam Cruz. Me levanté en la cama tarde Qué alegría rodían ayer. No empezó el pasado a dar un cómelo. Sé por ese favor. Bello mi casa se me sirve de semana.",
+      "avg_logprob": -0.4936788535453904,
+      "no_speech_prob": 0.08109015971422195,
+      "compression_ratio": 1.3519553072625698
+    },
+    {
+      "start": 519.99,
+      "end": 552.52,
+      "text": "El Harcourt.",
+      "avg_logprob": -0.9418315688769022,
+      "no_speech_prob": 0.19306810200214386,
+      "compression_ratio": 0.6190476190476191
+    },
+    {
+      "start": 554.07,
+      "end": 582.19,
+      "text": "Sony, lo que pasa es que tenemos que ir por 4 o 5 meses. Te gira y el hombre no quería. Decidió quedarse arreglando ya como arreglita se le conoce...",
+      "avg_logprob": -0.31968495315975615,
+      "no_speech_prob": 0.005428142845630646,
+      "compression_ratio": 1.256198347107438
+    },
+    {
+      "start": 582.36,
+      "end": 607.44,
+      "text": "Realty.",
+      "avg_logprob": -1.1903990507125854,
+      "no_speech_prob": 0.297952800989151,
+      "compression_ratio": 0.5
+    },
+    {
+      "start": 607.76,
+      "end": 638.22,
+      "text": "En Lawrence. 9786877800. Si está vendiendo o comprando una propiedad, si es un nuevo comprador, si compra o vende un local comercial, ahí está que va... Realty. 42 de la calle Mirol eso es en Lawrence. 9786878800. Con el 49 de la calle Essex en Lawrence y la tienda de noche tiene un gran especial hoy porque los Jacks de 100",
+      "avg_logprob": -0.33078519525108757,
+      "no_speech_prob": 0.09628059715032578,
+      "compression_ratio": 1.5592417061611374
+    },
+    {
+      "start": 638.9,
+      "end": 670.7,
+      "text": "Escuche bien. Los jaques de 100, 150 y 200. Rocándote clásicos de fin de semana. Cásicos de fin de semana... Los jaques de 100 ,150 y 200 dólares. Bueno, hoy están solamente a 35 $ en denoche pero frecúmen los de 100 o 250",
+      "avg_logprob": -0.4781978130340576,
+      "no_speech_prob": 0.2846972942352295,
+      "compression_ratio": 1.4679487179487178
+    },
+    {
+      "start": 670.9,
+      "end": 678.6,
+      "text": "Y los de 200 están a $35. Aperar su paimírez con $100 te compra.",
+      "avg_logprob": -0.7434375186761221,
+      "no_speech_prob": 0.0821528434753418,
+      "compression_ratio": 0.8933333333333333
+    },
+    {
+      "start": 680.88,
+      "end": 705.1,
+      "text": "3. Porque eso lo da, eso lo da 3% Sí, se lo digo yo, que se lo da. Y el Internet Wireless regresó Ya tienen el internet inalámbrico de nuevo en denoche 49 de las calles ex donde están Miguel los parte de los iPhones 12 que también se lo puede llevar fíjalo Quiere más? Pero eso no lo consigo usted en ningún otro lado",
+      "avg_logprob": -0.4576497190138873,
+      "no_speech_prob": 0.20207691192626953,
+      "compression_ratio": 1.4424778761061947
+    },
+    {
+      "start": 706.16,
+      "end": 773.93,
+      "text": "La chica del gan.",
+      "avg_logprob": -1.1153246334620885,
+      "no_speech_prob": 0.293423593044281,
+      "compression_ratio": 0.6923076923076923
+    }
+  ]
+}

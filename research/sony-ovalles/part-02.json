@@ -1,0 +1,426 @@
+{
+  "source": "C:\\Users\\fvpg\\OneDrive\\Downloads\\LOS ARREGLOS DE SONY OVALLES_part-02.mp3",
+  "part": 2,
+  "duration": 899.989,
+  "model": "whisper-base",
+  "language": "es",
+  "complete": false,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.3,
+      "text": "¡Más tenés, señor!",
+      "avg_logprob": -0.8658001899719239,
+      "no_speech_prob": 0.37463563680648804,
+      "compression_ratio": 1.3112582781456954
+    },
+    {
+      "start": 1.3,
+      "end": 4.3,
+      "text": "¡Porque te han tirado el mar!",
+      "avg_logprob": -0.8658001899719239,
+      "no_speech_prob": 0.37463563680648804,
+      "compression_ratio": 1.3112582781456954
+    },
+    {
+      "start": 17.1,
+      "end": 18.7,
+      "text": "Hermano mío,",
+      "avg_logprob": -0.8658001899719239,
+      "no_speech_prob": 0.37463563680648804,
+      "compression_ratio": 1.3112582781456954
+    },
+    {
+      "start": 19.6,
+      "end": 21.1,
+      "text": "¡ten un poco de paciencia",
+      "avg_logprob": -0.8658001899719239,
+      "no_speech_prob": 0.37463563680648804,
+      "compression_ratio": 1.3112582781456954
+    },
+    {
+      "start": 21.1,
+      "end": 22.8,
+      "text": "y el noventa asigno que tienes",
+      "avg_logprob": -0.8658001899719239,
+      "no_speech_prob": 0.37463563680648804,
+      "compression_ratio": 1.3112582781456954
+    },
+    {
+      "start": 22.9,
+      "end": 24.6,
+      "text": "para ir a venturar!",
+      "avg_logprob": -0.8658001899719239,
+      "no_speech_prob": 0.37463563680648804,
+      "compression_ratio": 1.3112582781456954
+    },
+    {
+      "start": 25.7,
+      "end": 27.1,
+      "text": "Eso estoy que están tinta",
+      "avg_logprob": -0.8658001899719239,
+      "no_speech_prob": 0.37463563680648804,
+      "compression_ratio": 1.3112582781456954
+    },
+    {
+      "start": 27.1,
+      "end": 28.9,
+      "text": "y bopa caritos y mi láir",
+      "avg_logprob": -0.8658001899719239,
+      "no_speech_prob": 0.37463563680648804,
+      "compression_ratio": 1.3112582781456954
+    },
+    {
+      "start": 28.9,
+      "end": 33.9,
+      "text": "En eso es más que críminas de ese peligro son más",
+      "avg_logprob": -0.453942851016396,
+      "no_speech_prob": 0.5563348531723022,
+      "compression_ratio": 1.4457831325301205
+    },
+    {
+      "start": 33.9,
+      "end": 40.9,
+      "text": "Y como tus pesitos conte un negocito en tu patria",
+      "avg_logprob": -0.453942851016396,
+      "no_speech_prob": 0.5563348531723022,
+      "compression_ratio": 1.4457831325301205
+    },
+    {
+      "start": 40.9,
+      "end": 46.9,
+      "text": "Estaré tu patria con tus familiares",
+      "avg_logprob": -0.453942851016396,
+      "no_speech_prob": 0.5563348531723022,
+      "compression_ratio": 1.4457831325301205
+    },
+    {
+      "start": 46.9,
+      "end": 51.9,
+      "text": "Y no es nada más sin saber si vas a llegar",
+      "avg_logprob": -0.453942851016396,
+      "no_speech_prob": 0.5563348531723022,
+      "compression_ratio": 1.4457831325301205
+    },
+    {
+      "start": 51.9,
+      "end": 55.9,
+      "text": "Hoy este consejo hermano mí, las cosas están tan malas",
+      "avg_logprob": -0.453942851016396,
+      "no_speech_prob": 0.5563348531723022,
+      "compression_ratio": 1.4457831325301205
+    },
+    {
+      "start": 55.9,
+      "end": 59.9,
+      "text": "como es nuestro país",
+      "avg_logprob": -0.6006886618477958,
+      "no_speech_prob": 0.22525866329669952,
+      "compression_ratio": 0.7241379310344828
+    },
+    {
+      "start": 60.0,
+      "end": 65.0,
+      "text": "En el mundo hay vividores que no quieren trabajar",
+      "avg_logprob": -0.5079249124678354,
+      "no_speech_prob": 0.6272734999656677,
+      "compression_ratio": 2.175
+    },
+    {
+      "start": 65.0,
+      "end": 69.0,
+      "text": "Y están conquistando gente para viajar por el mar",
+      "avg_logprob": -0.5079249124678354,
+      "no_speech_prob": 0.6272734999656677,
+      "compression_ratio": 2.175
+    },
+    {
+      "start": 69.0,
+      "end": 72.0,
+      "text": "De hace miles de promesas pero te piden primero",
+      "avg_logprob": -0.5079249124678354,
+      "no_speech_prob": 0.6272734999656677,
+      "compression_ratio": 2.175
+    },
+    {
+      "start": 72.0,
+      "end": 76.0,
+      "text": "Que le busque como sea una sumada de la vida",
+      "avg_logprob": -0.5079249124678354,
+      "no_speech_prob": 0.6272734999656677,
+      "compression_ratio": 2.175
+    },
+    {
+      "start": 76.0,
+      "end": 79.0,
+      "text": "Y si no te lo pide, te lo pide",
+      "avg_logprob": -0.5079249124678354,
+      "no_speech_prob": 0.6272734999656677,
+      "compression_ratio": 2.175
+    },
+    {
+      "start": 79.0,
+      "end": 81.0,
+      "text": "Y si no te lo pide, te lo pide",
+      "avg_logprob": -0.5079249124678354,
+      "no_speech_prob": 0.6272734999656677,
+      "compression_ratio": 2.175
+    },
+    {
+      "start": 81.0,
+      "end": 83.0,
+      "text": "Y si no te lo pide, te lo pide",
+      "avg_logprob": -0.5079249124678354,
+      "no_speech_prob": 0.6272734999656677,
+      "compression_ratio": 2.175
+    },
+    {
+      "start": 83.0,
+      "end": 85.0,
+      "text": "Y si no te lo pide, te lo pide",
+      "avg_logprob": -0.5079249124678354,
+      "no_speech_prob": 0.6272734999656677,
+      "compression_ratio": 2.175
+    },
+    {
+      "start": 85.0,
+      "end": 87.0,
+      "text": "Y si no te lo pide, te lo pide",
+      "avg_logprob": -0.5079249124678354,
+      "no_speech_prob": 0.6272734999656677,
+      "compression_ratio": 2.175
+    },
+    {
+      "start": 87.0,
+      "end": 90.68,
+      "text": "primero que le busque como sea una suma de dinero",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 90.68,
+      "end": 91.88,
+      "text": "¡Tenemos una llola!",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 91.88,
+      "end": 94.88,
+      "text": "Porque te manden allá, no tenemos una llola",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 94.88,
+      "end": 96.32,
+      "text": "Porque te tiran al mar",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 96.32,
+      "end": 97.88,
+      "text": "¡Wuerto rico que la cerca!",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 97.88,
+      "end": 99.28,
+      "text": "Pero monta adenavión",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 99.28,
+      "end": 102.28,
+      "text": "Y si consigues la vista no hay problema en migración",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 102.28,
+      "end": 103.76,
+      "text": "Pero no te payen llola",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 103.76,
+      "end": 105.28,
+      "text": "No te llene el dilución",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 105.28,
+      "end": 108.56,
+      "text": "Que en el canal de la mona te come los diurones",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 108.56,
+      "end": 109.68,
+      "text": "¡No te no tienes la llola!",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 109.68,
+      "end": 111.16,
+      "text": "Porque te manden allá",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 111.16,
+      "end": 112.64,
+      "text": "No te no tienes la llola",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 112.64,
+      "end": 114.16,
+      "text": "Porque te tiran al mar",
+      "avg_logprob": -0.5994248453776042,
+      "no_speech_prob": 0.7095906734466553,
+      "compression_ratio": 1.9251101321585904
+    },
+    {
+      "start": 114.16,
+      "end": 119.92,
+      "text": "que montan en una llola para cambiar tu destino.",
+      "avg_logprob": -0.5150959491729736,
+      "no_speech_prob": 0.4300609529018402,
+      "compression_ratio": 0.9056603773584906
+    },
+    {
+      "start": 120.0,
+      "end": 123.08,
+      "text": "Y después, sin darte, cuéntaba suriendo en el camino",
+      "avg_logprob": -0.5687808296897194,
+      "no_speech_prob": 0.09406112134456635,
+      "compression_ratio": 1.631578947368421
+    },
+    {
+      "start": 123.08,
+      "end": 127.0,
+      "text": "Y después, sin darte, cuéntaba suriendo en el camino",
+      "avg_logprob": -0.5687808296897194,
+      "no_speech_prob": 0.09406112134456635,
+      "compression_ratio": 1.631578947368421
+    },
+    {
+      "start": 144.0,
+      "end": 147.0,
+      "text": "No te mueren, señor, porque te va a rejeñar",
+      "avg_logprob": -0.5687808296897194,
+      "no_speech_prob": 0.09406112134456635,
+      "compression_ratio": 1.631578947368421
+    },
+    {
+      "start": 147.0,
+      "end": 150.32,
+      "text": "No te no ven esa llora porque te quieran al mar",
+      "avg_logprob": -0.621726064970999,
+      "no_speech_prob": 0.529598593711853,
+      "compression_ratio": 1.7449392712550607
+    },
+    {
+      "start": 150.32,
+      "end": 153.4,
+      "text": "En el mundo y vivido que no quieren trabajar",
+      "avg_logprob": -0.621726064970999,
+      "no_speech_prob": 0.529598593711853,
+      "compression_ratio": 1.7449392712550607
+    },
+    {
+      "start": 153.4,
+      "end": 156.4,
+      "text": "Están conquistando que te para viajar por el mar",
+      "avg_logprob": -0.621726064970999,
+      "no_speech_prob": 0.529598593711853,
+      "compression_ratio": 1.7449392712550607
+    },
+    {
+      "start": 156.4,
+      "end": 159.4,
+      "text": "Si hacen miles de promesa pero te piden primero",
+      "avg_logprob": -0.621726064970999,
+      "no_speech_prob": 0.529598593711853,
+      "compression_ratio": 1.7449392712550607
+    },
+    {
+      "start": 159.4,
+      "end": 162.6,
+      "text": "Que le busquen, como se hace una suma de dinero",
+      "avg_logprob": -0.621726064970999,
+      "no_speech_prob": 0.529598593711853,
+      "compression_ratio": 1.7449392712550607
+    },
+    {
+      "start": 162.6,
+      "end": 165.0,
+      "text": "No te mueres, señora, porque te va a traer",
+      "avg_logprob": -0.621726064970999,
+      "no_speech_prob": 0.529598593711853,
+      "compression_ratio": 1.7449392712550607
+    },
+    {
+      "start": 165.0,
+      "end": 168.0,
+      "text": "No te mueres, señora, porque te quieran al mar",
+      "avg_logprob": -0.621726064970999,
+      "no_speech_prob": 0.529598593711853,
+      "compression_ratio": 1.7449392712550607
+    },
+    {
+      "start": 168.0,
+      "end": 171.0,
+      "text": "Usted es rico que la cerca pero monta donavión",
+      "avg_logprob": -0.621726064970999,
+      "no_speech_prob": 0.529598593711853,
+      "compression_ratio": 1.7449392712550607
+    },
+    {
+      "start": 171.0,
+      "end": 174.0,
+      "text": "Y si consigues la vista no hay problema en negación",
+      "avg_logprob": -0.621726064970999,
+      "no_speech_prob": 0.529598593711853,
+      "compression_ratio": 1.7449392712550607
+    },
+    {
+      "start": 174.0,
+      "end": 177.0,
+      "text": "Pero no te vayan yola, no te llenen diluciones",
+      "avg_logprob": -0.5568102107328528,
+      "no_speech_prob": 0.21630851924419403,
+      "compression_ratio": 1.1204819277108433
+    },
+    {
+      "start": 177.0,
+      "end": 180.0,
+      "text": "Y en el canal de la mona te gomen los víburos",
+      "avg_logprob": -0.5568102107328528,
+      "no_speech_prob": 0.21630851924419403,
+      "compression_ratio": 1.1204819277108433
+    }
+  ]
+}

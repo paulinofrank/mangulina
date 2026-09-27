@@ -1,0 +1,130 @@
+{
+  "source": "C:\\Users\\fvpg\\OneDrive\\Downloads\\LOS ARREGLOS DE SONY OVALLES_part-09.mp3",
+  "part": 9,
+  "duration": 899.989,
+  "duration_after_vad": 363.764,
+  "model": "faster-whisper-small-int8",
+  "complete": true,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 28.11,
+      "text": "Lejos, porque ahora están el 256 de la calle Essex. Heavenly Donuts Cafe de donuts, cosines, sandwiches, muffins y mucho más. 256 de la calle Essexes en Lawrence. Ahí está Heavenly Donuts. Remodelado Atenciones de Primera En inglés y en español. Heavenly Donuts en la Essex El mejor lugar para tomarte el mejor café. Heavenly Donuts",
+      "avg_logprob": -0.34674229966588765,
+      "no_speech_prob": 0.21194221079349518,
+      "compression_ratio": 1.588785046728972
+    },
+    {
+      "start": 28.11,
+      "end": 30.09,
+      "text": "Heavenly Tronards.",
+      "avg_logprob": -0.8252689242362976,
+      "no_speech_prob": 0.3408190906047821,
+      "compression_ratio": 0.7037037037037037
+    },
+    {
+      "start": 30.23,
+      "end": 59.92,
+      "text": "En el 2 25 de la calle es Exelores. Hay un lugar único en su clase. Aroma Espa.",
+      "avg_logprob": -0.727730655670166,
+      "no_speech_prob": 0.44210854172706604,
+      "compression_ratio": 1.0
+    },
+    {
+      "start": 59.92,
+      "end": 80.16,
+      "text": "En la Roma Spa.",
+      "avg_logprob": -1.1670958995819092,
+      "no_speech_prob": 0.4461090862751007,
+      "compression_ratio": 0.6666666666666666
+    },
+    {
+      "start": 80.16,
+      "end": 109.65,
+      "text": "Ave, más de noche es la única tienda que te fría cualquier teléfono iPhone o Galaxy. Sin importar tu crédito y con un mínimo de inicial de hasta 10 dólares. Y págalo como puedas y cuando quiera regala un celular sin complicarte la vida. Ven a The Noche donde está Miguelo el presidente de la ESEX.",
+      "avg_logprob": -0.27338379736130053,
+      "no_speech_prob": 0.03217684105038643,
+      "compression_ratio": 1.3584070796460177
+    },
+    {
+      "start": 109.65,
+      "end": 130.58,
+      "text": "2500.",
+      "avg_logprob": -1.3387601673603058,
+      "no_speech_prob": 0.18462663888931274,
+      "compression_ratio": 0.42857142857142855
+    },
+    {
+      "start": 130.58,
+      "end": 159.08,
+      "text": "Marcos.",
+      "avg_logprob": -1.5485106110572815,
+      "no_speech_prob": 0.18318471312522888,
+      "compression_ratio": 0.5
+    },
+    {
+      "start": 159.57,
+      "end": 212.04,
+      "text": "Richie Herrera presenta el especial. Una hora con el artista y su éxito, en los clásicos El Especial del Bolero.",
+      "avg_logprob": -0.2093977095449672,
+      "no_speech_prob": 0.0089252395555377,
+      "compression_ratio": 1.1057692307692308
+    },
+    {
+      "start": 212.63,
+      "end": 257.64,
+      "text": "Ser el dueño del mundo me creía. Ella caminé, milés camino. Víe por su culpa mi destino. No supo comprender cuánto la mada. Y de alerse mi vida toda mi vida se lleva. Viejo amigo quisiera hoy poder odiarla y es inútil.",
+      "avg_logprob": -0.3595076450279781,
+      "no_speech_prob": 0.4363623857498169,
+      "compression_ratio": 1.3372781065088757
+    },
+    {
+      "start": 258.74,
+      "end": 310.22,
+      "text": "La música.",
+      "avg_logprob": -2.138554036617279,
+      "no_speech_prob": 0.6310738325119019,
+      "compression_ratio": 0.6
+    },
+    {
+      "start": 310.74,
+      "end": 353.64,
+      "text": "Mi calil semidiva, mi vida se llevó. Y cuando quisiera hoy poder odiarla y es inútil pues siento que mi alma va a buscarla. He tratado tantas y tantas veces de olvidarla todo en vano y en vez de maldicirla yo la amo",
+      "avg_logprob": -0.2544109365253737,
+      "no_speech_prob": 0.5451052784919739,
+      "compression_ratio": 1.4064516129032258
+    },
+    {
+      "start": 365.36,
+      "end": 407.88,
+      "text": "En los clásicos de fin de semana. Esta es...",
+      "avg_logprob": -0.41480488960559553,
+      "no_speech_prob": 0.3922707438468933,
+      "compression_ratio": 0.8846153846153846
+    },
+    {
+      "start": 411.48,
+      "end": 700.43,
+      "text": "Hágame el favor y tráigame 12 pesas más. Gracias.",
+      "avg_logprob": -0.4101980659696791,
+      "no_speech_prob": 0.33778294920921326,
+      "compression_ratio": 0.9137931034482759
+    },
+    {
+      "start": 707.09,
+      "end": 781.71,
+      "text": "En las boderas, en los tazis. En los salones de belleza. En los restaurantes. En la barbería. Un solo radio clásico de fin de semana La hora del bolero.",
+      "avg_logprob": -0.35621095498402916,
+      "no_speech_prob": 0.2514715790748596,
+      "compression_ratio": 1.3025210084033614
+    },
+    {
+      "start": 781.97,
+      "end": 808.84,
+      "text": "El chico.",
+      "avg_logprob": -2.1521089553833006,
+      "no_speech_prob": 0.5178477764129639,
+      "compression_ratio": 0.5555555555555556
+    }
+  ]
+}

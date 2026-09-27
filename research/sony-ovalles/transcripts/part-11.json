@@ -1,0 +1,74 @@
+{
+  "source": "C:\\Users\\fvpg\\OneDrive\\Downloads\\LOS ARREGLOS DE SONY OVALLES_part-11.mp3",
+  "part": 11,
+  "duration": 899.989,
+  "duration_after_vad": 203.357,
+  "model": "faster-whisper-small-int8",
+  "complete": true,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 28.65,
+      "text": "¡Suscríbete!",
+      "avg_logprob": -1.0044505596160889,
+      "no_speech_prob": 0.6403365135192871,
+      "compression_ratio": 0.6521739130434783
+    },
+    {
+      "start": 50.48,
+      "end": 78.67,
+      "text": "Si cambia mi destino y si la suerte me es feliz, consagro mi vivir para adorarte. Quiero besar tus ojos tan divinos. Quiero hacerte una mujer feliz. Espero sea así porque terrible mi aflicción, sufrir no puedo más tanta marmura.",
+      "avg_logprob": -0.19197946228086948,
+      "no_speech_prob": 0.40934330224990845,
+      "compression_ratio": 1.3727810650887573
+    },
+    {
+      "start": 79.03,
+      "end": 157.9,
+      "text": "Reina de mi amor, mi unico anhelo. Mi ilusión sin ti yo no puedo vivir.",
+      "avg_logprob": -0.40049369384845096,
+      "no_speech_prob": 0.33498913049697876,
+      "compression_ratio": 0.9605263157894737
+    },
+    {
+      "start": 158.0,
+      "end": 190.19,
+      "text": "Hay que salvar la tempesta. Bien se espera a que una nueva paz renasca cuando empecemos a sentir cansanción y se confundía su friliento lo conveniente es meditar no sea que después lloremos de arrepentimiento",
+      "avg_logprob": -0.3960555976087397,
+      "no_speech_prob": 0.554988443851471,
+      "compression_ratio": 1.4324324324324325
+    },
+    {
+      "start": 200.05,
+      "end": 256.88,
+      "text": "¿Qué antes de ver? Roto este amor. Quiero saber, muerto. Dos enubles nuestro limpio cielo Cuando aparezca en nuestro amor borrasca Que salvar la té había entonces esperar A que una nueva paz renasca",
+      "avg_logprob": -0.3615693644835399,
+      "no_speech_prob": 0.37081748247146606,
+      "compression_ratio": 1.3355263157894737
+    },
+    {
+      "start": 257.2,
+      "end": 298.8,
+      "text": "Cuando empecemos a sentir cansanción y se confundan dicha insufrimiento, lo conveniente es meditar no sea que después lloremos de arrepentimiento. Que antes debes roto este amor quiero saberme muerto",
+      "avg_logprob": -0.20626819409705974,
+      "no_speech_prob": 0.6281899213790894,
+      "compression_ratio": 1.3835616438356164
+    },
+    {
+      "start": 303.76,
+      "end": 869.96,
+      "text": "La hora del bolero. Salsa de segunda decepción y ahora, Diosos mis errores pensan como los demás. Yo a mí me escucha los demás. Soy Diana Pilpo y te invito a que escuches clásicos de fin de semana con Richie Herrera el papá de las clases. Con Richie Herrera el papa de los clásicos",
+      "avg_logprob": -0.4054887715058449,
+      "no_speech_prob": 0.07550102472305298,
+      "compression_ratio": 1.5454545454545454
+    },
+    {
+      "start": 886.55,
+      "end": 899.99,
+      "text": "Los galdenías para ti. Con ellas quiero decir que hago no mi vida.",
+      "avg_logprob": -0.7102268702454038,
+      "no_speech_prob": 0.3146807849407196,
+      "compression_ratio": 0.9577464788732394
+    }
+  ]
+}

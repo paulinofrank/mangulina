@@ -1,0 +1,138 @@
+{
+  "source": "C:\\Users\\fvpg\\OneDrive\\Downloads\\LOS ARREGLOS DE SONY OVALLES_part-03.mp3",
+  "part": 3,
+  "duration": 899.989,
+  "duration_after_vad": 399.864,
+  "model": "faster-whisper-small-int8",
+  "complete": true,
+  "segments": [
+    {
+      "start": 186.39,
+      "end": 227.4,
+      "text": "Que bueno. Les vamos a saludar a mi hermano, Henry Balbuena y anda por allá en compañía de Luis Calla en Alentampo, Silvania. Richie Herrera. Rocándote. Cácicos de fin de semana. Cácicos... de semana. Mi hermano Luis Lantigua. Hermano también. De mi hermana también. Eh! Joseina Lantigua. Y de esa leyenda que se nos fue eh",
+      "avg_logprob": -0.3800131076747931,
+      "no_speech_prob": 0.021493524312973022,
+      "compression_ratio": 1.5299539170506913
+    },
+    {
+      "start": 228.56,
+      "end": 262.89,
+      "text": "En el final de semana.",
+      "avg_logprob": -1.405219214303153,
+      "no_speech_prob": 0.4156286120414734,
+      "compression_ratio": 0.7419354838709677
+    },
+    {
+      "start": 264.02,
+      "end": 297.32,
+      "text": "Nueve Mi Pérez te espera en Aroma Spa. 2,25 de la calle Essex. Ahí está Nueve Mi Pélez con los masajes. Todo tipo de masajes. De relajación. Linfáticos. De drenaje. Terapia de puntos. Todo eso. En las manos expertas de Nueve Mi Pémez. Dale un chequeirao. 2,25 de La Calle. Essex en Aromas Spa. Usted entra ahí y pregunta por Nueve Mi. Hace mismo?",
+      "avg_logprob": -0.34819754161711397,
+      "no_speech_prob": 0.006356837227940559,
+      "compression_ratio": 1.517094017094017
+    },
+    {
+      "start": 298.39,
+      "end": 320.56,
+      "text": "Si vas para República Dominicana en esta Navidad que viene, una navida especial porque usted sabe como estamos. Pero si vas para allá y no tienes en qué montarte te voy a recomendar desde aquí los servicios de Global Renta Cars saliendo del aeropuerto Sibao ahí mismo está Global Renta Cars. Te entra ahí le dice a Tony que yo lo mandé. ¿Te verás?",
+      "avg_logprob": -0.3199099887942159,
+      "no_speech_prob": 0.0746990293264389,
+      "compression_ratio": 1.497907949790795
+    },
+    {
+      "start": 320.82,
+      "end": 370.57,
+      "text": "Los buenos precios, carros cómodos nuevos y bienizados. Buen trato, no lo engañan. Debe tener cuidado si nos hace en otro lugar. Global rental car saliendo del aeropuerto Sibao. Este súper tema. Este súper tema también los regló Sony Ovalles. Ay Dios mío.",
+      "avg_logprob": -0.28023975684836105,
+      "no_speech_prob": 0.13437463343143463,
+      "compression_ratio": 1.3842105263157896
+    },
+    {
+      "start": 373.33,
+      "end": 408.11,
+      "text": "Debirle que me maldiava. Es la primera vez que te vas de mi. Es si a mi madre al verte para mí, es la primera vez que te va de mi. Sonos brillaban de tanto sufrir. Es la primera vez en que dolor...",
+      "avg_logprob": -0.5655855182874001,
+      "no_speech_prob": 0.5915330052375793,
+      "compression_ratio": 1.6048387096774193
+    },
+    {
+      "start": 479.51,
+      "end": 636.46,
+      "text": "Yo sé que la distancia no te alejará de mí Decía a mi madre al verme partir Y que tus 20 años yo los volveré a vivir Mis labios temblaban un sentí en sentir Es la primera vez que te va a ir De saber que yo no le fallo.",
+      "avg_logprob": -0.33083178054901863,
+      "no_speech_prob": 0.3366582989692688,
+      "compression_ratio": 1.3452380952380953
+    },
+    {
+      "start": 636.53,
+      "end": 665.2,
+      "text": "Eso es así, clásicos de fin de semana. Qué bueno Luis Nin. Salud para usted también hermano. Ahí está disfrutando a través de YouTube. También José Rivera dice Richie que lo quejo. Se desgelado en disfrutes. Qué bueno. Qué bueno. Así mismo haganlo usted. A las cinco vengo con el especial pero vengo en boleros hoy. Vengo en Chupé. Vengo en Peba. Va ya preparando. Va ya preparando su equipaje",
+      "avg_logprob": -0.3295250035546444,
+      "no_speech_prob": 0.0731668770313263,
+      "compression_ratio": 1.5960784313725491
+    },
+    {
+      "start": 665.46,
+      "end": 695.15,
+      "text": "Porque a las cinco esta tarde vengo en boleros con el especial de los clásicos. Para que lo disfrutemos, together. Ciderview Health, la rehab. Para su cuidado de corto o de largo plazo. Con un programa especial para la comunidad hispana. Servicios religiosos, buena comida, intérpretes. Llámate ahí tú sabes qué es. Llámate a la bella Marilin Valdés. 978-943 3774 Ella es la patrona ahí",
+      "avg_logprob": -0.3881805820898576,
+      "no_speech_prob": 0.06583546102046967,
+      "compression_ratio": 1.4831460674157304
+    },
+    {
+      "start": 695.44,
+      "end": 727.08,
+      "text": "Cuidado postoperatorio de corto o de largo plazo. Ahí está el centro de cuidados. Cedarview Health & Rehab. Te repito el número 978-943-3774. Marilyn Baltes. Contantino, está conmigo. Dice hola. Con...con... Constantino. Una S ahí. Constantino. Bien. Qué bueno. ¿Qué tal de YouTube?",
+      "avg_logprob": -0.4610436230563046,
+      "no_speech_prob": 0.020284127444028854,
+      "compression_ratio": 1.3534883720930233
+    },
+    {
+      "start": 727.35,
+      "end": 749.61,
+      "text": "Hágase socio del canal y vamos a disfrutar por ahí muchísimas cosas. Dele share, dele like. Eso es todo lo que le pedimos. Lo demás es gratis. Clásicos de fin de semana hasta las seis. El espectáculo del radio. El maestro Sony Ovalles ha sido responsable de la mayoría",
+      "avg_logprob": -0.22848055159880054,
+      "no_speech_prob": 0.04827343299984932,
+      "compression_ratio": 1.401015228426396
+    },
+    {
+      "start": 749.97,
+      "end": 779.47,
+      "text": "Richie Herrera.",
+      "avg_logprob": -0.583397646745046,
+      "no_speech_prob": 0.015936944633722305,
+      "compression_ratio": 0.6666666666666666
+    },
+    {
+      "start": 781.2,
+      "end": 810.83,
+      "text": "Cuando se fue a vivir a Castillo con apenas 15 años le ayudaba a un tío llamado Chicho Ovalles, hermano mayor de su padre. Con un colmado y una gasolinera que el tío tenía en ocasión estando en el mostrador del colmado tocando conga al ritmo de un ícono como el conjunto cubano La Sonora Matanzera. Llegó el maestro de la banda de música del pueblo y entonces dijo pero tú tienes suen... tu tienes tiempo",
+      "avg_logprob": -0.1790611601688645,
+      "no_speech_prob": 0.07239538431167603,
+      "compression_ratio": 1.544776119402985
+    },
+    {
+      "start": 811.44,
+      "end": 837.2,
+      "text": "Se quedó escuchándolo por algunos segundos y le dijo, te necesito allá. Lo invitó a formar parte del Batón Ballet de la Escuela Básica de Castillo donde había llegado unos redoblantes y unos instrumentos pero no había nadie que los tocara. Esa fue la primera experiencia del maestro Sony Ovalles lo demás sigue siendo historia",
+      "avg_logprob": -0.1262952359393239,
+      "no_speech_prob": 0.02534942515194416,
+      "compression_ratio": 1.4608695652173913
+    },
+    {
+      "start": 837.52,
+      "end": 874.48,
+      "text": "Este tema, tal vez usted lo conoce. Tal vez es arreglo del maestro Sony Ovalles. Le pusimos candado al almacén de los clásicos. ¿Qué dijiste? Qué pena. ¿Estás hablando a mí? Me estás hablando a mí. No te podemos prestar la llave. Clásicos de fin de semana. Otra de las ollas musicales... Arregladas por el maestro",
+      "avg_logprob": -0.17676005376282558,
+      "no_speech_prob": 0.02021370455622673,
+      "compression_ratio": 1.5116279069767442
+    },
+    {
+      "start": 874.9,
+      "end": 895.82,
+      "text": "Sony Ovalles.",
+      "avg_logprob": -0.20943737030029297,
+      "no_speech_prob": 0.07835022360086441,
+      "compression_ratio": 0.6363636363636364
+    }
+  ]
+}

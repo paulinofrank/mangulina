@@ -1,0 +1,1013 @@
+[
+  {
+    "part": 3,
+    "clip_start": 15,
+    "clip_end": 60,
+    "segments": [
+      {
+        "start": 15.0,
+        "end": 17.0,
+        "text": "No sé qué despreer",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 17.0,
+        "end": 19.0,
+        "text": "Venga sin miedo, familia",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 19.0,
+        "end": 21.0,
+        "text": "La vieja mía no tiene problema",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 21.0,
+        "end": 23.0,
+        "text": "Y casa de mi mamá",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 23.0,
+        "end": 25.0,
+        "text": "No sé qué despreere",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 25.0,
+        "end": 27.0,
+        "text": "Si no digas el usted, oña, voy a",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 27.0,
+        "end": 29.0,
+        "text": "¿Eh?",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 29.0,
+        "end": 31.0,
+        "text": "Y casa de mi mamás",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 31.0,
+        "end": 33.0,
+        "text": "No se que despreere",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 33.0,
+        "end": 35.0,
+        "text": "¡Venga!",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 35.0,
+        "end": 37.0,
+        "text": "¡Venga!",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 37.0,
+        "end": 39.0,
+        "text": "¡Venga!",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 39.0,
+        "end": 41.0,
+        "text": "¡Venga!",
+        "avg_logprob": -0.5576407034462745
+      },
+      {
+        "start": 41.0,
+        "end": 43.0,
+        "text": "¡Venga!",
+        "avg_logprob": -0.5576407034462745
+      }
+    ]
+  },
+  {
+    "part": 4,
+    "clip_start": 330,
+    "clip_end": 375,
+    "segments": [
+      {
+        "start": 330.0,
+        "end": 336.4,
+        "text": "No sé qué hacer, no sé qué hacer, no se qué hacer, no sé que hacer, no sé qué",
+        "avg_logprob": -0.9922190702186441
+      },
+      {
+        "start": 336.4,
+        "end": 341.4,
+        "text": "hacer, no sé qué decir, no sé qué hacer.",
+        "avg_logprob": -0.9922190702186441
+      },
+      {
+        "start": 341.4,
+        "end": 344.4,
+        "text": "Sufrir, sufrir ¿para qué?",
+        "avg_logprob": -0.9922190702186441
+      },
+      {
+        "start": 360.0,
+        "end": 372.0,
+        "text": "Música",
+        "avg_logprob": -0.9783195331692696
+      },
+      {
+        "start": 372.0,
+        "end": 375.0,
+        "text": "Son mis días como dojes mis no...",
+        "avg_logprob": -0.9783195331692696
+      }
+    ]
+  },
+  {
+    "part": 5,
+    "clip_start": 290,
+    "clip_end": 335,
+    "segments": [
+      {
+        "start": 290.0,
+        "end": 293.08,
+        "text": "a placa que llegaron los dosarios",
+        "avg_logprob": -0.9861777858300642
+      },
+      {
+        "start": 293.08,
+        "end": 296.08,
+        "text": "¡Toma bien, hermanos!",
+        "avg_logprob": -0.9861777858300642
+      },
+      {
+        "start": 320.0,
+        "end": 331.0,
+        "text": "y como es y yo no sé y yo no sé y como es yo lo baile en la capital y en el fibao",
+        "avg_logprob": -0.6922641288150441
+      },
+      {
+        "start": 331.0,
+        "end": 335.0,
+        "text": "yo lo bosse y he bondado lo vacilé",
+        "avg_logprob": -0.6922641288150441
+      }
+    ]
+  },
+  {
+    "part": 6,
+    "clip_start": 60,
+    "clip_end": 105,
+    "segments": [
+      {
+        "start": 60.0,
+        "end": 62.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 62.0,
+        "end": 64.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 64.0,
+        "end": 66.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 66.0,
+        "end": 68.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 68.0,
+        "end": 70.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 70.0,
+        "end": 72.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 72.0,
+        "end": 74.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 74.0,
+        "end": 76.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 76.0,
+        "end": 78.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 78.0,
+        "end": 80.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 80.0,
+        "end": 82.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 82.0,
+        "end": 84.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 84.0,
+        "end": 86.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      },
+      {
+        "start": 86.0,
+        "end": 88.0,
+        "text": "y",
+        "avg_logprob": -0.6687737120823427
+      }
+    ]
+  },
+  {
+    "part": 6,
+    "clip_start": 300,
+    "clip_end": 345,
+    "segments": [
+      {
+        "start": 300.0,
+        "end": 308.16,
+        "text": "No me preocupes, no me preocupes, no te preocupes, no te",
+        "avg_logprob": -0.7952563613653183
+      },
+      {
+        "start": 308.16,
+        "end": 309.16,
+        "text": "preocupes.",
+        "avg_logprob": -0.7952563613653183
+      },
+      {
+        "start": 309.16,
+        "end": 313.16,
+        "text": "Yo voy a la cocina y abro la heladera.",
+        "avg_logprob": -0.7952563613653183
+      },
+      {
+        "start": 313.16,
+        "end": 317.16,
+        "text": "Se acabó la leche como lo que sea.",
+        "avg_logprob": -0.7952563613653183
+      },
+      {
+        "start": 317.16,
+        "end": 320.16,
+        "text": "Y abro la ventana y dejo que me toques.",
+        "avg_logprob": -0.7952563613653183
+      },
+      {
+        "start": 320.16,
+        "end": 321.16,
+        "text": "Ay!",
+        "avg_logprob": -0.7952563613653183
+      },
+      {
+        "start": 321.16,
+        "end": 326.16,
+        "text": "Qué alegría otro día viva.",
+        "avg_logprob": -0.7952563613653183
+      },
+      {
+        "start": 330.0,
+        "end": 336.0,
+        "text": "En la radio una voz me canta",
+        "avg_logprob": -0.47284239530563354
+      },
+      {
+        "start": 337.0,
+        "end": 342.0,
+        "text": "Y lo despierto a él, muy buenos días, amor",
+        "avg_logprob": -0.47284239530563354
+      },
+      {
+        "start": 344.0,
+        "end": 345.0,
+        "text": "Despiertate",
+        "avg_logprob": -0.47284239530563354
+      }
+    ]
+  },
+  {
+    "part": 6,
+    "clip_start": 760,
+    "clip_end": 805,
+    "segments": [
+      {
+        "start": 760.0,
+        "end": 765.0,
+        "text": "y ahora te ves descoberto y se te olvidó nada",
+        "avg_logprob": -0.6182075037020389
+      },
+      {
+        "start": 771.0,
+        "end": 775.0,
+        "text": "Tapilla, pila, pilao, tapilao, pila, pila",
+        "avg_logprob": -0.6182075037020389
+      },
+      {
+        "start": 775.0,
+        "end": 779.0,
+        "text": "Tapila, pila, pilau, tapilao, pilao, pilao",
+        "avg_logprob": -0.6182075037020389
+      },
+      {
+        "start": 779.0,
+        "end": 782.0,
+        "text": "Pilao, pila o tapilao, tapilao, piyao",
+        "avg_logprob": -0.6182075037020389
+      },
+      {
+        "start": 782.0,
+        "end": 785.0,
+        "text": "Tapilao, pila ou pila ou tapilao",
+        "avg_logprob": -0.6182075037020389
+      },
+      {
+        "start": 785.0,
+        "end": 787.0,
+        "text": "Tapilao, pilaa o pilao",
+        "avg_logprob": -0.6182075037020389
+      },
+      {
+        "start": 787.0,
+        "end": 788.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 788.0,
+        "end": 789.0,
+        "text": "en el malecón",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 789.0,
+        "end": 790.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 790.0,
+        "end": 791.0,
+        "text": "en el malecón",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 791.0,
+        "end": 792.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 792.0,
+        "end": 793.0,
+        "text": "en el malecón",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 793.0,
+        "end": 794.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 794.0,
+        "end": 795.0,
+        "text": "en el malecón",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 795.0,
+        "end": 796.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 796.0,
+        "end": 797.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 797.0,
+        "end": 798.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 798.0,
+        "end": 799.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 799.0,
+        "end": 800.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 800.0,
+        "end": 801.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 801.0,
+        "end": 802.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 802.0,
+        "end": 803.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      },
+      {
+        "start": 803.0,
+        "end": 804.0,
+        "text": "en el estadio",
+        "avg_logprob": -0.27430635634983813
+      }
+    ]
+  },
+  {
+    "part": 7,
+    "clip_start": 210,
+    "clip_end": 255,
+    "segments": [
+      {
+        "start": 210.0,
+        "end": 213.5,
+        "text": "Los demás tienen que respetar.",
+        "avg_logprob": -0.5051268230785023
+      },
+      {
+        "start": 240.0,
+        "end": 244.48,
+        "text": "y nos ha colar con ciro, me dijo que no fue ya",
+        "avg_logprob": -0.8240981806408275
+      },
+      {
+        "start": 244.48,
+        "end": 249.08,
+        "text": "y nos ha colar contigo, pues no se me dan más mal",
+        "avg_logprob": -0.8240981806408275
+      },
+      {
+        "start": 249.08,
+        "end": 251.44,
+        "text": "vénme, tendréme un donir",
+        "avg_logprob": -0.8240981806408275
+      },
+      {
+        "start": 251.44,
+        "end": 253.64,
+        "text": "me dijo que no fue la",
+        "avg_logprob": -0.8240981806408275
+      },
+      {
+        "start": 253.64,
+        "end": 254.84,
+        "text": "vénme, tendreme un...",
+        "avg_logprob": -0.8240981806408275
+      }
+    ]
+  },
+  {
+    "part": 7,
+    "clip_start": 320,
+    "clip_end": 365,
+    "segments": [
+      {
+        "start": 320.0,
+        "end": 322.0,
+        "text": "¡Vamos!",
+        "avg_logprob": -0.6069322891955106
+      },
+      {
+        "start": 327.0,
+        "end": 329.0,
+        "text": "De New York",
+        "avg_logprob": -0.6069322891955106
+      },
+      {
+        "start": 338.0,
+        "end": 340.0,
+        "text": "You want to come on and ask me",
+        "avg_logprob": -0.6069322891955106
+      },
+      {
+        "start": 340.0,
+        "end": 342.0,
+        "text": "Is the music you want to dance?",
+        "avg_logprob": -0.6069322891955106
+      },
+      {
+        "start": 343.0,
+        "end": 345.0,
+        "text": "Is the music from Africa",
+        "avg_logprob": -0.6069322891955106
+      },
+      {
+        "start": 345.0,
+        "end": 347.0,
+        "text": "I say I'm saying, I say I'm saying",
+        "avg_logprob": -0.6069322891955106
+      },
+      {
+        "start": 347.0,
+        "end": 365.0,
+        "text": "Ana María, dime qué sientes cuando me paran así deprenden",
+        "avg_logprob": -0.727667303646312
+      }
+    ]
+  },
+  {
+    "part": 7,
+    "clip_start": 540,
+    "clip_end": 585,
+    "segments": [
+      {
+        "start": 540.0,
+        "end": 553.0,
+        "text": "Se quiere hacer sistema de la sociedad, se me sientes que la vida te ha dado muy mal",
+        "avg_logprob": -0.5034850508558983
+      },
+      {
+        "start": 554.0,
+        "end": 560.0,
+        "text": "No trae un asunto lleno de oscuridad",
+        "avg_logprob": -0.5034850508558983
+      },
+      {
+        "start": 561.0,
+        "end": 566.0,
+        "text": "Eres solo una paloma que empieza a volar",
+        "avg_logprob": -0.5034850508558983
+      }
+    ]
+  },
+  {
+    "part": 7,
+    "clip_start": 660,
+    "clip_end": 705,
+    "segments": [
+      {
+        "start": 660.0,
+        "end": 665.0,
+        "text": "Ya tomado, voy a poseerte",
+        "avg_logprob": -0.40741416753507126
+      },
+      {
+        "start": 669.0,
+        "end": 672.0,
+        "text": "El maestro Sonio Valle es el responsable de este tema",
+        "avg_logprob": -0.40741416753507126
+      },
+      {
+        "start": 682.0,
+        "end": 685.0,
+        "text": "¿Qué te pasa viejo? Año qué te pasa",
+        "avg_logprob": -0.40741416753507126
+      },
+      {
+        "start": 685.5,
+        "end": 688.0,
+        "text": "Ella tiene su maleta preparada",
+        "avg_logprob": -0.40741416753507126
+      },
+      {
+        "start": 688.0,
+        "end": 691.6,
+        "text": "Dicencias que te han votado de la casa",
+        "avg_logprob": -0.5802009886708753
+      },
+      {
+        "start": 691.6,
+        "end": 694.8,
+        "text": "Porque está viejo, porque no sirve pa nada",
+        "avg_logprob": -0.5802009886708753
+      },
+      {
+        "start": 694.8,
+        "end": 698.4,
+        "text": "Las cosas ciegas como tú las votan",
+        "avg_logprob": -0.5802009886708753
+      },
+      {
+        "start": 698.4,
+        "end": 702.4,
+        "text": "Mas si saben que otro llegará",
+        "avg_logprob": -0.5802009886708753
+      },
+      {
+        "start": 702.4,
+        "end": 705.2,
+        "text": "Pero no llores y en la town",
+        "avg_logprob": -0.5802009886708753
+      }
+    ]
+  },
+  {
+    "part": 7,
+    "clip_start": 820,
+    "clip_end": 865,
+    "segments": [
+      {
+        "start": 820.0,
+        "end": 823.8,
+        "text": "y yo tu mujer",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 823.8,
+        "end": 826.0,
+        "text": "El maestro Soryo Bayez",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 826.0,
+        "end": 827.8,
+        "text": "nos vamos a la salsa ahora",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 829.0,
+        "end": 830.8,
+        "text": "con Atruval hizo este tema",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 830.8,
+        "end": 832.2,
+        "text": "Oye mi voz",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 832.2,
+        "end": 833.8,
+        "text": "suena tu una sola vez el fin",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 833.8,
+        "end": 835.24,
+        "text": "Ah me salió un vivo ahí, por favor",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 835.24,
+        "end": 836.8,
+        "text": "no te pierdas",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 836.8,
+        "end": 839.2,
+        "text": "no salga conmigo tú no estés",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 840.2,
+        "end": 841.8,
+        "text": "Oye mi voz",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 841.8,
+        "end": 843.2,
+        "text": "suena tu una sola veces el fin",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 843.2,
+        "end": 844.2,
+        "text": "querer",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 844.2,
+        "end": 845.2,
+        "text": "tus cariñoes que son",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 845.2,
+        "end": 846.4,
+        "text": "tu amor te pierdes",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 846.4,
+        "end": 848.6,
+        "text": "o ganó conmigo tú no esté",
+        "avg_logprob": -0.8501196170416404
+      },
+      {
+        "start": 848.6,
+        "end": 850.6,
+        "text": "Contigo",
+        "avg_logprob": -0.7300510795748963
+      },
+      {
+        "start": 850.6,
+        "end": 852.6,
+        "text": "No quiero pa' patir mi decho",
+        "avg_logprob": -0.7300510795748963
+      },
+      {
+        "start": 852.6,
+        "end": 854.6,
+        "text": "Mi pam, mi binto, por mi po'",
+        "avg_logprob": -0.7300510795748963
+      },
+      {
+        "start": 854.6,
+        "end": 856.6,
+        "text": "El maestro Soryo Valles es responsable",
+        "avg_logprob": -0.7300510795748963
+      },
+      {
+        "start": 856.6,
+        "end": 858.6,
+        "text": "De este tema de Sergio",
+        "avg_logprob": -0.7300510795748963
+      }
+    ]
+  },
+  {
+    "part": 8,
+    "clip_start": 215,
+    "clip_end": 260,
+    "segments": [
+      {
+        "start": 215.0,
+        "end": 217.0,
+        "text": "¡Avustador!",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 217.0,
+        "end": 219.0,
+        "text": "¡Avustador, avu-sador!",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 219.0,
+        "end": 221.0,
+        "text": "¡Avustador a-vustador!",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 221.0,
+        "end": 223.0,
+        "text": "¡Avustador",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 223.0,
+        "end": 225.0,
+        "text": "¡Avustador",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 225.0,
+        "end": 227.0,
+        "text": "¡Avustador",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 227.0,
+        "end": 229.0,
+        "text": "¡Avustador",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 229.0,
+        "end": 231.0,
+        "text": "¡Avustador",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 231.0,
+        "end": 233.0,
+        "text": "¡Avustador",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 233.0,
+        "end": 235.0,
+        "text": "¡Avustador",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 235.0,
+        "end": 237.0,
+        "text": "¡Avustador",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 237.0,
+        "end": 239.0,
+        "text": "¡Avustador",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 239.0,
+        "end": 241.0,
+        "text": "¡Avustador",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 241.0,
+        "end": 243.0,
+        "text": "¡Avustador",
+        "avg_logprob": -0.4114814970576972
+      },
+      {
+        "start": 243.0,
+        "end": 250.4,
+        "text": "Vivo que la mesa consumió",
+        "avg_logprob": -0.8318808272480964
+      },
+      {
+        "start": 250.4,
+        "end": 253.9,
+        "text": "Se suya como el comejé en mi sentimiento",
+        "avg_logprob": -0.8318808272480964
+      },
+      {
+        "start": 253.9,
+        "end": 255.4,
+        "text": "Como el gente está cayendo",
+        "avg_logprob": -0.8318808272480964
+      },
+      {
+        "start": 255.4,
+        "end": 259.9,
+        "text": "Como el gente está comiendo",
+        "avg_logprob": -0.8318808272480964
+      }
+    ]
+  },
+  {
+    "part": 8,
+    "clip_start": 395,
+    "clip_end": 430,
+    "segments": [
+      {
+        "start": 395.0,
+        "end": 400.0,
+        "text": "A tu mujer no la deje bailar",
+        "avg_logprob": -0.3984670900318721
+      },
+      {
+        "start": 400.0,
+        "end": 405.0,
+        "text": "Mira que una vez por un descuido",
+        "avg_logprob": -0.3984670900318721
+      },
+      {
+        "start": 405.0,
+        "end": 408.0,
+        "text": "Mi casa se semejó",
+        "avg_logprob": -0.3984670900318721
+      },
+      {
+        "start": 408.0,
+        "end": 411.0,
+        "text": "También me decía a usted",
+        "avg_logprob": -0.3984670900318721
+      },
+      {
+        "start": 413.0,
+        "end": 415.0,
+        "text": "Nunca le compré un caldo",
+        "avg_logprob": -0.3984670900318721
+      },
+      {
+        "start": 416.0,
+        "end": 420.0,
+        "text": "Que si un semáforo la manda para él",
+        "avg_logprob": -0.3984670900318721
+      },
+      {
+        "start": 421.0,
+        "end": 423.0,
+        "text": "Y ella lo logró violar",
+        "avg_logprob": -0.3984670900318721
+      },
+      {
+        "start": 423.0,
+        "end": 430.0,
+        "text": "Si el otro que viene a cruzar Se puede asidentar",
+        "avg_logprob": -0.4934045858681202
+      }
+    ]
+  },
+  {
+    "part": 8,
+    "clip_start": 439,
+    "clip_end": 469,
+    "segments": [
+      {
+        "start": 439.0,
+        "end": 451.0,
+        "text": "Yo viví en el pueblo abajo y hablaba de mi familia",
+        "avg_logprob": -0.7439797609410388
+      },
+      {
+        "start": 451.0,
+        "end": 460.0,
+        "text": "En Villa Siervedad que le da un brillo a la Evilla",
+        "avg_logprob": -0.7439797609410388
+      },
+      {
+        "start": 460.0,
+        "end": 467.0,
+        "text": "En Villa yo conocí una chica encantadora",
+        "avg_logprob": -0.7439797609410388
+      }
+    ]
+  },
+  {
+    "part": 8,
+    "clip_start": 490,
+    "clip_end": 535,
+    "segments": [
+      {
+        "start": 490.0,
+        "end": 502.56,
+        "text": "que mucho le debe el merengue a Sonio Valles este tema lo usan mucho, lo tocan mucho ahora",
+        "avg_logprob": -0.36031320634877906
+      },
+      {
+        "start": 502.56,
+        "end": 510.04,
+        "text": "en tiempo navideño con este cerramos ya por hoy los que se llama parte del repertorio",
+        "avg_logprob": -0.36031320634877906
+      },
+      {
+        "start": 510.04,
+        "end": 515.04,
+        "text": "hecho arreglado por el maestro Sonio Valles",
+        "avg_logprob": -0.3465806023398442
+      },
+      {
+        "start": 519.04,
+        "end": 522.04,
+        "text": "si usted se topa por ahí con el maestro Sonio",
+        "avg_logprob": -0.3465806023398442
+      },
+      {
+        "start": 522.04,
+        "end": 524.04,
+        "text": "Valles cuando vaya a República Dominicana",
+        "avg_logprob": -0.3465806023398442
+      },
+      {
+        "start": 525.04,
+        "end": 527.04,
+        "text": "dígale que aquí es los clásicos",
+        "avg_logprob": -0.3465806023398442
+      },
+      {
+        "start": 529.04,
+        "end": 533.04,
+        "text": "le hicimos ese homenaje en vida al maestro",
+        "avg_logprob": -0.3465806023398442
+      }
+    ]
+  }
+]

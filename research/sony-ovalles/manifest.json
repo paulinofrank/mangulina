@@ -1,0 +1,74 @@
+[
+  {
+    "part": 1,
+    "duration_seconds": 899.977,
+    "segments": 201,
+    "complete": true
+  },
+  {
+    "part": 2,
+    "duration_seconds": 899.989,
+    "segments": 22,
+    "complete": true
+  },
+  {
+    "part": 3,
+    "duration_seconds": 899.989,
+    "segments": 16,
+    "complete": true
+  },
+  {
+    "part": 4,
+    "duration_seconds": 899.989,
+    "segments": 19,
+    "complete": true
+  },
+  {
+    "part": 5,
+    "duration_seconds": 899.989,
+    "segments": 23,
+    "complete": true
+  },
+  {
+    "part": 6,
+    "duration_seconds": 899.989,
+    "segments": 15,
+    "complete": true
+  },
+  {
+    "part": 7,
+    "duration_seconds": 899.989,
+    "segments": 10,
+    "complete": true
+  },
+  {
+    "part": 8,
+    "duration_seconds": 899.989,
+    "segments": 28,
+    "complete": true
+  },
+  {
+    "part": 9,
+    "duration_seconds": 899.989,
+    "segments": 15,
+    "complete": true
+  },
+  {
+    "part": 10,
+    "duration_seconds": 899.989,
+    "segments": 26,
+    "complete": true
+  },
+  {
+    "part": 11,
+    "duration_seconds": 899.989,
+    "segments": 8,
+    "complete": true
+  },
+  {
+    "part": 12,
+    "duration_seconds": 485.9215625,
+    "segments": 14,
+    "complete": true
+  }
+]

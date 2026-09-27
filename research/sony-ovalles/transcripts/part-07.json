@@ -1,0 +1,90 @@
+{
+  "source": "C:\\Users\\fvpg\\OneDrive\\Downloads\\LOS ARREGLOS DE SONY OVALLES_part-07.mp3",
+  "part": 7,
+  "duration": 899.989,
+  "duration_after_vad": 256.152,
+  "model": "faster-whisper-small-int8",
+  "complete": true,
+  "segments": [
+    {
+      "start": 0.05,
+      "end": 128.81,
+      "text": "¡Pia, pia, pia! ¡Capia, pia! De semana. ¡Pemana!",
+      "avg_logprob": -0.8542545283282245,
+      "no_speech_prob": 0.10300763696432114,
+      "compression_ratio": 1.1818181818181819
+    },
+    {
+      "start": 128.85,
+      "end": 156.27,
+      "text": "La bella yaoli y todo el equipo de cargo express esperando por su llamada para recogerle su carga. Y entregarse en la República Dominicana puerta a puerta. Cargo Express, nombre de excelencia. Encargas a la República Dominicana. Sí señor. Marta Asterix Center es un nuevo lugar que está en el 268 de la South Broad y en South Lawrence.",
+      "avg_logprob": -0.27228075230405446,
+      "no_speech_prob": 0.014513996429741383,
+      "compression_ratio": 1.508849557522124
+    },
+    {
+      "start": 157.59,
+      "end": 188.36,
+      "text": "La limpieza facial, los masajes y la depilación corporal. Está ahí en Marta's Aesthetics Center 268 de la South Road en South Lawrence El teléfono para una cita es 978-876-7288 pregunte por Marta ahí te va Martas Aesthetics Center Si te gusta verte bien y sentiste bien digo Marta's Aesthetic Center 268 de la south road en South Lawrence",
+      "avg_logprob": -0.336179469008835,
+      "no_speech_prob": 0.15230365097522736,
+      "compression_ratio": 1.6226415094339623
+    },
+    {
+      "start": 190.64,
+      "end": 230.67,
+      "text": "Ya yo perdí la cuenta de los éxitos que ha hecho el maestro Sony Ovalles. Ya yo perdí la conta, vamos a seguir tocándoles sus éxitos. All right, vamos arriba. Richie Herrera. Los demás tienen que respetar. Y este. Oh my god.",
+      "avg_logprob": -0.26570781388066034,
+      "no_speech_prob": 0.010130692273378372,
+      "compression_ratio": 1.4085365853658536
+    },
+    {
+      "start": 230.77,
+      "end": 266.99,
+      "text": "Me triunfes con tu amor.",
+      "avg_logprob": -1.4680439114570618,
+      "no_speech_prob": 0.2855354845523834,
+      "compression_ratio": 0.7575757575757576
+    },
+    {
+      "start": 271.09,
+      "end": 498.64,
+      "text": "Otros temas. Otros temas. Por ejemplo, de M. Es que no no va a dar tiempo tocar los temas del maestro Sony Ovalles. Por allá anda, mire... Por allá anda dame veneno de rubi pérez, color de rosa, cobardes, cubarde... ¿Qué más? ¿Cuántos temas el maestro Sony Ovalles también lo hizo? Voy a poner...",
+      "avg_logprob": -0.38781361365586187,
+      "no_speech_prob": 0.0400288850069046,
+      "compression_ratio": 1.5532994923857868
+    },
+    {
+      "start": 499.64,
+      "end": 615.12,
+      "text": "Pedacitos de temas ahora ya, porque a las cinco vengo con los boleros. Pero vamos a poner pedacitos de temas del maestro Sony Ovalles. Por ejemplo este que le hizo a Monchica Prichu. ¡Escúchame, Provió! Monchica Prichus también le hizo este tema también. ¡Guau! Quito el sombrero delante al maestro. Digo yo no tengo saber la gorra, la gorra. Así por fin de semana.",
+      "avg_logprob": -0.33659960546276785,
+      "no_speech_prob": 0.08624850958585739,
+      "compression_ratio": 1.5738396624472575
+    },
+    {
+      "start": 615.89,
+      "end": 757.74,
+      "text": "El maestro Sony Ovalles es el responsable de este tema.",
+      "avg_logprob": -0.23349502484003704,
+      "no_speech_prob": 0.023318318650126457,
+      "compression_ratio": 0.9180327868852459
+    },
+    {
+      "start": 787.35,
+      "end": 887.56,
+      "text": "Otro sonio.",
+      "avg_logprob": -1.1859220266342163,
+      "no_speech_prob": 0.10307669639587402,
+      "compression_ratio": 0.6
+    },
+    {
+      "start": 889.97,
+      "end": 899.18,
+      "text": "Y se quedó mamá vieja. Triste en la puerta del trancho Ella me dio el vermío",
+      "avg_logprob": -0.633442554473877,
+      "no_speech_prob": 0.31061145663261414,
+      "compression_ratio": 0.975609756097561
+    }
+  ]
+}

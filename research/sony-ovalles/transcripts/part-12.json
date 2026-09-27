@@ -1,0 +1,122 @@
+{
+  "source": "C:\\Users\\fvpg\\OneDrive\\Downloads\\LOS ARREGLOS DE SONY OVALLES_part-12.mp3",
+  "part": 12,
+  "duration": 485.9215625,
+  "duration_after_vad": 340.4655625,
+  "model": "faster-whisper-small-int8",
+  "complete": true,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 37.26,
+      "text": "La música.",
+      "avg_logprob": -2.2000502943992615,
+      "no_speech_prob": 0.7079609036445618,
+      "compression_ratio": 0.6
+    },
+    {
+      "start": 38.45,
+      "end": 88.62,
+      "text": "Dejado.",
+      "avg_logprob": -1.6804443359375,
+      "no_speech_prob": 0.4273441731929779,
+      "compression_ratio": 0.5
+    },
+    {
+      "start": 89.04,
+      "end": 128.97,
+      "text": "En el corazón del Sibau. Él es Richie Herrera, el papá de los clásicos. La hora del bolero",
+      "avg_logprob": -0.3074684800772831,
+      "no_speech_prob": 0.19934339821338654,
+      "compression_ratio": 1.0
+    },
+    {
+      "start": 133.62,
+      "end": 171.95,
+      "text": "Tienblas. Cada vez que me ves, yo sé que ti enblas No hay misterio de ti Que yo no entienda Porque tratas de ocultar Que yo soy parte de ti Vives Esperando un amor que nos recibes Sin que llegue la dicha que persigues",
+      "avg_logprob": -0.2802478428930044,
+      "no_speech_prob": 0.5949333906173706,
+      "compression_ratio": 1.4313725490196079
+    },
+    {
+      "start": 174.04,
+      "end": 224.84,
+      "text": "Y es cosa muy natural. Que tú te acuerdes de mí Hubo un adiós a tu al corazón Igual que mi presencia quedó Sé que en tu vida, un día mandó la razón Yo no se escapó del ayer Cada vez que me ves yo sé que tiemblas No hay misterio de ti que yo no entienda",
+      "avg_logprob": -0.24421786595331996,
+      "no_speech_prob": 0.5877931118011475,
+      "compression_ratio": 1.4193548387096775
+    },
+    {
+      "start": 226.55,
+      "end": 308.3,
+      "text": "Porque tratas de ocultar que yo soy parte de ti. Tu al corazón presencia quedó. Sé que en tu vida un día mando la razón, tú se escapó del ayer eso te hiembla cada vez que yo sé que tiendas no hay misterio de ti tienda que tratas de oculta",
+      "avg_logprob": -0.36919997163014867,
+      "no_speech_prob": 0.6978896260261536,
+      "compression_ratio": 1.5060975609756098
+    },
+    {
+      "start": 309.84,
+      "end": 332.78,
+      "text": "Que yo soy parte de ti.",
+      "avg_logprob": -0.3374105617403984,
+      "no_speech_prob": 0.2072649449110031,
+      "compression_ratio": 0.75
+    },
+    {
+      "start": 332.78,
+      "end": 356.22,
+      "text": "Confianza y seriedad en el servicio de cargas a la República Dominicana. Estimados gratis, llame para que recojan su carga en su casa al 978-691-5409 y La línea gratis 1 800-337-0434 Cargo Express Corporation 48 de la calle Franklin en Lawrence y en Whistler en el 687 de la calle Main",
+      "avg_logprob": -0.2325721677570116,
+      "no_speech_prob": 0.29981479048728943,
+      "compression_ratio": 1.3846153846153846
+    },
+    {
+      "start": 356.22,
+      "end": 369.77,
+      "text": "Recuerde que lo importante no es el precio, sino el servicio. Y el mejor servicio lo tiene Cargo Express Corporation. La pionera. La pionera! Cargo Express Corporation",
+      "avg_logprob": -0.18804557439757558,
+      "no_speech_prob": 0.01827303320169449,
+      "compression_ratio": 1.5135135135135136
+    },
+    {
+      "start": 370.39,
+      "end": 400.08,
+      "text": "Para la reparación general de tu vehículo debes ponerlo en manos de mecánicos profesionales porque tu carro merece el mejor cuidado. Eso solo lo encuentras en un lugar, Eladios Auto Reaper. Mecanica en general. Alineación y balanceo. La reparación completa del muffler con más nuevas y usadas y muchos servicios más. Eladios Auto Reaper 25 de la Calle West & Lawrence. El maestro Eladio es el mecánico de los clásicos y el rey del muffler. Eladios Auto Reaper 25 de la Calle Western Lawrence",
+      "avg_logprob": -0.22004402200068077,
+      "no_speech_prob": 0.4050985276699066,
+      "compression_ratio": 1.7892857142857144
+    },
+    {
+      "start": 400.08,
+      "end": 420.46,
+      "text": "Y escucha bien, si vas para la República Dominicana y necesitas un vehículo rentado llama a el Adios Auto Reaper. 978-397-5502. 978-398-5502 El mecánico de los clásicos es el maestro del adio y su súper taller 25 de la Kanye West en los Rens",
+      "avg_logprob": -0.3310788226755042,
+      "no_speech_prob": 0.1788920760154724,
+      "compression_ratio": 1.3138297872340425
+    },
+    {
+      "start": 420.53,
+      "end": 435.47,
+      "text": "Cedarview Health & Rehab ofrece el mejor cuidado de salud en un ambiente cálido y familiar. Cuando necesite cuidado postoperatorio, de corto o de largo plazo, Cedarview Health &",
+      "avg_logprob": -0.20590476043846295,
+      "no_speech_prob": 0.24548235535621643,
+      "compression_ratio": 1.3458646616541354
+    },
+    {
+      "start": 435.47,
+      "end": 456.22,
+      "text": "Terapias. Siete días a la semana y su equipo de terapeutas expertos utiliza la última tecnología y técnicas de rehabilitación para acelerar su recuperación tienen un programa especializado en enfermedades de los riñones también programa de rehabilitación pulmonar son certificados excelencia en cuidados de heridas",
+      "avg_logprob": -0.17687590520929647,
+      "no_speech_prob": 0.2654768228530884,
+      "compression_ratio": 1.588235294117647
+    },
+    {
+      "start": 456.22,
+      "end": 485.92,
+      "text": "En Cedarview Health y Rehab. Tendrás servicios religiosos en español, comida hispana e información en español para tu conveniencia. Llame a Mari Lin, directora del programa para solicitar más información. 978-943-3774 Es Cedarview Health y Rihab. Ay, ay, yo necesito transportarme pero no quiero dar vueltas. Llámate First Class 470151547515 Me llevan Express a Misol...",
+      "avg_logprob": -0.3138560870519051,
+      "no_speech_prob": 0.11193376779556274,
+      "compression_ratio": 1.4594594594594594
+    }
+  ]
+}

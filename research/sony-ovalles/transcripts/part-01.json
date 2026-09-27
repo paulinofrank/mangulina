@@ -1,0 +1,1618 @@
+{
+  "source": "C:\\Users\\fvpg\\OneDrive\\Downloads\\LOS ARREGLOS DE SONY OVALLES_part-01.mp3",
+  "part": 1,
+  "duration": 899.977,
+  "duration_after_vad": 772.516,
+  "model": "faster-whisper-small-int8",
+  "complete": true,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 74.91,
+      "text": "Publica Dominicana. Hay una empresa pionera en este servicio, cargo express corporation entregando de puerta a puerta, cajas, dinero, paquetes, mudanzas y",
+      "avg_logprob": -0.34053967587458783,
+      "no_speech_prob": 0.5626823306083679,
+      "compression_ratio": 1.6084656084656084
+    },
+    {
+      "start": 74.91,
+      "end": 80.05,
+      "text": "electrodomésticos que cargo express corporation confianza y seriedad en el",
+      "avg_logprob": -0.34053967587458783,
+      "no_speech_prob": 0.5626823306083679,
+      "compression_ratio": 1.6084656084656084
+    },
+    {
+      "start": 80.05,
+      "end": 84.47,
+      "text": "servicio de cargas a la República Dominicana estimados gratis llave para",
+      "avg_logprob": -0.34053967587458783,
+      "no_speech_prob": 0.5626823306083679,
+      "compression_ratio": 1.6084656084656084
+    },
+    {
+      "start": 84.47,
+      "end": 95.51,
+      "text": "que recojan su carga en su casa al 978-691-5409 y la línea gratis, 1 800-337-0434, cargo express",
+      "avg_logprob": -0.3653310395422436,
+      "no_speech_prob": 0.7855494022369385,
+      "compression_ratio": 1.4205128205128206
+    },
+    {
+      "start": 95.51,
+      "end": 101.91,
+      "text": "corporation 48 de la calle Franklin en Lawrence y en Whistler en el 687 de la calle Maine.",
+      "avg_logprob": -0.3653310395422436,
+      "no_speech_prob": 0.7855494022369385,
+      "compression_ratio": 1.4205128205128206
+    },
+    {
+      "start": 101.91,
+      "end": 107.59,
+      "text": "Recuerde que lo importante no es el precio sino el servicio y el mejor servicio lo tiene",
+      "avg_logprob": -0.3653310395422436,
+      "no_speech_prob": 0.7855494022369385,
+      "compression_ratio": 1.4205128205128206
+    },
+    {
+      "start": 107.59,
+      "end": 114.59,
+      "text": "cargo Express Corporation. La pionera. La pionera, cargo Express Corporation.",
+      "avg_logprob": -0.337015635293463,
+      "no_speech_prob": 0.6900715827941895,
+      "compression_ratio": 1.6962616822429906
+    },
+    {
+      "start": 115.92,
+      "end": 120.92,
+      "text": "Para la reparación general de tu vehículo debes ponerlo en manos de mecánicos profesionales porque",
+      "avg_logprob": -0.337015635293463,
+      "no_speech_prob": 0.6900715827941895,
+      "compression_ratio": 1.6962616822429906
+    },
+    {
+      "start": 120.92,
+      "end": 126.92,
+      "text": "tu carro merece el mejor cuidado eso sólo lo encuentras en un lugar el adiós auto repair",
+      "avg_logprob": -0.337015635293463,
+      "no_speech_prob": 0.6900715827941895,
+      "compression_ratio": 1.6962616822429906
+    },
+    {
+      "start": 126.92,
+      "end": 131.92,
+      "text": "mecánica en general alineación y balanceo la reparación completa del muffler comas nuevas",
+      "avg_logprob": -0.337015635293463,
+      "no_speech_prob": 0.6900715827941895,
+      "compression_ratio": 1.6962616822429906
+    },
+    {
+      "start": 131.92,
+      "end": 138.28,
+      "text": "y muchos servicios más. El Adios Auto Reaper, 25 de la Calle West & Lawrence, el maestro",
+      "avg_logprob": -0.44418069551575856,
+      "no_speech_prob": 0.9490576982498169,
+      "compression_ratio": 1.5841121495327102
+    },
+    {
+      "start": 138.28,
+      "end": 143.2,
+      "text": "Eladio es el mecánico de los clásicos y el rey del moffler. El Adios Auto Reaper,",
+      "avg_logprob": -0.44418069551575856,
+      "no_speech_prob": 0.9490576982498169,
+      "compression_ratio": 1.5841121495327102
+    },
+    {
+      "start": 143.2,
+      "end": 148.08,
+      "text": "25 de la Calla West & Lawrence. Y escucha bien si vas para la República Dominicana",
+      "avg_logprob": -0.44418069551575856,
+      "no_speech_prob": 0.9490576982498169,
+      "compression_ratio": 1.5841121495327102
+    },
+    {
+      "start": 148.08,
+      "end": 157.36,
+      "text": "y necesitas un vehículo rentado llama a Eladios Auto Reaper 978 397 5502 978 397",
+      "avg_logprob": -0.44418069551575856,
+      "no_speech_prob": 0.9490576982498169,
+      "compression_ratio": 1.5841121495327102
+    },
+    {
+      "start": 157.36,
+      "end": 164.36,
+      "text": "el mecanico de los clásicos es",
+      "avg_logprob": -0.4230362546127454,
+      "no_speech_prob": 0.8584113717079163,
+      "compression_ratio": 1.568075117370892
+    },
+    {
+      "start": 164.36,
+      "end": 166.36,
+      "text": "el maestro Eladio y su super",
+      "avg_logprob": -0.4230362546127454,
+      "no_speech_prob": 0.8584113717079163,
+      "compression_ratio": 1.568075117370892
+    },
+    {
+      "start": 166.36,
+      "end": 168.36,
+      "text": "taller, 25 de la Kanye West en",
+      "avg_logprob": -0.4230362546127454,
+      "no_speech_prob": 0.8584113717079163,
+      "compression_ratio": 1.568075117370892
+    },
+    {
+      "start": 168.36,
+      "end": 169.36,
+      "text": "Lawrence.",
+      "avg_logprob": -0.4230362546127454,
+      "no_speech_prob": 0.8584113717079163,
+      "compression_ratio": 1.568075117370892
+    },
+    {
+      "start": 169.36,
+      "end": 171.36,
+      "text": "Cedarview Health & Rehab ofrece",
+      "avg_logprob": -0.4230362546127454,
+      "no_speech_prob": 0.8584113717079163,
+      "compression_ratio": 1.568075117370892
+    },
+    {
+      "start": 171.36,
+      "end": 173.36,
+      "text": "el mejor cuidado de salud en un",
+      "avg_logprob": -0.4230362546127454,
+      "no_speech_prob": 0.8584113717079163,
+      "compression_ratio": 1.568075117370892
+    },
+    {
+      "start": 173.36,
+      "end": 175.36,
+      "text": "ambiente cálido y familiar cuando",
+      "avg_logprob": -0.4230362546127454,
+      "no_speech_prob": 0.8584113717079163,
+      "compression_ratio": 1.568075117370892
+    },
+    {
+      "start": 175.36,
+      "end": 177.36,
+      "text": "necesite cuidado postoperatorio",
+      "avg_logprob": -0.4230362546127454,
+      "no_speech_prob": 0.8584113717079163,
+      "compression_ratio": 1.568075117370892
+    },
+    {
+      "start": 177.36,
+      "end": 179.36,
+      "text": "de corto o de largo plazo.",
+      "avg_logprob": -0.4230362546127454,
+      "no_speech_prob": 0.8584113717079163,
+      "compression_ratio": 1.568075117370892
+    },
+    {
+      "start": 179.36,
+      "end": 181.36,
+      "text": "Cedarview Health &",
+      "avg_logprob": -0.4230362546127454,
+      "no_speech_prob": 0.8584113717079163,
+      "compression_ratio": 1.568075117370892
+    },
+    {
+      "start": 181.36,
+      "end": 183.36,
+      "text": "Rehab ofrece la diferencia",
+      "avg_logprob": -0.4230362546127454,
+      "no_speech_prob": 0.8584113717079163,
+      "compression_ratio": 1.568075117370892
+    },
+    {
+      "start": 183.36,
+      "end": 185.36,
+      "text": "terapias 7 días a la semana",
+      "avg_logprob": -0.4230362546127454,
+      "no_speech_prob": 0.8584113717079163,
+      "compression_ratio": 1.568075117370892
+    },
+    {
+      "start": 185.36,
+      "end": 192.44,
+      "text": "la última tecnología y técnicas de rehabilitación para acelerar su recuperación. Tienen un programa",
+      "avg_logprob": -0.30666173696517945,
+      "no_speech_prob": 0.8669611811637878,
+      "compression_ratio": 1.5725806451612903
+    },
+    {
+      "start": 192.44,
+      "end": 197.36,
+      "text": "especializado en enfermedades de los riñones, también programa de rehabilitación pulmonar.",
+      "avg_logprob": -0.30666173696517945,
+      "no_speech_prob": 0.8669611811637878,
+      "compression_ratio": 1.5725806451612903
+    },
+    {
+      "start": 197.36,
+      "end": 204.0,
+      "text": "Son certificados de excelencia en cuidados de heridas. En Cedarview Health Every Hub tendrás",
+      "avg_logprob": -0.30666173696517945,
+      "no_speech_prob": 0.8669611811637878,
+      "compression_ratio": 1.5725806451612903
+    },
+    {
+      "start": 204.0,
+      "end": 209.92,
+      "text": "servicios religiosos en español, comida hispana e información en español para tu conveniencia.",
+      "avg_logprob": -0.30666173696517945,
+      "no_speech_prob": 0.8669611811637878,
+      "compression_ratio": 1.5725806451612903
+    },
+    {
+      "start": 209.92,
+      "end": 212.92,
+      "text": "para solicitar más información",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 212.92,
+      "end": 215.92,
+      "text": "978-943-3774",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 215.92,
+      "end": 218.92,
+      "text": "es Cedarview Health and Rehab",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 218.92,
+      "end": 220.92,
+      "text": "Esto es un llamado a los",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 220.92,
+      "end": 223.38,
+      "text": "americanos que regresan a su",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 223.38,
+      "end": 225.38,
+      "text": "tierra y a los turistas",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 225.38,
+      "end": 226.38,
+      "text": "que nos visitan.",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 226.38,
+      "end": 228.38,
+      "text": "Globo Rent-A-Car",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 228.38,
+      "end": 230.38,
+      "text": "quiere recibirte como te lo",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 230.38,
+      "end": 231.38,
+      "text": "mereces, bien montado",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 231.38,
+      "end": 233.38,
+      "text": "Globo Rent-A Car",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 233.38,
+      "end": 234.38,
+      "text": "con carros de 35 dólares en",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 234.38,
+      "end": 235.38,
+      "text": "adelante",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 235.38,
+      "end": 237.38,
+      "text": "pequeños, medianos",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 237.38,
+      "end": 238.38,
+      "text": "y jefetas",
+      "avg_logprob": -0.4365993082022467,
+      "no_speech_prob": 0.7696451544761658,
+      "compression_ratio": 1.424778761061947
+    },
+    {
+      "start": 238.38,
+      "end": 240.38,
+      "text": "para que te muevas seguro.",
+      "avg_logprob": -0.3490736945336606,
+      "no_speech_prob": 0.8838421702384949,
+      "compression_ratio": 1.5265486725663717
+    },
+    {
+      "start": 240.38,
+      "end": 244.38,
+      "text": "Global Rentacar llama a Tony directo desde los Estados Unidos,",
+      "avg_logprob": -0.3490736945336606,
+      "no_speech_prob": 0.8838421702384949,
+      "compression_ratio": 1.5265486725663717
+    },
+    {
+      "start": 244.38,
+      "end": 249.38,
+      "text": "617-347-735 o desde la República Dominicana,",
+      "avg_logprob": -0.3490736945336606,
+      "no_speech_prob": 0.8838421702384949,
+      "compression_ratio": 1.5265486725663717
+    },
+    {
+      "start": 249.38,
+      "end": 253.38,
+      "text": "809-498-7634.",
+      "avg_logprob": -0.3490736945336606,
+      "no_speech_prob": 0.8838421702384949,
+      "compression_ratio": 1.5265486725663717
+    },
+    {
+      "start": 253.38,
+      "end": 257.38,
+      "text": "Global Rentacar, conserviciosa a todos los aeropuertos.",
+      "avg_logprob": -0.3490736945336606,
+      "no_speech_prob": 0.8838421702384949,
+      "compression_ratio": 1.5265486725663717
+    },
+    {
+      "start": 257.38,
+      "end": 260.38,
+      "text": "Búscalos en internet como Global Rentacar",
+      "avg_logprob": -0.3490736945336606,
+      "no_speech_prob": 0.8838421702384949,
+      "compression_ratio": 1.5265486725663717
+    },
+    {
+      "start": 260.38,
+      "end": 263.38,
+      "text": "y saliendo del aeropuerto sibao a mano izquierda",
+      "avg_logprob": -0.3490736945336606,
+      "no_speech_prob": 0.8838421702384949,
+      "compression_ratio": 1.5265486725663717
+    },
+    {
+      "start": 263.38,
+      "end": 268.18,
+      "text": "ahí está Global Rentacar, yo te lo recomiendo",
+      "avg_logprob": -0.3490736945336606,
+      "no_speech_prob": 0.8838421702384949,
+      "compression_ratio": 1.5265486725663717
+    },
+    {
+      "start": 268.18,
+      "end": 274.96,
+      "text": "escuchar bien para sus trámites de bienes países o sea compra o venta de propiedad debe buscar la",
+      "avg_logprob": -0.2380407489506544,
+      "no_speech_prob": 0.18774420022964478,
+      "compression_ratio": 1.5622489959839359
+    },
+    {
+      "start": 274.96,
+      "end": 280.72,
+      "text": "persona correcta que tenga la experiencia necesaria para que usted se sienta confiado en el negocio",
+      "avg_logprob": -0.2380407489506544,
+      "no_speech_prob": 0.18774420022964478,
+      "compression_ratio": 1.5622489959839359
+    },
+    {
+      "start": 280.72,
+      "end": 287.8,
+      "text": "les recomiendo a Lenin Roa. Hola soy Lenin Roa y te quiero invitar a que sigas escuchando los",
+      "avg_logprob": -0.2380407489506544,
+      "no_speech_prob": 0.18774420022964478,
+      "compression_ratio": 1.5622489959839359
+    },
+    {
+      "start": 287.8,
+      "end": 295.48,
+      "text": "clásicos con Richie Herrera, Los Sábados por La Mega Lenin Roa me puedes contactar al 646 369",
+      "avg_logprob": -0.2380407489506544,
+      "no_speech_prob": 0.18774420022964478,
+      "compression_ratio": 1.5622489959839359
+    },
+    {
+      "start": 295.48,
+      "end": 299.38,
+      "text": "de la calle Probo en Lorenz con",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 299.38,
+      "end": 302.48,
+      "text": "el teléfono 9 7 8 2 0 8 74",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 302.48,
+      "end": 304.48,
+      "text": "40 estamos laborando aquí para",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 304.48,
+      "end": 306.48,
+      "text": "ti desde las 12 de la tarde hasta",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 306.48,
+      "end": 307.48,
+      "text": "la 1 de la madrugada llama",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 307.48,
+      "end": 309.48,
+      "text": "para el Iberia el 9 7 8 2 0",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 309.48,
+      "end": 311.48,
+      "text": "8 70 y 49 para tu venta o",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 311.48,
+      "end": 313.48,
+      "text": "compra de bienes raíces o",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 313.48,
+      "end": 315.48,
+      "text": "venta o compra de negocios los",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 315.48,
+      "end": 317.48,
+      "text": "clásicos con Richie Herrera",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 317.48,
+      "end": 319.48,
+      "text": "tranquilo papá hola qué tal",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 319.48,
+      "end": 320.48,
+      "text": "yo soy más peré de más que",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 320.48,
+      "end": 322.48,
+      "text": "el tixotropical en el 3",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 322.48,
+      "end": 323.48,
+      "text": "24 de la calle Probo En",
+      "avg_logprob": -0.6508412965246149,
+      "no_speech_prob": 0.811380922794342,
+      "compression_ratio": 1.578740157480315
+    },
+    {
+      "start": 323.48,
+      "end": 327.52,
+      "text": "de los que están en la",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 327.52,
+      "end": 329.52,
+      "text": "ciudad.",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 329.52,
+      "end": 331.52,
+      "text": "Si quieres recoger tu comida,",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 331.52,
+      "end": 333.52,
+      "text": "tienes que llamar por adelantado",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 333.52,
+      "end": 335.52,
+      "text": "y solamente dejamos pasar una",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 335.52,
+      "end": 337.52,
+      "text": "persona a la ventana.",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 337.52,
+      "end": 339.52,
+      "text": "Masterpixel tropical,",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 339.52,
+      "end": 341.52,
+      "text": "978-208-7440.",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 341.52,
+      "end": 343.52,
+      "text": "Quédate en casa.",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 343.52,
+      "end": 345.52,
+      "text": "Teneón auto reaper",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 345.52,
+      "end": 347.52,
+      "text": "en towing,",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 347.52,
+      "end": 349.52,
+      "text": "cambio de aceite",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 349.52,
+      "end": 351.52,
+      "text": "y filtro, gomas nuevas usadas",
+      "avg_logprob": -0.7877725374130976,
+      "no_speech_prob": 0.6799566149711609,
+      "compression_ratio": 1.3560975609756099
+    },
+    {
+      "start": 381.52,
+      "end": 386.88,
+      "text": "El aire acondicionado de tu vehículo pasa por el 47 de la calle Windtrap en South Lawrence",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 386.88,
+      "end": 390.04,
+      "text": "es de León, autoriper y towin.",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 390.04,
+      "end": 392.48,
+      "text": "Heavenly Donuts en la Essex",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 392.48,
+      "end": 394.68,
+      "text": "Una mejor forma para tomar café",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 394.68,
+      "end": 399.12,
+      "text": "Ya no tienes que ir lejos porque ahora están el 256 de la calle Essex",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 399.12,
+      "end": 400.32,
+      "text": "Heavenly Donuts",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 400.32,
+      "end": 401.48,
+      "text": "Heavenly Donuts",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 401.48,
+      "end": 402.28,
+      "text": "Café",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 402.28,
+      "end": 402.96,
+      "text": "Tea",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 402.96,
+      "end": 403.64,
+      "text": "Donuts",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 403.64,
+      "end": 404.6,
+      "text": "Cosines",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 404.6,
+      "end": 405.72,
+      "text": "Sandwiches",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 405.72,
+      "end": 406.48,
+      "text": "Muffins",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 406.48,
+      "end": 407.68,
+      "text": "Y mucho más",
+      "avg_logprob": -0.4707065025965373,
+      "no_speech_prob": 0.48681601881980896,
+      "compression_ratio": 1.502183406113537
+    },
+    {
+      "start": 407.68,
+      "end": 412.68,
+      "text": "dos cincuenta y seis de la calle es",
+      "avg_logprob": -0.6133469288446465,
+      "no_speech_prob": 0.43996959924697876,
+      "compression_ratio": 1.608695652173913
+    },
+    {
+      "start": 412.68,
+      "end": 414.68,
+      "text": "excenlores ahí está",
+      "avg_logprob": -0.6133469288446465,
+      "no_speech_prob": 0.43996959924697876,
+      "compression_ratio": 1.608695652173913
+    },
+    {
+      "start": 414.68,
+      "end": 417.68,
+      "text": "remodelado a pensiones de",
+      "avg_logprob": -0.6133469288446465,
+      "no_speech_prob": 0.43996959924697876,
+      "compression_ratio": 1.608695652173913
+    },
+    {
+      "start": 417.68,
+      "end": 419.68,
+      "text": "primera en inglés y en español",
+      "avg_logprob": -0.6133469288446465,
+      "no_speech_prob": 0.43996959924697876,
+      "compression_ratio": 1.608695652173913
+    },
+    {
+      "start": 419.68,
+      "end": 423.68,
+      "text": "el mejor lugar para tomarte el",
+      "avg_logprob": -0.6133469288446465,
+      "no_speech_prob": 0.43996959924697876,
+      "compression_ratio": 1.608695652173913
+    },
+    {
+      "start": 423.68,
+      "end": 424.68,
+      "text": "mejor café",
+      "avg_logprob": -0.6133469288446465,
+      "no_speech_prob": 0.43996959924697876,
+      "compression_ratio": 1.608695652173913
+    },
+    {
+      "start": 425.79,
+      "end": 427.79,
+      "text": "en los veinticinco de la calle",
+      "avg_logprob": -0.6133469288446465,
+      "no_speech_prob": 0.43996959924697876,
+      "compression_ratio": 1.608695652173913
+    },
+    {
+      "start": 427.79,
+      "end": 429.79,
+      "text": "excenlores hay un lugar único",
+      "avg_logprob": -0.6133469288446465,
+      "no_speech_prob": 0.43996959924697876,
+      "compression_ratio": 1.608695652173913
+    },
+    {
+      "start": 429.79,
+      "end": 430.79,
+      "text": "en su clase",
+      "avg_logprob": -0.6133469288446465,
+      "no_speech_prob": 0.43996959924697876,
+      "compression_ratio": 1.608695652173913
+    },
+    {
+      "start": 431.79,
+      "end": 432.79,
+      "text": "donde podrás tener la mejor",
+      "avg_logprob": -0.6133469288446465,
+      "no_speech_prob": 0.43996959924697876,
+      "compression_ratio": 1.608695652173913
+    },
+    {
+      "start": 432.79,
+      "end": 433.79,
+      "text": "experiencia en masajes",
+      "avg_logprob": -0.6133469288446465,
+      "no_speech_prob": 0.43996959924697876,
+      "compression_ratio": 1.608695652173913
+    },
+    {
+      "start": 433.79,
+      "end": 434.79,
+      "text": "corporales",
+      "avg_logprob": -0.6133469288446465,
+      "no_speech_prob": 0.43996959924697876,
+      "compression_ratio": 1.608695652173913
+    },
+    {
+      "start": 434.79,
+      "end": 439.79,
+      "text": "en las manos de la experta y",
+      "avg_logprob": -0.4020010714137226,
+      "no_speech_prob": 0.8750083446502686,
+      "compression_ratio": 1.5342465753424657
+    },
+    {
+      "start": 439.79,
+      "end": 441.79,
+      "text": "profesional no me perez masajes",
+      "avg_logprob": -0.4020010714137226,
+      "no_speech_prob": 0.8750083446502686,
+      "compression_ratio": 1.5342465753424657
+    },
+    {
+      "start": 441.79,
+      "end": 443.79,
+      "text": "de relajación difícil terapias",
+      "avg_logprob": -0.4020010714137226,
+      "no_speech_prob": 0.8750083446502686,
+      "compression_ratio": 1.5342465753424657
+    },
+    {
+      "start": 443.79,
+      "end": 445.79,
+      "text": "de puntos para mujeres embarazadas",
+      "avg_logprob": -0.4020010714137226,
+      "no_speech_prob": 0.8750083446502686,
+      "compression_ratio": 1.5342465753424657
+    },
+    {
+      "start": 445.79,
+      "end": 447.79,
+      "text": "masajes prenatal, masajes con",
+      "avg_logprob": -0.4020010714137226,
+      "no_speech_prob": 0.8750083446502686,
+      "compression_ratio": 1.5342465753424657
+    },
+    {
+      "start": 447.79,
+      "end": 449.79,
+      "text": "piedras calientes y para las",
+      "avg_logprob": -0.4020010714137226,
+      "no_speech_prob": 0.8750083446502686,
+      "compression_ratio": 1.5342465753424657
+    },
+    {
+      "start": 449.79,
+      "end": 451.79,
+      "text": "mujeres que ya se han hecho",
+      "avg_logprob": -0.4020010714137226,
+      "no_speech_prob": 0.8750083446502686,
+      "compression_ratio": 1.5342465753424657
+    },
+    {
+      "start": 451.79,
+      "end": 453.79,
+      "text": "cirugía estética o liposucción",
+      "avg_logprob": -0.4020010714137226,
+      "no_speech_prob": 0.8750083446502686,
+      "compression_ratio": 1.5342465753424657
+    },
+    {
+      "start": 453.79,
+      "end": 455.79,
+      "text": "también tienen los masajes del",
+      "avg_logprob": -0.4020010714137226,
+      "no_speech_prob": 0.8750083446502686,
+      "compression_ratio": 1.5342465753424657
+    },
+    {
+      "start": 455.79,
+      "end": 458.4,
+      "text": "grenaje linfático. No me pieres",
+      "avg_logprob": -0.4020010714137226,
+      "no_speech_prob": 0.8750083446502686,
+      "compression_ratio": 1.5342465753424657
+    },
+    {
+      "start": 458.4,
+      "end": 460.4,
+      "text": "testera en Aroma Spa.",
+      "avg_logprob": -0.4020010714137226,
+      "no_speech_prob": 0.8750083446502686,
+      "compression_ratio": 1.5342465753424657
+    },
+    {
+      "start": 465.4,
+      "end": 472.26,
+      "text": "zapatos, chaquetas y chacabanas, sé tú el artista y diste de tenoche, la que pauta",
+      "avg_logprob": -0.3484080894706176,
+      "no_speech_prob": 0.8090600967407227,
+      "compression_ratio": 1.4080717488789238
+    },
+    {
+      "start": 472.26,
+      "end": 478.5,
+      "text": "la moda al vestir. La primera. Además de noche es la única tienda",
+      "avg_logprob": -0.3484080894706176,
+      "no_speech_prob": 0.8090600967407227,
+      "compression_ratio": 1.4080717488789238
+    },
+    {
+      "start": 478.5,
+      "end": 484.18,
+      "text": "que te fría cualquier teléfono iPhone o Galaxy sin importar tu crédito y con un",
+      "avg_logprob": -0.3484080894706176,
+      "no_speech_prob": 0.8090600967407227,
+      "compression_ratio": 1.4080717488789238
+    },
+    {
+      "start": 484.18,
+      "end": 490.42,
+      "text": "mínimo de inicial de hasta 10 dólares. Y págalo como puedas y cuando quiera",
+      "avg_logprob": -0.3484080894706176,
+      "no_speech_prob": 0.8090600967407227,
+      "compression_ratio": 1.4080717488789238
+    },
+    {
+      "start": 490.42,
+      "end": 498.98,
+      "text": "regala un celular sin complicarte la vida ven a denoche donde está mi hielo el presidente de",
+      "avg_logprob": -0.34367298720830897,
+      "no_speech_prob": 0.3538535535335541,
+      "compression_ratio": 1.4607329842931938
+    },
+    {
+      "start": 498.98,
+      "end": 512.48,
+      "text": "la ss de noche 49 es estri 9 7 8 9 6 5 25 0 0 escúchame que te gusta verte y sentirte bien ahora",
+      "avg_logprob": -0.34367298720830897,
+      "no_speech_prob": 0.3538535535335541,
+      "compression_ratio": 1.4607329842931938
+    },
+    {
+      "start": 512.48,
+      "end": 519.12,
+      "text": "tienes un lugar para la limpieza facial los masajes y la depilación corporal ese lugar",
+      "avg_logprob": -0.34367298720830897,
+      "no_speech_prob": 0.3538535535335541,
+      "compression_ratio": 1.4607329842931938
+    },
+    {
+      "start": 519.12,
+      "end": 523.92,
+      "text": "es Marta's Asterix Center, 268 South Broadway en South Lawrence.",
+      "avg_logprob": -0.35019903604326574,
+      "no_speech_prob": 0.9156322479248047,
+      "compression_ratio": 1.7323232323232323
+    },
+    {
+      "start": 523.92,
+      "end": 530.0,
+      "text": "No dudas en llamar para una cita, 478-876-7288.",
+      "avg_logprob": -0.35019903604326574,
+      "no_speech_prob": 0.9156322479248047,
+      "compression_ratio": 1.7323232323232323
+    },
+    {
+      "start": 530.0,
+      "end": 532.68,
+      "text": "El servicio de Marta's Asteric Center",
+      "avg_logprob": -0.35019903604326574,
+      "no_speech_prob": 0.9156322479248047,
+      "compression_ratio": 1.7323232323232323
+    },
+    {
+      "start": 532.68,
+      "end": 535.16,
+      "text": "es eficaz, rápido y seguro.",
+      "avg_logprob": -0.35019903604326574,
+      "no_speech_prob": 0.9156322479248047,
+      "compression_ratio": 1.7323232323232323
+    },
+    {
+      "start": 535.16,
+      "end": 538.64,
+      "text": "Todos los tratamientos se realizan con presupuestos",
+      "avg_logprob": -0.35019903604326574,
+      "no_speech_prob": 0.9156322479248047,
+      "compression_ratio": 1.7323232323232323
+    },
+    {
+      "start": 538.64,
+      "end": 539.96,
+      "text": "personalizados.",
+      "avg_logprob": -0.35019903604326574,
+      "no_speech_prob": 0.9156322479248047,
+      "compression_ratio": 1.7323232323232323
+    },
+    {
+      "start": 539.96,
+      "end": 542.7,
+      "text": "Marta's Asterics Center, 268 South",
+      "avg_logprob": -0.35019903604326574,
+      "no_speech_prob": 0.9156322479248047,
+      "compression_ratio": 1.7323232323232323
+    },
+    {
+      "start": 542.7,
+      "end": 549.08,
+      "text": "Broadway en South Lawrence llama para una cita 978-876-7288.",
+      "avg_logprob": -0.35019903604326574,
+      "no_speech_prob": 0.9156322479248047,
+      "compression_ratio": 1.7323232323232323
+    },
+    {
+      "start": 549.12,
+      "end": 558.4,
+      "text": "En el próximo show, Marta,",
+      "avg_logprob": -1.5696830268089588,
+      "no_speech_prob": 0.5831355452537537,
+      "compression_ratio": 1.140495867768595
+    },
+    {
+      "start": 558.42,
+      "end": 570.12,
+      "text": "estérit center.",
+      "avg_logprob": -1.5696830268089588,
+      "no_speech_prob": 0.5831355452537537,
+      "compression_ratio": 1.140495867768595
+    },
+    {
+      "start": 571.58,
+      "end": 573.88,
+      "text": "Clásicos",
+      "avg_logprob": -1.5696830268089588,
+      "no_speech_prob": 0.5831355452537537,
+      "compression_ratio": 1.140495867768595
+    },
+    {
+      "start": 581.77,
+      "end": 586.57,
+      "text": "Eso. Buenas tardes saludos.",
+      "avg_logprob": -1.5696830268089588,
+      "no_speech_prob": 0.5831355452537537,
+      "compression_ratio": 1.140495867768595
+    },
+    {
+      "start": 586.63,
+      "end": 590.15,
+      "text": "Hola. Aquí estamos en clasico de fin de semana. Buenas",
+      "avg_logprob": -1.5696830268089588,
+      "no_speech_prob": 0.5831355452537537,
+      "compression_ratio": 1.140495867768595
+    },
+    {
+      "start": 590.15,
+      "end": 593.46,
+      "text": "que están el sábado viviendo la experiencia de escuchar",
+      "avg_logprob": -0.4749751491268186,
+      "no_speech_prob": 0.5793606638908386,
+      "compression_ratio": 1.4740484429065743
+    },
+    {
+      "start": 594.46,
+      "end": 598.03,
+      "text": "El espectáculo de la radio en todo Nueva Inglaterra",
+      "avg_logprob": -0.4749751491268186,
+      "no_speech_prob": 0.5793606638908386,
+      "compression_ratio": 1.4740484429065743
+    },
+    {
+      "start": 598.07,
+      "end": 601.75,
+      "text": "hasta ahora, a través del 95 1 FM y 1400 AM",
+      "avg_logprob": -0.4749751491268186,
+      "no_speech_prob": 0.5793606638908386,
+      "compression_ratio": 1.4740484429065743
+    },
+    {
+      "start": 601.79,
+      "end": 605.07,
+      "text": "se produce Clásicos de Fin de Semana",
+      "avg_logprob": -0.4749751491268186,
+      "no_speech_prob": 0.5793606638908386,
+      "compression_ratio": 1.4740484429065743
+    },
+    {
+      "start": 605.24,
+      "end": 609.64,
+      "text": "Apaguen las otras emisoras que ya no hay para nadie",
+      "avg_logprob": -0.4749751491268186,
+      "no_speech_prob": 0.5793606638908386,
+      "compression_ratio": 1.4740484429065743
+    },
+    {
+      "start": 609.68,
+      "end": 611.52,
+      "text": "Clásicos de Fin De Semana esta primera hora",
+      "avg_logprob": -0.4749751491268186,
+      "no_speech_prob": 0.5793606638908386,
+      "compression_ratio": 1.4740484429065743
+    },
+    {
+      "start": 611.56,
+      "end": 614.28,
+      "text": "se le entregamos a usted, vio? Te escuchó",
+      "avg_logprob": -0.4749751491268186,
+      "no_speech_prob": 0.5793606638908386,
+      "compression_ratio": 1.4740484429065743
+    },
+    {
+      "start": 614.32,
+      "end": 617.68,
+      "text": "A los típicos gracias a Heavy Littonets, Pancho Coffey",
+      "avg_logprob": -0.4749751491268186,
+      "no_speech_prob": 0.5793606638908386,
+      "compression_ratio": 1.4740484429065743
+    },
+    {
+      "start": 617.72,
+      "end": 620.54,
+      "text": "2.26 de la calle de Sextran Lawrence",
+      "avg_logprob": -0.4749751491268186,
+      "no_speech_prob": 0.5793606638908386,
+      "compression_ratio": 1.4740484429065743
+    },
+    {
+      "start": 620.54,
+      "end": 624.8,
+      "text": "y ahora en adelante vamos a disfrutar del mejor tiempo de la salsa del merengue",
+      "avg_logprob": -0.4594101660124218,
+      "no_speech_prob": 0.11246832460165024,
+      "compression_ratio": 1.6384615384615384
+    },
+    {
+      "start": 624.8,
+      "end": 627.48,
+      "text": "del bolero, de la bachata porque por ahí anda ya",
+      "avg_logprob": -0.4594101660124218,
+      "no_speech_prob": 0.11246832460165024,
+      "compression_ratio": 1.6384615384615384
+    },
+    {
+      "start": 627.48,
+      "end": 629.4,
+      "text": "es el fin de semana",
+      "avg_logprob": -0.4594101660124218,
+      "no_speech_prob": 0.11246832460165024,
+      "compression_ratio": 1.6384615384615384
+    },
+    {
+      "start": 629.4,
+      "end": 632.69,
+      "text": "eso sí pero también anda morenaje que está por aquí",
+      "avg_logprob": -0.4594101660124218,
+      "no_speech_prob": 0.11246832460165024,
+      "compression_ratio": 1.6384615384615384
+    },
+    {
+      "start": 632.69,
+      "end": 635.09,
+      "text": "ya anda en las instalaciones de mega",
+      "avg_logprob": -0.4594101660124218,
+      "no_speech_prob": 0.11246832460165024,
+      "compression_ratio": 1.6384615384615384
+    },
+    {
+      "start": 635.09,
+      "end": 637.41,
+      "text": "el morenaje que viene a continuación",
+      "avg_logprob": -0.4594101660124218,
+      "no_speech_prob": 0.11246832460165024,
+      "compression_ratio": 1.6384615384615384
+    },
+    {
+      "start": 637.41,
+      "end": 640.09,
+      "text": "de los clásicos con su bachatón",
+      "avg_logprob": -0.4594101660124218,
+      "no_speech_prob": 0.11246832460165024,
+      "compression_ratio": 1.6384615384615384
+    },
+    {
+      "start": 640.09,
+      "end": 641.93,
+      "text": "bueno no sé el toque le queda",
+      "avg_logprob": -0.4594101660124218,
+      "no_speech_prob": 0.11246832460165024,
+      "compression_ratio": 1.6384615384615384
+    },
+    {
+      "start": 641.93,
+      "end": 644.26,
+      "text": "no se como a la baña",
+      "avg_logprob": -0.4594101660124218,
+      "no_speech_prob": 0.11246832460165024,
+      "compression_ratio": 1.6384615384615384
+    },
+    {
+      "start": 644.26,
+      "end": 645.86,
+      "text": "qué bueno",
+      "avg_logprob": -0.4594101660124218,
+      "no_speech_prob": 0.11246832460165024,
+      "compression_ratio": 1.6384615384615384
+    },
+    {
+      "start": 645.86,
+      "end": 649.86,
+      "text": "comunicación conmigo a través del 987 10 8344",
+      "avg_logprob": -0.4594101660124218,
+      "no_speech_prob": 0.11246832460165024,
+      "compression_ratio": 1.6384615384615384
+    },
+    {
+      "start": 649.86,
+      "end": 655.5,
+      "text": "además el ocho cinco cinco nueve cuatro nueve noventa y cinco diez esta tarde me voy a dar un",
+      "avg_logprob": -0.2494912451505661,
+      "no_speech_prob": 0.6103411912918091,
+      "compression_ratio": 1.7971014492753623
+    },
+    {
+      "start": 655.5,
+      "end": 667.36,
+      "text": "banquete yo mismo me lo permiten digo me lo permiten si verás que sí ok porque hoy el especial",
+      "avg_logprob": -0.2494912451505661,
+      "no_speech_prob": 0.6103411912918091,
+      "compression_ratio": 1.7971014492753623
+    },
+    {
+      "start": 667.36,
+      "end": 676.16,
+      "text": "de las cinco vengo en boleros vaya buscando su compañía tílica preferida a las cinco",
+      "avg_logprob": -0.2494912451505661,
+      "no_speech_prob": 0.6103411912918091,
+      "compression_ratio": 1.7971014492753623
+    },
+    {
+      "start": 676.16,
+      "end": 682.98,
+      "text": "la tarde vengo con el especial de los boleros pero en estas dos horas antes de las cinco son",
+      "avg_logprob": -0.2494912451505661,
+      "no_speech_prob": 0.6103411912918091,
+      "compression_ratio": 1.7971014492753623
+    },
+    {
+      "start": 682.98,
+      "end": 690.37,
+      "text": "las tres y quince, verdad que sí. Vamos a disfrutar de un repertorio riquísimo. ¿Te",
+      "avg_logprob": -0.38244952349101796,
+      "no_speech_prob": 0.5990720987319946,
+      "compression_ratio": 1.3294117647058823
+    },
+    {
+      "start": 690.37,
+      "end": 701.66,
+      "text": "sabe por qué? Porque le vamos a averiguar el conocimiento musical expresado en la música",
+      "avg_logprob": -0.38244952349101796,
+      "no_speech_prob": 0.5990720987319946,
+      "compression_ratio": 1.3294117647058823
+    },
+    {
+      "start": 701.66,
+      "end": 710.06,
+      "text": "del merengue y la salsa del maestro Sonny Ovalle",
+      "avg_logprob": -0.38244952349101796,
+      "no_speech_prob": 0.5990720987319946,
+      "compression_ratio": 1.3294117647058823
+    },
+    {
+      "start": 710.06,
+      "end": 717.59,
+      "text": "tocándote casi coste fin de semana",
+      "avg_logprob": -0.46247470868776924,
+      "no_speech_prob": 0.4798719584941864,
+      "compression_ratio": 1.51875
+    },
+    {
+      "start": 717.59,
+      "end": 724.39,
+      "text": "usted no se imagina la cantidad los temas que ha reglado sony el maestro sonio",
+      "avg_logprob": -0.46247470868776924,
+      "no_speech_prob": 0.4798719584941864,
+      "compression_ratio": 1.51875
+    },
+    {
+      "start": 724.39,
+      "end": 734.88,
+      "text": "valle ese señor te veía tocando piano con wilfrido vargas hay un señor calvo",
+      "avg_logprob": -0.46247470868776924,
+      "no_speech_prob": 0.4798719584941864,
+      "compression_ratio": 1.51875
+    },
+    {
+      "start": 734.88,
+      "end": 739.68,
+      "text": "vera que así con su migotazo ahí tocando piano",
+      "avg_logprob": -0.46247470868776924,
+      "no_speech_prob": 0.4798719584941864,
+      "compression_ratio": 1.51875
+    },
+    {
+      "start": 739.68,
+      "end": 745.5,
+      "text": "¿Usted nos imagina lo que ha hecho por el merengue y la salsa en la República Dominicana?",
+      "avg_logprob": -0.38147380190794583,
+      "no_speech_prob": 0.2025250494480133,
+      "compression_ratio": 1.5036496350364963
+    },
+    {
+      "start": 745.5,
+      "end": 755.08,
+      "text": "Pero se lo vamos a decir aquí, los clásicos, sí, para eso estamos, ¿verdad que sí?",
+      "avg_logprob": -0.38147380190794583,
+      "no_speech_prob": 0.2025250494480133,
+      "compression_ratio": 1.5036496350364963
+    },
+    {
+      "start": 755.08,
+      "end": 758.38,
+      "text": "Vamos a disfrutar gracias a la gente que ya está conmigo a través de YouTube.",
+      "avg_logprob": -0.38147380190794583,
+      "no_speech_prob": 0.2025250494480133,
+      "compression_ratio": 1.5036496350364963
+    },
+    {
+      "start": 758.38,
+      "end": 760.78,
+      "text": "Clásicos de fin de semana te activa la campanita",
+      "avg_logprob": -0.38147380190794583,
+      "no_speech_prob": 0.2025250494480133,
+      "compression_ratio": 1.5036496350364963
+    },
+    {
+      "start": 760.78,
+      "end": 763.38,
+      "text": "Y ahí le vamos a salir cuando estemos en vivo",
+      "avg_logprob": -0.38147380190794583,
+      "no_speech_prob": 0.2025250494480133,
+      "compression_ratio": 1.5036496350364963
+    },
+    {
+      "start": 763.38,
+      "end": 765.78,
+      "text": "Hágase socio también del canal",
+      "avg_logprob": -0.38147380190794583,
+      "no_speech_prob": 0.2025250494480133,
+      "compression_ratio": 1.5036496350364963
+    },
+    {
+      "start": 768.28,
+      "end": 770.41,
+      "text": "Deje que el mundo goce",
+      "avg_logprob": -0.38147380190794583,
+      "no_speech_prob": 0.2025250494480133,
+      "compression_ratio": 1.5036496350364963
+    },
+    {
+      "start": 770.41,
+      "end": 780.41,
+      "text": "de les share, de les like, bien y entonces vamos a disfrutar esta tarde de lo que ha hecho",
+      "avg_logprob": -0.47900212832859584,
+      "no_speech_prob": 0.5028757452964783,
+      "compression_ratio": 1.5301724137931034
+    },
+    {
+      "start": 780.41,
+      "end": 784.57,
+      "text": "el sí Sonio Valle, el maestro Sonio Valle por el merengue y la salsa de la República",
+      "avg_logprob": -0.47900212832859584,
+      "no_speech_prob": 0.5028757452964783,
+      "compression_ratio": 1.5301724137931034
+    },
+    {
+      "start": 784.57,
+      "end": 788.01,
+      "text": "Dominicana. Ya veo por ahí el Majinbe del Fuerte, le dicen que es lo que es Richie está",
+      "avg_logprob": -0.47900212832859584,
+      "no_speech_prob": 0.5028757452964783,
+      "compression_ratio": 1.5301724137931034
+    },
+    {
+      "start": 788.01,
+      "end": 798.08,
+      "text": "en YouTube. Hola Majinbe, hágalo usted también a ver quién anda por ahí. El maestro",
+      "avg_logprob": -0.47900212832859584,
+      "no_speech_prob": 0.5028757452964783,
+      "compression_ratio": 1.5301724137931034
+    },
+    {
+      "start": 798.08,
+      "end": 808.7,
+      "text": "Sonio Valles según escuché su historia llega a la capital y en ese tiempo pues viene de",
+      "avg_logprob": -0.26986100968350185,
+      "no_speech_prob": 0.2372981756925583,
+      "compression_ratio": 1.6381909547738693
+    },
+    {
+      "start": 808.7,
+      "end": 816.16,
+      "text": "Salcedo provincia hermanas Mirabal se ubica en la capital pero te sabe que en ese",
+      "avg_logprob": -0.26986100968350185,
+      "no_speech_prob": 0.2372981756925583,
+      "compression_ratio": 1.6381909547738693
+    },
+    {
+      "start": 816.16,
+      "end": 825.87,
+      "text": "tiempo las cosas eran difíciles y llega y comienza a tocar en los bares, en los",
+      "avg_logprob": -0.26986100968350185,
+      "no_speech_prob": 0.2372981756925583,
+      "compression_ratio": 1.6381909547738693
+    },
+    {
+      "start": 825.87,
+      "end": 833.92,
+      "text": "restaurantes, en los lugares de la vida alegre de la capital hasta que lo",
+      "avg_logprob": -0.26986100968350185,
+      "no_speech_prob": 0.2372981756925583,
+      "compression_ratio": 1.6381909547738693
+    },
+    {
+      "start": 833.92,
+      "end": 840.23,
+      "text": "que se llama Johnny Ventura, Johnny Ventura, sí señor, con Johnny pasa un tiempo hasta",
+      "avg_logprob": -0.47662696213114497,
+      "no_speech_prob": 0.41301509737968445,
+      "compression_ratio": 1.5416666666666667
+    },
+    {
+      "start": 840.23,
+      "end": 846.62,
+      "text": "que llega a la orquesta de Wilfrid Vargas pero eso lo vamos a ir contando poco a poco aquí.",
+      "avg_logprob": -0.47662696213114497,
+      "no_speech_prob": 0.41301509737968445,
+      "compression_ratio": 1.5416666666666667
+    },
+    {
+      "start": 846.62,
+      "end": 847.62,
+      "text": "Espera que sí.",
+      "avg_logprob": -0.47662696213114497,
+      "no_speech_prob": 0.41301509737968445,
+      "compression_ratio": 1.5416666666666667
+    },
+    {
+      "start": 847.62,
+      "end": 852.48,
+      "text": "Trocándote clásicos de fin de semana.",
+      "avg_logprob": -0.47662696213114497,
+      "no_speech_prob": 0.41301509737968445,
+      "compression_ratio": 1.5416666666666667
+    },
+    {
+      "start": 852.48,
+      "end": 864.68,
+      "text": "Vamos a empezar a disfrutar de este repertoriaso que ha hecho con sus arreglos el maestro",
+      "avg_logprob": -0.47662696213114497,
+      "no_speech_prob": 0.41301509737968445,
+      "compression_ratio": 1.5416666666666667
+    },
+    {
+      "start": 864.68,
+      "end": 865.68,
+      "text": "Sony.",
+      "avg_logprob": -0.47662696213114497,
+      "no_speech_prob": 0.41301509737968445,
+      "compression_ratio": 1.5416666666666667
+    },
+    {
+      "start": 865.68,
+      "end": 867.72,
+      "text": "¡Allá! ¡Vamos arriba!",
+      "avg_logprob": -0.44921610434850057,
+      "no_speech_prob": 0.10854022949934006,
+      "compression_ratio": 1.2435897435897436
+    },
+    {
+      "start": 867.72,
+      "end": 870.72,
+      "text": "Haciendo historia en la radio de Nueva Inglaterra",
+      "avg_logprob": -0.44921610434850057,
+      "no_speech_prob": 0.10854022949934006,
+      "compression_ratio": 1.2435897435897436
+    },
+    {
+      "start": 870.72,
+      "end": 875.8,
+      "text": "Radio de Nueva es desajado",
+      "avg_logprob": -0.44921610434850057,
+      "no_speech_prob": 0.10854022949934006,
+      "compression_ratio": 1.2435897435897436
+    },
+    {
+      "start": 875.8,
+      "end": 877.8,
+      "text": "En el corazón del Sibao",
+      "avg_logprob": -0.44921610434850057,
+      "no_speech_prob": 0.10854022949934006,
+      "compression_ratio": 1.2435897435897436
+    },
+    {
+      "start": 877.8,
+      "end": 881.71,
+      "text": "Él es Richie R.A.",
+      "avg_logprob": -0.44921610434850057,
+      "no_speech_prob": 0.10854022949934006,
+      "compression_ratio": 1.2435897435897436
+    },
+    {
+      "start": 881.71,
+      "end": 882.71,
+      "text": "De los clásicos",
+      "avg_logprob": -0.44921610434850057,
+      "no_speech_prob": 0.10854022949934006,
+      "compression_ratio": 1.2435897435897436
+    },
+    {
+      "start": 882.71,
+      "end": 884.71,
+      "text": "Escuche este primer tema",
+      "avg_logprob": -0.44921610434850057,
+      "no_speech_prob": 0.10854022949934006,
+      "compression_ratio": 1.2435897435897436
+    },
+    {
+      "start": 884.71,
+      "end": 885.71,
+      "text": "¡Hey!",
+      "avg_logprob": -0.44921610434850057,
+      "no_speech_prob": 0.10854022949934006,
+      "compression_ratio": 1.2435897435897436
+    }
+  ]
+}

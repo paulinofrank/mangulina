@@ -1,0 +1,186 @@
+{
+  "source": "C:\\Users\\fvpg\\OneDrive\\Downloads\\LOS ARREGLOS DE SONY OVALLES_part-02.mp3",
+  "part": 2,
+  "duration": 899.989,
+  "duration_after_vad": 530.869,
+  "model": "faster-whisper-small-int8",
+  "complete": true,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 46.0,
+      "text": "Hermano mío, ten un poco de paciencia y no vendas lo que tú tienes para ir a venturar. Eso estoy cantando pacaritos en el aire, no soy más que criminal de ese peligro somar. Y con tus pesitos, ponte un negocito en tu patria. Estaré en tu patria con tus familiares",
+      "avg_logprob": -0.3808002646764119,
+      "no_speech_prob": 0.516501247882843,
+      "compression_ratio": 1.4972067039106145
+    },
+    {
+      "start": 46.26,
+      "end": 65.87,
+      "text": "Y no era el jamás, sin saber si vas a llegar. Hoy este consejo hermano mío las cosas están tan malas como en nuestro país.",
+      "avg_logprob": -0.39502473087871776,
+      "no_speech_prob": 0.3029993772506714,
+      "compression_ratio": 1.1869158878504673
+    },
+    {
+      "start": 79.44,
+      "end": 99.33,
+      "text": "¡Suscríbete!",
+      "avg_logprob": -0.9032564461231232,
+      "no_speech_prob": 0.6339382529258728,
+      "compression_ratio": 0.6521739130434783
+    },
+    {
+      "start": 99.33,
+      "end": 149.58,
+      "text": "Y si consigues la vista no hay problema en migración. Pero no te vayas yo, no te llenes diluciones que en el canal de la mona te comen los tiburones.",
+      "avg_logprob": -0.3494065586816181,
+      "no_speech_prob": 0.37221384048461914,
+      "compression_ratio": 1.2796610169491525
+    },
+    {
+      "start": 152.69,
+      "end": 182.54,
+      "text": "¡Suscríbete!",
+      "avg_logprob": -1.0259995758533478,
+      "no_speech_prob": 0.7931793928146362,
+      "compression_ratio": 0.6521739130434783
+    },
+    {
+      "start": 182.71,
+      "end": 241.04,
+      "text": "¡No te montes hayola! Porque este tío no te montes hayola. No le hagas casual durante que la furia de un barco hasta que la muertes. No te montes hayola, porque este tío no te muntas...",
+      "avg_logprob": -0.7111415647227188,
+      "no_speech_prob": 0.43631741404533386,
+      "compression_ratio": 1.588235294117647
+    },
+    {
+      "start": 242.58,
+      "end": 262.03,
+      "text": "De semana.",
+      "avg_logprob": -0.7142062336206436,
+      "no_speech_prob": 0.11202266812324524,
+      "compression_ratio": 0.5789473684210527
+    },
+    {
+      "start": 262.52,
+      "end": 290.06,
+      "text": "La Pionera. La primera, la más confiable. Sí señor, sello de garantía porque eso lo dejó el señor Alcántara ahí. Eso hay que respetarlo y para eso 9-7-8-6-9-1-54-09 está para eso doña Bilagros. La hermosa cenicienda. Shaoli todo el equipo de cargo expresa esperando por tu carga",
+      "avg_logprob": -0.2772454090332717,
+      "no_speech_prob": 0.08428734540939331,
+      "compression_ratio": 1.3568075117370892
+    },
+    {
+      "start": 290.36,
+      "end": 319.76,
+      "text": "¡Susun fin de semana!",
+      "avg_logprob": -1.1213590833875868,
+      "no_speech_prob": 0.09867443144321442,
+      "compression_ratio": 0.7419354838709677
+    },
+    {
+      "start": 320.15,
+      "end": 352.56,
+      "text": "Alineación. Balancéo. O más hojuevas y usadas. Además, el maestro del audio es el rey de El Mófler. Tu carro sale nuevecito de ahí. Le ponen todo el cariño necesario. Si tu carro tiene problemas, tiene la solución en el 25 de la calle Western. El maestro del audio es un mecánico de los clásicos. Otro tema más que viene...",
+      "avg_logprob": -0.389460524332892,
+      "no_speech_prob": 0.03722601383924484,
+      "compression_ratio": 1.488888888888889
+    },
+    {
+      "start": 353.75,
+      "end": 380.62,
+      "text": "Del puño de la música del maestro Sony Ovalles. Sony Ovalles llega a la capital, le voy a decir un momentito aquí. Sony Ovalles ¿Usted seguro no se acordaba de él? No lo tomo en cuenta. Como sucede muchas veces, verás que sí, que las personas importantes pues entonces...",
+      "avg_logprob": -0.21885352964912141,
+      "no_speech_prob": 0.03668210282921791,
+      "compression_ratio": 1.4307692307692308
+    },
+    {
+      "start": 381.4,
+      "end": 403.44,
+      "text": "De semana. Pasan Desapercibidos. Ganó el Premio Casandra como el mejor arreglista en 1984. Nació en Salcedo, como le dije pero luego se fue a Castillo. A la provincia Duarte donde comenzó su carrera en la música de la mano del compositor Rokuto Esteves con la trayectoria de más de 40 años como arreglista y músico",
+      "avg_logprob": -0.21121794705862526,
+      "no_speech_prob": 0.21799953281879425,
+      "compression_ratio": 1.4375
+    },
+    {
+      "start": 403.73,
+      "end": 422.03,
+      "text": "En donde formó parte de decenas de orquestas y agrupaciones. El maestro Sony Ovalles es uno de los nombres más destacados de la década del 80 en la música de la República Dominicana. Para muestra un botón, ¿usted ha escuchado esto que dice así? Por favor sintonicen bien.",
+      "avg_logprob": -0.1506378846625759,
+      "no_speech_prob": 0.01612175442278385,
+      "compression_ratio": 1.3526570048309179
+    },
+    {
+      "start": 422.07,
+      "end": 451.69,
+      "text": "Estás gozando el espectáculo de los clásicos de fin de semana. Con con con con Richie Herrera, El papá de los clásicos. El papá de los clásicos. Y ya... Ya... Ya... Ha escuchado esto usted? Ay que bello! Sergio Vargas Se llama Volveré a mi tierra. Arreglos musicales del maestro Sony Ovalles",
+      "avg_logprob": -0.3043560389169427,
+      "no_speech_prob": 0.006213958375155926,
+      "compression_ratio": 1.5463917525773196
+    },
+    {
+      "start": 454.55,
+      "end": 524.81,
+      "text": "Volveré a la tierra que me dio nacer. Volveré a la Tierra que me dio crecer. Volveré a las tierras que yo abandoné. Volveré a los tierras donde yo lo hablé. Volveré, a las tierras que ellos trabajen. Volveré a mis padres. Volveré a sus tierras que tanto sude. Volveré a mi tierra donde me entregué.",
+      "avg_logprob": -0.4200777173042297,
+      "no_speech_prob": 0.2605220079421997,
+      "compression_ratio": 2.2302158273381294
+    },
+    {
+      "start": 526.58,
+      "end": 693.23,
+      "text": "Ensepar en caso de Sergio Vargas.",
+      "avg_logprob": -0.5355786193500865,
+      "no_speech_prob": 0.11412914842367172,
+      "compression_ratio": 0.8095238095238095
+    },
+    {
+      "start": 693.3,
+      "end": 722.96,
+      "text": "Sonio Valles.",
+      "avg_logprob": -0.7619791726271311,
+      "no_speech_prob": 0.05137769505381584,
+      "compression_ratio": 0.6363636363636364
+    },
+    {
+      "start": 723.09,
+      "end": 740.08,
+      "text": "Pablo Isabel Mariano. No, mentira, Pablo Mariano de Señor y el comandante Ignacio. Andan por ahí patrullando estan en de noche con Miguelo. 49 de la calle Essex. Averiguándolo los teléfonos.",
+      "avg_logprob": -0.3426393179570214,
+      "no_speech_prob": 0.2943807542324066,
+      "compression_ratio": 1.25
+    },
+    {
+      "start": 740.28,
+      "end": 762.96,
+      "text": "De semana.",
+      "avg_logprob": -0.8293628990650177,
+      "no_speech_prob": 0.3603251576423645,
+      "compression_ratio": 0.5789473684210527
+    },
+    {
+      "start": 766.1,
+      "end": 795.05,
+      "text": "49 de la calle de Sex, además sale bien vestido, bien calzado y bien comunicado. Y si de paso le manda los chelitos también a su familia ya en la República Dominicana. Todo eso en un solo lugar. 49 de la calle de sex en Lawrence. ¡De noche! ¿Dónde está Miguel? ¿Dónde está Pabloito? ¿Dónde están el comando? Ni Vicky si las dejan entrar también. Si las dejan entrar.",
+      "avg_logprob": -0.27948871567135763,
+      "no_speech_prob": 0.08717649430036545,
+      "compression_ratio": 1.6008403361344539
+    },
+    {
+      "start": 795.25,
+      "end": 828.65,
+      "text": "Otro tema que le arregló a Sergio. Bueno, vamos arriba. Aquí está. Richie así. Le pusimos candado al almacén de los clásicos. ¿Qué dijiste? Qué pena. ¿Estás hablando a mí? Me estás hablando a mí. No te podemos prestar la llave. Clásicos de fin de semana. Salud para mi mano, Rudy Cantera. ¡Familia! ¡Familia!",
+      "avg_logprob": -0.23540044076663932,
+      "no_speech_prob": 0.02625580132007599,
+      "compression_ratio": 1.4618834080717489
+    },
+    {
+      "start": 851.83,
+      "end": 899.99,
+      "text": "¡Ay, mamá!",
+      "avg_logprob": -1.1576014586857386,
+      "no_speech_prob": 0.8322166204452515,
+      "compression_ratio": 0.6190476190476191
+    }
+  ]
+}

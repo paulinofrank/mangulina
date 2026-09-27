@@ -1,0 +1,162 @@
+{
+  "source": "C:\\Users\\fvpg\\OneDrive\\Downloads\\LOS ARREGLOS DE SONY OVALLES_part-04.mp3",
+  "part": 4,
+  "duration": 899.989,
+  "duration_after_vad": 438.021,
+  "model": "faster-whisper-small-int8",
+  "complete": true,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 239.98,
+      "text": "De semana. Sin lugar a dudas, el merengue les debe mucho a Sony Ovalles. Mucho. Ese sabor. Esa forma de arreglar, esa forma de harmonizar el merengue lo sitúa en uno de los mejores arreglistas de la República Dominicana. Hay muchos... Bueno, hay varios. Hay varios buenos. Hay otros que no llegan a esta categoría pero qué cosa eh? El maestro Sony Ovalles",
+      "avg_logprob": -0.19356190298021453,
+      "no_speech_prob": 0.039740268141031265,
+      "compression_ratio": 1.565217391304348
+    },
+    {
+      "start": 240.12,
+      "end": 282.38,
+      "text": "Ha hecho de muchas temas, ya temas importantes del Merengue. Ha hecho de eso íconos del Merengue. Rubi Pérez es uno de ellos quien le entregó su primera producción solo. Ya cuando sale de Wilfrid O Vargas Le entrega la primera producción donde está ese tema buscando tus besos Luego les sigue uno como este ¡Mucha Salud!",
+      "avg_logprob": -0.2607814470926921,
+      "no_speech_prob": 0.01331684272736311,
+      "compression_ratio": 1.5545023696682465
+    },
+    {
+      "start": 282.74,
+      "end": 376.24,
+      "text": "Al maestro Sony Ovalles. Quisimos tenerlo aquí en los clásicos hoy, pero está trabajando una producción para las hermanas Mirabal. Está haciendo una obra clásica para las hermanas Miraval y no pudo estar con nosotros aquí. Vamos a hacerlo traemos para el escándalo.",
+      "avg_logprob": -0.17904830927198584,
+      "no_speech_prob": 0.0915522500872612,
+      "compression_ratio": 1.5054945054945055
+    },
+    {
+      "start": 377.49,
+      "end": 569.55,
+      "text": "¡Sica está! ¡Ani no se poste un fix, madre!",
+      "avg_logprob": -1.4789833227793376,
+      "no_speech_prob": 0.2620686888694763,
+      "compression_ratio": 0.8545454545454545
+    },
+    {
+      "start": 569.55,
+      "end": 592.98,
+      "text": "Con confianza y seriedad en el servicio de cargas a la República Dominicana. Estimados gratis. Llame para que recojan su carga en su casa al 978-691-5409, y La línea gratis 1 800-337-0434 cargo express corporation 48 de la calle Franklin en Lawrence y en Whistler en el 687 de la calle Maine",
+      "avg_logprob": -0.2737285697034427,
+      "no_speech_prob": 0.3737999498844147,
+      "compression_ratio": 1.380281690140845
+    },
+    {
+      "start": 592.98,
+      "end": 606.57,
+      "text": "Recuerde que lo importante no es el precio, sino el servicio. Y el mejor servicio lo tiene Cargo Express Corporation. La pionera. La pionera! Cargo Express Corporation",
+      "avg_logprob": -0.20239481111852134,
+      "no_speech_prob": 0.0610845647752285,
+      "compression_ratio": 1.5135135135135136
+    },
+    {
+      "start": 607.09,
+      "end": 636.8,
+      "text": "Para la reparación general de tu vehículo debes ponerlo en manos de mecánicos profesionales porque tu carro merece el mejor cuidado. Eso solo lo encuentras en un lugar, Eladios Auto Reaper. Mecanica en general. Alineación y balanceo. La reparación completa del muffler con más nuevas y usadas y muchos servicios más. Eladios Auto Reaper 25 de la calle West & Lawrence. El maestro Eladio es el mecánico de los clásicos y el rey del muffler. Eladios Auto Reaper 25 de la calle West and Lawrence",
+      "avg_logprob": -0.20274947146101605,
+      "no_speech_prob": 0.6313197612762451,
+      "compression_ratio": 1.799283154121864
+    },
+    {
+      "start": 636.8,
+      "end": 664.08,
+      "text": "Y escucha bien, si vas para la República Dominicana y necesitas un vehículo rentado, llama a el Adios Auto Reaper. 978-397-5502. 978-398-5502 El mecánico de los clásicos es el maestro eladio y su súper taller 25 de la Cali West en Lorenz. Cedar View Health and Rehab ofrece el mejor cuidado de salud en un ambiente cálido y familiar",
+      "avg_logprob": -0.29842468589544296,
+      "no_speech_prob": 0.2125454545021057,
+      "compression_ratio": 1.3724696356275303
+    },
+    {
+      "start": 664.08,
+      "end": 692.96,
+      "text": "Cuando necesite cuidado postoperatorio de corto o de largo plazo. Cedarfield Health and Rehab ofrece la diferencia. Terapias 7 días a la semana y su equipo de terapeuta, expertos utiliza la última tecnología y técnicas de rehabilitación para acelerar su recuperación. Tienen un programa especializado en enfermedades de los riñones también programa de rehabilitación pulmonar son certificados excelencia en cuidados de heridas",
+      "avg_logprob": -0.2384849497500588,
+      "no_speech_prob": 0.3879445493221283,
+      "compression_ratio": 1.6029411764705883
+    },
+    {
+      "start": 692.96,
+      "end": 713.45,
+      "text": "En Cedarview Health y Rehab. Tendrás servicios religiosos en español, comida hispana e información en español para tu conveniencia. Llame a Mari Lin, directora del programa para solicitar más información. 978-943-3774. En Cedarview Health and Rehab.",
+      "avg_logprob": -0.23120337991572137,
+      "no_speech_prob": 0.11308624595403671,
+      "compression_ratio": 1.4065934065934067
+    },
+    {
+      "start": 713.78,
+      "end": 743.47,
+      "text": "Esto es un llamado a los dominicanos que regresan a su tierra y a los turistas que nos visitan. Global Rent-A-Car quiere recibirte como te lo mereces. Bien montado, Global Rent-A-Cart con carros de este $35 dólares en adelante. Pequeños, medianos y jefetas en las mejores condiciones para que te muevas seguro. Global Rent-A Car llama a Tony directo desde los Estados Unidos 617 314 77 35 o desde la República Dominicana 809 49",
+      "avg_logprob": -0.2507188425654859,
+      "no_speech_prob": 0.24233458936214447,
+      "compression_ratio": 1.572992700729927
+    },
+    {
+      "start": 743.47,
+      "end": 758.64,
+      "text": "87634. Global Rent-A-Car con servicios a todos los aeropuertos. Búscalos en internet como Global Rent-A-Cars y saliendo del aeropuerto sibao, a mano izquierda. Ahí está Global Rent-A-CAR yo te lo recomiendo.",
+      "avg_logprob": -0.40724308544130466,
+      "no_speech_prob": 0.4421556293964386,
+      "compression_ratio": 1.4066666666666667
+    },
+    {
+      "start": 759.44,
+      "end": 787.04,
+      "text": "Escucha bien. Para sus trámites de bienes países, o sea compra o venta de propiedad debe buscar la persona correcta que tenga la experiencia necesaria para que usted se sienta confiado en el negocio. Les recomiendo a Lenin Roa. Hola soy Lenin Roa y te quiero invitar a que sigas escuchando los clásicos con Richie Herrera Los Sábados por la Mega Lenin Roa me puedes contactar al 646369",
+      "avg_logprob": -0.16789029440227546,
+      "no_speech_prob": 0.05855455994606018,
+      "compression_ratio": 1.5476190476190477
+    },
+    {
+      "start": 787.04,
+      "end": 795.94,
+      "text": "949 para tu venta o compra de bienes raíces, o venta o compra de negocios. Los clásicos con Richie Herrera.",
+      "avg_logprob": -0.15008317766820684,
+      "no_speech_prob": 0.2293839305639267,
+      "compression_ratio": 1.1458333333333333
+    },
+    {
+      "start": 795.94,
+      "end": 819.31,
+      "text": "Tranquilo, papo. Hola ¿Qué tal? Yo soy Mastere de Masterpiece Tropical en el 324 de la calle Proboen Lorenz con el teléfono 9782087440 para Delivery 97820874 40 estamos laborando aquí para ti desde las 12 de la tarde hasta la 1 de la madrugada llama para Delivery al 978208 74 40 si quieres recoger tu comida",
+      "avg_logprob": -0.35884686182903985,
+      "no_speech_prob": 0.21816608309745789,
+      "compression_ratio": 1.4423963133640554
+    },
+    {
+      "start": 819.31,
+      "end": 828.3,
+      "text": "Más del Pictotropical.",
+      "avg_logprob": -1.1814897894859313,
+      "no_speech_prob": 0.2324472963809967,
+      "compression_ratio": 0.75
+    },
+    {
+      "start": 828.3,
+      "end": 856.53,
+      "text": "Quedate en casa. Quedate en casa, te deón auto ripper en towing. Cambio de aceite y filtro. Comas nuevas usadas son especialistas en servicios de gruas. Llámelos al 9 7 8 4 2 3 6 2 4 9. 9 7 8 4 23 62 49. Pregunta por Manuel es de león auto ripper en soin están en el 46 de la Winthrop Avenue",
+      "avg_logprob": -0.5384601766758776,
+      "no_speech_prob": 0.25517767667770386,
+      "compression_ratio": 1.48
+    },
+    {
+      "start": 856.53,
+      "end": 881.65,
+      "text": "Esa es en el horario de ocho de la mañana seis de la tarde del lunes a sábado. De Leon auto ripper en towing pregunta por Manuel 9 7 8 4 23 62 49 y ahora de león está reparando el aire acondicionado de tu vehículo pasa por el 47 de la calle Winchrup en south Lawrence es de león auto ripper en towin",
+      "avg_logprob": -0.46942224362317253,
+      "no_speech_prob": 0.15861757099628448,
+      "compression_ratio": 1.5
+    },
+    {
+      "start": 881.65,
+      "end": 899.99,
+      "text": "¡Havenly Donuts en la Essex!",
+      "avg_logprob": -0.7246004541714987,
+      "no_speech_prob": 0.4301133155822754,
+      "compression_ratio": 0.7894736842105263
+    }
+  ]
+}

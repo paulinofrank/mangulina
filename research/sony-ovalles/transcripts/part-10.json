@@ -1,0 +1,218 @@
+{
+  "source": "C:\\Users\\fvpg\\OneDrive\\Downloads\\LOS ARREGLOS DE SONY OVALLES_part-10.mp3",
+  "part": 10,
+  "duration": 899.989,
+  "duration_after_vad": 547.205,
+  "model": "faster-whisper-small-int8",
+  "complete": true,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 45.48,
+      "text": "La escribiré con sangre. En los clásicos de fin de semana, esta es la hora del bolero.",
+      "avg_logprob": -0.43933101654052736,
+      "no_speech_prob": 0.2778729200363159,
+      "compression_ratio": 1.0595238095238095
+    },
+    {
+      "start": 340.4,
+      "end": 356.24,
+      "text": "Para enviar su carga a la República Dominicana, hay una empresa pionera en este servicio. Cargo Express Corporation entregando de puerta a puerta cajas, dinero, paquetes, mudanzas y electrodomésticos. Cargo Express Corporation",
+      "avg_logprob": -0.14877038007533108,
+      "no_speech_prob": 0.11394837498664856,
+      "compression_ratio": 1.4493670886075949
+    },
+    {
+      "start": 356.24,
+      "end": 379.7,
+      "text": "Confianza y seriedad en el servicio de cargas a la República Dominicana. Estimados gratis, llame para que recojan su carga en su casa al 978-691-5409 y La línea Gratis 1 800-337-0434 Cargo Express Corporation 48 de la calle Franklin en Lawrence y en Whistler en el 687 de la calle Maine",
+      "avg_logprob": -0.23874650632633881,
+      "no_speech_prob": 0.19594968855381012,
+      "compression_ratio": 1.3696682464454977
+    },
+    {
+      "start": 379.7,
+      "end": 393.26,
+      "text": "Recuerde que lo importante no es el precio, sino el servicio. Y el mejor servicio lo tiene Cargo Express Corporation. La Pionera.",
+      "avg_logprob": -0.20452370727434754,
+      "no_speech_prob": 0.0491316020488739,
+      "compression_ratio": 1.2264150943396226
+    },
+    {
+      "start": 393.84,
+      "end": 423.55,
+      "text": "Para la reparación general de tu vehículo debes ponerlo en manos de mecánicos profesionales porque tu carro merece el mejor cuidado. Eso solo lo encuentras en lugar, el Adios Auto Reaper. Mecanica en general. Alineación y balanceo. La reparación completa del muffler con más nuevas y usadas y muchos servicios más. El Adios Auto Reaper 25 de la calle West & Lawrence. El maestro del adio es el mecánico de los clásicos y el rey del muffler.",
+      "avg_logprob": -0.22812607205872024,
+      "no_speech_prob": 0.5140420794487,
+      "compression_ratio": 1.6423357664233578
+    },
+    {
+      "start": 423.55,
+      "end": 443.95,
+      "text": "Y escucha bien si vas para la República Dominicana y necesitas un vehículo rentado. Llama a el Adios Auto Reaper 978-397-5502 978-397 5502 El mecánico de los clásicos es el maestro el adio, y su súper taller 25 de la Kanye West en Lorenz",
+      "avg_logprob": -0.3141025848485328,
+      "no_speech_prob": 0.163924440741539,
+      "compression_ratio": 1.2925531914893618
+    },
+    {
+      "start": 444.12,
+      "end": 458.94,
+      "text": "Cedarview Health & Rehab ofrece el mejor cuidado de salud en un ambiente cálido y familiar. Cuando necesite cuidado postoperatorio, de corto o de largo plazo. Cedarview Health & We Have ofrece la diferencia.",
+      "avg_logprob": -0.21636075568649005,
+      "no_speech_prob": 0.25405746698379517,
+      "compression_ratio": 1.412162162162162
+    },
+    {
+      "start": 458.94,
+      "end": 481.68,
+      "text": "Terapias. Siete días a la semana y su equipo de terapeuta, expertos utiliza la última tecnología y técnicas de rehabilitación para acelerar su recuperación. Tienen un programa especializado en enfermedades de los riñones también programa de rehabilitación pulmonar son certificados de excelencia en cuidados de heridas en Cedarview Health and Rehab",
+      "avg_logprob": -0.2478338451946483,
+      "no_speech_prob": 0.44239524006843567,
+      "compression_ratio": 1.577092511013216
+    },
+    {
+      "start": 481.68,
+      "end": 500.17,
+      "text": "Tendrás servicios religiosos en español, comida hispana e información en español para tu conveniencia. Llame a Marilyn, directora del programa para solicitar más información. 978-943-3774 es Cedarview Health and Rehab",
+      "avg_logprob": -0.2659540447321805,
+      "no_speech_prob": 0.08461733162403107,
+      "compression_ratio": 1.3176470588235294
+    },
+    {
+      "start": 500.53,
+      "end": 519.58,
+      "text": "Esto es un llamado a los americanos que regresan a su tierra y a los turistas que nos visitan. Glovo Rento Car quiere recibirte como te lo mereces, bien montado Glovo Rento Car con carros de este 35 dólares en adelante pequeños medianos y jefetas en las mejores condiciones para que te muevas seguro",
+      "avg_logprob": -0.21363382826785784,
+      "no_speech_prob": 0.2089814990758896,
+      "compression_ratio": 1.5408163265306123
+    },
+    {
+      "start": 519.58,
+      "end": 545.39,
+      "text": "Global Rent-Acar. Llama a Tony, directo desde los Estados Unidos 617 314 7735 o desde la República Dominicana 809 498 7634. Global Rent-Acar con servicios a todos los aeropuertos. Búscalos en internet como Global Rent-Acar y saliendo del aeropuerto sibao a mano izquierda ahí está Global Rent-Acar yo te lo recomiendo",
+      "avg_logprob": -0.2743419376404389,
+      "no_speech_prob": 0.16714875400066376,
+      "compression_ratio": 1.5188679245283019
+    },
+    {
+      "start": 546.2,
+      "end": 573.79,
+      "text": "Escuche bien, para sus trámites de bienes países. O sea, compra o venta de propiedad debe buscar la persona correcta que tenga la experiencia necesaria para que usted se sienta confiado en el negocio. Les recomiendo a Lenin Roa. Hola, soy Lenin Roa y te quiero invitar a que sigas escuchando los clásicos con Richie Herrera. Los sábados por la mega Lenin Roa me puedes contactar al 646369",
+      "avg_logprob": -0.16822435002808178,
+      "no_speech_prob": 0.02285667695105076,
+      "compression_ratio": 1.547244094488189
+    },
+    {
+      "start": 573.79,
+      "end": 582.66,
+      "text": "949 para tu venta o compra de bienes raíces, o venta o compra de negocios. Los clásicos con Richie Herrera.",
+      "avg_logprob": -0.13390740226296818,
+      "no_speech_prob": 0.22744791209697723,
+      "compression_ratio": 1.1458333333333333
+    },
+    {
+      "start": 582.66,
+      "end": 609.26,
+      "text": "Rangilo, papo. Hola ¿Qué tal? Yo soy Mastere de Manchester Pizza Tropical en el tres noventa y cuatro de la calle Provo en Lorenz con el teléfono nueve siete ocho dos cero ocho setenta y cuatro cuarenta para delivery nueve siete ocho doce cero ocho setentadcuatro cuarenta estamos laborando aquí para ti desde las doce a tarde hasta la una de la madrugada llama para delivery al nueve siete ocho coce cero ocho se tenta y cuatro cuarentas si quieres recoger tu comida tienes que llamar por adelantado solamente dejamos pasar",
+      "avg_logprob": -0.3787989082435767,
+      "no_speech_prob": 0.19393712282180786,
+      "compression_ratio": 1.9236363636363636
+    },
+    {
+      "start": 609.26,
+      "end": 635.94,
+      "text": "Una persona a la ventana. Masterpixels tropicales. 978 208 74 40. Tenen auto reaper en towing. Cambio de aceite y filtro. Comas nuevas usadas son especialistas en servicios de gruas. Llámelos al 978 4 2 3 6 2 4 9 978 4 23 62 49",
+      "avg_logprob": -0.45398979493089625,
+      "no_speech_prob": 0.18337276577949524,
+      "compression_ratio": 1.3085714285714285
+    },
+    {
+      "start": 635.94,
+      "end": 654.08,
+      "text": "Pregunta por Manuel es de Leon auto ripper en towing. Están en el 46 de la Winchrop Avenue, eso es en South Lawrence El horario de 8 de la mañana 6 de la tarde de lunes a sábado. De león auto ripper en towin. Pregunta por Manuel Nueva 7 8",
+      "avg_logprob": -0.44665009445614284,
+      "no_speech_prob": 0.07534831762313843,
+      "compression_ratio": 1.49079754601227
+    },
+    {
+      "start": 654.08,
+      "end": 680.93,
+      "text": "423. 62 49 y ahora de Leon está reparando el aire acondicionado de tu vehículo pasa por el 47 de la calle Winthrop en South Lawrence es de león auto ripper en towin.",
+      "avg_logprob": -0.49657117413437885,
+      "no_speech_prob": 0.22440066933631897,
+      "compression_ratio": 1.2426470588235294
+    },
+    {
+      "start": 680.93,
+      "end": 703.63,
+      "text": "Donuts, cosines, sandwiches, muffins y mucho más. 2,56 de la calle S.S. in Loans. Ahí está Heavenly Donuts. Remodelado a tensionas de primera en inglés y en español. Heavenly Donuts en la S. El mejor lugar para tomarte el mejor café.",
+      "avg_logprob": -0.43909400701522827,
+      "no_speech_prob": 0.5189632773399353,
+      "compression_ratio": 1.3333333333333333
+    },
+    {
+      "start": 703.76,
+      "end": 719.25,
+      "text": "En el 225 de la calle es Excelores. Hay un lugar único en su clase. Aroma Espada.",
+      "avg_logprob": -0.5062099259633285,
+      "no_speech_prob": 0.2233404815196991,
+      "compression_ratio": 1.0121951219512195
+    },
+    {
+      "start": 719.25,
+      "end": 734.86,
+      "text": "La",
+      "avg_logprob": -3.228721857070923,
+      "no_speech_prob": 0.4096643328666687,
+      "compression_ratio": 0.2727272727272727
+    },
+    {
+      "start": 735.51,
+      "end": 753.7,
+      "text": "De noche, la tienda de los artistas. La que te diste y te comunica. Donde tú encuentras los mejores jeans. Camisa, zapatos, chaquetes y chacabanas. Sé tú el artista y diste de noche. La que pauta la moda al vestir. La primera.",
+      "avg_logprob": -0.24354078475799826,
+      "no_speech_prob": 0.187514066696167,
+      "compression_ratio": 1.4465408805031446
+    },
+    {
+      "start": 753.7,
+      "end": 783.18,
+      "text": "Además de noche es la única tienda que te fría cualquier teléfono iPhone o Galaxy. Sin importar tu crédito y con un mínimo de inicial de hasta 10 dólares. Y pánalo como puedas, y cuando quiera regala a un celular sin complicarte la vida. Ven a The Noche donde está Miguelo el presidente de la ESES.",
+      "avg_logprob": -0.2833860321686818,
+      "no_speech_prob": 0.03676895424723625,
+      "compression_ratio": 1.3688888888888888
+    },
+    {
+      "start": 783.18,
+      "end": 804.11,
+      "text": "2500.",
+      "avg_logprob": -1.142334133386612,
+      "no_speech_prob": 0.14885583519935608,
+      "compression_ratio": 0.42857142857142855
+    },
+    {
+      "start": 804.11,
+      "end": 832.78,
+      "text": "Marcos.",
+      "avg_logprob": -1.6129839420318604,
+      "no_speech_prob": 0.3097023069858551,
+      "compression_ratio": 0.5
+    },
+    {
+      "start": 854.64,
+      "end": 886.92,
+      "text": "Me está matando sin piedad, amor que nunca he de lograr. Como yo podré vencer mi obstinación y alejarla de mis pensamientos ha dado una cadena sin poderme libertad. La suerte se burla de mí vivo condenado a que mi pobre corazón",
+      "avg_logprob": -0.17957159167244321,
+      "no_speech_prob": 0.6754040122032166,
+      "compression_ratio": 1.3625730994152048
+    },
+    {
+      "start": 887.09,
+      "end": 899.99,
+      "text": "La música.",
+      "avg_logprob": -2.02330881357193,
+      "no_speech_prob": 0.4751303493976593,
+      "compression_ratio": 0.6
+    }
+  ]
+}
