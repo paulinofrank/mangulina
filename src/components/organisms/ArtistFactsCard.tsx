@@ -425,8 +425,11 @@ export default function ArtistFactsCard({
   const formerMemberships = memberships.filter((relationship) => relationship.isFormer);
   const currentLedProjects = ledProjects.filter((relationship) => !relationship.isFormer);
   const formerLedProjects = ledProjects.filter((relationship) => relationship.isFormer);
-  const currentMembers = members.filter((relationship) => !relationship.isFormer);
-  const formerMembers = members.filter((relationship) => relationship.isFormer);
+  const alphabeticalMembers = [...members].sort((left, right) =>
+    left.relatedArtistName.localeCompare(right.relatedArtistName, locale, { sensitivity: "base" })
+  );
+  const currentMembers = alphabeticalMembers.filter((relationship) => !relationship.isFormer);
+  const formerMembers = alphabeticalMembers.filter((relationship) => relationship.isFormer);
   const currentLeaders = leaders.filter((relationship) => !relationship.isFormer);
   const formerLeaders = leaders.filter((relationship) => relationship.isFormer);
   const hasRelationships = [
@@ -550,7 +553,7 @@ export default function ArtistFactsCard({
             <InlineList values={artist.genres.map((genre) => translateGenreValue(genre, t, locale))} />
           </Field>
         )}
-<SectionDivider />
+        {hasSocialLinks && <SectionDivider />}
         {hasSocialLinks && (
           
           <LinkGroup>
