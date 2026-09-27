@@ -43,6 +43,7 @@ export type PortfolioRecording = {
   identityLabel: string | null;
   identitySummary: RecordingIdentitySummary | null;
   duration: number | null;
+  releaseArtistId?: string | null;
   performers: PortfolioPerformer[];
   releaseId: string | null;
   releaseTitle: string | null;
@@ -110,6 +111,7 @@ type ReleaseRow = {
   created_at: string | null;
   status: string | null;
   has_cover_image: boolean | null;
+  release_artist_id: string | null;
 };
 type TrackReleaseRow = { recording_id: string; release: Related<ReleaseRow> };
 type EditorialRow = {
@@ -186,9 +188,9 @@ async function getRecordingPortfolio(artistId: string): Promise<PortfolioRecordi
         .eq("artist.status", "published"),
       supabase
         .from("tracks")
-        .select("recording_id,release:releases!inner(id,title,slug,release_year,year,type,country,date,created_at,status,release_group_id,has_cover_image)")
+        .select("recording_id,release:releases!inner(id,title,slug,release_year,year,type,country,date,created_at,status,release_group_id,has_cover_image,release_artist_id)")
         .in("recording_id", recordingIds)
-        .in("release.status", ["published", "official"]),
+        .in("release.status", ["published", "official", "Official"]),
       getRecordingIdentitySummaries(recordingIds),
     ]);
   const identitiesByRecording = new Map(identitySummaries.map((summary) => [summary.recording_id, summary]));
@@ -275,6 +277,7 @@ async function getRecordingPortfolio(artistId: string): Promise<PortfolioRecordi
       identityLabel: structuredIdentityLabel(identitySummary, recording.disambiguation),
       identitySummary,
       duration: recording.duration,
+      releaseArtistId: selectedRelease?.release_artist_id ?? null,
       performers,
       releaseId: selectedRelease?.id ?? identitySummary?.first_release_id ?? null,
       releaseTitle: selectedRelease?.title ?? identitySummary?.first_release_title ?? null,
@@ -463,7 +466,7 @@ async function getCompositionPortfolio(artistId: string): Promise<PortfolioRecor
 export function getArtistWorksPortfolio(artistId: string): Promise<PortfolioWork[]> {
   return unstable_cache(
     loadArtistWorksPortfolio,
-    ["artist-works-portfolio-v17-release-covers", artistId],
+    ["artist-works-portfolio-v20", artistId],
     {
       // Caps the artist profile route's TTL if shortened — see
       // ARTIST_PROFILE_REVALIDATE_SECONDS. Invalidated on demand by
@@ -478,7 +481,6 @@ export function getArtistWorksPortfolio(artistId: string): Promise<PortfolioWork
 export function summarizePortfolioRoles(works: PortfolioWork[]): RoleSummary[] {
   const counts = new Map<string, number>();
   for (const work of works) {
-    if (!work.workId && work.recordings.every((recording) => recording.source === "recording")) continue;
     for (const role of work.roles) counts.set(role, (counts.get(role) ?? 0) + 1);
   }
   return [...counts].map(([role, count]) => ({ role, count })).sort((a, b) => compareArtistWorkCreditRoles(a.role, b.role));

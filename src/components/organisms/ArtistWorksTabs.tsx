@@ -13,6 +13,7 @@ const ROLE_TABS = [
   { key: "composer", roles: ["composer", "songwriter"] },
   { key: "lyricist", roles: ["lyricist", "writer"] },
   { key: "arranger", roles: ["arranger"] },
+  { key: "vocals", roles: ["lead_performer", "vocalist", "featured_performer", "guest_performer", "performer"] },
 ] as const;
 
 type RoleTab = (typeof ROLE_TABS)[number]["key"];

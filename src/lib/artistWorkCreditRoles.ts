@@ -21,6 +21,11 @@ export const ARTIST_WORK_CREDIT_ROLES = [
   "mastering",
   "beat_programmer",
   "remixer",
+  "lead_performer",
+  "performer",
+  "featured_performer",
+  "guest_performer",
+  "vocalist",
 ] as const;
 
 const allowedRoles = new Set<string>(ARTIST_WORK_CREDIT_ROLES);

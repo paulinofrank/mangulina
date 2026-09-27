@@ -221,17 +221,15 @@ RIGHT:
 4. Document the relationship in DATA_GOVERNANCE.md
 ```
 
-### Rule 9: Self-Performed Songs Must NOT Be Duplicated in Works Portfolio
+### Rule 9: Works Portfolio Tab is Exclusively for External/International Works
 ```
 WRONG:
-Listing "Burbujas de Amor" in Juan Luis Guerra's Works Portfolio tab
-(He is the lead performer; it belongs exclusively in his Discography tab)
+Listing a song written by Juan Luis Guerra for himself (or another Dominican artist in the DB) in the Works Portfolio tab.
 
 RIGHT:
-1. Songs performed by the artist appear in their Discography tab
-2. Songs composed/written/produced for OTHER artists appear in their Works Portfolio tab
-3. Example: Cristino Gómez lyrics for Luys Bien appear in Cristino's Works tab
-4. Example: Palmer Hernández compositions for Lalo Rodríguez appear in Palmer's Works tab
+1. The "Works Portfolio" tab is STRICTLY reserved for songs made for international/external artists who are NOT in the Mangulina database (e.g., Celia Cruz, Marc Anthony).
+2. For local Dominican-to-Dominican collaborations (e.g., Palmer Hernández composing for Alex Bueno), the composer credit is stored directly on the Recording via `recording_credits`. 
+3. This means that for local songs, Composer, Lyricist, Arranger, and Producer all live together on the `recording_credits` table (Layer 2) attached to the performer's discography.
 (See DATA_GOVERNANCE.md Section 5.5)
 ```
 
@@ -260,6 +258,19 @@ RIGHT:
 (See DATA_GOVERNANCE.md Section 5.6)
 ```
 
+### Rule 12: Handling Credits for Non-Dominican/External Artists
+```
+WRONG:
+Creating "Celia Cruz" or "José José" in the artists table just to link a Dominican composer/arranger's credit.
+
+RIGHT:
+1. Mangulina focuses on Dominican artists. Do not pollute the core artists, releases, or recordings tables with massive external international catalogs.
+2. Instead, use the credited_works table.
+3. Insert the external song title into credited_works.title and store the external artist's name as plain text in credited_works.performer_text (e.g., "Celia Cruz").
+4. Link the Dominican composer/arranger via the credited_work_credits table using their artist_id and the credited_work_id.
+```
+
+
 ---
 
 ## Credits Model (Summary)
@@ -270,23 +281,19 @@ RIGHT:
 
 | Layer | Location | Question | Examples |
 |-------|----------|----------|----------|
-| **Creative** | Work table | Who created this composition? | Composer, lyricist, arranger |
-| **Performance** | Recording table | Who performed on this recording? | Singer, guitarist, producer, engineer |
+| **Creative (External)** | Work table | Who created this composition for an external/international artist? | Composer, lyricist (International only) |
+| **Performance & Local Creation** | Recording table | Who performed or wrote this local recording? | Singer, guitarist, producer, composer, lyricist, arranger |
 | **Release** | Release table | Who is credited for this album? | Primary artist, featured, compilation |
 
 ### Critical Rule: Never Mix Layers
 ```
 WRONG:
-recording_credits table with role = 'composer'
-(Composer is a work-level credit, not recording-level)
-
-WRONG:
 credited_works table with role = 'guitar'
 (Guitar player is a recording-level credit, not work-level)
 
 RIGHT:
-Work → credited_work_credits (composer, lyricist, arranger)
-Recording → recording_credits (vocals, guitar, producer, engineer)
+Work → credited_work_credits (composer, lyricist, arranger for international artists)
+Recording → recording_credits (vocals, guitar, producer, engineer, AND local composer/lyricist/arranger)
 Release → release_artists (primary, featured, compilation)
 ```
 
