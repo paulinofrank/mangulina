@@ -27,12 +27,83 @@
     "placeholder": "Buscar artistas, canciones...",
     "label": "Búsqueda del sitio",
     "worksCredits": {
-      "eyebrow": "Administración de Mangulina", "title": "Obras y Créditos", "description": "Gestiona créditos de composición, escritura, arreglos, letras y otros aportes creativos para todos los artistas.",
-      "addWork": "Agregar obra", "editWork": "Editar obra", "artist": "Artista", "searchArtist": "Buscar cualquier artista...", "search": "Buscar", "searchPlaceholder": "Título, intérprete o publicación", "role": "Rol", "allRoles": "Todos los roles", "year": "Año", "clearFilters": "Limpiar filtros", "performerMode": "Tipo de intérprete", "mangulinaArtist": "Artista de Mangulina", "externalPerformer": "Intérprete externo", "externalPerformerName": "Nombre del intérprete externo", "creditedAs": "Acreditado como", "searchPerformer": "Buscar intérprete...", "performerFilter": "Intérprete vinculado", "performerStatus": "Estado del intérprete", "allPerformers": "Todos los intérpretes", "linkedPerformers": "Artistas vinculados de Mangulina", "externalPerformers": "Intérpretes externos", "differentPerformerName": "El nombre vinculado difiere del crédito", "linkedArtist": "Artista vinculado", "confirmExternalMode": "Cambiar a intérprete externo quitará la relación con el artista, pero conservará el nombre acreditado. ¿Continuar?", "confirmCreditedAs": "¿Reemplazar el nombre acreditado actual con {name}? Elige Cancelar para conservar el crédito personalizado.",
-      "totalWorks": "Total de obras", "creditsOnPage": "Créditos en la página", "rolesRepresented": "Roles representados", "work": "Título de la obra", "performer": "Intérprete", "release": "Publicación", "creditedArtists": "Artistas acreditados", "rolesHeader": "Roles", "roles": { "composer": "Compositor", "lyricist": "Letrista", "writer": "Autor", "songwriter": "Cantautor", "orchestrator": "Orquestador", "arranger": "Arreglista", "co-composer": "Cocompositor", "co-writer": "Coautor" },
-      "updated": "Actualizada", "actions": "Acciones", "edit": "Editar", "removeCredit": "Quitar crédito del artista", "loading": "Cargando obras...", "emptyArtist": "No se han agregado Obras y Créditos para este artista.", "emptyAll": "Ninguna obra coincide con los filtros actuales.", "pageOf": "Página {page} de {pages} · {total} obras", "previous": "Anterior", "next": "Siguiente", "workTitle": "Título de la obra", "credits": "Créditos de artistas", "addCredit": "Agregar crédito", "save": "Guardar obra", "saving": "Guardando...", "saved": "Obra y créditos guardados.", "removed": "Se quitó el crédito del artista; la obra compartida se conservó.", "deleted": "Se eliminó la obra completa.",
-      "duplicateWarning": "Ya existe una posible obra coincidente. ¿Crear otra obra de todos modos?", "confirmRemove": "¿Quitar los créditos de {artist} de «{work}»? La obra compartida no se eliminará.", "confirmDelete": "Esta obra compartida tiene {credits} créditos. Para eliminarla por completo, escribe su título exacto: {title}",
-      "errors": { "titleRequired": "El título de la obra es obligatorio.", "yearInvalid": "Ingresa un año de publicación válido.", "creditRequired": "Se requiere al menos un crédito de artista.", "performerRequired": "El nombre acreditado del intérprete es obligatorio.", "performerArtistRequired": "Selecciona un intérprete de Mangulina.", "performerArtistInvalid": "El intérprete seleccionado ya no existe.", "duplicateCredit": "Ese artista ya tiene exactamente ese rol en esta obra.", "possibleDuplicate": "Se encontró un posible duplicado." }
+      "eyebrow": "Administración de Mangulina",
+      "title": "Obras y Créditos",
+      "description": "Gestiona créditos de composición, escritura, arreglos, letras y otros aportes creativos para todos los artistas.",
+      "addWork": "Agregar obra",
+      "editWork": "Editar obra",
+      "artist": "Artista",
+      "searchArtist": "Buscar cualquier artista...",
+      "search": "Buscar",
+      "searchPlaceholder": "Título, intérprete o publicación",
+      "role": "Rol",
+      "allRoles": "Todos los roles",
+      "year": "Año",
+      "clearFilters": "Limpiar filtros",
+      "performerMode": "Tipo de intérprete",
+      "mangulinaArtist": "Artista de Mangulina",
+      "externalPerformer": "Intérprete externo",
+      "externalPerformerName": "Nombre del intérprete externo",
+      "creditedAs": "Acreditado como",
+      "searchPerformer": "Buscar intérprete...",
+      "performerFilter": "Intérprete vinculado",
+      "performerStatus": "Estado del intérprete",
+      "allPerformers": "Todos los intérpretes",
+      "linkedPerformers": "Artistas vinculados de Mangulina",
+      "externalPerformers": "Intérpretes externos",
+      "differentPerformerName": "El nombre vinculado difiere del crédito",
+      "linkedArtist": "Artista vinculado",
+      "confirmExternalMode": "Cambiar a intérprete externo quitará la relación con el artista, pero conservará el nombre acreditado. ¿Continuar?",
+      "confirmCreditedAs": "¿Reemplazar el nombre acreditado actual con {name}? Elige Cancelar para conservar el crédito personalizado.",
+      "totalWorks": "Total de obras",
+      "creditsOnPage": "Créditos en la página",
+      "rolesRepresented": "Roles representados",
+      "work": "Título de la obra",
+      "performer": "Intérprete",
+      "release": "Publicación",
+      "creditedArtists": "Artistas acreditados",
+      "rolesHeader": "Roles",
+      "roles": {
+        "composer": "Compositor",
+        "lyricist": "Letrista",
+        "writer": "Autor",
+        "songwriter": "Cantautor",
+        "orchestrator": "Orquestador",
+        "arranger": "Arreglista",
+        "co-composer": "Cocompositor",
+        "co-writer": "Coautor"
+      },
+      "updated": "Actualizada",
+      "actions": "Acciones",
+      "edit": "Editar",
+      "removeCredit": "Quitar crédito del artista",
+      "loading": "Cargando obras...",
+      "emptyArtist": "No se han agregado Obras y Créditos para este artista.",
+      "emptyAll": "Ninguna obra coincide con los filtros actuales.",
+      "pageOf": "Página {page} de {pages} · {total} obras",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "workTitle": "Título de la obra",
+      "credits": "Créditos de artistas",
+      "addCredit": "Agregar crédito",
+      "save": "Guardar obra",
+      "saving": "Guardando...",
+      "saved": "Obra y créditos guardados.",
+      "removed": "Se quitó el crédito del artista; la obra compartida se conservó.",
+      "deleted": "Se eliminó la obra completa.",
+      "duplicateWarning": "Ya existe una posible obra coincidente. ¿Crear otra obra de todos modos?",
+      "confirmRemove": "¿Quitar los créditos de {artist} de «{work}»? La obra compartida no se eliminará.",
+      "confirmDelete": "Esta obra compartida tiene {credits} créditos. Para eliminarla por completo, escribe su título exacto: {title}",
+      "errors": {
+        "titleRequired": "El título de la obra es obligatorio.",
+        "yearInvalid": "Ingresa un año de publicación válido.",
+        "creditRequired": "Se requiere al menos un crédito de artista.",
+        "performerRequired": "El nombre acreditado del intérprete es obligatorio.",
+        "performerArtistRequired": "Selecciona un intérprete de Mangulina.",
+        "performerArtistInvalid": "El intérprete seleccionado ya no existe.",
+        "duplicateCredit": "Ese artista ya tiene exactamente ese rol en esta obra.",
+        "possibleDuplicate": "Se encontró un posible duplicado."
+      }
     },
     "ui": {
       "placeholder": "Buscar artistas, canciones y álbumes.",
@@ -92,8 +163,17 @@
     "countryNotDocumented": "País no documentado",
     "externalContributorDescription": "{role} {nationality}",
     "externalContributorFromCountry": "{role} de {country}",
-    "externalContributorRoles": { "composer": "Compositor", "lyricist": "Letrista", "author": "Autor", "singer": "Cantante", "arranger": "Arreglista", "producer": "Productor" },
-    "nationalities": { "VE": "venezolano" },
+    "externalContributorRoles": {
+      "composer": "Compositor",
+      "lyricist": "Letrista",
+      "author": "Autor",
+      "singer": "Cantante",
+      "arranger": "Arreglista",
+      "producer": "Productor"
+    },
+    "nationalities": {
+      "VE": "venezolano"
+    },
     "credits": "Créditos de la Canción",
     "media": "Medios",
     "mediaDescription": "Videos, actuaciones, entrevistas y otros medios conectados a esta grabación.",
@@ -119,7 +199,16 @@
     "culturalContext": "Contexto Cultural",
     "notes": "Notas",
     "hero": {
-      "by": "por", "album": "Álbum", "releaseYear": "Año de Publicación", "duration": "Duración", "views": "Vistas", "genres": "Géneros", "relatedSongs": "Canciones Relacionadas", "moreBy": "Más de {artist}", "aboutArtist": "Acerca del Artista", "artistFallback": "Explora el perfil, las canciones, los créditos y la historia musical dominicana relacionada con este artista."
+      "by": "por",
+      "album": "Álbum",
+      "releaseYear": "Año de Publicación",
+      "duration": "Duración",
+      "views": "Vistas",
+      "genres": "Géneros",
+      "relatedSongs": "Canciones Relacionadas",
+      "moreBy": "Más de {artist}",
+      "aboutArtist": "Acerca del Artista",
+      "artistFallback": "Explora el perfil, las canciones, los créditos y la historia musical dominicana relacionada con este artista."
     }
   },
   "songAbout": {
@@ -139,10 +228,10 @@
     "musicBrainzId": "ID de MusicBrainz"
   },
   "creditRoles": {
-    "leadPerformer": "Intérprete",
+    "leadPerformer": "Voz Principal",
     "featuredPerformer": "Artista invitado",
     "guestPerformer": "Intérprete invitado",
-    "performedBy": "Interpretado por",
+    "performedBy": "Intérprete",
     "vocals": "Voz",
     "composedBy": "Compuesto por",
     "writtenBy": "Escrito por",
@@ -344,12 +433,44 @@
     "artistUnknown": "por artista desconocido",
     "internationalWorks": "Trabajos internacionales",
     "performedByArtist": "Interpretado por {artist}",
-    "worksRoleTabs": { "label": "Filtrar trabajos por tipo de crédito" },
+    "worksRoleTabs": {
+      "label": "Filtrar trabajos por tipo de crédito"
+    },
     "recordingIdentity": {
-      "live": "En vivo", "demo": "Demo", "rehearsal": "Ensayo", "other": "Versión alternativa", "rerecording": "Nueva grabación", "remix": "Remezcla", "edit": "Edición", "alternate_take": "Toma alternativa", "medley": "Popurrí"
+      "live": "En vivo",
+      "demo": "Demo",
+      "rehearsal": "Ensayo",
+      "other": "Versión alternativa",
+      "rerecording": "Nueva grabación",
+      "remix": "Remezcla",
+      "edit": "Edición",
+      "alternate_take": "Toma alternativa",
+      "medley": "Popurrí"
     },
     "workRoles": {
-      "composer": "Compositor", "songwriter": "Compositor de canciones", "lyricist": "Letrista", "writer": "Autor", "producer": "Productor", "co_producer": "Coproductor", "executive_producer": "Productor ejecutivo", "arranger": "Arreglista", "orchestrator": "Orquestador", "conductor": "Director", "musician": "Músico", "session_musician": "Músico de sesión", "instrumentalist": "Instrumentista", "engineer": "Ingeniero", "recording_engineer": "Ingeniero de grabación", "mixing_engineer": "Ingeniero de mezcla", "mix_engineer": "Ingeniero de mezcla", "mixing": "Mezcla", "mastering_engineer": "Ingeniero de masterización", "mastering": "Masterización", "beat_programmer": "Programador de ritmos", "remixer": "Remezclador"
+      "composer": "Compositor",
+      "songwriter": "Compositor de canciones",
+      "lyricist": "Letrista",
+      "writer": "Autor",
+      "producer": "Productor",
+      "co_producer": "Coproductor",
+      "executive_producer": "Productor ejecutivo",
+      "arranger": "Arreglista",
+      "orchestrator": "Orquestador",
+      "conductor": "Director",
+      "musician": "Músico",
+      "session_musician": "Músico de sesión",
+      "instrumentalist": "Instrumentista",
+      "engineer": "Ingeniero",
+      "recording_engineer": "Ingeniero de grabación",
+      "mixing_engineer": "Ingeniero de mezcla",
+      "mix_engineer": "Ingeniero de mezcla",
+      "mixing": "Mezcla",
+      "mastering_engineer": "Ingeniero de masterización",
+      "mastering": "Masterización",
+      "beat_programmer": "Programador de ritmos",
+      "remixer": "Remezclador",
+      "vocals": "Voz Principal"
     },
     "biography": "Biografía",
     "noBiography": "No hay biografía disponible para este artista.",
@@ -420,7 +541,8 @@
       "singles": "Sencillos",
       "compilations": "Compilaciones",
       "other": "Otros"
-    }
+    },
+    "guestAppearances": "Apariciones Especiales"
   },
   "releaseType": {
     "album": "Álbum",
@@ -1032,7 +1154,14 @@
       "moreFromArtist": "Más de este Artista",
       "moreFromDecade": "Más de los {decade}",
       "moreInGenre": "Más de {genre}",
-      "facts": {"type": "Tipo", "release": "Fecha de Publicación", "label": "Sello", "country": "País", "catalog": "Catálogo", "barcode": "Código de Barras"}
+      "facts": {
+        "type": "Tipo",
+        "release": "Fecha de Publicación",
+        "label": "Sello",
+        "country": "País",
+        "catalog": "Catálogo",
+        "barcode": "Código de Barras"
+      }
     },
     "about": {
       "metadataTitle": "Acerca de",
@@ -1092,12 +1221,36 @@
       "helpTitle": "¿Cómo Podemos Ayudarte?",
       "helpDescription": "Elige el área de contacto que mejor corresponda a tu consulta para que llegue al equipo adecuado de Mangulina.",
       "cards": {
-        "artists": {"title": "Artistas y Representantes", "description": "¿Necesitas actualizar una biografía o discografía, enviar correcciones, proporcionar información oficial o enriquecer un perfil de artista?", "button": "Soporte de Artistas"},
-        "correction": {"title": "Correcciones", "description": "¿Encontraste información incorrecta, créditos faltantes, fechas equivocadas u otros problemas de datos?", "button": "Reportar un Problema"},
-        "contributor": {"title": "Ser Colaborador", "description": "¿Te interesa ayudar a preservar la música dominicana mediante investigación, documentación, información histórica o revisión editorial?", "button": "Ser Colaborador"},
-        "partnerships": {"title": "Medios y Alianzas", "description": "Consultas de prensa, instituciones educativas, organizaciones culturales, archivos y oportunidades de colaboración.", "button": "Contactar Alianzas"},
-        "copyright": {"title": "Derechos de Autor", "description": "¿Tienes preguntas sobre derechos de autor, atribución, imágenes o propiedad intelectual?", "button": "Derechos de Autor"},
-        "general": {"title": "Preguntas Generales", "description": "Para cualquier tema no cubierto anteriormente.", "button": "Contacto General"}
+        "artists": {
+          "title": "Artistas y Representantes",
+          "description": "¿Necesitas actualizar una biografía o discografía, enviar correcciones, proporcionar información oficial o enriquecer un perfil de artista?",
+          "button": "Soporte de Artistas"
+        },
+        "correction": {
+          "title": "Correcciones",
+          "description": "¿Encontraste información incorrecta, créditos faltantes, fechas equivocadas u otros problemas de datos?",
+          "button": "Reportar un Problema"
+        },
+        "contributor": {
+          "title": "Ser Colaborador",
+          "description": "¿Te interesa ayudar a preservar la música dominicana mediante investigación, documentación, información histórica o revisión editorial?",
+          "button": "Ser Colaborador"
+        },
+        "partnerships": {
+          "title": "Medios y Alianzas",
+          "description": "Consultas de prensa, instituciones educativas, organizaciones culturales, archivos y oportunidades de colaboración.",
+          "button": "Contactar Alianzas"
+        },
+        "copyright": {
+          "title": "Derechos de Autor",
+          "description": "¿Tienes preguntas sobre derechos de autor, atribución, imágenes o propiedad intelectual?",
+          "button": "Derechos de Autor"
+        },
+        "general": {
+          "title": "Preguntas Generales",
+          "description": "Para cualquier tema no cubierto anteriormente.",
+          "button": "Contacto General"
+        }
       },
       "followTitle": "Sigue a Mangulina",
       "followDescription": "Sigue a @MangulinaDO para noticias del proyecto, artistas destacados, historia de la música dominicana y actualizaciones de la base de datos.",
@@ -1141,11 +1294,49 @@
       "decadesTitle": "Décadas",
       "decadeLinkAria": "Explorar {count, plural, one {# grabación} other {# grabaciones}} de la década de {decadeYear}",
       "links": {
-        "singers": "Cantantes", "christianArtists": "Artistas Cristianos", "legends": "Leyendas", "emergingArtists": "Artistas Emergentes", "mostAwarded": "Artistas Más Premiados", "birthdays": "Cumpleaños", "instrumentalClassical": "Instrumental y Clásica", "groups": "Bandas, Orquestas y Dúos",
-        "composers": "Compositores", "songwriters": "Autores de Canciones", "lyricists": "Letristas", "arrangers": "Arreglistas", "musicalDirectors": "Directores Musicales", "djs": "DJs", "musicians": "Músicos", "producers": "Productores",
-        "songs": "Canciones", "releases": "Álbumes", "genres": "Géneros", "home": "Inicio", "about": "Acerca de Mangulina", "contact": "Contacto", "contributors": "Colaboradores", "privacy": "Política de privacidad", "terms": "Términos de uso", "dmca": "Derechos de Autor y DMCA"
+        "singers": "Cantantes",
+        "christianArtists": "Artistas Cristianos",
+        "legends": "Leyendas",
+        "emergingArtists": "Artistas Emergentes",
+        "mostAwarded": "Artistas Más Premiados",
+        "birthdays": "Cumpleaños",
+        "instrumentalClassical": "Instrumental y Clásica",
+        "groups": "Bandas, Orquestas y Dúos",
+        "composers": "Compositores",
+        "songwriters": "Autores de Canciones",
+        "lyricists": "Letristas",
+        "arrangers": "Arreglistas",
+        "musicalDirectors": "Directores Musicales",
+        "djs": "DJs",
+        "musicians": "Músicos",
+        "producers": "Productores",
+        "songs": "Canciones",
+        "releases": "Álbumes",
+        "genres": "Géneros",
+        "home": "Inicio",
+        "about": "Acerca de Mangulina",
+        "contact": "Contacto",
+        "contributors": "Colaboradores",
+        "privacy": "Política de privacidad",
+        "terms": "Términos de uso",
+        "dmca": "Derechos de Autor y DMCA"
       },
-      "genreLabels": {"worship": "Adoración", "merengue": "Merengue", "bachata": "Bachata", "urban": "Urbano", "salsa": "Salsa", "ballads": "Baladas", "pop": "Pop", "rock": "Rock", "reggae": "Reggae", "jazz": "Jazz", "electronic": "Electrónica", "instrumental": "Instrumental", "folklore": "Folclore", "fusion": "Fusión"}
+      "genreLabels": {
+        "worship": "Adoración",
+        "merengue": "Merengue",
+        "bachata": "Bachata",
+        "urban": "Urbano",
+        "salsa": "Salsa",
+        "ballads": "Baladas",
+        "pop": "Pop",
+        "rock": "Rock",
+        "reggae": "Reggae",
+        "jazz": "Jazz",
+        "electronic": "Electrónica",
+        "instrumental": "Instrumental",
+        "folklore": "Folclore",
+        "fusion": "Fusión"
+      }
     },
     "releaseListing": {
       "eyebrow": "Lista de Álbumes",
@@ -1163,12 +1354,30 @@
       "essentialTitle": "Álbumes Dominicanos Esenciales",
       "essentialDescription": "Una guía editorial de álbumes y otras publicaciones musicales dominicanas de importancia cultural en Mangulina.",
       "types": {
-        "albums": {"title": "Álbumes Dominicanos", "description": "Explora álbumes dominicanos de merengue, bachata, salsa, urbano, adoración y otros estilos en Mangulina."},
-        "singles": {"title": "Sencillos Dominicanos", "description": "Explora sencillos dominicanos de artistas de escenas clásicas, contemporáneas y emergentes."},
-        "eps": {"title": "EP Dominicanos", "description": "Explora EP dominicanos y proyectos breves documentados en la Base de Datos de Música Dominicana."},
-        "compilations": {"title": "Recopilaciones Dominicanas", "description": "Descubre recopilaciones, colecciones y proyectos de múltiples artistas dominicanos en Mangulina."},
-        "live": {"title": "Álbumes Dominicanos en Vivo", "description": "Explora álbumes en vivo y grabaciones de conciertos dominicanos del catálogo de Mangulina."},
-        "soundtracks": {"title": "Bandas Sonoras Dominicanas", "description": "Explora bandas sonoras dominicanas y música vinculada al cine, la televisión y el teatro."}
+        "albums": {
+          "title": "Álbumes Dominicanos",
+          "description": "Explora álbumes dominicanos de merengue, bachata, salsa, urbano, adoración y otros estilos en Mangulina."
+        },
+        "singles": {
+          "title": "Sencillos Dominicanos",
+          "description": "Explora sencillos dominicanos de artistas de escenas clásicas, contemporáneas y emergentes."
+        },
+        "eps": {
+          "title": "EP Dominicanos",
+          "description": "Explora EP dominicanos y proyectos breves documentados en la Base de Datos de Música Dominicana."
+        },
+        "compilations": {
+          "title": "Recopilaciones Dominicanas",
+          "description": "Descubre recopilaciones, colecciones y proyectos de múltiples artistas dominicanos en Mangulina."
+        },
+        "live": {
+          "title": "Álbumes Dominicanos en Vivo",
+          "description": "Explora álbumes en vivo y grabaciones de conciertos dominicanos del catálogo de Mangulina."
+        },
+        "soundtracks": {
+          "title": "Bandas Sonoras Dominicanas",
+          "description": "Explora bandas sonoras dominicanas y música vinculada al cine, la televisión y el teatro."
+        }
       }
     }
   },
@@ -1225,17 +1434,80 @@
     "loadError": "No se pudieron cargar las relaciones familiares.",
     "saveError": "No se pudo guardar la relación familiar.",
     "deleteError": "No se pudo eliminar la relación familiar.",
-    "search": { "dialog": "Seleccionar artista", "label": "Buscar artistas", "placeholder": "Nombre, nombre artístico o alias", "searching": "Buscando…", "error": "La búsqueda falló. Inténtalo de nuevo.", "empty": "No se encontraron artistas.", "cancel": "Cancelar" },
+    "search": {
+      "dialog": "Seleccionar artista",
+      "label": "Buscar artistas",
+      "placeholder": "Nombre, nombre artístico o alias",
+      "searching": "Buscando…",
+      "error": "La búsqueda falló. Inténtalo de nuevo.",
+      "empty": "No se encontraron artistas.",
+      "cancel": "Cancelar"
+    },
     "labels": {
-      "father": "Padre", "mother": "Madre", "parent": "Padre o madre", "son": "Hijo", "daughter": "Hija", "child": "Hijo/a",
-      "brother": "Hermano", "sister": "Hermana", "sibling": "Hermano/a", "cousin": "Primo/a", "male_cousin": "Primo", "female_cousin": "Prima",
-      "husband": "Esposo", "wife": "Esposa", "spouse": "Cónyuge", "ex_husband": "Exesposo", "ex_wife": "Exesposa", "ex_spouse": "Excónyuge", "widow_of": "Viuda de", "widower_of": "Viudo de", "late_husband": "Esposo fallecido", "late_wife": "Esposa fallecida",
-      "grandfather": "Abuelo", "grandmother": "Abuela", "grandparent": "Abuelo/a", "grandson": "Nieto", "granddaughter": "Nieta", "grandchild": "Nieto/a",
-      "uncle": "Tío", "aunt": "Tía", "uncle_aunt": "Tío/a", "nephew": "Sobrino", "niece": "Sobrina", "nibling": "Sobrino/a",
-      "great_uncle": "Tío abuelo", "great_aunt": "Tía abuela", "great_nephew": "Sobrino nieto", "great_niece": "Sobrina nieta", "great_uncle_aunt": "Tío/a abuelo/a", "great_nibling": "Sobrino/a nieto/a"
+      "father": "Padre",
+      "mother": "Madre",
+      "parent": "Padre o madre",
+      "son": "Hijo",
+      "daughter": "Hija",
+      "child": "Hijo/a",
+      "brother": "Hermano",
+      "sister": "Hermana",
+      "sibling": "Hermano/a",
+      "cousin": "Primo/a",
+      "male_cousin": "Primo",
+      "female_cousin": "Prima",
+      "husband": "Esposo",
+      "wife": "Esposa",
+      "spouse": "Cónyuge",
+      "ex_husband": "Exesposo",
+      "ex_wife": "Exesposa",
+      "ex_spouse": "Excónyuge",
+      "widow_of": "Viuda de",
+      "widower_of": "Viudo de",
+      "late_husband": "Esposo fallecido",
+      "late_wife": "Esposa fallecida",
+      "grandfather": "Abuelo",
+      "grandmother": "Abuela",
+      "grandparent": "Abuelo/a",
+      "grandson": "Nieto",
+      "granddaughter": "Nieta",
+      "grandchild": "Nieto/a",
+      "uncle": "Tío",
+      "aunt": "Tía",
+      "uncle_aunt": "Tío/a",
+      "nephew": "Sobrino",
+      "niece": "Sobrina",
+      "nibling": "Sobrino/a",
+      "great_uncle": "Tío abuelo",
+      "great_aunt": "Tía abuela",
+      "great_nephew": "Sobrino nieto",
+      "great_niece": "Sobrina nieta",
+      "great_uncle_aunt": "Tío/a abuelo/a",
+      "great_nibling": "Sobrino/a nieto/a"
     }
   },
   "admin": {
+    "workspaces": {
+      "factsSaved": "Datos del artista guardados. El borrador de la biografía sigue abierto y sin guardar.",
+      "navigation": "Espacios de artistas",
+      "solo": "Artistas solistas",
+      "groups": "Grupos y conjuntos",
+      "musicians": "Músicos",
+      "soloHelp": "Intérpretes y creadores individuales. Los registros sin clasificación siguen disponibles aquí para revisión.",
+      "groupsHelp": "Los grupos y dúos comparten los mismos registros de artistas. Administra integrantes, fundadores y líderes mediante las relaciones existentes.",
+      "musiciansHelp": "Personas con una ocupación instrumental o un instrumento. Los cantantes que también tocan instrumentos pueden aparecer en ambos espacios individuales.",
+      "retained": "Editando: {name}. Cambiar de espacio conserva este perfil y sus cambios sin guardar. Selecciona otro artista o elige Nuevo artista para reemplazarlo.",
+      "unsaved": "Artista sin guardar",
+      "discard": "Hay cambios sin guardar. ¿Descartarlos y abrir otro artista?",
+      "ended": "Disuelto / Ya no está activo",
+      "origin": "Origen",
+      "collectiveType": "Tipo de conjunto",
+      "members": "Integrantes, fundadores y líderes",
+      "groupsProjects": "Grupos y proyectos",
+      "noRelationships": "Este artista aún no tiene relaciones guardadas.",
+      "relatedSearch": "Buscar artista relacionado...",
+      "former": "Anterior"
+    },
     "recordingCredits": {
       "title": "Créditos",
       "viewSong": "Ver página pública de la canción",
@@ -1269,7 +1541,34 @@
       "removeFailed": "No se pudo eliminar el crédito.",
       "reorderFailed": "No se pudo guardar el nuevo orden de créditos.",
       "roles": {
-        "lead_performer": "Intérprete", "featured_performer": "Artista invitado destacado", "guest_performer": "Intérprete invitado", "instrumentalist": "Instrumentista", "vocalist": "Vocalista", "choir": "Coro", "orchestra": "Orquesta", "guitar": "Guitarra", "drums": "Batería", "piano": "Piano", "bass": "Bajo", "trumpet": "Trompeta", "saxophone": "Saxofón", "trombone": "Trombón", "strings": "Cuerdas", "horns": "Metales", "percussion": "Percusión", "conductor": "Director", "producer": "Productor", "engineer": "Ingeniero", "recording_engineer": "Ingeniero de grabación", "mixing_engineer": "Ingeniero de mezcla", "mixing": "Mezcla", "mastering_engineer": "Ingeniero de masterización", "mastering": "Masterización", "session_musician": "Músico de sesión", "arranger": "Arreglista", "composer": "Compositor"
+        "lead_performer": "Intérprete",
+        "featured_performer": "Artista invitado destacado",
+        "guest_performer": "Intérprete invitado",
+        "instrumentalist": "Instrumentista",
+        "vocalist": "Vocalista",
+        "choir": "Coro",
+        "orchestra": "Orquesta",
+        "guitar": "Guitarra",
+        "drums": "Batería",
+        "piano": "Piano",
+        "bass": "Bajo",
+        "trumpet": "Trompeta",
+        "saxophone": "Saxofón",
+        "trombone": "Trombón",
+        "strings": "Cuerdas",
+        "horns": "Metales",
+        "percussion": "Percusión",
+        "conductor": "Director",
+        "producer": "Productor",
+        "engineer": "Ingeniero",
+        "recording_engineer": "Ingeniero de grabación",
+        "mixing_engineer": "Ingeniero de mezcla",
+        "mixing": "Mezcla",
+        "mastering_engineer": "Ingeniero de masterización",
+        "mastering": "Masterización",
+        "session_musician": "Músico de sesión",
+        "arranger": "Arreglista",
+        "composer": "Compositor"
       }
     },
     "tools": {
@@ -1880,10 +2179,32 @@
       "browseByMonth": "Explorar por Mes"
     },
     "months": {
-      "january": "Enero", "february": "Febrero", "march": "Marzo", "april": "Abril", "may": "Mayo", "june": "Junio", "july": "Julio", "august": "Agosto", "september": "Septiembre", "october": "Octubre", "november": "Noviembre", "december": "Diciembre"
+      "january": "Enero",
+      "february": "Febrero",
+      "march": "Marzo",
+      "april": "Abril",
+      "may": "Mayo",
+      "june": "Junio",
+      "july": "Julio",
+      "august": "Agosto",
+      "september": "Septiembre",
+      "october": "Octubre",
+      "november": "Noviembre",
+      "december": "Diciembre"
     },
     "zodiac": {
-      "aries": "Aries", "taurus": "Tauro", "gemini": "Géminis", "cancer": "Cáncer", "leo": "Leo", "virgo": "Virgo", "libra": "Libra", "scorpio": "Escorpio", "sagittarius": "Sagitario", "capricorn": "Capricornio", "aquarius": "Acuario", "pisces": "Piscis"
+      "aries": "Aries",
+      "taurus": "Tauro",
+      "gemini": "Géminis",
+      "cancer": "Cáncer",
+      "leo": "Leo",
+      "virgo": "Virgo",
+      "libra": "Libra",
+      "scorpio": "Escorpio",
+      "sagittarius": "Sagitario",
+      "capricorn": "Capricornio",
+      "aquarius": "Acuario",
+      "pisces": "Piscis"
     }
   },
   "notFound": {

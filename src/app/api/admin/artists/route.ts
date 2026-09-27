@@ -23,6 +23,10 @@ const LIST_COLUMNS =
 // needs_review records are invisible to it. This route runs under the service
 // role, so it is the admin's only complete view of the catalog.
 const ALL_ROWS_LIMIT = 2000;
+const RETIRED_PRIMARY_GENRES = new Set([
+  "singer-songwriter",
+  "ballads-singer-songwriter",
+]);
 
 type SubtitleFields = {
   primary_role?: string | null;
@@ -145,6 +149,19 @@ export async function POST(request: Request) {
   if (artistId && "name" in artistData && !artistData.name) {
     return NextResponse.json(
       { ok: false, error: "Artist name cannot be cleared." },
+      { status: 400 },
+    );
+  }
+
+  if (
+    typeof artistData?.primary_genre === "string" &&
+    RETIRED_PRIMARY_GENRES.has(artistData.primary_genre.trim().toLowerCase())
+  ) {
+    return NextResponse.json(
+      {
+        ok: false,
+        error: "Singer-Songwriter has been retired. Use Fusion / Tropical instead.",
+      },
       { status: 400 },
     );
   }

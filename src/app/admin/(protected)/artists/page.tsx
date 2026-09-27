@@ -2,6 +2,7 @@
 "use client";
 
 import Image from "next/image";
+import { isCollectiveArtist, matchesArtistWorkspace, newArtistWorkspaceDefaults, type ArtistWorkspace } from "@/lib/adminArtistWorkspace";
 import Link from "next/link";
 import { BookOpenText, UserRound } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -21,7 +22,6 @@ import type { FormEvent } from "react";
 import { DOMINICAN_PROVINCES } from "@/lib/artistDirectoryShared";
 import { getSupabaseClient } from "@/lib/supabase";
 import {
-  artistRelationshipTypeLabels,
   formatArtistRelationshipType,
   formatRelationshipYears,
   type ArtistRelationship,
@@ -322,7 +322,7 @@ const instrumentOptions = [
 
 const religiousTagOptions = ["christian", "secular"];
 const careerStageTagOptions = ["legend", "emerging"];
-const genderOptions = ["male", "female", "other", "group"];
+const genderOptions = ["male", "female", "other"];
 
 const emptyForm: ArtistForm = {
   name: "",
@@ -341,10 +341,10 @@ const emptyForm: ArtistForm = {
   dissolution_year: "",
   birth_place: "",
   province: "",
-  type: "",
+  type: "solo_artist",
   primary_role: "",
   primary_genre: "",
-  status: "published",
+  status: "draft",
   occupations: "",
   instruments: "",
   genres: "",
@@ -425,14 +425,25 @@ function normalizeStatus(value: string | null | undefined): ArtistStatus {
   return "published";
 }
 
+const RETIRED_PRIMARY_GENRES = new Set([
+  "singer-songwriter",
+  "ballads-singer-songwriter",
+]);
+
+function isRetiredPrimaryGenre(genre: Pick<GenreCatalogRow, "name" | "slug">) {
+  return [genre.name, genre.slug].some(
+    (value) => value && RETIRED_PRIMARY_GENRES.has(value.trim().toLowerCase()),
+  );
+}
+
 function buildPrimaryGenreOptions(genres: GenreCatalogRow[]): PrimaryGenreOption[] {
   const parents = genres
-    .filter((genre) => genre.parent_id === null)
+    .filter((genre) => genre.parent_id === null && !isRetiredPrimaryGenre(genre))
     .sort((a, b) => a.name.localeCompare(b.name));
   const childrenByParent = new Map<string, GenreCatalogRow[]>();
 
   for (const genre of genres) {
-    if (genre.parent_id === null) continue;
+    if (genre.parent_id === null || isRetiredPrimaryGenre(genre)) continue;
     const key = String(genre.parent_id);
     childrenByParent.set(key, [...(childrenByParent.get(key) ?? []), genre]);
   }
@@ -556,6 +567,7 @@ export default function AdminDashboard() {
   // The row as it looked when this editor loaded it. Saves send the difference
   // against this, never the whole row, so fields changed elsewhere survive.
   const loadedArtistRef = useRef<ArtistWrite | null>(null);
+  const newArtistBaselineRef = useRef(buildArtistWrite(emptyForm));
   const supabase = getSupabaseClient();
 
   const [mounted, setMounted] = useState(false);
@@ -564,6 +576,7 @@ export default function AdminDashboard() {
   const [search, setSearch] = useState("");
   const [artistPickerOpen, setArtistPickerOpen] = useState(false);
   const [activeArtistIndex, setActiveArtistIndex] = useState(-1);
+  const [workspace, setWorkspace] = useState<ArtistWorkspace>("solo");
   const [form, setForm] = useState<ArtistForm>(emptyForm);
   const [primaryGenreOptions, setPrimaryGenreOptions] = useState<PrimaryGenreOption[]>([
     { value: "", label: "-- Select Primary Genre --", searchValues: [] },
@@ -591,12 +604,15 @@ export default function AdminDashboard() {
   const closeArtistPicker = useCallback(() => {
     setArtistPickerOpen(false);
     setActiveArtistIndex(-1);
-  }, []);
+  }, [setArtistPickerOpen, setActiveArtistIndex]);
 
   const selectedArtist = useMemo(
     () => artists.find((artist) => artist.id === selectedArtistId) || null,
     [artists, selectedArtistId]
   );
+  const isCollective = isCollectiveArtist(form.type);
+  const isMusicianWorkspace = workspace === "musicians" && !isCollective;
+  const managedRelationships = isCollective ? [...incomingRelationships, ...outgoingRelationships] : outgoingRelationships;
   const matchedPrimaryGenreOption = primaryGenreOptions.find((option) =>
     option.searchValues.includes((form.primary_genre ?? "").toLowerCase()),
   );
@@ -615,9 +631,10 @@ export default function AdminDashboard() {
   const filteredArtists = useMemo(() => {
     const query = normalizeSearchText(search);
 
-    if (!query) return artists.slice(0, 40);
+    const candidates = artists.filter((artist) => matchesArtistWorkspace(artist, workspace));
+    if (!query) return candidates.slice(0, 40);
 
-    return artists
+    return candidates
       .map((artist) => ({
         artist,
         rank: rankSearchText([
@@ -634,7 +651,7 @@ export default function AdminDashboard() {
       .sort((a, b) => a.rank - b.rank || (a.artist.name ?? "").localeCompare(b.artist.name ?? ""))
       .slice(0, 40)
       .map(({ artist }) => artist);
-  }, [artists, search]);
+  }, [artists, search, workspace]);
 
   const selectedRelationshipArtist = useMemo(
     () => artists.find((artist) => artist.id === relationshipForm.target_artist_id) || null,
@@ -740,14 +757,18 @@ export default function AdminDashboard() {
   );
 
   useEffect(() => {
-    setMounted(true);
+    const timer = window.setTimeout(() => setMounted(true), 0);
+    return () => window.clearTimeout(timer);
   }, []);
 
   useEffect(() => {
     if (!mounted) return;
 
-    void fetchData();
-    void fetchGenreCatalog();
+    const timer = window.setTimeout(() => {
+      void fetchData();
+      void fetchGenreCatalog();
+    }, 0);
+    return () => window.clearTimeout(timer);
   }, [fetchData, fetchGenreCatalog, mounted]);
 
   useEffect(() => {
@@ -762,7 +783,8 @@ export default function AdminDashboard() {
   }, [closeArtistPicker]);
 
   useEffect(() => {
-    closeArtistPicker();
+    const timer = window.setTimeout(closeArtistPicker, 0);
+    return () => window.clearTimeout(timer);
   }, [closeArtistPicker, pathname]);
 
   useEffect(() => {
@@ -868,8 +890,10 @@ export default function AdminDashboard() {
     setSelectedArtistId("");
     setSearch("");
     closeArtistPicker();
-    setForm({ ...emptyForm });
+    setForm({ ...emptyForm, ...newArtistWorkspaceDefaults(workspace) });
+    setPreviewImageUrl(null);
     loadedArtistRef.current = null;
+    newArtistBaselineRef.current = buildArtistWrite({ ...emptyForm, ...newArtistWorkspaceDefaults(workspace) });
     setArtistMedia([]);
     setOutgoingRelationships([]);
     setIncomingRelationships([]);
@@ -879,8 +903,28 @@ export default function AdminDashboard() {
     setEditorialBiographyDirty(false);
   }
 
+  function confirmDiscardWorkspace() {
+    const baseline = loadedArtistRef.current ?? newArtistBaselineRef.current;
+    const dirty = Object.keys(changedArtistFields(baseline, buildArtistWrite(form))).length > 0 ||
+      editorialBiographyDirty || JSON.stringify(mediaForm) !== JSON.stringify(emptyMediaForm) ||
+      JSON.stringify(relationshipForm) !== JSON.stringify(emptyRelationshipForm);
+    return !dirty || window.confirm(t("admin.workspaces.discard"));
+  }
+
+  function switchWorkspace(next: ArtistWorkspace) {
+    // Navigation only: retain every editor, including biography/media drafts.
+    if (!selectedArtistId && Object.keys(changedArtistFields(newArtistBaselineRef.current, buildArtistWrite(form))).length === 0) {
+      const nextForm = { ...emptyForm, ...newArtistWorkspaceDefaults(next) };
+      setForm(nextForm);
+      newArtistBaselineRef.current = buildArtistWrite(nextForm);
+    }
+    setWorkspace(next);
+    setSearch("");
+    closeArtistPicker();
+  }
+
   function requestResetForm() {
-    if (editorialBiographyDirty && !window.confirm("The structured biography has unsaved changes. Discard them and clear the selected artist?")) return;
+    if (!confirmDiscardWorkspace()) return;
     resetForm();
   }
 
@@ -898,7 +942,8 @@ export default function AdminDashboard() {
   }
 
   function handleSelectArtistForEdit(id: string) {
-    if (id !== selectedArtistId && editorialBiographyDirty && !window.confirm("The structured biography has unsaved changes. Switch artists and discard them?")) return;
+    if (id === selectedArtistId) { closeArtistPicker(); return; }
+    if (!confirmDiscardWorkspace()) return;
     closeArtistPicker();
     const artist = artists.find((item) => item.id === id);
 
@@ -1288,13 +1333,13 @@ export default function AdminDashboard() {
   function handleEditRelationship(item: ArtistRelationship) {
     setEditingRelationshipId(item.id);
     setRelationshipForm({
-      target_artist_id: item.target_artist_id,
+      target_artist_id: item.target_artist_id === selectedArtistId ? item.source_artist_id : item.target_artist_id,
       relationship_type: item.relationship_type,
       start_year: item.start_year ? String(item.start_year) : "",
       end_year: item.end_year ? String(item.end_year) : "",
       notes: item.notes ?? "",
     });
-    setRelationshipArtistSearch(item.target_artist?.name ?? "");
+    setRelationshipArtistSearch((item.target_artist_id === selectedArtistId ? item.source_artist : item.target_artist)?.name ?? "");
     setRelationshipArtistPickerOpen(false);
   }
 
@@ -1317,9 +1362,11 @@ export default function AdminDashboard() {
     setLoading(true);
     setStatus("");
 
+    const existingRelationship = [...incomingRelationships, ...outgoingRelationships].find((item) => item.id === editingRelationshipId);
+    const editingIncoming = existingRelationship ? existingRelationship.target_artist_id === selectedArtistId : isCollective;
     const payload = {
-      source_artist_id: selectedArtistId,
-      target_artist_id: relationshipForm.target_artist_id,
+      source_artist_id: editingIncoming ? relationshipForm.target_artist_id : selectedArtistId,
+      target_artist_id: editingIncoming ? selectedArtistId : relationshipForm.target_artist_id,
       relationship_type: relationshipForm.relationship_type,
       start_year: relationshipForm.start_year ? Number(relationshipForm.start_year) : null,
       end_year: relationshipForm.end_year ? Number(relationshipForm.end_year) : null,
@@ -1352,7 +1399,7 @@ export default function AdminDashboard() {
   async function handleDeleteRelationship(item: ArtistRelationship) {
     if (!selectedArtistId) return;
 
-    const relatedName = item.target_artist?.name ?? "this relationship";
+    const relatedName = (item.target_artist_id === selectedArtistId ? item.source_artist : item.target_artist)?.name ?? "this relationship";
     const confirmed = window.confirm(`Delete this artist relationship?\n\n${relatedName}`);
     if (!confirmed) return;
 
@@ -1366,7 +1413,7 @@ export default function AdminDashboard() {
       },
       body: JSON.stringify({
         relationshipId: item.id,
-        artistId: selectedArtistId,
+        artistId: item.source_artist_id,
       }),
     });
     const result = await readApiJson<AdminWriteResponse>(response, "Artist relationships endpoint");
@@ -1397,7 +1444,7 @@ export default function AdminDashboard() {
     // On an update send only what changed. Creating still sends everything.
     const artistData = isEditing && baseline
       ? changedArtistFields(baseline, nextWrite)
-      : nextWrite;
+      : { ...nextWrite, status: "draft" as const };
 
     if (isEditing && baseline && Object.keys(artistData).length === 0) {
       setStatus("No changes to save.");
@@ -1428,8 +1475,12 @@ export default function AdminDashboard() {
         : "New artist created. Ready for another profile.";
 
       await fetchData();
-      resetForm();
-      setStatus(successMessage);
+      if (!editorialBiographyDirty && JSON.stringify(mediaForm) === JSON.stringify(emptyMediaForm) && JSON.stringify(relationshipForm) === JSON.stringify(emptyRelationshipForm)) {
+        resetForm();
+      } else {
+        loadedArtistRef.current = nextWrite;
+      }
+      setStatus(editorialBiographyDirty ? t("admin.workspaces.factsSaved") : successMessage);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
@@ -1470,6 +1521,42 @@ export default function AdminDashboard() {
     setLoading(false);
   }
 
+  const genderField = (
+    <Field label={t("admin.labels.gender")}>
+      <div className="flex gap-4">
+        {genderOptions.map((gender) => (
+          <label key={gender} className="flex items-center gap-2 text-sm capitalize">
+            <input type="checkbox" checked={form.gender === gender}
+              onChange={() => updateForm("gender", form.gender === gender ? "" : gender)} />
+            {gender}
+          </label>
+        ))}
+      </div>
+    </Field>
+  );
+
+  const instrumentSection = (
+    <section className="rounded-xl border border-blue-100 bg-blue-50/40 p-4">
+      <Field label={t("admin.labels.instruments")}>
+        <div className="grid grid-cols-2 gap-2 rounded-lg border border-gray-200 bg-white p-3 md:grid-cols-4">
+          {[...new Set([...instrumentOptions, ...parseCsv(form.instruments)])].map((instrument) => {
+            const selected = parseCsv(form.instruments).some(
+              (item) => item.toLowerCase() === instrument.toLowerCase()
+            );
+            return (
+              <label key={instrument} className="flex items-center gap-2 text-sm capitalize text-gray-700">
+                <input type="checkbox" checked={selected}
+                  onChange={() => updateForm("instruments", toggleCsvValue(form.instruments, instrument))}
+                  className="h-4 w-4" />
+                {instrument}
+              </label>
+            );
+          })}
+        </div>
+      </Field>
+    </section>
+  );
+
   if (!mounted) {
     return null;
   }
@@ -1500,6 +1587,22 @@ export default function AdminDashboard() {
           </Link>
         </div>
       </header>
+
+      <nav aria-label={t("admin.workspaces.navigation")} className="mb-6 grid gap-2 rounded-xl border border-gray-200 bg-white p-2 sm:grid-cols-3">
+        {(["solo", "groups", "musicians"] as const).map((tab) => (
+          <button key={tab} type="button" aria-pressed={workspace === tab}
+            onClick={() => switchWorkspace(tab)}
+            className={`rounded-lg px-4 py-4 text-sm font-medium uppercase tracking-wide focus-visible:outline-2 ${workspace === tab ? "bg-(--color-flagblue) text-white" : "text-(--color-flagblue) hover:bg-gray-50"}`}>
+            {t(`admin.workspaces.${tab}`)}
+          </button>
+        ))}
+      </nav>
+      <p className="mb-6 text-sm text-gray-600">{t(`admin.workspaces.${workspace}Help`)}</p>
+      {(selectedArtistId || form.name) && (
+        <p className="mb-6 rounded-lg bg-blue-50 p-3 text-sm text-(--color-flagblue)">
+          {t("admin.workspaces.retained", { name: form.name || t("admin.workspaces.unsaved") })}
+        </p>
+      )}
 
       {status && (
         <div className="mb-6 rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 shadow-sm">
@@ -2010,6 +2113,7 @@ export default function AdminDashboard() {
               <div id="artist-facts-workspace" hidden={artistWorkspaceTab !== "facts"}>
                 <h2 className="sr-only">{t("admin.forms.artistFacts")}</h2>
                 <form id="artist-profile-form" onSubmit={handleSaveArtist} className="space-y-6">
+              {!isCollective && workspace === "musicians" && instrumentSection}
               <div className="grid gap-4 md:grid-cols-2">
                 <Field label={t("admin.labels.artistName")}>
                   <input
@@ -2039,7 +2143,7 @@ export default function AdminDashboard() {
                   />
                 </Field>
 
-                <Field label={t("admin.labels.stageName")}>
+                {!isCollective && <Field label={t("admin.labels.stageName")}>
                   <input
                     value={form.stage_name ?? ""}
                     onChange={(event) =>
@@ -2047,10 +2151,10 @@ export default function AdminDashboard() {
                     }
                     className={inputClass}
                   />
-                </Field>
+                </Field>}
               </div>
 
-              <div className="grid gap-4 md:grid-cols-4">
+              {!isCollective && <div className="grid gap-4 md:grid-cols-4">
                 <Field label={t("admin.labels.firstName")}>
                   <input
                     value={form.first_name ?? ""}
@@ -2090,7 +2194,7 @@ export default function AdminDashboard() {
                     className={inputClass}
                   />
                 </Field>
-              </div>
+              </div>}
 
               <div className="grid gap-4 md:grid-cols-2">
                 <Field label={t("admin.labels.aliases")}>
@@ -2114,7 +2218,7 @@ export default function AdminDashboard() {
                 </Field>
               </div>
 
-              {form.type === "group" || form.type === "duo" ? (
+              {isCollective ? (
                 <div className="grid gap-4 md:grid-cols-2">
                   <Field label={t("admin.labels.formationYear")}>
                     <input
@@ -2194,54 +2298,15 @@ export default function AdminDashboard() {
                 </div>
               )}
 
-              <div>
-                <Field label={t("admin.labels.gender")}>
-                  <div className="rounded-lg border border-gray-200 bg-white px-3 py-3">
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-                      {genderOptions.map((gender) => {
-                        const selected = form.gender === gender;
-
-                        return (
-                          <label
-                            key={gender}
-                            className="flex items-center gap-2 text-sm capitalize text-gray-700"
-                          >
-                            <input
-                              type="checkbox"
-                              checked={selected}
-                              onChange={() =>
-                                updateForm("gender", selected ? "" : gender)
-                              }
-                              className="h-4 w-4"
-                            />
-                            {gender}
-                          </label>
-                        );
-                      })}
-                    </div>
-
-                    <div className="mt-3 border-t border-gray-100 pt-3">
-                      <label className="flex items-center gap-2 text-sm text-gray-700">
-                        <input
-                          type="checkbox"
-                          checked={Boolean(form.ended)}
-                          onChange={(event) =>
-                            updateForm("ended", event.target.checked)
-                          }
-                          className="h-4 w-4"
-                        />
-                        Ended / No longer active
-                      </label>
-                      <p className="mt-1 max-w-2xl pl-6 text-xs leading-relaxed text-gray-400">
-                        Use this for duos, groups, orchestras, choirs, or projects that are no longer active. For people, use death date/year instead.
-                      </p>
-                    </div>
-                  </div>
-                </Field>
-              </div>
+              {!isCollective && !isMusicianWorkspace && genderField}
+              {isCollective && <label className="flex items-center gap-2 text-sm">
+                <input type="checkbox" checked={Boolean(form.ended)}
+                  onChange={(event) => updateForm("ended", event.target.checked)} />
+                {t("admin.workspaces.ended")}
+              </label>}
 
               <div className="grid gap-4 md:grid-cols-2">
-                <Field label={t("admin.labels.placeOfBirth")}>
+                <Field label={t(isCollective ? "admin.workspaces.origin" : "admin.labels.placeOfBirth")}>
                   <input
                     value={form.birth_place ?? ""}
                     onChange={(event) =>
@@ -2270,18 +2335,31 @@ export default function AdminDashboard() {
               </div>
 
               <div className="grid gap-4 md:grid-cols-4">
-                <Field label={t("admin.labels.artistType")}>
-                  <select
+                {isMusicianWorkspace ? <div className="md:col-span-2">{genderField}</div> : <>
+                <Field label={t(isCollective ? "admin.workspaces.collectiveType" : "admin.labels.artistType")}>
+                  {isCollective ? (
+                    <div role="radiogroup" aria-label={t("admin.workspaces.collectiveType")} className="flex gap-4 rounded-lg border border-gray-200 bg-white px-3 py-2">
+                      {(["duo", "group"] as const).map((type) => (
+                        <label key={type} className="flex items-center gap-2 text-sm text-gray-700">
+                          <input type="radio" name="collective-type" value={type}
+                            checked={form.type === type}
+                            onChange={() => updateForm("type", type)} />
+                          {t(`artistFields.types.${type}`)}
+                        </label>
+                      ))}
+                    </div>
+                  ) : <select
                     value={form.type ?? ""}
                     onChange={(event) => updateForm("type", event.target.value)}
                     className={inputClass}
                   >
+                    {form.type && !artistTypeOptions.some((option) => option.value === form.type) && <option value={form.type}>{form.type}</option>}
                     {artistTypeOptions.map((option) => (
                       <option key={option.value || "empty-artist-type"} value={option.value}>
                         {option.label}
                       </option>
                     ))}
-                  </select>
+                  </select>}
                 </Field>
 
                 <Field label={t("admin.labels.primaryRole")}>
@@ -2300,13 +2378,17 @@ export default function AdminDashboard() {
                   </select>
                 </Field>
 
+                </>}
+
                 <Field label={t("admin.labels.primaryGenre")}>
                   <select
                     value={primaryGenreSelectValue}
                     onChange={(event) => updatePrimaryGenre(event.target.value)}
                     className={inputClass}
                   >
-                    {form.primary_genre && !matchedPrimaryGenreOption && (
+                    {form.primary_genre &&
+                      !matchedPrimaryGenreOption &&
+                      !RETIRED_PRIMARY_GENRES.has(form.primary_genre.trim().toLowerCase()) && (
                       <option value={form.primary_genre}>{form.primary_genre}</option>
                     )}
                     {primaryGenreOptions.map((option) => (
@@ -2322,7 +2404,8 @@ export default function AdminDashboard() {
 
                 <Field label={t("admin.labels.profileStatus")}>
                   <select
-                    value={form.status ?? "published"}
+                    value={form.status ?? "draft"}
+                    disabled={!selectedArtistId}
                     onChange={(event) =>
                       updateForm(
                         "status",
@@ -2351,35 +2434,7 @@ export default function AdminDashboard() {
                 />
               </Field>
 
-              <Field label={t("admin.labels.instruments")}>
-                  <div className="grid grid-cols-2 gap-2 rounded-lg border border-gray-200 bg-white p-3 md:grid-cols-4">
-                    {instrumentOptions.map((instrument) => {
-                      const selected = parseCsv(form.instruments).some(
-                        (item) => item.toLowerCase() === instrument.toLowerCase()
-                      );
-
-                      return (
-                        <label
-                          key={instrument}
-                          className="flex items-center gap-2 text-sm capitalize text-gray-700"
-                        >
-                          <input
-                            type="checkbox"
-                            checked={selected}
-                            onChange={() =>
-                              updateForm(
-                                "instruments",
-                                toggleCsvValue(form.instruments, instrument)
-                              )
-                            }
-                            className="h-4 w-4"
-                          />
-                          {instrument}
-                        </label>
-                      );
-                    })}
-                  </div>
-              </Field>
+              {!isCollective && workspace !== "musicians" && instrumentSection}
 
               <Field label={t("admin.labels.musicalGenres")}>
                 <div className="grid grid-cols-2 gap-2 rounded-lg border border-gray-200 bg-white p-3 md:grid-cols-4">
@@ -2573,12 +2628,12 @@ export default function AdminDashboard() {
             )}
           </section>
 
-          {selectedArtistId && <ArtistFamilyRelationshipsManager artistId={selectedArtistId} />}
+          {selectedArtistId && !isCollective && <ArtistFamilyRelationshipsManager artistId={selectedArtistId} />}
 
           <details className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm" open>
             <summary className="cursor-pointer text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
-              Groups & Projects
-              {selectedArtistId ? ` (${outgoingRelationships.length})` : ""}
+              {t(isCollective ? "admin.workspaces.members" : "admin.workspaces.groupsProjects")}
+              {selectedArtistId ? ` (${managedRelationships.length})` : ""}
             </summary>
 
             <div className="mt-5 space-y-5">
@@ -2601,14 +2656,14 @@ export default function AdminDashboard() {
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-gray-100">
-                        {outgoingRelationships.length ? (
-                          outgoingRelationships.map((item) => (
+                        {managedRelationships.length ? (
+                          managedRelationships.map((item) => (
                             <tr key={item.id} className="align-top">
                               <td className="px-3 py-3 text-(--color-flagblue)">
-                                {item.target_artist?.name ?? "Unknown artist"}
+                                {(item.target_artist_id === selectedArtistId ? item.source_artist : item.target_artist)?.name ?? "Unknown artist"}
                               </td>
                               <td className="px-3 py-3 text-gray-700">
-                                {formatArtistRelationshipType(item.relationship_type)}
+                                {formatArtistRelationshipType(item.relationship_type)}{item.end_year && item.relationship_type !== "founder_of" ? ` \u00b7 ${t("admin.workspaces.former")}` : ""}
                               </td>
                               <td className="px-3 py-3 text-gray-500">
                                 {item.start_year ?? "-"}
@@ -2642,7 +2697,7 @@ export default function AdminDashboard() {
                         ) : (
                           <tr>
                             <td colSpan={6} className="px-3 py-4 text-sm text-gray-400">
-                              No groups or projects saved for this artist yet.
+                              {t("admin.workspaces.noRelationships")}
                             </td>
                           </tr>
                         )}
@@ -2688,7 +2743,7 @@ export default function AdminDashboard() {
                                 120
                               );
                             }}
-                            placeholder="Search group, duo, orchestra..."
+                            placeholder={t("admin.workspaces.relatedSearch")}
                             className={inputClass}
                             role="combobox"
                             aria-expanded={relationshipArtistPickerOpen}
@@ -2792,7 +2847,7 @@ export default function AdminDashboard() {
                     </button>
                   </div>
 
-                  {incomingRelationships.length > 0 && (
+                  {!isCollective && incomingRelationships.length > 0 && (
                     <div className="rounded-lg border border-gray-100 bg-white p-4">
                       <h3 className="text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
                         Members
