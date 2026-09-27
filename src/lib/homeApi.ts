@@ -23,6 +23,7 @@ type HomepageMostAwardedArtistRow = {
   slug: string;
   name: string;
   province: string | null;
+  type?: string | null;
   views: number | string | null;
   has_image: boolean | null;
   image_updated_at: string | null;
@@ -91,7 +92,7 @@ async function loadHomeData(locale: EditorialLocale) {
     .order("views", { ascending: false, nullsFirst: false })
     .limit(HOME_SONG_CARD_LIMIT * 5));
 
-  const artistFields = "id, slug, name, province, has_image, image_updated_at, views";
+  const artistFields = "id, slug, name, type, province, has_image, image_updated_at, views";
   const topResponsePromise = startRequest(supabase
     .from("artists")
     .select(artistFields)
@@ -106,7 +107,7 @@ async function loadHomeData(locale: EditorialLocale) {
     .from("artists")
     .select(artistFields)
     .eq("status", "published")
-    .eq("primary_role", "composer")
+    .in("primary_role", ["composer", "songwriter", "lyricist"])
     .gt("views", 0)
     .order("views", { ascending: false, nullsFirst: false })
     .limit(HOME_ARTIST_CARD_LIMIT));
@@ -284,7 +285,7 @@ async function loadHomeData(locale: EditorialLocale) {
     ],
   }));
 
-  // 4. Top Artists (Singers)
+  // 4. Top Artists (Singers and Rappers)
   const topResponse = await topResponsePromise;
 
   const topArtists: ArtistSummary[] =
@@ -292,6 +293,7 @@ async function loadHomeData(locale: EditorialLocale) {
       id: a.id,
       slug: a.slug,
       name: a.name,
+      type: a.type,
       province: a.province,
       has_image: a.has_image,
       image_updated_at: a.image_updated_at,
@@ -329,7 +331,7 @@ async function loadHomeData(locale: EditorialLocale) {
       }));
   }
 
-  // 6. Prominent Composers (ONLY composers)
+  // 6. Composers and Songwriters (including lyricists)
   const composersResponse = await composersResponsePromise;
 
   const composers: ArtistSummary[] =
@@ -337,6 +339,7 @@ async function loadHomeData(locale: EditorialLocale) {
       id: a.id,
       slug: a.slug,
       name: a.name,
+      type: a.type,
       province: a.province,
       has_image: a.has_image,
       image_updated_at: a.image_updated_at,
@@ -352,6 +355,7 @@ async function loadHomeData(locale: EditorialLocale) {
       id: a.id,
       slug: a.slug,
       name: a.name,
+      type: a.type,
       province: a.province,
       has_image: a.has_image,
       image_updated_at: a.image_updated_at,
@@ -366,6 +370,7 @@ async function loadHomeData(locale: EditorialLocale) {
       id: a.id,
       slug: a.slug,
       name: a.name,
+      type: a.type,
       province: a.province,
       has_image: a.has_image,
       image_updated_at: a.image_updated_at,
@@ -410,7 +415,7 @@ async function loadHomeData(locale: EditorialLocale) {
     if (awardedArtistIds.length > 0) {
       const awardedArtistsResponse = await supabase
         .from("artists")
-        .select("id, slug, name, province, has_image, image_updated_at, views")
+        .select("id, slug, name, type, province, has_image, image_updated_at, views")
         .eq("status", "published")
         .in("id", awardedArtistIds);
 
@@ -425,6 +430,7 @@ async function loadHomeData(locale: EditorialLocale) {
             id: artist.id,
             slug: artist.slug,
             name: artist.name,
+            type: artist.type,
             province: artist.province,
             has_image: artist.has_image,
             image_updated_at: artist.image_updated_at,
@@ -448,6 +454,7 @@ async function loadHomeData(locale: EditorialLocale) {
         id: artist.id,
         slug: artist.slug,
         name: artist.name,
+        type: artist.type,
         province: artist.province,
         views: Number(artist.views || 0),
         has_image: artist.has_image,
@@ -458,6 +465,17 @@ async function loadHomeData(locale: EditorialLocale) {
     );
   }
 
+  const awardedWithoutType = mostAwardedArtists.filter((artist) => !artist.type);
+  if (awardedWithoutType.length) {
+    const { data, error } = await supabase.from("artists").select("id,type")
+      .eq("status", "published").in("id", awardedWithoutType.map((artist) => artist.id));
+    if (error) console.error("Unable to load awarded artist types:", error);
+    const typesById = new Map((data ?? []).map((artist) => [artist.id, artist.type]));
+    mostAwardedArtists = mostAwardedArtists.map((artist) => ({
+      ...artist, type: artist.type ?? typesById.get(artist.id) ?? null,
+    }));
+  }
+
   // 10. Classical Artists
   const classicalResponse = await classicalResponsePromise;
 
@@ -466,6 +484,7 @@ async function loadHomeData(locale: EditorialLocale) {
       id: a.id,
       slug: a.slug,
       name: a.name,
+      type: a.type,
       province: a.province,
       has_image: a.has_image,
       image_updated_at: a.image_updated_at,
@@ -490,6 +509,7 @@ async function loadHomeData(locale: EditorialLocale) {
         id: a.id,
         slug: a.slug,
         name: a.name,
+        type: a.type,
         province: a.province,
         has_image: a.has_image,
         image_updated_at: a.image_updated_at,
@@ -504,6 +524,7 @@ async function loadHomeData(locale: EditorialLocale) {
       id: artist.id,
       slug: artist.slug,
       name: artist.name,
+      type: artist.type,
       province: artist.province,
       has_image: artist.has_image,
       image_updated_at: artist.image_updated_at,

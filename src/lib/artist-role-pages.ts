@@ -42,12 +42,12 @@ export const ARTIST_ROLE_PAGES: Record<ArtistRolePageKey, ArtistRolePageConfig> 
     path: "/artists",
     i18nKey: "artists",
     role: "singer",
-    roleLabel: "Singers",
-    heading: "Dominican Singers",
+    roleLabel: "Singers and Rappers",
+    heading: "Dominican Singers and Rappers",
     description:
-      "Browse Dominican singers by genre, province and musical context in Mangulina, the Dominican Music Database.",
+      "Browse Dominican singers and rappers by genre, province and musical context in Mangulina, the Dominican Music Database.",
     intro:
-      "Explore Dominican singers across generations, genres and provinces in Mangulina, the Dominican Music Database.",
+      "Explore Dominican singers and rappers across generations, genres and provinces in Mangulina, the Dominican Music Database.",
     hideProvinceSelector: true,
     fixedArtistTypes: ["solo_artist"],
   },

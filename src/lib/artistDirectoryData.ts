@@ -4,6 +4,7 @@ import type { FilteredArtistGenreOptions } from "@/lib/artistGenreOptions";
 import {
   ARTIST_DIRECTORY_ITEMS_PER_PAGE,
   ARTIST_LIST_SELECT,
+  getArtistBrowseRoles,
   type ArtistDirectoryInitialData,
 } from "@/lib/artistDirectoryShared";
 import { getSupabaseClient } from "@/lib/supabase";
@@ -132,7 +133,7 @@ async function loadArtistDirectoryInitialData(
 
   const search = params.get("search");
   if (search) query = query.ilike("name", `%${search}%`);
-  if (options.role) query = query.eq("primary_role", options.role);
+  if (options.role) query = query.in("primary_role", getArtistBrowseRoles(options.role));
   if (options.fixedArtistTypes?.length) query = query.in("type", options.fixedArtistTypes);
   if (options.fixedContext) query = query.contains("artist_tags", [options.fixedContext]);
   if (options.fixedOrFilter) query = query.or(options.fixedOrFilter);
@@ -200,9 +201,8 @@ async function loadArtistDirectoryInitialData(
 
 export const getArtistDirectoryInitialData = unstable_cache(
   loadArtistDirectoryInitialData,
-  // v2: the default sort changed from views to name. A new key keeps previously
-  // cached, views-sorted pages from being served after deploy.
-  ["public-artist-directory-initial-data-v2"],
+  // v3: the singers browse category now includes rappers.
+  ["public-artist-directory-initial-data-v3"],
   {
     revalidate: PUBLIC_ARTIST_DIRECTORY_REVALIDATE_SECONDS,
     tags: [PUBLIC_ARTIST_DIRECTORY_CACHE_TAG],

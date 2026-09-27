@@ -2,6 +2,12 @@ import type { Artist } from "@/types/music";
 
 export const ARTIST_DIRECTORY_ITEMS_PER_PAGE = 24;
 
+// The singers browse category includes rappers, matching the homepage carousel.
+// Keep initial results, client pagination, and genre facets on the same scope.
+export function getArtistBrowseRoles(role: string): string[] {
+  return role === "singer" ? ["singer", "rapper"] : [role];
+}
+
 // The thirty-one provinces plus the Distrito Nacional. This is the whole set of
 // values that name a real place; anything else in the province column is
 // bookkeeping.

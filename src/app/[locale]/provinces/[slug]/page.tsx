@@ -56,9 +56,11 @@ export default async function ProvinceArtistsPage({
   const bornAbroad = isBornAbroadProvince(province.name);
 
   const t = await getTranslations("artistDirectory");
+  const fixedArtistTypes = bornAbroad ? ["solo_artist"] : undefined;
   const initialData = await getArtistDirectoryInitialData({
     searchParams: await searchParams,
     fixedProvince: province.name,
+    fixedArtistTypes,
   });
 
   return (
@@ -69,6 +71,7 @@ export default async function ProvinceArtistsPage({
       mobileTitleHighlight={bornAbroad ? t("abroadMobileHighlight") : province.name}
       intro={bornAbroad ? t("abroadIntro") : t("provinceIntro", { province: province.name })}
       fixedProvince={province.name}
+      fixedArtistTypes={fixedArtistTypes}
       showProvinceSelector
       hideGenreFilter
       initialData={initialData}

@@ -4,7 +4,7 @@
 import { useRef } from "react";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { BoomBox, Disc3, Drum, Ellipsis, Guitar, Heart, MicVocal } from "lucide-react";
+import { BoomBox, Disc3, Drum, Guitar, Heart, MicVocal } from "lucide-react";
 import { GiMusicalNotes, GiMusicalScore, GiSaxophone } from "react-icons/gi";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 import ArtistCarousel from "@/components/molecules/ArtistCarousel";
@@ -26,7 +26,6 @@ export default function BrowseByGenreSection() {
     { titleKey: "instrumental", labelKeys: ["classical"], href: "/genres/instrumental", color: genreSpectrumGradients.instrumental, icon: GiMusicalScore },
     { titleKey: "fusion", labelKeys: ["jazz", "experimental"], href: "/genres/fusion", color: genreSpectrumGradients.fusion, icon: GiSaxophone },
     { titleKey: "folklore", labelKeys: ["traditional", "roots"], href: "/genres/folklore", color: genreSpectrumGradients.folklore, icon: BoomBox },
-    { titleKey: "moreGenre", labelKeys: [], href: "/genres/more", color: genreSpectrumGradients.more, icon: Ellipsis },
   ];
 
   const scroll = (direction: "left" | "right") => {

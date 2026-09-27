@@ -136,18 +136,18 @@
     }
   },
   "sections": {
-    "topSingers": "Cantantes más vistos",
+    "topSingers": "Cantantes & Raperos",
     "trendingSongs": "Canciones más vistas",
     "browseByGenre": "Géneros y Estilos",
     "browseByRegion": "Artistas por provincia",
     "mostAwarded": "Artistas más premiados",
-    "composers": "Compositores más vistos",
-    "topDjs": "DJs más vistos",
+    "composers": "Compositores & Autores",
+    "topDjs": "DJs & Animadores",
     "birthdays": "Cumpleaños",
     "birthdaysThisWeek": "Cumpleaños semanal",
-    "christianArtists": "Cristianos más vistos",
-    "classicalArtists": "Instrumentales más vistos",
-    "risingStars": "Artistas Emergentes",
+    "christianArtists": "Cantantes Cristianos",
+    "classicalArtists": "Instrumentales & Clásicos",
+    "risingStars": "Cantantes Nuevos",
     "legends": "Bandas, Orquestas y Dúos"
   },
   "homePage": {
@@ -574,10 +574,10 @@
   },
   "artistDirectory": {
     "artists": {
-      "heading": "Cantantes Dominicanos",
-      "intro": "Explora cantantes dominicanos de todas las generaciones, géneros y provincias en Mangulina, la Base de Datos de Música Dominicana.",
-      "metadataTitle": "Cantantes Dominicanos",
-      "metadataDescription": "Explora cantantes dominicanos por género, provincia y contexto musical en Mangulina, la Base de Datos de Música Dominicana."
+      "heading": "Cantantes y Raperos Dominicanos",
+      "intro": "Explora cantantes y raperos dominicanos de todas las generaciones, géneros y provincias en Mangulina, la Base de Datos de Música Dominicana.",
+      "metadataTitle": "Cantantes y Raperos Dominicanos",
+      "metadataDescription": "Explora cantantes y raperos dominicanos por género, provincia y contexto musical en Mangulina, la Base de Datos de Música Dominicana."
     },
     "composers": {
       "heading": "Compositores y Autores Dominicanos",
@@ -669,6 +669,7 @@
     "provinceMetadataTitle": "Artistas Dominicanos de {province}",
     "provinceMetadataDescription": "Explora artistas dominicanos de {province}, incluidos cantantes, compositores, músicos, DJs y otras figuras de la música dominicana.",
     "abroadLabel": "Nacido en el Exterior",
+    "fromAbroadLabel": "Del exterior",
     "abroadHeading": "Artistas Dominicanos Nacidos en el Exterior",
     "abroadMobilePrefix": "Artistas Dominicanos",
     "abroadMobileHighlight": "Nacidos en el Exterior",
@@ -1391,6 +1392,7 @@
     }
   },
   "homepageIdentity": {
+    "mobileTagline": "La Base de Datos de Música Dominicana",
     "title": "Mangulina — La Base de Datos de la Música Dominicana",
     "introduction": "Explora la música dominicana a través de sus artistas, canciones, grabaciones, lanzamientos, géneros, compositores, músicos, productores e historia musical."
   },

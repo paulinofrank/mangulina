@@ -16,6 +16,7 @@ import type { AwardedArtistRanking, AwardFilterOption } from "@/lib/artistAwards
 import {
   ARTIST_DIRECTORY_ITEMS_PER_PAGE,
   ARTIST_LIST_SELECT,
+  getArtistBrowseRoles,
   type ArtistDirectoryInitialData,
 } from "@/lib/artistDirectoryShared";
 import { isBornAbroadProvince, isValidProvinceName, provinceToSlug } from "@/lib/provinceSlug";
@@ -686,7 +687,7 @@ function ArtistsContent({
 
         // ROLE FILTER
         if (role) {
-          query = query.eq("primary_role", role);
+          query = query.in("primary_role", getArtistBrowseRoles(role));
         }
 
         if (fixedArtistTypes?.length) {

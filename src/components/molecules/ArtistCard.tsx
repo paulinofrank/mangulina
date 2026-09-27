@@ -69,6 +69,7 @@ export default function ArtistCard({
 
         <ArtistRegion
           region={artist.province}
+          artistType={artist.type}
         />
 
         {showViews && artist.views ? (

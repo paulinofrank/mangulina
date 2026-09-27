@@ -1,4 +1,5 @@
 import { getSupabaseClient } from "@/lib/supabase";
+import { getArtistBrowseRoles } from "@/lib/artistDirectoryShared";
 
 const PAGE_SIZE = 1000;
 
@@ -93,7 +94,7 @@ export async function getArtistGenreOptions(
     }
 
     if (baseFilter.role) {
-      query = query.eq("primary_role", baseFilter.role);
+      query = query.in("primary_role", getArtistBrowseRoles(baseFilter.role));
     }
 
     if (baseFilter.province) {

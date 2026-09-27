@@ -117,7 +117,11 @@ export default async function HomePage({
         <SectionCard compact className="text-center">
           <div className="mx-auto max-w-3xl">
             <h1 className="text-lg sm:text-xl font-normal tracking-tight text-gray-700">
-              {t("title")}
+              <span className="hidden sm:inline">{t("title")}</span>
+              <span className="sm:hidden">
+                <span className="block">{SITE_NAME}</span>
+                <span className="block text-sm">{t("mobileTagline")}</span>
+              </span>
             </h1>
             <p className="mt-1 text-sm leading-snug text-gray-500">
               {t("introduction")}

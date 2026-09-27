@@ -136,17 +136,17 @@
     }
   },
   "sections": {
-    "topSingers": "Most Viewed Singers",
+    "topSingers": "Singers and Rappers",
     "trendingSongs": "Most Viewed Songs",
     "browseByGenre": "Browse by Genre & Style",
     "browseByRegion": "Browse Artists by Region",
     "mostAwarded": "Most Awarded Artists",
-    "composers": "Most Viewed Composers",
-    "topDjs": "Most Viewed DJs",
+    "composers": "Composers and Songwriters",
+    "topDjs": "DJs & MCs",
     "birthdays": "Birthdays",
     "birthdaysThisWeek": "Born This Week",
-    "christianArtists": "Most Viewed Christian",
-    "classicalArtists": "Most Viewed Instrumental",
+    "christianArtists": "Christian Singers",
+    "classicalArtists": "Classical and Instrumentals",
     "risingStars": "Emerging Artists",
     "legends": "Bands, Orchestras & Duos"
   },
@@ -563,10 +563,10 @@
   },
   "artistDirectory": {
     "artists": {
-      "heading": "Dominican Singers",
-      "intro": "Explore Dominican singers across generations, genres and provinces in Mangulina, the Dominican Music Database.",
-      "metadataTitle": "Dominican Singers",
-      "metadataDescription": "Browse Dominican singers by genre, province and musical context in Mangulina, the Dominican Music Database."
+      "heading": "Dominican Singers and Rappers",
+      "intro": "Explore Dominican singers and rappers across generations, genres and provinces in Mangulina, the Dominican Music Database.",
+      "metadataTitle": "Dominican Singers and Rappers",
+      "metadataDescription": "Browse Dominican singers and rappers by genre, province and musical context in Mangulina, the Dominican Music Database."
     },
     "composers": {
       "heading": "Dominican Composers and Songwriters",
@@ -658,6 +658,7 @@
     "provinceMetadataTitle": "Dominican Artists from {province}",
     "provinceMetadataDescription": "Explore Dominican artists from {province}, including singers, composers, musicians, DJs, and other figures in Dominican music.",
     "abroadLabel": "Born Abroad",
+    "fromAbroadLabel": "From abroad",
     "abroadHeading": "Dominican Artists Born Abroad",
     "abroadMobilePrefix": "Dominican Artists",
     "abroadMobileHighlight": "Born Abroad",
@@ -1378,6 +1379,7 @@
     }
   },
   "homepageIdentity": {
+    "mobileTagline": "The Dominican Music Database",
     "title": "Mangulina — The Dominican Music Database",
     "introduction": "Explore Dominican music through its artists, songs, recordings, releases, genres, composers, musicians, producers, and musical history."
   },

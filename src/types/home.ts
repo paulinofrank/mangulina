@@ -31,6 +31,7 @@ export type ArtistSummary = {
   slug: string;
   name: string;
   status?: Artist["status"];
+  type?: Artist["type"];
   province: string | null;
   has_image?: boolean | null;
   image_updated_at?: string | null;
