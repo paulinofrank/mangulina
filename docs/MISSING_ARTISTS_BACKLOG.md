@@ -139,3 +139,6 @@ After any insert, re-link the mentioning documents: convert the plain-text or
 « » mention to an `artistReference` node and write the paired
 `editorial_entity_references` row **in the same transaction**. An unpaired node
 is a BLOCKING state.
+## Discovered Lineage & Historical Gaps
+
+- **Eloy Tejeda**: Renowned Dominican son singer from the 1960s. Grandfather of La Perversa. Essential for documenting the historical lineage connecting traditional son to modern urban artists. Needs to be created and linked via \rtist_family_relationships\ (grandparent) to La Perversa.
