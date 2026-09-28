@@ -1020,10 +1020,12 @@ export default function AdminDashboard() {
     return true;
   }
 
+  // "Musicians" is a browsing filter over solo artists, not a distinct stored
+  // category (many solo artists match it alongside "solo"), so opening a
+  // profile from elsewhere must never guess into it — only the real type
+  // distinction (collective vs. not) decides the workspace here.
   function resolveArtistWorkspace(artist: AdminArtist): ArtistWorkspace {
-    if (isCollectiveArtist(artist.type)) return "groups";
-    if (matchesArtistWorkspace(artist, "musicians")) return "musicians";
-    return "solo";
+    return isCollectiveArtist(artist.type) ? "groups" : "solo";
   }
 
   function handleOpenUnpublishedArtist(artist: AdminArtist) {
