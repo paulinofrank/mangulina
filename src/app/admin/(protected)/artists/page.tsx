@@ -596,6 +596,8 @@ export default function AdminDashboard() {
   const [previewImageUrl, setPreviewImageUrl] = useState<string | null>(null);
   const [editorialBiographyDirty, setEditorialBiographyDirty] = useState(false);
   const [artistWorkspaceTab, setArtistWorkspaceTab] = useState("facts");
+  const [unpublishedModalOpen, setUnpublishedModalOpen] = useState(false);
+  const [unpublishedSearch, setUnpublishedSearch] = useState("");
   const artistPickerRef = useRef<HTMLDivElement>(null);
   const artistSearchInputRef = useRef<HTMLInputElement>(null);
   const activeArtistOptionRef = useRef<HTMLButtonElement>(null);
@@ -627,6 +629,22 @@ export default function AdminDashboard() {
   const canAutofillYouTubeMetadata = Boolean(
     mediaForm.platform === "youtube" && mediaYouTubeVideoId && !loading
   );
+
+  const unpublishedArtists = useMemo(
+    () => artists
+      .filter((artist) => (artist.status ?? "published") !== "published")
+      .sort((a, b) => (a.name ?? "").localeCompare(b.name ?? "")),
+    [artists]
+  );
+
+  const filteredUnpublishedArtists = useMemo(() => {
+    const query = normalizeSearchText(unpublishedSearch);
+    if (!query) return unpublishedArtists;
+
+    return unpublishedArtists.filter((artist) =>
+      rankSearchText([artist.name, artist.stage_name, artist.slug], query) !== Number.MAX_SAFE_INTEGER
+    );
+  }, [unpublishedArtists, unpublishedSearch]);
 
   const filteredArtists = useMemo(() => {
     const query = normalizeSearchText(search);
@@ -885,15 +903,15 @@ export default function AdminDashboard() {
     setRelationshipArtistPickerOpen(false);
   }
 
-  function resetForm() {
+  function resetForm(nextWorkspace: ArtistWorkspace = workspace) {
     setArtistWorkspaceTab("facts");
     setSelectedArtistId("");
     setSearch("");
     closeArtistPicker();
-    setForm({ ...emptyForm, ...newArtistWorkspaceDefaults(workspace) });
+    setForm({ ...emptyForm, ...newArtistWorkspaceDefaults(nextWorkspace) });
     setPreviewImageUrl(null);
     loadedArtistRef.current = null;
-    newArtistBaselineRef.current = buildArtistWrite({ ...emptyForm, ...newArtistWorkspaceDefaults(workspace) });
+    newArtistBaselineRef.current = buildArtistWrite({ ...emptyForm, ...newArtistWorkspaceDefaults(nextWorkspace) });
     setArtistMedia([]);
     setOutgoingRelationships([]);
     setIncomingRelationships([]);
@@ -911,16 +929,12 @@ export default function AdminDashboard() {
     return !dirty || window.confirm(t("admin.workspaces.discard"));
   }
 
+  // Each workspace tab doubles as "start a new artist of this kind": picking
+  // one always discards whatever is open (after confirmation) for a blank form.
   function switchWorkspace(next: ArtistWorkspace) {
-    // Navigation only: retain every editor, including biography/media drafts.
-    if (!selectedArtistId && Object.keys(changedArtistFields(newArtistBaselineRef.current, buildArtistWrite(form))).length === 0) {
-      const nextForm = { ...emptyForm, ...newArtistWorkspaceDefaults(next) };
-      setForm(nextForm);
-      newArtistBaselineRef.current = buildArtistWrite(nextForm);
-    }
+    if (!confirmDiscardWorkspace()) return;
     setWorkspace(next);
-    setSearch("");
-    closeArtistPicker();
+    resetForm(next);
   }
 
   function requestResetForm() {
@@ -942,14 +956,14 @@ export default function AdminDashboard() {
   }
 
   function handleSelectArtistForEdit(id: string) {
-    if (id === selectedArtistId) { closeArtistPicker(); return; }
-    if (!confirmDiscardWorkspace()) return;
+    if (id === selectedArtistId) { closeArtistPicker(); return true; }
+    if (!confirmDiscardWorkspace()) return false;
     closeArtistPicker();
     const artist = artists.find((item) => item.id === id);
 
     if (!artist) {
       resetForm();
-      return;
+      return true;
     }
 
     setSelectedArtistId(artist.id);
@@ -1003,6 +1017,21 @@ export default function AdminDashboard() {
     loadedArtistRef.current = buildArtistWrite(nextForm);
 
     setStatus("");
+    return true;
+  }
+
+  function resolveArtistWorkspace(artist: AdminArtist): ArtistWorkspace {
+    if (isCollectiveArtist(artist.type)) return "groups";
+    if (matchesArtistWorkspace(artist, "musicians")) return "musicians";
+    return "solo";
+  }
+
+  function handleOpenUnpublishedArtist(artist: AdminArtist) {
+    const selected = handleSelectArtistForEdit(artist.id);
+    if (!selected) return;
+    setWorkspace(resolveArtistWorkspace(artist));
+    setUnpublishedModalOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   async function handleUploadArtistImage(file: File) {
@@ -1564,7 +1593,7 @@ export default function AdminDashboard() {
   return (
     <div className="mx-auto max-w-6xl px-5 pb-10 pt-8 font-sans text-(--color-ink) sm:pt-10">
       <header className="mb-8 rounded-xl border border-black/5 bg-white p-6 shadow-sm sm:p-8">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-stretch sm:justify-between">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-(--color-wikicrimson)">
               Mangulina Admin
@@ -1579,14 +1608,109 @@ export default function AdminDashboard() {
             </p>
           </div>
 
-          <Link
-            href="/admin"
-            className="inline-flex w-fit items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-normal uppercase tracking-[0.18em] text-(--color-flagblue) shadow-sm transition hover:border-(--color-wikicrimson) hover:text-(--color-wikicrimson)"
-          >
-            Admin Portal
-          </Link>
+          <div className="flex w-fit flex-col items-stretch justify-between">
+            <Link
+              href="/admin"
+              className="inline-flex w-fit items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-normal uppercase tracking-[0.18em] text-(--color-flagblue) shadow-sm transition hover:border-(--color-wikicrimson) hover:text-(--color-wikicrimson)"
+            >
+              Admin Portal
+            </Link>
+            <button
+              type="button"
+              onClick={() => {
+                setUnpublishedSearch("");
+                setUnpublishedModalOpen(true);
+              }}
+              className="inline-flex w-fit items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-normal uppercase tracking-[0.18em] text-(--color-flagblue) shadow-sm transition hover:border-(--color-wikicrimson) hover:text-(--color-wikicrimson)"
+            >
+              Unpublisheds
+            </button>
+          </div>
         </div>
       </header>
+
+      {unpublishedModalOpen && (
+        <div
+          className="fixed inset-0 z-40 flex items-start justify-center overflow-y-auto bg-black/40 p-4 pt-16 sm:pt-24"
+          onClick={() => setUnpublishedModalOpen(false)}
+        >
+          <div
+            className="w-full max-w-3xl rounded-xl bg-white p-6 shadow-lg"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="mb-4 flex items-start justify-between gap-4">
+              <div>
+                <h2 className="text-lg font-bold uppercase tracking-tight text-(--color-flagblue)">
+                  Unpublished Artists
+                </h2>
+                <p className="mt-1 text-sm text-gray-600">
+                  {unpublishedArtists.length} profile{unpublishedArtists.length === 1 ? "" : "s"} not yet published.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setUnpublishedModalOpen(false)}
+                className="rounded-md px-2 py-1 text-sm text-gray-400 transition hover:bg-gray-100 hover:text-gray-600"
+                aria-label="Close"
+              >
+                ✕
+              </button>
+            </div>
+
+            <input
+              value={unpublishedSearch}
+              onChange={(event) => setUnpublishedSearch(event.target.value)}
+              placeholder="Filter by name..."
+              className="mb-4 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-(--color-flagblue)"
+            />
+
+            <div className="max-h-[60vh] overflow-y-auto rounded-lg border border-gray-100">
+              <table className="w-full text-left text-sm">
+                <thead className="sticky top-0 bg-gray-50 text-xs uppercase tracking-wide text-gray-500">
+                  <tr>
+                    <th className="px-3 py-2">Artist Name</th>
+                    <th className="px-3 py-2">Has Image</th>
+                    <th className="px-3 py-2">Status</th>
+                    <th className="px-3 py-2">Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {filteredUnpublishedArtists.length ? (
+                    filteredUnpublishedArtists.map((artist) => (
+                      <tr key={artist.id} className="border-t border-gray-100 last:border-b-0">
+                        <td className="px-3 py-2">
+                          <button
+                            type="button"
+                            onClick={() => handleOpenUnpublishedArtist(artist)}
+                            className="text-left font-medium text-(--color-flagblue) hover:text-(--color-wikicrimson) hover:underline"
+                          >
+                            {artist.name}
+                          </button>
+                        </td>
+                        <td className="px-3 py-2 text-gray-600">
+                          {artist.has_image ? "Yes" : "No"}
+                        </td>
+                        <td className="px-3 py-2 text-gray-600 capitalize">
+                          {artist.status ?? "—"}
+                        </td>
+                        <td className="px-3 py-2 text-gray-600">
+                          {artist.type ?? "—"}
+                        </td>
+                      </tr>
+                    ))
+                  ) : (
+                    <tr>
+                      <td colSpan={4} className="px-3 py-6 text-center text-gray-400">
+                        No unpublished artists found.
+                      </td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      )}
 
       <nav aria-label={t("admin.workspaces.navigation")} className="mb-6 grid gap-2 rounded-xl border border-gray-200 bg-white p-2 sm:grid-cols-3">
         {(["solo", "groups", "musicians"] as const).map((tab) => (
@@ -2077,13 +2201,6 @@ export default function AdminDashboard() {
                 </div>
 
                 <div className="flex flex-wrap gap-2 sm:shrink-0 sm:justify-end">
-                  <button
-                    type="button"
-                    onClick={requestResetForm}
-                    className="rounded-lg border border-(--color-wikicrimson)/25 bg-white px-3 py-2 text-xs font-medium uppercase tracking-[0.14em] text-(--color-wikicrimson) shadow-sm transition hover:border-(--color-wikicrimson) hover:bg-(--color-wikicrimson) hover:text-white sm:px-4"
-                  >
-                    {t("admin.buttons.newArtist")}
-                  </button>
                   <button
                     type="button"
                     onClick={submitArtistProfileFromHero}
