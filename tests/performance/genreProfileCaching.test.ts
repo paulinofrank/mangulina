@@ -53,7 +53,8 @@ test("prerendered HTML keeps the genre's indexable content", () => {
   assert.doesNotMatch(sections, /import[^;]*useSearchParams/, "sections must not import useSearchParams");
   // The provider starts unselected so first paint is the canonical genre.
   assert.match(provider, /useState<string \| null>\(null\)/);
-  assert.match(sections, /artists\.length > 0/);
+  assert.match(sections, /soloArtists\.length > 0/);
+  assert.match(sections, /groupArtists\.length > 0/);
 });
 
 test("subgenre filtering still works end to end", () => {

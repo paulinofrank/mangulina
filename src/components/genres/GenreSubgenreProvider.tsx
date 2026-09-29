@@ -38,7 +38,8 @@ type GenreSubgenreValue = {
   selected: GenreSubgenre | null;
   loading: boolean;
   select: (slug: string) => void;
-  artists: ArtistSummary[];
+  soloArtists: ArtistSummary[];
+  groupArtists: ArtistSummary[];
   media: GenreMedia[];
   activeHistory: string | null;
   labels: GenreLabelSet;
@@ -55,13 +56,14 @@ export function useGenreSubgenre() {
   return value;
 }
 
-type Fetched = { slug: string; artists: ArtistSummary[]; media: GenreMedia[] };
+type Fetched = { slug: string; soloArtists: ArtistSummary[]; groupArtists: ArtistSummary[]; media: GenreMedia[] };
 
 export default function GenreSubgenreProvider({
   genreSlug,
   genreHistory,
   subgenres,
-  canonicalArtists,
+  canonicalSoloArtists,
+  canonicalGroupArtists,
   canonicalMedia,
   locale,
   labels,
@@ -70,7 +72,8 @@ export default function GenreSubgenreProvider({
   genreSlug: string;
   genreHistory: string | null;
   subgenres: GenreSubgenre[];
-  canonicalArtists: ArtistSummary[];
+  canonicalSoloArtists: ArtistSummary[];
+  canonicalGroupArtists: ArtistSummary[];
   canonicalMedia: GenreMedia[];
   locale: string;
   labels: GenreLabels;
@@ -135,7 +138,14 @@ export default function GenreSubgenreProvider({
     )
       .then((response) => (response.ok ? response.json() : null))
       .then((body) => {
-        if (body?.ok) setFetched({ slug: selectedSlug, artists: body.artists ?? [], media: body.media ?? [] });
+        if (body?.ok) {
+          setFetched({
+            slug: selectedSlug,
+            soloArtists: body.soloArtists ?? [],
+            groupArtists: body.groupArtists ?? [],
+            media: body.media ?? [],
+          });
+        }
         // A failed lookup keeps the canonical lists rather than blanking the page.
         else setFailedSlug(selectedSlug);
       })
@@ -165,7 +175,8 @@ export default function GenreSubgenreProvider({
       selected,
       loading,
       select,
-      artists: filtered?.artists ?? canonicalArtists,
+      soloArtists: filtered?.soloArtists ?? canonicalSoloArtists,
+      groupArtists: filtered?.groupArtists ?? canonicalGroupArtists,
       media: filtered?.media ?? canonicalMedia,
       activeHistory,
       labels: labels.byKey[selected?.slug ?? ALL_SUBGENRES] ?? labels.byKey[ALL_SUBGENRES],
@@ -176,7 +187,8 @@ export default function GenreSubgenreProvider({
       },
     };
   }, [
-    canonicalArtists,
+    canonicalSoloArtists,
+    canonicalGroupArtists,
     canonicalMedia,
     filtered,
     genreHistory,

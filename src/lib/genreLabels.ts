@@ -10,7 +10,8 @@
 export const ALL_SUBGENRES = "all";
 
 export type GenreLabelSet = {
-  connectedArtists: string;
+  connectedSoloArtists: string;
+  connectedGroupArtists: string;
   songsHeading: string;
   songsEmpty: string;
   mediaTitle: string;

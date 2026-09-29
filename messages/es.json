@@ -1107,7 +1107,8 @@
     "genreDetail": {
       "learnMoreHistory": "Conoce más sobre la historia de {genre}...",
       "topArtists": "Artistas más vistos de {genre}",
-      "connectedArtists": "Artistas más vistos de {genre}",
+      "connectedSoloArtists": "Cantantes de {genre}",
+      "connectedGroupArtists": "Bandas, orquestas y dúos de {genre}",
       "popularSongs": "Canciones más vistas",
       "importantReleases": "Álbumes y Otras Publicaciones Musicales Importantes",
       "releasesIn": "Publicaciones Musicales de {genre}",

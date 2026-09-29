@@ -89,7 +89,7 @@ export default async function GenrePage({ params }: PageProps) {
   const t = await getTranslations("pages.genreDetail");
   const locale = await getLocale();
 
-  const { subgenres, connectedArtists } = data;
+  const { subgenres, connectedSoloArtists, connectedGroupArtists } = data;
   const genre = localizeGenreContent(data.genre, locale);
   const genreMedia = genre.catalogId ? await getGenreMedia(genre.catalogId) : [];
   const sortedSubgenres = subgenres.slice().sort((a, b) =>
@@ -102,7 +102,8 @@ export default async function GenrePage({ params }: PageProps) {
   // Every possible active name is known server-side — the genre itself plus
   // each of its subgenres — so this is a small, bounded set of strings.
   const labelsFor = (name: string): GenreLabelSet => ({
-    connectedArtists: t("connectedArtists", { genre: name }),
+    connectedSoloArtists: t("connectedSoloArtists", { genre: name }),
+    connectedGroupArtists: t("connectedGroupArtists", { genre: name }),
     songsHeading: t("subgenreSongs", { name }),
     songsEmpty: t("noSongsAssigned", { name }),
     mediaTitle: t("publicMedia.title", { genre: name }),
@@ -142,7 +143,8 @@ export default async function GenrePage({ params }: PageProps) {
         genreSlug={genre.slug}
         genreHistory={genre.history ?? null}
         subgenres={sortedSubgenres}
-        canonicalArtists={connectedArtists}
+        canonicalSoloArtists={connectedSoloArtists}
+        canonicalGroupArtists={connectedGroupArtists}
         canonicalMedia={genreMedia}
         locale={locale}
         labels={labels}

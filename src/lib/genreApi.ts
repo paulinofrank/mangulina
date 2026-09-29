@@ -16,8 +16,14 @@ import type { ArtistSummary } from "@/types/home";
 export type GenrePageData = {
   genre: GenreDefinition;
   subgenres: GenreSubgenre[];
-  connectedArtists: ArtistSummary[];
+  connectedSoloArtists: ArtistSummary[];
+  connectedGroupArtists: ArtistSummary[];
 };
+
+// The only two collective types in the catalog (see artists.type); everything
+// else — solo_artist, legacy/unclassified rows — counts as solo.
+const COLLECTIVE_ARTIST_TYPES = ["group", "duo"] as const;
+type ArtistKindFilter = "solo" | "collective";
 
 type ArtistGenreRow = ArtistSummary & {
   created_at?: string | null;
@@ -194,15 +200,24 @@ function mergeGenreDefinition(
   };
 }
 
-async function loadMostViewedPrimaryGenreArtists(values: string[]) {
+async function loadMostViewedPrimaryGenreArtists(values: string[], kind: ArtistKindFilter) {
   if (values.length === 0) return [];
 
   const supabase = getSupabaseClient();
-  const response = await supabase
+  const base = supabase
     .from("artists")
-    .select("id, slug, name, province, has_image, image_updated_at, views, primary_role, primary_genre, genres, created_at")
+    .select("id, slug, name, province, has_image, image_updated_at, views, type, primary_role, primary_genre, genres, created_at")
     .eq("status", "published")
-    .in("primary_genre", uniqueValues(values))
+    .in("primary_genre", uniqueValues(values));
+
+  // Solo also catches a null/unclassified type, matching how the admin editor
+  // treats anything that isn't a group or duo as reachable under "solo".
+  const scoped =
+    kind === "collective"
+      ? base.in("type", COLLECTIVE_ARTIST_TYPES)
+      : base.or(`type.is.null,type.not.in.(${COLLECTIVE_ARTIST_TYPES.join(",")})`);
+
+  const response = await scoped
     .order("views", { ascending: false, nullsFirst: false })
     .order("name", { ascending: true })
     .limit(10);
@@ -213,7 +228,7 @@ async function loadMostViewedPrimaryGenreArtists(values: string[]) {
 
 const getMostViewedPrimaryGenreArtists = unstable_cache(
   loadMostViewedPrimaryGenreArtists,
-  ["public-genre-artists-v1"],
+  ["public-genre-artists-v2"],
   {
     revalidate: PUBLIC_GENRE_REVALIDATE_SECONDS,
     tags: [PUBLIC_GENRE_CACHE_TAG],
@@ -256,16 +271,20 @@ export async function getGenrePageData(
           normalize(subgenre.name),
         ]),
       ]);
-  const connectedArtistRows =
-    (await safeQuery("connectedArtists", () =>
-      getMostViewedPrimaryGenreArtists(primaryGenreValues),
-    )) ?? [];
-  const connectedArtists = connectedArtistRows.map(toArtistSummary);
+  const [connectedSoloArtistRows, connectedGroupArtistRows] = await Promise.all([
+    safeQuery("connectedSoloArtists", () =>
+      getMostViewedPrimaryGenreArtists(primaryGenreValues, "solo"),
+    ),
+    safeQuery("connectedGroupArtists", () =>
+      getMostViewedPrimaryGenreArtists(primaryGenreValues, "collective"),
+    ),
+  ]);
 
   return {
     genre,
     subgenres,
-    connectedArtists,
+    connectedSoloArtists: (connectedSoloArtistRows ?? []).map(toArtistSummary),
+    connectedGroupArtists: (connectedGroupArtistRows ?? []).map(toArtistSummary),
   };
 }
 
@@ -352,21 +371,26 @@ export const getGenreMedia = unstable_cache(
 export async function getSubgenreContext(
   genreSlug: string,
   subgenreSlug: string,
-): Promise<{ artists: ArtistSummary[]; media: GenreMedia[] } | null> {
+): Promise<{ soloArtists: ArtistSummary[]; groupArtists: ArtistSummary[]; media: GenreMedia[] } | null> {
   const data = await getGenrePageData(genreSlug);
   if (!data) return null;
 
   const subgenre = data.subgenres.find((entry) => entry.slug === subgenreSlug);
   if (!subgenre) return null;
 
-  const artistRows =
-    (await safeQuery("subgenreArtists", () =>
-      getMostViewedPrimaryGenreArtists(
-        uniqueValues([subgenre.slug, subgenre.name, normalize(subgenre.name)]),
-      ),
-    )) ?? [];
+  const subgenreValues = uniqueValues([subgenre.slug, subgenre.name, normalize(subgenre.name)]);
+  const [soloArtistRows, groupArtistRows] = await Promise.all([
+    safeQuery("subgenreSoloArtists", () => getMostViewedPrimaryGenreArtists(subgenreValues, "solo")),
+    safeQuery("subgenreGroupArtists", () =>
+      getMostViewedPrimaryGenreArtists(subgenreValues, "collective"),
+    ),
+  ]);
 
   const media = subgenre.id ? await getGenreMedia(subgenre.id) : [];
 
-  return { artists: artistRows.map(toArtistSummary), media };
+  return {
+    soloArtists: (soloArtistRows ?? []).map(toArtistSummary),
+    groupArtists: (groupArtistRows ?? []).map(toArtistSummary),
+    media,
+  };
 }

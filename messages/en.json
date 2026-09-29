@@ -1094,7 +1094,8 @@
     "genreDetail": {
       "learnMoreHistory": "Learn more about {genre} history...",
       "topArtists": "Most Viewed {genre} Artists",
-      "connectedArtists": "Most Viewed Artists of {genre}",
+      "connectedSoloArtists": "Singers of {genre}",
+      "connectedGroupArtists": "Bands, Orchestras & Duos of {genre}",
       "popularSongs": "Most Viewed Songs",
       "importantReleases": "Important Albums / Releases",
       "releasesIn": "Releases in {genre}",

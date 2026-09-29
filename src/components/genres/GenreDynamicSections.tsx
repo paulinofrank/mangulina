@@ -33,23 +33,37 @@ export function GenreHistoryLink() {
 }
 
 export default function GenreDynamicSections({ genreCatalogId }: { genreCatalogId: number | null }) {
-  const { artists, media, selected, activeHistory, labels, sharedLabels, genreSlug } =
+  const { soloArtists, groupArtists, media, selected, activeHistory, labels, sharedLabels, genreSlug } =
     useGenreSubgenre();
   const nav = useTranslations("navigation");
 
   return (
     <>
-      {/* The "see all" link goes to the genre, not to the selected subgenre:
+      {/* The "see all" links go to the genre, not to the selected subgenre:
           the directory matches subgenres by name rather than by slug, so
           passing one from here would be a filter that silently misses. "Every
           artist of this genre" stays true in both states. */}
-      {artists.length > 0 && (
+      {soloArtists.length > 0 && (
         <GenreCarouselSection
-          title={labels.connectedArtists}
+          title={labels.connectedSoloArtists}
           linkHref={`/artists?genre=${encodeURIComponent(genreSlug)}`}
           linkLabel={nav("seeAll")}
         >
-          {artists.map((artist, index) => (
+          {soloArtists.map((artist, index) => (
+            <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
+              <ArtistCard artist={artist} titleAs="h3" priorityImage={index === 0} />
+            </div>
+          ))}
+        </GenreCarouselSection>
+      )}
+
+      {groupArtists.length > 0 && (
+        <GenreCarouselSection
+          title={labels.connectedGroupArtists}
+          linkHref={`/artists/groups?genre=${encodeURIComponent(genreSlug)}`}
+          linkLabel={nav("seeAll")}
+        >
+          {groupArtists.map((artist, index) => (
             <div key={artist.id} className="shrink-0 w-28 sm:w-32 lg:w-36">
               <ArtistCard artist={artist} titleAs="h3" priorityImage={index === 0} />
             </div>
