@@ -82,6 +82,7 @@ export type ArtistProfileData = {
   youtube: string | null;
   facebook: string | null;
   instagram: string | null;
+  spotify: string | null;
 
   awards: ArtistAward[];
 };

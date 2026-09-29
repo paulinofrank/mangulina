@@ -59,6 +59,7 @@ type AdminArtist = Artist & {
   facebook?: string | null;
   instagram?: string | null;
   youtube?: string | null;
+  spotify?: string | null;
   occupations?: string[] | Record<string, unknown> | null;
   instruments?: string[] | null;
   genres?: string[] | null;
@@ -354,6 +355,7 @@ const emptyForm: ArtistForm = {
   facebook: "",
   instagram: "",
   youtube: "",
+  spotify: "",
   gender: "",
   disambiguation: "",
   wikidata_id: "",
@@ -561,6 +563,19 @@ function detectMediaPlatform(url: string) {
   return "other";
 }
 
+type UnpublishedStatusCategory = "draft" | "needs_review" | "other";
+
+const unpublishedStatusFilterOptions: { value: UnpublishedStatusCategory; label: string }[] = [
+  { value: "draft", label: "Draft" },
+  { value: "needs_review", label: "Review" },
+  { value: "other", label: "Others" },
+];
+
+function categorizeUnpublishedStatus(status: string | null | undefined): UnpublishedStatusCategory {
+  if (status === "draft") return "draft";
+  if (status === "needs_review") return "needs_review";
+  return "other";
+}
 
 export default function AdminDashboard() {
   const t = useTranslations();
@@ -598,6 +613,7 @@ export default function AdminDashboard() {
   const [artistWorkspaceTab, setArtistWorkspaceTab] = useState("facts");
   const [unpublishedModalOpen, setUnpublishedModalOpen] = useState(false);
   const [unpublishedSearch, setUnpublishedSearch] = useState("");
+  const [unpublishedStatusFilters, setUnpublishedStatusFilters] = useState<Set<UnpublishedStatusCategory>>(new Set());
   const artistPickerRef = useRef<HTMLDivElement>(null);
   const artistSearchInputRef = useRef<HTMLInputElement>(null);
   const activeArtistOptionRef = useRef<HTMLButtonElement>(null);
@@ -637,14 +653,32 @@ export default function AdminDashboard() {
     [artists]
   );
 
+  const unpublishedStatusCounts = useMemo(() => {
+    const counts: Record<UnpublishedStatusCategory, number> = { draft: 0, needs_review: 0, other: 0 };
+    for (const artist of unpublishedArtists) counts[categorizeUnpublishedStatus(artist.status)] += 1;
+    return counts;
+  }, [unpublishedArtists]);
+
   const filteredUnpublishedArtists = useMemo(() => {
     const query = normalizeSearchText(unpublishedSearch);
-    if (!query) return unpublishedArtists;
 
-    return unpublishedArtists.filter((artist) =>
-      rankSearchText([artist.name, artist.stage_name, artist.slug], query) !== Number.MAX_SAFE_INTEGER
-    );
-  }, [unpublishedArtists, unpublishedSearch]);
+    return unpublishedArtists.filter((artist) => {
+      if (unpublishedStatusFilters.size > 0 && !unpublishedStatusFilters.has(categorizeUnpublishedStatus(artist.status))) {
+        return false;
+      }
+      if (!query) return true;
+      return rankSearchText([artist.name, artist.stage_name, artist.slug], query) !== Number.MAX_SAFE_INTEGER;
+    });
+  }, [unpublishedArtists, unpublishedSearch, unpublishedStatusFilters]);
+
+  function toggleUnpublishedStatusFilter(category: UnpublishedStatusCategory) {
+    setUnpublishedStatusFilters((current) => {
+      const next = new Set(current);
+      if (next.has(category)) next.delete(category);
+      else next.add(category);
+      return next;
+    });
+  }
 
   const filteredArtists = useMemo(() => {
     const query = normalizeSearchText(search);
@@ -1007,6 +1041,7 @@ export default function AdminDashboard() {
       facebook: artist.facebook ?? "",
       instagram: artist.instagram ?? "",
       youtube: artist.youtube ?? "",
+      spotify: artist.spotify ?? "",
       gender: artist.gender ?? "",
       disambiguation: artist.disambiguation ?? "",
       wikidata_id: artist.wikidata_id ?? "",
@@ -1621,6 +1656,7 @@ export default function AdminDashboard() {
               type="button"
               onClick={() => {
                 setUnpublishedSearch("");
+                setUnpublishedStatusFilters(new Set());
                 setUnpublishedModalOpen(true);
               }}
               className="inline-flex w-fit items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-xs font-normal uppercase tracking-[0.18em] text-(--color-flagblue) shadow-sm transition hover:border-(--color-wikicrimson) hover:text-(--color-wikicrimson)"
@@ -1663,8 +1699,29 @@ export default function AdminDashboard() {
               value={unpublishedSearch}
               onChange={(event) => setUnpublishedSearch(event.target.value)}
               placeholder="Filter by name..."
-              className="mb-4 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-(--color-flagblue)"
+              className="mb-3 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-(--color-flagblue)"
             />
+
+            <div className="mb-4 flex flex-wrap gap-2">
+              {unpublishedStatusFilterOptions.map((option) => {
+                const active = unpublishedStatusFilters.has(option.value);
+                return (
+                  <button
+                    key={option.value}
+                    type="button"
+                    aria-pressed={active}
+                    onClick={() => toggleUnpublishedStatusFilter(option.value)}
+                    className={`rounded-full border px-3 py-1.5 text-xs font-medium uppercase tracking-[0.1em] transition ${
+                      active
+                        ? "border-(--color-flagblue) bg-(--color-flagblue) text-white"
+                        : "border-gray-200 bg-white text-gray-600 hover:border-(--color-flagblue) hover:text-(--color-flagblue)"
+                    }`}
+                  >
+                    {option.label} ({unpublishedStatusCounts[option.value]})
+                  </button>
+                );
+              })}
+            </div>
 
             <div className="max-h-[60vh] overflow-y-auto rounded-lg border border-gray-100">
               <table className="w-full text-left text-sm">
@@ -1908,6 +1965,29 @@ export default function AdminDashboard() {
                 </label>
               </div>
             )}
+          </section>
+
+          <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">
+            <h2 className="mb-4 text-xs font-normal uppercase tracking-[0.2em] text-(--color-wikicrimson)">
+              Spotify
+            </h2>
+
+            <label className="block">
+              <span className="mb-1 block text-[10px] font-normal uppercase tracking-[0.18em] text-gray-400">
+                Spotify Artist ID
+              </span>
+
+              <input
+                value={form.spotify ?? ""}
+                onChange={(event) => updateForm("spotify", event.target.value)}
+                placeholder="2sSqkk6j5gRa7MzeQqMfIN"
+                className={inputClass}
+              />
+            </label>
+
+            <p className="mt-2 text-xs text-gray-400">
+              The artist ID from open.spotify.com/artist/&lt;id&gt; — a full URL is fine too. Saved with the rest of the profile below.
+            </p>
           </section>
 
           <section className="rounded-xl border border-gray-100 bg-white p-5 shadow-sm">

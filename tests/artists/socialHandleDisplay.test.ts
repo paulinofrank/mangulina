@@ -3,8 +3,11 @@ import test from "node:test";
 
 import {
   getFacebookDisplay,
+  getSpotifyEmbedUrl,
+  getSpotifyUrl,
   getWebsiteUrl,
   getYoutubeUrl,
+  normalizeSpotifyArtistId,
   normalizeYoutubeDisplay,
 } from "../../src/lib/artistSocialLinks";
 
@@ -76,4 +79,25 @@ test("a Facebook vanity name is shown and a numeric id is not", () => {
 test("a website keeps its scheme, or is given one", () => {
   assert.equal(getWebsiteUrl("https://olgalara.com"), "https://olgalara.com");
   assert.equal(getWebsiteUrl("www.alfareros.do"), "https://www.alfareros.do");
+});
+
+test("a bare Spotify artist id round-trips to its URLs", () => {
+  const id = "3nlpTZci9O5W8RsNoNH559";
+  assert.equal(normalizeSpotifyArtistId(id), id);
+  assert.equal(getSpotifyUrl(id), `https://open.spotify.com/artist/${id}`);
+  assert.equal(getSpotifyEmbedUrl(id), `https://open.spotify.com/embed/artist/${id}?theme=0`);
+});
+
+test("a full Spotify artist URL pasted into the admin is still understood", () => {
+  assert.equal(
+    normalizeSpotifyArtistId("https://open.spotify.com/artist/3nlpTZci9O5W8RsNoNH559"),
+    "3nlpTZci9O5W8RsNoNH559",
+  );
+});
+
+test("no Spotify id means no link and no widget, never a guess", () => {
+  assert.equal(normalizeSpotifyArtistId(null), null);
+  assert.equal(normalizeSpotifyArtistId("not-an-id"), null);
+  assert.equal(getSpotifyUrl(null), null);
+  assert.equal(getSpotifyEmbedUrl(""), null);
 });

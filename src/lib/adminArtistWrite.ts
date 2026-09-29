@@ -39,6 +39,7 @@ export type ArtistForm = {
   facebook: string;
   instagram: string;
   youtube: string;
+  spotify: string;
   gender: string;
   disambiguation: string;
   wikidata_id: string;
@@ -112,6 +113,7 @@ export function buildArtistWrite(form: ArtistForm) {
     facebook: nullable(form.facebook),
     instagram: nullable(form.instagram),
     youtube: nullable(form.youtube),
+    spotify: nullable(form.spotify),
 
     gender: nullable(form.gender),
     disambiguation: nullable(form.disambiguation),

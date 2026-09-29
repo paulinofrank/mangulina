@@ -14,6 +14,7 @@
  *              never claimed a vanity name.
  *   website    the exception: it keeps its scheme, because there the value is
  *              a URL and not an identifier.
+ *   spotify    the bare 22-character artist ID from open.spotify.com/artist/<id>.
  *
  * The functions still accept full URLs, because the admin lets an editor paste
  * one and nothing should break if they do.
@@ -141,5 +142,31 @@ export function getFacebookDisplay(value: string | null | undefined) {
 export function getInstagramUrl(value: string | null | undefined) {
   const username = normalizeSocialUsername(value);
   return username ? `https://www.instagram.com/${username}` : null;
+}
+
+/**
+ * Tolerates a pasted full artist URL the same way the other normalizers do,
+ * even though the stored value is meant to be the bare ID.
+ */
+export function normalizeSpotifyArtistId(value: string | null | undefined) {
+  if (!value) return null;
+
+  const cleanValue = value.trim();
+  if (!cleanValue) return null;
+
+  const fromUrl = cleanValue.match(/open\.spotify\.com\/artist\/([A-Za-z0-9]{22})/i);
+  if (fromUrl) return fromUrl[1];
+
+  return /^[A-Za-z0-9]{22}$/.test(cleanValue) ? cleanValue : null;
+}
+
+export function getSpotifyUrl(value: string | null | undefined) {
+  const id = normalizeSpotifyArtistId(value);
+  return id ? `https://open.spotify.com/artist/${id}` : null;
+}
+
+export function getSpotifyEmbedUrl(value: string | null | undefined) {
+  const id = normalizeSpotifyArtistId(value);
+  return id ? `https://open.spotify.com/embed/artist/${id}?theme=0` : null;
 }
 

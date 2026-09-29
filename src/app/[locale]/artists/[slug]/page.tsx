@@ -10,6 +10,7 @@ import MainWrapper from "@/components/layout/MainWrapper";
 import ArtistAwardsSection from "@/components/organisms/ArtistAwardsSection";
 import ArtistFactsCard from "@/components/organisms/ArtistFactsCard";
 import ArtistDiscographyAccordion from "@/components/organisms/ArtistDiscographyAccordion";
+import ArtistSpotifyEmbed from "@/components/organisms/ArtistSpotifyEmbed";
 import ArtistInterviewsCarousel from "@/components/organisms/ArtistInterviewsCarousel";
 import BioText from "@/components/molecules/BioText";
 import EditorialDocumentRenderer from "@/components/editorial/EditorialDocumentRenderer";
@@ -257,6 +258,7 @@ export default async function ArtistProfile({ params }: PageProps) {
               </div>
 
               <div className="min-w-0 space-y-6">
+                <ArtistSpotifyEmbed artist={artist} />
                 {discography.length > 0 && (
                   <ArtistDiscographyAccordion releases={discography} />
                 )}
