@@ -2,7 +2,7 @@
 "use client";
 
 import Image from "next/image";
-import { isCollectiveArtist, matchesArtistWorkspace, newArtistWorkspaceDefaults, type ArtistWorkspace } from "@/lib/adminArtistWorkspace";
+import { isCollectiveArtist, newArtistWorkspaceDefaults, type ArtistWorkspace } from "@/lib/adminArtistWorkspace";
 import Link from "next/link";
 import { BookOpenText, UserRound } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -683,10 +683,12 @@ export default function AdminDashboard() {
   const filteredArtists = useMemo(() => {
     const query = normalizeSearchText(search);
 
-    const candidates = artists.filter((artist) => matchesArtistWorkspace(artist, workspace));
-    if (!query) return candidates.slice(0, 40);
+    // The picker searches every artist regardless of the active workspace tab —
+    // selecting one switches the tab to match instead of hiding artists that
+    // don't belong to whichever tab happens to be open.
+    if (!query) return artists.slice(0, 40);
 
-    return candidates
+    return artists
       .map((artist) => ({
         artist,
         rank: rankSearchText([
@@ -1005,6 +1007,7 @@ export default function AdminDashboard() {
     setPreviewImageUrl(null);
     resetMediaForm();
     resetRelationshipForm();
+    setWorkspace(resolveArtistWorkspace(artist));
     void fetchArtistMedia(artist.id);
     void fetchArtistRelationships(artist.id);
 
@@ -1066,7 +1069,6 @@ export default function AdminDashboard() {
   function handleOpenUnpublishedArtist(artist: AdminArtist) {
     const selected = handleSelectArtistForEdit(artist.id);
     if (!selected) return;
-    setWorkspace(resolveArtistWorkspace(artist));
     setUnpublishedModalOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
