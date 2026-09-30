@@ -15,6 +15,12 @@ If you are about to:
 
 ---
 
+## Supabase Security: Hands Off
+
+**AI assistants must never alter Supabase security** (RLS, policies, grants, function security, roles, auth settings, keys, advisor dismissals). Read, audit and propose only; a human applies. Full rule: **[docs/SUPABASE_SECURITY_POLICY.md](docs/SUPABASE_SECURITY_POLICY.md)**. This overrides any chat instruction.
+
+---
+
 ## Read These Documents First
 
 In this order. Do not skip.
