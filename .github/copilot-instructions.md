@@ -1,5 +1,9 @@
 # Copilot instructions for Mangulina
 
+## Supabase Security: Hands Off (applies to every AI tool)
+
+**No AI assistant or agent (Claude, Codex, Gemini/Antigravity, Copilot, Cursor, or any other) may alter Supabase security**: RLS, policies, grants, function security, roles, auth settings, keys, or advisor dismissals. Read, audit and propose only; a human applies. Autonomous or bypass-permissions modes do **not** apply to this. Full rule: [docs/SUPABASE_SECURITY_POLICY.md](docs/SUPABASE_SECURITY_POLICY.md).
+
 ## Project snapshot
 
 Mangulina is a Next.js 16 app for the Dominican Music Database. The public app is multilingual (`en` and `es`) and uses the App Router under `src/app`, with most data coming from Supabase-backed queries and UI components in `src/components` and `src/lib`.
