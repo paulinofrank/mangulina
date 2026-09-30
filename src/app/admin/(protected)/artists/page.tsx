@@ -614,8 +614,11 @@ export default function AdminDashboard() {
   const [unpublishedModalOpen, setUnpublishedModalOpen] = useState(false);
   const [unpublishedSearch, setUnpublishedSearch] = useState("");
   const [unpublishedStatusFilters, setUnpublishedStatusFilters] = useState<Set<UnpublishedStatusCategory>>(new Set());
+  const [unpublishedActiveIndex, setUnpublishedActiveIndex] = useState(-1);
   const artistPickerRef = useRef<HTMLDivElement>(null);
   const artistSearchInputRef = useRef<HTMLInputElement>(null);
+  const unpublishedSearchInputRef = useRef<HTMLInputElement>(null);
+  const unpublishedRowRef = useRef<HTMLTableRowElement>(null);
   const activeArtistOptionRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
 
@@ -844,6 +847,17 @@ export default function AdminDashboard() {
   useEffect(() => {
     activeArtistOptionRef.current?.scrollIntoView({ block: "nearest" });
   }, [activeArtistIndex]);
+
+  useEffect(() => {
+    unpublishedRowRef.current?.scrollIntoView({ block: "nearest" });
+  }, [unpublishedActiveIndex]);
+
+  useEffect(() => {
+    if (unpublishedModalOpen) {
+      unpublishedSearchInputRef.current?.focus();
+      setUnpublishedActiveIndex(-1);
+    }
+  }, [unpublishedModalOpen]);
 
   useEffect(() => {
     return () => {
@@ -1234,6 +1248,34 @@ export default function AdminDashboard() {
       if (!artistPickerOpen || !filteredArtists.length) return;
       event.preventDefault();
       setActiveArtistIndex((current) => current <= 0 ? 0 : current - 1);
+    }
+  }
+
+  function handleUnpublishedModalKeyDown(event: React.KeyboardEvent) {
+    if (event.target !== unpublishedSearchInputRef.current) return;
+    if (event.key === "Tab") return;
+    if (event.key === "Escape") {
+      event.preventDefault();
+      setUnpublishedModalOpen(false);
+      return;
+    }
+    if (event.key === "Enter") {
+      if (unpublishedActiveIndex >= 0 && unpublishedActiveIndex < filteredUnpublishedArtists.length) {
+        event.preventDefault();
+        handleOpenUnpublishedArtist(filteredUnpublishedArtists[unpublishedActiveIndex]);
+      }
+      return;
+    }
+    if (event.key === "ArrowDown") {
+      if (!filteredUnpublishedArtists.length) return;
+      event.preventDefault();
+      setUnpublishedActiveIndex((current) => current < 0 ? 0 : Math.min(current + 1, filteredUnpublishedArtists.length - 1));
+      return;
+    }
+    if (event.key === "ArrowUp") {
+      if (!filteredUnpublishedArtists.length) return;
+      event.preventDefault();
+      setUnpublishedActiveIndex((current) => current <= 0 ? 0 : current - 1);
     }
   }
 
@@ -1697,13 +1739,6 @@ export default function AdminDashboard() {
               </button>
             </div>
 
-            <input
-              value={unpublishedSearch}
-              onChange={(event) => setUnpublishedSearch(event.target.value)}
-              placeholder="Filter by name..."
-              className="mb-3 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-(--color-flagblue)"
-            />
-
             <div className="mb-4 flex flex-wrap gap-2">
               {unpublishedStatusFilterOptions.map((option) => {
                 const active = unpublishedStatusFilters.has(option.value);
@@ -1725,6 +1760,16 @@ export default function AdminDashboard() {
               })}
             </div>
 
+            <input
+              ref={unpublishedSearchInputRef}
+              autoFocus
+              value={unpublishedSearch}
+              onChange={(event) => setUnpublishedSearch(event.target.value)}
+              onKeyDown={handleUnpublishedModalKeyDown}
+              placeholder="Filter by name..."
+              className="mb-3 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm outline-none focus:border-(--color-flagblue)"
+            />
+
             <div className="max-h-[60vh] overflow-y-auto rounded-lg border border-gray-100">
               <table className="w-full text-left text-sm">
                 <thead className="sticky top-0 bg-gray-50 text-xs uppercase tracking-wide text-gray-500">
@@ -1737,16 +1782,23 @@ export default function AdminDashboard() {
                 </thead>
                 <tbody>
                   {filteredUnpublishedArtists.length ? (
-                    filteredUnpublishedArtists.map((artist) => (
-                      <tr key={artist.id} className="border-t border-gray-100 last:border-b-0">
+                    filteredUnpublishedArtists.map((artist, index) => (
+                      <tr
+                        key={artist.id}
+                        ref={index === unpublishedActiveIndex ? unpublishedRowRef : null}
+                        onClick={() => handleOpenUnpublishedArtist(artist)}
+                        onMouseEnter={() => setUnpublishedActiveIndex(index)}
+                        onMouseLeave={() => setUnpublishedActiveIndex(-1)}
+                        className={`border-t border-gray-100 cursor-pointer transition last:border-b-0 ${
+                          index === unpublishedActiveIndex
+                            ? "bg-(--color-flagblue)/5"
+                            : "hover:bg-gray-50"
+                        }`}
+                      >
                         <td className="px-3 py-2">
-                          <button
-                            type="button"
-                            onClick={() => handleOpenUnpublishedArtist(artist)}
-                            className="text-left font-medium text-(--color-flagblue) hover:text-(--color-wikicrimson) hover:underline"
-                          >
+                          <span className="font-medium text-(--color-flagblue)">
                             {artist.name}
-                          </button>
+                          </span>
                         </td>
                         <td className="px-3 py-2 text-gray-600">
                           {artist.has_image ? "Yes" : "No"}
