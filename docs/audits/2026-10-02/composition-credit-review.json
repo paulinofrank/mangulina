@@ -1,0 +1,248 @@
+[
+  {
+    "workId": "4a1fc0e5-72c7-45bd-9bbc-f083b63e6b48",
+    "title": "Bendita tu luz",
+    "credits": [
+      {
+        "id": "1d9db01e-07f2-4a9c-8557-5efb67c1718f",
+        "work_id": "4a1fc0e5-72c7-45bd-9bbc-f083b63e6b48",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null
+      },
+      {
+        "id": "d79deb0a-ab77-4c36-8165-cb0315c504d3",
+        "work_id": "4a1fc0e5-72c7-45bd-9bbc-f083b63e6b48",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null
+      }
+    ],
+    "recordingIds": [
+      "42cb1560-b66f-44c7-9589-923ff46346eb"
+    ]
+  },
+  {
+    "workId": "8106ef2c-b9ac-43c7-9635-7847631bda42",
+    "title": "Esto es vida",
+    "credits": [
+      {
+        "id": "27244f0f-101c-4b73-bef0-162e52811d8c",
+        "work_id": "8106ef2c-b9ac-43c7-9635-7847631bda42",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null
+      },
+      {
+        "id": "96954099-2ed2-423b-a21e-d9506cd9d541",
+        "work_id": "8106ef2c-b9ac-43c7-9635-7847631bda42",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null
+      }
+    ],
+    "recordingIds": [
+      "ef96fa78-56b4-4882-8e57-d29e06ecc815"
+    ]
+  },
+  {
+    "workId": "cb02b449-cc26-4f6a-a916-e41b786eacd1",
+    "title": "Esto es vida (bachata remix)",
+    "credits": [
+      {
+        "id": "cd0f734e-d395-445d-9131-36b30dc09ae4",
+        "work_id": "cb02b449-cc26-4f6a-a916-e41b786eacd1",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null
+      },
+      {
+        "id": "eefd9178-f403-4a76-9b3e-31b4619d2685",
+        "work_id": "cb02b449-cc26-4f6a-a916-e41b786eacd1",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null
+      }
+    ],
+    "recordingIds": [
+      "6f771abf-1f01-4b65-af59-083bb789e6b8"
+    ]
+  },
+  {
+    "workId": "06cd00cf-7e18-408f-b5ae-e5222e4befeb",
+    "title": "Gracias a la vida",
+    "credits": [
+      {
+        "id": "c585b580-82f5-4a7b-8d48-6a425af7a7d9",
+        "work_id": "06cd00cf-7e18-408f-b5ae-e5222e4befeb",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null
+      },
+      {
+        "id": "e4da5a07-e2f5-43a1-8a67-a6473640ac0e",
+        "work_id": "06cd00cf-7e18-408f-b5ae-e5222e4befeb",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null
+      }
+    ],
+    "recordingIds": [
+      "5e90a8a4-4412-4045-8bb5-b73ed9946534"
+    ]
+  },
+  {
+    "workId": "e958d69d-652e-4965-a687-9c05ab34e709",
+    "title": "Si no te hubieras ido",
+    "credits": [
+      {
+        "id": "fb1ce4ac-6b5e-4990-ac57-9db728e3d3e5",
+        "work_id": "e958d69d-652e-4965-a687-9c05ab34e709",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null
+      },
+      {
+        "id": "76fc3cc4-7764-4d5d-ad62-9d98903d54a3",
+        "work_id": "e958d69d-652e-4965-a687-9c05ab34e709",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null
+      }
+    ],
+    "recordingIds": [
+      "13d4ae21-e062-4c02-8b97-2b8351805ab9"
+    ]
+  },
+  {
+    "workId": "d641d2fd-41cd-4314-bfaf-6665d5c84de4",
+    "title": "Woman del Callao",
+    "credits": [
+      {
+        "id": "a5a96ae9-ba4a-403f-89dd-0eb41fc59862",
+        "work_id": "d641d2fd-41cd-4314-bfaf-6665d5c84de4",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null
+      },
+      {
+        "id": "5febe593-796d-4635-8ebe-55b27005acd5",
+        "work_id": "d641d2fd-41cd-4314-bfaf-6665d5c84de4",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null
+      }
+    ],
+    "recordingIds": [
+      "4fc9d66f-caf3-40f6-a25e-6cc25539560c"
+    ]
+  }
+]

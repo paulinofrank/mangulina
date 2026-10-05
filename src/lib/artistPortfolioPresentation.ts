@@ -12,6 +12,30 @@ export type GroupedPortfolio<T extends GroupablePortfolioRecording> = {
   recordings: T[];
 };
 
+type PortfolioAttribution = GroupablePortfolioRecording & {
+  recordingArtistId?: string | null;
+  performers: { artistId: string | null; artistName: string | null; creditedAs: string | null }[];
+};
+
+/** Filter versions individually, then recompute each group's role union. */
+export function externalPortfolioWorks<T extends PortfolioAttribution>(
+  works: GroupedPortfolio<T>[], artistId: string, artistName: string,
+): GroupedPortfolio<T>[] {
+  const sameName = (name: string | null) => Boolean(name?.trim()) &&
+    name!.trim().localeCompare(artistName.trim(), undefined, { sensitivity: "base" }) === 0;
+  return works.flatMap((work) => {
+    const recordings = work.recordings.filter((recording) => {
+      if (recording.recordingArtistId === artistId) return false;
+      if (recording.performers.some((performer) => performer.artistId === artistId ||
+        (!performer.artistId && sameName(performer.creditedAs || performer.artistName)))) return false;
+      return recording.performers.some((performer) =>
+        performer.artistId !== artistId && Boolean(performer.creditedAs?.trim() || performer.artistName?.trim()));
+    });
+    return recordings.length ? [{ ...work, recordings,
+      roles: [...new Set(recordings.flatMap((recording) => recording.roles))] }] : [];
+  });
+}
+
 export function comparePortfolioRecordings(a: PortfolioSortFields, b: PortfolioSortFields) {
   return (
     (a.recordingYear ?? Number.MAX_SAFE_INTEGER) - (b.recordingYear ?? Number.MAX_SAFE_INTEGER) ||

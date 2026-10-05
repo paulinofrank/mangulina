@@ -1,0 +1,10 @@
+{
+  "httpStatus": 200,
+  "ok": true,
+  "revalidated": {
+    "artists": 2,
+    "songs": 20,
+    "releases": 2,
+    "allArtists": false
+  }
+}

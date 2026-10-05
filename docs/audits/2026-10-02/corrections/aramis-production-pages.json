@@ -1,0 +1,119 @@
+{
+  "verifiedAt": "2026-10-03T14:07:29.663Z",
+  "deploymentId": "dpl_kLcYt2KJxgp4cJGH5LFCL9ZJFHGU",
+  "checks": [
+    {
+      "url": "https://www.mangulina.do/es/songs/felicidades-tony-seval",
+      "httpStatus": 200,
+      "h1": "Felicidadespor Carlos Manuel El Zafiro",
+      "title": "Felicidades - Información de la canción",
+      "correctArtist": "Carlos Manuel El Zafiro",
+      "sharedRelease": false
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/el-motor-tony-seval",
+      "httpStatus": 200,
+      "h1": "El motorpor Aramis Camilo",
+      "title": "El motor - Información de la canción",
+      "correctArtist": "Aramis Camilo",
+      "sharedRelease": false
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/a-nadie-le-importa-tony-seval",
+      "httpStatus": 200,
+      "h1": "A nadie le importapor Carlos Manuel El Zafiro",
+      "title": "A nadie le importa - Información de la canción",
+      "correctArtist": "Carlos Manuel El Zafiro",
+      "sharedRelease": false
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/ven-llevame-contigo-tony-seval",
+      "httpStatus": 200,
+      "h1": "Ven llévame contigopor Aramis Camilo",
+      "title": "Ven llévame contigo - Información de la canción",
+      "correctArtist": "Aramis Camilo",
+      "sharedRelease": false
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/porque-tu-me-gustas-tony-seval",
+      "httpStatus": 200,
+      "h1": "Porque tú me gustaspor Carlos Manuel El Zafiro",
+      "title": "Porque tú me gustas - Información de la canción",
+      "correctArtist": "Carlos Manuel El Zafiro",
+      "sharedRelease": false
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/el-alicate-tony-seval",
+      "httpStatus": 200,
+      "h1": "El alicatepor Aramis Camilo",
+      "title": "El alicate - Información de la canción",
+      "correctArtist": "Aramis Camilo",
+      "sharedRelease": false
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/hello-tony-seval",
+      "httpStatus": 200,
+      "h1": "Hellopor Aramis Camilo",
+      "title": "Hello - Información de la canción",
+      "correctArtist": "Aramis Camilo",
+      "sharedRelease": false
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/un-poco-mas-tony-seval",
+      "httpStatus": 200,
+      "h1": "Un poco máspor Carlos Manuel El Zafiro",
+      "title": "Un poco más - Información de la canción",
+      "correctArtist": "Carlos Manuel El Zafiro",
+      "sharedRelease": false
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/el-candado-del-amor-tony-seval",
+      "httpStatus": 200,
+      "h1": "El candado del amorpor Aramis Camilo",
+      "title": "El candado del amor - Información de la canción",
+      "correctArtist": "Aramis Camilo",
+      "sharedRelease": false
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/y-tu-no-correspondes-tony-seval",
+      "httpStatus": 200,
+      "h1": "Y tú no correspondespor Carlos Manuel El Zafiro",
+      "title": "Y tú no correspondes - Información de la canción",
+      "correctArtist": "Carlos Manuel El Zafiro",
+      "sharedRelease": false
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/tu-mi-cigarrillo-tony-seval",
+      "httpStatus": 200,
+      "h1": "Tú mi cigarrillopor Aramis Camilo",
+      "title": "Tú mi cigarrillo - Información de la canción",
+      "correctArtist": "Aramis Camilo",
+      "sharedRelease": false
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/el-cheque-tony-seval",
+      "httpStatus": 200,
+      "h1": "El chequepor Carlos Manuel El Zafiro",
+      "title": "El cheque - Información de la canción",
+      "correctArtist": "Carlos Manuel El Zafiro",
+      "sharedRelease": false
+    },
+    {
+      "url": "https://www.mangulina.do/es/releases/la-combinacion-perfecta-tony-seval",
+      "httpStatus": 200,
+      "h1": "La combinación perfecta",
+      "title": "La combinación perfecta - Compilación de Aramis Camilo & La Organización Secreta · El Zafiro Carlos Manuel & Orquesta · Tony Seval",
+      "correctArtist": null,
+      "sharedRelease": true
+    },
+    {
+      "url": "https://www.mangulina.do/releases/la-combinacion-perfecta-tony-seval",
+      "httpStatus": 200,
+      "h1": "La combinación perfecta",
+      "title": "La combinación perfecta - Compilation by Aramis Camilo & La Organización Secreta · El Zafiro Carlos Manuel & Orquesta · Tony Seval",
+      "correctArtist": null,
+      "sharedRelease": true
+    }
+  ],
+  "failures": []
+}

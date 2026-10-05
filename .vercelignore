@@ -1,0 +1,34 @@
+# Deploy application sources and assets; exclude local audit and tooling data.
+.git
+.next
+.vercel
+node_modules
+.env*
+.claude
+.instagram-profile
+.tmp
+tmp
+backups
+_discography_backup_*
+docs
+# Only exclude root tooling data; keep src/app/api/admin/analytics/data.
+/data
+ingest
+logs
+manifests
+output
+outputs
+research
+scratch
+steps
+supabase
+tests
+tools
+UNUSED
+*.log
+*.tsbuildinfo
+*.xlsx
+*resume.json
+scripts/*
+!scripts/dev-watchpack.cjs
+!scripts/i18n-audit.mjs

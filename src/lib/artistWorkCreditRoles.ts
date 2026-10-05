@@ -9,9 +9,6 @@ export const ARTIST_WORK_CREDIT_ROLES = [
   "arranger",
   "orchestrator",
   "conductor",
-  "musician",
-  "session_musician",
-  "instrumentalist",
   "engineer",
   "recording_engineer",
   "mixing_engineer",
@@ -21,11 +18,6 @@ export const ARTIST_WORK_CREDIT_ROLES = [
   "mastering",
   "beat_programmer",
   "remixer",
-  "lead_performer",
-  "performer",
-  "featured_performer",
-  "guest_performer",
-  "vocalist",
 ] as const;
 
 const allowedRoles = new Set<string>(ARTIST_WORK_CREDIT_ROLES);
@@ -39,6 +31,7 @@ export const RECORDING_PERFORMER_ROLES = [
   "featured_performer",
   "guest_performer",
   "vocalist",
+  "featured_artist",
 ] as const;
 
 export function normalizeArtistWorkCreditRole(role: string): string {

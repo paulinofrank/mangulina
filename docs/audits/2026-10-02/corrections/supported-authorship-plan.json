@@ -1,0 +1,4480 @@
+{
+  "createdAt": "2026-10-02T23:55:09.510Z",
+  "changes": [
+    {
+      "creditId": "27519c88-732f-451e-a683-e4cf4ebe04eb",
+      "workId": "52a2a9fd-5902-41d0-b43f-c998bbf12b5f",
+      "title": "Mambo 23",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mambo-23-juan-luis-guerra/o5zftm31v95aa",
+      "sourceTrack": {
+        "position": 1,
+        "title": "MAMBO 23",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, MainArtist - Janina Rosado, Producer - Juan Luis Guerra Publishing, MusicPublisher",
+          "(C) 2023 Rimas Entertainment LLC. (P) 2023 Rimas Entertainment LLC."
+        ],
+        "duration": "00:03:39"
+      },
+      "releaseId": "df25b67f-f908-4a44-bd52-0f707d92f192",
+      "recordingId": "e030c2ca-7f8c-40c5-99bc-9c697f698744",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, MainArtist"
+      ]
+    },
+    {
+      "creditId": "5a8c4877-67df-494b-89ba-d079ba2f4adf",
+      "workId": "1156c27c-4018-4146-80b8-9275c16a6f09",
+      "title": "DJ Bachata",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/radio-guira-juan-luis-guerra-440/jo8s79jycoqaa",
+      "sourceTrack": {
+        "position": 2,
+        "title": "DJ Bachata",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra Publishing, MusicPublisher",
+          "(C) 2023 Rimas Entertainment LLC. (P) 2023 Rimas Entertainment LLC."
+        ],
+        "duration": "00:03:29"
+      },
+      "releaseId": "2413677d-8837-432f-ae60-98e6996a5d09",
+      "recordingId": "de727476-1225-443f-8d30-dbbf7b978c7d",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer"
+      ]
+    },
+    {
+      "creditId": "60b3cda2-92d7-4dc7-b920-7a70c752fe95",
+      "workId": "d5580b65-adfd-425f-ab00-eea679b0773c",
+      "title": "La noviecita",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/radio-guira-juan-luis-guerra-440/jo8s79jycoqaa",
+      "sourceTrack": {
+        "position": 3,
+        "title": "La Noviecita",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra Publishing, MusicPublisher",
+          "(C) 2023 Rimas Entertainment LLC. (P) 2023 Rimas Entertainment LLC."
+        ],
+        "duration": "00:03:41"
+      },
+      "releaseId": "2413677d-8837-432f-ae60-98e6996a5d09",
+      "recordingId": "76d3af3a-c225-44ef-861c-9a146d668213",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer"
+      ]
+    },
+    {
+      "creditId": "1e12815e-f545-4e08-9018-60279377b36c",
+      "workId": "5f794841-e604-41a6-8020-59d1395be871",
+      "title": "Cositas de amor",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/radio-guira-juan-luis-guerra-440/jo8s79jycoqaa",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Cositas de Amor",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra Publishing, MusicPublisher",
+          "(C) 2023 Rimas Entertainment LLC. (P) 2023 Rimas Entertainment LLC."
+        ],
+        "duration": "00:04:12"
+      },
+      "releaseId": "2413677d-8837-432f-ae60-98e6996a5d09",
+      "recordingId": "5900134a-9d7b-4dee-85ad-3e938f7b2f12",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer"
+      ]
+    },
+    {
+      "creditId": "3583fd96-62bd-4f3f-a998-6f73231c3d09",
+      "workId": "0f1010f0-baf8-479a-830e-fbbba4654832",
+      "title": "Como me enamora",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/radio-guira-juan-luis-guerra-440/jo8s79jycoqaa",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Como Me Enamora",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra Publishing, MusicPublisher",
+          "(C) 2023 Rimas Entertainment LLC. (P) 2023 Rimas Entertainment LLC."
+        ],
+        "duration": "00:03:11"
+      },
+      "releaseId": "2413677d-8837-432f-ae60-98e6996a5d09",
+      "recordingId": "7bac75d1-86c6-4b37-81fe-c66969721901",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer"
+      ]
+    },
+    {
+      "creditId": "81dbd2d5-3d3f-413b-ba87-0335d5aa782b",
+      "workId": "cde1334b-62fb-4b65-83d7-95a90e3a5d89",
+      "title": "Te invito a un blues",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/radio-guira-juan-luis-guerra-440/jo8s79jycoqaa",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Te invito a un Blues",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra Publishing, MusicPublisher",
+          "(C) 2023 Rimas Entertainment LLC. (P) 2023 Rimas Entertainment LLC."
+        ],
+        "duration": "00:03:09"
+      },
+      "releaseId": "2413677d-8837-432f-ae60-98e6996a5d09",
+      "recordingId": "b59f0933-a835-4ca2-941b-7279add80ad6",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer"
+      ]
+    },
+    {
+      "creditId": "f637602a-1d48-4a1d-927f-1e7e624efd31",
+      "workId": "948d30b2-ef23-4b37-aed4-6271cda1b306",
+      "title": "Siempre queda el amor",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/siempre-queda-el-amor-pedro-guerra-juan-luis-guerra-440/jvov1jswskuba",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Siempre Queda El Amor",
+        "artist": "",
+        "credits": [
+          "PEDRO GUERRA, MainArtist, Producer - Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer, Arranger - Pablo Cebrian, Producer - Francis Hernández, Arranger - Allan Leschhorn, RecordingEngineer - Janina Rosado, ProductionCoordinator - Iñaki de las Cuevas, Mixer - Julio Sangrador, MasteringEngineer - Pedro Manuel Guerra Mansito, Lyricist",
+          "(P) 2024 Altafonte"
+        ],
+        "duration": "00:02:43"
+      },
+      "releaseId": "d9b20a7f-324c-4f86-a6db-c37a95e07c4b",
+      "recordingId": "2bd08384-4600-4f40-b4e7-43bf69effbe1",
+      "authors": [
+        "Juan Luis Guerra, Composer, Arranger",
+        "Pedro Manuel Guerra Mansito, Lyricist"
+      ]
+    },
+    {
+      "creditId": "5590c9d3-cf6f-4cae-ae2b-49d2e64972fb",
+      "workId": "54b42c98-0288-47b0-ada2-cffc7ba73620",
+      "title": "Guavaberry",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Guavaberry",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1986 Karen Records Inc"
+        ],
+        "duration": "00:04:20"
+      },
+      "releaseId": "4477d996-ed02-45b9-9baa-8b54f94fcf8f",
+      "recordingId": "8fb3095a-b5fc-455a-bf82-cb6e95c14356",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "3d838e8f-898f-4577-9720-3f6c3634175b",
+      "workId": "d620a579-dfd4-448e-8e4e-50238a5b6a7c",
+      "title": "Tú",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Tú",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1986 Karen Records Inc"
+        ],
+        "duration": "00:03:53"
+      },
+      "releaseId": "4477d996-ed02-45b9-9baa-8b54f94fcf8f",
+      "recordingId": "f0491fa4-53f5-4d5e-8cb9-9789a50c6e6f",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "33312c6f-58d3-48b1-bd7a-082ce7b7098b",
+      "workId": "a3e40dbb-2a81-46de-af0e-4c3d931db0c7",
+      "title": "Amor de conuco",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Amor de Conuco",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1986 Karen Records Inc"
+        ],
+        "duration": "00:03:25"
+      },
+      "releaseId": "4477d996-ed02-45b9-9baa-8b54f94fcf8f",
+      "recordingId": "aa802e13-5b41-41bc-a30d-4d810b8b0358",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "7be912f6-4197-4e07-bd6b-22418f5b0526",
+      "workId": "4439cea3-39c4-4a2a-8edb-94d3cf61b39b",
+      "title": "No me acostumbro",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+      "sourceTrack": {
+        "position": 4,
+        "title": "No Me Acostumbro",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1986 Karen Records Inc"
+        ],
+        "duration": "00:04:43"
+      },
+      "releaseId": "4477d996-ed02-45b9-9baa-8b54f94fcf8f",
+      "recordingId": "1fdbe702-2444-422e-a3b7-483af87a2381",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "fe5e2293-441b-41b9-b406-e237b1dda7bb",
+      "workId": "bf4487e9-a870-455c-83c4-efd14a52e9ba",
+      "title": "Me enamoro de ella",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Me Enamoro de Ella",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1986 Karen Records Inc"
+        ],
+        "duration": "00:04:17"
+      },
+      "releaseId": "4477d996-ed02-45b9-9baa-8b54f94fcf8f",
+      "recordingId": "6a6a683e-22be-4cdc-9a4e-6180c7eb60da",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "c38db1ce-8dd9-494e-8dfc-1c7f32cef176",
+      "workId": "0657df99-e0b3-49da-8e5c-cea6582b271e",
+      "title": "¡Ay! Mujer",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Ay! Mujer",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1986 Karen Records Inc"
+        ],
+        "duration": "00:04:08"
+      },
+      "releaseId": "4477d996-ed02-45b9-9baa-8b54f94fcf8f",
+      "recordingId": "b4cddae2-f3ec-45c2-83c6-dde5493633d2",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "8007ae99-1867-4a89-97ac-d86bb31b2cee",
+      "workId": "ce97ff9a-6c56-4500-9352-8fa122e9b152",
+      "title": "Amigos",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Amigos",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1986 Karen Records Inc"
+        ],
+        "duration": "00:04:40"
+      },
+      "releaseId": "4477d996-ed02-45b9-9baa-8b54f94fcf8f",
+      "recordingId": "2a15ddda-8ae3-4fdb-b034-13dccfb7da56",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "425af603-e3a8-40a2-ad7e-2ca3e44fb7e5",
+      "workId": "a75869a5-7074-4d19-b581-d719e0223088",
+      "title": "Rock-A-Fiesta",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Rock-a-Fiesta",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1986 Karen Records Inc"
+        ],
+        "duration": "00:03:46"
+      },
+      "releaseId": "4477d996-ed02-45b9-9baa-8b54f94fcf8f",
+      "recordingId": "5145515c-a6df-4b59-8be9-0677ced9eb1a",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "75913eba-6205-4e2c-9f52-a2310f0f9a95",
+      "workId": "21d50159-02a5-41f9-8f78-8dd8c4ddebae",
+      "title": "Por eso ahora",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Por Eso Ahora",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1985 Karen Records Inc"
+        ],
+        "duration": "00:03:22"
+      },
+      "releaseId": "23d9596d-10b6-4deb-9d0c-48de00846db1",
+      "recordingId": "805979cc-2add-4919-8b64-1615b2328dbf",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "27882d55-7fc7-4e59-a6ce-783e58cdcec2",
+      "workId": "f1402b97-b947-4b71-a53e-ad6ef213c811",
+      "title": "Ella dice",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Ella Dice",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1985 Karen Records Inc"
+        ],
+        "duration": "00:03:31"
+      },
+      "releaseId": "23d9596d-10b6-4deb-9d0c-48de00846db1",
+      "recordingId": "ac93f31e-6376-4777-9c4e-50b2950a4f8c",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "64d3245a-a2a8-4249-867f-f7d84a7a5c31",
+      "workId": "29e31b2a-efe8-46a9-8f9f-91aad7d81696",
+      "title": "Yo vivo enamorao",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Yo Vivo Enamorao",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1985 Karen Records Inc"
+        ],
+        "duration": "00:04:59"
+      },
+      "releaseId": "23d9596d-10b6-4deb-9d0c-48de00846db1",
+      "recordingId": "9fb197bd-5d96-408f-a978-86e6fabc3f7b",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "2b83d781-aa43-41f2-bfd5-0098d706ff6d",
+      "workId": "40d40ac5-be1d-4c1d-ac0b-e12120e46b56",
+      "title": "Si tú te vas",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Si Tú Te Vas",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1985 Karen Records Inc"
+        ],
+        "duration": "00:03:48"
+      },
+      "releaseId": "23d9596d-10b6-4deb-9d0c-48de00846db1",
+      "recordingId": "36b13fcd-36e5-4e3c-9567-e1d97911544b",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "3d40ba11-7b9a-453f-b918-c0b3692d8a16",
+      "workId": "205614da-ef21-46f3-9b55-312ed8f51f07",
+      "title": "Elena",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Elena",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1985 Karen Records Inc"
+        ],
+        "duration": "00:04:00"
+      },
+      "releaseId": "23d9596d-10b6-4deb-9d0c-48de00846db1",
+      "recordingId": "1df2c683-442d-479b-936c-0f5d68bd1bb4",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "16efbc76-008b-4ae3-a10f-74c41fda1222",
+      "workId": "1fabbe9b-838c-4020-a906-18638d73ba5f",
+      "title": "Santiago en coche",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Santiago en Coche",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - BMI, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1985 Karen Records Inc"
+        ],
+        "duration": "00:04:00"
+      },
+      "releaseId": "23d9596d-10b6-4deb-9d0c-48de00846db1",
+      "recordingId": "9867f816-d969-4e66-b856-4be6bb26a0cf",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "ca739919-a63f-401a-afd8-75fae874ac02",
+      "workId": "1272bb16-5a74-4d4b-80ec-500d276f67bc",
+      "title": "Rosalía",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Rosalía",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer",
+          "(P) 1990 Karen Publishing Company"
+        ],
+        "duration": "00:03:26"
+      },
+      "releaseId": "03881911-7c01-46f3-aa78-8ad7a86324fc",
+      "recordingId": "93d477a6-f3b8-4da9-97ff-d89bd26fa518",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "816285ac-2706-4b5e-b082-6271971306a0",
+      "workId": "e06f9c01-c887-42f9-abea-2abf3bf40e3f",
+      "title": "Como abeja al panal",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Como Abeja al Panal",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer",
+          "(P) 1990 Karen Publishing Company"
+        ],
+        "duration": "00:04:05"
+      },
+      "releaseId": "03881911-7c01-46f3-aa78-8ad7a86324fc",
+      "recordingId": "91e6d835-c2e2-47e0-a901-4163d5585aea",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "9dd901e2-d6c3-4f26-b085-9ad6d0c0144d",
+      "workId": "9a4234e8-40d6-42b7-922c-b9de91618648",
+      "title": "Carta de amor",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Carta de Amor",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer",
+          "(P) 1990 Karen Publishing Company"
+        ],
+        "duration": "00:04:39"
+      },
+      "releaseId": "03881911-7c01-46f3-aa78-8ad7a86324fc",
+      "recordingId": "8a12d6eb-3b6f-4696-a18d-1563f5266e94",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "e8ae1eb6-6ee4-4b0f-b1fa-3dc514c2e8ce",
+      "workId": "0ba9de7b-0a58-4d5e-8a52-a0a52a11be71",
+      "title": "Estrellitas y duendes",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Estrellitas y Duendes",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer",
+          "(P) 1990 Karen Publishing Company"
+        ],
+        "duration": "00:04:26"
+      },
+      "releaseId": "03881911-7c01-46f3-aa78-8ad7a86324fc",
+      "recordingId": "1c1db7c0-56ae-4efe-bbae-8168c9e8be2e",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "60e19811-a4a2-437d-a0db-180e30ae95ae",
+      "workId": "6c803245-b9ea-4ac7-8a21-c30b6eadf6fe",
+      "title": "A pedir su mano",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/prive-juan-luis-guerra-440/wo32u7jgdj08a",
+      "sourceTrack": {
+        "position": 3,
+        "title": "A pedir su mano (Versión Privé)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist - Janina Rosado, Producer, Chorus - Adam Ayan, MasteringEngineer - JLG Studio, Studio - Roger Zayas, Chorus - Juan Rizek, Chorus - Lea Lignazzi, ComposerLyricist",
+          "℗ 2020 Juan Luis Guerra, Distributed By UMG Recordings, Inc."
+        ],
+        "duration": "00:03:35"
+      },
+      "releaseId": "4afb2859-1850-4643-8b61-f231c8b920a5",
+      "recordingId": "2f1095cb-a45c-4f55-b0d5-c2d55b1a1576",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist",
+        "Lea Lignazzi, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "3b0d7912-efda-44e7-ac29-08e1b50ae3c4",
+      "workId": "7680e803-aa3f-466d-b711-98c0a5112f1f",
+      "title": "La bilirrubina",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+      "sourceTrack": {
+        "position": 6,
+        "title": "La Bilirrubina",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer",
+          "(P) 1990 Karen Publishing Company"
+        ],
+        "duration": "00:04:05"
+      },
+      "releaseId": "03881911-7c01-46f3-aa78-8ad7a86324fc",
+      "recordingId": "2c20f83b-9569-4313-b5b6-9dfeffda6553",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "c7d6ac4e-bcea-473b-92eb-8c2561540f3c",
+      "workId": "0b9bbec0-3854-4474-a397-750535207dc8",
+      "title": "Burbujas de amor",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Burbujas de Amor",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer",
+          "(P) 1990 Karen Publishing Company"
+        ],
+        "duration": "00:04:10"
+      },
+      "releaseId": "03881911-7c01-46f3-aa78-8ad7a86324fc",
+      "recordingId": "f518f60e-a1b8-449c-80a0-ab51973308dc",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "a8ca9b90-7120-41c9-b1d4-02ffee911d5d",
+      "workId": "d895bb41-0710-432b-ad0a-165a6d8147b1",
+      "title": "Bachata rosa",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Bachata Rosa",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer",
+          "(P) 1990 Karen Publishing Company"
+        ],
+        "duration": "00:04:17"
+      },
+      "releaseId": "03881911-7c01-46f3-aa78-8ad7a86324fc",
+      "recordingId": "fd627df2-acfb-4eae-9258-69a23dcb1ff4",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "71180e5d-1eb9-4a83-9729-917786b0aca5",
+      "workId": "6d9c9568-e692-4248-9efa-65357d7b793d",
+      "title": "Reforéstame",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Reforéstame",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer",
+          "(P) 1990 Karen Publishing Company"
+        ],
+        "duration": "00:04:07"
+      },
+      "releaseId": "03881911-7c01-46f3-aa78-8ad7a86324fc",
+      "recordingId": "9f8d4411-8179-4c46-b174-cfb27ee90c4d",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "8308fbe0-ecbc-4978-9570-e5d7cb413dd6",
+      "workId": "2b955185-840f-43fa-9946-84826f397edc",
+      "title": "Acompáñeme civil",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+      "sourceTrack": {
+        "position": 10,
+        "title": "Acompáñeme Civil",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer",
+          "(P) 1990 Karen Publishing Company"
+        ],
+        "duration": "00:04:59"
+      },
+      "releaseId": "03881911-7c01-46f3-aa78-8ad7a86324fc",
+      "recordingId": "7ed22ae7-8c28-4a4e-86fd-9c3bf46fb06f",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "437ffedd-ca42-4b65-9561-cfd3b0ee000b",
+      "workId": "d3d7bd03-4ab5-4d99-9ed2-4b4d844531fb",
+      "title": "Bachata en Fukuoka",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/bachata-en-fukuoka-juan-luis-guerra-440/5099963118056",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Bachata En Fukuoka",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, Composer, Author - Ronnie Torres, StudioPersonnel, Recording Engineer, Mix Engineer - Allan Leschhorn, StudioPersonnel, Recording Engineer - Janina Rosado, StudioPersonnel, Production Coordinator, Programmer, Unknown, Other - Adam Ayan, StudioPersonnel, Mastering Engineer",
+          "℗ 2010 Juan Luis Guerra"
+        ],
+        "duration": "00:03:10"
+      },
+      "releaseId": "afc2f8b9-697b-4245-b38a-d2a2a0306899",
+      "recordingId": "5112e5c3-52e2-42cc-a813-45fb2768fde6",
+      "authors": [
+        "Juan Luis Guerra, Producer, Composer, Author"
+      ]
+    },
+    {
+      "creditId": "46124bcb-3884-4f27-8622-1a960b3d4e3c",
+      "workId": "15ff5285-440d-4d67-b2a7-4e6e55a49932",
+      "title": "Visa para un sueño",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/ojala-que-llueva-cafe-juan-luis-guerra/bbm6pk6o65zrb",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Visa Para un Sueño",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, MainArtist, Composer",
+          "(P) 1989 Karen Records Inc"
+        ],
+        "duration": "00:03:28"
+      },
+      "releaseId": "15141961-b981-4d5e-a3ce-4a3717407c34",
+      "recordingId": "a68d97b9-df0a-4a3a-8453-a2d7b07a34d7",
+      "authors": [
+        "Juan Luis Guerra, MainArtist, Composer"
+      ]
+    },
+    {
+      "creditId": "99de8046-03e6-4fb7-84fd-29d30395c98c",
+      "workId": "69f07598-ccf8-43da-90c3-841bd58e69c9",
+      "title": "Ojalá que llueva café",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/prive-juan-luis-guerra-440/wo32u7jgdj08a",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Ojalá que llueva café (Versión Privé)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist - Janina Rosado, Producer - Allan Leschhorn, RecordingEngineer, MixingEngineer - Adam Ayan, MasteringEngineer - JLG Studio, Studio",
+          "℗ 2020 Juan Luis Guerra, Distributed By UMG Recordings, Inc."
+        ],
+        "duration": "00:03:49"
+      },
+      "releaseId": "4afb2859-1850-4643-8b61-f231c8b920a5",
+      "recordingId": "cd747321-d32c-4a17-a5b6-de06d3baa674",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "3a807959-b9b9-4705-af3e-24844b12333a",
+      "workId": "2aed0a43-8cb1-44b3-8ecf-45b5e84e4bba",
+      "title": "Razones",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/ojala-que-llueva-cafe-juan-luis-guerra/bbm6pk6o65zrb",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Razones",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, MainArtist, Composer",
+          "(P) 1989 Karen Records Inc"
+        ],
+        "duration": "00:03:59"
+      },
+      "releaseId": "15141961-b981-4d5e-a3ce-4a3717407c34",
+      "recordingId": "5ef0bd32-1337-47f4-b1e6-2d2c5810e1a2",
+      "authors": [
+        "Juan Luis Guerra, MainArtist, Composer"
+      ]
+    },
+    {
+      "creditId": "8d63248e-6621-4987-a174-eaa70397d4dc",
+      "workId": "6e5d3fc5-e0b0-4c8b-8d7f-cc13db77b5de",
+      "title": "De tu boca",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/ojala-que-llueva-cafe-juan-luis-guerra/bbm6pk6o65zrb",
+      "sourceTrack": {
+        "position": 4,
+        "title": "De Tu Boca",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, MainArtist, Composer",
+          "(P) 1989 Karen Records Inc"
+        ],
+        "duration": "00:04:41"
+      },
+      "releaseId": "15141961-b981-4d5e-a3ce-4a3717407c34",
+      "recordingId": "9b1e0adb-066b-439a-b4e1-7777a31a0548",
+      "authors": [
+        "Juan Luis Guerra, MainArtist, Composer"
+      ]
+    },
+    {
+      "creditId": "93a8863d-1205-4336-911b-6c4ab8c566df",
+      "workId": "95c96cc0-130e-4405-b6ac-8978905408d2",
+      "title": "La gallera",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/ojala-que-llueva-cafe-juan-luis-guerra/bbm6pk6o65zrb",
+      "sourceTrack": {
+        "position": 5,
+        "title": "La Gallera",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, MainArtist, Composer",
+          "(P) 1989 Karen Records Inc"
+        ],
+        "duration": "00:03:55"
+      },
+      "releaseId": "15141961-b981-4d5e-a3ce-4a3717407c34",
+      "recordingId": "8573f647-a979-437a-8e42-03e281ec9677",
+      "authors": [
+        "Juan Luis Guerra, MainArtist, Composer"
+      ]
+    },
+    {
+      "creditId": "1f3eb619-f3de-406a-8738-08f846b5816c",
+      "workId": "bd0be7f5-497f-4840-bb2c-02268bb7d075",
+      "title": "Reina mía",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/ojala-que-llueva-cafe-juan-luis-guerra/bbm6pk6o65zrb",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Reina Mía",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, MainArtist, Composer",
+          "(P) 1989 Karen Records Inc"
+        ],
+        "duration": "00:04:04"
+      },
+      "releaseId": "15141961-b981-4d5e-a3ce-4a3717407c34",
+      "recordingId": "a9cc928b-4d6c-47fd-9870-6ca12fc13388",
+      "authors": [
+        "Juan Luis Guerra, MainArtist, Composer"
+      ]
+    },
+    {
+      "creditId": "41758fc1-7c56-4aca-b8a7-6661c5ab20a9",
+      "workId": "3adeed3f-de3b-46ff-874a-6c6a4f1b4756",
+      "title": "Ángel para una tambora",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/ojala-que-llueva-cafe-juan-luis-guerra/bbm6pk6o65zrb",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Ángel Para una Tambora",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, MainArtist, Composer",
+          "(P) 1989 Karen Records Inc"
+        ],
+        "duration": "00:03:19"
+      },
+      "releaseId": "15141961-b981-4d5e-a3ce-4a3717407c34",
+      "recordingId": "faf64741-7ec6-4add-875c-007a4aaf85ef",
+      "authors": [
+        "Juan Luis Guerra, MainArtist, Composer"
+      ]
+    },
+    {
+      "creditId": "a6792991-cb07-4fc4-9f81-ea0a81e6bfe5",
+      "workId": "ee0cad87-a725-426b-940f-adcb172826ba",
+      "title": "Capitán Avispa Main Theme",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Capitán Avispa main theme",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:52"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "d4dd66f3-21db-4f9f-adbd-59da642c3a41",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "c9643e06-2cb1-46bf-91f2-01b12fb06d39",
+      "workId": "8e35c1ec-c8db-4a2b-b890-a794622c7465",
+      "title": "Bobby Flashington El volador TV",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Bobby Flashington El volador TV",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:21"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "53cff5bf-8091-443f-a3f2-d38fae826832",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "9bd18745-cfb1-4503-837c-daa39ff0d9db",
+      "workId": "687f39ee-640f-43fb-841a-ca9c5d39a6ec",
+      "title": "Lo Piken Bank",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Lo Piken Bank",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:04"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "76af8a49-a215-491f-b98e-a40b423f5fde",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "c2394ed7-2442-4135-b0dd-b09252830292",
+      "workId": "21e33509-5d76-44a4-854c-ed250a40563b",
+      "title": "Fuerte y valiente nunca miente",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Fuerte y valiente nunca miente",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:21"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "85fc93e9-2872-465a-a575-9b0bc737d171",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "0af538cc-a6b7-45a7-a884-b9e8e7ab96f0",
+      "workId": "5970abfa-13ef-4821-9b86-27a99803660a",
+      "title": "La trompeta real",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 5,
+        "title": "La trompeta real",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:27"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "62bf7ed1-09ca-43c5-867d-c8f723ca3359",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "bd5a098a-1f9b-40f1-96fc-b821253cf7ea",
+      "workId": "5d257f0e-13a0-435d-808d-b1ac1866e880",
+      "title": "Merengue de armadura",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Merengue de armadura",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:38"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "ff8ec461-4b27-407c-9d1f-5ac049d2370d",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "9e93279c-a9c5-451a-82ef-e692e8d14071",
+      "workId": "e2177fa2-24aa-41af-93c1-72a3ac95b79b",
+      "title": "Puasón tropical chic",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Puasón tropical chic",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:03"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "b7830cda-a032-4c2a-9fa9-01c27a19fe4c",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "ff156414-50ae-4240-a061-3837a8ee5aae",
+      "workId": "dbbee52b-fff5-4a37-84df-77bd1dd9f8c2",
+      "title": "Entrada al palacio",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Entrada al palacio",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:55"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "0cdb4b43-856d-4ddf-b0b4-c76724015409",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "bef606a8-5ddb-4c4b-8641-a4976cd85b48",
+      "workId": "60b2d272-03f5-436c-8469-1e76b765c0c4",
+      "title": "Canon de la reina",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 10,
+        "title": "Canon de la reina",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:39"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "16de9e80-b026-4c1a-a3fa-a88b92be05b3",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "4169e720-eae8-48d0-83f4-c830995b64ac",
+      "workId": "873a395c-8492-490a-bfcf-62b05040636d",
+      "title": "Señorita",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 11,
+        "title": "Señorita",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Lyricist, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:04:09"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "61bb3f2c-d4b6-4845-be57-fdd3f860906e",
+      "authors": [
+        "Juan Luis Guerra, Composer, Lyricist, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "e183f73a-fe70-4a2c-9389-c527fbe4f5a5",
+      "workId": "873a395c-8492-490a-bfcf-62b05040636d",
+      "title": "Señorita",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 11,
+        "title": "Señorita",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Lyricist, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:04:09"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "61bb3f2c-d4b6-4845-be57-fdd3f860906e",
+      "authors": [
+        "Juan Luis Guerra, Composer, Lyricist, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "a8108f6f-f452-405e-a52c-f0aa9cbcd660",
+      "workId": "d42cfd6a-207d-4e12-a061-59f98229a426",
+      "title": "Capitán Avispa vals",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 12,
+        "title": "Capitán Avispa vals",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:48"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "b40f972d-fdcf-4a96-8876-715938438b0e",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "c152bd6c-61c2-4c98-b227-315069d7f00f",
+      "workId": "014ce46d-229b-41e2-9a70-aceedd4e254e",
+      "title": "Punzón no, Puasón",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 13,
+        "title": "Punzón no, Puasón",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:53"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "cfa6e702-fbc6-4275-9403-5a5d005f6613",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "f474ed10-de53-4774-a65d-ffcc714fd0f8",
+      "workId": "44500898-816d-4247-b9fd-79cbcea9c344",
+      "title": "El baile de los zánganos",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 14,
+        "title": "El baile de los zánganos",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Lyricist, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:25"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "a9cce3c9-5c3a-48eb-9449-4cd8c89d2844",
+      "authors": [
+        "Juan Luis Guerra, Composer, Lyricist, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "996ff335-16df-4cd6-ade8-68da2b3a697e",
+      "workId": "44500898-816d-4247-b9fd-79cbcea9c344",
+      "title": "El baile de los zánganos",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 14,
+        "title": "El baile de los zánganos",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Lyricist, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:25"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "a9cce3c9-5c3a-48eb-9449-4cd8c89d2844",
+      "authors": [
+        "Juan Luis Guerra, Composer, Lyricist, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "fd932dab-d47b-4d6c-a499-67a495b8d8cb",
+      "workId": "9affd596-c1a2-43be-9350-df21ace00727",
+      "title": "Sargento Picadura Main Theme",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 16,
+        "title": "Sargento Picadura Main Theme",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:24"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "9c26549b-3c14-4555-a466-bb6d344c02dd",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "69847390-4b24-4db6-8a89-db8e7e13abff",
+      "workId": "86930099-6355-403c-8c99-91d05d3572a7",
+      "title": "Yo sé dónde está la trompeta",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 17,
+        "title": "Yo sé dónde está la trompeta",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:45"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "56ae482b-9bf8-473d-960a-9bcef6868e8a",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "5546ddd7-2422-47df-b754-517f7c7fad60",
+      "workId": "b2b59416-2536-4941-8598-7459bc77d533",
+      "title": "¿A cuál zona? ¡A todas!",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 18,
+        "title": "¿A cuál zona? ¡A todas!",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:14"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "c3aa7467-91dc-4a1f-b19c-d9773b09d598",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "126d3867-478d-48b1-bf7d-0991a6320868",
+      "workId": "cb912dbc-4b19-476d-bcef-53e3b998dbc4",
+      "title": "Jacques Puasón main theme",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 19,
+        "title": "Jacques Puasón main theme",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Lyricist, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:44"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "342f6c0f-8af7-4366-9a4c-db043c1e386c",
+      "authors": [
+        "Juan Luis Guerra, Composer, Lyricist, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "cad0aa3b-2328-4c9b-92e7-2993d0946813",
+      "workId": "cb912dbc-4b19-476d-bcef-53e3b998dbc4",
+      "title": "Jacques Puasón main theme",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 19,
+        "title": "Jacques Puasón main theme",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Lyricist, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:44"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "342f6c0f-8af7-4366-9a4c-db043c1e386c",
+      "authors": [
+        "Juan Luis Guerra, Composer, Lyricist, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "6a5a8701-37d7-4c18-b99d-968a0e38c848",
+      "workId": "206ae73d-6ce2-4f57-b23e-e0c7099f3f7e",
+      "title": "Recoja la galleta",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 20,
+        "title": "Recoja la galleta",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:45"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "f81383fc-bd29-4754-b62d-df068160600a",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "04739517-e42c-4856-8233-f18b8b7b1f10",
+      "workId": "1b96549c-ac81-4ae5-a6df-1f9d692f49ff",
+      "title": "Emperador",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 21,
+        "title": "Emperador",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:59"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "77590990-6536-4fcc-81d1-656780b04676",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "ae55b5ed-9369-4818-8b76-abdb04112405",
+      "workId": "b4fd0581-c308-41e8-ac9f-28a68b8b890f",
+      "title": "Picadura y Ximena",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 22,
+        "title": "Picadura y Ximena",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:46"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "361af0c6-6f0f-4933-8274-cfcbb7d3dd14",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "fe82db71-303b-48a8-9422-842739baba0e",
+      "workId": "fa2f3ebe-63bc-4597-81cc-f447553a5a33",
+      "title": "Extractor 440",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 24,
+        "title": "Extractor 440",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:02:13"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "5e582fae-29ba-4691-969b-a4f7b9af2c75",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "399b1282-3147-4393-86e2-72a5f9e5cc3c",
+      "workId": "7f597d03-244c-4730-b5d2-fc4f35ca5880",
+      "title": "Capitán Avispa blues",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 25,
+        "title": "Capitán Avispa blues",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:26"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "d672d861-78c4-4fb2-ad92-f8b8f0a1f555",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "5452bc03-2226-4ec8-9b00-0240383886d5",
+      "workId": "e285ff3d-f796-4cb9-b0bb-afe75cfc2beb",
+      "title": "El vals de las mandevillas",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 26,
+        "title": "El vals de las mandevillas",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:58"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "1c31beae-7e3e-44d9-8efb-3b78fa75b11f",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "da98ae36-f342-45b4-bf56-9027c08505dc",
+      "workId": "27d4b3b3-7620-479d-91fc-142854873b62",
+      "title": "Hazlo mentir",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 27,
+        "title": "Hazlo mentir",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:27"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "24abbf1d-99db-4097-a74a-af5e2041df2c",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "b1800b74-739f-4391-a0da-26bd266a8850",
+      "workId": "f8390e36-4a0f-4286-8cb4-3e9a3775d5fe",
+      "title": "Capitán Electro Beat",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 28,
+        "title": "Capitán electro beat",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:56"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "a60b3e6f-834f-45e1-8a43-4569c9e469b0",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "3b76bbfb-b764-4ef0-8bb1-4b930c70b206",
+      "workId": "de9ddd12-4d37-4b7f-bb4d-486a74645921",
+      "title": "Te fallé papá",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 29,
+        "title": "Te fallé papá",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:23"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "25f459c2-5a7e-4d87-9c0f-50baa9344d0c",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "068883b1-21a2-498c-aad7-f4e6fe8c7ab5",
+      "workId": "e7245186-38e2-44cc-9b17-580ebc7b2c27",
+      "title": "La rendición / Divertimento",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 30,
+        "title": "La rendición / Divertimento",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:02:07"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "1cbfb37c-b849-4a55-ac9e-f2070a7af60d",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "73cfbf49-339f-494e-95a9-b67b78ef9184",
+      "workId": "a6036369-95e4-46fe-901e-5c534489eae2",
+      "title": "Canto de esperanza (piano)",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 31,
+        "title": "Canto de esperanza (Piano)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:02:08"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "64e42133-ca20-41ff-8ccb-5819fa2925ac",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "7a790aed-817d-4496-87a4-fabd543b6b35",
+      "workId": "49a895ca-80e0-4190-b3f6-4b1ed0d3ee05",
+      "title": "Bombo ayuda al Capitán",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 34,
+        "title": "Bombo ayuda al Capitán",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:32"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "9b7e5f1a-ceb4-4e30-a86a-581a5ac2c5a4",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "4d8265fb-3d30-4439-9db1-cdeb60c1fcbc",
+      "workId": "4d78f96f-d289-403f-9aab-3c056be2d2b2",
+      "title": "Red Maluco",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 35,
+        "title": "Red Maluco",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:54"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "39b720f5-e4a6-45c7-b473-31d5508a5a42",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "ab188bb8-bef0-49d9-83a4-f6968a7e8647",
+      "workId": "5d832cfa-fab4-412a-87a1-874cf0b88cb8",
+      "title": "Se te cayó el farolito",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 36,
+        "title": "Se te cayó el farolito",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:00:30"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "6bd0c86a-a6c6-49d6-add9-05a08bc2abe2",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "56cd0de9-9926-40ac-bd5c-4b9fee302177",
+      "workId": "d58f5491-457d-4f21-8328-2f6cadd2b647",
+      "title": "Capitán Avispa vs. Red Maluco",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 37,
+        "title": "Capitán Avispa vs. Red Maluco",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:05"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "980b88d3-d68f-4fb1-8561-2cc6afbd52dc",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "8fa2febd-80cf-4693-a13e-41115c7aa5b0",
+      "workId": "f4439477-aab4-4a1b-9a43-6c2ae3b2118e",
+      "title": "Honda nagal con piedras de jaspe azul",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 38,
+        "title": "Honda nagal con piedras de jaspe azul",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:47"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "356fc8fb-f6f6-48b6-b159-2560ab670e8b",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "48fa9d41-04a6-4a16-9c40-06f1e2cc5ff5",
+      "workId": "3ad6c0ee-4838-44b0-b514-1288bcfdf351",
+      "title": "Vuelo sobre Avispatrópolis",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 39,
+        "title": "Vuelo sobre Avispatrópolis",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:02:14"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "4b3ba861-01e7-459b-8024-d477c7a0ae29",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "119d1ce9-462e-4459-b5ce-c479eadfca01",
+      "workId": "2cfefea8-a928-48e5-a707-b913e6d6a1a0",
+      "title": "La condecoración",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 40,
+        "title": "La Condecoración",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:02:08"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "95b91f9e-8201-4bf4-ad9e-8c836fa10419",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ]
+    },
+    {
+      "creditId": "8752a41f-e199-4908-bd2c-95262d5ef146",
+      "workId": "f221c99b-21c8-4d47-947f-6034f003594e",
+      "title": "Kitipun",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Kitipun",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, BassProgrammer - Allan Leschhorn, RecordingEngineer, MixingEngineer - JLG Estudios, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:36"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "3bccc59f-1abf-43ce-8370-18989a8635fd",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "444b68c6-5b9a-4323-b15c-047449e23ada",
+      "workId": "f221c99b-21c8-4d47-947f-6034f003594e",
+      "title": "Kitipun",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Kitipun",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, BassProgrammer - Allan Leschhorn, RecordingEngineer, MixingEngineer - JLG Estudios, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:36"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "3bccc59f-1abf-43ce-8370-18989a8635fd",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "ccca61ad-82e5-477f-8b8d-9cdf57375e21",
+      "workId": "3229e603-20fa-402c-86ce-e729ca07fac5",
+      "title": "Lámpara pa’ mis pies",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Lámpara Pa' Mis Pies",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, MixingEngineer - JLG Estudios, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:00"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "8a6801fd-04b8-48d3-843b-2cfcbbdc3529",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "aa33c44a-388b-4f4c-80d7-84767c470c7f",
+      "workId": "3229e603-20fa-402c-86ce-e729ca07fac5",
+      "title": "Lámpara pa’ mis pies",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Lámpara Pa' Mis Pies",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, MixingEngineer - JLG Estudios, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:00"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "8a6801fd-04b8-48d3-843b-2cfcbbdc3529",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "e897333a-90ad-416b-af0d-be3fcbe84c1b",
+      "workId": "20a50cdd-f82a-4586-93ba-b3a387a277cb",
+      "title": "Cantando bachata",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Cantando Bachata",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, Composer - Janina Rosado, CoProducer - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:02:59"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "b2a70d7c-1405-4a6c-8f7e-f0a5e828f9ee",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, Composer"
+      ]
+    },
+    {
+      "creditId": "c266c2b8-58ba-46ad-8250-2b8a6d60ea30",
+      "workId": "ccf9bb3b-3990-4b94-aa59-acbd700487f4",
+      "title": "Má pa’lante vive gente",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Má Pa' Lante Vive Gente",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - Gateway Mastering Studios, Other - JLG Studio, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Rubén Toribio, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:19"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "e0fba189-3cd0-439b-980e-b6f0dc1b07e9",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "1a9581fe-1f02-46f4-aeef-06a195db81f8",
+      "workId": "ccf9bb3b-3990-4b94-aa59-acbd700487f4",
+      "title": "Má pa’lante vive gente",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Má Pa' Lante Vive Gente",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - Gateway Mastering Studios, Other - JLG Studio, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Rubén Toribio, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:19"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "e0fba189-3cd0-439b-980e-b6f0dc1b07e9",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "5deba22f-c537-4d5b-b564-c15584581a62",
+      "workId": "19a9607e-8bc2-4c71-99ba-31bf1acd553e",
+      "title": "I Love You More",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 5,
+        "title": "I Love You More",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Adalgisa Pantaleon, Chorus - Jeremias King, BassVocalist - Isidro Bobadilla, Treble",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:16"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "10f90a51-ba8c-4ca1-a7d0-9ff28f31b368",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "d7205663-33c3-4633-864c-b1b2810c9e54",
+      "workId": "19a9607e-8bc2-4c71-99ba-31bf1acd553e",
+      "title": "I Love You More",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 5,
+        "title": "I Love You More",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Adalgisa Pantaleon, Chorus - Jeremias King, BassVocalist - Isidro Bobadilla, Treble",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:16"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "10f90a51-ba8c-4ca1-a7d0-9ff28f31b368",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "e7c4f38c-e79f-40ec-8ba3-8c6978bffd8b",
+      "workId": "5d2654bc-caaa-45a8-8cab-23802c116614",
+      "title": "Corazón enamorado",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Corazón Enamorado",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - Simon Rhodes, RecordingEngineer - JLG Studio, Other - Abbey Road Studio 1, Other - Gateway Mastering Studios, Other - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:09"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "68f0a8b2-bfa4-46f7-908e-42e7e919e6fd",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "ad323007-c6c8-4e14-9755-9467461b1d41",
+      "workId": "5d2654bc-caaa-45a8-8cab-23802c116614",
+      "title": "Corazón enamorado",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Corazón Enamorado",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - Simon Rhodes, RecordingEngineer - JLG Studio, Other - Abbey Road Studio 1, Other - Gateway Mastering Studios, Other - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:09"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "68f0a8b2-bfa4-46f7-908e-42e7e919e6fd",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "57b732b0-61c5-4558-9df7-9af89cd2d6fd",
+      "workId": "2da6c859-1e29-4cfc-94b2-279cddce1a49",
+      "title": "Son a mamá",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Son A Mamá",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Adalgisa Pantaleon, Chorus - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:04"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "1f921fe1-db15-4ce4-8b26-1a619a49b072",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "436a1676-10f8-4acd-83b0-5afbe09cf8f1",
+      "workId": "2da6c859-1e29-4cfc-94b2-279cddce1a49",
+      "title": "Son a mamá",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Son A Mamá",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Adalgisa Pantaleon, Chorus - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:04"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "1f921fe1-db15-4ce4-8b26-1a619a49b072",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "982e0cfc-3707-4ecb-8a86-ff1f3a486821",
+      "workId": "3ef84b70-d4b7-4f5c-9869-f6aa8e58d9d3",
+      "title": "No tiene madre",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 8,
+        "title": "No Tiene Madre",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Abbey Road Studio 1, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Adalgisa Pantaleon, Chorus - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:23"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "1cb6b529-c0f3-4668-b46d-df4f38679b96",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "0b3cabda-8c8b-404c-a6ca-d22d8cca3740",
+      "workId": "3ef84b70-d4b7-4f5c-9869-f6aa8e58d9d3",
+      "title": "No tiene madre",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 8,
+        "title": "No Tiene Madre",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Abbey Road Studio 1, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Adalgisa Pantaleon, Chorus - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:23"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "1cb6b529-c0f3-4668-b46d-df4f38679b96",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "17335608-7c18-4687-b88c-0aa2ace6854e",
+      "workId": "bfb6b4bb-0a79-4f3b-93ac-1db4695f1931",
+      "title": "Me preguntas",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Me Preguntas",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:03"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "e9b118be-c9e5-425c-ab94-1801f3c5e59e",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "7f101b73-b8fc-471d-b1de-09ab1e05904c",
+      "workId": "bfb6b4bb-0a79-4f3b-93ac-1db4695f1931",
+      "title": "Me preguntas",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Me Preguntas",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Gateway Mastering Studios, Other - Juan Rizek, Chorus - Roger Zayas, Chorus - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:03"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "e9b118be-c9e5-425c-ab94-1801f3c5e59e",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "50eae7e5-6b41-451e-8db4-452d6620bb7d",
+      "workId": "3b7fd88d-d054-42aa-ac40-658c9c884b2f",
+      "title": "El primer baile",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 10,
+        "title": "El Primer Baile",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Gateway Mastering Studios, Other - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:31"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "920ec664-b777-46ab-b591-d0f81622dd11",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "d29ed279-23f7-4e60-9d89-729650518b26",
+      "workId": "3b7fd88d-d054-42aa-ac40-658c9c884b2f",
+      "title": "El primer baile",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 10,
+        "title": "El Primer Baile",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist - Janina Rosado, CoProducer, Chorus - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Gateway Mastering Studios, Other - Jeremias King, BassVocalist",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:31"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "920ec664-b777-46ab-b591-d0f81622dd11",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Chorus, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "910b558c-96a5-4989-a1d8-60d1c65b0932",
+      "workId": "c67a8f38-d81c-4e07-b527-be25578650eb",
+      "title": "Merengue de cuna",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 11,
+        "title": "Merengue De Cuna",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Producer, ComposerLyricist - Janina Rosado, CoProducer - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Gateway Mastering Studios, Other",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:02:05"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "f8b0c915-501d-4f76-a7a9-a976d3a72152",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "d2a14d65-110d-480e-928e-cbe7239d5454",
+      "workId": "c67a8f38-d81c-4e07-b527-be25578650eb",
+      "title": "Merengue de cuna",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+      "sourceTrack": {
+        "position": 11,
+        "title": "Merengue De Cuna",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, VocalArranger, Producer, ComposerLyricist - Janina Rosado, CoProducer - Allan Leschhorn, RecordingEngineer, RemixingEngineer - JLG Studio, Other - Gateway Mastering Studios, Other",
+          "℗ 2019 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:02:05"
+      },
+      "releaseId": "b5e676d3-553d-4508-a511-dec6e5cf558c",
+      "recordingId": "f8b0c915-501d-4f76-a7a9-a976d3a72152",
+      "authors": [
+        "Juan Luis Guerra, VocalArranger, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "ba560e52-3829-46ae-8b80-20aa04274338",
+      "workId": "1e8fc32b-3dd0-4106-9aa2-c6e42cb65b62",
+      "title": "Cookies & Cream",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Cookies & Cream (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:29"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "f22d7348-a8be-49a9-80ac-d708a5c53b65",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "ed694f86-d29e-4433-a73c-271fe2636410",
+      "workId": "1e8fc32b-3dd0-4106-9aa2-c6e42cb65b62",
+      "title": "Cookies & Cream",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Cookies & Cream (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:29"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "f22d7348-a8be-49a9-80ac-d708a5c53b65",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "2b9dd686-c781-453c-b349-1ec80b423d7a",
+      "workId": "2f38af99-9f48-493e-92b2-f23ab2b8afea",
+      "title": "Tus besos",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Tus Besos (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:17"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "8410c47c-3b06-459c-8ea9-6c364b4ea407",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "337626fa-bf1f-4538-98a7-8f81f7aa587b",
+      "workId": "2f38af99-9f48-493e-92b2-f23ab2b8afea",
+      "title": "Tus besos",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Tus Besos (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:17"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "8410c47c-3b06-459c-8ea9-6c364b4ea407",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "7b0286ff-7770-46cf-8536-aeb3e13fef5b",
+      "workId": "29fccf82-858e-4be1-a59f-a3505c454102",
+      "title": "Canto a Colombia",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Canto A Colombia (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:11"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "311a8295-8051-4d8c-9571-b662075d85d4",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "6c9f2841-9cd4-4a8f-bfb6-a0af25798629",
+      "workId": "29fccf82-858e-4be1-a59f-a3505c454102",
+      "title": "Canto a Colombia",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Canto A Colombia (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:11"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "311a8295-8051-4d8c-9571-b662075d85d4",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "fc76a6db-8400-42a9-b13d-1d3c2c61445b",
+      "workId": "cc789646-548e-402f-92f3-73d19eaa9ed1",
+      "title": "Todo tiene su hora",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Todo Tiene Su Hora (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:16"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "ba79bc97-1eb7-48cc-ab83-ac6b49f5bac9",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "83ce8be4-8d27-4440-adf0-a2c3945f6ce5",
+      "workId": "cc789646-548e-402f-92f3-73d19eaa9ed1",
+      "title": "Todo tiene su hora",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Todo Tiene Su Hora (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:16"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "ba79bc97-1eb7-48cc-ab83-ac6b49f5bac9",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "13d6a9d7-fc95-44e3-a1fb-0c457bf83381",
+      "workId": "306b25a4-b4a4-4358-aee7-7ec63ae85748",
+      "title": "Dime Nora mía",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Dime Nora Mia (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:07"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "64fce863-9856-42ee-bf3b-a7d9e62e7767",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "f55f5d52-f485-48ce-8f31-5d6834d1f187",
+      "workId": "306b25a4-b4a4-4358-aee7-7ec63ae85748",
+      "title": "Dime Nora mía",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Dime Nora Mia (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:07"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "64fce863-9856-42ee-bf3b-a7d9e62e7767",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "e14268cb-6367-458e-92fb-6de27f8dcb79",
+      "workId": "7e303db2-d70f-4da0-8220-767044f29bb8",
+      "title": "Para que sepas",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Para Que Sepas (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:02:21"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "e7998eb0-bc3e-4b7c-b576-30cb1b5554f3",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "746130c0-294a-40be-85ba-57433f02936d",
+      "workId": "7e303db2-d70f-4da0-8220-767044f29bb8",
+      "title": "Para que sepas",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Para Que Sepas (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:02:21"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "e7998eb0-bc3e-4b7c-b576-30cb1b5554f3",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "62f3c614-4eaf-4a1b-978a-5db313f31d74",
+      "workId": "98e6aadf-a330-4ed0-acfc-e1fc5d334a3e",
+      "title": "El capitán",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 7,
+        "title": "El Capitan (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:13"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "90c95cf8-4062-4a04-a930-905b88260a27",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "6f777d83-5a2d-4868-bf47-b9ee469584ad",
+      "workId": "98e6aadf-a330-4ed0-acfc-e1fc5d334a3e",
+      "title": "El capitán",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 7,
+        "title": "El Capitan (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:13"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "90c95cf8-4062-4a04-a930-905b88260a27",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "286bc109-f147-44ff-a609-5eb621ccef80",
+      "workId": "826a3b17-6bd7-4845-a52e-b2ebfd07bbbc",
+      "title": "Muchachita linda",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Muchachita Linda (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:23"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "0263bf0d-c53b-44e2-9f83-4ab993d5a8fe",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "632b5ea1-8001-48be-a319-c5128fb1d4af",
+      "workId": "826a3b17-6bd7-4845-a52e-b2ebfd07bbbc",
+      "title": "Muchachita linda",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Muchachita Linda (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:23"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "0263bf0d-c53b-44e2-9f83-4ab993d5a8fe",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "0c13af80-ac6e-446d-9ad3-401e4dcabe6a",
+      "workId": "6d6edf16-2f05-4a18-ae68-e686cb438a0f",
+      "title": "Todo pasa",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Todo Pasa (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:11"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "930b53e3-a109-4343-8e18-d9cd07dc223d",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "311ab1a4-78bf-4ecb-84f4-e6390d293f19",
+      "workId": "6d6edf16-2f05-4a18-ae68-e686cb438a0f",
+      "title": "Todo pasa",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Todo Pasa (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:11"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "930b53e3-a109-4343-8e18-d9cd07dc223d",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "4e7d128d-1f67-4994-8459-0ae2291a876a",
+      "workId": "77e81b9d-9fdf-4fa2-9464-a8a16470beed",
+      "title": "De Moca a París",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 10,
+        "title": "De Moca A Paris (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Johnny Ventura, FeaturedArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:09"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "e7dd095b-18e5-4d67-90a1-ff01eb2b0443",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "6c87e147-6b5d-406e-beb6-3f8e34b00aa0",
+      "workId": "77e81b9d-9fdf-4fa2-9464-a8a16470beed",
+      "title": "De Moca a París",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757",
+      "sourceTrack": {
+        "position": 10,
+        "title": "De Moca A Paris (Album Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Johnny Ventura, FeaturedArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist",
+          "℗ 2014 Juan Luis Guerra"
+        ],
+        "duration": "00:03:09"
+      },
+      "releaseId": "42048620-9ff2-4de4-9696-6723d5d31a6e",
+      "recordingId": "e7dd095b-18e5-4d67-90a1-ff01eb2b0443",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "1f708e8e-f1ea-4060-804c-5ce5a2a05062",
+      "workId": "aa5f9d79-cd30-4076-8288-4fd768f1719e",
+      "title": "Areíto",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Areíto",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:01:19"
+      },
+      "releaseId": "177594ff-849e-400e-b315-36f9982461e0",
+      "recordingId": "69d2aa84-7d4c-4c13-bdd0-cb7c3bcb826f",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "6b1e63bc-707d-4ee8-8291-375fa15a12e2",
+      "workId": "fbcb6589-8101-458f-90ac-8b8214b33d84",
+      "title": "El costo de la vida",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+      "sourceTrack": {
+        "position": 2,
+        "title": "El Costo de la Vida",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:04:10"
+      },
+      "releaseId": "177594ff-849e-400e-b315-36f9982461e0",
+      "recordingId": "d32d2277-6d90-4ff7-b614-a252e98d11e8",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "05cc2db5-b1b4-4c04-81e5-785b7dfe9c59",
+      "workId": "3022c30a-f763-4e44-8292-69595f6ce7f9",
+      "title": "Señales de humo",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Señales de Humo",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:05:31"
+      },
+      "releaseId": "177594ff-849e-400e-b315-36f9982461e0",
+      "recordingId": "0f600a5e-7ae9-4db9-a4b8-8f27aef8177d",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "48ab5a3b-9fdd-4fea-9cb6-9a0dc9dfc4ca",
+      "workId": "61094042-5baf-46bf-976b-976fc9dbf774",
+      "title": "Ayer",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Ayer",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:05:04"
+      },
+      "releaseId": "177594ff-849e-400e-b315-36f9982461e0",
+      "recordingId": "35a8f626-423c-47b1-af02-b0da2f22be6e",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "08f338a8-d49d-406c-8f68-eb906ac6d4c6",
+      "workId": "62420b98-ea41-4197-99e9-bf8073fd7df3",
+      "title": "Frío, frío",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Frío Frío",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:04:05"
+      },
+      "releaseId": "177594ff-849e-400e-b315-36f9982461e0",
+      "recordingId": "d6e45a6f-b0f9-4055-b884-5d91ea194bc7",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "1fc2c050-0dfa-482d-8778-62c0209a9c68",
+      "workId": "ec505ad4-726f-47b9-a63f-a11a92265a8c",
+      "title": "Mal de amor",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Mal de Amor",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:03:46"
+      },
+      "releaseId": "177594ff-849e-400e-b315-36f9982461e0",
+      "recordingId": "fef8838b-6b26-4039-8f38-0e74726fc956",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "7943253a-4561-408a-b569-1673b0c6cfff",
+      "workId": "58fbe57f-98f6-4d24-9b50-7bc301543779",
+      "title": "Si saliera petróleo",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Si Saliera Petróleo",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:04:35"
+      },
+      "releaseId": "177594ff-849e-400e-b315-36f9982461e0",
+      "recordingId": "0ce15771-fcc1-48dc-8bb0-712850b799b4",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "208a6f29-e9ab-46ec-b9a7-507aac854f53",
+      "workId": "eac72935-0da3-4007-8381-d3248e5f83e6",
+      "title": "Coronita de flores",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Coronita de Flores",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:04:18"
+      },
+      "releaseId": "177594ff-849e-400e-b315-36f9982461e0",
+      "recordingId": "525a92c8-bae7-4c89-8e84-532e7ed5be2f",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "e30258ac-4a25-4046-9a60-cde06ae38fdd",
+      "workId": "4c1e0dbe-339a-4097-9411-072cb8ab2fed",
+      "title": "Cuando te beso",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+      "sourceTrack": {
+        "position": 10,
+        "title": "Cuando Te Beso",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:03:29"
+      },
+      "releaseId": "177594ff-849e-400e-b315-36f9982461e0",
+      "recordingId": "4c5aa142-f663-4a97-90cc-714de1333096",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "8bfe1244-00ea-4fec-b629-e9de8a3a0cfe",
+      "workId": "12540639-3d96-4e82-91fa-e04792bc0dcf",
+      "title": "Naboria / Daca Mayanimacana",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+      "sourceTrack": {
+        "position": 12,
+        "title": "Naboria Daca Mayanimacana",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:02:25"
+      },
+      "releaseId": "177594ff-849e-400e-b315-36f9982461e0",
+      "recordingId": "11d403ab-018d-4107-9169-b0768d88e464",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "1596d906-c9ff-42a0-9d71-4a74636c940a",
+      "workId": "a738e5c5-07a1-4575-a337-1233d7ce6614",
+      "title": "Mi PC",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Mi PC",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1998 Karen Publishing Company"
+        ],
+        "duration": "00:03:17"
+      },
+      "releaseId": "747e6079-40f1-47f5-af1b-394f8511387d",
+      "recordingId": "ccb37842-091c-48e8-8c51-974db8f5befd",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "3f73391d-0dcd-47ec-aee4-1d5801bdc100",
+      "workId": "d1ebd872-2113-4aeb-87cb-ad30a92db3b3",
+      "title": "Vale la pena",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Vale la Pena",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1998 Karen Publishing Company"
+        ],
+        "duration": "00:03:27"
+      },
+      "releaseId": "747e6079-40f1-47f5-af1b-394f8511387d",
+      "recordingId": "00a20213-4d35-4240-b06c-5a67c210389d",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "3648ee9f-0ec9-4291-9a61-40f4a65a4b42",
+      "workId": "8cda9b06-34e2-406d-8ba8-2685312a9720",
+      "title": "La hormiguita",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+      "sourceTrack": {
+        "position": 3,
+        "title": "La Hormiguita",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1998 Karen Publishing Company"
+        ],
+        "duration": "00:03:04"
+      },
+      "releaseId": "747e6079-40f1-47f5-af1b-394f8511387d",
+      "recordingId": "94e6b280-a522-4fd7-82e5-e920583b8668",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "936036e7-09ac-4662-a069-0f5047a774b5",
+      "workId": "f42b7d74-4023-436b-8b19-a083174f346f",
+      "title": "El Niágara en bicicleta",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+      "sourceTrack": {
+        "position": 5,
+        "title": "El Niágara en Bicicleta",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1998 Karen Publishing Company"
+        ],
+        "duration": "00:04:25"
+      },
+      "releaseId": "747e6079-40f1-47f5-af1b-394f8511387d",
+      "recordingId": "2dd6a6a7-81f2-48d1-bd57-bbd75cc36805",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "60dba44b-af73-471f-adeb-04d3c576b831",
+      "workId": "a2d27df4-18fd-4f1b-b841-9b097590e9bc",
+      "title": "Palomita blanca",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Palomita Blanca",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1998 Karen Publishing Company"
+        ],
+        "duration": "00:03:44"
+      },
+      "releaseId": "747e6079-40f1-47f5-af1b-394f8511387d",
+      "recordingId": "fd8be647-bc76-495c-b4f4-5b6d2d608b31",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "7822d698-eaf3-4f92-af93-07911beeecc9",
+      "workId": "d863f207-31ca-425a-a312-b9e47e711c13",
+      "title": "Testimonio",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Testimonio",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1998 Karen Publishing Company"
+        ],
+        "duration": "00:04:18"
+      },
+      "releaseId": "747e6079-40f1-47f5-af1b-394f8511387d",
+      "recordingId": "df8d22ec-293b-4dc3-870d-d0ccea1aa06f",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "d18ab078-2625-4c64-a663-85b88d748466",
+      "workId": "c4e187bf-8560-4875-960f-9b818f6b54bf",
+      "title": "Amapola",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Amapola",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1998 Karen Publishing Company"
+        ],
+        "duration": "00:03:05"
+      },
+      "releaseId": "747e6079-40f1-47f5-af1b-394f8511387d",
+      "recordingId": "1ba17dad-ae76-429f-9ef9-6c28583e2613",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "c0dadaa1-2b0b-4485-98e3-3597868e4211",
+      "workId": "180c0d46-d94b-4213-9513-38cc50eace61",
+      "title": "El primo",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+      "sourceTrack": {
+        "position": 9,
+        "title": "El Primo",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1998 Karen Publishing Company"
+        ],
+        "duration": "00:03:48"
+      },
+      "releaseId": "747e6079-40f1-47f5-af1b-394f8511387d",
+      "recordingId": "9ab134d4-1ea2-4c16-9600-7fa36b757f6c",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "ddb96805-7918-412d-920f-a765503049b3",
+      "workId": "9e4040d3-0fc2-4eba-a01a-dc1a7b9a3f0d",
+      "title": "Sobremesa",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+      "sourceTrack": {
+        "position": 10,
+        "title": "Sobremesa",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1998 Karen Publishing Company"
+        ],
+        "duration": "00:01:20"
+      },
+      "releaseId": "747e6079-40f1-47f5-af1b-394f8511387d",
+      "recordingId": "a22e8422-b546-420a-8265-2e09964856b6",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ]
+    },
+    {
+      "creditId": "2ee7424f-68f9-478c-8f0c-c0e30a0a6c6f",
+      "workId": "0d99777a-fef3-4917-a128-a7d9781080c6",
+      "title": "Medicine for My Soul",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Medicine For My Soul",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Producer - Roger Zayas-Bazan, BackgroundVocalist - Adalgisa Pantaleon, BackgroundVocalist - Juan Enrique Rizek, BackgroundVocalist - Luis Mansilla, RecordingEngineer - Allan Leschhorn, RecordingEngineer - Ronnie Torres, MixingEngineer - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:16"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "5bd5a921-7b33-40ca-b7ff-c92c4c085432",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "bf17a76c-91a6-4c38-8279-f3a6dc542278",
+      "workId": "0d99777a-fef3-4917-a128-a7d9781080c6",
+      "title": "Medicine for My Soul",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Medicine For My Soul",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Producer - Roger Zayas-Bazan, BackgroundVocalist - Adalgisa Pantaleon, BackgroundVocalist - Juan Enrique Rizek, BackgroundVocalist - Luis Mansilla, RecordingEngineer - Allan Leschhorn, RecordingEngineer - Ronnie Torres, MixingEngineer - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:16"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "5bd5a921-7b33-40ca-b7ff-c92c4c085432",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "2bf644ce-86a5-4e0c-9aa1-3fb3d615035a",
+      "workId": "89187e11-f065-4604-9bf8-d2f03051ef7b",
+      "title": "La travesía",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 2,
+        "title": "La Travesia",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Abednego De Los Santos, BassVocalist - Juan Luis Guerra, Composer, Lyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:25"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "f1a4a262-fd61-4af0-8910-652b203b6655",
+      "authors": [
+        "Juan Luis Guerra, Composer, Lyricist"
+      ]
+    },
+    {
+      "creditId": "020af3d9-696a-482e-9293-4744bc71dc1d",
+      "workId": "89187e11-f065-4604-9bf8-d2f03051ef7b",
+      "title": "La travesía",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 2,
+        "title": "La Travesia",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Abednego De Los Santos, BassVocalist - Juan Luis Guerra, Composer, Lyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:25"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "f1a4a262-fd61-4af0-8910-652b203b6655",
+      "authors": [
+        "Juan Luis Guerra, Composer, Lyricist"
+      ]
+    },
+    {
+      "creditId": "544f7748-5130-4526-9ac7-ce628f022d8d",
+      "workId": "808e3115-c4e5-4d00-b201-800af8072634",
+      "title": "Te contarán",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Te Contaran",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Jeremias King, BassVocalist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:04:05"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "7b97a847-5d31-4917-a000-d9674c6a9272",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "ae40ea36-d27d-4d28-9f3c-7e5abaa7436d",
+      "workId": "808e3115-c4e5-4d00-b201-800af8072634",
+      "title": "Te contarán",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Te Contaran",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Jeremias King, BassVocalist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:04:05"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "7b97a847-5d31-4917-a000-d9674c6a9272",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "35225c13-c532-4742-9d7f-899cff53c296",
+      "workId": "b8a7cd88-4b20-427c-bfd0-b8cbcd0b7927",
+      "title": "Que me des tu cariño",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Que Me Des Tu Cariño",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, MainArtist, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra Bajo Licencia Exclusiva a EMI Music Netherlands BV. All Rights Reserved"
+        ],
+        "duration": "00:03:28"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "683502f6-1cdd-40cd-90ae-3c262314255d",
+      "authors": [
+        "Juan Luis Guerra, MainArtist, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "eb736a7a-1638-475d-88ee-4bdb0afcb646",
+      "workId": "b8a7cd88-4b20-427c-bfd0-b8cbcd0b7927",
+      "title": "Que me des tu cariño",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Que Me Des Tu Cariño",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, MainArtist, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra Bajo Licencia Exclusiva a EMI Music Netherlands BV. All Rights Reserved"
+        ],
+        "duration": "00:03:28"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "683502f6-1cdd-40cd-90ae-3c262314255d",
+      "authors": [
+        "Juan Luis Guerra, MainArtist, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "0f3ac742-193a-41f3-8098-17979eeeabb0",
+      "workId": "994c4b43-34c7-4b0b-a6b9-aeb8f1522912",
+      "title": "Como yo",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Como Yo",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Jeremias King, BassVocalist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:25"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "19e9a1ef-bd96-4463-8bbf-8b2fe261fe03",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "4046e828-ae0e-4515-8ef0-af9265a11faf",
+      "workId": "994c4b43-34c7-4b0b-a6b9-aeb8f1522912",
+      "title": "Como yo",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Como Yo",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Jeremias King, BassVocalist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:25"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "19e9a1ef-bd96-4463-8bbf-8b2fe261fe03",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "cd988803-7a5c-488d-b91d-a371825cd9df",
+      "workId": "7ee63409-ab96-4a00-8a3e-f40cccf3d68c",
+      "title": "Si tú no bailas conmigo",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Si Tu No Bailas Conmigo",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Abednego De Los Santos, BassVocalist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:02:42"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "52854730-7dfb-43e5-8b32-8629575f00ce",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "4f528708-a3ad-4fe3-8646-207c69ec2489",
+      "workId": "7ee63409-ab96-4a00-8a3e-f40cccf3d68c",
+      "title": "Si tú no bailas conmigo",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Si Tu No Bailas Conmigo",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Abednego De Los Santos, BassVocalist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:02:42"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "52854730-7dfb-43e5-8b32-8629575f00ce",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "2d98241b-81df-4f12-8640-dab75f67f36a",
+      "workId": "37b023fe-3894-46b4-8adb-b8fec2ec2ad7",
+      "title": "Solo tengo ojos para ti",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Solo Tengo Ojos Para Ti",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:20"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "fbbc2187-063e-4b49-8b39-72b06b121cc1",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "55ca4719-27d2-4526-9bb1-368ea6efa45a",
+      "workId": "37b023fe-3894-46b4-8adb-b8fec2ec2ad7",
+      "title": "Solo tengo ojos para ti",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Solo Tengo Ojos Para Ti",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:20"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "fbbc2187-063e-4b49-8b39-72b06b121cc1",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "98c0f2c5-ae9d-40c2-be70-76f70f690e88",
+      "workId": "0fc0c31a-dd04-4750-8260-ec9f9f4e28be",
+      "title": "Amores",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Amores",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Abednego De Los Santos, BassVocalist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:25"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "72953b36-4dea-403f-8d4d-27005c7c9f3d",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "13752904-ce06-4859-8484-bb9c8351c740",
+      "workId": "0fc0c31a-dd04-4750-8260-ec9f9f4e28be",
+      "title": "Amores",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Amores",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Abednego De Los Santos, BassVocalist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:25"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "72953b36-4dea-403f-8d4d-27005c7c9f3d",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "0fd246e5-3378-46d2-8110-74c678f6fb3a",
+      "workId": "ae2f61a9-2742-4992-b69c-db0311200264",
+      "title": "Cancioncita de amor",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Cancioncita De Amor",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Abednego De Los Santos, BassVocalist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:48"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "acd92f61-adc2-4470-bc74-2e998c6d973f",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "45ba9bd4-854f-4af9-9427-674167fa879c",
+      "workId": "ae2f61a9-2742-4992-b69c-db0311200264",
+      "title": "Cancioncita de amor",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Cancioncita De Amor",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Abednego De Los Santos, BassVocalist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:48"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "acd92f61-adc2-4470-bc74-2e998c6d973f",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "536d55dd-6ffa-40b7-992f-8b22bdddf0a2",
+      "workId": "fb73cf02-47b7-420f-90bd-9ee5d1e8f028",
+      "title": "Sabia manera",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 10,
+        "title": "Sabia Manera",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Jeremias King, BassVocalist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:56"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "f86d022c-7f07-4aa9-9623-84d64df16ff4",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "ce4ce6b3-0d51-408f-adb3-8d79bd69078e",
+      "workId": "fb73cf02-47b7-420f-90bd-9ee5d1e8f028",
+      "title": "Sabia manera",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 10,
+        "title": "Sabia Manera",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Jeremias King, BassVocalist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:56"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "f86d022c-7f07-4aa9-9623-84d64df16ff4",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "e06d3f7d-4c7f-4558-a891-71ea205a6b41",
+      "workId": "204d27c4-e981-455b-b22b-0c79f8665b0b",
+      "title": "La llave de mi corazón",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 11,
+        "title": "La Llave De Mi Corazon",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Producer - Roger Zayas-Bazan, BackgroundVocalist - Adalgisa Pantaleon, BackgroundVocalist - Juan Enrique Rizek, BackgroundVocalist - Luis Mansilla, RecordingEngineer - Allan Leschhorn, RecordingEngineer - Ronnie Torres, MixingEngineer - Juan Luis Guerra, Composer, Lyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:15"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "7556f332-a821-410c-8df9-c9303f05d289",
+      "authors": [
+        "Juan Luis Guerra, Composer, Lyricist"
+      ]
+    },
+    {
+      "creditId": "52933a42-043b-44aa-8553-0dfe17769405",
+      "workId": "204d27c4-e981-455b-b22b-0c79f8665b0b",
+      "title": "La llave de mi corazón",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 11,
+        "title": "La Llave De Mi Corazon",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Producer - Roger Zayas-Bazan, BackgroundVocalist - Adalgisa Pantaleon, BackgroundVocalist - Juan Enrique Rizek, BackgroundVocalist - Luis Mansilla, RecordingEngineer - Allan Leschhorn, RecordingEngineer - Ronnie Torres, MixingEngineer - Juan Luis Guerra, Composer, Lyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:03:15"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "7556f332-a821-410c-8df9-c9303f05d289",
+      "authors": [
+        "Juan Luis Guerra, Composer, Lyricist"
+      ]
+    },
+    {
+      "creditId": "227d16df-abac-4984-a3b1-a9138ec59c0a",
+      "workId": "f4cc8beb-7e57-424f-98bc-83ec33bed831",
+      "title": "Something Good",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 12,
+        "title": "Something Good",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Chiara Civello, FeaturedArtist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:04:03"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "344e2db9-8a06-455a-8b9c-6cef0dfc90d2",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "5f5ad9ae-2968-4eb9-9000-30f7797cb74c",
+      "workId": "f4cc8beb-7e57-424f-98bc-83ec33bed831",
+      "title": "Something Good",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 12,
+        "title": "Something Good",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Chiara Civello, FeaturedArtist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:04:03"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "344e2db9-8a06-455a-8b9c-6cef0dfc90d2",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "a1fb44d5-4bca-49ff-b58b-0fe01f5d7a93",
+      "workId": "ee7b8145-3086-4553-bb14-c1d2f294d5c1",
+      "title": "A la vera",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 13,
+        "title": "A La Vera",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:02:50"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "19cdd2f3-ac06-4ba5-a55e-398837748b12",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "af4402c8-3371-45a8-bb95-10f85bc572f2",
+      "workId": "ee7b8145-3086-4553-bb14-c1d2f294d5c1",
+      "title": "A la vera",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "sourceTrack": {
+        "position": 13,
+        "title": "A La Vera",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, ComposerLyricist",
+          "℗ 2007 Juan Luis Guerra"
+        ],
+        "duration": "00:02:50"
+      },
+      "releaseId": "15771474-476f-41d8-b9f4-0d93c6396977",
+      "recordingId": "19cdd2f3-ac06-4ba5-a55e-398837748b12",
+      "authors": [
+        "Juan Luis Guerra, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "beb8c097-b2dd-4f32-b7dc-ae4dd886e5cf",
+      "workId": "037a6e15-18f3-45a1-8210-5a19a2a1a1f2",
+      "title": "Soldado",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Soldado",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, Composer - Janina Rosado, Producer, Co-Producer - Studios JLG Santo Domingo, Studio",
+          "℗ 2012 Juan Luis Guerra"
+        ],
+        "duration": "00:03:53"
+      },
+      "releaseId": "26acd2b0-389b-465f-b013-9d3a24108776",
+      "recordingId": "8285e87b-de3d-4f58-b73c-b0859d09a34b",
+      "authors": [
+        "Juan Luis Guerra, Producer, Composer"
+      ]
+    },
+    {
+      "creditId": "333e17a9-f08f-4336-b021-5f5884ab8067",
+      "workId": "037a6e15-18f3-45a1-8210-5a19a2a1a1f2",
+      "title": "Soldado",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Soldado",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:54"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "8285e87b-de3d-4f58-b73c-b0859d09a34b",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "68a65759-62fd-4656-8e59-3af6b2fbe21e",
+      "workId": "8f74081d-f854-4179-ad05-cca5e9216cd6",
+      "title": "Eres",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Eres",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:24"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "1e187ccc-558a-465e-9df4-5bf3c8bcde22",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "3c3c960f-0473-4916-b797-ee636493bfcc",
+      "workId": "8f74081d-f854-4179-ad05-cca5e9216cd6",
+      "title": "Eres",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Eres",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:24"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "1e187ccc-558a-465e-9df4-5bf3c8bcde22",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "46f68fa7-9b9d-47e9-9dd5-0f629c3ca611",
+      "workId": "90d9292d-fd69-4f4a-872f-a77f5905be97",
+      "title": "Los dinteles",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Los Dinteles",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:36"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "7cab7969-d0b3-4b01-91fc-f08ec1c8788c",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "4f2a2c52-150c-4dc5-a036-105af0992f7c",
+      "workId": "90d9292d-fd69-4f4a-872f-a77f5905be97",
+      "title": "Los dinteles",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 3,
+        "title": "Los Dinteles",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:03:36"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "7cab7969-d0b3-4b01-91fc-f08ec1c8788c",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "593df1c8-b5bd-4f62-99e1-45a9a199f49d",
+      "workId": "b676d70c-9de2-41aa-9773-1825aad6e44b",
+      "title": "Gloria",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Gloria",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:04:48"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "98dae7f8-aeb9-43d8-81b0-d297d0bd29bc",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "1d72a021-2679-4df9-9518-e65695ff9468",
+      "workId": "b676d70c-9de2-41aa-9773-1825aad6e44b",
+      "title": "Gloria",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Gloria",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:04:48"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "98dae7f8-aeb9-43d8-81b0-d297d0bd29bc",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "8f3427ce-cbde-4fc8-9b65-b910e433ea2a",
+      "workId": "8b2f817b-f00a-4367-a191-a3dee8362f28",
+      "title": "Mi padre me ama",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Mi Padre Me Ama",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:04:05"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "d8f80f71-8613-4f2c-9de4-1cc9e94c4d62",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "02789607-2e2f-4155-abfe-e028c4989d3b",
+      "workId": "8b2f817b-f00a-4367-a191-a3dee8362f28",
+      "title": "Mi padre me ama",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Mi Padre Me Ama",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:04:05"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "d8f80f71-8613-4f2c-9de4-1cc9e94c4d62",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "0cc0265c-8b6f-48fb-9154-bb4916d6c588",
+      "workId": "cc55d160-6103-4761-a8e2-c0ef262bc19a",
+      "title": "Las avispas",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/prive-juan-luis-guerra-440/wo32u7jgdj08a",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Las avispas (Versión Privé)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist - Janina Rosado, Producer, Chorus - Allan Leschhorn, RecordingEngineer, MixingEngineer - Adam Ayan, MasteringEngineer - JLG Studio, Studio - Roger Zayas, Chorus - Juan Rizek, Chorus",
+          "℗ 2020 Juan Luis Guerra, Distributed By UMG Recordings, Inc."
+        ],
+        "duration": "00:03:28"
+      },
+      "releaseId": "4afb2859-1850-4643-8b61-f231c8b920a5",
+      "recordingId": "05c7bb53-3394-4406-a4cc-0d7ee6fed50a",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "d577299c-9009-4fac-bf13-3155abf23616",
+      "workId": "cc55d160-6103-4761-a8e2-c0ef262bc19a",
+      "title": "Las avispas",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/prive-juan-luis-guerra-440/wo32u7jgdj08a",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Las avispas (Versión Privé)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist - Janina Rosado, Producer, Chorus - Allan Leschhorn, RecordingEngineer, MixingEngineer - Adam Ayan, MasteringEngineer - JLG Studio, Studio - Roger Zayas, Chorus - Juan Rizek, Chorus",
+          "℗ 2020 Juan Luis Guerra, Distributed By UMG Recordings, Inc."
+        ],
+        "duration": "00:03:28"
+      },
+      "releaseId": "4afb2859-1850-4643-8b61-f231c8b920a5",
+      "recordingId": "05c7bb53-3394-4406-a4cc-0d7ee6fed50a",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "ea47656c-b0d0-4c99-b603-b0c12a96cb36",
+      "workId": "89144a52-a9c3-45a9-bdfb-09803f444369",
+      "title": "Tan solo he venido",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Tan Solo He Venido",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:04:08"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "8b18d6d3-ad89-4680-be88-57d6777feea8",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "143135f8-872c-4725-8f68-e70e998fe05c",
+      "workId": "89144a52-a9c3-45a9-bdfb-09803f444369",
+      "title": "Tan solo he venido",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Tan Solo He Venido",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:04:08"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "8b18d6d3-ad89-4680-be88-57d6777feea8",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "b2bb0ed1-07bc-4174-8bb0-bbd78806b300",
+      "workId": "6774bf4c-d876-4f0c-9a8b-58f88f90213f",
+      "title": "Para ti",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Para Ti",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, Composer - Janina Rosado, Producer, Co-Producer - Studios JLG Santo Domingo, Studio",
+          "℗ 2012 Juan Luis Guerra"
+        ],
+        "duration": "00:03:42"
+      },
+      "releaseId": "26acd2b0-389b-465f-b013-9d3a24108776",
+      "recordingId": "52da90ad-1fb5-46ad-90c9-4bb44a742a2f",
+      "authors": [
+        "Juan Luis Guerra, Producer, Composer"
+      ]
+    },
+    {
+      "creditId": "b28f0dc7-013d-49f0-89ee-50c2322b18f1",
+      "workId": "6774bf4c-d876-4f0c-9a8b-58f88f90213f",
+      "title": "Para ti",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Para Ti",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra"
+        ],
+        "duration": "00:03:42"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "52da90ad-1fb5-46ad-90c9-4bb44a742a2f",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "c1570111-db62-403c-9b67-84bbaf40d372",
+      "workId": "59387476-d5ae-4779-8133-75b3e8bf613e",
+      "title": "Extiende tu mano",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Extiende Tu Mano",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:04:11"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "ac7458bd-75f2-4190-a7f9-ff0d626686f7",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "de0be516-f51e-4eb3-9ea8-49ca6ae50629",
+      "workId": "59387476-d5ae-4779-8133-75b3e8bf613e",
+      "title": "Extiende tu mano",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Extiende Tu Mano",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:04:11"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "ac7458bd-75f2-4190-a7f9-ff0d626686f7",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "e2f5948e-4033-48f4-9715-51f89152f3bb",
+      "workId": "b75c5626-897f-4a0b-ac31-3c0967590761",
+      "title": "Aleluya",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 10,
+        "title": "Aleluya",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:02:20"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "ef2ea0f3-8fdb-4fbb-ac98-5334a5e3fa1a",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "ffbd1b48-b62f-4604-bc0c-59066b75dfdf",
+      "workId": "b75c5626-897f-4a0b-ac31-3c0967590761",
+      "title": "Aleluya",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 10,
+        "title": "Aleluya",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:02:20"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "ef2ea0f3-8fdb-4fbb-ac98-5334a5e3fa1a",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "e66bc503-2493-48a6-ae6a-9d95c11d0bd4",
+      "workId": "f551def0-1651-4d06-a1df-afb20dcf50ce",
+      "title": "Canción de sanidad",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 11,
+        "title": "Canción De Sanidad",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:04:37"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "1b11934b-628a-451c-ba3f-189dd62c640a",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "6d3012d4-55e6-4532-9917-e6f2f963ffbf",
+      "workId": "f551def0-1651-4d06-a1df-afb20dcf50ce",
+      "title": "Canción de sanidad",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/para-ti-juan-luis-guerra-440/u8f4aodo95gya",
+      "sourceTrack": {
+        "position": 11,
+        "title": "Canción De Sanidad",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, ComposerLyricist - Studios JLG Santo Domingo, Studio",
+          "℗ 2004 Juan Luis Guerra, Under Exclusive License To UMG Recordings, Inc."
+        ],
+        "duration": "00:04:37"
+      },
+      "releaseId": "2a760f77-e6d0-4292-b49d-e17e79771ad0",
+      "recordingId": "1b11934b-628a-451c-ba3f-189dd62c640a",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "a2b0be4f-87d4-4a76-857a-32117a7b3aa6",
+      "workId": "c4aba5e0-89e8-461c-bf4a-24e525a49362",
+      "title": "El quita pena",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla",
+      "sourceTrack": {
+        "position": 1,
+        "title": "El Quita Pena",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, Composer - Janina Rosado, Producer, Co-Producer - Studios JLG Santo Domingo, Studio",
+          "℗ 2012 Juan Luis Guerra"
+        ],
+        "duration": "00:03:27"
+      },
+      "releaseId": "26acd2b0-389b-465f-b013-9d3a24108776",
+      "recordingId": "7c4ef0bc-db7b-449a-8844-4db91d917171",
+      "authors": [
+        "Juan Luis Guerra, Producer, Composer"
+      ]
+    },
+    {
+      "creditId": "4623a31e-9c3a-4745-bba9-0525b1bf2b20",
+      "workId": "58022396-50b9-43db-a887-9d3b158d21c4",
+      "title": "Viene bajando",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Viene Bajando",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, Composer - Janina Rosado, Producer, Co-Producer - Studios JLG Santo Domingo, Studio",
+          "℗ 2012 Juan Luis Guerra"
+        ],
+        "duration": "00:02:32"
+      },
+      "releaseId": "26acd2b0-389b-465f-b013-9d3a24108776",
+      "recordingId": "6b78ba44-afc4-4098-b146-95a4fb6ba704",
+      "authors": [
+        "Juan Luis Guerra, Producer, Composer"
+      ]
+    },
+    {
+      "creditId": "03e319c5-e0f4-417e-8a6a-1ffc12bca195",
+      "workId": "20f12bb2-159c-4dfe-8233-9251978d08f0",
+      "title": "Son al rey",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Son Al Rey",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, Composer - Ronnie Torres, StudioPersonnel, Mix Engineer - Allan Leschhorn, StudioPersonnel, Recording Engineer - Janina Rosado, Programmer, Producer, Co-Producer - Adam Ayan, StudioPersonnel, Mastering Engineer - Studios JLG Santo Domingo, Studio",
+          "℗ 2012 Juan Luis Guerra"
+        ],
+        "duration": "00:03:26"
+      },
+      "releaseId": "26acd2b0-389b-465f-b013-9d3a24108776",
+      "recordingId": "f421782b-93ea-4e82-93bf-a4b41457c86d",
+      "authors": [
+        "Juan Luis Guerra, Producer, Composer"
+      ]
+    },
+    {
+      "creditId": "d131ad6a-7075-4826-8a87-851765d02abf",
+      "workId": "d9a8351d-2414-41b0-ad09-ac23faefaeb2",
+      "title": "En el cielo no hay hospital",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla",
+      "sourceTrack": {
+        "position": 5,
+        "title": "En El Cielo No Hay Hospital",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, Composer - Janina Rosado, Producer, Co-Producer - Studios JLG Santo Domingo, Studio",
+          "℗ 2012 Juan Luis Guerra"
+        ],
+        "duration": "00:03:09"
+      },
+      "releaseId": "26acd2b0-389b-465f-b013-9d3a24108776",
+      "recordingId": "e63bb06e-36db-46b3-8cee-008e4f158c96",
+      "authors": [
+        "Juan Luis Guerra, Producer, Composer"
+      ]
+    },
+    {
+      "creditId": "ac534cd2-dc24-4263-8196-123e3847244a",
+      "workId": "a934a7f7-acdf-4b48-8e45-3332be02c16d",
+      "title": "Caballo blanco",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Caballo Blanco",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, Composer - Janina Rosado, Producer, Co-Producer - Studios JLG Santo Domingo, Studio",
+          "℗ 2012 Juan Luis Guerra"
+        ],
+        "duration": "00:02:48"
+      },
+      "releaseId": "26acd2b0-389b-465f-b013-9d3a24108776",
+      "recordingId": "698d5287-b01b-43d8-8af8-de82473bdd1f",
+      "authors": [
+        "Juan Luis Guerra, Producer, Composer"
+      ]
+    },
+    {
+      "creditId": "a0652e20-1c9f-44b5-93c8-7ca79202342f",
+      "workId": "6e5986cd-ecfa-4e4f-a673-cd08874977e9",
+      "title": "Mi Jesús",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Mi Jesús",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, Composer - Janina Rosado, Producer, Co-Producer - Studios JLG Santo Domingo, Studio",
+          "℗ 2012 Juan Luis Guerra"
+        ],
+        "duration": "00:03:51"
+      },
+      "releaseId": "26acd2b0-389b-465f-b013-9d3a24108776",
+      "recordingId": "07caf341-6e5e-4aca-9438-7c48a30ec9e4",
+      "authors": [
+        "Juan Luis Guerra, Producer, Composer"
+      ]
+    },
+    {
+      "creditId": "88f789fa-ab73-4960-92b3-6305914c011f",
+      "workId": "10a0112f-12ed-4dac-b592-831bd92b3d90",
+      "title": "Como trompeta en si bemol",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla",
+      "sourceTrack": {
+        "position": 10,
+        "title": "Como Trompeta En Si Bemol",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, Composer - Janina Rosado, Producer, Co-Producer - Studios JLG Santo Domingo, Studio",
+          "℗ 2012 Juan Luis Guerra"
+        ],
+        "duration": "00:03:15"
+      },
+      "releaseId": "26acd2b0-389b-465f-b013-9d3a24108776",
+      "recordingId": "475cd0f2-4d0b-4d3e-9527-8aa94e840f16",
+      "authors": [
+        "Juan Luis Guerra, Producer, Composer"
+      ]
+    },
+    {
+      "creditId": "ffb63707-7c0a-4192-83e4-8ec220655c82",
+      "workId": "c0c09674-e752-4696-a8f7-cc76c1a25474",
+      "title": "Nada me separará",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla",
+      "sourceTrack": {
+        "position": 11,
+        "title": "Nada Me Separara",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Producer, Composer - Janina Rosado, Producer, Co-Producer - Studios JLG Santo Domingo, Studio",
+          "℗ 2012 Juan Luis Guerra"
+        ],
+        "duration": "00:04:10"
+      },
+      "releaseId": "26acd2b0-389b-465f-b013-9d3a24108776",
+      "recordingId": "596a9d07-9e19-42ab-8bf8-9442d16ee053",
+      "authors": [
+        "Juan Luis Guerra, Producer, Composer"
+      ]
+    },
+    {
+      "creditId": "ee87d9b8-5ccc-4c50-af5e-bdb582da9c07",
+      "workId": "a0c51aee-0aff-44f6-8eca-4d7603160d2b",
+      "title": "Donde nacen tus besos",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/prive-juan-luis-guerra-440/wo32u7jgdj08a",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Donde nacen tus besos",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist - Janina Rosado, Producer - Allan Leschhorn, RecordingEngineer, MixingEngineer - Adam Ayan, MasteringEngineer - JLG Studio, Studio",
+          "℗ 2020 Juan Luis Guerra, Distributed By UMG Recordings, Inc."
+        ],
+        "duration": "00:03:26"
+      },
+      "releaseId": "4afb2859-1850-4643-8b61-f231c8b920a5",
+      "recordingId": "c80b3196-1ef7-4f96-a86d-5f2365ea25a8",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "6ea2e79f-c190-453d-8af0-18323982efc1",
+      "workId": "a0c51aee-0aff-44f6-8eca-4d7603160d2b",
+      "title": "Donde nacen tus besos",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/prive-juan-luis-guerra-440/wo32u7jgdj08a",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Donde nacen tus besos",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist - Janina Rosado, Producer - Allan Leschhorn, RecordingEngineer, MixingEngineer - Adam Ayan, MasteringEngineer - JLG Studio, Studio",
+          "℗ 2020 Juan Luis Guerra, Distributed By UMG Recordings, Inc."
+        ],
+        "duration": "00:03:26"
+      },
+      "releaseId": "4afb2859-1850-4643-8b61-f231c8b920a5",
+      "recordingId": "c80b3196-1ef7-4f96-a86d-5f2365ea25a8",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "a0551445-1496-485e-8a71-da4601d1ed8e",
+      "workId": "6c803245-b9ea-4ac7-8a21-c30b6eadf6fe",
+      "title": "A pedir su mano",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/prive-juan-luis-guerra-440/wo32u7jgdj08a",
+      "sourceTrack": {
+        "position": 3,
+        "title": "A pedir su mano (Versión Privé)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist - Janina Rosado, Producer, Chorus - Adam Ayan, MasteringEngineer - JLG Studio, Studio - Roger Zayas, Chorus - Juan Rizek, Chorus - Lea Lignazzi, ComposerLyricist",
+          "℗ 2020 Juan Luis Guerra, Distributed By UMG Recordings, Inc."
+        ],
+        "duration": "00:03:35"
+      },
+      "releaseId": "4afb2859-1850-4643-8b61-f231c8b920a5",
+      "recordingId": "2f1095cb-a45c-4f55-b0d5-c2d55b1a1576",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist",
+        "Lea Lignazzi, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "aca63371-7460-42d7-8e3f-c7ea42aff7ce",
+      "workId": "a90f589a-78e4-455b-af38-1d5a2767bf85",
+      "title": "Pambiche de novia",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/prive-juan-luis-guerra-440/wo32u7jgdj08a",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Pambiche de novia",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist - Janina Rosado, Producer, Chorus - Allan Leschhorn, RecordingEngineer, MixingEngineer - Adam Ayan, MasteringEngineer - JLG Studio, Studio - Roger Zayas, Chorus - Juan Rizek, Chorus",
+          "℗ 2020 Juan Luis Guerra, Distributed By UMG Recordings, Inc."
+        ],
+        "duration": "00:02:43"
+      },
+      "releaseId": "4afb2859-1850-4643-8b61-f231c8b920a5",
+      "recordingId": "c5fdc398-a30e-492d-a50f-c339f5bd8bca",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "f6ecdb68-bc4f-4750-b932-eb94e205f858",
+      "workId": "a90f589a-78e4-455b-af38-1d5a2767bf85",
+      "title": "Pambiche de novia",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/prive-juan-luis-guerra-440/wo32u7jgdj08a",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Pambiche de novia",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist - Janina Rosado, Producer, Chorus - Allan Leschhorn, RecordingEngineer, MixingEngineer - Adam Ayan, MasteringEngineer - JLG Studio, Studio - Roger Zayas, Chorus - Juan Rizek, Chorus",
+          "℗ 2020 Juan Luis Guerra, Distributed By UMG Recordings, Inc."
+        ],
+        "duration": "00:02:43"
+      },
+      "releaseId": "4afb2859-1850-4643-8b61-f231c8b920a5",
+      "recordingId": "c5fdc398-a30e-492d-a50f-c339f5bd8bca",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    },
+    {
+      "creditId": "478ba338-44ac-46ad-a394-bcbecfb6f1ee",
+      "workId": "69f07598-ccf8-43da-90c3-841bd58e69c9",
+      "title": "Ojalá que llueva café",
+      "role": "lyricist",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/prive-juan-luis-guerra-440/wo32u7jgdj08a",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Ojalá que llueva café (Versión Privé)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist - Janina Rosado, Producer - Allan Leschhorn, RecordingEngineer, MixingEngineer - Adam Ayan, MasteringEngineer - JLG Studio, Studio",
+          "℗ 2020 Juan Luis Guerra, Distributed By UMG Recordings, Inc."
+        ],
+        "duration": "00:03:49"
+      },
+      "releaseId": "4afb2859-1850-4643-8b61-f231c8b920a5",
+      "recordingId": "cd747321-d32c-4a17-a5b6-de06d3baa674",
+      "authors": [
+        "Juan Luis Guerra, Producer, ComposerLyricist"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "creditId": "34c5fee6-bbfe-4aef-9ce1-de3be6ca8d09",
+      "workId": "fa577da6-ac56-42a3-84e8-cf339d3142d2",
+      "title": "Si tú me quieres",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/si-tu-me-quieres-fonseca-juan-luis-guerra/fml00t0ggd2pc",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Si Tú Me Quieres",
+        "artist": "",
+        "credits": [
+          "Yoel Henriquez, Composer, Lyricist - Juan Fernando Fonseca, Composer, Lyricist, Producer, Vocal Producer, Recording Engineer, Post-Producer, Performance Arranger - Juan Esteban Aristizabal, Producer, Guitar, Performance Arranger - Charlie Bisharat, Viola, Violin - Sebastian De Peyrecave, Recording Engineer, Post-Producer - Fonseca, MainArtist, AssociatedPerformer, Background Vocal - Juan Luis Guerra, MainArtist, AssociatedPerformer - Allan Leschhorn, Recording Engineer - RICHARD BRAVO, Percussion - Trevor Muzzy, Mixing Engineer - Yadam González, Composer, Lyricist, Producer, Guitar, Bass, Background Vocal, Performance Arranger - Esteban Piñeiro, Mastering Engineer - Kike Cuao, Percussion - Juan Andres Otalora, Performance Arranger - Emiliano Vásquez, A&R Director - Juan Mario Aracil \"Mayito\", Mixing Engineer - Emmanuel Briceño, Piano - Ross Gasworth, Cello - Hermides Taty Manzano, Accordion - Michael Rosario, A&R Coordinator - Fonseca & Juan Luis Guerra, AssociatedPerformer",
+          "(P) 2023 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:24"
+      },
+      "releaseId": "7193b0da-6978-40e4-8967-2b4f9f67087f",
+      "recordingId": "7964060a-af23-48ba-bc73-532754e2a25e",
+      "authors": [
+        "Yoel Henriquez, Composer, Lyricist",
+        "Juan Fernando Fonseca, Composer, Lyricist, Producer, Vocal Producer, Recording Engineer, Post-Producer, Performance Arranger",
+        "Yadam González, Composer, Lyricist, Producer, Guitar, Bass, Background Vocal, Performance Arranger"
+      ]
+    },
+    {
+      "creditId": "0fc92b44-6806-48e8-a9f5-51ec061687af",
+      "workId": "f87d393b-3d94-409c-b71d-c25b813d56b1",
+      "title": "Buscando el mar",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/buscando-el-mar-carlos-vives-juan-luis-guerra-440/d6b9n0bo8skvr",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Buscando el Mar",
+        "artist": "",
+        "credits": [
+          "Carlos Vives, MainArtist, AssociatedPerformer, Vocal, Composer, Lyricist, Performance Arranger - Juan Luis Guerra 4.40, MainArtist, AssociatedPerformer - Carlos Vives & Juan Luis Guerra 4.40, AssociatedPerformer - Andres Leal, Acoustic Guitar, Composer, Lyricist, Performance Arranger, Producer - Juan Luis Guerra, Vocal - Pablo Bernal, Drums - Luis Angel \"El Papa\" Pastor, Bass - Eder Polo, Guacharaca - Darwin Escorcia, AssociatedPerformer, Congas - Kike Cuao, Percussion - Rafael Carrasco, Guiro - Juan De La Cruz \"Chocolate\", Tambourine - Luis Mojica, Congas - Mayte Montero, Bagpipe, Maracas, Tambourine - Daniel Cadena, Electric Guitar - Carlos Ivan Medina, Keyboards - Miguel Rico, Keyboards, Organ, Piano - Janina Rosado, Choir, Piano, Assistant Engineer - Jose Castillo, Electric Guitar - Egidio Cuadrado, Accordion - Christian Camilo Peña, Accordion - margot, Viola, Violin, Performance Arranger - Paola Lecera, Choir - Melissa Mejía Flomin, Choir - Rashid Zawady, Choir - Alfredo \"El Negrito\" Rosado, Caja Vallenata - Alejandro Duque, Drum Machine - Hugo Huertas, Composer - Martín Velilla, Lyricist - Carlos Huertas Jr., Composer, Lyricist - Claudia Elena Vásquez, Executive Producer - Juan Villacrés, Performance Arranger - Juan Andrés Ospina, Performance Arranger - Kiko Castro, Recording Engineer - David Duenas, Assistant Engineer - Juan Sebastian Parra, Assistant Engineer, Vocal Producer - Allan Leschhorn, Assistant Engineer - Andrés Borda, Assistant Engineer - Diego Amorocho, Assistant Engineer - Maria A. Romero Franco, Assistant Engineer - Pablo Marín, Assistant Engineer - Javier Garza, Mixing Engineer - Randy Merrill, Mastering Engineer - Andres Saavedra, A&R Director - Pamela Ramirez, A&R Coordinator",
+          "(P) 2026 Sony Music US Latin Entertainment LLC"
+        ],
+        "duration": "00:03:53"
+      },
+      "releaseId": "563d198b-99f1-47fa-8f90-dffce097cced",
+      "recordingId": "3b57b6f3-d8d7-48a1-a08a-ebe7b72e04e8",
+      "authors": [
+        "Carlos Vives, MainArtist, AssociatedPerformer, Vocal, Composer, Lyricist, Performance Arranger",
+        "Andres Leal, Acoustic Guitar, Composer, Lyricist, Performance Arranger, Producer",
+        "Hugo Huertas, Composer",
+        "Martín Velilla, Lyricist",
+        "Carlos Huertas Jr., Composer, Lyricist"
+      ]
+    },
+    {
+      "creditId": "b7e4470e-f133-4347-8bcc-98cd52097b2f",
+      "workId": "5103babe-66e6-43c6-bef8-680658d551c4",
+      "title": "Dame",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Dame",
+        "artist": "",
+        "credits": [
+          "M. Jackson, Composer - Q. JONES, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1985 Karen Records Inc"
+        ],
+        "duration": "00:04:12"
+      },
+      "releaseId": "23d9596d-10b6-4deb-9d0c-48de00846db1",
+      "recordingId": "3797fea9-b2ba-4fa0-b885-f317b724d8dd",
+      "authors": [
+        "M. Jackson, Composer",
+        "Q. JONES, Composer"
+      ]
+    }
+  ],
+  "matchedReleaseTitles": [
+    "Radio Güira",
+    "Siempre queda el amor",
+    "Mientras más lo pienso… tú",
+    "Mudanza y acarreo",
+    "MAMBO 23",
+    "Bachata rosa",
+    "Bachata en Fukuoka",
+    "Ojalá que llueva café",
+    "Capitán Avispa",
+    "Literal",
+    "Todo tiene su hora",
+    "Areíto",
+    "Ni es lo mismo ni es igual",
+    "La llave de mi corazón",
+    "Para ti",
+    "Colección cristiana",
+    "Privé"
+  ]
+}

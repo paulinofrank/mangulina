@@ -1,0 +1,445 @@
+{
+  "createdAt": "2026-10-02T23:59:50.341Z",
+  "changes": [
+    {
+      "workId": "fa577da6-ac56-42a3-84e8-cf339d3142d2",
+      "title": "Si tú me quieres",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/si-tu-me-quieres-fonseca-juan-luis-guerra/fml00t0ggd2pc",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Si Tú Me Quieres",
+        "artist": "",
+        "credits": [
+          "Yoel Henriquez, Composer, Lyricist - Juan Fernando Fonseca, Composer, Lyricist, Producer, Vocal Producer, Recording Engineer, Post-Producer, Performance Arranger - Juan Esteban Aristizabal, Producer, Guitar, Performance Arranger - Charlie Bisharat, Viola, Violin - Sebastian De Peyrecave, Recording Engineer, Post-Producer - Fonseca, MainArtist, AssociatedPerformer, Background Vocal - Juan Luis Guerra, MainArtist, AssociatedPerformer - Allan Leschhorn, Recording Engineer - RICHARD BRAVO, Percussion - Trevor Muzzy, Mixing Engineer - Yadam González, Composer, Lyricist, Producer, Guitar, Bass, Background Vocal, Performance Arranger - Esteban Piñeiro, Mastering Engineer - Kike Cuao, Percussion - Juan Andres Otalora, Performance Arranger - Emiliano Vásquez, A&R Director - Juan Mario Aracil \"Mayito\", Mixing Engineer - Emmanuel Briceño, Piano - Ross Gasworth, Cello - Hermides Taty Manzano, Accordion - Michael Rosario, A&R Coordinator - Fonseca & Juan Luis Guerra, AssociatedPerformer",
+          "(P) 2023 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:24"
+      },
+      "previous": [
+        {
+          "id": "34c5fee6-bbfe-4aef-9ce1-de3be6ca8d09",
+          "work_id": "fa577da6-ac56-42a3-84e8-cf339d3142d2",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "754385de-9a06-4897-b40b-9e588e85045d",
+          "work_id": "fa577da6-ac56-42a3-84e8-cf339d3142d2",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Yoel Henriquez",
+          "creditedAs": "Yoel Henriquez",
+          "role": "composer"
+        },
+        {
+          "name": "Yoel Henriquez",
+          "creditedAs": "Yoel Henriquez",
+          "role": "lyricist"
+        },
+        {
+          "name": "Juan Fernando Fonseca",
+          "creditedAs": "Juan Fernando Fonseca",
+          "role": "composer"
+        },
+        {
+          "name": "Juan Fernando Fonseca",
+          "creditedAs": "Juan Fernando Fonseca",
+          "role": "lyricist"
+        },
+        {
+          "name": "Yadam González",
+          "creditedAs": "Yadam González",
+          "role": "composer"
+        },
+        {
+          "name": "Yadam González",
+          "creditedAs": "Yadam González",
+          "role": "lyricist"
+        }
+      ],
+      "reason": "Correct exact role contradicted by explicit label authorship credits"
+    },
+    {
+      "workId": "f87d393b-3d94-409c-b71d-c25b813d56b1",
+      "title": "Buscando el mar",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/buscando-el-mar-carlos-vives-juan-luis-guerra-440/d6b9n0bo8skvr",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Buscando el Mar",
+        "artist": "",
+        "credits": [
+          "Carlos Vives, MainArtist, AssociatedPerformer, Vocal, Composer, Lyricist, Performance Arranger - Juan Luis Guerra 4.40, MainArtist, AssociatedPerformer - Carlos Vives & Juan Luis Guerra 4.40, AssociatedPerformer - Andres Leal, Acoustic Guitar, Composer, Lyricist, Performance Arranger, Producer - Juan Luis Guerra, Vocal - Pablo Bernal, Drums - Luis Angel \"El Papa\" Pastor, Bass - Eder Polo, Guacharaca - Darwin Escorcia, AssociatedPerformer, Congas - Kike Cuao, Percussion - Rafael Carrasco, Guiro - Juan De La Cruz \"Chocolate\", Tambourine - Luis Mojica, Congas - Mayte Montero, Bagpipe, Maracas, Tambourine - Daniel Cadena, Electric Guitar - Carlos Ivan Medina, Keyboards - Miguel Rico, Keyboards, Organ, Piano - Janina Rosado, Choir, Piano, Assistant Engineer - Jose Castillo, Electric Guitar - Egidio Cuadrado, Accordion - Christian Camilo Peña, Accordion - margot, Viola, Violin, Performance Arranger - Paola Lecera, Choir - Melissa Mejía Flomin, Choir - Rashid Zawady, Choir - Alfredo \"El Negrito\" Rosado, Caja Vallenata - Alejandro Duque, Drum Machine - Hugo Huertas, Composer - Martín Velilla, Lyricist - Carlos Huertas Jr., Composer, Lyricist - Claudia Elena Vásquez, Executive Producer - Juan Villacrés, Performance Arranger - Juan Andrés Ospina, Performance Arranger - Kiko Castro, Recording Engineer - David Duenas, Assistant Engineer - Juan Sebastian Parra, Assistant Engineer, Vocal Producer - Allan Leschhorn, Assistant Engineer - Andrés Borda, Assistant Engineer - Diego Amorocho, Assistant Engineer - Maria A. Romero Franco, Assistant Engineer - Pablo Marín, Assistant Engineer - Javier Garza, Mixing Engineer - Randy Merrill, Mastering Engineer - Andres Saavedra, A&R Director - Pamela Ramirez, A&R Coordinator",
+          "(P) 2026 Sony Music US Latin Entertainment LLC"
+        ],
+        "duration": "00:03:53"
+      },
+      "previous": [
+        {
+          "id": "0fc92b44-6806-48e8-a9f5-51ec061687af",
+          "work_id": "f87d393b-3d94-409c-b71d-c25b813d56b1",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "0a60cd21-8622-4623-88d4-ec67680f7b14",
+          "work_id": "f87d393b-3d94-409c-b71d-c25b813d56b1",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Carlos Vives",
+          "creditedAs": "Carlos Vives",
+          "role": "composer"
+        },
+        {
+          "name": "Carlos Vives",
+          "creditedAs": "Carlos Vives",
+          "role": "lyricist"
+        },
+        {
+          "name": "Andres Leal",
+          "creditedAs": "Andres Leal",
+          "role": "composer"
+        },
+        {
+          "name": "Andres Leal",
+          "creditedAs": "Andres Leal",
+          "role": "lyricist"
+        },
+        {
+          "name": "Carlos Huertas Jr.",
+          "creditedAs": "Carlos Huertas Jr.",
+          "role": "composer"
+        },
+        {
+          "name": "Carlos Huertas Jr.",
+          "creditedAs": "Carlos Huertas Jr.",
+          "role": "lyricist"
+        },
+        {
+          "name": "Hugo Huertas",
+          "creditedAs": "Hugo Huertas",
+          "role": "composer"
+        },
+        {
+          "name": "Martín Velilla",
+          "creditedAs": "Martín Velilla",
+          "role": "lyricist"
+        }
+      ],
+      "reason": "Correct exact role contradicted by explicit label authorship credits"
+    },
+    {
+      "workId": "948d30b2-ef23-4b37-aed4-6271cda1b306",
+      "title": "Siempre queda el amor",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/siempre-queda-el-amor-pedro-guerra-juan-luis-guerra-440/jvov1jswskuba",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Siempre Queda El Amor",
+        "artist": "",
+        "credits": [
+          "PEDRO GUERRA, MainArtist, Producer - Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer, Arranger - Pablo Cebrian, Producer - Francis Hernández, Arranger - Allan Leschhorn, RecordingEngineer - Janina Rosado, ProductionCoordinator - Iñaki de las Cuevas, Mixer - Julio Sangrador, MasteringEngineer - Pedro Manuel Guerra Mansito, Lyricist",
+          "(P) 2024 Altafonte"
+        ],
+        "duration": "00:02:43"
+      },
+      "previous": [
+        {
+          "id": "bc4d32ed-8fa9-4077-8973-be96f899a28e",
+          "work_id": "948d30b2-ef23-4b37-aed4-6271cda1b306",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Pedro Manuel Guerra Mansito",
+          "creditedAs": "Pedro Manuel Guerra Mansito",
+          "role": "lyricist"
+        }
+      ],
+      "reason": "Correct exact role contradicted by explicit label authorship credits"
+    },
+    {
+      "workId": "04dff77b-aa5d-4b5f-83bb-7130f77058d3",
+      "title": "Abriendo caminos",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/grandes-exitos-juan-luis-guerra-440/g5q6xpw3gjsia",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Abriendo Caminos (2025 Remastered)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Diego Torres, Composer - Luis Cardoso, Composer - Juan Luis Guerra, Producer",
+          "(P) 2025 Karen Publishing Company"
+        ],
+        "duration": "00:04:05"
+      },
+      "previous": [
+        {
+          "id": "ae33b92e-81ba-4352-b964-df275f9ba509",
+          "work_id": "04dff77b-aa5d-4b5f-83bb-7130f77058d3",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Diego Torres",
+          "creditedAs": "Diego Torres",
+          "role": "composer"
+        },
+        {
+          "name": "Luis Cardoso",
+          "creditedAs": "Luis Cardoso",
+          "role": "composer"
+        }
+      ],
+      "reason": "Correct exact role contradicted by explicit label authorship credits"
+    },
+    {
+      "workId": "6c803245-b9ea-4ac7-8a21-c30b6eadf6fe",
+      "title": "A pedir su mano",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/prive-juan-luis-guerra-440/wo32u7jgdj08a",
+      "sourceTrack": {
+        "position": 3,
+        "title": "A pedir su mano (Versión Privé)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist, Vocalist - Juan Luis Guerra, Producer, ComposerLyricist - Janina Rosado, Producer, Chorus - Adam Ayan, MasteringEngineer - JLG Studio, Studio - Roger Zayas, Chorus - Juan Rizek, Chorus - Lea Lignazzi, ComposerLyricist",
+          "℗ 2020 Juan Luis Guerra, Distributed By UMG Recordings, Inc."
+        ],
+        "duration": "00:03:35"
+      },
+      "previous": [],
+      "authors": [
+        {
+          "name": "Lea Lignazzi",
+          "creditedAs": "Lea Lignazzi",
+          "role": "composer"
+        },
+        {
+          "name": "Lea Lignazzi",
+          "creditedAs": "Lea Lignazzi",
+          "role": "lyricist"
+        }
+      ],
+      "reason": "Restore omitted coauthor; preserve the other author’s credits pending independent evidence"
+    },
+    {
+      "workId": "415550c5-38fb-4ecc-93a3-2afc0a4e1de7",
+      "title": "Viviré",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/grandes-exitos-juan-luis-guerra-440/g5q6xpw3gjsia",
+      "sourceTrack": {
+        "position": 12,
+        "title": "Viviré (2025 Remastered)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer, Producer - shungu wembadio pene kikumba, Composer - Universal Musica Unica Publishing, MusicPublisher",
+          "(P) 2025 Karen Publishing Company"
+        ],
+        "duration": "00:04:01"
+      },
+      "previous": [],
+      "authors": [
+        {
+          "name": "Shungu Wembadio Pene Kikumba",
+          "creditedAs": "shungu wembadio pene kikumba",
+          "role": "composer"
+        }
+      ],
+      "reason": "Restore omitted coauthor; preserve the other author’s credits pending independent evidence"
+    },
+    {
+      "workId": "ec505ad4-726f-47b9-a63f-a11a92265a8c",
+      "title": "Mal de amor",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/grandes-exitos-juan-luis-guerra-440/g5q6xpw3gjsia",
+      "sourceTrack": {
+        "position": 11,
+        "title": "Mal de Amor (2025 Remastered)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer, Producer - JEAN BAPTISTE JOSEPH NEMOURS, Composer - Universal Musica Unica Publishing, MusicPublisher - NEMOURS JEAN BAPTISTE KONPA DIREK PUBLISHING, MusicPublisher",
+          "(P) 2025 Karen Publishing Company"
+        ],
+        "duration": "00:03:46"
+      },
+      "previous": [],
+      "authors": [
+        {
+          "name": "Jean Baptiste Joseph Nemours",
+          "creditedAs": "JEAN BAPTISTE JOSEPH NEMOURS",
+          "role": "composer"
+        }
+      ],
+      "reason": "Restore omitted coauthor; preserve the other author’s credits pending independent evidence"
+    },
+    {
+      "workId": "fbcb6589-8101-458f-90ac-8b8214b33d84",
+      "title": "El costo de la vida",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/grandes-exitos-juan-luis-guerra-440/g5q6xpw3gjsia",
+      "sourceTrack": {
+        "position": 2,
+        "title": "El Costo de la Vida (2025 Remastered)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer, Producer - DIBALA YANCOMBA, Composer - Universal Musica Unica Publishing, MusicPublisher",
+          "(P) 2025 Karen Publishing Company"
+        ],
+        "duration": "00:04:10"
+      },
+      "previous": [],
+      "authors": [
+        {
+          "name": "Diblo Dibala",
+          "creditedAs": "DIBALA YANCOMBA",
+          "role": "composer"
+        }
+      ],
+      "reason": "Restore omitted coauthor; preserve the other author’s credits pending independent evidence"
+    },
+    {
+      "workId": "12ff9f4d-4dc4-4711-b998-d1004e5067a2",
+      "title": "Los mangos bajitos",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/grandes-exitos-juan-luis-guerra-440/g5q6xpw3gjsia",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Los Mangos Bajitos (2025 Remastered)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer, Producer - Diblo Dibala, Composer - Universal Musica Unica Publishing, MusicPublisher",
+          "(P) 2025 Karen Publishing Company"
+        ],
+        "duration": "00:03:54"
+      },
+      "previous": [],
+      "authors": [
+        {
+          "name": "Diblo Dibala",
+          "creditedAs": "Diblo Dibala",
+          "role": "composer"
+        }
+      ],
+      "reason": "Restore omitted coauthor; preserve the other author’s credits pending independent evidence"
+    },
+    {
+      "workId": "5c819de9-8f92-40bf-829d-bbcd57c6582b",
+      "title": "Canto de hacha",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/grandes-exitos-juan-luis-guerra-440/g5q6xpw3gjsia",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Canto de Hacha (2025 Remastered)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Francisco Ulloa, Composer - Juan Luis Guerra, Producer - Rocking Music USA, MusicPublisher",
+          "(P) 2025 Karen Publishing Company"
+        ],
+        "duration": "00:03:48"
+      },
+      "previous": [],
+      "authors": [
+        {
+          "name": "Francisco Ulloa",
+          "creditedAs": "Francisco Ulloa",
+          "role": "composer",
+          "artistId": "3680fc10-c3fd-42c4-ad54-90d79b226a7d"
+        }
+      ],
+      "reason": "Restore omitted coauthor; preserve the other author’s credits pending independent evidence"
+    },
+    {
+      "workId": "feba1936-8561-4360-8652-5e9c7379deca",
+      "title": "La cosquillita",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/grandes-exitos-juan-luis-guerra-440/g5q6xpw3gjsia",
+      "sourceTrack": {
+        "position": 5,
+        "title": "La Cosquillita (2025 Remastered)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra 4.40, MainArtist - Juan Luis Guerra, Composer, Producer - Francisco Ulloa, Composer - Universal Musica Unica Publishing, MusicPublisher - Jose Luis Publishing (ASCAP), MusicPublisher",
+          "(P) 2025 Karen Publishing Company"
+        ],
+        "duration": "00:03:41"
+      },
+      "previous": [],
+      "authors": [
+        {
+          "name": "Francisco Ulloa",
+          "creditedAs": "Francisco Ulloa",
+          "role": "composer",
+          "artistId": "3680fc10-c3fd-42c4-ad54-90d79b226a7d"
+        }
+      ],
+      "reason": "Restore omitted coauthor; preserve the other author’s credits pending independent evidence"
+    }
+  ],
+  "identityNotes": {
+    "Diblo Dibala": "El costo de la vida composer name also printed as Diblo Dibala in Apple Music label credits: https://music.apple.com/us/song/1744021526",
+    "Lea Lignazzi": "Keep literal Privé spelling; Karen reissue uses Lea Lignanzi. No fabricated biographical details."
+  }
+}

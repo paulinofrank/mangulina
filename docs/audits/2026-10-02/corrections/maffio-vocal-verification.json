@@ -1,0 +1,47 @@
+{
+  "verifiedAt": "2026-10-03T19:19:40.035Z",
+  "checks": {
+    "MaffioOwnerRetained": true,
+    "FourVocalCredits": true,
+    "FourCreditsPublic": true,
+    "CacheRefreshAccepted": true,
+    "PublicPageOwner": true,
+    "FourVoicesVisible": true
+  },
+  "url": "https://www.mangulina.do/es/songs/danza-kuduro-merengue-electronico-remix-maffio",
+  "heading": "Danza kuduro (merengue electrónico remix)por Maffio",
+  "publicCredits": [
+    {
+      "role": "featured_performer",
+      "identity_type": "artist",
+      "identity_id": "d4551f69-84e9-4c33-a51e-1dbd8ea2aff0",
+      "display_name": "El Cata",
+      "artist_slug": "el-cata",
+      "country": null
+    },
+    {
+      "role": "featured_performer",
+      "identity_type": "external_contributor",
+      "identity_id": "a67eef0a-9b3b-4e81-8c15-da2036e01eb2",
+      "display_name": "Don Omar",
+      "artist_slug": null,
+      "country": null
+    },
+    {
+      "role": "featured_performer",
+      "identity_type": "external_contributor",
+      "identity_id": "1c513f83-8a9b-42a8-a0d5-e2ed2dd9eaee",
+      "display_name": "Lucenzo",
+      "artist_slug": null,
+      "country": null
+    },
+    {
+      "role": "featured_performer",
+      "identity_type": "external_contributor",
+      "identity_id": "70910dad-3784-4790-9684-e9013e7fe7dd",
+      "display_name": "Pitbull",
+      "artist_slug": null,
+      "country": null
+    }
+  ]
+}

@@ -1,0 +1,769 @@
+[
+  {
+    "id": "4f0b8de9-f23e-46de-b477-9e6be1e1c342",
+    "title": "El motor",
+    "owner": "Tony Seval",
+    "sourceArtists": [
+      "Aramis Camilo"
+    ],
+    "mbid": "d2708c1b-caf8-42a8-b484-8b62727c0479",
+    "sourceUrl": "https://musicbrainz.org/recording/d2708c1b-caf8-42a8-b484-8b62727c0479"
+  },
+  {
+    "id": "72953b36-4dea-403f-8d4d-27005c7c9f3d",
+    "title": "Amores",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Juan Luis Guerra 440",
+      "El Prodigio"
+    ],
+    "mbid": "e3aac1ca-327a-47c8-adb8-de3ad29688f3",
+    "sourceUrl": "https://musicbrainz.org/recording/e3aac1ca-327a-47c8-adb8-de3ad29688f3"
+  },
+  {
+    "id": "e7dd095b-18e5-4d67-90a1-ff01eb2b0443",
+    "title": "De Moca a París",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Juan Luis Guerra 4.40",
+      "Johnny Ventura"
+    ],
+    "mbid": "1d8442ad-0d87-41be-8f8b-0abadae098d5",
+    "sourceUrl": "https://musicbrainz.org/recording/1d8442ad-0d87-41be-8f8b-0abadae098d5"
+  },
+  {
+    "id": "ec969bf9-304b-41a8-a07a-ff97c07eaaa6",
+    "title": "Como tu no hay nadie",
+    "owner": "Zawezo",
+    "sourceArtists": [
+      "Shadow Blow",
+      "Zawezo Del'Patio"
+    ],
+    "mbid": "3ddbcb2d-4e00-4dc8-9427-13217b35d0d4",
+    "sourceUrl": "https://musicbrainz.org/recording/3ddbcb2d-4e00-4dc8-9427-13217b35d0d4"
+  },
+  {
+    "id": "4a8bc240-3797-43ff-a880-44933712c1a4",
+    "title": "Los recuerdos no abrazan",
+    "owner": "Monchy & Alexandra",
+    "sourceArtists": [
+      "Monchy"
+    ],
+    "mbid": "894975b2-0a68-4020-9c1d-408a1ca6d0fd",
+    "sourceUrl": "https://musicbrainz.org/recording/894975b2-0a68-4020-9c1d-408a1ca6d0fd"
+  },
+  {
+    "id": "5b3c5a81-0456-43af-839c-122660ad5748",
+    "title": "Danza kuduro (merengue electrónico remix)",
+    "owner": "Maffio",
+    "sourceArtists": [
+      "Don Omar",
+      "Lucenzo",
+      "Pitbull",
+      "El Cata"
+    ],
+    "mbid": "63a173cd-62d2-4470-97fe-85ead79a389d",
+    "sourceUrl": "https://musicbrainz.org/recording/63a173cd-62d2-4470-97fe-85ead79a389d"
+  },
+  {
+    "id": "eb4119d8-66e5-4641-9276-c6ae547ccd5f",
+    "title": "Tú eres un veneno",
+    "owner": "Alina Vargas",
+    "sourceArtists": [
+      "Wilfrido Vargas",
+      "Alinna Vargas"
+    ],
+    "mbid": "e22269e8-2dfb-497a-99de-1734ae4489f9",
+    "sourceUrl": "https://musicbrainz.org/recording/e22269e8-2dfb-497a-99de-1734ae4489f9"
+  },
+  {
+    "id": "334ae297-d150-4a81-9427-a416ecb0aa1d",
+    "title": "Frío, frío (En Vivo - A Son de Guerra Tour)",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Juan Luis Guerra 4.40",
+      "Romeo Santos"
+    ],
+    "mbid": "f77053d2-dba2-48d7-97cf-bdc55b6feb0c",
+    "sourceUrl": "https://musicbrainz.org/recording/f77053d2-dba2-48d7-97cf-bdc55b6feb0c"
+  },
+  {
+    "id": "29c67cf9-13f3-4e12-a29f-c8d967d60b34",
+    "title": "Libre",
+    "owner": "Alina Vargas",
+    "sourceArtists": [
+      "Wilfrido Vargas",
+      "Alinna Vargas"
+    ],
+    "mbid": "ea053c10-6eb9-4c7a-a60a-b83ccab46513",
+    "sourceUrl": "https://musicbrainz.org/recording/ea053c10-6eb9-4c7a-a60a-b83ccab46513"
+  },
+  {
+    "id": "768d32b6-7854-46ce-a5e6-400c4aa77faa",
+    "title": "Mi condena",
+    "owner": "Alina Vargas",
+    "sourceArtists": [
+      "Wilfrido Vargas",
+      "Alinna Vargas"
+    ],
+    "mbid": "2b96edb7-6bff-49c1-bada-cab8eb71f553",
+    "sourceUrl": "https://musicbrainz.org/recording/2b96edb7-6bff-49c1-bada-cab8eb71f553"
+  },
+  {
+    "id": "a6024034-b10e-4e8e-a363-f0552e725d7a",
+    "title": "Melina",
+    "owner": "Joan Soriano",
+    "sourceArtists": [
+      "Fernando Soriano"
+    ],
+    "mbid": "96c11af9-dbf6-4a58-9ebd-d2bed8478ff4",
+    "sourceUrl": "https://musicbrainz.org/recording/96c11af9-dbf6-4a58-9ebd-d2bed8478ff4"
+  },
+  {
+    "id": "e412ad0b-c0c0-4492-80c8-8aefae67c1a8",
+    "title": "Violento atardecer",
+    "owner": "Miriam Cruz",
+    "sourceArtists": [
+      "Miriam y las Chicas"
+    ],
+    "mbid": "251f66ca-77d6-480d-abf4-3638f6358178",
+    "sourceUrl": "https://musicbrainz.org/recording/251f66ca-77d6-480d-abf4-3638f6358178"
+  },
+  {
+    "id": "88f4702e-6911-412a-b3d8-988f991a8fdf",
+    "title": "Te propongo",
+    "owner": "Miriam Cruz",
+    "sourceArtists": [
+      "Miriam y las Chicas"
+    ],
+    "mbid": "f78341e7-2f59-45a8-9c1f-afa119540de2",
+    "sourceUrl": "https://musicbrainz.org/recording/f78341e7-2f59-45a8-9c1f-afa119540de2"
+  },
+  {
+    "id": "a14f911a-c8f2-44c9-b906-81eaa0db6fa8",
+    "title": "El ñoño",
+    "owner": "Miriam Cruz",
+    "sourceArtists": [
+      "Miriam y las Chicas"
+    ],
+    "mbid": "6026bd65-d56f-418b-a4c8-e87fca1f7032",
+    "sourceUrl": "https://musicbrainz.org/recording/6026bd65-d56f-418b-a4c8-e87fca1f7032"
+  },
+  {
+    "id": "5bfed06a-af27-4d5b-ad36-1533d2767a68",
+    "title": "Quiti-pun",
+    "owner": "Alina Vargas",
+    "sourceArtists": [
+      "Wilfrido Vargas",
+      "Alinna Vargas"
+    ],
+    "mbid": "9e907739-a60b-49b7-b19d-007a0486873f",
+    "sourceUrl": "https://musicbrainz.org/recording/9e907739-a60b-49b7-b19d-007a0486873f"
+  },
+  {
+    "id": "13dd8d0c-1239-4876-84f8-02751fd6ecff",
+    "title": "El amor acaba",
+    "owner": "Sergio Vargas",
+    "sourceArtists": [
+      "Alex Bueno"
+    ],
+    "mbid": "509431a4-f4b9-4e88-857b-d225ad86e7cb",
+    "sourceUrl": "https://musicbrainz.org/recording/509431a4-f4b9-4e88-857b-d225ad86e7cb"
+  },
+  {
+    "id": "ede150d2-d9dd-4320-a483-ddc0669b56ce",
+    "title": "Así bonito",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Frank Ceara",
+      "Juan Luis Guerra 4.40"
+    ],
+    "mbid": "934668b5-4be4-4a8e-94d5-50526759d0f4",
+    "sourceUrl": "https://musicbrainz.org/recording/934668b5-4be4-4a8e-94d5-50526759d0f4"
+  },
+  {
+    "id": "9c2631f2-d6b8-4a02-9fc4-98ed743487b7",
+    "title": "La quiero a morir",
+    "owner": "Alex Bueno",
+    "sourceArtists": [
+      "Sergio Vargas"
+    ],
+    "mbid": "83de2e9a-d8e4-44aa-8f96-093e7f1ea2c7",
+    "sourceUrl": "https://musicbrainz.org/recording/83de2e9a-d8e4-44aa-8f96-093e7f1ea2c7"
+  },
+  {
+    "id": "bc141597-7e01-4ae2-86fc-ec78a31b00af",
+    "title": "Pero lo dudo",
+    "owner": "Sergio Vargas",
+    "sourceArtists": [
+      "Alex Bueno"
+    ],
+    "mbid": "d5ac80e9-42d4-478a-a464-1d0214766037",
+    "sourceUrl": "https://musicbrainz.org/recording/d5ac80e9-42d4-478a-a464-1d0214766037"
+  },
+  {
+    "id": "1b81253e-b3d4-40a4-b22b-7324469666a3",
+    "title": "Este castigo",
+    "owner": "Monchy & Alexandra",
+    "sourceArtists": [
+      "Alexandra"
+    ],
+    "mbid": "ff6c2bca-14c4-4c4f-a853-a197fdf930e4",
+    "sourceUrl": "https://musicbrainz.org/recording/ff6c2bca-14c4-4c4f-a853-a197fdf930e4"
+  },
+  {
+    "id": "c84160ac-2b06-4679-8210-42a27b34758a",
+    "title": "Rechenchen",
+    "owner": "Kinito Méndez",
+    "sourceArtists": [
+      "Rokabanda"
+    ],
+    "mbid": "0fd47888-cbd1-4b81-b79f-da6f5701e9fa",
+    "sourceUrl": "https://musicbrainz.org/recording/0fd47888-cbd1-4b81-b79f-da6f5701e9fa"
+  },
+  {
+    "id": "700d081d-5337-4eb9-ade0-2dbde58f57c7",
+    "title": "El baile del pirulino",
+    "owner": "Alina Vargas",
+    "sourceArtists": [
+      "Wilfrido Vargas",
+      "Alinna Vargas"
+    ],
+    "mbid": "ae7778aa-189f-4d18-9ce9-056cffc42e73",
+    "sourceUrl": "https://musicbrainz.org/recording/ae7778aa-189f-4d18-9ce9-056cffc42e73"
+  },
+  {
+    "id": "e1934f31-43d4-4b2c-9baa-22e010df0191",
+    "title": "Una mordidita",
+    "owner": "Miriam Cruz",
+    "sourceArtists": [
+      "Miriam y las Chicas"
+    ],
+    "mbid": "51ee6d65-e53b-426a-9175-97986f838c00",
+    "sourceUrl": "https://musicbrainz.org/recording/51ee6d65-e53b-426a-9175-97986f838c00"
+  },
+  {
+    "id": "d2fa17d1-1fc3-4c3f-bc02-c2c590866f55",
+    "title": "Tú volverás",
+    "owner": "Miriam Cruz",
+    "sourceArtists": [
+      "Miriam y las Chicas"
+    ],
+    "mbid": "1d514173-4d1c-4506-ad6a-4148d5a68d31",
+    "sourceUrl": "https://musicbrainz.org/recording/1d514173-4d1c-4506-ad6a-4148d5a68d31"
+  },
+  {
+    "id": "bc4c71fc-1c6e-46eb-8952-fa318c55a270",
+    "title": "Llanto a la luna",
+    "owner": "Joan Soriano",
+    "sourceArtists": [
+      "André Velóz"
+    ],
+    "mbid": "d0b9636b-a85f-49b0-b294-8ba01577692a",
+    "sourceUrl": "https://musicbrainz.org/recording/d0b9636b-a85f-49b0-b294-8ba01577692a"
+  },
+  {
+    "id": "76b0820f-c728-4b39-81d7-36d6a4801a5a",
+    "title": "Dos rosas",
+    "owner": "Miriam Cruz",
+    "sourceArtists": [
+      "Miriam y las Chicas"
+    ],
+    "mbid": "02d360b6-3f2a-41f5-9b44-797647dfb129",
+    "sourceUrl": "https://musicbrainz.org/recording/02d360b6-3f2a-41f5-9b44-797647dfb129"
+  },
+  {
+    "id": "548a7846-fd2e-42a9-9245-8fff9a76e7c8",
+    "title": "Ven llévame contigo",
+    "owner": "Tony Seval",
+    "sourceArtists": [
+      "Aramis Camilo"
+    ],
+    "mbid": "85f49998-6f95-4d3f-9fe5-38c8622e638b",
+    "sourceUrl": "https://musicbrainz.org/recording/85f49998-6f95-4d3f-9fe5-38c8622e638b"
+  },
+  {
+    "id": "6b8dad81-685c-4854-b87c-9fa9d35a0218",
+    "title": "Quiero perderme contigo",
+    "owner": "Sergio Vargas",
+    "sourceArtists": [
+      "Alex Bueno"
+    ],
+    "mbid": "21090d0b-9f3d-48ea-943b-a242de1945c2",
+    "sourceUrl": "https://musicbrainz.org/recording/21090d0b-9f3d-48ea-943b-a242de1945c2"
+  },
+  {
+    "id": "f2025707-c4c0-4b75-9411-f2684011cce8",
+    "title": "Quiero llenarte toda",
+    "owner": "Sergio Vargas",
+    "sourceArtists": [
+      "Alex Bueno"
+    ],
+    "mbid": "39d0d0bd-b802-4941-bf08-49a8710caa0c",
+    "sourceUrl": "https://musicbrainz.org/recording/39d0d0bd-b802-4941-bf08-49a8710caa0c"
+  },
+  {
+    "id": "15e06d83-81fa-4009-9476-370b17a40e89",
+    "title": "El amor acaba",
+    "owner": "Sergio Vargas",
+    "sourceArtists": [
+      "Alex Bueno"
+    ],
+    "mbid": "a4c65a95-07ed-4282-97e0-e703d5a4aa54",
+    "sourceUrl": "https://musicbrainz.org/recording/a4c65a95-07ed-4282-97e0-e703d5a4aa54"
+  },
+  {
+    "id": "a53ee73c-6f8a-4697-9887-19274705b84e",
+    "title": "Brindo con agua",
+    "owner": "Henry Santos",
+    "sourceArtists": [
+      "Aventura"
+    ],
+    "mbid": "6579f934-77db-40da-b832-43c9b8865218",
+    "sourceUrl": "https://musicbrainz.org/recording/6579f934-77db-40da-b832-43c9b8865218"
+  },
+  {
+    "id": "8ec087d4-7728-4d80-bec6-7992e6ffec6c",
+    "title": "El alicate",
+    "owner": "Tony Seval",
+    "sourceArtists": [
+      "Aramis Camilo"
+    ],
+    "mbid": "63a05d93-dfd6-4cf9-88d8-7fea4ef240dd",
+    "sourceUrl": "https://musicbrainz.org/recording/63a05d93-dfd6-4cf9-88d8-7fea4ef240dd"
+  },
+  {
+    "id": "7a60dd1c-50a0-461b-896e-5a1c47d2fa7a",
+    "title": "Hello",
+    "owner": "Tony Seval",
+    "sourceArtists": [
+      "Aramis Camilo"
+    ],
+    "mbid": "cb61be22-15a6-4e63-a7fd-70cfc2e103a6",
+    "sourceUrl": "https://musicbrainz.org/recording/cb61be22-15a6-4e63-a7fd-70cfc2e103a6"
+  },
+  {
+    "id": "e53bf5f1-6ce0-49f3-8629-c6fabc35c24f",
+    "title": "La quiero a morir",
+    "owner": "Alex Bueno",
+    "sourceArtists": [
+      "Sergio Vargas"
+    ],
+    "mbid": "b62faad7-b6c9-4f55-b0a9-478cc49cac3e",
+    "sourceUrl": "https://musicbrainz.org/recording/b62faad7-b6c9-4f55-b0a9-478cc49cac3e"
+  },
+  {
+    "id": "76b24bc9-c223-408a-bc87-b198cb930c70",
+    "title": "Fantasías",
+    "owner": "Monchy & Alexandra",
+    "sourceArtists": [
+      "Monchy"
+    ],
+    "mbid": "9020e731-be8b-4ec3-982d-a5dae905789a",
+    "sourceUrl": "https://musicbrainz.org/recording/9020e731-be8b-4ec3-982d-a5dae905789a"
+  },
+  {
+    "id": "740cdb78-b3ab-4963-8bdc-f28a8a55e1bd",
+    "title": "A escondidas",
+    "owner": "Joan Soriano",
+    "sourceArtists": [
+      "Griselda Soriano"
+    ],
+    "mbid": "54460324-3121-4d5d-9187-d51e9e368f89",
+    "sourceUrl": "https://musicbrainz.org/recording/54460324-3121-4d5d-9187-d51e9e368f89"
+  },
+  {
+    "id": "3196a8cb-e271-4985-89a5-9c02c887947f",
+    "title": "Te estoy queriendo (remix)",
+    "owner": "Sandy MC",
+    "sourceArtists": [
+      "Sandy",
+      "Proyecto Uno"
+    ],
+    "mbid": "bc85dce2-430b-41fa-b729-3fae3c3a64a5",
+    "sourceUrl": "https://musicbrainz.org/recording/bc85dce2-430b-41fa-b729-3fae3c3a64a5"
+  },
+  {
+    "id": "8c047d87-3ef4-4ada-ab86-260273637205",
+    "title": "El llorón",
+    "owner": "Kinito Méndez",
+    "sourceArtists": [
+      "Rokabanda"
+    ],
+    "mbid": "d3dbfa42-1d68-4649-9284-53ae8d32f6c5",
+    "sourceUrl": "https://musicbrainz.org/recording/d3dbfa42-1d68-4649-9284-53ae8d32f6c5"
+  },
+  {
+    "id": "a880db96-9d39-4210-8ec1-fd050f230ed8",
+    "title": "Quisiera olvidarte",
+    "owner": "Monchy & Alexandra",
+    "sourceArtists": [
+      "Alexandra"
+    ],
+    "mbid": "0ef73b46-0681-43de-9362-0c46884b4a1f",
+    "sourceUrl": "https://musicbrainz.org/recording/0ef73b46-0681-43de-9362-0c46884b4a1f"
+  },
+  {
+    "id": "c2985d99-4bc4-4b32-a299-f1de7e048e7b",
+    "title": "Tú mi cigarrillo",
+    "owner": "Tony Seval",
+    "sourceArtists": [
+      "Aramis Camilo"
+    ],
+    "mbid": "9e343724-24e7-4696-8482-4523cf76d0ac",
+    "sourceUrl": "https://musicbrainz.org/recording/9e343724-24e7-4696-8482-4523cf76d0ac"
+  },
+  {
+    "id": "88fa2345-f6ea-4d5c-bd75-f03b0a64b092",
+    "title": "LLevate La Cama Pa' La Calle",
+    "owner": "Don Miguelo",
+    "sourceArtists": [
+      "Frank Reyes",
+      "Indhira Rubiera"
+    ],
+    "mbid": "be16f272-604c-45de-90cd-daca3ad52efa",
+    "sourceUrl": "https://musicbrainz.org/recording/be16f272-604c-45de-90cd-daca3ad52efa"
+  },
+  {
+    "id": "cc845bf5-f383-4554-83a9-7b133876a144",
+    "title": "Arrancarte de mi piel (Me olvidaste)",
+    "owner": "Monchy & Alexandra",
+    "sourceArtists": [
+      "Monchy"
+    ],
+    "mbid": "91bd4666-319a-4c3b-9c10-549f58af736c",
+    "sourceUrl": "https://musicbrainz.org/recording/91bd4666-319a-4c3b-9c10-549f58af736c"
+  },
+  {
+    "id": "47f1d59e-5e92-4512-8a3d-c720f969ee65",
+    "title": "La loba",
+    "owner": "Miriam Cruz",
+    "sourceArtists": [
+      "Miriam y las Chicas"
+    ],
+    "mbid": "6bb16ba1-c04a-4194-b53d-824b4a18cbba",
+    "sourceUrl": "https://musicbrainz.org/recording/6bb16ba1-c04a-4194-b53d-824b4a18cbba"
+  },
+  {
+    "id": "d2303d7b-8ab4-40d4-84c0-aef2005e4f4f",
+    "title": "Me encantó lo de anoche",
+    "owner": "José Peña Suazo y La Banda Gorda",
+    "sourceArtists": [
+      "Peña Suazo",
+      "La Banda Gorda",
+      "Wason Brazobán"
+    ],
+    "mbid": "fd974289-db0e-460f-8fb4-afd14b07b835",
+    "sourceUrl": "https://musicbrainz.org/recording/fd974289-db0e-460f-8fb4-afd14b07b835"
+  },
+  {
+    "id": "2d7f74b6-b0cc-414d-9fb7-faac89bcc4c3",
+    "title": "Youlanda",
+    "owner": "Joan Soriano",
+    "sourceArtists": [
+      "Fernando",
+      "Griselda Soriano"
+    ],
+    "mbid": "041c5654-69ac-41e9-b92f-59d1e9f0f2ef",
+    "sourceUrl": "https://musicbrainz.org/recording/041c5654-69ac-41e9-b92f-59d1e9f0f2ef"
+  },
+  {
+    "id": "22249226-5811-4a27-a9fa-95bd4815c48c",
+    "title": "Háblame de frente",
+    "owner": "Joan Soriano",
+    "sourceArtists": [
+      "Griselda Soriano"
+    ],
+    "mbid": "31852091-d0dc-4370-8dbb-f7beef27aca4",
+    "sourceUrl": "https://musicbrainz.org/recording/31852091-d0dc-4370-8dbb-f7beef27aca4"
+  },
+  {
+    "id": "0636f4fa-1fde-4b87-9b4e-4a6098219e2b",
+    "title": "Esto no lo venden",
+    "owner": "José Peña Suazo y La Banda Gorda",
+    "sourceArtists": [
+      "Peña Suazo",
+      "La Banda Gorda",
+      "Silvio Mora",
+      "Guarionex Castro"
+    ],
+    "mbid": "1b98ae1b-129c-4993-8d82-1932b6e1918e",
+    "sourceUrl": "https://musicbrainz.org/recording/1b98ae1b-129c-4993-8d82-1932b6e1918e"
+  },
+  {
+    "id": "0f00ad33-60d6-4705-8688-de972556687c",
+    "title": "Shake it down",
+    "owner": "Alina Vargas",
+    "sourceArtists": [
+      "Wilfrido Vargas",
+      "Alinna Vargas"
+    ],
+    "mbid": "d66affbd-cda8-40f0-8e9b-091e41e739aa",
+    "sourceUrl": "https://musicbrainz.org/recording/d66affbd-cda8-40f0-8e9b-091e41e739aa"
+  },
+  {
+    "id": "ba33ce97-80ed-4d67-ba62-1480fcba28e0",
+    "title": "Tus cartas llegan",
+    "owner": "Joan Soriano",
+    "sourceArtists": [
+      "Fernando Soriano"
+    ],
+    "mbid": "9b4a324d-81ab-497d-b157-7457ca7571eb",
+    "sourceUrl": "https://musicbrainz.org/recording/9b4a324d-81ab-497d-b157-7457ca7571eb"
+  },
+  {
+    "id": "0080c981-9930-49ca-bfe0-fb5ab7c00085",
+    "title": "El SIDA",
+    "owner": "Joan Soriano",
+    "sourceArtists": [
+      "Fernando Soriano"
+    ],
+    "mbid": "39e83176-61cd-46d1-80e6-35ea70554e3b",
+    "sourceUrl": "https://musicbrainz.org/recording/39e83176-61cd-46d1-80e6-35ea70554e3b"
+  },
+  {
+    "id": "e63a471f-1cc4-4b07-beff-219c8b3b19d2",
+    "title": "Si ti no soy nada",
+    "owner": "Sergio Vargas",
+    "sourceArtists": [
+      "Alex Bueno"
+    ],
+    "mbid": "71f97245-41f1-4632-b8e4-a435717e0bd1",
+    "sourceUrl": "https://musicbrainz.org/recording/71f97245-41f1-4632-b8e4-a435717e0bd1"
+  },
+  {
+    "id": "57777696-d551-4eec-ab99-e08aafef257f",
+    "title": "Se levanta Nueva York",
+    "owner": "Alina Vargas",
+    "sourceArtists": [
+      "Wilfrido Vargas",
+      "Alinna Vargas"
+    ],
+    "mbid": "58575425-c254-4536-8106-23174ff58148",
+    "sourceUrl": "https://musicbrainz.org/recording/58575425-c254-4536-8106-23174ff58148"
+  },
+  {
+    "id": "55a81134-ab24-4472-91fc-4c4653d28c37",
+    "title": "Que se mueran los feos",
+    "owner": "Alina Vargas",
+    "sourceArtists": [
+      "Wilfrido Vargas",
+      "Alinna Vargas"
+    ],
+    "mbid": "d9fe5e99-4c50-468a-a1a4-71c262e8ee46",
+    "sourceUrl": "https://musicbrainz.org/recording/d9fe5e99-4c50-468a-a1a4-71c262e8ee46"
+  },
+  {
+    "id": "e1dcb507-edb7-415c-a147-9d8df42d9675",
+    "title": "Me fascina",
+    "owner": "Alina Vargas",
+    "sourceArtists": [
+      "Wilfrido Vargas",
+      "Alinna Vargas"
+    ],
+    "mbid": "557b4a8d-7e43-43fa-8ef8-321486de067f",
+    "sourceUrl": "https://musicbrainz.org/recording/557b4a8d-7e43-43fa-8ef8-321486de067f"
+  },
+  {
+    "id": "90750dd1-79dc-4807-b805-de0ceaaa793e",
+    "title": "Estoy Atrapado (Grunjeo)",
+    "owner": "Grunjeo",
+    "sourceArtists": [
+      "Korven Brox"
+    ],
+    "mbid": "951b4bf7-ffe5-4062-b788-23db3c30de92",
+    "sourceUrl": "https://musicbrainz.org/recording/951b4bf7-ffe5-4062-b788-23db3c30de92"
+  },
+  {
+    "id": "6c6e28c7-37dd-4197-b318-2c7269259232",
+    "title": "Tanto que tú diche",
+    "owner": "Kinito Méndez",
+    "sourceArtists": [
+      "Rokabanda"
+    ],
+    "mbid": "09510ccc-d4d2-47d8-bf07-89d863f2a02d",
+    "sourceUrl": "https://musicbrainz.org/recording/09510ccc-d4d2-47d8-bf07-89d863f2a02d"
+  },
+  {
+    "id": "0a198da6-c61e-4cb1-b65a-c895f3740ea0",
+    "title": "Los hombres maduros",
+    "owner": "Kinito Méndez",
+    "sourceArtists": [
+      "Rokabanda"
+    ],
+    "mbid": "4b06c2c2-1779-4d47-87dc-912edb828497",
+    "sourceUrl": "https://musicbrainz.org/recording/4b06c2c2-1779-4d47-87dc-912edb828497"
+  },
+  {
+    "id": "2b3f3d75-fa9b-4036-88ef-032700348d13",
+    "title": "Quiero perderme contigo",
+    "owner": "Sergio Vargas",
+    "sourceArtists": [
+      "Alex Bueno"
+    ],
+    "mbid": "8006fecf-23cb-4d58-af20-5ee22cc8176e",
+    "sourceUrl": "https://musicbrainz.org/recording/8006fecf-23cb-4d58-af20-5ee22cc8176e"
+  },
+  {
+    "id": "ce87f690-e38f-4698-88f8-35a2fd31035c",
+    "title": "Hazme tu esposa",
+    "owner": "Monchy & Alexandra",
+    "sourceArtists": [
+      "Alexandra"
+    ],
+    "mbid": "2ba88eeb-97f6-4f41-81e9-9e61abdc3186",
+    "sourceUrl": "https://musicbrainz.org/recording/2ba88eeb-97f6-4f41-81e9-9e61abdc3186"
+  },
+  {
+    "id": "57bac019-4908-45a3-8397-12e40f28f74f",
+    "title": "Veneno",
+    "owner": "Joan Soriano",
+    "sourceArtists": [
+      "André Velóz"
+    ],
+    "mbid": "116df802-5eff-4971-965e-ecee06f36ed4",
+    "sourceUrl": "https://musicbrainz.org/recording/116df802-5eff-4971-965e-ecee06f36ed4"
+  },
+  {
+    "id": "829b1b8d-46de-4668-a36e-dd7f09272ba7",
+    "title": "Baby, olvídame",
+    "owner": "Monchy & Alexandra",
+    "sourceArtists": [
+      "Alexandra"
+    ],
+    "mbid": "f508640e-2f8d-47f0-800c-f08d150e86f5",
+    "sourceUrl": "https://musicbrainz.org/recording/f508640e-2f8d-47f0-800c-f08d150e86f5"
+  },
+  {
+    "id": "f29abbd2-8d90-4128-986b-c7edee75fbff",
+    "title": "Tómalo tú",
+    "owner": "Miriam Cruz",
+    "sourceArtists": [
+      "Miriam y las Chicas"
+    ],
+    "mbid": "9dc5f18c-97c8-457f-a13a-54427b2554a1",
+    "sourceUrl": "https://musicbrainz.org/recording/9dc5f18c-97c8-457f-a13a-54427b2554a1"
+  },
+  {
+    "id": "fc71e434-0797-4235-bbf1-b12ab00405a1",
+    "title": "Me siento tan sola",
+    "owner": "Miriam Cruz",
+    "sourceArtists": [
+      "Miriam y las Chicas"
+    ],
+    "mbid": "bacf33a2-7ec8-4275-9922-370e0f52e5bb",
+    "sourceUrl": "https://musicbrainz.org/recording/bacf33a2-7ec8-4275-9922-370e0f52e5bb"
+  },
+  {
+    "id": "6e2c1583-9f5d-4384-89ac-c802509a6e7c",
+    "title": "El candado del amor",
+    "owner": "Tony Seval",
+    "sourceArtists": [
+      "Aramis Camilo"
+    ],
+    "mbid": "ca3d6642-2d95-4031-baed-aa9fc87aa516",
+    "sourceUrl": "https://musicbrainz.org/recording/ca3d6642-2d95-4031-baed-aa9fc87aa516"
+  },
+  {
+    "id": "65471d18-a015-417b-a2bb-3a4e8c4f4577",
+    "title": "La condena",
+    "owner": "Kinito Méndez",
+    "sourceArtists": [
+      "Rokabanda"
+    ],
+    "mbid": "52839067-df37-47be-9013-534ca7af930f",
+    "sourceUrl": "https://musicbrainz.org/recording/52839067-df37-47be-9013-534ca7af930f"
+  },
+  {
+    "id": "a27f06da-67fe-41be-856c-989339795600",
+    "title": "Voy a llenarte toda",
+    "owner": "Sergio Vargas",
+    "sourceArtists": [
+      "Alex Bueno"
+    ],
+    "mbid": "a699847a-ee20-4de4-a4f5-838d1b069451",
+    "sourceUrl": "https://musicbrainz.org/recording/a699847a-ee20-4de4-a4f5-838d1b069451"
+  },
+  {
+    "id": "308f9546-91a6-49f9-9e44-00acc9f65fc8",
+    "title": "Puedo",
+    "owner": "Miriam Cruz",
+    "sourceArtists": [
+      "Miriam y las Chicas"
+    ],
+    "mbid": "42058be4-31a9-4728-b6ec-7b70c46ffc1a",
+    "sourceUrl": "https://musicbrainz.org/recording/42058be4-31a9-4728-b6ec-7b70c46ffc1a"
+  },
+  {
+    "id": "b5278ea4-86ce-494f-97b6-2a7c307f5a3d",
+    "title": "Ay ombe",
+    "owner": "Alina Vargas",
+    "sourceArtists": [
+      "Wilfrido Vargas",
+      "Alinna Vargas"
+    ],
+    "mbid": "cb3bb512-64be-4f13-ba76-703505a2a390",
+    "sourceUrl": "https://musicbrainz.org/recording/cb3bb512-64be-4f13-ba76-703505a2a390"
+  },
+  {
+    "id": "2fa09f0d-9032-4847-bf0b-b5f82f59db8e",
+    "title": "Te amaría (trance)",
+    "owner": "Monchy & Alexandra",
+    "sourceArtists": [
+      "Alexandra"
+    ],
+    "mbid": "208f4075-e0cb-411f-9558-344fef9cb37c",
+    "sourceUrl": "https://musicbrainz.org/recording/208f4075-e0cb-411f-9558-344fef9cb37c"
+  },
+  {
+    "id": "680124c8-6233-47e7-9476-5cefdcc0f9d8",
+    "title": "Si muero de anhelo",
+    "owner": "Miriam Cruz",
+    "sourceArtists": [
+      "Miriam y las Chicas"
+    ],
+    "mbid": "4104f0d5-2a93-435e-a01b-3eba5c86ea74",
+    "sourceUrl": "https://musicbrainz.org/recording/4104f0d5-2a93-435e-a01b-3eba5c86ea74"
+  },
+  {
+    "id": "02990a6a-ccdd-4d43-be40-73610630bb15",
+    "title": "Sin ti no hay nada",
+    "owner": "Sergio Vargas",
+    "sourceArtists": [
+      "Alex Bueno"
+    ],
+    "mbid": "95cf4a17-05aa-48ac-83f0-3a594afcf086",
+    "sourceUrl": "https://musicbrainz.org/recording/95cf4a17-05aa-48ac-83f0-3a594afcf086"
+  },
+  {
+    "id": "3d1c54e7-b045-4105-9342-8748938200ca",
+    "title": "En bandolera",
+    "owner": "Sergio Vargas",
+    "sourceArtists": [
+      "Alex Bueno"
+    ],
+    "mbid": "12946327-39ad-4551-b751-c7b57a236846",
+    "sourceUrl": "https://musicbrainz.org/recording/12946327-39ad-4551-b751-c7b57a236846"
+  },
+  {
+    "id": "2140aff9-fc6c-449a-abb7-9dea805a3a5e",
+    "title": "Otra vez",
+    "owner": "Miriam Cruz",
+    "sourceArtists": [
+      "Miriam y las Chicas"
+    ],
+    "mbid": "e2d92b35-43ff-4ace-ad52-73b69237093b",
+    "sourceUrl": "https://musicbrainz.org/recording/e2d92b35-43ff-4ace-ad52-73b69237093b"
+  },
+  {
+    "id": "063d5af7-ec76-426a-bad6-d461fd761ac9",
+    "title": "El día de mi boda",
+    "owner": "Alina Vargas",
+    "sourceArtists": [
+      "Wilfrido Vargas",
+      "Alinna Vargas"
+    ],
+    "mbid": "f0365f3b-eb21-4ff8-ab10-da131ade9b56",
+    "sourceUrl": "https://musicbrainz.org/recording/f0365f3b-eb21-4ff8-ab10-da131ade9b56"
+  }
+]

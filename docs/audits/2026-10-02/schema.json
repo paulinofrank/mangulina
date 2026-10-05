@@ -1,0 +1,1003 @@
+{
+  "schema": [
+    {
+      "table_name": "artists",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "sort_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "type",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "birth_year",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "death_year",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "views",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "wikidata_id",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "first_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "middle_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "last_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "second_last_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "stage_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "date_of_birth",
+      "data_type": "date"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "birth_place",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "website",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "youtube",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "facebook",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "instagram",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "aliases",
+      "data_type": "ARRAY"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "mbid",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "occupations",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "instruments",
+      "data_type": "ARRAY"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "genres",
+      "data_type": "ARRAY"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "disambiguation",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "gender",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "ended",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "mb_metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "province",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "birth_day",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "birth_month",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "slug",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "primary_role",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "artist_tags",
+      "data_type": "ARRAY"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "date_of_death",
+      "data_type": "date"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "primary_genre",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "bio_en",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "bio_es",
+      "data_type": "text"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "has_image",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "image_updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "formation_year",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "dissolution_year",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "artists",
+      "column_name": "spotify",
+      "data_type": "text"
+    },
+    {
+      "table_name": "credited_work_credits",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "credited_work_credits",
+      "column_name": "credited_work_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "credited_work_credits",
+      "column_name": "artist_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "credited_work_credits",
+      "column_name": "role",
+      "data_type": "text"
+    },
+    {
+      "table_name": "credited_work_credits",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "credited_work_credits",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "credited_work_credits",
+      "column_name": "role_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "credited_works",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "credited_works",
+      "column_name": "title",
+      "data_type": "text"
+    },
+    {
+      "table_name": "credited_works",
+      "column_name": "performer_text",
+      "data_type": "text"
+    },
+    {
+      "table_name": "credited_works",
+      "column_name": "release_title",
+      "data_type": "text"
+    },
+    {
+      "table_name": "credited_works",
+      "column_name": "release_year",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "credited_works",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "credited_works",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "credited_works",
+      "column_name": "performer_artist_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "credited_works",
+      "column_name": "work_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "credited_works",
+      "column_name": "recording_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "preferred_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "sort_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "entity_type",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "country_code",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "country",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "date_of_birth",
+      "data_type": "date"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "date_of_death",
+      "data_type": "date"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "birth_place",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "occupations",
+      "data_type": "ARRAY"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "has_image",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "image_updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "editorial_notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "created_by",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "recording_credits",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "recording_credits",
+      "column_name": "recording_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "recording_credits",
+      "column_name": "artist_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "recording_credits",
+      "column_name": "role",
+      "data_type": "text"
+    },
+    {
+      "table_name": "recording_credits",
+      "column_name": "position",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "recording_credits",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "recording_credits",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "recording_credits",
+      "column_name": "credited_as",
+      "data_type": "text"
+    },
+    {
+      "table_name": "recording_credits",
+      "column_name": "display_order",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "recording_credits",
+      "column_name": "role_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "recording_credits",
+      "column_name": "external_contributor_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "title",
+      "data_type": "text"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "work_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "youtube_id",
+      "data_type": "text"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "duration",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "release_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "recording_year",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "artist_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "views",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "mbid",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "disambiguation",
+      "data_type": "text"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "isrcs",
+      "data_type": "ARRAY"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "genre_id",
+      "data_type": "bigint"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "subgenre_id",
+      "data_type": "bigint"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "ai_confidence",
+      "data_type": "numeric"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "ai_reason",
+      "data_type": "text"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "classified_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "recording_context",
+      "data_type": "text"
+    },
+    {
+      "table_name": "recordings",
+      "column_name": "slug",
+      "data_type": "text"
+    },
+    {
+      "table_name": "release_artists",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "release_artists",
+      "column_name": "release_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "release_artists",
+      "column_name": "artist_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "release_artists",
+      "column_name": "role",
+      "data_type": "text"
+    },
+    {
+      "table_name": "release_artists",
+      "column_name": "credited_as",
+      "data_type": "text"
+    },
+    {
+      "table_name": "release_artists",
+      "column_name": "display_order",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "release_artists",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "release_artists",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "title",
+      "data_type": "text"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "type",
+      "data_type": "text"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "release_year",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "label",
+      "data_type": "text"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "country",
+      "data_type": "text"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "release_group_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "release_artist_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "mbid",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "disambiguation",
+      "data_type": "text"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "packaging",
+      "data_type": "text"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "barcode",
+      "data_type": "text"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "catalog_number",
+      "data_type": "text"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "date",
+      "data_type": "date"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "label_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "year",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "slug",
+      "data_type": "text"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "views",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "releases",
+      "column_name": "has_cover_image",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "release_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "recording_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "track_number",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "disc_number",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "title_override",
+      "data_type": "text"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "mbid",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "medium_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "position",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "length",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "tracks",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "work_credit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "source_type",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "source_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "source_reference",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "assertion_status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "verification_status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "observed_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "verified_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "source_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "work_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "artist_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "role",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "credited_as",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "credit_detail",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "sequence",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "verification_status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "role_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "work_credits",
+      "column_name": "external_contributor_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "works",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "works",
+      "column_name": "preferred_title",
+      "data_type": "text"
+    },
+    {
+      "table_name": "works",
+      "column_name": "slug",
+      "data_type": "text"
+    },
+    {
+      "table_name": "works",
+      "column_name": "language",
+      "data_type": "text"
+    },
+    {
+      "table_name": "works",
+      "column_name": "composition_year",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "works",
+      "column_name": "publication_year",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "works",
+      "column_name": "status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "works",
+      "column_name": "editorial_notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "works",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "works",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "works",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    }
+  ],
+  "functions": [
+    {
+      "proname": "get_artist_credited_works_with_roles",
+      "definition": "CREATE OR REPLACE FUNCTION public.get_artist_credited_works_with_roles(p_artist_id uuid)\n RETURNS TABLE(id uuid, title text, performer_artist_id uuid, performer_text text, performer_artist_slug text, performer_artist_name text, release_title text, release_type text, release_year integer, label text, track_number text, source_confidence text, roles text[], created_at timestamp with time zone)\n LANGUAGE sql\n STABLE\n SET search_path TO 'public'\nAS $function$\r\n  SELECT\r\n    cw.id,\r\n    cw.title,\r\n    cw.performer_artist_id,\r\n    cw.performer_text,\r\n    performer_artist.slug,\r\n    performer_artist.name,\r\n    cw.release_title,\r\n    NULL::text AS release_type,\r\n    cw.release_year,\r\n    NULL::text AS label,\r\n    NULL::text AS track_number,\r\n    NULL::text AS source_confidence,\r\n    ARRAY_AGG(cwc.role ORDER BY cwc.role) AS roles,\r\n    cw.created_at\r\n  FROM public.credited_works cw\r\n  INNER JOIN public.credited_work_credits cwc ON cwc.credited_work_id = cw.id\r\n  LEFT JOIN public.artists performer_artist ON performer_artist.id = cw.performer_artist_id\r\n  WHERE cwc.artist_id = p_artist_id\r\n  GROUP BY cw.id, performer_artist.id\r\n  ORDER BY cw.release_year DESC NULLS LAST, cw.title ASC;\r\n$function$\n"
+    },
+    {
+      "proname": "get_artist_discography",
+      "definition": "CREATE OR REPLACE FUNCTION public.get_artist_discography(artist_uuid uuid)\n RETURNS TABLE(release_id uuid, release_title text, release_year integer, release_type text, track_id uuid, disc_number integer, track_number integer, recording_id uuid, recording_title text, duration_ms integer, genre text, subgenre text, recording_context text)\n LANGUAGE sql\n STABLE\n SET search_path TO 'public', 'extensions'\nAS $function$with ranked_releases as (\r\n  select\r\n    rel.*,\r\n    row_number() over (\r\n      partition by coalesce(rel.release_group_id, rel.id)\r\n      order by\r\n        case\r\n          when rel.country = 'DO' then 0\r\n          when rel.country = 'XW' then 1\r\n          when rel.country is null then 2\r\n          else 3\r\n        end,\r\n        rel.date nulls last,\r\n        rel.created_at\r\n    ) as rn\r\n  from public.releases rel\r\n  where rel.release_artist_id = artist_uuid\r\n    and exists (\r\n      select 1\r\n      from public.artists a\r\n      where a.id = artist_uuid\r\n        and a.status = 'published'\r\n    )\r\n),\r\n\r\nselected_releases as (\r\n  select *\r\n  from ranked_releases\r\n  where rn = 1\r\n)\r\n\r\nselect\r\n  rel.id as release_id,\r\n  coalesce(rg.title, rel.title) as release_title,\r\n\r\n  coalesce(\r\n    rg.release_year,\r\n    rel.release_year,\r\n    rel.year\r\n  ) as release_year,\r\n\r\n  coalesce(\r\n    rg.primary_type,\r\n    rel.type,\r\n    rel.metadata #>> '{release-group,primary-type}'\r\n  ) as release_type,\r\n\r\n  t.id as track_id,\r\n  coalesce(t.disc_number, 1) as disc_number,\r\n  coalesce(t.position, t.track_number) as track_number,\r\n\r\n  r.id as recording_id,\r\n  coalesce(t.title_override, r.title) as recording_title,\r\n\r\n  coalesce(t.length, r.duration) as duration_ms,\r\n\r\n  g.name as genre,\r\n  sg.name as subgenre,\r\n\r\n  r.recording_context\r\n\r\nfrom selected_releases rel\r\n\r\nleft join public.release_groups rg\r\n  on rg.id = rel.release_group_id\r\n\r\njoin public.tracks t\r\n  on t.release_id = rel.id\r\n\r\njoin public.recordings r\r\n  on r.id = t.recording_id\r\n\r\nleft join public.genres g\r\n  on g.id = r.genre_id\r\n\r\nleft join public.genres sg\r\n  on sg.id = r.subgenre_id\r\n\r\norder by\r\n  coalesce(rg.release_year, rel.release_year, rel.year) nulls last,\r\n  coalesce(rg.title, rel.title),\r\n  coalesce(t.disc_number, 1),\r\n  coalesce(t.position, t.track_number);$function$\n"
+    },
+    {
+      "proname": "get_artist_song_discography",
+      "definition": "CREATE OR REPLACE FUNCTION public.get_artist_song_discography(artist_uuid uuid)\n RETURNS jsonb\n LANGUAGE sql\n STABLE\n SET search_path TO ''\nAS $function$\n SELECT coalesce(jsonb_agg(to_jsonb(s) ORDER BY s.year NULLS LAST, s.title, s.id), '[]'::jsonb)\n FROM public.public_song_recordings s\n WHERE EXISTS (SELECT 1 FROM public.artists a WHERE a.id = artist_uuid AND a.status = 'published')\n AND (s.artist_id = artist_uuid OR EXISTS (\n   SELECT 1 FROM public.recording_credits c WHERE c.recording_id = s.id AND c.artist_id = artist_uuid\n   AND c.role IN ('lead_performer','featured_performer','guest_performer','vocalist','performer','featured_artist')\n ));\n$function$\n"
+    }
+  ]
+}

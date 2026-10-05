@@ -1,0 +1,15 @@
+import 'dotenv/config';import pg from 'pg';import {readFile,writeFile} from 'node:fs/promises';
+const root='docs/audits/2026-10-02/corrections/',plan=JSON.parse(await readFile(root+'aramis-correction-plan.json')),receipt=JSON.parse(await readFile(root+'aramis-correction-receipt.json'));
+const db=new pg.Client({connectionString:process.env.DATABASE_URL,connectionTimeoutMillis:15000}),result={verifiedAt:new Date().toISOString(),checks:{},discographies:[]};
+function check(name,v){result.checks[name]=Boolean(v);if(!v)throw Error(name);}
+try{await db.connect();await db.query('BEGIN READ ONLY');const rows=(await db.query('SELECT id,artist_id,title,slug FROM recordings WHERE id=ANY($1::uuid[])',[plan.recordings.map(x=>x.recordingId)])).rows;
+check('all14OwnersAndTitles',rows.length===14&&rows.every(r=>{const p=plan.recordings.find(x=>x.recordingId===r.id);return r.artist_id===(p.artistId??p.expectedArtistId)&&r.title===p.expectedTitle;}));
+const evidence=(await db.query('SELECT count(DISTINCT c.recording_credit_id)::int n FROM editorial_assertion_recording_credits c JOIN editorial_assertion_evidence e USING(assertion_id) WHERE c.recording_credit_id=ANY($1::uuid[])',[receipt.credits.map(c=>c.id)])).rows[0].n;check('all14CreditsHaveEvidence',evidence===14);
+check('originalUrlsPreserved',rows.every(r=>r.slug===receipt.recordings.find(c=>c.after.id===r.id)?.before.slug||!receipt.recordings.some(c=>c.after.id===r.id)));
+const rel=(await db.query('SELECT type FROM releases WHERE id=$1',[plan.package.releaseId])).rows[0];check('compilationClassification',rel.type==='compilation');
+const ra=(await db.query("SELECT artist_id FROM release_artists WHERE release_id=$1 AND role='primary'",[plan.package.releaseId])).rows;check('threeSharedReleaseArtists',ra.length===3);
+await db.query('SET LOCAL ROLE anon');const publicRows=(await db.query('SELECT id,artist_id FROM public_song_recordings WHERE id=ANY($1::uuid[])',[rows.map(r=>r.id)])).rows;check('anonymousPublicOwners',publicRows.length===14&&publicRows.every(r=>r.artist_id===rows.find(x=>x.id===r.id).artist_id));
+for(const r of rows){const credits=(await db.query('SELECT * FROM get_public_recording_credits($1::uuid)',[r.id])).rows;check('publicCredit_'+r.id,credits.some(c=>c.identity_id===r.artist_id&&c.role==='lead_performer'));}
+for(const id of ra.map(x=>x.artist_id)){const list=(await db.query('SELECT get_artist_song_discography($1::uuid) rows',[id])).rows[0].rows;const expected=rows.filter(r=>r.artist_id===id).map(r=>r.id),foreign=rows.filter(r=>r.artist_id!==id).map(r=>r.id);check('discography_'+id,expected.every(id=>list.some(r=>r.id===id))&&!list.some(r=>foreign.includes(r.id)));result.discographies.push({artistId:id,correctCompilationSongs:expected.length,foreignCompilationSongs:list.filter(r=>foreign.includes(r.id)).length});}
+await db.query('ROLLBACK');await writeFile(root+'aramis-correction-verification.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));
+}catch(e){await db.query('ROLLBACK').catch(()=>{});console.error(e.message);process.exitCode=1;}finally{await db.end();}

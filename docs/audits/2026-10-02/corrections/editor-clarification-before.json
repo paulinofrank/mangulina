@@ -1,0 +1,855 @@
+{
+  "recordings": [
+    {
+      "id": "02990a6a-ccdd-4d43-be40-73610630bb15",
+      "title": "Sin ti no hay nada",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": null,
+      "metadata": {
+        "id": "95cf4a17-05aa-48ac-83f0-3a594afcf086",
+        "isrcs": [],
+        "title": "Sin ti no hay nada",
+        "video": false,
+        "length": null,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988",
+        "attribution_correction": {
+          "batch": "discography-audit-2026-10-03-fourteen-owners",
+          "sourceUrl": "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+          "limitations": [
+            "Digital catalogs disagree on position 10 (Pero lo dudo / Voy a llenarte toda). Individual performer verified; exact title/master identity remains under review.",
+            "The 11-track imported edition lacks durations and ISRCs. Do not merge it with the 10-track edition.",
+            "Sin ti no hay nada and Si ti no soy nada remain literal imported titles pending original packaging verification."
+          ],
+          "trackPosition": 8
+        }
+      },
+      "created_at": "2026-05-18T14:06:17.509Z",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_year": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "views": 3,
+      "mbid": "95cf4a17-05aa-48ac-83f0-3a594afcf086",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-03T14:25:07.133Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "sin-ti-no-hay-nada-alex-bueno"
+    },
+    {
+      "id": "5b3c5a81-0456-43af-839c-122660ad5748",
+      "title": "Danza kuduro (merengue electrónico remix)",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 252000,
+      "metadata": {
+        "id": "63a173cd-62d2-4470-97fe-85ead79a389d",
+        "isrcs": [],
+        "title": "Danza kuduro (merengue electrónico remix)",
+        "video": false,
+        "length": 252000,
+        "artist-credit": [
+          {
+            "name": "Don Omar",
+            "artist": {
+              "id": "afbdfac9-2955-4404-ae22-c08bf1c1b51e",
+              "name": "Don Omar",
+              "type": "Person",
+              "country": "PR",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Don Omar",
+              "disambiguation": "William Omar Landrón Rivera"
+            },
+            "joinphrase": " feat. "
+          },
+          {
+            "name": "Lucenzo",
+            "artist": {
+              "id": "9d93fcb8-f66a-4576-9bdc-04dd4a1b27c6",
+              "name": "Lucenzo",
+              "type": "Person",
+              "country": "FR",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Lucenzo",
+              "disambiguation": ""
+            },
+            "joinphrase": ", "
+          },
+          {
+            "name": "Pitbull",
+            "artist": {
+              "id": "d262ea27-3ffe-40f7-b922-85c42d625e67",
+              "name": "Pitbull",
+              "type": "Person",
+              "country": "US",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Pitbull",
+              "disambiguation": "American rapper"
+            },
+            "joinphrase": " & "
+          },
+          {
+            "name": "El Cata",
+            "artist": {
+              "id": "73ac884e-76d4-49b9-aa39-983801c2afb1",
+              "name": "El Cata",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Cata, El",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": ""
+      },
+      "created_at": "2026-05-18T13:32:58.700Z",
+      "release_id": "6c77972b-4c5c-4941-b71c-14fbcc504415",
+      "recording_year": null,
+      "artist_id": "4688614f-d936-4fb8-8bf1-04008de4256b",
+      "views": 4,
+      "mbid": "63a173cd-62d2-4470-97fe-85ead79a389d",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-03T16:00:38.028Z",
+      "genre_id": "10",
+      "subgenre_id": "41",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "danza-kuduro-merengue-electronico-remix-maffio"
+    },
+    {
+      "id": "a27f06da-67fe-41be-856c-989339795600",
+      "title": "Voy a llenarte toda",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 318531,
+      "metadata": {
+        "id": "a699847a-ee20-4de4-a4f5-838d1b069451",
+        "isrcs": [
+          "USJ3V1498677"
+        ],
+        "title": "Voy a llenarte toda",
+        "video": false,
+        "length": 318531,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988-01-01",
+        "attribution_correction": {
+          "batch": "discography-audit-2026-10-03-fourteen-owners",
+          "sourceUrl": "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+          "limitations": [
+            "Digital catalogs disagree on position 10 (Pero lo dudo / Voy a llenarte toda). Individual performer verified; exact title/master identity remains under review.",
+            "The 11-track imported edition lacks durations and ISRCs. Do not merge it with the 10-track edition.",
+            "Sin ti no hay nada and Si ti no soy nada remain literal imported titles pending original packaging verification."
+          ],
+          "trackPosition": 10
+        }
+      },
+      "created_at": "2026-05-18T15:49:56.683Z",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_year": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "views": 1,
+      "mbid": "a699847a-ee20-4de4-a4f5-838d1b069451",
+      "disambiguation": null,
+      "isrcs": [
+        "USJ3V1498677"
+      ],
+      "updated_at": "2026-10-03T18:41:24.952Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "voy-a-llenarte-toda-alex-bueno"
+    },
+    {
+      "id": "e63a471f-1cc4-4b07-beff-219c8b3b19d2",
+      "title": "Si ti no soy nada",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 271766,
+      "metadata": {
+        "id": "71f97245-41f1-4632-b8e4-a435717e0bd1",
+        "isrcs": [
+          "USJ3V1498675"
+        ],
+        "title": "Si ti no soy nada",
+        "video": false,
+        "length": 271766,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988-01-01",
+        "attribution_correction": {
+          "batch": "discography-audit-2026-10-03-fourteen-owners",
+          "sourceUrl": "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+          "limitations": [
+            "Digital catalogs disagree on position 10 (Pero lo dudo / Voy a llenarte toda). Individual performer verified; exact title/master identity remains under review.",
+            "The 11-track imported edition lacks durations and ISRCs. Do not merge it with the 10-track edition.",
+            "Sin ti no hay nada and Si ti no soy nada remain literal imported titles pending original packaging verification."
+          ],
+          "trackPosition": 8
+        }
+      },
+      "created_at": "2026-05-18T15:49:56.445Z",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_year": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "views": 1,
+      "mbid": "71f97245-41f1-4632-b8e4-a435717e0bd1",
+      "disambiguation": null,
+      "isrcs": [
+        "USJ3V1498675"
+      ],
+      "updated_at": "2026-10-03T14:25:07.133Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "si-ti-no-soy-nada-alex-bueno"
+    }
+  ],
+  "credits": [
+    {
+      "id": "5286869b-a068-44db-8c85-dc373df1f7d0",
+      "recording_id": "02990a6a-ccdd-4d43-be40-73610630bb15",
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-03T14:25:07.133Z",
+      "metadata": {
+        "batch": "discography-audit-2026-10-03-fourteen-owners",
+        "sourceUrl": "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+        "trackPosition": 8
+      },
+      "credited_as": "Alex Bueno",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "c3500e8a-c2c3-4492-ba5b-be60dfed27e6",
+      "recording_id": "a27f06da-67fe-41be-856c-989339795600",
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-03T14:25:07.133Z",
+      "metadata": {
+        "batch": "discography-audit-2026-10-03-fourteen-owners",
+        "sourceUrl": "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+        "trackPosition": 10
+      },
+      "credited_as": "Alex Bueno",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "0ee9e993-43fc-4cc9-aedf-e4f5779aabff",
+      "recording_id": "e63a471f-1cc4-4b07-beff-219c8b3b19d2",
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-03T14:25:07.133Z",
+      "metadata": {
+        "batch": "discography-audit-2026-10-03-fourteen-owners",
+        "sourceUrl": "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+        "trackPosition": 8
+      },
+      "credited_as": "Alex Bueno",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    }
+  ],
+  "tracks": [
+    {
+      "id": "58e8c537-5bab-45ce-aa6c-c3ceff73bd05",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_id": "02990a6a-ccdd-4d43-be40-73610630bb15",
+      "track_number": 8,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T21:38:22.525Z",
+      "mbid": "9122cbe6-1819-488a-a08b-4869495e6de1",
+      "medium_id": null,
+      "position": 8,
+      "length": null,
+      "metadata": {
+        "track": {
+          "id": "9122cbe6-1819-488a-a08b-4869495e6de1",
+          "title": "Sin ti no hay nada",
+          "length": null,
+          "number": "B3",
+          "position": 8,
+          "recording": {
+            "id": "95cf4a17-05aa-48ac-83f0-3a594afcf086",
+            "isrcs": [],
+            "title": "Sin ti no hay nada",
+            "video": false,
+            "length": null,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "95cf4a17-05aa-48ac-83f0-3a594afcf086",
+          "isrcs": [],
+          "title": "Sin ti no hay nada",
+          "video": false,
+          "length": null,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988"
+        }
+      },
+      "updated_at": "2026-05-18T21:38:22.525Z"
+    },
+    {
+      "id": "f3f248ab-abb8-41de-b73f-73ad263672f3",
+      "release_id": "6c77972b-4c5c-4941-b71c-14fbcc504415",
+      "recording_id": "5b3c5a81-0456-43af-839c-122660ad5748",
+      "track_number": 9,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T21:03:48.428Z",
+      "mbid": "bf816acc-80d1-4991-9003-c6bd254fa081",
+      "medium_id": null,
+      "position": 9,
+      "length": 252000,
+      "metadata": {
+        "track": {
+          "id": "bf816acc-80d1-4991-9003-c6bd254fa081",
+          "title": "Danza kuduro (merengue electrónico remix)",
+          "length": 252000,
+          "number": "9",
+          "position": 9,
+          "recording": {
+            "id": "63a173cd-62d2-4470-97fe-85ead79a389d",
+            "isrcs": [],
+            "title": "Danza kuduro (merengue electrónico remix)",
+            "video": false,
+            "length": 252000,
+            "artist-credit": [
+              {
+                "name": "Don Omar",
+                "artist": {
+                  "id": "afbdfac9-2955-4404-ae22-c08bf1c1b51e",
+                  "name": "Don Omar",
+                  "type": "Person",
+                  "country": "PR",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Don Omar",
+                  "disambiguation": "William Omar Landrón Rivera"
+                },
+                "joinphrase": " feat. "
+              },
+              {
+                "name": "Lucenzo",
+                "artist": {
+                  "id": "9d93fcb8-f66a-4576-9bdc-04dd4a1b27c6",
+                  "name": "Lucenzo",
+                  "type": "Person",
+                  "country": "FR",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Lucenzo",
+                  "disambiguation": ""
+                },
+                "joinphrase": ", "
+              },
+              {
+                "name": "Pitbull",
+                "artist": {
+                  "id": "d262ea27-3ffe-40f7-b922-85c42d625e67",
+                  "name": "Pitbull",
+                  "type": "Person",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Pitbull",
+                  "disambiguation": "American rapper"
+                },
+                "joinphrase": " & "
+              },
+              {
+                "name": "El Cata",
+                "artist": {
+                  "id": "73ac884e-76d4-49b9-aa39-983801c2afb1",
+                  "name": "El Cata",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Cata, El",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": ""
+          },
+          "artist-credit": [
+            {
+              "name": "Don Omar",
+              "artist": {
+                "id": "afbdfac9-2955-4404-ae22-c08bf1c1b51e",
+                "name": "Don Omar",
+                "type": "Person",
+                "country": "PR",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Don Omar",
+                "disambiguation": "William Omar Landrón Rivera"
+              },
+              "joinphrase": " feat. "
+            },
+            {
+              "name": "Lucenzo",
+              "artist": {
+                "id": "9d93fcb8-f66a-4576-9bdc-04dd4a1b27c6",
+                "name": "Lucenzo",
+                "type": "Person",
+                "country": "FR",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Lucenzo",
+                "disambiguation": ""
+              },
+              "joinphrase": ", "
+            },
+            {
+              "name": "Pitbull",
+              "artist": {
+                "id": "d262ea27-3ffe-40f7-b922-85c42d625e67",
+                "name": "Pitbull",
+                "type": "Person",
+                "country": "US",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Pitbull",
+                "disambiguation": "American rapper"
+              },
+              "joinphrase": " & "
+            },
+            {
+              "name": "El Cata",
+              "artist": {
+                "id": "73ac884e-76d4-49b9-aa39-983801c2afb1",
+                "name": "El Cata",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Cata, El",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "63a173cd-62d2-4470-97fe-85ead79a389d",
+          "isrcs": [],
+          "title": "Danza kuduro (merengue electrónico remix)",
+          "video": false,
+          "length": 252000,
+          "artist-credit": [
+            {
+              "name": "Don Omar",
+              "artist": {
+                "id": "afbdfac9-2955-4404-ae22-c08bf1c1b51e",
+                "name": "Don Omar",
+                "type": "Person",
+                "country": "PR",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Don Omar",
+                "disambiguation": "William Omar Landrón Rivera"
+              },
+              "joinphrase": " feat. "
+            },
+            {
+              "name": "Lucenzo",
+              "artist": {
+                "id": "9d93fcb8-f66a-4576-9bdc-04dd4a1b27c6",
+                "name": "Lucenzo",
+                "type": "Person",
+                "country": "FR",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Lucenzo",
+                "disambiguation": ""
+              },
+              "joinphrase": ", "
+            },
+            {
+              "name": "Pitbull",
+              "artist": {
+                "id": "d262ea27-3ffe-40f7-b922-85c42d625e67",
+                "name": "Pitbull",
+                "type": "Person",
+                "country": "US",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Pitbull",
+                "disambiguation": "American rapper"
+              },
+              "joinphrase": " & "
+            },
+            {
+              "name": "El Cata",
+              "artist": {
+                "id": "73ac884e-76d4-49b9-aa39-983801c2afb1",
+                "name": "El Cata",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Cata, El",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": ""
+        }
+      },
+      "updated_at": "2026-05-18T21:03:48.428Z"
+    },
+    {
+      "id": "3699df94-aa67-42b1-98be-16cbe3a5773a",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_id": "a27f06da-67fe-41be-856c-989339795600",
+      "track_number": 10,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T23:12:58.691Z",
+      "mbid": "fba0de6c-bb9d-49a4-ab8e-bee711990b29",
+      "medium_id": null,
+      "position": 10,
+      "length": 318531,
+      "metadata": {
+        "track": {
+          "id": "fba0de6c-bb9d-49a4-ab8e-bee711990b29",
+          "title": "Voy a llenarte toda",
+          "length": 318531,
+          "number": "10",
+          "position": 10,
+          "recording": {
+            "id": "a699847a-ee20-4de4-a4f5-838d1b069451",
+            "isrcs": [
+              "USJ3V1498677"
+            ],
+            "title": "Voy a llenarte toda",
+            "video": false,
+            "length": 318531,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "a699847a-ee20-4de4-a4f5-838d1b069451",
+          "isrcs": [
+            "USJ3V1498677"
+          ],
+          "title": "Voy a llenarte toda",
+          "video": false,
+          "length": 318531,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988-01-01"
+        }
+      },
+      "updated_at": "2026-05-18T23:12:58.691Z"
+    },
+    {
+      "id": "58d3f649-7637-4f57-a213-3929168fb08d",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_id": "e63a471f-1cc4-4b07-beff-219c8b3b19d2",
+      "track_number": 8,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T23:12:58.379Z",
+      "mbid": "5fbd1627-fb0c-45f6-a0ed-a144fc4f92b8",
+      "medium_id": null,
+      "position": 8,
+      "length": 271766,
+      "metadata": {
+        "track": {
+          "id": "5fbd1627-fb0c-45f6-a0ed-a144fc4f92b8",
+          "title": "Si ti no soy nada",
+          "length": 271766,
+          "number": "8",
+          "position": 8,
+          "recording": {
+            "id": "71f97245-41f1-4632-b8e4-a435717e0bd1",
+            "isrcs": [
+              "USJ3V1498675"
+            ],
+            "title": "Si ti no soy nada",
+            "video": false,
+            "length": 271766,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "71f97245-41f1-4632-b8e4-a435717e0bd1",
+          "isrcs": [
+            "USJ3V1498675"
+          ],
+          "title": "Si ti no soy nada",
+          "video": false,
+          "length": 271766,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988-01-01"
+        }
+      },
+      "updated_at": "2026-05-18T23:12:58.379Z"
+    }
+  ],
+  "identities": [
+    {
+      "id": "4688614f-d936-4fb8-8bf1-04008de4256b",
+      "name": "Maffio",
+      "slug": "maffio",
+      "status": "published"
+    },
+    {
+      "id": "d4551f69-84e9-4c33-a51e-1dbd8ea2aff0",
+      "name": "El Cata",
+      "slug": "el-cata",
+      "status": "published"
+    }
+  ],
+  "external": [
+    {
+      "id": "b0111ae8-06a8-449b-95ca-b297f83db536",
+      "preferred_name": "Milton de Oliveira",
+      "sort_name": null,
+      "entity_type": "person",
+      "country_code": null,
+      "country": null,
+      "date_of_birth": null,
+      "date_of_death": null,
+      "birth_place": null,
+      "occupations": [],
+      "status": "draft",
+      "has_image": false,
+      "image_updated_at": null,
+      "editorial_notes": null,
+      "metadata": {
+        "batch": "discography-audit-2026-10-02-authorship-213-corrections",
+        "sourceUrl": "https://www.qobuz.com/es-es/album/nao-tenho-lagrimas-ivete-sangalo-juan-luis-guerra/5099952092251"
+      },
+      "created_by": null,
+      "created_at": "2026-10-03T02:58:40.407Z",
+      "updated_at": "2026-10-03T02:58:40.407Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "code": "lead_performer"
+    },
+    {
+      "id": "06239dc1-d10a-433e-90f2-a7cbc0a9420b",
+      "code": "featured_performer"
+    },
+    {
+      "id": "fb4b9855-ebb3-4913-b7e1-5d9f975b2733",
+      "code": "producer"
+    }
+  ],
+  "slugs": [
+    {
+      "id": "e0352817-a103-43b2-af46-15ae193e5628",
+      "title": "Sin ti no soy nada",
+      "slug": "sin-ti-no-soy-nada-alex-bueno"
+    },
+    {
+      "id": "f3751fcb-8f05-4d88-b42c-161bf15c99aa",
+      "title": "Sin ti no soy nada",
+      "slug": "sin-ti-no-soy-nada-alex-bueno-2"
+    }
+  ]
+}

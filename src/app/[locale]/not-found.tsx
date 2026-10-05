@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+"use client";
+
 import Image from "next/image";
 import { Search } from "lucide-react";
-import { getLocale, getTranslations } from "next-intl/server";
+import { useLocale, useTranslations } from "next-intl";
 
 import { getPathname } from "@/i18n/navigation";
 import MainWrapper from "@/components/layout/MainWrapper";
@@ -13,18 +14,12 @@ import PageSection from "@/components/layout/PageSection";
 // it, so the header (logo, search), the floating bottom nav (Home, Discover,
 // language) and the footer stay; the page adds only the message and a search.
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("notFound");
-  return {
-    // Absolute: nested layouts (e.g. /artists) add their own "| Mangulina" template.
-    title: { absolute: t("metadataTitle") },
-    robots: { index: false, follow: false },
-  };
-}
-
-export default async function NotFound() {
-  const locale = await getLocale();
-  const t = await getTranslations("notFound");
+// Read the layout's locale provider without request headers. A formerly cached
+// catalog page can become missing after an editorial slug correction; reading
+// headers only on that path would turn static revalidation into a runtime 500.
+export default function NotFound() {
+  const locale = useLocale();
+  const t = useTranslations("notFound");
   const searchAction = getPathname({ href: "/search", locale });
 
   return (

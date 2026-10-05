@@ -1,0 +1,34 @@
+{
+  "snapshotAt": "2026-10-02T22:25:39.919Z",
+  "counts": {
+    "artists": 896,
+    "recordings": 22377,
+    "releases": 5078,
+    "tracks": 27755,
+    "recording_credits": 7342,
+    "release_artists": 3476,
+    "works": 1533,
+    "work_credits": 1617,
+    "credited_works": 593,
+    "credited_work_credits": 362,
+    "work_credit_sources": 2,
+    "credit_roles": 21,
+    "public_song_recordings": 22145
+  },
+  "checks": {
+    "danglingTrackRecording": 0,
+    "danglingTrackRelease": 0,
+    "danglingRecordingArtist": 0,
+    "danglingRecordingWork": 0,
+    "recording_creditsSemanticDuplicates": 0,
+    "work_creditsSemanticDuplicates": 0
+  },
+  "rawOwnerMetadataMismatch": 1085,
+  "exactOtherArtistCandidates": 178,
+  "missingImportedPerformerCandidates": 1210,
+  "unanchoredWorks": 24,
+  "workCreditVerification": {
+    "unverified": 1014,
+    "verified": 603
+  }
+}

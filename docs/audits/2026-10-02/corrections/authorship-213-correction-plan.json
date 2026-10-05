@@ -1,0 +1,473 @@
+{
+  "createdAt": "2026-10-03T02:57:53.424Z",
+  "changes": [
+    {
+      "title": "Mi guitarra",
+      "workId": "3c085306-6ce9-4fae-a2c4-e257ef3e4732",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/mi-guitarra-javier-limon-juan-luis-guerra-nella/g09ndtqtkppma",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Mi Guitarra",
+        "artist": "",
+        "credits": [
+          "Javier Limon, MainArtist, AssociatedPerformer, Producer, ComposerLyricist, Arranger, Work Arranger - Juan Luis Guerra, MainArtist, AssociatedPerformer, Voice - Nella, MainArtist, AssociatedPerformer, Voice - Allan Leschhorn, StudioPersonnel, Recording Engineer - Javier Lopez, StudioPersonnel, Recording Engineer - Aurelio Estebanez, StudioPersonnel, Mix Engineer - Caco Refojo, StudioPersonnel, Mastering Engineer - Juan De La Cruz, AssociatedPerformer - Jeremias King, AssociatedPerformer, Double Bass - Janina Rosado, AssociatedPerformer, Keyboards",
+          "℗ 2021 Universal Music Spain, S.L.U."
+        ],
+        "duration": "00:03:37"
+      },
+      "recordingIds": [
+        "f0be495c-caee-4d11-8d48-00b9fafc9a91"
+      ],
+      "previous": [
+        {
+          "id": "ebfb74a9-2b97-481c-be69-c5d2b5595385",
+          "work_id": "3c085306-6ce9-4fae-a2c4-e257ef3e4732",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "17e0ee8a-2385-4d05-89dc-3b047915ca48",
+          "work_id": "3c085306-6ce9-4fae-a2c4-e257ef3e4732",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Javier Limón",
+          "creditedAs": "Javier Limon",
+          "role": "composer"
+        },
+        {
+          "name": "Javier Limón",
+          "creditedAs": "Javier Limon",
+          "role": "lyricist"
+        }
+      ]
+    },
+    {
+      "title": "Dios así lo quiso",
+      "workId": "70c3b6ca-28a6-41df-ac9f-08bee55ebaa9",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/dios-asi-lo-quiso-ricardo-montaner-juan-luis-guerra-440/z5i2pgki0qk4a",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Dios Así Lo Quiso",
+        "artist": "",
+        "credits": [
+          "Yasmil Marrufo, Composer, Producer - Ricardo Montaner, Composer, Author, Producer, MainArtist - Jonathan Julca, Composer - David Julca, Composer - Juan Luis Guerra 4.40, MainArtist - XAXO, Producer - Camilo Echeverry, Composer - HECHO A MANO MUSIC, MusicPublisher",
+          "(C) 2021 Hecho A Mano Music, LLC (P) 2021 Hecho A Mano Music, LLC"
+        ],
+        "duration": "00:03:33"
+      },
+      "recordingIds": [
+        "9a6cf921-cbdf-4dd6-869b-c95ee6ad2155"
+      ],
+      "previous": [
+        {
+          "id": "e898d82a-0104-4513-9525-6157ab7c703e",
+          "work_id": "70c3b6ca-28a6-41df-ac9f-08bee55ebaa9",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Yasmil Marrufo",
+          "creditedAs": "Yasmil Marrufo",
+          "role": "composer"
+        },
+        {
+          "name": "Ricardo Montaner",
+          "creditedAs": "Ricardo Montaner",
+          "role": "composer"
+        },
+        {
+          "name": "Jonathan Julca",
+          "creditedAs": "Jonathan Julca",
+          "role": "composer"
+        },
+        {
+          "name": "David Julca",
+          "creditedAs": "David Julca",
+          "role": "composer"
+        },
+        {
+          "name": "Camilo Echeverry",
+          "creditedAs": "Camilo Echeverry",
+          "role": "composer"
+        }
+      ]
+    },
+    {
+      "title": "No quiero lágrimas (Não tenho lágrimas)",
+      "workId": "21dd50db-2701-41bc-a879-6755948d71bb",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/nao-tenho-lagrimas-ivete-sangalo-juan-luis-guerra/5099952092251",
+      "sourceTrack": {
+        "position": 1,
+        "title": "No Quiero Lágrimas (Não Tenho Lágrimas)",
+        "artist": "Juan Luis Guerra",
+        "credits": [
+          "Ivete Sangalo, MainArtist - Juan Luis Guerra, MainArtist - Max Bulhões, ComposerLyricist - Milton De Oliveira, ComposerLyricist - Ge Alves Pinto, Composer",
+          "℗ 2007 Zeca Pagodiscos e Musica Fabril"
+        ],
+        "duration": "00:03:34"
+      },
+      "recordingIds": [
+        "faa73d54-9e27-48f6-af31-ca3e6a33d99a"
+      ],
+      "previous": [
+        {
+          "id": "a14a19d0-1cf6-4ec6-99e4-b8dcbd379059",
+          "work_id": "21dd50db-2701-41bc-a879-6755948d71bb",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "b8dde045-2841-4455-9a8c-2dffc151d48b",
+          "work_id": "21dd50db-2701-41bc-a879-6755948d71bb",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Max Bulhões",
+          "creditedAs": "Max Bulhões",
+          "role": "composer"
+        },
+        {
+          "name": "Max Bulhões",
+          "creditedAs": "Max Bulhões",
+          "role": "lyricist"
+        },
+        {
+          "name": "Milton de Oliveira",
+          "creditedAs": "Milton De Oliveira",
+          "role": "composer"
+        },
+        {
+          "name": "Milton de Oliveira",
+          "creditedAs": "Milton De Oliveira",
+          "role": "lyricist"
+        },
+        {
+          "name": "Ge Alves Pinto",
+          "creditedAs": "Ge Alves Pinto",
+          "role": "composer"
+        }
+      ]
+    },
+    {
+      "title": "Las de Juan Luis",
+      "workId": "09e75252-7878-4e3c-a8fd-048b219af29d",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/las-de-juan-luis-luis-segura-juan-luis-guerra-440/vcpbg99fh05da",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Las de Juan Luis",
+        "artist": "",
+        "credits": [
+          "Luis Segura, MainArtist - Andrés Mayo, Producer - Juan Luis Guerra 4.40, Producer, MainArtist - Luis Gonzaga Segura, ComposerLyricist - Edward Segura, Producer",
+          "2022 WQ Producciones 2022 WQ Producciones"
+        ],
+        "duration": "00:03:57"
+      },
+      "recordingIds": [
+        "b81a18b0-0068-4524-860f-ea5cc80c236e"
+      ],
+      "previous": [
+        {
+          "id": "d1f8654f-459a-42da-bcea-6ac1ca7959bc",
+          "work_id": "09e75252-7878-4e3c-a8fd-048b219af29d",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "cc61d331-4799-4855-86cb-d10296aab268",
+          "work_id": "09e75252-7878-4e3c-a8fd-048b219af29d",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Luis Segura",
+          "creditedAs": "Luis Gonzaga Segura",
+          "role": "composer",
+          "artistId": "5ceceef0-765d-4e01-8017-85422a263357"
+        },
+        {
+          "name": "Luis Segura",
+          "creditedAs": "Luis Gonzaga Segura",
+          "role": "lyricist",
+          "artistId": "5ceceef0-765d-4e01-8017-85422a263357"
+        }
+      ]
+    },
+    {
+      "title": "Live in Love",
+      "workId": "a29f9d2c-3aba-41c7-a2da-51ba7b783f9c",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/live-in-love-philip-lassiter-juan-luis-guerra-440-josje/x5axn29ofn11b",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Live in Love",
+        "artist": "",
+        "credits": [
+          "Philip Lassiter, Composer, MainArtist - Juan Luis Guerra 4.40, MainArtist - Brett Nolan, Composer - Josje, MainArtist - Philip Lassiter Music / SESAC, MusicPublisher - Brett Nolan Publishing Company / ASCAP, MusicPublisher",
+          "(C) 2021 Delta Music Media GmbH (P) 2021 Delta Music Media GmbH"
+        ],
+        "duration": "00:06:00"
+      },
+      "recordingIds": [
+        "29feb699-91d8-47d4-b7f9-2c27bfa02e8a"
+      ],
+      "previous": [
+        {
+          "id": "81f3c1b4-1047-45d1-8318-2b949ab8c9cf",
+          "work_id": "a29f9d2c-3aba-41c7-a2da-51ba7b783f9c",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Philip Lassiter",
+          "creditedAs": "Philip Lassiter",
+          "role": "composer"
+        },
+        {
+          "name": "Brett Nolan",
+          "creditedAs": "Brett Nolan",
+          "role": "composer"
+        }
+      ]
+    },
+    {
+      "title": "Esto es vida (bachata remix)",
+      "workId": "cb02b449-cc26-4f6a-a916-e41b786eacd1",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/esto-es-vida-draco-rosa-feat-juan-luis-guerra/0886444195775",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Esto Es Vida  (Bachata Remix)",
+        "artist": "",
+        "credits": [
+          "Draco Rosa, Associated Performer, Keyboards, Main Artist, Producer, Programmer, Associated Performer, Keyboards, Producer, Programmer\n - Juan Luis Guerra, Associated Performer, Featured Artist\n - Draco Rosa Feat. Juan Luis Guerra, Associated Performer\n - Draco Cornelius Rosa, Composer, Lyricist\n - Luis Gomez Escolar, Composer, Lyricist\n - Anastasios Panos, Drums\n - Chris Bruce, Guitar\n - Christian Nieves, Other\n - David Piltch, Bass Guitar\n - Luis Conte, Percussion\n - Juan Covarrubias, Keyboards, Programmer\n - Mr. Blake, Keyboards, Programmer\n - David Palmer, Keyboards, Programmer\n - The String Box Ensemble, Strings\n - George Noriega, Assistant Producer\n - Eddie Perez, Re-Mixer\n - Angelo Medina, Executive Producer\n - Normaris Cruz\n - Tom Baumgartner\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Ali Helnwein\n - Seth Atkins Horan, Recording Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Allan Leschhorn, Recording Engineer\n - BENNY FACCONE, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:22"
+      },
+      "recordingIds": [
+        "6f771abf-1f01-4b65-af59-083bb789e6b8"
+      ],
+      "previous": [
+        {
+          "id": "cd0f734e-d395-445d-9131-36b30dc09ae4",
+          "work_id": "cb02b449-cc26-4f6a-a916-e41b786eacd1",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "eefd9178-f403-4a76-9b3e-31b4619d2685",
+          "work_id": "cb02b449-cc26-4f6a-a916-e41b786eacd1",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "Draco Cornelius Rosa",
+          "role": "composer"
+        },
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "Draco Cornelius Rosa",
+          "role": "lyricist"
+        },
+        {
+          "name": "Luis Gómez Escolar",
+          "creditedAs": "Luis Gomez Escolar",
+          "role": "composer"
+        },
+        {
+          "name": "Luis Gómez Escolar",
+          "creditedAs": "Luis Gomez Escolar",
+          "role": "lyricist"
+        }
+      ]
+    },
+    {
+      "title": "Cecilia",
+      "workId": "ed3e59c9-5b3b-414f-88dd-e73353d451d9",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/vida-cotidiana-juanes/kki7zm3r11h6a",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Cecilia",
+        "artist": "",
+        "credits": [
+          "Juanes, MainArtist, AssociatedPerformer, Voice, Producer, StudioPersonnel, Recording Engineer - Juan Luis Guerra 4.40, MainArtist, AssociatedPerformer, Voice - Sebastian Krys, Producer, StudioPersonnel, Engineer, Mixer - Emmanuel Briceño, Producer, Co-Producer, StudioPersonnel, Engineer, AssociatedPerformer, Keyboards - Daniel \"Vago\" Galindo, StudioPersonnel, Engineer, Mixer - Jose Lopez, StudioPersonnel, Recording Engineer - Guillermo Diaz, StudioPersonnel, Asst. Recording Engineer - Benjamín Gloria, AssociatedPerformer, Drums - Brian Lucey, StudioPersonnel, Mastering Engineer - Marcelo Novati, AssociatedPerformer - RICHARD BRAVO, AssociatedPerformer - Juan Pablo Daza, AssociatedPerformer - Felipe Navia, AssociatedPerformer - Steve Berlin, AssociatedPerformer - Duarte Figueira, A&R - Juan Estebán Aristizábal Vásquez, ComposerLyricist - Emmanuel Briceño Vera, ComposerLyricist",
+          "℗ 2023 UMG Recordings, Inc."
+        ],
+        "duration": "00:03:28"
+      },
+      "recordingIds": [
+        "6bfb9bc2-9fb3-4a3b-b6e0-cfa2ed37597a"
+      ],
+      "previous": [
+        {
+          "id": "3faa9544-fef6-470a-be8c-b0c832b723c8",
+          "work_id": "ed3e59c9-5b3b-414f-88dd-e73353d451d9",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "e1b3f8b4-508e-4f66-ad0c-46c05688d6d1",
+          "work_id": "ed3e59c9-5b3b-414f-88dd-e73353d451d9",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Juanes",
+          "creditedAs": "Juan Estebán Aristizábal Vásquez",
+          "role": "composer"
+        },
+        {
+          "name": "Juanes",
+          "creditedAs": "Juan Estebán Aristizábal Vásquez",
+          "role": "lyricist"
+        },
+        {
+          "name": "Emmanuel Briceño Vera",
+          "creditedAs": "Emmanuel Briceño Vera",
+          "role": "composer"
+        },
+        {
+          "name": "Emmanuel Briceño Vera",
+          "creditedAs": "Emmanuel Briceño Vera",
+          "role": "lyricist"
+        }
+      ]
+    }
+  ]
+}

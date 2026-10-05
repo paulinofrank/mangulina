@@ -3,6 +3,7 @@ import test from "node:test";
 import { readFileSync } from "node:fs";
 import {
   formatDurationMilliseconds,
+  externalPortfolioWorks,
   groupPortfolioRecordings,
   suppressRecordingRolesRepresentedAtWork,
   type GroupablePortfolioRecording,
@@ -70,10 +71,29 @@ test("public portfolio uses role tabs, catalog covers, and an international work
   assert.doesNotMatch(tabs, /Composition →/);
 });
 
-test("Works & Credits is limited to work performed by other artists", () => {
-  const shell = readFileSync("src/components/organisms/ArtistWorksPortfolio.tsx", "utf8");
-  const query = readFileSync("src/lib/getArtistWorksPortfolio.ts", "utf8");
-  assert.match(shell, /performer\.artistId !== artistId/);
-  assert.match(shell, /!sameArtistName/);
-  assert.match(query, /recording\.artist_id !== artistId/);
+test("portfolio retains external versions and recomputes roles without self versions", () => {
+  const own = { ...recording({ id: "own", roles: ["composer"] }), recordingArtistId: "self",
+    performers: [{ artistId: "self", artistName: "Artist", creditedAs: null }] };
+  const other = { ...recording({ id: "other", roles: ["arranger"] }), recordingArtistId: "other",
+    performers: [{ artistId: "other", artistName: "Other", creditedAs: null }] };
+  const result = externalPortfolioWorks(groupPortfolioRecordings([own, other]), "self", "Artist");
+  assert.deepEqual(result[0].recordings.map((r) => r.id), ["other"]);
+  assert.deepEqual(result[0].roles, ["arranger"]);
+});
+
+test("duets, text self credits and unidentified performers do not become external work", () => {
+  const base = { ...recording({}), recordingArtistId: "other" };
+  const duet = { ...base, performers: [{ artistId: "self", artistName: "Artist", creditedAs: null },
+    { artistId: "other", artistName: "Other", creditedAs: null }] };
+  const text = { ...base, performers: [{ artistId: null, artistName: null, creditedAs: " artist " }] };
+  const unknown = { ...base, performers: [] };
+  for (const item of [duet, text, unknown]) {
+    assert.deepEqual(externalPortfolioWorks(groupPortfolioRecordings([item]), "self", "Artist"), []);
+  }
+});
+
+test("an external performer can appear without a Dominican artist entity", () => {
+  const item = { ...recording({}), recordingArtistId: null,
+    performers: [{ artistId: null, artistName: "External Performer", creditedAs: null }] };
+  assert.equal(externalPortfolioWorks(groupPortfolioRecordings([item]), "self", "Artist").length, 1);
 });

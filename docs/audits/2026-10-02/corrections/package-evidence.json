@@ -1,0 +1,22 @@
+[
+  {
+    "url": "http://coverartarchive.org/release/b2292ff5-f723-4d66-9b9b-a4e959b95aa7/17457931230.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/b2292ff5-f723-4d66-9b9b-a4e959b95aa7",
+    "file": "docs/audits/2026-10-02/corrections/encuentro-front.jpg",
+    "types": [
+      "Front"
+    ],
+    "retrievedAt": "2026-10-02T23:23:30.846Z",
+    "sha256": "eb72295b0623d390a42f93e023de0818c166dc64b519fc7ab5161767d2a14134"
+  },
+  {
+    "url": "http://coverartarchive.org/release/b2292ff5-f723-4d66-9b9b-a4e959b95aa7/17457932811.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/b2292ff5-f723-4d66-9b9b-a4e959b95aa7",
+    "file": "docs/audits/2026-10-02/corrections/encuentro-back.jpg",
+    "types": [
+      "Back"
+    ],
+    "retrievedAt": "2026-10-02T23:23:31.943Z",
+    "sha256": "53f063e4967758148f8afa8a3e8ec59d4a7be3909df451cfb4b247f1b867e265"
+  }
+]

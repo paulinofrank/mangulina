@@ -1,0 +1,3782 @@
+[
+  {
+    "url": "https://www.qobuz.com/ie-en/album/dos-x-uno-eddy-herrera-los-toros-band/d5m5ax01dyxna",
+    "retrievedAt": "2026-10-02T23:33:23.391Z",
+    "htmlSha256": "5049b142218d471b9cd6994e472c7edb5c124c235b610ba44bb96ca0498ebea1",
+    "title": "Dos X Uno by Eddy Herrera & Los Toros Band",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Demasiado Niña",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Eddy Herrera, MainArtist - UNIVERSAL MUSICA, INC., MusicPublisher - Melvin Rafael, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:30"
+      },
+      {
+        "position": 2,
+        "title": "Seguiré Buscandola",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Pendiente, MusicPublisher - Reyes, Composer - Eddy Herrera, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:45"
+      },
+      {
+        "position": 3,
+        "title": "Su Mirada / Loco, Loco",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Eddy Herrera, MainArtist - Juan & Nelson Publishing, MusicPublisher - Leonardo Robles, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:27"
+      },
+      {
+        "position": 4,
+        "title": "Me Gusta",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Pendiente, MusicPublisher - Cabrera, Composer - Eddy Herrera, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:27"
+      },
+      {
+        "position": 5,
+        "title": "Me Enamoré",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Eddy Herrera, MainArtist - UNIVERSAL MUSICA, INC., MusicPublisher - Martin De León Tirado, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:03:20"
+      },
+      {
+        "position": 6,
+        "title": "Estoy Queriéndola",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Pendiente, MusicPublisher - Reyes, Composer - Eddy Herrera, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:20"
+      },
+      {
+        "position": 7,
+        "title": "Mujeres",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Eddy Herrera, MainArtist - UNIVERSAL MUSICA, INC., MusicPublisher - Martin De León Tirado, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:03:46"
+      },
+      {
+        "position": 8,
+        "title": "Es Ella",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Pendiente, MusicPublisher - Santana, Composer - Eddy Herrera, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:37"
+      },
+      {
+        "position": 9,
+        "title": "No Aguanto Más",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Eddy Herrera, MainArtist - UNIVERSAL MUSICA, INC., MusicPublisher - Fulton Vasquez Rodriguez, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:05:28"
+      },
+      {
+        "position": 10,
+        "title": "Espumas",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Jorge Villamil, Composer - Eddy Herrera, MainArtist - Vander Music, Inc., MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:06"
+      },
+      {
+        "position": 11,
+        "title": "Te Confieso",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Pendiente, MusicPublisher - Eddy Herrera, MainArtist - Baroni, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:03:49"
+      },
+      {
+        "position": 12,
+        "title": "La Quise Mucho",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Pendiente, MusicPublisher - Eddy Herrera, MainArtist - Villalona, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:03:50"
+      },
+      {
+        "position": 13,
+        "title": "Y Te Busqué",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Pendiente, MusicPublisher - Vásquez, Composer - Eddy Herrera, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:08"
+      },
+      {
+        "position": 14,
+        "title": "Pégame Tu Vicio",
+        "artist": "Eddy Herrera",
+        "credits": [
+          "Elvis Samuel Méndez, Composer - Eddy Herrera, MainArtist - Cibao Music Company, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:05:00"
+      },
+      {
+        "position": 15,
+        "title": "Si Tú No Me Quieres",
+        "artist": "Los Toros Band",
+        "credits": [
+          "Los Toros Band, MainArtist - UNIVERSAL MUSICA, INC., MusicPublisher - Renato \"Rento\" Arias, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:13"
+      },
+      {
+        "position": 16,
+        "title": "Quizás Sí, Quizás No",
+        "artist": "Los Toros Band",
+        "credits": [
+          "Los Toros Band, MainArtist - Sadaic Latin Copyrights, Inc., MusicPublisher - Hector Ruiz, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:40"
+      },
+      {
+        "position": 17,
+        "title": "El Borracho",
+        "artist": "Los Toros Band",
+        "credits": [
+          "Nelson Mendoza, Composer - Los Toros Band, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:39"
+      },
+      {
+        "position": 18,
+        "title": "Si Yo Pudiera",
+        "artist": "Los Toros Band",
+        "credits": [
+          "Pendiente, MusicPublisher - Los Toros Band, MainArtist - Derechos De Autor Reservados, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:28"
+      },
+      {
+        "position": 19,
+        "title": "Eres",
+        "artist": "Los Toros Band",
+        "credits": [
+          "Sandy Jorge, Composer - Pendiente, MusicPublisher - Los Toros Band, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:49"
+      },
+      {
+        "position": 20,
+        "title": "El Rondón",
+        "artist": "Los Toros Band",
+        "credits": [
+          "Confesor Rosario, Composer - Los Toros Band, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:41"
+      },
+      {
+        "position": 21,
+        "title": "Mi Hembra",
+        "artist": "Los Toros Band",
+        "credits": [
+          "Nelson Mendoza, Composer - Los Toros Band, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:03:54"
+      },
+      {
+        "position": 22,
+        "title": "No Te Niegues",
+        "artist": "Los Toros Band",
+        "credits": [
+          "Pendiente, MusicPublisher - Freddy Reyes, Composer - Los Toros Band, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:24"
+      },
+      {
+        "position": 23,
+        "title": "La Prieta",
+        "artist": "Los Toros Band",
+        "credits": [
+          "Los Toros Band, MainArtist - Juan & Nelson Publishing, MusicPublisher - Rosa Pontier, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:04:24"
+      },
+      {
+        "position": 24,
+        "title": "Dónde Esta Corazón / Mi Debilidad /Es Mejor Morir, Morir / Entre Tu Amor y Mi Amor",
+        "artist": "Los Toros Band",
+        "credits": [
+          "Luis Martinez Serrano, Composer - Osvaldo Geldres, Composer - Los Toros Band, MainArtist - Edward B. Marks Music Co., MusicPublisher - Peer International, Corp., MusicPublisher - Anibal de Peña, Composer - Vander Music OBO Unimusica Venezuela, MusicPublisher - Héctor José Diaz, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records, LLC"
+        ],
+        "duration": "00:05:03"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/es-es/album/dos-x-uno-junior-jorge-luis-vargas/mufz3ew3u2sla",
+    "retrievedAt": "2026-10-02T23:33:23.329Z",
+    "htmlSha256": "a8592e7f58eec03973387b40fd65726c36ef6ed3ddcda0d39beff450ff61ef35",
+    "title": "Dos X Uno by Junior & Jorge & Luis Vargas",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Camino Sin Regreso",
+        "artist": "Junior & Jorge",
+        "credits": [
+          "Antonio \"toño\" Meriño, Composer - Junior & Jorge, MainArtist - Sunflower Music OBO LG Music, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:05:13"
+      },
+      {
+        "position": 2,
+        "title": "Olvidate de El",
+        "artist": "Junior & Jorge",
+        "credits": [
+          "Jose Mendoza, Composer - Juan & Nelson Publishing, MusicPublisher - Junior & Jorge, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:04:06"
+      },
+      {
+        "position": 3,
+        "title": "Cuando Te Hayas Ido",
+        "artist": "Junior & Jorge",
+        "credits": [
+          "Jorge Morel, Composer - Juan & Nelson Publishing, MusicPublisher - Junior & Jorge, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:04:15"
+      },
+      {
+        "position": 4,
+        "title": "Dos Como Ella",
+        "artist": "Junior & Jorge",
+        "credits": [
+          "Juan & Nelson Publishing, MusicPublisher - Robert Feliz Peña, Composer - Junior & Jorge, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:04:04"
+      },
+      {
+        "position": 5,
+        "title": "Nunca Niegues Que Te Amo",
+        "artist": "Junior & Jorge",
+        "credits": [
+          "Wilfran Castillo, Composer - Junior & Jorge, MainArtist - Sunflower Music Inc OBO Edimusica USA, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:04:54"
+      },
+      {
+        "position": 6,
+        "title": "Mi Complice",
+        "artist": "Junior & Jorge",
+        "credits": [
+          "Vander Music inc, MusicPublisher - Junior & Jorge, MainArtist - Jose Manuel Figueroa aka Joan Sebastian, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:03:32"
+      },
+      {
+        "position": 7,
+        "title": "Amor de Mentira",
+        "artist": "Junior & Jorge",
+        "credits": [
+          "Pendiente, MusicPublisher - Derechos Reservados de Autor, Composer - Junior & Jorge, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:04:36"
+      },
+      {
+        "position": 8,
+        "title": "Cuando Puedas",
+        "artist": "Junior & Jorge",
+        "credits": [
+          "Jorge Morel, Composer - Juan & Nelson Publishing, MusicPublisher - Junior & Jorge, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:03:33"
+      },
+      {
+        "position": 9,
+        "title": "Amigo",
+        "artist": "Junior & Jorge",
+        "credits": [
+          "Juan & Nelson Publishing, MusicPublisher - Junior & Jorge, MainArtist - Junior Arias, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:03:23"
+      },
+      {
+        "position": 10,
+        "title": "Yo No Te Voy a Perder",
+        "artist": "Junior & Jorge",
+        "credits": [
+          "Juan & Nelson Publishing, MusicPublisher - Junior & Jorge, MainArtist - Daniel De Jesus \"Daniel Moncion\" Pichardo, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:03:39"
+      },
+      {
+        "position": 11,
+        "title": "No Mientas",
+        "artist": "Junior & Jorge",
+        "credits": [
+          "Jorge Morel, Composer - Juan & Nelson Publishing, MusicPublisher - Junior & Jorge, MainArtist",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:03:28"
+      },
+      {
+        "position": 12,
+        "title": "Mentira",
+        "artist": "Junior & Jorge",
+        "credits": [
+          "Juan & Nelson Publishing, MusicPublisher - Junior & Jorge, MainArtist - Daniel De Jesus \"Daniel Moncion\" Pichardo, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:04:24"
+      },
+      {
+        "position": 13,
+        "title": "Tarde Te Arrepientes",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist - Universal Musica Inc OBO Prodemus, MusicPublisher - Nixon Javier, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:04:32"
+      },
+      {
+        "position": 14,
+        "title": "Que Hago",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Jorge Celedón Guerra, Composer - Luis Vargas, MainArtist - Universal Musica Inc OBO Prodemus, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:05:03"
+      },
+      {
+        "position": 15,
+        "title": "El Lloron",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist - Juan & Nelson Publishing, MusicPublisher - Luis R Valdez Vargas AKA Luis Vargas, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:05:12"
+      },
+      {
+        "position": 16,
+        "title": "Rosa Prohibida",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Victor Reyes, Composer - Luis Vargas, Composer, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:02:59"
+      },
+      {
+        "position": 17,
+        "title": "Vieja del Bonche",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist - Juan & Nelson Publishing, MusicPublisher - Luis R Valdez Vargas AKA Luis Vargas, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:05:06"
+      },
+      {
+        "position": 18,
+        "title": "Me Equivoque",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist - Juan & Nelson Publishing, MusicPublisher - Luis R Valdez AKA Luis Vargas, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:03:10"
+      },
+      {
+        "position": 19,
+        "title": "Mami Mami",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist - Juan & Nelson Publishing, MusicPublisher - Luis R Valdez Vargas AKA Luis Vargas, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:04:04"
+      },
+      {
+        "position": 20,
+        "title": "Que Te Aproveche",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist - Universal Musica Inc, MusicPublisher - Nixon Javier, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:04:30"
+      },
+      {
+        "position": 21,
+        "title": "Niña de Pelo Negro",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist - Juan & Nelson Publishing, MusicPublisher - Luis R Valdez Vargas AKA Luis Vargas, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:05:49"
+      },
+      {
+        "position": 22,
+        "title": "Señora",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist - Juan & Nelson Publishing, MusicPublisher - Luis R Valdez Vargas AKA Luis Vargas, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:04:22"
+      },
+      {
+        "position": 23,
+        "title": "La Cosquillita",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist - Juan & Nelson Publishing, MusicPublisher - Pablo Luna Fermin, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records LLC"
+        ],
+        "duration": "00:04:55"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/us-en/album/bachata-fest-vol-1-frank-reyes-raulin-rodriguez-zacarias-ferreira/pwy1xz94q4qca",
+    "retrievedAt": "2026-10-02T23:33:23.263Z",
+    "htmlSha256": "cc4a66fae3496b370108746dddcc7c1c7600d2e3af7eb97f0c940cd0c03c0139",
+    "title": "Bachata Fest, Vol. 1 by Frank Reyes, Raulin Rodriguez & Zacarias Ferreira",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Quien Eres Tú",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Juan Hidalgo, Producer - Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher - Martin De León Tirado, Composer - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:22"
+      },
+      {
+        "position": 2,
+        "title": "Si No Te Tengo",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Wilfran Castillo, Composer - Juan Hidalgo, Producer - Raulin Rodriguez, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:05:23"
+      },
+      {
+        "position": 3,
+        "title": "Dime Que Faltó",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Juan Hidalgo, Producer - Zacarias Ferreira, Composer, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:15"
+      },
+      {
+        "position": 4,
+        "title": "Tu Eres Ajena",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Juan Hidalgo, Producer - Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer - Alejandro Montero Lorenzo, Composer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:01"
+      },
+      {
+        "position": 5,
+        "title": "Culpable",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Juan Hidalgo, Producer - Raulin Rodriguez, MainArtist - Juan & Nelson Publishing, MusicPublisher - Daniel De Jesús Pichardo, Composer - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:01"
+      },
+      {
+        "position": 6,
+        "title": "La Avispa",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Juan Hidalgo, Producer - Zacarias Ferreira, Composer, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:23"
+      },
+      {
+        "position": 7,
+        "title": "Te Regalo el Mar",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Juan Hidalgo, Producer - Frank Reyes, MainArtist - Nelson Estevez, Producer - Gilberto \"Junior\" D' Oleo, Composer - Ciabo Music Company, MusicPublisher",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:03:39"
+      },
+      {
+        "position": 8,
+        "title": "Que Vuelva",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Juan Hidalgo, Producer - Raulin Rodriguez, MainArtist - Juan & Nelson Publishing, MusicPublisher - Daniel De Jesús Pichardo, Composer - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:21"
+      },
+      {
+        "position": 9,
+        "title": "Enamorado",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Juan Hidalgo, Producer - Zacarias Ferreira, Composer, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:02"
+      },
+      {
+        "position": 10,
+        "title": "Amor Desperdiciado",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Juan Hidalgo, Producer - Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher - Daniel De Jesús Pichardo, Composer - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:09"
+      },
+      {
+        "position": 11,
+        "title": "Si Supieras",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Juan Hidalgo, Producer - Raulin Rodriguez, MainArtist - Oswaldo Ayala, Composer - Spirit Two Music OBO Edimusica USA, MusicPublisher - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:36"
+      },
+      {
+        "position": 12,
+        "title": "Es Tan Difícil (No Es Igual)",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Juan Hidalgo, Producer - Omar A. Geles Suarez, Composer - Zacarias Ferreira, MainArtist - Juan & Nelson Publishing OBO O.G Music, MusicPublisher - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:11"
+      },
+      {
+        "position": 13,
+        "title": "Princesa",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Juan Hidalgo, Producer - Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher - Rafael Martín Cespedes, Composer - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:03:26"
+      },
+      {
+        "position": 14,
+        "title": "Es Mejor",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Juan Hidalgo, Producer - Raulin Rodriguez, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer - Jose F. Vargas, Composer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:03:37"
+      },
+      {
+        "position": 15,
+        "title": "Dame de Tu Amor",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Juan Hidalgo, Producer - Zacarias Ferreira, Composer, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:03:27"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/ie-en/album/bachata-fest-vol-2-yoskar-sarante-joe-veras-alex-bueno/t0ugopvb3j3ub",
+    "retrievedAt": "2026-10-02T23:33:23.902Z",
+    "htmlSha256": "a7416cbbf16c7529ed7ddc24ec919eff90d4bb2d04c9459a4e8063644c317ee7",
+    "title": "Bachata Fest, Vol. 2 by Yoskar Sarante, Joe Veras & Alex Bueno",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "No Tengo Suerte en el Amor",
+        "artist": "Yoskar Sarante",
+        "credits": [
+          "Juan Hidalgo, Producer - Yoskar Sarante, MainArtist - Hector Peña Pacheco, Composer - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:03:59"
+      },
+      {
+        "position": 2,
+        "title": "Cartas del Verano",
+        "artist": "Joe Veras",
+        "credits": [
+          "Wilfran Castillo, Composer - Juan Hidalgo, Producer - JOE VERAS, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:02"
+      },
+      {
+        "position": 3,
+        "title": "Perdóname",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Juan Hidalgo, Producer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer - Jose Alfonso Garcia, Composer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:14"
+      },
+      {
+        "position": 4,
+        "title": "No Te Detengas",
+        "artist": "Yoskar Sarante",
+        "credits": [
+          "Alberto \"Tico\" Mercado, Composer - Juan Hidalgo, Producer - Yoskar Sarante, MainArtist - Nelson Estevez, Producer - SPIRIT LATIN, MusicPublisher",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:39"
+      },
+      {
+        "position": 5,
+        "title": "Coje Cuadre",
+        "artist": "Joe Veras",
+        "credits": [
+          "Juan Hidalgo, Producer - JOE VERAS, MainArtist - Juan & Nelson Publishing, MusicPublisher - Juan Enrique Feliz, Composer - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:05:27"
+      },
+      {
+        "position": 6,
+        "title": "Yo Me Iré",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Juan Hidalgo, Producer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher - Daniel De Jesús Pichardo, Composer - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:24"
+      },
+      {
+        "position": 7,
+        "title": "Perdido",
+        "artist": "Yoskar Sarante",
+        "credits": [
+          "Charlie Mosquea, Composer - Juan Hidalgo, Producer - Guillermo López, Composer - Yoskar Sarante, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:05"
+      },
+      {
+        "position": 8,
+        "title": "Aferrado",
+        "artist": "Joe Veras",
+        "credits": [
+          "Juan Hidalgo, Producer - JOE VERAS, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer - Jose M. Veras Batista, Composer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:14"
+      },
+      {
+        "position": 9,
+        "title": "Yo No Tengo",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Juan Hidalgo, Producer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer - Deivi Landestoy, Composer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:30"
+      },
+      {
+        "position": 10,
+        "title": "Perdóname",
+        "artist": "Yoskar Sarante",
+        "credits": [
+          "Alberto \"Tico\" Mercado, Composer - Juan Hidalgo, Producer - Yoskar Sarante, MainArtist - Nelson Estevez, Producer - Juan & Nelson Publishing OBO Inversiones Artisticas Valdupari, MusicPublisher",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:29"
+      },
+      {
+        "position": 11,
+        "title": "Antídoto",
+        "artist": "Joe Veras",
+        "credits": [
+          "Juan Hidalgo, Producer - JOE VERAS, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer - Ramon  Mirabal, Composer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:40"
+      },
+      {
+        "position": 12,
+        "title": "Mojado por Ti",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Charlie Mosquea, Composer - Juan Hidalgo, Producer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:03:42"
+      },
+      {
+        "position": 13,
+        "title": "Guerra de Amor",
+        "artist": "Yoskar Sarante",
+        "credits": [
+          "Juan Hidalgo, Producer - Yoskar Sarante, MainArtist - Juan & Nelson Publishing, MusicPublisher - Nelson Estevez, Producer - Dolores Josefina Santos, Composer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:06"
+      },
+      {
+        "position": 14,
+        "title": "Chiquilla Chiquita",
+        "artist": "Joe Veras",
+        "credits": [
+          "Juan Hidalgo, Producer - JOE VERAS, MainArtist - Juan & Nelson Publishing, MusicPublisher - José \"Olvis\" García, Composer - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:21"
+      },
+      {
+        "position": 15,
+        "title": "Pídeme",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Juan Hidalgo, Producer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher - Miguel de la Cruz, Composer - Nelson Estevez, Producer",
+          "(C) 2020 J&N Records (P) 2020 J&N Records"
+        ],
+        "duration": "00:04:15"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/us-en/album/dobletazo-luis-vargas-teodoro-reyes/c7xf99nonmcpc",
+    "retrievedAt": "2026-10-02T23:33:23.857Z",
+    "htmlSha256": "adc71c19990e0effe6538c8d4b59ee8204cb1f9f8de5f05ebe7726b4ae6797f0",
+    "title": "Dobletazo by Luis Vargas & Teodoro Reyes",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Con los Crespos Hechos",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:07:02"
+      },
+      {
+        "position": 2,
+        "title": "Yo No Pido",
+        "artist": "Teodoro Reyes",
+        "credits": [
+          "Teodoro Reyes, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:03:35"
+      },
+      {
+        "position": 3,
+        "title": "El Envidioso",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:04:09"
+      },
+      {
+        "position": 4,
+        "title": "Ella Me Quiere Tambien",
+        "artist": "Teodoro Reyes",
+        "credits": [
+          "Teodoro Reyes, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:03:37"
+      },
+      {
+        "position": 5,
+        "title": "La Mujer Que Yo Más Quiero",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:04:42"
+      },
+      {
+        "position": 6,
+        "title": "Pena en el Alma",
+        "artist": "Teodoro Reyes",
+        "credits": [
+          "Teodoro Reyes, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:03:28"
+      },
+      {
+        "position": 7,
+        "title": "Esa Mujer",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:04:33"
+      },
+      {
+        "position": 8,
+        "title": "Moriré Bebiendo",
+        "artist": "Teodoro Reyes",
+        "credits": [
+          "Teodoro Reyes, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:03:15"
+      },
+      {
+        "position": 9,
+        "title": "Valor de Hombre",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:04:12"
+      },
+      {
+        "position": 10,
+        "title": "Los Pobres Tambien Aman",
+        "artist": "Teodoro Reyes",
+        "credits": [
+          "Teodoro Reyes, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:03:34"
+      },
+      {
+        "position": 11,
+        "title": "Rubia de Mis Amores",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:04:08"
+      },
+      {
+        "position": 12,
+        "title": "Tu Eres Mi Hembra",
+        "artist": "Teodoro Reyes",
+        "credits": [
+          "Teodoro Reyes, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:03:11"
+      },
+      {
+        "position": 13,
+        "title": "Lo Que Paso en Mi Pueblo",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:05:27"
+      },
+      {
+        "position": 14,
+        "title": "No Quiere Saber de Mi",
+        "artist": "Teodoro Reyes",
+        "credits": [
+          "Teodoro Reyes, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:03:46"
+      },
+      {
+        "position": 15,
+        "title": "Mujer Sin Alma",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:06:13"
+      },
+      {
+        "position": 16,
+        "title": "Hay Mas Mujer",
+        "artist": "Teodoro Reyes",
+        "credits": [
+          "Teodoro Reyes, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:04:01"
+      },
+      {
+        "position": 17,
+        "title": "Porque?",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:05:20"
+      },
+      {
+        "position": 18,
+        "title": "Me Heriste El Corazon",
+        "artist": "Teodoro Reyes",
+        "credits": [
+          "Teodoro Reyes, MainArtist",
+          "(C) 1995 Jose Luis Records (P) 1995 Jose Luis Records"
+        ],
+        "duration": "00:04:07"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/us-en/album/dos-x-uno-alex-bueno-zacarias-ferreira/o734sl0q7e6hc",
+    "retrievedAt": "2026-10-02T23:33:23.555Z",
+    "htmlSha256": "06075ed2a2de90312906cd3b2dcaea13d60deca99ead49a3cf7a92430923b38c",
+    "title": "Dos X Uno by Alex Bueno & Zacarias Ferreira",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Busca un Confidente",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Omar Geles, Composer - Alex Bueno, MainArtist - Spirit Latin Two Crescendo, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:55"
+      },
+      {
+        "position": 2,
+        "title": "Ese Hombre Soy Yo",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Charlie Mosquea, Composer - Alex Bueno, MainArtist - Universal Musica, Inc. OBO Quisqueya Music Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:04"
+      },
+      {
+        "position": 3,
+        "title": "Tengo Pero Me Faltas Tú",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Charlie Mosquea, Composer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:18"
+      },
+      {
+        "position": 4,
+        "title": "Perdóname",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher - Jose Alfonso Garcia, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:14"
+      },
+      {
+        "position": 5,
+        "title": "De Madrugada",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher - Jose Alfonso Garcia, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:23"
+      },
+      {
+        "position": 6,
+        "title": "Si Vinieras / Si Vinieras Hoy",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Jose Mendoza, Composer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:35"
+      },
+      {
+        "position": 7,
+        "title": "Paso a Paso",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Ramon Cordero, Composer - Alex Bueno, MainArtist - Juan & Nelson Publishing OBO Editora Robert, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:59"
+      },
+      {
+        "position": 8,
+        "title": "Gotas de Pena",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Frantoni Santana, Composer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:05:04"
+      },
+      {
+        "position": 9,
+        "title": "Un Poco de Ti / Quiereme",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Jorge Morel, Composer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:29"
+      },
+      {
+        "position": 10,
+        "title": "Me Duele",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Felix Mirabal, Composer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:57"
+      },
+      {
+        "position": 11,
+        "title": "Lo Que Yo Siento por Ti",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Alejandro Martinez, Composer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:39"
+      },
+      {
+        "position": 12,
+        "title": "No Hay Mal Que por Bien No Venga",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Zacarias Ferreira, Composer, MainArtist - Mayimba Music, Inc., MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:40"
+      },
+      {
+        "position": 13,
+        "title": "Sin Ti",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Zacarias Ferreira, Composer, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:24"
+      },
+      {
+        "position": 14,
+        "title": "Es Tan Difícil",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Omar A. Geles Suarez, Composer - Zacarias Ferreira, MainArtist - Juan & Nelson Publishing OBO O.G. Music, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:11"
+      },
+      {
+        "position": 15,
+        "title": "Díme Que Falto",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Zacarias Ferreira, Composer, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:15"
+      },
+      {
+        "position": 16,
+        "title": "Con Ella Me Siento Bien / El Negro",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Julio Ernesto Estrada, Composer - Zacarias Ferreira, MainArtist - Sunflower Music, Inc. OBO Edimusica USA, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:57"
+      },
+      {
+        "position": 17,
+        "title": "Ay Amor",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Zacarias Ferreira, Composer, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:25"
+      },
+      {
+        "position": 18,
+        "title": "Desde Niño",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Zacarias Ferreira, MainArtist - Juan & Nelson Publishing, MusicPublisher - Isaias Ferreira, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:54"
+      },
+      {
+        "position": 19,
+        "title": "Hoy Daria Yo la Vida",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Zacarias Ferreira, MainArtist - Irmaos Vitale S.A., MusicPublisher - Mrtha Vieira Figueiredo, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:11"
+      },
+      {
+        "position": 20,
+        "title": "No Me Olvidaré de Ti",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Zacarias Ferreira, Composer, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:04"
+      },
+      {
+        "position": 21,
+        "title": "Amor a la Ligera / Hacedlo Conmigo",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Pendiente, MusicPublisher - Copyright Control, MusicPublisher - Ismael Santiago, Composer - Zacarias Ferreira, MainArtist - Derechos Reservados de Autor, Composer",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:28"
+      },
+      {
+        "position": 22,
+        "title": "Nido de Amor",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Octavio Daza, Composer - Zacarias Ferreira, MainArtist - EMI Blackwood Music, Inc., MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:53"
+      },
+      {
+        "position": 23,
+        "title": "Dame un Cariñito",
+        "artist": "Zacarías Ferreira",
+        "credits": [
+          "Zacarias Ferreira, Composer, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 J&N Records, LLC (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:44"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/es-es/album/2-grandes-de-la-bachata-vol4-frank-reyes-luis-vargas/0739645048022",
+    "retrievedAt": "2026-10-02T23:33:24.301Z",
+    "htmlSha256": "b170dfa682fb083e8e80f07fcb9708cb6ea36852385986c5e888018e4d029d68",
+    "title": "2 Grandes De La Bachata Vol.4 by Frank Reyes & Luis Vargas",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Vine a Decirte Adios",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:04:41"
+      },
+      {
+        "position": 2,
+        "title": "Volvió el Dolor",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:03:35"
+      },
+      {
+        "position": 3,
+        "title": "Me Dejaste Abandonado",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:05:02"
+      },
+      {
+        "position": 4,
+        "title": "Veneno",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:04:08"
+      },
+      {
+        "position": 5,
+        "title": "Mi Linda Doncella",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:04:54"
+      },
+      {
+        "position": 6,
+        "title": "Castigo de Amor",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:04:11"
+      },
+      {
+        "position": 7,
+        "title": "Quién Eres Tú",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:04:24"
+      },
+      {
+        "position": 8,
+        "title": "La Distancia",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:03:20"
+      },
+      {
+        "position": 9,
+        "title": "Tu Eres Ajena",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:04:01"
+      },
+      {
+        "position": 10,
+        "title": "Inocente",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:05:03"
+      },
+      {
+        "position": 11,
+        "title": "Extraño Mi Pueblo",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:04:35"
+      },
+      {
+        "position": 12,
+        "title": "El Llorón",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:05:12"
+      },
+      {
+        "position": 13,
+        "title": "Princesa",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:03:26"
+      },
+      {
+        "position": 14,
+        "title": "Que Hago",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:05:04"
+      },
+      {
+        "position": 15,
+        "title": "Voy a Dejarte de Amar",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:04:01"
+      },
+      {
+        "position": 16,
+        "title": "Vieja del Bonche",
+        "artist": "Luis Vargas",
+        "credits": [
+          "Luis Vargas, MainArtist",
+          "(C) 2008 J&N Records (P) 2008 J&N Records"
+        ],
+        "duration": "00:05:05"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/es-es/album/dos-x-uno-frank-reyes-raulin-rodriguez/hoiryk3ec85sb",
+    "retrievedAt": "2026-10-02T23:33:24.174Z",
+    "htmlSha256": "58374d2a128ab4cb69a5eed4725c24b6e6e34db0932cf5d9fdb9e639cb021adf",
+    "title": "Dos X Uno by Frank Reyes & Raulin Rodriguez",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Tu Eres Ajena",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher - Alejandro Montero Lorenzo, Composer",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:01"
+      },
+      {
+        "position": 2,
+        "title": "De Punta a Punta Aka una Mujer Como Tu",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Felix Mirabal, Composer - Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:26"
+      },
+      {
+        "position": 3,
+        "title": "Ya Basta",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher - Daniel De Jesus \"Daniel Moncion\" Pichardo, Composer",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:46"
+      },
+      {
+        "position": 4,
+        "title": "Encarcelado",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher - Francisco \"Frank\" Reyes, Composer",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:30"
+      },
+      {
+        "position": 5,
+        "title": "Josefa",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher - Francisco \"Frank\" Reyes, Composer",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:29"
+      },
+      {
+        "position": 6,
+        "title": "Cupido",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Elvis Samuel Méndez, Composer - Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:11"
+      },
+      {
+        "position": 7,
+        "title": "Muriendo en la Soledad",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Alejandro Montero, Composer - Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:04"
+      },
+      {
+        "position": 8,
+        "title": "Te Tengo Que Dejar",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher - Francisco \"Frank\" Reyes, Composer",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:54"
+      },
+      {
+        "position": 9,
+        "title": "Amor en Silencio",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Hector Peña Pacheco, Composer - Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:09"
+      },
+      {
+        "position": 10,
+        "title": "El Mudo",
+        "artist": "Frank Reyes",
+        "credits": [
+          "Frank Reyes, MainArtist - Juan & Nelson Publishing, MusicPublisher - Francisco \"Frank\" Reyes, Composer",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:26"
+      },
+      {
+        "position": 11,
+        "title": "No Se Vale",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Raulin Rodriguez, MainArtist - Juan & Nelson Publishing, MusicPublisher - Daniel De Jesus \"Daniel Moncion\" Pichardo, Composer",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:09"
+      },
+      {
+        "position": 12,
+        "title": "Me Sale del Alma",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Felix Mirabal, Composer - Raulin Rodriguez, MainArtist - Yulla Publishing, MusicPublisher",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:40"
+      },
+      {
+        "position": 13,
+        "title": "Parece Mentira",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Pendiente, MusicPublisher - Raulin Rodriguez, MainArtist - Valoi Felix Castillo \"El Nacho\", Composer",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:45"
+      },
+      {
+        "position": 14,
+        "title": "Mi Vida Hablame",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Raulin Rodriguez, MainArtist - Miguel Braho, Composer - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:28"
+      },
+      {
+        "position": 15,
+        "title": "Pobre Diablo",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Raulin Rodriguez, MainArtist - Miguel Braho, Composer - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:44"
+      },
+      {
+        "position": 16,
+        "title": "No Cuentes Conmigo",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Raulin Rodriguez, MainArtist - Miguel Braho, Composer - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:04"
+      },
+      {
+        "position": 17,
+        "title": "Solamente Tu",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Raulin Rodriguez, MainArtist - Miguel Braho, Composer - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:52"
+      },
+      {
+        "position": 18,
+        "title": "Castillos",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "JAIME ESPINOZA, Composer - Raulin Rodriguez, MainArtist - Universal Music Publishing, MusicPublisher",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:04:44"
+      },
+      {
+        "position": 19,
+        "title": "Si Tu Volvieras",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Raulin Rodriguez, MainArtist - Miguel Braho, Composer - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:17"
+      },
+      {
+        "position": 20,
+        "title": "Voy a Morir de Amor",
+        "artist": "Raulín Rodríguez",
+        "credits": [
+          "Raulin Rodriguez, MainArtist - Daniel Alejandro, Composer - Fonomax Music Publishing, MusicPublisher - Juan Carlos Vorona, Composer",
+          "(C) 2017 JVN Music, Inc (P) 2017 J&N Records"
+        ],
+        "duration": "00:03:25"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/ar-es/album/4x4-en-salsa-vol-1-varios-artistas/rq3bbgb91vfka",
+    "retrievedAt": "2026-10-02T23:33:23.983Z",
+    "htmlSha256": "24eca7269d588ee9ed2191d4ca8055eeefdace53c3d31ab33bc5ff7bcc01d853",
+    "title": "4x4 en Salsa, Vol. 1 by Varios Artistas",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Señora de Madrugada",
+        "artist": "Tito Rojas",
+        "credits": [
+          "Lolita De La Colina, Composer - Tito Rojas, MainArtist - UNIVERSAL MUSICA, INC., MusicPublisher - Julio \"Gunda\" Merced, Producer",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:05:48"
+      },
+      {
+        "position": 2,
+        "title": "A Quién",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Isidro Infante, Producer - RAFAEL FERRO, Composer - Alex Bueno, MainArtist - Sociedad General De Autores Y Editores, MusicPublisher - Julio Iglesia, Composer",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:05:18"
+      },
+      {
+        "position": 3,
+        "title": "Tengo Derecho a Ser Feliz",
+        "artist": "Junior Gonzalez",
+        "credits": [
+          "Jose Maria Puron, Composer - Isidro Infante, Producer - Junior Gonzalez, MainArtist - Rightsong Music, Inc., MusicPublisher - Sociedad General De Autores Y Editores, MusicPublisher",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:05:45"
+      },
+      {
+        "position": 4,
+        "title": "No Te Iràs",
+        "artist": "Sexappeal",
+        "credits": [
+          "Ramon Orlando Valoy, Composer, Producer - Sexappeal, MainArtist - Cibao Music Company, MusicPublisher",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:04:10"
+      },
+      {
+        "position": 5,
+        "title": "Lo Que Te Queda",
+        "artist": "Tito Rojas",
+        "credits": [
+          "Yaco Monti, Composer - Tito Rojas, MainArtist - Sadaic Latin Copyrights, Inc., MusicPublisher - Julio \"Gunda\" Merced, Producer - WB Music Corp. OBO Warner/Chappell Music Corp, MusicPublisher",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:05:02"
+      },
+      {
+        "position": 6,
+        "title": "Número Cero",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Isidro Infante, Producer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher - Juan Romero De Lancer, Composer",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:05:09"
+      },
+      {
+        "position": 7,
+        "title": "Lady In Red",
+        "artist": "Junior Gonzalez",
+        "credits": [
+          "Jose Mangual Jr., Producer - Almo Music Corp., MusicPublisher - Junior Gonzalez, MainArtist - John Davison Christopher, Composer",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:05:02"
+      },
+      {
+        "position": 8,
+        "title": "A Escondidas Te Vere Aka a Escondidas",
+        "artist": "Sexappeal",
+        "credits": [
+          "Ramon Orlando Valoy, Producer - Sexappeal, MainArtist - Lixdel Music Co., MusicPublisher - Feliz Leon Mendez aka Felito Felix, Composer",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:04:34"
+      },
+      {
+        "position": 9,
+        "title": "Condéname a Tu Amor",
+        "artist": "Tito Rojas",
+        "credits": [
+          "Tito Rojas, MainArtist - Poldo Castro, Composer - Nota Publishing, MusicPublisher - Julio \"Gunda\" Merced, Producer",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:05:59"
+      },
+      {
+        "position": 10,
+        "title": "La Prisa",
+        "artist": "Alex Bueno",
+        "credits": [
+          "Ramón Rodríguez, Composer - Ramon Orlando Valoy, Producer - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:03:51"
+      },
+      {
+        "position": 11,
+        "title": "Mujer Gitana",
+        "artist": "Junior Gonzalez",
+        "credits": [
+          "H. Pagani, Composer - P. León, Composer - Jose Mangual Jr., Producer - J. M. Puron, Composer - Junior Gonzalez, MainArtist - Sociedad General De Autores Y Editores, MusicPublisher - S.I.A.E. Direzione Generale, MusicPublisher - Cherry Lane Music Publishing OBO Cursi USA Music Publishing, MusicPublisher",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:05:03"
+      },
+      {
+        "position": 12,
+        "title": "Mal o Bien",
+        "artist": "Sexappeal",
+        "credits": [
+          "Ramon Orlando Valoy, Composer, Producer - Sexappeal, MainArtist - Cibao Music Company, MusicPublisher",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:04:25"
+      },
+      {
+        "position": 13,
+        "title": "Ella Se Hizo Deseo",
+        "artist": "Tito Rojas",
+        "credits": [
+          "Tito Rojas, MainArtist - Julio \"Gunda\" Merced, Producer - Gustavo Márquez aka Oscar Derudi, Composer - Sony/ATV Discos Music Pub. OBO Nueva Era Musical, MusicPublisher",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:05:04"
+      },
+      {
+        "position": 14,
+        "title": "Dos Te Quiero",
+        "artist": "Junior Gonzalez",
+        "credits": [
+          "Confesor Rosario, Composer - Jose Mangual Jr., Producer - Junior Gonzalez, MainArtist - Alex Bueno, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:04:40"
+      },
+      {
+        "position": 15,
+        "title": "La Flor de Mi Vida",
+        "artist": "Junior Gonzalez",
+        "credits": [
+          "Ramón Rodríguez, Composer - Jose Mangual Jr., Producer - Junior Gonzalez, MainArtist - Juan & Nelson Publishing, MusicPublisher",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:03:48"
+      },
+      {
+        "position": 16,
+        "title": "Triste Final",
+        "artist": "Sexappeal",
+        "credits": [
+          "Ramon Orlando Valoy, Producer - Sexappeal, MainArtist - BMG Songs, Inc., MusicPublisher - Sociedad General De Autores Y Editores, MusicPublisher - Camilo Blanes aka Camilo Sexto, Composer",
+          "(C) 2019 J&N Records (P) 2019 J&N Records"
+        ],
+        "duration": "00:04:53"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+    "retrievedAt": "2026-10-02T23:33:24.565Z",
+    "htmlSha256": "7fe2ef871f16346073b841c345f4e80f13694749f9be9f0bb029f2e7ab6095ba",
+    "title": "Sergio Vargas y Alex Bueno by Sergio Vargas & Alex Bueno",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Maquinolandera",
+        "artist": "",
+        "credits": [
+          "Sergio Vargas, MainArtist - Alex Bueno, MainArtist - Margarita Rivera, Composer",
+          "(C) 1988 Karen Records Inc (P) 1988 Karen Records Inc"
+        ],
+        "duration": "00:03:50"
+      },
+      {
+        "position": 2,
+        "title": "Columbia Rock",
+        "artist": "",
+        "credits": [
+          "Sergio Vargas, MainArtist - Alex Bueno, MainArtist - G. Aro, Composer",
+          "(C) 1988 Karen Records Inc (P) 1988 Karen Records Inc"
+        ],
+        "duration": "00:04:40"
+      },
+      {
+        "position": 3,
+        "title": "Amor Amor",
+        "artist": "",
+        "credits": [
+          "Sergio Vargas, MainArtist - Rafael Perez-Botija, Composer - Alex Bueno, MainArtist",
+          "(C) 1988 Karen Records Inc (P) 1988 Karen Records Inc"
+        ],
+        "duration": "00:03:33"
+      },
+      {
+        "position": 4,
+        "title": "Causas y Azares",
+        "artist": "",
+        "credits": [
+          "Sergio Vargas, MainArtist - Silvio Rodríguez, Composer - Alex Bueno, MainArtist",
+          "(C) 1988 Karen Records Inc (P) 1988 Karen Records Inc"
+        ],
+        "duration": "00:04:32"
+      },
+      {
+        "position": 5,
+        "title": "Tu Ausencia",
+        "artist": "",
+        "credits": [
+          "Mario Díaz, Composer - Sergio Vargas, MainArtist - Traditional, Composer - Alex Bueno, MainArtist",
+          "(C) 1988 Karen Records Inc (P) 1988 Karen Records Inc"
+        ],
+        "duration": "00:04:32"
+      },
+      {
+        "position": 6,
+        "title": "En Bandolera",
+        "artist": "",
+        "credits": [
+          "Sergio Vargas, MainArtist - Alex Bueno, MainArtist - Savatore Adamo, Composer",
+          "(C) 1988 Karen Records Inc (P) 1988 Karen Records Inc"
+        ],
+        "duration": "00:03:45"
+      },
+      {
+        "position": 7,
+        "title": "El Amor Acaba",
+        "artist": "",
+        "credits": [
+          "Sergio Vargas, MainArtist - Maria Alejandra, Composer - MANUEL ALEJANDRO, Composer - Alex Bueno, MainArtist",
+          "(C) 1988 Karen Records Inc (P) 1988 Karen Records Inc"
+        ],
+        "duration": "00:03:24"
+      },
+      {
+        "position": 8,
+        "title": "Si Ti No Soy Nada",
+        "artist": "",
+        "credits": [
+          "Sergio Vargas, MainArtist - Alex Bueno, MainArtist - Melvin Rafael, Composer",
+          "(C) 1988 Karen Records Inc (P) 1988 Karen Records Inc"
+        ],
+        "duration": "00:04:31"
+      },
+      {
+        "position": 9,
+        "title": "Quiero Perderme Contigo",
+        "artist": "",
+        "credits": [
+          "Sergio Vargas, MainArtist - Maria Alejandra, Composer - MANUEL ALEJANDRO, Composer - Alex Bueno, MainArtist",
+          "(C) 1988 Karen Records Inc (P) 1988 Karen Records Inc"
+        ],
+        "duration": "00:03:50"
+      },
+      {
+        "position": 10,
+        "title": "Voy a Llenarte Toda",
+        "artist": "",
+        "credits": [
+          "Sergio Vargas, MainArtist - Maria Alejandra, Composer - MANUEL ALEJANDRO, Composer - Alex Bueno, MainArtist",
+          "(C) 1988 Karen Records Inc (P) 1988 Karen Records Inc"
+        ],
+        "duration": "00:05:18"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/se-en/album/vagabundo-robi-draco-rosa/0037628192923",
+    "retrievedAt": "2026-10-02T23:33:24.537Z",
+    "htmlSha256": "71b52001cadc7b49a9f884c350a82bc5acbd08f06f0a5645b94ceb2d62cbeab2",
+    "title": "Vagabundo by Robi Draco Rosa",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Hablando Del Amor",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Jose Manuel Navarro, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:01:12"
+      },
+      {
+        "position": 2,
+        "title": "Madre Tierra",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Luis Gomez Escolar, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:03:34"
+      },
+      {
+        "position": 3,
+        "title": "Llanto Subterraneo",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Jaime Sabines, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:03:52"
+      },
+      {
+        "position": 4,
+        "title": "Vagabundo",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Jose Manuel Navarro, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:03:37"
+      },
+      {
+        "position": 5,
+        "title": "Penélope",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Jose Manuel Navarro, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:04:43"
+      },
+      {
+        "position": 6,
+        "title": "Delirios",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Manolo Tena, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:03:00"
+      },
+      {
+        "position": 7,
+        "title": "Para No Olvidar",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Jaime Sabines, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:04:15"
+      },
+      {
+        "position": 8,
+        "title": "Blanca Mujer",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist, Producer\n - Luis Gomez Escolar, Composer, Lyricist\n - Phil Manzanera, Producer",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:03:51"
+      },
+      {
+        "position": 9,
+        "title": "Vertigo",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Jose Manuel Navarro, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:02:43"
+      },
+      {
+        "position": 10,
+        "title": "Vivir",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Luis Gomez Escolar, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:04:21"
+      },
+      {
+        "position": 11,
+        "title": "Brujería",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Luis Gomez Escolar, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:03:28"
+      },
+      {
+        "position": 12,
+        "title": "La Flor Del Frio",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Jose Manuel Navarro, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:03:55"
+      },
+      {
+        "position": 13,
+        "title": "Amantes Hasta el Fin",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Jose Manuel Navarro, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:05:02"
+      },
+      {
+        "position": 14,
+        "title": "Mientras Camino",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Jose Manuel Navarro, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:00:37"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/es-es/album/vagabundo-22-draco-rosa/c0rxk1ng4wuyc",
+    "retrievedAt": "2026-10-02T23:33:24.720Z",
+    "htmlSha256": "dc92da580e2c2b87516fc19310ca0cd3114b2f575cb044a8da5238ebbe6ce98e",
+    "title": "Vagabundo 22 by Draco Rosa",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Hablando del Amor  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Jose Manuel Navarro Sempere, Composer, Lyricist - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:01:12"
+      },
+      {
+        "position": 2,
+        "title": "Madre Tierra  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Luis Gómez Escolar, Composer, Lyricist - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:34"
+      },
+      {
+        "position": 3,
+        "title": "Llanto Subterráneo  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Jaime Sabines, Composer, Lyricist - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:52"
+      },
+      {
+        "position": 4,
+        "title": "Vagabundo  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Composer, Lyricist, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Jose Manuel Navarro, Composer, Lyricist - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:37"
+      },
+      {
+        "position": 5,
+        "title": "Penélope  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Jose Manuel Navarro Sempere, Composer, Lyricist - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:04:43"
+      },
+      {
+        "position": 6,
+        "title": "Delirios  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Manolo Tena, Composer, Lyricist - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Composer, Lyricist, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:00"
+      },
+      {
+        "position": 7,
+        "title": "Para No Olvidar  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Jaime Sabines, Composer, Lyricist - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:04:15"
+      },
+      {
+        "position": 8,
+        "title": "Blanca Mujer  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Luis Gómez Escolar, Composer, Lyricist - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Composer, Lyricist, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:51"
+      },
+      {
+        "position": 9,
+        "title": "Vértigo  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Jose Manuel Navarro Sempere, Composer, Lyricist - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:02:43"
+      },
+      {
+        "position": 10,
+        "title": "Vivir  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Luis Gómez Escolar, Composer, Lyricist - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:04:21"
+      },
+      {
+        "position": 11,
+        "title": "Brujería  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Luis Gómez Escolar, Composer, Lyricist - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:28"
+      },
+      {
+        "position": 12,
+        "title": "La Flor del Frío  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Jose Manuel Navarro Sempere, Composer, Lyricist - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:55"
+      },
+      {
+        "position": 13,
+        "title": "Amantes Hasta el Fin  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Jose Manuel Navarro Sempere, Composer, Lyricist - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:05:02"
+      },
+      {
+        "position": 14,
+        "title": "Mientras Camino  (Remastered Version)",
+        "artist": "",
+        "credits": [
+          "Chris Eaton, AssociatedPerformer - Ash Howes, Mixing Engineer, Recording Engineer - Roddy Lorimer, Trumpet, Piccolo Trumpet, Fluegelhorn - Chucho Merchan, Bass - Rusty Anderson, Electric Guitar - Paul Bushnell, Bass - Bob Ludwig, Mastering Engineer - Dinah Beamish, Strings - Ellen Blair, Strings - Geoff Dugmore, Drums - Phil Manzanera, Producer, Guitar - Carla Azar, Drums, Percussion - Sara Loewenthal, Strings - Charles Rees, Assistant Engineer - Jamie Johnson, Engineer - Peter Gordino, Organ, Piano, Clavichord, AssociatedPerformer - Draco Rosa, Acoustic Guitar, Electric Guitar, Piano, Bass, Harmonica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Jose Manuel Navarro Sempere, Composer, Lyricist - Sarah Harrison, Strings - Joss Pook, Strings",
+          "(P) 1996 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:00:37"
+      },
+      {
+        "position": 15,
+        "title": "Vértigo 22  (PHVX Archive)",
+        "artist": "",
+        "credits": [
+          "Bob Ludwig, Mastering Engineer - Doug Pettibone, Electric Guitar - Rene Camacho, Bass - Toss Panos, Drums - Draco Rosa, Electric Guitar, Percussion, Mixing Engineer, Melodica, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Juan Covarrubias, AssociatedPerformer - Sadaharu Yagi, Recording Engineer - Jose Manuel Navarro Sempere, Composer, Lyricist - Héctor Espinosa, Percussion, Mixing Engineer, Recording Engineer",
+          "(P) 2018 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:04:17"
+      },
+      {
+        "position": 16,
+        "title": "Madre Tierra 22  (PHVX Archive)",
+        "artist": "",
+        "credits": [
+          "Bob Ludwig, Mastering Engineer - Luis Gómez Escolar, Composer, Lyricist - Doug Pettibone, Electric Guitar - Rene Camacho, Bass - Toss Panos, Drums - Draco Rosa, MainArtist, AssociatedPerformer, Vocal - Draco Cornelius Rosa, Composer, Lyricist - Juan Covarrubias, Organ - Sadaharu Yagi, Recording Engineer - Héctor Espinosa, Recording Engineer",
+          "(P) 2018 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:04:44"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/jp-ja/album/como-me-acuerdo-robi-draco-rosa/xzc1ydonaud9b",
+    "retrievedAt": "2026-10-02T23:33:25.498Z",
+    "htmlSha256": "540f66fbbb4207e0016c5406ed0ac5bd94e7d2bdbf109b0700cd7202d5b6f5c9",
+    "title": "Como Me Acuerdo by Robi Draco Rosa",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Cómo Me Acuerdo",
+        "artist": "",
+        "credits": [
+          "Draco Rosa, MainArtist, AssociatedPerformer, Composer, Lyricist, Producer - Robi Draco Rosa, Guitar, Vocal - Rusty Anderson, Guitar - Peu Meurrahy, Percussion - Leonardo Reis, Percussion - Orlando Costa, Percussion - Hector Caledrón, Percussion - Iván W. François, Percussion - Omar \"Pipo\" Sánchezrmanos Cepeda, Percussion - Jesús Manuel Cepeda, Percussion - Jose Reyes y El Trio los Cacíques, AssociatedPerformer - El Potito, AssociatedPerformer - ANTONIO CARBONELL, AssociatedPerformer - Juañares, AssociatedPerformer - Alex Al, Bass - George Noriega, Composer, Lyricist, Producer - Luis Gómez Escolar, Composer, Lyricist - Jacob Rutigliano, Assistant Engineer - Ivan Moreno, Assistant Engineer - Nick Thomas, Assistant Engineer - Steef van de Gevel, Assistant Engineer - Jake Soule, Assistant Engineer - Carlos Velazquez, Assistant Engineer - Gabriel Peña, Assistant Engineer - Steve Robillard, Assistant Engineer - Dave \"Big\" Hyman, Assistant Engineer - Claudius Mittendorfer, Assistant Engineer - Robert Conley, Assistant Engineer - Ramón Martínez, Assistant Engineer - Duda Silveira, Assistant Engineer - Keith Armstrong, Assistant Engineer - Dim-E, Assistant Engineer - Willian Araujo Luna Junior, Assistant Engineer - Seth Atkins Horan, Mixing Engineer - Brian Gardner, Mastering Engineer - Statik, Drum Programmer",
+          "(P) 2001 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:13"
+      },
+      {
+        "position": 2,
+        "title": "Noche Fría",
+        "artist": "",
+        "credits": [
+          "Draco Rosa, MainArtist, AssociatedPerformer, Vocal, Composer, Lyricist, Producer - Rusty Anderson, Guitar - El Vaqui, Guitar - Peter Thorn, Guitar - Paulinho Dacosta, Percussion - Vinnie Colaiuta, Drums - Toss Panos, Drums - Paul Bushnell, Bass - JUAN PARRILLA, Flute - Raul Agraz, Trumpet - WALTER AFANASIEFF, Composer, Lyricist, Producer - Luis Gómez Escolar, Composer, Lyricist - Jacob Rutigliano, Assistant Engineer - Ivan Moreno, Assistant Engineer - Nick Thomas, Assistant Engineer - Steef van de Gevel, Assistant Engineer - Jake Soule, Assistant Engineer - Carlos Velazquez, Assistant Engineer - Gabriel Peña, Assistant Engineer - Steve Robillard, Assistant Engineer - Dave \"Big\" Hyman, Assistant Engineer - Claudius Mittendorfer, Assistant Engineer - Robert Conley, Assistant Engineer - Ramón Martínez, Assistant Engineer - Duda Silveira, Assistant Engineer - Keith Armstrong, Assistant Engineer - Dim-E, Assistant Engineer - Willian Araujo Luna Junior, Assistant Engineer - Seth Atkins Horan, Drum Programmer, Mixing Engineer, Recording Engineer - Brian Gardner, Mastering Engineer - Pat Dillett, Recording Engineer - Statik, Drum Programmer",
+          "(P) 2004 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:33"
+      },
+      {
+        "position": 3,
+        "title": "Más y Más (Crash Push)",
+        "artist": "",
+        "credits": [
+          "Draco Rosa, MainArtist, AssociatedPerformer, Vocal, Composer, Lyricist, Producer - Rusty Anderson, Guitar - Ramon Stagnaro, Guitar - Hod David, Guitar - Paulinho Dacosta, Percussion - Peu Meurrahy, Percussion - Leonardo Reis, Percussion - Orlando Costa, Percussion - Nelson Gonzalez, AssociatedPerformer - Alex Al, Bass - Paul Bushnell, Bass - Teddy Mulet, Trombone, Trumpet - Itaal Shur, Composer, Lyricist - Luis Gómez Escolar, Composer, Lyricist - George Noriega, Producer - Jacob Rutigliano, Assistant Engineer - Ivan Moreno, Assistant Engineer - Nick Thomas, Assistant Engineer - Steef van de Gevel, Assistant Engineer - Jake Soule, Assistant Engineer - Carlos Velazquez, Assistant Engineer - Gabriel Peña, Assistant Engineer - Steve Robillard, Assistant Engineer - Dave \"Big\" Hyman, Assistant Engineer - Claudius Mittendorfer, Assistant Engineer - Robert Conley, Assistant Engineer - Ramón Martínez, Assistant Engineer - Duda Silveira, Assistant Engineer - Keith Armstrong, Assistant Engineer - Dim-E, Assistant Engineer - Willian Araujo Luna Junior, Assistant Engineer - CHRIS LORD-ALGE, Mixing Engineer - Brian Gardner, Mastering Engineer - Seth Atkins Horan, Recording Engineer - Statik, Drum Programmer",
+          "(P) 2004 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:31"
+      },
+      {
+        "position": 4,
+        "title": "Bajo La Piel (Album Version)",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, MainArtist, AssociatedPerformer, Vocal, Composer, Lyricist, Producer - George Noriega, Guitar, Composer, Lyricist, Producer - Peu Meurrahy, Percussion - Leonardo Reis, Percussion - Orlando Costa, Percussion - Jon Button, Bass - Jose M. Navarro, Composer, Lyricist",
+          "(P) 2004 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:15"
+      },
+      {
+        "position": 5,
+        "title": "Bandera (Album Version)",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, MainArtist, AssociatedPerformer, Guitar, Vocal, Composer, Lyricist, Producer - Luis Gómez Escolar, Composer, Lyricist - Jacob Rutigliano, Assistant Engineer - Brian Gardner, Mastering Engineer - Seth Atkins Horan, Recording Engineer",
+          "(P) 2004 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:02:20"
+      },
+      {
+        "position": 6,
+        "title": "Amantes Hasta el Fin",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, MainArtist, Acoustic Guitar, AssociatedPerformer, Background Vocal, Bass, Electric Guitar, Harmonica, Piano, Vocal - Carla Azar, Drums, Percussion - Paul Bushnell, Bass - Rusty Anderson, Electric Guitar - Chucho Merchan, Bass - Geoff Dugmore, Drums - Chris Eaton, AssociatedPerformer - Peter Gordeno, AssociatedPerformer, Clavichord, Organ, Piano - Phil Manzanera, Guitar, Producer - Roddy Lorimer, Fluegelhorn, Piccolo Trumpet, Trumpet - Ellen Blair, Strings - Sarah Harrison, Strings - Joss Pook, Strings - Dinah Beamish, Strings - Sara Loewenthal, Strings - Draco Cornelius Rosa, Composer, Lyricist - Jose Manuel Navarro Sempere, Composer, Lyricist - Ash Howes, Mixing Engineer, Recording Engineer - Jamie Johnson, Engineer - Charles Rees, Assistant Engineer",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:05:05"
+      },
+      {
+        "position": 7,
+        "title": "Penélope (Album Version)",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, MainArtist, AssociatedPerformer, Composer, Lyricist - Jose Manuel Navarro Sempere, Composer, Lyricist - Phil Manzanera, Producer",
+          "(P) 1996 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:43"
+      },
+      {
+        "position": 8,
+        "title": "Cancion De Cuna (Album Version)",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, MainArtist, AssociatedPerformer, Composer, Lyricist, Producer - Luis Gómez Escolar, Composer, Lyricist",
+          "(P) 2004 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:02:48"
+      },
+      {
+        "position": 9,
+        "title": "Blanca Mujer",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, MainArtist, Acoustic Guitar, AssociatedPerformer, Background Vocal, Bass, Electric Guitar, Harmonica, Piano, Vocal, Producer - Carla Azar, Drums, Percussion - Paul Bushnell, Bass - Rusty Anderson, Electric Guitar - Chucho Merchan, Bass - Geoff Dugmore, Drums - Chris Eaton, AssociatedPerformer - Peter Gordeno, AssociatedPerformer, Clavichord, Organ, Piano - Phil Manzanera, Guitar, Producer - Roddy Lorimer, Fluegelhorn, Piccolo Trumpet, Trumpet - Ellen Blair, Strings - Sarah Harrison, Strings - Joss Pook, Strings - Dinah Beamish, Strings - Sara Loewenthal, Strings - Draco Rosa, Composer, Lyricist - Luis Gómez Escolar, Composer, Lyricist - Ash Howes, Mixing Engineer, Recording Engineer - Jamie Johnson, Engineer - Charles Rees, Assistant Engineer",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:03:44"
+      },
+      {
+        "position": 10,
+        "title": "Vagabundo",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, MainArtist, AssociatedPerformer, Composer, Lyricist - Jose Manuel Navarro Sempere, Composer, Lyricist - Phil Manzanera, Producer",
+          "(P) 1996 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:36"
+      },
+      {
+        "position": 11,
+        "title": "Cuando Pasara (Remastered album version)",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, MainArtist, AssociatedPerformer, Composer, Lyricist - Robi Rosa, Acoustic Guitar, Vocal, Co-Producer - Jimmy Johnson, Background Vocal - Luis Conte, Percussion - Chris Cameron, Keyboards - Adriana Cisneros, AssociatedPerformer - Sandy Cisneros, AssociatedPerformer - Nestor Plata, AssociatedPerformer - Eduarto Plata, AssociatedPerformer - Vanessa Plata, AssociatedPerformer - Julio Seijas, Composer, Lyricist - Luis Gómez Escolar, Composer, Lyricist - Ronnie Foster, Producer - Doug Shwartz, Editor, Mastering Engineer - Casey McMackin, Assistant Engineer - Eric Fisher, Assistant Engineer - Ken Deranteriasian, Assistant Engineer - Cal Harris, Assistant Engineer - Mitch Gibson, Assistant Engineer - Bryant Jackson, Assistant Engineer - Brad Gilderman, Mixing Engineer, Recording Engineer - Kurt Upper, Mixing Engineer, Recording Engineer - Michael Helms, Mixing Engineer - Steve Hall, Mastering Engineer",
+          "(P) 1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:18"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/fi-en/album/libertad-del-alma-robi-rosa/qu7jmk96yx7ab",
+    "retrievedAt": "2026-10-02T23:33:25.285Z",
+    "htmlSha256": "a6b1177195d4c5f21ab1f38e788978748a4ab445aef56566bee95171f3c4f76f",
+    "title": "Libertad Del Alma by Robi Rosa",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Penélope  (Album Version)",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Composer, Lyricist, MainArtist, AssociatedPerformer - Phil Manzanera, Producer - Jose Manuel Navarro Sempere, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:44"
+      },
+      {
+        "position": 2,
+        "title": "Tu Tren Se Va",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Composer, Lyricist, Electric Guitar, Co-Producer, Harmonica, MainArtist, AssociatedPerformer, Vocal - Brad Gilderman, Mixing Engineer, Recording Engineer - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer, Keyboards - Luis Gómez Escolar, Composer, Lyricist - Luis Conte, Percussion - Mike Thompson, Electric Guitar, Sitar - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P) 1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:22"
+      },
+      {
+        "position": 3,
+        "title": "Junkie  (Cuando Pasará)",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Composer, Lyricist, Producer, MainArtist, AssociatedPerformer - Julio Seijas, Composer, Lyricist - Brad Gilderman, Engineer - Ronnie Foster, Producer - Luis Gómez Escolar, Composer, Lyricist",
+          "(P) 1998 SONY BMG MUSIC ENTERTAINMENT"
+        ],
+        "duration": "00:03:45"
+      },
+      {
+        "position": 4,
+        "title": "Madre Tierra  (Album Version)",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, MainArtist, AssociatedPerformer - Robi Draco Rosa, Composer, Lyricist - Luis Gómez Escolar, Composer, Lyricist - Phil Manzanera, Producer",
+          "(P) 1996 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:37"
+      },
+      {
+        "position": 5,
+        "title": "Frio  (Album Version)",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Acoustic Guitar, Co-Producer, MainArtist, AssociatedPerformer, Vocal - J. Asua, Composer, Lyricist - M. Tena, Composer, Lyricist - Brad Gilderman, Mixing Engineer, Recording Engineer - Chris Cameron, Keyboards - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Conte, Percussion - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Zander Schloss, Acoustic Guitar, Mandolin - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P) 1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:28"
+      },
+      {
+        "position": 6,
+        "title": "Vagabundo  (Acoustic Version Courtesy Of MTV:  Music Television)",
+        "artist": "",
+        "credits": [],
+        "duration": "00:05:03"
+      },
+      {
+        "position": 7,
+        "title": "Cómo Me Acuerdo  (Album Version)",
+        "artist": "",
+        "credits": [
+          "George Noriega, Composer, Lyricist, Producer, Mixing Engineer - Robi Draco Rosa, Producer, Guitar, Mixing Engineer, MainArtist, AssociatedPerformer, Background Vocal, Vocal - Rusty Anderson, Guitar - Luis Gómez Escolar, Composer, Lyricist - Brian \"Big Bass\" Gardner, Mastering Engineer - Alex Al, Bass - Peu Meurrahy, Percussion - Ivan Moreno, Assistant Engineer - Statik, Programmer - El Potito, Vocal - Leonardo Reis, Percussion - Orlando Costa, Percussion - Draco Rosa, Composer, Lyricist - Seth Horan, Engineer, Mixing Engineer - Duda Silveira, Assistant Engineer - Trío Los Caciques, Guitar, Background Vocal - Julín Reyes, Guitar, Background Vocal - Hermanos Cepeda, Drums - William Araujo Luna, Jr., Assistant Engineer",
+          "(P) 2001 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:55"
+      },
+      {
+        "position": 8,
+        "title": "Almas Diferentes, Almas Gemelas  (Album Version)",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Acoustic Guitar, Electric Guitar, Co-Producer, MainArtist, AssociatedPerformer, Vocal - Robi Draco Rosa, Composer, Lyricist - Brad Gilderman, Mixing Engineer, Recording Engineer - Chris Cameron, Arranger - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer, Keyboards - Luis Gómez Escolar, Composer, Lyricist - Luis Conte, Percussion - Mike Thompson, Acoustic Guitar - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P) 1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:50"
+      },
+      {
+        "position": 9,
+        "title": "Brujeria  (Acoustic Version Courtesy Of MTV:  Music Television)",
+        "artist": "",
+        "credits": [],
+        "duration": "00:04:11"
+      },
+      {
+        "position": 10,
+        "title": "Mourning Gun  (Blanca Mujer)",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Composer, Lyricist, Producer, MainArtist, AssociatedPerformer - Brad Gilderman, Engineer - Ronnie Foster, Producer",
+          "(P) 1998 SONY BMG MUSIC ENTERTAINMENT"
+        ],
+        "duration": "00:03:33"
+      },
+      {
+        "position": 11,
+        "title": "Cruzando Puertas",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Composer, Lyricist, Co-Producer, MainArtist, AssociatedPerformer, Vocal - Brad Gilderman, Mixing Engineer, Recording Engineer - Chris Cameron, Arranger - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Gómez Escolar, Composer, Lyricist - Luis Conte, Percussion - Mike Thompson, Acoustic Guitar, Electric Guitar, AssociatedPerformer - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Zander Schloss, Mandolin - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P) 1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:05"
+      },
+      {
+        "position": 12,
+        "title": "Nymph  (Casi Una Diosa)",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Composer, Lyricist, Producer, MainArtist, AssociatedPerformer - Brad Gilderman, Engineer - Ronnie Foster, Producer - Luis Gómez Escolar, Composer, Lyricist",
+          "(P) 1998 SONY BMG MUSIC ENTERTAINMENT"
+        ],
+        "duration": "00:03:18"
+      },
+      {
+        "position": 13,
+        "title": "Vagabundo",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Composer, Lyricist, MainArtist, AssociatedPerformer - Phil Manzanera, Producer - Jose Manuel Navarro Sempere, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:37"
+      },
+      {
+        "position": 14,
+        "title": "Commitment #4",
+        "artist": "",
+        "credits": [
+          "Rusty Anderson, Guitar - TOM BAKER, Mastering Engineer - BENNY FACCONE, Mixing Engineer - Frank Ferrer, Drums - Seth Atkins Horan, Drums - Draco Rosa, Composer, Lyricist, Producer, Guitar, MainArtist, AssociatedPerformer, Vocal - Seth Horan, Engineer",
+          "(P) 2001 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:06:43"
+      },
+      {
+        "position": 15,
+        "title": "Solitary Man  (Acoustic Version)",
+        "artist": "",
+        "credits": [
+          "Billy Mann, Composer, Lyricist - George Noriega, Composer, Lyricist, Producer, Guitar - Robi Rosa, MainArtist, AssociatedPerformer - Robi Draco Rosa, Composer, Lyricist, Producer, Vocal - Rusty Anderson, Guitar - Brian \"Big Bass\" Gardner, Mastering Engineer",
+          "(P) 2001 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:51"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/au-en/album/asi-soy-charlie-cruz/0685738267163",
+    "retrievedAt": "2026-10-02T23:33:24.872Z",
+    "htmlSha256": "f811b72a23b6a4cf6fbc6eb7fb5fa6ae34e418e69453312fdd2b4d3e6b1f6842",
+    "title": "Asi Soy by Charlie Cruz",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Amarte Es Un Problema",
+        "artist": "",
+        "credits": [
+          "Chein Garcia Alonso, Composer, Lyricist - Charlie Cruz, MainArtist - Mario de Jesús, Engineer - SERGIO GEORGE, Composer, Lyricist, Producer, Arranger, Remixer - Jon Fausty, Engineer, Remixer - Sergi George, Producer - Gergio George, Arranger",
+          "© 2000 WEA Latina Inc. ℗ 2000 WEA LATINA INC."
+        ],
+        "duration": "00:05:04"
+      },
+      {
+        "position": 2,
+        "title": "Si No Te Hubieras Ido",
+        "artist": "",
+        "credits": [
+          "Marco Antonio Solis, Composer, Lyricist - Charlie Cruz, MainArtist - Mario de Jesús, Engineer - SERGIO GEORGE, Producer, Arranger, Remixer - Jon Fausty, Engineer, Remixer",
+          "© 2000 WEA Latina Inc. ℗ 2000 WEA LATINA INC."
+        ],
+        "duration": "00:04:48"
+      },
+      {
+        "position": 3,
+        "title": "Me Esta Matando Tu Ausencia",
+        "artist": "",
+        "credits": [
+          "Jorge Luis Piloto, Composer, Lyricist - Charlie Cruz, MainArtist - Mario de Jesús, Engineer - SERGIO GEORGE, Producer, Arranger, Remixer - Jon Fausty, Engineer, Remixer",
+          "© 2000 WEA Latina Inc. ℗ 2000 WEA LATINA INC."
+        ],
+        "duration": "00:04:42"
+      },
+      {
+        "position": 4,
+        "title": "Ayudame a Olvidarla",
+        "artist": "",
+        "credits": [
+          "Jorge Luis Piloto, Composer, Lyricist - Charlie Cruz, MainArtist - Mario de Jesús, Engineer - SERGIO GEORGE, Producer, Arranger, Remixer - Jon Fausty, Engineer, Remixer",
+          "© 2000 WEA Latina Inc. ℗ 2000 WEA LATINA INC."
+        ],
+        "duration": "00:04:34"
+      },
+      {
+        "position": 5,
+        "title": "Hoy Es El Dia",
+        "artist": "",
+        "credits": [
+          "Gustavo Márquez, Composer, Lyricist - Charlie Cruz, MainArtist - Mario de Jesús, Engineer - SERGIO GEORGE, Producer, Arranger, Remixer - Jon Fausty, Engineer, Remixer",
+          "© 2000 WEA Latina Inc. ℗ 2000 WEA LATINA INC."
+        ],
+        "duration": "00:04:55"
+      },
+      {
+        "position": 6,
+        "title": "Si Te Dicen Por Ahi",
+        "artist": "",
+        "credits": [
+          "Guadalupe García, Composer, Lyricist - Charlie Cruz, MainArtist - Mario de Jesús, Engineer - SERGIO GEORGE, Composer, Lyricist, Producer, Arranger, Remixer - Jon Fausty, Engineer, Remixer",
+          "© 2000 WEA Latina Inc. ℗ 2000 WEA LATINA INC."
+        ],
+        "duration": "00:04:40"
+      },
+      {
+        "position": 7,
+        "title": "Sabor Amargo",
+        "artist": "",
+        "credits": [
+          "Charlie Cruz, Composer, Lyricist, MainArtist - Mario de Jesús, Engineer - SERGIO GEORGE, Composer, Lyricist, Arranger, Remixer - Jon Fausty, Engineer, Remixer - Sergio Goerge, Producer - Deliris Matos, Composer, Lyricist",
+          "© 2000 WEA Latina Inc. ℗ 2000 WEA LATINA INC."
+        ],
+        "duration": "00:04:30"
+      },
+      {
+        "position": 8,
+        "title": "Por Ti",
+        "artist": "",
+        "credits": [
+          "Fernando Osorio, Composer, Lyricist - Charlie Cruz, MainArtist - Mario de Jesús, Engineer - MARSHA MALAMET, Composer, Lyricist - SERGIO GEORGE, Producer, Arranger, Remixer - Jon Fausty, Engineer, Remixer",
+          "© 2000 WEA Latina Inc. ℗ 2000 WEA LATINA INC."
+        ],
+        "duration": "00:04:44"
+      },
+      {
+        "position": 9,
+        "title": "Amarte Es Un Problema (Bachata Pop)",
+        "artist": "",
+        "credits": [
+          "Chein Garcia Alonso, Composer, Lyricist - Charlie Cruz, MainArtist - SERGIO GEORGE, Composer, Lyricist, Producer, Arranger - Gergio George, Arranger",
+          "© 2000 WEA Latina Inc. ℗ 2000 WEA LATINA INC."
+        ],
+        "duration": "00:04:03"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/us-en/album/calipso-clasicos-y-originales-alfrid-valdez-el-rey-del-steel-band/goptnvv89paam",
+    "retrievedAt": "2026-10-02T23:33:26.086Z",
+    "htmlSha256": "3128404d6da1e7007ccb312d4405af9eabf7651cb6b9775e87d8591bd8d299a6",
+    "title": "Calipso Clásicos y Originales by Alfrid Valdez El Rey del Steel Band",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "La Banana",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - Alfredo Valdez (Alfrid), Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:03:52"
+      },
+      {
+        "position": 2,
+        "title": "Fiesta Del Jouvert",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - Alfredo Valdez (Alfrid), Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:04:51"
+      },
+      {
+        "position": 3,
+        "title": "Hot,Hot,Hot",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - Alfredo Valdez (Alfrid), Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:06:08"
+      },
+      {
+        "position": 4,
+        "title": "Madan",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - Alfredo Valdez (Alfrid), Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:04:36"
+      },
+      {
+        "position": 5,
+        "title": "Ritmo de San Martín",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - M. HERNANDEZ, Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:04:59"
+      },
+      {
+        "position": 6,
+        "title": "Woman Del Callao",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - Julio Delgado, Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:03:58"
+      },
+      {
+        "position": 7,
+        "title": "Bula Bula",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - Mighty Dow, Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:03:50"
+      },
+      {
+        "position": 8,
+        "title": "Conga Line",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - Spays, Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:03:40"
+      },
+      {
+        "position": 9,
+        "title": "Soca Salsa",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - Isidoro York, Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:04:45"
+      },
+      {
+        "position": 10,
+        "title": "Mueve La Colita",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - Alfredo Valdez (Alfrid), Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:03:59"
+      },
+      {
+        "position": 11,
+        "title": "La Mazorca",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - Monty and Elian, Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:03:58"
+      },
+      {
+        "position": 12,
+        "title": "Amor En La Menor",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - Alfredo Valdez (Alfrid), Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:04:56"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/us-en/album/amor-y-control-ruben-blades/mtmwzwdbdtwyb",
+    "retrievedAt": "2026-10-02T23:33:25.868Z",
+    "htmlSha256": "49caac28307925eac629b643cacba633dde79a2e915af12ef2f18200715644cb",
+    "title": "Amor Y Control (Album Version) by Ruben Blades",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "El Apagon",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer, Composer, Lyricist",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:05:24"
+      },
+      {
+        "position": 2,
+        "title": "West Indian Man (Album Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer, Composer, Lyricist",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:28"
+      },
+      {
+        "position": 3,
+        "title": "Adan Garcia",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer, Composer, Lyricist",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:48"
+      },
+      {
+        "position": 4,
+        "title": "Naturaleza Muerta (Album Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer, Composer, Lyricist",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:02:30"
+      },
+      {
+        "position": 5,
+        "title": "El Cilindro (Album Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer, Composer, Lyricist",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:30"
+      },
+      {
+        "position": 6,
+        "title": "Piensa En Mi (Album Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer, Composer, Lyricist",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:29"
+      },
+      {
+        "position": 7,
+        "title": "Amor y Control",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer, Composer, Lyricist",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:05:52"
+      },
+      {
+        "position": 8,
+        "title": "Canto A La Madre",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer, Composer, Lyricist",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:02:50"
+      },
+      {
+        "position": 9,
+        "title": "Canto A La Muerte (Album Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer, Composer, Lyricist",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:06:21"
+      },
+      {
+        "position": 10,
+        "title": "Baby's In Black (Album Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer - J. Lennon, Composer - Paul Mccartney, Composer",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:33"
+      },
+      {
+        "position": 11,
+        "title": "Creo en Ti",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer, Composer, Lyricist",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:37"
+      },
+      {
+        "position": 12,
+        "title": "Conmemorando (Album Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer, Composer, Lyricist",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:06:09"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/br-pt/album/gracias-a-la-vida-voces-unidas-por-chile-beto-cuevas-juanes-alejandro-sanz-juan-luis-guerra-laura-pausini-fher-de-mana-shakira-michael-buble-miguel-bose/0825646816439",
+    "retrievedAt": "2026-10-02T23:33:25.614Z",
+    "htmlSha256": "5fb8aafcb32482bdfd123bf5b51416333dd407fa05c69392402b8387bc0c16e9",
+    "title": "Gracias a la vida by  Voces unidas por Chile  [Beto Cuevas, Juanes, Alejandro Sanz, Juan Luis Guerra, Laura Pausini, Fher de Maná, Shakira, Michael Bublé & Miguel Bosé]",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Gracias a la vida",
+        "artist": "",
+        "credits": [
+          "Alejandro Sanz, Vocals, MainArtist - Miguel Bosé, Vocals, MainArtist - Laura Pausini, Vocals, MainArtist - Shakira, MainArtist - Juanes, MainArtist - Juan Luis Guerra, Vocals, MainArtist - Michael Bublé, MainArtist - Beto Cuevas, Vocals, MainArtist - Violeta Parra, Composer - Fher De Mana, MainArtist",
+          "© 2010 Warner Music Mexico, S.A. de C. V. ℗ 2010 Warner Music Mexico, S.A. de C. V."
+        ],
+        "duration": "00:04:34"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/us-en/album/siembra-ruben-blades-willie-colon/ub6j1forrtscc",
+    "retrievedAt": "2026-10-02T23:33:26.390Z",
+    "htmlSha256": "ec284278819ca85906b0e30c78145451c9d3a8c9fbc04922f9b6599c4dc79b10",
+    "title": "Siembra (Special Edition) by Ruben Blades, Willie Colon",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Plástico",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer, Chorus - Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer - José Mangual Jr, Chorus - Adalberto Santiago, Chorus",
+          "℗ 1978 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:06:39"
+      },
+      {
+        "position": 2,
+        "title": "Buscando Guayaba",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer, Chorus - Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer - José Mangual Jr, Chorus - Adalberto Santiago, Chorus",
+          "℗ 1978 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:05:45"
+      },
+      {
+        "position": 3,
+        "title": "Pedro Navaja",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer, Chorus - Ruben Blades, MainArtist, Vocalist, Chorus, Composer - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer - José Mangual Jr, Chorus - Adalberto Santiago, Chorus",
+          "℗ 1978 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:07:22"
+      },
+      {
+        "position": 4,
+        "title": "María Lionza",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer, Chorus - Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer - José Mangual Jr, Chorus - Adalberto Santiago, Chorus",
+          "℗ 1978 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:05:32"
+      },
+      {
+        "position": 5,
+        "title": "Ojos",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer, Chorus - Ruben Blades, MainArtist, Vocalist, Chorus - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer - José Mangual Jr, Chorus - Adalberto Santiago, Chorus - Johnny Ortiz, ComposerLyricist",
+          "℗ 1978 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:04:51"
+      },
+      {
+        "position": 6,
+        "title": "Dime",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer, Chorus - Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer - José Mangual Jr, Chorus - Adalberto Santiago, Chorus",
+          "℗ 1978 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:07:00"
+      },
+      {
+        "position": 7,
+        "title": "Siembra",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer, Chorus - Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer - José Mangual Jr, Chorus - Adalberto Santiago, Chorus",
+          "℗ 1978 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:05:23"
+      },
+      {
+        "position": 8,
+        "title": "Dime ((Take 2))",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer, Chorus - Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer - José Mangual Jr, Chorus - Adalberto Santiago, Chorus",
+          "℗ 2010 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:02:36"
+      },
+      {
+        "position": 9,
+        "title": "Pedro Navaja ((Take 2))",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer, Chorus - Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer - José Mangual Jr, Chorus - Adalberto Santiago, Chorus",
+          "℗ 2010 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:06:24"
+      },
+      {
+        "position": 10,
+        "title": "Ligia Elena ((Merengue Version))",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer, Chorus - Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer - José Mangual Jr, Chorus - Adalberto Santiago, Chorus",
+          "℗ 2010 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:05:58"
+      },
+      {
+        "position": 11,
+        "title": "Plástico ((Instrumental Edit))",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer - Ruben Blades, MainArtist, ComposerLyricist - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer",
+          "℗ 2010 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:06:32"
+      },
+      {
+        "position": 12,
+        "title": "Siembra (Joe Claussell Remix)",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer, Chorus - Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Joe Claussell, MainArtist, Remixer - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer - José Mangual Jr, Chorus - Adalberto Santiago, Chorus",
+          "℗ 1978 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:10:10"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/se-en/album/esto-es-vida-draco-rosa-juan-luis-guerra/u97cx6via0yva",
+    "retrievedAt": "2026-10-02T23:33:26.475Z",
+    "htmlSha256": "17020867019f26b61182ded3e3237c48afdd23831346b056531d330219ecf5e7",
+    "title": "Esto Es Vida  (Live) by Draco Rosa & Juan Luis Guerra",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Esto Es Vida  (Live)",
+        "artist": "",
+        "credits": [
+          "David Palmer, Piano - Bob Ludwig, Mastering Engineer - Juan Luis Guerra, MainArtist, AssociatedPerformer - Luis Gómez Escolar, Composer, Lyricist - Jerry Medina, Trumpet, Background Vocal - Mike Harrison, Recording Engineer - Jorgen Carlsson, Bass - Eduardo del Aguila, Mixing Engineer - Toss Panos, Drums - Josh Sonntag, Electric Guitar - Draco Rosa, Composer, Lyricist, Producer, Electric Guitar, Vocal Producer, MainArtist, AssociatedPerformer, Vocal - Juan Covarrubias, Keyboards, Synthesizer - Cheo Quiñones, Background Vocal - Artyom Manukyan, Cello - Héctor Espinosa, Percussion, Recording Engineer, Background Vocal - Phantom Vox, Background Vocal - Michael Rosario, A&R Coordinator - Clint Rowland, Recording Engineer - Izzy De Jesús, A&R Director - Javier Hiram, Background Vocal - Draco Rosa & Juan Luis Guerra, AssociatedPerformer",
+          "(P) 2023 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:06:44"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/ca-en/album/vida-draco-rosa/0886443579927",
+    "retrievedAt": "2026-10-02T23:33:26.421Z",
+    "htmlSha256": "7c81feb7471faacf2a3baaeb5a70b68d96dc42517ac929245f640dbd15941ad6",
+    "title": "Vida by Draco Rosa",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Esto Es Vida",
+        "artist": "Draco Rosa Feat. Juan Luis Guerra",
+        "credits": [
+          "Draco Rosa Feat. Juan Luis Guerra, Performer\n - Draco Cornelius Rosa, Composer\n - Draco Cornelius Rosa, Lyricist\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - Juan Luis Guerra, Vocal\n - Luis Gómez Escolar, Composer\n - Luis Gómez Escolar, Lyricist\n - Anastasios Panos, Drums\n - Chris Bruce, Guitar\n - Christian Nieves, Other\n - David Piltch, Bass Guitar\n - Luis Conte, Percussion\n - Juan Covarrubias, Keyboards\n - Juan Covarrubias, Programmer\n - Mr. Blake, Keyboards\n - Mr. Blake, Programmer\n - David Palmer, Keyboards\n - David Palmer, Programmer\n - The String Box Ensemble, Strings\n - George Noriega, Assistant Producer\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Ali Helnwein, Performance Arranger\n - Seth Atkins Horan, Recording Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Allan Leschhorn, Recording Engineer\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:04:32"
+      },
+      {
+        "position": 2,
+        "title": "Penélope",
+        "artist": "Draco Rosa Feat. Maná",
+        "credits": [
+          "Draco Rosa Feat. Maná, Performer\n - Draco Rosa, Guitar\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - Robi Draco Rosa, Composer\n - Robi Draco Rosa, Lyricist\n - Fher, Vocal\n - José Manuel Navarro, Composer\n - José Manuel Navarro, Lyricist\n - Alex González, Drums\n - Sergio Vallín, Guitar\n - David Piltch, Bass Guitar\n - Juan Covarrubias, Keyboards\n - Juan Covarrubias, Programmer\n - Mr. Blake, Keyboards\n - Mr. Blake, Programmer\n - Jack Payne, Brass\n - Elverio Lucca, Brass\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Benny Faccone, Mixing Engineer\n - Benny Faccone, Recording Engineer\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Sadaharu Yagi, Recording Engineer\n - Fabián Serrano, Recording Engineer\n - Fernando Quintana, Recording Engineer\n - Bob Ludwig, Mastering Engineer\n - Seth Atkins Horan, Assistant Engineer",
+          "(P) 2012 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:53"
+      },
+      {
+        "position": 3,
+        "title": "Cómo Me Acuerdo",
+        "artist": "Draco Rosa Feat. Alejandro Sanz",
+        "credits": [
+          "Draco Rosa Feat. Alejandro Sanz, Performer\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - Alejandro Sanz, Vocal\n - Robi Draco Rosa, Composer\n - Robi Draco Rosa, Lyricist\n - Rusty Anderson, Guitar\n - Alex Al, Bass Guitar\n - George Noriega, Assistant Producer\n - George Noriega, Composer\n - George Noriega, Lyricist\n - George Noriega, Misc. Prod.\n - Mr. Blake, Bass Guitar\n - Mr. Blake, Keyboards\n - Mr. Blake, Programmer\n - Patrick Warren, Keyboards\n - Patrick Warren, Programmer\n - Luis Gómez Escolar, Composer\n - Luis Gómez Escolar, Lyricist\n - Juan Covarrubias, Keyboards\n - Juan Covarrubias, Programmer\n - Statik, Keyboards\n - Statik, Programmer\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Seth Atkins Horan, Recording Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Diego Kuuk, Assistant Engineer\n - Tommy Torres, Misc. Prod.\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:03"
+      },
+      {
+        "position": 4,
+        "title": "El Tiempo Va",
+        "artist": "Draco Rosa Feat. Rubén Blades",
+        "credits": [
+          "Draco Rosa Feat. Rubén Blades, Performer\n - Draco Cornelius Rosa, Composer\n - Draco Cornelius Rosa, Lyricist\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Vocal\n - Luis Gómez Escolar, Composer\n - Luis Gómez Escolar, Lyricist\n - Rubén Blades, Vocal\n - Anastasios Panos, Drums\n - Christian Nieves, Other\n - David Piltch, Bass Guitar\n - Luis Conte, Percussion\n - David Palmer, Keyboards\n - David Palmer, Programmer\n - Ulises \"El Licenciado\" Lozano, Accordion\n - The String Box Ensemble, Strings\n - George Noriega, Assistant Producer\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Seth Atkins Horan, Recording Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Nelson \"Gazu\" Jaime, Recording Engineer\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2012 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:45"
+      },
+      {
+        "position": 5,
+        "title": "Obra de Arte",
+        "artist": "Draco Rosa Feat. Enrique Bunbury",
+        "credits": [
+          "Draco Rosa Feat. Enrique Bunbury, Performer\n - Draco Cornelius Rosa, Composer\n - Draco Cornelius Rosa, Lyricist\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - Enrique Bunbury, Vocal\n - Luis Gómez Escolar, Composer\n - Luis Gómez Escolar, Lyricist\n - Anastasios Panos, Drums\n - Chris Bruce, Guitar\n - David Piltch, Bass Guitar\n - Luis Conte, Percussion\n - Juan Covarrubias, Keyboards\n - Juan Covarrubias, Programmer\n - Juan \"Cheíto\" Quiñones, Background Vocal\n - George Noriega, Assistant Producer\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Seth Atkins Horan, Recording Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:43"
+      },
+      {
+        "position": 6,
+        "title": "Blanca Mujer",
+        "artist": "Draco Rosa Feat. Shakira",
+        "credits": [
+          "Draco Rosa Feat. Shakira, Performer\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Piano\n - Draco Rosa, Producer\n - Draco Rosa, Vocal\n - Robi Draco Rosa, Composer\n - Robi Draco Rosa, Lyricist\n - Shakira, Vocal\n - Ali Helnwein, Strings\n - Luis Gómez Escolar, Composer\n - Luis Gómez Escolar, Lyricist\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Sadaharu Yagi, Recording Engineer\n - Seth Atkins Horan, Assistant Engineer\n - Dave Clauss, Recording Engineer\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:04:02"
+      },
+      {
+        "position": 7,
+        "title": "Más y Más",
+        "artist": "Draco Rosa Feat. Ricky Martin",
+        "credits": [
+          "Draco Rosa Feat. Ricky Martin, Performer\n - Robi Draco Rosa, Composer\n - Robi Draco Rosa, Lyricist\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - George Noriega, Assistant Producer\n - George Noriega, Producer\n - Itaal Shur, Composer\n - Itaal Shur, Lyricist\n - Ricky Martin, Vocal\n - Anastasios Panos, Drums\n - Luis Gomez Escolar, Composer\n - Luis Gomez Escolar, Lyricist\n - Ramón Stagnaro, Guitar\n - Alex Al, Bass Guitar\n - Juan Covarrubias, Keyboards\n - Juan Covarrubias, Programmer\n - Mr. Blake, Keyboards\n - Mr. Blake, Programmer\n - Statik, Keyboards\n - Statik, Programmer\n - Elverio Lucca, Brass\n - Jack Payne, Brass\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Seth Atkins Horan, Recording Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Enrique Larreal, Assistant Engineer\n - Tommy Torres, Assistant Engineer\n - Tommy Torres, Misc. Prod.\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:21"
+      },
+      {
+        "position": 8,
+        "title": "Noche Fría",
+        "artist": "Draco Rosa Feat. MiMA",
+        "credits": [
+          "Draco Rosa Feat. MiMA, Performer\n - Draco Rosa, Bass Guitar\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - MiMA, Vocal\n - Robi Draco Rosa, Composer\n - Robi Draco Rosa, Lyricist\n - Anastasios Panos, Drums\n - Rusty Anderson, Guitar\n - Walter Afanasieff, Composer\n - Walter Afanasieff, Lyricist\n - Mr. Blake, Keyboards\n - Mr. Blake, Programmer\n - Luis Gomez Escolar, Composer\n - Luis Gomez Escolar, Lyricist\n - Seth Atkins Horan, Keyboards\n - Seth Atkins Horan, Programmer\n - Seth Atkins Horan, Recording Engineer\n - Statik, Keyboards\n - Statik, Programmer\n - George Noriega, Producer\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer\n - Sadaharu Yagi, Assistant Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:04:31"
+      },
+      {
+        "position": 9,
+        "title": "Vagabundo",
+        "artist": "Draco Rosa Feat. Andrés Calamaro",
+        "credits": [
+          "Draco Rosa Feat. Andrés Calamaro, Performer\n - Draco Rosa, Bass Guitar\n - Draco Rosa, Guitar\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - Robi Draco Rosa, Composer\n - Robi Draco Rosa, Lyricist\n - Andrés Calamaro, Vocal\n - José Manuel Navarro, Composer\n - José Manuel Navarro, Lyricist\n - Constance B. Adnes, Drums\n - Mr. Blake, Keyboards\n - Mr. Blake, Programmer\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Seth Atkins Horan, Recording Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:24"
+      },
+      {
+        "position": 10,
+        "title": "Roto por Ti",
+        "artist": "Draco Rosa Feat. Juanes",
+        "credits": [
+          "Draco Rosa Feat. Juanes, Performer\n - Draco Cornelius Rosa, Composer\n - Draco Cornelius Rosa, Lyricist\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - Juanes, Vocal\n - Luis Gómez Escolar, Composer\n - Luis Gómez Escolar, Lyricist\n - Anastasios Panos, Drums\n - George Noriega, Composer\n - George Noriega, Lyricist\n - George Noriega, Misc. Prod.\n - Rusty Anderson, Guitar\n - Jörgen Carlsson, Bass Guitar\n - Jebin Bruni, Keyboards\n - Jebin Bruni, Programmer\n - Juan Covarrubias, Keyboards\n - Juan Covarrubias, Programmer\n - Armen Ksajikian, Cello\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Seth Atkins Horan, Recording Engineer\n - Benny Faccone, Assistant Engineer\n - Benny Faccone, Mixing Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Héctor Espinosa, Assistant Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:35"
+      },
+      {
+        "position": 11,
+        "title": "Paraíso Prometido (Hay Que Llegar)",
+        "artist": "Draco Rosa Feat. Marc Anthony",
+        "credits": [
+          "Draco Rosa Feat. Marc Anthony, Performer\n - Draco Cornelius Rosa, Composer\n - Draco Cornelius Rosa, Lyricist\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Vocal\n - Luis Gómez Escolar, Composer\n - Luis Gómez Escolar, Lyricist\n - Marc Anthony, Vocal\n - Anastasios Panos, Drums\n - Chris Bruce, Guitar\n - Christian Nieves, Other\n - David Piltch, Bass Guitar\n - Luis Conte, Percussion\n - David Palmer, Keyboards\n - David Palmer, Programmer\n - Hernán \"Teddy\" Mulet, Brass\n - Juan \"Cheíto\" Quiñones, Background Vocal\n - George Noriega, Assistant Producer\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Seth Atkins Horan, Recording Engineer\n - Benny Faccone, Assistant Engineer\n - Benny Faccone, Mixing Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Héctor Espinosa, Assistant Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:04:43"
+      },
+      {
+        "position": 12,
+        "title": "Reza por Mi",
+        "artist": "Draco Rosa Feat. Romeo Santos",
+        "credits": [
+          "Draco Rosa Feat. Romeo Santos, Performer\n - Draco Cornelius Rosa, Composer\n - Draco Cornelius Rosa, Lyricist\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - Luis Gómez Escolar, Composer\n - Luis Gómez Escolar, Lyricist\n - Romeo Santos, Vocal\n - Anastasios Panos, Percussion\n - Chris Bruce, Guitar\n - David Piltch, Bass Guitar\n - Juan Covarrubias, Clavichord\n - David Palmer, Keyboards\n - David Palmer, Programmer\n - Ulises \"El Licenciado\" Lozano, Accordion\n - George Noriega, Misc. Prod.\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Seth Atkins Horan, Recording Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:04:38"
+      },
+      {
+        "position": 13,
+        "title": "Cruzando Puertas",
+        "artist": "Draco Rosa Feat. José Feliciano",
+        "credits": [
+          "Draco Rosa Feat. José Feliciano, Performer\n - Draco Rosa, Guitar\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - Luis Gómez Escolar, Composer\n - Luis Gómez Escolar, Lyricist\n - José Feliciano, Guitar\n - José Feliciano, Vocal\n - Anastasios Panos, Drums\n - Robi Draco Rosa, Composer\n - Robi Draco Rosa, Lyricist\n - Jörgen Carlsson, Bass Guitar\n - Ulises \"El Licenciado\" Lozano, Accordion\n - Angel \"Cucco\" Peña, Assistant Producer\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Chris Cameron, Arranger\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Sadaharu Yagi, Recording Engineer\n - Héctor Iván Rosa, Assistant Engineer\n - Héctor Espinosa, Assistant Engineer\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:33"
+      },
+      {
+        "position": 14,
+        "title": "Amantes Hasta el Fin",
+        "artist": "Draco Rosa Feat. Ednita Nazario",
+        "credits": [
+          "Draco Rosa Feat. Ednita Nazario, Performer\n - Draco Rosa, Guitar\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - Robi Draco Rosa, Composer\n - Robi Draco Rosa, Lyricist\n - Ednita Nazario, Vocal\n - José Manuel Navarro, Composer\n - José Manuel Navarro, Lyricist\n - Anastasios Panos, Drums\n - Jörgen Carlsson, Bass Guitar\n - Mr. Blake, Keyboards\n - Mr. Blake, Programmer\n - Jack Payne, Brass\n - Elverio Lucca, Brass\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Sadaharu Yagi, Recording Engineer\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:57"
+      },
+      {
+        "position": 15,
+        "title": "Gracias Brujería",
+        "artist": "Draco Rosa Feat. Tego Calderón",
+        "credits": [
+          "Draco Rosa Feat. Tego Calderón, Performer\n - Robi Draco Rosa, Composer\n - Robi Draco Rosa, Lyricist\n - Draco Rosa, Bass Guitar\n - Draco Rosa, Guitar\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - Luis Gómez Escolar, Composer\n - Luis Gómez Escolar, Lyricist\n - Tego Calderón, Vocal\n - Constance B. Adnes, Drums\n - Rusty Anderson, Guitar\n - T. Calderón, Lyricist\n - R.S. Ted, Bass\n - Mr. Blake, Keyboards\n - Mr. Blake, Programmer\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Seth Atkins Horan, Recording Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:02:50"
+      },
+      {
+        "position": 16,
+        "title": "Madre Tierra 13",
+        "artist": "Draco Rosa Feat. Calle 13",
+        "credits": [
+          "Draco Rosa Feat. Calle 13, Performer\n - Draco Rosa, Bass Guitar\n - Draco Rosa, Guitar\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - Robi Draco Rosa, Composer\n - Robi Draco Rosa, Lyricist\n - Luis Gómez Escolar, Composer\n - Luis Gómez Escolar, Lyricist\n - René Pérez (Calle 13), Vocal\n - Constance B. Adnes, Drums\n - Rusty Anderson, Guitar\n - R.S. Ted, Bass\n - Juan Covarrubias, Keyboards\n - Juan Covarrubias, Programmer\n - Mr. Blake, Keyboards\n - Mr. Blake, Programmer\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Seth Atkins Horan, Recording Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Carlos Velázquez, Assistant Engineer\n - Héctor Espinosa, Assistant Engineer\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:03:40"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/es-es/album/maestra-vida-primera-parte-ruben-blades/bgz5w1720z6nc",
+    "retrievedAt": "2026-10-02T23:33:26.795Z",
+    "htmlSha256": "7d4f8dfca3dd32891e3f3947d99001445ff1f8586b4eb2c73b8b30d2bfef77e5",
+    "title": "Maestra Vida: Primera Parte (Remastered 2025) by Ruben Blades",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Prólogo (Remastered 2025)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, SpokenWord, ComposerLyricist - Willie Colon, MixingEngineer, Producer - Harold Hohon’s String Ensemble, Ensemble - Jon Fausty, MasteringEngineer, MixingEngineer - Mario Salvati, RecordingEngineer - Guillermo Ledezma, SpokenWord - César Miguel Rondón, SpokenWord - Anoland Díaz, SpokenWord - Kevin Zambrana, RecordingSecondEngineer - Joe Tarantino, MasteringEngineer",
+          "℗ 2025 Craft Recordings., Distributed by Concord."
+        ],
+        "duration": "00:06:31"
+      },
+      {
+        "position": 2,
+        "title": "Manuela (Remastered 2025)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Willie Colon, Chorus, MixingEngineer, Producer - Milton Cardona, Chorus - José Mangual Jr, Chorus - Harold Hohon’s String Ensemble, Ensemble - Jon Fausty, MasteringEngineer, MixingEngineer - Mario Salvati, RecordingEngineer - Kevin Zambrana, RecordingSecondEngineer - Joe Tarantino, MasteringEngineer",
+          "℗ 2025 Craft Recordings., Distributed by Concord."
+        ],
+        "duration": "00:05:44"
+      },
+      {
+        "position": 3,
+        "title": "Carmelo: Parte I (Remastered 2025)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Willie Colon, Chorus, MixingEngineer, Producer - Milton Cardona, Chorus - José Mangual Jr, Chorus - Harold Hohon’s String Ensemble, Ensemble - Jon Fausty, MasteringEngineer, MixingEngineer - Mario Salvati, RecordingEngineer - Kevin Zambrana, RecordingSecondEngineer - Joe Tarantino, MasteringEngineer",
+          "℗ 2025 Craft Recordings., Distributed by Concord."
+        ],
+        "duration": "00:01:05"
+      },
+      {
+        "position": 4,
+        "title": "Como Tú / Carmelo: Parte II (Remastered 2025)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Willie Colon, Chorus, MixingEngineer, Producer - Milton Cardona, Chorus - José Mangual Jr, Chorus - Harold Hohon’s String Ensemble, Ensemble - Jon Fausty, MasteringEngineer, MixingEngineer - Mario Salvati, RecordingEngineer - Kevin Zambrana, RecordingSecondEngineer - Joe Tarantino, MasteringEngineer",
+          "℗ 2025 Craft Recordings., Distributed by Concord."
+        ],
+        "duration": "00:04:17"
+      },
+      {
+        "position": 5,
+        "title": "Yo Soy una Mujer (Remastered 2025)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Willie Colon, Chorus, MixingEngineer, Producer - Milton Cardona, Chorus - José Mangual Jr, Chorus - Harold Hohon’s String Ensemble, Ensemble - Jon Fausty, MasteringEngineer, MixingEngineer - Mario Salvati, RecordingEngineer - Kevin Zambrana, RecordingSecondEngineer - Joe Tarantino, MasteringEngineer",
+          "℗ 2025 Craft Recordings., Distributed by Concord."
+        ],
+        "duration": "00:02:26"
+      },
+      {
+        "position": 6,
+        "title": "La Fiesta (Remastered 2025)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, SpokenWord, ComposerLyricist - Willie Colon, MixingEngineer, Producer - Harold Hohon’s String Ensemble, Ensemble - Jon Fausty, MasteringEngineer, MixingEngineer - Mario Salvati, RecordingEngineer - Guillermo Ledezma, SpokenWord - César Miguel Rondón, SpokenWord - Anoland Díaz, SpokenWord - Kevin Zambrana, RecordingSecondEngineer - Joe Tarantino, MasteringEngineer",
+          "℗ 2025 Craft Recordings., Distributed by Concord."
+        ],
+        "duration": "00:06:56"
+      },
+      {
+        "position": 7,
+        "title": "El Nacimiento de Ramiro (Remastered 2025)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Willie Colon, Chorus, MixingEngineer, Producer - Milton Cardona, Chorus - José Mangual Jr, Chorus - Harold Hohon’s String Ensemble, Ensemble - Jon Fausty, MasteringEngineer, MixingEngineer - Mario Salvati, RecordingEngineer - Kevin Zambrana, RecordingSecondEngineer - Joe Tarantino, MasteringEngineer",
+          "℗ 2025 Craft Recordings., Distributed by Concord."
+        ],
+        "duration": "00:07:54"
+      },
+      {
+        "position": 8,
+        "title": "Déjenme Reír (Para No Llorar) (Remastered 2025)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Willie Colon, Chorus, MixingEngineer, Producer - Milton Cardona, Chorus - José Mangual Jr, Chorus - Harold Hohon’s String Ensemble, Ensemble - Jon Fausty, MasteringEngineer, MixingEngineer - Mario Salvati, RecordingEngineer - Kevin Zambrana, RecordingSecondEngineer - Joe Tarantino, MasteringEngineer",
+          "℗ 2025 Craft Recordings., Distributed by Concord."
+        ],
+        "duration": "00:04:47"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/es-es/album/amar-es-combatir-mana/0825646366163",
+    "retrievedAt": "2026-10-02T23:33:26.918Z",
+    "htmlSha256": "76da69fe69725779dafb504c89322149a0b143cb5c25b9957dd5c1c9e3e4106b",
+    "title": "Amar Es Combatir by Mana",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Manda Una Señal",
+        "artist": "",
+        "credits": [
+          "Alex Gonzalez, Producer, Drums, Percussion, Vocals, Drum Programmer - Fher Olvera, Producer, Acoustic Guitar, Electric Guitar, Vocals, Writer, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Fernando Quintana, Vocals - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Arranger, Editor, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Miguel Bustamante, AssistantEngineer - Mike Fassano, Technician - Arturo Perales, AdditionalEngineer - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:40"
+      },
+      {
+        "position": 2,
+        "title": "Labios Compartidos (Album Version)",
+        "artist": "",
+        "credits": [
+          "Alex Gonzalez, Producer, Drums, Percussion, Vocals, Drum Programmer - Fher Olvera, Producer, Acoustic Guitar, Electric Guitar, Vocals, Writer, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Arranger, Editor, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Miguel Bustamante, AssistantEngineer - Mike Fassano, Technician - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:05:19"
+      },
+      {
+        "position": 3,
+        "title": "Ojalá Pudiera Borrarte",
+        "artist": "",
+        "credits": [
+          "Alex Gonzalez, Producer, Drums, Percussion, Vocals, Drum Programmer - Fher Olvera, Lyricist, Producer, Acoustic Guitar, Electric Guitar, Vocals, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Fernando Quintana, Vocals - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Arranger, Editor, Technician - Francisco Ayon, Technician - Gustavo Orozco, Loops - Juan Calleros, Bass - Miguel Bustamante, AssistantEngineer - Mike Fassano, Technician - Arturo Perales, AdditionalEngineer - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:55"
+      },
+      {
+        "position": 4,
+        "title": "Arráncame El Corazón",
+        "artist": "",
+        "credits": [
+          "Alex Gonzalez, Lyricist, Producer, Drums, Percussion, Vocals, Writer, Drum Programmer - Fher Olvera, Lyricist, Producer, Acoustic Guitar, Electric Guitar, Vocals, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Editor, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Miguel Bustamante, AssistantEngineer - Mike Fassano, Technician - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:43"
+      },
+      {
+        "position": 5,
+        "title": "Tengo Muchas Alas",
+        "artist": "",
+        "credits": [
+          "Albert Menendez, Keyboards - Alex Gonzalez, Producer, Drums, Percussion, Vocals, Drum Programmer - Fher Olvera, Lyricist, Producer, Acoustic Guitar, Electric Guitar, Vocals, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Arranger, Editor, Vocals, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Miguel Bustamante, AssistantEngineer - Mike Fassano, Technician - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:31"
+      },
+      {
+        "position": 6,
+        "title": "Dime Luna",
+        "artist": "",
+        "credits": [
+          "Alex Gonzalez, Producer, Drums, Percussion, Vocals, Drum Programmer - Fher Olvera, Lyricist, Producer, Acoustic Guitar, Electric Guitar, Vocals, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Editor, Guitar, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Miguel Bustamante, AssistantEngineer - Mike Fassano, Technician - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:49"
+      },
+      {
+        "position": 7,
+        "title": "Bendita Tu Luz",
+        "artist": "",
+        "credits": [
+          "Alex Gonzalez, Producer, Drums, Percussion, Vocals, Drum Programmer - Fher Olvera, Producer, Acoustic Guitar, Electric Guitar, Vocals, Writer, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals, Writer - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Editor, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Miguel Bustamante, AssistantEngineer - Juan Luis Guerra 4.40, Vocals, FeaturedArtist - Mike Fassano, Technician - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:22"
+      },
+      {
+        "position": 8,
+        "title": "Tú Me Salvaste",
+        "artist": "",
+        "credits": [
+          "Alex Gonzalez, Lyricist, Producer, Drums, Percussion, Vocals, Drum Programmer - Fher Olvera, Producer, Acoustic Guitar, Electric Guitar, Vocals, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Arranger, Editor, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Miguel Bustamante, AssistantEngineer - Mike Fassano, Technician - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:18"
+      },
+      {
+        "position": 9,
+        "title": "Combatiente",
+        "artist": "",
+        "credits": [
+          "Alex Gonzalez, Lyricist, Producer, Drums, Percussion, Vocals, Writer, Drum Programmer - Fher Olvera, Lyricist, Producer, Acoustic Guitar, Electric Guitar, Vocals, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Editor, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Miguel Bustamante, AssistantEngineer - Mike Fassano, Technician - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:36"
+      },
+      {
+        "position": 10,
+        "title": "El Viaje",
+        "artist": "",
+        "credits": [
+          "Alex Gonzalez, Lyricist, Producer, Drums, Percussion, Vocals, Drum Programmer - Fher Olvera, Producer, Acoustic Guitar, Electric Guitar, Vocals, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Editor, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Miguel Bustamante, AssistantEngineer - Mike Fassano, Technician - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:16"
+      },
+      {
+        "position": 11,
+        "title": "El Rey Tiburón",
+        "artist": "",
+        "credits": [
+          "Alex Gonzalez, Producer, Drums, Percussion, Vocals, Drum Programmer - Fher Olvera, Lyricist, Producer, Acoustic Guitar, Electric Guitar, Vocals, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Arranger, Editor, Guitar, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Luis Rey, Vocals - Miguel Bustamante, AssistantEngineer - Mike Fassano, Technician - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:53"
+      },
+      {
+        "position": 12,
+        "title": "Somos Mar y Arena",
+        "artist": "",
+        "credits": [
+          "Alex Gonzalez, Producer, Drums, Percussion, Vocals, Drum Programmer - Fher Olvera, Producer, Acoustic Guitar, Electric Guitar, Vocals, Writer, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals, Writer - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Arranger, Editor, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Luis Rey, Vocals - Miguel Bustamante, AssistantEngineer - Mike Fassano, Technician - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:41"
+      },
+      {
+        "position": 13,
+        "title": "Relax",
+        "artist": "",
+        "credits": [
+          "Albert Menendez, Keyboards - Alex Gonzalez, Producer, Drums, Percussion, Vocals, Drum Programmer - Fher Olvera, Producer, Acoustic Guitar, Electric Guitar, Vocals, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Maná, MainArtist - Sergio Vallin, Composer, Acoustic Guitar, Electric Guitar, Vocals - Thom Russo, Engineer, MixingEngineer - El Cejon Sandoval, Keyboards - Fabian Serrano, Editor - Fernando Vallin, Arranger, Editor, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Miguel Bustamante, AssistantEngineer - Mike Fassano, Technician - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:17"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/fr-fr/album/todos-vuelven-live-vol-2-live-ruben-blades-seis-del-solar/vkdimchd8k6sb",
+    "retrievedAt": "2026-10-02T23:33:26.776Z",
+    "htmlSha256": "f9e283d9169e38ede0d404e88d28f47b8ffc622ea92cbb14dfdbb96d8d76a25f",
+    "title": "Todos Vuelven Live, Vol. 2 (Live) par Rubén Blades, Seis del Solar",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Pablo Pueblo (Live)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, Composer, Writer, MainArtist - Seis del Solar, MainArtist",
+          "© 2010 Ruben Blades Productions ℗ 2010 Ruben Blades Productions"
+        ],
+        "duration": "00:06:33"
+      },
+      {
+        "position": 2,
+        "title": "Maestra Vida (Live)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, Composer, Writer, MainArtist - Seis del Solar, MainArtist",
+          "© 2010 Ruben Blades Productions ℗ 2010 Ruben Blades Productions"
+        ],
+        "duration": "00:07:56"
+      },
+      {
+        "position": 3,
+        "title": "Caminando (Live)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, Composer, Writer, MainArtist - Seis del Solar, MainArtist",
+          "© 2010 Ruben Blades Productions ℗ 2010 Ruben Blades Productions"
+        ],
+        "duration": "00:02:46"
+      },
+      {
+        "position": 4,
+        "title": "Adán García (Live)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, Composer, Writer, MainArtist - Seis del Solar, MainArtist",
+          "© 2010 Ruben Blades Productions ℗ 2010 Ruben Blades Productions"
+        ],
+        "duration": "00:06:37"
+      },
+      {
+        "position": 5,
+        "title": "Desapariciones (Live)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, Composer, Writer, MainArtist - Seis del Solar, MainArtist",
+          "© 2010 Ruben Blades Productions ℗ 2010 Ruben Blades Productions"
+        ],
+        "duration": "00:07:20"
+      },
+      {
+        "position": 6,
+        "title": "Patria (Live)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, Composer, Writer, MainArtist - Seis del Solar, MainArtist",
+          "© 2010 Ruben Blades Productions ℗ 2010 Ruben Blades Productions"
+        ],
+        "duration": "00:05:37"
+      },
+      {
+        "position": 7,
+        "title": "Muévete (Live)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, Composer, Writer, MainArtist - Juan Formell, Composer, Writer - Seis del Solar, MainArtist",
+          "© 2010 Ruben Blades Productions ℗ 2010 Ruben Blades Productions"
+        ],
+        "duration": "00:15:14"
+      },
+      {
+        "position": 8,
+        "title": "Pedro Navaja (Live)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, Composer, Writer, MainArtist - Seis del Solar, MainArtist",
+          "© 2010 Ruben Blades Productions ℗ 2010 Ruben Blades Productions"
+        ],
+        "duration": "00:08:09"
+      },
+      {
+        "position": 9,
+        "title": "Todos Vuelven (Live)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist - Cesar Miro, Composer, Writer - Seis del Solar, MainArtist",
+          "© 2010 Ruben Blades Productions ℗ 2010 Ruben Blades Productions"
+        ],
+        "duration": "00:07:41"
+      },
+      {
+        "position": 10,
+        "title": "Buscando América (Live)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, Composer, Writer, MainArtist - Seis del Solar, MainArtist",
+          "© 2010 Ruben Blades Productions ℗ 2010 Ruben Blades Productions"
+        ],
+        "duration": "00:10:17"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/fr-fr/album/frio-robi-rosa/d80eqkhn03k8a",
+    "retrievedAt": "2026-10-02T23:33:27.201Z",
+    "htmlSha256": "7e5f2885764428380f6fc10322cb3e421660393b4848dc9e85b76759494ece30",
+    "title": "Frio par Robi Rosa",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Cruzando Puertas",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Composer, Lyricist, Co-Producer, MainArtist, AssociatedPerformer, Vocal - Brad Gilderman, Mixing Engineer, Recording Engineer - Chris Cameron, Arranger - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Gómez Escolar, Composer, Lyricist - Luis Conte, Percussion - Mike Thompson, Acoustic Guitar, Electric Guitar, AssociatedPerformer - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Zander Schloss, Mandolin - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P) 1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:07"
+      },
+      {
+        "position": 2,
+        "title": "Y Que Me Importa",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Co-Producer, MainArtist, AssociatedPerformer, Vocal - Cury, Composer, Lyricist - K.C. Porter, AssociatedPerformer - R. Rosa, Adapter - Brad Gilderman, Mixing Engineer, Recording Engineer - Chris Cameron, Arranger - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer, AssociatedPerformer - Mike Thompson, Guitar - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer - Jose De Ribamar, Composer, Lyricist - Cipriano Torres, Composer, Lyricist - Kenny O'Bryan, AssociatedPerformer",
+          "(P) 1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:12"
+      },
+      {
+        "position": 3,
+        "title": "Cuando Pasara  (Album Version)",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Acoustic Guitar, Co-Producer, MainArtist, AssociatedPerformer, Vocal - Robi Draco Rosa, Composer, Lyricist - Julio Seijas, Composer, Lyricist - Brad Gilderman, Mixing Engineer, Recording Engineer - Chris Cameron, Keyboards - Cal Harris, Assistant Engineer - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Gómez Escolar, Composer, Lyricist - Luis Conte, Percussion - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Adriana Cisneros, AssociatedPerformer - Sandy Cisneros, AssociatedPerformer - Nestor Plata, AssociatedPerformer - Eduarto Plata, AssociatedPerformer - Vanessa Plata, AssociatedPerformer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P)1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:47"
+      },
+      {
+        "position": 4,
+        "title": "Frio  (Album Version)",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Acoustic Guitar, Co-Producer, MainArtist, AssociatedPerformer, Vocal - J. Asua, Composer, Lyricist - M. Tena, Composer, Lyricist - Brad Gilderman, Mixing Engineer, Recording Engineer - Chris Cameron, Keyboards - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Conte, Percussion - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Zander Schloss, Acoustic Guitar, Mandolin - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P) 1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:28"
+      },
+      {
+        "position": 5,
+        "title": "Mama",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Electric Guitar, Co-Producer, MainArtist, AssociatedPerformer, Vocal - R. Rosa, Composer, Lyricist - Jerry Hey, Trumpet - Brad Gilderman, Mixing Engineer, Recording Engineer - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Gómez Escolar, Composer, Lyricist - Luis Conte, Percussion - Gary Grant, Trumpet - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Bill Reichenbach, Trumpet - Mitch Gibson, Assistant Engineer - Zander Schloss, Electric Guitar - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P)1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:44"
+      },
+      {
+        "position": 6,
+        "title": "Guajira",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Co-Producer, MainArtist, AssociatedPerformer, Vocal - Papo Gely, Composer, Lyricist - K.C. Porter, AssociatedPerformer - Brad Gilderman, Mixing Engineer, Recording Engineer - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Conte, Percussion - Mike Thompson, Acoustic Guitar, Electric Guitar - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer - Kenny O'Bryan, AssociatedPerformer",
+          "(P)1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:15"
+      },
+      {
+        "position": 7,
+        "title": "Tu Tren Se Va",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Composer, Lyricist, Electric Guitar, Co-Producer, Harmonica, MainArtist, AssociatedPerformer, Vocal - Brad Gilderman, Mixing Engineer, Recording Engineer - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer, Keyboards - Luis Gómez Escolar, Composer, Lyricist - Luis Conte, Percussion - Mike Thompson, Electric Guitar, Sitar - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P) 1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:23"
+      },
+      {
+        "position": 8,
+        "title": "Casi Una Diosa",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Acoustic Guitar, Co-Producer, MainArtist, AssociatedPerformer, Vocal - R. Rosa, Composer, Lyricist - Kenneth Burward-Hoy, Viola - Bruce Dukov, Violin - Brad Gilderman, Mixing Engineer, Recording Engineer - Chris Cameron, Arranger - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Gómez Escolar, Composer, Lyricist - Luis Conte, Percussion - Mike Thompson, Electric Guitar - Ken Deranteriasian, Assistant Engineer - Dennis Karmazyn, Cello - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Richard Altenbach, Violin - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P)1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:44"
+      },
+      {
+        "position": 9,
+        "title": "Pasion",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Electric Guitar, Co-Producer, MainArtist, AssociatedPerformer, Vocal - R. Rosa, Composer, Lyricist - Brad Gilderman, Mixing Engineer, Recording Engineer - Chris Cameron, Programmer - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Gómez Escolar, Composer, Lyricist - Luis Conte, Percussion - Mike Thompson, Electric Guitar - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P)1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:48"
+      },
+      {
+        "position": 10,
+        "title": "Camaron",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Acoustic Guitar, Co-Producer, MainArtist, AssociatedPerformer, Vocal - J. Navarro, Composer, Lyricist - R. Rosa, Composer, Lyricist - Brad Gilderman, Mixing Engineer, Recording Engineer - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Conte, Percussion - Mike Thompson, Acoustic Guitar - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P)1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:33"
+      },
+      {
+        "position": 11,
+        "title": "Almas Diferentes, Almas Gemelas  (Album Version)",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Acoustic Guitar, Electric Guitar, Co-Producer, MainArtist, AssociatedPerformer, Vocal - Robi Draco Rosa, Composer, Lyricist - Brad Gilderman, Mixing Engineer, Recording Engineer - Chris Cameron, Arranger - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer, Keyboards - Luis Gómez Escolar, Composer, Lyricist - Luis Conte, Percussion - Mike Thompson, Acoustic Guitar - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P) 1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:38"
+      },
+      {
+        "position": 12,
+        "title": "Volver",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Acoustic Guitar, Co-Producer, MainArtist, AssociatedPerformer, Vocal - J. Navarro, Composer, Lyricist - R. Rosa, Composer, Lyricist - Brad Gilderman, Mixing Engineer, Recording Engineer - Chris Cameron, Keyboards - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Conte, Percussion - Mike Thompson, Electric Guitar - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Zander Schloss, Acoustic Guitar - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P)1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:39"
+      },
+      {
+        "position": 13,
+        "title": "Mama Hue",
+        "artist": "",
+        "credits": [
+          "Ozzie Melendez, Trombone - Barry Danielian, Trumpet - Robi Rosa, Co-Producer, MainArtist, AssociatedPerformer, Vocal - Brad Gilderman, Mixing Engineer, Recording Engineer - Ralph Irizarry, Percussion - Cal Harris, Assistant Engineer - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Oscar Hernández, Piano - Ken Deranteriasian, Assistant Engineer - Lincoln Goines, Background Vocal - Casey McMackin, Assistant Engineer - Bobby Allende, Congas - Arturo Ortiz, Keyboards - Mitch Gibson, Assistant Engineer - Mark Schulman, Electric Guitar - Bob Franceschini, Saxophone - Robbie Ameen, Drums - Deborah Resto, AssociatedPerformer - Doris Eugenio, AssociatedPerformer - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer - P.M. Trujillo, Composer, Lyricist - Rey Contreras, AssociatedPerformer",
+          "(P)1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:50"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/es-es/album/buscando-america-ruben-blades/0075596035262",
+    "retrievedAt": "2026-10-02T23:33:27.468Z",
+    "htmlSha256": "1f4fc195ff55e99536a374a310ca710556fc5a8c6d1deff2e1ffe87ac76d5ac4",
+    "title": "Buscando America by Ruben Blades",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Decisiones (LP Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Guitar, Producer, Vocals, Composer, Lyricist, Writer - David F. Rodriguez, Engineer - Eddy Montalvo, Percussion, Trombone - Louis Rivera, Percussion - Michael Vinas, Banjo, Guitar - Oscar Hernández, Keyboards, Piano - Ralph Irizarry, Percussion - Ricardo Marrero, Percussion, Synthesizer, Vibraphone - Adam Pinch, Contributor - Charles Blankette, Contributor - John Harris, Contributor - Mark Shane, Contributor - Mick Adams, Contributor - Mikael Ifversen, Contributor",
+          "℗ 1984 Elektra Entertainment Group"
+        ],
+        "duration": "00:05:03"
+      },
+      {
+        "position": 2,
+        "title": "GDBD (LP Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Guitar, Producer, Vocals, Writer - David F. Rodriguez, Engineer - Eddy Montalvo, Percussion, Trombone - Louis Rivera, Percussion - Michael Vinas, Banjo, Guitar - Oscar Hernández, Keyboards, Piano - Ralph Irizarry, Percussion - Ricardo Marrero, Percussion, Synthesizer, Vibraphone",
+          "℗ 1984 Elektra Entertainment Group"
+        ],
+        "duration": "00:03:35"
+      },
+      {
+        "position": 3,
+        "title": "Desapariciones (LP Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Guitar, Producer, Vocals, Writer - David F. Rodriguez, Engineer - Eddy Montalvo, Percussion, Trombone - Louis Rivera, Percussion - Michael Vinas, Banjo, Guitar - Oscar Hernández, Keyboards, Piano - Ralph Irizarry, Percussion - Ricardo Marrero, Percussion, Synthesizer, Vibraphone",
+          "℗ 1984 Elektra Entertainment Group"
+        ],
+        "duration": "00:06:28"
+      },
+      {
+        "position": 4,
+        "title": "Todos Vuelven (LP Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Guitar, Producer, Vocals, Writer - David F. Rodriguez, Engineer - Eddy Montalvo, Percussion, Trombone - Louis Rivera, Percussion - Michael Vinas, Banjo, Guitar - Oscar Hernández, Keyboards, Piano - Ralph Irizarry, Percussion - Ricardo Marrero, Percussion, Synthesizer, Vibraphone - Adam Pinch, Contributor - Cesar Miro, Composer - Charles Blankette, Contributor - John Harris, Contributor - Mark Shane, Contributor - Mick Adams, Contributor - Mikael Ifversen, Contributor",
+          "℗ 1984 Elektra Entertainment Group"
+        ],
+        "duration": "00:04:28"
+      },
+      {
+        "position": 5,
+        "title": "Caminos Verdes (LP Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Guitar, Producer, Vocals, Writer - David F. Rodriguez, Engineer - Eddy Montalvo, Percussion, Trombone - Louis Rivera, Percussion - Michael Vinas, Banjo, Guitar - Oscar Hernández, Keyboards, Piano - Ralph Irizarry, Percussion - Ricardo Marrero, Percussion, Synthesizer, Vibraphone",
+          "℗ 1984 Elektra Entertainment Group"
+        ],
+        "duration": "00:02:58"
+      },
+      {
+        "position": 6,
+        "title": "El Padre Antonio  (Y El Monaguillo Andres  LP Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Guitar, Producer, Vocals, Composer, Writer - David F. Rodriguez, Engineer - Eddy Montalvo, Percussion, Trombone - Louis Rivera, Percussion - Michael Vinas, Banjo, Guitar - Oscar Hernández, Keyboards, Piano - Ralph Irizarry, Percussion - Ricardo Marrero, Percussion, Synthesizer, Vibraphone - Adam Pinch, Contributor - Charles Blankette, Contributor - John Harris, Contributor - Mark Shane, Contributor - Mick Adams, Contributor - Mikael Ifversen, Contributor",
+          "℗ 1984 Elektra Entertainment Group"
+        ],
+        "duration": "00:08:03"
+      },
+      {
+        "position": 7,
+        "title": "Buscando America (LP Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Guitar, Producer, Vocals, Composer, Writer - David F. Rodriguez, Engineer - Eddy Montalvo, Percussion, Trombone - Louis Rivera, Percussion - Michael Vinas, Banjo, Guitar - Oscar Hernández, Keyboards, Piano - Ralph Irizarry, Percussion - Ricardo Marrero, Percussion, Synthesizer, Vibraphone - Adam Pinch, Contributor - Charles Blankette, Contributor - John Harris, Contributor - Mark Shane, Contributor - Mick Adams, Contributor - Mikael Ifversen, Contributor",
+          "℗ 1984 Elektra Entertainment Group"
+        ],
+        "duration": "00:08:38"
+      }
+    ]
+  },
+  {
+    "url": "https://www.qobuz.com/es-es/album/bohemio-y-poeta-ruben-blades/kcy2yel4fszdb",
+    "retrievedAt": "2026-10-02T23:33:27.372Z",
+    "htmlSha256": "604b557e3dd68cd8f6072e5d20ef9a0bf8398170659b85b1f248e71f73173034",
+    "title": "Bohemio y Poeta by Ruben Blades",
+    "tracks": [
+      {
+        "position": 1,
+        "title": "Juan Pachanga",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, ComposerLyricist - Fania All Stars, MainArtist - Jerry Masucci, ExecutiveProducer - Louie Ramirez, ComposerLyricist",
+          "℗ 1979 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:06:13"
+      },
+      {
+        "position": 2,
+        "title": "Sin Tu Cariño",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, ComposerLyricist - Jerry Masucci, ExecutiveProducer - Louie Ramirez, ComposerLyricist",
+          "℗ 1979 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:06:30"
+      },
+      {
+        "position": 3,
+        "title": "Paula C",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, ComposerLyricist - Jerry Masucci, ExecutiveProducer",
+          "℗ 1979 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:06:23"
+      },
+      {
+        "position": 4,
+        "title": "Me Recordaras",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, Chorus - Willie Colon, MainArtist, Chorus - Jerry Masucci, ExecutiveProducer - Milton Cardona, Chorus - José Mangual Jr, Chorus - Frank Dominguez, ComposerLyricist",
+          "℗ 1977 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:03:50"
+      },
+      {
+        "position": 5,
+        "title": "Pablo Pueblo",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, ComposerLyricist - Jerry Masucci, ExecutiveProducer",
+          "℗ 1979 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:06:15"
+      },
+      {
+        "position": 6,
+        "title": "La Mora",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, Chorus - Willie Colon, MainArtist, Chorus - Jerry Masucci, ExecutiveProducer - Jon Fausty, MasteringEngineer - Irv Greenbaum, MasteringEngineer - Milton Cardona, Chorus - José Mangual Jr, Chorus - Eliseo Grenet, ComposerLyricist",
+          "℗ 1977 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:06:38"
+      },
+      {
+        "position": 7,
+        "title": "Canto Abacuá",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, ComposerLyricist - Ray Barretto, MainArtist - Jerry Masucci, ExecutiveProducer",
+          "℗ 1979 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:08:21"
+      }
+    ]
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "checkedAt": "2026-10-03T00:47:15.405Z",
+  "deploymentId": "dpl_4kjePwdcD8KrERQWJpvGEMBYgRwt",
+  "productionUrl": "https://mangulina.do",
+  "checks": [
+    {
+      "url": "https://www.mangulina.do/es",
+      "httpStatus": 200,
+      "finalUrl": "https://www.mangulina.do/es",
+      "title": "Mangulina — La Base de Datos de Música Dominicana",
+      "hasServerError": false,
+      "scriptAssets": [
+        "/_next/static/immutable/chunks/0ws7t_wz4dvp7.js",
+        "/_next/static/immutable/chunks/0j8xk4or1obrt.js",
+        "/_next/static/immutable/chunks/3z4vdb3bqc_7-.js",
+        "/_next/static/immutable/chunks/turbopack-40v2ayd-q7xm_.js",
+        "/_next/static/immutable/chunks/2corl6wyj4669.js",
+        "/_next/static/immutable/chunks/07r88jrp1uzjh.js",
+        "/_next/static/immutable/chunks/40kp-j4v69bmj.js",
+        "/_next/static/immutable/chunks/3k044fl55yd-q.js",
+        "/_next/static/immutable/chunks/3wpys1jf3ubdl.js",
+        "/_next/static/immutable/chunks/37pdclnbd-yng.js",
+        "/_next/static/immutable/chunks/184f304e76ba1.js",
+        "/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "/_next/static/immutable/chunks/2belr3pe9fbiz.js"
+      ]
+    },
+    {
+      "url": "https://www.mangulina.do/en",
+      "httpStatus": 200,
+      "finalUrl": "https://www.mangulina.do/",
+      "title": "Mangulina — The Dominican Music Database",
+      "hasServerError": false,
+      "scriptAssets": [
+        "/_next/static/immutable/chunks/0ws7t_wz4dvp7.js",
+        "/_next/static/immutable/chunks/0j8xk4or1obrt.js",
+        "/_next/static/immutable/chunks/3z4vdb3bqc_7-.js",
+        "/_next/static/immutable/chunks/turbopack-40v2ayd-q7xm_.js",
+        "/_next/static/immutable/chunks/2corl6wyj4669.js",
+        "/_next/static/immutable/chunks/07r88jrp1uzjh.js",
+        "/_next/static/immutable/chunks/40kp-j4v69bmj.js",
+        "/_next/static/immutable/chunks/3k044fl55yd-q.js",
+        "/_next/static/immutable/chunks/3wpys1jf3ubdl.js",
+        "/_next/static/immutable/chunks/37pdclnbd-yng.js",
+        "/_next/static/immutable/chunks/184f304e76ba1.js",
+        "/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "/_next/static/immutable/chunks/2belr3pe9fbiz.js"
+      ]
+    },
+    {
+      "url": "https://www.mangulina.do/es/artists/juan-luis-guerra",
+      "httpStatus": 200,
+      "finalUrl": "https://www.mangulina.do/es/artists/juan-luis-guerra",
+      "title": "Juan Luis Guerra - Biografía, canciones y discografía | Mangulina",
+      "hasServerError": false,
+      "scriptAssets": [
+        "/_next/static/immutable/chunks/0ws7t_wz4dvp7.js",
+        "/_next/static/immutable/chunks/0j8xk4or1obrt.js",
+        "/_next/static/immutable/chunks/3z4vdb3bqc_7-.js",
+        "/_next/static/immutable/chunks/turbopack-40v2ayd-q7xm_.js",
+        "/_next/static/immutable/chunks/2corl6wyj4669.js",
+        "/_next/static/immutable/chunks/07r88jrp1uzjh.js",
+        "/_next/static/immutable/chunks/40kp-j4v69bmj.js",
+        "/_next/static/immutable/chunks/3k044fl55yd-q.js",
+        "/_next/static/immutable/chunks/3wpys1jf3ubdl.js",
+        "/_next/static/immutable/chunks/3lupq2eq4rj_i.js",
+        "/_next/static/immutable/chunks/3x9vxm9esm5-w.js",
+        "/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "/_next/static/immutable/chunks/2belr3pe9fbiz.js"
+      ]
+    },
+    {
+      "url": "https://www.mangulina.do/es/artists/alinna-vargas",
+      "httpStatus": 200,
+      "finalUrl": "https://www.mangulina.do/es/artists/alinna-vargas",
+      "title": "Alina Vargas - Biografía, canciones y discografía | Mangulina",
+      "hasServerError": false,
+      "scriptAssets": [
+        "/_next/static/immutable/chunks/0ws7t_wz4dvp7.js",
+        "/_next/static/immutable/chunks/0j8xk4or1obrt.js",
+        "/_next/static/immutable/chunks/3z4vdb3bqc_7-.js",
+        "/_next/static/immutable/chunks/turbopack-40v2ayd-q7xm_.js",
+        "/_next/static/immutable/chunks/2corl6wyj4669.js",
+        "/_next/static/immutable/chunks/07r88jrp1uzjh.js",
+        "/_next/static/immutable/chunks/40kp-j4v69bmj.js",
+        "/_next/static/immutable/chunks/3k044fl55yd-q.js",
+        "/_next/static/immutable/chunks/3wpys1jf3ubdl.js",
+        "/_next/static/immutable/chunks/3lupq2eq4rj_i.js",
+        "/_next/static/immutable/chunks/3x9vxm9esm5-w.js",
+        "/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "/_next/static/immutable/chunks/2belr3pe9fbiz.js"
+      ]
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/de-moca-a-paris-juan-luis-guerra-4-40",
+      "httpStatus": 200,
+      "finalUrl": "https://www.mangulina.do/es/songs/de-moca-a-paris-juan-luis-guerra-4-40",
+      "title": "De Moca a París - Información de la canción",
+      "hasServerError": false,
+      "scriptAssets": [
+        "/_next/static/immutable/chunks/0ws7t_wz4dvp7.js",
+        "/_next/static/immutable/chunks/0j8xk4or1obrt.js",
+        "/_next/static/immutable/chunks/3z4vdb3bqc_7-.js",
+        "/_next/static/immutable/chunks/turbopack-40v2ayd-q7xm_.js",
+        "/_next/static/immutable/chunks/2corl6wyj4669.js",
+        "/_next/static/immutable/chunks/07r88jrp1uzjh.js",
+        "/_next/static/immutable/chunks/40kp-j4v69bmj.js",
+        "/_next/static/immutable/chunks/3k044fl55yd-q.js",
+        "/_next/static/immutable/chunks/3wpys1jf3ubdl.js",
+        "/_next/static/immutable/chunks/3hzmmkk5dztem.js",
+        "/_next/static/immutable/chunks/2_aujq-budb_9.js",
+        "/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "/_next/static/immutable/chunks/2belr3pe9fbiz.js"
+      ]
+    }
+  ]
+}

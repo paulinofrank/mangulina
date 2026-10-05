@@ -1,0 +1,1174 @@
+{
+  "schema": [
+    {
+      "table_name": "editorial_assertion_evidence",
+      "column_name": "assertion_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_assertion_evidence",
+      "column_name": "source_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_assertion_evidence",
+      "column_name": "relationship",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_assertion_evidence",
+      "column_name": "locator",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_assertion_evidence",
+      "column_name": "notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_assertion_evidence",
+      "column_name": "created_by",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_assertion_evidence",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "editorial_assertion_recording_credits",
+      "column_name": "assertion_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_assertion_recording_credits",
+      "column_name": "recording_credit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_assertion_work_credits",
+      "column_name": "assertion_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_assertion_work_credits",
+      "column_name": "work_credit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "assertion_type",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "predicate",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "asserted_value",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "verification_status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "canonical_status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "internal_notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "public_notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "created_by",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "reviewed_by",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "reviewed_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "supersedes_assertion_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_assertions",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "editorial_decision_assertions",
+      "column_name": "decision_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_decision_assertions",
+      "column_name": "assertion_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_decision_assertions",
+      "column_name": "relationship",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "decision_type",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "reason",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "requested_by",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "approved_by",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "decided_by",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "requires_independent_approval",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "previous_canonical_state",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "resulting_canonical_state",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "internal_notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "public_notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "reverses_decision_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "requested_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "editorial_decisions",
+      "column_name": "decided_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "source_type",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "title",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "organization",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "author",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "publication_date",
+      "data_type": "date"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "url",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "archive_reference",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "citation_text",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "language",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "visibility",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "rights_notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "internal_notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "public_notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "created_by",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "editorial_sources",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "preferred_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "sort_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "entity_type",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "country_code",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "country",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "date_of_birth",
+      "data_type": "date"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "date_of_death",
+      "data_type": "date"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "birth_place",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "occupations",
+      "data_type": "ARRAY"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "has_image",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "image_updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "editorial_notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "created_by",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "external_contributors",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "work_credit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "source_type",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "source_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "source_reference",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "assertion_status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "verification_status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "metadata",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "observed_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "verified_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "work_credit_sources",
+      "column_name": "source_id",
+      "data_type": "uuid"
+    }
+  ],
+  "view": [
+    {
+      "definition": " SELECT r.id,\n    r.slug,\n    r.title,\n    w.id AS work_id,\n    w.slug AS work_slug,\n    w.preferred_title AS work_title,\n    owner.id AS artist_id,\n    owner.name AS artist_name,\n    owner.slug AS artist_slug,\n    r.duration,\n    r.recording_year,\n    r.isrcs,\n    COALESCE(first_release.release_year, r.recording_year) AS year,\n    COALESCE(first_release.id, representative.id) AS cover_release_id,\n    COALESCE(first_release.has_cover_image, representative.has_cover_image, false) AS has_cover_image\n   FROM recordings r\n     LEFT JOIN releases representative ON representative.id = r.release_id\n     LEFT JOIN artists owner ON owner.id = COALESCE(r.artist_id, representative.release_artist_id)\n     LEFT JOIN works w ON w.id = r.work_id AND w.status = 'published'::text\n     LEFT JOIN LATERAL ( SELECT rel.id,\n            COALESCE(rel.release_year, rel.year, EXTRACT(year FROM rel.date)::integer) AS release_year,\n            rel.has_cover_image\n           FROM tracks t\n             JOIN releases rel ON rel.id = t.release_id\n             LEFT JOIN artists a ON a.id = rel.release_artist_id\n          WHERE t.recording_id = r.id AND (rel.release_artist_id IS NULL OR a.status = 'published'::text)\n          ORDER BY (COALESCE(rel.release_year, rel.year, EXTRACT(year FROM rel.date)::integer)), rel.date, rel.id\n         LIMIT 1) first_release ON true\n  WHERE (COALESCE(r.artist_id, representative.release_artist_id) IS NULL OR owner.status = 'published'::text) AND NOT (EXISTS ( SELECT 1\n           FROM recording_redirects redirect\n          WHERE redirect.old_recording_id = r.id));"
+    }
+  ],
+  "triggers": [
+    {
+      "relname": "editorial_assertions",
+      "definition": "CREATE CONSTRAINT TRIGGER editorial_assertions_one_subject AFTER INSERT OR UPDATE ON public.editorial_assertions DEFERRABLE INITIALLY DEFERRED FOR EACH ROW EXECUTE FUNCTION validate_assertion_subject()",
+      "function": "CREATE OR REPLACE FUNCTION public.validate_assertion_subject()\n RETURNS trigger\n LANGUAGE plpgsql\n SET search_path TO ''\nAS $function$DECLARE n integer;BEGIN SELECT (SELECT count(*) FROM public.editorial_assertion_works WHERE assertion_id=NEW.id)+(SELECT count(*) FROM public.editorial_assertion_recordings WHERE assertion_id=NEW.id)+(SELECT count(*) FROM public.editorial_assertion_work_credits WHERE assertion_id=NEW.id)+(SELECT count(*) FROM public.editorial_assertion_recording_credits WHERE assertion_id=NEW.id)+(SELECT count(*) FROM public.editorial_assertion_isrcs WHERE assertion_id=NEW.id)+(SELECT count(*) FROM public.editorial_assertion_recording_work_targets WHERE assertion_id=NEW.id)+(SELECT count(*) FROM public.editorial_assertion_external_contributors WHERE assertion_id=NEW.id) INTO n;IF n<>1 THEN RAISE EXCEPTION 'assertion % must have exactly one typed subject/target (found %)',NEW.id,n;END IF;RETURN NEW;END$function$\n"
+    },
+    {
+      "relname": "recordings",
+      "definition": "CREATE TRIGGER recordings_governed_work_link BEFORE UPDATE OF work_id ON public.recordings FOR EACH ROW EXECUTE FUNCTION enforce_governed_work_link()",
+      "function": "CREATE OR REPLACE FUNCTION public.enforce_governed_work_link()\n RETURNS trigger\n LANGUAGE plpgsql\n SET search_path TO ''\nAS $function$\nBEGIN IF OLD.work_id IS DISTINCT FROM NEW.work_id AND current_setting('app.governed_work_link',true) IS DISTINCT FROM 'on' THEN RAISE EXCEPTION 'recordings.work_id must use governed editorial workflow'; END IF; RETURN NEW; END; $function$\n"
+    },
+    {
+      "relname": "recordings",
+      "definition": "CREATE TRIGGER recordings_validate_genre_taxonomy BEFORE INSERT OR UPDATE OF genre_id, subgenre_id ON public.recordings FOR EACH ROW EXECUTE FUNCTION validate_recording_genre_taxonomy()",
+      "function": "CREATE OR REPLACE FUNCTION public.validate_recording_genre_taxonomy()\n RETURNS trigger\n LANGUAGE plpgsql\n SET search_path TO 'public'\nAS $function$\nDECLARE\n    main_genre public.genres%ROWTYPE;\n    child_genre public.genres%ROWTYPE;\nBEGIN\n    IF NEW.genre_id IS NULL THEN\n        IF NEW.subgenre_id IS NOT NULL THEN\n            RAISE EXCEPTION 'subgenre_id requires genre_id';\n        END IF;\n        RETURN NEW;\n    END IF;\n\n    SELECT * INTO main_genre FROM public.genres WHERE id = NEW.genre_id;\n    IF NOT FOUND OR main_genre.level <> 0 OR main_genre.parent_id IS NOT NULL OR NOT main_genre.active THEN\n        RAISE EXCEPTION 'genre_id % must reference an active level 0 genre', NEW.genre_id;\n    END IF;\n\n    IF NEW.subgenre_id IS NOT NULL THEN\n        SELECT * INTO child_genre FROM public.genres WHERE id = NEW.subgenre_id;\n        IF NOT FOUND OR child_genre.level <> 1 OR NOT child_genre.active THEN\n            RAISE EXCEPTION 'subgenre_id % must reference an active level 1 genre', NEW.subgenre_id;\n        END IF;\n        IF child_genre.parent_id <> NEW.genre_id THEN\n            RAISE EXCEPTION 'subgenre_id % does not belong to genre_id %', NEW.subgenre_id, NEW.genre_id;\n        END IF;\n    END IF;\n\n    RETURN NEW;\nEND;\n$function$\n"
+    },
+    {
+      "relname": "recordings",
+      "definition": "CREATE TRIGGER recordings_work_projection_audit AFTER UPDATE OF work_id ON public.recordings FOR EACH ROW WHEN ((old.work_id IS DISTINCT FROM new.work_id)) EXECUTE FUNCTION audit_canonical_mutation()",
+      "function": "CREATE OR REPLACE FUNCTION public.audit_canonical_mutation()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO ''\nAS $function$\nDECLARE actor uuid := auth.uid(); changed_id uuid; correlation uuid;\nBEGIN\n changed_id := COALESCE(NEW.id,OLD.id);\n BEGIN correlation := nullif(current_setting('app.correlation_id',true),'')::uuid; EXCEPTION WHEN invalid_text_representation THEN correlation := NULL; END;\n INSERT INTO public.editorial_audit_events(event_type,actor_type,actor_user_id,correlation_id,table_name,row_id,before_state,after_state,reason)\n VALUES('canonical_projection.mutated',CASE WHEN actor IS NULL THEN 'service_process' ELSE 'human_editor' END,actor,COALESCE(correlation,gen_random_uuid()),TG_TABLE_NAME,changed_id,to_jsonb(OLD),to_jsonb(NEW),nullif(current_setting('app.editorial_reason',true),''));\n RETURN NEW;\nEND; $function$\n"
+    },
+    {
+      "relname": "recordings",
+      "definition": "CREATE TRIGGER trg_recordings_updated_at BEFORE UPDATE ON public.recordings FOR EACH ROW EXECUTE FUNCTION update_updated_at_column()",
+      "function": "CREATE OR REPLACE FUNCTION public.update_updated_at_column()\n RETURNS trigger\n LANGUAGE plpgsql\n SET search_path TO 'public', 'extensions'\nAS $function$\r\nBEGIN\r\n  NEW.updated_at = now();\r\n  RETURN NEW;\r\nEND;\r\n$function$\n"
+    },
+    {
+      "relname": "work_credits",
+      "definition": "CREATE TRIGGER work_credits_governed_writes BEFORE INSERT OR DELETE OR UPDATE ON public.work_credits FOR EACH ROW EXECUTE FUNCTION enforce_governed_work_credit()",
+      "function": "CREATE OR REPLACE FUNCTION public.enforce_governed_work_credit()\n RETURNS trigger\n LANGUAGE plpgsql\n SET search_path TO ''\nAS $function$\nBEGIN IF current_setting('app.governed_credit',true) IS DISTINCT FROM 'on' THEN RAISE EXCEPTION 'work_credits must use governed editorial workflow'; END IF; RETURN COALESCE(NEW,OLD); END; $function$\n"
+    },
+    {
+      "relname": "work_credits",
+      "definition": "CREATE TRIGGER work_credits_mutation_audit AFTER INSERT OR DELETE OR UPDATE ON public.work_credits FOR EACH ROW EXECUTE FUNCTION audit_canonical_mutation()",
+      "function": "CREATE OR REPLACE FUNCTION public.audit_canonical_mutation()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO ''\nAS $function$\nDECLARE actor uuid := auth.uid(); changed_id uuid; correlation uuid;\nBEGIN\n changed_id := COALESCE(NEW.id,OLD.id);\n BEGIN correlation := nullif(current_setting('app.correlation_id',true),'')::uuid; EXCEPTION WHEN invalid_text_representation THEN correlation := NULL; END;\n INSERT INTO public.editorial_audit_events(event_type,actor_type,actor_user_id,correlation_id,table_name,row_id,before_state,after_state,reason)\n VALUES('canonical_projection.mutated',CASE WHEN actor IS NULL THEN 'service_process' ELSE 'human_editor' END,actor,COALESCE(correlation,gen_random_uuid()),TG_TABLE_NAME,changed_id,to_jsonb(OLD),to_jsonb(NEW),nullif(current_setting('app.editorial_reason',true),''));\n RETURN NEW;\nEND; $function$\n"
+    },
+    {
+      "relname": "work_credits",
+      "definition": "CREATE TRIGGER work_credits_updated_at BEFORE UPDATE ON public.work_credits FOR EACH ROW EXECUTE FUNCTION music_ontology_set_updated_at()",
+      "function": "CREATE OR REPLACE FUNCTION public.music_ontology_set_updated_at()\n RETURNS trigger\n LANGUAGE plpgsql\n SET search_path TO ''\nAS $function$\nBEGIN\n  NEW.updated_at = now();\n  RETURN NEW;\nEND;\n$function$\n"
+    }
+  ],
+  "external": [
+    {
+      "id": "f258755d-8ac2-4def-9668-3a92b0e73f10",
+      "preferred_name": "Ramón Orlando Valoy",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "643b5d20-889e-4572-8b33-2340c444e11e",
+      "preferred_name": "Bienvenido Rodríguez",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "c9764756-26f8-4ee1-9594-0720268ce44b",
+      "preferred_name": "July Ruiz",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "a6793e60-d826-4432-8cf0-7e52234d31c2",
+      "preferred_name": "Salvador Morales",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "fbd08add-5423-44ac-8bd9-ae1c55bfb1e7",
+      "preferred_name": "Walter León Aguilar",
+      "status": "draft",
+      "country_code": null
+    },
+    {
+      "id": "e145deda-bf99-45f1-884c-f94ff5220a6a",
+      "preferred_name": "Efraín David Fines Nevares",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "8a9f1c64-1b23-40d2-9530-1b78afe339d5",
+      "preferred_name": "Tito \"El Bambino\"",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "0824c4e8-0875-42a3-ab39-77ea91cdbb18",
+      "preferred_name": "Blas Durán Jr.",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "1bf821a4-fbb9-436b-8c5c-6605efdcd150",
+      "preferred_name": "El Blachy",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "e9fbf123-3309-4512-9b47-77043baedb52",
+      "preferred_name": "Marco Antonio Solís",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "5de41fe0-add4-4625-83e3-6a66fe922081",
+      "preferred_name": "Martin Aquino",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "b2ebc79f-acf8-4e26-9a64-336475630210",
+      "preferred_name": "Confesor Rosario",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "170425d8-a4cd-41ee-b201-45fdfc6123d3",
+      "preferred_name": "Alejandro Montero",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "c94b83e7-2c44-4270-95f5-fa747769b7ff",
+      "preferred_name": "Edgar Emilio Urribarrí",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "07651c96-1e82-4047-b879-f8d0f4f07782",
+      "preferred_name": "Deiver Jesús Gutiérrez Montilla",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "2e477bcb-2633-4e27-9cab-5696747bffa0",
+      "preferred_name": "Moisés David Gutiérrez Montilla",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "e1269026-ec3c-4ffd-8c9d-530d5bc5bb1a",
+      "preferred_name": "Richard Daniel Olivarez Pineda",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "11d16955-8cec-4988-8c2e-f7508fad96b4",
+      "preferred_name": "Julio Ramírez",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "3872bcb1-807b-4fc1-9aab-b3d93f2a44de",
+      "preferred_name": "Carin León",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "0cd4f3c6-09b8-4cae-88a2-1e77367744b5",
+      "preferred_name": "Lady Laura",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "74dafce4-0204-4244-a3bf-008bda1c37ef",
+      "preferred_name": "Francisco García",
+      "status": "verified",
+      "country_code": null
+    },
+    {
+      "id": "a127be5f-d6c1-4166-9e95-1e51b6c4711d",
+      "preferred_name": "Susie Gadea",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "31219995-fd70-446f-b34f-06b7c7a64561",
+      "preferred_name": "Martinho Da Vila",
+      "status": "draft",
+      "country_code": "BR"
+    },
+    {
+      "id": "0c86d9c3-acf9-46c1-b408-472036a44ed4",
+      "preferred_name": "Benito Di Paula",
+      "status": "draft",
+      "country_code": "BR"
+    },
+    {
+      "id": "107904b4-8d68-48e7-a4cf-c86208dc27f7",
+      "preferred_name": "Zé Catimba",
+      "status": "draft",
+      "country_code": "BR"
+    },
+    {
+      "id": "4a2fb1dc-613a-44cb-929e-d361fc33581b",
+      "preferred_name": "Helcio Do Carmo",
+      "status": "draft",
+      "country_code": "BR"
+    },
+    {
+      "id": "c0f48f65-7368-4a75-9fd7-e280334f6a5b",
+      "preferred_name": "Manuel Alejandro",
+      "status": "verified",
+      "country_code": "ES"
+    },
+    {
+      "id": "17c64d9c-e23c-447a-ad5a-01522639d7be",
+      "preferred_name": "Ana Magdalena",
+      "status": "verified",
+      "country_code": "ES"
+    },
+    {
+      "id": "0efccf28-0f3b-4384-b024-cfe9869124b5",
+      "preferred_name": "Enrique Hidalgo",
+      "status": "verified",
+      "country_code": "VE"
+    },
+    {
+      "id": "b340b8c2-fd5a-4562-94e0-019addb76cc1",
+      "preferred_name": "Luis G. González",
+      "status": "verified",
+      "country_code": "VE"
+    },
+    {
+      "id": "f56883d9-23f6-4dfb-b814-581d2d206c4b",
+      "preferred_name": "Stefano Righi",
+      "status": "verified",
+      "country_code": "IT"
+    },
+    {
+      "id": "2273c539-79aa-42bc-a881-4a509d7886e9",
+      "preferred_name": "Carmelo La Bionda",
+      "status": "verified",
+      "country_code": "IT"
+    },
+    {
+      "id": "953e57ca-9f4c-4d00-bb67-dc341549d0c3",
+      "preferred_name": "Stefano Rota",
+      "status": "verified",
+      "country_code": "IT"
+    },
+    {
+      "id": "e8d13fdb-ee1c-4d9a-9ad2-79120220c5d2",
+      "preferred_name": "Fátima Ginette Cepeda",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "dd7b90e9-fec9-4d5e-92dc-7e2b660b1a60",
+      "preferred_name": "José Luis Perales",
+      "status": "verified",
+      "country_code": "ES"
+    },
+    {
+      "id": "6198ce61-6da7-481f-88ee-22302b64d6bc",
+      "preferred_name": "R.N. Toribio",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "77aea6fc-3090-414a-b101-683498deaee6",
+      "preferred_name": "Ramón Miliano",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "e72e04d4-81c6-4b1e-a0b4-19abfa137189",
+      "preferred_name": "Eduardo Franco",
+      "status": "verified",
+      "country_code": "UY"
+    },
+    {
+      "id": "32ae496a-e2c3-4fe1-abed-f1759fa57721",
+      "preferred_name": "Antonio Cabán Vale \"El Topo\"",
+      "status": "verified",
+      "country_code": "PR"
+    },
+    {
+      "id": "dcaedea2-9f72-4eb5-acd8-a5761f6adc02",
+      "preferred_name": "Augusto Algueró",
+      "status": "verified",
+      "country_code": "ES"
+    },
+    {
+      "id": "504fb6ea-13b5-4fe7-838f-399ca92e6a46",
+      "preferred_name": "Antonio Guijarro",
+      "status": "verified",
+      "country_code": "ES"
+    },
+    {
+      "id": "5881354d-8e16-478a-91e0-de32ff27960d",
+      "preferred_name": "Henry Castro",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "93257d32-2682-4050-a842-0bc361642705",
+      "preferred_name": "Richard Anthony Cepeda",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "2103ca0a-2160-41d2-8846-4c1cd43a63e7",
+      "preferred_name": "Anan Cepeda",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "5e75c6b7-9b38-4ffe-9ada-7d314eed7986",
+      "preferred_name": "Michelle",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "96e1d119-c955-4787-96c8-db4812d0abbb",
+      "preferred_name": "Andy Mesa",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "9a8d945a-55bd-47e0-99ac-8a35c7a9b40f",
+      "preferred_name": "Gregory Abismael Rodríguez",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "114461b8-5b87-4c09-8df7-7ec58cd8937b",
+      "preferred_name": "Joel Báez Nieves",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "9e7dead6-839f-455e-bec4-bb9d18758149",
+      "preferred_name": "Danidrvms",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "b94fbb00-3141-473b-8728-ad136364dae4",
+      "preferred_name": "Barvc",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "4b03215c-e497-4849-aa09-008e493b2424",
+      "preferred_name": "Elvis Crespo",
+      "status": "verified",
+      "country_code": "PR"
+    },
+    {
+      "id": "23975998-693b-490f-9ee9-55f13511e143",
+      "preferred_name": "Lenier Mesa",
+      "status": "verified",
+      "country_code": "CU"
+    },
+    {
+      "id": "b85b199f-721a-4042-a150-6007e870bdb2",
+      "preferred_name": "Bizarrap",
+      "status": "verified",
+      "country_code": "AR"
+    },
+    {
+      "id": "e59590e3-c2d6-4fe1-8e8d-9a466fb4a195",
+      "preferred_name": "J Balvin",
+      "status": "verified",
+      "country_code": "CO"
+    },
+    {
+      "id": "c034fa79-ef2f-41e0-b3d9-b41d0a4a403b",
+      "preferred_name": "Keityn",
+      "status": "verified",
+      "country_code": "CO"
+    },
+    {
+      "id": "8221aa46-e507-487a-9a6c-35ad44f8d78f",
+      "preferred_name": "Damn Goldo",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "bc1dc822-b8c5-4dde-8e5d-a69a214c7375",
+      "preferred_name": "Uno Seis Music",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "f71fe4c1-0f98-4889-bdf3-d2900d9089f0",
+      "preferred_name": "Meyiyi",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "31aedf16-97dd-41bd-bb41-d2f8edbb51d4",
+      "preferred_name": "Mr Gil",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "a8c1137c-9f5b-48c8-bdae-67a45f4b3550",
+      "preferred_name": "Scroggins",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "5c7ae0f4-67e0-49d5-b726-c3846b769dbf",
+      "preferred_name": "Luisito Rey",
+      "status": "verified",
+      "country_code": "ES"
+    },
+    {
+      "id": "b138e9b1-75d4-4e1f-8d6f-1ab9ad75eb6e",
+      "preferred_name": "Demetrio Ortiz",
+      "status": "verified",
+      "country_code": "PY"
+    },
+    {
+      "id": "c4dc7fd1-71e1-4f33-86d9-d6014b256be5",
+      "preferred_name": "Zulema de Mirkin",
+      "status": "verified",
+      "country_code": "AR"
+    },
+    {
+      "id": "080e7c86-ccae-44a6-8b17-84c6e601f4d6",
+      "preferred_name": "Roberto Carlos",
+      "status": "verified",
+      "country_code": "BR"
+    },
+    {
+      "id": "deb51803-bc29-40c6-bfa3-b0e4211f09fb",
+      "preferred_name": "Erasmo Carlos",
+      "status": "verified",
+      "country_code": "BR"
+    },
+    {
+      "id": "b0d8b0ef-e994-4b07-8850-e528393bcf81",
+      "preferred_name": "Alejandro Jaén",
+      "status": "verified",
+      "country_code": "ES"
+    },
+    {
+      "id": "4587d879-2e2b-44bb-8cfd-24dfe7a13aa0",
+      "preferred_name": "Andrés de Jesús",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "1dbca0a2-541b-46d1-8b2e-a67a559da801",
+      "preferred_name": "Armando Olivero",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "38c1a89a-0fd6-4982-a20a-44b268a3af20",
+      "preferred_name": "Leo Pimentel",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "43de7e21-7710-4c06-b09b-d92cf448bdd3",
+      "preferred_name": "Johnny Tu Langa",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "ac8c3163-c149-41f1-8bb3-14e189846393",
+      "preferred_name": "Fernando Escobar",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "81affb7f-d75a-430d-bfe1-41e46056d1f4",
+      "preferred_name": "Sandy Valdez",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "f2a25939-2962-4aed-b871-bf742644aa1f",
+      "preferred_name": "Nerlin Doble B",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "6f5b7bb2-30cc-4c9d-bd99-6d3942d07536",
+      "preferred_name": "King Opa",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "9403fd4b-666e-4636-a514-7c0f52738951",
+      "preferred_name": "J Black",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "9ab29f09-7950-40a9-825f-b92b4dc781fa",
+      "preferred_name": "Juan Gabriel",
+      "status": "draft",
+      "country_code": "MX"
+    },
+    {
+      "id": "840ea303-a24c-4a7f-8b31-14ae30d8fc72",
+      "preferred_name": "Raúl Santi",
+      "status": "draft",
+      "country_code": "CO"
+    },
+    {
+      "id": "6fcdf437-958c-4254-8166-d575fe43ef28",
+      "preferred_name": "Giordano Di Marzo (Yordano)",
+      "status": "draft",
+      "country_code": "VE"
+    },
+    {
+      "id": "736c0086-42b1-4757-9458-3b722fd16353",
+      "preferred_name": "Ilan Chester",
+      "status": "draft",
+      "country_code": "VE"
+    },
+    {
+      "id": "937f4ba9-b1c0-4493-b28b-ad06ec89b1ba",
+      "preferred_name": "Jorge Luis Piloto",
+      "status": "draft",
+      "country_code": "CU"
+    },
+    {
+      "id": "36ca542e-e95b-48fd-9368-e1640d82a5ea",
+      "preferred_name": "Titti Soto",
+      "status": "draft",
+      "country_code": "VE"
+    },
+    {
+      "id": "de185d2e-445c-4b61-a8cf-6b56753ee468",
+      "preferred_name": "Diomedes Díaz",
+      "status": "draft",
+      "country_code": "CO"
+    },
+    {
+      "id": "a9af0296-b14e-4cf9-ba12-6ed8c8fbdff6",
+      "preferred_name": "Eddy Grant",
+      "status": "draft",
+      "country_code": "GY"
+    },
+    {
+      "id": "06af7b38-0cca-499d-8499-b40ab1464b20",
+      "preferred_name": "Roberto Livi",
+      "status": "draft",
+      "country_code": "AR"
+    },
+    {
+      "id": "013c2292-479c-45bb-983b-e17677900a37",
+      "preferred_name": "Bebu Silvetti",
+      "status": "draft",
+      "country_code": "AR"
+    },
+    {
+      "id": "d7295451-fb7e-40aa-80b1-0ab14cf2be85",
+      "preferred_name": "Octavio Daza",
+      "status": "draft",
+      "country_code": "CO"
+    },
+    {
+      "id": "84ae466d-dde7-46e6-b228-03c33d9f1b7e",
+      "preferred_name": "Felipe Rosario Goyco (Don Felo)",
+      "status": "draft",
+      "country_code": "PR"
+    },
+    {
+      "id": "bab8c37f-eedc-4e4b-b767-1313544fb859",
+      "preferred_name": "Luis Carlos Da Vila",
+      "status": "draft",
+      "country_code": "BR"
+    },
+    {
+      "id": "79107d9b-0ce4-439b-8cf8-1d17582d83db",
+      "preferred_name": "Adilson Victor",
+      "status": "draft",
+      "country_code": "BR"
+    },
+    {
+      "id": "333e7816-c155-49d1-9c5d-4bbbf7197553",
+      "preferred_name": "Priminho",
+      "status": "draft",
+      "country_code": "BR"
+    },
+    {
+      "id": "dbefb883-f790-4869-8572-a891187b4a48",
+      "preferred_name": "Maninho",
+      "status": "draft",
+      "country_code": "BR"
+    },
+    {
+      "id": "5b409f90-d89c-4ba0-b1e2-47ae73627116",
+      "preferred_name": "Tonico",
+      "status": "draft",
+      "country_code": "BR"
+    },
+    {
+      "id": "c49c8354-82b3-4880-8b79-ae17247c7289",
+      "preferred_name": "Pedrinho Medeiros",
+      "status": "draft",
+      "country_code": "BR"
+    },
+    {
+      "id": "5f0a36a2-716e-4bb1-a445-f899bda849bc",
+      "preferred_name": "María Angélica Ramírez",
+      "status": "draft",
+      "country_code": "AR"
+    },
+    {
+      "id": "26206890-c08f-4d9b-a811-8ac9a87e0aa9",
+      "preferred_name": "Marcelo Molina",
+      "status": "draft",
+      "country_code": "AR"
+    },
+    {
+      "id": "c3136391-9434-4666-ab4e-177874449ab3",
+      "preferred_name": "Aquiles Ruggiero",
+      "status": "draft",
+      "country_code": "AR"
+    },
+    {
+      "id": "8c7cce08-432b-481b-9580-b93a02b92b9b",
+      "preferred_name": "Frank Ceara",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "7cf04ae1-77f9-47ec-87f6-d825c6541180",
+      "preferred_name": "Enrique Féliz",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "5731138f-a282-4a09-a598-358276b14bf7",
+      "preferred_name": "Piro Valerio",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "fa5467a0-9196-488c-b54d-98f389e4882e",
+      "preferred_name": "Miguel Matamoros",
+      "status": "verified",
+      "country_code": "CU"
+    },
+    {
+      "id": "5ebe6110-0c6e-4c04-b48e-ec42af6f7f02",
+      "preferred_name": "Samuel González",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "a60dcee6-a44a-4759-a1cd-de7c47e8fe24",
+      "preferred_name": "Gus Rodríguez",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "40f4daa4-8531-4266-84c2-02a50a6e1680",
+      "preferred_name": "Taxi Amarillo",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "5fdbdaae-0f5b-4c47-afee-c0efbc2428a2",
+      "preferred_name": "Chris Hierro",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "ca7e586a-e9bb-4c86-8bdd-8a298b5776cd",
+      "preferred_name": "Antonio González",
+      "status": "verified",
+      "country_code": "DO"
+    },
+    {
+      "id": "d286a4b2-1b8d-4483-81fb-27e846944bdd",
+      "preferred_name": "Modesto López Oña",
+      "status": "verified",
+      "country_code": "PE"
+    }
+  ],
+  "evidenceCounts": [
+    {
+      "name": "assertions",
+      "count": "121"
+    },
+    {
+      "name": "evidence",
+      "count": "62"
+    }
+  ]
+}

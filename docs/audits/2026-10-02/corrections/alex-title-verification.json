@@ -1,0 +1,30 @@
+{
+  "verifiedAt": "2026-10-03T19:18:35.561Z",
+  "checks": {
+    "bothTitlesAndOwners": true,
+    "recordingIdsAndWorkLinksPreserved": true,
+    "noSergioRecordingCreditOnVoy": true,
+    "publicTitle_e63a471f-1cc4-4b07-beff-219c8b3b19d2": true,
+    "publicTitle_02990a6a-ccdd-4d43-be40-73610630bb15": true
+  },
+  "pages": [
+    {
+      "url": "https://www.mangulina.do/es/songs/sin-ti-no-soy-nada-alex-bueno-3",
+      "status": 200,
+      "heading": "Sin ti no soy nadapor Alex Bueno",
+      "oldStatus": 404,
+      "oldLocation": null,
+      "oldHeading": "",
+      "redirectRows": []
+    },
+    {
+      "url": "https://www.mangulina.do/es/songs/sin-ti-no-soy-nada-alex-bueno-4",
+      "status": 200,
+      "heading": "Sin ti no soy nadapor Alex Bueno",
+      "oldStatus": 404,
+      "oldLocation": null,
+      "oldHeading": "",
+      "redirectRows": []
+    }
+  ]
+}

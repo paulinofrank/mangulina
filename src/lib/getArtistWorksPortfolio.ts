@@ -36,6 +36,7 @@ export type PortfolioRecording = {
   roles: string[];
   creditedAs: string | null;
   recordingId: string | null;
+  recordingArtistId?: string | null;
   recordingSlug: string | null;
   workId: string | null;
   workTitle: string | null;
@@ -92,6 +93,8 @@ type RecordingCreditRow = {
 };
 type PerformerCreditRow = {
   recording_id: string;
+  artist_id: string | null;
+  external_contributor_id: string | null;
   role: string;
   credited_as: string | null;
   display_order: number | null;
@@ -182,7 +185,7 @@ async function getRecordingPortfolio(artistId: string): Promise<PortfolioRecordi
     await Promise.all([
       supabase
         .from("recording_credits")
-        .select("recording_id,role,credited_as,display_order,metadata,artist:artists!inner(id,name,slug,status,has_image,image_updated_at)")
+        .select("recording_id,artist_id,external_contributor_id,role,credited_as,display_order,metadata,artist:artists(id,name,slug,status,has_image,image_updated_at)")
         .in("recording_id", recordingIds)
         .in("role", [...RECORDING_PERFORMER_ROLES])
         .eq("artist.status", "published"),
@@ -205,8 +208,31 @@ async function getRecordingPortfolio(artistId: string): Promise<PortfolioRecordi
   if (releaseGroupError) console.error("Recording portfolio Release Group query failed:", releaseGroupError);
   const releaseGroupTitles = new Map((releaseGroups ?? []).map((group) => [group.id, group.title]));
 
+  const performerCredits = (performerData ?? []) as unknown as PerformerCreditRow[];
+  const externalRecordingIds = [...new Set(performerCredits.filter((credit) => credit.external_contributor_id)
+    .map((credit) => credit.recording_id))];
+  const externalNames = new Map<string, string>();
+  // External contributor tables are private. Resolve only names returned by
+  // the existing public credit reader, which applies its visibility rules.
+  for (let offset = 0; offset < externalRecordingIds.length; offset += 10) {
+    const results = await Promise.all(externalRecordingIds.slice(offset, offset + 10).map(async (id) => {
+      const { data, error } = await supabase.rpc("get_public_recording_credits", { recording_uuid: id });
+      if (error) throw error;
+      return { id, credits: data as { identity_type: string; identity_id: string; role: string; display_name: string }[] | null };
+    }));
+    for (const result of results) for (const credit of result.credits ?? []) {
+      if (credit.identity_type === "external_contributor") {
+        externalNames.set(`${result.id}|${credit.identity_id}|${credit.role}`, credit.display_name);
+      }
+    }
+  }
   const performersByRecording = new Map<string, PerformerCreditRow[]>();
-  for (const performer of (performerData ?? []) as unknown as PerformerCreditRow[]) {
+  for (const performer of performerCredits) {
+    if (performer.external_contributor_id) {
+      const name = externalNames.get(`${performer.recording_id}|${performer.external_contributor_id}|${performer.role}`);
+      if (!name) continue;
+      performer.credited_as = name;
+    } else if (firstRelated(performer.artist)?.status !== "published") continue;
     performersByRecording.set(performer.recording_id, [
       ...(performersByRecording.get(performer.recording_id) ?? []),
       performer,
@@ -270,6 +296,7 @@ async function getRecordingPortfolio(artistId: string): Promise<PortfolioRecordi
       roles,
       creditedAs: recordingCredits.find((credit) => credit.credited_as?.trim())?.credited_as ?? null,
       recordingId: recording.id,
+      recordingArtistId: recording.artist_id,
       recordingSlug: recording.slug,
       workId: work?.id ?? null,
       workTitle: work?.preferred_title ?? null,
@@ -306,21 +333,37 @@ async function getEditorialPortfolio(artistId: string): Promise<PortfolioRecordi
     return [];
   }
   const rows = (data ?? []) as EditorialRow[];
+  // The legacy RPC omits recording_id. Recover the real link before
+  // deduplicating editorial and canonical contributions.
+  if (rows.length) {
+    const { data: links, error: linkError } = await supabase.from("credited_works")
+      .select("id,recording_id").in("id", rows.map((row) => row.id));
+    if (linkError) throw linkError;
+    const byId = new Map((links ?? []).map((link) => [link.id, link.recording_id]));
+    for (const row of rows) row.recording_id = byId.get(row.id) ?? row.recording_id ?? null;
+  }
   const performerIds = [...new Set(rows.map((work) => work.performer_artist_id).filter((id): id is string => Boolean(id)))];
   const recordingIds = [...new Set(rows.map((work) => work.recording_id).filter((id): id is string => Boolean(id)))];
-  const [{ data: artistData }, { data: recordingData }] = await Promise.all([
+  const [{ data: artistData }, { data: recordingData }, { data: selfCredits, error: selfCreditError }] = await Promise.all([
     performerIds.length
       ? supabase.from("artists").select("id,name,slug,has_image,image_updated_at").in("id", performerIds)
       : Promise.resolve({ data: [] }),
     recordingIds.length
       ? supabase.from("public_song_recordings")
-        .select("id,slug,cover_release_id,has_cover_image,year")
+        .select("id,slug,artist_id,cover_release_id,has_cover_image,year")
         .in("id", recordingIds)
       : Promise.resolve({ data: [] }),
+    recordingIds.length
+      ? supabase.from("recording_credits").select("recording_id")
+        .eq("artist_id", artistId).in("role", [...RECORDING_PERFORMER_ROLES])
+        .in("recording_id", recordingIds)
+      : Promise.resolve({ data: [], error: null }),
   ]);
+  if (selfCreditError) throw selfCreditError;
+  const selfPerformed = new Set((selfCredits ?? []).map((credit) => credit.recording_id));
   const artistVisuals = new Map((artistData ?? []).map((artist) => [artist.id, artist]));
   const recordingDetails = new Map((recordingData ?? []).map((recording) => [recording.id, recording]));
-  return rows.map((work) => {
+  return rows.filter((work) => !work.recording_id || !selfPerformed.has(work.recording_id)).map((work) => {
     const recordingDetail = work.recording_id ? recordingDetails.get(work.recording_id) : null;
     const recordingSlug = recordingDetail?.slug ?? null;
     const performerVisual = work.performer_artist_id ? artistVisuals.get(work.performer_artist_id) : null;
@@ -332,6 +375,7 @@ async function getEditorialPortfolio(artistId: string): Promise<PortfolioRecordi
     roles: work.roles.map(normalizeArtistWorkCreditRole).sort(compareArtistWorkCreditRoles),
     creditedAs: null,
     recordingId: work.recording_id ?? null,
+    recordingArtistId: recordingDetail?.artist_id ?? null,
     recordingSlug,
     workId: null,
     workTitle: work.title,
@@ -377,7 +421,7 @@ async function loadArtistWorksPortfolio(artistId: string): Promise<PortfolioWork
     const scopedWorks = suppressRecordingRolesRepresentedAtWork([...compositionWorks, ...recordingWorks]);
     const visibleRecordingWorks = scopedWorks.filter((work) => work.source === "recording");
     const recordingKeys = new Set(
-      visibleRecordingWorks.flatMap((work) =>
+      [...visibleRecordingWorks, ...compositionWorks].flatMap((work) =>
         work.roles.map((role) => `${work.recordingId}|${artistId}|${normalizeArtistWorkCreditRole(role)}`),
       ),
     );
@@ -416,14 +460,20 @@ async function getCompositionPortfolio(artistId: string): Promise<PortfolioRecor
       .order("year", { ascending: true, nullsFirst: false })
     : { data: [], error: null };
   if (publicRecordingsError) console.error("Composition portfolio performer query failed:", publicRecordingsError);
+  const candidates = (publicRecordings ?? []) as unknown as PublicRecordingRow[];
+  const { data: selfCredits, error: selfCreditError } = candidates.length
+    ? await supabase.from("recording_credits").select("recording_id")
+      .eq("artist_id", artistId).in("role", [...RECORDING_PERFORMER_ROLES])
+      .in("recording_id", candidates.map((recording) => recording.id))
+    : { data: [], error: null };
+  if (selfCreditError) throw selfCreditError;
+  const selfPerformed = new Set((selfCredits ?? []).map((credit) => credit.recording_id));
   const representativeByWork = new Map<string, PublicRecordingRow>();
-  for (const recording of (publicRecordings ?? []) as unknown as PublicRecordingRow[]) {
-    if (!recording.work_id) continue;
-    const existing = representativeByWork.get(recording.work_id);
-    // Works & Credits is an external portfolio. Prefer a recording performed
-    // by somebody other than the credited artist when a Work has both the
-    // artist's own version and versions recorded by other performers.
-    if (!existing || (existing.artist_id === artistId && recording.artist_id !== artistId)) {
+  for (const recording of candidates) {
+    if (!recording.work_id || recording.artist_id === artistId || selfPerformed.has(recording.id)) continue;
+    // Select the first eligible external performance after excluding the
+    // artist's own recordings and featured performances above.
+    if (!representativeByWork.has(recording.work_id)) {
       representativeByWork.set(recording.work_id, recording);
     }
   }
@@ -438,7 +488,8 @@ async function getCompositionPortfolio(artistId: string): Promise<PortfolioRecor
     const songHref = recordingSlug ? `/songs/${recordingSlug}` : `/songs/${workSongSlug(work)}`;
     byWork.set(work.id, { source: "work", id: `work-credit:${work.id}`, songHref,
       title: work.preferred_title, roles: [row.role], creditedAs: row.credited_as,
-      recordingId: representative?.id ?? null, recordingSlug, workId: work.id, workTitle: work.preferred_title,
+      recordingId: representative?.id ?? null, recordingArtistId: representative?.artist_id ?? null,
+      recordingSlug, workId: work.id, workTitle: work.preferred_title,
       recordingYear: null, identityLabel: null, identitySummary: null, duration: null,
       performers: representative?.artist_name ? [{ artistId: representative.artist_id, artistName: representative.artist_name,
         artistSlug: representative.artist_slug, creditedAs: null, joinPhrase: null }] : [],
@@ -466,7 +517,7 @@ async function getCompositionPortfolio(artistId: string): Promise<PortfolioRecor
 export function getArtistWorksPortfolio(artistId: string): Promise<PortfolioWork[]> {
   return unstable_cache(
     loadArtistWorksPortfolio,
-    ["artist-works-portfolio-v20", artistId],
+    ["artist-works-portfolio-v21", artistId],
     {
       // Caps the artist profile route's TTL if shortened — see
       // ARTIST_PROFILE_REVALIDATE_SECONDS. Invalidated on demand by

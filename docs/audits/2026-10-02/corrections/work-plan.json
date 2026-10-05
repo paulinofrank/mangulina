@@ -1,0 +1,720 @@
+{
+  "changes": [
+    {
+      "workId": "c0e22b99-bd46-4b5d-8b49-2c60362d555c",
+      "title": "Blanca mujer",
+      "previous": [
+        {
+          "id": "24967ae7-2ced-4d69-9a8c-bb50b69c4746",
+          "work_id": "c0e22b99-bd46-4b5d-8b49-2c60362d555c",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "ad90d285-1458-4aca-95a7-9476af763c2f",
+          "work_id": "c0e22b99-bd46-4b5d-8b49-2c60362d555c",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "Robi Draco Rosa",
+          "role": "composer"
+        },
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "Robi Draco Rosa",
+          "role": "lyricist"
+        },
+        {
+          "name": "Luis Gómez Escolar",
+          "creditedAs": "Luis Gomez Escolar",
+          "role": "composer"
+        },
+        {
+          "name": "Luis Gómez Escolar",
+          "creditedAs": "Luis Gomez Escolar",
+          "role": "lyricist"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/se-en/album/vagabundo-robi-draco-rosa/0037628192923",
+      "sourceTrack": {
+        "position": 8,
+        "title": "Blanca Mujer",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist, Producer\n - Luis Gomez Escolar, Composer, Lyricist\n - Phil Manzanera, Producer",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:03:51"
+      }
+    },
+    {
+      "workId": "dad825f6-1eb8-4398-9ad4-16eb6a9167b3",
+      "title": "Vagabundo",
+      "previous": [
+        {
+          "id": "52d16be8-4253-4cec-9df9-b644c53c4cc8",
+          "work_id": "dad825f6-1eb8-4398-9ad4-16eb6a9167b3",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "3acd26f0-97e6-4117-b8d8-b51c0b5c0f24",
+          "work_id": "dad825f6-1eb8-4398-9ad4-16eb6a9167b3",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "Robi Draco Rosa",
+          "role": "composer"
+        },
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "Robi Draco Rosa",
+          "role": "lyricist"
+        },
+        {
+          "name": "José Manuel Navarro Sempere",
+          "creditedAs": "Jose Manuel Navarro",
+          "role": "composer"
+        },
+        {
+          "name": "José Manuel Navarro Sempere",
+          "creditedAs": "Jose Manuel Navarro",
+          "role": "lyricist"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/se-en/album/vagabundo-robi-draco-rosa/0037628192923",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Vagabundo",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Jose Manuel Navarro, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:03:37"
+      }
+    },
+    {
+      "workId": "b3f3f102-b2c0-4814-ba56-a105b9b75673",
+      "title": "Penélope",
+      "previous": [
+        {
+          "id": "2d667c70-15a9-4f05-9fc4-9e1111fc0b3a",
+          "work_id": "b3f3f102-b2c0-4814-ba56-a105b9b75673",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "ed580cf6-6dce-4ef3-95b4-fc804fd2f701",
+          "work_id": "b3f3f102-b2c0-4814-ba56-a105b9b75673",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "Robi Draco Rosa",
+          "role": "composer"
+        },
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "Robi Draco Rosa",
+          "role": "lyricist"
+        },
+        {
+          "name": "José Manuel Navarro Sempere",
+          "creditedAs": "Jose Manuel Navarro",
+          "role": "composer"
+        },
+        {
+          "name": "José Manuel Navarro Sempere",
+          "creditedAs": "Jose Manuel Navarro",
+          "role": "lyricist"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/se-en/album/vagabundo-robi-draco-rosa/0037628192923",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Penélope",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Associated Performer, Composer, Lyricist, Main Artist\n - Jose Manuel Navarro, Composer, Lyricist",
+          "(P) 1996 Sony Music Entertainment"
+        ],
+        "duration": "00:04:43"
+      }
+    },
+    {
+      "workId": "6dfcf5c2-4822-4d61-a5fe-ad9bd2dbb99c",
+      "title": "Cruzando puertas",
+      "previous": [
+        {
+          "id": "31f6a252-2ad1-4111-826e-7d0fee5c3bc0",
+          "work_id": "6dfcf5c2-4822-4d61-a5fe-ad9bd2dbb99c",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "fae12787-e0ea-4b27-ab60-790e5e9d8184",
+          "work_id": "6dfcf5c2-4822-4d61-a5fe-ad9bd2dbb99c",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "Robi Draco Rosa",
+          "role": "composer"
+        },
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "Robi Draco Rosa",
+          "role": "lyricist"
+        },
+        {
+          "name": "Luis Gómez Escolar",
+          "creditedAs": "Luis Gómez Escolar",
+          "role": "composer"
+        },
+        {
+          "name": "Luis Gómez Escolar",
+          "creditedAs": "Luis Gómez Escolar",
+          "role": "lyricist"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/fi-en/album/libertad-del-alma-robi-rosa/qu7jmk96yx7ab",
+      "sourceTrack": {
+        "position": 11,
+        "title": "Cruzando Puertas",
+        "artist": "",
+        "credits": [
+          "Robi Draco Rosa, Composer, Lyricist, Co-Producer, MainArtist, AssociatedPerformer, Vocal - Brad Gilderman, Mixing Engineer, Recording Engineer - Chris Cameron, Arranger - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Gómez Escolar, Composer, Lyricist - Luis Conte, Percussion - Mike Thompson, Acoustic Guitar, Electric Guitar, AssociatedPerformer - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Mitch Gibson, Assistant Engineer - Zander Schloss, Mandolin - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P) 1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:04:05"
+      }
+    },
+    {
+      "workId": "22087d7f-0fd6-4389-b7b5-aa90df6b06f0",
+      "title": "Amor y control",
+      "previous": [
+        {
+          "id": "1d8d66bc-a3e3-40a7-9911-55668e054548",
+          "work_id": "22087d7f-0fd6-4389-b7b5-aa90df6b06f0",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "7537d88b-fa9a-4f6c-88ad-4657ac1f2643",
+          "work_id": "22087d7f-0fd6-4389-b7b5-aa90df6b06f0",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Rubén Blades",
+          "creditedAs": "Ruben Blades",
+          "role": "composer"
+        },
+        {
+          "name": "Rubén Blades",
+          "creditedAs": "Ruben Blades",
+          "role": "lyricist"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/us-en/album/amor-y-control-ruben-blades/mtmwzwdbdtwyb",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Amor y Control",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, AssociatedPerformer, Composer, Lyricist",
+          "(P) 1992 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:05:52"
+      }
+    },
+    {
+      "workId": "43c3b9b9-9522-473b-bce8-c371d76b26ec",
+      "title": "Pedro Navaja",
+      "previous": [
+        {
+          "id": "f2d1c8fe-9a4e-4deb-aea9-7b68dc7faf4b",
+          "work_id": "43c3b9b9-9522-473b-bce8-c371d76b26ec",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "f6a13707-e881-4039-a422-7df7e39a1933",
+          "work_id": "43c3b9b9-9522-473b-bce8-c371d76b26ec",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Rubén Blades",
+          "creditedAs": "Ruben Blades",
+          "role": "composer"
+        },
+        {
+          "name": "Rubén Blades",
+          "creditedAs": "Ruben Blades",
+          "role": "lyricist"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/us-en/album/siembra-ruben-blades-willie-colon/ub6j1forrtscc",
+      "sourceTrack": {
+        "position": 9,
+        "title": "Pedro Navaja ((Take 2))",
+        "artist": "",
+        "credits": [
+          "Willie Colon, MainArtist, Producer, Chorus - Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Jon Fausty, MasteringEngineer - Jerry Masucci, ExecutiveProducer - José Mangual Jr, Chorus - Adalberto Santiago, Chorus",
+          "℗ 2010 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:06:24"
+      }
+    },
+    {
+      "workId": "06cd00cf-7e18-408f-b5ae-e5222e4befeb",
+      "title": "Gracias a la vida",
+      "previous": [
+        {
+          "id": "c585b580-82f5-4a7b-8d48-6a425af7a7d9",
+          "work_id": "06cd00cf-7e18-408f-b5ae-e5222e4befeb",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "e4da5a07-e2f5-43a1-8a67-a6473640ac0e",
+          "work_id": "06cd00cf-7e18-408f-b5ae-e5222e4befeb",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Violeta Parra",
+          "creditedAs": "Violeta Parra",
+          "role": "composer"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/br-pt/album/gracias-a-la-vida-voces-unidas-por-chile-beto-cuevas-juanes-alejandro-sanz-juan-luis-guerra-laura-pausini-fher-de-mana-shakira-michael-buble-miguel-bose/0825646816439",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Gracias a la vida",
+        "artist": "",
+        "credits": [
+          "Alejandro Sanz, Vocals, MainArtist - Miguel Bosé, Vocals, MainArtist - Laura Pausini, Vocals, MainArtist - Shakira, MainArtist - Juanes, MainArtist - Juan Luis Guerra, Vocals, MainArtist - Michael Bublé, MainArtist - Beto Cuevas, Vocals, MainArtist - Violeta Parra, Composer - Fher De Mana, MainArtist",
+          "© 2010 Warner Music Mexico, S.A. de C. V. ℗ 2010 Warner Music Mexico, S.A. de C. V."
+        ],
+        "duration": "00:04:34"
+      }
+    },
+    {
+      "workId": "e958d69d-652e-4965-a687-9c05ab34e709",
+      "title": "Si no te hubieras ido",
+      "previous": [
+        {
+          "id": "fb1ce4ac-6b5e-4990-ac57-9db728e3d3e5",
+          "work_id": "e958d69d-652e-4965-a687-9c05ab34e709",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "76fc3cc4-7764-4d5d-ad62-9d98903d54a3",
+          "work_id": "e958d69d-652e-4965-a687-9c05ab34e709",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Marco Antonio Solís",
+          "creditedAs": "Marco Antonio Solis",
+          "role": "composer"
+        },
+        {
+          "name": "Marco Antonio Solís",
+          "creditedAs": "Marco Antonio Solis",
+          "role": "lyricist"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/au-en/album/asi-soy-charlie-cruz/0685738267163",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Si No Te Hubieras Ido",
+        "artist": "",
+        "credits": [
+          "Marco Antonio Solis, Composer, Lyricist - Charlie Cruz, MainArtist - Mario de Jesús, Engineer - SERGIO GEORGE, Producer, Arranger, Remixer - Jon Fausty, Engineer, Remixer",
+          "© 2000 WEA Latina Inc. ℗ 2000 WEA LATINA INC."
+        ],
+        "duration": "00:04:48"
+      }
+    },
+    {
+      "workId": "d641d2fd-41cd-4314-bfaf-6665d5c84de4",
+      "title": "Woman del Callao",
+      "previous": [
+        {
+          "id": "a5a96ae9-ba4a-403f-89dd-0eb41fc59862",
+          "work_id": "d641d2fd-41cd-4314-bfaf-6665d5c84de4",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "5febe593-796d-4635-8ebe-55b27005acd5",
+          "work_id": "d641d2fd-41cd-4314-bfaf-6665d5c84de4",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Julio Delgado",
+          "creditedAs": "Julio Delgado",
+          "role": "composer"
+        },
+        {
+          "name": "Julio Delgado",
+          "creditedAs": "Julio Delgado",
+          "role": "lyricist"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/us-en/album/calipso-clasicos-y-originales-alfrid-valdez-el-rey-del-steel-band/goptnvv89paam",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Woman Del Callao",
+        "artist": "",
+        "credits": [
+          "Alfrid Valdez El Rey del Steel Band, MainArtist - Evelio Álvarez Cortés, ExecutiveProducer - Julio Delgado, Composer, Lyricist",
+          "2021 Congo Records / Media Group / Pana Music"
+        ],
+        "duration": "00:03:58"
+      }
+    },
+    {
+      "workId": "8106ef2c-b9ac-43c7-9635-7847631bda42",
+      "title": "Esto es vida",
+      "previous": [
+        {
+          "id": "27244f0f-101c-4b73-bef0-162e52811d8c",
+          "work_id": "8106ef2c-b9ac-43c7-9635-7847631bda42",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "96954099-2ed2-423b-a21e-d9506cd9d541",
+          "work_id": "8106ef2c-b9ac-43c7-9635-7847631bda42",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "Draco Cornelius Rosa",
+          "role": "composer"
+        },
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "Draco Cornelius Rosa",
+          "role": "lyricist"
+        },
+        {
+          "name": "Luis Gómez Escolar",
+          "creditedAs": "Luis Gómez Escolar",
+          "role": "composer"
+        },
+        {
+          "name": "Luis Gómez Escolar",
+          "creditedAs": "Luis Gómez Escolar",
+          "role": "lyricist"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/ca-en/album/vida-draco-rosa/0886443579927",
+      "sourceTrack": {
+        "position": 1,
+        "title": "Esto Es Vida",
+        "artist": "Draco Rosa Feat. Juan Luis Guerra",
+        "credits": [
+          "Draco Rosa Feat. Juan Luis Guerra, Performer\n - Draco Cornelius Rosa, Composer\n - Draco Cornelius Rosa, Lyricist\n - Draco Rosa, Keyboards\n - Draco Rosa, Performance Arranger\n - Draco Rosa, Producer\n - Draco Rosa, Programmer\n - Draco Rosa, Vocal\n - Juan Luis Guerra, Vocal\n - Luis Gómez Escolar, Composer\n - Luis Gómez Escolar, Lyricist\n - Anastasios Panos, Drums\n - Chris Bruce, Guitar\n - Christian Nieves, Other\n - David Piltch, Bass Guitar\n - Luis Conte, Percussion\n - Juan Covarrubias, Keyboards\n - Juan Covarrubias, Programmer\n - Mr. Blake, Keyboards\n - Mr. Blake, Programmer\n - David Palmer, Keyboards\n - David Palmer, Programmer\n - The String Box Ensemble, Strings\n - George Noriega, Assistant Producer\n - Angelo Medina, Executive Producer\n - Normaris Cruz, Project Coordinator\n - Tom Baumgartner, Project Coordinator\n - Angela Alvarado Rosa, Photographer\n - Diego Ríos, Art Director\n - Ali Helnwein, Performance Arranger\n - Seth Atkins Horan, Recording Engineer\n - Sadaharu Yagi, Assistant Engineer\n - Allan Leschhorn, Recording Engineer\n - Benny Faccone, Mixing Engineer\n - Bob Ludwig, Mastering Engineer",
+          "(P) 2013 Sony Music Entertainment US Latin LLC"
+        ],
+        "duration": "00:04:32"
+      }
+    },
+    {
+      "workId": "83db2dec-3045-4564-abfd-586ed6688d21",
+      "title": "El nacimiento de Ramiro",
+      "previous": [
+        {
+          "id": "948292b1-7681-4339-80d0-faf2b19153a5",
+          "work_id": "83db2dec-3045-4564-abfd-586ed6688d21",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "76a7ae3c-d372-4bea-8d81-2cd2275c10a6",
+          "work_id": "83db2dec-3045-4564-abfd-586ed6688d21",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "verified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Rubén Blades",
+          "creditedAs": "Ruben Blades",
+          "role": "composer"
+        },
+        {
+          "name": "Rubén Blades",
+          "creditedAs": "Ruben Blades",
+          "role": "lyricist"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/es-es/album/maestra-vida-primera-parte-ruben-blades/bgz5w1720z6nc",
+      "sourceTrack": {
+        "position": 7,
+        "title": "El Nacimiento de Ramiro (Remastered 2025)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, Chorus, ComposerLyricist - Willie Colon, Chorus, MixingEngineer, Producer - Milton Cardona, Chorus - José Mangual Jr, Chorus - Harold Hohon’s String Ensemble, Ensemble - Jon Fausty, MasteringEngineer, MixingEngineer - Mario Salvati, RecordingEngineer - Kevin Zambrana, RecordingSecondEngineer - Joe Tarantino, MasteringEngineer",
+          "℗ 2025 Craft Recordings., Distributed by Concord."
+        ],
+        "duration": "00:07:54"
+      }
+    }
+  ]
+}

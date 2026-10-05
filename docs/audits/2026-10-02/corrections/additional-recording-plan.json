@@ -1,0 +1,337 @@
+{
+  "sources": [
+    {
+      "key": "fiesta",
+      "package": "fiesta-latina",
+      "url": "http://coverartarchive.org/release/a4f66633-e31d-4269-a9bc-c48b2d07143b/37061999424.jpg",
+      "archiveUrl": "https://coverartarchive.org/release/a4f66633-e31d-4269-a9bc-c48b2d07143b",
+      "file": "docs/audits/2026-10-02/corrections/fiesta-latina-1.jpg",
+      "types": [
+        "Back",
+        "Spine"
+      ],
+      "retrievedAt": "2026-10-02T23:42:31.321Z",
+      "sha256": "6e3b92c5720a0c654f10766ee38de3afd80f6b4a4945e3f902dfc0210d8d1712",
+      "title": "2 grandes voces de la fiesta latina — original CD back",
+      "organization": "Mock & Roll / Sony BMG Norte",
+      "type": "original_release_packaging"
+    },
+    {
+      "key": "iaso",
+      "url": "https://iasorecords.bandcamp.com/album/me-decid",
+      "title": "Me decidí — label track and featured artist credits",
+      "organization": "iASO Records",
+      "type": "record_label",
+      "retrievedAt": "2026-10-02T23:46:25.500Z"
+    },
+    {
+      "key": "encuentro",
+      "url": "http://coverartarchive.org/release/b2292ff5-f723-4d66-9b9b-a4e959b95aa7/17457932811.jpg",
+      "archiveUrl": "https://coverartarchive.org/release/b2292ff5-f723-4d66-9b9b-a4e959b95aa7",
+      "file": "docs/audits/2026-10-02/corrections/encuentro-back.jpg",
+      "types": [
+        "Back"
+      ],
+      "retrievedAt": "2026-10-02T23:23:31.943Z",
+      "sha256": "53f063e4967758148f8afa8a3e8ec59d4a7be3909df451cfb4b247f1b867e265",
+      "title": "Encuentro — original CD back",
+      "organization": "Banco Popular de Puerto Rico",
+      "type": "original_release_packaging"
+    }
+  ],
+  "recordings": [
+    {
+      "recordingId": "50f358b7-3326-4571-89ac-3b294b234b89",
+      "expectedArtistId": "1cd11a22-573a-43b4-8f54-fbd08329a4e2",
+      "expectedTitle": "El tiburón",
+      "source": "fiesta",
+      "position": 2,
+      "credits": [
+        {
+          "name": "Proyecto Uno",
+          "role": "lead_performer",
+          "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+        }
+      ],
+      "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+    },
+    {
+      "recordingId": "a1a10bab-62d1-46bd-8e16-95ba6993be94",
+      "expectedArtistId": "1cd11a22-573a-43b4-8f54-fbd08329a4e2",
+      "expectedTitle": "Esta pega'o",
+      "source": "fiesta",
+      "position": 4,
+      "credits": [
+        {
+          "name": "Proyecto Uno",
+          "role": "lead_performer",
+          "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+        }
+      ],
+      "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+    },
+    {
+      "recordingId": "3ff0af39-084a-4d8e-9e4f-6ce399008f8b",
+      "expectedArtistId": "1cd11a22-573a-43b4-8f54-fbd08329a4e2",
+      "expectedTitle": "Brinca",
+      "source": "fiesta",
+      "position": 6,
+      "credits": [
+        {
+          "name": "Proyecto Uno",
+          "role": "lead_performer",
+          "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+        }
+      ],
+      "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+    },
+    {
+      "recordingId": "e390a4e0-fa35-4fe3-bcdc-5b2b08d8bb17",
+      "expectedArtistId": "1cd11a22-573a-43b4-8f54-fbd08329a4e2",
+      "expectedTitle": "Merengue con letra",
+      "source": "fiesta",
+      "position": 8,
+      "credits": [
+        {
+          "name": "Proyecto Uno",
+          "role": "lead_performer",
+          "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+        }
+      ],
+      "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+    },
+    {
+      "recordingId": "e55101ae-35d8-47e4-9a0e-27071d6be52f",
+      "expectedArtistId": "1cd11a22-573a-43b4-8f54-fbd08329a4e2",
+      "expectedTitle": "Another Night",
+      "source": "fiesta",
+      "position": 10,
+      "credits": [
+        {
+          "name": "Proyecto Uno",
+          "role": "lead_performer",
+          "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+        }
+      ],
+      "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+    },
+    {
+      "recordingId": "cac05d72-36c3-4084-b9d2-b36944b2cfe8",
+      "expectedArtistId": "1cd11a22-573a-43b4-8f54-fbd08329a4e2",
+      "expectedTitle": "Amor platónico",
+      "source": "fiesta",
+      "position": 12,
+      "credits": [
+        {
+          "name": "Proyecto Uno",
+          "role": "lead_performer",
+          "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+        }
+      ],
+      "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+    },
+    {
+      "recordingId": "3627cdf3-3b14-4878-b9d0-a7f9ab8d17dd",
+      "expectedArtistId": "1cd11a22-573a-43b4-8f54-fbd08329a4e2",
+      "expectedTitle": "Pica, pica",
+      "source": "fiesta",
+      "position": 14,
+      "credits": [
+        {
+          "name": "Proyecto Uno",
+          "role": "lead_performer",
+          "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+        }
+      ],
+      "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+    },
+    {
+      "recordingId": "042b216b-4155-4c1a-b9ed-d7abfec143ca",
+      "expectedArtistId": "1cd11a22-573a-43b4-8f54-fbd08329a4e2",
+      "expectedTitle": "Dime",
+      "source": "fiesta",
+      "position": 16,
+      "credits": [
+        {
+          "name": "Proyecto Uno",
+          "role": "lead_performer",
+          "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+        }
+      ],
+      "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab"
+    },
+    {
+      "recordingId": "85201505-7ddc-46aa-988e-cf2b22670857",
+      "expectedArtistId": "1cd11a22-573a-43b4-8f54-fbd08329a4e2",
+      "expectedTitle": "Dame un chín",
+      "source": "fiesta",
+      "position": 3,
+      "credits": [
+        {
+          "name": "Ilegales",
+          "role": "lead_performer",
+          "artistId": "1cd11a22-573a-43b4-8f54-fbd08329a4e2"
+        },
+        {
+          "name": "Johnny Ventura",
+          "role": "lead_performer",
+          "artistId": "3f8bafec-e5ee-415d-8405-9551cceeeb9b"
+        }
+      ]
+    },
+    {
+      "recordingId": "ba33ce97-80ed-4d67-ba62-1480fcba28e0",
+      "expectedArtistId": "4d9ac6ac-6802-47f4-8731-5fa567713513",
+      "expectedTitle": "Tus cartas llegan",
+      "source": "iaso",
+      "position": 2,
+      "credits": [
+        {
+          "name": "Fernando Soriano",
+          "role": "featured_performer",
+          "artistId": "fb2a3c19-e28e-44ec-984b-ddad8b76e579"
+        }
+      ]
+    },
+    {
+      "recordingId": "57bac019-4908-45a3-8397-12e40f28f74f",
+      "expectedArtistId": "4d9ac6ac-6802-47f4-8731-5fa567713513",
+      "expectedTitle": "Veneno",
+      "source": "iaso",
+      "position": 3,
+      "credits": [
+        {
+          "name": "Andre Veloz",
+          "role": "featured_performer",
+          "artistId": "b3bfb1d2-2727-4181-a9f2-680dbe84b16b"
+        }
+      ]
+    },
+    {
+      "recordingId": "a6024034-b10e-4e8e-a363-f0552e725d7a",
+      "expectedArtistId": "4d9ac6ac-6802-47f4-8731-5fa567713513",
+      "expectedTitle": "Melina",
+      "source": "iaso",
+      "position": 4,
+      "credits": [
+        {
+          "name": "Fernando Soriano",
+          "role": "featured_performer",
+          "artistId": "fb2a3c19-e28e-44ec-984b-ddad8b76e579"
+        }
+      ]
+    },
+    {
+      "recordingId": "bc4c71fc-1c6e-46eb-8952-fa318c55a270",
+      "expectedArtistId": "4d9ac6ac-6802-47f4-8731-5fa567713513",
+      "expectedTitle": "Llanto a la luna",
+      "source": "iaso",
+      "position": 7,
+      "credits": [
+        {
+          "name": "Andre Veloz",
+          "role": "featured_performer",
+          "artistId": "b3bfb1d2-2727-4181-a9f2-680dbe84b16b"
+        }
+      ]
+    },
+    {
+      "recordingId": "0080c981-9930-49ca-bfe0-fb5ab7c00085",
+      "expectedArtistId": "4d9ac6ac-6802-47f4-8731-5fa567713513",
+      "expectedTitle": "El SIDA",
+      "source": "iaso",
+      "position": 9,
+      "credits": [
+        {
+          "name": "Fernando Soriano",
+          "role": "featured_performer",
+          "artistId": "fb2a3c19-e28e-44ec-984b-ddad8b76e579"
+        }
+      ]
+    },
+    {
+      "recordingId": "740cdb78-b3ab-4963-8bdc-f28a8a55e1bd",
+      "expectedArtistId": "4d9ac6ac-6802-47f4-8731-5fa567713513",
+      "expectedTitle": "A escondidas",
+      "source": "iaso",
+      "position": 10,
+      "credits": [
+        {
+          "name": "Griselda Soriano",
+          "role": "featured_performer",
+          "artistId": "70ffca41-564f-4104-8b2a-b67f64036362"
+        }
+      ]
+    },
+    {
+      "recordingId": "2d7f74b6-b0cc-414d-9fb7-faac89bcc4c3",
+      "expectedArtistId": "4d9ac6ac-6802-47f4-8731-5fa567713513",
+      "expectedTitle": "Youlanda",
+      "source": "iaso",
+      "position": 11,
+      "credits": [
+        {
+          "name": "Fernando Soriano",
+          "role": "featured_performer",
+          "artistId": "fb2a3c19-e28e-44ec-984b-ddad8b76e579"
+        },
+        {
+          "name": "Griselda Soriano",
+          "role": "featured_performer",
+          "artistId": "70ffca41-564f-4104-8b2a-b67f64036362"
+        }
+      ],
+      "title": "Yolanda"
+    },
+    {
+      "recordingId": "22249226-5811-4a27-a9fa-95bd4815c48c",
+      "expectedArtistId": "4d9ac6ac-6802-47f4-8731-5fa567713513",
+      "expectedTitle": "Háblame de frente",
+      "source": "iaso",
+      "position": 13,
+      "credits": [
+        {
+          "name": "Griselda Soriano",
+          "role": "featured_performer",
+          "artistId": "70ffca41-564f-4104-8b2a-b67f64036362"
+        }
+      ]
+    },
+    {
+      "recordingId": "6b22b434-e1d8-46c5-8d22-60435d37f2fe",
+      "expectedArtistId": "4d9ac6ac-6802-47f4-8731-5fa567713513",
+      "expectedTitle": "Váyase",
+      "source": "iaso",
+      "position": 8,
+      "credits": [],
+      "title": "Váyase en paz"
+    },
+    {
+      "recordingId": "96e1bc8e-9bce-4821-977b-2bc388465e21",
+      "expectedArtistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+      "expectedTitle": "Qué bonita luna (En Vivo - Encuentro)",
+      "source": "encuentro",
+      "position": 17,
+      "credits": [
+        {
+          "name": "Rubén Blades",
+          "role": "lead_performer",
+          "externalName": "Rubén Blades"
+        },
+        {
+          "name": "Draco Rosa",
+          "role": "lead_performer",
+          "externalName": "Draco Rosa"
+        }
+      ]
+    }
+  ],
+  "releaseCredits": [
+    {
+      "releaseId": "ec2c5415-c598-4b7a-9f2c-234f9e6b5784",
+      "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab",
+      "name": "Proyecto Uno",
+      "source": "fiesta"
+    }
+  ]
+}

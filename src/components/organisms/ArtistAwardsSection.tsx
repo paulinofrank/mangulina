@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { Icon } from "@iconify/react/offline";
+import { awardGlobe, awardMedal, awardTrophy } from "@/lib/artistAwardIcons";
 import type { ArtistAward } from "@/lib/artistApi";
 
 type Props = {
@@ -46,24 +48,25 @@ export default function ArtistAwardsSection({ awards }: Props) {
   if (!awards.length) return null;
 
   return (
-    <section className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+    <section className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
       <div className="mb-5">
-        <h3 className="text-xs font-normal text-(--color-wikicrimson) uppercase tracking-wider mb-3">
+        <h3 className="text-xs font-normal text-(--color-wikicrimson) uppercase tracking-wider mb-4">
           {t("awardsNominations")}
         </h3>
 
-        <div className="flex flex-wrap items-center justify-center gap-2 text-xs">
-          <span className="rounded-full border border-yellow-200 bg-yellow-50 px-3 py-1 text-center font-normal text-gray-800">
-            🏆 {t("winsCount", { count: wins })}
-          </span>
-
-          <span className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-center font-normal text-gray-800">
-            🎖️ {t("nominationsCount", { count: nominations })}
-          </span>
-
-          <span className="rounded-full border border-(--color-flagblue)/15 bg-(--color-flagblue)/5 px-3 py-1 text-center font-normal text-gray-800">
-            🌐 {t("organizationsCount", { count: organizations })}
-          </span>
+        <div className="grid max-w-full gap-2 pl-2 text-base font-normal leading-tight text-gray-500">
+          <div className="flex items-center gap-2">
+            <Icon icon={awardTrophy} aria-hidden="true" className="size-[26px] shrink-0" />
+            <span>{t("winsCount", { count: wins })}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Icon icon={awardMedal} aria-hidden="true" className="size-[26px] shrink-0" />
+            <span>{t("nominationsCount", { count: nominations })}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Icon icon={awardGlobe} aria-hidden="true" className="size-[26px] shrink-0" />
+            <span>{t("organizationsCount", { count: organizations })}</span>
+          </div>
         </div>
       </div>
 
@@ -75,10 +78,11 @@ export default function ArtistAwardsSection({ awards }: Props) {
           return (
             <div
               key={awardName}
-              className="overflow-hidden rounded-xl border border-gray-100 bg-white"
+              className="overflow-hidden rounded-2xl border border-gray-100 bg-white"
             >
               <button
                 type="button"
+                aria-expanded={isOpen}
                 onClick={() => setOpenAward(isOpen ? null : awardName)}
                 className="w-full flex items-center justify-between gap-4 px-4 py-3 text-left transition hover:bg-gray-50"
               >

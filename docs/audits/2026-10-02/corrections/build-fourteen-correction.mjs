@@ -1,0 +1,24 @@
+import {readFile,writeFile} from 'node:fs/promises';
+const root='docs/audits/2026-10-02/corrections/';
+const before=JSON.parse(await readFile(root+'fourteen-live-before.json'));
+const fetched=JSON.parse(await readFile(root+'fourteen-sources.json'));
+const alex='6c3e0d74-23b7-4d80-969f-9d5319ee5127',sergio='059a9e99-5d11-433e-97b9-9c35e57908f1';
+if(!fetched[0].text.includes('En BandoleraAlex BuenoEl Amor AcabaAlex BuenoSin Ti No Soy NadaAlex BuenoQuiero Perderme ContigoAlex BuenoPero Lo DudoAlex Bueno'))throw Error('Individual primary-source billing absent');
+const sources=fetched.slice(0,3).map((s,i)=>({key:['individual','shared','solo'][i],type:'web',title:s.title||'Karen Records catalog',organization:i===0?'Spotify / Karen Records':'Qobuz / Karen Records',url:s.url,sha256:s.sha256,retrievedAt:s.retrievedAt}));
+const used=new Set(before.conflicts.map(r=>r.slug));
+const recordings=before.recordings.filter(r=>r.artist_id===sergio).map(r=>{
+const t=before.tracks.find(t=>t.recording_id===r.id);if(!t)throw Error('Missing edition context');
+const slugBase=r.slug.replace(/-sergio-vargas(?:-\d+)?$/,'-alex-bueno');let slug=slugBase,n=2;while(used.has(slug))slug=slugBase+'-'+n++;used.add(slug);
+return {recordingId:r.id,expectedArtistId:sergio,expectedTitle:r.title,expectedSlug:r.slug,artistId:alex,slug,source:'individual',position:t.position??t.track_number,credits:[{artistId:alex,name:'Alex Bueno',role:'lead_performer'}],editionId:t.release_id,reason:'Correct individual performer from Karen Records individual track billing and solo catalog, corroborated by original imported Alex Bueno artist credit. Preserve recording identity, title, edition and work links; do not merge alternate versions or adopt conflicting digital titles.'};
+});
+if(recordings.length!==10)throw Error('Unexpected scope');
+const plan={sources,recordings,releaseCredits:before.releases.filter(r=>['1ed33e4a-617b-49ba-b220-9bcba74526fe','237e657a-6a15-4bdb-b673-3ee316b63a09'].includes(r.id)).map(r=>({releaseId:r.id,artistId:alex,name:'Alex Bueno',source:'shared'})),limitations:['Digital catalogs disagree on position 10 (Pero lo dudo / Voy a llenarte toda). Individual performer verified; exact title/master identity remains under review.','The 11-track imported edition lacks durations and ISRCs. Do not merge it with the 10-track edition.','Sin ti no hay nada and Si ti no soy nada remain literal imported titles pending original packaging verification.']};
+await writeFile(root+'fourteen-owner-plan.json',JSON.stringify(plan,null,2));
+let runner=await readFile(root+'correct-remaining-credits.mjs','utf8');
+runner=runner.replaceAll('remaining-credit-plan.json','fourteen-owner-plan.json').replaceAll('discography-audit-2026-10-02-remaining-credits','discography-audit-2026-10-03-fourteen-owners').replaceAll('remaining-credit-receipt.json','fourteen-owner-receipt.json').replaceAll('remaining-credit-rehearsal.json','fourteen-owner-rehearsal.json');
+runner=runner.replace("before.title!==c.expectedTitle","before.title!==c.expectedTitle||before.slug!==c.expectedSlug");
+runner=runner.replace("title=$3,metadata=", "title=$3,slug=$5,metadata=");
+runner=runner.replace("trackPosition:c.position}})])", "trackPosition:c.position,limitations:plan.limitations}}),c.slug??before.slug])");
+runner=runner.replace("'Restore the exact original package / label performer and title credits; retain valid principal band attribution'", "c.reason");
+await writeFile(root+'correct-fourteen-owners.mjs',runner);
+console.log(JSON.stringify({recordings:recordings.length,releaseCredits:plan.releaseCredits.length,urls:recordings.map(r=>({before:r.expectedSlug,after:r.slug}))}));

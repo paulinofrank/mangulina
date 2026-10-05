@@ -1,0 +1,33 @@
+{
+  "verifiedAt": "2026-10-03T12:32:24.439Z",
+  "creditReadback": true,
+  "instrumentPreserved": true,
+  "evidencePresent": true,
+  "anonymousPublicVisibility": true,
+  "publicCredits": [
+    {
+      "role": "lead_performer",
+      "identity_type": "artist",
+      "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+      "display_name": "Juan Luis Guerra 4.40",
+      "artist_slug": "juan-luis-guerra",
+      "country": null
+    },
+    {
+      "role": "performer",
+      "identity_type": "artist",
+      "identity_id": "79d013c7-dafc-4807-966e-32c370172dee",
+      "display_name": "Adalgisa Pantaleón (440)",
+      "artist_slug": "adalgisa-pantaleon",
+      "country": null
+    },
+    {
+      "role": "performer",
+      "identity_type": "artist",
+      "identity_id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+      "display_name": "El Prodigio",
+      "artist_slug": "el-prodigio",
+      "country": null
+    }
+  ]
+}

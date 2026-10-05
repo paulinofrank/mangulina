@@ -1,0 +1,3084 @@
+{
+  "reviewedAt": "2026-10-03T03:03:36.254Z",
+  "counts": {
+    "generatedCohort": [
+      {
+        "verification_status": "superseded",
+        "count": 51
+      },
+      {
+        "verification_status": "unverified",
+        "count": 169
+      },
+      {
+        "verification_status": "verified",
+        "count": 230
+      }
+    ],
+    "thisReview": {
+      "unverified": 169,
+      "verified": 31,
+      "superseded": 13
+    },
+    "newAuthorRoles": 26
+  },
+  "sourcePages": 106,
+  "reviewed": [
+    {
+      "creditId": "863d4656-8852-49d4-9189-82a38fd4db58",
+      "workId": "0657df99-e0b3-49da-8e5c-cea6582b271e",
+      "title": "¡Ay! Mujer",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-1-juan-luis-guerra-440/zf4sym3pyn9ic",
+        "https://www.qobuz.com/es-es/album/bonus-tracks-juan-luis-guerra-440/glztgoxoo13aa"
+      ],
+      "recordingIds": [
+        "b4cddae2-f3ec-45c2-83c6-dde5493633d2"
+      ]
+    },
+    {
+      "creditId": "0c03dec5-1c2d-458e-bf6b-09f095b5ddb5",
+      "workId": "b2b59416-2536-4941-8598-7459bc77d533",
+      "title": "¿A cuál zona? ¡A todas!",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "c3aa7467-91dc-4a1f-b19c-d9773b09d598"
+      ]
+    },
+    {
+      "creditId": "dee0d7c6-a6b1-4595-943b-f5006edaf0b8",
+      "workId": "def9ec8b-856e-44f8-80ed-8b72194bf7ca",
+      "title": "A bilirrubina",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/romance-rosa-juan-luis-guerra-440/cgvcbn51pdj1a"
+      ],
+      "recordingIds": [
+        "0c8dbd99-44cd-45cb-9bc9-e2cd0bc118cd"
+      ]
+    },
+    {
+      "creditId": "8ace522f-e3f1-4023-a451-c42ab1d97f18",
+      "workId": "def9ec8b-856e-44f8-80ed-8b72194bf7ca",
+      "title": "A bilirrubina",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "0c8dbd99-44cd-45cb-9bc9-e2cd0bc118cd"
+      ]
+    },
+    {
+      "creditId": "40b7b23b-bf73-45ef-be2e-360fd1900c35",
+      "workId": "04dff77b-aa5d-4b5f-83bb-7130f77058d3",
+      "title": "Abriendo caminos",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja"
+      ],
+      "recordingIds": [
+        "4146b519-b4a3-4b46-b6f6-3c3379d7010a"
+      ]
+    },
+    {
+      "creditId": "efcf3a86-e22c-42ca-8311-bfb4bb8e8386",
+      "workId": "2b955185-840f-43fa-9946-84826f397edc",
+      "title": "Acompáñeme civil",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b"
+      ],
+      "recordingIds": [
+        "7ed22ae7-8c28-4a4e-86fd-9c3bf46fb06f"
+      ]
+    },
+    {
+      "creditId": "23eee3ff-024c-42da-bf73-16862ebd9c3d",
+      "workId": "c4e187bf-8560-4875-960f-9b818f6b54bf",
+      "title": "Amapola",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-2-juan-luis-guerra-440/elb9klfd5damb"
+      ],
+      "recordingIds": [
+        "d0f3b5c2-e38e-489f-a707-5be5f1a47431",
+        "1ba17dad-ae76-429f-9ef9-6c28583e2613",
+        "f4216f25-d151-4dd6-b203-3c8d61e5bdb0"
+      ]
+    },
+    {
+      "creditId": "565734e3-9994-4975-ad02-30b651949ccc",
+      "workId": "ce97ff9a-6c56-4500-9352-8fa122e9b152",
+      "title": "Amigos",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-1-juan-luis-guerra-440/zf4sym3pyn9ic"
+      ],
+      "recordingIds": [
+        "33c993af-fe2e-42d4-bd99-32579c549982",
+        "2a15ddda-8ae3-4fdb-b034-13dccfb7da56"
+      ]
+    },
+    {
+      "creditId": "fb395d6c-3cea-495d-a6f5-1d4a9752981d",
+      "workId": "a3e40dbb-2a81-46de-af0e-4c3d931db0c7",
+      "title": "Amor de conuco",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb"
+      ],
+      "recordingIds": [
+        "8b24ab68-217f-4a5d-95e6-63056ea4dd06",
+        "aa802e13-5b41-41bc-a30d-4d810b8b0358"
+      ]
+    },
+    {
+      "creditId": "c4b40b9b-6546-45ef-939b-537568db55e5",
+      "workId": "3adeed3f-de3b-46ff-874a-6c6a4f1b4756",
+      "title": "Ángel para una tambora",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/ojala-que-llueva-cafe-juan-luis-guerra/bbm6pk6o65zrb"
+      ],
+      "recordingIds": [
+        "faf64741-7ec6-4add-875c-007a4aaf85ef"
+      ]
+    },
+    {
+      "creditId": "a9dc77bb-b97b-4b50-89e8-a7c4c063f456",
+      "workId": "0c803563-3459-4c0f-8ff4-db79ad572a89",
+      "title": "Apaga y vámonos",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "4ffc19e1-d4f6-462e-a391-ad772982bc4d",
+        "81d1fa3f-d7fa-48e5-9dee-77a1fc9db04e"
+      ]
+    },
+    {
+      "creditId": "8be01d55-9a37-4b32-bdeb-4b238e662c18",
+      "workId": "0c803563-3459-4c0f-8ff4-db79ad572a89",
+      "title": "Apaga y vámonos",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/asondeguerra-juan-luis-guerra-440/5099909493056",
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "4ffc19e1-d4f6-462e-a391-ad772982bc4d",
+        "81d1fa3f-d7fa-48e5-9dee-77a1fc9db04e"
+      ]
+    },
+    {
+      "creditId": "acac7d36-9c32-44c6-8faf-b4068d12fa96",
+      "workId": "aa5f9d79-cd30-4076-8288-4fd768f1719e",
+      "title": "Areíto",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/areito-juan-luis-guerra-440/i0unam58p2jma"
+      ],
+      "recordingIds": [
+        "69d2aa84-7d4c-4c13-bdd0-cb7c3bcb826f"
+      ]
+    },
+    {
+      "creditId": "ef2228ad-6021-4b53-89b2-f08cef3ac1ee",
+      "workId": "6037cb3c-2cb2-4da3-892f-e395fde08999",
+      "title": "Arregla los papeles",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "743d532e-87f6-4180-96e3-7bb83d3fc2fc"
+      ]
+    },
+    {
+      "creditId": "72f67d09-a8a8-4fcb-a409-5bd8204893f2",
+      "workId": "6037cb3c-2cb2-4da3-892f-e395fde08999",
+      "title": "Arregla los papeles",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/asondeguerra-juan-luis-guerra-440/5099909493056",
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "743d532e-87f6-4180-96e3-7bb83d3fc2fc"
+      ]
+    },
+    {
+      "creditId": "f6819a35-e231-4154-a4a4-78ce29bfd878",
+      "workId": "e0cd2110-e527-46a3-9dd0-ad2973a344ab",
+      "title": "Así bonito",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "ede150d2-d9dd-4320-a483-ddc0669b56ce"
+      ]
+    },
+    {
+      "creditId": "ae1ee323-9cca-451e-b786-4e2b31db9655",
+      "workId": "e0cd2110-e527-46a3-9dd0-ad2973a344ab",
+      "title": "Así bonito",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "ede150d2-d9dd-4320-a483-ddc0669b56ce"
+      ]
+    },
+    {
+      "creditId": "f5eb0f7b-688f-4439-b36a-c43994ef6f64",
+      "workId": "61094042-5baf-46bf-976b-976fc9dbf774",
+      "title": "Ayer",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/areito-juan-luis-guerra-440/i0unam58p2jma"
+      ],
+      "recordingIds": [
+        "35a8f626-423c-47b1-af02-b0da2f22be6e"
+      ]
+    },
+    {
+      "creditId": "57591c58-fefa-4d65-8741-2defb00993fe",
+      "workId": "d3d7bd03-4ab5-4d99-9ed2-4b4d844531fb",
+      "title": "Bachata en Fukuoka",
+      "role": "lyricist",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056",
+        "https://www.qobuz.com/us-en/album/bachata-en-fukuoka-juan-luis-guerra-440/5099963118056",
+        "https://www.qobuz.com/es-es/album/bachata-en-fukuoka-juan-luis-guerra-440/5099963118056"
+      ],
+      "recordingIds": [
+        "5112e5c3-52e2-42cc-a813-45fb2768fde6",
+        "0672bd04-bf0f-4848-8a31-ace1723c7657"
+      ]
+    },
+    {
+      "creditId": "561a6586-9259-4ca8-b422-f3f4ccbdcb1d",
+      "workId": "d895bb41-0710-432b-ad0a-165a6d8147b1",
+      "title": "Bachata rosa",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/aic0ujnipw88b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/af0mzse4ip0ub",
+        "https://www.qobuz.com/es-es/album/romance-rosa-juan-luis-guerra-440/cgvcbn51pdj1a",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-2-juan-luis-guerra-440/elb9klfd5damb",
+        "https://www.qobuz.com/es-es/album/bonus-tracks-juan-luis-guerra-440/glztgoxoo13aa"
+      ],
+      "recordingIds": [
+        "6ac3e43e-782b-4939-bb7f-e292322eeb4d",
+        "fd627df2-acfb-4eae-9258-69a23dcb1ff4"
+      ]
+    },
+    {
+      "creditId": "956b9059-6a45-417b-8e18-86bf6ce15b57",
+      "workId": "3dbb7568-c153-4520-9085-3305926a2664",
+      "title": "Bilirrubina",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "9f24bf27-cbf1-49ea-9299-751fe316eb70"
+      ]
+    },
+    {
+      "creditId": "d6f49580-8454-4bbf-a0d3-60cb5b6afcec",
+      "workId": "3dbb7568-c153-4520-9085-3305926a2664",
+      "title": "Bilirrubina",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "9f24bf27-cbf1-49ea-9299-751fe316eb70"
+      ]
+    },
+    {
+      "creditId": "d6d07964-e143-4b1d-9773-756466762efe",
+      "workId": "8e35c1ec-c8db-4a2b-b890-a794622c7465",
+      "title": "Bobby Flashington El volador TV",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "53cff5bf-8091-443f-a3f2-d38fae826832"
+      ]
+    },
+    {
+      "creditId": "80732923-81ab-4e48-aa9b-8fbe1eb4d7d8",
+      "workId": "49a895ca-80e0-4190-b3f6-4b1ed0d3ee05",
+      "title": "Bombo ayuda al Capitán",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "9b7e5f1a-ceb4-4e30-a86a-581a5ac2c5a4"
+      ]
+    },
+    {
+      "creditId": "6e7c79d5-362e-41f7-9c68-c5465ca0725a",
+      "workId": "0b9bbec0-3854-4474-a397-750535207dc8",
+      "title": "Burbujas de amor",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/aic0ujnipw88b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/af0mzse4ip0ub",
+        "https://www.qobuz.com/es-es/album/romance-rosa-juan-luis-guerra-440/cgvcbn51pdj1a",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-1-juan-luis-guerra-440/zf4sym3pyn9ic"
+      ],
+      "recordingIds": [
+        "f518f60e-a1b8-449c-80a0-ab51973308dc"
+      ]
+    },
+    {
+      "creditId": "79e94282-9380-4781-b4d7-240d927f114a",
+      "workId": "d6f14b4e-39d9-42aa-9280-ff2568f09f2e",
+      "title": "Buscando visa para un sueño",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "7c993293-5462-452c-8504-fa79b8174a9b"
+      ]
+    },
+    {
+      "creditId": "6881a684-0d51-41fe-809f-b279a1308cb0",
+      "workId": "d6f14b4e-39d9-42aa-9280-ff2568f09f2e",
+      "title": "Buscando visa para un sueño",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "7c993293-5462-452c-8504-fa79b8174a9b"
+      ]
+    },
+    {
+      "creditId": "f29eaf8c-d15b-46e5-b23e-89de7cedd2b7",
+      "workId": "a934a7f7-acdf-4b48-8e45-3332be02c16d",
+      "title": "Caballo blanco",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla"
+      ],
+      "recordingIds": [
+        "698d5287-b01b-43d8-8af8-de82473bdd1f"
+      ]
+    },
+    {
+      "creditId": "3f7aa8b5-80a5-4a3e-bb0f-9a609b934772",
+      "workId": "60b2d272-03f5-436c-8469-1e76b765c0c4",
+      "title": "Canon de la reina",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "16de9e80-b026-4c1a-a3fa-a88b92be05b3"
+      ]
+    },
+    {
+      "creditId": "84e072a3-1e2c-4e40-8197-44eb202224e5",
+      "workId": "20a50cdd-f82a-4586-93ba-b3a387a277cb",
+      "title": "Cantando bachata",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/literal-juan-luis-guerra-440/vxd50t9m391ac",
+        "https://www.qobuz.com/es-es/album/literal-juan-luis-guerra-440/vxd50t9m391ac"
+      ],
+      "recordingIds": [
+        "c446ba5a-5c33-41a9-ac35-8809fca6fb63",
+        "b2a70d7c-1405-4a6c-8f7e-f0a5e828f9ee"
+      ]
+    },
+    {
+      "creditId": "7f91fb03-d971-49e2-8b59-066b9e7a3c71",
+      "workId": "fe844318-12c7-46d5-b10e-4df20de6afd3",
+      "title": "Canto a la patria",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/canto-a-la-patria-juan-luis-guerra-440/klep8319bgc6b"
+      ],
+      "recordingIds": [
+        "d5336df4-43d0-461b-af9c-5ea4d28e8008"
+      ]
+    },
+    {
+      "creditId": "af2368a0-b3a4-4edb-947b-c210141014df",
+      "workId": "fe844318-12c7-46d5-b10e-4df20de6afd3",
+      "title": "Canto a la patria",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/canto-a-la-patria-juan-luis-guerra-440/klep8319bgc6b"
+      ],
+      "recordingIds": [
+        "d5336df4-43d0-461b-af9c-5ea4d28e8008"
+      ]
+    },
+    {
+      "creditId": "938a69d2-b89d-467c-a583-6875f342de3b",
+      "workId": "a6036369-95e4-46fe-901e-5c534489eae2",
+      "title": "Canto de esperanza (piano)",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "64e42133-ca20-41ff-8ccb-5819fa2925ac"
+      ]
+    },
+    {
+      "creditId": "913edf63-a4f6-4205-b547-6a085d19eeee",
+      "workId": "4060a2b6-9859-4315-9ce9-050da1362a92",
+      "title": "Canto de esperanza",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "ef346c3f-2299-4e8f-99fa-abbc84e2f6cd"
+      ]
+    },
+    {
+      "creditId": "3959b686-903e-49fd-94bf-8088df7cccaf",
+      "workId": "4060a2b6-9859-4315-9ce9-050da1362a92",
+      "title": "Canto de esperanza",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "ef346c3f-2299-4e8f-99fa-abbc84e2f6cd"
+      ]
+    },
+    {
+      "creditId": "040cadcb-5ac8-4efb-8ff5-b6cbdf900770",
+      "workId": "5c819de9-8f92-40bf-829d-bbcd57c6582b",
+      "title": "Canto de hacha",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Conflicting credits, cover, traditional material or adaptation requires original packaging/publisher evidence",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "2e6583fe-a4cc-4ac1-ae86-9030383ee995"
+      ]
+    },
+    {
+      "creditId": "48cc6770-ba25-4548-8c6d-fd917125d40d",
+      "workId": "5c819de9-8f92-40bf-829d-bbcd57c6582b",
+      "title": "Canto de hacha",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Conflicting credits, cover, traditional material or adaptation requires original packaging/publisher evidence",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "2e6583fe-a4cc-4ac1-ae86-9030383ee995"
+      ]
+    },
+    {
+      "creditId": "5f853eee-8db6-4eb9-b63d-34d2a2679d55",
+      "workId": "7f597d03-244c-4730-b5d2-fc4f35ca5880",
+      "title": "Capitán Avispa blues",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "d672d861-78c4-4fb2-ad92-f8b8f0a1f555"
+      ]
+    },
+    {
+      "creditId": "31aea050-2305-404b-979f-3275b3455cde",
+      "workId": "ee0cad87-a725-426b-940f-adcb172826ba",
+      "title": "Capitán Avispa Main Theme",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "d4dd66f3-21db-4f9f-adbd-59da642c3a41"
+      ]
+    },
+    {
+      "creditId": "c0fda4e1-81c0-4401-90ef-1c2484a95c48",
+      "workId": "d42cfd6a-207d-4e12-a061-59f98229a426",
+      "title": "Capitán Avispa vals",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "b40f972d-fdcf-4a96-8876-715938438b0e"
+      ]
+    },
+    {
+      "creditId": "7cc22fbd-b665-4332-836b-928ac3a29e65",
+      "workId": "d58f5491-457d-4f21-8328-2f6cadd2b647",
+      "title": "Capitán Avispa vs. Red Maluco",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "980b88d3-d68f-4fb1-8561-2cc6afbd52dc"
+      ]
+    },
+    {
+      "creditId": "8a116057-cd89-40fa-a630-8b572e092b66",
+      "workId": "f8390e36-4a0f-4286-8cb4-3e9a3775d5fe",
+      "title": "Capitán Electro Beat",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "a60b3e6f-834f-45e1-8a43-4569c9e469b0"
+      ]
+    },
+    {
+      "creditId": "ef325389-abad-450e-bd3c-ca225e934161",
+      "workId": "d86f95f0-92d2-4b83-b306-a0e98e5c5e48",
+      "title": "Caribbean Blues",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "1d1c8f94-725d-4bd6-a8ed-3e97d4657f01"
+      ]
+    },
+    {
+      "creditId": "d0144ba9-d68c-400b-868f-47da12bdc4af",
+      "workId": "d86f95f0-92d2-4b83-b306-a0e98e5c5e48",
+      "title": "Caribbean Blues",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/asondeguerra-juan-luis-guerra-440/5099909493056",
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "1d1c8f94-725d-4bd6-a8ed-3e97d4657f01"
+      ]
+    },
+    {
+      "creditId": "445432ca-75eb-4066-86b7-1d7f5bb03ed3",
+      "workId": "6ddd3572-ff4b-4ddf-a9f3-fffa277a0ab2",
+      "title": "Carnaval",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "d0bde37f-b1b7-49dd-94c8-47e599ec222a"
+      ]
+    },
+    {
+      "creditId": "1e6ef627-4914-48fc-95fe-93d29f848aae",
+      "workId": "6ddd3572-ff4b-4ddf-a9f3-fffa277a0ab2",
+      "title": "Carnaval",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "d0bde37f-b1b7-49dd-94c8-47e599ec222a"
+      ]
+    },
+    {
+      "creditId": "8fca044a-99ef-4240-8671-69b55afa4340",
+      "workId": "9a4234e8-40d6-42b7-922c-b9de91618648",
+      "title": "Carta de amor",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/aic0ujnipw88b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/af0mzse4ip0ub",
+        "https://www.qobuz.com/es-es/album/romance-rosa-juan-luis-guerra-440/cgvcbn51pdj1a",
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja"
+      ],
+      "recordingIds": [
+        "8a12d6eb-3b6f-4696-a18d-1563f5266e94"
+      ]
+    },
+    {
+      "creditId": "2c29d1d5-884e-420b-a892-fdcb8f9c3750",
+      "workId": "ef601bd0-3d0f-48b2-b0cb-d2d4807ef4e5",
+      "title": "Cayo Arena",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "ad12fa26-d901-414a-bc85-63c6be6c72d4"
+      ]
+    },
+    {
+      "creditId": "d33bbd16-469e-4e0e-9636-8fbf27c55425",
+      "workId": "ef601bd0-3d0f-48b2-b0cb-d2d4807ef4e5",
+      "title": "Cayo Arena",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/asondeguerra-juan-luis-guerra-440/5099909493056",
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "ad12fa26-d901-414a-bc85-63c6be6c72d4"
+      ]
+    },
+    {
+      "creditId": "3faa9544-fef6-470a-be8c-b0c832b723c8",
+      "workId": "ed3e59c9-5b3b-414f-88dd-e73353d451d9",
+      "title": "Cecilia",
+      "role": "composer",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/vida-cotidiana-juanes/kki7zm3r11h6a"
+      ],
+      "recordingIds": [
+        "6bfb9bc2-9fb3-4a3b-b6e0-cfa2ed37597a"
+      ]
+    },
+    {
+      "creditId": "e1b3f8b4-508e-4f66-ad0c-46c05688d6d1",
+      "workId": "ed3e59c9-5b3b-414f-88dd-e73353d451d9",
+      "title": "Cecilia",
+      "role": "lyricist",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/vida-cotidiana-juanes/kki7zm3r11h6a"
+      ],
+      "recordingIds": [
+        "6bfb9bc2-9fb3-4a3b-b6e0-cfa2ed37597a"
+      ]
+    },
+    {
+      "creditId": "38133603-b1dc-4333-a117-81b17015bd4b",
+      "workId": "e06f9c01-c887-42f9-abea-2abf3bf40e3f",
+      "title": "Como abeja al panal",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/aic0ujnipw88b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/af0mzse4ip0ub",
+        "https://www.qobuz.com/es-es/album/romance-rosa-juan-luis-guerra-440/cgvcbn51pdj1a",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-1-juan-luis-guerra-440/zf4sym3pyn9ic"
+      ],
+      "recordingIds": [
+        "91e6d835-c2e2-47e0-a901-4163d5585aea",
+        "8e8a2b7f-dfd0-49eb-9a1e-94a0f4c91091",
+        "e909eb5d-0cbd-481e-8539-949c21250f3f"
+      ]
+    },
+    {
+      "creditId": "c39f9a5b-be84-4b33-9448-2cdef7536668",
+      "workId": "0f1010f0-baf8-479a-830e-fbbba4654832",
+      "title": "Como me enamora",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/radio-guira-juan-luis-guerra-440/jo8s79jycoqaa"
+      ],
+      "recordingIds": [
+        "7bac75d1-86c6-4b37-81fe-c66969721901"
+      ]
+    },
+    {
+      "creditId": "f5ed9a8a-397d-4495-aa0b-8a542f3a598b",
+      "workId": "10a0112f-12ed-4dac-b592-831bd92b3d90",
+      "title": "Como trompeta en si bemol",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla"
+      ],
+      "recordingIds": [
+        "475cd0f2-4d0b-4d3e-9527-8aa94e840f16"
+      ]
+    },
+    {
+      "creditId": "59b0f0c0-fe12-45b3-9525-8510ba3ff150",
+      "workId": "eac72935-0da3-4007-8381-d3248e5f83e6",
+      "title": "Coronita de flores",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-2-juan-luis-guerra-440/elb9klfd5damb"
+      ],
+      "recordingIds": [
+        "525a92c8-bae7-4c89-8e84-532e7ed5be2f"
+      ]
+    },
+    {
+      "creditId": "4dcc245d-6bc0-481a-b073-cbcd52e9dd57",
+      "workId": "5f794841-e604-41a6-8020-59d1395be871",
+      "title": "Cositas de amor",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/radio-guira-juan-luis-guerra-440/jo8s79jycoqaa"
+      ],
+      "recordingIds": [
+        "5900134a-9d7b-4dee-85ad-3e938f7b2f12"
+      ]
+    },
+    {
+      "creditId": "03567b73-fcad-46a8-9055-50ed67303556",
+      "workId": "4c1e0dbe-339a-4097-9411-072cb8ab2fed",
+      "title": "Cuando te beso",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-2-juan-luis-guerra-440/elb9klfd5damb"
+      ],
+      "recordingIds": [
+        "4c5aa142-f663-4a97-90cc-714de1333096"
+      ]
+    },
+    {
+      "creditId": "37b80d03-232a-4611-bf87-ff4506692e4f",
+      "workId": "d955313b-1fe0-4987-913e-9621b2aa525f",
+      "title": "Cuando te beso II",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma"
+      ],
+      "recordingIds": [
+        "d9426939-3487-4a76-b5c9-4a63e0f4a8a9"
+      ]
+    },
+    {
+      "creditId": "07839f1c-5af8-4bd6-b06d-a348e517bf27",
+      "workId": "d955313b-1fe0-4987-913e-9621b2aa525f",
+      "title": "Cuando te beso II",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "d9426939-3487-4a76-b5c9-4a63e0f4a8a9"
+      ]
+    },
+    {
+      "creditId": "b7e4470e-f133-4347-8bcc-98cd52097b2f",
+      "workId": "5103babe-66e6-43c6-bef8-680658d551c4",
+      "title": "Dame",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Conflicting credits, cover, traditional material or adaptation requires original packaging/publisher evidence",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a"
+      ],
+      "recordingIds": [
+        "3797fea9-b2ba-4fa0-b885-f317b724d8dd"
+      ]
+    },
+    {
+      "creditId": "f704b141-4974-4bb9-b003-a340e2d16070",
+      "workId": "5103babe-66e6-43c6-bef8-680658d551c4",
+      "title": "Dame",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Conflicting credits, cover, traditional material or adaptation requires original packaging/publisher evidence",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a"
+      ],
+      "recordingIds": [
+        "3797fea9-b2ba-4fa0-b885-f317b724d8dd"
+      ]
+    },
+    {
+      "creditId": "e8039a96-f62a-4bb2-9f19-1d0d28f294e5",
+      "workId": "ba93f6e8-587b-464b-9224-5fe52b9d4116",
+      "title": "Dance with Me (Si tú no bailas conmigo)",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/dance-with-me-si-tu-no-bailas-conmigo-carol-welsman-and-juan-luis-guerra/sft848p5ghgma"
+      ],
+      "recordingIds": [
+        "ba5bb58b-f603-4a45-bd88-c20970664b84"
+      ]
+    },
+    {
+      "creditId": "5eae0a83-036f-471d-b302-757c589169ba",
+      "workId": "ba93f6e8-587b-464b-9224-5fe52b9d4116",
+      "title": "Dance with Me (Si tú no bailas conmigo)",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/dance-with-me-si-tu-no-bailas-conmigo-carol-welsman-and-juan-luis-guerra/sft848p5ghgma"
+      ],
+      "recordingIds": [
+        "ba5bb58b-f603-4a45-bd88-c20970664b84"
+      ]
+    },
+    {
+      "creditId": "dc04448a-ac51-48c5-870e-10e6914c0066",
+      "workId": "6e5d3fc5-e0b0-4c8b-8d7f-cc13db77b5de",
+      "title": "De tu boca",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/ojala-que-llueva-cafe-juan-luis-guerra/bbm6pk6o65zrb"
+      ],
+      "recordingIds": [
+        "9b1e0adb-066b-439a-b4e1-7777a31a0548",
+        "198cbb35-070c-427c-9b4d-3fec0498510d"
+      ]
+    },
+    {
+      "creditId": "e898d82a-0104-4513-9525-6157ab7c703e",
+      "workId": "70c3b6ca-28a6-41df-ac9f-08bee55ebaa9",
+      "title": "Dios así lo quiso",
+      "role": "composer",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/dios-asi-lo-quiso-ricardo-montaner-juan-luis-guerra-440/z5i2pgki0qk4a"
+      ],
+      "recordingIds": [
+        "9a6cf921-cbdf-4dd6-869b-c95ee6ad2155"
+      ]
+    },
+    {
+      "creditId": "42e3b9de-a58d-4741-8d12-a190883d40c9",
+      "workId": "70c3b6ca-28a6-41df-ac9f-08bee55ebaa9",
+      "title": "Dios así lo quiso",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/dios-asi-lo-quiso-ricardo-montaner-juan-luis-guerra-440/z5i2pgki0qk4a"
+      ],
+      "recordingIds": [
+        "9a6cf921-cbdf-4dd6-869b-c95ee6ad2155"
+      ]
+    },
+    {
+      "creditId": "cf8e0377-8bd0-43e9-ae76-1ed14982947b",
+      "workId": "1156c27c-4018-4146-80b8-9275c16a6f09",
+      "title": "DJ Bachata",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/radio-guira-juan-luis-guerra-440/jo8s79jycoqaa"
+      ],
+      "recordingIds": [
+        "de727476-1225-443f-8d30-dbbf7b978c7d"
+      ]
+    },
+    {
+      "creditId": "7433c41b-88e8-4133-9c8d-c67ddae1eb21",
+      "workId": "1ab2797a-c9b6-47c1-b44d-56e1f2e8ce82",
+      "title": "El beso de la ciguatera",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "9c0e72b2-4f5c-42bd-af80-6785176b902e"
+      ]
+    },
+    {
+      "creditId": "d19ddaa6-721d-4964-869d-fb53764c3461",
+      "workId": "1ab2797a-c9b6-47c1-b44d-56e1f2e8ce82",
+      "title": "El beso de la ciguatera",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "9c0e72b2-4f5c-42bd-af80-6785176b902e"
+      ]
+    },
+    {
+      "creditId": "a350bbc1-b09a-4328-84fb-2f9fcad7e96c",
+      "workId": "fbcb6589-8101-458f-90ac-8b8214b33d84",
+      "title": "El costo de la vida",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/aic0ujnipw88b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/af0mzse4ip0ub",
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja"
+      ],
+      "recordingIds": [
+        "d32d2277-6d90-4ff7-b614-a252e98d11e8",
+        "73c3e9dd-859c-4009-877a-ca2424dd8541"
+      ]
+    },
+    {
+      "creditId": "3cdec54e-a821-4f9e-b338-61a1e420aab1",
+      "workId": "aa9712ce-8160-447d-bec1-24e4910ae514",
+      "title": "El farolito",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "047caa18-700e-4fff-97d8-b8af5a6d4f6a",
+        "749e731b-9f79-4cfd-b203-d01a8d4c2b45"
+      ]
+    },
+    {
+      "creditId": "5a1ec7a8-6c90-4a2e-974f-33c77bd466bd",
+      "workId": "aa9712ce-8160-447d-bec1-24e4910ae514",
+      "title": "El farolito",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "047caa18-700e-4fff-97d8-b8af5a6d4f6a",
+        "749e731b-9f79-4cfd-b203-d01a8d4c2b45"
+      ]
+    },
+    {
+      "creditId": "f621b4f3-cbec-4155-a6bd-5ca070f87f6c",
+      "workId": "f42b7d74-4023-436b-8b19-a083174f346f",
+      "title": "El Niágara en bicicleta",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja"
+      ],
+      "recordingIds": [
+        "2dd6a6a7-81f2-48d1-bd57-bbd75cc36805",
+        "a3b5b0e0-6739-474e-9187-83d2bc4ff5cb",
+        "e382ea92-7519-406e-869c-7e479e00a70c",
+        "1fb2a355-75eb-4b56-b1c8-e531a99c1e45"
+      ]
+    },
+    {
+      "creditId": "58548f46-258b-4b3e-ba26-30f938723bbf",
+      "workId": "180c0d46-d94b-4213-9513-38cc50eace61",
+      "title": "El primo",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb"
+      ],
+      "recordingIds": [
+        "9ab134d4-1ea2-4c16-9600-7fa36b757f6c"
+      ]
+    },
+    {
+      "creditId": "94e0038d-1f46-4943-a80b-0ac5b5576a73",
+      "workId": "c4aba5e0-89e8-461c-bf4a-24e525a49362",
+      "title": "El quita pena",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla"
+      ],
+      "recordingIds": [
+        "7c4ef0bc-db7b-449a-8844-4db91d917171"
+      ]
+    },
+    {
+      "creditId": "3acd203d-a2cd-4b2c-aece-4aa5bd6ce541",
+      "workId": "e285ff3d-f796-4cb9-b0bb-afe75cfc2beb",
+      "title": "El vals de las mandevillas",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "1c31beae-7e3e-44d9-8efb-3b78fa75b11f"
+      ]
+    },
+    {
+      "creditId": "4ce80d27-afee-4711-b386-4a8db3987754",
+      "workId": "205614da-ef21-46f3-9b55-312ed8f51f07",
+      "title": "Elena",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a"
+      ],
+      "recordingIds": [
+        "1df2c683-442d-479b-936c-0f5d68bd1bb4"
+      ]
+    },
+    {
+      "creditId": "fcd0d0aa-cada-47d1-afe5-d0ad499ce7a4",
+      "workId": "f1402b97-b947-4b71-a53e-ad6ef213c811",
+      "title": "Ella dice",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a"
+      ],
+      "recordingIds": [
+        "ac93f31e-6376-4777-9c4e-50b2950a4f8c"
+      ]
+    },
+    {
+      "creditId": "40d97a3a-5644-4e7e-a2ec-062024d76d6c",
+      "workId": "1b96549c-ac81-4ae5-a6df-1f9d692f49ff",
+      "title": "Emperador",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "77590990-6536-4fcc-81d1-656780b04676"
+      ]
+    },
+    {
+      "creditId": "82e3dbaa-853d-4d74-be9e-8e61bcd1ea53",
+      "workId": "d9a8351d-2414-41b0-ad09-ac23faefaeb2",
+      "title": "En el cielo no hay hospital",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla"
+      ],
+      "recordingIds": [
+        "e63bb06e-36db-46b3-8cee-008e4f158c96",
+        "fd8a9dea-ea26-4cd3-8d91-4451f0263df6"
+      ]
+    },
+    {
+      "creditId": "77ba121f-3782-4f4d-89b7-2fd309ad4458",
+      "workId": "dbbee52b-fff5-4a37-84df-77bd1dd9f8c2",
+      "title": "Entrada al palacio",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "0cdb4b43-856d-4ddf-b0b4-c76724015409"
+      ]
+    },
+    {
+      "creditId": "cd0f734e-d395-445d-9131-36b30dc09ae4",
+      "workId": "cb02b449-cc26-4f6a-a916-e41b786eacd1",
+      "title": "Esto es vida (bachata remix)",
+      "role": "composer",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/esto-es-vida-draco-rosa-feat-juan-luis-guerra/0886444195775"
+      ],
+      "recordingIds": [
+        "6f771abf-1f01-4b65-af59-083bb789e6b8"
+      ]
+    },
+    {
+      "creditId": "eefd9178-f403-4a76-9b3e-31b4619d2685",
+      "workId": "cb02b449-cc26-4f6a-a916-e41b786eacd1",
+      "title": "Esto es vida (bachata remix)",
+      "role": "lyricist",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/esto-es-vida-draco-rosa-feat-juan-luis-guerra/0886444195775"
+      ],
+      "recordingIds": [
+        "6f771abf-1f01-4b65-af59-083bb789e6b8"
+      ]
+    },
+    {
+      "creditId": "0bd557c6-0a5a-40ce-a155-dae29b5b3aa2",
+      "workId": "0ba9de7b-0a58-4d5e-8a52-a0a52a11be71",
+      "title": "Estrellitas y duendes",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+        "https://www.qobuz.com/es-es/album/romance-rosa-juan-luis-guerra-440/cgvcbn51pdj1a",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-1-juan-luis-guerra-440/zf4sym3pyn9ic",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-2-juan-luis-guerra-440/elb9klfd5damb",
+        "https://www.qobuz.com/es-es/album/bonus-tracks-juan-luis-guerra-440/glztgoxoo13aa"
+      ],
+      "recordingIds": [
+        "1c1db7c0-56ae-4efe-bbae-8168c9e8be2e",
+        "bd038b30-b6c2-4523-b2e2-57942fb5fdb3"
+      ]
+    },
+    {
+      "creditId": "56b69fc8-09b9-4918-ac89-a762b3e2e51c",
+      "workId": "fa2f3ebe-63bc-4597-81cc-f447553a5a33",
+      "title": "Extractor 440",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "5e582fae-29ba-4691-969b-a4f7b9af2c75"
+      ]
+    },
+    {
+      "creditId": "8983519f-f090-4ab6-8484-ddb841088b50",
+      "workId": "d3d72f48-8412-4723-a194-91c1009fa81a",
+      "title": "Feliciana",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "aa76bcfd-4997-44f3-9949-2a36034ae59b"
+      ]
+    },
+    {
+      "creditId": "785f39ca-dd41-473f-be0f-e99050ba8a8a",
+      "workId": "d3d72f48-8412-4723-a194-91c1009fa81a",
+      "title": "Feliciana",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "aa76bcfd-4997-44f3-9949-2a36034ae59b"
+      ]
+    },
+    {
+      "creditId": "af6b631a-eb11-486c-97a3-64b4bdc8eed1",
+      "workId": "01826933-df85-4b2e-ab8b-5b1b46ff0623",
+      "title": "Fogaraté",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "2b5614c1-5292-4d6a-b7ad-b8e93d809b52"
+      ]
+    },
+    {
+      "creditId": "dd57ae9a-4500-4f04-b1db-4693118e31f5",
+      "workId": "01826933-df85-4b2e-ab8b-5b1b46ff0623",
+      "title": "Fogaraté",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "2b5614c1-5292-4d6a-b7ad-b8e93d809b52"
+      ]
+    },
+    {
+      "creditId": "f9f11a39-0f0c-455b-9f70-f34616dc0bc6",
+      "workId": "62420b98-ea41-4197-99e9-bf8073fd7df3",
+      "title": "Frío, frío",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/aic0ujnipw88b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/af0mzse4ip0ub",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-1-juan-luis-guerra-440/zf4sym3pyn9ic"
+      ],
+      "recordingIds": [
+        "334ae297-d150-4a81-9427-a416ecb0aa1d",
+        "d6e45a6f-b0f9-4055-b884-5d91ea194bc7"
+      ]
+    },
+    {
+      "creditId": "1e878534-3ea4-4941-9a36-63ca59920bb2",
+      "workId": "21e33509-5d76-44a4-854c-ed250a40563b",
+      "title": "Fuerte y valiente nunca miente",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "85fc93e9-2872-465a-a575-9b0bc737d171"
+      ]
+    },
+    {
+      "creditId": "b7200229-6429-4633-9123-53cc2e66cc25",
+      "workId": "c108a106-05d7-4547-aee9-3961a2daa23d",
+      "title": "Gracias",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/gracias-juan-luis-guerra-440/pmrh9tpnmg3rc"
+      ],
+      "recordingIds": [
+        "bbe0295c-8358-4354-96e8-cc85463f89cc"
+      ]
+    },
+    {
+      "creditId": "a83f44ec-c79f-4d49-b0a7-6070c07b6c11",
+      "workId": "c108a106-05d7-4547-aee9-3961a2daa23d",
+      "title": "Gracias",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/gracias-juan-luis-guerra-440/pmrh9tpnmg3rc"
+      ],
+      "recordingIds": [
+        "bbe0295c-8358-4354-96e8-cc85463f89cc"
+      ]
+    },
+    {
+      "creditId": "f242150b-0fb7-4b6a-8b47-62915e2e7823",
+      "workId": "54b42c98-0288-47b0-ada2-cffc7ba73620",
+      "title": "Guavaberry",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/aic0ujnipw88b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/af0mzse4ip0ub"
+      ],
+      "recordingIds": [
+        "a6ff5439-c736-4499-83ca-c1989c217607",
+        "8fb3095a-b5fc-455a-bf82-cb6e95c14356"
+      ]
+    },
+    {
+      "creditId": "9d7c86bf-8d32-44c5-b237-7567045fe23f",
+      "workId": "27d4b3b3-7620-479d-91fc-142854873b62",
+      "title": "Hazlo mentir",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "24abbf1d-99db-4097-a74a-af5e2041df2c"
+      ]
+    },
+    {
+      "creditId": "9c70e774-b407-4590-af9e-e199dcddbdb2",
+      "workId": "f4439477-aab4-4a1b-9a43-6c2ae3b2118e",
+      "title": "Honda nagal con piedras de jaspe azul",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "356fc8fb-f6f6-48b6-b159-2560ab670e8b"
+      ]
+    },
+    {
+      "creditId": "478f0c95-0e44-416d-a6f5-73b264365cd7",
+      "workId": "d1f8f18f-2f95-42ec-be39-9e595d596890",
+      "title": "Jardinera",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "aa050052-8ea7-438e-a123-5c807eaa521c"
+      ]
+    },
+    {
+      "creditId": "642a63fe-d68e-4795-b32b-fc0618bbdad8",
+      "workId": "d1f8f18f-2f95-42ec-be39-9e595d596890",
+      "title": "Jardinera",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "aa050052-8ea7-438e-a123-5c807eaa521c"
+      ]
+    },
+    {
+      "creditId": "4fd7fec4-b0ab-473b-820f-8fb99fbdb880",
+      "workId": "2ba426ea-7257-4355-8b2a-f9f1e682aad9",
+      "title": "Juana Mecho",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "7762b90f-2d10-44b1-9e18-84724b8936eb"
+      ]
+    },
+    {
+      "creditId": "b370db6f-0a52-4025-b20b-37bc744111e6",
+      "workId": "2ba426ea-7257-4355-8b2a-f9f1e682aad9",
+      "title": "Juana Mecho",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "7762b90f-2d10-44b1-9e18-84724b8936eb"
+      ]
+    },
+    {
+      "creditId": "945a3941-3401-4e49-902f-51b53c34bc14",
+      "workId": "e9b31b08-2f18-441e-bccf-fe5345f6085b",
+      "title": "July 19th",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "19da5bb6-c816-4807-b8db-84143c24472a"
+      ]
+    },
+    {
+      "creditId": "1ca926ac-a02a-49bb-b9e7-6c20b305504b",
+      "workId": "e9b31b08-2f18-441e-bccf-fe5345f6085b",
+      "title": "July 19th",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "19da5bb6-c816-4807-b8db-84143c24472a"
+      ]
+    },
+    {
+      "creditId": "d5321947-9a9b-48a8-9078-0d521057e86c",
+      "workId": "7680e803-aa3f-466d-b711-98c0a5112f1f",
+      "title": "La bilirrubina",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/aic0ujnipw88b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/af0mzse4ip0ub",
+        "https://www.qobuz.com/es-es/album/romance-rosa-juan-luis-guerra-440/cgvcbn51pdj1a",
+        "https://www.qobuz.com/es-es/album/bonus-tracks-juan-luis-guerra-440/glztgoxoo13aa"
+      ],
+      "recordingIds": [
+        "2c20f83b-9569-4313-b5b6-9dfeffda6553",
+        "d1c688c3-b76b-4b11-83a2-49426094922f",
+        "db7222d0-83e2-4e15-b399-9880669955f3",
+        "9f56bad5-2bba-4f7e-958a-90a91f57a39b"
+      ]
+    },
+    {
+      "creditId": "af34127f-f009-42ee-ac74-4032e5b6ae88",
+      "workId": "e28bff65-0e59-4784-a350-677dfba24ddf",
+      "title": "La calle",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "79b0275b-e260-48ef-9fb3-9c831b503bc5",
+        "8ae9a544-398b-4351-949a-04905d0f15b8"
+      ]
+    },
+    {
+      "creditId": "7ee2d923-6009-47df-8765-2c02d0e84017",
+      "workId": "e28bff65-0e59-4784-a350-677dfba24ddf",
+      "title": "La calle",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/asondeguerra-juan-luis-guerra-440/5099909493056",
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "79b0275b-e260-48ef-9fb3-9c831b503bc5",
+        "8ae9a544-398b-4351-949a-04905d0f15b8"
+      ]
+    },
+    {
+      "creditId": "853108d3-6e1b-469a-98a3-dd23fcbb9552",
+      "workId": "2ea1e4b5-a8c5-41be-803f-a9296253297d",
+      "title": "La calle gris",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "770459fd-5119-4587-a4d3-f9bda664d97f"
+      ]
+    },
+    {
+      "creditId": "bf7621e1-227a-4097-be8d-4fc0f5ab831a",
+      "workId": "2ea1e4b5-a8c5-41be-803f-a9296253297d",
+      "title": "La calle gris",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "770459fd-5119-4587-a4d3-f9bda664d97f"
+      ]
+    },
+    {
+      "creditId": "3301501e-7a0e-459d-bfb5-0790104d46e6",
+      "workId": "2cfefea8-a928-48e5-a707-b913e6d6a1a0",
+      "title": "La condecoración",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "95b91f9e-8201-4bf4-ad9e-8c836fa10419"
+      ]
+    },
+    {
+      "creditId": "4cbfb264-81b1-46fb-b23c-2df024312e0b",
+      "workId": "feba1936-8561-4360-8652-5e9c7379deca",
+      "title": "La cosquillita",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Conflicting credits, cover, traditional material or adaptation requires original packaging/publisher evidence",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja"
+      ],
+      "recordingIds": [
+        "2303c139-16c1-4d46-9c25-86f91dae4af4",
+        "24e8cbfc-cb66-4481-a2db-fe653e7b79fc"
+      ]
+    },
+    {
+      "creditId": "c5246a76-480f-43cb-8294-ba314f3ff652",
+      "workId": "feba1936-8561-4360-8652-5e9c7379deca",
+      "title": "La cosquillita",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Conflicting credits, cover, traditional material or adaptation requires original packaging/publisher evidence",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja"
+      ],
+      "recordingIds": [
+        "2303c139-16c1-4d46-9c25-86f91dae4af4",
+        "24e8cbfc-cb66-4481-a2db-fe653e7b79fc"
+      ]
+    },
+    {
+      "creditId": "1f35acb7-787b-439d-902a-2b68e2e30f41",
+      "workId": "95c96cc0-130e-4405-b6ac-8978905408d2",
+      "title": "La gallera",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/ojala-que-llueva-cafe-juan-luis-guerra/bbm6pk6o65zrb"
+      ],
+      "recordingIds": [
+        "8573f647-a979-437a-8e42-03e281ec9677",
+        "81cb5d7e-6f6e-4453-9514-b97358b5277f"
+      ]
+    },
+    {
+      "creditId": "7bb93b1e-60f6-43a3-8a8e-097531f08fe6",
+      "workId": "d305f10a-276f-44a1-a1db-1a25108b1d72",
+      "title": "La guagua",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "a266c059-fd40-4c0f-a825-b6b70ca30587",
+        "c34a2d19-c996-4e82-a2a4-0ecf06f0a45d"
+      ]
+    },
+    {
+      "creditId": "1bc69536-b0ce-4556-8778-e8da122a940d",
+      "workId": "d305f10a-276f-44a1-a1db-1a25108b1d72",
+      "title": "La guagua",
+      "role": "lyricist",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "a266c059-fd40-4c0f-a825-b6b70ca30587",
+        "c34a2d19-c996-4e82-a2a4-0ecf06f0a45d"
+      ]
+    },
+    {
+      "creditId": "45c50692-8b00-4c90-84b8-2bf514305ac2",
+      "workId": "8cda9b06-34e2-406d-8ba8-2685312a9720",
+      "title": "La hormiguita",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-2-juan-luis-guerra-440/elb9klfd5damb"
+      ],
+      "recordingIds": [
+        "94e6b280-a522-4fd7-82e5-e920583b8668"
+      ]
+    },
+    {
+      "creditId": "e71830a7-ce7f-412f-9c26-a92b6fc09a29",
+      "workId": "d5580b65-adfd-425f-ab00-eea679b0773c",
+      "title": "La noviecita",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/radio-guira-juan-luis-guerra-440/jo8s79jycoqaa"
+      ],
+      "recordingIds": [
+        "76d3af3a-c225-44ef-861c-9a146d668213"
+      ]
+    },
+    {
+      "creditId": "ab28f6bf-6966-4932-baf4-1ad6206b4f3e",
+      "workId": "e7245186-38e2-44cc-9b17-580ebc7b2c27",
+      "title": "La rendición / Divertimento",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "1cbfb37c-b849-4a55-ac9e-f2070a7af60d"
+      ]
+    },
+    {
+      "creditId": "7774c319-2a09-4154-b384-80034b6dde2a",
+      "workId": "88c79446-e7d5-49c9-af84-9f5ec626fe00",
+      "title": "La señorita",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "e4e255fd-573d-463b-a827-558ad644ad7e"
+      ]
+    },
+    {
+      "creditId": "66ceeb35-5bb4-4594-a326-6cec4b165644",
+      "workId": "88c79446-e7d5-49c9-af84-9f5ec626fe00",
+      "title": "La señorita",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "e4e255fd-573d-463b-a827-558ad644ad7e"
+      ]
+    },
+    {
+      "creditId": "1c8ccc7c-4100-4f32-928a-8b10fac936b9",
+      "workId": "5970abfa-13ef-4821-9b86-27a99803660a",
+      "title": "La trompeta real",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "62bf7ed1-09ca-43c5-867d-c8f723ca3359"
+      ]
+    },
+    {
+      "creditId": "cce72bd9-74ec-499d-b0d0-2e0b03663cb8",
+      "workId": "cdafed4b-7b06-4619-b8c4-e0c655b2cec7",
+      "title": "Lacrimosa",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Conflicting credits, cover, traditional material or adaptation requires original packaging/publisher evidence",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "c8c7b2b8-1868-4e81-8ed6-0107d0cdd3a4"
+      ]
+    },
+    {
+      "creditId": "d1c0bfda-d479-4c60-8b21-07da89b98972",
+      "workId": "cdafed4b-7b06-4619-b8c4-e0c655b2cec7",
+      "title": "Lacrimosa",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Conflicting credits, cover, traditional material or adaptation requires original packaging/publisher evidence",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "c8c7b2b8-1868-4e81-8ed6-0107d0cdd3a4"
+      ]
+    },
+    {
+      "creditId": "d1f8654f-459a-42da-bcea-6ac1ca7959bc",
+      "workId": "09e75252-7878-4e3c-a8fd-048b219af29d",
+      "title": "Las de Juan Luis",
+      "role": "composer",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/las-de-juan-luis-luis-segura-juan-luis-guerra-440/vcpbg99fh05da"
+      ],
+      "recordingIds": [
+        "b81a18b0-0068-4524-860f-ea5cc80c236e"
+      ]
+    },
+    {
+      "creditId": "cc61d331-4799-4855-86cb-d10296aab268",
+      "workId": "09e75252-7878-4e3c-a8fd-048b219af29d",
+      "title": "Las de Juan Luis",
+      "role": "lyricist",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/las-de-juan-luis-luis-segura-juan-luis-guerra-440/vcpbg99fh05da"
+      ],
+      "recordingIds": [
+        "b81a18b0-0068-4524-860f-ea5cc80c236e"
+      ]
+    },
+    {
+      "creditId": "81f3c1b4-1047-45d1-8318-2b949ab8c9cf",
+      "workId": "a29f9d2c-3aba-41c7-a2da-51ba7b783f9c",
+      "title": "Live in Love",
+      "role": "composer",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/live-in-love-philip-lassiter-juan-luis-guerra-440-josje/x5axn29ofn11b"
+      ],
+      "recordingIds": [
+        "29feb699-91d8-47d4-b7f9-2c27bfa02e8a"
+      ]
+    },
+    {
+      "creditId": "cb092508-83d0-4261-8392-ee64b07752dd",
+      "workId": "a29f9d2c-3aba-41c7-a2da-51ba7b783f9c",
+      "title": "Live in Love",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/live-in-love-philip-lassiter-juan-luis-guerra-440-josje/x5axn29ofn11b"
+      ],
+      "recordingIds": [
+        "29feb699-91d8-47d4-b7f9-2c27bfa02e8a"
+      ]
+    },
+    {
+      "creditId": "775d4b1d-6c18-40e8-8efa-2dd968232ff8",
+      "workId": "687f39ee-640f-43fb-841a-ca9c5d39a6ec",
+      "title": "Lo Piken Bank",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "76af8a49-a215-491f-b98e-a40b423f5fde"
+      ]
+    },
+    {
+      "creditId": "99b60c17-c8be-46af-bfa7-521ed6f90560",
+      "workId": "43428d2e-1493-4758-aec4-682ec31bb0a9",
+      "title": "Lola’s Mambo",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "544038e8-0f16-4764-a23d-28e3af327759"
+      ]
+    },
+    {
+      "creditId": "fdfc09ea-8719-4e59-86f5-52039841dfb1",
+      "workId": "43428d2e-1493-4758-aec4-682ec31bb0a9",
+      "title": "Lola’s Mambo",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/asondeguerra-juan-luis-guerra-440/5099909493056",
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "544038e8-0f16-4764-a23d-28e3af327759"
+      ]
+    },
+    {
+      "creditId": "860c7e2d-fbbd-4219-8c07-770362848b5a",
+      "workId": "5d9d667a-5fd2-41b3-b5bc-24a44083a201",
+      "title": "Loreta",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "068b719b-d440-44d8-aeae-867ad5ef484a"
+      ]
+    },
+    {
+      "creditId": "6fa137b9-1584-450b-b807-cbe616eabbe4",
+      "workId": "5d9d667a-5fd2-41b3-b5bc-24a44083a201",
+      "title": "Loreta",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "068b719b-d440-44d8-aeae-867ad5ef484a"
+      ]
+    },
+    {
+      "creditId": "d6432792-968f-4a27-a3ca-76cd2af69ba8",
+      "workId": "12ff9f4d-4dc4-4711-b998-d1004e5067a2",
+      "title": "Los mangos bajitos",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "43ad76b3-a6dd-4a07-948f-d4092e7f502f"
+      ]
+    },
+    {
+      "creditId": "5c800a9d-d71b-4041-bcc4-38cdf480a145",
+      "workId": "12ff9f4d-4dc4-4711-b998-d1004e5067a2",
+      "title": "Los mangos bajitos",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "43ad76b3-a6dd-4a07-948f-d4092e7f502f"
+      ]
+    },
+    {
+      "creditId": "5c5917c0-8744-4b8b-a080-284067f7b495",
+      "workId": "8f013e1b-69aa-4b88-a73c-63b8c0c1abeb",
+      "title": "Los pajaritos",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "1756e333-fbc7-4428-b638-e0f3fea7ea77"
+      ]
+    },
+    {
+      "creditId": "c484fe7a-4701-4a90-9978-3a56fe87495c",
+      "workId": "8f013e1b-69aa-4b88-a73c-63b8c0c1abeb",
+      "title": "Los pajaritos",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "1756e333-fbc7-4428-b638-e0f3fea7ea77"
+      ]
+    },
+    {
+      "creditId": "e109a2e3-f9b2-42d6-b374-d23729810c8c",
+      "workId": "ec505ad4-726f-47b9-a63f-a11a92265a8c",
+      "title": "Mal de amor",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja"
+      ],
+      "recordingIds": [
+        "fef8838b-6b26-4039-8f38-0e74726fc956"
+      ]
+    },
+    {
+      "creditId": "31c45054-c4bc-4692-bbd9-8a2515acc6b2",
+      "workId": "52a2a9fd-5902-41d0-b43f-c998bbf12b5f",
+      "title": "Mambo 23",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/radio-guira-juan-luis-guerra-440/jo8s79jycoqaa",
+        "https://www.qobuz.com/us-en/album/mambo-23-juan-luis-guerra/o5zftm31v95aa"
+      ],
+      "recordingIds": [
+        "e030c2ca-7f8c-40c5-99bc-9c697f698744",
+        "aa63e0e1-4a80-4788-88f5-b21d8aa0e470"
+      ]
+    },
+    {
+      "creditId": "357b1432-ade9-4fe2-89c8-8d12d2d1bec7",
+      "workId": "bf4487e9-a870-455c-83c4-efd14a52e9ba",
+      "title": "Me enamoro de ella",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/aic0ujnipw88b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/af0mzse4ip0ub"
+      ],
+      "recordingIds": [
+        "6a6a683e-22be-4cdc-9a4e-6180c7eb60da"
+      ]
+    },
+    {
+      "creditId": "11a081e3-ca47-4c6f-b619-dc70adb29aad",
+      "workId": "3cdb0747-0343-4587-854a-a6d23e24a3cb",
+      "title": "Medley de bachatas",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Medley must be documented by its component Works; package ownership cannot prove authorship",
+      "sourceUrls": [],
+      "recordingIds": [
+        "03710473-a5cb-4649-9c05-88820f2a8d0b"
+      ]
+    },
+    {
+      "creditId": "e82f7049-8872-457e-b657-17b1623b55f5",
+      "workId": "3cdb0747-0343-4587-854a-a6d23e24a3cb",
+      "title": "Medley de bachatas",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Medley must be documented by its component Works; package ownership cannot prove authorship",
+      "sourceUrls": [],
+      "recordingIds": [
+        "03710473-a5cb-4649-9c05-88820f2a8d0b"
+      ]
+    },
+    {
+      "creditId": "f1fbc288-b6f1-462f-8337-19d943e23543",
+      "workId": "382652de-018d-4082-9716-81e53bd3aedd",
+      "title": "Medley de bachatas: Estrellitas y duendes / Muchachita linda / La hormiguita / Bachata en Fukuoka / Que me des tu cariño / Mi bendición / Frío frío / Burbujas de amor",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Medley must be documented by its component Works; package ownership cannot prove authorship",
+      "sourceUrls": [],
+      "recordingIds": [
+        "880a62c0-4d93-4583-b6f4-2f6e44cb9a71"
+      ]
+    },
+    {
+      "creditId": "41b28fb2-d6df-4202-b4f0-7f6174f9aeb2",
+      "workId": "382652de-018d-4082-9716-81e53bd3aedd",
+      "title": "Medley de bachatas: Estrellitas y duendes / Muchachita linda / La hormiguita / Bachata en Fukuoka / Que me des tu cariño / Mi bendición / Frío frío / Burbujas de amor",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Medley must be documented by its component Works; package ownership cannot prove authorship",
+      "sourceUrls": [],
+      "recordingIds": [
+        "880a62c0-4d93-4583-b6f4-2f6e44cb9a71"
+      ]
+    },
+    {
+      "creditId": "9b97adaf-6d5c-47c1-b61a-b0004b5f3c22",
+      "workId": "5d257f0e-13a0-435d-808d-b1ac1866e880",
+      "title": "Merengue de armadura",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "ff8ec461-4b27-407c-9d1f-5ac049d2370d"
+      ]
+    },
+    {
+      "creditId": "8681d67c-1375-4e1e-9c94-5bb5e342ffb1",
+      "workId": "557245ef-849f-4245-900f-7b42bc494e8f",
+      "title": "Mi amor",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mi-amor-from-capitan-avispa-juan-luis-guerra-440-luis-fonsi-joy/szmjevn7c7ueb"
+      ],
+      "recordingIds": [
+        "14a703b5-01e8-4c25-9cc8-fc9b045b832f"
+      ]
+    },
+    {
+      "creditId": "6338c0ae-3525-424e-ae57-a85f76a31d13",
+      "workId": "557245ef-849f-4245-900f-7b42bc494e8f",
+      "title": "Mi amor",
+      "role": "lyricist",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mi-amor-from-capitan-avispa-juan-luis-guerra-440-luis-fonsi-joy/szmjevn7c7ueb"
+      ],
+      "recordingIds": [
+        "14a703b5-01e8-4c25-9cc8-fc9b045b832f"
+      ]
+    },
+    {
+      "creditId": "94d77dd6-e732-4b1f-99e0-450ac777fbf0",
+      "workId": "ab6e7e9c-8ad5-429c-85f7-63dce5e763f1",
+      "title": "Mi bendición",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "6ea97e60-edf5-4411-9e60-79a0f6654f1c",
+        "daf76c6f-8741-4054-92bc-05210555e9a0"
+      ]
+    },
+    {
+      "creditId": "ef2aa729-0a9c-4442-a79f-0834b4268923",
+      "workId": "ab6e7e9c-8ad5-429c-85f7-63dce5e763f1",
+      "title": "Mi bendición",
+      "role": "lyricist",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "6ea97e60-edf5-4411-9e60-79a0f6654f1c",
+        "daf76c6f-8741-4054-92bc-05210555e9a0"
+      ]
+    },
+    {
+      "creditId": "ebfb74a9-2b97-481c-be69-c5d2b5595385",
+      "workId": "3c085306-6ce9-4fae-a2c4-e257ef3e4732",
+      "title": "Mi guitarra",
+      "role": "composer",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/mi-guitarra-javier-limon-juan-luis-guerra-nella/g09ndtqtkppma"
+      ],
+      "recordingIds": [
+        "f0be495c-caee-4d11-8d48-00b9fafc9a91"
+      ]
+    },
+    {
+      "creditId": "17e0ee8a-2385-4d05-89dc-3b047915ca48",
+      "workId": "3c085306-6ce9-4fae-a2c4-e257ef3e4732",
+      "title": "Mi guitarra",
+      "role": "lyricist",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/mi-guitarra-javier-limon-juan-luis-guerra-nella/g09ndtqtkppma"
+      ],
+      "recordingIds": [
+        "f0be495c-caee-4d11-8d48-00b9fafc9a91"
+      ]
+    },
+    {
+      "creditId": "e3aa6f4b-f599-4327-a832-db929648dcb1",
+      "workId": "6e5986cd-ecfa-4e4f-a673-cd08874977e9",
+      "title": "Mi Jesús",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla"
+      ],
+      "recordingIds": [
+        "07caf341-6e5e-4aca-9438-7c48a30ec9e4"
+      ]
+    },
+    {
+      "creditId": "6fe13e30-6801-4817-82a9-a5fc320d1ada",
+      "workId": "a738e5c5-07a1-4575-a337-1233d7ce6614",
+      "title": "Mi PC",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja"
+      ],
+      "recordingIds": [
+        "ccb37842-091c-48e8-8c51-974db8f5befd"
+      ]
+    },
+    {
+      "creditId": "d5ce8aea-fbf2-4e05-acb4-a547b3282d98",
+      "workId": "12540639-3d96-4e82-91fa-e04792bc0dcf",
+      "title": "Naboria / Daca Mayanimacana",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/areito-juan-luis-guerra-440/i0unam58p2jma"
+      ],
+      "recordingIds": [
+        "11d403ab-018d-4107-9169-b0768d88e464"
+      ]
+    },
+    {
+      "creditId": "067617a4-0eb0-4ce4-90d8-c287a7a2e234",
+      "workId": "c0c09674-e752-4696-a8f7-cc76c1a25474",
+      "title": "Nada me separará",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla"
+      ],
+      "recordingIds": [
+        "596a9d07-9e19-42ab-8bf8-9442d16ee053"
+      ]
+    },
+    {
+      "creditId": "05f1e806-6e49-4c57-a187-d39e50b48a0a",
+      "workId": "3135d532-dc44-482e-a9de-490eae7c961a",
+      "title": "No aparecen",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "c5d47229-0c38-4b49-83d9-c409bf1618fb"
+      ]
+    },
+    {
+      "creditId": "dd26c48c-df53-49f5-bcf4-0b7590cfd5a7",
+      "workId": "3135d532-dc44-482e-a9de-490eae7c961a",
+      "title": "No aparecen",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/asondeguerra-juan-luis-guerra-440/5099909493056",
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "c5d47229-0c38-4b49-83d9-c409bf1618fb"
+      ]
+    },
+    {
+      "creditId": "cad43adb-3583-4855-94ae-d05eb28cb9a1",
+      "workId": "4439cea3-39c4-4a2a-8edb-94d3cf61b39b",
+      "title": "No me acostumbro",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb"
+      ],
+      "recordingIds": [
+        "1fdbe702-2444-422e-a3b7-483af87a2381"
+      ]
+    },
+    {
+      "creditId": "a14a19d0-1cf6-4ec6-99e4-b8dcbd379059",
+      "workId": "21dd50db-2701-41bc-a879-6755948d71bb",
+      "title": "No quiero lágrimas (Não tenho lágrimas)",
+      "role": "composer",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/nao-tenho-lagrimas-ivete-sangalo-juan-luis-guerra/5099952092251"
+      ],
+      "recordingIds": [
+        "faa73d54-9e27-48f6-af31-ca3e6a33d99a"
+      ]
+    },
+    {
+      "creditId": "b8dde045-2841-4455-9a8c-2dffc151d48b",
+      "workId": "21dd50db-2701-41bc-a879-6755948d71bb",
+      "title": "No quiero lágrimas (Não tenho lágrimas)",
+      "role": "lyricist",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/nao-tenho-lagrimas-ivete-sangalo-juan-luis-guerra/5099952092251"
+      ],
+      "recordingIds": [
+        "faa73d54-9e27-48f6-af31-ca3e6a33d99a"
+      ]
+    },
+    {
+      "creditId": "5dafbef9-b756-403b-a21c-5808e237e8a9",
+      "workId": "b32e73e7-1ff3-4226-9dae-e4c4e836ccaa",
+      "title": "Oficio de enamorado",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "3459c409-97ad-49e5-a97c-08df21969e71"
+      ]
+    },
+    {
+      "creditId": "5dcf0683-0a06-4757-b5b3-14e1f0486a3d",
+      "workId": "b32e73e7-1ff3-4226-9dae-e4c4e836ccaa",
+      "title": "Oficio de enamorado",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "3459c409-97ad-49e5-a97c-08df21969e71"
+      ]
+    },
+    {
+      "creditId": "0bfb3c12-d77c-4b8c-8b7a-7bdc34b8773f",
+      "workId": "c1851cb6-dbfe-4e3f-8796-8b5bbbe68210",
+      "title": "Oprobio",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Conflicting credits, cover, traditional material or adaptation requires original packaging/publisher evidence",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "1485865c-7020-468c-a457-b29ed8cd04de"
+      ]
+    },
+    {
+      "creditId": "27a8707a-47e0-4f86-9794-d13e96427cc7",
+      "workId": "c1851cb6-dbfe-4e3f-8796-8b5bbbe68210",
+      "title": "Oprobio",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Conflicting credits, cover, traditional material or adaptation requires original packaging/publisher evidence",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb"
+      ],
+      "recordingIds": [
+        "1485865c-7020-468c-a457-b29ed8cd04de"
+      ]
+    },
+    {
+      "creditId": "da70e716-f240-4e0b-9a42-58f87a81d0ab",
+      "workId": "4cffef6b-c7d0-49e1-a546-c77fcdd50774",
+      "title": "Oxalá que chova café",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/bonus-tracks-juan-luis-guerra-440/glztgoxoo13aa"
+      ],
+      "recordingIds": [
+        "33b9ab60-0a31-4c40-8989-e7334b0edf2d"
+      ]
+    },
+    {
+      "creditId": "cd34b671-ab95-40dc-b5b7-c2f5ec6a09fe",
+      "workId": "4cffef6b-c7d0-49e1-a546-c77fcdd50774",
+      "title": "Oxalá que chova café",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/bonus-tracks-juan-luis-guerra-440/glztgoxoo13aa"
+      ],
+      "recordingIds": [
+        "33b9ab60-0a31-4c40-8989-e7334b0edf2d"
+      ]
+    },
+    {
+      "creditId": "a9097970-d063-460c-bd7c-518a295f04ce",
+      "workId": "a2d27df4-18fd-4f1b-b841-9b097590e9bc",
+      "title": "Palomita blanca",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-2-juan-luis-guerra-440/elb9klfd5damb"
+      ],
+      "recordingIds": [
+        "fd8be647-bc76-495c-b4f4-5b6d2d608b31"
+      ]
+    },
+    {
+      "creditId": "bef71d2a-4ac2-4012-9ff3-dad504ff57fb",
+      "workId": "b4fd0581-c308-41e8-ac9f-28a68b8b890f",
+      "title": "Picadura y Ximena",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "361af0c6-6f0f-4933-8274-cfcbb7d3dd14"
+      ]
+    },
+    {
+      "creditId": "94722708-4852-4495-926a-8bca06cbc2f6",
+      "workId": "21d50159-02a5-41f9-8f78-8dd8c4ddebae",
+      "title": "Por eso ahora",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a"
+      ],
+      "recordingIds": [
+        "805979cc-2add-4919-8b64-1615b2328dbf"
+      ]
+    },
+    {
+      "creditId": "3511e9ac-f629-47b2-8dba-ad8b63b38c51",
+      "workId": "5fd0399a-f413-4e75-8135-5af8cce06ab1",
+      "title": "Puasón (bachata y orquesta)",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "da621131-7cb2-49c8-be4e-ad9b3997b5c0"
+      ]
+    },
+    {
+      "creditId": "e6a43b95-a35c-4f6d-a850-c9c040579b25",
+      "workId": "5fd0399a-f413-4e75-8135-5af8cce06ab1",
+      "title": "Puasón (bachata y orquesta)",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "da621131-7cb2-49c8-be4e-ad9b3997b5c0"
+      ]
+    },
+    {
+      "creditId": "ee5a8fd9-ba3e-4870-9a37-32bcf1a7cfed",
+      "workId": "e2177fa2-24aa-41af-93c1-72a3ac95b79b",
+      "title": "Puasón tropical chic",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "b7830cda-a032-4c2a-9fa9-01c27a19fe4c"
+      ]
+    },
+    {
+      "creditId": "0facd7e1-01d7-4192-8cd5-4b801acd0d99",
+      "workId": "014ce46d-229b-41e2-9a70-aceedd4e254e",
+      "title": "Punzón no, Puasón",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "cfa6e702-fbc6-4275-9403-5a5d005f6613"
+      ]
+    },
+    {
+      "creditId": "e04071b3-4c36-44f1-ad67-9b7a5d52bb93",
+      "workId": "0c073bb4-2054-4751-8c76-6b583593a6ab",
+      "title": "Qué bonita luna",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "96e1bc8e-9bce-4821-977b-2bc388465e21"
+      ]
+    },
+    {
+      "creditId": "cd3697ce-c756-45ea-9737-b07d22ec1450",
+      "workId": "0c073bb4-2054-4751-8c76-6b583593a6ab",
+      "title": "Qué bonita luna",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "96e1bc8e-9bce-4821-977b-2bc388465e21"
+      ]
+    },
+    {
+      "creditId": "26a596f1-06b0-4a1e-a3c3-44b2f46e1e8f",
+      "workId": "a7d46522-434f-4761-abe8-deb2e0bad054",
+      "title": "Quisiera",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja"
+      ],
+      "recordingIds": [
+        "e99f137a-344e-46f2-b0b8-24e56265611b"
+      ]
+    },
+    {
+      "creditId": "50c07cbc-4af9-4f42-8e00-be2d62b8ce3c",
+      "workId": "a7d46522-434f-4761-abe8-deb2e0bad054",
+      "title": "Quisiera",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "e99f137a-344e-46f2-b0b8-24e56265611b"
+      ]
+    },
+    {
+      "creditId": "bc7ba4f1-d052-4881-a3b9-cec266e9b4ac",
+      "workId": "2aed0a43-8cb1-44b3-8ecf-45b5e84e4bba",
+      "title": "Razones",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/ojala-que-llueva-cafe-juan-luis-guerra/bbm6pk6o65zrb",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-1-juan-luis-guerra-440/zf4sym3pyn9ic",
+        "https://www.qobuz.com/es-es/album/bonus-tracks-juan-luis-guerra-440/glztgoxoo13aa"
+      ],
+      "recordingIds": [
+        "5ef0bd32-1337-47f4-b1e6-2d2c5810e1a2"
+      ]
+    },
+    {
+      "creditId": "44366359-e6c4-4b7d-beee-e0d5d03f9c00",
+      "workId": "206ae73d-6ce2-4f57-b23e-e0c7099f3f7e",
+      "title": "Recoja la galleta",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "f81383fc-bd29-4754-b62d-df068160600a"
+      ]
+    },
+    {
+      "creditId": "9b905edf-9e82-4996-8fdc-223012a2afd2",
+      "workId": "4d78f96f-d289-403f-9aab-3c056be2d2b2",
+      "title": "Red Maluco",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "39b720f5-e4a6-45c7-b473-31d5508a5a42"
+      ]
+    },
+    {
+      "creditId": "bf0c376e-bb60-462f-ad20-047b4b171e8d",
+      "workId": "6d9c9568-e692-4248-9efa-65357d7b793d",
+      "title": "Reforéstame",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b"
+      ],
+      "recordingIds": [
+        "9f8d4411-8179-4c46-b174-cfb27ee90c4d"
+      ]
+    },
+    {
+      "creditId": "afde1421-7509-412d-adc1-1d9b2fee74d2",
+      "workId": "bd0be7f5-497f-4840-bb2c-02268bb7d075",
+      "title": "Reina mía",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/ojala-que-llueva-cafe-juan-luis-guerra/bbm6pk6o65zrb"
+      ],
+      "recordingIds": [
+        "a9cc928b-4d6c-47fd-9870-6ca12fc13388"
+      ]
+    },
+    {
+      "creditId": "0117a44e-f694-4ba8-8699-857fae2bd8a0",
+      "workId": "5efb4b1a-a782-4bdb-aad9-b11a268fddda",
+      "title": "Requiem sobre el Jaragua (Le dién dinamita)",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a"
+      ],
+      "recordingIds": [
+        "d9545d58-5dae-408a-b2e6-10320d810453"
+      ]
+    },
+    {
+      "creditId": "3a677736-fc65-4cb6-afbd-a268927c2f4e",
+      "workId": "5efb4b1a-a782-4bdb-aad9-b11a268fddda",
+      "title": "Requiem sobre el Jaragua (Le dién dinamita)",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "d9545d58-5dae-408a-b2e6-10320d810453"
+      ]
+    },
+    {
+      "creditId": "bd49fffb-5776-423e-96b4-2058c388ad9f",
+      "workId": "a75869a5-7074-4d19-b581-d719e0223088",
+      "title": "Rock-A-Fiesta",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb"
+      ],
+      "recordingIds": [
+        "5145515c-a6df-4b59-8be9-0677ced9eb1a"
+      ]
+    },
+    {
+      "creditId": "74191502-4e9f-48a1-bcd5-1e0dd9eb2e65",
+      "workId": "7ba89263-6719-4d8e-a37f-a73a9bfc5777",
+      "title": "Romance rosa",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/bonus-tracks-juan-luis-guerra-440/glztgoxoo13aa"
+      ],
+      "recordingIds": [
+        "f96218bb-e5c0-4384-9a9d-a948aaa3d6a1"
+      ]
+    },
+    {
+      "creditId": "489de274-a6d7-4487-a93b-e23ba023c365",
+      "workId": "7ba89263-6719-4d8e-a37f-a73a9bfc5777",
+      "title": "Romance rosa",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/bonus-tracks-juan-luis-guerra-440/glztgoxoo13aa"
+      ],
+      "recordingIds": [
+        "f96218bb-e5c0-4384-9a9d-a948aaa3d6a1"
+      ]
+    },
+    {
+      "creditId": "c4bde4e7-ad63-4314-8159-88796237380c",
+      "workId": "bd7f21fa-ef7b-409c-88a8-2d734d7e798d",
+      "title": "Rompiendo fuente",
+      "role": "composer",
+      "status": "verified",
+      "reason": "Explicit role independently supported by label track credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma"
+      ],
+      "recordingIds": [
+        "f540014a-db54-4903-a1c1-1bdce4576d80"
+      ]
+    },
+    {
+      "creditId": "cc13111c-f8c7-4f45-8279-28224744d509",
+      "workId": "bd7f21fa-ef7b-409c-88a8-2d734d7e798d",
+      "title": "Rompiendo fuente",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "f540014a-db54-4903-a1c1-1bdce4576d80"
+      ]
+    },
+    {
+      "creditId": "e8867d64-c50e-40fa-a1dc-1676de84e510",
+      "workId": "1272bb16-5a74-4d4b-80ec-500d276f67bc",
+      "title": "Rosalía",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/bachata-rosa-juan-luis-guerra-440/k5uga0tkwb16b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/aic0ujnipw88b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/af0mzse4ip0ub"
+      ],
+      "recordingIds": [
+        "901b6c33-fc14-4e6e-bcae-5cd831144d80",
+        "ee5f3e74-3f8a-462a-8018-c588066d0f33",
+        "93d477a6-f3b8-4da9-97ff-d89bd26fa518"
+      ]
+    },
+    {
+      "creditId": "052c686d-879d-48ae-ab81-5cd5f48a664f",
+      "workId": "da6975be-b0f6-4da1-ac19-ce7d28ba0eff",
+      "title": "Sambomba",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "db9bba7c-563f-406e-b045-d7beead1d600"
+      ]
+    },
+    {
+      "creditId": "d12eddb7-e747-4a95-b446-26c54e762c0c",
+      "workId": "da6975be-b0f6-4da1-ac19-ce7d28ba0eff",
+      "title": "Sambomba",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "db9bba7c-563f-406e-b045-d7beead1d600"
+      ]
+    },
+    {
+      "creditId": "b1a822ff-ab2d-45d5-aba6-03ee65b0dc01",
+      "workId": "1fabbe9b-838c-4020-a906-18638d73ba5f",
+      "title": "Santiago en coche",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a"
+      ],
+      "recordingIds": [
+        "9867f816-d969-4e66-b856-4be6bb26a0cf"
+      ]
+    },
+    {
+      "creditId": "b702f179-1d85-4874-a0aa-701b93f4a246",
+      "workId": "9affd596-c1a2-43be-9350-df21ace00727",
+      "title": "Sargento Picadura Main Theme",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "9c26549b-3c14-4555-a466-bb6d344c02dd"
+      ]
+    },
+    {
+      "creditId": "7d41687f-4616-4002-8a56-0e1804088a75",
+      "workId": "5d832cfa-fab4-412a-87a1-874cf0b88cb8",
+      "title": "Se te cayó el farolito",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "6bd0c86a-a6c6-49d6-add9-05a08bc2abe2"
+      ]
+    },
+    {
+      "creditId": "1017ff6d-3ae3-4a55-9e9e-e90cb9059891",
+      "workId": "3022c30a-f763-4e44-8292-69595f6ce7f9",
+      "title": "Señales de humo",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-2-juan-luis-guerra-440/elb9klfd5damb"
+      ],
+      "recordingIds": [
+        "0f600a5e-7ae9-4db9-a4b8-8f27aef8177d"
+      ]
+    },
+    {
+      "creditId": "7421ea18-aef7-4d25-abbc-cf94ecca2a4f",
+      "workId": "58fbe57f-98f6-4d24-9b50-7bc301543779",
+      "title": "Si saliera petróleo",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+        "https://www.qobuz.com/es-es/album/areito-juan-luis-guerra-440/i0unam58p2jma"
+      ],
+      "recordingIds": [
+        "0ce15771-fcc1-48dc-8bb0-712850b799b4"
+      ]
+    },
+    {
+      "creditId": "dfa05868-1fff-404b-bd0f-224cf7ca7bfa",
+      "workId": "40d40ac5-be1d-4c1d-ac0b-e12120e46b56",
+      "title": "Si tú te vas",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a"
+      ],
+      "recordingIds": [
+        "36b13fcd-36e5-4e3c-9567-e1d97911544b"
+      ]
+    },
+    {
+      "creditId": "5a7d97e2-c6fe-4bed-b18a-3c02e68dfff2",
+      "workId": "9e4040d3-0fc2-4eba-a01a-dc1a7b9a3f0d",
+      "title": "Sobremesa",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb"
+      ],
+      "recordingIds": [
+        "a22e8422-b546-420a-8265-2e09964856b6"
+      ]
+    },
+    {
+      "creditId": "35880690-9422-4dbe-9ba6-f3247df1d610",
+      "workId": "20f12bb2-159c-4dfe-8233-9251978d08f0",
+      "title": "Son al rey",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla",
+        "https://www.qobuz.com/es-es/album/asondeguerra-juan-luis-guerra-440/5099909493056",
+        "https://www.qobuz.com/se-en/album/asondeguerra-juan-luis-guerra-440/5099909493056"
+      ],
+      "recordingIds": [
+        "f421782b-93ea-4e82-93bf-a4b41457c86d"
+      ]
+    },
+    {
+      "creditId": "9060960d-1a39-4ce7-a9a0-172080f0a430",
+      "workId": "991aba57-0614-4325-9602-462b59589e76",
+      "title": "Soplando",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "b5587d61-4c58-488f-bb0c-92e5a340fec8"
+      ]
+    },
+    {
+      "creditId": "7c54e0e6-6989-45de-8cce-884eb4e0f6b6",
+      "workId": "991aba57-0614-4325-9602-462b59589e76",
+      "title": "Soplando",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Early album includes traditional material and adaptations; original role-specific packaging not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "b5587d61-4c58-488f-bb0c-92e5a340fec8"
+      ]
+    },
+    {
+      "creditId": "6f40d311-ec1e-461a-8082-400f57bea6a4",
+      "workId": "de9ddd12-4d37-4b7f-bb4d-486a74645921",
+      "title": "Te fallé papá",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "f3196351-b973-4da3-a18f-5cecb586fb98",
+        "25f459c2-5a7e-4d87-9c0f-50baa9344d0c"
+      ]
+    },
+    {
+      "creditId": "f7318296-9460-4c05-9ce3-d4fbd3f4a71c",
+      "workId": "cde1334b-62fb-4b65-83d7-95a90e3a5d89",
+      "title": "Te invito a un blues",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/radio-guira-juan-luis-guerra-440/jo8s79jycoqaa"
+      ],
+      "recordingIds": [
+        "b59f0933-a835-4ca2-941b-7279add80ad6"
+      ]
+    },
+    {
+      "creditId": "9a154839-8760-4b74-a6ff-aa89f25771f1",
+      "workId": "d863f207-31ca-425a-a312-b9e47e711c13",
+      "title": "Testimonio",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-2-juan-luis-guerra-440/elb9klfd5damb"
+      ],
+      "recordingIds": [
+        "df8d22ec-293b-4dc3-870d-d0ccea1aa06f"
+      ]
+    },
+    {
+      "creditId": "29ce3c8e-e960-4942-9888-983dfc2dc06b",
+      "workId": "10920630-bc17-45a4-8586-6aebc47bf85c",
+      "title": "Toma mi vida",
+      "role": "composer",
+      "status": "superseded",
+      "reason": "Ownership-generated role contradicted by explicit authorship credits",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/aqui-estoy-yo-milly-quezada/bacttzqq06b9b"
+      ],
+      "recordingIds": [
+        "f546ff9e-fcce-4aab-9ec3-567230981487"
+      ]
+    },
+    {
+      "creditId": "08c0b04c-cbf1-4080-8e94-09fcbda7e514",
+      "workId": "10920630-bc17-45a4-8586-6aebc47bf85c",
+      "title": "Toma mi vida",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Exact role/source or version bridge not established",
+      "sourceUrls": [],
+      "recordingIds": [
+        "f546ff9e-fcce-4aab-9ec3-567230981487"
+      ]
+    },
+    {
+      "creditId": "79a2946e-f1df-4bd5-83ac-1a85e5525c3f",
+      "workId": "d620a579-dfd4-448e-8e4e-50238a5b6a7c",
+      "title": "Tú",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mientras-mas-lo-piensotu-juan-luis-guerra-440/sk2vvvogej7fb",
+        "https://www.qobuz.com/es-es/album/bonus-tracks-juan-luis-guerra-440/glztgoxoo13aa"
+      ],
+      "recordingIds": [
+        "2a4f5b75-0eef-4418-b1f4-19998ad5719f",
+        "f0491fa4-53f5-4d5e-8cb9-9789a50c6e6f"
+      ]
+    },
+    {
+      "creditId": "02c91a64-6c95-4b63-961b-b11d2ac5e208",
+      "workId": "d1ebd872-2113-4aeb-87cb-ad30a92db3b3",
+      "title": "Vale la pena",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/ni-es-lo-mismo-ni-es-igual-juan-luis-guerra-440/k288wtop0g9rb"
+      ],
+      "recordingIds": [
+        "00a20213-4d35-4240-b06c-5a67c210389d",
+        "2219fdb5-f214-4c90-8b0c-c48bc60d3513",
+        "f178eaee-bb21-4f01-b527-4da27126bbbe"
+      ]
+    },
+    {
+      "creditId": "c599d04b-0d3f-4111-a58b-469f74d2184e",
+      "workId": "58022396-50b9-43db-a887-9d3b158d21c4",
+      "title": "Viene bajando",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/coleccion-cristiana-juan-luis-guerra-440/a05dnokyj3gla"
+      ],
+      "recordingIds": [
+        "6b78ba44-afc4-4098-b146-95a4fb6ba704"
+      ]
+    },
+    {
+      "creditId": "188e3ce0-f10c-40a3-bd5b-c4235f0de62c",
+      "workId": "15ff5285-440d-4d67-b2a7-4e6e55a49932",
+      "title": "Visa para un sueño",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/ojala-que-llueva-cafe-juan-luis-guerra/bbm6pk6o65zrb",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/aic0ujnipw88b",
+        "https://www.qobuz.com/es-es/album/grandes-exitos-juan-luis-guerra-440/af0mzse4ip0ub",
+        "https://www.qobuz.com/es-es/album/bonus-tracks-juan-luis-guerra-440/glztgoxoo13aa"
+      ],
+      "recordingIds": [
+        "8a0ed285-8b10-44b1-9a9c-e4b5e73b504f",
+        "a72f9729-df72-4cbd-ba1e-e2d98336580e",
+        "3c05de84-7138-4cc9-ae64-c5ca7eb63700",
+        "a68d97b9-df0a-4a3a-8453-a2d7b07a34d7"
+      ]
+    },
+    {
+      "creditId": "801576b0-7343-4f8a-8d92-f669c253b309",
+      "workId": "415550c5-38fb-4ecc-93a3-2afc0a4e1de7",
+      "title": "Viviré",
+      "role": "composer",
+      "status": "unverified",
+      "reason": "Conflicting credits, cover, traditional material or adaptation requires original packaging/publisher evidence",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja",
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-2-juan-luis-guerra-440/elb9klfd5damb"
+      ],
+      "recordingIds": [
+        "e0f73996-a0ef-4566-a34a-9d8e1ca4350f"
+      ]
+    },
+    {
+      "creditId": "28e54bc7-450f-472f-9c8c-32145b0fd387",
+      "workId": "415550c5-38fb-4ecc-93a3-2afc0a4e1de7",
+      "title": "Viviré",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Conflicting credits, cover, traditional material or adaptation requires original packaging/publisher evidence",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/au-en/album/fogarate-juan-luis-guerra-440/gx2j02k45r4xb",
+        "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja",
+        "https://www.qobuz.com/es-es/album/coleccion-romantica-vol-2-juan-luis-guerra-440/elb9klfd5damb"
+      ],
+      "recordingIds": [
+        "e0f73996-a0ef-4566-a34a-9d8e1ca4350f"
+      ]
+    },
+    {
+      "creditId": "1aedb2c6-fc3f-40e4-a15a-b196d621f8b7",
+      "workId": "3ad6c0ee-4838-44b0-b514-1288bcfdf351",
+      "title": "Vuelo sobre Avispatrópolis",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "4b3ba861-01e7-459b-8024-d477c7a0ae29"
+      ]
+    },
+    {
+      "creditId": "22281434-45ee-4d61-b7f0-356aa6616748",
+      "workId": "86930099-6355-403c-8c99-91d05d3572a7",
+      "title": "Yo sé dónde está la trompeta",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b"
+      ],
+      "recordingIds": [
+        "56ae482b-9bf8-473d-960a-9bcef6868e8a"
+      ]
+    },
+    {
+      "creditId": "4154b9f1-d048-4914-9287-c7b8d3b7e888",
+      "workId": "29e31b2a-efe8-46a9-8f9f-91aad7d81696",
+      "title": "Yo vivo enamorao",
+      "role": "lyricist",
+      "status": "unverified",
+      "reason": "Available composition credits do not explicitly establish this lyricist role",
+      "sourceUrls": [
+        "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a"
+      ],
+      "recordingIds": [
+        "9fb197bd-5d96-408f-a978-86e6fabc3f7b"
+      ]
+    }
+  ]
+}

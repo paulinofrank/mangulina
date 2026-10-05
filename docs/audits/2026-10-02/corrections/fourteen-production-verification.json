@@ -1,0 +1,126 @@
+{
+  "verifiedAt": "2026-10-03T14:41:49.473Z",
+  "checks": {
+    "GuarionexSavedAsDraft": true,
+    "IndhiraSavedAsDisambiguatedDraft": true,
+    "IndhiraLiteralCreditStored": true,
+    "GuarionexCreditStored": true,
+    "GuarionexCreditEvidence": true,
+    "SandyProyectoUnoPublic": true,
+    "CacheRefreshed": true,
+    "TenNewPagesAndTenRetiredUrls": true
+  },
+  "refresh": {
+    "ok": true,
+    "revalidated": {
+      "artists": 5,
+      "songs": 3,
+      "releases": 3,
+      "allArtists": false
+    }
+  },
+  "pages": [
+    {
+      "recordingId": "02990a6a-ccdd-4d43-be40-73610630bb15",
+      "url": "https://www.mangulina.do/es/songs/sin-ti-no-hay-nada-alex-bueno",
+      "status": 200,
+      "heading": "Sin ti no hay nadapor Alex Bueno",
+      "title": "Sin ti no hay nada - Información de la canción",
+      "oldStatus": 404,
+      "oldFinalUrl": "https://www.mangulina.do/es/songs/sin-ti-no-hay-nada-sergio-vargas",
+      "valid": true
+    },
+    {
+      "recordingId": "13dd8d0c-1239-4876-84f8-02751fd6ecff",
+      "url": "https://www.mangulina.do/es/songs/el-amor-acaba-alex-bueno",
+      "status": 200,
+      "heading": "El amor acabapor Alex Bueno",
+      "title": "El amor acaba - Información de la canción",
+      "oldStatus": 404,
+      "oldFinalUrl": "https://www.mangulina.do/es/songs/el-amor-acaba-sergio-vargas",
+      "valid": true
+    },
+    {
+      "recordingId": "15e06d83-81fa-4009-9476-370b17a40e89",
+      "url": "https://www.mangulina.do/es/songs/el-amor-acaba-alex-bueno-2",
+      "status": 200,
+      "heading": "El amor acabapor Alex Bueno",
+      "title": "El amor acaba - Información de la canción",
+      "oldStatus": 404,
+      "oldFinalUrl": "https://www.mangulina.do/es/songs/el-amor-acaba-sergio-vargas-2",
+      "valid": true
+    },
+    {
+      "recordingId": "2b3f3d75-fa9b-4036-88ef-032700348d13",
+      "url": "https://www.mangulina.do/es/songs/quiero-perderme-contigo-alex-bueno-2",
+      "status": 200,
+      "heading": "Quiero perderme contigopor Alex Bueno",
+      "title": "Quiero perderme contigo - Información de la canción",
+      "oldStatus": 404,
+      "oldFinalUrl": "https://www.mangulina.do/es/songs/quiero-perderme-contigo-sergio-vargas",
+      "valid": true
+    },
+    {
+      "recordingId": "3d1c54e7-b045-4105-9342-8748938200ca",
+      "url": "https://www.mangulina.do/es/songs/en-bandolera-alex-bueno-5",
+      "status": 200,
+      "heading": "En bandolerapor Alex Bueno",
+      "title": "En bandolera - Información de la canción",
+      "oldStatus": 404,
+      "oldFinalUrl": "https://www.mangulina.do/es/songs/en-bandolera-sergio-vargas",
+      "valid": true
+    },
+    {
+      "recordingId": "6b8dad81-685c-4854-b87c-9fa9d35a0218",
+      "url": "https://www.mangulina.do/es/songs/quiero-perderme-contigo-alex-bueno-3",
+      "status": 200,
+      "heading": "Quiero perderme contigopor Alex Bueno",
+      "title": "Quiero perderme contigo - Información de la canción",
+      "oldStatus": 404,
+      "oldFinalUrl": "https://www.mangulina.do/es/songs/quiero-perderme-contigo-sergio-vargas-2",
+      "valid": true
+    },
+    {
+      "recordingId": "a27f06da-67fe-41be-856c-989339795600",
+      "url": "https://www.mangulina.do/es/songs/voy-a-llenarte-toda-alex-bueno",
+      "status": 200,
+      "heading": "Voy a llenarte todapor Alex Bueno",
+      "title": "Voy a llenarte toda - Información de la canción",
+      "oldStatus": 404,
+      "oldFinalUrl": "https://www.mangulina.do/es/songs/voy-a-llenarte-toda-sergio-vargas",
+      "valid": true
+    },
+    {
+      "recordingId": "bc141597-7e01-4ae2-86fc-ec78a31b00af",
+      "url": "https://www.mangulina.do/es/songs/pero-lo-dudo-alex-bueno-2",
+      "status": 200,
+      "heading": "Pero lo dudopor Alex Bueno",
+      "title": "Pero lo dudo - Información de la canción",
+      "oldStatus": 404,
+      "oldFinalUrl": "https://www.mangulina.do/es/songs/pero-lo-dudo-sergio-vargas",
+      "valid": true
+    },
+    {
+      "recordingId": "e63a471f-1cc4-4b07-beff-219c8b3b19d2",
+      "url": "https://www.mangulina.do/es/songs/si-ti-no-soy-nada-alex-bueno",
+      "status": 200,
+      "heading": "Si ti no soy nadapor Alex Bueno",
+      "title": "Si ti no soy nada - Información de la canción",
+      "oldStatus": 404,
+      "oldFinalUrl": "https://www.mangulina.do/es/songs/si-ti-no-soy-nada-sergio-vargas",
+      "valid": true
+    },
+    {
+      "recordingId": "f2025707-c4c0-4b75-9411-f2684011cce8",
+      "url": "https://www.mangulina.do/es/songs/quiero-llenarte-toda-alex-bueno-2",
+      "status": 200,
+      "heading": "Quiero llenarte todapor Alex Bueno",
+      "title": "Quiero llenarte toda - Información de la canción",
+      "oldStatus": 404,
+      "oldFinalUrl": "https://www.mangulina.do/es/songs/quiero-llenarte-toda-sergio-vargas",
+      "valid": true
+    }
+  ],
+  "deploymentId": "dpl_DfTCvoog94QYYmDNzpP5kB4Bz21W",
+  "browserVerifiedSpanish404Search": true
+}

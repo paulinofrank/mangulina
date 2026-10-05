@@ -1,0 +1,191 @@
+[
+  {
+    "package": "fiesta-latina",
+    "url": "http://coverartarchive.org/release/a4f66633-e31d-4269-a9bc-c48b2d07143b/37061999424.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/a4f66633-e31d-4269-a9bc-c48b2d07143b",
+    "file": "docs/audits/2026-10-02/corrections/fiesta-latina-1.jpg",
+    "types": [
+      "Back",
+      "Spine"
+    ],
+    "retrievedAt": "2026-10-02T23:42:31.321Z",
+    "sha256": "6e3b92c5720a0c654f10766ee38de3afd80f6b4a4945e3f902dfc0210d8d1712"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898645220.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-1.jpg",
+    "types": [
+      "Booklet"
+    ],
+    "retrievedAt": "2026-10-02T23:42:34.824Z",
+    "sha256": "f9024efdd08f4c0f9aeac31edddeb63bad6f5e28c00e9a6a6640a4c3a38673c9"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898646524.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-2.jpg",
+    "types": [
+      "Booklet"
+    ],
+    "retrievedAt": "2026-10-02T23:42:36.735Z",
+    "sha256": "3243feed29b11b985f68475d956f5d59e69c6f4986a565c900a8166333e7dc56"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898648846.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-3.jpg",
+    "types": [
+      "Booklet"
+    ],
+    "retrievedAt": "2026-10-02T23:42:38.846Z",
+    "sha256": "3e53436fc5222c76526b8d9cc0b5a851e78c879c1eb07a799452535c73d4ed50"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898651412.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-4.jpg",
+    "types": [
+      "Booklet"
+    ],
+    "retrievedAt": "2026-10-02T23:42:41.985Z",
+    "sha256": "b384babc43cb84798166f9d2804807d22785bc15b1097a630e712ca48d25cb31"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898653843.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-5.jpg",
+    "types": [
+      "Booklet"
+    ],
+    "retrievedAt": "2026-10-02T23:42:44.726Z",
+    "sha256": "701af6e82ffed3727d73af2fbeddb6efd5604aac455481c637c5dfa6842cb1a7"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898656367.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-6.jpg",
+    "types": [
+      "Booklet"
+    ],
+    "retrievedAt": "2026-10-02T23:42:47.829Z",
+    "sha256": "0ed1bfa75338945abce5d8a3f63c695af5a4b27326694764b78ee20c113990ec"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898657869.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-7.jpg",
+    "types": [
+      "Booklet"
+    ],
+    "retrievedAt": "2026-10-02T23:42:53.268Z",
+    "sha256": "4f5a9f80aa3df1a9fcfe57d991f694cf63cba78a4bb478a66fb7c4abe318c08d"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898659617.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-8.jpg",
+    "types": [
+      "Booklet"
+    ],
+    "retrievedAt": "2026-10-02T23:42:56.564Z",
+    "sha256": "89460be647dfacb1cbfd475ad024f5f02d0cbf848fb65b9f0402eb9dd8cddc92"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898660723.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-9.jpg",
+    "types": [
+      "Booklet"
+    ],
+    "retrievedAt": "2026-10-02T23:42:59.802Z",
+    "sha256": "195d7786cea58a90765c2152eba0134fea39513a4e8b2a6c22b2f8b008bf48f4"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898661815.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-10.jpg",
+    "types": [
+      "Booklet"
+    ],
+    "retrievedAt": "2026-10-02T23:43:02.806Z",
+    "sha256": "f9586a6f0287d6a0dee5c247db9243a4a7ae0b88479394735e826888816bece6"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898663029.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-11.jpg",
+    "types": [
+      "Medium"
+    ],
+    "retrievedAt": "2026-10-02T23:43:04.269Z",
+    "sha256": "747db19ad415bd45f2535eaf8a21838147c9e77e4e28b254bd59c3f193d72775"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898663543.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-12.jpg",
+    "types": [
+      "Matrix/Runout"
+    ],
+    "retrievedAt": "2026-10-02T23:43:05.735Z",
+    "sha256": "806f6997324c881ebe986bb8effe07ac17534fb4fb74764a202dc235ce2df058"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898663912.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-13.jpg",
+    "types": [
+      "Tray"
+    ],
+    "retrievedAt": "2026-10-02T23:43:09.022Z",
+    "sha256": "d6d3325358de8887bcae5c7c7cc355ed5b830b2410001ab58078970cff9bf130"
+  },
+  {
+    "package": "hasta-el-fin",
+    "url": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51/38898664761.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/670e06e5-9531-4f16-8b03-a1bc4229fa51",
+    "file": "docs/audits/2026-10-02/corrections/hasta-el-fin-14.jpg",
+    "types": [
+      "Back",
+      "Spine"
+    ],
+    "retrievedAt": "2026-10-02T23:43:11.549Z",
+    "sha256": "0977873209a07f06adffccf6bc3e08e00f3c3015f6b8e0abb9eb81d38fb2d909"
+  },
+  {
+    "package": "fogarate",
+    "url": "https://coverartarchive.org/release/ccde26e9-37c2-49d2-b033-241ef65aaf92/17590825515.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/ccde26e9-37c2-49d2-b033-241ef65aaf92",
+    "file": "docs/audits/2026-10-02/corrections/fogarate-1.jpg",
+    "types": [
+      "Back"
+    ],
+    "retrievedAt": "2026-10-02T23:59:04.432Z",
+    "sha256": "8f4312a4c7951aa8459586487353998e4ee4ec65631d91ce50b78c969ef1c9fd"
+  },
+  {
+    "package": "areito",
+    "url": "https://coverartarchive.org/release/6fcc2841-fc98-4c7d-a285-23cd8429bd18/30197217509.jpg",
+    "archiveUrl": "https://coverartarchive.org/release/6fcc2841-fc98-4c7d-a285-23cd8429bd18",
+    "file": "docs/audits/2026-10-02/corrections/areito-1.jpg",
+    "types": [
+      "Back"
+    ],
+    "retrievedAt": "2026-10-02T23:59:07.048Z",
+    "sha256": "d1a77b37d9aeacc47195621b21a3438939a7b14eb1e39213d8256df6c6128238"
+  }
+]

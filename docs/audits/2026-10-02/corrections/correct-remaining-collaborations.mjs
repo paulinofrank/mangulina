@@ -1,0 +1,34 @@
+import 'dotenv/config';
+import pg from 'pg';
+import {readFile,writeFile} from 'node:fs/promises';
+const root='docs/audits/2026-10-02/corrections/',plan=JSON.parse(await readFile(root+'remaining-collaboration-plan.json','utf8'));
+const batch='discography-audit-2026-10-02-remaining-collaborations',apply=process.argv.includes('--apply');
+const db=new pg.Client({connectionString:process.env.DATABASE_URL,connectionTimeoutMillis:15000});
+const receipt={batch,mode:apply?'apply':'rollback-rehearsal',recordings:[],credits:[],releases:[],sources:[],decisions:[]};
+try{
+ await db.connect();await db.query('BEGIN');await db.query("SET LOCAL lock_timeout='5s'");await db.query('SELECT pg_advisory_xact_lock(hashtextextended($1,0))',[batch]);
+ if((await db.query("SELECT id FROM editorial_decisions WHERE metadata->>'batch'=$1 LIMIT 1",[batch])).rowCount)throw Error('Already applied');
+ const sources=new Map();for(const s of plan.sources){const row=(await db.query(`INSERT INTO editorial_sources(source_type,title,organization,url,archive_reference,visibility,metadata) VALUES($1,$2,$3,$4,$5,'public',$6) RETURNING *`,[s.type,s.title,s.organization,s.url,s.archiveUrl??null,JSON.stringify({batch,sha256:s.sha256,retrievedAt:s.retrievedAt})])).rows[0];sources.set(s.key,row.id);receipt.sources.push(row);}
+ const roles=new Map((await db.query("SELECT id,code FROM credit_roles WHERE code IN ('lead_performer','featured_performer','performer','vocalist')")).rows.map(r=>[r.code,r.id]));
+ const ext=new Map((await db.query("SELECT id,preferred_name FROM external_contributors WHERE preferred_name IN ('Rubén Blades','Draco Rosa')")).rows.map(r=>[r.preferred_name,r.id]));
+ async function evidence(table,column,id,value,c){const assertion=(await db.query(`INSERT INTO editorial_assertions(assertion_type,predicate,asserted_value,verification_status,canonical_status,metadata) VALUES($1,$2,$3,'verified','accepted',$4) RETURNING id`,[column,column+'.attribution',JSON.stringify(value),JSON.stringify({batch})])).rows[0].id;await db.query(`INSERT INTO ${table}(assertion_id,${column}) VALUES($1,$2)`,[assertion,id]);await db.query(`INSERT INTO editorial_assertion_evidence(assertion_id,source_id,relationship,locator) VALUES($1,$2,'supports',$3)`,[assertion,sources.get(c.source),'Printed / label track '+c.position]);return assertion;}
+ async function decision(before,after,reason,assertions=[]){const row=(await db.query(`INSERT INTO editorial_decisions(decision_type,status,reason,previous_canonical_state,resulting_canonical_state,metadata,decided_at) VALUES('correct_catalog_attribution','executed',$1,$2,$3,$4,now()) RETURNING *`,[reason,JSON.stringify(before),JSON.stringify(after),JSON.stringify({batch})])).rows[0];receipt.decisions.push(row);for(const id of assertions)await db.query("INSERT INTO editorial_decision_assertions VALUES($1,$2,'accepted')",[row.id,id]);}
+ for(const c of plan.recordings){
+  const before=(await db.query('SELECT * FROM recordings WHERE id=$1 FOR UPDATE',[c.recordingId])).rows[0];if(before.artist_id!==c.expectedArtistId||before.title!==c.expectedTitle)throw Error('Changed since audit '+c.recordingId);
+  const assertions=[],credits=[],trackChanges=[];let after=before;
+  if(c.artistId||c.title){after=(await db.query(`UPDATE recordings SET artist_id=$2,title=$3,metadata=coalesce(metadata,'{}'::jsonb)||$4::jsonb WHERE id=$1 RETURNING *`,[before.id,c.artistId??before.artist_id,c.title??before.title,JSON.stringify({attribution_correction:{batch,sourceUrl:plan.sources.find(s=>s.key===c.source).url,trackPosition:c.position}})])).rows[0];receipt.recordings.push({before,after});assertions.push(await evidence('editorial_assertion_recordings','recording_id',after.id,{recording_id:after.id,artist_id:after.artist_id,title:after.title},c));}
+  if(c.title){for(const t of(await db.query('SELECT * FROM tracks WHERE recording_id=$1 FOR UPDATE',[before.id])).rows){if(t.title_override===before.title){const next=(await db.query('UPDATE tracks SET title_override=$2 WHERE id=$1 RETURNING *',[t.id,c.title])).rows[0];trackChanges.push({before:t,after:next});}}}
+  for(const x of c.credits){const externalId=x.externalName?ext.get(x.externalName):null;if(x.externalName&&!externalId)throw Error('Missing external identity');if(!roles.has(x.role))throw Error('Missing role');
+   if((await db.query('SELECT id FROM recording_credits WHERE recording_id=$1 AND artist_id IS NOT DISTINCT FROM $2::uuid AND external_contributor_id IS NOT DISTINCT FROM $3::uuid AND role=$4',[before.id,x.artistId??null,externalId,x.role])).rowCount)throw Error('Credit already present');
+   const credit=(await db.query(`INSERT INTO recording_credits(recording_id,artist_id,external_contributor_id,role,role_id,credited_as,metadata) VALUES($1,$2,$3,$4,$5,$6,$7) RETURNING *`,[before.id,x.artistId??null,externalId,x.role,roles.get(x.role),x.name,JSON.stringify({batch,sourceUrl:plan.sources.find(s=>s.key===c.source).url,trackPosition:c.position})])).rows[0];credits.push(credit);receipt.credits.push(credit);assertions.push(await evidence('editorial_assertion_recording_credits','recording_credit_id',credit.id,credit,c));
+  }
+  await decision({recording:before},{recording:after,credits,trackChanges},'Restore the exact original package / label performer and title credits; retain valid principal band attribution',assertions);
+ }
+ for(const c of plan.releaseCredits){if((await db.query('SELECT id FROM release_artists WHERE release_id=$1 AND artist_id=$2',[c.releaseId,c.artistId])).rowCount)throw Error('Shared release credit already exists');const r=(await db.query("INSERT INTO release_artists(release_id,artist_id,role,credited_as) VALUES($1,$2,'primary',$3) RETURNING *",[c.releaseId,c.artistId,c.name])).rows[0];receipt.releases.push(r);await decision({}, {release_artist:r,source_id:sources.get(c.source)},'Both artists are explicitly credited on the original shared compilation');}
+ await db.query('SET CONSTRAINTS ALL IMMEDIATE');
+ const actual=(await db.query('SELECT id,artist_id,title FROM recordings WHERE id=ANY($1::uuid[])',[plan.recordings.map(c=>c.recordingId)])).rows;
+ if(actual.some(r=>{const c=plan.recordings.find(c=>c.recordingId===r.id);return r.artist_id!==(c.artistId??c.expectedArtistId)||r.title!==(c.title??c.expectedTitle)}))throw Error('Readback mismatch');
+ receipt.verifiedAt=new Date().toISOString();await writeFile(root+(apply?'remaining-collaboration-receipt.json':'remaining-collaboration-rehearsal.json'),JSON.stringify(receipt,null,2));await db.query(apply?'COMMIT':'ROLLBACK');console.log(JSON.stringify({mode:receipt.mode,changedRecordings:receipt.recordings.length,credits:receipt.credits.length,releaseCredits:receipt.releases.length}));
+}catch(e){await db.query('ROLLBACK').catch(()=>{});console.error(e.code??'',e.message);process.exitCode=1;}finally{await db.end();}
+
+

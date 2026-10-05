@@ -1,0 +1,828 @@
+[
+  {
+    "id": "9b116b0a-143a-4860-b019-88939c9461d3",
+    "title": "Blanca mujer (En Vivo - Encuentro)",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Robi Draco Rosa"
+    ],
+    "mbid": "6e2b82f8-a3ad-47e2-9135-104341cf7cb4",
+    "sourceUrl": "https://musicbrainz.org/recording/6e2b82f8-a3ad-47e2-9135-104341cf7cb4",
+    "public": true,
+    "reasons": [
+      "stored performer credit repeats disputed owner"
+    ],
+    "creditIds": [
+      "e3b5d36e-43ea-43e0-b78b-c9d0667c31bf"
+    ],
+    "releaseAppearances": [
+      {
+        "id": "9377dfe3-7011-47d7-964d-98b628918559",
+        "title": "Encuentro",
+        "type": "live",
+        "artist": "Juan Luis Guerra"
+      }
+    ],
+    "classification": "editorial review candidate; source conflict is proven, historical attribution requires edition-specific verification",
+    "work": {
+      "id": "c0e22b99-bd46-4b5d-8b49-2c60362d555c",
+      "preferred_title": "Blanca mujer",
+      "slug": "blanca-mujer",
+      "language": "spa",
+      "composition_year": 2002,
+      "publication_year": 2002,
+      "status": "published",
+      "editorial_notes": null,
+      "metadata": {},
+      "created_at": "2026-09-18T03:41:09.399Z",
+      "updated_at": "2026-09-18T03:41:09.399Z"
+    },
+    "workCredits": [
+      {
+        "id": "24967ae7-2ced-4d69-9a8c-bb50b69c4746",
+        "work_id": "c0e22b99-bd46-4b5d-8b49-2c60362d555c",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      },
+      {
+        "id": "ad90d285-1458-4aca-95a7-9476af763c2f",
+        "work_id": "c0e22b99-bd46-4b5d-8b49-2c60362d555c",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      }
+    ]
+  },
+  {
+    "id": "931ea843-1166-488c-bb25-8b69f3b9fff3",
+    "title": "Vagabundo (En Vivo - Encuentro)",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Robi Draco Rosa"
+    ],
+    "mbid": "bea29306-0fcc-4b3c-a1f3-65ff3d7d9a82",
+    "sourceUrl": "https://musicbrainz.org/recording/bea29306-0fcc-4b3c-a1f3-65ff3d7d9a82",
+    "public": true,
+    "reasons": [
+      "stored performer credit repeats disputed owner"
+    ],
+    "creditIds": [
+      "0d7292b9-44f0-442b-87de-bd3b1ad978fc"
+    ],
+    "releaseAppearances": [
+      {
+        "id": "9377dfe3-7011-47d7-964d-98b628918559",
+        "title": "Encuentro",
+        "type": "live",
+        "artist": "Juan Luis Guerra"
+      }
+    ],
+    "classification": "editorial review candidate; source conflict is proven, historical attribution requires edition-specific verification",
+    "work": {
+      "id": "dad825f6-1eb8-4398-9ad4-16eb6a9167b3",
+      "preferred_title": "Vagabundo",
+      "slug": "vagabundo",
+      "language": "spa",
+      "composition_year": 2002,
+      "publication_year": 2002,
+      "status": "published",
+      "editorial_notes": null,
+      "metadata": {},
+      "created_at": "2026-09-18T03:41:09.399Z",
+      "updated_at": "2026-09-18T03:41:09.399Z"
+    },
+    "workCredits": [
+      {
+        "id": "52d16be8-4253-4cec-9df9-b644c53c4cc8",
+        "work_id": "dad825f6-1eb8-4398-9ad4-16eb6a9167b3",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      },
+      {
+        "id": "3acd26f0-97e6-4117-b8d8-b51c0b5c0f24",
+        "work_id": "dad825f6-1eb8-4398-9ad4-16eb6a9167b3",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      }
+    ]
+  },
+  {
+    "id": "ca8186e5-afee-4509-a84e-9bdb250c9a2b",
+    "title": "Patria (En Vivo - Encuentro)",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Rubén Blades",
+      "Robi Dräco Rosa"
+    ],
+    "mbid": "4d0f4e37-0424-4bc2-912c-c43a8b1a7f49",
+    "sourceUrl": "https://musicbrainz.org/recording/4d0f4e37-0424-4bc2-912c-c43a8b1a7f49",
+    "public": true,
+    "reasons": [
+      "stored performer credit repeats disputed owner"
+    ],
+    "creditIds": [
+      "a3c783f7-35c0-45f5-9dad-033c33529959"
+    ],
+    "releaseAppearances": [
+      {
+        "id": "9377dfe3-7011-47d7-964d-98b628918559",
+        "title": "Encuentro",
+        "type": "live",
+        "artist": "Juan Luis Guerra"
+      }
+    ],
+    "classification": "editorial review candidate; source conflict is proven, historical attribution requires edition-specific verification",
+    "work": {
+      "id": "c65efbe8-4b1e-4061-b2ea-0073f3925409",
+      "preferred_title": "Patria",
+      "slug": "patria",
+      "language": "spa",
+      "composition_year": 2002,
+      "publication_year": 2002,
+      "status": "published",
+      "editorial_notes": null,
+      "metadata": {},
+      "created_at": "2026-09-18T03:41:09.399Z",
+      "updated_at": "2026-09-18T03:41:09.399Z"
+    },
+    "workCredits": [
+      {
+        "id": "1ebe14f8-c371-4714-af08-720fca18a2c5",
+        "work_id": "c65efbe8-4b1e-4061-b2ea-0073f3925409",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      },
+      {
+        "id": "686e742d-76d7-4837-851c-ac81f55ae7ec",
+        "work_id": "c65efbe8-4b1e-4061-b2ea-0073f3925409",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      }
+    ]
+  },
+  {
+    "id": "9388a785-45e4-4807-969a-ec438f59f139",
+    "title": "Penélope (En Vivo - Encuentro)",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Robi Draco Rosa"
+    ],
+    "mbid": "2befac92-95ea-4889-a0c4-bc8c36b1296d",
+    "sourceUrl": "https://musicbrainz.org/recording/2befac92-95ea-4889-a0c4-bc8c36b1296d",
+    "public": true,
+    "reasons": [
+      "stored performer credit repeats disputed owner"
+    ],
+    "creditIds": [
+      "bf9a53d1-6552-4c9b-a3dc-0e6d4017c657"
+    ],
+    "releaseAppearances": [
+      {
+        "id": "9377dfe3-7011-47d7-964d-98b628918559",
+        "title": "Encuentro",
+        "type": "live",
+        "artist": "Juan Luis Guerra"
+      }
+    ],
+    "classification": "editorial review candidate; source conflict is proven, historical attribution requires edition-specific verification",
+    "work": {
+      "id": "b3f3f102-b2c0-4814-ba56-a105b9b75673",
+      "preferred_title": "Penélope",
+      "slug": "penelope",
+      "language": "spa",
+      "composition_year": 2002,
+      "publication_year": 2002,
+      "status": "published",
+      "editorial_notes": null,
+      "metadata": {},
+      "created_at": "2026-09-18T03:41:09.399Z",
+      "updated_at": "2026-09-18T03:41:09.399Z"
+    },
+    "workCredits": [
+      {
+        "id": "2d667c70-15a9-4f05-9fc4-9e1111fc0b3a",
+        "work_id": "b3f3f102-b2c0-4814-ba56-a105b9b75673",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      },
+      {
+        "id": "ed580cf6-6dce-4ef3-95b4-fc804fd2f701",
+        "work_id": "b3f3f102-b2c0-4814-ba56-a105b9b75673",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      }
+    ]
+  },
+  {
+    "id": "9c3c3e4c-72e5-4fa7-8f36-4bfa9bdef8a5",
+    "title": "Mamá (En Vivo - Encuentro)",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Robi Draco Rosa"
+    ],
+    "mbid": "805433a3-c55e-4c82-8838-e80dbd9d7c21",
+    "sourceUrl": "https://musicbrainz.org/recording/805433a3-c55e-4c82-8838-e80dbd9d7c21",
+    "public": true,
+    "reasons": [
+      "stored performer credit repeats disputed owner"
+    ],
+    "creditIds": [
+      "ccaa17f6-eb58-48ac-be86-f7087cd6d49a"
+    ],
+    "releaseAppearances": [
+      {
+        "id": "9377dfe3-7011-47d7-964d-98b628918559",
+        "title": "Encuentro",
+        "type": "live",
+        "artist": "Juan Luis Guerra"
+      }
+    ],
+    "classification": "editorial review candidate; source conflict is proven, historical attribution requires edition-specific verification",
+    "work": {
+      "id": "64107b7a-8ff9-43db-b55b-4ecddc5cb4f3",
+      "preferred_title": "Mamá",
+      "slug": "mama",
+      "language": "spa",
+      "composition_year": 2002,
+      "publication_year": 2002,
+      "status": "published",
+      "editorial_notes": null,
+      "metadata": {},
+      "created_at": "2026-09-18T03:41:09.399Z",
+      "updated_at": "2026-09-18T03:41:09.399Z"
+    },
+    "workCredits": [
+      {
+        "id": "b1ad5b27-a119-42dc-9658-87de4e21eeb3",
+        "work_id": "64107b7a-8ff9-43db-b55b-4ecddc5cb4f3",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      },
+      {
+        "id": "f981737a-d370-4569-9dca-becd9dbf9da9",
+        "work_id": "64107b7a-8ff9-43db-b55b-4ecddc5cb4f3",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      }
+    ]
+  },
+  {
+    "id": "a8a63ad8-9bcf-4a93-bd51-2bc07d881ad8",
+    "title": "El nacimiento de Ramiro (En Vivo - Encuentro)",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Rubén Blades"
+    ],
+    "mbid": "8c645f09-3d88-4642-8cdc-8fd5e3b406d0",
+    "sourceUrl": "https://musicbrainz.org/recording/8c645f09-3d88-4642-8cdc-8fd5e3b406d0",
+    "public": true,
+    "reasons": [
+      "stored performer credit repeats disputed owner"
+    ],
+    "creditIds": [
+      "13dd7003-f8b1-48f1-8d6c-b3872c94a2fd"
+    ],
+    "releaseAppearances": [
+      {
+        "id": "9377dfe3-7011-47d7-964d-98b628918559",
+        "title": "Encuentro",
+        "type": "live",
+        "artist": "Juan Luis Guerra"
+      }
+    ],
+    "classification": "editorial review candidate; source conflict is proven, historical attribution requires edition-specific verification",
+    "work": {
+      "id": "83db2dec-3045-4564-abfd-586ed6688d21",
+      "preferred_title": "El nacimiento de Ramiro",
+      "slug": "el-nacimiento-de-ramiro",
+      "language": "spa",
+      "composition_year": 2002,
+      "publication_year": 2002,
+      "status": "published",
+      "editorial_notes": null,
+      "metadata": {},
+      "created_at": "2026-09-18T03:41:09.399Z",
+      "updated_at": "2026-09-18T03:41:09.399Z"
+    },
+    "workCredits": [
+      {
+        "id": "948292b1-7681-4339-80d0-faf2b19153a5",
+        "work_id": "83db2dec-3045-4564-abfd-586ed6688d21",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      },
+      {
+        "id": "76a7ae3c-d372-4bea-8d81-2cd2275c10a6",
+        "work_id": "83db2dec-3045-4564-abfd-586ed6688d21",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      }
+    ]
+  },
+  {
+    "id": "f8ebc18f-7786-46f0-bdb3-bdda472ad605",
+    "title": "Amor y control (En Vivo - Encuentro)",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Rubén Blades"
+    ],
+    "mbid": "f52876be-20c1-4d6a-a346-2baa8ddf1442",
+    "sourceUrl": "https://musicbrainz.org/recording/f52876be-20c1-4d6a-a346-2baa8ddf1442",
+    "public": true,
+    "reasons": [
+      "stored performer credit repeats disputed owner"
+    ],
+    "creditIds": [
+      "2ce308eb-7cc8-4def-afef-924216a7f801"
+    ],
+    "releaseAppearances": [
+      {
+        "id": "9377dfe3-7011-47d7-964d-98b628918559",
+        "title": "Encuentro",
+        "type": "live",
+        "artist": "Juan Luis Guerra"
+      }
+    ],
+    "classification": "editorial review candidate; source conflict is proven, historical attribution requires edition-specific verification",
+    "work": {
+      "id": "22087d7f-0fd6-4389-b7b5-aa90df6b06f0",
+      "preferred_title": "Amor y control",
+      "slug": "amor-y-control",
+      "language": "spa",
+      "composition_year": 2002,
+      "publication_year": 2002,
+      "status": "published",
+      "editorial_notes": null,
+      "metadata": {},
+      "created_at": "2026-09-18T03:41:09.399Z",
+      "updated_at": "2026-09-18T03:41:09.399Z"
+    },
+    "workCredits": [
+      {
+        "id": "1d8d66bc-a3e3-40a7-9911-55668e054548",
+        "work_id": "22087d7f-0fd6-4389-b7b5-aa90df6b06f0",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      },
+      {
+        "id": "7537d88b-fa9a-4f6c-88ad-4657ac1f2643",
+        "work_id": "22087d7f-0fd6-4389-b7b5-aa90df6b06f0",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      }
+    ]
+  },
+  {
+    "id": "0b69f52d-25df-4cff-89a7-ce9622e1fbfa",
+    "title": "Sin tu cariño (En Vivo - Encuentro)",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Rubén Blades"
+    ],
+    "mbid": "bae4316b-eb26-47c0-bf8b-e620a6b144fb",
+    "sourceUrl": "https://musicbrainz.org/recording/bae4316b-eb26-47c0-bf8b-e620a6b144fb",
+    "public": true,
+    "reasons": [
+      "stored performer credit repeats disputed owner"
+    ],
+    "creditIds": [
+      "5597b8a3-9259-470e-bd32-060f1b786b6e"
+    ],
+    "releaseAppearances": [
+      {
+        "id": "9377dfe3-7011-47d7-964d-98b628918559",
+        "title": "Encuentro",
+        "type": "live",
+        "artist": "Juan Luis Guerra"
+      }
+    ],
+    "classification": "editorial review candidate; source conflict is proven, historical attribution requires edition-specific verification",
+    "work": {
+      "id": "a6c1cc75-f27f-4629-8bf2-b29b142c0b01",
+      "preferred_title": "Sin tu cariño",
+      "slug": "sin-tu-carino",
+      "language": "spa",
+      "composition_year": 2002,
+      "publication_year": 2002,
+      "status": "published",
+      "editorial_notes": null,
+      "metadata": {},
+      "created_at": "2026-09-18T03:41:09.399Z",
+      "updated_at": "2026-09-18T03:41:09.399Z"
+    },
+    "workCredits": [
+      {
+        "id": "47e20345-4376-4b1b-b9e3-068e7b16d8ba",
+        "work_id": "a6c1cc75-f27f-4629-8bf2-b29b142c0b01",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      },
+      {
+        "id": "1c3ad3f7-e19d-49fa-8c38-6ceef7029e6a",
+        "work_id": "a6c1cc75-f27f-4629-8bf2-b29b142c0b01",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      }
+    ]
+  },
+  {
+    "id": "449ab78e-5785-40c9-bf7b-4eae20740ccb",
+    "title": "Pedro Navaja (En Vivo - Encuentro)",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Rubén Blades"
+    ],
+    "mbid": "e04aa3be-1a9e-4596-b680-5109c0930ff9",
+    "sourceUrl": "https://musicbrainz.org/recording/e04aa3be-1a9e-4596-b680-5109c0930ff9",
+    "public": true,
+    "reasons": [
+      "stored performer credit repeats disputed owner"
+    ],
+    "creditIds": [
+      "1ace86ec-2944-46d0-8fb2-a97755c01e3a"
+    ],
+    "releaseAppearances": [
+      {
+        "id": "9377dfe3-7011-47d7-964d-98b628918559",
+        "title": "Encuentro",
+        "type": "live",
+        "artist": "Juan Luis Guerra"
+      }
+    ],
+    "classification": "editorial review candidate; source conflict is proven, historical attribution requires edition-specific verification",
+    "work": {
+      "id": "43c3b9b9-9522-473b-bce8-c371d76b26ec",
+      "preferred_title": "Pedro Navaja",
+      "slug": "pedro-navaja",
+      "language": "spa",
+      "composition_year": 2002,
+      "publication_year": 2002,
+      "status": "published",
+      "editorial_notes": null,
+      "metadata": {},
+      "created_at": "2026-09-18T03:41:09.399Z",
+      "updated_at": "2026-09-18T03:41:09.399Z"
+    },
+    "workCredits": [
+      {
+        "id": "f2d1c8fe-9a4e-4deb-aea9-7b68dc7faf4b",
+        "work_id": "43c3b9b9-9522-473b-bce8-c371d76b26ec",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      },
+      {
+        "id": "f6a13707-e881-4039-a422-7df7e39a1933",
+        "work_id": "43c3b9b9-9522-473b-bce8-c371d76b26ec",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      }
+    ]
+  },
+  {
+    "id": "34604f5e-29cd-461e-9a50-9040e51816cd",
+    "title": "Padre Antonio y su monaguillo Andrés (En Vivo - Encuentro)",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Rubén Blades"
+    ],
+    "mbid": "27c7c65c-6237-4699-a757-94fb525f3ac1",
+    "sourceUrl": "https://musicbrainz.org/recording/27c7c65c-6237-4699-a757-94fb525f3ac1",
+    "public": true,
+    "reasons": [
+      "stored performer credit repeats disputed owner"
+    ],
+    "creditIds": [
+      "33289359-4602-448c-a7c2-e3e19580a72f"
+    ],
+    "releaseAppearances": [
+      {
+        "id": "9377dfe3-7011-47d7-964d-98b628918559",
+        "title": "Encuentro",
+        "type": "live",
+        "artist": "Juan Luis Guerra"
+      }
+    ],
+    "classification": "editorial review candidate; source conflict is proven, historical attribution requires edition-specific verification",
+    "work": {
+      "id": "4b7ab489-53dc-493a-8350-c6b021457bf0",
+      "preferred_title": "Padre Antonio y su monaguillo Andrés",
+      "slug": "padre-antonio-y-su-monaguillo-andres",
+      "language": "spa",
+      "composition_year": 2002,
+      "publication_year": 2002,
+      "status": "published",
+      "editorial_notes": null,
+      "metadata": {},
+      "created_at": "2026-09-18T03:41:09.399Z",
+      "updated_at": "2026-09-18T03:41:09.399Z"
+    },
+    "workCredits": [
+      {
+        "id": "3d32e1a2-f6c7-40b8-9e28-43c24679d0bd",
+        "work_id": "4b7ab489-53dc-493a-8350-c6b021457bf0",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      },
+      {
+        "id": "9978b31b-4074-42f8-80db-29a661450b0e",
+        "work_id": "4b7ab489-53dc-493a-8350-c6b021457bf0",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      }
+    ]
+  },
+  {
+    "id": "c3c1daec-09d0-47f6-9184-4db3beec0310",
+    "title": "Cruzando puertas (En Vivo - Encuentro)",
+    "owner": "Juan Luis Guerra",
+    "sourceArtists": [
+      "Robi Draco Rosa"
+    ],
+    "mbid": "063ad464-cc97-4628-8616-a806265f9729",
+    "sourceUrl": "https://musicbrainz.org/recording/063ad464-cc97-4628-8616-a806265f9729",
+    "public": true,
+    "reasons": [
+      "stored performer credit repeats disputed owner"
+    ],
+    "creditIds": [
+      "0dcde45f-cf79-4da0-95c5-dcc571419643"
+    ],
+    "releaseAppearances": [
+      {
+        "id": "9377dfe3-7011-47d7-964d-98b628918559",
+        "title": "Encuentro",
+        "type": "live",
+        "artist": "Juan Luis Guerra"
+      }
+    ],
+    "classification": "editorial review candidate; source conflict is proven, historical attribution requires edition-specific verification",
+    "work": {
+      "id": "6dfcf5c2-4822-4d61-a5fe-ad9bd2dbb99c",
+      "preferred_title": "Cruzando puertas",
+      "slug": "cruzando-puertas",
+      "language": "spa",
+      "composition_year": 2002,
+      "publication_year": 2002,
+      "status": "published",
+      "editorial_notes": null,
+      "metadata": {},
+      "created_at": "2026-09-18T03:41:09.399Z",
+      "updated_at": "2026-09-18T03:41:09.399Z"
+    },
+    "workCredits": [
+      {
+        "id": "31f6a252-2ad1-4111-826e-7d0fee5c3bc0",
+        "work_id": "6dfcf5c2-4822-4d61-a5fe-ad9bd2dbb99c",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "composer",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 1,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      },
+      {
+        "id": "fae12787-e0ea-4b27-ab60-790e5e9d8184",
+        "work_id": "6dfcf5c2-4822-4d61-a5fe-ad9bd2dbb99c",
+        "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "role": "lyricist",
+        "credited_as": "Juan Luis Guerra",
+        "credit_detail": null,
+        "sequence": 2,
+        "verification_status": "verified",
+        "notes": null,
+        "metadata": {},
+        "created_at": "2026-09-18T03:41:09.399Z",
+        "updated_at": "2026-09-18T03:41:09.399Z",
+        "role_id": null,
+        "external_contributor_id": null,
+        "artist": "Juan Luis Guerra"
+      }
+    ]
+  }
+]

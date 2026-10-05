@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "key": "back",
+      "type": "web",
+      "title": "El duro soy yo — original 2006 Platano / Origin back cover, catalog 01-0065, barcode 7707025000659",
+      "organization": "Platano Records / Origin Entertainment",
+      "url": "http://coverartarchive.org/release/2efe8dd1-609c-414d-b4f6-37dba3ed40b6/17307499740.jpg",
+      "archiveUrl": "https://musicbrainz.org/release/2efe8dd1-609c-414d-b4f6-37dba3ed40b6/cover-art",
+      "sha256": "f6f75070cc2d8332e6e3fd5505c53b7fdbd946f2c3ab011edaf54bbd62d3d12d",
+      "retrievedAt": "2026-10-03T14:29:52.484Z"
+    }
+  ],
+  "recordings": [
+    {
+      "recordingId": "3196a8cb-e271-4985-89a5-9c02c887947f",
+      "expectedArtistId": "ae72a84f-28eb-44d2-8553-b840a4a1c1fe",
+      "expectedTitle": "Te estoy queriendo (remix)",
+      "source": "back",
+      "position": 21,
+      "credits": [
+        {
+          "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab",
+          "name": "Proyecto Uno",
+          "role": "featured_performer"
+        }
+      ]
+    }
+  ],
+  "releaseCredits": []
+}

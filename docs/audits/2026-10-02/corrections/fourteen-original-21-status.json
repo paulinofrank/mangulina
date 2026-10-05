@@ -1,0 +1,263 @@
+[
+  {
+    "recordingId": "4f0b8de9-f23e-46de-b477-9e6be1e1c342",
+    "title": "El motor",
+    "originalOwner": "Tony Seval",
+    "status": "resolved",
+    "sources": [
+      "https://www.qobuz.com/dk-en/album/combinacion-perfecta-del-merengue-various-artists/gd4os091p33ta"
+    ],
+    "reason": "Aramis performer ownership corrected from complete official 14-track compilation sequence, corroborating original package, imported identity and duration; public discography verified.",
+    "originalCaseNumber": 1
+  },
+  {
+    "recordingId": "72953b36-4dea-403f-8d4d-27005c7c9f3d",
+    "title": "Amores",
+    "originalOwner": "Juan Luis Guerra",
+    "status": "resolved",
+    "sources": [
+      "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255",
+      "https://www.shazam.com/es-es/song/714622937/amores"
+    ],
+    "reason": "El Prodigio explicitly credited on accordion by Apple/Shazam label-supplied recording credits; performer credit with accordion instrument applied and verified. Juan Luis Guerra ownership retained.",
+    "originalCaseNumber": 2
+  },
+  {
+    "recordingId": "5b3c5a81-0456-43af-839c-122660ad5748",
+    "title": "Danza kuduro (merengue electrónico remix)",
+    "originalOwner": "Maffio",
+    "status": "unresolved",
+    "sources": [],
+    "reason": "The remix needs its original package and explicit performer/remixer credits. Credits for the original Danza kuduro cannot safely establish this remix attribution.",
+    "originalCaseNumber": 3
+  },
+  {
+    "recordingId": "13dd8d0c-1239-4876-84f8-02751fd6ecff",
+    "title": "El amor acaba",
+    "originalOwner": "Sergio Vargas",
+    "status": "resolved_attribution",
+    "sources": [
+      "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+      "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+      "https://www.qobuz.com/au-en/album/regresar-al-amor-alex-bueno/s4tvf4x9cay6b"
+    ],
+    "reason": "Individual performer corrected and public discography verified; separate edition/title/master reconciliation remains open as documented in FOURTEEN-FOLLOWUP.md.",
+    "originalCaseNumber": 4,
+    "currentOwner": "Alex Bueno"
+  },
+  {
+    "recordingId": "bc141597-7e01-4ae2-86fc-ec78a31b00af",
+    "title": "Pero lo dudo",
+    "originalOwner": "Sergio Vargas",
+    "status": "resolved_attribution",
+    "sources": [
+      "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+      "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+      "https://www.qobuz.com/au-en/album/regresar-al-amor-alex-bueno/s4tvf4x9cay6b"
+    ],
+    "reason": "Individual performer corrected and public discography verified; separate edition/title/master reconciliation remains open as documented in FOURTEEN-FOLLOWUP.md.",
+    "originalCaseNumber": 5,
+    "currentOwner": "Alex Bueno"
+  },
+  {
+    "recordingId": "548a7846-fd2e-42a9-9245-8fff9a76e7c8",
+    "title": "Ven llévame contigo",
+    "originalOwner": "Tony Seval",
+    "status": "resolved",
+    "sources": [
+      "https://www.qobuz.com/dk-en/album/combinacion-perfecta-del-merengue-various-artists/gd4os091p33ta"
+    ],
+    "reason": "Aramis performer ownership corrected from complete official 14-track compilation sequence, corroborating original package, imported identity and duration; public discography verified.",
+    "originalCaseNumber": 6
+  },
+  {
+    "recordingId": "6b8dad81-685c-4854-b87c-9fa9d35a0218",
+    "title": "Quiero perderme contigo",
+    "originalOwner": "Sergio Vargas",
+    "status": "resolved_attribution",
+    "sources": [
+      "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+      "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+      "https://www.qobuz.com/au-en/album/regresar-al-amor-alex-bueno/s4tvf4x9cay6b"
+    ],
+    "reason": "Individual performer corrected and public discography verified; separate edition/title/master reconciliation remains open as documented in FOURTEEN-FOLLOWUP.md.",
+    "originalCaseNumber": 7,
+    "currentOwner": "Alex Bueno"
+  },
+  {
+    "recordingId": "f2025707-c4c0-4b75-9411-f2684011cce8",
+    "title": "Quiero llenarte toda",
+    "originalOwner": "Sergio Vargas",
+    "status": "resolved_attribution",
+    "sources": [
+      "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+      "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+      "https://www.qobuz.com/au-en/album/regresar-al-amor-alex-bueno/s4tvf4x9cay6b"
+    ],
+    "reason": "Individual performer corrected and public discography verified; separate edition/title/master reconciliation remains open as documented in FOURTEEN-FOLLOWUP.md.",
+    "originalCaseNumber": 8,
+    "currentOwner": "Alex Bueno"
+  },
+  {
+    "recordingId": "15e06d83-81fa-4009-9476-370b17a40e89",
+    "title": "El amor acaba",
+    "originalOwner": "Sergio Vargas",
+    "status": "resolved_attribution",
+    "sources": [
+      "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+      "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+      "https://www.qobuz.com/au-en/album/regresar-al-amor-alex-bueno/s4tvf4x9cay6b"
+    ],
+    "reason": "Individual performer corrected and public discography verified; separate edition/title/master reconciliation remains open as documented in FOURTEEN-FOLLOWUP.md.",
+    "originalCaseNumber": 9,
+    "currentOwner": "Alex Bueno"
+  },
+  {
+    "recordingId": "8ec087d4-7728-4d80-bec6-7992e6ffec6c",
+    "title": "El alicate",
+    "originalOwner": "Tony Seval",
+    "status": "resolved",
+    "sources": [
+      "https://www.qobuz.com/dk-en/album/combinacion-perfecta-del-merengue-various-artists/gd4os091p33ta"
+    ],
+    "reason": "Aramis performer ownership corrected from complete official 14-track compilation sequence, corroborating original package, imported identity and duration; public discography verified.",
+    "originalCaseNumber": 10
+  },
+  {
+    "recordingId": "7a60dd1c-50a0-461b-896e-5a1c47d2fa7a",
+    "title": "Hello",
+    "originalOwner": "Tony Seval",
+    "status": "resolved",
+    "sources": [
+      "https://www.facebook.com/aramiscamilooficial/videos/664385919336095/",
+      "https://www.qobuz.com/dk-en/album/combinacion-perfecta-del-merengue-various-artists/gd4os091p33ta"
+    ],
+    "reason": "Aramis performer ownership corrected from complete official 14-track compilation sequence, corroborating original package, imported identity and duration; public discography verified.",
+    "originalCaseNumber": 11
+  },
+  {
+    "recordingId": "3196a8cb-e271-4985-89a5-9c02c887947f",
+    "title": "Te estoy queriendo (remix)",
+    "originalOwner": "Sandy MC",
+    "status": "resolved",
+    "sources": [
+      "https://music.apple.com/us/album/el-duro-soy-yo-en-reggaeton/1517925562"
+    ],
+    "reason": "Proyecto Uno featured credit restored from original 2006 back cover, exact barcode, track 21 and 4:43 duration; public readback verified.",
+    "originalCaseNumber": 12
+  },
+  {
+    "recordingId": "c2985d99-4bc4-4b32-a299-f1de7e048e7b",
+    "title": "Tú mi cigarrillo",
+    "originalOwner": "Tony Seval",
+    "status": "resolved",
+    "sources": [
+      "https://www.qobuz.com/dk-en/album/combinacion-perfecta-del-merengue-various-artists/gd4os091p33ta"
+    ],
+    "reason": "Aramis performer ownership corrected from complete official 14-track compilation sequence, corroborating original package, imported identity and duration; public discography verified.",
+    "originalCaseNumber": 13
+  },
+  {
+    "recordingId": "88fa2345-f6ea-4d5c-bd75-f03b0a64b092",
+    "title": "LLevate La Cama Pa' La Calle",
+    "originalOwner": "Don Miguelo",
+    "status": "awaiting_draft_publication",
+    "sources": [
+      "https://music.apple.com/us/song/157780362"
+    ],
+    "reason": "Disambiguated Dominican draft identity created and evidenced featured credit saved; profile review, photo and publication required by artist-creation policy.",
+    "originalCaseNumber": 14
+  },
+  {
+    "recordingId": "0636f4fa-1fde-4b87-9b4e-4a6098219e2b",
+    "title": "Esto no lo venden",
+    "originalOwner": "José Peña Suazo y La Banda Gorda",
+    "status": "awaiting_draft_publication",
+    "sources": [
+      "https://music.amazon.co.uk/albums/B07RWQ59CF"
+    ],
+    "reason": "Disambiguated Dominican draft identity created and evidenced featured credit saved; profile review, photo and publication required by artist-creation policy.",
+    "originalCaseNumber": 15
+  },
+  {
+    "recordingId": "e63a471f-1cc4-4b07-beff-219c8b3b19d2",
+    "title": "Si ti no soy nada",
+    "originalOwner": "Sergio Vargas",
+    "status": "resolved_attribution",
+    "sources": [
+      "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+      "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+      "https://www.qobuz.com/au-en/album/regresar-al-amor-alex-bueno/s4tvf4x9cay6b"
+    ],
+    "reason": "Individual performer corrected and public discography verified; separate edition/title/master reconciliation remains open as documented in FOURTEEN-FOLLOWUP.md.",
+    "originalCaseNumber": 16,
+    "currentOwner": "Alex Bueno"
+  },
+  {
+    "recordingId": "2b3f3d75-fa9b-4036-88ef-032700348d13",
+    "title": "Quiero perderme contigo",
+    "originalOwner": "Sergio Vargas",
+    "status": "resolved_attribution",
+    "sources": [
+      "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+      "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+      "https://www.qobuz.com/au-en/album/regresar-al-amor-alex-bueno/s4tvf4x9cay6b"
+    ],
+    "reason": "Individual performer corrected and public discography verified; separate edition/title/master reconciliation remains open as documented in FOURTEEN-FOLLOWUP.md.",
+    "originalCaseNumber": 17,
+    "currentOwner": "Alex Bueno"
+  },
+  {
+    "recordingId": "6e2c1583-9f5d-4384-89ac-c802509a6e7c",
+    "title": "El candado del amor",
+    "originalOwner": "Tony Seval",
+    "status": "resolved",
+    "sources": [
+      "https://www.qobuz.com/dk-en/album/combinacion-perfecta-del-merengue-various-artists/gd4os091p33ta"
+    ],
+    "reason": "Aramis performer ownership corrected from complete official 14-track compilation sequence, corroborating original package, imported identity and duration; public discography verified.",
+    "originalCaseNumber": 18
+  },
+  {
+    "recordingId": "a27f06da-67fe-41be-856c-989339795600",
+    "title": "Voy a llenarte toda",
+    "originalOwner": "Sergio Vargas",
+    "status": "resolved_attribution",
+    "sources": [
+      "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+      "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+      "https://www.qobuz.com/au-en/album/regresar-al-amor-alex-bueno/s4tvf4x9cay6b"
+    ],
+    "reason": "Individual performer corrected and public discography verified; separate edition/title/master reconciliation remains open as documented in FOURTEEN-FOLLOWUP.md.",
+    "originalCaseNumber": 19,
+    "currentOwner": "Alex Bueno"
+  },
+  {
+    "recordingId": "02990a6a-ccdd-4d43-be40-73610630bb15",
+    "title": "Sin ti no hay nada",
+    "originalOwner": "Sergio Vargas",
+    "status": "resolved_attribution",
+    "sources": [
+      "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+      "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+      "https://www.qobuz.com/au-en/album/regresar-al-amor-alex-bueno/s4tvf4x9cay6b"
+    ],
+    "reason": "Individual performer corrected and public discography verified; separate edition/title/master reconciliation remains open as documented in FOURTEEN-FOLLOWUP.md.",
+    "originalCaseNumber": 20,
+    "currentOwner": "Alex Bueno"
+  },
+  {
+    "recordingId": "3d1c54e7-b045-4105-9342-8748938200ca",
+    "title": "En bandolera",
+    "originalOwner": "Sergio Vargas",
+    "status": "resolved_attribution",
+    "sources": [
+      "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+      "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+      "https://www.qobuz.com/au-en/album/regresar-al-amor-alex-bueno/s4tvf4x9cay6b"
+    ],
+    "reason": "Individual performer corrected and public discography verified; separate edition/title/master reconciliation remains open as documented in FOURTEEN-FOLLOWUP.md.",
+    "originalCaseNumber": 21,
+    "currentOwner": "Alex Bueno"
+  }
+]

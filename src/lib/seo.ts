@@ -76,9 +76,13 @@ export function releaseSeoTitle(release: {
   title: string;
   type?: string | null;
   artist?: { name: string } | null;
+  artists?: { name: string }[];
 }, locale: SeoLocale | string = "en") {
   const isSpanish = resolveSeoLocale(locale) === "es";
-  if (!release.artist?.name) return `${release.title} - ${isSpanish ? "Información del lanzamiento" : "Release Information"}`;
+  const artistNames = release.artists?.length
+    ? release.artists.map((artist) => artist.name).join(" · ")
+    : release.artist?.name;
+  if (!artistNames) return `${release.title} - ${isSpanish ? "Información del lanzamiento" : "Release Information"}`;
   const type = release.type?.trim() || "Release";
   const normalizedType = type.toLowerCase();
   const spanishTypes: Record<string, string> = {
@@ -94,8 +98,8 @@ export function releaseSeoTitle(release: {
     ? spanishTypes[normalizedType] ?? type
     : type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
   return isSpanish
-    ? `${release.title} - ${formattedType} de ${release.artist.name}`
-    : `${release.title} - ${formattedType} by ${release.artist.name}`;
+    ? `${release.title} - ${formattedType} de ${artistNames}`
+    : `${release.title} - ${formattedType} by ${artistNames}`;
 }
 
 export function genreSeoTitle(genre: { title?: string; name?: string }, locale: SeoLocale | string = "en") {

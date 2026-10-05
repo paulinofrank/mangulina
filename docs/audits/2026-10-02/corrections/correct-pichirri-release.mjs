@@ -1,0 +1,21 @@
+import 'dotenv/config';
+import pg from 'pg';
+import {writeFile} from 'node:fs/promises';
+const apply=process.argv.includes('--apply'),batch='discography-audit-2026-10-02-pichirri-release';
+const releaseId='f200df06-ea0b-409f-9065-0fef948fc02f',ito='86fdf7d2-f8c3-457f-a318-20bb7b5a207e',yomel='bb07dcb8-444f-4a68-a668-21e9e038f335';
+const db=new pg.Client({connectionString:process.env.DATABASE_URL,connectionTimeoutMillis:15000});
+try{await db.connect();await db.query('BEGIN');await db.query("SET LOCAL lock_timeout='5s'");
+ await db.query('SELECT pg_advisory_xact_lock(hashtextextended($1,0))',[batch]);
+ if((await db.query("SELECT id FROM editorial_decisions WHERE metadata->>'batch'=$1",[batch])).rowCount)throw Error('Already applied');
+ const source=(await db.query("SELECT id,url FROM editorial_sources WHERE url='https://music.apple.com/us/album/el-pichirri-feat-kiko-el-crazy-cherry-scom-ito-gamy-single/1495066844' ORDER BY created_at DESC LIMIT 1")).rows[0];if(!source)throw Error('Source missing');
+ const before=(await db.query('SELECT * FROM releases WHERE id=$1 FOR UPDATE',[releaseId])).rows[0];
+ const credit=(await db.query('SELECT * FROM release_artists WHERE release_id=$1 AND artist_id=$2 FOR UPDATE',[releaseId,ito])).rows[0];
+ if(credit.role!=='primary')throw Error('Unexpected prior attribution');
+ if(!(await db.query("SELECT id FROM release_artists WHERE release_id=$1 AND artist_id=$2 AND role='primary'",[releaseId,yomel])).rowCount)throw Error('Principal credit missing');
+ const after=before;
+ const changed=(await db.query("UPDATE release_artists SET role='featured',credited_as='Ito Gamy' WHERE id=$1 RETURNING *",[credit.id])).rows[0];
+ const decision=(await db.query(`INSERT INTO editorial_decisions(decision_type,status,reason,previous_canonical_state,resulting_canonical_state,metadata,decided_at) VALUES('correct_catalog_attribution','executed',$1,$2,$3,$4,now()) RETURNING id`,['The original single credits Yomel el Meloso as principal and Ito Gamy as featured; preserve the collaborator identity and historical printed name.',JSON.stringify({release:before,credit}),JSON.stringify({release:after,credit:changed}),JSON.stringify({batch,source_id:source.id,sourceUrl:source.url})])).rows[0];
+ await db.query('SET CONSTRAINTS ALL IMMEDIATE');
+ await writeFile('docs/audits/2026-10-02/corrections/pichirri-release-'+(apply?'receipt':'rehearsal')+'.json',JSON.stringify({batch,before,after,creditBefore:credit,creditAfter:changed,source,decision},null,2));
+ await db.query(apply?'COMMIT':'ROLLBACK');console.log(JSON.stringify({mode:apply?'apply':'rollback-rehearsal',releaseOwner:'Yomel el Meloso',featuredCredit:'Ito Gamy'}));
+}catch(e){await db.query('ROLLBACK').catch(()=>{});console.error(e.code??'',e.message);process.exitCode=1;}finally{await db.end();}

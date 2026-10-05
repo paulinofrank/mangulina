@@ -77,6 +77,15 @@ npm run dev
 
 ## Testing Production Build
 
+### Deployment exclusions and Product Analytics
+
+Keep the root tooling-data exclusion in `.vercelignore` anchored as `/data`.
+An unanchored `data` rule also excludes
+`src/app/api/admin/analytics/data/route.ts`, so the deployed Product Analytics
+request returns 404 even though the dashboard page and local endpoint work.
+After changing deployment exclusions, verify that the upload includes this
+route and that the authenticated production request succeeds after redeploying.
+
 To test with workaround applied:
 
 1. Add `export const dynamic = 'force-dynamic'` to problematic pages

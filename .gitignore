@@ -28,6 +28,7 @@
 !/scripts/instagram/
 !/scripts/revalidate.ts
 !/scripts/dev-watchpack.cjs
+!/scripts/execute_phase6_credits_and_works.ts
 /ingest
 /backups
 /_discography_backup_*/

@@ -1,0 +1,893 @@
+{
+  "reviewedAt": "2026-10-03T01:01:55.761Z",
+  "scope": "The original 86-case candidate queue, not an exhaustive verification of the entire catalog",
+  "counts": {
+    "unresolved": 18,
+    "partially_resolved": 3,
+    "corrected_credits": 33,
+    "valid_attribution": 20,
+    "corrected_owner": 12
+  },
+  "total": 86,
+  "resolved": 65,
+  "remaining": 21,
+  "productionDeployment": "dpl_4kjePwdcD8KrERQWJpvGEMBYgRwt",
+  "reviews": [
+    {
+      "recordingId": "4f0b8de9-f23e-46de-b477-9e6be1e1c342",
+      "title": "El motor",
+      "originalOwner": "Tony Seval",
+      "status": "unresolved",
+      "sources": [],
+      "reason": "Imported Aramis Camilo credit and community compilation listings are leads only. No original packaging or official track-level source was found for this exact 14-track edition."
+    },
+    {
+      "recordingId": "72953b36-4dea-403f-8d4d-27005c7c9f3d",
+      "title": "Amores",
+      "originalOwner": "Juan Luis Guerra",
+      "status": "partially_resolved",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/la-llave-de-mi-corazon-juan-luis-guerra-440/0094638839255"
+      ],
+      "reason": "Official label credits support Juan Luis Guerra ownership. El Prodigio accordion contribution remains unconfirmed by track-specific original evidence; do not infer a featured singer role."
+    },
+    {
+      "recordingId": "e7dd095b-18e5-4d67-90a1-ff01eb2b0443",
+      "title": "De Moca a París",
+      "originalOwner": "Juan Luis Guerra",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/es-es/album/todo-tiene-su-hora-juan-luis-guerra-440/0060254703757"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "ec969bf9-304b-41a8-a07a-ff97c07eaaa6",
+      "title": "Como tu no hay nadie",
+      "originalOwner": "Zawezo",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.youtube.com/watch?v=ltn1fMQf1Mc"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "4a8bc240-3797-43ff-a880-44933712c1a4",
+      "title": "Los recuerdos no abrazan",
+      "originalOwner": "Monchy & Alexandra",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.qobuz.com/nz-en/album/hasta-el-fin-monchy-alexandra/fgflok2q7pjlb",
+        "https://music.apple.com/us/album/the-mix/27044901"
+      ],
+      "reason": "Original package and label distribution identify the duo. An individual lead voice within the duo does not make the recording an unrelated solo release. Individual vocal allocations are not certified."
+    },
+    {
+      "recordingId": "5b3c5a81-0456-43af-839c-122660ad5748",
+      "title": "Danza kuduro (merengue electrónico remix)",
+      "originalOwner": "Maffio",
+      "status": "unresolved",
+      "sources": [],
+      "reason": "The remix needs its original package and explicit performer/remixer credits. Credits for the original Danza kuduro cannot safely establish this remix attribution."
+    },
+    {
+      "recordingId": "eb4119d8-66e5-4641-9276-c6ae547ccd5f",
+      "title": "Tú eres un veneno",
+      "originalOwner": "Alina Vargas",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/dos-generaciones-wilfrido-vargas-alinna-vargas/o6w1vzxq8eu7b"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "334ae297-d150-4a81-9427-a416ecb0aa1d",
+      "title": "Frío, frío (En Vivo - A Son de Guerra Tour)",
+      "originalOwner": "Juan Luis Guerra",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/fr-fr/album/asondeguerra-tour-juan-luis-guerra-440/5099901505252"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "29c67cf9-13f3-4e12-a29f-c8d967d60b34",
+      "title": "Libre",
+      "originalOwner": "Alina Vargas",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/dos-generaciones-wilfrido-vargas-alinna-vargas/o6w1vzxq8eu7b"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "768d32b6-7854-46ce-a5e6-400c4aa77faa",
+      "title": "Mi condena",
+      "originalOwner": "Alina Vargas",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/dos-generaciones-wilfrido-vargas-alinna-vargas/o6w1vzxq8eu7b"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "a6024034-b10e-4e8e-a363-f0552e725d7a",
+      "title": "Melina",
+      "originalOwner": "Joan Soriano",
+      "status": "corrected_credits",
+      "sources": [
+        "https://iasorecords.bandcamp.com/album/me-decid"
+      ],
+      "reason": "Original label describes Joan Soriano and his band with Fernando, Griselda and Andre guest leads; the first pass already restored those guest credits."
+    },
+    {
+      "recordingId": "e412ad0b-c0c0-4492-80c8-8aefae67c1a8",
+      "title": "Violento atardecer",
+      "originalOwner": "Miriam Cruz",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.miriamcruz.com/",
+        "https://www.qobuz.com/es-es/album/nueva-vida-miriam-y-las-chicas/xxn2o6996wzpc"
+      ],
+      "reason": "The artist explicitly identifies Nueva Vida as her Miriam Cruz y las Chicas project. Preserve historical band credit; do not substitute another group. Artist biography dates the album to 1993; Qobuz 1981 display is inconsistent and is not accepted as dating evidence."
+    },
+    {
+      "recordingId": "88f4702e-6911-412a-b3d8-988f991a8fdf",
+      "title": "Te propongo",
+      "originalOwner": "Miriam Cruz",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.miriamcruz.com/",
+        "https://www.qobuz.com/es-es/album/nueva-vida-miriam-y-las-chicas/xxn2o6996wzpc"
+      ],
+      "reason": "The artist explicitly identifies Nueva Vida as her Miriam Cruz y las Chicas project. Preserve historical band credit; do not substitute another group. Artist biography dates the album to 1993; Qobuz 1981 display is inconsistent and is not accepted as dating evidence."
+    },
+    {
+      "recordingId": "a14f911a-c8f2-44c9-b906-81eaa0db6fa8",
+      "title": "El ñoño",
+      "originalOwner": "Miriam Cruz",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.miriamcruz.com/",
+        "https://www.qobuz.com/es-es/album/nueva-vida-miriam-y-las-chicas/xxn2o6996wzpc"
+      ],
+      "reason": "The artist explicitly identifies Nueva Vida as her Miriam Cruz y las Chicas project. Preserve historical band credit; do not substitute another group. Artist biography dates the album to 1993; Qobuz 1981 display is inconsistent and is not accepted as dating evidence."
+    },
+    {
+      "recordingId": "5bfed06a-af27-4d5b-ad36-1533d2767a68",
+      "title": "Quiti-pun",
+      "originalOwner": "Alina Vargas",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/dos-generaciones-wilfrido-vargas-alinna-vargas/o6w1vzxq8eu7b"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "13dd8d0c-1239-4876-84f8-02751fd6ecff",
+      "title": "El amor acaba",
+      "originalOwner": "Sergio Vargas",
+      "status": "unresolved",
+      "sources": [
+        "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+        "https://open.spotify.com/intl-es/track/0DAIrqdR6auWwWNO5dn202"
+      ],
+      "reason": "Qobuz carries both artists as MainArtist on each track; another Karen edition supplies individual Alex Bueno track billing. The exact historical edition and recording identity need reconciliation before reassigning."
+    },
+    {
+      "recordingId": "ede150d2-d9dd-4320-a483-ddc0669b56ce",
+      "title": "Así bonito",
+      "originalOwner": "Juan Luis Guerra",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.youtube.com/watch?v=e5wN1g3SbMU"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "9c2631f2-d6b8-4a02-9fc4-98ed743487b7",
+      "title": "La quiero a morir",
+      "originalOwner": "Alex Bueno",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/se-en/album/grandes-exitos-de-alex-bueno-en-bachata-alex-bueno/ah3meo5yba9bb"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "bc141597-7e01-4ae2-86fc-ec78a31b00af",
+      "title": "Pero lo dudo",
+      "originalOwner": "Sergio Vargas",
+      "status": "unresolved",
+      "sources": [
+        "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+        "https://open.spotify.com/intl-es/track/0DAIrqdR6auWwWNO5dn202"
+      ],
+      "reason": "Qobuz carries both artists as MainArtist on each track; another Karen edition supplies individual Alex Bueno track billing. The exact historical edition and recording identity need reconciliation before reassigning."
+    },
+    {
+      "recordingId": "1b81253e-b3d4-40a4-b22b-7324469666a3",
+      "title": "Este castigo",
+      "originalOwner": "Monchy & Alexandra",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.qobuz.com/nz-en/album/hasta-el-fin-monchy-alexandra/fgflok2q7pjlb",
+        "https://music.apple.com/us/album/the-mix/27044901"
+      ],
+      "reason": "Original package and label distribution identify the duo. An individual lead voice within the duo does not make the recording an unrelated solo release. Individual vocal allocations are not certified."
+    },
+    {
+      "recordingId": "c84160ac-2b06-4679-8210-42a27b34758a",
+      "title": "Rechenchen",
+      "originalOwner": "Kinito Méndez",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/fr-fr/album/los-30-de-kinito-kinito-mendez/segr4b1m10rza"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "700d081d-5337-4eb9-ade0-2dbde58f57c7",
+      "title": "El baile del pirulino",
+      "originalOwner": "Alina Vargas",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/dos-generaciones-wilfrido-vargas-alinna-vargas/o6w1vzxq8eu7b"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "e1934f31-43d4-4b2c-9baa-22e010df0191",
+      "title": "Una mordidita",
+      "originalOwner": "Miriam Cruz",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.miriamcruz.com/",
+        "https://www.qobuz.com/es-es/album/nueva-vida-miriam-y-las-chicas/xxn2o6996wzpc"
+      ],
+      "reason": "The artist explicitly identifies Nueva Vida as her Miriam Cruz y las Chicas project. Preserve historical band credit; do not substitute another group. Artist biography dates the album to 1993; Qobuz 1981 display is inconsistent and is not accepted as dating evidence."
+    },
+    {
+      "recordingId": "d2fa17d1-1fc3-4c3f-bc02-c2c590866f55",
+      "title": "Tú volverás",
+      "originalOwner": "Miriam Cruz",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.miriamcruz.com/",
+        "https://www.qobuz.com/es-es/album/nueva-vida-miriam-y-las-chicas/xxn2o6996wzpc"
+      ],
+      "reason": "The artist explicitly identifies Nueva Vida as her Miriam Cruz y las Chicas project. Preserve historical band credit; do not substitute another group. Artist biography dates the album to 1993; Qobuz 1981 display is inconsistent and is not accepted as dating evidence."
+    },
+    {
+      "recordingId": "bc4c71fc-1c6e-46eb-8952-fa318c55a270",
+      "title": "Llanto a la luna",
+      "originalOwner": "Joan Soriano",
+      "status": "corrected_credits",
+      "sources": [
+        "https://iasorecords.bandcamp.com/album/me-decid"
+      ],
+      "reason": "Original label describes Joan Soriano and his band with Fernando, Griselda and Andre guest leads; the first pass already restored those guest credits."
+    },
+    {
+      "recordingId": "76b0820f-c728-4b39-81d7-36d6a4801a5a",
+      "title": "Dos rosas",
+      "originalOwner": "Miriam Cruz",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.miriamcruz.com/",
+        "https://www.qobuz.com/es-es/album/nueva-vida-miriam-y-las-chicas/xxn2o6996wzpc"
+      ],
+      "reason": "The artist explicitly identifies Nueva Vida as her Miriam Cruz y las Chicas project. Preserve historical band credit; do not substitute another group. Artist biography dates the album to 1993; Qobuz 1981 display is inconsistent and is not accepted as dating evidence."
+    },
+    {
+      "recordingId": "548a7846-fd2e-42a9-9245-8fff9a76e7c8",
+      "title": "Ven llévame contigo",
+      "originalOwner": "Tony Seval",
+      "status": "unresolved",
+      "sources": [],
+      "reason": "Imported Aramis Camilo credit and community compilation listings are leads only. No original packaging or official track-level source was found for this exact 14-track edition."
+    },
+    {
+      "recordingId": "6b8dad81-685c-4854-b87c-9fa9d35a0218",
+      "title": "Quiero perderme contigo",
+      "originalOwner": "Sergio Vargas",
+      "status": "unresolved",
+      "sources": [
+        "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+        "https://open.spotify.com/intl-es/track/0DAIrqdR6auWwWNO5dn202"
+      ],
+      "reason": "Qobuz carries both artists as MainArtist on each track; another Karen edition supplies individual Alex Bueno track billing. The exact historical edition and recording identity need reconciliation before reassigning."
+    },
+    {
+      "recordingId": "f2025707-c4c0-4b75-9411-f2684011cce8",
+      "title": "Quiero llenarte toda",
+      "originalOwner": "Sergio Vargas",
+      "status": "unresolved",
+      "sources": [
+        "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+        "https://open.spotify.com/intl-es/track/0DAIrqdR6auWwWNO5dn202"
+      ],
+      "reason": "Qobuz carries both artists as MainArtist on each track; another Karen edition supplies individual Alex Bueno track billing. The exact historical edition and recording identity need reconciliation before reassigning."
+    },
+    {
+      "recordingId": "15e06d83-81fa-4009-9476-370b17a40e89",
+      "title": "El amor acaba",
+      "originalOwner": "Sergio Vargas",
+      "status": "unresolved",
+      "sources": [
+        "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+        "https://open.spotify.com/intl-es/track/0DAIrqdR6auWwWNO5dn202"
+      ],
+      "reason": "Qobuz carries both artists as MainArtist on each track; another Karen edition supplies individual Alex Bueno track billing. The exact historical edition and recording identity need reconciliation before reassigning."
+    },
+    {
+      "recordingId": "a53ee73c-6f8a-4697-9887-19274705b84e",
+      "title": "Brindo con agua",
+      "originalOwner": "Henry Santos",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/brindo-con-agua-aventura/b69t5knjxcxwa"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "8ec087d4-7728-4d80-bec6-7992e6ffec6c",
+      "title": "El alicate",
+      "originalOwner": "Tony Seval",
+      "status": "unresolved",
+      "sources": [],
+      "reason": "Imported Aramis Camilo credit and community compilation listings are leads only. No original packaging or official track-level source was found for this exact 14-track edition."
+    },
+    {
+      "recordingId": "7a60dd1c-50a0-461b-896e-5a1c47d2fa7a",
+      "title": "Hello",
+      "originalOwner": "Tony Seval",
+      "status": "unresolved",
+      "sources": [],
+      "reason": "Imported Aramis Camilo credit and community compilation listings are leads only. No original packaging or official track-level source was found for this exact 14-track edition."
+    },
+    {
+      "recordingId": "e53bf5f1-6ce0-49f3-8629-c6fabc35c24f",
+      "title": "La quiero a morir",
+      "originalOwner": "Alex Bueno",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/se-en/album/grandes-exitos-de-alex-bueno-en-bachata-alex-bueno/ah3meo5yba9bb"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "76b24bc9-c223-408a-bc87-b198cb930c70",
+      "title": "Fantasías",
+      "originalOwner": "Monchy & Alexandra",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.qobuz.com/nz-en/album/hasta-el-fin-monchy-alexandra/fgflok2q7pjlb",
+        "https://music.apple.com/us/album/the-mix/27044901"
+      ],
+      "reason": "Original package and label distribution identify the duo. An individual lead voice within the duo does not make the recording an unrelated solo release. Individual vocal allocations are not certified."
+    },
+    {
+      "recordingId": "740cdb78-b3ab-4963-8bdc-f28a8a55e1bd",
+      "title": "A escondidas",
+      "originalOwner": "Joan Soriano",
+      "status": "corrected_credits",
+      "sources": [
+        "https://iasorecords.bandcamp.com/album/me-decid"
+      ],
+      "reason": "Original label describes Joan Soriano and his band with Fernando, Griselda and Andre guest leads; the first pass already restored those guest credits."
+    },
+    {
+      "recordingId": "3196a8cb-e271-4985-89a5-9c02c887947f",
+      "title": "Te estoy queriendo (remix)",
+      "originalOwner": "Sandy MC",
+      "status": "unresolved",
+      "sources": [
+        "https://music.apple.com/us/album/el-duro-soy-yo-en-reggaeton/1517925562"
+      ],
+      "reason": "Official distribution has a 20-track album; catalog includes the disputed remix at position 21. Exact edition and Proyecto Uno participation remain unresolved."
+    },
+    {
+      "recordingId": "8c047d87-3ef4-4ada-ab86-260273637205",
+      "title": "El llorón",
+      "originalOwner": "Kinito Méndez",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/fr-fr/album/los-30-de-kinito-kinito-mendez/segr4b1m10rza"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "a880db96-9d39-4210-8ec1-fd050f230ed8",
+      "title": "Quisiera olvidarte",
+      "originalOwner": "Monchy & Alexandra",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.qobuz.com/nz-en/album/hasta-el-fin-monchy-alexandra/fgflok2q7pjlb",
+        "https://music.apple.com/us/album/the-mix/27044901"
+      ],
+      "reason": "Original package and label distribution identify the duo. An individual lead voice within the duo does not make the recording an unrelated solo release. Individual vocal allocations are not certified."
+    },
+    {
+      "recordingId": "c2985d99-4bc4-4b32-a299-f1de7e048e7b",
+      "title": "Tú mi cigarrillo",
+      "originalOwner": "Tony Seval",
+      "status": "unresolved",
+      "sources": [],
+      "reason": "Imported Aramis Camilo credit and community compilation listings are leads only. No original packaging or official track-level source was found for this exact 14-track edition."
+    },
+    {
+      "recordingId": "88fa2345-f6ea-4d5c-bd75-f03b0a64b092",
+      "title": "LLevate La Cama Pa' La Calle",
+      "originalOwner": "Don Miguelo",
+      "status": "partially_resolved",
+      "sources": [
+        "https://music.apple.com/us/song/157780362"
+      ],
+      "reason": "Official distribution supports Don Miguelo and vocals by Frank Reyes and Indhira. Frank credit restored. Indhira identity requires a primary-source match before creating or linking a contributor."
+    },
+    {
+      "recordingId": "cc845bf5-f383-4554-83a9-7b133876a144",
+      "title": "Arrancarte de mi piel (Me olvidaste)",
+      "originalOwner": "Monchy & Alexandra",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.qobuz.com/nz-en/album/hasta-el-fin-monchy-alexandra/fgflok2q7pjlb",
+        "https://music.apple.com/us/album/the-mix/27044901"
+      ],
+      "reason": "Original package and label distribution identify the duo. An individual lead voice within the duo does not make the recording an unrelated solo release. Individual vocal allocations are not certified."
+    },
+    {
+      "recordingId": "47f1d59e-5e92-4512-8a3d-c720f969ee65",
+      "title": "La loba",
+      "originalOwner": "Miriam Cruz",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.miriamcruz.com/",
+        "https://www.qobuz.com/es-es/album/nueva-vida-miriam-y-las-chicas/xxn2o6996wzpc"
+      ],
+      "reason": "The artist explicitly identifies Nueva Vida as her Miriam Cruz y las Chicas project. Preserve historical band credit; do not substitute another group. Artist biography dates the album to 1993; Qobuz 1981 display is inconsistent and is not accepted as dating evidence."
+    },
+    {
+      "recordingId": "d2303d7b-8ab4-40d4-84c0-aef2005e4f4f",
+      "title": "Me encantó lo de anoche",
+      "originalOwner": "José Peña Suazo y La Banda Gorda",
+      "status": "corrected_credits",
+      "sources": [
+        "https://music.amazon.co.uk/albums/B07RWQ59CF"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "2d7f74b6-b0cc-414d-9fb7-faac89bcc4c3",
+      "title": "Youlanda",
+      "originalOwner": "Joan Soriano",
+      "status": "corrected_credits",
+      "sources": [
+        "https://iasorecords.bandcamp.com/album/me-decid"
+      ],
+      "reason": "Original label describes Joan Soriano and his band with Fernando, Griselda and Andre guest leads; the first pass already restored those guest credits."
+    },
+    {
+      "recordingId": "22249226-5811-4a27-a9fa-95bd4815c48c",
+      "title": "Háblame de frente",
+      "originalOwner": "Joan Soriano",
+      "status": "corrected_credits",
+      "sources": [
+        "https://iasorecords.bandcamp.com/album/me-decid"
+      ],
+      "reason": "Original label describes Joan Soriano and his band with Fernando, Griselda and Andre guest leads; the first pass already restored those guest credits."
+    },
+    {
+      "recordingId": "0636f4fa-1fde-4b87-9b4e-4a6098219e2b",
+      "title": "Esto no lo venden",
+      "originalOwner": "José Peña Suazo y La Banda Gorda",
+      "status": "partially_resolved",
+      "sources": [
+        "https://music.amazon.co.uk/albums/B07RWQ59CF"
+      ],
+      "reason": "Band attribution is valid and Silvio Mora guest credit restored. Guarionex Castro is explicitly featured but is not established as either existing Guarionex Aquino identity; no guessed identity link."
+    },
+    {
+      "recordingId": "0f00ad33-60d6-4705-8688-de972556687c",
+      "title": "Shake it down",
+      "originalOwner": "Alina Vargas",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/dos-generaciones-wilfrido-vargas-alinna-vargas/o6w1vzxq8eu7b"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "ba33ce97-80ed-4d67-ba62-1480fcba28e0",
+      "title": "Tus cartas llegan",
+      "originalOwner": "Joan Soriano",
+      "status": "corrected_credits",
+      "sources": [
+        "https://iasorecords.bandcamp.com/album/me-decid"
+      ],
+      "reason": "Original label describes Joan Soriano and his band with Fernando, Griselda and Andre guest leads; the first pass already restored those guest credits."
+    },
+    {
+      "recordingId": "0080c981-9930-49ca-bfe0-fb5ab7c00085",
+      "title": "El SIDA",
+      "originalOwner": "Joan Soriano",
+      "status": "corrected_credits",
+      "sources": [
+        "https://iasorecords.bandcamp.com/album/me-decid"
+      ],
+      "reason": "Original label describes Joan Soriano and his band with Fernando, Griselda and Andre guest leads; the first pass already restored those guest credits."
+    },
+    {
+      "recordingId": "e63a471f-1cc4-4b07-beff-219c8b3b19d2",
+      "title": "Si ti no soy nada",
+      "originalOwner": "Sergio Vargas",
+      "status": "unresolved",
+      "sources": [
+        "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+        "https://open.spotify.com/intl-es/track/0DAIrqdR6auWwWNO5dn202"
+      ],
+      "reason": "Qobuz carries both artists as MainArtist on each track; another Karen edition supplies individual Alex Bueno track billing. The exact historical edition and recording identity need reconciliation before reassigning."
+    },
+    {
+      "recordingId": "57777696-d551-4eec-ab99-e08aafef257f",
+      "title": "Se levanta Nueva York",
+      "originalOwner": "Alina Vargas",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/dos-generaciones-wilfrido-vargas-alinna-vargas/o6w1vzxq8eu7b"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "55a81134-ab24-4472-91fc-4c4653d28c37",
+      "title": "Que se mueran los feos",
+      "originalOwner": "Alina Vargas",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/dos-generaciones-wilfrido-vargas-alinna-vargas/o6w1vzxq8eu7b"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "e1dcb507-edb7-415c-a147-9d8df42d9675",
+      "title": "Me fascina",
+      "originalOwner": "Alina Vargas",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/dos-generaciones-wilfrido-vargas-alinna-vargas/o6w1vzxq8eu7b"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "90750dd1-79dc-4807-b805-de0ceaaa793e",
+      "title": "Estoy Atrapado (Grunjeo)",
+      "originalOwner": "Grunjeo",
+      "status": "corrected_credits",
+      "sources": [
+        "https://music.apple.com/us/album/estoy-atrapado-grunjeo-single/1812207695"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "6c6e28c7-37dd-4197-b318-2c7269259232",
+      "title": "Tanto que tú diche",
+      "originalOwner": "Kinito Méndez",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/fr-fr/album/los-30-de-kinito-kinito-mendez/segr4b1m10rza"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "0a198da6-c61e-4cb1-b65a-c895f3740ea0",
+      "title": "Los hombres maduros",
+      "originalOwner": "Kinito Méndez",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/fr-fr/album/los-30-de-kinito-kinito-mendez/segr4b1m10rza"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "2b3f3d75-fa9b-4036-88ef-032700348d13",
+      "title": "Quiero perderme contigo",
+      "originalOwner": "Sergio Vargas",
+      "status": "unresolved",
+      "sources": [
+        "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+        "https://open.spotify.com/intl-es/track/0DAIrqdR6auWwWNO5dn202"
+      ],
+      "reason": "Qobuz carries both artists as MainArtist on each track; another Karen edition supplies individual Alex Bueno track billing. The exact historical edition and recording identity need reconciliation before reassigning."
+    },
+    {
+      "recordingId": "ce87f690-e38f-4698-88f8-35a2fd31035c",
+      "title": "Hazme tu esposa",
+      "originalOwner": "Monchy & Alexandra",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.qobuz.com/nz-en/album/hasta-el-fin-monchy-alexandra/fgflok2q7pjlb",
+        "https://music.apple.com/us/album/the-mix/27044901"
+      ],
+      "reason": "Original package and label distribution identify the duo. An individual lead voice within the duo does not make the recording an unrelated solo release. Individual vocal allocations are not certified."
+    },
+    {
+      "recordingId": "57bac019-4908-45a3-8397-12e40f28f74f",
+      "title": "Veneno",
+      "originalOwner": "Joan Soriano",
+      "status": "corrected_credits",
+      "sources": [
+        "https://iasorecords.bandcamp.com/album/me-decid"
+      ],
+      "reason": "Original label describes Joan Soriano and his band with Fernando, Griselda and Andre guest leads; the first pass already restored those guest credits."
+    },
+    {
+      "recordingId": "829b1b8d-46de-4668-a36e-dd7f09272ba7",
+      "title": "Baby, olvídame",
+      "originalOwner": "Monchy & Alexandra",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.qobuz.com/nz-en/album/hasta-el-fin-monchy-alexandra/fgflok2q7pjlb",
+        "https://music.apple.com/us/album/the-mix/27044901"
+      ],
+      "reason": "Original package and label distribution identify the duo. An individual lead voice within the duo does not make the recording an unrelated solo release. Individual vocal allocations are not certified."
+    },
+    {
+      "recordingId": "f29abbd2-8d90-4128-986b-c7edee75fbff",
+      "title": "Tómalo tú",
+      "originalOwner": "Miriam Cruz",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.miriamcruz.com/",
+        "https://www.qobuz.com/es-es/album/nueva-vida-miriam-y-las-chicas/xxn2o6996wzpc"
+      ],
+      "reason": "The artist explicitly identifies Nueva Vida as her Miriam Cruz y las Chicas project. Preserve historical band credit; do not substitute another group. Artist biography dates the album to 1993; Qobuz 1981 display is inconsistent and is not accepted as dating evidence."
+    },
+    {
+      "recordingId": "fc71e434-0797-4235-bbf1-b12ab00405a1",
+      "title": "Me siento tan sola",
+      "originalOwner": "Miriam Cruz",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.miriamcruz.com/",
+        "https://www.qobuz.com/es-es/album/nueva-vida-miriam-y-las-chicas/xxn2o6996wzpc"
+      ],
+      "reason": "The artist explicitly identifies Nueva Vida as her Miriam Cruz y las Chicas project. Preserve historical band credit; do not substitute another group. Artist biography dates the album to 1993; Qobuz 1981 display is inconsistent and is not accepted as dating evidence."
+    },
+    {
+      "recordingId": "6e2c1583-9f5d-4384-89ac-c802509a6e7c",
+      "title": "El candado del amor",
+      "originalOwner": "Tony Seval",
+      "status": "unresolved",
+      "sources": [],
+      "reason": "Imported Aramis Camilo credit and community compilation listings are leads only. No original packaging or official track-level source was found for this exact 14-track edition."
+    },
+    {
+      "recordingId": "65471d18-a015-417b-a2bb-3a4e8c4f4577",
+      "title": "La condena",
+      "originalOwner": "Kinito Méndez",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/fr-fr/album/los-30-de-kinito-kinito-mendez/segr4b1m10rza"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "a27f06da-67fe-41be-856c-989339795600",
+      "title": "Voy a llenarte toda",
+      "originalOwner": "Sergio Vargas",
+      "status": "unresolved",
+      "sources": [
+        "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+        "https://open.spotify.com/intl-es/track/0DAIrqdR6auWwWNO5dn202"
+      ],
+      "reason": "Qobuz carries both artists as MainArtist on each track; another Karen edition supplies individual Alex Bueno track billing. The exact historical edition and recording identity need reconciliation before reassigning."
+    },
+    {
+      "recordingId": "308f9546-91a6-49f9-9e44-00acc9f65fc8",
+      "title": "Puedo",
+      "originalOwner": "Miriam Cruz",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.miriamcruz.com/",
+        "https://www.qobuz.com/es-es/album/nueva-vida-miriam-y-las-chicas/xxn2o6996wzpc"
+      ],
+      "reason": "The artist explicitly identifies Nueva Vida as her Miriam Cruz y las Chicas project. Preserve historical band credit; do not substitute another group. Artist biography dates the album to 1993; Qobuz 1981 display is inconsistent and is not accepted as dating evidence."
+    },
+    {
+      "recordingId": "b5278ea4-86ce-494f-97b6-2a7c307f5a3d",
+      "title": "Ay ombe",
+      "originalOwner": "Alina Vargas",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/dos-generaciones-wilfrido-vargas-alinna-vargas/o6w1vzxq8eu7b"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "2fa09f0d-9032-4847-bf0b-b5f82f59db8e",
+      "title": "Te amaría (trance)",
+      "originalOwner": "Monchy & Alexandra",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.qobuz.com/nz-en/album/hasta-el-fin-monchy-alexandra/fgflok2q7pjlb",
+        "https://music.apple.com/us/album/the-mix/27044901"
+      ],
+      "reason": "Original package and label distribution identify the duo. An individual lead voice within the duo does not make the recording an unrelated solo release. Individual vocal allocations are not certified."
+    },
+    {
+      "recordingId": "680124c8-6233-47e7-9476-5cefdcc0f9d8",
+      "title": "Si muero de anhelo",
+      "originalOwner": "Miriam Cruz",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.miriamcruz.com/",
+        "https://www.qobuz.com/es-es/album/nueva-vida-miriam-y-las-chicas/xxn2o6996wzpc"
+      ],
+      "reason": "The artist explicitly identifies Nueva Vida as her Miriam Cruz y las Chicas project. Preserve historical band credit; do not substitute another group. Artist biography dates the album to 1993; Qobuz 1981 display is inconsistent and is not accepted as dating evidence."
+    },
+    {
+      "recordingId": "02990a6a-ccdd-4d43-be40-73610630bb15",
+      "title": "Sin ti no hay nada",
+      "originalOwner": "Sergio Vargas",
+      "status": "unresolved",
+      "sources": [
+        "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+        "https://open.spotify.com/intl-es/track/0DAIrqdR6auWwWNO5dn202"
+      ],
+      "reason": "Qobuz carries both artists as MainArtist on each track; another Karen edition supplies individual Alex Bueno track billing. The exact historical edition and recording identity need reconciliation before reassigning."
+    },
+    {
+      "recordingId": "3d1c54e7-b045-4105-9342-8748938200ca",
+      "title": "En bandolera",
+      "originalOwner": "Sergio Vargas",
+      "status": "unresolved",
+      "sources": [
+        "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+        "https://open.spotify.com/intl-es/track/0DAIrqdR6auWwWNO5dn202"
+      ],
+      "reason": "Qobuz carries both artists as MainArtist on each track; another Karen edition supplies individual Alex Bueno track billing. The exact historical edition and recording identity need reconciliation before reassigning."
+    },
+    {
+      "recordingId": "2140aff9-fc6c-449a-abb7-9dea805a3a5e",
+      "title": "Otra vez",
+      "originalOwner": "Miriam Cruz",
+      "status": "valid_attribution",
+      "sources": [
+        "https://www.miriamcruz.com/",
+        "https://www.qobuz.com/es-es/album/nueva-vida-miriam-y-las-chicas/xxn2o6996wzpc"
+      ],
+      "reason": "The artist explicitly identifies Nueva Vida as her Miriam Cruz y las Chicas project. Preserve historical band credit; do not substitute another group. Artist biography dates the album to 1993; Qobuz 1981 display is inconsistent and is not accepted as dating evidence."
+    },
+    {
+      "recordingId": "063d5af7-ec76-426a-bad6-d461fd761ac9",
+      "title": "El día de mi boda",
+      "originalOwner": "Alina Vargas",
+      "status": "corrected_credits",
+      "sources": [
+        "https://www.qobuz.com/us-en/album/dos-generaciones-wilfrido-vargas-alinna-vargas/o6w1vzxq8eu7b"
+      ],
+      "reason": "Existing attribution is valid for the collaboration; missing supported performer credits added."
+    },
+    {
+      "recordingId": "a846be9f-6c44-4600-9e17-559c71d90a78",
+      "title": "A escondidas",
+      "originalOwner": "Alex Bueno",
+      "status": "corrected_owner",
+      "sources": [
+        "https://www.qobuz.com/ar-es/album/4x4-en-salsa-vol-1-varios-artistas/rq3bbgb91vfka"
+      ],
+      "reason": "Official track billing establishes the corrected principal artist; contributor credits retained."
+    },
+    {
+      "recordingId": "0aa41f86-96f3-48f3-9749-c96fa6012209",
+      "title": "El Pichirri",
+      "originalOwner": "Ito Ogamy",
+      "status": "corrected_owner",
+      "sources": [
+        "https://music.apple.com/us/album/el-pichirri-feat-kiko-el-crazy-cherry-scom-ito-gamy-single/1495066844"
+      ],
+      "reason": "Official track billing establishes the corrected principal artist; contributor credits retained."
+    },
+    {
+      "recordingId": "8f40a15c-d665-48a9-a049-46adc996c9f1",
+      "title": "Voy pa’llá",
+      "originalOwner": "Raulín Rodríguez",
+      "status": "corrected_owner",
+      "sources": [
+        "https://www.qobuz.com/ch-fr/album/frente-a-frente-dos-estrellas-en-uno-anthony-santos-raulin-rodriguez/snnnr88p0n21b"
+      ],
+      "reason": "Official track billing establishes the corrected principal artist; contributor credits retained."
+    },
+    {
+      "recordingId": "a717a7cd-e39b-4a19-aa67-4c943bd7d378",
+      "title": "Me enamoré",
+      "originalOwner": "Raulín Rodríguez",
+      "status": "corrected_owner",
+      "sources": [
+        "https://www.qobuz.com/ch-fr/album/frente-a-frente-dos-estrellas-en-uno-anthony-santos-raulin-rodriguez/snnnr88p0n21b"
+      ],
+      "reason": "Official track billing establishes the corrected principal artist; contributor credits retained."
+    },
+    {
+      "recordingId": "67f225a8-8bc7-4135-8c4a-43d5daf683b8",
+      "title": "Corazón culpable",
+      "originalOwner": "Raulín Rodríguez",
+      "status": "corrected_owner",
+      "sources": [
+        "https://www.qobuz.com/ch-fr/album/frente-a-frente-dos-estrellas-en-uno-anthony-santos-raulin-rodriguez/snnnr88p0n21b"
+      ],
+      "reason": "Official track billing establishes the corrected principal artist; contributor credits retained."
+    },
+    {
+      "recordingId": "9cf7d118-3be2-47f6-96c9-7c177d96b55e",
+      "title": "Porque te fuiste",
+      "originalOwner": "Raulín Rodríguez",
+      "status": "corrected_owner",
+      "sources": [
+        "https://www.qobuz.com/ch-fr/album/frente-a-frente-dos-estrellas-en-uno-anthony-santos-raulin-rodriguez/snnnr88p0n21b"
+      ],
+      "reason": "Official track billing establishes the corrected principal artist; contributor credits retained."
+    },
+    {
+      "recordingId": "456098cf-a906-490f-8742-d47f11b9fcf7",
+      "title": "Porque tanto problema",
+      "originalOwner": "Raulín Rodríguez",
+      "status": "corrected_owner",
+      "sources": [
+        "https://www.qobuz.com/ch-fr/album/frente-a-frente-dos-estrellas-en-uno-anthony-santos-raulin-rodriguez/snnnr88p0n21b"
+      ],
+      "reason": "Official track billing establishes the corrected principal artist; contributor credits retained."
+    },
+    {
+      "recordingId": "2bca4277-562b-4058-a28e-96208d294b6e",
+      "title": "Voy pa’llá (2023 remastered)",
+      "originalOwner": "Raulín Rodríguez",
+      "status": "corrected_owner",
+      "sources": [
+        "https://music.apple.com/us/song/1717614018"
+      ],
+      "reason": "Official track billing establishes the corrected principal artist; contributor credits retained."
+    },
+    {
+      "recordingId": "ad289358-585a-4522-a495-6329bf76bcab",
+      "title": "Me enamoré (2023 remastered)",
+      "originalOwner": "Raulín Rodríguez",
+      "status": "corrected_owner",
+      "sources": [
+        "https://www.youtube.com/watch?v=a-78bGQLN4U"
+      ],
+      "reason": "Official track billing establishes the corrected principal artist; contributor credits retained."
+    },
+    {
+      "recordingId": "800af5c6-dc0e-4ef4-beae-638f253c64ac",
+      "title": "Corazón cupable (2023 remastered)",
+      "originalOwner": "Raulín Rodríguez",
+      "status": "corrected_owner",
+      "sources": [
+        "https://www.youtube.com/watch?v=5pHbYSOu2JY"
+      ],
+      "reason": "Official track billing establishes the corrected principal artist; contributor credits retained."
+    },
+    {
+      "recordingId": "f87bb494-604e-4276-81d4-1b340f8d80ff",
+      "title": "Porque te fuiste (2023 remastered)",
+      "originalOwner": "Raulín Rodríguez",
+      "status": "corrected_owner",
+      "sources": [
+        "https://www.youtube.com/watch?v=_mRrSu-Eu-s"
+      ],
+      "reason": "Official track billing establishes the corrected principal artist; contributor credits retained."
+    },
+    {
+      "recordingId": "fa13a67f-6971-4a3a-a272-66fe68ea798d",
+      "title": "Porqué tanto problema (2023 remastered)",
+      "originalOwner": "Raulín Rodríguez",
+      "status": "corrected_owner",
+      "sources": [
+        "https://www.youtube.com/watch?v=HtzQ_bfdLVc"
+      ],
+      "reason": "Official track billing establishes the corrected principal artist; contributor credits retained."
+    }
+  ]
+}

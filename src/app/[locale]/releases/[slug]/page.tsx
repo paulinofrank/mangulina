@@ -96,19 +96,21 @@ async function ReleaseHero({ release }: { release: ReleasePageData }) {
             {release.title}
           </h1>
 
-          {release.artist && (
+          {(release.artists ?? (release.artist ? [release.artist] : [])).length > 0 && (
             <p className="mt-3 text-lg text-gray-700">
               {t("pages.releases.by")}{" "}
-              {release.artist.slug ? (
-                <Link
-                  href={`/artists/${release.artist.slug}`}
-                  className="font-semibold text-[#002D62] underline-offset-4 hover:text-[#CE1126] hover:underline"
-                >
-                  {release.artist.name}
-                </Link>
-              ) : (
-                <span className="font-semibold text-[#002D62]">{release.artist.name}</span>
-              )}
+              {(release.artists ?? (release.artist ? [release.artist] : [])).map((artist, index) => (
+                <span key={artist.id}>
+                  {index > 0 && " · "}
+                  {artist.slug ? (
+                    <Link href={`/artists/${artist.slug}`} className="font-semibold text-[#002D62] underline-offset-4 hover:text-[#CE1126] hover:underline">
+                      {artist.name}
+                    </Link>
+                  ) : (
+                    <span className="font-semibold text-[#002D62]">{artist.name}</span>
+                  )}
+                </span>
+              ))}
             </p>
           )}
 
@@ -260,15 +262,13 @@ export default async function ReleasePage({ params }: PageProps) {
     "@type": "MusicAlbum",
     name: release.title,
     url: absoluteUrl(releasePath, locale),
-    byArtist: release.artist
-      ? {
+    byArtist: (release.artists ?? (release.artist ? [release.artist] : [])).map((artist) => ({
           "@type": "MusicGroup",
-          name: release.artist.name,
-          url: release.artist.slug
-            ? absoluteUrl(`/artists/${release.artist.slug}`, locale)
+          name: artist.name,
+          url: artist.slug
+            ? absoluteUrl(`/artists/${artist.slug}`, locale)
             : undefined,
-        }
-      : undefined,
+        })),
     image: release.coverImageUrl ?? undefined,
     datePublished: formatDate(release) ?? undefined,
     numTracks: release.tracks.length || undefined,

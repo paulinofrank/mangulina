@@ -1,0 +1,738 @@
+{
+  "recordings": [
+    {
+      "id": "38b0f540-f817-42dc-94ce-bfd626dd0f1c",
+      "title": "A nadie le importa",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 257600,
+      "metadata": {
+        "id": "ce94264b-3fa5-4d72-ba8a-fd8a6f9b2814",
+        "isrcs": [],
+        "title": "A nadie le importa",
+        "video": false,
+        "length": 257600,
+        "artist-credit": [
+          {
+            "name": "Carlos Manuel",
+            "artist": {
+              "id": "17caec63-7cb1-4c34-b5d5-02328e906fe8",
+              "name": "Carlos Manuel",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Manuel, Carlos",
+              "disambiguation": "aka El Zafiro, merengue artist"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "2020-07-04"
+      },
+      "created_at": "2026-05-18T13:28:58.670Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 1,
+      "mbid": "ce94264b-3fa5-4d72-ba8a-fd8a6f9b2814",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T13:42:09.416Z",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "a-nadie-le-importa-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "8ec087d4-7728-4d80-bec6-7992e6ffec6c",
+      "title": "El alicate",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 275066,
+      "metadata": {
+        "id": "63a05d93-dfd6-4cf9-88d8-7fea4ef240dd",
+        "isrcs": [],
+        "title": "El alicate",
+        "video": false,
+        "length": 275066,
+        "artist-credit": [
+          {
+            "name": "Aramis Camilo",
+            "artist": {
+              "id": "331a3306-4631-440a-a0f2-e75dcdddcf0e",
+              "name": "Aramis Camilo",
+              "type": null,
+              "country": null,
+              "type-id": null,
+              "sort-name": "Camilo, Aramis",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1984"
+      },
+      "created_at": "2026-05-18T13:28:59.036Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 1,
+      "mbid": "63a05d93-dfd6-4cf9-88d8-7fea4ef240dd",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T10:47:15.852Z",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "el-alicate-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "6e2c1583-9f5d-4384-89ac-c802509a6e7c",
+      "title": "El candado del amor",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 225960,
+      "metadata": {
+        "id": "ca3d6642-2d95-4031-baed-aa9fc87aa516",
+        "isrcs": [],
+        "title": "El candado del amor",
+        "video": false,
+        "length": 225960,
+        "artist-credit": [
+          {
+            "name": "Aramis Camilo",
+            "artist": {
+              "id": "331a3306-4631-440a-a0f2-e75dcdddcf0e",
+              "name": "Aramis Camilo",
+              "type": null,
+              "country": null,
+              "type-id": null,
+              "sort-name": "Camilo, Aramis",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": ""
+      },
+      "created_at": "2026-05-18T13:28:59.526Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 0,
+      "mbid": "ca3d6642-2d95-4031-baed-aa9fc87aa516",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-06-09T15:35:45.333Z",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "el-candado-del-amor-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "8158e565-46b3-486c-9257-c9056f34c0ae",
+      "title": "El cheque",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 235093,
+      "metadata": {
+        "id": "1dd83fcf-8b7d-43b8-b7b1-e7a62a76b620",
+        "isrcs": [],
+        "title": "El cheque",
+        "video": false,
+        "length": 235093,
+        "artist-credit": [
+          {
+            "name": "Carlos Manuel",
+            "artist": {
+              "id": "17caec63-7cb1-4c34-b5d5-02328e906fe8",
+              "name": "Carlos Manuel",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Manuel, Carlos",
+              "disambiguation": "aka El Zafiro, merengue artist"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": ""
+      },
+      "created_at": "2026-05-18T13:28:59.891Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 1,
+      "mbid": "1dd83fcf-8b7d-43b8-b7b1-e7a62a76b620",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T11:10:23.574Z",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "el-cheque-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "4f0b8de9-f23e-46de-b477-9e6be1e1c342",
+      "title": "El motor",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 224866,
+      "metadata": {
+        "id": "d2708c1b-caf8-42a8-b484-8b62727c0479",
+        "isrcs": [],
+        "title": "El motor",
+        "video": false,
+        "length": 224866,
+        "artist-credit": [
+          {
+            "name": "Aramis Camilo",
+            "artist": {
+              "id": "331a3306-4631-440a-a0f2-e75dcdddcf0e",
+              "name": "Aramis Camilo",
+              "type": null,
+              "country": null,
+              "type-id": null,
+              "sort-name": "Camilo, Aramis",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": ""
+      },
+      "created_at": "2026-05-18T13:28:58.548Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 1,
+      "mbid": "d2708c1b-caf8-42a8-b484-8b62727c0479",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T10:09:11.747Z",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "el-motor-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "84891ace-1368-4899-868c-67aac817286e",
+      "title": "El muerto",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 244693,
+      "metadata": {
+        "id": "a2bbd2e5-bf1c-4f38-9a77-8c5973d6f07f",
+        "isrcs": [],
+        "title": "El muerto",
+        "video": false,
+        "length": 244693,
+        "artist-credit": [
+          {
+            "name": "Tony Seval",
+            "artist": {
+              "id": "8fdacd0b-dc2d-4bfc-89a0-da213b2586c1",
+              "name": "Tony Seval",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Seval, Tony",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1984"
+      },
+      "created_at": "2026-05-18T13:28:59.159Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 1,
+      "mbid": "a2bbd2e5-bf1c-4f38-9a77-8c5973d6f07f",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T12:48:28.103Z",
+      "genre_id": "1",
+      "subgenre_id": null,
+      "ai_confidence": "0.8",
+      "ai_reason": "genre-enrich: apple=Latin + artist prior → Merengue",
+      "classified_at": "2026-06-13T02:02:55.970Z",
+      "recording_context": "secular",
+      "slug": "el-muerto-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "5bc79bfc-a11a-4a74-afe4-e3cdd732574f",
+      "title": "Felicidades",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 239573,
+      "metadata": {
+        "id": "3515de8a-077e-46eb-a95d-fabf5dafbb80",
+        "isrcs": [],
+        "title": "Felicidades",
+        "video": false,
+        "length": 239573,
+        "artist-credit": [
+          {
+            "name": "Carlos Manuel",
+            "artist": {
+              "id": "17caec63-7cb1-4c34-b5d5-02328e906fe8",
+              "name": "Carlos Manuel",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Manuel, Carlos",
+              "disambiguation": "aka El Zafiro, merengue artist"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": ""
+      },
+      "created_at": "2026-05-18T13:28:58.431Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 1,
+      "mbid": "3515de8a-077e-46eb-a95d-fabf5dafbb80",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T15:46:41.392Z",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "felicidades-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "7a60dd1c-50a0-461b-896e-5a1c47d2fa7a",
+      "title": "Hello",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 292706,
+      "metadata": {
+        "id": "cb61be22-15a6-4e63-a7fd-70cfc2e103a6",
+        "isrcs": [],
+        "title": "Hello",
+        "video": false,
+        "length": 292706,
+        "artist-credit": [
+          {
+            "name": "Aramis Camilo",
+            "artist": {
+              "id": "331a3306-4631-440a-a0f2-e75dcdddcf0e",
+              "name": "Aramis Camilo",
+              "type": null,
+              "country": null,
+              "type-id": null,
+              "sort-name": "Camilo, Aramis",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": ""
+      },
+      "created_at": "2026-05-18T13:28:59.281Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 1,
+      "mbid": "cb61be22-15a6-4e63-a7fd-70cfc2e103a6",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T10:14:47.306Z",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "hello-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "3bfddbe1-13d6-470d-a11a-b638ed8d26cd",
+      "title": "Porque tú me gustas",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 237173,
+      "metadata": {
+        "id": "25a41e09-cfd8-47f3-868e-c54fd1fd869a",
+        "isrcs": [],
+        "title": "Porque tú me gustas",
+        "video": false,
+        "length": 237173,
+        "artist-credit": [
+          {
+            "name": "Carlos Manuel",
+            "artist": {
+              "id": "17caec63-7cb1-4c34-b5d5-02328e906fe8",
+              "name": "Carlos Manuel",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Manuel, Carlos",
+              "disambiguation": "aka El Zafiro, merengue artist"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": ""
+      },
+      "created_at": "2026-05-18T13:28:58.918Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 1,
+      "mbid": "25a41e09-cfd8-47f3-868e-c54fd1fd869a",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T16:39:09.374Z",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "porque-tu-me-gustas-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "c2985d99-4bc4-4b32-a299-f1de7e048e7b",
+      "title": "Tú mi cigarrillo",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 264733,
+      "metadata": {
+        "id": "9e343724-24e7-4696-8482-4523cf76d0ac",
+        "isrcs": [],
+        "title": "Tú mi cigarrillo",
+        "video": false,
+        "length": 264733,
+        "artist-credit": [
+          {
+            "name": "Aramis Camilo",
+            "artist": {
+              "id": "331a3306-4631-440a-a0f2-e75dcdddcf0e",
+              "name": "Aramis Camilo",
+              "type": null,
+              "country": null,
+              "type-id": null,
+              "sort-name": "Camilo, Aramis",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": ""
+      },
+      "created_at": "2026-05-18T13:28:59.771Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 1,
+      "mbid": "9e343724-24e7-4696-8482-4523cf76d0ac",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T14:59:17.461Z",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "tu-mi-cigarrillo-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "1cc97501-8575-4ff4-b49b-8ff04575eaa6",
+      "title": "Un poco más",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 265533,
+      "metadata": {
+        "id": "c41a61be-e20b-4bf5-9bd4-f5fe5436b8e7",
+        "isrcs": [],
+        "title": "Un poco más",
+        "video": false,
+        "length": 265533,
+        "artist-credit": [
+          {
+            "name": "Carlos Manuel",
+            "artist": {
+              "id": "17caec63-7cb1-4c34-b5d5-02328e906fe8",
+              "name": "Carlos Manuel",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Manuel, Carlos",
+              "disambiguation": "aka El Zafiro, merengue artist"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": ""
+      },
+      "created_at": "2026-05-18T13:28:59.402Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 0,
+      "mbid": "c41a61be-e20b-4bf5-9bd4-f5fe5436b8e7",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-06-09T15:35:45.333Z",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "un-poco-mas-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "548a7846-fd2e-42a9-9245-8fff9a76e7c8",
+      "title": "Ven llévame contigo",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 259493,
+      "metadata": {
+        "id": "85f49998-6f95-4d3f-9fe5-38c8622e638b",
+        "isrcs": [],
+        "title": "Ven llévame contigo",
+        "video": false,
+        "length": 259493,
+        "artist-credit": [
+          {
+            "name": "Aramis Camilo",
+            "artist": {
+              "id": "331a3306-4631-440a-a0f2-e75dcdddcf0e",
+              "name": "Aramis Camilo",
+              "type": null,
+              "country": null,
+              "type-id": null,
+              "sort-name": "Camilo, Aramis",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": ""
+      },
+      "created_at": "2026-05-18T13:28:58.797Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 1,
+      "mbid": "85f49998-6f95-4d3f-9fe5-38c8622e638b",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T10:03:54.693Z",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "ven-llevame-contigo-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "9f4b02ae-1349-45e8-b835-b86cfaec31bf",
+      "title": "Y tú no correspondes",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 231373,
+      "metadata": {
+        "id": "71360481-b90d-4f76-8e65-1f9db79d2967",
+        "isrcs": [],
+        "title": "Y tú no correspondes",
+        "video": false,
+        "length": 231373,
+        "artist-credit": [
+          {
+            "name": "Carlos Manuel",
+            "artist": {
+              "id": "17caec63-7cb1-4c34-b5d5-02328e906fe8",
+              "name": "Carlos Manuel",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Manuel, Carlos",
+              "disambiguation": "aka El Zafiro, merengue artist"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": ""
+      },
+      "created_at": "2026-05-18T13:28:59.647Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 1,
+      "mbid": "71360481-b90d-4f76-8e65-1f9db79d2967",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T12:22:49.799Z",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "y-tu-no-correspondes-tony-seval",
+      "artist_name": "Tony Seval"
+    },
+    {
+      "id": "5dbf5a25-50b8-4bba-82a6-290c28ae1e3d",
+      "title": "Yo digo que no",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 251200,
+      "metadata": {
+        "id": "e9479d32-291b-4e9c-9843-4977c21c6af7",
+        "isrcs": [],
+        "title": "Yo digo que no",
+        "video": false,
+        "length": 251200,
+        "artist-credit": [
+          {
+            "name": "Tony Seval",
+            "artist": {
+              "id": "8fdacd0b-dc2d-4bfc-89a0-da213b2586c1",
+              "name": "Tony Seval",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Seval, Tony",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1984"
+      },
+      "created_at": "2026-05-18T13:29:00.014Z",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "recording_year": null,
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "views": 1,
+      "mbid": "e9479d32-291b-4e9c-9843-4977c21c6af7",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T12:33:38.042Z",
+      "genre_id": "1",
+      "subgenre_id": null,
+      "ai_confidence": "0.82",
+      "ai_reason": "genre-enrich: apple=Música tropical + artist prior → Merengue",
+      "classified_at": "2026-06-13T01:50:26.102Z",
+      "recording_context": "secular",
+      "slug": "yo-digo-que-no-tony-seval",
+      "artist_name": "Tony Seval"
+    }
+  ],
+  "credits": [],
+  "releases": [
+    {
+      "id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "title": "La combinación perfecta",
+      "type": "album",
+      "release_year": 1985,
+      "label": null,
+      "country": null,
+      "created_at": "2026-05-16T01:58:40.018Z",
+      "release_group_id": "942ec7cb-3eca-4568-843a-f991597dc537",
+      "release_artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "mbid": "301c1c59-63e3-4dd9-b903-0edf96e2559c",
+      "disambiguation": null,
+      "status": "Official",
+      "packaging": null,
+      "barcode": null,
+      "catalog_number": null,
+      "date": null,
+      "label_id": null,
+      "metadata": {
+        "id": "301c1c59-63e3-4dd9-b903-0edf96e2559c",
+        "asin": null,
+        "title": "La combinación perfecta",
+        "status": "Official",
+        "barcode": null,
+        "quality": "normal",
+        "packaging": null,
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "packaging-id": null,
+        "release-group": {
+          "id": "86d0f08e-8424-356b-84f3-1dc5d129ae0d",
+          "title": "La combinación perfecta",
+          "primary-type": "Album",
+          "disambiguation": "",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "first-release-date": "",
+          "secondary-type-ids": []
+        },
+        "disambiguation": "",
+        "cover-art-archive": {
+          "back": false,
+          "count": 0,
+          "front": false,
+          "artwork": false,
+          "darkened": false
+        },
+        "text-representation": {
+          "script": "Latn",
+          "language": "spa"
+        }
+      },
+      "updated_at": "2026-09-15T23:11:02.976Z",
+      "year": null,
+      "slug": "la-combinacion-perfecta-tony-seval",
+      "views": 0,
+      "has_cover_image": false
+    }
+  ],
+  "releaseArtists": [
+    {
+      "id": "fbb7bb36-3a86-41b2-afb7-e38fd57b4898",
+      "release_id": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "artist_id": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "role": "primary",
+      "credited_as": "Tony Seval",
+      "display_order": 0,
+      "created_at": "2026-07-03T22:15:00.455Z",
+      "updated_at": "2026-07-03T22:22:35.024Z"
+    }
+  ]
+}

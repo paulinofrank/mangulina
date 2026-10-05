@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "GuarionexSavedAsDraft": true,
+    "GuarionexCreditStored": true,
+    "GuarionexCreditEvidence": true,
+    "SandyProyectoUnoPublic": true,
+    "CacheRefreshed": true,
+    "TenNewPagesAndTenRetiredUrls": false
+  },
+  "error": "TenNewPagesAndTenRetiredUrls"
+}

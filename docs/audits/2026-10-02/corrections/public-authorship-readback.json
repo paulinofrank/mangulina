@@ -1,0 +1,1186 @@
+[
+  {
+    "workId": "c0e22b99-bd46-4b5d-8b49-2c60362d555c",
+    "recordingId": "9b116b0a-143a-4860-b019-88939c9461d3",
+    "expected": [
+      {
+        "identityId": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "role": "composer"
+      },
+      {
+        "identityId": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "role": "lyricist"
+      },
+      {
+        "identityId": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "role": "composer"
+      },
+      {
+        "identityId": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "display_name": "Robi Draco Rosa",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "display_name": "Luis Gomez Escolar",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "display_name": "Luis Gomez Escolar",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "display_name": "Robi Draco Rosa",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "dad825f6-1eb8-4398-9ad4-16eb6a9167b3",
+    "recordingId": "931ea843-1166-488c-bb25-8b69f3b9fff3",
+    "expected": [
+      {
+        "identityId": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "role": "composer"
+      },
+      {
+        "identityId": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "role": "lyricist"
+      },
+      {
+        "identityId": "3037b060-5e05-4977-8132-160ceba90824",
+        "role": "composer"
+      },
+      {
+        "identityId": "3037b060-5e05-4977-8132-160ceba90824",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3037b060-5e05-4977-8132-160ceba90824",
+        "display_name": "Jose Manuel Navarro",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3037b060-5e05-4977-8132-160ceba90824",
+        "display_name": "Jose Manuel Navarro",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "display_name": "Robi Draco Rosa",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "display_name": "Robi Draco Rosa",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "b3f3f102-b2c0-4814-ba56-a105b9b75673",
+    "recordingId": "9388a785-45e4-4807-969a-ec438f59f139",
+    "expected": [
+      {
+        "identityId": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "role": "composer"
+      },
+      {
+        "identityId": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "role": "lyricist"
+      },
+      {
+        "identityId": "3037b060-5e05-4977-8132-160ceba90824",
+        "role": "composer"
+      },
+      {
+        "identityId": "3037b060-5e05-4977-8132-160ceba90824",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "display_name": "Robi Draco Rosa",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "display_name": "Robi Draco Rosa",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3037b060-5e05-4977-8132-160ceba90824",
+        "display_name": "Jose Manuel Navarro",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3037b060-5e05-4977-8132-160ceba90824",
+        "display_name": "Jose Manuel Navarro",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "6dfcf5c2-4822-4d61-a5fe-ad9bd2dbb99c",
+    "recordingId": "c3c1daec-09d0-47f6-9184-4db3beec0310",
+    "expected": [
+      {
+        "identityId": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "role": "composer"
+      },
+      {
+        "identityId": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "role": "lyricist"
+      },
+      {
+        "identityId": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "role": "composer"
+      },
+      {
+        "identityId": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "display_name": "Robi Draco Rosa",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "display_name": "Luis Gómez Escolar",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "display_name": "Luis Gómez Escolar",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "display_name": "Robi Draco Rosa",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "22087d7f-0fd6-4389-b7b5-aa90df6b06f0",
+    "recordingId": "f8ebc18f-7786-46f0-bdb3-bdda472ad605",
+    "expected": [
+      {
+        "identityId": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "role": "composer"
+      },
+      {
+        "identityId": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "display_name": "Ruben Blades",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "display_name": "Ruben Blades",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "43c3b9b9-9522-473b-bce8-c371d76b26ec",
+    "recordingId": "449ab78e-5785-40c9-bf7b-4eae20740ccb",
+    "expected": [
+      {
+        "identityId": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "role": "composer"
+      },
+      {
+        "identityId": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "display_name": "Ruben Blades",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "display_name": "Ruben Blades",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "06cd00cf-7e18-408f-b5ae-e5222e4befeb",
+    "recordingId": "5e90a8a4-4412-4045-8bb5-b73ed9946534",
+    "expected": [
+      {
+        "identityId": "a4e5cb44-9bf0-4d72-a1ec-f806ff1e4e6b",
+        "role": "composer"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "a4e5cb44-9bf0-4d72-a1ec-f806ff1e4e6b",
+        "display_name": "Violeta Parra",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "e958d69d-652e-4965-a687-9c05ab34e709",
+    "recordingId": "13d4ae21-e062-4c02-8b97-2b8351805ab9",
+    "expected": [
+      {
+        "identityId": "e9fbf123-3309-4512-9b47-77043baedb52",
+        "role": "composer"
+      },
+      {
+        "identityId": "e9fbf123-3309-4512-9b47-77043baedb52",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e9fbf123-3309-4512-9b47-77043baedb52",
+        "display_name": "Marco Antonio Solis",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e9fbf123-3309-4512-9b47-77043baedb52",
+        "display_name": "Marco Antonio Solis",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "d641d2fd-41cd-4314-bfaf-6665d5c84de4",
+    "recordingId": "4fc9d66f-caf3-40f6-a25e-6cc25539560c",
+    "expected": [
+      {
+        "identityId": "cc147023-f6df-4413-a5f6-d0d696934f7f",
+        "role": "composer"
+      },
+      {
+        "identityId": "cc147023-f6df-4413-a5f6-d0d696934f7f",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "cc147023-f6df-4413-a5f6-d0d696934f7f",
+        "display_name": "Julio Delgado",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "cc147023-f6df-4413-a5f6-d0d696934f7f",
+        "display_name": "Julio Delgado",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "8106ef2c-b9ac-43c7-9635-7847631bda42",
+    "recordingId": "ef96fa78-56b4-4882-8e57-d29e06ecc815",
+    "expected": [
+      {
+        "identityId": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "role": "composer"
+      },
+      {
+        "identityId": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "role": "lyricist"
+      },
+      {
+        "identityId": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "role": "composer"
+      },
+      {
+        "identityId": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "display_name": "Draco Cornelius Rosa",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "display_name": "Luis Gómez Escolar",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "display_name": "Draco Cornelius Rosa",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "display_name": "Luis Gómez Escolar",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "83db2dec-3045-4564-abfd-586ed6688d21",
+    "recordingId": "a8a63ad8-9bcf-4a93-bd51-2bc07d881ad8",
+    "expected": [
+      {
+        "identityId": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "role": "composer"
+      },
+      {
+        "identityId": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "display_name": "Ruben Blades",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "display_name": "Ruben Blades",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "4a1fc0e5-72c7-45bd-9bbc-f083b63e6b48",
+    "recordingId": "42cb1560-b66f-44c7-9589-923ff46346eb",
+    "expected": [
+      {
+        "identityId": "55973d5d-c795-47be-9d22-cfe38ab94432",
+        "role": "songwriter"
+      },
+      {
+        "identityId": "3a5096ad-8dee-4f8d-96a9-afbdc2f6ecec",
+        "role": "songwriter"
+      }
+    ],
+    "actual": [
+      {
+        "role": "songwriter",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "55973d5d-c795-47be-9d22-cfe38ab94432",
+        "display_name": "Fher Olvera",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "songwriter",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3a5096ad-8dee-4f8d-96a9-afbdc2f6ecec",
+        "display_name": "Sergio Vallin",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "c65efbe8-4b1e-4061-b2ea-0073f3925409",
+    "recordingId": "ca8186e5-afee-4509-a84e-9bdb250c9a2b",
+    "expected": [
+      {
+        "identityId": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "role": "composer"
+      },
+      {
+        "identityId": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "role": "songwriter"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "display_name": "Ruben Blades",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "songwriter",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "display_name": "Ruben Blades",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "64107b7a-8ff9-43db-b55b-4ecddc5cb4f3",
+    "recordingId": "9c3c3e4c-72e5-4fa7-8f36-4bfa9bdef8a5",
+    "expected": [
+      {
+        "identityId": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "role": "composer"
+      },
+      {
+        "identityId": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "role": "lyricist"
+      },
+      {
+        "identityId": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "role": "composer"
+      },
+      {
+        "identityId": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "display_name": "Luis Gómez Escolar",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "display_name": "R. Rosa",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+        "display_name": "R. Rosa",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+        "display_name": "Luis Gómez Escolar",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "4b7ab489-53dc-493a-8350-c6b021457bf0",
+    "recordingId": "34604f5e-29cd-461e-9a50-9040e51816cd",
+    "expected": [
+      {
+        "identityId": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "role": "composer"
+      },
+      {
+        "identityId": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "role": "songwriter"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "display_name": "Ruben Blades",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "songwriter",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "display_name": "Ruben Blades",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "a6c1cc75-f27f-4629-8bf2-b29b142c0b01",
+    "recordingId": "0b69f52d-25df-4cff-89a7-ce9622e1fbfa",
+    "expected": [
+      {
+        "identityId": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "role": "composer"
+      },
+      {
+        "identityId": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "role": "lyricist"
+      },
+      {
+        "identityId": "3067c172-43c3-4c0e-b05a-8b7ad841eeda",
+        "role": "composer"
+      },
+      {
+        "identityId": "3067c172-43c3-4c0e-b05a-8b7ad841eeda",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3067c172-43c3-4c0e-b05a-8b7ad841eeda",
+        "display_name": "Louie Ramirez",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "display_name": "Ruben Blades",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "3067c172-43c3-4c0e-b05a-8b7ad841eeda",
+        "display_name": "Louie Ramirez",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "ba7c82a6-f1f7-455f-aaee-0e2a20df2c90",
+        "display_name": "Ruben Blades",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "fa577da6-ac56-42a3-84e8-cf339d3142d2",
+    "recordingId": "7964060a-af23-48ba-bc73-532754e2a25e",
+    "expected": [
+      {
+        "identityId": "5419a422-f770-48f9-b26a-d6dbabb3325d",
+        "role": "composer"
+      },
+      {
+        "identityId": "5419a422-f770-48f9-b26a-d6dbabb3325d",
+        "role": "lyricist"
+      },
+      {
+        "identityId": "cae7c1db-8602-4947-acbe-8677c651ecbf",
+        "role": "composer"
+      },
+      {
+        "identityId": "cae7c1db-8602-4947-acbe-8677c651ecbf",
+        "role": "lyricist"
+      },
+      {
+        "identityId": "02beb0f8-0571-42b9-833d-5ef230d9451e",
+        "role": "composer"
+      },
+      {
+        "identityId": "02beb0f8-0571-42b9-833d-5ef230d9451e",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "02beb0f8-0571-42b9-833d-5ef230d9451e",
+        "display_name": "Yadam González",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "cae7c1db-8602-4947-acbe-8677c651ecbf",
+        "display_name": "Juan Fernando Fonseca",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "cae7c1db-8602-4947-acbe-8677c651ecbf",
+        "display_name": "Juan Fernando Fonseca",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "5419a422-f770-48f9-b26a-d6dbabb3325d",
+        "display_name": "Yoel Henriquez",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "5419a422-f770-48f9-b26a-d6dbabb3325d",
+        "display_name": "Yoel Henriquez",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "02beb0f8-0571-42b9-833d-5ef230d9451e",
+        "display_name": "Yadam González",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "f87d393b-3d94-409c-b71d-c25b813d56b1",
+    "recordingId": "3b57b6f3-d8d7-48a1-a08a-ebe7b72e04e8",
+    "expected": [
+      {
+        "identityId": "f020e5d3-41df-4984-9810-148a9595eeff",
+        "role": "composer"
+      },
+      {
+        "identityId": "f020e5d3-41df-4984-9810-148a9595eeff",
+        "role": "lyricist"
+      },
+      {
+        "identityId": "9fa6689f-fa9a-4ef1-a2ca-ed1169016f18",
+        "role": "composer"
+      },
+      {
+        "identityId": "9fa6689f-fa9a-4ef1-a2ca-ed1169016f18",
+        "role": "lyricist"
+      },
+      {
+        "identityId": "0c0c7631-e3ba-4643-8d63-032016f2835c",
+        "role": "composer"
+      },
+      {
+        "identityId": "0c0c7631-e3ba-4643-8d63-032016f2835c",
+        "role": "lyricist"
+      },
+      {
+        "identityId": "c2e6eae3-1f6a-4625-8191-25529d45643a",
+        "role": "composer"
+      },
+      {
+        "identityId": "6c17e858-8652-4cad-acd3-9cdf834614f4",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "f020e5d3-41df-4984-9810-148a9595eeff",
+        "display_name": "Carlos Vives",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "f020e5d3-41df-4984-9810-148a9595eeff",
+        "display_name": "Carlos Vives",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "0c0c7631-e3ba-4643-8d63-032016f2835c",
+        "display_name": "Carlos Huertas Jr.",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "9fa6689f-fa9a-4ef1-a2ca-ed1169016f18",
+        "display_name": "Andres Leal",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "0c0c7631-e3ba-4643-8d63-032016f2835c",
+        "display_name": "Carlos Huertas Jr.",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "6c17e858-8652-4cad-acd3-9cdf834614f4",
+        "display_name": "Martín Velilla",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "c2e6eae3-1f6a-4625-8191-25529d45643a",
+        "display_name": "Hugo Huertas",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "9fa6689f-fa9a-4ef1-a2ca-ed1169016f18",
+        "display_name": "Andres Leal",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "948d30b2-ef23-4b37-aed4-6271cda1b306",
+    "recordingId": "2bd08384-4600-4f40-b4e7-43bf69effbe1",
+    "expected": [
+      {
+        "identityId": "622719dd-be8b-4c0a-a558-d2271895f0f6",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "622719dd-be8b-4c0a-a558-d2271895f0f6",
+        "display_name": "Pedro Manuel Guerra Mansito",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "04dff77b-aa5d-4b5f-83bb-7130f77058d3",
+    "recordingId": "4146b519-b4a3-4b46-b6f6-3c3379d7010a",
+    "expected": [
+      {
+        "identityId": "0b5c96d1-6eca-4393-9ede-4515046e2750",
+        "role": "composer"
+      },
+      {
+        "identityId": "533ff7aa-4e65-4e41-b057-c9519eaacb0f",
+        "role": "composer"
+      }
+    ],
+    "actual": [
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "533ff7aa-4e65-4e41-b057-c9519eaacb0f",
+        "display_name": "Luis Cardoso",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "0b5c96d1-6eca-4393-9ede-4515046e2750",
+        "display_name": "Diego Torres",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "6c803245-b9ea-4ac7-8a21-c30b6eadf6fe",
+    "recordingId": "9d67be0e-19cf-4a2e-8af8-39302e0d61dd",
+    "expected": [
+      {
+        "identityId": "1a8ed53f-f875-4c07-a4f9-f23b5e01623c",
+        "role": "composer"
+      },
+      {
+        "identityId": "1a8ed53f-f875-4c07-a4f9-f23b5e01623c",
+        "role": "lyricist"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "1a8ed53f-f875-4c07-a4f9-f23b5e01623c",
+        "display_name": "Lea Lignazzi",
+        "identity_type": "external_contributor"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "1a8ed53f-f875-4c07-a4f9-f23b5e01623c",
+        "display_name": "Lea Lignazzi",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "415550c5-38fb-4ecc-93a3-2afc0a4e1de7",
+    "recordingId": "e0f73996-a0ef-4566-a34a-9d8e1ca4350f",
+    "expected": [
+      {
+        "identityId": "84814b0f-329d-4b9a-acbf-cc1fdeff608b",
+        "role": "composer"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "84814b0f-329d-4b9a-acbf-cc1fdeff608b",
+        "display_name": "shungu wembadio pene kikumba",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "ec505ad4-726f-47b9-a63f-a11a92265a8c",
+    "recordingId": "fef8838b-6b26-4039-8f38-0e74726fc956",
+    "expected": [
+      {
+        "identityId": "470d4014-1340-41a5-930e-62004124ae70",
+        "role": "composer"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "470d4014-1340-41a5-930e-62004124ae70",
+        "display_name": "JEAN BAPTISTE JOSEPH NEMOURS",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "fbcb6589-8101-458f-90ac-8b8214b33d84",
+    "recordingId": "d32d2277-6d90-4ff7-b614-a252e98d11e8",
+    "expected": [
+      {
+        "identityId": "444b0bb0-9aa0-48ef-8087-bec2ea2fd24f",
+        "role": "composer"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "444b0bb0-9aa0-48ef-8087-bec2ea2fd24f",
+        "display_name": "DIBALA YANCOMBA",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "12ff9f4d-4dc4-4711-b998-d1004e5067a2",
+    "recordingId": "43ad76b3-a6dd-4a07-948f-d4092e7f502f",
+    "expected": [
+      {
+        "identityId": "444b0bb0-9aa0-48ef-8087-bec2ea2fd24f",
+        "role": "composer"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": null,
+        "identity_id": "444b0bb0-9aa0-48ef-8087-bec2ea2fd24f",
+        "display_name": "Diblo Dibala",
+        "identity_type": "external_contributor"
+      }
+    ]
+  },
+  {
+    "workId": "5c819de9-8f92-40bf-829d-bbcd57c6582b",
+    "recordingId": "2e6583fe-a4cc-4ac1-ae86-9030383ee995",
+    "expected": [
+      {
+        "identityId": "3680fc10-c3fd-42c4-ad54-90d79b226a7d",
+        "role": "composer"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": "francisco-ulloa",
+        "identity_id": "3680fc10-c3fd-42c4-ad54-90d79b226a7d",
+        "display_name": "Francisco Ulloa",
+        "identity_type": "artist"
+      }
+    ]
+  },
+  {
+    "workId": "feba1936-8561-4360-8652-5e9c7379deca",
+    "recordingId": "2303c139-16c1-4d46-9c25-86f91dae4af4",
+    "expected": [
+      {
+        "identityId": "3680fc10-c3fd-42c4-ad54-90d79b226a7d",
+        "role": "composer"
+      }
+    ],
+    "actual": [
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "lyricist",
+        "country": null,
+        "artist_slug": "juan-luis-guerra",
+        "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "display_name": "Juan Luis Guerra",
+        "identity_type": "artist"
+      },
+      {
+        "role": "composer",
+        "country": null,
+        "artist_slug": "francisco-ulloa",
+        "identity_id": "3680fc10-c3fd-42c4-ad54-90d79b226a7d",
+        "display_name": "Francisco Ulloa",
+        "identity_type": "artist"
+      }
+    ]
+  }
+]

@@ -243,6 +243,7 @@ export type ReleasePageData = {
     slug: string | null;
     name: string;
   } | null;
+  artists?: { id: string; slug: string | null; name: string }[];
   tracks: ReleaseTrack[];
 };
 
@@ -959,7 +960,7 @@ export const getReleaseBySlug = cache(async function getReleaseBySlug(
 
   if (!(await isPublicReleaseArtist(releaseRow.release_artist_id))) return null;
 
-  const [artistInfo, tracksResponse] = await Promise.all([
+  const [artistInfo, tracksResponse, primaryArtistsResponse] = await Promise.all([
     getReleaseArtistInfo(releaseRow.id),
     supabase
       .from("tracks")
@@ -968,6 +969,14 @@ export const getReleaseBySlug = cache(async function getReleaseBySlug(
       .order("disc_number", { ascending: true, nullsFirst: false })
       .order("track_number", { ascending: true, nullsFirst: false })
       .order("position", { ascending: true, nullsFirst: false }),
+    supabase
+      .from("release_artists")
+      .select("artist_id,credited_as,artists!inner(id,slug,name,status)")
+      .eq("release_id", releaseRow.id)
+      .eq("role", "primary")
+      .eq("artists.status", "published")
+      .order("display_order", { ascending: true, nullsFirst: true })
+      .order("id"),
   ]);
 
   // Fetch artist details if we have an artist_id
@@ -1033,6 +1042,10 @@ export const getReleaseBySlug = cache(async function getReleaseBySlug(
         name: artistInfo.credited_as || artistData.name,
       }
     : artistData;
+  const primaryArtists = (primaryArtistsResponse.data ?? []).flatMap((row) => {
+    const artist = row.artists as unknown as { id: string; slug: string | null; name: string } | null;
+    return artist ? [{ id: artist.id, slug: artist.slug, name: row.credited_as || artist.name }] : [];
+  });
 
   return {
     id: releaseRow.id,
@@ -1050,6 +1063,7 @@ export const getReleaseBySlug = cache(async function getReleaseBySlug(
     has_cover_image: releaseRow.has_cover_image ?? false,
     coverImageUrl: getReleaseCoverUrlIfAvailable(releaseRow.id, releaseRow.has_cover_image),
     artist: displayArtist,
+    artists: primaryArtists.length ? primaryArtists : displayArtist ? [displayArtist] : [],
     tracks,
   };
 });

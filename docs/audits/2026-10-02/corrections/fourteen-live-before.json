@@ -1,0 +1,3287 @@
+{
+  "recordings": [
+    {
+      "id": "02990a6a-ccdd-4d43-be40-73610630bb15",
+      "title": "Sin ti no hay nada",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": null,
+      "metadata": {
+        "id": "95cf4a17-05aa-48ac-83f0-3a594afcf086",
+        "isrcs": [],
+        "title": "Sin ti no hay nada",
+        "video": false,
+        "length": null,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988"
+      },
+      "created_at": "2026-05-18T14:06:17.509Z",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_year": null,
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "views": 3,
+      "mbid": "95cf4a17-05aa-48ac-83f0-3a594afcf086",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-18T01:04:44.251Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "sin-ti-no-hay-nada-sergio-vargas"
+    },
+    {
+      "id": "0636f4fa-1fde-4b87-9b4e-4a6098219e2b",
+      "title": "Esto no lo venden",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 241000,
+      "metadata": {
+        "id": "1b98ae1b-129c-4993-8d82-1932b6e1918e",
+        "isrcs": [],
+        "title": "Esto no lo venden",
+        "video": false,
+        "length": 241000,
+        "artist-credit": [
+          {
+            "name": "Peña Suazo",
+            "artist": {
+              "id": "b67982b4-5c49-40ca-a8db-dbdcc5a13e86",
+              "name": "José Peña Suazo",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Peña Suazo, José",
+              "disambiguation": ""
+            },
+            "joinphrase": " y "
+          },
+          {
+            "name": "La Banda Gorda",
+            "artist": {
+              "id": "94a2be8a-77d5-42dd-85ad-60e305a6a137",
+              "name": "La Banda Gorda",
+              "type": "Group",
+              "country": "DO",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "sort-name": "Banda Gorda, La",
+              "disambiguation": ""
+            },
+            "joinphrase": " feat. "
+          },
+          {
+            "name": "Silvio Mora",
+            "artist": {
+              "id": "66129b3a-5869-47ca-a475-bae16877c591",
+              "name": "Silvio Mora",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Mora, Silvio",
+              "disambiguation": ""
+            },
+            "joinphrase": " & "
+          },
+          {
+            "name": "Guarionex Castro",
+            "artist": {
+              "id": "78670887-122e-4247-8406-6af504398d7f",
+              "name": "Guarionex Castro",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Castro, Guarionex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "2019-05-17"
+      },
+      "created_at": "2026-05-18T14:08:48.782Z",
+      "release_id": "5842819f-89ed-4d21-b5b3-2ca3589059f3",
+      "recording_year": null,
+      "artist_id": "b41d4bd2-9303-4834-885e-e7dee35a0287",
+      "views": 0,
+      "mbid": "1b98ae1b-129c-4993-8d82-1932b6e1918e",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-06-09T15:35:45.333Z",
+      "genre_id": "1",
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "esto-no-lo-venden-jose-pena-suazo"
+    },
+    {
+      "id": "13dd8d0c-1239-4876-84f8-02751fd6ecff",
+      "title": "El amor acaba",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 204800,
+      "metadata": {
+        "id": "509431a4-f4b9-4e88-857b-d225ad86e7cb",
+        "isrcs": [
+          "USJ3V1498674"
+        ],
+        "title": "El amor acaba",
+        "video": false,
+        "length": 204800,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988-01-01"
+      },
+      "created_at": "2026-05-18T15:49:56.330Z",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_year": null,
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "views": 0,
+      "mbid": "509431a4-f4b9-4e88-857b-d225ad86e7cb",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-06-12T13:30:00.340Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "el-amor-acaba-sergio-vargas"
+    },
+    {
+      "id": "15e06d83-81fa-4009-9476-370b17a40e89",
+      "title": "El amor acaba",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": null,
+      "metadata": {
+        "id": "a4c65a95-07ed-4282-97e0-e703d5a4aa54",
+        "isrcs": [],
+        "title": "El amor acaba",
+        "video": false,
+        "length": null,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988"
+      },
+      "created_at": "2026-05-18T14:06:17.393Z",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_year": null,
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "views": 3,
+      "mbid": "a4c65a95-07ed-4282-97e0-e703d5a4aa54",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-18T01:04:40.620Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "el-amor-acaba-sergio-vargas-2"
+    },
+    {
+      "id": "2b3f3d75-fa9b-4036-88ef-032700348d13",
+      "title": "Quiero perderme contigo",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 230388,
+      "metadata": {
+        "id": "8006fecf-23cb-4d58-af20-5ee22cc8176e",
+        "isrcs": [
+          "USJ3V1498676"
+        ],
+        "title": "Quiero perderme contigo",
+        "video": false,
+        "length": 230388,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988-01-01"
+      },
+      "created_at": "2026-05-18T15:49:56.563Z",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_year": null,
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "views": 1,
+      "mbid": "8006fecf-23cb-4d58-af20-5ee22cc8176e",
+      "disambiguation": null,
+      "isrcs": [
+        "USJ3V1498676"
+      ],
+      "updated_at": "2026-09-17T15:26:13.148Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "quiero-perderme-contigo-sergio-vargas"
+    },
+    {
+      "id": "3196a8cb-e271-4985-89a5-9c02c887947f",
+      "title": "Te estoy queriendo (remix)",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 283066,
+      "metadata": {
+        "id": "bc85dce2-430b-41fa-b729-3fae3c3a64a5",
+        "isrcs": [],
+        "title": "Te estoy queriendo (remix)",
+        "video": false,
+        "length": 283066,
+        "artist-credit": [
+          {
+            "name": "Sandy",
+            "artist": {
+              "id": "0b7cf9d5-617e-42f7-bab7-88d04d49302a",
+              "name": "Sandy",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Sandy",
+              "disambiguation": "aka \"Sandy MC\" or \"Sandypapo la Marca\", member of duo Sandy & Papo"
+            },
+            "joinphrase": " feat. "
+          },
+          {
+            "name": "Proyecto Uno",
+            "artist": {
+              "id": "3c22f531-e3fd-4422-8700-c8daea85b996",
+              "name": "Proyecto Uno",
+              "type": "Group",
+              "country": "US",
+              "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+              "sort-name": "Proyecto Uno",
+              "disambiguation": "Dominican-American latin house group"
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "2006"
+      },
+      "created_at": "2026-05-18T13:12:52.699Z",
+      "release_id": "1039b7c8-ecb3-44d4-8f61-612087243e8e",
+      "recording_year": null,
+      "artist_id": "ae72a84f-28eb-44d2-8553-b840a4a1c1fe",
+      "views": 1,
+      "mbid": "bc85dce2-430b-41fa-b729-3fae3c3a64a5",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-18T01:03:51.080Z",
+      "genre_id": "10",
+      "subgenre_id": null,
+      "ai_confidence": "0.93",
+      "ai_reason": "genre-enrich: apple=Urbano latino → Urban",
+      "classified_at": "2026-06-13T01:36:28.130Z",
+      "recording_context": "secular",
+      "slug": "te-estoy-queriendo-remix-sandy"
+    },
+    {
+      "id": "3d1c54e7-b045-4105-9342-8748938200ca",
+      "title": "En bandolera",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 225466,
+      "metadata": {
+        "id": "12946327-39ad-4551-b751-c7b57a236846",
+        "isrcs": [
+          "USJ3V1498673"
+        ],
+        "title": "En bandolera",
+        "video": false,
+        "length": 225466,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988-01-01"
+      },
+      "created_at": "2026-05-18T14:06:17.267Z",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_year": null,
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "views": 2,
+      "mbid": "12946327-39ad-4551-b751-c7b57a236846",
+      "disambiguation": null,
+      "isrcs": [
+        "USJ3V1498673"
+      ],
+      "updated_at": "2026-09-17T16:25:05.979Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "en-bandolera-sergio-vargas"
+    },
+    {
+      "id": "5b3c5a81-0456-43af-839c-122660ad5748",
+      "title": "Danza kuduro (merengue electrónico remix)",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 252000,
+      "metadata": {
+        "id": "63a173cd-62d2-4470-97fe-85ead79a389d",
+        "isrcs": [],
+        "title": "Danza kuduro (merengue electrónico remix)",
+        "video": false,
+        "length": 252000,
+        "artist-credit": [
+          {
+            "name": "Don Omar",
+            "artist": {
+              "id": "afbdfac9-2955-4404-ae22-c08bf1c1b51e",
+              "name": "Don Omar",
+              "type": "Person",
+              "country": "PR",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Don Omar",
+              "disambiguation": "William Omar Landrón Rivera"
+            },
+            "joinphrase": " feat. "
+          },
+          {
+            "name": "Lucenzo",
+            "artist": {
+              "id": "9d93fcb8-f66a-4576-9bdc-04dd4a1b27c6",
+              "name": "Lucenzo",
+              "type": "Person",
+              "country": "FR",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Lucenzo",
+              "disambiguation": ""
+            },
+            "joinphrase": ", "
+          },
+          {
+            "name": "Pitbull",
+            "artist": {
+              "id": "d262ea27-3ffe-40f7-b922-85c42d625e67",
+              "name": "Pitbull",
+              "type": "Person",
+              "country": "US",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Pitbull",
+              "disambiguation": "American rapper"
+            },
+            "joinphrase": " & "
+          },
+          {
+            "name": "El Cata",
+            "artist": {
+              "id": "73ac884e-76d4-49b9-aa39-983801c2afb1",
+              "name": "El Cata",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Cata, El",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": ""
+      },
+      "created_at": "2026-05-18T13:32:58.700Z",
+      "release_id": "6c77972b-4c5c-4941-b71c-14fbcc504415",
+      "recording_year": null,
+      "artist_id": "4688614f-d936-4fb8-8bf1-04008de4256b",
+      "views": 3,
+      "mbid": "63a173cd-62d2-4470-97fe-85ead79a389d",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-02T17:06:53.176Z",
+      "genre_id": "10",
+      "subgenre_id": "41",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "danza-kuduro-merengue-electronico-remix-maffio"
+    },
+    {
+      "id": "6b8dad81-685c-4854-b87c-9fa9d35a0218",
+      "title": "Quiero perderme contigo",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": null,
+      "metadata": {
+        "id": "21090d0b-9f3d-48ea-943b-a242de1945c2",
+        "isrcs": [],
+        "title": "Quiero perderme contigo",
+        "video": false,
+        "length": null,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988"
+      },
+      "created_at": "2026-05-18T14:06:17.628Z",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_year": null,
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "views": 2,
+      "mbid": "21090d0b-9f3d-48ea-943b-a242de1945c2",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T09:41:36.542Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "quiero-perderme-contigo-sergio-vargas-2"
+    },
+    {
+      "id": "88fa2345-f6ea-4d5c-bd75-f03b0a64b092",
+      "title": "LLevate La Cama Pa' La Calle",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 213747,
+      "metadata": {
+        "id": "be16f272-604c-45de-90cd-daca3ad52efa",
+        "isrcs": [
+          "US3Z40600166"
+        ],
+        "title": "LLevate La Cama Pa' La Calle",
+        "video": false,
+        "length": 213747,
+        "artist-credit": [
+          {
+            "name": "Frank Reyes",
+            "artist": {
+              "id": "51ed973d-95c7-4a12-a11c-8c8581a5872a",
+              "name": "Frank Reyes",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Reyes, Frank",
+              "disambiguation": ""
+            },
+            "joinphrase": " & "
+          },
+          {
+            "name": "Indhira Rubiera",
+            "artist": {
+              "id": "b239a73e-3984-4551-9a80-90d5214dc46d",
+              "name": "Indhira Rubiera",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Rubiera, Indhira",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "2006-06-13"
+      },
+      "created_at": "2026-05-18T13:04:59.680Z",
+      "release_id": "b92e02c4-2c0d-4625-a499-fabff3fbed88",
+      "recording_year": null,
+      "artist_id": "6321da6c-e2d5-490a-a4e8-416bbee81edf",
+      "views": 0,
+      "mbid": "be16f272-604c-45de-90cd-daca3ad52efa",
+      "disambiguation": null,
+      "isrcs": [
+        "US3Z40600166"
+      ],
+      "updated_at": "2026-06-12T13:30:00.340Z",
+      "genre_id": "10",
+      "subgenre_id": "42",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "llevate-la-cama-pa-la-calle-don-miguelo"
+    },
+    {
+      "id": "a27f06da-67fe-41be-856c-989339795600",
+      "title": "Voy a llenarte toda",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 318531,
+      "metadata": {
+        "id": "a699847a-ee20-4de4-a4f5-838d1b069451",
+        "isrcs": [
+          "USJ3V1498677"
+        ],
+        "title": "Voy a llenarte toda",
+        "video": false,
+        "length": 318531,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988-01-01"
+      },
+      "created_at": "2026-05-18T15:49:56.683Z",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_year": null,
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "views": 0,
+      "mbid": "a699847a-ee20-4de4-a4f5-838d1b069451",
+      "disambiguation": null,
+      "isrcs": [
+        "USJ3V1498677"
+      ],
+      "updated_at": "2026-06-12T13:30:00.340Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "voy-a-llenarte-toda-sergio-vargas"
+    },
+    {
+      "id": "bc141597-7e01-4ae2-86fc-ec78a31b00af",
+      "title": "Pero lo dudo",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": null,
+      "metadata": {
+        "id": "d5ac80e9-42d4-478a-a464-1d0214766037",
+        "isrcs": [],
+        "title": "Pero lo dudo",
+        "video": false,
+        "length": null,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988"
+      },
+      "created_at": "2026-05-18T14:06:17.878Z",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_year": null,
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "views": 2,
+      "mbid": "d5ac80e9-42d4-478a-a464-1d0214766037",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T11:12:33.920Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "pero-lo-dudo-sergio-vargas"
+    },
+    {
+      "id": "e63a471f-1cc4-4b07-beff-219c8b3b19d2",
+      "title": "Si ti no soy nada",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 271766,
+      "metadata": {
+        "id": "71f97245-41f1-4632-b8e4-a435717e0bd1",
+        "isrcs": [
+          "USJ3V1498675"
+        ],
+        "title": "Si ti no soy nada",
+        "video": false,
+        "length": 271766,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988-01-01"
+      },
+      "created_at": "2026-05-18T15:49:56.445Z",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_year": null,
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "views": 1,
+      "mbid": "71f97245-41f1-4632-b8e4-a435717e0bd1",
+      "disambiguation": null,
+      "isrcs": [
+        "USJ3V1498675"
+      ],
+      "updated_at": "2026-09-17T13:53:41.473Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "si-ti-no-soy-nada-sergio-vargas"
+    },
+    {
+      "id": "f2025707-c4c0-4b75-9411-f2684011cce8",
+      "title": "Quiero llenarte toda",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": null,
+      "metadata": {
+        "id": "39d0d0bd-b802-4941-bf08-49a8710caa0c",
+        "isrcs": [],
+        "title": "Quiero llenarte toda",
+        "video": false,
+        "length": null,
+        "artist-credit": [
+          {
+            "name": "Alex Bueno",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1988"
+      },
+      "created_at": "2026-05-18T14:06:17.752Z",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_year": null,
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "views": 2,
+      "mbid": "39d0d0bd-b802-4941-bf08-49a8710caa0c",
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-09-17T15:17:37.397Z",
+      "genre_id": "1",
+      "subgenre_id": "15",
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": "quiero-llenarte-toda-sergio-vargas"
+    }
+  ],
+  "credits": [
+    {
+      "id": "745f555b-2b69-4be1-9166-ebc4a45492b2",
+      "recording_id": "88fa2345-f6ea-4d5c-bd75-f03b0a64b092",
+      "artist_id": "3dd83e6b-2058-4d04-ac68-38e11d9348a9",
+      "role": "performer",
+      "position": null,
+      "created_at": "2026-10-03T00:50:00.450Z",
+      "metadata": {
+        "batch": "discography-audit-2026-10-02-remaining-collaborations",
+        "sourceUrl": "https://music.apple.com/us/song/157780362",
+        "trackPosition": 12
+      },
+      "credited_as": "Frank Reyes",
+      "display_order": 0,
+      "role_id": "6be46e6a-5768-4c3d-8eb6-05cc2ba63678",
+      "external_contributor_id": null
+    },
+    {
+      "id": "475b3ca6-58e0-4a16-84af-cf0904182575",
+      "recording_id": "0636f4fa-1fde-4b87-9b4e-4a6098219e2b",
+      "artist_id": "779cf94c-fe33-47c3-b184-2ef4de20da69",
+      "role": "featured_performer",
+      "position": null,
+      "created_at": "2026-10-03T00:55:30.648Z",
+      "metadata": {
+        "batch": "discography-audit-2026-10-02-bandas",
+        "sourceUrl": "https://music.amazon.co.uk/albums/B07RWQ59CF",
+        "trackPosition": 4
+      },
+      "credited_as": "Silvio Mora",
+      "display_order": 0,
+      "role_id": "06239dc1-d10a-433e-90f2-a7cbc0a9420b",
+      "external_contributor_id": null
+    }
+  ],
+  "tracks": [
+    {
+      "id": "58e8c537-5bab-45ce-aa6c-c3ceff73bd05",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_id": "02990a6a-ccdd-4d43-be40-73610630bb15",
+      "track_number": 8,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T21:38:22.525Z",
+      "mbid": "9122cbe6-1819-488a-a08b-4869495e6de1",
+      "medium_id": null,
+      "position": 8,
+      "length": null,
+      "metadata": {
+        "track": {
+          "id": "9122cbe6-1819-488a-a08b-4869495e6de1",
+          "title": "Sin ti no hay nada",
+          "length": null,
+          "number": "B3",
+          "position": 8,
+          "recording": {
+            "id": "95cf4a17-05aa-48ac-83f0-3a594afcf086",
+            "isrcs": [],
+            "title": "Sin ti no hay nada",
+            "video": false,
+            "length": null,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "95cf4a17-05aa-48ac-83f0-3a594afcf086",
+          "isrcs": [],
+          "title": "Sin ti no hay nada",
+          "video": false,
+          "length": null,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988"
+        }
+      },
+      "updated_at": "2026-05-18T21:38:22.525Z"
+    },
+    {
+      "id": "28d4b6dc-d965-4757-b6ae-0b40684d6c65",
+      "release_id": "5842819f-89ed-4d21-b5b3-2ca3589059f3",
+      "recording_id": "0636f4fa-1fde-4b87-9b4e-4a6098219e2b",
+      "track_number": 4,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T21:40:59.023Z",
+      "mbid": "2d830ff2-edf7-4764-bdad-c82b37943633",
+      "medium_id": null,
+      "position": 4,
+      "length": 241000,
+      "metadata": {
+        "track": {
+          "id": "2d830ff2-edf7-4764-bdad-c82b37943633",
+          "title": "Esto no lo venden",
+          "length": 241000,
+          "number": "4",
+          "position": 4,
+          "recording": {
+            "id": "1b98ae1b-129c-4993-8d82-1932b6e1918e",
+            "isrcs": [],
+            "title": "Esto no lo venden",
+            "video": false,
+            "length": 241000,
+            "artist-credit": [
+              {
+                "name": "Peña Suazo",
+                "artist": {
+                  "id": "b67982b4-5c49-40ca-a8db-dbdcc5a13e86",
+                  "name": "José Peña Suazo",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Peña Suazo, José",
+                  "disambiguation": ""
+                },
+                "joinphrase": " y "
+              },
+              {
+                "name": "La Banda Gorda",
+                "artist": {
+                  "id": "94a2be8a-77d5-42dd-85ad-60e305a6a137",
+                  "name": "La Banda Gorda",
+                  "type": "Group",
+                  "country": "DO",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "sort-name": "Banda Gorda, La",
+                  "disambiguation": ""
+                },
+                "joinphrase": " feat. "
+              },
+              {
+                "name": "Silvio Mora",
+                "artist": {
+                  "id": "66129b3a-5869-47ca-a475-bae16877c591",
+                  "name": "Silvio Mora",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Mora, Silvio",
+                  "disambiguation": ""
+                },
+                "joinphrase": " & "
+              },
+              {
+                "name": "Guarionex Castro",
+                "artist": {
+                  "id": "78670887-122e-4247-8406-6af504398d7f",
+                  "name": "Guarionex Castro",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Castro, Guarionex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "2019-05-17"
+          },
+          "artist-credit": [
+            {
+              "name": "Peña Suazo",
+              "artist": {
+                "id": "b67982b4-5c49-40ca-a8db-dbdcc5a13e86",
+                "name": "José Peña Suazo",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Peña Suazo, José",
+                "disambiguation": ""
+              },
+              "joinphrase": " y "
+            },
+            {
+              "name": "La Banda Gorda",
+              "artist": {
+                "id": "94a2be8a-77d5-42dd-85ad-60e305a6a137",
+                "name": "La Banda Gorda",
+                "type": "Group",
+                "country": "DO",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "sort-name": "Banda Gorda, La",
+                "disambiguation": ""
+              },
+              "joinphrase": " feat. "
+            },
+            {
+              "name": "Silvio Mora",
+              "artist": {
+                "id": "66129b3a-5869-47ca-a475-bae16877c591",
+                "name": "Silvio Mora",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Mora, Silvio",
+                "disambiguation": ""
+              },
+              "joinphrase": " & "
+            },
+            {
+              "name": "Guarionex Castro",
+              "artist": {
+                "id": "78670887-122e-4247-8406-6af504398d7f",
+                "name": "Guarionex Castro",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Castro, Guarionex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "1b98ae1b-129c-4993-8d82-1932b6e1918e",
+          "isrcs": [],
+          "title": "Esto no lo venden",
+          "video": false,
+          "length": 241000,
+          "artist-credit": [
+            {
+              "name": "Peña Suazo",
+              "artist": {
+                "id": "b67982b4-5c49-40ca-a8db-dbdcc5a13e86",
+                "name": "José Peña Suazo",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Peña Suazo, José",
+                "disambiguation": ""
+              },
+              "joinphrase": " y "
+            },
+            {
+              "name": "La Banda Gorda",
+              "artist": {
+                "id": "94a2be8a-77d5-42dd-85ad-60e305a6a137",
+                "name": "La Banda Gorda",
+                "type": "Group",
+                "country": "DO",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "sort-name": "Banda Gorda, La",
+                "disambiguation": ""
+              },
+              "joinphrase": " feat. "
+            },
+            {
+              "name": "Silvio Mora",
+              "artist": {
+                "id": "66129b3a-5869-47ca-a475-bae16877c591",
+                "name": "Silvio Mora",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Mora, Silvio",
+                "disambiguation": ""
+              },
+              "joinphrase": " & "
+            },
+            {
+              "name": "Guarionex Castro",
+              "artist": {
+                "id": "78670887-122e-4247-8406-6af504398d7f",
+                "name": "Guarionex Castro",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Castro, Guarionex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "2019-05-17"
+        }
+      },
+      "updated_at": "2026-05-18T21:40:59.023Z"
+    },
+    {
+      "id": "e2ed5de9-0d76-4591-845e-f08dc09ed63b",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_id": "13dd8d0c-1239-4876-84f8-02751fd6ecff",
+      "track_number": 7,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T23:12:58.222Z",
+      "mbid": "a75e8749-aac2-4665-badd-96e2c8d67272",
+      "medium_id": null,
+      "position": 7,
+      "length": 204800,
+      "metadata": {
+        "track": {
+          "id": "a75e8749-aac2-4665-badd-96e2c8d67272",
+          "title": "El amor acaba",
+          "length": 204800,
+          "number": "7",
+          "position": 7,
+          "recording": {
+            "id": "509431a4-f4b9-4e88-857b-d225ad86e7cb",
+            "isrcs": [
+              "USJ3V1498674"
+            ],
+            "title": "El amor acaba",
+            "video": false,
+            "length": 204800,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "509431a4-f4b9-4e88-857b-d225ad86e7cb",
+          "isrcs": [
+            "USJ3V1498674"
+          ],
+          "title": "El amor acaba",
+          "video": false,
+          "length": 204800,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988-01-01"
+        }
+      },
+      "updated_at": "2026-05-18T23:12:58.222Z"
+    },
+    {
+      "id": "caa3292f-bc13-4992-bb55-065d45367f57",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_id": "15e06d83-81fa-4009-9476-370b17a40e89",
+      "track_number": 7,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T21:38:22.371Z",
+      "mbid": "6d7a4a51-c9a0-4d7b-aa0f-417d27ceef29",
+      "medium_id": null,
+      "position": 7,
+      "length": null,
+      "metadata": {
+        "track": {
+          "id": "6d7a4a51-c9a0-4d7b-aa0f-417d27ceef29",
+          "title": "El amor acaba",
+          "length": null,
+          "number": "B2",
+          "position": 7,
+          "recording": {
+            "id": "a4c65a95-07ed-4282-97e0-e703d5a4aa54",
+            "isrcs": [],
+            "title": "El amor acaba",
+            "video": false,
+            "length": null,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "a4c65a95-07ed-4282-97e0-e703d5a4aa54",
+          "isrcs": [],
+          "title": "El amor acaba",
+          "video": false,
+          "length": null,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988"
+        }
+      },
+      "updated_at": "2026-05-18T21:38:22.371Z"
+    },
+    {
+      "id": "daf3d61b-ebba-4b14-898e-5b23c93149c4",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_id": "2b3f3d75-fa9b-4036-88ef-032700348d13",
+      "track_number": 9,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T23:12:58.545Z",
+      "mbid": "243cf1a0-2505-4a92-9b15-665314b9061f",
+      "medium_id": null,
+      "position": 9,
+      "length": 230388,
+      "metadata": {
+        "track": {
+          "id": "243cf1a0-2505-4a92-9b15-665314b9061f",
+          "title": "Quiero perderme contigo",
+          "length": 230388,
+          "number": "9",
+          "position": 9,
+          "recording": {
+            "id": "8006fecf-23cb-4d58-af20-5ee22cc8176e",
+            "isrcs": [
+              "USJ3V1498676"
+            ],
+            "title": "Quiero perderme contigo",
+            "video": false,
+            "length": 230388,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "8006fecf-23cb-4d58-af20-5ee22cc8176e",
+          "isrcs": [
+            "USJ3V1498676"
+          ],
+          "title": "Quiero perderme contigo",
+          "video": false,
+          "length": 230388,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988-01-01"
+        }
+      },
+      "updated_at": "2026-05-18T23:12:58.545Z"
+    },
+    {
+      "id": "32f1ec3c-ddf7-41bd-b216-1d037e03f8d2",
+      "release_id": "1039b7c8-ecb3-44d4-8f61-612087243e8e",
+      "recording_id": "3196a8cb-e271-4985-89a5-9c02c887947f",
+      "track_number": 21,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T20:40:45.923Z",
+      "mbid": "6b71e407-9846-4e6a-aae9-f2669f40f133",
+      "medium_id": null,
+      "position": 21,
+      "length": 283066,
+      "metadata": {
+        "track": {
+          "id": "6b71e407-9846-4e6a-aae9-f2669f40f133",
+          "title": "Te estoy queriendo (remix)",
+          "length": 283066,
+          "number": "21",
+          "position": 21,
+          "recording": {
+            "id": "bc85dce2-430b-41fa-b729-3fae3c3a64a5",
+            "isrcs": [],
+            "title": "Te estoy queriendo (remix)",
+            "video": false,
+            "length": 283066,
+            "artist-credit": [
+              {
+                "name": "Sandy",
+                "artist": {
+                  "id": "0b7cf9d5-617e-42f7-bab7-88d04d49302a",
+                  "name": "Sandy",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Sandy",
+                  "disambiguation": "aka \"Sandy MC\" or \"Sandypapo la Marca\", member of duo Sandy & Papo"
+                },
+                "joinphrase": " feat. "
+              },
+              {
+                "name": "Proyecto Uno",
+                "artist": {
+                  "id": "3c22f531-e3fd-4422-8700-c8daea85b996",
+                  "name": "Proyecto Uno",
+                  "type": "Group",
+                  "country": "US",
+                  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                  "sort-name": "Proyecto Uno",
+                  "disambiguation": "Dominican-American latin house group"
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "2006"
+          },
+          "artist-credit": [
+            {
+              "name": "Sandy",
+              "artist": {
+                "id": "0b7cf9d5-617e-42f7-bab7-88d04d49302a",
+                "name": "Sandy",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Sandy",
+                "disambiguation": "aka \"Sandy MC\" or \"Sandypapo la Marca\", member of duo Sandy & Papo"
+              },
+              "joinphrase": " feat. "
+            },
+            {
+              "name": "Proyecto Uno",
+              "artist": {
+                "id": "3c22f531-e3fd-4422-8700-c8daea85b996",
+                "name": "Proyecto Uno",
+                "type": "Group",
+                "country": "US",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "sort-name": "Proyecto Uno",
+                "disambiguation": "Dominican-American latin house group"
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "bc85dce2-430b-41fa-b729-3fae3c3a64a5",
+          "isrcs": [],
+          "title": "Te estoy queriendo (remix)",
+          "video": false,
+          "length": 283066,
+          "artist-credit": [
+            {
+              "name": "Sandy",
+              "artist": {
+                "id": "0b7cf9d5-617e-42f7-bab7-88d04d49302a",
+                "name": "Sandy",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Sandy",
+                "disambiguation": "aka \"Sandy MC\" or \"Sandypapo la Marca\", member of duo Sandy & Papo"
+              },
+              "joinphrase": " feat. "
+            },
+            {
+              "name": "Proyecto Uno",
+              "artist": {
+                "id": "3c22f531-e3fd-4422-8700-c8daea85b996",
+                "name": "Proyecto Uno",
+                "type": "Group",
+                "country": "US",
+                "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+                "sort-name": "Proyecto Uno",
+                "disambiguation": "Dominican-American latin house group"
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "2006"
+        }
+      },
+      "updated_at": "2026-05-18T20:40:45.923Z"
+    },
+    {
+      "id": "14c9989d-71bf-47b5-a025-5870cfa6cce6",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_id": "3d1c54e7-b045-4105-9342-8748938200ca",
+      "track_number": 6,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T21:38:22.225Z",
+      "mbid": "75d60aa6-c312-4b55-a1b0-1f15204719a6",
+      "medium_id": null,
+      "position": 6,
+      "length": 225466,
+      "metadata": {
+        "track": {
+          "id": "75d60aa6-c312-4b55-a1b0-1f15204719a6",
+          "title": "En bandolera",
+          "length": null,
+          "number": "B1",
+          "position": 6,
+          "recording": {
+            "id": "12946327-39ad-4551-b751-c7b57a236846",
+            "isrcs": [
+              "USJ3V1498673"
+            ],
+            "title": "En bandolera",
+            "video": false,
+            "length": 225466,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "12946327-39ad-4551-b751-c7b57a236846",
+          "isrcs": [
+            "USJ3V1498673"
+          ],
+          "title": "En bandolera",
+          "video": false,
+          "length": 225466,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988-01-01"
+        }
+      },
+      "updated_at": "2026-05-18T21:38:22.225Z"
+    },
+    {
+      "id": "3ae70d5a-920f-4474-bbae-36d2d11a59b9",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_id": "3d1c54e7-b045-4105-9342-8748938200ca",
+      "track_number": 6,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T23:12:58.075Z",
+      "mbid": "6b546fea-0d7c-4a18-8a4d-736e3e9951a7",
+      "medium_id": null,
+      "position": 6,
+      "length": 225466,
+      "metadata": {
+        "track": {
+          "id": "6b546fea-0d7c-4a18-8a4d-736e3e9951a7",
+          "title": "En bandolera",
+          "length": 225466,
+          "number": "6",
+          "position": 6,
+          "recording": {
+            "id": "12946327-39ad-4551-b751-c7b57a236846",
+            "isrcs": [
+              "USJ3V1498673"
+            ],
+            "title": "En bandolera",
+            "video": false,
+            "length": 225466,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "12946327-39ad-4551-b751-c7b57a236846",
+          "isrcs": [
+            "USJ3V1498673"
+          ],
+          "title": "En bandolera",
+          "video": false,
+          "length": 225466,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988-01-01"
+        }
+      },
+      "updated_at": "2026-05-18T23:12:58.075Z"
+    },
+    {
+      "id": "f3f248ab-abb8-41de-b73f-73ad263672f3",
+      "release_id": "6c77972b-4c5c-4941-b71c-14fbcc504415",
+      "recording_id": "5b3c5a81-0456-43af-839c-122660ad5748",
+      "track_number": 9,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T21:03:48.428Z",
+      "mbid": "bf816acc-80d1-4991-9003-c6bd254fa081",
+      "medium_id": null,
+      "position": 9,
+      "length": 252000,
+      "metadata": {
+        "track": {
+          "id": "bf816acc-80d1-4991-9003-c6bd254fa081",
+          "title": "Danza kuduro (merengue electrónico remix)",
+          "length": 252000,
+          "number": "9",
+          "position": 9,
+          "recording": {
+            "id": "63a173cd-62d2-4470-97fe-85ead79a389d",
+            "isrcs": [],
+            "title": "Danza kuduro (merengue electrónico remix)",
+            "video": false,
+            "length": 252000,
+            "artist-credit": [
+              {
+                "name": "Don Omar",
+                "artist": {
+                  "id": "afbdfac9-2955-4404-ae22-c08bf1c1b51e",
+                  "name": "Don Omar",
+                  "type": "Person",
+                  "country": "PR",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Don Omar",
+                  "disambiguation": "William Omar Landrón Rivera"
+                },
+                "joinphrase": " feat. "
+              },
+              {
+                "name": "Lucenzo",
+                "artist": {
+                  "id": "9d93fcb8-f66a-4576-9bdc-04dd4a1b27c6",
+                  "name": "Lucenzo",
+                  "type": "Person",
+                  "country": "FR",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Lucenzo",
+                  "disambiguation": ""
+                },
+                "joinphrase": ", "
+              },
+              {
+                "name": "Pitbull",
+                "artist": {
+                  "id": "d262ea27-3ffe-40f7-b922-85c42d625e67",
+                  "name": "Pitbull",
+                  "type": "Person",
+                  "country": "US",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Pitbull",
+                  "disambiguation": "American rapper"
+                },
+                "joinphrase": " & "
+              },
+              {
+                "name": "El Cata",
+                "artist": {
+                  "id": "73ac884e-76d4-49b9-aa39-983801c2afb1",
+                  "name": "El Cata",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Cata, El",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": ""
+          },
+          "artist-credit": [
+            {
+              "name": "Don Omar",
+              "artist": {
+                "id": "afbdfac9-2955-4404-ae22-c08bf1c1b51e",
+                "name": "Don Omar",
+                "type": "Person",
+                "country": "PR",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Don Omar",
+                "disambiguation": "William Omar Landrón Rivera"
+              },
+              "joinphrase": " feat. "
+            },
+            {
+              "name": "Lucenzo",
+              "artist": {
+                "id": "9d93fcb8-f66a-4576-9bdc-04dd4a1b27c6",
+                "name": "Lucenzo",
+                "type": "Person",
+                "country": "FR",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Lucenzo",
+                "disambiguation": ""
+              },
+              "joinphrase": ", "
+            },
+            {
+              "name": "Pitbull",
+              "artist": {
+                "id": "d262ea27-3ffe-40f7-b922-85c42d625e67",
+                "name": "Pitbull",
+                "type": "Person",
+                "country": "US",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Pitbull",
+                "disambiguation": "American rapper"
+              },
+              "joinphrase": " & "
+            },
+            {
+              "name": "El Cata",
+              "artist": {
+                "id": "73ac884e-76d4-49b9-aa39-983801c2afb1",
+                "name": "El Cata",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Cata, El",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "63a173cd-62d2-4470-97fe-85ead79a389d",
+          "isrcs": [],
+          "title": "Danza kuduro (merengue electrónico remix)",
+          "video": false,
+          "length": 252000,
+          "artist-credit": [
+            {
+              "name": "Don Omar",
+              "artist": {
+                "id": "afbdfac9-2955-4404-ae22-c08bf1c1b51e",
+                "name": "Don Omar",
+                "type": "Person",
+                "country": "PR",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Don Omar",
+                "disambiguation": "William Omar Landrón Rivera"
+              },
+              "joinphrase": " feat. "
+            },
+            {
+              "name": "Lucenzo",
+              "artist": {
+                "id": "9d93fcb8-f66a-4576-9bdc-04dd4a1b27c6",
+                "name": "Lucenzo",
+                "type": "Person",
+                "country": "FR",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Lucenzo",
+                "disambiguation": ""
+              },
+              "joinphrase": ", "
+            },
+            {
+              "name": "Pitbull",
+              "artist": {
+                "id": "d262ea27-3ffe-40f7-b922-85c42d625e67",
+                "name": "Pitbull",
+                "type": "Person",
+                "country": "US",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Pitbull",
+                "disambiguation": "American rapper"
+              },
+              "joinphrase": " & "
+            },
+            {
+              "name": "El Cata",
+              "artist": {
+                "id": "73ac884e-76d4-49b9-aa39-983801c2afb1",
+                "name": "El Cata",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Cata, El",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": ""
+        }
+      },
+      "updated_at": "2026-05-18T21:03:48.428Z"
+    },
+    {
+      "id": "22c7d9d4-13fd-4fb8-9178-5aac2138cf6b",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_id": "6b8dad81-685c-4854-b87c-9fa9d35a0218",
+      "track_number": 9,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T21:38:22.678Z",
+      "mbid": "23919e9e-0231-4ee1-aa6a-0f62399582e7",
+      "medium_id": null,
+      "position": 9,
+      "length": null,
+      "metadata": {
+        "track": {
+          "id": "23919e9e-0231-4ee1-aa6a-0f62399582e7",
+          "title": "Quiero perderme contigo",
+          "length": null,
+          "number": "B4",
+          "position": 9,
+          "recording": {
+            "id": "21090d0b-9f3d-48ea-943b-a242de1945c2",
+            "isrcs": [],
+            "title": "Quiero perderme contigo",
+            "video": false,
+            "length": null,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "21090d0b-9f3d-48ea-943b-a242de1945c2",
+          "isrcs": [],
+          "title": "Quiero perderme contigo",
+          "video": false,
+          "length": null,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988"
+        }
+      },
+      "updated_at": "2026-05-18T21:38:22.678Z"
+    },
+    {
+      "id": "13364b77-a9cb-4559-8430-c1e5d013315a",
+      "release_id": "b92e02c4-2c0d-4625-a499-fabff3fbed88",
+      "recording_id": "88fa2345-f6ea-4d5c-bd75-f03b0a64b092",
+      "track_number": 12,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T20:30:51.835Z",
+      "mbid": "96a5cfed-0664-4528-8409-5c95f2795470",
+      "medium_id": null,
+      "position": 12,
+      "length": 213747,
+      "metadata": {
+        "track": {
+          "id": "96a5cfed-0664-4528-8409-5c95f2795470",
+          "title": "LLevate La Cama Pa' La Calle",
+          "length": 213747,
+          "number": "12",
+          "position": 12,
+          "recording": {
+            "id": "be16f272-604c-45de-90cd-daca3ad52efa",
+            "isrcs": [
+              "US3Z40600166"
+            ],
+            "title": "LLevate La Cama Pa' La Calle",
+            "video": false,
+            "length": 213747,
+            "artist-credit": [
+              {
+                "name": "Frank Reyes",
+                "artist": {
+                  "id": "51ed973d-95c7-4a12-a11c-8c8581a5872a",
+                  "name": "Frank Reyes",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Reyes, Frank",
+                  "disambiguation": ""
+                },
+                "joinphrase": " & "
+              },
+              {
+                "name": "Indhira Rubiera",
+                "artist": {
+                  "id": "b239a73e-3984-4551-9a80-90d5214dc46d",
+                  "name": "Indhira Rubiera",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Rubiera, Indhira",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "2006-06-13"
+          },
+          "artist-credit": [
+            {
+              "name": "Frank Reyes",
+              "artist": {
+                "id": "51ed973d-95c7-4a12-a11c-8c8581a5872a",
+                "name": "Frank Reyes",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Reyes, Frank",
+                "disambiguation": ""
+              },
+              "joinphrase": " & "
+            },
+            {
+              "name": "Indhira Rubiera",
+              "artist": {
+                "id": "b239a73e-3984-4551-9a80-90d5214dc46d",
+                "name": "Indhira Rubiera",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Rubiera, Indhira",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "be16f272-604c-45de-90cd-daca3ad52efa",
+          "isrcs": [
+            "US3Z40600166"
+          ],
+          "title": "LLevate La Cama Pa' La Calle",
+          "video": false,
+          "length": 213747,
+          "artist-credit": [
+            {
+              "name": "Frank Reyes",
+              "artist": {
+                "id": "51ed973d-95c7-4a12-a11c-8c8581a5872a",
+                "name": "Frank Reyes",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Reyes, Frank",
+                "disambiguation": ""
+              },
+              "joinphrase": " & "
+            },
+            {
+              "name": "Indhira Rubiera",
+              "artist": {
+                "id": "b239a73e-3984-4551-9a80-90d5214dc46d",
+                "name": "Indhira Rubiera",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Rubiera, Indhira",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "2006-06-13"
+        }
+      },
+      "updated_at": "2026-05-18T20:30:51.835Z"
+    },
+    {
+      "id": "3699df94-aa67-42b1-98be-16cbe3a5773a",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_id": "a27f06da-67fe-41be-856c-989339795600",
+      "track_number": 10,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T23:12:58.691Z",
+      "mbid": "fba0de6c-bb9d-49a4-ab8e-bee711990b29",
+      "medium_id": null,
+      "position": 10,
+      "length": 318531,
+      "metadata": {
+        "track": {
+          "id": "fba0de6c-bb9d-49a4-ab8e-bee711990b29",
+          "title": "Voy a llenarte toda",
+          "length": 318531,
+          "number": "10",
+          "position": 10,
+          "recording": {
+            "id": "a699847a-ee20-4de4-a4f5-838d1b069451",
+            "isrcs": [
+              "USJ3V1498677"
+            ],
+            "title": "Voy a llenarte toda",
+            "video": false,
+            "length": 318531,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "a699847a-ee20-4de4-a4f5-838d1b069451",
+          "isrcs": [
+            "USJ3V1498677"
+          ],
+          "title": "Voy a llenarte toda",
+          "video": false,
+          "length": 318531,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988-01-01"
+        }
+      },
+      "updated_at": "2026-05-18T23:12:58.691Z"
+    },
+    {
+      "id": "f84334d9-6aaa-45db-b7aa-40fa2a1af1e8",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_id": "bc141597-7e01-4ae2-86fc-ec78a31b00af",
+      "track_number": 11,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T21:38:22.992Z",
+      "mbid": "3dcbb53c-760e-4f88-85d3-de4483881a27",
+      "medium_id": null,
+      "position": 11,
+      "length": null,
+      "metadata": {
+        "track": {
+          "id": "3dcbb53c-760e-4f88-85d3-de4483881a27",
+          "title": "Pero lo dudo",
+          "length": null,
+          "number": "B6",
+          "position": 11,
+          "recording": {
+            "id": "d5ac80e9-42d4-478a-a464-1d0214766037",
+            "isrcs": [],
+            "title": "Pero lo dudo",
+            "video": false,
+            "length": null,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "d5ac80e9-42d4-478a-a464-1d0214766037",
+          "isrcs": [],
+          "title": "Pero lo dudo",
+          "video": false,
+          "length": null,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988"
+        }
+      },
+      "updated_at": "2026-05-18T21:38:22.992Z"
+    },
+    {
+      "id": "58d3f649-7637-4f57-a213-3929168fb08d",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "recording_id": "e63a471f-1cc4-4b07-beff-219c8b3b19d2",
+      "track_number": 8,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T23:12:58.379Z",
+      "mbid": "5fbd1627-fb0c-45f6-a0ed-a144fc4f92b8",
+      "medium_id": null,
+      "position": 8,
+      "length": 271766,
+      "metadata": {
+        "track": {
+          "id": "5fbd1627-fb0c-45f6-a0ed-a144fc4f92b8",
+          "title": "Si ti no soy nada",
+          "length": 271766,
+          "number": "8",
+          "position": 8,
+          "recording": {
+            "id": "71f97245-41f1-4632-b8e4-a435717e0bd1",
+            "isrcs": [
+              "USJ3V1498675"
+            ],
+            "title": "Si ti no soy nada",
+            "video": false,
+            "length": 271766,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "71f97245-41f1-4632-b8e4-a435717e0bd1",
+          "isrcs": [
+            "USJ3V1498675"
+          ],
+          "title": "Si ti no soy nada",
+          "video": false,
+          "length": 271766,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988-01-01"
+        }
+      },
+      "updated_at": "2026-05-18T23:12:58.379Z"
+    },
+    {
+      "id": "1c7960a2-a426-44e7-b491-0ed5d6f2f2cf",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "recording_id": "f2025707-c4c0-4b75-9411-f2684011cce8",
+      "track_number": 10,
+      "disc_number": 1,
+      "title_override": null,
+      "created_at": "2026-05-18T21:38:22.833Z",
+      "mbid": "8bbf5041-5097-4bcf-937c-bea9cec3dce7",
+      "medium_id": null,
+      "position": 10,
+      "length": null,
+      "metadata": {
+        "track": {
+          "id": "8bbf5041-5097-4bcf-937c-bea9cec3dce7",
+          "title": "Quiero llenarte toda",
+          "length": null,
+          "number": "B5",
+          "position": 10,
+          "recording": {
+            "id": "39d0d0bd-b802-4941-bf08-49a8710caa0c",
+            "isrcs": [],
+            "title": "Quiero llenarte toda",
+            "video": false,
+            "length": null,
+            "artist-credit": [
+              {
+                "name": "Alex Bueno",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1988"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "39d0d0bd-b802-4941-bf08-49a8710caa0c",
+          "isrcs": [],
+          "title": "Quiero llenarte toda",
+          "video": false,
+          "length": null,
+          "artist-credit": [
+            {
+              "name": "Alex Bueno",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1988"
+        }
+      },
+      "updated_at": "2026-05-18T21:38:22.833Z"
+    }
+  ],
+  "releases": [
+    {
+      "id": "1039b7c8-ecb3-44d4-8f61-612087243e8e",
+      "title": "El duro soy yo",
+      "type": "album",
+      "release_year": null,
+      "label": null,
+      "country": "CO",
+      "created_at": "2026-05-16T10:59:13.020Z",
+      "release_group_id": "cff38ee6-5b4a-4daf-b5fe-f08ea95002d1",
+      "release_artist_id": "ae72a84f-28eb-44d2-8553-b840a4a1c1fe",
+      "mbid": "2efe8dd1-609c-414d-b4f6-37dba3ed40b6",
+      "disambiguation": null,
+      "status": "Official",
+      "packaging": "Jewel Case",
+      "barcode": null,
+      "catalog_number": null,
+      "date": "2006-01-01T05:00:00.000Z",
+      "label_id": null,
+      "metadata": {
+        "id": "2efe8dd1-609c-414d-b4f6-37dba3ed40b6",
+        "asin": null,
+        "date": "2006",
+        "title": "El duro soy yo",
+        "status": "Official",
+        "barcode": "7707025000659",
+        "country": "CO",
+        "quality": "normal",
+        "packaging": "Jewel Case",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+        "release-group": {
+          "id": "78276dc3-c737-4dcd-8c14-e6765adef572",
+          "title": "El duro soy yo",
+          "primary-type": "Album",
+          "disambiguation": "",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "first-release-date": "2005-07-19",
+          "secondary-type-ids": []
+        },
+        "disambiguation": "",
+        "release-events": [
+          {
+            "area": {
+              "id": "02b60d8d-7164-339d-868d-22d147d9f74a",
+              "name": "Colombia",
+              "type": null,
+              "type-id": null,
+              "sort-name": "Colombia",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "CO"
+              ]
+            },
+            "date": "2006"
+          }
+        ],
+        "cover-art-archive": {
+          "back": true,
+          "count": 2,
+          "front": true,
+          "artwork": true,
+          "darkened": false
+        },
+        "text-representation": {
+          "script": "Latn",
+          "language": "spa"
+        }
+      },
+      "updated_at": "2026-09-18T01:14:15.573Z",
+      "year": 2006,
+      "slug": "el-duro-soy-yo-sandy",
+      "views": 5,
+      "has_cover_image": true
+    },
+    {
+      "id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "title": "Sergio Vargas y Alex Bueno",
+      "type": "album",
+      "release_year": 1988,
+      "label": null,
+      "country": "XW",
+      "created_at": "2026-05-16T01:55:14.631Z",
+      "release_group_id": "0db40005-991e-4576-9b4b-b08dc9170849",
+      "release_artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "mbid": "17b5cdb7-655d-4e83-b519-3242eabbdb13",
+      "disambiguation": null,
+      "status": "Official",
+      "packaging": "None",
+      "barcode": null,
+      "catalog_number": null,
+      "date": "1988-01-01T05:00:00.000Z",
+      "label_id": null,
+      "metadata": {
+        "id": "17b5cdb7-655d-4e83-b519-3242eabbdb13",
+        "asin": null,
+        "date": "1988-01-01",
+        "title": "Sergio Vargas y Alex Bueno",
+        "status": "Official",
+        "barcode": "0886296606214",
+        "country": "XW",
+        "quality": "normal",
+        "packaging": "None",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "release-group": {
+          "id": "087f3906-d730-4bec-88a6-e34b4a4c947e",
+          "title": "Sergio Vargas & Alex Bueno",
+          "primary-type": "Album",
+          "disambiguation": "",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "first-release-date": "1988-01-01",
+          "secondary-type-ids": []
+        },
+        "disambiguation": "",
+        "release-events": [
+          {
+            "area": {
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "name": "[Worldwide]",
+              "type": null,
+              "type-id": null,
+              "sort-name": "[Worldwide]",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "XW"
+              ]
+            },
+            "date": "1988-01-01"
+          }
+        ],
+        "cover-art-archive": {
+          "back": false,
+          "count": 1,
+          "front": true,
+          "artwork": true,
+          "darkened": false
+        },
+        "text-representation": {
+          "script": "Latn",
+          "language": "spa"
+        }
+      },
+      "updated_at": "2026-09-17T08:13:02.356Z",
+      "year": 1988,
+      "slug": "sergio-vargas-y-alex-bueno-sergio-vargas",
+      "views": 1,
+      "has_cover_image": true
+    },
+    {
+      "id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "title": "Sergio Vargas & Alex Bueno",
+      "type": "album",
+      "release_year": 1988,
+      "label": null,
+      "country": null,
+      "created_at": "2026-05-16T01:55:14.089Z",
+      "release_group_id": "0db40005-991e-4576-9b4b-b08dc9170849",
+      "release_artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "mbid": "0a86f6a3-14d5-4289-a0c9-532345f2f86c",
+      "disambiguation": null,
+      "status": "Official",
+      "packaging": null,
+      "barcode": null,
+      "catalog_number": null,
+      "date": "1988-01-01T05:00:00.000Z",
+      "label_id": null,
+      "metadata": {
+        "id": "0a86f6a3-14d5-4289-a0c9-532345f2f86c",
+        "asin": null,
+        "date": "1988",
+        "title": "Sergio Vargas & Alex Bueno",
+        "status": "Official",
+        "barcode": null,
+        "country": null,
+        "quality": "normal",
+        "packaging": null,
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "packaging-id": null,
+        "release-group": {
+          "id": "087f3906-d730-4bec-88a6-e34b4a4c947e",
+          "title": "Sergio Vargas & Alex Bueno",
+          "primary-type": "Album",
+          "disambiguation": "",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "first-release-date": "1988-01-01",
+          "secondary-type-ids": []
+        },
+        "disambiguation": "",
+        "release-events": [
+          {
+            "area": null,
+            "date": "1988"
+          }
+        ],
+        "cover-art-archive": {
+          "back": false,
+          "count": 0,
+          "front": false,
+          "artwork": false,
+          "darkened": false
+        },
+        "text-representation": {
+          "script": "Latn",
+          "language": "spa"
+        }
+      },
+      "updated_at": "2026-09-17T14:46:50.613Z",
+      "year": 1988,
+      "slug": "sergio-vargas-alex-bueno-sergio-vargas",
+      "views": 2,
+      "has_cover_image": true
+    },
+    {
+      "id": "5842819f-89ed-4d21-b5b3-2ca3589059f3",
+      "title": "En el salón de la fama",
+      "type": "album",
+      "release_year": 2019,
+      "label": null,
+      "country": "XW",
+      "created_at": "2026-05-16T01:56:13.903Z",
+      "release_group_id": "ddc2c5c1-441f-4a6d-a9d4-e5031e98cd59",
+      "release_artist_id": "b41d4bd2-9303-4834-885e-e7dee35a0287",
+      "mbid": "7b12e161-08c7-4c32-86ab-0bd3ed3c3977",
+      "disambiguation": null,
+      "status": "Official",
+      "packaging": "None",
+      "barcode": null,
+      "catalog_number": null,
+      "date": "2019-05-17T04:00:00.000Z",
+      "label_id": null,
+      "metadata": {
+        "id": "7b12e161-08c7-4c32-86ab-0bd3ed3c3977",
+        "asin": null,
+        "date": "2019-05-17",
+        "title": "En el salón de la fama",
+        "status": "Official",
+        "barcode": null,
+        "country": "XW",
+        "quality": "normal",
+        "packaging": "None",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "release-group": {
+          "id": "83ec6d3b-7d37-474a-8bd0-830d42a3876c",
+          "title": "En el salón de la fama",
+          "primary-type": "Album",
+          "disambiguation": "",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "first-release-date": "2019-05-17",
+          "secondary-type-ids": []
+        },
+        "disambiguation": "",
+        "release-events": [
+          {
+            "area": {
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "name": "[Worldwide]",
+              "type": null,
+              "type-id": null,
+              "sort-name": "[Worldwide]",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "XW"
+              ]
+            },
+            "date": "2019-05-17"
+          }
+        ],
+        "cover-art-archive": {
+          "back": false,
+          "count": 1,
+          "front": true,
+          "artwork": true,
+          "darkened": false
+        },
+        "text-representation": {
+          "script": "Latn",
+          "language": "spa"
+        }
+      },
+      "updated_at": "2026-09-17T10:34:55.238Z",
+      "year": 2019,
+      "slug": "en-el-salon-de-la-fama-jose-pena-suazo",
+      "views": 5,
+      "has_cover_image": true
+    },
+    {
+      "id": "6c77972b-4c5c-4941-b71c-14fbcc504415",
+      "title": "El rey del merengue electrónico",
+      "type": null,
+      "release_year": 2021,
+      "label": null,
+      "country": null,
+      "created_at": "2026-05-16T01:58:49.951Z",
+      "release_group_id": "0c2bcac8-d5f9-481a-b54c-4a397169d594",
+      "release_artist_id": "4688614f-d936-4fb8-8bf1-04008de4256b",
+      "mbid": "503f1c05-069f-47f5-a940-6533d47a97c4",
+      "disambiguation": null,
+      "status": "Bootleg",
+      "packaging": null,
+      "barcode": null,
+      "catalog_number": null,
+      "date": null,
+      "label_id": null,
+      "metadata": {
+        "id": "503f1c05-069f-47f5-a940-6533d47a97c4",
+        "asin": null,
+        "title": "El rey del merengue electrónico",
+        "status": "Bootleg",
+        "barcode": null,
+        "quality": "normal",
+        "packaging": null,
+        "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+        "packaging-id": null,
+        "disambiguation": "",
+        "cover-art-archive": {
+          "back": false,
+          "count": 1,
+          "front": true,
+          "artwork": true,
+          "darkened": false
+        },
+        "text-representation": {
+          "script": "Latn",
+          "language": "mul"
+        }
+      },
+      "updated_at": "2026-09-28T04:29:31.884Z",
+      "year": null,
+      "slug": "el-rey-del-merengue-electronico-maffio",
+      "views": 2,
+      "has_cover_image": true
+    },
+    {
+      "id": "b92e02c4-2c0d-4625-a499-fabff3fbed88",
+      "title": "Contra el tiempo",
+      "type": "album",
+      "release_year": 2006,
+      "label": null,
+      "country": "XW",
+      "created_at": "2026-05-16T01:57:42.333Z",
+      "release_group_id": "02a0f428-6882-4502-b1c6-1ce1e38427a4",
+      "release_artist_id": "6321da6c-e2d5-490a-a4e8-416bbee81edf",
+      "mbid": "be039f65-aed7-4588-a22c-e730ae90bc1c",
+      "disambiguation": null,
+      "status": "Official",
+      "packaging": "None",
+      "barcode": null,
+      "catalog_number": null,
+      "date": "2006-06-13T04:00:00.000Z",
+      "label_id": null,
+      "metadata": {
+        "id": "be039f65-aed7-4588-a22c-e730ae90bc1c",
+        "asin": null,
+        "date": "2006-06-13",
+        "title": "Contra el tiempo",
+        "status": "Official",
+        "barcode": "739645016427",
+        "country": "XW",
+        "quality": "normal",
+        "packaging": "None",
+        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+        "release-group": {
+          "id": "f0325329-8d7f-49bf-a383-ff65a48718e2",
+          "title": "Contra el tiempo",
+          "primary-type": "Album",
+          "disambiguation": "",
+          "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+          "secondary-types": [],
+          "first-release-date": "2006-06-13",
+          "secondary-type-ids": []
+        },
+        "disambiguation": "",
+        "release-events": [
+          {
+            "area": {
+              "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+              "name": "[Worldwide]",
+              "type": null,
+              "type-id": null,
+              "sort-name": "[Worldwide]",
+              "disambiguation": "",
+              "iso-3166-1-codes": [
+                "XW"
+              ]
+            },
+            "date": "2006-06-13"
+          }
+        ],
+        "cover-art-archive": {
+          "back": false,
+          "count": 1,
+          "front": true,
+          "artwork": true,
+          "darkened": false
+        },
+        "text-representation": {
+          "script": "Latn",
+          "language": "spa"
+        }
+      },
+      "updated_at": "2026-09-17T22:37:02.141Z",
+      "year": 2006,
+      "slug": "contra-el-tiempo-don-miguelo-2",
+      "views": 3,
+      "has_cover_image": true
+    }
+  ],
+  "releaseArtists": [
+    {
+      "id": "0b04887f-304f-4e27-be30-a14183e8ca61",
+      "release_id": "1039b7c8-ecb3-44d4-8f61-612087243e8e",
+      "artist_id": "ae72a84f-28eb-44d2-8553-b840a4a1c1fe",
+      "role": "primary",
+      "credited_as": "Sandy MC",
+      "display_order": 0,
+      "created_at": "2026-07-03T22:15:00.455Z",
+      "updated_at": "2026-07-03T22:22:35.024Z"
+    },
+    {
+      "id": "aeb5c81e-7f85-4727-a80a-a69a03a90a98",
+      "release_id": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "role": "primary",
+      "credited_as": "Sergio Vargas",
+      "display_order": 0,
+      "created_at": "2026-07-03T22:15:00.455Z",
+      "updated_at": "2026-07-03T22:22:35.024Z"
+    },
+    {
+      "id": "77c2108a-6a73-4beb-8bb7-b3c921edc774",
+      "release_id": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "role": "primary",
+      "credited_as": "Sergio Vargas",
+      "display_order": 0,
+      "created_at": "2026-07-03T22:15:00.455Z",
+      "updated_at": "2026-07-03T22:22:35.024Z"
+    },
+    {
+      "id": "f67470a4-210c-40a1-bfaa-c9784960332d",
+      "release_id": "5842819f-89ed-4d21-b5b3-2ca3589059f3",
+      "artist_id": "b41d4bd2-9303-4834-885e-e7dee35a0287",
+      "role": "primary",
+      "credited_as": "José Peña Suazo",
+      "display_order": 0,
+      "created_at": "2026-07-03T22:15:00.455Z",
+      "updated_at": "2026-07-03T22:22:35.024Z"
+    },
+    {
+      "id": "290ace07-65dd-47c3-bca8-8236a803d7b6",
+      "release_id": "6c77972b-4c5c-4941-b71c-14fbcc504415",
+      "artist_id": "4688614f-d936-4fb8-8bf1-04008de4256b",
+      "role": "primary",
+      "credited_as": "Maffio",
+      "display_order": 0,
+      "created_at": "2026-07-03T22:15:00.455Z",
+      "updated_at": "2026-07-03T22:22:35.024Z"
+    },
+    {
+      "id": "7a784071-c79a-484f-9c98-174a47f6b64e",
+      "release_id": "b92e02c4-2c0d-4625-a499-fabff3fbed88",
+      "artist_id": "6321da6c-e2d5-490a-a4e8-416bbee81edf",
+      "role": "primary",
+      "credited_as": "Don Miguelo",
+      "display_order": 0,
+      "created_at": "2026-07-03T22:15:00.455Z",
+      "updated_at": "2026-07-03T22:22:35.024Z"
+    }
+  ],
+  "identities": [
+    {
+      "id": "2d8316d2-1e25-4b42-a44e-873ec1711672",
+      "name": "Guarionex Aquino Reyes",
+      "slug": "guarionex-aquino-reyes",
+      "status": "published",
+      "aliases": [
+        "El Gran Barítono Dominicano"
+      ]
+    },
+    {
+      "id": "977db71a-8bf6-4006-a63d-5e604e99336c",
+      "name": "Guarionex Aquino Hijo",
+      "slug": "guarionex-aquino-hijo",
+      "status": "published",
+      "aliases": []
+    },
+    {
+      "id": "78edb083-e4c4-4031-80a5-c0fcd6a72f2d",
+      "name": "Indira Rubiera",
+      "slug": "indhira-rubiera",
+      "status": "published",
+      "aliases": [
+        "Indhira Rubiera"
+      ]
+    },
+    {
+      "id": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+      "name": "Vickiana",
+      "slug": "vickiana",
+      "status": "published",
+      "aliases": []
+    }
+  ],
+  "artistColumns": [
+    {
+      "column_name": "id",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()"
+    },
+    {
+      "column_name": "name",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "column_name": "sort_name",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "type",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "birth_year",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "death_year",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "created_at",
+      "is_nullable": "YES",
+      "column_default": "now()"
+    },
+    {
+      "column_name": "views",
+      "is_nullable": "NO",
+      "column_default": "0"
+    },
+    {
+      "column_name": "wikidata_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "first_name",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "middle_name",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "last_name",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "second_last_name",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "stage_name",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "date_of_birth",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "birth_place",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "website",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "youtube",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "facebook",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "instagram",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "aliases",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "mbid",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "occupations",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "instruments",
+      "is_nullable": "YES",
+      "column_default": "ARRAY[]::text[]"
+    },
+    {
+      "column_name": "genres",
+      "is_nullable": "YES",
+      "column_default": "ARRAY[]::text[]"
+    },
+    {
+      "column_name": "disambiguation",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "gender",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "ended",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "mb_metadata",
+      "is_nullable": "YES",
+      "column_default": "'{}'::jsonb"
+    },
+    {
+      "column_name": "updated_at",
+      "is_nullable": "YES",
+      "column_default": "now()"
+    },
+    {
+      "column_name": "province",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "birth_day",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "birth_month",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "slug",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "column_name": "primary_role",
+      "is_nullable": "YES",
+      "column_default": "'unknown'::text"
+    },
+    {
+      "column_name": "artist_tags",
+      "is_nullable": "YES",
+      "column_default": "ARRAY[]::text[]"
+    },
+    {
+      "column_name": "date_of_death",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "status",
+      "is_nullable": "NO",
+      "column_default": "'published'::text"
+    },
+    {
+      "column_name": "primary_genre",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "bio_en",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "bio_es",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "has_image",
+      "is_nullable": "NO",
+      "column_default": "false"
+    },
+    {
+      "column_name": "image_updated_at",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "formation_year",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "dissolution_year",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "column_name": "spotify",
+      "is_nullable": "YES",
+      "column_default": null
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "3da97473-2ee4-4eab-83a8-8875a86de693",
+      "title": "Quiero llenarte toda",
+      "slug": "quiero-llenarte-toda-alex-bueno"
+    },
+    {
+      "id": "9fba2fe3-1166-4f87-a963-337bfa192f75",
+      "title": "Otro weekend sin ti",
+      "slug": "otro-weekend-sin-ti-alex-bueno-2"
+    },
+    {
+      "id": "f22051e0-5f56-4d11-889c-39092c6dba21",
+      "title": "Otro weekend sin ti",
+      "slug": "otro-weekend-sin-ti-alex-bueno-4"
+    },
+    {
+      "id": "d9ec1b10-90d8-4df0-afc8-422229925a0f",
+      "title": "Otro weekend sin ti",
+      "slug": "otro-weekend-sin-ti-alex-bueno-3"
+    },
+    {
+      "id": "a2f41e66-ad51-4f99-98ae-10785cd06d3d",
+      "title": "Radío popurri N.º 2: Quero conocerte / En bandolera / Oh, mi Yemayá / Quien te riza el pelo",
+      "slug": "radio-popurri-n-2-quero-conocerte-en-bandolera-oh-mi-yemaya-quien-te-riza-el-pelo-alex-bueno"
+    },
+    {
+      "id": "e0352817-a103-43b2-af46-15ae193e5628",
+      "title": "Sin ti no soy nada",
+      "slug": "sin-ti-no-soy-nada-alex-bueno"
+    },
+    {
+      "id": "cd5a15f1-145e-4b8b-a86a-51a448c74758",
+      "title": "En bandolera",
+      "slug": "en-bandolera-alex-bueno-4"
+    },
+    {
+      "id": "c7100070-e490-45c0-8bc0-3ed2f2bc2f9a",
+      "title": "El amor se acaba",
+      "slug": "el-amor-se-acaba-alex-bueno"
+    },
+    {
+      "id": "40e06758-6572-452e-9dc4-f98713acde63",
+      "title": "No soy nada sin ti",
+      "slug": "no-soy-nada-sin-ti-alex-bueno"
+    },
+    {
+      "id": "7df9073c-c3aa-46fc-9a52-947943aa2ae5",
+      "title": "No soy nada sin ti",
+      "slug": "no-soy-nada-sin-ti-alex-bueno-2"
+    },
+    {
+      "id": "4072eef2-734a-46c1-a5b8-ed3aa72fe151",
+      "title": "Otro weekend sin ti",
+      "slug": "otro-weekend-sin-ti-alex-bueno"
+    },
+    {
+      "id": "45cd2c45-2339-496b-9119-7522d7d66f33",
+      "title": "Quiero perderme contigo",
+      "slug": "quiero-perderme-contigo-alex-bueno"
+    },
+    {
+      "id": "8f998fb0-509b-4f05-9cf4-8e07ccfc084e",
+      "title": "Pero lo dudo",
+      "slug": "pero-lo-dudo-alex-bueno"
+    },
+    {
+      "id": "6f1a1f27-fca5-4ed3-a404-049b6f5e476c",
+      "title": "En bandolera",
+      "slug": "en-bandolera-alex-bueno"
+    },
+    {
+      "id": "f3751fcb-8f05-4d88-b42c-161bf15c99aa",
+      "title": "Sin ti no soy nada",
+      "slug": "sin-ti-no-soy-nada-alex-bueno-2"
+    },
+    {
+      "id": "86c19653-d957-4df6-9ba3-3a039e45070a",
+      "title": "En bandolera",
+      "slug": "en-bandolera-alex-bueno-2"
+    },
+    {
+      "id": "d09cba78-917a-489b-81e1-cae381b7f2ee",
+      "title": "Radio popurrí #2: Quiero conocerte / En bandolera / Oh, mi Yemayá / Quién te riza el pelo (Medley)",
+      "slug": "radio-popurri-2-quiero-conocerte-en-bandolera-oh-mi-yemaya-quien-te-riza-el-pelo-medley-alex-bueno"
+    },
+    {
+      "id": "97385acf-be36-4857-8644-cb84f67b1ea1",
+      "title": "En bandolera",
+      "slug": "en-bandolera-alex-bueno-3"
+    }
+  ]
+}

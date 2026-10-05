@@ -1,0 +1,46 @@
+{
+  "sources": [
+    {
+      "key": "banda",
+      "url": "https://music.amazon.co.uk/albums/B07RWQ59CF",
+      "retrievedAt": "2026-10-03T00:54:02.927Z",
+      "htmlSha256": "713fd9bcd38faab01d0f0ace5dc52b7108c9822605a3d8f179ce0ba0d59a5710",
+      "title": "En el Salón de la Fama — original album guest credits",
+      "tracks": [],
+      "evidenceText": " Tuning in ",
+      "organization": "La Banda Gorda / La Oreja Media Group",
+      "type": "record_label"
+    }
+  ],
+  "recordings": [
+    {
+      "recordingId": "d2303d7b-8ab4-40d4-84c0-aef2005e4f4f",
+      "expectedArtistId": "b41d4bd2-9303-4834-885e-e7dee35a0287",
+      "expectedTitle": "Me encantó lo de anoche",
+      "source": "banda",
+      "position": 5,
+      "credits": [
+        {
+          "artistId": "7b9ee34b-4438-4032-b827-0b748086e223",
+          "name": "Wason Brazobán",
+          "role": "featured_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "0636f4fa-1fde-4b87-9b4e-4a6098219e2b",
+      "expectedArtistId": "b41d4bd2-9303-4834-885e-e7dee35a0287",
+      "expectedTitle": "Esto no lo venden",
+      "source": "banda",
+      "position": 4,
+      "credits": [
+        {
+          "artistId": "779cf94c-fe33-47c3-b184-2ef4de20da69",
+          "name": "Silvio Mora",
+          "role": "featured_performer"
+        }
+      ]
+    }
+  ],
+  "releaseCredits": []
+}

@@ -1,0 +1,23 @@
+{
+  "verifiedAt": "2026-10-03T14:25:56.847Z",
+  "checks": {
+    "tenCorrectOwnersAndUrls": true,
+    "unchangedWorkAndEditionLinks": true,
+    "oldSlugsRemoved": true,
+    "sharedRelease_1ed33e4a-617b-49ba-b220-9bcba74526fe": true,
+    "sharedRelease_237e657a-6a15-4bdb-b673-3ee316b63a09": true,
+    "publicOwnerReadback": true,
+    "publicLeadCredit_02990a6a-ccdd-4d43-be40-73610630bb15": true,
+    "publicLeadCredit_13dd8d0c-1239-4876-84f8-02751fd6ecff": true,
+    "publicLeadCredit_15e06d83-81fa-4009-9476-370b17a40e89": true,
+    "publicLeadCredit_2b3f3d75-fa9b-4036-88ef-032700348d13": true,
+    "publicLeadCredit_3d1c54e7-b045-4105-9342-8748938200ca": true,
+    "publicLeadCredit_6b8dad81-685c-4854-b87c-9fa9d35a0218": true,
+    "publicLeadCredit_a27f06da-67fe-41be-856c-989339795600": true,
+    "publicLeadCredit_bc141597-7e01-4ae2-86fc-ec78a31b00af": true,
+    "publicLeadCredit_e63a471f-1cc4-4b07-beff-219c8b3b19d2": true,
+    "publicLeadCredit_f2025707-c4c0-4b75-9411-f2684011cce8": true,
+    "discography_6c3e0d74-23b7-4d80-969f-9d5319ee5127": true,
+    "discography_059a9e99-5d11-433e-97b9-9c35e57908f1": true
+  }
+}

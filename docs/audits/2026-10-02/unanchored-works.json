@@ -1,0 +1,252 @@
+[
+  {
+    "id": "0904b601-6c42-4527-a143-1105b630cb07",
+    "title": "El caminante",
+    "credits": [
+      {
+        "id": "bf694d36-ac03-4dbc-a0ee-95a8b51592a4",
+        "artist": "Bonny Cepeda",
+        "externalContributorId": null,
+        "role": "composer",
+        "verificationStatus": "unverified"
+      }
+    ]
+  },
+  {
+    "id": "9deca2a7-2e5f-4d1c-a89f-e8c1b392f5ba",
+    "title": "Dance",
+    "credits": [
+      {
+        "id": "8aa41c76-cf49-40ad-9bd2-824e38140592",
+        "artist": "Bonny Cepeda",
+        "externalContributorId": null,
+        "role": "composer",
+        "verificationStatus": "unverified"
+      }
+    ]
+  },
+  {
+    "id": "f5f44a2c-2bf2-47e3-ae3f-d63f11e3bbd4",
+    "title": "Me llamará",
+    "credits": [
+      {
+        "id": "8afc78e0-0cb8-4091-b2d8-60901457e932",
+        "artist": "Bonny Cepeda",
+        "externalContributorId": null,
+        "role": "composer",
+        "verificationStatus": "unverified"
+      }
+    ]
+  },
+  {
+    "id": "f6ebe3a5-6098-4a51-aa82-0def391a261a",
+    "title": "Baila en la patronal",
+    "credits": [
+      {
+        "id": "8baece90-ea13-4bab-ad21-7cf64388c4e1",
+        "artist": "Bonny Cepeda",
+        "externalContributorId": null,
+        "role": "composer",
+        "verificationStatus": "unverified"
+      }
+    ]
+  },
+  {
+    "id": "57fa6f85-d832-46c3-95c3-d71a3a1b5d14",
+    "title": "Siga bailando",
+    "credits": [
+      {
+        "id": "25dd9ca5-3b28-4a29-bfd8-f339586d4bac",
+        "artist": "Bonny Cepeda",
+        "externalContributorId": null,
+        "role": "composer",
+        "verificationStatus": "unverified"
+      }
+    ]
+  },
+  {
+    "id": "60d0a1f7-e88b-49ff-9268-e88bb6e32043",
+    "title": "Colina",
+    "credits": [
+      {
+        "id": "9c59e4b3-4888-431b-afda-b67b93505f21",
+        "artist": "Freddy Gerardo",
+        "externalContributorId": null,
+        "role": "composer",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "cbb247b9-ae1a-4d1f-a1b7-8f07aeb71969",
+        "artist": "Freddy Gerardo",
+        "externalContributorId": null,
+        "role": "lyricist",
+        "verificationStatus": "unverified"
+      }
+    ]
+  },
+  {
+    "id": "2ac949be-3527-4283-adf9-6db1afe36bff",
+    "title": "Pagando el 71",
+    "credits": [
+      {
+        "id": "53baca54-ad99-4a95-8ab0-cba33e6753cb",
+        "artist": "Freddy Gerardo",
+        "externalContributorId": null,
+        "role": "composer",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "fabf9358-0b2d-4ff2-bbd9-e370772f1ca2",
+        "artist": "Freddy Gerardo",
+        "externalContributorId": null,
+        "role": "lyricist",
+        "verificationStatus": "unverified"
+      }
+    ]
+  },
+  {
+    "id": "125b96ef-52de-4463-b938-5c8fd43aecdf",
+    "title": "Antonio Pérez",
+    "credits": [
+      {
+        "id": "dd84e81d-c8e8-423d-88c2-6498b9c5bcbd",
+        "artist": "Freddy Gerardo",
+        "externalContributorId": null,
+        "role": "composer",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "c7e9c37c-802a-4de6-bb0f-d8b2ff1b4788",
+        "artist": "Freddy Gerardo",
+        "externalContributorId": null,
+        "role": "lyricist",
+        "verificationStatus": "unverified"
+      }
+    ]
+  },
+  {
+    "id": "a52c8540-55b8-43a8-825e-ce844f51e45e",
+    "title": "El viejo",
+    "credits": [
+      {
+        "id": "835b3e4d-d9cf-4ffc-80ee-662e18b460c0",
+        "artist": "Freddy Gerardo",
+        "externalContributorId": null,
+        "role": "composer",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "971c5cbf-6c9c-4a8d-8faf-b42ed76f6d34",
+        "artist": "Freddy Gerardo",
+        "externalContributorId": null,
+        "role": "lyricist",
+        "verificationStatus": "unverified"
+      }
+    ]
+  },
+  {
+    "id": "095f447a-7fcb-4f25-ba93-5d4e7f90fc10",
+    "title": "El grillo",
+    "credits": [
+      {
+        "id": "01c6806b-acf1-424a-9fa8-415b4c3910e0",
+        "artist": "Freddy Gerardo",
+        "externalContributorId": null,
+        "role": "composer",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "5d8b9b67-d604-40f7-91c3-ed09f27e8269",
+        "artist": "Freddy Gerardo",
+        "externalContributorId": null,
+        "role": "lyricist",
+        "verificationStatus": "unverified"
+      }
+    ]
+  },
+  {
+    "id": "efa87491-e7dd-4bf1-b8e8-52e617b077b4",
+    "title": "Volveré a mi tierra",
+    "credits": []
+  },
+  {
+    "id": "aca213bb-7311-4175-9538-921a47a7ff37",
+    "title": "Ave de paso",
+    "credits": []
+  },
+  {
+    "id": "dee3a05a-2ae6-4bc9-bd24-f548de648b20",
+    "title": "Cumandé",
+    "credits": []
+  },
+  {
+    "id": "ed8c0cad-69fd-4ad6-b2ee-f655022044f4",
+    "title": "Mi tonto amor",
+    "credits": []
+  },
+  {
+    "id": "8d262d6f-e03e-4ff5-b909-f616060bd622",
+    "title": "Las pequeñas cosas",
+    "credits": []
+  },
+  {
+    "id": "a4bbebff-d41d-4bb3-83e8-ea24344c1f4a",
+    "title": "Ta pillao",
+    "credits": []
+  },
+  {
+    "id": "2d8137d9-3aa9-41db-85e4-8f130438a8a5",
+    "title": "Dame veneno",
+    "credits": []
+  },
+  {
+    "id": "721bfe24-b9c1-4d96-ae73-4b0eca6e9ef1",
+    "title": "Mamá vieja",
+    "credits": []
+  },
+  {
+    "id": "83e0d1f8-6068-47bc-9316-8a7118680881",
+    "title": "Abusadora",
+    "credits": []
+  },
+  {
+    "id": "bcf23275-7cdd-4c7d-8759-24074b87dc05",
+    "title": "El comején",
+    "credits": []
+  },
+  {
+    "id": "f0572334-06c2-403d-9b73-c8772bda3373",
+    "title": "Don José",
+    "credits": []
+  },
+  {
+    "id": "3b27bcf8-d5fc-4bc1-a76c-431c07d51966",
+    "title": "El semáforo",
+    "credits": []
+  },
+  {
+    "id": "fef8ee62-2210-47ec-bfdd-515409fc5d75",
+    "title": "La batidora",
+    "credits": []
+  },
+  {
+    "id": "b0bc1221-3473-4b09-a16e-37c2359328d3",
+    "title": "El No Te Quiere",
+    "credits": [
+      {
+        "id": "ae232297-5cc6-470a-8cb4-73bd168bf34d",
+        "artist": "Alejandro Montero",
+        "externalContributorId": null,
+        "role": "composer",
+        "verificationStatus": "unverified"
+      },
+      {
+        "id": "c8f40687-e6ce-4c8c-b73a-784c96a17f47",
+        "artist": "Alejandro Montero",
+        "externalContributorId": null,
+        "role": "lyricist",
+        "verificationStatus": "unverified"
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "key": "amores-apple",
+      "type": "digital_music_service",
+      "title": "Amores — Capitol Latin recording credits",
+      "organization": "Apple / Shazam — label-supplied credits",
+      "url": "https://www.shazam.com/es-es/song/714622937/amores",
+      "retrievedAt": "2026-10-03T12:29:11.394Z",
+      "sha256": "843abf38aa132a875efe58e6f177d4636674dc5e6463bfe1d0e87196a38d5905",
+      "evidenceText": "PERFORMING ARTISTS\nSandy Gabriel\nTenor Saxophone\nAbednego De Los Santos\nBass, Bass\nEl Prodigio\nAccordion\nJuan Luis Guerra\nPerformer",
+      "method": "Visible Chrome DOM credit section; Apple Music indexed credit corroboration",
+      "corroboratingUrl": "https://music.apple.com/cl/song/amores/714316162?l=en-GB",
+      "hashScope": "Transcribed visible credit block, not full HTML"
+    }
+  ],
+  "recordings": [
+    {
+      "recordingId": "72953b36-4dea-403f-8d4d-27005c7c9f3d",
+      "expectedArtistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+      "expectedTitle": "Amores",
+      "source": "amores-apple",
+      "position": 8,
+      "credits": [
+        {
+          "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+          "name": "El Prodigio",
+          "role": "performer",
+          "instrument": "accordion"
+        }
+      ]
+    }
+  ],
+  "releaseCredits": [],
+  "roleMappingNote": "Canonical registry has no accordion code; use its existing performer role with exact metadata.instrument=accordion, following existing recording credit convention. No singer role inferred."
+}

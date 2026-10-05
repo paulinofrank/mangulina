@@ -1,0 +1,33 @@
+[
+  {
+    "recordingId": "5b3c5a81-0456-43af-839c-122660ad5748",
+    "title": "Danza kuduro (merengue electrónico remix)",
+    "originalOwner": "Maffio",
+    "status": "unresolved",
+    "sources": [],
+    "reason": "The remix needs its original package and explicit performer/remixer credits. Credits for the original Danza kuduro cannot safely establish this remix attribution.",
+    "originalCaseNumber": 3
+  },
+  {
+    "recordingId": "88fa2345-f6ea-4d5c-bd75-f03b0a64b092",
+    "title": "LLevate La Cama Pa' La Calle",
+    "originalOwner": "Don Miguelo",
+    "status": "awaiting_draft_publication",
+    "sources": [
+      "https://music.apple.com/us/song/157780362"
+    ],
+    "reason": "Disambiguated Dominican draft identity created and evidenced featured credit saved; profile review, photo and publication required by artist-creation policy.",
+    "originalCaseNumber": 14
+  },
+  {
+    "recordingId": "0636f4fa-1fde-4b87-9b4e-4a6098219e2b",
+    "title": "Esto no lo venden",
+    "originalOwner": "José Peña Suazo y La Banda Gorda",
+    "status": "awaiting_draft_publication",
+    "sources": [
+      "https://music.amazon.co.uk/albums/B07RWQ59CF"
+    ],
+    "reason": "Disambiguated Dominican draft identity created and evidenced featured credit saved; profile review, photo and publication required by artist-creation policy.",
+    "originalCaseNumber": 15
+  }
+]

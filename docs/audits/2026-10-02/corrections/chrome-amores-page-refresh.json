@@ -1,0 +1,22 @@
+{
+  "requestedAt": "2026-10-03T12:31:18.391Z",
+  "endpoint": "https://www.mangulina.do/api/revalidate",
+  "counts": {
+    "artists": 2,
+    "songs": 1,
+    "releases": 1
+  },
+  "batches": [
+    {
+      "httpStatus": 200,
+      "ok": true,
+      "revalidated": {
+        "artists": 2,
+        "songs": 1,
+        "releases": 1,
+        "allArtists": false
+      }
+    }
+  ],
+  "completedAt": "2026-10-03T12:31:18.988Z"
+}

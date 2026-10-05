@@ -1,0 +1,329 @@
+{
+  "changes": [
+    {
+      "workId": "4a1fc0e5-72c7-45bd-9bbc-f083b63e6b48",
+      "title": "Bendita tu luz",
+      "previous": [
+        {
+          "id": "1d9db01e-07f2-4a9c-8557-5efb67c1718f",
+          "work_id": "4a1fc0e5-72c7-45bd-9bbc-f083b63e6b48",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "d79deb0a-ab77-4c36-8165-cb0315c504d3",
+          "work_id": "4a1fc0e5-72c7-45bd-9bbc-f083b63e6b48",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Fher Olvera",
+          "creditedAs": "Fher Olvera",
+          "role": "songwriter"
+        },
+        {
+          "name": "Sergio Vallín",
+          "creditedAs": "Sergio Vallin",
+          "role": "songwriter"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/es-es/album/amar-es-combatir-mana/0825646366163",
+      "sourceTrack": {
+        "position": 7,
+        "title": "Bendita Tu Luz",
+        "artist": "",
+        "credits": [
+          "Alex Gonzalez, Producer, Drums, Percussion, Vocals, Drum Programmer - Fher Olvera, Producer, Acoustic Guitar, Electric Guitar, Vocals, Writer, Harmonica - Brian Gardner, MasteringEngineer - Javier Valverde, Editor, AssistantEngineer - Maná, MainArtist - Sergio Vallin, Acoustic Guitar, Electric Guitar, Vocals, Writer - Thom Russo, Engineer, MixingEngineer - Fabian Serrano, Editor - Fernando Vallin, Editor, Technician - Francisco Ayon, Technician - Juan Calleros, Bass - Miguel Bustamante, AssistantEngineer - Juan Luis Guerra 4.40, Vocals, FeaturedArtist - Mike Fassano, Technician - Conrad Garcia, Percussion - Juan Toribio, Keyboards",
+          "© 2006 Warner Music Mexico, S.A. de C.V. ℗ 2006 Warner Music México, S.A. de C.V."
+        ],
+        "duration": "00:04:22"
+      }
+    },
+    {
+      "workId": "c65efbe8-4b1e-4061-b2ea-0073f3925409",
+      "title": "Patria",
+      "previous": [
+        {
+          "id": "1ebe14f8-c371-4714-af08-720fca18a2c5",
+          "work_id": "c65efbe8-4b1e-4061-b2ea-0073f3925409",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "686e742d-76d7-4837-851c-ac81f55ae7ec",
+          "work_id": "c65efbe8-4b1e-4061-b2ea-0073f3925409",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Rubén Blades",
+          "creditedAs": "Ruben Blades",
+          "role": "composer"
+        },
+        {
+          "name": "Rubén Blades",
+          "creditedAs": "Ruben Blades",
+          "role": "songwriter"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/fr-fr/album/todos-vuelven-live-vol-2-live-ruben-blades-seis-del-solar/vkdimchd8k6sb",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Patria (Live)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, Composer, Writer, MainArtist - Seis del Solar, MainArtist",
+          "© 2010 Ruben Blades Productions ℗ 2010 Ruben Blades Productions"
+        ],
+        "duration": "00:05:37"
+      }
+    },
+    {
+      "workId": "64107b7a-8ff9-43db-b55b-4ecddc5cb4f3",
+      "title": "Mamá",
+      "previous": [
+        {
+          "id": "b1ad5b27-a119-42dc-9658-87de4e21eeb3",
+          "work_id": "64107b7a-8ff9-43db-b55b-4ecddc5cb4f3",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "f981737a-d370-4569-9dca-becd9dbf9da9",
+          "work_id": "64107b7a-8ff9-43db-b55b-4ecddc5cb4f3",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "R. Rosa",
+          "role": "composer"
+        },
+        {
+          "name": "Draco Rosa",
+          "creditedAs": "R. Rosa",
+          "role": "lyricist"
+        },
+        {
+          "name": "Luis Gómez Escolar",
+          "creditedAs": "Luis Gómez Escolar",
+          "role": "composer"
+        },
+        {
+          "name": "Luis Gómez Escolar",
+          "creditedAs": "Luis Gómez Escolar",
+          "role": "lyricist"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/fr-fr/album/frio-robi-rosa/d80eqkhn03k8a",
+      "sourceTrack": {
+        "position": 5,
+        "title": "Mama",
+        "artist": "",
+        "credits": [
+          "Robi Rosa, Electric Guitar, Co-Producer, MainArtist, AssociatedPerformer, Vocal - R. Rosa, Composer, Lyricist - Jerry Hey, Trumpet - Brad Gilderman, Mixing Engineer, Recording Engineer - Cal Harris, Assistant Engineer - John Robinson, Drums - Jimmy Johnson, Background Vocal - Steve Hall, Mastering Engineer - Ronnie Foster, Producer - Luis Gómez Escolar, Composer, Lyricist - Luis Conte, Percussion - Gary Grant, Trumpet - Ken Deranteriasian, Assistant Engineer - Casey McMackin, Assistant Engineer - Bill Reichenbach, Trumpet - Mitch Gibson, Assistant Engineer - Zander Schloss, Electric Guitar - Kurt Upper, Mixing Engineer, Recording Engineer - Eric Fisher, Assistant Engineer - Doug Shwartz, Editor, Mastering Engineer - Bryant Jackson, Assistant Engineer - Michael Helms, Mixing Engineer",
+          "(P)1994 Sony Music Entertainment Inc."
+        ],
+        "duration": "00:03:44"
+      }
+    },
+    {
+      "workId": "4b7ab489-53dc-493a-8350-c6b021457bf0",
+      "title": "Padre Antonio y su monaguillo Andrés",
+      "previous": [
+        {
+          "id": "3d32e1a2-f6c7-40b8-9e28-43c24679d0bd",
+          "work_id": "4b7ab489-53dc-493a-8350-c6b021457bf0",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "9978b31b-4074-42f8-80db-29a661450b0e",
+          "work_id": "4b7ab489-53dc-493a-8350-c6b021457bf0",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Rubén Blades",
+          "creditedAs": "Ruben Blades",
+          "role": "composer"
+        },
+        {
+          "name": "Rubén Blades",
+          "creditedAs": "Ruben Blades",
+          "role": "songwriter"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/es-es/album/buscando-america-ruben-blades/0075596035262",
+      "sourceTrack": {
+        "position": 6,
+        "title": "El Padre Antonio  (Y El Monaguillo Andres  LP Version)",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Guitar, Producer, Vocals, Composer, Writer - David F. Rodriguez, Engineer - Eddy Montalvo, Percussion, Trombone - Louis Rivera, Percussion - Michael Vinas, Banjo, Guitar - Oscar Hernández, Keyboards, Piano - Ralph Irizarry, Percussion - Ricardo Marrero, Percussion, Synthesizer, Vibraphone - Adam Pinch, Contributor - Charles Blankette, Contributor - John Harris, Contributor - Mark Shane, Contributor - Mick Adams, Contributor - Mikael Ifversen, Contributor",
+          "℗ 1984 Elektra Entertainment Group"
+        ],
+        "duration": "00:08:03"
+      }
+    },
+    {
+      "workId": "a6c1cc75-f27f-4629-8bf2-b29b142c0b01",
+      "title": "Sin tu cariño",
+      "previous": [
+        {
+          "id": "47e20345-4376-4b1b-b9e3-068e7b16d8ba",
+          "work_id": "a6c1cc75-f27f-4629-8bf2-b29b142c0b01",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "composer",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 1,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        },
+        {
+          "id": "1c3ad3f7-e19d-49fa-8c38-6ceef7029e6a",
+          "work_id": "a6c1cc75-f27f-4629-8bf2-b29b142c0b01",
+          "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "role": "lyricist",
+          "credited_as": "Juan Luis Guerra",
+          "credit_detail": null,
+          "sequence": 2,
+          "verification_status": "unverified",
+          "notes": null,
+          "metadata": {},
+          "created_at": "2026-09-18T03:41:09.399Z",
+          "updated_at": "2026-09-18T03:41:09.399Z",
+          "role_id": null,
+          "external_contributor_id": null
+        }
+      ],
+      "authors": [
+        {
+          "name": "Rubén Blades",
+          "creditedAs": "Ruben Blades",
+          "role": "composer"
+        },
+        {
+          "name": "Rubén Blades",
+          "creditedAs": "Ruben Blades",
+          "role": "lyricist"
+        },
+        {
+          "name": "Louie Ramirez",
+          "creditedAs": "Louie Ramirez",
+          "role": "composer"
+        },
+        {
+          "name": "Louie Ramirez",
+          "creditedAs": "Louie Ramirez",
+          "role": "lyricist"
+        }
+      ],
+      "sourceUrl": "https://www.qobuz.com/es-es/album/bohemio-y-poeta-ruben-blades/kcy2yel4fszdb",
+      "sourceTrack": {
+        "position": 2,
+        "title": "Sin Tu Cariño",
+        "artist": "",
+        "credits": [
+          "Ruben Blades, MainArtist, Vocalist, ComposerLyricist - Jerry Masucci, ExecutiveProducer - Louie Ramirez, ComposerLyricist",
+          "℗ 1979 Craft Recordings, a division of Concord Music Group, Inc."
+        ],
+        "duration": "00:06:30"
+      }
+    }
+  ]
+}

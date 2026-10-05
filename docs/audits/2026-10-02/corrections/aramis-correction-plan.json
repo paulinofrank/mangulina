@@ -1,0 +1,420 @@
+{
+  "sources": [
+    {
+      "key": "package",
+      "type": "digital_music_service",
+      "title": "Combinación Perfecta del Merengue by Various Artists",
+      "organization": "Mundo Records / Kithara Entertainment — Qobuz label-delivered credits",
+      "url": "https://www.qobuz.com/dk-en/album/combinacion-perfecta-del-merengue-various-artists/gd4os091p33ta",
+      "sha256": "4112a291190fffce073ba5c91b8b69b682f523ad2743508c092fb8a80de8757a",
+      "retrievedAt": "2026-10-03T13:54:46.949Z"
+    }
+  ],
+  "recordings": [
+    {
+      "recordingId": "5bc79bfc-a11a-4a74-afe4-e3cdd732574f",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "Felicidades",
+      "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+      "source": "package",
+      "position": 1,
+      "credits": [
+        {
+          "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+          "name": "El Zafiro Carlos Manuel & Orquesta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "4f0b8de9-f23e-46de-b477-9e6be1e1c342",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "El motor",
+      "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+      "source": "package",
+      "position": 2,
+      "credits": [
+        {
+          "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+          "name": "Aramis Camilo & La Organización Secreta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "38b0f540-f817-42dc-94ce-bfd626dd0f1c",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "A nadie le importa",
+      "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+      "source": "package",
+      "position": 3,
+      "credits": [
+        {
+          "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+          "name": "El Zafiro Carlos Manuel & Orquesta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "548a7846-fd2e-42a9-9245-8fff9a76e7c8",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "Ven llévame contigo",
+      "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+      "source": "package",
+      "position": 4,
+      "credits": [
+        {
+          "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+          "name": "Aramis Camilo & La Organización Secreta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "3bfddbe1-13d6-470d-a11a-b638ed8d26cd",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "Porque tú me gustas",
+      "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+      "source": "package",
+      "position": 5,
+      "credits": [
+        {
+          "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+          "name": "El Zafiro Carlos Manuel & Orquesta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "8ec087d4-7728-4d80-bec6-7992e6ffec6c",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "El alicate",
+      "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+      "source": "package",
+      "position": 6,
+      "credits": [
+        {
+          "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+          "name": "Aramis Camilo & La Organización Secreta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "84891ace-1368-4899-868c-67aac817286e",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "El muerto",
+      "source": "package",
+      "position": 7,
+      "credits": [
+        {
+          "artistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+          "name": "Tony Seval & Orquesta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "7a60dd1c-50a0-461b-896e-5a1c47d2fa7a",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "Hello",
+      "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+      "source": "package",
+      "position": 8,
+      "credits": [
+        {
+          "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+          "name": "Aramis Camilo & La Organización Secreta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "1cc97501-8575-4ff4-b49b-8ff04575eaa6",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "Un poco más",
+      "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+      "source": "package",
+      "position": 9,
+      "credits": [
+        {
+          "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+          "name": "El Zafiro Carlos Manuel & Orquesta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "6e2c1583-9f5d-4384-89ac-c802509a6e7c",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "El candado del amor",
+      "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+      "source": "package",
+      "position": 10,
+      "credits": [
+        {
+          "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+          "name": "Aramis Camilo & La Organización Secreta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "9f4b02ae-1349-45e8-b835-b86cfaec31bf",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "Y tú no correspondes",
+      "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+      "source": "package",
+      "position": 11,
+      "credits": [
+        {
+          "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+          "name": "El Zafiro Carlos Manuel & Orquesta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "c2985d99-4bc4-4b32-a299-f1de7e048e7b",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "Tú mi cigarrillo",
+      "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+      "source": "package",
+      "position": 12,
+      "credits": [
+        {
+          "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+          "name": "Aramis Camilo & La Organización Secreta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "8158e565-46b3-486c-9257-c9056f34c0ae",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "El cheque",
+      "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+      "source": "package",
+      "position": 13,
+      "credits": [
+        {
+          "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+          "name": "El Zafiro Carlos Manuel & Orquesta",
+          "role": "lead_performer"
+        }
+      ]
+    },
+    {
+      "recordingId": "5dbf5a25-50b8-4bba-82a6-290c28ae1e3d",
+      "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "expectedTitle": "Yo digo que no",
+      "source": "package",
+      "position": 14,
+      "credits": [
+        {
+          "artistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+          "name": "Tony Seval & Orquesta",
+          "role": "lead_performer"
+        }
+      ]
+    }
+  ],
+  "releaseCredits": [
+    {
+      "releaseId": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+      "name": "El Zafiro Carlos Manuel & Orquesta",
+      "source": "package"
+    },
+    {
+      "releaseId": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+      "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+      "name": "Aramis Camilo & La Organización Secreta",
+      "source": "package"
+    }
+  ],
+  "package": {
+    "releaseId": "7abf75e9-9091-4540-964c-a5a40dbc13c4",
+    "expectedArtistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+    "expectedTitle": "La combinación perfecta",
+    "expectedType": "album",
+    "type": "compilation"
+  },
+  "matches": [
+    {
+      "position": 1,
+      "recordingId": "5bc79bfc-a11a-4a74-afe4-e3cdd732574f",
+      "catalogTitle": "Felicidades",
+      "officialTitle": "Felicidades",
+      "importedArtist": "Carlos Manuel",
+      "officialArtist": "El Zafiro Carlos Manuel & Orquesta",
+      "catalogDurationMs": 239573,
+      "officialDuration": "00:04:01",
+      "differenceSeconds": 1.427,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 2,
+      "recordingId": "4f0b8de9-f23e-46de-b477-9e6be1e1c342",
+      "catalogTitle": "El motor",
+      "officialTitle": "El Motor",
+      "importedArtist": "Aramis Camilo",
+      "officialArtist": "Aramis Camilo & La Organización Secreta",
+      "catalogDurationMs": 224866,
+      "officialDuration": "00:03:44",
+      "differenceSeconds": 0.866,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 3,
+      "recordingId": "38b0f540-f817-42dc-94ce-bfd626dd0f1c",
+      "catalogTitle": "A nadie le importa",
+      "officialTitle": "A Nadie Le Importa",
+      "importedArtist": "Carlos Manuel",
+      "officialArtist": "El Zafiro Carlos Manuel & Orquesta",
+      "catalogDurationMs": 257600,
+      "officialDuration": "00:04:21",
+      "differenceSeconds": 3.4,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 4,
+      "recordingId": "548a7846-fd2e-42a9-9245-8fff9a76e7c8",
+      "catalogTitle": "Ven llévame contigo",
+      "officialTitle": "Ven Llévame Contigo",
+      "importedArtist": "Aramis Camilo",
+      "officialArtist": "Aramis Camilo & La Organización Secreta",
+      "catalogDurationMs": 259493,
+      "officialDuration": "00:04:20",
+      "differenceSeconds": 0.507,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 5,
+      "recordingId": "3bfddbe1-13d6-470d-a11a-b638ed8d26cd",
+      "catalogTitle": "Porque tú me gustas",
+      "officialTitle": "Porque Tu Me Gustas",
+      "importedArtist": "Carlos Manuel",
+      "officialArtist": "El Zafiro Carlos Manuel & Orquesta",
+      "catalogDurationMs": 237173,
+      "officialDuration": "00:03:59",
+      "differenceSeconds": 1.827,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 6,
+      "recordingId": "8ec087d4-7728-4d80-bec6-7992e6ffec6c",
+      "catalogTitle": "El alicate",
+      "officialTitle": "El Alicate",
+      "importedArtist": "Aramis Camilo",
+      "officialArtist": "Aramis Camilo & La Organización Secreta",
+      "catalogDurationMs": 275066,
+      "officialDuration": "00:04:35",
+      "differenceSeconds": 0.066,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 7,
+      "recordingId": "84891ace-1368-4899-868c-67aac817286e",
+      "catalogTitle": "El muerto",
+      "officialTitle": "El Muerto",
+      "importedArtist": "Tony Seval",
+      "officialArtist": "Tony Seval & Orquesta",
+      "catalogDurationMs": 244693,
+      "officialDuration": "00:04:07",
+      "differenceSeconds": 2.307,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 8,
+      "recordingId": "7a60dd1c-50a0-461b-896e-5a1c47d2fa7a",
+      "catalogTitle": "Hello",
+      "officialTitle": "Hello",
+      "importedArtist": "Aramis Camilo",
+      "officialArtist": "Aramis Camilo & La Organización Secreta",
+      "catalogDurationMs": 292706,
+      "officialDuration": "00:04:53",
+      "differenceSeconds": 0.294,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 9,
+      "recordingId": "1cc97501-8575-4ff4-b49b-8ff04575eaa6",
+      "catalogTitle": "Un poco más",
+      "officialTitle": "Un Poco Mas",
+      "importedArtist": "Carlos Manuel",
+      "officialArtist": "El Zafiro Carlos Manuel & Orquesta",
+      "catalogDurationMs": 265533,
+      "officialDuration": "00:04:25",
+      "differenceSeconds": 0.533,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 10,
+      "recordingId": "6e2c1583-9f5d-4384-89ac-c802509a6e7c",
+      "catalogTitle": "El candado del amor",
+      "officialTitle": "El Candado del Amor",
+      "importedArtist": "Aramis Camilo",
+      "officialArtist": "Aramis Camilo & La Organización Secreta",
+      "catalogDurationMs": 225960,
+      "officialDuration": "00:03:46",
+      "differenceSeconds": 0.04,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 11,
+      "recordingId": "9f4b02ae-1349-45e8-b835-b86cfaec31bf",
+      "catalogTitle": "Y tú no correspondes",
+      "officialTitle": "Y Tu No Me Correspondes",
+      "importedArtist": "Carlos Manuel",
+      "officialArtist": "El Zafiro Carlos Manuel & Orquesta",
+      "catalogDurationMs": 231373,
+      "officialDuration": "00:03:54",
+      "differenceSeconds": 2.627,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 12,
+      "recordingId": "c2985d99-4bc4-4b32-a299-f1de7e048e7b",
+      "catalogTitle": "Tú mi cigarrillo",
+      "officialTitle": "Tu, Mi Cigarrillo",
+      "importedArtist": "Aramis Camilo",
+      "officialArtist": "Aramis Camilo & La Organización Secreta",
+      "catalogDurationMs": 264733,
+      "officialDuration": "00:04:24",
+      "differenceSeconds": 0.733,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 13,
+      "recordingId": "8158e565-46b3-486c-9257-c9056f34c0ae",
+      "catalogTitle": "El cheque",
+      "officialTitle": "El Cheque",
+      "importedArtist": "Carlos Manuel",
+      "officialArtist": "El Zafiro Carlos Manuel & Orquesta",
+      "catalogDurationMs": 235093,
+      "officialDuration": "00:03:57",
+      "differenceSeconds": 1.907,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    },
+    {
+      "position": 14,
+      "recordingId": "5dbf5a25-50b8-4bba-82a6-290c28ae1e3d",
+      "catalogTitle": "Yo digo que no",
+      "officialTitle": "Yo Digo Que No",
+      "importedArtist": "Tony Seval",
+      "officialArtist": "Tony Seval & Orquesta",
+      "catalogDurationMs": 251200,
+      "officialDuration": "00:04:15",
+      "differenceSeconds": 3.8,
+      "reason": "Same complete 14-position compilation sequence, explicit label artist and agreeing imported recording identity. Duration difference does not assert byte-identical mastering or merge recordings."
+    }
+  ],
+  "corroboration": [
+    "https://music.amazon.in/albums/B07DHGKS4Y",
+    "https://music.apple.com/us/album/combinaci%C3%B3n-perfecta-del-merengue/1393915623",
+    "https://www.beatport.com/release/combinacion-perfecta-del-merengue/5238777"
+  ],
+  "scope": "Correct performer attribution, not edition merging, historical date or inferred composer/lyricist roles. Existing titles, IDs and slugs retained."
+}

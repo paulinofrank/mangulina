@@ -1,0 +1,242 @@
+{
+  "sources": [
+    {
+      "key": "individual",
+      "type": "web",
+      "title": "Sergio Vargas y Alex Bueno - Album by Sergio Vargas | Spotify",
+      "organization": "Spotify / Karen Records",
+      "url": "https://open.spotify.com/album/5gOCPQHFTL18kXB0pGHblY",
+      "sha256": "080c9bfe38762bfc0209c7bbdeb25c2506d4b2f784cea72b6d85d47ebb89082d",
+      "retrievedAt": "2026-10-03T14:22:52.902Z"
+    },
+    {
+      "key": "shared",
+      "type": "web",
+      "title": "Sergio Vargas y Alex Bueno, Sergio Vargas - Qobuz",
+      "organization": "Qobuz / Karen Records",
+      "url": "https://www.qobuz.com/gb-en/album/sergio-vargas-y-alex-bueno-sergio-vargas-alex-bueno/c0stvf47mdmta",
+      "sha256": "91702166bb3ae6d3f42fe31d9aa069072706d96c03a5f6b7e2058cf13d8edb26",
+      "retrievedAt": "2026-10-03T14:22:53.099Z"
+    },
+    {
+      "key": "solo",
+      "type": "web",
+      "title": "Regresar al Amor, Alex Bueno - Qobuz",
+      "organization": "Qobuz / Karen Records",
+      "url": "https://www.qobuz.com/au-en/album/regresar-al-amor-alex-bueno/s4tvf4x9cay6b",
+      "sha256": "4082402a499a8eacc78c4cc63819bc0157689cac6d38dd36c60a216de82ab8db",
+      "retrievedAt": "2026-10-03T14:22:53.046Z"
+    }
+  ],
+  "recordings": [
+    {
+      "recordingId": "02990a6a-ccdd-4d43-be40-73610630bb15",
+      "expectedArtistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "expectedTitle": "Sin ti no hay nada",
+      "expectedSlug": "sin-ti-no-hay-nada-sergio-vargas",
+      "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "slug": "sin-ti-no-hay-nada-alex-bueno",
+      "source": "individual",
+      "position": 8,
+      "credits": [
+        {
+          "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+          "name": "Alex Bueno",
+          "role": "lead_performer"
+        }
+      ],
+      "editionId": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "reason": "Correct individual performer from Karen Records individual track billing and solo catalog, corroborated by original imported Alex Bueno artist credit. Preserve recording identity, title, edition and work links; do not merge alternate versions or adopt conflicting digital titles."
+    },
+    {
+      "recordingId": "13dd8d0c-1239-4876-84f8-02751fd6ecff",
+      "expectedArtistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "expectedTitle": "El amor acaba",
+      "expectedSlug": "el-amor-acaba-sergio-vargas",
+      "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "slug": "el-amor-acaba-alex-bueno",
+      "source": "individual",
+      "position": 7,
+      "credits": [
+        {
+          "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+          "name": "Alex Bueno",
+          "role": "lead_performer"
+        }
+      ],
+      "editionId": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "reason": "Correct individual performer from Karen Records individual track billing and solo catalog, corroborated by original imported Alex Bueno artist credit. Preserve recording identity, title, edition and work links; do not merge alternate versions or adopt conflicting digital titles."
+    },
+    {
+      "recordingId": "15e06d83-81fa-4009-9476-370b17a40e89",
+      "expectedArtistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "expectedTitle": "El amor acaba",
+      "expectedSlug": "el-amor-acaba-sergio-vargas-2",
+      "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "slug": "el-amor-acaba-alex-bueno-2",
+      "source": "individual",
+      "position": 7,
+      "credits": [
+        {
+          "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+          "name": "Alex Bueno",
+          "role": "lead_performer"
+        }
+      ],
+      "editionId": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "reason": "Correct individual performer from Karen Records individual track billing and solo catalog, corroborated by original imported Alex Bueno artist credit. Preserve recording identity, title, edition and work links; do not merge alternate versions or adopt conflicting digital titles."
+    },
+    {
+      "recordingId": "2b3f3d75-fa9b-4036-88ef-032700348d13",
+      "expectedArtistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "expectedTitle": "Quiero perderme contigo",
+      "expectedSlug": "quiero-perderme-contigo-sergio-vargas",
+      "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "slug": "quiero-perderme-contigo-alex-bueno-2",
+      "source": "individual",
+      "position": 9,
+      "credits": [
+        {
+          "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+          "name": "Alex Bueno",
+          "role": "lead_performer"
+        }
+      ],
+      "editionId": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "reason": "Correct individual performer from Karen Records individual track billing and solo catalog, corroborated by original imported Alex Bueno artist credit. Preserve recording identity, title, edition and work links; do not merge alternate versions or adopt conflicting digital titles."
+    },
+    {
+      "recordingId": "3d1c54e7-b045-4105-9342-8748938200ca",
+      "expectedArtistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "expectedTitle": "En bandolera",
+      "expectedSlug": "en-bandolera-sergio-vargas",
+      "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "slug": "en-bandolera-alex-bueno-5",
+      "source": "individual",
+      "position": 6,
+      "credits": [
+        {
+          "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+          "name": "Alex Bueno",
+          "role": "lead_performer"
+        }
+      ],
+      "editionId": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "reason": "Correct individual performer from Karen Records individual track billing and solo catalog, corroborated by original imported Alex Bueno artist credit. Preserve recording identity, title, edition and work links; do not merge alternate versions or adopt conflicting digital titles."
+    },
+    {
+      "recordingId": "6b8dad81-685c-4854-b87c-9fa9d35a0218",
+      "expectedArtistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "expectedTitle": "Quiero perderme contigo",
+      "expectedSlug": "quiero-perderme-contigo-sergio-vargas-2",
+      "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "slug": "quiero-perderme-contigo-alex-bueno-3",
+      "source": "individual",
+      "position": 9,
+      "credits": [
+        {
+          "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+          "name": "Alex Bueno",
+          "role": "lead_performer"
+        }
+      ],
+      "editionId": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "reason": "Correct individual performer from Karen Records individual track billing and solo catalog, corroborated by original imported Alex Bueno artist credit. Preserve recording identity, title, edition and work links; do not merge alternate versions or adopt conflicting digital titles."
+    },
+    {
+      "recordingId": "a27f06da-67fe-41be-856c-989339795600",
+      "expectedArtistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "expectedTitle": "Voy a llenarte toda",
+      "expectedSlug": "voy-a-llenarte-toda-sergio-vargas",
+      "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "slug": "voy-a-llenarte-toda-alex-bueno",
+      "source": "individual",
+      "position": 10,
+      "credits": [
+        {
+          "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+          "name": "Alex Bueno",
+          "role": "lead_performer"
+        }
+      ],
+      "editionId": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "reason": "Correct individual performer from Karen Records individual track billing and solo catalog, corroborated by original imported Alex Bueno artist credit. Preserve recording identity, title, edition and work links; do not merge alternate versions or adopt conflicting digital titles."
+    },
+    {
+      "recordingId": "bc141597-7e01-4ae2-86fc-ec78a31b00af",
+      "expectedArtistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "expectedTitle": "Pero lo dudo",
+      "expectedSlug": "pero-lo-dudo-sergio-vargas",
+      "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "slug": "pero-lo-dudo-alex-bueno-2",
+      "source": "individual",
+      "position": 11,
+      "credits": [
+        {
+          "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+          "name": "Alex Bueno",
+          "role": "lead_performer"
+        }
+      ],
+      "editionId": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "reason": "Correct individual performer from Karen Records individual track billing and solo catalog, corroborated by original imported Alex Bueno artist credit. Preserve recording identity, title, edition and work links; do not merge alternate versions or adopt conflicting digital titles."
+    },
+    {
+      "recordingId": "e63a471f-1cc4-4b07-beff-219c8b3b19d2",
+      "expectedArtistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "expectedTitle": "Si ti no soy nada",
+      "expectedSlug": "si-ti-no-soy-nada-sergio-vargas",
+      "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "slug": "si-ti-no-soy-nada-alex-bueno",
+      "source": "individual",
+      "position": 8,
+      "credits": [
+        {
+          "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+          "name": "Alex Bueno",
+          "role": "lead_performer"
+        }
+      ],
+      "editionId": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "reason": "Correct individual performer from Karen Records individual track billing and solo catalog, corroborated by original imported Alex Bueno artist credit. Preserve recording identity, title, edition and work links; do not merge alternate versions or adopt conflicting digital titles."
+    },
+    {
+      "recordingId": "f2025707-c4c0-4b75-9411-f2684011cce8",
+      "expectedArtistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "expectedTitle": "Quiero llenarte toda",
+      "expectedSlug": "quiero-llenarte-toda-sergio-vargas",
+      "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "slug": "quiero-llenarte-toda-alex-bueno-2",
+      "source": "individual",
+      "position": 10,
+      "credits": [
+        {
+          "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+          "name": "Alex Bueno",
+          "role": "lead_performer"
+        }
+      ],
+      "editionId": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "reason": "Correct individual performer from Karen Records individual track billing and solo catalog, corroborated by original imported Alex Bueno artist credit. Preserve recording identity, title, edition and work links; do not merge alternate versions or adopt conflicting digital titles."
+    }
+  ],
+  "releaseCredits": [
+    {
+      "releaseId": "1ed33e4a-617b-49ba-b220-9bcba74526fe",
+      "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "name": "Alex Bueno",
+      "source": "shared"
+    },
+    {
+      "releaseId": "237e657a-6a15-4bdb-b673-3ee316b63a09",
+      "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "name": "Alex Bueno",
+      "source": "shared"
+    }
+  ],
+  "limitations": [
+    "Digital catalogs disagree on position 10 (Pero lo dudo / Voy a llenarte toda). Individual performer verified; exact title/master identity remains under review.",
+    "The 11-track imported edition lacks durations and ISRCs. Do not merge it with the 10-track edition.",
+    "Sin ti no hay nada and Si ti no soy nada remain literal imported titles pending original packaging verification."
+  ]
+}

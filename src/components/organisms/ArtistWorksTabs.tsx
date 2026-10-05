@@ -10,10 +10,14 @@ import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 
 const ROLE_TABS = [
-  { key: "composer", roles: ["composer", "songwriter"] },
-  { key: "lyricist", roles: ["lyricist", "writer"] },
+  { key: "composer", roles: ["composer"] },
+  { key: "lyricist", roles: ["lyricist"] },
+  { key: "songwriter", roles: ["songwriter"] },
+  { key: "writer", roles: ["writer"] },
   { key: "arranger", roles: ["arranger"] },
-  { key: "vocals", roles: ["lead_performer", "vocalist", "featured_performer", "guest_performer", "performer"] },
+  { key: "producer", roles: ["producer", "co_producer", "executive_producer", "beat_programmer", "remixer"] },
+  { key: "engineer", roles: ["engineer", "recording_engineer", "mixing_engineer", "mix_engineer", "mixing", "mastering_engineer", "mastering"] },
+  { key: "conductor", roles: ["conductor", "orchestrator"] },
 ] as const;
 
 type RoleTab = (typeof ROLE_TABS)[number]["key"];

@@ -1,0 +1,45 @@
+{
+  "verifiedAt": "2026-10-03T13:57:49.625Z",
+  "checks": {
+    "all14OwnersAndTitles": true,
+    "all14CreditsHaveEvidence": true,
+    "originalUrlsPreserved": true,
+    "compilationClassification": true,
+    "threeSharedReleaseArtists": true,
+    "anonymousPublicOwners": true,
+    "publicCredit_1cc97501-8575-4ff4-b49b-8ff04575eaa6": true,
+    "publicCredit_38b0f540-f817-42dc-94ce-bfd626dd0f1c": true,
+    "publicCredit_3bfddbe1-13d6-470d-a11a-b638ed8d26cd": true,
+    "publicCredit_4f0b8de9-f23e-46de-b477-9e6be1e1c342": true,
+    "publicCredit_548a7846-fd2e-42a9-9245-8fff9a76e7c8": true,
+    "publicCredit_5bc79bfc-a11a-4a74-afe4-e3cdd732574f": true,
+    "publicCredit_5dbf5a25-50b8-4bba-82a6-290c28ae1e3d": true,
+    "publicCredit_6e2c1583-9f5d-4384-89ac-c802509a6e7c": true,
+    "publicCredit_7a60dd1c-50a0-461b-896e-5a1c47d2fa7a": true,
+    "publicCredit_8158e565-46b3-486c-9257-c9056f34c0ae": true,
+    "publicCredit_84891ace-1368-4899-868c-67aac817286e": true,
+    "publicCredit_8ec087d4-7728-4d80-bec6-7992e6ffec6c": true,
+    "publicCredit_9f4b02ae-1349-45e8-b835-b86cfaec31bf": true,
+    "publicCredit_c2985d99-4bc4-4b32-a299-f1de7e048e7b": true,
+    "discography_703e412f-92ba-4ad8-a84c-54adc831c5e6": true,
+    "discography_e5129444-0923-4e06-b77d-f82f14c02b7d": true,
+    "discography_b1a432b9-ea3e-47d0-b468-515e3f3f25dd": true
+  },
+  "discographies": [
+    {
+      "artistId": "703e412f-92ba-4ad8-a84c-54adc831c5e6",
+      "correctCompilationSongs": 6,
+      "foreignCompilationSongs": 0
+    },
+    {
+      "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+      "correctCompilationSongs": 6,
+      "foreignCompilationSongs": 0
+    },
+    {
+      "artistId": "b1a432b9-ea3e-47d0-b468-515e3f3f25dd",
+      "correctCompilationSongs": 2,
+      "foreignCompilationSongs": 0
+    }
+  ]
+}

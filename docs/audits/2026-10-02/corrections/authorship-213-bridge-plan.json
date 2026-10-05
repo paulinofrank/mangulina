@@ -1,0 +1,222 @@
+{
+  "createdAt": "2026-10-03T03:02:45.025Z",
+  "changes": [
+    {
+      "creditId": "dee0d7c6-a6b1-4595-943b-f5006edaf0b8",
+      "workId": "def9ec8b-856e-44f8-80ed-8b72194bf7ca",
+      "title": "A bilirrubina",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/romance-rosa-juan-luis-guerra-440/cgvcbn51pdj1a",
+      "sourceTrack": {
+        "position": 5,
+        "title": "A Bilirrubina (Portuguese Version)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:05:32"
+      },
+      "releaseId": "81602ec5-4534-4d99-9687-d5bb591d7f73",
+      "recordingId": "0c8dbd99-44cd-45cb-9bc9-e2cd0bc118cd",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ],
+      "bridge": {
+        "catalogTitle": "La bilirrubina (Versión en portugués)",
+        "sourceTitle": "A Bilirrubina (Portuguese Version)",
+        "exactAlbum": "Romance rosa",
+        "exactPosition": 5,
+        "catalogLengthMs": 332133,
+        "sourceSeconds": 332,
+        "reason": "Title variant established by exact release position and matching recording duration; preserves translation, orchestral and salsa version distinctions."
+      }
+    },
+    {
+      "creditId": "913edf63-a4f6-4205-b547-6a085d19eeee",
+      "workId": "4060a2b6-9859-4315-9ce9-050da1362a92",
+      "title": "Canto de esperanza",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 23,
+        "title": "Canto de esperanza (Versión Orquesta) (Versión Orquesta)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:06"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "ef346c3f-2299-4e8f-99fa-abbc84e2f6cd",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ],
+      "bridge": {
+        "catalogTitle": "Canto de esperanza (versión orquesta)",
+        "sourceTitle": "Canto de esperanza (Versión Orquesta) (Versión Orquesta)",
+        "exactAlbum": "Capitán Avispa",
+        "exactPosition": 23,
+        "catalogLengthMs": 66600,
+        "sourceSeconds": 66,
+        "reason": "Title variant established by exact release position and matching recording duration; preserves translation, orchestral and salsa version distinctions."
+      }
+    },
+    {
+      "creditId": "3511e9ac-f629-47b2-8dba-ad8b63b38c51",
+      "workId": "5fd0399a-f413-4e75-8135-5af8cce06ab1",
+      "title": "Puasón (bachata y orquesta)",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/capitan-avispa-original-motion-picture-soundtrack-juan-luis-guerra-440/h9mzuut1cjy1b",
+      "sourceTrack": {
+        "position": 33,
+        "title": "Puasón (Bachata y Orquesta) (Bachata y Orquesta)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, Producer, Arranger, Writer - Janina Rosado, Producer - Juan Luis Guerra 4.40, MainArtist",
+          "2024 Ojoye Records 2024 Ojoye Records"
+        ],
+        "duration": "00:01:22"
+      },
+      "releaseId": "2d001f19-47b9-4286-858f-be81047f4ce9",
+      "recordingId": "da621131-7cb2-49c8-be4e-ad9b3997b5c0",
+      "authors": [
+        "Juan Luis Guerra, Composer, Producer, Arranger, Writer"
+      ],
+      "bridge": {
+        "catalogTitle": "Puasón (bachata y orquesta)",
+        "sourceTitle": "Puasón (Bachata y Orquesta) (Bachata y Orquesta)",
+        "exactAlbum": "Capitán Avispa",
+        "exactPosition": 33,
+        "catalogLengthMs": 82883,
+        "sourceSeconds": 82,
+        "reason": "Title variant established by exact release position and matching recording duration; preserves translation, orchestral and salsa version distinctions."
+      }
+    },
+    {
+      "creditId": "37b80d03-232a-4611-bf87-ff4506692e4f",
+      "workId": "d955313b-1fe0-4987-913e-9621b2aa525f",
+      "title": "Cuando te beso II",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+      "sourceTrack": {
+        "position": 11,
+        "title": "Cuando Te Beso (Bonus Track)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:03:11"
+      },
+      "releaseId": "177594ff-849e-400e-b315-36f9982461e0",
+      "recordingId": "d9426939-3487-4a76-b5c9-4a63e0f4a8a9",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ],
+      "bridge": {
+        "catalogTitle": "Cuando te beso II",
+        "sourceTitle": "Cuando Te Beso (Bonus Track)",
+        "exactAlbum": "Areíto",
+        "exactPosition": 11,
+        "catalogLengthMs": 189826,
+        "sourceSeconds": 191,
+        "reason": "Title variant established by exact release position and matching recording duration; preserves translation, orchestral and salsa version distinctions."
+      }
+    },
+    {
+      "creditId": "0117a44e-f694-4ba8-8699-857fae2bd8a0",
+      "workId": "5efb4b1a-a782-4bdb-aad9-b11a268fddda",
+      "title": "Requiem sobre el Jaragua (Le dién dinamita)",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/mudanza-y-acarreo-juan-luis-guerra-440/ynroph8rncn6a",
+      "sourceTrack": {
+        "position": 4,
+        "title": "Requiem Sobre el Jaragua",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Universal Musica Unica Publishing, MusicPublisher - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1985 Karen Records Inc"
+        ],
+        "duration": "00:03:15"
+      },
+      "releaseId": "23d9596d-10b6-4deb-9d0c-48de00846db1",
+      "recordingId": "d9545d58-5dae-408a-b2e6-10320d810453",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ],
+      "bridge": {
+        "catalogTitle": "Requiem sobre el Jaragua (Le dién dinamita)",
+        "sourceTitle": "Requiem Sobre el Jaragua",
+        "exactAlbum": "Mudanza y acarreo",
+        "exactPosition": 4,
+        "catalogLengthMs": 196000,
+        "sourceSeconds": 195,
+        "reason": "Title variant established by exact release position and matching recording duration; preserves translation, orchestral and salsa version distinctions."
+      }
+    },
+    {
+      "creditId": "c4bde4e7-ad63-4314-8159-88796237380c",
+      "workId": "bd7f21fa-ef7b-409c-88a8-2d734d7e798d",
+      "title": "Rompiendo fuente",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/us-en/album/areito-juan-luis-guerra-440/i0unam58p2jma",
+      "sourceTrack": {
+        "position": 6,
+        "title": "Rompiendo Fuentes",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer - Juan Luis Guerra 4.40, MainArtist",
+          "(C) 2020 Karen Publishing Company (P) 1992 Karen Publishing Company"
+        ],
+        "duration": "00:04:26"
+      },
+      "releaseId": "177594ff-849e-400e-b315-36f9982461e0",
+      "recordingId": "f540014a-db54-4903-a1c1-1bdce4576d80",
+      "authors": [
+        "Juan Luis Guerra, Composer"
+      ],
+      "bridge": {
+        "catalogTitle": "Rompiendo fuente",
+        "sourceTitle": "Rompiendo Fuentes",
+        "exactAlbum": "Areíto",
+        "exactPosition": 6,
+        "catalogLengthMs": 266160,
+        "sourceSeconds": 266,
+        "reason": "Title variant established by exact release position and matching recording duration; preserves translation, orchestral and salsa version distinctions."
+      }
+    },
+    {
+      "creditId": "26a596f1-06b0-4a1e-a3c3-44b2f46e1e8f",
+      "workId": "a7d46522-434f-4761-abe8-deb2e0bad054",
+      "title": "Quisiera",
+      "role": "composer",
+      "sourceUrl": "https://www.qobuz.com/es-es/album/archivo-digital-44-juan-luis-guerra/f7dalrb0h2cja",
+      "sourceTrack": {
+        "position": 13,
+        "title": "Quisiera (Salsa)",
+        "artist": "",
+        "credits": [
+          "Juan Luis Guerra, Composer, MainArtist - Universal Musica Unica Publishing, MusicPublisher",
+          "(C) 2020 Karen Publishing Company (P) 2007 Karen Records Inc"
+        ],
+        "duration": "00:03:51"
+      },
+      "releaseId": "aa60f0e6-aac8-445d-953a-bfb7ec571a44",
+      "recordingId": "e99f137a-344e-46f2-b0b8-24e56265611b",
+      "authors": [
+        "Juan Luis Guerra, Composer, MainArtist"
+      ],
+      "bridge": {
+        "catalogTitle": "Quisiera (Versión Salsa - Remastered)",
+        "sourceTitle": "Quisiera (Salsa)",
+        "exactAlbum": "Archivo digital 4.4",
+        "exactPosition": 13,
+        "catalogLengthMs": 230333,
+        "sourceSeconds": 231,
+        "reason": "Title variant established by exact release position and matching recording duration; preserves translation, orchestral and salsa version distinctions."
+      }
+    }
+  ]
+}

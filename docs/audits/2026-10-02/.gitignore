@@ -1,0 +1,12 @@
+# Local full catalog snapshot; regenerate with the read-only audit script.
+catalog-snapshot.json
+# Large before/after catalog payloads and original copyrighted scan evidence
+# stay local; source URLs, hashes, plans and summaries are reviewable.
+corrections/*-receipt.json
+corrections/*-rehearsal.json
+corrections/encuentro-*.jpg
+corrections/fiesta-latina-*.jpg
+corrections/hasta-el-fin-*.jpg
+corrections/fogarate-*.jpg
+corrections/areito-*.jpg
+corrections/qobuz-inspect.html

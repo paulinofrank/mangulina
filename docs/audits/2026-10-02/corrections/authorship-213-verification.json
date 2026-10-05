@@ -1,0 +1,1146 @@
+{
+  "verifiedAt": "2026-10-03T03:03:26.712Z",
+  "checks": {
+    "all213ClaimsAccountedFor": true,
+    "credit:d6432792-968f-4a27-a3ca-76cd2af69ba8": true,
+    "credit:3cdec54e-a821-4f9e-b338-61a1e420aab1": true,
+    "credit:5c5917c0-8744-4b8b-a080-284067f7b495": true,
+    "credit:7433c41b-88e8-4133-9c8d-c67ddae1eb21": true,
+    "credit:5dafbef9-b756-403b-a21c-5808e237e8a9": true,
+    "credit:af6b631a-eb11-486c-97a3-64b4bdc8eed1": true,
+    "credit:945a3941-3401-4e49-902f-51b53c34bc14": true,
+    "credit:05f1e806-6e49-4c57-a187-d39e50b48a0a": true,
+    "credit:7bb93b1e-60f6-43a3-8a8e-097531f08fe6": true,
+    "credit:1bc69536-b0ce-4556-8778-e8da122a940d": true,
+    "credit:94d77dd6-e732-4b1f-99e0-450ac777fbf0": true,
+    "credit:ef2aa729-0a9c-4442-a79f-0834b4268923": true,
+    "credit:af34127f-f009-42ee-ac74-4032e5b6ae88": true,
+    "credit:57591c58-fefa-4d65-8741-2defb00993fe": true,
+    "credit:a9dc77bb-b97b-4b50-89e8-a7c4c063f456": true,
+    "credit:2c29d1d5-884e-420b-a892-fdcb8f9c3750": true,
+    "credit:ef2228ad-6021-4b53-89b2-f08cef3ac1ee": true,
+    "credit:99b60c17-c8be-46af-bfa7-521ed6f90560": true,
+    "credit:ef325389-abad-450e-bd3c-ca225e934161": true,
+    "credit:74191502-4e9f-48a1-bcd5-1e0dd9eb2e65": true,
+    "credit:da70e716-f240-4e0b-9a42-58f87a81d0ab": true,
+    "credit:7f91fb03-d971-49e2-8b59-066b9e7a3c71": true,
+    "credit:8681d67c-1375-4e1e-9c94-5bb5e342ffb1": true,
+    "credit:6338c0ae-3525-424e-ae57-a85f76a31d13": true,
+    "credit:dee0d7c6-a6b1-4595-943b-f5006edaf0b8": true,
+    "credit:913edf63-a4f6-4205-b547-6a085d19eeee": true,
+    "credit:3511e9ac-f629-47b2-8dba-ad8b63b38c51": true,
+    "credit:37b80d03-232a-4611-bf87-ff4506692e4f": true,
+    "credit:0117a44e-f694-4ba8-8699-857fae2bd8a0": true,
+    "credit:c4bde4e7-ad63-4314-8159-88796237380c": true,
+    "credit:26a596f1-06b0-4a1e-a3c3-44b2f46e1e8f": true,
+    "credit:a1a96712-dc1f-4de6-911c-48812c374dda": true,
+    "credit:4d084b87-6ca6-4d63-ad3d-4aead9001c8b": true,
+    "credit:2fe789f3-2b07-4c47-8b9b-af1632ccfa52": true,
+    "credit:8be3d610-fb06-47d1-ad78-ef129b2be504": true,
+    "credit:e0a84499-e3ae-4dd9-89fb-83f511343f2a": true,
+    "credit:00ec78f7-cdfc-4639-b8a4-c83b572cbac4": true,
+    "credit:6a5d7e42-9e7c-4af6-add6-2fd40b59a2d7": true,
+    "credit:90fd93dd-554e-4213-950d-a7d20e172444": true,
+    "credit:ca489ed1-86c4-4042-99e8-571fb27cdadd": true,
+    "credit:80837572-0cc1-41c6-af60-037d6a95269c": true,
+    "credit:5083fcba-739f-4020-968c-889f82d8b16e": true,
+    "credit:aae9d72d-ecff-4986-8a8c-54f93d90c941": true,
+    "credit:a4171c1f-49e9-463a-af2b-b5e5f6a74e60": true,
+    "credit:49d712cd-0759-4865-b657-34277dac79ab": true,
+    "credit:2c946595-718a-482e-b5e0-1a9a8f790447": true,
+    "credit:124723e8-198d-4fab-8b12-e3472c396544": true,
+    "credit:e856cd1d-aa7d-42f3-80db-d914e1d766e0": true,
+    "credit:610de61b-86a3-4395-876e-9424b759a0b1": true,
+    "credit:2206692c-2f5d-4d2e-9e56-56804dc3e23c": true,
+    "credit:feae3eac-ff98-42ff-9f35-7f2685862943": true,
+    "credit:87be99bf-0715-4149-9372-bcd6f303884e": true,
+    "credit:89aec3d7-3a61-42d0-9426-8a6b523b2260": true,
+    "credit:6f936111-5ba5-40c5-af4c-13ea2b3b388a": true,
+    "credit:fe80dcfe-b975-481f-9a8a-62727b6d92d8": true,
+    "credit:d024f166-33d2-4f9a-93ec-d3e7ff70a34a": true,
+    "credit:e14a819c-a880-4817-8e07-78cdef3cdf57": true,
+    "credit:ebfb74a9-2b97-481c-be69-c5d2b5595385": true,
+    "credit:17e0ee8a-2385-4d05-89dc-3b047915ca48": true,
+    "credit:e898d82a-0104-4513-9525-6157ab7c703e": true,
+    "credit:a14a19d0-1cf6-4ec6-99e4-b8dcbd379059": true,
+    "credit:b8dde045-2841-4455-9a8c-2dffc151d48b": true,
+    "credit:d1f8654f-459a-42da-bcea-6ac1ca7959bc": true,
+    "credit:cc61d331-4799-4855-86cb-d10296aab268": true,
+    "credit:81f3c1b4-1047-45d1-8318-2b949ab8c9cf": true,
+    "credit:cd0f734e-d395-445d-9131-36b30dc09ae4": true,
+    "credit:eefd9178-f403-4a76-9b3e-31b4619d2685": true,
+    "credit:3faa9544-fef6-470a-be8c-b0c832b723c8": true,
+    "credit:e1b3f8b4-508e-4f66-ad0c-46c05688d6d1": true,
+    "credit:29ce3c8e-e960-4942-9888-983dfc2dc06b": true,
+    "expectedReviewTotals": true,
+    "evidence:d6432792-968f-4a27-a3ca-76cd2af69ba8": true,
+    "evidence:3cdec54e-a821-4f9e-b338-61a1e420aab1": true,
+    "evidence:5c5917c0-8744-4b8b-a080-284067f7b495": true,
+    "evidence:7433c41b-88e8-4133-9c8d-c67ddae1eb21": true,
+    "evidence:5dafbef9-b756-403b-a21c-5808e237e8a9": true,
+    "evidence:af6b631a-eb11-486c-97a3-64b4bdc8eed1": true,
+    "evidence:945a3941-3401-4e49-902f-51b53c34bc14": true,
+    "evidence:05f1e806-6e49-4c57-a187-d39e50b48a0a": true,
+    "evidence:7bb93b1e-60f6-43a3-8a8e-097531f08fe6": true,
+    "evidence:1bc69536-b0ce-4556-8778-e8da122a940d": true,
+    "evidence:94d77dd6-e732-4b1f-99e0-450ac777fbf0": true,
+    "evidence:ef2aa729-0a9c-4442-a79f-0834b4268923": true,
+    "evidence:af34127f-f009-42ee-ac74-4032e5b6ae88": true,
+    "evidence:57591c58-fefa-4d65-8741-2defb00993fe": true,
+    "evidence:a9dc77bb-b97b-4b50-89e8-a7c4c063f456": true,
+    "evidence:2c29d1d5-884e-420b-a892-fdcb8f9c3750": true,
+    "evidence:ef2228ad-6021-4b53-89b2-f08cef3ac1ee": true,
+    "evidence:99b60c17-c8be-46af-bfa7-521ed6f90560": true,
+    "evidence:ef325389-abad-450e-bd3c-ca225e934161": true,
+    "evidence:74191502-4e9f-48a1-bcd5-1e0dd9eb2e65": true,
+    "evidence:da70e716-f240-4e0b-9a42-58f87a81d0ab": true,
+    "evidence:7f91fb03-d971-49e2-8b59-066b9e7a3c71": true,
+    "evidence:8681d67c-1375-4e1e-9c94-5bb5e342ffb1": true,
+    "evidence:6338c0ae-3525-424e-ae57-a85f76a31d13": true,
+    "evidence:dee0d7c6-a6b1-4595-943b-f5006edaf0b8": true,
+    "evidence:913edf63-a4f6-4205-b547-6a085d19eeee": true,
+    "evidence:3511e9ac-f629-47b2-8dba-ad8b63b38c51": true,
+    "evidence:37b80d03-232a-4611-bf87-ff4506692e4f": true,
+    "evidence:0117a44e-f694-4ba8-8699-857fae2bd8a0": true,
+    "evidence:c4bde4e7-ad63-4314-8159-88796237380c": true,
+    "evidence:26a596f1-06b0-4a1e-a3c3-44b2f46e1e8f": true,
+    "evidence:a1a96712-dc1f-4de6-911c-48812c374dda": true,
+    "evidence:4d084b87-6ca6-4d63-ad3d-4aead9001c8b": true,
+    "evidence:2fe789f3-2b07-4c47-8b9b-af1632ccfa52": true,
+    "evidence:8be3d610-fb06-47d1-ad78-ef129b2be504": true,
+    "evidence:e0a84499-e3ae-4dd9-89fb-83f511343f2a": true,
+    "evidence:00ec78f7-cdfc-4639-b8a4-c83b572cbac4": true,
+    "evidence:6a5d7e42-9e7c-4af6-add6-2fd40b59a2d7": true,
+    "evidence:90fd93dd-554e-4213-950d-a7d20e172444": true,
+    "evidence:ca489ed1-86c4-4042-99e8-571fb27cdadd": true,
+    "evidence:80837572-0cc1-41c6-af60-037d6a95269c": true,
+    "evidence:5083fcba-739f-4020-968c-889f82d8b16e": true,
+    "evidence:aae9d72d-ecff-4986-8a8c-54f93d90c941": true,
+    "evidence:a4171c1f-49e9-463a-af2b-b5e5f6a74e60": true,
+    "evidence:49d712cd-0759-4865-b657-34277dac79ab": true,
+    "evidence:2c946595-718a-482e-b5e0-1a9a8f790447": true,
+    "evidence:124723e8-198d-4fab-8b12-e3472c396544": true,
+    "evidence:e856cd1d-aa7d-42f3-80db-d914e1d766e0": true,
+    "evidence:610de61b-86a3-4395-876e-9424b759a0b1": true,
+    "evidence:2206692c-2f5d-4d2e-9e56-56804dc3e23c": true,
+    "evidence:feae3eac-ff98-42ff-9f35-7f2685862943": true,
+    "evidence:87be99bf-0715-4149-9372-bcd6f303884e": true,
+    "evidence:89aec3d7-3a61-42d0-9426-8a6b523b2260": true,
+    "evidence:6f936111-5ba5-40c5-af4c-13ea2b3b388a": true,
+    "evidence:fe80dcfe-b975-481f-9a8a-62727b6d92d8": true,
+    "evidence:d024f166-33d2-4f9a-93ec-d3e7ff70a34a": true,
+    "evidence:e14a819c-a880-4817-8e07-78cdef3cdf57": true,
+    "evidence:ebfb74a9-2b97-481c-be69-c5d2b5595385": true,
+    "evidence:17e0ee8a-2385-4d05-89dc-3b047915ca48": true,
+    "evidence:e898d82a-0104-4513-9525-6157ab7c703e": true,
+    "evidence:a14a19d0-1cf6-4ec6-99e4-b8dcbd379059": true,
+    "evidence:b8dde045-2841-4455-9a8c-2dffc151d48b": true,
+    "evidence:d1f8654f-459a-42da-bcea-6ac1ca7959bc": true,
+    "evidence:cc61d331-4799-4855-86cb-d10296aab268": true,
+    "evidence:81f3c1b4-1047-45d1-8318-2b949ab8c9cf": true,
+    "evidence:cd0f734e-d395-445d-9131-36b30dc09ae4": true,
+    "evidence:eefd9178-f403-4a76-9b3e-31b4619d2685": true,
+    "evidence:3faa9544-fef6-470a-be8c-b0c832b723c8": true,
+    "evidence:e1b3f8b4-508e-4f66-ad0c-46c05688d6d1": true,
+    "evidence:29ce3c8e-e960-4942-9888-983dfc2dc06b": true,
+    "publicViewSecurityUnchanged": true,
+    "publicVisible:d6432792-968f-4a27-a3ca-76cd2af69ba8": true,
+    "publicVisible:3cdec54e-a821-4f9e-b338-61a1e420aab1": true,
+    "publicVisible:5c5917c0-8744-4b8b-a080-284067f7b495": true,
+    "publicVisible:7433c41b-88e8-4133-9c8d-c67ddae1eb21": true,
+    "publicVisible:5dafbef9-b756-403b-a21c-5808e237e8a9": true,
+    "publicVisible:af6b631a-eb11-486c-97a3-64b4bdc8eed1": true,
+    "publicVisible:945a3941-3401-4e49-902f-51b53c34bc14": true,
+    "publicVisible:05f1e806-6e49-4c57-a187-d39e50b48a0a": true,
+    "publicVisible:7bb93b1e-60f6-43a3-8a8e-097531f08fe6": true,
+    "publicVisible:1bc69536-b0ce-4556-8778-e8da122a940d": true,
+    "publicVisible:94d77dd6-e732-4b1f-99e0-450ac777fbf0": true,
+    "publicVisible:ef2aa729-0a9c-4442-a79f-0834b4268923": true,
+    "publicVisible:af34127f-f009-42ee-ac74-4032e5b6ae88": true,
+    "publicVisible:57591c58-fefa-4d65-8741-2defb00993fe": true,
+    "publicVisible:a9dc77bb-b97b-4b50-89e8-a7c4c063f456": true,
+    "publicVisible:2c29d1d5-884e-420b-a892-fdcb8f9c3750": true,
+    "publicVisible:ef2228ad-6021-4b53-89b2-f08cef3ac1ee": true,
+    "publicVisible:99b60c17-c8be-46af-bfa7-521ed6f90560": true,
+    "publicVisible:ef325389-abad-450e-bd3c-ca225e934161": true,
+    "publicVisible:74191502-4e9f-48a1-bcd5-1e0dd9eb2e65": true,
+    "publicVisible:da70e716-f240-4e0b-9a42-58f87a81d0ab": true,
+    "publicVisible:7f91fb03-d971-49e2-8b59-066b9e7a3c71": true,
+    "publicVisible:8681d67c-1375-4e1e-9c94-5bb5e342ffb1": true,
+    "publicVisible:6338c0ae-3525-424e-ae57-a85f76a31d13": true,
+    "publicVisible:dee0d7c6-a6b1-4595-943b-f5006edaf0b8": true,
+    "publicVisible:913edf63-a4f6-4205-b547-6a085d19eeee": true,
+    "publicVisible:3511e9ac-f629-47b2-8dba-ad8b63b38c51": true,
+    "publicVisible:37b80d03-232a-4611-bf87-ff4506692e4f": true,
+    "publicVisible:0117a44e-f694-4ba8-8699-857fae2bd8a0": true,
+    "publicVisible:c4bde4e7-ad63-4314-8159-88796237380c": true,
+    "publicVisible:26a596f1-06b0-4a1e-a3c3-44b2f46e1e8f": true,
+    "publicVisible:a1a96712-dc1f-4de6-911c-48812c374dda": true,
+    "publicVisible:4d084b87-6ca6-4d63-ad3d-4aead9001c8b": true,
+    "publicHidden:ebfb74a9-2b97-481c-be69-c5d2b5595385": true,
+    "publicHidden:17e0ee8a-2385-4d05-89dc-3b047915ca48": true,
+    "publicVisible:2fe789f3-2b07-4c47-8b9b-af1632ccfa52": true,
+    "publicVisible:8be3d610-fb06-47d1-ad78-ef129b2be504": true,
+    "publicVisible:e0a84499-e3ae-4dd9-89fb-83f511343f2a": true,
+    "publicVisible:00ec78f7-cdfc-4639-b8a4-c83b572cbac4": true,
+    "publicVisible:6a5d7e42-9e7c-4af6-add6-2fd40b59a2d7": true,
+    "publicHidden:e898d82a-0104-4513-9525-6157ab7c703e": true,
+    "publicVisible:90fd93dd-554e-4213-950d-a7d20e172444": true,
+    "publicVisible:ca489ed1-86c4-4042-99e8-571fb27cdadd": true,
+    "publicVisible:80837572-0cc1-41c6-af60-037d6a95269c": true,
+    "publicVisible:5083fcba-739f-4020-968c-889f82d8b16e": true,
+    "publicVisible:aae9d72d-ecff-4986-8a8c-54f93d90c941": true,
+    "publicHidden:a14a19d0-1cf6-4ec6-99e4-b8dcbd379059": true,
+    "publicHidden:b8dde045-2841-4455-9a8c-2dffc151d48b": true,
+    "publicVisible:a4171c1f-49e9-463a-af2b-b5e5f6a74e60": true,
+    "publicVisible:49d712cd-0759-4865-b657-34277dac79ab": true,
+    "publicHidden:d1f8654f-459a-42da-bcea-6ac1ca7959bc": true,
+    "publicHidden:cc61d331-4799-4855-86cb-d10296aab268": true,
+    "publicVisible:2c946595-718a-482e-b5e0-1a9a8f790447": true,
+    "publicVisible:124723e8-198d-4fab-8b12-e3472c396544": true,
+    "publicHidden:81f3c1b4-1047-45d1-8318-2b949ab8c9cf": true,
+    "publicVisible:e856cd1d-aa7d-42f3-80db-d914e1d766e0": true,
+    "publicVisible:610de61b-86a3-4395-876e-9424b759a0b1": true,
+    "publicVisible:2206692c-2f5d-4d2e-9e56-56804dc3e23c": true,
+    "publicVisible:feae3eac-ff98-42ff-9f35-7f2685862943": true,
+    "publicHidden:cd0f734e-d395-445d-9131-36b30dc09ae4": true,
+    "publicHidden:eefd9178-f403-4a76-9b3e-31b4619d2685": true,
+    "publicVisible:87be99bf-0715-4149-9372-bcd6f303884e": true,
+    "publicVisible:89aec3d7-3a61-42d0-9426-8a6b523b2260": true,
+    "publicVisible:6f936111-5ba5-40c5-af4c-13ea2b3b388a": true,
+    "publicVisible:fe80dcfe-b975-481f-9a8a-62727b6d92d8": true,
+    "publicHidden:3faa9544-fef6-470a-be8c-b0c832b723c8": true,
+    "publicHidden:e1b3f8b4-508e-4f66-ad0c-46c05688d6d1": true,
+    "publicVisible:d024f166-33d2-4f9a-93ec-d3e7ff70a34a": true,
+    "publicVisible:e14a819c-a880-4817-8e07-78cdef3cdf57": true,
+    "publicHidden:29ce3c8e-e960-4942-9888-983dfc2dc06b": true
+  },
+  "counts": {
+    "generatedCohort": [
+      {
+        "verification_status": "superseded",
+        "count": 51
+      },
+      {
+        "verification_status": "unverified",
+        "count": 169
+      },
+      {
+        "verification_status": "verified",
+        "count": 230
+      }
+    ],
+    "thisReview": {
+      "unverified": 169,
+      "verified": 31,
+      "superseded": 13
+    },
+    "newAuthorRoles": 26
+  },
+  "publicContexts": [
+    {
+      "workId": "12ff9f4d-4dc4-4711-b998-d1004e5067a2",
+      "recordingId": "43ad76b3-a6dd-4a07-948f-d4092e7f502f",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "444b0bb0-9aa0-48ef-8087-bec2ea2fd24f",
+          "display_name": "Diblo Dibala",
+          "identity_type": "external_contributor"
+        }
+      ]
+    },
+    {
+      "workId": "aa9712ce-8160-447d-bec1-24e4910ae514",
+      "recordingId": "047caa18-700e-4fff-97d8-b8af5a6d4f6a",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "8f013e1b-69aa-4b88-a73c-63b8c0c1abeb",
+      "recordingId": "1756e333-fbc7-4428-b638-e0f3fea7ea77",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "1ab2797a-c9b6-47c1-b44d-56e1f2e8ce82",
+      "recordingId": "9c0e72b2-4f5c-42bd-af80-6785176b902e",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "b32e73e7-1ff3-4226-9dae-e4c4e836ccaa",
+      "recordingId": "3459c409-97ad-49e5-a97c-08df21969e71",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "01826933-df85-4b2e-ab8b-5b1b46ff0623",
+      "recordingId": "2b5614c1-5292-4d6a-b7ad-b8e93d809b52",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "e9b31b08-2f18-441e-bccf-fe5345f6085b",
+      "recordingId": "19da5bb6-c816-4807-b8db-84143c24472a",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "3135d532-dc44-482e-a9de-490eae7c961a",
+      "recordingId": "c5d47229-0c38-4b49-83d9-c409bf1618fb",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "d305f10a-276f-44a1-a1db-1a25108b1d72",
+      "recordingId": "a266c059-fd40-4c0f-a825-b6b70ca30587",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "ab6e7e9c-8ad5-429c-85f7-63dce5e763f1",
+      "recordingId": "6ea97e60-edf5-4411-9e60-79a0f6654f1c",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "e28bff65-0e59-4784-a350-677dfba24ddf",
+      "recordingId": "79b0275b-e260-48ef-9fb3-9c831b503bc5",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "d3d7bd03-4ab5-4d99-9ed2-4b4d844531fb",
+      "recordingId": "5112e5c3-52e2-42cc-a813-45fb2768fde6",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "0c803563-3459-4c0f-8ff4-db79ad572a89",
+      "recordingId": "4ffc19e1-d4f6-462e-a391-ad772982bc4d",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "ef601bd0-3d0f-48b2-b0cb-d2d4807ef4e5",
+      "recordingId": "ad12fa26-d901-414a-bc85-63c6be6c72d4",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "6037cb3c-2cb2-4da3-892f-e395fde08999",
+      "recordingId": "743d532e-87f6-4180-96e3-7bb83d3fc2fc",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "43428d2e-1493-4758-aec4-682ec31bb0a9",
+      "recordingId": "544038e8-0f16-4764-a23d-28e3af327759",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "d86f95f0-92d2-4b83-b306-a0e98e5c5e48",
+      "recordingId": "1d1c8f94-725d-4bd6-a8ed-3e97d4657f01",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "7ba89263-6719-4d8e-a37f-a73a9bfc5777",
+      "recordingId": "f96218bb-e5c0-4384-9a9d-a948aaa3d6a1",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "4cffef6b-c7d0-49e1-a546-c77fcdd50774",
+      "recordingId": "33b9ab60-0a31-4c40-8989-e7334b0edf2d",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "fe844318-12c7-46d5-b10e-4df20de6afd3",
+      "recordingId": "d5336df4-43d0-461b-af9c-5ea4d28e8008",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "557245ef-849f-4245-900f-7b42bc494e8f",
+      "recordingId": "14a703b5-01e8-4c25-9cc8-fc9b045b832f",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "def9ec8b-856e-44f8-80ed-8b72194bf7ca",
+      "recordingId": "0c8dbd99-44cd-45cb-9bc9-e2cd0bc118cd",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "4060a2b6-9859-4315-9ce9-050da1362a92",
+      "recordingId": "ef346c3f-2299-4e8f-99fa-abbc84e2f6cd",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "5fd0399a-f413-4e75-8135-5af8cce06ab1",
+      "recordingId": "da621131-7cb2-49c8-be4e-ad9b3997b5c0",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "d955313b-1fe0-4987-913e-9621b2aa525f",
+      "recordingId": "d9426939-3487-4a76-b5c9-4a63e0f4a8a9",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "5efb4b1a-a782-4bdb-aad9-b11a268fddda",
+      "recordingId": "d9545d58-5dae-408a-b2e6-10320d810453",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "bd7f21fa-ef7b-409c-88a8-2d734d7e798d",
+      "recordingId": "f540014a-db54-4903-a1c1-1bdce4576d80",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "a7d46522-434f-4761-abe8-deb2e0bad054",
+      "recordingId": "e99f137a-344e-46f2-b0b8-24e56265611b",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "3c085306-6ce9-4fae-a2c4-e257ef3e4732",
+      "recordingId": "f0be495c-caee-4d11-8d48-00b9fafc9a91",
+      "workCredits": [
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "c870d798-6200-4b66-a18e-6c8bbbc35435",
+          "display_name": "Javier Limon",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "c870d798-6200-4b66-a18e-6c8bbbc35435",
+          "display_name": "Javier Limon",
+          "identity_type": "external_contributor"
+        }
+      ]
+    },
+    {
+      "workId": "70c3b6ca-28a6-41df-ac9f-08bee55ebaa9",
+      "recordingId": "9a6cf921-cbdf-4dd6-869b-c95ee6ad2155",
+      "workCredits": [
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "160afca4-cb8c-46ea-8090-fbfa3d8096e7",
+          "display_name": "David Julca",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "8403110f-f6c8-4956-be1c-1b94473f03c4",
+          "display_name": "Yasmil Marrufo",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "adc8d92f-7087-4599-81b6-a87525eed32c",
+          "display_name": "Camilo Echeverry",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "f4d37878-8964-4715-ac06-b98a27ddcb69",
+          "display_name": "Ricardo Montaner",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "6a638264-6a14-4982-a264-49c0525fe6aa",
+          "display_name": "Jonathan Julca",
+          "identity_type": "external_contributor"
+        }
+      ]
+    },
+    {
+      "workId": "21dd50db-2701-41bc-a879-6755948d71bb",
+      "recordingId": "faa73d54-9e27-48f6-af31-ca3e6a33d99a",
+      "workCredits": [
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "b0111ae8-06a8-449b-95ca-b297f83db536",
+          "display_name": "Milton De Oliveira",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "b0111ae8-06a8-449b-95ca-b297f83db536",
+          "display_name": "Milton De Oliveira",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "2d33dfcc-48a0-4ed5-b81d-fdd6a4aba433",
+          "display_name": "Max Bulhões",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "c3317abe-6c0f-4de2-88ec-baee37acbf33",
+          "display_name": "Ge Alves Pinto",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "2d33dfcc-48a0-4ed5-b81d-fdd6a4aba433",
+          "display_name": "Max Bulhões",
+          "identity_type": "external_contributor"
+        }
+      ]
+    },
+    {
+      "workId": "09e75252-7878-4e3c-a8fd-048b219af29d",
+      "recordingId": "b81a18b0-0068-4524-860f-ea5cc80c236e",
+      "workCredits": [
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "luis-segura",
+          "identity_id": "5ceceef0-765d-4e01-8017-85422a263357",
+          "display_name": "Luis Gonzaga Segura",
+          "identity_type": "artist"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": "luis-segura",
+          "identity_id": "5ceceef0-765d-4e01-8017-85422a263357",
+          "display_name": "Luis Gonzaga Segura",
+          "identity_type": "artist"
+        }
+      ]
+    },
+    {
+      "workId": "a29f9d2c-3aba-41c7-a2da-51ba7b783f9c",
+      "recordingId": "29feb699-91d8-47d4-b7f9-2c27bfa02e8a",
+      "workCredits": [
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "926aa047-8e36-4128-a960-b2f9f584db07",
+          "display_name": "Brett Nolan",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "108d7bd9-fc76-4914-be72-d94ff3a529f1",
+          "display_name": "Philip Lassiter",
+          "identity_type": "external_contributor"
+        }
+      ]
+    },
+    {
+      "workId": "cb02b449-cc26-4f6a-a916-e41b786eacd1",
+      "recordingId": "6f771abf-1f01-4b65-af59-083bb789e6b8",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+          "display_name": "Luis Gomez Escolar",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+          "display_name": "Draco Cornelius Rosa",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "e6fe9e67-8d76-4c0b-a926-908325d31350",
+          "display_name": "Draco Cornelius Rosa",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "3abea6bf-5a26-4fdf-aa48-cb2d3d16446c",
+          "display_name": "Luis Gomez Escolar",
+          "identity_type": "external_contributor"
+        }
+      ]
+    },
+    {
+      "workId": "ed3e59c9-5b3b-414f-88dd-e73353d451d9",
+      "recordingId": "6bfb9bc2-9fb3-4a3b-b6e0-cfa2ed37597a",
+      "workCredits": [
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "5ef16511-84d0-44e1-b556-9b438bc63ee9",
+          "display_name": "Emmanuel Briceño Vera",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "6b6797f3-98c9-4dce-8b3c-f4a280352a3e",
+          "display_name": "Juan Estebán Aristizábal Vásquez",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "6b6797f3-98c9-4dce-8b3c-f4a280352a3e",
+          "display_name": "Juan Estebán Aristizábal Vásquez",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "5ef16511-84d0-44e1-b556-9b438bc63ee9",
+          "display_name": "Emmanuel Briceño Vera",
+          "identity_type": "external_contributor"
+        }
+      ]
+    },
+    {
+      "workId": "10920630-bc17-45a4-8586-6aebc47bf85c",
+      "recordingId": "f546ff9e-fcce-4aab-9ec3-567230981487",
+      "workCredits": [
+        {
+          "role": "lyricist",
+          "country": null,
+          "artist_slug": "juan-luis-guerra",
+          "identity_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+          "display_name": "Juan Luis Guerra",
+          "identity_type": "artist"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "9eecc76a-5acc-4859-91a8-b21202f2ff48",
+          "display_name": "Alex Puentes",
+          "identity_type": "external_contributor"
+        },
+        {
+          "role": "composer",
+          "country": null,
+          "artist_slug": null,
+          "identity_id": "5419a422-f770-48f9-b26a-d6dbabb3325d",
+          "display_name": "Yohel Henriquez",
+          "identity_type": "external_contributor"
+        }
+      ]
+    }
+  ]
+}

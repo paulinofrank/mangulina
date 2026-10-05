@@ -228,7 +228,7 @@
     "musicBrainzId": "ID de MusicBrainz"
   },
   "creditRoles": {
-    "leadPerformer": "Voz Principal",
+    "leadPerformer": "Intérprete principal",
     "featuredPerformer": "Artista invitado",
     "guestPerformer": "Intérprete invitado",
     "performedBy": "Intérprete",
