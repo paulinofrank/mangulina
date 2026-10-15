@@ -4,10 +4,13 @@ import React, { useEffect, useRef, useState, useCallback, forwardRef, useImperat
 import { useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { isBornAbroadProvince } from "@/lib/provinceSlug";
+import SearchCorrection from "@/components/search/SearchCorrection";
+import { trackSearchSuggestion } from "@/lib/analytics";
 import {
   MIN_SEARCH_QUERY_LENGTH,
   type GlobalSearchResponse,
   type SearchResult,
+  type SearchMetadata,
 } from "@/lib/searchTypes";
 
 type SearchSuggestionsProps = {
@@ -134,6 +137,7 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
   const [artistCount, setArtistCount] = useState(0);
   const [activeIndex, setActiveIndex] = useState(-1);
   const [isOpen, setIsOpen] = useState(false);
+  const [searchMetadata, setSearchMetadata] = useState<SearchMetadata | undefined>();
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const suggestionsRef = useRef<HTMLDivElement>(null);
   const activeItemRef = useRef<HTMLDivElement>(null);
@@ -145,6 +149,7 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
     requestIdRef.current += 1;
     if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
     setSuggestions([]);
+    setSearchMetadata(undefined);
     setIsOpen(false);
     setActiveIndex(-1);
   }, []);
@@ -187,6 +192,7 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
           if (activeIndex >= 0 && activeIndex < suggestions.length) {
             event.preventDefault();
             const result = suggestions[activeIndex];
+            if (searchMetadata?.suggestion?.id === result.id) trackSearchSuggestion(searchTerm.trim(), searchMetadata, "suggestion_selected");
             const href = getHref(result);
             if (href) navigateTo(href);
           } else {
@@ -203,7 +209,7 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
           break;
       }
     },
-    [isOpen, suggestions, activeIndex, navigateTo, resetAutocomplete]
+    [isOpen, suggestions, activeIndex, navigateTo, resetAutocomplete, searchMetadata, searchTerm]
   );
 
   // Fetch suggestions with debounce
@@ -214,6 +220,7 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
     }
 
     const query = searchTerm.trim();
+    const controller = new AbortController();
 
     if (query.length < MIN_SEARCH_QUERY_LENGTH) {
       setSuggestions([]);
@@ -225,7 +232,7 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
     debounceTimerRef.current = setTimeout(async () => {
       try {
         const response = await fetch(
-          `/api/search/suggestions?q=${encodeURIComponent(query)}`,
+          `/api/search/suggestions?q=${encodeURIComponent(query)}`, { signal: controller.signal },
         );
         const payload = (await response.json()) as GlobalSearchResponse & {
           ok?: boolean;
@@ -242,9 +249,11 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
         const all = [...artists, ...pickSongsAndAlbums(results.songs, results.releases)];
         setArtistCount(artists.length);
         setSuggestions(all);
+        setSearchMetadata(results.search);
         setIsOpen(all.length > 0);
         setActiveIndex(-1);
       } catch (error) {
+        if (controller.signal.aborted) return;
         if (requestId !== requestIdRef.current) return;
         console.error("Search suggestions error:", error);
         setSuggestions([]);
@@ -256,6 +265,7 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
       if (debounceTimerRef.current) {
         clearTimeout(debounceTimerRef.current);
       }
+      controller.abort();
     };
   }, [searchTerm]);
 
@@ -327,6 +337,7 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
       role="listbox"
       id="site-search-suggestions"
     >
+      <SearchCorrection query={searchTerm.trim()} search={searchMetadata} onSelect={() => { resetAutocomplete(); onNavigate?.(); }} />
       {sections.map((section, sectionIndex) => {
         const labelId = `site-search-suggestions-${section.key}`;
         return (
@@ -355,6 +366,7 @@ const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSuggestionsP
                   onMouseEnter={() => setActiveIndex(index)}
                   onMouseLeave={() => setActiveIndex(-1)}
                   onSelect={() => {
+                    if (searchMetadata?.suggestion?.id === result.id) trackSearchSuggestion(searchTerm.trim(), searchMetadata, "suggestion_selected");
                     resetAutocomplete();
                     onNavigate?.();
                   }}

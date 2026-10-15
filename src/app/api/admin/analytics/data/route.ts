@@ -9,6 +9,7 @@ import {
   fetchArtistViewTrends,
   fetchRecordingViewTrends,
   fetchSearchTrends,
+  fetchSearchOutcomeSummary,
   fetchArtistsByIds,
   fetchRecordingsByIds,
 } from "@/lib/analyticsQueries";
@@ -30,6 +31,7 @@ export async function GET() {
       artistTrendsData,
       recordingTrendsData,
       searchTrendsData,
+      searchOutcomeSummary,
     ] = await Promise.all([
       fetchTopArtistViews(20),
       fetchTopRecordingViews(20),
@@ -39,6 +41,7 @@ export async function GET() {
       fetchArtistViewTrends(7),
       fetchRecordingViewTrends(7),
       fetchSearchTrends(7),
+      fetchSearchOutcomeSummary(),
     ]);
 
     const [artists, recordings] = await Promise.all([
@@ -55,6 +58,7 @@ export async function GET() {
       artistTrendsData,
       recordingTrendsData,
       searchTrendsData,
+      searchOutcomeSummary,
       artists,
       recordings,
       timestamp: new Date().toISOString(),

@@ -106,6 +106,9 @@
       }
     },
     "ui": {
+      "didYouMean": "¿Quisiste decir…?",
+      "searchError": "La búsqueda no está disponible temporalmente. Inténtalo de nuevo.",
+      "searchDegraded": "Algunos resultados no están disponibles temporalmente.",
       "placeholder": "Buscar artistas, canciones y álbumes.",
       "submit": "Buscar",
       "noQuery": "Escribe algo en el cuadro de búsqueda para empezar.",
@@ -1576,6 +1579,18 @@
     },
     "tools": {
       "analytics": {
+      "searchOutcomes": {
+        "title": "Resultados de búsqueda",
+        "description": "Últimos 30 días. Las búsquedas históricas quedan sin clasificar; las correcciones no cuentan como búsquedas adicionales.",
+        "normal_searches": "Coincidencias normales",
+        "recovered_searches": "Coincidencias recuperadas",
+        "unmatched_searches": "Sin coincidencias",
+        "failed_searches": "Errores del servicio",
+        "degraded_searches": "Resultados parciales",
+        "suggestions_displayed": "Correcciones mostradas",
+        "suggestions_selected": "Correcciones seleccionadas",
+        "unclassified_searches": "Históricas / sin clasificar"
+      },
         "title": "Analytics",
         "eyebrow": "Información",
         "description": "Revisa las vistas recientes de artistas y grabaciones, búsquedas sin respuesta y participación en plataformas de escucha."

@@ -8,10 +8,17 @@ import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 import { createPageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ locale: string }>; searchParams: Promise<{ page?: string; q?: string }> };
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params, searchParams }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "songCatalog" });
-  return createPageMetadata({ title: t("title"), description: t("description"), path: "/songs", locale });
+  const query = await searchParams;
+  const parsedPage = Number(query.page ?? 1);
+  const page = Number.isSafeInteger(parsedPage) ? Math.max(1, Math.min(100000, parsedPage)) : 1;
+  const search = typeof query.q === "string" ? query.q.trim().slice(0, 120) : "";
+  const path = page > 1 ? `/songs?page=${page}` : "/songs";
+  const metadata = createPageMetadata({ title: t("title"), description: t("description"), path, locale });
+  if (search) metadata.robots = { index: false, follow: true };
+  return metadata;
 }
 
 export default async function SongsPage({ params, searchParams }: Props) {

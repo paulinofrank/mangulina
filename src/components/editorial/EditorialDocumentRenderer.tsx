@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import ArtistReference from "@/components/editorial/ArtistReference";
 import { editorialDocumentHasVisibleText } from "@/lib/editorial/biographyFallback";
+import { canonicalEditorialHref } from "@/lib/editorial/publicHref";
 import type {
   EditorialBlockNode,
   EditorialInlineNode,
@@ -14,7 +15,7 @@ function renderText(node: EditorialTextNode): ReactNode {
   return (node.marks ?? []).reduceRight<ReactNode>((content, mark) => {
     if (mark.type === "bold") return <strong>{content}</strong>;
     if (mark.type === "italic") return <em>{content}</em>;
-    return <a href={mark.attrs.href} target="_blank" rel="noopener noreferrer" className="font-medium text-(--color-flagblue) underline decoration-blue-300 underline-offset-2 hover:decoration-(--color-flagblue)">{content}</a>;
+    return <a href={canonicalEditorialHref(mark.attrs.href)} target="_blank" rel="noopener noreferrer" className="font-medium text-(--color-flagblue) underline decoration-blue-300 underline-offset-2 hover:decoration-(--color-flagblue)">{content}</a>;
   }, node.text);
 }
 

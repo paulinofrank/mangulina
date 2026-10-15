@@ -70,6 +70,7 @@ interface AnalyticsData {
   artistTrendsData: Array<{ date: string; views: number }>;
   recordingTrendsData: Array<{ date: string; views: number }>;
   searchTrendsData: Array<{ date: string; views: number; zeroResults?: number }>;
+  searchOutcomeSummary: Record<string, number>;
   artists: Array<{ id: string; name: string; slug: string }>;
   recordings: Array<{ id: string; title: string; slug: string | null }>;
   timestamp: string;
@@ -408,7 +409,11 @@ export default function AdminAnalyticsClientWrapper({
               )}
             </ReportCard>
 
-            <ComingSoonCard title="Trending Searches" />
+            <ReportCard title={t("searchOutcomes.title")} description={t("searchOutcomes.description")}>
+              <dl className="divide-y divide-gray-100">
+                {Object.entries(data.searchOutcomeSummary ?? {}).map(([key, count]) => <div key={key} className="flex justify-between gap-4 py-2 text-sm"><dt>{t(`searchOutcomes.${key}`)}</dt><dd className="tabular-nums">{count.toLocaleString()}</dd></div>)}
+              </dl>
+            </ReportCard>
           </div>
         </div>
 

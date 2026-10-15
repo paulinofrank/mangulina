@@ -5,8 +5,10 @@ import { supabase } from "@/lib/supabase";
 import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 import { getArtistImageUrl } from "@/utils/getArtistImageUrl";
 import { normalizeSearchText } from "@/lib/searchRanking";
+import { rankCatalogResults, rankCatalogCandidate, searchTokens } from "@/lib/searchMatching";
+import { loadArtistRecoveryCatalog } from "@/lib/artistRecoveryCatalog";
+import { recoverSearchFailure, SearchDegradedError } from "@/lib/searchRecovery";
 import {
-  MAX_SEARCH_QUERY_LENGTH,
   MIN_SEARCH_QUERY_LENGTH,
   searchCacheKey,
   type GlobalSearchResponse,
@@ -16,13 +18,6 @@ const SEARCH_RESULT_LIMIT = 10;
 
 function limitResults(results: SearchResult[]) {
   return results.slice(0, SEARCH_RESULT_LIMIT);
-}
-
-function withArtistImageUrls(results: SearchResult[]) {
-  return results.map((result) => ({
-    ...result,
-    cover_url: result.cover_url,
-  }));
 }
 
 function normalizeCoverArtUrl(url: string | null | undefined) {
@@ -38,7 +33,7 @@ function withCurrentCoverArtUrls(results: SearchResult[]) {
   }));
 }
 
-async function getReleaseCoverAvailability(ids: string[]) {
+async function getReleaseCoverAvailability(ids: string[], onError: () => void) {
   const uniqueIds = [...new Set(ids.filter(Boolean))];
 
   if (!uniqueIds.length) return new Map<string, boolean>();
@@ -50,6 +45,7 @@ async function getReleaseCoverAvailability(ids: string[]) {
 
   if (error) {
     console.error("globalSearch release cover availability error:", error);
+    onError();
     return new Map<string, boolean>();
   }
 
@@ -81,7 +77,7 @@ function collapseSongVersions(results: SearchResult[]) {
   return results.filter((result) => keptByKey.get(versionKey(result)) === result);
 }
 
-async function withSongReleaseDetails(results: SearchResult[]) {
+async function withSongReleaseDetails(results: SearchResult[], onError: () => void) {
   const recordingIds = [...new Set(results.map((result) => result.id).filter(Boolean))];
 
   if (!recordingIds.length) return results;
@@ -99,10 +95,12 @@ async function withSongReleaseDetails(results: SearchResult[]) {
 
   if (detailsResponse.error) {
     console.error("globalSearch song release details error:", detailsResponse.error);
+    onError();
   }
 
   if (slugResponse.error) {
     console.error("globalSearch song slug error:", slugResponse.error);
+    onError();
   }
 
   const detailsByRecordingId = new Map(
@@ -126,7 +124,7 @@ async function withSongReleaseDetails(results: SearchResult[]) {
         .filter((id): id is string => Boolean(id)),
     ),
   ];
-  const releaseCoverMap = await getReleaseCoverAvailability(releaseIds);
+  const releaseCoverMap = await getReleaseCoverAvailability(releaseIds, onError);
 
   return results.map((result) => {
     const details = detailsByRecordingId.get(result.id);
@@ -143,7 +141,7 @@ async function withSongReleaseDetails(results: SearchResult[]) {
   });
 }
 
-async function withReleaseSlugs(results: SearchResult[]) {
+async function withReleaseSlugs(results: SearchResult[], onError: () => void) {
   const releaseIds = results.map((result) => result.id).filter(Boolean);
 
   if (!releaseIds.length) return results;
@@ -155,6 +153,7 @@ async function withReleaseSlugs(results: SearchResult[]) {
 
   if (error) {
     console.error("globalSearch release slug error:", error);
+    onError();
     return results;
   }
 
@@ -190,7 +189,7 @@ async function withReleaseSlugs(results: SearchResult[]) {
     return !groupId || keptByGroup.get(groupId)?.id === result.id;
   });
 
-  const releaseCoverMap = await getReleaseCoverAvailability(uniqueResults.map((result) => result.id));
+  const releaseCoverMap = await getReleaseCoverAvailability(uniqueResults.map((result) => result.id), onError);
 
   return uniqueResults.map((result) => ({
     ...result,
@@ -212,13 +211,13 @@ async function getPublishedArtistIds(ids: string[]) {
 
   if (error) {
     console.error("globalSearch published artist filter error:", error);
-    return new Set<string>();
+    throw new Error("Search publication check failed.");
   }
 
   return new Set((data ?? []).map((artist) => artist.id));
 }
 
-async function getArtistImageVersions(ids: string[]) {
+async function getArtistImageVersions(ids: string[], onError: () => void) {
   const uniqueIds = [...new Set(ids.filter(Boolean))];
 
   if (!uniqueIds.length) return new Map<string, string | null>();
@@ -231,6 +230,7 @@ async function getArtistImageVersions(ids: string[]) {
 
   if (error) {
     console.error("globalSearch artist image availability error:", error);
+    onError();
     return new Map<string, string | null>();
   }
 
@@ -240,6 +240,18 @@ async function getArtistImageVersions(ids: string[]) {
       .map((artist) => [artist.id, artist.image_updated_at]),
   );
 }
+
+// Shared five-minute name-only cache. Bounded pages handle catalog growth;
+// partial reads fail as degraded instead of inventing a no-match outcome.
+const cachedPublishedArtistNames = unstable_cache(() => loadArtistRecoveryCatalog(async (from, to) => {
+  const { data, error, count } = await supabase.from("artists")
+    .select("id, slug, name, aliases, province, birth_year", { count: "exact" })
+    .eq("status", "published").order("id").range(from, to);
+  if (error || !data) throw new Error("Published artist recovery catalog could not be loaded.");
+  return { total: count, rows: data.map((artist) => ({ type: "artist" as const, id: artist.id, slug: artist.slug,
+    title: artist.name, aliases: artist.aliases ?? [], subtitle: artist.province,
+    year: artist.birth_year, cover_url: null })) };
+}), ["published-artist-recovery-v2"], { revalidate: 300 });
 
 export async function globalSearch(query: string): Promise<GlobalSearchResponse> {
   const cleaned = query.trim();
@@ -253,82 +265,72 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
   }
 
   const normalized = normalizeSearchText(cleaned);
-
-  const { data: fallbackArtistData, error: artistError } = await supabase
-    .from("artists")
-    .select("id, slug, name, province, birth_year, has_image, image_updated_at")
-    .eq("status", "published")
-    .or(`name.ilike.%${cleaned}%,name.ilike.%${normalized}%`)
-    .order("views", { ascending: false, nullsFirst: false })
-    .limit(10);
-
-  if (artistError) {
-    console.error("globalSearch artists error:", artistError);
-  }
-
-  const fallbackArtists: SearchResult[] = ((fallbackArtistData ?? []) as Array<{
-    id: string;
-    slug: string | null;
-    name: string;
-    province: string | null;
-    birth_year: number | null;
-    has_image: boolean | null;
-    image_updated_at: string | null;
-  }>).map(
-    (artist) => ({
-      type: "artist",
-      id: artist.id,
-      title: artist.name,
-      slug: artist.slug,
-      subtitle: artist.province,
-      year: artist.birth_year,
-      cover_url: artist.has_image === true
-        ? getArtistImageUrl(artist.id, artist.image_updated_at)
-        : null,
-    })
-  );
+  let degraded = false;
+  const onError = () => { degraded = true; };
 
   const { data, error } = await supabase.rpc("global_search", {
     search_text: normalized,
   });
-
-  if (error) {
-    console.error("globalSearch error:", error);
-
-    return {
-      artists: withArtistImageUrls(fallbackArtists),
-      songs: [],
-      releases: [],
-    };
+  if (error || !data) throw new Error("Search candidate retrieval failed.");
+  const candidates = data as GlobalSearchResponse;
+  const needsRecovery = searchTokens(cleaned).some((word) => word.length >= 4)
+    && !candidates.artists.some((artist) => (rankCatalogCandidate(artist, cleaned)?.tier ?? 9) <= 1);
+  if (needsRecovery) {
+    try {
+      const published = await cachedPublishedArtistNames();
+      candidates.artists = [...new Map([...candidates.artists, ...published].map((artist) => [artist.id, artist])).values()];
+    } catch { onError(); }
   }
-
-  const results = data as Partial<GlobalSearchResponse> | null;
+  const results = rankCatalogResults(candidates, cleaned);
   const rpcArtists = limitResults(results?.artists ?? []);
   const publishedArtistIds = await getPublishedArtistIds(rpcArtists.map((artist) => artist.id));
   const publishedRpcArtists = rpcArtists.filter((artist) => publishedArtistIds.has(artist.id));
-  const artists = limitResults(publishedRpcArtists.length ? publishedRpcArtists : fallbackArtists);
-  const artistImageVersions = await getArtistImageVersions(artists.map((artist) => artist.id));
+  const artists = limitResults(publishedRpcArtists);
+  const artistImageVersions = await getArtistImageVersions(artists.map((artist) => artist.id), onError);
   const songs = limitResults(results?.songs ?? []);
   const releases = limitResults(results?.releases ?? []);
 
-  return {
+  const enriched: GlobalSearchResponse = {
+    search: results.search,
     artists: artists.map((artist) => ({
       ...artist,
       cover_url: artistImageVersions.has(artist.id)
         ? getArtistImageUrl(artist.id, artistImageVersions.get(artist.id))
         : null,
     })),
-    songs: collapseSongVersions(await withSongReleaseDetails(withCurrentCoverArtUrls(songs))),
-    releases: await withReleaseSlugs(withCurrentCoverArtUrls(releases)),
+    songs: collapseSongVersions(await withSongReleaseDetails(withCurrentCoverArtUrls(songs), onError)),
+    releases: await withReleaseSlugs(withCurrentCoverArtUrls(releases), onError),
   };
+  enriched.search = rankCatalogResults(enriched, cleaned).search;
+  if (degraded) throw new SearchDegradedError({ ...enriched, search: { version: results.search!.version, outcome: "degraded" } });
+  return enriched;
 }
 
 const cachedGlobalSearchByKey = unstable_cache(
   globalSearch,
-  ["global-search-v2"],
+  ["global-search-v6"],
   { revalidate: 300 },
 );
 
-export function getCachedGlobalSearch(query: string) {
-  return cachedGlobalSearchByKey(searchCacheKey(query));
+export async function getCachedGlobalSearch(query: string): Promise<GlobalSearchResponse> {
+  try {
+    return await cachedGlobalSearchByKey(searchCacheKey(query));
+  } catch (error) {
+    if (error instanceof SearchDegradedError) return error.results;
+    // Errors escape unstable_cache: transient failures are never cached as
+    // successful empty searches. Only this failure path invokes the fallback.
+    return recoverSearchFailure(async () => {
+      const { data, error } = await supabase.from("artists")
+        .select("id, slug, name, province, birth_year, has_image, image_updated_at")
+        .eq("status", "published")
+        .ilike("name", `%${query.trim().replace(/[%_]/g, "")}%`)
+        .order("views", { ascending: false, nullsFirst: false }).limit(10);
+      const artists: SearchResult[] = error ? [] : (data ?? []).map((artist) => ({
+        type: "artist", id: artist.id, title: artist.name, slug: artist.slug,
+        subtitle: artist.province, year: artist.birth_year,
+        cover_url: artist.has_image ? getArtistImageUrl(artist.id, artist.image_updated_at) : null,
+      }));
+      return artists;
+    });
+  }
 }

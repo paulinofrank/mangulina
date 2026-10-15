@@ -32,3 +32,4 @@ UNUSED
 scripts/*
 !scripts/dev-watchpack.cjs
 !scripts/i18n-audit.mjs
+!scripts/check-public-indexing.mjs

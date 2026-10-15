@@ -17,6 +17,8 @@ The gate is not active until these steps and the end-to-end release test have co
 
 The verifier fetches metadata from the fixed Vercel API host and checks team, project, production environment, READY state, repository ID, main branch, SHA and immutable URL. The test job executes the harness from the workflow's main commit, not the deployed application's commit, and gets only a short-lived OIDC identity. Authenticated test requests cannot follow redirects. The status-writing job executes no repository code and reports the actual test outcome on the API-verified deployment SHA.
 
+Vercel adds `X-Robots-Tag: noindex` to immutable deployment hostnames. The staged check therefore checks indexing directives in the application's HTML, matching the existing CLI staging check. The public-origin check additionally checks response headers. A platform staging header must not falsely block an otherwise indexable public page.
+
 GitHub-backed Vercel checks are commit statuses. Concurrent deployments from the same commit can share status history; the workflow serializes runs for a commit, but this is not a per-deployment cryptographic attestation. CLI or owner force-promotion can bypass hosting checks. Continue using the explicit staged check before any manual CLI promotion.
 
 ## Verification completed before publication

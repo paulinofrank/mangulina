@@ -2,6 +2,8 @@ name: Public indexing smoke check
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [vercel.deployment.promoted]
   push:
     branches: [main]
     paths:

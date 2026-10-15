@@ -57,7 +57,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
 
   return (
     <MainWrapper>
-      {shouldSearch && <SearchAnalytics query={query} resultsCount={total} />}
+      {shouldSearch && <SearchAnalytics query={query} resultsCount={total} search={results.search} />}
       <SearchContent
         query={query}
         total={total}
