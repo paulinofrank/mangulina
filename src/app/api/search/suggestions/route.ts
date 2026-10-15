@@ -23,6 +23,12 @@ export async function GET(request: Request) {
 
   try {
     const results = await getCachedGlobalSearch(query);
+    if (results.search?.outcome === "error" || results.search?.outcome === "degraded") {
+      return NextResponse.json({ ok: results.search.outcome !== "error", ...results }, {
+        status: results.search.outcome === "error" ? 503 : 200,
+        headers: { "Cache-Control": "no-store" },
+      });
+    }
     return NextResponse.json(
       { ok: true, ...results },
       {

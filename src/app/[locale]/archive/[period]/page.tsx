@@ -14,20 +14,21 @@ import { getSongsByYearRange } from "@/lib/getSongsByYear";
 import { createPageMetadata } from "@/lib/seo";
 
 type ArchivePeriodPageProps = {
-  params: Promise<{ period: string; locale: string }>;
+  params: Promise<{ period: string; locale: string; page?: string }>;
 };
 
-function getArchivePeriodMetadata(periodSlug: string, locale?: string) {
+function getArchivePeriodMetadata(periodSlug: string, locale?: string, page = 1) {
   const period = parseArchivePeriod(periodSlug);
   if (!period) return null;
 
+  const suffix = page > 1 ? `/page/${page}` : "";
   if (period.type === "year") {
     return {
       period,
       metadata: createPageMetadata({
         title: `Dominican Music Released in ${period.year} | Mangulina`,
         description: `Browse Dominican music recordings and releases from ${period.year}. Discover artists, songs, and albums from Dominican music history.`,
-        path: `/archive/${period.year}`,
+        path: `/archive/${period.year}${suffix}`,
         locale,
       }),
     };
@@ -38,15 +39,15 @@ function getArchivePeriodMetadata(periodSlug: string, locale?: string) {
     metadata: createPageMetadata({
       title: `Dominican Music from the ${period.decade} | Mangulina`,
       description: `Explore Dominican music from the ${period.decade}, including recordings, releases, artists, and albums from Dominican music history.`,
-      path: `/archive/${period.decade}`,
+      path: `/archive/${period.decade}${suffix}`,
       locale,
     }),
   };
 }
 
 export async function generateMetadata({ params }: ArchivePeriodPageProps): Promise<Metadata> {
-  const { period: periodSlug, locale } = await params;
-  const result = getArchivePeriodMetadata(periodSlug, locale);
+  const { period: periodSlug, locale, page: rawPage } = await params;
+  const result = getArchivePeriodMetadata(periodSlug, locale, Number(rawPage ?? 1));
 
   if (!result) return {};
 
@@ -73,7 +74,9 @@ export function generateStaticParams() {
 export default async function ArchivePeriodPage({
   params,
 }: ArchivePeriodPageProps) {
-  const { period: periodSlug } = await params;
+  const { period: periodSlug, page: rawPage } = await params;
+  const page = Number(rawPage ?? 1);
+  if (!Number.isSafeInteger(page) || page < 1 || page > 100000 || (rawPage && (page === 1 || String(page) !== rawPage))) notFound();
   const result = getArchivePeriodMetadata(periodSlug);
 
   if (!result) notFound();
@@ -81,19 +84,20 @@ export default async function ArchivePeriodPage({
   const initialSongs = listingPeriod
     ? await getSongsByYearRange(listingPeriod.startYear, listingPeriod.endYear, {
         limit: ARCHIVE_PAGE_SIZE,
-        offset: 0,
+        offset: (page - 1) * ARCHIVE_PAGE_SIZE,
         sort: "views",
       })
     : { songs: [], total: 0, hasMore: false };
+  if (page > 1 && !initialSongs.songs.length) notFound();
   const initialData: ArchiveInitialData = {
     ...initialSongs,
-    cacheKey: getArchiveCacheKey(listingPeriod, "views", 1),
+    cacheKey: getArchiveCacheKey(listingPeriod, "views", page),
   };
 
   return (
     <MainWrapper>
       <Suspense fallback={null}>
-        <ArchiveClient period={result.period} initialData={initialData} />
+        <ArchiveClient period={result.period} initialData={initialData} initialPage={page} />
       </Suspense>
     </MainWrapper>
   );

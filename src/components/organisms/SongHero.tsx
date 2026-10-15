@@ -1,9 +1,10 @@
 // components/organisms/SongHero.tsx
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-import { genreDefinitions } from "@/lib/genres";
+import { getPublicGenreDestinations } from "@/lib/genreApi";
+import { resolveGenreDestination } from "@/lib/genreDestinations";
 import { formatDurationMilliseconds } from "@/lib/artistPortfolioPresentation";
 import ShareButton from "@/components/atoms/ShareButton";
 
@@ -24,33 +25,7 @@ type SongHeroProps = {
   shareTitle: string;
 };
 
-function slugify(value: string): string {
-  return value
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
-function getGenreHref(label: string): string {
-  const normalized = label.trim().toLowerCase();
-  const definition = genreDefinitions.find((genreDefinition) => {
-    const names = [
-      genreDefinition.title,
-      genreDefinition.primaryGenre,
-      ...genreDefinition.aliases,
-    ]
-      .filter(Boolean)
-      .map((name) => String(name).trim().toLowerCase());
-
-    return names.includes(normalized);
-  });
-
-  return definition?.href ?? `/genres/${slugify(label)}`;
-}
-
-export default function SongHero({
+export default async function SongHero({
   title,
   artist,
   artistSlug,
@@ -66,8 +41,9 @@ export default function SongHero({
   shareUrl,
   shareTitle,
 }: SongHeroProps) {
-  const t = useTranslations();
-  const genreChips = [genre, subgenre].filter(Boolean) as string[];
+  const [t, destinations] = await Promise.all([getTranslations(), getPublicGenreDestinations()]);
+  const genreChips = [genre, subgenre].filter((label): label is string => Boolean(label))
+    .map((label) => ({ label, href: resolveGenreDestination(label, destinations, genre) }));
   const isrcText = (isrcs ?? []).filter(Boolean).join(" · ");
   const durationStr = duration && duration > 0 ? formatDurationMilliseconds(duration) : null;
   const heroFacts = [
@@ -177,13 +153,13 @@ export default function SongHero({
                     </dt>
                     <dd className="flex min-w-0 flex-wrap gap-2">
                       {genreChips.map((chip) => (
-                        <Link
-                          key={chip}
-                          href={getGenreHref(chip)}
+                        chip.href ? <Link
+                          key={chip.label}
+                          href={chip.href}
                           className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-500 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:text-gray-700"
                         >
-                          {chip}
-                        </Link>
+                          {chip.label}
+                        </Link> : <span key={chip.label} className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-500">{chip.label}</span>
                       ))}
                     </dd>
                   </div>

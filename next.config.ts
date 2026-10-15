@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
+import { legacyGenreRedirects } from "./src/lib/legacyGenreRedirects";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
@@ -22,6 +23,7 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
+      ...legacyGenreRedirects,
       {
         source: "/artists/manuel-de-jesus-jimenez-ortega",
         destination: "/artists/manuel-jimenez",

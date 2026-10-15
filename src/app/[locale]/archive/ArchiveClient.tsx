@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect, useRef, useMemo } from "react";
+import { Suspense, useState, useEffect, useRef, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
+import ArchivePaginationLinks from "./ArchivePaginationLinks";
 import DecadeSelector from "@/app/[locale]/archive/DecadeSelector";
 import SongsByYearList from "@/app/[locale]/archive/SongsByYearList";
 import type { ArchivePeriod } from "@/lib/archivePeriods";
@@ -36,6 +37,14 @@ export type ArchiveInitialData = CacheEntry & {
 
 const SCROLL_KEY = "archive:scrollY";
 
+// Keep URL observation inside its own boundary: useSearchParams suspends on
+// cached routes, but the archive's initial songs must remain in the HTML.
+function ArchiveQueryObserver({ onChange }: { onChange: (query: string) => void }) {
+  const query = useSearchParams().toString();
+  useEffect(() => onChange(query), [query, onChange]);
+  return null;
+}
+
 function readCache(key: string): CacheEntry | null {
   try {
     const raw = sessionStorage.getItem(key);
@@ -63,11 +72,11 @@ function parsePage(value: string | null) {
 }
 
 function buildArchiveUrl(period: ArchivePeriod | null, sortBy: ArchiveSort, page = 1) {
-  const basePath = period ? `/archive/${period.slug}` : "/archive";
+  const basePath = period ? `/archive/${period.slug}${page > 1 ? `/page/${page}` : ""}` : "/archive";
   const params = new URLSearchParams();
 
   if (sortBy === "title") params.set("sort", "title");
-  if (page > 1) params.set("page", String(page));
+  if (!period && page > 1) params.set("page", String(page));
 
   const query = params.toString();
   return query ? `${basePath}?${query}` : basePath;
@@ -274,16 +283,19 @@ function getPeriodHeading(period: ArchivePeriod | null, t: ReturnType<typeof use
 export default function ArchiveClient({
   period = null,
   initialData,
+  initialPage = 1,
 }: {
   period?: ArchivePeriod | null;
   initialData?: ArchiveInitialData;
+  initialPage?: number;
 }) {
   const t = useTranslations();
   const router = useRouter();
-  const searchParams = useSearchParams();
+  const [query, setQuery] = useState("");
+  const searchParams = useMemo(() => new URLSearchParams(query), [query]);
 
   const sortBy = parseSort(searchParams.get("sort"));
-  const currentPage = parsePage(searchParams.get("page"));
+  const currentPage = parsePage(searchParams.get("page") ?? String(initialPage));
   const listingPeriod = useMemo(() => getArchiveListingPeriod(period), [period]);
 
   const [songs, setSongs] = useState<SongRow[]>(initialData?.songs ?? []);
@@ -296,10 +308,6 @@ export default function ArchiveClient({
     router.push(buildArchiveUrl(period, nextSort), { scroll: false });
   };
 
-  const updatePage = (nextPage: number) => {
-    const page = Math.max(1, nextPage);
-    router.push(buildArchiveUrl(period, sortBy, page), { scroll: true });
-  };
 
   useEffect(() => {
     let cancelled = false;
@@ -416,6 +424,9 @@ export default function ArchiveClient({
 
   return (
     <>
+      <Suspense fallback={null}>
+        <ArchiveQueryObserver onChange={setQuery} />
+      </Suspense>
       {period && (
         <section className="mx-4 sm:mx-8 lg:mx-12">
           <DecadeSelector
@@ -476,17 +487,17 @@ export default function ArchiveClient({
 
         {!loading && sortedSongs.length > 0 && (
           <>
-            <ArchivePagination
+            <ArchivePaginationLinks
               currentPage={currentPage}
               totalPages={totalPages}
-              onPageChange={updatePage}
+              pageHref={(page) => buildArchiveUrl(period, sortBy, page)}
               t={t}
             />
             <SongsByYearList songs={sortedSongs} compact />
-            <ArchivePagination
+            <ArchivePaginationLinks
               currentPage={currentPage}
               totalPages={totalPages}
-              onPageChange={updatePage}
+              pageHref={(page) => buildArchiveUrl(period, sortBy, page)}
               t={t}
             />
           </>

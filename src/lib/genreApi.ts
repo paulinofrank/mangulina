@@ -1,6 +1,7 @@
 import { getSupabaseClient } from "@/lib/supabase";
 import { unstable_cache } from "next/cache";
 import {
+  CATALOG_PROFILE_REVALIDATE_SECONDS,
   PUBLIC_GENRE_REVALIDATE_SECONDS,
   PUBLIC_GENRE_CACHE_TAG,
 } from "@/lib/publicCatalogCache";
@@ -12,6 +13,7 @@ import {
   type GenreSubgenre,
 } from "@/lib/genres";
 import type { ArtistSummary } from "@/types/home";
+import { buildGenreDestinations, type PublicGenreRow, type GenreDestination } from "@/lib/genreDestinations";
 
 export type GenrePageData = {
   genre: GenreDefinition;
@@ -140,6 +142,30 @@ async function loadCatalogGenre(slug: string) {
 
   return { genre, subgenres };
 }
+
+async function loadPublicGenreDestinations(): Promise<GenreDestination[]> {
+  const { data, error } = await getSupabaseClient().from("genres")
+    .select("id,name,slug,parent_id,level").eq("active", true);
+  const fallback = genreDefinitions.flatMap((genre) =>
+    [genre.title, genre.slug, genre.primaryGenre, ...genre.aliases].filter((name): name is string => Boolean(name))
+      .map((name) => ({ name, slug: genre.slug, href: genre.href })),
+  );
+  if (error) {
+    console.error("getPublicGenreDestinations error:", error);
+    return fallback;
+  }
+  const catalog = buildGenreDestinations((data ?? []) as PublicGenreRow[]);
+  // A catalog match is authoritative; static aliases only fill missing labels.
+  const known = new Set(catalog.flatMap((item) => [item.name.trim().toLowerCase(), item.slug.toLowerCase()]));
+  return [...catalog, ...fallback.filter((item) => !known.has(item.name.trim().toLowerCase()))];
+}
+
+export const getPublicGenreDestinations = unstable_cache(
+  loadPublicGenreDestinations,
+  ["public-genre-destinations-v1"],
+  // Match the song profile fallback; genre edits invalidate the shared tag.
+  { revalidate: CATALOG_PROFILE_REVALIDATE_SECONDS, tags: [PUBLIC_GENRE_CACHE_TAG] },
+);
 
 const getCatalogGenre = unstable_cache(
   loadCatalogGenre,

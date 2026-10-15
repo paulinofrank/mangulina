@@ -106,6 +106,9 @@
       }
     },
     "ui": {
+      "didYouMean": "Did you mean…?",
+      "searchError": "Search is temporarily unavailable. Please try again.",
+      "searchDegraded": "Some search results are temporarily unavailable.",
       "placeholder": "Search artists, songs, and albums.",
       "submit": "Search",
       "noQuery": "Type something in the search box to begin.",
@@ -1563,6 +1566,18 @@
     },
     "tools": {
       "analytics": {
+      "searchOutcomes": {
+        "title": "Search outcomes",
+        "description": "Last 30 days. Historical searches remain unclassified; correction interactions are not additional searches.",
+        "normal_searches": "Normal matches",
+        "recovered_searches": "Recovered matches",
+        "unmatched_searches": "No matches",
+        "failed_searches": "Backend errors",
+        "degraded_searches": "Degraded results",
+        "suggestions_displayed": "Corrections displayed",
+        "suggestions_selected": "Corrections selected",
+        "unclassified_searches": "Historical / unclassified"
+      },
         "title": "Analytics",
         "eyebrow": "Insights",
         "description": "Review recent artist and recording views, unanswered searches, and listening-platform engagement."

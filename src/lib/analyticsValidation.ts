@@ -1,5 +1,6 @@
 import { createHash } from "crypto";
 import type { SupabaseClient } from "@supabase/supabase-js";
+import type { SearchEventDetails } from "./analytics";
 
 const UUID_PATTERN =
   /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -172,7 +173,7 @@ export type ValidatedEvent =
   | { event_type: "recording_view"; recording_id: string }
   | { event_type: "release_view"; release_id: string }
   | { event_type: "genre_view"; genre_slug: string }
-  | { event_type: "search"; query: string; results_count: number }
+  | ({ event_type: "search"; query: string; results_count: number | null } & SearchEventDetails)
   | {
       event_type: "platform_click";
       recording_id: string;
@@ -205,7 +206,7 @@ const TYPE_FIELDS: Record<string, ReadonlySet<string>> = {
   recording_view: new Set(["recording_id"]),
   release_view: new Set(["release_id"]),
   genre_view: new Set(["genre_slug"]),
-  search: new Set(["query", "results_count"]),
+  search: new Set(["query", "results_count", "search_outcome", "search_action", "search_version", "suggestion_text"]),
   platform_click: new Set(["recording_id", "platform", "url"]),
   page_view: new Set(["path", "page_type", "entity_id", "entity_slug"]),
 };
@@ -265,6 +266,27 @@ export function validateEventPayload(
       const query = textValue(body.query, 300);
       if (!query) return invalidField("invalid_query");
       const resultsCount = body.results_count;
+      const hasDetails = body.search_outcome !== undefined || body.search_action !== undefined || body.search_version !== undefined || body.suggestion_text !== undefined;
+      const details: SearchEventDetails = {};
+      if (hasDetails) {
+        const outcome = body.search_outcome;
+        const action = body.search_action;
+        const version = textValue(body.search_version, 40);
+        if (typeof outcome !== "string" || !["normal", "recovered", "no_match", "error", "degraded"].includes(outcome)) return invalidField("invalid_search_outcome");
+        if (typeof action !== "string" || !["results", "suggestion_displayed", "suggestion_selected"].includes(action)) return invalidField("invalid_search_action");
+        if (!version || !/^[a-z0-9-]{1,40}$/.test(version)) return invalidField("invalid_search_version");
+        details.search_outcome = outcome as SearchEventDetails["search_outcome"];
+        details.search_action = action as SearchEventDetails["search_action"];
+        details.search_version = version;
+        if (action !== "results") {
+          const suggestion = textValue(body.suggestion_text, 300);
+          if (!suggestion || resultsCount !== null || (outcome !== "normal" && outcome !== "recovered")) return invalidField("invalid_search_suggestion");
+          details.suggestion_text = suggestion;
+          return { ok: true, event: { event_type: "search", query, results_count: null, ...details } };
+        }
+        if (body.suggestion_text !== undefined) return invalidField("unexpected_search_suggestion");
+        if ((outcome === "no_match" && resultsCount !== 0) || (["normal", "recovered"].includes(outcome) && !(typeof resultsCount === "number" && resultsCount > 0))) return invalidField("inconsistent_search_outcome");
+      }
       if (
         typeof resultsCount !== "number" ||
         !Number.isInteger(resultsCount) ||
@@ -275,7 +297,7 @@ export function validateEventPayload(
       }
       return {
         ok: true,
-        event: { event_type: "search", query, results_count: resultsCount },
+        event: { event_type: "search", query, results_count: resultsCount, ...details },
       };
     }
     case "platform_click": {
@@ -427,6 +449,8 @@ export async function persistEvent(
       const { error } = await client.from("search_events").insert({
         query: event.query,
         results_count: event.results_count,
+        ...(event.search_outcome ? { search_outcome: event.search_outcome, search_action: event.search_action, search_version: event.search_version,
+          ...(event.suggestion_text ? { suggestion_text: event.suggestion_text } : {}) } : {}),
         source: metadata.source,
         referrer: metadata.referrer,
         user_agent: metadata.user_agent,

@@ -52,6 +52,7 @@ export default function Footer() {
           <div className="flex justify-center sm:hidden">
             <Link
               href="/discover"
+              prefetch={false}
               className="inline-flex items-center gap-2 text-[1.2em] font-medium text-[#002D62] transition-colors hover:text-[#8B0000]"
             >
               <span aria-hidden="true" className="text-[#8B0000]">
@@ -68,25 +69,25 @@ export default function Footer() {
           <nav aria-label={a11y("footerNav")} className="text-sm font-normal text-gray-600 sm:text-base">
             <div className="grid grid-cols-2 gap-x-4 sm:hidden">
               <div className="flex flex-col gap-3 justify-self-end text-right">
-                <Link href="/about" className="transition-colors hover:text-[#002D62]">
+                <Link href="/about" prefetch={false} className="transition-colors hover:text-[#002D62]">
                   {nav("about")}
                 </Link>
-                <Link href="/contact" className="transition-colors hover:text-[#002D62]">
+                <Link href="/contact" prefetch={false} className="transition-colors hover:text-[#002D62]">
                   {nav("contact")}
                 </Link>
-                <Link href="/contributors" className="transition-colors hover:text-[#002D62]">
+                <Link href="/contributors" prefetch={false} className="transition-colors hover:text-[#002D62]">
                   {nav("contributors")}
                 </Link>
               </div>
 
               <div className="flex flex-col gap-3 justify-self-start text-left">
-                <Link href="/terms-of-use" className="whitespace-nowrap transition-colors hover:text-[#002D62]">
+                <Link href="/terms-of-use" prefetch={false} className="whitespace-nowrap transition-colors hover:text-[#002D62]">
                   {nav("termsOfUse")}
                 </Link>
-                <Link href="/privacy-policy" className="whitespace-nowrap transition-colors hover:text-[#002D62]">
+                <Link href="/privacy-policy" prefetch={false} className="whitespace-nowrap transition-colors hover:text-[#002D62]">
                   {nav("privacyPolicy")}
                 </Link>
-                <Link href="/dmca" className="whitespace-nowrap transition-colors hover:text-[#002D62]">
+                <Link href="/dmca" prefetch={false} className="whitespace-nowrap transition-colors hover:text-[#002D62]">
                   {nav("copyrights")}
                 </Link>
               </div>
@@ -101,7 +102,7 @@ export default function Footer() {
                       ·
                     </span>
                   )}
-                  <Link href={item.href} className="transition-colors hover:text-[#002D62]">
+                  <Link href={item.href} prefetch={false} className="transition-colors hover:text-[#002D62]">
                     {item.label}
                   </Link>
                 </Fragment>

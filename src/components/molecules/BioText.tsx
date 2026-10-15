@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { canonicalEditorialHref } from "@/lib/editorial/publicHref";
 
 type BioTextProps = {
   bio: string | null | undefined;
@@ -19,7 +20,7 @@ function parseInline(text: string): ReactNode[] {
       parts.push(
         <a
           key={match.index}
-          href={match[3]}
+          href={canonicalEditorialHref(match[3])}
           target="_blank"
           rel="noopener noreferrer"
           className="text-(--color-flagblue) underline-offset-4 hover:text-(--color-wikicrimson) hover:underline"

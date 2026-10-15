@@ -61,7 +61,8 @@ export async function fetchTopGenreViews(limit: number = 15) {
 /**
  * Fetches searches that returned zero results
  *
- * These represent catalog gaps and user demand signals. High-frequency
+ * These represent recorded no-match outcomes and user demand signals, not
+ * proven catalog gaps. High-frequency
  * zero-result searches should be prioritized for content curation:
  * - Artist names users search for but don't exist in database
  * - Song titles that should be available
@@ -84,6 +85,15 @@ export async function fetchSearchesWithNoResults(limit: number = 30) {
 
   if (error) throw error;
   return data || [];
+}
+
+export async function fetchSearchOutcomeSummary() {
+  const { data, error } = await createServiceRoleClient().from("search_events_by_day_last_30_days")
+    .select("normal_searches,recovered_searches,unmatched_searches,failed_searches,degraded_searches,suggestions_displayed,suggestions_selected,unclassified_searches");
+  if (error) throw error;
+  const counts: Record<string, number> = {};
+  for (const row of data ?? []) for (const [key, value] of Object.entries(row)) counts[key] = (counts[key] ?? 0) + Number(value ?? 0);
+  return counts;
 }
 
 /**

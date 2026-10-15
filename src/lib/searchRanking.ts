@@ -3,6 +3,9 @@ export function normalizeSearchText(value: string): string {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
+    // Collapse dotted initials without joining ordinary hyphenated words.
+    .replace(/\b([a-z])\.(?=[a-z]\.)/g, "$1")
+    .replace(/\.(?=\s|$)/g, "")
     .replace(/[^a-z0-9]+/g, " ")
     .trim()
     .replace(/\s+/g, " ");

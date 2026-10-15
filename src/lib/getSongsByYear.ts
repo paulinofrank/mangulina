@@ -113,7 +113,9 @@ export async function getSongsByYearRange(
     .order(sort === "views" ? "views" : "recording_title", {
       ascending: sort === "title",
       nullsFirst: false,
-    });
+    })
+    // Tied titles/view counts must not reorder records across page boundaries.
+    .order("recording_id", { ascending: true });
 
   if (error) {
     console.error(error);

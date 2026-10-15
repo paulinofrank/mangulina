@@ -1,3 +1,12 @@
+import type { SearchMetadata } from "./searchTypes";
+
+export type SearchEventDetails = {
+  search_outcome?: SearchMetadata["outcome"];
+  search_action?: "results" | "suggestion_displayed" | "suggestion_selected";
+  search_version?: string;
+  suggestion_text?: string;
+};
+
 export type PageViewEvent = {
   event_type: "page_view";
   path: string;
@@ -14,12 +23,12 @@ export type AnalyticsEvent =
   | { event_type: "release_view"; release_id: string; source?: string }
   | { event_type: "genre_view"; genre_slug: string; source?: string }
   | PageViewEvent
-  | {
+  | ({
       event_type: "search";
       query: string;
-      results_count: number;
+      results_count: number | null;
       source?: string;
-    }
+    } & SearchEventDetails)
   | {
       event_type: "platform_click";
       recording_id: string;
@@ -143,15 +152,28 @@ export function trackPageView(event: Omit<PageViewEvent, "event_type">) {
   sendAnalyticsEvent({ ...event, event_type: "page_view", path });
 }
 
-export function trackSearch(query: string, resultsCount: number) {
+const recentSearchEvents = new Map<string, number>();
+
+export function trackSearch(query: string, resultsCount: number | null, details: SearchEventDetails = {}) {
   const normalizedQuery = query.trim();
-  if (!normalizedQuery || !Number.isInteger(resultsCount) || resultsCount < 0) return;
+  if (!normalizedQuery || (resultsCount !== null && (!Number.isInteger(resultsCount) || resultsCount < 0))) return;
+  const key = JSON.stringify([normalizedQuery, resultsCount, details]);
+  const now = Date.now();
+  if (now - (recentSearchEvents.get(key) ?? 0) < 30_000) return;
+  for (const [eventKey, timestamp] of recentSearchEvents) if (now - timestamp >= 30_000) recentSearchEvents.delete(eventKey);
+  recentSearchEvents.set(key, now);
 
   sendAnalyticsEvent({
     event_type: "search",
     query: normalizedQuery,
     results_count: resultsCount,
+    ...details,
   });
+}
+
+export function trackSearchSuggestion(query: string, search: SearchMetadata, action: "suggestion_displayed" | "suggestion_selected") {
+  if (!search.suggestion) return;
+  trackSearch(query, null, { search_outcome: search.outcome, search_action: action, search_version: search.version, suggestion_text: search.suggestion.text });
 }
 
 export function trackPlatformClick(recordingId: string, platform: string, url?: string) {

@@ -3,9 +3,10 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import SearchFeedbackCard from "@/components/search/SearchFeedbackCard";
+import SearchCorrection from "@/components/search/SearchCorrection";
 import ArtistImage from "@/components/atoms/ArtistImage";
 import { isBornAbroadProvince } from "@/lib/provinceSlug";
-import type { SearchResult } from "@/lib/searchTypes";
+import type { SearchResult, SearchMetadata } from "@/lib/searchTypes";
 
 type SearchContentProps = {
   query: string;
@@ -14,6 +15,7 @@ type SearchContentProps = {
     artists: SearchResult[];
     songs: SearchResult[];
     releases: SearchResult[];
+    search?: SearchMetadata;
   };
 };
 
@@ -158,11 +160,13 @@ export default function SearchContent({
       </header>
 
       <div className="space-y-8">
+        <SearchCorrection query={query} search={results.search} />
+        {(results.search?.outcome === "error" || results.search?.outcome === "degraded") && <p role="status" className="rounded-xl border border-gray-200 p-4 text-gray-600">{t(`ui.${results.search.outcome === "error" ? "searchError" : "searchDegraded"}`)}</p>}
         {!query ? (
           <div className="rounded-2xl border border-dashed border-gray-200 bg-white p-8 text-gray-500">
             {t("ui.noQuery")}
           </div>
-        ) : total === 0 ? (
+        ) : total === 0 && results.search?.outcome !== "error" ? (
           <div className="rounded-2xl border border-dashed border-gray-200 bg-white p-8 text-gray-500">
             {t("ui.noResults")}
           </div>
@@ -176,7 +180,7 @@ export default function SearchContent({
           </div>
         )}
 
-        {query && total === 0 && <SearchFeedbackCard />}
+        {query && total === 0 && results.search?.outcome !== "error" && <SearchFeedbackCard />}
       </div>
     </div>
   );
