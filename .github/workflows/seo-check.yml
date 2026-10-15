@@ -1,0 +1,46 @@
+name: Public indexing smoke check
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/check-public-indexing.mjs'
+      - '.github/workflows/seo-check.yml'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'src/**'
+      - 'next.config.*'
+      - 'vercel.json'
+      - 'messages/**'
+  pull_request:
+    paths:
+      - 'scripts/check-public-indexing.mjs'
+      - '.github/workflows/seo-check.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: seo-smoke-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  public-indexing:
+    name: Check current public catalog HTML
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Require supported Node runtime
+        run: node -e 'if (Number(process.versions.node.split(".")[0]) < 20) process.exit(1)'
+      - name: Install locked dependencies without lifecycle scripts
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Check currently deployed public HTML
+        run: npm run check:seo
+
+# This tests the live public site. It does not test the proposed commit or
+# prevent an untested Vercel deployment from being promoted. Configure a staged
+# deployment check separately before describing this as a release gate.

@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "check:seo": "node scripts/check-public-indexing.mjs",
     "test": "tsx --test \"tests/**/*.test.ts\"",
     "i18n:audit": "node scripts/i18n-audit.mjs",
     "audit-db-health": "tsx scripts/auditDatabaseHealth.ts",
