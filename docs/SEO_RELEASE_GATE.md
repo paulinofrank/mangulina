@@ -23,6 +23,6 @@ GitHub-backed Vercel checks are commit statuses. Concurrent deployments from the
 
 Ten validator tests cover acceptance and rejection of wrong project, team, environment, readiness, hostname, URL, SHA, branch and repository. The existing HTML harness rejected the older Git deployment because the archive heading was absent from its HTML. The known-good production deployment remains `dpl_53oYBbHdwpLehHJuynAZXLBX89Z6`.
 
-## Pending account actions
+## Activation status
 
-No GitHub CI secrets existed when inspected. The production Trusted Sources grant was rejected by automatic approval review and was not saved. Required deployment checks have not been enabled, and the end-to-end protected CI run is pending. This branch must not be described as an activated gate.
+The account owner added `VERCEL_TOKEN` directly to the `seo-release` environment. The environment requires review by `paulinofrank` and permits main only. After explicit owner approval, the production Trusted Sources grant was saved with the repository, workflow, branch and audience restrictions above. Vercel now requires `Mangulina staged SEO (production)` before production publication. End-to-end failed-build hold and passing-build release verification are still pending; those results must be recorded before declaring setup complete.
