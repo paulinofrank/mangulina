@@ -33,7 +33,10 @@ async function inspect(path, canonicalPath, expectedCount, { noindex = false } =
     });
     assert.equal(response.status, 200, `${path}: HTTP status`);
     html = await response.text();
-    headerRobots = response.headers.get('x-robots-tag') ?? '';
+    // Vercel intentionally adds noindex to its immutable staging hostnames.
+    // Check the application's HTML directives there; the public-origin check
+    // also checks response headers after publication.
+    headerRobots = oidcToken ? '' : response.headers.get('x-robots-tag') ?? '';
   }
   const $ = load(html);
   $('script, style').remove();
