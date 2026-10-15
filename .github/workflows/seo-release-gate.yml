@@ -1,0 +1,86 @@
+name: Staged indexing release gate
+
+on:
+  repository_dispatch:
+    types: [vercel.deployment.ready]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: seo-release-${{ github.event.client_payload.git.sha }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: github.event.client_payload.project.id == 'prj_49xS0XvNy74hpJsdGxwsi9zEfRoU' && github.event.client_payload.environment == 'production'
+    runs-on: ubuntu-24.04
+    environment: seo-release
+    timeout-minutes: 5
+    outputs:
+      url: ${{ steps.target.outputs.url }}
+      sha: ${{ steps.target.outputs.sha }}
+    steps:
+      # Dispatch runs on main. Never check out the deployment's untrusted SHA.
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - id: target
+        name: Authenticate and verify deployment identity
+        run: node scripts/verify-seo-deployment.mjs
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+
+  test:
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Test verified deployment with short-lived GitHub identity
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        env:
+          VERIFIED_ORIGIN: ${{ needs.verify.outputs.url }}
+        with:
+          script: |
+            const {spawnSync} = require('node:child_process');
+            const token = await core.getIDToken();
+            core.setSecret(token);
+            const result = spawnSync(process.execPath,
+              ['scripts/check-public-indexing.mjs', '--origin', process.env.VERIFIED_ORIGIN],
+              {stdio: 'inherit', env: {...process.env, VERCEL_TRUSTED_OIDC_TOKEN: token}, timeout: 480000});
+            if (result.status !== 0) core.setFailed('Staged indexing checks failed; production must remain unchanged.');
+
+  report:
+    name: Report staged indexing result
+    needs: [verify, test]
+    if: always() && needs.verify.result == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      statuses: write
+    steps:
+      # No checkout or deployment code runs with status-write permission.
+      - uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        env:
+          VERIFIED_SHA: ${{ needs.verify.outputs.sha }}
+          TEST_RESULT: ${{ needs.test.result }}
+        with:
+          script: |
+            const passed = process.env.TEST_RESULT === 'success';
+            await github.rest.repos.createCommitStatus({
+              ...context.repo, sha: process.env.VERIFIED_SHA,
+              context: 'Mangulina staged SEO (production)',
+              state: passed ? 'success' : 'failure',
+              description: passed ? 'Seven staged HTML checks passed' : 'Staged HTML checks failed or did not finish',
+              target_url: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
+            });
+            if (!passed) core.setFailed('Production release blocked by indexing checks.');

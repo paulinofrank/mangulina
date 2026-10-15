@@ -12,6 +12,8 @@ const deploymentArg = process.argv.indexOf('--deployment');
 const deployment = deploymentArg >= 0 ? process.argv[deploymentArg + 1] : null;
 if (deployment && !/^https:\/\/[a-z0-9-]+\.vercel\.app$/.test(deployment)) throw new Error('Expected a Vercel deployment URL');
 const results = [];
+const oidcToken = process.env.VERCEL_TRUSTED_OIDC_TOKEN;
+if (oidcToken && !/^https:\/\/[a-z0-9-]+\.vercel\.app$/.test(origin)) throw new Error('OIDC access requires a verified Vercel deployment origin');
 async function inspect(path, canonicalPath, expectedCount, { noindex = false } = {}) {
   let html, headerRobots = '';
   if (deployment) {
@@ -25,7 +27,10 @@ async function inspect(path, canonicalPath, expectedCount, { noindex = false } =
     assert.equal(response.status, 0, `${path}: staged HTTP request failed`);
     html = response.stdout;
   } else {
-    const response = await fetch(origin + path, { signal: AbortSignal.timeout(45000) });
+    const response = await fetch(origin + path, {
+      signal: AbortSignal.timeout(45000), redirect: 'error',
+      headers: oidcToken ? { 'x-vercel-trusted-oidc-idp-token': oidcToken } : {},
+    });
     assert.equal(response.status, 200, `${path}: HTTP status`);
     html = await response.text();
     headerRobots = response.headers.get('x-robots-tag') ?? '';
