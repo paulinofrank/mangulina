@@ -26,6 +26,21 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  register-release-status:
+    name: Register staged release status for setup
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/codex/staged-seo-release-gate'
+    runs-on: ubuntu-24.04
+    permissions:
+      statuses: write
+    steps:
+      - uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        with:
+          script: |
+            await github.rest.repos.createCommitStatus({
+              ...context.repo, sha: context.sha, state: 'failure',
+              context: 'Mangulina staged SEO (production)',
+              description: 'Setup registration only; no production deployment approved'
+            });
   public-indexing:
     name: Check current public catalog HTML
     runs-on: ubuntu-latest
