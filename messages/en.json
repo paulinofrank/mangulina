@@ -1775,6 +1775,18 @@
       "editRelationship": "Edit Relationship"
     },
     "analytics": {
+      "searchOutcomes": {
+        "title": "Search outcomes",
+        "description": "Last 30 days. Historical searches remain unclassified; correction interactions are not additional searches.",
+        "normal_searches": "Normal matches",
+        "recovered_searches": "Recovered matches",
+        "unmatched_searches": "No matches",
+        "failed_searches": "Backend errors",
+        "degraded_searches": "Degraded results",
+        "suggestions_displayed": "Corrections displayed",
+        "suggestions_selected": "Corrections selected",
+        "unclassified_searches": "Historical / unclassified"
+      },
       "noActivityYet": "No activity recorded yet.",
       "unknownError": "Unknown error",
       "failedToLoad": "Failed to load analytics data: {error}",

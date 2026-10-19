@@ -1788,6 +1788,18 @@
       "editRelationship": "Editar Relación"
     },
     "analytics": {
+      "searchOutcomes": {
+        "title": "Resultados de búsqueda",
+        "description": "Últimos 30 días. Las búsquedas históricas quedan sin clasificar; las correcciones no cuentan como búsquedas adicionales.",
+        "normal_searches": "Coincidencias normales",
+        "recovered_searches": "Coincidencias recuperadas",
+        "unmatched_searches": "Sin coincidencias",
+        "failed_searches": "Errores del servicio",
+        "degraded_searches": "Resultados parciales",
+        "suggestions_displayed": "Correcciones mostradas",
+        "suggestions_selected": "Correcciones seleccionadas",
+        "unclassified_searches": "Históricas / sin clasificar"
+      },
       "noActivityYet": "Aún no hay actividad registrada.",
       "unknownError": "Error desconocido",
       "failedToLoad": "Error al cargar datos de análisis: {error}",

@@ -308,7 +308,7 @@ export async function globalSearch(query: string): Promise<GlobalSearchResponse>
 
 const cachedGlobalSearchByKey = unstable_cache(
   globalSearch,
-  ["global-search-v6"],
+  ["global-search-v7"],
   { revalidate: 300 },
 );
 

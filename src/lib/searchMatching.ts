@@ -1,7 +1,7 @@
 import { normalizeSearchText } from "./searchRanking";
 import type { GlobalSearchResponse, SearchResult } from "./searchTypes";
 
-export const SEARCH_ALGORITHM_VERSION = "progressive-v3";
+export const SEARCH_ALGORITHM_VERSION = "progressive-v4";
 // These words are downweighted only during recovery. Exact titles and phrases
 // are checked first, so a song called "Who" or "Padre" is still searchable.
 export const QUESTION_WORDS = new Set("quien quienes que cual cuales como donde cuando son es los las el la de del un una por para y a en padre padres dibujo who what which how where when is are the of a an for and drawing".split(" "));
@@ -64,6 +64,10 @@ function matchValue(value: string, query: string, alias: boolean, type: SearchRe
   if (matched.length === 1 && distinctive.length === 1 && recordCoverage === 1 && wanted.length >= 3) return { tier: 4, score: queryCoverage, fuzzy: false };
   // Conservative word-level correction: each meaningful query word must have
   // its own corresponding record word. Short words are never corrected.
+  // A complete exact word in the same artist name provides independent
+  // evidence for a nearby spelling in another word (Eddie Herrera / Eddy Herrera).
+  const exactArtistAnchor = type === "artist" && wanted.length >= 2
+    && wanted.some((token) => token.length >= 4 && words.includes(token));
   const used = new Set<number>();
   let errors = 0;
   for (const word of wanted) {
@@ -75,10 +79,16 @@ function matchValue(value: string, query: string, alias: boolean, type: SearchRe
       if (d < distance) { distance = d; best = i; }
     }
     const allowance = word.length >= 5 ? 2 : word.length >= 4 ? 1 : 0;
-    if (best < 0 || distance > allowance || distance / Math.max(word.length, words[best].length) > 0.34) return null;
+    if (best < 0 || distance > allowance) return null;
+    const relativeDistance = distance / Math.max(word.length, words[best].length);
+    const anchoredSpelling = exactArtistAnchor && word.length >= 4
+      && words[best].length >= 4 && word[0] === words[best][0]
+      && relativeDistance <= 0.5;
+    if (relativeDistance > 0.34 && !anchoredSpelling) return null;
     used.add(best);
     errors += distance;
   }
+  if (exactArtistAnchor && errors / wanted.join("").length > 0.25) return null;
   // Single artist words can recover insertions, deletions, substitutions and
   // swaps. Two-edit guesses must preserve the first letter and have >=6 letters.
   const candidateWord = words[[...used][0]];
