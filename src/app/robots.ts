@@ -8,7 +8,14 @@ const allowSearchIndexing =
   process.env.VERCEL_ENV === "production" &&
   process.env.ALLOW_SEARCH_INDEXING === "true";
 
-const INTERNAL_PATHS = ["/admin", "/admin/", "/api/", "/auth/", "/debug"];
+const INTERNAL_PATHS = [
+  "/admin",
+  "/admin/",
+  "/api/",
+  "/auth/",
+  "/debug",
+  "/_next/image",
+];
 
 /**
  * Paths crawlers are kept out of: everything internal, plus site search.

@@ -3,7 +3,14 @@ import test from "node:test";
 
 import { createRobotsPolicy } from "../src/app/robots";
 
-const INTERNAL_PATHS = ["/admin", "/admin/", "/api/", "/auth/", "/debug"];
+const INTERNAL_PATHS = [
+  "/admin",
+  "/admin/",
+  "/api/",
+  "/auth/",
+  "/debug",
+  "/_next/image",
+];
 // Phase 3D also keeps crawlers out of site search, whose result pages are
 // user-driven and effectively unbounded. Faceted listing query strings are
 // denied for the same reason — see FACETED_QUERY_PARAMS in src/app/robots.ts.

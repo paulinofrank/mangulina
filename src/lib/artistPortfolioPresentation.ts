@@ -87,7 +87,7 @@ export function suppressRecordingRolesRepresentedAtWork<T extends ScopedPortfoli
 
 export function formatDurationMilliseconds(milliseconds: number | null | undefined): string | null {
   if (milliseconds == null || milliseconds < 0) return null;
-  const totalSeconds = Math.round(milliseconds / 1000);
+  const totalSeconds = milliseconds < 1000 ? Math.round(milliseconds) : Math.round(milliseconds / 1000);
   const hours = Math.floor(totalSeconds / 3600);
   const minutes = Math.floor((totalSeconds % 3600) / 60);
   const seconds = totalSeconds % 60;
