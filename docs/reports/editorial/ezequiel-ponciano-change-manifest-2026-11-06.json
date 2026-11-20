@@ -1,0 +1,1420 @@
+{
+  "date": "2026-11-06",
+  "authorization": "User requested creation of Ezequiel Ponciano and updating all related biographies.",
+  "artist": {
+    "id": "ef2dd5d6-6893-4e2b-ad13-ac8aa10c37de",
+    "name": "Ezequiel Ponciano",
+    "sort_name": "Ponciano, Ezequiel",
+    "slug": "ezequiel-ponciano",
+    "type": "solo_artist",
+    "status": "draft",
+    "first_name": "Ezequiel",
+    "last_name": "Ponciano",
+    "stage_name": "Ezequiel Ponciano",
+    "birth_place": "Santo Domingo",
+    "province": "Santo Domingo",
+    "gender": "male",
+    "primary_role": "musician",
+    "occupations": [
+      "bassist",
+      "musical_director",
+      "composer",
+      "producer",
+      "bandleader"
+    ],
+    "instruments": [
+      "bass"
+    ],
+    "primary_genre": "worship",
+    "genres": [],
+    "artist_tags": [
+      "christian"
+    ],
+    "instagram": "ezequielponciano",
+    "has_image": false
+  },
+  "documents": [
+    {
+      "slug": "ezequiel-ponciano",
+      "owner_artist_id": "ef2dd5d6-6893-4e2b-ad13-ac8aa10c37de",
+      "locale": "en",
+      "expected_revision": 0,
+      "previous_document_id": null,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ezequiel Ponciano is a Dominican bassist, songwriter, producer and musical director who founded and leads the Christian worship group "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "646d9cbd-119c-4555-8f31-41f917c65ca2",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". His work combines the group's live ministry with songwriting, recording production and bass performance."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Formation of Kabed",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Born in Santo Domingo, Ponciano developed his musical work at the Tabernáculo de Adoración church in Santo Domingo Este. In 2015 he began Kabed with his wife, singer Yuleisy Canela, and vocalists "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+                  "occurrenceId": "5f4c6766-23d6-42a9-860a-98f090b5c571",
+                  "displayText": "Amaury Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "44407beb-33dd-4565-91ca-2fffb05f8798",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Pianist Abdiel Medina and drummer Lizmike Liriano joined the founding lineup. The group made its first official appearance on 25 January 2016 at the Somos 1 youth convention and released its debut single, «Inúndanos», that May."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Writing and production",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ponciano and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+                  "occurrenceId": "50930ef1-5f2f-4029-b094-baea823ead13",
+                  "displayText": "Amaury Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " wrote Kabed's 2020 song «Cantaremos Victoria». He is credited alongside Yuleisy Canela and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "d12b3ed3-7475-4c20-b43a-8960eea5d87c",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " as a writer of «A Donde Huiré», whose official video appeared in 2021. Kabed's official credits name him as the composer, producer and bassist of «Sopla», led vocally by Yuleisy Canela with guest singer Laila Olivera. He continued producing for the group, including its 2025 recording «Uso Honorable»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Work beyond the group",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "He produced «Tuyo Soy» (2021) for Adonis D'León and shared production duties with Esencia Records on Marizi Martínez's «Espíritu Santo Consolador» (2023), on which he also played bass. Kabed's own biography describes Ponciano and Canela as a songwriting and production partnership."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ponciano's documented role connects Kabed's first lineup in Santo Domingo Este with its later recordings: he has remained its leader while contributing as a bassist, writer and producer. The group's 2017 El Galardón award for Revelation of the Year and its continuing releases mark the reach of that collaboration."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Ezequiel Ponciano is a Dominican bassist, songwriter, producer and musical director who founded and leads the Christian worship group Kabed. His work combines the group's live ministry with songwriting, recording production and bass performance.\n\n**Formation of Kabed**\n\nBorn in Santo Domingo, Ponciano developed his musical work at the Tabernáculo de Adoración church in Santo Domingo Este. In 2015 he began Kabed with his wife, singer Yuleisy Canela, and vocalists Amaury Hernández and Karen Ponciano. Pianist Abdiel Medina and drummer Lizmike Liriano joined the founding lineup. The group made its first official appearance on 25 January 2016 at the Somos 1 youth convention and released its debut single, «Inúndanos», that May.\n\n**Writing and production**\n\nPonciano and Amaury Hernández wrote Kabed's 2020 song «Cantaremos Victoria». He is credited alongside Yuleisy Canela and Junior Ponciano as a writer of «A Donde Huiré», whose official video appeared in 2021. Kabed's official credits name him as the composer, producer and bassist of «Sopla», led vocally by Yuleisy Canela with guest singer Laila Olivera. He continued producing for the group, including its 2025 recording «Uso Honorable».\n\n**Work beyond the group**\n\nHe produced «Tuyo Soy» (2021) for Adonis D'León and shared production duties with Esencia Records on Marizi Martínez's «Espíritu Santo Consolador» (2023), on which he also played bass. Kabed's own biography describes Ponciano and Canela as a songwriting and production partnership.\n\n**Legacy**\n\nPonciano's documented role connects Kabed's first lineup in Santo Domingo Este with its later recordings: he has remained its leader while contributing as a bassist, writer and producer. The group's 2017 El Galardón award for Revelation of the Year and its continuing releases mark the reach of that collaboration."
+    },
+    {
+      "slug": "ezequiel-ponciano",
+      "owner_artist_id": "ef2dd5d6-6893-4e2b-ad13-ac8aa10c37de",
+      "locale": "es",
+      "expected_revision": 0,
+      "previous_document_id": null,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ezequiel Ponciano es un bajista, compositor, productor y director musical dominicano que fundó y dirige la agrupación de adoración cristiana "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "9a3009f3-2756-4c26-bda9-7a9c1d35c8b4",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Su trabajo abarca la dirección del grupo, la composición, la producción de grabaciones y la ejecución del bajo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Formación de Kabed",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Nacido en Santo Domingo, Ponciano desarrolló su trabajo musical en la iglesia Tabernáculo de Adoración de Santo Domingo Este. En 2015 inició Kabed junto a su esposa, la cantante Yuleisy Canela, y los vocalistas "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+                  "occurrenceId": "a733b915-14c9-4a8c-9738-4a81fa23b171",
+                  "displayText": "Amaury Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "4841ec40-06b6-41cb-a0dc-68f16515a444",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". El pianista Abdiel Medina y el baterista Lizmike Liriano se incorporaron a la primera formación. La agrupación se presentó oficialmente por primera vez el 25 de enero de 2016 en la convención juvenil Somos 1 y lanzó su sencillo inicial, «Inúndanos», en mayo de ese año."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Composición y producción",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ponciano y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+                  "occurrenceId": "216b1805-c26b-404a-b948-5baeb313260e",
+                  "displayText": "Amaury Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " escribieron «Cantaremos Victoria», publicada por Kabed en 2020. Figura junto a Yuleisy Canela y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "1aa30302-38f5-475a-8eaa-a6ffb18e8c6c",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " entre los autores de «A Donde Huiré», cuyo video oficial apareció en 2021. Los créditos oficiales de «Sopla», cantada por Yuleisy Canela con Laila Olivera como invitada, lo identifican como compositor, productor y bajista. Continuó produciendo grabaciones de la agrupación, entre ellas «Uso Honorable» (2025)."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Producciones para otros intérpretes",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Produjo «Tuyo Soy» (2021) para Adonis D'León y compartió la producción con Esencia Records de «Espíritu Santo Consolador» (2023), de Marizi Martínez, grabación en la que también tocó el bajo. La biografía oficial de Kabed presenta a Ponciano y Canela como colaboradores en la composición y producción de su música."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La trayectoria documentada de Ponciano enlaza la primera formación de Kabed en Santo Domingo Este con sus grabaciones posteriores: ha permanecido al frente del grupo y ha aportado como bajista, autor y productor. El premio El Galardón a Revelación del Año, recibido por la agrupación en 2017, y la continuidad de sus lanzamientos muestran el alcance de ese trabajo colectivo."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Ezequiel Ponciano es un bajista, compositor, productor y director musical dominicano que fundó y dirige la agrupación de adoración cristiana Kabed. Su trabajo abarca la dirección del grupo, la composición, la producción de grabaciones y la ejecución del bajo.\n\n**Formación de Kabed**\n\nNacido en Santo Domingo, Ponciano desarrolló su trabajo musical en la iglesia Tabernáculo de Adoración de Santo Domingo Este. En 2015 inició Kabed junto a su esposa, la cantante Yuleisy Canela, y los vocalistas Amaury Hernández y Karen Ponciano. El pianista Abdiel Medina y el baterista Lizmike Liriano se incorporaron a la primera formación. La agrupación se presentó oficialmente por primera vez el 25 de enero de 2016 en la convención juvenil Somos 1 y lanzó su sencillo inicial, «Inúndanos», en mayo de ese año.\n\n**Composición y producción**\n\nPonciano y Amaury Hernández escribieron «Cantaremos Victoria», publicada por Kabed en 2020. Figura junto a Yuleisy Canela y Junior Ponciano entre los autores de «A Donde Huiré», cuyo video oficial apareció en 2021. Los créditos oficiales de «Sopla», cantada por Yuleisy Canela con Laila Olivera como invitada, lo identifican como compositor, productor y bajista. Continuó produciendo grabaciones de la agrupación, entre ellas «Uso Honorable» (2025).\n\n**Producciones para otros intérpretes**\n\nProdujo «Tuyo Soy» (2021) para Adonis D'León y compartió la producción con Esencia Records de «Espíritu Santo Consolador» (2023), de Marizi Martínez, grabación en la que también tocó el bajo. La biografía oficial de Kabed presenta a Ponciano y Canela como colaboradores en la composición y producción de su música.\n\n**Legado**\n\nLa trayectoria documentada de Ponciano enlaza la primera formación de Kabed en Santo Domingo Este con sus grabaciones posteriores: ha permanecido al frente del grupo y ha aportado como bajista, autor y productor. El premio El Galardón a Revelación del Año, recibido por la agrupación en 2017, y la continuidad de sus lanzamientos muestran el alcance de ese trabajo colectivo."
+    },
+    {
+      "slug": "kabed",
+      "owner_artist_id": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+      "locale": "en",
+      "expected_revision": 2,
+      "previous_document_id": "5b30b437-1181-4a27-a582-2b376337d76d",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Kabed is a Dominican Christian worship group formed in 2015 at the Tabernáculo de Adoración church in Santo Domingo Este. Bassist and musical director Ezequiel Ponciano led its founding lineup, which included his wife Yuleisy Canela and singers "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+                  "occurrenceId": "6b7cb98f-edfb-4a1e-b06c-7c47c806bbc2",
+                  "displayText": "Amaury Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "d70ad37f-eebc-4adc-b9d0-259cbf3112cf",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "First recordings",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Pianist Abdiel Medina and drummer Lizmike Liriano completed the early ensemble. Kabed made its first official appearance on 25 January 2016 at the Somos 1 youth convention. Its first single, «Inúndanos», appeared on 6 May 2016 with production work by Amos Ferreras and vocal direction by Robert Green of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5bdcbc0d-24de-451d-abdd-4e40ab13b3d4",
+                  "occurrenceId": "6f4da9ce-53af-441b-bd1d-df2409ad1709",
+                  "displayText": "Barak"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". The group's first album was «Apasionados Live». In 2017 Kabed received the El Galardón award for Revelation of the Year."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Songs and collaborators",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+                  "occurrenceId": "2a4ea94f-3ae5-4074-831b-ad3900b7de27",
+                  "displayText": "Amaury Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and Ezequiel Ponciano wrote «Cantaremos Victoria», released in 2020. Credits for «A Donde Huiré» list Ezequiel, Yuleisy Canela and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "aaa7fc2b-b148-453e-81a1-7e82e4b21f3b",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " as writers. Kabed's official video credits name Ezequiel as composer, producer and bassist of «Sopla», with Canela on lead vocals and Laila Olivera as a guest. The group later recorded «Favor & Gracia» in Maryland and continued releasing music after Hernández's death in July 2024; its 2025 recordings include «Uso Honorable» and «Job», the latter with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "b53e2d4a-2711-4c0f-aab9-690e54138e77",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Kabed's history spans its 2016 debut, a national Christian music award and subsequent recordings made in the Dominican Republic and the United States. The group's repertoire documents the contributions of several singers and writers, while Ponciano's leadership and production link its founding and later phases."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Kabed is a Dominican Christian worship group formed in 2015 at the Tabernáculo de Adoración church in Santo Domingo Este. Bassist and musical director Ezequiel Ponciano led its founding lineup, which included his wife Yuleisy Canela and singers Amaury Hernández and Karen Ponciano.\n\n**First recordings**\n\nPianist Abdiel Medina and drummer Lizmike Liriano completed the early ensemble. Kabed made its first official appearance on 25 January 2016 at the Somos 1 youth convention. Its first single, «Inúndanos», appeared on 6 May 2016 with production work by Amos Ferreras and vocal direction by Robert Green of Barak. The group's first album was «Apasionados Live». In 2017 Kabed received the El Galardón award for Revelation of the Year.\n\n**Songs and collaborators**\n\nAmaury Hernández and Ezequiel Ponciano wrote «Cantaremos Victoria», released in 2020. Credits for «A Donde Huiré» list Ezequiel, Yuleisy Canela and Junior Ponciano as writers. Kabed's official video credits name Ezequiel as composer, producer and bassist of «Sopla», with Canela on lead vocals and Laila Olivera as a guest. The group later recorded «Favor & Gracia» in Maryland and continued releasing music after Hernández's death in July 2024; its 2025 recordings include «Uso Honorable» and «Job», the latter with Karen Ponciano.\n\n**Legacy**\n\nKabed's history spans its 2016 debut, a national Christian music award and subsequent recordings made in the Dominican Republic and the United States. The group's repertoire documents the contributions of several singers and writers, while Ponciano's leadership and production link its founding and later phases."
+    },
+    {
+      "slug": "kabed",
+      "owner_artist_id": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+      "locale": "es",
+      "expected_revision": 2,
+      "previous_document_id": "c5dd6c68-bb67-4e8b-9355-adc3319d1891",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Kabed es una agrupación dominicana de adoración cristiana formada en 2015 en la iglesia Tabernáculo de Adoración de Santo Domingo Este. El bajista y director musical Ezequiel Ponciano encabezó su primera formación, integrada también por su esposa Yuleisy Canela y los cantantes "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+                  "occurrenceId": "cd7523b8-1244-49a8-b482-8be34fbcfc55",
+                  "displayText": "Amaury Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "826820d7-3f1d-41e4-8b3c-cb69fa11ef3f",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Primeras grabaciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "El pianista Abdiel Medina y el baterista Lizmike Liriano completaron el conjunto inicial. Kabed se presentó oficialmente por primera vez el 25 de enero de 2016 en la convención juvenil Somos 1. Su primer sencillo, «Inúndanos», apareció el 6 de mayo de 2016 con participación del productor Amos Ferreras y dirección vocal de Robert Green, de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5bdcbc0d-24de-451d-abdd-4e40ab13b3d4",
+                  "occurrenceId": "c8187820-0798-461f-bcda-118f80e013dc",
+                  "displayText": "Barak"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Su primer álbum fue «Apasionados Live». En 2017 recibió el premio El Galardón como Revelación del Año."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Canciones y colaboradores",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+                  "occurrenceId": "793f3025-c6dd-4488-a180-53b707da6cc8",
+                  "displayText": "Amaury Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y Ezequiel Ponciano escribieron «Cantaremos Victoria», publicada en 2020. Los créditos de «A Donde Huiré» identifican como autores a Ezequiel, Yuleisy Canela y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "368a1c85-a2aa-4064-8643-852a3276449c",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". En el video oficial de «Sopla» se acredita a Ezequiel como compositor, productor y bajista, con Canela como voz principal y Laila Olivera como invitada. El grupo grabó después «Favor & Gracia» en Maryland y continuó publicando música tras el fallecimiento de Hernández en julio de 2024; entre sus grabaciones de 2025 figuran «Uso Honorable» y «Job», esta última junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "0d9ab667-9163-4043-a5c8-bfafefdccb45",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La trayectoria de Kabed comprende su debut en 2016, un premio nacional de música cristiana y grabaciones posteriores realizadas en la República Dominicana y Estados Unidos. Su repertorio reúne aportes de varios cantantes y autores, mientras la dirección y producción de Ponciano enlazan las distintas etapas de la agrupación."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Kabed es una agrupación dominicana de adoración cristiana formada en 2015 en la iglesia Tabernáculo de Adoración de Santo Domingo Este. El bajista y director musical Ezequiel Ponciano encabezó su primera formación, integrada también por su esposa Yuleisy Canela y los cantantes Amaury Hernández y Karen Ponciano.\n\n**Primeras grabaciones**\n\nEl pianista Abdiel Medina y el baterista Lizmike Liriano completaron el conjunto inicial. Kabed se presentó oficialmente por primera vez el 25 de enero de 2016 en la convención juvenil Somos 1. Su primer sencillo, «Inúndanos», apareció el 6 de mayo de 2016 con participación del productor Amos Ferreras y dirección vocal de Robert Green, de Barak. Su primer álbum fue «Apasionados Live». En 2017 recibió el premio El Galardón como Revelación del Año.\n\n**Canciones y colaboradores**\n\nAmaury Hernández y Ezequiel Ponciano escribieron «Cantaremos Victoria», publicada en 2020. Los créditos de «A Donde Huiré» identifican como autores a Ezequiel, Yuleisy Canela y Junior Ponciano. En el video oficial de «Sopla» se acredita a Ezequiel como compositor, productor y bajista, con Canela como voz principal y Laila Olivera como invitada. El grupo grabó después «Favor & Gracia» en Maryland y continuó publicando música tras el fallecimiento de Hernández en julio de 2024; entre sus grabaciones de 2025 figuran «Uso Honorable» y «Job», esta última junto a Karen Ponciano.\n\n**Legado**\n\nLa trayectoria de Kabed comprende su debut en 2016, un premio nacional de música cristiana y grabaciones posteriores realizadas en la República Dominicana y Estados Unidos. Su repertorio reúne aportes de varios cantantes y autores, mientras la dirección y producción de Ponciano enlazan las distintas etapas de la agrupación."
+    },
+    {
+      "slug": "amaury-hernandez",
+      "owner_artist_id": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+      "locale": "en",
+      "expected_revision": 1,
+      "previous_document_id": "b2064d1d-a026-48c6-a061-0a7f79cbe2bd",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Amaury Hernández Gil (1983–2024) was a Dominican Christian singer and songwriter, an original vocalist of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "42f82a62-f9bc-4397-a70f-36b8b09426b7",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and the husband of singer "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "7b839681-2efa-47c4-bdea-db659d39c2d6",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". He contributed to the group's early performances and recordings alongside its leader Ezequiel Ponciano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Kabed and songwriting",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hernández was part of Kabed's founding lineup at the Tabernáculo de Adoración church in Santo Domingo Este in 2015. The ensemble made its official debut at the Somos 1 youth convention in January 2016 and released «Inúndanos» that May. He later shared lead vocal duties with Yuleisy Canela and Karen Ponciano. Hernández and Ezequiel Ponciano co-wrote the group's 2020 song «Cantaremos Victoria», recorded at EP Music Studio."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Final years",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hernández remained associated with Kabed and also performed with the Christian group EmanuelDCN. He died in July 2024, shortly after the birth of his third child with Karen Ponciano. Kabed publicly commemorated their years of work together and continued recording."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His documented place in Kabed is that of an original vocalist and a co-writer of «Cantaremos Victoria». His voice and shared work belong to the group's formative years, while its later recordings continued under Ponciano's leadership."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Amaury Hernández Gil (1983–2024) was a Dominican Christian singer and songwriter, an original vocalist of Kabed and the husband of singer Karen Ponciano. He contributed to the group's early performances and recordings alongside its leader Ezequiel Ponciano.\n\n**Kabed and songwriting**\n\nHernández was part of Kabed's founding lineup at the Tabernáculo de Adoración church in Santo Domingo Este in 2015. The ensemble made its official debut at the Somos 1 youth convention in January 2016 and released «Inúndanos» that May. He later shared lead vocal duties with Yuleisy Canela and Karen Ponciano. Hernández and Ezequiel Ponciano co-wrote the group's 2020 song «Cantaremos Victoria», recorded at EP Music Studio.\n\n**Final years**\n\nHernández remained associated with Kabed and also performed with the Christian group EmanuelDCN. He died in July 2024, shortly after the birth of his third child with Karen Ponciano. Kabed publicly commemorated their years of work together and continued recording.\n\n**Legacy**\n\nHis documented place in Kabed is that of an original vocalist and a co-writer of «Cantaremos Victoria». His voice and shared work belong to the group's formative years, while its later recordings continued under Ponciano's leadership."
+    },
+    {
+      "slug": "amaury-hernandez",
+      "owner_artist_id": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+      "locale": "es",
+      "expected_revision": 1,
+      "previous_document_id": "d074d777-daf3-4a66-ab91-02eb10ea10c0",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Amaury Hernández Gil (1983–2024) fue un cantante y compositor cristiano dominicano, vocalista de la formación inicial de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "058ef3a8-908f-442c-8eed-d104a68308ca",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y esposo de la cantante "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "c32bc872-94cc-4525-a34a-a81cc89cd475",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Participó en las primeras presentaciones y grabaciones del grupo junto a su líder, Ezequiel Ponciano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Kabed y composición",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hernández integró la primera formación de Kabed en la iglesia Tabernáculo de Adoración de Santo Domingo Este en 2015. La agrupación debutó oficialmente en la convención juvenil Somos 1 en enero de 2016 y lanzó «Inúndanos» en mayo. Más adelante compartió las voces principales con Yuleisy Canela y Karen Ponciano. Hernández y Ezequiel Ponciano escribieron juntos «Cantaremos Victoria», publicada por el grupo en 2020 y producida en EP Music Studio."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Últimos años",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hernández mantuvo su vínculo con Kabed y también actuó con la agrupación cristiana EmanuelDCN. Falleció en julio de 2024, poco después del nacimiento de su tercer hijo con Karen Ponciano. Kabed recordó públicamente los años de trabajo que compartieron y continuó grabando."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su lugar documentado en Kabed es el de vocalista de la formación original y coautor de «Cantaremos Victoria». Su voz y su labor colectiva forman parte de los inicios del grupo, cuyas grabaciones posteriores continuaron bajo la dirección de Ponciano."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Amaury Hernández Gil (1983–2024) fue un cantante y compositor cristiano dominicano, vocalista de la formación inicial de Kabed y esposo de la cantante Karen Ponciano. Participó en las primeras presentaciones y grabaciones del grupo junto a su líder, Ezequiel Ponciano.\n\n**Kabed y composición**\n\nHernández integró la primera formación de Kabed en la iglesia Tabernáculo de Adoración de Santo Domingo Este en 2015. La agrupación debutó oficialmente en la convención juvenil Somos 1 en enero de 2016 y lanzó «Inúndanos» en mayo. Más adelante compartió las voces principales con Yuleisy Canela y Karen Ponciano. Hernández y Ezequiel Ponciano escribieron juntos «Cantaremos Victoria», publicada por el grupo en 2020 y producida en EP Music Studio.\n\n**Últimos años**\n\nHernández mantuvo su vínculo con Kabed y también actuó con la agrupación cristiana EmanuelDCN. Falleció en julio de 2024, poco después del nacimiento de su tercer hijo con Karen Ponciano. Kabed recordó públicamente los años de trabajo que compartieron y continuó grabando.\n\n**Legado**\n\nSu lugar documentado en Kabed es el de vocalista de la formación original y coautor de «Cantaremos Victoria». Su voz y su labor colectiva forman parte de los inicios del grupo, cuyas grabaciones posteriores continuaron bajo la dirección de Ponciano."
+    },
+    {
+      "slug": "karen-ponciano",
+      "owner_artist_id": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+      "locale": "en",
+      "expected_revision": 2,
+      "previous_document_id": "30cd1f93-c779-4f09-b28a-191cf1355a22",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Karen Ponciano is a Dominican Christian singer and worship leader. She was a vocalist in the founding lineup of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "3dbb8a83-1614-4faa-a46e-9959a7198092",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and later recorded with the group while maintaining her own ministry. She was married to singer "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+                  "occurrenceId": "34d10ecc-d0e1-4dcf-ab36-c1fd151cc308",
+                  "displayText": "Amaury Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " (1983–2024)."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early group work",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ponciano was named among Kabed's original singers when the group formed at the Tabernáculo de Adoración church in Santo Domingo Este in 2015. The ensemble made its official debut in January 2016 and released «Inúndanos» that May. In 2020 she was listed with Hernández and Yuleisy Canela as one of the group's lead vocalists."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Later recordings",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "After Hernández's death in July 2024, Ponciano continued her musical ministry. Under the name Karen Ponciano Ministry, she released «Yo Navegaré» in May 2025 and recorded «Job» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "9a1b4aa0-78da-45d9-a33f-4f7715419844",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " in October of that year. The latter was issued jointly under their names and also appeared in the group's «Uso Honorable» project."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Her career connects Kabed's founding ensemble with its later recordings. Her continued singing as both a group collaborator and an independent worship artist is documented by the 2025 releases."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Karen Ponciano is a Dominican Christian singer and worship leader. She was a vocalist in the founding lineup of Kabed and later recorded with the group while maintaining her own ministry. She was married to singer Amaury Hernández (1983–2024).\n\n**Early group work**\n\nPonciano was named among Kabed's original singers when the group formed at the Tabernáculo de Adoración church in Santo Domingo Este in 2015. The ensemble made its official debut in January 2016 and released «Inúndanos» that May. In 2020 she was listed with Hernández and Yuleisy Canela as one of the group's lead vocalists.\n\n**Later recordings**\n\nAfter Hernández's death in July 2024, Ponciano continued her musical ministry. Under the name Karen Ponciano Ministry, she released «Yo Navegaré» in May 2025 and recorded «Job» with Kabed in October of that year. The latter was issued jointly under their names and also appeared in the group's «Uso Honorable» project.\n\n**Legacy**\n\nHer career connects Kabed's founding ensemble with its later recordings. Her continued singing as both a group collaborator and an independent worship artist is documented by the 2025 releases."
+    },
+    {
+      "slug": "karen-ponciano",
+      "owner_artist_id": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+      "locale": "es",
+      "expected_revision": 1,
+      "previous_document_id": "e0d906eb-6326-4c5f-bdb3-a46ab829fb38",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Karen Ponciano es una cantante y líder de adoración cristiana dominicana. Integró como vocalista la primera formación de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "b180aa39-23b3-4101-9812-52268b774f0b",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y más adelante volvió a grabar con el grupo mientras desarrollaba su propio ministerio. Estuvo casada con el cantante "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+                  "occurrenceId": "9b233a21-802d-4edc-8837-eaf6c0a94e06",
+                  "displayText": "Amaury Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " (1983–2024)."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Primera etapa con el grupo",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ponciano fue nombrada entre las cantantes originales de Kabed cuando la agrupación nació en la iglesia Tabernáculo de Adoración de Santo Domingo Este en 2015. El conjunto debutó oficialmente en enero de 2016 y publicó «Inúndanos» en mayo. En 2020 figuraba junto a Hernández y Yuleisy Canela entre sus voces principales."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Grabaciones posteriores",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Tras la muerte de Hernández en julio de 2024, Ponciano continuó su ministerio musical. Bajo el nombre Karen Ponciano Ministry publicó «Yo Navegaré» en mayo de 2025 y grabó «Job» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "ae62538b-efe5-4f81-b11c-40481a8f29b5",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " en octubre de ese año. La segunda grabación apareció acreditada conjuntamente a ambos y también formó parte del proyecto «Uso Honorable» del grupo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trayectoria enlaza la formación fundadora de Kabed con sus grabaciones posteriores. Los lanzamientos de 2025 documentan su continuidad tanto como colaboradora del grupo como intérprete independiente de música de adoración."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Karen Ponciano es una cantante y líder de adoración cristiana dominicana. Integró como vocalista la primera formación de Kabed y más adelante volvió a grabar con el grupo mientras desarrollaba su propio ministerio. Estuvo casada con el cantante Amaury Hernández (1983–2024).\n\n**Primera etapa con el grupo**\n\nPonciano fue nombrada entre las cantantes originales de Kabed cuando la agrupación nació en la iglesia Tabernáculo de Adoración de Santo Domingo Este en 2015. El conjunto debutó oficialmente en enero de 2016 y publicó «Inúndanos» en mayo. En 2020 figuraba junto a Hernández y Yuleisy Canela entre sus voces principales.\n\n**Grabaciones posteriores**\n\nTras la muerte de Hernández en julio de 2024, Ponciano continuó su ministerio musical. Bajo el nombre Karen Ponciano Ministry publicó «Yo Navegaré» en mayo de 2025 y grabó «Job» con Kabed en octubre de ese año. La segunda grabación apareció acreditada conjuntamente a ambos y también formó parte del proyecto «Uso Honorable» del grupo.\n\n**Legado**\n\nSu trayectoria enlaza la formación fundadora de Kabed con sus grabaciones posteriores. Los lanzamientos de 2025 documentan su continuidad tanto como colaboradora del grupo como intérprete independiente de música de adoración."
+    },
+    {
+      "slug": "junior-ponciano",
+      "owner_artist_id": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+      "locale": "en",
+      "expected_revision": 3,
+      "previous_document_id": "376b27ba-da27-415f-87ad-125bb7915a3e",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Junior Ponciano is a Dominican Christian pastor, songwriter and worship singer from Santo Domingo. He founded the youth movement Somos 1 and has contributed songs to the worship repertoire of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "f1420e21-bbc5-440d-93aa-55697514d0b4",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and Grupo Hope."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ministry and music",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A son of pastors Santiago and Norelys Ponciano, he grew up in the Tabernáculo de Adoración church and learned to play piano in its worship ministry. He established Somos 1 in 2014 as a gathering for Christian youth. Kabed made its first official appearance at a Somos 1 convention on 25 January 2016."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Songs for other groups",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ponciano is credited alongside Ezequiel Ponciano and Yuleisy Canela as a writer of Kabed's «A Donde Huiré», recorded in 2021 and included in the «Favor & Gracia» project. He wrote «Rodeado» for Grupo Hope; the group's 2022 release featured singers "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "6097497e-6cd3-43b0-bcde-7e416d41e78c",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and Misael J. In 2026 he remained active as the leader of Somos Uno, announcing its Fundación Misión Uno initiative."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His work joins pastoral leadership with songwriting for contemporary Christian worship. Somos 1 provided a stage for Kabed's debut, and his credits on «A Donde Huiré» and «Rodeado» connect his own ministry with two other Dominican worship groups."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Junior Ponciano is a Dominican Christian pastor, songwriter and worship singer from Santo Domingo. He founded the youth movement Somos 1 and has contributed songs to the worship repertoire of Kabed and Grupo Hope.\n\n**Ministry and music**\n\nA son of pastors Santiago and Norelys Ponciano, he grew up in the Tabernáculo de Adoración church and learned to play piano in its worship ministry. He established Somos 1 in 2014 as a gathering for Christian youth. Kabed made its first official appearance at a Somos 1 convention on 25 January 2016.\n\n**Songs for other groups**\n\nPonciano is credited alongside Ezequiel Ponciano and Yuleisy Canela as a writer of Kabed's «A Donde Huiré», recorded in 2021 and included in the «Favor & Gracia» project. He wrote «Rodeado» for Grupo Hope; the group's 2022 release featured singers Carolina Ponciano and Misael J. In 2026 he remained active as the leader of Somos Uno, announcing its Fundación Misión Uno initiative.\n\n**Legacy**\n\nHis work joins pastoral leadership with songwriting for contemporary Christian worship. Somos 1 provided a stage for Kabed's debut, and his credits on «A Donde Huiré» and «Rodeado» connect his own ministry with two other Dominican worship groups."
+    },
+    {
+      "slug": "junior-ponciano",
+      "owner_artist_id": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+      "locale": "es",
+      "expected_revision": 1,
+      "previous_document_id": "6a5785ad-de10-4eaf-97c2-426f3ce56e55",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Junior Ponciano es un pastor, compositor y cantante de adoración cristiana dominicano de Santo Domingo. Fundó el movimiento juvenil Somos 1 y ha aportado canciones al repertorio de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "9650c93c-d934-474c-a3b3-0e6cd6e76842",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y Grupo Hope."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ministerio y música",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hijo de los pastores Santiago y Norelys Ponciano, creció en la iglesia Tabernáculo de Adoración y aprendió a tocar el piano en su ministerio de alabanza. Fundó Somos 1 en 2014 como espacio de encuentro para la juventud cristiana. Kabed realizó su primera presentación oficial en una convención de Somos 1 el 25 de enero de 2016."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Canciones para otras agrupaciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ponciano figura junto a Ezequiel Ponciano y Yuleisy Canela entre los autores de «A Donde Huiré», grabada por Kabed en 2021 e incluida en el proyecto «Favor & Gracia». Escribió «Rodeado» para Grupo Hope; el lanzamiento de 2022 contó con las voces de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "26761146-a26a-4e12-8cb4-2a7b7c0eeca6",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y Misael J. En 2026 continuaba al frente de Somos Uno y anunció la iniciativa Fundación Misión Uno."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trabajo une el liderazgo pastoral con la composición de música cristiana contemporánea. Somos 1 brindó el escenario para el debut de Kabed, y sus créditos en «A Donde Huiré» y «Rodeado» enlazan su ministerio con otras dos agrupaciones dominicanas de adoración."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Junior Ponciano es un pastor, compositor y cantante de adoración cristiana dominicano de Santo Domingo. Fundó el movimiento juvenil Somos 1 y ha aportado canciones al repertorio de Kabed y Grupo Hope.\n\n**Ministerio y música**\n\nHijo de los pastores Santiago y Norelys Ponciano, creció en la iglesia Tabernáculo de Adoración y aprendió a tocar el piano en su ministerio de alabanza. Fundó Somos 1 en 2014 como espacio de encuentro para la juventud cristiana. Kabed realizó su primera presentación oficial en una convención de Somos 1 el 25 de enero de 2016.\n\n**Canciones para otras agrupaciones**\n\nPonciano figura junto a Ezequiel Ponciano y Yuleisy Canela entre los autores de «A Donde Huiré», grabada por Kabed en 2021 e incluida en el proyecto «Favor & Gracia». Escribió «Rodeado» para Grupo Hope; el lanzamiento de 2022 contó con las voces de Carolina Ponciano y Misael J. En 2026 continuaba al frente de Somos Uno y anunció la iniciativa Fundación Misión Uno.\n\n**Legado**\n\nSu trabajo une el liderazgo pastoral con la composición de música cristiana contemporánea. Somos 1 brindó el escenario para el debut de Kabed, y sus créditos en «A Donde Huiré» y «Rodeado» enlazan su ministerio con otras dos agrupaciones dominicanas de adoración."
+    }
+  ],
+  "source_file": "ezequiel-ponciano-content-2026-11-06.json",
+  "note": "Biography references to the new artist remain plain text in published owners while Ezequiel status is draft. No discography import or artist publication."
+}

@@ -1,0 +1,431 @@
+{
+  "artist": {
+    "id": "bbfd6215-abb7-4a99-8569-abdf45296d7b",
+    "name": "Nathalie Hazim",
+    "sort_name": "Hazim, Nathalie",
+    "type": "solo_artist",
+    "birth_year": null,
+    "death_year": null,
+    "created_at": "2026-10-26T12:00:18.702475+00:00",
+    "views": 0,
+    "wikidata_id": null,
+    "first_name": "Nathalie",
+    "middle_name": "Adjeir",
+    "last_name": "Hazim",
+    "second_last_name": "Guzmán",
+    "stage_name": "Nathalie Hazim",
+    "date_of_birth": null,
+    "birth_place": "Santo Domingo",
+    "website": "https://nathaliehazim.com/",
+    "youtube": "@nathaliehazim",
+    "facebook": "nathaliehazim",
+    "instagram": "nathaliehazim",
+    "aliases": [
+      "Nathalie Adjeir Hazim Guzmán"
+    ],
+    "mbid": null,
+    "occupations": [
+      "songwriter",
+      "producer"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "genres": [
+      "bolero",
+      "merengue"
+    ],
+    "disambiguation": null,
+    "gender": "female",
+    "ended": null,
+    "mb_metadata": {},
+    "updated_at": "2026-10-26T12:00:18.702475+00:00",
+    "province": "Distrito Nacional",
+    "birth_day": null,
+    "birth_month": null,
+    "slug": "nathalie-hazim",
+    "primary_role": "singer",
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_death": null,
+    "status": "draft",
+    "primary_genre": "ballads",
+    "bio_en": null,
+    "bio_es": null,
+    "has_image": false,
+    "image_updated_at": null,
+    "formation_year": null,
+    "dissolution_year": null,
+    "spotify": "1pgJnLaz9qEnErUwC0Tm16"
+  },
+  "documents": [
+    {
+      "id": "8b04df36-5f5b-4238-bd87-47e230d66987",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Nathalie Adjeir Hazim Guzmán, professionally known as Nathalie Hazim, is a Dominican singer-songwriter and music producer born on 5 November in Santo Domingo. Her repertoire is rooted in ballads and pop, with ventures into bolero and merengue. Since her 2012 debut, she has released four albums and developed projects in music production and communications.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Training and first releases",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "She studied advertising communications and took film courses at the New York Film Academy. As a child she practiced ballet for fourteen years, and she sang with friends before performing publicly. In 2012 she released her debut single, «El espejo de tus ojos»; the album of the same name followed in 2013. Produced by Jim Papoulis, it featured many of her own songs. In 2013 she took part in a «Premios Soberano» tribute to ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+                  "displayText": "Luchy Vicioso",
+                  "occurrenceId": "f5ce18e1-e4e7-4a5d-a60a-43e46a17052f"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Her second release, «Te Cuento» (2017), was produced by Kiko Cibrián and brought together six songs about identity, self-acceptance and relationships. It brought her a 2018 «Premios Soberano» nomination for Soloist of the Year and won World EP at that year's «Independent Music Awards». She also runs her work through her label, «Malagana Records».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Songwriting, production and bolero",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2020 she released «Más de lo que soñé», co-producing it with Alexandro Seguí and Hafid Salazar. The song won an «Independent Music Award» for Best Pop Music Production. That year she linked her single «Puertas adentro» to a food-aid initiative for Dominican families. In 2021 she released «Amorosa», an album of thirteen boleros revisiting songs from the Dominican repertoire.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Her fourth album, «Desde Cero» (2022), gathered eleven original songs in a pop setting; painter Ada Balcácer created artwork for its cover. She shared the stage with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+                  "displayText": "Vickiana",
+                  "occurrenceId": "920ab1a3-cd7c-4771-a1b6-f451b5801098"
+                }
+              },
+              {
+                "text": " during the album's concert presentations. In January 2025 Hazim released «Amor bonito», her first recorded venture into merengue, followed in November by the ballad «Y esto, ¿a quién se lo digo?».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Other projects",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Outside music, Hazim directs the communications agency «Room Grupo Creativo». She launched «Cinco Palabras», a podcast of personal conversations, in 2025. Its second season began in 2026 on her YouTube channel and other platforms.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Her work combines original songs with fresh interpretations of Dominican bolero. Producing her own music and pursuing communications and community projects have accompanied a career centred on romantic song.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "bbfd6215-abb7-4a99-8569-abdf45296d7b",
+      "created_at": "2026-10-26T12:00:18.981981+00:00",
+      "updated_at": "2026-10-26T12:00:18.981981+00:00",
+      "revision": 1
+    },
+    {
+      "id": "080521f7-cf4c-4447-a10f-dfeab9c88bf8",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Nathalie Adjeir Hazim Guzmán, conocida artísticamente como Nathalie Hazim, es una cantautora y productora musical dominicana nacida el 5 de noviembre en Santo Domingo. Su repertorio parte de la balada y el pop, y se extiende al bolero y al merengue. Desde su debut en 2012 ha publicado cuatro álbumes y desarrollado proyectos de producción musical y comunicación.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Formación y primeros discos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Estudió Comunicación Publicitaria y cursó cine en la New York Film Academy. De niña practicó ballet durante catorce años y comenzó a cantar en reuniones de amigos antes de actuar en público. En 2012 lanzó «El espejo de tus ojos», su primer sencillo; al año siguiente presentó el álbum homónimo, producido por Jim Papoulis y compuesto en buena parte por canciones propias. En 2013 participó en el homenaje a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+                  "displayText": "Luchy Vicioso",
+                  "occurrenceId": "12bb7164-2d56-4011-b5ab-785f27d06892"
+                }
+              },
+              {
+                "text": " de los «Premios Soberano».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su segundo trabajo, «Te Cuento» (2017), fue producido por Kiko Cibrián y reunió seis canciones sobre la identidad, el amor propio y las relaciones. Le valió una nominación como Solista del Año en los «Premios Soberano» de 2018 y ganó la categoría World EP en los «Independent Music Awards» de ese año. La artista también desarrolla su trabajo a través de su sello «Malagana Records».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Composición, producción y bolero",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2020 lanzó «Más de lo que soñé», que coprodujo con Alexandro Seguí y Hafid Salazar y recibió un «Independent Music Award» a la Mejor Producción Musical Pop. Ese año vinculó el sencillo «Puertas adentro» a una iniciativa de ayuda alimentaria para familias dominicanas. En 2021 publicó «Amorosa», un álbum de trece boleros que recupera composiciones del cancionero dominicano.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su cuarto álbum, «Desde Cero» (2022), reunió once canciones originales en una propuesta de pop. La pintora Ada Balcácer creó una obra para su portada. En los conciertos de presentación del disco compartió escenario con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+                  "displayText": "Vickiana",
+                  "occurrenceId": "07316abb-29f8-4cb4-9229-cb9ee35f894c"
+                }
+              },
+              {
+                "text": ". En enero de 2025 lanzó «Amor bonito», su primera incursión discográfica en el merengue, y en noviembre presentó la balada «Y esto, ¿a quién se lo digo?».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Otros proyectos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Además de la música, Hazim dirige la agencia de comunicación «Room Grupo Creativo». En 2025 estrenó «Cinco Palabras», un pódcast de conversaciones personales que inició una segunda temporada en 2026 a través de su canal de YouTube y otras plataformas.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su obra reúne canciones de autor con nuevas lecturas del bolero dominicano. La producción de sus propios discos y sus proyectos de comunicación y ayuda comunitaria han acompañado una carrera centrada en la canción romántica.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "bbfd6215-abb7-4a99-8569-abdf45296d7b",
+      "created_at": "2026-10-26T12:00:18.835435+00:00",
+      "updated_at": "2026-10-26T12:00:18.835435+00:00",
+      "revision": 1
+    }
+  ],
+  "relations": [
+    {
+      "id": "b17fc4c8-ef2e-492d-9e95-4090ba366cf3",
+      "editorial_document_id": "080521f7-cf4c-4447-a10f-dfeab9c88bf8",
+      "occurrence_id": "12bb7164-2d56-4011-b5ab-785f27d06892",
+      "entity_type": "artist",
+      "target_artist_id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+      "created_at": "2026-10-26T12:00:18.835435+00:00",
+      "updated_at": "2026-10-26T12:00:18.835435+00:00"
+    },
+    {
+      "id": "d278bb0a-b9e5-434f-b9c0-7d212bac4c06",
+      "editorial_document_id": "080521f7-cf4c-4447-a10f-dfeab9c88bf8",
+      "occurrence_id": "07316abb-29f8-4cb4-9229-cb9ee35f894c",
+      "entity_type": "artist",
+      "target_artist_id": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+      "created_at": "2026-10-26T12:00:18.835435+00:00",
+      "updated_at": "2026-10-26T12:00:18.835435+00:00"
+    },
+    {
+      "id": "8435947f-380b-4965-a2f5-ecb6c015bc92",
+      "editorial_document_id": "8b04df36-5f5b-4238-bd87-47e230d66987",
+      "occurrence_id": "f5ce18e1-e4e7-4a5d-a60a-43e46a17052f",
+      "entity_type": "artist",
+      "target_artist_id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+      "created_at": "2026-10-26T12:00:18.981981+00:00",
+      "updated_at": "2026-10-26T12:00:18.981981+00:00"
+    },
+    {
+      "id": "053c45f6-5bd3-41d5-8ca3-a0826d3fb322",
+      "editorial_document_id": "8b04df36-5f5b-4238-bd87-47e230d66987",
+      "occurrence_id": "920ab1a3-cd7c-4771-a1b6-f451b5801098",
+      "entity_type": "artist",
+      "target_artist_id": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+      "created_at": "2026-10-26T12:00:18.981981+00:00",
+      "updated_at": "2026-10-26T12:00:18.981981+00:00"
+    }
+  ],
+  "integrity": {
+    "generatedAt": "2026-10-26T12:00:26.260Z",
+    "counts": {
+      "documents": 2,
+      "relations": 4,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

@@ -1,5 +1,6 @@
 "use client";
 
+import { formatSubgenreLabel } from "@/lib/subgenreLabel";
 import {
   Select,
   SelectContent,
@@ -18,14 +19,16 @@ import { ALL_SUBGENRES, useGenreSubgenre } from "@/components/genres/GenreSubgen
 export default function SubgenreSelector({
   label,
   allLabel,
+  genreName,
 }: {
   label: string;
   allLabel: string;
+  genreName: string;
 }) {
   const { subgenres, selected, select } = useGenreSubgenre();
 
   return (
-    <div className="mt-2 w-full max-w-56 px-4">
+    <div className="mt-2 w-fit max-w-full px-4">
       <label className="sr-only" htmlFor="genre-subgenre-selector">
         {label}
       </label>
@@ -33,7 +36,7 @@ export default function SubgenreSelector({
         <SelectTrigger
           id="genre-subgenre-selector"
           aria-label={label}
-          className="relative h-10 w-full justify-center rounded-full border border-white/50 bg-white/95 px-10 text-center text-sm font-semibold text-[#002D62] shadow-sm transition-colors hover:bg-white focus-visible:ring-2 focus-visible:ring-white/80 [&>svg]:absolute [&>svg]:right-4"
+          className="relative h-auto min-h-10 w-full justify-center rounded-full border border-white/50 bg-white/95 px-10 py-2 text-center text-sm font-semibold text-[#002D62] shadow-sm transition-colors hover:bg-white focus-visible:ring-2 focus-visible:ring-white/80 [&>svg]:absolute [&>svg]:right-4"
         >
           <SelectValue />
         </SelectTrigger>
@@ -41,7 +44,7 @@ export default function SubgenreSelector({
           <SelectItem value={ALL_SUBGENRES}>{allLabel}</SelectItem>
           {subgenres.map((option) => (
             <SelectItem key={option.slug} value={option.slug}>
-              {option.name}
+              {formatSubgenreLabel(genreName, option.name)}
             </SelectItem>
           ))}
         </SelectContent>

@@ -29,6 +29,16 @@ function render(document: ResolvedEditorialDocument) {
 }
 
 describe("EditorialDocumentRenderer", () => {
+  it("normalizes stored English aliases without changing wording or the document", () => {
+    const document = resolved({ type: "doc", content: [{ type: "paragraph", content: [
+      { type: "text", text: "Chichi Peralta", marks: [{ type: "link", attrs: { href: "https://www.mangulina.do/en/artists/chichi-peralta#career" } }] },
+    ] }] });
+    const before = JSON.stringify(document);
+    assert.match(render(document), /href="\/artists\/chichi-peralta#career"/);
+    assert.match(render(document), />Chichi Peralta<\/a>/);
+    assert.equal(JSON.stringify(document), before);
+  });
+
   it("renders the canonical empty document as no visible markup", () => {
     assert.equal(render(resolved({ type: "doc", content: [{ type: "paragraph" }] })), "");
   });

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { requireAdminApiRole } from "@/lib/adminApiAuth";
 import {
   fetchTopArtistViews,
+  fetchTopLifetimeArtistViews,
   fetchTopRecordingViews,
   fetchTopGenreViews,
   fetchSearchesWithNoResults,
@@ -24,6 +25,7 @@ export async function GET() {
   try {
     const [
       artistViewsData,
+      lifetimeArtistViews,
       recordingViewsData,
       genreViewsData,
       searchesData,
@@ -34,6 +36,7 @@ export async function GET() {
       searchOutcomeSummary,
     ] = await Promise.all([
       fetchTopArtistViews(20),
+      fetchTopLifetimeArtistViews(20),
       fetchTopRecordingViews(20),
       fetchTopGenreViews(15),
       fetchSearchesWithNoResults(30),
@@ -51,6 +54,7 @@ export async function GET() {
 
     return NextResponse.json({
       artistViewsData,
+      lifetimeArtistViews,
       recordingViewsData,
       genreViewsData,
       searchesData,

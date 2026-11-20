@@ -1,0 +1,23 @@
+{
+  "refresh": {
+    "previous_call": "One targeted refresh already succeeded (HTTP 200, ok true); not repeated."
+  },
+  "pages": [
+    {
+      "path": "/es/artists/carlos-silver",
+      "status": 200,
+      "new_bio": true,
+      "removed_claim_absent": true,
+      "elvis_link": true,
+      "cache": "REVALIDATED"
+    },
+    {
+      "path": "/en/artists/carlos-silver",
+      "status": 200,
+      "new_bio": true,
+      "removed_claim_absent": true,
+      "elvis_link": true,
+      "cache": "MISS"
+    }
+  ]
+}

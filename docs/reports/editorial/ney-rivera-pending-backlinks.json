@@ -1,0 +1,28 @@
+[
+  {
+    "id": "60466f4f-b7cb-439d-beda-2b210a893648",
+    "owner_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+    "locale": "en",
+    "revision": 3,
+    "status": "published",
+    "target_artist_id": "b0146341-4b0d-4ce4-88fb-a63407bf5080",
+    "contexts": [
+      "An early example is «Lucía», with words by Balaguer and music by Nicolás «Machilo» Guzmán. The Archivo General de la Nación preserves a recording sung by Ney Rivera L. and lists both writers. Answering a questionnaire by Diógenes Céspedes, later reproduced by Cándido Gerón, Balaguer recalled his surprise at hearing his poem sung by Eduardo Brito. The question identified a 1929 recording for «RCA»."
+    ],
+    "proposed_change": "Convert the verified Ney Rivera mention to a canonical artistReference when target publication and owner edits are authorized.",
+    "state": "Pending; artist draft and other owner outside creation scope."
+  },
+  {
+    "id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+    "owner_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+    "locale": "es",
+    "revision": 3,
+    "status": "published",
+    "target_artist_id": "b0146341-4b0d-4ce4-88fb-a63407bf5080",
+    "contexts": [
+      "Uno de los ejemplos más tempranos es «Lucía», con versos de Balaguer y música de Nicolás «Machilo» Guzmán. El Archivo General de la Nación conserva una grabación interpretada por Ney Rivera L. y registra ambos nombres como autores. En un cuestionario de Diógenes Céspedes, reproducido posteriormente por Cándido Gerón, Balaguer recordó su sorpresa al escuchar el poema convertido en canción en la voz de Eduardo Brito; la pregunta situaba aquella grabación para «RCA» en 1929."
+    ],
+    "proposed_change": "Convert the verified Ney Rivera mention to a canonical artistReference when target publication and owner edits are authorized.",
+    "state": "Pending; artist draft and other owner outside creation scope."
+  }
+]

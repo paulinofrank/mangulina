@@ -1,0 +1,62 @@
+[
+  {
+    "release_id": "14c0e8ca-5654-4b6b-a2da-34b583e43dbd",
+    "path": "150px/14c0e8ca-5654-4b6b-a2da-34b583e43dbd.webp",
+    "url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/cover-art/150px/14c0e8ca-5654-4b6b-a2da-34b583e43dbd.webp",
+    "sha256": "c46c570ee52b2844f348e4614beb513b1a0c228818a0f5f3fbeb9a1434676120"
+  },
+  {
+    "release_id": "14c0e8ca-5654-4b6b-a2da-34b583e43dbd",
+    "path": "300px/14c0e8ca-5654-4b6b-a2da-34b583e43dbd.webp",
+    "url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/cover-art/300px/14c0e8ca-5654-4b6b-a2da-34b583e43dbd.webp",
+    "sha256": "8f519e401e9fe0668f6a5b39434472ee2ecdc12513df13815d6e3f661484bf00"
+  },
+  {
+    "release_id": "3bd64abd-52e2-456a-9fff-bb57ef0671ce",
+    "path": "150px/3bd64abd-52e2-456a-9fff-bb57ef0671ce.webp",
+    "url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/cover-art/150px/3bd64abd-52e2-456a-9fff-bb57ef0671ce.webp",
+    "sha256": "bf8b3c9ddfaa21ef30536ff42179968d655720ac5887c1e31238e242e64e08fb"
+  },
+  {
+    "release_id": "3bd64abd-52e2-456a-9fff-bb57ef0671ce",
+    "path": "300px/3bd64abd-52e2-456a-9fff-bb57ef0671ce.webp",
+    "url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/cover-art/300px/3bd64abd-52e2-456a-9fff-bb57ef0671ce.webp",
+    "sha256": "15fd0e87ded651e393d4d32a4738602e2709076fe19145e57c00d1183e17638c"
+  },
+  {
+    "release_id": "2793986c-b49e-4985-88d7-c5359af72310",
+    "path": "150px/2793986c-b49e-4985-88d7-c5359af72310.webp",
+    "url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/cover-art/150px/2793986c-b49e-4985-88d7-c5359af72310.webp",
+    "sha256": "cbd0cfa706a05bf4a35fb85666340ac752de4de4923315026b125ad21cad6d53"
+  },
+  {
+    "release_id": "2793986c-b49e-4985-88d7-c5359af72310",
+    "path": "300px/2793986c-b49e-4985-88d7-c5359af72310.webp",
+    "url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/cover-art/300px/2793986c-b49e-4985-88d7-c5359af72310.webp",
+    "sha256": "4525406e3997e7d9c616790fbe234ccf3541586397dc93ca78deb37c98d31bdd"
+  },
+  {
+    "release_id": "f3f8e759-4ed5-4ac4-b477-ee999a6c38b9",
+    "path": "150px/f3f8e759-4ed5-4ac4-b477-ee999a6c38b9.webp",
+    "url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/cover-art/150px/f3f8e759-4ed5-4ac4-b477-ee999a6c38b9.webp",
+    "sha256": "1681f0cc36bb5c8be0dd78113b9158c499665bbda27be73559feac35eecd2575"
+  },
+  {
+    "release_id": "f3f8e759-4ed5-4ac4-b477-ee999a6c38b9",
+    "path": "300px/f3f8e759-4ed5-4ac4-b477-ee999a6c38b9.webp",
+    "url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/cover-art/300px/f3f8e759-4ed5-4ac4-b477-ee999a6c38b9.webp",
+    "sha256": "1b42f32a2d7c22aa4b0118527b409b2afc2dcf600ff62aa68f0ef19cc4143eaa"
+  },
+  {
+    "release_id": "41cfd825-14e2-4217-a802-975ba8ef1acb",
+    "path": "150px/41cfd825-14e2-4217-a802-975ba8ef1acb.webp",
+    "url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/cover-art/150px/41cfd825-14e2-4217-a802-975ba8ef1acb.webp",
+    "sha256": "7165d011b53d1884d8cbbc44dbec39e1b64f19271aaa095bc6243305924f0709"
+  },
+  {
+    "release_id": "41cfd825-14e2-4217-a802-975ba8ef1acb",
+    "path": "300px/41cfd825-14e2-4217-a802-975ba8ef1acb.webp",
+    "url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/cover-art/300px/41cfd825-14e2-4217-a802-975ba8ef1acb.webp",
+    "sha256": "e3a1d0b8dae28545dbd2701997d392a862a524a4a17ac90392822cfc443ee87e"
+  }
+]

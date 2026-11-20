@@ -1,0 +1,45 @@
+{
+  "duplicates": [],
+  "targets": [
+    {
+      "id": "439bbc6c-f06e-447f-a1fa-b2130b885457",
+      "name": "Yailin La Más Viral",
+      "slug": "yailin-la-mas-viral",
+      "status": "published"
+    },
+    {
+      "id": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+      "name": "El Alfa",
+      "slug": "el-alfa",
+      "status": "published"
+    },
+    {
+      "id": "5fb12fee-64fe-4887-b87e-28f28a15c4f9",
+      "name": "Amenazzy",
+      "slug": "amenazzy",
+      "status": "published"
+    }
+  ],
+  "genres": [
+    {
+      "slug": "urban-reggaeton",
+      "name": "Reggaeton"
+    },
+    {
+      "slug": "urban-dembow",
+      "name": "Dembow"
+    },
+    {
+      "slug": "urban-rap-hip-hop",
+      "name": "Rap / Hip Hop"
+    },
+    {
+      "slug": "urban-trap",
+      "name": "Trap"
+    },
+    {
+      "slug": "urban-drill",
+      "name": "Drill"
+    }
+  ]
+}

@@ -1,0 +1,775 @@
+{
+  "date": "2026-10-24",
+  "scope": "Read-only audit of Carlos Silver profile and both biographies; no data changes",
+  "snapshot": {
+    "artists": [
+      {
+        "id": "fa003079-8748-49d5-83f4-35992e98007f",
+        "name": "Carlos Silver",
+        "sort_name": "Silver, Carlos",
+        "type": "solo_artist",
+        "birth_year": null,
+        "death_year": null,
+        "created_at": "2026-10-24T17:13:28.521471+00:00",
+        "views": 1,
+        "wikidata_id": null,
+        "first_name": "Carlos",
+        "middle_name": "Rafael",
+        "last_name": "Silver",
+        "second_last_name": "Encarnación",
+        "stage_name": "Carlos Silver",
+        "date_of_birth": null,
+        "birth_place": "Santo Domingo",
+        "website": null,
+        "youtube": "@carlossilverinternacional303",
+        "facebook": "CarlosSilverInternacional",
+        "instagram": "carlossilverinternacional",
+        "aliases": [
+          "Carlos Rafael Silver Encarnación",
+          "Carlos Silver Encarnación"
+        ],
+        "mbid": null,
+        "occupations": [
+          "composer",
+          "lyricist"
+        ],
+        "instruments": [],
+        "genres": [
+          "balada",
+          "pop"
+        ],
+        "disambiguation": null,
+        "gender": "male",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-24T17:39:12.718244+00:00",
+        "province": "Distrito Nacional",
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "carlos-silver",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "published",
+        "primary_genre": "merengue",
+        "bio_en": "Carlos Silver (born Carlos Rafael Silver Encarnación in Santo Domingo) is a Dominican singer, songwriter, and balladeer recognized for his vocal power, his versatility across romantic ballads and merengue, and his high-profile continuous singing marathons under the national endurance banner «RD No Se Rinde». Beginning his professional recording career in the late 1990s with major Latin labels such as «J&N Records» and «Sony Discos», he has combined commercial studio releases with international appearances on Spanish-language television and unprecedented public endurance singing challenges.\n\n**Early years and recording debut**\n\nRaised in the Villa Juana neighbourhood of Santo Domingo, he displayed an early aptitude for vocal technique and romantic pop balladry, drawing inspiration from leading melodic figures across the Caribbean and Latin America. In the late 1990s, he signed with the prominent tropical imprint «J&N Records», releasing his debut solo studio album, «Una Oportunidad» (1999), distributed in partnership with «Sony Discos».\n\nThe recording was produced and arranged by Elvis Cabrera, featuring seasoned studio instrumentalists and string orchestrations. The album yielded romantic singles including «Tres Palabras», «Si Tú Supieras», and «El Camaleón», alongside an acclaimed interpretation of the standard «Gotas de pena», penned by the prolific Dominican composer Frantoni Santana. The release established his presence on Latin pop radio formats and concert venues across the Dominican Republic.\n\n**International projection and television appearances**\n\nBolstered by his vocal range and expressive delivery, he expanded his reach through the United States Spanish-language broadcast circuit, performing as a musical guest on widely watched television shows including «Sábado Gigante», «Despierta América», and «El Show de Cristina». He shared stages with prominent Latin pop acts and performed at charity galas and tropical festivals, demonstrating technical command in both traditional ballads and up-tempo merengue arrangements.\n\n**Vocal endurance marathons**\n\nDuring the 2010s, he gained wide public attention through his demanding attempts to set a Guinness World Record for the longest continuous singing marathon. His first high-profile undertaking occurred in December 2016 inside a glass enclosure at the Centro Comercial Sambil shopping complex in Santo Domingo, performing continuously for over four consecutive days.\n\nIn April 2019, he staged a second endurance marathon at Parque Eugenio María de Hostos along the Santo Domingo seaside promenade, singing for more than one hundred and six hours. While completing the time and drawing widespread popular support, technical adjudication guidelines regarding pause intervals between songs prevented official world record certification. Undeterred, he mounted a further effort in December 2020 at Plaza Juan Barón under the civic motto «Dominicana Rompe» and «RD No Se Rinde», completing more than one hundred and five hours of continuous singing under medical observation.\n\n**Legacy**\n\nCarlos Silver occupies a distinctive niche in contemporary Dominican music, blending traditional romantic balladry with physical endurance and civic motivation. His rallying phrase «RD No Se Rinde» evolved into a broader national symbol of perseverance and resilience, highlighting the unwavering commitment of a Dominican vocalist to test the limits of his art.",
+        "bio_es": "Carlos Silver (nacido como Carlos Rafael Silver Encarnación en Santo Domingo) es un cantante, compositor y baladista dominicano conocido por su potencia vocal, su versatilidad interpretativa en la balada romántica y el merengue, y por sus notorios maratones de canto ininterrumpido bajo la consigna de superación «RD No Se Rinde». Con una trayectoria discográfica iniciada a finales de la década de 1990 bajo los sellos «J&N Records» y «Sony Discos», ha combinado la producción musical de estudio con presentaciones en la televisión hispana y un persistente empeño por alcanzar marcas mundiales de resistencia vocal.\n\n**Primeros años y debut discográfico**\n\nCriado en el tradicional sector de Villa Juana, en Santo Domingo, desarrolló desde temprana edad inclinaciones por el canto lírico y la balada romántica, influenciado por los grandes exponentes melódicos del Caribe y Latinoamérica. Hacia finales de la década de 1990 formalizó su ingreso al circuito profesional al firmar con la casa discográfica «J&N Records», grabando su álbum debut en solitario titulado «Una Oportunidad» (1999), distribuido en asociación con «Sony Discos».\n\nLa producción discográfica estuvo bajo los arreglos y la dirección musical de Elvis Cabrera, incorporando destacados músicos de sesión y orquestaciones de cuerda. Entre los títulos más destacados de la placa figuraron composiciones románticas como «Tres Palabras», «Si Tú Supieras» y «El Camaleón», además de una elogiada versión del clásico «Gotas de pena», obra del prolífico autor dominicano Frantoni Santana. Esta producción le abrió paso en la radio romántica y en las plazas nocturnas del país.\n\n**Proyección internacional y televisión**\n\nGracias a su capacidad vocal e histriónica, proyectó su carrera en el circuito de televisión hispana de Estados Unidos, presentándose como invitado musical en programas de amplia difusión como «Sábado Gigante», «Despierta América» y «El Show de Cristina». En diversos escenarios internacionales alternó con artistas latinoamericanos de renombre y participó en conciertos benéficos y festivales de música tropical y melódica, demostrando solvencia interpretativa tanto en la balada clásica como en la música festiva dominicana.\n\n**Maratones de resistencia vocal**\n\nA partir de la década de 2010, adquirió una notable notoriedad pública por sus arriesgadas jornadas de canto continuado, con las que buscó implantar un récord Guinness de mayor cantidad de horas cantando de manera ininterrumpida. Su primer reto público se llevó a cabo en diciembre de 2016 en una cabina de cristal instalada en el Centro Comercial Sambil en Santo Domingo, donde permaneció entonando canciones durante más de cuatro jornadas consecutivas.\n\nEn abril de 2019 repitió la hazaña en el Parque Eugenio María de Hostos sobre el Malecón de Santo Domingo, superando las ciento seis horas frente al micrófono. Aunque completó el tiempo previsto y generó una intensa movilización de respaldo popular, tecnicismos reglamentarios relacionados con los descansos e intervalos entre pistas impidieron la homologación oficial del organismo internacional. Lejos de abandonar el propósito, en diciembre de 2020 encabezó una nueva jornada en la Plaza Juan Barón bajo el concepto «Dominicana Rompe» y el lema «RD No Se Rinde», cantando durante más de ciento cinco horas con acompañamiento médico.\n\n**Legado**\n\nCarlos Silver ocupa un lugar singular en el panorama de la música dominicana contemporánea, donde el oficio de la balada y el merengue se entrelazan con la tenacidad física y la vocación de superación cívica. Su consigna «RD No Se Rinde» trascendió la anécdota deportiva y mediática para convertirse en un símbolo de resiliencia nacional, demostrando la capacidad de entrega y entrega escénica de un intérprete arraigado en la tradición vocal de su patria.",
+        "has_image": true,
+        "image_updated_at": "2026-10-24T17:31:25.711+00:00",
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "5V7OlW137sE7MBw8ohPgOK"
+      },
+      {
+        "id": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+        "name": "Frantoni Santana",
+        "slug": "frantoni-santana",
+        "status": "published"
+      },
+      {
+        "id": "031dddae-2d27-4c98-9b44-a8210e39aafd",
+        "name": "Elvis Cabrera",
+        "slug": "elvis-cabrera",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "6fc48735-9fb9-4adb-adaf-d29773f93ab7",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Carlos Silver (born Carlos Rafael Silver Encarnación in Santo Domingo) is a Dominican singer, songwriter, and balladeer recognized for his vocal power, his versatility across romantic ballads and merengue, and his high-profile continuous singing marathons under the national endurance banner «RD No Se Rinde». Beginning his professional recording career in the late 1990s with major Latin labels such as «J&N Records» and «Sony Discos», he has combined commercial studio releases with international appearances on Spanish-language television and unprecedented public endurance singing challenges.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Early years and recording debut",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Raised in the Villa Juana neighbourhood of Santo Domingo, he displayed an early aptitude for vocal technique and romantic pop balladry, drawing inspiration from leading melodic figures across the Caribbean and Latin America. In the late 1990s, he signed with the prominent tropical imprint «J&N Records», releasing his debut solo studio album, «Una Oportunidad» (1999), distributed in partnership with «Sony Discos».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The recording was produced and arranged by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "031dddae-2d27-4c98-9b44-a8210e39aafd",
+                    "displayText": "Elvis Cabrera",
+                    "occurrenceId": "e0dd9c1f-9eae-4c9d-91d9-19001372d281"
+                  }
+                },
+                {
+                  "text": ", featuring seasoned studio instrumentalists and string orchestrations. The album yielded romantic singles including «Tres Palabras», «Si Tú Supieras», and «El Camaleón», alongside an acclaimed interpretation of the standard «Gotas de pena», penned by the prolific Dominican composer ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+                    "displayText": "Frantoni Santana",
+                    "occurrenceId": "71cc25c5-8f47-4e07-863b-e2cd78fd7f44"
+                  }
+                },
+                {
+                  "text": ". The release established his presence on Latin pop radio formats and concert venues across the Dominican Republic.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "International projection and television appearances",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Bolstered by his vocal range and expressive delivery, he expanded his reach through the United States Spanish-language broadcast circuit, performing as a musical guest on widely watched television shows including «Sábado Gigante», «Despierta América», and «El Show de Cristina». He shared stages with prominent Latin pop acts and performed at charity galas and tropical festivals, demonstrating technical command in both traditional ballads and up-tempo merengue arrangements.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Vocal endurance marathons",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "During the 2010s, he gained wide public attention through his demanding attempts to set a Guinness World Record for the longest continuous singing marathon. His first high-profile undertaking occurred in December 2016 inside a glass enclosure at the Centro Comercial Sambil shopping complex in Santo Domingo, performing continuously for over four consecutive days.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In April 2019, he staged a second endurance marathon at Parque Eugenio María de Hostos along the Santo Domingo seaside promenade, singing for more than one hundred and six hours. While completing the time and drawing widespread popular support, technical adjudication guidelines regarding pause intervals between songs prevented official world record certification. Undeterred, he mounted a further effort in December 2020 at Plaza Juan Barón under the civic motto «Dominicana Rompe» and «RD No Se Rinde», completing more than one hundred and five hours of continuous singing under medical observation.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Carlos Silver occupies a distinctive niche in contemporary Dominican music, blending traditional romantic balladry with physical endurance and civic motivation. His rallying phrase «RD No Se Rinde» evolved into a broader national symbol of perseverance and resilience, highlighting the unwavering commitment of a Dominican vocalist to test the limits of his art.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "fa003079-8748-49d5-83f4-35992e98007f",
+        "created_at": "2026-10-24T17:13:28.802101+00:00",
+        "updated_at": "2026-10-24T17:13:28.802101+00:00",
+        "revision": 1
+      },
+      {
+        "id": "fb30abcc-4975-473d-9a5b-73c4faae7177",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Carlos Silver (nacido como Carlos Rafael Silver Encarnación en Santo Domingo) es un cantante, compositor y baladista dominicano conocido por su potencia vocal, su versatilidad interpretativa en la balada romántica y el merengue, y por sus notorios maratones de canto ininterrumpido bajo la consigna de superación «RD No Se Rinde». Con una trayectoria discográfica iniciada a finales de la década de 1990 bajo los sellos «J&N Records» y «Sony Discos», ha combinado la producción musical de estudio con presentaciones en la televisión hispana y un persistente empeño por alcanzar marcas mundiales de resistencia vocal.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Primeros años y debut discográfico",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Criado en el tradicional sector de Villa Juana, en Santo Domingo, desarrolló desde temprana edad inclinaciones por el canto lírico y la balada romántica, influenciado por los grandes exponentes melódicos del Caribe y Latinoamérica. Hacia finales de la década de 1990 formalizó su ingreso al circuito profesional al firmar con la casa discográfica «J&N Records», grabando su álbum debut en solitario titulado «Una Oportunidad» (1999), distribuido en asociación con «Sony Discos».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La producción discográfica estuvo bajo los arreglos y la dirección musical de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "031dddae-2d27-4c98-9b44-a8210e39aafd",
+                    "displayText": "Elvis Cabrera",
+                    "occurrenceId": "1d367a90-8512-496c-9617-8de396976909"
+                  }
+                },
+                {
+                  "text": ", incorporando destacados músicos de sesión y orquestaciones de cuerda. Entre los títulos más destacados de la placa figuraron composiciones románticas como «Tres Palabras», «Si Tú Supieras» y «El Camaleón», además de una elogiada versión del clásico «Gotas de pena», obra del prolífico autor dominicano ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+                    "displayText": "Frantoni Santana",
+                    "occurrenceId": "47ee4e14-9d5b-467f-a3ef-23fcd00e1e41"
+                  }
+                },
+                {
+                  "text": ". Esta producción le abrió paso en la radio romántica y en las plazas nocturnas del país.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Proyección internacional y televisión",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Gracias a su capacidad vocal e histriónica, proyectó su carrera en el circuito de televisión hispana de Estados Unidos, presentándose como invitado musical en programas de amplia difusión como «Sábado Gigante», «Despierta América» y «El Show de Cristina». En diversos escenarios internacionales alternó con artistas latinoamericanos de renombre y participó en conciertos benéficos y festivales de música tropical y melódica, demostrando solvencia interpretativa tanto en la balada clásica como en la música festiva dominicana.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Maratones de resistencia vocal",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A partir de la década de 2010, adquirió una notable notoriedad pública por sus arriesgadas jornadas de canto continuado, con las que buscó implantar un récord Guinness de mayor cantidad de horas cantando de manera ininterrumpida. Su primer reto público se llevó a cabo en diciembre de 2016 en una cabina de cristal instalada en el Centro Comercial Sambil en Santo Domingo, donde permaneció entonando canciones durante más de cuatro jornadas consecutivas.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En abril de 2019 repitió la hazaña en el Parque Eugenio María de Hostos sobre el Malecón de Santo Domingo, superando las ciento seis horas frente al micrófono. Aunque completó el tiempo previsto y generó una intensa movilización de respaldo popular, tecnicismos reglamentarios relacionados con los descansos e intervalos entre pistas impidieron la homologación oficial del organismo internacional. Lejos de abandonar el propósito, en diciembre de 2020 encabezó una nueva jornada en la Plaza Juan Barón bajo el concepto «Dominicana Rompe» y el lema «RD No Se Rinde», cantando durante más de ciento cinco horas con acompañamiento médico.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Carlos Silver ocupa un lugar singular en el panorama de la música dominicana contemporánea, donde el oficio de la balada y el merengue se entrelazan con la tenacidad física y la vocación de superación cívica. Su consigna «RD No Se Rinde» trascendió la anécdota deportiva y mediática para convertirse en un símbolo de resiliencia nacional, demostrando la capacidad de entrega y entrega escénica de un intérprete arraigado en la tradición vocal de su patria.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "fa003079-8748-49d5-83f4-35992e98007f",
+        "created_at": "2026-10-24T17:13:28.707924+00:00",
+        "updated_at": "2026-10-24T17:13:28.707924+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "68c18605-f68c-4a10-97f3-92c945850985",
+        "editorial_document_id": "fb30abcc-4975-473d-9a5b-73c4faae7177",
+        "occurrence_id": "1d367a90-8512-496c-9617-8de396976909",
+        "entity_type": "artist",
+        "target_artist_id": "031dddae-2d27-4c98-9b44-a8210e39aafd",
+        "created_at": "2026-10-24T17:13:28.875941+00:00",
+        "updated_at": "2026-10-24T17:13:28.875941+00:00"
+      },
+      {
+        "id": "f03cd658-cf0e-4aaf-8dda-0b36fb34661b",
+        "editorial_document_id": "6fc48735-9fb9-4adb-adaf-d29773f93ab7",
+        "occurrence_id": "e0dd9c1f-9eae-4c9d-91d9-19001372d281",
+        "entity_type": "artist",
+        "target_artist_id": "031dddae-2d27-4c98-9b44-a8210e39aafd",
+        "created_at": "2026-10-24T17:13:28.875941+00:00",
+        "updated_at": "2026-10-24T17:13:28.875941+00:00"
+      },
+      {
+        "id": "5abf8bc7-4e7c-4999-929f-b441b64ab38e",
+        "editorial_document_id": "fb30abcc-4975-473d-9a5b-73c4faae7177",
+        "occurrence_id": "47ee4e14-9d5b-467f-a3ef-23fcd00e1e41",
+        "entity_type": "artist",
+        "target_artist_id": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+        "created_at": "2026-10-24T17:13:28.875941+00:00",
+        "updated_at": "2026-10-24T17:13:28.875941+00:00"
+      },
+      {
+        "id": "2f578a97-0b0b-44d0-a16f-656ad1b4403b",
+        "editorial_document_id": "6fc48735-9fb9-4adb-adaf-d29773f93ab7",
+        "occurrence_id": "71cc25c5-8f47-4e07-863b-e2cd78fd7f44",
+        "entity_type": "artist",
+        "target_artist_id": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+        "created_at": "2026-10-24T17:13:28.875941+00:00",
+        "updated_at": "2026-10-24T17:13:28.875941+00:00"
+      }
+    ]
+  },
+  "validation": [
+    {
+      "id": "6fc48735-9fb9-4adb-adaf-d29773f93ab7",
+      "locale": "en",
+      "result": {
+        "ok": true,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Carlos Silver (born Carlos Rafael Silver Encarnación in Santo Domingo) is a Dominican singer, songwriter, and balladeer recognized for his vocal power, his versatility across romantic ballads and merengue, and his high-profile continuous singing marathons under the national endurance banner «RD No Se Rinde». Beginning his professional recording career in the late 1990s with major Latin labels such as «J&N Records» and «Sony Discos», he has combined commercial studio releases with international appearances on Spanish-language television and unprecedented public endurance singing challenges."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Early years and recording debut",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Raised in the Villa Juana neighbourhood of Santo Domingo, he displayed an early aptitude for vocal technique and romantic pop balladry, drawing inspiration from leading melodic figures across the Caribbean and Latin America. In the late 1990s, he signed with the prominent tropical imprint «J&N Records», releasing his debut solo studio album, «Una Oportunidad» (1999), distributed in partnership with «Sony Discos»."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The recording was produced and arranged by "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "e0dd9c1f-9eae-4c9d-91d9-19001372d281",
+                    "artistId": "031dddae-2d27-4c98-9b44-a8210e39aafd",
+                    "displayText": "Elvis Cabrera"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ", featuring seasoned studio instrumentalists and string orchestrations. The album yielded romantic singles including «Tres Palabras», «Si Tú Supieras», and «El Camaleón», alongside an acclaimed interpretation of the standard «Gotas de pena», penned by the prolific Dominican composer "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "71cc25c5-8f47-4e07-863b-e2cd78fd7f44",
+                    "artistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+                    "displayText": "Frantoni Santana"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ". The release established his presence on Latin pop radio formats and concert venues across the Dominican Republic."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "International projection and television appearances",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Bolstered by his vocal range and expressive delivery, he expanded his reach through the United States Spanish-language broadcast circuit, performing as a musical guest on widely watched television shows including «Sábado Gigante», «Despierta América», and «El Show de Cristina». He shared stages with prominent Latin pop acts and performed at charity galas and tropical festivals, demonstrating technical command in both traditional ballads and up-tempo merengue arrangements."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Vocal endurance marathons",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "During the 2010s, he gained wide public attention through his demanding attempts to set a Guinness World Record for the longest continuous singing marathon. His first high-profile undertaking occurred in December 2016 inside a glass enclosure at the Centro Comercial Sambil shopping complex in Santo Domingo, performing continuously for over four consecutive days."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "In April 2019, he staged a second endurance marathon at Parque Eugenio María de Hostos along the Santo Domingo seaside promenade, singing for more than one hundred and six hours. While completing the time and drawing widespread popular support, technical adjudication guidelines regarding pause intervals between songs prevented official world record certification. Undeterred, he mounted a further effort in December 2020 at Plaza Juan Barón under the civic motto «Dominicana Rompe» and «RD No Se Rinde», completing more than one hundred and five hours of continuous singing under medical observation."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Legacy",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Carlos Silver occupies a distinctive niche in contemporary Dominican music, blending traditional romantic balladry with physical endurance and civic motivation. His rallying phrase «RD No Se Rinde» evolved into a broader national symbol of perseverance and resilience, highlighting the unwavering commitment of a Dominican vocalist to test the limits of his art."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fb30abcc-4975-473d-9a5b-73c4faae7177",
+      "locale": "es",
+      "result": {
+        "ok": true,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Carlos Silver (nacido como Carlos Rafael Silver Encarnación en Santo Domingo) es un cantante, compositor y baladista dominicano conocido por su potencia vocal, su versatilidad interpretativa en la balada romántica y el merengue, y por sus notorios maratones de canto ininterrumpido bajo la consigna de superación «RD No Se Rinde». Con una trayectoria discográfica iniciada a finales de la década de 1990 bajo los sellos «J&N Records» y «Sony Discos», ha combinado la producción musical de estudio con presentaciones en la televisión hispana y un persistente empeño por alcanzar marcas mundiales de resistencia vocal."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Primeros años y debut discográfico",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Criado en el tradicional sector de Villa Juana, en Santo Domingo, desarrolló desde temprana edad inclinaciones por el canto lírico y la balada romántica, influenciado por los grandes exponentes melódicos del Caribe y Latinoamérica. Hacia finales de la década de 1990 formalizó su ingreso al circuito profesional al firmar con la casa discográfica «J&N Records», grabando su álbum debut en solitario titulado «Una Oportunidad» (1999), distribuido en asociación con «Sony Discos»."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "La producción discográfica estuvo bajo los arreglos y la dirección musical de "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "1d367a90-8512-496c-9617-8de396976909",
+                    "artistId": "031dddae-2d27-4c98-9b44-a8210e39aafd",
+                    "displayText": "Elvis Cabrera"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ", incorporando destacados músicos de sesión y orquestaciones de cuerda. Entre los títulos más destacados de la placa figuraron composiciones románticas como «Tres Palabras», «Si Tú Supieras» y «El Camaleón», además de una elogiada versión del clásico «Gotas de pena», obra del prolífico autor dominicano "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "47ee4e14-9d5b-467f-a3ef-23fcd00e1e41",
+                    "artistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+                    "displayText": "Frantoni Santana"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ". Esta producción le abrió paso en la radio romántica y en las plazas nocturnas del país."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Proyección internacional y televisión",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Gracias a su capacidad vocal e histriónica, proyectó su carrera en el circuito de televisión hispana de Estados Unidos, presentándose como invitado musical en programas de amplia difusión como «Sábado Gigante», «Despierta América» y «El Show de Cristina». En diversos escenarios internacionales alternó con artistas latinoamericanos de renombre y participó en conciertos benéficos y festivales de música tropical y melódica, demostrando solvencia interpretativa tanto en la balada clásica como en la música festiva dominicana."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Maratones de resistencia vocal",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A partir de la década de 2010, adquirió una notable notoriedad pública por sus arriesgadas jornadas de canto continuado, con las que buscó implantar un récord Guinness de mayor cantidad de horas cantando de manera ininterrumpida. Su primer reto público se llevó a cabo en diciembre de 2016 en una cabina de cristal instalada en el Centro Comercial Sambil en Santo Domingo, donde permaneció entonando canciones durante más de cuatro jornadas consecutivas."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "En abril de 2019 repitió la hazaña en el Parque Eugenio María de Hostos sobre el Malecón de Santo Domingo, superando las ciento seis horas frente al micrófono. Aunque completó el tiempo previsto y generó una intensa movilización de respaldo popular, tecnicismos reglamentarios relacionados con los descansos e intervalos entre pistas impidieron la homologación oficial del organismo internacional. Lejos de abandonar el propósito, en diciembre de 2020 encabezó una nueva jornada en la Plaza Juan Barón bajo el concepto «Dominicana Rompe» y el lema «RD No Se Rinde», cantando durante más de ciento cinco horas con acompañamiento médico."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Legado",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Carlos Silver ocupa un lugar singular en el panorama de la música dominicana contemporánea, donde el oficio de la balada y el merengue se entrelazan con la tenacidad física y la vocación de superación cívica. Su consigna «RD No Se Rinde» trascendió la anécdota deportiva y mediática para convertirse en un símbolo de resiliencia nacional, demostrando la capacidad de entrega y entrega escénica de un intérprete arraigado en la tradición vocal de su patria."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "integrity": {
+    "generatedAt": "2026-10-24T22:16:23.246Z",
+    "counts": {
+      "documents": 2,
+      "relations": 4,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 2
+    },
+    "findings": [
+      {
+        "documentId": "6fc48735-9fb9-4adb-adaf-d29773f93ab7",
+        "ownerArtistId": "fa003079-8748-49d5-83f4-35992e98007f",
+        "locale": "en",
+        "code": "legacy_compatibility_mismatch",
+        "severity": "informational"
+      },
+      {
+        "documentId": "fb30abcc-4975-473d-9a5b-73c4faae7177",
+        "ownerArtistId": "fa003079-8748-49d5-83f4-35992e98007f",
+        "locale": "es",
+        "code": "legacy_compatibility_mismatch",
+        "severity": "informational"
+      }
+    ]
+  }
+}

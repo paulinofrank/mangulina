@@ -1,0 +1,928 @@
+{
+  "scope": "Cherito existing published biographies only",
+  "artist_id": "35b79560-87dc-47aa-9f52-dda21faec41f",
+  "artist_slug": "cherito",
+  "authorization": "Pending explicit editorial approval; no database changes applied",
+  "documents": [
+    {
+      "id": "b9ccd7ca-4932-4cc9-9e34-efebd60c6fb7",
+      "locale": "en",
+      "expected_revision": 3,
+      "status": "published",
+      "link_counts": {
+        "The New York Band": 7,
+        "Wilfrido Vargas": 2,
+        "Pavel Núñez": 3,
+        "Divas by Jiménez": 2
+      },
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Cherito was one of the most recognizable voices in Dominican merengue at the end of the twentieth century: a singer, songwriter, arranger and producer, and the figure who turned ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "5ac1d8c7-1c81-4295-ac81-f448c0bb59d9"
+                }
+              },
+              {
+                "text": " into one of the most influential groups of merengue's golden age. His real name was José Bienvenido Jiménez Sosa; \"Cherito\" began as a diminutive of his father's name, Chery.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Origins and Family",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He was born on August 23, 1968, in Santo Domingo, the son of Chery Jiménez, a well-known Dominican artistic entrepreneur and promoter, and Georgina Sosa. He grew up immersed in the musical world his father had built as a driving force behind merengue groups based out of New York, an environment that shaped his artistic calling from childhood.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Early Talent",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "From a young age he showed a strong pull toward music, teaching himself guitar and piano. By 18 he was already writing his own songs — among them «Nadie como tú» — which he performed for his father, who would later fold them into his group's repertoire.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The Birth of The New York Band",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In November 1988, at just 19 years old, Cherito joined ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "09e69158-6166-4cce-b02c-b1c8f490e788"
+                }
+              },
+              {
+                "text": ", the orchestra his father had founded in New York in 1986. He became the group's lead voice, songwriter, arranger and co-producer, and the band stood out for modernizing merengue by fusing it with pop, house and R&B sounds, along with a cosmopolitan stage image that helped carry the genre beyond the Dominican Republic.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Hits and Rise to Prominence",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Under his vocal leadership, ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "439b978b-f542-43b6-a560-25f8bb092177"
+                }
+              },
+              {
+                "text": " recorded some of the most remembered merengue songs of the era: «Si tú no estás» (recorded for Christmas 1987 and one of the group's biggest hits), «Nadie como tú», «Dame vida», «Si tú eres mi hombre», «Dancing Mood», «Amada mía» and «Colé». With Cherito at the front, the group sold more than 2.5 million records across markets including Puerto Rico, the United States, Mexico, Colombia, Venezuela, Spain and the Dominican Republic, and performed on stages such as Madison Square Garden.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Departure and Life as a Soloist and Producer",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 1995, Cherito stepped away from the group to launch a solo and production career under the artistic name \"Chery X,\" releasing the albums Cherito (1992), Que Tentación (Sony, 1995) — which produced the single «Qué tentación» — the compilation The Best of Cherito XXX: Love & Kisses (1996) and Tu Amor (BMG, 1997). ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "cc5dcbd2-7a83-4cba-bab9-97e00598ded4"
+                }
+              },
+              {
+                "text": " carried on without him until it formally disbanded in 1998.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In the years that followed, he focused mainly on songwriting, production and arranging, working with artists such as Celia Cruz, ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+                  "displayText": "Wilfrido Vargas",
+                  "occurrenceId": "c2065d4a-7c00-44f7-bc15-b4671a49d5b0"
+                }
+              },
+              {
+                "text": " and Olga Tañón, collaborating with producer Sergio George, and serving as an exclusive composer for Warner Music Group.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Comeback and the 2016 Reunion",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2007 he returned to the stage as a soloist with a merengue project with a more urban sound, which produced his biggest hit of that era, «Ella quiere un pedazo», along with singles such as «Vivir mi vida», «El protagonista», «Sé que te perdí» (with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+                  "displayText": "Pavel Núñez",
+                  "occurrenceId": "84181fa9-9baf-4dbf-9fd9-bcbd1acfaa5f"
+                }
+              },
+              {
+                "text": ") and «Déjalo pa'l lunes».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2015 he took part in a tribute performance for ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "3e5d9012-9480-4a57-b2cd-32fa77d26bff"
+                }
+              },
+              {
+                "text": " at the Soberano Awards, and in 2016, after receiving the Merit award, the original lineup formally reunited and launched the «Re:Encuentro World Tour», which was met with great enthusiasm from audiences. Reflecting on that moment, Cherito said: \"He wasn't wrong, and we're reaping what we sowed,\" referring to his father's vision in founding the band.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Passing",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Cherito died suddenly on July 24, 2019, at age 50, after suffering a heart attack in his sleep at his home in Santo Domingo. He was survived by his wife, Aleyda, and his children Gabriel and Lía, as well as a son from a previous relationship.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Discography",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "As \"Chery X\" (solo period, 1990s): Cherito (1992), Que Tentación (Sony, 1995), The Best of Cherito XXX: Love & Kisses (compilation, 1996) and Tu Amor (BMG, 1997).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "As \"Cherito\" (solo comeback, 2010s): «Ella quiere un pedazo» (2013, re-released 2015), «Vivir mi vida» (2013), «El protagonista» (2013), «Si tú eres mi hombre» (with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "7bce6828-8313-4158-95ee-bd4e18ecca12",
+                  "displayText": "Divas by Jiménez",
+                  "occurrenceId": "8b3a2d9a-554f-4a9c-a154-48d40e337e2f"
+                }
+              },
+              {
+                "text": ", 2014), «Sé que te perdí» (with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+                  "displayText": "Pavel Núñez",
+                  "occurrenceId": "b72d8994-47c5-4e59-b2fc-9e45498e4c8c"
+                }
+              },
+              {
+                "text": ", 2014) and «Déjalo pa'l lunes» (2016).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "With ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "1cca0774-045c-4f01-8a9e-cc2ac04f048e"
+                }
+              },
+              {
+                "text": " (selected hits, 1988–1995): «Si tú no estás», «Nadie como tú», «Dame vida», «Si tú eres mi hombre», «Dancing Mood», «Amada mía» and «Colé».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Collaborations",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "As a producer, arranger and composer he worked with Celia Cruz, ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+                  "displayText": "Wilfrido Vargas",
+                  "occurrenceId": "e0a4517c-f00b-43eb-bcfa-37f469dffde8"
+                }
+              },
+              {
+                "text": ", Olga Tañón and producer Sergio George, and collaborated on singles with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+                  "displayText": "Pavel Núñez",
+                  "occurrenceId": "86d9490b-f30d-4186-8854-2dfacea9a2b2"
+                }
+              },
+              {
+                "text": " and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "7bce6828-8313-4158-95ee-bd4e18ecca12",
+                  "displayText": "Divas by Jiménez",
+                  "occurrenceId": "6214135b-78f0-485f-b160-6902a13aaa56"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Cherito is remembered as the lead voice of ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "00e3ebd7-dfc1-4a16-a142-8826c0f91700"
+                }
+              },
+              {
+                "text": ", one of the most influential merengue groups of the 1980s and 90s, and as the songwriter behind tracks that became generational classics of the genre. His work helped carry Dominican merengue to international stages and markets, and he continues to be remembered as one of the defining voices of merengue's golden age.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "94b52ffb-0534-473a-9f5d-642ba5396007",
+      "locale": "es",
+      "expected_revision": 3,
+      "status": "published",
+      "link_counts": {
+        "The New York Band": 7,
+        "Wilfrido Vargas": 2,
+        "Pavel Núñez": 3,
+        "Divas by Jiménez": 2
+      },
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Cherito fue una de las voces más reconocibles del merengue dominicano de finales del siglo XX: cantante, compositor, arreglista y productor, y la figura que llevó a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "f2e66721-f675-4e68-8a1a-72e17b0b19b2"
+                }
+              },
+              {
+                "text": " a convertirse en una de las agrupaciones más influyentes de la llamada época dorada del merengue. Su nombre real era José Bienvenido Jiménez Sosa; \"Cherito\" nació como diminutivo del nombre de su padre, Chery.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Orígenes y Familia",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Nació el 23 de agosto de 1968 en Santo Domingo, hijo de Chery Jiménez, reconocido empresario y promotor artístico dominicano, y de Georgina Sosa. Creció inmerso en el ambiente musical que su padre había cultivado como impulsor de agrupaciones merengueras desde Nueva York, lo que marcó de forma decisiva su vocación artística desde la infancia.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Talento Precoz",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Desde niño mostró una fuerte inclinación por la música: aprendió guitarra y piano de manera autodidacta. A los 18 años ya componía canciones propias —entre ellas «Nadie como tú»—, que interpretaba para su padre, quien más tarde las convertiría en parte del repertorio de su agrupación.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El Nacimiento de The New York Band",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En noviembre de 1988, con apenas 19 años, Cherito se integró a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "8c2f32d9-fee9-4906-b585-ce6b505117c7"
+                }
+              },
+              {
+                "text": ", la orquesta que su padre había fundado en Nueva York en 1986. Se convirtió en la voz líder, compositor, arreglista y coproductor de la agrupación, que se distinguió por modernizar el merengue fusionándolo con sonidos de pop, house y R&B, además de una imagen escénica cosmopolita que ayudó a proyectar el género fuera de la República Dominicana.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Éxitos y Consolidación",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Bajo su liderazgo vocal, ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "21996ce9-ac02-4a1d-8662-0bd0739429c4"
+                }
+              },
+              {
+                "text": " grabó algunos de los temas más recordados del merengue de esa época: «Si tú no estás» (grabado para la Navidad de 1987 y uno de sus mayores éxitos), «Nadie como tú», «Dame vida», «Si tú eres mi hombre», «Dancing Mood», «Amada mía» y «Colé». Con Cherito al frente, la agrupación llegó a vender más de 2.5 millones de discos en mercados como Puerto Rico, Estados Unidos, México, Colombia, Venezuela, España y República Dominicana, y se presentó en escenarios como el Madison Square Garden.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La Partida y la Etapa como Solista y Productor",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 1995, Cherito se apartó de la agrupación para iniciar una carrera como solista y productor bajo el nombre artístico \"Chery X\", con la que lanzó los álbumes Cherito (1992), Que Tentación (Sony, 1995), de donde salió el sencillo «Qué tentación», la recopilación The Best of Cherito XXX: Love & Kisses (1996) y Tu Amor (BMG, 1997). ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "8d176d23-2c2c-4857-ba3e-bd8525b02c5c"
+                }
+              },
+              {
+                "text": " continuó activa sin él hasta su separación definitiva en 1998.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En los años siguientes se dedicó principalmente a la composición, la producción y los arreglos musicales, trabajando con artistas como Celia Cruz, ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+                  "displayText": "Wilfrido Vargas",
+                  "occurrenceId": "47d1f92a-1b30-4c56-b2c2-89d9df14f245"
+                }
+              },
+              {
+                "text": " y Olga Tañón, colaborando con el productor Sergio George y desempeñándose como compositor exclusivo para Warner Music Group.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El Regreso y el Reencuentro de 2016",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2007 retomó los escenarios como solista con un proyecto de merengue de sonido más urbano, del que se desprendió su mayor éxito de esta etapa, «Ella quiere un pedazo», junto a sencillos como «Vivir mi vida», «El protagonista», «Sé que te perdí» (con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+                  "displayText": "Pavel Núñez",
+                  "occurrenceId": "05c472fd-19c4-49dc-83db-c64f8feb95e3"
+                }
+              },
+              {
+                "text": ") y «Déjalo pa'l lunes».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2015 participó en una presentación homenaje a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "9d16d73e-70ad-4bae-a6d0-f87e64cbcc00"
+                }
+              },
+              {
+                "text": " en los Premios Soberano, y en 2016, tras recibir el galardón al Mérito, la agrupación original se reencontró formalmente e inició el «Re:Encuentro World Tour», recibido con gran entusiasmo por el público. Sobre ese momento, Cherito reflexionó: \"No se equivocó y estamos cosechando lo que sembramos\", en referencia a la visión de su padre al fundar la banda.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Fallecimiento",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Cherito falleció de forma repentina el 24 de julio de 2019, a los 50 años, tras sufrir un infarto mientras dormía en su hogar de Santo Domingo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Discografía",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Como \"Chery X\" (etapa solista, años 90): Cherito (1992), Que Tentación (Sony, 1995), The Best of Cherito XXX: Love & Kisses (recopilación, 1996) y Tu Amor (BMG, 1997).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Como \"Cherito\" (regreso solista, años 2010): «Ella quiere un pedazo» (2013, reeditado en 2015), «Vivir mi vida» (2013), «El protagonista» (2013), «Si tú eres mi hombre» (con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "7bce6828-8313-4158-95ee-bd4e18ecca12",
+                  "displayText": "Divas by Jiménez",
+                  "occurrenceId": "f469b610-a2f3-4a7a-8cd0-df672adfaa47"
+                }
+              },
+              {
+                "text": ", 2014), «Sé que te perdí» (con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+                  "displayText": "Pavel Núñez",
+                  "occurrenceId": "04e33060-d3fe-4198-9212-f61f83f2e86a"
+                }
+              },
+              {
+                "text": ", 2014) y «Déjalo pa'l lunes» (2016).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "812dc22e-d053-4f29-abd1-47eca924df62"
+                }
+              },
+              {
+                "text": " (selección de éxitos, 1988–1995): «Si tú no estás», «Nadie como tú», «Dame vida», «Si tú eres mi hombre», «Dancing Mood», «Amada mía» y «Colé».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Colaboraciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Como productor, arreglista y compositor trabajó con Celia Cruz, ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+                  "displayText": "Wilfrido Vargas",
+                  "occurrenceId": "de19c37a-c40c-414c-bfaf-073de34b83b7"
+                }
+              },
+              {
+                "text": ", Olga Tañón y el productor Sergio George, además de colaborar en sencillos con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+                  "displayText": "Pavel Núñez",
+                  "occurrenceId": "5915c73b-a568-44a6-ad11-06f3395d48bb"
+                }
+              },
+              {
+                "text": " y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "7bce6828-8313-4158-95ee-bd4e18ecca12",
+                  "displayText": "Divas by Jiménez",
+                  "occurrenceId": "c63eeee8-99fd-4dd7-aa53-f09689a8d957"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Cherito es recordado como la voz líder de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2dde2335-84c3-49ba-be43-f3c3ae717d87",
+                  "displayText": "The New York Band",
+                  "occurrenceId": "28a06364-e27e-452d-ac6e-a80060ac8833"
+                }
+              },
+              {
+                "text": ", una de las agrupaciones más influyentes del merengue de los años 80 y 90, y como compositor de temas que se convirtieron en clásicos generacionales del género. Su trabajo ayudó a llevar el merengue dominicano a escenarios y mercados internacionales, y hoy sigue siendo evocado como una de las voces más emblemáticas de la época dorada del merengue.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

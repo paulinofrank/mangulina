@@ -33,9 +33,8 @@ export function getArtistProfileRevalidationPaths(slug: string) {
  * The directory tag is read by the artist directories, the province and role
  * listings and the paginated pages behind them — never by a profile page. So
  * clearing it rebuilds a few hundred listing URLs and leaves every profile
- * cached, which is exactly what a newly published artist needs: the profile
- * itself has never been cached, so it renders fresh on first request and costs
- * nothing to "revalidate".
+ * cached. Publication must also invalidate the named profile: its public URL
+ * may already hold a cached 404 from a request made while the artist was draft.
  */
 export function revalidateArtistDirectories() {
   revalidateTag(PUBLIC_ARTIST_DIRECTORY_CACHE_TAG, { expire: 0 });
@@ -71,12 +70,15 @@ export function revalidateAllArtistProfiles() {
  * targeted, so callers that only hold a slug should resolve the id first —
  * every caller in this repo now does.
  */
-export function revalidateArtistProfile(slug: string, artistId?: string | null) {
+export function revalidateArtistProfile(slug: string, artistId?: string | null, previousSlugs: readonly string[] = []) {
   if (artistId) invalidateArtistPortfolio(artistId);
   revalidateArtistDirectories();
 
-  for (const path of getArtistProfileRevalidationPaths(slug)) {
-    revalidatePath(path, "page");
+  const paths = new Set([slug, ...previousSlugs].flatMap((value) => [...getArtistProfileRevalidationPaths(value)]));
+  for (const path of paths) {
+    // Concrete URLs need their pathname tag, without the route-pattern suffix.
+    // This also removes a cached 404 created before the artist was published.
+    revalidatePath(path);
   }
 }
 
@@ -86,6 +88,6 @@ export function revalidateArtistProfile(slug: string, artistId?: string | null) 
  * It no longer sweeps every profile — that behaviour moved to
  * revalidateAllArtistProfiles, which callers must now ask for explicitly.
  */
-export function revalidateArtistProfilePaths(slug: string, artistId?: string | null) {
-  revalidateArtistProfile(slug, artistId);
+export function revalidateArtistProfilePaths(slug: string, artistId?: string | null, previousSlugs: readonly string[] = []) {
+  revalidateArtistProfile(slug, artistId, previousSlugs);
 }

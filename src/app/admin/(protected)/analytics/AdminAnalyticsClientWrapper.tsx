@@ -5,6 +5,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import * as Tabs from "@radix-ui/react-tabs";
 import { TrendChart } from "@/components/analytics/TrendChart";
 import { ExportButton } from "@/components/analytics/ExportButton";
 import { AnalyticsErrorBoundary } from "@/components/analytics/AnalyticsErrorBoundary";
@@ -16,19 +17,26 @@ function formatPlatform(platform: string) {
     .replace(/\b\w/g, (character) => character.toUpperCase());
 }
 
+const artistViewTabClass = "rounded-t-md border border-gray-200 bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 hover:text-[#002D62] focus-visible:outline-2 focus-visible:outline-[#002D62] data-[state=active]:border-b-[#002D62] data-[state=active]:bg-white data-[state=active]:text-[#002D62]";
+
 function ReportCard({
   title,
   description,
+  actions,
   children,
 }: {
   title: string;
   description?: string;
+  actions?: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (
     <section className="rounded-xl border border-black/5 bg-white p-5 shadow-sm sm:p-6">
       <div className="mb-5">
-        <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">{title}</h2>
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#CE1126]">{title}</h2>
+          {actions}
+        </div>
         {description && <p className="mt-2 text-xs text-gray-500">{description}</p>}
       </div>
       {children}
@@ -38,6 +46,31 @@ function ReportCard({
 
 function EmptyRow({ message }: { message: string }) {
   return <p className="py-5 text-center text-sm text-gray-500">{message}</p>;
+}
+
+function ArtistViewRows({ rows }: {
+  rows: Array<{ id: string; artist?: { name: string; slug: string }; views: number }>;
+}) {
+  const t = useTranslations("admin.analytics");
+  if (!rows.length) return <EmptyRow message={t("noActivityYet")} />;
+
+  return (
+    <div className="divide-y divide-gray-100">
+      {rows.map(({ id, artist, views }) => (
+        <div key={id} className="flex items-center justify-between gap-4 py-1.5">
+          {artist ? (
+            <Link href={`/artists/${artist.slug}`}
+              className="min-w-0 truncate text-sm font-medium text-[#002D62] hover:text-[#CE1126]">
+              {artist.name}
+            </Link>
+          ) : (
+            <span className="truncate text-sm text-gray-500">{t("labels.unknownArtist")}</span>
+          )}
+          <span className="shrink-0 text-sm tabular-nums text-gray-600">{views.toLocaleString()}</span>
+        </div>
+      ))}
+    </div>
+  );
 }
 
 function SectionHeading({ title, description }: { title: string; description?: string }) {
@@ -63,6 +96,7 @@ function ComingSoonCard({ title }: { title: string }) {
 
 interface AnalyticsData {
   artistViewsData: Array<{ artist_id: string; views_7d: number; views_30d: number }>;
+  lifetimeArtistViews: Array<{ id: string; name: string; slug: string; views: number }>;
   recordingViewsData: Array<{ recording_id: string; views_7d: number; views_30d: number }>;
   genreViewsData: Array<{ genre_slug: string; views_7d: number; views_30d: number }>;
   searchesData: Array<{ query: string; search_count: number; last_searched_at: string }>;
@@ -260,41 +294,33 @@ export default function AdminAnalyticsClientWrapper({
           </div>
 
           <div className="mt-6 grid gap-6 lg:grid-cols-2">
+            <Tabs.Root defaultValue="recent">
             <ReportCard
               title={t("reports.topArtistViews.title")}
               description={t("reports.topArtistViews.description")}
+              actions={
+                <Tabs.List className="ml-auto flex shrink-0 gap-1" aria-label={t("reports.topArtistViews.title")}>
+                  <Tabs.Trigger className={artistViewTabClass} value="recent">{t("reports.topArtistViews.recent")}</Tabs.Trigger>
+                  <Tabs.Trigger className={artistViewTabClass} value="lifetime">{t("reports.topArtistViews.lifetime")}</Tabs.Trigger>
+                </Tabs.List>
+              }
             >
-              {data.artistViewsData.length === 0 ? (
-                <EmptyRow message={t("noActivityYet")} />
-              ) : (
-                <div className="divide-y divide-gray-100">
-                  {data.artistViewsData.map((row) => {
-                    const artist = artistMap.get(row.artist_id);
-                    const views = normalizeSevenDayViews(row.views_7d);
-                    return (
-                      <div
-                        key={row.artist_id}
-                        className="flex items-center justify-between gap-4 py-1.5"
-                      >
-                        {artist ? (
-                          <Link
-                            href={`/artists/${artist.slug}`}
-                            className="min-w-0 truncate text-sm font-medium text-[#002D62] hover:text-[#CE1126]"
-                          >
-                            {artist.name}
-                          </Link>
-                        ) : (
-                          <span className="truncate text-sm text-gray-500">{t("labels.unknownArtist")}</span>
-                        )}
-                        <span className="shrink-0 text-sm tabular-nums text-gray-600">
-                          {views.toLocaleString()}
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
+                <Tabs.Content value="recent">
+                  <ArtistViewRows rows={data.artistViewsData.map((row) => ({
+                    id: row.artist_id,
+                    artist: artistMap.get(row.artist_id),
+                    views: normalizeSevenDayViews(row.views_7d),
+                  }))} />
+                </Tabs.Content>
+                <Tabs.Content value="lifetime">
+                  <ArtistViewRows rows={data.lifetimeArtistViews.map((artist) => ({
+                    id: artist.id,
+                    artist,
+                    views: artist.views,
+                  }))} />
+                </Tabs.Content>
             </ReportCard>
+            </Tabs.Root>
 
             <ReportCard
               title={t("reports.topRecordingViews.title")}

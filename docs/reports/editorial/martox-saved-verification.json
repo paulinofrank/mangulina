@@ -1,0 +1,551 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+        "name": "Martox",
+        "sort_name": "Martox",
+        "type": "duo",
+        "birth_year": null,
+        "death_year": null,
+        "created_at": "2026-10-23T15:08:44.20082+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": null,
+        "middle_name": null,
+        "last_name": null,
+        "second_last_name": null,
+        "stage_name": null,
+        "date_of_birth": null,
+        "birth_place": "Santiago de los Caballeros",
+        "website": "https://martoxmusic.com/",
+        "youtube": "@Martoxmusic",
+        "facebook": "martoxofficial",
+        "instagram": "martoxmusic",
+        "aliases": [],
+        "mbid": null,
+        "occupations": [
+          "producer",
+          "songwriter"
+        ],
+        "instruments": [],
+        "genres": [
+          "electronic",
+          "bachata",
+          "merengue",
+          "bolero"
+        ],
+        "disambiguation": "Dominican Caribbean pop duo from Santiago de los Caballeros",
+        "gender": null,
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-23T15:08:44.20082+00:00",
+        "province": "Santiago",
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "martox",
+        "primary_role": "musician",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "fusion",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "2kt9iXyIMY6yv45SapEw5r"
+      },
+      {
+        "id": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+        "name": "Solo Fernández",
+        "slug": "solo-fernandez",
+        "status": "published"
+      },
+      {
+        "id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+        "name": "El Prodigio",
+        "slug": "el-prodigio",
+        "status": "published"
+      },
+      {
+        "id": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+        "name": "Lena Dardelet",
+        "slug": "lena-dardelet",
+        "status": "published"
+      },
+      {
+        "id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "name": "Juan Luis Guerra",
+        "slug": "juan-luis-guerra",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "f08793b3-66e9-42a0-b8db-a9ca4e059f44",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Martox is a Dominican Caribbean pop duo from Santiago de los Caballeros, comprising vocalist Juan Miguel Martínez and producer Eduardo Baldera. Their music connects R&B and electronics with tropical rhythms and Dominican songwriting traditions. Friends since childhood, they have developed a project in which singing, composition and production complement one another.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Early songs and covers",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Their early work was linked to Santiago's «MITEL DICO» collective, including appearances on projects by Diego Raposo and «La Ñapa», alongside covers shared on SoundCloud. In February 2019 they released their reinterpretation of «Amapola» by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                    "displayText": "Juan Luis Guerra",
+                    "occurrenceId": "e2d28a93-d80c-46cc-80bc-c2e759cf21bb"
+                  }
+                },
+                {
+                  "text": ", who shared it on his social accounts, bringing the duo wider exposure. They also released their first EP, «Canciones Que Puedes Usar En Mi Contra», that year, exploring R&B, ballads and electronic music.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "From «Un Bolero» to «Baila!»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In 2021 they released «Un Bolero» and «Se Siente Diferente». Their second EP moved toward synth-pop, funk and disco, featuring jonás on «Mucho Mejor» and Gian Rojas of ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+                    "displayText": "Solo Fernández",
+                    "occurrenceId": "13f83921-b860-4583-9a63-943da1f140d6"
+                  }
+                },
+                {
+                  "text": " on «Pausa». Its five songs were accompanied by interconnected videos directed by Jorge Guillén and Víctor Cantisano. The 2023 EP «Baila!» continued their exploration of dance music.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A Caribbean musical language",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In July 2024 they released «Que Bien Te Queda El Caribe», a five-track EP containing «Canela» and «Y Qué» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+                    "displayText": "Lena Dardelet",
+                    "occurrenceId": "9486eee8-fa2c-4a0c-ba51-17585d8fe6dc"
+                  }
+                },
+                {
+                  "text": ", as well as collaborations with NIKÓLA and GioBulla. In 2025 they presented «Un Pambiche», featuring ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                    "displayText": "El Prodigio",
+                    "occurrenceId": "e11a1c7c-aeba-4b3d-979a-72f66e09df49"
+                  }
+                },
+                {
+                  "text": " on accordion. The recording brought their contemporary production approach into merengue and was accompanied by a video directed by Víctor Cantisano.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Caracol» and wider collaborations",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A seven-song first installment of «Caracol» appeared in September 2025; an expanded version followed in May 2026, presented as their first studio album. Its repertoire brings bachata, merengue and bolero together with R&B and electronic production. Their 2026 collaborations included «TU SUPITE» with Leslie Grace and «Paraíso» with La Cassandra. That year YouTube Music named Martox among the participants in «Foundry Rising», its program supporting artists at an earlier stage of their development on the platform.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Martox contributes to the development of Dominican pop through its singer-and-producer partnership. Their work connects Santiago's independent scene with a Caribbean repertoire open to electronic experimentation and exchanges with other performers.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+        "created_at": "2026-10-23T15:08:44.510566+00:00",
+        "updated_at": "2026-10-23T15:08:44.510566+00:00",
+        "revision": 1
+      },
+      {
+        "id": "25a4ff4d-e073-4976-9e27-77891310febe",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Martox es un dúo dominicano de pop caribeño originario de Santiago de los Caballeros, integrado por el vocalista Juan Miguel Martínez y el productor Eduardo Baldera. Su música vincula el R&B y la electrónica con ritmos tropicales y formas de la canción dominicana. Amigos desde la infancia, han desarrollado un proyecto en el que la interpretación vocal, la composición y la producción funcionan de manera complementaria.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Primeras canciones y versiones",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Sus primeros pasos estuvieron ligados al colectivo santiaguero «MITEL DICO», con colaboraciones en trabajos de Diego Raposo y «La Ñapa», además de versiones compartidas en SoundCloud. En febrero de 2019 publicaron su reinterpretación de «Amapola», de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                    "displayText": "Juan Luis Guerra",
+                    "occurrenceId": "bf769332-30cd-429e-9d4c-aae3cf4cbcd0"
+                  }
+                },
+                {
+                  "text": ", quien la compartió en sus redes. Ese respaldo amplió la visibilidad del dúo. Ese año también presentaron su primer EP, «Canciones Que Puedes Usar En Mi Contra», que exploraba el R&B, la balada y la electrónica.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "De «Un Bolero» a «Baila!»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 2021 publicaron «Un Bolero» y «Se Siente Diferente». Este segundo EP desplazó su sonido hacia el synth-pop, el funk y el disco, con «Mucho Mejor», junto a jonás, y «Pausa», con Gian Rojas, integrante de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+                    "displayText": "Solo Fernández",
+                    "occurrenceId": "ba3f3c7d-d03c-404b-a534-30f4d25224e7"
+                  }
+                },
+                {
+                  "text": ". Sus cinco canciones tuvieron videos conectados entre sí, dirigidos por Jorge Guillén y Víctor Cantisano. En 2023 llegó el EP «Baila!», que prolongó su exploración de la música de baile.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El Caribe como lenguaje",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En julio de 2024 publicaron «Que Bien Te Queda El Caribe», un EP de cinco temas que incluye «Canela» y «Y Qué», con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+                    "displayText": "Lena Dardelet",
+                    "occurrenceId": "f1b69823-1e84-4464-a13c-b8bc8efb1428"
+                  }
+                },
+                {
+                  "text": ", además de colaboraciones con NIKÓLA y GioBulla. En 2025 presentaron «Un Pambiche», con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                    "displayText": "El Prodigio",
+                    "occurrenceId": "56fe9e57-7110-4b05-90e0-d5d60f5ac996"
+                  }
+                },
+                {
+                  "text": " en el acordeón. La grabación acercó su producción contemporánea al merengue y fue acompañada por un videoclip dirigido por Víctor Cantisano.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Caracol» y expansión",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En septiembre de 2025 apareció una primera entrega de «Caracol», de siete canciones; en mayo de 2026 publicaron una versión ampliada del proyecto, presentado como su primer álbum de estudio. Su repertorio incorpora bachata, merengue y bolero junto a R&B y recursos electrónicos. En 2026 colaboraron con Leslie Grace en «TU SUPITE» y con La Cassandra en «Paraíso». Ese mismo año YouTube Music anunció a Martox entre los participantes de «Foundry Rising», su programa de apoyo a artistas en una etapa temprana de desarrollo en la plataforma.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Martox participa en la renovación del pop dominicano desde una formación de cantante y productor. Su recorrido conecta la escena independiente de Santiago con un repertorio caribeño abierto a la experimentación electrónica y al trabajo con otros intérpretes.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+        "created_at": "2026-10-23T15:08:44.31439+00:00",
+        "updated_at": "2026-10-23T15:08:44.31439+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "bc5a574a-bf11-4c54-9028-9721bdf57e97",
+        "editorial_document_id": "25a4ff4d-e073-4976-9e27-77891310febe",
+        "occurrence_id": "bf769332-30cd-429e-9d4c-aae3cf4cbcd0",
+        "entity_type": "artist",
+        "target_artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "created_at": "2026-10-23T15:08:44.31439+00:00",
+        "updated_at": "2026-10-23T15:08:44.31439+00:00"
+      },
+      {
+        "id": "da6ceb84-7578-4f3b-af27-f6483360dbcd",
+        "editorial_document_id": "25a4ff4d-e073-4976-9e27-77891310febe",
+        "occurrence_id": "ba3f3c7d-d03c-404b-a534-30f4d25224e7",
+        "entity_type": "artist",
+        "target_artist_id": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+        "created_at": "2026-10-23T15:08:44.31439+00:00",
+        "updated_at": "2026-10-23T15:08:44.31439+00:00"
+      },
+      {
+        "id": "c04294e4-fa29-428f-92e2-54bd156e6d23",
+        "editorial_document_id": "25a4ff4d-e073-4976-9e27-77891310febe",
+        "occurrence_id": "f1b69823-1e84-4464-a13c-b8bc8efb1428",
+        "entity_type": "artist",
+        "target_artist_id": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+        "created_at": "2026-10-23T15:08:44.31439+00:00",
+        "updated_at": "2026-10-23T15:08:44.31439+00:00"
+      },
+      {
+        "id": "6c79a6a5-aa63-4f01-8803-4f61162db5cc",
+        "editorial_document_id": "25a4ff4d-e073-4976-9e27-77891310febe",
+        "occurrence_id": "56fe9e57-7110-4b05-90e0-d5d60f5ac996",
+        "entity_type": "artist",
+        "target_artist_id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+        "created_at": "2026-10-23T15:08:44.31439+00:00",
+        "updated_at": "2026-10-23T15:08:44.31439+00:00"
+      },
+      {
+        "id": "644e2800-e147-4a1e-973a-a17ea944d7ec",
+        "editorial_document_id": "f08793b3-66e9-42a0-b8db-a9ca4e059f44",
+        "occurrence_id": "e2d28a93-d80c-46cc-80bc-c2e759cf21bb",
+        "entity_type": "artist",
+        "target_artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "created_at": "2026-10-23T15:08:44.510566+00:00",
+        "updated_at": "2026-10-23T15:08:44.510566+00:00"
+      },
+      {
+        "id": "3851124d-63a4-4bc9-a0d4-9209069ae7c3",
+        "editorial_document_id": "f08793b3-66e9-42a0-b8db-a9ca4e059f44",
+        "occurrence_id": "13f83921-b860-4583-9a63-943da1f140d6",
+        "entity_type": "artist",
+        "target_artist_id": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+        "created_at": "2026-10-23T15:08:44.510566+00:00",
+        "updated_at": "2026-10-23T15:08:44.510566+00:00"
+      },
+      {
+        "id": "ea075ea6-b177-4912-abe9-502dc5ec4455",
+        "editorial_document_id": "f08793b3-66e9-42a0-b8db-a9ca4e059f44",
+        "occurrence_id": "9486eee8-fa2c-4a0c-ba51-17585d8fe6dc",
+        "entity_type": "artist",
+        "target_artist_id": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+        "created_at": "2026-10-23T15:08:44.510566+00:00",
+        "updated_at": "2026-10-23T15:08:44.510566+00:00"
+      },
+      {
+        "id": "c35f2bc5-b8c8-4fae-a197-d216cd2258ad",
+        "editorial_document_id": "f08793b3-66e9-42a0-b8db-a9ca4e059f44",
+        "occurrence_id": "e11a1c7c-aeba-4b3d-979a-72f66e09df49",
+        "entity_type": "artist",
+        "target_artist_id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+        "created_at": "2026-10-23T15:08:44.510566+00:00",
+        "updated_at": "2026-10-23T15:08:44.510566+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-23T15:08:52.266Z",
+    "counts": {
+      "documents": 2,
+      "relations": 8,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

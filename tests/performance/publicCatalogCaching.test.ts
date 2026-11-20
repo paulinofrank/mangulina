@@ -75,7 +75,7 @@ test("genre data caches isolate slug, subgenre, options, and media inputs", () =
 });
 
 test("artist mutations invalidate profile paths and shared public directories", () => {
-  assert.match(artistRevalidation, /revalidatePath\(path, "page"\)/);
+  assert.match(artistRevalidation, /revalidatePath\(path\)/);
   assert.match(artistRevalidation, /revalidateTag\(PUBLIC_ARTIST_DIRECTORY_CACHE_TAG, \{ expire: 0 \}\)/);
 });
 

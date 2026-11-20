@@ -1,0 +1,352 @@
+{
+  "manifest_version": 1,
+  "date": "2026-10-18",
+  "state": "awaiting_editor_approval_under_discography_Gate_B",
+  "artist": {
+    "id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+    "name": "Orquesta Jicarada",
+    "status": "draft"
+  },
+  "authority": "User requested this album; exact manifest must be approved before discography writes under docs/discography.md Gate B.",
+  "inventory": {
+    "existing_artist_created_separately": true,
+    "matching_releases": [],
+    "matching_artist_recordings": [],
+    "search_scope": "Releases title/catalog number and Recordings artist_id/metadata Jicarada; unrelated common song titles do not establish identity."
+  },
+  "source": {
+    "reference": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+    "file": "docs/reports/editorial/jicarada-1995-rear.png",
+    "sha256": "D0490C168217D855639B500F3F260F98C7127C8733F9467BCD794F0637C995B6",
+    "accessed": "2026-10-18",
+    "limitations": "Rear artwork only; no disc face, booklet or audio inspected. Year is printed copyright/phonogram year; day/month and territory unverified."
+  },
+  "release": {
+    "id": "a0dba3d6-e318-4217-bffc-66b710b1d9f3",
+    "before": null,
+    "after": {
+      "title": "Realizando un Sueño",
+      "slug": "orquesta-jicarada-realizando-un-sueno-1995",
+      "type": "Album",
+      "release_artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "release_year": 1995,
+      "year": 1995,
+      "date": null,
+      "label": "Brasanel Records S.A.",
+      "catalog_number": "JIC326CD",
+      "country": null,
+      "barcode": null,
+      "status": "Official",
+      "metadata": {
+        "format": "CD",
+        "copyright": "© ℗ 1995 Brasanel Records S.A.",
+        "printed_album_title": "Realizando un Sueño",
+        "source_reference": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995"
+      }
+    }
+  },
+  "tracks": [
+    {
+      "proposed_recording_id": "07b93de6-71a6-4234-a80f-b5e16535fcb7",
+      "proposed_track_id": "af09bacc-9318-4b92-a78e-a47af116738a",
+      "before": null,
+      "disc_number": 1,
+      "track_number": 1,
+      "title": "Homenaje Bomba",
+      "printed_title": "Homenaje Bomba",
+      "literal_credit": "Homenaje a los Hnos. Rosarios en sus 15 años. Adactación - Israel Casado",
+      "author_notation": null,
+      "credit": {
+        "credited_as": "Israel Casado",
+        "literal_role": "Adactación",
+        "normalized_role": null,
+        "canonical_contributor_id": null,
+        "resolution": "unresolved identity; literal attribution verified from image"
+      },
+      "work_id": null,
+      "artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "recording_year": null,
+      "duration": null,
+      "youtube_id": null,
+      "platform_identifiers": [],
+      "source": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+      "confidence": "verified printed program; exact audio/version not independently inspected"
+    },
+    {
+      "proposed_recording_id": "995042e6-8a9b-44ee-b60b-81ab374b98d8",
+      "proposed_track_id": "d0b8c511-fed3-4cbb-b994-d858339bb0a3",
+      "before": null,
+      "disc_number": 1,
+      "track_number": 2,
+      "title": "Cariño del Alma",
+      "printed_title": "Cariño Del Alma",
+      "literal_credit": "(D.R.) / Arr - Israel Casado",
+      "author_notation": "D.R.",
+      "credit": {
+        "credited_as": "Israel Casado",
+        "literal_role": "Arr",
+        "normalized_role": "arranger",
+        "canonical_contributor_id": null,
+        "resolution": "unresolved identity; literal attribution verified from image"
+      },
+      "work_id": null,
+      "artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "recording_year": null,
+      "duration": null,
+      "youtube_id": null,
+      "platform_identifiers": [],
+      "source": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+      "confidence": "verified printed program; exact audio/version not independently inspected"
+    },
+    {
+      "proposed_recording_id": "24bb8f84-4b93-4f20-b496-1834665e4071",
+      "proposed_track_id": "bb32b637-4988-4201-b21d-4bb50b279aad",
+      "before": null,
+      "disc_number": 1,
+      "track_number": 3,
+      "title": "Hipócrita",
+      "printed_title": "Hipocrita",
+      "literal_credit": "(Ronny Moramis) / Arr - Israel Casado",
+      "author_notation": "Ronny Moramis",
+      "credit": {
+        "credited_as": "Israel Casado",
+        "literal_role": "Arr",
+        "normalized_role": "arranger",
+        "canonical_contributor_id": null,
+        "resolution": "unresolved identity; literal attribution verified from image"
+      },
+      "work_id": null,
+      "artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "recording_year": null,
+      "duration": null,
+      "youtube_id": null,
+      "platform_identifiers": [],
+      "source": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+      "confidence": "verified printed program; exact audio/version not independently inspected"
+    },
+    {
+      "proposed_recording_id": "9ac106fc-a86e-43da-9c3b-badd8f6c306b",
+      "proposed_track_id": "1c14cb91-10ef-4abb-a953-400170d73de6",
+      "before": null,
+      "disc_number": 1,
+      "track_number": 4,
+      "title": "Bésame",
+      "printed_title": "Besame",
+      "literal_credit": "(D.R.) / Arr - Israel Casado",
+      "author_notation": "D.R.",
+      "credit": {
+        "credited_as": "Israel Casado",
+        "literal_role": "Arr",
+        "normalized_role": "arranger",
+        "canonical_contributor_id": null,
+        "resolution": "unresolved identity; literal attribution verified from image"
+      },
+      "work_id": null,
+      "artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "recording_year": null,
+      "duration": null,
+      "youtube_id": null,
+      "platform_identifiers": [],
+      "source": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+      "confidence": "verified printed program; exact audio/version not independently inspected"
+    },
+    {
+      "proposed_recording_id": "7bb8c31b-967b-4343-af31-a68bd20afc65",
+      "proposed_track_id": "5372d27a-4b33-4e74-ab82-3e008749120e",
+      "before": null,
+      "disc_number": 1,
+      "track_number": 5,
+      "title": "Me Gusta",
+      "printed_title": "Me Gusta",
+      "literal_credit": "(Ronny Moramis) / Arr - Fortunato Rojas",
+      "author_notation": "Ronny Moramis",
+      "credit": {
+        "credited_as": "Fortunato Rojas",
+        "literal_role": "Arr",
+        "normalized_role": "arranger",
+        "canonical_contributor_id": null,
+        "resolution": "unresolved identity; literal attribution verified from image"
+      },
+      "work_id": null,
+      "artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "recording_year": null,
+      "duration": null,
+      "youtube_id": null,
+      "platform_identifiers": [],
+      "source": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+      "confidence": "verified printed program; exact audio/version not independently inspected"
+    },
+    {
+      "proposed_recording_id": "b41c84fa-4bf3-40cf-a7ae-81203d9530e2",
+      "proposed_track_id": "79e609bb-7a93-4715-b572-f11393a7b25d",
+      "before": null,
+      "disc_number": 1,
+      "track_number": 6,
+      "title": "Luna de Miel",
+      "printed_title": "Luna De Miel",
+      "literal_credit": "(D.R.) / Arr - Israel Casado",
+      "author_notation": "D.R.",
+      "credit": {
+        "credited_as": "Israel Casado",
+        "literal_role": "Arr",
+        "normalized_role": "arranger",
+        "canonical_contributor_id": null,
+        "resolution": "unresolved identity; literal attribution verified from image"
+      },
+      "work_id": null,
+      "artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "recording_year": null,
+      "duration": null,
+      "youtube_id": null,
+      "platform_identifiers": [],
+      "source": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+      "confidence": "verified printed program; exact audio/version not independently inspected"
+    },
+    {
+      "proposed_recording_id": "41b79b78-740d-44ed-8d20-ed98bd332356",
+      "proposed_track_id": "710f1d10-32ee-4d4a-8835-6b4af801b2c5",
+      "before": null,
+      "disc_number": 1,
+      "track_number": 7,
+      "title": "Tú en mi Vida",
+      "printed_title": "Tu En Mi Vida",
+      "literal_credit": "(D.R.) / Arr - Israel Casado",
+      "author_notation": "D.R.",
+      "credit": {
+        "credited_as": "Israel Casado",
+        "literal_role": "Arr",
+        "normalized_role": "arranger",
+        "canonical_contributor_id": null,
+        "resolution": "unresolved identity; literal attribution verified from image"
+      },
+      "work_id": null,
+      "artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "recording_year": null,
+      "duration": null,
+      "youtube_id": null,
+      "platform_identifiers": [],
+      "source": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+      "confidence": "verified printed program; exact audio/version not independently inspected"
+    },
+    {
+      "proposed_recording_id": "81a0b441-dac0-4619-9bae-f364418dd444",
+      "proposed_track_id": "b78ec075-f1b1-44fe-a040-92cde8b540a0",
+      "before": null,
+      "disc_number": 1,
+      "track_number": 8,
+      "title": "Déjame Llorar",
+      "printed_title": "Dejame Llorar",
+      "literal_credit": "(D.R.) / Arr - Israel Casado",
+      "author_notation": "D.R.",
+      "credit": {
+        "credited_as": "Israel Casado",
+        "literal_role": "Arr",
+        "normalized_role": "arranger",
+        "canonical_contributor_id": null,
+        "resolution": "unresolved identity; literal attribution verified from image"
+      },
+      "work_id": null,
+      "artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "recording_year": null,
+      "duration": null,
+      "youtube_id": null,
+      "platform_identifiers": [],
+      "source": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+      "confidence": "verified printed program; exact audio/version not independently inspected"
+    },
+    {
+      "proposed_recording_id": "a721a06c-b808-4a77-b9e0-a4f3191da366",
+      "proposed_track_id": "25de8bc3-1d3d-4471-ac3e-f0eb1d466a33",
+      "before": null,
+      "disc_number": 1,
+      "track_number": 9,
+      "title": "Hoy No Estoy Para Nadie",
+      "printed_title": "Hoy No Estoy Para Nadie",
+      "literal_credit": "(D.R.) / Arr - Israel Casado",
+      "author_notation": "D.R.",
+      "credit": {
+        "credited_as": "Israel Casado",
+        "literal_role": "Arr",
+        "normalized_role": "arranger",
+        "canonical_contributor_id": null,
+        "resolution": "unresolved identity; literal attribution verified from image"
+      },
+      "work_id": null,
+      "artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "recording_year": null,
+      "duration": null,
+      "youtube_id": null,
+      "platform_identifiers": [],
+      "source": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+      "confidence": "verified printed program; exact audio/version not independently inspected"
+    },
+    {
+      "proposed_recording_id": "24d6d30e-d2ac-4627-a9dd-aa11351ec27e",
+      "proposed_track_id": "75b044b0-260c-4801-864d-2d184e1701bf",
+      "before": null,
+      "disc_number": 1,
+      "track_number": 10,
+      "title": "Perdóname",
+      "printed_title": "Perdoname",
+      "literal_credit": "(Ronny Moramis) / Arr - Fortunato Rojas",
+      "author_notation": "Ronny Moramis",
+      "credit": {
+        "credited_as": "Fortunato Rojas",
+        "literal_role": "Arr",
+        "normalized_role": "arranger",
+        "canonical_contributor_id": null,
+        "resolution": "unresolved identity; literal attribution verified from image"
+      },
+      "work_id": null,
+      "artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "recording_year": null,
+      "duration": null,
+      "youtube_id": null,
+      "platform_identifiers": [],
+      "source": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+      "confidence": "verified printed program; exact audio/version not independently inspected"
+    }
+  ],
+  "canonical_credits": {
+    "proposed_recording_performer_credits": 10,
+    "performer_artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+    "performer_role": "lead_performer",
+    "proposed_arranger_or_author_credit_rows": 0,
+    "reason": "No matching contributor identities in current catalog. Preserve 13 literal personal attributions in source metadata; do not invent contributor identities or create unrelated profiles. Authorship notation must not become a Recording composer credit."
+  },
+  "counts": {
+    "works": 0,
+    "recordings": 10,
+    "releases": 1,
+    "release_groups": 0,
+    "track_appearances": 10,
+    "release_artist_relations": 1,
+    "canonical_recording_performer_credits": 10,
+    "unresolved_literal_personal_attributions": 13
+  },
+  "exclusions": [
+    "No contributor profiles, external contributors, Works or Work links created",
+    "No Ronny Moramis = Ronny Moreno identity mapping",
+    "No named singers or instrumental performers inferred from photograph or occupation",
+    "No adaptation-to-arranger role substitution",
+    "No D.R. author entity or public-domain assumption",
+    "No track platform links without version evidence",
+    "No additional albums or imports from Ronny Moreno’s 2005 album",
+    "No profile publication or changes to other artists"
+  ],
+  "affected_artists": [
+    "0da11a3b-6611-4438-9c1c-4c8bfe67fc36"
+  ],
+  "preconditions": [
+    "Artist remains draft",
+    "No JIC326CD or matching album added since audit",
+    "No artist-scoped recordings added since audit",
+    "Actual manifest approved"
+  ],
+  "postwrite_checks": [
+    "Exactly one release, ten ordered Tracks and ten associated Recordings",
+    "Literal source credits and source reference retained per track",
+    "Artist remains draft; both biographies remain published",
+    "No unrelated records modified"
+  ]
+}

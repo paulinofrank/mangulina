@@ -1,0 +1,370 @@
+{
+  "date": "2026-10-23",
+  "authorization": "Editor supplied named new-profile candidate in established workflow. Draft artist and completed published EN/ES biographies; no photo or discography import.",
+  "before": null,
+  "after": {
+    "id": "20853036-92ff-4b77-a2cb-b2f54db77011",
+    "name": "Kaly Ocho",
+    "stage_name": "Kaly Ocho",
+    "sort_name": "Kaly Ocho",
+    "slug": "kaly-ocho",
+    "first_name": "Joel",
+    "middle_name": "Elías",
+    "last_name": "Arias",
+    "second_last_name": "Martínez",
+    "aliases": [
+      "Joel Elías Arias Martínez",
+      "La Bola Negra del Juego",
+      "Kaly 8"
+    ],
+    "disambiguation": "Dominican dembow singer and rapper from Buenos Aires de Herrera",
+    "type": "solo_artist",
+    "primary_role": "singer",
+    "occupations": [
+      "songwriter",
+      "rapper"
+    ],
+    "gender": "male",
+    "birth_place": "Santo Domingo Oeste",
+    "province": "Santo Domingo",
+    "date_of_birth": "1999-11-18",
+    "birth_year": 1999,
+    "primary_genre": "urban-dembow",
+    "genres": [
+      "urban-rap-hip-hop",
+      "urban-reggaeton"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "facebook": "100046612365904",
+    "instagram": null,
+    "youtube": "@KalyOchoMusic",
+    "spotify": "4Y2ohblGXsra540HyqjKFD",
+    "website": null,
+    "status": "draft"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Kaly Ocho, nombre artístico de Joel Elías Arias Martínez, es un cantante, compositor y rapero dominicano nacido el 18 de noviembre de 1999 en Buenos Aires de Herrera, Santo Domingo Oeste. Conocido también como «La Bola Negra del Juego», desarrolló su carrera dentro del dembow con canciones como «La Cartiele», «Piri Bambam» y «Bocina Bom»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Herrera y los primeros pasos",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su interés por la música comenzó en la adolescencia, cuando se reunía con otros jóvenes del barrio para improvisar rimas. En su biografía de Spotify relata que sobrevivió a una herida de bala en julio de 2020 y que esa experiencia lo impulsó a dedicarse plenamente a la música. En abril de 2021 presentó «La Cartiele» y organizó su equipo de trabajo con su madre como mánager. Su nombre artístico y su apodo remiten a la bola negra número ocho del billar."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Piri Bambam» y «Máquina de Dinero»",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2021 lanzó «Piri Bambam», que incorpora una referencia al coro de «Bidi Bidi Bom Bom», de Selena. «Remezcla» la incluyó en su selección de los diez mejores dembows de ese año, en el puesto nueve. En 2022 publicó «Bocina Bom» y participó en «Máquina de Dinero», junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+                  "occurrenceId": "d4549472-2643-4c9d-bfaf-779beeb262e8",
+                  "displayText": "El Alfa"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", French Montana y Braulio Fogón. La colaboración apareció en «Sabiduría» y tuvo un video dirigido por Anyelo Santiago, filmado en el sector 27 de Febrero de Santo Domingo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Un repertorio compartido",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La colaboración con DJ Kiko El De Lo Alka ha sido recurrente en su catálogo. Ambos aparecen acreditados en «No Hay», de 2022, y en lanzamientos posteriores como «Machucala» y «De Eso», de 2026. Sus canciones combinan la base rítmica del dembow con el fraseo del rap y estribillos que emplean expresiones del habla popular dominicana."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "De «888» a los lanzamientos recientes",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "El 28 de agosto de 2024 publicó «888», un álbum de once canciones que incluye «Enrola», «Wou Wow», «Colapso» y «Moviendo Los Cosos». En enero de 2026 apareció «El Sampler Soy Yo», una colección de siete temas. Durante ese año continuó compartiendo videos y colaboraciones en su canal, entre ellos «Volando» y «Otra noche»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trayectoria enlaza la improvisación barrial de Herrera con la circulación digital del dembow. El reconocimiento editorial de «Piri Bambam» y su participación en «Máquina de Dinero» documentan dos momentos de proyección, dentro de una carrera sostenida por sencillos, videos y trabajo con otros intérpretes y productores."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Kaly Ocho, the stage name of Joel Elías Arias Martínez, is a Dominican singer, songwriter and rapper born on November 18, 1999, in Buenos Aires de Herrera, Santo Domingo Oeste. Also known as «La Bola Negra del Juego», he developed his dembow career through songs including «La Cartiele», «Piri Bambam» and «Bocina Bom»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Herrera and early music",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His interest in music began in adolescence, when he gathered with other young people in his neighborhood to freestyle. In his Spotify biography, he recounts surviving a gunshot wound in July 2020 and describes the experience as a turning point that led him to pursue music full time. In April 2021 he presented «La Cartiele» and built a working team with his mother as manager. His stage name and nickname refer to the black number-eight ball in pool."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Piri Bambam» and «Máquina de Dinero»",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2021 he released «Piri Bambam», which references the chorus of Selena's «Bidi Bidi Bom Bom». «Remezcla» placed it ninth in its selection of the year's ten best dembow songs. In 2022 he released «Bocina Bom» and appeared on «Máquina de Dinero» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+                  "occurrenceId": "6ef327fd-1cb7-441d-8e03-c5c69c9c620f",
+                  "displayText": "El Alfa"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", French Montana and Braulio Fogón. The collaboration featured on «Sabiduría» and had a video directed by Anyelo Santiago, filmed in Santo Domingo's 27 de Febrero neighborhood."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "An ongoing collaborative repertoire",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "DJ Kiko El De Lo Alka has been a recurring collaborator. Both artists are credited on the 2022 release «No Hay» and later singles such as «Machucala» and «De Eso» in 2026. His songs combine dembow rhythms with rap phrasing and hooks drawing on Dominican popular speech."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From «888» to later releases",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "On August 28, 2024, he released «888», an eleven-song album containing «Enrola», «Wou Wow», «Colapso» and «Moviendo Los Cosos». January 2026 brought «El Sampler Soy Yo», a seven-track collection. During that year he continued sharing videos and collaborations on his channel, including «Volando» and «Otra noche»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His career connects neighborhood freestyling in Herrera with dembow's digital circulation. The editorial recognition of «Piri Bambam» and his appearance on «Máquina de Dinero» mark two documented moments of wider exposure in a career built through singles, videos and collaboration with other performers and producers."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "cf438c62-e0b8-4ba9-8e4b-f328ddce0c9b",
+      "name": "Chimbala",
+      "slug": "chimbala",
+      "status": "published"
+    },
+    {
+      "id": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+      "name": "El Alfa",
+      "slug": "el-alfa",
+      "status": "published"
+    },
+    {
+      "id": "518354a4-7cb9-4c39-a2b8-9fa4d18f50db",
+      "name": "El Mayor Clásico",
+      "slug": "el-mayor-clasico",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "kaly-ocho-research-2026-10-23.md",
+  "editor_supplied_fields": [],
+  "unresolved": [
+    "DOB and birth city explicitly verified in artist-owned Spotify biography.",
+    "No photograph attached to the message; identity and artwork await an actual reference image.",
+    "Historical Instagram unavailable; website unknown. Album label differs from supplied summary; preserved in research."
+  ],
+  "exclusions": [
+    "No artist publication, discography imports, other artists, photo upload, deployment, security change or manual cache refresh."
+  ]
+}

@@ -1,0 +1,11 @@
+# Backward biography references — October 24, 2026
+
+Scope: editor asked to document the rule after noting Martox remained unlinked in Solo Fernández. Read-only inspection of these two artists; documentation changes only. No biography, catalog, publication state, application code or security changed. No production pages requested, cache refresh or deployment.
+
+The existing EDITORIAL_BIOGRAPHY_FORMAT.md already said “Link reciprocally. When creating an artist who is mentioned in an existing biography, update that biography to link the new artist.” The earlier Martox completion checked its own outbound references but failed to report the existing Solo Fernández mentions as pending. Zero structural integrity findings did not establish semantic link completeness.
+
+Current inspection confirms both artists are published. Solo Fernández UUID 1fe11e8a-c6c3-49ad-b3de-1c90d548ad40: English document b012f1bf-e93a-4164-8cfc-63b88d5fc71e, revision 1; Spanish document 47051f30-91b9-4354-9109-5c56fb658af7, revision 1. Each contains a plain-text «Martox» in the Solo tú collaboration sentence. Proposed target is Martox fe960a3e-4aa3-4c27-921b-d8bdb4394aae. Martox's EN f08793b3-66e9-42a0-b8db-a9ca4e059f44 and ES 25a4ff4d-e073-4976-9e27-77891310febe already contain valid structured Solo Fernández references in the Pausa/Gian Rojas passage. That outbound link does not repair the reverse mentions.
+
+Updated docs/EDITORIAL_BIOGRAPHY_FORMAT.md with a required backward-reference audit and docs/ARTIST_PROFILE_WORKFLOW.md with a mandatory completion/publication check. Both require contextual identity verification, both locales, concrete document/revision inventory, lifecycle saves and validation for authorized repairs, preservation of prose, and explicit reporting when repairs require expanded publication scope. They prohibit invented reciprocal prose or public links exposing draft targets.
+
+Pending data repair: convert the two verified Solo Fernández literal mentions to Martox artistReference nodes, remove only their guillemets, preserve all other prose/references, increment each document revision and verify relation rows, then targeted refresh of Solo Fernández. No repair executed because the current request is to document the rule and existing publication gates remain in force. No broad catalog audit was performed or claimed.

@@ -1,0 +1,474 @@
+{
+  "date": "2026-10-23",
+  "authorization": "Editor supplied named new-profile candidate in established workflow. Draft artist and completed published EN/ES biographies; no photo or discography import.",
+  "before": null,
+  "after": {
+    "id": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+    "name": "Janio Lora",
+    "stage_name": "Janio Lora",
+    "sort_name": "Lora, Janio",
+    "slug": "janio-lora",
+    "first_name": "Janio",
+    "middle_name": null,
+    "last_name": "Lora",
+    "second_last_name": "Félix",
+    "aliases": [
+      "Janio Lora Félix"
+    ],
+    "disambiguation": "Dominican singer-songwriter associated with Santo Domingo",
+    "type": "solo_artist",
+    "primary_role": "singer",
+    "occupations": [
+      "songwriter",
+      "musician"
+    ],
+    "gender": "male",
+    "birth_place": null,
+    "province": "Distrito Nacional",
+    "date_of_birth": null,
+    "birth_year": null,
+    "primary_genre": "fusion",
+    "genres": [
+      "rock",
+      "bachata",
+      "merengue"
+    ],
+    "instruments": [
+      "voice",
+      "guitar"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "facebook": "lorajanio",
+    "instagram": "janiolora",
+    "youtube": "@JanioLora",
+    "spotify": "2S6fXHDWLSI3K8HluvBAvm",
+    "website": "https://janiolora.com/",
+    "status": "draft"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Janio Lora, cuyo nombre personal es Janio Lora Félix, es un cantautor dominicano vinculado a Santo Domingo. Hijo del periodista y compositor Huchi Lora, desarrolla una obra que cruza el rock y el blues con la bachata, el merengue y la canción caribeña. Compagina la música con su trabajo como creativo publicitario."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Del rock a la canción dominicana",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su catálogo en Bandcamp fecha «Ahora Mismo» en 2008 y «Rock 'N' Ron» en 2011. Este último reúne doce pistas, entre ellas «Carla Cranberry», «Graciela» y «Despierta», y acredita a Allan Leschhörn como productor y responsable de la grabación y la mezcla. En 2013 publicó «Finding Demo»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Mi Nueva Edad»",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2015 presentó «Mi Nueva Edad», una producción de Pablo Dacal que reunió composiciones propias y canciones del repertorio dominicano. El disco incluye «Colmado» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8e29188a-215b-4c6c-b34a-45b381765e46",
+                  "occurrenceId": "ca7d8b65-3978-46dc-904d-46491b4c20ac",
+                  "displayText": "Xiomara Fortuna"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", «Las Vueltas de la Suerte» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+                  "occurrenceId": "a057fa38-21ef-4697-bd7b-abc47d9fb100",
+                  "displayText": "Víctor Víctor"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y «Confundidos» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                  "occurrenceId": "b3d8eb53-e30c-4aa3-8c8e-89c405d8d190",
+                  "displayText": "Rafael Solano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Su sencillo «Viene y Va» nació de la música que escribió para «Las Medidas de la Brisa», una obra de la coreógrafa Marianela Boán inspirada en la poesía de José Lezama Lima."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Cruces caribeños y trabajo familiar",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Aentro», fechado en 2018 en su Bandcamp y producido por Isaac Hernández, prolongó su acercamiento a los ritmos caribeños. Su repertorio de este período incluye «Chúbale» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ec8ba439-3772-49ff-a218-05f5dc615763",
+                  "occurrenceId": "fd626376-b8c6-454b-8fb6-f364b3876a8f",
+                  "displayText": "Vakeró"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y «Al Son de la Calavera» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+                  "occurrenceId": "b08b3307-e272-4726-a4d2-dea5c6cd0ada",
+                  "displayText": "Alex Ferreira"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". En diciembre de 2024 publicó «El Concón», un merengue escrito con su padre, quien compuso la música. La grabación contó con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                  "occurrenceId": "8eea5218-be60-4e80-8687-a08d12574939",
+                  "displayText": "El Prodigio"
+                }
+              },
+              {
+                "type": "text",
+                "text": " en el acordeón y arreglos y producción de Jochy Sánchez."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trayectoria conecta la canción de autor con el rock dominicano y con formas tradicionales de la isla. El diálogo entre generaciones ocupa un lugar concreto en sus grabaciones, desde las colaboraciones de «Mi Nueva Edad» hasta el trabajo compartido con su padre en «El Concón»."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Janio Lora, whose personal name is Janio Lora Félix, is a Dominican singer-songwriter associated with Santo Domingo. The son of journalist and composer Huchi Lora, he brings rock and blues into conversation with bachata, merengue and Caribbean songwriting. He combines his music career with work in advertising creative direction."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From rock to Dominican song",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His Bandcamp catalog dates «Ahora Mismo» to 2008 and «Rock 'N' Ron» to 2011. The latter contains twelve tracks, including «Carla Cranberry», «Graciela» and «Despierta», and credits Allan Leschhörn with production, recording and mixing. He released «Finding Demo» in 2013."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Mi Nueva Edad»",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2015 he presented «Mi Nueva Edad», produced by Pablo Dacal, bringing together his own compositions and songs from the Dominican repertoire. The album includes «Colmado» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8e29188a-215b-4c6c-b34a-45b381765e46",
+                  "occurrenceId": "7f8928a9-25df-475f-afef-1ac83c7b866d",
+                  "displayText": "Xiomara Fortuna"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", «Las Vueltas de la Suerte» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+                  "occurrenceId": "e6bc4606-7b8c-4fb8-90a4-bb010c15cee5",
+                  "displayText": "Víctor Víctor"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and «Confundidos» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                  "occurrenceId": "950c7bbb-ecd8-4555-a555-eaa889668611",
+                  "displayText": "Rafael Solano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Its single «Viene y Va» grew out of music he wrote for «Las Medidas de la Brisa», choreographer Marianela Boán's work inspired by the poetry of José Lezama Lima."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Caribbean collaborations and family recording",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Aentro», dated 2018 on his Bandcamp and produced by Isaac Hernández, continued his exploration of Caribbean rhythms. His repertoire from this period includes «Chúbale» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ec8ba439-3772-49ff-a218-05f5dc615763",
+                  "occurrenceId": "4e4462f3-5769-4158-a21b-b847b04c7eaa",
+                  "displayText": "Vakeró"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and «Al Son de la Calavera» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+                  "occurrenceId": "343717de-6d6a-4b44-8399-cb5c073c2022",
+                  "displayText": "Alex Ferreira"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". In December 2024 he released «El Concón», a merengue written with his father, who composed its music. The recording features "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                  "occurrenceId": "bebdefcc-2627-45e6-87e6-b5c22c8b1612",
+                  "displayText": "El Prodigio"
+                }
+              },
+              {
+                "type": "text",
+                "text": " on accordion, with arrangements and production by Jochy Sánchez."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His work connects the singer-songwriter tradition with Dominican rock and the island's traditional musical forms. Exchanges between generations have taken recorded form throughout his career, from the collaborations on «Mi Nueva Edad» to the music he made with his father on «El Concón»."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+      "name": "Alex Ferreira",
+      "slug": "alex-ferreira",
+      "status": "published"
+    },
+    {
+      "id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+      "name": "El Prodigio",
+      "slug": "el-prodigio",
+      "status": "published"
+    },
+    {
+      "id": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+      "name": "Johnny Ventura",
+      "slug": "johnny-ventura",
+      "status": "published"
+    },
+    {
+      "id": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+      "name": "mediopicky",
+      "slug": "mediopicky",
+      "status": "published"
+    },
+    {
+      "id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+      "name": "Rafael Solano",
+      "slug": "rafael-solano",
+      "status": "published"
+    },
+    {
+      "id": "ec8ba439-3772-49ff-a218-05f5dc615763",
+      "name": "Vakeró",
+      "slug": "vakero",
+      "status": "published"
+    },
+    {
+      "id": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+      "name": "Víctor Víctor",
+      "slug": "victor-victor",
+      "status": "published"
+    },
+    {
+      "id": "8e29188a-215b-4c6c-b34a-45b381765e46",
+      "name": "Xiomara Fortuna",
+      "slug": "xiomara-fortuna",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "janio-lora-research-2026-10-23.md",
+  "editor_supplied_fields": [],
+  "unresolved": [
+    "DOB and explicit birthplace unconfirmed; no date or birth city inferred.",
+    "No photograph attached to the message; identity and artwork await an actual reference image.",
+    "Artist website release years conflict with original Bandcamp chronology; documented in research."
+  ],
+  "exclusions": [
+    "No artist publication, discography imports, other artists, photo upload, deployment, security change or manual cache refresh."
+  ]
+}

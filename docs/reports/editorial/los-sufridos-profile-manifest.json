@@ -1,0 +1,718 @@
+{
+  "date": "2026-10-27",
+  "authorization": "Editor supplied four Los Sufridos accounts and requested creation of the ficha; existing matching needs_review group must be completed, not duplicated.",
+  "scope": "Update only existing Los Sufridos artist and its ES/EN biography documents; no discography/media/other artist/security/deployment writes.",
+  "artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+  "before": {
+    "artist": {
+      "id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "name": "Los Sufridos",
+      "sort_name": "Los Sufridos",
+      "type": "group",
+      "birth_year": null,
+      "death_year": null,
+      "created_at": "2026-05-16T01:19:51.795789+00:00",
+      "views": 0,
+      "wikidata_id": null,
+      "first_name": null,
+      "middle_name": null,
+      "last_name": null,
+      "second_last_name": null,
+      "stage_name": "Los Sufridos",
+      "date_of_birth": null,
+      "birth_place": null,
+      "website": null,
+      "youtube": "@Losufridos",
+      "facebook": null,
+      "instagram": "losufridos",
+      "aliases": [],
+      "mbid": "66819f21-c744-4d72-bc3a-3a1785e3a186",
+      "occupations": [
+        "musician"
+      ],
+      "instruments": [],
+      "genres": [],
+      "disambiguation": null,
+      "gender": "male",
+      "ended": false,
+      "mb_metadata": {
+        "id": "66819f21-c744-4d72-bc3a-3a1785e3a186",
+        "area": {
+          "id": "696cb3e0-5084-30ab-9916-65ece70adbf6",
+          "name": "Dominican Republic",
+          "type": "Country",
+          "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+          "life-span": {
+            "ended": null
+          },
+          "sort-name": "Dominican Republic"
+        },
+        "name": "Los Sufridos",
+        "type": "Group",
+        "score": 74,
+        "country": "DO",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "life-span": {
+          "ended": null
+        },
+        "sort-name": "Sufridos, Los"
+      },
+      "updated_at": "2026-09-29T02:28:55.359709+00:00",
+      "province": null,
+      "birth_day": null,
+      "birth_month": null,
+      "slug": "los-sufridos",
+      "primary_role": "singer",
+      "artist_tags": [
+        "secular"
+      ],
+      "date_of_death": null,
+      "status": "needs_review",
+      "primary_genre": "bachata",
+      "bio_en": "Los Sufridos is a Dominican music group whose work is associated with Urban, Bachata, and Tropical. The group is documented for its contribution to Dominican music and its related scenes.",
+      "bio_es": null,
+      "has_image": false,
+      "image_updated_at": null,
+      "formation_year": null,
+      "dissolution_year": null,
+      "spotify": "2tmrdVbpFzIVIOcqxvErj2"
+    },
+    "documents": [
+      {
+        "id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Los Sufridos is a Dominican music group whose work is associated with Urban, Bachata, and Tropical. The group is documented for its contribution to Dominican music and its related scenes.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+        "created_at": "2026-08-06T02:52:19.958156+00:00",
+        "updated_at": "2026-08-06T02:52:19.958156+00:00",
+        "revision": 1
+      }
+    ]
+  },
+  "after": {
+    "id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+    "name": "Los Sufridos",
+    "sort_name": "Los Sufridos",
+    "type": "group",
+    "birth_year": null,
+    "death_year": null,
+    "created_at": "2026-05-16T01:19:51.795789+00:00",
+    "views": 0,
+    "wikidata_id": null,
+    "first_name": null,
+    "middle_name": null,
+    "last_name": null,
+    "second_last_name": null,
+    "stage_name": "Los Sufridos",
+    "date_of_birth": null,
+    "birth_place": null,
+    "website": null,
+    "youtube": "@Losufridos",
+    "facebook": "61550081777397",
+    "instagram": "losufridos",
+    "aliases": [],
+    "mbid": "66819f21-c744-4d72-bc3a-3a1785e3a186",
+    "occupations": [
+      "producer"
+    ],
+    "instruments": [],
+    "genres": [],
+    "disambiguation": "Dominican bachata collective formed in 2023",
+    "gender": null,
+    "ended": false,
+    "mb_metadata": {
+      "id": "66819f21-c744-4d72-bc3a-3a1785e3a186",
+      "area": {
+        "id": "696cb3e0-5084-30ab-9916-65ece70adbf6",
+        "name": "Dominican Republic",
+        "type": "Country",
+        "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+        "life-span": {
+          "ended": null
+        },
+        "sort-name": "Dominican Republic"
+      },
+      "name": "Los Sufridos",
+      "type": "Group",
+      "score": 74,
+      "country": "DO",
+      "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+      "life-span": {
+        "ended": null
+      },
+      "sort-name": "Sufridos, Los"
+    },
+    "updated_at": "2026-09-29T02:28:55.359709+00:00",
+    "province": null,
+    "birth_day": null,
+    "birth_month": null,
+    "slug": "los-sufridos",
+    "primary_role": "singer",
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_death": null,
+    "status": "draft",
+    "primary_genre": "bachata",
+    "bio_en": "Los Sufridos is a Dominican music group whose work is associated with Urban, Bachata, and Tropical. The group is documented for its contribution to Dominican music and its related scenes.",
+    "bio_es": null,
+    "has_image": false,
+    "image_updated_at": null,
+    "formation_year": 2023,
+    "dissolution_year": null,
+    "spotify": "2tmrdVbpFzIVIOcqxvErj2"
+  },
+  "delta": {
+    "status": "draft",
+    "gender": null,
+    "formation_year": 2023,
+    "occupations": [
+      "producer"
+    ],
+    "facebook": "61550081777397",
+    "disambiguation": "Dominican bachata collective formed in 2023"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Los Sufridos es un colectivo dominicano de bachata formado en 2023 por los productores e intérpretes "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "occurrenceId": "90b529c6-8ab0-4b46-8d02-b5945c62b0bd",
+                  "displayText": "Cromo X"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "occurrenceId": "cbbdf63c-66d8-45b9-98ce-b217983c3181",
+                  "displayText": "T.Y.S"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y Mítiko. Su música toma la bachata como punto de partida y la combina con recursos del dembow, el hip-hop y otros sonidos caribeños. Entre sus colaboraciones figuran «Lleno Contigo» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "occurrenceId": "8dca902a-b5f7-452f-9e86-91163a9163f5",
+                  "displayText": "Antony Santos"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y «Duro De Verdad pt.2» con Bad Gyal."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Origen y concepto",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2023 el proyecto reunió a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "occurrenceId": "fb2967d2-f35d-47cd-b51b-a82b27f5b4a7",
+                  "displayText": "Cromo X"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", productor vinculado al dembow, al rapero y productor "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "occurrenceId": "b4351a2f-771f-4156-be6b-340cf42e403f",
+                  "displayText": "T.Y.S"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y al guitarrista Mítiko, integrante de «La Gran Mawon». Cromo X explicó que el nombre del colectivo se relaciona con el amargue de la bachata: la tristeza y el desamor pueden convertirse en música para bailar y celebrar. Según él, la propuesta sitúa la música y su expresión visual por delante de las identidades individuales de sus integrantes."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Primeras grabaciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Los Sufridos comenzaron a publicar sencillos en 2023 bajo «LAX Music». Entre ellos están «Deli», «Apretaíto» y «Duro de verdad». En diciembre de ese año lanzaron «Prendela» junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b8699416-10d2-4c84-a43a-2a035387126f",
+                  "occurrenceId": "51b07642-87d3-4167-9f31-808dffb61e0c",
+                  "displayText": "Eklectico"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Su repertorio incorporó otras formas de música dominicana con «Chivi», un merengue publicado en 2024, mientras mantenían la bachata como eje del proyecto."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Colaboraciones de 2024",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En agosto de 2024 participaron con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "occurrenceId": "a6527365-8ec3-4b30-9311-bfd494509407",
+                  "displayText": "Antony Santos"
+                }
+              },
+              {
+                "type": "text",
+                "text": " en «Lleno Contigo». La prensa dominicana identificó a los tres integrantes como productores y cantantes del tema; atribuyó la letra a Steven Domínguez, Martín Rodríguez y José Julio Bello. En septiembre publicaron «Duro De Verdad pt.2», una nueva versión de su canción de 2023 con Bad Gyal. Cromo X contó que la colaboración nació de su amistad con la cantante durante una visita de ella a República Dominicana. "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3e1718be-c12d-42f5-85e7-2156d9574940",
+                  "occurrenceId": "acfe72ca-81fa-4aa5-81e6-46d06ce761ec",
+                  "displayText": "Tokischa"
+                }
+              },
+              {
+                "type": "text",
+                "text": " apareció en el videoclip; la edición digital nombra a Los Sufridos y Bad Gyal como artistas principales."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Nuevos sencillos",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2025 el colectivo grabó «LA PROPUESTA» con Rels B y «Poloché» con N.I.T.O; también publicó «La Zaza». En febrero de 2026 lanzó «Darío». Esas grabaciones muestran la continuidad de un proyecto construido principalmente mediante sencillos y colaboraciones."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Los Sufridos reúnen trayectorias previas en producción urbana, rap y música de fusión en una propuesta centrada en la bachata. Su trabajo con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "occurrenceId": "284b11ae-efa0-4fc3-b9ed-29fb7dbc057b",
+                  "displayText": "Antony Santos"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y Bad Gyal conecta el repertorio bachatero con intérpretes de generaciones y escenas distintas, mientras sus canciones exploran otros ritmos dominicanos y caribeños."
+              }
+            ]
+          }
+        ]
+      },
+      "expected_revision": 0
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Los Sufridos is a Dominican bachata collective formed in 2023 by producers and performers "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "occurrenceId": "e8a66b44-4957-42cc-8f7c-37ae6522a5f5",
+                  "displayText": "Cromo X"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "occurrenceId": "fa2d3529-8eb0-47c8-9d8b-4928d2b37140",
+                  "displayText": "T.Y.S"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and Mítiko. The group uses bachata as its foundation while drawing on dembow, hip-hop and other Caribbean sounds. Its collaborations include «Lleno Contigo» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "occurrenceId": "4459d42d-20a1-42b1-ac2b-99492dd28fe8",
+                  "displayText": "Antony Santos"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and «Duro De Verdad pt.2» with Bad Gyal."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Origins and concept",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2023 the project brought together "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "occurrenceId": "17749911-d15f-4c65-9b9e-edb75aebc4e4",
+                  "displayText": "Cromo X"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", a producer associated with dembow; rapper and producer "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "occurrenceId": "6ed42062-4e5b-49ed-88aa-0fbd47485054",
+                  "displayText": "T.Y.S"
+                }
+              },
+              {
+                "type": "text",
+                "text": "; and guitarist Mítiko of «La Gran Mawon». Cromo X explained that the group's name relates to bachata's amargue: sadness and heartbreak can become music for dancing and celebration. He said the collective puts its music and visual expression ahead of the individual identities of its members."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early recordings",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Los Sufridos began releasing singles in 2023 through «LAX Music», including «Deli», «Apretaíto» and «Duro de verdad». That December they released «Prendela» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b8699416-10d2-4c84-a43a-2a035387126f",
+                  "occurrenceId": "03438231-be70-482b-a4fe-194f1f8f62e9",
+                  "displayText": "Eklectico"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Their repertoire expanded into other Dominican styles with the 2024 merengue single «Chivi», while bachata remained the project's central sound."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Collaborations in 2024",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In August 2024 the collective joined "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "occurrenceId": "392c7077-5806-4865-8581-32ae807e905f",
+                  "displayText": "Antony Santos"
+                }
+              },
+              {
+                "type": "text",
+                "text": " on «Lleno Contigo». Dominican reporting identified all three members as producers and singers and attributed its lyrics to Steven Domínguez, Martín Rodríguez and José Julio Bello. In September they released «Duro De Verdad pt.2», a new version of their 2023 song with Bad Gyal. Cromo X said the collaboration grew out of his friendship with the singer during her visit to the Dominican Republic. "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3e1718be-c12d-42f5-85e7-2156d9574940",
+                  "occurrenceId": "94141970-863e-466a-a979-72d5c11722cc",
+                  "displayText": "Tokischa"
+                }
+              },
+              {
+                "type": "text",
+                "text": " appeared in the video; the digital release names Los Sufridos and Bad Gyal as its main artists."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Later singles",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2025 Los Sufridos recorded «LA PROPUESTA» with Rels B and «Poloché» with N.I.T.O, and also released «La Zaza». They followed with «Darío» in February 2026. These recordings continued a project developed primarily through singles and collaborations."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Los Sufridos bring earlier work in urban production, rap and fusion music into a bachata-centred project. Their recordings with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "occurrenceId": "6e765525-4151-4f60-b817-6f33b7ebbfe5",
+                  "displayText": "Antony Santos"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and Bad Gyal connect bachata to performers from different generations and scenes, while other songs explore Dominican and Caribbean rhythms."
+              }
+            ]
+          }
+        ]
+      },
+      "expected_revision": 1
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "name": "Antony Santos",
+      "slug": "antony-santos",
+      "status": "published"
+    },
+    {
+      "id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "name": "Cromo X",
+      "slug": "cromo-x",
+      "status": "published"
+    },
+    {
+      "id": "b8699416-10d2-4c84-a43a-2a035387126f",
+      "name": "Eklectico",
+      "slug": "eklectico",
+      "status": "published"
+    },
+    {
+      "id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "name": "T.Y.S",
+      "slug": "t-y-s",
+      "status": "published"
+    },
+    {
+      "id": "3e1718be-c12d-42f5-85e7-2156d9574940",
+      "name": "Tokischa",
+      "slug": "tokischa",
+      "status": "published"
+    }
+  ],
+  "backward_reference_audit": {
+    "structured_matches": 0,
+    "legacy_matches": 0
+  },
+  "evidence_report": "los-sufridos-evidence-2026-10-27.md",
+  "unresolved": [
+    "Group formation city and province unverified.",
+    "No group portrait with upload authorization and rights confirmation.",
+    "Existing MusicBrainz ID retained without independent identity audit.",
+    "No discography import authorized."
+  ]
+}

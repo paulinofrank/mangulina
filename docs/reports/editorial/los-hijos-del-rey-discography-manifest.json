@@ -1,0 +1,1404 @@
+{
+  "artist_id": "3c82ee60-d565-405d-8423-7895d3706122",
+  "artist_name": "Los Hijos del Rey",
+  "artist_status": "draft",
+  "summary": {
+    "total_releases": 13,
+    "total_tracks": 119,
+    "new_recordings": 101,
+    "shared_existing_recordings": 18,
+    "years_span": "1977–1988"
+  },
+  "releases": [
+    {
+      "title": "Los Hijos del Rey con Fernandito Villalona",
+      "release_year": 1977,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "KLP 30",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/af/60/d2/af60d201-7349-646b-b4a8-24b5d038b1a5/886296604494_1.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 1526720122,
+      "spotify_album_id": "5gbSTRxf1XcETgS2r1QqZe",
+      "discogs_master_id": 1012580,
+      "discogs_release_id": 2479567,
+      "notes": "Historic debut album; launched the career of Fernando Villalona and established the modern ballroom merengue sound.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "A Tatico Henríquez",
+          "duration_ms": 243000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": "Bonny Cepeda"
+        },
+        {
+          "position": 2,
+          "title": "Charanga Pa' Luis",
+          "duration_ms": 271000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": "Bonny Cepeda"
+        },
+        {
+          "position": 3,
+          "title": "Cómo Va a Ser",
+          "duration_ms": 178000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "Barahona",
+          "duration_ms": 197000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 5,
+          "title": "Marisela",
+          "duration_ms": 251000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": "Bonny Cepeda"
+        },
+        {
+          "position": 6,
+          "title": "Santo Domingo",
+          "duration_ms": 268000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 7,
+          "title": "Charanga II",
+          "duration_ms": 231000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "La Americana",
+          "duration_ms": 287000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        },
+        {
+          "position": 9,
+          "title": "Se Supone",
+          "duration_ms": 249000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 10,
+          "title": "La Mulatona",
+          "duration_ms": 246000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": "Bonny Cepeda"
+        }
+      ]
+    },
+    {
+      "title": "Fernandito & Raulín",
+      "release_year": 1978,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "KLP-35",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/c9/c0/d3/c9c0d331-0a7b-7469-4c5c-5b1460480fb9/886296753062_1.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 1526558961,
+      "discogs_master_id": 1201311,
+      "discogs_release_id": 10490564,
+      "notes": "Arranged by Bonny Cepeda and Jorge Millet. Features massive salsa and merengue crossover hits.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "El Herido",
+          "duration_ms": 240000,
+          "genre_id": 5,
+          "subgenre_id": 59,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": "Ismael Miranda, Jorge Millet"
+        },
+        {
+          "position": 2,
+          "title": "Hechizao",
+          "duration_ms": 285000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        },
+        {
+          "position": 3,
+          "title": "Es Tarde",
+          "duration_ms": 166000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": "Jorge Millet"
+        },
+        {
+          "position": 4,
+          "title": "Mr. Welcome",
+          "duration_ms": 335000,
+          "genre_id": 5,
+          "subgenre_id": 59,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": "Jorge Millet"
+        },
+        {
+          "position": 5,
+          "title": "Los Picoses",
+          "duration_ms": 198000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": "Jorge Taveras, Yaqui Núñez del Risco"
+        },
+        {
+          "position": 6,
+          "title": "Así Es la Vida",
+          "duration_ms": 278000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 7,
+          "title": "Tambo",
+          "duration_ms": 315000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": "Jorge Millet"
+        },
+        {
+          "position": 8,
+          "title": "El Camino de los Amantes",
+          "duration_ms": 238000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 9,
+          "title": "Vengo Botando Candela",
+          "duration_ms": 328000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        }
+      ]
+    },
+    {
+      "title": "Un Brindis Por Juan Lockward",
+      "release_year": 1978,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "XKLP-39",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2e/3d/86/2e3d86ae-50bb-efb1-cbf3-246205383fd2/197188899745.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 1687481648,
+      "discogs_master_id": 1012837,
+      "discogs_release_id": 2506715,
+      "notes": "Third Karen release; homage to Puerto Plata troubadour Juan Lockward alongside international adaptations.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Un Brindis Por Juan Lockward",
+          "duration_ms": 251000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 2,
+          "title": "El Río",
+          "duration_ms": 290000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 3,
+          "title": "Un Domingo Sin Ti",
+          "duration_ms": 212000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "Copacabana",
+          "duration_ms": 229000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": "Barry Manilow"
+        },
+        {
+          "position": 5,
+          "title": "La Boda de Marisela",
+          "duration_ms": 333000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": "Bonny Cepeda"
+        },
+        {
+          "position": 6,
+          "title": "Compadre Pedro Juan",
+          "duration_ms": 312000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": "Luis Alberti"
+        },
+        {
+          "position": 7,
+          "title": "Luz de la Mañana",
+          "duration_ms": 350000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "Jardinera",
+          "duration_ms": 282000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 9,
+          "title": "Olé, Olé",
+          "duration_ms": 258000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        },
+        {
+          "position": 10,
+          "title": "El Manicomio",
+          "duration_ms": 307000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        }
+      ]
+    },
+    {
+      "title": "New Life",
+      "release_year": 1979,
+      "format": "LP",
+      "label": "Combo Records",
+      "catalog_number": "RCSLP-2012",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music/2d/ca/45/mzi.kzqyvqev.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 386977423,
+      "discogs_master_id": 3470998,
+      "discogs_release_id": 8456542,
+      "notes": "Produced by Ralph Cartagena and Cholo Brenes for Combo Records. Introduces vocalists Sergio Hernández and Luis Manuel Webber.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Canto a Mi Pueblo",
+          "duration_ms": 288000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Hernández",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 2,
+          "title": "Mi Mujer",
+          "duration_ms": 266000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Luis Manuel Webber",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 3,
+          "title": "Palomita",
+          "duration_ms": 289000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Hernández",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "Dile a Fulano",
+          "duration_ms": 275000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Luis Manuel Webber",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 5,
+          "title": "Boca Chica",
+          "duration_ms": 228000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Hernández",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 6,
+          "title": "Tu Historia",
+          "duration_ms": 285000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Luis Manuel Webber",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 7,
+          "title": "Feliciana",
+          "duration_ms": 290000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Hernández",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "Baitolina",
+          "duration_ms": 235000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Luis Manuel Webber",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 9,
+          "title": "Sueño Azul",
+          "duration_ms": 271000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Hernández",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 10,
+          "title": "Yo Cantaré",
+          "duration_ms": 302000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Luis Manuel Webber & July Mateo \"Rasputín\"",
+          "lead_vocalist_id": "052b710d-e91f-41c6-94ac-480100f95f5b",
+          "composer": null
+        }
+      ]
+    },
+    {
+      "title": "Auténticos",
+      "release_year": 1979,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "KLP-43",
+      "cover_art": "https://i.scdn.co/image/ab67616d0000b273432a76a6c0cf049600c303a2",
+      "spotify_album_id": "3wXoEtRuDmnMrUG52cod5Z",
+      "discogs_master_id": 1149520,
+      "discogs_release_id": 9970974,
+      "notes": "Karen Records core faction featuring Fernando Villalona and Raulín Rosendo, arranged by Dioni Fernández.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "La Mazorca",
+          "duration_ms": 275000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 2,
+          "title": "Chiquitita",
+          "duration_ms": 295000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": "Benny Andersson, Björn Ulvaeus"
+        },
+        {
+          "position": 3,
+          "title": "Las Cuatro Gomas",
+          "duration_ms": 250000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "Nuestro Encuentro",
+          "duration_ms": 270000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 5,
+          "title": "Cómo Es Posible Amor",
+          "duration_ms": 260000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 6,
+          "title": "La Leche",
+          "duration_ms": 206000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        },
+        {
+          "position": 7,
+          "title": "Ahora Es Que Vengo",
+          "duration_ms": 280000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "El Mayoral",
+          "duration_ms": 250000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        },
+        {
+          "position": 9,
+          "title": "Primera Vez",
+          "duration_ms": 263000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Fernando Villalona",
+          "lead_vocalist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+          "composer": null
+        },
+        {
+          "position": 10,
+          "title": "La Tetera y La Tijera",
+          "duration_ms": 205000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        }
+      ]
+    },
+    {
+      "title": "Los Hijos Del Rey (con Robert Jeand'or)",
+      "release_year": 1980,
+      "format": "LP",
+      "label": "Combo Records",
+      "catalog_number": "RCSLP-2014",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music/1b/dd/a4/mzi.ecxulssf.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 386990863,
+      "discogs_master_id": 1490785,
+      "discogs_release_id": 4856169,
+      "notes": "Arranged and directed by Dioni Fernández. Introduces Robert Jeand'or singing the immortal anthem «Yo Me Dominicanizo» by Tite Curet Alonso.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Del Campo a la Ciudad",
+          "duration_ms": 325000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Luis Manuel Webber",
+          "lead_vocalist_id": null,
+          "composer": "José Nicolás"
+        },
+        {
+          "position": 2,
+          "title": "Puchula",
+          "duration_ms": 434000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Robert Jeand'or",
+          "lead_vocalist_id": null,
+          "composer": "Ramón Díaz"
+        },
+        {
+          "position": 3,
+          "title": "La Vacuna",
+          "duration_ms": 328000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Robert Jeand'or",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "A Dónde Va Nuestro Amor",
+          "duration_ms": 226000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Luis Manuel Webber",
+          "lead_vocalist_id": null,
+          "composer": "Eduardo Magallanes, Mario Molina"
+        },
+        {
+          "position": 5,
+          "title": "Arroyito del Campo",
+          "duration_ms": 336000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Luis Manuel Webber",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 6,
+          "title": "El Viento",
+          "duration_ms": 405000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Robert Jeand'or",
+          "lead_vocalist_id": null,
+          "composer": "José Nicolás"
+        },
+        {
+          "position": 7,
+          "title": "Yo Me Dominicanizo",
+          "duration_ms": 333000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Robert Jeand'or",
+          "lead_vocalist_id": null,
+          "composer": "Tite Curet Alonso"
+        },
+        {
+          "position": 8,
+          "title": "Falta No Me Haces",
+          "duration_ms": 254000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Hernández",
+          "lead_vocalist_id": null,
+          "composer": "José Nicolás"
+        }
+      ]
+    },
+    {
+      "title": "En Europa",
+      "release_year": 1981,
+      "format": "LP",
+      "label": "Combo Records",
+      "catalog_number": "RCSLP 2024",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music/07/43/c5/mzi.jsnmawmm.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 387217406,
+      "discogs_master_id": 1532547,
+      "discogs_release_id": 13121508,
+      "notes": "Tour album recorded and issued during international tours across Europe and the Americas.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "La Oportunidad",
+          "duration_ms": 315000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Robert Jeand'or",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 2,
+          "title": "Mal de Amores",
+          "duration_ms": 261000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Robert Jeand'or",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 3,
+          "title": "Luz Para el Mundo",
+          "duration_ms": 346000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Robert Jeand'or",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "La Pilandera",
+          "duration_ms": 219000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Robert Jeand'or",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 5,
+          "title": "La Cuartería",
+          "duration_ms": 254000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Robert Jeand'or",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 6,
+          "title": "De las Pasadas Horas",
+          "duration_ms": 253000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Robert Jeand'or",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 7,
+          "title": "Sueños",
+          "duration_ms": 371000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Robert Jeand'or",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "Gracias a la Vida",
+          "duration_ms": 269000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Robert Jeand'or",
+          "lead_vocalist_id": null,
+          "composer": "Violeta Parra"
+        }
+      ]
+    },
+    {
+      "title": "Reencuentro Con Raulín",
+      "release_year": 1981,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "KLP-61",
+      "cover_art": "https://i.discogs.com/SdeJNVCImHV13kyMtoGOlopimQw7Frs_EyUl3MiVV1k/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMTkx/MTY5LTE1MTMxNzYw/NjEtMTAzNS5qcGVn.jpeg",
+      "discogs_master_id": 1413673,
+      "discogs_release_id": 10191169,
+      "notes": "Raulín Rosendo re-joins as principal lead vocalist. Produced by Bienvenido Rodríguez, arranged by Dioni Fernández.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "No Me Dejes Solo",
+          "duration_ms": 247000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        },
+        {
+          "position": 2,
+          "title": "El Que Te Guía",
+          "duration_ms": 357000,
+          "genre_id": 5,
+          "subgenre_id": 59,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        },
+        {
+          "position": 3,
+          "title": "Los Fumanchuses",
+          "duration_ms": 187000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "Esos Tiempos Se Acabaron",
+          "duration_ms": 343000,
+          "genre_id": 5,
+          "subgenre_id": 59,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        },
+        {
+          "position": 5,
+          "title": "Prieto Carrero",
+          "duration_ms": 397000,
+          "genre_id": 5,
+          "subgenre_id": 59,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        },
+        {
+          "position": 6,
+          "title": "Esa Mujer",
+          "duration_ms": 315000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        },
+        {
+          "position": 7,
+          "title": "La Pelota",
+          "duration_ms": 207000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "Maritza",
+          "duration_ms": 211000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Raulín Rosendo",
+          "lead_vocalist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+          "composer": null
+        }
+      ]
+    },
+    {
+      "title": "Los Hijos Del Rey",
+      "release_year": 1984,
+      "format": "LP",
+      "label": "Top Hits / Karen Records",
+      "catalog_number": "TH-AM 2292",
+      "cover_art": "https://i.discogs.com/oAFRUExmdfSNJDMKL7cyQ95D020urlPSIHeaYQjdn0k/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODkw/NzUyLTE2NTAwMzY1/MjctNzU2NC5qcGVn.jpeg",
+      "discogs_master_id": 2594978,
+      "discogs_release_id": 22890752,
+      "notes": "Introduces Sergio Vargas alongside Diomedes Núñez and Orville Peña. Hit songs include «Banana» and «Mi Amigo el Guardia» on concurrent 45 RPM singles.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Candelo",
+          "duration_ms": 207000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null
+        },
+        {
+          "position": 2,
+          "title": "Mi Amante",
+          "duration_ms": 251000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null
+        },
+        {
+          "position": 3,
+          "title": "Canto de Toros",
+          "duration_ms": 226000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Diomedes Núñez",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "Roca Piedras",
+          "duration_ms": 177000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Diomedes Núñez",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 5,
+          "title": "Chupa Chupa",
+          "duration_ms": 261000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Diomedes Núñez",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 6,
+          "title": "Negrito Kumba",
+          "duration_ms": 281000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null
+        },
+        {
+          "position": 7,
+          "title": "Pilandera",
+          "duration_ms": 261000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "Déjala Tranquila",
+          "duration_ms": 167000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Diomedes Núñez",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 9,
+          "title": "Vendiendo Tela",
+          "duration_ms": 233000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Orville Peña",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 10,
+          "title": "Cuento de Caminos",
+          "duration_ms": 196000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Diomedes Núñez",
+          "lead_vocalist_id": null,
+          "composer": null
+        }
+      ]
+    },
+    {
+      "title": "En Movimiento",
+      "release_year": 1985,
+      "format": "LP",
+      "label": "Top Hits / Karen Records",
+      "catalog_number": "THL-006",
+      "cover_art": "https://i.discogs.com/-YWINntWgYRn0YmTxblbPXwQ4RlY90uMF6ky_ZFofdI/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MDM4/MTIxLTE1ODU4NTM0/NjMtNDU3MS5qcGVn.jpeg",
+      "discogs_master_id": 1773939,
+      "discogs_release_id": 15038121,
+      "notes": "Fronted by Sergio Vargas and Diomedes Núñez.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Nació el Amor",
+          "duration_ms": 260000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null
+        },
+        {
+          "position": 2,
+          "title": "Carmelinda",
+          "duration_ms": 245000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Diomedes Núñez",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 3,
+          "title": "Saca la Mano",
+          "duration_ms": 250000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "Cómo Te Quiero",
+          "duration_ms": 255000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null
+        },
+        {
+          "position": 5,
+          "title": "La Basurita",
+          "duration_ms": 240000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Diomedes Núñez",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 6,
+          "title": "El Pavo y el Burro",
+          "duration_ms": 260000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Diomedes Núñez",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 7,
+          "title": "Campesina",
+          "duration_ms": 250000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "Ese Huevo Quiere Sal",
+          "duration_ms": 245000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Diomedes Núñez",
+          "lead_vocalist_id": null,
+          "composer": null
+        }
+      ]
+    },
+    {
+      "title": "Sergio Vargas y Los Hijos del Rey (La Quiero a Morir)",
+      "release_year": 1986,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "KLP-102",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/44/6c/19/446c195f-20bc-ea3e-61e0-85a9b83dd00d/886296606184_1.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 1526580327,
+      "discogs_release_id": 9739146,
+      "existing_mangulina_release_id": "1208c2b6-9e1c-4daa-9e49-ab3c828aefee",
+      "notes": "The explosive crossover album featuring «La Quiero a Morir». Shared dependency with Sergio Vargas catalog.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "La Quiero a Morir",
+          "duration_ms": 306000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": "Francis Cabrel, Luis Gómez-Escolar",
+          "existing_recording_id": "9def7b65-d18a-463d-a580-9c5a52771210"
+        },
+        {
+          "position": 2,
+          "title": "Noches",
+          "duration_ms": 284000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "5a2f1147-b69b-4d39-b55a-4310600a9aa2"
+        },
+        {
+          "position": 3,
+          "title": "Cuánta Vida",
+          "duration_ms": 223000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "b3a472f9-b0e1-4e0d-b7ab-9ee372f1cbbb"
+        },
+        {
+          "position": 4,
+          "title": "Quiero Estar Solo",
+          "duration_ms": 253000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "e9c056bd-e8bc-4887-91ce-49e03271ea39"
+        },
+        {
+          "position": 5,
+          "title": "Volveré a Mi Tierra",
+          "duration_ms": 244000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "bed59d4c-2bc4-47c5-b044-6ad3acf2465d"
+        },
+        {
+          "position": 6,
+          "title": "Madre",
+          "duration_ms": 284000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "7672e066-3a22-48f3-b8af-80b527270874"
+        },
+        {
+          "position": 7,
+          "title": "Oh! Mariana",
+          "duration_ms": 284000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "8069cfb3-8f3a-4520-aa3e-0aa030f1b2cd"
+        },
+        {
+          "position": 8,
+          "title": "Yo Soy",
+          "duration_ms": 234000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "0d2a3e18-1ff2-43c2-be39-29354225efc2"
+        }
+      ]
+    },
+    {
+      "title": "Sergio Vargas y Los Hijos del Rey (Si Algún Día la Ves)",
+      "release_year": 1987,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "KLP-110",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/c2/82/7f/c2827fe3-11a4-fbcb-4edf-70a2383ea228/886296606207_1.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 1526562687,
+      "spotify_album_id": "6lHfWJOhMIa8SBUqnNLgsv",
+      "discogs_master_id": 1222663,
+      "discogs_release_id": 5276759,
+      "existing_mangulina_release_id": "a406327c-7928-4b83-834e-116cc039834c",
+      "notes": "Second landmark album with Sergio Vargas before launching his solo orchestra. Features «Si Algún Día la Ves» and «Perfume de Rosas».",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Yambalaya",
+          "duration_ms": 251000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "8cbb5b9e-a35f-47ce-bd89-e412bd3b5763"
+        },
+        {
+          "position": 2,
+          "title": "Tú Vacilándome..y Yo Esperándote",
+          "duration_ms": 270000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "3554b153-2433-4010-b7ff-b534a97a4bed"
+        },
+        {
+          "position": 3,
+          "title": "Yo Que Te Amé",
+          "duration_ms": 309000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "2988da0b-83eb-4b54-aa85-a15173a09ce3"
+        },
+        {
+          "position": 4,
+          "title": "Todo Aquello Que Escribí",
+          "duration_ms": 269000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "d372e166-22e7-4bed-8083-8e4def00d774"
+        },
+        {
+          "position": 5,
+          "title": "Tatilibaba",
+          "duration_ms": 293000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "75d314b7-db51-44dc-9c4e-fe8656be98a2"
+        },
+        {
+          "position": 6,
+          "title": "La Tierra Tembló",
+          "duration_ms": 292000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "52ab0d1c-d206-4c8f-9ed7-5a524042e8fe"
+        },
+        {
+          "position": 7,
+          "title": "Vamos a Dejarlo",
+          "duration_ms": 267000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "2a7fb877-8306-40e3-ba80-42445ff7fa23"
+        },
+        {
+          "position": 8,
+          "title": "Perfume de Rosas",
+          "duration_ms": 261000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "01f97600-fc41-4e0b-a999-cb4d9bbed58e"
+        },
+        {
+          "position": 9,
+          "title": "Si Algún Día la Ves",
+          "duration_ms": 283000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "67bef840-a3d2-4f5e-a989-548cb3358a25"
+        },
+        {
+          "position": 10,
+          "title": "Sukaina",
+          "duration_ms": 281000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null,
+          "existing_recording_id": "16a02d07-0461-4dc7-80ec-1e05e8ab1b15"
+        }
+      ]
+    },
+    {
+      "title": "Thony Medrano y Los Hijos Del Rey",
+      "release_year": 1988,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "KLP 120",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/32/57/a0/3257a0f1-f9a4-81cf-05ef-8e7584a55608/406351.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 1459485519,
+      "discogs_master_id": 4041622,
+      "discogs_release_id": 7610359,
+      "notes": "Fronted by Thony Medrano on Karen Records.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Tu Cárcel",
+          "duration_ms": 277000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Thony Medrano",
+          "lead_vocalist_id": null,
+          "composer": "Marco Antonio Solís"
+        },
+        {
+          "position": 2,
+          "title": "Si Tú Me Dejas",
+          "duration_ms": 236000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Thony Medrano",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 3,
+          "title": "Primer Beso",
+          "duration_ms": 279000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Thony Medrano",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "Mentira Piadosa",
+          "duration_ms": 163000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Thony Medrano",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 5,
+          "title": "Tú Solamente Tú",
+          "duration_ms": 282000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Thony Medrano",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 6,
+          "title": "Doce Rosas",
+          "duration_ms": 263000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Thony Medrano",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 7,
+          "title": "Mal Pago (El Puñal)",
+          "duration_ms": 270000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Thony Medrano",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "No Me Hablen de Ella",
+          "duration_ms": 256000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Thony Medrano",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 9,
+          "title": "Sabes Que Te Quiero",
+          "duration_ms": 222000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Thony Medrano",
+          "lead_vocalist_id": null,
+          "composer": null
+        },
+        {
+          "position": 10,
+          "title": "Bamboleo",
+          "duration_ms": 228000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Thony Medrano",
+          "lead_vocalist_id": null,
+          "composer": null
+        }
+      ]
+    }
+  ]
+}

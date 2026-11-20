@@ -1,0 +1,509 @@
+{
+  "owner_artist_id": "17b237d9-8aa3-4503-bb3e-f956cc900211",
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Johnny Tulanga, nombre artístico de Juan de la Cruz Báez García, es un bajista, compositor y arreglista dominicano de La Romana. Fue uno de los primeros músicos de Los Hijos del Rey y participó en grabaciones centrales del merengue de los años ochenta. Su labor también quedó documentada como bajista de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "9f35ff5d-e309-4513-a89f-ee64ad3f5f1a",
+                  "artistId": "6e1b1d42-3fe5-4523-9999-479a7626fb9a",
+                  "displayText": "Orquesta Liberación"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y como autor y arreglista de canciones interpretadas por distintas orquestas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "De La Romana a la capital",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Durante su juventud hizo música entre La Romana y San Pedro de Macorís. Aprendió guitarra por su cuenta con libros que le facilitaban sus amigos y después se dedicó al bajo. Tocó con «Los Z-C», «Grupo Oriental» y «El Rubí Combo», y estudió solfeo y lectura musical. A mediados de los años setenta se trasladó a Santo Domingo. Allí pasó por la agrupación de Thomás Vásquez y se inscribió en el Conservatorio Nacional de Música."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Una orquesta juvenil y los estudios de grabación",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Cuando "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "e4ae13eb-d20f-49c1-a007-ffa42cbcde69",
+                  "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+                  "displayText": "Wilfrido Vargas"
+                }
+              },
+              {
+                "type": "text",
+                "text": " formaba "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "754b371f-8790-458f-bb8b-d38211a58544",
+                  "artistId": "3c82ee60-d565-405d-8423-7895d3706122",
+                  "displayText": "Los Hijos del Rey"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Tulanga fue recomendado como bajista. Integró la orquesta en su primera etapa, junto a músicos y cantantes como "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "19e51b1e-fa83-49f4-a714-23ec8d3bb1cf",
+                  "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                  "displayText": "Fernando Villalona"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "a9ec43a1-d170-44cf-a399-b245f773452a",
+                  "artistId": "bc4db4c6-c96f-4eb7-af95-ac637785c5bf",
+                  "displayText": "Bonny Cepeda"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "d2a66fdf-d15a-4ddc-bae2-2f506ab35d89",
+                  "artistId": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+                  "displayText": "Raulín Rosendo"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Con ese grupo realizó sus primeras grabaciones profesionales. Luego trabajó con frecuencia en estudio para producciones de «Karen Records», el sello de Bienvenido Rodríguez."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En el álbum «Cómo Quisiera» (1983) de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "43f5c936-4ff8-4008-8a1f-e9d65e854a06",
+                  "artistId": "6e1b1d42-3fe5-4523-9999-479a7626fb9a",
+                  "displayText": "Orquesta Liberación"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", el crédito impreso identifica a Johnny Báez en el bajo. También tocó en la orquesta de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "1be07dfc-516f-4742-afca-b21970603160",
+                  "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                  "displayText": "Ramón Orlando"
+                }
+              },
+              {
+                "type": "text",
+                "text": "; una crónica de Fausto Polanco sitúa su salida de esa agrupación a finales de 1986. Estas etapas muestran sus dos facetas de la época: integrante de orquestas y músico de grabación."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Composición y arreglos",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Tulanga compuso «Vagabundo», «Estrella de Plata» y «Te necesito», conocidas dentro del repertorio merenguero de los años ochenta. Su composición «La Ola» apareció en «Construyendo una idea» (1985), de «Juan Luis y su Orquesta». También se le atribuye «Lejos de ti», interpretada por "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "255262a7-fcd4-4f43-9c92-3f844a69fc87",
+                  "artistId": "97249298-9041-4d41-904c-2c788ac2963e",
+                  "displayText": "Monchy Capricho"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Como arreglista trabajó en «Eres» y «La Chinita», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "4287ca1f-acf0-46a4-b21f-79bc7f9f1bb0",
+                  "artistId": "2c09c6dc-5de7-438d-8236-6bc085378377",
+                  "displayText": "Henry Castro"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", y en «Se va la vida», «Lo mejor de tu vida», «Caballito frenao» y «Muero contigo», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "3ec9e173-234b-43a7-bce3-21963557af5e",
+                  "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+                  "displayText": "Aramis Camilo"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". La prensa también documenta su arreglo de «Cuentos de terror», interpretado por Jorge Solano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La Alcaldía de La Romana lo reconoció en noviembre de 2020 por su trayectoria musical. Su nombre circuló en discos bajo la forma Johnny Báez, mientras que canciones y arreglos suyos continuaron en el repertorio del merengue. La documentación de sus créditos permite identificar el trabajo de un bajista que sostuvo grabaciones conocidas y, al mismo tiempo, escribió y arregló música para otros intérpretes."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Johnny Tulanga, nombre artístico de Juan de la Cruz Báez García, es un bajista, compositor y arreglista dominicano de La Romana. Fue uno de los primeros músicos de Los Hijos del Rey y participó en grabaciones centrales del merengue de los años ochenta. Su labor también quedó documentada como bajista de Orquesta Liberación y como autor y arreglista de canciones interpretadas por distintas orquestas.\n\n**De La Romana a la capital**\n\nDurante su juventud hizo música entre La Romana y San Pedro de Macorís. Aprendió guitarra por su cuenta con libros que le facilitaban sus amigos y después se dedicó al bajo. Tocó con «Los Z-C», «Grupo Oriental» y «El Rubí Combo», y estudió solfeo y lectura musical. A mediados de los años setenta se trasladó a Santo Domingo. Allí pasó por la agrupación de Thomás Vásquez y se inscribió en el Conservatorio Nacional de Música.\n\n**Una orquesta juvenil y los estudios de grabación**\n\nCuando Wilfrido Vargas formaba Los Hijos del Rey, Tulanga fue recomendado como bajista. Integró la orquesta en su primera etapa, junto a músicos y cantantes como Fernando Villalona, Bonny Cepeda y Raulín Rosendo. Con ese grupo realizó sus primeras grabaciones profesionales. Luego trabajó con frecuencia en estudio para producciones de «Karen Records», el sello de Bienvenido Rodríguez.\n\nEn el álbum «Cómo Quisiera» (1983) de Orquesta Liberación, el crédito impreso identifica a Johnny Báez en el bajo. También tocó en la orquesta de Ramón Orlando; una crónica de Fausto Polanco sitúa su salida de esa agrupación a finales de 1986. Estas etapas muestran sus dos facetas de la época: integrante de orquestas y músico de grabación.\n\n**Composición y arreglos**\n\nTulanga compuso «Vagabundo», «Estrella de Plata» y «Te necesito», conocidas dentro del repertorio merenguero de los años ochenta. Su composición «La Ola» apareció en «Construyendo una idea» (1985), de «Juan Luis y su Orquesta». También se le atribuye «Lejos de ti», interpretada por Monchy Capricho. Como arreglista trabajó en «Eres» y «La Chinita», de Henry Castro, y en «Se va la vida», «Lo mejor de tu vida», «Caballito frenao» y «Muero contigo», de Aramis Camilo. La prensa también documenta su arreglo de «Cuentos de terror», interpretado por Jorge Solano.\n\n**Legado**\n\nLa Alcaldía de La Romana lo reconoció en noviembre de 2020 por su trayectoria musical. Su nombre circuló en discos bajo la forma Johnny Báez, mientras que canciones y arreglos suyos continuaron en el repertorio del merengue. La documentación de sus créditos permite identificar el trabajo de un bajista que sostuvo grabaciones conocidas y, al mismo tiempo, escribió y arregló música para otros intérpretes.",
+      "references": 11
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Johnny Tulanga, the professional name of Juan de la Cruz Báez García, is a Dominican bassist, composer and arranger from La Romana. He was an early member of Los Hijos del Rey and played on important merengue recordings of the 1980s. His work is also documented on recordings by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "8f84ca8f-1613-4126-8f1c-2e4643f087e1",
+                  "artistId": "6e1b1d42-3fe5-4523-9999-479a7626fb9a",
+                  "displayText": "Orquesta Liberación"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and in songs he wrote or arranged for other orchestras."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From La Romana to Santo Domingo",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "As a young musician, he worked in La Romana and San Pedro de Macorís. He taught himself guitar with books provided by friends before making the bass his main instrument. He played with «Los Z-C», «Grupo Oriental» and «El Rubí Combo», and studied solfège and sight-reading. He moved to Santo Domingo in the mid-1970s, played in Thomás Vásquez's group and enrolled at the National Conservatory of Music."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "An early orchestra and studio work",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "When "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "eab5dce3-f1eb-4829-8041-609409096be3",
+                  "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+                  "displayText": "Wilfrido Vargas"
+                }
+              },
+              {
+                "type": "text",
+                "text": " was assembling "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "0fa8bfc9-f139-4b05-a5ff-827bce9a6070",
+                  "artistId": "3c82ee60-d565-405d-8423-7895d3706122",
+                  "displayText": "Los Hijos del Rey"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Tulanga was recommended as a bassist. He joined the orchestra in its early period, alongside performers including "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "b3bbc294-2749-4b7b-985b-ad6f0d1e950a",
+                  "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                  "displayText": "Fernando Villalona"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "e5c6f29e-5427-4cbd-9db0-fb641ed64648",
+                  "artistId": "bc4db4c6-c96f-4eb7-af95-ac637785c5bf",
+                  "displayText": "Bonny Cepeda"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "d871c3f6-4c4b-49c6-8605-6cae27227823",
+                  "artistId": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+                  "displayText": "Raulín Rosendo"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". He made his first professional recordings with the group. He later worked regularly in sessions for «Karen Records», Bienvenido Rodríguez's label."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The printed credits of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "7d174d31-ce7f-48d3-9599-5c7c8427cb4c",
+                  "artistId": "6e1b1d42-3fe5-4523-9999-479a7626fb9a",
+                  "displayText": "Orquesta Liberación"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s «Cómo Quisiera» (1983) list Johnny Báez on bass. Tulanga also played in "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "1c6fb446-68ab-4f1a-a6d6-bcf85e1b4045",
+                  "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                  "displayText": "Ramón Orlando"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s orchestra; a report by Fausto Polanco places his departure in late 1986. Those years brought together his work as an orchestra member and a recording musician."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Compositions and arrangements",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Tulanga wrote «Vagabundo», «Estrella de Plata» and «Te necesito», songs known in the merengue repertoire of the 1980s. His composition «La Ola» appeared on «Construyendo una idea» (1985) by «Juan Luis y su Orquesta». He is also credited with «Lejos de ti», recorded by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "ee85519d-a330-4a7d-8e4d-7e030e4cbe20",
+                  "artistId": "97249298-9041-4d41-904c-2c788ac2963e",
+                  "displayText": "Monchy Capricho"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". As an arranger, he worked on "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "7fdf91a3-690b-4b0b-ae48-82174df8b2a6",
+                  "artistId": "2c09c6dc-5de7-438d-8236-6bc085378377",
+                  "displayText": "Henry Castro"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s «Eres» and «La Chinita», and on "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "occurrenceId": "8d707db7-41d8-4f63-b5e9-69c237d0e4c2",
+                  "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+                  "displayText": "Aramis Camilo"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s «Se va la vida», «Lo mejor de tu vida», «Caballito frenao» and «Muero contigo». Press reporting also documents his arrangement of «Cuentos de terror», performed by Jorge Solano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The La Romana municipal government honored Tulanga for his musical career in November 2020. Some records credited him as Johnny Báez, while songs and arrangements he created remained in the merengue repertoire. Documenting those credits makes visible a bassist who anchored well-known recordings and also wrote and arranged music for other performers."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Johnny Tulanga, the professional name of Juan de la Cruz Báez García, is a Dominican bassist, composer and arranger from La Romana. He was an early member of Los Hijos del Rey and played on important merengue recordings of the 1980s. His work is also documented on recordings by Orquesta Liberación and in songs he wrote or arranged for other orchestras.\n\n**From La Romana to Santo Domingo**\n\nAs a young musician, he worked in La Romana and San Pedro de Macorís. He taught himself guitar with books provided by friends before making the bass his main instrument. He played with «Los Z-C», «Grupo Oriental» and «El Rubí Combo», and studied solfège and sight-reading. He moved to Santo Domingo in the mid-1970s, played in Thomás Vásquez's group and enrolled at the National Conservatory of Music.\n\n**An early orchestra and studio work**\n\nWhen Wilfrido Vargas was assembling Los Hijos del Rey, Tulanga was recommended as a bassist. He joined the orchestra in its early period, alongside performers including Fernando Villalona, Bonny Cepeda and Raulín Rosendo. He made his first professional recordings with the group. He later worked regularly in sessions for «Karen Records», Bienvenido Rodríguez's label.\n\nThe printed credits of Orquesta Liberación's «Cómo Quisiera» (1983) list Johnny Báez on bass. Tulanga also played in Ramón Orlando's orchestra; a report by Fausto Polanco places his departure in late 1986. Those years brought together his work as an orchestra member and a recording musician.\n\n**Compositions and arrangements**\n\nTulanga wrote «Vagabundo», «Estrella de Plata» and «Te necesito», songs known in the merengue repertoire of the 1980s. His composition «La Ola» appeared on «Construyendo una idea» (1985) by «Juan Luis y su Orquesta». He is also credited with «Lejos de ti», recorded by Monchy Capricho. As an arranger, he worked on Henry Castro's «Eres» and «La Chinita», and on Aramis Camilo's «Se va la vida», «Lo mejor de tu vida», «Caballito frenao» and «Muero contigo». Press reporting also documents his arrangement of «Cuentos de terror», performed by Jorge Solano.\n\n**Legacy**\n\nThe La Romana municipal government honored Tulanga for his musical career in November 2020. Some records credited him as Johnny Báez, while songs and arrangements he created remained in the merengue repertoire. Documenting those credits makes visible a bassist who anchored well-known recordings and also wrote and arranged music for other performers.",
+      "references": 11
+    }
+  ]
+}

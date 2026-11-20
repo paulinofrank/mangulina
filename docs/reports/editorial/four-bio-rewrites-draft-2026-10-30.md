@@ -1,0 +1,214 @@
+# Four biography rewrites — editorial draft
+
+Date: 2026-10-30. Scope: Abigail Vásquez, Adriana Green, Adriano Ventura, Adriel Music. Draft content only; no database change in this subtask. `[[Canonical Artist]]` marks a verified catalog identity for the parent importer to convert to structured artistReference nodes.
+
+## abigail-vasquez
+
+### EN
+
+```markdown
+Abigail Vásquez is a Dominican Christian singer whose publicly documented videos center on worship music. Her own channel records performances from 2020 through 2026.
+
+**Recorded performances**
+
+In a 2020 video she presented «Amor Sin Condición» as a cover. Another video from 2024 presents «Alma Mía» as a cover. Both document her interpretations of existing songs.
+
+**Live sessions**
+
+Her channel later posted worship medleys and live sessions, including «Te Tocaré (Live Session)» in 2026.
+
+**Legacy**
+
+Her video record documents a continuing worship repertoire across cover performances and later live sessions.
+```
+
+### ES
+
+```markdown
+Abigail Vásquez es una cantante cristiana dominicana cuyos videos documentados se centran en la música de adoración. En su propio canal aparecen interpretaciones publicadas entre 2020 y 2026.
+
+**Interpretaciones grabadas**
+
+En un video de 2020 presentó «Amor Sin Condición» como versión de otro tema. Otro video, de 2024, identifica «Alma Mía» también como versión. Ambos documentan sus interpretaciones de canciones ajenas.
+
+**Sesiones en vivo**
+
+Más adelante publicó popurrís de adoración y sesiones en vivo en su canal, entre ellas «Te Tocaré (Live Session)» en 2026.
+
+**Legado**
+
+Sus videos permiten seguir un repertorio de adoración que va de las versiones de otros temas a las sesiones en vivo posteriores.
+```
+
+### Source map
+
+- [Source](https://www.instagram.com/abigailvasquez_oficial/): Official Instagram connects her to her video channel.
+- [Source](https://www.youtube.com/channel/UC9-rx9beApQZ4q4-85oGUOQ): Artist-owned channel: 2020 «Amor Sin Condición» cover; 2024 «Alma Mía» cover; 2026 «Te Tocaré» live session.
+- [Source](https://www.facebook.com/100065210673309/videos/2456755291235827/): Corroborative older worship-performance footage, not used to establish a release year.
+
+### Editorial notes
+
+- No independently verified DOB or birthplace; neither appears in prose.
+- Artist-owned channel labels «Amor Sin Condición» and «Alma Mía» as covers; no authorship inferred.
+- Removed 2018 «Si Tu Presencia Conmigo No Va» and 2023 «Alma Mía (En Vivo)» catalog dates from prose pending independent confirmation.
+- Removed unsupported international audience, ministry events, «Tu Gracia» and «Rindo Mi Corazón».
+
+## adriana-green
+
+### EN
+
+```markdown
+Adriana Green is a Dominican Christian singer born in Santo Domingo, in Santo Domingo province. She has spent her life in La Romana, the province she identifies as home. In 2022 she won the second season of «The Voice Dominicana».
+
+**Music and La Romana**
+
+A 2013 profile documented Green's work as a Christian singer. Her connection to La Romana is biographical rather than a claim about where she was born: she grew up there and identifies with the province.
+
+**«The Voice Dominicana»**
+
+Green won the televised competition on 23 October 2022 as a member of [[Milly Quezada]]'s team. In the final she performed «Yo viviré». The result brought her national television exposure.
+
+**Later recording**
+
+In 2023 she released the single «Hasta el final». Press coverage associated the release with «Universal Music Group».
+
+**Legacy**
+
+Her documented career joins Christian singing, a nationally televised competition victory and a subsequent single. La Romana remains central to her personal identity, while Santo Domingo is her place of birth.
+```
+
+### ES
+
+```markdown
+Adriana Green es una cantante cristiana dominicana nacida en Santo Domingo, provincia Santo Domingo. Ha vivido su vida en La Romana y se identifica con esa provincia. En 2022 ganó la segunda temporada de «The Voice Dominicana».
+
+**Música y vínculo con La Romana**
+
+Una semblanza publicada en 2013 ya registraba su actividad como cantante cristiana. La Romana forma parte de su trayectoria personal y de su identidad, aunque su nacimiento ocurrió en Santo Domingo.
+
+**«The Voice Dominicana»**
+
+El 23 de octubre de 2022 ganó la competencia televisiva como integrante del equipo de [[Milly Quezada]]. En la final interpretó «Yo viviré». El triunfo dio proyección nacional a su voz.
+
+**Grabación posterior**
+
+En 2023 publicó el sencillo «Hasta el final», vinculado en la prensa con «Universal Music Group».
+
+**Legado**
+
+Su recorrido documentado reúne el canto cristiano, la victoria en un concurso televisivo nacional y una grabación posterior. La Romana es la provincia con la que se identifica; Santo Domingo es su lugar de nacimiento.
+```
+
+### Source map
+
+- Editor's firsthand clarification, 2026-10-30: Born in Santo Domingo city, Santo Domingo province; has spent her life in and identifies with La Romana. Overrides previous third-party birthplace assertions.
+- [Source](https://premiosnimbar.blogspot.com/2013/01/adriana-green-es-una-artista-de-la.html): Christian singing publicly documented by 2013; source incorrectly says born La Romana and is not used for birthplace or exact DOB.
+- [Source](https://ohmagazinerd.com/adriana-green-ganadora-the-voice-dominicana/): 2022 season-two victory, Milly Quezada team, final performance of «Yo viviré»; source's birthplace statement conflicts with editor correction.
+- [Source](https://rccnoticias.com.do/adriana-green-estrena-hasta-el-final-de-la-mano-de-universal-music-group-174275/): 2023 single «Hasta el final» and label association.
+- [Source](https://music.apple.com/us/album/hasta-el-final-single/1700504257): Streaming listing for the 2023 single; release-day metadata conflicts with press, hence prose states year only.
+
+### Editorial notes
+
+- Born Santo Domingo city/province and lived/identifies La Romana, per editor confirmation; do not import third-party La Romana birthplace.
+- 1981-01-01 appears in two sources but may be propagated; exact DOB omitted pending first-party verification.
+- Did not claim the reported cash prize was paid.
+- Kept existing Milly Quezada catalog reference.
+
+## adriano-ventura
+
+### EN
+
+```markdown
+Adriano Ventura is a Dominican bachata singer and songwriter. His work is documented from the 1968 song «La novia ajena» to his production of his sister [[Aridia Ventura]]'s first single in 1975.
+
+**Bachata in the late 1960s**
+
+Ventura wrote «La novia ajena» in 1968, drawing on the style and rhythm of a Mexican waltz. The song brought him recognition in the bachata scene before his sister began recording.
+
+**Work with his sister**
+
+In 1975 he produced [[Aridia Ventura]]'s first single, which included «No eres varón». Her later second single attracted [[Radhamés Aracena]], owner of «Radio Guarachita», and led to a recording contract. The documented sequence places Adriano in her earliest recording work.
+
+**Legacy**
+
+«La novia ajena» and his production for [[Aridia Ventura]] document Ventura's contributions as both songwriter and producer during bachata's early recorded history.
+```
+
+### ES
+
+```markdown
+Adriano Ventura es un cantante y compositor dominicano de bachata. Su trabajo está documentado desde «La novia ajena», de 1968, hasta la producción del primer sencillo de su hermana [[Aridia Ventura]] en 1975.
+
+**Bachata a finales de los sesenta**
+
+En 1968 escribió «La novia ajena» con el estilo y el ritmo de un vals mexicano. La canción le dio reconocimiento en la bachata antes de que su hermana comenzara a grabar.
+
+**Trabajo con su hermana**
+
+En 1975 produjo el primer sencillo de [[Aridia Ventura]], que incluyó «No eres varón». El segundo sencillo de ella atrajo después a [[Radhamés Aracena]], dueño de «Radio Guarachita», y dio paso a un contrato discográfico. Esa secuencia sitúa a Adriano en el inicio de la carrera grabada de Aridia.
+
+**Legado**
+
+«La novia ajena» y su producción para [[Aridia Ventura]] documentan sus aportes como compositor y productor en los primeros años de grabación de la bachata.
+```
+
+### Source map
+
+- [Source](https://www.iasorecords.com/es/artists/aridia-ventura): Adriano wrote «La novia ajena» in 1968 in Mexican-waltz style; produced Aridia's first single in 1975, including «No eres varón»; Aridia's later contract with Radhamés Aracena of Radio Guarachita. This source gives Jacagua as Aridia's birthplace only.
+
+### Editorial notes
+
+- No DOB, birthplace or present residence asserted; prior Jacagua claim was a misreading of Aridia's birthplace.
+- Dropped unsupported 'first bachatero from Santiago' superlative and the assertion that he recorded the 1968 song himself.
+- Dropped prior contextual links to José Manuel Calderón and Luis Segura because the located source does not establish a specific connection to Adriano.
+- Retained sourced Aridia Ventura and Radhamés Aracena references.
+
+## adriel-music
+
+### EN
+
+```markdown
+Adriel Music is a Dominican urban-music singer whose documented releases span 2021 to 2023. His early public account places the beginning of his songwriting in New York City, without establishing his birthplace.
+
+**Early work**
+
+A 2021 press profile reported that Adriel was writing songs informally in New York at age thirteen. He explored trap and dembow before turning to a blend of urban styles. In April 2021 he promoted «La calle ta' prendía», accompanied by a video on his own channel.
+
+**Recorded singles**
+
+His later digital releases include «La Combi» and «Desde Abajo» in 2022, followed by «Modo Joseo» and «Tu No Mete Na» in 2023. These dated recordings extend the record of his work beyond the single discussed in the 2021 press profile.
+
+**Legacy**
+
+The documented sequence from «La calle ta' prendía» through the 2023 singles shows a continued recording career across several forms of Dominican urban music.
+```
+
+### ES
+
+```markdown
+Adriel Music es un cantante dominicano de música urbana con lanzamientos documentados entre 2021 y 2023. El relato público sobre sus comienzos lo sitúa escribiendo canciones en Nueva York, sin establecer allí su lugar de nacimiento.
+
+**Comienzos**
+
+Una semblanza de prensa publicada en 2021 señaló que a los trece años ya escribía canciones de manera informal en Nueva York. Exploró el trap y el dembow antes de orientar su propuesta hacia la fusión de estilos urbanos. En abril de 2021 promocionó «La calle ta' prendía», acompañada de un video en su canal.
+
+**Sencillos grabados**
+
+En 2022 publicó «La Combi» y «Desde Abajo». Al año siguiente aparecieron «Modo Joseo» y «Tu No Mete Na». Esos lanzamientos amplían la trayectoria registrada más allá del tema reseñado por la prensa en 2021.
+
+**Legado**
+
+La secuencia documentada desde «La calle ta' prendía» hasta los sencillos de 2023 muestra la continuidad de su carrera discográfica dentro de la música urbana dominicana.
+```
+
+### Source map
+
+- [Source](https://www.diariolibre.com/revista/musica/adriel-music-promociona-la-calle-ta-prendia-NP25916759): 2021 press profile, songwriting in New York at age thirteen, trap/dembow/fusion, and promotion of «La calle ta' prendía» with own-channel video.
+- [Source](https://www.qobuz.com/us-en/interpreter/adriel-music/2771450): Dated releases «La Combi» and «Desde Abajo» (2022), «Modo Joseo» and «Tu No Mete Na» (2023).
+- [Source](https://music.apple.com/us/artist/adriel-music/1557973838): Independent streaming catalog corroboration of release titles and years.
+
+### Editorial notes
+
+- No verified DOB or birthplace; New York career start is not a birth-place claim.
+- Stored personal name Óscar Castanos Palin is unverified and excluded from prose.
+- Mario TSB was not included because no catalog identity was verified and the 2022 release chronology does not require the collaboration claim.

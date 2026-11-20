@@ -1,0 +1,2497 @@
+{
+  "authorization": "User requested all session biographies be reviewed and pending links updated, 2026-10-24.",
+  "scope": [
+    {
+      "id": "6454a95c-0d60-499d-b2c3-4ad262efb7e6",
+      "name": "Brettón"
+    },
+    {
+      "id": "00652f5d-1e5f-436a-b12a-7e309a3deebc",
+      "name": "Dhariana"
+    },
+    {
+      "id": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+      "name": "Janio Lora"
+    },
+    {
+      "id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "name": "Jicarada"
+    },
+    {
+      "id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "name": "José Lacay"
+    },
+    {
+      "id": "20853036-92ff-4b77-a2cb-b2f54db77011",
+      "name": "Kaly Ocho"
+    },
+    {
+      "id": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+      "name": "La Doncella del Acordeón"
+    },
+    {
+      "id": "f4d70b7f-0ef5-4190-806f-3cf1b56f822d",
+      "name": "LeidyTr3"
+    },
+    {
+      "id": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+      "name": "Lena Dardelet"
+    },
+    {
+      "id": "c3307832-05e9-43ce-a575-56d463ffbbc1",
+      "name": "Lil Naay"
+    },
+    {
+      "id": "1e35a517-6417-4502-81b1-516e1cf9ebfa",
+      "name": "Lomiiel"
+    },
+    {
+      "id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+      "name": "Luchy Vicioso"
+    },
+    {
+      "id": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+      "name": "Martox"
+    },
+    {
+      "id": "32aadd75-c75f-4774-a67e-d2124614ea7c",
+      "name": "Michan Leonardo"
+    },
+    {
+      "id": "a29d9b96-2b4a-41ae-a41d-6157f183c991",
+      "name": "Nelly Swing"
+    },
+    {
+      "id": "75f20609-7494-4a82-ab4c-a2176b0458a1",
+      "name": "Ney Nilo"
+    },
+    {
+      "id": "cf9516d9-51c7-4791-bb4e-4feab7b76863",
+      "name": "Nicol Peña"
+    },
+    {
+      "id": "df5ef32e-ea15-4c22-a3c6-b9a1276b98ad",
+      "name": "Onguito Wa"
+    },
+    {
+      "id": "a781211c-5b4e-4893-83d3-b5a3528d8fb2",
+      "name": "Raffy Díaz"
+    },
+    {
+      "id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+      "name": "Ravel"
+    },
+    {
+      "id": "307722e8-5902-41b4-a9b7-ae67d99c87c6",
+      "name": "Rhina Ramírez"
+    },
+    {
+      "id": "e9588b80-ca3b-4ae7-8fb3-ab86ce044e34",
+      "name": "Rubali Valerio"
+    },
+    {
+      "id": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+      "name": "Solo Fernández"
+    },
+    {
+      "id": "55b058c7-6a9f-4574-90af-ca1343176dbc",
+      "name": "Wishow"
+    }
+  ],
+  "reviewed_documents": [
+    {
+      "id": "eefb5bc7-7685-407a-9f1e-58eb99157f4e",
+      "owner_id": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+      "locale": "en",
+      "revision": 1,
+      "status": "draft"
+    },
+    {
+      "id": "7e4b417a-fb9a-4ac0-b3e9-ef6e27499339",
+      "owner_id": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+      "locale": "es",
+      "revision": 1,
+      "status": "draft"
+    },
+    {
+      "id": "af2bf6c9-9890-4461-8a19-8a892cf1c226",
+      "owner_id": "e9588b80-ca3b-4ae7-8fb3-ab86ce044e34",
+      "locale": "en",
+      "revision": 2,
+      "status": "published"
+    },
+    {
+      "id": "4cc7d0eb-e216-4445-8c17-e0c36549eaad",
+      "owner_id": "e9588b80-ca3b-4ae7-8fb3-ab86ce044e34",
+      "locale": "es",
+      "revision": 2,
+      "status": "published"
+    },
+    {
+      "id": "2fe6f02b-1751-4520-a051-45261f2d7083",
+      "owner_id": "cf9516d9-51c7-4791-bb4e-4feab7b76863",
+      "locale": "en",
+      "revision": 2,
+      "status": "published"
+    },
+    {
+      "id": "e0050585-f8f8-4de4-a576-a84a080ab97f",
+      "owner_id": "cf9516d9-51c7-4791-bb4e-4feab7b76863",
+      "locale": "es",
+      "revision": 2,
+      "status": "published"
+    },
+    {
+      "id": "f1733145-ca01-482c-8911-b1b70d756e87",
+      "owner_id": "55b058c7-6a9f-4574-90af-ca1343176dbc",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "0753968c-6899-4787-993c-968f97b9cca4",
+      "owner_id": "55b058c7-6a9f-4574-90af-ca1343176dbc",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "d67f4490-558f-4a3e-94ef-97cbb91e5793",
+      "owner_id": "a29d9b96-2b4a-41ae-a41d-6157f183c991",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "0036acd7-40f6-4e70-9476-04b3977683c6",
+      "owner_id": "a29d9b96-2b4a-41ae-a41d-6157f183c991",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "61646c3f-7a33-4d8f-b170-147308e228b5",
+      "owner_id": "32aadd75-c75f-4774-a67e-d2124614ea7c",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "eb9e3234-570b-4f52-9fe3-cd2e016bdb44",
+      "owner_id": "32aadd75-c75f-4774-a67e-d2124614ea7c",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "f6515816-e93b-4dd0-86a2-5fad2c3344bf",
+      "owner_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "0b063fa5-1b01-4958-859f-13498533b237",
+      "owner_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+      "locale": "es",
+      "revision": 2,
+      "status": "published"
+    },
+    {
+      "id": "18c17748-ee5f-4908-8f55-d84e5be8c970",
+      "owner_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "f227a826-a986-4166-aae1-83c8a402c439",
+      "owner_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "863193ff-ac8b-4d5e-b94e-33d0574b102a",
+      "owner_id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "ed6cb385-a64d-41d3-94f9-18008e557326",
+      "owner_id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "3ddaca8d-e6e8-45f7-800c-0705a389a8d0",
+      "owner_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "59773006-11c7-47ad-93d8-8547db1ac8fe",
+      "owner_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "f9aa3b83-3985-465c-ab31-349ed9055415",
+      "owner_id": "a781211c-5b4e-4893-83d3-b5a3528d8fb2",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "13b1c898-fa5d-4c02-9d72-55bd1744ee1a",
+      "owner_id": "a781211c-5b4e-4893-83d3-b5a3528d8fb2",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "a846d4fe-e69c-45f7-9dba-425b632cee1c",
+      "owner_id": "00652f5d-1e5f-436a-b12a-7e309a3deebc",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "91789053-e7bf-4e18-b40f-22714174a932",
+      "owner_id": "00652f5d-1e5f-436a-b12a-7e309a3deebc",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "cd9c1525-76a6-4d60-8aa5-cb661b76571e",
+      "owner_id": "1e35a517-6417-4502-81b1-516e1cf9ebfa",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "27d18c25-4862-4039-9965-4ee2894776e2",
+      "owner_id": "1e35a517-6417-4502-81b1-516e1cf9ebfa",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "57e10e7e-6a95-40fa-b4ea-3a3633553c8f",
+      "owner_id": "f4d70b7f-0ef5-4190-806f-3cf1b56f822d",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "2826cca8-6252-4897-9d83-e84e7cbc3bbb",
+      "owner_id": "f4d70b7f-0ef5-4190-806f-3cf1b56f822d",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "f7948992-bb93-41f2-82ea-89a89d7570ca",
+      "owner_id": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "67d08012-c5ef-4d2e-97d7-15e030ed6676",
+      "owner_id": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "2446790a-3ace-4e87-8c42-f8f68ed42151",
+      "owner_id": "75f20609-7494-4a82-ab4c-a2176b0458a1",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "4da9ee23-e8d4-4d8d-9f4c-b05c9f847c43",
+      "owner_id": "75f20609-7494-4a82-ab4c-a2176b0458a1",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "bf1a3837-2388-42c8-a91a-9270bc09a919",
+      "owner_id": "df5ef32e-ea15-4c22-a3c6-b9a1276b98ad",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "f82c4e25-abf4-470f-9514-2421718c1bc7",
+      "owner_id": "df5ef32e-ea15-4c22-a3c6-b9a1276b98ad",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "162cb874-fcdf-4be7-bb35-4899156e4526",
+      "owner_id": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "58de48a1-8eca-450c-8782-c5222530d1b2",
+      "owner_id": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "47051f30-91b9-4354-9109-5c56fb658af7",
+      "owner_id": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "b012f1bf-e93a-4164-8cfc-63b88d5fc71e",
+      "owner_id": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "25a4ff4d-e073-4976-9e27-77891310febe",
+      "owner_id": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "f08793b3-66e9-42a0-b8db-a9ca4e059f44",
+      "owner_id": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "fa67412a-6944-4ebc-bd31-c6424698bfa6",
+      "owner_id": "c3307832-05e9-43ce-a575-56d463ffbbc1",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "2b61f8ca-dfe6-429e-96ce-af0551aae808",
+      "owner_id": "c3307832-05e9-43ce-a575-56d463ffbbc1",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "e0741f33-3a46-4181-8045-fef470cbeb39",
+      "owner_id": "20853036-92ff-4b77-a2cb-b2f54db77011",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "6fa246a8-9a19-46dd-b43b-1159bc91ecc7",
+      "owner_id": "20853036-92ff-4b77-a2cb-b2f54db77011",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "5c707276-c79f-490a-92e3-d0282cfa9428",
+      "owner_id": "307722e8-5902-41b4-a9b7-ae67d99c87c6",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "99ecd6b1-fcff-44d6-99fd-51c5b8cbdf62",
+      "owner_id": "307722e8-5902-41b4-a9b7-ae67d99c87c6",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "c7c40810-198c-4688-bc4c-51824f850f29",
+      "owner_id": "6454a95c-0d60-499d-b2c3-4ad262efb7e6",
+      "locale": "es",
+      "revision": 1,
+      "status": "published"
+    },
+    {
+      "id": "667c44ce-f0f7-470e-8220-861041b3a897",
+      "owner_id": "6454a95c-0d60-499d-b2c3-4ad262efb7e6",
+      "locale": "en",
+      "revision": 1,
+      "status": "published"
+    }
+  ],
+  "changes": [
+    {
+      "owner": "Dhariana",
+      "owner_id": "00652f5d-1e5f-436a-b12a-7e309a3deebc",
+      "slug": "dhariana",
+      "owner_status": "published",
+      "id": "a846d4fe-e69c-45f7-9dba-425b632cee1c",
+      "locale": "es",
+      "status": "published",
+      "expected_revision": 1,
+      "before": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Dhariana, conocida como La Coqueta, es una cantante, compositora y actriz dominicana vinculada a la balada y a un repertorio que también comprende merengue, salsa y bachata. Su trayectoria se dio a conocer durante los años ochenta con canciones como «Cuando», «A esa» y «Aunque reviente mi pecho». Celebra su cumpleaños el 13 de septiembre.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Formación y procedencia",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La artista identifica Santo Domingo como su ciudad de origen. Su formación artística incluyó estudios con Ónix Báez, Serbio Uribe, Osvaldo Cepeda y Cepeda y Henry Ely. En Bellas Artes tomó clases de baile folclórico con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+                  "displayText": "Casandra Damirón",
+                  "occurrenceId": "45289fa0-7c28-4439-b945-61733ff09930"
+                }
+              },
+              {
+                "text": " y de danza moderna con Josefina Miniño; Roberto López trabajó como su coreógrafo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Discos, televisión y escenarios",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su primer álbum, «Ven a Amarme», fue comercializado por «TH Records». La canción, el movimiento escénico y una imagen propia formaron parte de su propuesta. Su recorrido incluyó los espectáculos «Ven a amarme» y «Explotó Dhariana», así como el apoyo televisivo de Milton Peláez en «Sabroshow». ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "displayText": "Manuel Tejada",
+                  "occurrenceId": "eace898f-8e27-4dda-8d36-2ea52b671e2c"
+                }
+              },
+              {
+                "text": " realizó arreglos para «Cuando» y «A esa». También llevó su trabajo a escenarios de Honduras, Perú, Curazao, España y Estados Unidos.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El regreso y nuevas canciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En mayo de 2007 anunció su regreso al Maunaloa con «Sólo basta amar», bajo la dirección musical de Leo Pimentel. En ese período promovía «Mentiras», una bachata de su propia autoría. Diez años después presentó «Los caminos del mar», escrita por Daniela de la Cruz: la interpretó en «De extremo a extremo» el 13 de julio de 2017 y al día siguiente en «Buena Noche». Su repertorio posterior incluye «Gracias por amarme», junto a Raúl Santi, y «Mujer deseada», de Marlene de los Santos.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Dhariana pertenece a la generación de solistas que dio presencia a la balada dominicana en la radio y la televisión de los años ochenta. Su actividad comprende también la interpretación de música bailable y la participación en el espectáculo teatral «Por la Patria Cantando». Las grabaciones y actuaciones conservadas en su canal oficial permiten seguir esas distintas facetas de su carrera.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Dhariana, conocida como La Coqueta, es una cantante, compositora y actriz dominicana vinculada a la balada y a un repertorio que también comprende merengue, salsa y bachata. Su trayectoria se dio a conocer durante los años ochenta con canciones como «Cuando», «A esa» y «Aunque reviente mi pecho». Celebra su cumpleaños el 13 de septiembre.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Formación y procedencia",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La artista identifica Santo Domingo como su ciudad de origen. Su formación artística incluyó estudios con Ónix Báez, Serbio Uribe, Osvaldo Cepeda y Cepeda y Henry Ely. En Bellas Artes tomó clases de baile folclórico con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+                  "displayText": "Casandra Damirón",
+                  "occurrenceId": "45289fa0-7c28-4439-b945-61733ff09930"
+                }
+              },
+              {
+                "text": " y de danza moderna con Josefina Miniño; Roberto López trabajó como su coreógrafo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Discos, televisión y escenarios",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su primer álbum, «Ven a Amarme», fue comercializado por «TH Records». La canción, el movimiento escénico y una imagen propia formaron parte de su propuesta. Su recorrido incluyó los espectáculos «Ven a amarme» y «Explotó Dhariana», así como el apoyo televisivo de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "d7523865-c149-4a06-a576-dbfc221c98d1",
+                  "occurrenceId": "2a75ee3e-ae68-4ec6-bbcd-2b04178574df",
+                  "displayText": "Milton Peláez"
+                }
+              },
+              {
+                "text": " en «Sabroshow». ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "displayText": "Manuel Tejada",
+                  "occurrenceId": "eace898f-8e27-4dda-8d36-2ea52b671e2c"
+                }
+              },
+              {
+                "text": " realizó arreglos para «Cuando» y «A esa». También llevó su trabajo a escenarios de Honduras, Perú, Curazao, España y Estados Unidos.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El regreso y nuevas canciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En mayo de 2007 anunció su regreso al Maunaloa con «Sólo basta amar», bajo la dirección musical de Leo Pimentel. En ese período promovía «Mentiras», una bachata de su propia autoría. Diez años después presentó «Los caminos del mar», escrita por Daniela de la Cruz: la interpretó en «De extremo a extremo» el 13 de julio de 2017 y al día siguiente en «Buena Noche». Su repertorio posterior incluye «Gracias por amarme», junto a Raúl Santi, y «Mujer deseada», de Marlene de los Santos.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Dhariana pertenece a la generación de solistas que dio presencia a la balada dominicana en la radio y la televisión de los años ochenta. Su actividad comprende también la interpretación de música bailable y la participación en el espectáculo teatral «Por la Patria Cantando». Las grabaciones y actuaciones conservadas en su canal oficial permiten seguir esas distintas facetas de su carrera.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "mentions": [
+        {
+          "before": "Milton Peláez",
+          "after": "Milton Peláez",
+          "target_id": "d7523865-c149-4a06-a576-dbfc221c98d1",
+          "evidence": "Existing career context in this biography and matching published catalog identity; no new biographical claim."
+        }
+      ]
+    },
+    {
+      "owner": "Dhariana",
+      "owner_id": "00652f5d-1e5f-436a-b12a-7e309a3deebc",
+      "slug": "dhariana",
+      "owner_status": "published",
+      "id": "91789053-e7bf-4e18-b40f-22714174a932",
+      "locale": "en",
+      "status": "published",
+      "expected_revision": 1,
+      "before": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Dhariana, professionally known as La Coqueta, is a Dominican singer, songwriter and actress whose repertoire embraces ballads, merengue, salsa and bachata. She became known during the 1980s through songs including «Cuando», «A esa» and «Aunque reviente mi pecho». Her birthday falls on September 13.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Background and artistic training",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "She identifies Santo Domingo as her hometown. Her artistic training included work with Ónix Báez, Serbio Uribe, Osvaldo Cepeda y Cepeda and Henry Ely. At Bellas Artes she studied folk dance with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+                  "displayText": "Casandra Damirón",
+                  "occurrenceId": "a94ca15f-e7a3-436c-8772-ff76ca078166"
+                }
+              },
+              {
+                "text": " and modern dance with Josefina Miniño, while Roberto López worked as her choreographer.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Records and stage performances",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«TH Records» marketed her first album, «Ven a Amarme». Her performances brought together singing, choreography and a distinctive stage image. Her shows included «Ven a amarme» and «Explotó Dhariana», and Milton Peláez supported her television appearances through «Sabroshow». ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "displayText": "Manuel Tejada",
+                  "occurrenceId": "fc1ebf33-4fb3-4320-a653-6fa8353cee30"
+                }
+              },
+              {
+                "text": " arranged «Cuando» and «A esa». She also performed in Honduras, Peru, Curaçao, Spain and the United States.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "A return to the stage and later repertoire",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In May 2007 she announced a return to the Maunaloa with «Sólo basta amar», with musical direction by Leo Pimentel. At the time she was promoting her own bachata composition «Mentiras». In 2017 she introduced Daniela de la Cruz’s «Los caminos del mar», performing it on «De extremo a extremo» on July 13 and on «Buena Noche» the following evening. Later repertoire includes «Gracias por amarme», with Raúl Santi, and Marlene de los Santos’s «Mujer deseada».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Dhariana forms part of the generation of solo singers who established a place for Dominican ballads on radio and television during the 1980s. Her work also extends to dance music and the theatrical production «Por la Patria Cantando». Recordings and performances preserved on her official channel document these different strands of her career.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Dhariana, professionally known as La Coqueta, is a Dominican singer, songwriter and actress whose repertoire embraces ballads, merengue, salsa and bachata. She became known during the 1980s through songs including «Cuando», «A esa» and «Aunque reviente mi pecho». Her birthday falls on September 13.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Background and artistic training",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "She identifies Santo Domingo as her hometown. Her artistic training included work with Ónix Báez, Serbio Uribe, Osvaldo Cepeda y Cepeda and Henry Ely. At Bellas Artes she studied folk dance with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+                  "displayText": "Casandra Damirón",
+                  "occurrenceId": "a94ca15f-e7a3-436c-8772-ff76ca078166"
+                }
+              },
+              {
+                "text": " and modern dance with Josefina Miniño, while Roberto López worked as her choreographer.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Records and stage performances",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«TH Records» marketed her first album, «Ven a Amarme». Her performances brought together singing, choreography and a distinctive stage image. Her shows included «Ven a amarme» and «Explotó Dhariana», and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "d7523865-c149-4a06-a576-dbfc221c98d1",
+                  "occurrenceId": "e09b148c-3b45-4f28-acf1-e123016bd52c",
+                  "displayText": "Milton Peláez"
+                }
+              },
+              {
+                "text": " supported her television appearances through «Sabroshow». ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "displayText": "Manuel Tejada",
+                  "occurrenceId": "fc1ebf33-4fb3-4320-a653-6fa8353cee30"
+                }
+              },
+              {
+                "text": " arranged «Cuando» and «A esa». She also performed in Honduras, Peru, Curaçao, Spain and the United States.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "A return to the stage and later repertoire",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In May 2007 she announced a return to the Maunaloa with «Sólo basta amar», with musical direction by Leo Pimentel. At the time she was promoting her own bachata composition «Mentiras». In 2017 she introduced Daniela de la Cruz’s «Los caminos del mar», performing it on «De extremo a extremo» on July 13 and on «Buena Noche» the following evening. Later repertoire includes «Gracias por amarme», with Raúl Santi, and Marlene de los Santos’s «Mujer deseada».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Dhariana forms part of the generation of solo singers who established a place for Dominican ballads on radio and television during the 1980s. Her work also extends to dance music and the theatrical production «Por la Patria Cantando». Recordings and performances preserved on her official channel document these different strands of her career.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "mentions": [
+        {
+          "before": "Milton Peláez",
+          "after": "Milton Peláez",
+          "target_id": "d7523865-c149-4a06-a576-dbfc221c98d1",
+          "evidence": "Existing career context in this biography and matching published catalog identity; no new biographical claim."
+        }
+      ]
+    },
+    {
+      "owner": "Solo Fernández",
+      "owner_id": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+      "slug": "solo-fernandez",
+      "owner_status": "published",
+      "id": "47051f30-91b9-4354-9109-5c56fb658af7",
+      "locale": "es",
+      "status": "published",
+      "expected_revision": 1,
+      "before": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Solo Fernández es una banda dominicana de rock alternativo e indie pop originaria de Santo Domingo. Su formación actual reúne a Gian Rojas en la voz y la guitarra, Freddy Navarro en el bajo y Ricardo Montilla en la batería. Su propuesta incorpora sintetizadores, electrónica y ritmos de baile, y obtuvo el Premio Soberano de Música Alternativa en 2024.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Del cuarteto al trío",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El proyecto tiene antecedentes en «Pandora», agrupación que Rojas y Navarro formaron con Montilla y el guitarrista Surya Cabral en 2015. Una reseña de la escena publicada en «Una isla es un universo» sitúa el nacimiento de Solo Fernández en junio de 2016. El nombre surgió de un mensaje de Facebook dirigido por error al grupo: una admiradora de la agrupación mexicana «Pandora» protestaba por una versión de una canción de Alejandro Fernández. El comentario se convirtió en una broma que terminó dando nombre al proyecto. Cabral participó en su etapa inicial como cuarteto; las publicaciones de 2021 ya describían la formación como trío.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Primeras grabaciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2017 presentaron su EP homónimo, integrado por «Astro», «Sueños Plásticos» y «Viceversa». Su primer álbum de estudio, «Multicolor», apareció en mayo de 2019 con ocho pistas, entre ellas «Control», «Lejos» y «Rompecabezas». En diciembre del mismo año publicaron «Multicolor (Extendido)», de doce pistas, que añadió canciones como «Verde», junto a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9e8971b9-92d3-40ef-9c99-5ccbc15eb068",
+                  "displayText": "Snenie",
+                  "occurrenceId": "8d5b473a-51d8-4e22-b10e-17e98886b46d"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Colaboración y comunidad",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su actividad en directo incluyó el festival «Isle of Light» y giras por México. Desde 2022 organizan «SOLOFEST», un encuentro de proyectos de la escena alternativa local e internacional. También participaron en la producción de «Jardín de las Almas», de la banda mexicana «Camilo Séptimo»; los créditos de varias canciones identifican a Gian Rojas y Freddy Navarro como coautores y a Solo Fernández como productor junto a otros colaboradores.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Las Cosas Que Nunca Me Dije» y nueva etapa",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2024 publicaron su segundo álbum, «Las Cosas Que Nunca Me Dije», con trece canciones. Incluye «Sin Mirar» con «CLUBZ», «Telescopio» con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+                  "displayText": "Alex Ferreira",
+                  "occurrenceId": "c33e369f-3f43-4ac2-8492-3b57d52ccc32"
+                }
+              },
+              {
+                "text": " y «Azul» con «Noah Pino Palo». Su repertorio colaborativo incluye además «La Ruta Natural» con «Rubytates» y «Solo tú» con «DLi» y «Martox». En enero de 2026 anunciaron su incorporación al sello «Point Records» y en marzo abrieron el concierto de «The Killers» en Santo Domingo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La trayectoria de Solo Fernández combina la creación de discos, el intercambio con músicos de otros países y la organización de espacios para la escena alternativa dominicana. «SOLOFEST» expresa esa dimensión colectiva, mientras sus grabaciones amplían el lenguaje del rock mediante recursos del pop y la música electrónica.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Solo Fernández es una banda dominicana de rock alternativo e indie pop originaria de Santo Domingo. Su formación actual reúne a Gian Rojas en la voz y la guitarra, Freddy Navarro en el bajo y Ricardo Montilla en la batería. Su propuesta incorpora sintetizadores, electrónica y ritmos de baile, y obtuvo el Premio Soberano de Música Alternativa en 2024.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Del cuarteto al trío",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El proyecto tiene antecedentes en «Pandora», agrupación que Rojas y Navarro formaron con Montilla y el guitarrista Surya Cabral en 2015. Una reseña de la escena publicada en «Una isla es un universo» sitúa el nacimiento de Solo Fernández en junio de 2016. El nombre surgió de un mensaje de Facebook dirigido por error al grupo: una admiradora de la agrupación mexicana «Pandora» protestaba por una versión de una canción de Alejandro Fernández. El comentario se convirtió en una broma que terminó dando nombre al proyecto. Cabral participó en su etapa inicial como cuarteto; las publicaciones de 2021 ya describían la formación como trío.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Primeras grabaciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2017 presentaron su EP homónimo, integrado por «Astro», «Sueños Plásticos» y «Viceversa». Su primer álbum de estudio, «Multicolor», apareció en mayo de 2019 con ocho pistas, entre ellas «Control», «Lejos» y «Rompecabezas». En diciembre del mismo año publicaron «Multicolor (Extendido)», de doce pistas, que añadió canciones como «Verde», junto a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9e8971b9-92d3-40ef-9c99-5ccbc15eb068",
+                  "displayText": "Snenie",
+                  "occurrenceId": "8d5b473a-51d8-4e22-b10e-17e98886b46d"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Colaboración y comunidad",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su actividad en directo incluyó el festival «Isle of Light» y giras por México. Desde 2022 organizan «SOLOFEST», un encuentro de proyectos de la escena alternativa local e internacional. También participaron en la producción de «Jardín de las Almas», de la banda mexicana «Camilo Séptimo»; los créditos de varias canciones identifican a Gian Rojas y Freddy Navarro como coautores y a Solo Fernández como productor junto a otros colaboradores.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Las Cosas Que Nunca Me Dije» y nueva etapa",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2024 publicaron su segundo álbum, «Las Cosas Que Nunca Me Dije», con trece canciones. Incluye «Sin Mirar» con «CLUBZ», «Telescopio» con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+                  "displayText": "Alex Ferreira",
+                  "occurrenceId": "c33e369f-3f43-4ac2-8492-3b57d52ccc32"
+                }
+              },
+              {
+                "text": " y «Azul» con «Noah Pino Palo». Su repertorio colaborativo incluye además «La Ruta Natural» con «Rubytates» y «Solo tú» con «DLi» y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+                  "occurrenceId": "18b252a1-41a4-4331-b72a-43357ff40a46",
+                  "displayText": "Martox"
+                }
+              },
+              {
+                "text": ". En enero de 2026 anunciaron su incorporación al sello «Point Records» y en marzo abrieron el concierto de «The Killers» en Santo Domingo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La trayectoria de Solo Fernández combina la creación de discos, el intercambio con músicos de otros países y la organización de espacios para la escena alternativa dominicana. «SOLOFEST» expresa esa dimensión colectiva, mientras sus grabaciones amplían el lenguaje del rock mediante recursos del pop y la música electrónica.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "mentions": [
+        {
+          "before": "«Martox»",
+          "after": "Martox",
+          "target_id": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+          "evidence": "Existing career context in this biography and matching published catalog identity; no new biographical claim."
+        }
+      ]
+    },
+    {
+      "owner": "Solo Fernández",
+      "owner_id": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+      "slug": "solo-fernandez",
+      "owner_status": "published",
+      "id": "b012f1bf-e93a-4164-8cfc-63b88d5fc71e",
+      "locale": "en",
+      "status": "published",
+      "expected_revision": 1,
+      "before": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Solo Fernández is a Dominican alternative rock and indie pop band from Santo Domingo. Its current lineup comprises Gian Rojas on vocals and guitar, Freddy Navarro on bass and Ricardo Montilla on drums. The group incorporates synthesizers, electronic textures and dance rhythms, and won the 2024 Premio Soberano for Alternative Music.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "From quartet to trio",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The project's roots lie in «Pandora», a band Rojas and Navarro formed with Montilla and guitarist Surya Cabral in 2015. A scene profile in «Una isla es un universo» dates the emergence of Solo Fernández to June 2016. Its name grew out of a Facebook message mistakenly sent to the musicians: a fan of the Mexican group «Pandora» was complaining about a version of an Alejandro Fernández song. The comment became an inside joke and eventually the band's name. Cabral belonged to its early quartet lineup; reports from 2021 already describe the group as a trio.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Early recordings",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2017 they released their self-titled EP, containing «Astro», «Sueños Plásticos» and «Viceversa». Their first studio album, «Multicolor», appeared in May 2019 with eight tracks, including «Control», «Lejos» and «Rompecabezas». That December they issued the twelve-track «Multicolor (Extendido)», adding songs such as «Verde» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9e8971b9-92d3-40ef-9c99-5ccbc15eb068",
+                  "displayText": "Snenie",
+                  "occurrenceId": "20ded3a3-ed1a-4f73-8249-43ad9e05a20b"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Collaboration and community",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Their live work has included «Isle of Light» and tours in Mexico. Since 2022 they have organized «SOLOFEST», bringing together local and international alternative acts. They also contributed to «Jardín de las Almas» by the Mexican band «Camilo Séptimo»: several tracks credit Gian Rojas and Freddy Navarro as co-writers and Solo Fernández as producer alongside other collaborators.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Las Cosas Que Nunca Me Dije» and a new chapter",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2024 they released their second album, the thirteen-track «Las Cosas Que Nunca Me Dije». It includes «Sin Mirar» with «CLUBZ», «Telescopio» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+                  "displayText": "Alex Ferreira",
+                  "occurrenceId": "5021abcf-bbe7-4a3a-91f6-c569237d0903"
+                }
+              },
+              {
+                "text": " and «Azul» with «Noah Pino Palo». Other collaborations include «La Ruta Natural» with «Rubytates» and «Solo tú» with «DLi» and «Martox». In January 2026 they announced their signing to «Point Records», and in March they opened for «The Killers» in Santo Domingo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Solo Fernández combines record-making, exchanges with musicians abroad and the creation of spaces for the Dominican alternative scene. «SOLOFEST» gives practical form to that collective approach, while the band's recordings extend its rock foundation through pop songwriting and electronic production.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Solo Fernández is a Dominican alternative rock and indie pop band from Santo Domingo. Its current lineup comprises Gian Rojas on vocals and guitar, Freddy Navarro on bass and Ricardo Montilla on drums. The group incorporates synthesizers, electronic textures and dance rhythms, and won the 2024 Premio Soberano for Alternative Music.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "From quartet to trio",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The project's roots lie in «Pandora», a band Rojas and Navarro formed with Montilla and guitarist Surya Cabral in 2015. A scene profile in «Una isla es un universo» dates the emergence of Solo Fernández to June 2016. Its name grew out of a Facebook message mistakenly sent to the musicians: a fan of the Mexican group «Pandora» was complaining about a version of an Alejandro Fernández song. The comment became an inside joke and eventually the band's name. Cabral belonged to its early quartet lineup; reports from 2021 already describe the group as a trio.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Early recordings",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2017 they released their self-titled EP, containing «Astro», «Sueños Plásticos» and «Viceversa». Their first studio album, «Multicolor», appeared in May 2019 with eight tracks, including «Control», «Lejos» and «Rompecabezas». That December they issued the twelve-track «Multicolor (Extendido)», adding songs such as «Verde» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9e8971b9-92d3-40ef-9c99-5ccbc15eb068",
+                  "displayText": "Snenie",
+                  "occurrenceId": "20ded3a3-ed1a-4f73-8249-43ad9e05a20b"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Collaboration and community",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Their live work has included «Isle of Light» and tours in Mexico. Since 2022 they have organized «SOLOFEST», bringing together local and international alternative acts. They also contributed to «Jardín de las Almas» by the Mexican band «Camilo Séptimo»: several tracks credit Gian Rojas and Freddy Navarro as co-writers and Solo Fernández as producer alongside other collaborators.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Las Cosas Que Nunca Me Dije» and a new chapter",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2024 they released their second album, the thirteen-track «Las Cosas Que Nunca Me Dije». It includes «Sin Mirar» with «CLUBZ», «Telescopio» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+                  "displayText": "Alex Ferreira",
+                  "occurrenceId": "5021abcf-bbe7-4a3a-91f6-c569237d0903"
+                }
+              },
+              {
+                "text": " and «Azul» with «Noah Pino Palo». Other collaborations include «La Ruta Natural» with «Rubytates» and «Solo tú» with «DLi» and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+                  "occurrenceId": "a0d42a0a-610a-478c-a098-9aa17ff9c79d",
+                  "displayText": "Martox"
+                }
+              },
+              {
+                "text": ". In January 2026 they announced their signing to «Point Records», and in March they opened for «The Killers» in Santo Domingo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Solo Fernández combines record-making, exchanges with musicians abroad and the creation of spaces for the Dominican alternative scene. «SOLOFEST» gives practical form to that collective approach, while the band's recordings extend its rock foundation through pop songwriting and electronic production.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "mentions": [
+        {
+          "before": "«Martox»",
+          "after": "Martox",
+          "target_id": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+          "evidence": "Existing career context in this biography and matching published catalog identity; no new biographical claim."
+        }
+      ]
+    },
+    {
+      "owner": "Martox",
+      "owner_id": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+      "slug": "martox",
+      "owner_status": "published",
+      "id": "25a4ff4d-e073-4976-9e27-77891310febe",
+      "locale": "es",
+      "status": "published",
+      "expected_revision": 1,
+      "before": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Martox es un dúo dominicano de pop caribeño originario de Santiago de los Caballeros, integrado por el vocalista Juan Miguel Martínez y el productor Eduardo Baldera. Su música vincula el R&B y la electrónica con ritmos tropicales y formas de la canción dominicana. Amigos desde la infancia, han desarrollado un proyecto en el que la interpretación vocal, la composición y la producción funcionan de manera complementaria.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Primeras canciones y versiones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Sus primeros pasos estuvieron ligados al colectivo santiaguero «MITEL DICO», con colaboraciones en trabajos de Diego Raposo y «La Ñapa», además de versiones compartidas en SoundCloud. En febrero de 2019 publicaron su reinterpretación de «Amapola», de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                  "displayText": "Juan Luis Guerra",
+                  "occurrenceId": "bf769332-30cd-429e-9d4c-aae3cf4cbcd0"
+                }
+              },
+              {
+                "text": ", quien la compartió en sus redes. Ese respaldo amplió la visibilidad del dúo. Ese año también presentaron su primer EP, «Canciones Que Puedes Usar En Mi Contra», que exploraba el R&B, la balada y la electrónica.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "De «Un Bolero» a «Baila!»",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2021 publicaron «Un Bolero» y «Se Siente Diferente». Este segundo EP desplazó su sonido hacia el synth-pop, el funk y el disco, con «Mucho Mejor», junto a jonás, y «Pausa», con Gian Rojas, integrante de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+                  "displayText": "Solo Fernández",
+                  "occurrenceId": "ba3f3c7d-d03c-404b-a534-30f4d25224e7"
+                }
+              },
+              {
+                "text": ". Sus cinco canciones tuvieron videos conectados entre sí, dirigidos por Jorge Guillén y Víctor Cantisano. En 2023 llegó el EP «Baila!», que prolongó su exploración de la música de baile.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El Caribe como lenguaje",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En julio de 2024 publicaron «Que Bien Te Queda El Caribe», un EP de cinco temas que incluye «Canela» y «Y Qué», con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+                  "displayText": "Lena Dardelet",
+                  "occurrenceId": "f1b69823-1e84-4464-a13c-b8bc8efb1428"
+                }
+              },
+              {
+                "text": ", además de colaboraciones con NIKÓLA y GioBulla. En 2025 presentaron «Un Pambiche», con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                  "displayText": "El Prodigio",
+                  "occurrenceId": "56fe9e57-7110-4b05-90e0-d5d60f5ac996"
+                }
+              },
+              {
+                "text": " en el acordeón. La grabación acercó su producción contemporánea al merengue y fue acompañada por un videoclip dirigido por Víctor Cantisano.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Caracol» y expansión",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En septiembre de 2025 apareció una primera entrega de «Caracol», de siete canciones; en mayo de 2026 publicaron una versión ampliada del proyecto, presentado como su primer álbum de estudio. Su repertorio incorpora bachata, merengue y bolero junto a R&B y recursos electrónicos. En 2026 colaboraron con Leslie Grace en «TU SUPITE» y con La Cassandra en «Paraíso». Ese mismo año YouTube Music anunció a Martox entre los participantes de «Foundry Rising», su programa de apoyo a artistas en una etapa temprana de desarrollo en la plataforma.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Martox participa en la renovación del pop dominicano desde una formación de cantante y productor. Su recorrido conecta la escena independiente de Santiago con un repertorio caribeño abierto a la experimentación electrónica y al trabajo con otros intérpretes.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Martox es un dúo dominicano de pop caribeño originario de Santiago de los Caballeros, integrado por el vocalista Juan Miguel Martínez y el productor Eduardo Baldera. Su música vincula el R&B y la electrónica con ritmos tropicales y formas de la canción dominicana. Amigos desde la infancia, han desarrollado un proyecto en el que la interpretación vocal, la composición y la producción funcionan de manera complementaria.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Primeras canciones y versiones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Sus primeros pasos estuvieron ligados al colectivo santiaguero «MITEL DICO», con colaboraciones en trabajos de Diego Raposo y «La Ñapa», además de versiones compartidas en SoundCloud. En febrero de 2019 publicaron su reinterpretación de «Amapola», de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                  "displayText": "Juan Luis Guerra",
+                  "occurrenceId": "bf769332-30cd-429e-9d4c-aae3cf4cbcd0"
+                }
+              },
+              {
+                "text": ", quien la compartió en sus redes. Ese respaldo amplió la visibilidad del dúo. Ese año también presentaron su primer EP, «Canciones Que Puedes Usar En Mi Contra», que exploraba el R&B, la balada y la electrónica.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "De «Un Bolero» a «Baila!»",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2021 publicaron «Un Bolero» y «Se Siente Diferente». Este segundo EP desplazó su sonido hacia el synth-pop, el funk y el disco, con «Mucho Mejor», junto a jonás, y «Pausa», con Gian Rojas, integrante de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+                  "displayText": "Solo Fernández",
+                  "occurrenceId": "ba3f3c7d-d03c-404b-a534-30f4d25224e7"
+                }
+              },
+              {
+                "text": ". Sus cinco canciones tuvieron videos conectados entre sí, dirigidos por Jorge Guillén y Víctor Cantisano. En 2023 llegó el EP «Baila!», que prolongó su exploración de la música de baile.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El Caribe como lenguaje",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En julio de 2024 publicaron «Que Bien Te Queda El Caribe», un EP de cinco temas que incluye «Canela» y «Y Qué», con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+                  "displayText": "Lena Dardelet",
+                  "occurrenceId": "f1b69823-1e84-4464-a13c-b8bc8efb1428"
+                }
+              },
+              {
+                "text": ", además de colaboraciones con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8dbc74f9-4f8f-4e89-b947-465c5c79f0bd",
+                  "occurrenceId": "19008d8f-6a9f-49c8-b0bc-2c87b7b890ef",
+                  "displayText": "Nikóla"
+                }
+              },
+              {
+                "text": " y GioBulla. En 2025 presentaron «Un Pambiche», con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                  "displayText": "El Prodigio",
+                  "occurrenceId": "56fe9e57-7110-4b05-90e0-d5d60f5ac996"
+                }
+              },
+              {
+                "text": " en el acordeón. La grabación acercó su producción contemporánea al merengue y fue acompañada por un videoclip dirigido por Víctor Cantisano.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Caracol» y expansión",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En septiembre de 2025 apareció una primera entrega de «Caracol», de siete canciones; en mayo de 2026 publicaron una versión ampliada del proyecto, presentado como su primer álbum de estudio. Su repertorio incorpora bachata, merengue y bolero junto a R&B y recursos electrónicos. En 2026 colaboraron con Leslie Grace en «TU SUPITE» y con La Cassandra en «Paraíso». Ese mismo año YouTube Music anunció a Martox entre los participantes de «Foundry Rising», su programa de apoyo a artistas en una etapa temprana de desarrollo en la plataforma.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Martox participa en la renovación del pop dominicano desde una formación de cantante y productor. Su recorrido conecta la escena independiente de Santiago con un repertorio caribeño abierto a la experimentación electrónica y al trabajo con otros intérpretes.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "mentions": [
+        {
+          "before": "NIKÓLA",
+          "after": "Nikóla",
+          "target_id": "8dbc74f9-4f8f-4e89-b947-465c5c79f0bd",
+          "evidence": "Existing career context in this biography and matching published catalog identity; no new biographical claim."
+        }
+      ]
+    },
+    {
+      "owner": "Martox",
+      "owner_id": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+      "slug": "martox",
+      "owner_status": "published",
+      "id": "f08793b3-66e9-42a0-b8db-a9ca4e059f44",
+      "locale": "en",
+      "status": "published",
+      "expected_revision": 1,
+      "before": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Martox is a Dominican Caribbean pop duo from Santiago de los Caballeros, comprising vocalist Juan Miguel Martínez and producer Eduardo Baldera. Their music connects R&B and electronics with tropical rhythms and Dominican songwriting traditions. Friends since childhood, they have developed a project in which singing, composition and production complement one another.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Early songs and covers",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Their early work was linked to Santiago's «MITEL DICO» collective, including appearances on projects by Diego Raposo and «La Ñapa», alongside covers shared on SoundCloud. In February 2019 they released their reinterpretation of «Amapola» by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                  "displayText": "Juan Luis Guerra",
+                  "occurrenceId": "e2d28a93-d80c-46cc-80bc-c2e759cf21bb"
+                }
+              },
+              {
+                "text": ", who shared it on his social accounts, bringing the duo wider exposure. They also released their first EP, «Canciones Que Puedes Usar En Mi Contra», that year, exploring R&B, ballads and electronic music.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "From «Un Bolero» to «Baila!»",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2021 they released «Un Bolero» and «Se Siente Diferente». Their second EP moved toward synth-pop, funk and disco, featuring jonás on «Mucho Mejor» and Gian Rojas of ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+                  "displayText": "Solo Fernández",
+                  "occurrenceId": "13f83921-b860-4583-9a63-943da1f140d6"
+                }
+              },
+              {
+                "text": " on «Pausa». Its five songs were accompanied by interconnected videos directed by Jorge Guillén and Víctor Cantisano. The 2023 EP «Baila!» continued their exploration of dance music.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "A Caribbean musical language",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In July 2024 they released «Que Bien Te Queda El Caribe», a five-track EP containing «Canela» and «Y Qué» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+                  "displayText": "Lena Dardelet",
+                  "occurrenceId": "9486eee8-fa2c-4a0c-ba51-17585d8fe6dc"
+                }
+              },
+              {
+                "text": ", as well as collaborations with NIKÓLA and GioBulla. In 2025 they presented «Un Pambiche», featuring ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                  "displayText": "El Prodigio",
+                  "occurrenceId": "e11a1c7c-aeba-4b3d-979a-72f66e09df49"
+                }
+              },
+              {
+                "text": " on accordion. The recording brought their contemporary production approach into merengue and was accompanied by a video directed by Víctor Cantisano.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Caracol» and wider collaborations",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "A seven-song first installment of «Caracol» appeared in September 2025; an expanded version followed in May 2026, presented as their first studio album. Its repertoire brings bachata, merengue and bolero together with R&B and electronic production. Their 2026 collaborations included «TU SUPITE» with Leslie Grace and «Paraíso» with La Cassandra. That year YouTube Music named Martox among the participants in «Foundry Rising», its program supporting artists at an earlier stage of their development on the platform.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Martox contributes to the development of Dominican pop through its singer-and-producer partnership. Their work connects Santiago's independent scene with a Caribbean repertoire open to electronic experimentation and exchanges with other performers.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Martox is a Dominican Caribbean pop duo from Santiago de los Caballeros, comprising vocalist Juan Miguel Martínez and producer Eduardo Baldera. Their music connects R&B and electronics with tropical rhythms and Dominican songwriting traditions. Friends since childhood, they have developed a project in which singing, composition and production complement one another.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Early songs and covers",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Their early work was linked to Santiago's «MITEL DICO» collective, including appearances on projects by Diego Raposo and «La Ñapa», alongside covers shared on SoundCloud. In February 2019 they released their reinterpretation of «Amapola» by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                  "displayText": "Juan Luis Guerra",
+                  "occurrenceId": "e2d28a93-d80c-46cc-80bc-c2e759cf21bb"
+                }
+              },
+              {
+                "text": ", who shared it on his social accounts, bringing the duo wider exposure. They also released their first EP, «Canciones Que Puedes Usar En Mi Contra», that year, exploring R&B, ballads and electronic music.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "From «Un Bolero» to «Baila!»",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2021 they released «Un Bolero» and «Se Siente Diferente». Their second EP moved toward synth-pop, funk and disco, featuring jonás on «Mucho Mejor» and Gian Rojas of ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+                  "displayText": "Solo Fernández",
+                  "occurrenceId": "13f83921-b860-4583-9a63-943da1f140d6"
+                }
+              },
+              {
+                "text": " on «Pausa». Its five songs were accompanied by interconnected videos directed by Jorge Guillén and Víctor Cantisano. The 2023 EP «Baila!» continued their exploration of dance music.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "A Caribbean musical language",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In July 2024 they released «Que Bien Te Queda El Caribe», a five-track EP containing «Canela» and «Y Qué» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+                  "displayText": "Lena Dardelet",
+                  "occurrenceId": "9486eee8-fa2c-4a0c-ba51-17585d8fe6dc"
+                }
+              },
+              {
+                "text": ", as well as collaborations with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8dbc74f9-4f8f-4e89-b947-465c5c79f0bd",
+                  "occurrenceId": "82d8cff2-d461-4f1f-9590-a77f1fdf6121",
+                  "displayText": "Nikóla"
+                }
+              },
+              {
+                "text": " and GioBulla. In 2025 they presented «Un Pambiche», featuring ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                  "displayText": "El Prodigio",
+                  "occurrenceId": "e11a1c7c-aeba-4b3d-979a-72f66e09df49"
+                }
+              },
+              {
+                "text": " on accordion. The recording brought their contemporary production approach into merengue and was accompanied by a video directed by Víctor Cantisano.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Caracol» and wider collaborations",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "A seven-song first installment of «Caracol» appeared in September 2025; an expanded version followed in May 2026, presented as their first studio album. Its repertoire brings bachata, merengue and bolero together with R&B and electronic production. Their 2026 collaborations included «TU SUPITE» with Leslie Grace and «Paraíso» with La Cassandra. That year YouTube Music named Martox among the participants in «Foundry Rising», its program supporting artists at an earlier stage of their development on the platform.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Martox contributes to the development of Dominican pop through its singer-and-producer partnership. Their work connects Santiago's independent scene with a Caribbean repertoire open to electronic experimentation and exchanges with other performers.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "mentions": [
+        {
+          "before": "NIKÓLA",
+          "after": "Nikóla",
+          "target_id": "8dbc74f9-4f8f-4e89-b947-465c5c79f0bd",
+          "evidence": "Existing career context in this biography and matching published catalog identity; no new biographical claim."
+        }
+      ]
+    }
+  ],
+  "before_integrity": {
+    "generatedAt": "2026-10-24T14:07:24.247Z",
+    "counts": {
+      "documents": 48,
+      "relations": 132,
+      "blocking": 0,
+      "warning": 2,
+      "informational": 0
+    },
+    "findings": [
+      {
+        "documentId": "61646c3f-7a33-4d8f-b170-147308e228b5",
+        "ownerArtistId": "32aadd75-c75f-4774-a67e-d2124614ea7c",
+        "locale": "en",
+        "code": "unpublished_target",
+        "severity": "warning",
+        "occurrenceId": "d1bf7a65-5cb9-4d97-a895-608637cee61a",
+        "targetArtistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1"
+      },
+      {
+        "documentId": "eb9e3234-570b-4f52-9fe3-cd2e016bdb44",
+        "ownerArtistId": "32aadd75-c75f-4774-a67e-d2124614ea7c",
+        "locale": "es",
+        "code": "unpublished_target",
+        "severity": "warning",
+        "occurrenceId": "40d84556-2ba4-42ea-b0f6-2323408b7a4b",
+        "targetArtistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1"
+      }
+    ]
+  },
+  "exceptions": [
+    "Raffy Díaz EN Rokabanda and LeidyTr3 EN/ES El Fother section headings remain single bold text nodes under biography heading format; their prose already links those artists.",
+    "Ñico Lora in Rubali Valerio names a school, not an artist mention.",
+    "Rejected substring/alias false matches: Dominican/Dominic; Guananico/Raffy Díaz; Puerto Plata locality/artist; La Fiera 2.0 work/Raquel Arias; memory/MÓRIA; label/Abel; El catálogo/El Cata; De extremo a extremo/X3MO; Leslie Grace/Grupo Grace; billar/Billo Frómeta; ordinary mayo and renovación aliases.",
+    "Names without a matching catalog identity remain literal; no collaborator profiles created."
+  ]
+}

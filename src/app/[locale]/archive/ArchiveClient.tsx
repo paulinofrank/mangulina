@@ -439,7 +439,7 @@ export default function ArchiveClient({
       )}
 
       <section className="mx-4 sm:mx-8 lg:mx-12 mt-6">
-        <h1 className="mb-4 text-left text-2xl font-semibold normal-case tracking-normal text-[#002D62]">
+        <h1 className="mb-4 text-left text-lg font-semibold normal-case tracking-normal text-[#002D62] min-[375px]:text-xl sm:text-2xl">
           {getPeriodHeading(period, t)}
         </h1>
 

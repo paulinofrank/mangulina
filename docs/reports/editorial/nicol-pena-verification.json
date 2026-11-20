@@ -1,0 +1,15 @@
+{
+  "fieldsMatch": true,
+  "biographiesMatch": true,
+  "report": {
+    "generatedAt": "2026-10-16T23:48:03.600Z",
+    "counts": {
+      "documents": 2,
+      "relations": 0,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "proposal_status": "NOT_APPLIED_REQUIRES_EDITOR_APPROVAL",
+  "date": "2026-10-15",
+  "project_id": "srulenjahemkuxtkfmzt",
+  "artist_id": null,
+  "action": "create_one_artist_and_two_draft_biographies",
+  "before": {
+    "artist": "no matching identity located",
+    "editorial_documents": []
+  },
+  "after": {
+    "artist_fields": {
+      "name": "La Doncella del Acordeón",
+      "stage_name": "La Doncella del Acordeón",
+      "slug": "la-doncella-del-acordeon",
+      "type": "Person",
+      "first_name": "Yokaira",
+      "last_name": "Martínez",
+      "second_last_name": "Álvarez",
+      "status": "draft",
+      "primary_role": "accordionist",
+      "occupations": [
+        "singer",
+        "composer",
+        "arranger",
+        "bandleader",
+        "music educator"
+      ],
+      "instruments": [
+        "accordion",
+        "vocals"
+      ],
+      "primary_genre": "merengue-perico-ripiao",
+      "genres": [],
+      "facebook": "https://www.facebook.com/ladoncella.delacordeon/photos",
+      "instagram": "https://www.instagram.com/ladoncelladelacordeon/",
+      "youtube": "https://www.youtube.com/@LADONCELLATIPICA"
+    },
+    "editorial_documents": [
+      {
+        "document_type": "artist_biography",
+        "owner_artist_id": null,
+        "locale": "es",
+        "schema_version": 1,
+        "status": "draft",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Yokaira Martínez Álvarez, conocida artísticamente como La Doncella del Acordeón, es una acordeonista, cantante y educadora dominicana vinculada al merengue típico o perico ripiao. Combina su actividad como intérprete con la enseñanza del acordeón y la formación de músicos jóvenes."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Formación y enseñanza",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Aprendió con su padre, el músico Ramón Martínez, fundador en 2005 de la escuela de música típica «Perico Ripiao». Posteriormente asumió la dirección de la escuela. La enseñanza constituye una parte central de su trayectoria."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Actividad artística",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Además de tocar el acordeón, canta, compone y realiza arreglos. Actúa con su propia agrupación y ha desarrollado su actividad desde Santo Domingo. En noviembre de 2021, durante una visita a Valledupar, habló con «El Pilón» sobre la participación de las mujeres en las tradiciones musicales dominicana y colombiana."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Legado",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Su labor reúne la interpretación del merengue típico y su transmisión mediante la educación musical. Desde la escuela y el escenario, trabaja para acercar el acordeón a nuevas generaciones."
+                }
+              ]
+            }
+          ]
+        },
+        "markdown_mirror": "Yokaira Martínez Álvarez, conocida artísticamente como La Doncella del Acordeón, es una acordeonista, cantante y educadora dominicana vinculada al merengue típico o perico ripiao. Combina su actividad como intérprete con la enseñanza del acordeón y la formación de músicos jóvenes.\n\n**Formación y enseñanza**\n\nAprendió con su padre, el músico Ramón Martínez, fundador en 2005 de la escuela de música típica «Perico Ripiao». Posteriormente asumió la dirección de la escuela. La enseñanza constituye una parte central de su trayectoria.\n\n**Actividad artística**\n\nAdemás de tocar el acordeón, canta, compone y realiza arreglos. Actúa con su propia agrupación y ha desarrollado su actividad desde Santo Domingo. En noviembre de 2021, durante una visita a Valledupar, habló con «El Pilón» sobre la participación de las mujeres en las tradiciones musicales dominicana y colombiana.\n\n**Legado**\n\nSu labor reúne la interpretación del merengue típico y su transmisión mediante la educación musical. Desde la escuela y el escenario, trabaja para acercar el acordeón a nuevas generaciones.",
+        "references": []
+      },
+      {
+        "document_type": "artist_biography",
+        "owner_artist_id": null,
+        "locale": "en",
+        "schema_version": 1,
+        "status": "draft",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "La Doncella del Acordeón is the stage name of Yokaira Martínez Álvarez, a Dominican accordionist, singer and music educator working in merengue típico, also known as perico ripiao. Her career combines performance with teaching the accordion to younger musicians."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Musical training and teaching",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Her father, musician Ramón Martínez, taught her the instrument. He founded the «Perico Ripiao» traditional music school in 2005, and she later took on its direction. Teaching is a sustained part of her musical practice."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Performance",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "She leads her own ensemble and also sings, composes and arranges. Santo Domingo has been a base for her work. During a visit to Valledupar in November 2021, she discussed women's participation in Dominican and Colombian traditional music with «El Pilón»."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Legacy",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Her contribution joins the public performance of merengue típico with the practical work of passing it on. Through teaching and ensemble activity, she introduces new generations to the accordion."
+                }
+              ]
+            }
+          ]
+        },
+        "markdown_mirror": "La Doncella del Acordeón is the stage name of Yokaira Martínez Álvarez, a Dominican accordionist, singer and music educator working in merengue típico, also known as perico ripiao. Her career combines performance with teaching the accordion to younger musicians.\n\n**Musical training and teaching**\n\nHer father, musician Ramón Martínez, taught her the instrument. He founded the «Perico Ripiao» traditional music school in 2005, and she later took on its direction. Teaching is a sustained part of her musical practice.\n\n**Performance**\n\nShe leads her own ensemble and also sings, composes and arranges. Santo Domingo has been a base for her work. During a visit to Valledupar in November 2021, she discussed women's participation in Dominican and Colombian traditional music with «El Pilón».\n\n**Legacy**\n\nHer contribution joins the public performance of merengue típico with the practical work of passing it on. Through teaching and ensemble activity, she introduces new generations to the accordion.",
+        "references": []
+      }
+    ]
+  },
+  "field_evidence": {
+    "name": [
+      "S1",
+      "S2"
+    ],
+    "stage_name": [
+      "S1",
+      "S2"
+    ],
+    "slug": [
+      "repository policy or derived field; see report"
+    ],
+    "type": [
+      "S1",
+      "S2"
+    ],
+    "first_name": [
+      "S1",
+      "S2"
+    ],
+    "last_name": [
+      "S1",
+      "S2"
+    ],
+    "second_last_name": [
+      "S1",
+      "S2"
+    ],
+    "status": [
+      "repository policy or derived field; see report"
+    ],
+    "primary_role": [
+      "S1",
+      "S2"
+    ],
+    "occupations": [
+      "S1",
+      "S2"
+    ],
+    "instruments": [
+      "S1",
+      "S2"
+    ],
+    "primary_genre": [
+      "S1",
+      "S2",
+      "live genres.id=14"
+    ],
+    "genres": [
+      "repository policy or derived field; see report"
+    ],
+    "facebook": [
+      "user supplied; page inaccessible"
+    ],
+    "instagram": [
+      "user supplied; page inaccessible",
+      "S4 provisional handle corroboration"
+    ],
+    "youtube": [
+      "user supplied; page inaccessible"
+    ]
+  },
+  "report": "la-doncella-del-acordeon-profile-proposal.md",
+  "preconditions": [
+    "Editor approval covers this manifest",
+    "Repeat duplicate and slug checks",
+    "Validate artist type and API constraints",
+    "Assign real artist UUID to both documents after creation",
+    "Use editorial API for biography and mirror persistence"
+  ],
+  "excluded": [
+    "publication",
+    "image upload",
+    "discography",
+    "other artist modifications",
+    "security or schema changes"
+  ],
+  "dependencies_pending_separate_authorization": [
+    {
+      "artist_id": "1af2271c-d65b-4048-ab36-e8b5aa335377",
+      "action": "review reciprocal references in existing biographies",
+      "document_ids": [
+        "4ab9222d-7d55-4aa2-8441-a3ea9767aa65",
+        "c59ec7d7-3728-45f6-b6e9-ea370d20bf32"
+      ]
+    }
+  ],
+  "unresolved": [
+    "Birth date and place unknown",
+    "Starting age conflicts: 11, 13, 14",
+    "Yakairy name variant not adopted",
+    "Facebook and YouTube content inaccessible",
+    "Instagram handle corroboration provisional"
+  ]
+}

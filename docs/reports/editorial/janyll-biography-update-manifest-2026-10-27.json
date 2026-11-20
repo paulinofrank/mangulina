@@ -1,0 +1,669 @@
+{
+  "date": "2026-10-27",
+  "authorization": "Editor explicitly approved updating both published Janyll biographies to revision 2; no artist field, discography or other-artist changes.",
+  "artist_before": {
+    "id": "aa45d980-e99c-4036-9375-f005ed357d55",
+    "name": "Janyll La Intérprete",
+    "slug": "janyll-la-interprete",
+    "status": "published",
+    "date_of_birth": null,
+    "birth_place": null,
+    "province": "San José de Ocoa",
+    "bio_en": null,
+    "bio_es": null,
+    "updated_at": "2026-10-28T00:28:31.126849+00:00"
+  },
+  "documents": [
+    {
+      "id": "845c653f-8f1c-4226-be3d-f63e35341b14",
+      "locale": "en",
+      "expected_revision": 1,
+      "before": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Janyll La Intérprete, the stage name of Milagros Santana Ortiz, is a Dominican singer from San José de Ocoa. Her repertoire spans ballads, bachata, bolero, and merengue. She celebrates her birthday on June 29 and has developed much of her career in New York.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Beginnings",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "She began her professional career in 1978 with Agustín Mercier’s orchestra. In 1980 she settled in New York, where she continued her vocal training. In 1984 she won the best-performance award at the Festival de la Voz y la Canción at the Manhattan Center with «Para vivir un gran amor».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Recordings",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Her first album, «Máquina de placer», included «Olías a mujer», «Mi cama vacía», «Márchate», and «Todo me salió al revés». In 2012 she presented «Señora», bringing bachata into her work with arrangements by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                  "displayText": "Ramón Orlando",
+                  "occurrenceId": "1acbdbcb-b830-477e-8fee-69d6ff56e384"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "95010ba2-3d12-4976-938d-141737fb2daa",
+                  "displayText": "Víctor Waill",
+                  "occurrenceId": "d78d5eb3-a7c8-4858-a302-89bc8abe537f"
+                }
+              },
+              {
+                "text": ", Davisito Paredes, and Billy Alonso. The title track was recorded in two versions.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2022 she presented «Solo contigo», whose title song was written by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "d7b078fd-12ab-42fd-8b55-5b0a470986a3",
+                  "displayText": "Enrique Féliz",
+                  "occurrenceId": "5c9a284a-f56a-4b3d-b881-8deef7a63af8"
+                }
+              },
+              {
+                "text": ". Davicito Paredes and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1db77ddd-1046-4d95-b675-65da60234ef0",
+                  "displayText": "Mártires de León",
+                  "occurrenceId": "3c83c473-c8d3-4476-8bd4-7adc1629c6c7"
+                }
+              },
+              {
+                "text": " supplied arrangements, and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "cbda65a4-c7da-4762-8cf8-f29b942d2ac3",
+                  "displayText": "Edilio Paredes",
+                  "occurrenceId": "6aba4160-dc74-4a4f-a512-93a3df1a00aa"
+                }
+              },
+              {
+                "text": " was among the participating musicians. The production included four compositions by Carla and a tribute to the songwriter. Her official channel also preserves her interpretation of the bolero «Veinte años».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Her career connects Dominican romantic song with the stages of the New York diaspora. Her historical recordings and continued presence on digital platforms document different periods of her work as an interpreter.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Janyll La Intérprete, the stage name of Milagros Santana Ortiz, is a Dominican singer from San José de Ocoa province. Her repertoire includes ballads, merengue, bachata, and bolero. She celebrates her birthday on June 29 and developed much of her career in New York."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Beginnings",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "She began her professional career in 1978 with Agustín Mercier’s orchestra, performing at Santo Domingo’s Hotel El Embajador. In 1980 she settled in New York and continued her vocal training. According to her biographical account, Puerto Rican singer Piti Franqui gave her the stage name Janyll during a performance at La Bilbaína. In 1984 she won the best-performance award at the Festival de la Voz y la Canción at the Manhattan Center with «Para vivir un gran amor»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Recordings",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Her first album, «Máquina de placer», recorded under the musical direction of Héctor Garrido, included «Olías a mujer», «Mi cama vacía», «Márchate», and «Todo me salió al revés». In 1989 she released the merengue LP «Pantera Agresiva», followed by the compilation «15 Grandes Éxitos» in 1991. During the 1990s she released the self-titled album «Janyll», which included a bachata version of «Tus promesas de amor»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2012 she presented «Señora», with original and bachata versions of the title song and arrangements by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                  "occurrenceId": "1acbdbcb-b830-477e-8fee-69d6ff56e384",
+                  "displayText": "Ramón Orlando"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "95010ba2-3d12-4976-938d-141737fb2daa",
+                  "occurrenceId": "d78d5eb3-a7c8-4858-a302-89bc8abe537f",
+                  "displayText": "Víctor Waill"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Davisito Paredes, and Billy Alonso. She released her rendition of the bolero «Veinte años» in 2020. In 2022 she presented «Solo contigo», whose title song was written by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "d7b078fd-12ab-42fd-8b55-5b0a470986a3",
+                  "occurrenceId": "5c9a284a-f56a-4b3d-b881-8deef7a63af8",
+                  "displayText": "Enrique Féliz"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Davicito Paredes and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1db77ddd-1046-4d95-b675-65da60234ef0",
+                  "occurrenceId": "3c83c473-c8d3-4476-8bd4-7adc1629c6c7",
+                  "displayText": "Mártires de León"
+                }
+              },
+              {
+                "type": "text",
+                "text": " provided arrangements, and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "cbda65a4-c7da-4762-8cf8-f29b942d2ac3",
+                  "occurrenceId": "6aba4160-dc74-4a4f-a512-93a3df1a00aa",
+                  "displayText": "Edilio Paredes"
+                }
+              },
+              {
+                "type": "text",
+                "text": " was among the participating musicians. The album included four compositions by Carla and a tribute to the songwriter."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Career",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Recordings from several decades document her movement from ballads to merengue and bachata. She also performed in New York venues, including Madison Square Garden, while maintaining ties to the Dominican music scene."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "9420db12-367d-4d3c-916d-3af542fed8cf",
+      "locale": "es",
+      "expected_revision": 1,
+      "before": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Janyll La Intérprete, nombre artístico de Milagros Santana Ortiz, es una cantante dominicana oriunda de San José de Ocoa. Su repertorio reúne baladas, bachatas, boleros y merengues. Celebra su cumpleaños el 29 de junio y ha desarrollado buena parte de su carrera en Nueva York.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Inicios",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Comenzó profesionalmente en 1978 con la orquesta de Agustín Mercier. En 1980 se estableció en Nueva York, donde continuó su formación vocal. En 1984 obtuvo el premio a la mejor interpretación en el Festival de la Voz y la Canción del Manhattan Center con «Para vivir un gran amor».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Grabaciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su primer álbum, «Máquina de placer», incluyó «Olías a mujer», «Mi cama vacía», «Márchate» y «Todo me salió al revés». En 2012 presentó «Señora», que incorporó la bachata a su propuesta y contó con arreglos de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                  "displayText": "Ramón Orlando",
+                  "occurrenceId": "c7b9dc45-6e4c-40a9-b329-54dec82cd164"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "95010ba2-3d12-4976-938d-141737fb2daa",
+                  "displayText": "Víctor Waill",
+                  "occurrenceId": "42902d06-68a7-4d0d-ab35-d4cd8da20063"
+                }
+              },
+              {
+                "text": ", Davisito Paredes y Billy Alonso. La canción titular se grabó en dos versiones.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2022 presentó «Solo contigo», cuyo tema titular escribió ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "d7b078fd-12ab-42fd-8b55-5b0a470986a3",
+                  "displayText": "Enrique Féliz",
+                  "occurrenceId": "dbf0c150-c9de-49fc-b701-3683e194045f"
+                }
+              },
+              {
+                "text": ". La producción contó con arreglos de Davicito Paredes y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1db77ddd-1046-4d95-b675-65da60234ef0",
+                  "displayText": "Mártires de León",
+                  "occurrenceId": "1ed4ac0c-5239-42dd-83c4-26af260ea5a3"
+                }
+              },
+              {
+                "text": ", y con la participación de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "cbda65a4-c7da-4762-8cf8-f29b942d2ac3",
+                  "displayText": "Edilio Paredes",
+                  "occurrenceId": "3c855851-3ead-4018-aae4-99446aa8da6e"
+                }
+              },
+              {
+                "text": ", entre otros músicos. Incluyó cuatro composiciones de Carla y un homenaje a la compositora. Su canal oficial también conserva su interpretación del bolero «Veinte años».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su trayectoria conecta la canción romántica dominicana con los escenarios de la diáspora en Nueva York. Las grabaciones históricas y su continuidad en plataformas digitales permiten recorrer distintas etapas de su trabajo como intérprete.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Janyll La Intérprete, nombre artístico de Milagros Santana Ortiz, es una cantante dominicana oriunda de la provincia de San José de Ocoa. Su repertorio abarca la balada, el merengue, la bachata y el bolero. Celebra su cumpleaños el 29 de junio y desarrolló buena parte de su carrera en Nueva York."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Inicios",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Comenzó profesionalmente en 1978 con la orquesta de Agustín Mercier, con la que actuó en el Hotel El Embajador de Santo Domingo. En 1980 se estableció en Nueva York y continuó su formación vocal. Según su relato biográfico, el cantante puertorriqueño Piti Franqui la bautizó artísticamente como Janyll durante una presentación en La Bilbaína. En 1984 obtuvo el premio a la mejor interpretación en el Festival de la Voz y la Canción del Manhattan Center con «Para vivir un gran amor»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Grabaciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su primer álbum, «Máquina de placer», grabado bajo la dirección musical de Héctor Garrido, incluyó «Olías a mujer», «Mi cama vacía», «Márchate» y «Todo me salió al revés». En 1989 presentó el LP de merengue «Pantera Agresiva», y en 1991 apareció la recopilación «15 Grandes Éxitos». En la década de 1990 publicó el álbum homónimo «Janyll», que incluyó una versión en bachata de «Tus promesas de amor»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2012 presentó «Señora», con una versión original y otra en bachata del tema titular, y arreglos de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                  "occurrenceId": "c7b9dc45-6e4c-40a9-b329-54dec82cd164",
+                  "displayText": "Ramón Orlando"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "95010ba2-3d12-4976-938d-141737fb2daa",
+                  "occurrenceId": "42902d06-68a7-4d0d-ab35-d4cd8da20063",
+                  "displayText": "Víctor Waill"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Davisito Paredes y Billy Alonso. En 2020 publicó una interpretación del bolero «Veinte años». En 2022 presentó «Solo contigo», cuyo tema titular escribió "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "d7b078fd-12ab-42fd-8b55-5b0a470986a3",
+                  "occurrenceId": "dbf0c150-c9de-49fc-b701-3683e194045f",
+                  "displayText": "Enrique Féliz"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". La producción contó con arreglos de Davicito Paredes y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1db77ddd-1046-4d95-b675-65da60234ef0",
+                  "occurrenceId": "1ed4ac0c-5239-42dd-83c4-26af260ea5a3",
+                  "displayText": "Mártires de León"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", y con la participación de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "cbda65a4-c7da-4762-8cf8-f29b942d2ac3",
+                  "occurrenceId": "3c855851-3ead-4018-aae4-99446aa8da6e",
+                  "displayText": "Edilio Paredes"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Incluyó cuatro composiciones de Carla y un homenaje a la compositora."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Trayectoria",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su paso de la balada al merengue y la bachata quedó reflejado en grabaciones realizadas a lo largo de varias décadas. También actuó en escenarios de Nueva York, entre ellos el Madison Square Garden, y mantuvo vínculos con la escena musical dominicana."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "targets": [
+    {
+      "id": "cbda65a4-c7da-4762-8cf8-f29b942d2ac3",
+      "name": "Edilio Paredes",
+      "slug": "edilio-paredes",
+      "status": "published"
+    },
+    {
+      "id": "d7b078fd-12ab-42fd-8b55-5b0a470986a3",
+      "name": "Enrique Féliz",
+      "slug": "enrique-feliz",
+      "status": "published"
+    },
+    {
+      "id": "1db77ddd-1046-4d95-b675-65da60234ef0",
+      "name": "Mártires de León",
+      "slug": "martires-de-leon",
+      "status": "published"
+    },
+    {
+      "id": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+      "name": "Ramón Orlando",
+      "slug": "ramon-orlando",
+      "status": "published"
+    },
+    {
+      "id": "95010ba2-3d12-4976-938d-141737fb2daa",
+      "name": "Víctor Waill",
+      "slug": "victor-waill",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "docs/reports/editorial/janyll-biography-review-2026-10-27.md"
+}

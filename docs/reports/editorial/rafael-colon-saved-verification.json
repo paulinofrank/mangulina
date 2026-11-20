@@ -1,0 +1,745 @@
+{
+  "artist": {
+    "id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "name": "Rafael Colón",
+    "sort_name": "Colón, Rafael",
+    "type": "solo_artist",
+    "birth_year": 1918,
+    "death_year": 1991,
+    "created_at": "2026-10-25T15:34:31.786838+00:00",
+    "views": 0,
+    "wikidata_id": null,
+    "first_name": "Rafael",
+    "middle_name": null,
+    "last_name": "Saint Hilaire",
+    "second_last_name": "Colón",
+    "stage_name": "Rafael Colón",
+    "date_of_birth": "1918-05-18",
+    "birth_place": "Santiago de los Caballeros",
+    "website": null,
+    "youtube": null,
+    "facebook": null,
+    "instagram": null,
+    "aliases": [
+      "Rafael Saint Hilaire Colón",
+      "La Espiga de Ébano"
+    ],
+    "mbid": null,
+    "occupations": [
+      "composer",
+      "musician"
+    ],
+    "instruments": [
+      "voice",
+      "guitar",
+      "drums"
+    ],
+    "genres": [
+      "merengue"
+    ],
+    "disambiguation": null,
+    "gender": "male",
+    "ended": null,
+    "mb_metadata": {},
+    "updated_at": "2026-10-25T15:34:31.786838+00:00",
+    "province": "Santiago",
+    "birth_day": 18,
+    "birth_month": 5,
+    "slug": "rafael-colon",
+    "primary_role": "singer",
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_death": "1991-06-07",
+    "status": "draft",
+    "primary_genre": "bolero",
+    "bio_en": null,
+    "bio_es": null,
+    "has_image": false,
+    "image_updated_at": null,
+    "formation_year": null,
+    "dissolution_year": null,
+    "spotify": "7ywBZwEXnvRYxOwKBpeFPD"
+  },
+  "documents": [
+    {
+      "id": "66c13687-de07-4bb7-baef-e058a42f2ba4",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Rafael Colón, the stage name of Rafael Saint Hilaire Colón, was a Dominican singer, composer, and guitarist known as «La Espiga de Ébano». He was born on May 18, 1918, in Santiago de los Caballeros and died on June 7, 1991, in Santo Domingo. His career encompassed bolero, merengue, and troubadour song, performing both with large orchestras and with his guitar.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "From vocal trios to orchestras",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He began making music as a child in the trio «Tapacán», alongside his brother Federico Colón and Licinio Valerio, appearing on Santiago radio while also learning the shoemaker’s trade. He later joined «Trío Santiago». In the late 1930s he worked as a drummer and singer with «Estrellas Cibaeñas» and «Orquesta Hermanos Vásquez», and in 1942 he joined «Orquesta San José».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "During the 1940s he entered the orchestra led by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "360bec27-421a-466f-8604-3598aa46a7a4",
+                  "displayText": "Luis Alberti",
+                  "occurrenceId": "65ed223b-13ad-41d5-9b12-f233ffa6865d"
+                }
+              },
+              {
+                "text": ", making his first recording with «Ven», a bolero by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "displayText": "Manuel Sánchez Acosta",
+                  "occurrenceId": "406a6291-b2df-40b3-b77b-0483319af0f0"
+                }
+              },
+              {
+                "text": ". His voice became closely associated with the ensemble subsequently known as «Orquesta Santa Cecilia» and with the musical life of the Hotel Jaragua. In an interview he recalled that his second recording with Alberti was his own composition «No me interesa».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "A bolero repertoire",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Luna sobre el Jaragua», written by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "360bec27-421a-466f-8604-3598aa46a7a4",
+                  "displayText": "Luis Alberti",
+                  "occurrenceId": "fabf3336-efda-47ee-9688-8a11315af1ff"
+                }
+              },
+              {
+                "text": ", became one of his signature performances. Recalling its history, he distinguished earlier performances by Eva Garza and Marcelino Plácido from his own recording in the Dominican Republic. He singled out «Paraíso soñado», by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "displayText": "Manuel Sánchez Acosta",
+                  "occurrenceId": "34d4444a-a339-4f39-a5ec-d1e5793326e1"
+                }
+              },
+              {
+                "text": ", as a particularly valued bolero, and remembered audiences frequently requesting «Dejarte no», by Águeda Blandino.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His recording catalog includes «Soñando contigo», «Apasionado», «Para ti», and «Traicionera». An important period of recording with Luis Pérez’s orchestra included «Mi Quisqueya». He also recorded «100 canciones y un millón de recuerdos» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3a69af3c-1b9a-402b-8a3f-66e51dacdffe",
+                  "displayText": "Francis Santana",
+                  "occurrenceId": "31005ee8-8910-4660-ab3f-f270695edb31"
+                }
+              },
+              {
+                "text": ", and «Amar es vivir» and «Concierto de amor» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+                  "displayText": "Johnny Ventura",
+                  "occurrenceId": "e5413c22-6fdb-48d5-8410-c27f41f9e4b6"
+                }
+              },
+              {
+                "text": ". His repertoire combined Dominican compositions with boleros from elsewhere in the Caribbean, including Rafael Hernández’s «De qué te vale» and «Desvelo de amor».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Composition and poetry",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His first composition, «Al pie del bambú», dates from 1938. He set poems by Héctor Cabral Ortega to music; together they wrote «Arenas del desierto», which also entered the repertoire of ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "771e3bcf-396a-492a-833f-8afb45964520",
+                  "displayText": "Lope Balaguer",
+                  "occurrenceId": "709ee529-cfa7-460c-abe0-eee5b59d71a1"
+                }
+              },
+              {
+                "text": ". His work as a composer accompanied performances across bolero, merengue, son, guaracha, and other tropical genres.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He sang «Venus negra», with music by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+                  "displayText": "Julio Alberto Hernández",
+                  "occurrenceId": "d0eadfff-941f-43a8-8754-d20c5b3771f4"
+                }
+              },
+              {
+                "text": ", on the collective album «La música de sus versos», devoted to the poetry of ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+                  "displayText": "Joaquín Balaguer",
+                  "occurrenceId": "5781bf91-5080-43af-96b0-d150e9b3fab5"
+                }
+              },
+              {
+                "text": ". The original back cover, preserved by the Archivo General de la Nación, documents his performance and separates the musical credit from the poetic text.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In May 2018 the Centro León in Santiago marked the centenary of his birth with a discussion led by José del Castillo and Rafael Almánzar, followed by a musical gathering coordinated with Raíces Radio. These events revisited both his orchestral work and his intimate troubadour performances. His surviving recordings preserve a major voice of twentieth-century Dominican romantic song.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+      "created_at": "2026-10-25T15:34:32.175954+00:00",
+      "updated_at": "2026-10-25T15:34:32.175954+00:00",
+      "revision": 1
+    },
+    {
+      "id": "b971ee8f-eefb-4c96-8eb3-cdebb6b070d0",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Rafael Colón, nombre artístico de Rafael Saint Hilaire Colón, fue un cantante, compositor y guitarrista dominicano conocido como «La Espiga de Ébano». Nació el 18 de mayo de 1918 en Santiago de los Caballeros y falleció el 7 de junio de 1991 en Santo Domingo. Su trayectoria abarcó el bolero, el merengue y la canción de trovador, tanto al frente de grandes orquestas como acompañado por su guitarra.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "De los tríos a las orquestas",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Se inició en la música siendo niño, en el trío «Tapacán», junto a su hermano Federico Colón y Licinio Valerio, con presentaciones en la radio de Santiago. Al mismo tiempo aprendió el oficio de zapatero. También integró el «Trío Santiago» y, a finales de los años treinta, trabajó como baterista y cantante con el cuarteto «Estrellas Cibaeñas» y la «Orquesta Hermanos Vásquez». En 1942 ingresó a la «Orquesta San José».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Durante los años cuarenta se incorporó a la orquesta de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "360bec27-421a-466f-8604-3598aa46a7a4",
+                  "displayText": "Luis Alberti",
+                  "occurrenceId": "bd68e0ec-ed4c-49e4-8ade-76b426f59909"
+                }
+              },
+              {
+                "text": ", con la que realizó su primera grabación, «Ven», de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "displayText": "Manuel Sánchez Acosta",
+                  "occurrenceId": "c3f0e458-6c53-4209-b5ea-f243f8b418d5"
+                }
+              },
+              {
+                "text": ". Su voz quedó asociada a la agrupación que posteriormente se conoció como «Orquesta Santa Cecilia» y al ambiente musical del Hotel Jaragua. En una entrevista recordó que su segunda grabación con Alberti fue «No me interesa», una composición propia.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El bolero y su repertorio",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Luna sobre el Jaragua», de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "360bec27-421a-466f-8604-3598aa46a7a4",
+                  "displayText": "Luis Alberti",
+                  "occurrenceId": "3c71ab76-9c81-48d2-ae0f-275b73e24988"
+                }
+              },
+              {
+                "text": ", fue una de las canciones más vinculadas a su voz. Al recordar su historia, distinguió las interpretaciones anteriores de Eva Garza y Marcelino Plácido de su propia grabación en la República Dominicana. También señaló «Paraíso soñado», de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "displayText": "Manuel Sánchez Acosta",
+                  "occurrenceId": "6ff4672f-c8be-49c3-87b9-67a8583e59e8"
+                }
+              },
+              {
+                "text": ", entre los boleros que más valoraba, y «Dejarte no», de Águeda Blandino, como una petición frecuente de su público.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su catálogo incluye «Soñando contigo», «Apasionado», «Para ti» y «Traicionera». Con la orquesta de Luis Pérez desarrolló una importante etapa discográfica, de la que forma parte «Mi Quisqueya». Grabó además «100 canciones y un millón de recuerdos» con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3a69af3c-1b9a-402b-8a3f-66e51dacdffe",
+                  "displayText": "Francis Santana",
+                  "occurrenceId": "0d1c7379-b384-4140-951e-5fa8c68280e8"
+                }
+              },
+              {
+                "text": ", y «Amar es vivir» y «Concierto de amor» con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+                  "displayText": "Johnny Ventura",
+                  "occurrenceId": "973b037e-d5f7-463d-aa1a-7cc2a8c385a6"
+                }
+              },
+              {
+                "text": ". Su repertorio reunió composiciones dominicanas con boleros de otros países del Caribe, entre ellos «De qué te vale» y «Desvelo de amor», de Rafael Hernández.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Composición y poesía cantada",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su primera composición, «Al pie del bambú», data de 1938. Musicalizó poemas de Héctor Cabral Ortega, con quien comparte la autoría de «Arenas del desierto», una obra que también pasó al repertorio de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "771e3bcf-396a-492a-833f-8afb45964520",
+                  "displayText": "Lope Balaguer",
+                  "occurrenceId": "e563fc65-7be2-4af9-bd61-751dd5e5a551"
+                }
+              },
+              {
+                "text": ". Esta faceta de compositor acompañó su actividad como cantante de boleros, merengues, sones, guarachas y otras formas de la música tropical.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Participó como intérprete de «Venus negra», con música de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+                  "displayText": "Julio Alberto Hernández",
+                  "occurrenceId": "65a801a6-3bc1-47d0-a4fa-d83b2e6dc2ba"
+                }
+              },
+              {
+                "text": ", en el álbum colectivo «La música de sus versos», dedicado a la poesía de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+                  "displayText": "Joaquín Balaguer",
+                  "occurrenceId": "0fe11364-d827-4745-9d27-da2f8eb76064"
+                }
+              },
+              {
+                "text": ". La contraportada original, conservada por el Archivo General de la Nación, documenta su participación y distingue el crédito musical del texto poético.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En mayo de 2018 el Centro León, en Santiago, conmemoró el centenario de su nacimiento con un conversatorio de José del Castillo y Rafael Almánzar, seguido de una tertulia y presentación musical coordinada con Raíces Radio. Estas actividades recuperaron tanto su trabajo con orquesta como su faceta de trovador. La continuidad de sus grabaciones preserva una voz central de la canción romántica dominicana del siglo veinte.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+      "created_at": "2026-10-25T15:34:31.993093+00:00",
+      "updated_at": "2026-10-25T15:34:31.993093+00:00",
+      "revision": 1
+    }
+  ],
+  "relations": [
+    {
+      "id": "598c5f3e-d866-4a5c-a2e1-b08ed1a45c26",
+      "editorial_document_id": "b971ee8f-eefb-4c96-8eb3-cdebb6b070d0",
+      "occurrence_id": "bd68e0ec-ed4c-49e4-8ade-76b426f59909",
+      "entity_type": "artist",
+      "target_artist_id": "360bec27-421a-466f-8604-3598aa46a7a4",
+      "created_at": "2026-10-25T15:34:31.993093+00:00",
+      "updated_at": "2026-10-25T15:34:31.993093+00:00"
+    },
+    {
+      "id": "93f12866-cce2-483b-9301-c702afbb70c3",
+      "editorial_document_id": "b971ee8f-eefb-4c96-8eb3-cdebb6b070d0",
+      "occurrence_id": "c3f0e458-6c53-4209-b5ea-f243f8b418d5",
+      "entity_type": "artist",
+      "target_artist_id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+      "created_at": "2026-10-25T15:34:31.993093+00:00",
+      "updated_at": "2026-10-25T15:34:31.993093+00:00"
+    },
+    {
+      "id": "fb64cd6e-6de0-42ca-b6ec-724066668555",
+      "editorial_document_id": "b971ee8f-eefb-4c96-8eb3-cdebb6b070d0",
+      "occurrence_id": "3c71ab76-9c81-48d2-ae0f-275b73e24988",
+      "entity_type": "artist",
+      "target_artist_id": "360bec27-421a-466f-8604-3598aa46a7a4",
+      "created_at": "2026-10-25T15:34:31.993093+00:00",
+      "updated_at": "2026-10-25T15:34:31.993093+00:00"
+    },
+    {
+      "id": "ffb55253-4087-41f9-946c-1ef793e2b59c",
+      "editorial_document_id": "b971ee8f-eefb-4c96-8eb3-cdebb6b070d0",
+      "occurrence_id": "6ff4672f-c8be-49c3-87b9-67a8583e59e8",
+      "entity_type": "artist",
+      "target_artist_id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+      "created_at": "2026-10-25T15:34:31.993093+00:00",
+      "updated_at": "2026-10-25T15:34:31.993093+00:00"
+    },
+    {
+      "id": "ad3e5441-0f22-4d66-971a-c7fb44ae1319",
+      "editorial_document_id": "b971ee8f-eefb-4c96-8eb3-cdebb6b070d0",
+      "occurrence_id": "0d1c7379-b384-4140-951e-5fa8c68280e8",
+      "entity_type": "artist",
+      "target_artist_id": "3a69af3c-1b9a-402b-8a3f-66e51dacdffe",
+      "created_at": "2026-10-25T15:34:31.993093+00:00",
+      "updated_at": "2026-10-25T15:34:31.993093+00:00"
+    },
+    {
+      "id": "828824d6-f1c1-4d84-8a70-5c39c9aade48",
+      "editorial_document_id": "b971ee8f-eefb-4c96-8eb3-cdebb6b070d0",
+      "occurrence_id": "973b037e-d5f7-463d-aa1a-7cc2a8c385a6",
+      "entity_type": "artist",
+      "target_artist_id": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+      "created_at": "2026-10-25T15:34:31.993093+00:00",
+      "updated_at": "2026-10-25T15:34:31.993093+00:00"
+    },
+    {
+      "id": "5a518e9e-283e-4cab-9178-ccb730dc96d5",
+      "editorial_document_id": "b971ee8f-eefb-4c96-8eb3-cdebb6b070d0",
+      "occurrence_id": "e563fc65-7be2-4af9-bd61-751dd5e5a551",
+      "entity_type": "artist",
+      "target_artist_id": "771e3bcf-396a-492a-833f-8afb45964520",
+      "created_at": "2026-10-25T15:34:31.993093+00:00",
+      "updated_at": "2026-10-25T15:34:31.993093+00:00"
+    },
+    {
+      "id": "a5520382-8e13-45c7-a249-27f3f4a9f2ff",
+      "editorial_document_id": "b971ee8f-eefb-4c96-8eb3-cdebb6b070d0",
+      "occurrence_id": "65a801a6-3bc1-47d0-a4fa-d83b2e6dc2ba",
+      "entity_type": "artist",
+      "target_artist_id": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+      "created_at": "2026-10-25T15:34:31.993093+00:00",
+      "updated_at": "2026-10-25T15:34:31.993093+00:00"
+    },
+    {
+      "id": "ac07ba93-2658-4028-978d-d398ee3d770c",
+      "editorial_document_id": "b971ee8f-eefb-4c96-8eb3-cdebb6b070d0",
+      "occurrence_id": "0fe11364-d827-4745-9d27-da2f8eb76064",
+      "entity_type": "artist",
+      "target_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+      "created_at": "2026-10-25T15:34:31.993093+00:00",
+      "updated_at": "2026-10-25T15:34:31.993093+00:00"
+    },
+    {
+      "id": "ebaf7350-04e6-4cea-a0a3-6d4717066f94",
+      "editorial_document_id": "66c13687-de07-4bb7-baef-e058a42f2ba4",
+      "occurrence_id": "65ed223b-13ad-41d5-9b12-f233ffa6865d",
+      "entity_type": "artist",
+      "target_artist_id": "360bec27-421a-466f-8604-3598aa46a7a4",
+      "created_at": "2026-10-25T15:34:32.175954+00:00",
+      "updated_at": "2026-10-25T15:34:32.175954+00:00"
+    },
+    {
+      "id": "faa377fe-3f68-4561-b8b2-0f2931d7361f",
+      "editorial_document_id": "66c13687-de07-4bb7-baef-e058a42f2ba4",
+      "occurrence_id": "406a6291-b2df-40b3-b77b-0483319af0f0",
+      "entity_type": "artist",
+      "target_artist_id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+      "created_at": "2026-10-25T15:34:32.175954+00:00",
+      "updated_at": "2026-10-25T15:34:32.175954+00:00"
+    },
+    {
+      "id": "14f37f7b-09e2-49d7-9739-7f16cd6d45f1",
+      "editorial_document_id": "66c13687-de07-4bb7-baef-e058a42f2ba4",
+      "occurrence_id": "fabf3336-efda-47ee-9688-8a11315af1ff",
+      "entity_type": "artist",
+      "target_artist_id": "360bec27-421a-466f-8604-3598aa46a7a4",
+      "created_at": "2026-10-25T15:34:32.175954+00:00",
+      "updated_at": "2026-10-25T15:34:32.175954+00:00"
+    },
+    {
+      "id": "1920e9c9-e11c-4d26-8505-4c641f09af39",
+      "editorial_document_id": "66c13687-de07-4bb7-baef-e058a42f2ba4",
+      "occurrence_id": "34d4444a-a339-4f39-a5ec-d1e5793326e1",
+      "entity_type": "artist",
+      "target_artist_id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+      "created_at": "2026-10-25T15:34:32.175954+00:00",
+      "updated_at": "2026-10-25T15:34:32.175954+00:00"
+    },
+    {
+      "id": "c87b7cf3-1c93-49d5-baba-79a0b0778721",
+      "editorial_document_id": "66c13687-de07-4bb7-baef-e058a42f2ba4",
+      "occurrence_id": "31005ee8-8910-4660-ab3f-f270695edb31",
+      "entity_type": "artist",
+      "target_artist_id": "3a69af3c-1b9a-402b-8a3f-66e51dacdffe",
+      "created_at": "2026-10-25T15:34:32.175954+00:00",
+      "updated_at": "2026-10-25T15:34:32.175954+00:00"
+    },
+    {
+      "id": "b4fc8c8b-0e41-40e7-9366-259c45a1c1b9",
+      "editorial_document_id": "66c13687-de07-4bb7-baef-e058a42f2ba4",
+      "occurrence_id": "e5413c22-6fdb-48d5-8410-c27f41f9e4b6",
+      "entity_type": "artist",
+      "target_artist_id": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+      "created_at": "2026-10-25T15:34:32.175954+00:00",
+      "updated_at": "2026-10-25T15:34:32.175954+00:00"
+    },
+    {
+      "id": "906c4fb4-76e9-480b-bbd4-5dda4c82d611",
+      "editorial_document_id": "66c13687-de07-4bb7-baef-e058a42f2ba4",
+      "occurrence_id": "709ee529-cfa7-460c-abe0-eee5b59d71a1",
+      "entity_type": "artist",
+      "target_artist_id": "771e3bcf-396a-492a-833f-8afb45964520",
+      "created_at": "2026-10-25T15:34:32.175954+00:00",
+      "updated_at": "2026-10-25T15:34:32.175954+00:00"
+    },
+    {
+      "id": "d5ca7cf8-d9a8-46a8-8aab-965d9984c511",
+      "editorial_document_id": "66c13687-de07-4bb7-baef-e058a42f2ba4",
+      "occurrence_id": "d0eadfff-941f-43a8-8754-d20c5b3771f4",
+      "entity_type": "artist",
+      "target_artist_id": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+      "created_at": "2026-10-25T15:34:32.175954+00:00",
+      "updated_at": "2026-10-25T15:34:32.175954+00:00"
+    },
+    {
+      "id": "d043c3a9-b413-4b1c-b7ea-f1f1f8228fbe",
+      "editorial_document_id": "66c13687-de07-4bb7-baef-e058a42f2ba4",
+      "occurrence_id": "5781bf91-5080-43af-96b0-d150e9b3fab5",
+      "entity_type": "artist",
+      "target_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+      "created_at": "2026-10-25T15:34:32.175954+00:00",
+      "updated_at": "2026-10-25T15:34:32.175954+00:00"
+    }
+  ],
+  "integrity": {
+    "generatedAt": "2026-10-25T15:34:41.597Z",
+    "counts": {
+      "documents": 2,
+      "relations": 18,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

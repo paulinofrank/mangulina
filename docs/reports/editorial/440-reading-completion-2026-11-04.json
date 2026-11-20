@@ -1,0 +1,504 @@
+{
+  "checked_date": "2026-11-04",
+  "source_root": "E:\\Entrevistas - Mangulina",
+  "files": 99,
+  "full_reading": "All99transcripts read in full, including repeated versions, introductions, advertisements and closing material; keyword review separately used for cross-checking.",
+  "unchanged_sources": true,
+  "checks": [
+    {
+      "index": 1,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 2,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 3,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 4,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 5,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 6,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 7,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 8,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 9,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 10,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 11,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 12,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 13,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 14,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 15,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 16,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 17,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 18,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 19,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 20,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 21,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 22,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 23,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 24,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 25,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 26,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 27,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 28,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 29,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 30,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 31,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 32,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 33,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 34,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 35,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 36,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 37,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 38,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 39,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 40,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 41,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 42,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 43,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 44,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 45,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 46,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 47,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 48,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 49,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 50,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 51,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 52,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 53,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 54,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 55,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 56,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 57,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 58,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 59,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 60,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 61,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 62,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 63,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 64,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 65,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 66,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 67,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 68,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 69,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 70,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 71,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 72,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 73,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 74,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 75,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 76,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 77,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 78,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 79,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 80,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 81,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 82,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 83,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 84,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 85,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 86,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 87,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 88,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 89,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 90,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 91,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 92,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 93,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 94,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 95,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 96,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 97,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 98,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    },
+    {
+      "index": 99,
+      "sha256_matches": true,
+      "full_reading_completed": true
+    }
+  ]
+}

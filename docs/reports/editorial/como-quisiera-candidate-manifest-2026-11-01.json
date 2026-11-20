@@ -1,0 +1,445 @@
+{
+  "date": "2026-11-01",
+  "status": "research_proposal_not_approved_not_executable",
+  "representative_release": "3c02cc68-0231-4b75-9506-27f913643765",
+  "retain_digital_release": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+  "delete_releases": [],
+  "preserve_all_16_track_appearances": true,
+  "conditions": [
+    "Independent performance equivalence review",
+    "Exact approval of final manifest",
+    "Shared Andrés de Jesús scope authorization",
+    "Complete non-FK dependency and URL review",
+    "Checksum backup and demonstrated isolated restore",
+    "Guarded rehearsal and destructive approval"
+  ],
+  "pairs": [
+    {
+      "position": 2,
+      "classification": "probable_duplicate",
+      "proposed_survivor": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "candidate_redundant": "08660ee6-7063-4c5c-a320-3a38227db93e",
+      "execute": false,
+      "reason": "Retain existing ISRC-bearing identity and precise source metadata; quantity of links does not prove identity.",
+      "track_repoint_candidates": [
+        {
+          "id": "c96ff771-33ef-443f-980d-c098fb4cdecc",
+          "before": "08660ee6-7063-4c5c-a320-3a38227db93e",
+          "after": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+          "execute": false
+        }
+      ],
+      "source_links": [],
+      "survivor_links": [
+        {
+          "id": "52026477-a83e-4df2-ad97-05172b5fe3d7",
+          "url": "https://www.deezer.com/track/1857083477",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "ee40404c-b949-4395-9afe-fc99c8200f3b",
+          "url": "https://music.apple.com/us/album/porque-solo-a-tu-lado/1526577380?i=1526577385&uo=4",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "3f669016-43bc-4880-951d-7194598c0fed",
+          "url": "https://open.spotify.com/track/1G4ojjnArh3MbXtSgXlJfv",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "8a71a1ff-fcf4-4d71-97fd-5788d7010e79",
+          "url": "https://www.youtube.com/watch?v=J0fqIunGUTI",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "dc272751-2b90-4826-bb6a-e6fe7294b644",
+          "url": "https://music.amazon.com/albums/B08FC79ZPH?trackAsin=B08FC8F5NV",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "8aff89ab-5942-41ed-8421-89112ca7d964",
+          "url": "https://listen.tidal.com/track/241905812",
+          "disposition": "retain_subject_to_exact_recording_check"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "classification": "probable_duplicate",
+      "proposed_survivor": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "candidate_redundant": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "execute": false,
+      "reason": "Retain existing ISRC-bearing identity and precise source metadata; quantity of links does not prove identity.",
+      "track_repoint_candidates": [
+        {
+          "id": "44e0291e-7a73-4916-8330-5400c9889ff9",
+          "before": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+          "after": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+          "execute": false
+        }
+      ],
+      "source_links": [
+        {
+          "id": "c86b3a52-8466-48ed-92da-3971786ac33f",
+          "url": "https://www.deezer.com/track/1857083487",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "b2843abf-6333-4599-af21-ba4776c7c791",
+          "url": "https://music.apple.com/us/album/tengo-miedo/1526577380?i=1526577387&uo=4",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "36dcf199-d5d0-4d1d-8825-c4854446970c",
+          "url": "https://listen.tidal.com/track/241905813",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "e31aff91-9f9b-4a78-bb39-a1fb34185051",
+          "url": "https://music.amazon.com/albums/B08FC79ZPH?trackAsin=B08FC8286J",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "c4ba94b2-674b-459e-bacb-1657379c9b1b",
+          "url": "https://open.spotify.com/track/0RjesAjol671YO4iBSnMUQ",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "e0c7da06-e1db-4be4-8a51-21927267ee43",
+          "url": "https://www.youtube.com/watch?v=tE4HfdF2tOQ",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "9ee4ed70-7924-449f-aa60-e77fcb1d8da1",
+          "url": "https://www.boomplay.com/songs/42220759",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        }
+      ],
+      "survivor_links": [
+        {
+          "id": "e9bbd061-8960-4224-bd5c-14f0b5ac7aa9",
+          "url": "https://www.deezer.com/track/1857083487",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "8ebe67cf-57e5-4a58-85be-49acb7c4964e",
+          "url": "https://www.youtube.com/watch?v=tE4HfdF2tOQ",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "fbd90858-01b6-4405-956a-217fd1cb41ae",
+          "url": "https://music.apple.com/us/album/tengo-miedo/1526577380?i=1526577387&uo=4",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "ad902010-c005-4c84-8d02-440b980bc64e",
+          "url": "https://listen.tidal.com/track/241905813",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "8effd3fd-16d5-4660-ab52-8fb5080fa08f",
+          "url": "https://music.amazon.com/albums/B08FC79ZPH?trackAsin=B08FC8286J",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "121be662-4064-4252-a4bc-731d23d77018",
+          "url": "https://open.spotify.com/track/0RjesAjol671YO4iBSnMUQ",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "59312f2a-3e25-4dfc-8f70-8227fcbfcc81",
+          "url": "https://www.boomplay.com/songs/42220759",
+          "disposition": "retain_subject_to_exact_recording_check"
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "classification": "probable_duplicate",
+      "proposed_survivor": "a40ba5e9-f62b-49a0-a85a-93114ba484de",
+      "candidate_redundant": "bd04a980-57a7-4384-828e-a791dac2af85",
+      "execute": false,
+      "reason": "Retain existing ISRC-bearing identity and precise source metadata; quantity of links does not prove identity.",
+      "track_repoint_candidates": [
+        {
+          "id": "4bdc5877-a4e5-43f4-b998-c381a0ec316c",
+          "before": "bd04a980-57a7-4384-828e-a791dac2af85",
+          "after": "a40ba5e9-f62b-49a0-a85a-93114ba484de",
+          "execute": false
+        }
+      ],
+      "source_links": [],
+      "survivor_links": [
+        {
+          "id": "61d6ade6-a87c-455a-99c3-923cb4838aee",
+          "url": "https://www.deezer.com/track/1857083507",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "927165d7-5c0a-443f-a006-0084dce5fd38",
+          "url": "https://www.youtube.com/watch?v=uYdF2uBiyvk",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "97c19289-d4a0-4b49-a36d-4bf892efe5d0",
+          "url": "https://music.apple.com/us/album/porque-te-quiero/1526577380?i=1526577392&uo=4",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "4a8af3a7-11a2-48c9-8715-8413324a1db7",
+          "url": "https://open.spotify.com/track/0m85dExmLEnMOvYP1yYqFz",
+          "disposition": "retain_subject_to_exact_recording_check"
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "classification": "unresolved_platform_version_conflict",
+      "proposed_survivor": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "candidate_redundant": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "execute": false,
+      "reason": "Retain existing ISRC-bearing identity and precise source metadata; quantity of links does not prove identity.",
+      "track_repoint_candidates": [
+        {
+          "id": "9d47c173-a0fe-458f-be9e-c599392276b1",
+          "before": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+          "after": "e81bfb18-f534-469a-881a-83eabe69003f",
+          "execute": false
+        }
+      ],
+      "source_links": [
+        {
+          "id": "80bc2800-31e6-4124-80af-6703be0678ce",
+          "url": "https://www.deezer.com/track/1857083517",
+          "disposition": "hold_version_review",
+          "execute": false
+        },
+        {
+          "id": "7f817799-75f5-4568-9ec8-a7e884e0c682",
+          "url": "https://music.apple.com/us/album/y-c%C3%B3mo-es-%C3%A9l/1526556581?i=1526556599&uo=4",
+          "disposition": "hold_version_review",
+          "execute": false
+        },
+        {
+          "id": "0d2d5529-9630-479c-abea-3fb61660c60a",
+          "url": "https://open.spotify.com/track/2VAtWtlPxmrX6MarG21Mpu",
+          "disposition": "hold_version_review",
+          "execute": false
+        },
+        {
+          "id": "948f5ee4-72eb-4fcb-ab44-d31a3bdbb2db",
+          "url": "https://www.youtube.com/watch?v=NlLsjzhnIgQ",
+          "disposition": "hold_version_review",
+          "execute": false
+        },
+        {
+          "id": "9cec032a-6db2-45d4-8a85-2897a859850e",
+          "url": "https://www.pandora.com/TR:34631006",
+          "disposition": "hold_version_review",
+          "execute": false
+        },
+        {
+          "id": "c47dcfae-ee0a-421e-9823-4edb286c54df",
+          "url": "https://www.boomplay.com/songs/42231741",
+          "disposition": "hold_version_review",
+          "execute": false
+        },
+        {
+          "id": "5e12737f-b4e0-4196-92a3-e01daea1167f",
+          "url": "https://listen.tidal.com/track/151130869",
+          "disposition": "hold_version_review",
+          "execute": false
+        }
+      ],
+      "survivor_links": [
+        {
+          "id": "11d83803-61c9-4d1d-a6ae-92228e29bfb1",
+          "url": "https://www.deezer.com/track/1857083517",
+          "disposition": "hold_version_review"
+        },
+        {
+          "id": "8600ec7a-c5db-43ed-b8b1-3be832516111",
+          "url": "https://music.apple.com/us/album/y-c%C3%B3mo-es-%C3%A9l/1526556581?i=1526556599&uo=4",
+          "disposition": "hold_version_review"
+        },
+        {
+          "id": "cdcb336a-e805-4864-8ebc-6c18d069bfc6",
+          "url": "https://open.spotify.com/track/2VAtWtlPxmrX6MarG21Mpu",
+          "disposition": "hold_version_review"
+        },
+        {
+          "id": "bd3c835c-0674-4f35-b56b-2a12bb85fda6",
+          "url": "https://www.youtube.com/watch?v=NlLsjzhnIgQ",
+          "disposition": "hold_version_review"
+        },
+        {
+          "id": "fd7b5e85-2bb0-4896-b591-3814736a3c11",
+          "url": "https://listen.tidal.com/track/241907244",
+          "disposition": "hold_version_review"
+        },
+        {
+          "id": "3b63196b-80a3-4995-b655-b25785c3c852",
+          "url": "https://www.pandora.com/TR:34631006",
+          "disposition": "hold_version_review"
+        },
+        {
+          "id": "2c10afe1-30ed-423f-b87f-9c7df048038d",
+          "url": "https://www.boomplay.com/songs/42231741",
+          "disposition": "hold_version_review"
+        }
+      ]
+    },
+    {
+      "position": 7,
+      "classification": "probable_duplicate",
+      "proposed_survivor": "f693f654-3c95-4155-82b8-b22be3e8bff0",
+      "candidate_redundant": "749d20c1-4ecf-480d-aeab-a45e42d83cd2",
+      "execute": false,
+      "reason": "Retain existing ISRC-bearing identity and precise source metadata; quantity of links does not prove identity.",
+      "track_repoint_candidates": [
+        {
+          "id": "7fc286ad-9b7c-4103-b308-bd4bbdbf9b95",
+          "before": "749d20c1-4ecf-480d-aeab-a45e42d83cd2",
+          "after": "f693f654-3c95-4155-82b8-b22be3e8bff0",
+          "execute": false
+        }
+      ],
+      "source_links": [
+        {
+          "id": "3f981555-aee5-4057-9876-51b98978a393",
+          "url": "https://www.deezer.com/track/1857083527",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "6e04a684-e1b5-48f9-9cf9-8ba0b5f0c2a6",
+          "url": "https://music.apple.com/us/album/las-locas/1526577380?i=1526577616&uo=4",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "913ce7b0-1eb1-4cb2-a1f5-33376b03f0f3",
+          "url": "https://open.spotify.com/track/2YplMhyj8LuoZIfGELHhSC",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "e8bfddb8-8240-45fa-866b-5d3e1ec0b1f4",
+          "url": "https://www.youtube.com/watch?v=hq_y-4wd1Ps",
+          "disposition": "unique_destination_candidate_review_before_move",
+          "execute": false
+        },
+        {
+          "id": "3bda9468-c5e3-45f3-8d53-7667aab03394",
+          "url": "https://listen.tidal.com/track/241905817",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        }
+      ],
+      "survivor_links": [
+        {
+          "id": "7a4363a6-d3ab-47a8-b1a6-718493cc88cf",
+          "url": "https://www.deezer.com/track/1857083527",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "a6af6292-ec52-4498-95c9-f2918923e684",
+          "url": "https://music.apple.com/us/album/las-locas/1526577380?i=1526577616&uo=4",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "dfdfa8bb-8714-44f9-bd2c-2db27a560e9e",
+          "url": "https://open.spotify.com/track/2YplMhyj8LuoZIfGELHhSC",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "225e9af2-64f5-4c18-a7bd-3c1b10c190c0",
+          "url": "https://listen.tidal.com/track/241905817",
+          "disposition": "retain_subject_to_exact_recording_check"
+        }
+      ]
+    },
+    {
+      "position": 8,
+      "classification": "probable_duplicate",
+      "proposed_survivor": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+      "candidate_redundant": "e89938f0-cec1-4551-95c6-b5070541a66e",
+      "execute": false,
+      "reason": "Retain existing ISRC-bearing identity and precise source metadata; quantity of links does not prove identity.",
+      "track_repoint_candidates": [
+        {
+          "id": "cc8823e1-0c1a-4848-9b91-6333cd40335e",
+          "before": "e89938f0-cec1-4551-95c6-b5070541a66e",
+          "after": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+          "execute": false
+        }
+      ],
+      "source_links": [
+        {
+          "id": "6b5db86e-0fa6-48bb-a697-58a8d407ce08",
+          "url": "https://www.deezer.com/track/1857083537",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "f292aa8b-15b1-4a32-8f1b-ffae880dd21b",
+          "url": "https://music.apple.com/us/album/sigue-tu-vida/1526577380?i=1526577619&uo=4",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "2fc08aac-bbbf-49b2-a17e-6aabc119f54f",
+          "url": "https://open.spotify.com/track/5kP9Us3GodbMwBAhicnefc",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "932ca90c-8fba-442e-9283-24af5dffe929",
+          "url": "https://www.youtube.com/watch?v=qRo9rlYQgO0",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        },
+        {
+          "id": "25e3eefa-50b6-4645-9d9a-ea94469313be",
+          "url": "https://listen.tidal.com/track/241905818",
+          "disposition": "duplicate_destination_candidate_preserve_evidence",
+          "execute": false
+        }
+      ],
+      "survivor_links": [
+        {
+          "id": "396f9ce7-d2cb-49b0-98ff-937c15292963",
+          "url": "https://www.deezer.com/track/1857083537",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "94bc1101-7d98-4b0f-afb4-ea163d925a6b",
+          "url": "https://www.youtube.com/watch?v=qRo9rlYQgO0",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "e609dde1-ea3d-43fd-9ecd-a424b3801add",
+          "url": "https://music.apple.com/us/album/sigue-tu-vida/1526577380?i=1526577619&uo=4",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "1ad3690e-8111-4e96-acb9-65894815352f",
+          "url": "https://open.spotify.com/track/5kP9Us3GodbMwBAhicnefc",
+          "disposition": "retain_subject_to_exact_recording_check"
+        },
+        {
+          "id": "8746213d-bf2d-45ed-a2a3-4709d03081c4",
+          "url": "https://listen.tidal.com/track/241905818",
+          "disposition": "retain_subject_to_exact_recording_check"
+        }
+      ]
+    }
+  ]
+}

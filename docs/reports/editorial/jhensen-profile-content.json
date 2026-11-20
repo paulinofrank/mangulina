@@ -1,0 +1,48 @@
+{
+  "artist": {
+    "name": "Jhensen",
+    "stage_name": "Jhensen",
+    "sort_name": "Jhensen",
+    "slug": "jhensen",
+    "first_name": "Félix",
+    "middle_name": null,
+    "last_name": "Caraballo",
+    "second_last_name": "Leonidas",
+    "aliases": ["Félix Caraballo Leonidas"],
+    "disambiguation": "Dominican romantic-ballad singer and songwriter based in Puerto Rico",
+    "type": "solo_artist",
+    "primary_role": "singer",
+    "occupations": ["songwriter"],
+    "gender": "male",
+    "birth_place": "Bayagüana",
+    "province": "Monte Plata",
+    "date_of_birth": null,
+    "birth_year": null,
+    "primary_genre": "ballads",
+    "genres": ["bachata"],
+    "instruments": ["voice"],
+    "artist_tags": ["secular"],
+    "facebook": "JhensenCantautor",
+    "instagram": null,
+    "youtube": null,
+    "spotify": "329jhhEpDL1oM7hHcsl1Wr",
+    "website": null,
+    "status": "draft"
+  },
+  "bios": {
+    "es": [
+      [null, "Jhensen, nombre artístico de Félix Caraballo Leonidas, es un cantante y compositor dominicano de balada romántica nacido el 30 de septiembre en Bayagüana, provincia Monte Plata. Criado en La Otra Banda, Higüey, desarrolló su carrera discográfica desde Puerto Rico. Sus grabaciones de los años ochenta y sus composiciones conectan la balada con una etapa posterior de bachata."],
+      ["De Bayagüana a Puerto Rico", "Después de su infancia en La Otra Banda, se radicó en Puerto Rico en 1967. Estableció su hogar en Carolina y allí inició su carrera profesional como cantante. El traslado situó su repertorio dominicano de canción romántica en el circuito musical puertorriqueño."],
+      ["Las primeras grabaciones", "En 1981 publicó «Cuando te sientas sola» con el sello venezolano «Velvet». El álbum incluyó la canción titular, escrita por él, y su interpretación de «El amor no tiene tiempo ni edad», composición de Teddy Jauren y Roberto Livi. En 1982 siguió «Yo también amé igual que tú» y en 1984 apareció «Amiga mía». Esta última producción contiene «En ruinas», obra de [[Rafael Solano]]."],
+      ["Composición y bachata", "Durante los años noventa continuó grabando; su propia biografía identifica una producción titulada «Lo nuevo de Jhensen» y la canción «Déjame libre mujer». En 1999 publicó «Ay amor», que incluye una versión suya de «Pienso en ti». Posteriormente, [[Frank Reyes]] grabó esa composición y la incluyó en su álbum «Pienso en ti» de 2006. Jhensen también llevó su repertorio hacia la bachata con el sencillo «Te seguiré» en 2014."],
+      ["Legado", "Su trayectoria reúne la interpretación de baladas, la escritura de canciones y su circulación entre República Dominicana y Puerto Rico. «Cuando te sientas sola» identifica sus comienzos discográficos; la grabación de «Pienso en ti» por Frank Reyes extendió una de sus composiciones a otro género y a otro público."]
+    ],
+    "en": [
+      [null, "Jhensen, the stage name of Félix Caraballo Leonidas, is a Dominican romantic ballad singer and songwriter born on September 30 in Bayagüana, Monte Plata province. Raised in La Otra Banda, Higüey, he built his recording career in Puerto Rico. His 1980s recordings and songwriting connect romantic ballads with a later turn toward bachata."],
+      ["From Bayagüana to Puerto Rico", "After spending his childhood in La Otra Banda, he settled in Puerto Rico in 1967. He made his home in Carolina and began his professional singing career there, bringing a Dominican romantic-song repertoire into the Puerto Rican music scene."],
+      ["Early recordings", "In 1981 he released «Cuando te sientas sola» on the Venezuelan label «Velvet». The album included his self-written title song and his interpretation of «El amor no tiene tiempo ni edad», written by Teddy Jauren and Roberto Livi. «Yo también amé igual que tú» followed in 1982, and «Amiga mía» appeared in 1984. The latter album includes «En ruinas», a composition by [[Rafael Solano]]."],
+      ["Songwriting and bachata", "He continued recording in the 1990s; his own biography identifies a production titled «Lo nuevo de Jhensen» and the song «Déjame libre mujer». In 1999 he released «Ay amor», which includes his own recording of «Pienso en ti». [[Frank Reyes]] subsequently recorded the composition for his 2006 album «Pienso en ti». Jhensen also moved toward bachata with the 2014 single «Te seguiré»."],
+      ["Legacy", "His career combines ballad singing, songwriting and musical exchange between the Dominican Republic and Puerto Rico. «Cuando te sientas sola» marks his recording beginnings; Frank Reyes's recording of «Pienso en ti» carried one of his songs into another genre and to another audience."]
+    ]
+  }
+}

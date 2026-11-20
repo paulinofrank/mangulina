@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-01T16:03:23.699Z",
+  "artist_id": "3c82ee60-d565-405d-8423-7895d3706122",
+  "artist_name": "Los Hijos del Rey",
+  "artist_status": "published",
+  "releases_count": 13,
+  "recordings_count": 101,
+  "tracks_count": 119,
+  "release_artists_count": 19,
+  "shared_recordings_reused": 18,
+  "covers_verified": 13,
+  "rpc_discography_rows": 119,
+  "releases": [
+    {
+      "id": "03a4d372-275b-4c34-8345-b369a73ff462",
+      "year": 1977,
+      "title": "Los Hijos del Rey con Fernandito Villalona",
+      "slug": "los-hijos-del-rey-con-fernandito-villalona",
+      "tracks_count": 10,
+      "has_cover_image": true
+    },
+    {
+      "id": "85c69f0d-bafd-48fa-a4a6-cb01674aa1e5",
+      "year": 1978,
+      "title": "Fernandito & Raulín",
+      "slug": "fernandito-raulin-los-hijos-del-rey",
+      "tracks_count": 9,
+      "has_cover_image": true
+    },
+    {
+      "id": "68050812-c06b-4881-ae24-e92a99982549",
+      "year": 1978,
+      "title": "Un Brindis Por Juan Lockward",
+      "slug": "un-brindis-por-juan-lockward-los-hijos-del-rey",
+      "tracks_count": 10,
+      "has_cover_image": true
+    },
+    {
+      "id": "44e64533-23ec-4d03-b5f0-8c6d86bb4c84",
+      "year": 1979,
+      "title": "New Life",
+      "slug": "new-life-los-hijos-del-rey",
+      "tracks_count": 10,
+      "has_cover_image": true
+    },
+    {
+      "id": "922d78e0-35fb-4d1e-8120-94e2d4dd968c",
+      "year": 1979,
+      "title": "Auténticos",
+      "slug": "autenticos-los-hijos-del-rey",
+      "tracks_count": 10,
+      "has_cover_image": true
+    },
+    {
+      "id": "2fb91a2c-e4ab-4a35-9489-1636f9800624",
+      "year": 1980,
+      "title": "Los Hijos Del Rey (con Robert Jeand'or)",
+      "slug": "los-hijos-del-rey-con-robert-jeand-or",
+      "tracks_count": 8,
+      "has_cover_image": true
+    },
+    {
+      "id": "ef2e8f8d-f28c-42a6-844b-503e96e8d6b5",
+      "year": 1981,
+      "title": "En Europa",
+      "slug": "en-europa-los-hijos-del-rey",
+      "tracks_count": 8,
+      "has_cover_image": true
+    },
+    {
+      "id": "55251c46-4058-432d-9ebd-731e7c2a6d70",
+      "year": 1981,
+      "title": "Reencuentro Con Raulín",
+      "slug": "reencuentro-con-raulin-los-hijos-del-rey",
+      "tracks_count": 8,
+      "has_cover_image": true
+    },
+    {
+      "id": "bc3f6da4-2da0-4402-aec2-2d3286343f0e",
+      "year": 1984,
+      "title": "Los Hijos Del Rey",
+      "slug": "los-hijos-del-rey-1984",
+      "tracks_count": 10,
+      "has_cover_image": true
+    },
+    {
+      "id": "e51ef57c-a53f-44ce-a3e3-b6ebb4bc8ed1",
+      "year": 1985,
+      "title": "En Movimiento",
+      "slug": "en-movimiento-los-hijos-del-rey",
+      "tracks_count": 8,
+      "has_cover_image": true
+    },
+    {
+      "id": "da3893b6-6ad7-47bd-80f8-e2d175212c08",
+      "year": 1986,
+      "title": "Sergio Vargas y Los Hijos del Rey (La Quiero a Morir)",
+      "slug": "sergio-vargas-y-los-hijos-del-rey-la-quiero-a-morir",
+      "tracks_count": 8,
+      "has_cover_image": true
+    },
+    {
+      "id": "6b85620d-d20a-4f13-bda7-a2853c449886",
+      "year": 1987,
+      "title": "Sergio Vargas y Los Hijos del Rey (Si Algún Día la Ves)",
+      "slug": "sergio-vargas-y-los-hijos-del-rey-si-algun-dia-la-ves",
+      "tracks_count": 10,
+      "has_cover_image": true
+    },
+    {
+      "id": "099736c1-1d7d-41cd-9a4b-d66979b494f6",
+      "year": 1988,
+      "title": "Thony Medrano y Los Hijos Del Rey",
+      "slug": "thony-medrano-y-los-hijos-del-rey",
+      "tracks_count": 10,
+      "has_cover_image": true
+    }
+  ]
+}

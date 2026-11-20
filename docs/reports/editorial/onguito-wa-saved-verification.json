@@ -1,0 +1,538 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "df5ef32e-ea15-4c22-a3c6-b9a1276b98ad",
+        "name": "Onguito Wa",
+        "sort_name": "Onguito Wa",
+        "type": "solo_artist",
+        "birth_year": null,
+        "death_year": null,
+        "created_at": "2026-10-23T02:09:24.033395+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Elvis",
+        "middle_name": "Manuel",
+        "last_name": "Santos",
+        "second_last_name": "Alcántara",
+        "stage_name": "Onguito Wa",
+        "date_of_birth": null,
+        "birth_place": "Santo Domingo",
+        "website": null,
+        "youtube": null,
+        "facebook": null,
+        "instagram": null,
+        "aliases": [
+          "Elvis Manuel Santos Alcántara",
+          "Ariel Wa Wa Wa"
+        ],
+        "mbid": null,
+        "occupations": [],
+        "instruments": [
+          "voice"
+        ],
+        "genres": [],
+        "disambiguation": "Dominican dembow singer known for Yamilet",
+        "gender": "male",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-23T02:09:24.033395+00:00",
+        "province": "Distrito Nacional",
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "onguito-wa",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "urban-dembow",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "5gIa74oRT4LLG0AioLVn6F"
+      },
+      {
+        "id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+        "name": "Rochy RD",
+        "slug": "rochy-rd",
+        "status": "published"
+      },
+      {
+        "id": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+        "name": "Leo RD",
+        "slug": "leo-rd",
+        "status": "published"
+      },
+      {
+        "id": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+        "name": "Tivi Gunz",
+        "slug": "tivi-gunz",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "f82c4e25-abf4-470f-9514-2421718c1bc7",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Onguito Wa is the stage name of Elvis Manuel Santos Alcántara, a Dominican dembow singer from Santo Domingo. He came to public attention in 2020 with «Yamilet», alongside ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                    "displayText": "Rochy RD",
+                    "occurrenceId": "26060f0b-0964-43ab-b63d-075d17b7d074"
+                  }
+                },
+                {
+                  "text": ", and subsequently developed a repertoire of singles and collaborations within Dominican urban music.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "From delivery work to music",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Before pursuing music, he worked making deliveries on Avenida España in Santo Domingo Este. There he met ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                    "displayText": "Rochy RD",
+                    "occurrenceId": "8a703583-c1fb-4b45-915b-a4b6789e3882"
+                  }
+                },
+                {
+                  "text": ", who signed him as the first artist at Wawawa Records and gave him the stage name Onguito Wa. In an interview reported by Diario Libre, he explained that he had previously called himself Ariel Wa Wa Wa.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Early releases",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Yamilet», whose video circulated in September 2020, helped introduce him to audiences on digital platforms. «Los perros de los pies» brought further attention. In May 2021 he collaborated with Ozuna on «Diablona», a release documented in contemporary press coverage. Following his initial period with Wawawa Records, he continued releasing music and working with other performers.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A collaborative repertoire",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His 2022 releases included «Tan Quedao» with Briante, «Uju Aja» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+                    "displayText": "Leo RD",
+                    "occurrenceId": "fc5f08d1-68bc-4777-9f83-ab428dacb7f5"
+                  }
+                },
+                {
+                  "text": ", and «Me la subió», also credited to La Melma Music. His repertoire includes «Lokisla» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+                    "displayText": "Tivi Gunz",
+                    "occurrenceId": "52946a34-f013-4e25-810f-9e067c9d833e"
+                  }
+                },
+                {
+                  "text": ", ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                    "displayText": "Rochy RD",
+                    "occurrenceId": "7e1f7da3-5a5d-47c0-8d8b-a7abcdd529d8"
+                  }
+                },
+                {
+                  "text": ", Harryson and El Perrote Wz. In 2024 he participated in «12 mandamientos (De los Km pal mundo)», a collective piece lasting over ten minutes, credited alongside El Experimento (Macgyver), Odanel Km and other participants and marketed as an EP on Apple Music.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His early career reflects dembow’s circulation through videos, singles and collaborations. «Yamilet» introduced him to a wider audience, while later releases such as «Tan Quedao», «Uju Aja» and «Me la subió» extended his presence within Dominican urban music.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "df5ef32e-ea15-4c22-a3c6-b9a1276b98ad",
+        "created_at": "2026-10-23T02:09:24.333447+00:00",
+        "updated_at": "2026-10-23T02:09:24.333447+00:00",
+        "revision": 1
+      },
+      {
+        "id": "bf1a3837-2388-42c8-a91a-9270bc09a919",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Onguito Wa, nombre artístico de Elvis Manuel Santos Alcántara, es un cantante dominicano de dembow originario de Santo Domingo. Se dio a conocer en 2020 con «Yamilet», junto a ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                    "displayText": "Rochy RD",
+                    "occurrenceId": "304b7ac4-46e5-4072-9ab2-d23baf9d846f"
+                  }
+                },
+                {
+                  "text": ", y desarrolló posteriormente un repertorio de sencillos y colaboraciones dentro del movimiento urbano dominicano.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "De repartidor a intérprete",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Antes de dedicarse a la música trabajaba como repartidor en la avenida España, en Santo Domingo Este. Allí conoció a ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                    "displayText": "Rochy RD",
+                    "occurrenceId": "8253abc4-51ed-41dc-b846-d039315d39e8"
+                  }
+                },
+                {
+                  "text": ", quien lo incorporó como el primer artista de Wawawa Records y le dio el nombre artístico Onguito Wa. Según relató en una entrevista recogida por Diario Libre, antes se hacía llamar Ariel Wa Wa Wa.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Las primeras canciones",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Yamilet», cuyo video circuló en septiembre de 2020, contribuyó a su difusión en las plataformas digitales. También ganó notoriedad con «Los perros de los pies». En mayo de 2021 participó junto a Ozuna en «Diablona», una colaboración documentada por la prensa de la época. Después de su etapa inicial con Wawawa Records continuó publicando música y trabajando con otros intérpretes.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Un repertorio de colaboraciones",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 2022 aparecieron «Tan Quedao», con Briante; «Uju Aja», con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+                    "displayText": "Leo RD",
+                    "occurrenceId": "b1db288b-b0df-4500-b57b-567abbbb13f9"
+                  }
+                },
+                {
+                  "text": "; y «Me la subió», acreditada también a La Melma Music. Su repertorio incluye «Lokisla», junto a ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+                    "displayText": "Tivi Gunz",
+                    "occurrenceId": "70ea30f8-3607-47aa-93d7-abfbe62b1924"
+                  }
+                },
+                {
+                  "text": ", ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                    "displayText": "Rochy RD",
+                    "occurrenceId": "6bb68e7b-c79a-4230-9bbe-6cb4e1f60f11"
+                  }
+                },
+                {
+                  "text": ", Harryson y El Perrote Wz. En 2024 participó en «12 mandamientos (De los Km pal mundo)», pieza colectiva de más de diez minutos acreditada junto a El Experimento (Macgyver), Odanel Km y otros participantes, comercializada como EP en Apple Music.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su trayectoria inicial refleja la circulación del dembow mediante videos, sencillos y colaboraciones. «Yamilet» marcó su presentación ante un público amplio, mientras que trabajos posteriores como «Tan Quedao», «Uju Aja» y «Me la subió» ampliaron su presencia en el repertorio urbano dominicano.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "df5ef32e-ea15-4c22-a3c6-b9a1276b98ad",
+        "created_at": "2026-10-23T02:09:24.19784+00:00",
+        "updated_at": "2026-10-23T02:09:24.19784+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "f5443629-eecb-4a1b-b3b2-4e4006234a65",
+        "editorial_document_id": "bf1a3837-2388-42c8-a91a-9270bc09a919",
+        "occurrence_id": "304b7ac4-46e5-4072-9ab2-d23baf9d846f",
+        "entity_type": "artist",
+        "target_artist_id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+        "created_at": "2026-10-23T02:09:24.19784+00:00",
+        "updated_at": "2026-10-23T02:09:24.19784+00:00"
+      },
+      {
+        "id": "b188bcec-aaf9-4da8-a856-4d83cb0a02b4",
+        "editorial_document_id": "bf1a3837-2388-42c8-a91a-9270bc09a919",
+        "occurrence_id": "8253abc4-51ed-41dc-b846-d039315d39e8",
+        "entity_type": "artist",
+        "target_artist_id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+        "created_at": "2026-10-23T02:09:24.19784+00:00",
+        "updated_at": "2026-10-23T02:09:24.19784+00:00"
+      },
+      {
+        "id": "ada101ef-646d-4735-a9c8-77c135191510",
+        "editorial_document_id": "bf1a3837-2388-42c8-a91a-9270bc09a919",
+        "occurrence_id": "b1db288b-b0df-4500-b57b-567abbbb13f9",
+        "entity_type": "artist",
+        "target_artist_id": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+        "created_at": "2026-10-23T02:09:24.19784+00:00",
+        "updated_at": "2026-10-23T02:09:24.19784+00:00"
+      },
+      {
+        "id": "291794e2-8264-4a14-b5a2-332c31f8cd7f",
+        "editorial_document_id": "bf1a3837-2388-42c8-a91a-9270bc09a919",
+        "occurrence_id": "70ea30f8-3607-47aa-93d7-abfbe62b1924",
+        "entity_type": "artist",
+        "target_artist_id": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+        "created_at": "2026-10-23T02:09:24.19784+00:00",
+        "updated_at": "2026-10-23T02:09:24.19784+00:00"
+      },
+      {
+        "id": "c4acbbd4-61d5-4edb-8f06-a189b07fc42f",
+        "editorial_document_id": "bf1a3837-2388-42c8-a91a-9270bc09a919",
+        "occurrence_id": "6bb68e7b-c79a-4230-9bbe-6cb4e1f60f11",
+        "entity_type": "artist",
+        "target_artist_id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+        "created_at": "2026-10-23T02:09:24.19784+00:00",
+        "updated_at": "2026-10-23T02:09:24.19784+00:00"
+      },
+      {
+        "id": "e4006b66-359b-462a-8c0d-e98dabbfc946",
+        "editorial_document_id": "f82c4e25-abf4-470f-9514-2421718c1bc7",
+        "occurrence_id": "26060f0b-0964-43ab-b63d-075d17b7d074",
+        "entity_type": "artist",
+        "target_artist_id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+        "created_at": "2026-10-23T02:09:24.333447+00:00",
+        "updated_at": "2026-10-23T02:09:24.333447+00:00"
+      },
+      {
+        "id": "7ce62151-434f-4003-86ea-8e02a915fbf6",
+        "editorial_document_id": "f82c4e25-abf4-470f-9514-2421718c1bc7",
+        "occurrence_id": "8a703583-c1fb-4b45-915b-a4b6789e3882",
+        "entity_type": "artist",
+        "target_artist_id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+        "created_at": "2026-10-23T02:09:24.333447+00:00",
+        "updated_at": "2026-10-23T02:09:24.333447+00:00"
+      },
+      {
+        "id": "3c626a3c-d141-4aed-9f5f-a9d826b95beb",
+        "editorial_document_id": "f82c4e25-abf4-470f-9514-2421718c1bc7",
+        "occurrence_id": "fc5f08d1-68bc-4777-9f83-ab428dacb7f5",
+        "entity_type": "artist",
+        "target_artist_id": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+        "created_at": "2026-10-23T02:09:24.333447+00:00",
+        "updated_at": "2026-10-23T02:09:24.333447+00:00"
+      },
+      {
+        "id": "bd6b66b7-a5e4-4267-af22-8be81aa3067f",
+        "editorial_document_id": "f82c4e25-abf4-470f-9514-2421718c1bc7",
+        "occurrence_id": "52946a34-f013-4e25-810f-9e067c9d833e",
+        "entity_type": "artist",
+        "target_artist_id": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+        "created_at": "2026-10-23T02:09:24.333447+00:00",
+        "updated_at": "2026-10-23T02:09:24.333447+00:00"
+      },
+      {
+        "id": "b35a8b84-458f-41a6-8294-1a4025910598",
+        "editorial_document_id": "f82c4e25-abf4-470f-9514-2421718c1bc7",
+        "occurrence_id": "7e1f7da3-5a5d-47c0-8d8b-a7abcdd529d8",
+        "entity_type": "artist",
+        "target_artist_id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+        "created_at": "2026-10-23T02:09:24.333447+00:00",
+        "updated_at": "2026-10-23T02:09:24.333447+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-23T02:09:34.289Z",
+    "counts": {
+      "documents": 2,
+      "relations": 10,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

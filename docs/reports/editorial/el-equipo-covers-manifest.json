@@ -1,0 +1,110 @@
+[
+  {
+    "index": 0,
+    "title": "El Equipo (con Sandy Reyes)",
+    "year": 1981,
+    "filename": "equipo-1981-1.jpg",
+    "filepath": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1981-1.jpg",
+    "bytes": 772928,
+    "sha256": "e57ea80c6a593c8adc51521a0df2da3e22f2d5358065c8a570d362555f66f7b8"
+  },
+  {
+    "index": 1,
+    "title": "Dioni Fernández Y El Equipo (con Charlie Rodríguez)",
+    "year": 1983,
+    "filename": "equipo-1983-2.jpg",
+    "filepath": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1983-2.jpg",
+    "bytes": 121788,
+    "sha256": "5b382b754d0f9b5b684b91b3b8895be4da85f59bd5b6e130640ab003deb698d0"
+  },
+  {
+    "index": 2,
+    "title": "Los Diseñadores",
+    "year": 1984,
+    "filename": "equipo-1984-3.jpg",
+    "filepath": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1984-3.jpg",
+    "bytes": 108338,
+    "sha256": "7447d78a1736b629cfa1f6088faef3bbba506cbdb45303534d883da5d912f384"
+  },
+  {
+    "index": 3,
+    "title": "Fiesta & Fiesta!",
+    "year": 1985,
+    "filename": "equipo-1985-4.jpg",
+    "filepath": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1985-4.jpg",
+    "bytes": 403571,
+    "sha256": "3f9b43bec8c4b5afd962a928dd01f9b7ed6cf3098e3e5fc3e55bddec77182629"
+  },
+  {
+    "index": 4,
+    "title": "Pasa la Vida",
+    "year": 1986,
+    "filename": "equipo-1986-5.jpg",
+    "filepath": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1986-5.jpg",
+    "bytes": 225767,
+    "sha256": "3e2fd09bdda2deb64e8013b76946ffea95f4b2eb0471f12397020e8536a3315e"
+  },
+  {
+    "index": 5,
+    "title": "Dioni Fernández & El Equipo (El Cinturón del Taxi)",
+    "year": 1988,
+    "filename": "equipo-1988-6.jpg",
+    "filepath": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1988-6.jpg",
+    "bytes": 298848,
+    "sha256": "95dd5a859b6da51a6041f222df223458e602af50ca0dd3318c3a448447bb34a2"
+  },
+  {
+    "index": 6,
+    "title": "El Millonario",
+    "year": 1988,
+    "filename": "equipo-1988-7.jpg",
+    "filepath": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1988-7.jpg",
+    "bytes": 181828,
+    "sha256": "e30848bfd8f1202e765beabf9b833e357786c0fae7555e05d096c3cc9d2ad708"
+  },
+  {
+    "index": 7,
+    "title": "Dioni Fernández",
+    "year": 1991,
+    "filename": "equipo-1991-8.jpg",
+    "filepath": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1991-8.jpg",
+    "bytes": 237567,
+    "sha256": "d3022d8697c5f0d7a78367e904aca58c00f4fc40a281bab03269b2751f1ad4a1"
+  },
+  {
+    "index": 8,
+    "title": "Yo Soy Para Ti",
+    "year": 1992,
+    "filename": "equipo-1992-9.jpg",
+    "filepath": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1992-9.jpg",
+    "bytes": 94056,
+    "sha256": "3122821e241bb9305e8a7c694ebe0f79ce8f1540491d683a09f42c5d605d5e6c"
+  },
+  {
+    "index": 9,
+    "title": "Homenaje A Julito Deschamps",
+    "year": 1994,
+    "filename": "equipo-1994-10.jpg",
+    "filepath": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1994-10.jpg",
+    "bytes": 94435,
+    "sha256": "5a66445c4570666a084282715e12167cc75f35195b33be55f2cd52c4b1bc4e52"
+  },
+  {
+    "index": 10,
+    "title": "La Gota Fría",
+    "year": 1994,
+    "filename": "equipo-1994-11.jpg",
+    "filepath": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1994-11.jpg",
+    "bytes": 114175,
+    "sha256": "a9e1343163dc5bb9516d6965345751afc3b59ba45e1dc7ed5b785f4f193e6896"
+  },
+  {
+    "index": 11,
+    "title": "Juntos de Nuevo (con Charlie Rodríguez)",
+    "year": 2007,
+    "filename": "equipo-2007-12.jpg",
+    "filepath": "docs\\reports\\editorial\\el-equipo-covers\\equipo-2007-12.jpg",
+    "bytes": 96384,
+    "sha256": "f4b75465cfa8fb8f28a9a65698e394e6171a34075ced2e63f28545fdfc3e470c"
+  }
+]

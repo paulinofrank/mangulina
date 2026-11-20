@@ -1,0 +1,25 @@
+{
+  "duplicates": [],
+  "targets": [
+    {
+      "id": "155e5700-4320-4735-860c-47dfe4474e23",
+      "name": "El Fother",
+      "slug": "el-fother",
+      "status": "published"
+    }
+  ],
+  "genres": [
+    {
+      "slug": "urban-dembow",
+      "name": "Dembow"
+    },
+    {
+      "slug": "urban-rap-hip-hop",
+      "name": "Rap / Hip Hop"
+    },
+    {
+      "slug": "urban-trap",
+      "name": "Trap"
+    }
+  ]
+}

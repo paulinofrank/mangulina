@@ -1,0 +1,384 @@
+[
+  {
+    "artist": {
+      "id": "32aadd75-c75f-4774-a67e-d2124614ea7c",
+      "mbid": null,
+      "name": "Michan Leonardo",
+      "slug": "michan-leonardo",
+      "type": "solo_artist",
+      "ended": false,
+      "views": 0,
+      "bio_en": null,
+      "bio_es": null,
+      "gender": "male",
+      "genres": [
+        "bachata"
+      ],
+      "status": "draft",
+      "aliases": [
+        "Michán Leonardo"
+      ],
+      "spotify": "6J6FctMx7Frn8AJoaT6em8",
+      "website": null,
+      "youtube": null,
+      "facebook": null,
+      "province": null,
+      "birth_day": null,
+      "has_image": false,
+      "instagram": null,
+      "last_name": null,
+      "sort_name": "Michan Leonardo",
+      "birth_year": null,
+      "created_at": "2026-10-18T01:31:42.024518+00:00",
+      "death_year": null,
+      "first_name": null,
+      "stage_name": "Michan Leonardo",
+      "updated_at": "2026-10-18T01:31:42.024518+00:00",
+      "artist_tags": [
+        "secular"
+      ],
+      "birth_month": null,
+      "birth_place": null,
+      "instruments": [
+        "voice"
+      ],
+      "mb_metadata": {},
+      "middle_name": null,
+      "occupations": [
+        "composer"
+      ],
+      "wikidata_id": null,
+      "primary_role": "singer",
+      "date_of_birth": null,
+      "date_of_death": null,
+      "primary_genre": "bachata",
+      "disambiguation": null,
+      "formation_year": null,
+      "dissolution_year": null,
+      "image_updated_at": null,
+      "second_last_name": null
+    },
+    "documents": [
+      {
+        "id": "61646c3f-7a33-4d8f-b170-147308e228b5",
+        "locale": "en",
+        "status": "published",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Michan Leonardo is a bachata singer associated with the Dominican recording scene of the mid-2000s. His documented work includes «Adiós Good Bye» and the radio promotion of «Llámame» and «No Puedo Vivir Sin Ti». His performances of «Llámame» and «Sin ti la vida se me va» remain available on digital compilations.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Radio promotion in 2006",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "On November 13, 2006, Diario Libre reported plans to promote «No Puedo Vivir Sin Ti», written by Robert Félix, after «Llámame». His representative, Rafael Alcántara, described the change of single as a continuation of the singer’s radio campaign.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The album «Adiós Good Bye»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The report documented a ten-song bachata album for «Necho Records», recorded at «Estudios Emcas» in Santo Domingo and arranged by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "1db77ddd-1046-4d95-b675-65da60234ef0",
+                    "displayText": "Mártires de León",
+                    "occurrenceId": "fe92c1e4-94f2-4577-a6de-0051b252b0e2"
+                  }
+                },
+                {
+                  "text": ". According to Alcántara, the repertoire included compositions by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+                    "displayText": "Frantoni Santana",
+                    "occurrenceId": "d1bf7a65-5cb9-4d97-a895-608637cee61a"
+                  }
+                },
+                {
+                  "text": ", Miguel Braho, Félix Veloz and Michan himself. It also named «Otro Ocupa Mi Lugar» and «Sin ti la vida se me va» among the promoted tracks.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Compilation appearances",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Spotify and Apple Music list «Llámame» and «Sin Ti la Vida Se Me Va» on «Bachatas Pal' Pueblo», with an edition date of 2007. Spotify also shows appearances on «Bachata Pal Pueblo» and «Bachata Pal Pueblo Vol 2», dated 2015. These are compilation appearances, and their platform dates do not establish the original recording dates.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The surviving record places Michan Leonardo among the singers seeking an audience in 2000s bachata. Contemporary reporting and digital editions preserve part of his work, while leaving his personal history and later performing activity unresolved.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "revision": 1,
+        "created_at": "2026-10-18T01:31:53.356187+00:00",
+        "updated_at": "2026-10-18T01:31:53.356187+00:00",
+        "document_type": "artist_biography",
+        "schema_version": 1,
+        "owner_artist_id": "32aadd75-c75f-4774-a67e-d2124614ea7c"
+      },
+      {
+        "id": "eb9e3234-570b-4f52-9fe3-cd2e016bdb44",
+        "locale": "es",
+        "status": "published",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Michan Leonardo es un cantante de bachata vinculado al circuito discográfico dominicano de mediados de la década de 2000. Su trayectoria documentada comprende el álbum «Adiós Good Bye» y la promoción radial de «Llámame» y «No Puedo Vivir Sin Ti». Sus interpretaciones de «Llámame» y «Sin ti la vida se me va» permanecen disponibles en recopilaciones digitales.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Promoción en 2006",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El 13 de noviembre de 2006, Diario Libre informó que preparaba la difusión de «No Puedo Vivir Sin Ti», de Robert Félix, después de promover «Llámame». Su representante, Rafael Alcántara, presentó el cambio de sencillo como continuación del trabajo radial del cantante.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El álbum «Adiós Good Bye»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La misma reseña documentó un disco de diez bachatas para «Necho Records», grabado en «Estudios Emcas», en Santo Domingo, con arreglos de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "1db77ddd-1046-4d95-b675-65da60234ef0",
+                    "displayText": "Mártires de León",
+                    "occurrenceId": "37aa3a60-fc5e-407d-8ddc-2d9e48b7c6f2"
+                  }
+                },
+                {
+                  "text": ". Según su representante, el repertorio incluía composiciones de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+                    "displayText": "Frantoni Santana",
+                    "occurrenceId": "40d84556-2ba4-42ea-b0f6-2323408b7a4b"
+                  }
+                },
+                {
+                  "text": ", Miguel Braho, Félix Veloz y el propio Michan. También mencionó «Otro Ocupa Mi Lugar» y «Sin ti la vida se me va» entre los cortes difundidos.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Circulación en recopilaciones",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Spotify y Apple Music identifican «Llámame» y «Sin Ti la Vida Se Me Va» dentro de «Bachatas Pal' Pueblo», con fecha de edición de 2007. Spotify también muestra participaciones en «Bachata Pal Pueblo» y «Bachata Pal Pueblo Vol 2», fechadas en 2015. Son apariciones del repertorio en recopilaciones; esas fechas no establecen cuándo se grabaron originalmente las canciones.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El registro conservado permite situar a Michan Leonardo entre las voces que buscaron espacio en la bachata de los años 2000. La noticia contemporánea y las ediciones digitales preservan una parte de su trabajo, aunque no bastan para reconstruir su vida personal ni establecer su actividad posterior.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "revision": 1,
+        "created_at": "2026-10-18T01:31:58.971731+00:00",
+        "updated_at": "2026-10-18T01:31:58.971731+00:00",
+        "document_type": "artist_biography",
+        "schema_version": 1,
+        "owner_artist_id": "32aadd75-c75f-4774-a67e-d2124614ea7c"
+      }
+    ],
+    "relations": [
+      {
+        "id": "29d0c221-5c9b-43e8-b661-43841b59c9ea",
+        "created_at": "2026-10-18T01:31:53.356187+00:00",
+        "updated_at": "2026-10-18T01:31:53.356187+00:00",
+        "entity_type": "artist",
+        "occurrence_id": "fe92c1e4-94f2-4577-a6de-0051b252b0e2",
+        "target_artist_id": "1db77ddd-1046-4d95-b675-65da60234ef0",
+        "editorial_document_id": "61646c3f-7a33-4d8f-b170-147308e228b5"
+      },
+      {
+        "id": "2f02f422-ff19-405f-97b9-59953c9a5275",
+        "created_at": "2026-10-18T01:31:53.356187+00:00",
+        "updated_at": "2026-10-18T01:31:53.356187+00:00",
+        "entity_type": "artist",
+        "occurrence_id": "d1bf7a65-5cb9-4d97-a895-608637cee61a",
+        "target_artist_id": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+        "editorial_document_id": "61646c3f-7a33-4d8f-b170-147308e228b5"
+      },
+      {
+        "id": "7fdd5089-e4f9-4413-b070-bd76be611c57",
+        "created_at": "2026-10-18T01:31:58.971731+00:00",
+        "updated_at": "2026-10-18T01:31:58.971731+00:00",
+        "entity_type": "artist",
+        "occurrence_id": "37aa3a60-fc5e-407d-8ddc-2d9e48b7c6f2",
+        "target_artist_id": "1db77ddd-1046-4d95-b675-65da60234ef0",
+        "editorial_document_id": "eb9e3234-570b-4f52-9fe3-cd2e016bdb44"
+      },
+      {
+        "id": "90098935-d026-4638-b318-45af58d196bb",
+        "created_at": "2026-10-18T01:31:58.971731+00:00",
+        "updated_at": "2026-10-18T01:31:58.971731+00:00",
+        "entity_type": "artist",
+        "occurrence_id": "40d84556-2ba4-42ea-b0f6-2323408b7a4b",
+        "target_artist_id": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+        "editorial_document_id": "eb9e3234-570b-4f52-9fe3-cd2e016bdb44"
+      }
+    ]
+  }
+]

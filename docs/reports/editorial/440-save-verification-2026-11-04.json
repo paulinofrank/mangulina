@@ -1,0 +1,262 @@
+{
+  "state": "APPROVED AND SAVED; DATABASE VERIFICATION PASSED",
+  "approved_manifest_sha256": "f216a8e1f435cad7e6e3192c8d9ec6f951214c8e79832da96987b77f851f748e",
+  "checks": [
+    {
+      "name": "Maridalia Hernández",
+      "locale": "en",
+      "document_id": "be9e8ccf-0032-4189-be7f-717282da1dd4",
+      "revision_before": 5,
+      "revision_after": 6,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Juan Luis Guerra",
+      "locale": "en",
+      "document_id": "6c5c1b6c-af75-4784-ae38-ed371b4444fe",
+      "revision_before": 4,
+      "revision_after": 5,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Roger Zayas-Bazán",
+      "locale": "es",
+      "document_id": "ee64136d-6797-4235-bcd9-8fd04a250214",
+      "revision_before": 2,
+      "revision_after": 3,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Roger Zayas-Bazán",
+      "locale": "en",
+      "document_id": "d78e60bc-870a-45c3-a765-875c74e663bd",
+      "revision_before": 3,
+      "revision_after": 4,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Marco Hernández",
+      "locale": "en",
+      "document_id": "a512a40c-49a5-497d-90d6-b6b090f7ed3e",
+      "revision_before": 3,
+      "revision_after": 4,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Adalgisa Pantaleón",
+      "locale": "en",
+      "document_id": "4e4d3f40-72c6-42bc-86ed-03de6b88f781",
+      "revision_before": 3,
+      "revision_after": 4,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Grupo 440",
+      "locale": "en",
+      "document_id": "dddaab10-65bf-4f57-9e2b-1cc78cd1f462",
+      "revision_before": 5,
+      "revision_after": 6,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Grupo 440",
+      "locale": "es",
+      "document_id": "6e03d973-a62d-4acc-9d63-2397f0a562f1",
+      "revision_before": 3,
+      "revision_after": 4,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Mariela Mercado",
+      "locale": "es",
+      "document_id": "e711f2a4-fee4-498f-8950-a2cb1df51478",
+      "revision_before": 1,
+      "revision_after": 2,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Mariela Mercado",
+      "locale": "en",
+      "document_id": "2d6d3024-a005-4ccb-a18d-081492022811",
+      "revision_before": 1,
+      "revision_after": 2,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Juan Luis Guerra",
+      "locale": "es",
+      "document_id": "1408f4ce-46b0-498d-8c93-c79e46f0f4b3",
+      "revision_before": 4,
+      "revision_after": 5,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Maridalia Hernández",
+      "locale": "es",
+      "document_id": "a441f11a-7746-413f-a598-9793c9f43c1e",
+      "revision_before": 7,
+      "revision_after": 8,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Adalgisa Pantaleón",
+      "locale": "es",
+      "document_id": "a62f022e-1c0c-45ab-afd6-ec07470bfb08",
+      "revision_before": 2,
+      "revision_after": 3,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Marco Hernández",
+      "locale": "es",
+      "document_id": "9e071347-9ef8-40bb-a0ec-51a8c9d8ce90",
+      "revision_before": 2,
+      "revision_after": 3,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Claudio Cohén",
+      "locale": "en",
+      "document_id": "18627ed8-3ed7-41aa-b8e4-30cc25d1ec20",
+      "revision_before": 2,
+      "revision_after": 3,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Claudio Cohén",
+      "locale": "es",
+      "document_id": "92b6ae70-8000-4ff9-b5a8-e21980ee819a",
+      "revision_before": 2,
+      "revision_after": 3,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Fefita la Grande",
+      "locale": "en",
+      "document_id": "c835c1bd-68e7-4663-8506-af619a5cfe3c",
+      "revision_before": 3,
+      "revision_after": 4,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Fefita la Grande",
+      "locale": "es",
+      "document_id": "d73e9a09-a134-4a15-800b-365224ffee51",
+      "revision_before": 2,
+      "revision_after": 3,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Frank Ceara",
+      "locale": "en",
+      "document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+      "revision_before": 1,
+      "revision_after": 2,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Frank Ceara",
+      "locale": "es",
+      "document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+      "revision_before": 1,
+      "revision_after": 2,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Héctor Aníbal",
+      "locale": "en",
+      "document_id": "1b3b2523-8a57-4308-a105-5fe5f09fc9ae",
+      "revision_before": 1,
+      "revision_after": 2,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    },
+    {
+      "name": "Héctor Aníbal",
+      "locale": "es",
+      "document_id": "0407c48f-e617-4aec-9c2d-7931314d8b3b",
+      "revision_before": 1,
+      "revision_after": 2,
+      "document_matches": true,
+      "mirror_matches": true,
+      "references_match": true,
+      "status_preserved": true
+    }
+  ],
+  "integrity": {
+    "generatedAt": "2026-11-04T11:47:40.143Z",
+    "counts": {
+      "documents": 22,
+      "relations": 265,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  },
+  "non_biography_artist_fields": "Compared within save transaction; no differences permitted.",
+  "cache_refresh": "PASSED: one targeted refresh; 11 artists, zero songs/releases, allArtists=false.",
+  "live_rendering": "PASSED: bounded three-page checks: Maridalia Spanish, Mariela English, Roger Spanish. Updated prose and artist links visible; readable section formatting. Existing shared membership date discrepancy retained for separate review."
+}

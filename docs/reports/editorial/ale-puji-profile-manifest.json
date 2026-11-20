@@ -1,0 +1,413 @@
+{
+  "date": "2026-10-24",
+  "authorization": "Named new artist in ongoing editor-requested draft profile workflow. New draft artist with published validated EN/ES biographies. No artist publication or discography import.",
+  "before": null,
+  "after": {
+    "id": "961d9320-998b-402e-975e-fc9c947583f3",
+    "name": "Ale Puji",
+    "stage_name": "ALEPUJI",
+    "sort_name": "Ale Puji",
+    "slug": "ale-puji",
+    "first_name": "Alejandro",
+    "middle_name": null,
+    "last_name": "Grullón",
+    "second_last_name": "Rivera",
+    "aliases": [
+      "ALEPUJI",
+      "Alejandro Grullón Rivera",
+      "DJ ALEPUJI"
+    ],
+    "type": "solo_artist",
+    "primary_role": "producer",
+    "occupations": [
+      "drummer",
+      "arranger"
+    ],
+    "instruments": [
+      "drums",
+      "keyboard"
+    ],
+    "primary_genre": "electronic",
+    "genres": [
+      "folklore",
+      "jazz"
+    ],
+    "gender": "male",
+    "artist_tags": [
+      "secular"
+    ],
+    "status": "draft",
+    "date_of_birth": null,
+    "birth_year": null,
+    "birth_place": null,
+    "province": null,
+    "facebook": "alejandro.grullonrivera",
+    "instagram": "alepuji",
+    "youtube": "@djalepuji",
+    "spotify": "68FUySQhFbMdZdLIY3e6oF",
+    "website": "https://linktr.ee/alepuji",
+    "disambiguation": "Dominican music producer, beatmaker and drummer based in Barcelona"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ale Puji, nombre artístico de Alejandro Grullón Rivera, es un productor musical, beatmaker y baterista dominicano radicado en Barcelona. Publica su música como ALEPUJI y desarrolla una propuesta influida por el R&B, la electrónica, el folclore dominicano y el jazz contemporáneo. Su actividad reúne la creación de grabaciones propias, la colaboración con otros proyectos y la preparación técnica de conciertos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Formación e investigación musical",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Se formó en Música en la Universidad Nacional Pedro Henríquez Ureña. El repositorio de esa institución conserva su trabajo de grado de 2021, «Equipos, técnicas y procesos de producción del merengue de los 90’s». La investigación aborda la mezcla del merengue de aquella década, la emulación digital de sus procedimientos y sus posibles aplicaciones a géneros contemporáneos como el lo-fi."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Grabaciones y colaboraciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su catálogo incluye «Wonders», junto a Hansel Moya, y «Ryu's Moves», publicadas en 2020, además de «Warmth», con Gaby de los Santos, de 2021. También realizó «Multicolor II - Alepuji Remix», incluido en «Multicolor (Remix EP)», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+                  "occurrenceId": "3aaa88c9-7084-4ac9-853a-291f5f01d6ae",
+                  "displayText": "Solo Fernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". En 2023 coprodujo «Alaluz» con Pororó, proyecto encabezado por Arnold Martínez. Los créditos originales de esa grabación le atribuyen sintetizadores, voces y percusión; la letra y la música corresponden a Martínez."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Del estudio al escenario",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Al frente de «Marfile Estudios», combina producción, arreglos y mezcla con programación de baterías y ejecución instrumental. Su trabajo como técnico de playback incluye preparar secuencias, pistas de referencia y automatizaciones para adaptar las canciones al directo. En septiembre de 2025 se incorporó al equipo de beatmakers de «Musiversal». Su práctica parte de la batería y mantiene el ritmo como elemento central de la producción."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Actividad reciente",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2024 publicó «Too Late» y «Lo Tienes To'»; a ellas siguieron «Contour», en 2025, y «No Rules», en 2026. También figura entre los músicos participantes en «DOMINISMO», segundo álbum de estudio de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0c010e9d-5998-4fd2-b867-33b83018fb6f",
+                  "occurrenceId": "b235b1dd-3a8d-4638-9b77-17a1a90374bc",
+                  "displayText": "Diego Jaar"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", presentado en 2026. Esa participación se distingue de la producción general del disco, atribuida a Jaar y Joel Berrido."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trayectoria conecta la investigación sobre técnicas del merengue con la producción electrónica y el trabajo escénico. Las grabaciones propias y las colaboraciones documentan una práctica en la que la batería, el diseño sonoro y la preparación del directo forman parte del mismo proceso musical."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ale Puji, the professional name of Alejandro Grullón Rivera, is a Dominican music producer, beatmaker and drummer based in Barcelona. He releases his own music as ALEPUJI, drawing on R&B, electronica, Dominican folklore and contemporary jazz. His work spans solo recordings, collaborations and the technical preparation of live performances."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Musical education and research",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "He trained in Music at Universidad Nacional Pedro Henríquez Ureña. Its repository preserves his 2021 degree project, «Equipos, técnicas y procesos de producción del merengue de los 90’s». The study examines merengue mixing in the 1990s, the digital emulation of those techniques and their potential application to contemporary genres such as lo-fi."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Recordings and collaborations",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His catalog includes «Wonders», with Hansel Moya, and «Ryu's Moves», both released in 2020, followed by «Warmth», with Gaby de los Santos, in 2021. He also made «Multicolor II - Alepuji Remix», included on "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+                  "occurrenceId": "64f05736-b58d-4c94-be08-8acd18912ca4",
+                  "displayText": "Solo Fernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s «Multicolor (Remix EP)». In 2023 he co-produced «Alaluz» with Pororó, the project led by Arnold Martínez. The original recording credits identify ALEPUJI on synthesizers, vocals and percussion, while Martínez wrote the words and music."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From the studio to the stage",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Through «Marfile Estudios», he combines production, arrangement and mixing with drum programming and instrumental performance. His playback work includes preparing sequences, reference tracks and automation for live shows. In September 2025 he joined «Musiversal»'s roster of beatmakers. His approach grows out of his practice as a drummer, with rhythm central to his production work."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Recent work",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "He released «Too Late» and «Lo Tienes To'» in 2024, followed by «Contour» in 2025 and «No Rules» in 2026. He is also listed among the musicians involved in «DOMINISMO», "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0c010e9d-5998-4fd2-b867-33b83018fb6f",
+                  "occurrenceId": "ce0d9883-c0dd-43fb-88d5-52d50d5aeb39",
+                  "displayText": "Diego Jaar"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s second studio album, presented in 2026. This participation is distinct from the album's overall production, credited to Jaar and Joel Berrido."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His career connects research into merengue production techniques with electronic music and live performance. His recordings and collaborations document a practice that brings drumming, sound design and concert preparation into the same musical process."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "0c010e9d-5998-4fd2-b867-33b83018fb6f",
+      "name": "Diego Jaar",
+      "slug": "diego-jaar",
+      "status": "published"
+    },
+    {
+      "id": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+      "name": "Solo Fernández",
+      "slug": "solo-fernandez",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "ale-puji-research-2026-10-24.md",
+  "field_evidence": {
+    "name": "Editor supplied Ale Puji; professional catalogs ALEPUJI; full name corroborated by own LinkedIn, Facebook and UNPHU repository.",
+    "roles_instruments": "Own SoundBetter, Instagram, YouTube and original ALALUZ credits.",
+    "genre_tags": "Own professional descriptions and secular recorded repertoire. R&B unavailable in selector, retained in prose.",
+    "birth": "Dominican-born Musiversal profile; exact city/province/date not established. Barcelona residence is not birth evidence.",
+    "socials": "Own Linktree -> Spotify and YouTube; Spotify About -> Instagram; Facebook exact matching Instagram performance posts.",
+    "gender": "Public Facebook Hombre and editor pronouns.",
+    "website": "Official Linktree cross-linked by Spotify/Instagram/YouTube."
+  },
+  "backward_reference_audit": {
+    "variants": [
+      "Alepuji",
+      "Ale Puji",
+      "Alejandro Grullón"
+    ],
+    "matching_documents": 0,
+    "checked": "All existing structured biographies via scoped SQL substring search before creation."
+  },
+  "unresolved": [
+    "DOB, birth year, exact birth city and province unverified.",
+    "Portrait not provided; no image generated or uploaded.",
+    "UB music master and Gepiano 2021–2025 employment interval supplied by editor but not independently verified; omitted pending source.",
+    "TikTok @alepuji supplied by editor; no current dedicated TikTok profile field; not represented in an unrelated social field."
+  ],
+  "exclusions": [
+    "Artist publication",
+    "Other artists or biography changes",
+    "Discography and credit imports",
+    "Image upload",
+    "Deployment",
+    "Security changes",
+    "Production public draft URL requests and manual cache refresh"
+  ]
+}

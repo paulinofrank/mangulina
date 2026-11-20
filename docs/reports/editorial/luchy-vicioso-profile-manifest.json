@@ -1,0 +1,433 @@
+{
+  "date": "2026-10-19T14:42:37.891Z",
+  "artist_id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+  "scope": "Draft profile, two published biographies, supplied portrait only",
+  "before": {
+    "id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+    "name": "Luchy Vicioso",
+    "sort_name": "Vicioso, Luchy",
+    "type": "solo_artist",
+    "birth_year": 1950,
+    "death_year": 2019,
+    "created_at": "2026-10-19T14:41:39.624741+00:00",
+    "views": 0,
+    "wikidata_id": null,
+    "first_name": "Lucía",
+    "middle_name": "Fior Daliza",
+    "last_name": "Vicioso",
+    "second_last_name": "Alsina",
+    "stage_name": "Luchy Vicioso",
+    "date_of_birth": null,
+    "birth_place": "Santo Domingo",
+    "website": null,
+    "youtube": "@LuchyV123",
+    "facebook": "luchyviciosoofficial",
+    "instagram": "luchyviciosofficial",
+    "aliases": [
+      "Lucía Fior Daliza Vicioso Alsina",
+      "Lucía Fiordaliza Vicioso Alsina",
+      "Luchi Vicioso",
+      "La Dama de la Canción"
+    ],
+    "mbid": null,
+    "occupations": [],
+    "instruments": [
+      "voice"
+    ],
+    "genres": [
+      "ballads-bolero"
+    ],
+    "disambiguation": null,
+    "gender": "female",
+    "ended": false,
+    "mb_metadata": {},
+    "updated_at": "2026-10-19T14:41:39.624741+00:00",
+    "province": "Distrito Nacional",
+    "birth_day": null,
+    "birth_month": null,
+    "slug": "luchy-vicioso",
+    "primary_role": "singer",
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_death": null,
+    "status": "draft",
+    "primary_genre": "ballads",
+    "bio_en": null,
+    "bio_es": null,
+    "has_image": false,
+    "image_updated_at": null,
+    "formation_year": null,
+    "dissolution_year": null,
+    "spotify": "2cO5TBmBaY6gVTHpxJTgjI"
+  },
+  "correct_dates": {
+    "date_of_birth": "1950-02-19",
+    "date_of_death": "2019-02-18",
+    "birth_year": 1950,
+    "death_year": 2019
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Luchy Vicioso (Santo Domingo, 19 de febrero de 1950–18 de febrero de 2019), cuyo nombre personal fue Lucía Fior Daliza Vicioso Alsina, fue una cantante dominicana vinculada al bolero y la canción romántica. Conocida como «La Dama de la Canción», desarrolló su carrera desde la televisión infantil hasta los escenarios y festivales de la canción."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "De la infancia a la televisión",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A los nueve años se presentó a una audición de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                  "occurrenceId": "beeed627-97c6-4aff-ab2f-7670f3819ba8",
+                  "displayText": "Rafael Solano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " para «La hora del moro», transmitido por «Rahintel». Aquella oportunidad abrió una trayectoria de actuaciones televisivas y presentaciones en clubes y hoteles. Las reseñas de su carrera sitúan también en su infancia el programa «Los jueves de Luchy» y su primer disco de larga duración, «Matices», grabado cuando tenía trece años. La fecha y edición de ese disco requieren todavía documentación discográfica."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Una intérprete de la canción dominicana",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su repertorio reunió canciones de autores dominicanos y piezas de circulación latinoamericana. Entre los títulos asociados a su voz figuran «Tus ojos», «Año nuevo», «Canta mundo» y «Al nacer cada enero». Su relación artística con Solano acompañó una carrera centrada en la interpretación. El canal «LuchyV123», enlazado desde su página de Facebook, conserva actuaciones y un fragmento del dúo «Como me besabas tú» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "072e44a9-8a54-4eee-a606-8162953f5154",
+                  "occurrenceId": "efb9ed18-1ed9-4c8d-a3e8-0b228e204f89",
+                  "displayText": "José Lacay"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Festivales y reconocimientos",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Las retrospectivas de su trayectoria registran su triunfo en el «Festival de la Voz y la Canción de Puerto Rico» de 1975 con «Dime que más debo dar por ti», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "faff18bd-3dbc-477a-bc38-859d611887f0",
+                  "occurrenceId": "c5dc3663-78bb-480e-baa4-26204ab6f7cc",
+                  "displayText": "Yaqui Núñez del Risco"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c1575281-d275-4f34-a721-9f02736132d2",
+                  "occurrenceId": "dfe1d65f-59ad-4cbe-9f05-28bf90bd1c33",
+                  "displayText": "René del Risco Bermúdez"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". En 2013 recibió un «Soberano Especial», reconocimiento reseñado por la prensa a su recorrido en el espectáculo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Vida personal",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Contrajo matrimonio con Freddy Beras Goico en Santo Domingo el 18 de julio de 1968. De esa unión nacieron Freddyn y Ernesto Máximo Beras Vicioso, según la documentación del «Instituto Dominicano de Genealogía»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Falleció el 18 de febrero de 2019, un día antes de cumplir 69 años. Sus colegas y familiares la recordaron por su voz y su dedicación al oficio. Las grabaciones y actuaciones conservadas permiten seguir su aportación a la canción romántica dominicana y a una generación de intérpretes formada en la televisión."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Luchy Vicioso (born February 19, 1950, in Santo Domingo; died February 18, 2019), whose personal name was Lucía Fior Daliza Vicioso Alsina, was a Dominican singer associated with bolero and romantic song. Known as «La Dama de la Canción», she began performing as a child and built a career in television, stage entertainment and song festivals."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Childhood and television",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "At nine she auditioned for "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                  "occurrenceId": "c6918558-dde5-4d60-ba91-ff61de3dda58",
+                  "displayText": "Rafael Solano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " for the «Rahintel» programme «La hora del moro». Television appearances led to engagements in clubs and hotels. Retrospective accounts also place «Los jueves de Luchy» and her first long-playing record, «Matices», in her childhood; those accounts say she recorded the album at thirteen. Its precise edition and release chronology remain subjects for discographic research."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Repertoire and performance",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Vicioso performed Dominican compositions alongside songs known across Latin America. Her repertoire included «Tus ojos», «Año nuevo», «Canta mundo» and «Al nacer cada enero». Her collaboration with Solano was an enduring part of her work as an interpreter. The «LuchyV123» channel, linked by her Facebook page, preserves performances and an excerpt of «Como me besabas tú», sung with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "072e44a9-8a54-4eee-a606-8162953f5154",
+                  "occurrenceId": "62828d71-7a19-48bc-b199-25ad36899fc2",
+                  "displayText": "José Lacay"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Festivals and recognition",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Career retrospectives report that she won the 1975 «Festival de la Voz y la Canción de Puerto Rico» with «Dime que más debo dar por ti», by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "faff18bd-3dbc-477a-bc38-859d611887f0",
+                  "occurrenceId": "dba513b1-91a2-4423-9c92-70a1301922d2",
+                  "displayText": "Yaqui Núñez del Risco"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c1575281-d275-4f34-a721-9f02736132d2",
+                  "occurrenceId": "bb8f17a1-03cf-4962-b5b8-6b232ca596d5",
+                  "displayText": "René del Risco Bermúdez"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". She received a «Soberano Especial» in 2013 in recognition of her career in entertainment."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Personal life",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "She married Freddy Beras Goico in Santo Domingo on July 18, 1968. The «Instituto Dominicano de Genealogía» documents their two sons, Freddyn and Ernesto Máximo Beras Vicioso."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Vicioso died on February 18, 2019, the day before her sixty-ninth birthday. Family members and fellow performers remembered her voice and commitment to her work. Surviving recordings and television performances document her place in Dominican romantic song and in the generation of singers who emerged through television."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "evidence_report": "luchy-vicioso-research-2026-10-19.md"
+}

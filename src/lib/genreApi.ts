@@ -236,12 +236,15 @@ async function loadMostViewedPrimaryGenreArtists(values: string[], kind: ArtistK
     .eq("status", "published")
     .in("primary_genre", uniqueValues(values));
 
-  // Solo also catches a null/unclassified type, matching how the admin editor
+  // Only primary-role singers belong in the solo carousel, excluding rappers
+  // and other roles before ranking and limiting. Solo also catches a
+  // null/unclassified type, matching how the admin editor
   // treats anything that isn't a group or duo as reachable under "solo".
   const scoped =
     kind === "collective"
       ? base.in("type", COLLECTIVE_ARTIST_TYPES)
-      : base.or(`type.is.null,type.not.in.(${COLLECTIVE_ARTIST_TYPES.join(",")})`);
+      : base.eq("primary_role", "singer")
+          .or(`type.is.null,type.not.in.(${COLLECTIVE_ARTIST_TYPES.join(",")})`);
 
   const response = await scoped
     .order("views", { ascending: false, nullsFirst: false })
@@ -254,7 +257,7 @@ async function loadMostViewedPrimaryGenreArtists(values: string[], kind: ArtistK
 
 const getMostViewedPrimaryGenreArtists = unstable_cache(
   loadMostViewedPrimaryGenreArtists,
-  ["public-genre-artists-v2"],
+  ["public-genre-artists-v3"],
   {
     revalidate: PUBLIC_GENRE_REVALIDATE_SECONDS,
     tags: [PUBLIC_GENRE_CACHE_TAG],

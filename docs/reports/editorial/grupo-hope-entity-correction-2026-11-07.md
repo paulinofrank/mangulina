@@ -1,0 +1,5 @@
+# Grupo Hope — rectificación editorial (7 de noviembre de 2026)
+
+El examen inicial interpretó el anuncio de plataforma de febrero de 2026 como si invalidara la entidad musical anterior y propuso borrar la ficha. El editor rechazó el borrado y pidió preservar la discografía publicada como Grupo Hope / Hope W Music. La investigación posterior confirmó actuaciones como agrupación desde 2018, miembros identificados en 2023 y lanzamientos posteriores al anuncio. Por ello se conserva una sola ficha `type=group`, `status=draft`, UUID `04788dac-8c1b-40ec-8c3e-c6a375838f20`, y su relación de fundación con Junior Ponciano. La biografía describe el paso de agrupación musical a plataforma de adoración sin borrar ninguna etapa.
+
+La evidencia, las limitaciones sobre comentarios y la comparación de logotipos constan en [grupo-hope-evolution-research-2026-11-07.md](grupo-hope-evolution-research-2026-11-07.md). No se autoriza con este documento una importación discográfica ni la publicación de la ficha.

@@ -1,0 +1,23 @@
+{
+  "targets": [
+    {
+      "id": "cf438c62-e0b8-4ba9-8e4b-f328ddce0c9b",
+      "name": "Chimbala",
+      "slug": "chimbala",
+      "status": "published"
+    },
+    {
+      "id": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+      "name": "El Alfa",
+      "slug": "el-alfa",
+      "status": "published"
+    },
+    {
+      "id": "518354a4-7cb9-4c39-a2b8-9fa4d18f50db",
+      "name": "El Mayor Clásico",
+      "slug": "el-mayor-clasico",
+      "status": "published"
+    }
+  ],
+  "duplicates": []
+}

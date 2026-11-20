@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-19",
+  "subject": "José Lacay",
+  "scope": "Create one draft solo artist and completed published English/Spanish biographies from the supplied life sheet after verification. No discography imports or edits to other artists.",
+  "before": null,
+  "created_artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+  "form_value_notes": "Current Musical Genres checkbox Bolero persists ballads-bolero. Use that supported value, with merengue/salsa; primary ballads is not repeated. Date inputs did not retain fill; the two sourced dates and corresponding years were saved in a guarded update to this new draft only.",
+  "artist": {
+    "name": "José Lacay",
+    "sort_name": "Lacay, José",
+    "slug": "jose-lacay",
+    "stage_name": "José Lacay",
+    "aliases": [
+      "Jose Lacay",
+      "José Miguel Vásquez Lacay"
+    ],
+    "type": "solo_artist",
+    "primary_role": "singer",
+    "primary_genre": "ballads",
+    "genres": [
+      "bolero",
+      "merengue",
+      "salsa"
+    ],
+    "occupations": [],
+    "instruments": [
+      "voice"
+    ],
+    "gender": "male",
+    "birth_place": "Santo Domingo",
+    "province": "Distrito Nacional",
+    "date_of_birth": "1947-03-19",
+    "date_of_death": "2016-11-14",
+    "artist_tags": [
+      "secular"
+    ],
+    "spotify": "3e2m8rnUL2tQVVus6u2k5L",
+    "status": "draft"
+  },
+  "evidence": {
+    "input": "C:/Users/fvpg/OneDrive/Downloads/José Lacay — Bio & Life Sheet.html",
+    "full_name": "El Vocero Dominicano, 9 September 2026, names José Miguel Vásquez Lacay. Some secondary accounts reverse surnames; leave individual surname fields unassigned.",
+    "birth": "Diario Libre contemporary obituary, 14 November 2016; Reporte Extra, 16 April 2026; El Vocero, 9 September 2026 agree 19 March 1947, Santo Domingo.",
+    "death": "Diario Libre obituary dated 14 November 2016 reports death that morning; Acroarte statement in La Crónica 15 November says Monday, age 69. Cause reports differ; omit medical cause and exact death location.",
+    "roles_genres": "Diario Libre describes balada, merengue and salsa repertoire; Acroarte explicitly boleros, merengues and salsa. Primary ballads, additional bolero/merengue/salsa; no duplicate primary genre. Stage revues do not establish recording-producer occupation.",
+    "gender": "Contemporary obituary and Acroarte use explicit masculine personal descriptions; not inferred from photograph or voice.",
+    "spotify": "Direct Spotify artist pages checked: chosen 3e2m8rnUL2tQVVus6u2k5L carries Con Amor; 2TaGsmQBIigVqWMeUKbPhj carries Ese...Es; 2SAf3iHsueHq5kRoBZKAEO carries Después de Hablar on II Festival. All correspond to documented repertoire, apparently split provider identities; no provider merge attempted.",
+    "photo": "First image embedded in editor-supplied sheet, sourced there to La Crónica Acroarte obituary. Saved unchanged as jose-lacay-source-image-0.jpeg; visually checked. Upload within requested profile scope, retain source attribution here.",
+    "sources": [
+      "https://www.diariolibre.com/revista/musica/fallecio-hoy-el-cantante-jose-lacay-EX5451363",
+      "https://lacronica.do/acroarte-extiende-condolencias-familia-jose-lacay/",
+      "https://elvocerodominicano.com/jose-lacay-la-voz-dominicana-que-conquisto-escenarios-dentro-y-fuera-del-pais/",
+      "https://reporteextra.com/entretenimiento/melomano-jose-lacay-uno-de-los-cantantes-dominicanos-poco-valorado-en-pais/",
+      "https://music.apple.com/us/artist/jos%C3%A9-lacay/1251156502"
+    ]
+  },
+  "unknown": [
+    "Verified official Facebook/Instagram/YouTube handles and website",
+    "Exact original album release chronology and edition dates",
+    "Complete composition/arrangement credits",
+    "Individual surname order independently documented"
+  ],
+  "corrections_to_supplied_sheet": [
+    "Contemporary 2016 obituaries do exist and were opened",
+    "Merengue and salsa were explicitly part of his repertoire",
+    "Three Spotify artist pages have matching documented repertoire; they are not automatically namesakes",
+    "1973 is an asserted phonogram year, not proof of a digital reissue in 1973",
+    "Do not infer that lack of found evidence proves he never composed or led a group"
+  ],
+  "biographies": {
+    "es": [
+      [
+        "",
+        "José Lacay (Santo Domingo, 19 de marzo de 1947–14 de noviembre de 2016) fue un cantante dominicano de balada y bolero, reconocido por canciones como «Marión» y «El motivo». Ganó como intérprete el V Festival de la Canción Dominicana en 1972 y desarrolló una carrera en la televisión, los festivales y los espectáculos turísticos."
+      ],
+      [
+        "Formación y televisión",
+        "Su primera oportunidad artística llegó en «La Hora del Moro», programa de Rahintel conducido por [[Rafael Solano]]. En 1962 se trasladó a Nueva York para estudiar y recibió clases de canto del pianista Gilberto Muñoz. Continuó su preparación vocal en Santo Domingo con la soprano Ivonne Haza. En 1966 se presentó profesionalmente en «Una Hora Contigo», de Myrta Silva, y posteriormente la acompañó en giras."
+      ],
+      [
+        "Los festivales de la canción",
+        "Tras regresar al país en 1968, participó en los festivales organizados por «AMUCABA». En 1972 obtuvo el primer lugar como intérprete con «Llegó el invierno», de Fernando y Ricardo Escovar. La canción también recibió el premio al mejor arreglo, realizado por [[Jorge Taveras]]. Su trayectoria incluyó participaciones en festivales y presentaciones en América y Europa."
+      ],
+      [
+        "Repertorio y grabaciones",
+        "Además de «Marión» y «El motivo», entre sus interpretaciones recordadas figuran «Ya», «La copia» y «Amor desolado». Las plataformas musicales conservan los álbumes «Con Amor» y «Ese...es», así como su interpretación de «Después de hablar» en la recopilación del II Festival de la Canción Dominicana. Aunque se le asocia especialmente con la canción romántica, los testimonios contemporáneos de su fallecimiento también documentan merengue y salsa en su repertorio."
+      ],
+      [
+        "El escenario y el turismo",
+        "Formó parte del elenco de cantantes solistas del «Ballet Folklórico Nacional», dirigido por Josefina Miniño. Como cantante bilingüe trabajó en espectáculos de hoteles y resorts y presentó su propia revista musical, «Santo Domingo es así». Esta faceta lo vinculó con la proyección de la música dominicana ante públicos internacionales."
+      ],
+      [
+        "Legado",
+        "Lacay falleció el 14 de noviembre de 2016, a los 69 años. Acroarte destacó su calidad interpretativa y su representación del país en festivales. Su trayectoria reúne la tradición del cantante solista, la televisión y la revista musical, con un repertorio que conserva un lugar en la memoria de la canción popular dominicana."
+      ]
+    ],
+    "en": [
+      [
+        "",
+        "José Lacay (born March 19, 1947, in Santo Domingo; died November 14, 2016) was a Dominican ballad and bolero singer associated with songs including «Marión» and «El motivo». He won the performer’s first prize at the fifth Dominican Song Festival in 1972 and worked in television, international festivals and tourist entertainment."
+      ],
+      [
+        "Training and television",
+        "His early exposure came through «La Hora del Moro», the Rahintel television programme hosted by [[Rafael Solano]]. He moved to New York in 1962 to study, taking singing lessons with pianist Gilberto Muñoz. He later continued his vocal training in Santo Domingo with soprano Ivonne Haza. In 1966 he made a professional television appearance on Myrta Silva’s «Una Hora Contigo» and subsequently toured with her."
+      ],
+      [
+        "Song festivals",
+        "After returning to the Dominican Republic in 1968, Lacay entered the festivals organised by «AMUCABA». In 1972 he won first place as a performer with «Llegó el invierno», written by Fernando and Ricardo Escovar. The song also earned the award for best arrangement, by [[Jorge Taveras]]. His career extended to festival appearances and performances in the Americas and Europe."
+      ],
+      [
+        "Repertoire and recordings",
+        "His remembered interpretations include «Marión», «El motivo», «Ya», «La copia» and «Amor desolado». Music platforms preserve the albums «Con Amor» and «Ese...es», along with his performance of «Después de hablar» on the compilation from the second Dominican Song Festival. Romantic song was central to his public identity, while contemporary accounts of his death also document merengue and salsa in his repertoire."
+      ],
+      [
+        "Stage revues and tourism",
+        "Lacay belonged to the solo singers’ roster of the «Ballet Folklórico Nacional», directed by Josefina Miniño. A bilingual singer, he performed in hotel and resort shows and presented his own musical revue, «Santo Domingo es así». These engagements formed another part of his work bringing Dominican music to international audiences."
+      ],
+      [
+        "Legacy",
+        "Lacay died on November 14, 2016, aged 69. Acroarte remembered his interpretive skill and his representation of the country at song festivals. His career connected the solo singer’s tradition with television and musical revues, leaving a repertoire remembered within Dominican popular song."
+      ]
+    ]
+  },
+  "references": {
+    "Rafael Solano": "ba42e200-51b0-437b-99ac-1daf39ade337",
+    "Jorge Taveras": "c958758c-a949-4bd9-963d-6d48bc750b60"
+  }
+}

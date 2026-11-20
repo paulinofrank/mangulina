@@ -1,8 +1,15 @@
 # Copilot instructions for Mangulina
 
+## Shared discography instructions (2026-10-15)
+
+Read [AGENTS.md](../AGENTS.md) first and [docs/discography.md](../docs/discography.md) before discography, credits, research, import or duplicate work. Their scoped execution and review gates supersede older unconditional autonomy or catalog-write guidance. Work autonomously within the authorized task; research is not permission to import, publish, merge or delete. Preserve the Supabase security prohibition.
+
+Contributor research must retain performer/release context; it does not authorize changes to another performer or mass creation of Works. Self-performance portfolio filtering is a display rule and never permits removing valid authorship credits.
+
+
 ## Supabase Security: Hands Off (applies to every AI tool)
 
-**No AI assistant or agent (Claude, Codex, Gemini/Antigravity, Copilot, Cursor, or any other) may alter Supabase security**: RLS, policies, grants, function security, roles, auth settings, keys, or advisor dismissals. Read, audit and propose only; a human applies. Autonomous or bypass-permissions modes do **not** apply to this. Full rule: [docs/SUPABASE_SECURITY_POLICY.md](docs/SUPABASE_SECURITY_POLICY.md).
+**No AI assistant or agent (Claude, Codex, Gemini/Antigravity, Copilot, Cursor, or any other) may alter Supabase security**: RLS, policies, grants, function security, roles, auth settings, keys, or advisor dismissals. Read, audit and propose only; a human applies. Autonomous or bypass-permissions modes do **not** apply to this. Full rule: [docs/SUPABASE_SECURITY_POLICY.md](../docs/SUPABASE_SECURITY_POLICY.md).
 
 ## Project snapshot
 

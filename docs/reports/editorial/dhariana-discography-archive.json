@@ -1,0 +1,105 @@
+{
+  "url": "https://archive.org/advancedsearch.php?q=Dhariana&output=json&rows=50",
+  "accessed": "2026-10-20T13:06:10.127Z",
+  "data": {
+    "responseHeader": {
+      "status": 0,
+      "QTime": 224,
+      "params": {
+        "query": "text:Dhariana OR text:Dhariana OR text__reviews:Dhariana",
+        "qin": "Dhariana",
+        "fields": "_default_",
+        "wt": "json",
+        "rows": 50,
+        "start": 0
+      }
+    },
+    "response": {
+      "numFound": 2,
+      "start": 0,
+      "docs": [
+        {
+          "btih": "307313ad939f8f30ec57e6ecc710218cc3a686e9",
+          "description": "Dhariana Peralta [RCE] Favorites",
+          "downloads": 1,
+          "format": [
+            "Archive BitTorrent",
+            "JSON",
+            "Metadata"
+          ],
+          "identifier": "fav-dhariana_peralta_rce_",
+          "indexflag": [
+            "index",
+            "nonoindex",
+            "favorites",
+            "collections"
+          ],
+          "item_size": 23025,
+          "mediatype": "collection",
+          "members": "princesspea0000unse_q3f9",
+          "month": 0,
+          "oai_updatedate": [
+            "2025-04-02T14:31:12Z",
+            "2025-04-02T18:50:18Z"
+          ],
+          "publicdate": "2025-04-02T14:31:12Z",
+          "subject": "favorites",
+          "title": "Dhariana Peralta [RCE] Favorites",
+          "week": 0
+        },
+        {
+          "btih": "faec45d57c6d6101bd2bcbecfdc7d7bcb11fe333",
+          "collection": [
+            "podcasts_mirror_bobarchives",
+            "podcasts_mirror",
+            "fav-rub_n_m_esquivel"
+          ],
+          "creator": "Twitter Smarter Podcast with Madalyn Sklar - The Best Twitter Tips from the Pros",
+          "date": "2019-08-16T00:00:00Z",
+          "description": "In this episode, Dhariana Lozano and I talk about your Twitter bio, tweets, and Twitter analytics. You'll hear her strategies on having a great presence on Twitter. And that includes what content to tweet and the importance of joining Twitter chats.",
+          "downloads": 11,
+          "format": [
+            "Archive BitTorrent",
+            "Columbia Peaks",
+            "Item Tile",
+            "Metadata",
+            "PNG",
+            "Spectrogram",
+            "VBR MP3"
+          ],
+          "identifier": "mqyfk5t0sk8z30d75hoo6bb2a5wxd0gsqzqjevnq",
+          "indexflag": [
+            "index",
+            "nonoindex"
+          ],
+          "item_size": 45829783,
+          "mediatype": "audio",
+          "month": 0,
+          "oai_updatedate": [
+            "2021-05-07T10:14:09Z",
+            "2022-06-01T20:00:42Z"
+          ],
+          "publicdate": "2021-05-07T10:14:09Z",
+          "subject": [
+            "Podcast",
+            "hootsuite",
+            "howto",
+            "madalynsklar",
+            "marismith",
+            "patflynn",
+            "podcast",
+            "resources",
+            "socialmedia",
+            "tips",
+            "twitter",
+            "twittersmarter",
+            "twittertips"
+          ],
+          "title": "56. Twitter Tips That Will Get You Noticed with Dhariana Lozano",
+          "week": 0,
+          "year": 2019
+        }
+      ]
+    }
+  }
+}

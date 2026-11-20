@@ -1,0 +1,937 @@
+{
+  "artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+  "artist_changed_fields": [],
+  "artist_status": "published",
+  "documents": [
+    {
+      "id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Joaquín Balaguer was a Dominican poet, essayist, and politician, born in Navarrete, Santiago province, on September 1, 1906. He died in Santo Domingo on July 14, 2002. Alongside his career as president of the Dominican Republic, he wrote poetry that entered the country’s song repertoire through settings by several composers.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Lucía» and the criolla tradition",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "An early example is «Lucía», with words by Balaguer and music by Nicolás «Machilo» Guzmán. The Archivo General de la Nación preserves a recording sung by Ney Rivera L. and lists both writers. Answering a questionnaire by Diógenes Céspedes, later reproduced by Cándido Gerón, Balaguer recalled his surprise at hearing his poem sung by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ec0423fc-fe53-42e9-8d0f-f2ae902512d3",
+                  "displayText": "Eduardo Brito",
+                  "occurrenceId": "34f27e8d-77c0-4c93-adb4-6c3d25bcfe57"
+                }
+              },
+              {
+                "text": ". The question identified a 1929 recording for «RCA».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«La música de sus versos»",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His connection to song was explored in the collective LP «La música de sus versos», produced by Ricardo Bello for «Disco Bello», catalog number DB-1020. The copy digitized by the Archivo General de la Nación contains ten recordings, together with its cover, back cover, inner artwork, and labels. Bello’s sleeve notes describe a project to bring Dominican poetry into popular song, with Balaguer chosen for its first installment.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The back cover separates the poetry from its musical settings and performances. It credits ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+                  "displayText": "Cheo Zorrilla",
+                  "occurrenceId": "3d7e19a5-1b01-4f8e-aa52-b6da581a75ad"
+                }
+              },
+              {
+                "text": " with both the music and performance of «Amor tardío»; ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "081c1484-bf1c-4b11-ba01-d68446b7b111",
+                  "displayText": "Anthony Ríos",
+                  "occurrenceId": "f817a8c3-2f28-4315-a402-f92eedc2e293"
+                }
+              },
+              {
+                "text": " with those roles on «Rosa silvestre»; and R. Bello with the music of «El pasado», sung by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "d509de7c-64a1-4290-8e2f-6b066e230ff3",
+                  "displayText": "Omar Franco",
+                  "occurrenceId": "77c115fc-72a2-4b1e-ba76-22b418162105"
+                }
+              },
+              {
+                "text": ". It also documents «Amistad», composed by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "081c1484-bf1c-4b11-ba01-d68446b7b111",
+                  "displayText": "Anthony Ríos",
+                  "occurrenceId": "e213d208-557f-47a6-842b-2657ab9cc80b"
+                }
+              },
+              {
+                "text": " and sung by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "771e3bcf-396a-492a-833f-8afb45964520",
+                  "displayText": "Lope Balaguer",
+                  "occurrenceId": "0d9bd3b4-194a-4701-b27c-b80d20c4caf6"
+                }
+              },
+              {
+                "text": ", and «Amor romántico», with music by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+                  "displayText": "Cheo Zorrilla",
+                  "occurrenceId": "acdc5b93-d178-4b48-a822-cd750e93d849"
+                }
+              },
+              {
+                "text": " and a performance by Gina D’Alessandro.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The other tracks are «Fragilidad», sung by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "214e98cc-cac9-4473-9741-2a87481b0685",
+                  "displayText": "Carlos Alfredo Fatule",
+                  "occurrenceId": "6be9cb39-c85d-44bf-93d0-f37a9cf9f928"
+                }
+              },
+              {
+                "text": " with music by José Delmonte; «El leñador», performed by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "60b0cfd0-b572-4d0f-a913-bbeb1aa734c6",
+                  "displayText": "Fausto Rey",
+                  "occurrenceId": "55768f52-6fb9-44ad-88fd-a6c9df0814a8"
+                }
+              },
+              {
+                "text": " with music by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                  "displayText": "Jorge Taveras",
+                  "occurrenceId": "e29d8522-07c5-482e-8554-8a7a96e28b7d"
+                }
+              },
+              {
+                "text": "; «Maternidades frustradas», sung by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+                  "displayText": "Luchy Vicioso",
+                  "occurrenceId": "fe862bd0-1fe4-4617-8147-02928f4c439e"
+                }
+              },
+              {
+                "text": ", with music by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                  "displayText": "Jorge Taveras",
+                  "occurrenceId": "2811e2fc-170e-43b5-9fb0-7f18ffb64e2d"
+                }
+              },
+              {
+                "text": " and Carlos M. Echenique; «Venus negra», performed by Rafael Colón with music by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+                  "displayText": "Julio Alberto Hernández",
+                  "occurrenceId": "8335ae7f-0b58-4a97-9452-f75b61885415"
+                }
+              },
+              {
+                "text": "; and the ensemble performance «Paz», with music by Carlos Mario Echenique. These credits belong to this particular LP edition.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Later settings",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                  "displayText": "Fernando Villalona",
+                  "occurrenceId": "f892d577-add9-4601-9f25-f45a0612a3f9"
+                }
+              },
+              {
+                "text": " recorded «Romanticismo» for «Soy un hombre feliz» (1996). The digital credits for this recording list Joaquín Balaguer and Pedro S. Rodríguez. This merengue recording brought Balaguer’s verse to another audience.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "7cba3e4c-d176-4f08-97ca-8e6fea516564",
+                  "displayText": "Pedro Samuel Rodríguez",
+                  "occurrenceId": "daf5a856-5676-4304-9982-8de2f2e7d3f8"
+                }
+              },
+              {
+                "text": " also published his own performances of Balaguer’s poetry on his channel «Pedro Samuel Rodz». His upload of «Melancolía otoñal», dated May 11, 2016, credits him with the melody and performance and cites pages 61–62 of the 1992 edition of «Voz silente» as its textual source. His May 15 upload of «Rosa silvestre» likewise credits his own music and performance, citing pages 76–78 of the 1992 edition of «La venda transparente». These are the musician’s own publications, distinct from the recordings on the collective LP.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Balaguer’s documented place in Dominican music rests on the poems that composers and singers adapted across generations. The criolla «Lucía», the collective project «La música de sus versos», and later performances shared online show several ways in which his writing became song, while retaining the distinction between the poet’s words and the musicians’ contributions.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+      "created_at": "2026-09-07T13:11:37.037525+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00",
+      "revision": 3
+    },
+    {
+      "id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Joaquín Balaguer fue un poeta, ensayista y político dominicano nacido en Navarrete, provincia Santiago, el 1 de septiembre de 1906. Falleció en Santo Domingo el 14 de julio de 2002. Además de su trayectoria como presidente de la República, dejó una obra literaria cuyos versos pasaron al repertorio de la canción dominicana mediante musicalizaciones de distintos compositores.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Lucía» y la canción criolla",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Uno de los ejemplos más tempranos es «Lucía», con versos de Balaguer y música de Nicolás «Machilo» Guzmán. El Archivo General de la Nación conserva una grabación interpretada por Ney Rivera L. y registra ambos nombres como autores. En un cuestionario de Diógenes Céspedes, reproducido posteriormente por Cándido Gerón, Balaguer recordó su sorpresa al escuchar el poema convertido en canción en la voz de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ec0423fc-fe53-42e9-8d0f-f2ae902512d3",
+                  "displayText": "Eduardo Brito",
+                  "occurrenceId": "2f2618e0-6e83-4123-999a-bb13b15d2138"
+                }
+              },
+              {
+                "text": "; la pregunta situaba aquella grabación para «RCA» en 1929.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«La música de sus versos»",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La relación entre su poesía y la música quedó reunida en el LP colectivo «La música de sus versos», producido por Ricardo Bello para «Disco Bello», catálogo DB-1020. El ejemplar digitalizado por el Archivo General de la Nación contiene diez grabaciones y conserva portada, contraportada, interior y etiquetas. En las notas, Bello explica que el proyecto buscaba llevar a la canción popular textos de poetas dominicanos y que escogió a Balaguer para esta primera entrega.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La contraportada distingue al autor de los versos de quienes compusieron la música y de sus intérpretes. Acredita «Amor tardío» a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+                  "displayText": "Cheo Zorrilla",
+                  "occurrenceId": "26b4b833-af52-49f8-bbe5-244e19a145cf"
+                }
+              },
+              {
+                "text": " como músico e intérprete; «Rosa silvestre» a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "081c1484-bf1c-4b11-ba01-d68446b7b111",
+                  "displayText": "Anthony Ríos",
+                  "occurrenceId": "ad0cbcca-f507-4eb7-b5ca-91237e5a550f"
+                }
+              },
+              {
+                "text": " en ambas funciones; y «El pasado» a R. Bello como autor de la música, con interpretación de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "d509de7c-64a1-4290-8e2f-6b066e230ff3",
+                  "displayText": "Omar Franco",
+                  "occurrenceId": "9b2f20b7-0d09-4a1b-a29d-a350f00460a9"
+                }
+              },
+              {
+                "text": ". También documenta «Amistad», con música de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "081c1484-bf1c-4b11-ba01-d68446b7b111",
+                  "displayText": "Anthony Ríos",
+                  "occurrenceId": "c4cd47ff-54c4-4d10-8811-73b9ade5ce83"
+                }
+              },
+              {
+                "text": " y voz de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "771e3bcf-396a-492a-833f-8afb45964520",
+                  "displayText": "Lope Balaguer",
+                  "occurrenceId": "26fc7ce7-7b10-4fa4-bbc8-7569e45993b4"
+                }
+              },
+              {
+                "text": ", y «Amor romántico», con música de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+                  "displayText": "Cheo Zorrilla",
+                  "occurrenceId": "62258687-687e-4035-8bd1-0bdda01503b9"
+                }
+              },
+              {
+                "text": " e interpretación de Gina D’Alessandro.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El disco incluye además «Fragilidad», cantada por ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "214e98cc-cac9-4473-9741-2a87481b0685",
+                  "displayText": "Carlos Alfredo Fatule",
+                  "occurrenceId": "7c3dcb1f-f333-4f2f-b396-492e711f01bf"
+                }
+              },
+              {
+                "text": " con música de José Delmonte; «El leñador», interpretada por ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "60b0cfd0-b572-4d0f-a913-bbeb1aa734c6",
+                  "displayText": "Fausto Rey",
+                  "occurrenceId": "71722f95-1418-46ff-af0e-4551449ec7a0"
+                }
+              },
+              {
+                "text": " con música de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                  "displayText": "Jorge Taveras",
+                  "occurrenceId": "834c98b3-ba7f-4f47-a229-5c99f6b6260c"
+                }
+              },
+              {
+                "text": "; «Maternidades frustradas», en la voz de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+                  "displayText": "Luchy Vicioso",
+                  "occurrenceId": "0f292837-7243-480a-8615-1a99a88d0802"
+                }
+              },
+              {
+                "text": ", con música de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                  "displayText": "Jorge Taveras",
+                  "occurrenceId": "1cb3bb9f-a77c-4028-9348-167038cdb058"
+                }
+              },
+              {
+                "text": " y Carlos M. Echenique; «Venus negra», interpretada por Rafael Colón con música de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+                  "displayText": "Julio Alberto Hernández",
+                  "occurrenceId": "5e4932c1-1055-4ff6-8ae7-9e5f15a93724"
+                }
+              },
+              {
+                "text": "; y «Paz», con música de Carlos Mario Echenique y un conjunto de intérpretes. Estos créditos corresponden a esa edición concreta del LP.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Otras musicalizaciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                  "displayText": "Fernando Villalona",
+                  "occurrenceId": "54d673aa-d31c-4ac2-9c9e-566a5e428b4f"
+                }
+              },
+              {
+                "text": " incluyó «Romanticismo» en «Soy un hombre feliz» (1996). Los créditos digitales de esa grabación consignan a Joaquín Balaguer y Pedro S. Rodríguez; la grabación amplió la circulación de sus versos en el repertorio del merengue.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "7cba3e4c-d176-4f08-97ca-8e6fea516564",
+                  "displayText": "Pedro Samuel Rodríguez",
+                  "occurrenceId": "7df9fd6b-9504-4f65-9139-e506d6abd64f"
+                }
+              },
+              {
+                "text": " también publicó interpretaciones propias de poemas de Balaguer en su canal «Pedro Samuel Rodz». En «Melancolía otoñal», subida el 11 de mayo de 2016, acredita su melodía e interpretación y señala como fuente del texto «Voz silente», páginas 61–62 de la edición de 1992. En «Rosa silvestre», publicada el 15 de mayo de ese año, acredita igualmente su música e interpretación y remite a «La venda transparente», páginas 76–78 de la edición de 1992. Son publicaciones del propio músico y no deben confundirse con las grabaciones del LP colectivo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su presencia en la música dominicana se sostiene en la adaptación de sus poemas por compositores e intérpretes de distintas generaciones. Desde la criolla «Lucía» hasta el proyecto colectivo «La música de sus versos» y las musicalizaciones difundidas en medios digitales, su contribución documentada es principalmente la palabra poética que otros músicos transformaron en canción.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+      "created_at": "2026-09-07T13:11:37.037525+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00",
+      "revision": 3
+    }
+  ],
+  "relations": [
+    {
+      "id": "35213074-8745-4144-9c64-9bfefe0a0abd",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "34f27e8d-77c0-4c93-adb4-6c3d25bcfe57",
+      "entity_type": "artist",
+      "target_artist_id": "ec0423fc-fe53-42e9-8d0f-f2ae902512d3",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "2679d404-f161-455b-b4ab-7a9674b14470",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "3d7e19a5-1b01-4f8e-aa52-b6da581a75ad",
+      "entity_type": "artist",
+      "target_artist_id": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "ef456a68-e66c-46e6-9e55-6500d54bcef9",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "f817a8c3-2f28-4315-a402-f92eedc2e293",
+      "entity_type": "artist",
+      "target_artist_id": "081c1484-bf1c-4b11-ba01-d68446b7b111",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "830fee15-65b2-417f-a085-f4057054ac0e",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "77c115fc-72a2-4b1e-ba76-22b418162105",
+      "entity_type": "artist",
+      "target_artist_id": "d509de7c-64a1-4290-8e2f-6b066e230ff3",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "361172ea-1fe1-4eda-adbb-fa54f330f238",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "e213d208-557f-47a6-842b-2657ab9cc80b",
+      "entity_type": "artist",
+      "target_artist_id": "081c1484-bf1c-4b11-ba01-d68446b7b111",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "c22818d9-def0-4687-b72c-ec4ab6a191cb",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "0d9bd3b4-194a-4701-b27c-b80d20c4caf6",
+      "entity_type": "artist",
+      "target_artist_id": "771e3bcf-396a-492a-833f-8afb45964520",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "5520bd63-28b3-4d03-9b89-47a865f57686",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "acdc5b93-d178-4b48-a822-cd750e93d849",
+      "entity_type": "artist",
+      "target_artist_id": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "44b538e8-64c0-43ec-a5be-469d303de164",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "6be9cb39-c85d-44bf-93d0-f37a9cf9f928",
+      "entity_type": "artist",
+      "target_artist_id": "214e98cc-cac9-4473-9741-2a87481b0685",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "238b6fda-1eb0-4f56-abe9-37f0df3581ba",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "55768f52-6fb9-44ad-88fd-a6c9df0814a8",
+      "entity_type": "artist",
+      "target_artist_id": "60b0cfd0-b572-4d0f-a913-bbeb1aa734c6",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "a069a8e9-4095-4bd4-92ff-c2235f256af7",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "e29d8522-07c5-482e-8554-8a7a96e28b7d",
+      "entity_type": "artist",
+      "target_artist_id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "4ab46725-e6d6-4458-b59c-72431e7cedb7",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "fe862bd0-1fe4-4617-8147-02928f4c439e",
+      "entity_type": "artist",
+      "target_artist_id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "34646e7a-8013-48fa-9fb0-f307d4eb2bd3",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "2811e2fc-170e-43b5-9fb0-7f18ffb64e2d",
+      "entity_type": "artist",
+      "target_artist_id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "c64a3d3e-f5d6-452e-86e6-1e4bc6f969f6",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "8335ae7f-0b58-4a97-9452-f75b61885415",
+      "entity_type": "artist",
+      "target_artist_id": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "7d95aeb1-6e3c-4234-afc5-607dedf823ae",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "f892d577-add9-4601-9f25-f45a0612a3f9",
+      "entity_type": "artist",
+      "target_artist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "ffdd765f-96b4-44a2-94c7-043e13341708",
+      "editorial_document_id": "60466f4f-b7cb-439d-beda-2b210a893648",
+      "occurrence_id": "daf5a856-5676-4304-9982-8de2f2e7d3f8",
+      "entity_type": "artist",
+      "target_artist_id": "7cba3e4c-d176-4f08-97ca-8e6fea516564",
+      "created_at": "2026-10-25T13:55:43.050294+00:00",
+      "updated_at": "2026-10-25T13:55:43.050294+00:00"
+    },
+    {
+      "id": "934281f2-a029-45da-829c-56b9630ae59f",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "2f2618e0-6e83-4123-999a-bb13b15d2138",
+      "entity_type": "artist",
+      "target_artist_id": "ec0423fc-fe53-42e9-8d0f-f2ae902512d3",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "1ea6da0f-2cd3-4c58-946e-d627d9b5563b",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "26b4b833-af52-49f8-bbe5-244e19a145cf",
+      "entity_type": "artist",
+      "target_artist_id": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "c161d8a1-89d9-4c61-b285-c4bed57ddc5b",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "ad0cbcca-f507-4eb7-b5ca-91237e5a550f",
+      "entity_type": "artist",
+      "target_artist_id": "081c1484-bf1c-4b11-ba01-d68446b7b111",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "8299fa09-4502-497d-a0d4-0fdb13784d66",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "9b2f20b7-0d09-4a1b-a29d-a350f00460a9",
+      "entity_type": "artist",
+      "target_artist_id": "d509de7c-64a1-4290-8e2f-6b066e230ff3",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "4709dcca-fdea-4c11-a2cc-9f30203b118d",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "c4cd47ff-54c4-4d10-8811-73b9ade5ce83",
+      "entity_type": "artist",
+      "target_artist_id": "081c1484-bf1c-4b11-ba01-d68446b7b111",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "f296f2ab-aeb6-497b-ad7d-c4b0aba21b73",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "26fc7ce7-7b10-4fa4-bbc8-7569e45993b4",
+      "entity_type": "artist",
+      "target_artist_id": "771e3bcf-396a-492a-833f-8afb45964520",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "c39759be-34d1-4c53-a66a-e00a44b9c51f",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "62258687-687e-4035-8bd1-0bdda01503b9",
+      "entity_type": "artist",
+      "target_artist_id": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "4b541169-958a-4c93-963f-7ad57a2a3732",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "7c3dcb1f-f333-4f2f-b396-492e711f01bf",
+      "entity_type": "artist",
+      "target_artist_id": "214e98cc-cac9-4473-9741-2a87481b0685",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "59d6b78d-d30b-4847-a653-db6dfe1f6cca",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "71722f95-1418-46ff-af0e-4551449ec7a0",
+      "entity_type": "artist",
+      "target_artist_id": "60b0cfd0-b572-4d0f-a913-bbeb1aa734c6",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "e51c9728-daa2-4f73-8ac8-d4f808c1aa23",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "834c98b3-ba7f-4f47-a229-5c99f6b6260c",
+      "entity_type": "artist",
+      "target_artist_id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "51f674d5-3c6d-4ee5-9f4c-914c4983a9c3",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "0f292837-7243-480a-8615-1a99a88d0802",
+      "entity_type": "artist",
+      "target_artist_id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "ade0ac11-a65a-45eb-8f19-865028d755e6",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "1cb3bb9f-a77c-4028-9348-167038cdb058",
+      "entity_type": "artist",
+      "target_artist_id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "86922326-dec8-4ba9-b80f-ef2de2179e8a",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "5e4932c1-1055-4ff6-8ae7-9e5f15a93724",
+      "entity_type": "artist",
+      "target_artist_id": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "66911d86-73e5-469c-9b76-b50b5bc48697",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "54d673aa-d31c-4ac2-9c9e-566a5e428b4f",
+      "entity_type": "artist",
+      "target_artist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    },
+    {
+      "id": "9baaf942-9cc6-45b6-b4df-b5e76b01bc79",
+      "editorial_document_id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+      "occurrence_id": "7df9fd6b-9504-4f65-9139-e506d6abd64f",
+      "entity_type": "artist",
+      "target_artist_id": "7cba3e4c-d176-4f08-97ca-8e6fea516564",
+      "created_at": "2026-10-25T13:55:43.233129+00:00",
+      "updated_at": "2026-10-25T13:55:43.233129+00:00"
+    }
+  ],
+  "integrity": {
+    "generatedAt": "2026-10-25T13:56:10.704Z",
+    "counts": {
+      "documents": 2,
+      "relations": 30,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 2
+    },
+    "findings": [
+      {
+        "documentId": "60466f4f-b7cb-439d-beda-2b210a893648",
+        "ownerArtistId": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+        "locale": "en",
+        "code": "legacy_compatibility_mismatch",
+        "severity": "informational"
+      },
+      {
+        "documentId": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+        "ownerArtistId": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+        "locale": "es",
+        "code": "legacy_compatibility_mismatch",
+        "severity": "informational"
+      }
+    ]
+  }
+}

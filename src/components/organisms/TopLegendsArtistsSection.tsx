@@ -46,9 +46,9 @@ export default function TopLegendsArtistsSection({
         </div>
 
         <CarouselArrow direction="left" onClick={() => scroll("left")} />
-        <CarouselArrow direction="right" onClick={() => scroll("right")} />
+        <CarouselArrow scrollRef={scrollRef} direction="right" onClick={() => scroll("right")} />
 
-        <ArtistCarousel ref={scrollRef}>
+        <ArtistCarousel ref={scrollRef} seeAllHref="/artists/groups" seeAllLabel={nav("seeAll")}>
           {artists.slice(0, HOME_ARTIST_CARD_LIMIT).map((artist) => (
             <div key={artist.id} className="w-28 shrink-0 sm:w-32 lg:w-36">
               <ArtistCard artist={artist} titleAs="h3" />

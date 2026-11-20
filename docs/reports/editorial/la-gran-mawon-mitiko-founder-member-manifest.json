@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-30",
+  "authorization": "El editor señaló que Mítiko debe figurar como founder member de La Gran Mawon; guardar sólo esas dos relaciones estructuradas y comprobar ambas fichas.",
+  "source_artist": {
+    "id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+    "name": "Mítiko",
+    "slug": "mitiko",
+    "type": "solo_artist",
+    "status_before": "published"
+  },
+  "target_artist": {
+    "id": "a7f7bc09-9356-41f0-9509-273b1724c452",
+    "name": "La Gran Mawon",
+    "slug": "la-gran-mawon",
+    "type": "group",
+    "status_before": "published"
+  },
+  "before_relationships": [],
+  "execution_status": "not_executed_existing_rows_detected_during_review",
+  "assistant_database_writes": 0,
+  "after_relationships": [
+    {
+      "source_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "target_artist_id": "a7f7bc09-9356-41f0-9509-273b1724c452",
+      "relationship_type": "founder_of",
+      "start_year": 2011,
+      "end_year": null,
+      "notes": "Integrante de las sesiones fundacionales de 2011 en la Zona Colonial. Fuentes: https://lagaleriamag.com/who-is-la-gran-mawon-in-conversation-with-the-up-coming-afrodominican-band/ ; https://retajila.com/descargas/UNA_ISLA_ES_UN_UNIVERSO_2016_2017.pdf (p. 139)."
+    },
+    {
+      "source_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "target_artist_id": "a7f7bc09-9356-41f0-9509-273b1724c452",
+      "relationship_type": "member_of",
+      "start_year": 2011,
+      "end_year": null,
+      "notes": "Miembro original y fijo según Retajila (p. 139); el editor confirma la relación como integrante fundador. Fuente: https://retajila.com/descargas/UNA_ISLA_ES_UN_UNIVERSO_2016_2017.pdf . No se ha documentado fecha de salida."
+    }
+  ],
+  "evidence": [
+    "https://lagaleriamag.com/who-is-la-gran-mawon-in-conversation-with-the-up-coming-afrodominican-band/",
+    "https://retajila.com/descargas/UNA_ISLA_ES_UN_UNIVERSO_2016_2017.pdf"
+  ],
+  "observed_relationships": [
+    {
+      "id": "15f41669-1574-4809-bcbc-f3c00f49b331",
+      "relationship_type": "founder_of",
+      "start_year": 2011,
+      "end_year": null,
+      "notes": "Co-founder and guitarist of La Gran Mawon"
+    },
+    {
+      "id": "a1597ac4-2aef-4166-b0a2-1d19399ee79c",
+      "relationship_type": "member_of",
+      "start_year": 2011,
+      "end_year": null,
+      "notes": "Guitarist and composer"
+    }
+  ],
+  "verification": "Database query returned exactly the two observed rows. La Gran Mawon's Spanish public profile displays Mítiko as a member with Founder badge; Mítiko's Spanish public profile displays La Gran Mawon under Miembro de and Fundador de. Both targets resolve.",
+  "scope_exclusions": [
+    "No se modifican biografías, lanzamientos, créditos, imágenes, estados de publicación ni otras relaciones."
+  ]
+}

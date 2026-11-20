@@ -1,0 +1,992 @@
+[
+  {
+    "key": "1981-el-equipo",
+    "type": "release",
+    "id": 13604810,
+    "label": "Karen KLP-59",
+    "title": "El Equipo",
+    "year": 1981,
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Yo Quisiera",
+        "duration": "",
+        "extraartists": [
+          {
+            "name": "Dioni Fernández",
+            "role": "Written-By"
+          },
+          {
+            "name": "Sandy Reyes",
+            "role": "Written-By"
+          },
+          {
+            "name": "Yaqui Núñez Del Risco",
+            "role": "Written-By"
+          }
+        ]
+      },
+      {
+        "position": "A2",
+        "title": "Las Vencidas",
+        "duration": "",
+        "extraartists": [
+          {
+            "name": "Ramón Díaz",
+            "role": "Written By"
+          }
+        ]
+      },
+      {
+        "position": "A3",
+        "title": "La Carta",
+        "duration": "",
+        "extraartists": [
+          {
+            "name": "Juan Lan Franco",
+            "role": "Written-By"
+          }
+        ]
+      },
+      {
+        "position": "A4",
+        "title": "El Guardia (Del Arsenal)",
+        "duration": "",
+        "extraartists": [
+          {
+            "name": "Luis Días",
+            "role": "Written By"
+          }
+        ]
+      },
+      {
+        "position": "A5",
+        "title": "De La Noche A La Mañana",
+        "duration": "",
+        "extraartists": [
+          {
+            "name": "Francis Moya",
+            "role": "Written-By"
+          }
+        ]
+      },
+      {
+        "position": "B1",
+        "title": "Sinfonia De Amor",
+        "duration": "",
+        "extraartists": [
+          {
+            "name": "Luis Kalaff",
+            "role": "Written-By"
+          }
+        ]
+      },
+      {
+        "position": "B2",
+        "title": "La Integridad",
+        "duration": "",
+        "extraartists": [
+          {
+            "name": "Leonardo De Jesus",
+            "role": "Written-By"
+          }
+        ]
+      },
+      {
+        "position": "B3",
+        "title": "Te Llegará Mi Olvido",
+        "duration": "",
+        "extraartists": [
+          {
+            "name": "Juan Gabriel",
+            "role": "Written-By"
+          }
+        ]
+      },
+      {
+        "position": "B4",
+        "title": "Yo Te Amo Mas",
+        "duration": "",
+        "extraartists": [
+          {
+            "name": "Jorge Taveras",
+            "role": "Written-By"
+          },
+          {
+            "name": "Yaqui Núñez Del Risco",
+            "role": "Written-By"
+          }
+        ]
+      },
+      {
+        "position": "B5",
+        "title": "Acuerdate De Mi",
+        "duration": "",
+        "extraartists": [
+          {
+            "name": "Luis Kalaff",
+            "role": "Written-By"
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/ikXOmVjoriwHbXNKxxbT7wsIpTMyGBKDaCyBBVSb79Y/rs:fit/g:sm/q:90/h:600/w:583/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjA0/ODEwLTE1NTczNTU4/NDQtNDI0MS5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/ikXOmVjoriwHbXNKxxbT7wsIpTMyGBKDaCyBBVSb79Y/rs:fit/g:sm/q:90/h:600/w:583/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjA0/ODEwLTE1NTczNTU4/NDQtNDI0MS5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/laAmiPWgwTjwBO6JDKmW8ds3GTFMyEvWUgHE1KOY4OY/rs:fit/g:sm/q:90/h:600/w:581/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjA0/ODEwLTE1NTczNTU4/NTMtOTg0Ni5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/laAmiPWgwTjwBO6JDKmW8ds3GTFMyEvWUgHE1KOY4OY/rs:fit/g:sm/q:90/h:600/w:581/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjA0/ODEwLTE1NTczNTU4/NTMtOTg0Ni5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/UbHVwnlNVnvpKhaLgM67716PNb2vnpBBrvf4jRFsrWA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjA0/ODEwLTE1NTczNTU4/NDgtODEyOS5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/UbHVwnlNVnvpKhaLgM67716PNb2vnpBBrvf4jRFsrWA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjA0/ODEwLTE1NTczNTU4/NDgtODEyOS5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/7GNXqlEhlH4DrENK0DyyKZnGT3kch2YH5NBP2JojGBk/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjA0/ODEwLTE1NTczNTU4/NTQtNzM1Ni5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/7GNXqlEhlH4DrENK0DyyKZnGT3kch2YH5NBP2JojGBk/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjA0/ODEwLTE1NTczNTU4/NTQtNzM1Ni5qcGVn.jpeg"
+      }
+    ]
+  },
+  {
+    "key": "1983-cal-y-arena",
+    "type": "master",
+    "id": 2289247,
+    "label": "Karen KLP-74",
+    "title": "Dioni Fernández Y El Equipo",
+    "year": 1983,
+    "main_release": 13381722,
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Moza",
+        "duration": "4:38"
+      },
+      {
+        "position": "A2",
+        "title": "La Mujer Que A Mi Me Gusta",
+        "duration": "4:27"
+      },
+      {
+        "position": "A3",
+        "title": "El Merengue Es Un Abrazo",
+        "duration": "4:12"
+      },
+      {
+        "position": "A4",
+        "title": "Mina De Amor",
+        "duration": "4:11"
+      },
+      {
+        "position": "B1",
+        "title": "Colorao",
+        "duration": "4:38"
+      },
+      {
+        "position": "B2",
+        "title": "Veneno",
+        "duration": "5:06"
+      },
+      {
+        "position": "B3",
+        "title": "Queriendote Y Adorandote",
+        "duration": "4:24"
+      },
+      {
+        "position": "B4",
+        "title": "Ladrona",
+        "duration": "4:24"
+      }
+    ],
+    "images": [
+      {
+        "type": "primary",
+        "uri": "https://i.discogs.com/xUsVH3sBxFUcNFh4xtegT4UiOXhL7XmHMbAf8kZ5ws8/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzgx/NzIyLTE1NTMxNDA1/MTItNjE1Ny5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/xUsVH3sBxFUcNFh4xtegT4UiOXhL7XmHMbAf8kZ5ws8/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzgx/NzIyLTE1NTMxNDA1/MTItNjE1Ny5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/G0J3whGSnSzo4p6HSrz4TPV1Bh74-KdsqQzaNSESvHU/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzgx/NzIyLTE1NTMxNDA1/MTYtNDA0My5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/G0J3whGSnSzo4p6HSrz4TPV1Bh74-KdsqQzaNSESvHU/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzgx/NzIyLTE1NTMxNDA1/MTYtNDA0My5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/Pk-KKI7RHLOdXplfx_ROiVMmDey1tcAEnWD1MhaJ-IY/rs:fit/g:sm/q:90/h:432/w:432/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzgx/NzIyLTE3NTk2Nzcy/MTItMTgxMS5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/Pk-KKI7RHLOdXplfx_ROiVMmDey1tcAEnWD1MhaJ-IY/rs:fit/g:sm/q:90/h:432/w:432/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzgx/NzIyLTE3NTk2Nzcy/MTItMTgxMS5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/zqVPQAFECDrr_WRjLtZ01-c8JJ0j_G9-V2t9D66lx4s/rs:fit/g:sm/q:90/h:432/w:432/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzgx/NzIyLTE3NTk2Nzcy/MTItMjgxNi5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/zqVPQAFECDrr_WRjLtZ01-c8JJ0j_G9-V2t9D66lx4s/rs:fit/g:sm/q:90/h:432/w:432/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzgx/NzIyLTE3NTk2Nzcy/MTItMjgxNi5qcGVn.jpeg"
+      }
+    ]
+  },
+  {
+    "key": "1984-los-disenadores",
+    "type": "master",
+    "id": 1435462,
+    "label": "Karen KLP-85",
+    "title": "Los Diseñadores",
+    "year": 1984,
+    "main_release": 8690104,
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Los Diseñadores",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Me Aleje Llorando",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Oye Muchacha",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": " Cal Y Arena",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Cuando Me Tocas",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "El Doble Sentido",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Telefono A Larga Distancia",
+        "duration": ""
+      }
+    ],
+    "images": [
+      {
+        "type": "primary",
+        "uri": "https://i.discogs.com/j6L-aj2ndPCNdgHHhWKKUtPpGHzHV7piqLnePq3NSNg/rs:fit/g:sm/q:90/h:403/w:405/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2OTAx/MDQtMTQ2NjY4MDQ5/NC00NTg1LmpwZWc.jpeg",
+        "resource_url": "https://i.discogs.com/j6L-aj2ndPCNdgHHhWKKUtPpGHzHV7piqLnePq3NSNg/rs:fit/g:sm/q:90/h:403/w:405/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2OTAx/MDQtMTQ2NjY4MDQ5/NC00NTg1LmpwZWc.jpeg"
+      }
+    ]
+  },
+  {
+    "key": "1985-fiesta-y-fiesta",
+    "type": "master",
+    "id": 1277222,
+    "label": "Karen KLP-93",
+    "title": "Fiesta & Fiesta!",
+    "year": 1985,
+    "main_release": 10378823,
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Fiesta & Fiesta!",
+        "duration": "5:10"
+      },
+      {
+        "position": "A2",
+        "title": "Al Ritmo De La Noche",
+        "duration": "5:07"
+      },
+      {
+        "position": "A3",
+        "title": "El Pescador De Baru",
+        "duration": "4:18"
+      },
+      {
+        "position": "A4",
+        "title": "Caribe",
+        "duration": "4:40"
+      },
+      {
+        "position": "B1",
+        "title": "Loco, Loco",
+        "duration": "3:57"
+      },
+      {
+        "position": "B2",
+        "title": "Come Es Posible",
+        "duration": "4:15"
+      },
+      {
+        "position": "B3",
+        "title": "Chispeando",
+        "duration": "3:35"
+      },
+      {
+        "position": "B4",
+        "title": "Nicanor",
+        "duration": "3:59"
+      },
+      {
+        "position": "B5",
+        "title": "Me Mantengo",
+        "duration": "4:13"
+      }
+    ],
+    "images": [
+      {
+        "type": "primary",
+        "uri": "https://i.discogs.com/JaOfp2CXLJAfrQzZ-jHydIK3pF2rOnL7AxShRHDQWLo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzc4/ODIzLTE2NDk0MjE0/NzktNjI5NS5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/JaOfp2CXLJAfrQzZ-jHydIK3pF2rOnL7AxShRHDQWLo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzc4/ODIzLTE2NDk0MjE0/NzktNjI5NS5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/Z964lFHr2MhFuSc9yT0R4luXv2Wg9iQ2yAImS63O7vY/rs:fit/g:sm/q:90/h:579/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzc4/ODIzLTE2NDk0MjE0/NzYtODAwMi5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/Z964lFHr2MhFuSc9yT0R4luXv2Wg9iQ2yAImS63O7vY/rs:fit/g:sm/q:90/h:579/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzc4/ODIzLTE2NDk0MjE0/NzYtODAwMi5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/ic6bUIrRCTyeDiRoOq0D3m12ePm-12WJPcQXQ2xJSrk/rs:fit/g:sm/q:90/h:437/w:435/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzc4/ODIzLTE0OTYyOTg2/NzYtMTAxNC5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/ic6bUIrRCTyeDiRoOq0D3m12ePm-12WJPcQXQ2xJSrk/rs:fit/g:sm/q:90/h:437/w:435/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzc4/ODIzLTE0OTYyOTg2/NzYtMTAxNC5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/y9qAjOzyuQZ4Edp-SruWnQfIt5l45OSDwflqq6WpkBU/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzc4/ODIzLTE0OTYyOTg2/NjItODU1MC5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/y9qAjOzyuQZ4Edp-SruWnQfIt5l45OSDwflqq6WpkBU/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzc4/ODIzLTE0OTYyOTg2/NjItODU1MC5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/jcrX-pjDCml0Y79L1kUn5xtfVPPr5nzb0OjnX0WYskA/rs:fit/g:sm/q:90/h:581/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzc4/ODIzLTE0OTYyOTg2/NjYtMzMxMy5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/jcrX-pjDCml0Y79L1kUn5xtfVPPr5nzb0OjnX0WYskA/rs:fit/g:sm/q:90/h:581/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzc4/ODIzLTE0OTYyOTg2/NjYtMzMxMy5qcGVn.jpeg"
+      }
+    ]
+  },
+  {
+    "key": "1986-pasa-la-vida",
+    "type": "master",
+    "id": 1539747,
+    "label": "Karen KLP-106",
+    "title": "Pasa La Vida",
+    "year": 1986,
+    "main_release": 10079992,
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Pasa La Vida",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Que Me Dice Usted",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "La De Perder",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Como Tu No Hay Dos",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Si Señor",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Si Quieres",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Te Espero",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "La Unica",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "El Telefono",
+        "duration": ""
+      }
+    ],
+    "images": [
+      {
+        "type": "primary",
+        "uri": "https://i.discogs.com/z12A5tPYB9RDwSz7NkV48JX09rbRmYhgdTKwdgBoG4c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE2NDk0MTkw/NTEtMjA1NC5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/z12A5tPYB9RDwSz7NkV48JX09rbRmYhgdTKwdgBoG4c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE2NDk0MTkw/NTEtMjA1NC5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/2F67ozLQHhTzN73pwK3ehnRJbEZb2ezShTV3DmxxCJo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE2NDk0MTkw/NTEtOTUyMy5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/2F67ozLQHhTzN73pwK3ehnRJbEZb2ezShTV3DmxxCJo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE2NDk0MTkw/NTEtOTUyMy5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/5wrahs-1jIVRhiSTvpUsuR9obWI-GCkNMHxhI7ccKzU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE2NDk0MTkw/NTAtMzQ3Ni5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/5wrahs-1jIVRhiSTvpUsuR9obWI-GCkNMHxhI7ccKzU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE2NDk0MTkw/NTAtMzQ3Ni5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/z3lT8EfvZ1JV4f6O2zz19bRN7qqEufitYP4O7EEaUjM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE2NDk0MTkw/NDktMTUyNS5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/z3lT8EfvZ1JV4f6O2zz19bRN7qqEufitYP4O7EEaUjM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE2NDk0MTkw/NDktMTUyNS5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/z8AfZkK7B_tbeU3HoU-j-NwQztWpNg9vLaHxtBcK4z4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE0OTEyNTU2/OTYtODI5NC5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/z8AfZkK7B_tbeU3HoU-j-NwQztWpNg9vLaHxtBcK4z4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE0OTEyNTU2/OTYtODI5NC5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/ymEflwyIrEB1EZ_wC3uZSDTnnu3kyieaoCajwIN6Fdo/rs:fit/g:sm/q:90/h:600/w:577/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE1MzMzMzE0/MzgtMzAwOS5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/ymEflwyIrEB1EZ_wC3uZSDTnnu3kyieaoCajwIN6Fdo/rs:fit/g:sm/q:90/h:600/w:577/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE1MzMzMzE0/MzgtMzAwOS5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/BX8rNxYanxkfBtx3qvXZyL3UCjg0JYHW4t9I5-InyGo/rs:fit/g:sm/q:90/h:600/w:587/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE1MzMzMzE0/NTMtMzc1NC5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/BX8rNxYanxkfBtx3qvXZyL3UCjg0JYHW4t9I5-InyGo/rs:fit/g:sm/q:90/h:600/w:587/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE1MzMzMzE0/NTMtMzc1NC5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/YqB6zqurhefkngA-WizhAU_fcCyX6cw6DGMu4zPhGiw/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE1MzMzMzE0/NTItNDkzMy5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/YqB6zqurhefkngA-WizhAU_fcCyX6cw6DGMu4zPhGiw/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE1MzMzMzE0/NTItNDkzMy5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/HWPezj_2KIClm3bH93Q2h3EWg8zU-MTrkHFdQXMicHY/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE1MzMzMzE0/NTItMTcxNy5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/HWPezj_2KIClm3bH93Q2h3EWg8zU-MTrkHFdQXMicHY/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDc5/OTkyLTE1MzMzMzE0/NTItMTcxNy5qcGVn.jpeg"
+      }
+    ]
+  },
+  {
+    "key": "1988-a-paso-lento",
+    "type": "master",
+    "id": 2289250,
+    "label": "Karen KLP-119",
+    "title": "Dioni Fernández & El Equipo",
+    "year": 1988,
+    "main_release": 12113706,
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "El Cinturon Del Taxi",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Lo Llore",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Si No Te Hubieras Ido",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Pum, Pum Del Amor",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Casi Ya",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Yo Amo",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "O Me Voy, O Me Quedo",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Dame Mas",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "A Tu Lado O Al Lado De Ella",
+        "duration": ""
+      }
+    ],
+    "images": [
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/Kn1cB0asMcjDAe9OOHOkfVzqHMwAN4FBYl3HNnUbxA0/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMTEz/NzA2LTE1Mjg1NzI4/NTktMjU5Mi5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/Kn1cB0asMcjDAe9OOHOkfVzqHMwAN4FBYl3HNnUbxA0/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMTEz/NzA2LTE1Mjg1NzI4/NTktMjU5Mi5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/Qmq85z6hYTouPp62AYex6FbTfQzSUhFCT8Gd80qqB1E/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMTEz/NzA2LTE1Mjg1NzI4/NjEtODQ2Ni5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/Qmq85z6hYTouPp62AYex6FbTfQzSUhFCT8Gd80qqB1E/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMTEz/NzA2LTE1Mjg1NzI4/NjEtODQ2Ni5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/nznHFGcl5H5fbT2zeMe18IU_eOlcx5_xQlFOwaybJBI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMTEz/NzA2LTE1Mjg1NzI4/NjAtODY0MC5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/nznHFGcl5H5fbT2zeMe18IU_eOlcx5_xQlFOwaybJBI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMTEz/NzA2LTE1Mjg1NzI4/NjAtODY0MC5qcGVn.jpeg"
+      }
+    ]
+  },
+  {
+    "key": "1989-el-millonario",
+    "type": "master",
+    "id": 1772630,
+    "label": "Karen KLP-126",
+    "title": "El Millonario",
+    "year": 1988,
+    "main_release": 15627127,
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "El Millonario",
+        "duration": "4:25"
+      },
+      {
+        "position": "A2",
+        "title": "Hola, Como Estas?",
+        "duration": "4:55"
+      },
+      {
+        "position": "A3",
+        "title": "No Se Murio El Amor",
+        "duration": "5:32"
+      },
+      {
+        "position": "A4",
+        "title": "Mi Corazon",
+        "duration": "3:19"
+      },
+      {
+        "position": "B1",
+        "title": "Me Estremeces",
+        "duration": "4:18"
+      },
+      {
+        "position": "B2",
+        "title": "Recomencemos",
+        "duration": "4:53"
+      },
+      {
+        "position": "B3",
+        "title": "En Bancarrota",
+        "duration": "4:46"
+      },
+      {
+        "position": "B4",
+        "title": "La Bamba",
+        "duration": "4:42"
+      }
+    ],
+    "images": [
+      {
+        "type": "primary",
+        "uri": "https://i.discogs.com/F8aYHFAR5zkmE4x3Wl0gPCi3hfMaL8uHTQgFDoqRdv0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjI3/MTI3LTE2NDk0MTk3/OTEtNTI1NS5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/F8aYHFAR5zkmE4x3Wl0gPCi3hfMaL8uHTQgFDoqRdv0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjI3/MTI3LTE2NDk0MTk3/OTEtNTI1NS5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/MgBv9xxde3aiGfozJafLvaJllTJwbpIQWCjGdKO_OuE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjI3/MTI3LTE2NDk0MTk3/OTEtOTc2Ny5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/MgBv9xxde3aiGfozJafLvaJllTJwbpIQWCjGdKO_OuE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjI3/MTI3LTE2NDk0MTk3/OTEtOTc2Ny5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/oRfk0JL3MOkXglenfGsbckBCNkugs01zftBo1EvG4lM/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjI3/MTI3LTE1OTQ4MzA1/NDktMzM3MS5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/oRfk0JL3MOkXglenfGsbckBCNkugs01zftBo1EvG4lM/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjI3/MTI3LTE1OTQ4MzA1/NDktMzM3MS5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/t2WYgX962rKBqD2bNj5G1ECtm7cP4qTKYLEMu59nZGE/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjI3/MTI3LTE1OTQ4MzA1/NTQtNDQwMC5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/t2WYgX962rKBqD2bNj5G1ECtm7cP4qTKYLEMu59nZGE/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjI3/MTI3LTE1OTQ4MzA1/NTQtNDQwMC5qcGVn.jpeg"
+      }
+    ]
+  },
+  {
+    "key": "1990-el-equipo-1990",
+    "type": "release",
+    "id": 36342925,
+    "label": "Karen KLP-134",
+    "title": "El Equipo",
+    "year": 1990,
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Yo Quisiera",
+        "duration": ""
+      },
+      {
+        "position": "2",
+        "title": "Las Vencidas",
+        "duration": ""
+      },
+      {
+        "position": "3",
+        "title": "La Carta",
+        "duration": ""
+      },
+      {
+        "position": "4",
+        "title": "El Guardia (Del Arsenal)",
+        "duration": ""
+      },
+      {
+        "position": "5",
+        "title": "De La Noche A La Mañana",
+        "duration": ""
+      },
+      {
+        "position": "6",
+        "title": "Sinfonia De Amor",
+        "duration": ""
+      },
+      {
+        "position": "7",
+        "title": "La Integridad",
+        "duration": ""
+      },
+      {
+        "position": "8",
+        "title": "Te Llegará Mi Olvido",
+        "duration": ""
+      },
+      {
+        "position": "9",
+        "title": "Yo Te Amo Mas",
+        "duration": ""
+      },
+      {
+        "position": "10",
+        "title": "Acuerdate De Mi",
+        "duration": ""
+      }
+    ],
+    "images": [
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/BoCHFy8WL7gJTrKNZAsH3JWAoXnigA_KPKehujusHIw/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MzQy/OTI1LTE3Njk2MjY1/MDUtODYwMS5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/BoCHFy8WL7gJTrKNZAsH3JWAoXnigA_KPKehujusHIw/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MzQy/OTI1LTE3Njk2MjY1/MDUtODYwMS5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/AE8PHRJF5QcT9A565ASVwPkbeJ3HbxIvwrRKZyL7GHU/rs:fit/g:sm/q:90/h:463/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MzQy/OTI1LTE3Njk2MjY1/MjItMTk2Ni5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/AE8PHRJF5QcT9A565ASVwPkbeJ3HbxIvwrRKZyL7GHU/rs:fit/g:sm/q:90/h:463/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MzQy/OTI1LTE3Njk2MjY1/MjItMTk2Ni5qcGVn.jpeg"
+      }
+    ]
+  },
+  {
+    "key": "1991-dioni-fernandez",
+    "type": "master",
+    "id": 3000326,
+    "label": "Karen KLP-144",
+    "title": "Dioni Fernandez",
+    "year": 1991,
+    "main_release": 22806605,
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Por Retenerte",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "El Apretaito",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "La Pulla",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Escuchame",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "El Amor Es Como La Flor",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "De Ella Sola",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Tienes Tu",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Quiereme, Quiereme",
+        "duration": ""
+      }
+    ],
+    "images": [
+      {
+        "type": "primary",
+        "uri": "https://i.discogs.com/krpaYkvFP22ru567SYtcaE8eVbXyo-fC9JrHvi0HdcQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODA2/NjA1LTE2NDk0MjA2/MDAtNjMyMi5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/krpaYkvFP22ru567SYtcaE8eVbXyo-fC9JrHvi0HdcQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODA2/NjA1LTE2NDk0MjA2/MDAtNjMyMi5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/y_vPnqkhTxewtLid2-gyYeIL8FhzpicXVY3rXsKtVpM/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODA2/NjA1LTE2NDk0MjA1/OTgtNTg5MS5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/y_vPnqkhTxewtLid2-gyYeIL8FhzpicXVY3rXsKtVpM/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODA2/NjA1LTE2NDk0MjA1/OTgtNTg5MS5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/qd2Au-MKftibshwmC5eIhW_iA8OU73JVImAr341S0iU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODA2/NjA1LTE2NDk0MjA1/OTgtMjQ0My5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/qd2Au-MKftibshwmC5eIhW_iA8OU73JVImAr341S0iU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODA2/NjA1LTE2NDk0MjA1/OTgtMjQ0My5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/mgKGzQQSuqClqThrT34mJ4U3kXk_6nuURpoI4CxgR0g/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODA2/NjA1LTE2NDk0MjA1/OTktMTQ3Mi5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/mgKGzQQSuqClqThrT34mJ4U3kXk_6nuURpoI4CxgR0g/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODA2/NjA1LTE2NDk0MjA1/OTktMTQ3Mi5qcGVn.jpeg"
+      }
+    ]
+  },
+  {
+    "key": "1992-yo-soy-para-ti",
+    "type": "master",
+    "id": 2289256,
+    "label": "Karen",
+    "title": "Yo Soy Para Ti",
+    "year": 1992,
+    "main_release": 18448867,
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Yo Soy Para Ti",
+        "duration": ""
+      },
+      {
+        "position": "2",
+        "title": "A Veces",
+        "duration": ""
+      },
+      {
+        "position": "3",
+        "title": "No Te Vayas Ahora",
+        "duration": ""
+      },
+      {
+        "position": "4",
+        "title": "Me Hace Falta Ella",
+        "duration": ""
+      },
+      {
+        "position": "5",
+        "title": "Demasiado",
+        "duration": ""
+      },
+      {
+        "position": "6",
+        "title": "Habra Mas Tiempo",
+        "duration": ""
+      },
+      {
+        "position": "7",
+        "title": "Miel De Abejas",
+        "duration": ""
+      },
+      {
+        "position": "8",
+        "title": "Voy Pa'lla",
+        "duration": ""
+      },
+      {
+        "position": "9",
+        "title": "Me Moria Por Ella",
+        "duration": ""
+      },
+      {
+        "position": "10",
+        "title": "Y Pa' Que Me Quejo",
+        "duration": ""
+      }
+    ],
+    "images": [
+      {
+        "type": "primary",
+        "uri": "https://i.discogs.com/btrE_Pt3fro4GFwn2t5z43hBy1ZwaRBJImwcE6YR_xc/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NDQ4/ODY3LTE2MTkzMTc3/OTQtMzgwOC5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/btrE_Pt3fro4GFwn2t5z43hBy1ZwaRBJImwcE6YR_xc/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NDQ4/ODY3LTE2MTkzMTc3/OTQtMzgwOC5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/6uIVNsPHLOeqXTJec0SSegZONvc3DuqAXajZkgwdNWE/rs:fit/g:sm/q:90/h:570/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NDQ4/ODY3LTE2MTkzMTc3/OTQtNDg5NC5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/6uIVNsPHLOeqXTJec0SSegZONvc3DuqAXajZkgwdNWE/rs:fit/g:sm/q:90/h:570/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NDQ4/ODY3LTE2MTkzMTc3/OTQtNDg5NC5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/l9rA9tAH5uIM9LMLpeFsHS1AJmx_L_Xqvz4gMlZWdX0/rs:fit/g:sm/q:90/h:505/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NDQ4/ODY3LTE2MTkzMTc3/OTQtOTA4My5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/l9rA9tAH5uIM9LMLpeFsHS1AJmx_L_Xqvz4gMlZWdX0/rs:fit/g:sm/q:90/h:505/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NDQ4/ODY3LTE2MTkzMTc3/OTQtOTA4My5qcGVn.jpeg"
+      }
+    ]
+  },
+  {
+    "key": "1994-homenaje-julito",
+    "type": "release",
+    "id": 22050592,
+    "label": "Karen",
+    "title": "Homenaje A Julito Deschamps",
+    "year": 1994,
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Como Duele Una Traicion",
+        "duration": ""
+      },
+      {
+        "position": "2",
+        "title": "Que Me Importa",
+        "duration": ""
+      },
+      {
+        "position": "3",
+        "title": "Poquita Fe",
+        "duration": ""
+      },
+      {
+        "position": "4",
+        "title": "No Vale La Pena",
+        "duration": ""
+      },
+      {
+        "position": "5",
+        "title": "Traiconera",
+        "duration": ""
+      },
+      {
+        "position": "6",
+        "title": "Suplica",
+        "duration": ""
+      },
+      {
+        "position": "7",
+        "title": "Te Necesito",
+        "duration": ""
+      },
+      {
+        "position": "8",
+        "title": "Que Te Vaya Bien",
+        "duration": ""
+      },
+      {
+        "position": "9",
+        "title": "Yo Vivo Mi Vida",
+        "duration": ""
+      },
+      {
+        "position": "10",
+        "title": "Sera Muy Fácil",
+        "duration": ""
+      }
+    ],
+    "images": [
+      {
+        "type": "primary",
+        "uri": "https://i.discogs.com/cyG5HBQZhu2W0PX6tJ0vfIhzmFzPAGBMwHOdPyhxSRk/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NTkyLTE2NDQzNTQz/MjktNzg0My5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/cyG5HBQZhu2W0PX6tJ0vfIhzmFzPAGBMwHOdPyhxSRk/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NTkyLTE2NDQzNTQz/MjktNzg0My5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/TMlVOIfQrE1OooWHwn2wVcRni1sy5kQ3LDUPj0Mixko/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NTkyLTE2NDQzNTQz/MzItNDAyMC5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/TMlVOIfQrE1OooWHwn2wVcRni1sy5kQ3LDUPj0Mixko/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NTkyLTE2NDQzNTQz/MzItNDAyMC5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/I8_9_2Qn7JTR-Es5sUftD1VLUJYe5vsRQ7kWVZjlNZA/rs:fit/g:sm/q:90/h:511/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NTkyLTE2NDQzNTQz/MzUtNTY1MC5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/I8_9_2Qn7JTR-Es5sUftD1VLUJYe5vsRQ7kWVZjlNZA/rs:fit/g:sm/q:90/h:511/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NTkyLTE2NDQzNTQz/MzUtNTY1MC5qcGVn.jpeg"
+      }
+    ]
+  },
+  {
+    "key": "1994-la-gota-fria",
+    "type": "master",
+    "id": 3096678,
+    "label": "Karen",
+    "title": "La Gota Fria",
+    "year": 1994,
+    "main_release": 22050670,
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "La Gota Fria",
+        "duration": ""
+      },
+      {
+        "position": "2",
+        "title": "Volviendome Tu",
+        "duration": ""
+      },
+      {
+        "position": "3",
+        "title": "Que Manera De Quererte, Que Manera",
+        "duration": ""
+      },
+      {
+        "position": "4",
+        "title": "Tu Lo Mataste",
+        "duration": ""
+      },
+      {
+        "position": "5",
+        "title": "Amores Como El Nuestro",
+        "duration": ""
+      },
+      {
+        "position": "6",
+        "title": "Como Me Duele Amor",
+        "duration": ""
+      },
+      {
+        "position": "7",
+        "title": "La Cita",
+        "duration": ""
+      },
+      {
+        "position": "8",
+        "title": "La Fuentecita",
+        "duration": ""
+      },
+      {
+        "position": "9",
+        "title": "De Hoy A Mañana",
+        "duration": ""
+      },
+      {
+        "position": "10",
+        "title": "Loco De Amor",
+        "duration": ""
+      }
+    ],
+    "images": [
+      {
+        "type": "primary",
+        "uri": "https://i.discogs.com/haXJjCaYprvjzwNLUtAkLdYxSixKoOvoX7qejKwV_Nc/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NjcwLTE2NDQzNTQz/NzQtMTQ3My5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/haXJjCaYprvjzwNLUtAkLdYxSixKoOvoX7qejKwV_Nc/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NjcwLTE2NDQzNTQz/NzQtMTQ3My5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/vIf-5m80_JCpyVNBmOPKScbVQLlbQpEIhOvKq-qbSkw/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NjcwLTE2NDQzNTQz/NzgtNTQ4OC5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/vIf-5m80_JCpyVNBmOPKScbVQLlbQpEIhOvKq-qbSkw/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NjcwLTE2NDQzNTQz/NzgtNTQ4OC5qcGVn.jpeg"
+      },
+      {
+        "type": "secondary",
+        "uri": "https://i.discogs.com/Q1FGR_Ep-5DxTSGvHrtXUvMaTZfd5fOkk1C9xAexAm4/rs:fit/g:sm/q:90/h:513/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NjcwLTE2NDQzNTQz/ODEtNDQ0MS5qcGVn.jpeg",
+        "resource_url": "https://i.discogs.com/Q1FGR_Ep-5DxTSGvHrtXUvMaTZfd5fOkk1C9xAexAm4/rs:fit/g:sm/q:90/h:513/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NjcwLTE2NDQzNTQz/ODEtNDQ0MS5qcGVn.jpeg"
+      }
+    ]
+  }
+]

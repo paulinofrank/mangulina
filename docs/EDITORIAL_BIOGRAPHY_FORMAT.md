@@ -45,6 +45,12 @@ endpoints, not the artist record.
 
 A unique index enforces one document per `(document_type, owner_artist_id, locale)`.
 
+### Draft artist, published biographies — editor clarification, 2026-10-16
+
+For an authorized artist-profile creation or completion, keep the artist record in `draft`, but publish both completed, validated biography documents (`en` and `es`). Use `draft` documents while writing or resolving validation issues; it is not the final state for a finished biography attached to a draft artist. This is covered by the profile-workflow exception in discography.md, Gate B, without another approval step. It does not authorize publishing the artist profile or changing biographies of an already public artist without authorization.
+
+The public artist route first requires a published artist through `getArtistProfile` in `src/lib/artistApi.ts`. It then loads only published biography documents through `src/lib/editorial/publicData.ts`. A published biography therefore does not release a draft artist profile, and leaving a completed biography in draft would prevent it appearing when the artist is later published. Verify the artist remains draft and both biography documents are published after saving. This describes profile-page visibility, not a security guarantee for every data-access channel.
+
 ---
 
 ## Formatting Rules
@@ -134,6 +140,15 @@ Three things stay outside the rule:
 Entries written before this rule was adopted use plain text or straight
 quotes and are being retrofitted; they are legacy, not a precedent.
 
+### Rule 4c: Collective names are not type labels
+
+Do not add a generic word such as «Orquesta», «Grupo», «Banda» or «Conjunto»
+to a collective artist's name merely to describe its type. Use the documented
+canonical name exactly as stored. Retain the word only when reliable evidence
+shows that it is part of the proper name—for example, «Orquesta Internacional»
+associated with Ramón Orlando. The artist type belongs in the profile fields;
+the biography and every `artistReference` must use the canonical proper name.
+
 ### Rule 5: Both locales
 
 Write `en` and `es`. The Spanish version is an independent piece of writing, not
@@ -195,6 +210,70 @@ the prose.
 **Link reciprocally.** When creating an artist who is mentioned in an existing
 biography, update that biography to link the new artist.
 
+### Required backward-reference audit — editor clarification, 2026-10-24
+
+Creating or completing an artist is not finished after checking only that
+artist's own biography. Search existing English and Spanish structured
+biographies for the artist's canonical name and documented name variants,
+including mentions surrounded by guillemets and plain-text mentions. Search
+legacy biography mirrors only to identify missing structured-document coverage;
+do not edit the mirrors directly. Do not rely on conversation memory or an
+integrity report: a plain-text mention may pass structural validation while
+still missing its artist reference.
+
+For each candidate, inspect the surrounding text and confirm identity; name
+matching alone never authorizes linking. Record the owner artist UUID, document
+UUID, locale, revision, target artist UUID, exact mention and proposed change.
+Where the existing task authorizes those document edits, replace only the
+verified mention with an artistReference, use the canonical display name and a
+fresh occurrenceId, and save through the editorial lifecycle so its relation row
+and compatibility mirror remain synchronized. Remove surrounding guillemets
+from the artist mention; preserve the surrounding prose and existing references.
+Do not invent a reciprocal sentence or a collaboration merely to create links.
+
+This audit is required at both draft completion and authorized artist
+publication. Draft status does not authorize publishing another artist's
+biography or exposing a draft target through a public link. Preserve existing
+publication and shared-record gates: if a verified repair lies outside the
+authorized scope, list the exact pending documents and required authorization
+in the completion report. Never silently omit the finding or describe the
+catalog's reciprocal links as complete. Once authorized, verify both locales,
+reference relations, revision increments and the affected published pages;
+perform only the existing targeted cache refresh for the actual changed owners.
+
+Example: after adding Martox, inspect Solo Fernández's existing biographies.
+Their literal «Martox» mentions must be evaluated for conversion to the Martox
+identity; a correct Solo Fernández reference in Martox's biography does not
+complete this backward check.
+
+### Efficient link-only updates — 2026-11-14
+
+For several approved mentions in one biography, load its latest structured
+document and revision once, apply all verified replacements in memory, and save
+the document **once per artist and locale**. Preserve every existing block,
+mark, reference target and occurrence ID; give each new `artistReference` a
+fresh occurrence ID. Compare the proposed document with the saved version and
+skip an identical write. A name match is only a candidate: the identity and
+context checks above still apply to each occurrence.
+
+Use the authenticated editorial save lifecycle (`POST
+/api/admin/editorial-documents`, or the admin editor that calls it) with
+`expectedRevision` and the approved status. That route validates the JSON,
+uses the atomic `upsert_editorial_document` operation for document and derived
+reference rows, and revalidates the affected owner's profile. Do not write
+`editorial_documents` or `editorial_entity_references` with raw SQL merely to
+avoid editor clicks; those writes bypass the save lifecycle and cache refresh.
+If a programmatic authenticated caller is unavailable, paste the prepared
+structured content and save once per locale in the admin editor rather than
+editing and saving each mention separately. Never extract browser credentials
+to make a batch script work.
+
+Keep one writer, a finite approved document list and request cap. Stop on a
+revision conflict, reload that document and reconcile before retrying. After
+the final save, verify revision increments, reference-node/relation parity and
+only the affected public pages. This method changes execution cost, not the
+publication, shared-record or evidence gates.
+
 ---
 
 ## The Legacy Markdown Mirror
@@ -208,6 +287,14 @@ biography, update that biography to link the new artist.
 
 This is not the flattened plain text of the document. Writing the flattened form
 instead produces a wrong-looking legacy column.
+
+When adding only `artistReference` links, first check whether the visible text
+changes. If it does not, preserve the full Markdown mirror; do not rebuild it
+with a paragraph-only serializer that drops `bulletList`, numbered lists or
+other nested blocks. If the visible text changes, generate the mirror with a
+serializer that preserves every block type and inspect the ends of lists before
+publication. Save the document and its mirror together when a mirror update is
+needed.
 
 Keeping the mirror in sync is what prevents the `missing_document` blocking
 finding (legacy populated, no document). A wording drift between the two only
@@ -236,6 +323,19 @@ biography done, confirm:
 ---
 
 ## Field Hygiene on the Artist Record
+
+**Editor clarification, 2026-10-19 — Origin is a city.** Never put
+«República Dominicana», «Dominican Republic», or another country in Origin.
+Mangulina documents Dominican artists; this field is not a nationality field.
+Leave it empty when the city is unverified. For Dominican artists born abroad,
+record the verified birth city and select **Born Abroad** for Province (the
+current form's equivalent option is **Nacido en el Exterior**). Foreign residence
+alone does not establish foreign birth. For individuals, keep birthplace and
+hometown distinct; for collectives, the current Origin control stores the
+documented origin city in `birth_place`. Follow
+[ARTIST_PROFILE_WORKFLOW.md](ARTIST_PROFILE_WORKFLOW.md) for evidence and current
+form-compatible values. This instruction does not authorize edits to existing
+artist records as a side effect of documentation work.
 
 Do not repeat a value across a scalar column and its list column:
 

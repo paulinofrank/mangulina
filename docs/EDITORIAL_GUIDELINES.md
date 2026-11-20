@@ -74,6 +74,17 @@ An artist is Dominican if they meet **at least one** of these criteria:
 
 **Principle:** Preserve how artists are credited while maintaining editorial clarity.
 
+**Personal names and stage names (editor clarification, 2026-10-19):** A stage
+name may use a person's second surname, first surname, middle name or another
+documented form. This does not contradict their full personal name. Preserve
+the sourced personal-name order, populate its corresponding fields when
+established, and keep the professional name separately. An alias does not
+replace personal-name fields. For example, José Miguel Vásquez Lacay has Last
+Name Vásquez and Second Last Name Lacay while performing as José Lacay, as
+explicitly clarified by the editor. Evaluate actual source conflicts, not
+assumptions about which surname an artist ought to use. All assistants must
+follow [ARTIST_PROFILE_WORKFLOW.md](ARTIST_PROFILE_WORKFLOW.md) for this procedure.
+
 **Decision Matrix:**
 
 | Situation | Action | Example |
@@ -183,9 +194,9 @@ An artist is Dominican if they meet **at least one** of these criteria:
 
 ## Genre and Category Assignment
 
-**Principle:** Use the frozen genre taxonomy. Do not invent new genres.
+**Principle:** Use the frozen genre taxonomy from the `genres` table. Never invent new genres or subgenres (for example, «merengue jocoso» does not exist in Mangulina and must never be used). If a genre or subgenre is not in the database, do not create or invent it: ask the editor.
 
-**Current taxonomy:** See [ROLE_DICTIONARY.md](ROLE_DICTIONARY.md) (genre section)
+**Current taxonomy:** See the `genres` table in the database and [ROLE_DICTIONARY.md](ROLE_DICTIONARY.md).
 
 **When a song doesn't fit existing genres:**
 1. Choose the closest existing genre

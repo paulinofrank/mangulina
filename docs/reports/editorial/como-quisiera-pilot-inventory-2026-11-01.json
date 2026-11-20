@@ -1,0 +1,4212 @@
+{
+  "links": [
+    {
+      "id": "61d6ade6-a87c-455a-99c3-923cb4838aee",
+      "url": "https://www.deezer.com/track/1857083507",
+      "label": "Deezer",
+      "source": "deezer_search",
+      "status": "approved_auto",
+      "platform": "deezer",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T10:31:51.926+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T10:31:51.41896+00:00",
+      "updated_at": "2026-06-03T10:31:51.926+00:00",
+      "external_id": "1857083507",
+      "is_official": true,
+      "title_found": "Porque Te Quiero",
+      "artist_found": "Alex Bueno",
+      "recording_id": "a40ba5e9-f62b-49a0-a85a-93114ba484de",
+      "display_order": 5
+    },
+    {
+      "id": "927165d7-5c0a-443f-a006-0084dce5fd38",
+      "url": "https://www.youtube.com/watch?v=uYdF2uBiyvk",
+      "label": "YouTube",
+      "source": "youtube_isrc_search",
+      "status": "approved_auto",
+      "platform": "youtube",
+      "link_type": "video",
+      "checked_at": "2026-06-03T21:49:57.452+00:00",
+      "confidence": 0.932,
+      "created_at": "2026-06-03T21:49:57.098386+00:00",
+      "updated_at": "2026-06-03T21:49:57.452+00:00",
+      "external_id": "uYdF2uBiyvk",
+      "is_official": true,
+      "title_found": "Porque Te Quiero",
+      "artist_found": "Alex Bueno - Topic",
+      "recording_id": "a40ba5e9-f62b-49a0-a85a-93114ba484de",
+      "display_order": 2
+    },
+    {
+      "id": "97c19289-d4a0-4b49-a36d-4bf892efe5d0",
+      "url": "https://music.apple.com/us/album/porque-te-quiero/1526577380?i=1526577392&uo=4",
+      "label": "Apple Music",
+      "source": "itunes_search",
+      "status": "approved_auto",
+      "platform": "apple_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-04T07:53:56.591+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-04T07:53:56.411434+00:00",
+      "updated_at": "2026-06-04T07:53:56.591+00:00",
+      "external_id": "1526577392",
+      "is_official": true,
+      "title_found": "Porque Te Quiero",
+      "artist_found": "Alex Bueno & Andres De Jesus",
+      "recording_id": "a40ba5e9-f62b-49a0-a85a-93114ba484de",
+      "display_order": 3
+    },
+    {
+      "id": "4a8af3a7-11a2-48c9-8715-8413324a1db7",
+      "url": "https://open.spotify.com/track/0m85dExmLEnMOvYP1yYqFz",
+      "label": "Spotify",
+      "source": "spotify_search",
+      "status": "approved_auto",
+      "platform": "spotify",
+      "link_type": "stream",
+      "checked_at": "2026-06-15T01:22:10.485+00:00",
+      "confidence": 0.9904000000000001,
+      "created_at": "2026-06-15T01:22:11.632782+00:00",
+      "updated_at": "2026-06-15T01:22:10.485+00:00",
+      "external_id": "0m85dExmLEnMOvYP1yYqFz",
+      "is_official": true,
+      "title_found": "Porque Te Quiero",
+      "artist_found": "Alex Bueno, Andres De Jesus",
+      "recording_id": "a40ba5e9-f62b-49a0-a85a-93114ba484de",
+      "display_order": 1
+    },
+    {
+      "id": "59feb7f5-0771-4d0f-91f6-9709c952ca69",
+      "url": "https://www.deezer.com/track/1857083497",
+      "label": "Deezer",
+      "source": "deezer_search",
+      "status": "approved_auto",
+      "platform": "deezer",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T05:51:30.755+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T05:51:30.657957+00:00",
+      "updated_at": "2026-06-03T05:51:30.755+00:00",
+      "external_id": "1857083497",
+      "is_official": true,
+      "title_found": "El Sacrificio",
+      "artist_found": "Alex Bueno",
+      "recording_id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "display_order": 5
+    },
+    {
+      "id": "5c693dff-74d9-4574-87b4-231e9970fd06",
+      "url": "https://www.youtube.com/watch?v=Hh-eExH5g18",
+      "label": "YouTube",
+      "source": "youtube_isrc_search",
+      "status": "approved_auto",
+      "platform": "youtube",
+      "link_type": "video",
+      "checked_at": "2026-06-03T21:36:04.906+00:00",
+      "confidence": 0.9620000000000001,
+      "created_at": "2026-06-03T21:36:04.552681+00:00",
+      "updated_at": "2026-06-03T21:36:04.906+00:00",
+      "external_id": "Hh-eExH5g18",
+      "is_official": true,
+      "title_found": "El Sacrificio",
+      "artist_found": "Alex Bueno - Topic",
+      "recording_id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "display_order": 2
+    },
+    {
+      "id": "551b9f90-c913-4171-b731-500ae99e779a",
+      "url": "https://music.apple.com/us/album/el-sacrificio/1526577380?i=1526577388&uo=4",
+      "label": "Apple Music",
+      "source": "itunes_search",
+      "status": "approved_auto",
+      "platform": "apple_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-04T05:07:37.174+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-04T05:07:36.954278+00:00",
+      "updated_at": "2026-06-04T05:07:37.174+00:00",
+      "external_id": "1526577388",
+      "is_official": true,
+      "title_found": "El Sacrificio",
+      "artist_found": "Alex Bueno & Andres De Jesus",
+      "recording_id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "display_order": 3
+    },
+    {
+      "id": "1d26e0dc-f834-48ee-9f67-420bdbcc1738",
+      "url": "https://open.spotify.com/track/6nPHmftGp4fAoKwc6ppK6E",
+      "label": "Spotify",
+      "source": "spotify_search",
+      "status": "approved_auto",
+      "platform": "spotify",
+      "link_type": "stream",
+      "checked_at": "2026-06-12T12:38:47.563+00:00",
+      "confidence": 0.9904000000000001,
+      "created_at": "2026-06-12T12:38:48.368617+00:00",
+      "updated_at": "2026-06-12T12:38:47.563+00:00",
+      "external_id": "6nPHmftGp4fAoKwc6ppK6E",
+      "is_official": true,
+      "title_found": "El Sacrificio",
+      "artist_found": "Alex Bueno, Andres De Jesus",
+      "recording_id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "display_order": 1
+    },
+    {
+      "id": "5c488aef-6d18-456e-a04e-2acae29cf8d8",
+      "url": "https://music.amazon.com/albums/B08FC79ZPH?trackAsin=B08FC84HLS",
+      "label": "Amazon Music",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "amazon_music",
+      "link_type": "stream",
+      "checked_at": "2026-07-01T22:26:40.056+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-07-01T22:26:40.265252+00:00",
+      "updated_at": "2026-07-01T22:26:40.056+00:00",
+      "external_id": "B08FC84HLS",
+      "is_official": true,
+      "title_found": "El Sacrificio",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "display_order": 5
+    },
+    {
+      "id": "edf03399-64e4-4a0c-be5b-ab06097caa81",
+      "url": "https://listen.tidal.com/track/241905814",
+      "label": "TIDAL",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "tidal",
+      "link_type": "stream",
+      "checked_at": "2026-07-01T22:26:40.698+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-07-01T22:26:40.902627+00:00",
+      "updated_at": "2026-07-01T22:26:40.698+00:00",
+      "external_id": "241905814",
+      "is_official": true,
+      "title_found": "El Sacrificio",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "display_order": 6
+    },
+    {
+      "id": "7a4363a6-d3ab-47a8-b1a6-718493cc88cf",
+      "url": "https://www.deezer.com/track/1857083527",
+      "label": "Deezer",
+      "source": "deezer_search",
+      "status": "approved_auto",
+      "platform": "deezer",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T12:50:49.952+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T12:50:49.475291+00:00",
+      "updated_at": "2026-06-03T12:50:49.952+00:00",
+      "external_id": "1857083527",
+      "is_official": true,
+      "title_found": "Las Locas",
+      "artist_found": "Alex Bueno",
+      "recording_id": "f693f654-3c95-4155-82b8-b22be3e8bff0",
+      "display_order": 5
+    },
+    {
+      "id": "a6af6292-ec52-4498-95c9-f2918923e684",
+      "url": "https://music.apple.com/us/album/las-locas/1526577380?i=1526577616&uo=4",
+      "label": "Apple Music",
+      "source": "itunes_search",
+      "status": "approved_auto",
+      "platform": "apple_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-04T12:52:43.468+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-04T12:52:43.370978+00:00",
+      "updated_at": "2026-06-04T12:52:43.468+00:00",
+      "external_id": "1526577616",
+      "is_official": true,
+      "title_found": "Las Locas",
+      "artist_found": "Alex Bueno & Andres De Jesus",
+      "recording_id": "f693f654-3c95-4155-82b8-b22be3e8bff0",
+      "display_order": 3
+    },
+    {
+      "id": "dfdfa8bb-8714-44f9-bd2c-2db27a560e9e",
+      "url": "https://open.spotify.com/track/2YplMhyj8LuoZIfGELHhSC",
+      "label": "Spotify",
+      "source": "spotify_search",
+      "status": "approved_auto",
+      "platform": "spotify",
+      "link_type": "stream",
+      "checked_at": "2026-06-18T03:45:06.781+00:00",
+      "confidence": 0.9904000000000001,
+      "created_at": "2026-06-18T03:45:05.154399+00:00",
+      "updated_at": "2026-06-18T03:45:06.781+00:00",
+      "external_id": "2YplMhyj8LuoZIfGELHhSC",
+      "is_official": true,
+      "title_found": "Las Locas",
+      "artist_found": "Alex Bueno, Andres De Jesus",
+      "recording_id": "f693f654-3c95-4155-82b8-b22be3e8bff0",
+      "display_order": 1
+    },
+    {
+      "id": "225e9af2-64f5-4c18-a7bd-3c1b10c190c0",
+      "url": "https://listen.tidal.com/track/241905817",
+      "label": "TIDAL",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "tidal",
+      "link_type": "stream",
+      "checked_at": "2026-06-27T22:18:49.937+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-27T22:18:50.172744+00:00",
+      "updated_at": "2026-06-27T22:18:49.937+00:00",
+      "external_id": "241905817",
+      "is_official": true,
+      "title_found": "Las Locas",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "f693f654-3c95-4155-82b8-b22be3e8bff0",
+      "display_order": 6
+    },
+    {
+      "id": "3f981555-aee5-4057-9876-51b98978a393",
+      "url": "https://www.deezer.com/track/1857083527",
+      "label": "Deezer",
+      "source": "deezer_search",
+      "status": "approved_auto",
+      "platform": "deezer",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T05:45:47.886+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T05:45:47.779319+00:00",
+      "updated_at": "2026-06-03T05:45:47.886+00:00",
+      "external_id": "1857083527",
+      "is_official": true,
+      "title_found": "Las Locas",
+      "artist_found": "Alex Bueno",
+      "recording_id": "749d20c1-4ecf-480d-aeab-a45e42d83cd2",
+      "display_order": 5
+    },
+    {
+      "id": "6e04a684-e1b5-48f9-9cf9-8ba0b5f0c2a6",
+      "url": "https://music.apple.com/us/album/las-locas/1526577380?i=1526577616&uo=4",
+      "label": "Apple Music",
+      "source": "itunes_search",
+      "status": "approved_auto",
+      "platform": "apple_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-04T04:55:13.829+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-04T04:55:13.602583+00:00",
+      "updated_at": "2026-06-04T04:55:13.829+00:00",
+      "external_id": "1526577616",
+      "is_official": true,
+      "title_found": "Las Locas",
+      "artist_found": "Alex Bueno & Andres De Jesus",
+      "recording_id": "749d20c1-4ecf-480d-aeab-a45e42d83cd2",
+      "display_order": 3
+    },
+    {
+      "id": "913ce7b0-1eb1-4cb2-a1f5-33376b03f0f3",
+      "url": "https://open.spotify.com/track/2YplMhyj8LuoZIfGELHhSC",
+      "label": "Spotify",
+      "source": "spotify_search",
+      "status": "approved_auto",
+      "platform": "spotify",
+      "link_type": "stream",
+      "checked_at": "2026-06-12T12:14:28.627+00:00",
+      "confidence": 0.9904000000000001,
+      "created_at": "2026-06-12T12:14:29.431361+00:00",
+      "updated_at": "2026-06-12T12:14:28.627+00:00",
+      "external_id": "2YplMhyj8LuoZIfGELHhSC",
+      "is_official": true,
+      "title_found": "Las Locas",
+      "artist_found": "Alex Bueno, Andres De Jesus",
+      "recording_id": "749d20c1-4ecf-480d-aeab-a45e42d83cd2",
+      "display_order": 1
+    },
+    {
+      "id": "e8bfddb8-8240-45fa-866b-5d3e1ec0b1f4",
+      "url": "https://www.youtube.com/watch?v=hq_y-4wd1Ps",
+      "label": "YouTube",
+      "source": "youtube_text_search",
+      "status": "needs_review",
+      "platform": "youtube",
+      "link_type": "video",
+      "checked_at": "2026-06-19T12:20:41.519+00:00",
+      "confidence": 0.8320000000000001,
+      "created_at": "2026-06-19T12:20:41.686067+00:00",
+      "updated_at": "2026-06-19T12:20:41.519+00:00",
+      "external_id": "hq_y-4wd1Ps",
+      "is_official": true,
+      "title_found": "Las Locas",
+      "artist_found": "Alex Bueno - Topic",
+      "recording_id": "749d20c1-4ecf-480d-aeab-a45e42d83cd2",
+      "display_order": 2
+    },
+    {
+      "id": "3bda9468-c5e3-45f3-8d53-7667aab03394",
+      "url": "https://listen.tidal.com/track/241905817",
+      "label": "TIDAL",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "tidal",
+      "link_type": "stream",
+      "checked_at": "2026-07-01T16:48:37.682+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-07-01T16:48:37.884296+00:00",
+      "updated_at": "2026-07-01T16:48:37.682+00:00",
+      "external_id": "241905817",
+      "is_official": true,
+      "title_found": "Las Locas",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "749d20c1-4ecf-480d-aeab-a45e42d83cd2",
+      "display_order": 6
+    },
+    {
+      "id": "80bc2800-31e6-4124-80af-6703be0678ce",
+      "url": "https://www.deezer.com/track/1857083517",
+      "label": "Deezer",
+      "source": "deezer_search",
+      "status": "approved_auto",
+      "platform": "deezer",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T09:52:07.04+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T09:52:06.517641+00:00",
+      "updated_at": "2026-06-03T09:52:07.04+00:00",
+      "external_id": "1857083517",
+      "is_official": true,
+      "title_found": "Y Cómo Es Él",
+      "artist_found": "Alex Bueno",
+      "recording_id": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "display_order": 5
+    },
+    {
+      "id": "7f817799-75f5-4568-9ec8-a7e884e0c682",
+      "url": "https://music.apple.com/us/album/y-c%C3%B3mo-es-%C3%A9l/1526556581?i=1526556599&uo=4",
+      "label": "Apple Music",
+      "source": "itunes_search",
+      "status": "approved_auto",
+      "platform": "apple_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-04T06:27:26.927+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-04T06:27:26.789968+00:00",
+      "updated_at": "2026-06-04T06:27:26.927+00:00",
+      "external_id": "1526556599",
+      "is_official": true,
+      "title_found": "¿Y Cómo Es Él?",
+      "artist_found": "Alex Bueno & Orquesta Liberación",
+      "recording_id": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "display_order": 3
+    },
+    {
+      "id": "0d2d5529-9630-479c-abea-3fb61660c60a",
+      "url": "https://open.spotify.com/track/2VAtWtlPxmrX6MarG21Mpu",
+      "label": "Spotify",
+      "source": "spotify_search",
+      "status": "approved_auto",
+      "platform": "spotify",
+      "link_type": "stream",
+      "checked_at": "2026-06-14T01:16:57.414+00:00",
+      "confidence": 0.9904000000000001,
+      "created_at": "2026-06-14T01:16:57.944555+00:00",
+      "updated_at": "2026-06-14T01:16:57.414+00:00",
+      "external_id": "2VAtWtlPxmrX6MarG21Mpu",
+      "is_official": true,
+      "title_found": "Y Cómo Es Él",
+      "artist_found": "Alex Bueno, Andres De Jesus",
+      "recording_id": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "display_order": 1
+    },
+    {
+      "id": "948f5ee4-72eb-4fcb-ab44-d31a3bdbb2db",
+      "url": "https://www.youtube.com/watch?v=NlLsjzhnIgQ",
+      "label": "YouTube",
+      "source": "youtube_text_search",
+      "status": "needs_review",
+      "platform": "youtube",
+      "link_type": "video",
+      "checked_at": "2026-06-19T13:13:28.75+00:00",
+      "confidence": 0.8320000000000001,
+      "created_at": "2026-06-19T13:13:29.021948+00:00",
+      "updated_at": "2026-06-19T13:13:28.75+00:00",
+      "external_id": "NlLsjzhnIgQ",
+      "is_official": true,
+      "title_found": "Y Cómo Es Él",
+      "artist_found": "Alex Bueno - Topic",
+      "recording_id": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "display_order": 2
+    },
+    {
+      "id": "9cec032a-6db2-45d4-8a85-2897a859850e",
+      "url": "https://www.pandora.com/TR:34631006",
+      "label": "Pandora",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "pandora",
+      "link_type": "stream",
+      "checked_at": "2026-06-20T04:08:51.043+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-20T04:08:51.326473+00:00",
+      "updated_at": "2026-06-20T04:08:51.043+00:00",
+      "external_id": "TR:34631006",
+      "is_official": true,
+      "title_found": "Y Cómo Es Él",
+      "artist_found": "Alex Bueno & Orquesta Liberación",
+      "recording_id": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "display_order": 7
+    },
+    {
+      "id": "c47dcfae-ee0a-421e-9823-4edb286c54df",
+      "url": "https://www.boomplay.com/songs/42231741",
+      "label": "Boomplay",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "boomplay",
+      "link_type": "stream",
+      "checked_at": "2026-06-20T04:08:51.317+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-20T04:08:51.610076+00:00",
+      "updated_at": "2026-06-20T04:08:51.317+00:00",
+      "external_id": "42231741",
+      "is_official": true,
+      "title_found": "Y Cómo Es Él ft. Orquesta Liberación",
+      "artist_found": "Alex Bueno",
+      "recording_id": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "display_order": 9
+    },
+    {
+      "id": "5e12737f-b4e0-4196-92a3-e01daea1167f",
+      "url": "https://listen.tidal.com/track/151130869",
+      "label": "TIDAL",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "tidal",
+      "link_type": "stream",
+      "checked_at": "2026-06-20T04:08:50.771+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-20T04:08:51.057552+00:00",
+      "updated_at": "2026-06-20T04:08:50.771+00:00",
+      "external_id": "151130869",
+      "is_official": true,
+      "title_found": "Y Cómo Es Él",
+      "artist_found": "Alex Bueno, Orquesta Liberación",
+      "recording_id": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "display_order": 6
+    },
+    {
+      "id": "6b5db86e-0fa6-48bb-a697-58a8d407ce08",
+      "url": "https://www.deezer.com/track/1857083537",
+      "label": "Deezer",
+      "source": "deezer_search",
+      "status": "approved_auto",
+      "platform": "deezer",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T12:27:46.145+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T12:27:45.669396+00:00",
+      "updated_at": "2026-06-03T12:27:46.145+00:00",
+      "external_id": "1857083537",
+      "is_official": true,
+      "title_found": "Sigue Tu vida",
+      "artist_found": "Alex Bueno",
+      "recording_id": "e89938f0-cec1-4551-95c6-b5070541a66e",
+      "display_order": 5
+    },
+    {
+      "id": "f292aa8b-15b1-4a32-8f1b-ffae880dd21b",
+      "url": "https://music.apple.com/us/album/sigue-tu-vida/1526577380?i=1526577619&uo=4",
+      "label": "Apple Music",
+      "source": "itunes_search",
+      "status": "approved_auto",
+      "platform": "apple_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-04T12:03:20.84+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-04T12:03:20.773138+00:00",
+      "updated_at": "2026-06-04T12:03:20.84+00:00",
+      "external_id": "1526577619",
+      "is_official": true,
+      "title_found": "Sigue Tu vida",
+      "artist_found": "Alex Bueno & Andres De Jesus",
+      "recording_id": "e89938f0-cec1-4551-95c6-b5070541a66e",
+      "display_order": 3
+    },
+    {
+      "id": "2fc08aac-bbbf-49b2-a17e-6aabc119f54f",
+      "url": "https://open.spotify.com/track/5kP9Us3GodbMwBAhicnefc",
+      "label": "Spotify",
+      "source": "spotify_search",
+      "status": "approved_auto",
+      "platform": "spotify",
+      "link_type": "stream",
+      "checked_at": "2026-06-17T10:59:52.841+00:00",
+      "confidence": 0.9904000000000001,
+      "created_at": "2026-06-17T10:59:53.500114+00:00",
+      "updated_at": "2026-06-17T10:59:52.841+00:00",
+      "external_id": "5kP9Us3GodbMwBAhicnefc",
+      "is_official": true,
+      "title_found": "Sigue Tu vida",
+      "artist_found": "Alex Bueno, Andres De Jesus",
+      "recording_id": "e89938f0-cec1-4551-95c6-b5070541a66e",
+      "display_order": 1
+    },
+    {
+      "id": "932ca90c-8fba-442e-9283-24af5dffe929",
+      "url": "https://www.youtube.com/watch?v=qRo9rlYQgO0",
+      "label": "YouTube",
+      "source": "youtube_text_search",
+      "status": "needs_review",
+      "platform": "youtube",
+      "link_type": "video",
+      "checked_at": "2026-06-22T22:09:32.173+00:00",
+      "confidence": 0.8320000000000001,
+      "created_at": "2026-06-22T22:09:32.33736+00:00",
+      "updated_at": "2026-06-22T22:09:32.173+00:00",
+      "external_id": "qRo9rlYQgO0",
+      "is_official": true,
+      "title_found": "Sigue Tu vida",
+      "artist_found": "Alex Bueno - Topic",
+      "recording_id": "e89938f0-cec1-4551-95c6-b5070541a66e",
+      "display_order": 2
+    },
+    {
+      "id": "25e3eefa-50b6-4645-9d9a-ea94469313be",
+      "url": "https://listen.tidal.com/track/241905818",
+      "label": "TIDAL",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "tidal",
+      "link_type": "stream",
+      "checked_at": "2026-06-27T01:30:12.297+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-27T01:30:12.634286+00:00",
+      "updated_at": "2026-06-27T01:30:12.297+00:00",
+      "external_id": "241905818",
+      "is_official": true,
+      "title_found": "Sigue Tu vida",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "e89938f0-cec1-4551-95c6-b5070541a66e",
+      "display_order": 6
+    },
+    {
+      "id": "e9bbd061-8960-4224-bd5c-14f0b5ac7aa9",
+      "url": "https://www.deezer.com/track/1857083487",
+      "label": "Deezer",
+      "source": "deezer_search",
+      "status": "approved_auto",
+      "platform": "deezer",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T03:18:30.626+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T03:18:30.480444+00:00",
+      "updated_at": "2026-06-03T03:18:30.626+00:00",
+      "external_id": "1857083487",
+      "is_official": true,
+      "title_found": "Tengo Miedo",
+      "artist_found": "Alex Bueno",
+      "recording_id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "display_order": 5
+    },
+    {
+      "id": "8ebe67cf-57e5-4a58-85be-49acb7c4964e",
+      "url": "https://www.youtube.com/watch?v=tE4HfdF2tOQ",
+      "label": "YouTube",
+      "source": "youtube_isrc_search",
+      "status": "approved_auto",
+      "platform": "youtube",
+      "link_type": "video",
+      "checked_at": "2026-06-03T20:15:09.513+00:00",
+      "confidence": 0.932,
+      "created_at": "2026-06-03T20:15:09.140318+00:00",
+      "updated_at": "2026-06-03T20:15:09.513+00:00",
+      "external_id": "tE4HfdF2tOQ",
+      "is_official": true,
+      "title_found": "Tengo Miedo",
+      "artist_found": "Alex Bueno - Topic",
+      "recording_id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "display_order": 2
+    },
+    {
+      "id": "fbd90858-01b6-4405-956a-217fd1cb41ae",
+      "url": "https://music.apple.com/us/album/tengo-miedo/1526577380?i=1526577387&uo=4",
+      "label": "Apple Music",
+      "source": "itunes_search",
+      "status": "approved_auto",
+      "platform": "apple_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T23:36:18.431+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T23:36:18.114089+00:00",
+      "updated_at": "2026-06-03T23:36:18.431+00:00",
+      "external_id": "1526577387",
+      "is_official": true,
+      "title_found": "Tengo Miedo",
+      "artist_found": "Alex Bueno & Andres De Jesus",
+      "recording_id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "display_order": 3
+    },
+    {
+      "id": "ad902010-c005-4c84-8d02-440b980bc64e",
+      "url": "https://listen.tidal.com/track/241905813",
+      "label": "TIDAL",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "tidal",
+      "link_type": "stream",
+      "checked_at": "2026-06-07T21:25:48.975+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-07T21:25:43.819107+00:00",
+      "updated_at": "2026-06-07T21:25:48.975+00:00",
+      "external_id": "241905813",
+      "is_official": true,
+      "title_found": "Tengo Miedo",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "display_order": 6
+    },
+    {
+      "id": "8effd3fd-16d5-4660-ab52-8fb5080fa08f",
+      "url": "https://music.amazon.com/albums/B08FC79ZPH?trackAsin=B08FC8286J",
+      "label": "Amazon Music",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "amazon_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-07T21:25:48.639+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-07T21:25:43.600523+00:00",
+      "updated_at": "2026-06-07T21:25:48.639+00:00",
+      "external_id": "B08FC8286J",
+      "is_official": true,
+      "title_found": "Tengo Miedo",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "display_order": 5
+    },
+    {
+      "id": "121be662-4064-4252-a4bc-731d23d77018",
+      "url": "https://open.spotify.com/track/0RjesAjol671YO4iBSnMUQ",
+      "label": "Spotify",
+      "source": "spotify_search",
+      "status": "approved_auto",
+      "platform": "spotify",
+      "link_type": "stream",
+      "checked_at": "2026-06-07T03:06:06.908+00:00",
+      "confidence": 0.9904000000000001,
+      "created_at": "2026-06-07T03:06:03.326776+00:00",
+      "updated_at": "2026-06-07T03:06:06.908+00:00",
+      "external_id": "0RjesAjol671YO4iBSnMUQ",
+      "is_official": true,
+      "title_found": "Tengo Miedo",
+      "artist_found": "Alex Bueno, Andres De Jesus",
+      "recording_id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "display_order": 1
+    },
+    {
+      "id": "59312f2a-3e25-4dfc-8f70-8227fcbfcc81",
+      "url": "https://www.boomplay.com/songs/42220759",
+      "label": "Boomplay",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "boomplay",
+      "link_type": "stream",
+      "checked_at": "2026-06-20T01:36:59.507+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-20T01:36:59.961644+00:00",
+      "updated_at": "2026-06-20T01:36:59.507+00:00",
+      "external_id": "42220759",
+      "is_official": true,
+      "title_found": "Tengo Miedo ft. Andrés De Jesús",
+      "artist_found": "Alex Bueno",
+      "recording_id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "display_order": 9
+    },
+    {
+      "id": "52026477-a83e-4df2-ad97-05172b5fe3d7",
+      "url": "https://www.deezer.com/track/1857083477",
+      "label": "Deezer",
+      "source": "deezer_search",
+      "status": "approved_auto",
+      "platform": "deezer",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T12:25:23.698+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T12:25:23.222515+00:00",
+      "updated_at": "2026-06-03T12:25:23.698+00:00",
+      "external_id": "1857083477",
+      "is_official": true,
+      "title_found": "Porque Solo a Tu Lado",
+      "artist_found": "Alex Bueno",
+      "recording_id": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "display_order": 5
+    },
+    {
+      "id": "ee40404c-b949-4395-9afe-fc99c8200f3b",
+      "url": "https://music.apple.com/us/album/porque-solo-a-tu-lado/1526577380?i=1526577385&uo=4",
+      "label": "Apple Music",
+      "source": "itunes_search",
+      "status": "approved_auto",
+      "platform": "apple_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-04T11:58:10.822+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-04T11:58:10.752974+00:00",
+      "updated_at": "2026-06-04T11:58:10.822+00:00",
+      "external_id": "1526577385",
+      "is_official": true,
+      "title_found": "Porque Solo a Tu Lado",
+      "artist_found": "Alex Bueno & Andres De Jesus",
+      "recording_id": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "display_order": 3
+    },
+    {
+      "id": "3f669016-43bc-4880-951d-7194598c0fed",
+      "url": "https://open.spotify.com/track/1G4ojjnArh3MbXtSgXlJfv",
+      "label": "Spotify",
+      "source": "spotify_search",
+      "status": "approved_auto",
+      "platform": "spotify",
+      "link_type": "stream",
+      "checked_at": "2026-06-17T10:49:28.282+00:00",
+      "confidence": 0.9904000000000001,
+      "created_at": "2026-06-17T10:49:28.927968+00:00",
+      "updated_at": "2026-06-17T10:49:28.282+00:00",
+      "external_id": "1G4ojjnArh3MbXtSgXlJfv",
+      "is_official": true,
+      "title_found": "Porque Solo a Tu Lado",
+      "artist_found": "Alex Bueno, Andres De Jesus",
+      "recording_id": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "display_order": 1
+    },
+    {
+      "id": "8a71a1ff-fcf4-4d71-97fd-5788d7010e79",
+      "url": "https://www.youtube.com/watch?v=J0fqIunGUTI",
+      "label": "YouTube",
+      "source": "youtube_isrc_search",
+      "status": "approved_auto",
+      "platform": "youtube",
+      "link_type": "video",
+      "checked_at": "2026-06-22T21:54:02.862+00:00",
+      "confidence": 0.932,
+      "created_at": "2026-06-22T21:54:03.021399+00:00",
+      "updated_at": "2026-06-22T21:54:02.862+00:00",
+      "external_id": "J0fqIunGUTI",
+      "is_official": true,
+      "title_found": "Porque Solo a Tu Lado",
+      "artist_found": "Alex Bueno - Topic",
+      "recording_id": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "display_order": 2
+    },
+    {
+      "id": "dc272751-2b90-4826-bb6a-e6fe7294b644",
+      "url": "https://music.amazon.com/albums/B08FC79ZPH?trackAsin=B08FC8F5NV",
+      "label": "Amazon Music",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "amazon_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-27T00:41:13.897+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-27T00:41:14.376817+00:00",
+      "updated_at": "2026-06-27T00:41:13.897+00:00",
+      "external_id": "B08FC8F5NV",
+      "is_official": true,
+      "title_found": "Porque Solo a Tu Lado",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "display_order": 5
+    },
+    {
+      "id": "8aff89ab-5942-41ed-8421-89112ca7d964",
+      "url": "https://listen.tidal.com/track/241905812",
+      "label": "TIDAL",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "tidal",
+      "link_type": "stream",
+      "checked_at": "2026-06-27T00:41:14.53+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-27T00:41:15.007785+00:00",
+      "updated_at": "2026-06-27T00:41:14.53+00:00",
+      "external_id": "241905812",
+      "is_official": true,
+      "title_found": "Porque Solo a Tu Lado",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "display_order": 6
+    },
+    {
+      "id": "396f9ce7-d2cb-49b0-98ff-937c15292963",
+      "url": "https://www.deezer.com/track/1857083537",
+      "label": "Deezer",
+      "source": "deezer_search",
+      "status": "approved_auto",
+      "platform": "deezer",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T03:42:59.256+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T03:42:59.12466+00:00",
+      "updated_at": "2026-06-03T03:42:59.256+00:00",
+      "external_id": "1857083537",
+      "is_official": true,
+      "title_found": "Sigue Tu vida",
+      "artist_found": "Alex Bueno",
+      "recording_id": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+      "display_order": 5
+    },
+    {
+      "id": "94bc1101-7d98-4b0f-afb4-ea163d925a6b",
+      "url": "https://www.youtube.com/watch?v=qRo9rlYQgO0",
+      "label": "YouTube",
+      "source": "youtube_isrc_search",
+      "status": "approved_auto",
+      "platform": "youtube",
+      "link_type": "video",
+      "checked_at": "2026-06-03T20:45:22.71+00:00",
+      "confidence": 0.932,
+      "created_at": "2026-06-03T20:45:22.350502+00:00",
+      "updated_at": "2026-06-03T20:45:22.71+00:00",
+      "external_id": "qRo9rlYQgO0",
+      "is_official": true,
+      "title_found": "Sigue Tu vida",
+      "artist_found": "Alex Bueno - Topic",
+      "recording_id": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+      "display_order": 2
+    },
+    {
+      "id": "e609dde1-ea3d-43fd-9ecd-a424b3801add",
+      "url": "https://music.apple.com/us/album/sigue-tu-vida/1526577380?i=1526577619&uo=4",
+      "label": "Apple Music",
+      "source": "itunes_search",
+      "status": "approved_auto",
+      "platform": "apple_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-04T00:29:07.16+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-04T00:29:06.848448+00:00",
+      "updated_at": "2026-06-04T00:29:07.16+00:00",
+      "external_id": "1526577619",
+      "is_official": true,
+      "title_found": "Sigue Tu vida",
+      "artist_found": "Alex Bueno & Andres De Jesus",
+      "recording_id": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+      "display_order": 3
+    },
+    {
+      "id": "1ad3690e-8111-4e96-acb9-65894815352f",
+      "url": "https://open.spotify.com/track/5kP9Us3GodbMwBAhicnefc",
+      "label": "Spotify",
+      "source": "spotify_search",
+      "status": "approved_auto",
+      "platform": "spotify",
+      "link_type": "stream",
+      "checked_at": "2026-06-08T03:22:07.348+00:00",
+      "confidence": 0.9904000000000001,
+      "created_at": "2026-06-08T03:22:08.36989+00:00",
+      "updated_at": "2026-06-08T03:22:07.348+00:00",
+      "external_id": "5kP9Us3GodbMwBAhicnefc",
+      "is_official": true,
+      "title_found": "Sigue Tu vida",
+      "artist_found": "Alex Bueno, Andres De Jesus",
+      "recording_id": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+      "display_order": 1
+    },
+    {
+      "id": "8746213d-bf2d-45ed-a2a3-4709d03081c4",
+      "url": "https://listen.tidal.com/track/241905818",
+      "label": "TIDAL",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "tidal",
+      "link_type": "stream",
+      "checked_at": "2026-06-09T15:10:08.797+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-09T15:10:09.941866+00:00",
+      "updated_at": "2026-06-09T15:10:08.797+00:00",
+      "external_id": "241905818",
+      "is_official": true,
+      "title_found": "Sigue Tu vida",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+      "display_order": 6
+    },
+    {
+      "id": "11d83803-61c9-4d1d-a6ae-92228e29bfb1",
+      "url": "https://www.deezer.com/track/1857083517",
+      "label": "Deezer",
+      "source": "deezer_search",
+      "status": "approved_auto",
+      "platform": "deezer",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T12:26:58.773+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T12:26:58.291761+00:00",
+      "updated_at": "2026-06-03T12:26:58.773+00:00",
+      "external_id": "1857083517",
+      "is_official": true,
+      "title_found": "Y Cómo Es Él",
+      "artist_found": "Alex Bueno",
+      "recording_id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "display_order": 5
+    },
+    {
+      "id": "8600ec7a-c5db-43ed-b8b1-3be832516111",
+      "url": "https://music.apple.com/us/album/y-c%C3%B3mo-es-%C3%A9l/1526556581?i=1526556599&uo=4",
+      "label": "Apple Music",
+      "source": "itunes_search",
+      "status": "approved_auto",
+      "platform": "apple_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-04T12:01:36.93+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-04T12:01:36.858277+00:00",
+      "updated_at": "2026-06-04T12:01:36.93+00:00",
+      "external_id": "1526556599",
+      "is_official": true,
+      "title_found": "¿Y Cómo Es Él?",
+      "artist_found": "Alex Bueno & Orquesta Liberación",
+      "recording_id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "display_order": 3
+    },
+    {
+      "id": "cdcb336a-e805-4864-8ebc-6c18d069bfc6",
+      "url": "https://open.spotify.com/track/2VAtWtlPxmrX6MarG21Mpu",
+      "label": "Spotify",
+      "source": "spotify_search",
+      "status": "approved_auto",
+      "platform": "spotify",
+      "link_type": "stream",
+      "checked_at": "2026-06-17T10:56:26.77+00:00",
+      "confidence": 0.9904000000000001,
+      "created_at": "2026-06-17T10:56:27.452385+00:00",
+      "updated_at": "2026-06-17T10:56:26.77+00:00",
+      "external_id": "2VAtWtlPxmrX6MarG21Mpu",
+      "is_official": true,
+      "title_found": "Y Cómo Es Él",
+      "artist_found": "Alex Bueno, Andres De Jesus",
+      "recording_id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "display_order": 1
+    },
+    {
+      "id": "bd3c835c-0674-4f35-b56b-2a12bb85fda6",
+      "url": "https://www.youtube.com/watch?v=NlLsjzhnIgQ",
+      "label": "YouTube",
+      "source": "youtube_isrc_search",
+      "status": "approved_auto",
+      "platform": "youtube",
+      "link_type": "video",
+      "checked_at": "2026-06-22T21:54:30.308+00:00",
+      "confidence": 0.932,
+      "created_at": "2026-06-22T21:54:30.469352+00:00",
+      "updated_at": "2026-06-22T21:54:30.308+00:00",
+      "external_id": "NlLsjzhnIgQ",
+      "is_official": true,
+      "title_found": "Y Cómo Es Él",
+      "artist_found": "Alex Bueno - Topic",
+      "recording_id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "display_order": 2
+    },
+    {
+      "id": "fd7b5e85-2bb0-4896-b591-3814736a3c11",
+      "url": "https://listen.tidal.com/track/241907244",
+      "label": "TIDAL",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "tidal",
+      "link_type": "stream",
+      "checked_at": "2026-06-27T01:16:56.955+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-27T01:16:57.331123+00:00",
+      "updated_at": "2026-06-27T01:16:56.955+00:00",
+      "external_id": "241907244",
+      "is_official": true,
+      "title_found": "Y Cómo Es Él",
+      "artist_found": "Alex Bueno, Orquesta Liberación",
+      "recording_id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "display_order": 6
+    },
+    {
+      "id": "3b63196b-80a3-4995-b655-b25785c3c852",
+      "url": "https://www.pandora.com/TR:34631006",
+      "label": "Pandora",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "pandora",
+      "link_type": "stream",
+      "checked_at": "2026-06-27T01:16:57.277+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-27T01:16:57.654224+00:00",
+      "updated_at": "2026-06-27T01:16:57.277+00:00",
+      "external_id": "TR:34631006",
+      "is_official": true,
+      "title_found": "Y Cómo Es Él",
+      "artist_found": "Alex Bueno & Orquesta Liberación",
+      "recording_id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "display_order": 7
+    },
+    {
+      "id": "2c10afe1-30ed-423f-b87f-9c7df048038d",
+      "url": "https://www.boomplay.com/songs/42231741",
+      "label": "Boomplay",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "boomplay",
+      "link_type": "stream",
+      "checked_at": "2026-06-27T01:16:57.581+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-27T01:16:57.956508+00:00",
+      "updated_at": "2026-06-27T01:16:57.581+00:00",
+      "external_id": "42231741",
+      "is_official": true,
+      "title_found": "Y Cómo Es Él ft. Orquesta Liberación",
+      "artist_found": "Alex Bueno",
+      "recording_id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "display_order": 9
+    },
+    {
+      "id": "c86b3a52-8466-48ed-92da-3971786ac33f",
+      "url": "https://www.deezer.com/track/1857083487",
+      "label": "Deezer",
+      "source": "deezer_search",
+      "status": "approved_auto",
+      "platform": "deezer",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T03:20:28.277+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T03:20:28.139203+00:00",
+      "updated_at": "2026-06-03T03:20:28.277+00:00",
+      "external_id": "1857083487",
+      "is_official": true,
+      "title_found": "Tengo Miedo",
+      "artist_found": "Alex Bueno",
+      "recording_id": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "display_order": 5
+    },
+    {
+      "id": "b2843abf-6333-4599-af21-ba4776c7c791",
+      "url": "https://music.apple.com/us/album/tengo-miedo/1526577380?i=1526577387&uo=4",
+      "label": "Apple Music",
+      "source": "itunes_search",
+      "status": "approved_auto",
+      "platform": "apple_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T23:40:36.973+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T23:40:36.653789+00:00",
+      "updated_at": "2026-06-03T23:40:36.973+00:00",
+      "external_id": "1526577387",
+      "is_official": true,
+      "title_found": "Tengo Miedo",
+      "artist_found": "Alex Bueno & Andres De Jesus",
+      "recording_id": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "display_order": 3
+    },
+    {
+      "id": "36dcf199-d5d0-4d1d-8825-c4854446970c",
+      "url": "https://listen.tidal.com/track/241905813",
+      "label": "TIDAL",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "tidal",
+      "link_type": "stream",
+      "checked_at": "2026-06-07T22:43:21.832+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-07T22:43:16.741176+00:00",
+      "updated_at": "2026-06-07T22:43:21.832+00:00",
+      "external_id": "241905813",
+      "is_official": true,
+      "title_found": "Tengo Miedo",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "display_order": 6
+    },
+    {
+      "id": "e31aff91-9f9b-4a78-bb39-a1fb34185051",
+      "url": "https://music.amazon.com/albums/B08FC79ZPH?trackAsin=B08FC8286J",
+      "label": "Amazon Music",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "amazon_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-07T22:43:20.939+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-07T22:43:16.276429+00:00",
+      "updated_at": "2026-06-07T22:43:20.939+00:00",
+      "external_id": "B08FC8286J",
+      "is_official": true,
+      "title_found": "Tengo Miedo",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "display_order": 5
+    },
+    {
+      "id": "c4ba94b2-674b-459e-bacb-1657379c9b1b",
+      "url": "https://open.spotify.com/track/0RjesAjol671YO4iBSnMUQ",
+      "label": "Spotify",
+      "source": "spotify_search",
+      "status": "approved_auto",
+      "platform": "spotify",
+      "link_type": "stream",
+      "checked_at": "2026-06-08T01:11:43.923+00:00",
+      "confidence": 0.9904000000000001,
+      "created_at": "2026-06-08T01:11:39.419407+00:00",
+      "updated_at": "2026-06-08T01:11:43.923+00:00",
+      "external_id": "0RjesAjol671YO4iBSnMUQ",
+      "is_official": true,
+      "title_found": "Tengo Miedo",
+      "artist_found": "Alex Bueno, Andres De Jesus",
+      "recording_id": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "display_order": 1
+    },
+    {
+      "id": "e0c7da06-e1db-4be4-8a51-21927267ee43",
+      "url": "https://www.youtube.com/watch?v=tE4HfdF2tOQ",
+      "label": "YouTube",
+      "source": "youtube_text_search",
+      "status": "needs_review",
+      "platform": "youtube",
+      "link_type": "video",
+      "checked_at": "2026-06-24T17:05:14.662+00:00",
+      "confidence": 0.8320000000000001,
+      "created_at": "2026-06-24T17:05:16.018867+00:00",
+      "updated_at": "2026-06-24T17:05:14.662+00:00",
+      "external_id": "tE4HfdF2tOQ",
+      "is_official": true,
+      "title_found": "Tengo Miedo",
+      "artist_found": "Alex Bueno - Topic",
+      "recording_id": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "display_order": 2
+    },
+    {
+      "id": "9ee4ed70-7924-449f-aa60-e77fcb1d8da1",
+      "url": "https://www.boomplay.com/songs/42220759",
+      "label": "Boomplay",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "boomplay",
+      "link_type": "stream",
+      "checked_at": "2026-06-24T22:33:43.026+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-24T22:33:44.531874+00:00",
+      "updated_at": "2026-06-24T22:33:43.026+00:00",
+      "external_id": "42220759",
+      "is_official": true,
+      "title_found": "Tengo Miedo ft. Andrés De Jesús",
+      "artist_found": "Alex Bueno",
+      "recording_id": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "display_order": 9
+    },
+    {
+      "id": "6392a2b1-67eb-4fab-bbed-fa9fb6213d07",
+      "url": "https://www.deezer.com/track/1857083467",
+      "label": "Deezer",
+      "source": "deezer_search",
+      "status": "approved_auto",
+      "platform": "deezer",
+      "link_type": "stream",
+      "checked_at": "2026-06-03T11:11:56.755+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-03T11:11:56.251496+00:00",
+      "updated_at": "2026-06-03T11:11:56.755+00:00",
+      "external_id": "1857083467",
+      "is_official": true,
+      "title_found": "Cómo Quisiera",
+      "artist_found": "Alex Bueno",
+      "recording_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "display_order": 5
+    },
+    {
+      "id": "4c00c5bc-d340-4b73-ada3-95692f5118fd",
+      "url": "https://music.apple.com/us/album/c%C3%B3mo-quisiera/1526577380?i=1526577381&uo=4",
+      "label": "Apple Music",
+      "source": "itunes_search",
+      "status": "approved_auto",
+      "platform": "apple_music",
+      "link_type": "stream",
+      "checked_at": "2026-06-04T09:20:13.41+00:00",
+      "confidence": 1,
+      "created_at": "2026-06-04T09:20:13.248203+00:00",
+      "updated_at": "2026-06-04T09:20:13.41+00:00",
+      "external_id": "1526577381",
+      "is_official": true,
+      "title_found": "Cómo Quisiera",
+      "artist_found": "Alex Bueno & Andres De Jesus",
+      "recording_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "display_order": 3
+    },
+    {
+      "id": "4c3d09cf-ee50-411f-91f2-332df89cbf47",
+      "url": "https://open.spotify.com/track/3bD6GH0HviE8Toa1c6YXuo",
+      "label": "Spotify",
+      "source": "spotify_search",
+      "status": "approved_auto",
+      "platform": "spotify",
+      "link_type": "stream",
+      "checked_at": "2026-06-16T02:13:59.445+00:00",
+      "confidence": 0.9904000000000001,
+      "created_at": "2026-06-16T02:13:58.438968+00:00",
+      "updated_at": "2026-06-16T02:13:59.445+00:00",
+      "external_id": "3bD6GH0HviE8Toa1c6YXuo",
+      "is_official": true,
+      "title_found": "Cómo Quisiera",
+      "artist_found": "Alex Bueno, Andres De Jesus",
+      "recording_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "display_order": 1
+    },
+    {
+      "id": "64a87701-ea6d-4a25-94b4-516f6e6a804e",
+      "url": "https://www.youtube.com/watch?v=lKVTJx2dkZw",
+      "label": "YouTube",
+      "source": "youtube_isrc_search",
+      "status": "approved_auto",
+      "platform": "youtube",
+      "link_type": "video",
+      "checked_at": "2026-06-19T14:13:00.298+00:00",
+      "confidence": 0.932,
+      "created_at": "2026-06-19T14:13:00.606721+00:00",
+      "updated_at": "2026-06-19T14:13:00.298+00:00",
+      "external_id": "lKVTJx2dkZw",
+      "is_official": true,
+      "title_found": "Cómo Quisiera",
+      "artist_found": "Alex Bueno - Topic",
+      "recording_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "display_order": 2
+    },
+    {
+      "id": "e32aa231-9e0f-4155-a86a-f43e28ab3b60",
+      "url": "https://listen.tidal.com/track/241905811",
+      "label": "TIDAL",
+      "source": "songlink",
+      "status": "approved_auto",
+      "platform": "tidal",
+      "link_type": "stream",
+      "checked_at": "2026-06-23T02:22:17.343+00:00",
+      "confidence": 0.95,
+      "created_at": "2026-06-23T02:22:18.124773+00:00",
+      "updated_at": "2026-06-23T02:22:17.343+00:00",
+      "external_id": "241905811",
+      "is_official": true,
+      "title_found": "Cómo Quisiera",
+      "artist_found": "Alex Bueno, Andrés De Jesús",
+      "recording_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "display_order": 6
+    }
+  ],
+  "tracks": [
+    {
+      "id": "c96ff771-33ef-443f-980d-c098fb4cdecc",
+      "mbid": "f9beb557-9632-4d36-b4e2-d08b6024ecbc",
+      "length": 254000,
+      "metadata": {
+        "track": {
+          "id": "f9beb557-9632-4d36-b4e2-d08b6024ecbc",
+          "title": "Por que solo a tu lado",
+          "length": 254000,
+          "number": "2",
+          "position": 2,
+          "recording": {
+            "id": "f45b67dc-bab9-4614-9a73-4aa5965d2e5c",
+            "isrcs": [],
+            "title": "Por que solo a tu lado",
+            "video": false,
+            "length": 254000,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "f45b67dc-bab9-4614-9a73-4aa5965d2e5c",
+          "isrcs": [],
+          "title": "Por que solo a tu lado",
+          "video": false,
+          "length": 254000,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983"
+        }
+      },
+      "position": 2,
+      "medium_id": null,
+      "created_at": "2026-05-18T21:18:33.665605+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-05-18T21:18:33.665605+00:00",
+      "disc_number": 1,
+      "recording_id": "08660ee6-7063-4c5c-a320-3a38227db93e",
+      "track_number": 2,
+      "title_override": null
+    },
+    {
+      "id": "4bdc5877-a4e5-43f4-b998-c381a0ec316c",
+      "mbid": "7a6158bb-eba7-4f41-8bad-5a1f2c6fe1d3",
+      "length": 232000,
+      "metadata": {
+        "track": {
+          "id": "7a6158bb-eba7-4f41-8bad-5a1f2c6fe1d3",
+          "title": "Por que te quiero",
+          "length": 232000,
+          "number": "5",
+          "position": 5,
+          "recording": {
+            "id": "b9d2b63a-9389-40c7-9271-41e98acd74ad",
+            "isrcs": [],
+            "title": "Por que te quiero",
+            "video": false,
+            "length": 232000,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "b9d2b63a-9389-40c7-9271-41e98acd74ad",
+          "isrcs": [],
+          "title": "Por que te quiero",
+          "video": false,
+          "length": 232000,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983"
+        }
+      },
+      "position": 5,
+      "medium_id": null,
+      "created_at": "2026-05-18T21:18:34.121467+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-05-18T21:18:34.121467+00:00",
+      "disc_number": 1,
+      "recording_id": "bd04a980-57a7-4384-828e-a791dac2af85",
+      "track_number": 5,
+      "title_override": null
+    },
+    {
+      "id": "c5577f8f-471e-4d86-8656-7f9c873afde6",
+      "mbid": "eba698ad-6871-4e46-97e2-80969c134e3d",
+      "length": 231773,
+      "metadata": {
+        "track": {
+          "id": "eba698ad-6871-4e46-97e2-80969c134e3d",
+          "title": "Porque te quiero",
+          "length": 231773,
+          "number": "5",
+          "position": 5,
+          "recording": {
+            "id": "a175364a-e8f0-4feb-b334-14f2ad5a9c2d",
+            "isrcs": [
+              "USJ3V1841770"
+            ],
+            "title": "Porque te quiero",
+            "video": false,
+            "length": 231773,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "a175364a-e8f0-4feb-b334-14f2ad5a9c2d",
+          "isrcs": [
+            "USJ3V1841770"
+          ],
+          "title": "Porque te quiero",
+          "video": false,
+          "length": 231773,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983-01-01"
+        }
+      },
+      "position": 5,
+      "medium_id": null,
+      "created_at": "2026-05-18T20:38:02.256391+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-05-18T20:38:02.256391+00:00",
+      "disc_number": 1,
+      "recording_id": "a40ba5e9-f62b-49a0-a85a-93114ba484de",
+      "track_number": 5,
+      "title_override": null
+    },
+    {
+      "id": "bb5aac11-6a9f-492e-bfa7-cc2acc2de341",
+      "mbid": "bb3d789f-9597-48cf-994c-73ed4638d034",
+      "length": 247787,
+      "metadata": {
+        "track": {
+          "id": "bb3d789f-9597-48cf-994c-73ed4638d034",
+          "title": "El sacrificio",
+          "length": 247787,
+          "number": "4",
+          "position": 4,
+          "recording": {
+            "id": "5c8bdc7e-a8d8-44ba-9576-df7143e4fa87",
+            "isrcs": [
+              "USJ3V1841769"
+            ],
+            "title": "El sacrificio",
+            "video": false,
+            "length": 247787,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "5c8bdc7e-a8d8-44ba-9576-df7143e4fa87",
+          "isrcs": [
+            "USJ3V1841769"
+          ],
+          "title": "El sacrificio",
+          "video": false,
+          "length": 247787,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983-01-01"
+        }
+      },
+      "position": 4,
+      "medium_id": null,
+      "created_at": "2026-05-18T20:38:02.09248+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-05-18T20:38:02.09248+00:00",
+      "disc_number": 1,
+      "recording_id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "track_number": 4,
+      "title_override": null
+    },
+    {
+      "id": "9cd92e5b-e711-4ff2-87f7-0ca76475dbf8",
+      "mbid": "a0d74504-0330-4b99-b7a3-39d3b82919b5",
+      "length": 248000,
+      "metadata": {
+        "track": {
+          "id": "a0d74504-0330-4b99-b7a3-39d3b82919b5",
+          "title": "El sacrificio",
+          "length": 248000,
+          "number": "4",
+          "position": 4,
+          "recording": {
+            "id": "5c8bdc7e-a8d8-44ba-9576-df7143e4fa87",
+            "isrcs": [
+              "USJ3V1841769"
+            ],
+            "title": "El sacrificio",
+            "video": false,
+            "length": 247787,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "5c8bdc7e-a8d8-44ba-9576-df7143e4fa87",
+          "isrcs": [
+            "USJ3V1841769"
+          ],
+          "title": "El sacrificio",
+          "video": false,
+          "length": 247787,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983-01-01"
+        }
+      },
+      "position": 4,
+      "medium_id": null,
+      "created_at": "2026-05-18T21:18:33.971516+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-05-18T21:18:33.971516+00:00",
+      "disc_number": 1,
+      "recording_id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "track_number": 4,
+      "title_override": null
+    },
+    {
+      "id": "050fe993-4c73-4a70-88e4-c407b828bc18",
+      "mbid": "524bd3b1-4ae8-4f92-bb38-9a4b1c32c743",
+      "length": 219133,
+      "metadata": {
+        "track": {
+          "id": "524bd3b1-4ae8-4f92-bb38-9a4b1c32c743",
+          "title": "Las locas",
+          "length": 219133,
+          "number": "7",
+          "position": 7,
+          "recording": {
+            "id": "e1bc1b14-ba63-43bd-a99d-2a5f7d38eb7a",
+            "isrcs": [
+              "USJ3V1841772"
+            ],
+            "title": "Las locas",
+            "video": false,
+            "length": 219133,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "e1bc1b14-ba63-43bd-a99d-2a5f7d38eb7a",
+          "isrcs": [
+            "USJ3V1841772"
+          ],
+          "title": "Las locas",
+          "video": false,
+          "length": 219133,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983-01-01"
+        }
+      },
+      "position": 7,
+      "medium_id": null,
+      "created_at": "2026-05-18T20:38:02.580563+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-05-18T20:38:02.580563+00:00",
+      "disc_number": 1,
+      "recording_id": "f693f654-3c95-4155-82b8-b22be3e8bff0",
+      "track_number": 7,
+      "title_override": null
+    },
+    {
+      "id": "7fc286ad-9b7c-4103-b308-bd4bbdbf9b95",
+      "mbid": "65cabf55-9e74-4938-a922-cdba5a051041",
+      "length": 219000,
+      "metadata": {
+        "track": {
+          "id": "65cabf55-9e74-4938-a922-cdba5a051041",
+          "title": "Las locas",
+          "length": 219000,
+          "number": "7",
+          "position": 7,
+          "recording": {
+            "id": "0749e6f5-6aeb-4a14-a4e3-62ac270ee929",
+            "isrcs": [],
+            "title": "Las locas",
+            "video": false,
+            "length": 219000,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "0749e6f5-6aeb-4a14-a4e3-62ac270ee929",
+          "isrcs": [],
+          "title": "Las locas",
+          "video": false,
+          "length": 219000,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983"
+        }
+      },
+      "position": 7,
+      "medium_id": null,
+      "created_at": "2026-05-18T21:18:34.448642+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-05-18T21:18:34.448642+00:00",
+      "disc_number": 1,
+      "recording_id": "749d20c1-4ecf-480d-aeab-a45e42d83cd2",
+      "track_number": 7,
+      "title_override": null
+    },
+    {
+      "id": "9d47c173-a0fe-458f-be9e-c599392276b1",
+      "mbid": "70c104d9-9517-4a8f-a50b-9a3b973941b4",
+      "length": 274000,
+      "metadata": {
+        "track": {
+          "id": "70c104d9-9517-4a8f-a50b-9a3b973941b4",
+          "title": "Y cómo es él",
+          "length": 274000,
+          "number": "6",
+          "position": 6,
+          "recording": {
+            "id": "e82b506a-8a63-4c9e-abe7-94482c3fc540",
+            "isrcs": [],
+            "title": "Y cómo es él",
+            "video": false,
+            "length": 274000,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "e82b506a-8a63-4c9e-abe7-94482c3fc540",
+          "isrcs": [],
+          "title": "Y cómo es él",
+          "video": false,
+          "length": 274000,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983"
+        }
+      },
+      "position": 6,
+      "medium_id": null,
+      "created_at": "2026-05-18T21:18:34.284189+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-05-18T21:18:34.284189+00:00",
+      "disc_number": 1,
+      "recording_id": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "track_number": 6,
+      "title_override": null
+    },
+    {
+      "id": "cc8823e1-0c1a-4848-9b91-6333cd40335e",
+      "mbid": "45f45ca9-bbc7-4f35-bb1e-286d754feed5",
+      "length": 251000,
+      "metadata": {
+        "track": {
+          "id": "45f45ca9-bbc7-4f35-bb1e-286d754feed5",
+          "title": "Sigue tu vida",
+          "length": 251000,
+          "number": "8",
+          "position": 8,
+          "recording": {
+            "id": "009168b6-ae25-4b4d-874d-b19d69761588",
+            "isrcs": [],
+            "title": "Sigue tu vida",
+            "video": false,
+            "length": 251000,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "009168b6-ae25-4b4d-874d-b19d69761588",
+          "isrcs": [],
+          "title": "Sigue tu vida",
+          "video": false,
+          "length": 251000,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983"
+        }
+      },
+      "position": 8,
+      "medium_id": null,
+      "created_at": "2026-05-18T21:18:34.603071+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-05-18T21:18:34.603071+00:00",
+      "disc_number": 1,
+      "recording_id": "e89938f0-cec1-4551-95c6-b5070541a66e",
+      "track_number": 8,
+      "title_override": null
+    },
+    {
+      "id": "2c8087f0-c0fb-4470-b19f-427c40ee1e2f",
+      "mbid": "dfc0d308-4060-4131-9be1-dc844a3ac507",
+      "length": 245200,
+      "metadata": {
+        "track": {
+          "id": "dfc0d308-4060-4131-9be1-dc844a3ac507",
+          "title": "Tengo miedo",
+          "length": 245200,
+          "number": "3",
+          "position": 3,
+          "recording": {
+            "id": "d125ad86-30aa-443a-ae74-4828409796ab",
+            "isrcs": [
+              "USJ3V1841768"
+            ],
+            "title": "Tengo miedo",
+            "video": false,
+            "length": 245200,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "d125ad86-30aa-443a-ae74-4828409796ab",
+          "isrcs": [
+            "USJ3V1841768"
+          ],
+          "title": "Tengo miedo",
+          "video": false,
+          "length": 245200,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983-01-01"
+        }
+      },
+      "position": 3,
+      "medium_id": null,
+      "created_at": "2026-05-18T20:38:01.933072+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-05-18T20:38:01.933072+00:00",
+      "disc_number": 1,
+      "recording_id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "track_number": 3,
+      "title_override": null
+    },
+    {
+      "id": "0de3fd70-03c6-4948-94ae-3257e80d42fc",
+      "mbid": "380f46f3-622b-41c5-a515-06386817a9ba",
+      "length": 253667,
+      "metadata": {
+        "track": {
+          "id": "380f46f3-622b-41c5-a515-06386817a9ba",
+          "title": "Porque solo a tu lado",
+          "length": 253667,
+          "number": "2",
+          "position": 2,
+          "recording": {
+            "id": "023173eb-eced-4669-b3fd-eeb9b43f0f46",
+            "isrcs": [
+              "USJ3V1841767"
+            ],
+            "title": "Porque solo a tu lado",
+            "video": false,
+            "length": 253667,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "023173eb-eced-4669-b3fd-eeb9b43f0f46",
+          "isrcs": [
+            "USJ3V1841767"
+          ],
+          "title": "Porque solo a tu lado",
+          "video": false,
+          "length": 253667,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983-01-01"
+        }
+      },
+      "position": 2,
+      "medium_id": null,
+      "created_at": "2026-05-18T20:38:01.776108+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-05-18T20:38:01.776108+00:00",
+      "disc_number": 1,
+      "recording_id": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "track_number": 2,
+      "title_override": null
+    },
+    {
+      "id": "a2489431-9737-4a79-a7d8-17a5c1f49af0",
+      "mbid": "067bf3b3-a040-4b92-9bb4-9fbaf64e26a4",
+      "length": 251373,
+      "metadata": {
+        "track": {
+          "id": "067bf3b3-a040-4b92-9bb4-9fbaf64e26a4",
+          "title": "Sigue tu vida",
+          "length": 251373,
+          "number": "8",
+          "position": 8,
+          "recording": {
+            "id": "cac020fd-a995-48d1-9746-44b65c75034a",
+            "isrcs": [
+              "USJ3V1841773"
+            ],
+            "title": "Sigue tu vida",
+            "video": false,
+            "length": 251373,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "cac020fd-a995-48d1-9746-44b65c75034a",
+          "isrcs": [
+            "USJ3V1841773"
+          ],
+          "title": "Sigue tu vida",
+          "video": false,
+          "length": 251373,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983-01-01"
+        }
+      },
+      "position": 8,
+      "medium_id": null,
+      "created_at": "2026-05-18T20:38:02.745356+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-05-18T20:38:02.745356+00:00",
+      "disc_number": 1,
+      "recording_id": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+      "track_number": 8,
+      "title_override": null
+    },
+    {
+      "id": "d2a43f8d-6028-4a0d-87b8-499567f2a334",
+      "mbid": "7516ca2c-e77c-4b24-9acf-67f50d0f0b0f",
+      "length": 274227,
+      "metadata": {
+        "track": {
+          "id": "7516ca2c-e77c-4b24-9acf-67f50d0f0b0f",
+          "title": "Y cómo es él",
+          "length": 274227,
+          "number": "6",
+          "position": 6,
+          "recording": {
+            "id": "8009c75d-48aa-44e4-b5be-12eb7d677785",
+            "isrcs": [
+              "USJ3V1841771"
+            ],
+            "title": "Y cómo es él",
+            "video": false,
+            "length": 274227,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "8009c75d-48aa-44e4-b5be-12eb7d677785",
+          "isrcs": [
+            "USJ3V1841771"
+          ],
+          "title": "Y cómo es él",
+          "video": false,
+          "length": 274227,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983-01-01"
+        }
+      },
+      "position": 6,
+      "medium_id": null,
+      "created_at": "2026-05-18T20:38:02.422478+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-05-18T20:38:02.422478+00:00",
+      "disc_number": 1,
+      "recording_id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "track_number": 6,
+      "title_override": null
+    },
+    {
+      "id": "44e0291e-7a73-4916-8330-5400c9889ff9",
+      "mbid": "f3d7e4bd-ea4b-4120-be60-1f75c0c2a921",
+      "length": 245000,
+      "metadata": {
+        "track": {
+          "id": "f3d7e4bd-ea4b-4120-be60-1f75c0c2a921",
+          "title": "Tengo miedo",
+          "length": 245000,
+          "number": "3",
+          "position": 3,
+          "recording": {
+            "id": "60ce1abb-0f10-4be8-8213-bd313220478e",
+            "isrcs": [],
+            "title": "Tengo miedo",
+            "video": false,
+            "length": 245000,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "60ce1abb-0f10-4be8-8213-bd313220478e",
+          "isrcs": [],
+          "title": "Tengo miedo",
+          "video": false,
+          "length": 245000,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983"
+        }
+      },
+      "position": 3,
+      "medium_id": null,
+      "created_at": "2026-05-18T21:18:33.8182+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-05-18T21:18:33.8182+00:00",
+      "disc_number": 1,
+      "recording_id": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "track_number": 3,
+      "title_override": null
+    },
+    {
+      "id": "9a1f28c4-06e8-42d3-a869-140979fea376",
+      "mbid": "eccac7a2-12b4-4e0e-a69e-00ccac4f94ca",
+      "length": 250227,
+      "metadata": {
+        "track": {
+          "id": "eccac7a2-12b4-4e0e-a69e-00ccac4f94ca",
+          "title": "Cómo quisiera",
+          "length": 250227,
+          "number": "1",
+          "position": 1,
+          "recording": {
+            "id": "dbd67a0f-8610-4da4-a7e8-c6432da9dd7d",
+            "isrcs": [
+              "USJ3V1841766"
+            ],
+            "title": "Como quisiera",
+            "video": false,
+            "length": 250000,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "dbd67a0f-8610-4da4-a7e8-c6432da9dd7d",
+          "isrcs": [
+            "USJ3V1841766"
+          ],
+          "title": "Como quisiera",
+          "video": false,
+          "length": 250000,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983-01-01"
+        }
+      },
+      "position": 1,
+      "medium_id": null,
+      "created_at": "2026-05-18T20:38:01.616011+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-05-18T20:38:01.616011+00:00",
+      "disc_number": 1,
+      "recording_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "track_number": 1,
+      "title_override": "Cómo quisiera"
+    },
+    {
+      "id": "ab373992-eb23-475d-83c2-83c1876d1dec",
+      "mbid": "f273efac-3e5d-4bf8-a5c7-72458dd77e96",
+      "length": 250000,
+      "metadata": {
+        "track": {
+          "id": "f273efac-3e5d-4bf8-a5c7-72458dd77e96",
+          "title": "Como quisiera",
+          "length": 250000,
+          "number": "1",
+          "position": 1,
+          "recording": {
+            "id": "dbd67a0f-8610-4da4-a7e8-c6432da9dd7d",
+            "isrcs": [
+              "USJ3V1841766"
+            ],
+            "title": "Como quisiera",
+            "video": false,
+            "length": 250000,
+            "artist-credit": [
+              {
+                "name": "Alex",
+                "artist": {
+                  "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                  "name": "Alex Bueno",
+                  "type": "Person",
+                  "country": "DO",
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "Bueno, Alex",
+                  "disambiguation": ""
+                },
+                "joinphrase": " con "
+              },
+              {
+                "name": "Andrés de Jesús y su Orquesta",
+                "artist": {
+                  "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                  "name": "Andrés de Jesús",
+                  "type": "Person",
+                  "country": null,
+                  "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                  "sort-name": "De Jesús, Andrés",
+                  "disambiguation": ""
+                },
+                "joinphrase": ""
+              }
+            ],
+            "disambiguation": "",
+            "first-release-date": "1983-01-01"
+          },
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ]
+        },
+        "recording": {
+          "id": "dbd67a0f-8610-4da4-a7e8-c6432da9dd7d",
+          "isrcs": [
+            "USJ3V1841766"
+          ],
+          "title": "Como quisiera",
+          "video": false,
+          "length": 250000,
+          "artist-credit": [
+            {
+              "name": "Alex",
+              "artist": {
+                "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+                "name": "Alex Bueno",
+                "type": "Person",
+                "country": "DO",
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "Bueno, Alex",
+                "disambiguation": ""
+              },
+              "joinphrase": " con "
+            },
+            {
+              "name": "Andrés de Jesús y su Orquesta",
+              "artist": {
+                "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+                "name": "Andrés de Jesús",
+                "type": "Person",
+                "country": null,
+                "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+                "sort-name": "De Jesús, Andrés",
+                "disambiguation": ""
+              },
+              "joinphrase": ""
+            }
+          ],
+          "disambiguation": "",
+          "first-release-date": "1983-01-01"
+        }
+      },
+      "position": 1,
+      "medium_id": null,
+      "created_at": "2026-05-18T21:18:33.49813+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-05-18T21:18:33.49813+00:00",
+      "disc_number": 1,
+      "recording_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "track_number": 1,
+      "title_override": null
+    }
+  ],
+  "recordings": [
+    {
+      "id": "08660ee6-7063-4c5c-a320-3a38227db93e",
+      "mbid": "f45b67dc-bab9-4614-9a73-4aa5965d2e5c",
+      "slug": "por-que-solo-a-tu-lado-alex-bueno",
+      "isrcs": [],
+      "title": "Por que solo a tu lado",
+      "views": 1,
+      "work_id": null,
+      "duration": 254000,
+      "genre_id": 2,
+      "metadata": {
+        "id": "f45b67dc-bab9-4614-9a73-4aa5965d2e5c",
+        "isrcs": [],
+        "title": "Por que solo a tu lado",
+        "video": false,
+        "length": 254000,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:47:42.039528+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-09-17T10:49:04.87094+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "bd04a980-57a7-4384-828e-a791dac2af85",
+      "mbid": "b9d2b63a-9389-40c7-9271-41e98acd74ad",
+      "slug": "por-que-te-quiero-alex-bueno",
+      "isrcs": [],
+      "title": "Por que te quiero",
+      "views": 1,
+      "work_id": null,
+      "duration": 232000,
+      "genre_id": 2,
+      "metadata": {
+        "id": "b9d2b63a-9389-40c7-9271-41e98acd74ad",
+        "isrcs": [],
+        "title": "Por que te quiero",
+        "video": false,
+        "length": 232000,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:47:42.412138+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-09-17T15:57:20.277032+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "a40ba5e9-f62b-49a0-a85a-93114ba484de",
+      "mbid": "a175364a-e8f0-4feb-b334-14f2ad5a9c2d",
+      "slug": "porque-te-quiero-alex-bueno",
+      "isrcs": [
+        "USJ3V1841770"
+      ],
+      "title": "Porque te quiero",
+      "views": 1,
+      "work_id": null,
+      "duration": 231773,
+      "genre_id": 2,
+      "metadata": {
+        "id": "a175364a-e8f0-4feb-b334-14f2ad5a9c2d",
+        "isrcs": [
+          "USJ3V1841770"
+        ],
+        "title": "Porque te quiero",
+        "video": false,
+        "length": 231773,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983-01-01"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:10:33.579928+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-09-17T13:47:52.866105+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "mbid": "5c8bdc7e-a8d8-44ba-9576-df7143e4fa87",
+      "slug": "el-sacrificio-alex-bueno",
+      "isrcs": [
+        "USJ3V1841769"
+      ],
+      "title": "El sacrificio",
+      "views": 2,
+      "work_id": null,
+      "duration": 247787,
+      "genre_id": 2,
+      "metadata": {
+        "id": "5c8bdc7e-a8d8-44ba-9576-df7143e4fa87",
+        "isrcs": [
+          "USJ3V1841769"
+        ],
+        "title": "El sacrificio",
+        "video": false,
+        "length": 247787,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983-01-01"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:10:33.458635+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-09-17T23:24:42.598176+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "f693f654-3c95-4155-82b8-b22be3e8bff0",
+      "mbid": "e1bc1b14-ba63-43bd-a99d-2a5f7d38eb7a",
+      "slug": "las-locas-alex-bueno-2",
+      "isrcs": [
+        "USJ3V1841772"
+      ],
+      "title": "Las locas",
+      "views": 2,
+      "work_id": null,
+      "duration": 219133,
+      "genre_id": 2,
+      "metadata": {
+        "id": "e1bc1b14-ba63-43bd-a99d-2a5f7d38eb7a",
+        "isrcs": [
+          "USJ3V1841772"
+        ],
+        "title": "Las locas",
+        "video": false,
+        "length": 219133,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983-01-01"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:10:33.823847+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-09-18T01:09:49.83913+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "749d20c1-4ecf-480d-aeab-a45e42d83cd2",
+      "mbid": "0749e6f5-6aeb-4a14-a4e3-62ac270ee929",
+      "slug": "las-locas-alex-bueno",
+      "isrcs": [],
+      "title": "Las locas",
+      "views": 0,
+      "work_id": null,
+      "duration": 219000,
+      "genre_id": 2,
+      "metadata": {
+        "id": "0749e6f5-6aeb-4a14-a4e3-62ac270ee929",
+        "isrcs": [],
+        "title": "Las locas",
+        "video": false,
+        "length": 219000,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:47:42.658737+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-07-16T02:54:59.03058+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "mbid": "e82b506a-8a63-4c9e-abe7-94482c3fc540",
+      "slug": "y-como-es-el-alex-bueno-2",
+      "isrcs": [],
+      "title": "Y cómo es él",
+      "views": 1,
+      "work_id": null,
+      "duration": 274000,
+      "genre_id": 2,
+      "metadata": {
+        "id": "e82b506a-8a63-4c9e-abe7-94482c3fc540",
+        "isrcs": [],
+        "title": "Y cómo es él",
+        "video": false,
+        "length": 274000,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:47:42.538212+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-09-17T13:53:53.623754+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "e89938f0-cec1-4551-95c6-b5070541a66e",
+      "mbid": "009168b6-ae25-4b4d-874d-b19d69761588",
+      "slug": "sigue-tu-vida-alex-bueno-2",
+      "isrcs": [],
+      "title": "Sigue tu vida",
+      "views": 2,
+      "work_id": null,
+      "duration": 251000,
+      "genre_id": 2,
+      "metadata": {
+        "id": "009168b6-ae25-4b4d-874d-b19d69761588",
+        "isrcs": [],
+        "title": "Sigue tu vida",
+        "video": false,
+        "length": 251000,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:47:42.785232+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-09-17T08:21:37.554411+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "mbid": "d125ad86-30aa-443a-ae74-4828409796ab",
+      "slug": "tengo-miedo-alex-bueno",
+      "isrcs": [
+        "USJ3V1841768"
+      ],
+      "title": "Tengo miedo",
+      "views": 1,
+      "work_id": null,
+      "duration": 245200,
+      "genre_id": 2,
+      "metadata": {
+        "id": "d125ad86-30aa-443a-ae74-4828409796ab",
+        "isrcs": [
+          "USJ3V1841768"
+        ],
+        "title": "Tengo miedo",
+        "video": false,
+        "length": 245200,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983-01-01"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:10:33.32992+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-09-17T11:48:22.135391+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "mbid": "023173eb-eced-4669-b3fd-eeb9b43f0f46",
+      "slug": "porque-solo-a-tu-lado-alex-bueno",
+      "isrcs": [
+        "USJ3V1841767"
+      ],
+      "title": "Porque solo a tu lado",
+      "views": 3,
+      "work_id": null,
+      "duration": 253667,
+      "genre_id": 2,
+      "metadata": {
+        "id": "023173eb-eced-4669-b3fd-eeb9b43f0f46",
+        "isrcs": [
+          "USJ3V1841767"
+        ],
+        "title": "Porque solo a tu lado",
+        "video": false,
+        "length": 253667,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983-01-01"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:10:33.208929+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-09-18T01:22:21.504873+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+      "mbid": "cac020fd-a995-48d1-9746-44b65c75034a",
+      "slug": "sigue-tu-vida-alex-bueno",
+      "isrcs": [
+        "USJ3V1841773"
+      ],
+      "title": "Sigue tu vida",
+      "views": 1,
+      "work_id": null,
+      "duration": 251373,
+      "genre_id": 2,
+      "metadata": {
+        "id": "cac020fd-a995-48d1-9746-44b65c75034a",
+        "isrcs": [
+          "USJ3V1841773"
+        ],
+        "title": "Sigue tu vida",
+        "video": false,
+        "length": 251373,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983-01-01"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:10:33.944029+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-09-17T15:19:48.859596+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "mbid": "8009c75d-48aa-44e4-b5be-12eb7d677785",
+      "slug": "y-como-es-el-alex-bueno-4",
+      "isrcs": [
+        "USJ3V1841771"
+      ],
+      "title": "Y cómo es él",
+      "views": 1,
+      "work_id": null,
+      "duration": 274227,
+      "genre_id": 2,
+      "metadata": {
+        "id": "8009c75d-48aa-44e4-b5be-12eb7d677785",
+        "isrcs": [
+          "USJ3V1841771"
+        ],
+        "title": "Y cómo es él",
+        "video": false,
+        "length": 274227,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983-01-01"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:10:33.70049+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-09-17T16:29:40.829012+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "mbid": "60ce1abb-0f10-4be8-8213-bd313220478e",
+      "slug": "tengo-miedo-alex-bueno-2",
+      "isrcs": [],
+      "title": "Tengo miedo",
+      "views": 1,
+      "work_id": null,
+      "duration": 245000,
+      "genre_id": 2,
+      "metadata": {
+        "id": "60ce1abb-0f10-4be8-8213-bd313220478e",
+        "isrcs": [],
+        "title": "Tengo miedo",
+        "video": false,
+        "length": 245000,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:47:42.162014+00:00",
+      "release_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "updated_at": "2026-09-17T10:19:25.55491+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": null,
+      "recording_context": "secular"
+    },
+    {
+      "id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "mbid": "dbd67a0f-8610-4da4-a7e8-c6432da9dd7d",
+      "slug": "como-quisiera-alex-bueno",
+      "isrcs": [
+        "USJ3V1841766"
+      ],
+      "title": "Cómo quisiera",
+      "views": 6,
+      "work_id": "8b81cf02-1b92-45a7-b762-155d9e2fdd14",
+      "duration": 250000,
+      "genre_id": 1,
+      "metadata": {
+        "id": "dbd67a0f-8610-4da4-a7e8-c6432da9dd7d",
+        "isrcs": [
+          "USJ3V1841766"
+        ],
+        "title": "Como quisiera",
+        "video": false,
+        "length": 250000,
+        "artist-credit": [
+          {
+            "name": "Alex",
+            "artist": {
+              "id": "e7f63397-83ae-4506-b015-4b604ac38b01",
+              "name": "Alex Bueno",
+              "type": "Person",
+              "country": "DO",
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "Bueno, Alex",
+              "disambiguation": ""
+            },
+            "joinphrase": " con "
+          },
+          {
+            "name": "Andrés de Jesús y su Orquesta",
+            "artist": {
+              "id": "0f4fd164-2cc0-4e31-b993-353e1b20e2b6",
+              "name": "Andrés de Jesús",
+              "type": "Person",
+              "country": null,
+              "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+              "sort-name": "De Jesús, Andrés",
+              "disambiguation": ""
+            },
+            "joinphrase": ""
+          }
+        ],
+        "disambiguation": "",
+        "first-release-date": "1983-01-01"
+      },
+      "ai_reason": null,
+      "artist_id": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+      "created_at": "2026-05-18T13:10:33.091934+00:00",
+      "release_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "updated_at": "2026-11-01T11:03:10.153545+00:00",
+      "youtube_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "classified_at": null,
+      "disambiguation": null,
+      "recording_year": 1983,
+      "recording_context": "secular"
+    }
+  ]
+}

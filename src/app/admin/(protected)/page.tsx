@@ -24,6 +24,11 @@ const ADMIN_TOOLS_CONFIG: Omit<AdminTool, "title" | "eyebrow" | "description">[]
     icon: "artists",
   },
   {
+    href: "/admin/catalog-statistics",
+    status: "available",
+    icon: "analytics",
+  },
+  {
     href: "/admin/works-credits",
     status: "available",
     icon: "creativeWorks",

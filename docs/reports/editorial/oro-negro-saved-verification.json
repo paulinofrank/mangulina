@@ -1,0 +1,446 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "3a597a5e-8081-4304-a2cf-b7463e16ee70",
+        "name": "Oro Negro",
+        "sort_name": "Oro Negro",
+        "type": "solo_artist",
+        "birth_year": 1960,
+        "death_year": null,
+        "created_at": "2026-10-25T03:16:31.110282+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Domingo",
+        "middle_name": null,
+        "last_name": "Peguero",
+        "second_last_name": "Tamárez",
+        "stage_name": "Oro Negro",
+        "date_of_birth": "1960-04-26",
+        "birth_place": "Santo Domingo Este",
+        "website": null,
+        "youtube": "@ORONEGROPAGOZAATV",
+        "facebook": "oronegropagozaa",
+        "instagram": "oronegropagozaa",
+        "aliases": [
+          "Domingo Peguero",
+          "Domingo Peguero Tamárez",
+          "Oro Negro Pagozaa",
+          "Oro Negro Pa Gozaa"
+        ],
+        "mbid": null,
+        "occupations": [
+          "musician",
+          "arranger",
+          "composer"
+        ],
+        "instruments": [
+          "piano"
+        ],
+        "genres": [
+          "bachata"
+        ],
+        "disambiguation": null,
+        "gender": "male",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-25T03:16:31.110282+00:00",
+        "province": "Santo Domingo",
+        "birth_day": 26,
+        "birth_month": 4,
+        "slug": "oro-negro",
+        "primary_role": "bandleader",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "merengue",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "6RkktqZSAHv62VV6u768hE"
+      },
+      {
+        "id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+        "name": "Fernando Villalona",
+        "slug": "fernando-villalona",
+        "status": "published"
+      },
+      {
+        "id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+        "name": "Raulín Rosendo",
+        "slug": "raulin-rosendo",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "62b6f39b-760e-4154-be7f-2e330682d595",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Oro Negro, the stage name of Domingo Peguero Tamárez, is a Dominican bandleader, pianist, composer, and arranger born on April 26, 1960, in Los Mina, in what is now Santo Domingo Este. His career encompasses merengue, his own orchestra, and a later period that also includes bachata.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Training and early groups",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "He grew up under the influence of his grandmother Alicia Pérez Tamárez, director of the Academia Infantil Iris del Valle. He continued at the music conservatory, studying harmony, trumpet, and piano. Piano became his principal instrument. His early experiences included «Los Académicos», a group formed with fellow students from the academy.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "He joined «Los Hijos del Rey», working alongside ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+                    "displayText": "Raulín Rosendo",
+                    "occurrenceId": "2cce4ac6-1634-43f9-9a97-dcf8875e2993"
+                  }
+                },
+                {
+                  "text": " and ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                    "displayText": "Fernando Villalona",
+                    "occurrenceId": "3e08ec6f-7c5e-4e2b-82bd-3f387ccbc32a"
+                  }
+                },
+                {
+                  "text": ". He received the nickname Oro Negro during that period. He subsequently led his own project, whose activity extended to Puerto Rico and the United States.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Recordings and later work",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Releases associated with his orchestra include «Pa’ gozar», «Pa’ todos los gustos», and «Sueño americano». The latter, released in 2002, credits him with composition, arrangements, musical direction, and piano. «La cintura» is part of his merengue repertoire.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In 2012 he began a bachata phase with «Madre», followed by «Only Bachata Collection 1». In 2021 he presented the Christmas merengue «Pa’ la calle», which he composed and arranged. Under the name «Oro Negro Pagozaa», he continued releasing singles including «Que si que si, que no que no» and «Tu boca», the latter with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                    "displayText": "Fernando Villalona",
+                    "occurrenceId": "b06937d5-17e8-4e74-8601-7bcbecd5eb12"
+                  }
+                },
+                {
+                  "text": ", available on streaming platforms in 2024.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His career brings together piano performance, arranging, composition, and orchestra leadership. His work across the Dominican Republic, Puerto Rico, and the United States places him within the Caribbean circulation of merengue and its continued presence in digital formats.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "3a597a5e-8081-4304-a2cf-b7463e16ee70",
+        "created_at": "2026-10-25T03:16:31.385797+00:00",
+        "updated_at": "2026-10-25T03:17:33.046414+00:00",
+        "revision": 2
+      },
+      {
+        "id": "ca862f3d-290e-4ce5-b911-bdf8d3ac301c",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Oro Negro, nombre artístico de Domingo Peguero Tamárez, es un director de orquesta, pianista, compositor y arreglista dominicano nacido el 26 de abril de 1960 en Los Mina, en el actual municipio de Santo Domingo Este. Su carrera está vinculada al merengue, a su propia orquesta y a una etapa posterior dedicada también a la bachata.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Formación y primeras agrupaciones",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Creció bajo la influencia de su abuela Alicia Pérez Tamárez, directora de la Academia Infantil Iris del Valle. Continuó sus estudios en el Conservatorio de Música, con formación en armonía, trompeta y piano. Este último se convirtió en su instrumento principal. Entre sus primeras experiencias estuvo la agrupación «Los Académicos», formada con compañeros de la academia.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Se incorporó a «Los Hijos del Rey», donde coincidió con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+                    "displayText": "Raulín Rosendo",
+                    "occurrenceId": "d71bed82-ecbe-41f5-bb87-5c251d4250b2"
+                  }
+                },
+                {
+                  "text": " y ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                    "displayText": "Fernando Villalona",
+                    "occurrenceId": "fb5c8952-71e0-4ef7-a79d-aca25dc03f71"
+                  }
+                },
+                {
+                  "text": ". Durante esa etapa recibió el apodo Oro Negro. Posteriormente dirigió su propio proyecto, cuya actividad se extendió a Puerto Rico y a los Estados Unidos.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Grabaciones y continuidad",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Entre las producciones asociadas a su orquesta figuran «Pa’ gozar», «Pa’ todos los gustos» y «Sueño americano». En esta última, publicada en 2002, aparece acreditado en composición, arreglos, dirección musical y piano. «La cintura» forma parte de su repertorio merenguero.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 2012 inició una etapa en bachata con «Madre», que dio paso a «Only Bachata Collection 1». En 2021 presentó el merengue navideño «Pa’ la calle», del que fue compositor y arreglista. Bajo el nombre «Oro Negro Pagozaa» continuó publicando sencillos como «Que si que si, que no que no» y «Tu boca», este último junto a ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                    "displayText": "Fernando Villalona",
+                    "occurrenceId": "c6a3f529-2fa2-4f2f-8dbd-0c1787079fee"
+                  }
+                },
+                {
+                  "text": ", disponible en plataformas en 2024.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su trayectoria reúne la ejecución pianística, el arreglo, la composición y la dirección de orquesta. El trabajo entre la República Dominicana, Puerto Rico y los Estados Unidos sitúa su carrera dentro de la circulación caribeña del merengue y de su continuidad en nuevos formatos digitales.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "3a597a5e-8081-4304-a2cf-b7463e16ee70",
+        "created_at": "2026-10-25T03:16:31.219945+00:00",
+        "updated_at": "2026-10-25T03:17:32.889725+00:00",
+        "revision": 2
+      }
+    ],
+    "relations": [
+      {
+        "id": "88861e06-57c9-4cf5-93a4-6c0a69adb715",
+        "editorial_document_id": "ca862f3d-290e-4ce5-b911-bdf8d3ac301c",
+        "occurrence_id": "d71bed82-ecbe-41f5-bb87-5c251d4250b2",
+        "entity_type": "artist",
+        "target_artist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+        "created_at": "2026-10-25T03:17:32.889725+00:00",
+        "updated_at": "2026-10-25T03:17:32.889725+00:00"
+      },
+      {
+        "id": "7b0613e3-3ded-47dd-a858-43e2694d4bb4",
+        "editorial_document_id": "ca862f3d-290e-4ce5-b911-bdf8d3ac301c",
+        "occurrence_id": "fb5c8952-71e0-4ef7-a79d-aca25dc03f71",
+        "entity_type": "artist",
+        "target_artist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+        "created_at": "2026-10-25T03:17:32.889725+00:00",
+        "updated_at": "2026-10-25T03:17:32.889725+00:00"
+      },
+      {
+        "id": "296fa161-8870-4acf-91f9-aa0fde6ef809",
+        "editorial_document_id": "ca862f3d-290e-4ce5-b911-bdf8d3ac301c",
+        "occurrence_id": "c6a3f529-2fa2-4f2f-8dbd-0c1787079fee",
+        "entity_type": "artist",
+        "target_artist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+        "created_at": "2026-10-25T03:17:32.889725+00:00",
+        "updated_at": "2026-10-25T03:17:32.889725+00:00"
+      },
+      {
+        "id": "f180d5dd-6c3e-45b3-bf64-f074b2787dd0",
+        "editorial_document_id": "62b6f39b-760e-4154-be7f-2e330682d595",
+        "occurrence_id": "2cce4ac6-1634-43f9-9a97-dcf8875e2993",
+        "entity_type": "artist",
+        "target_artist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+        "created_at": "2026-10-25T03:17:33.046414+00:00",
+        "updated_at": "2026-10-25T03:17:33.046414+00:00"
+      },
+      {
+        "id": "f7b3c62d-1b44-4363-93c4-c5b0533b0eda",
+        "editorial_document_id": "62b6f39b-760e-4154-be7f-2e330682d595",
+        "occurrence_id": "3e08ec6f-7c5e-4e2b-82bd-3f387ccbc32a",
+        "entity_type": "artist",
+        "target_artist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+        "created_at": "2026-10-25T03:17:33.046414+00:00",
+        "updated_at": "2026-10-25T03:17:33.046414+00:00"
+      },
+      {
+        "id": "adde4c6b-f4c2-4656-a136-0fdfe5e81216",
+        "editorial_document_id": "62b6f39b-760e-4154-be7f-2e330682d595",
+        "occurrence_id": "b06937d5-17e8-4e74-8601-7bcbecd5eb12",
+        "entity_type": "artist",
+        "target_artist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+        "created_at": "2026-10-25T03:17:33.046414+00:00",
+        "updated_at": "2026-10-25T03:17:33.046414+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-25T03:17:49.870Z",
+    "counts": {
+      "documents": 2,
+      "relations": 6,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "state": "LOCAL PROPOSAL VALIDATION ONLY — NOT PERSISTED",
+  "checks": [
+    {
+      "name": "Maridalia Hernández",
+      "locale": "en",
+      "document_id": "be9e8ccf-0032-4189-be7f-717282da1dd4",
+      "expected_revision": 5,
+      "next_revision": 6,
+      "blocks": 16,
+      "references": 20,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Juan Luis Guerra",
+      "locale": "en",
+      "document_id": "6c5c1b6c-af75-4784-ae38-ed371b4444fe",
+      "expected_revision": 4,
+      "next_revision": 5,
+      "blocks": 24,
+      "references": 9,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Roger Zayas-Bazán",
+      "locale": "es",
+      "document_id": "ee64136d-6797-4235-bcd9-8fd04a250214",
+      "expected_revision": 2,
+      "next_revision": 3,
+      "blocks": 18,
+      "references": 16,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Roger Zayas-Bazán",
+      "locale": "en",
+      "document_id": "d78e60bc-870a-45c3-a765-875c74e663bd",
+      "expected_revision": 3,
+      "next_revision": 4,
+      "blocks": 18,
+      "references": 16,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Marco Hernández",
+      "locale": "en",
+      "document_id": "a512a40c-49a5-497d-90d6-b6b090f7ed3e",
+      "expected_revision": 3,
+      "next_revision": 4,
+      "blocks": 16,
+      "references": 12,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Adalgisa Pantaleón",
+      "locale": "en",
+      "document_id": "4e4d3f40-72c6-42bc-86ed-03de6b88f781",
+      "expected_revision": 3,
+      "next_revision": 4,
+      "blocks": 11,
+      "references": 13,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Grupo 440",
+      "locale": "en",
+      "document_id": "dddaab10-65bf-4f57-9e2b-1cc78cd1f462",
+      "expected_revision": 5,
+      "next_revision": 6,
+      "blocks": 12,
+      "references": 13,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Grupo 440",
+      "locale": "es",
+      "document_id": "6e03d973-a62d-4acc-9d63-2397f0a562f1",
+      "expected_revision": 3,
+      "next_revision": 4,
+      "blocks": 12,
+      "references": 13,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Mariela Mercado",
+      "locale": "es",
+      "document_id": "e711f2a4-fee4-498f-8950-a2cb1df51478",
+      "expected_revision": 1,
+      "next_revision": 2,
+      "blocks": 15,
+      "references": 15,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Mariela Mercado",
+      "locale": "en",
+      "document_id": "2d6d3024-a005-4ccb-a18d-081492022811",
+      "expected_revision": 1,
+      "next_revision": 2,
+      "blocks": 15,
+      "references": 15,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Juan Luis Guerra",
+      "locale": "es",
+      "document_id": "1408f4ce-46b0-498d-8c93-c79e46f0f4b3",
+      "expected_revision": 4,
+      "next_revision": 5,
+      "blocks": 24,
+      "references": 9,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Maridalia Hernández",
+      "locale": "es",
+      "document_id": "a441f11a-7746-413f-a598-9793c9f43c1e",
+      "expected_revision": 7,
+      "next_revision": 8,
+      "blocks": 16,
+      "references": 20,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Adalgisa Pantaleón",
+      "locale": "es",
+      "document_id": "a62f022e-1c0c-45ab-afd6-ec07470bfb08",
+      "expected_revision": 2,
+      "next_revision": 3,
+      "blocks": 11,
+      "references": 12,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Marco Hernández",
+      "locale": "es",
+      "document_id": "9e071347-9ef8-40bb-a0ec-51a8c9d8ce90",
+      "expected_revision": 2,
+      "next_revision": 3,
+      "blocks": 16,
+      "references": 12,
+      "format": "checked full revised biography"
+    },
+    {
+      "name": "Claudio Cohén",
+      "locale": "en",
+      "document_id": "18627ed8-3ed7-41aa-b8e4-30cc25d1ec20",
+      "expected_revision": 2,
+      "next_revision": 3,
+      "blocks": 23,
+      "references": 9,
+      "format": "preserved existing layout; targeted change only"
+    },
+    {
+      "name": "Claudio Cohén",
+      "locale": "es",
+      "document_id": "92b6ae70-8000-4ff9-b5a8-e21980ee819a",
+      "expected_revision": 2,
+      "next_revision": 3,
+      "blocks": 23,
+      "references": 9,
+      "format": "preserved existing layout; targeted change only"
+    },
+    {
+      "name": "Fefita la Grande",
+      "locale": "en",
+      "document_id": "c835c1bd-68e7-4663-8506-af619a5cfe3c",
+      "expected_revision": 3,
+      "next_revision": 4,
+      "blocks": 16,
+      "references": 8,
+      "format": "preserved existing layout; targeted change only"
+    },
+    {
+      "name": "Fefita la Grande",
+      "locale": "es",
+      "document_id": "d73e9a09-a134-4a15-800b-365224ffee51",
+      "expected_revision": 2,
+      "next_revision": 3,
+      "blocks": 16,
+      "references": 8,
+      "format": "preserved existing layout; targeted change only"
+    },
+    {
+      "name": "Frank Ceara",
+      "locale": "en",
+      "document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+      "expected_revision": 1,
+      "next_revision": 2,
+      "blocks": 14,
+      "references": 15,
+      "format": "preserved existing layout; targeted change only"
+    },
+    {
+      "name": "Frank Ceara",
+      "locale": "es",
+      "document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+      "expected_revision": 1,
+      "next_revision": 2,
+      "blocks": 14,
+      "references": 15,
+      "format": "preserved existing layout; targeted change only"
+    },
+    {
+      "name": "Héctor Aníbal",
+      "locale": "en",
+      "document_id": "1b3b2523-8a57-4308-a105-5fe5f09fc9ae",
+      "expected_revision": 1,
+      "next_revision": 2,
+      "blocks": 11,
+      "references": 3,
+      "format": "preserved existing layout; targeted change only"
+    },
+    {
+      "name": "Héctor Aníbal",
+      "locale": "es",
+      "document_id": "0407c48f-e617-4aec-9c2d-7931314d8b3b",
+      "expected_revision": 1,
+      "next_revision": 2,
+      "blocks": 11,
+      "references": 3,
+      "format": "preserved existing layout; targeted change only"
+    }
+  ],
+  "integrity": {
+    "generatedAt": "2026-11-04T11:41:41.713Z",
+    "counts": {
+      "documents": 22,
+      "relations": 265,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  },
+  "publication": "No database writes or cache refreshes performed."
+}

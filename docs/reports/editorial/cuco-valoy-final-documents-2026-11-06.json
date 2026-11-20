@@ -1,0 +1,2752 @@
+[
+  {
+    "slug": "cuco-valoy",
+    "artist_id": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+    "doc_id": "a741e62b-e30d-4e43-8110-04690e816bd1",
+    "locale": "en",
+    "revision": 5,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Pupo Valoy Reynoso, known as Cuco Valoy and El Brujo, is a Dominican singer, composer and bandleader. He began playing tambora as a child, recorded son with his brother from the late 1950s, and later led an orchestra that brought merengue, son and salsa together.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Manoguayabo",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "He was born on 6 January 1937 in San Miguel, Manoguayabo. His father, Santiago Reynoso, was a carpenter; his mother died when he was four. He learned tambora by listening to local musicians and, at about ten, made one from a tin and paper cement sacks. After limited general schooling, he studied music theory at the National Conservatory. He also plays guitar, piano and bass.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Ahijados",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "He began singing serenades and boleros with his younger brother ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6eccc3e7-82bf-435f-8ae1-ea7e8a721560",
+                "displayText": "Martín Valoy",
+                "occurrenceId": "fd503f93-3d49-482c-a37f-8663d57a1980"
+              }
+            },
+            {
+              "text": ". Inspired by Cuba’s Los Compadres, the brothers were already performing son and using the name ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+                "displayText": "Los Ahijados",
+                "occurrenceId": "dc70fcb9-e53e-42e7-bb8e-a01a2aed6a38"
+              }
+            },
+            {
+              "text": " in 1958. Cuco sang lead and played second guitar; his brother played lead guitar and sang harmony.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "The duo’s name emerged on the amateur programme «Buscando Estrellas». To make their first single, Cuco raised money through a family savings circle, recorded in a small HIZ studio, and arranged for the records to be pressed with Atala Blandino’s help. A 1958 newspaper account already described them as recording artists."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Virtuosos",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In 1975 he formed Los Virtuosos. He had steered his son ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                "displayText": "Ramón Orlando",
+                "occurrenceId": "ae91eff4-59ef-45b6-b083-563331a0f962"
+              }
+            },
+            {
+              "text": " towards piano from the age of seven; the young musician joined as pianist, arranger and musical director. Cuco brought repertoire and song ideas, while his son developed the arrangements for the orchestra.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The orchestra combined merengue, salsa, son montuno, bolero and other tropical styles. Colombia became one of its main stages: a 1979 tour of Cali and Barranquilla inspired «Los Frutos del Carnaval». In 1984 father and son produced a record together for ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "1410b448-6357-4895-a32a-58708697e10d",
+                "displayText": "Alberto Beltrán",
+                "occurrenceId": "4e4b87ea-4727-4154-a935-c37e388809c6"
+              }
+            },
+            {
+              "text": ".",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La Tribu",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The orchestra got its lasting name on tour in Panama, where a member of the audience joked that the band looked like a tribe because of the colour of its players. Valoy liked the idea, started using it, and before long the orchestra was officially La Tribu.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El Brujo",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "«El Brujo» grew out of the consultations of a folk healer Valoy observed; «Juliana» took shape during a New York recording session, drawing on memories of a youthful heartbreak. Other songs include «Nació varón», «Pasito Colombiano», «Los Frutos del Carnaval» and «No Me Empuje». His repertoire also included socially engaged songs such as «Páginas gloriosas de mi patria». He shared stages with Machito, Celia Cruz, Oscar D’León, ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+                "displayText": "Johnny Ventura",
+                "occurrenceId": "8253a74e-d36d-4cae-a1f3-bddfe901dbab"
+              }
+            },
+            {
+              "text": " and ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "e005898c-4fcc-45da-b857-c6775e92fa52",
+                "displayText": "Johnny Pacheco",
+                "occurrenceId": "67229274-b423-4c02-88c5-e2ff41bb3ec6"
+              }
+            },
+            {
+              "text": ".",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The honours",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Colombia has given him the Congo de Oro at the Barranquilla carnival several times, in the salsa category and, decades later, as king of the people. In 2017 Acroarte gave him the Gran Soberano, its highest award, putting him alongside ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+                "displayText": "Johnny Ventura",
+                "occurrenceId": "c7eaccea-42ba-4e33-8ba2-d81956b1967e"
+              }
+            },
+            {
+              "text": ", ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                "displayText": "Juan Luis Guerra",
+                "occurrenceId": "645b814d-43df-412f-9341-cf0cb0a533f2"
+              }
+            },
+            {
+              "text": " 4.40, ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+                "displayText": "Wilfrido Vargas",
+                "occurrenceId": "6cde7e15-b2cb-4e8c-964b-bbbfc6382483"
+              }
+            },
+            {
+              "text": " and ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "e005898c-4fcc-45da-b857-c6775e92fa52",
+                "displayText": "Johnny Pacheco",
+                "occurrenceId": "7cd314ad-fd2b-4c5d-b695-322aace8087e"
+              }
+            },
+            {
+              "text": "; the Latin Recording Academy gave him its Musical Excellence Award the same year.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "mirror": "Pupo Valoy Reynoso, known as Cuco Valoy and El Brujo, is a Dominican singer, composer and bandleader. He began playing tambora as a child, recorded son with his brother from the late 1950s, and later led an orchestra that brought merengue, son and salsa together.\n\n**Manoguayabo**\n\nHe was born on 6 January 1937 in San Miguel, Manoguayabo. His father, Santiago Reynoso, was a carpenter; his mother died when he was four. He learned tambora by listening to local musicians and, at about ten, made one from a tin and paper cement sacks. After limited general schooling, he studied music theory at the National Conservatory. He also plays guitar, piano and bass.\n\n**Los Ahijados**\n\nHe began singing serenades and boleros with his younger brother Martín Valoy. Inspired by Cuba’s Los Compadres, the brothers were already performing son and using the name Los Ahijados in 1958. Cuco sang lead and played second guitar; his brother played lead guitar and sang harmony.\n\nThe duo’s name emerged on the amateur programme «Buscando Estrellas». To make their first single, Cuco raised money through a family savings circle, recorded in a small HIZ studio, and arranged for the records to be pressed with Atala Blandino’s help. A 1958 newspaper account already described them as recording artists.\n\n**Los Virtuosos**\n\nIn 1975 he formed Los Virtuosos. He had steered his son Ramón Orlando towards piano from the age of seven; the young musician joined as pianist, arranger and musical director. Cuco brought repertoire and song ideas, while his son developed the arrangements for the orchestra.\n\nThe orchestra combined merengue, salsa, son montuno, bolero and other tropical styles. Colombia became one of its main stages: a 1979 tour of Cali and Barranquilla inspired «Los Frutos del Carnaval». In 1984 father and son produced a record together for Alberto Beltrán.\n\n**La Tribu**\n\nThe orchestra got its lasting name on tour in Panama, where a member of the audience joked that the band looked like a tribe because of the colour of its players. Valoy liked the idea, started using it, and before long the orchestra was officially La Tribu.\n\n**El Brujo**\n\n«El Brujo» grew out of the consultations of a folk healer Valoy observed; «Juliana» took shape during a New York recording session, drawing on memories of a youthful heartbreak. Other songs include «Nació varón», «Pasito Colombiano», «Los Frutos del Carnaval» and «No Me Empuje». His repertoire also included socially engaged songs such as «Páginas gloriosas de mi patria». He shared stages with Machito, Celia Cruz, Oscar D’León, Johnny Ventura and Johnny Pacheco.\n\n**The honours**\n\nColombia has given him the Congo de Oro at the Barranquilla carnival several times, in the salsa category and, decades later, as king of the people. In 2017 Acroarte gave him the Gran Soberano, its highest award, putting him alongside Johnny Ventura, Juan Luis Guerra 4.40, Wilfrido Vargas and Johnny Pacheco; the Latin Recording Academy gave him its Musical Excellence Award the same year."
+  },
+  {
+    "slug": "cuco-valoy",
+    "artist_id": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+    "doc_id": "3f978fc5-e7ec-4ecd-9e99-d168b7edec17",
+    "locale": "es",
+    "revision": 4,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Pupo Valoy Reynoso, conocido como Cuco Valoy y llamado El Brujo, es un cantante, compositor y director de orquesta dominicano. Empezó como tamborero en su niñez, grabó son con su hermano desde finales de los años cincuenta y luego dirigió una orquesta que reunió merengue, son y salsa.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Manoguayabo",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nació el 6 de enero de 1937 en la sección San Miguel de Manoguayabo. Su padre, Santiago Reynoso, era carpintero; su madre murió cuando él tenía cuatro años. Aprendió a tocar la tambora escuchando a los músicos del lugar y, hacia los diez años, fabricó una con una lata y papel de sacos de cemento. Tras una educación escolar limitada, estudió teoría musical en el Conservatorio Nacional. También toca guitarra, piano y bajo.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Ahijados",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Empezó cantando serenatas y boleros en dúo con su hermano menor ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6eccc3e7-82bf-435f-8ae1-ea7e8a721560",
+                "displayText": "Martín Valoy",
+                "occurrenceId": "751d72bb-ab69-4676-b666-b37b3dd24e1d"
+              }
+            },
+            {
+              "text": ". Inspirados por Los Compadres de Cuba, los hermanos ya interpretaban son y usaban el nombre de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+                "displayText": "Los Ahijados",
+                "occurrenceId": "08bc4613-6954-4e8c-bf74-d9a62614a3d2"
+              }
+            },
+            {
+              "text": " en 1958. Cuco cantaba la voz principal y hacía la guitarra segunda; su hermano tocaba la guitarra solista y cantaba la segunda voz.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "El nombre del dúo surgió en el programa de aficionados «Buscando Estrellas». Para sacar el primer sencillo, Cuco obtuvo dinero mediante un san familiar, grabó en un pequeño estudio de HIZ y encargó la fabricación de los discos con ayuda de Atala Blandino. Una crónica de 1958 ya los mencionaba como artistas con grabaciones."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Virtuosos",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En 1975 formó Los Virtuosos. Había encaminado a su hijo ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                "displayText": "Ramón Orlando",
+                "occurrenceId": "1490e55b-b5ee-44a5-b797-b59a29bbc98a"
+              }
+            },
+            {
+              "text": " hacia el piano desde los siete años; el joven se incorporó como pianista, arreglista y director musical. Cuco aportaba el repertorio y las ideas de las canciones, y su hijo desarrollaba sus arreglos para la orquesta.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La orquesta combinó merengue, salsa, son montuno, bolero y otros ritmos tropicales. Colombia se volvió una de sus plazas principales: una gira de 1979 por Cali y Barranquilla inspiró «Los Frutos del Carnaval». En 1984 padre e hijo produjeron juntos un disco para ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "1410b448-6357-4895-a32a-58708697e10d",
+                "displayText": "Alberto Beltrán",
+                "occurrenceId": "d4204637-5d65-4754-9bed-3eb4e425e4cf"
+              }
+            },
+            {
+              "text": ".",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La Tribu",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La orquesta consiguió el nombre que le quedó en una gira por Panamá, donde alguien del público bromeó diciendo que la banda parecía una tribu por el color de sus integrantes. A Valoy le gustó la idea, empezó a usarla, y al poco tiempo la orquesta se llamaba oficialmente La Tribu.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El Brujo",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "«El Brujo» nació de las consultas de una santera que Valoy observaba; «Juliana» tomó forma durante una sesión de grabación en Nueva York, a partir de recuerdos de un desengaño juvenil. A esas canciones se suman «Nació varón», «Pasito Colombiano», «Los Frutos del Carnaval» y «No Me Empuje». Su repertorio también incluyó canciones de tema social como «Páginas gloriosas de mi patria». Compartió tarima con Machito, Celia Cruz, Oscar D’León, ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+                "displayText": "Johnny Ventura",
+                "occurrenceId": "7f6de48a-4f71-4a4e-a29a-d76b933b7e9e"
+              }
+            },
+            {
+              "text": " y ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "e005898c-4fcc-45da-b857-c6775e92fa52",
+                "displayText": "Johnny Pacheco",
+                "occurrenceId": "a28d83e4-1516-405c-8b0b-8a8f9dda91b2"
+              }
+            },
+            {
+              "text": ".",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los reconocimientos",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Colombia le ha dado el Congo de Oro del carnaval de Barranquilla varias veces, en la categoría de salsa y, décadas después, como rey del pueblo. En 2017 Acroarte le entregó el Gran Soberano, su máximo galardón, poniéndolo junto a ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+                "displayText": "Johnny Ventura",
+                "occurrenceId": "e18f4252-be9e-4488-bccc-679d41f2107e"
+              }
+            },
+            {
+              "text": ", ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                "displayText": "Juan Luis Guerra",
+                "occurrenceId": "1bb7b0dc-ca84-41ff-8378-bb296d5ea473"
+              }
+            },
+            {
+              "text": " 4.40, ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+                "displayText": "Wilfrido Vargas",
+                "occurrenceId": "c6d8658b-1c1c-4ead-8c3d-f22c86ee41a5"
+              }
+            },
+            {
+              "text": " y ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "e005898c-4fcc-45da-b857-c6775e92fa52",
+                "displayText": "Johnny Pacheco",
+                "occurrenceId": "b7f05aad-20ca-45c2-a4b7-a25bf999d1e2"
+              }
+            },
+            {
+              "text": "; ese mismo año la Academia Latina de la Grabación le dio su Premio a la Excelencia Musical.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "mirror": "Pupo Valoy Reynoso, conocido como Cuco Valoy y llamado El Brujo, es un cantante, compositor y director de orquesta dominicano. Empezó como tamborero en su niñez, grabó son con su hermano desde finales de los años cincuenta y luego dirigió una orquesta que reunió merengue, son y salsa.\n\n**Manoguayabo**\n\nNació el 6 de enero de 1937 en la sección San Miguel de Manoguayabo. Su padre, Santiago Reynoso, era carpintero; su madre murió cuando él tenía cuatro años. Aprendió a tocar la tambora escuchando a los músicos del lugar y, hacia los diez años, fabricó una con una lata y papel de sacos de cemento. Tras una educación escolar limitada, estudió teoría musical en el Conservatorio Nacional. También toca guitarra, piano y bajo.\n\n**Los Ahijados**\n\nEmpezó cantando serenatas y boleros en dúo con su hermano menor Martín Valoy. Inspirados por Los Compadres de Cuba, los hermanos ya interpretaban son y usaban el nombre de Los Ahijados en 1958. Cuco cantaba la voz principal y hacía la guitarra segunda; su hermano tocaba la guitarra solista y cantaba la segunda voz.\n\nEl nombre del dúo surgió en el programa de aficionados «Buscando Estrellas». Para sacar el primer sencillo, Cuco obtuvo dinero mediante un san familiar, grabó en un pequeño estudio de HIZ y encargó la fabricación de los discos con ayuda de Atala Blandino. Una crónica de 1958 ya los mencionaba como artistas con grabaciones.\n\n**Los Virtuosos**\n\nEn 1975 formó Los Virtuosos. Había encaminado a su hijo Ramón Orlando hacia el piano desde los siete años; el joven se incorporó como pianista, arreglista y director musical. Cuco aportaba el repertorio y las ideas de las canciones, y su hijo desarrollaba sus arreglos para la orquesta.\n\nLa orquesta combinó merengue, salsa, son montuno, bolero y otros ritmos tropicales. Colombia se volvió una de sus plazas principales: una gira de 1979 por Cali y Barranquilla inspiró «Los Frutos del Carnaval». En 1984 padre e hijo produjeron juntos un disco para Alberto Beltrán.\n\n**La Tribu**\n\nLa orquesta consiguió el nombre que le quedó en una gira por Panamá, donde alguien del público bromeó diciendo que la banda parecía una tribu por el color de sus integrantes. A Valoy le gustó la idea, empezó a usarla, y al poco tiempo la orquesta se llamaba oficialmente La Tribu.\n\n**El Brujo**\n\n«El Brujo» nació de las consultas de una santera que Valoy observaba; «Juliana» tomó forma durante una sesión de grabación en Nueva York, a partir de recuerdos de un desengaño juvenil. A esas canciones se suman «Nació varón», «Pasito Colombiano», «Los Frutos del Carnaval» y «No Me Empuje». Su repertorio también incluyó canciones de tema social como «Páginas gloriosas de mi patria». Compartió tarima con Machito, Celia Cruz, Oscar D’León, Johnny Ventura y Johnny Pacheco.\n\n**Los reconocimientos**\n\nColombia le ha dado el Congo de Oro del carnaval de Barranquilla varias veces, en la categoría de salsa y, décadas después, como rey del pueblo. En 2017 Acroarte le entregó el Gran Soberano, su máximo galardón, poniéndolo junto a Johnny Ventura, Juan Luis Guerra 4.40, Wilfrido Vargas y Johnny Pacheco; ese mismo año la Academia Latina de la Grabación le dio su Premio a la Excelencia Musical."
+  },
+  {
+    "slug": "los-ahijados",
+    "artist_id": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+    "doc_id": "62330d42-6d64-4b2c-96f6-b31d188838c2",
+    "locale": "en",
+    "revision": 3,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Ahijados — The Godchildren — is the Dominican duo of brothers ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "2897e38e-e90f-49df-9d59-b84f6f623b03"
+              }
+            },
+            {
+              "text": " and ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6eccc3e7-82bf-435f-8ae1-ea7e8a721560",
+                "displayText": "Martín Valoy",
+                "occurrenceId": "6232bfd1-e372-4afb-b71d-c11b10f1942a"
+              }
+            },
+            {
+              "text": ", formed in 1958, whose son montuno recordings from the late 1950s made them one of the country’s best-known acts outside merengue.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Serenades to son montuno",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The brothers began with serenades and boleros. By 1958, ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "f57516cb-c991-495e-81da-6f9c9839cdd8"
+              }
+            },
+            {
+              "text": " and his brother were already performing son montuno inspired by Cuba’s Los Compadres. Lead vocals and second guitar belonged to ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "999d5a8b-5954-4031-bc90-c894eef087b0"
+              }
+            },
+            {
+              "text": "; lead guitar and tres belonged to ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6eccc3e7-82bf-435f-8ae1-ea7e8a721560",
+                "displayText": "Martín Valoy",
+                "occurrenceId": "246a6909-5998-48bc-9b12-5cf3f615cb0b"
+              }
+            },
+            {
+              "text": ", who also sang harmony. Their repertoire included «Qué será de mí», written by ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "4b85d1eb-ebaa-42b5-9901-5e2805af9138",
+                "displayText": "Bienvenido Fabián",
+                "occurrenceId": "85ce41aa-9b54-47c7-b6ec-9b1a765866fe"
+              }
+            },
+            {
+              "text": ".",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "The name emerged during an appearance on «Buscando Estrellas», the amateur programme on La Voz Dominicana. The first single was financed with a relative’s help and recorded in a small HIZ studio; Atala Blandino helped arrange the pressing. By July 1958 the press was already describing the duo through its recordings."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "On «Kubaney»",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Recording mostly for the Kubaney label, they built a catalogue through the sixties and seventies: «El enterrador» (1965), «Vuelven... Los Ahijados», «Virgen de la Cueva» (1973), «Ay, mi cien pesos!» and «Sigue afincando» (1974), «La resaca» (1975), «De nuevo Los Ahijados» (1976) and «Baílalo y gózalo...!! Vol. 4» (1978). Songs such as «Timoteo», «El lunar», «El hombre misterioso», «El paso de la jaiba», «Vaivén» and «Corazón de acero», the last written by ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "1e4869c1-4585-4d34-9777-2f62aa8638ce"
+              }
+            },
+            {
+              "text": ", kept returning in later compilations.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The «Los Virtuosos» years",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In 1975 ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "31a7e674-014c-4664-90d0-6ed8afa50a08"
+              }
+            },
+            {
+              "text": " set the duo aside to found «Los Virtuosos», later «La Tribu», the orchestra where his son ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                "displayText": "Ramón Orlando",
+                "occurrenceId": "c82b2937-e527-4547-9dde-e065ee4463f0"
+              }
+            },
+            {
+              "text": " came up as arranger and ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6eccc3e7-82bf-435f-8ae1-ea7e8a721560",
+                "displayText": "Martín Valoy",
+                "occurrenceId": "3abdb6cd-b9a2-43a2-850f-8263367e7d2e"
+              }
+            },
+            {
+              "text": " played bass. Martín used the pause to release his only solo album, «Hagan coro señores, llegó el Ahijado» (1981), before the brothers returned as Los Ahijados: «Vuelven Los Ahijados» (1983), the compilations «Los mejores discos» (1985) and «20 éxitos de Los Ahijados» (1988), and, in 1994 and 1995, «Nostalgia Caribeña», «Cachao vs. Los Ahijados» and «Tus ojos indios/Mariposa nocturna».",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "«De nuevo al son»",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The brothers came together once more for «De nuevo al son» (1997), a studio album on which both ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "821c6110-34f2-490e-bab6-2aa2d4c86656"
+              }
+            },
+            {
+              "text": " and ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6eccc3e7-82bf-435f-8ae1-ea7e8a721560",
+                "displayText": "Martín Valoy",
+                "occurrenceId": "a52f5d34-d0aa-4fe8-a25d-4c27ed1dee74"
+              }
+            },
+            {
+              "text": " are credited as lead vocalists.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Legacy",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Ahijados carried the Cuban son montuno into Dominican popular music at a time when merengue dominated the radio, and their records stayed in circulation through four decades of Dominican family listening, from the original Kubaney pressings to the reissue compilations of the 1980s and 1990s.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "mirror": "Los Ahijados — The Godchildren — is the Dominican duo of brothers Cuco Valoy and Martín Valoy, formed in 1958, whose son montuno recordings from the late 1950s made them one of the country’s best-known acts outside merengue.\n\n**Serenades to son montuno**\n\nThe brothers began with serenades and boleros. By 1958, Cuco Valoy and his brother were already performing son montuno inspired by Cuba’s Los Compadres. Lead vocals and second guitar belonged to Cuco Valoy; lead guitar and tres belonged to Martín Valoy, who also sang harmony. Their repertoire included «Qué será de mí», written by Bienvenido Fabián.\n\nThe name emerged during an appearance on «Buscando Estrellas», the amateur programme on La Voz Dominicana. The first single was financed with a relative’s help and recorded in a small HIZ studio; Atala Blandino helped arrange the pressing. By July 1958 the press was already describing the duo through its recordings.\n\n**On «Kubaney»**\n\nRecording mostly for the Kubaney label, they built a catalogue through the sixties and seventies: «El enterrador» (1965), «Vuelven... Los Ahijados», «Virgen de la Cueva» (1973), «Ay, mi cien pesos!» and «Sigue afincando» (1974), «La resaca» (1975), «De nuevo Los Ahijados» (1976) and «Baílalo y gózalo...!! Vol. 4» (1978). Songs such as «Timoteo», «El lunar», «El hombre misterioso», «El paso de la jaiba», «Vaivén» and «Corazón de acero», the last written by Cuco Valoy, kept returning in later compilations.\n\n**The «Los Virtuosos» years**\n\nIn 1975 Cuco Valoy set the duo aside to found «Los Virtuosos», later «La Tribu», the orchestra where his son Ramón Orlando came up as arranger and Martín Valoy played bass. Martín used the pause to release his only solo album, «Hagan coro señores, llegó el Ahijado» (1981), before the brothers returned as Los Ahijados: «Vuelven Los Ahijados» (1983), the compilations «Los mejores discos» (1985) and «20 éxitos de Los Ahijados» (1988), and, in 1994 and 1995, «Nostalgia Caribeña», «Cachao vs. Los Ahijados» and «Tus ojos indios/Mariposa nocturna».\n\n**«De nuevo al son»**\n\nThe brothers came together once more for «De nuevo al son» (1997), a studio album on which both Cuco Valoy and Martín Valoy are credited as lead vocalists.\n\n**Legacy**\n\nLos Ahijados carried the Cuban son montuno into Dominican popular music at a time when merengue dominated the radio, and their records stayed in circulation through four decades of Dominican family listening, from the original Kubaney pressings to the reissue compilations of the 1980s and 1990s."
+  },
+  {
+    "slug": "los-ahijados",
+    "artist_id": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+    "doc_id": "4d41297a-e150-4735-a884-90f07174d87a",
+    "locale": "es",
+    "revision": 2,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Ahijados es el dúo dominicano de los hermanos ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "7ecd36b1-805b-4efd-87e2-a44815f85aa7"
+              }
+            },
+            {
+              "text": " y ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6eccc3e7-82bf-435f-8ae1-ea7e8a721560",
+                "displayText": "Martín Valoy",
+                "occurrenceId": "51564989-ad1e-4a35-8f45-ca08fd0d94db"
+              }
+            },
+            {
+              "text": ", formado en 1958, cuyas grabaciones de son montuno desde finales de los cincuenta los convirtieron en uno de los actos más conocidos del país fuera del merengue.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "De la serenata al son montuno",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los hermanos empezaron cantando serenatas y boleros. En 1958, ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "3d156b2a-bba0-48ce-9841-f6e082a324c9"
+              }
+            },
+            {
+              "text": " y su hermano ya interpretaban sones montunos inspirados por Los Compadres de Cuba. La voz principal y la segunda guitarra correspondían a ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "bf3dac73-b6aa-4537-868b-60164e1cc2fc"
+              }
+            },
+            {
+              "text": "; la guitarra solista y el tres, a ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6eccc3e7-82bf-435f-8ae1-ea7e8a721560",
+                "displayText": "Martín Valoy",
+                "occurrenceId": "2a04b178-9f51-4e68-a89e-2f8441c2378c"
+              }
+            },
+            {
+              "text": ", quien también cantaba la segunda voz. Su repertorio incluyó «Qué será de mí», escrita por ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "4b85d1eb-ebaa-42b5-9901-5e2805af9138",
+                "displayText": "Bienvenido Fabián",
+                "occurrenceId": "0eab3c7c-7179-46b7-ab30-03aa9d22ed2c"
+              }
+            },
+            {
+              "text": ".",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "El nombre nació durante su paso por «Buscando Estrellas», el programa de aficionados de La Voz Dominicana. El primer sencillo se financió con ayuda de una familiar y se grabó en un pequeño estudio de HIZ; Atala Blandino facilitó la fabricación de las copias. En julio de 1958 la prensa ya describía al dúo por sus grabaciones."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En «Kubaney»",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Grabando sobre todo para el sello Kubaney, armaron un catálogo a lo largo de los sesenta y setenta: «El enterrador» (1965), «Vuelven... Los Ahijados», «Virgen de la Cueva» (1973), «Ay, mi cien pesos!» y «Sigue afincando» (1974), «La resaca» (1975), «De nuevo Los Ahijados» (1976) y «Baílalo y gózalo...!! Vol. 4» (1978). Temas como «Timoteo», «El lunar», «El hombre misterioso», «El paso de la jaiba», «Vaivén» y «Corazón de acero», esta última escrita por ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "14a3cb8f-6094-42bf-949b-6d8f10eb4f27"
+              }
+            },
+            {
+              "text": ", siguieron volviendo en recopilaciones posteriores.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los años de «Los Virtuosos»",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En 1975 ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "f934747f-ef26-47fa-bd89-d93b4f0a1f68"
+              }
+            },
+            {
+              "text": " dejó el dúo en pausa para fundar «Los Virtuosos», después «La Tribu», la orquesta donde su hijo ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                "displayText": "Ramón Orlando",
+                "occurrenceId": "b3dde33e-89d0-4f54-9646-a919e06138d9"
+              }
+            },
+            {
+              "text": " se formó como arreglista y donde ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6eccc3e7-82bf-435f-8ae1-ea7e8a721560",
+                "displayText": "Martín Valoy",
+                "occurrenceId": "9b97cff9-acde-43aa-92fd-6de02baf24ae"
+              }
+            },
+            {
+              "text": " tocó el bajo. Martín aprovechó la pausa para publicar su único álbum como solista, «Hagan coro señores, llegó el Ahijado» (1981), antes de que los hermanos volvieran como Los Ahijados: «Vuelven Los Ahijados» (1983), las recopilaciones «Los mejores discos» (1985) y «20 éxitos de Los Ahijados» (1988), y, en 1994 y 1995, «Nostalgia Caribeña», «Cachao vs. Los Ahijados» y «Tus ojos indios/Mariposa nocturna».",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "«De nuevo al son»",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los hermanos se juntaron una vez más para «De nuevo al son» (1997), un álbum de estudio en el que tanto ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "4da3721c-d21d-4ff8-8a93-074378349481"
+              }
+            },
+            {
+              "text": " como ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6eccc3e7-82bf-435f-8ae1-ea7e8a721560",
+                "displayText": "Martín Valoy",
+                "occurrenceId": "6f2391ec-a7d3-4cc1-8982-32e3202398b1"
+              }
+            },
+            {
+              "text": " figuran acreditados como voces principales.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Legado",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Ahijados llevaron el son montuno cubano a la música popular dominicana en un momento en que el merengue dominaba la radio, y sus discos se mantuvieron en circulación durante cuatro décadas de escucha familiar dominicana, desde las prensas originales de Kubaney hasta las recopilaciones de reedición de los ochenta y los noventa.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "mirror": "Los Ahijados es el dúo dominicano de los hermanos Cuco Valoy y Martín Valoy, formado en 1958, cuyas grabaciones de son montuno desde finales de los cincuenta los convirtieron en uno de los actos más conocidos del país fuera del merengue.\n\n**De la serenata al son montuno**\n\nLos hermanos empezaron cantando serenatas y boleros. En 1958, Cuco Valoy y su hermano ya interpretaban sones montunos inspirados por Los Compadres de Cuba. La voz principal y la segunda guitarra correspondían a Cuco Valoy; la guitarra solista y el tres, a Martín Valoy, quien también cantaba la segunda voz. Su repertorio incluyó «Qué será de mí», escrita por Bienvenido Fabián.\n\nEl nombre nació durante su paso por «Buscando Estrellas», el programa de aficionados de La Voz Dominicana. El primer sencillo se financió con ayuda de una familiar y se grabó en un pequeño estudio de HIZ; Atala Blandino facilitó la fabricación de las copias. En julio de 1958 la prensa ya describía al dúo por sus grabaciones.\n\n**En «Kubaney»**\n\nGrabando sobre todo para el sello Kubaney, armaron un catálogo a lo largo de los sesenta y setenta: «El enterrador» (1965), «Vuelven... Los Ahijados», «Virgen de la Cueva» (1973), «Ay, mi cien pesos!» y «Sigue afincando» (1974), «La resaca» (1975), «De nuevo Los Ahijados» (1976) y «Baílalo y gózalo...!! Vol. 4» (1978). Temas como «Timoteo», «El lunar», «El hombre misterioso», «El paso de la jaiba», «Vaivén» y «Corazón de acero», esta última escrita por Cuco Valoy, siguieron volviendo en recopilaciones posteriores.\n\n**Los años de «Los Virtuosos»**\n\nEn 1975 Cuco Valoy dejó el dúo en pausa para fundar «Los Virtuosos», después «La Tribu», la orquesta donde su hijo Ramón Orlando se formó como arreglista y donde Martín Valoy tocó el bajo. Martín aprovechó la pausa para publicar su único álbum como solista, «Hagan coro señores, llegó el Ahijado» (1981), antes de que los hermanos volvieran como Los Ahijados: «Vuelven Los Ahijados» (1983), las recopilaciones «Los mejores discos» (1985) y «20 éxitos de Los Ahijados» (1988), y, en 1994 y 1995, «Nostalgia Caribeña», «Cachao vs. Los Ahijados» y «Tus ojos indios/Mariposa nocturna».\n\n**«De nuevo al son»**\n\nLos hermanos se juntaron una vez más para «De nuevo al son» (1997), un álbum de estudio en el que tanto Cuco Valoy como Martín Valoy figuran acreditados como voces principales.\n\n**Legado**\n\nLos Ahijados llevaron el son montuno cubano a la música popular dominicana en un momento en que el merengue dominaba la radio, y sus discos se mantuvieron en circulación durante cuatro décadas de escucha familiar dominicana, desde las prensas originales de Kubaney hasta las recopilaciones de reedición de los ochenta y los noventa."
+  },
+  {
+    "slug": "ramon-orlando",
+    "artist_id": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+    "doc_id": "ae4945d7-8056-4879-8eb1-4cfd84f2717e",
+    "locale": "en",
+    "revision": 5,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ramón Orlando Valoy (born 29 July 1960) is a Dominican musician, arranger, composer, producer, and orchestra director, widely regarded as one of the most technically accomplished figures in modern merengue. His work spans more than four decades and is distinguished by sophisticated harmonic language, intricate brass writing, and a pivotal role in elevating the professional standards of Dominican orchestral music. In addition to his contributions to merengue, he has developed an extensive catalog of Christian music and has been active as a pastor and musical educator.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Early Life and Musical Formation",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ramón Orlando was born in Santo Domingo into one of the Dominican Republic’s most musically influential families. He is the son of ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "e761c89c-d659-4ab9-b252-6cf713ce7f4b"
+              }
+            },
+            {
+              "text": ", a prominent bandleader whose ensembles — including ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+                "displayText": "Los Ahijados",
+                "occurrenceId": "a09aef94-8a06-4efd-a578-a65caf3d6e3f"
+              }
+            },
+            {
+              "text": " and La Tribu — played a central role in the development of Dominican son, salsa, and merengue. Growing up in this environment exposed Ramón Orlando to the discipline of rehearsals, the structure of tropical orchestras, and the practical demands of professional musicianship.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "His father noticed his early interest in percussion but steered him towards piano from the age of seven and gave him his first lessons. Ramón Orlando studied solfège and piano, adding formal training to the work he learned in the family. The combination helped him develop his own orchestral writing.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Professional Beginnings",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In 1975 he joined Los Virtuosos, his father’s new orchestra, as pianist, arranger and musical director. His father brought song and repertoire ideas; Ramón Orlando developed them into arrangements for the band, later known as La Tribu. He worked with merengue, salsa and other Caribbean rhythms from this period onward.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "His work with La Tribu established him as a rising arranger and prepared him to lead his own projects.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La Orquesta Internacional and Artistic Consolidation",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In the late 1980s he founded La Orquesta Internacional and developed a merengue sound built on elaborate arrangements and choral interplay.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The ensemble produced numerous hits interpreted by vocalists such as ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "fb068903-a085-4a3f-b846-0be0b3e28934",
+                "displayText": "Henry García",
+                "occurrenceId": "1f1ea85e-b371-4cef-807e-adcba378778f"
+              }
+            },
+            {
+              "text": ", ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "bb114227-a160-4f45-960e-b6c1710fbeef",
+                "displayText": "Peter Cruz",
+                "occurrenceId": "b587cbf1-3c85-4f7f-8c95-045dd610d3f9"
+              }
+            },
+            {
+              "text": ", Nino Segarra, and others who passed through the orchestra. Ramón Orlando’s work as arranger during this period set new standards for complexity and precision in merengue production.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Arranger and Producer",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "As an arranger and producer he worked for his own orchestra and for other Dominican performers.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "His composition «La Carnada» was recorded by ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "bc2289d0-ae94-48b5-8eb9-7f0ae18b845a",
+                "displayText": "Miriam Cruz",
+                "occurrenceId": "54405536-3c9a-4c7b-a2ea-d2e7700d6d6a"
+              }
+            },
+            {
+              "text": ". According to arranger ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "1519cbca-ae0a-4ede-924b-244a49c9024e",
+                "displayText": "Henry Jiménez",
+                "occurrenceId": "caa85b90-e318-4b54-9b71-9a587ad3ef88"
+              }
+            },
+            {
+              "text": ", Orlando prepared an earlier arrangement, and Jiménez later made a new version for Cruz.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Transition to Christian Music",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Beginning in the 1990s, Ramón Orlando underwent a spiritual transformation that led him to devote significant attention to Christian music and pastoral work. His religious compositions include hymns, ballads, and tropical fusions with devotional themes, often marked by the same harmonic refinement present in his secular catalog.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "His Christian repertoire has been influential within Dominican congregations and has maintained visibility in broader musical contexts, reflecting his ability to bridge sacred and popular forms.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Musical Style and Influences",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "His writing brings orchestral merengue together with jazz harmony and Caribbean rhythms, with piano at its centre.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "His upbringing within ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "ef89638d-ba87-4ea0-a6b3-8695e92ae2b2"
+              }
+            },
+            {
+              "text": "’s musical environment and his experience in tropical ensembles shaped his view of merengue as a genre capable of supporting complex formal development while retaining its energetic, dance‑driven character.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Legacy",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "His career links his work in his father’s orchestra, leadership of his own ensemble and a catalogue of Christian music.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "His work occupies a central place in the history of Dominican popular music and continues to serve as a reference point for musicians, producers, and scholars of Caribbean musical traditions.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "mirror": "Ramón Orlando Valoy (born 29 July 1960) is a Dominican musician, arranger, composer, producer, and orchestra director, widely regarded as one of the most technically accomplished figures in modern merengue. His work spans more than four decades and is distinguished by sophisticated harmonic language, intricate brass writing, and a pivotal role in elevating the professional standards of Dominican orchestral music. In addition to his contributions to merengue, he has developed an extensive catalog of Christian music and has been active as a pastor and musical educator.\n\n**Early Life and Musical Formation**\n\nRamón Orlando was born in Santo Domingo into one of the Dominican Republic’s most musically influential families. He is the son of Cuco Valoy, a prominent bandleader whose ensembles — including Los Ahijados and La Tribu — played a central role in the development of Dominican son, salsa, and merengue. Growing up in this environment exposed Ramón Orlando to the discipline of rehearsals, the structure of tropical orchestras, and the practical demands of professional musicianship.\n\nHis father noticed his early interest in percussion but steered him towards piano from the age of seven and gave him his first lessons. Ramón Orlando studied solfège and piano, adding formal training to the work he learned in the family. The combination helped him develop his own orchestral writing.\n\n**Professional Beginnings**\n\nIn 1975 he joined Los Virtuosos, his father’s new orchestra, as pianist, arranger and musical director. His father brought song and repertoire ideas; Ramón Orlando developed them into arrangements for the band, later known as La Tribu. He worked with merengue, salsa and other Caribbean rhythms from this period onward.\n\nHis work with La Tribu established him as a rising arranger and prepared him to lead his own projects.\n\n**La Orquesta Internacional and Artistic Consolidation**\n\nIn the late 1980s he founded La Orquesta Internacional and developed a merengue sound built on elaborate arrangements and choral interplay.\n\nThe ensemble produced numerous hits interpreted by vocalists such as Henry García, Peter Cruz, Nino Segarra, and others who passed through the orchestra. Ramón Orlando’s work as arranger during this period set new standards for complexity and precision in merengue production.\n\n**Arranger and Producer**\n\nAs an arranger and producer he worked for his own orchestra and for other Dominican performers.\n\nHis composition «La Carnada» was recorded by Miriam Cruz. According to arranger Henry Jiménez, Orlando prepared an earlier arrangement, and Jiménez later made a new version for Cruz.\n\n**Transition to Christian Music**\n\nBeginning in the 1990s, Ramón Orlando underwent a spiritual transformation that led him to devote significant attention to Christian music and pastoral work. His religious compositions include hymns, ballads, and tropical fusions with devotional themes, often marked by the same harmonic refinement present in his secular catalog.\n\nHis Christian repertoire has been influential within Dominican congregations and has maintained visibility in broader musical contexts, reflecting his ability to bridge sacred and popular forms.\n\n**Musical Style and Influences**\n\nHis writing brings orchestral merengue together with jazz harmony and Caribbean rhythms, with piano at its centre.\n\nHis upbringing within Cuco Valoy’s musical environment and his experience in tropical ensembles shaped his view of merengue as a genre capable of supporting complex formal development while retaining its energetic, dance‑driven character.\n\n**Legacy**\n\nHis career links his work in his father’s orchestra, leadership of his own ensemble and a catalogue of Christian music.\n\nHis work occupies a central place in the history of Dominican popular music and continues to serve as a reference point for musicians, producers, and scholars of Caribbean musical traditions."
+  },
+  {
+    "slug": "ramon-orlando",
+    "artist_id": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+    "doc_id": "560a9787-972f-476f-9543-785c6c5f4d06",
+    "locale": "es",
+    "revision": 4,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ramón Orlando Valoy (nacido el 29 de julio de 1960) es un músico, arreglista, compositor, productor y director de orquesta dominicano, reconocido como una de las figuras más influyentes en la evolución técnica y estilística del merengue moderno. Su trabajo abarca más de cuatro décadas y se distingue por la sofisticación de sus arreglos, su dominio de la armonía y su papel decisivo en la profesionalización del sonido orquestal dominicano. Además de su labor en el merengue, ha desarrollado una trayectoria significativa en la música cristiana y en la dirección pastoral.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Primeros años y formación",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ramón Orlando nació en Santo Domingo en el seno de una familia profundamente vinculada a la música popular dominicana. Es hijo del reconocido músico ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "ddf35d3a-5e66-4747-8fc3-2e2c1128b432"
+              }
+            },
+            {
+              "text": ", líder de agrupaciones como ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+                "displayText": "Los Ahijados",
+                "occurrenceId": "7d616c28-d366-451e-9314-03bbf399f921"
+              }
+            },
+            {
+              "text": " y La Tribu, cuyo trabajo en son, salsa y merengue marcó una etapa importante en la música caribeña. Crecer en este entorno permitió a Ramón Orlando familiarizarse desde temprana edad con la práctica instrumental, la disciplina de ensayo y la estructura de las orquestas tropicales.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Su padre observó su interés temprano por la percusión, pero lo encaminó hacia el piano desde los siete años y le dio sus primeras lecciones. Ramón Orlando estudió solfeo y piano, y completó la práctica familiar con formación musical formal. Esa combinación le permitió desarrollar una escritura propia para la orquesta.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Inicios profesionales",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En 1975 se integró como pianista, arreglista y director musical a Los Virtuosos, la nueva orquesta de su padre. Este aportaba ideas de repertorio y canciones; Ramón Orlando las desarrollaba en arreglos para la banda, que después se conoció como La Tribu. Desde esa etapa trabajó con merengue, salsa y otros ritmos caribeños.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La experiencia adquirida en La Tribu le permitió desarrollar una identidad musical propia y lo preparó para liderar sus propios proyectos.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La Orquesta Internacional y consolidación artística",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En la segunda mitad de los años ochenta fundó La Orquesta Internacional y desarrolló un merengue de arreglos elaborados y trabajo coral.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Durante este período surgieron varios de sus éxitos más conocidos, interpretados por vocalistas como ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "fb068903-a085-4a3f-b846-0be0b3e28934",
+                "displayText": "Henry García",
+                "occurrenceId": "391dd9c7-d570-4c60-9ecb-9fbbd42d3083"
+              }
+            },
+            {
+              "text": ", ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "bb114227-a160-4f45-960e-b6c1710fbeef",
+                "displayText": "Peter Cruz",
+                "occurrenceId": "4f01c2c6-1fb0-40cb-a5f8-60b0f4ae75ca"
+              }
+            },
+            {
+              "text": ", Nino Segarra y otros cantantes que pasaron por la orquesta. Su trabajo como arreglista se convirtió en referencia obligada para músicos y productores del merengue.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Arreglista y productor",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Como arreglista y productor trabajó tanto para su propia orquesta como para otros intérpretes dominicanos.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ha escrito «La Carnada», grabada por ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "bc2289d0-ae94-48b5-8eb9-7f0ae18b845a",
+                "displayText": "Miriam Cruz",
+                "occurrenceId": "20500e79-731b-4ea7-8fa6-5203f40f0a56"
+              }
+            },
+            {
+              "text": ". Según el arreglista ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "1519cbca-ae0a-4ede-924b-244a49c9024e",
+                "displayText": "Henry Jiménez",
+                "occurrenceId": "d7223d9d-b7b2-43e5-bee6-0020418b4d29"
+              }
+            },
+            {
+              "text": ", Orlando realizó un arreglo anterior y Jiménez preparó después una nueva versión para Cruz.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Transición hacia la música cristiana",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A partir de la década de 1990, Ramón Orlando experimentó una transformación espiritual que lo llevó a involucrarse activamente en la música cristiana y en el ministerio pastoral. Su producción en este ámbito incluye himnos, baladas y fusiones tropicales con contenido religioso, caracterizadas por un enfoque devocional y un uso de armonías propias de su formación académica.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Su trabajo cristiano ha tenido impacto tanto en congregaciones como en audiencias generales, manteniendo su presencia en la escena musical dominicana mientras ampliaba su labor hacia la enseñanza y la dirección espiritual.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Estilo musical e influencias",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En su escritura conviven el merengue orquestal, armonías del jazz y ritmos caribeños; el piano ocupa un lugar central.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Su formación en el entorno musical de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "5ca781cd-8af3-4718-81ae-4c75344dbe6a"
+              }
+            },
+            {
+              "text": " y su experiencia en orquestas tropicales contribuyeron a su visión del merengue como un género capaz de sostener elaboraciones formales sin perder su energía popular.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Legado",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Su trayectoria reúne el trabajo con la orquesta de su padre, la dirección de su propio conjunto y su catálogo cristiano.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Su obra ocupa un lugar central en la historia del merengue y continúa siendo referencia para estudiosos, músicos y productores del Caribe.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "mirror": "Ramón Orlando Valoy (nacido el 29 de julio de 1960) es un músico, arreglista, compositor, productor y director de orquesta dominicano, reconocido como una de las figuras más influyentes en la evolución técnica y estilística del merengue moderno. Su trabajo abarca más de cuatro décadas y se distingue por la sofisticación de sus arreglos, su dominio de la armonía y su papel decisivo en la profesionalización del sonido orquestal dominicano. Además de su labor en el merengue, ha desarrollado una trayectoria significativa en la música cristiana y en la dirección pastoral.\n\n**Primeros años y formación**\n\nRamón Orlando nació en Santo Domingo en el seno de una familia profundamente vinculada a la música popular dominicana. Es hijo del reconocido músico Cuco Valoy, líder de agrupaciones como Los Ahijados y La Tribu, cuyo trabajo en son, salsa y merengue marcó una etapa importante en la música caribeña. Crecer en este entorno permitió a Ramón Orlando familiarizarse desde temprana edad con la práctica instrumental, la disciplina de ensayo y la estructura de las orquestas tropicales.\n\nSu padre observó su interés temprano por la percusión, pero lo encaminó hacia el piano desde los siete años y le dio sus primeras lecciones. Ramón Orlando estudió solfeo y piano, y completó la práctica familiar con formación musical formal. Esa combinación le permitió desarrollar una escritura propia para la orquesta.\n\n**Inicios profesionales**\n\nEn 1975 se integró como pianista, arreglista y director musical a Los Virtuosos, la nueva orquesta de su padre. Este aportaba ideas de repertorio y canciones; Ramón Orlando las desarrollaba en arreglos para la banda, que después se conoció como La Tribu. Desde esa etapa trabajó con merengue, salsa y otros ritmos caribeños.\n\nLa experiencia adquirida en La Tribu le permitió desarrollar una identidad musical propia y lo preparó para liderar sus propios proyectos.\n\n**La Orquesta Internacional y consolidación artística**\n\nEn la segunda mitad de los años ochenta fundó La Orquesta Internacional y desarrolló un merengue de arreglos elaborados y trabajo coral.\n\nDurante este período surgieron varios de sus éxitos más conocidos, interpretados por vocalistas como Henry García, Peter Cruz, Nino Segarra y otros cantantes que pasaron por la orquesta. Su trabajo como arreglista se convirtió en referencia obligada para músicos y productores del merengue.\n\n**Arreglista y productor**\n\nComo arreglista y productor trabajó tanto para su propia orquesta como para otros intérpretes dominicanos.\n\nHa escrito «La Carnada», grabada por Miriam Cruz. Según el arreglista Henry Jiménez, Orlando realizó un arreglo anterior y Jiménez preparó después una nueva versión para Cruz.\n\n**Transición hacia la música cristiana**\n\nA partir de la década de 1990, Ramón Orlando experimentó una transformación espiritual que lo llevó a involucrarse activamente en la música cristiana y en el ministerio pastoral. Su producción en este ámbito incluye himnos, baladas y fusiones tropicales con contenido religioso, caracterizadas por un enfoque devocional y un uso de armonías propias de su formación académica.\n\nSu trabajo cristiano ha tenido impacto tanto en congregaciones como en audiencias generales, manteniendo su presencia en la escena musical dominicana mientras ampliaba su labor hacia la enseñanza y la dirección espiritual.\n\n**Estilo musical e influencias**\n\nEn su escritura conviven el merengue orquestal, armonías del jazz y ritmos caribeños; el piano ocupa un lugar central.\n\nSu formación en el entorno musical de Cuco Valoy y su experiencia en orquestas tropicales contribuyeron a su visión del merengue como un género capaz de sostener elaboraciones formales sin perder su energía popular.\n\n**Legado**\n\nSu trayectoria reúne el trabajo con la orquesta de su padre, la dirección de su propio conjunto y su catálogo cristiano.\n\nSu obra ocupa un lugar central en la historia del merengue y continúa siendo referencia para estudiosos, músicos y productores del Caribe."
+  },
+  {
+    "slug": "raulin-rosendo",
+    "artist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+    "doc_id": "9f6a7b27-ef5a-4077-8a09-9b8057572410",
+    "locale": "en",
+    "revision": 5,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Raúl Martínez, who sings as Raulín Rosendo, is a Dominican salsa singer. He came up in merengue, fronting one of the biggest Dominican orchestras of the nineteen-seventies, and made his name a second time in New York in the nineties as a sonero.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Hijos del Rey",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "He was born on 30 August 1957 in Villa Duarte, on the eastern edge of Santo Domingo, and began performing at twelve with a merengue group called El Chivo y su Banda.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "In 1976 he sang with Los Virtuosos, led by "
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "6a58b45c-6bd0-4700-9906-7ad8dddcf6df"
+              }
+            },
+            {
+              "type": "text",
+              "text": ", before moving to Los Hijos del Rey. A photograph from 1976 documents this stage of his career."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In the seventies he became one of the two lead voices of ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "3c82ee60-d565-405d-8423-7895d3706122",
+                "displayText": "Los Hijos del Rey",
+                "occurrenceId": "8ef295a6-3b19-448d-9f39-cdc14efbf267"
+              }
+            },
+            {
+              "text": ", the orchestra ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+                "displayText": "Wilfrido Vargas",
+                "occurrenceId": "1be24a19-4b04-4963-b313-537396f89d56"
+              }
+            },
+            {
+              "text": " had put together. He fronted it alongside ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                "displayText": "Fernando Villalona",
+                "occurrenceId": "fc2cd944-fc47-4451-b2a9-36e7b8631f2b"
+              }
+            },
+            {
+              "text": ", with ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "bc4db4c6-c96f-4eb7-af95-ac637785c5bf",
+                "displayText": "Bonny Cepeda",
+                "occurrenceId": "ce5c9a80-2f3f-4263-b12f-5ccc9e19f1ec"
+              }
+            },
+            {
+              "text": " directing from the piano and writing the arrangements, and the records came out on Karen. Marisela, La Mazorca, La Boda de Marisela and La Tetera y la Tijera date from those years. ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+                "displayText": "Sergio Vargas",
+                "occurrenceId": "e3367050-b090-4d19-8372-8c1db1b9373a"
+              }
+            },
+            {
+              "text": " would front the same orchestra later.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "New York",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "He moved to New York and worked there with Conjunto Clásico and with ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "241703d2-a7f0-457d-b020-704f3a02b0d4",
+                "displayText": "Milly, Jocelyn y Los Vecinos",
+                "occurrenceId": "0cb11920-6489-452a-a3b0-c0a799830c44"
+              }
+            },
+            {
+              "text": ". His own records began with Salsa con Amor in 1988 and Salsa, Solamente Salsa in 1991, and by 1993 he was recording in the city with the producer Ricky González, who cut Amor en Secreto and Santo Domingo with him.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El sonero que el pueblo prefiere",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The record of that title, from 1995, was the best-selling album of its year and carried Uno Se Cura, which is the song most people name first. It brought him a nomination at the Casandra awards at home and another at the A.C.E. awards in New York.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The albums that followed put him among the most widely heard salsa singers of the decade: Dominicano Para el Mundo, ¡Simplemente! ¡Contrólate!, Llegó la Ley and Donde Me Coja la Noche, one a year from 1996. He has gone on recording since — En Venezuela, De Aquí Pa’ Allá, La Fama Es Peligrosa, Dame Otra Oportunidad and, in 2021, Tranquilo Que Yo Controlo.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The sonero",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "He is billed as El Sonero del Pueblo. A sonero is judged on what he invents over the montuno rather than on what he brings prepared, and he did that work in both of his genres: first trading verses at the front of a merengue orchestra, then over a salsa rhythm section in New York.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "mirror": "Raúl Martínez, who sings as Raulín Rosendo, is a Dominican salsa singer. He came up in merengue, fronting one of the biggest Dominican orchestras of the nineteen-seventies, and made his name a second time in New York in the nineties as a sonero.\n\n**Los Hijos del Rey**\n\nHe was born on 30 August 1957 in Villa Duarte, on the eastern edge of Santo Domingo, and began performing at twelve with a merengue group called El Chivo y su Banda.\n\nIn 1976 he sang with Los Virtuosos, led by Cuco Valoy, before moving to Los Hijos del Rey. A photograph from 1976 documents this stage of his career.\n\nIn the seventies he became one of the two lead voices of Los Hijos del Rey, the orchestra Wilfrido Vargas had put together. He fronted it alongside Fernando Villalona, with Bonny Cepeda directing from the piano and writing the arrangements, and the records came out on Karen. Marisela, La Mazorca, La Boda de Marisela and La Tetera y la Tijera date from those years. Sergio Vargas would front the same orchestra later.\n\n**New York**\n\nHe moved to New York and worked there with Conjunto Clásico and with Milly, Jocelyn y Los Vecinos. His own records began with Salsa con Amor in 1988 and Salsa, Solamente Salsa in 1991, and by 1993 he was recording in the city with the producer Ricky González, who cut Amor en Secreto and Santo Domingo with him.\n\n**El sonero que el pueblo prefiere**\n\nThe record of that title, from 1995, was the best-selling album of its year and carried Uno Se Cura, which is the song most people name first. It brought him a nomination at the Casandra awards at home and another at the A.C.E. awards in New York.\n\nThe albums that followed put him among the most widely heard salsa singers of the decade: Dominicano Para el Mundo, ¡Simplemente! ¡Contrólate!, Llegó la Ley and Donde Me Coja la Noche, one a year from 1996. He has gone on recording since — En Venezuela, De Aquí Pa’ Allá, La Fama Es Peligrosa, Dame Otra Oportunidad and, in 2021, Tranquilo Que Yo Controlo.\n\n**The sonero**\n\nHe is billed as El Sonero del Pueblo. A sonero is judged on what he invents over the montuno rather than on what he brings prepared, and he did that work in both of his genres: first trading verses at the front of a merengue orchestra, then over a salsa rhythm section in New York.",
+    "newReference": {
+      "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+      "displayText": "Cuco Valoy",
+      "occurrenceId": "6a58b45c-6bd0-4700-9906-7ad8dddcf6df"
+    }
+  },
+  {
+    "slug": "raulin-rosendo",
+    "artist_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+    "doc_id": "d445be0c-6eb2-42e3-a378-8b3885ecc973",
+    "locale": "es",
+    "revision": 3,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Raúl Martínez, que canta como Raulín Rosendo, es un salsero dominicano. Se hizo en el merengue, al frente de una de las orquestas dominicanas más grandes de los años setenta, y volvió a hacerse un nombre en Nueva York en los noventa como sonero.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Hijos del Rey",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nació el 30 de agosto de 1957 en Villa Duarte, en el extremo este de Santo Domingo, y empezó a cantar a los doce años en un grupo de merengue llamado El Chivo y su Banda.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "En 1976 cantó con Los Virtuosos de "
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "c34d95ce-240e-4e92-a0e7-3a8dfbc2ab9b"
+              }
+            },
+            {
+              "type": "text",
+              "text": ", antes de pasar a Los Hijos del Rey. Una fotografía de 1976 documenta esta etapa de su carrera."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En los setenta pasó a ser una de las dos voces principales de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "3c82ee60-d565-405d-8423-7895d3706122",
+                "displayText": "Los Hijos del Rey",
+                "occurrenceId": "0dd964ae-be6d-4193-b201-adacd39968e9"
+              }
+            },
+            {
+              "text": ", la orquesta que había armado ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+                "displayText": "Wilfrido Vargas",
+                "occurrenceId": "b82d937b-6cb4-4f80-82f3-e3d5885fe1fc"
+              }
+            },
+            {
+              "text": ". Estaba al frente junto a ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                "displayText": "Fernando Villalona",
+                "occurrenceId": "b3b318fb-8418-4046-91a7-a75f01bf3848"
+              }
+            },
+            {
+              "text": ", con ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "bc4db4c6-c96f-4eb7-af95-ac637785c5bf",
+                "displayText": "Bonny Cepeda",
+                "occurrenceId": "09907902-2af7-4fcf-a5c7-fdf5439e2f9f"
+              }
+            },
+            {
+              "text": " dirigiendo desde el piano y firmando los arreglos, y los discos salían por Karen. De esos años son Marisela, La Mazorca, La Boda de Marisela y La Tetera y la Tijera. ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+                "displayText": "Sergio Vargas",
+                "occurrenceId": "12868923-9bd3-40dd-8940-19acd1588bee"
+              }
+            },
+            {
+              "text": " encabezaría esa misma orquesta más adelante.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Nueva York",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Se fue a Nueva York y allí trabajó con el Conjunto Clásico y con ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "241703d2-a7f0-457d-b020-704f3a02b0d4",
+                "displayText": "Milly, Jocelyn y Los Vecinos",
+                "occurrenceId": "70ca77ba-907a-4edd-8059-ef98904e3be6"
+              }
+            },
+            {
+              "text": ". Sus discos propios empiezan con Salsa con Amor, de 1988, y Salsa, Solamente Salsa, de 1991, y en 1993 ya grababa en la ciudad con el productor Ricky González, que le sacó Amor en Secreto y Santo Domingo.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El sonero que el pueblo prefiere",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El disco de ese título, de 1995, fue el más vendido de su año y traía Uno Se Cura, que es la canción que la gente nombra primero. Le valió una nominación en los Premios Casandra en el país y otra en los premios A.C.E. de Nueva York.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los discos siguientes lo pusieron entre los salseros más escuchados de la década: Dominicano Para el Mundo, ¡Simplemente! ¡Contrólate!, Llegó la Ley y Donde Me Coja la Noche, uno por año desde 1996. Ha seguido grabando después: En Venezuela, De Aquí Pa’ Allá, La Fama Es Peligrosa, Dame Otra Oportunidad y, en 2021, Tranquilo Que Yo Controlo.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El sonero",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Se anuncia como El Sonero del Pueblo. A un sonero se le juzga por lo que inventa sobre el montuno y no por lo que trae aprendido, y ese trabajo lo hizo en sus dos géneros: primero cruzando versos al frente de una orquesta de merengue y después sobre una sección rítmica de salsa en Nueva York.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "mirror": "Raúl Martínez, que canta como Raulín Rosendo, es un salsero dominicano. Se hizo en el merengue, al frente de una de las orquestas dominicanas más grandes de los años setenta, y volvió a hacerse un nombre en Nueva York en los noventa como sonero.\n\n**Los Hijos del Rey**\n\nNació el 30 de agosto de 1957 en Villa Duarte, en el extremo este de Santo Domingo, y empezó a cantar a los doce años en un grupo de merengue llamado El Chivo y su Banda.\n\nEn 1976 cantó con Los Virtuosos de Cuco Valoy, antes de pasar a Los Hijos del Rey. Una fotografía de 1976 documenta esta etapa de su carrera.\n\nEn los setenta pasó a ser una de las dos voces principales de Los Hijos del Rey, la orquesta que había armado Wilfrido Vargas. Estaba al frente junto a Fernando Villalona, con Bonny Cepeda dirigiendo desde el piano y firmando los arreglos, y los discos salían por Karen. De esos años son Marisela, La Mazorca, La Boda de Marisela y La Tetera y la Tijera. Sergio Vargas encabezaría esa misma orquesta más adelante.\n\n**Nueva York**\n\nSe fue a Nueva York y allí trabajó con el Conjunto Clásico y con Milly, Jocelyn y Los Vecinos. Sus discos propios empiezan con Salsa con Amor, de 1988, y Salsa, Solamente Salsa, de 1991, y en 1993 ya grababa en la ciudad con el productor Ricky González, que le sacó Amor en Secreto y Santo Domingo.\n\n**El sonero que el pueblo prefiere**\n\nEl disco de ese título, de 1995, fue el más vendido de su año y traía Uno Se Cura, que es la canción que la gente nombra primero. Le valió una nominación en los Premios Casandra en el país y otra en los premios A.C.E. de Nueva York.\n\nLos discos siguientes lo pusieron entre los salseros más escuchados de la década: Dominicano Para el Mundo, ¡Simplemente! ¡Contrólate!, Llegó la Ley y Donde Me Coja la Noche, uno por año desde 1996. Ha seguido grabando después: En Venezuela, De Aquí Pa’ Allá, La Fama Es Peligrosa, Dame Otra Oportunidad y, en 2021, Tranquilo Que Yo Controlo.\n\n**El sonero**\n\nSe anuncia como El Sonero del Pueblo. A un sonero se le juzga por lo que inventa sobre el montuno y no por lo que trae aprendido, y ese trabajo lo hizo en sus dos géneros: primero cruzando versos al frente de una orquesta de merengue y después sobre una sección rítmica de salsa en Nueva York.",
+    "newReference": {
+      "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+      "displayText": "Cuco Valoy",
+      "occurrenceId": "c34d95ce-240e-4e92-a0e7-3a8dfbc2ab9b"
+    }
+  },
+  {
+    "slug": "martin-valoy",
+    "artist_id": "6eccc3e7-82bf-435f-8ae1-ea7e8a721560",
+    "doc_id": "dd698588-5719-429d-99dd-b9c6adc5dab9",
+    "locale": "en",
+    "revision": 3,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Martín Valoy (died 2 July 2013), known as El Ahijado, was a Dominican bassist, guitarist, tres player, singer and composer. With his older brother ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "28c6bf59-4fc6-4023-80e0-db3b277f5798"
+              }
+            },
+            {
+              "text": " he formed ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+                "displayText": "Los Ahijados",
+                "occurrenceId": "d4756a40-fdfb-40d2-bd91-fa86e918a9dc"
+              }
+            },
+            {
+              "text": ", the duo that made its name with Cuban-style sones montunos from the late 1950s, and he later played bass in «Los Virtuosos», the orchestra his brother founded in 1975.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Ahijados",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Martín learned guitar before joining his brother in Santo Domingo; together they sang serenades and boleros. By 1958, ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "b9e556d7-e283-41b3-a35c-58de6bded303"
+              }
+            },
+            {
+              "text": " and Martín were already performing son montuno inspired by Cuba’s Los Compadres under the name ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+                "displayText": "Los Ahijados",
+                "occurrenceId": "e5869c0a-6265-4799-a446-69de3628f5ac"
+              }
+            },
+            {
+              "text": ". The name emerged on «Buscando Estrellas», and his brother financed the first recordings. Martín played guitar and tres and sang harmony; Cuco sang lead. Their Kubaney records included «Vuelven... Los Ahijados», and songs such as «Timoteo», «El lunar», «El hombre misterioso», «El paso de la jaiba» and «Vaivén» returned in later compilations. Their repertoire also included «Qué será de mí», by ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "4b85d1eb-ebaa-42b5-9901-5e2805af9138",
+                "displayText": "Bienvenido Fabián",
+                "occurrenceId": "6d140748-732d-427c-9701-b9525206ca83"
+              }
+            },
+            {
+              "text": ".",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "«Los Virtuosos»",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "When ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "b0c02291-63a1-4ba8-b3e8-1a6add64fb1c"
+              }
+            },
+            {
+              "text": " built «Los Virtuosos» in 1975 — the orchestra later renamed «La Tribu» — Martín moved to the bass and sang in the chorus. He is credited on bass on «Tiza!» (1980), where ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "fb068903-a085-4a3f-b846-0be0b3e28934",
+                "displayText": "Henry García",
+                "occurrenceId": "d97797f4-f195-440b-a9d6-932050b15953"
+              }
+            },
+            {
+              "text": " was among the singers, and on «Chévere» (1982). Writing after his death, Joseph Cáceres described him as his brother’s second: low-key, and a solid presence at the bass.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "«Hagan coro señores, llegó el Ahijado»",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In 1981 he released his only solo album, «Hagan coro señores, llegó el Ahijado», issued in the United States by Discolor and in Venezuela by Evesol: eight sones, among them «Yo no perdono», «El guardia del arsenal» and «Canta». The brothers came back together as ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+                "displayText": "Los Ahijados",
+                "occurrenceId": "4baad363-1a68-4cb1-8d32-962bd99d5f0c"
+              }
+            },
+            {
+              "text": " for «De nuevo al son», a 1997 album on which both are credited as lead vocalists.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Legacy",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Martín Valoy died on 2 July 2013, and, as Cáceres noted at the time, his death passed almost unnoticed in the press. His work sits in two of the family’s main projects: the son montuno of ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+                "displayText": "Los Ahijados",
+                "occurrenceId": "9ea9d69f-9bbd-4323-9c08-540f9c6220b7"
+              }
+            },
+            {
+              "text": " in the 1960s, and the rhythm section of «Los Virtuosos» in the years of «Tiza!» and «Chévere».",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "mirror": "Martín Valoy (died 2 July 2013), known as El Ahijado, was a Dominican bassist, guitarist, tres player, singer and composer. With his older brother Cuco Valoy he formed Los Ahijados, the duo that made its name with Cuban-style sones montunos from the late 1950s, and he later played bass in «Los Virtuosos», the orchestra his brother founded in 1975.\n\n**Los Ahijados**\n\nMartín learned guitar before joining his brother in Santo Domingo; together they sang serenades and boleros. By 1958, Cuco Valoy and Martín were already performing son montuno inspired by Cuba’s Los Compadres under the name Los Ahijados. The name emerged on «Buscando Estrellas», and his brother financed the first recordings. Martín played guitar and tres and sang harmony; Cuco sang lead. Their Kubaney records included «Vuelven... Los Ahijados», and songs such as «Timoteo», «El lunar», «El hombre misterioso», «El paso de la jaiba» and «Vaivén» returned in later compilations. Their repertoire also included «Qué será de mí», by Bienvenido Fabián.\n\n**«Los Virtuosos»**\n\nWhen Cuco Valoy built «Los Virtuosos» in 1975 — the orchestra later renamed «La Tribu» — Martín moved to the bass and sang in the chorus. He is credited on bass on «Tiza!» (1980), where Henry García was among the singers, and on «Chévere» (1982). Writing after his death, Joseph Cáceres described him as his brother’s second: low-key, and a solid presence at the bass.\n\n**«Hagan coro señores, llegó el Ahijado»**\n\nIn 1981 he released his only solo album, «Hagan coro señores, llegó el Ahijado», issued in the United States by Discolor and in Venezuela by Evesol: eight sones, among them «Yo no perdono», «El guardia del arsenal» and «Canta». The brothers came back together as Los Ahijados for «De nuevo al son», a 1997 album on which both are credited as lead vocalists.\n\n**Legacy**\n\nMartín Valoy died on 2 July 2013, and, as Cáceres noted at the time, his death passed almost unnoticed in the press. His work sits in two of the family’s main projects: the son montuno of Los Ahijados in the 1960s, and the rhythm section of «Los Virtuosos» in the years of «Tiza!» and «Chévere»."
+  },
+  {
+    "slug": "martin-valoy",
+    "artist_id": "6eccc3e7-82bf-435f-8ae1-ea7e8a721560",
+    "doc_id": "103a154f-1185-4699-867d-2cca79187431",
+    "locale": "es",
+    "revision": 1,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Martín Valoy (fallecido el 2 de julio de 2013), conocido como El Ahijado, fue un bajista, guitarrista, tresista, cantante y compositor dominicano. Con su hermano mayor ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "ef2631d7-40d5-4ec5-bcc8-70d57a1c56a5"
+              }
+            },
+            {
+              "text": " formó ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+                "displayText": "Los Ahijados",
+                "occurrenceId": "37491de2-55f6-4ce9-8259-da340784da32"
+              }
+            },
+            {
+              "text": ", el dúo que se hizo un nombre con sones montunos de corte cubano desde finales de los años cincuenta, y después tocó el bajo en «Los Virtuosos», la orquesta que su hermano fundó en 1975.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Los Ahijados",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Martín aprendió guitarra antes de unirse a su hermano en Santo Domingo; juntos cantaron serenatas y boleros. En 1958, ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "3027123d-c1fa-4225-8460-02f1715863d7"
+              }
+            },
+            {
+              "text": " y Martín ya interpretaban sones montunos inspirados por Los Compadres de Cuba bajo el nombre de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+                "displayText": "Los Ahijados",
+                "occurrenceId": "22f7f1ce-7c21-45a4-8f6f-301475b4e0a9"
+              }
+            },
+            {
+              "text": ". El nombre surgió en «Buscando Estrellas» y las primeras grabaciones fueron financiadas por su hermano. Martín tocaba guitarra y tres y cantaba la segunda voz; Cuco llevaba la voz principal. Entre sus discos para Kubaney estuvo «Vuelven... Los Ahijados», y temas como «Timoteo», «El lunar», «El hombre misterioso», «El paso de la jaiba» y «Vaivén» siguieron volviendo en recopilaciones. Su repertorio incluyó también «Qué será de mí», de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "4b85d1eb-ebaa-42b5-9901-5e2805af9138",
+                "displayText": "Bienvenido Fabián",
+                "occurrenceId": "599a313b-0e46-40db-830b-2bcac4b019be"
+              }
+            },
+            {
+              "text": ".",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "«Los Virtuosos»",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Cuando ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+                "displayText": "Cuco Valoy",
+                "occurrenceId": "c4b00c92-7cd1-4fe6-acca-431884bfbbee"
+              }
+            },
+            {
+              "text": " formó «Los Virtuosos» en 1975 —la orquesta que después pasó a llamarse «La Tribu»—, Martín se fue al bajo y cantó en los coros. Aparece acreditado en el bajo en «Tiza!» (1980), donde ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "fb068903-a085-4a3f-b846-0be0b3e28934",
+                "displayText": "Henry García",
+                "occurrenceId": "97abd6f3-faac-4661-bc6f-220005c21ff0"
+              }
+            },
+            {
+              "text": " figuraba entre los cantantes, y en «Chévere» (1982). Tras su muerte, Joseph Cáceres lo describió como el segundo de su hermano: de perfil bajo y sólido en el bajo.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "«Hagan coro señores, llegó el Ahijado»",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En 1981 publicó su único álbum como solista, «Hagan coro señores, llegó el Ahijado», editado en Estados Unidos por Discolor y en Venezuela por Evesol: ocho sones, entre ellos «Yo no perdono», «El guardia del arsenal» y «Canta». Los hermanos volvieron a juntarse como ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+                "displayText": "Los Ahijados",
+                "occurrenceId": "41cbd753-1400-476c-a16d-f2b5cf02fd9b"
+              }
+            },
+            {
+              "text": " en «De nuevo al son», un disco de 1997 en el que ambos aparecen acreditados como voces principales.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Legado",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Martín Valoy murió el 2 de julio de 2013 y, como señaló Cáceres entonces, su muerte pasó casi desapercibida en la prensa. Su obra está en dos de los proyectos principales de la familia: el son montuno de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f6f95f0f-e008-47b9-8b4c-10fe5508bfd9",
+                "displayText": "Los Ahijados",
+                "occurrenceId": "7c7d4ad4-0714-4b6f-ac2c-dbd6608a1e00"
+              }
+            },
+            {
+              "text": " en los sesenta y la base rítmica de «Los Virtuosos» en los años de «Tiza!» y «Chévere».",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "mirror": "Martín Valoy (fallecido el 2 de julio de 2013), conocido como El Ahijado, fue un bajista, guitarrista, tresista, cantante y compositor dominicano. Con su hermano mayor Cuco Valoy formó Los Ahijados, el dúo que se hizo un nombre con sones montunos de corte cubano desde finales de los años cincuenta, y después tocó el bajo en «Los Virtuosos», la orquesta que su hermano fundó en 1975.\n\n**Los Ahijados**\n\nMartín aprendió guitarra antes de unirse a su hermano en Santo Domingo; juntos cantaron serenatas y boleros. En 1958, Cuco Valoy y Martín ya interpretaban sones montunos inspirados por Los Compadres de Cuba bajo el nombre de Los Ahijados. El nombre surgió en «Buscando Estrellas» y las primeras grabaciones fueron financiadas por su hermano. Martín tocaba guitarra y tres y cantaba la segunda voz; Cuco llevaba la voz principal. Entre sus discos para Kubaney estuvo «Vuelven... Los Ahijados», y temas como «Timoteo», «El lunar», «El hombre misterioso», «El paso de la jaiba» y «Vaivén» siguieron volviendo en recopilaciones. Su repertorio incluyó también «Qué será de mí», de Bienvenido Fabián.\n\n**«Los Virtuosos»**\n\nCuando Cuco Valoy formó «Los Virtuosos» en 1975 —la orquesta que después pasó a llamarse «La Tribu»—, Martín se fue al bajo y cantó en los coros. Aparece acreditado en el bajo en «Tiza!» (1980), donde Henry García figuraba entre los cantantes, y en «Chévere» (1982). Tras su muerte, Joseph Cáceres lo describió como el segundo de su hermano: de perfil bajo y sólido en el bajo.\n\n**«Hagan coro señores, llegó el Ahijado»**\n\nEn 1981 publicó su único álbum como solista, «Hagan coro señores, llegó el Ahijado», editado en Estados Unidos por Discolor y en Venezuela por Evesol: ocho sones, entre ellos «Yo no perdono», «El guardia del arsenal» y «Canta». Los hermanos volvieron a juntarse como Los Ahijados en «De nuevo al son», un disco de 1997 en el que ambos aparecen acreditados como voces principales.\n\n**Legado**\n\nMartín Valoy murió el 2 de julio de 2013 y, como señaló Cáceres entonces, su muerte pasó casi desapercibida en la prensa. Su obra está en dos de los proyectos principales de la familia: el son montuno de Los Ahijados en los sesenta y la base rítmica de «Los Virtuosos» en los años de «Tiza!» y «Chévere»."
+  }
+]

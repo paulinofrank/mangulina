@@ -1,0 +1,413 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "00652f5d-1e5f-436a-b12a-7e309a3deebc",
+        "name": "Dhariana",
+        "sort_name": "Dhariana",
+        "type": "solo_artist",
+        "birth_year": null,
+        "death_year": null,
+        "created_at": "2026-10-20T11:52:20.104049+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": null,
+        "middle_name": null,
+        "last_name": null,
+        "second_last_name": null,
+        "stage_name": "Dhariana La Coqueta",
+        "date_of_birth": null,
+        "birth_place": null,
+        "website": null,
+        "youtube": "@dharianalacoqueta",
+        "facebook": "100064077158531",
+        "instagram": "dharianalacoqueta",
+        "aliases": [
+          "Dhariana La Coqueta",
+          "La Coqueta"
+        ],
+        "mbid": null,
+        "occupations": [
+          "songwriter",
+          "actress"
+        ],
+        "instruments": [
+          "voice"
+        ],
+        "genres": [
+          "bachata",
+          "merengue",
+          "salsa"
+        ],
+        "disambiguation": "Dominican ballad, merengue and bachata singer known as La Coqueta",
+        "gender": "female",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-20T11:52:20.104049+00:00",
+        "province": "Distrito Nacional",
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "dhariana",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "ballads",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "2IztreDbhQyfVggbjVsXQZ"
+      },
+      {
+        "id": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+        "name": "Casandra Damirón",
+        "slug": "casandra-damiron",
+        "status": "published"
+      },
+      {
+        "id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+        "name": "Manuel Tejada",
+        "slug": "manuel-tejada",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "91789053-e7bf-4e18-b40f-22714174a932",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Dhariana, professionally known as La Coqueta, is a Dominican singer, songwriter and actress whose repertoire embraces ballads, merengue, salsa and bachata. She became known during the 1980s through songs including «Cuando», «A esa» and «Aunque reviente mi pecho». Her birthday falls on September 13.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Background and artistic training",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "She identifies Santo Domingo as her hometown. Her artistic training included work with Ónix Báez, Serbio Uribe, Osvaldo Cepeda y Cepeda and Henry Ely. At Bellas Artes she studied folk dance with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+                    "displayText": "Casandra Damirón",
+                    "occurrenceId": "a94ca15f-e7a3-436c-8772-ff76ca078166"
+                  }
+                },
+                {
+                  "text": " and modern dance with Josefina Miniño, while Roberto López worked as her choreographer.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Records and stage performances",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«TH Records» marketed her first album, «Ven a Amarme». Her performances brought together singing, choreography and a distinctive stage image. Her shows included «Ven a amarme» and «Explotó Dhariana», and Milton Peláez supported her television appearances through «Sabroshow». ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                    "displayText": "Manuel Tejada",
+                    "occurrenceId": "fc1ebf33-4fb3-4320-a653-6fa8353cee30"
+                  }
+                },
+                {
+                  "text": " arranged «Cuando» and «A esa». She also performed in Honduras, Peru, Curaçao, Spain and the United States.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A return to the stage and later repertoire",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In May 2007 she announced a return to the Maunaloa with «Sólo basta amar», with musical direction by Leo Pimentel. At the time she was promoting her own bachata composition «Mentiras». In 2017 she introduced Daniela de la Cruz’s «Los caminos del mar», performing it on «De extremo a extremo» on July 13 and on «Buena Noche» the following evening. Later repertoire includes «Gracias por amarme», with Raúl Santi, and Marlene de los Santos’s «Mujer deseada».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Dhariana forms part of the generation of solo singers who established a place for Dominican ballads on radio and television during the 1980s. Her work also extends to dance music and the theatrical production «Por la Patria Cantando». Recordings and performances preserved on her official channel document these different strands of her career.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "00652f5d-1e5f-436a-b12a-7e309a3deebc",
+        "created_at": "2026-10-20T11:52:20.545922+00:00",
+        "updated_at": "2026-10-20T11:52:20.545922+00:00",
+        "revision": 1
+      },
+      {
+        "id": "a846d4fe-e69c-45f7-9dba-425b632cee1c",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Dhariana, conocida como La Coqueta, es una cantante, compositora y actriz dominicana vinculada a la balada y a un repertorio que también comprende merengue, salsa y bachata. Su trayectoria se dio a conocer durante los años ochenta con canciones como «Cuando», «A esa» y «Aunque reviente mi pecho». Celebra su cumpleaños el 13 de septiembre.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Formación y procedencia",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La artista identifica Santo Domingo como su ciudad de origen. Su formación artística incluyó estudios con Ónix Báez, Serbio Uribe, Osvaldo Cepeda y Cepeda y Henry Ely. En Bellas Artes tomó clases de baile folclórico con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+                    "displayText": "Casandra Damirón",
+                    "occurrenceId": "45289fa0-7c28-4439-b945-61733ff09930"
+                  }
+                },
+                {
+                  "text": " y de danza moderna con Josefina Miniño; Roberto López trabajó como su coreógrafo.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Discos, televisión y escenarios",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su primer álbum, «Ven a Amarme», fue comercializado por «TH Records». La canción, el movimiento escénico y una imagen propia formaron parte de su propuesta. Su recorrido incluyó los espectáculos «Ven a amarme» y «Explotó Dhariana», así como el apoyo televisivo de Milton Peláez en «Sabroshow». ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                    "displayText": "Manuel Tejada",
+                    "occurrenceId": "eace898f-8e27-4dda-8d36-2ea52b671e2c"
+                  }
+                },
+                {
+                  "text": " realizó arreglos para «Cuando» y «A esa». También llevó su trabajo a escenarios de Honduras, Perú, Curazao, España y Estados Unidos.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El regreso y nuevas canciones",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En mayo de 2007 anunció su regreso al Maunaloa con «Sólo basta amar», bajo la dirección musical de Leo Pimentel. En ese período promovía «Mentiras», una bachata de su propia autoría. Diez años después presentó «Los caminos del mar», escrita por Daniela de la Cruz: la interpretó en «De extremo a extremo» el 13 de julio de 2017 y al día siguiente en «Buena Noche». Su repertorio posterior incluye «Gracias por amarme», junto a Raúl Santi, y «Mujer deseada», de Marlene de los Santos.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Dhariana pertenece a la generación de solistas que dio presencia a la balada dominicana en la radio y la televisión de los años ochenta. Su actividad comprende también la interpretación de música bailable y la participación en el espectáculo teatral «Por la Patria Cantando». Las grabaciones y actuaciones conservadas en su canal oficial permiten seguir esas distintas facetas de su carrera.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "00652f5d-1e5f-436a-b12a-7e309a3deebc",
+        "created_at": "2026-10-20T11:52:20.342725+00:00",
+        "updated_at": "2026-10-20T11:52:20.342725+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "567d38b1-abd8-4b9b-895c-f000b2b85fb1",
+        "editorial_document_id": "a846d4fe-e69c-45f7-9dba-425b632cee1c",
+        "occurrence_id": "45289fa0-7c28-4439-b945-61733ff09930",
+        "entity_type": "artist",
+        "target_artist_id": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+        "created_at": "2026-10-20T11:52:20.342725+00:00",
+        "updated_at": "2026-10-20T11:52:20.342725+00:00"
+      },
+      {
+        "id": "b09ca990-f46a-4a3b-bf44-dd5f9b40b737",
+        "editorial_document_id": "a846d4fe-e69c-45f7-9dba-425b632cee1c",
+        "occurrence_id": "eace898f-8e27-4dda-8d36-2ea52b671e2c",
+        "entity_type": "artist",
+        "target_artist_id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+        "created_at": "2026-10-20T11:52:20.342725+00:00",
+        "updated_at": "2026-10-20T11:52:20.342725+00:00"
+      },
+      {
+        "id": "16f63ee4-2ff2-4be3-b0fb-11d163e6554b",
+        "editorial_document_id": "91789053-e7bf-4e18-b40f-22714174a932",
+        "occurrence_id": "a94ca15f-e7a3-436c-8772-ff76ca078166",
+        "entity_type": "artist",
+        "target_artist_id": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+        "created_at": "2026-10-20T11:52:20.545922+00:00",
+        "updated_at": "2026-10-20T11:52:20.545922+00:00"
+      },
+      {
+        "id": "a425bae9-4498-435b-806e-5189c57fef99",
+        "editorial_document_id": "91789053-e7bf-4e18-b40f-22714174a932",
+        "occurrence_id": "fc1ebf33-4fb3-4320-a653-6fa8353cee30",
+        "entity_type": "artist",
+        "target_artist_id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+        "created_at": "2026-10-20T11:52:20.545922+00:00",
+        "updated_at": "2026-10-20T11:52:20.545922+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-20T11:52:24.617Z",
+    "counts": {
+      "documents": 2,
+      "relations": 4,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

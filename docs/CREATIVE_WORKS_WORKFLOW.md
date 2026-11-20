@@ -1,5 +1,10 @@
 # Creative Works Editorial Workflow
 
+## Historical documentation — not an active import instruction (2026-10-15)
+
+The workflow, commands, readiness claims and status labels below describe the legacy portfolio implementation at the time of writing. They do not authorize new imports or define the current canonical composition model. For current work read [discography.md](discography.md), [DATA_GOVERNANCE.md](DATA_GOVERNANCE.md) and [architecture/MUSIC_ONTOLOGY.md](architecture/MUSIC_ONTOLOGY.md). Preserve this history and existing data; do not rerun these commands without a separately reviewed and authorized plan.
+
+
 This document describes the official Mangulina process for documenting creative contributions (production, composition, arrangement, engineering credits, etc.) across artists' works.
 
 ## Overview
@@ -268,7 +273,7 @@ Result:
 
 ## Future Artists
 
-This workflow is now the **standard process** for all future artists:
+Historically, this workflow was described as the standard process for future artists (superseded for new discography work by discography.md):
 
 1. **Juan Luis Guerra** → follows same workflow
 2. **Ramón Orlando** → follows same workflow
@@ -317,4 +322,4 @@ This allows:
 ---
 
 **Last Updated:** 2026-07-04  
-**Status:** Final / Official Process
+**Historical status:** Final / Official Process at original publication; superseded for new discography work

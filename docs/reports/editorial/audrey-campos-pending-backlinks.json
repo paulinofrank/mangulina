@@ -1,0 +1,9 @@
+{
+ "target_artist_id":"ed7acae2-5540-4cec-89b4-46c23959731e",
+ "target_status":"draft",
+ "action":"Pending until authorized target publication and scope covering other biographies; no existing document changed",
+ "documents":[
+   {"owner":"Frank Ceara","locale":"en","id":"a64af47f-33e8-4ccf-9870-ead7ba37ac9b","revision":1,"context":"In 1992 Tejada produced Bachata Magic, bachata versions of ballads sung by Ceara and the singer Audrey Campos"},
+   {"owner":"Frank Ceara","locale":"es","id":"5b3d0fc1-83c8-45b8-88c7-06791dbecf9a","revision":1,"context":"En 1992 Tejada produjo Bachata Magic, versiones en bachata de baladas cantadas por Ceara y la cantante Audrey Campos"}
+ ]
+}

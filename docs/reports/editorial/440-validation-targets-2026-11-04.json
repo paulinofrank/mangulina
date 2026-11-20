@@ -1,0 +1,230 @@
+[
+  {
+    "id": "79d013c7-dafc-4807-966e-32c370172dee",
+    "name": "Adalgisa Pantaleón",
+    "slug": "adalgisa-pantaleon",
+    "status": "published"
+  },
+  {
+    "id": "b1dec30a-6da0-442a-be24-9891c4ddbe53",
+    "name": "Alex Mansilla",
+    "slug": "alex-mansilla",
+    "status": "published"
+  },
+  {
+    "id": "ac087719-147c-47fa-9bb0-801f7a039ca7",
+    "name": "El Cieguito de Nagua",
+    "slug": "el-cieguito-de-nagua",
+    "status": "published"
+  },
+  {
+    "id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+    "name": "El Prodigio",
+    "slug": "el-prodigio",
+    "status": "published"
+  },
+  {
+    "id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+    "name": "Fernando Villalona",
+    "slug": "fernando-villalona",
+    "status": "published"
+  },
+  {
+    "id": "aa733322-d3a4-4fe7-bf61-65f3425a8ed7",
+    "name": "Frank Ceara",
+    "slug": "frank-ceara",
+    "status": "published"
+  },
+  {
+    "id": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+    "name": "Grupo 440",
+    "slug": "grupo-440",
+    "status": "published"
+  },
+  {
+    "id": "e07267a0-7f9d-4ef5-928c-d4ade7dc921e",
+    "name": "Guandulito",
+    "slug": "guandulito",
+    "status": "published"
+  },
+  {
+    "id": "faaa6c63-d5c5-4667-8d23-b290104cf186",
+    "name": "Héctor Aníbal",
+    "slug": "hector-anibal",
+    "status": "published"
+  },
+  {
+    "id": "6b6d24d4-c6fe-42d6-8937-2d2f9f6c9292",
+    "name": "Janina Rosado",
+    "slug": "janina-rosado",
+    "status": "published"
+  },
+  {
+    "id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+    "name": "Joaquín Balaguer",
+    "slug": "joaquin-balaguer",
+    "status": "published"
+  },
+  {
+    "id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+    "name": "Jorge Taveras",
+    "slug": "jorge-taveras",
+    "status": "published"
+  },
+  {
+    "id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+    "name": "Juan Luis Guerra",
+    "slug": "juan-luis-guerra",
+    "status": "published"
+  },
+  {
+    "id": "2a4813af-a826-410e-9475-b2bd1474b234",
+    "name": "Kiko Rodríguez",
+    "slug": "kiko-rodriguez",
+    "status": "published"
+  },
+  {
+    "id": "15c08a48-b94b-41c8-99d8-53144397c787",
+    "name": "Krisspy",
+    "slug": "krisspy",
+    "status": "published"
+  },
+  {
+    "id": "99537a98-fb19-4487-814d-c60d91c4d10b",
+    "name": "Luis \"Terror\" Días",
+    "slug": "luis-terror-dias",
+    "status": "published"
+  },
+  {
+    "id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+    "name": "Manuel Tejada",
+    "slug": "manuel-tejada",
+    "status": "published"
+  },
+  {
+    "id": "c7651bfb-598e-4877-9b65-323df1fcfd70",
+    "name": "Marco Hernández",
+    "slug": "marco-hernandez",
+    "status": "published"
+  },
+  {
+    "id": "080c0205-8b66-4f16-915e-1d867acf82cc",
+    "name": "Maridalia Hernández",
+    "slug": "maridalia-hernandez",
+    "status": "published"
+  },
+  {
+    "id": "150d1962-c866-43be-8859-168fff7f1686",
+    "name": "Mariela Mercado",
+    "slug": "mariela-mercado",
+    "status": "published"
+  },
+  {
+    "id": "da791d26-8bab-45e4-b7d1-f09314869f09",
+    "name": "Michel Camilo",
+    "slug": "michel-camilo",
+    "status": "published"
+  },
+  {
+    "id": "070e7449-814e-4ea6-a009-7a091b7e4878",
+    "name": "Milly Quezada",
+    "slug": "milly-quezada",
+    "status": "published"
+  },
+  {
+    "id": "f84b208b-dd57-43ad-b2bf-d5099e2f0e0e",
+    "name": "Olga Lara",
+    "slug": "olga-lara",
+    "status": "published"
+  },
+  {
+    "id": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+    "name": "Pavel Núñez",
+    "slug": "pavel-nunez",
+    "status": "published"
+  },
+  {
+    "id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+    "name": "Rafael Solano",
+    "slug": "rafael-solano",
+    "status": "published"
+  },
+  {
+    "id": "25440b12-5934-472d-8a38-f425510ca379",
+    "name": "Roger Zayas-Bazán",
+    "slug": "roger-zayas-bazan",
+    "status": "published"
+  },
+  {
+    "id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+    "name": "Sergio Vargas",
+    "slug": "sergio-vargas",
+    "status": "published"
+  },
+  {
+    "id": "2cc97ca9-126d-48c5-922f-e9d5c8b0360d",
+    "name": "Sonia Silvestre",
+    "slug": "sonia-silvestre",
+    "status": "published"
+  },
+  {
+    "id": "9b15dfca-0f60-49b3-a139-100a5a329741",
+    "name": "Tatico Henríquez",
+    "slug": "tatico-henriquez",
+    "status": "published"
+  },
+  {
+    "id": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+    "name": "Vickiana",
+    "slug": "vickiana",
+    "status": "published"
+  },
+  {
+    "id": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+    "name": "Víctor Víctor",
+    "slug": "victor-victor",
+    "status": "published"
+  },
+  {
+    "id": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+    "name": "Wilfrido Vargas",
+    "slug": "wilfrido-vargas",
+    "status": "published"
+  },
+  {
+    "id": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+    "name": "Ramón Orlando",
+    "slug": "ramon-orlando",
+    "status": "published"
+  },
+  {
+    "id": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+    "name": "Julio Alberto Hernández",
+    "slug": "julio-alberto-hernandez",
+    "status": "published"
+  },
+  {
+    "id": "25a420d1-7a98-4fd2-93c8-38d3ed2d2dc1",
+    "name": "José Antonio Rodríguez",
+    "slug": "jose-antonio-rodriguez",
+    "status": "published"
+  },
+  {
+    "id": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+    "name": "Fefita la Grande",
+    "slug": "fefita-la-grande",
+    "status": "published"
+  },
+  {
+    "id": "df68a7c8-c284-4d97-a4fd-b02264396148",
+    "name": "José Antonio Molina",
+    "slug": "jose-antonio-molina",
+    "status": "published"
+  },
+  {
+    "id": "ec0ebf45-13ca-41bd-af4c-256e4f226823",
+    "name": "Claudio Cohén",
+    "slug": "claudio-cohen",
+    "status": "published"
+  }
+]

@@ -1,0 +1,259 @@
+{
+  "proposal_status": "NOT_APPLIED_REQUIRES_EDITOR_APPROVAL",
+  "date": "2026-10-16",
+  "project_id": "srulenjahemkuxtkfmzt",
+  "artist_id": null,
+  "action": "create_one_artist_and_two_draft_biographies",
+  "before": {
+    "artist": "No matching identity located by name, first name, alias or slug containing rubal"
+  },
+  "after": {
+    "artist_fields": {
+      "name": "Rubali Valerio",
+      "stage_name": "Rubali Valerio",
+      "first_name": "Rubali",
+      "last_name": "Valerio",
+      "second_last_name": "Calcaño",
+      "aliases": [
+        "Rubalí Valerio",
+        "El Rubí del Acordeón"
+      ],
+      "slug": "rubali-valerio",
+      "type": "solo_artist",
+      "status": "draft",
+      "gender": "female",
+      "primary_role": "singer",
+      "occupations": [
+        "accordionist"
+      ],
+      "instruments": [
+        "accordion",
+        "voice"
+      ],
+      "primary_genre": "merengue-perico-ripiao",
+      "genres": [],
+      "artist_tags": [
+        "secular"
+      ],
+      "date_of_birth": "1998-05-09",
+      "birth_year": 1998,
+      "birth_place": "Santo Domingo",
+      "province": "Santiago",
+      "youtube": "@Rubalivalerio",
+      "instagram": "rubali_valerio",
+      "facebook": "rubali.valeriocalcano",
+      "spotify": "32Bi4KvyG9EsytLlllkiDD"
+    },
+    "editorial_documents": [
+      {
+        "document_type": "artist_biography",
+        "owner_artist_id": null,
+        "locale": "es",
+        "schema_version": 1,
+        "status": "draft",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Rubali Valerio Calcaño, conocida como El Rubí del Acordeón, es una cantante y acordeonista dominicana de merengue típico, nacida en Santo Domingo el 9 de mayo de 1998 y criada en Santiago de los Caballeros."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Formación",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Aprendió acordeón con su padre, Lupe Valerio, y estudió canto en la Escuela de Música Típica «Ñico Lora», en Santiago. También formó parte de «Los Hijos de Lupe»."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Trayectoria",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Tras emigrar a Estados Unidos en 2016, retomó la práctica musical en 2021. En 2023 presentó su propia agrupación, con dirección musical de su padre. Su repertorio publicado incluye «Amor Prohibido» y «El Vecinito»."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Legado",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Su trayectoria enlaza la formación musical familiar con una propuesta propia como cantante y acordeonista dentro del merengue típico."
+                }
+              ]
+            }
+          ]
+        },
+        "markdown_mirror": "Rubali Valerio Calcaño, conocida como El Rubí del Acordeón, es una cantante y acordeonista dominicana de merengue típico, nacida en Santo Domingo el 9 de mayo de 1998 y criada en Santiago de los Caballeros.\n\n**Formación**\n\nAprendió acordeón con su padre, Lupe Valerio, y estudió canto en la Escuela de Música Típica «Ñico Lora», en Santiago. También formó parte de «Los Hijos de Lupe».\n\n**Trayectoria**\n\nTras emigrar a Estados Unidos en 2016, retomó la práctica musical en 2021. En 2023 presentó su propia agrupación, con dirección musical de su padre. Su repertorio publicado incluye «Amor Prohibido» y «El Vecinito».\n\n**Legado**\n\nSu trayectoria enlaza la formación musical familiar con una propuesta propia como cantante y acordeonista dentro del merengue típico.",
+        "references": []
+      },
+      {
+        "document_type": "artist_biography",
+        "owner_artist_id": null,
+        "locale": "en",
+        "schema_version": 1,
+        "status": "draft",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Rubali Valerio Calcaño, known as El Rubí del Acordeón, is a Dominican merengue típico singer and accordionist. Born in Santo Domingo on May 9, 1998, she grew up in Santiago de los Caballeros."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Musical training",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Her father, accordionist Lupe Valerio, taught her the instrument. She developed her singing at the «Ñico Lora» traditional music school in Santiago and performed with «Los Hijos de Lupe»."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Career",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "She moved to the United States in 2016 and resumed her musical practice in 2021. By 2023 she was introducing her own ensemble under her father's musical direction. Her recorded repertoire includes «Amor Prohibido» and «El Vecinito»."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Legacy",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Her work carries a family tradition of accordion playing into her own career as a singer and instrumental performer of merengue típico."
+                }
+              ]
+            }
+          ]
+        },
+        "markdown_mirror": "Rubali Valerio Calcaño, known as El Rubí del Acordeón, is a Dominican merengue típico singer and accordionist. Born in Santo Domingo on May 9, 1998, she grew up in Santiago de los Caballeros.\n\n**Musical training**\n\nHer father, accordionist Lupe Valerio, taught her the instrument. She developed her singing at the «Ñico Lora» traditional music school in Santiago and performed with «Los Hijos de Lupe».\n\n**Career**\n\nShe moved to the United States in 2016 and resumed her musical practice in 2021. By 2023 she was introducing her own ensemble under her father's musical direction. Her recorded repertoire includes «Amor Prohibido» and «El Vecinito».\n\n**Legacy**\n\nHer work carries a family tradition of accordion playing into her own career as a singer and instrumental performer of merengue típico.",
+        "references": []
+      }
+    ]
+  },
+  "field_evidence_report": "rubali-valerio-profile-proposal.md",
+  "sources": {
+    "S1": "https://www.youtube.com/@Rubalivalerio",
+    "S2": "https://www.facebook.com/rubali.valeriocalcano/about",
+    "S3": "https://www.instagram.com/rubali_valerio/",
+    "S4": "https://www.elcaribe.com.do/gente/rubali-valerio-entra-a-la-competencia-tipica/",
+    "S5": "https://desdelaredrd.com/2023/11/rubali-valerio-calcano-el-rubi-del-acordeon/",
+    "S6": "https://open.spotify.com/artist/32Bi4KvyG9EsytLlllkiDD",
+    "S7": "https://open.spotify.com/artist/4RJHYFOGQlOxJWwqh6xjl9"
+  },
+  "pending": [
+    "Editor approval of exact manifest",
+    "Image not proposed for upload",
+    "Recheck duplicate identity and slug",
+    "Validate live taxonomy before creation"
+  ],
+  "excluded": [
+    "publication",
+    "other artists",
+    "family relationships",
+    "separate group identity",
+    "discography import",
+    "image upload",
+    "security or schema changes"
+  ]
+}

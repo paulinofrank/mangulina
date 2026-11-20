@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import dotenv from 'dotenv';
+import {createClient} from '@supabase/supabase-js';
+import {validateEditorialDocument} from '../../../src/lib/editorial/validate';
+import {buildEditorialIntegrityReport} from '../../../src/lib/editorial/integrity';
+dotenv.config({quiet:true});
+const db=createClient(process.env.NEXT_PUBLIC_SUPABASE_URL??process.env.SUPABASE_URL!,process.env.SUPABASE_SERVICE_ROLE_KEY!,{auth:{persistSession:false}});
+const get=(r:any)=>{if(r.error)throw Error(r.error.message);return r.data;};const id='f59bf55e-5463-43da-802d-d55bd0db8b0d';
+const artist=get(await db.from('artists').select('*').eq('id',id).single());const documents=get(await db.from('editorial_documents').select('*').eq('owner_artist_id',id));const relations=get(await db.from('editorial_entity_references').select('*').in('editorial_document_id',documents.map((d:any)=>d.id)));
+const targetIds=[...new Set([...JSON.stringify(documents).matchAll(/artistId"\s*:\s*"([^"]+)/g)].map(x=>x[1]))];
+const targets=get(await db.from('artists').select('id,name,slug,status').in('id',targetIds));const snapshot={artists:[artist,...targets],documents,relations};
+const validation=documents.map((d:any)=>({id:d.id,locale:d.locale,ok:validateEditorialDocument(d.schema_version,d.document).ok}));const integrity=buildEditorialIntegrityReport(snapshot);
+fs.writeFileSync('docs/reports/editorial/koki-acosta-audit-snapshot.json',JSON.stringify({date:'2026-10-24',scope:'Read-only Koki Acosta profile audit; no data changes',snapshot,validation,integrity},null,2));console.log(JSON.stringify({validation,integrity:integrity.counts,findings:integrity.findings,targets}));

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { isCollectiveArtist, newArtistWorkspaceDefaults, type ArtistWorkspace } from "@/lib/adminArtistWorkspace";
 import Link from "next/link";
 import { BookOpenText, UserRound } from "lucide-react";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useEffectEvent, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import {
   buildArtistWrite,
@@ -1071,6 +1071,20 @@ export default function AdminDashboard() {
     setStatus("");
     return true;
   }
+
+  const openedLinkedArtist = useRef(false);
+  const openLinkedArtist = useEffectEvent(() => {
+    if (openedLinkedArtist.current) return;
+    openedLinkedArtist.current = true;
+    const id = new URLSearchParams(window.location.search).get("artistId");
+    if (id && artists.some((artist) => artist.id === id)) {
+      handleSelectArtistForEdit(id);
+    }
+  });
+
+  useEffect(() => {
+    if (artists.length > 0) openLinkedArtist();
+  }, [artists]);
 
   // "Musicians" is a browsing filter over solo artists, not a distinct stored
   // category (many solo artists match it alongside "solo"), so opening a

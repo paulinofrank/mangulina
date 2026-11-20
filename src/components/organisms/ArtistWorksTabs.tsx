@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import type { PortfolioWork } from "@/lib/getArtistWorksPortfolio";
@@ -18,9 +18,9 @@ const ROLE_TABS = [
   { key: "producer", roles: ["producer", "co_producer", "executive_producer", "beat_programmer", "remixer"] },
   { key: "engineer", roles: ["engineer", "recording_engineer", "mixing_engineer", "mix_engineer", "mixing", "mastering_engineer", "mastering"] },
   { key: "conductor", roles: ["conductor", "orchestrator"] },
+  { key: "musician", roles: ["instrumentalist", "pianist"] },
+  { key: "backingVocals", roles: ["backing_vocalist"] },
 ] as const;
-
-type RoleTab = (typeof ROLE_TABS)[number]["key"];
 
 function belongsToTab(work: PortfolioWork, roles: readonly string[]) {
   return work.roles.some((role) => roles.includes(normalizeArtistWorkCreditRole(role)));
@@ -78,25 +78,62 @@ function renderPerformers(work: PortfolioWork, t: (key: string) => string) {
   });
 }
 
-export default function ArtistWorksTabs({ works }: { works: PortfolioWork[] }) {
+export default function ArtistWorksTabs({ works, coverTitles }: {
+  works: PortfolioWork[];
+  coverTitles: Record<string, string>;
+}) {
   const t = useTranslations("artist");
-  const groups = useMemo(() => ROLE_TABS.map((tab) => ({
-    ...tab,
-    works: works.filter((work) => belongsToTab(work, tab.roles)),
-  })).filter((group) => group.works.length > 0), [works]);
-  const [activeTab, setActiveTab] = useState<RoleTab>(groups[0]?.key ?? "composer");
+  const locale = useLocale();
+  const groups = useMemo(() => {
+    const result: { key: string; label: string; works: PortfolioWork[] }[] = [];
+    for (const tab of ROLE_TABS) {
+      if (tab.key === "musician") {
+        const instruments = new Map<string, string>();
+        for (const work of works) for (const recording of work.recordings) {
+          for (const instrument of recording.instruments ?? []) {
+            instruments.set(instrument.code, (locale === "es" ? instrument.name_es : instrument.name_en)
+              || instrument.name_en || instrument.name_es || instrument.code);
+          }
+        }
+        for (const [code, label] of instruments) {
+          const instrumentWorks = works.flatMap((work) => {
+            // Filter versions as well as Works so a piano version cannot
+            // represent a separate congas performance of the same composition.
+            const recordings = work.recordings.filter((recording) =>
+              recording.instruments?.some((instrument) => instrument.code === code));
+            return recordings.length ? [{ ...work, recordings }] : [];
+          });
+          result.push({ key: `instrument-${code}`, label, works: instrumentWorks });
+        }
+        // Preserve genuine musician credits whose instrument is undocumented.
+        const unknownWorks = works.flatMap((work) => {
+          const recordings = work.recordings.filter((recording) =>
+            recording.roles.some((role) => (tab.roles as readonly string[]).includes(normalizeArtistWorkCreditRole(role)))
+              && !recording.instruments?.length);
+          return recordings.length ? [{ ...work, recordings }] : [];
+        });
+        if (unknownWorks.length) result.push({ key: tab.key, label: t("workRoles.musician"), works: unknownWorks });
+      } else {
+        const tabWorks = works.filter((work) => belongsToTab(work, tab.roles));
+        if (tabWorks.length) result.push({ key: tab.key, label: t(`workRoles.${tab.key}`), works: tabWorks });
+      }
+    }
+    return result;
+  }, [works, locale, t]);
+  const [selectedTab, setActiveTab] = useState<string>(groups[0]?.key ?? "composer");
+  const activeTab = groups.some((group) => group.key === selectedTab) ? selectedTab : groups[0]?.key;
 
   if (!groups.length) return null;
 
   return <div className="min-w-0">
     <div className="mb-2 flex min-w-0 gap-1 overflow-x-auto border-b border-gray-200 pb-px shadow-[0_1px_0_rgba(0,45,98,0.06)]"
       role="tablist" aria-label={t("worksRoleTabs.label")}>
-      {groups.map(({ key, works: tabWorks }) => {
+      {groups.map(({ key, label, works: tabWorks }) => {
         const active = key === activeTab;
         return <button key={key} id={`works-tab-${key}`} type="button" role="tab"
           aria-selected={active} aria-controls={`works-panel-${key}`} onClick={() => setActiveTab(key)}
           className={`min-w-fit flex-1 cursor-pointer whitespace-nowrap border-b-2 px-3 py-1.5 text-center text-sm font-normal transition-colors ${active ? "border-(--color-wikicrimson) text-(--color-wikicrimson)" : "border-transparent text-gray-500 hover:text-(--color-flagblue)"}`}>
-          {t(`workRoles.${key}`)} <span className="text-gray-400">({tabWorks.length})</span>
+          {label} <span className="text-gray-400">({tabWorks.length})</span>
         </button>;
       })}
     </div>
@@ -112,6 +149,11 @@ export default function ArtistWorksTabs({ works }: { works: PortfolioWork[] }) {
         const href = workHref(work);
         const recording = displayRecording(work);
         const year = recording?.releaseYear ?? recording?.recordingYear;
+        const coverAlt = recording?.hasCoverImage && recording.coverReleaseId
+          ? coverTitles[recording.coverReleaseId]
+            ?? (recording.coverReleaseId === recording.releaseId ? recording.releaseTitle : null)
+            ?? ""
+          : "";
         const coverUrl = recording?.hasCoverImage && recording.coverReleaseId
           ? getPublicReleaseCoverUrl(recording.coverReleaseId, 150)
           : recording?.performers.find((performer) => performer.artistId && performer.hasImage)
@@ -123,10 +165,10 @@ export default function ArtistWorksTabs({ works }: { works: PortfolioWork[] }) {
             {coverUrl ? (
               href ? (
                 <Link href={href} prefetch={false} className="block h-full w-full">
-                  <Image src={coverUrl} alt="" fill sizes="44px" className="object-cover" />
+                  <Image src={coverUrl} alt={coverAlt} fill sizes="44px" className="object-cover" />
                 </Link>
               ) : (
-                <Image src={coverUrl} alt="" fill sizes="44px" className="object-cover" />
+                <Image src={coverUrl} alt={coverAlt} fill sizes="44px" className="object-cover" />
               )
             ) : null}
           </div>

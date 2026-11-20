@@ -1,0 +1,25 @@
+# Janyll La Intérprete — profile evidence
+
+Scope: new artist only, draft profile and two published biographies. No music import, media upload, other artist edits, publication of artist, deployment or security changes.
+
+## Sources reviewed directly
+
+- https://www.facebook.com/janyll.lainterprete — signed-in Chrome public profile: San José de Ocoa hometown, New York residence, birthday June 29; linked Instagram. Profile searches `cumple` and `Happy Birthday` performed. June 29, 2019 self-post thanks God for another year of life; June 29 greeting and June 30, 2021 greeting also surfaced. April 27 posts concern her son, August 8 post concerns Carla's death: rejected as her DOB evidence. No age established. Search results do not provide stable post permalinks; retain profile search https://www.facebook.com/profile/100000119723576/search/?q=Happy%20Birthday as discovery evidence, not a permanent post citation. Do not infer year from appearance or career start.
+- https://upinforma.com/nuevo/info.php?cat=opinion&id=1082 — Darío Sanjur, 2022-03-23, signed biographical opinion article hosted by Universidad de Panamá (not institutional certification). Full name Milagros Santana Ortiz, June 29, birth in province San José de Ocoa; professional start 1978 Agustín Mercier, relocation 1980, Manhattan Center performance award 1984. Province is established; municipality of birth is not. Exact city remains null, hometown retained in prose. No birth year. Its `Jackie Núñez del Risco` credit is not silently equated to Yaqui; disputed spelling/authorship omitted. ACE/MSG claims omitted pending stronger documentation.
+- https://www.elcaribe.com.do/sin-categoria/janyll-presenta-nuevo-album-discografico/ — Gianna Cuevas, 2012-10-10 interview: ballads, first album Máquina de placer and four songs; Señora bachata/original versions, arrangers Ramón Orlando, Víctor Waill, Davisito Paredes, Billy Alonso. Original date of Máquina de placer not established. Digital 2021 dates do not supersede contemporaneous 2012 interview.
+- https://rosemarynews.com/janyll-estrena-nueva-produccion-musical/ — Zunilda Mercedes Fondeur, 2022-04-28: Solo contigo scheduled April 29; title song Enrique Féliz, arrangements Davicito Paredes/Mártires de León, Edilio Paredes participation, Carla compositions. No catalog credit rows created. Davisito/Davicito preserved per respective sources, no identity merge.
+- https://open.spotify.com/artist/2ACeQHeUZFvwgnEQnEeKeA — browser directly: Janyll La Interprete, Olías a mujer, Derramando sueños, Tus promesas de amor, Jamás; albums Máquina de placer, Señora, Todo Merengue, Janyll (digital 2021), Solo Contigo (2022). Identity matches press repertoire and official channel. Exact case-sensitive ID verified.
+- https://www.instagram.com/janyll_la_interprete/ — browser directly: singer, own music, links official YouTube channel UCeWV6blQOeTHdJtvooWzhDg; hometown Ocoa self-description. Birthday celebrations extended across days; not exact birth-year evidence.
+- https://www.youtube.com/@janylllainterpreteoficial7075 — directly loaded official artist channel, self-description Dominican ballad singer, Facebook cross-link exact supplied profile, same repertoire and «Veinte años» bolero video https://www.youtube.com/watch?v=Nsc4GyjNI1c. Supports bolero in addition to press bachata and catalog merengue. Official description/self-references and press establish female singer; no appearance-based gender inference.
+
+## Field manifest
+
+All before values absent (new artist). Name/stage Janyll La Intérprete; aliases Janyll, unaccented channel form, personal name. First Milagros, middle null, last Santana, second last Ortiz from full personal name. Solo artist; singer primary, no unsupported composer/producer occupations; voice instrument only (one guitar reference insufficient to characterize present instrumental practice). Primary ballads; additional bachata, bolero, merengue, no repetition. Secular based on romantic catalog, irrespective of public religious devotion. Province San José de Ocoa; birth_place null (province/hometown not exact natal city); birth_year/date_of_birth null. June 29 in prose, no fabricated calendar date/generated field writes. Facebook janyll.lainterprete; Instagram janyll_la_interprete; YouTube @janylllainterpreteoficial7075; Spotify 2ACeQHeUZFvwgnEQnEeKeA. Website not independently identified, null; no image provided/uploaded. No unverifiable award category, chart rank or release-year claims.
+
+## Identity / linkage
+
+All-state duplicate checks by Janyll/Janill, Milagros Santana, supplied identifiers returned none. Backwards structured EN/ES name-variant audit returned none. Five existing published artists referenced per locale: Ramón Orlando, Víctor Waill, Enrique Féliz, Mártires de León, Edilio Paredes. Legacy mirror coverage to be checked before completion. No other records authorized.
+
+## Verification plan
+
+Validate schema, exact persisted fields, draft artist, published EN/ES revision 1, ten reference relations and integrity report. Reload administrative form and inspect fields/bios; no public draft URL request or cache refresh. No deployment.

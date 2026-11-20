@@ -203,11 +203,12 @@ function dedupeRelationshipItems(relationships: ArtistRelationshipItem[]) {
 }
 
 export async function getArtistRelationships(
-  artistId: string
+  artistId: string,
+  signal?: AbortSignal,
 ): Promise<NormalizedArtistRelationships> {
   const supabase = getSupabaseClient();
 
-  const [outgoingResponse, incomingResponse] = await Promise.all([
+  const queries = [
     supabase
       .from("artist_relationships")
       .select(RELATIONSHIP_SELECT)
@@ -220,7 +221,17 @@ export async function getArtistRelationships(
       .eq("target_artist_id", artistId)
       .order("start_year", { ascending: true, nullsFirst: false })
       .order("created_at", { ascending: true }),
-  ]);
+  ];
+  const [outgoingResponse, incomingResponse] = await Promise.all(
+    signal ? queries.map((query) => query.abortSignal(signal)) : queries,
+  );
+
+  // The public ISR render must fail instead of replacing cached relationships
+  // with an empty list. The admin reader retains its existing fallback.
+  const error = outgoingResponse.error ?? incomingResponse.error;
+  if (signal && error) {
+    throw new Error("Unable to load artist relationships.", { cause: error });
+  }
 
   if (outgoingResponse.error) {
     console.error("getArtistRelationships outgoing error:", outgoingResponse.error);

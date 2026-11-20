@@ -1,0 +1,519 @@
+{
+  "date": "2026-10-24",
+  "authorization": "Editor named new-profile candidate in ongoing workflow; new draft artist and two published validated bios. No artist publication, discography imports, media or other artist changes.",
+  "before": null,
+  "after": {
+    "id": "ed7acae2-5540-4cec-89b4-46c23959731e",
+    "name": "Audrey Campos",
+    "stage_name": "Audrey Campos",
+    "sort_name": "Campos, Audrey",
+    "slug": "audrey-campos",
+    "type": "solo_artist",
+    "status": "draft",
+    "first_name": "Audrey",
+    "middle_name": null,
+    "last_name": "Campos",
+    "second_last_name": null,
+    "aliases": [
+      "Audry Campos"
+    ],
+    "birth_place": "Santo Domingo",
+    "province": "Distrito Nacional",
+    "date_of_birth": null,
+    "birth_year": 1974,
+    "wikidata_id": "Q70955099",
+    "gender": "female",
+    "primary_role": "singer",
+    "occupations": [
+      "composer",
+      "producer"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "primary_genre": "rock",
+    "genres": [
+      "ballads",
+      "bachata"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "facebook": "audreycampos.music",
+    "instagram": "campos_audrey",
+    "spotify": "6OEmraRCOzWmrmU8Ev9x5p",
+    "youtube": null,
+    "website": null
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Audrey Campos es una cantante, compositora y productora dominicana nacida en Santo Domingo, vinculada al pop-rock, la balada y la bachata. Desarrolló parte de su trayectoria junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "aa733322-d3a4-4fe7-bf61-65f3425a8ed7",
+                  "occurrenceId": "8b57105d-d66f-481c-a9f6-b5a330acd4a2",
+                  "displayText": "Frank Ceara"
+                }
+              },
+              {
+                "type": "text",
+                "text": " en el proyecto «Bachata Magic» y posteriormente como solista. Su repertorio incluye «Cuando tú no estás», «El amor que tuve» y «Pasión sin luz». Ha mantenido actividad artística tanto en la República Dominicana como en Serbia, donde se ha establecido con su familia."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Primeras grabaciones y Bachata Magic",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Comenzó a trabajar en la música desde los catorce años. A principios de los años noventa participó en «Bachata Magic», un proyecto impulsado por "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "occurrenceId": "4aec98c1-8b74-490c-9160-f763c8fc6640",
+                  "displayText": "Manuel Tejada"
+                }
+              },
+              {
+                "type": "text",
+                "text": " que reunió su voz y la de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "aa733322-d3a4-4fe7-bf61-65f3425a8ed7",
+                  "occurrenceId": "e0ef54bc-8865-49bd-b55d-9fcfa4dcb769",
+                  "displayText": "Frank Ceara"
+                }
+              },
+              {
+                "type": "text",
+                "text": " para interpretar en bachata canciones conocidas como baladas. La propuesta dio lugar a grabaciones como «Lluvia de besos» y a una colaboración que continuó en distintos momentos de sus carreras. También figura acreditada como corista en «Asere», de Willy Chirino."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Viña del Mar y nuevas colaboraciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2003 representó a la República Dominicana en la competencia internacional del Festival de Viña del Mar con «Si te vas», composición de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "aa733322-d3a4-4fe7-bf61-65f3425a8ed7",
+                  "occurrenceId": "b330ddc5-311b-416e-b494-cccf1476620f",
+                  "displayText": "Frank Ceara"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". El archivo histórico oficial del festival conserva su presentación. En su trayectoria conjunta también aparece «Lléname de ti», escrita para ambos por "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                  "occurrenceId": "d3df42b7-1d2c-4ef7-a492-1b22b73dfe0b",
+                  "displayText": "Juan Luis Guerra"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", quien participó en los coros de la grabación."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En septiembre de 2010 retomó el trabajo con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "aa733322-d3a4-4fe7-bf61-65f3425a8ed7",
+                  "occurrenceId": "3e5a56de-e736-44af-bbd8-e6d0bfb053f9",
+                  "displayText": "Frank Ceara"
+                }
+              },
+              {
+                "type": "text",
+                "text": " bajo el nombre «Audrey y Frank». Presentaron «Más allá de los años», una bachata romántica con elementos tex-mex, y realizaron una temporada de conciertos en Casa de Teatro. En un encuentro digital con Listín Diario explicaron que preparaban una nueva producción y destacaron la continuidad de su amistad y su colaboración musical."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Entre Santo Domingo y Serbia",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En una entrevista de 2007 relató su experiencia de vivir en Serbia, adonde se había trasladado por motivos familiares, y de cantar allí repertorio en español. Ese año regresó a escenarios dominicanos, incluido Casa de Teatro, y fue anunciada junto al grupo Peaje en Taboo Bamboo dentro de su faceta pop-rock. Su perfil público posterior sitúa su actividad en Belgrado; esa residencia no modifica su lugar de nacimiento dominicano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En marzo de 2023 fue anunciada para «Ellas 4, el concertazo», un reencuentro con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8c387f0a-7269-479a-964a-079b1566cb84",
+                  "occurrenceId": "98b26283-fd41-4b0d-9d98-bb7512f8d56c",
+                  "displayText": "Laura Rivera"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Shara Viñas y Ana Fe en Casa de Teatro, programado para el 1 de abril. En diciembre de ese año apareció en las plataformas el sencillo «Tekila», con Diómedes Jiménez. Su catálogo digital también conserva «Pasión sin luz» y el álbum «Frank & Audrey», que reúne interpretaciones como «Cuando tú no estás», «Morir de amor» y «Porque te quiero, quiero»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La trayectoria de Campos conecta la escena dominicana de pop-rock con la canción romántica y las primeras propuestas de bachata-pop de los años noventa. Su trabajo en dúo, las grabaciones como corista y sus presentaciones en distintos países muestran una carrera desarrollada entre proyectos colectivos y una actividad propia como intérprete."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Audrey Campos is a Dominican singer, songwriter, and producer born in Santo Domingo, whose work spans pop-rock, ballads, and bachata. She developed part of her career alongside "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "aa733322-d3a4-4fe7-bf61-65f3425a8ed7",
+                  "occurrenceId": "4fe1bd2a-e3fb-460d-8a9c-ebb241cfb0c5",
+                  "displayText": "Frank Ceara"
+                }
+              },
+              {
+                "type": "text",
+                "text": " in «Bachata Magic» and later as a solo performer. Her repertoire includes «Cuando tú no estás», «El amor que tuve», and «Pasión sin luz». She has remained active both in the Dominican Republic and in Serbia, where she has made a home with her family."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early recordings and Bachata Magic",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "She began working in music at fourteen. In the early 1990s, she took part in «Bachata Magic», a project initiated by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "occurrenceId": "003d55d7-0a97-430c-917e-040d34b15234",
+                  "displayText": "Manuel Tejada"
+                }
+              },
+              {
+                "type": "text",
+                "text": " that brought together her voice and that of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "aa733322-d3a4-4fe7-bf61-65f3425a8ed7",
+                  "occurrenceId": "819b3e8b-5f44-4bb9-939f-34d6ebb18f80",
+                  "displayText": "Frank Ceara"
+                }
+              },
+              {
+                "type": "text",
+                "text": " to perform bachata versions of familiar ballads. The project led to recordings such as «Lluvia de besos» and a partnership revisited at different stages of their careers. She is also credited with backing vocals on Willy Chirino’s «Asere»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Viña del Mar and further collaborations",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2003 she represented the Dominican Republic in the international competition at the Viña del Mar Festival with «Si te vas», written by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "aa733322-d3a4-4fe7-bf61-65f3425a8ed7",
+                  "occurrenceId": "45c1c2c9-eb59-43e6-9849-c86014ffcd8b",
+                  "displayText": "Frank Ceara"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". The festival’s official historical archive preserves her performance. Their joint repertoire also includes «Lléname de ti», written for them by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                  "occurrenceId": "25b4bfc0-bd4b-47d2-83fe-1ea556e58e77",
+                  "displayText": "Juan Luis Guerra"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", who contributed backing vocals to the recording."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In September 2010 she resumed work with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "aa733322-d3a4-4fe7-bf61-65f3425a8ed7",
+                  "occurrenceId": "dfbb186f-62af-4f84-b32e-249575cc0345",
+                  "displayText": "Frank Ceara"
+                }
+              },
+              {
+                "type": "text",
+                "text": " under the name «Audrey y Frank». They introduced «Más allá de los años», a romantic bachata with Tex-Mex elements, and held a run of concerts at Casa de Teatro. In an online interview with Listín Diario, they discussed a new recording project and the continuity of their friendship and musical partnership."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Between Santo Domingo and Serbia",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In a 2007 interview, she described living in Serbia after relocating for family reasons and performing Spanish-language repertoire there. That year she returned to Dominican stages, including Casa de Teatro, and was announced alongside the band Peaje at Taboo Bamboo as part of her pop-rock work. Her later public profile places her activity in Belgrade; this residence does not alter her Dominican birthplace."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In March 2023 she was announced for «Ellas 4, el concertazo», a reunion with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8c387f0a-7269-479a-964a-079b1566cb84",
+                  "occurrenceId": "9c3968f9-d048-4f8f-803d-13ec8302cbf9",
+                  "displayText": "Laura Rivera"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Shara Viñas, and Ana Fe at Casa de Teatro, scheduled for April 1. In December that year, the single «Tekila», featuring Diómedes Jiménez, appeared on digital platforms. Her digital catalog also preserves «Pasión sin luz» and the album «Frank & Audrey», including «Cuando tú no estás», «Morir de amor», and «Porque te quiero, quiero»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Campos’s career connects the Dominican pop-rock scene with romantic song and early bachata-pop projects of the 1990s. Her duo work, backing-vocal recordings, and appearances in different countries document a career moving between collaborative projects and her own work as a performer."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "aa733322-d3a4-4fe7-bf61-65f3425a8ed7",
+      "name": "Frank Ceara",
+      "slug": "frank-ceara",
+      "status": "published"
+    },
+    {
+      "id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+      "name": "Juan Luis Guerra",
+      "slug": "juan-luis-guerra",
+      "status": "published"
+    },
+    {
+      "id": "8c387f0a-7269-479a-964a-079b1566cb84",
+      "name": "Laura Rivera",
+      "slug": "laura-rivera",
+      "status": "published"
+    },
+    {
+      "id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+      "name": "Manuel Tejada",
+      "slug": "manuel-tejada",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "audrey-campos-research-2026-10-24.md",
+  "field_evidence": "See field-level rationale, original source URLs, access limitations and birth procedure in research report.",
+  "backward_reference_audit": {
+    "pending_owners": [
+      "Frank Ceara"
+    ],
+    "details": "See research report for two matching document IDs, revisions and contexts. New target is draft; no edits to other public biographies."
+  },
+  "unresolved": [
+    "No portrait provided.",
+    "Exact birthday unresolved; 1974 follows editor/Wikidata bibliographic claim.",
+    "Old YouTube 404; current handle linked by Instagram not loaded due browser timeout.",
+    "Final admin visual verification pending browser recovery."
+  ],
+  "exclusions": [
+    "No artist publication",
+    "No other artist changes",
+    "No music or credit imports",
+    "No security/schema/application changes",
+    "No deployment, draft public URL requests or manual cache refresh"
+  ]
+}

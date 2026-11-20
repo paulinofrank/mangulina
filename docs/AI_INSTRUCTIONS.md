@@ -1,5 +1,14 @@
 # AI Coding Assistant Instructions for Mangulina
 
+## Production usage workflow — 2026-10-19
+
+Follow [AI_PRODUCTION_USAGE_POLICY.md](AI_PRODUCTION_USAGE_POLICY.md): work locally by default, batch authorized targeted editorial refreshes, and require explicit instruction for production deployment or broad production verification. Preserve the existing scope, publication and security rules. Local verification does not prove production behavior.
+
+## Current discography authority — 2026-10-15
+
+For discography tasks, [discography.md](discography.md) and [../AGENTS.md](../AGENTS.md) govern scope, research and review gates. Mandatory multi-database cross-verification (Spotify, Apple Music, Deezer, YouTube Music, MusicBrainz, Discogs) is required per discography.md Section 4; never rely on a single platform feed. The current entity model is [architecture/MUSIC_ONTOLOGY.md](architecture/MUSIC_ONTOLOGY.md); canonical credit identity/scope is [architecture/CREDIT_ROLE_VOCABULARY.md](architecture/CREDIT_ROLE_VOCABULARY.md). Composition authorship uses work_credits irrespective of performer nationality; credited_works/credited_work_credits are legacy portfolio data. Preserve legacy rows and evidence; no automatic migration is authorized. Arrangement scope follows evidence. Self-performance display rules never delete authorship. Refer to these current rules wherever older examples below differ.
+
+
 **Status:** Official Project Rules  
 **Audience:** AI coding assistants, automated systems  
 **Authority:** Project governance  
@@ -8,6 +17,27 @@
 ---
 
 ## Before You Start
+
+For artist profile creation or correction, follow [ARTIST_PROFILE_WORKFLOW.md](ARTIST_PROFILE_WORKFLOW.md). Research every profile field, store social handles and Spotify artist IDs, select values supported by the current form, and verify the saved profile visually. Unknown birth information must be reported as unresolved, never invented.
+
+Artist field hygiene is mandatory: `genres` contains only additional documented genres and must never repeat `primary_genre`; leave it empty when no additional genres are verified. Likewise, `occupations` must not repeat `primary_role`. This existing rule is defined in [EDITORIAL_BIOGRAPHY_FORMAT.md](EDITORIAL_BIOGRAPHY_FORMAT.md), Field Hygiene, and must be checked against persisted values before delivery.
+
+Personal-name fields and stage names are independent. Artists may professionally use their second surname or another documented name component. Never infer surname order from the stage name or treat that choice as evidence against a sourced full name clarified by the editor. Populate the supported First Name, Middle Name, Last Name and Second Last Name fields; keeping the full name only as an alias is insufficient. Preserve genuine uncertainty without imposing naming assumptions. Follow the shared personal-name procedure and José Miguel Vásquez Lacay example in [ARTIST_PROFILE_WORKFLOW.md](ARTIST_PROFILE_WORKFLOW.md).
+
+### Collective artist names — descriptor versus proper name
+
+Do not add a generic type word to a collective artist's name merely because the
+record is an orchestra, group, band or ensemble. “Orquesta”, “Grupo”, “Banda”
+and “Conjunto” are descriptors unless reliable evidence shows that the word is
+part of the proper name. Store and display the documented canonical name
+without the generic prefix; keep it only when it is genuinely part of the name,
+as in “Orquesta Internacional” associated with Ramón Orlando. Keep artist type
+(`artist_type`, `primary_role`) separate from the proper name, and use the exact
+canonical name in `artistReference` nodes. If a stored name is wrong, correct
+the artist record within the approved scope instead of silently changing the
+name in a biography.
+
+An editor's request to create or complete a named artist profile authorizes saving that artist with artists.status = draft and publishing its completed, validated English and Spanish biography documents with editorial_documents.status = published, without a second manifest-approval step (discography.md, Gate B exception, clarified 2026-10-16). Preserve the sourced manifest and all identity and verification checks. Verify the artist remains draft and both documents are published. This makes the biographies ready for the artist's eventual release; it does not publish the draft artist profile. Publishing the artist profile, publishing biographies for an already public artist without authorization, destructive/shared changes, discography imports, expanded artist scope and security changes are outside this exception.
 
 Read these documents **in order** before making any code or database changes:
 
@@ -258,44 +288,21 @@ RIGHT:
 (See DATA_GOVERNANCE.md Section 5.6)
 ```
 
-### Rule 12: Handling Credits for Non-Dominican/External Artists
-```
-WRONG:
-Creating "Celia Cruz" or "José José" in the artists table just to link a Dominican composer/arranger's credit.
+### Rule 12: External performers and contributor scope
 
-RIGHT:
-1. Mangulina focuses on Dominican artists. Do not pollute the core artists, releases, or recordings tables with massive external international catalogs.
-2. Instead, use the credited_works table.
-3. Insert the external song title into credited_works.title and store the external artist's name as plain text in credited_works.performer_text (e.g., "Celia Cruz").
-4. Link the Dominican composer/arranger via the credited_work_credits table using their artist_id and the credited_work_id.
-```
+Do not create non-Dominican artist profiles or import international catalogs merely to document a Dominican contributor. Preserve literal external performer credit and release context in research. Before any catalog write, submit an evidence-backed plan using the existing ontology and obtain scope approval; unresolved representation remains a proposal. The legacy portfolio import is not the default route for new discography work.
 
+**International Works Must Be Original (No Foreign Covers of National Songs)**: For international/external performers, creative contributions are only cataloged if the work is an **original international work** (conceived, composed, arranged, or produced specifically for that foreign artist, or premiered originally by them). Re-recordings, covers, or adaptations of pre-existing Dominican songs performed by foreign artists (e.g., an international artist or orchestra covering an existing Dominican track) are **strictly excluded**. An international artist merely covering an existing national song does not constitute an international work of the author and has no cataloging value in Mangulina.
 
----
+## Credits Model (Current Summary)
 
-## Credits Model (Summary)
+| Scope | Relation | Contributions |
+| --- | --- | --- |
+| Work | work_credits | Composer, songwriter, lyricist; composition-level arrangement when evidenced |
+| Recording | recording_credits | Performance, recording-specific arrangement, session production and engineering |
+| Release | release_artists and documented release relations | Release billing; do not invent a new release-credit schema |
 
-**This is the most common source of mistakes. Read DATA_GOVERNANCE.md Sections 5–8 completely.**
-
-### Three-Layer Credit System
-
-| Layer | Location | Question | Examples |
-|-------|----------|----------|----------|
-| **Creative (External)** | Work table | Who created this composition for an external/international artist? | Composer, lyricist (International only) |
-| **Performance & Local Creation** | Recording table | Who performed or wrote this local recording? | Singer, guitarist, producer, composer, lyricist, arranger |
-| **Release** | Release table | Who is credited for this album? | Primary artist, featured, compilation |
-
-### Critical Rule: Never Mix Layers
-```
-WRONG:
-credited_works table with role = 'guitar'
-(Guitar player is a recording-level credit, not work-level)
-
-RIGHT:
-Work → credited_work_credits (composer, lyricist, arranger for international artists)
-Recording → recording_credits (vocals, guitar, producer, engineer, AND local composer/lyricist/arranger)
-Release → release_artists (primary, featured, compilation)
-```
+Nationality does not change composition-credit scope. Canonical role scope follows architecture/CREDIT_ROLE_VOCABULARY.md. Preserve literal historical roles and existing misplaced credits for review, not automatic reassignment. Additional evidence supports an existing semantic credit rather than duplicating it per release appearance.
 
 ### credited_as Field
 
@@ -417,7 +424,7 @@ Work has a "producer" field
 
 RIGHT:
 Recording has producer in recording_credits
-Work has composer in credited_work_credits
+Work has composer in work_credits
 ```
 
 ### Mistake 4: Breaking SEO

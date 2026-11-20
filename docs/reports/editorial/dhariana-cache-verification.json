@@ -1,0 +1,13 @@
+{
+  "status": 200,
+  "body": "{\"ok\":true,\"revalidated\":{\"artists\":1,\"songs\":0,\"releases\":6,\"allArtists\":false}}",
+  "artist": "dhariana",
+  "releases": [
+    "dhariana-ven-a-amarme-th-amf-2372",
+    "dhariana-senora-de-nadie-exitos-salsa-y-merengue-digital-2023",
+    "dhariana-mal-amante-digital-2023",
+    "dhariana-emocion-digital-2025",
+    "dhariana-no-te-quejes-digital-2025",
+    "dhariana-senor-amargura-digital-2025"
+  ]
+}

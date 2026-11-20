@@ -207,7 +207,7 @@
       "releaseYear": "Release Year",
       "duration": "Duration",
       "views": "Views",
-      "genres": "Genres",
+      "genres": "Genre",
       "relatedSongs": "Related Songs",
       "moreBy": "More by {artist}",
       "aboutArtist": "About the Artist",
@@ -440,6 +440,8 @@
       "medley": "Medley"
     },
     "workRoles": {
+      "musician": "Musician",
+      "backingVocals": "Backing vocals",
       "composer": "Composer",
       "songwriter": "Songwriter",
       "lyricist": "Lyricist",
@@ -1637,6 +1639,11 @@
         "eyebrow": "Links",
         "description": "Approve official listening links for Spotify, Apple Music, YouTube, Deezer, TIDAL, and more."
       },
+      "catalogStatistics": {
+        "title": "Catalog Statistics",
+        "eyebrow": "Catalog",
+        "description": "Review artist counts by classification, primary genre, role, and publication status."
+      },
       "editorialIntegrity": {
         "title": "Editorial Integrity",
         "eyebrow": "Lifecycle Health",
@@ -1671,7 +1678,18 @@
     "workWorkspace": {
       "title": "Works",
       "description": "Manage musical works, composition credits, evidence, and recording relationships.",
-      "backToPortal": "Back to Admin Portal"
+      "backToPortal": "Back to Admin Portal",
+      "removeCredit": "Remove credit",
+      "removeNamedCredit": "Remove {role} credit for {name}",
+      "unknownContributor": "Unknown contributor",
+      "removedCredit": "Removed — history preserved",
+      "removeCreditImpact": "This removes the credit from this Work and its public appearances across {count, plural, one {# linked recording} other {# linked recordings}}. Evidence and editorial history will be preserved. The contributor, Work, and recordings will remain.",
+      "removalReason": "Reason for removal (required)",
+      "confirmRemoveCredit": "Confirm removal",
+      "cancelRemoval": "Cancel",
+      "removingCredit": "Removing…",
+      "creditRemoved": "Composition credit removed. Evidence and history preserved.",
+      "removeFailed": "The credit could not be removed. Please try again."
     },
     "recordingReview": {
       "title": "Recording Identity Review",
@@ -1821,8 +1839,10 @@
           "description": "Search activity across the past 7 days"
         },
         "topArtistViews": {
-          "title": "Top Artist Views - Last 7 Days",
-          "description": "Artists with the highest profile views. Use this to identify emerging interest, feature trending artists, and plan curated collections."
+          "title": "Top Artist Views",
+          "recent": "Last 7 days",
+          "lifetime": "Lifetime",
+          "description": "Artists ranked by recorded profile views."
         },
         "topRecordingViews": {
           "title": "Top Recording Views - Last 7 Days",
@@ -2154,7 +2174,7 @@
       "sortByTitle": "Sort by Title",
       "sortByViews": "Sort by Views",
       "loadingMore": "Loading songs…",
-      "showingRange": "Showing {start} to {end} of {total}",
+      "showingRange": "{start} to {end} of {total}",
       "sortAria": "Sort archive songs",
       "allHeading": "Dominican Songs & Recordings",
       "allIntro": "Browse Dominican recordings by year, decade, title, or popularity to explore songs and releases across Mangulina's music archive.",

@@ -1,0 +1,51 @@
+{
+  "duplicates": [],
+  "targets": [
+    {
+      "id": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+      "name": "Solo Fernández",
+      "slug": "solo-fernandez",
+      "status": "published"
+    },
+    {
+      "id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+      "name": "El Prodigio",
+      "slug": "el-prodigio",
+      "status": "published"
+    },
+    {
+      "id": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+      "name": "Lena Dardelet",
+      "slug": "lena-dardelet",
+      "status": "published"
+    },
+    {
+      "id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+      "name": "Juan Luis Guerra",
+      "slug": "juan-luis-guerra",
+      "status": "published"
+    }
+  ],
+  "genres": [
+    {
+      "slug": "bachata",
+      "name": "Bachata"
+    },
+    {
+      "slug": "merengue",
+      "name": "Merengue"
+    },
+    {
+      "slug": "fusion",
+      "name": "Fusion"
+    },
+    {
+      "slug": "bolero",
+      "name": "Bolero"
+    },
+    {
+      "slug": "electronic",
+      "name": "Electronic"
+    }
+  ]
+}

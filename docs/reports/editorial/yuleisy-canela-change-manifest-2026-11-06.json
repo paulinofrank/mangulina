@@ -1,0 +1,398 @@
+{
+  "date": "2026-11-06",
+  "authorization": "User supplied Yuleisy Canela official social profiles for artist profile creation.",
+  "artist": {
+    "id": "15ebe282-0d3d-47ed-8aaa-6c901dee5478",
+    "name": "Yuleisy Canela",
+    "sort_name": "Canela, Yuleisy",
+    "slug": "yuleisy-canela",
+    "type": "solo_artist",
+    "status": "draft",
+    "first_name": "Yuleisy",
+    "last_name": "Canela",
+    "stage_name": "Yuleisy Canela",
+    "gender": "female",
+    "primary_role": "singer",
+    "occupations": [
+      "composer",
+      "producer"
+    ],
+    "primary_genre": "worship",
+    "genres": [],
+    "artist_tags": [
+      "christian"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "instagram": "yuleisycanela",
+    "facebook": "yuleisy.canela",
+    "has_image": false
+  },
+  "documents": [
+    {
+      "owner_artist_id": "15ebe282-0d3d-47ed-8aaa-6c901dee5478",
+      "locale": "en",
+      "expected_revision": 0,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Yuleisy Canela is a Dominican singer, songwriter and worship leader. She was part of the original lineup of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "60975ed3-2ac2-456d-bbf3-fc3b61fc3274",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and has developed the Christian group's repertoire and musical work alongside "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ef2dd5d6-6893-4e2b-ad13-ac8aa10c37de",
+                  "occurrenceId": "77299ca0-1951-4bf3-bc24-80d1e4ed0c84",
+                  "displayText": "Ezequiel Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Founding Kabed",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Canela helped establish Kabed in 2015 with Ponciano, "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+                  "occurrenceId": "ee2b7568-56fd-48bb-9278-34189e70913b",
+                  "displayText": "Amaury Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "61e2c3ff-8352-436f-9494-b38807bcb77f",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Pianist Abdiel Medina and drummer Lizmike Liriano completed its early lineup. The group made its official debut at the Somos 1 youth convention in January 2016 and released «Inúndanos» that May. It received the El Galardón Revelation of the Year award in 2017."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Singing and songwriting",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "As Kabed's lead vocalist, Canela led recordings including «Sopla», featuring Laila Olivera. The credits for «A Donde Huiré», from the «Favor & Gracia» project, list her as a cowriter with Ezequiel and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "39f7f03f-0672-46b9-a478-90f5e00f651f",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". She also shares writing credits with Ezequiel on «Rey de Gloria» and «Íntimo». On «Caerán», released in 2024, she is credited with Ezequiel, Abner Himely and Mary Pagán. The credits for 2026's «Uso Honorable» again list her as a songwriter and backing vocalist."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Work beyond music",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Kabed's own biography describes Canela and Ponciano as partners in writing and producing their music. Away from the stage, Canela has worked as a clinical psychologist and behavioral therapist. In interviews and digital projects she has also discussed motherhood and parenting."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Her career combines lead singing and songwriting across different periods of Kabed, from its original Dominican lineup to its later recordings. Both the composition credits and live performances document her contribution."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Yuleisy Canela is a Dominican singer, songwriter and worship leader. She was part of the original lineup of Kabed and has developed the Christian group's repertoire and musical work alongside Ezequiel Ponciano.\n\n**Founding Kabed**\n\nCanela helped establish Kabed in 2015 with Ponciano, Amaury Hernández and Karen Ponciano. Pianist Abdiel Medina and drummer Lizmike Liriano completed its early lineup. The group made its official debut at the Somos 1 youth convention in January 2016 and released «Inúndanos» that May. It received the El Galardón Revelation of the Year award in 2017.\n\n**Singing and songwriting**\n\nAs Kabed's lead vocalist, Canela led recordings including «Sopla», featuring Laila Olivera. The credits for «A Donde Huiré», from the «Favor & Gracia» project, list her as a cowriter with Ezequiel and Junior Ponciano. She also shares writing credits with Ezequiel on «Rey de Gloria» and «Íntimo». On «Caerán», released in 2024, she is credited with Ezequiel, Abner Himely and Mary Pagán. The credits for 2026's «Uso Honorable» again list her as a songwriter and backing vocalist.\n\n**Work beyond music**\n\nKabed's own biography describes Canela and Ponciano as partners in writing and producing their music. Away from the stage, Canela has worked as a clinical psychologist and behavioral therapist. In interviews and digital projects she has also discussed motherhood and parenting.\n\n**Legacy**\n\nHer career combines lead singing and songwriting across different periods of Kabed, from its original Dominican lineup to its later recordings. Both the composition credits and live performances document her contribution."
+    },
+    {
+      "owner_artist_id": "15ebe282-0d3d-47ed-8aaa-6c901dee5478",
+      "locale": "es",
+      "expected_revision": 0,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Yuleisy Canela es una cantante, compositora y líder de adoración dominicana. Integró la formación inicial de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "5ff2d684-ebd8-4f1d-bd33-e7b8364abb2f",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y, junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ef2dd5d6-6893-4e2b-ad13-ac8aa10c37de",
+                  "occurrenceId": "0bcf2679-0ade-4807-a6d5-c505576e2aed",
+                  "displayText": "Ezequiel Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", ha desarrollado el repertorio y la labor musical de esta agrupación cristiana."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Inicios con Kabed",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Canela participó en la creación de Kabed en 2015 junto a Ponciano, "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "acff8b0d-b889-48bc-96fe-7a92bb741da9",
+                  "occurrenceId": "5603c962-4dd5-4a42-b22b-3acce77e0d4c",
+                  "displayText": "Amaury Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "2ef0ee20-5df7-421e-9f3b-60db1d0fe0ce",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". El pianista Abdiel Medina y el baterista Lizmike Liriano completaron la primera formación. El grupo se presentó oficialmente en la convención juvenil Somos 1 en enero de 2016 y estrenó «Inúndanos» en mayo. En 2017 obtuvo el premio El Galardón como Revelación del Año."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Voz y composición",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Como vocalista principal de Kabed, Canela encabezó interpretaciones como «Sopla», grabada con la participación de Laila Olivera. Los créditos de «A Donde Huiré», del proyecto «Favor & Gracia», la incluyen como coautora junto a Ezequiel y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "7d4bdae7-7d06-42d1-873e-5b380148590b",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". También comparte la autoría de «Rey de Gloria» e «Íntimo» con Ezequiel. En «Caerán», difundida en 2024, figura entre los compositores junto a Ezequiel, Abner Himely y Mary Pagán. Los créditos de «Uso Honorable», de 2026, vuelven a registrarla como coautora y corista."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Otras actividades",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La biografía de Kabed presenta a Canela y Ponciano como colaboradores en la composición y producción de su música. Fuera de los escenarios, Canela ha trabajado como psicóloga clínica y terapeuta conductual. En entrevistas y proyectos digitales también ha compartido su experiencia sobre la maternidad y la crianza."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trayectoria reúne la voz principal y la escritura de canciones en distintas etapas de Kabed, desde la primera formación dominicana hasta las grabaciones posteriores del grupo. Su contribución está documentada tanto en los créditos de las obras como en las interpretaciones en vivo."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Yuleisy Canela es una cantante, compositora y líder de adoración dominicana. Integró la formación inicial de Kabed y, junto a Ezequiel Ponciano, ha desarrollado el repertorio y la labor musical de esta agrupación cristiana.\n\n**Inicios con Kabed**\n\nCanela participó en la creación de Kabed en 2015 junto a Ponciano, Amaury Hernández y Karen Ponciano. El pianista Abdiel Medina y el baterista Lizmike Liriano completaron la primera formación. El grupo se presentó oficialmente en la convención juvenil Somos 1 en enero de 2016 y estrenó «Inúndanos» en mayo. En 2017 obtuvo el premio El Galardón como Revelación del Año.\n\n**Voz y composición**\n\nComo vocalista principal de Kabed, Canela encabezó interpretaciones como «Sopla», grabada con la participación de Laila Olivera. Los créditos de «A Donde Huiré», del proyecto «Favor & Gracia», la incluyen como coautora junto a Ezequiel y Junior Ponciano. También comparte la autoría de «Rey de Gloria» e «Íntimo» con Ezequiel. En «Caerán», difundida en 2024, figura entre los compositores junto a Ezequiel, Abner Himely y Mary Pagán. Los créditos de «Uso Honorable», de 2026, vuelven a registrarla como coautora y corista.\n\n**Otras actividades**\n\nLa biografía de Kabed presenta a Canela y Ponciano como colaboradores en la composición y producción de su música. Fuera de los escenarios, Canela ha trabajado como psicóloga clínica y terapeuta conductual. En entrevistas y proyectos digitales también ha compartido su experiencia sobre la maternidad y la crianza.\n\n**Legado**\n\nSu trayectoria reúne la voz principal y la escritura de canciones en distintas etapas de Kabed, desde la primera formación dominicana hasta las grabaciones posteriores del grupo. Su contribución está documentada tanto en los créditos de las obras como en las interpretaciones en vivo."
+    }
+  ],
+  "field_evidence": {
+    "instagram": "https://www.instagram.com/yuleisycanela/",
+    "facebook": "https://www.facebook.com/yuleisy.canela",
+    "gender": "Official Instagram self-description: wife and mom",
+    "primary_role": "https://www.youtube.com/watch?v=ADrqVcjix8I and podcast host description",
+    "christian": "https://kabedmusicweb.com/nosotros/",
+    "birthday_partial": "Facebook About shows 9 September; year undisclosed. date_of_birth left null.",
+    "birth_place": "Unconfirmed; left null.",
+    "spotify": "Personal artist identity unverified; left null."
+  },
+  "sources": [
+    "https://www.mundodecristo.net/2016/05/kabed-presenta-su-primer-sencillo.html",
+    "https://kabedmusicweb.com/nosotros/",
+    "https://www.multitracks.com/songs/KABED/Intimo/Intimo-%28Live%29/overview/",
+    "https://www.secuencias.com/songs/KABED/Rey-De-Gloria-%28Live%29/Rey-De-Gloria-%28Live%29/overview/",
+    "https://evidenciasdigital.com/2024/03/22/kabed-junto-a-abner-himely-y-mary-pagan-nos-cantan-caeran/",
+    "https://music.apple.com/us/song/1887446900",
+    "https://www.podcasts-online.org/de/la-libreta-de-lola-el-podcast-1494123625"
+  ],
+  "pending": "Backward references in published biographies of Kabed, Ezequiel Ponciano, Amaury Hernández, Karen Ponciano and Junior Ponciano; not altered while Yuleisy is draft. No discography or relationship writes."
+}

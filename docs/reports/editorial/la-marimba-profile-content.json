@@ -1,0 +1,35 @@
+{
+  "artist": {
+    "name": "La Marimba", "stage_name": "La Marimba", "sort_name": "Marimba, La", "slug": "la-marimba",
+    "first_name": "Mariela", "middle_name": null, "last_name": "Pichardo", "second_last_name": null,
+    "aliases": ["Mariela Pichardo"], "type": "solo_artist", "primary_role": "singer",
+    "occupations": ["songwriter", "musician"], "instruments": ["voice", "guira", "guitar", "piano"],
+    "primary_genre": "fusion", "genres": ["folklore", "merengue", "rock", "jazz"],
+    "gender": "female", "artist_tags": ["secular"], "status": "draft",
+    "date_of_birth": null, "birth_year": null, "birth_place": "Santo Domingo", "province": "Distrito Nacional",
+    "facebook": "lamarimbamusica", "instagram": "la.marimba", "youtube": "@LaMarimba",
+    "spotify": "7MX1qcF0L9NKjXkXiLtbAx", "website": "https://lnk.bio/La.marimba",
+    "disambiguation": "Dominican singer-songwriter and multi-instrumentalist Mariela Pichardo"
+  },
+  "bios": {
+    "es": [
+      [null, "La Marimba es el nombre artístico de Mariela Pichardo, cantante, compositora y multiinstrumentista dominicana nacida en Santo Domingo. Su propuesta reúne ritmos de raíz dominicana y afrocaribeña con rock, jazz y recursos electrónicos. La voz y la güira ocupan un lugar central en sus presentaciones, que conectan la canción propia con una búsqueda de independencia creativa."],
+      ["Formación y raíces", "Comenzó a estudiar música de manera autodidacta y amplió su formación en Teoría y Educación Musical en la Universidad Autónoma de Santo Domingo. Durante cinco años formó parte de «Aumbatá», agrupación de Toné Vicioso, donde profundizó en las tradiciones musicales de la isla. Su aprendizaje abarcó ritmos como la sarandunga, el gagá y la salve, mientras desarrollaba su interés por la guitarra, el piano y la experimentación sonora."],
+      ["La propuesta solista", "Inició su etapa solista en 2017 y en 2018 publicó «Agua que llegó» y «No se puede apagar». En 2019 presentó «Seré», su primer EP, editado por «Caribe Alternativo». Su biografía profesional registra nominaciones a los Premios Soberano de música alternativa en 2019 y 2020. A ese repertorio siguieron «Suéltame», de 2020, y «Encamíname», de 2021. Sus canciones abordan la libertad personal, la memoria, la naturaleza y el reconocimiento de la propia identidad."],
+      ["Escenarios y colaboraciones", "El 22 de marzo de 2022 abrió el concierto de «Coldplay» en el Estadio Olímpico Félix Sánchez de Santo Domingo, dentro de la gira «Music of the Spheres». En 2023 fue anunciada entre los artistas showcases del festival «SXSW», celebrado en Austin, Texas. Su catálogo incluye «Memoria», con [[mediopicky]], y una remezcla de «Encamíname» realizada por Mickey Destro y Chez Tropics."],
+      ["El cine y «La Grande»", "En «La Grande», película biográfica de 2024 dirigida por Tito Rodríguez, interpretó a [[Fefita la Grande]] durante una etapa de su juventud y vida adulta. Compartió el personaje con Fahdly Jacobo y Lumy Lizardo. Para preparar el papel estudió acordeón con [[La Doncella del Acordeón]]. Su actuación recibió una nominación a Actriz de Cine en los Premios Soberano 2025."],
+      ["«Tengo lo' podere'» y nueva música", "El 26 de febrero de 2025 publicó «Tengo lo' podere'», álbum de once canciones editado por «Caribe Alternativo» y presentado en vivo en «Isle of Light». Coprodujo el proyecto junto a Xiio, Rocío Damirón, y Joel Berrido. Entre sus temas figuran «Prende el sol», «Corre» y «Me voy». En 2026 lanzó «Baño de sal», producido por [[mediopicky]], una canción que celebra el agua, el sol y las experiencias compartidas."],
+      ["Legado", "Su trayectoria vincula el aprendizaje de músicas tradicionales con la composición y la experimentación contemporáneas. Desde la güira y el canto hasta el trabajo cinematográfico, ha llevado elementos de la cultura dominicana a distintos formatos y escenarios, conservando el diálogo entre raíz y creación personal."]
+    ],
+    "en": [
+      [null, "La Marimba is the professional name of Mariela Pichardo, a Dominican singer-songwriter and multi-instrumentalist born in Santo Domingo. Her music brings Dominican and Afro-Caribbean roots into conversation with rock, jazz and electronic sounds. Voice and güira are central to her performances, linking original songs with a pursuit of creative independence."],
+      ["Education and roots", "She began studying music independently and continued her training in Music Theory and Education at Universidad Autónoma de Santo Domingo. She spent five years with «Aumbatá», Toné Vicioso's group, deepening her knowledge of the island's musical traditions. Her learning encompassed sarandunga, gagá and salve, alongside her interest in guitar, piano and sonic experimentation."],
+      ["The solo project", "She began her solo career in 2017 and released «Agua que llegó» and «No se puede apagar» in 2018. Her first EP, «Seré», followed in 2019 through «Caribe Alternativo». Her professional biography records Premio Soberano nominations for alternative music in 2019 and 2020. Later releases included «Suéltame» in 2020 and «Encamíname» in 2021. Her songwriting explores personal freedom, memory, nature and identity."],
+      ["Stages and collaborations", "On March 22, 2022, she opened for «Coldplay» at Santo Domingo's Estadio Olímpico Félix Sánchez during the «Music of the Spheres» tour. In 2023 she was announced as a showcasing artist at «SXSW» in Austin, Texas. Her catalog includes «Memoria», with [[mediopicky]], and a remix of «Encamíname» by Mickey Destro and Chez Tropics."],
+      ["Film and «La Grande»", "In Tito Rodríguez's 2024 biographical film «La Grande», she portrayed [[Fefita la Grande]] through part of her youth and adulthood, sharing the role with Fahdly Jacobo and Lumy Lizardo. She studied accordion with [[La Doncella del Acordeón]] to prepare for the performance. The role earned her a nomination for Actriz de Cine at the 2025 Premios Soberano."],
+      ["«Tengo lo' podere'» and new recordings", "On February 26, 2025, she released «Tengo lo' podere'», an eleven-song album issued by «Caribe Alternativo» and presented live at «Isle of Light». She co-produced it with Xiio, Rocío Damirón, and Joel Berrido. Its songs include «Prende el sol», «Corre» and «Me voy». In 2026 she released «Baño de sal», produced by [[mediopicky]], celebrating water, sunshine and shared experiences."],
+      ["Legacy", "Her career connects the study of traditional music with contemporary songwriting and experimentation. Through güira, singing and film work, she has brought elements of Dominican culture to different formats and stages while maintaining a dialogue between inherited traditions and personal creation."]
+    ]
+  }
+}
+

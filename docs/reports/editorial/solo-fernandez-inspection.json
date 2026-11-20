@@ -1,0 +1,60 @@
+{
+  "duplicates": [],
+  "targets": [
+    {
+      "id": "9e8971b9-92d3-40ef-9c99-5ccbc15eb068",
+      "name": "Snenie",
+      "slug": "snenie",
+      "status": "published"
+    },
+    {
+      "id": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+      "name": "Alex Ferreira",
+      "slug": "alex-ferreira",
+      "status": "published"
+    }
+  ],
+  "genres": [
+    {
+      "slug": "fusion",
+      "name": "Fusion"
+    },
+    {
+      "slug": "rock",
+      "name": "Rock"
+    },
+    {
+      "slug": "electronic",
+      "name": "Electronic"
+    }
+  ],
+  "group_example": [
+    {
+      "id": "001831dd-3baa-4512-88f5-f420ec7c2619",
+      "name": "Pochy y su Cocoband",
+      "type": "group",
+      "primary_role": "singer",
+      "formation_year": null,
+      "instruments": [],
+      "gender": null
+    },
+    {
+      "id": "241703d2-a7f0-457d-b020-704f3a02b0d4",
+      "name": "Milly, Jocelyn y Los Vecinos",
+      "type": "group",
+      "primary_role": "singer",
+      "formation_year": 1975,
+      "instruments": [],
+      "gender": "group"
+    },
+    {
+      "id": "f838a2ce-b6eb-4200-8d4f-c3c8c28217da",
+      "name": "Expresión Joven",
+      "type": "group",
+      "primary_role": "singer",
+      "formation_year": 1972,
+      "instruments": [],
+      "gender": "other"
+    }
+  ]
+}

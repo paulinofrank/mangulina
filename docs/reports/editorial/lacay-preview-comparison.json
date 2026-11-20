@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Marion",
+    "left_apple_id": 1368240014,
+    "right_apple_id": 1526828404,
+    "envelope_alignment": {
+      "correlation": 0.43392026103114634,
+      "rate": 0.9830000000000001,
+      "shift_seconds": -6.225,
+      "overlap_seconds": 24.215
+    },
+    "limitation": "Energy-envelope correlation is a comparison signal, not proof of full-recording identity. No listening claim."
+  },
+  {
+    "title": "Ese",
+    "left_apple_id": 1368240171,
+    "right_apple_id": 1526828405,
+    "envelope_alignment": {
+      "correlation": 0.541620019591962,
+      "rate": 0.9720000000000001,
+      "shift_seconds": 6.975,
+      "overlap_seconds": 23.0
+    },
+    "limitation": "Energy-envelope correlation is a comparison signal, not proof of full-recording identity. No listening claim."
+  }
+]

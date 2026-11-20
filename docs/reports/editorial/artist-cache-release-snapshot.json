@@ -1,0 +1,17 @@
+{
+  "baseRevision": "30d79c2d011e433b79cf924d2d6407d774f6a0c9",
+  "trackedFilesCompared": 2301,
+  "normalizedLineEndings": 2264,
+  "changedTrackedFiles": [
+    "src/lib/revalidateArtistProfile.ts",
+    "tests/performance/publicCatalogCaching.test.ts"
+  ],
+  "newTest": "tests/performance/artistNegativeCache.test.ts",
+  "deployedSourceFiles": [
+    "src/lib/revalidateArtistProfile.ts"
+  ],
+  "helperSha256": "205103476a47d08fb59ef62f85b3afe8b7465274e5a44d90b1732ab3ed39ed21",
+  "deployment": "dpl_DvUxdmNfkQ8ordac1Br6JnevhFYS",
+  "url": "https://mangulina-99j32iuo8-frankprojects.vercel.app",
+  "testsExcludedFromUpload": true
+}

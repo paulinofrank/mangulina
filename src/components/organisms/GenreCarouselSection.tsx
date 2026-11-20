@@ -2,6 +2,7 @@
 
 import { useRef, type ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
+import CarouselSeeAllCard from "@/components/molecules/CarouselSeeAllCard";
 import SectionCard from "@/components/layout/SectionCard";
 import CarouselArrows from "@/components/molecules/CarouselArrows";
 
@@ -45,7 +46,7 @@ export default function GenreCarouselSection({
 
   return (
     <SectionCard>
-      <CarouselArrows onLeft={() => scroll("left")} onRight={() => scroll("right")} />
+      <CarouselArrows scrollRef={linkHref && linkLabel ? scrollRef : undefined} onLeft={() => scroll("left")} onRight={() => scroll("right")} />
 
       <div className="section-inner">
         <div className="section-header">
@@ -66,6 +67,7 @@ export default function GenreCarouselSection({
           className={`scrollbar-none flex w-full gap-4 overflow-x-auto pb-2 ${className}`}
         >
           {children}
+          {linkHref && linkLabel ? <CarouselSeeAllCard href={linkHref} label={linkLabel} /> : null}
         </div>
       </div>
     </SectionCard>

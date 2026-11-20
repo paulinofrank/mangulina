@@ -1,0 +1,388 @@
+{
+  "date": "2026-10-30",
+  "reason": "Link the two additional Mítiko mentions in each published biography; wording unchanged.",
+  "artist_id": "a7f7bc09-9356-41f0-9509-273b1724c452",
+  "before_artist_updated_at": "2026-10-30T19:27:26.300073+00:00",
+  "before_documents": [
+    {
+      "id": "0e00fcdd-27d9-40b8-a76e-544a80a0967f",
+      "locale": "en",
+      "revision": 1,
+      "updated_at": "2026-10-30T19:27:26.661144+00:00"
+    },
+    {
+      "id": "6239c7bb-717a-46f0-a982-6f6520b03ff3",
+      "locale": "es",
+      "revision": 1,
+      "updated_at": "2026-10-30T19:27:26.485762+00:00"
+    }
+  ],
+  "after_documents": [
+    {
+      "locale": "es",
+      "id": "6239c7bb-717a-46f0-a982-6f6520b03ff3",
+      "before_revision": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La Gran Mawon es un colectivo musical dominicano de fusión afrocaribeña surgido en 2011 en la Zona Colonial de Santo Domingo. Su música combina ritmos afrodominicanos como el palo, el gagá, el congo y la sarandunga con reggae, rock y otros sonidos contemporáneos. El proyecto sitúa la herencia musical negra del país en el centro de su repertorio."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "De las plazas a la agrupación",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "El grupo nació de sesiones nocturnas de improvisación en las plazas de la Zona Colonial. Entre sus integrantes originales más constantes estaban el guitarrista y compositor "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "occurrenceId": "f535e1ac-a733-4a38-9929-b15f33e69891",
+                  "displayText": "Mítiko"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", el cantante Zahir y el MC Gato. La formación se amplió con el tiempo: sus entrevistas documentan la participación de voces, bajistas, bateristas y percusionistas en distintas etapas. En una entrevista de 2013, "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "occurrenceId": "c152fdd6-e97f-4bdb-92f5-cd9c7f346460",
+                  "displayText": "Mítiko"
+                }
+              },
+              {
+                "type": "text",
+                "text": " explicó que «mawon» procede del criollo haitiano y alude a lo cimarrón; el colectivo adoptó esa idea como parte de su identidad artística."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Primeras grabaciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Fuego Petró», de 2013, fue su primer sencillo. En agosto de 2016 publicó «La Gran Mawon», una producción homónima de siete temas que incluye «La Culebra», canción asociada a la escritura de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "occurrenceId": "eaea1b2a-7517-47f5-a6b0-2ff641e3d48e",
+                  "displayText": "Mítiko"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Al año siguiente la agrupación se presentó en Nueva York. En 2019 lanzó los sencillos «Melancolia Tropical» y «Candela Pa Lo Pie»; este último fue presentado como una mezcla de gagá y jazz."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Radio Katharsis» y escenarios",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Después de «Gana (sillita de guano)» (2020) y «Morena De Lu» (2021), publicó «Radio Katharsis» el 29 de septiembre de 2023. El álbum reúne diez canciones, entre ellas «Te Doy Seguro», con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ec8ba439-3772-49ff-a218-05f5dc615763",
+                  "occurrenceId": "a665c93f-8fb5-4fe8-9eca-fb6b1e8a9600",
+                  "displayText": "Vakeró"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". En febrero de 2024 La Gran Mawon participó en un encuentro sobre música afrodominicana en la Universidad Rutgers junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8e29188a-215b-4c6c-b34a-45b381765e46",
+                  "occurrenceId": "b4053b5a-040d-4e89-8169-d57e47460275",
+                  "displayText": "Xiomara Fortuna"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a3a0551d-7f39-42f3-b30b-05a9d3c83ab2",
+                  "occurrenceId": "70ef4e2f-67d3-4c8b-825a-6d6069ee0472",
+                  "displayText": "Yasser Tejeda"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". También actuó ese año en el festival «Isle of Light» en Santo Domingo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Desde sus primeras improvisaciones hasta sus álbumes y presentaciones internacionales, La Gran Mawon ha trabajado los ritmos afrodominicanos como música viva. Su formación cambiante y sus grabaciones documentan una propuesta colectiva que conecta tradiciones del Caribe con la escena alternativa contemporánea de Santo Domingo."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "id": "0e00fcdd-27d9-40b8-a76e-544a80a0967f",
+      "before_revision": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La Gran Mawon is a Dominican Afro-Caribbean fusion collective formed in Santo Domingo's Colonial Zone in 2011. Its music brings Afro-Dominican rhythms including palo, gagá, congo and sarandunga together with reggae, rock and other contemporary sounds. Black Dominican musical heritage is central to the group's repertoire."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From jam sessions to a collective",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The band grew out of nighttime jam sessions in the public squares of the Colonial Zone. Its continuing original members included guitarist and composer "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "occurrenceId": "c8d4ecd4-eb2c-4160-91d4-3aac6db44c96",
+                  "displayText": "Mítiko"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", singer Zahir and MC Gato. The lineup later expanded, with the group's interviews documenting singers, bassists, drummers and percussionists across different periods. In a 2013 interview, "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "occurrenceId": "b835246b-dc40-42c9-ad34-e3e2fe652ce8",
+                  "displayText": "Mítiko"
+                }
+              },
+              {
+                "type": "text",
+                "text": " explained that «mawon» comes from Haitian Creole and evokes the maroon; the collective made that idea part of its artistic identity."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early recordings",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Its first single was «Fuego Petró» in 2013. In August 2016 the group released «La Gran Mawon», a seven-track self-titled record that includes «La Culebra», a song associated with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "occurrenceId": "eae6e215-4f41-4d9d-8ecc-ed7b4c230b28",
+                  "displayText": "Mítiko"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s writing. The group performed in New York the following year. Its 2019 singles included «Melancolia Tropical» and «Candela Pa Lo Pie», the latter presented as a blend of gagá and jazz."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Radio Katharsis» and live work",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Following «Gana (sillita de guano)» in 2020 and «Morena De Lu» in 2021, La Gran Mawon released the ten-track album «Radio Katharsis» on September 29, 2023. The record includes «Te Doy Seguro» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ec8ba439-3772-49ff-a218-05f5dc615763",
+                  "occurrenceId": "c8fd2357-341a-4980-8a0e-820646d66fd5",
+                  "displayText": "Vakeró"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". In February 2024, the group joined "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8e29188a-215b-4c6c-b34a-45b381765e46",
+                  "occurrenceId": "b28f670b-5922-4d77-be2c-f4f930ff47cb",
+                  "displayText": "Xiomara Fortuna"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a3a0551d-7f39-42f3-b30b-05a9d3c83ab2",
+                  "occurrenceId": "62dc3742-dce9-4168-9619-97fb1ed0e56f",
+                  "displayText": "Yasser Tejeda"
+                }
+              },
+              {
+                "type": "text",
+                "text": " for a Rutgers University event on Afro-Dominican music. It also performed at Santo Domingo's «Isle of Light» festival that year."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From its first jam sessions through recorded albums and performances abroad, La Gran Mawon has treated Afro-Dominican rhythms as living music. Its changing lineup and recordings document a collective approach that connects Caribbean traditions with Santo Domingo's contemporary alternative scene."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

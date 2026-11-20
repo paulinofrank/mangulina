@@ -1,0 +1,50 @@
+{
+  "artist": {
+    "name": "Mítiko",
+    "stage_name": "Mítiko",
+    "sort_name": "Mítiko",
+    "slug": "mitiko",
+    "first_name": "José",
+    "middle_name": "Julio",
+    "last_name": "Bello",
+    "second_last_name": "Castillo",
+    "aliases": ["Mitiko", "Mawon Mitiko", "Mitiko Mawon", "José Julio Bello Castillo"],
+    "type": "solo_artist",
+    "primary_role": "musician",
+    "occupations": ["guitarist", "composer", "lyricist", "producer"],
+    "instruments": ["guitar"],
+    "primary_genre": "fusion",
+    "genres": ["bachata"],
+    "gender": "male",
+    "artist_tags": ["secular"],
+    "status": "draft",
+    "birth_year": 1987,
+    "date_of_birth": null,
+    "birth_place": "Santo Domingo",
+    "province": null,
+    "facebook": null,
+    "instagram": null,
+    "youtube": null,
+    "spotify": null,
+    "website": null,
+    "disambiguation": "Dominican guitarist and composer with La Gran Mawon and Los Sufridos"
+  },
+  "bios": {
+    "es": [
+      [null, "Mítiko, nombre artístico de José Julio Bello Castillo, es un guitarrista, compositor y productor dominicano nacido en Santo Domingo en 1987. Es uno de los integrantes originales de «La Gran Mawon», colectivo de fusión afrocaribeña, y cofundó [[Los Sufridos]], proyecto de bachata urbana. Su trabajo une la interpretación y creación musical con la investigación y difusión de expresiones afrodominicanas."],
+      ["La Gran Mawon", "Después de iniciarse en el cine, se acercó a la música afroantillana. En 2011 participó en las sesiones nocturnas de improvisación en plazas de la Zona Colonial de Santo Domingo de las que surgió «La Gran Mawon». La agrupación lo identificó como guitarrista y compositor; la publicación dominicana «Una isla es un universo» lo incluyó, junto a Gato y Zahir, entre sus integrantes originales estables y destacó su labor como compositor y letrista, especialmente en «La Culebra»."],
+      [null, "El grupo mezcló palo, gagá y otros ritmos afrocaribeños con reggae y rock. Grabó «Fuego Petró» como primer sencillo en 2013 y publicó un EP homónimo de siete canciones en 2016. «Melancolia Tropical» apareció como sencillo en 2019, seguido del álbum «Radio Katharsis» en 2023. En entrevistas, Mítiko ha descrito el proyecto como música afrocaribeña centrada en las tradiciones negras."],
+      ["Los Sufridos", "En 2023 fundó [[Los Sufridos]] con [[Cromo X]] y [[T.Y.S]]. El colectivo llevó su experiencia como guitarrista y compositor a una propuesta de bachata urbana. La prensa dominicana identificó a José Julio Bello entre los autores de «Lleno Contigo», la colaboración del grupo con [[Antony Santos]] publicada en 2024. Ese año también figuró entre los productores acreditados de «Chivi» y «Duro De Verdad pt.2»."],
+      ["Otros trabajos y divulgación", "Su actividad fuera de esas agrupaciones incluye la música original del documental «Mal de caña» (2020), compartida con Marcos Arias. Bajo su nombre completo también aparece como productor de «Por Ahí», grabación de Billete MC publicada en 2023 por «AFRK Music». En febrero de 2024 participó con miembros de «La Gran Mawon» en un taller de música afrodominicana en la Universidad Rutgers. El Centro Cultural de España en Santo Domingo lo presenta además como investigador sociocultural."],
+      ["Legado", "La trayectoria de Mítiko enlaza la guitarra, la composición y la producción con la exploración de tradiciones musicales afrodominicanas. Su participación en «La Gran Mawon» y [[Los Sufridos]] documenta dos maneras de llevar esas experiencias a repertorios contemporáneos, mientras sus talleres y trabajos audiovisuales amplían su práctica fuera del escenario."]
+    ],
+    "en": [
+      [null, "Mítiko, the professional name of José Julio Bello Castillo, is a Dominican guitarist, composer and producer born in Santo Domingo in 1987. An original member of the Afro-Caribbean fusion collective «La Gran Mawon», he later co-founded the urban bachata group [[Los Sufridos]]. His work as a musician is accompanied by research and public teaching about Afro-Dominican traditions."],
+      ["La Gran Mawon", "His early work included film before he began exploring Afro-Antillean music. In 2011 he took part in night-time jam sessions in Santo Domingo's Colonial Zone that developed into «La Gran Mawon». In a group interview, the collective identified him as its guitarist and a composer. The Dominican publication «Una isla es un universo» named him, Gato and Zahir among its continuing original members and highlighted his writing, particularly on «La Culebra»."],
+      [null, "The band's music brings together palo, gagá and other Afro-Caribbean rhythms with reggae and rock. Its first single, «Fuego Petró», was recorded in 2013, and a seven-track self-titled EP followed in 2016. The group released «Melancolia Tropical» as a single in 2019 and the album «Radio Katharsis» in 2023. Discussing the band's direction, Mítiko has described its music as Afro-Caribbean and rooted in Black musical traditions."],
+      ["Los Sufridos", "In 2023 he formed [[Los Sufridos]] with [[Cromo X]] and [[T.Y.S]], bringing his guitar and songwriting experience to an urban bachata project. Dominican reporting identified José Julio Bello among the writers of «Lleno Contigo», the group's 2024 collaboration with [[Antony Santos]]. Production credits also name Mítiko on the 2024 singles «Chivi» and «Duro De Verdad pt.2»."],
+      ["Other work and teaching", "Outside the two groups, he shared the original music credit with Marcos Arias on the 2020 documentary «Mal de caña». A 2023 release by Billete MC, «Por Ahí», credits José Julio Bello Castillo as producer under the «AFRK Music» label. In February 2024 he joined other «La Gran Mawon» members for an Afro-Dominican music workshop at Rutgers University. The Centro Cultural de España in Santo Domingo also describes him as a sociocultural researcher."],
+      ["Legacy", "Mítiko's work connects guitar performance, composition and production with the study of Afro-Dominican music. His roles in «La Gran Mawon» and [[Los Sufridos]] place that experience in distinct contemporary projects, while his film music and teaching extend it beyond recordings and concerts."]
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+    "name": "La Doncella del Acordeón",
+    "type": "solo_artist",
+    "gender": "female",
+    "primary_role": "musician",
+    "occupations": [
+      "accordionist",
+      "singer",
+      "composer",
+      "arranger",
+      "bandleader",
+      "music educator"
+    ],
+    "instruments": [
+      "accordion",
+      "voice"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_birth": null,
+    "birth_year": null,
+    "birth_place": null,
+    "province": null,
+    "spotify": "1BQrf5mBYD08OVnexVwxA7",
+    "facebook": "ladoncella.delacordeon",
+    "instagram": "ladoncelladelacordeon",
+    "youtube": "@LADONCELLATIPICA",
+    "status": "draft",
+    "has_image": true,
+    "updated_at": "2026-10-15 22:25:23.567147+00"
+  }
+]

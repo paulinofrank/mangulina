@@ -1,0 +1,411 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "75f20609-7494-4a82-ab4c-a2176b0458a1",
+        "name": "Ney Nilo",
+        "sort_name": "Nilo, Ney",
+        "type": "solo_artist",
+        "birth_year": null,
+        "death_year": null,
+        "created_at": "2026-10-23T01:54:56.574882+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Manuel",
+        "middle_name": "Modesto",
+        "last_name": "Cabrera",
+        "second_last_name": "Salas",
+        "stage_name": "Ney Nilo",
+        "date_of_birth": null,
+        "birth_place": "Villa Bisonó (Navarrete)",
+        "website": null,
+        "youtube": null,
+        "facebook": null,
+        "instagram": null,
+        "aliases": [
+          "Manuel Modesto Cabrera",
+          "Manuel Modesto Cabrera Salas"
+        ],
+        "mbid": null,
+        "occupations": [
+          "composer",
+          "arranger",
+          "musician"
+        ],
+        "instruments": [
+          "voice",
+          "trombone",
+          "piano",
+          "guitar"
+        ],
+        "genres": [],
+        "disambiguation": "Dominican romantic ballad singer and composer from Navarrete",
+        "gender": "male",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-23T01:54:56.574882+00:00",
+        "province": "Santiago",
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "ney-nilo",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "ballads",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "7nAdCUYAaSuuZwAIx8VAfQ"
+      },
+      {
+        "id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+        "name": "Antony Santos",
+        "slug": "antony-santos",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "4da9ee23-e8d4-4d8d-9f4c-b05c9f847c43",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Ney Nilo is the stage name of Manuel Modesto Cabrera Salas, a Dominican singer, musician and composer born in Villa Bisonó, commonly known as Navarrete, in Santiago province. His career belongs to the Dominican romantic ballad tradition and gained particular prominence during the 1980s and 1990s.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Training and singing career",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "He studied music as a child, beginning with trombone and also learning piano and guitar. He later concentrated on singing, composing and arranging his own repertoire. His voice has been described as a popular lyric tenor. His songs include «Paloma dime por qué», «Lejos de ti amada mía», «La tristeza de mi carta», «Estoy amando» and «Quiero volver a Navarrete». He spent part of his career in the United States, where he lived for several years.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The composer’s repertoire",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "ACEMLA lists numerous titles under his name, including «Balada para mi país», «Mensaje», «Himno a las Águilas» and «Himno a los Leones del Escogido». His work as an author also led to claims concerning the use of his compositions. In 2012 he brought a claim against ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                    "displayText": "Antony Santos",
+                    "occurrenceId": "53296f70-051f-4d08-b008-434ec356deb7"
+                  }
+                },
+                {
+                  "text": " relating to «La tristeza de mi carta» and «Mensaje».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The «Estoy amando» case",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In a separate dispute over the unauthorized exploitation of «Estoy amando», he was awarded two million Dominican pesos in damages against Bienvenido Rodríguez. On February 19, 2014, the joined chambers of the Supreme Court of Justice rejected Rodríguez’s cassation appeal against the decision awarding that compensation. The case concerned the transformation of the ballad into merengue and its use without the author’s authorization.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Time away and digital availability",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Health problems interrupted his live career. In 2016 journalist Jorge Jiménez, who had worked with him, published a message in which the singer expressed his wish to return to the stage. His repertoire remained available digitally: a collection of his hits appeared in 2014, followed in November 2015 by the three-song release «En Navidad te quiero más», also containing «El último aguinaldo» and «Qué Navidad tan bella». These dates refer to digital editions and do not establish the original recording dates of individual songs.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His career brings together romantic singing, an original songwriting repertoire and the defense of composers’ rights. Songs such as «Paloma dime por qué» and «Lejos de ti amada mía» preserve his connection with Dominican ballad music and the community of Navarrete.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "75f20609-7494-4a82-ab4c-a2176b0458a1",
+        "created_at": "2026-10-23T01:54:56.790647+00:00",
+        "updated_at": "2026-10-23T01:54:56.790647+00:00",
+        "revision": 1
+      },
+      {
+        "id": "2446790a-3ace-4e87-8c42-f8f68ed42151",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Ney Nilo, nombre artístico de Manuel Modesto Cabrera Salas, es un cantante, músico y compositor dominicano nacido en Villa Bisonó, conocido como Navarrete, provincia de Santiago. Su trayectoria se inscribe en la balada romántica dominicana, con especial proyección durante las décadas de 1980 y 1990.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Formación y carrera como intérprete",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Estudió música desde niño y comenzó con el trombón; también aprendió piano y guitarra. Posteriormente concentró su actividad en el canto, la composición y los arreglos de su propio repertorio. Su voz ha sido descrita como tenor lírico popular. Entre sus canciones figuran «Paloma dime por qué», «Lejos de ti amada mía», «La tristeza de mi carta», «Estoy amando» y «Quiero volver a Navarrete». Desarrolló parte de su carrera en Estados Unidos, donde residió durante años.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La obra del compositor",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El catálogo de ACEMLA reúne numerosos títulos bajo su nombre, entre ellos «Balada para mi país», «Mensaje», «Himno a las Águilas» e «Himno a los Leones del Escogido». Su trabajo de autor también dio lugar a reclamaciones sobre el uso de sus composiciones. En 2012 presentó una reclamación contra ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                    "displayText": "Antony Santos",
+                    "occurrenceId": "4e5acceb-274f-474b-bb38-3c2daaa6ba3b"
+                  }
+                },
+                {
+                  "text": " relacionada con «La tristeza de mi carta» y «Mensaje».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La defensa de «Estoy amando»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En otro litigio por la explotación no autorizada de «Estoy amando», obtuvo una indemnización de dos millones de pesos dominicanos contra Bienvenido Rodríguez. El 19 de febrero de 2014, las Salas Reunidas de la Suprema Corte de Justicia rechazaron el recurso de casación interpuesto por Rodríguez contra la decisión que había fijado esa reparación. El caso se refería a la transformación de la balada en merengue y a su utilización sin la autorización del autor.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El alejamiento y la circulación digital",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Problemas de salud interrumpieron su actividad escénica. En 2016, el periodista Jorge Jiménez, quien había trabajado con él, publicó un mensaje del cantante en el que expresaba su deseo de volver a los escenarios. Su repertorio mantuvo presencia digital: en 2014 apareció una recopilación de sus éxitos, y en noviembre de 2015 se publicó «En Navidad te quiero más», lanzamiento de tres canciones que incluye «El último aguinaldo» y «Qué Navidad tan bella». Estas fechas corresponden a las ediciones digitales, sin establecer cuándo se grabó originalmente cada tema.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su trayectoria reúne la interpretación romántica, la creación de repertorio propio y la defensa de los derechos del compositor. Canciones como «Paloma dime por qué» y «Lejos de ti amada mía» conservan su vínculo con la tradición de la balada dominicana y con la comunidad de Navarrete.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "75f20609-7494-4a82-ab4c-a2176b0458a1",
+        "created_at": "2026-10-23T01:54:56.660403+00:00",
+        "updated_at": "2026-10-23T01:54:56.660403+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "2297c97d-5781-498b-8d1c-257d0c246ee6",
+        "editorial_document_id": "2446790a-3ace-4e87-8c42-f8f68ed42151",
+        "occurrence_id": "4e5acceb-274f-474b-bb38-3c2daaa6ba3b",
+        "entity_type": "artist",
+        "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+        "created_at": "2026-10-23T01:54:56.660403+00:00",
+        "updated_at": "2026-10-23T01:54:56.660403+00:00"
+      },
+      {
+        "id": "b44a1a49-5237-42b6-a792-e6613d683ffa",
+        "editorial_document_id": "4da9ee23-e8d4-4d8d-9f4c-b05c9f847c43",
+        "occurrence_id": "53296f70-051f-4d08-b008-434ec356deb7",
+        "entity_type": "artist",
+        "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+        "created_at": "2026-10-23T01:54:56.790647+00:00",
+        "updated_at": "2026-10-23T01:54:56.790647+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-23T01:55:07.457Z",
+    "counts": {
+      "documents": 2,
+      "relations": 2,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

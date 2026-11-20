@@ -1,7 +1,7 @@
 import { describe, it, beforeEach } from "node:test";
 import assert from "node:assert/strict";
 import type { SupabaseClient } from "@supabase/supabase-js";
-import { handleTrackRequest } from "../../src/app/api/analytics/track/route";
+import { handleTrackRequest } from "../../src/app/api/analytics/track/trackHandler";
 import { MemoryRateLimitStore, type RateLimitStore } from "../../src/lib/analyticsRateLimit";
 
 const TRACK_URL = "https://mangulina.vercel.app/api/analytics/track";

@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-24",
+  "before": {
+    "artist": {
+      "id": "6454a95c-0d60-499d-b2c3-4ad262efb7e6",
+      "mbid": null,
+      "name": "Brettón",
+      "slug": "bretton",
+      "type": null,
+      "ended": null,
+      "views": 0,
+      "bio_en": null,
+      "bio_es": null,
+      "gender": null,
+      "genres": [],
+      "status": "draft",
+      "aliases": null,
+      "spotify": null,
+      "website": null,
+      "youtube": null,
+      "facebook": null,
+      "province": null,
+      "birth_day": null,
+      "has_image": false,
+      "instagram": null,
+      "last_name": null,
+      "sort_name": null,
+      "birth_year": null,
+      "created_at": "2026-09-23T20:10:30.303245+00:00",
+      "death_year": null,
+      "first_name": null,
+      "stage_name": "Brettón",
+      "updated_at": "2026-09-23T20:10:30.303245+00:00",
+      "artist_tags": [],
+      "birth_month": null,
+      "birth_place": null,
+      "instruments": [],
+      "mb_metadata": {},
+      "middle_name": null,
+      "occupations": [
+        "singer",
+        "songwriter"
+      ],
+      "wikidata_id": null,
+      "primary_role": "singer",
+      "date_of_birth": null,
+      "date_of_death": null,
+      "primary_genre": null,
+      "disambiguation": null,
+      "formation_year": null,
+      "dissolution_year": null,
+      "image_updated_at": null,
+      "second_last_name": null
+    },
+    "documents": null
+  },
+  "targets": [
+    {
+      "id": "04357246-5115-4b47-b73b-e72786e9ec22",
+      "name": "Sabrina Estepan",
+      "slug": "sabrina-estepan",
+      "status": "published"
+    },
+    {
+      "id": "54f14366-01f7-4ba5-9520-37e5788ab115",
+      "name": "Rose Mateo",
+      "slug": "rose-mateo",
+      "status": "published"
+    },
+    {
+      "id": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+      "name": "Pat Pereyra",
+      "slug": "pat-pereyra",
+      "status": "published"
+    },
+    {
+      "id": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+      "name": "Janio Lora",
+      "slug": "janio-lora",
+      "status": "published"
+    }
+  ]
+}

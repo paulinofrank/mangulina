@@ -167,7 +167,7 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
         {localBirthdayArtists.length > 0 && (
           <>
             <CarouselArrow direction="left" onClick={() => scroll("left")} />
-            <CarouselArrow direction="right" onClick={() => scroll("right")} />
+            <CarouselArrow scrollRef={scrollRef} direction="right" onClick={() => scroll("right")} />
           </>
         )}
 
@@ -182,7 +182,7 @@ export default function BirthdaySection({ birthdayArtists }: BirthdaySectionProp
             </p>
           </div>
         ) : (
-          <ArtistCarousel ref={scrollRef}>
+          <ArtistCarousel ref={scrollRef} seeAllHref="/artists/birthdays" seeAllLabel={nav("seeAll")}>
             {localBirthdayArtists.slice(0, HOME_ARTIST_CARD_LIMIT).map((artist) => (
               <div key={artist.id} className="w-28 shrink-0 sm:w-32 lg:w-36">
                 <div className="group relative">

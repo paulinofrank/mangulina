@@ -29,6 +29,7 @@ export type PortfolioPerformer = {
 };
 
 export type PortfolioRecording = {
+  instruments?: { code: string; name_en: string; name_es: string }[];
   source: "recording" | "editorial" | "work";
   songHref?: string;
   id: string;
@@ -181,6 +182,24 @@ async function getRecordingPortfolio(artistId: string): Promise<PortfolioRecordi
   const recordingIds = [...new Set(credits.map((credit) => credit.recording_id))];
   if (!recordingIds.length) return [];
 
+  // Instruments are private relations; use the public projection's visibility
+  // checks rather than a privileged client or exposing those tables.
+  const instrumentRecordingIds = [...new Set(credits.filter((credit) =>
+    ["instrumentalist", "pianist"].includes(normalizeArtistWorkCreditRole(credit.role)),
+  ).map((credit) => credit.recording_id))];
+  const instrumentsByRecording = new Map<string, NonNullable<PortfolioRecording["instruments"]>>();
+  for (let offset = 0; offset < instrumentRecordingIds.length; offset += 10) {
+    await Promise.all(instrumentRecordingIds.slice(offset, offset + 10).map(async (id) => {
+      const { data, error } = await supabase.rpc("get_public_recording_credit_details", { recording_uuid: id });
+      if (error) { console.error("Portfolio instrument query failed:", error); return; }
+      const details = (data ?? []) as { identity_id: string; role: string; instruments?: NonNullable<PortfolioRecording["instruments"]> }[];
+      const instruments = details.filter((credit) => credit.identity_id === artistId &&
+        ["instrumentalist", "pianist"].includes(normalizeArtistWorkCreditRole(credit.role)))
+        .flatMap((credit) => credit.instruments ?? []);
+      instrumentsByRecording.set(id, [...new Map(instruments.map((instrument) => [instrument.code, instrument])).values()]);
+    }));
+  }
+
   const [{ data: performerData, error: performerError }, { data: trackData, error: trackError }, identitySummaries] =
     await Promise.all([
       supabase
@@ -291,6 +310,7 @@ async function getRecordingPortfolio(artistId: string): Promise<PortfolioRecordi
 
     works.push({
       source: "recording",
+      instruments: instrumentsByRecording.get(recording.id),
       id: `recording:${recording.id}:${artistId}`,
       title: recording.title,
       roles,
@@ -517,7 +537,7 @@ async function getCompositionPortfolio(artistId: string): Promise<PortfolioRecor
 export function getArtistWorksPortfolio(artistId: string): Promise<PortfolioWork[]> {
   return unstable_cache(
     loadArtistWorksPortfolio,
-    ["artist-works-portfolio-v21", artistId],
+    ["artist-works-portfolio-v22", artistId],
     {
       // Caps the artist profile route's TTL if shortened — see
       // ARTIST_PROFILE_REVALIDATE_SECONDS. Invalidated on demand by

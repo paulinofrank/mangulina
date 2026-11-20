@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-30",
+  "artist_id": "a7f7bc09-9356-41f0-9509-273b1724c452",
+  "before": {
+    "id": "a7f7bc09-9356-41f0-9509-273b1724c452",
+    "name": "La Gran Mawon",
+    "slug": "la-gran-mawon",
+    "type": "group",
+    "status": "draft",
+    "primary_role": "band",
+    "occupations": [],
+    "updated_at": "2026-10-30T19:27:26.300073+00:00"
+  },
+  "after": {
+    "primary_role": "musician"
+  },
+  "reason": "The admin group form renders band as no selected primary role; musician is an available option for a collective of musicians. Artist type remains group.",
+  "evidence_report": "la-gran-mawon-research-2026-10-30.md"
+}

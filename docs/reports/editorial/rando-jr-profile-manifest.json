@@ -1,0 +1,368 @@
+{
+  "date": "2026-10-25",
+  "authorization": "User: Vamos con la bio del hijo; create Rando Camasta Cueto separately from father.",
+  "scope": "Create only Rando Camasta Cueto as Rando, draft artist, published validated ES/EN biographies. No father changes, discography, family relations, other artists or publication of artist.",
+  "before": null,
+  "after": {
+    "id": "686ffbd2-2b51-4d9a-a7e9-43f4879dfb44",
+    "name": "Rando",
+    "stage_name": "Rando",
+    "sort_name": "Rando",
+    "slug": "rando",
+    "type": "solo_artist",
+    "status": "draft",
+    "first_name": "Rando",
+    "middle_name": null,
+    "last_name": "Camasta",
+    "second_last_name": "Cueto",
+    "aliases": [
+      "Rando Camasta Cueto",
+      "Rando Camasta Jr.",
+      "Rando Camasta hijo"
+    ],
+    "birth_place": null,
+    "province": "La Romana",
+    "date_of_birth": null,
+    "birth_year": null,
+    "gender": "male",
+    "primary_role": "singer",
+    "occupations": [
+      "composer",
+      "guitarist"
+    ],
+    "instruments": [
+      "voice",
+      "guitar"
+    ],
+    "primary_genre": "fusion",
+    "genres": [
+      "jazz",
+      "merengue",
+      "bachata",
+      "ballads-bolero"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "spotify": "5J2uYCcGLOQH7F0nXjhLIz",
+    "facebook": "rando2",
+    "instagram": "randocamasta",
+    "youtube": "@RandoCamasta",
+    "website": "https://www.randocamasta.com"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Rando Camasta Cueto, conocido como Rando Camasta Jr. y artísticamente como Rando, es un cantante, compositor y guitarrista dominicano oriundo de La Romana. Hijo del cantante y arreglista "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "014ac5b6-01cd-4300-9c88-ed0aeb970f51",
+                  "occurrenceId": "e9561019-bfaf-470f-8bb3-035188cc53f2",
+                  "displayText": "Rando Camasta"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", desarrolla una propuesta propia que combina el soul, el funk y el pop con ritmos caribeños. Su carrera comprende grabaciones como solista, colaboraciones con músicos de la escena independiente y su participación en la banda de rock cristiano «Metanoia»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Formación y primeros escenarios",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Creció acompañando a su padre a los estudios de grabación y recibió de él sus primeros acordes de guitarra. En 2003 formó parte de la primera alineación de «Zoom». Su sencillo «Presiento» fue seleccionado entre las 25 canciones locales destacadas por Radio Listín en 2006. Al año siguiente, la banda fue escogida para participar en actividades previas a los premios MTV latinoamericanos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2010 participó en «El Rocksario», el homenaje de músicos de rock dominicano a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+                  "occurrenceId": "6c90d6fd-36ef-426e-b06f-ba950812b132",
+                  "displayText": "Los Hermanos Rosario"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Su trayectoria también lo llevó al «Dominican Republic Jazz Festival», en Cabarete. En paralelo desarrolló su trabajo como guitarrista y vocalista de «Metanoia» y colaboró con Gnómico y con el productor Joel Berrido, conocido como Macrofunk."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Grabaciones y colaboraciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2012 publicó el EP «Santo Domingo de Fiesta», producido por Joel Berrido. Su padre realizó los arreglos de vientos. El proyecto incluye «Dominicana Bonita», «Amante Necio Loco», «Con Tu Amor», «Santo Domingo de Fiesta», «Simplemente» y «2step», con Alfred Spin como invitado en dos canciones. El proyecto fue presentado como su tercer EP."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2016 presentó «Caribe Pop», grabado en directo. La sesión que realizó para «Retajila» en julio de 2018 reunió «La indicada», «Si te vas», «Fuego en mi cama» y «Adicto»; sus créditos identifican a Camasta Cueto como autor y como intérprete de voz y guitarra. El EP «Sesiones Retajila, Vol. 1» apareció en las plataformas en 2019, año en que también publicó «Detener el Tiempo» y «Sentido Real (Saciando Mi Sed)»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su álbum «Trance» apareció en 2020 y amplió esa exploración del soul con bolero, funk, bachata y merengue. Entre sus colaboradores figuran Joel Berrido, Adolfo Guerrero, Clara González y JJ Sánchez; Cheo Pardo realizó un remix de «Detener el tiempo». En 2021 publicó «Azúca» y en abril de 2026 lanzó «Qué Pasará». También participa como voz invitada en los EP «Club Domingo» y «Malamaña», de Macrofunk."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trayectoria conecta la formación musical familiar con la escena alternativa dominicana. La composición, la guitarra y el canto articulan un repertorio que aborda el amor y la vida cotidiana desde la mezcla de lenguajes caribeños, soul y pop."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Rando Camasta Cueto, professionally known as Rando and also as Rando Camasta Jr., is a Dominican singer, songwriter and guitarist from La Romana. The son of singer and arranger "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "014ac5b6-01cd-4300-9c88-ed0aeb970f51",
+                  "occurrenceId": "e386a6dc-b785-4609-965e-5dbe27136f85",
+                  "displayText": "Rando Camasta"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", he has developed an independent musical identity blending soul, funk and pop with Caribbean rhythms. His work spans solo recordings, collaborations within the Dominican independent scene and performances with the Christian rock band «Metanoia»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early development",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "He grew up spending time in recording studios with his father, who taught him his first guitar chords. In 2003 he joined the original lineup of «Zoom». His single «Presiento» was selected among Radio Listín’s 25 highlighted local songs of 2006. In 2007 the band was selected to perform at events preceding MTV’s Latin American awards."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2010 he took part in «El Rocksario», a tribute by Dominican rock musicians to "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+                  "occurrenceId": "cffbcd12-64bd-46f2-bc66-e710999036c6",
+                  "displayText": "Los Hermanos Rosario"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". His live career also included the «Dominican Republic Jazz Festival» in Cabarete. Alongside his solo work, he became a guitarist and vocalist with «Metanoia» and collaborated with Gnómico and producer Joel Berrido, known as Macrofunk."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Recordings and collaborations",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His 2012 EP «Santo Domingo de Fiesta» was produced by Joel Berrido, with horn arrangements by his father. Its songs include «Dominicana Bonita», «Amante Necio Loco», «Con Tu Amor», «Santo Domingo de Fiesta», «Simplemente» and «2step»; Alfred Spin appears on two tracks. The project was presented as his third EP."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "He presented the live-recorded «Caribe Pop» in 2016. A July 2018 performance for «Retajila» featured «La indicada», «Si te vas», «Fuego en mi cama» and «Adicto», with Camasta Cueto credited for words and music, vocals and guitar. «Sesiones Retajila, Vol. 1» reached streaming services in 2019, alongside the singles «Detener el Tiempo» and «Sentido Real (Saciando Mi Sed)»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Released in 2020, «Trance» brought further combinations of soul, bolero, funk, bachata and merengue. Its collaborators include Joel Berrido, Adolfo Guerrero, Clara González and JJ Sánchez; Cheo Pardo contributed a remix of «Detener el tiempo». Rando followed it with «Azúca» in 2021 and «Qué Pasará» in April 2026. His guest appearances also include Macrofunk’s EPs «Club Domingo» and «Malamaña»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His work connects a family musical background with the Dominican alternative scene. Songwriting, guitar and vocals anchor a repertoire about love and everyday experience, drawing on Caribbean music, soul and pop."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "3422883e-7048-48af-bb03-c68c8c557ee4",
+      "name": "Los Hermanos Rosario",
+      "slug": "los-hermanos-rosario",
+      "status": "published"
+    },
+    {
+      "id": "014ac5b6-01cd-4300-9c88-ed0aeb970f51",
+      "name": "Rando Camasta",
+      "slug": "rando-camasta",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "rando-jr-evidence-2026-10-25.md",
+  "field_sources": {
+    "identity": "Retajila 2018 session credits Rando Camasta Cueto; Jazz en Dominicana explicitly interviews the son; supplied editor name.",
+    "birth_place": "Unknown birth city; La Romana documented as origin, retained in prose and province only.",
+    "province": "La Romana origin: Retajila artist dossier and editor.",
+    "roles_instruments_gender": "Retajila vocals/guitar and words/music; public interview and editor identify son/male. No piano or production occupation inferred.",
+    "genres_tag": "Fusion canonical form option; soul/funk unavailable in current taxonomy. Additional jazz/merengue/bachata/bolero sourced in interview and Trance press; secular solo repertoire; Metanoia affiliation described separately.",
+    "names": "Rando / Camasta / Cueto from Retajila literal full name and editor. Stage name Rando.",
+    "platforms": "Spotify current son catalog confirmed by Jr biography and matching Apple DO artist 1229900355; Retajila Facebook rando2 / Instagram randocamasta and YouTube link; editor handle @RandoCamasta. Legacy Retajila Spotify destination differs and is not copied."
+  },
+  "backward_reference_audit": {
+    "inspected_documents": 2,
+    "matches": 2,
+    "legacy_matches": [],
+    "file": "rando-camasta-pending-backlinks.json"
+  },
+  "unresolved": [
+    "DOB/year and exact birthplace unknown.",
+    "Portrait not supplied.",
+    "Earlier two EPs unidentified; avoid debut claim.",
+    "Facebook birth searches yield unrelated celebrations; no date saved.",
+    "TikTok no dedicated field; Apple ID retained in research.",
+    "Father corrections recorded separately; father public biographies not changed.",
+    "Earlier mentions in father biographies require authorized backlink edit after target publication."
+  ]
+}

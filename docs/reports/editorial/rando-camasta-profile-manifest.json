@@ -1,0 +1,886 @@
+{
+  "date": "2026-10-25",
+  "authorization": "User: Vamos a crear su ficha. Refers to Rando Camasta father, verified in preceding research.",
+  "scope": "Create only Rando Camasta Dihmes, father, as draft with completed published ES/EN biographies. No son profile, shared records, discography imports, media, security, deployment or application changes.",
+  "before": null,
+  "after": {
+    "id": "014ac5b6-01cd-4300-9c88-ed0aeb970f51",
+    "name": "Rando Camasta",
+    "stage_name": "Rando Camasta",
+    "sort_name": "Camasta, Rando",
+    "slug": "rando-camasta",
+    "type": "solo_artist",
+    "status": "draft",
+    "first_name": "Rando",
+    "middle_name": null,
+    "last_name": "Camasta",
+    "second_last_name": "Dihmes",
+    "aliases": [
+      "Rando Camasta Dihmes",
+      "Rando Camasta padre"
+    ],
+    "birth_place": "La Romana",
+    "province": "La Romana",
+    "date_of_birth": null,
+    "birth_year": null,
+    "date_of_death": null,
+    "death_year": null,
+    "gender": "male",
+    "primary_role": "singer",
+    "occupations": [
+      "composer",
+      "arranger",
+      "producer"
+    ],
+    "instruments": [
+      "voice",
+      "piano",
+      "guitar"
+    ],
+    "primary_genre": "bolero",
+    "genres": [
+      "merengue",
+      "bachata"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "spotify": null,
+    "facebook": null,
+    "instagram": null,
+    "youtube": null,
+    "website": null
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Rando Camasta Dihmes, conocido artísticamente como Rando Camasta, es un cantante, compositor, arreglista y productor dominicano nacido en La Romana. Su trayectoria reúne la interpretación de boleros y canciones románticas con el trabajo de estudio para agrupaciones de merengue, bachata y pop. Es el padre del cantautor Rando Camasta Cueto, quien desarrolla una carrera propia en el soul, el funk y el pop caribeño."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Primeros años y formación",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En una entrevista con Junior Cabrera publicada en febrero de 2026, Camasta recordó la influencia de su tío, el tenor Napoleón Dihmes, y el aprendizaje vocal que desarrolló escuchando a José José. Recibió clases de piano de César Mendoza en el Colegio Santa Rosa y profundizó por su cuenta en la armonía a través de las canciones de Iván Lins. Estudió medicina en la Universidad Central del Este, en San Pedro de Macorís, mientras viajaba desde La Romana, hasta que la actividad musical pasó a ocupar el centro de su vida profesional."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Según su relato, en el Festival de la Canción de Amucaba de 1984 fue premiado tanto por su canción como por su actuación como cantante revelación. Allí conoció a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                  "occurrenceId": "f441076d-cf64-433c-add2-f8f66ec55ff7",
+                  "displayText": "Jorge Taveras"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "occurrenceId": "dee97e38-920a-411d-9e6d-3f472942215d",
+                  "displayText": "Manuel Tejada"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", a quienes identifica como mentores. Tejada lo incorporó al trabajo de comerciales para radio y televisión, una actividad que mantuvo durante años. También tocó y cantó en el Hotel Embajador y formó parte de «Somos Nosotros»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La producción de Negros",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su encuentro con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "7b9ee34b-4438-4032-b827-0b748086e223",
+                  "occurrenceId": "770aaae9-14b8-428f-845e-a663dcc32027",
+                  "displayText": "Wason Brazobán"
+                }
+              },
+              {
+                "type": "text",
+                "text": " estuvo mediado por Cholo Brenes, quien le propuso escuchar al joven cantante. Camasta recuerda que produjo y arregló buena parte del disco de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a6f8cbd2-e97d-404b-a0c0-02008df19bc2",
+                  "occurrenceId": "416cba40-c4e9-489d-8238-c4911b9d07d3",
+                  "displayText": "Negros"
+                }
+              },
+              {
+                "type": "text",
+                "text": " que incluyó «Me cambiaste la vida», «Tú eres mi reina», «Muchachita de campo» y «Contigo en la cabeza». En su testimonio distingue dos aportes ajenos: «La cosa aprieta», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                  "occurrenceId": "d5b4b659-a24f-4c30-b985-84bbf87e70fc",
+                  "displayText": "Ramón Orlando"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", y «Tu ausencia», de Marianito. Comenzó el trabajo en su casa y contó posteriormente con el estudio y la colaboración de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "occurrenceId": "351d9e55-a51d-4264-966e-967fc5bbf80d",
+                  "displayText": "Manuel Tejada"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". La prensa de 2005 también documenta su arreglo de «Marielena», escrita por "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "7b9ee34b-4438-4032-b827-0b748086e223",
+                  "occurrenceId": "038d3284-903d-4d1c-88b4-efad95dbe156",
+                  "displayText": "Wason Brazobán"
+                }
+              },
+              {
+                "type": "text",
+                "text": " e interpretada por "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a6f8cbd2-e97d-404b-a0c0-02008df19bc2",
+                  "occurrenceId": "6c3d014b-5b4f-4194-918d-e63aff4bd98c",
+                  "displayText": "Negros"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Arreglos y colaboración musical",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "73032c71-e46c-45b1-b02c-8f4de18426ad",
+                  "occurrenceId": "1dc025e3-3277-4e3a-9d14-f1c6638b5f70",
+                  "displayText": "Los Toros Band"
+                }
+              },
+              {
+                "type": "text",
+                "text": " trabajó en «Loca conmigo» y «Si tú estuvieras», cuando "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "dee014d6-cb3c-4abb-9262-165538277a0d",
+                  "occurrenceId": "7f982165-dfaa-45f1-8178-7f1e431f1122",
+                  "displayText": "Héctor Acosta “El Torito”"
+                }
+              },
+              {
+                "type": "text",
+                "text": " todavía era su cantante. Al explicar el arreglo de «Loca conmigo», describió una búsqueda rítmica que prescindió del tumbao de piano e incorporó batá y shaker. También reconoció las intervenciones y la mezcla de Marco Félix, dentro de un proceso de colaboración entre productor, músicos y agrupación."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2005 realizó nuevos arreglos para el popurrí de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+                  "occurrenceId": "45749534-6e56-435e-9b86-4de9d3e8b8fd",
+                  "displayText": "Los Hermanos Rosario"
+                }
+              },
+              {
+                "type": "text",
+                "text": " presentado en los Premios Casandra. Su trabajo para esa ceremonia incluyó la producción musical, documentada por la prensa. En el repertorio romántico participó como cantante en el CD «Sígueme», dedicado a las canciones de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+                  "occurrenceId": "90a661a8-1850-4545-8d76-fe24334b22bf",
+                  "displayText": "Manuel Troncoso"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", con arreglos y dirección de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                  "occurrenceId": "5810b1ad-22c3-4a03-9744-985a8a440375",
+                  "displayText": "Jorge Taveras"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y patrocinio del Banco Central. También figura con su nombre completo como arreglista de vientos de «Santo Domingo de Fiesta», el proyecto discográfico de su hijo publicado en 2012."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Festivales y reconocimientos",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2000 representó a la República Dominicana en el Festival OTI de Acapulco con «¿Qué nos pasa?» y llegó a la final. En la entrevista de 2026 explicó que recibió un reconocimiento especial como mejor intérprete y que "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "occurrenceId": "32006664-0352-4580-9f38-45171b0df62b",
+                  "displayText": "Manuel Tejada"
+                }
+              },
+              {
+                "type": "text",
+                "text": " preparó el arreglo enviado a México. Ese reconocimiento, referido por el propio artista, es distinto del primer premio de la canción."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2007 ganó el primer Festival de la Canción Dominicana Eduardo Brito con «A ver si puedes», de su autoría e interpretación. Los resultados difundidos por los organizadores registraron 70 puntos para su canción. El Ministerio de Cultura también documentó a Rando Camasta Dihmes como ganador del Premio Nacional de Música Manuel Troncoso, modalidad Pop-Rock, por «Cuando tú no estás»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La obra de Camasta conecta la voz del intérprete con el oficio del arreglista y el productor. Sus aportes a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a6f8cbd2-e97d-404b-a0c0-02008df19bc2",
+                  "occurrenceId": "a5207b4a-16d4-4743-92ab-58263ee3bb5b",
+                  "displayText": "Negros"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "73032c71-e46c-45b1-b02c-8f4de18426ad",
+                  "occurrenceId": "cb1c11b9-5c2d-4d2c-9418-b78113ef55b2",
+                  "displayText": "Los Toros Band"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+                  "occurrenceId": "3919a3f6-5cf8-4b14-b87b-ad55c6fb03af",
+                  "displayText": "Los Hermanos Rosario"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", junto con su interpretación del cancionero de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+                  "occurrenceId": "ac9cb435-a82e-4f4d-8ae4-a64d669e595f",
+                  "displayText": "Manuel Troncoso"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", muestran distintas facetas de ese trabajo. La formación musical que compartió con su hijo prolonga esa relación entre el escenario, el estudio y la transmisión del conocimiento entre generaciones."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Rando Camasta Dihmes, professionally known as Rando Camasta, is a Dominican singer, composer, arranger, and producer born in La Romana. His career combines bolero and romantic song with studio work in merengue, bachata, and pop. He is the father of singer-songwriter Rando Camasta Cueto, whose separate career explores soul, funk, and Caribbean pop."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early years and musical training",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In an interview with Junior Cabrera published in February 2026, Camasta recalled the influence of his uncle, tenor Napoleón Dihmes, and the vocal skills he developed by listening to José José. He took piano lessons with César Mendoza at Colegio Santa Rosa and explored harmony independently through the songs of Iván Lins. He studied medicine at Universidad Central del Este in San Pedro de Macorís, commuting from La Romana, before music became his principal professional activity."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "According to his account, the 1984 Amucaba song festival brought him recognition both for his song and as a breakthrough singer. There he met "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                  "occurrenceId": "deb245e3-c24a-4a6e-aeff-c32c5dea4d47",
+                  "displayText": "Jorge Taveras"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "occurrenceId": "83c9f4d7-c1c2-4e44-8ba3-b810be5d9e59",
+                  "displayText": "Manuel Tejada"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", whom he identifies as mentors. Tejada introduced him to recording commercials for radio and television, work that sustained him for years. He also played and sang at the Hotel Embajador and joined «Somos Nosotros»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Producing Negros",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Cholo Brenes brought Camasta into contact with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "7b9ee34b-4438-4032-b827-0b748086e223",
+                  "occurrenceId": "b4a9925c-5c67-4918-b2cb-77c2ea6c51ce",
+                  "displayText": "Wason Brazobán"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", asking him to listen to the young singer. Camasta recalls producing and arranging much of the "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a6f8cbd2-e97d-404b-a0c0-02008df19bc2",
+                  "occurrenceId": "798b5eb1-311b-4c10-b848-70544c091083",
+                  "displayText": "Negros"
+                }
+              },
+              {
+                "type": "text",
+                "text": " record that included «Me cambiaste la vida», «Tú eres mi reina», «Muchachita de campo», and «Contigo en la cabeza». In his account he separates out two other contributors' tracks: «La cosa aprieta», by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                  "occurrenceId": "78f5741a-d9d7-42f5-b0a5-e2aabd9cd78b",
+                  "displayText": "Ramón Orlando"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", and «Tu ausencia», by Marianito. He began working at home and later received studio support and musical collaboration from "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "occurrenceId": "16b1f708-43ee-4c4f-84cb-b606496ca9e9",
+                  "displayText": "Manuel Tejada"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Contemporary reporting also credits him with the arrangement of «Marielena», written by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "7b9ee34b-4438-4032-b827-0b748086e223",
+                  "occurrenceId": "e61539bc-c1de-41de-87ab-564f4d7f7be1",
+                  "displayText": "Wason Brazobán"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and performed by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a6f8cbd2-e97d-404b-a0c0-02008df19bc2",
+                  "occurrenceId": "eaded437-f95b-4af3-98ad-5172dc150b81",
+                  "displayText": "Negros"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", in 2005."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Arranging and musical collaboration",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His work with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "73032c71-e46c-45b1-b02c-8f4de18426ad",
+                  "occurrenceId": "c30e55c9-b0e4-47cf-8bdc-ea0580671dd1",
+                  "displayText": "Los Toros Band"
+                }
+              },
+              {
+                "type": "text",
+                "text": " included «Loca conmigo» and «Si tú estuvieras», recorded while "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "dee014d6-cb3c-4abb-9262-165538277a0d",
+                  "occurrenceId": "c0f0838b-2671-4027-b5fc-9675db418849",
+                  "displayText": "Héctor Acosta “El Torito”"
+                }
+              },
+              {
+                "type": "text",
+                "text": " was still the band's singer. Discussing «Loca conmigo», he described a rhythmic approach that left out the piano tumbao and incorporated batá and shaker. He also acknowledged Marco Félix's contributions and mixing, describing a collaborative process involving the producer, musicians, and band."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2005 he supplied new arrangements for the "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+                  "occurrenceId": "34a6c635-6cdb-4b76-8cc4-b55fb86943b1",
+                  "displayText": "Los Hermanos Rosario"
+                }
+              },
+              {
+                "type": "text",
+                "text": " medley performed at the Casandra Awards. His work on that ceremony also included musical production, documented in the press. As a singer, he participated in «Sígueme», a CD devoted to the songs of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+                  "occurrenceId": "31785c5b-76fb-401a-982d-18e80d889a9d",
+                  "displayText": "Manuel Troncoso"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", arranged and conducted by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                  "occurrenceId": "89bcae29-8f87-4232-9666-766bfb3dade7",
+                  "displayText": "Jorge Taveras"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and sponsored by the Dominican Central Bank. He is also credited under his full name with the horn arrangements on his son's 2012 project «Santo Domingo de Fiesta»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Festivals and recognition",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Camasta represented the Dominican Republic at the 2000 OTI Festival in Acapulco with «¿Qué nos pasa?» and reached the final. In the 2026 interview, he said he received a special award for best performer and explained that "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "occurrenceId": "59d7cc13-c343-47c5-9614-a4cd9b0275fd",
+                  "displayText": "Manuel Tejada"
+                }
+              },
+              {
+                "type": "text",
+                "text": " prepared the arrangement sent to Mexico. This recognition, described in the artist's own testimony, is separate from the festival's first prize for a song."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2007 he won the first Eduardo Brito Dominican Song Festival with «A ver si puedes», which he wrote and performed. The organizers' published results recorded 70 points for his entry. The Ministry of Culture also documented Rando Camasta Dihmes as the recipient of the Manuel Troncoso National Music Award in the Pop-Rock category for «Cuando tú no estás»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Camasta's career connects the singer's craft with the work of arranging and producing. His contributions to "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a6f8cbd2-e97d-404b-a0c0-02008df19bc2",
+                  "occurrenceId": "fe758f63-580d-4b4b-a5a2-50adde2954ba",
+                  "displayText": "Negros"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "73032c71-e46c-45b1-b02c-8f4de18426ad",
+                  "occurrenceId": "f1a87bff-7a2f-4f3e-89b9-51cf87f8c17a",
+                  "displayText": "Los Toros Band"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+                  "occurrenceId": "18810fd9-8530-43a1-bd52-c962e9f91010",
+                  "displayText": "Los Hermanos Rosario"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", alongside his interpretation of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+                  "occurrenceId": "72a814fd-b960-45ca-b001-81fabd91ed8f",
+                  "displayText": "Manuel Troncoso"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s songs, illustrate the range of that practice. The musical knowledge he shared with his son extends this relationship between stage performance, recording, and teaching across generations."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "dee014d6-cb3c-4abb-9262-165538277a0d",
+      "name": "Héctor Acosta “El Torito”",
+      "slug": "hector-acosta-el-torito",
+      "status": "published"
+    },
+    {
+      "id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+      "name": "Jorge Taveras",
+      "slug": "jorge-taveras",
+      "status": "published"
+    },
+    {
+      "id": "3422883e-7048-48af-bb03-c68c8c557ee4",
+      "name": "Los Hermanos Rosario",
+      "slug": "los-hermanos-rosario",
+      "status": "published"
+    },
+    {
+      "id": "73032c71-e46c-45b1-b02c-8f4de18426ad",
+      "name": "Los Toros Band",
+      "slug": "los-toros-band",
+      "status": "published"
+    },
+    {
+      "id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+      "name": "Manuel Tejada",
+      "slug": "manuel-tejada",
+      "status": "published"
+    },
+    {
+      "id": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+      "name": "Manuel Troncoso",
+      "slug": "manuel-troncoso",
+      "status": "published"
+    },
+    {
+      "id": "a6f8cbd2-e97d-404b-a0c0-02008df19bc2",
+      "name": "Negros",
+      "slug": "negros",
+      "status": "published"
+    },
+    {
+      "id": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+      "name": "Ramón Orlando",
+      "slug": "ramon-orlando",
+      "status": "published"
+    },
+    {
+      "id": "7b9ee34b-4438-4032-b827-0b748086e223",
+      "name": "Wason Brazobán",
+      "slug": "wason-brazoban",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "rando-camasta-padre-verification-2026-10-25.md",
+  "field_sources": {
+    "identity": "Retajila 2012 full-name horn-arranger credit; interview and family distinction corroborated by Jazz en Dominicana 2016.",
+    "birth_place": "Interview 2:56-3:19: La Romana explicitly hometown of birth.",
+    "province": "La Romana; same documented birthplace.",
+    "roles_instruments_gender": "Interview: self-described singer/producer, composer and father; piano and guitar 13:46; voice throughout; Eduardo Brito winning authorship 2007.",
+    "genres_tag": "Bolero performance on Siguéme; merengue and bachata arrangements described in interview; secular recorded repertoire, not personal beliefs.",
+    "names": "Rando / Camasta / Dihmes from supplied name and professional full-name credit; middle name unknown.",
+    "platforms": "Search found sons Rando Spotify 5J2uYCcGLOQH7F0nXjhLIz and social identity; no verified separate father account, left null."
+  },
+  "backward_reference_audit": {
+    "inspected_documents": 0,
+    "matches": 0,
+    "legacy_matches": [],
+    "file": "rando-camasta-pending-backlinks.json"
+  },
+  "unresolved": [
+    "DOB and birth year unknown; 1965-66 is only an interview-age calculation, not saved.",
+    "No separately verified personal social handles, Spotify, website or supplied portrait file.",
+    "OTI special recognition attributed to artist; no 40-country claim or overall first-prize claim.",
+    "Casandra 2005/2006 chronological tension unresolved; only press-supported 2005 musical-production statement included.",
+    "Mother name and spouse full legal name omitted; not verified.",
+    "No discography import performed."
+  ]
+}

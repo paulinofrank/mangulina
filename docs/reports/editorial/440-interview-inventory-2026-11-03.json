@@ -1,0 +1,695 @@
+[
+  {
+    "index": 1,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20121224 - @OlgaConsuegra - CONVERSANDO CON OLGA CONSUEGRA CON ADALGISA PANTALEON 1ra PARTE PROGRAMA 8.txt",
+    "bytes": 7610,
+    "characters": 7461,
+    "sha256": "f77da08e687fbc387728a549d402f2ff4b411dd0ddaba200853dd36dd0eb4d9f"
+  },
+  {
+    "index": 2,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20121224 - @OlgaConsuegra - CONVERSANDO CON OLGA CONSUEGRA CON ADALGISA PANTALEON 2da PARTE PROGRAMA 8.txt",
+    "bytes": 6889,
+    "characters": 6746,
+    "sha256": "74b4857424b8cc70d07a407be1e432b614bbd4df8e4e261e0816a67232722a61"
+  },
+  {
+    "index": 3,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20150528 - @nochedeluz - Adalgisa Pantale├│n y Luz Garcia Entrevista en Noche de Luz.txt",
+    "bytes": 18446,
+    "characters": 18042,
+    "sha256": "39d32f00f4b1ce8c108b33ddb5322411712ab6a257e5bcb0ccd48e52f5df5c60"
+  },
+  {
+    "index": 4,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20160804 - @dialogolibre6167 - Dia╠ülogo Libre con Adalgisa Pantaleo╠ün y Fernando Villalona.txt",
+    "bytes": 42023,
+    "characters": 41076,
+    "sha256": "4761dffb9e3b0c569d4fd503ed527b96e68f12cee629a8327768a6eecc8cb6b8"
+  },
+  {
+    "index": 5,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20170718 - @Telefuturo23 - Tiempo de cine - Adalgisa Pantale├│n.txt",
+    "bytes": 14751,
+    "characters": 14393,
+    "sha256": "8ba440753e155f74bce6f7d0d5e850a64c127ec3cac3c112a7acebea2c4ae2cc"
+  },
+  {
+    "index": 6,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20190329 - @NoticiasSIN - Entrevista a vocalista de Juan Luis Guerra, Adalgisa Pantale├│n en El Despertador.txt",
+    "bytes": 20735,
+    "characters": 20227,
+    "sha256": "59821368fd5c3cf900b16c79070517b4af8d24c35a3f2a7994aaefec07e72831"
+  },
+  {
+    "index": 7,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20190417 - @ProgramaCasiPersonalRD - Entrevista CasiPersonalRD a Adalgisa Pantale├│n.txt",
+    "bytes": 30346,
+    "characters": 29502,
+    "sha256": "44d9a89f6094c6fceda67ce6908a1b8587055f32bf0941afc94cb8888222234f"
+  },
+  {
+    "index": 8,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20201207 - @SiendoHonestos - Adalgisa Pantale├│n cantante, corista y m├║sico de la agrupaci├│n 4.40 en #Siendo Honestos.txt",
+    "bytes": 35658,
+    "characters": 34855,
+    "sha256": "3eb6caa4620a072eeb820fcceb3e51ef39cd0a3ce40bd58c388ba9bad06b1f31"
+  },
+  {
+    "index": 9,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20201231 - @ElDiaRD - Recibimos Adalgisa Pantale├│n en nuestro programa especial de navidad..txt",
+    "bytes": 10801,
+    "characters": 10594,
+    "sha256": "1a8de024f76de84b190290a18a11dfaa1c4da19011782b14bd7614ce5957c2e2"
+  },
+  {
+    "index": 10,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20210418 - @LASOTVRD - Dominicana Buenas Noches - Entrevista a Adalgisa Pantale├│n Parte 1.txt",
+    "bytes": 42,
+    "characters": 42,
+    "sha256": "2ba69ec74a5b6ea2948d8bfb7740ecde9e3ce4bae3cdf8ba6c2399b803ecd66d"
+  },
+  {
+    "index": 11,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20210418 - @LASOTVRD - Dominicana Buenas Noches - Entrevista a Adalgisa Pantale├│n Parte 2.txt",
+    "bytes": 11185,
+    "characters": 10931,
+    "sha256": "1eb958a1e511f4090ec5629fcd911a8fe2b6427a3d16d86c1340e77912b3a853"
+  },
+  {
+    "index": 12,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20210719 - @MarimbaLiveTVByIrvingAlberti - Roger Zayas X Adalgisa Pantale├│n X Irving Alberti ∩╜£ IRVING ALBERTI LIVE.txt",
+    "bytes": 42899,
+    "characters": 41850,
+    "sha256": "5632d4e161a75208d172f27bf5b6bdb2d33233a6c9168be25281b3307a859da7"
+  },
+  {
+    "index": 13,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20220402 - @10PREGUNTAS - ≡ƒç⌐≡ƒç┤ADALGISA PANTALEON 10 PREGU NTAS POR JUNIOR CABRERA≡ƒæê.txt",
+    "bytes": 38806,
+    "characters": 37943,
+    "sha256": "e86a20ad7c4f79e38c92be65fefb022d7ee522e238b84d22606d9ad72f15eec5"
+  },
+  {
+    "index": 14,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20220411 - @ColorVisi├│nCanal9 - Espectacular entrevista a la polifac├⌐tica Adalgisa Pantale├│n Con Jatnna.txt",
+    "bytes": 21071,
+    "characters": 20665,
+    "sha256": "dd725cd1ac1bc17fb86a93809f5406fcfa122592994b82498b11f82813f9f49b"
+  },
+  {
+    "index": 15,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20221202 - @DirectoalShow - Por primera vez Adalgisa Pantale├│n como fue estar junto al maestro Juan Luis Guerra.txt",
+    "bytes": 25084,
+    "characters": 24501,
+    "sha256": "2c78abafddb03a6a9add82fe11e14abce034099d09224126d822d22be2aa668e"
+  },
+  {
+    "index": 16,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20230321 - @rtvd4 - La Avanzada ∩╜£ Adalgisa Pantale├│n, es una cantante y actriz.txt",
+    "bytes": 25853,
+    "characters": 25304,
+    "sha256": "370edf6f2099fbfc444da688cc4166b6a4c869843a0238f3ed965350bd602bde"
+  },
+  {
+    "index": 17,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20230528 - @musicapresstv - ADALGISA PANTALE├ôN EN M├ÜSICAPRESS 27∩╜£ 05∩╜£ 2023.txt",
+    "bytes": 17265,
+    "characters": 16904,
+    "sha256": "7c53d6bcbdb69e62098d5a2cf0a9d22b9e417c0b4c6d40ba97d954fc390b9a83"
+  },
+  {
+    "index": 18,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20240416 - @ElShowPerfecto - Adalgisa pantale├│n revela los mejores momentos de su vida.txt",
+    "bytes": 22620,
+    "characters": 21929,
+    "sha256": "07eb0515bbcc23ba071eed0a9b7c2eb93fdd94ef78853c3f575aa3af6141a8e8"
+  },
+  {
+    "index": 19,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20241121 - @ProgramaEnPareja - Programa En Pareja - Entrevista a Adalgisa Pantale├│n.txt",
+    "bytes": 16148,
+    "characters": 15837,
+    "sha256": "823eec2cdcddefaa1fee98afb5835b61de4396192b82f867672f3adf723b2fc9"
+  },
+  {
+    "index": 20,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20250220 - @EmisoraRa├¡ces - Programa especial de San Valent├¡n con Adalgisa Pantaleo╠ün..txt",
+    "bytes": 36914,
+    "characters": 36068,
+    "sha256": "a3cc8eb138bfecff9cf6a665a655a595e97a41ba29b9bbc674d00f24c468bd84"
+  },
+  {
+    "index": 21,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20250520 - @EncuentrosVIPOnline - Adalgisa Pantale├│n∩╝Ü La Voz que Hizo Historia en la M├║sica Dominicana ≡ƒÄñ≡ƒç⌐≡ƒç┤.txt",
+    "bytes": 18263,
+    "characters": 17950,
+    "sha256": "5df8bbd5bc10cff8176cf6b0c9bf6cd579c9f3b6ab98bf9cad5d4af4ee50e663"
+  },
+  {
+    "index": 22,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20260129 - @variedadesinformativas - ADALGISA PANTALE├ôN∩╝Ü UNA ENTREVISTA EMOTIVA, LLENA DE HISTORIAS Y SENTIMIENTO ≡ƒÄ╢Γ¥ñ∩╕Å.txt",
+    "bytes": 31166,
+    "characters": 30528,
+    "sha256": "ea7b36059ae5459de02ce088a7e61cd198532c23d4f556e3f9b228a0a0045220"
+  },
+  {
+    "index": 23,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20260508 - @estonoesradio2242 - EL JUNTE DEL SIGLO CON ADALGISA PANTALE├ôN Y FRANK CEARA EN ESTO NO ES RADIO.txt",
+    "bytes": 26131,
+    "characters": 25655,
+    "sha256": "447c3460aa7ee9d572c342b6198f5cde1287c5c1474dd2105a023b596c7f1842"
+  },
+  {
+    "index": 24,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20260523 - @SandraPalmett - ∩╝éME CRITICARON por unirme a 440 y Juan Luis Guerra∩╝é - Adalgisa Pantaleo╠ün.txt",
+    "bytes": 20809,
+    "characters": 20341,
+    "sha256": "5016a28af62f7b4a43a0c2bc1e11ee811228437529c20c4af1512dc123cb4e25"
+  },
+  {
+    "index": 25,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20260617 - @HablemosdeArteRD - Toda Una Vida Cantando ∩╜£ Adalgisa Pantale├│n ∩╜£ Episodio 31.txt",
+    "bytes": 49707,
+    "characters": 48655,
+    "sha256": "24e878eb7b4751918020bf359bcea675844e09c7ef6b39753e5670bc453519f0"
+  },
+  {
+    "index": 26,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20260718 - @JUNIORCABRERA07 - Lo que nadie sabe de Juan Luis Guerra y 440∩╝Ü Revelaciones de Adalgisa Pantale├│n.txt",
+    "bytes": 41231,
+    "characters": 40331,
+    "sha256": "0eb5362e2fcd708be1ddfe48cc77a68a442ef9b849c356f7b6131b71e8ef7fcd"
+  },
+  {
+    "index": 27,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20260727 - @NathalieHazim - El amor es libertad ∩╜£ Adalgisa Pantale├│n ∩╜£ Cinco Palabras Podcast EP 18.txt",
+    "bytes": 34901,
+    "characters": 34070,
+    "sha256": "8cb5eb79b059d8999395c43bdc899a2d5e8983b426ac8b489e1553a3e8d1a2ce"
+  },
+  {
+    "index": 28,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20260730 - @PortadaDigitalConRafaelOvalles - ENTREVISTA A FRANK CEARA & ADALGISA PANTALEON Γº╕ ARTISTA Γº╕Γº╕ PORTADA DIGITAL Γº╕ 29-07-2026.txt",
+    "bytes": 38046,
+    "characters": 37304,
+    "sha256": "9ffb28bd37db04fd0587c745afa365e964853bf7bbbad6277645dd0cb149797f"
+  },
+  {
+    "index": 29,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20260731 - @SOLOPARAMUJERESRD - ADALGISA PANTALE├ôN∩╝Ü LA VOZ QUE MARC├ô UNA ├ëPOCA JUNTO A 440 ∩╜£ ZOILA LUNA.txt",
+    "bytes": 1002,
+    "characters": 991,
+    "sha256": "0fcde8bb166b84f02d7752105749d1bc6713739072401c0814803ccf277e46fb"
+  },
+  {
+    "index": 30,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20260814 - @Manoloozunadg - ADALGIZA PANTALE├ôN∩╝Ü ┬íSU FABULOSA VIDA CON JUAN LUIS GUERRA Y SUS MEJORES MOMENTOS!.txt",
+    "bytes": 30252,
+    "characters": 29357,
+    "sha256": "5bac1e280ebc799d05929750a1ff4a923a2d92b038d215ee36cc6c81ae75160a"
+  },
+  {
+    "index": 31,
+    "path": "E:\\Entrevistas - Mangulina\\Adalgisa\\20260904 - @LosBerasGoicoPodcast - EP#53 Los Beras Goico ft Adalgisa Pantale├│n.txt",
+    "bytes": 33754,
+    "characters": 33022,
+    "sha256": "8685784f8c2f5a3aa87c844f635b68afe241d7918496244165d4b8a4875a75f5"
+  },
+  {
+    "index": 32,
+    "path": "E:\\Entrevistas - Mangulina\\JLG - 440\\20080128 - @Hachaymachete1977 - Entrevista a Juan Luis Guerra Parte 1.txt",
+    "bytes": 4447,
+    "characters": 4352,
+    "sha256": "8c5bb4b6079c994c6f9bf0980f4e8bcd01002fe37612a6aee72b21d4be99940f"
+  },
+  {
+    "index": 33,
+    "path": "E:\\Entrevistas - Mangulina\\JLG - 440\\20100622 - @RadioTeleTaxiOficial - Justo Molinero con Juan Luis Guerra en el Qui ├⌐s Qui∩╝ƒ de TT.txt",
+    "bytes": 22259,
+    "characters": 21744,
+    "sha256": "c71aa1d6e3aca20d73ec71d48e1f1cf4e02e16a0a27b9c62242695658bb0700e"
+  },
+  {
+    "index": 34,
+    "path": "E:\\Entrevistas - Mangulina\\JLG - 440\\20121011 - @crisollatinotv - Juan Luis Guerra en Fax (1991) Completo.txt",
+    "bytes": 20495,
+    "characters": 20055,
+    "sha256": "cf4bc8de138a70eee6d1ba944e82ed81403b5da028c1f1ed64f7d5a0943abe65"
+  },
+  {
+    "index": 35,
+    "path": "E:\\Entrevistas - Mangulina\\JLG - 440\\20180521 - @noticiascaracol - Juan Luis Guerra habla de su 'Traves├¡a' por Colombia.txt",
+    "bytes": 19909,
+    "characters": 19392,
+    "sha256": "bb1eb6fe6b4462a804f637f4029da4c029b476f5c6f2b6d361e19801dcf56aac"
+  },
+  {
+    "index": 36,
+    "path": "E:\\Entrevistas - Mangulina\\JLG - 440\\20190613 - @parateYard - Entrevista a Juan Luis Guerra en LOS40 Rep├║blica Dominicana.txt",
+    "bytes": 40159,
+    "characters": 39286,
+    "sha256": "55369221e47bed575a23b785d2414e527e343526c420f893912a11832222d24e"
+  },
+  {
+    "index": 37,
+    "path": "E:\\Entrevistas - Mangulina\\JLG - 440\\20190926 - @JoseMarmolp - Juan Luis Guerra en Conversaci├│n en la Catedral.txt",
+    "bytes": 39801,
+    "characters": 38903,
+    "sha256": "1ccb5e9c78a87968af97474fef03da1c0a7bf84def6d27206233e2d69f176671"
+  },
+  {
+    "index": 38,
+    "path": "E:\\Entrevistas - Mangulina\\JLG - 440\\20201011 - @JuanValdezYbet - ENTREVISTA A JUAN LUIS GUERRA 1999 @juanluisguerra.txt",
+    "bytes": 18611,
+    "characters": 18191,
+    "sha256": "2c6ae92e4d7d98959d4ea9ad48aeffe42bdb103403380c0698f71b9eaf2d3f43"
+  },
+  {
+    "index": 39,
+    "path": "E:\\Entrevistas - Mangulina\\JLG - 440\\20220108 - @MundoUR - Los imposibles de Leonardo Padr├│n con Juan Luis Guerra.txt",
+    "bytes": 26693,
+    "characters": 26133,
+    "sha256": "337e00734220a450b280dd6c6cccdda4964a93ea9d9e8dbfc2b4495db29b73de"
+  },
+  {
+    "index": 40,
+    "path": "E:\\Entrevistas - Mangulina\\JLG - 440\\20240322 - @BreaFrankHD - PELICULA DE JUAN LUIS GUERRA - CAPITAN AVISPA ENTREVISTA EXCLUSIVA CON BREA FRANK.txt",
+    "bytes": 19293,
+    "characters": 18839,
+    "sha256": "ee02b42acf52bea6931d642405fbb33f8cf1835fc3f8cd5211b82cc8207af210"
+  },
+  {
+    "index": 41,
+    "path": "E:\\Entrevistas - Mangulina\\JLG - 440\\20260103 - @ColorVisi├│nCanal9 - Juan Luis Guerra, artista que convirti├│ el sonido dominicano en lenguaje universal ∩╜£ ENM.txt",
+    "bytes": 40196,
+    "characters": 39385,
+    "sha256": "687835102442fec73a895f9a8c57f3cefda1d6b5a7650f98aa184382e71f1f29"
+  },
+  {
+    "index": 42,
+    "path": "E:\\Entrevistas - Mangulina\\Marco\\20220421 - @10PREGUNTAS - Marco Hernandez-El dembow es algo da├▒ido para la sociedad!≡ƒö₧≡ƒÜ½≡ƒô¢.txt",
+    "bytes": 60939,
+    "characters": 59617,
+    "sha256": "2d018037afa118d07824be20c630a0a161eb746bcf4e65c3489c081de6a5c749"
+  },
+  {
+    "index": 43,
+    "path": "E:\\Entrevistas - Mangulina\\Marco\\20250525 - @100dominicano - Marco Hern├índez - De los escenarios con 440 a su viaje personal como ΓÇ£El SabordinΓÇ¥ ≡ƒÄ╢.txt",
+    "bytes": 27263,
+    "characters": 26604,
+    "sha256": "85537c8605b5715640d6c59ca4af435d8d981eee06359908f2d68d5e3fc9ffc2"
+  },
+  {
+    "index": 44,
+    "path": "E:\\Entrevistas - Mangulina\\Marco\\20250817 - @MultimediosQuisqueyaUSA - MARCO HERN├üNDEZ, m├║sico, arreglista y compositor dominicano - DIVERTIDA TERTULIA CULTURAL ΓÇô 08-15-25.txt",
+    "bytes": 39400,
+    "characters": 38455,
+    "sha256": "e63c7b4415c7d14e994f56f346f7a45ef55fb4a9e0e43f707d7ac4132ef51a18"
+  },
+  {
+    "index": 45,
+    "path": "E:\\Entrevistas - Mangulina\\Marco\\20260717 - @JUNIORCABRERA07 - MARCO HERNANDEZ La fuerte opini├│n de un legendario productor sobre el DEMBOW y sus letras..txt",
+    "bytes": 59097,
+    "characters": 57794,
+    "sha256": "b3a268ad9426e68d37fd900cdd599694944bd1351d3339ca6a4284462b6469f3"
+  },
+  {
+    "index": 46,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20121012 - @GeorginaDuluc - MARIDALIA HERN├üNDEZ -∩╝éEL ARTE CUANDO EL DON ES VERDADERO ES ARROLLANTEΓÇ£-ACCESO TOTAL.txt",
+    "bytes": 45281,
+    "characters": 44084,
+    "sha256": "3b67edf28465fdc83c74f9b98d07b1d8b5ffced108949b8ded8d23c99babd102"
+  },
+  {
+    "index": 47,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20130226 - @nochedeluz - Maridalia Hernandez y Luz Garcia Entrevista @luzgarciatv Noche De Luz.txt",
+    "bytes": 18679,
+    "characters": 18289,
+    "sha256": "6c0e5f08fe31f36b5e061b7a9a92c7118609b004b6b771fbab17735dcc07245f"
+  },
+  {
+    "index": 48,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20160222 - @Telefuturo23 - Maridalia Hernandez ∩╜£ BIO 23 ∩╜£ Una producci├│n de Telefuturo canal 23.txt",
+    "bytes": 34230,
+    "characters": 33493,
+    "sha256": "91cd53264c8a4797baed2dd8dd9ec9c3a88dbdb5648a2f95e475f378ee4f97ca"
+  },
+  {
+    "index": 49,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20201018 - @├ënfasisconIv├ínRuiz - Maridalia Hern├índez∩╝Ü Del 440 a solista - En exclusiva (1Γº╕4).txt",
+    "bytes": 5039,
+    "characters": 5023,
+    "sha256": "635b1b4c8dae5e453801b799e95898052a79f5baba99678dc56350f9cdf527b9"
+  },
+  {
+    "index": 50,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20210120 - @AltantoTV - Maridalia Hern├índez, explica por qu├⌐ se fue de 440 y perdi├│ 10 a├▒os de carrera.txt",
+    "bytes": 35634,
+    "characters": 34769,
+    "sha256": "0c73e667e9b2558523b372cf03e4e6311cf12f371f2b129217dca991dfa1e124"
+  },
+  {
+    "index": 51,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20210628 - @SerHumanoTV - Maridalia Hern├índez ∩╜£ Renacer, salud mental, maternidad y Constelaciones Familiares ∩╜£ 2006.txt",
+    "bytes": 23707,
+    "characters": 23315,
+    "sha256": "0abeeb9505afbc5b31a7b0a49f49c0e03a6a1960824248006ab25672564301bf"
+  },
+  {
+    "index": 52,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20211220 - @10PREGUNTAS - MARIDALIA HERNANDEZ 10 PREGUNTAS POR JUNIOR CABRERA.txt",
+    "bytes": 37652,
+    "characters": 36799,
+    "sha256": "3359c7a84668afe99a59897afe674606176d4b86eba34801461f01da315cf90c"
+  },
+  {
+    "index": 53,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20220327 - @estonoesradio2242 - LA PERVERSA NO TIENE FUTURO COMO CANTANTE SOLISTA (MARIDALIA HERN├üNDEZ).txt",
+    "bytes": 28574,
+    "characters": 27896,
+    "sha256": "4171f424d9a9b823abc1deffbe3b46410696ab9860fb790c4060f7f61acb6d86"
+  },
+  {
+    "index": 54,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20220607 - @mananerotv - La Entrevista mas DIVERTIDA en su carrera - Maridalia Hern├índez ∩╝éJohnny no tenia la gran voz∩╝é.txt",
+    "bytes": 22681,
+    "characters": 22084,
+    "sha256": "462cd2b3ca8f2a9bf15808b4d11aed0e6e38c7c7f7aeb8313d6640e03c784917"
+  },
+  {
+    "index": 55,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20220716 - @ColorVisi├│nCanal9 - Maridalia Hern├índez enamora con su m├ígica voz ∩╜£ ├ënfasis Con Iv├ín Ruiz 4Γº╕4.txt",
+    "bytes": 7034,
+    "characters": 6906,
+    "sha256": "827d3bda0f174e8d156e78b52e088bef8ee95fccb5528a6730bf2c2fece19d26"
+  },
+  {
+    "index": 56,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20220716 - @ColorVisi├│nCanal9 - Maridalia Hern├índez y su salida de 440 ∩╜£ ├ënfasis Con Iv├ín Ruiz 3Γº╕4.txt",
+    "bytes": 6117,
+    "characters": 5969,
+    "sha256": "7b695057b75eaa93593c0783ecbded7f1bb4048b82da79e3e3a41bc979a31324"
+  },
+  {
+    "index": 57,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20220716 - @ColorVisi├│nCanal9 - Maridalia Hern├índez∩╝Ü ΓÇ£Deb├¡ tener un poco m├ís de egoΓÇ¥∩╜£ ├ënfasis Con Iv├ín Ruiz 1Γº╕4.txt",
+    "bytes": 3656,
+    "characters": 3627,
+    "sha256": "df75ada8ef46b5df596fd2c14e345efa8b038975953e6cd76b1b8b4b491f84f4"
+  },
+  {
+    "index": 58,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20220716 - @ColorVisi├│nCanal9 - Maridalia Hern├índez∩╝Ü ΓÇ£Yo soy una mujer cari├▒osa y amorosaΓÇ¥∩╜£ ├ënfasis Con Iv├ín Ruiz 2Γº╕4.txt",
+    "bytes": 12192,
+    "characters": 11888,
+    "sha256": "4270beb94fe74a5acefd99cd1def147fc1291e4bad48f20d9bedaa8eab16e74b"
+  },
+  {
+    "index": 59,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20230204 - @severo.rivera - Maridalia Herna╠ündez, 40 a├▒os de una excelente trayectoria art├¡stica.txt",
+    "bytes": 22717,
+    "characters": 22186,
+    "sha256": "d59d7cd1b27018ca2b544e886e5be662e3f3a0af1c82d49e3f56b4c08104fbff"
+  },
+  {
+    "index": 60,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20230522 - @ColorVisi├│nCanal9 - ┬íPrimicia! Maridalia Hern├índez ΓÇ£Tuve miedo al ├⌐xitoΓÇ¥ ∩╜£ Con Jatnna.txt",
+    "bytes": 24912,
+    "characters": 24300,
+    "sha256": "30bbcdf6dabb4633647f3e6728b07a749e19cb68ea492ddfc64a1f7846920723"
+  },
+  {
+    "index": 61,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20241222 - @mujeresalborderd - Maridalia Hern├índez habla de su salida de 4 40 y de las dificultades para ser solista en RD - EP21.txt",
+    "bytes": 52328,
+    "characters": 51083,
+    "sha256": "f8d08ec7c4f8db646c2254012de271a9b81fc34d82fd5d19b88abe462519ff1b"
+  },
+  {
+    "index": 62,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20260207 - @RobertoAngelSalcedo01 - Maridalia Hern├índez ∩╝éEl g├⌐nero urbano debe complementarse para considerarlo m├║sica∩╝é ∩╜£ CONVERSACIONES.txt",
+    "bytes": 29578,
+    "characters": 29002,
+    "sha256": "4e6ff50622f6b8ddb4f04367da66267e658437965443f429cccbddbcc322d8b8"
+  },
+  {
+    "index": 63,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20260303 - @GrupoTelemicroHD - Maridalia confiesa que grabar├¡a dembow y opina sobre Yailin ∩╜£ Versi├│n Original.txt",
+    "bytes": 32701,
+    "characters": 32007,
+    "sha256": "daefaa3283a0f0e782f7683a8f941ce21a4926ef6a3b3ffe227b827b657273f8"
+  },
+  {
+    "index": 64,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20260525 - @ColorVisi├│nCanal9 - ┬íExclusiva! Maridalia Hern├índez comparte revelaciones ├¡ntimas en Con Jatnna.txt",
+    "bytes": 23196,
+    "characters": 22689,
+    "sha256": "f5bb501229fececf29538cf19bdf670f96060e272ba465f261e19bfd44ecf3ff"
+  },
+  {
+    "index": 65,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20260616 - @10PREGUNTASMIX - ΓÇ£Lo que nunca se dijo de mis a├▒os con Juan Luis GuerraΓÇ¥ ∩╜£ Maridalia Hern├índez.txt",
+    "bytes": 47557,
+    "characters": 46567,
+    "sha256": "552ee994d7bdd1e9b3233b5c086293aea918c3ee935e06b91b5b007ffb05da43"
+  },
+  {
+    "index": 66,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20260720 - @Panoramafm do - Exclusiva para Panorama∩╝Ü Maridalia Hern├índez revela por qu├⌐ sali├│ de 440 y dej├│ a Juan Lu├¡s Guerra.txt",
+    "bytes": 45595,
+    "characters": 44551,
+    "sha256": "ef71ac87cb0b4f8532c0eb3f0df21c51980e549b6a87777456ff2db66f9199f5"
+  },
+  {
+    "index": 67,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20260826 - @LosBerasGoicoPodcast - EP#52 Los Beras Goico ft Maridalia Hern├índez.txt",
+    "bytes": 56610,
+    "characters": 55159,
+    "sha256": "4c1e37ea778aed0b4069162f8fa062947bc3c355a1a4fa40fa8a7fc84b040de8"
+  },
+  {
+    "index": 68,
+    "path": "E:\\Entrevistas - Mangulina\\Maridalia\\20261026 - @nochedeluz - MARIDALIA HERN├üNDEZ Y LAURA∩╝Ü REVELACIONES SOBRE EL AMOR Y MOMENTOS DIF├ìCILES ∩╜£ NOCHE DE LUZ.txt",
+    "bytes": 32844,
+    "characters": 32183,
+    "sha256": "531f62efdf417a4542d88157ed052647f927e4b976905a9ce67fdde442c8cc1c"
+  },
+  {
+    "index": 69,
+    "path": "E:\\Entrevistas - Mangulina\\Mariela\\20220424 - @10PREGUNTAS - MARIELA MERCADO 10 PREGUNTAS POR JUNIOR CABRERA.txt",
+    "bytes": 27468,
+    "characters": 26819,
+    "sha256": "483b8cfdf05415116415f0202b1ae014d63977abfe56564ec0e37adb021f9628"
+  },
+  {
+    "index": 70,
+    "path": "E:\\Entrevistas - Mangulina\\Mariela\\20260719 - @JUNIORCABRERA07 - ┬┐Por qu├⌐ MARIELA MERCADO decidi├│ dejar 440 en el mejor momento∩╝ƒ.txt",
+    "bytes": 29906,
+    "characters": 29208,
+    "sha256": "02424b2c7bff12dddd5e309daa2675dbce5e340ca66624ef2b6be3eee1d8a5ac"
+  },
+  {
+    "index": 71,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20151207 - @EstaNocheMariasela - Entrevista a Roger Zayas - Esta Noche Mariasela.txt",
+    "bytes": 20913,
+    "characters": 20402,
+    "sha256": "6383544d0922b025f6fca282869a23779dbea69ce6424de53fa1cf5f8c7ebd77"
+  },
+  {
+    "index": 72,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20201005 - @jorgechaljub - Ep #090 - Roger Zayas no estaba en el proyecto original de JLG y 440 ∩╜£ Jorge Chaljub Podcast.txt",
+    "bytes": 64055,
+    "characters": 62624,
+    "sha256": "a52151b773377e8068af1530dabb7e0fb9b144062d70c5887817f0702d6f663d"
+  },
+  {
+    "index": 73,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20210207 - @Poder102FM - REVELADORA Y FASCINANTE ENTREVISTA A ROGER ZAYAS DEL GRUPO 440 DE JUAN LUIS GUERRA EL CAN POWER 102.txt",
+    "bytes": 54470,
+    "characters": 53230,
+    "sha256": "cfb00f766f299109b0f5004c476599941d139c0e5cdea0c47905c493d279716d"
+  },
+  {
+    "index": 74,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20210316 - @ElsupershowRD - Roger Zayas la mano derecha de Juan Luis Guerra..txt",
+    "bytes": 56685,
+    "characters": 55382,
+    "sha256": "11607d4cd70803cdb54ef9c4498bd6099f8682b09787b2f58b046c94584ff4e2"
+  },
+  {
+    "index": 75,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20210627 - @baoradio4696 - BaoRadio∩╝Ü Roger Zayas.txt",
+    "bytes": 62521,
+    "characters": 61106,
+    "sha256": "2af94b6375746c9cf23b98c79c06eee04dd254c7785da006654a123619cab7ae"
+  },
+  {
+    "index": 76,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20210719 - @MarimbaLiveTVByIrvingAlberti - Roger Zayas X Adalgisa Pantale├│n X Irving Alberti ∩╜£ IRVING ALBERTI LIVE.txt",
+    "bytes": 42866,
+    "characters": 41817,
+    "sha256": "066b8373b7ebf829d50ab0c7839a0be26816c16fc9eaffd1d816b03c6b21fedc"
+  },
+  {
+    "index": 77,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20220123 - @10PREGUNTAS - ≡ƒç⌐≡ƒç┤ ROGER ZAYAS 10 PREGUNTAS POR JUNIOR CABRERA #rogerzayas #440.txt",
+    "bytes": 55736,
+    "characters": 54487,
+    "sha256": "cd2ed4fbf4c09c348eaabb0f1ba24de5f5e38e45becd66f8656119b3facf11bb"
+  },
+  {
+    "index": 78,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20220609 - @zolfm1065 - Roger Zayas nos cuenta como inicio en la m├║sica.txt",
+    "bytes": 27046,
+    "characters": 26350,
+    "sha256": "b03849ee9c7d7cd7e87e616aa85bfb23c9d7a0401c91c21428422b7853675018"
+  },
+  {
+    "index": 79,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20221102 - @baoradio4696 - BaoRadio∩╝Ü Roger Zayas y Hjalmar G├│mez.txt",
+    "bytes": 63747,
+    "characters": 62333,
+    "sha256": "7373da2a8cb7e6bb7de574503f8f4f82a812e1fd019184ccea9ab0ab479e5a1f"
+  },
+  {
+    "index": 80,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20230702 - @ParaContarloRD - Roger Zayas∩╝Ü La historia completa de Juan Luis Guerra y 4.40.txt",
+    "bytes": 40352,
+    "characters": 39443,
+    "sha256": "bc5e8279295393ffce009ac876933b97815d8f57ba893ca01d6ba3e40b8ab84a"
+  },
+  {
+    "index": 81,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20230823 - @PonchoMoradoPodcast - ∩╝éLos Ojos de la Tormenta∩╝é con Laura Pou y Roger Zayas ∩╜£ Poncho Morado Podcast #beatles #beatlemania.txt",
+    "bytes": 50509,
+    "characters": 49391,
+    "sha256": "5d475c86221e000adbdf0ddce42f1ff30af115d1bc6424d5d55a1bd244b22e45"
+  },
+  {
+    "index": 82,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20240304 - @ConpadresThePodcast - ≡ƒÄÖEpisodio #19 ∩╜£ Roger Zayas (Miembro fundador de JLG y 440, musico, locutor y fotografo).txt",
+    "bytes": 59869,
+    "characters": 58274,
+    "sha256": "f9f0c42bc366b83a1654a1a2ccb8be14438bad6e328d3362dff819c3d437cf49"
+  },
+  {
+    "index": 83,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20240422 - @finanzasconhumor - ROGER ZAYAS ∩╝Ü EL SECRETO DEL ├ëXITO DE JUAN LUIS GUERRA.txt",
+    "bytes": 45311,
+    "characters": 44163,
+    "sha256": "e72dea72a9ded7603e8697c01fde4ffd14a61d6fa525d3c06b1edab864165e62"
+  },
+  {
+    "index": 84,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20240708 - @CarlosComic - EL INSEPARABLE COMPA├æERO DE JUAN LUIS GUERRA. A Sig├║n Roger Zayas con Carlos S├ínchez. Ep. 158..txt",
+    "bytes": 113920,
+    "characters": 111117,
+    "sha256": "1762f7daeff183da320f2c97600d2c7b36f23dcd6f9815a877c8752f82c02934"
+  },
+  {
+    "index": 85,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20240821 - @ElMeneodeCorrea - ROGER ZAYAS TODOS LOS SECRETOS DEL EXITO DE JUAN LUIS Y 440.txt",
+    "bytes": 50623,
+    "characters": 49366,
+    "sha256": "8942aad02fe441f7ea457ecd37db1595c94f6e6272d7e7d17251fb07b3a2d7d4"
+  },
+  {
+    "index": 86,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20241119 - @almediodiaradio - Roger Zayas nos cuenta sobre su musica, su histopria y lo que significa Juan Luis Guerra y 440.txt",
+    "bytes": 26550,
+    "characters": 25890,
+    "sha256": "97a63e86695782fd633aec6f4c3ff20cbfabf03da000cb4109fa286b521e056c"
+  },
+  {
+    "index": 87,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20241119 - @RumbaFM - Roger Zayas, se reinventa con ΓÇ¥ConsueloΓÇ¥.txt",
+    "bytes": 25289,
+    "characters": 24667,
+    "sha256": "7de2cbe41360b8e3bd8626b2cd43b2611e70912c0b99a1a8a8a6f157d6a1029d"
+  },
+  {
+    "index": 88,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20241125 - @ColorVisi├│nCanal9 - ┬íPrimicia! En exclusiva Roger Zayas en Con Jatnna.txt",
+    "bytes": 24332,
+    "characters": 23790,
+    "sha256": "f7de3dc412a1dc9e177edc80e41eb81db57bbb81c0d286eae2fb649b58b403d4"
+  },
+  {
+    "index": 89,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20241127 - @mananerotv - Roger Zayas en 828 Podcast con Raymundo Ort├¡z.txt",
+    "bytes": 44043,
+    "characters": 43070,
+    "sha256": "510b5581370597c5f0bf27c3c345b64544ef77f7f6dfca9ba3fd892cddb18c83"
+  },
+  {
+    "index": 90,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20241216 - @SiendoHonestos - Roger Zayas∩╝Ü ┬½El artista es un ciudadano tambi├⌐n┬╗ ≡ƒÄ╢ en Siendo Honestos con Katherine H..txt",
+    "bytes": 44726,
+    "characters": 43659,
+    "sha256": "bc5892be7d22997dc95a578b1132e34d0a869acdeec3e6e8790863f653157881"
+  },
+  {
+    "index": 91,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20250112 - @VicentePodcastRD - ROGER ZAYAS∩╝Ü SU HISTORIA Y LOS INICIOS DE JLG 4.40.txt",
+    "bytes": 39864,
+    "characters": 38957,
+    "sha256": "f1c269d901921dc438ac579ff8d83a593fa1c048060498a6281e1c253d333d7c"
+  },
+  {
+    "index": 92,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20250127 - @baoradio4696 - BAO NY∩╝Ü Roger Zayas - Consuelo.txt",
+    "bytes": 19253,
+    "characters": 18756,
+    "sha256": "d9c2f5b048c666eb2c197b8a5c560beb25b0c267eba20873e10c19e07b0b13b3"
+  },
+  {
+    "index": 93,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20250621 - @Silviomora1 - ROGER ZAYAS DE 440 JUAN LUIS GUERRA. EL SHOW DE SILVIO..txt",
+    "bytes": 55663,
+    "characters": 54199,
+    "sha256": "5f0646b1f770df372b9e0df4298a3118ae90af0d6ed063355c9a610b11759a66"
+  },
+  {
+    "index": 94,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20251015 - @variedadesinformativas - Roger Zayas∩╝Ü ENTRE M├ÜSICA, HISTORIA Y PASI├ôN POR EL ARTE ≡ƒÄ╢Γ£¿.txt",
+    "bytes": 49937,
+    "characters": 48904,
+    "sha256": "2586ab350286c34186b84166b15fa92dd2488bbb735a731f9b4b649f87ff65f3"
+  },
+  {
+    "index": 95,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20251022 - @ModoMama - Roger Zayas de 440∩╝Ü La pasi├│n de ser Padre, 40 a├▒os de m├║sica y su debut solista con ∩╝éConsuelo∩╝é.txt",
+    "bytes": 34335,
+    "characters": 33565,
+    "sha256": "935c8e4a85e2a5fb0c3163fd130b5182323b999555e4f071031dbdffd74c94e3"
+  },
+  {
+    "index": 96,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20251113 - @rdedigital - Roger Zayas∩╝Ü Reconocimientos y legado art├¡stico ∩╜£ Intervista.txt",
+    "bytes": 25197,
+    "characters": 24662,
+    "sha256": "3e5912df841dd2b74068bcdbb4eca69457cd047e83eb41762174c26daa340290"
+  },
+  {
+    "index": 97,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20260127 - @raulitopodcast - El Podcast de Raulito con Roger Zayas, Las Rivalidades Musicales de #440 #juanluisguerra #grammys.txt",
+    "bytes": 44319,
+    "characters": 43256,
+    "sha256": "6c459b84be755891b161e95a1a21f1fbd954625289f8ec22b06fdedcdd79bc81"
+  },
+  {
+    "index": 98,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20260325 - @ENFOCAOPODCAST - ROGER ZAYAS; HISTORIA Y SUS MEJORES MOMENTOS JUNTO A 440.txt",
+    "bytes": 32249,
+    "characters": 31476,
+    "sha256": "baf853ff782b3852d0704626afadfb50814c4c3f0ddf2275458c3a512ff22185"
+  },
+  {
+    "index": 99,
+    "path": "E:\\Entrevistas - Mangulina\\Roger\\20260429 - @DANDOCORRIENTETVSHOW - ROGER ZAYAS DICE QUIEREN UN BUKELE PERO RECHAZAN A FARIDE.txt",
+    "bytes": 47085,
+    "characters": 46046,
+    "sha256": "db2c71dd2a5693cc6f135efd1659976d22c2656076721af02b2b29bcccebab70"
+  }
+]

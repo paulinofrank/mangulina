@@ -1,0 +1,2624 @@
+{
+  "artist_and_biographies_unchanged": true,
+  "manifest_sha256": "07d897dc5a26b311686e64598f7a332a57e7004a539b382cee188cc839c08f44",
+  "releases": [
+    {
+      "id": "154b7e24-7e77-4f2d-95a7-106ee4d99ca0",
+      "title": "V Festival Dominicano de la Canción Popular",
+      "type": "compilation",
+      "release_year": 1972,
+      "label": "Amucaba",
+      "country": "Dominican Republic",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_group_id": null,
+      "release_artist_id": null,
+      "mbid": null,
+      "disambiguation": null,
+      "status": "Official",
+      "packaging": null,
+      "barcode": null,
+      "catalog_number": null,
+      "date": null,
+      "label_id": null,
+      "metadata": {
+        "format": "Vinyl, LP",
+        "source": {
+          "url": "https://festivalescancionpopular.blogspot.com/2011/10/1972-5to-festival-de-la-cancion.html",
+          "title": "Evangelina Maffei, V Festival 1972, original sleeve scans",
+          "accessed": "2026-10-19"
+        },
+        "coverage": "Partial compilation; one verified Lacay title, position and recording link withheld.",
+        "limitations": "Low-resolution rear scan; actual position, catalogue and exact audio identity not established. Festival first prize is not proof of track number 1.",
+        "source_credit_assertions": [
+          {
+            "name": "Fernando Escovar / Ricardo Escovar",
+            "role": "Authorship as transcribed by festival researcher"
+          },
+          {
+            "name": "Jorge Taveras",
+            "role": "Best arrangement award, Llegó el invierno"
+          },
+          {
+            "name": "Bienvenido Bustamante",
+            "role": "Orchestra direction"
+          },
+          {
+            "name": "Orquesta Montecarlo",
+            "role": "Orchestra"
+          }
+        ]
+      },
+      "updated_at": "2026-10-19T13:59:21.605659+00:00",
+      "year": 1972,
+      "slug": "jose-lacay-appearance-v-festival",
+      "views": 0,
+      "has_cover_image": true
+    },
+    {
+      "id": "3ee53910-90dc-4db0-afb4-c2bef125cce6",
+      "title": "3er Festival Dominicano de la Canción Popular",
+      "type": "compilation",
+      "release_year": 1970,
+      "label": "Amucaba",
+      "country": "Dominican Republic",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_group_id": null,
+      "release_artist_id": null,
+      "mbid": null,
+      "disambiguation": "Various artists; only José Lacay appearance catalogued in this scope",
+      "status": "Official",
+      "packaging": null,
+      "barcode": null,
+      "catalog_number": "LP No. 6",
+      "date": null,
+      "label_id": null,
+      "metadata": {
+        "format": "Vinyl, LP, Compilation, Stereo",
+        "source": {
+          "url": "https://www.discogs.com/release/17231509-Various-3er-Festival-Dominicano-De-La-Canci%C3%B3n-Popular",
+          "title": "Discogs edition 3er Festival Dominicano de la Canción Popular",
+          "accessed": "2026-10-19"
+        },
+        "coverage": "Partial compilation catalog: only Lacay appearance; other participants/program retained as source evidence, not imported or edited.",
+        "source_program": [
+          "Various – 3er Festival Dominicano De La Canción PopularMore imagesLabel:Amucaba – LP No. 6Format:Vinyl, LP, Compilation, StereoCountry:Dominican RepublicReleased:1970Genre:Latin, PopStyle:Vocal",
+          "TracklistA1Rhina Ramirez–PeregrinoA2Horacio Pichardo–Mira Qué MundoA3Fausto Rey–EclipseA4Bienvenido Mojica–No SeráA5José Lacay–La Vida Empieza HoyA6Anibal De Peña–La Historia Del AmorB1Maximo Valdez–Canción Para Los DosB2Hector Pablo Leyba–Llanto Y SangreB3Luis Alfredo Chain–Libre Para AmarB4Hermanos Luna–La Ronda Del AmorB5Raul Grisanty–Yo Lo HaréB6Rafael Sosa–No Hay Razón Duarte",
+          "",
+          "CreditsConductor – Bienvenido Bustamante, Pepe MolinaOrchestra – Orquesta Montecarlo (2)",
+          "",
+          "",
+          "",
+          "",
+          "ReviewsAdd Review"
+        ],
+        "source_year_precision": "year only; no invented January 1",
+        "edition_credit_assertions": [
+          {
+            "name": "Leonor Porcella de Brea",
+            "role": "Author name printed beside composition",
+            "scope": "Work; museum transcription"
+          },
+          {
+            "name": "Bienvenido Bustamante",
+            "role": "Arr.",
+            "scope": "This track; museum transcription"
+          }
+        ]
+      },
+      "updated_at": "2026-10-19T13:59:17.722605+00:00",
+      "year": 1970,
+      "slug": "jose-lacay-appearance-iii-festival",
+      "views": 0,
+      "has_cover_image": true
+    },
+    {
+      "id": "5a18b53e-1754-45fa-838a-7b5056b4a901",
+      "title": "III Festival del Caribe",
+      "type": "compilation",
+      "release_year": 1972,
+      "label": null,
+      "country": "Venezuela",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_group_id": null,
+      "release_artist_id": null,
+      "mbid": null,
+      "disambiguation": "Various artists; only José Lacay appearance catalogued in this scope",
+      "status": "Official",
+      "packaging": null,
+      "barcode": null,
+      "catalog_number": null,
+      "date": null,
+      "label_id": null,
+      "metadata": {
+        "format": "Vinyl, LP, Compilation, Promo",
+        "source": {
+          "url": "https://www.discogs.com/release/12367939-Various-III-Festival-Del-Caribe",
+          "title": "Discogs edition III Festival del Caribe",
+          "accessed": "2026-10-19"
+        },
+        "coverage": "Partial compilation catalog: only Lacay appearance; other participants/program retained as source evidence, not imported or edited.",
+        "source_program": [
+          "Various – III Festival Del CaribeMore imagesLabel:Not On Label – noneFormat:Vinyl, LP, Compilation, PromoCountry:VenezuelaReleased:1972Genre:Folk, World, & CountryStyle:",
+          "TracklistA1Héctor Murga–Te Llevo Dentro De MiA2Gloria Benavides–Esta Noche Te Alejas De MiA3Rhona–Anhelo Los Ojos De DiosA4Diego Verdaguer–Quiero Olvidar Tu NombreA5Ana Y Jaime–Este VientoA6Raúl Vásquez–A Unos Pasos PasajerosB1Humberto Nivi–El Es Un PoetaB2José Lacay–El Mundo En Tu CuerpoB3Duban–Adelante JuventudB4Raúl Vásquez–No Le Pongan Color A Mi GuitarraB5Héctor Murga–Yo Soy Quien Busca AmorB6Gloria Benavides–Digame Ahora",
+          "",
+          "",
+          "Notesgift from Ford dealership in the city of Coro, Venezuela",
+          "Barcode and Other IdentifiersMatrix / Runout: IIIo FESTIVAL CARIBE AMatrix / Runout: IIIo FESTIVAL CARIBE B",
+          "",
+          "",
+          "ReviewsAdd Review"
+        ],
+        "source_year_precision": "year only; no invented January 1",
+        "edition_credit_assertions": []
+      },
+      "updated_at": "2026-10-19T13:59:18.891746+00:00",
+      "year": 1972,
+      "slug": "jose-lacay-appearance-iii-caribe",
+      "views": 0,
+      "has_cover_image": true
+    },
+    {
+      "id": "cfde9fe8-125a-4052-8df3-e48f84e6e397",
+      "title": "Merengue",
+      "type": "compilation",
+      "release_year": null,
+      "label": "Panorama Travel",
+      "country": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_group_id": null,
+      "release_artist_id": null,
+      "mbid": null,
+      "disambiguation": "Various artists; only José Lacay appearance catalogued in this scope",
+      "status": "Official",
+      "packaging": null,
+      "barcode": null,
+      "catalog_number": "6/2000",
+      "date": null,
+      "label_id": null,
+      "metadata": {
+        "format": "CD",
+        "source": {
+          "url": "https://www.discogs.com/release/30439316-Various-Merengue",
+          "title": "Discogs edition Merengue",
+          "accessed": "2026-10-19"
+        },
+        "coverage": "Partial compilation catalog: only Lacay appearance; other participants/program retained as source evidence, not imported or edited.",
+        "source_program": [
+          "Various – MerengueLabel:Panorama Travel – 6/2000Format:CDCountry:Released:Genre:LatinStyle:Merengue",
+          "Tracklist1Milly Quezada, Joseito Mateo–Compadre Pedro Juan4:472Hector Acosta*–El Pambiche Lento4:483Expedy Pau, José Lacay–Amor Profundo2:174Elenita Santos–Salve De Las Auroras3:145Rhina Ramirez–Mandé4:206Rubby Perez–Dolorita3:447El Cieguito De Nagua–Juanita Morel4:258Johnny Ventura–Juan Gomero3:589Unknown Artist–Rubén3:0710Milagros Hernández–Ritmo da Salve3:0911Ileana Reynoso–Pajarito Cantador2:5512Sergio Vargas–La Empalizà3:2413Francis Santana–Cara Sucia4:0614Eddy Herrera–Heroina3:2515Miriam Cruz–Guayacanal3:4616Vinicio Franco–La Maricutana4:03",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "ReviewsAdd Review"
+        ],
+        "source_year_precision": "year only; no invented January 1",
+        "edition_credit_assertions": [
+          {
+            "name": "Expedy Pau",
+            "role": "Co-billed performer",
+            "scope": "Track; Discogs attribution, unresolved contributor identity"
+          }
+        ]
+      },
+      "updated_at": "2026-10-19T13:59:20.535645+00:00",
+      "year": null,
+      "slug": "jose-lacay-appearance-merengue",
+      "views": 0,
+      "has_cover_image": true
+    },
+    {
+      "id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "title": "Con Amor",
+      "type": "album",
+      "release_year": 2018,
+      "label": "Mundo Records",
+      "country": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_group_id": null,
+      "release_artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "mbid": null,
+      "disambiguation": "Digital edition; original vinyl chronology unverified",
+      "status": "Official",
+      "packaging": null,
+      "barcode": null,
+      "catalog_number": null,
+      "date": "2018-04-27",
+      "label_id": null,
+      "metadata": {
+        "format": "Digital",
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "coverage": "Complete provider program: 12 tracks; two second-album recording links intentionally unresolved.",
+        "apple_asserted_date": "1970-01-01T00:00:00Z",
+        "source_phonogram_notice": "℗ 1970 Mundo Records",
+        "additional_date_evidence": "Spotify/Amazon agree digital date 2018-04-27; Apple carries ℗1970",
+        "original_year_resolution": "Not established by January 1 provider metadata",
+        "original_artwork_catalog_number": null
+      },
+      "updated_at": "2026-10-19T13:59:12.239564+00:00",
+      "year": 2018,
+      "slug": "jose-lacay-con-amor-digital",
+      "views": 0,
+      "has_cover_image": true
+    },
+    {
+      "id": "e594e58e-eef2-4d92-ba19-5b7a592d690e",
+      "title": "II Festival de la Canción Dominicana (1969)",
+      "type": "compilation",
+      "release_year": 1969,
+      "label": "Amucaba",
+      "country": "Dominican Republic",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_group_id": null,
+      "release_artist_id": null,
+      "mbid": null,
+      "disambiguation": "Various artists; only José Lacay appearance catalogued in this scope",
+      "status": "Official",
+      "packaging": null,
+      "barcode": null,
+      "catalog_number": "LP No 4",
+      "date": null,
+      "label_id": null,
+      "metadata": {
+        "format": "Vinyl, LP, Compilation",
+        "source": {
+          "url": "https://www.discogs.com/release/17231275-Various-II-Festival-De-La-Cancion-Dominicana-1969",
+          "title": "Discogs edition II Festival de la Canción Dominicana (1969)",
+          "accessed": "2026-10-19"
+        },
+        "coverage": "Partial compilation catalog: only Lacay appearance; other participants/program retained as source evidence, not imported or edited.",
+        "source_program": [
+          "Various – II Festival De La Cancion Dominicana (1969)More imagesLabel:Amucaba – LP No 4Format:Vinyl, LP, CompilationCountry:Dominican RepublicReleased:1969Genre:Latin, PopStyle:Vocal",
+          "TracklistA1July Morales–Habrá Un Nuevo MundoA2Nini Caffaro–Por CaridadA3Fernando Casado–El Mundo Y El AmorA4Rhina Ramirez–Cuatro TemasA5Cecilia García–Dime SeñorA6Anibal De Peña–EnriquilloB1José Lacay–Después De HablarB2Juan Mansfield–YoB3Miguelina Davis–SolaB4Angelita Carrasco*–Luz Y VidaB5H. Pablo Leyba*–Siempre Hay Un DolorB6Nelson Nuñez–El Mundo Joven",
+          "",
+          "CreditsConductor – Bienvenido BustamanteOrchestra – Orquesta Montecarlo (2)",
+          "",
+          "",
+          "",
+          "",
+          "ReviewsAdd Review"
+        ],
+        "source_year_precision": "year only; no invented January 1",
+        "edition_credit_assertions": [
+          {
+            "name": "Bienvenido Bustamante",
+            "role": "Conductor",
+            "scope": "Release as stated by Discogs"
+          },
+          {
+            "name": "Orquesta Montecarlo",
+            "role": "Orchestra",
+            "scope": "Release as stated by Discogs"
+          }
+        ]
+      },
+      "updated_at": "2026-10-19T13:59:15.046073+00:00",
+      "year": 1969,
+      "slug": "jose-lacay-appearance-ii-festival",
+      "views": 0,
+      "has_cover_image": true
+    },
+    {
+      "id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "title": "Ese...es",
+      "type": "album",
+      "release_year": null,
+      "label": "Remo Records",
+      "country": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_group_id": null,
+      "release_artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "mbid": null,
+      "disambiguation": "Digital edition; original vinyl chronology unverified",
+      "status": "Official",
+      "packaging": null,
+      "barcode": null,
+      "catalog_number": null,
+      "date": null,
+      "label_id": null,
+      "metadata": {
+        "format": "Digital",
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "coverage": "Complete provider program: 12 tracks; two second-album recording links intentionally unresolved.",
+        "apple_asserted_date": "1973-01-01T00:00:00Z",
+        "source_phonogram_notice": "℗ 1973 Remo Records",
+        "additional_date_evidence": "Apple carries ℗1973; 2011 elCaribe interview reports a similarly titled 1968 LP; edition equivalence unresolved",
+        "original_year_resolution": "Not established by January 1 provider metadata",
+        "original_artwork_catalog_number": "LPR 1564"
+      },
+      "updated_at": "2026-10-19T13:59:13.822831+00:00",
+      "year": null,
+      "slug": "jose-lacay-ese-es-digital",
+      "views": 0,
+      "has_cover_image": true
+    }
+  ],
+  "recordings": [
+    {
+      "id": "0864bd73-6583-4194-8963-dbbefdd0d76d",
+      "title": "La Sombra De Otro",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 169575,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/la-sombra-de-otro/1526828403?i=1526828618&uo=4",
+            "title": "Apple Music track 1526828618",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "No credits displayed",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "0a451e65-97d9-42be-9262-8f3c84a7054e",
+      "title": "El mundo en tu cuerpo",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": null,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://www.discogs.com/release/12367939-Various-III-Festival-Del-Caribe",
+            "title": "Discogs edition III Festival del Caribe",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "146b9fb2-0e63-47eb-aa5b-6ef797391a32",
+      "title": "Ese",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 132107,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/ese/1368239243?i=1368240171&uo=4",
+            "title": "Apple Music track 1368240171",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nUnknown Composer\nSongwriter\n",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "1eb3aef8-8b24-4cf0-a06e-b2c32c86c9c4",
+      "title": "América, América",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 165027,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/am%C3%A9rica-am%C3%A9rica/1368239243?i=1368239252&uo=4",
+            "title": "Apple Music track 1368239252",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nJosé Luis Armenteros\nSongwriter\nPablo Herrero\nSongwriter\nC. Gaudette\nSongwriter\n",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "275ea529-f544-4fa7-88c3-4d40f8e036f7",
+      "title": "Quererte Así",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 217002,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/quererte-as%C3%AD/1526828403?i=1526828616&uo=4",
+            "title": "Apple Music track 1526828616",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "No credits displayed",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "28e75b63-d270-435f-9efd-e533d0d905e3",
+      "title": "Ya",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 136453,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/ya/1368239243?i=1368239257&uo=4",
+            "title": "Apple Music track 1368239257",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nLee Van Cleef Mondesir\nSongwriter\nMarcus Pierre\nSongwriter\n",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "2f551a47-3327-4167-bd78-ebf331762614",
+      "title": "Yo No Sé Soñar",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 161948,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/yo-no-s%C3%A9-son-ar/1526828403?i=1526828617&uo=4",
+            "title": "Apple Music track 1526828617",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "No credits displayed",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "33e06ff0-150e-4281-b260-e104fb40e526",
+      "title": "Háblame De Amor",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 194351,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/h%C3%A1blame-de-amor/1526828403?i=1526828619&uo=4",
+            "title": "Apple Music track 1526828619",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "No credits displayed",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "34c586b8-538f-4066-9a2a-b6ad9ef31bcd",
+      "title": "Después de hablar",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": null,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://www.discogs.com/release/17231275-Various-II-Festival-De-La-Cancion-Dominicana-1969",
+            "title": "Discogs edition II Festival de la Canción Dominicana (1969)",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "name": "Bienvenido Bustamante",
+            "role": "Conductor",
+            "scope": "Release as stated by Discogs"
+          },
+          {
+            "name": "Orquesta Montecarlo",
+            "role": "Orchestra",
+            "scope": "Release as stated by Discogs"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "40a190f4-91f8-4420-b245-24fd411407eb",
+      "title": "Soy",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 145107,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/soy/1368239243?i=1368240022&uo=4",
+            "title": "Apple Music track 1368240022",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nWilly Chirino\nSongwriter, Composer, Lyrics\nNicolas Reyes\nComposer, Songwriter\nTonino Baliardo\nComposer, Songwriter\nChico Bouchikhi\nSongwriter, Composer\n",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "49a05387-0486-433a-8e8b-8823702b7908",
+      "title": "Y Volveré",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 207168,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/y-volver%C3%A9/1526828403?i=1526828625&uo=4",
+            "title": "Apple Music track 1526828625",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "No credits displayed",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "51acbf08-1a7c-4415-b4cb-7fc923bcfe95",
+      "title": "Motivo",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 165373,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/motivo/1368239243?i=1368240028&uo=4",
+            "title": "Apple Music track 1368240028",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nPedro Ramirez\nWriter\nItalo Pizzolante Balbi\nSongwriter\n",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "5d0b84a9-ddac-4d20-8f2e-d01b78b9caaf",
+      "title": "Estas Jugando Conmigo",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 180640,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/estas-jugando-conmigo/1368239243?i=1368239256&uo=4",
+            "title": "Apple Music track 1368239256",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nConcha Valdés Miranda\nSongwriter\n",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "6488e927-bbdd-4381-91c9-53594260a641",
+      "title": "Hechizo De Amor",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 172478,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/hechizo-de-amor/1526828403?i=1526828626&uo=4",
+            "title": "Apple Music track 1526828626",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "No credits displayed",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "71b3a9cb-ddf3-4e0b-bd42-5af40297fafb",
+      "title": "La vida empieza hoy",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": null,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://www.discogs.com/release/17231509-Various-3er-Festival-Dominicano-De-La-Canci%C3%B3n-Popular",
+            "title": "Discogs edition 3er Festival Dominicano de la Canción Popular",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "name": "Leonor Porcella de Brea",
+            "role": "Author name printed beside composition",
+            "scope": "Work; museum transcription"
+          },
+          {
+            "name": "Bienvenido Bustamante",
+            "role": "Arr.",
+            "scope": "This track; museum transcription"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "821f8588-0ebc-4af2-af64-d70391cbee4d",
+      "title": "Te Enseñare A Vivir",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 238109,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/te-ensen-are-a-vivir/1526828403?i=1526828624&uo=4",
+            "title": "Apple Music track 1526828624",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "No credits displayed",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "8ed75082-6ca9-4405-83a3-3bd6d2f94243",
+      "title": "Llegó el Invierno",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 211680,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/lleg%C3%B3-el-invierno/1368239243?i=1368240176&uo=4",
+            "title": "Apple Music track 1368240176",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nRicardo Escobar\nSongwriter\nFernando Escobar\nSongwriter\n",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "91799d7a-1f13-4142-a8d7-359494e5d736",
+      "title": "Tiene Que Ser",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 152973,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/tiene-que-ser/1526828403?i=1526828623&uo=4",
+            "title": "Apple Music track 1526828623",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "No credits displayed",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "954e72a4-9b36-4dcf-add4-4504be8a7c6b",
+      "title": "Ahora Que Soy Libre",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 170051,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/ahora-que-soy-libre/1526828403?i=1526828620&uo=4",
+            "title": "Apple Music track 1526828620",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "No credits displayed",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "a048199a-95a5-47aa-a498-085eda937d58",
+      "title": "Amor profundo",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 137000,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://www.discogs.com/release/30439316-Various-Merengue",
+            "title": "Discogs edition Merengue",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "name": "Expedy Pau",
+            "role": "Co-billed performer",
+            "scope": "Track; Discogs attribution, unresolved contributor identity"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "a555fce8-3a62-45f5-a710-3ef27fe69200",
+      "title": "Ahora Que",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 173880,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/ahora-que/1368239243?i=1368240179&uo=4",
+            "title": "Apple Music track 1368240179",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "No credits displayed",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "ac0e71be-57b6-4191-8a6f-9a49e87709c0",
+      "title": "Con la Luna de Testigo",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 169427,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/con-la-luna-de-testigo/1368239243?i=1368239259&uo=4",
+            "title": "Apple Music track 1368239259",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nUnknown Composer\nSongwriter\n",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "aeca8569-e71d-4c02-8199-4ab2e65f7210",
+      "title": "Cuidado",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 155124,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/cuidado/1526828403?i=1526828622&uo=4",
+            "title": "Apple Music track 1526828622",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "No credits displayed",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "bd26ddb3-3768-4fdb-885c-140bfd721594",
+      "title": "Como me besabas tú",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": null,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://www.youtube.com/watch?v=XcOqMYPvznE",
+            "title": "Fundación Refidomsa, official video description, 13 August 2020",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "limitations": "No guessed track number, original recording date or separate disc-as-release identity. Joint artist billing retained; Luchy profile not created or silently omitted from source evidence.",
+        "literal_credits": [
+          {
+            "name": "Luchy Vicioso & José Lacay",
+            "role": "Intérpretes"
+          },
+          {
+            "name": "Bienvenido Bustamante",
+            "role": "Arreglo Y Dirección Orquestal"
+          },
+          {
+            "name": "José Dolores Cerón (1897–1969)",
+            "role": "Autor"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping",
+        "collection_context": "Vol. 2 - Disco 5, Colección Un Siglo de Música Dominicana"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "cf6a987c-f40e-4a30-8b5e-97c960d1188d",
+      "title": "A Donde Va Nuestro Amor",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 212707,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/a-donde-va-nuestro-amor/1368239243?i=1368239260&uo=4",
+            "title": "Apple Music track 1368239260",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nEduardo Magallanes Calva\nSongwriter, Composer\nMario Molina Montes\nSongwriter\n",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "eb55e877-2a56-4c5f-889c-bfd9812706b3",
+      "title": "Marion",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 257733,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/marion/1368239243?i=1368240014&uo=4",
+            "title": "Apple Music track 1368240014",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nUnknown Composer\nSongwriter\n",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    },
+    {
+      "id": "f3079d49-4106-4bb4-8350-8bfb28278a77",
+      "title": "La Copia",
+      "work_id": null,
+      "youtube_id": null,
+      "duration": 175640,
+      "metadata": {
+        "sources": [
+          {
+            "url": "https://music.apple.com/us/album/la-copia/1368239243?i=1368240170&uo=4",
+            "title": "Apple Music track 1368240170",
+            "accessed": "2026-10-19"
+          }
+        ],
+        "literal_credits": [
+          {
+            "raw": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nLolita De La Colina\nSongwriter\n",
+            "status": "source assertion; authorship not canonically accepted",
+            "provider": "Apple Music"
+          }
+        ],
+        "credit_resolution": "Source wording retained; no automatic composition/contributor identity mapping"
+      },
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "release_id": null,
+      "recording_year": null,
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "views": 0,
+      "mbid": null,
+      "disambiguation": null,
+      "isrcs": [],
+      "updated_at": "2026-10-19T13:58:59.21112+00:00",
+      "genre_id": null,
+      "subgenre_id": null,
+      "ai_confidence": null,
+      "ai_reason": null,
+      "classified_at": null,
+      "recording_context": "secular",
+      "slug": null
+    }
+  ],
+  "tracks": [
+    {
+      "id": "00221293-7445-475c-8df1-d7ba53d05ae5",
+      "release_id": "3ee53910-90dc-4db0-afb4-c2bef125cce6",
+      "recording_id": "71b3a9cb-ddf3-4e0b-bd42-5af40297fafb",
+      "track_number": 5,
+      "disc_number": 1,
+      "title_override": "La vida empieza hoy",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 5,
+      "length": null,
+      "metadata": {
+        "source": {
+          "url": "https://www.discogs.com/release/17231509-Various-3er-Festival-Dominicano-De-La-Canci%C3%B3n-Popular",
+          "title": "Discogs edition 3er Festival Dominicano de la Canción Popular",
+          "accessed": "2026-10-19"
+        },
+        "printed_position": "A5",
+        "co_billed_performer": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "019e748d-4371-4c90-88f7-3d329fd027d3",
+      "release_id": "cfde9fe8-125a-4052-8df3-e48f84e6e397",
+      "recording_id": "a048199a-95a5-47aa-a498-085eda937d58",
+      "track_number": 3,
+      "disc_number": 1,
+      "title_override": "Amor profundo",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 3,
+      "length": 137000,
+      "metadata": {
+        "source": {
+          "url": "https://www.discogs.com/release/30439316-Various-Merengue",
+          "title": "Discogs edition Merengue",
+          "accessed": "2026-10-19"
+        },
+        "printed_position": null,
+        "co_billed_performer": "Expedy Pau"
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "095ec100-d2f4-4743-8ad4-fff794dee043",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "recording_id": "eb55e877-2a56-4c5f-889c-bfd9812706b3",
+      "track_number": 6,
+      "disc_number": 1,
+      "title_override": "Marion",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 6,
+      "length": 257733,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1368240014,
+        "source_credits": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nUnknown Composer\nSongwriter\n",
+        "source_track_url": "https://music.apple.com/us/album/marion/1368239243?i=1368240014&uo=4",
+        "source_duration_ms": 257733,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "0ecc0afc-8247-45b1-8faf-6d00b4f36e57",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "recording_id": "2f551a47-3327-4167-bd78-ebf331762614",
+      "track_number": 4,
+      "disc_number": 1,
+      "title_override": "Yo No Sé Soñar",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 4,
+      "length": 161948,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1526828617,
+        "source_credits": "No credits displayed",
+        "source_track_url": "https://music.apple.com/us/album/yo-no-s%C3%A9-son-ar/1526828403?i=1526828617&uo=4",
+        "source_duration_ms": 161948,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "29e20b71-3381-45da-82b6-bc8f83284e52",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "recording_id": "275ea529-f544-4fa7-88c3-4d40f8e036f7",
+      "track_number": 3,
+      "disc_number": 1,
+      "title_override": "Quererte Así",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 3,
+      "length": 217002,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1526828616,
+        "source_credits": "No credits displayed",
+        "source_track_url": "https://music.apple.com/us/album/quererte-as%C3%AD/1526828403?i=1526828616&uo=4",
+        "source_duration_ms": 217002,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "2c759eaa-4728-418d-b8a3-63c63cf6d0f9",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "recording_id": "33e06ff0-150e-4281-b260-e104fb40e526",
+      "track_number": 6,
+      "disc_number": 1,
+      "title_override": "Háblame De Amor",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 6,
+      "length": 194351,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1526828619,
+        "source_credits": "No credits displayed",
+        "source_track_url": "https://music.apple.com/us/album/h%C3%A1blame-de-amor/1526828403?i=1526828619&uo=4",
+        "source_duration_ms": 194351,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "364234c0-861e-4dd9-b25d-4cf5401378f7",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "recording_id": "954e72a4-9b36-4dcf-add4-4504be8a7c6b",
+      "track_number": 7,
+      "disc_number": 1,
+      "title_override": "Ahora Que Soy Libre",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 7,
+      "length": 170051,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1526828620,
+        "source_credits": "No credits displayed",
+        "source_track_url": "https://music.apple.com/us/album/ahora-que-soy-libre/1526828403?i=1526828620&uo=4",
+        "source_duration_ms": 170051,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "4a195d4a-3715-4a60-b8e7-1a2ea04b7925",
+      "release_id": "e594e58e-eef2-4d92-ba19-5b7a592d690e",
+      "recording_id": "34c586b8-538f-4066-9a2a-b6ad9ef31bcd",
+      "track_number": 7,
+      "disc_number": 1,
+      "title_override": "Después de hablar",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 7,
+      "length": null,
+      "metadata": {
+        "source": {
+          "url": "https://www.discogs.com/release/17231275-Various-II-Festival-De-La-Cancion-Dominicana-1969",
+          "title": "Discogs edition II Festival de la Canción Dominicana (1969)",
+          "accessed": "2026-10-19"
+        },
+        "printed_position": "B1",
+        "co_billed_performer": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "5b63d050-28df-417d-bfc1-e4e9714133e0",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "recording_id": "0864bd73-6583-4194-8963-dbbefdd0d76d",
+      "track_number": 5,
+      "disc_number": 1,
+      "title_override": "La Sombra De Otro",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 5,
+      "length": 169575,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1526828618,
+        "source_credits": "No credits displayed",
+        "source_track_url": "https://music.apple.com/us/album/la-sombra-de-otro/1526828403?i=1526828618&uo=4",
+        "source_duration_ms": 169575,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "5c4d2d56-a5a4-4e3e-8a63-4da92a97f972",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "recording_id": "5d0b84a9-ddac-4d20-8f2e-d01b78b9caaf",
+      "track_number": 2,
+      "disc_number": 1,
+      "title_override": "Estas Jugando Conmigo",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 2,
+      "length": 180640,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1368239256,
+        "source_credits": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nConcha Valdés Miranda\nSongwriter\n",
+        "source_track_url": "https://music.apple.com/us/album/estas-jugando-conmigo/1368239243?i=1368239256&uo=4",
+        "source_duration_ms": 180640,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "5f797402-b409-48f2-a3a2-18a0f230efc6",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "recording_id": "ac0e71be-57b6-4191-8a6f-9a49e87709c0",
+      "track_number": 4,
+      "disc_number": 1,
+      "title_override": "Con la Luna de Testigo",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 4,
+      "length": 169427,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1368239259,
+        "source_credits": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nUnknown Composer\nSongwriter\n",
+        "source_track_url": "https://music.apple.com/us/album/con-la-luna-de-testigo/1368239243?i=1368239259&uo=4",
+        "source_duration_ms": 169427,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "65151c45-5e45-40ba-b887-915374e9ec03",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "recording_id": "146b9fb2-0e63-47eb-aa5b-6ef797391a32",
+      "track_number": 10,
+      "disc_number": 1,
+      "title_override": "Ese",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 10,
+      "length": 132107,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1368240171,
+        "source_credits": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nUnknown Composer\nSongwriter\n",
+        "source_track_url": "https://music.apple.com/us/album/ese/1368239243?i=1368240171&uo=4",
+        "source_duration_ms": 132107,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "6589538c-10e4-4276-a89c-c1832b573e05",
+      "release_id": "5a18b53e-1754-45fa-838a-7b5056b4a901",
+      "recording_id": "0a451e65-97d9-42be-9262-8f3c84a7054e",
+      "track_number": 8,
+      "disc_number": 1,
+      "title_override": "El mundo en tu cuerpo",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 8,
+      "length": null,
+      "metadata": {
+        "source": {
+          "url": "https://www.discogs.com/release/12367939-Various-III-Festival-Del-Caribe",
+          "title": "Discogs edition III Festival del Caribe",
+          "accessed": "2026-10-19"
+        },
+        "printed_position": "B2",
+        "co_billed_performer": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "86603bec-c699-4c88-abd9-19ea12a48067",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "recording_id": "f3079d49-4106-4bb4-8350-8bfb28278a77",
+      "track_number": 9,
+      "disc_number": 1,
+      "title_override": "La Copia",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 9,
+      "length": 175640,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1368240170,
+        "source_credits": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nLolita De La Colina\nSongwriter\n",
+        "source_track_url": "https://music.apple.com/us/album/la-copia/1368239243?i=1368240170&uo=4",
+        "source_duration_ms": 175640,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "885ac944-5ab4-4b3a-937f-8e5e8e132dc2",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "recording_id": "a555fce8-3a62-45f5-a710-3ef27fe69200",
+      "track_number": 12,
+      "disc_number": 1,
+      "title_override": "Ahora Que",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 12,
+      "length": 173880,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1368240179,
+        "source_credits": "No credits displayed",
+        "source_track_url": "https://music.apple.com/us/album/ahora-que/1368239243?i=1368240179&uo=4",
+        "source_duration_ms": 173880,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "995046a4-1245-4e16-9d8e-0d6ddc57d1af",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "recording_id": "40a190f4-91f8-4420-b245-24fd411407eb",
+      "track_number": 7,
+      "disc_number": 1,
+      "title_override": "Soy",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 7,
+      "length": 145107,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1368240022,
+        "source_credits": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nWilly Chirino\nSongwriter, Composer, Lyrics\nNicolas Reyes\nComposer, Songwriter\nTonino Baliardo\nComposer, Songwriter\nChico Bouchikhi\nSongwriter, Composer\n",
+        "source_track_url": "https://music.apple.com/us/album/soy/1368239243?i=1368240022&uo=4",
+        "source_duration_ms": 145107,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "9a5ab606-6e6e-4bcf-a6a3-dbbf84631da3",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "recording_id": null,
+      "track_number": 1,
+      "disc_number": 1,
+      "title_override": "Marion",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 1,
+      "length": 250381,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1526828404,
+        "source_credits": "No credits displayed",
+        "source_track_url": "https://music.apple.com/us/album/marion/1526828403?i=1526828404&uo=4",
+        "source_duration_ms": 250381,
+        "recording_comparison": "Potential same performance as Con Amor; preview energy comparison inconclusive. Retain appearance without duplicate or forced merge."
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "aa4e6afb-4c28-40d3-b8b6-d0f2c0cc1c9a",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "recording_id": "1eb3aef8-8b24-4cf0-a06e-b2c32c86c9c4",
+      "track_number": 1,
+      "disc_number": 1,
+      "title_override": "América, América",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 1,
+      "length": 165027,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1368239252,
+        "source_credits": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nJosé Luis Armenteros\nSongwriter\nPablo Herrero\nSongwriter\nC. Gaudette\nSongwriter\n",
+        "source_track_url": "https://music.apple.com/us/album/am%C3%A9rica-am%C3%A9rica/1368239243?i=1368239252&uo=4",
+        "source_duration_ms": 165027,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "ba258744-a5a0-4382-841f-4a361b4b0327",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "recording_id": "821f8588-0ebc-4af2-af64-d70391cbee4d",
+      "track_number": 10,
+      "disc_number": 1,
+      "title_override": "Te Enseñare A Vivir",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 10,
+      "length": 238109,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1526828624,
+        "source_credits": "No credits displayed",
+        "source_track_url": "https://music.apple.com/us/album/te-ensen-are-a-vivir/1526828403?i=1526828624&uo=4",
+        "source_duration_ms": 238109,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "bdc897e9-4ecb-47a8-89b3-a36be442e792",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "recording_id": null,
+      "track_number": 2,
+      "disc_number": 1,
+      "title_override": "Ese",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 2,
+      "length": 124552,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1526828405,
+        "source_credits": "Performing Artists\nJosé Lacay\nPerformer\nComposition & Lyrics\nUnknown Composer\nSongwriter\n",
+        "source_track_url": "https://music.apple.com/us/album/ese/1526828403?i=1526828405&uo=4",
+        "source_duration_ms": 124552,
+        "recording_comparison": "Potential same performance as Con Amor; preview energy comparison inconclusive. Retain appearance without duplicate or forced merge."
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "e0d64c46-6cc2-45d5-a8b4-3b30a099a5ea",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "recording_id": "cf6a987c-f40e-4a30-8b5e-97c960d1188d",
+      "track_number": 5,
+      "disc_number": 1,
+      "title_override": "A Donde Va Nuestro Amor",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 5,
+      "length": 212707,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1368239260,
+        "source_credits": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nEduardo Magallanes Calva\nSongwriter, Composer\nMario Molina Montes\nSongwriter\n",
+        "source_track_url": "https://music.apple.com/us/album/a-donde-va-nuestro-amor/1368239243?i=1368239260&uo=4",
+        "source_duration_ms": 212707,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "e2284306-088a-44d7-bd89-ffac8f61bd99",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "recording_id": "49a05387-0486-433a-8e8b-8823702b7908",
+      "track_number": 11,
+      "disc_number": 1,
+      "title_override": "Y Volveré",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 11,
+      "length": 207168,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1526828625,
+        "source_credits": "No credits displayed",
+        "source_track_url": "https://music.apple.com/us/album/y-volver%C3%A9/1526828403?i=1526828625&uo=4",
+        "source_duration_ms": 207168,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "e4754d20-466d-41e3-93e4-20422c6ee40f",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "recording_id": "51acbf08-1a7c-4415-b4cb-7fc923bcfe95",
+      "track_number": 8,
+      "disc_number": 1,
+      "title_override": "Motivo",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 8,
+      "length": 165373,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1368240028,
+        "source_credits": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nPedro Ramirez\nWriter\nItalo Pizzolante Balbi\nSongwriter\n",
+        "source_track_url": "https://music.apple.com/us/album/motivo/1368239243?i=1368240028&uo=4",
+        "source_duration_ms": 165373,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "e6c301b8-0042-4dc8-8a54-929cbc1960b5",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "recording_id": "6488e927-bbdd-4381-91c9-53594260a641",
+      "track_number": 12,
+      "disc_number": 1,
+      "title_override": "Hechizo De Amor",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 12,
+      "length": 172478,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1526828626,
+        "source_credits": "No credits displayed",
+        "source_track_url": "https://music.apple.com/us/album/hechizo-de-amor/1526828403?i=1526828626&uo=4",
+        "source_duration_ms": 172478,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "e76717f3-9b34-4f65-b949-5de7673da011",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "recording_id": "91799d7a-1f13-4142-a8d7-359494e5d736",
+      "track_number": 9,
+      "disc_number": 1,
+      "title_override": "Tiene Que Ser",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 9,
+      "length": 152973,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1526828623,
+        "source_credits": "No credits displayed",
+        "source_track_url": "https://music.apple.com/us/album/tiene-que-ser/1526828403?i=1526828623&uo=4",
+        "source_duration_ms": 152973,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "f19b244f-3b6d-42f5-8733-b7802e323990",
+      "release_id": "154b7e24-7e77-4f2d-95a7-106ee4d99ca0",
+      "recording_id": null,
+      "track_number": null,
+      "disc_number": 1,
+      "title_override": "Llegó el invierno",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": null,
+      "length": null,
+      "metadata": {
+        "source": {
+          "url": "https://festivalescancionpopular.blogspot.com/2011/10/1972-5to-festival-de-la-cancion.html",
+          "title": "Evangelina Maffei, V Festival 1972, original sleeve scans",
+          "accessed": "2026-10-19"
+        },
+        "literal_credits": [
+          {
+            "name": "Fernando Escovar / Ricardo Escovar",
+            "role": "Authorship as transcribed by festival researcher"
+          },
+          {
+            "name": "Jorge Taveras",
+            "role": "Best arrangement award, Llegó el invierno"
+          },
+          {
+            "name": "Bienvenido Bustamante",
+            "role": "Orchestra direction"
+          },
+          {
+            "name": "Orquesta Montecarlo",
+            "role": "Orchestra"
+          }
+        ],
+        "recording_identity": "Not automatically equated with the Con Amor recording"
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "f3593008-9580-4e8e-a2af-890f5797909a",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "recording_id": "28e75b63-d270-435f-9efd-e533d0d905e3",
+      "track_number": 3,
+      "disc_number": 1,
+      "title_override": "Ya",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 3,
+      "length": 136453,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1368239257,
+        "source_credits": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nLee Van Cleef Mondesir\nSongwriter\nMarcus Pierre\nSongwriter\n",
+        "source_track_url": "https://music.apple.com/us/album/ya/1368239243?i=1368239257&uo=4",
+        "source_duration_ms": 136453,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "f720965e-aefa-4f40-a246-d996c38bec0f",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "recording_id": "8ed75082-6ca9-4405-83a3-3bd6d2f94243",
+      "track_number": 11,
+      "disc_number": 1,
+      "title_override": "Llegó el Invierno",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 11,
+      "length": 211680,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/con-amor/1368239243?uo=4",
+          "title": "Apple Music Con Amor; public iTunes lookup snapshot 1368239243",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1368240176,
+        "source_credits": "Performing Artists\nJosé Lacay\nLead Vocals\nComposition & Lyrics\nRicardo Escobar\nSongwriter\nFernando Escobar\nSongwriter\n",
+        "source_track_url": "https://music.apple.com/us/album/lleg%C3%B3-el-invierno/1368239243?i=1368240176&uo=4",
+        "source_duration_ms": 211680,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "f75a43bc-e6d6-4707-bb55-22f707a64943",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "recording_id": "aeca8569-e71d-4c02-8199-4ab2e65f7210",
+      "track_number": 8,
+      "disc_number": 1,
+      "title_override": "Cuidado",
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "mbid": null,
+      "medium_id": null,
+      "position": 8,
+      "length": 155124,
+      "metadata": {
+        "source": {
+          "url": "https://music.apple.com/us/album/ese-es/1526828403?uo=4",
+          "title": "Apple Music Ese...es; public iTunes lookup snapshot 1526828403",
+          "accessed": "2026-10-19"
+        },
+        "apple_track_id": 1526828622,
+        "source_credits": "No credits displayed",
+        "source_track_url": "https://music.apple.com/us/album/cuidado/1526828403?i=1526828622&uo=4",
+        "source_duration_ms": 155124,
+        "recording_comparison": null
+      },
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    }
+  ],
+  "credits": [
+    {
+      "id": "5e7fcb67-8eb4-46a2-8b8e-ac43b637d55d",
+      "recording_id": "aeca8569-e71d-4c02-8199-4ab2e65f7210",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "28404279-7578-43ad-8373-c087b5e0389e",
+      "recording_id": "91799d7a-1f13-4142-a8d7-359494e5d736",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "49639245-5d1b-4042-b7c8-27fb46c51aeb",
+      "recording_id": "821f8588-0ebc-4af2-af64-d70391cbee4d",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "4c4d0894-b83c-42b0-a38f-b3764b787969",
+      "recording_id": "a555fce8-3a62-45f5-a710-3ef27fe69200",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "6e72763e-5454-43ef-804f-0af5a8b123d4",
+      "recording_id": "275ea529-f544-4fa7-88c3-4d40f8e036f7",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "cf993e85-8d18-4546-9915-f8f81638c8ae",
+      "recording_id": "2f551a47-3327-4167-bd78-ebf331762614",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "a3bd4186-9d79-4886-a7a8-8e97ae6898a7",
+      "recording_id": "0864bd73-6583-4194-8963-dbbefdd0d76d",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "61730901-3840-44c4-b0d9-7c37ed2d8ef5",
+      "recording_id": "33e06ff0-150e-4281-b260-e104fb40e526",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "96f02690-c6a4-4939-9edf-cfde25b7b71f",
+      "recording_id": "954e72a4-9b36-4dcf-add4-4504be8a7c6b",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "862885c9-72d3-43ce-97ca-5eb8320b3750",
+      "recording_id": "1eb3aef8-8b24-4cf0-a06e-b2c32c86c9c4",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "1d8cf453-08b7-482a-bbaa-03f429a8ee95",
+      "recording_id": "5d0b84a9-ddac-4d20-8f2e-d01b78b9caaf",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "47ae4308-f235-4d6a-a3ea-eeb23d2ab240",
+      "recording_id": "28e75b63-d270-435f-9efd-e533d0d905e3",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "f34770be-5ee6-40b9-886d-32c540fbd0af",
+      "recording_id": "ac0e71be-57b6-4191-8a6f-9a49e87709c0",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "d6f0bef4-b173-4fc4-ba1a-51d254579963",
+      "recording_id": "cf6a987c-f40e-4a30-8b5e-97c960d1188d",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "862d5f64-1eff-4d1f-9b18-277f8e37735b",
+      "recording_id": "eb55e877-2a56-4c5f-889c-bfd9812706b3",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "71c9d0cf-bd2b-4c07-a343-ba75897e5714",
+      "recording_id": "40a190f4-91f8-4420-b245-24fd411407eb",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "f333374f-8e60-4cf5-8639-353437686890",
+      "recording_id": "51acbf08-1a7c-4415-b4cb-7fc923bcfe95",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "4ee1a665-a32a-4e41-838f-8f4ec49c48c8",
+      "recording_id": "f3079d49-4106-4bb4-8350-8bfb28278a77",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "06427bbf-850a-4e01-a200-f944c8f306c4",
+      "recording_id": "146b9fb2-0e63-47eb-aa5b-6ef797391a32",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "f7011099-061d-403f-ba0f-d180f6455795",
+      "recording_id": "8ed75082-6ca9-4405-83a3-3bd6d2f94243",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "eec817da-1844-450a-be09-7a64e205278b",
+      "recording_id": "49a05387-0486-433a-8e8b-8823702b7908",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "2e210bca-f364-4704-a7d7-dc26de92fda6",
+      "recording_id": "6488e927-bbdd-4381-91c9-53594260a641",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "6700cfb5-2cb7-4e25-a4ed-41522f3c04cf",
+      "recording_id": "34c586b8-538f-4066-9a2a-b6ad9ef31bcd",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "f983e659-b21b-4d0a-8494-7c93172776fb",
+      "recording_id": "71b3a9cb-ddf3-4e0b-bd42-5af40297fafb",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "15f58a48-7e50-40e1-ae7d-5b1007bd5b55",
+      "recording_id": "0a451e65-97d9-42be-9262-8f3c84a7054e",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "b44537a9-aa15-4d31-b58e-2438ebb18ccc",
+      "recording_id": "a048199a-95a5-47aa-a498-085eda937d58",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    },
+    {
+      "id": "115361ce-c287-4345-8195-1af2f6db9dfc",
+      "recording_id": "bd26ddb3-3768-4fdb-885c-140bfd721594",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "lead_performer",
+      "position": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "metadata": {},
+      "credited_as": "José Lacay",
+      "display_order": 0,
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "external_contributor_id": null
+    }
+  ],
+  "release_artists": [
+    {
+      "id": "ac09cd15-fd4b-47fc-af4a-9a7dcb8c570d",
+      "release_id": "154b7e24-7e77-4f2d-95a7-106ee4d99ca0",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "compilation",
+      "credited_as": "José Lacay",
+      "display_order": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "dc0c1b1b-a4bf-4880-8adc-b18967bdf088",
+      "release_id": "3ee53910-90dc-4db0-afb4-c2bef125cce6",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "compilation",
+      "credited_as": "José Lacay",
+      "display_order": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "b69ba893-d6e2-4cb5-8e73-7ce46328f690",
+      "release_id": "5a18b53e-1754-45fa-838a-7b5056b4a901",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "compilation",
+      "credited_as": "José Lacay",
+      "display_order": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "a7c61869-26ec-46ad-a151-9605b1adf286",
+      "release_id": "cfde9fe8-125a-4052-8df3-e48f84e6e397",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "compilation",
+      "credited_as": "José Lacay",
+      "display_order": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "9a10f737-352b-4567-97fd-37004da0dc18",
+      "release_id": "d728e061-bb32-499c-a614-7b2b73f81e6b",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "primary",
+      "credited_as": "José Lacay",
+      "display_order": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "9c4636ec-7398-4285-9f18-63dbbd2dd36c",
+      "release_id": "e594e58e-eef2-4d92-ba19-5b7a592d690e",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "compilation",
+      "credited_as": "José Lacay",
+      "display_order": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    },
+    {
+      "id": "44275e79-e92d-40f2-a181-dc350262e5c8",
+      "release_id": "eb2b9647-7cfe-4c26-aea1-4736d5e8c65e",
+      "artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "role": "primary",
+      "credited_as": "José Lacay",
+      "display_order": null,
+      "created_at": "2026-10-19T13:58:59.21112+00:00",
+      "updated_at": "2026-10-19T13:58:59.21112+00:00"
+    }
+  ]
+}

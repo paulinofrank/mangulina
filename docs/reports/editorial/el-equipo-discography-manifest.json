@@ -1,0 +1,1231 @@
+{
+  "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+  "artist_name": "El Equipo (de Dioni Fernández)",
+  "director_artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+  "director_name": "Dioni Fernández",
+  "summary": {
+    "total_releases": 12,
+    "total_tracks": 108,
+    "new_recordings": 98,
+    "shared_existing_recordings": 10,
+    "years_span": "1981–2007"
+  },
+  "releases": [
+    {
+      "title": "El Equipo (con Sandy Reyes)",
+      "release_year": 1981,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "KLP-59",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/17/1b/e5/171be53a-02ac-7749-d4e1-f151f5d5aa99/5056495058502_1.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 1624581277,
+      "discogs_release_id": 13604810,
+      "notes": "Álbum debut de la orquesta, catapultado por el megahito nacional «El Guardia del Arsenal».",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Yo Quisiera",
+          "duration_ms": 239412,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sandy Reyes",
+          "lead_vocalist_id": "49f8aae7-e066-4b01-a836-126082163c52",
+          "composer": "Dioni Fernández, Sandy Reyes, Yaqui Núñez del Risco",
+          "existing_recording_id": "8ed8a819-235c-4087-a422-41c70109f8e5"
+        },
+        {
+          "position": 2,
+          "title": "La Vencida",
+          "duration_ms": 323657,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sandy Reyes",
+          "lead_vocalist_id": "49f8aae7-e066-4b01-a836-126082163c52",
+          "composer": "Ramón Díaz",
+          "existing_recording_id": "0bc090da-4281-4ea3-a5ec-6302199b3058"
+        },
+        {
+          "position": 3,
+          "title": "La Carta",
+          "duration_ms": 235102,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sandy Reyes",
+          "lead_vocalist_id": "49f8aae7-e066-4b01-a836-126082163c52",
+          "composer": "Juan Lanfranco",
+          "existing_recording_id": "657ea1e7-5c27-4547-b115-7014f0f321f5"
+        },
+        {
+          "position": 4,
+          "title": "El Guardia Del Arsenal",
+          "duration_ms": 244820,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sandy Reyes",
+          "lead_vocalist_id": "49f8aae7-e066-4b01-a836-126082163c52",
+          "composer": "Luis Días",
+          "existing_recording_id": "ab08c271-ebf8-4542-8f23-6581663db5a4"
+        },
+        {
+          "position": 5,
+          "title": "De La Noche a La Mañana",
+          "duration_ms": 181812,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sandy Reyes",
+          "lead_vocalist_id": "49f8aae7-e066-4b01-a836-126082163c52",
+          "composer": "Francis Moya",
+          "existing_recording_id": "c47e13b8-2277-4d7f-9706-b200bdd37b98"
+        },
+        {
+          "position": 6,
+          "title": "Sinfonia De Amor",
+          "duration_ms": 253440,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sandy Reyes",
+          "lead_vocalist_id": "49f8aae7-e066-4b01-a836-126082163c52",
+          "composer": "Luis Kalaff",
+          "existing_recording_id": "958cba97-c069-4750-80fb-1a910337d500"
+        },
+        {
+          "position": 7,
+          "title": "La Integridad",
+          "duration_ms": 308532,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sandy Reyes",
+          "lead_vocalist_id": "49f8aae7-e066-4b01-a836-126082163c52",
+          "composer": "Leonardo de Jesús",
+          "existing_recording_id": "94db2417-0445-4713-9bf8-554563534367"
+        },
+        {
+          "position": 8,
+          "title": "Te Llegará Mi Olvido",
+          "duration_ms": 269296,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sandy Reyes",
+          "lead_vocalist_id": "49f8aae7-e066-4b01-a836-126082163c52",
+          "composer": "Juan Gabriel",
+          "existing_recording_id": "ecec1836-458d-42bf-bccb-e020aae28ba7"
+        },
+        {
+          "position": 9,
+          "title": "Yo Te Amo Más",
+          "duration_ms": 284056,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sandy Reyes",
+          "lead_vocalist_id": "49f8aae7-e066-4b01-a836-126082163c52",
+          "composer": "Jorge Taveras, Yaqui Núñez del Risco",
+          "existing_recording_id": "9ae6cfdb-0bfa-4bd6-9419-25ba88d6f774"
+        },
+        {
+          "position": 10,
+          "title": "Acuérdate De Mi",
+          "duration_ms": 166322,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sandy Reyes",
+          "lead_vocalist_id": "49f8aae7-e066-4b01-a836-126082163c52",
+          "composer": "Luis Kalaff",
+          "existing_recording_id": "8705b257-0b65-4506-ab65-128d48f0680b"
+        }
+      ]
+    },
+    {
+      "title": "Dioni Fernández Y El Equipo (con Charlie Rodríguez)",
+      "release_year": 1983,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "KLP 74",
+      "cover_art": "https://i.discogs.com/xUsVH3sBxFUcNFh4xtegT4UiOXhL7XmHMbAf8kZ5ws8/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzgx/NzIyLTE1NTMxNDA1/MTItNjE1Ny5qcGVn.jpeg",
+      "discogs_master_id": 2289247,
+      "discogs_release_id": 13381722,
+      "notes": "Producción consagratoria de Charlie Rodríguez; incluye «Mina de Amor», «Colorao» y «Moza (Rico y buen mozo)».",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Moza",
+          "duration_ms": 278000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": "Tony Croatto",
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 2,
+          "title": "La Mujer Que A Mi Me Gusta",
+          "duration_ms": 267000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": "Benny González",
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 3,
+          "title": "El Merengue Es Un Abrazo",
+          "duration_ms": 252000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": "Yaqui Núñez del Risco",
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 4,
+          "title": "Mina De Amor",
+          "duration_ms": 251000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": "Luis Kalaff",
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 5,
+          "title": "Colorao",
+          "duration_ms": 278000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": "Luis Kalaff",
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 6,
+          "title": "Veneno",
+          "duration_ms": 306000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": "Fernando Echavarría",
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 7,
+          "title": "Queriendote Y Adorandote",
+          "duration_ms": 264000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 8,
+          "title": "Ladrona",
+          "duration_ms": 264000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": "Diego Verdaguer",
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        }
+      ]
+    },
+    {
+      "title": "Los Diseñadores",
+      "release_year": 1984,
+      "format": "LP",
+      "label": "Algar Records / Equipo Records",
+      "catalog_number": "ALG-48 / ER001",
+      "cover_art": "https://i.discogs.com/mzpjHNfYtFksl-Rd6GUPfyzOrf0YRoyyULLaEEmzWF4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMzI3/OTMzLTE2NDk0MjE4/NzMtOTI0OS5qcGVn.jpeg",
+      "discogs_master_id": 1435462,
+      "discogs_release_id": 11327933,
+      "notes": "Álbum cumbre que proyectó a Sergio Vargas a la fama con «Los Diseñadores», junto a Charlie Rodríguez en «Cal y Arena».",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Los Diseñadores",
+          "duration_ms": 250000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": "Alberto «Beto» Vega"
+        },
+        {
+          "position": 2,
+          "title": "Me Aleje Llorando",
+          "duration_ms": 255000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null
+        },
+        {
+          "position": 3,
+          "title": "Oye Muchacha",
+          "duration_ms": 260000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Carlos David",
+          "composer": null,
+          "lead_vocalist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704"
+        },
+        {
+          "position": 4,
+          "title": "Cal Y Arena",
+          "duration_ms": 265000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": "Cheché Abreu",
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 5,
+          "title": "Cuando Me Tocas",
+          "duration_ms": 245000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Sergio Vargas",
+          "lead_vocalist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+          "composer": null
+        },
+        {
+          "position": 6,
+          "title": "El Doble Sentido",
+          "duration_ms": 255000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 7,
+          "title": "Telefono A Larga Distancia",
+          "duration_ms": 250000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        }
+      ]
+    },
+    {
+      "title": "Fiesta & Fiesta!",
+      "release_year": 1985,
+      "format": "LP",
+      "label": "Algar Records / Karen Records",
+      "catalog_number": "ALG-7427 / KLP-93",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music127/v4/a3/b5/bb/a3b5bbac-b9ee-ad0d-eb52-aa1d1568accc/ALGAR-7427_Dioni.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 1231883053,
+      "spotify_album_id": "1abQUEd8cKKsrMtWmppGVs",
+      "discogs_master_id": 1277222,
+      "notes": "Debut de Carlos David con El Equipo; incluye «Fiesta y Fiesta», «Caribe» y «Loco, Loco».",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Fiesta y Fiesta",
+          "duration_ms": 322493,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Carlos David",
+          "composer": null,
+          "lead_vocalist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704"
+        },
+        {
+          "position": 2,
+          "title": "Al Ritmo de la Noche",
+          "duration_ms": 320480,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Carlos David",
+          "composer": null,
+          "lead_vocalist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704"
+        },
+        {
+          "position": 3,
+          "title": "El Pescador de Baru",
+          "duration_ms": 266973,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Orvis García",
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "Caribe",
+          "duration_ms": 288827,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Carlos David",
+          "composer": null,
+          "lead_vocalist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704"
+        },
+        {
+          "position": 5,
+          "title": "Loco, Loco",
+          "duration_ms": 246200,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Carlos David",
+          "composer": null,
+          "lead_vocalist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704"
+        },
+        {
+          "position": 6,
+          "title": "Como Es Posible",
+          "duration_ms": 257467,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Carlos David",
+          "composer": null,
+          "lead_vocalist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704"
+        },
+        {
+          "position": 7,
+          "title": "Chispeando",
+          "duration_ms": 224493,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Orvis García",
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "Nicanor",
+          "duration_ms": 242307,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Orvis García",
+          "composer": null
+        },
+        {
+          "position": 9,
+          "title": "Me Mantengo",
+          "duration_ms": 259560,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Carlos David",
+          "composer": null,
+          "lead_vocalist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704"
+        }
+      ]
+    },
+    {
+      "title": "Pasa la Vida",
+      "release_year": 1986,
+      "format": "LP",
+      "label": "Algar Records / Karen Records",
+      "catalog_number": "ALGAR-5700 / KLP-106",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/3c/6d/cf/3c6dcfdc-d8f4-62fb-1f5d-d0370fb1fc02/ALGAR-5700_Dioni.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 1231874297,
+      "spotify_album_id": "3D0zYnSb5satjADi3B2emx",
+      "discogs_master_id": 1539747,
+      "notes": "Grandes éxitos de Carlos David («Pasa la Vida», «Como Tú No Hay Dos») y la entrada de Pablo Martínez («La de Perder»).",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Pasa la Vida",
+          "duration_ms": 283827,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Carlos David",
+          "composer": null,
+          "lead_vocalist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704"
+        },
+        {
+          "position": 2,
+          "title": "Que Me Dice Usted",
+          "duration_ms": 215147,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Carlos David",
+          "composer": null,
+          "lead_vocalist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704"
+        },
+        {
+          "position": 3,
+          "title": "La de Perder",
+          "duration_ms": 236320,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 4,
+          "title": "Como Tu No Hay Dos",
+          "duration_ms": 350773,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Carlos David",
+          "composer": null,
+          "lead_vocalist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704"
+        },
+        {
+          "position": 5,
+          "title": "Sí Señor",
+          "duration_ms": 245107,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 6,
+          "title": "Si Quieres",
+          "duration_ms": 245587,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Carlos David",
+          "composer": null,
+          "lead_vocalist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704"
+        },
+        {
+          "position": 7,
+          "title": "Te Espero",
+          "duration_ms": 247867,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 8,
+          "title": "La Única",
+          "duration_ms": 314947,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Carlos David",
+          "composer": null,
+          "lead_vocalist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704"
+        },
+        {
+          "position": 9,
+          "title": "El Teléfono",
+          "duration_ms": 246147,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        }
+      ]
+    },
+    {
+      "title": "Dioni Fernández & El Equipo (El Cinturón del Taxi)",
+      "release_year": 1988,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "KLP-119",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/06/fa/ce/06facef3-e948-197d-77c8-55b9d0dc6275/5056495075646_1.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 1646283762,
+      "spotify_album_id": "0J6SLWgljgMCxvtuwCCtlj",
+      "discogs_master_id": 2289250,
+      "notes": "Consagración vocal absoluta de Pablo Martínez con «El Cinturón del Taxi», «La Lloré» y «Si No Te Hubieras Ido».",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "El Cinturón Del Taxi",
+          "duration_ms": 277185,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 2,
+          "title": "La Llore",
+          "duration_ms": 263001,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 3,
+          "title": "Si No Te Hubieras Ido",
+          "duration_ms": 257097,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": "Marco Antonio Solís",
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 4,
+          "title": "Pum Pum Pum Del Amor",
+          "duration_ms": 254302,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 5,
+          "title": "Casi Ya",
+          "duration_ms": 274756,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 6,
+          "title": "Yo Amo",
+          "duration_ms": 282175,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 7,
+          "title": "O Me Voy, O Me Quedo",
+          "duration_ms": 291709,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": "Marco Antonio Solís",
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 8,
+          "title": "Dame Mas",
+          "duration_ms": 271961,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 9,
+          "title": "A Tu Lado O Al Lado De Ella",
+          "duration_ms": 324441,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        }
+      ]
+    },
+    {
+      "title": "El Millonario",
+      "release_year": 1988,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "KLP-126",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4d/28/d1/4d28d1da-147b-c5d2-c1ed-99f8b1ebb686/886296716043_1.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 1526734094,
+      "spotify_album_id": "6NSJ0np7ElUvogBCx4WFQ8",
+      "discogs_master_id": 1772630,
+      "notes": "Superproducción que contiene el himno «No Se Murió el Amor» y «El Millonario» interpretados por Pablo Martínez.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "El Millonario",
+          "duration_ms": 269400,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 2,
+          "title": "Hola, Cómo Estás",
+          "duration_ms": 298493,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 3,
+          "title": "No Se Murió el Amor",
+          "duration_ms": 335480,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 4,
+          "title": "Mi Corazón",
+          "duration_ms": 201613,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 5,
+          "title": "Me Estremeces",
+          "duration_ms": 260307,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 6,
+          "title": "Recomencemos",
+          "duration_ms": 292960,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 7,
+          "title": "En Bancarrota",
+          "duration_ms": 294133,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        },
+        {
+          "position": 8,
+          "title": "La Bamba",
+          "duration_ms": 281693,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablo Martínez",
+          "composer": null,
+          "lead_vocalist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a"
+        }
+      ]
+    },
+    {
+      "title": "Dioni Fernández",
+      "release_year": 1991,
+      "format": "LP",
+      "label": "Karen Records",
+      "catalog_number": "KLP-144",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/bd/a8/ac/bda8acfc-a799-6705-5564-9fa3bc1d44b4/886296603701_1.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 1526723267,
+      "spotify_album_id": "2HhggWUu8ZMNWhNoeIWMBE",
+      "discogs_master_id": 3000326,
+      "notes": "Etapa que incluye «Por Retenerte» (con Kaki Vargas) y la jocosa «La Pulla» (con Pablito Barriga).",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "El Apretaito",
+          "duration_ms": 252933,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablito Barriga",
+          "composer": null
+        },
+        {
+          "position": 2,
+          "title": "Tienes Tú",
+          "duration_ms": 273267,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Kaki Vargas",
+          "lead_vocalist_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+          "composer": null
+        },
+        {
+          "position": 3,
+          "title": "De Ella Sola",
+          "duration_ms": 292867,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Kaki Vargas",
+          "lead_vocalist_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "Quiéreme, Quiéreme",
+          "duration_ms": 266360,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Kaki Vargas",
+          "lead_vocalist_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+          "composer": null
+        },
+        {
+          "position": 5,
+          "title": "Escúchame",
+          "duration_ms": 286333,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Kaki Vargas",
+          "lead_vocalist_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+          "composer": null
+        },
+        {
+          "position": 6,
+          "title": "Por Retenerte",
+          "duration_ms": 241640,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Kaki Vargas",
+          "lead_vocalist_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+          "composer": null
+        },
+        {
+          "position": 7,
+          "title": "El Amor Es Como una Flor",
+          "duration_ms": 257693,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Kaki Vargas",
+          "lead_vocalist_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "La Pulla",
+          "duration_ms": 267453,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Pablito Barriga",
+          "composer": null
+        }
+      ]
+    },
+    {
+      "title": "Yo Soy Para Ti",
+      "release_year": 1992,
+      "format": "CD / LP",
+      "label": "Kubaney",
+      "catalog_number": "347-2T",
+      "cover_art": "https://i.discogs.com/btrE_Pt3fro4GFwn2t5z43hBy1ZwaRBJImwcE6YR_xc/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NDQ4/ODY3LTE2MTkzMTc3/OTQtMzgwOC5qcGVn.jpeg",
+      "discogs_master_id": 2289256,
+      "discogs_release_id": 18448867,
+      "notes": "Producción grabada para Kubaney con el sonido orquestal moderno de principios de los noventa.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Yo Soy Para Ti",
+          "duration_ms": 255000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 2,
+          "title": "A Veces",
+          "duration_ms": 260000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 3,
+          "title": "No Te Vayas Ahora",
+          "duration_ms": 250000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "Me Hace Falta Ella",
+          "duration_ms": 270000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 5,
+          "title": "Demasiado",
+          "duration_ms": 245000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 6,
+          "title": "Habra Mas Tiempo",
+          "duration_ms": 265000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 7,
+          "title": "Miel De Abejas",
+          "duration_ms": 250000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "Voy Pa'lla",
+          "duration_ms": 255000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 9,
+          "title": "Me Moria Por Ella",
+          "duration_ms": 275000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 10,
+          "title": "Y Pa' Que Me Quejo",
+          "duration_ms": 252000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        }
+      ]
+    },
+    {
+      "title": "Homenaje A Julito Deschamps",
+      "release_year": 1994,
+      "format": "CD",
+      "label": "Kubaney",
+      "catalog_number": "CD 391-2",
+      "cover_art": "https://i.discogs.com/cyG5HBQZhu2W0PX6tJ0vfIhzmFzPAGBMwHOdPyhxSRk/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NTkyLTE2NDQzNTQz/MjktNzg0My5qcGVn.jpeg",
+      "discogs_release_id": 22050592,
+      "notes": "Tributo instrumental y vocal al legendario pianista y bolerista dominicano Julito Deschamps, con la voz de Eddy Rafael.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "Como Duele Una Traicion",
+          "duration_ms": 225000,
+          "genre_id": 58,
+          "subgenre_id": null,
+          "lead_vocalist": "Eddy Rafael",
+          "composer": "Julito Deschamps"
+        },
+        {
+          "position": 2,
+          "title": "Que Me Importa",
+          "duration_ms": 210000,
+          "genre_id": 58,
+          "subgenre_id": null,
+          "lead_vocalist": "Eddy Rafael",
+          "composer": "Julito Deschamps"
+        },
+        {
+          "position": 3,
+          "title": "Poquita Fe",
+          "duration_ms": 220000,
+          "genre_id": 58,
+          "subgenre_id": null,
+          "lead_vocalist": "Eddy Rafael",
+          "composer": "Bobby Capó"
+        },
+        {
+          "position": 4,
+          "title": "No Vale La Pena",
+          "duration_ms": 205000,
+          "genre_id": 58,
+          "subgenre_id": null,
+          "lead_vocalist": "Eddy Rafael",
+          "composer": "Julito Deschamps"
+        },
+        {
+          "position": 5,
+          "title": "Traiconera",
+          "duration_ms": 215000,
+          "genre_id": 58,
+          "subgenre_id": null,
+          "lead_vocalist": "Eddy Rafael",
+          "composer": "Julito Deschamps"
+        },
+        {
+          "position": 6,
+          "title": "Suplica",
+          "duration_ms": 230000,
+          "genre_id": 58,
+          "subgenre_id": null,
+          "lead_vocalist": "Eddy Rafael",
+          "composer": "Julito Deschamps"
+        },
+        {
+          "position": 7,
+          "title": "Te Necesito",
+          "duration_ms": 200000,
+          "genre_id": 58,
+          "subgenre_id": null,
+          "lead_vocalist": "Eddy Rafael",
+          "composer": "Julito Deschamps"
+        },
+        {
+          "position": 8,
+          "title": "Que Te Vaya Bien",
+          "duration_ms": 195000,
+          "genre_id": 58,
+          "subgenre_id": null,
+          "lead_vocalist": "Eddy Rafael",
+          "composer": "Julito Deschamps"
+        },
+        {
+          "position": 9,
+          "title": "Yo Vivo Mi Vida",
+          "duration_ms": 210000,
+          "genre_id": 58,
+          "subgenre_id": null,
+          "lead_vocalist": "Eddy Rafael",
+          "composer": "Julito Deschamps"
+        },
+        {
+          "position": 10,
+          "title": "Sera Muy Fácil",
+          "duration_ms": 220000,
+          "genre_id": 58,
+          "subgenre_id": null,
+          "lead_vocalist": "Eddy Rafael",
+          "composer": "Julito Deschamps"
+        }
+      ]
+    },
+    {
+      "title": "La Gota Fría",
+      "release_year": 1994,
+      "format": "CD",
+      "label": "Kubaney",
+      "catalog_number": "387-2T",
+      "cover_art": "https://i.discogs.com/haXJjCaYprvjzwNLUtAkLdYxSixKoOvoX7qejKwV_Nc/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NjcwLTE2NDQzNTQz/NzQtMTQ3My5qcGVn.jpeg",
+      "discogs_master_id": 3096678,
+      "discogs_release_id": 22050670,
+      "notes": "Producción de adaptaciones caribeñas llevadas al merengue orquestal bailable.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "La Gota Fria",
+          "duration_ms": 255000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": "Emiliano Zuleta"
+        },
+        {
+          "position": 2,
+          "title": "Volviendome Tu",
+          "duration_ms": 260000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 3,
+          "title": "Que Manera De Quererte, Que Manera",
+          "duration_ms": 250000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 4,
+          "title": "Tu Lo Mataste",
+          "duration_ms": 245000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 5,
+          "title": "Amores Como El Nuestro",
+          "duration_ms": 265000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": "Omar Alfanno"
+        },
+        {
+          "position": 6,
+          "title": "Como Me Duele Amor",
+          "duration_ms": 255000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 7,
+          "title": "La Cita",
+          "duration_ms": 250000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 8,
+          "title": "La Fuentecita",
+          "duration_ms": 240000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 9,
+          "title": "De Hoy A Mañana",
+          "duration_ms": 255000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        },
+        {
+          "position": 10,
+          "title": "Loco De Amor",
+          "duration_ms": 260000,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": null,
+          "composer": null
+        }
+      ]
+    },
+    {
+      "title": "Juntos de Nuevo (con Charlie Rodríguez)",
+      "release_year": 2007,
+      "format": "CD",
+      "label": "Mas Music",
+      "catalog_number": "CD 252656171",
+      "cover_art": "https://is1-ssl.mzstatic.com/image/thumb/Music/8f/2d/e5/mzi.pldmmnyw.jpg/1000x1000bb.jpg",
+      "apple_collection_id": 252656171,
+      "spotify_album_id": "4ESLwcC7OxOAZkIkp7Azyz",
+      "discogs_release_id": 18420625,
+      "notes": "Producción de reencuentro de Dioni Fernández con su icónico vocalista Charlie Rodríguez.",
+      "tracks": [
+        {
+          "position": 1,
+          "title": "No Me Dejes",
+          "duration_ms": 262960,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 2,
+          "title": "Vuelve y Juega",
+          "duration_ms": 249160,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 3,
+          "title": "Buscando un Amor",
+          "duration_ms": 267173,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 4,
+          "title": "Vela Ve",
+          "duration_ms": 264147,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 5,
+          "title": "Biberón Vacio",
+          "duration_ms": 255040,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 6,
+          "title": "Lamento de Mi Corazón",
+          "duration_ms": 278120,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 7,
+          "title": "Paz en la Cama",
+          "duration_ms": 249360,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 8,
+          "title": "Flor de Primavera",
+          "duration_ms": 251240,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 9,
+          "title": "Quiero",
+          "duration_ms": 232133,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        },
+        {
+          "position": 10,
+          "title": "Me Enamoré",
+          "duration_ms": 250147,
+          "genre_id": 1,
+          "subgenre_id": 15,
+          "lead_vocalist": "Charlie Rodríguez",
+          "composer": null,
+          "lead_vocalist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7"
+        }
+      ]
+    }
+  ]
+}

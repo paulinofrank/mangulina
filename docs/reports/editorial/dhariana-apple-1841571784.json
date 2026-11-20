@@ -1,0 +1,63 @@
+{
+  "url": "https://itunes.apple.com/lookup?id=1841571784&entity=song&country=us",
+  "accessed": "2026-10-20T13:06:10.948Z",
+  "data": {
+    "resultCount": 2,
+    "results": [
+      {
+        "wrapperType": "collection",
+        "collectionType": "Album",
+        "artistId": 1599213896,
+        "collectionId": 1841571784,
+        "artistName": "Dhariana \"La Coqueta\"",
+        "collectionName": "Señor Amargura - Single",
+        "collectionCensoredName": "Señor Amargura - Single",
+        "artistViewUrl": "https://music.apple.com/us/artist/dhariana-la-coqueta/1599213896?uo=4",
+        "collectionViewUrl": "https://music.apple.com/us/album/se%C3%B1or-amargura-single/1841571784?uo=4",
+        "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/66/97/0c/66970cf7-3e7c-90bf-eb76-6c0d4491e3b7/artwork.jpg/60x60bb.jpg",
+        "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/66/97/0c/66970cf7-3e7c-90bf-eb76-6c0d4491e3b7/artwork.jpg/100x100bb.jpg",
+        "collectionPrice": 0.99,
+        "collectionExplicitness": "notExplicit",
+        "trackCount": 1,
+        "copyright": "℗ 2025 3513466 Records DK",
+        "country": "USA",
+        "currency": "USD",
+        "releaseDate": "2025-09-21T07:00:00Z",
+        "primaryGenreName": "Latin"
+      },
+      {
+        "wrapperType": "track",
+        "kind": "song",
+        "artistId": 1599213896,
+        "collectionId": 1841571784,
+        "trackId": 1841571785,
+        "artistName": "Dhariana \"La Coqueta\"",
+        "collectionName": "Señor Amargura - Single",
+        "trackName": "Señor Amargura",
+        "collectionCensoredName": "Señor Amargura - Single",
+        "trackCensoredName": "Señor Amargura",
+        "artistViewUrl": "https://music.apple.com/us/artist/dhariana-la-coqueta/1599213896?uo=4",
+        "collectionViewUrl": "https://music.apple.com/us/album/se%C3%B1or-amargura/1841571784?i=1841571785&uo=4",
+        "trackViewUrl": "https://music.apple.com/us/album/se%C3%B1or-amargura/1841571784?i=1841571785&uo=4",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/84/1b/3d841b67-3ccf-7065-9d15-2c59eb1c7a26/mzaf_17777775697242781789.plus.aac.p.m4a",
+        "artworkUrl30": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/66/97/0c/66970cf7-3e7c-90bf-eb76-6c0d4491e3b7/artwork.jpg/30x30bb.jpg",
+        "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/66/97/0c/66970cf7-3e7c-90bf-eb76-6c0d4491e3b7/artwork.jpg/60x60bb.jpg",
+        "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/66/97/0c/66970cf7-3e7c-90bf-eb76-6c0d4491e3b7/artwork.jpg/100x100bb.jpg",
+        "collectionPrice": 0.99,
+        "trackPrice": 0.99,
+        "releaseDate": "2025-09-21T12:00:00Z",
+        "collectionExplicitness": "notExplicit",
+        "trackExplicitness": "notExplicit",
+        "discCount": 1,
+        "discNumber": 1,
+        "trackCount": 1,
+        "trackNumber": 1,
+        "trackTimeMillis": 238494,
+        "country": "USA",
+        "currency": "USD",
+        "primaryGenreName": "Latin",
+        "isStreamable": true
+      }
+    ]
+  }
+}

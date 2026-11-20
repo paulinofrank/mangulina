@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Alma Ritmo Y Pueblo",
+    "url": "https://fastly-s3.allmusic.com/release/mr0000068612/front/400/W64uFxTnYALKzH8SlDssmA4Q1ghY8VaPylnm7PwcKNY=.jpg",
+    "file": "album-0.jpg",
+    "sha256": "328fc8e1fb5b4ce4108657f1f16307894a3d2e29fc2a56f5285f986128c0194d",
+    "bytes": 20862
+  },
+  {
+    "title": "Mujer de Mi Vida",
+    "url": "https://fastly-s3.allmusic.com/release/mr0000016650/front/400/owCivaz_CsiVnWz6ED-cnj6KsMttLlyBmmVTZ6_CLs0=.jpg",
+    "file": "album-1.jpg",
+    "sha256": "6541b293a5442bf0a4231e14308f718ad0c2fa2d61cf616060e8daedca4adc3c",
+    "bytes": 18453
+  },
+  {
+    "title": "Mejor Que Nunca",
+    "url": "https://fastly-s3.allmusic.com/release/mr0000323098/front/400/eEsU28wdnVWYRdgTClww5lWnbEN5fCjifro6xhIBuB4=.jpg",
+    "file": "album-2.jpg",
+    "sha256": "bc8c4dc6456aee2b950fd18d034b5f1d3b239649a780c35e7236a82754a72383",
+    "bytes": 21397
+  },
+  {
+    "title": "Llego El Tipo!! Por Siaca!!",
+    "url": "https://fastly-s3.allmusic.com/release/mr0001869935/front/400/f9YSlxjOplRc7235M_C5Sh_TZlp6n_cq-Emr2zx15tU=.jpg",
+    "file": "album-7.jpg",
+    "sha256": "7e42d93a3c6c43570f8589b93b56b2185c39b55156900506454a6e17dfaa66da",
+    "bytes": 23043
+  },
+  {
+    "title": "Picture 2 of 5",
+    "url": "https://i.ebayimg.com/images/g/oXQAAOSw1MJj3qF0/s-l1600.webp",
+    "file": "con-sentimiento-0.webp",
+    "sha256": "213e8cf7ffc63795230a5e102f4d0ab3623e17be9d97f5abbd2266b4191178e3",
+    "bytes": 230914
+  },
+  {
+    "title": "Picture 3 of 5",
+    "url": "https://i.ebayimg.com/images/g/nz4AAOSwpuJj3qF3/s-l1600.webp",
+    "file": "con-sentimiento-1.webp",
+    "sha256": "77d5a3a44965a5fbde680fc29030b653eabb164a0ed91ba6c8e69067fee72e17",
+    "bytes": 368490
+  },
+  {
+    "title": "Picture 4 of 5",
+    "url": "https://i.ebayimg.com/images/g/x~oAAOSw66lj3qF5/s-l1600.webp",
+    "file": "con-sentimiento-2.webp",
+    "sha256": "d31c1445cf47f40d70da566f223088fbc7de91bc8a32464076c5d20deca4e25a",
+    "bytes": 277830
+  },
+  {
+    "title": "Picture 5 of 5",
+    "url": "https://i.ebayimg.com/images/g/fKkAAOSwSbBj3qF7/s-l1600.webp",
+    "file": "con-sentimiento-3.webp",
+    "sha256": "d3fbc22df69b8eabcee390e158be6a7ccb890e55e586768505be84426d65e33e",
+    "bytes": 246680
+  },
+  {
+    "title": "Ravel Con Sentimiento 1992 vinyl cover with illustrated man at microphone, orange-blue Ravel logo, and Orbe Records label.",
+    "url": "https://i.ebayimg.com/images/g/GWAAAOSwt19j3qF6/s-l1600.webp",
+    "file": "con-sentimiento-4.webp",
+    "sha256": "213e8cf7ffc63795230a5e102f4d0ab3623e17be9d97f5abbd2266b4191178e3",
+    "bytes": 230914
+  },
+  {
+    "title": "Como Tu Lo Querias — digital LF Productions edition",
+    "url": "https://m.media-amazon.com/images/I/51d7DPUgPoL._UX358_FMwebp_QL85_.jpg",
+    "file": "como-digital.jpg",
+    "sha256": "e3614a35ee0d2259b1cde29706aae7b3885465e3705752a4c4eab7e454f7096d",
+    "bytes": 31930
+  }
+]

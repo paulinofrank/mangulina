@@ -1,0 +1,50 @@
+[
+  {
+    "id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+    "name": "Sergio Vargas",
+    "slug": "sergio-vargas",
+    "status": "published"
+  },
+  {
+    "id": "b1dec30a-6da0-442a-be24-9891c4ddbe53",
+    "name": "Alex Mansilla",
+    "slug": "alex-mansilla",
+    "status": "published"
+  },
+  {
+    "id": "faaa6c63-d5c5-4667-8d23-b290104cf186",
+    "name": "Héctor Aníbal",
+    "slug": "hector-anibal",
+    "status": "published"
+  },
+  {
+    "id": "aa733322-d3a4-4fe7-bf61-65f3425a8ed7",
+    "name": "Frank Ceara",
+    "slug": "frank-ceara",
+    "status": "published"
+  },
+  {
+    "id": "6b6d24d4-c6fe-42d6-8937-2d2f9f6c9292",
+    "name": "Janina Rosado",
+    "slug": "janina-rosado",
+    "status": "published"
+  },
+  {
+    "id": "e5a923f8-8a83-4370-94a5-0c0318d2d317",
+    "name": "Mayorin Feliciano",
+    "slug": "mayorin-feliciano",
+    "status": "published"
+  },
+  {
+    "id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+    "name": "Jorge Taveras",
+    "slug": "jorge-taveras",
+    "status": "published"
+  },
+  {
+    "id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+    "name": "Manuel Tejada",
+    "slug": "manuel-tejada",
+    "status": "published"
+  }
+]

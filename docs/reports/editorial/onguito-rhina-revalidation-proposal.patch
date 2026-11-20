@@ -1,0 +1,9 @@
+--- a/src/lib/revalidateArtistProfile.ts
++++ b/src/lib/revalidateArtistProfile.ts
+@@
+   for (const path of getArtistProfileRevalidationPaths(slug)) {
+-    revalidatePath(path, "page");
++    // These are concrete URLs; a type suffix targets a route-pattern tag
++    // that does not match the cached concrete profile (including a 404).
++    revalidatePath(path);
+   }

@@ -1,0 +1,18 @@
+{
+  "ramon": {
+    "es": {
+      "blocks": 13,
+      "references": 17,
+      "chars": 3887
+    },
+    "en": {
+      "blocks": 13,
+      "references": 17,
+      "chars": 3493
+    }
+  },
+  "cuco": {
+    "es": "one paragraph, existing reference preserved",
+    "en": "one paragraph, existing reference preserved"
+  }
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "id": "0cba7b57-2841-47be-ad4f-2119bdde042d",
+    "owner_artist_id": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+    "locale": "en",
+    "revision": 2,
+    "status": "published",
+    "owner": {
+      "id": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+      "name": "Casandra Damirón",
+      "status": "published"
+    },
+    "contexts": [
+      "Her uncle Fello Damirón arranged a series of appearances for her on La Voz del Yuna, the Bonao station that then decided which Dominican performers the country heard. She stayed in Bonao, where the musicians passing through included Lope Balaguer, Esther Borja and Olga Chorens."
+    ]
+  },
+  {
+    "id": "29d1ddb3-7afd-48e4-876c-b9147ce1c1d0",
+    "owner_artist_id": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+    "locale": "es",
+    "revision": 3,
+    "status": "published",
+    "owner": {
+      "id": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+      "name": "Papa Molina",
+      "status": "published"
+    },
+    "contexts": [
+      "Como compositor, Molina dejó una serie de boleros que se convirtieron en estándares del cancionero antillano de mediados de siglo: «Evocación», grabada por separado por Alcy Sánchez y Alberto Beltrán con la orquesta de Billo Frómeta, por Rafael Colón con la orquesta de Johnny Ventura, y por Betty Misiego con la orquesta de Bertico Sosa; «Sufro por Ti», popularizada por Alberto Beltrán con la Orquesta San José y el coro de La Voz del Yuna; «Nunca Te Lo He Dicho», éxito de Lope Balaguer; y «Cuando Volveré a Verte», grabada por Elenita Santos con Rafael Colón y la orquesta de Johnny Ventura. Ya avanzada su carrera se volcó hacia la música de concierto, y terminó la obra sinfónica «Tres Imágenes Folklóricas» en noviembre de 1990; la Orquesta Sinfónica Nacional la estrenó poco después y la ha mantenido desde entonces en su repertorio regular."
+    ]
+  },
+  {
+    "id": "5267799d-8c5a-4072-819a-7fb379ee1044",
+    "owner_artist_id": "5ac30b19-8b47-4de9-8e63-2f95ffef6b0e",
+    "locale": "en",
+    "revision": 2,
+    "status": "published",
+    "owner": {
+      "id": "5ac30b19-8b47-4de9-8e63-2f95ffef6b0e",
+      "name": "Antonio Morel",
+      "status": "draft"
+    },
+    "contexts": [
+      "The ensemble cultivated a versatile repertoire that moved between merengue, mambo, calypso, bolero and jazz. Under Morel's baton, some of the most emblematic voices in Dominican history passed through its music stands, including Joseíto Mateo, Francis Santana, Alberto Beltrán, Lope Balaguer, Niní Cáffaro and Vinicio Franco. Together they recorded lasting merengues such as «Apágame la Vela», «San Cristóbal», «Masa, Masa» and «Fiesta en la Joya», as well as boleros including «Mi Gloria» and «Arenas del Desierto»."
+    ]
+  },
+  {
+    "id": "53b655bd-f3c3-4900-811e-11da118a9acd",
+    "owner_artist_id": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+    "locale": "es",
+    "revision": 1,
+    "status": "published",
+    "owner": {
+      "id": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+      "name": "Casandra Damirón",
+      "status": "published"
+    },
+    "contexts": [
+      "Su tío Fello Damirón le preparó una serie de presentaciones en La Voz del Yuna, la emisora de Bonao que entonces decidía a qué artistas dominicanos oía el país. Se quedó en Bonao, donde por allí pasaban Lope Balaguer, Esther Borja y Olga Chorens."
+    ]
+  },
+  {
+    "id": "60466f4f-b7cb-439d-beda-2b210a893648",
+    "owner_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+    "locale": "en",
+    "revision": 2,
+    "status": "published",
+    "owner": {
+      "id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+      "name": "Joaquín Balaguer",
+      "status": "published"
+    },
+    "contexts": [
+      "It has been recorded across generations and in several forms. Eduardo Brito sang it first, which places it in the repertoire of the finest Dominican voice of its era. Lope Balaguer and Camboy Estévez kept it as a romantic song. Decades later Alex Bueno rearranged it as a merengue, which is a peculiar fate for a parlour piece and the reason most people who know the melody today know it at all.",
+      "Rosa Silvestre went to Anthony Ríos, El Pasado to Omar Franco, and Amor Tardío to Cheo Zorrilla, in a setting by Ricardo Bello. Amor Romántico was recorded by Gina D’Alessandro and Amistad by Lope Balaguer. Melancolía Otoñal and Alma de Mujer were sung by Pedro Samuel Rodríguez, and those two come from named books — the first from Voz Silente, the second from La Venda Transparente."
+    ]
+  },
+  {
+    "id": "73e64ff8-e500-4c7e-942e-778d640d4219",
+    "owner_artist_id": "5ac30b19-8b47-4de9-8e63-2f95ffef6b0e",
+    "locale": "es",
+    "revision": 2,
+    "status": "published",
+    "owner": {
+      "id": "5ac30b19-8b47-4de9-8e63-2f95ffef6b0e",
+      "name": "Antonio Morel",
+      "status": "draft"
+    },
+    "contexts": [
+      "La agrupación cultivó un repertorio versátil que transitaba entre el merengue, el mambo, el calipso, el bolero y el jazz. Bajo la batuta de Morel, pasaron por sus atriles algunas de las voces más emblemáticas de la historia dominicana, como Joseíto Mateo, Francis Santana, Alberto Beltrán, Lope Balaguer, Niní Cáffaro y Vinicio Franco. Juntos grabaron merengues perdurables como «Apágame la Vela», «San Cristóbal», «Masa, Masa» y «Fiesta en la Joya», así como boleros como «Mi Gloria» y «Arenas del Desierto»."
+    ]
+  },
+  {
+    "id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+    "owner_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+    "locale": "es",
+    "revision": 2,
+    "status": "published",
+    "owner": {
+      "id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+      "name": "Joaquín Balaguer",
+      "status": "published"
+    },
+    "contexts": [
+      "Se ha grabado a lo largo de varias generaciones y en varias formas. La cantó primero Eduardo Brito, lo que la coloca en el repertorio de la mejor voz dominicana de su tiempo. Lope Balaguer y Camboy Estévez la mantuvieron como canción romántica. Décadas después Alex Bueno la rearregló como merengue, destino peculiar para una pieza de salón y la razón de que hoy casi todo el que se sabe la melodía se la sepa.",
+      "Rosa Silvestre fue a parar a Anthony Ríos; El Pasado a Omar Franco; y Amor Tardío a Cheo Zorrilla, en una musicalización de Ricardo Bello. Amor Romántico la grabó Gina D’Alessandro y Amistad, Lope Balaguer. Melancolía Otoñal y Alma de Mujer las cantó Pedro Samuel Rodríguez, y esas dos vienen de libros con nombre: la primera de Voz Silente y la segunda de La Venda Transparente."
+    ]
+  },
+  {
+    "id": "b303d1eb-d230-4269-bd3f-024d51ef13e0",
+    "owner_artist_id": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+    "locale": "en",
+    "revision": 3,
+    "status": "published",
+    "owner": {
+      "id": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+      "name": "Papa Molina",
+      "status": "published"
+    },
+    "contexts": [
+      "As a composer, Molina left a run of boleros that became standards of the mid-century Antillean songbook: «Evocación», recorded separately by Alcy Sánchez and Alberto Beltrán with Billo Frómeta's orchestra, by Rafael Colón with Johnny Ventura's orchestra, and by Betty Misiego with Bertico Sosa's orchestra; «Sufro por Ti», popularized by Alberto Beltrán with the Orquesta San José and the La Voz del Yuna choir; «Nunca Te Lo He Dicho», a hit for Lope Balaguer; and «Cuando Volveré a Verte», recorded by Elenita Santos with Rafael Colón and Johnny Ventura's orchestra. Late in his career he turned to concert music, completing the symphonic work «Tres Imágenes Folklóricas» in November 1990; the National Symphony Orchestra premiered it shortly after and has kept it in its regular repertoire since."
+    ]
+  }
+]

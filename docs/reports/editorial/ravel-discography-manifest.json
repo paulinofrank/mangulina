@@ -1,0 +1,1430 @@
+{
+  "schema": "research-proposal-v1",
+  "date": "2026-10-19T18:03:24.837Z",
+  "artist": {
+    "id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+    "name": "Ravel",
+    "aliases": [
+      "Ravel El Tipo",
+      "Ravel Guillermo"
+    ]
+  },
+  "authorization": "Research and exact proposal only. Gate B approval pending before any catalog write.",
+  "scope": "Artist-led album and single editions located through 2026-10-19; coverage incomplete, not an exhaustive discography.",
+  "inventory": {
+    "direct_releases": 0,
+    "release_artist_relations": 0,
+    "direct_recordings": 0,
+    "limitation": "Target UUID inventory; global title/alias and shared-record dependency checks must be refreshed before execution."
+  },
+  "proposed_releases": [
+    {
+      "key": "con-sentimiento-orbe-604576",
+      "action": "propose_create",
+      "before": null,
+      "title": "Con sentimiento",
+      "release_type": "album",
+      "format": "12-inch vinyl LP",
+      "territory": "Venezuela",
+      "release_year": 1992,
+      "release_date": null,
+      "date_precision": "year; ℗ 1992 explicitly printed; exact release day unknown",
+      "label": "Orbe",
+      "catalog_number": "604576",
+      "artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+      "source_url": "https://www.ebay.com/itm/115352876658",
+      "evidence": [
+        "ravel-covers/con-sentimiento-1.webp",
+        "ravel-covers/con-sentimiento-2.webp",
+        "ravel-covers/con-sentimiento-3.webp"
+      ],
+      "cover": {
+        "title": "Picture 2 of 5",
+        "url": "https://i.ebayimg.com/images/g/oXQAAOSw1MJj3qF0/s-l1600.webp",
+        "file": "con-sentimiento-0.webp",
+        "sha256": "213e8cf7ffc63795230a5e102f4d0ab3623e17be9d97f5abbd2266b4191178e3",
+        "bytes": 230914
+      },
+      "credits_literal": [
+        {
+          "credited_as": "Ravel",
+          "roles_literal": "Producción Musical de Ravel para Juan & Nelson",
+          "canonical_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "scope": "release production statement"
+        }
+      ],
+      "tracks": [
+        {
+          "position": 1,
+          "source_position": "A1",
+          "title": "Bella Bella",
+          "duration": "4:12",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Charlie Mosquea",
+          "arranger_literal": "Jaime Querol",
+          "source_url": "https://www.ebay.com/itm/115352876658",
+          "source_image": "ravel-covers/con-sentimiento-2.webp",
+          "note": null
+        },
+        {
+          "position": 2,
+          "source_position": "A2",
+          "title": "Bailar Pegado",
+          "duration": "4:43",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Autor No Identificado",
+          "arranger_literal": "Juan Valdez",
+          "source_url": "https://www.ebay.com/itm/115352876658",
+          "source_image": "ravel-covers/con-sentimiento-2.webp",
+          "note": "Label explicitly says unidentified author; sleeve D.R.; no author identity proposed."
+        },
+        {
+          "position": 3,
+          "source_position": "A3",
+          "title": "Pa’ Mi Fieston",
+          "duration": "4:43",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Confesor Rosario",
+          "arranger_literal": "Jaime Querol",
+          "source_url": "https://www.ebay.com/itm/115352876658",
+          "source_image": "ravel-covers/con-sentimiento-2.webp",
+          "note": null
+        },
+        {
+          "position": 4,
+          "source_position": "A4",
+          "title": "Por No Hablar Por Hablar",
+          "duration": "4:02",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Canela",
+          "arranger_literal": "Sandy Jorge",
+          "source_url": "https://www.ebay.com/itm/115352876658",
+          "source_image": "ravel-covers/con-sentimiento-2.webp",
+          "note": null
+        },
+        {
+          "position": 5,
+          "source_position": "A5",
+          "title": "Parece Que Estoy Enamorado",
+          "duration": "4:05",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Ravel",
+          "arranger_literal": "Juan Valdez",
+          "source_url": "https://www.ebay.com/itm/115352876658",
+          "source_image": "ravel-covers/con-sentimiento-2.webp",
+          "note": null
+        },
+        {
+          "position": 6,
+          "source_position": "B1",
+          "title": "No Basta",
+          "duration": "5:00",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Franco de Vita",
+          "arranger_literal": "Henry Hierro",
+          "source_url": "https://www.ebay.com/itm/115352876658",
+          "source_image": "ravel-covers/con-sentimiento-3.webp",
+          "note": null
+        },
+        {
+          "position": 7,
+          "source_position": "B2",
+          "title": "Ella Quiere Que La’priete",
+          "duration": "4:34",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Polo Tovar",
+          "arranger_literal": "Jaime Querol",
+          "source_url": "https://www.ebay.com/itm/115352876658",
+          "source_image": "ravel-covers/con-sentimiento-3.webp",
+          "note": null
+        },
+        {
+          "position": 8,
+          "source_position": "B3",
+          "title": "Mi Carrito",
+          "duration": "4:32",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Carlos Araujo",
+          "arranger_literal": "Ramón Orlando",
+          "source_url": "https://www.ebay.com/itm/115352876658",
+          "source_image": "ravel-covers/con-sentimiento-3.webp",
+          "note": null
+        },
+        {
+          "position": 9,
+          "source_position": "B4",
+          "title": "Ven Apagame",
+          "duration": "2:43",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Rento Arias",
+          "arranger_literal": "Juan Valdez",
+          "source_url": "https://www.ebay.com/itm/115352876658",
+          "source_image": "ravel-covers/con-sentimiento-3.webp",
+          "note": null
+        }
+      ],
+      "notes": [
+        "1993 JN CD 746 is a separate cataloged edition, not substituted for this photographed pressing.",
+        "Printed label durations retained, not replaced by longer DSP durations.",
+        "Original surname spelling Querol retained from the record labels; no automatic identity mapping.",
+        "Sleeve musician/studio/design credits preserved photographically; transcription and identity mapping remain pending."
+      ]
+    },
+    {
+      "key": "llego-tipo-camino-317",
+      "action": "propose_create",
+      "before": null,
+      "title": "Llego El Tipo!! Por Siaca!!",
+      "source_title": "Llego El Tipo!! Por Siaca!!",
+      "release_type": "album",
+      "format": "CD",
+      "territory": null,
+      "release_year": 1994,
+      "release_date": null,
+      "date_precision": "year proposed; full supplier date retained as assertion only",
+      "supplier_date": "October 11, 1994",
+      "label": "Camino Records",
+      "catalog_number": "317",
+      "artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+      "source_url": "https://www.allmusic.com/album/llego-el-tipo%21%21-por-siaca%21%21-mw0001884987",
+      "cover": {
+        "title": "Llego El Tipo!! Por Siaca!!",
+        "url": "https://fastly-s3.allmusic.com/release/mr0001869935/front/400/f9YSlxjOplRc7235M_C5Sh_TZlp6n_cq-Emr2zx15tU=.jpg",
+        "file": "album-7.jpg",
+        "sha256": "7e42d93a3c6c43570f8589b93b56b2185c39b55156900506454a6e17dfaa66da",
+        "bytes": 23043
+      },
+      "credits_literal": [
+        {
+          "credited_as": "Alez Dalmasi",
+          "roles_literal": "Piano",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Alfredo Liranzo",
+          "roles_literal": "Sax (Alto)",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Camilo Blanes",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Carlos",
+          "roles_literal": "Engineer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Carlos Araujo",
+          "roles_literal": "Bass",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "D.R.",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Domingo Abreu",
+          "roles_literal": "Assistant",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Felix Veloz",
+          "roles_literal": "Mixing",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Francisco Cruz",
+          "roles_literal": "Congas",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Germosen Palindo",
+          "roles_literal": "Trumpet",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Giouanny Jiménez",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Humberto Raposo",
+          "roles_literal": "Mixing",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "John Diaz",
+          "roles_literal": "Arranger",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Miguel Pena",
+          "roles_literal": "Trombone",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Mike Torres",
+          "roles_literal": "Vocals (Background)",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Onorio Taveras",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Pedro Pérez",
+          "roles_literal": "Tambourine",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Ravel",
+          "roles_literal": "Arranger, Composer, Director, Primary Artist, Producer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Rento Arias",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Rodolfo Mari",
+          "roles_literal": "Photography",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Salvador Morales",
+          "roles_literal": "Mixing",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Sandro Martinez",
+          "roles_literal": "Vocals (Background)",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Victor Waill",
+          "roles_literal": "Arranger, Director, Producer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Wilfrido Drullard",
+          "roles_literal": "Arranger",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "William Duval",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        }
+      ],
+      "tracks": [
+        {
+          "position": 1,
+          "source_title": "Donde Estan Las Mujeres",
+          "title": "Donde Estan Las Mujeres",
+          "duration": "04:53",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 2,
+          "source_title": "El Meneo",
+          "title": "El Meneo",
+          "duration": "04:47",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Giouanny Jiménez / Ravel"
+        },
+        {
+          "position": 3,
+          "source_title": "Celoso",
+          "title": "Celoso",
+          "duration": "04:02",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Rento Arias"
+        },
+        {
+          "position": 4,
+          "source_title": "La Culebrita",
+          "title": "La Culebrita",
+          "duration": "04:33",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Giouanny Jiménez"
+        },
+        {
+          "position": 5,
+          "source_title": "Todos los Tiempos",
+          "title": "Todos los Tiempos",
+          "duration": "04:43",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Camilo Blanes"
+        },
+        {
+          "position": 6,
+          "source_title": "Tu Me Gustas",
+          "title": "Tu Me Gustas",
+          "duration": "04:40",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Giouanny Jiménez"
+        },
+        {
+          "position": 7,
+          "source_title": "Lloro Por Ti",
+          "title": "Lloro Por Ti",
+          "duration": "04:44",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Onorio Taveras"
+        },
+        {
+          "position": 8,
+          "source_title": "Baile Baile",
+          "title": "Baile Baile",
+          "duration": "04:05",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "William Duval"
+        },
+        {
+          "position": 9,
+          "source_title": "Te Quiero, Te Quiero",
+          "title": "Te Quiero, Te Quiero",
+          "duration": "04:35",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 10,
+          "source_title": "Yo Te Quiero Asi",
+          "title": "Yo Te Quiero Asi",
+          "duration": "05:27",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "D.R."
+        }
+      ],
+      "notes": [
+        "Track composer labels are literal source assertions, not automatic Work credits. Album personnel listing is not assigned to every recording.",
+        "D.R. and Public Domain are not contributor identities; G. Ravel and similar names remain literal pending identity review."
+      ]
+    },
+    {
+      "key": "alma-ritmo-pueblo-rmm-82150",
+      "action": "propose_create",
+      "before": null,
+      "title": "Alma Ritmo Y Pueblo",
+      "source_title": "Alma Ritmo Y Pueblo",
+      "release_type": "album",
+      "format": "CD",
+      "territory": null,
+      "release_year": 1997,
+      "release_date": null,
+      "date_precision": "year proposed; full supplier date retained as assertion only",
+      "supplier_date": "April 22, 1997",
+      "label": "Merengazo Records / RMM",
+      "catalog_number": "82150",
+      "artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+      "source_url": "https://www.allmusic.com/album/alma-ritmo-y-pueblo-mw0000593199",
+      "cover": {
+        "title": "Alma Ritmo Y Pueblo",
+        "url": "https://fastly-s3.allmusic.com/release/mr0000068612/front/400/W64uFxTnYALKzH8SlDssmA4Q1ghY8VaPylnm7PwcKNY=.jpg",
+        "file": "album-0.jpg",
+        "sha256": "328fc8e1fb5b4ce4108657f1f16307894a3d2e29fc2a56f5285f986128c0194d",
+        "bytes": 20862
+      },
+      "credits_literal": [
+        {
+          "credited_as": "Albert Hernandez",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Anthony Israel",
+          "roles_literal": "Photography",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Anthony Rios",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Carlos Araujo",
+          "roles_literal": "Bass, Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Charlie Valens",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Denise Rodriguez",
+          "roles_literal": "Make-Up",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Fermin Crúz",
+          "roles_literal": "Trumpet",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Franklin Guzman",
+          "roles_literal": "Guira",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Freddy Valdez",
+          "roles_literal": "Arranger, Bass",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Henry Garcia",
+          "roles_literal": "Vocals (Background)",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Isaias Leckler",
+          "roles_literal": "Bass",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Jose Fléte",
+          "roles_literal": "Trombone",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Jose Lucía",
+          "roles_literal": "Tambourine",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "José Peña Suazo",
+          "roles_literal": "Arranger, Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Juan Valdez",
+          "roles_literal": "Arranger, Keyboards, Piano",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Junior Cabrera",
+          "roles_literal": "Arranger, Piano",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Leoginaldo Pimentel",
+          "roles_literal": "Piano",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Liliane Van Balberghe",
+          "roles_literal": "Graphic Design",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Luis Garcia",
+          "roles_literal": "Trumpet",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Luisin Marti",
+          "roles_literal": "Associate Producer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Marcos Llunas",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Nelfy Alcántara",
+          "roles_literal": "Congas",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Papo Cadena",
+          "roles_literal": "Saxophone",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Ralph Mercado",
+          "roles_literal": "Executive Producer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Ravel",
+          "roles_literal": "Primary Artist, Producer, Vocals (Background)",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Ricardo Arjona",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Santi Santiago",
+          "roles_literal": "Piano",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Tony Lucia",
+          "roles_literal": "Guira",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Victor Waill",
+          "roles_literal": "Arranger, Composer, Piano, Producer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "William Liriano",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        }
+      ],
+      "tracks": [
+        {
+          "position": 1,
+          "source_title": "Yo Se Lo Mando",
+          "title": "Yo Se Lo Mando",
+          "duration": "04:25",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Charlie Valens / Victor Waill"
+        },
+        {
+          "position": 2,
+          "source_title": "Remenéate",
+          "title": "Remenéate",
+          "duration": "04:01",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Victor Waill"
+        },
+        {
+          "position": 3,
+          "source_title": "Amiga del Alama",
+          "title": "Amiga del Alama",
+          "duration": "04:34",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "José Peña Suazo",
+          "proposed_display_title": "Amiga del Alma",
+          "normalization_note": "AllMusic literal retained; alternate program gives this spelling. Editor review pending.",
+          "alternate_source_url": "https://fevmusical.blogspot.com/2017/05/1997-ravel-alma-ritmo-y-pueblo-merengazo.html"
+        },
+        {
+          "position": 4,
+          "source_title": "Chévere Nice",
+          "title": "Chévere Nice",
+          "duration": "04:10",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Albert Hernandez"
+        },
+        {
+          "position": 5,
+          "source_title": "Señora de Las Cuatro Decadas",
+          "title": "Señora de Las Cuatro Decadas",
+          "duration": "04:10",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Ricardo Arjona"
+        },
+        {
+          "position": 6,
+          "source_title": "Eres Unica",
+          "title": "Eres Unica",
+          "duration": "04:22",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Marcos Llunas"
+        },
+        {
+          "position": 7,
+          "source_title": "El Tipo Sin Complejos",
+          "title": "El Tipo Sin Complejos",
+          "duration": "04:28",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "William Liriano"
+        },
+        {
+          "position": 8,
+          "source_title": "Si Entenderias",
+          "title": "Si Entenderias",
+          "duration": "03:40",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Anthony Rios",
+          "proposed_display_title": "Si Entendieras",
+          "normalization_note": "AllMusic literal retained; alternate program gives this spelling. Editor review pending.",
+          "alternate_source_url": "https://fevmusical.blogspot.com/2017/05/1997-ravel-alma-ritmo-y-pueblo-merengazo.html"
+        },
+        {
+          "position": 9,
+          "source_title": "Llegó Tu Papi",
+          "title": "Llegó Tu Papi",
+          "duration": "04:27",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Carlos Araujo"
+        },
+        {
+          "position": 10,
+          "source_title": "Mujer Preciosa",
+          "title": "Mujer Preciosa",
+          "duration": "03:56",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        }
+      ],
+      "notes": [
+        "Track composer labels are literal source assertions, not automatic Work credits. Album personnel listing is not assigned to every recording.",
+        "D.R. and Public Domain are not contributor identities; G. Ravel and similar names remain literal pending identity review."
+      ]
+    },
+    {
+      "key": "mujer-vida-rmm-82299",
+      "action": "propose_create",
+      "before": null,
+      "title": "La mujer de mi vida",
+      "source_title": "Mujer de Mi Vida",
+      "release_type": "album",
+      "format": "CD",
+      "territory": null,
+      "release_year": 1999,
+      "release_date": null,
+      "date_precision": "year proposed; full supplier date retained as assertion only",
+      "supplier_date": "February 23, 1999",
+      "label": "Merengazo Records / RMM",
+      "catalog_number": "82299",
+      "artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+      "source_url": "https://www.allmusic.com/album/mujer-de-mi-vida-mw0000049247",
+      "cover": {
+        "title": "Mujer de Mi Vida",
+        "url": "https://fastly-s3.allmusic.com/release/mr0000016650/front/400/owCivaz_CsiVnWz6ED-cnj6KsMttLlyBmmVTZ6_CLs0=.jpg",
+        "file": "album-1.jpg",
+        "sha256": "6541b293a5442bf0a4231e14308f718ad0c2fa2d61cf616060e8daedca4adc3c",
+        "bytes": 18453
+      },
+      "credits_literal": [
+        {
+          "credited_as": "Abelito",
+          "roles_literal": "Bongos",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Amaury Colon",
+          "roles_literal": "Vocals",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Anibal Inoa",
+          "roles_literal": "Engineer, Mixing",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Crispin Fernández",
+          "roles_literal": "Sax (Alto), Sax (Tenor)",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Darys Contreras",
+          "roles_literal": "Piano",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Erick Rodriguez",
+          "roles_literal": "Engineer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "F. Catano",
+          "roles_literal": "Engineer, Producer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "G. Ravel",
+          "roles_literal": "Producer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Geremias",
+          "roles_literal": "Engineer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Henry Garcia",
+          "roles_literal": "Vocals",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Isaias Leclerc",
+          "roles_literal": "Bass",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Jorge Garcia",
+          "roles_literal": "Photography",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "José Alfredo Jiménez",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "José Luis \"Caplís\" Chacín",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Kaki Ruiz",
+          "roles_literal": "Trumpet",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Liliane Van Balberghe",
+          "roles_literal": "Design, Photography",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Luisin Marti",
+          "roles_literal": "Associate Producer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Manuel Alejandro",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Marco Antonio Solís",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Marcos Felix",
+          "roles_literal": "Engineer, Mixing",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Miguel Pérez",
+          "roles_literal": "Engineer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Phil Austin",
+          "roles_literal": "Mastering",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Piero Cassano",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Public Domain",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Purificaio Casas Romero",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Ralph Mercado",
+          "roles_literal": "Executive Producer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Ravel",
+          "roles_literal": "Composer, Primary Artist",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Ricardo Montaner",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Tito Rocha",
+          "roles_literal": "Engineer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Winston Paulino",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        }
+      ],
+      "tracks": [
+        {
+          "position": 1,
+          "source_title": "La Mujer de Mi Vida",
+          "title": "La Mujer de Mi Vida",
+          "duration": "05:24",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Piero Cassano / José Luis \"Caplís\" Chacín / Ricardo Montaner"
+        },
+        {
+          "position": 2,
+          "source_title": "El Pepino",
+          "title": "El Pepino",
+          "duration": "04:56",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Winston Paulino"
+        },
+        {
+          "position": 3,
+          "source_title": "Que Pena Me Das",
+          "title": "Que Pena Me Das",
+          "duration": "04:25",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Marco Antonio Solís"
+        },
+        {
+          "position": 4,
+          "source_title": "Potpurri Odilio Gonzalez: Yo Quisiera/Mercedita/TÝ Me Celas Sin RazÛn",
+          "title": "Potpurri Odilio Gonzalez: Yo Quisiera/Mercedita/TÝ Me Celas Sin RazÛn",
+          "duration": "09:13",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Public Domain",
+          "proposed_display_title": "Potpurri Odilio Gonzalez: Yo Quisiera/Mercedita/Tú Me Celas Sin Razón",
+          "normalization_note": "Source has encoding artifacts TÝ and RazÛn; original literal preserved. Review proposed character repair before import."
+        },
+        {
+          "position": 5,
+          "source_title": "Pan con Queso Pa' los Preguntones",
+          "title": "Pan con Queso Pa' los Preguntones",
+          "duration": "03:58",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Ravel"
+        },
+        {
+          "position": 6,
+          "source_title": "El Más Feliz del Mundo",
+          "title": "El Más Feliz del Mundo",
+          "duration": "05:05",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Manuel Alejandro"
+        },
+        {
+          "position": 7,
+          "source_title": "Esa Triste Guitarra",
+          "title": "Esa Triste Guitarra",
+          "duration": "04:57",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Purificaio Casas Romero"
+        },
+        {
+          "position": 8,
+          "source_title": "La Media Vuelta",
+          "title": "La Media Vuelta",
+          "duration": "04:02",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "José Alfredo Jiménez"
+        }
+      ],
+      "notes": [
+        "Track composer labels are literal source assertions, not automatic Work credits. Album personnel listing is not assigned to every recording.",
+        "D.R. and Public Domain are not contributor identities; G. Ravel and similar names remain literal pending identity review."
+      ]
+    },
+    {
+      "key": "como-querias-lf-digital",
+      "action": "propose_create",
+      "before": null,
+      "title": "Como Tu Lo Querias",
+      "release_type": "album",
+      "format": "digital",
+      "territory": null,
+      "release_year": 1999,
+      "release_date": null,
+      "date_precision": "year; supplier January 1 not asserted as original release day",
+      "label": "LF Productions",
+      "catalog_number": null,
+      "artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+      "source_url": "https://music.amazon.in/albums/B09C19XLL2",
+      "provider_id": {
+        "amazon": "B09C19XLL2"
+      },
+      "cover": {
+        "title": "Como Tu Lo Querias — digital LF Productions edition",
+        "url": "https://m.media-amazon.com/images/I/51d7DPUgPoL._UX358_FMwebp_QL85_.jpg",
+        "file": "como-digital.jpg",
+        "sha256": "e3614a35ee0d2259b1cde29706aae7b3885465e3705752a4c4eab7e454f7096d",
+        "bytes": 31930
+      },
+      "credits_literal": [],
+      "tracks": [
+        {
+          "position": 1,
+          "title": "El Guineo",
+          "duration": "4:33",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 2,
+          "title": "El Muerto Vivo",
+          "duration": "4:48",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 3,
+          "title": "Tu Amorsote",
+          "duration": "4:31",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 4,
+          "title": "Adicto a Tu Amor",
+          "duration": "4:44",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 5,
+          "title": "Ojos Que No Ven / Corazón Que No Siente",
+          "duration": "4:16",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 6,
+          "title": "Cosa Linda",
+          "duration": "4:58",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 7,
+          "title": "Antojito de Amor",
+          "duration": "4:46",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 8,
+          "title": "Mi Camisa Dominguera",
+          "duration": "3:46",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 9,
+          "title": "Vuelve Corazón",
+          "duration": "3:31",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 10,
+          "title": "El Roto",
+          "duration": "4:18",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        }
+      ],
+      "notes": [
+        "Digital manifestation explicitly carries ℗© 1999 LF Productions.",
+        "1994 Camino CD 1234 is separately documented but its program was unavailable; no assumption that the editions are identical.",
+        "Cover visually displays Camino branding despite digital LF copyright line; both assertions retained."
+      ]
+    }
+  ],
+  "held_candidates": [
+    {
+      "title": "Mejor Que Nunca",
+      "year": 2000,
+      "source_url": "https://www.allmusic.com/album/mejor-que-nunca-mw0000618954",
+      "catalog_number": "284083",
+      "label": "Merengazo Records / RMM",
+      "format": "CD",
+      "cover": {
+        "title": "Mejor Que Nunca",
+        "url": "https://fastly-s3.allmusic.com/release/mr0000323098/front/400/eEsU28wdnVWYRdgTClww5lWnbEN5fCjifro6xhIBuB4=.jpg",
+        "file": "album-2.jpg",
+        "sha256": "bc8c4dc6456aee2b950fd18d034b5f1d3b239649a780c35e7236a82754a72383",
+        "bytes": 21397
+      },
+      "tracks": [
+        {
+          "position": 1,
+          "source_title": "Sentirme Vivo",
+          "title": "Sentirme Vivo",
+          "duration": "04:47",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 2,
+          "source_title": "Quiero Que Seas Mi Estrella",
+          "title": "Quiero Que Seas Mi Estrella",
+          "duration": "04:27",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Jean Carlos Centeno"
+        },
+        {
+          "position": 3,
+          "source_title": "Desnuda",
+          "title": "Desnuda",
+          "duration": "04:55",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Ricardo Arjona"
+        },
+        {
+          "position": 4,
+          "source_title": "Penas del Corazon",
+          "title": "Penas del Corazon",
+          "duration": "04:55",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 5,
+          "source_title": "Amiga del Alma",
+          "title": "Amiga del Alma",
+          "duration": "04:49",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 6,
+          "source_title": "Donde Va el Amor",
+          "title": "Donde Va el Amor",
+          "duration": "05:14",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        },
+        {
+          "position": 7,
+          "source_title": "Completamente Tuyo",
+          "title": "Completamente Tuyo",
+          "duration": "05:00",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Rudy Pérez"
+        },
+        {
+          "position": 8,
+          "source_title": "Mas",
+          "title": "Mas",
+          "duration": "04:24",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Rafael Pérez Botija"
+        },
+        {
+          "position": 9,
+          "source_title": "Fuera Ropa",
+          "title": "Fuera Ropa",
+          "duration": "05:12",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": "Waldir Luz"
+        },
+        {
+          "position": 10,
+          "source_title": "Loco, Loco, Loco",
+          "title": "Loco, Loco, Loco",
+          "duration": "04:17",
+          "performer_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+          "composer_literal": null
+        }
+      ],
+      "credits_literal": [
+        {
+          "credited_as": "Anibal Inoa",
+          "roles_literal": "Engineer, Mixing",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Crispin Fernández",
+          "roles_literal": "Alto (Vocals), Tenor (Vocal)",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Darys Contreras",
+          "roles_literal": "Arranger, Keyboards, Piano",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Henry Garcia",
+          "roles_literal": "Vocals (Background)",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Jean Carlos Centeno",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "José Luis Mateo",
+          "roles_literal": "Trumpet",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Kaki Ruiz",
+          "roles_literal": "Trumpet",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Kenneth O'Banyon",
+          "roles_literal": "Graphic Design",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Luis Gomez Escobar",
+          "roles_literal": "Arranger",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Luisin Marti",
+          "roles_literal": "Producer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Luisín del Rosario",
+          "roles_literal": "Alto (Vocals), Tenor (Vocal)",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Marcos Felix",
+          "roles_literal": "Engineer, Mixing",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Marta Ibarra",
+          "roles_literal": "Editing",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Miguel Pérez",
+          "roles_literal": "Engineer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Nelson Roman",
+          "roles_literal": "Photography",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Oquil Medrano",
+          "roles_literal": "Congas",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Pablo Martinez",
+          "roles_literal": "Vocals (Background)",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Phil Austin",
+          "roles_literal": "Mastering",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Rafael Pérez Botija",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Ralph Mercado",
+          "roles_literal": "Executive Producer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Ravel",
+          "roles_literal": "Primary Artist",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Ricardo Arjona",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Rudy Pérez",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Sonia Mena",
+          "roles_literal": "Vocals (Background)",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Tito Rocha",
+          "roles_literal": "Engineer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Vincente Iturbides",
+          "roles_literal": "Coordination",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        },
+        {
+          "credited_as": "Waldir Luz",
+          "roles_literal": "Composer",
+          "canonical_artist_id": null,
+          "scope": "album-level source listing; no track-wide propagation"
+        }
+      ],
+      "reason": "Track 5 Amiga del Alma (4:49) versus 1997 Amiga del Alama (4:34): recording identity unresolved. Also source mislabels saxophonists with vocal roles; retain literal evidence without importing those roles."
+    },
+    {
+      "title": "No Basta",
+      "year": 1991,
+      "format": "12-inch vinyl single",
+      "source_url": "https://www.allmusic.com/album/no-basta-mw0001083448",
+      "reason": "Edition metadata found but full side/program and cover unverified; not an album."
+    },
+    {
+      "title": "La Mazorca",
+      "year": 1991,
+      "format": "12-inch vinyl single",
+      "source_url": "https://www.allmusic.com/album/la-mazorca-mw0001087819",
+      "reason": "Edition metadata found but full side/program and cover unverified; not an album."
+    },
+    {
+      "title": "Con Sentimiento",
+      "year": 1993,
+      "label": "Jn Records",
+      "catalog_number": "746",
+      "format": "CD",
+      "reason": "Edition documented; full program not independently inspected. Do not duplicate photographed 1992 LP recordings blindly."
+    },
+    {
+      "title": "Como Tu Lo Querias",
+      "year": 1994,
+      "label": "Camino Records",
+      "catalog_number": "1234",
+      "format": "CD",
+      "reason": "Edition documented; full program unavailable. Keep distinct from the 1999 digital manifestation."
+    }
+  ],
+  "counts": {
+    "proposed_releases": 5,
+    "proposed_track_appearances": 47,
+    "proposed_recording_candidates": 47,
+    "new_works": 0,
+    "release_groups": 0,
+    "canonical_contributor_credit_writes": 0,
+    "proposed_covers": 5
+  },
+  "execution_constraints": [
+    "No automatic Work creation or composition credits. Preserve source names/roles as assertions pending identity and scope review.",
+    "No shared records, other artist profiles, merges, deletions, security, publication, or biographies changed.",
+    "Before execution search existing title/version candidates and abort on unexpected identity overlap.",
+    "Do not infer Recording identity from title, duration, external ID, or appearance date.",
+    "Proposed 47 recordings remain candidates until pre-import identity checks; counts may change only through a reviewed manifest revision."
+  ],
+  "no_database_changes": true
+}

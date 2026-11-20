@@ -1,0 +1,376 @@
+{
+  "date": "2026-10-27",
+  "authorization": "The editor supplied Lauryn Novas YouTube, Instagram, Facebook and Spotify links in the established Mangulina profile workflow.",
+  "scope": "Create Lauryn Novas draft artist and validated published ES/EN biographies only; no catalog, media, shared biography, security or deployment writes.",
+  "before": null,
+  "after": {
+    "id": "68c7fd2c-0114-48c4-83bc-06e8587badf3",
+    "name": "Lauryn Novas",
+    "stage_name": "Lauryn Novas",
+    "sort_name": "Novas, Lauryn",
+    "slug": "lauryn-novas",
+    "type": "solo_artist",
+    "status": "draft",
+    "first_name": null,
+    "middle_name": null,
+    "last_name": null,
+    "second_last_name": null,
+    "aliases": [],
+    "birth_place": null,
+    "province": null,
+    "date_of_birth": null,
+    "birth_year": null,
+    "date_of_death": null,
+    "death_year": null,
+    "gender": "female",
+    "primary_role": "singer",
+    "occupations": [
+      "songwriter"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "primary_genre": "bachata",
+    "genres": [],
+    "artist_tags": [
+      "secular"
+    ],
+    "spotify": "2WzAi7jYCMCGi7HfySWZEV",
+    "facebook": "laurynnovasoficial",
+    "instagram": "laurynnovasoficial",
+    "youtube": "@laurynnovas",
+    "website": null
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lauryn Novas es una cantante y compositora dominicana de bachata que celebra su cumpleaños el 2 de mayo. Su año y ciudad de nacimiento no están documentados en las fuentes públicas consultadas. Con su álbum debut, «Soy Yo» (2023), llevó canciones de balada y pop al lenguaje de la bachata e incorporó composiciones propias a su repertorio."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Formación y primeros escenarios",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Comenzó a cantar en los coros de su iglesia y su escuela, y participó en concursos estudiantiles. También trabajó como modelo en comerciales antes de integrarse como vocalista a la agrupación dominicana «Diamante Súper Band». Tras trasladarse a Estados Unidos actuó como solista y abrió espectáculos de artistas como "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+                  "occurrenceId": "798e80db-1e4e-4a4f-9fc7-beda3a7432b4",
+                  "displayText": "Vickiana"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y de grupos como «Menudo» y «Gipsy Kings». En una entrevista de 2023 contó que compaginaba la música con su trabajo en odontología."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Primeros discos",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2022 debutó en bachata con «Lo quiero a morir», una versión de la canción conocida por la interpretación de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "876ede84-627b-4f24-ae9a-04ba7e02ff09",
+                  "occurrenceId": "9fac9bec-c70c-450e-923e-0fa386c9c142",
+                  "displayText": "Ángela Carrasco"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Su segundo sencillo, «Soy Yo», adaptó al género un tema escrito por Kany García. Ambas grabaciones salieron con el respaldo de «JN Music Group». El productor ejecutivo Nelson Estévez y el productor musical Mártires de León estuvieron a cargo de su primer álbum, «Soy Yo», publicado en enero de 2023 con once canciones. En ese disco incluyó «Cobarde», un tema que, según contó la propia Novas, había escrito años antes."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Otras grabaciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2022 se publicó «Amor a medio tiempo», un dúo que incorpora su voz a una grabación de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a92fa7a6-842f-44fe-95cb-103c3c38f903",
+                  "occurrenceId": "b4fadab7-c2de-4894-bf74-b51df55cc911",
+                  "displayText": "Yoskar Sarante"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", fallecido antes de la colaboración. La canción formó parte posteriormente de «Legendarios», el homenaje discográfico a Sarante editado en 2024. En febrero de 2025 lanzó el sencillo «Cualquiera Se Engaña»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Novas desarrolla una trayectoria centrada en la bachata romántica. Sus primeras grabaciones reúnen nuevas versiones de canciones conocidas, escritura propia y una colaboración póstuma que conecta su voz con el repertorio de Yoskar Sarante."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Lauryn Novas is a Dominican bachata singer and songwriter whose birthday is 2 May. Her birth year and birth city have not been established by the public sources consulted. Her debut album, «Soy Yo» (2023), brought ballad and pop songs into a bachata setting alongside material she wrote herself."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early singing and stage work",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Novas began singing in church and school choirs and took part in student singing contests. She also appeared as a model in commercials before joining the Dominican group «Diamante Súper Band» as a vocalist. After moving to the United States, she performed as a solo singer and opened shows for performers including "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+                  "occurrenceId": "0bb55372-6976-45a1-aa66-994a77cdaa67",
+                  "displayText": "Vickiana"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and groups such as «Menudo» and «Gipsy Kings». In a 2023 interview she said she combined music with work in dentistry."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "First recordings",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Her 2022 bachata debut, «Lo quiero a morir», reinterpreted a song associated with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "876ede84-627b-4f24-ae9a-04ba7e02ff09",
+                  "occurrenceId": "80b5a436-b482-4cad-abab-17b79e71b11b",
+                  "displayText": "Ángela Carrasco"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Her second single, «Soy Yo», adapted a song written by Kany García. Both appeared with the support of «JN Music Group». Executive producer Nelson Estévez and music producer Mártires de León worked on her first album, «Soy Yo», released in January 2023 with eleven tracks. The album includes «Cobarde», which Novas said she had written years earlier."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Further releases",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Released in 2022, «Amor a medio tiempo» paired her voice with a recording of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a92fa7a6-842f-44fe-95cb-103c3c38f903",
+                  "occurrenceId": "a4fab5aa-5b36-4ac7-aa47-2595cbfb871c",
+                  "displayText": "Yoskar Sarante"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", who had died before the collaboration. The duet later appeared on «Legendarios», the 2024 album honouring Sarante. In February 2025 she released the single «Cualquiera Se Engaña»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Novas's recorded work focuses on romantic bachata. Her early releases combine reinterpretations of familiar songs with her own writing, while the posthumous duet links her voice to Yoskar Sarante's repertoire."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "876ede84-627b-4f24-ae9a-04ba7e02ff09",
+      "name": "Ángela Carrasco",
+      "slug": "angela-carrasco",
+      "status": "published"
+    },
+    {
+      "id": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+      "name": "Vickiana",
+      "slug": "vickiana",
+      "status": "published"
+    },
+    {
+      "id": "a92fa7a6-842f-44fe-95cb-103c3c38f903",
+      "name": "Yoskar Sarante",
+      "slug": "yoskar-sarante",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "lauryn-novas-evidence-2026-10-27.md",
+  "backward_reference_audit": {
+    "inspected_documents": 2,
+    "matches": 0,
+    "legacy_matches": [],
+    "file": "lauryn-novas-pending-backlinks.json"
+  },
+  "field_sources": {
+    "name": "JN Music Group, first-person interview and four artist accounts: Lauryn Novas; no documented expanded personal name.",
+    "birthday": "First-person Facebook birthday posts 2 May 2023 and 2024; JN Music Group birthday graphic 2 May 2025. Birth year unknown.",
+    "birth_place": "No verifiable birth city or province; Facebook About and press checked.",
+    "roles_genres": "Interview explicitly identifies woman, singer and author of Cobarde; label and catalog establish bachata; secular romantic repertoire.",
+    "handles": "User-provided accounts cross-verified by same catalog and YouTube-to-Instagram link; social fields contain handles only, Spotify contains artist ID."
+  },
+  "unresolved": [
+    "Full DOB/year unknown despite verified 2 May birthday.",
+    "Birthplace, province and expanded personal name unknown.",
+    "No verified portrait supplied; image remains empty.",
+    "Discography is outside this request."
+  ]
+}

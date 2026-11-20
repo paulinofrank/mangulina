@@ -140,9 +140,13 @@ async function loadArtistDirectoryInitialData(
   if (artistStatuses.length === 1) query = query.contains("artist_tags", [artistStatuses[0]]);
   if (genreFilter) {
     const option = genreOptions.find((item) => (item.slug || item.name) === genreFilter);
-    query = option?.matchValues?.length
-      ? query.or(buildGenreMatchFilter(option.matchValues))
-      : query.eq("primary_genre", genreFilter);
+    if (options.role === "singer") {
+      query = query.in("primary_genre", option?.matchValues?.length ? option.matchValues : [genreFilter]);
+    } else {
+      query = option?.matchValues?.length
+        ? query.or(buildGenreMatchFilter(option.matchValues))
+        : query.eq("primary_genre", genreFilter);
+    }
   }
   if (subgenreFilter) {
     const option = subgenreOptions.find((item) => item.name === subgenreFilter);
@@ -201,8 +205,8 @@ async function loadArtistDirectoryInitialData(
 
 export const getArtistDirectoryInitialData = unstable_cache(
   loadArtistDirectoryInitialData,
-  // v3: the singers browse category now includes rappers.
-  ["public-artist-directory-initial-data-v3"],
+  // v4: the singers and rappers directory filters by primary genre.
+  ["public-artist-directory-initial-data-v4"],
   {
     revalidate: PUBLIC_ARTIST_DIRECTORY_REVALIDATE_SECONDS,
     tags: [PUBLIC_ARTIST_DIRECTORY_CACHE_TAG],

@@ -1,0 +1,1 @@
+import fs from 'node:fs';const b='docs/reports/editorial/';for(const[n,url]of Object.entries(JSON.parse(fs.readFileSync(b+'luchy-final-source-urls.json','utf8')))){const r=await fetch(url);if(r.ok){fs.writeFileSync(b+'luchy-'+n+(n.endsWith('pdf')?'.pdf':'.jpg'),Buffer.from(await r.arrayBuffer()));console.log(n,'OK')}else console.log(n,r.status)}

@@ -1,0 +1,1 @@
+import fs from 'node:fs';const s=JSON.parse(fs.readFileSync('docs/reports/editorial/ravel-portrait-source.json','utf8'));const r=await fetch(s.url);if(!r.ok)throw Error(String(r.status));fs.writeFileSync('docs/reports/editorial/ravel-official-portrait.jpg',Buffer.from(await r.arrayBuffer()));console.log('Official portrait saved');

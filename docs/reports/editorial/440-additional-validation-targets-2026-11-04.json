@@ -1,0 +1,38 @@
+[
+  {
+    "id": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+    "name": "Ramón Orlando",
+    "slug": "ramon-orlando",
+    "status": "published"
+  },
+  {
+    "id": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+    "name": "Julio Alberto Hernández",
+    "slug": "julio-alberto-hernandez",
+    "status": "published"
+  },
+  {
+    "id": "25a420d1-7a98-4fd2-93c8-38d3ed2d2dc1",
+    "name": "José Antonio Rodríguez",
+    "slug": "jose-antonio-rodriguez",
+    "status": "published"
+  },
+  {
+    "id": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+    "name": "Fefita la Grande",
+    "slug": "fefita-la-grande",
+    "status": "published"
+  },
+  {
+    "id": "df68a7c8-c284-4d97-a4fd-b02264396148",
+    "name": "José Antonio Molina",
+    "slug": "jose-antonio-molina",
+    "status": "published"
+  },
+  {
+    "id": "ec0ebf45-13ca-41bd-af4c-256e4f226823",
+    "name": "Claudio Cohén",
+    "slug": "claudio-cohen",
+    "status": "published"
+  }
+]

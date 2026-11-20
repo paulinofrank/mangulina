@@ -1,0 +1,4778 @@
+{
+  "date": "2026-10-28",
+  "owners": [
+    {
+      "id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "name": "Antony Santos",
+      "slug": "antony-santos",
+      "status": "published"
+    },
+    {
+      "id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "name": "Cromo X",
+      "slug": "cromo-x",
+      "status": "published"
+    },
+    {
+      "id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "name": "T.Y.S",
+      "slug": "t-y-s",
+      "status": "published"
+    },
+    {
+      "id": "3e1718be-c12d-42f5-85e7-2156d9574940",
+      "name": "Tokischa",
+      "slug": "tokischa",
+      "status": "published"
+    },
+    {
+      "id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "name": "Mítiko",
+      "slug": "mitiko",
+      "status": "published"
+    },
+    {
+      "id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "name": "Los Sufridos",
+      "slug": "los-sufridos",
+      "status": "published"
+    },
+    {
+      "id": "b8699416-10d2-4c84-a43a-2a035387126f",
+      "name": "Eklectico",
+      "slug": "eklectico",
+      "status": "published"
+    }
+  ],
+  "documents": [
+    {
+      "id": "0bd2bbbc-4697-4725-921e-15add6f9d3df",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Antony Santos, born Domingo Antonio Santos Muñoz on May 5, 1967, is a Dominican singer, guitarist, songwriter and producer, and the single most consequential figure in the transformation of bachata from a stigmatized rural music into the country’s dominant popular genre. Known as \"El Mayimbe,\" he came out of the northwestern border country playing güira behind someone else, and within three years of going solo had rewritten what bachata was allowed to sound like.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Early years and the güira",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Santos was born in Clavellinas, a rural settlement in Las Matas de Santa Cruz, Monte Cristi province, into severe poverty — his father’s work was unsteady and food was not reliable. He made his first instruments out of broken bottles before he ever had a guitar.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He entered the music business in the late 1980s not as a singer but as a güirero, playing percussion behind the bachatero ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0760875d-6b6f-4a48-8aed-6e57934d1baa",
+                  "displayText": "Luis Vargas",
+                  "occurrenceId": "b81e25a9-bbd2-43c5-8720-dc4831854481"
+                }
+              },
+              {
+                "text": ". It was the right apprenticeship: bachata is a rhythm musician’s genre before it is a singer’s, and the years spent inside its percussion gave him an instinct for it that shows in everything he later produced himself.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La Chupadera and «Voy pa’llá»",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He went out on his own in 1991 with the album La Chupadera, and its single «Voy pa’llá» did something no bachata record had managed before: it made a bachatero of rural origin a national star, and carried into Dominican communities across the United States. The albums came fast afterward — La batalla in 1992, Corazón bonito in 1993, Corazón culpable in 1994 — and by the middle of the decade the argument about who led the genre was effectively over.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "What he changed about bachata",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The bachata Santos inherited was music of the barroom and the brothel, sung in a rough register about drinking and betrayal, and looked down on accordingly. What he brought to it was romantic vulnerability — a man singing plainly about hurt rather than performing toughness about it — and that shift did more to make the genre respectable than any amount of advocacy could have.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He changed how it sounded, too. He brought in saxophone, keyboards and strings, instruments the style had never used; he was particular about guitars and effects pedals in a way bachateros had not been; and he raised the standard of production across the industry simply by clearing a higher bar himself. He also leaned hard on merengue in his records, which mattered strategically: Dominicans who still considered bachata beneath them were already comfortable dancing merengue, and he used that comfort as a door.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The trinity",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Santos, ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0760875d-6b6f-4a48-8aed-6e57934d1baa",
+                  "displayText": "Luis Vargas",
+                  "occurrenceId": "d3488af9-7f08-4402-8584-33b93342d7fc"
+                }
+              },
+              {
+                "text": " and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "96e69c00-dbb0-4cb4-ab48-ea46be9c4591",
+                  "displayText": "Raulín Rodríguez",
+                  "occurrenceId": "e924cfb7-f954-4e12-bc25-2fdc111cf328"
+                }
+              },
+              {
+                "text": " all came from the same stretch of the northwestern border and are spoken of together as the trinity of Dominican bachata. His relationship with Vargas in particular ran as a long public rivalry, which sold records for both of them for years. In 2011 the three appeared together on «Debate de 4», a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8f1d2a44-3c6e-4b17-9a58-7d0e5c9b21f3",
+                  "displayText": "Romeo Santos",
+                  "occurrenceId": "03d0f7f8-2aa4-494e-8e90-cfc344d30ac7"
+                }
+              },
+              {
+                "text": " recording that put the generation that built modern bachata on one track — a summit the genre had never staged before.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Recognition",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The honors accumulated across three decades:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "five Casandra/Soberano awards as Bachatero del Año, in 1996, 2007, 2009, 2013 and 2019,",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "the Gran Soberano in 2019, the top lifetime honor in Dominican arts,",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "the first solo Madison Square Garden concert by a traditional bachatero, in 2014,",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "number one on Billboard’s Tropical Airplay chart with «Solo te amo» in 2014,",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "and August 8 proclaimed \"Anthony Santos Day\" in New York City in 2019.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He is the second Dominican musician to carry the title \"El Mayimbe\" — a Taíno word for a village chief — after the merengue singer ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                  "displayText": "Fernando Villalona",
+                  "occurrenceId": "b5e93116-687a-4572-bbc9-a65c7be126cd"
+                }
+              },
+              {
+                "text": "; he also answers to \"El Bachatú.\"",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Later career and reach",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Santos has recorded some twenty-three studio albums and remains active, releasing La historia de mi vida: el final, Vol. 1 in 2018 and A fuerza de dolor in 2025. Younger artists have sought him out across the generational divide — ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8f1d2a44-3c6e-4b17-9a58-7d0e5c9b21f3",
+                  "displayText": "Romeo Santos",
+                  "occurrenceId": "3207fced-14b1-4901-a0a6-3f1b177b101b"
+                }
+              },
+              {
+                "text": ", Ozuna and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9c02d1a1-952e-4855-9b60-c0266236378d",
+                  "displayText": "Prince Royce",
+                  "occurrenceId": "5f418423-29ea-44e2-ada2-73153b579a6f"
+                }
+              },
+              {
+                "text": " among them — and in 2022 Bad Bunny sampled the introduction of his «No te puedo olvidar» on «Tití me preguntó», putting a 1990s Dominican bachata record in front of the largest audience in global pop. ",
+                "type": "text"
+              },
+              {
+                "text": "In August 2024 he released «Lleno Contigo» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "bd3efb06-f482-4491-bc48-92a98008f387"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Santos is where modern bachata starts. Almost every romantic bachatero who followed — and, at one remove, the whole international bachata industry built by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3a7c19e8-5d24-4f06-b8e1-9c4a70f2d5b3",
+                  "displayText": "Aventura",
+                  "occurrenceId": "e305b525-a5e2-4a96-b53d-4b8ca21b27d6"
+                }
+              },
+              {
+                "text": " and its successors — works inside a template he set between 1991 and 1995: the vulnerable lyric, the melodic lead guitar, the widened instrumentation, the production values.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The cultural argument matters as much as the musical one. Bachata was music that respectable Dominicans did not admit to owning; Santos was the artist who made that embarrassment untenable, and he did it from Clavellinas rather than from the capital. His catalog is the record of the genre changing class, and \"El Mayimbe\" is a title the country gave him for it.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-08-06T02:52:19.958156+00:00",
+      "updated_at": "2026-10-28T13:55:53.81845+00:00",
+      "revision": 9
+    },
+    {
+      "id": "becdf792-388f-4b16-ac5b-6871107bf311",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Cromo X is a Dominican songwriter, producer and performer, born Martín Rodríguez Vicente. He has written and produced across the Latin urban field for two decades, and most people who have heard his work do not know his name.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Capea el Dough",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2008 he was one of the people at the head of a posse record that gathered some fifteen Dominican rappers over a Triggah beat, alongside Nipo809 and Alofoke. Records like that are how a scene announces that it exists, and Dominican rap was still arguing for its own existence at the time.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "By 2017 the Dominican press was describing him as one of the country’s most internationally placed urban songwriters, which is an unglamorous way of saying that his name had started appearing in the credits of records made somewhere else.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The credits",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The list is long and it crosses every border the genre has: Ozuna, Arcángel, Bryant Myers, Jon Z, Anuel AA, Yandel, Enrique Iglesias, Evaluna Montaner, Becky G, Daddy Yankee, Brytiago, Farruko, Ñengo Flow, Gigolo y La Exce, C. Tangana. Después Que Te Perdí, Tanta Falta and Díganle all went multi-platinum, and he has a credit on Anuel AA’s Emmanuel.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "At home he has worked with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "d08f2c85-7f47-449e-a486-a19ba3b5841a",
+                  "displayText": "La Insuperable",
+                  "occurrenceId": "bcf4e47b-8bd8-452a-92e3-a0d99fac6dd4"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "518354a4-7cb9-4c39-a2b8-9fa4d18f50db",
+                  "displayText": "El Mayor Clásico",
+                  "occurrenceId": "5f7b894c-f313-4352-820e-3f1d06e7beec"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f57eb2e7-9ca7-463d-baee-8b3ea1800e6b",
+                  "displayText": "Secreto “El Famoso Biberón”",
+                  "occurrenceId": "5e65e833-0007-4be4-ba1c-48aa69502674"
+                }
+              },
+              {
+                "text": " and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3e1718be-c12d-42f5-85e7-2156d9574940",
+                  "displayText": "Tokischa",
+                  "occurrenceId": "eb88df53-bdfe-4601-9b2c-3fa9f48c352e"
+                }
+              },
+              {
+                "text": ". The Dominican work and the international work are the same job done in two markets, and the second only happened because the first did.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Owning the room",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He co-founded the label MVP X Records with Raúl López, a house of producers, writers and artists rather than a stable of singers. That is the significant move: for most of the genre’s history the Dominican contribution has been talent hired by somebody else’s company, and a label of writers keeps the publishing at home.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In January 2022 he signed a global publishing deal with Warner Chappell Music.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In front of the microphone",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La Para, made with Bryant Myers and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "d08f2c85-7f47-449e-a486-a19ba3b5841a",
+                  "displayText": "La Insuperable",
+                  "occurrenceId": "0fdb75a6-301c-42b4-8a34-c74dac84f836"
+                }
+              },
+              {
+                "text": " in 2020, was his first outing as executive producer of a record with his own name on the front of it. It is a Dominican record built by a man who spends most of his working life making other people’s.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Sufridos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2023 he formed ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "3f42fedf-ee04-40c9-a565-763f8b8f98ab"
+                }
+              },
+              {
+                "text": " with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "displayText": "T.Y.S",
+                  "occurrenceId": "e11667af-ce93-4142-a8d4-7195dff7f5fd"
+                }
+              },
+              {
+                "text": " and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "b44d02eb-2b97-4166-b8e1-951e21a563ce"
+                }
+              },
+              {
+                "text": ". The collective brought their production backgrounds to urban bachata; in 2024 it released «Lleno Contigo» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "displayText": "Antony Santos",
+                  "occurrenceId": "fc7756cd-b227-4982-9c63-0a51907b7964"
+                }
+              },
+              {
+                "text": ", a song whose lyrics credit Cromo X under his personal name, Martín Rodríguez.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "created_at": "2026-08-06T02:52:19.958156+00:00",
+      "updated_at": "2026-10-28T13:55:53.266898+00:00",
+      "revision": 4
+    },
+    {
+      "id": "fa32365c-4cd1-4e67-98fb-ace9c1ad87cc",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Cromo X es un compositor, productor e intérprete dominicano, nacido Martín Rodríguez Vicente. Lleva dos décadas escribiendo y produciendo por todo el campo urbano latino, y casi nadie de los que han oído su trabajo sabe su nombre.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Capea el Dough",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2008 fue uno de los que encabezaron un disco colectivo que juntó a unos quince raperos dominicanos sobre una pista de Triggah, junto a Nipo809 y a Alofoke. Discos así son la manera en que una escena anuncia que existe, y el rap dominicano todavía estaba discutiendo su propia existencia en aquel momento.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Para 2017 la prensa dominicana lo describía como uno de los compositores urbanos del país con más colocación internacional, que es una manera poco vistosa de decir que su nombre había empezado a aparecer en los créditos de discos hechos en otra parte.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los créditos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La lista es larga y cruza todas las fronteras que tiene el género: Ozuna, Arcángel, Bryant Myers, Jon Z, Anuel AA, Yandel, Enrique Iglesias, Evaluna Montaner, Becky G, Daddy Yankee, Brytiago, Farruko, Ñengo Flow, Gigolo y La Exce, C. Tangana. Después Que Te Perdí, Tanta Falta y Díganle llegaron todas a multiplatino, y tiene crédito en Emmanuel, de Anuel AA.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En casa ha trabajado con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "d08f2c85-7f47-449e-a486-a19ba3b5841a",
+                  "displayText": "La Insuperable",
+                  "occurrenceId": "efa5c0d0-8da4-4cd5-8b20-edcd0ba43ac8"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "518354a4-7cb9-4c39-a2b8-9fa4d18f50db",
+                  "displayText": "El Mayor Clásico",
+                  "occurrenceId": "6c17c1ba-ed52-4fe3-b308-04d571ae74be"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f57eb2e7-9ca7-463d-baee-8b3ea1800e6b",
+                  "displayText": "Secreto “El Famoso Biberón”",
+                  "occurrenceId": "824ed8e6-7e68-47ec-b7d9-eed3effe1f02"
+                }
+              },
+              {
+                "text": " y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3e1718be-c12d-42f5-85e7-2156d9574940",
+                  "displayText": "Tokischa",
+                  "occurrenceId": "b196d859-b950-4efe-b596-8e6b798556d1"
+                }
+              },
+              {
+                "text": ". El trabajo dominicano y el internacional son el mismo oficio hecho en dos mercados, y el segundo solo ocurrió porque ocurrió el primero.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Ser dueño del cuarto",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Cofundó el sello MVP X Records con Raúl López, una casa de productores, compositores y artistas antes que un establo de cantantes. Esa es la jugada importante: durante casi toda la historia del género el aporte dominicano ha sido talento contratado por la empresa de otro, y un sello de compositores mantiene la edición en casa.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En enero de 2022 firmó un acuerdo global de edición con Warner Chappell Music.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Delante del micrófono",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La Para, hecha con Bryant Myers y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "d08f2c85-7f47-449e-a486-a19ba3b5841a",
+                  "displayText": "La Insuperable",
+                  "occurrenceId": "4e7fcf31-1251-4e3b-8e33-4696e4a934e2"
+                }
+              },
+              {
+                "text": " en 2020, fue su primera salida como productor ejecutivo de un disco con su propio nombre en la portada. Es un disco dominicano armado por un hombre que se pasa casi toda su vida laboral armando los de los demás.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Sufridos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2023 formó ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "8c9093ee-706f-480d-a6e6-d142aa67c3f6"
+                }
+              },
+              {
+                "text": " junto a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "displayText": "T.Y.S",
+                  "occurrenceId": "42a890cf-de87-45ed-b0da-b5976196dbd6"
+                }
+              },
+              {
+                "text": " y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "7978dc1c-b303-4900-9108-9ca2c7e9b690"
+                }
+              },
+              {
+                "text": ". El colectivo llevó sus trayectorias de producción a la bachata urbana; en 2024 publicó «Lleno Contigo» con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "displayText": "Antony Santos",
+                  "occurrenceId": "a5394fc1-870e-4233-8852-fc44b8c56b44"
+                }
+              },
+              {
+                "text": ", tema cuya letra acredita a Cromo X bajo su nombre personal, Martín Rodríguez.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "created_at": "2026-09-06T02:26:37.823019+00:00",
+      "updated_at": "2026-10-28T13:55:54.871384+00:00",
+      "revision": 3
+    },
+    {
+      "id": "7b9d5443-7702-45db-a4bb-382f32893e5a",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Eklectico is a Dominican rapper who bills himself as el Rey del Cielo and records under a second name, Eklectico Diablo. He belongs to the Los Excluidos collective.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Más Triste Que Nunca",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The earlier record is exactly what its title says. Intenso opens it and Amanecí sits inside it, and the mode is Dominican street rap at close range — short tracks, dry production, no reaching for a chorus.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Me Persiguen» and «Kacha2» belong to that period. In December 2023 he released «Prendela» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "6ba8d97b-1934-40b2-ae15-f44d906603d5"
+                }
+              },
+              {
+                "text": ". «Como Ali» paired him with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5fb12fee-64fe-4887-b87e-28f28a15c4f9",
+                  "displayText": "Amenazzy",
+                  "occurrenceId": "a8c1c783-fd99-4075-b302-31cde59fe096"
+                }
+              },
+              {
+                "text": ". He has also shared a stage with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9bf41d47-c5ab-45e3-b048-7bb7886b0912",
+                  "displayText": "DJ Scuff",
+                  "occurrenceId": "31a2f653-2f3e-4023-8a73-ec16f9b7f4be"
+                }
+              },
+              {
+                "text": ", which in Dominican rap is a kind of credential in itself.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Larga Vida al Rey",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In November 2025, after stepping away from the platforms for a while, he came back with twenty-five songs and a stated concept: the seven deadly sins, one idea per track. Franyer Beatz produced all of it. Four songs are collaborations, among them Soy Yo with El Don Fortyfive and Tekata with Geraldg.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The Dominican press treated it as a break with what he had been doing, and it is. The rhythms are tropical where the rap was dry, and he said plainly that the point was to reach outside the country.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Gano El 4rt3, Guayetea, Miro Al Cielo, Toa, Cyber Girl, Redes, Amigos, Discímula. Twenty-five tracks in under an hour is a specific choice — each one is short enough to be a fragment, and the album works as an accumulation rather than as a sequence.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "A concept album in a genre that does not make them",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Dominican rap and dembow are singles businesses. Records are made to be extracted from, and the album as a form is largely a container. Building one around the seven deadly sins, announcing it at a press conference and asking listeners to hear it whole is a bet against how the music is normally consumed.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Whether it works is not settled. That he tried it is the reason the record is worth naming.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "b8699416-10d2-4c84-a43a-2a035387126f",
+      "created_at": "2026-08-06T02:52:19.958156+00:00",
+      "updated_at": "2026-10-28T13:55:54.128096+00:00",
+      "revision": 3
+    },
+    {
+      "id": "716d34f2-53b6-4fbc-804e-45d3ac136990",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Eklectico es un rapero dominicano que se anuncia como el Rey del Cielo y graba también bajo un segundo nombre, Eklectico Diablo. Pertenece al colectivo Los Excluidos.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Más Triste Que Nunca",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El disco anterior es exactamente lo que dice su título. Intenso lo abre y Amanecí está adentro, y el registro es rap de calle dominicano de cerca: temas cortos, producción seca, sin buscarle el coro.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Me Persiguen» y «Kacha2» vienen de ese tramo. En diciembre de 2023 publicó «Prendela» con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "9f4d9fa2-48f7-40ce-94cf-ed6f1355126f"
+                }
+              },
+              {
+                "text": ". «Como Ali» lo juntó con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5fb12fee-64fe-4887-b87e-28f28a15c4f9",
+                  "displayText": "Amenazzy",
+                  "occurrenceId": "85b33e0c-1673-4691-be48-27389c3bfc77"
+                }
+              },
+              {
+                "text": ". También ha compartido tarima con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9bf41d47-c5ab-45e3-b048-7bb7886b0912",
+                  "displayText": "DJ Scuff",
+                  "occurrenceId": "b45d05f7-ee7c-4f04-8ca9-48ff3c22f0ce"
+                }
+              },
+              {
+                "text": ", que en el rap dominicano es una credencial por sí sola.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Larga Vida al Rey",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En noviembre de 2025, después de apartarse un tiempo de las plataformas, volvió con veinticinco canciones y un concepto declarado: los siete pecados capitales, una idea por tema. Franyer Beatz lo produjo entero. Cuatro canciones son colaboraciones, entre ellas Soy Yo con El Don Fortyfive y Tekata con Geraldg.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La prensa dominicana lo trató como un corte con lo que venía haciendo, y lo es. Los ritmos son tropicales donde el rap era seco, y él dijo sin rodeos que la intención era llegar fuera del país.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Gano El 4rt3, Guayetea, Miro Al Cielo, Toa, Cyber Girl, Redes, Amigos, Discímula. Veinticinco temas en menos de una hora es una decisión concreta: cada uno es lo bastante corto como para ser un fragmento, y el álbum funciona por acumulación y no como secuencia.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Un disco conceptual en un género que no los hace",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El rap y el dembow dominicanos son negocios de sencillos. Los discos se hacen para sacarles temas, y el álbum como forma es sobre todo un envase. Armar uno alrededor de los siete pecados capitales, anunciarlo en rueda de prensa y pedirle al oyente que lo oiga entero es apostar contra la manera en que se consume esta música.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Si funciona o no está por verse. Que lo haya intentado es la razón por la que vale la pena nombrar el disco.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "b8699416-10d2-4c84-a43a-2a035387126f",
+      "created_at": "2026-09-06T12:29:52.832175+00:00",
+      "updated_at": "2026-10-28T13:55:55.625377+00:00",
+      "revision": 2
+    },
+    {
+      "id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Sufridos is a Dominican bachata collective formed in 2023 by producers and performers ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "displayText": "Cromo X",
+                  "occurrenceId": "e8a66b44-4957-42cc-8f7c-37ae6522a5f5"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "displayText": "T.Y.S",
+                  "occurrenceId": "fa2d3529-8eb0-47c8-9d8b-4928d2b37140"
+                }
+              },
+              {
+                "text": " and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "969cc2b7-efa3-4865-8453-fdd3c9e8981c"
+                }
+              },
+              {
+                "text": ". The group uses bachata as its foundation while drawing on dembow, hip-hop and other Caribbean sounds. Its collaborations include «Lleno Contigo» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "displayText": "Antony Santos",
+                  "occurrenceId": "4459d42d-20a1-42b1-ac2b-99492dd28fe8"
+                }
+              },
+              {
+                "text": " and «Duro De Verdad pt.2» with Bad Gyal.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Origins and concept",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2023 the project brought together ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "displayText": "Cromo X",
+                  "occurrenceId": "17749911-d15f-4c65-9b9e-edb75aebc4e4"
+                }
+              },
+              {
+                "text": ", a producer associated with dembow; rapper and producer ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "displayText": "T.Y.S",
+                  "occurrenceId": "6ed42062-4e5b-49ed-88aa-0fbd47485054"
+                }
+              },
+              {
+                "text": "; and guitarist ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "86a485a6-53d5-4cb1-9545-6c38c61212ca"
+                }
+              },
+              {
+                "text": " of «La Gran Mawon». Cromo X explained that the group's name relates to bachata's amargue: sadness and heartbreak can become music for dancing and celebration. He said the collective puts its music and visual expression ahead of the individual identities of its members.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Early recordings",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Sufridos began releasing singles in 2023 through «LAX Music», including «Deli», «Apretaíto» and «Duro de verdad». That December they released «Prendela» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b8699416-10d2-4c84-a43a-2a035387126f",
+                  "displayText": "Eklectico",
+                  "occurrenceId": "03438231-be70-482b-a4fe-194f1f8f62e9"
+                }
+              },
+              {
+                "text": ". Their repertoire expanded into other Dominican styles with the 2024 merengue single «Chivi», while bachata remained the project's central sound.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Collaborations in 2024",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In August 2024 the collective joined ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "displayText": "Antony Santos",
+                  "occurrenceId": "392c7077-5806-4865-8581-32ae807e905f"
+                }
+              },
+              {
+                "text": " on «Lleno Contigo». Dominican reporting identified all three members as producers and singers and attributed its lyrics to Steven Domínguez, Martín Rodríguez and José Julio Bello. In September they released «Duro De Verdad pt.2», a new version of their 2023 song with Bad Gyal. Cromo X said the collaboration grew out of his friendship with the singer during her visit to the Dominican Republic. ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3e1718be-c12d-42f5-85e7-2156d9574940",
+                  "displayText": "Tokischa",
+                  "occurrenceId": "94141970-863e-466a-a979-72d5c11722cc"
+                }
+              },
+              {
+                "text": " appeared in the video; the digital release names Los Sufridos and Bad Gyal as its main artists.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Later singles",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2025 Los Sufridos recorded «LA PROPUESTA» with Rels B and «Poloché» with N.I.T.O, and also released «La Zaza». They followed with «Darío» in February 2026. These recordings continued a project developed primarily through singles and collaborations.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Sufridos bring earlier work in urban production, rap and fusion music into a bachata-centred project. Their recordings with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "displayText": "Antony Santos",
+                  "occurrenceId": "6e765525-4151-4f60-b817-6f33b7ebbfe5"
+                }
+              },
+              {
+                "text": " and Bad Gyal connect bachata to performers from different generations and scenes, while other songs explore Dominican and Caribbean rhythms.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-08-06T02:52:19.958156+00:00",
+      "updated_at": "2026-10-28T13:55:52.841869+00:00",
+      "revision": 3
+    },
+    {
+      "id": "f633c5c3-3a5f-438a-abaa-d1039f765926",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "T.Y.S —Steven Domínguez Carmona, nacido el 11 de mayo de 1983 en Long Island, Nueva York— es un rapero y productor independiente dominicano que trabaja desde Santo Domingo. Es de los raperos más oídos que tiene el país, y produce él mismo casi todo lo que publica.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Rap introspectivo con filo de calle",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Describe el trabajo como rap y trap introspectivo con filo de calle y una mentalidad estratégica detrás, y es explícito en que no hace música para el momento: quiere una filosofía sonora donde cada canción funcione como pieza de un mensaje más amplio.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La declaración es poco frecuente en la música urbana dominicana, donde la economía empuja fuerte hacia el sencillo que funciona este mes, y construir un argumento a lo largo de un catálogo es la apuesta difícil.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los discos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Aquile es lo más grande que ha hecho. Alrededor están Jordan, Enemy, Resultado y Kanye, y el remix de Trono grabado con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                  "displayText": "Rochy RD",
+                  "occurrenceId": "71ca6a4f-62fe-4ad0-8fba-84f899117098"
+                }
+              },
+              {
+                "text": ": el tema que puso a dos de los nombres más pesados del rap dominicano en la misma pista.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los álbumes son Estado Mental y El Rap Dominicano, el segundo un título que plantea el reclamo sin rodeos. Ha seguido publicando sin parar: Gigante, Sueño y OMSA son los recientes, al lado de colaboraciones con Hache, N.I.T.O y Big O.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Sufridos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2023 formó ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "704446e1-74af-448d-981a-4675d5cf9507"
+                }
+              },
+              {
+                "text": " con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "displayText": "Cromo X",
+                  "occurrenceId": "e9400842-da56-4509-988f-de368ec4271c"
+                }
+              },
+              {
+                "text": " y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "94f56ac7-a3cb-4d6c-97dd-7f393cdbc587"
+                }
+              },
+              {
+                "text": ", un proyecto centrado en la bachata urbana. En 2024 el grupo publicó «Lleno Contigo» con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "displayText": "Antony Santos",
+                  "occurrenceId": "ae97822d-fa02-4803-9d65-d6fa25f191e8"
+                }
+              },
+              {
+                "text": "; la letra acredita a T.Y.S bajo su nombre personal, Steven Domínguez.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "De rapero a empresario",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Se ha movido al lado de negocios de la música, y las entrevistas largas que da ahora se arman alrededor de ese giro y no de los discos. Para un artista que subió por su cuenta, quedarse con el aparato es el final lógico del mismo argumento.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "created_at": "2026-08-27T04:52:02.880054+00:00",
+      "updated_at": "2026-10-28T13:55:55.139087+00:00",
+      "revision": 3
+    },
+    {
+      "id": "ba3e066b-96d9-42b0-802e-efc992ae5e61",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Antony Santos, nacido Domingo Antonio Santos Muñoz el 5 de mayo de 1967, es un cantante, guitarrista, compositor y productor dominicano, y la figura más determinante en la transformación de la bachata de música rural estigmatizada al género popular dominante del país. Conocido como \"El Mayimbe,\" salió de la línea noroeste tocando güira detrás de otro, y en menos de tres años como solista ya había reescrito lo que a la bachata le estaba permitido sonar.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Primeros años y la güira",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Santos nació en Clavellinas, un paraje rural de Las Matas de Santa Cruz, provincia de Montecristi, en la pobreza severa: el trabajo de su padre era inestable y la comida no estaba asegurada. Se fabricó sus primeros instrumentos con botellas rotas antes de tener una guitarra.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Entró al negocio a finales de los años ochenta no como cantante sino como güirero, tocando percusión detrás del bachatero ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0760875d-6b6f-4a48-8aed-6e57934d1baa",
+                  "displayText": "Luis Vargas",
+                  "occurrenceId": "33e08111-f42f-4e33-a89f-787bcaaf4141"
+                }
+              },
+              {
+                "text": ". Fue el aprendizaje correcto: la bachata es un género de músico de ritmo antes que de cantante, y esos años metido en su percusión le dieron un instinto que se nota en todo lo que después produjo él mismo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La Chupadera y «Voy pa’llá»",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Salió por su cuenta en 1991 con el álbum La Chupadera, y su sencillo «Voy pa’llá» logró algo que ninguna bachata había logrado antes: convirtió en estrella nacional a un bachatero de origen campesino, y llegó a las comunidades dominicanas de Estados Unidos. Los discos vinieron rápido: La batalla en 1992, Corazón bonito en 1993, Corazón culpable en 1994, y a mitad de la década la discusión sobre quién mandaba en el género estaba prácticamente cerrada.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lo que le cambió a la bachata",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La bachata que Santos heredó era música de cantina y de burdel, cantada en registro áspero sobre el trago y la traición, y despreciada en consecuencia. Lo que él le trajo fue vulnerabilidad romántica — un hombre cantando llanamente sobre el dolor en vez de hacerse el duro — y ese giro hizo más por volver el género respetable que cualquier campaña.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "También le cambió el sonido. Metió saxofón, teclados y cuerdas, instrumentos que el estilo nunca había usado; fue exigente con guitarras y pedales como no lo habían sido los bachateros; y subió el estándar de producción de toda la industria simplemente por poner él la vara más alta. Además se apoyó mucho en el merengue dentro de sus discos, y eso fue estratégico: los dominicanos que todavía consideraban la bachata por debajo de ellos ya bailaban merengue sin problema, y él usó esa comodidad como puerta de entrada.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La trinidad",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Santos, ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0760875d-6b6f-4a48-8aed-6e57934d1baa",
+                  "displayText": "Luis Vargas",
+                  "occurrenceId": "0996e81b-9d4f-4d60-83e6-fd4e88f9ebda"
+                }
+              },
+              {
+                "text": " y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "96e69c00-dbb0-4cb4-ab48-ea46be9c4591",
+                  "displayText": "Raulín Rodríguez",
+                  "occurrenceId": "61d05dc0-f62c-456d-8ee1-ee4af88b7b20"
+                }
+              },
+              {
+                "text": " vienen todos del mismo tramo de la frontera noroeste y se nombran juntos como la trinidad de la bachata dominicana. Su relación con Vargas en particular funcionó como una larga rivalidad pública que les vendió discos a los dos durante años. En 2011 los tres coincidieron en «Debate de 4», una grabación de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8f1d2a44-3c6e-4b17-9a58-7d0e5c9b21f3",
+                  "displayText": "Romeo Santos",
+                  "occurrenceId": "bff39476-ce4f-442d-a031-d37e253ffb2a"
+                }
+              },
+              {
+                "text": " que puso en un mismo tema a la generación que construyó la bachata moderna — una cumbre que el género nunca había montado.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Reconocimientos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los galardones se acumularon a lo largo de tres décadas:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "cinco premios Casandra/Soberano como Bachatero del Año, en 1996, 2007, 2009, 2013 y 2019,",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "el Gran Soberano en 2019, la máxima distinción de las artes dominicanas,",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "el primer concierto en solitario de un bachatero tradicional en el Madison Square Garden, en 2014,",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "el número uno de la lista Tropical Airplay de Billboard con «Solo te amo» en 2014,",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "y la proclamación del 8 de agosto como «Día de Anthony Santos» en la ciudad de Nueva York, en 2019.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Es el segundo músico dominicano en cargar el título de \"El Mayimbe\" — palabra taína para el cacique de un pueblo — después del merenguero ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                  "displayText": "Fernando Villalona",
+                  "occurrenceId": "b88e510a-ff16-41f8-a69b-78239a6111f0"
+                }
+              },
+              {
+                "text": "; también responde a \"El Bachatú.\"",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Carrera posterior y alcance",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Santos ha grabado unos veintitrés álbumes de estudio y sigue activo: publicó La historia de mi vida: el final, Vol. 1 en 2018 y A fuerza de dolor en 2025. Artistas más jóvenes lo han buscado por encima de la brecha generacional — ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8f1d2a44-3c6e-4b17-9a58-7d0e5c9b21f3",
+                  "displayText": "Romeo Santos",
+                  "occurrenceId": "ded6aa80-1573-46c6-b89b-9a5f548bbea6"
+                }
+              },
+              {
+                "text": ", Ozuna y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9c02d1a1-952e-4855-9b60-c0266236378d",
+                  "displayText": "Prince Royce",
+                  "occurrenceId": "58168209-4f11-4ca4-9786-a631766832ef"
+                }
+              },
+              {
+                "text": " entre ellos — y en 2022 Bad Bunny sampleó la introducción de su «No te puedo olvidar» en «Tití me preguntó», poniendo una bachata dominicana de los noventa frente al público más grande del pop global. ",
+                "type": "text"
+              },
+              {
+                "text": "En agosto de 2024 publicó «Lleno Contigo» con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "011056c4-c1fa-4798-b849-5d50930932e1"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Santos es donde empieza la bachata moderna. Casi todo bachatero romántico posterior — y, a un paso de distancia, toda la industria internacional de la bachata levantada por ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3a7c19e8-5d24-4f06-b8e1-9c4a70f2d5b3",
+                  "displayText": "Aventura",
+                  "occurrenceId": "9ff7b0e8-f251-445a-b0af-21cba869f2c9"
+                }
+              },
+              {
+                "text": " y sus sucesores — trabaja dentro de una plantilla que él fijó entre 1991 y 1995: la letra vulnerable, la guitarra melódica al frente, la instrumentación ampliada, los estándares de producción.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El argumento cultural pesa tanto como el musical. La bachata era música que los dominicanos respetables no admitían escuchar; Santos fue el artista que volvió insostenible esa vergüenza, y lo hizo desde Clavellinas y no desde la capital. Su catálogo es el registro de un género cambiando de clase social, y \"El Mayimbe\" es el título que el país le dio por eso.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-08-21T17:20:33.847847+00:00",
+      "updated_at": "2026-10-28T13:55:55.410196+00:00",
+      "revision": 8
+    },
+    {
+      "id": "a70df450-c133-46b9-b61d-8491fd9bbfa2",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "T.Y.S — Steven Domínguez Carmona, born on 11 May 1983 in Long Island, New York — is a Dominican rapper and independent producer working from Santo Domingo. He is one of the most widely heard rappers the country has, and he produces most of what he releases himself.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Introspective rap with a street edge",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He describes the work as introspective rap and trap with a street edge and a strategic mind behind it, and he is explicit that he is not making music for the moment: he wants a sonic philosophy where each song works as a piece of a larger message.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The statement is an uncommon one in Dominican urban music, where the economics push hard towards the single that works this month, and building an argument across a catalogue is the harder bet.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The records",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Aquile is the biggest thing he has made. Around it sit Jordan, Enemy, Resultado and Kanye, and the Trono remix cut with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                  "displayText": "Rochy RD",
+                  "occurrenceId": "55679fb0-100c-406a-9d71-ab1a24ce170a"
+                }
+              },
+              {
+                "text": " — the record that put two of the heavier names in Dominican rap on the same track.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The albums are Estado Mental and El Rap Dominicano, the second a title that states the claim plainly. He has kept releasing steadily: Gigante, Sueño and OMSA are the recent ones, alongside features with Hache, N.I.T.O and Big O.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Sufridos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2023 he formed ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "925b60ae-8f17-4448-b013-e2045a0a7122"
+                }
+              },
+              {
+                "text": " with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "displayText": "Cromo X",
+                  "occurrenceId": "eb50eb5c-d73e-496a-8653-5f0a67561ce4"
+                }
+              },
+              {
+                "text": " and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "03b9295a-52e7-43f0-b551-268926a8855e"
+                }
+              },
+              {
+                "text": ", a project centred on urban bachata. The group’s «Lleno Contigo» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "displayText": "Antony Santos",
+                  "occurrenceId": "acbb1412-5728-494f-a094-9ef74ce0768c"
+                }
+              },
+              {
+                "text": " appeared in 2024; its lyrics credit T.Y.S under his personal name, Steven Domínguez.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "From rapper to businessman",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He has moved into the business side of the music, and the long-form interviews he gives now are framed around that shift rather than around the records. For an artist who came up independent, owning the apparatus is the logical end of the same argument.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "created_at": "2026-08-06T02:52:19.958156+00:00",
+      "updated_at": "2026-10-28T13:55:53.552427+00:00",
+      "revision": 4
+    },
+    {
+      "id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Tokischa Altagracia Peralta Juárez, who records as Tokischa, is a Dominican singer, rapper and songwriter working in dembow and reggaetón. She writes about sex, money and the street in plain language and without apology, which has made her the most argued-about Dominican artist of her generation and one of the few to carry dembow into rooms where nobody had heard it.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Frailes",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "She grew up in Los Frailes, in Santo Domingo Este. She studied fine arts and dramaturgy, went into professional modelling at sixteen, and was working in front of a camera when she met the photographer and producer Raymi Paulus at a shoot in the capital. He put her in a studio, and she signed to his label, Paulus Music.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Pícala",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "She debuted in 2018 with Pícala, made with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+                  "displayText": "Tivi Gunz",
+                  "occurrenceId": "3e1e58d4-bf80-428d-9a7b-976a61d7754c"
+                }
+              },
+              {
+                "text": ", and followed it the same year with Que Viva alongside ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "de562eb7-a0fb-49c2-a3c8-db97a4be80e3",
+                  "displayText": "Químico Ultra Mega",
+                  "occurrenceId": "6669bb6f-9afa-4d1f-ba93-5ca14877aa13"
+                }
+              },
+              {
+                "text": ". The next two years were spent building a local catalogue at speed: the EP Freestyle #007 with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9bf41d47-c5ab-45e3-b048-7bb7886b0912",
+                  "displayText": "DJ Scuff",
+                  "occurrenceId": "7f561afd-9801-48cd-82cb-98b33c1f9415"
+                }
+              },
+              {
+                "text": ", Empatillada, Twerk, Varón, El Rey de la Popola with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                  "displayText": "Rochy RD",
+                  "occurrenceId": "947a11eb-3ed9-4ba6-b75c-41f3f2bac591"
+                }
+              },
+              {
+                "text": ", and in early 2021 Yo No Me Voy Acostar with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "439bbc6c-f06e-447f-a1fa-b2130b885457",
+                  "displayText": "Yailin La Más Viral",
+                  "occurrenceId": "741b1b4c-56a1-4717-858b-8b492e6d292d"
+                }
+              },
+              {
+                "text": " and Bellaca Putona with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "de562eb7-a0fb-49c2-a3c8-db97a4be80e3",
+                  "displayText": "Químico Ultra Mega",
+                  "occurrenceId": "da45a139-7d22-4710-a098-0b5d080a0f9a"
+                }
+              },
+              {
+                "text": ", which went to the top of the Dominican charts.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Desacato Escolar",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In October 2020 she released Desacato Escolar with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bb07dcb8-444f-4a68-a668-21e9e038f335",
+                  "displayText": "Yomel el Meloso",
+                  "occurrenceId": "11541a21-4a35-4f57-9a8e-f1b94cbd303a"
+                }
+              },
+              {
+                "text": " and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+                  "displayText": "Leo RD",
+                  "occurrenceId": "52c7cfd8-7d61-4968-9b08-56c44e7f9668"
+                }
+              },
+              {
+                "text": ". The song was pulled from YouTube over its lyrics, and the removal did what removals usually do, which is to send people looking for it.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Her answer to the objection was an argument about the genre rather than about herself: dembow and urban music report what happens in the neighbourhood, trap talks about crime because crime exists, and someone offended by a song about sex work is arguing with the fact and not with the record.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Perra and Linda",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The summer of 2021 took her out of the country. She recorded Perra with J Balvin and Linda with Rosalía, both videos shot in Santo Domingo and the second produced by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+                  "displayText": "Leo RD",
+                  "occurrenceId": "b029527e-869e-4add-b10b-fd8163d18354"
+                }
+              },
+              {
+                "text": ". She performed Linda with Rosalía at the Billboard Latin Music Awards that September, and her label had by then signed a distribution deal with Roc Nation’s independent arm.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Perra was withdrawn after the Colombian government ordered its video taken down, judging its imagery racist, sexist and misogynistic. The record and the objection to it both belong to the history of the song.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The collaborations",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "What followed was a run of international work unusual for a dembow artist: Delincuente with Anuel AA and Ñengo Flow, which Time picked among the year’s best songs; Estilazo with Marshmello; Somos Iguales with Ozuna; La Combi Versace on Rosalía’s Motomami; Kilos de Amor with Natanael Cano; and a remix of Madonna’s Hung Up rebuilt over a dembow rhythm.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Her widest record so far is Chulo pt. 2, alongside Bad Gyal and Young Miko, which entered Hot Latin Songs and the Billboard Global 200 and was certified six times platinum in the Latin field in the United States and gold in Mexico. She also appeared on the remix of NO PARE by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "af726afa-c7a0-47da-99bb-a4c7669a8785",
+                  "displayText": "Natti Natasha",
+                  "occurrenceId": "c61b6542-3152-4614-8b3d-9e7f61c3c871"
+                }
+              },
+              {
+                "text": ". ",
+                "type": "text"
+              },
+              {
+                "text": "The 2024 video for ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "82f4bad8-32be-4339-8cb5-ab673beb513f"
+                }
+              },
+              {
+                "text": " and Bad Gyal’s «Duro De Verdad pt.2» also features her.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Amor y Droga",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "She left Paulus Music in 2024 to start a label of her own, backed by Warner Music Latina and Atlantic Records, and opened it with Sol, a song she had written as a party record and came to read as a statement about coming out the other side of a bad stretch. De Maravisha, with Nathy Peluso, brought her a first Latin Grammy nomination in 2025.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Her debut album, Amor y Droga, arrived in 2026, trailed by MIAMI and by CELOS with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "550df3b5-6488-4aec-a476-a5d28d52ceea",
+                  "displayText": "Bulin 47",
+                  "occurrenceId": "4711433b-d267-41b7-885e-7bfbd4317f4c"
+                }
+              },
+              {
+                "text": ". Billboard has placed her among the artists who changed the game for queer audiences in Latin music, and her writing on desire and sexuality is the part of her work that criticism keeps returning to.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "3e1718be-c12d-42f5-85e7-2156d9574940",
+      "created_at": "2026-08-06T02:52:19.958156+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00",
+      "revision": 4
+    },
+    {
+      "id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Tokischa Altagracia Peralta Juárez, que graba como Tokischa, es una cantante, rapera y compositora dominicana de dembow y reguetón. Escribe sobre sexo, dinero y calle en lengua directa y sin disculparse, lo que la ha convertido en la artista dominicana más discutida de su generación y en una de las pocas que ha metido el dembow en salas donde nadie lo había oído.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Frailes",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Se crió en Los Frailes, en Santo Domingo Este. Estudió bellas artes y dramaturgia, entró al modelaje profesional a los dieciséis, y estaba trabajando delante de una cámara cuando conoció al fotógrafo y productor Raymi Paulus en una sesión en la capital. Él la metió en un estudio, y ella firmó con su sello, Paulus Music.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Pícala",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Debutó en 2018 con Pícala, hecha con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+                  "displayText": "Tivi Gunz",
+                  "occurrenceId": "d5339e85-db48-4cec-acd4-6db470655f39"
+                }
+              },
+              {
+                "text": ", y ese mismo año sacó Que Viva junto a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "de562eb7-a0fb-49c2-a3c8-db97a4be80e3",
+                  "displayText": "Químico Ultra Mega",
+                  "occurrenceId": "c0be34a8-8cdf-46fc-9f09-60d4d97a6a07"
+                }
+              },
+              {
+                "text": ". Los dos años siguientes los pasó armando catálogo local a toda velocidad: el EP Freestyle #007 con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9bf41d47-c5ab-45e3-b048-7bb7886b0912",
+                  "displayText": "DJ Scuff",
+                  "occurrenceId": "153bd91d-fcec-4579-b80e-e4845f1f67ed"
+                }
+              },
+              {
+                "text": ", Empatillada, Twerk, Varón, El Rey de la Popola con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                  "displayText": "Rochy RD",
+                  "occurrenceId": "c922e31b-fc5d-4108-97dc-378301d16be5"
+                }
+              },
+              {
+                "text": ", y a principios de 2021 Yo No Me Voy Acostar con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "439bbc6c-f06e-447f-a1fa-b2130b885457",
+                  "displayText": "Yailin La Más Viral",
+                  "occurrenceId": "68b425a6-0c0a-4694-94a3-876bbcd47d6a"
+                }
+              },
+              {
+                "text": " y Bellaca Putona con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "de562eb7-a0fb-49c2-a3c8-db97a4be80e3",
+                  "displayText": "Químico Ultra Mega",
+                  "occurrenceId": "7b3d4fce-9756-4cf5-b4b3-6f8ae254563b"
+                }
+              },
+              {
+                "text": ", que encabezó las listas dominicanas.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Desacato Escolar",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En octubre de 2020 publicó Desacato Escolar con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bb07dcb8-444f-4a68-a668-21e9e038f335",
+                  "displayText": "Yomel el Meloso",
+                  "occurrenceId": "4c977d29-e745-4053-9579-3a5269816f13"
+                }
+              },
+              {
+                "text": " y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+                  "displayText": "Leo RD",
+                  "occurrenceId": "f940bcd5-e5c6-4ac5-bd0e-77211e5841db"
+                }
+              },
+              {
+                "text": ". La canción fue retirada de YouTube por su letra, y el retiro hizo lo que suelen hacer los retiros, que es mandar a la gente a buscarla.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su respuesta a la objeción fue un argumento sobre el género y no sobre ella: el dembow y la música urbana cuentan lo que pasa en el barrio, el trap habla de delincuencia porque la delincuencia existe, y quien se ofende con una canción sobre prostitución está discutiendo con el hecho y no con el disco.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Perra y Linda",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El verano de 2021 la sacó del país. Grabó Perra con J Balvin y Linda con Rosalía, los dos videos rodados en Santo Domingo y el segundo producido por ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+                  "displayText": "Leo RD",
+                  "occurrenceId": "0d359258-0913-4bfe-8cb1-20aa590c16cb"
+                }
+              },
+              {
+                "text": ". Cantó Linda junto a Rosalía en los Premios Billboard de la Música Latina ese septiembre, y su sello ya había firmado para entonces un acuerdo de distribución con el brazo independiente de Roc Nation.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Perra fue retirada después de que el gobierno colombiano ordenara bajar el video, por considerar sus imágenes racistas, sexistas y misóginas. El disco y la objeción que se le hizo pertenecen los dos a la historia de la canción.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Las colaboraciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Detrás vino una racha de trabajo internacional poco común para una artista de dembow: Delincuente con Anuel AA y Ñengo Flow, que la revista Time escogió entre las mejores canciones del año; Estilazo con Marshmello; Somos Iguales con Ozuna; La Combi Versace dentro del Motomami de Rosalía; Kilos de Amor con Natanael Cano; y un remix del Hung Up de Madonna rearmado sobre un ritmo de dembow.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su disco de mayor alcance hasta ahora es Chulo pt. 2, junto a Bad Gyal y Young Miko, que entró en Hot Latin Songs y en el Billboard Global 200 y está certificado séxtuple platino en el campo latino de Estados Unidos y oro en México. Estuvo además en el remix de NO PARE de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "af726afa-c7a0-47da-99bb-a4c7669a8785",
+                  "displayText": "Natti Natasha",
+                  "occurrenceId": "60f7e5bd-58af-4afd-9185-2934c4bbfade"
+                }
+              },
+              {
+                "text": ". ",
+                "type": "text"
+              },
+              {
+                "text": "El videoclip de «Duro De Verdad pt.2» (2024), de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "280b8bd6-91e0-49eb-afbf-1fdf95f7b73e"
+                }
+              },
+              {
+                "text": " y Bad Gyal, también contó con su participación.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Amor y Droga",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Dejó Paulus Music en 2024 para montar sello propio, respaldada por Warner Music Latina y Atlantic Records, y lo estrenó con Sol, una canción que había escrito como tema de fiesta y que terminó leyendo como una afirmación sobre salir de una mala racha. De Maravisha, con Nathy Peluso, le trajo su primera nominación al Latin Grammy en 2025.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su álbum debut, Amor y Droga, salió en 2026, precedido por MIAMI y por CELOS con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "550df3b5-6488-4aec-a476-a5d28d52ceea",
+                  "displayText": "Bulin 47",
+                  "occurrenceId": "b1eebe28-907d-4231-a260-c77ea686dbab"
+                }
+              },
+              {
+                "text": ". Billboard la ha situado entre los artistas que cambiaron el juego para el público queer de la música latina, y su escritura sobre el deseo y la sexualidad es la parte de su obra sobre la que la crítica vuelve una y otra vez.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "3e1718be-c12d-42f5-85e7-2156d9574940",
+      "created_at": "2026-09-08T05:26:19.349232+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00",
+      "revision": 2
+    },
+    {
+      "id": "4cf3dbc5-912a-4507-8f22-40b43cff3552",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Sufridos es un colectivo dominicano de bachata formado en 2023 por los productores e intérpretes ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "displayText": "Cromo X",
+                  "occurrenceId": "90b529c6-8ab0-4b46-8d02-b5945c62b0bd"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "displayText": "T.Y.S",
+                  "occurrenceId": "cbbdf63c-66d8-45b9-98ce-b217983c3181"
+                }
+              },
+              {
+                "text": " y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "555e06fd-927c-465a-941b-3398564740be"
+                }
+              },
+              {
+                "text": ". Su música toma la bachata como punto de partida y la combina con recursos del dembow, el hip-hop y otros sonidos caribeños. Entre sus colaboraciones figuran «Lleno Contigo» con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "displayText": "Antony Santos",
+                  "occurrenceId": "8dca902a-b5f7-452f-9e86-91163a9163f5"
+                }
+              },
+              {
+                "text": " y «Duro De Verdad pt.2» con Bad Gyal.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Origen y concepto",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2023 el proyecto reunió a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "displayText": "Cromo X",
+                  "occurrenceId": "fb2967d2-f35d-47cd-b51b-a82b27f5b4a7"
+                }
+              },
+              {
+                "text": ", productor vinculado al dembow, al rapero y productor ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "displayText": "T.Y.S",
+                  "occurrenceId": "b4351a2f-771f-4156-be6b-340cf42e403f"
+                }
+              },
+              {
+                "text": " y al guitarrista ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "060aedf9-4f7c-458d-ba61-ea4c82822966"
+                }
+              },
+              {
+                "text": ", integrante de «La Gran Mawon». Cromo X explicó que el nombre del colectivo se relaciona con el amargue de la bachata: la tristeza y el desamor pueden convertirse en música para bailar y celebrar. Según él, la propuesta sitúa la música y su expresión visual por delante de las identidades individuales de sus integrantes.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Primeras grabaciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Sufridos comenzaron a publicar sencillos en 2023 bajo «LAX Music». Entre ellos están «Deli», «Apretaíto» y «Duro de verdad». En diciembre de ese año lanzaron «Prendela» junto a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b8699416-10d2-4c84-a43a-2a035387126f",
+                  "displayText": "Eklectico",
+                  "occurrenceId": "51b07642-87d3-4167-9f31-808dffb61e0c"
+                }
+              },
+              {
+                "text": ". Su repertorio incorporó otras formas de música dominicana con «Chivi», un merengue publicado en 2024, mientras mantenían la bachata como eje del proyecto.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Colaboraciones de 2024",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En agosto de 2024 participaron con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "displayText": "Antony Santos",
+                  "occurrenceId": "a6527365-8ec3-4b30-9311-bfd494509407"
+                }
+              },
+              {
+                "text": " en «Lleno Contigo». La prensa dominicana identificó a los tres integrantes como productores y cantantes del tema; atribuyó la letra a Steven Domínguez, Martín Rodríguez y José Julio Bello. En septiembre publicaron «Duro De Verdad pt.2», una nueva versión de su canción de 2023 con Bad Gyal. Cromo X contó que la colaboración nació de su amistad con la cantante durante una visita de ella a República Dominicana. ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3e1718be-c12d-42f5-85e7-2156d9574940",
+                  "displayText": "Tokischa",
+                  "occurrenceId": "acfe72ca-81fa-4aa5-81e6-46d06ce761ec"
+                }
+              },
+              {
+                "text": " apareció en el videoclip; la edición digital nombra a Los Sufridos y Bad Gyal como artistas principales.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Nuevos sencillos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2025 el colectivo grabó «LA PROPUESTA» con Rels B y «Poloché» con N.I.T.O; también publicó «La Zaza». En febrero de 2026 lanzó «Darío». Esas grabaciones muestran la continuidad de un proyecto construido principalmente mediante sencillos y colaboraciones.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Sufridos reúnen trayectorias previas en producción urbana, rap y música de fusión en una propuesta centrada en la bachata. Su trabajo con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "displayText": "Antony Santos",
+                  "occurrenceId": "284b11ae-efa0-4fc3-b9ed-29fb7dbc057b"
+                }
+              },
+              {
+                "text": " y Bad Gyal conecta el repertorio bachatero con intérpretes de generaciones y escenas distintas, mientras sus canciones exploran otros ritmos dominicanos y caribeños.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-27T18:55:54.406422+00:00",
+      "updated_at": "2026-10-28T13:55:54.668032+00:00",
+      "revision": 2
+    },
+    {
+      "id": "12433f83-6c84-4b1f-859b-31ade027b65c",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Mítiko, nombre artístico de José Julio Bello Castillo, es un guitarrista, compositor y productor dominicano nacido en Santo Domingo en 1987. Es uno de los integrantes originales de «La Gran Mawon», colectivo de fusión afrocaribeña, y cofundó ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "a968abf3-6bb6-45df-aa9e-41aac92c2312"
+                }
+              },
+              {
+                "text": ", proyecto de bachata urbana. Su trabajo une la interpretación y creación musical con la investigación y difusión de expresiones afrodominicanas.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La Gran Mawon",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Después de iniciarse en el cine, se acercó a la música afroantillana. En 2011 participó en las sesiones nocturnas de improvisación en plazas de la Zona Colonial de Santo Domingo de las que surgió «La Gran Mawon». La agrupación lo identificó como guitarrista y compositor; la publicación dominicana «Una isla es un universo» lo incluyó, junto a Gato y Zahir, entre sus integrantes originales estables y destacó su labor como compositor y letrista, especialmente en «La Culebra».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El grupo mezcló palo, gagá y otros ritmos afrocaribeños con reggae y rock. Grabó «Fuego Petró» como primer sencillo en 2013 y publicó un EP homónimo de siete canciones en 2016. «Melancolia Tropical» apareció como sencillo en 2019, seguido del álbum «Radio Katharsis» en 2023. En entrevistas, Mítiko ha descrito el proyecto como música afrocaribeña centrada en las tradiciones negras.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Sufridos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2023 fundó ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "d65e40be-1e1f-4f5e-934a-3219a90d15d0"
+                }
+              },
+              {
+                "text": " con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "displayText": "Cromo X",
+                  "occurrenceId": "45b5cf9a-4d04-4712-979c-23dde8b101ad"
+                }
+              },
+              {
+                "text": " y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "displayText": "T.Y.S",
+                  "occurrenceId": "a7e1690e-4be8-42ac-8bb0-9fa772f86a85"
+                }
+              },
+              {
+                "text": ". El colectivo llevó su experiencia como guitarrista y compositor a una propuesta de bachata urbana. La prensa dominicana identificó a José Julio Bello entre los autores de «Lleno Contigo», la colaboración del grupo con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "displayText": "Antony Santos",
+                  "occurrenceId": "3235a50a-2105-482a-8241-85d9a2bed1cb"
+                }
+              },
+              {
+                "text": " publicada en 2024. Ese año también figuró entre los productores acreditados de «Chivi» y «Duro De Verdad pt.2».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Otros trabajos y divulgación",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su actividad fuera de esas agrupaciones incluye la música original del documental «Mal de caña» (2020), compartida con Marcos Arias. Bajo su nombre completo también aparece como productor de «Por Ahí», grabación de Billete MC publicada en 2023 por «AFRK Music». En febrero de 2024 participó con miembros de «La Gran Mawon» en un taller de música afrodominicana en la Universidad Rutgers. El Centro Cultural de España en Santo Domingo lo presenta además como investigador sociocultural.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La trayectoria de Mítiko enlaza la guitarra, la composición y la producción con la exploración de tradiciones musicales afrodominicanas. Su participación en «La Gran Mawon» y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "5b916e82-652d-406f-b1bf-29c4b1582d3c"
+                }
+              },
+              {
+                "text": " documenta dos maneras de llevar esas experiencias a repertorios contemporáneos, mientras sus talleres y trabajos audiovisuales amplían su práctica fuera del escenario.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-28T11:42:29.000715+00:00",
+      "updated_at": "2026-10-28T11:42:29.000715+00:00",
+      "revision": 1
+    },
+    {
+      "id": "b20736f2-e6a3-4a4c-94df-c88e31f65b32",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Mítiko, the professional name of José Julio Bello Castillo, is a Dominican guitarist, composer and producer born in Santo Domingo in 1987. An original member of the Afro-Caribbean fusion collective «La Gran Mawon», he later co-founded the urban bachata group ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "a82a4a9b-a87c-4d86-83e2-f66a1545952a"
+                }
+              },
+              {
+                "text": ". His work as a musician is accompanied by research and public teaching about Afro-Dominican traditions.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La Gran Mawon",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His early work included film before he began exploring Afro-Antillean music. In 2011 he took part in night-time jam sessions in Santo Domingo's Colonial Zone that developed into «La Gran Mawon». In a group interview, the collective identified him as its guitarist and a composer. The Dominican publication «Una isla es un universo» named him, Gato and Zahir among its continuing original members and highlighted his writing, particularly on «La Culebra».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The band's music brings together palo, gagá and other Afro-Caribbean rhythms with reggae and rock. Its first single, «Fuego Petró», was recorded in 2013, and a seven-track self-titled EP followed in 2016. The group released «Melancolia Tropical» as a single in 2019 and the album «Radio Katharsis» in 2023. Discussing the band's direction, Mítiko has described its music as Afro-Caribbean and rooted in Black musical traditions.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los Sufridos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2023 he formed ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "0726113c-31ef-4d20-a05f-ccc8df3f0487"
+                }
+              },
+              {
+                "text": " with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "displayText": "Cromo X",
+                  "occurrenceId": "f54fe2e6-5c90-4be6-82a5-364b02921b7a"
+                }
+              },
+              {
+                "text": " and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "displayText": "T.Y.S",
+                  "occurrenceId": "10f7a6f5-f8a1-495c-9e06-f5f2603b414a"
+                }
+              },
+              {
+                "text": ", bringing his guitar and songwriting experience to an urban bachata project. Dominican reporting identified José Julio Bello among the writers of «Lleno Contigo», the group's 2024 collaboration with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "displayText": "Antony Santos",
+                  "occurrenceId": "ed7819b6-9642-4a49-8cb7-f91298c933a5"
+                }
+              },
+              {
+                "text": ". Production credits also name Mítiko on the 2024 singles «Chivi» and «Duro De Verdad pt.2».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Other work and teaching",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Outside the two groups, he shared the original music credit with Marcos Arias on the 2020 documentary «Mal de caña». A 2023 release by Billete MC, «Por Ahí», credits José Julio Bello Castillo as producer under the «AFRK Music» label. In February 2024 he joined other «La Gran Mawon» members for an Afro-Dominican music workshop at Rutgers University. The Centro Cultural de España in Santo Domingo also describes him as a sociocultural researcher.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Mítiko's work connects guitar performance, composition and production with the study of Afro-Dominican music. His roles in «La Gran Mawon» and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "displayText": "Los Sufridos",
+                  "occurrenceId": "33f4e2e8-1bd9-4d84-aecc-f88b03d5e5d4"
+                }
+              },
+              {
+                "text": " place that experience in distinct contemporary projects, while his film music and teaching extend it beyond recordings and concerts.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-28T11:42:29.179793+00:00",
+      "updated_at": "2026-10-28T11:42:29.179793+00:00",
+      "revision": 1
+    }
+  ],
+  "relations": [
+    {
+      "id": "126abad8-4a1d-49b1-8bfd-72e68d3dbccc",
+      "editorial_document_id": "ba3e066b-96d9-42b0-802e-efc992ae5e61",
+      "occurrence_id": "33e08111-f42f-4e33-a89f-787bcaaf4141",
+      "entity_type": "artist",
+      "target_artist_id": "0760875d-6b6f-4a48-8aed-6e57934d1baa",
+      "created_at": "2026-10-28T13:55:55.410196+00:00",
+      "updated_at": "2026-10-28T13:55:55.410196+00:00"
+    },
+    {
+      "id": "3903f6ef-d0ee-4b40-8ba1-42b05f6ec3f3",
+      "editorial_document_id": "ba3e066b-96d9-42b0-802e-efc992ae5e61",
+      "occurrence_id": "0996e81b-9d4f-4d60-83e6-fd4e88f9ebda",
+      "entity_type": "artist",
+      "target_artist_id": "0760875d-6b6f-4a48-8aed-6e57934d1baa",
+      "created_at": "2026-10-28T13:55:55.410196+00:00",
+      "updated_at": "2026-10-28T13:55:55.410196+00:00"
+    },
+    {
+      "id": "63419038-0435-4fd0-9ddc-a44f22f6c287",
+      "editorial_document_id": "ba3e066b-96d9-42b0-802e-efc992ae5e61",
+      "occurrence_id": "61d05dc0-f62c-456d-8ee1-ee4af88b7b20",
+      "entity_type": "artist",
+      "target_artist_id": "96e69c00-dbb0-4cb4-ab48-ea46be9c4591",
+      "created_at": "2026-10-28T13:55:55.410196+00:00",
+      "updated_at": "2026-10-28T13:55:55.410196+00:00"
+    },
+    {
+      "id": "97fd0e25-6ca5-464a-90a0-2f7e2e7b548f",
+      "editorial_document_id": "ba3e066b-96d9-42b0-802e-efc992ae5e61",
+      "occurrence_id": "bff39476-ce4f-442d-a031-d37e253ffb2a",
+      "entity_type": "artist",
+      "target_artist_id": "8f1d2a44-3c6e-4b17-9a58-7d0e5c9b21f3",
+      "created_at": "2026-10-28T13:55:55.410196+00:00",
+      "updated_at": "2026-10-28T13:55:55.410196+00:00"
+    },
+    {
+      "id": "27278b47-4405-415a-8081-af080d50742d",
+      "editorial_document_id": "ba3e066b-96d9-42b0-802e-efc992ae5e61",
+      "occurrence_id": "b88e510a-ff16-41f8-a69b-78239a6111f0",
+      "entity_type": "artist",
+      "target_artist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+      "created_at": "2026-10-28T13:55:55.410196+00:00",
+      "updated_at": "2026-10-28T13:55:55.410196+00:00"
+    },
+    {
+      "id": "4c069190-fc46-497a-8275-375f94e0cf2c",
+      "editorial_document_id": "ba3e066b-96d9-42b0-802e-efc992ae5e61",
+      "occurrence_id": "ded6aa80-1573-46c6-b89b-9a5f548bbea6",
+      "entity_type": "artist",
+      "target_artist_id": "8f1d2a44-3c6e-4b17-9a58-7d0e5c9b21f3",
+      "created_at": "2026-10-28T13:55:55.410196+00:00",
+      "updated_at": "2026-10-28T13:55:55.410196+00:00"
+    },
+    {
+      "id": "520b2c4d-23e2-4d57-aca4-0dd233af30f0",
+      "editorial_document_id": "ba3e066b-96d9-42b0-802e-efc992ae5e61",
+      "occurrence_id": "58168209-4f11-4ca4-9786-a631766832ef",
+      "entity_type": "artist",
+      "target_artist_id": "9c02d1a1-952e-4855-9b60-c0266236378d",
+      "created_at": "2026-10-28T13:55:55.410196+00:00",
+      "updated_at": "2026-10-28T13:55:55.410196+00:00"
+    },
+    {
+      "id": "42787023-05cf-42c1-b147-8cecbd2125bc",
+      "editorial_document_id": "ba3e066b-96d9-42b0-802e-efc992ae5e61",
+      "occurrence_id": "011056c4-c1fa-4798-b849-5d50930932e1",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T13:55:55.410196+00:00",
+      "updated_at": "2026-10-28T13:55:55.410196+00:00"
+    },
+    {
+      "id": "9e69c840-f5bc-4729-8bb5-f5f9be83a15d",
+      "editorial_document_id": "ba3e066b-96d9-42b0-802e-efc992ae5e61",
+      "occurrence_id": "9ff7b0e8-f251-445a-b0af-21cba869f2c9",
+      "entity_type": "artist",
+      "target_artist_id": "3a7c19e8-5d24-4f06-b8e1-9c4a70f2d5b3",
+      "created_at": "2026-10-28T13:55:55.410196+00:00",
+      "updated_at": "2026-10-28T13:55:55.410196+00:00"
+    },
+    {
+      "id": "28ba495a-97c8-4c47-9259-3d29cb8b3ae2",
+      "editorial_document_id": "716d34f2-53b6-4fbc-804e-45d3ac136990",
+      "occurrence_id": "9f4d9fa2-48f7-40ce-94cf-ed6f1355126f",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T13:55:55.625377+00:00",
+      "updated_at": "2026-10-28T13:55:55.625377+00:00"
+    },
+    {
+      "id": "b2be800d-5519-4da6-a5b0-6f36ae86946b",
+      "editorial_document_id": "716d34f2-53b6-4fbc-804e-45d3ac136990",
+      "occurrence_id": "85b33e0c-1673-4691-be48-27389c3bfc77",
+      "entity_type": "artist",
+      "target_artist_id": "5fb12fee-64fe-4887-b87e-28f28a15c4f9",
+      "created_at": "2026-10-28T13:55:55.625377+00:00",
+      "updated_at": "2026-10-28T13:55:55.625377+00:00"
+    },
+    {
+      "id": "9d9f07e5-9f48-4657-97dd-7b6810307d2f",
+      "editorial_document_id": "716d34f2-53b6-4fbc-804e-45d3ac136990",
+      "occurrence_id": "b45d05f7-ee7c-4f04-8ca9-48ff3c22f0ce",
+      "entity_type": "artist",
+      "target_artist_id": "9bf41d47-c5ab-45e3-b048-7bb7886b0912",
+      "created_at": "2026-10-28T13:55:55.625377+00:00",
+      "updated_at": "2026-10-28T13:55:55.625377+00:00"
+    },
+    {
+      "id": "0893c7a1-7930-412f-91e3-2d36446792b4",
+      "editorial_document_id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "occurrence_id": "d5339e85-db48-4cec-acd4-6db470655f39",
+      "entity_type": "artist",
+      "target_artist_id": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+      "created_at": "2026-10-28T13:55:55.887701+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00"
+    },
+    {
+      "id": "5686c05b-bbb9-44d2-895c-45ea2c501bf1",
+      "editorial_document_id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "occurrence_id": "c0be34a8-8cdf-46fc-9f09-60d4d97a6a07",
+      "entity_type": "artist",
+      "target_artist_id": "de562eb7-a0fb-49c2-a3c8-db97a4be80e3",
+      "created_at": "2026-10-28T13:55:55.887701+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00"
+    },
+    {
+      "id": "13bcca46-0b12-4562-bd39-f45edb1bf062",
+      "editorial_document_id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "occurrence_id": "153bd91d-fcec-4579-b80e-e4845f1f67ed",
+      "entity_type": "artist",
+      "target_artist_id": "9bf41d47-c5ab-45e3-b048-7bb7886b0912",
+      "created_at": "2026-10-28T13:55:55.887701+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00"
+    },
+    {
+      "id": "680127b6-5bfe-4dde-b1fe-a9dc03a7bbd4",
+      "editorial_document_id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "occurrence_id": "c922e31b-fc5d-4108-97dc-378301d16be5",
+      "entity_type": "artist",
+      "target_artist_id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+      "created_at": "2026-10-28T13:55:55.887701+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00"
+    },
+    {
+      "id": "063051c9-f451-4744-90e3-86aa97521ea0",
+      "editorial_document_id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "occurrence_id": "68b425a6-0c0a-4694-94a3-876bbcd47d6a",
+      "entity_type": "artist",
+      "target_artist_id": "439bbc6c-f06e-447f-a1fa-b2130b885457",
+      "created_at": "2026-10-28T13:55:55.887701+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00"
+    },
+    {
+      "id": "333351be-69b7-429b-91a2-25fddef7478c",
+      "editorial_document_id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "occurrence_id": "7b3d4fce-9756-4cf5-b4b3-6f8ae254563b",
+      "entity_type": "artist",
+      "target_artist_id": "de562eb7-a0fb-49c2-a3c8-db97a4be80e3",
+      "created_at": "2026-10-28T13:55:55.887701+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00"
+    },
+    {
+      "id": "5bb0a154-2f46-4e9b-ba1b-dc27783899b0",
+      "editorial_document_id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "occurrence_id": "4c977d29-e745-4053-9579-3a5269816f13",
+      "entity_type": "artist",
+      "target_artist_id": "bb07dcb8-444f-4a68-a668-21e9e038f335",
+      "created_at": "2026-10-28T13:55:55.887701+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00"
+    },
+    {
+      "id": "42daab13-211a-46ce-abc3-b6355c5e47cf",
+      "editorial_document_id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "occurrence_id": "f940bcd5-e5c6-4ac5-bd0e-77211e5841db",
+      "entity_type": "artist",
+      "target_artist_id": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+      "created_at": "2026-10-28T13:55:55.887701+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00"
+    },
+    {
+      "id": "717bd317-c732-4a3a-b0fd-6911743b9f0b",
+      "editorial_document_id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "occurrence_id": "0d359258-0913-4bfe-8cb1-20aa590c16cb",
+      "entity_type": "artist",
+      "target_artist_id": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+      "created_at": "2026-10-28T13:55:55.887701+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00"
+    },
+    {
+      "id": "b190f01f-55d2-4282-afd1-83fbf2ef9aa2",
+      "editorial_document_id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "occurrence_id": "60f7e5bd-58af-4afd-9185-2934c4bbfade",
+      "entity_type": "artist",
+      "target_artist_id": "af726afa-c7a0-47da-99bb-a4c7669a8785",
+      "created_at": "2026-10-28T13:55:55.887701+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00"
+    },
+    {
+      "id": "fd65bafe-4bd7-4123-b1df-b45eb569593a",
+      "editorial_document_id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "occurrence_id": "280b8bd6-91e0-49eb-afbf-1fdf95f7b73e",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T13:55:55.887701+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00"
+    },
+    {
+      "id": "05c752ba-1c83-4056-9daf-9d2ef2a60438",
+      "editorial_document_id": "7a2a993b-ca57-407b-97d9-7e5563f8de4b",
+      "occurrence_id": "b1eebe28-907d-4231-a260-c77ea686dbab",
+      "entity_type": "artist",
+      "target_artist_id": "550df3b5-6488-4aec-a476-a5d28d52ceea",
+      "created_at": "2026-10-28T13:55:55.887701+00:00",
+      "updated_at": "2026-10-28T13:55:55.887701+00:00"
+    },
+    {
+      "id": "641a6d29-2802-4054-a38a-e1d353888254",
+      "editorial_document_id": "12433f83-6c84-4b1f-859b-31ade027b65c",
+      "occurrence_id": "a968abf3-6bb6-45df-aa9e-41aac92c2312",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T11:42:29.000715+00:00",
+      "updated_at": "2026-10-28T11:42:29.000715+00:00"
+    },
+    {
+      "id": "63e92877-e3ff-4a10-9577-5a6e7741370e",
+      "editorial_document_id": "12433f83-6c84-4b1f-859b-31ade027b65c",
+      "occurrence_id": "d65e40be-1e1f-4f5e-934a-3219a90d15d0",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T11:42:29.000715+00:00",
+      "updated_at": "2026-10-28T11:42:29.000715+00:00"
+    },
+    {
+      "id": "0bf56f18-5d24-4508-a5a6-ea07a92f90bc",
+      "editorial_document_id": "12433f83-6c84-4b1f-859b-31ade027b65c",
+      "occurrence_id": "45b5cf9a-4d04-4712-979c-23dde8b101ad",
+      "entity_type": "artist",
+      "target_artist_id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "created_at": "2026-10-28T11:42:29.000715+00:00",
+      "updated_at": "2026-10-28T11:42:29.000715+00:00"
+    },
+    {
+      "id": "ad79a6f6-0228-44a7-bf5d-516037e8a4cc",
+      "editorial_document_id": "12433f83-6c84-4b1f-859b-31ade027b65c",
+      "occurrence_id": "a7e1690e-4be8-42ac-8bb0-9fa772f86a85",
+      "entity_type": "artist",
+      "target_artist_id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "created_at": "2026-10-28T11:42:29.000715+00:00",
+      "updated_at": "2026-10-28T11:42:29.000715+00:00"
+    },
+    {
+      "id": "908f8c62-bed5-451e-9223-879a56a51152",
+      "editorial_document_id": "12433f83-6c84-4b1f-859b-31ade027b65c",
+      "occurrence_id": "3235a50a-2105-482a-8241-85d9a2bed1cb",
+      "entity_type": "artist",
+      "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-10-28T11:42:29.000715+00:00",
+      "updated_at": "2026-10-28T11:42:29.000715+00:00"
+    },
+    {
+      "id": "639b8679-cf00-48d0-80d4-d3dbb60e3554",
+      "editorial_document_id": "12433f83-6c84-4b1f-859b-31ade027b65c",
+      "occurrence_id": "5b916e82-652d-406f-b1bf-29c4b1582d3c",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T11:42:29.000715+00:00",
+      "updated_at": "2026-10-28T11:42:29.000715+00:00"
+    },
+    {
+      "id": "16e0024a-7729-4291-82d8-3ae46cc35619",
+      "editorial_document_id": "b20736f2-e6a3-4a4c-94df-c88e31f65b32",
+      "occurrence_id": "a82a4a9b-a87c-4d86-83e2-f66a1545952a",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T11:42:29.179793+00:00",
+      "updated_at": "2026-10-28T11:42:29.179793+00:00"
+    },
+    {
+      "id": "78c83e13-8346-4796-9bec-2f20b23f6c3e",
+      "editorial_document_id": "b20736f2-e6a3-4a4c-94df-c88e31f65b32",
+      "occurrence_id": "0726113c-31ef-4d20-a05f-ccc8df3f0487",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T11:42:29.179793+00:00",
+      "updated_at": "2026-10-28T11:42:29.179793+00:00"
+    },
+    {
+      "id": "f2afd0e6-9b22-418c-b251-d087a09fe532",
+      "editorial_document_id": "b20736f2-e6a3-4a4c-94df-c88e31f65b32",
+      "occurrence_id": "f54fe2e6-5c90-4be6-82a5-364b02921b7a",
+      "entity_type": "artist",
+      "target_artist_id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "created_at": "2026-10-28T11:42:29.179793+00:00",
+      "updated_at": "2026-10-28T11:42:29.179793+00:00"
+    },
+    {
+      "id": "5e3bdf15-8b98-4bcb-b040-00f9a64d9109",
+      "editorial_document_id": "b20736f2-e6a3-4a4c-94df-c88e31f65b32",
+      "occurrence_id": "10f7a6f5-f8a1-495c-9e06-f5f2603b414a",
+      "entity_type": "artist",
+      "target_artist_id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "created_at": "2026-10-28T11:42:29.179793+00:00",
+      "updated_at": "2026-10-28T11:42:29.179793+00:00"
+    },
+    {
+      "id": "32667a3b-186c-46f5-9f09-7515cccb7a93",
+      "editorial_document_id": "b20736f2-e6a3-4a4c-94df-c88e31f65b32",
+      "occurrence_id": "ed7819b6-9642-4a49-8cb7-f91298c933a5",
+      "entity_type": "artist",
+      "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-10-28T11:42:29.179793+00:00",
+      "updated_at": "2026-10-28T11:42:29.179793+00:00"
+    },
+    {
+      "id": "efc391be-872f-42a1-8025-99944c8c41e1",
+      "editorial_document_id": "b20736f2-e6a3-4a4c-94df-c88e31f65b32",
+      "occurrence_id": "33f4e2e8-1bd9-4d84-aecc-f88b03d5e5d4",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T11:42:29.179793+00:00",
+      "updated_at": "2026-10-28T11:42:29.179793+00:00"
+    },
+    {
+      "id": "fe2e8447-e04a-4066-87f1-83f5550e2b33",
+      "editorial_document_id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "occurrence_id": "e8a66b44-4957-42cc-8f7c-37ae6522a5f5",
+      "entity_type": "artist",
+      "target_artist_id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "created_at": "2026-10-28T13:55:52.841869+00:00",
+      "updated_at": "2026-10-28T13:55:52.841869+00:00"
+    },
+    {
+      "id": "8f62f41b-8615-4203-b3e7-21a52b454541",
+      "editorial_document_id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "occurrence_id": "fa2d3529-8eb0-47c8-9d8b-4928d2b37140",
+      "entity_type": "artist",
+      "target_artist_id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "created_at": "2026-10-28T13:55:52.841869+00:00",
+      "updated_at": "2026-10-28T13:55:52.841869+00:00"
+    },
+    {
+      "id": "7bbd11ea-9495-4dba-8ea7-270b9cb6d5cd",
+      "editorial_document_id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "occurrence_id": "969cc2b7-efa3-4865-8453-fdd3c9e8981c",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-28T13:55:52.841869+00:00",
+      "updated_at": "2026-10-28T13:55:52.841869+00:00"
+    },
+    {
+      "id": "5bd841f9-fdd2-4419-8455-e15d9fee29c2",
+      "editorial_document_id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "occurrence_id": "4459d42d-20a1-42b1-ac2b-99492dd28fe8",
+      "entity_type": "artist",
+      "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-10-28T13:55:52.841869+00:00",
+      "updated_at": "2026-10-28T13:55:52.841869+00:00"
+    },
+    {
+      "id": "3ee7a21c-3c7e-4a7f-af4f-a5cbfec1a3cc",
+      "editorial_document_id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "occurrence_id": "17749911-d15f-4c65-9b9e-edb75aebc4e4",
+      "entity_type": "artist",
+      "target_artist_id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "created_at": "2026-10-28T13:55:52.841869+00:00",
+      "updated_at": "2026-10-28T13:55:52.841869+00:00"
+    },
+    {
+      "id": "b37e34c3-7b96-4910-829a-b9a1fc084802",
+      "editorial_document_id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "occurrence_id": "6ed42062-4e5b-49ed-88aa-0fbd47485054",
+      "entity_type": "artist",
+      "target_artist_id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "created_at": "2026-10-28T13:55:52.841869+00:00",
+      "updated_at": "2026-10-28T13:55:52.841869+00:00"
+    },
+    {
+      "id": "2ca2f066-1f25-4ff3-9a81-61730aa8bf3e",
+      "editorial_document_id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "occurrence_id": "86a485a6-53d5-4cb1-9545-6c38c61212ca",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-28T13:55:52.841869+00:00",
+      "updated_at": "2026-10-28T13:55:52.841869+00:00"
+    },
+    {
+      "id": "16f1e70c-e32d-422f-960a-ef772b11d4df",
+      "editorial_document_id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "occurrence_id": "03438231-be70-482b-a4fe-194f1f8f62e9",
+      "entity_type": "artist",
+      "target_artist_id": "b8699416-10d2-4c84-a43a-2a035387126f",
+      "created_at": "2026-10-28T13:55:52.841869+00:00",
+      "updated_at": "2026-10-28T13:55:52.841869+00:00"
+    },
+    {
+      "id": "4d13c410-a0ee-4dcd-8aa6-cd57fc10bc0f",
+      "editorial_document_id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "occurrence_id": "392c7077-5806-4865-8581-32ae807e905f",
+      "entity_type": "artist",
+      "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-10-28T13:55:52.841869+00:00",
+      "updated_at": "2026-10-28T13:55:52.841869+00:00"
+    },
+    {
+      "id": "fda8dcb7-ed19-43b8-84f9-86ff9dfc581c",
+      "editorial_document_id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "occurrence_id": "94141970-863e-466a-a979-72d5c11722cc",
+      "entity_type": "artist",
+      "target_artist_id": "3e1718be-c12d-42f5-85e7-2156d9574940",
+      "created_at": "2026-10-28T13:55:52.841869+00:00",
+      "updated_at": "2026-10-28T13:55:52.841869+00:00"
+    },
+    {
+      "id": "e2015c38-a8cb-4108-834b-b5807777b2a7",
+      "editorial_document_id": "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "occurrence_id": "6e765525-4151-4f60-b817-6f33b7ebbfe5",
+      "entity_type": "artist",
+      "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-10-28T13:55:52.841869+00:00",
+      "updated_at": "2026-10-28T13:55:52.841869+00:00"
+    },
+    {
+      "id": "fcdc0beb-f555-42f7-a4c9-781527bb3479",
+      "editorial_document_id": "becdf792-388f-4b16-ac5b-6871107bf311",
+      "occurrence_id": "bcf4e47b-8bd8-452a-92e3-a0d99fac6dd4",
+      "entity_type": "artist",
+      "target_artist_id": "d08f2c85-7f47-449e-a486-a19ba3b5841a",
+      "created_at": "2026-10-28T13:55:53.266898+00:00",
+      "updated_at": "2026-10-28T13:55:53.266898+00:00"
+    },
+    {
+      "id": "61ca5cbf-e9b5-46cf-85c4-de45cdf943bd",
+      "editorial_document_id": "becdf792-388f-4b16-ac5b-6871107bf311",
+      "occurrence_id": "5f7b894c-f313-4352-820e-3f1d06e7beec",
+      "entity_type": "artist",
+      "target_artist_id": "518354a4-7cb9-4c39-a2b8-9fa4d18f50db",
+      "created_at": "2026-10-28T13:55:53.266898+00:00",
+      "updated_at": "2026-10-28T13:55:53.266898+00:00"
+    },
+    {
+      "id": "cea964e4-858a-499a-b08e-033cbdb2e630",
+      "editorial_document_id": "becdf792-388f-4b16-ac5b-6871107bf311",
+      "occurrence_id": "5e65e833-0007-4be4-ba1c-48aa69502674",
+      "entity_type": "artist",
+      "target_artist_id": "f57eb2e7-9ca7-463d-baee-8b3ea1800e6b",
+      "created_at": "2026-10-28T13:55:53.266898+00:00",
+      "updated_at": "2026-10-28T13:55:53.266898+00:00"
+    },
+    {
+      "id": "5e321550-dc61-48b7-9038-ac2086fd06dc",
+      "editorial_document_id": "becdf792-388f-4b16-ac5b-6871107bf311",
+      "occurrence_id": "eb88df53-bdfe-4601-9b2c-3fa9f48c352e",
+      "entity_type": "artist",
+      "target_artist_id": "3e1718be-c12d-42f5-85e7-2156d9574940",
+      "created_at": "2026-10-28T13:55:53.266898+00:00",
+      "updated_at": "2026-10-28T13:55:53.266898+00:00"
+    },
+    {
+      "id": "af301dda-0647-4f43-90c8-ddaf4e2894cd",
+      "editorial_document_id": "becdf792-388f-4b16-ac5b-6871107bf311",
+      "occurrence_id": "0fdb75a6-301c-42b4-8a34-c74dac84f836",
+      "entity_type": "artist",
+      "target_artist_id": "d08f2c85-7f47-449e-a486-a19ba3b5841a",
+      "created_at": "2026-10-28T13:55:53.266898+00:00",
+      "updated_at": "2026-10-28T13:55:53.266898+00:00"
+    },
+    {
+      "id": "360399b0-3efa-44ec-9a18-717f2d544617",
+      "editorial_document_id": "becdf792-388f-4b16-ac5b-6871107bf311",
+      "occurrence_id": "3f42fedf-ee04-40c9-a565-763f8b8f98ab",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T13:55:53.266898+00:00",
+      "updated_at": "2026-10-28T13:55:53.266898+00:00"
+    },
+    {
+      "id": "8deddcca-563c-498e-bb72-2f3dac1af9c6",
+      "editorial_document_id": "becdf792-388f-4b16-ac5b-6871107bf311",
+      "occurrence_id": "e11667af-ce93-4142-a8d4-7195dff7f5fd",
+      "entity_type": "artist",
+      "target_artist_id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "created_at": "2026-10-28T13:55:53.266898+00:00",
+      "updated_at": "2026-10-28T13:55:53.266898+00:00"
+    },
+    {
+      "id": "49e3b802-c11b-487a-baa9-dbebefcae87c",
+      "editorial_document_id": "becdf792-388f-4b16-ac5b-6871107bf311",
+      "occurrence_id": "b44d02eb-2b97-4166-b8e1-951e21a563ce",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-28T13:55:53.266898+00:00",
+      "updated_at": "2026-10-28T13:55:53.266898+00:00"
+    },
+    {
+      "id": "bbe5eb92-0cf2-4c97-a0c6-c04ab0759210",
+      "editorial_document_id": "becdf792-388f-4b16-ac5b-6871107bf311",
+      "occurrence_id": "fc7756cd-b227-4982-9c63-0a51907b7964",
+      "entity_type": "artist",
+      "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-10-28T13:55:53.266898+00:00",
+      "updated_at": "2026-10-28T13:55:53.266898+00:00"
+    },
+    {
+      "id": "c48b0fca-88a2-4b63-b977-12048aaac85c",
+      "editorial_document_id": "a70df450-c133-46b9-b61d-8491fd9bbfa2",
+      "occurrence_id": "55679fb0-100c-406a-9d71-ab1a24ce170a",
+      "entity_type": "artist",
+      "target_artist_id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+      "created_at": "2026-10-28T13:55:53.552427+00:00",
+      "updated_at": "2026-10-28T13:55:53.552427+00:00"
+    },
+    {
+      "id": "66eab7b6-704b-4598-b707-b60dd66ec4ba",
+      "editorial_document_id": "a70df450-c133-46b9-b61d-8491fd9bbfa2",
+      "occurrence_id": "925b60ae-8f17-4448-b013-e2045a0a7122",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T13:55:53.552427+00:00",
+      "updated_at": "2026-10-28T13:55:53.552427+00:00"
+    },
+    {
+      "id": "0b3766eb-f90c-418d-a026-93e7d3cf1b55",
+      "editorial_document_id": "a70df450-c133-46b9-b61d-8491fd9bbfa2",
+      "occurrence_id": "eb50eb5c-d73e-496a-8653-5f0a67561ce4",
+      "entity_type": "artist",
+      "target_artist_id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "created_at": "2026-10-28T13:55:53.552427+00:00",
+      "updated_at": "2026-10-28T13:55:53.552427+00:00"
+    },
+    {
+      "id": "554e7054-08a5-46b3-80b5-baf8f6d49fe8",
+      "editorial_document_id": "a70df450-c133-46b9-b61d-8491fd9bbfa2",
+      "occurrence_id": "03b9295a-52e7-43f0-b551-268926a8855e",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-28T13:55:53.552427+00:00",
+      "updated_at": "2026-10-28T13:55:53.552427+00:00"
+    },
+    {
+      "id": "4e8f078c-a6a1-4b4b-a112-7431672cc1b5",
+      "editorial_document_id": "a70df450-c133-46b9-b61d-8491fd9bbfa2",
+      "occurrence_id": "acbb1412-5728-494f-a094-9ef74ce0768c",
+      "entity_type": "artist",
+      "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-10-28T13:55:53.552427+00:00",
+      "updated_at": "2026-10-28T13:55:53.552427+00:00"
+    },
+    {
+      "id": "abea3e6c-5d0b-4b66-b4d2-d11d87099c46",
+      "editorial_document_id": "0bd2bbbc-4697-4725-921e-15add6f9d3df",
+      "occurrence_id": "b81e25a9-bbd2-43c5-8720-dc4831854481",
+      "entity_type": "artist",
+      "target_artist_id": "0760875d-6b6f-4a48-8aed-6e57934d1baa",
+      "created_at": "2026-10-28T13:55:53.81845+00:00",
+      "updated_at": "2026-10-28T13:55:53.81845+00:00"
+    },
+    {
+      "id": "38f43be6-ad51-46e7-8bfc-7a1d199fbb3d",
+      "editorial_document_id": "0bd2bbbc-4697-4725-921e-15add6f9d3df",
+      "occurrence_id": "d3488af9-7f08-4402-8584-33b93342d7fc",
+      "entity_type": "artist",
+      "target_artist_id": "0760875d-6b6f-4a48-8aed-6e57934d1baa",
+      "created_at": "2026-10-28T13:55:53.81845+00:00",
+      "updated_at": "2026-10-28T13:55:53.81845+00:00"
+    },
+    {
+      "id": "256cef8b-eb66-469b-8072-abf48b2c2556",
+      "editorial_document_id": "0bd2bbbc-4697-4725-921e-15add6f9d3df",
+      "occurrence_id": "e924cfb7-f954-4e12-bc25-2fdc111cf328",
+      "entity_type": "artist",
+      "target_artist_id": "96e69c00-dbb0-4cb4-ab48-ea46be9c4591",
+      "created_at": "2026-10-28T13:55:53.81845+00:00",
+      "updated_at": "2026-10-28T13:55:53.81845+00:00"
+    },
+    {
+      "id": "4cee8088-449f-4212-8385-ad0224dbc8f7",
+      "editorial_document_id": "0bd2bbbc-4697-4725-921e-15add6f9d3df",
+      "occurrence_id": "03d0f7f8-2aa4-494e-8e90-cfc344d30ac7",
+      "entity_type": "artist",
+      "target_artist_id": "8f1d2a44-3c6e-4b17-9a58-7d0e5c9b21f3",
+      "created_at": "2026-10-28T13:55:53.81845+00:00",
+      "updated_at": "2026-10-28T13:55:53.81845+00:00"
+    },
+    {
+      "id": "3c241279-cc54-43bc-a684-676b77735263",
+      "editorial_document_id": "0bd2bbbc-4697-4725-921e-15add6f9d3df",
+      "occurrence_id": "b5e93116-687a-4572-bbc9-a65c7be126cd",
+      "entity_type": "artist",
+      "target_artist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+      "created_at": "2026-10-28T13:55:53.81845+00:00",
+      "updated_at": "2026-10-28T13:55:53.81845+00:00"
+    },
+    {
+      "id": "64cc3b49-4c78-4c6f-a838-32a5a63601ab",
+      "editorial_document_id": "0bd2bbbc-4697-4725-921e-15add6f9d3df",
+      "occurrence_id": "3207fced-14b1-4901-a0a6-3f1b177b101b",
+      "entity_type": "artist",
+      "target_artist_id": "8f1d2a44-3c6e-4b17-9a58-7d0e5c9b21f3",
+      "created_at": "2026-10-28T13:55:53.81845+00:00",
+      "updated_at": "2026-10-28T13:55:53.81845+00:00"
+    },
+    {
+      "id": "42bb3149-5eba-45b7-b533-f2faa233fb3f",
+      "editorial_document_id": "0bd2bbbc-4697-4725-921e-15add6f9d3df",
+      "occurrence_id": "5f418423-29ea-44e2-ada2-73153b579a6f",
+      "entity_type": "artist",
+      "target_artist_id": "9c02d1a1-952e-4855-9b60-c0266236378d",
+      "created_at": "2026-10-28T13:55:53.81845+00:00",
+      "updated_at": "2026-10-28T13:55:53.81845+00:00"
+    },
+    {
+      "id": "686ebdd3-70c6-4b07-88ed-f7d40c44b1bb",
+      "editorial_document_id": "0bd2bbbc-4697-4725-921e-15add6f9d3df",
+      "occurrence_id": "bd3efb06-f482-4491-bc48-92a98008f387",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T13:55:53.81845+00:00",
+      "updated_at": "2026-10-28T13:55:53.81845+00:00"
+    },
+    {
+      "id": "417eacf8-45e7-48ab-9cce-05b37302a5ee",
+      "editorial_document_id": "0bd2bbbc-4697-4725-921e-15add6f9d3df",
+      "occurrence_id": "e305b525-a5e2-4a96-b53d-4b8ca21b27d6",
+      "entity_type": "artist",
+      "target_artist_id": "3a7c19e8-5d24-4f06-b8e1-9c4a70f2d5b3",
+      "created_at": "2026-10-28T13:55:53.81845+00:00",
+      "updated_at": "2026-10-28T13:55:53.81845+00:00"
+    },
+    {
+      "id": "484d0671-52b9-4bcc-97e3-13e0bdf6ec3b",
+      "editorial_document_id": "7b9d5443-7702-45db-a4bb-382f32893e5a",
+      "occurrence_id": "6ba8d97b-1934-40b2-ae15-f44d906603d5",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T13:55:54.128096+00:00",
+      "updated_at": "2026-10-28T13:55:54.128096+00:00"
+    },
+    {
+      "id": "5c961f58-7bf2-4fb3-a786-2ba3a65a069e",
+      "editorial_document_id": "7b9d5443-7702-45db-a4bb-382f32893e5a",
+      "occurrence_id": "a8c1c783-fd99-4075-b302-31cde59fe096",
+      "entity_type": "artist",
+      "target_artist_id": "5fb12fee-64fe-4887-b87e-28f28a15c4f9",
+      "created_at": "2026-10-28T13:55:54.128096+00:00",
+      "updated_at": "2026-10-28T13:55:54.128096+00:00"
+    },
+    {
+      "id": "cb362583-5e80-43d8-af21-4f26c01c66ff",
+      "editorial_document_id": "7b9d5443-7702-45db-a4bb-382f32893e5a",
+      "occurrence_id": "31a2f653-2f3e-4023-8a73-ec16f9b7f4be",
+      "entity_type": "artist",
+      "target_artist_id": "9bf41d47-c5ab-45e3-b048-7bb7886b0912",
+      "created_at": "2026-10-28T13:55:54.128096+00:00",
+      "updated_at": "2026-10-28T13:55:54.128096+00:00"
+    },
+    {
+      "id": "293defbc-6beb-45e0-91b4-f88e9d5567cf",
+      "editorial_document_id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "occurrence_id": "3e1e58d4-bf80-428d-9a7b-976a61d7754c",
+      "entity_type": "artist",
+      "target_artist_id": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+      "created_at": "2026-10-28T13:55:54.36056+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00"
+    },
+    {
+      "id": "c75552d0-228b-458f-a95d-65402c8d95bf",
+      "editorial_document_id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "occurrence_id": "6669bb6f-9afa-4d1f-ba93-5ca14877aa13",
+      "entity_type": "artist",
+      "target_artist_id": "de562eb7-a0fb-49c2-a3c8-db97a4be80e3",
+      "created_at": "2026-10-28T13:55:54.36056+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00"
+    },
+    {
+      "id": "7fe94ff2-c6c8-4467-ae69-2df75f7c227a",
+      "editorial_document_id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "occurrence_id": "7f561afd-9801-48cd-82cb-98b33c1f9415",
+      "entity_type": "artist",
+      "target_artist_id": "9bf41d47-c5ab-45e3-b048-7bb7886b0912",
+      "created_at": "2026-10-28T13:55:54.36056+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00"
+    },
+    {
+      "id": "009cadae-3ee0-4d28-8a6f-2f8e6baaffea",
+      "editorial_document_id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "occurrence_id": "947a11eb-3ed9-4ba6-b75c-41f3f2bac591",
+      "entity_type": "artist",
+      "target_artist_id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+      "created_at": "2026-10-28T13:55:54.36056+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00"
+    },
+    {
+      "id": "3fe1634a-9e65-40dd-b883-3b43c5fdbf2b",
+      "editorial_document_id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "occurrence_id": "741b1b4c-56a1-4717-858b-8b492e6d292d",
+      "entity_type": "artist",
+      "target_artist_id": "439bbc6c-f06e-447f-a1fa-b2130b885457",
+      "created_at": "2026-10-28T13:55:54.36056+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00"
+    },
+    {
+      "id": "32df714e-62a2-4916-b6f9-a106b59190be",
+      "editorial_document_id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "occurrence_id": "da45a139-7d22-4710-a098-0b5d080a0f9a",
+      "entity_type": "artist",
+      "target_artist_id": "de562eb7-a0fb-49c2-a3c8-db97a4be80e3",
+      "created_at": "2026-10-28T13:55:54.36056+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00"
+    },
+    {
+      "id": "715aa784-a06c-46ca-afc6-0033ce252fdd",
+      "editorial_document_id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "occurrence_id": "11541a21-4a35-4f57-9a8e-f1b94cbd303a",
+      "entity_type": "artist",
+      "target_artist_id": "bb07dcb8-444f-4a68-a668-21e9e038f335",
+      "created_at": "2026-10-28T13:55:54.36056+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00"
+    },
+    {
+      "id": "9f70e806-b3ac-48f9-ab5e-02676a194acc",
+      "editorial_document_id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "occurrence_id": "52c7cfd8-7d61-4968-9b08-56c44e7f9668",
+      "entity_type": "artist",
+      "target_artist_id": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+      "created_at": "2026-10-28T13:55:54.36056+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00"
+    },
+    {
+      "id": "8b24e122-66fd-4982-946a-30e208454eea",
+      "editorial_document_id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "occurrence_id": "b029527e-869e-4add-b10b-fd8163d18354",
+      "entity_type": "artist",
+      "target_artist_id": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+      "created_at": "2026-10-28T13:55:54.36056+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00"
+    },
+    {
+      "id": "f78c9b84-d891-4aa4-a84b-509ded163414",
+      "editorial_document_id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "occurrence_id": "c61b6542-3152-4614-8b3d-9e7f61c3c871",
+      "entity_type": "artist",
+      "target_artist_id": "af726afa-c7a0-47da-99bb-a4c7669a8785",
+      "created_at": "2026-10-28T13:55:54.36056+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00"
+    },
+    {
+      "id": "e8bfdaa8-a723-4cf0-a3b4-3a7830ec3ae3",
+      "editorial_document_id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "occurrence_id": "82f4bad8-32be-4339-8cb5-ab673beb513f",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T13:55:54.36056+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00"
+    },
+    {
+      "id": "809689c5-f0e8-4c4e-8d31-5eedba4f3861",
+      "editorial_document_id": "335ecfa4-0954-4073-89f0-e4df3188477c",
+      "occurrence_id": "4711433b-d267-41b7-885e-7bfbd4317f4c",
+      "entity_type": "artist",
+      "target_artist_id": "550df3b5-6488-4aec-a476-a5d28d52ceea",
+      "created_at": "2026-10-28T13:55:54.36056+00:00",
+      "updated_at": "2026-10-28T13:55:54.36056+00:00"
+    },
+    {
+      "id": "e8a4959e-9ceb-475e-952c-d07231cc55cc",
+      "editorial_document_id": "4cf3dbc5-912a-4507-8f22-40b43cff3552",
+      "occurrence_id": "90b529c6-8ab0-4b46-8d02-b5945c62b0bd",
+      "entity_type": "artist",
+      "target_artist_id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "created_at": "2026-10-28T13:55:54.668032+00:00",
+      "updated_at": "2026-10-28T13:55:54.668032+00:00"
+    },
+    {
+      "id": "201be93e-d3c9-4241-a586-b64a7945bc8a",
+      "editorial_document_id": "4cf3dbc5-912a-4507-8f22-40b43cff3552",
+      "occurrence_id": "cbbdf63c-66d8-45b9-98ce-b217983c3181",
+      "entity_type": "artist",
+      "target_artist_id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "created_at": "2026-10-28T13:55:54.668032+00:00",
+      "updated_at": "2026-10-28T13:55:54.668032+00:00"
+    },
+    {
+      "id": "146eb506-fc21-45e0-b507-4da97f1360ba",
+      "editorial_document_id": "4cf3dbc5-912a-4507-8f22-40b43cff3552",
+      "occurrence_id": "555e06fd-927c-465a-941b-3398564740be",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-28T13:55:54.668032+00:00",
+      "updated_at": "2026-10-28T13:55:54.668032+00:00"
+    },
+    {
+      "id": "12e7771a-dc23-4080-8388-50a6b5f105c8",
+      "editorial_document_id": "4cf3dbc5-912a-4507-8f22-40b43cff3552",
+      "occurrence_id": "8dca902a-b5f7-452f-9e86-91163a9163f5",
+      "entity_type": "artist",
+      "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-10-28T13:55:54.668032+00:00",
+      "updated_at": "2026-10-28T13:55:54.668032+00:00"
+    },
+    {
+      "id": "1b11fd11-ce69-4b2d-b3aa-02999edc30be",
+      "editorial_document_id": "4cf3dbc5-912a-4507-8f22-40b43cff3552",
+      "occurrence_id": "fb2967d2-f35d-47cd-b51b-a82b27f5b4a7",
+      "entity_type": "artist",
+      "target_artist_id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "created_at": "2026-10-28T13:55:54.668032+00:00",
+      "updated_at": "2026-10-28T13:55:54.668032+00:00"
+    },
+    {
+      "id": "e779e844-14ee-4e8b-9de2-c15fb577c43b",
+      "editorial_document_id": "4cf3dbc5-912a-4507-8f22-40b43cff3552",
+      "occurrence_id": "b4351a2f-771f-4156-be6b-340cf42e403f",
+      "entity_type": "artist",
+      "target_artist_id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "created_at": "2026-10-28T13:55:54.668032+00:00",
+      "updated_at": "2026-10-28T13:55:54.668032+00:00"
+    },
+    {
+      "id": "205c0629-47b6-40b5-9686-1d0cb55f6a3a",
+      "editorial_document_id": "4cf3dbc5-912a-4507-8f22-40b43cff3552",
+      "occurrence_id": "060aedf9-4f7c-458d-ba61-ea4c82822966",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-28T13:55:54.668032+00:00",
+      "updated_at": "2026-10-28T13:55:54.668032+00:00"
+    },
+    {
+      "id": "63d5dbaf-9b2d-44bd-9670-cd1867843a06",
+      "editorial_document_id": "4cf3dbc5-912a-4507-8f22-40b43cff3552",
+      "occurrence_id": "51b07642-87d3-4167-9f31-808dffb61e0c",
+      "entity_type": "artist",
+      "target_artist_id": "b8699416-10d2-4c84-a43a-2a035387126f",
+      "created_at": "2026-10-28T13:55:54.668032+00:00",
+      "updated_at": "2026-10-28T13:55:54.668032+00:00"
+    },
+    {
+      "id": "4e0df186-98b6-4ceb-8d42-d8d5f43c9954",
+      "editorial_document_id": "4cf3dbc5-912a-4507-8f22-40b43cff3552",
+      "occurrence_id": "a6527365-8ec3-4b30-9311-bfd494509407",
+      "entity_type": "artist",
+      "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-10-28T13:55:54.668032+00:00",
+      "updated_at": "2026-10-28T13:55:54.668032+00:00"
+    },
+    {
+      "id": "2369baf0-893a-4a0c-9768-50f817986ff9",
+      "editorial_document_id": "4cf3dbc5-912a-4507-8f22-40b43cff3552",
+      "occurrence_id": "acfe72ca-81fa-4aa5-81e6-46d06ce761ec",
+      "entity_type": "artist",
+      "target_artist_id": "3e1718be-c12d-42f5-85e7-2156d9574940",
+      "created_at": "2026-10-28T13:55:54.668032+00:00",
+      "updated_at": "2026-10-28T13:55:54.668032+00:00"
+    },
+    {
+      "id": "d4491812-ce40-460c-9956-16a0f8858b3c",
+      "editorial_document_id": "4cf3dbc5-912a-4507-8f22-40b43cff3552",
+      "occurrence_id": "284b11ae-efa0-4fc3-b9ed-29fb7dbc057b",
+      "entity_type": "artist",
+      "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-10-28T13:55:54.668032+00:00",
+      "updated_at": "2026-10-28T13:55:54.668032+00:00"
+    },
+    {
+      "id": "6712c5f6-c859-4a29-9a40-091b6609c6e1",
+      "editorial_document_id": "fa32365c-4cd1-4e67-98fb-ace9c1ad87cc",
+      "occurrence_id": "efa5c0d0-8da4-4cd5-8b20-edcd0ba43ac8",
+      "entity_type": "artist",
+      "target_artist_id": "d08f2c85-7f47-449e-a486-a19ba3b5841a",
+      "created_at": "2026-10-28T13:55:54.871384+00:00",
+      "updated_at": "2026-10-28T13:55:54.871384+00:00"
+    },
+    {
+      "id": "78590112-3b97-46e8-a6cc-1c303b4b4051",
+      "editorial_document_id": "fa32365c-4cd1-4e67-98fb-ace9c1ad87cc",
+      "occurrence_id": "6c17c1ba-ed52-4fe3-b308-04d571ae74be",
+      "entity_type": "artist",
+      "target_artist_id": "518354a4-7cb9-4c39-a2b8-9fa4d18f50db",
+      "created_at": "2026-10-28T13:55:54.871384+00:00",
+      "updated_at": "2026-10-28T13:55:54.871384+00:00"
+    },
+    {
+      "id": "4e2b0c25-8e8d-489e-ab52-2d1e0cb3e3e0",
+      "editorial_document_id": "fa32365c-4cd1-4e67-98fb-ace9c1ad87cc",
+      "occurrence_id": "824ed8e6-7e68-47ec-b7d9-eed3effe1f02",
+      "entity_type": "artist",
+      "target_artist_id": "f57eb2e7-9ca7-463d-baee-8b3ea1800e6b",
+      "created_at": "2026-10-28T13:55:54.871384+00:00",
+      "updated_at": "2026-10-28T13:55:54.871384+00:00"
+    },
+    {
+      "id": "ca630c9b-0a7b-449b-82ec-e3607fa0cf0c",
+      "editorial_document_id": "fa32365c-4cd1-4e67-98fb-ace9c1ad87cc",
+      "occurrence_id": "b196d859-b950-4efe-b596-8e6b798556d1",
+      "entity_type": "artist",
+      "target_artist_id": "3e1718be-c12d-42f5-85e7-2156d9574940",
+      "created_at": "2026-10-28T13:55:54.871384+00:00",
+      "updated_at": "2026-10-28T13:55:54.871384+00:00"
+    },
+    {
+      "id": "8c596bc8-831b-4611-9283-28bf2009b7d6",
+      "editorial_document_id": "fa32365c-4cd1-4e67-98fb-ace9c1ad87cc",
+      "occurrence_id": "4e7fcf31-1251-4e3b-8e33-4696e4a934e2",
+      "entity_type": "artist",
+      "target_artist_id": "d08f2c85-7f47-449e-a486-a19ba3b5841a",
+      "created_at": "2026-10-28T13:55:54.871384+00:00",
+      "updated_at": "2026-10-28T13:55:54.871384+00:00"
+    },
+    {
+      "id": "e2a6bd0b-0710-4d38-adb4-810e8883e770",
+      "editorial_document_id": "fa32365c-4cd1-4e67-98fb-ace9c1ad87cc",
+      "occurrence_id": "8c9093ee-706f-480d-a6e6-d142aa67c3f6",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T13:55:54.871384+00:00",
+      "updated_at": "2026-10-28T13:55:54.871384+00:00"
+    },
+    {
+      "id": "cc9a55d6-5c60-4b94-a867-be6a1e93fddf",
+      "editorial_document_id": "fa32365c-4cd1-4e67-98fb-ace9c1ad87cc",
+      "occurrence_id": "42a890cf-de87-45ed-b0da-b5976196dbd6",
+      "entity_type": "artist",
+      "target_artist_id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "created_at": "2026-10-28T13:55:54.871384+00:00",
+      "updated_at": "2026-10-28T13:55:54.871384+00:00"
+    },
+    {
+      "id": "08a17c64-a425-459c-8697-f5a9e2dc87ff",
+      "editorial_document_id": "fa32365c-4cd1-4e67-98fb-ace9c1ad87cc",
+      "occurrence_id": "7978dc1c-b303-4900-9108-9ca2c7e9b690",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-28T13:55:54.871384+00:00",
+      "updated_at": "2026-10-28T13:55:54.871384+00:00"
+    },
+    {
+      "id": "4067484f-7560-44f8-8859-d524fe53f069",
+      "editorial_document_id": "fa32365c-4cd1-4e67-98fb-ace9c1ad87cc",
+      "occurrence_id": "a5394fc1-870e-4233-8852-fc44b8c56b44",
+      "entity_type": "artist",
+      "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-10-28T13:55:54.871384+00:00",
+      "updated_at": "2026-10-28T13:55:54.871384+00:00"
+    },
+    {
+      "id": "5a04af42-d28a-4bc4-9f5e-5a6356dbcc3c",
+      "editorial_document_id": "f633c5c3-3a5f-438a-abaa-d1039f765926",
+      "occurrence_id": "71ca6a4f-62fe-4ad0-8fba-84f899117098",
+      "entity_type": "artist",
+      "target_artist_id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+      "created_at": "2026-10-28T13:55:55.139087+00:00",
+      "updated_at": "2026-10-28T13:55:55.139087+00:00"
+    },
+    {
+      "id": "7d44fb77-eb9c-485b-ad70-852c4cc97786",
+      "editorial_document_id": "f633c5c3-3a5f-438a-abaa-d1039f765926",
+      "occurrence_id": "704446e1-74af-448d-981a-4675d5cf9507",
+      "entity_type": "artist",
+      "target_artist_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "created_at": "2026-10-28T13:55:55.139087+00:00",
+      "updated_at": "2026-10-28T13:55:55.139087+00:00"
+    },
+    {
+      "id": "ace338b0-e7eb-416a-bdb2-b1e9920e0390",
+      "editorial_document_id": "f633c5c3-3a5f-438a-abaa-d1039f765926",
+      "occurrence_id": "e9400842-da56-4509-988f-de368ec4271c",
+      "entity_type": "artist",
+      "target_artist_id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "created_at": "2026-10-28T13:55:55.139087+00:00",
+      "updated_at": "2026-10-28T13:55:55.139087+00:00"
+    },
+    {
+      "id": "9f7d1abe-5923-42d9-ae4e-f7193a264deb",
+      "editorial_document_id": "f633c5c3-3a5f-438a-abaa-d1039f765926",
+      "occurrence_id": "94f56ac7-a3cb-4d6c-97dd-7f393cdbc587",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-28T13:55:55.139087+00:00",
+      "updated_at": "2026-10-28T13:55:55.139087+00:00"
+    },
+    {
+      "id": "8d8e69df-0510-4868-aa70-172b5c9e35b5",
+      "editorial_document_id": "f633c5c3-3a5f-438a-abaa-d1039f765926",
+      "occurrence_id": "ae97822d-fa02-4803-9d65-d6fa25f191e8",
+      "entity_type": "artist",
+      "target_artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "created_at": "2026-10-28T13:55:55.139087+00:00",
+      "updated_at": "2026-10-28T13:55:55.139087+00:00"
+    }
+  ],
+  "integrity": {
+    "generatedAt": "2026-10-28T13:56:03.528Z",
+    "counts": {
+      "documents": 14,
+      "relations": 110,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  },
+  "oldRelationCount": 84,
+  "newRelationCount": 110
+}

@@ -1,0 +1,527 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "aa45d980-e99c-4036-9375-f005ed357d55",
+        "name": "Janyll La Intérprete",
+        "sort_name": "Janyll La Intérprete",
+        "type": "solo_artist",
+        "birth_year": null,
+        "death_year": null,
+        "created_at": "2026-10-25T00:38:38.324314+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Milagros",
+        "middle_name": null,
+        "last_name": "Santana",
+        "second_last_name": "Ortiz",
+        "stage_name": "Janyll La Intérprete",
+        "date_of_birth": null,
+        "birth_place": null,
+        "website": null,
+        "youtube": "@janylllainterpreteoficial7075",
+        "facebook": "janyll.lainterprete",
+        "instagram": "janyll_la_interprete",
+        "aliases": [
+          "Janyll",
+          "Janyll La Interprete",
+          "Milagros Santana Ortiz"
+        ],
+        "mbid": null,
+        "occupations": [],
+        "instruments": [
+          "voice"
+        ],
+        "genres": [
+          "bachata",
+          "bolero",
+          "merengue"
+        ],
+        "disambiguation": null,
+        "gender": "female",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-25T00:38:38.324314+00:00",
+        "province": "San José de Ocoa",
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "janyll-la-interprete",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "ballads",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "2ACeQHeUZFvwgnEQnEeKeA"
+      },
+      {
+        "id": "cbda65a4-c7da-4762-8cf8-f29b942d2ac3",
+        "name": "Edilio Paredes",
+        "slug": "edilio-paredes",
+        "status": "published"
+      },
+      {
+        "id": "d7b078fd-12ab-42fd-8b55-5b0a470986a3",
+        "name": "Enrique Féliz",
+        "slug": "enrique-feliz",
+        "status": "published"
+      },
+      {
+        "id": "1db77ddd-1046-4d95-b675-65da60234ef0",
+        "name": "Mártires de León",
+        "slug": "martires-de-leon",
+        "status": "published"
+      },
+      {
+        "id": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+        "name": "Ramón Orlando",
+        "slug": "ramon-orlando",
+        "status": "published"
+      },
+      {
+        "id": "95010ba2-3d12-4976-938d-141737fb2daa",
+        "name": "Víctor Waill",
+        "slug": "victor-waill",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "845c653f-8f1c-4226-be3d-f63e35341b14",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Janyll La Intérprete, the stage name of Milagros Santana Ortiz, is a Dominican singer from San José de Ocoa. Her repertoire spans ballads, bachata, bolero, and merengue. She celebrates her birthday on June 29 and has developed much of her career in New York.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Beginnings",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "She began her professional career in 1978 with Agustín Mercier’s orchestra. In 1980 she settled in New York, where she continued her vocal training. In 1984 she won the best-performance award at the Festival de la Voz y la Canción at the Manhattan Center with «Para vivir un gran amor».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Recordings",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Her first album, «Máquina de placer», included «Olías a mujer», «Mi cama vacía», «Márchate», and «Todo me salió al revés». In 2012 she presented «Señora», bringing bachata into her work with arrangements by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                    "displayText": "Ramón Orlando",
+                    "occurrenceId": "1acbdbcb-b830-477e-8fee-69d6ff56e384"
+                  }
+                },
+                {
+                  "text": ", ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "95010ba2-3d12-4976-938d-141737fb2daa",
+                    "displayText": "Víctor Waill",
+                    "occurrenceId": "d78d5eb3-a7c8-4858-a302-89bc8abe537f"
+                  }
+                },
+                {
+                  "text": ", Davisito Paredes, and Billy Alonso. The title track was recorded in two versions.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In 2022 she presented «Solo contigo», whose title song was written by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "d7b078fd-12ab-42fd-8b55-5b0a470986a3",
+                    "displayText": "Enrique Féliz",
+                    "occurrenceId": "5c9a284a-f56a-4b3d-b881-8deef7a63af8"
+                  }
+                },
+                {
+                  "text": ". Davicito Paredes and ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "1db77ddd-1046-4d95-b675-65da60234ef0",
+                    "displayText": "Mártires de León",
+                    "occurrenceId": "3c83c473-c8d3-4476-8bd4-7adc1629c6c7"
+                  }
+                },
+                {
+                  "text": " supplied arrangements, and ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "cbda65a4-c7da-4762-8cf8-f29b942d2ac3",
+                    "displayText": "Edilio Paredes",
+                    "occurrenceId": "6aba4160-dc74-4a4f-a512-93a3df1a00aa"
+                  }
+                },
+                {
+                  "text": " was among the participating musicians. The production included four compositions by Carla and a tribute to the songwriter. Her official channel also preserves her interpretation of the bolero «Veinte años».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Her career connects Dominican romantic song with the stages of the New York diaspora. Her historical recordings and continued presence on digital platforms document different periods of her work as an interpreter.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "aa45d980-e99c-4036-9375-f005ed357d55",
+        "created_at": "2026-10-25T00:38:38.612305+00:00",
+        "updated_at": "2026-10-25T00:38:38.612305+00:00",
+        "revision": 1
+      },
+      {
+        "id": "9420db12-367d-4d3c-916d-3af542fed8cf",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Janyll La Intérprete, nombre artístico de Milagros Santana Ortiz, es una cantante dominicana oriunda de San José de Ocoa. Su repertorio reúne baladas, bachatas, boleros y merengues. Celebra su cumpleaños el 29 de junio y ha desarrollado buena parte de su carrera en Nueva York.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Inicios",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Comenzó profesionalmente en 1978 con la orquesta de Agustín Mercier. En 1980 se estableció en Nueva York, donde continuó su formación vocal. En 1984 obtuvo el premio a la mejor interpretación en el Festival de la Voz y la Canción del Manhattan Center con «Para vivir un gran amor».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Grabaciones",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su primer álbum, «Máquina de placer», incluyó «Olías a mujer», «Mi cama vacía», «Márchate» y «Todo me salió al revés». En 2012 presentó «Señora», que incorporó la bachata a su propuesta y contó con arreglos de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                    "displayText": "Ramón Orlando",
+                    "occurrenceId": "c7b9dc45-6e4c-40a9-b329-54dec82cd164"
+                  }
+                },
+                {
+                  "text": ", ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "95010ba2-3d12-4976-938d-141737fb2daa",
+                    "displayText": "Víctor Waill",
+                    "occurrenceId": "42902d06-68a7-4d0d-ab35-d4cd8da20063"
+                  }
+                },
+                {
+                  "text": ", Davisito Paredes y Billy Alonso. La canción titular se grabó en dos versiones.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 2022 presentó «Solo contigo», cuyo tema titular escribió ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "d7b078fd-12ab-42fd-8b55-5b0a470986a3",
+                    "displayText": "Enrique Féliz",
+                    "occurrenceId": "dbf0c150-c9de-49fc-b701-3683e194045f"
+                  }
+                },
+                {
+                  "text": ". La producción contó con arreglos de Davicito Paredes y ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "1db77ddd-1046-4d95-b675-65da60234ef0",
+                    "displayText": "Mártires de León",
+                    "occurrenceId": "1ed4ac0c-5239-42dd-83c4-26af260ea5a3"
+                  }
+                },
+                {
+                  "text": ", y con la participación de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "cbda65a4-c7da-4762-8cf8-f29b942d2ac3",
+                    "displayText": "Edilio Paredes",
+                    "occurrenceId": "3c855851-3ead-4018-aae4-99446aa8da6e"
+                  }
+                },
+                {
+                  "text": ", entre otros músicos. Incluyó cuatro composiciones de Carla y un homenaje a la compositora. Su canal oficial también conserva su interpretación del bolero «Veinte años».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su trayectoria conecta la canción romántica dominicana con los escenarios de la diáspora en Nueva York. Las grabaciones históricas y su continuidad en plataformas digitales permiten recorrer distintas etapas de su trabajo como intérprete.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "aa45d980-e99c-4036-9375-f005ed357d55",
+        "created_at": "2026-10-25T00:38:38.45041+00:00",
+        "updated_at": "2026-10-25T00:38:38.45041+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "e87c847f-3c19-49cf-8370-1f00192fcf8d",
+        "editorial_document_id": "9420db12-367d-4d3c-916d-3af542fed8cf",
+        "occurrence_id": "c7b9dc45-6e4c-40a9-b329-54dec82cd164",
+        "entity_type": "artist",
+        "target_artist_id": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+        "created_at": "2026-10-25T00:38:38.45041+00:00",
+        "updated_at": "2026-10-25T00:38:38.45041+00:00"
+      },
+      {
+        "id": "55c12896-cb41-4030-b09b-af30650cc5fb",
+        "editorial_document_id": "9420db12-367d-4d3c-916d-3af542fed8cf",
+        "occurrence_id": "42902d06-68a7-4d0d-ab35-d4cd8da20063",
+        "entity_type": "artist",
+        "target_artist_id": "95010ba2-3d12-4976-938d-141737fb2daa",
+        "created_at": "2026-10-25T00:38:38.45041+00:00",
+        "updated_at": "2026-10-25T00:38:38.45041+00:00"
+      },
+      {
+        "id": "64925b49-a1c1-4150-8083-3058f4d551b4",
+        "editorial_document_id": "9420db12-367d-4d3c-916d-3af542fed8cf",
+        "occurrence_id": "dbf0c150-c9de-49fc-b701-3683e194045f",
+        "entity_type": "artist",
+        "target_artist_id": "d7b078fd-12ab-42fd-8b55-5b0a470986a3",
+        "created_at": "2026-10-25T00:38:38.45041+00:00",
+        "updated_at": "2026-10-25T00:38:38.45041+00:00"
+      },
+      {
+        "id": "cdd56854-c296-4dca-95a9-967009e1dffd",
+        "editorial_document_id": "9420db12-367d-4d3c-916d-3af542fed8cf",
+        "occurrence_id": "1ed4ac0c-5239-42dd-83c4-26af260ea5a3",
+        "entity_type": "artist",
+        "target_artist_id": "1db77ddd-1046-4d95-b675-65da60234ef0",
+        "created_at": "2026-10-25T00:38:38.45041+00:00",
+        "updated_at": "2026-10-25T00:38:38.45041+00:00"
+      },
+      {
+        "id": "fcebb973-61d6-44b4-b990-22b2932cbbdf",
+        "editorial_document_id": "9420db12-367d-4d3c-916d-3af542fed8cf",
+        "occurrence_id": "3c855851-3ead-4018-aae4-99446aa8da6e",
+        "entity_type": "artist",
+        "target_artist_id": "cbda65a4-c7da-4762-8cf8-f29b942d2ac3",
+        "created_at": "2026-10-25T00:38:38.45041+00:00",
+        "updated_at": "2026-10-25T00:38:38.45041+00:00"
+      },
+      {
+        "id": "a7b397be-ec1e-4f6e-831b-e524c9ce7025",
+        "editorial_document_id": "845c653f-8f1c-4226-be3d-f63e35341b14",
+        "occurrence_id": "1acbdbcb-b830-477e-8fee-69d6ff56e384",
+        "entity_type": "artist",
+        "target_artist_id": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+        "created_at": "2026-10-25T00:38:38.612305+00:00",
+        "updated_at": "2026-10-25T00:38:38.612305+00:00"
+      },
+      {
+        "id": "84116975-953c-4316-8ec0-d70eed6f664f",
+        "editorial_document_id": "845c653f-8f1c-4226-be3d-f63e35341b14",
+        "occurrence_id": "d78d5eb3-a7c8-4858-a302-89bc8abe537f",
+        "entity_type": "artist",
+        "target_artist_id": "95010ba2-3d12-4976-938d-141737fb2daa",
+        "created_at": "2026-10-25T00:38:38.612305+00:00",
+        "updated_at": "2026-10-25T00:38:38.612305+00:00"
+      },
+      {
+        "id": "c614d817-619a-4aa3-94ca-cd80429fc095",
+        "editorial_document_id": "845c653f-8f1c-4226-be3d-f63e35341b14",
+        "occurrence_id": "5c9a284a-f56a-4b3d-b881-8deef7a63af8",
+        "entity_type": "artist",
+        "target_artist_id": "d7b078fd-12ab-42fd-8b55-5b0a470986a3",
+        "created_at": "2026-10-25T00:38:38.612305+00:00",
+        "updated_at": "2026-10-25T00:38:38.612305+00:00"
+      },
+      {
+        "id": "6ff57665-a4d7-48b0-9cb2-dab8f0ebd89e",
+        "editorial_document_id": "845c653f-8f1c-4226-be3d-f63e35341b14",
+        "occurrence_id": "3c83c473-c8d3-4476-8bd4-7adc1629c6c7",
+        "entity_type": "artist",
+        "target_artist_id": "1db77ddd-1046-4d95-b675-65da60234ef0",
+        "created_at": "2026-10-25T00:38:38.612305+00:00",
+        "updated_at": "2026-10-25T00:38:38.612305+00:00"
+      },
+      {
+        "id": "71050b5c-6216-42b4-9a7a-40e72af394f9",
+        "editorial_document_id": "845c653f-8f1c-4226-be3d-f63e35341b14",
+        "occurrence_id": "6aba4160-dc74-4a4f-a512-93a3df1a00aa",
+        "entity_type": "artist",
+        "target_artist_id": "cbda65a4-c7da-4762-8cf8-f29b942d2ac3",
+        "created_at": "2026-10-25T00:38:38.612305+00:00",
+        "updated_at": "2026-10-25T00:38:38.612305+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-25T00:38:47.342Z",
+    "counts": {
+      "documents": 2,
+      "relations": 10,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

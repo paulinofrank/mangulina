@@ -1,0 +1,524 @@
+{
+  "date": "2026-11-07",
+  "scope": "Create one draft Grupo Hope artist with published EN/ES biographies; add a founder_of relationship from Junior Ponciano. No discography or other biography edits.",
+  "artist": {
+    "id": "04788dac-8c1b-40ec-8c3e-c6a375838f20",
+    "name": "Grupo Hope",
+    "sort_name": "Grupo Hope",
+    "slug": "grupo-hope",
+    "type": "group",
+    "status": "draft",
+    "stage_name": "Grupo Hope",
+    "aliases": [
+      "Hope W Music"
+    ],
+    "primary_role": "singer",
+    "occupations": [],
+    "primary_genre": "worship",
+    "genres": [],
+    "artist_tags": [
+      "christian"
+    ],
+    "facebook": "GrupoHopew",
+    "instagram": "grupohopew",
+    "youtube": "@GrupoHopew",
+    "spotify": "0EmliyVpOhBPUadxwy5n2u",
+    "has_image": false
+  },
+  "documents": [
+    {
+      "owner_artist_id": "04788dac-8c1b-40ec-8c3e-c6a375838f20",
+      "locale": "en",
+      "expected_revision": 0,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Grupo Hope, also credited as Hope W Music, is a Dominican contemporary Christian worship project created by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "97de11c7-d1a6-4fd1-9a47-80740f80d0db",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". It brings together different voices to perform worship songs rather than operating as a band with a fixed vocal lineup."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The project",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ponciano conceived Hope W Music from songs that emerged during his work in preaching and worship. Grupo Hope's official channel describes it as a platform for sharing those compositions with the church and bringing together different singers and worship leaders. Digital catalogs list «Espíritu Santo (Live)» in 2019 and «Dios de Gloria (Live)» in 2020."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Rodeado» and collaborations",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2022 Grupo Hope released «Rodeado» with Tba Worship, featuring "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86d543cd-3eab-42d0-98c8-438bf8d5792c",
+                  "occurrenceId": "8a20b3a1-7eda-49c0-9444-71cf4011adc3",
+                  "displayText": "Misael J"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "c3ee667c-0c30-47dd-b688-ffb5ce61ab07",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " as guest vocalists. "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "78160420-9567-40fa-83f2-48f91a2d2d9d",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " wrote the song; contemporary coverage credits David Rosario with its arrangement. The live recording and video brought the project to audiences beyond the worship events where it had performed."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Later recordings",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2023 it released «Kadosh» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "548bc0df-b19a-43af-b5a4-798b8a401780",
+                  "occurrenceId": "f25dd4f2-3e94-4994-9a8b-fd3839e8679e",
+                  "displayText": "Averly Morillo"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Its 2024 releases included «Alfa & Omega», whose official video features "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1a4f1c39-f32a-4b98-af5d-a6969885eab9",
+                  "occurrenceId": "6b6a1a3b-142e-479c-b927-1dcb806c6e0d",
+                  "displayText": "Jordan Mateo"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "ac3a796d-e2a9-4174-b02f-92d057a93dc3",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", and «Yeshua». In 2026 the project issued «Derrama Tu Aceite» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86d543cd-3eab-42d0-98c8-438bf8d5792c",
+                  "occurrenceId": "9b6f2b61-43d4-4a94-bfd2-fb91368cfc44",
+                  "displayText": "Misael J"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "94ac77a4-d34d-467e-924f-37be8bcefcfc",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", followed by «Te Mostraré Mi Gloria» with Carolina and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "f3ad56b4-0ee4-4119-bbcf-47c43ea502f8",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". These collaborations reflect the project's continuing work with different singers."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Grupo Hope's repertoire brings together pastoral songwriting, worship recordings and vocal collaborations. Its public identity links the name Grupo Hope, used on social media and videos, with Hope W Music, used for many of its digital releases."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Grupo Hope, also credited as Hope W Music, is a Dominican contemporary Christian worship project created by Junior Ponciano. It brings together different voices to perform worship songs rather than operating as a band with a fixed vocal lineup.\n\n**The project**\n\nPonciano conceived Hope W Music from songs that emerged during his work in preaching and worship. Grupo Hope's official channel describes it as a platform for sharing those compositions with the church and bringing together different singers and worship leaders. Digital catalogs list «Espíritu Santo (Live)» in 2019 and «Dios de Gloria (Live)» in 2020.\n\n**«Rodeado» and collaborations**\n\nIn 2022 Grupo Hope released «Rodeado» with Tba Worship, featuring Misael J and Carolina Ponciano as guest vocalists. Junior Ponciano wrote the song; contemporary coverage credits David Rosario with its arrangement. The live recording and video brought the project to audiences beyond the worship events where it had performed.\n\n**Later recordings**\n\nIn 2023 it released «Kadosh» with Averly Morillo. Its 2024 releases included «Alfa & Omega», whose official video features Jordan Mateo and Junior Ponciano, and «Yeshua». In 2026 the project issued «Derrama Tu Aceite» with Misael J and Carolina Ponciano, followed by «Te Mostraré Mi Gloria» with Carolina and Karen Ponciano. These collaborations reflect the project's continuing work with different singers.\n\n**Legacy**\n\nGrupo Hope's repertoire brings together pastoral songwriting, worship recordings and vocal collaborations. Its public identity links the name Grupo Hope, used on social media and videos, with Hope W Music, used for many of its digital releases."
+    },
+    {
+      "owner_artist_id": "04788dac-8c1b-40ec-8c3e-c6a375838f20",
+      "locale": "es",
+      "expected_revision": 0,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Grupo Hope, también acreditado como Hope W Music, es un proyecto dominicano de música cristiana contemporánea y adoración creado por "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "9b56bf1a-903e-4cca-9520-1565b9fc5d8e",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Reúne a distintas voces para interpretar canciones de alabanza, en lugar de presentarse como una banda de vocalistas fijos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "El proyecto",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ponciano concibió Hope W Music a partir de canciones surgidas durante su trabajo de predicación y adoración. El canal oficial de Grupo Hope describe el proyecto como una plataforma para compartir esas composiciones con la iglesia y convocar a diferentes cantantes y adoradores. La grabación «Espíritu Santo (Live)» aparece en los catálogos digitales en 2019, y «Dios de Gloria (Live)» en 2020."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Rodeado» y nuevas colaboraciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2022 Grupo Hope publicó «Rodeado» junto a Tba Worship, con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86d543cd-3eab-42d0-98c8-438bf8d5792c",
+                  "occurrenceId": "f6ee7de7-1414-4e05-8aa9-eeccf8f1455f",
+                  "displayText": "Misael J"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "9d8c9fd1-457f-484a-9db1-eeaf016d7971",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " como voces invitadas. La canción fue escrita por "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "df39007c-b61a-434c-a4ec-b69f21c07b3a",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": "; la cobertura de su lanzamiento identifica a David Rosario como responsable del arreglo. La grabación en vivo y su video difundieron el proyecto fuera de los escenarios de adoración donde se había presentado."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Repertorio posterior",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2023 lanzó «Kadosh» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "548bc0df-b19a-43af-b5a4-798b8a401780",
+                  "occurrenceId": "17296f74-a128-400f-8add-f48991920dbc",
+                  "displayText": "Averly Morillo"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". En 2024 publicó «Alfa & Omega», cuyo video oficial presenta a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1a4f1c39-f32a-4b98-af5d-a6969885eab9",
+                  "occurrenceId": "af3f2513-af30-4e98-aad7-ace6468835e5",
+                  "displayText": "Jordan Mateo"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "23ab91b1-021b-4150-8ff9-96503aeafe97",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", además de «Yeshua». En 2026 estrenó «Derrama Tu Aceite» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86d543cd-3eab-42d0-98c8-438bf8d5792c",
+                  "occurrenceId": "19bc4840-700a-4f64-98cb-64dd5ab699b9",
+                  "displayText": "Misael J"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "5d80185e-3efa-4200-b548-aedccde65db4",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", y «Te Mostraré Mi Gloria» con Carolina y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "4cbb190c-3ca3-4d58-8e83-db5066af40c0",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Estas colaboraciones muestran la continuidad del proyecto con intérpretes distintos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "El repertorio de Grupo Hope combina composición pastoral, grabaciones de adoración y colaboraciones vocales. Su identidad pública une el nombre Grupo Hope, usado en redes y videos, con Hope W Music, empleado en buena parte de sus lanzamientos digitales."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Grupo Hope, también acreditado como Hope W Music, es un proyecto dominicano de música cristiana contemporánea y adoración creado por Junior Ponciano. Reúne a distintas voces para interpretar canciones de alabanza, en lugar de presentarse como una banda de vocalistas fijos.\n\n**El proyecto**\n\nPonciano concibió Hope W Music a partir de canciones surgidas durante su trabajo de predicación y adoración. El canal oficial de Grupo Hope describe el proyecto como una plataforma para compartir esas composiciones con la iglesia y convocar a diferentes cantantes y adoradores. La grabación «Espíritu Santo (Live)» aparece en los catálogos digitales en 2019, y «Dios de Gloria (Live)» en 2020.\n\n**«Rodeado» y nuevas colaboraciones**\n\nEn 2022 Grupo Hope publicó «Rodeado» junto a Tba Worship, con Misael J y Carolina Ponciano como voces invitadas. La canción fue escrita por Junior Ponciano; la cobertura de su lanzamiento identifica a David Rosario como responsable del arreglo. La grabación en vivo y su video difundieron el proyecto fuera de los escenarios de adoración donde se había presentado.\n\n**Repertorio posterior**\n\nEn 2023 lanzó «Kadosh» con Averly Morillo. En 2024 publicó «Alfa & Omega», cuyo video oficial presenta a Jordan Mateo y Junior Ponciano, además de «Yeshua». En 2026 estrenó «Derrama Tu Aceite» con Misael J y Carolina Ponciano, y «Te Mostraré Mi Gloria» con Carolina y Karen Ponciano. Estas colaboraciones muestran la continuidad del proyecto con intérpretes distintos.\n\n**Legado**\n\nEl repertorio de Grupo Hope combina composición pastoral, grabaciones de adoración y colaboraciones vocales. Su identidad pública une el nombre Grupo Hope, usado en redes y videos, con Hope W Music, empleado en buena parte de sus lanzamientos digitales."
+    }
+  ],
+  "relationship": {
+    "source_artist_id": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+    "target_artist_id": "04788dac-8c1b-40ec-8c3e-c6a375838f20",
+    "relationship_type": "founder_of",
+    "start_year": null,
+    "end_year": null,
+    "notes": "Grupo Hope official YouTube channel description identifies Junior Ponciano as the creator of Hope W Music; no foundation year stated."
+  },
+  "field_evidence": {
+    "name": "https://www.youtube.com/@GrupoHopew and https://www.facebook.com/GrupoHopew",
+    "alias_and_spotify_identity": "The official Grupo Hope YouTube description explicitly calls the project Hope W Music; Spotify artist 0EmliyVpOhBPUadxwy5n2u contains Rodeado, Kadosh and Te Mostrare Mi Gloria.",
+    "instagram": "https://www.instagram.com/grupohopew/ linked from the official YouTube channel",
+    "christian_worship": "Official YouTube description, repertoire and https://www.diariolibre.com/revista/musica/2022/06/10/grupo-cristiano-hope-estrena-nueva-cancion/1880969",
+    "origin_and_formation_year": "Group formation city and exact year not established; left null.",
+    "image": "No rights-confirmed portrait or logo uploaded; has_image=false."
+  },
+  "sources": [
+    "https://www.youtube.com/@GrupoHopew",
+    "https://www.facebook.com/GrupoHopew",
+    "https://www.instagram.com/grupohopew/",
+    "https://open.spotify.com/artist/0EmliyVpOhBPUadxwy5n2u",
+    "https://music.apple.com/us/album/esp%C3%ADritu-santo-live/1591114171?i=1591114173",
+    "https://music.apple.com/us/album/dios-de-gloria-live/1591114266?i=1591114267",
+    "https://music.apple.com/us/song/1628975442",
+    "https://music.apple.com/us/album/kadosh-feat-averly-morillo-single/1700621106",
+    "https://music.apple.com/us/album/alfa-omega-ep/1774969309",
+    "https://music.apple.com/us/artist/hope-w-music/1489337779",
+    "https://www.qobuz.com/us-en/album/te-mostrare-mi-gloria-hope-w-music-amp-carolina-ponciano-amp-karen-ponciano-ministry/uvzmsj2gyjmip"
+  ],
+  "limits": "The 2018 Hope Worship report is not treated as proof of formal identity or founding year. Carolina, Misael J and other singers are guests, not fixed members. Do not link published biographies to a draft artist or open its public URL as a preview."
+}

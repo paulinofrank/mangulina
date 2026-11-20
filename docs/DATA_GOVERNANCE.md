@@ -1,5 +1,20 @@
 # Mangulina Data Governance & Modeling Guide
 
+## Current discography authority — 2026-10-15
+
+For discography tasks, [discography.md](discography.md) and [../AGENTS.md](../AGENTS.md) govern scope, research and review gates. The current entity model is [architecture/MUSIC_ONTOLOGY.md](architecture/MUSIC_ONTOLOGY.md); canonical credit identity/scope is [architecture/CREDIT_ROLE_VOCABULARY.md](architecture/CREDIT_ROLE_VOCABULARY.md). Composition authorship uses work_credits irrespective of performer nationality; credited_works/credited_work_credits are legacy portfolio data. Preserve legacy rows and evidence; no automatic migration is authorized. Arrangement scope follows evidence. Self-performance display rules never delete authorship. Refer to these current rules wherever older examples below differ.
+
+
+### Search outcome analytics (review draft, 2026-10-13)
+
+The additive search analytics migration records nullable `search_outcome`,
+`search_action`, `search_version`, and `suggestion_text` on `search_events`.
+Historical rows stay unclassified. Correction display/selection is an interaction,
+not another completed search; it carries no results count. Recorded no-match is
+not proof of missing catalog content. This does not expand searchable entities
+or change publication rules. See [SEARCH_OPTIMIZATION.md](SEARCH_OPTIMIZATION.md)
+for the unapplied migrations, compatibility rules and evidence-preserving rollback.
+
 **Version:** 1.0  
 **Status:** Official Reference  
 **Last Updated:** 2026-07-03  
@@ -512,6 +527,13 @@ The **Recordings** have different performers.
 - **Credit via Work/Recording Credits:** The arranger, composer, or lyricist is then linked via `work_credits` or `recording_credits` on that recording/work.
 - **Natural Projection:** This anchors all creative credits to verified historical releases while automatically populating the creator's **Works Portfolio** tab on their profile without duplicate or orphaned entities.
 
+### 5.7 International Works Policy (Originals Only, No Foreign Covers)
+
+**Rule:** When cataloging works composed, written, arranged, or produced by a Dominican creative contributor for international / non-Dominican performers, the work must be an **original international work**.
+
+- **Permitted (Original International Works)**: Compositions, arrangements, or productions created specifically for the international artist, or songs whose original premiere/first release was performed by that international artist (e.g., Palmer Hernández composing *«Ven, Devórame Otra Vez»* for Lalo Rodríguez, or Juan Luis Guerra writing *«Te Propongo»* for Gilberto Santa Rosa).
+- **Strictly Excluded (Foreign Re-recordings / Covers of Existing National Songs)**: Re-recordings, covers, or adaptations of pre-existing Dominican songs performed by foreign artists (e.g., an international orchestra or singer re-recording an existing Dominican merengue or bachata hit). An international artist merely covering an established Dominican song does not constitute an international creative work of the author and must **NOT** be cataloged in Mangulina.
+
 ---
 
 ## 6. Release Artist
@@ -1004,23 +1026,9 @@ Reuse same Release when:
 
 ### Handling Remasters
 
-Remaster decisions:
-- **Option A:** New Release entry (e.g., "K.O.B Remastered 2020")
-  - Use if remaster is commercial release
-  - Create new Tracks, same Recordings, or new Recordings if sonically distinct
+Follow architecture/RECORDING_VERSION_IDENTITY.md. Remastering alone does not create a new Recording when the underlying performance/audio identity is unchanged. An independently documented commercial remaster/reissue may be a distinct Release edition with its own Track appearances pointing to the existing Recordings. A proven new performance or audio derivation requires separate evidence and editorial identity review; sonic difference or a provider label alone is insufficient.
 
-- **Option B:** New Recording entry
-  - Use if remaster is significant audio revision
-  - Mark with annotation that it's a remaster of [original year]
-
-Example:
-```
-Release: K.O.B (1995, original mastering)
-Release: K.O.B Remaster (2020, new mastering)
-
-Both use same Recordings (unless remaster is sonically distinct)
-Both have same Tracks (same songs in same order)
-```
+Example: an original album and its documented remaster are two Releases with separate Track placements, even when both use the same Recordings in the same order. Uncertain cases remain unchanged pending review. No automatic merge, split or credit move is authorized.
 
 ### Handling Live Versions
 

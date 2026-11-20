@@ -1,0 +1,534 @@
+{
+  "date": "2026-10-19T21:27:35.435Z",
+  "authorization": "Editor supplied artist accounts in ongoing profile creation workflow; draft artist and published validated EN/ES biographies authorized without second approval.",
+  "before": null,
+  "after": {
+    "id": "a781211c-5b4e-4893-83d3-b5a3528d8fb2",
+    "name": "Raffy Díaz",
+    "stage_name": "Raffy Díaz",
+    "sort_name": "Díaz, Raffy",
+    "slug": "raffy-diaz",
+    "first_name": "Rafael",
+    "middle_name": null,
+    "last_name": "Díaz",
+    "second_last_name": "Ulloa",
+    "aliases": [
+      "Raffy Diaz",
+      "Raphy Díaz",
+      "Rafael Díaz Ulloa",
+      "El Más Versátil",
+      "Marucha",
+      "Guananico"
+    ],
+    "disambiguation": "Dominican merengue and bachata singer",
+    "type": "solo_artist",
+    "primary_role": "singer",
+    "occupations": [
+      "bandleader"
+    ],
+    "gender": "male",
+    "birth_place": "Santiago de los Caballeros",
+    "province": "Santiago",
+    "date_of_birth": null,
+    "birth_year": null,
+    "primary_genre": "merengue",
+    "genres": [
+      "merengue-perico-ripiao",
+      "bachata",
+      "ballads",
+      "ballads-bolero"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "facebook": "raffy.diaz",
+    "instagram": "raffydiazofficial",
+    "youtube": "@raffydiazoficial",
+    "spotify": "00ovGVbvihQXg70t9yfQB8",
+    "website": "https://linktr.ee/raffydiaz",
+    "status": "draft"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Raffy Díaz, nombre artístico de Rafael Díaz Ulloa, es un cantante y director de agrupación dominicano. Su trayectoria abarca el merengue de orquesta, el merengue típico y la bachata, y comprende su participación en distintas formaciones antes de encabezar su propio proyecto."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Santiago y Guananico",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Nació un 19 de enero en Santiago de los Caballeros y pasó parte de su niñez y adolescencia en Guananico, Puerto Plata. Su formación temprana incluyó la «Rondalla Monseñor Romero». Debutó profesionalmente con la orquesta de Koki Acosta en Altos de Chavón, interpretando «Es un ángel»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "El recorrido por las orquestas",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "db00c1d0-00ce-4bde-9e7e-f5f6a3bd9250",
+                  "occurrenceId": "ffa11ee6-8314-46a4-9864-5e7e99524d92",
+                  "displayText": "Henry Hierro"
+                }
+              },
+              {
+                "type": "text",
+                "text": " interpretó «Ahí», cuyo estribillo dio origen al apodo «Marucha». Posteriormente integró la orquesta de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+                  "occurrenceId": "90678463-edd4-41ba-8fc7-dc1cb4aa7dc1",
+                  "displayText": "Wilfrido Vargas"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y, durante los años noventa, "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "001831dd-3baa-4512-88f5-f420ec7c2619",
+                  "occurrenceId": "5db0542d-4617-4528-8b3e-6f37038bf471",
+                  "displayText": "Pochy y su Cocoband"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Tras la salida de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c73737c2-0106-4a87-8dbe-5f1650d34342",
+                  "occurrenceId": "59f3ca57-ac28-4da0-be22-4e5d6f003f72",
+                  "displayText": "Kinito Méndez"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", asumió el liderazgo de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+                  "occurrenceId": "dfd26b8d-3fe3-4269-a7c8-e30f9c5f28b9",
+                  "displayText": "Rokabanda"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", etapa asociada con «Donde quiera me caso», «Me muero chin a chin» y «Corió». Su recorrido también incluyó las agrupaciones de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "6fc762d4-96b8-4ecf-aca8-fdf52936658e",
+                  "occurrenceId": "7ebaa509-d05a-4035-a458-36f614f71e87",
+                  "displayText": "Toño Rosario"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f8c6f3e7-ef42-428b-a610-31948f846600",
+                  "occurrenceId": "dd858cf0-8dfd-4385-8fd0-9fde801c597d",
+                  "displayText": "Conjunto Quisqueya"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La etapa típica y el proyecto independiente",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2004 se incorporó como cantante al grupo de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ced86e3a-4e99-4cee-ab0a-ad6ede956ea0",
+                  "occurrenceId": "e599be26-2cb0-429b-9943-0263cb58d916",
+                  "displayText": "José El Calvo"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", donde permaneció siete años. En 2012 emprendió una propuesta propia que combinaba el merengue típico con arreglos modernos. También desarrolló una vertiente bachatera con «Flor dormida» y «Nada». Su repertorio posterior incluye «Calma», «La mala», «La mitad», «Pura bachata» y «Se me fue», junto con boleros y baladas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Conocido también como «El Más Versátil», Díaz enlaza la experiencia de las grandes orquestas con el circuito del merengue típico y la interpretación de bachata. Una presentación documentada por el Club de Empleados del Banco Central en 2024 muestra esa variedad de repertorio. Su vínculo con Guananico permanece presente en su identidad artística y en producciones audiovisuales realizadas en esa comunidad."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Raffy Díaz is the stage name of Rafael Díaz Ulloa, a Dominican singer and bandleader whose work spans orchestral merengue, merengue típico and bachata. His career developed through a succession of established ensembles before he formed an independent project."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early life and first performances",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Born on January 19 in Santiago de los Caballeros, he spent part of his childhood and adolescence in Guananico, Puerto Plata. He began his musical training with «Rondalla Monseñor Romero». His professional debut came with Koki Acosta’s orchestra at Altos de Chavón, where he sang «Es un ángel»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Orchestras and Rokabanda",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "While working with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "db00c1d0-00ce-4bde-9e7e-f5f6a3bd9250",
+                  "occurrenceId": "8f580268-d0a3-46f1-8c8b-0c2572f88205",
+                  "displayText": "Henry Hierro"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", his performance of «Ahí» helped establish the nickname «Marucha». He subsequently joined "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+                  "occurrenceId": "49768252-92e2-4af3-ae75-6eaf57318a34",
+                  "displayText": "Wilfrido Vargas"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and, in the 1990s, "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "001831dd-3baa-4512-88f5-f420ec7c2619",
+                  "occurrenceId": "e0711d19-5594-4eb2-ac78-afded03e4d99",
+                  "displayText": "Pochy y su Cocoband"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Following "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c73737c2-0106-4a87-8dbe-5f1650d34342",
+                  "occurrenceId": "7bb792e8-6a82-4677-a05e-ec22f9cc1725",
+                  "displayText": "Kinito Méndez"
+                }
+              },
+              {
+                "type": "text",
+                "text": "’s departure, he took a leading role in "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+                  "occurrenceId": "e1bbeb39-f19a-48e2-8b3a-61491e6d2532",
+                  "displayText": "Rokabanda"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", performing songs such as «Donde quiera me caso», «Me muero chin a chin» and «Corió». He also worked with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "6fc762d4-96b8-4ecf-aca8-fdf52936658e",
+                  "occurrenceId": "bb8da1f0-29ec-464f-9038-48b0ffa59887",
+                  "displayText": "Toño Rosario"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f8c6f3e7-ef42-428b-a610-31948f846600",
+                  "occurrenceId": "29967d72-87c4-4716-a467-df3eef49a2f9",
+                  "displayText": "Conjunto Quisqueya"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Merengue típico and an independent direction",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2004 Díaz joined "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ced86e3a-4e99-4cee-ab0a-ad6ede956ea0",
+                  "occurrenceId": "6d3bb861-55cf-46aa-9c13-739e8632f20b",
+                  "displayText": "José El Calvo"
+                }
+              },
+              {
+                "type": "text",
+                "text": "’s group as a singer, remaining for seven years. He launched his own project in 2012, bringing modern arrangements to merengue típico. Bachata became another strand of his work through «Flor dormida» and «Nada». Later repertoire includes «Calma», «La mala», «La mitad», «Pura bachata» and «Se me fue», alongside boleros and ballads."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Known as «El Más Versátil», Díaz connects the experience of the large merengue orchestras with the típico performance circuit and bachata singing. The Central Bank Employees’ Club documented that breadth of repertoire at a 2024 concert. His connection with Guananico also continues through his artistic identity and music videos filmed in the community where he grew up."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "f8c6f3e7-ef42-428b-a610-31948f846600",
+      "name": "Conjunto Quisqueya",
+      "slug": "conjunto-quisqueya",
+      "status": "published"
+    },
+    {
+      "id": "db00c1d0-00ce-4bde-9e7e-f5f6a3bd9250",
+      "name": "Henry Hierro",
+      "slug": "henry-hierro",
+      "status": "published"
+    },
+    {
+      "id": "ced86e3a-4e99-4cee-ab0a-ad6ede956ea0",
+      "name": "José El Calvo",
+      "slug": "jose-el-calvo",
+      "status": "published"
+    },
+    {
+      "id": "c73737c2-0106-4a87-8dbe-5f1650d34342",
+      "name": "Kinito Méndez",
+      "slug": "kinito-mendez",
+      "status": "published"
+    },
+    {
+      "id": "001831dd-3baa-4512-88f5-f420ec7c2619",
+      "name": "Pochy y su Cocoband",
+      "slug": "pochy-y-su-cocoband",
+      "status": "published"
+    },
+    {
+      "id": "86172ade-a3b0-47e3-803b-f913afe8072c",
+      "name": "Rokabanda",
+      "slug": "rokabanda",
+      "status": "published"
+    },
+    {
+      "id": "6fc762d4-96b8-4ecf-aca8-fdf52936658e",
+      "name": "Toño Rosario",
+      "slug": "tono-rosario",
+      "status": "published"
+    },
+    {
+      "id": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+      "name": "Wilfrido Vargas",
+      "slug": "wilfrido-vargas",
+      "status": "published"
+    }
+  ],
+  "photo": {
+    "source_file": "docs/reports/editorial/raffy-diaz-press-portrait.webp",
+    "sha256": "001450d590033a76dea147bca76811a6dd79beceb570d6af1fea53588c7f70b3",
+    "url": "https://eldia.com.do/wp-content/uploads/2021/11/14_E-3_1p01-e1637628985296.webp",
+    "source_page": "https://eldia.com.do/raffy-diaz-seducido-por-el-merengue-tipico/"
+  },
+  "evidence_report": "raffy-diaz-research-2026-10-19.md",
+  "known_birthday": {
+    "day": 19,
+    "month": 1,
+    "year": null
+  },
+  "unresolved": [
+    "Birth year and complete date; do not fabricate a year."
+  ],
+  "exclusions": [
+    "No discography, other artists, shared group relations, security or artist publication."
+  ]
+}

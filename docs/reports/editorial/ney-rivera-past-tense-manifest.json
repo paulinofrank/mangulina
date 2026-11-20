@@ -1,0 +1,541 @@
+{
+  "authorization": "Explicit user request to narrate Ney Rivera biography in past tense, without a death assertion.",
+  "scope": "Only two biography lead verbs; career narrative already past tense. Archival descriptions remain present tense because records still exist. No artist fields or statuses changed.",
+  "artist_before": {
+    "id": "b0146341-4b0d-4ce4-88fb-a63407bf5080",
+    "name": "Ney Rivera",
+    "sort_name": "Rivera, Ney",
+    "type": "solo_artist",
+    "birth_year": null,
+    "death_year": null,
+    "created_at": "2026-10-25T17:20:20.497629+00:00",
+    "views": 1,
+    "wikidata_id": null,
+    "first_name": null,
+    "middle_name": null,
+    "last_name": null,
+    "second_last_name": null,
+    "stage_name": "Ney Rivera",
+    "date_of_birth": null,
+    "birth_place": null,
+    "website": null,
+    "youtube": null,
+    "facebook": null,
+    "instagram": null,
+    "aliases": [],
+    "mbid": null,
+    "occupations": [
+      "composer"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "genres": [
+      "bolero",
+      "plena"
+    ],
+    "disambiguation": null,
+    "gender": "male",
+    "ended": null,
+    "mb_metadata": {},
+    "updated_at": "2026-10-25T18:24:11.247018+00:00",
+    "province": null,
+    "birth_day": null,
+    "birth_month": null,
+    "slug": "ney-rivera",
+    "primary_role": "singer",
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_death": null,
+    "status": "published",
+    "primary_genre": "merengue",
+    "bio_en": null,
+    "bio_es": null,
+    "has_image": true,
+    "image_updated_at": "2026-10-25T18:23:56.433+00:00",
+    "formation_year": null,
+    "dissolution_year": null,
+    "spotify": "1Xdu6j98yD3oV9ug2ykW5v"
+  },
+  "changes": [
+    {
+      "id": "3c126ede-e994-465b-8b55-32acedd74afd",
+      "locale": "en",
+      "revision": 1,
+      "status": "published",
+      "schema_version": 1,
+      "from": "Ney Rivera is a Dominican singer",
+      "to": "Ney Rivera was a Dominican singer",
+      "before": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Ney Rivera is a Dominican singer, composer, and record entrepreneur associated with mid-twentieth-century merengue, plena, and bolero. Alongside his work as a performer, he owned Riney Records, a label that issued Dominican and Puerto Rican recordings within the musical network connecting New York and Puerto Rico.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Merengue and the Puerto Rican stage",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His presence in Puerto Rico is documented in singer Johnny Toruella's career: on July 18, 1958, Toruella made his debut accompanying Rivera at the Teatro La Perla in Ponce. Rivera also recorded with different ensembles. A Marvela 78 rpm record credits Ney Rivera with the Sonora Ponceña on «Qué mulata más graciosa», while Riney issued recordings featuring his Estrellas del Caribe and Conjunto Santiaguero.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Riney Records",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Ansonia Records' history of Toñín Romero identifies Rivera as Riney's owner and locates the label in New York during Romero's earliest recording period, between the late 1940s and early 1950s. The company also issued recordings by Cheíto González's Trío Casino de Santurce. Rivera's business activity therefore circulated Antillean repertoire and performers beyond his own work as a singer.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Recordings and composition",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Riney 967 brings together two aspects of his work. One side features «Contestación al aguacero», a porro sung by Myrian Rodríguez with the Estrellas del Caribe, with Ney Rivera and Julio Torrez credited as its writers. The reverse features Rivera singing «Heroína», a merengue attributed to Dominican national folklore, with his Estrellas del Caribe.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "With Fellito Parra's ensemble he recorded «La resbalosa» and «Qué buena es la plena», preserved by the Frontera Collection and issued as the two sides of Riney 1214. His repertoire also included «Te esperaba», a bolero by Claudio Ferrer and Pepe Robles: the Fundación Nacional para la Cultura Popular lists his Riney recording in 1963.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The preservation of his records provides access to a career spanning performance, composition, and the record business. The Smithsonian's National Museum of American History holds a Riney 78 rpm record featuring «El marinero», performed by Rivera and his Conjunto Santiaguero, and «Contestación a: Si tú no,... la otra», featuring Florinda Sánchez with the same ensemble. These recordings, together with material preserved by the Frontera Collection and Florida International University's Díaz-Ayala Collection, document his participation in Caribbean popular music.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Ney Rivera was a Dominican singer, composer, and record entrepreneur associated with mid-twentieth-century merengue, plena, and bolero. Alongside his work as a performer, he owned Riney Records, a label that issued Dominican and Puerto Rican recordings within the musical network connecting New York and Puerto Rico.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Merengue and the Puerto Rican stage",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His presence in Puerto Rico is documented in singer Johnny Toruella's career: on July 18, 1958, Toruella made his debut accompanying Rivera at the Teatro La Perla in Ponce. Rivera also recorded with different ensembles. A Marvela 78 rpm record credits Ney Rivera with the Sonora Ponceña on «Qué mulata más graciosa», while Riney issued recordings featuring his Estrellas del Caribe and Conjunto Santiaguero.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Riney Records",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Ansonia Records' history of Toñín Romero identifies Rivera as Riney's owner and locates the label in New York during Romero's earliest recording period, between the late 1940s and early 1950s. The company also issued recordings by Cheíto González's Trío Casino de Santurce. Rivera's business activity therefore circulated Antillean repertoire and performers beyond his own work as a singer.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Recordings and composition",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Riney 967 brings together two aspects of his work. One side features «Contestación al aguacero», a porro sung by Myrian Rodríguez with the Estrellas del Caribe, with Ney Rivera and Julio Torrez credited as its writers. The reverse features Rivera singing «Heroína», a merengue attributed to Dominican national folklore, with his Estrellas del Caribe.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "With Fellito Parra's ensemble he recorded «La resbalosa» and «Qué buena es la plena», preserved by the Frontera Collection and issued as the two sides of Riney 1214. His repertoire also included «Te esperaba», a bolero by Claudio Ferrer and Pepe Robles: the Fundación Nacional para la Cultura Popular lists his Riney recording in 1963.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The preservation of his records provides access to a career spanning performance, composition, and the record business. The Smithsonian's National Museum of American History holds a Riney 78 rpm record featuring «El marinero», performed by Rivera and his Conjunto Santiaguero, and «Contestación a: Si tú no,... la otra», featuring Florinda Sánchez with the same ensemble. These recordings, together with material preserved by the Frontera Collection and Florida International University's Díaz-Ayala Collection, document his participation in Caribbean popular music.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "6779e596-cf1e-419c-8e56-aac7226f6364",
+      "locale": "es",
+      "revision": 1,
+      "status": "published",
+      "schema_version": 1,
+      "from": "Ney Rivera es un cantante",
+      "to": "Ney Rivera fue un cantante",
+      "before": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Ney Rivera es un cantante, compositor y empresario discográfico dominicano vinculado al merengue, la plena y el bolero de mediados del siglo XX. Además de su actividad como intérprete, fue propietario de Riney Records, sello que publicó grabaciones dominicanas y puertorriqueñas en el circuito musical entre Nueva York y Puerto Rico.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El merengue y el escenario puertorriqueño",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su presencia en Puerto Rico está documentada en la historia del cantante Johnny Toruella: el 18 de julio de 1958, Toruella debutó acompañándolo en el Teatro La Perla de Ponce. Las grabaciones de Rivera también circularon con distintas agrupaciones. Un disco de 78 rpm de Marvela acredita a Ney Rivera con la Sonora Ponceña en «Qué mulata más graciosa», mientras que el sello Riney publicó material suyo con sus Estrellas del Caribe y con el Conjunto Santiaguero.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Riney Records",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La historia de Toñín Romero publicada por Ansonia Records identifica a Rivera como dueño de Riney y sitúa al sello en Nueva York durante las primeras grabaciones de Romero, entre finales de los años cuarenta y comienzos de los cincuenta. La compañía también editó grabaciones del Trío Casino de Santurce, formación de Cheíto González. Su actividad empresarial amplió así la circulación de repertorios e intérpretes antillanos más allá de sus propias sesiones como cantante.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Grabaciones y composición",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El disco Riney 967 reúne dos facetas de su trabajo. En una cara figura «Contestación al aguacero», porro interpretado por Myrian Rodríguez con las Estrellas del Caribe, que acredita como autores a Ney Rivera y Julio Torrez. En la otra aparece Rivera cantando «Heroína», merengue atribuido al folclore nacional dominicano, con sus Estrellas del Caribe.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Con el conjunto de Fellito Parra grabó «La resbalosa» y «Qué buena es la plena», conservadas en la Colección Frontera y publicadas como las dos caras del disco Riney 1214. Su repertorio incluyó asimismo el bolero «Te esperaba», de Claudio Ferrer y Pepe Robles: la Fundación Nacional para la Cultura Popular registra su versión para Riney en 1963.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La preservación de sus discos permite conocer una trayectoria que reunió interpretación, composición y producción discográfica. El Museo Nacional de Historia Americana del Smithsonian conserva un disco de 78 rpm de Riney con «El marinero», interpretado por Rivera y su Conjunto Santiaguero, y «Contestación a: Si tú no,... la otra», con Florinda Sánchez y la misma agrupación. Estos registros, junto con los resguardados por la Colección Frontera y la Colección Díaz-Ayala de la Universidad Internacional de Florida, documentan su participación en la música popular caribeña.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Ney Rivera fue un cantante, compositor y empresario discográfico dominicano vinculado al merengue, la plena y el bolero de mediados del siglo XX. Además de su actividad como intérprete, fue propietario de Riney Records, sello que publicó grabaciones dominicanas y puertorriqueñas en el circuito musical entre Nueva York y Puerto Rico.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El merengue y el escenario puertorriqueño",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su presencia en Puerto Rico está documentada en la historia del cantante Johnny Toruella: el 18 de julio de 1958, Toruella debutó acompañándolo en el Teatro La Perla de Ponce. Las grabaciones de Rivera también circularon con distintas agrupaciones. Un disco de 78 rpm de Marvela acredita a Ney Rivera con la Sonora Ponceña en «Qué mulata más graciosa», mientras que el sello Riney publicó material suyo con sus Estrellas del Caribe y con el Conjunto Santiaguero.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Riney Records",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La historia de Toñín Romero publicada por Ansonia Records identifica a Rivera como dueño de Riney y sitúa al sello en Nueva York durante las primeras grabaciones de Romero, entre finales de los años cuarenta y comienzos de los cincuenta. La compañía también editó grabaciones del Trío Casino de Santurce, formación de Cheíto González. Su actividad empresarial amplió así la circulación de repertorios e intérpretes antillanos más allá de sus propias sesiones como cantante.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Grabaciones y composición",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El disco Riney 967 reúne dos facetas de su trabajo. En una cara figura «Contestación al aguacero», porro interpretado por Myrian Rodríguez con las Estrellas del Caribe, que acredita como autores a Ney Rivera y Julio Torrez. En la otra aparece Rivera cantando «Heroína», merengue atribuido al folclore nacional dominicano, con sus Estrellas del Caribe.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Con el conjunto de Fellito Parra grabó «La resbalosa» y «Qué buena es la plena», conservadas en la Colección Frontera y publicadas como las dos caras del disco Riney 1214. Su repertorio incluyó asimismo el bolero «Te esperaba», de Claudio Ferrer y Pepe Robles: la Fundación Nacional para la Cultura Popular registra su versión para Riney en 1963.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La preservación de sus discos permite conocer una trayectoria que reunió interpretación, composición y producción discográfica. El Museo Nacional de Historia Americana del Smithsonian conserva un disco de 78 rpm de Riney con «El marinero», interpretado por Rivera y su Conjunto Santiaguero, y «Contestación a: Si tú no,... la otra», con Florinda Sánchez y la misma agrupación. Estos registros, junto con los resguardados por la Colección Frontera y la Colección Díaz-Ayala de la Universidad Internacional de Florida, documentan su participación en la música popular caribeña.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

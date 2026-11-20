@@ -10,7 +10,7 @@ import {
   EditorialIntegrityContent,
   type IntegrityReport,
   type ReportState,
-} from "../../src/app/admin/(protected)/editorial-integrity/page";
+} from "../../src/app/admin/(protected)/editorial-integrity/EditorialIntegrityPage";
 
 const cleanReport: IntegrityReport = {
   generatedAt: "2026-08-05T15:30:00.000Z",

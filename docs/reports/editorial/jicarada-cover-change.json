@@ -1,0 +1,97 @@
+{
+  "approval": "Editor explicitly requested using the attached image for the Jicarada album cover",
+  "release_id": "a0dba3d6-e318-4217-bffc-66b710b1d9f3",
+  "before": {
+    "id": "a0dba3d6-e318-4217-bffc-66b710b1d9f3",
+    "title": "Realizando un Sueño",
+    "type": "Album",
+    "release_year": 1995,
+    "label": "Brasanel Records S.A.",
+    "country": null,
+    "created_at": "2026-10-19T12:10:53.175128+00:00",
+    "release_group_id": null,
+    "release_artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+    "mbid": null,
+    "disambiguation": null,
+    "status": "Official",
+    "packaging": null,
+    "barcode": null,
+    "catalog_number": "JIC326CD",
+    "date": null,
+    "label_id": null,
+    "metadata": {
+      "format": "CD",
+      "source": {
+        "file": "docs/reports/editorial/jicarada-1995-rear.png",
+        "sha256": "D0490C168217D855639B500F3F260F98C7127C8733F9467BCD794F0637C995B6",
+        "accessed": "2026-10-18",
+        "reference": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+        "limitations": "Rear artwork only; no disc face, booklet or audio inspected. Year is printed copyright/phonogram year; day/month and territory unverified."
+      },
+      "copyright": "© ℗ 1995 Brasanel Records S.A.",
+      "source_reference": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+      "printed_album_title": "Realizando un Sueño"
+    },
+    "updated_at": "2026-10-19T12:12:28.747268+00:00",
+    "year": 1995,
+    "slug": "orquesta-jicarada-realizando-un-sueno-1995",
+    "views": 0,
+    "has_cover_image": false
+  },
+  "source_file": "docs/reports/editorial/jicarada-editor-approved-cover.png",
+  "source_sha256": "f93ac727576e8852b251eca41d2f67de2462acc8a2e28244f824eb30f25c03ba",
+  "date": "2026-10-19T14:02:20.182Z",
+  "objects": [
+    {
+      "path": "150px/a0dba3d6-e318-4217-bffc-66b710b1d9f3.webp",
+      "sha256": "a6a4775940a229dee3154afe269259e81445a3f2d9669555d3c2f34e54df7d61",
+      "url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/cover-art/150px/a0dba3d6-e318-4217-bffc-66b710b1d9f3.webp"
+    },
+    {
+      "path": "300px/a0dba3d6-e318-4217-bffc-66b710b1d9f3.webp",
+      "sha256": "64660c45020591bdd2757a465dfba1a93ba675f363628817cdc71296d019032f",
+      "url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/cover-art/300px/a0dba3d6-e318-4217-bffc-66b710b1d9f3.webp"
+    }
+  ],
+  "after": {
+    "id": "a0dba3d6-e318-4217-bffc-66b710b1d9f3",
+    "title": "Realizando un Sueño",
+    "type": "Album",
+    "release_year": 1995,
+    "label": "Brasanel Records S.A.",
+    "country": null,
+    "created_at": "2026-10-19T12:10:53.175128+00:00",
+    "release_group_id": null,
+    "release_artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+    "mbid": null,
+    "disambiguation": null,
+    "status": "Official",
+    "packaging": null,
+    "barcode": null,
+    "catalog_number": "JIC326CD",
+    "date": null,
+    "label_id": null,
+    "metadata": {
+      "format": "CD",
+      "source": {
+        "file": "docs/reports/editorial/jicarada-1995-rear.png",
+        "sha256": "D0490C168217D855639B500F3F260F98C7127C8733F9467BCD794F0637C995B6",
+        "accessed": "2026-10-18",
+        "reference": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+        "limitations": "Rear artwork only; no disc face, booklet or audio inspected. Year is printed copyright/phonogram year; day/month and territory unverified."
+      },
+      "copyright": "© ℗ 1995 Brasanel Records S.A.",
+      "source_reference": "Brasanel Records S.A., Orquesta Jicarada — Realizando un Sueño, rear CD artwork, JIC326CD, © ℗ 1995",
+      "printed_album_title": "Realizando un Sueño"
+    },
+    "updated_at": "2026-10-19T14:02:21.401774+00:00",
+    "year": 1995,
+    "slug": "orquesta-jicarada-realizando-un-sueno-1995",
+    "views": 0,
+    "has_cover_image": true
+  },
+  "cache": {
+    "status": 200,
+    "body": "{\"ok\":true,\"revalidated\":{\"artists\":1,\"songs\":0,\"releases\":1,\"allArtists\":false}}"
+  }
+}

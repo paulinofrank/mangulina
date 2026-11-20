@@ -31,7 +31,7 @@ test("search cache keys are bounded", () => {
   // Normalisation must not fold case: the global_search RPC's case handling is
   // not defined in this repo, so folding could change results.
   assert.notEqual(searchCacheKey("Juan"), searchCacheKey("juan"));
-  assert.match(searchApi, /global-search-v2/, "cache key version bumped with the change");
+  assert.match(searchApi, /global-search-v7/, "cache key version bumped with the change");
 });
 
 test("both search entry points enforce the same query bounds", () => {

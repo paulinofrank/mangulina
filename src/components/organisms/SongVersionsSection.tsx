@@ -27,6 +27,12 @@ export default async function SongVersionsSection({ context, workPage = false, l
     {!context.recordings.length && <p className="text-sm text-gray-600">{t("noRecordings")}</p>}
     {context.recordings.map((recording) => {
       const version = recording.version;
+      // The recording header already identifies its artist.
+      const displayedRecordingCredits = recording.credits.filter((credit) => !(
+        credit.role === "lead_performer"
+        && credit.identity_type === "artist"
+        && credit.identity_id === recording.artist_id
+      ));
       const versionLabels = [version?.performance_kind ? t(`performance.${version.performance_kind}`) : null,
         version?.derivation_kind ? t(`derivation.${version.derivation_kind}`) : null,
         version?.performance_context, version?.language_code].filter(Boolean);
@@ -37,7 +43,7 @@ export default async function SongVersionsSection({ context, workPage = false, l
             ? <Link href={`/artists/${recording.artist_slug}`} className="hover:underline">{recording.artist_name}</Link> : recording.artist_name}</p>}
           {versionLabels.length > 0 && <p className="mt-2 text-sm text-gray-600">{versionLabels.join(" · ")}</p>}
         </header>}
-        <SongPersonnelCredits workCredits={creditItems(context.work_credits)} recordingCredits={creditItems(recording.credits)}
+        <SongPersonnelCredits workCredits={creditItems(context.work_credits)} recordingCredits={creditItems(displayedRecordingCredits)}
           labelName={labelName} releaseInfo={releaseInfo} />
         <SongPlatformLinksSection recordingId={recording.id} links={recording.platform_links} />
         {workPage && <Link href={`/songs/${recording.slug ?? recording.id}`} className="inline-block text-sm text-(--color-flagblue) hover:underline">{t("recordingDetails")}</Link>}

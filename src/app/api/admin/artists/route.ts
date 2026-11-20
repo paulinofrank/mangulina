@@ -22,7 +22,9 @@ const LIST_COLUMNS =
 // `artists` is `status = 'published'` for anon/authenticated, so drafts and
 // needs_review records are invisible to it. This route runs under the service
 // role, so it is the admin's only complete view of the catalog.
-const ALL_ROWS_LIMIT = 2000;
+// Supabase/PostgREST caps each response at the project's max_rows setting
+// (currently 1,000), even if a larger .limit() is requested.
+const ARTIST_PAGE_SIZE = 500;
 const RETIRED_PRIMARY_GENRES = new Set([
   "singer-songwriter",
   "ballads-singer-songwriter",
@@ -62,18 +64,25 @@ export async function GET(request: Request) {
   // Whole catalog, every status, full records. Kept as its own query because the
   // typed client needs a literal `select`, so this cannot share the builder below.
   if (all) {
-    const { data, error } = await createServiceRoleClient()
-      .from("artists")
-      .select("*")
-      .order("name", { ascending: true })
-      .limit(ALL_ROWS_LIMIT);
+    const supabase = createServiceRoleClient();
+    const artists = [];
+    for (let offset = 0; ; offset += ARTIST_PAGE_SIZE) {
+      const { data, error } = await supabase
+        .from("artists")
+        .select("*")
+        .order("name", { ascending: true })
+        .order("id", { ascending: true })
+        .range(offset, offset + ARTIST_PAGE_SIZE - 1);
 
-    if (error) {
-      return NextResponse.json({ ok: false, error: error.message }, { status: 500 });
+      if (error) {
+        return NextResponse.json({ ok: false, error: error.message }, { status: 500, headers: NO_STORE });
+      }
+      artists.push(...(data ?? []));
+      if (!data || data.length < ARTIST_PAGE_SIZE) break;
     }
 
     return NextResponse.json(
-      { ok: true, artists: withSubtitles(data ?? []) },
+      { ok: true, artists: withSubtitles(artists) },
       { headers: NO_STORE },
     );
   }
@@ -186,23 +195,26 @@ export async function POST(request: Request) {
   const previousSlugResponse = artistId
     ? await supabase
         .from("artists")
-        .select("slug")
+        .select("slug, slug_history")
         .eq("id", artistId)
         .maybeSingle()
     : null;
+  if (previousSlugResponse?.error) {
+    return NextResponse.json({ ok: false, error: "Unable to read the artist's current URL history." }, { status: 500 });
+  }
   const response = artistId
     ? await supabase
         .from("artists")
         .update(normalizedArtistData)
         .eq("id", artistId)
-        .select("id, slug")
+        .select("id, slug, slug_history")
         .maybeSingle()
-    : await supabase.from("artists").insert([normalizedArtistData]).select("id, slug").maybeSingle();
+    : await supabase.from("artists").insert([normalizedArtistData]).select("id, slug, slug_history").maybeSingle();
 
   if (response.error) {
     return NextResponse.json(
       { ok: false, error: response.error.message },
-      { status: 500 }
+      { status: response.error.code === "23505" ? 409 : response.error.code === "23514" ? 400 : 500 }
     );
   }
 
@@ -213,12 +225,8 @@ export async function POST(request: Request) {
     );
   }
 
-  if (previousSlugResponse?.data?.slug && previousSlugResponse.data.slug !== response.data.slug) {
-    revalidateArtistProfilePaths(previousSlugResponse.data.slug, response.data.id);
-  }
-
   if (response.data.slug) {
-    revalidateArtistProfilePaths(response.data.slug, response.data.id);
+    revalidateArtistProfilePaths(response.data.slug, response.data.id, response.data.slug_history ?? []);
   }
 
   await revalidateEditorialDocumentsReferencingArtist(response.data.id);
@@ -242,7 +250,7 @@ export async function DELETE(request: Request) {
   const supabase = createServiceRoleClient();
   const { data: artist, error: artistError } = await supabase
     .from("artists")
-    .select("id,slug")
+    .select("id,slug,slug_history")
     .eq("id", artistId)
     .maybeSingle();
 
@@ -297,7 +305,7 @@ export async function DELETE(request: Request) {
   }
 
   if (artist.slug) {
-    revalidateArtistProfilePaths(artist.slug, artistId);
+    revalidateArtistProfilePaths(artist.slug, artistId, artist.slug_history ?? []);
   }
 
   revalidateHomepageData();

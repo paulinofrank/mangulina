@@ -1,0 +1,254 @@
+[
+  {
+    "id": "ab50e9b0-c56e-4db6-8b5a-b1d277b9377c",
+    "owner_artist_id": "60b0cfd0-b572-4d0f-a913-bbeb1aa734c6",
+    "locale": "en",
+    "revision": 2,
+    "status": "published",
+    "owner": {
+      "id": "60b0cfd0-b572-4d0f-a913-bbeb1aa734c6",
+      "name": "Fausto Rey",
+      "status": "published"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "On 15 November 1980, at the Teatro General San Martín in Buenos Aires, he represented the country at the «OTI» festival with «Canción de un hombre simple», written by Yaqui Núñez del Risco and Jorge Taveras, who also conducted. It finished sixth among twenty-three entries, with 25 points. Two years later he shared an album with the singer Rafael Colón devoted to the songs of Juan Lockward, from «Quiéreme cual yo a ti» and «Flor de té» to «Santiago» and «Puerto Plata»."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+    "owner_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+    "locale": "es",
+    "revision": 3,
+    "status": "published",
+    "owner": {
+      "id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+      "name": "Joaquín Balaguer",
+      "status": "published"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "El disco incluye además «Fragilidad», cantada por Carlos Alfredo Fatule con música de José Delmonte; «El leñador», interpretada por Fausto Rey con música de Jorge Taveras; «Maternidades frustradas», en la voz de Luchy Vicioso, con música de Jorge Taveras y Carlos M. Echenique; «Venus negra», interpretada por Rafael Colón con música de Julio Alberto Hernández; y «Paz», con música de Carlos Mario Echenique y un conjunto de intérpretes. Estos créditos corresponden a esa edición concreta del LP."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "8174a79f-49c1-4cbe-bf82-0189dab0dc11",
+    "owner_artist_id": "dbacba56-0bb9-4c7a-bb4e-5136753f087c",
+    "locale": "es",
+    "revision": 2,
+    "status": "published",
+    "owner": {
+      "id": "dbacba56-0bb9-4c7a-bb4e-5136753f087c",
+      "name": "Juan Lockward",
+      "status": "draft"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "Intérpretes de la talla de Fausto Rey y Rafael Colón mantuvieron vivo su repertorio en distintas épocas, y Eladio Peguero, conocido como Yayo el Indio, llevó «La India Soberbia» al éxito en Puerto Rico."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "3ae686b1-1e50-428d-b4a1-f9e2594ef664",
+    "owner_artist_id": "dbacba56-0bb9-4c7a-bb4e-5136753f087c",
+    "locale": "en",
+    "revision": 2,
+    "status": "published",
+    "owner": {
+      "id": "dbacba56-0bb9-4c7a-bb4e-5136753f087c",
+      "name": "Juan Lockward",
+      "status": "draft"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "Performers of the stature of Fausto Rey and Rafael Colón kept his repertoire alive across different decades, and Eladio Peguero, known as Yayo el Indio, carried «La India Soberbia» to hit status in Puerto Rico."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "34cd7a35-f8b9-4a74-8e19-4e9829d9db73",
+    "owner_artist_id": "8da26ee1-8079-4232-b9a2-66eccee08cb3",
+    "locale": "en",
+    "revision": 2,
+    "status": "published",
+    "owner": {
+      "id": "8da26ee1-8079-4232-b9a2-66eccee08cb3",
+      "name": "Elenita Santos",
+      "status": "published"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "What defined her as a singer was her interpretation of salve; for generations she was practically its only recording artist, immortalizing songs by Isidoro Flores and by Bienvenido Brens, whose «Pensando», «Peregrina Sin Amor», «Al Retorno» and «Mar de Insomnio» she recorded among many others. Over eighteen LPs — salves, merengues and boleros — she also interpreted Luis Kalaff and composers Papa Molina, Héctor Cabral Ortega, Rafael Colón and Armando Cabrera."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "ab5954bc-7d2a-447d-9a03-5d9a1de3980a",
+    "owner_artist_id": "3a69af3c-1b9a-402b-8a3f-66e51dacdffe",
+    "locale": "en",
+    "revision": 1,
+    "status": "published",
+    "owner": {
+      "id": "3a69af3c-1b9a-402b-8a3f-66e51dacdffe",
+      "name": "Francis Santana",
+      "status": "published"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "The album En Son de Felicidad, made with Víctor Víctor and Jorge Taveras, is the record of his that critics return to. In 2013 the Asociación de Cronistas de Arte placed it among the hundred essential albums of Dominican music. He also recorded a long-playing collection with the singer Rafael Colón."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "956f9612-e4d0-4b0f-be5c-f6bfea725656",
+    "owner_artist_id": "3a69af3c-1b9a-402b-8a3f-66e51dacdffe",
+    "locale": "es",
+    "revision": 1,
+    "status": "published",
+    "owner": {
+      "id": "3a69af3c-1b9a-402b-8a3f-66e51dacdffe",
+      "name": "Francis Santana",
+      "status": "published"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "El álbum En Son de Felicidad, hecho junto a Víctor Víctor y Jorge Taveras, es el disco suyo al que vuelve la crítica. En 2013 la Asociación de Cronistas de Arte lo situó entre los cien álbumes esenciales de la música dominicana. Grabó además un larga duración junto al cantante Rafael Colón."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "b303d1eb-d230-4269-bd3f-024d51ef13e0",
+    "owner_artist_id": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+    "locale": "en",
+    "revision": 3,
+    "status": "published",
+    "owner": {
+      "id": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+      "name": "Papa Molina",
+      "status": "published"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "As a composer, Molina left a run of boleros that became standards of the mid-century Antillean songbook: «Evocación», recorded separately by Alcy Sánchez and Alberto Beltrán with Billo Frómeta's orchestra, by Rafael Colón with Johnny Ventura's orchestra, and by Betty Misiego with Bertico Sosa's orchestra; «Sufro por Ti», popularized by Alberto Beltrán with the Orquesta San José and the La Voz del Yuna choir; «Nunca Te Lo He Dicho», a hit for Lope Balaguer; and «Cuando Volveré a Verte», recorded by Elenita Santos with Rafael Colón and Johnny Ventura's orchestra. Late in his career he turned to concert music, completing the symphonic work «Tres Imágenes Folklóricas» in November 1990; the National Symphony Orchestra premiered it shortly after and has kept it in its regular repertoire since."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "4d8d8db8-1f5e-4f28-afc8-7b3ce9ec11ee",
+    "owner_artist_id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+    "locale": "en",
+    "revision": 2,
+    "status": "published",
+    "owner": {
+      "id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+      "name": "Manuel Sánchez Acosta",
+      "status": "published"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "In 1944 the singer Rafael Colón, newly signed to Luis Alberti’s Orquesta Presidente Trujillo — the most prestigious dance band of its day — made his first-ever recording with the bolero «Ven», written by Sánchez Acosta."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "ae51653b-14f0-47bb-a73a-40ade2a52643",
+    "owner_artist_id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+    "locale": "es",
+    "revision": 1,
+    "status": "published",
+    "owner": {
+      "id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+      "name": "Manuel Sánchez Acosta",
+      "status": "published"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "En 1944 el cantante Rafael Colón, recién contratado por la Orquesta Presidente Trujillo de Luis Alberti —la agrupación de baile más prestigiosa de su época—, hizo su primera grabación con el bolero «Ven», escrito por Sánchez Acosta."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "60466f4f-b7cb-439d-beda-2b210a893648",
+    "owner_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+    "locale": "en",
+    "revision": 3,
+    "status": "published",
+    "owner": {
+      "id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+      "name": "Joaquín Balaguer",
+      "status": "published"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "The other tracks are «Fragilidad», sung by Carlos Alfredo Fatule with music by José Delmonte; «El leñador», performed by Fausto Rey with music by Jorge Taveras; «Maternidades frustradas», sung by Luchy Vicioso, with music by Jorge Taveras and Carlos M. Echenique; «Venus negra», performed by Rafael Colón with music by Julio Alberto Hernández; and the ensemble performance «Paz», with music by Carlos Mario Echenique. These credits belong to this particular LP edition."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "29d1ddb3-7afd-48e4-876c-b9147ce1c1d0",
+    "owner_artist_id": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+    "locale": "es",
+    "revision": 3,
+    "status": "published",
+    "owner": {
+      "id": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+      "name": "Papa Molina",
+      "status": "published"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "Como compositor, Molina dejó una serie de boleros que se convirtieron en estándares del cancionero antillano de mediados de siglo: «Evocación», grabada por separado por Alcy Sánchez y Alberto Beltrán con la orquesta de Billo Frómeta, por Rafael Colón con la orquesta de Johnny Ventura, y por Betty Misiego con la orquesta de Bertico Sosa; «Sufro por Ti», popularizada por Alberto Beltrán con la Orquesta San José y el coro de La Voz del Yuna; «Nunca Te Lo He Dicho», éxito de Lope Balaguer; y «Cuando Volveré a Verte», grabada por Elenita Santos con Rafael Colón y la orquesta de Johnny Ventura. Ya avanzada su carrera se volcó hacia la música de concierto, y terminó la obra sinfónica «Tres Imágenes Folklóricas» en noviembre de 1990; la Orquesta Sinfónica Nacional la estrenó poco después y la ha mantenido desde entonces en su repertorio regular."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "88b0d870-cec9-40e4-9f0a-23c11eda33f4",
+    "owner_artist_id": "60b0cfd0-b572-4d0f-a913-bbeb1aa734c6",
+    "locale": "es",
+    "revision": 1,
+    "status": "published",
+    "owner": {
+      "id": "60b0cfd0-b572-4d0f-a913-bbeb1aa734c6",
+      "name": "Fausto Rey",
+      "status": "published"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "El 15 de noviembre de 1980, en el Teatro General San Martín de Buenos Aires, representó al país en el festival de la «OTI» con «Canción de un hombre simple», de Yaqui Núñez del Risco y Jorge Taveras, que además dirigió la orquesta. Terminó sexta entre veintitrés canciones, con 25 puntos. Dos años después compartió con el cantante Rafael Colón un disco dedicado a las canciones de Juan Lockward, de «Quiéreme cual yo a ti» y «Flor de té» a «Santiago» y «Puerto Plata»."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  },
+  {
+    "id": "f64fa4b3-40c9-4c68-9dcc-f9cf318a825b",
+    "owner_artist_id": "8da26ee1-8079-4232-b9a2-66eccee08cb3",
+    "locale": "es",
+    "revision": 1,
+    "status": "published",
+    "owner": {
+      "id": "8da26ee1-8079-4232-b9a2-66eccee08cb3",
+      "name": "Elenita Santos",
+      "status": "published"
+    },
+    "target_artist_id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "contexts": [
+      "Lo que la definió como cantante fue su interpretación de la salve; durante generaciones fue prácticamente su única intérprete grabada, inmortalizando canciones de Isidoro Flores y de Bienvenido Brens, de quien grabó «Pensando», «Peregrina Sin Amor», «Al Retorno» y «Mar de Insomnio», entre muchas otras. En dieciocho discos de larga duración —salves, merengues y boleros— también interpretó a Luis Kalaff y a los compositores Papa Molina, Héctor Cabral Ortega, Rafael Colón y Armando Cabrera."
+    ],
+    "proposed_change": "Replace verified literal mentions with canonical artistReference after authorized publication of Rafael; preserve surrounding prose and unrelated references.",
+    "state": "Pending; draft target and other biography owners outside creation scope."
+  }
+]

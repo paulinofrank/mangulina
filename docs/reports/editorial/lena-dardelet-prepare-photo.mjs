@@ -1,0 +1,1 @@
+import fs from 'node:fs';import sharp from 'sharp';const s=sharp(fs.readFileSync('docs/reports/editorial/lena-dardelet-press-original.jpg'));const m=await s.metadata();console.log(JSON.stringify(m));await s.rotate().resize(300,300,{fit:'cover',position:'attention'}).webp({quality:90}).toFile('docs/reports/editorial/lena-dardelet-portrait.webp');

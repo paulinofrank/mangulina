@@ -1,0 +1,742 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "307722e8-5902-41b4-a9b7-ae67d99c87c6",
+        "name": "Rhina Ramírez",
+        "sort_name": "Rhina Ramírez",
+        "type": "solo_artist",
+        "birth_year": 1945,
+        "death_year": null,
+        "created_at": "2026-10-24T00:47:29.763149+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Rhina",
+        "middle_name": null,
+        "last_name": "Ramírez",
+        "second_last_name": null,
+        "stage_name": "Rhina Ramírez",
+        "date_of_birth": null,
+        "birth_place": "Las Matas de Farfán",
+        "website": null,
+        "youtube": null,
+        "facebook": null,
+        "instagram": null,
+        "aliases": [
+          "Rhina Ramirez",
+          "Rhina"
+        ],
+        "mbid": null,
+        "occupations": [],
+        "instruments": [
+          "voice"
+        ],
+        "genres": [
+          "ballads"
+        ],
+        "disambiguation": "Dominican bolero and romantic-ballad singer from Las Matas de Farfán",
+        "gender": "female",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-24T00:47:29.763149+00:00",
+        "province": "San Juan",
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "rhina-ramirez",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "bolero",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "1Lkpmjue9fH5ajOscCbv9X"
+      },
+      {
+        "id": "0882a2a4-4706-4687-9c2e-523944ab6011",
+        "name": "Luis Ovalles",
+        "slug": "luis-ovalles",
+        "status": "published"
+      },
+      {
+        "id": "faff18bd-3dbc-477a-bc38-859d611887f0",
+        "name": "Yaqui Núñez del Risco",
+        "slug": "yaqui-nunez-del-risco",
+        "status": "published"
+      },
+      {
+        "id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+        "name": "Manuel Sánchez Acosta",
+        "slug": "manuel-sanchez-acosta",
+        "status": "published"
+      },
+      {
+        "id": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+        "name": "Casandra Damirón",
+        "slug": "casandra-damiron",
+        "status": "published"
+      },
+      {
+        "id": "f5bdc55b-ac05-45cc-b118-375010a44f21",
+        "name": "Mario de Jesús Báez",
+        "slug": "mario-de-jesus-baez",
+        "status": "published"
+      },
+      {
+        "id": "7aa05a4d-6647-41b0-8a1c-59786dee2d01",
+        "name": "Leonor Porcella de Brea",
+        "slug": "leonor-porcella-de-brea",
+        "status": "published"
+      },
+      {
+        "id": "e8f0b2fb-1aa1-4c68-b806-89ff0b85bf4c",
+        "name": "Bullumba Landestoy",
+        "slug": "bullumba-landestoy",
+        "status": "published"
+      },
+      {
+        "id": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+        "name": "Johnny Ventura",
+        "slug": "johnny-ventura",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "99ecd6b1-fcff-44d6-99fd-51c5b8cbdf62",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Rhina Ramírez is a Dominican bolero and romantic-ballad singer born in March 1945 in Las Matas de Farfán, San Juan province. A contralto, she built her career around Dominican songwriting and performances at home and abroad. Her interpretation of «Peregrino» won the «III Festival de la Canción Dominicana», and she represented the Dominican Republic at the 1982 «OTI Festival» with «Por tanto amor».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "From choral singing to a solo career",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "By the late 1960s she was a contralto soloist with the «Coro Nacional». She studied singing with Ivonne Haza and later with Adele Brugoff in New York. ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+                    "displayText": "Casandra Damirón",
+                    "occurrenceId": "6990a9ce-cd07-4cc1-970f-fe5323187a78"
+                  }
+                },
+                {
+                  "text": " encouraged her to include Dominican folk songs such as «Mandé». After seeing her perform during a television fundraiser, ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                    "displayText": "Manuel Sánchez Acosta",
+                    "occurrenceId": "51031db9-e648-4d1c-9801-0bed7f3d6c0f"
+                  }
+                },
+                {
+                  "text": " invited her onto his program, helping introduce her work as a solo performer to a wider audience.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The song festivals",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In 1969 she performed «Cuatro temas», by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                    "displayText": "Manuel Sánchez Acosta",
+                    "occurrenceId": "913c07a3-ec24-4050-a52d-c1de586a7c68"
+                  }
+                },
+                {
+                  "text": ", at the «II Festival de la Canción Dominicana». She won its third edition, held in November 1970, with Jesús Troncoso's «Peregrino». The Dominican national archive preserves the festival record; its description identifies Ramírez as the vocalist and Bienvenido Bustamante as arranger of the winning song.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Recordings and repertoire",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Rhina en México» appeared on «UA Latino» in 1970, produced by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f5bdc55b-ac05-45cc-b118-375010a44f21",
+                    "displayText": "Mario de Jesús Báez",
+                    "occurrenceId": "5a77dca7-fb6d-42e2-8574-7347d884dfba"
+                  }
+                },
+                {
+                  "text": ". It brought together Dominican and other Latin American songwriters, including ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "e8f0b2fb-1aa1-4c68-b806-89ff0b85bf4c",
+                    "displayText": "Bullumba Landestoy",
+                    "occurrenceId": "89f31f43-1f94-4124-86d2-51c5d3618228"
+                  }
+                },
+                {
+                  "text": " with «Amor... tu amor» and ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                    "displayText": "Manuel Sánchez Acosta",
+                    "occurrenceId": "4fb78c66-f467-4ee2-9802-ef46da3ed03d"
+                  }
+                },
+                {
+                  "text": " with «Te esperaba, mi amor». The 1971 album «Rhina» included «Peregrino», «Cuatro temas» and «Mira qué mundo». Her recordings also include «El tiempo que te quede libre». Mexican song remained part of her stage repertoire, alongside boleros and ballads, in performances including «Rhina canta al amor» at Bellas Artes.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "OTI and recognition",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "On November 27, 1982, she sang «Por tanto amor», written by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "7aa05a4d-6647-41b0-8a1c-59786dee2d01",
+                    "displayText": "Leonor Porcella de Brea",
+                    "occurrenceId": "9b0ceca5-6665-4c15-a114-cdbda270a09e"
+                  }
+                },
+                {
+                  "text": ", at the «OTI Festival» in Lima. She received a «Casandra Especial» honoring her career in 2009. In July 2010 Banreservas paid tribute to her with a twenty-song anthology in its «Colección Reserva Musical», with artistic production by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "0882a2a4-4706-4687-9c2e-523944ab6011",
+                    "displayText": "Luis Ovalles",
+                    "occurrenceId": "820c57e8-d1eb-4c86-8b9a-68921ccdcb45"
+                  }
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Her career connects choral singing with song festivals and the interpretation of bolero and romantic ballads. Through recordings and performances abroad, she helped circulate Dominican compositions beyond their home audience, while her theater and club appearances sustained that repertoire on local stages.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "307722e8-5902-41b4-a9b7-ae67d99c87c6",
+        "created_at": "2026-10-24T00:47:30.367141+00:00",
+        "updated_at": "2026-10-24T00:47:30.367141+00:00",
+        "revision": 1
+      },
+      {
+        "id": "5c707276-c79f-490a-92e3-d0282cfa9428",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Rhina Ramírez es una cantante dominicana de bolero y balada romántica, nacida en marzo de 1945 en Las Matas de Farfán, provincia San Juan. De voz contralto, vinculó su trayectoria a la canción de autores dominicanos y a escenarios nacionales e internacionales. Su interpretación de «Peregrino» ganó el «III Festival de la Canción Dominicana» y en 1982 representó al país en el «Festival OTI» con «Por tanto amor».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Del canto coral a la canción popular",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A finales de los años sesenta fue contralto solista del «Coro Nacional». Estudió canto con Ivonne Haza y, en Nueva York, con Adele Brugoff. ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+                    "displayText": "Casandra Damirón",
+                    "occurrenceId": "4de3fcd9-6a33-45c6-86e3-c35c9cdef016"
+                  }
+                },
+                {
+                  "text": " la animó a incorporar canciones folclóricas, como «Mandé». ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                    "displayText": "Manuel Sánchez Acosta",
+                    "occurrenceId": "afa34d57-d424-4a8f-a5bc-0bbecab4926e"
+                  }
+                },
+                {
+                  "text": " la invitó a su programa de televisión después de verla actuar en un telemaratón, un encuentro que abrió una etapa de proyección como solista.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Los festivales",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Participó en el «II Festival de la Canción Dominicana», en 1969, con «Cuatro temas», de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                    "displayText": "Manuel Sánchez Acosta",
+                    "occurrenceId": "d75813f4-8f38-48d4-92a7-af2d67345f38"
+                  }
+                },
+                {
+                  "text": ". En la tercera edición, celebrada en noviembre de 1970, obtuvo el primer lugar con «Peregrino», de Jesús Troncoso. El Archivo General de la Nación conserva el disco del certamen, cuyo registro identifica a Rhina como intérprete y a Bienvenido Bustamante como arreglista de la canción ganadora.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Discos y repertorio",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 1970 apareció «Rhina en México», publicado por «UA Latino» y producido por ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f5bdc55b-ac05-45cc-b118-375010a44f21",
+                    "displayText": "Mario de Jesús Báez",
+                    "occurrenceId": "431f4341-638f-4a25-82a9-f91b7807cabc"
+                  }
+                },
+                {
+                  "text": ". Su repertorio reúne composiciones de autores dominicanos y latinoamericanos; incluye «Amor... tu amor», de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "e8f0b2fb-1aa1-4c68-b806-89ff0b85bf4c",
+                    "displayText": "Bullumba Landestoy",
+                    "occurrenceId": "731fb312-8d2e-4889-9684-a213dbdddb80"
+                  }
+                },
+                {
+                  "text": ", y «Te esperaba, mi amor», de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                    "displayText": "Manuel Sánchez Acosta",
+                    "occurrenceId": "691936b4-0fb5-4740-83d9-1d1b20a791ef"
+                  }
+                },
+                {
+                  "text": ". Le siguió «Rhina», de 1971, con «Peregrino», «Cuatro temas» y «Mira qué mundo». Otro título de su discografía es «El tiempo que te quede libre». La canción mexicana también ocupó un lugar en sus recitales y en el espectáculo «Rhina canta al amor», presentado en Bellas Artes.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "OTI y reconocimientos",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El 27 de noviembre de 1982 interpretó «Por tanto amor», de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "7aa05a4d-6647-41b0-8a1c-59786dee2d01",
+                    "displayText": "Leonor Porcella de Brea",
+                    "occurrenceId": "99ae130d-da1f-4dc4-8ad5-793beb228a5d"
+                  }
+                },
+                {
+                  "text": ", en el «Festival OTI» de Lima. En 2009 recibió un «Casandra Especial» por su trayectoria. En julio de 2010, Banreservas le rindió homenaje y editó una antología de veinte canciones dentro de su «Colección Reserva Musical», con producción artística de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "0882a2a4-4706-4687-9c2e-523944ab6011",
+                    "displayText": "Luis Ovalles",
+                    "occurrenceId": "b342b408-a16d-4e17-a279-2b1a4938d1ce"
+                  }
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su carrera une el canto coral, los festivales y la interpretación del bolero y la balada. Sus grabaciones conservaron canciones de compositores dominicanos y las llevaron a públicos de otros países, mientras su actividad en teatros y clubes mantuvo ese repertorio en los escenarios.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "307722e8-5902-41b4-a9b7-ae67d99c87c6",
+        "created_at": "2026-10-24T00:47:30.011928+00:00",
+        "updated_at": "2026-10-24T00:47:30.011928+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "c09491e2-2488-4bc3-b9e3-be300a2fe212",
+        "editorial_document_id": "5c707276-c79f-490a-92e3-d0282cfa9428",
+        "occurrence_id": "4de3fcd9-6a33-45c6-86e3-c35c9cdef016",
+        "entity_type": "artist",
+        "target_artist_id": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+        "created_at": "2026-10-24T00:47:30.011928+00:00",
+        "updated_at": "2026-10-24T00:47:30.011928+00:00"
+      },
+      {
+        "id": "3b91fd85-7e01-4b22-a55d-70dda06892a9",
+        "editorial_document_id": "5c707276-c79f-490a-92e3-d0282cfa9428",
+        "occurrence_id": "afa34d57-d424-4a8f-a5bc-0bbecab4926e",
+        "entity_type": "artist",
+        "target_artist_id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+        "created_at": "2026-10-24T00:47:30.011928+00:00",
+        "updated_at": "2026-10-24T00:47:30.011928+00:00"
+      },
+      {
+        "id": "9edf7c88-9063-45e3-9719-8db49461cf84",
+        "editorial_document_id": "5c707276-c79f-490a-92e3-d0282cfa9428",
+        "occurrence_id": "d75813f4-8f38-48d4-92a7-af2d67345f38",
+        "entity_type": "artist",
+        "target_artist_id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+        "created_at": "2026-10-24T00:47:30.011928+00:00",
+        "updated_at": "2026-10-24T00:47:30.011928+00:00"
+      },
+      {
+        "id": "94840af6-004f-435c-ae06-adf9a0795760",
+        "editorial_document_id": "5c707276-c79f-490a-92e3-d0282cfa9428",
+        "occurrence_id": "431f4341-638f-4a25-82a9-f91b7807cabc",
+        "entity_type": "artist",
+        "target_artist_id": "f5bdc55b-ac05-45cc-b118-375010a44f21",
+        "created_at": "2026-10-24T00:47:30.011928+00:00",
+        "updated_at": "2026-10-24T00:47:30.011928+00:00"
+      },
+      {
+        "id": "7c648a2a-ab78-49cf-8c05-ebe6dd03e01b",
+        "editorial_document_id": "5c707276-c79f-490a-92e3-d0282cfa9428",
+        "occurrence_id": "731fb312-8d2e-4889-9684-a213dbdddb80",
+        "entity_type": "artist",
+        "target_artist_id": "e8f0b2fb-1aa1-4c68-b806-89ff0b85bf4c",
+        "created_at": "2026-10-24T00:47:30.011928+00:00",
+        "updated_at": "2026-10-24T00:47:30.011928+00:00"
+      },
+      {
+        "id": "ea77ad23-d68f-4a93-9987-ae58be73e85d",
+        "editorial_document_id": "5c707276-c79f-490a-92e3-d0282cfa9428",
+        "occurrence_id": "691936b4-0fb5-4740-83d9-1d1b20a791ef",
+        "entity_type": "artist",
+        "target_artist_id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+        "created_at": "2026-10-24T00:47:30.011928+00:00",
+        "updated_at": "2026-10-24T00:47:30.011928+00:00"
+      },
+      {
+        "id": "3397c1b7-934f-4bad-9ed5-7609257adbce",
+        "editorial_document_id": "5c707276-c79f-490a-92e3-d0282cfa9428",
+        "occurrence_id": "99ae130d-da1f-4dc4-8ad5-793beb228a5d",
+        "entity_type": "artist",
+        "target_artist_id": "7aa05a4d-6647-41b0-8a1c-59786dee2d01",
+        "created_at": "2026-10-24T00:47:30.011928+00:00",
+        "updated_at": "2026-10-24T00:47:30.011928+00:00"
+      },
+      {
+        "id": "cea00c86-4476-4ad5-b3b0-74e602c30f75",
+        "editorial_document_id": "5c707276-c79f-490a-92e3-d0282cfa9428",
+        "occurrence_id": "b342b408-a16d-4e17-a279-2b1a4938d1ce",
+        "entity_type": "artist",
+        "target_artist_id": "0882a2a4-4706-4687-9c2e-523944ab6011",
+        "created_at": "2026-10-24T00:47:30.011928+00:00",
+        "updated_at": "2026-10-24T00:47:30.011928+00:00"
+      },
+      {
+        "id": "ff020b44-f983-4f1d-9ddf-ee543482238d",
+        "editorial_document_id": "99ecd6b1-fcff-44d6-99fd-51c5b8cbdf62",
+        "occurrence_id": "6990a9ce-cd07-4cc1-970f-fe5323187a78",
+        "entity_type": "artist",
+        "target_artist_id": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+        "created_at": "2026-10-24T00:47:30.367141+00:00",
+        "updated_at": "2026-10-24T00:47:30.367141+00:00"
+      },
+      {
+        "id": "906ef6be-9652-4f1f-a909-e283e616a10d",
+        "editorial_document_id": "99ecd6b1-fcff-44d6-99fd-51c5b8cbdf62",
+        "occurrence_id": "51031db9-e648-4d1c-9801-0bed7f3d6c0f",
+        "entity_type": "artist",
+        "target_artist_id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+        "created_at": "2026-10-24T00:47:30.367141+00:00",
+        "updated_at": "2026-10-24T00:47:30.367141+00:00"
+      },
+      {
+        "id": "20a5be92-1adf-4cac-959c-9ce37dd02e36",
+        "editorial_document_id": "99ecd6b1-fcff-44d6-99fd-51c5b8cbdf62",
+        "occurrence_id": "913c07a3-ec24-4050-a52d-c1de586a7c68",
+        "entity_type": "artist",
+        "target_artist_id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+        "created_at": "2026-10-24T00:47:30.367141+00:00",
+        "updated_at": "2026-10-24T00:47:30.367141+00:00"
+      },
+      {
+        "id": "0dc84c58-b715-48d9-b191-366d627369ac",
+        "editorial_document_id": "99ecd6b1-fcff-44d6-99fd-51c5b8cbdf62",
+        "occurrence_id": "5a77dca7-fb6d-42e2-8574-7347d884dfba",
+        "entity_type": "artist",
+        "target_artist_id": "f5bdc55b-ac05-45cc-b118-375010a44f21",
+        "created_at": "2026-10-24T00:47:30.367141+00:00",
+        "updated_at": "2026-10-24T00:47:30.367141+00:00"
+      },
+      {
+        "id": "6b4c7dfe-b276-4547-87ae-1166afff2241",
+        "editorial_document_id": "99ecd6b1-fcff-44d6-99fd-51c5b8cbdf62",
+        "occurrence_id": "89f31f43-1f94-4124-86d2-51c5d3618228",
+        "entity_type": "artist",
+        "target_artist_id": "e8f0b2fb-1aa1-4c68-b806-89ff0b85bf4c",
+        "created_at": "2026-10-24T00:47:30.367141+00:00",
+        "updated_at": "2026-10-24T00:47:30.367141+00:00"
+      },
+      {
+        "id": "719d8479-279d-47af-883e-e644017785ed",
+        "editorial_document_id": "99ecd6b1-fcff-44d6-99fd-51c5b8cbdf62",
+        "occurrence_id": "4fb78c66-f467-4ee2-9802-ef46da3ed03d",
+        "entity_type": "artist",
+        "target_artist_id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+        "created_at": "2026-10-24T00:47:30.367141+00:00",
+        "updated_at": "2026-10-24T00:47:30.367141+00:00"
+      },
+      {
+        "id": "0eab9208-4966-4c7d-8a60-5f6c7468d167",
+        "editorial_document_id": "99ecd6b1-fcff-44d6-99fd-51c5b8cbdf62",
+        "occurrence_id": "9b0ceca5-6665-4c15-a114-cdbda270a09e",
+        "entity_type": "artist",
+        "target_artist_id": "7aa05a4d-6647-41b0-8a1c-59786dee2d01",
+        "created_at": "2026-10-24T00:47:30.367141+00:00",
+        "updated_at": "2026-10-24T00:47:30.367141+00:00"
+      },
+      {
+        "id": "7a68191e-ba27-4364-be1c-d0fa0d88786c",
+        "editorial_document_id": "99ecd6b1-fcff-44d6-99fd-51c5b8cbdf62",
+        "occurrence_id": "820c57e8-d1eb-4c86-8b9a-68921ccdcb45",
+        "entity_type": "artist",
+        "target_artist_id": "0882a2a4-4706-4687-9c2e-523944ab6011",
+        "created_at": "2026-10-24T00:47:30.367141+00:00",
+        "updated_at": "2026-10-24T00:47:30.367141+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-24T00:47:38.907Z",
+    "counts": {
+      "documents": 2,
+      "relations": 16,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

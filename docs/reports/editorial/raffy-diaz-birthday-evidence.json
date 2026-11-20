@@ -1,0 +1,16 @@
+{
+  "profile": "https://www.facebook.com/raffy.diaz",
+  "profile_birthday": "19 January; no year displayed",
+  "post": "https://www.facebook.com/raffy.diaz/posts/25026652243586688",
+  "date": "2024-01-19",
+  "author": "Marucha Diaz D Cerda",
+  "claim": "Explicit birthday greeting to her father; Raffy replies thanking his daughter on January 19, 2024. No age stated.",
+  "conflicting_lead": "Profile search also returned January 18, 2014 greeting by Yukistah Diaz; not accepted as birth-day correction without context.",
+  "corroboration": {
+    "post": "https://www.facebook.com/raffy.diaz/posts/1530016183676958",
+    "author": "Myra Corral",
+    "date": "2017-01-19",
+    "text": "Happy birthday may you have a very blessed day",
+    "birth_year_not_stated": true
+  }
+}

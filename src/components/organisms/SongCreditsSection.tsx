@@ -210,10 +210,24 @@ export default function SongCreditsSection({
   const grouped = new Map<string, CreditItem[]>();
   const rolePriorities = new Map<string, number>();
   const instrumentRoleLabels = new Set<string>();
-  for (const c of credits) {
-    const role = normalizeRole(c.role || "Credit", t);
+  // A musician playing multiple instruments appears on each instrument's row.
+  // Keep the stored credit intact; only omit the repeated instrument suffix here.
+  const displayCredits = credits.flatMap<{ credit: CreditItem; instrumentLabel: string | null }>((credit) => {
+    if (!INSTRUMENT_ROLES.has(credit.role.trim().toLowerCase()) || !credit.instruments?.length) {
+      return [{ credit, instrumentLabel: null }];
+    }
+    return credit.instruments.map((instrument) => ({
+      credit: { ...credit, instruments: [] },
+      instrumentLabel: (locale === "es" ? instrument.name_es : instrument.name_en)
+        || instrument.name_en || instrument.name_es || titleCase(instrument.code),
+    }));
+  });
+  for (const { credit: c, instrumentLabel } of displayCredits) {
+    const role = instrumentLabel ?? normalizeRole(c.role || "Credit", t);
     if (INSTRUMENT_ROLES.has(c.role.trim().toLowerCase()) || c.instruments?.length) instrumentRoleLabels.add(role);
-    rolePriorities.set(role, Math.min(rolePriorities.get(role) ?? Number.MAX_SAFE_INTEGER, roleOrder(c.role)));
+    // Preserve role order, then the documented instrument order within that role.
+    const priority = roleOrder(c.role) * 10000 + (instrumentLabel ? grouped.size : 0);
+    rolePriorities.set(role, Math.min(rolePriorities.get(role) ?? Number.MAX_SAFE_INTEGER, priority));
     if (!grouped.has(role)) grouped.set(role, []);
     const names = grouped.get(role)!;
     if (!names.some((item) => item.name === c.name && item.slug === c.slug && item.externalContributorId === c.externalContributorId)) {
@@ -262,14 +276,14 @@ export default function SongCreditsSection({
                 >
                   {role}
                 </dt>
-                <dd className="text-sm text-gray-700 sm:py-0.5">
+                <dd className="text-sm text-gray-700 max-sm:ps-3 sm:py-0.5">
                   <span className="flex flex-wrap gap-x-1.5 gap-y-1">
                     {names.map((credit, index) => (
-                      <span key={`${role}-${credit.name}-${credit.slug ?? index}`} className="inline-flex flex-wrap items-baseline gap-x-1">
+                      <span key={`${role}-${credit.name}-${credit.slug ?? index}`}>
                         {credit.slug ? (
                           <Link
                             href={`/artists/${credit.slug}`}
-                            className="font-medium text-[#002D62] transition hover:text-[#CE1126]"
+                            className="font-medium text-[#002D62] underline decoration-current/40 underline-offset-2 transition hover:text-[#CE1126] hover:decoration-current"
                           >
                             {credit.name}
                           </Link>
@@ -279,26 +293,26 @@ export default function SongCreditsSection({
                           <span>{credit.name}</span>
                         )}
                         {(credit.instruments?.length || credit.creditDetail) && <span className="text-xs text-slate-500">
-                          — {[credit.instruments?.map((instrument) => locale === "es" ? instrument.name_es : instrument.name_en).join(", "), credit.creditDetail].filter(Boolean).join(" · ")}
+                          {" "}— {[credit.instruments?.map((instrument) => locale === "es" ? instrument.name_es : instrument.name_en).join(", "), credit.creditDetail].filter(Boolean).join(" · ")}
                         </span>}
-                        {index < names.length - 1 && <span>,</span>}
+                        {index < names.length - 1 && ","}
                       </span>
                     ))}
                   </span>
                 </dd>
                 </div>
-                {roleIndex === lastInstrumentIndex && <div aria-hidden="true" className="col-span-full my-1 border-t border-gray-100" />}
+                {roleIndex === lastInstrumentIndex && !hasExtra && <div aria-hidden="true" className="col-span-full my-1 border-t border-gray-100" />}
               </Fragment>
             );
           })}
           {sortedRoles.length > 0 && hasExtra && <div aria-hidden="true" className="col-span-full my-1 border-t border-gray-100" />}
           {labelName && <div className="contents">
             <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-gray-500 sm:whitespace-nowrap sm:py-0.5">{tSong("label")}</dt>
-            <dd className="text-sm text-gray-700 sm:py-0.5">{labelName}</dd>
+            <dd className="text-sm text-gray-700 max-sm:ps-3 sm:py-0.5">{labelName}</dd>
           </div>}
           {releaseInfo && <div className="contents">
             <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-gray-500 sm:whitespace-nowrap sm:py-0.5">{tSong("release")}</dt>
-            <dd className="text-sm text-gray-700 sm:py-0.5">{releaseInfo}</dd>
+            <dd className="text-sm text-gray-700 max-sm:ps-3 sm:py-0.5">{releaseInfo}</dd>
           </div>}
         </dl>
       )}

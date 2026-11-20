@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-23",
+  "duplicates": [],
+  "scope": "All-status name/alias/Spotify lookup; no artist match. Related artists read only.",
+  "targets": [
+    {
+      "id": "0882a2a4-4706-4687-9c2e-523944ab6011",
+      "name": "Luis Ovalles",
+      "slug": "luis-ovalles",
+      "status": "published"
+    },
+    {
+      "id": "faff18bd-3dbc-477a-bc38-859d611887f0",
+      "name": "Yaqui Núñez del Risco",
+      "slug": "yaqui-nunez-del-risco",
+      "status": "published"
+    },
+    {
+      "id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+      "name": "Manuel Sánchez Acosta",
+      "slug": "manuel-sanchez-acosta",
+      "status": "published"
+    },
+    {
+      "id": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+      "name": "Casandra Damirón",
+      "slug": "casandra-damiron",
+      "status": "published"
+    },
+    {
+      "id": "f5bdc55b-ac05-45cc-b118-375010a44f21",
+      "name": "Mario de Jesús Báez",
+      "slug": "mario-de-jesus-baez",
+      "status": "published"
+    },
+    {
+      "id": "7aa05a4d-6647-41b0-8a1c-59786dee2d01",
+      "name": "Leonor Porcella de Brea",
+      "slug": "leonor-porcella-de-brea",
+      "status": "published"
+    },
+    {
+      "id": "e8f0b2fb-1aa1-4c68-b806-89ff0b85bf4c",
+      "name": "Bullumba Landestoy",
+      "slug": "bullumba-landestoy",
+      "status": "published"
+    },
+    {
+      "id": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+      "name": "Johnny Ventura",
+      "slug": "johnny-ventura",
+      "status": "published"
+    }
+  ]
+}

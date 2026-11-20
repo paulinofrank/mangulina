@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-01T20:44:37.265Z",
+  "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+  "artist_name": "El Equipo (de Dioni Fernández)",
+  "artist_status": "published",
+  "director_artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+  "director_name": "Dioni Fernández",
+  "releases_count": 12,
+  "recordings_count": 98,
+  "tracks_count": 108,
+  "release_artists_count": 27,
+  "shared_recordings_reused": 10,
+  "covers_verified": 12,
+  "rpc_discography_rows": 108,
+  "releases": [
+    {
+      "id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "year": 1981,
+      "title": "El Equipo (con Sandy Reyes)",
+      "slug": "el-equipo-con-sandy-reyes",
+      "tracks_count": 10,
+      "has_cover_image": true
+    },
+    {
+      "id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "year": 1983,
+      "title": "Dioni Fernández Y El Equipo (con Charlie Rodríguez)",
+      "slug": "dioni-fernandez-y-el-equipo-con-charlie-rodriguez",
+      "tracks_count": 8,
+      "has_cover_image": true
+    },
+    {
+      "id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "year": 1984,
+      "title": "Los Diseñadores",
+      "slug": "los-disenadores-el-equipo",
+      "tracks_count": 7,
+      "has_cover_image": true
+    },
+    {
+      "id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "year": 1985,
+      "title": "Fiesta & Fiesta!",
+      "slug": "fiesta-fiesta-el-equipo",
+      "tracks_count": 9,
+      "has_cover_image": true
+    },
+    {
+      "id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "year": 1986,
+      "title": "Pasa la Vida",
+      "slug": "pasa-la-vida-el-equipo",
+      "tracks_count": 9,
+      "has_cover_image": true
+    },
+    {
+      "id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "year": 1988,
+      "title": "Dioni Fernández & El Equipo (El Cinturón del Taxi)",
+      "slug": "dioni-fernandez-el-equipo-el-cinturon-del-taxi",
+      "tracks_count": 9,
+      "has_cover_image": true
+    },
+    {
+      "id": "e8870364-b333-48f7-a678-dce904034932",
+      "year": 1988,
+      "title": "El Millonario",
+      "slug": "el-millonario-el-equipo",
+      "tracks_count": 8,
+      "has_cover_image": true
+    },
+    {
+      "id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "year": 1991,
+      "title": "Dioni Fernández",
+      "slug": "dioni-fernandez-el-equipo",
+      "tracks_count": 8,
+      "has_cover_image": true
+    },
+    {
+      "id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "year": 1992,
+      "title": "Yo Soy Para Ti",
+      "slug": "yo-soy-para-ti-el-equipo",
+      "tracks_count": 10,
+      "has_cover_image": true
+    },
+    {
+      "id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "year": 1994,
+      "title": "Homenaje A Julito Deschamps",
+      "slug": "homenaje-a-julito-deschamps-el-equipo",
+      "tracks_count": 10,
+      "has_cover_image": true
+    },
+    {
+      "id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "year": 1994,
+      "title": "La Gota Fría",
+      "slug": "la-gota-fria-el-equipo",
+      "tracks_count": 10,
+      "has_cover_image": true
+    },
+    {
+      "id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "year": 2007,
+      "title": "Juntos de Nuevo (con Charlie Rodríguez)",
+      "slug": "juntos-de-nuevo-con-charlie-rodriguez-el-equipo",
+      "tracks_count": 10,
+      "has_cover_image": true
+    }
+  ]
+}

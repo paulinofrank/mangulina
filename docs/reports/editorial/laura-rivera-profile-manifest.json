@@ -1,0 +1,552 @@
+{
+  "date": "2026-10-24",
+  "authorization": "Editor named new-profile candidate in ongoing workflow; new draft artist and two published validated bios. No artist publication, discography imports, media or other artist changes.",
+  "before": null,
+  "after": {
+    "id": "8c387f0a-7269-479a-964a-079b1566cb84",
+    "name": "Laura Rivera",
+    "stage_name": "Laura Rivera",
+    "sort_name": "Rivera, Laura",
+    "slug": "laura-rivera",
+    "first_name": "Laura",
+    "middle_name": null,
+    "last_name": "Rivera",
+    "second_last_name": null,
+    "aliases": [],
+    "type": "solo_artist",
+    "primary_role": "singer",
+    "occupations": [
+      "songwriter",
+      "actress"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "primary_genre": "rock",
+    "genres": [
+      "jazz",
+      "ballads",
+      "bolero"
+    ],
+    "gender": "female",
+    "artist_tags": [
+      "secular"
+    ],
+    "status": "draft",
+    "date_of_birth": null,
+    "birth_year": null,
+    "birth_place": "Santo Domingo",
+    "province": "Distrito Nacional",
+    "facebook": "laurariveramusic",
+    "instagram": "laurariveramusic",
+    "youtube": "@laurariveramusic",
+    "spotify": "7HHJVGyezmAvZDfAkNGluD",
+    "website": null,
+    "disambiguation": "Dominican singer-songwriter and actress, vocalist of Tribu del Sol and Retro Jazz"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Laura Rivera es una cantante, compositora y actriz dominicana nacida el 19 de diciembre en Santo Domingo. Se dio a conocer como la voz de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f05b109c-011b-4a03-a424-feb5c90e63f5",
+                  "occurrenceId": "1db0a42f-81f7-4638-bad1-5b6499930878",
+                  "displayText": "Tribu del Sol"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y desarrolló posteriormente una carrera que reúne el rock, la balada, el jazz y el teatro musical. Es vocalista de «Retro Jazz» y mantiene un proyecto solista de canciones propias y colaboraciones."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Primeros años y Tribu del Sol",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Comenzó a trabajar en el canto y la actuación a los seis años, participando en jingles, producciones infantiles, comerciales y teatro. Entre los productores con quienes trabajó figuran "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "occurrenceId": "8d1f3dea-f050-4b53-a1fb-3c5c45140c2f",
+                  "displayText": "Manuel Tejada"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y Pengbian Sang. En 1997 pasó a ser la vocalista de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f05b109c-011b-4a03-a424-feb5c90e63f5",
+                  "occurrenceId": "b650656f-bd1f-4367-bfda-46c19316b866",
+                  "displayText": "Tribu del Sol"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", junto a Rafa Payán y Papolo Pumarol. Su primer álbum, «Buscando una razón», apareció en 1998 e incluyó «Búscame», «Ni siquiera el sol», «No me dejes morir» y «Por ti». La prensa documenta una selección favorable del disco por John Lannert, editor latino de «Billboard», y un premio Casandra a Agrupación de Rock del Año para la banda."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La experiencia de Retro Jazz",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2011 se incorporó como vocalista fundadora a «Retro Jazz», proyecto dirigido por Pengbian Sang que reinterpreta el cancionero dominicano mediante el jazz. Prestó su voz a «Jazzeando el Cancionero Dominicano, Vol. 1», publicado en 2013 y ganador del Soberano a Álbum del Año en 2014. Tras una etapa fuera de la formación, regresó oficialmente en 2024 e interpretó «Te propongo», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                  "occurrenceId": "f8a2f5b9-2f67-4068-b90b-9e91344d6fe0",
+                  "displayText": "Juan Luis Guerra"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", en el cuarto volumen de la serie. También participó en «Jazzeando el Cancionero Dominicano En Vivo», editado en 2025."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La voz solista y «Despertar»",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2016 inició su proyecto solista con «Más que ayer», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4968d375-0833-49e2-8442-633cbaa39404",
+                  "occurrenceId": "2567b774-c726-4e54-a5f1-6c914f3e0c63",
+                  "displayText": "Vicente García"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". El 3 de abril de 2020 publicó «Despertar», su primer álbum en solitario, producido por Rafa Payán y coproducido por ella, con distribución de «La Oreja Media Group». Sus diez canciones incluyen duetos con Haydée Milanés y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+                  "occurrenceId": "0275ebf3-73fc-4f11-8d55-0d3de7fd09dd",
+                  "displayText": "Pavel Núñez"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", con quien grabó «Casita». El disco se realizó con apoyo de sus seguidores mediante financiación colectiva. Su repertorio incluye «Da tristeza», «Te quiero ver» y «Te he perdido», que también interpretó en una grabación en vivo junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+                  "occurrenceId": "80e449c2-6dc8-48ca-9656-7b6b353b2848",
+                  "displayText": "Maridalia Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Teatro y nuevas canciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Como actriz ha protagonizado «Esperanza el musical» y «Legally Blonde», y en 2024 participó en «Mamma Mia!». En 2026 lanzó «Villana», un bolero contemporáneo de su autoría producido por Peter Nova. Ese año presentó «Todo lo que soy», una residencia de cuatro conciertos en el Café Teatro Juan Lockward del Teatro Nacional, concebida alrededor de sus facetas como intérprete, actriz y rockera."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Desde el pop rock de Tribu del Sol hasta las versiones del cancionero dominicano y su obra solista, Rivera ha desarrollado una trayectoria centrada en la interpretación vocal. Su trabajo reúne la experiencia de banda, la composición y los recursos del teatro musical en distintos repertorios y escenarios."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Laura Rivera is a Dominican singer-songwriter and actress born on December 19 in Santo Domingo. She became known as the voice of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f05b109c-011b-4a03-a424-feb5c90e63f5",
+                  "occurrenceId": "269f7ce4-daca-46c3-8fd3-2479e7b908a0",
+                  "displayText": "Tribu del Sol"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and subsequently built a career spanning rock, ballads, jazz and musical theater. She sings with «Retro Jazz» while maintaining a solo project of original songs and collaborations."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early work and Tribu del Sol",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "She began working in singing and acting at six, appearing in jingles, children's productions, commercials and theater. Producers she worked with included "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                  "occurrenceId": "9020c29d-b54c-48f6-9b92-2442ba6e5096",
+                  "displayText": "Manuel Tejada"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and Pengbian Sang. In 1997 she became the vocalist of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f05b109c-011b-4a03-a424-feb5c90e63f5",
+                  "occurrenceId": "e9c7b342-a8d1-437f-a848-c3000f6bb48f",
+                  "displayText": "Tribu del Sol"
+                }
+              },
+              {
+                "type": "text",
+                "text": " alongside Rafa Payán and Papolo Pumarol. The band's first album, «Buscando una razón», appeared in 1998, including «Búscame», «Ni siquiera el sol», «No me dejes morir» and «Por ti». Press accounts document a favorable selection of the album by «Billboard» Latin editor John Lannert and a Premio Casandra for Rock Group of the Year for the band."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The Retro Jazz experience",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2011 she joined «Retro Jazz» as its founding vocalist. Led by Pengbian Sang, the project reinterprets the Dominican songbook through jazz. She sang on «Jazzeando el Cancionero Dominicano, Vol. 1», released in 2013 and awarded Album of the Year at the 2014 Premios Soberano. After a period outside the lineup, she officially returned in 2024 and performed "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                  "occurrenceId": "cd28f0a9-0856-4501-990a-5bfdb81fbd49",
+                  "displayText": "Juan Luis Guerra"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s «Te propongo» on the series' fourth volume. She also appeared on «Jazzeando el Cancionero Dominicano En Vivo», issued in 2025."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solo recordings and «Despertar»",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "She launched her solo project in 2016 with «Más que ayer», written by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4968d375-0833-49e2-8442-633cbaa39404",
+                  "occurrenceId": "85ed86bf-5b33-41e8-899b-c4bf8daedada",
+                  "displayText": "Vicente García"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". On April 3, 2020, she released her first solo album, «Despertar», produced by Rafa Payán and co-produced by Rivera, with distribution through «La Oreja Media Group». Its ten songs include duets with Haydée Milanés and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+                  "occurrenceId": "2e4400d0-b4c3-495c-8133-734569ba065f",
+                  "displayText": "Pavel Núñez"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", with whom she recorded «Casita». Fans helped finance the record through crowdfunding. Her repertoire includes «Da tristeza», «Te quiero ver» and «Te he perdido», which she also performed in a live recording with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+                  "occurrenceId": "d41ecb25-c1f1-4d5e-b402-0f2e845e8956",
+                  "displayText": "Maridalia Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Theater and new songs",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "As an actress she has played leading roles in «Esperanza el musical» and «Legally Blonde», and in 2024 she appeared in «Mamma Mia!». In 2026 she released «Villana», a contemporary bolero she wrote, produced by Peter Nova. That year she presented «Todo lo que soy», a four-concert residency at the Teatro Nacional's Café Teatro Juan Lockward, exploring her work as a singer, actress and rock performer."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f05b109c-011b-4a03-a424-feb5c90e63f5",
+                  "occurrenceId": "885b48ee-e9e7-4831-a41e-90c86df8d678",
+                  "displayText": "Tribu del Sol"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s pop rock to Dominican songbook interpretations and her solo work, Rivera has developed a career centered on vocal performance. Her work brings together band experience, songwriting and the expressive resources of musical theater across different repertoires and stages."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "080c0205-8b66-4f16-915e-1d867acf82cc",
+      "name": "Maridalia Hernández",
+      "slug": "maridalia-hernandez",
+      "status": "published"
+    },
+    {
+      "id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+      "name": "Juan Luis Guerra",
+      "slug": "juan-luis-guerra",
+      "status": "published"
+    },
+    {
+      "id": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+      "name": "Pavel Núñez",
+      "slug": "pavel-nunez",
+      "status": "published"
+    },
+    {
+      "id": "4968d375-0833-49e2-8442-633cbaa39404",
+      "name": "Vicente García",
+      "slug": "vicente-garcia",
+      "status": "published"
+    },
+    {
+      "id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+      "name": "Manuel Tejada",
+      "slug": "manuel-tejada",
+      "status": "published"
+    },
+    {
+      "id": "f05b109c-011b-4a03-a424-feb5c90e63f5",
+      "name": "Tribu del Sol",
+      "slug": "tribu-del-sol",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "laura-rivera-research-2026-10-24.md",
+  "field_evidence": "See field-level rationale, original source URLs, access limitations and birth procedure in research report.",
+  "backward_reference_audit": {
+    "pending_owners": [
+      "Tribu del Sol"
+    ],
+    "details": "See research report for both document IDs, revisions and matching vocalist context. Target remains draft; no changes to other public biographies."
+  },
+  "unresolved": [
+    "Birth year unknown; date_of_birth null, December 19 preserved in prose and source manifest. Generated birth_day and birth_month not written.",
+    "Second surname and middle name unknown.",
+    "No portrait provided.",
+    "Historical website does not resolve."
+  ],
+  "exclusions": [
+    "No artist publication",
+    "No other artist changes",
+    "No music or credit imports",
+    "No security/schema/application changes",
+    "No deployment, draft public URL requests or manual cache refresh"
+  ]
+}

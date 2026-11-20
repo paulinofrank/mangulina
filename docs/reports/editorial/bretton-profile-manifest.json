@@ -1,0 +1,567 @@
+{
+  "date": "2026-10-24",
+  "authorization": "Complete named existing draft artist; published validated EN/ES biographies. No artist publication, image or discography import.",
+  "before": {
+    "id": "6454a95c-0d60-499d-b2c3-4ad262efb7e6",
+    "name": "Brettón",
+    "sort_name": null,
+    "type": null,
+    "birth_year": null,
+    "death_year": null,
+    "created_at": "2026-09-23T20:10:30.303245+00:00",
+    "views": 0,
+    "wikidata_id": null,
+    "first_name": null,
+    "middle_name": null,
+    "last_name": null,
+    "second_last_name": null,
+    "stage_name": "Brettón",
+    "date_of_birth": null,
+    "birth_place": null,
+    "website": null,
+    "youtube": null,
+    "facebook": null,
+    "instagram": null,
+    "aliases": null,
+    "mbid": null,
+    "occupations": [
+      "singer",
+      "songwriter"
+    ],
+    "instruments": [],
+    "genres": [],
+    "disambiguation": null,
+    "gender": null,
+    "ended": null,
+    "mb_metadata": {},
+    "updated_at": "2026-09-23T20:10:30.303245+00:00",
+    "province": null,
+    "birth_day": null,
+    "birth_month": null,
+    "slug": "bretton",
+    "primary_role": "singer",
+    "artist_tags": [],
+    "date_of_death": null,
+    "status": "draft",
+    "primary_genre": null,
+    "bio_en": null,
+    "bio_es": null,
+    "has_image": false,
+    "image_updated_at": null,
+    "formation_year": null,
+    "dissolution_year": null,
+    "spotify": null
+  },
+  "after": {
+    "id": "6454a95c-0d60-499d-b2c3-4ad262efb7e6",
+    "name": "Brettón",
+    "stage_name": "Brettón",
+    "sort_name": "Brettón",
+    "slug": "bretton",
+    "first_name": "Emmanuel",
+    "middle_name": null,
+    "last_name": "Bretón",
+    "second_last_name": null,
+    "aliases": [
+      "Emmanuel Bretón",
+      "Enmanuel Bretón",
+      "Bretton"
+    ],
+    "disambiguation": "Dominican singer-songwriter from Santiago de los Caballeros",
+    "type": "solo_artist",
+    "primary_role": "singer",
+    "occupations": [
+      "songwriter",
+      "producer"
+    ],
+    "gender": "male",
+    "birth_place": null,
+    "province": "Santiago",
+    "date_of_birth": "1981-06-25",
+    "birth_year": 1981,
+    "primary_genre": "fusion",
+    "genres": [
+      "rock",
+      "ballads"
+    ],
+    "instruments": [
+      "voice",
+      "guitar"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "facebook": "SoyBretton",
+    "instagram": "soybretton",
+    "youtube": "@soybretton",
+    "spotify": "4NF60hbzMzeKZsHBD8nLqm",
+    "website": "https://soybretton.com/",
+    "status": "draft"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Brettón, nombre artístico de Emmanuel Bretón, es un cantante, compositor y productor dominicano nacido el 25 de junio de 1981 y oriundo de Santiago de los Caballeros. Su propuesta combina pop, rock y balada con una canción de autor centrada en las relaciones y los cambios personales. Además de su actividad musical, trabaja en diseño gráfico, fotografía y creación audiovisual."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La escena de Santiago",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Creció en una familia de músicos y educadores y comenzó a acercarse a la música desde niño. En Santiago participó en proyectos como «Plasma» y «Punto G». Centro León documentó en 2018 una presentación suya en el Patio Caribeño: interpretó composiciones como «Momentos compartidos», «Transparente» y «Tu nombre», acompañado por otros músicos locales. También colaboró en grabaciones de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+                  "occurrenceId": "c4bf3bf2-e930-422a-9643-b671dc7961ff",
+                  "displayText": "Pat Pereyra"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", entre ellas su producción «Mestura»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "De «Contraluz» a «Todo un Universo por Vivir»",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2018 publicó «Contraluz», un EP de cinco canciones de su autoría producido por José Luis Freitas. En mayo de 2021 presentó su primer álbum de larga duración, «Todo un Universo por Vivir», realizado con Freitas para la «Fundación Revolución Sonora». Participaron "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+                  "occurrenceId": "bbed92e5-a22c-4b83-9d9c-1fef72936452",
+                  "displayText": "Pat Pereyra"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "04357246-5115-4b47-b73b-e72786e9ec22",
+                  "occurrenceId": "f24c0a14-3729-47c1-a39b-19a401a85007",
+                  "displayText": "Sabrina Estepan"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+                  "occurrenceId": "622ba8f7-7653-419e-adce-e9a90571d2bd",
+                  "displayText": "Janio Lora"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y Addy Núñez. Entre las canciones del proyecto figuran «A Contraluz», junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "04357246-5115-4b47-b73b-e72786e9ec22",
+                  "occurrenceId": "2f1bca3e-8154-4a64-81bd-1bd12986f44b",
+                  "displayText": "Sabrina Estepan"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", «Ruinas», con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+                  "occurrenceId": "a1f0295d-ed7b-439c-ab61-21e4633150da",
+                  "displayText": "Pat Pereyra"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", «Mala suerte» y «La piel que nos creamos»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Canciones y trabajo audiovisual",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En una entrevista de 2022 con LAUD explicó que la realización del álbum estuvo ligada a un proceso de confianza en su voz y sus composiciones. Su trabajo visual acompaña esa búsqueda: ha asumido tareas de dirección, guion y edición en sus propios videos, como «Nuestro amor», rodado en Bogotá. En 2024 publicó «Deseándonos ir» junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "54f14366-01f7-4ba5-9520-37e5788ab115",
+                  "occurrenceId": "de91a788-3453-4fc7-8268-6f11e72c5462",
+                  "displayText": "Rose Mateo"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", una balada sobre una pareja que decide separarse."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Una nueva etapa",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2025 lanzó «Caso perdido» y «Qué bonito lo bonito» como anticipos de un nuevo proyecto discográfico. Su propia biografía los presenta como canciones de su autoría y autoproducidas. Su repertorio mantiene la atención en la intimidad de las relaciones, con arreglos que transitan entre la balada y el pop rock."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trayectoria enlaza la escena musical de Santiago con la producción independiente y el trabajo visual. Sus colaboraciones y grabaciones muestran una práctica en la que la escritura de canciones, la interpretación y la creación de imágenes forman parte de un mismo proyecto artístico."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Brettón, the professional name of Emmanuel Bretón, is a Dominican singer, songwriter and producer born on June 25, 1981, and originally from Santiago de los Caballeros. His music brings pop, rock and romantic ballads into a songwriting practice concerned with relationships and personal change. He also works in graphic design, photography and audiovisual production."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Music in Santiago",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Raised in a family of musicians and educators, he began exploring music in childhood. His early work included Santiago projects such as «Plasma» and «Punto G». In 2018 Centro León documented his performance in its Patio Caribeño, where he sang original pieces including «Momentos compartidos», «Transparente» and «Tu nombre» with other local musicians. He also contributed to recordings by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+                  "occurrenceId": "af4a4097-1645-4ec0-9a44-d6949cd79751",
+                  "displayText": "Pat Pereyra"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", including her production «Mestura»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From «Contraluz» to a full-length album",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His 2018 EP «Contraluz» contained five self-written songs produced by José Luis Freitas. In May 2021 he introduced his first full-length album, «Todo un Universo por Vivir», developed with Freitas for «Fundación Revolución Sonora». Its collaborators included "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+                  "occurrenceId": "6b11cb0d-09b0-432c-84a5-13fcebe6a791",
+                  "displayText": "Pat Pereyra"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "04357246-5115-4b47-b73b-e72786e9ec22",
+                  "occurrenceId": "cdfd7cc1-3712-4d74-9d92-17e18ce9595c",
+                  "displayText": "Sabrina Estepan"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+                  "occurrenceId": "bebfbae0-b3bf-4e56-8050-ccbe17e58ab8",
+                  "displayText": "Janio Lora"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and Addy Núñez. The project includes «A Contraluz» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "04357246-5115-4b47-b73b-e72786e9ec22",
+                  "occurrenceId": "91f7f42d-dbe9-4423-b07a-843992f6ed83",
+                  "displayText": "Sabrina Estepan"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", «Ruinas» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+                  "occurrenceId": "d06af219-f543-44d5-99ec-0e4196000a46",
+                  "displayText": "Pat Pereyra"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", «Mala suerte» and «La piel que nos creamos»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Songs and their images",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Speaking to LAUD in 2022, he described making the album as a process of learning to trust his singing and compositions. His visual work forms another part of that practice: he has directed, written and edited his own videos, including «Nuestro amor», filmed in Bogotá. In 2024 he joined "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "54f14366-01f7-4ba5-9520-37e5788ab115",
+                  "occurrenceId": "819506d0-37c4-4bde-8f56-dc5e66c61165",
+                  "displayText": "Rose Mateo"
+                }
+              },
+              {
+                "type": "text",
+                "text": " on «Deseándonos ir», a ballad about a couple choosing to separate."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A further recording project",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2025 he released «Caso perdido» and «Qué bonito lo bonito» as previews of a new recording project. His own biography identifies both as self-written and self-produced. These songs continue his interest in intimate relationships, using arrangements that move between ballad and pop rock."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His career connects Santiago's local music scene with independent recording and visual production. His collaborations and releases bring songwriting, performance and image-making together within a single artistic practice."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "04357246-5115-4b47-b73b-e72786e9ec22",
+      "name": "Sabrina Estepan",
+      "slug": "sabrina-estepan",
+      "status": "published"
+    },
+    {
+      "id": "54f14366-01f7-4ba5-9520-37e5788ab115",
+      "name": "Rose Mateo",
+      "slug": "rose-mateo",
+      "status": "published"
+    },
+    {
+      "id": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+      "name": "Pat Pereyra",
+      "slug": "pat-pereyra",
+      "status": "published"
+    },
+    {
+      "id": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+      "name": "Janio Lora",
+      "slug": "janio-lora",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "bretton-research-2026-10-24.md",
+  "unresolved": [
+    "Exact birthplace unverified; Santiago is documented origin, not proven birth city.",
+    "No portrait attached. Middle and second surname unknown. Apple artist image mismatch not resolved."
+  ],
+  "birthEvidence": "Two own Facebook birthdays on June 25: age 40 in 2021 and 41 in 2022. Derived birth year 1981; own September 2026 age 45 corroborates."
+}

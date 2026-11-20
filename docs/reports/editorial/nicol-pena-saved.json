@@ -1,0 +1,256 @@
+[
+  {
+    "artist": {
+      "id": "cf9516d9-51c7-4791-bb4e-4feab7b76863",
+      "mbid": null,
+      "name": "Nicol Peña",
+      "slug": "nicol-pena",
+      "type": "solo_artist",
+      "ended": false,
+      "views": 0,
+      "bio_en": null,
+      "bio_es": null,
+      "gender": "male",
+      "genres": [
+        "merengue-perico-ripiao"
+      ],
+      "status": "draft",
+      "aliases": [
+        "La Mega Estrella"
+      ],
+      "spotify": "1asNDNHXJA66EfYKgoY3wT",
+      "website": null,
+      "youtube": null,
+      "facebook": "nicol.pena.9674",
+      "province": "Puerto Plata",
+      "birth_day": 6,
+      "has_image": false,
+      "instagram": "nicolpena__oficial",
+      "last_name": null,
+      "sort_name": "Peña, Nicol",
+      "birth_year": 1974,
+      "created_at": "2026-10-16T23:46:42.233517+00:00",
+      "death_year": null,
+      "first_name": null,
+      "stage_name": "Nicol Peña",
+      "updated_at": "2026-10-16T23:46:42.233517+00:00",
+      "artist_tags": [
+        "secular"
+      ],
+      "birth_month": 8,
+      "birth_place": "Guananico, Puerto Plata, República Dominicana",
+      "instruments": [
+        "accordion",
+        "voice"
+      ],
+      "mb_metadata": {},
+      "middle_name": null,
+      "occupations": [
+        "accordionist",
+        "singer",
+        "songwriter",
+        "bandleader"
+      ],
+      "wikidata_id": null,
+      "primary_role": "musician",
+      "date_of_birth": "1974-08-06",
+      "date_of_death": null,
+      "primary_genre": "merengue-perico-ripiao",
+      "disambiguation": null,
+      "formation_year": null,
+      "dissolution_year": null,
+      "image_updated_at": null,
+      "second_last_name": null
+    },
+    "documents": [
+      {
+        "id": "2fe6f02b-1751-4520-a051-45261f2d7083",
+        "locale": "en",
+        "status": "draft",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Nicol Peña (born August 6, 1974, in Guananico, Puerto Plata) is a Dominican merengue típico accordionist, singer and songwriter known as La Mega Estrella. He has led ensembles and pursued a performing career in the Dominican Republic and the United States.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Early musical experience",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A local biography published in 2010 places his first artistic experiences in Guananico’s folk ballet at age eleven, followed by work in his brother’s group. He gained experience in merengue ensembles before establishing projects of his own.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El Mambo Millonario",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A December 2006 newspaper report marked the first anniversary of «Nicol Peña y Su Mambo Millonario», following his work with «La Selección Típica». Coverage in 2014 documented his activity in the United States. His Spotify repertoire includes «La Cartera», «Quererte Fue Un Error» and «Ay Amor», while his official Instagram also promotes «La Fiera 2.0».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Peña’s career illustrates the continuing place of the accordion in merengue típico and the movement of this repertoire between the Cibao and Dominican communities in the United States.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "revision": 1,
+        "created_at": "2026-10-16T23:46:58.83731+00:00",
+        "updated_at": "2026-10-16T23:46:58.83731+00:00",
+        "document_type": "artist_biography",
+        "schema_version": 1,
+        "owner_artist_id": "cf9516d9-51c7-4791-bb4e-4feab7b76863"
+      },
+      {
+        "id": "e0050585-f8f8-4de4-a576-a84a080ab97f",
+        "locale": "es",
+        "status": "draft",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Nicol Peña (Guananico, Puerto Plata, 6 de agosto de 1974) es un acordeonista, cantante y autor dominicano de merengue típico, conocido como La Mega Estrella. Su trayectoria comprende la dirección de agrupaciones y una actividad musical desarrollada entre la República Dominicana y Estados Unidos.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Formación y trayectoria",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Una biografía local de 2010 sitúa sus primeras experiencias artísticas en el ballet folclórico de Guananico, a los once años, y posteriormente en la agrupación de su hermano. Su formación incluyó trabajo con conjuntos de merengue antes de emprender proyectos propios.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El Mambo Millonario",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En diciembre de 2006, la prensa documentó el primer aniversario de «Nicol Peña y Su Mambo Millonario», tras su paso por «La Selección Típica». En 2014 se reseñó su actividad en Estados Unidos. Su repertorio disponible en Spotify incluye «La Cartera», «Quererte Fue Un Error» y «Ay Amor»; su cuenta oficial también presenta «La Fiera 2.0».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su carrera documenta la continuidad del acordeón dentro del merengue típico y la circulación de este repertorio entre el Cibao y las comunidades dominicanas en Estados Unidos.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "revision": 1,
+        "created_at": "2026-10-16T23:47:10.165095+00:00",
+        "updated_at": "2026-10-16T23:47:10.165095+00:00",
+        "document_type": "artist_biography",
+        "schema_version": 1,
+        "owner_artist_id": "cf9516d9-51c7-4791-bb4e-4feab7b76863"
+      }
+    ]
+  }
+]

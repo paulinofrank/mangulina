@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-17",
+  "artist": "Wishow",
+  "before": null,
+  "after": {
+    "name": "Wishow",
+    "sort_name": "Wishow",
+    "slug": "wishow",
+    "stage_name": "Wishow",
+    "first_name": "Willmen",
+    "last_name": "Hernández",
+    "type": "solo_artist",
+    "status": "draft",
+    "gender": "male",
+    "primary_role": "singer",
+    "primary_genre": "merengue",
+    "genres": [
+      "merengue"
+    ],
+    "occupations": [
+      "songwriter",
+      "producer"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "birth_place": "Santo Domingo, República Dominicana",
+    "province": "Distrito Nacional",
+    "facebook": "wishowmusic",
+    "instagram": "wishowofficial",
+    "youtube": "@wishowoficial",
+    "spotify": "7MR8JA7NxfWF28rlmd9IEy",
+    "date_of_birth": null,
+    "birth_year": null
+  },
+  "biographies": {
+    "es": [
+      [
+        "",
+        "Wishow es el nombre artístico de Willmen Hernández, cantante, autor y productor dominicano nacido en Santo Domingo. Su propuesta se centra en el merengue y se presenta con la expresión «Otra Cosa». Radicado en Orlando, Florida, desarrolla su actividad entre referencias musicales dominicanas y su experiencia en Estados Unidos."
+      ],
+      [
+        "Trayectoria y repertorio",
+        "Su perfil biográfico describe una familia vinculada a la música y una formación entre la República Dominicana y Estados Unidos. En julio de 2024 presentó «Como tú no hay», dentro de un repertorio que también comprende «Perdóname», «Pal Bembè» y «Poco a Poco»."
+      ],
+      [
+        "Presencia musical",
+        "Su canal oficial de YouTube reúne videoclips, interpretaciones en vivo y versiones de canciones. En sus plataformas figuran «Pal que quiera», «La melodia» y «Si Te Vas»; esta última se presenta como lanzamiento de septiembre de 2026."
+      ],
+      [
+        "Legado",
+        "Su trabajo forma parte de la producción contemporánea de merengue de artistas dominicanos establecidos en Estados Unidos, con una difusión apoyada en sencillos y material audiovisual."
+      ]
+    ],
+    "en": [
+      [
+        "",
+        "Wishow is the stage name of Willmen Hernández, a Dominican singer, songwriter and producer born in Santo Domingo. Based in Orlando, Florida, he focuses on merengue and presents his music under the phrase «Otra Cosa». His artistic background spans the Dominican Republic and the United States."
+      ],
+      [
+        "Background and repertoire",
+        "His artist biography describes a musical family and an upbringing in both countries. In July 2024 he presented «Como tú no hay». His repertoire also includes «Perdóname», «Pal Bembè» and «Poco a Poco»."
+      ],
+      [
+        "Recorded and audiovisual work",
+        "His official YouTube channel features music videos, live performances and covers. His platforms also carry «Pal que quiera», «La melodia» and «Si Te Vas», the latter presented as a September 2026 release."
+      ],
+      [
+        "Legacy",
+        "Wishow’s work belongs to the contemporary merengue output of Dominican artists based in the United States, reaching listeners through singles and audiovisual releases."
+      ]
+    ]
+  },
+  "biography_status": "published",
+  "sources": {
+    "identity_roles": "https://slaps.com/user/Wishow",
+    "name_merengue_repertoire": "https://ciudadaniard.com/wishow-lanza-como-tu-no-hay-la-evolucion-del-merengue/",
+    "origin": "https://music.apple.com/us/artist/wishow/1523254517",
+    "facebook": "https://www.facebook.com/wishowmusic/about",
+    "instagram": "https://www.instagram.com/wishowofficial/",
+    "spotify": "https://open.spotify.com/artist/7MR8JA7NxfWF28rlmd9IEy",
+    "youtube": "https://www.youtube.com/@wishowoficial"
+  },
+  "limitations": [
+    "Birth date/year not verified after targeted searches and public profiles review.",
+    "Facebook is an artist Page: Information tabs offer Details, Category and Contact, no Personal details tab; second Details showed Orlando address.",
+    "No specific instrumental practice confirmed besides singing.",
+    "No image uploaded; no discography imported.",
+    "Antonio appears in ONAPI search lead but not needed for sourced professional name; not added without inspecting underlying publication.",
+    "Website not established; promotional links are not assumed to be standalone official website."
+  ],
+  "checks": {
+    "duplicate_queries": "No Wishow/Willmen name, alias, slug or supplied Spotify ID match."
+  }
+}

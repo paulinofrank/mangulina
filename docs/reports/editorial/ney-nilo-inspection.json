@@ -1,0 +1,138 @@
+{
+  "duplicates": [
+    {
+      "id": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+      "name": "Fefita la Grande",
+      "slug": "fefita-la-grande",
+      "status": "published"
+    },
+    {
+      "id": "001831dd-3baa-4512-88f5-f420ec7c2619",
+      "name": "Pochy y su Cocoband",
+      "slug": "pochy-y-su-cocoband",
+      "status": "published"
+    },
+    {
+      "id": "743c18ed-8dde-4c20-9ae1-4f5a70185b18",
+      "name": "Manuel Simó",
+      "slug": "manuel-simo",
+      "status": "published"
+    },
+    {
+      "id": "2a4a5c5c-ba20-44c4-b5d2-78e38fdc3546",
+      "name": "Manerra",
+      "slug": "manerra",
+      "status": "published"
+    },
+    {
+      "id": "f78661d2-7e96-48b7-baf3-fd99a94d10e6",
+      "name": "Víctor Cabrera",
+      "slug": "tunes",
+      "status": "published"
+    },
+    {
+      "id": "c1ff2e1b-be42-4140-b4ac-166a686b8e49",
+      "name": "Manny Peña-(ADPI)",
+      "slug": "manny-pena-adpi",
+      "status": "published"
+    },
+    {
+      "id": "031dddae-2d27-4c98-9b44-a8210e39aafd",
+      "name": "Elvis Cabrera",
+      "slug": "elvis-cabrera",
+      "status": "published"
+    },
+    {
+      "id": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+      "name": "Manuel Troncoso",
+      "slug": "manuel-troncoso",
+      "status": "published"
+    },
+    {
+      "id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+      "name": "Manuel Sánchez Acosta",
+      "slug": "manuel-sanchez-acosta",
+      "status": "published"
+    },
+    {
+      "id": "df2e419a-0a3a-4f06-8bde-4c4afa4fb27a",
+      "name": "Manuel Jiménez",
+      "slug": "manuel-jimenez",
+      "status": "published"
+    },
+    {
+      "id": "59fef8ec-60a2-40da-be4a-a1076376afa7",
+      "name": "Yoyito Cabrera",
+      "slug": "yoyito-cabrera",
+      "status": "published"
+    },
+    {
+      "id": "919b182d-973f-4f11-96a4-cb3a9763afd4",
+      "name": "Manuel Miller",
+      "slug": "manuel-miller",
+      "status": "published"
+    },
+    {
+      "id": "21a768a6-c0fd-4abf-88cf-b09cbc155c18",
+      "name": "Manolín González",
+      "slug": "manolin-gonzalez",
+      "status": "published"
+    },
+    {
+      "id": "baace2f8-c3e6-4e30-a241-2efde9fdbecf",
+      "name": "Junior Cabrera",
+      "slug": "junior-cabrera",
+      "status": "published"
+    },
+    {
+      "id": "c07f3ddc-91c1-46c6-8803-43014bcd670f",
+      "name": "Rubinsky RBK",
+      "slug": "rubinsky-rbk",
+      "status": "published"
+    },
+    {
+      "id": "ced86e3a-4e99-4cee-ab0a-ad6ede956ea0",
+      "name": "José El Calvo",
+      "slug": "jose-el-calvo",
+      "status": "published"
+    },
+    {
+      "id": "ec8ba439-3772-49ff-a218-05f5dc615763",
+      "name": "Vakeró",
+      "slug": "vakero",
+      "status": "published"
+    },
+    {
+      "id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+      "name": "Manuel Tejada",
+      "slug": "manuel-tejada",
+      "status": "published"
+    },
+    {
+      "id": "14a4dba6-84d2-4e50-bfb7-d40e3009b42a",
+      "name": "Alexandra",
+      "slug": "alexandra-queen",
+      "status": "published"
+    },
+    {
+      "id": "abbde0ea-e6c3-423e-9782-9b3364846898",
+      "name": "JC",
+      "slug": "jc",
+      "status": "published"
+    }
+  ],
+  "targets": [
+    {
+      "id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "name": "Antony Santos",
+      "slug": "antony-santos",
+      "status": "published"
+    },
+    {
+      "id": "3422883e-7048-48af-bb03-c68c8c557ee4",
+      "name": "Los Hermanos Rosario",
+      "slug": "los-hermanos-rosario",
+      "status": "published"
+    }
+  ]
+}

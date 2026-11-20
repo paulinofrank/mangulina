@@ -119,3 +119,11 @@ For Phase 1.5 or Phase 2:
 - `tsconfig.json` - Updated to include root-level files
 
 All functionality is in place and ready for either the workaround or for a more permanent fix in a follow-up phase.
+
+## Production usage and release authorization
+
+Follow [AI_PRODUCTION_USAGE_POLICY.md](AI_PRODUCTION_USAGE_POLICY.md). Routine development and verification stay local. Inspect commands for remote calls before running them. The release checklist below applies only after the user explicitly authorizes a production release; it does not authorize deployment, promotion, a preview deployment, or broad production checks by itself. Preserve the required SEO checks during an authorized release.
+
+## Public catalog indexing release check
+
+For public catalog rendering, pagination, metadata, or navigation changes, run `npm run check:seo -- --deployment https://STAGED-DEPLOYMENT.vercel.app` before promotion, then `npm run check:seo` on production. A failure blocks promotion. See [SEO_RELEASE_CHECKS.md](SEO_RELEASE_CHECKS.md). Keep unrelated work outside the release snapshot. This is a CLI release check, not an enforced hosting CI gate.

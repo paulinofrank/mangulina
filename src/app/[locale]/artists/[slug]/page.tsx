@@ -1,6 +1,7 @@
 // src/app/artists/[slug]/page.tsx
 
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
+import { getPathname } from "@/i18n/navigation";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -21,6 +22,7 @@ import {
   getArtistMedia,
 } from "@/lib/artistApi";
 import { getArtistRelationships } from "@/lib/artistRelationships";
+import { artistProfileTimeout } from "@/lib/artistProfileTimeout";
 import { getArtistFamilyRelationships } from "@/lib/artistFamilyRelationships";
 import { getPublishedEditorialDocument } from "@/lib/editorial/publicData";
 import {
@@ -128,6 +130,12 @@ export default async function ArtistProfile({ params }: PageProps) {
   const artist = await getArtistProfile(slug);
 
   if (!artist) return notFound();
+  if (artist.slug !== slug) {
+    permanentRedirect(getPathname({
+      locale: routeLocale,
+      href: `/artists/${artist.slug}`,
+    }));
+  }
 
   const locale = routeLocale;
   const t = await getTranslations("artist");
@@ -135,10 +143,11 @@ export default async function ArtistProfile({ params }: PageProps) {
   const imageUrl = getArtistImageUrlIfAvailable(artist);
   const editorialLocale = locale === "es" ? "es" : "en";
   const localizedBio = getLegacyArtistBiography(editorialLocale, artist.bio_en, artist.bio_es);
+  const signal = artistProfileTimeout();
   const [discography, interviews, relationships, familyRelationships, structuredBiography, englishStructuredBiography] = await Promise.all([
     getArtistDiscographySummaries(artist.id),
-    getArtistMedia(artist.id),
-    getArtistRelationships(artist.id),
+    getArtistMedia(artist.id, signal),
+    getArtistRelationships(artist.id, signal),
     getArtistFamilyRelationships(artist.id),
     getPublishedEditorialDocument({
       documentType: "artist_biography",
@@ -271,7 +280,14 @@ export default async function ArtistProfile({ params }: PageProps) {
                     />
                   }
                 >
-                  <ArtistWorksPortfolio artistId={artist.id} artistName={artist.name} />
+                  <ArtistWorksPortfolio
+                    artistId={artist.id}
+                    artistName={artist.name}
+                    coverTitles={Object.fromEntries(discography.map((release) => [
+                      release.release_id,
+                      release.release_title,
+                    ]))}
+                  />
                 </Suspense>
               </div>
             </div>

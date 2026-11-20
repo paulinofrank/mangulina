@@ -1,0 +1,244 @@
+[
+  {
+    "locale": "es",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Orquesta Jicarada es una agrupación dominicana de merengue cuya producción discográfica documentada incluye «Realizando un Sueño», editado en CD por «Brasanel Records S.A.» en 1995, con el número de catálogo JIC326CD."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Realizando un Sueño",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "El disco reúne canciones de temática romántica como «Cariño del Alma», «Hipócrita», «Luna de Miel» y «Perdóname». Abre con «Homenaje Bomba», presentado en la contraportada como un homenaje a "
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "occurrenceId": "b6db4282-e652-46d4-8817-cb21a5cc387d",
+                "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+                "displayText": "Los Hermanos Rosario"
+              }
+            },
+            {
+              "type": "text",
+              "text": " por sus quince años de trayectoria."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Créditos del disco",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "La contraportada atribuye a Israel Casado la adaptación de «Homenaje Bomba» y los arreglos de otras siete piezas. Fortunato Rojas aparece como arreglista de «Me Gusta» y «Perdóname». El nombre Ronny Moramis figura entre paréntesis en «Hipócrita», «Me Gusta» y «Perdóname»; otras seis canciones llevan la indicación «D.R.», sin autor identificado en esa fuente."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Trayectoria en Nueva York",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "En agosto de 2005, notas de la prensa dominicana sobre la carrera de Ronny Moreno incluyeron a Jicarada entre las agrupaciones con las que había trabajado en Estados Unidos. El periódico Hoy situó esa etapa de Jicarada en Nueva York. Estas referencias documentan su presencia en el circuito musical de la diáspora, aunque no detallan la formación que grabó el álbum de 1995."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Legado",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "«Realizando un Sueño» conserva un testimonio del repertorio de Jicarada y de las contribuciones de sus arreglistas. La edición permite documentar los títulos y los créditos impresos sin atribuir nombres a las cuatro personas retratadas en la contraportada, que no están identificadas allí."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "locale": "en",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Orquesta Jicarada is a Dominican merengue ensemble whose documented discography includes «Realizando un Sueño», issued on CD by «Brasanel Records S.A.» in 1995 under catalogue number JIC326CD."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Realizando un Sueño",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "The album features romantic songs including «Cariño del Alma», «Hipócrita», «Luna de Miel» and «Perdóname». It opens with «Homenaje Bomba», described on the rear artwork as a tribute marking the fifteenth anniversary of "
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "occurrenceId": "cefdb761-b03c-4239-aa85-38f4e281adf2",
+                "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+                "displayText": "Los Hermanos Rosario"
+              }
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Album credits",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "The rear artwork credits Israel Casado with the adaptation of «Homenaje Bomba» and the arrangements of seven other tracks. Fortunato Rojas is credited as arranger of «Me Gusta» and «Perdóname». The name Ronny Moramis appears in parentheses for «Hipócrita», «Me Gusta» and «Perdóname»; six other songs bear the notation «D.R.», without an author identified in that source."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "New York career",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "In August 2005, Dominican newspaper reports on Ronny Moreno’s career listed Jicarada among the ensembles with which he had worked in the United States. Hoy placed his time with Jicarada in New York. These accounts document the band’s presence in the diaspora’s music circuit, without identifying the lineup that recorded the 1995 album."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Legacy",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "«Realizando un Sueño» preserves a record of Jicarada’s repertoire and its arrangers’ contributions. The edition documents the printed titles and credits without assigning names to the four people pictured on the rear artwork, who are not identified there."
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

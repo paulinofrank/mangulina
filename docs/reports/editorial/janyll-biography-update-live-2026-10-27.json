@@ -1,0 +1,34 @@
+{
+  "refresh": {
+    "status": 200,
+    "body": {
+      "ok": true,
+      "revalidated": {
+        "artists": 1,
+        "songs": 0,
+        "releases": 0,
+        "allArtists": false
+      }
+    }
+  },
+  "pages": [
+    {
+      "path": "/es/artists/janyll-la-interprete",
+      "status": 200,
+      "stage_name": true,
+      "merengue_album": true,
+      "prior_album": true,
+      "linked_arranger": true,
+      "cache": "REVALIDATED"
+    },
+    {
+      "path": "/en/artists/janyll-la-interprete",
+      "status": 200,
+      "stage_name": true,
+      "merengue_album": true,
+      "prior_album": true,
+      "linked_arranger": true,
+      "cache": "REVALIDATED"
+    }
+  ]
+}

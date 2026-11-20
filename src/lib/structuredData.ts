@@ -53,7 +53,7 @@ export function collectionPageSchema({
 
 export function isoDuration(milliseconds: number | null | undefined) {
   if (!milliseconds || milliseconds <= 0) return undefined;
-  const totalSeconds = Math.round(milliseconds / 1000);
+  const totalSeconds = milliseconds < 1000 ? Math.round(milliseconds) : Math.round(milliseconds / 1000);
   const minutes = Math.floor(totalSeconds / 60);
   const seconds = totalSeconds % 60;
   return `PT${minutes ? `${minutes}M` : ""}${seconds}S`;

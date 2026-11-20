@@ -1,0 +1,409 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "1e35a517-6417-4502-81b1-516e1cf9ebfa",
+        "name": "Lomiiel",
+        "sort_name": "Lomiiel",
+        "type": "solo_artist",
+        "birth_year": null,
+        "death_year": null,
+        "created_at": "2026-10-22T15:55:13.339687+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Marcos",
+        "middle_name": "Antonio",
+        "last_name": "Santana",
+        "second_last_name": null,
+        "stage_name": "Lomiiel",
+        "date_of_birth": null,
+        "birth_place": "La Romana",
+        "website": null,
+        "youtube": "@Lomiiel",
+        "facebook": null,
+        "instagram": "lomiiel",
+        "aliases": [],
+        "mbid": null,
+        "occupations": [
+          "songwriter",
+          "producer",
+          "rapper"
+        ],
+        "instruments": [
+          "voice"
+        ],
+        "genres": [
+          "urban-reggaeton",
+          "urban-trap",
+          "urban-drill"
+        ],
+        "disambiguation": "Dominican dembow singer, songwriter and producer",
+        "gender": "male",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-22T15:55:13.339687+00:00",
+        "province": "La Romana",
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "lomiiel",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "urban-dembow",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "2rMFPjySMqkgBajkLKL6zo"
+      },
+      {
+        "id": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+        "name": "El Alfa",
+        "slug": "el-alfa",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "27d18c25-4862-4039-9965-4ee2894776e2",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Lomiiel is a Dominican dembow singer, songwriter and producer born in La Romana. He reached an international audience with «Hay Lupita» in 2024 and released his first album, «Blesss The Album», in 2025. Alongside performing, he writes and produces his own music.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "From the shop to the studio",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Before pursuing his recording career, he worked at Cuero Macho Boutique, a sneaker shop in Santo Domingo. His freestyle performances attracted the attention of Eddy Alexander Florian Rodríguez, who became his manager and business partner. He released «Que Chevere» in 2023; other early songs include «No Son Malo Na» and «Tatara».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The reach of «Hay Lupita»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Released in 2024, «Hay Lupita» spread through dance videos on TikTok and Instagram. It entered Hot Latin Songs, Latin Rhythm Airplay, the Billboard Global 200 and Global Excl. U.S. Billboard featured him in its Latin Artist on the Rise series that July. A «Spain Remix» brought together Lomiiel, Omar Montes and Rvfv. He also opened for Travis Scott during the Latin American leg of his 2024 tour.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Awards and a debut album",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In February 2025, «Hay Lupita» won Best Dembow Song at Premio Lo Nuestro, making Lomiiel the inaugural winner of the category. He also received the New Artist award at the 2025 Premios Soberano. His debut full-length project, «Blesss The Album», contained eighteen songs, including a collaboration with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+                    "displayText": "El Alfa",
+                    "occurrenceId": "ee72faea-814a-4673-8f8f-7bb4ed7ab1fe"
+                  }
+                },
+                {
+                  "text": ", and was distributed through Open Shift and Cuero Macho Records. Songs from this period include «Me Gusta», with Jey One and OG DETRUYELO, and «Pa Que Lo Bailes (Báilalo Rocky)».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Style and live performances",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Dembow is central to his work, alongside explorations of trap, drill and reggaeton. He identifies himself as a songwriter and producer, roles also documented in his official video credits. In 2026 he took his music to cities across the United States on the «Abejita Tour».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His early career traces a progression from freestyle performances and singles shared online to international charts, awards and a full-length album. The popularity of «Hay Lupita» among Spanish footballers and their fans widened the audience for his contribution to Dominican dembow.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "1e35a517-6417-4502-81b1-516e1cf9ebfa",
+        "created_at": "2026-10-22T15:55:13.60238+00:00",
+        "updated_at": "2026-10-22T15:55:13.60238+00:00",
+        "revision": 1
+      },
+      {
+        "id": "cd9c1525-76a6-4d60-8aa5-cb661b76571e",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Lomiiel es un cantante, compositor y productor dominicano de dembow nacido en La Romana. Alcanzó proyección internacional con «Hay Lupita» en 2024 y publicó su primer álbum, «Blesss The Album», en 2025. Su actividad combina la interpretación con la composición y la producción de su propio repertorio.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "De la tienda al estudio",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Antes de desarrollar su carrera musical trabajaba en Cuero Macho Boutique, una tienda de zapatillas en Santo Domingo. Allí sus improvisaciones llamaron la atención de Eddy Alexander Florian Rodríguez, quien pasó a ser su representante y socio. En 2023 publicó «Que Chevere»; entre sus primeras canciones también figuran «No Son Malo Na» y «Tatara».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La expansión de «Hay Lupita»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Lanzada en 2024, «Hay Lupita» se difundió mediante videos y bailes en TikTok e Instagram. Entró en las listas Hot Latin Songs, Latin Rhythm Airplay, Billboard Global 200 y Global Excl. U.S. En julio de ese año, Billboard lo presentó en su serie Latin Artist on the Rise. La canción tuvo una versión «Spain Remix» junto a Omar Montes y Rvfv. Durante 2024 también participó como telonero de Travis Scott en su gira latinoamericana.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Premios y primer álbum",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En febrero de 2025, «Hay Lupita» le dio el premio a Mejor Canción Dembow en Premio Lo Nuestro, en la primera edición de esa categoría. Ese año recibió además el Soberano a Revelación del Año. Su debut de larga duración, «Blesss The Album», reunió dieciocho canciones y colaboraciones, entre ellas una con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+                    "displayText": "El Alfa",
+                    "occurrenceId": "a08b938b-24c2-40c5-8af6-74b560aadfc1"
+                  }
+                },
+                {
+                  "text": ". La producción se distribuyó a través de Open Shift y Cuero Macho Records. Su repertorio de ese período incluye «Me Gusta», con Jey One y OG DETRUYELO, y «Pa Que Lo Bailes (Báilalo Rocky)».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Estilo y escenario",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Aunque el dembow ocupa el centro de su propuesta, también ha explorado trap, drill y reguetón. Se presenta como compositor y productor, funciones que aparecen igualmente en créditos de sus videos oficiales. En 2026 llevó su proyecto a distintas ciudades de Estados Unidos con el «Abejita Tour».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su trayectoria inicial documenta el paso de las improvisaciones y los sencillos difundidos en redes a las listas internacionales, los premios y un álbum de larga duración. La circulación de «Hay Lupita» entre aficionados y futbolistas españoles amplió el alcance de su propuesta dentro del dembow dominicano.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "1e35a517-6417-4502-81b1-516e1cf9ebfa",
+        "created_at": "2026-10-22T15:55:13.450695+00:00",
+        "updated_at": "2026-10-22T15:55:13.450695+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "0fc477d9-0c30-4b54-852f-e904904c9c28",
+        "editorial_document_id": "cd9c1525-76a6-4d60-8aa5-cb661b76571e",
+        "occurrence_id": "a08b938b-24c2-40c5-8af6-74b560aadfc1",
+        "entity_type": "artist",
+        "target_artist_id": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+        "created_at": "2026-10-22T15:55:13.450695+00:00",
+        "updated_at": "2026-10-22T15:55:13.450695+00:00"
+      },
+      {
+        "id": "26b6b4be-fa0f-43ca-b316-59b217771ed8",
+        "editorial_document_id": "27d18c25-4862-4039-9965-4ee2894776e2",
+        "occurrence_id": "ee72faea-814a-4673-8f8f-7bb4ed7ab1fe",
+        "entity_type": "artist",
+        "target_artist_id": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+        "created_at": "2026-10-22T15:55:13.60238+00:00",
+        "updated_at": "2026-10-22T15:55:13.60238+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-22T15:55:24.246Z",
+    "counts": {
+      "documents": 2,
+      "relations": 2,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

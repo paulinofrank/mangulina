@@ -1,20 +1,25 @@
 "use client";
 
 import React from "react";
+import type { RefObject } from "react";
+import useCarouselEnd from "./useCarouselEnd";
 import { useTranslations } from "next-intl";
 
 type CarouselArrowProps = {
+  scrollRef?: RefObject<HTMLDivElement | null>;
   direction: "left" | "right";
   onClick: () => void;
   className?: string;
 };
 
 export default function CarouselArrow({
+  scrollRef,
   direction,
   onClick,
   className = "",
 }: CarouselArrowProps) {
   const t = useTranslations("a11y");
+  const atEnd = useCarouselEnd(scrollRef);
   const isLeft = direction === "left";
 
   return (
@@ -22,7 +27,7 @@ export default function CarouselArrow({
       onClick={onClick}
       aria-label={isLeft ? t("scrollLeft") : t("scrollRight")}
       className={`
-        hidden md:flex absolute top-1/2 -translate-y-1/2 z-20
+        ${!isLeft && atEnd ? "hidden" : "hidden md:flex"} absolute top-1/2 -translate-y-1/2 z-20
         p-2 rounded-full bg-white shadow-md border border-black/10
         hover:bg-[#002D62] hover:text-white transition
         ${isLeft ? "left-3" : "right-3"}

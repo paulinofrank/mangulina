@@ -26,6 +26,20 @@ export async function fetchTopArtistViews(limit: number = 20) {
   return data || [];
 }
 
+export async function fetchTopLifetimeArtistViews(limit: number = 20) {
+  const { data, error } = await createServiceRoleClient()
+    .from("artists")
+    .select("id,name,slug,views")
+    .eq("status", "published")
+    .gt("views", 0)
+    .order("views", { ascending: false })
+    .order("id")
+    .limit(limit);
+
+  if (error) throw error;
+  return data ?? [];
+}
+
 /**
  * Fetches top recordings with both 7-day and 30-day view metrics
  */

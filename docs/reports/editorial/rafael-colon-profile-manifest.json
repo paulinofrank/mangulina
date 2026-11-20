@@ -1,0 +1,600 @@
+{
+  "date": "2026-10-25",
+  "authorization": "Named new-profile candidate in ongoing authorized artist-profile workflow.",
+  "scope": "Create only Rafael Colón as draft and his completed ES/EN biographies as published. No publication of artist, other owner changes, music imports, media generation, deployment or security changes.",
+  "before": null,
+  "after": {
+    "id": "794fdf95-d22d-4a3c-b338-41e540328abf",
+    "name": "Rafael Colón",
+    "stage_name": "Rafael Colón",
+    "sort_name": "Colón, Rafael",
+    "slug": "rafael-colon",
+    "type": "solo_artist",
+    "status": "draft",
+    "first_name": "Rafael",
+    "middle_name": null,
+    "last_name": "Saint Hilaire",
+    "second_last_name": "Colón",
+    "aliases": [
+      "Rafael Saint Hilaire Colón",
+      "La Espiga de Ébano"
+    ],
+    "birth_place": "Santiago de los Caballeros",
+    "province": "Santiago",
+    "date_of_birth": "1918-05-18",
+    "birth_year": 1918,
+    "date_of_death": "1991-06-07",
+    "death_year": 1991,
+    "gender": "male",
+    "primary_role": "singer",
+    "occupations": [
+      "composer",
+      "musician"
+    ],
+    "instruments": [
+      "voice",
+      "guitar",
+      "drums"
+    ],
+    "primary_genre": "bolero",
+    "genres": [
+      "merengue"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "spotify": "7ywBZwEXnvRYxOwKBpeFPD",
+    "facebook": null,
+    "instagram": null,
+    "youtube": null,
+    "website": null
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Rafael Colón, nombre artístico de Rafael Saint Hilaire Colón, fue un cantante, compositor y guitarrista dominicano conocido como «La Espiga de Ébano». Nació el 18 de mayo de 1918 en Santiago de los Caballeros y falleció el 7 de junio de 1991 en Santo Domingo. Su trayectoria abarcó el bolero, el merengue y la canción de trovador, tanto al frente de grandes orquestas como acompañado por su guitarra."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "De los tríos a las orquestas",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Se inició en la música siendo niño, en el trío «Tapacán», junto a su hermano Federico Colón y Licinio Valerio, con presentaciones en la radio de Santiago. Al mismo tiempo aprendió el oficio de zapatero. También integró el «Trío Santiago» y, a finales de los años treinta, trabajó como baterista y cantante con el cuarteto «Estrellas Cibaeñas» y la «Orquesta Hermanos Vásquez». En 1942 ingresó a la «Orquesta San José»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Durante los años cuarenta se incorporó a la orquesta de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "360bec27-421a-466f-8604-3598aa46a7a4",
+                  "occurrenceId": "bd68e0ec-ed4c-49e4-8ade-76b426f59909",
+                  "displayText": "Luis Alberti"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", con la que realizó su primera grabación, «Ven», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "occurrenceId": "c3f0e458-6c53-4209-b5ea-f243f8b418d5",
+                  "displayText": "Manuel Sánchez Acosta"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Su voz quedó asociada a la agrupación que posteriormente se conoció como «Orquesta Santa Cecilia» y al ambiente musical del Hotel Jaragua. En una entrevista recordó que su segunda grabación con Alberti fue «No me interesa», una composición propia."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "El bolero y su repertorio",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Luna sobre el Jaragua», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "360bec27-421a-466f-8604-3598aa46a7a4",
+                  "occurrenceId": "3c71ab76-9c81-48d2-ae0f-275b73e24988",
+                  "displayText": "Luis Alberti"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", fue una de las canciones más vinculadas a su voz. Al recordar su historia, distinguió las interpretaciones anteriores de Eva Garza y Marcelino Plácido de su propia grabación en la República Dominicana. También señaló «Paraíso soñado», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "occurrenceId": "6ff4672f-c8be-49c3-87b9-67a8583e59e8",
+                  "displayText": "Manuel Sánchez Acosta"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", entre los boleros que más valoraba, y «Dejarte no», de Águeda Blandino, como una petición frecuente de su público."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su catálogo incluye «Soñando contigo», «Apasionado», «Para ti» y «Traicionera». Con la orquesta de Luis Pérez desarrolló una importante etapa discográfica, de la que forma parte «Mi Quisqueya». Grabó además «100 canciones y un millón de recuerdos» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3a69af3c-1b9a-402b-8a3f-66e51dacdffe",
+                  "occurrenceId": "0d1c7379-b384-4140-951e-5fa8c68280e8",
+                  "displayText": "Francis Santana"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", y «Amar es vivir» y «Concierto de amor» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+                  "occurrenceId": "973b037e-d5f7-463d-aa1a-7cc2a8c385a6",
+                  "displayText": "Johnny Ventura"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Su repertorio reunió composiciones dominicanas con boleros de otros países del Caribe, entre ellos «De qué te vale» y «Desvelo de amor», de Rafael Hernández."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Composición y poesía cantada",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su primera composición, «Al pie del bambú», data de 1938. Musicalizó poemas de Héctor Cabral Ortega, con quien comparte la autoría de «Arenas del desierto», una obra que también pasó al repertorio de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "771e3bcf-396a-492a-833f-8afb45964520",
+                  "occurrenceId": "e563fc65-7be2-4af9-bd61-751dd5e5a551",
+                  "displayText": "Lope Balaguer"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Esta faceta de compositor acompañó su actividad como cantante de boleros, merengues, sones, guarachas y otras formas de la música tropical."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Participó como intérprete de «Venus negra», con música de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+                  "occurrenceId": "65a801a6-3bc1-47d0-a4fa-d83b2e6dc2ba",
+                  "displayText": "Julio Alberto Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", en el álbum colectivo «La música de sus versos», dedicado a la poesía de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+                  "occurrenceId": "0fe11364-d827-4745-9d27-da2f8eb76064",
+                  "displayText": "Joaquín Balaguer"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". La contraportada original, conservada por el Archivo General de la Nación, documenta su participación y distingue el crédito musical del texto poético."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En mayo de 2018 el Centro León, en Santiago, conmemoró el centenario de su nacimiento con un conversatorio de José del Castillo y Rafael Almánzar, seguido de una tertulia y presentación musical coordinada con Raíces Radio. Estas actividades recuperaron tanto su trabajo con orquesta como su faceta de trovador. La continuidad de sus grabaciones preserva una voz central de la canción romántica dominicana del siglo veinte."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Rafael Colón, the stage name of Rafael Saint Hilaire Colón, was a Dominican singer, composer, and guitarist known as «La Espiga de Ébano». He was born on May 18, 1918, in Santiago de los Caballeros and died on June 7, 1991, in Santo Domingo. His career encompassed bolero, merengue, and troubadour song, performing both with large orchestras and with his guitar."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From vocal trios to orchestras",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "He began making music as a child in the trio «Tapacán», alongside his brother Federico Colón and Licinio Valerio, appearing on Santiago radio while also learning the shoemaker’s trade. He later joined «Trío Santiago». In the late 1930s he worked as a drummer and singer with «Estrellas Cibaeñas» and «Orquesta Hermanos Vásquez», and in 1942 he joined «Orquesta San José»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "During the 1940s he entered the orchestra led by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "360bec27-421a-466f-8604-3598aa46a7a4",
+                  "occurrenceId": "65ed223b-13ad-41d5-9b12-f233ffa6865d",
+                  "displayText": "Luis Alberti"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", making his first recording with «Ven», a bolero by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "occurrenceId": "406a6291-b2df-40b3-b77b-0483319af0f0",
+                  "displayText": "Manuel Sánchez Acosta"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". His voice became closely associated with the ensemble subsequently known as «Orquesta Santa Cecilia» and with the musical life of the Hotel Jaragua. In an interview he recalled that his second recording with Alberti was his own composition «No me interesa»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A bolero repertoire",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Luna sobre el Jaragua», written by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "360bec27-421a-466f-8604-3598aa46a7a4",
+                  "occurrenceId": "fabf3336-efda-47ee-9688-8a11315af1ff",
+                  "displayText": "Luis Alberti"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", became one of his signature performances. Recalling its history, he distinguished earlier performances by Eva Garza and Marcelino Plácido from his own recording in the Dominican Republic. He singled out «Paraíso soñado», by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "occurrenceId": "34d4444a-a339-4f39-a5ec-d1e5793326e1",
+                  "displayText": "Manuel Sánchez Acosta"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", as a particularly valued bolero, and remembered audiences frequently requesting «Dejarte no», by Águeda Blandino."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His recording catalog includes «Soñando contigo», «Apasionado», «Para ti», and «Traicionera». An important period of recording with Luis Pérez’s orchestra included «Mi Quisqueya». He also recorded «100 canciones y un millón de recuerdos» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3a69af3c-1b9a-402b-8a3f-66e51dacdffe",
+                  "occurrenceId": "31005ee8-8910-4660-ab3f-f270695edb31",
+                  "displayText": "Francis Santana"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", and «Amar es vivir» and «Concierto de amor» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+                  "occurrenceId": "e5413c22-6fdb-48d5-8410-c27f41f9e4b6",
+                  "displayText": "Johnny Ventura"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". His repertoire combined Dominican compositions with boleros from elsewhere in the Caribbean, including Rafael Hernández’s «De qué te vale» and «Desvelo de amor»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Composition and poetry",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His first composition, «Al pie del bambú», dates from 1938. He set poems by Héctor Cabral Ortega to music; together they wrote «Arenas del desierto», which also entered the repertoire of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "771e3bcf-396a-492a-833f-8afb45964520",
+                  "occurrenceId": "709ee529-cfa7-460c-abe0-eee5b59d71a1",
+                  "displayText": "Lope Balaguer"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". His work as a composer accompanied performances across bolero, merengue, son, guaracha, and other tropical genres."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "He sang «Venus negra», with music by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+                  "occurrenceId": "d0eadfff-941f-43a8-8754-d20c5b3771f4",
+                  "displayText": "Julio Alberto Hernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", on the collective album «La música de sus versos», devoted to the poetry of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+                  "occurrenceId": "5781bf91-5080-43af-96b0-d150e9b3fab5",
+                  "displayText": "Joaquín Balaguer"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". The original back cover, preserved by the Archivo General de la Nación, documents his performance and separates the musical credit from the poetic text."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In May 2018 the Centro León in Santiago marked the centenary of his birth with a discussion led by José del Castillo and Rafael Almánzar, followed by a musical gathering coordinated with Raíces Radio. These events revisited both his orchestral work and his intimate troubadour performances. His surviving recordings preserve a major voice of twentieth-century Dominican romantic song."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "3a69af3c-1b9a-402b-8a3f-66e51dacdffe",
+      "name": "Francis Santana",
+      "slug": "francis-santana",
+      "status": "published"
+    },
+    {
+      "id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+      "name": "Joaquín Balaguer",
+      "slug": "joaquin-balaguer",
+      "status": "published"
+    },
+    {
+      "id": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+      "name": "Johnny Ventura",
+      "slug": "johnny-ventura",
+      "status": "published"
+    },
+    {
+      "id": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+      "name": "Julio Alberto Hernández",
+      "slug": "julio-alberto-hernandez",
+      "status": "published"
+    },
+    {
+      "id": "771e3bcf-396a-492a-833f-8afb45964520",
+      "name": "Lope Balaguer",
+      "slug": "lope-balaguer",
+      "status": "published"
+    },
+    {
+      "id": "360bec27-421a-466f-8604-3598aa46a7a4",
+      "name": "Luis Alberti",
+      "slug": "luis-alberti",
+      "status": "published"
+    },
+    {
+      "id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+      "name": "Manuel Sánchez Acosta",
+      "slug": "manuel-sanchez-acosta",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "rafael-colon-research-2026-10-25.md",
+  "backward_reference_audit": {
+    "documents": 14,
+    "owners": 7,
+    "file": "rafael-colon-pending-backlinks.json"
+  },
+  "unresolved": [
+    "No supplied portrait; no generated replacement.",
+    "No verified official estate social handles.",
+    "Exact Alberti joining year conflicts: 1943 in own recollection vs 1944 institutional biography.",
+    "Mi Quisqueya Lucía credit Max/Machilo requires original sleeve; omitted disputed expansion.",
+    "Apple Music identifier verified in research; Deezer and Discogs supplied identifiers remain research leads, not guessed database columns.",
+    "No discography import authorized."
+  ]
+}

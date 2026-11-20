@@ -1,0 +1,1752 @@
+{
+  "capturedAt": "2026-11-09",
+  "purpose": "Before reciprocal-link update; restore through editorial RPC with current expected revision",
+  "documents": [
+    {
+      "owner": "Danny Vásquez",
+      "owner_id": "27e997f8-9a4a-4d2b-a0d7-2c9388cbe121",
+      "doc_id": "db6cff08-fa23-41ab-bcfb-f651bbee644c",
+      "locale": "en",
+      "revision": 2,
+      "status": "published",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Danny Vásquez is a Dominican merengue singer and songwriter, a founding frontman of the orchestra ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "2321a936-744d-4bf6-8b2f-38649c602d1c"
+                }
+              },
+              {
+                "text": " and the composer of its signature hit «La buscaré». His pen has also reached other voices — most notably ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0d54316a-0114-4754-ae89-72a87ed7069c",
+                  "displayText": "Yiyo Sarante",
+                  "occurrenceId": "d712defd-b4f8-4f23-be01-a97a925132df"
+                }
+              },
+              {
+                "text": "'s «Pirata» (2013) — and after decades with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "2001d52d-796d-4e6d-842e-0190eb570a19"
+                }
+              },
+              {
+                "text": " he leads the group's current stage while performing solo as Dany Tierra Seca.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Beginnings",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Vásquez grew up in Las Ceibas, Bonao, raised by his paternal grandmother, and learned music on a guitar his father built by hand. By his own account he wrote «La buscaré» as a teenager. After early group work in Villa Mella, Santo Domingo, he joined the project empresario Raphy D'Oleo was assembling in 1990: ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "fa7b962b-cdc4-4a75-bb2f-e1adeaa2e85c"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Tierra Seca",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "With ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c9f8020d-85b3-4613-8cfb-640a4555e5c7",
+                  "displayText": "Herodys Ureña",
+                  "occurrenceId": "0892c803-c250-4ddd-a065-6e7d4fa5d564"
+                }
+              },
+              {
+                "text": " and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c21e1ad5-161a-458b-a477-4b28d458139d",
+                  "displayText": "Óscar Pérez",
+                  "occurrenceId": "5f4ff013-22f6-4102-bd44-2ebeeec8da87"
+                }
+              },
+              {
+                "text": ", Vásquez formed the three-singer front of ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "f57047a5-c40f-4983-ab0c-c1cc92759c5f"
+                }
+              },
+              {
+                "text": ". His «Mi vida te daré» became the group's first national hit in 1991, before the debut album «El nombre lo dice todo» (1993) carried «La buscaré» and won Orquesta Revelación del Año at the Premios Casandra. When the group's business partners split in 1995, Vásquez and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c21e1ad5-161a-458b-a477-4b28d458139d",
+                  "displayText": "Óscar Pérez",
+                  "occurrenceId": "bbb542e4-75dd-40b8-9c69-6be21ed31789"
+                }
+              },
+              {
+                "text": " formed Cangrejo Band — remembered for «El baile de la sopa», with his lyrics — while Herodys kept ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "b5e61696-450f-48b2-b1e4-ff15b7d10ba5"
+                }
+              },
+              {
+                "text": "; both singers later returned to the parent group. The singers never owned the orchestra: years later, name-holder Luis Victoria ceded the ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "f30520aa-a760-4323-9b87-53d41b7984d5"
+                }
+              },
+              {
+                "text": " name to Vásquez and Ureña.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Songwriter and Producer",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Vásquez's biggest outside credit is «Pirata», recorded by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0d54316a-0114-4754-ae89-72a87ed7069c",
+                  "displayText": "Yiyo Sarante",
+                  "occurrenceId": "4ff57923-e7f9-4488-af29-41ba57131fc3"
+                }
+              },
+              {
+                "text": " in 2013 — a number-one radio hit in Santo Domingo that he has often said he first offered under the pseudonym \"El Alacrán\". With ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c9f8020d-85b3-4613-8cfb-640a4555e5c7",
+                  "displayText": "Herodys Ureña",
+                  "occurrenceId": "4bb04a28-cae5-4727-a3b0-85836c959c04"
+                }
+              },
+              {
+                "text": " he runs a recording studio, writing and producing for other artists, and under his own Alkhano imprint he has released solo songs and the bachata project of the same name. In 2025 he arranged the festival-winning song «Yo no te cambio por otro» for Eddy Soto.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Current Stage",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Vásquez produced «Restaurando» (2023), the ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "8cbc83be-30ab-45f2-89dc-ea940ad1ba6a"
+                }
+              },
+              {
+                "text": " album that relaunched the group with singer Jhonan Dave, and fronts the orchestra in its 2026 television and concert comeback. He also performs solo as Dany Tierra Seca — \"El Indetenible\" — including the 2025 collaboration «Solo se vive una vez» with David K.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Danny Vásquez is the pen and one of the three faces of ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "968f8d07-e2fd-4d2b-a238-f6b9960408b5"
+                }
+              },
+              {
+                "text": "'s golden run: composer of «La buscaré», the group's signature, and of a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0d54316a-0114-4754-ae89-72a87ed7069c",
+                  "displayText": "Yiyo Sarante",
+                  "occurrenceId": "ba33ff46-07d8-42c4-8888-4e60bf087be1"
+                }
+              },
+              {
+                "text": " radio number one, and the keeper — with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c9f8020d-85b3-4613-8cfb-640a4555e5c7",
+                  "displayText": "Herodys Ureña",
+                  "occurrenceId": "edda75bf-be51-4c70-a4d4-e2edca8ad6ba"
+                }
+              },
+              {
+                "text": " — of the ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "8493fa6e-0061-4421-9941-239ffe9618a7"
+                }
+              },
+              {
+                "text": " name into its comeback era.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "owner": "Danny Vásquez",
+      "owner_id": "27e997f8-9a4a-4d2b-a0d7-2c9388cbe121",
+      "doc_id": "6927ce7d-d56a-4303-9c86-6e95e2824f8a",
+      "locale": "es",
+      "revision": 2,
+      "status": "published",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Danny Vásquez es un cantante y compositor dominicano de merengue, frente fundador de la orquesta ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "53144613-0fb4-44c7-9da2-f527b4d724ca"
+                }
+              },
+              {
+                "text": " y autor de su éxito emblemático, «La buscaré». Su pluma también ha llegado a otras voces — sobre todo «Pirata» (2013), de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0d54316a-0114-4754-ae89-72a87ed7069c",
+                  "displayText": "Yiyo Sarante",
+                  "occurrenceId": "c98f80ec-4548-4194-ba96-35254b7e07de"
+                }
+              },
+              {
+                "text": " — y, tras décadas con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "95412852-bf7a-459b-8ce6-0a5b91445067"
+                }
+              },
+              {
+                "text": ", lidera la etapa actual del grupo mientras se presenta como solista con el nombre de Dany Tierra Seca.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Inicios",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Vásquez se crió en Las Ceibas, Bonao, con su abuela paterna, y aprendió música en una guitarra que su padre construyó a mano. Según su propio relato, escribió «La buscaré» siendo adolescente. Tras un primer trabajo grupal en Villa Mella, Santo Domingo, se unió en 1990 al proyecto que armaba el empresario Raphy D'Oleo: ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "cf46232f-1ac1-467e-a74b-340ad4c69318"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Tierra Seca",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Junto a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c9f8020d-85b3-4613-8cfb-640a4555e5c7",
+                  "displayText": "Herodys Ureña",
+                  "occurrenceId": "913c1d44-4dfe-4d18-ab7c-03759507fcfc"
+                }
+              },
+              {
+                "text": " y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c21e1ad5-161a-458b-a477-4b28d458139d",
+                  "displayText": "Óscar Pérez",
+                  "occurrenceId": "15235ff8-6735-4531-b7d0-8321c9ed38d5"
+                }
+              },
+              {
+                "text": ", Vásquez formó el frente de tres cantantes de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "2225d238-60c2-4d1a-aaf4-06d2cedd2015"
+                }
+              },
+              {
+                "text": ". Su «Mi vida te daré» fue el primer éxito nacional del grupo en 1991, antes de que el álbum debut, «El nombre lo dice todo» (1993), trajera «La buscaré» y ganara el Casandra a Orquesta Revelación del Año. Cuando los socios del grupo se dividieron en 1995, Vásquez y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c21e1ad5-161a-458b-a477-4b28d458139d",
+                  "displayText": "Óscar Pérez",
+                  "occurrenceId": "b52d4c50-55f9-4214-8f56-2cd3f1b2fb6e"
+                }
+              },
+              {
+                "text": " formaron Cangrejo Band — recordada por «El baile de la sopa», con letra suya — mientras Herodys se quedaba con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "58ef2dcf-0a17-47e9-8011-7f3557337dd4"
+                }
+              },
+              {
+                "text": "; ambos cantantes regresaron después al grupo madre. Los cantantes nunca fueron dueños de la orquesta: años más tarde, Luis Victoria, titular del nombre, lo cedió a Vásquez y Ureña.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Compositor y productor",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El mayor crédito externo de Vásquez es «Pirata», grabado por ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0d54316a-0114-4754-ae89-72a87ed7069c",
+                  "displayText": "Yiyo Sarante",
+                  "occurrenceId": "69249ff5-d8eb-416b-a2f4-8dffd1da6e76"
+                }
+              },
+              {
+                "text": " en 2013 — un número uno radial en Santo Domingo que, según ha contado muchas veces, ofreció primero bajo el seudónimo de «El Alacrán». Con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c9f8020d-85b3-4613-8cfb-640a4555e5c7",
+                  "displayText": "Herodys Ureña",
+                  "occurrenceId": "421425f0-01fd-41a7-a7e7-1de6939482a1"
+                }
+              },
+              {
+                "text": " mantiene un estudio de grabación, escribiendo y produciendo para otros artistas, y bajo su propio sello Alkhano ha lanzado temas como solista y el proyecto de bachata del mismo nombre. En 2025 arregló la canción ganadora de festival «Yo no te cambio por otro», de Eddy Soto.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Etapa actual",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Vásquez produjo «Restaurando» (2023), el álbum de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "e351ee60-80ad-46f1-a475-9443caadd296"
+                }
+              },
+              {
+                "text": " que relanzó al grupo con el cantante Jhonan Dave, y encabeza la orquesta en su regreso televisivo y de conciertos de 2026. También se presenta como solista bajo el nombre de Dany Tierra Seca — «El Indetenible» — incluida la colaboración de 2025 «Solo se vive una vez», con David K.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Danny Vásquez es la pluma y uno de los tres rostros de la etapa dorada de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "6033ab0b-38ae-4209-8283-f8ed3b06d2e1"
+                }
+              },
+              {
+                "text": ": compositor de «La buscaré», la firma del grupo, y de un número uno radial de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0d54316a-0114-4754-ae89-72a87ed7069c",
+                  "displayText": "Yiyo Sarante",
+                  "occurrenceId": "935c06c4-0ed6-42f6-aa95-6b3e781da832"
+                }
+              },
+              {
+                "text": ", y custodio — junto a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c9f8020d-85b3-4613-8cfb-640a4555e5c7",
+                  "displayText": "Herodys Ureña",
+                  "occurrenceId": "6a7ff5b6-6ca5-4a9e-8982-840c0b65e48d"
+                }
+              },
+              {
+                "text": " — del nombre ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "beb2ef20-540a-481b-8829-7b279a6a99c9"
+                }
+              },
+              {
+                "text": " hasta su era de regreso.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "owner": "Herodys Ureña",
+      "owner_id": "c9f8020d-85b3-4613-8cfb-640a4555e5c7",
+      "doc_id": "cc19575a-c43c-41eb-841e-15e7227ec84d",
+      "locale": "en",
+      "revision": 3,
+      "status": "published",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Herodys Ureña is a Dominican merengue singer, pianist, composer, arranger and producer — the musician who stayed with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "f3cd9d4e-42e9-463e-9376-35372fbecdfc"
+                }
+              },
+              {
+                "text": ". When promoter Raphy D'Oleo assembled the group around 1990, Ureña was the complete musician of its front line; when the partnership behind the band broke apart in 1995, it was Herodys who kept the name and carried it into its second stage.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Tierra Seca and the first hits",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "70ba7d22-e396-47c4-bf51-f60b4e8418ab"
+                }
+              },
+              {
+                "text": "'s front line was ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27e997f8-9a4a-4d2b-a0d7-2c9388cbe121",
+                  "displayText": "Danny Vásquez Pichardo",
+                  "occurrenceId": "097fe55f-08c4-4c76-beda-a59a92502ad7"
+                }
+              },
+              {
+                "text": ", Herodys Ureña and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c21e1ad5-161a-458b-a477-4b28d458139d",
+                  "displayText": "Óscar Pérez",
+                  "occurrenceId": "d674968b-939f-42d1-b9f8-1f860a4b155b"
+                }
+              },
+              {
+                "text": ". The debut album, «El Nombre Lo Dice Todo» (1993), produced two defining hits: Danny's «La Buscaré» and Herodys's own composition «Aventurera». The group took the Casandra Revelation of the Year award — the members remember it as 1993, the year of the debut, while a Soberano winners retrospective files ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "03d66ae8-7095-4724-afe6-ddce5eafc0d3"
+                }
+              },
+              {
+                "text": " under 1994 — and was simultaneously nominated for Merengue of the Year, something no other new group managed. The hits Ureña himself names from those years — «La Chica de los Ojos Tristes», «La Maquinita», «Márchate», «La Inflación» — are still the core of the group's memory.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The name stays with Herodys",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 1995 the group's business partners fell out — a partners' dispute, not a singers' feud — and the act split in two. One partner kept the ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "33f58cd9-efed-4f73-a164-d14a90b0d60e"
+                }
+              },
+              {
+                "text": " name with Herodys; Danny and Óscar left to form Cangrejo Band. Leading the second stage from the piano, Ureña delivered «Échale Tierra» (1996), whose «Solo» became the era's signature hit and, by his own account, reached number one in Barranquilla, Colombia. Decades later the name — registered to Luis Victoria — was ceded to Danny and Herodys, and the two reunited for «Restaurando» (2023) and the group's 2026 stage return.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The producer's second career",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Behind the front line, Ureña built a studio career alongside ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27e997f8-9a4a-4d2b-a0d7-2c9388cbe121",
+                  "displayText": "Danny Vásquez",
+                  "occurrenceId": "b9f87da6-054d-4135-8691-2d5c8e9bdd2a"
+                }
+              },
+              {
+                "text": ", composing and producing for ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "6fb949c4-2d6f-437f-8e7f-5f9efec847da",
+                  "displayText": "Rikarena",
+                  "occurrenceId": "66790dbc-cb73-42be-811f-dc4d4a230085"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                  "displayText": "Fernando Villalona",
+                  "occurrenceId": "a8ec0786-9459-4051-80ba-f6a7141c3d70"
+                }
+              },
+              {
+                "text": ", Sergio Hernández and others. His writing travelled beyond merengue: the Barrio Boyzz recorded his «Se Me Fue Mi Vida» on «Ven A Mi» (1997), and he composed the music for the Dominican film «A ritmo de fe» (2013). He remains in demand in 2026 — arrangements and production, plus a featured vocal, on Charlie Núñez's «Vivir para siempre»; arrangements, mix and mastering on «El Son Vive»; and an arranger's credit for ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a0e39929-431e-4f8e-b1aa-28fa5aa88f17",
+                  "displayText": "Camboy Estévez",
+                  "occurrenceId": "ee61076b-b988-4010-9d39-9d002228fcfd"
+                }
+              },
+              {
+                "text": ". A UASD graduate in civil engineering and pure letters, by his own account, he is as much man of letters as of the bandstand.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Herodys Ureña's legacy is continuity: he is the thread that runs through every stage of ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "e08b0f8f-a08a-461a-9623-0f458f7e7ddb"
+                }
+              },
+              {
+                "text": ", from the 1993 breakthrough to the reunion stage. As singer, pianist, composer and producer in one, he embodies the self-sufficient orchestra musician of merengue's golden age — and «Aventurera» and «Solo» remain sung in his voice first.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "owner": "Herodys Ureña",
+      "owner_id": "c9f8020d-85b3-4613-8cfb-640a4555e5c7",
+      "doc_id": "42adce8b-8ec2-48bd-bea5-c89f93b26684",
+      "locale": "es",
+      "revision": 3,
+      "status": "published",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "De los tres frentes que Raphy D'Oleo reunió en ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "06b8af4d-786a-4bae-957e-867e4d7d720d"
+                }
+              },
+              {
+                "text": " a principios de los noventa, Herodys Ureña fue el músico completo: cantaba, tocaba el piano, componía, arreglaba y producía. Y cuando la sociedad detrás del grupo se rompió en 1995, fue él quien se quedó con el nombre y lo llevó a su segunda etapa. Su historia es la de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "ceccc3b6-4eea-4b3e-9265-e6fa0f2e8689"
+                }
+              },
+              {
+                "text": " contada desde adentro.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El debut y los primeros éxitos",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La línea frontal la formaban ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27e997f8-9a4a-4d2b-a0d7-2c9388cbe121",
+                  "displayText": "Danny Vásquez Pichardo",
+                  "occurrenceId": "d8e864d3-094a-4831-bd41-e2619beb716f"
+                }
+              },
+              {
+                "text": ", Herodys Ureña y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c21e1ad5-161a-458b-a477-4b28d458139d",
+                  "displayText": "Óscar Pérez",
+                  "occurrenceId": "18d2f385-cf57-435b-acf8-1f27c4f3acb5"
+                }
+              },
+              {
+                "text": ". El álbum debut, «El Nombre Lo Dice Todo» (1993), dejó dos éxitos definitorios: «La Buscaré», de Danny, y «Aventurera», composición del propio Herodys. El grupo ganó el Casandra a la Revelación del Año — los miembros lo recuerdan como 1993, el año del debut, aunque una retrospectiva de ganadores del Soberano registra a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "64862934-8be8-4e44-bf61-1f1c78fc764f"
+                }
+              },
+              {
+                "text": " en 1994 — y fue nominado simultáneamente a Merengue del Año, algo que ninguna otra agrupación nueva logró. De esa época, el propio Ureña enumera los éxitos que cantó: «La Chica de los Ojos Tristes», «La Maquinita», «Márchate» y «La Inflación».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "1995: el nombre se queda con él",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La ruptura de 1995 no fue una pelea de cantantes, sino de los socios comerciales del grupo. Un socio se quedó con el nombre ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "f7f7e0b5-089f-450c-946f-198ce53d2ba3"
+                }
+              },
+              {
+                "text": " junto a Herodys; Danny y Óscar salieron a formar Cangrejo Band. Al frente de la segunda etapa, y desde el piano, Ureña entregó «Échale Tierra» (1996), con «Solo» como éxito insignia — número uno en Barranquilla, Colombia, según su propio testimonio. Con los años, el nombre, registrado a nombre de Luis Victoria, fue cedido a Danny y Herodys, que se reencontraron en «Restaurando» (2023) y en el regreso del grupo a los escenarios en 2026.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Productor y arreglista",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En paralelo, Ureña levantó con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27e997f8-9a4a-4d2b-a0d7-2c9388cbe121",
+                  "displayText": "Danny Vásquez",
+                  "occurrenceId": "e0410f6e-c66a-450f-8556-0440985db38b"
+                }
+              },
+              {
+                "text": " un estudio desde el que compusieron y produjeron para ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "6fb949c4-2d6f-437f-8e7f-5f9efec847da",
+                  "displayText": "Rikarena",
+                  "occurrenceId": "b8673b34-6650-4c2b-8db7-ecee21e40145"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                  "displayText": "Fernando Villalona",
+                  "occurrenceId": "467687e4-afa8-4643-8c4b-ed1b4449400e"
+                }
+              },
+              {
+                "text": ", Sergio Hernández y otros. Su pluma cruzó géneros: los Barrio Boyzz grabaron su «Se Me Fue Mi Vida» en «Ven A Mi» (1997), y compuso la música de la película dominicana «A ritmo de fe» (2013). En 2026 sigue vigente: arreglos y producción — además de una voz invitada — en «Vivir para siempre», de Charlie Núñez; arreglos, mezcla y masterización en «El Son Vive»; y crédito de arreglista para ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a0e39929-431e-4f8e-b1aa-28fa5aa88f17",
+                  "displayText": "Camboy Estévez",
+                  "occurrenceId": "2ce461de-e736-49e7-9c62-75e43b3d10f4"
+                }
+              },
+              {
+                "text": ". Graduado de la UASD en ingeniería civil y letras puras, según su propio perfil, es tanto hombre de letras como de tarima.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El legado de Herodys Ureña es la continuidad: él es el hilo que cose todas las etapas de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "9bfe6070-7973-4258-b50c-1eb05fbf0ece"
+                }
+              },
+              {
+                "text": ", del estreno de 1993 al reencuentro. Cantante, pianista, compositor y productor en una sola persona, representa al músico autosuficiente de la era dorada del merengue, y «Aventurera» y «Solo» se siguen cantando primero con su voz.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "owner": "Óscar Pérez",
+      "owner_id": "c21e1ad5-161a-458b-a477-4b28d458139d",
+      "doc_id": "d8e7f48b-3b7c-46dc-a99b-e89ad0ba7f66",
+      "locale": "en",
+      "revision": 1,
+      "status": "published",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Óscar Pérez is a Dominican singer and comedian: a founding frontman of the merengue orchestra ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "27679632-6001-4c85-8662-a7bf2fb84b47"
+                }
+              },
+              {
+                "text": " in the early 1990s who went on to become one of the Dominican Republic's most admired television imitators, famed above all for a Nelson Ned impression that became legend alongside Freddy Beras Goico.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The Singing Years",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "From Baní, Pérez sang — including chorus work — in the orchestras of ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "cff70c92-8632-4c66-b5a0-81622c8128b0",
+                  "displayText": "Rubby Pérez",
+                  "occurrenceId": "bd1a4aad-bc46-4b22-b743-0e39c57009f0"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f050869b-f4c0-4281-b883-bce0120ad9b2",
+                  "displayText": "Aníbal Bravo",
+                  "occurrenceId": "57bd57f8-1d89-490d-989a-a464c6216355"
+                }
+              },
+              {
+                "text": " and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+                  "displayText": "Carlos David",
+                  "occurrenceId": "fa14d954-cb5b-4ed1-a64e-5d8cf42c44bd"
+                }
+              },
+              {
+                "text": " before joining ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "efa1ecf2-dcff-4229-924b-087b7503e11f"
+                }
+              },
+              {
+                "text": ", the project empresario Raphy D'Oleo built around three young singers: ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27e997f8-9a4a-4d2b-a0d7-2c9388cbe121",
+                  "displayText": "Danny Vásquez",
+                  "occurrenceId": "17786003-3e19-490b-853d-7aa4531e474f"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c9f8020d-85b3-4613-8cfb-640a4555e5c7",
+                  "displayText": "Herodys Ureña",
+                  "occurrenceId": "b16c010d-b552-49a9-990a-2fb4ea550655"
+                }
+              },
+              {
+                "text": " and Pérez. The trio's choreographed front line carried the group to its 1993 debut album «El nombre lo dice todo» and the Premios Casandra Orquesta Revelación del Año award; it was in ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "b3c0f6a7-ff79-413f-88a9-c27a0b021189"
+                }
+              },
+              {
+                "text": ", by his profiles, that Pérez began imitating voices. When the group's partners split in 1995, he and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27e997f8-9a4a-4d2b-a0d7-2c9388cbe121",
+                  "displayText": "Danny Vásquez",
+                  "occurrenceId": "6989e461-edf4-414b-84dd-1a27fc718218"
+                }
+              },
+              {
+                "text": " formed Cangrejo Band («El baile de la sopa») before both returned to ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "ae77a41e-31eb-4863-a898-a1acf98632e3"
+                }
+              },
+              {
+                "text": ". The original trio reunited on stage in 2013–2014 as Tierra CK, a comeback that did not hold.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The Imitator",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 1998 Pérez joined Telecentro, co-creating the comedy troupe Los Electrolocos — he played \"el Teléfono\" — and acting in the series Ciudad Nueva. A decade of Dominican television followed: Divertido con Jochy, radio's El Vacilón de la Mañana, and programs alongside Boruga and Roberto Salcedo. In late 2008 he joined Con Freddy y Punto, where Freddy Beras Goico hailed him on air as a master of imitation. His signature piece — an uncanny Nelson Ned, performed even with Nelson Ned himself on stage — passed into Dominican television folklore, as did his ex-president Hipólito Mejía, whom he played in the 2009 film Lío de Faldas. His gallery of voices runs from ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "081c1484-bf1c-4b11-ba01-d68446b7b111",
+                  "displayText": "Anthony Ríos",
+                  "occurrenceId": "4898c106-a1ba-48d7-a457-dc84b0eb69ae"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "cff70c92-8632-4c66-b5a0-81622c8128b0",
+                  "displayText": "Rubby Pérez",
+                  "occurrenceId": "b834aed8-7311-429b-a8da-b211b4a02550"
+                }
+              },
+              {
+                "text": " and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                  "displayText": "Fernando Villalona",
+                  "occurrenceId": "81690d8d-37bc-458b-a91a-fd9935ca2cb9"
+                }
+              },
+              {
+                "text": " to José José, Julio Iglesias and Luis Miguel.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Current Stage",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Since 2016 Pérez has been a founding cast member of La Opción 13.0, the midday comedy program on Telecentro (Canal 13), where the show honored him at its tenth anniversary in August 2026. When ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "a59e3165-0030-4da9-afd5-db582ac88f76"
+                }
+              },
+              {
+                "text": " returned in October 2026, Pérez appeared with his old bandmates in photographs and on television, but said publicly that management had blocked him from performing in the comeback concerts — a dispute with the group's management, while the three singers remain, on record, friends.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Óscar Pérez bridges two Dominican stages: the merengue front line of the 1990s and the golden age of television imitation that followed. ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "0d5e3764-df7b-43c1-9186-21aca44e921e"
+                }
+              },
+              {
+                "text": "'s founding trio is incomplete without him — a fact the group's own public keeps restating at every reunion — and his Nelson Ned remains the standard against which Dominican imitators are measured.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "owner": "Óscar Pérez",
+      "owner_id": "c21e1ad5-161a-458b-a477-4b28d458139d",
+      "doc_id": "174915f7-1d11-4341-87d4-7cffa6134993",
+      "locale": "es",
+      "revision": 1,
+      "status": "published",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Óscar Pérez es un cantante y humorista dominicano: frente fundador de la orquesta de merengue ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "e8999ba3-edcc-47fb-a920-0cb0cb92becf"
+                }
+              },
+              {
+                "text": " a principios de los años noventa y, después, uno de los imitadores televisivos más admirados de la República Dominicana, famoso sobre todo por una imitación de Nelson Ned que se volvió leyenda junto a Freddy Beras-Goico.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los años de cantante",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Desde Baní, Pérez cantó — también en coros — en las orquestas de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "cff70c92-8632-4c66-b5a0-81622c8128b0",
+                  "displayText": "Rubby Pérez",
+                  "occurrenceId": "524408af-8f35-4cc8-8cee-564c141bace5"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f050869b-f4c0-4281-b883-bce0120ad9b2",
+                  "displayText": "Aníbal Bravo",
+                  "occurrenceId": "66caf1d7-7cb7-4385-95d5-6dbed568d4bd"
+                }
+              },
+              {
+                "text": " y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+                  "displayText": "Carlos David",
+                  "occurrenceId": "32ff4214-7597-4363-ba3b-87a005caaf75"
+                }
+              },
+              {
+                "text": " antes de unirse a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "70e68d8d-8b0c-47cf-a07f-d696b9fe938b"
+                }
+              },
+              {
+                "text": ", el proyecto que el empresario Raphy D'Oleo armó alrededor de tres jóvenes cantantes: ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27e997f8-9a4a-4d2b-a0d7-2c9388cbe121",
+                  "displayText": "Danny Vásquez",
+                  "occurrenceId": "c34c33d7-25ed-47f8-84f2-efae61b77d01"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c9f8020d-85b3-4613-8cfb-640a4555e5c7",
+                  "displayText": "Herodys Ureña",
+                  "occurrenceId": "518d1124-fbbf-4dc9-998f-3a67839cced4"
+                }
+              },
+              {
+                "text": " y Pérez. El frente coreografiado del trío llevó al grupo a su álbum debut de 1993, «El nombre lo dice todo», y al Casandra a Orquesta Revelación del Año; fue en ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "4eac0694-1888-436a-b3ad-39c08f862cf7"
+                }
+              },
+              {
+                "text": ", según sus perfiles, donde Pérez comenzó a imitar voces. Cuando los socios del grupo se dividieron en 1995, él y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27e997f8-9a4a-4d2b-a0d7-2c9388cbe121",
+                  "displayText": "Danny Vásquez",
+                  "occurrenceId": "6e28b108-6da2-4313-a0e9-ffe3bcf694de"
+                }
+              },
+              {
+                "text": " formaron Cangrejo Band («El baile de la sopa») antes de que ambos regresaran a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "4bf4b647-2511-4f7c-b074-2e6813cb05a2"
+                }
+              },
+              {
+                "text": ". El trío original se reunió en escena en 2013–2014 como Tierra CK, un regreso que no prosperó.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El imitador",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 1998 Pérez entró a Telecentro, donde cocreó el grupo humorístico Los Electrolocos — hacía el personaje de «el Teléfono» — y actuó en la serie Ciudad Nueva. Siguió una década de televisión dominicana: Divertido con Jochy, El Vacilón de la Mañana en radio, y programas junto a Boruga y Roberto Salcedo. A finales de 2008 se unió a Con Freddy y Punto, donde Freddy Beras-Goico lo proclamó en el aire maestro de la imitación. Su pieza emblemática — un Nelson Ned prodigioso, interpretado incluso con el propio Nelson Ned en escena — pasó al folclor televisivo dominicano, al igual que su expresidente Hipólito Mejía, a quien interpretó en la película de 2009 Lío de Faldas. Su galería de voces va de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "081c1484-bf1c-4b11-ba01-d68446b7b111",
+                  "displayText": "Anthony Ríos",
+                  "occurrenceId": "83af03cb-c6c1-4ee4-a6e8-079f44a2b3fd"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "cff70c92-8632-4c66-b5a0-81622c8128b0",
+                  "displayText": "Rubby Pérez",
+                  "occurrenceId": "af78d81d-7e60-42dc-876a-1ca72e869cd2"
+                }
+              },
+              {
+                "text": " y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                  "displayText": "Fernando Villalona",
+                  "occurrenceId": "d063452e-334b-4c4a-af23-843fd7cada86"
+                }
+              },
+              {
+                "text": " a José José, Julio Iglesias y Luis Miguel.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Etapa actual",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Desde 2016, Pérez es miembro fundador del elenco de La Opción 13.0, el programa humorístico del mediodía de Telecentro (Canal 13), que lo homenajeó en su décimo aniversario, en agosto de 2026. Cuando ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "db361a77-92f5-4b95-8138-bb49a45b975d"
+                }
+              },
+              {
+                "text": " regresó en octubre de 2026, Pérez apareció con sus antiguos compañeros en fotografías y en televisión, pero declaró públicamente que la gerencia le había impedido cantar en los conciertos del regreso — una disputa con la administración del grupo, mientras los tres cantantes siguen siendo, consta, amigos.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Óscar Pérez tiende un puente entre dos escenarios dominicanos: el frente del merengue de los noventa y la época dorada de la imitación televisiva que vino después. El trío fundador de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8fefaa4d-ff14-42f0-9607-77761e5c6a0b",
+                  "displayText": "Tierra Seca",
+                  "occurrenceId": "68d49b7b-97fe-4a33-80cd-eb0c1d675b26"
+                }
+              },
+              {
+                "text": " está incompleto sin él — un hecho que el propio público del grupo repite en cada reencuentro — y su Nelson Ned sigue siendo la medida contra la que se juzga a los imitadores dominicanos.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

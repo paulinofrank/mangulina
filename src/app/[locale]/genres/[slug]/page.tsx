@@ -6,6 +6,7 @@ import MainWrapper from "@/components/layout/MainWrapper";
 import AnalyticsPageView from "@/components/analytics/AnalyticsPageView";
 import GenreDynamicSections, { GenreHistoryLink } from "@/components/genres/GenreDynamicSections";
 import GenreSubgenreProvider from "@/components/genres/GenreSubgenreProvider";
+import { formatSubgenreLabel } from "@/lib/subgenreLabel";
 import SubgenreSelector from "@/components/genres/SubgenreSelector";
 import GenreTitleSelector from "@/components/genres/GenreTitleSelector";
 import JsonLd from "@/components/seo/JsonLd";
@@ -114,7 +115,7 @@ export default async function GenrePage({ params }: PageProps) {
     byKey: {
       [ALL_SUBGENRES]: labelsFor(genre.title),
       ...Object.fromEntries(
-        sortedSubgenres.map((subgenre) => [subgenre.slug, labelsFor(subgenre.name)]),
+        sortedSubgenres.map((subgenre) => [subgenre.slug, labelsFor(formatSubgenreLabel(genre.title, subgenre.name))]),
       ),
     },
     loadError: t("loadError"),
@@ -173,6 +174,7 @@ export default async function GenrePage({ params }: PageProps) {
                       {t("subgenresStyles")}
                     </p>
                     <SubgenreSelector
+                      genreName={genre.title}
                       label={t("subgenreSelector.label")}
                       allLabel={t("subgenreSelector.all")}
                     />

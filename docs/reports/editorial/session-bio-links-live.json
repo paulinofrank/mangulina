@@ -1,0 +1,29 @@
+[
+  {
+    "path": "/es/artists/solo-fernandez",
+    "link": "/es/artists/martox",
+    "status": 200,
+    "matching_anchors": [
+      "<a class=\"rounded-sm font-medium text-(--color-flagblue) underline decoration-(--color-flagblue)/35 underline-offset-3 transition-colors hover:text-(--color-wikicrimson) hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-flagblue)\" href=\"/es/artists/martox\">Martox</a>"
+    ],
+    "cache": "REVALIDATED"
+  },
+  {
+    "path": "/en/artists/martox",
+    "link": "/en/artists/nikola",
+    "status": 200,
+    "matching_anchors": [
+      "<a class=\"rounded-sm font-medium text-(--color-flagblue) underline decoration-(--color-flagblue)/35 underline-offset-3 transition-colors hover:text-(--color-wikicrimson) hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-flagblue)\" href=\"/en/artists/nikola\">Nikóla</a>"
+    ],
+    "cache": "REVALIDATED"
+  },
+  {
+    "path": "/es/artists/dhariana",
+    "link": "/es/artists/milton-pelaez",
+    "status": 200,
+    "matching_anchors": [
+      "<a class=\"rounded-sm font-medium text-(--color-flagblue) underline decoration-(--color-flagblue)/35 underline-offset-3 transition-colors hover:text-(--color-wikicrimson) hover:decoration-current focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-flagblue)\" href=\"/es/artists/milton-pelaez\">Milton Peláez</a>"
+    ],
+    "cache": "REVALIDATED"
+  }
+]

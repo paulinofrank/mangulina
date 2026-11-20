@@ -1,0 +1,617 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+        "name": "Janio Lora",
+        "sort_name": "Lora, Janio",
+        "type": "solo_artist",
+        "birth_year": null,
+        "death_year": null,
+        "created_at": "2026-10-23T12:02:04.162376+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Janio",
+        "middle_name": null,
+        "last_name": "Lora",
+        "second_last_name": "Félix",
+        "stage_name": "Janio Lora",
+        "date_of_birth": null,
+        "birth_place": null,
+        "website": "https://janiolora.com/",
+        "youtube": "@JanioLora",
+        "facebook": "lorajanio",
+        "instagram": "janiolora",
+        "aliases": [
+          "Janio Lora Félix"
+        ],
+        "mbid": null,
+        "occupations": [
+          "songwriter",
+          "musician"
+        ],
+        "instruments": [
+          "voice",
+          "guitar"
+        ],
+        "genres": [
+          "rock",
+          "bachata",
+          "merengue"
+        ],
+        "disambiguation": "Dominican singer-songwriter associated with Santo Domingo",
+        "gender": "male",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-23T12:02:04.162376+00:00",
+        "province": "Distrito Nacional",
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "janio-lora",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "fusion",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "2S6fXHDWLSI3K8HluvBAvm"
+      },
+      {
+        "id": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+        "name": "Alex Ferreira",
+        "slug": "alex-ferreira",
+        "status": "published"
+      },
+      {
+        "id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+        "name": "El Prodigio",
+        "slug": "el-prodigio",
+        "status": "published"
+      },
+      {
+        "id": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+        "name": "Johnny Ventura",
+        "slug": "johnny-ventura",
+        "status": "published"
+      },
+      {
+        "id": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+        "name": "mediopicky",
+        "slug": "mediopicky",
+        "status": "published"
+      },
+      {
+        "id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+        "name": "Rafael Solano",
+        "slug": "rafael-solano",
+        "status": "published"
+      },
+      {
+        "id": "ec8ba439-3772-49ff-a218-05f5dc615763",
+        "name": "Vakeró",
+        "slug": "vakero",
+        "status": "published"
+      },
+      {
+        "id": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+        "name": "Víctor Víctor",
+        "slug": "victor-victor",
+        "status": "published"
+      },
+      {
+        "id": "8e29188a-215b-4c6c-b34a-45b381765e46",
+        "name": "Xiomara Fortuna",
+        "slug": "xiomara-fortuna",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "58de48a1-8eca-450c-8782-c5222530d1b2",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Janio Lora, whose personal name is Janio Lora Félix, is a Dominican singer-songwriter associated with Santo Domingo. The son of journalist and composer Huchi Lora, he brings rock and blues into conversation with bachata, merengue and Caribbean songwriting. He combines his music career with work in advertising creative direction.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "From rock to Dominican song",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His Bandcamp catalog dates «Ahora Mismo» to 2008 and «Rock 'N' Ron» to 2011. The latter contains twelve tracks, including «Carla Cranberry», «Graciela» and «Despierta», and credits Allan Leschhörn with production, recording and mixing. He released «Finding Demo» in 2013.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Mi Nueva Edad»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In 2015 he presented «Mi Nueva Edad», produced by Pablo Dacal, bringing together his own compositions and songs from the Dominican repertoire. The album includes «Colmado» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "8e29188a-215b-4c6c-b34a-45b381765e46",
+                    "displayText": "Xiomara Fortuna",
+                    "occurrenceId": "7f8928a9-25df-475f-afef-1ac83c7b866d"
+                  }
+                },
+                {
+                  "text": ", «Las Vueltas de la Suerte» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+                    "displayText": "Víctor Víctor",
+                    "occurrenceId": "e6bc4606-7b8c-4fb8-90a4-bb010c15cee5"
+                  }
+                },
+                {
+                  "text": " and «Confundidos» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                    "displayText": "Rafael Solano",
+                    "occurrenceId": "950c7bbb-ecd8-4555-a555-eaa889668611"
+                  }
+                },
+                {
+                  "text": ". Its single «Viene y Va» grew out of music he wrote for «Las Medidas de la Brisa», choreographer Marianela Boán's work inspired by the poetry of José Lezama Lima.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Caribbean collaborations and family recording",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Aentro», dated 2018 on his Bandcamp and produced by Isaac Hernández, continued his exploration of Caribbean rhythms. His repertoire from this period includes «Chúbale» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "ec8ba439-3772-49ff-a218-05f5dc615763",
+                    "displayText": "Vakeró",
+                    "occurrenceId": "4e4462f3-5769-4158-a21b-b847b04c7eaa"
+                  }
+                },
+                {
+                  "text": " and «Al Son de la Calavera» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+                    "displayText": "Alex Ferreira",
+                    "occurrenceId": "343717de-6d6a-4b44-8399-cb5c073c2022"
+                  }
+                },
+                {
+                  "text": ". In December 2024 he released «El Concón», a merengue written with his father, who composed its music. The recording features ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                    "displayText": "El Prodigio",
+                    "occurrenceId": "bebdefcc-2627-45e6-87e6-b5c22c8b1612"
+                  }
+                },
+                {
+                  "text": " on accordion, with arrangements and production by Jochy Sánchez.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His work connects the singer-songwriter tradition with Dominican rock and the island's traditional musical forms. Exchanges between generations have taken recorded form throughout his career, from the collaborations on «Mi Nueva Edad» to the music he made with his father on «El Concón».",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+        "created_at": "2026-10-23T12:02:04.441097+00:00",
+        "updated_at": "2026-10-23T12:02:04.441097+00:00",
+        "revision": 1
+      },
+      {
+        "id": "162cb874-fcdf-4be7-bb35-4899156e4526",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Janio Lora, cuyo nombre personal es Janio Lora Félix, es un cantautor dominicano vinculado a Santo Domingo. Hijo del periodista y compositor Huchi Lora, desarrolla una obra que cruza el rock y el blues con la bachata, el merengue y la canción caribeña. Compagina la música con su trabajo como creativo publicitario.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Del rock a la canción dominicana",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su catálogo en Bandcamp fecha «Ahora Mismo» en 2008 y «Rock 'N' Ron» en 2011. Este último reúne doce pistas, entre ellas «Carla Cranberry», «Graciela» y «Despierta», y acredita a Allan Leschhörn como productor y responsable de la grabación y la mezcla. En 2013 publicó «Finding Demo».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Mi Nueva Edad»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 2015 presentó «Mi Nueva Edad», una producción de Pablo Dacal que reunió composiciones propias y canciones del repertorio dominicano. El disco incluye «Colmado» con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "8e29188a-215b-4c6c-b34a-45b381765e46",
+                    "displayText": "Xiomara Fortuna",
+                    "occurrenceId": "ca7d8b65-3978-46dc-904d-46491b4c20ac"
+                  }
+                },
+                {
+                  "text": ", «Las Vueltas de la Suerte» con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+                    "displayText": "Víctor Víctor",
+                    "occurrenceId": "a057fa38-21ef-4697-bd7b-abc47d9fb100"
+                  }
+                },
+                {
+                  "text": " y «Confundidos» con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                    "displayText": "Rafael Solano",
+                    "occurrenceId": "b3d8eb53-e30c-4aa3-8c8e-89c405d8d190"
+                  }
+                },
+                {
+                  "text": ". Su sencillo «Viene y Va» nació de la música que escribió para «Las Medidas de la Brisa», una obra de la coreógrafa Marianela Boán inspirada en la poesía de José Lezama Lima.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Cruces caribeños y trabajo familiar",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Aentro», fechado en 2018 en su Bandcamp y producido por Isaac Hernández, prolongó su acercamiento a los ritmos caribeños. Su repertorio de este período incluye «Chúbale» con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "ec8ba439-3772-49ff-a218-05f5dc615763",
+                    "displayText": "Vakeró",
+                    "occurrenceId": "fd626376-b8c6-454b-8fb6-f364b3876a8f"
+                  }
+                },
+                {
+                  "text": " y «Al Son de la Calavera» con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+                    "displayText": "Alex Ferreira",
+                    "occurrenceId": "b08b3307-e272-4726-a4d2-dea5c6cd0ada"
+                  }
+                },
+                {
+                  "text": ". En diciembre de 2024 publicó «El Concón», un merengue escrito con su padre, quien compuso la música. La grabación contó con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                    "displayText": "El Prodigio",
+                    "occurrenceId": "8eea5218-be60-4e80-8687-a08d12574939"
+                  }
+                },
+                {
+                  "text": " en el acordeón y arreglos y producción de Jochy Sánchez.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su trayectoria conecta la canción de autor con el rock dominicano y con formas tradicionales de la isla. El diálogo entre generaciones ocupa un lugar concreto en sus grabaciones, desde las colaboraciones de «Mi Nueva Edad» hasta el trabajo compartido con su padre en «El Concón».",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+        "created_at": "2026-10-23T12:02:04.272214+00:00",
+        "updated_at": "2026-10-23T12:02:04.272214+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "a5b106ff-7ffb-4485-a078-917c0c60d584",
+        "editorial_document_id": "162cb874-fcdf-4be7-bb35-4899156e4526",
+        "occurrence_id": "ca7d8b65-3978-46dc-904d-46491b4c20ac",
+        "entity_type": "artist",
+        "target_artist_id": "8e29188a-215b-4c6c-b34a-45b381765e46",
+        "created_at": "2026-10-23T12:02:04.272214+00:00",
+        "updated_at": "2026-10-23T12:02:04.272214+00:00"
+      },
+      {
+        "id": "9f3db398-3892-4ce9-8221-8d3672745a23",
+        "editorial_document_id": "162cb874-fcdf-4be7-bb35-4899156e4526",
+        "occurrence_id": "a057fa38-21ef-4697-bd7b-abc47d9fb100",
+        "entity_type": "artist",
+        "target_artist_id": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+        "created_at": "2026-10-23T12:02:04.272214+00:00",
+        "updated_at": "2026-10-23T12:02:04.272214+00:00"
+      },
+      {
+        "id": "7c16231e-8b24-4c19-9c0c-c91bdf1e42ba",
+        "editorial_document_id": "162cb874-fcdf-4be7-bb35-4899156e4526",
+        "occurrence_id": "b3d8eb53-e30c-4aa3-8c8e-89c405d8d190",
+        "entity_type": "artist",
+        "target_artist_id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+        "created_at": "2026-10-23T12:02:04.272214+00:00",
+        "updated_at": "2026-10-23T12:02:04.272214+00:00"
+      },
+      {
+        "id": "c4f16b2e-0d3e-479e-b893-ec59b1a9b824",
+        "editorial_document_id": "162cb874-fcdf-4be7-bb35-4899156e4526",
+        "occurrence_id": "fd626376-b8c6-454b-8fb6-f364b3876a8f",
+        "entity_type": "artist",
+        "target_artist_id": "ec8ba439-3772-49ff-a218-05f5dc615763",
+        "created_at": "2026-10-23T12:02:04.272214+00:00",
+        "updated_at": "2026-10-23T12:02:04.272214+00:00"
+      },
+      {
+        "id": "42b2781e-f75e-4dde-8e6b-36d8a21076b3",
+        "editorial_document_id": "162cb874-fcdf-4be7-bb35-4899156e4526",
+        "occurrence_id": "b08b3307-e272-4726-a4d2-dea5c6cd0ada",
+        "entity_type": "artist",
+        "target_artist_id": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+        "created_at": "2026-10-23T12:02:04.272214+00:00",
+        "updated_at": "2026-10-23T12:02:04.272214+00:00"
+      },
+      {
+        "id": "c7fbef3c-765c-4d3c-bc2d-97c844772e1a",
+        "editorial_document_id": "162cb874-fcdf-4be7-bb35-4899156e4526",
+        "occurrence_id": "8eea5218-be60-4e80-8687-a08d12574939",
+        "entity_type": "artist",
+        "target_artist_id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+        "created_at": "2026-10-23T12:02:04.272214+00:00",
+        "updated_at": "2026-10-23T12:02:04.272214+00:00"
+      },
+      {
+        "id": "c4f4e4f0-b529-4ec2-876a-d3e6cdd53776",
+        "editorial_document_id": "58de48a1-8eca-450c-8782-c5222530d1b2",
+        "occurrence_id": "7f8928a9-25df-475f-afef-1ac83c7b866d",
+        "entity_type": "artist",
+        "target_artist_id": "8e29188a-215b-4c6c-b34a-45b381765e46",
+        "created_at": "2026-10-23T12:02:04.441097+00:00",
+        "updated_at": "2026-10-23T12:02:04.441097+00:00"
+      },
+      {
+        "id": "80da6074-2dfb-47a9-b151-d40199c092c8",
+        "editorial_document_id": "58de48a1-8eca-450c-8782-c5222530d1b2",
+        "occurrence_id": "e6bc4606-7b8c-4fb8-90a4-bb010c15cee5",
+        "entity_type": "artist",
+        "target_artist_id": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+        "created_at": "2026-10-23T12:02:04.441097+00:00",
+        "updated_at": "2026-10-23T12:02:04.441097+00:00"
+      },
+      {
+        "id": "519aa08d-1849-49f1-966a-f147843acc92",
+        "editorial_document_id": "58de48a1-8eca-450c-8782-c5222530d1b2",
+        "occurrence_id": "950c7bbb-ecd8-4555-a555-eaa889668611",
+        "entity_type": "artist",
+        "target_artist_id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+        "created_at": "2026-10-23T12:02:04.441097+00:00",
+        "updated_at": "2026-10-23T12:02:04.441097+00:00"
+      },
+      {
+        "id": "6df87823-32a3-443d-bbae-009f3829526f",
+        "editorial_document_id": "58de48a1-8eca-450c-8782-c5222530d1b2",
+        "occurrence_id": "4e4462f3-5769-4158-a21b-b847b04c7eaa",
+        "entity_type": "artist",
+        "target_artist_id": "ec8ba439-3772-49ff-a218-05f5dc615763",
+        "created_at": "2026-10-23T12:02:04.441097+00:00",
+        "updated_at": "2026-10-23T12:02:04.441097+00:00"
+      },
+      {
+        "id": "c9754347-19e6-4459-beb2-7bb992c27202",
+        "editorial_document_id": "58de48a1-8eca-450c-8782-c5222530d1b2",
+        "occurrence_id": "343717de-6d6a-4b44-8399-cb5c073c2022",
+        "entity_type": "artist",
+        "target_artist_id": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+        "created_at": "2026-10-23T12:02:04.441097+00:00",
+        "updated_at": "2026-10-23T12:02:04.441097+00:00"
+      },
+      {
+        "id": "0730f42c-86ac-48da-b413-45e63e50f461",
+        "editorial_document_id": "58de48a1-8eca-450c-8782-c5222530d1b2",
+        "occurrence_id": "bebdefcc-2627-45e6-87e6-b5c22c8b1612",
+        "entity_type": "artist",
+        "target_artist_id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+        "created_at": "2026-10-23T12:02:04.441097+00:00",
+        "updated_at": "2026-10-23T12:02:04.441097+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-23T12:02:13.162Z",
+    "counts": {
+      "documents": 2,
+      "relations": 12,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

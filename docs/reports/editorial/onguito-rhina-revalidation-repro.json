@@ -1,0 +1,40 @@
+[
+  {
+    "slug": "onguito-wa",
+    "routeTags": [
+      "_N_T_/layout",
+      "_N_T_/[locale]/layout",
+      "_N_T_/[locale]/artists/layout",
+      "_N_T_/[locale]/artists/[slug]/layout",
+      "_N_T_/[locale]/artists/[slug]/page",
+      "_N_T_/es/artists/onguito-wa"
+    ],
+    "current": [
+      "_N_T_/es/artists/onguito-wa/page"
+    ],
+    "proposed": [
+      "_N_T_/es/artists/onguito-wa"
+    ],
+    "currentMatches": false,
+    "proposedMatches": true
+  },
+  {
+    "slug": "rhina-ramirez",
+    "routeTags": [
+      "_N_T_/layout",
+      "_N_T_/[locale]/layout",
+      "_N_T_/[locale]/artists/layout",
+      "_N_T_/[locale]/artists/[slug]/layout",
+      "_N_T_/[locale]/artists/[slug]/page",
+      "_N_T_/es/artists/rhina-ramirez"
+    ],
+    "current": [
+      "_N_T_/es/artists/rhina-ramirez/page"
+    ],
+    "proposed": [
+      "_N_T_/es/artists/rhina-ramirez"
+    ],
+    "currentMatches": false,
+    "proposedMatches": true
+  }
+]

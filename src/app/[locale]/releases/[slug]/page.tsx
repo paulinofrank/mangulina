@@ -54,7 +54,7 @@ function formatDate(release: ReleasePageData) {
 function formatDuration(ms: number | null) {
   if (!ms || ms <= 0) return "";
 
-  const totalSeconds = Math.round(ms / 1000);
+  const totalSeconds = ms < 1000 ? Math.round(ms) : Math.round(ms / 1000);
   const minutes = Math.floor(totalSeconds / 60);
   const seconds = totalSeconds % 60;
 

@@ -1,0 +1,566 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+        "name": "Luchy Vicioso",
+        "sort_name": "Vicioso, Luchy",
+        "type": "solo_artist",
+        "birth_year": 1950,
+        "death_year": 2019,
+        "created_at": "2026-10-19T14:41:39.624741+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Lucía",
+        "middle_name": "Fior Daliza",
+        "last_name": "Vicioso",
+        "second_last_name": "Alsina",
+        "stage_name": "Luchy Vicioso",
+        "date_of_birth": "1950-02-19",
+        "birth_place": "Santo Domingo",
+        "website": null,
+        "youtube": "@LuchyV123",
+        "facebook": "luchyviciosoofficial",
+        "instagram": "luchyviciosofficial",
+        "aliases": [
+          "Lucía Fior Daliza Vicioso Alsina",
+          "Lucía Fiordaliza Vicioso Alsina",
+          "Luchi Vicioso",
+          "La Dama de la Canción"
+        ],
+        "mbid": null,
+        "occupations": [],
+        "instruments": [
+          "voice"
+        ],
+        "genres": [
+          "ballads-bolero"
+        ],
+        "disambiguation": null,
+        "gender": "female",
+        "ended": false,
+        "mb_metadata": {},
+        "updated_at": "2026-10-19T14:42:39.176057+00:00",
+        "province": "Distrito Nacional",
+        "birth_day": 19,
+        "birth_month": 2,
+        "slug": "luchy-vicioso",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": "2019-02-18",
+        "status": "draft",
+        "primary_genre": "ballads",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": true,
+        "image_updated_at": "2026-10-19T14:42:39.479+00:00",
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "2cO5TBmBaY6gVTHpxJTgjI"
+      },
+      {
+        "id": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+        "name": "Cheo Zorrilla",
+        "slug": "cheo-zorrilla",
+        "status": "published"
+      },
+      {
+        "id": "072e44a9-8a54-4eee-a606-8162953f5154",
+        "name": "José Lacay",
+        "slug": "jose-lacay",
+        "status": "published"
+      },
+      {
+        "id": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+        "name": "Manuel Troncoso",
+        "slug": "manuel-troncoso",
+        "status": "published"
+      },
+      {
+        "id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+        "name": "Rafael Solano",
+        "slug": "rafael-solano",
+        "status": "published"
+      },
+      {
+        "id": "c1575281-d275-4f34-a721-9f02736132d2",
+        "name": "René del Risco Bermúdez",
+        "slug": "rene-del-risco-bermudez",
+        "status": "published"
+      },
+      {
+        "id": "faff18bd-3dbc-477a-bc38-859d611887f0",
+        "name": "Yaqui Núñez del Risco",
+        "slug": "yaqui-nunez-del-risco",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "ed6cb385-a64d-41d3-94f9-18008e557326",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Luchy Vicioso (born February 19, 1950, in Santo Domingo; died February 18, 2019), whose personal name was Lucía Fior Daliza Vicioso Alsina, was a Dominican singer associated with bolero and romantic song. Known as «La Dama de la Canción», she began performing as a child and built a career in television, stage entertainment and song festivals.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Childhood and television",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "At nine she auditioned for ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                    "displayText": "Rafael Solano",
+                    "occurrenceId": "c6918558-dde5-4d60-ba91-ff61de3dda58"
+                  }
+                },
+                {
+                  "text": " for the «Rahintel» programme «La hora del moro». Television appearances led to engagements in clubs and hotels. Retrospective accounts also place «Los jueves de Luchy» and her first long-playing record, «Matices», in her childhood; those accounts say she recorded the album at thirteen. Its precise edition and release chronology remain subjects for discographic research.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Repertoire and performance",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Vicioso performed Dominican compositions alongside songs known across Latin America. Her repertoire included «Tus ojos», «Año nuevo», «Canta mundo» and «Al nacer cada enero». Her collaboration with Solano was an enduring part of her work as an interpreter. The «LuchyV123» channel, linked by her Facebook page, preserves performances and an excerpt of «Como me besabas tú», sung with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "072e44a9-8a54-4eee-a606-8162953f5154",
+                    "displayText": "José Lacay",
+                    "occurrenceId": "62828d71-7a19-48bc-b199-25ad36899fc2"
+                  }
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Festivals and recognition",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Career retrospectives report that she won the 1975 «Festival de la Voz y la Canción de Puerto Rico» with «Dime que más debo dar por ti», by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "faff18bd-3dbc-477a-bc38-859d611887f0",
+                    "displayText": "Yaqui Núñez del Risco",
+                    "occurrenceId": "dba513b1-91a2-4423-9c92-70a1301922d2"
+                  }
+                },
+                {
+                  "text": " and ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "c1575281-d275-4f34-a721-9f02736132d2",
+                    "displayText": "René del Risco Bermúdez",
+                    "occurrenceId": "bb8f17a1-03cf-4962-b5b8-6b232ca596d5"
+                  }
+                },
+                {
+                  "text": ". She received a «Soberano Especial» in 2013 in recognition of her career in entertainment.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Personal life",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "She married Freddy Beras Goico in Santo Domingo on July 18, 1968. The «Instituto Dominicano de Genealogía» documents their two sons, Freddyn and Ernesto Máximo Beras Vicioso.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Vicioso died on February 18, 2019, the day before her sixty-ninth birthday. Family members and fellow performers remembered her voice and commitment to her work. Surviving recordings and television performances document her place in Dominican romantic song and in the generation of singers who emerged through television.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+        "created_at": "2026-10-19T14:42:38.100755+00:00",
+        "updated_at": "2026-10-19T14:42:38.100755+00:00",
+        "revision": 1
+      },
+      {
+        "id": "863193ff-ac8b-4d5e-b94e-33d0574b102a",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Luchy Vicioso (Santo Domingo, 19 de febrero de 1950–18 de febrero de 2019), cuyo nombre personal fue Lucía Fior Daliza Vicioso Alsina, fue una cantante dominicana vinculada al bolero y la canción romántica. Conocida como «La Dama de la Canción», desarrolló su carrera desde la televisión infantil hasta los escenarios y festivales de la canción.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "De la infancia a la televisión",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A los nueve años se presentó a una audición de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                    "displayText": "Rafael Solano",
+                    "occurrenceId": "beeed627-97c6-4aff-ab2f-7670f3819ba8"
+                  }
+                },
+                {
+                  "text": " para «La hora del moro», transmitido por «Rahintel». Aquella oportunidad abrió una trayectoria de actuaciones televisivas y presentaciones en clubes y hoteles. Las reseñas de su carrera sitúan también en su infancia el programa «Los jueves de Luchy» y su primer disco de larga duración, «Matices», grabado cuando tenía trece años. La fecha y edición de ese disco requieren todavía documentación discográfica.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Una intérprete de la canción dominicana",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su repertorio reunió canciones de autores dominicanos y piezas de circulación latinoamericana. Entre los títulos asociados a su voz figuran «Tus ojos», «Año nuevo», «Canta mundo» y «Al nacer cada enero». Su relación artística con Solano acompañó una carrera centrada en la interpretación. El canal «LuchyV123», enlazado desde su página de Facebook, conserva actuaciones y un fragmento del dúo «Como me besabas tú» con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "072e44a9-8a54-4eee-a606-8162953f5154",
+                    "displayText": "José Lacay",
+                    "occurrenceId": "efb9ed18-1ed9-4c8d-a3e8-0b228e204f89"
+                  }
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Festivales y reconocimientos",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Las retrospectivas de su trayectoria registran su triunfo en el «Festival de la Voz y la Canción de Puerto Rico» de 1975 con «Dime que más debo dar por ti», de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "faff18bd-3dbc-477a-bc38-859d611887f0",
+                    "displayText": "Yaqui Núñez del Risco",
+                    "occurrenceId": "c5dc3663-78bb-480e-baa4-26204ab6f7cc"
+                  }
+                },
+                {
+                  "text": " y ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "c1575281-d275-4f34-a721-9f02736132d2",
+                    "displayText": "René del Risco Bermúdez",
+                    "occurrenceId": "dfe1d65f-59ad-4cbe-9f05-28bf90bd1c33"
+                  }
+                },
+                {
+                  "text": ". En 2013 recibió un «Soberano Especial», reconocimiento reseñado por la prensa a su recorrido en el espectáculo.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Vida personal",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Contrajo matrimonio con Freddy Beras Goico en Santo Domingo el 18 de julio de 1968. De esa unión nacieron Freddyn y Ernesto Máximo Beras Vicioso, según la documentación del «Instituto Dominicano de Genealogía».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Falleció el 18 de febrero de 2019, un día antes de cumplir 69 años. Sus colegas y familiares la recordaron por su voz y su dedicación al oficio. Las grabaciones y actuaciones conservadas permiten seguir su aportación a la canción romántica dominicana y a una generación de intérpretes formada en la televisión.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+        "created_at": "2026-10-19T14:42:37.799607+00:00",
+        "updated_at": "2026-10-19T14:42:37.799607+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "7985e2d8-a2d1-493c-a1ad-6b41727ed826",
+        "editorial_document_id": "863193ff-ac8b-4d5e-b94e-33d0574b102a",
+        "occurrence_id": "beeed627-97c6-4aff-ab2f-7670f3819ba8",
+        "entity_type": "artist",
+        "target_artist_id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+        "created_at": "2026-10-19T14:42:37.799607+00:00",
+        "updated_at": "2026-10-19T14:42:37.799607+00:00"
+      },
+      {
+        "id": "38c14ce9-2700-46cb-8a8e-ebd71d9fe108",
+        "editorial_document_id": "863193ff-ac8b-4d5e-b94e-33d0574b102a",
+        "occurrence_id": "efb9ed18-1ed9-4c8d-a3e8-0b228e204f89",
+        "entity_type": "artist",
+        "target_artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+        "created_at": "2026-10-19T14:42:37.799607+00:00",
+        "updated_at": "2026-10-19T14:42:37.799607+00:00"
+      },
+      {
+        "id": "3613b745-e908-4b15-84ab-b027d63bdf01",
+        "editorial_document_id": "863193ff-ac8b-4d5e-b94e-33d0574b102a",
+        "occurrence_id": "c5dc3663-78bb-480e-baa4-26204ab6f7cc",
+        "entity_type": "artist",
+        "target_artist_id": "faff18bd-3dbc-477a-bc38-859d611887f0",
+        "created_at": "2026-10-19T14:42:37.799607+00:00",
+        "updated_at": "2026-10-19T14:42:37.799607+00:00"
+      },
+      {
+        "id": "389cc106-6d56-4f84-a1e7-f223c0694546",
+        "editorial_document_id": "863193ff-ac8b-4d5e-b94e-33d0574b102a",
+        "occurrence_id": "dfe1d65f-59ad-4cbe-9f05-28bf90bd1c33",
+        "entity_type": "artist",
+        "target_artist_id": "c1575281-d275-4f34-a721-9f02736132d2",
+        "created_at": "2026-10-19T14:42:37.799607+00:00",
+        "updated_at": "2026-10-19T14:42:37.799607+00:00"
+      },
+      {
+        "id": "df92cb64-a743-4dc8-9088-b09a4203dc4b",
+        "editorial_document_id": "ed6cb385-a64d-41d3-94f9-18008e557326",
+        "occurrence_id": "c6918558-dde5-4d60-ba91-ff61de3dda58",
+        "entity_type": "artist",
+        "target_artist_id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+        "created_at": "2026-10-19T14:42:38.100755+00:00",
+        "updated_at": "2026-10-19T14:42:38.100755+00:00"
+      },
+      {
+        "id": "990ee090-9c1c-4234-861f-b5c8c25c68e6",
+        "editorial_document_id": "ed6cb385-a64d-41d3-94f9-18008e557326",
+        "occurrence_id": "62828d71-7a19-48bc-b199-25ad36899fc2",
+        "entity_type": "artist",
+        "target_artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+        "created_at": "2026-10-19T14:42:38.100755+00:00",
+        "updated_at": "2026-10-19T14:42:38.100755+00:00"
+      },
+      {
+        "id": "4d6ec937-4d32-460f-89bd-625adc50eefa",
+        "editorial_document_id": "ed6cb385-a64d-41d3-94f9-18008e557326",
+        "occurrence_id": "dba513b1-91a2-4423-9c92-70a1301922d2",
+        "entity_type": "artist",
+        "target_artist_id": "faff18bd-3dbc-477a-bc38-859d611887f0",
+        "created_at": "2026-10-19T14:42:38.100755+00:00",
+        "updated_at": "2026-10-19T14:42:38.100755+00:00"
+      },
+      {
+        "id": "b1d3f487-60d1-4769-b098-90b7b6bfa18b",
+        "editorial_document_id": "ed6cb385-a64d-41d3-94f9-18008e557326",
+        "occurrence_id": "bb8f17a1-03cf-4962-b5b8-6b232ca596d5",
+        "entity_type": "artist",
+        "target_artist_id": "c1575281-d275-4f34-a721-9f02736132d2",
+        "created_at": "2026-10-19T14:42:38.100755+00:00",
+        "updated_at": "2026-10-19T14:42:38.100755+00:00"
+      }
+    ]
+  },
+  "report": {
+    "generatedAt": "2026-10-19T14:42:39.820Z",
+    "counts": {
+      "documents": 2,
+      "relations": 8,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  },
+  "portrait_sha256": "29e8c2ce85d79ed82ce4e85a667b85a0e6a3e8bcf2033eb8d8c058f34bff4906",
+  "publicUrl": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/artists-images/8c1e9af0-3ebc-4747-84a9-ada59d147845.webp"
+}

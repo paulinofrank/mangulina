@@ -1,0 +1,363 @@
+{
+  "date": "2026-11-11",
+  "authorization": "Editor supplied Jhensen EN/ES profile sheet in ongoing new-profile workflow. Create draft artist and validated published EN/ES biography documents.",
+  "scope": "Only Jhensen profile and biographies. No artist publication, shared artist changes, music imports or deployment.",
+  "before": null,
+  "after": {
+    "id": "4b5da83e-fc7f-497e-97e0-1518471b21eb",
+    "name": "Jhensen",
+    "stage_name": "Jhensen",
+    "sort_name": "Jhensen",
+    "slug": "jhensen",
+    "first_name": "Félix",
+    "middle_name": null,
+    "last_name": "Caraballo",
+    "second_last_name": "Leonidas",
+    "aliases": [
+      "Félix Caraballo Leonidas"
+    ],
+    "disambiguation": "Dominican romantic-ballad singer and songwriter based in Puerto Rico",
+    "type": "solo_artist",
+    "primary_role": "singer",
+    "occupations": [
+      "songwriter"
+    ],
+    "gender": "male",
+    "birth_place": "Bayagüana",
+    "province": "Monte Plata",
+    "date_of_birth": null,
+    "birth_year": null,
+    "primary_genre": "ballads",
+    "genres": [
+      "bachata"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "facebook": "JhensenCantautor",
+    "instagram": null,
+    "youtube": null,
+    "spotify": "329jhhEpDL1oM7hHcsl1Wr",
+    "website": null,
+    "status": "draft"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Jhensen, nombre artístico de Félix Caraballo Leonidas, es un cantante y compositor dominicano de balada romántica nacido el 30 de septiembre en Bayagüana, provincia Monte Plata. Criado en La Otra Banda, Higüey, desarrolló su carrera discográfica desde Puerto Rico. Sus grabaciones de los años ochenta y sus composiciones conectan la balada con una etapa posterior de bachata."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "De Bayagüana a Puerto Rico",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Después de su infancia en La Otra Banda, se radicó en Puerto Rico en 1967. Estableció su hogar en Carolina y allí inició su carrera profesional como cantante. El traslado situó su repertorio dominicano de canción romántica en el circuito musical puertorriqueño."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Las primeras grabaciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 1981 publicó «Cuando te sientas sola» con el sello venezolano «Velvet». El álbum incluyó la canción titular, escrita por él, y su interpretación de «El amor no tiene tiempo ni edad», composición de Teddy Jauren y Roberto Livi. En 1982 siguió «Yo también amé igual que tú» y en 1984 apareció «Amiga mía». Esta última producción contiene «En ruinas», obra de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                  "occurrenceId": "6979b9f8-ed46-41ee-8e57-1fcae3a3f058",
+                  "displayText": "Rafael Solano"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Composición y bachata",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Durante los años noventa continuó grabando; su propia biografía identifica una producción titulada «Lo nuevo de Jhensen» y la canción «Déjame libre mujer». En 1999 publicó «Ay amor», que incluye una versión suya de «Pienso en ti». Posteriormente, "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3dd83e6b-2058-4d04-ac68-38e11d9348a9",
+                  "occurrenceId": "a914c148-8205-417f-9520-0594a5fbce72",
+                  "displayText": "Frank Reyes"
+                }
+              },
+              {
+                "type": "text",
+                "text": " grabó esa composición y la incluyó en su álbum «Pienso en ti» de 2006. Jhensen también llevó su repertorio hacia la bachata con el sencillo «Te seguiré» en 2014."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trayectoria reúne la interpretación de baladas, la escritura de canciones y su circulación entre República Dominicana y Puerto Rico. «Cuando te sientas sola» identifica sus comienzos discográficos; la grabación de «Pienso en ti» por Frank Reyes extendió una de sus composiciones a otro género y a otro público."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Jhensen, the stage name of Félix Caraballo Leonidas, is a Dominican romantic ballad singer and songwriter born on September 30 in Bayagüana, Monte Plata province. Raised in La Otra Banda, Higüey, he built his recording career in Puerto Rico. His 1980s recordings and songwriting connect romantic ballads with a later turn toward bachata."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From Bayagüana to Puerto Rico",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "After spending his childhood in La Otra Banda, he settled in Puerto Rico in 1967. He made his home in Carolina and began his professional singing career there, bringing a Dominican romantic-song repertoire into the Puerto Rican music scene."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early recordings",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 1981 he released «Cuando te sientas sola» on the Venezuelan label «Velvet». The album included his self-written title song and his interpretation of «El amor no tiene tiempo ni edad», written by Teddy Jauren and Roberto Livi. «Yo también amé igual que tú» followed in 1982, and «Amiga mía» appeared in 1984. The latter album includes «En ruinas», a composition by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                  "occurrenceId": "832d8a81-8cb2-4593-a45c-6b7b9be99f02",
+                  "displayText": "Rafael Solano"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Songwriting and bachata",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "He continued recording in the 1990s; his own biography identifies a production titled «Lo nuevo de Jhensen» and the song «Déjame libre mujer». In 1999 he released «Ay amor», which includes his own recording of «Pienso en ti». "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3dd83e6b-2058-4d04-ac68-38e11d9348a9",
+                  "occurrenceId": "83869c80-9c29-4b4f-947c-9a04e0db5fd6",
+                  "displayText": "Frank Reyes"
+                }
+              },
+              {
+                "type": "text",
+                "text": " subsequently recorded the composition for his 2006 album «Pienso en ti». Jhensen also moved toward bachata with the 2014 single «Te seguiré»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His career combines ballad singing, songwriting and musical exchange between the Dominican Republic and Puerto Rico. «Cuando te sientas sola» marks his recording beginnings; Frank Reyes's recording of «Pienso en ti» carried one of his songs into another genre and to another audience."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "3dd83e6b-2058-4d04-ac68-38e11d9348a9",
+      "name": "Frank Reyes",
+      "slug": "frank-reyes",
+      "status": "published"
+    },
+    {
+      "id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+      "name": "Rafael Solano",
+      "slug": "rafael-solano",
+      "status": "published"
+    }
+  ],
+  "backward_reference_audit": {
+    "pending": [],
+    "legacyMatches": []
+  },
+  "field_evidence": {
+    "identity": "Artist-controlled ReverbNation biography and Facebook JhensenCantautor state Félix Caraballo Leonidas; distinct from Hansel.",
+    "birth": "ReverbNation states born Bayagüana; Facebook About states September 30 but no year. Bayagüana is in Monte Plata. Date and birth_year remain null.",
+    "upbringing": "ReverbNation biography states raised in La Otra Banda, Higüey; Facebook About lists Higüey as city of origin, distinct from birth place.",
+    "career": "Artist-controlled ReverbNation biography supplies the 1967 move, albums and 2014 bachata single. Spotify main profile independently displays the 1981, 1984 and 1999 albums.",
+    "songwriting": "Artist-controlled ReverbNation account says Frank Reyes recorded Pienso en ti; Amazon Music lists Jhensen’s 1999 album with the song and Apple Music lists Frank Reyes’s recording. No work credit imported.",
+    "genre_role_tag": "Self-description and recorded catalog support singer/songwriter, ballads with later bachata, voice and secular repertoire.",
+    "facebook": "ReverbNation links facebook.com/JhensenCantautor; page displays the complete personal name.",
+    "spotify": "Spotify artist 329jhhEpDL1oM7hHcsl1Wr displays Jhensen and the three identified albums; separate collaboration-only ID not merged."
+  },
+  "sources": [
+    "https://www.reverbnation.com/jhensen",
+    "https://www.facebook.com/JhensenCantautor/about",
+    "https://open.spotify.com/artist/329jhhEpDL1oM7hHcsl1Wr",
+    "https://music.amazon.com.au/albums/B01EPF75QW",
+    "https://music.apple.com/us/song/255086137"
+  ],
+  "unresolved": [
+    "Birth year unknown; September 30 cannot populate date_of_birth or generated birthday calendar.",
+    "No verified official Instagram, YouTube or TikTok handle.",
+    "No portrait supplied or uploaded.",
+    "The precise edition/date of some nondigitized records and composition credits require a separate discography review."
+  ],
+  "exclusions": [
+    "No artist publication",
+    "No discography/credit import",
+    "No other artist or shared-record change",
+    "No security/schema/application change",
+    "No deployment, public draft URL request or manual cache refresh"
+  ]
+}

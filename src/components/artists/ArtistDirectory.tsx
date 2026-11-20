@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { getPathname, useRouter } from "@/i18n/navigation";
 import { getSupabaseClient } from "@/lib/supabase";
 import ArtistCard from "@/components/molecules/ArtistCard";
+import { formatSubgenreLabel } from "@/lib/subgenreLabel";
 import JsonLd from "@/components/seo/JsonLd";
 import type { Artist } from "@/types/music";
 import type {
@@ -713,9 +714,13 @@ function ArtistsContent({
           const option = genreOptions.find(
             (item) => (item.slug || item.name) === genreFilter,
           );
-          query = option?.matchValues?.length
-            ? query.or(buildGenreMatchFilter(option.matchValues))
-            : query.eq("primary_genre", genreFilter);
+          if (role === "singer") {
+            query = query.in("primary_genre", option?.matchValues?.length ? option.matchValues : [genreFilter]);
+          } else {
+            query = option?.matchValues?.length
+              ? query.or(buildGenreMatchFilter(option.matchValues))
+              : query.eq("primary_genre", genreFilter);
+          }
         }
 
         if (subgenreFilter) {
@@ -1001,8 +1006,12 @@ function ArtistsContent({
       .filter(Boolean)
       .join(" ");
     const tagLabel = [contextLabel, statusLabel].filter(Boolean).join(" ");
+    const selectedSubgenre = subgenreOptions.find((item) => item.name === subgenreFilter);
     const genreLabel =
-      subgenreOptions.find((item) => item.name === subgenreFilter)?.name ??
+      (selectedSubgenre ? formatSubgenreLabel(
+        genreOptions.find((item) => String(item.id) === String(selectedSubgenre.genre_id))?.name,
+        selectedSubgenre.name,
+      ) : null) ??
       genreOptions.find((item) => (item.slug || item.name) === genreFilter)?.name ??
       null;
 
@@ -1200,7 +1209,7 @@ function ArtistsContent({
                         <option value={`genre:${genreValue}`}>{genre.name}</option>
                         {subgenres.map((subgenre) => (
                           <option key={subgenre.id} value={`subgenre:${subgenre.name}`}>
-                            {subgenre.name}
+                            {formatSubgenreLabel(genre.name, subgenre.name)}
                           </option>
                         ))}
                       </optgroup>
@@ -1400,7 +1409,7 @@ function ArtistsContent({
                           <option value={`genre:${genreValue}`}>{genre.name}</option>
                           {subgenres.map((subgenre) => (
                             <option key={subgenre.id} value={`subgenre:${subgenre.name}`}>
-                              {subgenre.name}
+                              {formatSubgenreLabel(genre.name, subgenre.name)}
                             </option>
                           ))}
                         </optgroup>

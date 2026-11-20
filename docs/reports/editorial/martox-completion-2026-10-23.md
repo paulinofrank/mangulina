@@ -1,0 +1,9 @@
+# Martox — completed draft profile
+
+Before: no matching artist. After: fe960a3e-4aa3-4c27-921b-d8bdb4394aae, slug martox, type duo, draft. Payload and sources: martox-profile-manifest.json / martox-research-2026-10-23.md. Origin Santiago de los Caballeros, province Santiago. Personal name/gender/birthdate fields not applicable; formation year remains unverified. Primary musician; producer/songwriter additional; fusion primary, electronic/bachata/merengue/bolero additional, secular. Website and normalized handles/Spotify verified through own site/Komi/channel cross-links.
+
+English document f08793b3-66e9-42a0-b8db-a9ca4e059f44 and Spanish25a4ff4d-e073-4976-9e27-77891310febe published revision1. Saved field comparison passed. Both document validators passed;8structuredreferences; integrity0blocking/0warning. Authenticated admin reloaded, selected group workspace and Martox, verified Duo and selected additional genres; read both complete biography editors, publishedrevision1 each. Screenshot martox-visual-review.png saved and inspected. No UI save/publication performed during visual check.
+
+Created files under docs/reports/editorial: martox-inspect.mjs, martox-inspection.json, martox-profile-content.json, martox-create-profile.ts, martox-profile-manifest.json, martox-research-2026-10-23.md, martox-saved-verification.json, martox-visual-review.png, this report. No existing files or other artist records edited.
+
+Pending: portrait described but no attachment, no image uploaded; formation year unknown. Caracol expanded edition counts differ12Bandcamp/14web-and-press, omitted exactcount in biography. SeSienteDiferente2021 corroborated contemporarypress versus current2022provider dates. TU SUPITE literal provider title retained. No member records or relationships created; no discography imported; no artist publication, security change, cache refresh, deployment or broad production checks.

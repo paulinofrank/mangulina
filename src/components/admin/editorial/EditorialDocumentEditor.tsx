@@ -114,16 +114,19 @@ export default function EditorialDocumentEditor({ ownerArtistId, locale, initial
   }
 
   async function save(nextStatus: "draft" | "published") {
-    if (!editor) return;
+    if (!editor || saving || stale) return;
     const validation = prepareEditorialDocumentForSave(editor.getJSON() as EditorialDocumentV1);
     if (!validation.ok) { setIssues(validation.issues); setMessage("Fix the validation errors before saving."); return; }
     const document = validation.document;
     if (nextStatus === "published" && empty && !window.confirm("Publishing an empty structured biography will suppress the legacy biography. Continue?")) return;
-    setSaving(true); setIssues([]); setMessage(""); setStale(false);
+    setSaving(true); setIssues([]); setMessage("");
     try {
       const { response, result } = await saveAdminEditorialDocument({ documentType: "artist_biography", ownerArtistId, locale, schemaVersion: 1, status: nextStatus, document, expectedRevision: revision });
       const outcome = classifyEditorialSaveResponse(response.status, response.ok && result.ok);
-      if (outcome === "stale") { setStale(true); setMessage("A newer saved version exists. Your unsaved biography is preserved."); return; }
+      if (outcome === "stale") {
+        setStale(true);
+        return;
+      }
       if (outcome === "error") { setMessage(!result.ok ? result.error : "Save failed."); return; }
       if (!result.ok) { setMessage(result.error); return; }
       setDocumentId(result.document.id); setRevision(result.document.revision); setStatus(result.document.status);
@@ -136,8 +139,8 @@ export default function EditorialDocumentEditor({ ownerArtistId, locale, initial
 
   const documentActions = (
     <>
-      <button type="button" disabled={saving} onClick={() => void save("draft")} className="inline-flex items-center gap-2 rounded bg-gray-700 px-4 py-2 text-sm text-white disabled:opacity-40"><Save size={15}/>Save draft</button>
-      <button type="button" disabled={saving} onClick={() => void save("published")} className="inline-flex items-center gap-2 rounded bg-(--color-flagblue) px-4 py-2 text-sm text-white disabled:opacity-40">Publish</button>
+      <button type="button" disabled={saving || stale} onClick={() => void save("draft")} className="inline-flex items-center gap-2 rounded bg-gray-700 px-4 py-2 text-sm text-white disabled:opacity-40"><Save size={15}/>Save draft</button>
+      <button type="button" disabled={saving || stale} onClick={() => void save("published")} className="inline-flex items-center gap-2 rounded bg-(--color-flagblue) px-4 py-2 text-sm text-white disabled:opacity-40">Publish</button>
       {dirty && <span className="self-center text-xs font-medium text-amber-700">Unsaved changes</span>}
     </>
   );
@@ -191,7 +194,9 @@ export default function EditorialDocumentEditor({ ownerArtistId, locale, initial
         {preview ? <SafeEditorPreview document={editor.getJSON() as EditorialDocumentV1}/> : <EditorContent editor={editor}/>} 
       </div>
       {issues.length > 0 && <ul role="alert" className="mx-4 mb-3 list-disc pl-5 text-sm text-red-700">{issues.map((issue) => <li key={`${issue.path}:${issue.message}`}>{issue.path}: {issue.message}</li>)}</ul>}
-      {message && <p role="status" className={`mx-4 mb-3 text-sm ${stale ? "text-amber-800" : "text-gray-700"}`}>{message}</p>}
+      {stale ? (
+        <p role="status" className="mx-4 mb-3 text-sm text-amber-800">A newer saved version exists. Copy any unsaved edits you want to keep, then reload the saved version before saving again.</p>
+      ) : message && <p role="status" className="mx-4 mb-3 text-sm text-gray-700">{message}</p>}
       {stale && <button type="button" onClick={async () => { if (window.confirm("Reloading will replace your unsaved changes. Continue?")) await onReloadRequested(); }} className="mx-4 mb-3 inline-flex items-center gap-2 rounded border px-3 py-2 text-sm"><RotateCcw size={15}/>Reload saved version</button>}
       {actionsSlot
         ? createPortal(documentActions, actionsSlot)

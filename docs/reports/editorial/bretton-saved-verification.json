@@ -1,0 +1,682 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "6454a95c-0d60-499d-b2c3-4ad262efb7e6",
+        "name": "Brettón",
+        "sort_name": "Brettón",
+        "type": "solo_artist",
+        "birth_year": 1981,
+        "death_year": null,
+        "created_at": "2026-09-23T20:10:30.303245+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Emmanuel",
+        "middle_name": null,
+        "last_name": "Bretón",
+        "second_last_name": null,
+        "stage_name": "Brettón",
+        "date_of_birth": "1981-06-25",
+        "birth_place": null,
+        "website": "https://soybretton.com/",
+        "youtube": "@soybretton",
+        "facebook": "SoyBretton",
+        "instagram": "soybretton",
+        "aliases": [
+          "Emmanuel Bretón",
+          "Enmanuel Bretón",
+          "Bretton"
+        ],
+        "mbid": null,
+        "occupations": [
+          "songwriter",
+          "producer"
+        ],
+        "instruments": [
+          "voice",
+          "guitar"
+        ],
+        "genres": [
+          "rock",
+          "ballads"
+        ],
+        "disambiguation": "Dominican singer-songwriter from Santiago de los Caballeros",
+        "gender": "male",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-24T13:38:11.394619+00:00",
+        "province": "Santiago",
+        "birth_day": 25,
+        "birth_month": 6,
+        "slug": "bretton",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "fusion",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "4NF60hbzMzeKZsHBD8nLqm"
+      },
+      {
+        "id": "04357246-5115-4b47-b73b-e72786e9ec22",
+        "name": "Sabrina Estepan",
+        "slug": "sabrina-estepan",
+        "status": "published"
+      },
+      {
+        "id": "54f14366-01f7-4ba5-9520-37e5788ab115",
+        "name": "Rose Mateo",
+        "slug": "rose-mateo",
+        "status": "published"
+      },
+      {
+        "id": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+        "name": "Pat Pereyra",
+        "slug": "pat-pereyra",
+        "status": "published"
+      },
+      {
+        "id": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+        "name": "Janio Lora",
+        "slug": "janio-lora",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "667c44ce-f0f7-470e-8220-861041b3a897",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Brettón, the professional name of Emmanuel Bretón, is a Dominican singer, songwriter and producer born on June 25, 1981, and originally from Santiago de los Caballeros. His music brings pop, rock and romantic ballads into a songwriting practice concerned with relationships and personal change. He also works in graphic design, photography and audiovisual production.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Music in Santiago",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Raised in a family of musicians and educators, he began exploring music in childhood. His early work included Santiago projects such as «Plasma» and «Punto G». In 2018 Centro León documented his performance in its Patio Caribeño, where he sang original pieces including «Momentos compartidos», «Transparente» and «Tu nombre» with other local musicians. He also contributed to recordings by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+                    "displayText": "Pat Pereyra",
+                    "occurrenceId": "af4a4097-1645-4ec0-9a44-d6949cd79751"
+                  }
+                },
+                {
+                  "text": ", including her production «Mestura».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "From «Contraluz» to a full-length album",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His 2018 EP «Contraluz» contained five self-written songs produced by José Luis Freitas. In May 2021 he introduced his first full-length album, «Todo un Universo por Vivir», developed with Freitas for «Fundación Revolución Sonora». Its collaborators included ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+                    "displayText": "Pat Pereyra",
+                    "occurrenceId": "6b11cb0d-09b0-432c-84a5-13fcebe6a791"
+                  }
+                },
+                {
+                  "text": ", ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "04357246-5115-4b47-b73b-e72786e9ec22",
+                    "displayText": "Sabrina Estepan",
+                    "occurrenceId": "cdfd7cc1-3712-4d74-9d92-17e18ce9595c"
+                  }
+                },
+                {
+                  "text": ", ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+                    "displayText": "Janio Lora",
+                    "occurrenceId": "bebfbae0-b3bf-4e56-8050-ccbe17e58ab8"
+                  }
+                },
+                {
+                  "text": " and Addy Núñez. The project includes «A Contraluz» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "04357246-5115-4b47-b73b-e72786e9ec22",
+                    "displayText": "Sabrina Estepan",
+                    "occurrenceId": "91f7f42d-dbe9-4423-b07a-843992f6ed83"
+                  }
+                },
+                {
+                  "text": ", «Ruinas» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+                    "displayText": "Pat Pereyra",
+                    "occurrenceId": "d06af219-f543-44d5-99ec-0e4196000a46"
+                  }
+                },
+                {
+                  "text": ", «Mala suerte» and «La piel que nos creamos».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Songs and their images",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Speaking to LAUD in 2022, he described making the album as a process of learning to trust his singing and compositions. His visual work forms another part of that practice: he has directed, written and edited his own videos, including «Nuestro amor», filmed in Bogotá. In 2024 he joined ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "54f14366-01f7-4ba5-9520-37e5788ab115",
+                    "displayText": "Rose Mateo",
+                    "occurrenceId": "819506d0-37c4-4bde-8f56-dc5e66c61165"
+                  }
+                },
+                {
+                  "text": " on «Deseándonos ir», a ballad about a couple choosing to separate.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A further recording project",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In 2025 he released «Caso perdido» and «Qué bonito lo bonito» as previews of a new recording project. His own biography identifies both as self-written and self-produced. These songs continue his interest in intimate relationships, using arrangements that move between ballad and pop rock.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His career connects Santiago's local music scene with independent recording and visual production. His collaborations and releases bring songwriting, performance and image-making together within a single artistic practice.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "6454a95c-0d60-499d-b2c3-4ad262efb7e6",
+        "created_at": "2026-10-24T13:38:11.729799+00:00",
+        "updated_at": "2026-10-24T13:38:11.729799+00:00",
+        "revision": 1
+      },
+      {
+        "id": "c7c40810-198c-4688-bc4c-51824f850f29",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Brettón, nombre artístico de Emmanuel Bretón, es un cantante, compositor y productor dominicano nacido el 25 de junio de 1981 y oriundo de Santiago de los Caballeros. Su propuesta combina pop, rock y balada con una canción de autor centrada en las relaciones y los cambios personales. Además de su actividad musical, trabaja en diseño gráfico, fotografía y creación audiovisual.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La escena de Santiago",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Creció en una familia de músicos y educadores y comenzó a acercarse a la música desde niño. En Santiago participó en proyectos como «Plasma» y «Punto G». Centro León documentó en 2018 una presentación suya en el Patio Caribeño: interpretó composiciones como «Momentos compartidos», «Transparente» y «Tu nombre», acompañado por otros músicos locales. También colaboró en grabaciones de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+                    "displayText": "Pat Pereyra",
+                    "occurrenceId": "c4bf3bf2-e930-422a-9643-b671dc7961ff"
+                  }
+                },
+                {
+                  "text": ", entre ellas su producción «Mestura».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "De «Contraluz» a «Todo un Universo por Vivir»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 2018 publicó «Contraluz», un EP de cinco canciones de su autoría producido por José Luis Freitas. En mayo de 2021 presentó su primer álbum de larga duración, «Todo un Universo por Vivir», realizado con Freitas para la «Fundación Revolución Sonora». Participaron ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+                    "displayText": "Pat Pereyra",
+                    "occurrenceId": "bbed92e5-a22c-4b83-9d9c-1fef72936452"
+                  }
+                },
+                {
+                  "text": ", ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "04357246-5115-4b47-b73b-e72786e9ec22",
+                    "displayText": "Sabrina Estepan",
+                    "occurrenceId": "f24c0a14-3729-47c1-a39b-19a401a85007"
+                  }
+                },
+                {
+                  "text": ", ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+                    "displayText": "Janio Lora",
+                    "occurrenceId": "622ba8f7-7653-419e-adce-e9a90571d2bd"
+                  }
+                },
+                {
+                  "text": " y Addy Núñez. Entre las canciones del proyecto figuran «A Contraluz», junto a ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "04357246-5115-4b47-b73b-e72786e9ec22",
+                    "displayText": "Sabrina Estepan",
+                    "occurrenceId": "2f1bca3e-8154-4a64-81bd-1bd12986f44b"
+                  }
+                },
+                {
+                  "text": ", «Ruinas», con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+                    "displayText": "Pat Pereyra",
+                    "occurrenceId": "a1f0295d-ed7b-439c-ab61-21e4633150da"
+                  }
+                },
+                {
+                  "text": ", «Mala suerte» y «La piel que nos creamos».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Canciones y trabajo audiovisual",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En una entrevista de 2022 con LAUD explicó que la realización del álbum estuvo ligada a un proceso de confianza en su voz y sus composiciones. Su trabajo visual acompaña esa búsqueda: ha asumido tareas de dirección, guion y edición en sus propios videos, como «Nuestro amor», rodado en Bogotá. En 2024 publicó «Deseándonos ir» junto a ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "54f14366-01f7-4ba5-9520-37e5788ab115",
+                    "displayText": "Rose Mateo",
+                    "occurrenceId": "de91a788-3453-4fc7-8268-6f11e72c5462"
+                  }
+                },
+                {
+                  "text": ", una balada sobre una pareja que decide separarse.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Una nueva etapa",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 2025 lanzó «Caso perdido» y «Qué bonito lo bonito» como anticipos de un nuevo proyecto discográfico. Su propia biografía los presenta como canciones de su autoría y autoproducidas. Su repertorio mantiene la atención en la intimidad de las relaciones, con arreglos que transitan entre la balada y el pop rock.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su trayectoria enlaza la escena musical de Santiago con la producción independiente y el trabajo visual. Sus colaboraciones y grabaciones muestran una práctica en la que la escritura de canciones, la interpretación y la creación de imágenes forman parte de un mismo proyecto artístico.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "6454a95c-0d60-499d-b2c3-4ad262efb7e6",
+        "created_at": "2026-10-24T13:38:11.549496+00:00",
+        "updated_at": "2026-10-24T13:38:11.549496+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "97da5cfa-0cab-419b-b9df-2d64e3b4e470",
+        "editorial_document_id": "c7c40810-198c-4688-bc4c-51824f850f29",
+        "occurrence_id": "c4bf3bf2-e930-422a-9643-b671dc7961ff",
+        "entity_type": "artist",
+        "target_artist_id": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+        "created_at": "2026-10-24T13:38:11.549496+00:00",
+        "updated_at": "2026-10-24T13:38:11.549496+00:00"
+      },
+      {
+        "id": "dde226a9-d28e-4669-b01b-66df1677beca",
+        "editorial_document_id": "c7c40810-198c-4688-bc4c-51824f850f29",
+        "occurrence_id": "bbed92e5-a22c-4b83-9d9c-1fef72936452",
+        "entity_type": "artist",
+        "target_artist_id": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+        "created_at": "2026-10-24T13:38:11.549496+00:00",
+        "updated_at": "2026-10-24T13:38:11.549496+00:00"
+      },
+      {
+        "id": "0696d80b-a11d-40ab-a0d8-e8a6879cff36",
+        "editorial_document_id": "c7c40810-198c-4688-bc4c-51824f850f29",
+        "occurrence_id": "f24c0a14-3729-47c1-a39b-19a401a85007",
+        "entity_type": "artist",
+        "target_artist_id": "04357246-5115-4b47-b73b-e72786e9ec22",
+        "created_at": "2026-10-24T13:38:11.549496+00:00",
+        "updated_at": "2026-10-24T13:38:11.549496+00:00"
+      },
+      {
+        "id": "f7efefc3-b8b3-4221-9816-4ca0d3d58713",
+        "editorial_document_id": "c7c40810-198c-4688-bc4c-51824f850f29",
+        "occurrence_id": "622ba8f7-7653-419e-adce-e9a90571d2bd",
+        "entity_type": "artist",
+        "target_artist_id": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+        "created_at": "2026-10-24T13:38:11.549496+00:00",
+        "updated_at": "2026-10-24T13:38:11.549496+00:00"
+      },
+      {
+        "id": "97465b0a-c9b3-4184-80b1-87d54e76d2ee",
+        "editorial_document_id": "c7c40810-198c-4688-bc4c-51824f850f29",
+        "occurrence_id": "2f1bca3e-8154-4a64-81bd-1bd12986f44b",
+        "entity_type": "artist",
+        "target_artist_id": "04357246-5115-4b47-b73b-e72786e9ec22",
+        "created_at": "2026-10-24T13:38:11.549496+00:00",
+        "updated_at": "2026-10-24T13:38:11.549496+00:00"
+      },
+      {
+        "id": "fc783860-83b7-4ccf-9f80-69ba93889382",
+        "editorial_document_id": "c7c40810-198c-4688-bc4c-51824f850f29",
+        "occurrence_id": "a1f0295d-ed7b-439c-ab61-21e4633150da",
+        "entity_type": "artist",
+        "target_artist_id": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+        "created_at": "2026-10-24T13:38:11.549496+00:00",
+        "updated_at": "2026-10-24T13:38:11.549496+00:00"
+      },
+      {
+        "id": "31f38065-e4b0-48ab-8a08-a2b1e6c115d7",
+        "editorial_document_id": "c7c40810-198c-4688-bc4c-51824f850f29",
+        "occurrence_id": "de91a788-3453-4fc7-8268-6f11e72c5462",
+        "entity_type": "artist",
+        "target_artist_id": "54f14366-01f7-4ba5-9520-37e5788ab115",
+        "created_at": "2026-10-24T13:38:11.549496+00:00",
+        "updated_at": "2026-10-24T13:38:11.549496+00:00"
+      },
+      {
+        "id": "dc5f3e0c-6bad-46ff-baf2-d5f3b90d661a",
+        "editorial_document_id": "667c44ce-f0f7-470e-8220-861041b3a897",
+        "occurrence_id": "af4a4097-1645-4ec0-9a44-d6949cd79751",
+        "entity_type": "artist",
+        "target_artist_id": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+        "created_at": "2026-10-24T13:38:11.729799+00:00",
+        "updated_at": "2026-10-24T13:38:11.729799+00:00"
+      },
+      {
+        "id": "ee1599fd-17c2-4d61-8323-20fa7e07a439",
+        "editorial_document_id": "667c44ce-f0f7-470e-8220-861041b3a897",
+        "occurrence_id": "6b11cb0d-09b0-432c-84a5-13fcebe6a791",
+        "entity_type": "artist",
+        "target_artist_id": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+        "created_at": "2026-10-24T13:38:11.729799+00:00",
+        "updated_at": "2026-10-24T13:38:11.729799+00:00"
+      },
+      {
+        "id": "871d21b6-7b92-491b-95f0-109f752fe84c",
+        "editorial_document_id": "667c44ce-f0f7-470e-8220-861041b3a897",
+        "occurrence_id": "cdfd7cc1-3712-4d74-9d92-17e18ce9595c",
+        "entity_type": "artist",
+        "target_artist_id": "04357246-5115-4b47-b73b-e72786e9ec22",
+        "created_at": "2026-10-24T13:38:11.729799+00:00",
+        "updated_at": "2026-10-24T13:38:11.729799+00:00"
+      },
+      {
+        "id": "301db259-6a16-4b75-ba20-0f88be25ab8f",
+        "editorial_document_id": "667c44ce-f0f7-470e-8220-861041b3a897",
+        "occurrence_id": "bebfbae0-b3bf-4e56-8050-ccbe17e58ab8",
+        "entity_type": "artist",
+        "target_artist_id": "bf7d46da-a169-4174-b3cd-6974f6cfad15",
+        "created_at": "2026-10-24T13:38:11.729799+00:00",
+        "updated_at": "2026-10-24T13:38:11.729799+00:00"
+      },
+      {
+        "id": "3c59d094-bd2c-4469-92de-f76a741d15de",
+        "editorial_document_id": "667c44ce-f0f7-470e-8220-861041b3a897",
+        "occurrence_id": "91f7f42d-dbe9-4423-b07a-843992f6ed83",
+        "entity_type": "artist",
+        "target_artist_id": "04357246-5115-4b47-b73b-e72786e9ec22",
+        "created_at": "2026-10-24T13:38:11.729799+00:00",
+        "updated_at": "2026-10-24T13:38:11.729799+00:00"
+      },
+      {
+        "id": "972ebb23-668a-481f-9193-e36a82f03066",
+        "editorial_document_id": "667c44ce-f0f7-470e-8220-861041b3a897",
+        "occurrence_id": "d06af219-f543-44d5-99ec-0e4196000a46",
+        "entity_type": "artist",
+        "target_artist_id": "8108b183-418e-415e-bc5f-9202e7ee55c9",
+        "created_at": "2026-10-24T13:38:11.729799+00:00",
+        "updated_at": "2026-10-24T13:38:11.729799+00:00"
+      },
+      {
+        "id": "e34637ad-e01b-498a-bc4a-889f775b5eb6",
+        "editorial_document_id": "667c44ce-f0f7-470e-8220-861041b3a897",
+        "occurrence_id": "819506d0-37c4-4bde-8f56-dc5e66c61165",
+        "entity_type": "artist",
+        "target_artist_id": "54f14366-01f7-4ba5-9520-37e5788ab115",
+        "created_at": "2026-10-24T13:38:11.729799+00:00",
+        "updated_at": "2026-10-24T13:38:11.729799+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-24T13:38:14.966Z",
+    "counts": {
+      "documents": 2,
+      "relations": 14,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

@@ -1,5 +1,10 @@
 # Mangulina Documentation
 
+For all assistants, start with [AGENTS.md](../AGENTS.md). For discography research and catalog work, read the active [discography protocol](discography.md). Historical implementation/import reports are supporting context, not execution authority.
+
+For artist profile creation and correction, use [ARTIST_PROFILE_WORKFLOW.md](ARTIST_PROFILE_WORKFLOW.md), including the required field research and saved-form verification checklist.
+
+
 **Welcome to the Mangulina Project Documentation.**
 
 This directory contains the authoritative guides for developing, contributing to, and understanding the Mangulina Dominican Music Database.

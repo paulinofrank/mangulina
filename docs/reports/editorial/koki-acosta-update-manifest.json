@@ -1,0 +1,1464 @@
+{
+  "id": "f59bf55e-5463-43da-802d-d55bd0db8b0d",
+  "date": "2026-10-24",
+  "authorization": "Actualiza la ficha, after sourced read-only review; update scoped fields and both published biographies.",
+  "before": {
+    "id": "f59bf55e-5463-43da-802d-d55bd0db8b0d",
+    "name": "Koki Acosta",
+    "sort_name": "Acosta, Koki",
+    "type": "solo_artist",
+    "birth_year": 1959,
+    "death_year": null,
+    "created_at": "2026-10-24T16:49:28.824264+00:00",
+    "views": 1,
+    "wikidata_id": null,
+    "first_name": "Rafael",
+    "middle_name": null,
+    "last_name": "Acosta",
+    "second_last_name": "Álvarez",
+    "stage_name": "Koki Acosta",
+    "date_of_birth": "1959-10-24",
+    "birth_place": "Santo Domingo",
+    "website": null,
+    "youtube": "@koquiacostacristovive",
+    "facebook": "koqui.acosta.165",
+    "instagram": null,
+    "aliases": [
+      "Koqui Acosta",
+      "Coqui Acosta",
+      "Rafael Acosta Álvarez",
+      "Rafael Acosta"
+    ],
+    "mbid": null,
+    "occupations": [
+      "arranger",
+      "musician",
+      "composer"
+    ],
+    "instruments": [],
+    "genres": [],
+    "disambiguation": null,
+    "gender": "male",
+    "ended": null,
+    "mb_metadata": {},
+    "updated_at": "2026-10-24T16:55:42.725395+00:00",
+    "province": "Distrito Nacional",
+    "birth_day": 24,
+    "birth_month": 10,
+    "slug": "koki-acosta",
+    "primary_role": "singer",
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_death": null,
+    "status": "published",
+    "primary_genre": "merengue",
+    "bio_en": "Koki Acosta (born Rafael Acosta Álvarez on October 24, 1959, in Santo Domingo) is a Dominican singer, arranger, multi-instrumentalist, and bandleader, who emerged as a prominent figure during the golden age of merengue in the 1980s. The grandson of legendary accordionist Dionisio Mejía Guandulito and son of noted sonero Guillermo Acosta Núñez, he trained at the Conservatorio Nacional de Música before establishing an influential career as both an arranger for leading Dominican orchestras and the front of his own ensemble, popularizing enduring dance hits such as «Y te vi», «Mueve, muévete», «No te puedo llevar», and «El palo».\n\n**Musical lineage and conservatory training**\n\nBorn into a family of deep musical tradition, he grew up surrounded by the sounds of authentic son and merengue típico, shaped by the legacy of his maternal grandfather, a pioneer of Dominican rural accordion music, and his father, Guillermo Acosta. He enrolled in the Conservatorio Nacional de Música in Santo Domingo, completing formal studies in percussion, music theory, and harmony, while also mastering the piano, guitar, and electric bass. This rigorous technical foundation granted him exceptional versatility in the recording studio.\n\n**Breakthrough as arranger and orchestra debut**\n\nIn the early 1980s, Acosta built a formidable reputation behind the scenes as one of modern merengue's most sought-after arrangers. His orchestrations powered major hits for Aramis Camilo («La varita»), Sergio Vargas («Ese es mi pueblo»), and Nelson Cordero («Plátano maduro»).\n\nIn 1984, he transitioned to leading his own orchestra, signing with the landmark label «Karen Records» under producer Bienvenido Rodríguez. That year he released his debut LP, «Calentando la pista», driven by the runaway hit «Y te vi»—composed by Frantoni Santana—which coincided with public discourse over the national ITBIS tax and exploded across Caribbean radio stations.\n\n**Commercial success and international reach**\n\nPropelled by sharp brass arrangements and a vibrant vocal front that featured a young Raffy Díaz, Acosta maintained a steady output of hits that brought his orchestra to international venues. Following his tenure at «Karen Records», he joined Ralph Cartagena's «Combo Records Internacional», issuing widely acclaimed albums such as «Shine Star» and «Mueve, muévete» (1987). He also collaborated with Fernando Villalona on the track «El gusto».\n\nNotable songs in his catalog include:\n\n- «Y te vi»\n- «Mueve, muévete»\n- «No te puedo llevar»\n- «El palo»\n- «Eso no»\n- «Perdiendo el cariño»\n- «Qué novia»\n- «Nathalie»\n- «Acaríciame»\n\n**Legacy**\n\nKoki Acosta represents the convergence between the vernacular heritage of traditional Dominican music and the technical sophistication of 1980s big-band merengue. As a conservatory-trained multi-instrumentalist and arranger, he brought harmonic discipline and dancefloor drive to his projects, cementing his reputation as an essential contributor to the golden era of Dominican merengue.",
+    "bio_es": "Koki Acosta (nacido como Rafael Acosta Álvarez el 24 de octubre de 1959 en Santo Domingo) es un cantante, arreglista, multiinstrumentista y director de orquesta dominicano, figura destacada de la época dorada del merengue en la década de 1980. Nieto del legendario acordeonista Dionisio Mejía Guandulito e hijo del destacado sonero Guillermo Acosta Núñez, se formó académicamente en el Conservatorio Nacional de Música antes de consolidar una influyente carrera como orquestador y líder de banda, inmortalizando éxitos bailables como «Y te vi», «Mueve, muévete», «No te puedo llevar» y «El palo».\n\n**Herencia musical y formación académica**\n\nProcedente de una estirpe de profunda raigambre en la música popular dominicana, creció rodeado de las expresiones tradicionales del son y el merengue típico bajo el influjo de su abuelo materno, pionero del merengue campesino, y su padre, Guillermo Acosta. Ingresó al Conservatorio Nacional de Música en Santo Domingo, donde cursó estudios formales de percusión, teoría musical y armonía, desarrollando además un dominio autodidacta del piano, la guitarra y el bajo eléctrico. Esta sólida preparación técnica le confirió una notable versatilidad en los estudios de grabación de la época.\n\n**Consagración como arreglista y debut orquestal**\n\nDurante los primeros años de la década de 1980, Acosta se forjó un sólido prestigio profesional detrás de escena como uno de los orquestadores más demandados del merengue moderno. Su pluma orquestal dio vida a arreglos para producciones de Aramis Camilo («La varita»), Sergio Vargas («Ese es mi pueblo») y Nelson Cordero («Plátano maduro»).\n\nEn 1984 decidió dar el salto al frente de su propia agrupación, firmando con el sello «Karen Records» bajo la tutela del empresario Bienvenido Rodríguez. Ese mismo año lanzó su álbum debut, «Calentando la pista», cuyo corte principal, «Y te vi» —compuesto por Frantoni Santana—, coincidió con el debate nacional sobre la implementación del impuesto al ITBIS y se convirtió de inmediato en un fenómeno radial masivo.\n\n**Éxito comercial e internacionalización**\n\nRespaldado por una sección de metales afinada y un enérgico frente de cantantes en el que se fogueó un joven Raffy Díaz, Acosta encadenó una seguidilla de producciones que lo llevaron a presentarse en escenarios internacionales. Tras su etapa con «Karen Records», se vinculó al sello «Combo Records Internacional» de Ralph Cartagena, publicando álbumes de notable acogida como «Shine Star» y «Mueve, muévete» (1987). Asimismo, colaboró con Fernando Villalona en el tema «El gusto».\n\nEntre las canciones más representativas de su catálogo figuran:\n\n- «Y te vi»\n- «Mueve, muévete»\n- «No te puedo llevar»\n- «El palo»\n- «Eso no»\n- «Perdiendo el cariño»\n- «Qué novia»\n- «Nathalie»\n- «Acaríciame»\n\n**Legado**\n\nKoki Acosta personifica la confluencia entre la herencia vernácula del merengue tradicional y la modernización técnica de la década de 1980. Su condición de multiinstrumentista y arreglista de formación le permitió imprimir un sello de sofisticación armónica y vigor bailable a sus producciones, colocándolo como una figura esencial en la consolidación del merengue dominicano a nivel continental.",
+    "has_image": true,
+    "image_updated_at": "2026-10-24T16:53:19.203+00:00",
+    "formation_year": null,
+    "dissolution_year": null,
+    "spotify": "0xeiPvBzJdKb11e4nLI1x4"
+  },
+  "patch": {
+    "instruments": [
+      "voice",
+      "piano",
+      "guitar",
+      "bass"
+    ],
+    "occupations": [
+      "arranger",
+      "musician",
+      "composer",
+      "bandleader"
+    ]
+  },
+  "documents": [
+    {
+      "id": "1c312b68-1fbe-422f-8fe2-ac6cef8ece17",
+      "locale": "en",
+      "expected_revision": 1,
+      "before": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Koki Acosta (born Rafael Acosta Álvarez on October 24, 1959, in Santo Domingo) is a Dominican singer, arranger, multi-instrumentalist, and bandleader, who emerged as a prominent figure during the golden age of merengue in the 1980s. The grandson of legendary accordionist Dionisio Mejía ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e07267a0-7f9d-4ef5-928c-d4ade7dc921e",
+                  "displayText": "Guandulito",
+                  "occurrenceId": "080ee7b3-5591-46ce-b9b1-6b021f0599a8"
+                }
+              },
+              {
+                "text": " and son of noted sonero Guillermo Acosta Núñez, he trained at the Conservatorio Nacional de Música before establishing an influential career as both an arranger for leading Dominican orchestras and the front of his own ensemble, popularizing enduring dance hits such as «Y te vi», «Mueve, muévete», «No te puedo llevar», and «El palo».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Musical lineage and conservatory training",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Born into a family of deep musical tradition, he grew up surrounded by the sounds of authentic son and merengue típico, shaped by the legacy of his maternal grandfather, a pioneer of Dominican rural accordion music, and his father, Guillermo Acosta. He enrolled in the Conservatorio Nacional de Música in Santo Domingo, completing formal studies in percussion, music theory, and harmony, while also mastering the piano, guitar, and electric bass. This rigorous technical foundation granted him exceptional versatility in the recording studio.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Breakthrough as arranger and orchestra debut",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In the early 1980s, Acosta built a formidable reputation behind the scenes as one of modern merengue's most sought-after arrangers. His orchestrations powered major hits for ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+                  "displayText": "Aramis Camilo",
+                  "occurrenceId": "c851ce20-9f8d-491c-9f4b-b0bbd123bd87"
+                }
+              },
+              {
+                "text": " («La varita»), ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+                  "displayText": "Sergio Vargas",
+                  "occurrenceId": "7ccf0de8-4d5c-4fa8-ac90-623c30701150"
+                }
+              },
+              {
+                "text": " («Ese es mi pueblo»), and Nelson Cordero («Plátano maduro»).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 1984, he transitioned to leading his own orchestra, signing with the landmark label «Karen Records» under producer Bienvenido Rodríguez. That year he released his debut LP, «Calentando la pista», driven by the runaway hit «Y te vi»—composed by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+                  "displayText": "Frantoni Santana",
+                  "occurrenceId": "70775c0b-f5aa-4498-892f-068e7d54c5e1"
+                }
+              },
+              {
+                "text": "—, which coincided with public discourse over the national ITBIS tax and exploded across Caribbean radio stations.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Commercial success and international reach",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Propelled by sharp brass arrangements and a vibrant vocal front that featured a young ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a781211c-5b4e-4893-83d3-b5a3528d8fb2",
+                  "displayText": "Raffy Díaz",
+                  "occurrenceId": "9abd8721-1a97-4921-af5d-88c269f91c6e"
+                }
+              },
+              {
+                "text": ", Acosta maintained a steady output of hits that brought his orchestra to international venues. Following his tenure at «Karen Records», he joined Ralph Cartagena's «Combo Records Internacional», issuing widely acclaimed albums such as «Shine Star» and «Mueve, muévete» (1987). He also collaborated with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                  "displayText": "Fernando Villalona",
+                  "occurrenceId": "1f632ee4-b418-44ed-9781-94d7959cc52b"
+                }
+              },
+              {
+                "text": " on the track «El gusto».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Notable songs in his catalog include:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Y te vi»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Mueve, muévete»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«No te puedo llevar»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«El palo»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Eso no»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Perdiendo el cariño»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Qué novia»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Nathalie»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Acaríciame»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Koki Acosta represents the convergence between the vernacular heritage of traditional Dominican music and the technical sophistication of 1980s big-band merengue. As a conservatory-trained multi-instrumentalist and arranger, he brought harmonic discipline and dancefloor drive to his projects, cementing his reputation as an essential contributor to the golden era of Dominican merengue.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Koki Acosta (born Rafael Acosta Álvarez on October 24, 1959, in Santo Domingo) is a Dominican singer, arranger, multi-instrumentalist, and bandleader. The grandson of accordionist Dionisio Mejía ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e07267a0-7f9d-4ef5-928c-d4ade7dc921e",
+                  "displayText": "Guandulito",
+                  "occurrenceId": "080ee7b3-5591-46ce-b9b1-6b021f0599a8"
+                }
+              },
+              {
+                "text": " and son of sonero Guillermo Acosta Núñez, he studied at the Conservatorio Nacional de Música and developed a career as an arranger and leader of his own merengue orchestra, with songs including «Y te vi», «Mueve, muévete», «No te puedo llevar», and «El palo».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Musical lineage and conservatory training",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "He studied percussion, music reading, and harmony at the Conservatorio Nacional de Música in Santo Domingo. He also taught himself piano, guitar, and electric bass. In a 2021 interview, he recalled his relationship to "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e07267a0-7f9d-4ef5-928c-d4ade7dc921e",
+                  "displayText": "Guandulito",
+                  "occurrenceId": "5a7c331e-74f4-47c3-9f2b-aee53342f14e"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and his father’s musical activity."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Breakthrough as arranger and orchestra debut",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He worked as an arranger on recordings by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+                  "displayText": "Aramis Camilo",
+                  "occurrenceId": "c851ce20-9f8d-491c-9f4b-b0bbd123bd87"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+                  "displayText": "Sergio Vargas",
+                  "occurrenceId": "7ccf0de8-4d5c-4fa8-ac90-623c30701150"
+                }
+              },
+              {
+                "text": " («Ese es mi pueblo»), and Nelson Cordero («Plátano maduro»). The Archivo General de la Nación lists him among the arrangers of a record by the first of these ensembles released by Discomundo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 1984 he formed his own orchestra and recorded for «Karen Records», working with Bienvenido Rodríguez. Press accounts date his first release, «Calentando la pista», to that year, although digital editions carry other dates. It includes «Y te vi», written by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+                  "displayText": "Frantoni Santana",
+                  "occurrenceId": "70775c0b-f5aa-4498-892f-068e7d54c5e1"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Commercial success and international reach",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Singers who performed with his orchestra include ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a781211c-5b4e-4893-83d3-b5a3528d8fb2",
+                  "displayText": "Raffy Díaz",
+                  "occurrenceId": "9abd8721-1a97-4921-af5d-88c269f91c6e"
+                }
+              },
+              {
+                "text": ". His catalog includes «Mueve, muévete» (1987) and «Shining Star» (1988).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Notable songs in his catalog include:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Y te vi»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Mueve, muévete»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«No te puedo llevar»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«El palo»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Eso no»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Perdiendo el cariño»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Qué novia»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Nathalie»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Acaríciame»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Spain and later projects",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2010 he was living in Gijón, Asturias, where he produced and hosted a Latin music show on Energía Stereo 106.7 FM from Monday to Thursday. A contemporary announcement of his interview on New York radio program «Quisqueya y sus canciones» also documents performances with his orchestra in Spain and other European countries."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In December 2016 he received recognition from Acroarte’s New York chapter alongside other figures in the arts and media. In 2021 he joined Tito Kenton and Jacinto Gantier in the project «Los Kenton con Koki Gantier», which began that new stage in February with the release of «Corre»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His career combines arranging, singing, and orchestra leadership with instrumental training in percussion, piano, guitar, and bass. His work leading an ensemble in the 1980s was followed by activity in Spain and later projects with other merengue performers."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "4350c3ae-da24-41fe-a943-c529321ee20e",
+      "locale": "es",
+      "expected_revision": 1,
+      "before": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Koki Acosta (nacido como Rafael Acosta Álvarez el 24 de octubre de 1959 en Santo Domingo) es un cantante, arreglista, multiinstrumentista y director de orquesta dominicano, figura destacada de la época dorada del merengue en la década de 1980. Nieto del legendario acordeonista Dionisio Mejía ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e07267a0-7f9d-4ef5-928c-d4ade7dc921e",
+                  "displayText": "Guandulito",
+                  "occurrenceId": "49044d2a-6f83-4cb6-925a-ecacddbecace"
+                }
+              },
+              {
+                "text": " e hijo del destacado sonero Guillermo Acosta Núñez, se formó académicamente en el Conservatorio Nacional de Música antes de consolidar una influyente carrera como orquestador y líder de banda, inmortalizando éxitos bailables como «Y te vi», «Mueve, muévete», «No te puedo llevar» y «El palo».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Herencia musical y formación académica",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Procedente de una estirpe de profunda raigambre en la música popular dominicana, creció rodeado de las expresiones tradicionales del son y el merengue típico bajo el influjo de su abuelo materno, pionero del merengue campesino, y su padre, Guillermo Acosta. Ingresó al Conservatorio Nacional de Música en Santo Domingo, donde cursó estudios formales de percusión, teoría musical y armonía, desarrollando además un dominio autodidacta del piano, la guitarra y el bajo eléctrico. Esta sólida preparación técnica le confirió una notable versatilidad en los estudios de grabación de la época.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Consagración como arreglista y debut orquestal",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Durante los primeros años de la década de 1980, Acosta se forjó un sólido prestigio profesional detrás de escena como uno de los orquestadores más demandados del merengue moderno. Su pluma orquestal dio vida a arreglos para producciones de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+                  "displayText": "Aramis Camilo",
+                  "occurrenceId": "ec0f1907-91e4-4faf-88d4-16e072a86069"
+                }
+              },
+              {
+                "text": " («La varita»), ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+                  "displayText": "Sergio Vargas",
+                  "occurrenceId": "bb37b647-9f12-4140-8f05-c3d917d2918a"
+                }
+              },
+              {
+                "text": " («Ese es mi pueblo») y Nelson Cordero («Plátano maduro»).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 1984 decidió dar el salto al frente de su propia agrupación, firmando con el sello «Karen Records» bajo la tutela del empresario Bienvenido Rodríguez. Ese mismo año lanzó su álbum debut, «Calentando la pista», cuyo corte principal, «Y te vi» —compuesto por ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+                  "displayText": "Frantoni Santana",
+                  "occurrenceId": "d25a3f67-5162-4ae4-bfa2-b4322e4d22af"
+                }
+              },
+              {
+                "text": "—, coincidió con el debate nacional sobre la implementación del impuesto al ITBIS y se convirtió de inmediato en un fenómeno radial masivo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Éxito comercial e internacionalización",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Respaldado por una sección de metales afinada y un enérgico frente de cantantes en el que se fogueó un joven ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a781211c-5b4e-4893-83d3-b5a3528d8fb2",
+                  "displayText": "Raffy Díaz",
+                  "occurrenceId": "d87c68bf-4465-4045-aeec-f407083562e8"
+                }
+              },
+              {
+                "text": ", Acosta encadenó una seguidilla de producciones que lo llevaron a presentarse en escenarios internacionales. Tras su etapa con «Karen Records», se vinculó al sello «Combo Records Internacional» de Ralph Cartagena, publicando álbumes de notable acogida como «Shine Star» y «Mueve, muévete» (1987). Asimismo, colaboró con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+                  "displayText": "Fernando Villalona",
+                  "occurrenceId": "278929e9-f8e2-4f20-90e8-59b9cf253dde"
+                }
+              },
+              {
+                "text": " en el tema «El gusto».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Entre las canciones más representativas de su catálogo figuran:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Y te vi»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Mueve, muévete»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«No te puedo llevar»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«El palo»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Eso no»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Perdiendo el cariño»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Qué novia»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Nathalie»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Acaríciame»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Koki Acosta personifica la confluencia entre la herencia vernácula del merengue tradicional y la modernización técnica de la década de 1980. Su condición de multiinstrumentista y arreglista de formación le permitió imprimir un sello de sofisticación armónica y vigor bailable a sus producciones, colocándolo como una figura esencial en la consolidación del merengue dominicano a nivel continental.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Koki Acosta (nacido como Rafael Acosta Álvarez el 24 de octubre de 1959 en Santo Domingo) es un cantante, arreglista, multiinstrumentista y director de orquesta dominicano. Nieto del acordeonista Dionisio Mejía ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e07267a0-7f9d-4ef5-928c-d4ade7dc921e",
+                  "displayText": "Guandulito",
+                  "occurrenceId": "49044d2a-6f83-4cb6-925a-ecacddbecace"
+                }
+              },
+              {
+                "text": " e hijo del sonero Guillermo Acosta Núñez, se formó en el Conservatorio Nacional de Música y desarrolló su carrera como arreglista y al frente de su propia agrupación de merengue, con temas como «Y te vi», «Mueve, muévete», «No te puedo llevar» y «El palo».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Herencia musical y formación académica",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Estudió percusión, lectura musical y armonía en el Conservatorio Nacional de Música de Santo Domingo. También aprendió de forma autodidacta a tocar piano, guitarra y bajo eléctrico. En una entrevista de 2021 recordó su parentesco con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e07267a0-7f9d-4ef5-928c-d4ade7dc921e",
+                  "displayText": "Guandulito",
+                  "occurrenceId": "0bdb4ede-e4af-4319-aa62-d632362a5aa3"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y la actividad musical de su padre."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Consagración como arreglista y debut orquestal",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Trabajó como arreglista para producciones de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e5129444-0923-4e06-b77d-f82f14c02b7d",
+                  "displayText": "Aramis Camilo",
+                  "occurrenceId": "ec0f1907-91e4-4faf-88d4-16e072a86069"
+                }
+              },
+              {
+                "text": ", ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+                  "displayText": "Sergio Vargas",
+                  "occurrenceId": "bb37b647-9f12-4140-8f05-c3d917d2918a"
+                }
+              },
+              {
+                "text": " («Ese es mi pueblo») y Nelson Cordero («Plátano maduro»). El Archivo General de la Nación lo incluye entre los arreglistas de un disco de la primera de estas agrupaciones publicado por Discomundo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 1984 formó su propia orquesta y grabó para «Karen Records», con Bienvenido Rodríguez. La prensa sitúa su primera producción, «Calentando la pista», en ese año, aunque las ediciones digitales presentan otras fechas. De ella procede «Y te vi», de la autoría de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1",
+                  "displayText": "Frantoni Santana",
+                  "occurrenceId": "d25a3f67-5162-4ae4-bfa2-b4322e4d22af"
+                }
+              },
+              {
+                "text": ".",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Éxito comercial e internacionalización",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Entre los cantantes que pasaron por su orquesta figura ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a781211c-5b4e-4893-83d3-b5a3528d8fb2",
+                  "displayText": "Raffy Díaz",
+                  "occurrenceId": "d87c68bf-4465-4045-aeec-f407083562e8"
+                }
+              },
+              {
+                "text": ". Su catálogo incluye «Mueve, muévete» (1987) y «Shining Star» (1988).",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Entre las canciones más representativas de su catálogo figuran:",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "bulletList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Y te vi»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Mueve, muévete»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«No te puedo llevar»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«El palo»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Eso no»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Perdiendo el cariño»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Qué novia»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Nathalie»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "«Acaríciame»",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "España y nuevas etapas",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2010 residía en Gijón, Asturias, donde producía y presentaba un programa de música latina en Energía Stereo 106.7 FM, de lunes a jueves. Un anuncio contemporáneo de su entrevista en el espacio neoyorquino «Quisqueya y sus canciones» también documenta su actividad con su orquesta en España y otros países europeos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En diciembre de 2016 recibió un reconocimiento de la filial de Acroarte en Nueva York, junto a otras personalidades del arte y la comunicación. En 2021 se unió a Tito Kenton y Jacinto Gantier en el proyecto «Los Kenton con Koki Gantier», cuya nueva etapa comenzó en febrero con el estreno de «Corre»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trayectoria reúne el trabajo como arreglista, cantante y director de orquesta, con una formación instrumental que abarca la percusión, el piano, la guitarra y el bajo. A la etapa de su agrupación en los años ochenta se sumaron su actividad en España y proyectos posteriores con otros intérpretes de merengue."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "evidence": "koki-acosta-review-2026-10-24.md",
+  "preserved": "Identity, DOB, origin, handles, Spotify, portrait, primary genre/role and published statuses. Percussion retained in prose because form lacks a generic percussion option. No discography/shared record/security/deployment changes."
+}

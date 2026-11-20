@@ -1,0 +1,408 @@
+{
+  "artist": {
+    "id": "686ffbd2-2b51-4d9a-a7e9-43f4879dfb44",
+    "name": "Rando",
+    "sort_name": "Rando",
+    "type": "solo_artist",
+    "birth_year": null,
+    "death_year": null,
+    "created_at": "2026-10-26T01:34:34.39042+00:00",
+    "views": 0,
+    "wikidata_id": null,
+    "first_name": "Rando",
+    "middle_name": null,
+    "last_name": "Camasta",
+    "second_last_name": "Cueto",
+    "stage_name": "Rando",
+    "date_of_birth": null,
+    "birth_place": null,
+    "website": "https://www.randocamasta.com",
+    "youtube": "@RandoCamasta",
+    "facebook": "rando2",
+    "instagram": "randocamasta",
+    "aliases": [
+      "Rando Camasta Cueto",
+      "Rando Camasta Jr.",
+      "Rando Camasta hijo"
+    ],
+    "mbid": null,
+    "occupations": [
+      "composer",
+      "guitarist"
+    ],
+    "instruments": [
+      "voice",
+      "guitar"
+    ],
+    "genres": [
+      "jazz",
+      "merengue",
+      "bachata",
+      "ballads-bolero"
+    ],
+    "disambiguation": null,
+    "gender": "male",
+    "ended": null,
+    "mb_metadata": {},
+    "updated_at": "2026-10-26T01:34:34.39042+00:00",
+    "province": "La Romana",
+    "birth_day": null,
+    "birth_month": null,
+    "slug": "rando",
+    "primary_role": "singer",
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_death": null,
+    "status": "draft",
+    "primary_genre": "fusion",
+    "bio_en": null,
+    "bio_es": null,
+    "has_image": false,
+    "image_updated_at": null,
+    "formation_year": null,
+    "dissolution_year": null,
+    "spotify": "5J2uYCcGLOQH7F0nXjhLIz"
+  },
+  "documents": [
+    {
+      "id": "f4c91c8a-2157-4285-92ab-43f23f904142",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Rando Camasta Cueto, professionally known as Rando and also as Rando Camasta Jr., is a Dominican singer, songwriter and guitarist from La Romana. The son of singer and arranger ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "014ac5b6-01cd-4300-9c88-ed0aeb970f51",
+                  "displayText": "Rando Camasta",
+                  "occurrenceId": "e386a6dc-b785-4609-965e-5dbe27136f85"
+                }
+              },
+              {
+                "text": ", he has developed an independent musical identity blending soul, funk and pop with Caribbean rhythms. His work spans solo recordings, collaborations within the Dominican independent scene and performances with the Christian rock band «Metanoia».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Early development",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He grew up spending time in recording studios with his father, who taught him his first guitar chords. In 2003 he joined the original lineup of «Zoom». His single «Presiento» was selected among Radio Listín’s 25 highlighted local songs of 2006. In 2007 the band was selected to perform at events preceding MTV’s Latin American awards.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 2010 he took part in «El Rocksario», a tribute by Dominican rock musicians to ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+                  "displayText": "Los Hermanos Rosario",
+                  "occurrenceId": "cffbcd12-64bd-46f2-bc66-e710999036c6"
+                }
+              },
+              {
+                "text": ". His live career also included the «Dominican Republic Jazz Festival» in Cabarete. Alongside his solo work, he became a guitarist and vocalist with «Metanoia» and collaborated with Gnómico and producer Joel Berrido, known as Macrofunk.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Recordings and collaborations",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His 2012 EP «Santo Domingo de Fiesta» was produced by Joel Berrido, with horn arrangements by his father. Its songs include «Dominicana Bonita», «Amante Necio Loco», «Con Tu Amor», «Santo Domingo de Fiesta», «Simplemente» and «2step»; Alfred Spin appears on two tracks. The project was presented as his third EP.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He presented the live-recorded «Caribe Pop» in 2016. A July 2018 performance for «Retajila» featured «La indicada», «Si te vas», «Fuego en mi cama» and «Adicto», with Camasta Cueto credited for words and music, vocals and guitar. «Sesiones Retajila, Vol. 1» reached streaming services in 2019, alongside the singles «Detener el Tiempo» and «Sentido Real (Saciando Mi Sed)».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Released in 2020, «Trance» brought further combinations of soul, bolero, funk, bachata and merengue. Its collaborators include Joel Berrido, Adolfo Guerrero, Clara González and JJ Sánchez; Cheo Pardo contributed a remix of «Detener el tiempo». Rando followed it with «Azúca» in 2021 and «Qué Pasará» in April 2026. His guest appearances also include Macrofunk’s EPs «Club Domingo» and «Malamaña».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His work connects a family musical background with the Dominican alternative scene. Songwriting, guitar and vocals anchor a repertoire about love and everyday experience, drawing on Caribbean music, soul and pop.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "686ffbd2-2b51-4d9a-a7e9-43f4879dfb44",
+      "created_at": "2026-10-26T01:34:34.789796+00:00",
+      "updated_at": "2026-10-26T01:35:34.115856+00:00",
+      "revision": 2
+    },
+    {
+      "id": "cae2fd79-92b1-4128-a9b3-6a003f5a57bf",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Rando Camasta Cueto, conocido como Rando Camasta Jr. y artísticamente como Rando, es un cantante, compositor y guitarrista dominicano oriundo de La Romana. Hijo del cantante y arreglista ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "014ac5b6-01cd-4300-9c88-ed0aeb970f51",
+                  "displayText": "Rando Camasta",
+                  "occurrenceId": "e9561019-bfaf-470f-8bb3-035188cc53f2"
+                }
+              },
+              {
+                "text": ", desarrolla una propuesta propia que combina el soul, el funk y el pop con ritmos caribeños. Su carrera comprende grabaciones como solista, colaboraciones con músicos de la escena independiente y su participación en la banda de rock cristiano «Metanoia».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Formación y primeros escenarios",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Creció acompañando a su padre a los estudios de grabación y recibió de él sus primeros acordes de guitarra. En 2003 formó parte de la primera alineación de «Zoom». Su sencillo «Presiento» fue seleccionado entre las 25 canciones locales destacadas por Radio Listín en 2006. Al año siguiente, la banda fue escogida para participar en actividades previas a los premios MTV latinoamericanos.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2010 participó en «El Rocksario», el homenaje de músicos de rock dominicano a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+                  "displayText": "Los Hermanos Rosario",
+                  "occurrenceId": "6c90d6fd-36ef-426e-b06f-ba950812b132"
+                }
+              },
+              {
+                "text": ". Su trayectoria también lo llevó al «Dominican Republic Jazz Festival», en Cabarete. En paralelo desarrolló su trabajo como guitarrista y vocalista de «Metanoia» y colaboró con Gnómico y con el productor Joel Berrido, conocido como Macrofunk.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Grabaciones y colaboraciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2012 publicó el EP «Santo Domingo de Fiesta», producido por Joel Berrido. Su padre realizó los arreglos de vientos. El proyecto incluye «Dominicana Bonita», «Amante Necio Loco», «Con Tu Amor», «Santo Domingo de Fiesta», «Simplemente» y «2step», con Alfred Spin como invitado en dos canciones. El proyecto fue presentado como su tercer EP.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 2016 presentó «Caribe Pop», grabado en directo. La sesión que realizó para «Retajila» en julio de 2018 reunió «La indicada», «Si te vas», «Fuego en mi cama» y «Adicto»; sus créditos identifican a Camasta Cueto como autor y como intérprete de voz y guitarra. El EP «Sesiones Retajila, Vol. 1» apareció en las plataformas en 2019, año en que también publicó «Detener el Tiempo» y «Sentido Real (Saciando Mi Sed)».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su álbum «Trance» apareció en 2020 y amplió esa exploración del soul con bolero, funk, bachata y merengue. Entre sus colaboradores figuran Joel Berrido, Adolfo Guerrero, Clara González y JJ Sánchez; Cheo Pardo realizó un remix de «Detener el tiempo». En 2021 publicó «Azúca» y en abril de 2026 lanzó «Qué Pasará». También participa como voz invitada en los EP «Club Domingo» y «Malamaña», de Macrofunk.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su trayectoria conecta la formación musical familiar con la escena alternativa dominicana. La composición, la guitarra y el canto articulan un repertorio que aborda el amor y la vida cotidiana desde la mezcla de lenguajes caribeños, soul y pop.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "686ffbd2-2b51-4d9a-a7e9-43f4879dfb44",
+      "created_at": "2026-10-26T01:34:34.537409+00:00",
+      "updated_at": "2026-10-26T01:35:33.949701+00:00",
+      "revision": 2
+    }
+  ],
+  "relations": [
+    {
+      "id": "6dc48a18-a40f-408e-ae9a-7bdb5d1bcf04",
+      "editorial_document_id": "cae2fd79-92b1-4128-a9b3-6a003f5a57bf",
+      "occurrence_id": "e9561019-bfaf-470f-8bb3-035188cc53f2",
+      "entity_type": "artist",
+      "target_artist_id": "014ac5b6-01cd-4300-9c88-ed0aeb970f51",
+      "created_at": "2026-10-26T01:35:33.949701+00:00",
+      "updated_at": "2026-10-26T01:35:33.949701+00:00"
+    },
+    {
+      "id": "c13b6b1b-1ce2-41a3-9808-4c1dad80af61",
+      "editorial_document_id": "cae2fd79-92b1-4128-a9b3-6a003f5a57bf",
+      "occurrence_id": "6c90d6fd-36ef-426e-b06f-ba950812b132",
+      "entity_type": "artist",
+      "target_artist_id": "3422883e-7048-48af-bb03-c68c8c557ee4",
+      "created_at": "2026-10-26T01:35:33.949701+00:00",
+      "updated_at": "2026-10-26T01:35:33.949701+00:00"
+    },
+    {
+      "id": "ed79c860-4bcd-4d0e-847f-01c22c883411",
+      "editorial_document_id": "f4c91c8a-2157-4285-92ab-43f23f904142",
+      "occurrence_id": "e386a6dc-b785-4609-965e-5dbe27136f85",
+      "entity_type": "artist",
+      "target_artist_id": "014ac5b6-01cd-4300-9c88-ed0aeb970f51",
+      "created_at": "2026-10-26T01:35:34.115856+00:00",
+      "updated_at": "2026-10-26T01:35:34.115856+00:00"
+    },
+    {
+      "id": "213733ce-49cc-4d25-9bab-813216202217",
+      "editorial_document_id": "f4c91c8a-2157-4285-92ab-43f23f904142",
+      "occurrence_id": "cffbcd12-64bd-46f2-bc66-e710999036c6",
+      "entity_type": "artist",
+      "target_artist_id": "3422883e-7048-48af-bb03-c68c8c557ee4",
+      "created_at": "2026-10-26T01:35:34.115856+00:00",
+      "updated_at": "2026-10-26T01:35:34.115856+00:00"
+    }
+  ],
+  "integrity": {
+    "generatedAt": "2026-10-26T01:35:40.805Z",
+    "counts": {
+      "documents": 2,
+      "relations": 4,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

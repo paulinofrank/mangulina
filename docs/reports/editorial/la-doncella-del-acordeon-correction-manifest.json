@@ -1,0 +1,33 @@
+{
+  "artist_id": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+  "date": "2026-10-15",
+  "authority": "Editor requested: Corrige el procedimiento y arregla el perfil. Corrections scoped to the profile fields raised in this conversation and their form compatibility.",
+  "changes": {
+    "facebook": {"before":"https://www.facebook.com/ladoncella.delacordeon/photos","after":"ladoncella.delacordeon","evidence":"User supplied account; Facebook profile opened; artistSocialLinks.ts storage contract"},
+    "instagram": {"before":"https://www.instagram.com/ladoncelladelacordeon/","after":"ladoncelladelacordeon","evidence":"User supplied account; artistSocialLinks.ts storage contract"},
+    "youtube": {"before":"https://www.youtube.com/@LADONCELLATIPICA","after":"@LADONCELLATIPICA","evidence":"Official channel opened and self-description read"},
+    "spotify": {"before":null,"after":"1BQrf5mBYD08OVnexVwxA7","evidence":"Spotify internal artist search, opened artist page, matching artist and Los hombres de ahora on the supplied official YouTube channel; no listening or recording equivalence claimed"},
+    "gender": {"before":null,"after":"female","evidence":"Facebook Información > Datos personales > Género: Mujer"},
+    "artist_tags": {"before":[],"after":["secular"],"evidence":"Repertoire, dance performances and love songs on official YouTube and Spotify; EDITORIAL_GUIDELINES.md Christian/Secular definitions; editorial music classification, not personal religious belief"},
+    "primary_role": {"before":"accordionist","after":"musician","evidence":"Official channel describes accordion practice; current primary-role selector supports musician, not accordionist"},
+    "occupations": {"before":["singer","composer","arranger","bandleader","music educator"],"after":["accordionist","singer","composer","arranger","bandleader","music educator"],"evidence":"Retain documented practice after primary-role normalization; ROLE_DICTIONARY.md"},
+    "type": {"before":"Person","after":"solo_artist","evidence":"Same individual identity; canonical value in current admin selector"},
+    "instruments": {"before":["accordion","vocals"],"after":["accordion","voice"],"evidence":"Same documented instruments; voice is current admin option"}
+  },
+  "not_changed": {
+    "date_of_birth": "Unknown: no reliable exact date located; do not infer from newspaper age",
+    "birth_year": "Unknown: articles repeating age 22 across different years cannot establish exact year",
+    "birth_place": "Unknown: Facebook says Río San Juan is hometown and Santo Domingo current city; neither explicitly establishes birth",
+    "province": "Unchanged pending specific province-field evidence and editorial resolution",
+    "biographies": "No wording changes",
+    "status": "draft"
+  },
+  "sources": [
+    "https://www.facebook.com/ladoncella.delacordeon/about",
+    "https://open.spotify.com/artist/1BQrf5mBYD08OVnexVwxA7",
+    "https://www.youtube.com/@LADONCELLATIPICA",
+    "https://www.youtube.com/watch?v=tFcjqriM4r8",
+    "https://www.youtube.com/watch?v=wATuc_qdQDU"
+  ],
+  "scope_exclusions": ["other artists","publication","security","schema","discography ingestion","image upload"]
+}

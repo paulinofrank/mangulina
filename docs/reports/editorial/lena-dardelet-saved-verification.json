@@ -1,0 +1,505 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+        "name": "Lena Dardelet",
+        "sort_name": "Dardelet, Lena",
+        "type": "solo_artist",
+        "birth_year": null,
+        "death_year": null,
+        "created_at": "2026-10-23T01:45:24.588521+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Helena",
+        "middle_name": null,
+        "last_name": "Dardelet",
+        "second_last_name": null,
+        "stage_name": "Lena Dardelet",
+        "date_of_birth": null,
+        "birth_place": "París",
+        "website": "https://linktr.ee/lenadardelet",
+        "youtube": "@LenaDardelet",
+        "facebook": "lenadardelet",
+        "instagram": "lenadardelet",
+        "aliases": [
+          "Helena Dardelet"
+        ],
+        "mbid": null,
+        "occupations": [
+          "songwriter",
+          "musician"
+        ],
+        "instruments": [
+          "voice"
+        ],
+        "genres": [
+          "merengue",
+          "jazz"
+        ],
+        "disambiguation": "French-Dominican singer-songwriter raised in Cabarete",
+        "gender": "female",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-23T01:45:29.425161+00:00",
+        "province": "Nacido en el Exterior",
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "lena-dardelet",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "bachata",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": true,
+        "image_updated_at": "2026-10-23T01:45:29.195+00:00",
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "37orxD8Q5PDm53FazTRpP7"
+      },
+      {
+        "id": "da5c733d-836a-4b70-a060-0b9c5da8c6d3",
+        "name": "Riccie Oriach",
+        "slug": "riccie-oriach",
+        "status": "published"
+      },
+      {
+        "id": "be3bd870-e380-44a2-82c5-4849e2022f6e",
+        "name": "Inka",
+        "slug": "inka",
+        "status": "published"
+      },
+      {
+        "id": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+        "name": "mediopicky",
+        "slug": "mediopicky",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "67d08012-c5ef-4d2e-97d7-15e030ed6676",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Lena Dardelet is a French-Dominican singer, songwriter and multi-instrumentalist born in Paris and raised in Cabarete. Previously known as Helena Dardelet, she brings together bachata, merengue and a background in jazz, writing and performing in Spanish, French and English.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Cabarete and studies in Montreal",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "She moved to Cabarete during her first months of life and grew up listening to Dominican music. She later studied music in Montreal, Canada. Her experience of living between cultures, and the distance from the island, became elements of her artistic identity. In 2018 she released her first EP, «Caja sin oxígeno».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "From jazz to Caribbean rhythms",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In 2020 she released «When the Sun» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+                    "displayText": "mediopicky",
+                    "occurrenceId": "8bd80f80-f700-4c2d-bf62-313ed37a521f"
+                  }
+                },
+                {
+                  "text": ", followed by «Bachaté», a bachata combining French and Spanish with contemporary elements. Color Visión documented her performance of «Juana Mecho» on «Dominicana’s Got Talent» in January 2021. Later that year she released her own composition «Hasta el final», produced by Emmanuel Silverio and Joel Berrido, and «Me asomé al sol».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "EPs and collaborations",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Her EP «Mírala Bailar», released on February 18, 2022, pays tribute to her Caribbean roots from her perspective as a French-Dominican woman. It includes «Hasta el final», «Me asomé al sol» and «Moreno mío». She followed it with «Invierno y verano» in April 2024. Her catalog also includes «Ten Cuidao» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "be3bd870-e380-44a2-82c5-4849e2022f6e",
+                    "displayText": "Inka",
+                    "occurrenceId": "437ffab8-e843-4336-b5fa-b931454f9e19"
+                  }
+                },
+                {
+                  "text": " and «Pa’ que bailemos» with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "da5c733d-836a-4b70-a060-0b9c5da8c6d3",
+                    "displayText": "Riccie Oriach",
+                    "occurrenceId": "990e4e09-9b8c-49de-b90c-fd75543ff23a"
+                  }
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The «Lunes de Bachata» period",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In May 2026 she released «Lunes de Bachata» with the duo Repike, extending her exploration of bachata through an alternative sensibility. Her international activity includes performances at SXSW and at New York venues BAM and SOB’s, documented by her press agency.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Her work connects her upbringing in Cabarete with musical studies in Canada and multilingual expression. Bachata and merengue provide meeting points between her jazz background, contemporary songwriting and her connection to Dominican culture.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+        "created_at": "2026-10-23T01:45:24.8807+00:00",
+        "updated_at": "2026-10-23T01:45:24.8807+00:00",
+        "revision": 1
+      },
+      {
+        "id": "f7948992-bb93-41f2-82ea-89a89d7570ca",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Lena Dardelet es una cantante, compositora y multiinstrumentista franco-dominicana nacida en París y criada en Cabarete. Conocida anteriormente como Helena Dardelet, desarrolla una propuesta que reúne bachata, merengue y formación jazzística, con canciones en español, francés e inglés.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Cabarete y la formación en Montreal",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Llegó a Cabarete durante sus primeros meses de vida y creció escuchando música dominicana. Posteriormente estudió música en Montreal, Canadá. La distancia respecto a la isla y su experiencia entre distintas culturas se convirtieron en elementos de su identidad artística. En 2018 presentó su primer EP, «Caja sin oxígeno».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Del jazz a los ritmos caribeños",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 2020 publicó «When the Sun», junto a ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+                    "displayText": "mediopicky",
+                    "occurrenceId": "19d2e21c-cc87-48ea-a6d2-374957bd7abd"
+                  }
+                },
+                {
+                  "text": ", y «Bachaté», una bachata que combina el francés y el español con elementos contemporáneos. Su interpretación de «Juana Mecho» en «Dominicana’s Got Talent» quedó documentada por Color Visión en enero de 2021. Ese año lanzó «Hasta el final», una composición propia producida por Emmanuel Silverio y Joel Berrido, y «Me asomé al sol».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Los EP y las colaboraciones",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El 18 de febrero de 2022 publicó el EP «Mírala Bailar», concebido como un homenaje a sus raíces caribeñas desde su perspectiva como mujer franco-dominicana. Incluye «Hasta el final», «Me asomé al sol» y «Moreno mío». En abril de 2024 presentó «Invierno y verano». Su catálogo también comprende «Ten Cuidao», con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "be3bd870-e380-44a2-82c5-4849e2022f6e",
+                    "displayText": "Inka",
+                    "occurrenceId": "6f9700b0-e555-43a1-b9df-80ac038fbc07"
+                  }
+                },
+                {
+                  "text": ", y «Pa’ que bailemos», con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "da5c733d-836a-4b70-a060-0b9c5da8c6d3",
+                    "displayText": "Riccie Oriach",
+                    "occurrenceId": "cee30aec-86aa-4ee7-a100-19d0bea843aa"
+                  }
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La etapa de «Lunes de Bachata»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En mayo de 2026 estrenó «Lunes de Bachata» junto al dúo Repike. El lanzamiento prolonga su exploración de la bachata desde una sensibilidad alternativa. Su actividad internacional comprende presentaciones en SXSW y en los escenarios neoyorquinos BAM y SOB’s, documentadas por su agencia de prensa.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su obra conecta la experiencia de crecer en Cabarete con una educación musical desarrollada en Canadá y una expresión multilingüe. La bachata y el merengue funcionan como puntos de encuentro entre su formación jazzística, la canción contemporánea y su vínculo con la cultura dominicana.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+        "created_at": "2026-10-23T01:45:24.687521+00:00",
+        "updated_at": "2026-10-23T01:45:24.687521+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "e10f3f8f-6582-4e68-ac34-12c81c37f43d",
+        "editorial_document_id": "f7948992-bb93-41f2-82ea-89a89d7570ca",
+        "occurrence_id": "19d2e21c-cc87-48ea-a6d2-374957bd7abd",
+        "entity_type": "artist",
+        "target_artist_id": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+        "created_at": "2026-10-23T01:45:24.687521+00:00",
+        "updated_at": "2026-10-23T01:45:24.687521+00:00"
+      },
+      {
+        "id": "daa2c7f0-94c7-4c2f-87c4-11b98709a7ca",
+        "editorial_document_id": "f7948992-bb93-41f2-82ea-89a89d7570ca",
+        "occurrence_id": "6f9700b0-e555-43a1-b9df-80ac038fbc07",
+        "entity_type": "artist",
+        "target_artist_id": "be3bd870-e380-44a2-82c5-4849e2022f6e",
+        "created_at": "2026-10-23T01:45:24.687521+00:00",
+        "updated_at": "2026-10-23T01:45:24.687521+00:00"
+      },
+      {
+        "id": "a4ee570f-e905-4bab-a316-15dab0e2668f",
+        "editorial_document_id": "f7948992-bb93-41f2-82ea-89a89d7570ca",
+        "occurrence_id": "cee30aec-86aa-4ee7-a100-19d0bea843aa",
+        "entity_type": "artist",
+        "target_artist_id": "da5c733d-836a-4b70-a060-0b9c5da8c6d3",
+        "created_at": "2026-10-23T01:45:24.687521+00:00",
+        "updated_at": "2026-10-23T01:45:24.687521+00:00"
+      },
+      {
+        "id": "486dc8c0-aab6-444a-8f80-a36e4273d9e8",
+        "editorial_document_id": "67d08012-c5ef-4d2e-97d7-15e030ed6676",
+        "occurrence_id": "8bd80f80-f700-4c2d-bf62-313ed37a521f",
+        "entity_type": "artist",
+        "target_artist_id": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+        "created_at": "2026-10-23T01:45:24.8807+00:00",
+        "updated_at": "2026-10-23T01:45:24.8807+00:00"
+      },
+      {
+        "id": "c05fa594-54ae-4f3d-bc7d-2c7efa91ab41",
+        "editorial_document_id": "67d08012-c5ef-4d2e-97d7-15e030ed6676",
+        "occurrence_id": "437ffab8-e843-4336-b5fa-b931454f9e19",
+        "entity_type": "artist",
+        "target_artist_id": "be3bd870-e380-44a2-82c5-4849e2022f6e",
+        "created_at": "2026-10-23T01:45:24.8807+00:00",
+        "updated_at": "2026-10-23T01:45:24.8807+00:00"
+      },
+      {
+        "id": "f7e47c47-a685-4324-a055-b33e07a16781",
+        "editorial_document_id": "67d08012-c5ef-4d2e-97d7-15e030ed6676",
+        "occurrence_id": "990e4e09-9b8c-49de-b90c-fd75543ff23a",
+        "entity_type": "artist",
+        "target_artist_id": "da5c733d-836a-4b70-a060-0b9c5da8c6d3",
+        "created_at": "2026-10-23T01:45:24.8807+00:00",
+        "updated_at": "2026-10-23T01:45:24.8807+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-23T01:45:37.792Z",
+    "counts": {
+      "documents": 2,
+      "relations": 6,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

@@ -1,0 +1,563 @@
+{
+  "date": "2026-10-23",
+  "authorization": "Editor supplied named new-profile candidate in established workflow. Draft artist and completed published EN/ES biographies; no photo or discography import.",
+  "before": null,
+  "after": {
+    "id": "307722e8-5902-41b4-a9b7-ae67d99c87c6",
+    "name": "Rhina Ramírez",
+    "stage_name": "Rhina Ramírez",
+    "sort_name": "Rhina Ramírez",
+    "slug": "rhina-ramirez",
+    "first_name": "Rhina",
+    "middle_name": null,
+    "last_name": "Ramírez",
+    "second_last_name": null,
+    "aliases": [
+      "Rhina Ramirez",
+      "Rhina"
+    ],
+    "disambiguation": "Dominican bolero and romantic-ballad singer from Las Matas de Farfán",
+    "type": "solo_artist",
+    "primary_role": "singer",
+    "occupations": [],
+    "gender": "female",
+    "birth_place": "Las Matas de Farfán",
+    "province": "San Juan",
+    "date_of_birth": null,
+    "birth_year": 1945,
+    "primary_genre": "bolero",
+    "genres": [
+      "ballads"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "facebook": null,
+    "instagram": null,
+    "youtube": null,
+    "spotify": "1Lkpmjue9fH5ajOscCbv9X",
+    "website": null,
+    "status": "draft"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Rhina Ramírez es una cantante dominicana de bolero y balada romántica, nacida en marzo de 1945 en Las Matas de Farfán, provincia San Juan. De voz contralto, vinculó su trayectoria a la canción de autores dominicanos y a escenarios nacionales e internacionales. Su interpretación de «Peregrino» ganó el «III Festival de la Canción Dominicana» y en 1982 representó al país en el «Festival OTI» con «Por tanto amor»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Del canto coral a la canción popular",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A finales de los años sesenta fue contralto solista del «Coro Nacional». Estudió canto con Ivonne Haza y, en Nueva York, con Adele Brugoff. "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+                  "occurrenceId": "4de3fcd9-6a33-45c6-86e3-c35c9cdef016",
+                  "displayText": "Casandra Damirón"
+                }
+              },
+              {
+                "type": "text",
+                "text": " la animó a incorporar canciones folclóricas, como «Mandé». "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "occurrenceId": "afa34d57-d424-4a8f-a5bc-0bbecab4926e",
+                  "displayText": "Manuel Sánchez Acosta"
+                }
+              },
+              {
+                "type": "text",
+                "text": " la invitó a su programa de televisión después de verla actuar en un telemaratón, un encuentro que abrió una etapa de proyección como solista."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Los festivales",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Participó en el «II Festival de la Canción Dominicana», en 1969, con «Cuatro temas», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "occurrenceId": "d75813f4-8f38-48d4-92a7-af2d67345f38",
+                  "displayText": "Manuel Sánchez Acosta"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". En la tercera edición, celebrada en noviembre de 1970, obtuvo el primer lugar con «Peregrino», de Jesús Troncoso. El Archivo General de la Nación conserva el disco del certamen, cuyo registro identifica a Rhina como intérprete y a Bienvenido Bustamante como arreglista de la canción ganadora."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Discos y repertorio",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 1970 apareció «Rhina en México», publicado por «UA Latino» y producido por "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f5bdc55b-ac05-45cc-b118-375010a44f21",
+                  "occurrenceId": "431f4341-638f-4a25-82a9-f91b7807cabc",
+                  "displayText": "Mario de Jesús Báez"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Su repertorio reúne composiciones de autores dominicanos y latinoamericanos; incluye «Amor... tu amor», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e8f0b2fb-1aa1-4c68-b806-89ff0b85bf4c",
+                  "occurrenceId": "731fb312-8d2e-4889-9684-a213dbdddb80",
+                  "displayText": "Bullumba Landestoy"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", y «Te esperaba, mi amor», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "occurrenceId": "691936b4-0fb5-4740-83d9-1d1b20a791ef",
+                  "displayText": "Manuel Sánchez Acosta"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Le siguió «Rhina», de 1971, con «Peregrino», «Cuatro temas» y «Mira qué mundo». Otro título de su discografía es «El tiempo que te quede libre». La canción mexicana también ocupó un lugar en sus recitales y en el espectáculo «Rhina canta al amor», presentado en Bellas Artes."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "OTI y reconocimientos",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "El 27 de noviembre de 1982 interpretó «Por tanto amor», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "7aa05a4d-6647-41b0-8a1c-59786dee2d01",
+                  "occurrenceId": "99ae130d-da1f-4dc4-8ad5-793beb228a5d",
+                  "displayText": "Leonor Porcella de Brea"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", en el «Festival OTI» de Lima. En 2009 recibió un «Casandra Especial» por su trayectoria. En julio de 2010, Banreservas le rindió homenaje y editó una antología de veinte canciones dentro de su «Colección Reserva Musical», con producción artística de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0882a2a4-4706-4687-9c2e-523944ab6011",
+                  "occurrenceId": "b342b408-a16d-4e17-a279-2b1a4938d1ce",
+                  "displayText": "Luis Ovalles"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su carrera une el canto coral, los festivales y la interpretación del bolero y la balada. Sus grabaciones conservaron canciones de compositores dominicanos y las llevaron a públicos de otros países, mientras su actividad en teatros y clubes mantuvo ese repertorio en los escenarios."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Rhina Ramírez is a Dominican bolero and romantic-ballad singer born in March 1945 in Las Matas de Farfán, San Juan province. A contralto, she built her career around Dominican songwriting and performances at home and abroad. Her interpretation of «Peregrino» won the «III Festival de la Canción Dominicana», and she represented the Dominican Republic at the 1982 «OTI Festival» with «Por tanto amor»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From choral singing to a solo career",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "By the late 1960s she was a contralto soloist with the «Coro Nacional». She studied singing with Ivonne Haza and later with Adele Brugoff in New York. "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+                  "occurrenceId": "6990a9ce-cd07-4cc1-970f-fe5323187a78",
+                  "displayText": "Casandra Damirón"
+                }
+              },
+              {
+                "type": "text",
+                "text": " encouraged her to include Dominican folk songs such as «Mandé». After seeing her perform during a television fundraiser, "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "occurrenceId": "51031db9-e648-4d1c-9801-0bed7f3d6c0f",
+                  "displayText": "Manuel Sánchez Acosta"
+                }
+              },
+              {
+                "type": "text",
+                "text": " invited her onto his program, helping introduce her work as a solo performer to a wider audience."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The song festivals",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 1969 she performed «Cuatro temas», by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "occurrenceId": "913c07a3-ec24-4050-a52d-c1de586a7c68",
+                  "displayText": "Manuel Sánchez Acosta"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", at the «II Festival de la Canción Dominicana». She won its third edition, held in November 1970, with Jesús Troncoso's «Peregrino». The Dominican national archive preserves the festival record; its description identifies Ramírez as the vocalist and Bienvenido Bustamante as arranger of the winning song."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Recordings and repertoire",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Rhina en México» appeared on «UA Latino» in 1970, produced by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f5bdc55b-ac05-45cc-b118-375010a44f21",
+                  "occurrenceId": "5a77dca7-fb6d-42e2-8574-7347d884dfba",
+                  "displayText": "Mario de Jesús Báez"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". It brought together Dominican and other Latin American songwriters, including "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e8f0b2fb-1aa1-4c68-b806-89ff0b85bf4c",
+                  "occurrenceId": "89f31f43-1f94-4124-86d2-51c5d3618228",
+                  "displayText": "Bullumba Landestoy"
+                }
+              },
+              {
+                "type": "text",
+                "text": " with «Amor... tu amor» and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+                  "occurrenceId": "4fb78c66-f467-4ee2-9802-ef46da3ed03d",
+                  "displayText": "Manuel Sánchez Acosta"
+                }
+              },
+              {
+                "type": "text",
+                "text": " with «Te esperaba, mi amor». The 1971 album «Rhina» included «Peregrino», «Cuatro temas» and «Mira qué mundo». Her recordings also include «El tiempo que te quede libre». Mexican song remained part of her stage repertoire, alongside boleros and ballads, in performances including «Rhina canta al amor» at Bellas Artes."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "OTI and recognition",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "On November 27, 1982, she sang «Por tanto amor», written by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "7aa05a4d-6647-41b0-8a1c-59786dee2d01",
+                  "occurrenceId": "9b0ceca5-6665-4c15-a114-cdbda270a09e",
+                  "displayText": "Leonor Porcella de Brea"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", at the «OTI Festival» in Lima. She received a «Casandra Especial» honoring her career in 2009. In July 2010 Banreservas paid tribute to her with a twenty-song anthology in its «Colección Reserva Musical», with artistic production by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "0882a2a4-4706-4687-9c2e-523944ab6011",
+                  "occurrenceId": "820c57e8-d1eb-4c86-8b9a-68921ccdcb45",
+                  "displayText": "Luis Ovalles"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Her career connects choral singing with song festivals and the interpretation of bolero and romantic ballads. Through recordings and performances abroad, she helped circulate Dominican compositions beyond their home audience, while her theater and club appearances sustained that repertoire on local stages."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "0882a2a4-4706-4687-9c2e-523944ab6011",
+      "name": "Luis Ovalles",
+      "slug": "luis-ovalles",
+      "status": "published"
+    },
+    {
+      "id": "faff18bd-3dbc-477a-bc38-859d611887f0",
+      "name": "Yaqui Núñez del Risco",
+      "slug": "yaqui-nunez-del-risco",
+      "status": "published"
+    },
+    {
+      "id": "9f62f1e7-2aad-4690-8451-82df4dd3b587",
+      "name": "Manuel Sánchez Acosta",
+      "slug": "manuel-sanchez-acosta",
+      "status": "published"
+    },
+    {
+      "id": "a81458f1-ccaa-451a-8cd5-2afd4d27affb",
+      "name": "Casandra Damirón",
+      "slug": "casandra-damiron",
+      "status": "published"
+    },
+    {
+      "id": "f5bdc55b-ac05-45cc-b118-375010a44f21",
+      "name": "Mario de Jesús Báez",
+      "slug": "mario-de-jesus-baez",
+      "status": "published"
+    },
+    {
+      "id": "7aa05a4d-6647-41b0-8a1c-59786dee2d01",
+      "name": "Leonor Porcella de Brea",
+      "slug": "leonor-porcella-de-brea",
+      "status": "published"
+    },
+    {
+      "id": "e8f0b2fb-1aa1-4c68-b806-89ff0b85bf4c",
+      "name": "Bullumba Landestoy",
+      "slug": "bullumba-landestoy",
+      "status": "published"
+    },
+    {
+      "id": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+      "name": "Johnny Ventura",
+      "slug": "johnny-ventura",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "rhina-ramirez-research-2026-10-23.md",
+  "editor_supplied_fields": [],
+  "unresolved": [
+    "Birth is supported only to March 1945; date_of_birth stays null and birth_year is 1945.",
+    "No portrait supplied; social accounts and website unverified.",
+    "Only Rhina and Ramirez personal-name components are established; additional names unresolved."
+  ],
+  "exclusions": [
+    "No artist publication, discography imports, other artists, photo upload, deployment, security change or manual cache refresh."
+  ]
+}

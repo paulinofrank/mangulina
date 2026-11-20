@@ -1,0 +1,598 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "2e13ac37-e064-4e0e-ad64-f82a73008494",
+        "name": "La Marimba",
+        "sort_name": "Marimba, La",
+        "type": "solo_artist",
+        "birth_year": null,
+        "death_year": null,
+        "created_at": "2026-10-24T14:51:31.729398+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Mariela",
+        "middle_name": null,
+        "last_name": "Pichardo",
+        "second_last_name": null,
+        "stage_name": "La Marimba",
+        "date_of_birth": null,
+        "birth_place": "Santo Domingo",
+        "website": "https://lnk.bio/La.marimba",
+        "youtube": "@LaMarimba",
+        "facebook": "lamarimbamusica",
+        "instagram": "la.marimba",
+        "aliases": [
+          "Mariela Pichardo"
+        ],
+        "mbid": null,
+        "occupations": [
+          "songwriter",
+          "musician"
+        ],
+        "instruments": [
+          "voice",
+          "guira",
+          "guitar",
+          "piano"
+        ],
+        "genres": [
+          "folklore",
+          "merengue",
+          "rock",
+          "jazz"
+        ],
+        "disambiguation": "Dominican singer-songwriter and multi-instrumentalist Mariela Pichardo",
+        "gender": "female",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-24T14:51:31.729398+00:00",
+        "province": "Distrito Nacional",
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "la-marimba",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "fusion",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "7MX1qcF0L9NKjXkXiLtbAx"
+      },
+      {
+        "id": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+        "name": "Fefita la Grande",
+        "slug": "fefita-la-grande",
+        "status": "published"
+      },
+      {
+        "id": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+        "name": "La Doncella del Acordeón",
+        "slug": "la-doncella-del-acordeon",
+        "status": "published"
+      },
+      {
+        "id": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+        "name": "mediopicky",
+        "slug": "mediopicky",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "0f868f98-2aa2-4b46-98fd-f9fa77cc819c",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La Marimba is the professional name of Mariela Pichardo, a Dominican singer-songwriter and multi-instrumentalist born in Santo Domingo. Her music brings Dominican and Afro-Caribbean roots into conversation with rock, jazz and electronic sounds. Voice and güira are central to her performances, linking original songs with a pursuit of creative independence.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Education and roots",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "She began studying music independently and continued her training in Music Theory and Education at Universidad Autónoma de Santo Domingo. She spent five years with «Aumbatá», Toné Vicioso's group, deepening her knowledge of the island's musical traditions. Her learning encompassed sarandunga, gagá and salve, alongside her interest in guitar, piano and sonic experimentation.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The solo project",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "She began her solo career in 2017 and released «Agua que llegó» and «No se puede apagar» in 2018. Her first EP, «Seré», followed in 2019 through «Caribe Alternativo». Her professional biography records Premio Soberano nominations for alternative music in 2019 and 2020. Later releases included «Suéltame» in 2020 and «Encamíname» in 2021. Her songwriting explores personal freedom, memory, nature and identity.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Stages and collaborations",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "On March 22, 2022, she opened for «Coldplay» at Santo Domingo's Estadio Olímpico Félix Sánchez during the «Music of the Spheres» tour. In 2023 she was announced as a showcasing artist at «SXSW» in Austin, Texas. Her catalog includes «Memoria», with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+                    "displayText": "mediopicky",
+                    "occurrenceId": "ec12757e-f90a-49e6-8da8-ee6d9831a23b"
+                  }
+                },
+                {
+                  "text": ", and a remix of «Encamíname» by Mickey Destro and Chez Tropics.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Film and «La Grande»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In Tito Rodríguez's 2024 biographical film «La Grande», she portrayed ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+                    "displayText": "Fefita la Grande",
+                    "occurrenceId": "0b31f3ca-790e-44a5-b71c-a0b2737b29c8"
+                  }
+                },
+                {
+                  "text": " through part of her youth and adulthood, sharing the role with Fahdly Jacobo and Lumy Lizardo. She studied accordion with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+                    "displayText": "La Doncella del Acordeón",
+                    "occurrenceId": "bc22527c-e710-434f-ad20-f32d96530740"
+                  }
+                },
+                {
+                  "text": " to prepare for the performance. The role earned her a nomination for Actriz de Cine at the 2025 Premios Soberano.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Tengo lo' podere'» and new recordings",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "On February 26, 2025, she released «Tengo lo' podere'», an eleven-song album issued by «Caribe Alternativo» and presented live at «Isle of Light». She co-produced it with Xiio, Rocío Damirón, and Joel Berrido. Its songs include «Prende el sol», «Corre» and «Me voy». In 2026 she released «Baño de sal», produced by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+                    "displayText": "mediopicky",
+                    "occurrenceId": "cc994a0a-b14e-4c6a-97c0-f0ad94faf7c6"
+                  }
+                },
+                {
+                  "text": ", celebrating water, sunshine and shared experiences.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Her career connects the study of traditional music with contemporary songwriting and experimentation. Through güira, singing and film work, she has brought elements of Dominican culture to different formats and stages while maintaining a dialogue between inherited traditions and personal creation.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "2e13ac37-e064-4e0e-ad64-f82a73008494",
+        "created_at": "2026-10-24T14:51:32.126462+00:00",
+        "updated_at": "2026-10-24T14:51:32.126462+00:00",
+        "revision": 1
+      },
+      {
+        "id": "0122290c-5f35-4d80-8088-fc4246723679",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La Marimba es el nombre artístico de Mariela Pichardo, cantante, compositora y multiinstrumentista dominicana nacida en Santo Domingo. Su propuesta reúne ritmos de raíz dominicana y afrocaribeña con rock, jazz y recursos electrónicos. La voz y la güira ocupan un lugar central en sus presentaciones, que conectan la canción propia con una búsqueda de independencia creativa.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Formación y raíces",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Comenzó a estudiar música de manera autodidacta y amplió su formación en Teoría y Educación Musical en la Universidad Autónoma de Santo Domingo. Durante cinco años formó parte de «Aumbatá», agrupación de Toné Vicioso, donde profundizó en las tradiciones musicales de la isla. Su aprendizaje abarcó ritmos como la sarandunga, el gagá y la salve, mientras desarrollaba su interés por la guitarra, el piano y la experimentación sonora.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La propuesta solista",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Inició su etapa solista en 2017 y en 2018 publicó «Agua que llegó» y «No se puede apagar». En 2019 presentó «Seré», su primer EP, editado por «Caribe Alternativo». Su biografía profesional registra nominaciones a los Premios Soberano de música alternativa en 2019 y 2020. A ese repertorio siguieron «Suéltame», de 2020, y «Encamíname», de 2021. Sus canciones abordan la libertad personal, la memoria, la naturaleza y el reconocimiento de la propia identidad.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Escenarios y colaboraciones",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El 22 de marzo de 2022 abrió el concierto de «Coldplay» en el Estadio Olímpico Félix Sánchez de Santo Domingo, dentro de la gira «Music of the Spheres». En 2023 fue anunciada entre los artistas showcases del festival «SXSW», celebrado en Austin, Texas. Su catálogo incluye «Memoria», con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+                    "displayText": "mediopicky",
+                    "occurrenceId": "6ac2e03b-bec6-4c4c-bbbc-49aa0ca0814e"
+                  }
+                },
+                {
+                  "text": ", y una remezcla de «Encamíname» realizada por Mickey Destro y Chez Tropics.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El cine y «La Grande»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En «La Grande», película biográfica de 2024 dirigida por Tito Rodríguez, interpretó a ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+                    "displayText": "Fefita la Grande",
+                    "occurrenceId": "fba17e3d-debd-4389-b950-2c48b183f64e"
+                  }
+                },
+                {
+                  "text": " durante una etapa de su juventud y vida adulta. Compartió el personaje con Fahdly Jacobo y Lumy Lizardo. Para preparar el papel estudió acordeón con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+                    "displayText": "La Doncella del Acordeón",
+                    "occurrenceId": "e5d0ea6e-9995-4835-b2b1-af15247cec00"
+                  }
+                },
+                {
+                  "text": ". Su actuación recibió una nominación a Actriz de Cine en los Premios Soberano 2025.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Tengo lo' podere'» y nueva música",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El 26 de febrero de 2025 publicó «Tengo lo' podere'», álbum de once canciones editado por «Caribe Alternativo» y presentado en vivo en «Isle of Light». Coprodujo el proyecto junto a Xiio, Rocío Damirón, y Joel Berrido. Entre sus temas figuran «Prende el sol», «Corre» y «Me voy». En 2026 lanzó «Baño de sal», producido por ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+                    "displayText": "mediopicky",
+                    "occurrenceId": "9a2d8f40-7ee4-40d4-887c-835813f55c6a"
+                  }
+                },
+                {
+                  "text": ", una canción que celebra el agua, el sol y las experiencias compartidas.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su trayectoria vincula el aprendizaje de músicas tradicionales con la composición y la experimentación contemporáneas. Desde la güira y el canto hasta el trabajo cinematográfico, ha llevado elementos de la cultura dominicana a distintos formatos y escenarios, conservando el diálogo entre raíz y creación personal.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "2e13ac37-e064-4e0e-ad64-f82a73008494",
+        "created_at": "2026-10-24T14:51:31.881619+00:00",
+        "updated_at": "2026-10-24T14:51:31.881619+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "0e20be09-bf05-4072-9a23-e9c1cf0954c1",
+        "editorial_document_id": "0122290c-5f35-4d80-8088-fc4246723679",
+        "occurrence_id": "6ac2e03b-bec6-4c4c-bbbc-49aa0ca0814e",
+        "entity_type": "artist",
+        "target_artist_id": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+        "created_at": "2026-10-24T14:51:31.881619+00:00",
+        "updated_at": "2026-10-24T14:51:31.881619+00:00"
+      },
+      {
+        "id": "da523043-c024-4fed-bb0b-984992ad8d36",
+        "editorial_document_id": "0122290c-5f35-4d80-8088-fc4246723679",
+        "occurrence_id": "fba17e3d-debd-4389-b950-2c48b183f64e",
+        "entity_type": "artist",
+        "target_artist_id": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+        "created_at": "2026-10-24T14:51:31.881619+00:00",
+        "updated_at": "2026-10-24T14:51:31.881619+00:00"
+      },
+      {
+        "id": "4a249c2c-b6ec-424e-903b-0ea726a36327",
+        "editorial_document_id": "0122290c-5f35-4d80-8088-fc4246723679",
+        "occurrence_id": "e5d0ea6e-9995-4835-b2b1-af15247cec00",
+        "entity_type": "artist",
+        "target_artist_id": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+        "created_at": "2026-10-24T14:51:31.881619+00:00",
+        "updated_at": "2026-10-24T14:51:31.881619+00:00"
+      },
+      {
+        "id": "fce69958-e155-4231-8800-2a290a144efb",
+        "editorial_document_id": "0122290c-5f35-4d80-8088-fc4246723679",
+        "occurrence_id": "9a2d8f40-7ee4-40d4-887c-835813f55c6a",
+        "entity_type": "artist",
+        "target_artist_id": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+        "created_at": "2026-10-24T14:51:31.881619+00:00",
+        "updated_at": "2026-10-24T14:51:31.881619+00:00"
+      },
+      {
+        "id": "1ec1f09a-db66-46ff-88f8-6aac1ff52e6e",
+        "editorial_document_id": "0f868f98-2aa2-4b46-98fd-f9fa77cc819c",
+        "occurrence_id": "ec12757e-f90a-49e6-8da8-ee6d9831a23b",
+        "entity_type": "artist",
+        "target_artist_id": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+        "created_at": "2026-10-24T14:51:32.126462+00:00",
+        "updated_at": "2026-10-24T14:51:32.126462+00:00"
+      },
+      {
+        "id": "bde5f2a9-7dad-4f1b-a558-3bf19de48162",
+        "editorial_document_id": "0f868f98-2aa2-4b46-98fd-f9fa77cc819c",
+        "occurrence_id": "0b31f3ca-790e-44a5-b71c-a0b2737b29c8",
+        "entity_type": "artist",
+        "target_artist_id": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+        "created_at": "2026-10-24T14:51:32.126462+00:00",
+        "updated_at": "2026-10-24T14:51:32.126462+00:00"
+      },
+      {
+        "id": "b235f420-f99a-4e56-958f-9f850d011aa8",
+        "editorial_document_id": "0f868f98-2aa2-4b46-98fd-f9fa77cc819c",
+        "occurrence_id": "bc22527c-e710-434f-ad20-f32d96530740",
+        "entity_type": "artist",
+        "target_artist_id": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+        "created_at": "2026-10-24T14:51:32.126462+00:00",
+        "updated_at": "2026-10-24T14:51:32.126462+00:00"
+      },
+      {
+        "id": "488e4059-f250-46dd-ab47-d56efa7a429d",
+        "editorial_document_id": "0f868f98-2aa2-4b46-98fd-f9fa77cc819c",
+        "occurrence_id": "cc994a0a-b14e-4c6a-97c0-f0ad94faf7c6",
+        "entity_type": "artist",
+        "target_artist_id": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+        "created_at": "2026-10-24T14:51:32.126462+00:00",
+        "updated_at": "2026-10-24T14:51:32.126462+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-24T14:51:36.912Z",
+    "counts": {
+      "documents": 2,
+      "relations": 8,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

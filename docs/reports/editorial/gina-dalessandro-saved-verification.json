@@ -1,0 +1,533 @@
+{
+  "artist": {
+    "id": "c0b238a9-4bc5-4236-bb76-90a18fd4ee1a",
+    "name": "Gina D'Alessandro",
+    "sort_name": "D'Alessandro, Gina",
+    "type": "solo_artist",
+    "birth_year": null,
+    "death_year": null,
+    "created_at": "2026-10-25T16:29:56.473398+00:00",
+    "views": 0,
+    "wikidata_id": null,
+    "first_name": "Gina",
+    "middle_name": null,
+    "last_name": "D'Alessandro",
+    "second_last_name": null,
+    "stage_name": "Gina D'Alessandro",
+    "date_of_birth": null,
+    "birth_place": null,
+    "website": null,
+    "youtube": null,
+    "facebook": null,
+    "instagram": null,
+    "aliases": [
+      "Gina D’Alessandro"
+    ],
+    "mbid": null,
+    "occupations": [],
+    "instruments": [
+      "voice"
+    ],
+    "genres": [],
+    "disambiguation": null,
+    "gender": "female",
+    "ended": null,
+    "mb_metadata": {},
+    "updated_at": "2026-10-25T16:29:56.473398+00:00",
+    "province": null,
+    "birth_day": null,
+    "birth_month": null,
+    "slug": "gina-dalessandro",
+    "primary_role": "singer",
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_death": null,
+    "status": "draft",
+    "primary_genre": "ballads",
+    "bio_en": null,
+    "bio_es": null,
+    "has_image": false,
+    "image_updated_at": null,
+    "formation_year": null,
+    "dissolution_year": null,
+    "spotify": null
+  },
+  "documents": [
+    {
+      "id": "1b0c4e11-fecc-4094-8dc2-4528d3313480",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Gina D'Alessandro is a Dominican singer associated with the ballad and romantic-song repertoire of the 1980s. She represented the Dominican Republic at the 1985 OTI Festival with «Con las alas rotas», written by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+                  "displayText": "Cheo Zorrilla",
+                  "occurrenceId": "8e881ca9-47ed-44e6-9e2e-163984d838c1"
+                }
+              },
+              {
+                "text": ", and subsequently participated in recording projects in the Dominican Republic and Italy.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The OTI Festival",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "On September 21, 1985, she performed «Con las alas rotas» at the Teatro Lope de Vega in Seville, Spain, during the fourteenth OTI Song Festival. ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a56451fa-dccb-462f-9fdb-8cc8a576d6fb",
+                  "displayText": "Bertico Sosa",
+                  "occurrenceId": "a6538164-3e0d-4db7-8fc9-6d2ebffe3f08"
+                }
+              },
+              {
+                "text": " conducted for the Dominican entry. Her appearance belongs to the audiovisual record of the contest, whose broadcast is preserved in the «RTVE» archive.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Dominican song recordings",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "On the collective LP «La música de sus versos», produced by Ricardo Bello for «Disco Bello», she sang «Amor romántico», with poetry by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+                  "displayText": "Joaquín Balaguer",
+                  "occurrenceId": "541c7a2b-bba9-4daf-a246-820da7a088a7"
+                }
+              },
+              {
+                "text": " and music by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+                  "displayText": "Cheo Zorrilla",
+                  "occurrenceId": "0511bef6-f3b4-4fad-8eb0-bbdb6ba0dccb"
+                }
+              },
+              {
+                "text": ". The back cover also lists her among the Dominican singers performing «Paz», with music by Carlos Mario Echenique. The Archivo General de la Nación preserves the album and its original artwork.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Her interpretations of ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+                  "displayText": "Cheo Zorrilla",
+                  "occurrenceId": "31ef74a1-3a48-44de-bce7-c1e282764289"
+                }
+              },
+              {
+                "text": " also included «Cama» and «Loca». Both recordings are mentioned in a 2006 account of a tribute to the composer organized by the Sociedad General de Autores, Compositores y Editores Dominicanos de Música. They document a repertoire extending beyond her OTI appearance.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Coco de agua» and Italian production",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In 1992 «Coco de agua», credited to «Gina y Kiko Band», appeared on an Italian twelve-inch vinyl edition issued by «Café Latino», catalog number CAF 002. Its back cover identifies Gina D'Alessandro as lead vocalist and credits Roberto Ferrante and Kiko Pensato with production, arrangements, and mixing. The record contains four versions, including «Extended Mix», «Ginappella», and «Radio Mix», documenting her participation in a dance production featuring Latin instrumentation.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Her career connects the Ibero-American song festival, settings of Dominican poetry, and dance recording in Italy. In a 2016 interview, illustrator Gaby D’Alessandro recalled her aunt Gina as a singer in the 1980s and a creative influence during childhood; the publication linked to «Coco de agua» when identifying her. This family testimony adds another perspective to the record preserved in her performances and recordings.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "c0b238a9-4bc5-4236-bb76-90a18fd4ee1a",
+      "created_at": "2026-10-25T16:29:56.71532+00:00",
+      "updated_at": "2026-10-25T16:29:56.71532+00:00",
+      "revision": 1
+    },
+    {
+      "id": "9ef90230-f2eb-4d8f-b0ed-d3d29436c433",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Gina D'Alessandro es una cantante dominicana vinculada a la balada y a la canción romántica de los años ochenta. Representó a la República Dominicana en el Festival OTI de 1985 con «Con las alas rotas», de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+                  "displayText": "Cheo Zorrilla",
+                  "occurrenceId": "b48612cd-d52d-443e-ba57-881a223d3397"
+                }
+              },
+              {
+                "text": ", y posteriormente participó en proyectos discográficos dominicanos e italianos.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El Festival OTI",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El 21 de septiembre de 1985 interpretó «Con las alas rotas» en el Teatro Lope de Vega de Sevilla, España, durante la decimocuarta edición del Festival OTI de la Canción. La representación dominicana contó con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a56451fa-dccb-462f-9fdb-8cc8a576d6fb",
+                  "displayText": "Bertico Sosa",
+                  "occurrenceId": "8817878b-4150-465c-9383-25745626d924"
+                }
+              },
+              {
+                "text": " en la dirección orquestal. La actuación forma parte de la memoria audiovisual del certamen, cuya retransmisión conserva el archivo de «RTVE».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La canción dominicana",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En el LP colectivo «La música de sus versos», producido por Ricardo Bello para «Disco Bello», cantó «Amor romántico», con texto de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+                  "displayText": "Joaquín Balaguer",
+                  "occurrenceId": "b4c32ebc-1e47-4cf6-b235-b576ca955449"
+                }
+              },
+              {
+                "text": " y música de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+                  "displayText": "Cheo Zorrilla",
+                  "occurrenceId": "ed18be7b-7db1-4a21-af0f-e7095e5fd8a0"
+                }
+              },
+              {
+                "text": ". La contraportada del disco también la acredita entre los intérpretes de «Paz», junto a otras voces dominicanas, con música de Carlos Mario Echenique. El Archivo General de la Nación conserva el álbum y sus materiales originales.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su relación con el repertorio de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+                  "displayText": "Cheo Zorrilla",
+                  "occurrenceId": "8cca704e-af57-47bf-94ee-3e5607bc2d7b"
+                }
+              },
+              {
+                "text": " incluyó además «Cama» y «Loca». Ambas grabaciones aparecen mencionadas en una reseña de 2006 sobre el homenaje que la Sociedad General de Autores, Compositores y Editores Dominicanos de Música dedicó al compositor. Estos títulos amplían el repertorio conocido de la intérprete más allá de su participación en la OTI.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Coco de agua» y la producción italiana",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En 1992 apareció «Coco de agua», acreditado a «Gina y Kiko Band», en una edición italiana de vinilo de doce pulgadas del sello «Café Latino», catálogo CAF 002. La contraportada identifica a Gina D'Alessandro como voz principal y a Roberto Ferrante y Kiko Pensato como responsables de la producción, los arreglos y la mezcla. El disco presenta cuatro versiones, entre ellas «Extended Mix», «Ginappella» y «Radio Mix», y documenta su incursión en una producción bailable con instrumentación latina.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su trayectoria conecta el escenario de la canción iberoamericana, las musicalizaciones de poesía dominicana y la producción discográfica de baile en Italia. En una entrevista de 2016, la ilustradora Gaby D’Alessandro recordó a su tía Gina como cantante de los años ochenta y como una influencia creativa durante su infancia; la publicación enlazó «Coco de agua» al identificarla. Ese testimonio familiar complementa la memoria que conservan sus actuaciones y grabaciones.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "c0b238a9-4bc5-4236-bb76-90a18fd4ee1a",
+      "created_at": "2026-10-25T16:29:56.587656+00:00",
+      "updated_at": "2026-10-25T16:29:56.587656+00:00",
+      "revision": 1
+    }
+  ],
+  "relations": [
+    {
+      "id": "30eb13b0-9a70-431e-a8a8-6cfb820279c2",
+      "editorial_document_id": "9ef90230-f2eb-4d8f-b0ed-d3d29436c433",
+      "occurrence_id": "b48612cd-d52d-443e-ba57-881a223d3397",
+      "entity_type": "artist",
+      "target_artist_id": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+      "created_at": "2026-10-25T16:29:56.587656+00:00",
+      "updated_at": "2026-10-25T16:29:56.587656+00:00"
+    },
+    {
+      "id": "69226fbc-3f75-4de7-bb6d-ab33ad1ac8a6",
+      "editorial_document_id": "9ef90230-f2eb-4d8f-b0ed-d3d29436c433",
+      "occurrence_id": "8817878b-4150-465c-9383-25745626d924",
+      "entity_type": "artist",
+      "target_artist_id": "a56451fa-dccb-462f-9fdb-8cc8a576d6fb",
+      "created_at": "2026-10-25T16:29:56.587656+00:00",
+      "updated_at": "2026-10-25T16:29:56.587656+00:00"
+    },
+    {
+      "id": "ab1c374e-5b51-45ed-885f-ef90527d0742",
+      "editorial_document_id": "9ef90230-f2eb-4d8f-b0ed-d3d29436c433",
+      "occurrence_id": "b4c32ebc-1e47-4cf6-b235-b576ca955449",
+      "entity_type": "artist",
+      "target_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+      "created_at": "2026-10-25T16:29:56.587656+00:00",
+      "updated_at": "2026-10-25T16:29:56.587656+00:00"
+    },
+    {
+      "id": "35fad8e9-370f-4fc7-8a94-7c3f112a3b06",
+      "editorial_document_id": "9ef90230-f2eb-4d8f-b0ed-d3d29436c433",
+      "occurrence_id": "ed18be7b-7db1-4a21-af0f-e7095e5fd8a0",
+      "entity_type": "artist",
+      "target_artist_id": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+      "created_at": "2026-10-25T16:29:56.587656+00:00",
+      "updated_at": "2026-10-25T16:29:56.587656+00:00"
+    },
+    {
+      "id": "1d07ab79-cb89-4651-8a09-902466a35f36",
+      "editorial_document_id": "9ef90230-f2eb-4d8f-b0ed-d3d29436c433",
+      "occurrence_id": "8cca704e-af57-47bf-94ee-3e5607bc2d7b",
+      "entity_type": "artist",
+      "target_artist_id": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+      "created_at": "2026-10-25T16:29:56.587656+00:00",
+      "updated_at": "2026-10-25T16:29:56.587656+00:00"
+    },
+    {
+      "id": "cc3d6f8f-6ea4-4dd2-9b8d-bc76c5784f22",
+      "editorial_document_id": "1b0c4e11-fecc-4094-8dc2-4528d3313480",
+      "occurrence_id": "8e881ca9-47ed-44e6-9e2e-163984d838c1",
+      "entity_type": "artist",
+      "target_artist_id": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+      "created_at": "2026-10-25T16:29:56.71532+00:00",
+      "updated_at": "2026-10-25T16:29:56.71532+00:00"
+    },
+    {
+      "id": "b5543db9-59ee-46c2-914c-803864b8ce80",
+      "editorial_document_id": "1b0c4e11-fecc-4094-8dc2-4528d3313480",
+      "occurrence_id": "a6538164-3e0d-4db7-8fc9-6d2ebffe3f08",
+      "entity_type": "artist",
+      "target_artist_id": "a56451fa-dccb-462f-9fdb-8cc8a576d6fb",
+      "created_at": "2026-10-25T16:29:56.71532+00:00",
+      "updated_at": "2026-10-25T16:29:56.71532+00:00"
+    },
+    {
+      "id": "b9bc1c03-c103-4605-be2a-15c893ec54f7",
+      "editorial_document_id": "1b0c4e11-fecc-4094-8dc2-4528d3313480",
+      "occurrence_id": "541c7a2b-bba9-4daf-a246-820da7a088a7",
+      "entity_type": "artist",
+      "target_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+      "created_at": "2026-10-25T16:29:56.71532+00:00",
+      "updated_at": "2026-10-25T16:29:56.71532+00:00"
+    },
+    {
+      "id": "938add24-3c8b-4546-a97b-061112c14257",
+      "editorial_document_id": "1b0c4e11-fecc-4094-8dc2-4528d3313480",
+      "occurrence_id": "0511bef6-f3b4-4fad-8eb0-bbdb6ba0dccb",
+      "entity_type": "artist",
+      "target_artist_id": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+      "created_at": "2026-10-25T16:29:56.71532+00:00",
+      "updated_at": "2026-10-25T16:29:56.71532+00:00"
+    },
+    {
+      "id": "c7b26275-9f4b-4edd-a754-243cdab4b6f1",
+      "editorial_document_id": "1b0c4e11-fecc-4094-8dc2-4528d3313480",
+      "occurrence_id": "31ef74a1-3a48-44de-bce7-c1e282764289",
+      "entity_type": "artist",
+      "target_artist_id": "15b91d81-9b3a-4f6a-8f9a-cdee3fc85af0",
+      "created_at": "2026-10-25T16:29:56.71532+00:00",
+      "updated_at": "2026-10-25T16:29:56.71532+00:00"
+    }
+  ],
+  "integrity": {
+    "generatedAt": "2026-10-25T16:30:03.234Z",
+    "counts": {
+      "documents": 2,
+      "relations": 10,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

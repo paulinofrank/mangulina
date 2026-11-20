@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-18",
+  "subject": "Orquesta Jicarada",
+  "scope": "Create one draft group profile with published, validated Spanish and English biographies; prepare one-album discography for evidence review under discography.md Gate B.",
+  "existing_artist": null,
+  "created_artist_id": "0da11a3b-6611-4438-9c1c-4c8bfe67fc36",
+  "saved_biographies": {"en": {"id": "f6515816-e93b-4dd0-86a2-5fad2c3344bf", "status": "published", "revision": 1}, "es": {"id": "0b063fa5-1b01-4958-859f-13498533b237", "status": "published", "revision": 2}},
+  "before": "No matching artist by name, slug or aliases; no matching album by title/catalog number.",
+  "artist": {
+    "name": "Orquesta Jicarada",
+    "sort_name": "Jicarada, Orquesta",
+    "slug": "orquesta-jicarada",
+    "aliases": [
+      "Jicarada"
+    ],
+    "type": "group",
+    "primary_role": "orchestra",
+    "primary_genre": "merengue",
+    "artist_tags": [
+      "secular"
+    ],
+    "birth_place": "República Dominicana",
+    "genres": ["merengue"],
+    "status": "draft"
+  },
+  "evidence": {
+    "name_type": "Editor-supplied CD rear artwork: Orquesta Jicarada, Realizando un Sueño, Brasanel Records S.A., JIC326CD, © ℗ 1995.",
+    "origin_genre": "Editor identifies Dominican merengue orchestra; FEV Musical album listing corroborates merengue identity; 2005 Dominican press documents the band in the New York merengue circuit.",
+    "secular": "Editorial repertoire classification based on romantic song program; no religious affiliation inferred.",
+    "ny_press": [
+      "https://hoy.com.do/ronny-presenta-credenciales/",
+      "https://www.diariolibre.com/revista/el-merengue-estrena-nuevo-cantante-en-voz-de-moreno-IYDL71208"
+    ],
+    "album_corroboration": "https://fevmusical.blogspot.com/2018/08/1995-orquesta-jicarada-realizando-un.html",
+    "primary_image_original": "C:/Users/fvpg/AppData/Local/Temp/codex-clipboard-eaab23e1-33f3-45f0-a2c7-3dbc422cc291.png"
+  },
+  "unknown": [
+    "Formation and dissolution years",
+    "Precise founding location and province",
+    "Founders and complete membership",
+    "Names of four men pictured on rear artwork",
+    "Official website and verified official social accounts",
+    "Verified Spotify artist ID",
+    "Profile portrait and rights clearance"
+  ],
+  "not_applicable": [
+    "Individual gender",
+    "Date and place of birth"
+  ],
+  "identity_safeguards": [
+    "Ronny Moramis remains literal printed credit; no equivalence to Ronny Moreno established",
+    "Luis Gálvez biography is a research lead, not proof of participation in this exact recording",
+    "1995 is a release copyright year, not a formation date",
+    "Do not create collaborator profiles automatically",
+    "No biography references to unrelated existing artists"
+  ],
+  "biographies": {
+    "es": [
+      [
+        "",
+        "Orquesta Jicarada es una agrupación dominicana de merengue cuya producción discográfica documentada incluye «Realizando un Sueño», editado en CD por «Brasanel Records S.A.» en 1995, con el número de catálogo JIC326CD."
+      ],
+      [
+        "Realizando un Sueño",
+        "El disco reúne canciones de temática romántica como «Cariño del Alma», «Hipócrita», «Luna de Miel» y «Perdóname». Abre con «Homenaje Bomba», presentado en la contraportada como un homenaje a [[Los Hermanos Rosario]] por sus quince años de trayectoria."
+      ],
+      [
+        "Créditos del disco",
+        "La contraportada atribuye a Israel Casado la adaptación de «Homenaje Bomba» y los arreglos de otras siete piezas. Fortunato Rojas aparece como arreglista de «Me Gusta» y «Perdóname». El nombre Ronny Moramis figura entre paréntesis en «Hipócrita», «Me Gusta» y «Perdóname»; otras seis canciones llevan la indicación «D.R.», sin autor identificado en esa fuente."
+      ],
+      [
+        "Trayectoria en Nueva York",
+        "En agosto de 2005, notas de la prensa dominicana sobre la carrera de Ronny Moreno incluyeron a Jicarada entre las agrupaciones con las que había trabajado en Estados Unidos. El periódico Hoy situó esa etapa de Jicarada en Nueva York. Estas referencias documentan su presencia en el circuito musical de la diáspora, aunque no detallan la formación que grabó el álbum de 1995."
+      ],
+      [
+        "Legado",
+        "«Realizando un Sueño» conserva un testimonio del repertorio de Jicarada y de las contribuciones de sus arreglistas. La edición permite documentar los títulos y los créditos impresos sin atribuir nombres a las cuatro personas retratadas en la contraportada, que no están identificadas allí."
+      ]
+    ],
+    "en": [
+      [
+        "",
+        "Orquesta Jicarada is a Dominican merengue ensemble whose documented discography includes «Realizando un Sueño», issued on CD by «Brasanel Records S.A.» in 1995 under catalogue number JIC326CD."
+      ],
+      [
+        "Realizando un Sueño",
+        "The album features romantic songs including «Cariño del Alma», «Hipócrita», «Luna de Miel» and «Perdóname». It opens with «Homenaje Bomba», described on the rear artwork as a tribute marking the fifteenth anniversary of [[Los Hermanos Rosario]]."
+      ],
+      [
+        "Album credits",
+        "The rear artwork credits Israel Casado with the adaptation of «Homenaje Bomba» and the arrangements of seven other tracks. Fortunato Rojas is credited as arranger of «Me Gusta» and «Perdóname». The name Ronny Moramis appears in parentheses for «Hipócrita», «Me Gusta» and «Perdóname»; six other songs bear the notation «D.R.», without an author identified in that source."
+      ],
+      [
+        "New York career",
+        "In August 2005, Dominican newspaper reports on Ronny Moreno’s career listed Jicarada among the ensembles with which he had worked in the United States. Hoy placed his time with Jicarada in New York. These accounts document the band’s presence in the diaspora’s music circuit, without identifying the lineup that recorded the 1995 album."
+      ],
+      [
+        "Legacy",
+        "«Realizando un Sueño» preserves a record of Jicarada’s repertoire and its arrangers’ contributions. The edition documents the printed titles and credits without assigning names to the four people pictured on the rear artwork, who are not identified there."
+      ]
+    ]
+  },
+  "references": {
+    "Los Hermanos Rosario": "3422883e-7048-48af-bb03-c68c8c557ee4"
+  }
+}

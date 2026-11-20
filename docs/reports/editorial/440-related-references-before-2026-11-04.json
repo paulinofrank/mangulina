@@ -1,0 +1,596 @@
+[
+  {
+    "id": "f16422bc-08db-4002-aa20-7a1bca25d68a",
+    "editorial_document_id": "0407c48f-e617-4aec-9c2d-7931314d8b3b",
+    "occurrence_id": "30773020-a7c3-4d94-bfdc-9a0edd88be34",
+    "entity_type": "artist",
+    "target_artist_id": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+    "created_at": "2026-10-24 17:45:25.155881+00",
+    "updated_at": "2026-10-24 17:45:25.155881+00"
+  },
+  {
+    "id": "332d0169-547f-46ee-a99e-78fc4f37ba13",
+    "editorial_document_id": "0407c48f-e617-4aec-9c2d-7931314d8b3b",
+    "occurrence_id": "7a0ef863-ab3d-4dc3-b6d3-8f52f7391917",
+    "entity_type": "artist",
+    "target_artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+    "created_at": "2026-10-24 17:45:25.155881+00",
+    "updated_at": "2026-10-24 17:45:25.155881+00"
+  },
+  {
+    "id": "8d67e17b-2706-4542-abf9-dd66d5113dfa",
+    "editorial_document_id": "0407c48f-e617-4aec-9c2d-7931314d8b3b",
+    "occurrence_id": "cf9ae877-f075-4ac5-9158-60ee6685e152",
+    "entity_type": "artist",
+    "target_artist_id": "79d013c7-dafc-4807-966e-32c370172dee",
+    "created_at": "2026-10-24 17:45:25.155881+00",
+    "updated_at": "2026-10-24 17:45:25.155881+00"
+  },
+  {
+    "id": "fcb60126-c14d-4379-a645-22aaae3da939",
+    "editorial_document_id": "18627ed8-3ed7-41aa-b8e4-30cc25d1ec20",
+    "occurrence_id": "17d82381-0e79-4aa0-901b-4f044f36ca39",
+    "entity_type": "artist",
+    "target_artist_id": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "4cf5c232-4e63-4c15-9141-b95573bd3c3f",
+    "editorial_document_id": "18627ed8-3ed7-41aa-b8e4-30cc25d1ec20",
+    "occurrence_id": "1f374fa1-b279-4404-979b-83858eb05a4b",
+    "entity_type": "artist",
+    "target_artist_id": "99537a98-fb19-4487-814d-c60d91c4d10b",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "1f90a76f-c2c9-42e0-ba10-f849701b48f1",
+    "editorial_document_id": "18627ed8-3ed7-41aa-b8e4-30cc25d1ec20",
+    "occurrence_id": "2a460d7b-a1c9-4842-b004-d9186cd1b675",
+    "entity_type": "artist",
+    "target_artist_id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "8e4246eb-2011-4e44-9b73-254a215c49e6",
+    "editorial_document_id": "18627ed8-3ed7-41aa-b8e4-30cc25d1ec20",
+    "occurrence_id": "647af4f4-ab96-45b7-a279-f35b39970d57",
+    "entity_type": "artist",
+    "target_artist_id": "2cc97ca9-126d-48c5-922f-e9d5c8b0360d",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "5130676f-ce70-4176-8da7-5f3b7ad3403c",
+    "editorial_document_id": "18627ed8-3ed7-41aa-b8e4-30cc25d1ec20",
+    "occurrence_id": "6991e412-e1c9-4ee2-b693-1a021b63fcfd",
+    "entity_type": "artist",
+    "target_artist_id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "d88c7168-938d-4971-be03-9963282ad35e",
+    "editorial_document_id": "18627ed8-3ed7-41aa-b8e4-30cc25d1ec20",
+    "occurrence_id": "9283859e-0ee7-4930-8a65-b1b5fc5a9e6f",
+    "entity_type": "artist",
+    "target_artist_id": "da791d26-8bab-45e4-b7d1-f09314869f09",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "30d94cec-ec1a-4f62-90ff-9843de1a7731",
+    "editorial_document_id": "18627ed8-3ed7-41aa-b8e4-30cc25d1ec20",
+    "occurrence_id": "92c70df5-c1ff-4507-b906-64c68feaeb16",
+    "entity_type": "artist",
+    "target_artist_id": "080c0205-8b66-4f16-915e-1d867acf82cc",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "069e7e09-093e-4697-a13e-f917f41bc281",
+    "editorial_document_id": "18627ed8-3ed7-41aa-b8e4-30cc25d1ec20",
+    "occurrence_id": "f14cd3da-1620-4ff8-8f9a-d7ee60b216cd",
+    "entity_type": "artist",
+    "target_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+    "created_at": "2026-09-07 13:35:44.140754+00",
+    "updated_at": "2026-09-07 13:35:44.140754+00"
+  },
+  {
+    "id": "83c6a2ed-ef58-40b1-a8b6-06bfafc49d40",
+    "editorial_document_id": "1b3b2523-8a57-4308-a105-5fe5f09fc9ae",
+    "occurrence_id": "31dd4b4b-c110-4f15-a452-33640a0e613e",
+    "entity_type": "artist",
+    "target_artist_id": "79d013c7-dafc-4807-966e-32c370172dee",
+    "created_at": "2026-10-24 17:45:25.33094+00",
+    "updated_at": "2026-10-24 17:45:25.33094+00"
+  },
+  {
+    "id": "f66cd514-ce1e-4321-bed7-4b7da80bcd91",
+    "editorial_document_id": "1b3b2523-8a57-4308-a105-5fe5f09fc9ae",
+    "occurrence_id": "5fab3d51-b7ae-4db4-89a8-a83fc59adad0",
+    "entity_type": "artist",
+    "target_artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+    "created_at": "2026-10-24 17:45:25.33094+00",
+    "updated_at": "2026-10-24 17:45:25.33094+00"
+  },
+  {
+    "id": "016d5f94-25d8-4c83-8e6c-7e419f140495",
+    "editorial_document_id": "1b3b2523-8a57-4308-a105-5fe5f09fc9ae",
+    "occurrence_id": "8d82a4dc-1b31-4313-abe3-fca1963e966b",
+    "entity_type": "artist",
+    "target_artist_id": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+    "created_at": "2026-10-24 17:45:25.33094+00",
+    "updated_at": "2026-10-24 17:45:25.33094+00"
+  },
+  {
+    "id": "b62a06ce-8ce7-4c4c-a872-c7f2ebf300c9",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "19904592-9ef1-4afa-acb2-5e0a1ddf6830",
+    "entity_type": "artist",
+    "target_artist_id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "6cbeef54-2bc6-4acb-a036-ac0928fdabe0",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "1fa284c4-62d1-4d33-bc4f-980199db55d0",
+    "entity_type": "artist",
+    "target_artist_id": "070e7449-814e-4ea6-a009-7a091b7e4878",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "8976de1d-98ea-4437-9d45-98cc0e808052",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "27fe9407-0b31-47c2-ae46-97bedc5485e9",
+    "entity_type": "artist",
+    "target_artist_id": "f84b208b-dd57-43ad-b2bf-d5099e2f0e0e",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "d07bbc09-78ae-4fe4-911f-0a8aef2fb7b8",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "377ee063-8e57-4665-b134-c392a193156f",
+    "entity_type": "artist",
+    "target_artist_id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "a1748894-327b-4c1b-85fb-837704875059",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "81e14df3-de18-49fd-9b84-e11f14c497d8",
+    "entity_type": "artist",
+    "target_artist_id": "79d013c7-dafc-4807-966e-32c370172dee",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "dba4e905-2add-41fe-8ffb-28a1873ebaea",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "902ccbf5-d064-4deb-b59f-64ade00ae1c7",
+    "entity_type": "artist",
+    "target_artist_id": "2cc97ca9-126d-48c5-922f-e9d5c8b0360d",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "964de046-1219-4b5b-b482-2689a45ae49b",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "925d6d98-06b9-421a-8b9b-2702b0c1d0e0",
+    "entity_type": "artist",
+    "target_artist_id": "070e7449-814e-4ea6-a009-7a091b7e4878",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "e3646cd0-6e43-4cf8-914e-132150759360",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "a59515a3-c128-40bd-8d74-ba787320d60b",
+    "entity_type": "artist",
+    "target_artist_id": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "ccb321ea-aaf1-403e-bc0b-efa02c76ea75",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "a98f43ec-d9a3-4513-8719-17d26581d126",
+    "entity_type": "artist",
+    "target_artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "b75744da-96ae-4631-9ef5-104f939cdd53",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "abb5f883-9885-4288-aac8-e067e8eb53ac",
+    "entity_type": "artist",
+    "target_artist_id": "2a4813af-a826-410e-9475-b2bd1474b234",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "25e3b2dc-b64b-4bfd-bb15-6de5013ef68a",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "b2e7da38-415c-4380-a05a-47791234bf12",
+    "entity_type": "artist",
+    "target_artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "fad1f7f4-312f-440a-ba6b-2ca0a6d6f3ef",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "b36cd166-7781-43c9-ad9e-5696826c1835",
+    "entity_type": "artist",
+    "target_artist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "8bba6a5b-c5df-445f-b5ef-026416da7bfa",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "dd053062-26a1-4222-bb20-c75becdf15fa",
+    "entity_type": "artist",
+    "target_artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "d87f9b31-ab6e-4981-9718-f6cfad953da1",
+    "editorial_document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "occurrence_id": "ff378d3b-c4df-4bd9-a928-490d1c3fe7e4",
+    "entity_type": "artist",
+    "target_artist_id": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "3d0123e9-3216-4392-90ef-63f5e515aa86",
+    "editorial_document_id": "92b6ae70-8000-4ff9-b5a8-e21980ee819a",
+    "occurrence_id": "12ffd86d-808f-4e55-ba10-2ac215b01c2b",
+    "entity_type": "artist",
+    "target_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+    "created_at": "2026-09-07 13:35:44.140754+00",
+    "updated_at": "2026-09-07 13:35:44.140754+00"
+  },
+  {
+    "id": "37e2fb69-b696-42ec-806f-a08539d327a5",
+    "editorial_document_id": "92b6ae70-8000-4ff9-b5a8-e21980ee819a",
+    "occurrence_id": "88bffd1a-b9bd-4765-9c07-92263286d985",
+    "entity_type": "artist",
+    "target_artist_id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "9207f5c1-4328-4608-a124-65f9644ed6ab",
+    "editorial_document_id": "92b6ae70-8000-4ff9-b5a8-e21980ee819a",
+    "occurrence_id": "8cded764-320b-42f8-b641-014520c1f901",
+    "entity_type": "artist",
+    "target_artist_id": "99537a98-fb19-4487-814d-c60d91c4d10b",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "a1c80402-f3d5-4473-8698-2bea91bfeebb",
+    "editorial_document_id": "92b6ae70-8000-4ff9-b5a8-e21980ee819a",
+    "occurrence_id": "92a4d503-46f5-4209-b934-75a7f9c3fd07",
+    "entity_type": "artist",
+    "target_artist_id": "2cc97ca9-126d-48c5-922f-e9d5c8b0360d",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "71350e1e-373c-4bd8-a3a6-bfefbc1a89ea",
+    "editorial_document_id": "92b6ae70-8000-4ff9-b5a8-e21980ee819a",
+    "occurrence_id": "b3327d13-7925-4dbd-aa4a-d322fa08924b",
+    "entity_type": "artist",
+    "target_artist_id": "080c0205-8b66-4f16-915e-1d867acf82cc",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "4e9e1e83-6ed3-4302-85c9-6da1fe4853a8",
+    "editorial_document_id": "92b6ae70-8000-4ff9-b5a8-e21980ee819a",
+    "occurrence_id": "b4091b3e-a11a-48fb-8a49-23254a18d411",
+    "entity_type": "artist",
+    "target_artist_id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "c6524843-4474-44f1-a44b-fdd08c027b97",
+    "editorial_document_id": "92b6ae70-8000-4ff9-b5a8-e21980ee819a",
+    "occurrence_id": "bd8ba57e-750a-407b-94e9-fe0d5598dfa5",
+    "entity_type": "artist",
+    "target_artist_id": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "a25a3bf1-7fa1-4480-9ccf-c0af93209393",
+    "editorial_document_id": "92b6ae70-8000-4ff9-b5a8-e21980ee819a",
+    "occurrence_id": "ce4c84ec-c6f3-4bc8-bd84-d66eb9cb8588",
+    "entity_type": "artist",
+    "target_artist_id": "da791d26-8bab-45e4-b7d1-f09314869f09",
+    "created_at": "2026-08-27 12:13:17.253157+00",
+    "updated_at": "2026-08-27 12:13:17.253157+00"
+  },
+  {
+    "id": "ce9089f8-3df6-4ffe-b447-49e93d0a4b7e",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "33415222-f6dc-4c80-8c4e-c82f99d3764a",
+    "entity_type": "artist",
+    "target_artist_id": "f84b208b-dd57-43ad-b2bf-d5099e2f0e0e",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "f9c8ea43-ec39-4b4b-ba8b-c90b650b2736",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "60396a47-49da-42de-b4f8-2559ba457d6c",
+    "entity_type": "artist",
+    "target_artist_id": "2a4813af-a826-410e-9475-b2bd1474b234",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "5aa5279d-561f-4d88-b359-b2e4c442b4bf",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "8f16a744-f944-4262-84af-b95784f0b48d",
+    "entity_type": "artist",
+    "target_artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "0e7bd046-36cf-464b-8883-0a05ee9f09ea",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "a3e6f3f9-57d2-4e4f-8061-522ae8d0d41f",
+    "entity_type": "artist",
+    "target_artist_id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "3e859ee5-36a9-48b3-99b0-7e08c8646138",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "adf07bec-ed8b-4516-a20f-e9233b76bc31",
+    "entity_type": "artist",
+    "target_artist_id": "2cc97ca9-126d-48c5-922f-e9d5c8b0360d",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "5b9a6c7e-8f82-4b3d-b622-2d7bde137a35",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "af6979f7-76a0-4ba0-9c00-3d65ffefe467",
+    "entity_type": "artist",
+    "target_artist_id": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "aec732fa-6210-447d-877b-d60cb70e417b",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "c0c6b7b9-9f53-482c-ad99-374f46124bca",
+    "entity_type": "artist",
+    "target_artist_id": "070e7449-814e-4ea6-a009-7a091b7e4878",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "7b4bc07e-971c-41b0-92fd-bf3075db13c0",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "c3513301-6990-449e-bfa8-5edd97144477",
+    "entity_type": "artist",
+    "target_artist_id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "d9b3bfb4-33b1-4c38-a7b5-1dbf3396cba4",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "c5fb39ba-595c-42c2-a78d-32833422a690",
+    "entity_type": "artist",
+    "target_artist_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "4e534e48-a35c-42b2-8d31-ea97932218a9",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "debab96a-9ee0-4dca-8cd0-f1542672c702",
+    "entity_type": "artist",
+    "target_artist_id": "79d013c7-dafc-4807-966e-32c370172dee",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "e989469e-6efd-4f1e-95d3-a7ac4dac739c",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "e3d7933a-cd39-4d2d-8628-4330be763392",
+    "entity_type": "artist",
+    "target_artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "3a8df2b0-9ee1-457a-abbf-8050cd819b73",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "eb6a0b3c-fab5-44cd-bb13-67fb23012dd8",
+    "entity_type": "artist",
+    "target_artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "1c0cb5b4-c9fd-451c-8036-a3ed57811988",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "f1d3dc61-310b-4428-a527-2ebc47bd53eb",
+    "entity_type": "artist",
+    "target_artist_id": "070e7449-814e-4ea6-a009-7a091b7e4878",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "ab6783fc-61ce-46f4-af0b-24aacc0244ef",
+    "editorial_document_id": "a64af47f-33e8-4ccf-9870-ead7ba37ac9b",
+    "occurrence_id": "febe1f86-b483-4559-b33e-bc9e4b960c0c",
+    "entity_type": "artist",
+    "target_artist_id": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+    "created_at": "2026-09-24 19:33:53.897452+00",
+    "updated_at": "2026-09-24 19:33:53.897452+00"
+  },
+  {
+    "id": "ffc34f3e-22cf-4c4d-aaf3-40c5f3ddac3c",
+    "editorial_document_id": "c835c1bd-68e7-4663-8506-af619a5cfe3c",
+    "occurrence_id": "2d8ccfe9-7a21-4769-b815-ea9fd7969447",
+    "entity_type": "artist",
+    "target_artist_id": "e07267a0-7f9d-4ef5-928c-d4ade7dc921e",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "0efe88ef-8455-4c42-90a3-7e9a1727f845",
+    "editorial_document_id": "c835c1bd-68e7-4663-8506-af619a5cfe3c",
+    "occurrence_id": "32b4472f-23b1-46dc-9a1a-bd1c15716190",
+    "entity_type": "artist",
+    "target_artist_id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "bf6cb4a2-b79c-43b4-8ab6-50f3e503932a",
+    "editorial_document_id": "c835c1bd-68e7-4663-8506-af619a5cfe3c",
+    "occurrence_id": "47a46a57-592d-4a8d-bdf4-98d06e5c775d",
+    "entity_type": "artist",
+    "target_artist_id": "070e7449-814e-4ea6-a009-7a091b7e4878",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "40e31089-a4ae-4627-a349-2dfd567cc606",
+    "editorial_document_id": "c835c1bd-68e7-4663-8506-af619a5cfe3c",
+    "occurrence_id": "5536a765-1dd2-428b-9171-b458a22354b6",
+    "entity_type": "artist",
+    "target_artist_id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "183cefbc-2fe9-478b-80e1-586fb34bbe43",
+    "editorial_document_id": "c835c1bd-68e7-4663-8506-af619a5cfe3c",
+    "occurrence_id": "55f42730-b062-4eb3-bcc3-a3b4cc161259",
+    "entity_type": "artist",
+    "target_artist_id": "15c08a48-b94b-41c8-99d8-53144397c787",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "33e8271c-941f-48a3-8552-06e88052d0f2",
+    "editorial_document_id": "c835c1bd-68e7-4663-8506-af619a5cfe3c",
+    "occurrence_id": "741e9c2e-b28a-4f55-8305-3d2ac7c5e55a",
+    "entity_type": "artist",
+    "target_artist_id": "080c0205-8b66-4f16-915e-1d867acf82cc",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "c13207e7-13f9-4559-80dc-d7a30927685a",
+    "editorial_document_id": "c835c1bd-68e7-4663-8506-af619a5cfe3c",
+    "occurrence_id": "b6c19385-7c41-47d4-9747-af97b7569e14",
+    "entity_type": "artist",
+    "target_artist_id": "9b15dfca-0f60-49b3-a139-100a5a329741",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "140192c7-3c44-47b3-8f65-433cd0f93cc9",
+    "editorial_document_id": "c835c1bd-68e7-4663-8506-af619a5cfe3c",
+    "occurrence_id": "d2dd0f40-eae5-4b20-ac70-035e0fa33e55",
+    "entity_type": "artist",
+    "target_artist_id": "ac087719-147c-47fa-9bb0-801f7a039ca7",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "569ab32f-c64a-41e3-9d1b-5d8684eda94e",
+    "editorial_document_id": "d73e9a09-a134-4a15-800b-365224ffee51",
+    "occurrence_id": "08e31b8b-eb24-4d51-96b8-764a09b2c9e2",
+    "entity_type": "artist",
+    "target_artist_id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "339c6bfe-f306-413c-9769-34ef928977e4",
+    "editorial_document_id": "d73e9a09-a134-4a15-800b-365224ffee51",
+    "occurrence_id": "5d2846e9-8441-4a40-a6eb-661f4269449f",
+    "entity_type": "artist",
+    "target_artist_id": "080c0205-8b66-4f16-915e-1d867acf82cc",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "b918a054-18fe-423c-aeed-38e6e200137f",
+    "editorial_document_id": "d73e9a09-a134-4a15-800b-365224ffee51",
+    "occurrence_id": "81bb79ce-5cde-4767-bcdb-ee294b2eb3cf",
+    "entity_type": "artist",
+    "target_artist_id": "15c08a48-b94b-41c8-99d8-53144397c787",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "ccc7e96a-f166-42c8-9098-e49bbcf2da19",
+    "editorial_document_id": "d73e9a09-a134-4a15-800b-365224ffee51",
+    "occurrence_id": "984f88c7-9240-4c43-97a9-40e052e087af",
+    "entity_type": "artist",
+    "target_artist_id": "070e7449-814e-4ea6-a009-7a091b7e4878",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "5bf71388-bafe-4b28-8da2-73ec444abb0a",
+    "editorial_document_id": "d73e9a09-a134-4a15-800b-365224ffee51",
+    "occurrence_id": "a751ea69-4679-4dde-b1fa-2ad2eef0ef3e",
+    "entity_type": "artist",
+    "target_artist_id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "a05c196b-5184-4e9f-a207-a35df9f896f5",
+    "editorial_document_id": "d73e9a09-a134-4a15-800b-365224ffee51",
+    "occurrence_id": "bd7e3ec7-74f3-42ba-a5a0-4bc81fe9ff42",
+    "entity_type": "artist",
+    "target_artist_id": "9b15dfca-0f60-49b3-a139-100a5a329741",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "71eb11cc-2a21-4c40-8be0-02ce65461890",
+    "editorial_document_id": "d73e9a09-a134-4a15-800b-365224ffee51",
+    "occurrence_id": "c22e5529-76c1-4cc0-a829-a796c9ae0168",
+    "entity_type": "artist",
+    "target_artist_id": "e07267a0-7f9d-4ef5-928c-d4ade7dc921e",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  },
+  {
+    "id": "728493ee-46b6-460e-bea3-cfc1ea759005",
+    "editorial_document_id": "d73e9a09-a134-4a15-800b-365224ffee51",
+    "occurrence_id": "f47a191a-52d4-499c-bc81-8b9c8a35e99f",
+    "entity_type": "artist",
+    "target_artist_id": "ac087719-147c-47fa-9bb0-801f7a039ca7",
+    "created_at": "2026-09-21 21:46:32.034226+00",
+    "updated_at": "2026-09-21 21:46:32.034226+00"
+  }
+]

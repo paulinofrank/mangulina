@@ -1,0 +1,56 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {randomUUID,createHash} from 'node:crypto';
+import dotenv from 'dotenv';
+import sharp from 'sharp';
+import {createClient} from '@supabase/supabase-js';
+import {validateEditorialDocument} from '../../../src/lib/editorial/validate';
+import {buildEditorialIntegrityReport} from '../../../src/lib/editorial/integrity';
+dotenv.config({quiet:true});
+const b='docs/reports/editorial/';
+const file=b+'raffy-diaz-profile-manifest.json';
+const db=createClient(process.env.NEXT_PUBLIC_SUPABASE_URL??process.env.SUPABASE_URL!,process.env.SUPABASE_SERVICE_ROLE_KEY!,{auth:{persistSession:false,autoRefreshToken:false}});
+const check=(r:any)=>{if(r.error)throw Error(r.error.message);return r.data;};
+const hash=(v:Buffer)=>createHash('sha256').update(v).digest('hex');
+if(process.argv[2]==='prepare'){
+ assert.ok(!fs.existsSync(file),'Manifest already prepared; do not replace frozen identities.');
+ const duplicate=check(await db.from('artists').select('id,name').or('slug.eq.raffy-diaz,facebook.eq.raffy.diaz,instagram.eq.raffydiazofficial,spotify.eq.00ovGVbvihQXg70t9yfQB8,name.eq.Rafael Díaz Ulloa,name.eq.Raffy Díaz,name.eq.Raffy Diaz'));assert.equal(duplicate.length,0);
+ const targets=check(await db.from('artists').select('id,name,slug,status').in('name',['Henry Hierro','Wilfrido Vargas','Pochy y su Cocoband','Kinito Méndez','Rokabanda','Toño Rosario','Conjunto Quisqueya','José El Calvo']));assert.equal(targets.length,8);
+ const artist={id:randomUUID(),name:'Raffy Díaz',stage_name:'Raffy Díaz',sort_name:'Díaz, Raffy',slug:'raffy-diaz',first_name:'Rafael',middle_name:null,last_name:'Díaz',second_last_name:'Ulloa',aliases:['Raffy Diaz','Raphy Díaz','Rafael Díaz Ulloa','El Más Versátil','Marucha','Guananico'],disambiguation:'Dominican merengue and bachata singer',type:'solo_artist',primary_role:'singer',occupations:['bandleader'],gender:'male',birth_place:'Santiago de los Caballeros',province:'Santiago',date_of_birth:null,birth_year:null,primary_genre:'merengue',genres:['merengue-perico-ripiao','bachata','ballads','ballads-bolero'],instruments:['voice'],artist_tags:['secular'],facebook:'raffy.diaz',instagram:'raffydiazofficial',youtube:'@raffydiazoficial',spotify:'00ovGVbvihQXg70t9yfQB8',website:'https://linktr.ee/raffydiaz',status:'draft'};
+ const bios:any={es:[
+ ['', 'Raffy Díaz, nombre artístico de Rafael Díaz Ulloa, es un cantante y director de agrupación dominicano. Su trayectoria abarca el merengue de orquesta, el merengue típico y la bachata, y comprende su participación en distintas formaciones antes de encabezar su propio proyecto.'],
+ ['Santiago y Guananico','Nació un 19 de enero en Santiago de los Caballeros y pasó parte de su niñez y adolescencia en Guananico, Puerto Plata. Su formación temprana incluyó la «Rondalla Monseñor Romero». Debutó profesionalmente con la orquesta de Koki Acosta en Altos de Chavón, interpretando «Es un ángel».'],
+ ['El recorrido por las orquestas','Con [[Henry Hierro]] interpretó «Ahí», cuyo estribillo dio origen al apodo «Marucha». Posteriormente integró la orquesta de [[Wilfrido Vargas]] y, durante los años noventa, [[Pochy y su Cocoband]]. Tras la salida de [[Kinito Méndez]], asumió el liderazgo de [[Rokabanda]], etapa asociada con «Donde quiera me caso», «Me muero chin a chin» y «Corió». Su recorrido también incluyó las agrupaciones de [[Toño Rosario]] y [[Conjunto Quisqueya]].'],
+ ['La etapa típica y el proyecto independiente','En 2004 se incorporó como cantante al grupo de [[José El Calvo]], donde permaneció siete años. En 2012 emprendió una propuesta propia que combinaba el merengue típico con arreglos modernos. También desarrolló una vertiente bachatera con «Flor dormida» y «Nada». Su repertorio posterior incluye «Calma», «La mala», «La mitad», «Pura bachata» y «Se me fue», junto con boleros y baladas.'],
+ ['Legado','Conocido también como «El Más Versátil», Díaz enlaza la experiencia de las grandes orquestas con el circuito del merengue típico y la interpretación de bachata. Una presentación documentada por el Club de Empleados del Banco Central en 2024 muestra esa variedad de repertorio. Su vínculo con Guananico permanece presente en su identidad artística y en producciones audiovisuales realizadas en esa comunidad.']
+ ],en:[
+ ['', 'Raffy Díaz is the stage name of Rafael Díaz Ulloa, a Dominican singer and bandleader whose work spans orchestral merengue, merengue típico and bachata. His career developed through a succession of established ensembles before he formed an independent project.'],
+ ['Early life and first performances','Born on January 19 in Santiago de los Caballeros, he spent part of his childhood and adolescence in Guananico, Puerto Plata. He began his musical training with «Rondalla Monseñor Romero». His professional debut came with Koki Acosta’s orchestra at Altos de Chavón, where he sang «Es un ángel».'],
+ ['Orchestras and Rokabanda','While working with [[Henry Hierro]], his performance of «Ahí» helped establish the nickname «Marucha». He subsequently joined [[Wilfrido Vargas]] and, in the 1990s, [[Pochy y su Cocoband]]. Following [[Kinito Méndez]]’s departure, he took a leading role in [[Rokabanda]], performing songs such as «Donde quiera me caso», «Me muero chin a chin» and «Corió». He also worked with [[Toño Rosario]] and [[Conjunto Quisqueya]].'],
+ ['Merengue típico and an independent direction','In 2004 Díaz joined [[José El Calvo]]’s group as a singer, remaining for seven years. He launched his own project in 2012, bringing modern arrangements to merengue típico. Bachata became another strand of his work through «Flor dormida» and «Nada». Later repertoire includes «Calma», «La mala», «La mitad», «Pura bachata» and «Se me fue», alongside boleros and ballads.'],
+ ['Legacy','Known as «El Más Versátil», Díaz connects the experience of the large merengue orchestras with the típico performance circuit and bachata singing. The Central Bank Employees’ Club documented that breadth of repertoire at a 2024 concert. His connection with Guananico also continues through his artistic identity and music videos filmed in the community where he grew up.']
+ ]};
+ const documents=Object.entries(bios).map(([locale,sections]:any)=>{const content:any[]=[];for(const [heading,prose]of sections){if(heading)content.push({type:'paragraph',content:[{type:'text',text:heading,marks:[{type:'bold'}]}]});const nodes:any[]=[];let pos=0;for(const hit of prose.matchAll(/\[\[(.*?)\]\]/g)){if(hit.index>pos)nodes.push({type:'text',text:prose.slice(pos,hit.index)});const target=targets.find((x:any)=>x.name===hit[1]);assert.ok(target,hit[1]);nodes.push({type:'artistReference',attrs:{artistId:target.id,occurrenceId:randomUUID(),displayText:target.name}});pos=hit.index+hit[0].length;}if(pos<prose.length)nodes.push({type:'text',text:prose.slice(pos)});content.push({type:'paragraph',content:nodes});}const document={type:'doc',content};assert.equal(validateEditorialDocument(1,document).ok,true);return {locale,document};});
+ const portrait=b+'raffy-diaz-press-portrait.webp';
+ const manifest={date:new Date().toISOString(),authorization:'Editor supplied artist accounts in ongoing profile creation workflow; draft artist and published validated EN/ES biographies authorized without second approval.',before:null,after:artist,documents,reference_targets:targets,photo:{source_file:portrait,sha256:hash(fs.readFileSync(portrait)),url:'https://eldia.com.do/wp-content/uploads/2021/11/14_E-3_1p01-e1637628985296.webp',source_page:'https://eldia.com.do/raffy-diaz-seducido-por-el-merengue-tipico/'},evidence_report:'raffy-diaz-research-2026-10-19.md',known_birthday:{day:19,month:1,year:null},unresolved:['Birth year and complete date; do not fabricate a year.'],exclusions:['No discography, other artists, shared group relations, security or artist publication.']};
+ fs.writeFileSync(file,JSON.stringify(manifest,null,2));console.log(JSON.stringify({prepared:true,id:artist.id,status:artist.status,documents:documents.length,reference_occurrences:16}));
+}else if(process.argv[2]==='execute'){
+ const m=JSON.parse(fs.readFileSync(file,'utf8'));assert.equal(hash(fs.readFileSync(m.photo.source_file)),m.photo.sha256);
+ assert.equal(check(await db.from('artists').select('id').or('slug.eq.raffy-diaz,spotify.eq.00ovGVbvihQXg70t9yfQB8')).length,0);
+ check(await db.from('artists').insert(m.after));
+ for(const d of m.documents){check(await db.rpc('upsert_editorial_document',{p_document_type:'artist_biography',p_owner_artist_id:m.after.id,p_locale:d.locale,p_schema_version:1,p_status:'published',p_document:d.document,p_expected_revision:0}));}
+ const source=fs.readFileSync(m.photo.source_file);
+ check(await db.storage.from('artists-images-original').upload(`${m.after.id}/press-2021.webp`,source,{upsert:false,contentType:'image/webp'}));
+ const image=await sharp(source).rotate().resize(300,300,{fit:'cover',position:'centre'}).webp({quality:90}).toBuffer();
+ check(await db.storage.from('artists-images').upload(`${m.after.id}.webp`,image,{upsert:false,contentType:'image/webp'}));
+ const url=db.storage.from('artists-images').getPublicUrl(`${m.after.id}.webp`).data.publicUrl;const r=await fetch(url);assert.equal(r.status,200);assert.equal(hash(Buffer.from(await r.arrayBuffer())),hash(image));
+ check(await db.from('artists').update({has_image:true,image_updated_at:new Date().toISOString()}).eq('id',m.after.id).eq('status','draft'));
+ fs.writeFileSync(b+'raffy-diaz-photo-verification.json',JSON.stringify({url,sha256:hash(image),source_sha256:m.photo.sha256}));console.log('Artist draft, two published biography documents and sourced portrait saved.');
+}else if(process.argv[2]==='verify'){
+ const m=JSON.parse(fs.readFileSync(file,'utf8'));const artist=check(await db.from('artists').select('*').eq('id',m.after.id).single());
+ for(const [key,value]of Object.entries(m.after))assert.deepEqual(artist[key],value,key);assert.equal(artist.has_image,true);assert.ok(!artist.genres.includes(artist.primary_genre));assert.ok(!artist.occupations.includes(artist.primary_role));
+ const documents=check(await db.from('editorial_documents').select('*').eq('owner_artist_id',artist.id));assert.equal(documents.length,2);for(const d of documents){assert.equal(d.status,'published');assert.equal(validateEditorialDocument(1,d.document).ok,true);assert.deepEqual(d.document,m.documents.find((x:any)=>x.locale===d.locale).document);}
+ const relations=check(await db.from('editorial_entity_references').select('*').in('editorial_document_id',documents.map((d:any)=>d.id)));
+ const snapshot={artists:[artist,...m.reference_targets],documents,relations};const integrity=buildEditorialIntegrityReport(snapshot);assert.equal(integrity.counts.blocking,0);assert.equal(integrity.counts.warning,0);
+ fs.writeFileSync(b+'raffy-diaz-saved-verification.json',JSON.stringify({snapshot,integrity},null,2));console.log(JSON.stringify({id:artist.id,status:artist.status,birth_place:artist.birth_place,province:artist.province,documents:documents.map((d:any)=>({id:d.id,locale:d.locale,status:d.status,revision:d.revision})),integrity:integrity.counts,manual_cache_refresh:false}));
+}else throw Error('Expected prepare, execute or verify');

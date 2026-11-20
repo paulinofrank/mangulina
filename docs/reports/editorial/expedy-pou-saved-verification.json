@@ -1,0 +1,511 @@
+{
+  "artist": {
+    "id": "337d5b4a-681c-40b9-9be0-bb26eeaba7ee",
+    "name": "Expedy Pou",
+    "sort_name": "Pou, Expedy",
+    "type": "solo_artist",
+    "birth_year": null,
+    "death_year": null,
+    "created_at": "2026-10-26T02:19:10.083649+00:00",
+    "views": 0,
+    "wikidata_id": null,
+    "first_name": "Expedy",
+    "middle_name": null,
+    "last_name": "Pou",
+    "second_last_name": "Aybar",
+    "stage_name": "Expedy Pou",
+    "date_of_birth": null,
+    "birth_place": "Santiago de los Caballeros",
+    "website": null,
+    "youtube": null,
+    "facebook": null,
+    "instagram": null,
+    "aliases": [
+      "Expedy Pou Aybar"
+    ],
+    "mbid": null,
+    "occupations": [],
+    "instruments": [
+      "voice"
+    ],
+    "genres": [
+      "ballads"
+    ],
+    "disambiguation": null,
+    "gender": "male",
+    "ended": null,
+    "mb_metadata": {},
+    "updated_at": "2026-10-26T02:19:10.083649+00:00",
+    "province": "Santiago",
+    "birth_day": null,
+    "birth_month": null,
+    "slug": "expedy-pou",
+    "primary_role": "singer",
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_death": null,
+    "status": "draft",
+    "primary_genre": "bolero",
+    "bio_en": null,
+    "bio_es": null,
+    "has_image": false,
+    "image_updated_at": null,
+    "formation_year": null,
+    "dissolution_year": null,
+    "spotify": null
+  },
+  "documents": [
+    {
+      "id": "630c9452-620c-470a-9f31-aebbca0121ee",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Expedy Pou Aybar, professionally known as Expedy Pou, is a Dominican bolero and ballad singer born in Santiago de los Caballeros. Alongside his interpretation of romantic songs, he has worked as an agronomist, agricultural television producer and writer. His recordings include «Detalles», «Tú me entiendes», «Concierto de amor» and «Caminos cruzados».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Romantic song",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In an interview with Máximo Jiménez for «El Caribe», reproduced by «Barriga Verde», he recalled that ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+                  "displayText": "Víctor Víctor",
+                  "occurrenceId": "81041638-7573-4234-a129-b98403d0b899"
+                }
+              },
+              {
+                "text": " invited him to sing at an event in Higüey in 1973, shortly after he completed university. Pou described the 1970s and 1980s as his most active performing years and explained that much of his recorded repertoire appeared on 45-rpm singles.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His recording of «Detalles» placed sixth on the Santo Domingo chart published by «Record World» on March 31, 1973, using reports from HIJB. In January 1976, «Billboard» noted a new recording pairing «Tú me entiendes» with «Solo quiero decirte que te quiero». In the interview, he also recalled the LP «Cuando te dejé» and the later compact disc «Explota corazón».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Dominican repertoire and collaborations",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He recorded the sarambo «Amor profundo» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "072e44a9-8a54-4eee-a606-8162953f5154",
+                  "displayText": "José Lacay",
+                  "occurrenceId": "ec3d83fb-5fe1-4181-bf40-d0b4fb4d2302"
+                }
+              },
+              {
+                "text": ", adapting Juan Antonio Alix’s décima «Amor y geografía». His contributions to collective projects documenting Dominican song include «Llámame» and «El sonido de tu voz» on «Por Amor, 30 Aniversario: la música de Rafael Solano», a 1998 volume of «Canciones Dominicanas en Concierto».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He also participated in «Sígueme: en honor a la música de Manuel Troncoso», issued in the same collection in 2000. José del Castillo singled out his performance of «Aparición», written by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+                  "displayText": "Manuel Troncoso",
+                  "occurrenceId": "2f4eeeb0-c6a9-49ae-a414-f0a89eb0a4b0"
+                }
+              },
+              {
+                "text": " and arranged by Carlos Franzetti, within that production by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                  "displayText": "Rafael Solano",
+                  "occurrenceId": "6467a9b0-f1a2-4678-bd04-59e291f3d3e4"
+                }
+              },
+              {
+                "text": ". Pou remained connected to other interpreters through informal musical gatherings devoted to bolero.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Agronomy, television and literature",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His professional work outside music includes agronomy and production of the television programme «El Informativo Agropecuario». In June 2024 he presented «Manuelico: un campesino dominicano instruido» at the Biblioteca Nacional Pedro Henríquez Ureña. Through fiction, the book addresses farming, rural education and the preservation of natural resources.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His recordings contribute to the memory of Dominican romantic song and to collective projects celebrating its composers. His musical career has developed alongside agricultural communication and writing about rural life.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "337d5b4a-681c-40b9-9be0-bb26eeaba7ee",
+      "created_at": "2026-10-26T02:19:10.375416+00:00",
+      "updated_at": "2026-10-26T02:19:10.375416+00:00",
+      "revision": 1
+    },
+    {
+      "id": "5ba4e2b0-8035-48cc-92bc-2938220238ab",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Expedy Pou Aybar, conocido artísticamente como Expedy Pou, es un cantante dominicano de boleros y baladas nacido en Santiago de los Caballeros. Su trayectoria combina la interpretación del cancionero romántico con su profesión de ingeniero agrónomo, la divulgación agropecuaria en televisión y la escritura. Entre sus grabaciones figuran «Detalles», «Tú me entiendes», «Concierto de amor» y «Caminos cruzados».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La canción romántica",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En una entrevista con Máximo Jiménez, publicada por «El Caribe» y reproducida por «Barriga Verde», recordó que ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+                  "displayText": "Víctor Víctor",
+                  "occurrenceId": "9d160390-30ab-4b04-978a-83cc96baeb26"
+                }
+              },
+              {
+                "text": " lo invitó a cantar en una actividad en Higüey en 1973, poco después de terminar sus estudios universitarios. Pou situó sus años de mayor actividad musical en las décadas de 1970 y 1980, y explicó que buena parte de sus grabaciones circuló en sencillos de 45 revoluciones.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su versión de «Detalles» ocupó el sexto lugar del listado de Santo Domingo publicado por «Record World» el 31 de marzo de 1973, con información de HIJB. En enero de 1976, «Billboard» reseñó una nueva grabación que reunía «Tú me entiendes» y «Solo quiero decirte que te quiero». En la entrevista también recordó el LP «Cuando te dejé» y el posterior disco compacto «Explota corazón».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Repertorio dominicano y colaboraciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Grabó junto a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "072e44a9-8a54-4eee-a606-8162953f5154",
+                  "displayText": "José Lacay",
+                  "occurrenceId": "2de37e2a-8877-4cdf-8a8d-6c984620e147"
+                }
+              },
+              {
+                "text": " el sarambo «Amor profundo», adaptación de la décima «Amor y geografía», de Juan Antonio Alix. Su participación en proyectos de recuperación del cancionero dominicano incluye «Llámame» y «El sonido de tu voz» en «Por Amor, 30 Aniversario: la música de Rafael Solano», volumen de 1998 de «Canciones Dominicanas en Concierto».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "También participó en «Sígueme: en honor a la música de Manuel Troncoso», volumen de la misma colección publicado en 2000. José del Castillo destacó su interpretación de «Aparición», de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+                  "displayText": "Manuel Troncoso",
+                  "occurrenceId": "083d852d-5146-478e-8e65-e5ad02c4d6dc"
+                }
+              },
+              {
+                "text": ", con arreglo de Carlos Franzetti, dentro de esa producción de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                  "displayText": "Rafael Solano",
+                  "occurrenceId": "d14f2300-c476-417a-a1c1-a9acaa92683f"
+                }
+              },
+              {
+                "text": ". Su repertorio y sus encuentros con otros intérpretes mantuvieron su vinculación con las peñas dedicadas al bolero.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Agronomía, televisión y literatura",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Además del canto, desarrolló su actividad como ingeniero agrónomo y productor del programa televisivo «El Informativo Agropecuario». En junio de 2024 presentó «Manuelico: un campesino dominicano instruido» en la Biblioteca Nacional Pedro Henríquez Ureña. La obra aborda, mediante la ficción, la agricultura, la formación del campesino y la conservación de los recursos naturales.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Sus grabaciones forman parte de la memoria de la canción romántica dominicana y de los proyectos colectivos dedicados a sus compositores. Su actividad musical convive con una labor de divulgación agrícola y una escritura centrada en la vida del campo.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "337d5b4a-681c-40b9-9be0-bb26eeaba7ee",
+      "created_at": "2026-10-26T02:19:10.21642+00:00",
+      "updated_at": "2026-10-26T02:19:10.21642+00:00",
+      "revision": 1
+    }
+  ],
+  "relations": [
+    {
+      "id": "a94f441a-89cd-4aa6-ad21-9a425429b0cd",
+      "editorial_document_id": "5ba4e2b0-8035-48cc-92bc-2938220238ab",
+      "occurrence_id": "9d160390-30ab-4b04-978a-83cc96baeb26",
+      "entity_type": "artist",
+      "target_artist_id": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+      "created_at": "2026-10-26T02:19:10.21642+00:00",
+      "updated_at": "2026-10-26T02:19:10.21642+00:00"
+    },
+    {
+      "id": "9cf4db29-d062-43b1-a346-9f9d06ed30f6",
+      "editorial_document_id": "5ba4e2b0-8035-48cc-92bc-2938220238ab",
+      "occurrence_id": "2de37e2a-8877-4cdf-8a8d-6c984620e147",
+      "entity_type": "artist",
+      "target_artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "created_at": "2026-10-26T02:19:10.21642+00:00",
+      "updated_at": "2026-10-26T02:19:10.21642+00:00"
+    },
+    {
+      "id": "88ac4495-b87c-4c93-a69b-097791f943f9",
+      "editorial_document_id": "5ba4e2b0-8035-48cc-92bc-2938220238ab",
+      "occurrence_id": "083d852d-5146-478e-8e65-e5ad02c4d6dc",
+      "entity_type": "artist",
+      "target_artist_id": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+      "created_at": "2026-10-26T02:19:10.21642+00:00",
+      "updated_at": "2026-10-26T02:19:10.21642+00:00"
+    },
+    {
+      "id": "759cf0cc-b0d8-4927-9bf3-5e24a6316b6f",
+      "editorial_document_id": "5ba4e2b0-8035-48cc-92bc-2938220238ab",
+      "occurrence_id": "d14f2300-c476-417a-a1c1-a9acaa92683f",
+      "entity_type": "artist",
+      "target_artist_id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+      "created_at": "2026-10-26T02:19:10.21642+00:00",
+      "updated_at": "2026-10-26T02:19:10.21642+00:00"
+    },
+    {
+      "id": "6825ccff-646f-4df9-aad9-4c8809fcbbb3",
+      "editorial_document_id": "630c9452-620c-470a-9f31-aebbca0121ee",
+      "occurrence_id": "81041638-7573-4234-a129-b98403d0b899",
+      "entity_type": "artist",
+      "target_artist_id": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+      "created_at": "2026-10-26T02:19:10.375416+00:00",
+      "updated_at": "2026-10-26T02:19:10.375416+00:00"
+    },
+    {
+      "id": "cd78c5d6-d93a-49e8-8097-1cc9d5be6c18",
+      "editorial_document_id": "630c9452-620c-470a-9f31-aebbca0121ee",
+      "occurrence_id": "ec3d83fb-5fe1-4181-bf40-d0b4fb4d2302",
+      "entity_type": "artist",
+      "target_artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "created_at": "2026-10-26T02:19:10.375416+00:00",
+      "updated_at": "2026-10-26T02:19:10.375416+00:00"
+    },
+    {
+      "id": "5415d9e7-82f1-48d3-9a8d-c7104d5cd598",
+      "editorial_document_id": "630c9452-620c-470a-9f31-aebbca0121ee",
+      "occurrence_id": "2f4eeeb0-c6a9-49ae-a414-f0a89eb0a4b0",
+      "entity_type": "artist",
+      "target_artist_id": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+      "created_at": "2026-10-26T02:19:10.375416+00:00",
+      "updated_at": "2026-10-26T02:19:10.375416+00:00"
+    },
+    {
+      "id": "c68f5a72-71a5-4eae-b7fc-83417b2be555",
+      "editorial_document_id": "630c9452-620c-470a-9f31-aebbca0121ee",
+      "occurrence_id": "6467a9b0-f1a2-4678-bd04-59e291f3d3e4",
+      "entity_type": "artist",
+      "target_artist_id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+      "created_at": "2026-10-26T02:19:10.375416+00:00",
+      "updated_at": "2026-10-26T02:19:10.375416+00:00"
+    }
+  ],
+  "integrity": {
+    "generatedAt": "2026-10-26T02:19:16.370Z",
+    "counts": {
+      "documents": 2,
+      "relations": 8,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

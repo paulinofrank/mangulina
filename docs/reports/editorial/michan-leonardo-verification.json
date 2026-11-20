@@ -1,0 +1,34 @@
+{
+  "fieldsMatch": true,
+  "documentsMatch": true,
+  "report": {
+    "generatedAt": "2026-10-18T01:32:19.158Z",
+    "counts": {
+      "documents": 2,
+      "relations": 4,
+      "blocking": 0,
+      "warning": 2,
+      "informational": 0
+    },
+    "findings": [
+      {
+        "documentId": "61646c3f-7a33-4d8f-b170-147308e228b5",
+        "ownerArtistId": "32aadd75-c75f-4774-a67e-d2124614ea7c",
+        "locale": "en",
+        "code": "unpublished_target",
+        "severity": "warning",
+        "occurrenceId": "d1bf7a65-5cb9-4d97-a895-608637cee61a",
+        "targetArtistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1"
+      },
+      {
+        "documentId": "eb9e3234-570b-4f52-9fe3-cd2e016bdb44",
+        "ownerArtistId": "32aadd75-c75f-4774-a67e-d2124614ea7c",
+        "locale": "es",
+        "code": "unpublished_target",
+        "severity": "warning",
+        "occurrenceId": "40d84556-2ba4-42ea-b0f6-2323408b7a4b",
+        "targetArtistId": "efe31bc6-9074-49b2-ae8e-2844242dd8e1"
+      }
+    ]
+  }
+}

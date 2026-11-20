@@ -1,0 +1,1248 @@
+[
+  {
+    "id": "c526d3f8-f74a-4d43-accc-bb0cb31d5949",
+    "name": "Antonio González",
+    "document_id": "a8237f01-8ec9-45c6-9829-c0e7afbe0d19",
+    "locale": "es",
+    "revision": 2,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "En julio de 2026 fue productor musical de la ceremonia de apertura de los Juegos Centroamericanos y del Caribe en Santo Domingo, y produjo «Suntan Caribe 2026» con ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "4f76c546-d560-4a52-8968-13915d7139f2"
+          }
+        },
+        {
+          "text": " y José Antonio Molina. En septiembre de 2026 fue director musical de la gira «Dinastía Rosario» de ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+            "displayText": "Los Hermanos Rosario",
+            "occurrenceId": "67d85c4f-434e-4365-b81c-7599178b5200"
+          }
+        },
+        {
+          "text": " en Estados Unidos.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ec0ebf45-13ca-41bd-af4c-256e4f226823",
+    "name": "Claudio Cohén",
+    "document_id": "92b6ae70-8000-4ff9-b5a8-e21980ee819a",
+    "locale": "es",
+    "revision": 2,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Maridalia Hernández ya había debutado como cantante el año anterior, en 1976, con una canción suya. También le puso música a fragmentos de Hay un País en el Mundo, de Pedro Mir, junto al grupo fotográfico Jueves 6”8, y participó en el disco colectivo Neruda, Raíz y Geografía.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ec0ebf45-13ca-41bd-af4c-256e4f226823",
+    "name": "Claudio Cohén",
+    "document_id": "92b6ae70-8000-4ff9-b5a8-e21980ee819a",
+    "locale": "es",
+    "revision": 2,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Los músicos de aquel disco lo convierten en un documento de una generación: ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "99537a98-fb19-4487-814d-c60d91c4d10b",
+            "displayText": "Luis \"Terror\" Días",
+            "occurrenceId": "8cded764-320b-42f8-b641-014520c1f901"
+          }
+        },
+        {
+          "text": ", ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+            "displayText": "Manuel Tejada",
+            "occurrenceId": "b4091b3e-a11a-48fb-8a49-23254a18d411"
+          }
+        },
+        {
+          "text": ", Carlos Fernández, Wellington Valenzuela, Luis Ruiz, ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "b3327d13-7925-4dbd-aa4a-d322fa08924b"
+          }
+        },
+        {
+          "text": " y ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "da791d26-8bab-45e4-b7d1-f09314869f09",
+            "displayText": "Michel Camilo",
+            "occurrenceId": "ce4c84ec-c6f3-4bc8-bd84-d66eb9cb8588"
+          }
+        },
+        {
+          "text": ".",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "c993d663-2539-4b9a-8671-40254cab7be2",
+    "name": "Dhario Primero",
+    "document_id": "2fc05d2a-1a6e-4b66-935b-b52856596441",
+    "locale": "es",
+    "revision": 2,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Tras una pausa a finales de los años ochenta dedicada a negocios, volvió a grabar en 1992 con «Tres Amigos a la Buena de Dios», producido por ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+            "displayText": "Manuel Tejada",
+            "occurrenceId": "62705043-df7d-4d91-b13e-79d21cb46c2a"
+          }
+        },
+        {
+          "text": " con coros de ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "3592465f-9961-4455-b42d-b8d4842e1386"
+          }
+        },
+        {
+          "text": ". En 1997 ganó un premio Casandra al videoclip del año con «Estampas», álbum del que escribió siete de los diez temas. A partir de 1999 se volcó hacia la bachata, con «Añoranzas Bachateras», una recopilación de clásicos del género, y «Simplemente, Dhario Primero», y en 2003 grabó un álbum tributo a Sandro.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "41fa2ce2-dd3d-44b8-82b5-ab2df86f9a8a",
+    "name": "Duluc",
+    "document_id": "93fa89d0-8f05-4c10-884c-97bd3cd88453",
+    "locale": "es",
+    "revision": 1,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Como compositor ha escrito más allá de sus propias interpretaciones que a través de ellas. «La Ciguapa», grabada por ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "0337dec9-fe9d-485f-be56-a9120b92fbe8",
+            "displayText": "Chichi Peralta",
+            "occurrenceId": "426a30e9-cd1e-4efc-8d17-0c6cccd5bfe0"
+          }
+        },
+        {
+          "text": ", llegó a disco de oro y platino; «Carnaval para gozar», cantada primero junto a ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "2b13d6c8-1f99-4fb4-aeec-c1dec2027de6"
+          }
+        },
+        {
+          "text": ", fue el tema oficial del Carnaval Dominicano de 1997 a 1999 y la volvió a grabar ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+            "displayText": "Sergio Vargas",
+            "occurrenceId": "61375fae-7154-4f02-88e5-004dc5cc12d5"
+          }
+        },
+        {
+          "text": "; «Pega’o de qué» pasó a manos de «Diómedes y el Grupo Mío», y «El Caminante», que grabó él mismo para «Música Raíz, Vol. 1», apareció después en la compilación «Música negra in the Americas».",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+    "name": "Fefita la Grande",
+    "document_id": "d73e9a09-a134-4a15-800b-365224ffee51",
+    "locale": "es",
+    "revision": 2,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Fefita ha seguido grabando con músicos que podrían ser sus nietos, en lugar de instalarse en el papel de reliquia. En 2019 grabó una nueva versión de La Pimienta Es la Que Pica junto a ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "070e7449-814e-4ea6-a009-7a091b7e4878",
+            "displayText": "Milly Quezada",
+            "occurrenceId": "984f88c7-9240-4c43-97a9-40e052e087af"
+          }
+        },
+        {
+          "text": " y ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "5d2846e9-8441-4a40-a6eb-661f4269449f"
+          }
+        },
+        {
+          "text": ", tres carreras encontrándose en un mismo tema. También ha trabajado con ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "15c08a48-b94b-41c8-99d8-53144397c787",
+            "displayText": "Krisspy",
+            "occurrenceId": "81bb79ce-5cde-4767-bcdb-ee294b2eb3cf"
+          }
+        },
+        {
+          "text": " y con el acordeonista ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+            "displayText": "El Prodigio",
+            "occurrenceId": "08e31b8b-eb24-4d51-96b8-764a09b2c9e2"
+          }
+        },
+        {
+          "text": ", cuya manera de tocar desciende de la tradición que ella sostuvo.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "aa733322-d3a4-4fe7-bf61-65f3425a8ed7",
+    "name": "Frank Ceara",
+    "document_id": "5b3d0fc1-83c8-45b8-88c7-06791dbecf9a",
+    "locale": "es",
+    "revision": 1,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Su octava producción, «El Saborcito de Tu Amor», salió el 27 de mayo de 2025 para conmemorar 35 años de carrera. Tiene once canciones que mezclan bachata, balada y merengue, con metáforas de cocina en las letras. Incluye «Así Bonito», que él escribió y ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+            "displayText": "Juan Luis Guerra",
+            "occurrenceId": "dd053062-26a1-4222-bb20-c75becdf15fa"
+          }
+        },
+        {
+          "text": " produjo y arregló en su estudio de Nueva York, y «La Receta Perfecta» con ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "79d013c7-dafc-4807-966e-32c370172dee",
+            "displayText": "Adalgisa Pantaleón",
+            "occurrenceId": "81e14df3-de18-49fd-9b84-e11f14c497d8"
+          }
+        },
+        {
+          "text": ". Fue nominado como Compositor y/o Autor de Letras en los Premios Soberano 2026.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "faaa6c63-d5c5-4667-8d23-b290104cf186",
+    "name": "Héctor Aníbal",
+    "document_id": "0407c48f-e617-4aec-9c2d-7931314d8b3b",
+    "locale": "es",
+    "revision": 1,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Héctor Aníbal, nombre artístico de Héctor Aníbal Estrella Pantaleón, es un cantante, actor y fotógrafo dominicano nacido el 26 de febrero de 1975 en San Francisco de Macorís, provincia Duarte. Es hijo de la cantante ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "79d013c7-dafc-4807-966e-32c370172dee",
+            "displayText": "Adalgisa Pantaleón",
+            "occurrenceId": "cf9ae877-f075-4ac5-9158-60ee6685e152"
+          }
+        },
+        {
+          "text": ", integrante de la agrupación de ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+            "displayText": "Juan Luis Guerra",
+            "occurrenceId": "7a0ef863-ab3d-4dc3-b6d3-8f52f7391917"
+          }
+        },
+        {
+          "text": ". Su trayectoria reúne el reggae y la fusión tropical con la canción romántica, el teatro musical y el cine.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ae8d87a9-affd-42db-a14c-981b9d5acb4f",
+    "name": "Jackeline Estévez",
+    "document_id": "a3bfd816-f8de-4b50-b581-6ac68626df0e",
+    "locale": "es",
+    "revision": 1,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Jackeline Estévez se crió en San Francisco de Macorís, hija de un militar que también fue barbero y fotógrafo y que manejó su carrera en los primeros años. Creció en el mismo barrio que ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "79d013c7-dafc-4807-966e-32c370172dee",
+            "displayText": "Adalgisa Pantaleón",
+            "occurrenceId": "339c7c57-c4aa-4443-b00a-d1df40c4244b"
+          }
+        },
+        {
+          "text": " y ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "db00c1d0-00ce-4bde-9e7e-f5f6a3bd9250",
+            "displayText": "Henry Hierro",
+            "occurrenceId": "9187dfeb-043e-4b62-ad9e-92e85f212230"
+          }
+        },
+        {
+          "text": ". A los seis años comenzó a participar en concursos de un programa de radio, «En Busca de Estrellas», que se realizaba en la discoteca La Güira, inspirada por un tío que cantaba en el coro de Bellas Artes de la ciudad, y dejó de cantar en público a los siete años aproximadamente, tras una mala experiencia con una competidora.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "e005898c-4fcc-45da-b857-c6775e92fa52",
+    "name": "Johnny Pacheco",
+    "document_id": "b9cbd387-d954-4696-b1dd-2d5206447e2a",
+    "locale": "es",
+    "revision": 4,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "En el mismo árbol familiar hay otros músicos. El pianista ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "fa592bc6-78af-41e8-a1ff-f6fe59fae250",
+            "displayText": "Damirón",
+            "occurrenceId": "9344cd38-428a-4754-ba22-a0393732975a"
+          }
+        },
+        {
+          "text": ", que hizo mucho por sacar el merengue del país, era primo segundo de su madre, y la cantante ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "c28b75f2-b60c-4227-a537-a7d9353eb055"
+          }
+        },
+        {
+          "text": " desciende de una tía bisabuela suya por otra rama de la familia.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "25a420d1-7a98-4fd2-93c8-38d3ed2d2dc1",
+    "name": "José Antonio Rodríguez",
+    "document_id": "7fe1137b-ac06-45e6-a717-04f342776b0c",
+    "locale": "es",
+    "revision": 1,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "En 1986 se llevó el primer lugar del Festival Internacional de la Canción de Viña del Mar, en Chile, con Para Quererte, cantada por ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "bdd87d9d-b719-4f14-99e2-e43f66af1594"
+          }
+        },
+        {
+          "text": ". Viña del Mar era el escenario más grande del mundo hispanohablante para esa clase de canción, y ganarlo puso una composición dominicana al frente de un campo que rara vez miraba hacia la isla para otra cosa que no fuera merengue.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "8769e02a-52d7-4818-ac19-e5dd46d7075f",
+    "name": "Juan Francisco Ordóñez",
+    "document_id": "f916a617-c66f-433f-8d47-f1453c1c93d0",
+    "locale": "es",
+    "revision": 5,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Se presentaron en el anfiteatro de Altos de Chavón en febrero de 1983 con Bob James, y en abril con los ingleses «The English Beat». En 1984 grabaron la banda sonora del corto «Las pausas del silencio» junto a ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+            "displayText": "Juan Luis Guerra",
+            "occurrenceId": "20b4b99a-8cee-485a-8e93-e9ad7e5af456"
+          }
+        },
+        {
+          "text": " 4.40, ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "eddf1e3e-1ca6-4078-b894-871fbd2b2745"
+          }
+        },
+        {
+          "text": " y Tavito Vásquez, y esa música ganó el premio a mejor banda sonora en el festival internacional de cine de Filadelfia. El LP que registraron en Audiolab en 1985 se quedó sin publicar por falta de recursos hasta el año 2000, cuando salió como «",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+            "displayText": "Vickiana",
+            "occurrenceId": "b999d441-3c92-43e9-9a47-3a50b16bc25d"
+          }
+        },
+        {
+          "text": ": las sesiones del 1985». En el festival «Varadero» de Cuba, en abril de 1987, algunas autoridades consideraron impropios el volumen y la presencia escénica del grupo, y a sus integrantes se los invitó a abandonar el país al día siguiente de tocar; la prensa juvenil cubana se puso de su lado y Pablo Milanés lo dijo en público. Ordóñez se quedó casi veinticinco años, hasta que la banda de ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "99537a98-fb19-4487-814d-c60d91c4d10b",
+            "displayText": "Luis \"Terror\" Días",
+            "occurrenceId": "aec1a8f7-fa3a-4ac4-8f91-802e1e6c525e"
+          }
+        },
+        {
+          "text": " cerró en 2004.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "baace2f8-c3e6-4e30-a241-2efde9fdbecf",
+    "name": "Junior Cabrera",
+    "document_id": "d583921f-7d8c-42f2-bd79-4b6d1bf5438b",
+    "locale": "es",
+    "revision": 6,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Los invitados son los que hicieron esta música y, muchas veces, los que no entrevista nadie más: arreglistas, pianistas, bajistas, percusionistas. ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+            "displayText": "Ramón Orlando",
+            "occurrenceId": "cdc36418-3d1d-4625-9b2a-c65aca39de85"
+          }
+        },
+        {
+          "text": " contó ahí cómo se escribió A Lo Maco. Por el programa han pasado ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "070e7449-814e-4ea6-a009-7a091b7e4878",
+            "displayText": "Milly Quezada",
+            "occurrenceId": "d533e898-3b0c-49bc-a64f-e7dd3988f603"
+          }
+        },
+        {
+          "text": ", ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "332fb17a-fbeb-499f-922a-ce403b8131b2"
+          }
+        },
+        {
+          "text": ", ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "bc4db4c6-c96f-4eb7-af95-ac637785c5bf",
+            "displayText": "Bonny Cepeda",
+            "occurrenceId": "d8f36e04-80d2-469d-adf5-8dd9fd0d2512"
+          }
+        },
+        {
+          "text": " y ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "dc89c826-c298-48c8-aa05-50e77d85264a",
+            "displayText": "Los Kenton",
+            "occurrenceId": "76549cb6-603e-49d0-8a8d-8e73921b2f55"
+          }
+        },
+        {
+          "text": "; ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "5afd40d0-b279-4b42-8dab-48dab69c2e89",
+            "displayText": "Jura Valoy",
+            "occurrenceId": "baa238ee-9b2f-4c4e-8384-d151720d0da2"
+          }
+        },
+        {
+          "text": " habló de cargar un apellido musical, y ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "15c08a48-b94b-41c8-99d8-53144397c787",
+            "displayText": "Krisspy",
+            "occurrenceId": "79acdd50-dbaf-4a2f-b2d0-c7ae5b2515a6"
+          }
+        },
+        {
+          "text": " de que le dijeron que no sabía cantar típico.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "6778e4a3-8f63-420f-bdd4-9a0a7e5cacc5",
+    "name": "Las Chicas del Can",
+    "document_id": "d39dbe27-9d4f-48f1-99f9-981cefbb917c",
+    "locale": "es",
+    "revision": 4,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "En 1992 la mayor parte de la nómina se fue con Miriam Cruz a trabajar aparte. Vargas rehízo el grupo con cuatro músicas que venían del «Grupo Mandarina» —Janni Viloria, Aracelys Ferreira, Adalgisa «Grissel» Báez y la guatemalteca Michell Flores—, a las que se sumó meses después Florangel del Villar, y entre las instrumentistas la trompetista costarricense Ana Lucía Retana Saavedra. A esta etapa la anunciaron como «Las Monumentales Chicas del Can», y de ella salieron «Explosivo» (1992), «Botando Chispas» (1994), «Derramando Sueños» (1996) y «Te quiero ver» (1998), con «Celoso», «Voy pa’ allá», «Hacer el amor con otro» y «Sin compromiso». Flores se fue a cantar sola y esa nómina se separó en 1998.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "8c387f0a-7269-479a-964a-079b1566cb84",
+    "name": "Laura Rivera",
+    "document_id": "973000bc-9bce-40d9-bbc9-37289f8fc171",
+    "locale": "es",
+    "revision": 2,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "En 2016 inició su proyecto solista con «Más que ayer», de ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "4968d375-0833-49e2-8442-633cbaa39404",
+            "displayText": "Vicente García",
+            "occurrenceId": "2567b774-c726-4e54-a5f1-6c914f3e0c63"
+          }
+        },
+        {
+          "text": ". El 3 de abril de 2020 publicó «Despertar», su primer álbum en solitario, producido por Rafa Payán y coproducido por ella, con distribución de «La Oreja Media Group». Sus diez canciones incluyen duetos con Haydée Milanés y ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+            "displayText": "Pavel Núñez",
+            "occurrenceId": "0275ebf3-73fc-4f11-8d55-0d3de7fd09dd"
+          }
+        },
+        {
+          "text": ", con quien grabó «Casita». El disco se realizó con apoyo de sus seguidores mediante financiación colectiva. Su repertorio incluye «Da tristeza», «Te quiero ver» y «Te he perdido», que también interpretó en una grabación en vivo junto a ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "80e449c2-6dc8-48ca-9656-7b6b353b2848"
+          }
+        },
+        {
+          "text": ".",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "df2e419a-0a3a-4f06-8bde-4c4afa4fb27a",
+    "name": "Manuel Jiménez",
+    "document_id": "cef46f0f-13a9-4733-ad49-d6d646dbfbfa",
+    "locale": "es",
+    "revision": 2,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Su catálogo ha viajado ampliamente en voces ajenas: «Quién no Sabe de Amor» en la de ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "b13cce5f-2782-44a0-ba6b-838a0a1ef4c1"
+          }
+        },
+        {
+          "text": ", «Amor Casual» en la de ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "2bc36959-dcce-4e10-9ecf-2cd418eaa489",
+            "displayText": "Wilfrido Vargas",
+            "occurrenceId": "49db4fd2-9717-4433-84e3-83536e8a1876"
+          }
+        },
+        {
+          "text": ", «Con Agua y Sal» en las de ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "bc2289d0-ae94-48b5-8eb9-7f0ae18b845a",
+            "displayText": "Miriam Cruz",
+            "occurrenceId": "95d35ac6-812a-419b-b3e8-97652a8bb1b0"
+          }
+        },
+        {
+          "text": " y, décadas después, ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "ae3c0afb-0e0a-4506-bbe6-a59c3c68bb1e",
+            "displayText": "Eddy Herrera",
+            "occurrenceId": "5586347b-8d5a-4e14-a67b-b82ffa4a9774"
+          }
+        },
+        {
+          "text": ", «Dile Más» en la de ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+            "displayText": "Sergio Vargas",
+            "occurrenceId": "d610dd69-b8cd-4949-855c-ed96069ec3f0"
+          }
+        },
+        {
+          "text": ", y «En Cuarentena» en la de ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+            "displayText": "Los Hermanos Rosario",
+            "occurrenceId": "6251819e-814d-4d2c-aac0-03ac79c9132d"
+          }
+        },
+        {
+          "text": ". En el extranjero, la rapera colombiana Lisa M convirtió su «Súbeme el Radio» en el sencillo de rap latino más vendido de 1993, ganador de un Premio ASCAP en Estados Unidos. Representó a República Dominicana cuatro veces en el Festival OTI de la Canción, y dos de sus temas, «Guerembé» y «Santo Domingo Carnaval», fueron elegidos canciones oficiales del Carnaval de Santo Domingo.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+    "name": "Manuel Tejada",
+    "document_id": "c0466bee-0107-47c1-91e1-cb44e4605a3f",
+    "locale": "es",
+    "revision": 2,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "El trabajo va más allá de arreglar. Produce, dirige y contrata: ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "79d013c7-dafc-4807-966e-32c370172dee",
+            "displayText": "Adalgisa Pantaleón",
+            "occurrenceId": "db6283c7-0716-4abe-951b-3e9b234d1701"
+          }
+        },
+        {
+          "text": " ha contado que él la llamó en 1992 para hacer los coros de un disco de balada, que es la clase de decisión que le da forma a una sesión y nunca aparece en una carátula.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+    "name": "Manuel Troncoso",
+    "document_id": "09e8332d-85d1-46d2-b5b8-3f868eccaafd",
+    "locale": "es",
+    "revision": 1,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Durante tres décadas sus canciones fueron grabadas en la música popular dominicana y latinoamericana, desde ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+            "displayText": "Johnny Ventura",
+            "occurrenceId": "3ad4a0e7-e9a9-4623-84ab-099efbde0b05"
+          }
+        },
+        {
+          "text": " y ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "8c784f57-4ee4-41b5-b140-c45d0da1c5f6",
+            "displayText": "Joseíto Mateo",
+            "occurrenceId": "ff47f3d7-2134-4ba8-bc0a-ea77ba0ede54"
+          }
+        },
+        {
+          "text": " hasta ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "bb74d881-069a-4e89-b4e5-cd88acbe50c5"
+          }
+        },
+        {
+          "text": ", ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "19124a2a-a49c-435e-989e-049b5dc3726c",
+            "displayText": "Niní Cáffaro",
+            "occurrenceId": "38e5787f-4ea7-451f-a34c-7a339578307e"
+          }
+        },
+        {
+          "text": " y ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "3a69af3c-1b9a-402b-8a3f-66e51dacdffe",
+            "displayText": "Francis Santana",
+            "occurrenceId": "fbab434b-8850-41b0-a675-dd9274be2f2c"
+          }
+        },
+        {
+          "text": ", y en el extranjero por Tito Rodríguez, Plácido Domingo y Olga Guillot. Entre las más conocidas están «Antifaz», «Sígueme», «Cuando llueve», «Tres veces te amo», «Súplica», «Siempre tú», «En honor a la verdad» y «Tiene que ser».",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "a57f3a5e-2058-4fb9-ae4e-e3bc22b93cc8",
+    "name": "Mario Díaz",
+    "document_id": "1f95bbbc-e962-4ab8-b618-8a868eeea217",
+    "locale": "es",
+    "revision": 7,
+    "block": {
+      "type": "bulletList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+                    "displayText": "Sergio Vargas",
+                    "occurrenceId": "cf11b21c-eb6f-4bc3-ae1d-a405a3309259"
+                  }
+                },
+                {
+                  "text": " — «Cuánta vida» y «Por H o por R»,",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+                    "displayText": "Johnny Ventura",
+                    "occurrenceId": "54037b27-9c82-4b6b-9196-b575406c01f4"
+                  }
+                },
+                {
+                  "text": " — «Cara pintá»,",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f84b208b-dd57-43ad-b2bf-d5099e2f0e0e",
+                    "displayText": "Olga Lara",
+                    "occurrenceId": "392f1157-3392-4534-a543-67b00ffbf9b4"
+                  }
+                },
+                {
+                  "text": " — «Uno más»,",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "6c3e0d74-23b7-4d80-969f-9d5319ee5127",
+                    "displayText": "Alex Bueno",
+                    "occurrenceId": "ab2b45d2-5d34-4791-bfaa-3afbe58ad43b"
+                  }
+                },
+                {
+                  "text": " — «Como nadie»,",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "69ca4e3b-2a3a-4e61-a5bd-2210606c5f13",
+                    "displayText": "David Kada",
+                    "occurrenceId": "03e7e6eb-7d93-4472-b70d-b96b6f597083"
+                  }
+                },
+                {
+                  "text": " — «Ilusión de amor»,",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "4361e223-5102-4fee-be4a-05bea6281807",
+                    "displayText": "Richie Ricardo",
+                    "occurrenceId": "ce4ae948-4b96-4e69-a5cf-28deb144d610"
+                  }
+                },
+                {
+                  "text": " — «El amor»,",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "y orquestas e intérpretes como ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "ae3c0afb-0e0a-4506-bbe6-a59c3c68bb1e",
+                    "displayText": "Eddy Herrera",
+                    "occurrenceId": "da269252-87ad-4f2f-a63f-fd02ca8a644d"
+                  }
+                },
+                {
+                  "text": " y ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+                    "displayText": "Maridalia Hernández",
+                    "occurrenceId": "3945e764-5b77-48da-af3c-80c299f121c1"
+                  }
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+    "name": "Rafael Solano",
+    "document_id": "d035d10d-e146-4aad-a73c-70bbb674acb6",
+    "locale": "es",
+    "revision": 1,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Creó además el Festival de la Voz, un concurso de donde salieron ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+            "displayText": "Fernando Villalona",
+            "occurrenceId": "cd335b4d-0884-4c22-b93d-b175b472bb4a"
+          }
+        },
+        {
+          "text": ", ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+            "displayText": "Sergio Vargas",
+            "occurrenceId": "f743d299-12c6-4bfa-9040-bf2c2dcd29ee"
+          }
+        },
+        {
+          "text": ", ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "79d013c7-dafc-4807-966e-32c370172dee",
+            "displayText": "Adalgisa Pantaleón",
+            "occurrenceId": "355283d6-e730-49ae-b1f8-e6a805779188"
+          }
+        },
+        {
+          "text": ", Frank Valdez, Manny Oliva y Fausto Guillén. Con ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "faff18bd-3dbc-477a-bc38-859d611887f0",
+            "displayText": "Yaqui Núñez del Risco",
+            "occurrenceId": "f05b25d6-7b94-4977-8a37-68d1971209da"
+          }
+        },
+        {
+          "text": " produjo Letra y Música, programa nocturno diario de música y opinión, y más tarde Solano en Domingo y Solano Invita.",
+          "type": "text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "da5c733d-836a-4b70-a060-0b9c5da8c6d3",
+    "name": "Riccie Oriach",
+    "document_id": "0b11c138-080b-4fd1-b908-5d48e3ef601c",
+    "locale": "es",
+    "revision": 3,
+    "block": {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "En agosto de 2020 Bandcamp Daily lo incluyó entre diez artistas que fusionan la música de raíz dominicana con sonidos globales, junto a ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "4968d375-0833-49e2-8442-633cbaa39404",
+            "displayText": "Vicente García",
+            "occurrenceId": "2fe1cde4-e85f-4c74-a3a0-6b7a159963eb"
+          }
+        },
+        {
+          "text": " y La Marimba. También participó en la grabación colectiva «Los dominicanos siempre le damos pa'llá», con ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+            "displayText": "Pavel Núñez",
+            "occurrenceId": "140f6a51-95ab-4708-bf05-b51852d83c23"
+          }
+        },
+        {
+          "text": ", ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+            "displayText": "Maridalia Hernández",
+            "occurrenceId": "a2350501-8de2-44b2-be56-6f8828374866"
+          }
+        },
+        {
+          "text": ", ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "c56c84b9-605f-4b13-b418-76ad5756f786",
+            "displayText": "Letón Pé",
+            "occurrenceId": "b75b1ced-6684-4d17-b6d8-cee26ca34eb0"
+          }
+        },
+        {
+          "text": ", ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+            "displayText": "El Prodigio",
+            "occurrenceId": "5b71935e-212d-461d-9ab0-768aa8938454"
+          }
+        },
+        {
+          "text": ", ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "b3841446-0bdb-48f5-9ace-b492db7d9be2",
+            "displayText": "Shadow Blow",
+            "occurrenceId": "8a09e8a7-3437-487e-a7d6-d430355a4cd5"
+          }
+        },
+        {
+          "text": ", ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+            "displayText": "Sergio Vargas",
+            "occurrenceId": "69b74d1c-9616-4327-8571-d24c217c2dbc"
+          }
+        },
+        {
+          "text": " y ",
+          "type": "text"
+        },
+        {
+          "type": "artistReference",
+          "attrs": {
+            "artistId": "bc2289d0-ae94-48b5-8eb9-7f0ae18b845a",
+            "displayText": "Miriam Cruz",
+            "occurrenceId": "d596e958-8e45-4178-ba58-2ad2779c10e7"
+          }
+        },
+        {
+          "text": ".",
+          "type": "text"
+        }
+      ]
+    }
+  }
+]

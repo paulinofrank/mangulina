@@ -1,5 +1,10 @@
 # Database Schema Simplification — Editorial Workflow Alignment
 
+## Historical documentation — not an active import instruction (2026-10-15)
+
+The workflow, commands, readiness claims and status labels below describe the legacy portfolio implementation at the time of writing. They do not authorize new imports or define the current canonical composition model. For current work read [discography.md](discography.md), [DATA_GOVERNANCE.md](DATA_GOVERNANCE.md) and [architecture/MUSIC_ONTOLOGY.md](architecture/MUSIC_ONTOLOGY.md). Preserve this history and existing data; do not rerun these commands without a separately reviewed and authorized plan.
+
+
 ## Overview
 
 Simplified the `credited_works` and `credited_work_credits` schema to match the consolidated editorial workflow.

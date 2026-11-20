@@ -1,0 +1,472 @@
+{
+  "foreign_keys": [
+    {
+      "tbl": "apple_recording_candidates",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "artist_credits",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "artist_credits",
+      "col": "release_id",
+      "target": "releases"
+    },
+    {
+      "tbl": "credited_works",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "cultural_notes",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "editorial_assertion_recording_work_targets",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "editorial_assertion_recordings",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "editorial_case_recordings",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "lyrics",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "mediums",
+      "col": "release_id",
+      "target": "releases"
+    },
+    {
+      "tbl": "platform_click_events",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_credits",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_editorial",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_expressions",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_fun_facts",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_isrcs",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_locations",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_media",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_platform_links",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_redirects",
+      "col": "canonical_recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_redirects",
+      "col": "old_recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_relationships",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_relationships",
+      "col": "related_recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_sources",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_version_profiles",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recording_view_events",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "recordings",
+      "col": "release_id",
+      "target": "releases"
+    },
+    {
+      "tbl": "release_artists",
+      "col": "release_id",
+      "target": "releases"
+    },
+    {
+      "tbl": "release_credits",
+      "col": "release_id",
+      "target": "releases"
+    },
+    {
+      "tbl": "release_redirects",
+      "col": "canonical_release_id",
+      "target": "releases"
+    },
+    {
+      "tbl": "release_view_events",
+      "col": "release_id",
+      "target": "releases"
+    },
+    {
+      "tbl": "tracks",
+      "col": "recording_id",
+      "target": "recordings"
+    },
+    {
+      "tbl": "tracks",
+      "col": "release_id",
+      "target": "releases"
+    },
+    {
+      "tbl": "translations",
+      "col": "recording_id",
+      "target": "recordings"
+    }
+  ],
+  "nonzero_counts": [
+    {
+      "dependency": "platform_click_events.recording_id",
+      "entity_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "rows": 2
+    },
+    {
+      "dependency": "recording_credits.recording_id",
+      "entity_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "rows": 8
+    },
+    {
+      "dependency": "recording_isrcs.recording_id",
+      "entity_id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_isrcs.recording_id",
+      "entity_id": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_isrcs.recording_id",
+      "entity_id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_isrcs.recording_id",
+      "entity_id": "a40ba5e9-f62b-49a0-a85a-93114ba484de",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_isrcs.recording_id",
+      "entity_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_isrcs.recording_id",
+      "entity_id": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_isrcs.recording_id",
+      "entity_id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_isrcs.recording_id",
+      "entity_id": "f693f654-3c95-4155-82b8-b22be3e8bff0",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_platform_links.recording_id",
+      "entity_id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "rows": 7
+    },
+    {
+      "dependency": "recording_platform_links.recording_id",
+      "entity_id": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "rows": 7
+    },
+    {
+      "dependency": "recording_platform_links.recording_id",
+      "entity_id": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+      "rows": 5
+    },
+    {
+      "dependency": "recording_platform_links.recording_id",
+      "entity_id": "749d20c1-4ecf-480d-aeab-a45e42d83cd2",
+      "rows": 5
+    },
+    {
+      "dependency": "recording_platform_links.recording_id",
+      "entity_id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "rows": 6
+    },
+    {
+      "dependency": "recording_platform_links.recording_id",
+      "entity_id": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "rows": 7
+    },
+    {
+      "dependency": "recording_platform_links.recording_id",
+      "entity_id": "a40ba5e9-f62b-49a0-a85a-93114ba484de",
+      "rows": 4
+    },
+    {
+      "dependency": "recording_platform_links.recording_id",
+      "entity_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "rows": 5
+    },
+    {
+      "dependency": "recording_platform_links.recording_id",
+      "entity_id": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "rows": 6
+    },
+    {
+      "dependency": "recording_platform_links.recording_id",
+      "entity_id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "rows": 7
+    },
+    {
+      "dependency": "recording_platform_links.recording_id",
+      "entity_id": "e89938f0-cec1-4551-95c6-b5070541a66e",
+      "rows": 5
+    },
+    {
+      "dependency": "recording_platform_links.recording_id",
+      "entity_id": "f693f654-3c95-4155-82b8-b22be3e8bff0",
+      "rows": 4
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "08660ee6-7063-4c5c-a320-3a38227db93e",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "rows": 2
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "a40ba5e9-f62b-49a0-a85a-93114ba484de",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "rows": 6
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "bd04a980-57a7-4384-828e-a791dac2af85",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "rows": 3
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "rows": 1
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "e89938f0-cec1-4551-95c6-b5070541a66e",
+      "rows": 2
+    },
+    {
+      "dependency": "recording_view_events.recording_id",
+      "entity_id": "f693f654-3c95-4155-82b8-b22be3e8bff0",
+      "rows": 2
+    },
+    {
+      "dependency": "recordings.release_id",
+      "entity_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "rows": 6
+    },
+    {
+      "dependency": "recordings.release_id",
+      "entity_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "rows": 8
+    },
+    {
+      "dependency": "release_artists.release_id",
+      "entity_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "rows": 2
+    },
+    {
+      "dependency": "release_artists.release_id",
+      "entity_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "rows": 2
+    },
+    {
+      "dependency": "release_credits.release_id",
+      "entity_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "rows": 1
+    },
+    {
+      "dependency": "release_credits.release_id",
+      "entity_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "rows": 1
+    },
+    {
+      "dependency": "release_view_events.release_id",
+      "entity_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "rows": 7
+    },
+    {
+      "dependency": "release_view_events.release_id",
+      "entity_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "rows": 5
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "08660ee6-7063-4c5c-a320-3a38227db93e",
+      "rows": 1
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "1edf06fb-2878-407c-8fdd-a0443e6e91e5",
+      "rows": 1
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "201cd51f-5c44-4702-b82f-9b6db149ee6d",
+      "rows": 1
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "2d7dfc6d-5e58-421c-9fc4-1ee1d072c9ee",
+      "rows": 1
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "749d20c1-4ecf-480d-aeab-a45e42d83cd2",
+      "rows": 1
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "77b2c58a-396c-4f79-afd4-74429fe7e6ef",
+      "rows": 2
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "8cb31855-af77-4608-b0c6-d1cf88fe95c4",
+      "rows": 1
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "a40ba5e9-f62b-49a0-a85a-93114ba484de",
+      "rows": 1
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "bb2ecc6a-e88a-4fd2-aa72-205119032c0a",
+      "rows": 2
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "bd04a980-57a7-4384-828e-a791dac2af85",
+      "rows": 1
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "e70e9b0d-2a00-4b42-8145-456d973fd31e",
+      "rows": 1
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "e81bfb18-f534-469a-881a-83eabe69003f",
+      "rows": 1
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "e89938f0-cec1-4551-95c6-b5070541a66e",
+      "rows": 1
+    },
+    {
+      "dependency": "tracks.recording_id",
+      "entity_id": "f693f654-3c95-4155-82b8-b22be3e8bff0",
+      "rows": 1
+    },
+    {
+      "dependency": "tracks.release_id",
+      "entity_id": "3c02cc68-0231-4b75-9506-27f913643765",
+      "rows": 8
+    },
+    {
+      "dependency": "tracks.release_id",
+      "entity_id": "975b0558-9f39-46e2-b86e-ab543e90d8f9",
+      "rows": 8
+    }
+  ],
+  "note": "Zero counts omitted; no private event payloads read. Non-FK references not fully inventoried."
+}

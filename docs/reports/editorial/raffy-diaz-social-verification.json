@@ -1,0 +1,57 @@
+{
+  "facebook": {
+    "url": "https://www.facebook.com/raffy.diaz",
+    "public_gender": "Hombre",
+    "birthday": "19 January; year not displayed",
+    "hometown": "Guananico",
+    "current_city": "Santiago de los Caballeros"
+  },
+  "instagram": {
+    "url": "https://www.instagram.com/raffydiazofficial/",
+    "display_name": "Raffy Diaz",
+    "bio": "Artist; Dominicano; PuraBachata",
+    "official_link_hub": "https://linktr.ee/raffydiaz"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/@raffydiazoficial",
+    "channel": "UCux4kvGL1VEVwj_Knc0uj6Q",
+    "official_artist_channel": true,
+    "description": "Born Santiago de los Caballeros; childhood/adolescence Guananico; Koki Acosta, Henry Hierro, Alex Bueno, Carlos David, El Zafiro; About directly links all three supplied Facebook/Instagram/Spotify accounts."
+  },
+  "spotify": {
+    "url": "https://open.spotify.com/artist/00ovGVbvihQXg70t9yfQB8",
+    "name": "Raffy Diaz",
+    "personal_name": "Rafael Díaz Ulloa",
+    "birthplace": "Santiago de los Caballeros",
+    "styles": [
+      "merengue",
+      "merengue típico",
+      "bachata",
+      "boleros",
+      "baladas"
+    ],
+    "popular_tracks": [
+      "Estoy Buscando el Son",
+      "Calma",
+      "Ladrona",
+      "Another Night",
+      "Nada"
+    ]
+  },
+  "birth_research": {
+    "profile_terms": [
+      "Cumple",
+      "Birthday",
+      "Happy",
+      "Años",
+      "Feliz",
+      "Año"
+    ],
+    "global_queries": [
+      "Raffy Díaz cumpleaños",
+      "Raffy Díaz edad",
+      "\"Raffy Díaz\" \"cumplo\""
+    ],
+    "outcome": "No verified birth year or age. Humor about age, career anniversaries and other people’s birthdays excluded."
+  }
+}

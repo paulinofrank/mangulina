@@ -1,0 +1,13 @@
+# Rhina Ramírez — completion
+
+Date: 2026-10-23. Created artist 307722e8-5902-41b4-a9b7-ae67d99c87c6, slug rhina-ramirez, status draft. Before: no matching artist by scoped all-status name/alias/Spotify inspection. Exact new field values and documents: rhina-ramirez-profile-manifest.json; evidence: rhina-ramirez-research-2026-10-23.md.
+
+Published English biography 99ecd6b1-fcff-44d6-99fd-51c5b8cbdf62 and Spanish biography 5c707276-c79f-490a-92e3-d0282cfa9428, revision 1 each. Sixteen structured references target existing published identities. No collaborator profiles modified or created. Missing Ivonne Haza, Bienvenido Bustamante and Jesús Troncoso identities were checked by name variants; no existing match found, so their names remain literal text.
+
+Saved singer, female, secular, voice, primary bolero and additional ballads, without duplicate genre/occupation values. Personal fields contain Rhina / null / Ramírez / null; further personal names not established. City Las Matas de Farfán, province San Juan. Birth year 1945; complete birth date null. March 1945 preserved in both biographies, with secondary-source limitations documented. No invented birthday day. Spotify 1Lkpmjue9fH5ajOscCbv9X directly inspected and matched to the AGN festival program. Other socials, website and portrait remain pending verification.
+
+Database readback matched all manifest fields and both full documents. Schema and editorial integrity validation passed: 2 documents, 16 relations, 0 blocking, 0 warnings, 0 informational findings. Authenticated admin editor was reloaded and artist selected anew; visual review confirmed draft status, year-only birth with empty full date, city/province, classifications, Spotify, and both published revision-1 biographies. Screenshot: rhina-ramirez-visual-review.png.
+
+Files created in this directory: rhina-ramirez-inspection.json; rhina-ramirez-profile-content.json; rhina-ramirez-create-profile.ts; rhina-ramirez-research-2026-10-23.md; rhina-ramirez-profile-manifest.json; rhina-ramirez-saved-verification.json; rhina-ramirez-visual-review.png; this report. Each is scoped to this artist. Existing historical reports preserved.
+
+No discography catalog entities or credits imported (0 releases, recordings, works, tracks or music credits changed), no image upload, no artist publication, no application/schema/security change, commit, push or deployment. Production access was scoped database inspection/save/readback and a single admin page reload with artist/both-locale review. No public catalog crawl or manual cache refresh; direct writes bypass admin invalidation, and draft preparation does not authorize cache warming. Broader production verification deferred as unnecessary for this scope.

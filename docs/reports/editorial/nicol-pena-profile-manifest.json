@@ -1,0 +1,92 @@
+{
+  "artist": "Nicol Peña",
+  "date": "2026-10-16",
+  "before": null,
+  "after": {
+    "name": "Nicol Peña",
+    "aliases": ["La Mega Estrella"],
+    "primary_genre": "merengue-perico-ripiao",
+    "genres": ["merengue-perico-ripiao"],
+    "sort_name": "Peña, Nicol",
+    "slug": "nicol-pena",
+    "stage_name": "Nicol Peña",
+    "gender": "male",
+    "province": "Puerto Plata",
+    "type": "solo_artist",
+    "primary_role": "musician",
+    "occupations": [
+      "accordionist",
+      "singer",
+      "songwriter",
+      "bandleader"
+    ],
+    "instruments": [
+      "accordion",
+      "voice"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_birth": "1974-08-06",
+    "birth_year": 1974,
+    "birth_place": "Guananico, Puerto Plata, República Dominicana",
+    "facebook": "nicol.pena.9674",
+    "instagram": "nicolpena__oficial",
+    "spotify": "1asNDNHXJA66EfYKgoY3wT",
+    "status": "draft"
+  },
+  "primary_genre": "merengue-perico-ripiao",
+  "sources": {
+    "social_gender": "https://www.facebook.com/nicol.pena.9674/about",
+    "roles_and_repertoire": "https://www.instagram.com/nicolpena__oficial/",
+    "spotify": "https://open.spotify.com/artist/1asNDNHXJA66EfYKgoY3wT",
+    "birth": "https://www.noticiasatiempo.net/2014/04/nicol-pena-consolida-su-carrera-en-usa.html",
+    "early": "https://corilloguananico.blogspot.com/2010/05/biografia-de-nicol-pena.html",
+    "career": "https://www.diariolibre.com/revista/un-ao-solo-en-lo-tpico-nicol-pea-con-su-banda-DIDL117958"
+  },
+  "limitations": [
+    "Exact birth date supported by one identified published semblanza; editorial corroboration desirable.",
+    "YouTube handle promoted on Instagram returned unavailable; leave YouTube empty.",
+    "Personal legal full name not established; do not populate personal name parts from stage name.",
+    "No image upload authorized in this task.",
+    "No discography import or publication."
+  ],
+  "biographies": {
+    "es": [
+      [
+        "",
+        "Nicol Peña (Guananico, Puerto Plata, 6 de agosto de 1974) es un acordeonista, cantante y autor dominicano de merengue típico, conocido como La Mega Estrella. Su trayectoria comprende la dirección de agrupaciones y una actividad musical desarrollada entre la República Dominicana y Estados Unidos."
+      ],
+      [
+        "Formación y trayectoria",
+        "Una biografía local de 2010 sitúa sus primeras experiencias artísticas en el ballet folclórico de Guananico, a los once años, y posteriormente en la agrupación de su hermano. Su formación incluyó trabajo con conjuntos de merengue antes de emprender proyectos propios."
+      ],
+      [
+        "El Mambo Millonario",
+        "En diciembre de 2006, la prensa documentó el primer aniversario de «Nicol Peña y Su Mambo Millonario», tras su paso por «La Selección Típica». En 2014 se reseñó su actividad en Estados Unidos. Su repertorio disponible en Spotify incluye «La Cartera», «Quererte Fue Un Error» y «Ay Amor»; su cuenta oficial también presenta «La Fiera 2.0»."
+      ],
+      [
+        "Legado",
+        "Su carrera documenta la continuidad del acordeón dentro del merengue típico y la circulación de este repertorio entre el Cibao y las comunidades dominicanas en Estados Unidos."
+      ]
+    ],
+    "en": [
+      [
+        "",
+        "Nicol Peña (born August 6, 1974, in Guananico, Puerto Plata) is a Dominican merengue típico accordionist, singer and songwriter known as La Mega Estrella. He has led ensembles and pursued a performing career in the Dominican Republic and the United States."
+      ],
+      [
+        "Early musical experience",
+        "A local biography published in 2010 places his first artistic experiences in Guananico’s folk ballet at age eleven, followed by work in his brother’s group. He gained experience in merengue ensembles before establishing projects of his own."
+      ],
+      [
+        "El Mambo Millonario",
+        "A December 2006 newspaper report marked the first anniversary of «Nicol Peña y Su Mambo Millonario», following his work with «La Selección Típica». Coverage in 2014 documented his activity in the United States. His Spotify repertoire includes «La Cartera», «Quererte Fue Un Error» and «Ay Amor», while his official Instagram also promotes «La Fiera 2.0»."
+      ],
+      [
+        "Legacy",
+        "Peña’s career illustrates the continuing place of the accordion in merengue típico and the movement of this repertoire between the Cibao and Dominican communities in the United States."
+      ]
+    ]
+  }
+}

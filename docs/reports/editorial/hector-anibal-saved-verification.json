@@ -1,0 +1,504 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "faaa6c63-d5c5-4667-8d23-b290104cf186",
+        "name": "Héctor Aníbal",
+        "sort_name": "Héctor Aníbal",
+        "type": "solo_artist",
+        "birth_year": 1975,
+        "death_year": null,
+        "created_at": "2026-10-24T17:45:25.019295+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Héctor",
+        "middle_name": "Aníbal",
+        "last_name": "Estrella",
+        "second_last_name": "Pantaleón",
+        "stage_name": "Héctor Aníbal",
+        "date_of_birth": "1975-02-26",
+        "birth_place": "San Francisco de Macorís",
+        "website": null,
+        "youtube": "@hectoranibalestrella",
+        "facebook": "hectoranibalestrella",
+        "instagram": "hectoranibal",
+        "aliases": [
+          "Héctor Aníbal Estrella Pantaleón",
+          "Hector Anibal"
+        ],
+        "mbid": null,
+        "occupations": [],
+        "instruments": [
+          "voice"
+        ],
+        "genres": [
+          "bachata",
+          "rock",
+          "ballads"
+        ],
+        "disambiguation": "Dominican singer and actor Héctor Aníbal Estrella Pantaleón, lead vocalist of Transfusión",
+        "gender": "male",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-24T17:45:25.019295+00:00",
+        "province": "Duarte",
+        "birth_day": 26,
+        "birth_month": 2,
+        "slug": "hector-anibal",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "reggae",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "3aIXlvkVD9w8ocbFeqhLb1"
+      },
+      {
+        "id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "name": "Juan Luis Guerra",
+        "slug": "juan-luis-guerra",
+        "status": "published"
+      },
+      {
+        "id": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+        "name": "Pavel Núñez",
+        "slug": "pavel-nunez",
+        "status": "published"
+      },
+      {
+        "id": "79d013c7-dafc-4807-966e-32c370172dee",
+        "name": "Adalgisa Pantaleón",
+        "slug": "adalgisa-pantaleon",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "1b3b2523-8a57-4308-a105-5fe5f09fc9ae",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Héctor Aníbal is the professional name of Héctor Aníbal Estrella Pantaleón, a Dominican singer, actor and photographer born on February 26, 1975, in San Francisco de Macorís, Duarte province. He is the son of singer ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "79d013c7-dafc-4807-966e-32c370172dee",
+                    "displayText": "Adalgisa Pantaleón",
+                    "occurrenceId": "31dd4b4b-c110-4f15-a452-33640a0e613e"
+                  }
+                },
+                {
+                  "text": ", a member of ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                    "displayText": "Juan Luis Guerra",
+                    "occurrenceId": "5fab3d51-b7ae-4db4-89a8-a83fc59adad0"
+                  }
+                },
+                {
+                  "text": "'s band. His career connects reggae and tropical fusion with romantic songs, musical theater and film.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The voice of «Transfusión»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "He joined «Transfusión» as lead vocalist in 1993 and became known through the band during the 1990s. In 1995 the group released «Reggae-Ando», a reggae fusion album issued by Sony. Songs associated with that period include «Mujer mujer», «Yo me doy», «El pasito» and «Dulce mujer». The band provided a formative setting for his development as a performer and his relationship with Dominican audiences.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Echa pa ka» and solo recordings",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In 2011 he presented «Echa pa ka» with the group «La Cuadra» at Hard Rock Café. Produced by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+                    "displayText": "Pavel Núñez",
+                    "occurrenceId": "8d82a4dc-1b31-4313-abe3-fca1963e966b"
+                  }
+                },
+                {
+                  "text": " and Alexis de Peña, the record combined bachata, reggae, rock and pop. Its songs included «Yo soy», «Te observo», «Historia de amor», «La necia» and «El Tommy». In 2012 he released «Sigues Siendo» and «Hoy me doy cuenta» and shared «Para cuando hagamos el amor». His solo repertoire developed a romantic approach alongside the energy of his band projects.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Theater, film and photography",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "He also built an extensive stage career, appearing in musicals including «Jesus Christ Superstar», «Les Misérables», «Cats», «Chicago», «Dreamgirls», «Rent» and «Legally Blonde». Photography is another of his professional activities. In 2018 he received the Premio Soberano for Actor of the Year in the film category for his performance in «El hombre que cuida».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The band's return",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In 2026 he returned to recording with «Transfusión», which released «Vamo' a fluir» and «Noche de leyenda». The lineup reunited his voice with Rigoberto Zapata on bass and musical direction, Alfio Lora on keyboards and Jean Pimentel on drums. That year he also appeared on «Te amo», the duo «MarteOvenuS»'s version of Franco De Vita's song, combining bolero, pop and bachata.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His work connects several areas of Dominican performance: reggae fusion bands, solo songs, musical theater characters and cinema. The continuity between voice and acting distinguishes a career that has maintained its connection with music while developing across other artistic disciplines.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "faaa6c63-d5c5-4667-8d23-b290104cf186",
+        "created_at": "2026-10-24T17:45:25.33094+00:00",
+        "updated_at": "2026-10-24T17:45:25.33094+00:00",
+        "revision": 1
+      },
+      {
+        "id": "0407c48f-e617-4aec-9c2d-7931314d8b3b",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Héctor Aníbal, nombre artístico de Héctor Aníbal Estrella Pantaleón, es un cantante, actor y fotógrafo dominicano nacido el 26 de febrero de 1975 en San Francisco de Macorís, provincia Duarte. Es hijo de la cantante ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "79d013c7-dafc-4807-966e-32c370172dee",
+                    "displayText": "Adalgisa Pantaleón",
+                    "occurrenceId": "cf9ae877-f075-4ac5-9158-60ee6685e152"
+                  }
+                },
+                {
+                  "text": ", integrante de la agrupación de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                    "displayText": "Juan Luis Guerra",
+                    "occurrenceId": "7a0ef863-ab3d-4dc3-b6d3-8f52f7391917"
+                  }
+                },
+                {
+                  "text": ". Su trayectoria reúne el reggae y la fusión tropical con la canción romántica, el teatro musical y el cine.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "La voz de «Transfusión»",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 1993 se incorporó como vocalista a «Transfusión», banda con la que se dio a conocer durante los años noventa. En 1995 el grupo publicó «Reggae-Ando», un disco de reggae fusión editado por Sony. De esa etapa proceden canciones como «Mujer mujer», «Yo me doy», «El pasito» y «Dulce mujer». La banda constituyó una plataforma decisiva para su desarrollo como intérprete y para su relación con el público dominicano.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Echa pa ka» y la etapa solista",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 2011 presentó «Echa pa ka» junto al grupo «La Cuadra», en un concierto en Hard Rock Café. La producción estuvo a cargo de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+                    "displayText": "Pavel Núñez",
+                    "occurrenceId": "30773020-a7c3-4d94-bfdc-9a0edd88be34"
+                  }
+                },
+                {
+                  "text": " y Alexis de Peña y combinó bachata, reggae, rock y pop. Incluyó canciones como «Yo soy», «Te observo», «Historia de amor», «La necia» y «El Tommy». En 2012 publicó «Sigues Siendo» y «Hoy me doy cuenta», y difundió «Para cuando hagamos el amor». Su repertorio solista exploró una vertiente romántica junto a la energía de sus proyectos de banda.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Teatro, cine y fotografía",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En paralelo desarrolló una extensa carrera escénica. Su repertorio teatral incluye «Jesucristo Superestrella», «Los miserables», «Cats», «Chicago», «Dreamgirls», «Rent» y «Legalmente rubia». La fotografía constituye otra de sus actividades profesionales. En 2018 recibió el Premio Soberano a Actor del Año, en el renglón de cine, por su actuación en «El hombre que cuida».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El regreso de la banda",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 2026 volvió a grabar con «Transfusión», que publicó «Vamo' a fluir» y «Noche de leyenda». La formación reunió nuevamente su voz con Rigoberto Zapata en el bajo y la dirección, Alfio Lora en los teclados y Jean Pimentel en la batería. Ese año también participó en «Te amo», versión de la canción de Franco De Vita realizada por el dúo «MarteOvenuS», que combina bolero, pop y bachata.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su carrera conecta distintos espacios de la interpretación dominicana: la banda de reggae fusión, la canción solista, los personajes del teatro musical y el trabajo cinematográfico. Esa continuidad entre voz y actuación distingue una trayectoria que ha conservado el vínculo con la música mientras se desarrolla en otras disciplinas artísticas.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "faaa6c63-d5c5-4667-8d23-b290104cf186",
+        "created_at": "2026-10-24T17:45:25.155881+00:00",
+        "updated_at": "2026-10-24T17:45:25.155881+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "8d67e17b-2706-4542-abf9-dd66d5113dfa",
+        "editorial_document_id": "0407c48f-e617-4aec-9c2d-7931314d8b3b",
+        "occurrence_id": "cf9ae877-f075-4ac5-9158-60ee6685e152",
+        "entity_type": "artist",
+        "target_artist_id": "79d013c7-dafc-4807-966e-32c370172dee",
+        "created_at": "2026-10-24T17:45:25.155881+00:00",
+        "updated_at": "2026-10-24T17:45:25.155881+00:00"
+      },
+      {
+        "id": "332d0169-547f-46ee-a99e-78fc4f37ba13",
+        "editorial_document_id": "0407c48f-e617-4aec-9c2d-7931314d8b3b",
+        "occurrence_id": "7a0ef863-ab3d-4dc3-b6d3-8f52f7391917",
+        "entity_type": "artist",
+        "target_artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "created_at": "2026-10-24T17:45:25.155881+00:00",
+        "updated_at": "2026-10-24T17:45:25.155881+00:00"
+      },
+      {
+        "id": "f16422bc-08db-4002-aa20-7a1bca25d68a",
+        "editorial_document_id": "0407c48f-e617-4aec-9c2d-7931314d8b3b",
+        "occurrence_id": "30773020-a7c3-4d94-bfdc-9a0edd88be34",
+        "entity_type": "artist",
+        "target_artist_id": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+        "created_at": "2026-10-24T17:45:25.155881+00:00",
+        "updated_at": "2026-10-24T17:45:25.155881+00:00"
+      },
+      {
+        "id": "83c6a2ed-ef58-40b1-a8b6-06bfafc49d40",
+        "editorial_document_id": "1b3b2523-8a57-4308-a105-5fe5f09fc9ae",
+        "occurrence_id": "31dd4b4b-c110-4f15-a452-33640a0e613e",
+        "entity_type": "artist",
+        "target_artist_id": "79d013c7-dafc-4807-966e-32c370172dee",
+        "created_at": "2026-10-24T17:45:25.33094+00:00",
+        "updated_at": "2026-10-24T17:45:25.33094+00:00"
+      },
+      {
+        "id": "f66cd514-ce1e-4321-bed7-4b7da80bcd91",
+        "editorial_document_id": "1b3b2523-8a57-4308-a105-5fe5f09fc9ae",
+        "occurrence_id": "5fab3d51-b7ae-4db4-89a8-a83fc59adad0",
+        "entity_type": "artist",
+        "target_artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+        "created_at": "2026-10-24T17:45:25.33094+00:00",
+        "updated_at": "2026-10-24T17:45:25.33094+00:00"
+      },
+      {
+        "id": "016d5f94-25d8-4c83-8e6c-7e419f140495",
+        "editorial_document_id": "1b3b2523-8a57-4308-a105-5fe5f09fc9ae",
+        "occurrence_id": "8d82a4dc-1b31-4313-abe3-fca1963e966b",
+        "entity_type": "artist",
+        "target_artist_id": "34b63c95-f79a-4f7b-aa1d-426926d12959",
+        "created_at": "2026-10-24T17:45:25.33094+00:00",
+        "updated_at": "2026-10-24T17:45:25.33094+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-24T17:45:29.350Z",
+    "counts": {
+      "documents": 2,
+      "relations": 6,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

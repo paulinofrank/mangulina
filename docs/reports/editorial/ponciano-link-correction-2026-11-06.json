@@ -1,0 +1,745 @@
+{
+  "purpose": "Link verified published artist mentions in the just-published Carolina and Junior biographies",
+  "documents": [
+    {
+      "name": "Carolina Ponciano",
+      "id": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Carolina Ponciano es una cantante dominicana de música cristiana y líder de adoración vinculada a la iglesia Tabernáculo de Adoración. Su trayectoria incluye el canto congregacional y grabaciones junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e93ce1bb-b7eb-46be-9a99-d642cb37a463",
+                  "occurrenceId": "488823d5-091f-4468-bcff-7cff6a4ad4fe",
+                  "displayText": "Yamilka"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Grupo Hope y su hermana "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "98181fda-aa75-4282-892d-22016f0d2238",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Infancia y formación",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Pasó sus primeros años en Hato Mayor. A los seis años se trasladó a Santo Domingo para vivir con su hermano mayor, el pastor Santiago Ponciano, y la familia de este. En su entrevista de 2024 recordó que participó en el coro de la iglesia antes de dirigir la alabanza. "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "189e9ce6-58e5-4a91-be18-a3f6fb8dc14a",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", hijo de Santiago, es su sobrino."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Grabaciones y escenarios",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Participó con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e93ce1bb-b7eb-46be-9a99-d642cb37a463",
+                  "occurrenceId": "ed826a99-dd84-4a60-a5ed-af15f9675b39",
+                  "displayText": "Yamilka"
+                }
+              },
+              {
+                "type": "text",
+                "text": " en «Nadie Me Ama Más Que Tú», del álbum en vivo «Incomparable», publicado en distintas ediciones entre 2015 y 2016. En 2018 cantó en el congreso juvenil Aviva Joven. Su voz aparece junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86d543cd-3eab-42d0-98c8-438bf8d5792c",
+                  "occurrenceId": "4e0ab508-f4c7-4545-aab7-6b6f866f8301",
+                  "displayText": "Misael J"
+                }
+              },
+              {
+                "type": "text",
+                "text": " en «Rodeado» (2022), canción de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "77b5b170-7f5e-43c8-9811-2b0e6def689b",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " grabada por Grupo Hope. En 2026 compartió con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "840cac5f-7599-4ec8-b62e-eab87d51df67",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " la interpretación de «Te Mostraré Mi Gloria», publicada bajo el crédito de Hope W Music; la ficha de la grabación identifica a Karen y Junior entre sus autores."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su labor une la formación coral y la dirección de adoración con colaboraciones grabadas a lo largo de más de una década. Las participaciones documentadas con Yamilka y Grupo Hope muestran su presencia en distintas generaciones de música cristiana dominicana."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Carolina Ponciano es una cantante dominicana de música cristiana y líder de adoración vinculada a la iglesia Tabernáculo de Adoración. Su trayectoria incluye el canto congregacional y grabaciones junto a Yamilka, Grupo Hope y su hermana Karen Ponciano.\n\n**Infancia y formación**\n\nPasó sus primeros años en Hato Mayor. A los seis años se trasladó a Santo Domingo para vivir con su hermano mayor, el pastor Santiago Ponciano, y la familia de este. En su entrevista de 2024 recordó que participó en el coro de la iglesia antes de dirigir la alabanza. Junior Ponciano, hijo de Santiago, es su sobrino.\n\n**Grabaciones y escenarios**\n\nParticipó con Yamilka en «Nadie Me Ama Más Que Tú», del álbum en vivo «Incomparable», publicado en distintas ediciones entre 2015 y 2016. En 2018 cantó en el congreso juvenil Aviva Joven. Su voz aparece junto a Misael J en «Rodeado» (2022), canción de Junior Ponciano grabada por Grupo Hope. En 2026 compartió con Karen Ponciano la interpretación de «Te Mostraré Mi Gloria», publicada bajo el crédito de Hope W Music; la ficha de la grabación identifica a Karen y Junior entre sus autores.\n\n**Legado**\n\nSu labor une la formación coral y la dirección de adoración con colaboraciones grabadas a lo largo de más de una década. Las participaciones documentadas con Yamilka y Grupo Hope muestran su presencia en distintas generaciones de música cristiana dominicana."
+    },
+    {
+      "name": "Carolina Ponciano",
+      "id": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Carolina Ponciano is a Dominican Christian singer and worship leader associated with the Tabernáculo de Adoración church. Her career spans congregational singing and recordings with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e93ce1bb-b7eb-46be-9a99-d642cb37a463",
+                  "occurrenceId": "0ee56eb0-fb6b-48be-8e19-e82ed184b3e4",
+                  "displayText": "Yamilka"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Grupo Hope, and her sister "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "700f69ab-1477-4036-ac99-ebc7fea900bf",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Childhood and formation",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "She spent her early childhood in Hato Mayor. At six she moved to Santo Domingo to live with her older brother, pastor Santiago Ponciano, and his family. In a 2024 interview she recalled singing in the church choir before leading worship. "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "d02f5b9e-855b-4364-b1d0-8378f9091f17",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Santiago's son, is her nephew."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Recordings and performances",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "She joined "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e93ce1bb-b7eb-46be-9a99-d642cb37a463",
+                  "occurrenceId": "dd5f5115-0899-4dbd-b481-aec120a0afe7",
+                  "displayText": "Yamilka"
+                }
+              },
+              {
+                "type": "text",
+                "text": " on «Nadie Me Ama Más Que Tú» from the live album «Incomparable», issued in different editions in 2015 and 2016. She performed at the Aviva Joven youth congress in 2018. Her voice appears alongside "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86d543cd-3eab-42d0-98c8-438bf8d5792c",
+                  "occurrenceId": "e16c1df9-eb82-4bb0-bff9-43b71984dedb",
+                  "displayText": "Misael J"
+                }
+              },
+              {
+                "type": "text",
+                "text": " on «Rodeado» (2022), a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "872e53b5-6da0-45aa-89d1-fea08911df70",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " song recorded by Grupo Hope. In 2026 she and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "fae4a6b0-648e-4476-ba6e-630613df1fd9",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " performed on «Te Mostraré Mi Gloria», credited to Hope W Music; the release credits Karen and Junior among its writers."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Her work connects choir singing and worship leadership with documented recordings across more than a decade. Her contributions with Yamilka and Grupo Hope place her within successive generations of Dominican Christian music."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Carolina Ponciano is a Dominican Christian singer and worship leader associated with the Tabernáculo de Adoración church. Her career spans congregational singing and recordings with Yamilka, Grupo Hope, and her sister Karen Ponciano.\n\n**Childhood and formation**\n\nShe spent her early childhood in Hato Mayor. At six she moved to Santo Domingo to live with her older brother, pastor Santiago Ponciano, and his family. In a 2024 interview she recalled singing in the church choir before leading worship. Junior Ponciano, Santiago's son, is her nephew.\n\n**Recordings and performances**\n\nShe joined Yamilka on «Nadie Me Ama Más Que Tú» from the live album «Incomparable», issued in different editions in 2015 and 2016. She performed at the Aviva Joven youth congress in 2018. Her voice appears alongside Misael J on «Rodeado» (2022), a Junior Ponciano song recorded by Grupo Hope. In 2026 she and Karen Ponciano performed on «Te Mostraré Mi Gloria», credited to Hope W Music; the release credits Karen and Junior among its writers.\n\n**Legacy**\n\nHer work connects choir singing and worship leadership with documented recordings across more than a decade. Her contributions with Yamilka and Grupo Hope place her within successive generations of Dominican Christian music."
+    },
+    {
+      "name": "Junior Ponciano",
+      "id": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Junior Ponciano es un pastor, compositor y cantante de adoración cristiana dominicano de Santo Domingo. Fundó el movimiento juvenil Somos 1 y ha aportado canciones al repertorio de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "55c4ede5-ff36-4ecb-acb6-d654e3ebd7d0",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y Grupo Hope."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ministerio y música",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hijo de los pastores Santiago y Norelys Ponciano, creció en la iglesia Tabernáculo de Adoración y aprendió a tocar el piano en su ministerio de alabanza. Fundó Somos 1 en 2014 como espacio de encuentro para la juventud cristiana. "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "db599063-b755-45a2-9dd2-c7a1a59affff",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " realizó su primera presentación oficial en una convención de Somos 1 el 25 de enero de 2016. En el congreso Aviva Joven de 2018 presentó el libro «No Soy Santo: Gasté su Gracia»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Composición y colaboraciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Figura junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ef2dd5d6-6893-4e2b-ad13-ac8aa10c37de",
+                  "occurrenceId": "2281663d-60d5-4879-9325-a09d9485b7f6",
+                  "displayText": "Ezequiel Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15ebe282-0d3d-47ed-8aaa-6c901dee5478",
+                  "occurrenceId": "8e57e648-2f58-4b91-a675-06f07e9b6d19",
+                  "displayText": "Yuleisy Canela"
+                }
+              },
+              {
+                "type": "text",
+                "text": " entre los autores de «A Donde Huiré», grabada por "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "7f62940a-627a-4de7-9414-f06aa5ca36cf",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " en 2021. Escribió «Rodeado» para Grupo Hope; el lanzamiento de 2022 contó con las voces de su tía "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "5428defa-f6b1-43d3-aef8-4287a69a39c4",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86d543cd-3eab-42d0-98c8-438bf8d5792c",
+                  "occurrenceId": "2a1f5c2f-1198-4b3e-a158-2aa3d3fcf23f",
+                  "displayText": "Misael J"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". En 2026 fue acreditado como autor y productor ejecutivo de «Te Mostraré Mi Gloria», interpretada por Hope W Music, "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "37a5bf8d-af64-4103-a620-8d4dacffa826",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "15ca1df8-686e-4029-ad89-720a702ece01",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", también coautora. Ese año continuaba al frente de Somos Uno y anunció la iniciativa Fundación Misión Uno."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trabajo une el liderazgo pastoral, la escritura y la composición de música cristiana. Somos 1 brindó el escenario para el debut de Kabed, y sus créditos en «A Donde Huiré», «Rodeado» y «Te Mostraré Mi Gloria» enlazan su ministerio con otras voces dominicanas de adoración."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Junior Ponciano es un pastor, compositor y cantante de adoración cristiana dominicano de Santo Domingo. Fundó el movimiento juvenil Somos 1 y ha aportado canciones al repertorio de Kabed y Grupo Hope.\n\n**Ministerio y música**\n\nHijo de los pastores Santiago y Norelys Ponciano, creció en la iglesia Tabernáculo de Adoración y aprendió a tocar el piano en su ministerio de alabanza. Fundó Somos 1 en 2014 como espacio de encuentro para la juventud cristiana. Kabed realizó su primera presentación oficial en una convención de Somos 1 el 25 de enero de 2016. En el congreso Aviva Joven de 2018 presentó el libro «No Soy Santo: Gasté su Gracia».\n\n**Composición y colaboraciones**\n\nFigura junto a Ezequiel Ponciano y Yuleisy Canela entre los autores de «A Donde Huiré», grabada por Kabed en 2021. Escribió «Rodeado» para Grupo Hope; el lanzamiento de 2022 contó con las voces de su tía Carolina Ponciano y Misael J. En 2026 fue acreditado como autor y productor ejecutivo de «Te Mostraré Mi Gloria», interpretada por Hope W Music, Carolina Ponciano y Karen Ponciano, también coautora. Ese año continuaba al frente de Somos Uno y anunció la iniciativa Fundación Misión Uno.\n\n**Legado**\n\nSu trabajo une el liderazgo pastoral, la escritura y la composición de música cristiana. Somos 1 brindó el escenario para el debut de Kabed, y sus créditos en «A Donde Huiré», «Rodeado» y «Te Mostraré Mi Gloria» enlazan su ministerio con otras voces dominicanas de adoración."
+    },
+    {
+      "name": "Junior Ponciano",
+      "id": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Junior Ponciano is a Dominican Christian pastor, songwriter and worship singer from Santo Domingo. He founded the youth movement Somos 1 and has contributed songs to the worship repertoire of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "1717ec06-ef3e-4493-9446-caa3f635abaa",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and Grupo Hope."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Ministry and music",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A son of pastors Santiago and Norelys Ponciano, he grew up in the Tabernáculo de Adoración church and learned piano in its worship ministry. He established Somos 1 in 2014 as a gathering for Christian youth. "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "e1cd1347-9865-44c3-9338-38126b546b30",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " made its first official appearance at a Somos 1 convention on 25 January 2016. At the 2018 Aviva Joven congress he presented his book «No Soy Santo: Gasté su Gracia»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Songwriting and collaborations",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "He is credited alongside "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ef2dd5d6-6893-4e2b-ad13-ac8aa10c37de",
+                  "occurrenceId": "ea48ec9a-11c1-47f4-a047-7d3f815a9865",
+                  "displayText": "Ezequiel Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15ebe282-0d3d-47ed-8aaa-6c901dee5478",
+                  "occurrenceId": "8066c19e-fe62-4f81-919f-de02b354c08a",
+                  "displayText": "Yuleisy Canela"
+                }
+              },
+              {
+                "type": "text",
+                "text": " as a writer of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "9dd5a349-c481-4eaa-a062-de445bb5939e",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s «A Donde Huiré», recorded in 2021. He wrote «Rodeado» for Grupo Hope; the group's 2022 release featured his aunt "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "7f72543a-f040-40cf-b6f8-ab312d4d8f71",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86d543cd-3eab-42d0-98c8-438bf8d5792c",
+                  "occurrenceId": "c534b053-ab4f-46d4-b419-59dfd93cf15e",
+                  "displayText": "Misael J"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". In 2026 he was credited as a writer and executive producer of «Te Mostraré Mi Gloria», performed by Hope W Music, "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "093bcc5f-9a06-4506-81e1-baa7d06ece5e",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "ea533774-e181-44fe-b716-c384f455ebbf",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", who is also a co-writer. That year he continued to lead Somos Uno and announced its Fundación Misión Uno initiative."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His work combines pastoral leadership, writing, and Christian songwriting. Somos 1 provided a stage for Kabed's debut, while «A Donde Huiré», «Rodeado», and «Te Mostraré Mi Gloria» connect his ministry with other Dominican worship voices."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Junior Ponciano is a Dominican Christian pastor, songwriter and worship singer from Santo Domingo. He founded the youth movement Somos 1 and has contributed songs to the worship repertoire of Kabed and Grupo Hope.\n\n**Ministry and music**\n\nA son of pastors Santiago and Norelys Ponciano, he grew up in the Tabernáculo de Adoración church and learned piano in its worship ministry. He established Somos 1 in 2014 as a gathering for Christian youth. Kabed made its first official appearance at a Somos 1 convention on 25 January 2016. At the 2018 Aviva Joven congress he presented his book «No Soy Santo: Gasté su Gracia».\n\n**Songwriting and collaborations**\n\nHe is credited alongside Ezequiel Ponciano and Yuleisy Canela as a writer of Kabed's «A Donde Huiré», recorded in 2021. He wrote «Rodeado» for Grupo Hope; the group's 2022 release featured his aunt Carolina Ponciano and Misael J. In 2026 he was credited as a writer and executive producer of «Te Mostraré Mi Gloria», performed by Hope W Music, Carolina Ponciano and Karen Ponciano, who is also a co-writer. That year he continued to lead Somos Uno and announced its Fundación Misión Uno initiative.\n\n**Legacy**\n\nHis work combines pastoral leadership, writing, and Christian songwriting. Somos 1 provided a stage for Kabed's debut, while «A Donde Huiré», «Rodeado», and «Te Mostraré Mi Gloria» connect his ministry with other Dominican worship voices."
+    }
+  ]
+}

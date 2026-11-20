@@ -1,0 +1,387 @@
+{
+  "date": "2026-10-26",
+  "authorization": "The editor supplied Nathalie Hazim official/social links in the established Mangulina profile workflow.",
+  "scope": "Create Nathalie Hazim draft artist and validated published ES/EN biographies only; no catalog, media, shared biography, security or deployment writes.",
+  "before": null,
+  "after": {
+    "id": "bbfd6215-abb7-4a99-8569-abdf45296d7b",
+    "name": "Nathalie Hazim",
+    "stage_name": "Nathalie Hazim",
+    "sort_name": "Hazim, Nathalie",
+    "slug": "nathalie-hazim",
+    "type": "solo_artist",
+    "status": "draft",
+    "first_name": "Nathalie",
+    "middle_name": "Adjeir",
+    "last_name": "Hazim",
+    "second_last_name": "Guzmán",
+    "aliases": [
+      "Nathalie Adjeir Hazim Guzmán"
+    ],
+    "birth_place": "Santo Domingo",
+    "province": "Distrito Nacional",
+    "date_of_birth": null,
+    "birth_year": null,
+    "date_of_death": null,
+    "death_year": null,
+    "gender": "female",
+    "primary_role": "singer",
+    "occupations": [
+      "songwriter",
+      "producer"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "primary_genre": "ballads",
+    "genres": [
+      "bolero",
+      "merengue"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "spotify": "1pgJnLaz9qEnErUwC0Tm16",
+    "facebook": "nathaliehazim",
+    "instagram": "nathaliehazim",
+    "youtube": "@nathaliehazim",
+    "website": "https://nathaliehazim.com/"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Nathalie Adjeir Hazim Guzmán, conocida artísticamente como Nathalie Hazim, es una cantautora y productora musical dominicana nacida el 5 de noviembre en Santo Domingo. Su repertorio parte de la balada y el pop, y se extiende al bolero y al merengue. Desde su debut en 2012 ha publicado cuatro álbumes y desarrollado proyectos de producción musical y comunicación."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Formación y primeros discos",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Estudió Comunicación Publicitaria y cursó cine en la New York Film Academy. De niña practicó ballet durante catorce años y comenzó a cantar en reuniones de amigos antes de actuar en público. En 2012 lanzó «El espejo de tus ojos», su primer sencillo; al año siguiente presentó el álbum homónimo, producido por Jim Papoulis y compuesto en buena parte por canciones propias. En 2013 participó en el homenaje a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+                  "occurrenceId": "12bb7164-2d56-4011-b5ab-785f27d06892",
+                  "displayText": "Luchy Vicioso"
+                }
+              },
+              {
+                "type": "text",
+                "text": " de los «Premios Soberano»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su segundo trabajo, «Te Cuento» (2017), fue producido por Kiko Cibrián y reunió seis canciones sobre la identidad, el amor propio y las relaciones. Le valió una nominación como Solista del Año en los «Premios Soberano» de 2018 y ganó la categoría World EP en los «Independent Music Awards» de ese año. La artista también desarrolla su trabajo a través de su sello «Malagana Records»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Composición, producción y bolero",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2020 lanzó «Más de lo que soñé», que coprodujo con Alexandro Seguí y Hafid Salazar y recibió un «Independent Music Award» a la Mejor Producción Musical Pop. Ese año vinculó el sencillo «Puertas adentro» a una iniciativa de ayuda alimentaria para familias dominicanas. En 2021 publicó «Amorosa», un álbum de trece boleros que recupera composiciones del cancionero dominicano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su cuarto álbum, «Desde Cero» (2022), reunió once canciones originales en una propuesta de pop. La pintora Ada Balcácer creó una obra para su portada. En los conciertos de presentación del disco compartió escenario con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+                  "occurrenceId": "07316abb-29f8-4cb4-9229-cb9ee35f894c",
+                  "displayText": "Vickiana"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". En enero de 2025 lanzó «Amor bonito», su primera incursión discográfica en el merengue, y en noviembre presentó la balada «Y esto, ¿a quién se lo digo?»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Otros proyectos",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Además de la música, Hazim dirige la agencia de comunicación «Room Grupo Creativo». En 2025 estrenó «Cinco Palabras», un pódcast de conversaciones personales que inició una segunda temporada en 2026 a través de su canal de YouTube y otras plataformas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su obra reúne canciones de autor con nuevas lecturas del bolero dominicano. La producción de sus propios discos y sus proyectos de comunicación y ayuda comunitaria han acompañado una carrera centrada en la canción romántica."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Nathalie Adjeir Hazim Guzmán, professionally known as Nathalie Hazim, is a Dominican singer-songwriter and music producer born on 5 November in Santo Domingo. Her repertoire is rooted in ballads and pop, with ventures into bolero and merengue. Since her 2012 debut, she has released four albums and developed projects in music production and communications."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Training and first releases",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "She studied advertising communications and took film courses at the New York Film Academy. As a child she practiced ballet for fourteen years, and she sang with friends before performing publicly. In 2012 she released her debut single, «El espejo de tus ojos»; the album of the same name followed in 2013. Produced by Jim Papoulis, it featured many of her own songs. In 2013 she took part in a «Premios Soberano» tribute to "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+                  "occurrenceId": "f5ce18e1-e4e7-4a5d-a60a-43e46a17052f",
+                  "displayText": "Luchy Vicioso"
+                }
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Her second release, «Te Cuento» (2017), was produced by Kiko Cibrián and brought together six songs about identity, self-acceptance and relationships. It brought her a 2018 «Premios Soberano» nomination for Soloist of the Year and won World EP at that year's «Independent Music Awards». She also runs her work through her label, «Malagana Records»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Songwriting, production and bolero",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2020 she released «Más de lo que soñé», co-producing it with Alexandro Seguí and Hafid Salazar. The song won an «Independent Music Award» for Best Pop Music Production. That year she linked her single «Puertas adentro» to a food-aid initiative for Dominican families. In 2021 she released «Amorosa», an album of thirteen boleros revisiting songs from the Dominican repertoire."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Her fourth album, «Desde Cero» (2022), gathered eleven original songs in a pop setting; painter Ada Balcácer created artwork for its cover. She shared the stage with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+                  "occurrenceId": "920ab1a3-cd7c-4771-a1b6-f451b5801098",
+                  "displayText": "Vickiana"
+                }
+              },
+              {
+                "type": "text",
+                "text": " during the album's concert presentations. In January 2025 Hazim released «Amor bonito», her first recorded venture into merengue, followed in November by the ballad «Y esto, ¿a quién se lo digo?»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Other projects",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Outside music, Hazim directs the communications agency «Room Grupo Creativo». She launched «Cinco Palabras», a podcast of personal conversations, in 2025. Its second season began in 2026 on her YouTube channel and other platforms."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Her work combines original songs with fresh interpretations of Dominican bolero. Producing her own music and pursuing communications and community projects have accompanied a career centred on romantic song."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "8c1e9af0-3ebc-4747-84a9-ada59d147845",
+      "name": "Luchy Vicioso",
+      "slug": "luchy-vicioso",
+      "status": "published"
+    },
+    {
+      "id": "20610d35-0190-4733-90c0-8c7db5cbe7e0",
+      "name": "Vickiana",
+      "slug": "vickiana",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "nathalie-hazim-evidence-2026-10-26.md",
+  "backward_reference_audit": {
+    "inspected_documents": 0,
+    "matches": 0,
+    "legacy_matches": [],
+    "file": "nathalie-hazim-pending-backlinks.json"
+  },
+  "field_sources": {
+    "name": "ONAPI 2018 Malagana Records registration and official artist site.",
+    "birthday": "Official Facebook and El Caribe: 5 November. Year remains unknown owing to conflicting sources.",
+    "birth_place": "2018 first-person interview: Santo Domingo. Province Distrito Nacional normalized.",
+    "roles_genres": "Artist biography, 2020 coproduction report, 2025 merengue release.",
+    "handles": "Official site links supplied socials and Spotify ID. Handles only."
+  },
+  "unresolved": [
+    "Full DOB and year unknown.",
+    "No verified portrait supplied; image remains empty.",
+    "Discography is outside this request."
+  ]
+}

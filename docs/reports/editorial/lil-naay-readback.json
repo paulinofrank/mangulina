@@ -1,0 +1,472 @@
+{
+  "artist": {
+    "id": "c3307832-05e9-43ce-a575-56d463ffbbc1",
+    "mbid": null,
+    "name": "Lil Naay",
+    "slug": "lil-naay",
+    "type": "solo_artist",
+    "ended": null,
+    "views": 0,
+    "bio_en": null,
+    "bio_es": null,
+    "gender": "male",
+    "genres": [
+      "urban-drill",
+      "urban-dembow"
+    ],
+    "status": "draft",
+    "aliases": [
+      "Edwin Almánzar Reyes"
+    ],
+    "spotify": "3hfWiirwdO1ijoZQwj7uzZ",
+    "website": null,
+    "youtube": "@lilnaay7366",
+    "facebook": null,
+    "province": "Distrito Nacional",
+    "birth_day": null,
+    "has_image": false,
+    "instagram": "lilnaay___",
+    "last_name": "Almánzar",
+    "sort_name": "Lil Naay",
+    "birth_year": null,
+    "created_at": "2026-10-23T15:30:19.568592+00:00",
+    "death_year": null,
+    "first_name": "Edwin",
+    "stage_name": "Lil Naay",
+    "updated_at": "2026-10-23T15:30:19.568592+00:00",
+    "artist_tags": [
+      "secular"
+    ],
+    "birth_month": null,
+    "birth_place": "Santo Domingo",
+    "instruments": [
+      "voice"
+    ],
+    "mb_metadata": {},
+    "middle_name": null,
+    "occupations": [
+      "rapper",
+      "songwriter"
+    ],
+    "wikidata_id": null,
+    "primary_role": "singer",
+    "date_of_birth": null,
+    "date_of_death": null,
+    "primary_genre": "urban-trap",
+    "disambiguation": "Dominican trap and urbano singer from Santo Domingo",
+    "formation_year": null,
+    "dissolution_year": null,
+    "image_updated_at": null,
+    "second_last_name": "Reyes"
+  },
+  "documents": [
+    {
+      "id": "2b61f8ca-dfe6-429e-96ce-af0551aae808",
+      "locale": "en",
+      "status": "published",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lil Naay, the stage name of Edwin Almánzar Reyes, is a Dominican trap and urbano singer and rapper born in Santo Domingo. He gained exposure through digitally distributed singles and videos, expanding his audience with «Mami», «Pa Tripea» and «Una Baby en Santiago».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Early releases",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His documented YouTube career gained momentum in 2022 with «Banda a Mí», alongside Carlos TRVP. In 2024 he released «Mami» and «Pa Tripea», the latter with Huan62. «Otro Sistema», another Huan62 collaboration, followed in 2025. His performances combine trap phrasing with melodic elements and expressions drawn from Dominican urban speech.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Collaborations in 2025",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "In January 2025 he appeared on «La Patrulla» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+                  "displayText": "El Alfa",
+                  "occurrenceId": "cb9b35ec-4d11-4c87-982b-00005773c9bc"
+                }
+              },
+              {
+                "text": ", Hades66 and Luis Brown. That year he joined Arcángel and Huan62 on «Sativa», included on «Sr. Santos II: Sueños de Grandeza». Other releases included the «Mami» remix with Eladio Carrión; «Panti» and «Santorari» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5fb12fee-64fe-4887-b87e-28f28a15c4f9",
+                  "displayText": "Amenazzy",
+                  "occurrenceId": "77807e62-6b34-4405-a822-3eb8cb0efb59"
+                }
+              },
+              {
+                "text": "; and «Choko Ponla Pa Llevar» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "439bbc6c-f06e-447f-a1fa-b2130b885457",
+                  "displayText": "Yailin La Más Viral",
+                  "occurrenceId": "d6364488-78f5-4415-9bdc-bcdc860c5ac2"
+                }
+              },
+              {
+                "text": ". His own singles also included «KTEDE» and «Pasao De Farmacia».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«PENDING» and international exposure",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«PENDING», his collaboration with Myke Towers, appeared in Barack Obama's selection of favorite songs of 2025, published by the Obama Foundation. That December he released the EP «The MVP of the Year». «Una Baby en Santiago», associated with that period, entered the Billboard Colombia Hot 100 at number 86 in April 2026, earning Hot Shot Debut recognition as the week's highest new entry.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Activity in 2026",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "He continued issuing singles including «Mood Brazil», «Perra» and «Hombre». «Bandi», his collaboration with Rowma, appeared in October. The release credits for recordings such as «Mood Brazil» and «Hombre» identify «1844 Tech, LLC» and an exclusive license to «Mercury Records»; that attribution does not establish the same arrangement for his entire earlier catalog.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His career reflects the expansion of Dominican trap through videos, singles and collaborations among Caribbean performers. The Colombian chart entry of «Una Baby en Santiago» and the selection of «PENDING» provide concrete examples of how his music reached audiences beyond his home country.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "revision": 1,
+      "created_at": "2026-10-23T15:30:40.103571+00:00",
+      "updated_at": "2026-10-23T15:30:40.103571+00:00",
+      "document_type": "artist_biography",
+      "schema_version": 1,
+      "owner_artist_id": "c3307832-05e9-43ce-a575-56d463ffbbc1"
+    },
+    {
+      "id": "fa67412a-6944-4ebc-bd31-c6424698bfa6",
+      "locale": "es",
+      "status": "published",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lil Naay, nombre artístico de Edwin Almánzar Reyes, es un cantante y rapero dominicano de trap y música urbana nacido en Santo Domingo. Se dio a conocer mediante sencillos y videos difundidos en plataformas digitales, y amplió su alcance con «Mami», «Pa Tripea» y «Una Baby en Santiago».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Primeras publicaciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su trayectoria documentada en YouTube tomó impulso en 2022 con «Banda a Mí», junto a Carlos TRVP. En 2024 publicó «Mami» y «Pa Tripea», esta última en colaboración con Huan62. A ese repertorio se sumó en 2025 «Otro Sistema», también con Huan62. Su interpretación combina el fraseo del trap con recursos melódicos y expresiones del habla urbana dominicana.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Colaboraciones de 2025",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "En enero de 2025 participó en «La Patrulla», con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+                  "displayText": "El Alfa",
+                  "occurrenceId": "3a859b4b-f95a-4133-8a83-3dcdcb61a463"
+                }
+              },
+              {
+                "text": ", Hades66 y Luis Brown. Ese año apareció con Arcángel y Huan62 en «Sativa», incluida en «Sr. Santos II: Sueños de Grandeza». También publicó el remix de «Mami», con Eladio Carrión; «Panti» y «Santorari», con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5fb12fee-64fe-4887-b87e-28f28a15c4f9",
+                  "displayText": "Amenazzy",
+                  "occurrenceId": "1a8796ad-4dea-4e4e-a407-74a7851947d6"
+                }
+              },
+              {
+                "text": "; y «Choko Ponla Pa Llevar», con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "439bbc6c-f06e-447f-a1fa-b2130b885457",
+                  "displayText": "Yailin La Más Viral",
+                  "occurrenceId": "9aff9082-3e8c-4dec-912f-faa4e8072ae1"
+                }
+              },
+              {
+                "text": ". A su catálogo se añadieron sencillos propios como «KTEDE» y «Pasao De Farmacia».",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«PENDING» y proyección internacional",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su colaboración con Myke Towers, «PENDING», fue incluida por Barack Obama en su selección de canciones favoritas de 2025, publicada por la Fundación Obama. En diciembre de ese año presentó el EP «The MVP of the Year». «Una Baby en Santiago», vinculada a esa etapa, ingresó en abril de 2026 al Billboard Colombia Hot 100 en el puesto 86 y recibió la distinción Hot Shot Debut como la nueva entrada mejor situada de esa semana.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Actividad en 2026",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Continuó publicando sencillos como «Mood Brazil», «Perra» y «Hombre». En octubre apareció «Bandi», su colaboración con Rowma. Los créditos de lanzamientos como «Mood Brazil» y «Hombre» identifican a «1844 Tech, LLC» y una licencia exclusiva a «Mercury Records», sin que esa atribución se extienda automáticamente a todo su catálogo anterior.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su recorrido documenta la expansión del trap dominicano mediante videos, sencillos y colaboraciones entre intérpretes del Caribe. La entrada de «Una Baby en Santiago» en una lista colombiana y la selección de «PENDING» muestran dos vías concretas por las que su música alcanzó públicos fuera de su país.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "revision": 1,
+      "created_at": "2026-10-23T15:30:23.792869+00:00",
+      "updated_at": "2026-10-23T15:30:23.792869+00:00",
+      "document_type": "artist_biography",
+      "schema_version": 1,
+      "owner_artist_id": "c3307832-05e9-43ce-a575-56d463ffbbc1"
+    }
+  ],
+  "relations": [
+    {
+      "id": "10c6c66e-6dd2-4b6b-8de4-e9a5f366ecc5",
+      "created_at": "2026-10-23T15:30:40.103571+00:00",
+      "updated_at": "2026-10-23T15:30:40.103571+00:00",
+      "entity_type": "artist",
+      "occurrence_id": "cb9b35ec-4d11-4c87-982b-00005773c9bc",
+      "target_artist_id": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+      "editorial_document_id": "2b61f8ca-dfe6-429e-96ce-af0551aae808"
+    },
+    {
+      "id": "dfa3c13f-34b7-4dcb-8498-cbbec2e341b4",
+      "created_at": "2026-10-23T15:30:40.103571+00:00",
+      "updated_at": "2026-10-23T15:30:40.103571+00:00",
+      "entity_type": "artist",
+      "occurrence_id": "77807e62-6b34-4405-a822-3eb8cb0efb59",
+      "target_artist_id": "5fb12fee-64fe-4887-b87e-28f28a15c4f9",
+      "editorial_document_id": "2b61f8ca-dfe6-429e-96ce-af0551aae808"
+    },
+    {
+      "id": "9fab9fa8-9173-43a5-a6e1-b923a5d8e0ef",
+      "created_at": "2026-10-23T15:30:40.103571+00:00",
+      "updated_at": "2026-10-23T15:30:40.103571+00:00",
+      "entity_type": "artist",
+      "occurrence_id": "d6364488-78f5-4415-9bdc-bcdc860c5ac2",
+      "target_artist_id": "439bbc6c-f06e-447f-a1fa-b2130b885457",
+      "editorial_document_id": "2b61f8ca-dfe6-429e-96ce-af0551aae808"
+    },
+    {
+      "id": "f0627e6c-b0c6-4a09-9972-fe3aba6117b9",
+      "created_at": "2026-10-23T15:30:23.792869+00:00",
+      "updated_at": "2026-10-23T15:30:23.792869+00:00",
+      "entity_type": "artist",
+      "occurrence_id": "3a859b4b-f95a-4133-8a83-3dcdcb61a463",
+      "target_artist_id": "559f2ed4-8831-483b-bc00-7cb4f340ad92",
+      "editorial_document_id": "fa67412a-6944-4ebc-bd31-c6424698bfa6"
+    },
+    {
+      "id": "b78b0839-c30f-4586-909c-c626f7408ae0",
+      "created_at": "2026-10-23T15:30:23.792869+00:00",
+      "updated_at": "2026-10-23T15:30:23.792869+00:00",
+      "entity_type": "artist",
+      "occurrence_id": "1a8796ad-4dea-4e4e-a407-74a7851947d6",
+      "target_artist_id": "5fb12fee-64fe-4887-b87e-28f28a15c4f9",
+      "editorial_document_id": "fa67412a-6944-4ebc-bd31-c6424698bfa6"
+    },
+    {
+      "id": "eafcee2d-37d2-40f3-8db4-7ca38bfbec1a",
+      "created_at": "2026-10-23T15:30:23.792869+00:00",
+      "updated_at": "2026-10-23T15:30:23.792869+00:00",
+      "entity_type": "artist",
+      "occurrence_id": "9aff9082-3e8c-4dec-912f-faa4e8072ae1",
+      "target_artist_id": "439bbc6c-f06e-447f-a1fa-b2130b885457",
+      "editorial_document_id": "fa67412a-6944-4ebc-bd31-c6424698bfa6"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "duplicates": [
+    {
+      "id": "031dddae-2d27-4c98-9b44-a8210e39aafd",
+      "name": "Elvis Cabrera",
+      "slug": "elvis-cabrera",
+      "status": "published",
+      "first_name": "Elvis",
+      "last_name": "Cabrera",
+      "second_last_name": null
+    },
+    {
+      "id": "e566c763-02c1-4f96-8a82-edbba9fc0bb2",
+      "name": "Elvis Martínez",
+      "slug": "elvis-martinez",
+      "status": "published",
+      "first_name": "Elvis",
+      "last_name": "Martínez",
+      "second_last_name": "González"
+    }
+  ],
+  "targets": [
+    {
+      "id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+      "name": "Rochy RD",
+      "slug": "rochy-rd",
+      "status": "published"
+    },
+    {
+      "id": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+      "name": "Leo RD",
+      "slug": "leo-rd",
+      "status": "published"
+    },
+    {
+      "id": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+      "name": "Tivi Gunz",
+      "slug": "tivi-gunz",
+      "status": "published"
+    }
+  ]
+}

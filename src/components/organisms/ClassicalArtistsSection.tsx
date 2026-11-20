@@ -54,10 +54,10 @@ export default function ClassicalArtistsSection({
 
         {/* DESKTOP ARROWS */}
         <CarouselArrow direction="left" onClick={() => scroll("left")} />
-        <CarouselArrow direction="right" onClick={() => scroll("right")} />
+        <CarouselArrow scrollRef={scrollRef} direction="right" onClick={() => scroll("right")} />
 
         {/* CAROUSEL */}
-        <ArtistCarousel ref={scrollRef}>
+        <ArtistCarousel ref={scrollRef} seeAllHref="/instrumental-classical" seeAllLabel={nav("seeAll")}>
           {classicalArtists.slice(0, HOME_ARTIST_CARD_LIMIT).map((artist) => (
             <div
               key={artist.id}

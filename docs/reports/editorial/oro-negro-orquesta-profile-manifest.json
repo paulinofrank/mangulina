@@ -1,0 +1,441 @@
+{
+  "date": "2026-10-24",
+  "authorization": "User explicitly requested separate orchestra profile after individual profile; new draft collective, published EN/ES biographies and founder/leader links between these two identities only.",
+  "before": null,
+  "after": {
+    "id": "d9c2b926-cb6f-4637-92a2-ce64c58ad7c2",
+    "name": "Oro Negro y Su Orquesta",
+    "sort_name": "Oro Negro y Su Orquesta",
+    "slug": "oro-negro-y-su-orquesta",
+    "stage_name": null,
+    "type": "group",
+    "status": "draft",
+    "first_name": null,
+    "middle_name": null,
+    "last_name": null,
+    "second_last_name": null,
+    "gender": null,
+    "date_of_birth": null,
+    "birth_year": null,
+    "birth_place": null,
+    "province": null,
+    "formation_year": null,
+    "dissolution_year": null,
+    "aliases": [
+      "Orquesta Oro Negro",
+      "Oro Negro & Su Orquesta",
+      "Oro Negro"
+    ],
+    "disambiguation": "Merengue orchestra founded and led by Dominican pianist Domingo Peguero Tamárez; distinct from his individual artist identity",
+    "primary_role": "orchestra",
+    "occupations": [],
+    "instruments": [],
+    "primary_genre": "merengue",
+    "genres": [
+      "bachata"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "spotify": "2IYJgcDQgLyx4ps03SExXh",
+    "facebook": null,
+    "instagram": null,
+    "youtube": null,
+    "website": null
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Oro Negro y Su Orquesta es una agrupación de merengue fundada y dirigida por el pianista y arreglista dominicano "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3a597a5e-8081-4304-a2cf-b7463e16ee70",
+                  "displayText": "Domingo Peguero",
+                  "occurrenceId": "c8770f35-b420-4f82-bd45-8f9b3496925a"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", conocido artísticamente como Oro Negro. Su trayectoria discográfica está vinculada a la escena del merengue en Puerto Rico y al repertorio bailable que circuló entre el Caribe y los Estados Unidos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La etapa discográfica",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Durante los años ochenta publicó grabaciones con el sello «Salsoso Records». Entre los títulos conservados en el catálogo digital figuran «Oro Negro y Su Orquesta» y «El brillo de Oro Negro y Su Orquesta». Las plataformas presentan fechas diferentes para algunas ediciones históricas; esas fechas no establecen por sí solas cuándo se fundó la agrupación."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 1988 aparece «Merengues originales», acreditado a José Medina con la participación de la orquesta. La colaboración documenta una etapa en la que la identidad del cantante y la del conjunto se presentan por separado en los créditos del lanzamiento."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Repertorio y producciones posteriores",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "El catálogo asociado a la agrupación incluye «Pa’ gozar» (1995), «Pa’ todos los gustos» (1996) y «Sueño americano» (2002). En esta última producción, su director figura acreditado en composición, arreglos, dirección musical y piano. Entre las canciones de su repertorio se encuentran «La cintura (La cinturita)», «Que será», «Regresarás» y «Ven que estoy pa ti»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Las plataformas también conservan «Oro Negro de Puerto Rico: Merengue y bachata» y «Oro Negro en pieee!». Estas publicaciones muestran la presencia de ambos géneros en el catálogo, aunque las fechas digitales deben distinguirse de las fechas originales de grabación y edición."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La orquesta forma parte de los proyectos impulsados por músicos dominicanos que desarrollaron el merengue en el circuito puertorriqueño y de la diáspora. Su historia reúne la dirección pianística, el trabajo con vocalistas y un repertorio que continúa disponible en plataformas digitales."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Oro Negro y Su Orquesta is a merengue ensemble founded and led by Dominican pianist and arranger "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3a597a5e-8081-4304-a2cf-b7463e16ee70",
+                  "displayText": "Domingo Peguero",
+                  "occurrenceId": "115d3c37-15ce-40a1-8382-d165563cc3f6"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", professionally known as Oro Negro. Its recording career is associated with Puerto Rico’s merengue scene and the dance repertoire circulating between the Caribbean and the United States."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early recordings",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "During the 1980s the orchestra released recordings through «Salsoso Records». Titles preserved in digital catalogs include «Oro Negro y Su Orquesta» and «El brillo de Oro Negro y Su Orquesta». Platforms give differing dates for some historical editions; those dates do not, by themselves, establish when the ensemble was founded."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The 1988 release «Merengues originales» is credited to José Medina featuring the orchestra. It documents a period in which the singer and the ensemble were identified separately in the release credits."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Repertoire and later releases",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The catalog associated with the ensemble includes «Pa’ gozar» (1995), «Pa’ todos los gustos» (1996), and «Sueño americano» (2002). The latter credits its director with composition, arrangements, musical direction, and piano. Its repertoire includes «La cintura (La cinturita)», «Que será», «Regresarás», and «Ven que estoy pa ti»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Streaming platforms also preserve «Oro Negro de Puerto Rico: Merengue y bachata» and «Oro Negro en pieee!». These releases document both genres in the catalog, although digital publication dates must be distinguished from original recording and release dates."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The orchestra belongs to the projects led by Dominican musicians who developed merengue within Puerto Rico and the diaspora. Its history brings together piano-led musical direction, work with vocalists, and a repertoire that remains available through digital platforms."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "c3ccbf02-7dda-4cc5-96f3-33688caf53b7",
+      "source_artist_id": "3a597a5e-8081-4304-a2cf-b7463e16ee70",
+      "target_artist_id": "d9c2b926-cb6f-4637-92a2-ce64c58ad7c2",
+      "relationship_type": "founder_of",
+      "start_year": null,
+      "end_year": null,
+      "notes": "Editor explicitly requested both identities. Domingo Peguero Tamárez founded and directs the orchestra; exact foundation year unverified. Evidence: oro-negro-orquesta-research-2026-10-24.md."
+    },
+    {
+      "id": "1c9ca068-54fd-47c7-91c5-d426305629ad",
+      "source_artist_id": "3a597a5e-8081-4304-a2cf-b7463e16ee70",
+      "target_artist_id": "d9c2b926-cb6f-4637-92a2-ce64c58ad7c2",
+      "relationship_type": "leader_of",
+      "start_year": null,
+      "end_year": null,
+      "notes": "Editor explicitly requested both identities. Domingo Peguero Tamárez founded and directs the orchestra; exact foundation year unverified. Evidence: oro-negro-orquesta-research-2026-10-24.md."
+    }
+  ],
+  "person_before": {
+    "id": "3a597a5e-8081-4304-a2cf-b7463e16ee70",
+    "name": "Domingo Peguero",
+    "sort_name": "Peguero, Domingo",
+    "type": "solo_artist",
+    "birth_year": 1960,
+    "death_year": null,
+    "created_at": "2026-10-25T03:16:31.110282+00:00",
+    "views": 0,
+    "wikidata_id": null,
+    "first_name": "Domingo",
+    "middle_name": null,
+    "last_name": "Peguero",
+    "second_last_name": "Tamárez",
+    "stage_name": "Oro Negro",
+    "date_of_birth": "1960-04-26",
+    "birth_place": "Santo Domingo Este",
+    "website": null,
+    "youtube": "@ORONEGROPAGOZAATV",
+    "facebook": "oronegropagozaa",
+    "instagram": "oronegropagozaa",
+    "aliases": [
+      "Domingo Peguero",
+      "Domingo Peguero Tamárez",
+      "Oro Negro Pagozaa",
+      "Oro Negro Pa Gozaa"
+    ],
+    "mbid": null,
+    "occupations": [
+      "musician",
+      "arranger",
+      "composer"
+    ],
+    "instruments": [
+      "piano"
+    ],
+    "genres": [
+      "bachata"
+    ],
+    "disambiguation": null,
+    "gender": "male",
+    "ended": null,
+    "mb_metadata": {},
+    "updated_at": "2026-10-25T03:36:46.638649+00:00",
+    "province": "Santo Domingo",
+    "birth_day": 26,
+    "birth_month": 4,
+    "slug": "oro-negro",
+    "primary_role": "bandleader",
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_death": null,
+    "status": "draft",
+    "primary_genre": "merengue",
+    "bio_en": null,
+    "bio_es": null,
+    "has_image": false,
+    "image_updated_at": null,
+    "formation_year": null,
+    "dissolution_year": null,
+    "spotify": "6RkktqZSAHv62VV6u768hE"
+  },
+  "reference_targets": [
+    {
+      "id": "3a597a5e-8081-4304-a2cf-b7463e16ee70",
+      "name": "Domingo Peguero",
+      "sort_name": "Peguero, Domingo",
+      "type": "solo_artist",
+      "birth_year": 1960,
+      "death_year": null,
+      "created_at": "2026-10-25T03:16:31.110282+00:00",
+      "views": 0,
+      "wikidata_id": null,
+      "first_name": "Domingo",
+      "middle_name": null,
+      "last_name": "Peguero",
+      "second_last_name": "Tamárez",
+      "stage_name": "Oro Negro",
+      "date_of_birth": "1960-04-26",
+      "birth_place": "Santo Domingo Este",
+      "website": null,
+      "youtube": "@ORONEGROPAGOZAATV",
+      "facebook": "oronegropagozaa",
+      "instagram": "oronegropagozaa",
+      "aliases": [
+        "Domingo Peguero",
+        "Domingo Peguero Tamárez",
+        "Oro Negro Pagozaa",
+        "Oro Negro Pa Gozaa"
+      ],
+      "mbid": null,
+      "occupations": [
+        "musician",
+        "arranger",
+        "composer"
+      ],
+      "instruments": [
+        "piano"
+      ],
+      "genres": [
+        "bachata"
+      ],
+      "disambiguation": null,
+      "gender": "male",
+      "ended": null,
+      "mb_metadata": {},
+      "updated_at": "2026-10-25T03:36:46.638649+00:00",
+      "province": "Santo Domingo",
+      "birth_day": 26,
+      "birth_month": 4,
+      "slug": "oro-negro",
+      "primary_role": "bandleader",
+      "artist_tags": [
+        "secular"
+      ],
+      "date_of_death": null,
+      "status": "draft",
+      "primary_genre": "merengue",
+      "bio_en": null,
+      "bio_es": null,
+      "has_image": false,
+      "image_updated_at": null,
+      "formation_year": null,
+      "dissolution_year": null,
+      "spotify": "6RkktqZSAHv62VV6u768hE"
+    }
+  ],
+  "backward_audit": "Existing person bios distinguish own orchestra in prose; generic Oro Negro mentions identify the person. Julio Swing El Toro Negro false positives rejected. No other biography edits.",
+  "evidence": "oro-negro-orquesta-research-2026-10-24.md",
+  "unresolved": [
+    "Exact founding city and year",
+    "Complete historical membership",
+    "No independently identified ensemble social accounts or image"
+  ],
+  "exclusions": [
+    "No music or credit import",
+    "No publishing either artist",
+    "No changes to individual fields or biography",
+    "No deployment/cache refresh/security changes"
+  ]
+}

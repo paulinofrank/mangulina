@@ -1,0 +1,394 @@
+{
+  "artist": {
+    "id": "072e44a9-8a54-4eee-a606-8162953f5154",
+    "name": "José Lacay",
+    "sort_name": "Lacay, José",
+    "type": "solo_artist",
+    "birth_year": 1947,
+    "death_year": 2016,
+    "created_at": "2026-10-19T13:17:14.195559+00:00",
+    "views": 1,
+    "wikidata_id": null,
+    "first_name": "José",
+    "middle_name": "Miguel",
+    "last_name": "Vásquez",
+    "second_last_name": "Lacay",
+    "stage_name": "José Lacay",
+    "date_of_birth": "1947-03-19",
+    "birth_place": "Santo Domingo",
+    "website": null,
+    "youtube": null,
+    "facebook": null,
+    "instagram": null,
+    "aliases": [
+      "Jose Lacay",
+      "José Miguel Vásquez Lacay"
+    ],
+    "mbid": null,
+    "occupations": [],
+    "instruments": [
+      "voice"
+    ],
+    "genres": [
+      "ballads-bolero",
+      "merengue",
+      "salsa"
+    ],
+    "disambiguation": null,
+    "gender": "male",
+    "ended": false,
+    "mb_metadata": {},
+    "updated_at": "2026-10-19T13:39:52.2334+00:00",
+    "province": "Distrito Nacional",
+    "birth_day": 19,
+    "birth_month": 3,
+    "slug": "jose-lacay",
+    "primary_role": "singer",
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_death": "2016-11-14",
+    "status": "published",
+    "primary_genre": "ballads",
+    "bio_en": null,
+    "bio_es": null,
+    "has_image": true,
+    "image_updated_at": "2026-10-19T13:29:48.249+00:00",
+    "formation_year": null,
+    "dissolution_year": null,
+    "spotify": "3e2m8rnUL2tQVVus6u2k5L"
+  },
+  "documents": [
+    {
+      "id": "18c17748-ee5f-4908-8f55-d84e5be8c970",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "José Lacay (born March 19, 1947, in Santo Domingo; died November 14, 2016) was a Dominican ballad and bolero singer associated with songs including «Marión» and «El motivo». He won the performer’s first prize at the fifth Dominican Song Festival in 1972 and worked in television, international festivals and tourist entertainment.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Training and television",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His early exposure came through «La Hora del Moro», the Rahintel television programme hosted by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                  "displayText": "Rafael Solano",
+                  "occurrenceId": "dd008fbe-50e7-48c6-b015-b15fb37054f3"
+                }
+              },
+              {
+                "text": ". He moved to New York in 1962 to study, taking singing lessons with pianist Gilberto Muñoz. He later continued his vocal training in Santo Domingo with soprano Ivonne Haza. In 1966 he made a professional television appearance on Myrta Silva’s «Una Hora Contigo» and subsequently toured with her.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Song festivals",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "After returning to the Dominican Republic in 1968, Lacay entered the festivals organised by «AMUCABA». In 1972 he won first place as a performer with «Llegó el invierno», written by Fernando and Ricardo Escovar. The song also earned the award for best arrangement, by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                  "displayText": "Jorge Taveras",
+                  "occurrenceId": "eb4d6834-70c9-4c24-a713-22f0f271e8df"
+                }
+              },
+              {
+                "text": ". His career extended to festival appearances and performances in the Americas and Europe.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Repertoire and recordings",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His remembered interpretations include «Marión», «El motivo», «Ya», «La copia» and «Amor desolado». Music platforms preserve the albums «Con Amor» and «Ese...es», along with his performance of «Después de hablar» on the compilation from the second Dominican Song Festival. Romantic song was central to his public identity, while contemporary accounts of his death also document merengue and salsa in his repertoire.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Stage revues and tourism",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lacay belonged to the solo singers’ roster of the «Ballet Folklórico Nacional», directed by Josefina Miniño. A bilingual singer, he performed in hotel and resort shows and presented his own musical revue, «Santo Domingo es así». These engagements formed another part of his work bringing Dominican music to international audiences.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lacay died on November 14, 2016, aged 69. Acroarte remembered his interpretive skill and his representation of the country at song festivals. His career connected the solo singer’s tradition with television and musical revues, leaving a repertoire remembered within Dominican popular song.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "created_at": "2026-10-19T13:18:04.507223+00:00",
+      "updated_at": "2026-10-19T13:18:04.507223+00:00",
+      "revision": 1
+    },
+    {
+      "id": "f227a826-a986-4166-aae1-83c8a402c439",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "José Lacay (Santo Domingo, 19 de marzo de 1947–14 de noviembre de 2016) fue un cantante dominicano de balada y bolero, reconocido por canciones como «Marión» y «El motivo». Ganó como intérprete el V Festival de la Canción Dominicana en 1972 y desarrolló una carrera en la televisión, los festivales y los espectáculos turísticos.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Formación y televisión",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su primera oportunidad artística llegó en «La Hora del Moro», programa de Rahintel conducido por ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                  "displayText": "Rafael Solano",
+                  "occurrenceId": "96552df2-f115-4dd2-b4d7-80021613320c"
+                }
+              },
+              {
+                "text": ". En 1962 se trasladó a Nueva York para estudiar y recibió clases de canto del pianista Gilberto Muñoz. Continuó su preparación vocal en Santo Domingo con la soprano Ivonne Haza. En 1966 se presentó profesionalmente en «Una Hora Contigo», de Myrta Silva, y posteriormente la acompañó en giras.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los festivales de la canción",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Tras regresar al país en 1968, participó en los festivales organizados por «AMUCABA». En 1972 obtuvo el primer lugar como intérprete con «Llegó el invierno», de Fernando y Ricardo Escovar. La canción también recibió el premio al mejor arreglo, realizado por ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                  "displayText": "Jorge Taveras",
+                  "occurrenceId": "0709020e-7e9f-4a14-9a3f-3c70e8b8d33d"
+                }
+              },
+              {
+                "text": ". Su trayectoria incluyó participaciones en festivales y presentaciones en América y Europa.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Repertorio y grabaciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Además de «Marión» y «El motivo», entre sus interpretaciones recordadas figuran «Ya», «La copia» y «Amor desolado». Las plataformas musicales conservan los álbumes «Con Amor» y «Ese...es», así como su interpretación de «Después de hablar» en la recopilación del II Festival de la Canción Dominicana. Aunque se le asocia especialmente con la canción romántica, los testimonios contemporáneos de su fallecimiento también documentan merengue y salsa en su repertorio.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El escenario y el turismo",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Formó parte del elenco de cantantes solistas del «Ballet Folklórico Nacional», dirigido por Josefina Miniño. Como cantante bilingüe trabajó en espectáculos de hoteles y resorts y presentó su propia revista musical, «Santo Domingo es así». Esta faceta lo vinculó con la proyección de la música dominicana ante públicos internacionales.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lacay falleció el 14 de noviembre de 2016, a los 69 años. Acroarte destacó su calidad interpretativa y su representación del país en festivales. Su trayectoria reúne la tradición del cantante solista, la televisión y la revista musical, con un repertorio que conserva un lugar en la memoria de la canción popular dominicana.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "created_at": "2026-10-19T13:18:23.2045+00:00",
+      "updated_at": "2026-10-19T13:18:23.2045+00:00",
+      "revision": 1
+    }
+  ],
+  "manifest_sha256": "07d897dc5a26b311686e64598f7a332a57e7004a539b382cee188cc839c08f44",
+  "approved_by": "Editor reply Yes to exact manifest and seven covers",
+  "date": "2026-10-19T13:58:40.538Z"
+}

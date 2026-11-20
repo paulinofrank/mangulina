@@ -1,0 +1,49 @@
+{
+  "artist": {
+    "name": "Lauryn Novas",
+    "stage_name": "Lauryn Novas",
+    "sort_name": "Novas, Lauryn",
+    "slug": "lauryn-novas",
+    "type": "solo_artist",
+    "status": "draft",
+    "first_name": null,
+    "middle_name": null,
+    "last_name": null,
+    "second_last_name": null,
+    "aliases": [],
+    "birth_place": null,
+    "province": null,
+    "date_of_birth": null,
+    "birth_year": null,
+    "date_of_death": null,
+    "death_year": null,
+    "gender": "female",
+    "primary_role": "singer",
+    "occupations": ["songwriter"],
+    "instruments": ["voice"],
+    "primary_genre": "bachata",
+    "genres": [],
+    "artist_tags": ["secular"],
+    "spotify": "2WzAi7jYCMCGi7HfySWZEV",
+    "facebook": "laurynnovasoficial",
+    "instagram": "laurynnovasoficial",
+    "youtube": "@laurynnovas",
+    "website": null
+  },
+  "bios": {
+    "es": [
+      [null, "Lauryn Novas es una cantante y compositora dominicana de bachata que celebra su cumpleaños el 2 de mayo. Su año y ciudad de nacimiento no están documentados en las fuentes públicas consultadas. Con su álbum debut, «Soy Yo» (2023), llevó canciones de balada y pop al lenguaje de la bachata e incorporó composiciones propias a su repertorio."],
+      ["Formación y primeros escenarios", "Comenzó a cantar en los coros de su iglesia y su escuela, y participó en concursos estudiantiles. También trabajó como modelo en comerciales antes de integrarse como vocalista a la agrupación dominicana «Diamante Súper Band». Tras trasladarse a Estados Unidos actuó como solista y abrió espectáculos de artistas como [[Vickiana]] y de grupos como «Menudo» y «Gipsy Kings». En una entrevista de 2023 contó que compaginaba la música con su trabajo en odontología."],
+      ["Primeros discos", "En 2022 debutó en bachata con «Lo quiero a morir», una versión de la canción conocida por la interpretación de [[Ángela Carrasco]]. Su segundo sencillo, «Soy Yo», adaptó al género un tema escrito por Kany García. Ambas grabaciones salieron con el respaldo de «JN Music Group». El productor ejecutivo Nelson Estévez y el productor musical Mártires de León estuvieron a cargo de su primer álbum, «Soy Yo», publicado en enero de 2023 con once canciones. En ese disco incluyó «Cobarde», un tema que, según contó la propia Novas, había escrito años antes."],
+      ["Otras grabaciones", "En 2022 se publicó «Amor a medio tiempo», un dúo que incorpora su voz a una grabación de [[Yoskar Sarante]], fallecido antes de la colaboración. La canción formó parte posteriormente de «Legendarios», el homenaje discográfico a Sarante editado en 2024. En febrero de 2025 lanzó el sencillo «Cualquiera Se Engaña»."],
+      ["Legado", "Novas desarrolla una trayectoria centrada en la bachata romántica. Sus primeras grabaciones reúnen nuevas versiones de canciones conocidas, escritura propia y una colaboración póstuma que conecta su voz con el repertorio de Yoskar Sarante."]
+    ],
+    "en": [
+      [null, "Lauryn Novas is a Dominican bachata singer and songwriter whose birthday is 2 May. Her birth year and birth city have not been established by the public sources consulted. Her debut album, «Soy Yo» (2023), brought ballad and pop songs into a bachata setting alongside material she wrote herself."],
+      ["Early singing and stage work", "Novas began singing in church and school choirs and took part in student singing contests. She also appeared as a model in commercials before joining the Dominican group «Diamante Súper Band» as a vocalist. After moving to the United States, she performed as a solo singer and opened shows for performers including [[Vickiana]] and groups such as «Menudo» and «Gipsy Kings». In a 2023 interview she said she combined music with work in dentistry."],
+      ["First recordings", "Her 2022 bachata debut, «Lo quiero a morir», reinterpreted a song associated with [[Ángela Carrasco]]. Her second single, «Soy Yo», adapted a song written by Kany García. Both appeared with the support of «JN Music Group». Executive producer Nelson Estévez and music producer Mártires de León worked on her first album, «Soy Yo», released in January 2023 with eleven tracks. The album includes «Cobarde», which Novas said she had written years earlier."],
+      ["Further releases", "Released in 2022, «Amor a medio tiempo» paired her voice with a recording of [[Yoskar Sarante]], who had died before the collaboration. The duet later appeared on «Legendarios», the 2024 album honouring Sarante. In February 2025 she released the single «Cualquiera Se Engaña»."],
+      ["Legacy", "Novas's recorded work focuses on romantic bachata. Her early releases combine reinterpretations of familiar songs with her own writing, while the posthumous duet links her voice to Yoskar Sarante's repertoire."]
+    ]
+  }
+}

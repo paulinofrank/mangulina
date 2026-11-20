@@ -121,6 +121,7 @@ async function getRecordingDetails(recordingId: string) {
         .from("work_credits")
         .select("id,role,credited_as,verification_status,artist:artists(id,name),external_contributor:external_contributors(id,preferred_name),role_definition:credit_roles(id,code,display_name_en,role_family)")
         .eq("work_id", work.id)
+        .neq("verification_status", "superseded")
         .order("sequence", { ascending: true, nullsFirst: false })
     : { data: [] };
 

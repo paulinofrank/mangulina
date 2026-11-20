@@ -39,7 +39,7 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
 
   return (
     <SectionCard compact>
-      <CarouselArrows onLeft={() => scroll("left")} onRight={() => scroll("right")} />
+      <CarouselArrows scrollRef={scrollRef} onLeft={() => scroll("left")} onRight={() => scroll("right")} />
 
       <div className="section-inner">
         {/* Header */}
@@ -58,7 +58,7 @@ export default function MostSearchedSongs({ songs = [] }: MostSearchedSongsProps
         </div>
 
         {/* Carousel */}
-        <ArtistCarousel ref={scrollRef}>
+        <ArtistCarousel ref={scrollRef} seeAllHref="/archive" seeAllLabel={nav("seeAll")}>
           {safeSongs.slice(0, HOME_SONG_CARD_LIMIT).map((song) => {
             if (!song) return null;
 

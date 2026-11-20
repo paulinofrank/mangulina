@@ -1,0 +1,445 @@
+{
+  "date": "2026-10-23",
+  "authorization": "Editor supplied named new-profile candidate in established workflow. Draft artist and completed published EN/ES biographies; no photo or discography import.",
+  "before": null,
+  "after": {
+    "id": "fe960a3e-4aa3-4c27-921b-d8bdb4394aae",
+    "name": "Martox",
+    "stage_name": null,
+    "sort_name": "Martox",
+    "slug": "martox",
+    "first_name": null,
+    "middle_name": null,
+    "last_name": null,
+    "second_last_name": null,
+    "aliases": [],
+    "disambiguation": "Dominican Caribbean pop duo from Santiago de los Caballeros",
+    "type": "duo",
+    "primary_role": "musician",
+    "occupations": [
+      "producer",
+      "songwriter"
+    ],
+    "gender": null,
+    "birth_place": "Santiago de los Caballeros",
+    "province": "Santiago",
+    "date_of_birth": null,
+    "birth_year": null,
+    "formation_year": null,
+    "primary_genre": "fusion",
+    "genres": [
+      "electronic",
+      "bachata",
+      "merengue",
+      "bolero"
+    ],
+    "instruments": [],
+    "artist_tags": [
+      "secular"
+    ],
+    "facebook": "martoxofficial",
+    "instagram": "martoxmusic",
+    "youtube": "@Martoxmusic",
+    "spotify": "2kt9iXyIMY6yv45SapEw5r",
+    "website": "https://martoxmusic.com/",
+    "status": "draft"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Martox es un dúo dominicano de pop caribeño originario de Santiago de los Caballeros, integrado por el vocalista Juan Miguel Martínez y el productor Eduardo Baldera. Su música vincula el R&B y la electrónica con ritmos tropicales y formas de la canción dominicana. Amigos desde la infancia, han desarrollado un proyecto en el que la interpretación vocal, la composición y la producción funcionan de manera complementaria."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Primeras canciones y versiones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Sus primeros pasos estuvieron ligados al colectivo santiaguero «MITEL DICO», con colaboraciones en trabajos de Diego Raposo y «La Ñapa», además de versiones compartidas en SoundCloud. En febrero de 2019 publicaron su reinterpretación de «Amapola», de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                  "occurrenceId": "bf769332-30cd-429e-9d4c-aae3cf4cbcd0",
+                  "displayText": "Juan Luis Guerra"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", quien la compartió en sus redes. Ese respaldo amplió la visibilidad del dúo. Ese año también presentaron su primer EP, «Canciones Que Puedes Usar En Mi Contra», que exploraba el R&B, la balada y la electrónica."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "De «Un Bolero» a «Baila!»",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2021 publicaron «Un Bolero» y «Se Siente Diferente». Este segundo EP desplazó su sonido hacia el synth-pop, el funk y el disco, con «Mucho Mejor», junto a jonás, y «Pausa», con Gian Rojas, integrante de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+                  "occurrenceId": "ba3f3c7d-d03c-404b-a534-30f4d25224e7",
+                  "displayText": "Solo Fernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Sus cinco canciones tuvieron videos conectados entre sí, dirigidos por Jorge Guillén y Víctor Cantisano. En 2023 llegó el EP «Baila!», que prolongó su exploración de la música de baile."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "El Caribe como lenguaje",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En julio de 2024 publicaron «Que Bien Te Queda El Caribe», un EP de cinco temas que incluye «Canela» y «Y Qué», con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+                  "occurrenceId": "f1b69823-1e84-4464-a13c-b8bc8efb1428",
+                  "displayText": "Lena Dardelet"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", además de colaboraciones con NIKÓLA y GioBulla. En 2025 presentaron «Un Pambiche», con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                  "occurrenceId": "56fe9e57-7110-4b05-90e0-d5d60f5ac996",
+                  "displayText": "El Prodigio"
+                }
+              },
+              {
+                "type": "text",
+                "text": " en el acordeón. La grabación acercó su producción contemporánea al merengue y fue acompañada por un videoclip dirigido por Víctor Cantisano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Caracol» y expansión",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En septiembre de 2025 apareció una primera entrega de «Caracol», de siete canciones; en mayo de 2026 publicaron una versión ampliada del proyecto, presentado como su primer álbum de estudio. Su repertorio incorpora bachata, merengue y bolero junto a R&B y recursos electrónicos. En 2026 colaboraron con Leslie Grace en «TU SUPITE» y con La Cassandra en «Paraíso». Ese mismo año YouTube Music anunció a Martox entre los participantes de «Foundry Rising», su programa de apoyo a artistas en una etapa temprana de desarrollo en la plataforma."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Martox participa en la renovación del pop dominicano desde una formación de cantante y productor. Su recorrido conecta la escena independiente de Santiago con un repertorio caribeño abierto a la experimentación electrónica y al trabajo con otros intérpretes."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Martox is a Dominican Caribbean pop duo from Santiago de los Caballeros, comprising vocalist Juan Miguel Martínez and producer Eduardo Baldera. Their music connects R&B and electronics with tropical rhythms and Dominican songwriting traditions. Friends since childhood, they have developed a project in which singing, composition and production complement one another."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early songs and covers",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Their early work was linked to Santiago's «MITEL DICO» collective, including appearances on projects by Diego Raposo and «La Ñapa», alongside covers shared on SoundCloud. In February 2019 they released their reinterpretation of «Amapola» by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                  "occurrenceId": "e2d28a93-d80c-46cc-80bc-c2e759cf21bb",
+                  "displayText": "Juan Luis Guerra"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", who shared it on his social accounts, bringing the duo wider exposure. They also released their first EP, «Canciones Que Puedes Usar En Mi Contra», that year, exploring R&B, ballads and electronic music."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From «Un Bolero» to «Baila!»",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2021 they released «Un Bolero» and «Se Siente Diferente». Their second EP moved toward synth-pop, funk and disco, featuring jonás on «Mucho Mejor» and Gian Rojas of "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+                  "occurrenceId": "13f83921-b860-4583-9a63-943da1f140d6",
+                  "displayText": "Solo Fernández"
+                }
+              },
+              {
+                "type": "text",
+                "text": " on «Pausa». Its five songs were accompanied by interconnected videos directed by Jorge Guillén and Víctor Cantisano. The 2023 EP «Baila!» continued their exploration of dance music."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A Caribbean musical language",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In July 2024 they released «Que Bien Te Queda El Caribe», a five-track EP containing «Canela» and «Y Qué» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+                  "occurrenceId": "9486eee8-fa2c-4a0c-ba51-17585d8fe6dc",
+                  "displayText": "Lena Dardelet"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", as well as collaborations with NIKÓLA and GioBulla. In 2025 they presented «Un Pambiche», featuring "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                  "occurrenceId": "e11a1c7c-aeba-4b3d-979a-72f66e09df49",
+                  "displayText": "El Prodigio"
+                }
+              },
+              {
+                "type": "text",
+                "text": " on accordion. The recording brought their contemporary production approach into merengue and was accompanied by a video directed by Víctor Cantisano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Caracol» and wider collaborations",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A seven-song first installment of «Caracol» appeared in September 2025; an expanded version followed in May 2026, presented as their first studio album. Its repertoire brings bachata, merengue and bolero together with R&B and electronic production. Their 2026 collaborations included «TU SUPITE» with Leslie Grace and «Paraíso» with La Cassandra. That year YouTube Music named Martox among the participants in «Foundry Rising», its program supporting artists at an earlier stage of their development on the platform."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Martox contributes to the development of Dominican pop through its singer-and-producer partnership. Their work connects Santiago's independent scene with a Caribbean repertoire open to electronic experimentation and exchanges with other performers."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "1fe11e8a-c6c3-49ad-b3de-1c90d548ad40",
+      "name": "Solo Fernández",
+      "slug": "solo-fernandez",
+      "status": "published"
+    },
+    {
+      "id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+      "name": "El Prodigio",
+      "slug": "el-prodigio",
+      "status": "published"
+    },
+    {
+      "id": "15562385-5c3b-4fd3-9e85-87ecf3f9a36a",
+      "name": "Lena Dardelet",
+      "slug": "lena-dardelet",
+      "status": "published"
+    },
+    {
+      "id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+      "name": "Juan Luis Guerra",
+      "slug": "juan-luis-guerra",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "martox-research-2026-10-23.md",
+  "editor_supplied_fields": [],
+  "unresolved": [
+    "Duo: personal birth fields inapplicable. Formation year unverified.",
+    "No photograph attached to the message; identity and artwork await an actual reference image.",
+    "Caracol expanded editions differ in track count; Se Siente Diferente original2021 differs from current2022catalogmetadata."
+  ],
+  "exclusions": [
+    "No artist publication, discography imports, other artists, photo upload, deployment, security change or manual cache refresh."
+  ]
+}

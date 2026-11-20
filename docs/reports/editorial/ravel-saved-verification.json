@@ -1,0 +1,369 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+        "name": "Ravel",
+        "sort_name": "Ravel",
+        "type": "solo_artist",
+        "birth_year": null,
+        "death_year": null,
+        "created_at": "2026-10-19T17:08:32.103975+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "Guillermo",
+        "middle_name": "A",
+        "last_name": "Ravel",
+        "second_last_name": "Diaz",
+        "stage_name": "Ravel",
+        "date_of_birth": null,
+        "birth_place": null,
+        "website": null,
+        "youtube": "@raveleltipodelavozmastierna",
+        "facebook": "ravel.eltipo",
+        "instagram": "ravel_el_tipo",
+        "aliases": [
+          "Ravel El Tipo",
+          "Ravel Guillermo",
+          "Guillermo A Ravel Diaz",
+          "La Voz Más Tierna del Merengue"
+        ],
+        "mbid": null,
+        "occupations": [
+          "bandleader",
+          "songwriter"
+        ],
+        "instruments": [
+          "voice"
+        ],
+        "genres": [
+          "ballads",
+          "ballads-bolero",
+          "salsa",
+          "bachata"
+        ],
+        "disambiguation": "Dominican merengue singer",
+        "gender": "male",
+        "ended": false,
+        "mb_metadata": {},
+        "updated_at": "2026-10-19T17:09:25.4971+00:00",
+        "province": null,
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "ravel",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "merengue",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": true,
+        "image_updated_at": "2026-10-19T17:09:25.747+00:00",
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "2baQWT806tM9iqYRhLiFCQ"
+      },
+      {
+        "id": "8c784f57-4ee4-41b5-b140-c45d0da1c5f6",
+        "name": "Joseíto Mateo",
+        "slug": "joseito-mateo",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "59773006-11c7-47ad-93d8-8547db1ac8fe",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Ravel, known as «El Tipo» and «La Voz Más Tierna del Merengue», is a Dominican singer whose career is closely connected with New York’s Dominican music scene. His repertoire brings together romantic merengue, other Caribbean rhythms and melodic popular song.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "New York and early bands",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "He moved to New York in 1974 and performed with several groups. He recorded with «Los Reyes del Caribe» before forming «Los Bravos Bravísimos», associated with songs including «La mazorca de maíz» and «Por nada». In 1984 he adopted the name «Ravel y su Orquesta». Recordings, dances and tours connected his work with Dominican communities in the United States.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Records and repertoire",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His own label, «Camino Records», supported the recording period associated with «Como tú lo querías» and «Llegó el tipo». He later worked with «RMM» and «Merengazo Records»; «Alma, ritmo y pueblo» appeared in 1997. Songs associated with his singing include «El guineo», «No basta» and «Yo te quiero así».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A voice across styles",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "On his official channel, Ravel describes a repertoire spanning romantic merengue, salsa, bolero, ballads and bachata. The channel preserves performances of «Herido de amor», «Tu alma golondrina» and «Ay, pena, penita, pena», as well as stage appearances and medleys. His approach combines melodic singing with arrangements suited to different Caribbean dance styles.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Ravel’s career belongs to the history of Dominican merengue in New York. In 2018 he contributed to the «Merengue NY» discussion organised by the local «Acroarte» chapter and performed in the city’s tribute to ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "8c784f57-4ee4-41b5-b140-c45d0da1c5f6",
+                    "displayText": "Joseíto Mateo",
+                    "occurrenceId": "d7d2b495-bd12-4506-b209-72dea1165755"
+                  }
+                },
+                {
+                  "text": ". His recordings and performances connect romantic song, the dance orchestra and Dominican audiences abroad.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+        "created_at": "2026-10-19T17:09:24.517138+00:00",
+        "updated_at": "2026-10-19T17:09:24.517138+00:00",
+        "revision": 1
+      },
+      {
+        "id": "3ddaca8d-e6e8-45f7-800c-0705a389a8d0",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Ravel, conocido como «El Tipo» y «La Voz Más Tierna del Merengue», es un cantante dominicano cuya carrera está vinculada a la escena musical de Nueva York. Su repertorio combina merengue romántico con otros ritmos caribeños y canciones de interpretación melódica.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Nueva York y sus primeras agrupaciones",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Se trasladó a Nueva York en 1974. Participó en diferentes agrupaciones y grabó con «Los Reyes del Caribe» antes de formar «Los Bravos Bravísimos», proyecto asociado a temas como «La mazorca de maíz» y «Por nada». En 1984 adoptó el nombre «Ravel y su Orquesta». Su trayectoria entre las comunidades dominicanas de Estados Unidos incluyó grabaciones, bailes y giras.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Discos y repertorio",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Con su sello «Camino Records» desarrolló una etapa de grabaciones identificada con «Como tú lo querías» y «Llegó el tipo». Posteriormente trabajó con «RMM» y «Merengazo Records»; «Alma, ritmo y pueblo» apareció en 1997. Entre las canciones vinculadas a su voz figuran «El guineo», «No basta» y «Yo te quiero así».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Una voz entre varios ritmos",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El propio artista describe su música a partir del merengue romántico, la salsa, el bolero, la balada y la bachata. Su canal conserva interpretaciones de «Herido de amor», «Tu alma golondrina» y «Ay, pena, penita, pena», además de presentaciones y repertorio en formato de popurrí. La identidad de su propuesta se apoya en el canto melódico y en la adaptación del repertorio a distintos ritmos.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su recorrido forma parte de la historia del merengue dominicano desarrollado en Nueva York. En 2018 participó en el conversatorio «Merengue NY» organizado por la filial de «Acroarte» y cantó en el homenaje neoyorquino a ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "8c784f57-4ee4-41b5-b140-c45d0da1c5f6",
+                    "displayText": "Joseíto Mateo",
+                    "occurrenceId": "483f1171-5807-4261-8c05-2bfaf4d61f2d"
+                  }
+                },
+                {
+                  "text": ". Sus actuaciones y grabaciones conservan el vínculo entre la canción romántica, la orquesta bailable y el público de la diáspora.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "dacae9ad-a2cd-4d80-9404-123e775642cf",
+        "created_at": "2026-10-19T17:09:24.231007+00:00",
+        "updated_at": "2026-10-19T17:09:24.231007+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "c07f78e9-79e8-41f1-9e84-38d7b11008a3",
+        "editorial_document_id": "3ddaca8d-e6e8-45f7-800c-0705a389a8d0",
+        "occurrence_id": "483f1171-5807-4261-8c05-2bfaf4d61f2d",
+        "entity_type": "artist",
+        "target_artist_id": "8c784f57-4ee4-41b5-b140-c45d0da1c5f6",
+        "created_at": "2026-10-19T17:09:24.231007+00:00",
+        "updated_at": "2026-10-19T17:09:24.231007+00:00"
+      },
+      {
+        "id": "2e680474-48cb-4f44-b4e0-2c878620ae86",
+        "editorial_document_id": "59773006-11c7-47ad-93d8-8547db1ac8fe",
+        "occurrence_id": "d7d2b495-bd12-4506-b209-72dea1165755",
+        "entity_type": "artist",
+        "target_artist_id": "8c784f57-4ee4-41b5-b140-c45d0da1c5f6",
+        "created_at": "2026-10-19T17:09:24.517138+00:00",
+        "updated_at": "2026-10-19T17:09:24.517138+00:00"
+      }
+    ]
+  },
+  "report": {
+    "generatedAt": "2026-10-19T17:09:26.176Z",
+    "counts": {
+      "documents": 2,
+      "relations": 2,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  },
+  "portrait_url": "https://srulenjahemkuxtkfmzt.supabase.co/storage/v1/object/public/artists-images/dacae9ad-a2cd-4d80-9404-123e775642cf.webp"
+}

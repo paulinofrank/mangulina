@@ -1,0 +1,286 @@
+{
+  "artist_id": "36390269-eb30-404d-876c-c72bc3336dcc",
+  "reason": "Link existing canonical Antony Santos identity in both biographies; preserve original video title as source evidence. Also restore capitalization of No Tengo Suerte En El Amor.",
+  "before": {
+    "es_document_id": "ac4afa6d-6f8e-460b-acf8-ebd308278583",
+    "en_document_id": "7dc5b3ea-2029-4ae1-b772-3323b42d26ee",
+    "revision": 1
+  },
+  "after": {
+    "revision": 2,
+    "biographies": {
+      "es": {
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "JACÓ, nombre artístico de Miguel Ángel Fulgencio de la Rosa, es un cantante y compositor dominicano de bachata oriundo de El Valle, provincia Hato Mayor. Se dio a conocer interpretando bachatas tradicionales en videos de TikTok y en 2026 comenzó a publicar grabaciones de su propio proyecto."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "De las redes a la escena",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Sus videos de bachata difundidos en TikTok precedieron a una serie de interpretaciones en vivo y videoclips en su canal oficial de YouTube. Allí ha presentado temas como «Tierra Mala», «No Tengo Suerte En El Amor» y un popurrí dedicado al repertorio de "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                    "displayText": "Antony Santos",
+                    "occurrenceId": "d9556177-6c3f-4bf9-84a9-1ba50b6ecb7a"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ". Su propuesta conserva la voz y la narrativa romántica como ejes de la bachata."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Grabaciones de 2026",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "En julio de 2026 lanzó «Amor de Barrio», una bachata producida por Robinson Hernández. El video, dirigido por «Micha Films», se rodó en Río San Juan. El 20 de julio presentó su música en el programa televisivo «De Extremo a Extremo». Ese año apareció también «Capitulo 1», una colección de siete canciones disponible en las plataformas digitales, y continuó publicando actuaciones y sencillos como «El Intruso»."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Reconocimiento entre bachateros",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "En 2026, "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "aec32df5-cc5a-43c2-ac33-02bc8caa1cf5",
+                    "displayText": "Joe Veras",
+                    "occurrenceId": "f4552297-967e-4df6-b14a-ce14fef010c8"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " lo presentó a sus seguidores en una publicación y pidió apoyo para su desarrollo dentro de la bachata. La participación de JACÓ en «De Extremo a Extremo» y el lanzamiento de «Amor de Barrio» marcaron su paso de las versiones difundidas en redes a una etapa de repertorio propio."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Legado",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "La primera etapa documentada de JACÓ une la difusión digital de bachatas conocidas con nuevas grabaciones románticas. Su trabajo refleja la continuidad de la bachata dominicana entre intérpretes jóvenes."
+                }
+              ]
+            }
+          ]
+        },
+        "mirror": "JACÓ, nombre artístico de Miguel Ángel Fulgencio de la Rosa, es un cantante y compositor dominicano de bachata oriundo de El Valle, provincia Hato Mayor. Se dio a conocer interpretando bachatas tradicionales en videos de TikTok y en 2026 comenzó a publicar grabaciones de su propio proyecto.\n\n**De las redes a la escena**\n\nSus videos de bachata difundidos en TikTok precedieron a una serie de interpretaciones en vivo y videoclips en su canal oficial de YouTube. Allí ha presentado temas como «Tierra Mala», «No Tengo Suerte En El Amor» y un popurrí dedicado al repertorio de Antony Santos. Su propuesta conserva la voz y la narrativa romántica como ejes de la bachata.\n\n**Grabaciones de 2026**\n\nEn julio de 2026 lanzó «Amor de Barrio», una bachata producida por Robinson Hernández. El video, dirigido por «Micha Films», se rodó en Río San Juan. El 20 de julio presentó su música en el programa televisivo «De Extremo a Extremo». Ese año apareció también «Capitulo 1», una colección de siete canciones disponible en las plataformas digitales, y continuó publicando actuaciones y sencillos como «El Intruso».\n\n**Reconocimiento entre bachateros**\n\nEn 2026, Joe Veras lo presentó a sus seguidores en una publicación y pidió apoyo para su desarrollo dentro de la bachata. La participación de JACÓ en «De Extremo a Extremo» y el lanzamiento de «Amor de Barrio» marcaron su paso de las versiones difundidas en redes a una etapa de repertorio propio.\n\n**Legado**\n\nLa primera etapa documentada de JACÓ une la difusión digital de bachatas conocidas con nuevas grabaciones románticas. Su trabajo refleja la continuidad de la bachata dominicana entre intérpretes jóvenes."
+      },
+      "en": {
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "JACÓ, the stage name of Miguel Ángel Fulgencio de la Rosa, is a Dominican bachata singer and composer from El Valle in Hato Mayor province. He first gained attention through TikTok videos of traditional bachata songs and began releasing recordings under his own project in 2026."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "From social media to performance",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "His TikTok bachata videos preceded a series of live performances and music videos on his official YouTube channel. There he has performed songs such as «Tierra Mala» and «No Tengo Suerte En El Amor», as well as a medley drawn from "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                    "displayText": "Antony Santos",
+                    "occurrenceId": "a03a0dad-c2a0-4c45-bf46-c9d5a5e9d5c6"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": "'s repertoire. Romantic storytelling and his vocal performance remain at the center of his approach."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Recordings in 2026",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "In July 2026 he released «Amor de Barrio», a bachata produced by Robinson Hernández. Its video, directed by «Micha Films», was filmed in Río San Juan. He performed on the television program «De Extremo a Extremo» on July 20. His seven-track collection «Capitulo 1» also appeared in 2026, followed by further live performances and singles including «El Intruso»."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Recognition from fellow bachata musicians",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "In 2026, "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "aec32df5-cc5a-43c2-ac33-02bc8caa1cf5",
+                    "displayText": "Joe Veras",
+                    "occurrenceId": "b8163f35-c501-419f-b511-36041df67296"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " introduced him to his followers in a post and encouraged support for his development as a bachata artist. The television appearance and «Amor de Barrio» marked a move from sharing versions online toward releasing his own repertoire."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Legacy",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "JACÓ's documented early career joins the online circulation of familiar bachata songs with new romantic recordings. His work reflects the genre's continuity among younger Dominican performers."
+                }
+              ]
+            }
+          ]
+        },
+        "mirror": "JACÓ, the stage name of Miguel Ángel Fulgencio de la Rosa, is a Dominican bachata singer and composer from El Valle in Hato Mayor province. He first gained attention through TikTok videos of traditional bachata songs and began releasing recordings under his own project in 2026.\n\n**From social media to performance**\n\nHis TikTok bachata videos preceded a series of live performances and music videos on his official YouTube channel. There he has performed songs such as «Tierra Mala» and «No Tengo Suerte En El Amor», as well as a medley drawn from Antony Santos's repertoire. Romantic storytelling and his vocal performance remain at the center of his approach.\n\n**Recordings in 2026**\n\nIn July 2026 he released «Amor de Barrio», a bachata produced by Robinson Hernández. Its video, directed by «Micha Films», was filmed in Río San Juan. He performed on the television program «De Extremo a Extremo» on July 20. His seven-track collection «Capitulo 1» also appeared in 2026, followed by further live performances and singles including «El Intruso».\n\n**Recognition from fellow bachata musicians**\n\nIn 2026, Joe Veras introduced him to his followers in a post and encouraged support for his development as a bachata artist. The television appearance and «Amor de Barrio» marked a move from sharing versions online toward releasing his own repertoire.\n\n**Legacy**\n\nJACÓ's documented early career joins the online circulation of familiar bachata songs with new romantic recordings. His work reflects the genre's continuity among younger Dominican performers."
+      }
+    }
+  },
+  "reference": {
+    "artist_id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+    "canonical_name": "Antony Santos",
+    "source_title": "Anthony Santos Popurrí, Vol. 1",
+    "source_url": "https://www.youtube.com/@jacooficialrd"
+  }
+}

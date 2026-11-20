@@ -1,0 +1,413 @@
+{
+  "date": "2026-10-22",
+  "authorization": "Editor supplied named new-profile candidate in established workflow. Draft artist and validated published EN/ES career biographies only.",
+  "before": null,
+  "after": {
+    "id": "df5ef32e-ea15-4c22-a3c6-b9a1276b98ad",
+    "name": "Onguito Wa",
+    "stage_name": "Onguito Wa",
+    "sort_name": "Onguito Wa",
+    "slug": "onguito-wa",
+    "first_name": "Elvis",
+    "middle_name": "Manuel",
+    "last_name": "Santos",
+    "second_last_name": "Alcántara",
+    "aliases": [
+      "Elvis Manuel Santos Alcántara",
+      "Ariel Wa Wa Wa"
+    ],
+    "disambiguation": "Dominican dembow singer known for Yamilet",
+    "type": "solo_artist",
+    "primary_role": "singer",
+    "occupations": [],
+    "gender": "male",
+    "birth_place": "Santo Domingo",
+    "province": "Distrito Nacional",
+    "date_of_birth": null,
+    "birth_year": null,
+    "primary_genre": "urban-dembow",
+    "genres": [],
+    "instruments": [
+      "voice"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "facebook": null,
+    "instagram": null,
+    "youtube": null,
+    "spotify": "5gIa74oRT4LLG0AioLVn6F",
+    "website": null,
+    "status": "draft"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Onguito Wa, nombre artístico de Elvis Manuel Santos Alcántara, es un cantante dominicano de dembow originario de Santo Domingo. Se dio a conocer en 2020 con «Yamilet», junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                  "occurrenceId": "304b7ac4-46e5-4072-9ab2-d23baf9d846f",
+                  "displayText": "Rochy RD"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", y desarrolló posteriormente un repertorio de sencillos y colaboraciones dentro del movimiento urbano dominicano."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "De repartidor a intérprete",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Antes de dedicarse a la música trabajaba como repartidor en la avenida España, en Santo Domingo Este. Allí conoció a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                  "occurrenceId": "8253abc4-51ed-41dc-b846-d039315d39e8",
+                  "displayText": "Rochy RD"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", quien lo incorporó como el primer artista de Wawawa Records y le dio el nombre artístico Onguito Wa. Según relató en una entrevista recogida por Diario Libre, antes se hacía llamar Ariel Wa Wa Wa."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Las primeras canciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Yamilet», cuyo video circuló en septiembre de 2020, contribuyó a su difusión en las plataformas digitales. También ganó notoriedad con «Los perros de los pies». En mayo de 2021 participó junto a Ozuna en «Diablona», una colaboración documentada por la prensa de la época. Después de su etapa inicial con Wawawa Records continuó publicando música y trabajando con otros intérpretes."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Un repertorio de colaboraciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2022 aparecieron «Tan Quedao», con Briante; «Uju Aja», con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+                  "occurrenceId": "b1db288b-b0df-4500-b57b-567abbbb13f9",
+                  "displayText": "Leo RD"
+                }
+              },
+              {
+                "type": "text",
+                "text": "; y «Me la subió», acreditada también a La Melma Music. Su repertorio incluye «Lokisla», junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+                  "occurrenceId": "70ea30f8-3607-47aa-93d7-abfbe62b1924",
+                  "displayText": "Tivi Gunz"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                  "occurrenceId": "6bb68e7b-c79a-4230-9bbe-6cb4e1f60f11",
+                  "displayText": "Rochy RD"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Harryson y El Perrote Wz. En 2024 participó en «12 mandamientos (De los Km pal mundo)», pieza colectiva de más de diez minutos acreditada junto a El Experimento (Macgyver), Odanel Km y otros participantes, comercializada como EP en Apple Music."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trayectoria inicial refleja la circulación del dembow mediante videos, sencillos y colaboraciones. «Yamilet» marcó su presentación ante un público amplio, mientras que trabajos posteriores como «Tan Quedao», «Uju Aja» y «Me la subió» ampliaron su presencia en el repertorio urbano dominicano."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Onguito Wa is the stage name of Elvis Manuel Santos Alcántara, a Dominican dembow singer from Santo Domingo. He came to public attention in 2020 with «Yamilet», alongside "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                  "occurrenceId": "26060f0b-0964-43ab-b63d-075d17b7d074",
+                  "displayText": "Rochy RD"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", and subsequently developed a repertoire of singles and collaborations within Dominican urban music."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "From delivery work to music",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Before pursuing music, he worked making deliveries on Avenida España in Santo Domingo Este. There he met "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                  "occurrenceId": "8a703583-c1fb-4b45-915b-a4b6789e3882",
+                  "displayText": "Rochy RD"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", who signed him as the first artist at Wawawa Records and gave him the stage name Onguito Wa. In an interview reported by Diario Libre, he explained that he had previously called himself Ariel Wa Wa Wa."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early releases",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Yamilet», whose video circulated in September 2020, helped introduce him to audiences on digital platforms. «Los perros de los pies» brought further attention. In May 2021 he collaborated with Ozuna on «Diablona», a release documented in contemporary press coverage. Following his initial period with Wawawa Records, he continued releasing music and working with other performers."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A collaborative repertoire",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His 2022 releases included «Tan Quedao» with Briante, «Uju Aja» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+                  "occurrenceId": "fc5f08d1-68bc-4777-9f83-ab428dacb7f5",
+                  "displayText": "Leo RD"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", and «Me la subió», also credited to La Melma Music. His repertoire includes «Lokisla» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+                  "occurrenceId": "52946a34-f013-4e25-810f-9e067c9d833e",
+                  "displayText": "Tivi Gunz"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+                  "occurrenceId": "7e1f7da3-5a5d-47c0-8d8b-a7abcdd529d8",
+                  "displayText": "Rochy RD"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Harryson and El Perrote Wz. In 2024 he participated in «12 mandamientos (De los Km pal mundo)», a collective piece lasting over ten minutes, credited alongside El Experimento (Macgyver), Odanel Km and other participants and marketed as an EP on Apple Music."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His early career reflects dembow’s circulation through videos, singles and collaborations. «Yamilet» introduced him to a wider audience, while later releases such as «Tan Quedao», «Uju Aja» and «Me la subió» extended his presence within Dominican urban music."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "71ebd02b-8ba4-4cd7-b7e4-a990a9c3c3bb",
+      "name": "Rochy RD",
+      "slug": "rochy-rd",
+      "status": "published"
+    },
+    {
+      "id": "5cbc8f2b-cb68-4ebd-8006-6837be54bbe4",
+      "name": "Leo RD",
+      "slug": "leo-rd",
+      "status": "published"
+    },
+    {
+      "id": "95e181f1-58e5-4537-a5e8-75a9f60c6aca",
+      "name": "Tivi Gunz",
+      "slug": "tivi-gunz",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "onguito-wa-research-2026-10-22.md",
+  "unresolved": [
+    "DOB and birth year unknown; conflicting age-based estimates not converted to dates.",
+    "Instagram, Facebook and current personal YouTube identity unverified; old @onguitowa returned 404.",
+    "Portrait mentioned by editor not actually attached; no image generated or uploaded.",
+    "Villa Agricola upbringing is editor/Famous Birthdays claim; contemporary Diario Libre locates him in Isabelita. No exclusive neighborhood claim inserted."
+  ],
+  "exclusions": [
+    "No artist publication, legal-history narrative, discography import, other-artist writes, deployment, security change or manual cache refresh."
+  ]
+}

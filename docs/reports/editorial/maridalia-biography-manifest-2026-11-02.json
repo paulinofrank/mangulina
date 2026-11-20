@@ -1,0 +1,1042 @@
+{
+  "artistId": "080c0205-8b66-4f16-915e-1d867acf82cc",
+  "artistName": "Maridalia Hernández",
+  "expected": {
+    "birthPlace": "Santiago de los Caballeros",
+    "province": "Santiago",
+    "enDocumentRevision": 4,
+    "esDocumentRevision": 6
+  },
+  "proposed": {
+    "birthPlace": "Santo Domingo",
+    "province": "Distrito Nacional",
+    "dateOfBirth": "1959-08-19",
+    "documents": {
+      "en": {
+        "id": "be9e8ccf-0032-4189-be7f-717282da1dd4",
+        "status": "published",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Maridalia Hernández Morel, born on 19 August 1959 in Santo Domingo, is a Dominican singer who grew up in Santiago de los Caballeros. She was a founding voice of "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "f2f201c0-c708-4186-9498-f22adb2b8287",
+                    "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+                    "displayText": "Grupo 440"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " and built a solo career that includes the 1986 Viña del Mar international song prize, a third-place finish at the 1989 OTI festival, and recordings of ballads and boleros."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A musical upbringing in Santiago",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Music ran through both sides of her family. Her grandfather was the composer "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "a180e1aa-e165-4fa8-9099-7d4608cc6978",
+                    "artistId": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+                    "displayText": "Julio Alberto Hernández"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": "; her father, Julio Alejandro Hernández, studied piano; and her mother, Matilde Josefina Morel, sang. She began formal lessons in Santiago at the Liceo Musical José Ovidio García, then studied piano at the Academia Dominicana de Música and cello and classical voice at the Conservatorio Nacional. She sang as a soloist with the Coro Nacional and later instructed its sopranos."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "At a school performance she sang with "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "69bdd385-a508-46ce-8616-afff8a6df4f2",
+                    "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                    "displayText": "Jorge Taveras"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " accompanying her. Her first professional appearance came in 1976 at «Casa de Teatro» in «Encuentro de Seres Humanos», at the invitation of Luis Díaz and "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "b0f09f63-124f-4134-bd84-2a5c76352068",
+                    "artistId": "ec0ebf45-13ca-41bd-af4c-256e4f226823",
+                    "displayText": "Claudio Cohén"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ". Luis José Mella then cast her in the 1981 stage production «Sonido para una imagen». She had been preparing to continue classical piano studies in Vienna, but the show helped turn her attention toward popular singing."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The original 4.40 quartet",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "She met "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "dcd5bb91-4056-4fa7-85f1-4ad83ea64e12",
+                    "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                    "displayText": "Juan Luis Guerra"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " while they were studying cello and bought her first cello from him. When Guerra returned from Berklee with a vocal transcription of «The Manhattan Transfer», he asked her to find other singers to try it out. She brought in "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "ea7d2379-15a5-44ee-b1a1-757442e12b6e",
+                    "artistId": "150d1962-c866-43be-8859-168fff7f1686",
+                    "displayText": "Mariela Mercado"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": "; "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "cab38844-b558-4e3d-ad2f-a3b57ce81042",
+                    "artistId": "25440b12-5934-472d-8a38-f425510ca379",
+                    "displayText": "Roger Zayas-Bazán"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " joined later. Those sessions became "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "a854cda4-2346-4c7d-b962-311741832357",
+                    "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+                    "displayText": "Grupo 440"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ". Its debut album, «Soplando», appeared in 1984, followed by «Mudanza y acarreo» in 1985, where her voice helped carry the group's mixture of merengue rhythms and jazz harmonies on songs including «Por eso ahora» and «Si tú te vas»."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Hernández had a solo career alongside the quartet. As both paths gathered momentum after her Viña del Mar win, she chose to leave the group in 1986. She has since described the departure as professional; her artistic and personal bond with the original singers continued."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Festival prizes and solo recordings",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "She sang «Para quererte» to first place in the international competition at the 1986 «Viña del Mar Festival». The surviving single credits "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "0c41fc6a-2e19-4f7e-8fa9-adc42e93dc4c",
+                    "artistId": "25a420d1-7a98-4fd2-93c8-38d3ed2d2dc1",
+                    "displayText": "José Antonio Rodríguez"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " as author and "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "8af21aa1-c3f6-4bdb-b125-eb3fd4e93ca2",
+                    "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                    "displayText": "Manuel Tejada"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " for the arrangement. In 1987 she became the first woman to receive Acroarte's Gran Soberano award. She placed third at the 1989 «OTI Festival» with «Te ofrezco», a song by "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "d7121546-d00a-4af0-9f36-942ad23536b9",
+                    "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                    "displayText": "Juan Luis Guerra"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Her first solo album, «Te ofrezco», brought both festival songs together with recordings such as «Nuestro amor». It was made around 1989, with a CD edition documented in 1992. «Amorosa» followed in 1993: an album of orchestral boleros produced by "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "c4e1efb1-dc75-469c-91a6-21640f95ecb4",
+                    "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                    "displayText": "Juan Luis Guerra"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " with arrangements by "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "44ee9269-40e7-4a5c-baf7-ed517d554e15",
+                    "artistId": "df68a7c8-c284-4d97-a4fd-b02264396148",
+                    "displayText": "José Antonio Molina"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "a778140b-531d-4911-bead-90154e4bec5e",
+                    "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                    "displayText": "Manuel Tejada"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Working through an interruption",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A long-running contract dispute with «Karen Records» held up new releases, though Hernández continued to perform. After it was resolved, she issued «Libre» in 2009 through her own «Encore Music Group» project. Milton Salcedo produced the pop and tropical album, which included songs by Dominican and other Latin American writers. She completed a degree in contemporary music at the Universidad Nacional Pedro Henríquez Ureña in 2020."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "In 2015 she shared the stage with Andrea Bocelli at Altos de Chavón in a concert conducted by "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "64e664c9-442e-4031-a040-c3bd96e8907f",
+                    "artistId": "df68a7c8-c284-4d97-a4fd-b02264396148",
+                    "displayText": "José Antonio Molina"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ". She joined "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "578f47d0-c223-4d5c-bf64-63b0765b76e1",
+                    "artistId": "070e7449-814e-4ea6-a009-7a091b7e4878",
+                    "displayText": "Milly Quezada"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "23a63c8f-aa0a-40c4-a84f-7ff4e5f283c9",
+                    "artistId": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+                    "displayText": "Fefita la Grande"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " on the 2017 típico merengue «La pimienta es la que pica», and sang «No me importa no» with "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "f5cc61e4-fb3b-4a1d-b87a-9116b54ecd28",
+                    "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                    "displayText": "Ramón Orlando"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " in a performance released in 2025. In February 2026 she reunited with the founding voices of "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "e86c9140-fdad-42f3-9883-1d8a7ba5e954",
+                    "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+                    "displayText": "Grupo 440"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " at a "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "b06c7adf-a1ab-4a66-928e-ec29e1e6d32f",
+                    "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                    "displayText": "Juan Luis Guerra"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " concert in Santiago's Estadio Cibao."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Legacy",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Hernández brought the discipline of piano study and choral singing to Dominican popular music. The early recordings of 4.40, her performances of «Para quererte» and «Te ofrezco», and her solo albums trace a career across merengue, ballad and bolero spanning more than four decades."
+                }
+              ]
+            }
+          ]
+        },
+        "mirror": "Maridalia Hernández Morel, born on 19 August 1959 in Santo Domingo, is a Dominican singer who grew up in Santiago de los Caballeros. She was a founding voice of Grupo 440 and built a solo career that includes the 1986 Viña del Mar international song prize, a third-place finish at the 1989 OTI festival, and recordings of ballads and boleros.\n\n**A musical upbringing in Santiago**\n\nMusic ran through both sides of her family. Her grandfather was the composer Julio Alberto Hernández; her father, Julio Alejandro Hernández, studied piano; and her mother, Matilde Josefina Morel, sang. She began formal lessons in Santiago at the Liceo Musical José Ovidio García, then studied piano at the Academia Dominicana de Música and cello and classical voice at the Conservatorio Nacional. She sang as a soloist with the Coro Nacional and later instructed its sopranos.\n\nAt a school performance she sang with Jorge Taveras accompanying her. Her first professional appearance came in 1976 at «Casa de Teatro» in «Encuentro de Seres Humanos», at the invitation of Luis Díaz and Claudio Cohén. Luis José Mella then cast her in the 1981 stage production «Sonido para una imagen». She had been preparing to continue classical piano studies in Vienna, but the show helped turn her attention toward popular singing.\n\n**The original 4.40 quartet**\n\nShe met Juan Luis Guerra while they were studying cello and bought her first cello from him. When Guerra returned from Berklee with a vocal transcription of «The Manhattan Transfer», he asked her to find other singers to try it out. She brought in Mariela Mercado; Roger Zayas-Bazán joined later. Those sessions became Grupo 440. Its debut album, «Soplando», appeared in 1984, followed by «Mudanza y acarreo» in 1985, where her voice helped carry the group's mixture of merengue rhythms and jazz harmonies on songs including «Por eso ahora» and «Si tú te vas».\n\nHernández had a solo career alongside the quartet. As both paths gathered momentum after her Viña del Mar win, she chose to leave the group in 1986. She has since described the departure as professional; her artistic and personal bond with the original singers continued.\n\n**Festival prizes and solo recordings**\n\nShe sang «Para quererte» to first place in the international competition at the 1986 «Viña del Mar Festival». The surviving single credits José Antonio Rodríguez as author and Manuel Tejada for the arrangement. In 1987 she became the first woman to receive Acroarte's Gran Soberano award. She placed third at the 1989 «OTI Festival» with «Te ofrezco», a song by Juan Luis Guerra.\n\nHer first solo album, «Te ofrezco», brought both festival songs together with recordings such as «Nuestro amor». It was made around 1989, with a CD edition documented in 1992. «Amorosa» followed in 1993: an album of orchestral boleros produced by Juan Luis Guerra with arrangements by José Antonio Molina and Manuel Tejada.\n\n**Working through an interruption**\n\nA long-running contract dispute with «Karen Records» held up new releases, though Hernández continued to perform. After it was resolved, she issued «Libre» in 2009 through her own «Encore Music Group» project. Milton Salcedo produced the pop and tropical album, which included songs by Dominican and other Latin American writers. She completed a degree in contemporary music at the Universidad Nacional Pedro Henríquez Ureña in 2020.\n\nIn 2015 she shared the stage with Andrea Bocelli at Altos de Chavón in a concert conducted by José Antonio Molina. She joined Milly Quezada and Fefita la Grande on the 2017 típico merengue «La pimienta es la que pica», and sang «No me importa no» with Ramón Orlando in a performance released in 2025. In February 2026 she reunited with the founding voices of Grupo 440 at a Juan Luis Guerra concert in Santiago's Estadio Cibao.\n\n**Legacy**\n\nHernández brought the discipline of piano study and choral singing to Dominican popular music. The early recordings of 4.40, her performances of «Para quererte» and «Te ofrezco», and her solo albums trace a career across merengue, ballad and bolero spanning more than four decades.",
+        "refs": [
+          {
+            "occurrenceId": "f2f201c0-c708-4186-9498-f22adb2b8287",
+            "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+            "displayText": "Grupo 440"
+          },
+          {
+            "occurrenceId": "a180e1aa-e165-4fa8-9099-7d4608cc6978",
+            "artistId": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+            "displayText": "Julio Alberto Hernández"
+          },
+          {
+            "occurrenceId": "69bdd385-a508-46ce-8616-afff8a6df4f2",
+            "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+            "displayText": "Jorge Taveras"
+          },
+          {
+            "occurrenceId": "b0f09f63-124f-4134-bd84-2a5c76352068",
+            "artistId": "ec0ebf45-13ca-41bd-af4c-256e4f226823",
+            "displayText": "Claudio Cohén"
+          },
+          {
+            "occurrenceId": "dcd5bb91-4056-4fa7-85f1-4ad83ea64e12",
+            "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+            "displayText": "Juan Luis Guerra"
+          },
+          {
+            "occurrenceId": "ea7d2379-15a5-44ee-b1a1-757442e12b6e",
+            "artistId": "150d1962-c866-43be-8859-168fff7f1686",
+            "displayText": "Mariela Mercado"
+          },
+          {
+            "occurrenceId": "cab38844-b558-4e3d-ad2f-a3b57ce81042",
+            "artistId": "25440b12-5934-472d-8a38-f425510ca379",
+            "displayText": "Roger Zayas-Bazán"
+          },
+          {
+            "occurrenceId": "a854cda4-2346-4c7d-b962-311741832357",
+            "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+            "displayText": "Grupo 440"
+          },
+          {
+            "occurrenceId": "0c41fc6a-2e19-4f7e-8fa9-adc42e93dc4c",
+            "artistId": "25a420d1-7a98-4fd2-93c8-38d3ed2d2dc1",
+            "displayText": "José Antonio Rodríguez"
+          },
+          {
+            "occurrenceId": "8af21aa1-c3f6-4bdb-b125-eb3fd4e93ca2",
+            "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+            "displayText": "Manuel Tejada"
+          },
+          {
+            "occurrenceId": "d7121546-d00a-4af0-9f36-942ad23536b9",
+            "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+            "displayText": "Juan Luis Guerra"
+          },
+          {
+            "occurrenceId": "c4e1efb1-dc75-469c-91a6-21640f95ecb4",
+            "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+            "displayText": "Juan Luis Guerra"
+          },
+          {
+            "occurrenceId": "44ee9269-40e7-4a5c-baf7-ed517d554e15",
+            "artistId": "df68a7c8-c284-4d97-a4fd-b02264396148",
+            "displayText": "José Antonio Molina"
+          },
+          {
+            "occurrenceId": "a778140b-531d-4911-bead-90154e4bec5e",
+            "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+            "displayText": "Manuel Tejada"
+          },
+          {
+            "occurrenceId": "64e664c9-442e-4031-a040-c3bd96e8907f",
+            "artistId": "df68a7c8-c284-4d97-a4fd-b02264396148",
+            "displayText": "José Antonio Molina"
+          },
+          {
+            "occurrenceId": "578f47d0-c223-4d5c-bf64-63b0765b76e1",
+            "artistId": "070e7449-814e-4ea6-a009-7a091b7e4878",
+            "displayText": "Milly Quezada"
+          },
+          {
+            "occurrenceId": "23a63c8f-aa0a-40c4-a84f-7ff4e5f283c9",
+            "artistId": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+            "displayText": "Fefita la Grande"
+          },
+          {
+            "occurrenceId": "f5cc61e4-fb3b-4a1d-b87a-9116b54ecd28",
+            "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+            "displayText": "Ramón Orlando"
+          },
+          {
+            "occurrenceId": "e86c9140-fdad-42f3-9883-1d8a7ba5e954",
+            "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+            "displayText": "Grupo 440"
+          },
+          {
+            "occurrenceId": "b06c7adf-a1ab-4a66-928e-ec29e1e6d32f",
+            "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+            "displayText": "Juan Luis Guerra"
+          }
+        ]
+      },
+      "es": {
+        "id": "a441f11a-7746-413f-a598-9793c9f43c1e",
+        "status": "published",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Maridalia Hernández Morel, nacida el 19 de agosto de 1959 en Santo Domingo, es una cantante dominicana que creció en Santiago de los Caballeros. Fue una de las voces fundadoras de "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "a1b55819-197c-441a-8063-e246aa5e5e9e",
+                    "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+                    "displayText": "Grupo 440"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " y desarrolló una carrera solista que incluye el triunfo en Viña del Mar de 1986, el tercer lugar en la OTI de 1989 y álbumes de balada y bolero."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Formación en Santiago",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Creció en una familia vinculada a la música y las artes: su abuelo paterno fue el compositor "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "f0e8207b-bca2-4f27-ac1b-ced95e386ef4",
+                    "artistId": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+                    "displayText": "Julio Alberto Hernández"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ", su padre, Julio Alejandro Hernández, estudió piano, y su madre, Matilde Josefina Morel, también cantaba. Inició sus estudios musicales en Santiago y pasó por el Liceo Musical José Ovidio García. Más tarde estudió piano en la Academia Dominicana de Música, y violonchelo y canto lírico en el Conservatorio Nacional. Integró el Coro Nacional como solista y llegó a instruir a sus sopranos."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "En una velada escolar cantó acompañada por "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "d9738fa3-e59f-46e6-b008-c8813c30d61a",
+                    "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                    "displayText": "Jorge Taveras"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ". En 1976 se presentó en «Encuentro de Seres Humanos», en «Casa de Teatro», invitada por Luis Díaz y "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "ee3b3dfa-c01e-4da3-93de-e056cb5552c9",
+                    "artistId": "ec0ebf45-13ca-41bd-af4c-256e4f226823",
+                    "displayText": "Claudio Cohén"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ". En 1981 el director Luis José Mella la incorporó a «Sonido para una imagen». Hernández se preparaba para continuar sus estudios de piano clásico en Viena, pero aquella experiencia la llevó a concentrarse en el canto popular."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Las cuatro voces de 4.40",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Conoció a "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "6e8c6291-0fd5-4a38-a398-bed62238e14e",
+                    "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                    "displayText": "Juan Luis Guerra"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " mientras ambos estudiaban violonchelo y le compró su primer violonchelo. Tras volver de Berklee, Guerra quiso probar una transcripción vocal de «The Manhattan Transfer» y le pidió que buscara otras voces. Hernández convocó a "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "cdc981ed-ea6f-4e85-ac36-ddac464e3e9b",
+                    "artistId": "150d1962-c866-43be-8859-168fff7f1686",
+                    "displayText": "Mariela Mercado"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": "; después se sumó "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "c39effe2-a686-4b84-88f1-2e95472b07b8",
+                    "artistId": "25440b12-5934-472d-8a38-f425510ca379",
+                    "displayText": "Roger Zayas-Bazán"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ". De aquellas reuniones surgió el cuarteto "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "fda00c8f-2c59-4c22-acfc-ac2bcccb1d34",
+                    "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+                    "displayText": "Grupo 440"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ", cuyo primer álbum fue «Soplando» (1984). En «Mudanza y acarreo» (1985) su voz formó parte de la nueva mezcla de merengue y armonías de jazz del grupo, en temas como «Por eso ahora» y «Si tú te vas»."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Hernández ya cantaba como solista cuando el grupo comenzó a ganar público. Tras su triunfo en Viña del Mar, las dos carreras avanzaban a la vez y decidió dejar la formación en 1986. En entrevistas posteriores ha distinguido esa salida profesional de su vínculo artístico y afectivo con los demás fundadores."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Viña del Mar, OTI y los primeros discos",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "En 1986 interpretó «Para quererte», ganadora de la competencia internacional del «Festival de Viña del Mar». El sencillo conservado por el Archivo General de la Nación acredita a "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "586fd0af-f7a3-4fab-954e-d684d603e3c5",
+                    "artistId": "25a420d1-7a98-4fd2-93c8-38d3ed2d2dc1",
+                    "displayText": "José Antonio Rodríguez"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " como autor y a "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "6f784387-4604-4753-b392-ff8c303fa0a6",
+                    "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                    "displayText": "Manuel Tejada"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " por el arreglo. En 1987 Hernández recibió el Gran Soberano, primera mujer en obtener la máxima distinción de Acroarte. Dos años después quedó tercera en el «Festival OTI» con «Te ofrezco», canción de "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "318454b3-cafa-4ee7-8c68-c78d49176aa1",
+                    "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                    "displayText": "Juan Luis Guerra"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Su primer álbum solista, «Te ofrezco», reunió ambas canciones de festival con piezas como «Nuestro amor». La producción se realizó hacia 1989 y una edición en CD está documentada en 1992. En 1993 publicó «Amorosa», un disco de boleros de concepto sinfónico producido por "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "b99ea11c-a8c8-4ac7-b10b-19e04ec510bc",
+                    "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                    "displayText": "Juan Luis Guerra"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " y arreglado por "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "eac24df9-9b4b-4213-8e57-6f3f9e012eae",
+                    "artistId": "df68a7c8-c284-4d97-a4fd-b02264396148",
+                    "displayText": "José Antonio Molina"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " y "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "f5668b02-c535-4890-87a1-2e4cbb917d41",
+                    "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                    "displayText": "Manuel Tejada"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Continuidad y nuevos escenarios",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Un prolongado conflicto contractual con «Karen Records» dificultó la publicación de nuevas grabaciones, aunque continuó actuando. Tras resolverlo, lanzó «Libre» (2009) desde su propio proyecto discográfico «Encore Music Group», con producción de Milton Salcedo y canciones de autores dominicanos y latinoamericanos. En 2020 completó una licenciatura en Música Contemporánea en la Universidad Nacional Pedro Henríquez Ureña."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "En 2015 compartió escenario con Andrea Bocelli en Altos de Chavón, bajo la dirección de "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "61ff4f6d-a4bc-45f4-a0ef-6414b2c1d40c",
+                    "artistId": "df68a7c8-c284-4d97-a4fd-b02264396148",
+                    "displayText": "José Antonio Molina"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ". En 2017 grabó el merengue típico «La pimienta es la que pica» junto a "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "e8ef98ee-b112-49bb-9460-6c44bcb4a369",
+                    "artistId": "070e7449-814e-4ea6-a009-7a091b7e4878",
+                    "displayText": "Milly Quezada"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " y "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "a73201d3-6454-45b9-9bbf-e75f5104ef46",
+                    "artistId": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+                    "displayText": "Fefita la Grande"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": ". También cantó «No me importa no» con "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "5fe8e0b7-b46f-4dbf-a5ba-fa5e0d098113",
+                    "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+                    "displayText": "Ramón Orlando"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " en una presentación difundida en 2025. En febrero de 2026 volvió a cantar con las voces fundadoras de "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "868d6c11-b23a-4b13-95cf-ae9fe68622c8",
+                    "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+                    "displayText": "Grupo 440"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " durante el concierto de "
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "occurrenceId": "4704f954-7bf2-439d-ad2c-3f0dd8baa0fd",
+                    "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                    "displayText": "Juan Luis Guerra"
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": " en el Estadio Cibao."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Legado",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Su trayectoria une el estudio del piano, el canto coral y la música popular dominicana. Las primeras grabaciones de 4.40, sus interpretaciones de «Para quererte» y «Te ofrezco» y sus discos solistas documentan una voz presente en el merengue, la balada y el bolero durante más de cuatro décadas."
+                }
+              ]
+            }
+          ]
+        },
+        "mirror": "Maridalia Hernández Morel, nacida el 19 de agosto de 1959 en Santo Domingo, es una cantante dominicana que creció en Santiago de los Caballeros. Fue una de las voces fundadoras de Grupo 440 y desarrolló una carrera solista que incluye el triunfo en Viña del Mar de 1986, el tercer lugar en la OTI de 1989 y álbumes de balada y bolero.\n\n**Formación en Santiago**\n\nCreció en una familia vinculada a la música y las artes: su abuelo paterno fue el compositor Julio Alberto Hernández, su padre, Julio Alejandro Hernández, estudió piano, y su madre, Matilde Josefina Morel, también cantaba. Inició sus estudios musicales en Santiago y pasó por el Liceo Musical José Ovidio García. Más tarde estudió piano en la Academia Dominicana de Música, y violonchelo y canto lírico en el Conservatorio Nacional. Integró el Coro Nacional como solista y llegó a instruir a sus sopranos.\n\nEn una velada escolar cantó acompañada por Jorge Taveras. En 1976 se presentó en «Encuentro de Seres Humanos», en «Casa de Teatro», invitada por Luis Díaz y Claudio Cohén. En 1981 el director Luis José Mella la incorporó a «Sonido para una imagen». Hernández se preparaba para continuar sus estudios de piano clásico en Viena, pero aquella experiencia la llevó a concentrarse en el canto popular.\n\n**Las cuatro voces de 4.40**\n\nConoció a Juan Luis Guerra mientras ambos estudiaban violonchelo y le compró su primer violonchelo. Tras volver de Berklee, Guerra quiso probar una transcripción vocal de «The Manhattan Transfer» y le pidió que buscara otras voces. Hernández convocó a Mariela Mercado; después se sumó Roger Zayas-Bazán. De aquellas reuniones surgió el cuarteto Grupo 440, cuyo primer álbum fue «Soplando» (1984). En «Mudanza y acarreo» (1985) su voz formó parte de la nueva mezcla de merengue y armonías de jazz del grupo, en temas como «Por eso ahora» y «Si tú te vas».\n\nHernández ya cantaba como solista cuando el grupo comenzó a ganar público. Tras su triunfo en Viña del Mar, las dos carreras avanzaban a la vez y decidió dejar la formación en 1986. En entrevistas posteriores ha distinguido esa salida profesional de su vínculo artístico y afectivo con los demás fundadores.\n\n**Viña del Mar, OTI y los primeros discos**\n\nEn 1986 interpretó «Para quererte», ganadora de la competencia internacional del «Festival de Viña del Mar». El sencillo conservado por el Archivo General de la Nación acredita a José Antonio Rodríguez como autor y a Manuel Tejada por el arreglo. En 1987 Hernández recibió el Gran Soberano, primera mujer en obtener la máxima distinción de Acroarte. Dos años después quedó tercera en el «Festival OTI» con «Te ofrezco», canción de Juan Luis Guerra.\n\nSu primer álbum solista, «Te ofrezco», reunió ambas canciones de festival con piezas como «Nuestro amor». La producción se realizó hacia 1989 y una edición en CD está documentada en 1992. En 1993 publicó «Amorosa», un disco de boleros de concepto sinfónico producido por Juan Luis Guerra y arreglado por José Antonio Molina y Manuel Tejada.\n\n**Continuidad y nuevos escenarios**\n\nUn prolongado conflicto contractual con «Karen Records» dificultó la publicación de nuevas grabaciones, aunque continuó actuando. Tras resolverlo, lanzó «Libre» (2009) desde su propio proyecto discográfico «Encore Music Group», con producción de Milton Salcedo y canciones de autores dominicanos y latinoamericanos. En 2020 completó una licenciatura en Música Contemporánea en la Universidad Nacional Pedro Henríquez Ureña.\n\nEn 2015 compartió escenario con Andrea Bocelli en Altos de Chavón, bajo la dirección de José Antonio Molina. En 2017 grabó el merengue típico «La pimienta es la que pica» junto a Milly Quezada y Fefita la Grande. También cantó «No me importa no» con Ramón Orlando en una presentación difundida en 2025. En febrero de 2026 volvió a cantar con las voces fundadoras de Grupo 440 durante el concierto de Juan Luis Guerra en el Estadio Cibao.\n\n**Legado**\n\nSu trayectoria une el estudio del piano, el canto coral y la música popular dominicana. Las primeras grabaciones de 4.40, sus interpretaciones de «Para quererte» y «Te ofrezco» y sus discos solistas documentan una voz presente en el merengue, la balada y el bolero durante más de cuatro décadas.",
+        "refs": [
+          {
+            "occurrenceId": "a1b55819-197c-441a-8063-e246aa5e5e9e",
+            "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+            "displayText": "Grupo 440"
+          },
+          {
+            "occurrenceId": "f0e8207b-bca2-4f27-ac1b-ced95e386ef4",
+            "artistId": "0e61046c-e96d-400b-819c-f9de8cbacba1",
+            "displayText": "Julio Alberto Hernández"
+          },
+          {
+            "occurrenceId": "d9738fa3-e59f-46e6-b008-c8813c30d61a",
+            "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+            "displayText": "Jorge Taveras"
+          },
+          {
+            "occurrenceId": "ee3b3dfa-c01e-4da3-93de-e056cb5552c9",
+            "artistId": "ec0ebf45-13ca-41bd-af4c-256e4f226823",
+            "displayText": "Claudio Cohén"
+          },
+          {
+            "occurrenceId": "6e8c6291-0fd5-4a38-a398-bed62238e14e",
+            "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+            "displayText": "Juan Luis Guerra"
+          },
+          {
+            "occurrenceId": "cdc981ed-ea6f-4e85-ac36-ddac464e3e9b",
+            "artistId": "150d1962-c866-43be-8859-168fff7f1686",
+            "displayText": "Mariela Mercado"
+          },
+          {
+            "occurrenceId": "c39effe2-a686-4b84-88f1-2e95472b07b8",
+            "artistId": "25440b12-5934-472d-8a38-f425510ca379",
+            "displayText": "Roger Zayas-Bazán"
+          },
+          {
+            "occurrenceId": "fda00c8f-2c59-4c22-acfc-ac2bcccb1d34",
+            "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+            "displayText": "Grupo 440"
+          },
+          {
+            "occurrenceId": "586fd0af-f7a3-4fab-954e-d684d603e3c5",
+            "artistId": "25a420d1-7a98-4fd2-93c8-38d3ed2d2dc1",
+            "displayText": "José Antonio Rodríguez"
+          },
+          {
+            "occurrenceId": "6f784387-4604-4753-b392-ff8c303fa0a6",
+            "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+            "displayText": "Manuel Tejada"
+          },
+          {
+            "occurrenceId": "318454b3-cafa-4ee7-8c68-c78d49176aa1",
+            "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+            "displayText": "Juan Luis Guerra"
+          },
+          {
+            "occurrenceId": "b99ea11c-a8c8-4ac7-b10b-19e04ec510bc",
+            "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+            "displayText": "Juan Luis Guerra"
+          },
+          {
+            "occurrenceId": "eac24df9-9b4b-4213-8e57-6f3f9e012eae",
+            "artistId": "df68a7c8-c284-4d97-a4fd-b02264396148",
+            "displayText": "José Antonio Molina"
+          },
+          {
+            "occurrenceId": "f5668b02-c535-4890-87a1-2e4cbb917d41",
+            "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+            "displayText": "Manuel Tejada"
+          },
+          {
+            "occurrenceId": "61ff4f6d-a4bc-45f4-a0ef-6414b2c1d40c",
+            "artistId": "df68a7c8-c284-4d97-a4fd-b02264396148",
+            "displayText": "José Antonio Molina"
+          },
+          {
+            "occurrenceId": "e8ef98ee-b112-49bb-9460-6c44bcb4a369",
+            "artistId": "070e7449-814e-4ea6-a009-7a091b7e4878",
+            "displayText": "Milly Quezada"
+          },
+          {
+            "occurrenceId": "a73201d3-6454-45b9-9bbf-e75f5104ef46",
+            "artistId": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+            "displayText": "Fefita la Grande"
+          },
+          {
+            "occurrenceId": "5fe8e0b7-b46f-4dbf-a5ba-fa5e0d098113",
+            "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+            "displayText": "Ramón Orlando"
+          },
+          {
+            "occurrenceId": "868d6c11-b23a-4b13-95cf-ae9fe68622c8",
+            "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+            "displayText": "Grupo 440"
+          },
+          {
+            "occurrenceId": "4704f954-7bf2-439d-ad2c-3f0dd8baa0fd",
+            "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+            "displayText": "Juan Luis Guerra"
+          }
+        ]
+      }
+    }
+  }
+}
+

@@ -1,5 +1,10 @@
 # Role Dictionary
 
+## Current discography authority — 2026-10-15
+
+For discography tasks, [discography.md](discography.md) and [../AGENTS.md](../AGENTS.md) govern scope, research and review gates. The current entity model is [architecture/MUSIC_ONTOLOGY.md](architecture/MUSIC_ONTOLOGY.md); canonical credit identity/scope is [architecture/CREDIT_ROLE_VOCABULARY.md](architecture/CREDIT_ROLE_VOCABULARY.md). Composition authorship uses work_credits irrespective of performer nationality; credited_works/credited_work_credits are legacy portfolio data. Preserve legacy rows and evidence; no automatic migration is authorized. Arrangement scope follows evidence. Self-performance display rules never delete authorship. Refer to these current rules wherever older examples below differ.
+
+
 **Mangulina Valid Roles by Credit Level**
 
 This document is the authoritative reference for all valid role names in the Mangulina database. 
@@ -94,7 +99,7 @@ genre. Use these rather than approximating with `percussion`.
 
 ## Level 2: Work-Level Roles
 
-**Table:** `credited_work_credits`  
+**Current composition relation:** `work_credits`; `credited_work_credits` is legacy portfolio storage. See architecture/CREDIT_ROLE_VOCABULARY.md for canonical role identity and permitted scope.  
 **Purpose:** Credits creators and composers of the underlying musical work (same across all recordings)
 
 | Role | Definition | Example | Notes |

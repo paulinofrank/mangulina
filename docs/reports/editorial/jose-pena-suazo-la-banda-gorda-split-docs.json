@@ -1,0 +1,1490 @@
+{
+  "person_en": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "José Virgilio Peña Suazo — \"El Rey del Mambo\" — is a Dominican singer, trumpeter, composer and bandleader from Cotuí, and the founder and lead voice of "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "b41d4bd2-9303-4834-885e-e7dee35a0287",
+              "displayText": "La Banda Gorda",
+              "occurrenceId": "2687047c-1ea4-4455-825e-b1bc425cf7fd"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", one of the longest-running merengue orchestras of the last three decades. Before he ever sang a note in public, he was already one of merengue's most in-demand writers and arrangers — his songs were hits for "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+              "displayText": "Cuco Valoy",
+              "occurrenceId": "35cdcf8a-9395-46bf-8f3a-97dd4a202082"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+              "displayText": "Sergio Vargas",
+              "occurrenceId": "ad3b711f-8d18-4570-8d49-4e24d061b6ae"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+              "displayText": "Fernando Villalona",
+              "occurrenceId": "06c1fa7f-7076-4a37-82d2-7277a092f551"
+            }
+          },
+          {
+            "type": "text",
+            "text": " and "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "001831dd-3baa-4512-88f5-f420ec7c2619",
+              "displayText": "Pochy y su Cocoband",
+              "occurrenceId": "43df22c3-d4fd-4498-81b1-61bc73dfb798"
+            }
+          },
+          {
+            "type": "text",
+            "text": ". When "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+              "displayText": "Rokabanda",
+              "occurrenceId": "01a9d287-b41e-4643-8f74-fb6d86a31d63"
+            }
+          },
+          {
+            "type": "text",
+            "text": " fired him one December, he decided to sing his own songs. He has not stopped since."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Cotuí and the trumpet",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He grew up in limited circumstances in Cotuí, selling sweets on the street as a boy. He came to music at 17, with maestro Juan Eutimo Jerez, after his older brother Arturo — a trombonist — talked him into joining a company band at Rosario Dominicana, where the promise of a Cuban sandwich with fries and a soda got him studying solfège. He started on the tuba, then took up the trumpet. He studied accounting alongside; if he had not been a musician, he says, he would have been a bad accountant. In 1987 he moved to Santo Domingo and joined the Banda de Música del Cuerpo de Bomberos."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The arranger's years",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He rose to first trumpet in "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+              "displayText": "Cuco Valoy",
+              "occurrenceId": "7d807cb5-4642-4903-8d39-1d18529b70ea"
+            }
+          },
+          {
+            "type": "text",
+            "text": "'s orchestra, where "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+              "displayText": "Ramón Orlando",
+              "occurrenceId": "d05da5b4-1ea2-4514-8823-2cd38167a68f"
+            }
+          },
+          {
+            "type": "text",
+            "text": " gave him his first break as a composer, recording «El Milloncito» for Cuco. He led "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "fdd0ab07-04a4-47d4-9922-07fc0f234081",
+              "displayText": "La Artillería",
+              "occurrenceId": "18b03d6f-407a-4733-84cf-3520a005cc30"
+            }
+          },
+          {
+            "type": "text",
+            "text": " as musical director in 1989 — and wrote «El gato» for them, a song that would later become a cuarteto classic in Argentina in La Mona Jiménez's hands. In 1991 he joined "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "001831dd-3baa-4512-88f5-f420ec7c2619",
+              "displayText": "Pochy y su Cocoband",
+              "occurrenceId": "8a634017-2b97-41ac-83ea-65746c970306"
+            }
+          },
+          {
+            "type": "text",
+            "text": " as trumpeter, composer and arranger («A usted lo botan», «La compota», «Penas de amores»), and in 1993 he moved to "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+              "displayText": "Rokabanda",
+              "occurrenceId": "dcd3cbcf-61b9-4737-8a5a-925348dcb972"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "c73737c2-0106-4a87-8dbe-5f1650d34342",
+              "displayText": "Kinito Méndez",
+              "occurrenceId": "a579c3fa-23be-4905-8797-74b130c0352d"
+            }
+          },
+          {
+            "type": "text",
+            "text": " and "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "b826af79-6316-4fab-ad8f-588ba66e45a1",
+              "displayText": "Bobby Rafael",
+              "occurrenceId": "855e0f30-8919-418d-8304-677b2c012563"
+            }
+          },
+          {
+            "type": "text",
+            "text": "'s group. His songs were recorded by "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+              "displayText": "Fernando Villalona",
+              "occurrenceId": "0b23072d-24a1-43fa-837c-874885695161"
+            }
+          },
+          {
+            "type": "text",
+            "text": " («Hoy Necesito Tenerla»), "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+              "displayText": "Sergio Vargas",
+              "occurrenceId": "e2e8fa8b-606a-4fc9-8fc9-c939d3de12d1"
+            }
+          },
+          {
+            "type": "text",
+            "text": " («La Pastilla») and "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "e8ba0f32-1d96-494d-9861-b1dc3937331e",
+              "displayText": "José Alberto \"El Canario\"",
+              "occurrenceId": "667151be-49ec-45a9-8ea2-ef7929144a93"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", among others. When he wrote for others, he sang the guide vocal in the studio himself — and reasoned that if a singer like "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+              "displayText": "Sergio Vargas",
+              "occurrenceId": "9924e25e-6d5b-41ce-86a1-b9a93a3408c6"
+            }
+          },
+          {
+            "type": "text",
+            "text": " could learn a song from his reference, he could not sing so badly himself."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "«Libre al fin»",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The push to sing came when "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+              "displayText": "Rokabanda",
+              "occurrenceId": "fec9ab85-0906-4da7-8fbb-173ad3e6cdcd"
+            }
+          },
+          {
+            "type": "text",
+            "text": " let him go in a December. The beginnings were hard — musicians left because the band could not yet pay them a living. Then, at a small piano, he wrote the songs of «Libre al fin» in one sitting; released on 19 April 1994 with «Pa' los que sufren», the album caught on completely, and there, he says, he found his sound, free at last of the Coco Band and "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+              "displayText": "Rokabanda",
+              "occurrenceId": "4b01f2bb-c189-4b3e-813d-34062ae3c252"
+            }
+          },
+          {
+            "type": "text",
+            "text": " influences. "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "b41d4bd2-9303-4834-885e-e7dee35a0287",
+              "displayText": "La Banda Gorda",
+              "occurrenceId": "596bad61-c4e5-4f17-8671-e3bc85b69bfd"
+            }
+          },
+          {
+            "type": "text",
+            "text": " was born."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The songwriter's catalogue",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Peña Suazo has written more than five hundred compositions, by his own account. His own hits with "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "b41d4bd2-9303-4834-885e-e7dee35a0287",
+              "displayText": "La Banda Gorda",
+              "occurrenceId": "d3dca60b-0734-4e84-8be5-fd2687f6e209"
+            }
+          },
+          {
+            "type": "text",
+            "text": " — «Pa' los que sufren», «Candela Pura», «Tú muere aquí», «Subido en el palo», «Mi mujer me gobierna» — sit alongside the songs he gave away: «El Milloncito» ("
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+              "displayText": "Cuco Valoy",
+              "occurrenceId": "2a77736f-d3ad-414d-8967-1fe68b3af531"
+            }
+          },
+          {
+            "type": "text",
+            "text": "), «La Pastilla» ("
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+              "displayText": "Sergio Vargas",
+              "occurrenceId": "9893a1d2-a312-4da4-8a9f-3d06de2ece3b"
+            }
+          },
+          {
+            "type": "text",
+            "text": "), «Hoy Necesito Tenerla» ("
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+              "displayText": "Fernando Villalona",
+              "occurrenceId": "02e86d77-faf9-46a5-812c-527a3a2446be"
+            }
+          },
+          {
+            "type": "text",
+            "text": "), «El Cachetero» (Los Sabrosos del Merengue), «Un Chin Chin de Cariño» (Orquesta "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "b181edca-515a-45ad-8fae-8b61195de1cc",
+              "displayText": "La Muralla",
+              "occurrenceId": "c2569f87-78e6-4e43-8a62-03d1fa6429d7"
+            }
+          },
+          {
+            "type": "text",
+            "text": "), and the Coco Band songs. «Yo sé que Dios me tiene a mí lo mío», written during his mother's final illness, won Merengue del Año at the Premios Soberano in 2015. His «Que no se acabe el mambo» reached the soundtrack of Paolo Sorrentino's Oscar-winning «La grande bellezza» (2013) — he only learned of the placement when someone called him with the news. In Argentina, ten or twelve of his songs became cuarteto anthems in the hands of La Mona Jiménez, La Banda XXI, La Barra and La K'onga."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Public service and honours",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "From 2010 to 2020 he served as Viceministro de Cultura — ten years in public office. In December 2021 his «Mi mujer me gobierna» earned the band's first RIAA Gold record; in November 2025 he was inducted into the Galería del Merengue."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Family",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "His wife, Ebelise Fabián Reinoso, died on 2 August 2026. They had three children: Josi, Paola and José. His daughter Ivette Paola Peña designs all of his graphics and handles his bookings."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Legacy",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Peña Suazo is one of the musicians who moved from the brass section to the front of the stage — and one of the few who brought a songwriter's catalogue with him. His arrangements for other orchestras accompany his own hits in the merengue of the nineties, and his songs keep travelling: to a film in Rome, to a cuarteto dance floor in Córdoba, to a new generation that found «Mi mujer me gobierna» on TikTok. He remains optimistic about the future of the genre: society, he says, keeps producing the men it needs."
+          }
+        ]
+      }
+    ]
+  },
+  "person_es": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "José Virgilio Peña Suazo — \"El Rey del Mambo\" — es un cantante, trompetista, compositor y director de orquesta dominicano de Cotuí, fundador y voz principal de "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "b41d4bd2-9303-4834-885e-e7dee35a0287",
+              "displayText": "La Banda Gorda",
+              "occurrenceId": "ab707a29-c558-4bb2-839e-95faf0e7e1ce"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", una de las orquestas de merengue más duraderas de las últimas tres décadas. Antes de cantar una sola nota en público, ya era uno de los compositores y arreglistas más solicitados del merengue — sus canciones fueron éxitos de "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+              "displayText": "Cuco Valoy",
+              "occurrenceId": "e968e467-882c-471a-869c-2ac8a53ee300"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+              "displayText": "Sergio Vargas",
+              "occurrenceId": "3a80ae6f-e9c3-4f34-83a7-9a58db7dc0aa"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+              "displayText": "Fernando Villalona",
+              "occurrenceId": "ffc0b1fa-4ca2-4cb7-8cf0-06d5a93f7cb4"
+            }
+          },
+          {
+            "type": "text",
+            "text": " y "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "001831dd-3baa-4512-88f5-f420ec7c2619",
+              "displayText": "Pochy y su Cocoband",
+              "occurrenceId": "754e9531-7acc-4c2e-8bae-03407c5a37ce"
+            }
+          },
+          {
+            "type": "text",
+            "text": ". Cuando la "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+              "displayText": "Rokabanda",
+              "occurrenceId": "b406e9dd-859b-4e85-8ead-ee4ff4ca6884"
+            }
+          },
+          {
+            "type": "text",
+            "text": " lo despidió un diciembre, decidió cantar sus propias canciones. No ha parado desde entonces."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Cotuí y la trompeta",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Creció en condiciones humildes en Cotuí, vendiendo dulces en la calle de niño. Llegó a la música a los 17 años, con el maestro Juan Eutimo Jerez, después de que su hermano mayor Arturo — trombonista — lo convenciera de entrar a la banda de la empresa Rosario Dominicana, donde la promesa de un sándwich cubano con papas fritas y un refresco lo puso a estudiar solfeo. Empezó con la tuba y luego tomó la trompeta. Estudiaba contabilidad al mismo tiempo; si no hubiera sido músico, dice, habría sido un mal contador. En 1987 se mudó a Santo Domingo y entró en la Banda de Música del Cuerpo de Bomberos."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Los años de arreglista",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Llegó a primera trompeta de la orquesta de "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+              "displayText": "Cuco Valoy",
+              "occurrenceId": "bb75dc5d-ff12-49ab-8768-87476c487c1d"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", donde "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "02f23257-1cf6-4a4c-8df1-1f9aa630a2c3",
+              "displayText": "Ramón Orlando",
+              "occurrenceId": "dcdd9a21-b7cb-43ca-81ae-121ccd56a4c0"
+            }
+          },
+          {
+            "type": "text",
+            "text": " le dio su primera oportunidad como compositor, grabándole «El Milloncito» a Cuco. En 1989 dirigió "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "fdd0ab07-04a4-47d4-9922-07fc0f234081",
+              "displayText": "La Artillería",
+              "occurrenceId": "6b053e03-ddc5-4066-8aec-97ac99e9d567"
+            }
+          },
+          {
+            "type": "text",
+            "text": " como director musical — y le escribió «El gato», un tema que años después se convertiría en un clásico del cuarteto en Argentina en manos de La Mona Jiménez. En 1991 entró como trompetista, compositor y arreglista a "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "001831dd-3baa-4512-88f5-f420ec7c2619",
+              "displayText": "Pochy y su Cocoband",
+              "occurrenceId": "fe9fcd33-a226-4c71-840a-7978d5acae2d"
+            }
+          },
+          {
+            "type": "text",
+            "text": " («A usted lo botan», «La compota», «Penas de amores»), y en 1993 pasó a la "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+              "displayText": "Rokabanda",
+              "occurrenceId": "5bc83daa-b636-421c-8384-2ec6fe548478"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", de "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "c73737c2-0106-4a87-8dbe-5f1650d34342",
+              "displayText": "Kinito Méndez",
+              "occurrenceId": "05dae862-ef85-41f5-8935-bf02ce3d3fa2"
+            }
+          },
+          {
+            "type": "text",
+            "text": " y "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "b826af79-6316-4fab-ad8f-588ba66e45a1",
+              "displayText": "Bobby Rafael",
+              "occurrenceId": "412923dc-fa09-435f-805a-f8140232f28c"
+            }
+          },
+          {
+            "type": "text",
+            "text": ". Sus canciones las grabaron "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+              "displayText": "Fernando Villalona",
+              "occurrenceId": "a8e05f75-70a4-4b32-8f7b-98dab7c84faa"
+            }
+          },
+          {
+            "type": "text",
+            "text": " («Hoy Necesito Tenerla»), "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+              "displayText": "Sergio Vargas",
+              "occurrenceId": "61f43381-cefe-4b62-8ff5-d8a998853fd7"
+            }
+          },
+          {
+            "type": "text",
+            "text": " («La Pastilla») y "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "e8ba0f32-1d96-494d-9861-b1dc3937331e",
+              "displayText": "José Alberto \"El Canario\"",
+              "occurrenceId": "875942f3-aec7-4d4b-87e3-73cd88bcfab0"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", entre otros. Cuando escribía para otros, él mismo cantaba la voz guía en el estudio — y razonaba que si un cantante como "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+              "displayText": "Sergio Vargas",
+              "occurrenceId": "505ab105-7633-4236-8e78-275f025f7c74"
+            }
+          },
+          {
+            "type": "text",
+            "text": " podía aprender una canción con su referencia, él no podía cantar tan mal."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "«Libre al fin»",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "El empujón para cantar llegó cuando la "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+              "displayText": "Rokabanda",
+              "occurrenceId": "884f2d74-822c-431b-8800-3a632208a75c"
+            }
+          },
+          {
+            "type": "text",
+            "text": " prescindió de él en un diciembre. Los comienzos fueron duros, y se le fueron músicos porque la banda todavía no les daba para vivir. Después, en un piano pequeño, escribió de un tirón las canciones de «Libre al fin», lanzado el 19 de abril de 1994 con «Pa' los que sufren»; el disco pegó completo, y ahí, dice, encontró su sonido, libre ya de la influencia de la Coco Band y la "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+              "displayText": "Rokabanda",
+              "occurrenceId": "70401c99-0b5d-44ca-8260-b5c332ac277b"
+            }
+          },
+          {
+            "type": "text",
+            "text": ". Había nacido "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "b41d4bd2-9303-4834-885e-e7dee35a0287",
+              "displayText": "La Banda Gorda",
+              "occurrenceId": "f54719f3-92b0-4ea6-8ab5-315d3439f66e"
+            }
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "El catálogo del compositor",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Peña Suazo ha escrito más de quinientas composiciones, según su propia cuenta. Sus éxitos con "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "b41d4bd2-9303-4834-885e-e7dee35a0287",
+              "displayText": "La Banda Gorda",
+              "occurrenceId": "1e0307e9-cc5a-4566-8d17-d30beee40969"
+            }
+          },
+          {
+            "type": "text",
+            "text": " — «Pa' los que sufren», «Candela Pura», «Tú muere aquí», «Subido en el palo», «Mi mujer me gobierna» — conviven con las canciones que regaló: «El Milloncito» ("
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+              "displayText": "Cuco Valoy",
+              "occurrenceId": "09a85298-1a89-48b1-85ad-ab6af01c73de"
+            }
+          },
+          {
+            "type": "text",
+            "text": "), «La Pastilla» ("
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+              "displayText": "Sergio Vargas",
+              "occurrenceId": "a669df1f-87fc-417e-86a7-7e8c8e530d2a"
+            }
+          },
+          {
+            "type": "text",
+            "text": "), «Hoy Necesito Tenerla» ("
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+              "displayText": "Fernando Villalona",
+              "occurrenceId": "ae5c571f-104b-4566-8b2d-97b755461b94"
+            }
+          },
+          {
+            "type": "text",
+            "text": "), «El Cachetero» (Los Sabrosos del Merengue), «Un Chin Chin de Cariño» (Orquesta "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "b181edca-515a-45ad-8fae-8b61195de1cc",
+              "displayText": "La Muralla",
+              "occurrenceId": "339f276b-d887-4cd9-8176-9a73719ca0d0"
+            }
+          },
+          {
+            "type": "text",
+            "text": ") y los temas de la Coco Band. «Yo sé que Dios me tiene a mí lo mío», escrita durante la enfermedad final de su madre, ganó Merengue del Año en los Premios Soberano de 2015. Su «Que no se acabe el mambo» llegó a la banda sonora de «La grande bellezza» (2013), de Paolo Sorrentino, ganadora del Óscar — se enteró del uso cuando alguien lo llamó con la noticia. En Argentina, diez o doce de sus canciones se convirtieron en himnos del cuarteto en manos de La Mona Jiménez, La Banda XXI, La Barra y La K'onga."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Servicio público y honores",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "De 2010 a 2020 fue Viceministro de Cultura — diez años en un cargo público. En diciembre de 2021 su «Mi mujer me gobierna» le dio a la banda su primer disco de oro de la RIAA; en noviembre de 2025 fue exaltado a la Galería del Merengue."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Familia",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Su esposa, Ebelise Fabián Reinoso, falleció el 2 de agosto de 2026. Tuvieron tres hijos: Josi, Paola y José. Su hija Ivette Paola Peña diseña toda su gráfica y maneja sus contrataciones."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Legado",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Peña Suazo es de los músicos que pasaron de la sección de metales al frente del escenario — y de los pocos que llegaron con un catálogo de compositor bajo el brazo. Sus arreglos para otras orquestas acompañan a sus propios éxitos en el merengue de los noventa, y sus canciones siguen viajando: a una película en Roma, a una pista de cuarteto en Córdoba, a una generación nueva que encontró «Mi mujer me gobierna» en TikTok. Sigue optimista sobre el futuro del género: la sociedad, dice, va pariendo los hombres que necesita."
+          }
+        ]
+      }
+    ]
+  },
+  "group_en": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "La Banda Gorda is a Dominican merengue orchestra founded in 1994 by "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "770d5443-ff68-46a3-ba3e-43ac3f1cd7c1",
+              "displayText": "José Peña Suazo",
+              "occurrenceId": "adfc0f84-371d-4b5d-8551-ee6b65d7d824"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", its lead singer, composer, arranger and general director — and, for thirty-two years, its only constant member. It is one of the longest-running merengue orchestras of the last three decades: twenty-one studio albums, a Soberano for Merengue del Año, a RIAA Gold record, and a catalogue that travelled from Cotuí to a Sorrentino film and to the cuarteto dance floors of Argentina."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "«Libre al fin»",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "770d5443-ff68-46a3-ba3e-43ac3f1cd7c1",
+              "displayText": "Peña Suazo",
+              "occurrenceId": "74875f1b-b906-4cea-8fd7-73ba9403b8d5"
+            }
+          },
+          {
+            "type": "text",
+            "text": " came to the group as one of merengue's most in-demand writers and arrangers — first trumpet in "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+              "displayText": "Cuco Valoy",
+              "occurrenceId": "e083b68f-0f68-435f-87ae-84b4ab5a87d9"
+            }
+          },
+          {
+            "type": "text",
+            "text": "'s orchestra, musical director of "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "fdd0ab07-04a4-47d4-9922-07fc0f234081",
+              "displayText": "La Artillería",
+              "occurrenceId": "a2940b27-38a1-4961-8f0e-53bfe09840ff"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", trumpeter and songwriter for "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "001831dd-3baa-4512-88f5-f420ec7c2619",
+              "displayText": "Pochy y su Cocoband",
+              "occurrenceId": "3be71df0-96d2-4b87-845b-e9a639e23c57"
+            }
+          },
+          {
+            "type": "text",
+            "text": " and "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+              "displayText": "Rokabanda",
+              "occurrenceId": "045e9211-dbe2-4efd-8d03-3a54777d88aa"
+            }
+          },
+          {
+            "type": "text",
+            "text": ". When "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+              "displayText": "Rokabanda",
+              "occurrenceId": "eb6036b6-603f-4913-8816-404ff7a46651"
+            }
+          },
+          {
+            "type": "text",
+            "text": " fired him one December, he decided to sing his own songs. At a small piano he wrote the songs of «Libre al fin» in one sitting; released on 19 April 1994 with «Pa' los que sufren», the album caught on completely, and there, he says, he found his sound. The beginnings were hard — musicians left because the band could not yet pay them a living — but the records came almost one a year: «Durísimo... Candela Pura» (1995), the breakthrough; «Tú muere aquí» (1996); «Calienta esto» (1998); «Aquí, pero allá» (1999); «Esta noche» (2000); «Melao» (2002); «Puro mambo» (2004). The pianist and co-producer Manole Pérez was the group's musical director for four of those early years, tracing its musical line alongside "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "770d5443-ff68-46a3-ba3e-43ac3f1cd7c1",
+              "displayText": "Peña Suazo",
+              "occurrenceId": "613742f4-80ab-4ad5-80dc-2ca2f311afb9"
+            }
+          },
+          {
+            "type": "text",
+            "text": " before leaving to found La Banda del Truco."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The hits",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The group's merengue takes from mambo and from street sayings. «Subido en el palo», written for the envious — recorded five times before he was satisfied — became the official campaign song of Leonel Fernández's 2008 re-election and has been used by several parties since. «Yo sé que Dios me tiene a mí lo mío», written during his mother's final illness, won Merengue del Año at the Premios Soberano in 2015. «Mi mujer me gobierna» (2016) went viral on TikTok and earned the band's first RIAA Gold record in December 2021. «Que no se acabe el mambo», from «Puro mambo» (2004), reached the soundtrack of Paolo Sorrentino's Oscar-winning «La grande bellezza» (2013)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Argentina and the cuarteto",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The group's songs found a second life in Argentina, where ten or twelve of "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "770d5443-ff68-46a3-ba3e-43ac3f1cd7c1",
+              "displayText": "Peña Suazo",
+              "occurrenceId": "d0f3f897-f0cf-4a0c-8ea6-2250b9bbf1f2"
+            }
+          },
+          {
+            "type": "text",
+            "text": "'s compositions became cuarteto anthems in the hands of La Mona Jiménez, La Banda XXI, La Barra and La K'onga — it began with «El gato», written for "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "fdd0ab07-04a4-47d4-9922-07fc0f234081",
+              "displayText": "La Artillería",
+              "occurrenceId": "a2e7e9c3-bfb5-4a56-8ebd-889045015588"
+            }
+          },
+          {
+            "type": "text",
+            "text": ". In November 2024 the band played two concerts in Córdoba and Río Cuarto, to more than 1,900 people; La Voz de Córdoba called the visit \"histórica\"."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Thirty years and counting",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In September 2022 the band shared a bill with "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+              "displayText": "Los Hermanos Rosario",
+              "occurrenceId": "68fb1575-091f-415e-8af8-778cd0f2b5c7"
+            }
+          },
+          {
+            "type": "text",
+            "text": " for the first time; in February 2024 it celebrated «30 años, mi historia musical» at the Hard Rock Café in Santo Domingo. The nineteenth production, «La No. 19» (2022), gathered fifteen songs written during the Covid-19 lockdown. In November 2025 "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "770d5443-ff68-46a3-ba3e-43ac3f1cd7c1",
+              "displayText": "Peña Suazo",
+              "occurrenceId": "e8368198-63dc-4c84-8adf-972d3de8f190"
+            }
+          },
+          {
+            "type": "text",
+            "text": " was inducted into the Galería del Merengue, and the band released its latest album, «La Química Perfecta». It remains active, led by its founder."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Legacy",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "La Banda Gorda is the sound of a songwriter who became a singer: a brass player's orchestra, built on arrangements and on songs written to be danced to and quoted in the street. Thirty-two years in, it is still the band that plays «Pa' los que sufren» because the audience will not let it leave without it."
+          }
+        ]
+      }
+    ]
+  },
+  "group_es": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "La Banda Gorda es una orquesta de merengue dominicana fundada en 1994 por "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "770d5443-ff68-46a3-ba3e-43ac3f1cd7c1",
+              "displayText": "José Peña Suazo",
+              "occurrenceId": "d1a03c07-107f-4fb7-8d5d-50260d9757d0"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", su cantante principal, compositor, arreglista y director general — y, durante treinta y dos años, su único miembro constante. Es una de las orquestas de merengue más duraderas de las últimas tres décadas: veintiún álbumes de estudio, un Soberano al Merengue del Año, un disco de oro de la RIAA y un catálogo que viajó de Cotuí a una película de Sorrentino y a las pistas de cuarteto de Argentina."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "«Libre al fin»",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "770d5443-ff68-46a3-ba3e-43ac3f1cd7c1",
+              "displayText": "Peña Suazo",
+              "occurrenceId": "ec9aed41-b81c-4624-8b4d-2c23200adc0a"
+            }
+          },
+          {
+            "type": "text",
+            "text": " llegó al grupo como uno de los compositores y arreglistas más solicitados del merengue — primera trompeta de la orquesta de "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "c11c2dda-ffa1-4f09-9d24-00dc4473bc8d",
+              "displayText": "Cuco Valoy",
+              "occurrenceId": "8531f158-89a4-4428-8d40-9b9d2fb59f64"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", director musical de "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "fdd0ab07-04a4-47d4-9922-07fc0f234081",
+              "displayText": "La Artillería",
+              "occurrenceId": "1b405bd1-0b0f-4d9d-8c75-e9c093dbeeec"
+            }
+          },
+          {
+            "type": "text",
+            "text": ", trompetista y compositor de "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "001831dd-3baa-4512-88f5-f420ec7c2619",
+              "displayText": "Pochy y su Cocoband",
+              "occurrenceId": "ccea4e63-f470-4bd4-8749-cb3df3190406"
+            }
+          },
+          {
+            "type": "text",
+            "text": " y de la "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+              "displayText": "Rokabanda",
+              "occurrenceId": "7156df66-f9f7-4ec3-8c1e-b577618d69fe"
+            }
+          },
+          {
+            "type": "text",
+            "text": ". Cuando la "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "86172ade-a3b0-47e3-803b-f913afe8072c",
+              "displayText": "Rokabanda",
+              "occurrenceId": "076c5de1-8e34-48ae-867a-7f4629c0a132"
+            }
+          },
+          {
+            "type": "text",
+            "text": " lo despidió un diciembre, decidió cantar sus propias canciones. En un piano pequeño escribió de un tirón las canciones de «Libre al fin», lanzado el 19 de abril de 1994 con «Pa' los que sufren»; el disco pegó completo, y ahí, dice, encontró su sonido. Los comienzos fueron duros, y se le fueron músicos porque la banda todavía no les daba para vivir — pero los discos siguieron casi uno por año: «Durísimo... Candela Pura» (1995), el despegue; «Tú muere aquí» (1996); «Calienta esto» (1998); «Aquí, pero allá» (1999); «Esta noche» (2000); «Melao» (2002); «Puro mambo» (2004). El pianista y coproductor Manole Pérez fue director musical del grupo durante cuatro de esos primeros años, trazando su línea musical junto a "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "770d5443-ff68-46a3-ba3e-43ac3f1cd7c1",
+              "displayText": "Peña Suazo",
+              "occurrenceId": "2f3a7e42-6cfe-46f1-8cbb-0f6e968bd809"
+            }
+          },
+          {
+            "type": "text",
+            "text": " antes de irse a fundar La Banda del Truco."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Los éxitos",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "El merengue del grupo toma del mambo y de los dichos de la calle. «Subido en el palo», escrita para los envidiosos — grabada cinco veces antes de quedar satisfecho — fue la canción oficial de campaña de la reelección de Leonel Fernández en 2008 y la han usado varios partidos desde entonces. «Yo sé que Dios me tiene a mí lo mío», escrita durante la enfermedad final de su madre, ganó Merengue del Año en los Premios Soberano de 2015. «Mi mujer me gobierna» (2016) se viralizó en TikTok y le dio a la banda su primer disco de oro de la RIAA en diciembre de 2021. «Que no se acabe el mambo», de «Puro mambo» (2004), llegó a la banda sonora de «La grande bellezza» (2013), de Paolo Sorrentino, ganadora del Óscar."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Argentina y el cuarteto",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Las canciones del grupo encontraron una segunda vida en Argentina, donde diez o doce composiciones de "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "770d5443-ff68-46a3-ba3e-43ac3f1cd7c1",
+              "displayText": "Peña Suazo",
+              "occurrenceId": "7709a732-ba01-4b67-8547-124a8572a7a5"
+            }
+          },
+          {
+            "type": "text",
+            "text": " se convirtieron en himnos del cuarteto en manos de La Mona Jiménez, La Banda XXI, La Barra y La K'onga — todo empezó con «El gato», escrita para "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "fdd0ab07-04a4-47d4-9922-07fc0f234081",
+              "displayText": "La Artillería",
+              "occurrenceId": "a597260d-f4d6-4818-8f45-b95e3f71c8cc"
+            }
+          },
+          {
+            "type": "text",
+            "text": ". En noviembre de 2024 la banda tocó dos conciertos en Córdoba y Río Cuarto, ante más de 1,900 personas; La Voz de Córdoba llamó la visita \"histórica\"."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Treinta años y contando",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "En septiembre de 2022 la banda compartió cartel con "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "3422883e-7048-48af-bb03-c68c8c557ee4",
+              "displayText": "Los Hermanos Rosario",
+              "occurrenceId": "db80219b-63a4-44b5-8896-7b128ed45a14"
+            }
+          },
+          {
+            "type": "text",
+            "text": " por primera vez; en febrero de 2024 celebró «30 años, mi historia musical» en el Hard Rock Café de Santo Domingo. La producción número diecinueve, «La No. 19» (2022), reunió quince canciones escritas durante el confinamiento por el Covid-19. En noviembre de 2025 "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "770d5443-ff68-46a3-ba3e-43ac3f1cd7c1",
+              "displayText": "Peña Suazo",
+              "occurrenceId": "d562b97b-0c99-4875-812b-3aae5de5b706"
+            }
+          },
+          {
+            "type": "text",
+            "text": " fue exaltado a la Galería del Merengue, y la banda lanzó su álbum más reciente, «La Química Perfecta». Sigue activa, dirigida por su fundador."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Legado",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "La Banda Gorda es el sonido de un compositor que se hizo cantante: una orquesta de trompetista, construida sobre arreglos y sobre canciones hechas para bailar y para citar en la calle. Treinta y dos años después, sigue siendo la banda que toca «Pa' los que sufren» porque el público no la deja irse sin ella."
+          }
+        ]
+      }
+    ]
+  }
+}

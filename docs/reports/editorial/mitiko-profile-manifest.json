@@ -1,0 +1,485 @@
+{
+  "date": "2026-10-28",
+  "authorization": "Editor explicitly requested creation of Mítiko ficha. Create one draft artist and published, validated Spanish and English biographies. No artist publication, discography import, shared-record or other-artist change.",
+  "before": null,
+  "after": {
+    "id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+    "name": "Mítiko",
+    "stage_name": "Mítiko",
+    "sort_name": "Mítiko",
+    "slug": "mitiko",
+    "first_name": "José",
+    "middle_name": "Julio",
+    "last_name": "Bello",
+    "second_last_name": "Castillo",
+    "aliases": [
+      "Mitiko",
+      "Mawon Mitiko",
+      "Mitiko Mawon",
+      "José Julio Bello Castillo"
+    ],
+    "type": "solo_artist",
+    "primary_role": "musician",
+    "occupations": [
+      "guitarist",
+      "composer",
+      "lyricist",
+      "producer"
+    ],
+    "instruments": [
+      "guitar"
+    ],
+    "primary_genre": "fusion",
+    "genres": [
+      "bachata"
+    ],
+    "gender": "male",
+    "artist_tags": [
+      "secular"
+    ],
+    "status": "draft",
+    "birth_year": 1987,
+    "date_of_birth": null,
+    "birth_place": "Santo Domingo",
+    "province": null,
+    "facebook": null,
+    "instagram": null,
+    "youtube": null,
+    "spotify": null,
+    "website": null,
+    "disambiguation": "Dominican guitarist and composer with La Gran Mawon and Los Sufridos"
+  },
+  "documents": [
+    {
+      "locale": "es",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Mítiko, nombre artístico de José Julio Bello Castillo, es un guitarrista, compositor y productor dominicano nacido en Santo Domingo en 1987. Es uno de los integrantes originales de «La Gran Mawon», colectivo de fusión afrocaribeña, y cofundó "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "occurrenceId": "a968abf3-6bb6-45df-aa9e-41aac92c2312",
+                  "displayText": "Los Sufridos"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", proyecto de bachata urbana. Su trabajo une la interpretación y creación musical con la investigación y difusión de expresiones afrodominicanas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La Gran Mawon",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Después de iniciarse en el cine, se acercó a la música afroantillana. En 2011 participó en las sesiones nocturnas de improvisación en plazas de la Zona Colonial de Santo Domingo de las que surgió «La Gran Mawon». La agrupación lo identificó como guitarrista y compositor; la publicación dominicana «Una isla es un universo» lo incluyó, junto a Gato y Zahir, entre sus integrantes originales estables y destacó su labor como compositor y letrista, especialmente en «La Culebra»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "El grupo mezcló palo, gagá y otros ritmos afrocaribeños con reggae y rock. Grabó «Fuego Petró» como primer sencillo en 2013 y publicó un EP homónimo de siete canciones en 2016. «Melancolia Tropical» apareció como sencillo en 2019, seguido del álbum «Radio Katharsis» en 2023. En entrevistas, Mítiko ha descrito el proyecto como música afrocaribeña centrada en las tradiciones negras."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Los Sufridos",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2023 fundó "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "occurrenceId": "d65e40be-1e1f-4f5e-934a-3219a90d15d0",
+                  "displayText": "Los Sufridos"
+                }
+              },
+              {
+                "type": "text",
+                "text": " con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "occurrenceId": "45b5cf9a-4d04-4712-979c-23dde8b101ad",
+                  "displayText": "Cromo X"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "occurrenceId": "a7e1690e-4be8-42ac-8bb0-9fa772f86a85",
+                  "displayText": "T.Y.S"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". El colectivo llevó su experiencia como guitarrista y compositor a una propuesta de bachata urbana. La prensa dominicana identificó a José Julio Bello entre los autores de «Lleno Contigo», la colaboración del grupo con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "occurrenceId": "3235a50a-2105-482a-8241-85d9a2bed1cb",
+                  "displayText": "Antony Santos"
+                }
+              },
+              {
+                "type": "text",
+                "text": " publicada en 2024. Ese año también figuró entre los productores acreditados de «Chivi» y «Duro De Verdad pt.2»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Otros trabajos y divulgación",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su actividad fuera de esas agrupaciones incluye la música original del documental «Mal de caña» (2020), compartida con Marcos Arias. Bajo su nombre completo también aparece como productor de «Por Ahí», grabación de Billete MC publicada en 2023 por «AFRK Music». En febrero de 2024 participó con miembros de «La Gran Mawon» en un taller de música afrodominicana en la Universidad Rutgers. El Centro Cultural de España en Santo Domingo lo presenta además como investigador sociocultural."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La trayectoria de Mítiko enlaza la guitarra, la composición y la producción con la exploración de tradiciones musicales afrodominicanas. Su participación en «La Gran Mawon» y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "occurrenceId": "5b916e82-652d-406f-b1bf-29c4b1582d3c",
+                  "displayText": "Los Sufridos"
+                }
+              },
+              {
+                "type": "text",
+                "text": " documenta dos maneras de llevar esas experiencias a repertorios contemporáneos, mientras sus talleres y trabajos audiovisuales amplían su práctica fuera del escenario."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Mítiko, the professional name of José Julio Bello Castillo, is a Dominican guitarist, composer and producer born in Santo Domingo in 1987. An original member of the Afro-Caribbean fusion collective «La Gran Mawon», he later co-founded the urban bachata group "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "occurrenceId": "a82a4a9b-a87c-4d86-83e2-f66a1545952a",
+                  "displayText": "Los Sufridos"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". His work as a musician is accompanied by research and public teaching about Afro-Dominican traditions."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La Gran Mawon",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His early work included film before he began exploring Afro-Antillean music. In 2011 he took part in night-time jam sessions in Santo Domingo's Colonial Zone that developed into «La Gran Mawon». In a group interview, the collective identified him as its guitarist and a composer. The Dominican publication «Una isla es un universo» named him, Gato and Zahir among its continuing original members and highlighted his writing, particularly on «La Culebra»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The band's music brings together palo, gagá and other Afro-Caribbean rhythms with reggae and rock. Its first single, «Fuego Petró», was recorded in 2013, and a seven-track self-titled EP followed in 2016. The group released «Melancolia Tropical» as a single in 2019 and the album «Radio Katharsis» in 2023. Discussing the band's direction, Mítiko has described its music as Afro-Caribbean and rooted in Black musical traditions."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Los Sufridos",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2023 he formed "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "occurrenceId": "0726113c-31ef-4d20-a05f-ccc8df3f0487",
+                  "displayText": "Los Sufridos"
+                }
+              },
+              {
+                "type": "text",
+                "text": " with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "350e5535-5229-4d49-903e-a5de047e7723",
+                  "occurrenceId": "f54fe2e6-5c90-4be6-82a5-364b02921b7a",
+                  "displayText": "Cromo X"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+                  "occurrenceId": "10f7a6f5-f8a1-495c-9e06-f5f2603b414a",
+                  "displayText": "T.Y.S"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", bringing his guitar and songwriting experience to an urban bachata project. Dominican reporting identified José Julio Bello among the writers of «Lleno Contigo», the group's 2024 collaboration with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+                  "occurrenceId": "ed7819b6-9642-4a49-8cb7-f91298c933a5",
+                  "displayText": "Antony Santos"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Production credits also name Mítiko on the 2024 singles «Chivi» and «Duro De Verdad pt.2»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Other work and teaching",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Outside the two groups, he shared the original music credit with Marcos Arias on the 2020 documentary «Mal de caña». A 2023 release by Billete MC, «Por Ahí», credits José Julio Bello Castillo as producer under the «AFRK Music» label. In February 2024 he joined other «La Gran Mawon» members for an Afro-Dominican music workshop at Rutgers University. The Centro Cultural de España in Santo Domingo also describes him as a sociocultural researcher."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Mítiko's work connects guitar performance, composition and production with the study of Afro-Dominican music. His roles in «La Gran Mawon» and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+                  "occurrenceId": "33f4e2e8-1bd9-4d84-aecc-f88b03d5e5d4",
+                  "displayText": "Los Sufridos"
+                }
+              },
+              {
+                "type": "text",
+                "text": " place that experience in distinct contemporary projects, while his film music and teaching extend it beyond recordings and concerts."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reference_targets": [
+    {
+      "id": "28a3745e-90d6-45cd-b8bd-798028f8deb8",
+      "name": "Antony Santos",
+      "slug": "antony-santos",
+      "status": "published"
+    },
+    {
+      "id": "350e5535-5229-4d49-903e-a5de047e7723",
+      "name": "Cromo X",
+      "slug": "cromo-x",
+      "status": "published"
+    },
+    {
+      "id": "3d4e3400-8661-46f7-ba48-54076a5d5087",
+      "name": "T.Y.S",
+      "slug": "t-y-s",
+      "status": "published"
+    },
+    {
+      "id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+      "name": "Los Sufridos",
+      "slug": "los-sufridos",
+      "status": "published"
+    }
+  ],
+  "evidence_report": "mitiko-research-2026-10-28.md",
+  "field_evidence": "Field-level source decisions and unresolved data are in the evidence report.",
+  "backward_reference_audit": {
+    "pending_owner_id": "b000b7d5-23f1-42a2-b089-f522a29a5d20",
+    "pending_document_ids": [
+      "b721d349-ea2e-4f18-9652-e3b5148073d5",
+      "4cf3dbc5-912a-4507-8f22-40b43cff3552"
+    ],
+    "finding": "Two plain-text Mítiko mentions per published Los Sufridos biography; no changes authorized to those documents or safe link to a draft target."
+  },
+  "unresolved": [
+    "Only birth year and city are sourced; no month/day or province selected.",
+    "No current individual social handle or solo Spotify artist ID confirmed.",
+    "No licensed individual portrait supplied.",
+    "No discography or per-recording credit rows imported."
+  ],
+  "exclusions": [
+    "Artist publication",
+    "Other artist biography changes",
+    "Artist relationship rows",
+    "Discography and music credit imports",
+    "Image upload",
+    "Deployment or security changes",
+    "Public draft URL request"
+  ]
+}

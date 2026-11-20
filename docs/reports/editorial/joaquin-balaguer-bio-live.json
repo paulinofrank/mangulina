@@ -1,0 +1,32 @@
+{
+  "refresh": {
+    "status": 200,
+    "body": {
+      "ok": true,
+      "revalidated": {
+        "artists": 1,
+        "songs": 0,
+        "releases": 0,
+        "allArtists": false
+      }
+    }
+  },
+  "pages": [
+    {
+      "path": "/es/artists/joaquin-balaguer",
+      "status": 200,
+      "new_bio": true,
+      "old_claim_absent": true,
+      "pedro_reference": true,
+      "lope_reference": true
+    },
+    {
+      "path": "/en/artists/joaquin-balaguer",
+      "status": 200,
+      "new_bio": true,
+      "old_claim_absent": true,
+      "pedro_reference": true,
+      "lope_reference": true
+    }
+  ]
+}

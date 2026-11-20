@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-17",
+  "artist": "Michan Leonardo",
+  "before": null,
+  "after": {
+    "name": "Michan Leonardo",
+    "sort_name": "Michan Leonardo",
+    "slug": "michan-leonardo",
+    "stage_name": "Michan Leonardo",
+    "aliases": [
+      "Michán Leonardo"
+    ],
+    "type": "solo_artist",
+    "status": "draft",
+    "primary_role": "singer",
+    "occupations": [
+      "composer"
+    ],
+    "instruments": [
+      "voice"
+    ],
+    "gender": "male",
+    "primary_genre": "bachata",
+    "genres": [
+      "bachata"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "spotify": "6J6FctMx7Frn8AJoaT6em8",
+    "birth_year": null,
+    "date_of_birth": null,
+    "birth_place": null,
+    "province": null,
+    "facebook": null,
+    "instagram": null,
+    "youtube": null
+  },
+  "biographies": {
+    "es": [
+      [
+        "",
+        "Michan Leonardo es un cantante de bachata vinculado al circuito discográfico dominicano de mediados de la década de 2000. Su trayectoria documentada comprende el álbum «Adiós Good Bye» y la promoción radial de «Llámame» y «No Puedo Vivir Sin Ti». Sus interpretaciones de «Llámame» y «Sin ti la vida se me va» permanecen disponibles en recopilaciones digitales."
+      ],
+      [
+        "Promoción en 2006",
+        "El 13 de noviembre de 2006, Diario Libre informó que preparaba la difusión de «No Puedo Vivir Sin Ti», de Robert Félix, después de promover «Llámame». Su representante, Rafael Alcántara, presentó el cambio de sencillo como continuación del trabajo radial del cantante."
+      ],
+      [
+        "El álbum «Adiós Good Bye»",
+        "La misma reseña documentó un disco de diez bachatas para «Necho Records», grabado en «Estudios Emcas», en Santo Domingo, con arreglos de [[Mártires de León]]. Según su representante, el repertorio incluía composiciones de [[Frantoni Santana]], Miguel Braho, Félix Veloz y el propio Michan. También mencionó «Otro Ocupa Mi Lugar» y «Sin ti la vida se me va» entre los cortes difundidos."
+      ],
+      [
+        "Circulación en recopilaciones",
+        "Spotify y Apple Music identifican «Llámame» y «Sin Ti la Vida Se Me Va» dentro de «Bachatas Pal' Pueblo», con fecha de edición de 2007. Spotify también muestra participaciones en «Bachata Pal Pueblo» y «Bachata Pal Pueblo Vol 2», fechadas en 2015. Son apariciones del repertorio en recopilaciones; esas fechas no establecen cuándo se grabaron originalmente las canciones."
+      ],
+      [
+        "Legado",
+        "El registro conservado permite situar a Michan Leonardo entre las voces que buscaron espacio en la bachata de los años 2000. La noticia contemporánea y las ediciones digitales preservan una parte de su trabajo, aunque no bastan para reconstruir su vida personal ni establecer su actividad posterior."
+      ]
+    ],
+    "en": [
+      [
+        "",
+        "Michan Leonardo is a bachata singer associated with the Dominican recording scene of the mid-2000s. His documented work includes «Adiós Good Bye» and the radio promotion of «Llámame» and «No Puedo Vivir Sin Ti». His performances of «Llámame» and «Sin ti la vida se me va» remain available on digital compilations."
+      ],
+      [
+        "Radio promotion in 2006",
+        "On November 13, 2006, Diario Libre reported plans to promote «No Puedo Vivir Sin Ti», written by Robert Félix, after «Llámame». His representative, Rafael Alcántara, described the change of single as a continuation of the singer’s radio campaign."
+      ],
+      [
+        "The album «Adiós Good Bye»",
+        "The report documented a ten-song bachata album for «Necho Records», recorded at «Estudios Emcas» in Santo Domingo and arranged by [[Mártires de León]]. According to Alcántara, the repertoire included compositions by [[Frantoni Santana]], Miguel Braho, Félix Veloz and Michan himself. It also named «Otro Ocupa Mi Lugar» and «Sin ti la vida se me va» among the promoted tracks."
+      ],
+      [
+        "Compilation appearances",
+        "Spotify and Apple Music list «Llámame» and «Sin Ti la Vida Se Me Va» on «Bachatas Pal' Pueblo», with an edition date of 2007. Spotify also shows appearances on «Bachata Pal Pueblo» and «Bachata Pal Pueblo Vol 2», dated 2015. These are compilation appearances, and their platform dates do not establish the original recording dates."
+      ],
+      [
+        "Legacy",
+        "The surviving record places Michan Leonardo among the singers seeking an audience in 2000s bachata. Contemporary reporting and digital editions preserve part of his work, while leaving his personal history and later performing activity unresolved."
+      ]
+    ]
+  },
+  "references": {
+    "Mártires de León": "1db77ddd-1046-4d95-b675-65da60234ef0",
+    "Frantoni Santana": "efe31bc6-9074-49b2-ae8e-2844242dd8e1"
+  },
+  "biography_status": "published",
+  "sources": {
+    "user_file": "C:/Users/fvpg/OneDrive/Downloads/Michán Leonardo — Bio & Life Sheet.html",
+    "press": "https://www.diariolibre.com/revista/michan-leonardo-busca-abrirse-paso-MIDL115768",
+    "spotify": "https://open.spotify.com/artist/6J6FctMx7Frn8AJoaT6em8",
+    "apple": "https://music.apple.com/us/artist/michan-leonardo/259334563"
+  },
+  "limitations": [
+    "No official Facebook, Instagram or YouTube account established; birthday-profile search unavailable without verified profile.",
+    "Birth date, birthplace, province and legal name unknown.",
+    "Use unaccented name matching newspaper/Spotify/Apple; preserve supplied accented variant as alias.",
+    "No death/inactivity evidence; reject 'outlived him' and career peak 2005-2007 assertions in supplied file.",
+    "November 2006 article proves album available by then, not exact release year/day or debut year.",
+    "Composer occupation based on representative's album-level attribution; no work credits imported.",
+    "Frantoni Santana is draft; reference expected to generate unpublished-target warning. No other artist changes authorized.",
+    "No image upload; no artist publication or discography import."
+  ]
+}

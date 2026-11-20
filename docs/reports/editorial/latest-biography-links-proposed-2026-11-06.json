@@ -1,0 +1,980 @@
+[
+  {
+    "id": "fc900b78-0fb7-487a-b11d-72167f191956",
+    "owner": "Freisis Frías",
+    "locale": "en",
+    "expected_revision": 1,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Freisis Frías, the stage name of Freisy Efraín Frías Reyes (born in Santo Domingo on 15 February 1990), is a Dominican Christian singer and songwriter. He was the lead vocalist of «ContraCultura» and has since developed his own worship repertoire through live recordings and collaborations in the Christian music scene.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Early years and formation",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "He grew up connected to the Nueva Jerusalén church, where he served as a musician and took part in youth and evangelism work. His early recordings include «El Huerto» and «Ángeles». His congregational experience preceded his recorded work and the pastoral ministry he began in 2021.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "ContraCultura",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Frías was a songwriter and lead singer with «ContraCultura». In 2019 the group released «No hay temor», a song offering encouragement amid depression and loneliness; Dayner Civil co-wrote its lyrics and arranged the recording. The group had also promoted «El Sacrificio Soy Yo» and «Fuego», the latter featuring ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "a2409546-a23b-45ad-bc01-77eda1e46eb9",
+                "displayText": "Chanel Novas",
+                "occurrenceId": "e4f2c2a4-9525-4b1e-96e1-ad40e422e7fe"
+              }
+            },
+            {
+              "type": "text",
+              "text": ", and received an «El Galardón» award as a breakthrough group. Emerging from the «Somos Adoradores» ministry, it accompanied Aline Barros, Danny Berrios and "
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "0bb19f71-3458-41c8-9de5-eea527d85d26",
+                "displayText": "Rocío Crooke",
+                "occurrenceId": "cb155def-5776-4bf4-99f7-20ed6416a12a"
+              }
+            },
+            {
+              "type": "text",
+              "text": " in live performances during 2019."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Solo recordings and collaborations",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "His official YouTube channel preserves a video for «Alabadle» that predates the more recent releases in his digital catalogue. In 2023 he appeared on «No Me Postraré» with ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "a2409546-a23b-45ad-bc01-77eda1e46eb9",
+                "displayText": "Chanel Novas",
+                "occurrenceId": "2efb1324-033e-4678-ba7c-871b740c2b47"
+              }
+            },
+            {
+              "text": " and on «Talita Cumi» with ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6099c2a6-bc4e-4291-8f06-2f5acd681e9c",
+                "displayText": "Dianette",
+                "occurrenceId": "4eef96b9-5bc5-430d-a462-c865a4231d2a"
+              }
+            },
+            {
+              "text": "; he also began working with «Frilop Music» that year. He released «Viene Algo Nuevo (Live)» in 2024, followed by «Espíritu Santo» and «Ruaj Hakodesh», recorded with Maiker Carpiadosa, in 2025. He is also featured on «Se Moverá La Piedra (Llegaron Ellos)» by «Unánimes en Adoración».",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Legacy",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Freisis Frías’s career connects songwriting for a Christian group with worship performances under his own name. Congregational participation remains central to his recordings and collaborations.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ca89088c-6988-4946-a56c-64fd89f69c3e",
+    "owner": "Freisis Frías",
+    "locale": "es",
+    "expected_revision": 1,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Freisis Frías, nombre artístico de Freisy Efraín Frías Reyes (Santo Domingo, 15 de febrero de 1990), es un cantante y compositor dominicano de música cristiana. Fue la voz principal de «ContraCultura» y ha desarrollado un repertorio propio de adoración que combina grabaciones en vivo con colaboraciones dentro de la escena cristiana.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Primeros años y formación",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Creció vinculado a la Iglesia Nueva Jerusalén, donde participó como músico y en labores juveniles y de evangelismo. Entre sus primeras grabaciones figuran «El Huerto» y «Ángeles». Esa experiencia congregacional precedió a su trabajo discográfico y a su actividad pastoral, iniciada en 2021.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "ContraCultura",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "En «ContraCultura» se desempeñó como compositor y vocalista principal. En 2019 el grupo lanzó «No hay temor», una canción de aliento frente a la depresión y la soledad; Dayner Civil compartió la autoría de la letra y realizó el arreglo. La agrupación también había difundido «El Sacrificio Soy Yo» y «Fuego», esta última con ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "a2409546-a23b-45ad-bc01-77eda1e46eb9",
+                "displayText": "Chanel Novas",
+                "occurrenceId": "682a02a0-aa7f-47f0-ba34-9fc42b52bad5"
+              }
+            },
+            {
+              "type": "text",
+              "text": ", y recibió el premio «El Galardón» como grupo revelación. Nacida del ministerio «Somos Adoradores», acompañó en vivo a Aline Barros, Danny Berrios y "
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "0bb19f71-3458-41c8-9de5-eea527d85d26",
+                "displayText": "Rocío Crooke",
+                "occurrenceId": "7882e3dc-0999-4fce-9c55-f2f49ce17d0b"
+              }
+            },
+            {
+              "type": "text",
+              "text": " durante 2019."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Grabaciones propias y colaboraciones",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Su canal oficial conserva un video de «Alabadle» anterior a los lanzamientos recientes de su catálogo digital. En 2023 participó en «No Me Postraré», de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "a2409546-a23b-45ad-bc01-77eda1e46eb9",
+                "displayText": "Chanel Novas",
+                "occurrenceId": "269ec0ea-9907-4798-ab5b-81562ec649ae"
+              }
+            },
+            {
+              "text": ", y en «Talita Cumi», de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6099c2a6-bc4e-4291-8f06-2f5acd681e9c",
+                "displayText": "Dianette",
+                "occurrenceId": "0b3bd1f5-41b7-4100-8121-32e40eacf80f"
+              }
+            },
+            {
+              "text": "; ese año comenzó su vínculo con «Frilop Music». En 2024 publicó «Viene Algo Nuevo (Live)». Le siguieron «Espíritu Santo» y «Ruaj Hakodesh», grabada junto a Maiker Carpiadosa, en 2025. También figura como invitado en «Se Moverá La Piedra (Llegaron Ellos)», de «Unánimes en Adoración».",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Legado",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La trayectoria de Freisis Frías une la composición para una agrupación cristiana con la interpretación de cantos de adoración bajo su propio nombre. Sus grabaciones y colaboraciones mantienen la participación congregacional como eje de su propuesta musical.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "065b0092-7ede-4fed-b349-ccbb1047db9b",
+    "owner": "Grupo Cañaveral",
+    "locale": "en",
+    "expected_revision": 1,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Cañaveral was a Dominican merengue vocal group, billed as Alex Mansilla y el Grupo Cañaveral. It was not an orchestra: its only album presents it as a quartet — Alex, Amarilis, Agustín and Carolina — four childhood friends who had played in a rock band together before stepping into merengue at the end of the 1980s, led by the arranger ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "b1dec30a-6da0-442a-be24-9891c4ddbe53",
+                "displayText": "Alex Mansilla",
+                "occurrenceId": "e7dd9466-4cea-467e-9529-1e65efe907f2"
+              }
+            },
+            {
+              "text": ". In 1989 the group released «Un Amor Como El Nuestro» and scored the hit that still defines it, «Ella Me Vivía».",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A vocal group",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The album's own liner notes describe a \"grupo músico-vocal\" blending the roots of Dominican folk music and merengue with touches of blues, jazz and rock, \"above all in the singing\". That is exactly how the record sounds: four voices over tight, polished arrangements, in the refined merengue mold that ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                "displayText": "Juan Luis Guerra",
+                "occurrenceId": "8c0bd6e3-7428-4d6c-8e87-0806a5fc616b"
+              }
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+                "displayText": "Grupo 440",
+                "occurrenceId": "e5eb0248-e27a-4bee-a44e-9702d2b79508"
+              }
+            },
+            {
+              "type": "text",
+              "text": " had made the era's standard — Dominican writers of the time read Cañaveral as the act launched to stand against him. "
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "b1dec30a-6da0-442a-be24-9891c4ddbe53",
+                "displayText": "Alex Mansilla",
+                "occurrenceId": "cd68fa32-74c5-4019-b74a-5b8a0a0b0763"
+              }
+            },
+            {
+              "text": ", who had come up as a jingle producer, arranger and composer, led the group, produced the album and co-wrote its arrangements with pianist ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "7f8ad645-fcd2-4cd3-b2c4-31ccfd8be65c",
+                "displayText": "Juan Valdez Ybet",
+                "occurrenceId": "43c78106-c266-4373-ac25-921b58c53d2c"
+              }
+            },
+            {
+              "type": "text",
+              "text": "; the record was cut at Audiolab in Santo Domingo and mixed by his brother "
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "593123d8-0cdc-46d7-918b-fc43047a8ac1",
+                "displayText": "Luis Mansilla",
+                "occurrenceId": "fb0ab107-22c9-429c-b6df-60397cbaac2c"
+              }
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "«Ella Me Vivía»",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The song was written by ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "99537a98-fb19-4487-814d-c60d91c4d10b",
+                "displayText": "Luis \"Terror\" Días",
+                "occurrenceId": "1579cc8e-9b1a-462e-a753-556a5044bba0"
+              }
+            },
+            {
+              "text": ". ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "cff70c92-8632-4c66-b5a0-81622c8128b0",
+                "displayText": "Rubby Pérez",
+                "occurrenceId": "8b251f36-08b4-420e-bb57-cd9c28ac6626"
+              }
+            },
+            {
+              "text": " recorded it first, on a Karen Records 45 (arranged by ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                "displayText": "Manuel Tejada",
+                "occurrenceId": "5352878b-1326-4def-a79e-c7cc26ee9e27"
+              }
+            },
+            {
+              "text": ") that made no impact; the song was then passed to the new project, Alex Mansilla & Cañaveral, and there — in Discolai's words — it was \"un éxito total\". WEA worked it hard, in three separate single pressings, and it anchors side B of the album. The song kept living: in 2013 ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                "displayText": "El Prodigio",
+                "occurrenceId": "1c7509f0-9c19-451c-9e0d-3d2020d994f9"
+              }
+            },
+            {
+              "text": " remade it as a merengue típico record, and its video was nominated for Video Clip of the Year at the 2014 Premios Soberano.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The album",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "«Un Amor Como El Nuestro» appeared in 1989 on Oi Records in the Dominican Republic and on WEA Latina internationally, in pressings that reached the United States, Spain and Central America. Its eight tracks mix Mansilla's own writing — «Isabel», the title track, «Sueño Con Ella», «Que Fue Lo Que Me Hiciste» — with ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6daac2c1-9759-4980-bffd-a53e67b42b1b",
+                "displayText": "Palmer Hernández",
+                "occurrenceId": "4928ac3d-0e9b-4de1-bcc0-d46b786bc9ba"
+              }
+            },
+            {
+              "text": "'s «Apechao», Giordano Di Marzo's «No Voy A Mover Un Dedo» and two songs by ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "99537a98-fb19-4487-814d-c60d91c4d10b",
+                "displayText": "Luis \"Terror\" Días",
+                "occurrenceId": "7ee3a070-a03b-4e97-b2e0-44719bbfe907"
+              }
+            },
+            {
+              "text": ", «Ella Me Vivía» and «Emeteria».",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The name that could not travel",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "There was no second Cañaveral album. By 1991 the same act was billed as Alex Mansilla & Su Grupo («Preso De Tus Besos», WEA), and by 1992 the records carried ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "b1dec30a-6da0-442a-be24-9891c4ddbe53",
+                "displayText": "Alex Mansilla",
+                "occurrenceId": "3ca76d36-c691-4faa-b238-2c9c44421268"
+              }
+            },
+            {
+              "text": "'s name alone. Dominican accounts attribute the short life of the name to a collision: a Colombian Grupo Cañaveral already owned it abroad, which blocked the Dominican group's promotion outside the country, and the act was stronger on record than on stage. By 2018 the Dominican press was already calling it \"el desaparecido grupo Cañaveral\".",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Legacy",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Cañaveral's recorded life fits inside a single album cycle, but the record never disappeared: both of the act's albums stream today, filed under ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "b1dec30a-6da0-442a-be24-9891c4ddbe53",
+                "displayText": "Alex Mansilla",
+                "occurrenceId": "4ba9d9bf-6065-4282-8627-11da037d0476"
+              }
+            },
+            {
+              "text": "'s name alone — the very confusion this page exists to undo. What survives is a quartet of old friends who crossed from rock into the most polished merengue of their moment, and the definitive hit version of a ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "99537a98-fb19-4487-814d-c60d91c4d10b",
+                "displayText": "Luis \"Terror\" Días",
+                "occurrenceId": "2dbadd26-9b19-42b1-a0d2-c186c2162272"
+              }
+            },
+            {
+              "text": " classic. For ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "b1dec30a-6da0-442a-be24-9891c4ddbe53",
+                "displayText": "Alex Mansilla",
+                "occurrenceId": "4afee00d-98be-4a1a-8991-3d3279b91862"
+              }
+            },
+            {
+              "text": "'s own story — the arranger behind other artists' records, before and after Cañaveral — see his personal page.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "bfff2b36-ad6b-408f-b6bd-de4f41375c2b",
+    "owner": "Grupo Cañaveral",
+    "locale": "es",
+    "expected_revision": 1,
+    "status": "published",
+    "document": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Cañaveral fue un grupo vocal dominicano de merengue, facturado como Alex Mansilla y el Grupo Cañaveral. No era una orquesta: su único álbum lo presenta como un cuarteto — Alex, Amarilis, Agustín y Carolina —, cuatro amigos de infancia que habían tocado juntos en una banda de rock antes de entrar al merengue a finales de los ochenta, bajo la dirección del arreglista ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "b1dec30a-6da0-442a-be24-9891c4ddbe53",
+                "displayText": "Alex Mansilla",
+                "occurrenceId": "c4bee6c8-efc9-4116-a1b7-1101cafaf270"
+              }
+            },
+            {
+              "text": ". En 1989 el grupo publicó «Un Amor Como El Nuestro» y logró el éxito que todavía lo define: «Ella Me Vivía».",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Un grupo vocal",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Las notas del propio álbum describen un «grupo músico-vocal» que conjuga las raíces de la música folklórica dominicana y el merengue con notas de blues, jazz y rock, «sobre todo en la vocalización de sus temas». Y así suena el disco: cuatro voces sobre arreglos pulidos y compactos, en el molde del merengue refinado que ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+                "displayText": "Juan Luis Guerra",
+                "occurrenceId": "85470071-e5be-41ff-9f34-bb213a71e292"
+              }
+            },
+            {
+              "type": "text",
+              "text": " y el "
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "9761143c-4e04-4590-8fa7-fe82674a6cf7",
+                "displayText": "Grupo 440",
+                "occurrenceId": "8b8edabe-3c3e-463e-bdeb-615558ae10cc"
+              }
+            },
+            {
+              "type": "text",
+              "text": " habían convertido en el estándar de la época — la prensa dominicana de entonces leyó a Cañaveral como la agrupación lanzada para hacerle frente. "
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "b1dec30a-6da0-442a-be24-9891c4ddbe53",
+                "displayText": "Alex Mansilla",
+                "occurrenceId": "b270545f-deca-42c6-a297-349dc30e68f1"
+              }
+            },
+            {
+              "text": ", formado como productor de jingles, arreglista y compositor, dirigió el grupo, produjo el álbum y compartió los arreglos con el pianista ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "7f8ad645-fcd2-4cd3-b2c4-31ccfd8be65c",
+                "displayText": "Juan Valdez Ybet",
+                "occurrenceId": "a6f3c611-55a2-4350-99c1-a3b42c42f005"
+              }
+            },
+            {
+              "type": "text",
+              "text": "; el disco se grabó en Audiolab, en Santo Domingo, con mezcla de su hermano "
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "593123d8-0cdc-46d7-918b-fc43047a8ac1",
+                "displayText": "Luis Mansilla",
+                "occurrenceId": "169f1516-5af6-4c41-8a07-a1348b088ee0"
+              }
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "«Ella Me Vivía»",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El tema lo escribió ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "99537a98-fb19-4487-814d-c60d91c4d10b",
+                "displayText": "Luis \"Terror\" Días",
+                "occurrenceId": "f65ab602-3131-49f4-8a56-81aa301273a3"
+              }
+            },
+            {
+              "text": ". ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "cff70c92-8632-4c66-b5a0-81622c8128b0",
+                "displayText": "Rubby Pérez",
+                "occurrenceId": "937810b2-47f5-4ea1-abbe-2fb8af91d90f"
+              }
+            },
+            {
+              "text": " lo grabó primero, en un 45 de Karen Records con arreglos de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "4d3a653c-688e-47c1-8cec-b8cf85a4abac",
+                "displayText": "Manuel Tejada",
+                "occurrenceId": "44d27027-745c-4423-aea9-44681812a4b7"
+              }
+            },
+            {
+              "text": ", sin lograr impacto; la canción fue cedida entonces al proyecto nuevo, Alex Mansilla & Cañaveral, y ahí — en palabras de Discolai — fue «un éxito total». WEA lo trabajó con fuerza, en tres ediciones distintas de sencillo, y el tema ancla la cara B del álbum. La canción siguió viviendo: en 2013 ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+                "displayText": "El Prodigio",
+                "occurrenceId": "e76babae-c20d-45e7-9a34-4aa351a82a10"
+              }
+            },
+            {
+              "text": " la rehízo en merengue típico, y su video fue nominado a Video Clip del Año en los Premios Soberano 2014.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El álbum",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "«Un Amor Como El Nuestro» salió en 1989 por Oi Records en República Dominicana y por WEA Latina a nivel internacional, con ediciones que llegaron a Estados Unidos, España y Centroamérica. Sus ocho temas mezclan la pluma del propio Mansilla — «Isabel», el tema título, «Sueño Con Ella», «Que Fue Lo Que Me Hiciste» — con «Apechao», de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "6daac2c1-9759-4980-bffd-a53e67b42b1b",
+                "displayText": "Palmer Hernández",
+                "occurrenceId": "7bbcd495-e607-443b-bdb2-de82c7c8eb78"
+              }
+            },
+            {
+              "text": "; «No Voy A Mover Un Dedo», de Giordano Di Marzo, y dos canciones de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "99537a98-fb19-4487-814d-c60d91c4d10b",
+                "displayText": "Luis \"Terror\" Días",
+                "occurrenceId": "369b0ca2-6162-4361-919a-47406b8e33ed"
+              }
+            },
+            {
+              "text": ": «Ella Me Vivía» y «Emeteria».",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "El nombre que no pudo viajar",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "No hubo un segundo álbum de Cañaveral. Para 1991 la misma agrupación se facturaba como Alex Mansilla & Su Grupo («Preso De Tus Besos», WEA), y para 1992 los discos llevaban ya solo el nombre de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "b1dec30a-6da0-442a-be24-9891c4ddbe53",
+                "displayText": "Alex Mansilla",
+                "occurrenceId": "43a16ea5-da9f-4632-a245-c290dbcc85cc"
+              }
+            },
+            {
+              "text": ". Las crónicas dominicanas atribuyen la vida corta del nombre a un choque: un Grupo Cañaveral colombiano ya lo tenía registrado fuera del país, lo que impidió promover al grupo dominicano en el exterior, y la agrupación gustaba más en disco que en vivo. Para 2018 la prensa dominicana ya lo llamaba «el desaparecido grupo Cañaveral».",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Legado",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "La vida discográfica de Cañaveral cabe en el ciclo de un solo álbum, pero el disco nunca desapareció: hoy los dos álbumes de la agrupación se escuchan en streaming archivados solo bajo el nombre de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "b1dec30a-6da0-442a-be24-9891c4ddbe53",
+                "displayText": "Alex Mansilla",
+                "occurrenceId": "d4bc27bb-a6af-4edf-867c-7758ab620fba"
+              }
+            },
+            {
+              "text": " — la misma confusión que esta ficha viene a deshacer. Lo que queda es un cuarteto de amigos de siempre que cruzó del rock al merengue más pulido de su momento, y la versión de éxito definitivo de un clásico de ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "99537a98-fb19-4487-814d-c60d91c4d10b",
+                "displayText": "Luis \"Terror\" Días",
+                "occurrenceId": "b60aaabc-7c89-4215-b1d9-07727b24c95a"
+              }
+            },
+            {
+              "text": ". Para la historia del propio ",
+              "type": "text"
+            },
+            {
+              "type": "artistReference",
+              "attrs": {
+                "artistId": "b1dec30a-6da0-442a-be24-9891c4ddbe53",
+                "displayText": "Alex Mansilla",
+                "occurrenceId": "fde93097-5bb4-4be1-91c0-6f3f94ec357a"
+              }
+            },
+            {
+              "text": " — el arreglista detrás de los discos de otros, antes y después de Cañaveral — véase su página personal.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

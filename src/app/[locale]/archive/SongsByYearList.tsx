@@ -129,7 +129,7 @@ function formatViews(views?: number | null) {
 function formatDuration(ms: number) {
   if (!ms || ms <= 0) return "--:--";
 
-  const totalSeconds = Math.floor(ms / 1000);
+  const totalSeconds = ms < 1000 ? Math.floor(ms) : Math.floor(ms / 1000);
   const minutes = Math.floor(totalSeconds / 60);
   const seconds = totalSeconds % 60;
 

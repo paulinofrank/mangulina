@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import dotenv from 'dotenv';
+import {createClient} from '@supabase/supabase-js';
+import {validateEditorialDocument} from '../../../src/lib/editorial/validate';
+import {buildEditorialIntegrityReport} from '../../../src/lib/editorial/integrity';
+dotenv.config({quiet:true});
+const db=createClient(process.env.NEXT_PUBLIC_SUPABASE_URL??process.env.SUPABASE_URL!,process.env.SUPABASE_SERVICE_ROLE_KEY!,{auth:{persistSession:false}});
+const get=(r:any)=>{if(r.error)throw Error(r.error.message);return r.data;};
+const id='fa003079-8748-49d5-83f4-35992e98007f';
+const artist=get(await db.from('artists').select('*').eq('id',id).single());
+const documents=get(await db.from('editorial_documents').select('*').eq('owner_artist_id',id));
+const relations=get(await db.from('editorial_entity_references').select('*').in('editorial_document_id',documents.map((d:any)=>d.id)));
+const all=get(await db.from('artists').select('id,name,slug,status').or('name.ilike.%Carlos%Silver%,id.eq.031dddae-2d27-4c98-9b44-a8210e39aafd,id.eq.efe31bc6-9074-49b2-ae8e-2844242dd8e1'));
+const snapshot={artists:[artist,...all.filter((a:any)=>a.id!==id)],documents,relations};
+const result={date:'2026-10-24',scope:'Read-only audit of Carlos Silver profile and both biographies; no data changes',snapshot,validation:documents.map((d:any)=>({id:d.id,locale:d.locale,result:validateEditorialDocument(d.schema_version,d.document)})),integrity:buildEditorialIntegrityReport(snapshot)};
+fs.writeFileSync('docs/reports/editorial/carlos-silver-audit-snapshot.json',JSON.stringify(result,null,2));
+console.log(JSON.stringify({artist:{id:artist.id,status:artist.status,genres:artist.genres,instruments:artist.instruments},validation:result.validation,integrity:result.integrity.counts,findings:result.integrity.findings,duplicates:all.filter((a:any)=>a.name.includes('Silver'))}));

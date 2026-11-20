@@ -1,0 +1,280 @@
+{
+  "es": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Ricky Echavarría, también acreditado como Rick Echavarría, es un cantante dominicano criado en Nueva York y cofundador de "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab",
+              "displayText": "Proyecto Uno",
+              "occurrenceId": "63a2015e-4c99-46f0-859f-760fae7298f6"
+            }
+          },
+          {
+            "type": "text",
+            "text": ". Junto a "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "8320823b-6719-45c3-a414-cf43619c7b21",
+              "displayText": "Nelson Zapata",
+              "occurrenceId": "2c140400-6d54-4366-98d5-9e7ca0283ca1"
+            }
+          },
+          {
+            "type": "text",
+            "text": " participó en la formación del grupo a finales de los años ochenta y figura como intérprete en su primer álbum, «Todo el Mundo!», publicado a comienzos de la década de 1990. Su trabajo pertenece a los orígenes del merengue house, la mezcla de merengue con música electrónica y ritmos urbanos que el grupo desarrolló en Nueva York."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Los comienzos de Proyecto Uno",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab",
+              "displayText": "Proyecto Uno",
+              "occurrenceId": "2ccb4470-c491-4fe7-9c5d-196026222601"
+            }
+          },
+          {
+            "type": "text",
+            "text": " comenzó como una banda de merengue que actuaba en restaurantes y pequeños locales del Lower East Side. La colaboración de Echavarría y Zapata con el ingeniero y productor Pavel de Jesús ayudó a darle forma a una propuesta que incorporó sonidos de house y hip hop. «Todo el mundo (Everybody)» y «Brinca» fueron dos de los temas con los que esa fusión empezó a circular fuera de la escena dominicana neoyorquina."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "La primera grabación",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "La edición en vinilo de «Todo el Mundo!» acredita a Echavarría y Zapata como intérpretes. Otra edición del mismo material, «Brinca», identifica a Rick entre las voces principales del álbum. La documentación consultada no permite asignarle individualmente cada voz ni convertir el crédito general del disco en créditos de pista. Su participación corresponde a la etapa inicial del grupo; para «In Da House», editado en 1993, "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab",
+              "displayText": "Proyecto Uno",
+              "occurrenceId": "287247f4-a5d4-4e99-a8f4-0d7690e934f7"
+            }
+          },
+          {
+            "type": "text",
+            "text": " ya había cambiado de integrantes. No se conoce una fecha precisa ni una explicación documentada de su salida."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Legado",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "La presencia de Echavarría en los créditos de la primera producción y en la historia fundacional de "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab",
+              "displayText": "Proyecto Uno",
+              "occurrenceId": "16943e15-b870-4bb7-9175-aa520fa84a70"
+            }
+          },
+          {
+            "type": "text",
+            "text": " permite reconocer su papel en el nacimiento del grupo. Su trayectoria posterior sigue poco documentada, mientras aquellas grabaciones conservan el sonido de sus primeros experimentos con el merengue house."
+          }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Ricky Echavarría, also credited as Rick Echavarría, is a Dominican singer raised in New York and a co-founder of "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab",
+              "displayText": "Proyecto Uno",
+              "occurrenceId": "b53882ec-eb9f-46a9-89d3-6297e7b16115"
+            }
+          },
+          {
+            "type": "text",
+            "text": ". He and "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "8320823b-6719-45c3-a414-cf43619c7b21",
+              "displayText": "Nelson Zapata",
+              "occurrenceId": "38da7edf-ca55-44dc-ac75-1d9c0ccbd850"
+            }
+          },
+          {
+            "type": "text",
+            "text": " helped form the group in the late 1980s, and he is credited as a performer on its first album, «Todo el Mundo!», issued in the early 1990s. His work belongs to the origins of merengue house, the blend of merengue with electronic music and urban rhythms that the group developed in New York."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Proyecto Uno's beginnings",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab",
+              "displayText": "Proyecto Uno",
+              "occurrenceId": "c335cc13-0771-43d7-9708-ccf7f689955b"
+            }
+          },
+          {
+            "type": "text",
+            "text": " began as a merengue band playing restaurants and small venues on the Lower East Side. Echavarría and Zapata's collaboration with engineer and producer Pavel de Jesús helped shape a sound that drew on house and hip hop. «Todo el mundo (Everybody)» and «Brinca» carried that fusion beyond New York's Dominican music scene."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The first recording",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The vinyl edition of «Todo el Mundo!» credits Echavarría and Zapata as performers. Another edition of the same material, «Brinca», identifies Rick among the album's lead vocalists. The available documentation does not establish which individual parts he sang on each track. His participation belongs to the group's first stage; "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab",
+              "displayText": "Proyecto Uno",
+              "occurrenceId": "00da2eeb-da68-4b34-8fdb-c157e8dbba30"
+            }
+          },
+          {
+            "type": "text",
+            "text": " had changed personnel by the release of «In Da House» in 1993. No precise date or documented reason for his departure has been found."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Legacy",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Echavarría's credit on the first record and his place in "
+          },
+          {
+            "type": "artistReference",
+            "attrs": {
+              "artistId": "f838ab51-002f-4737-ab38-17f65beec9ab",
+              "displayText": "Proyecto Uno",
+              "occurrenceId": "040c40a1-477e-444b-83c5-a262665bece4"
+            }
+          },
+          {
+            "type": "text",
+            "text": "'s founding history establish his role in the group's creation. His later career remains sparsely documented, while those early recordings preserve the sound of the group's first merengue-house experiments."
+          }
+        ]
+      }
+    ]
+  }
+}

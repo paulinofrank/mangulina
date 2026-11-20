@@ -1,0 +1,251 @@
+[
+  {
+    "artist": {
+      "id": "55b058c7-6a9f-4574-90af-ca1343176dbc",
+      "mbid": null,
+      "name": "Wishow",
+      "slug": "wishow",
+      "type": "solo_artist",
+      "ended": false,
+      "views": 0,
+      "bio_en": null,
+      "bio_es": null,
+      "gender": "male",
+      "genres": [
+        "merengue"
+      ],
+      "status": "draft",
+      "aliases": [],
+      "spotify": "7MR8JA7NxfWF28rlmd9IEy",
+      "website": null,
+      "youtube": "@wishowoficial",
+      "facebook": "wishowmusic",
+      "province": "Distrito Nacional",
+      "birth_day": null,
+      "has_image": false,
+      "instagram": "wishowofficial",
+      "last_name": "Hernández",
+      "sort_name": "Wishow",
+      "birth_year": null,
+      "created_at": "2026-10-17T20:34:28.055903+00:00",
+      "death_year": null,
+      "first_name": "Willmen",
+      "stage_name": "Wishow",
+      "updated_at": "2026-10-17T20:34:28.055903+00:00",
+      "artist_tags": [
+        "secular"
+      ],
+      "birth_month": null,
+      "birth_place": "Santo Domingo, República Dominicana",
+      "instruments": [
+        "voice"
+      ],
+      "mb_metadata": {},
+      "middle_name": null,
+      "occupations": [
+        "songwriter",
+        "producer"
+      ],
+      "wikidata_id": null,
+      "primary_role": "singer",
+      "date_of_birth": null,
+      "date_of_death": null,
+      "primary_genre": "merengue",
+      "disambiguation": null,
+      "formation_year": null,
+      "dissolution_year": null,
+      "image_updated_at": null,
+      "second_last_name": null
+    },
+    "documents": [
+      {
+        "id": "f1733145-ca01-482c-8911-b1b70d756e87",
+        "locale": "en",
+        "status": "published",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Wishow is the stage name of Willmen Hernández, a Dominican singer, songwriter and producer born in Santo Domingo. Based in Orlando, Florida, he focuses on merengue and presents his music under the phrase «Otra Cosa». His artistic background spans the Dominican Republic and the United States.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Background and repertoire",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His artist biography describes a musical family and an upbringing in both countries. In July 2024 he presented «Como tú no hay». His repertoire also includes «Perdóname», «Pal Bembè» and «Poco a Poco».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Recorded and audiovisual work",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His official YouTube channel features music videos, live performances and covers. His platforms also carry «Pal que quiera», «La melodia» and «Si Te Vas», the latter presented as a September 2026 release.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Wishow’s work belongs to the contemporary merengue output of Dominican artists based in the United States, reaching listeners through singles and audiovisual releases.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "revision": 1,
+        "created_at": "2026-10-17T20:34:53.521134+00:00",
+        "updated_at": "2026-10-17T20:34:53.521134+00:00",
+        "document_type": "artist_biography",
+        "schema_version": 1,
+        "owner_artist_id": "55b058c7-6a9f-4574-90af-ca1343176dbc"
+      },
+      {
+        "id": "0753968c-6899-4787-993c-968f97b9cca4",
+        "locale": "es",
+        "status": "published",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Wishow es el nombre artístico de Willmen Hernández, cantante, autor y productor dominicano nacido en Santo Domingo. Su propuesta se centra en el merengue y se presenta con la expresión «Otra Cosa». Radicado en Orlando, Florida, desarrolla su actividad entre referencias musicales dominicanas y su experiencia en Estados Unidos.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Trayectoria y repertorio",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su perfil biográfico describe una familia vinculada a la música y una formación entre la República Dominicana y Estados Unidos. En julio de 2024 presentó «Como tú no hay», dentro de un repertorio que también comprende «Perdóname», «Pal Bembè» y «Poco a Poco».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Presencia musical",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su canal oficial de YouTube reúne videoclips, interpretaciones en vivo y versiones de canciones. En sus plataformas figuran «Pal que quiera», «La melodia» y «Si Te Vas»; esta última se presenta como lanzamiento de septiembre de 2026.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su trabajo forma parte de la producción contemporánea de merengue de artistas dominicanos establecidos en Estados Unidos, con una difusión apoyada en sencillos y material audiovisual.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "revision": 1,
+        "created_at": "2026-10-17T20:35:07.902849+00:00",
+        "updated_at": "2026-10-17T20:35:07.902849+00:00",
+        "document_type": "artist_biography",
+        "schema_version": 1,
+        "owner_artist_id": "55b058c7-6a9f-4574-90af-ca1343176dbc"
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "source_url": "https://itunes.apple.com/lookup?id=1196846231&entity=album&limit=200&country=us",
+  "retrieved_at": "2026-10-19T17:52:16.488Z",
+  "resultCount": 1,
+  "results": [
+    {
+      "wrapperType": "artist",
+      "artistType": "Artist",
+      "artistName": "Ravel El Tipo",
+      "artistLinkUrl": "https://music.apple.com/us/artist/ravel-el-tipo/1196846231?uo=4",
+      "artistId": 1196846231,
+      "primaryGenreName": "Música tropical",
+      "primaryGenreId": 1124
+    }
+  ]
+}

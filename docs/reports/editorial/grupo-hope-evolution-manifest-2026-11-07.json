@@ -1,0 +1,656 @@
+{
+  "date": "2026-11-07",
+  "owner_artist_id": "04788dac-8c1b-40ec-8c3e-c6a375838f20",
+  "artist_status_before_and_after": "draft",
+  "document_status_before_and_after": "published",
+  "scope": "Replace only Grupo Hope EN/ES biographies and their compatibility mirrors. Preserve artist fields, relationships and music data.",
+  "documents": [
+    {
+      "locale": "en",
+      "expected_revision": 1,
+      "new_revision": 2,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Grupo Hope, known in its early years as Hope Worship and credited on music platforms as Hope W Music, is a Dominican Christian worship music project led by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "38bd50e5-7a4a-43c0-8ad5-4668da2a6a3b",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". It made its stage debut as a band in 2018, developed a repertoire with musicians and changing vocalists, and announced in 2026 that it was consolidating its work as a worship platform."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Early years",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hope Worship made its stage debut at the «Aviva Joven» youth gathering in Santo Domingo Este in August 2018. By December its official Facebook page was promoting «Espíritu Santo» and directing listeners to the song's YouTube video. In February 2019 the same channel released a video about the song's origins, presenting Hope Worship and Ponciano as its performers. «Dios de Gloria» expanded the recorded repertoire in 2020."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The music grew from songs Ponciano wrote during his pastoral and worship work. Through its association with «Somos Uno», the project performed at youth gatherings and at «Tabernáculo de Adoración». The name Hope Worship continued to appear on Christian event bills while Grupo Hope and Hope W Music identified its videos and digital releases."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Rodeado» and a wider audience",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In June 2022, Grupo Hope and «Tba Worship» presented «Rodeado», with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86d543cd-3eab-42d0-98c8-438bf8d5792c",
+                  "occurrenceId": "ad6dccb6-0e8d-4277-aa07-90ca10b10812",
+                  "displayText": "Misael J"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "3502a675-c3e1-4617-9ee3-c893a8f0daba",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " as guest lead vocalists. Ponciano wrote it after a worship experience; the recording credits musical production to David Rosario, Dereck Cruz and Ponciano, while Joseph Tavárez made the video. The song carried the project's congregational music to a wider online audience. That year Hope W Music was nominated at the Christian «Premios AMCL» for breakthrough artist and for «Espíritu Santo»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The band years",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "When Grupo Hope introduced «Monte Sinaí» in May 2023, Esteban Ponciano played bass and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "8e4ccfce-42d4-467a-afd4-16f6a47d10af",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "de2cd2a0-bf2f-497c-a747-82266c8fa32e",
+                  "occurrenceId": "db3ef9cc-5865-44c5-9858-33f1eca05a4b",
+                  "displayText": "Karol Michelle"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and Rut Senil were identified as the group's vocalists. Ronny Ramírez wrote the song, David Rosario arranged it and Agner Marte produced its video. The musicians filmed it in a setting resembling a church service so congregations could adopt the song. "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "de2cd2a0-bf2f-497c-a747-82266c8fa32e",
+                  "occurrenceId": "8facb323-8747-49b7-864f-7172394c9923",
+                  "displayText": "Karol Michelle"
+                }
+              },
+              {
+                "type": "text",
+                "text": " subsequently pursued a solo career; the press noted her earlier membership in 2024."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Collaborations and new songs",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In August 2023, «Kadosh» paired Grupo Hope with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "548bc0df-b19a-43af-b5a4-798b8a401780",
+                  "occurrenceId": "44539c7b-f690-493b-b692-bc2bc173d3e5",
+                  "displayText": "Averly Morillo"
+                }
+              },
+              {
+                "type": "text",
+                "text": "; the video's credits name "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "14e2acb2-bbf0-4707-bc75-fff5c3c67a4c",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Janiel Ponciano, Morillo and David Rosario as writers. «Yeshua» and «Alfa & Omega» followed in 2024, the latter featuring "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1a4f1c39-f32a-4b98-af5d-a6969885eab9",
+                  "occurrenceId": "ca768fc9-466b-4bec-82ca-72ffda20948a",
+                  "displayText": "Jordan Mateo"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and Ponciano. In 2025 the project joined Alison on the live recording «Lo llenas todo», also credited to Ponciano. The succession of singers is part of the development of one musical identity rather than a series of unrelated acts."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A worship platform",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "On February 3, 2026, Grupo Hope announced a new phase on its official Facebook page as a worship platform. Alongside creating and distributing congregational music, it set out to mentor, train and give visibility to new worship leaders. Recording continued under the Hope W Music identity: «Derrama Tu Aceite» appeared in March with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86d543cd-3eab-42d0-98c8-438bf8d5792c",
+                  "occurrenceId": "c53f0cde-c6f2-4b3b-906c-70aa0209d83f",
+                  "displayText": "Misael J"
+                }
+              },
+              {
+                "type": "text",
+                "text": " and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "9b8c82d4-c16b-4771-8ad7-786924ebc16a",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", followed in August by the video for «Te Mostraré Mi Gloria» with Carolina and "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "63a70f7b-82e5-4c28-852a-313a2407cd54",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". The statement broadened the project's mission without retiring its name or recordings."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Grupo Hope's history runs from its first appearances as Hope Worship to its platform phase. Its songs, performances and recordings connect "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "51f45bc2-e89c-428f-8c59-cc034ce56064",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s pastoral songwriting with instrumentalists, group vocalists and guests from different periods. The continuing catalogue under Grupo Hope and Hope W Music makes that development visible as one musical project."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Grupo Hope, known in its early years as Hope Worship and credited on music platforms as Hope W Music, is a Dominican Christian worship music project led by Junior Ponciano. It made its stage debut as a band in 2018, developed a repertoire with musicians and changing vocalists, and announced in 2026 that it was consolidating its work as a worship platform.\n\n**Early years**\n\nHope Worship made its stage debut at the «Aviva Joven» youth gathering in Santo Domingo Este in August 2018. By December its official Facebook page was promoting «Espíritu Santo» and directing listeners to the song's YouTube video. In February 2019 the same channel released a video about the song's origins, presenting Hope Worship and Ponciano as its performers. «Dios de Gloria» expanded the recorded repertoire in 2020.\n\nThe music grew from songs Ponciano wrote during his pastoral and worship work. Through its association with «Somos Uno», the project performed at youth gatherings and at «Tabernáculo de Adoración». The name Hope Worship continued to appear on Christian event bills while Grupo Hope and Hope W Music identified its videos and digital releases.\n\n**«Rodeado» and a wider audience**\n\nIn June 2022, Grupo Hope and «Tba Worship» presented «Rodeado», with Misael J and Carolina Ponciano as guest lead vocalists. Ponciano wrote it after a worship experience; the recording credits musical production to David Rosario, Dereck Cruz and Ponciano, while Joseph Tavárez made the video. The song carried the project's congregational music to a wider online audience. That year Hope W Music was nominated at the Christian «Premios AMCL» for breakthrough artist and for «Espíritu Santo».\n\n**The band years**\n\nWhen Grupo Hope introduced «Monte Sinaí» in May 2023, Esteban Ponciano played bass and Carolina Ponciano, Karol Michelle and Rut Senil were identified as the group's vocalists. Ronny Ramírez wrote the song, David Rosario arranged it and Agner Marte produced its video. The musicians filmed it in a setting resembling a church service so congregations could adopt the song. Karol Michelle subsequently pursued a solo career; the press noted her earlier membership in 2024.\n\n**Collaborations and new songs**\n\nIn August 2023, «Kadosh» paired Grupo Hope with Averly Morillo; the video's credits name Junior Ponciano, Janiel Ponciano, Morillo and David Rosario as writers. «Yeshua» and «Alfa & Omega» followed in 2024, the latter featuring Jordan Mateo and Ponciano. In 2025 the project joined Alison on the live recording «Lo llenas todo», also credited to Ponciano. The succession of singers is part of the development of one musical identity rather than a series of unrelated acts.\n\n**A worship platform**\n\nOn February 3, 2026, Grupo Hope announced a new phase on its official Facebook page as a worship platform. Alongside creating and distributing congregational music, it set out to mentor, train and give visibility to new worship leaders. Recording continued under the Hope W Music identity: «Derrama Tu Aceite» appeared in March with Misael J and Carolina Ponciano, followed in August by the video for «Te Mostraré Mi Gloria» with Carolina and Karen Ponciano. The statement broadened the project's mission without retiring its name or recordings.\n\n**Legacy**\n\nGrupo Hope's history runs from its first appearances as Hope Worship to its platform phase. Its songs, performances and recordings connect Junior Ponciano's pastoral songwriting with instrumentalists, group vocalists and guests from different periods. The continuing catalogue under Grupo Hope and Hope W Music makes that development visible as one musical project."
+    },
+    {
+      "locale": "es",
+      "expected_revision": 1,
+      "new_revision": 2,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Grupo Hope, conocido en sus primeros años como Hope Worship y acreditado en plataformas musicales como Hope W Music, es un proyecto dominicano de música cristiana y adoración impulsado por "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "79e0730d-e0a0-4f1e-87d1-bbc2b53da15b",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Debutó en escena en 2018 como agrupación; después de desarrollar un repertorio propio con músicos y distintas voces, anunció en 2026 su consolidación como plataforma de adoración."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Los primeros años",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hope Worship debutó en el congreso juvenil «Aviva Joven» de Santo Domingo Este en agosto de 2018. Ese diciembre, su página oficial ya difundía «Espíritu Santo» y dirigía al público a su video en YouTube. En febrero de 2019, el mismo canal publicó un video sobre la historia de la canción y presentó a Hope Worship junto a Ponciano como el grupo que la interpretaba. «Dios de Gloria» amplió su repertorio grabado en 2020."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La música nació alrededor de las canciones que Ponciano componía durante su actividad pastoral y de adoración. Su vínculo con «Somos Uno» dio al proyecto escenarios de encuentro juvenil; la agrupación actuó en las actividades del movimiento y en el «Tabernáculo de Adoración». El nombre Hope Worship siguió apareciendo en carteleras cristianas mientras Grupo Hope y Hope W Music identificaban sus videos y lanzamientos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "«Rodeado» y proyección",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En junio de 2022, Grupo Hope y «Tba Worship» presentaron «Rodeado», con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86d543cd-3eab-42d0-98c8-438bf8d5792c",
+                  "occurrenceId": "b90ca2db-64fa-488d-8831-559f20f3396f",
+                  "displayText": "Misael J"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "f16422ee-f6bb-4f90-8855-be745150c16d",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " como voces principales invitadas. Ponciano compuso la canción tras una experiencia de adoración; la grabación acreditó la producción musical a David Rosario, Dereck Cruz y el propio Ponciano, y el video fue realizado por Joseph Tavárez. La pieza llevó su música de congregación a una audiencia digital más amplia. El mismo año, Hope W Music recibió nominaciones de los «Premios AMCL» como artista revelación y por «Espíritu Santo»."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La etapa de agrupación",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En mayo de 2023, al presentar «Monte Sinaí», Grupo Hope contaba con Esteban Ponciano al bajo y con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "d21b3c4a-af63-4030-b905-43c261738749",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "de2cd2a0-bf2f-497c-a747-82266c8fa32e",
+                  "occurrenceId": "f30267d9-04aa-40e5-b81d-fe62d8542226",
+                  "displayText": "Karol Michelle"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y Rut Senil en las voces. Ronny Ramírez escribió el tema, David Rosario hizo los arreglos y Agner Marte produjo el video. Los músicos lo grabaron en un ambiente semejante a un servicio religioso para facilitar su uso por otras congregaciones. "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "de2cd2a0-bf2f-497c-a747-82266c8fa32e",
+                  "occurrenceId": "3a36fd3f-42e5-45a9-a714-d5bffc00b574",
+                  "displayText": "Karol Michelle"
+                }
+              },
+              {
+                "type": "text",
+                "text": " emprendió luego una carrera solista; su pertenencia anterior al grupo fue recordada en la prensa en 2024."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Colaboraciones y nuevas canciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En agosto de 2023, «Kadosh» reunió a Grupo Hope con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "548bc0df-b19a-43af-b5a4-798b8a401780",
+                  "occurrenceId": "631524a3-65e1-4403-9e98-3986943ab706",
+                  "displayText": "Averly Morillo"
+                }
+              },
+              {
+                "type": "text",
+                "text": "; los créditos del video atribuyen la composición a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "2bd81899-7b1d-4e82-8f33-ecdb787cbe68",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Janiel Ponciano, Morillo y David Rosario. Después llegaron «Yeshua» y «Alfa & Omega» en 2024, esta última con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "1a4f1c39-f32a-4b98-af5d-a6969885eab9",
+                  "occurrenceId": "378ae8ae-92ed-4cd6-ae06-cfb17d7d10c2",
+                  "displayText": "Jordan Mateo"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y Ponciano. En 2025 el proyecto colaboró con Alison en «Lo llenas todo», una grabación en vivo acreditada también a Ponciano. La sucesión de intérpretes no borra la etapa de agrupación: muestra cómo una identidad musical compartida fue incorporando voces distintas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Una plataforma de adoración",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "El 3 de febrero de 2026, Grupo Hope anunció en su página oficial una nueva etapa como plataforma de adoración. Además de crear y difundir música congregacional, planteó acompañar espiritualmente, formar y dar visibilidad a nuevos adoradores. La actividad discográfica continuó bajo la identidad Hope W Music: en marzo publicó «Derrama Tu Aceite» con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "86d543cd-3eab-42d0-98c8-438bf8d5792c",
+                  "occurrenceId": "a723f0c4-93ee-4d4d-a178-2f968041cac9",
+                  "displayText": "Misael J"
+                }
+              },
+              {
+                "type": "text",
+                "text": " y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3258b734-bf0e-4be9-97ce-c6101d84e77e",
+                  "occurrenceId": "9922cd69-b3a8-40c2-8759-ffa0a2645a2c",
+                  "displayText": "Carolina Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", y en agosto estrenó el video de «Te Mostraré Mi Gloria» con Carolina y "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "3cfbc232-0dcb-470c-8aee-98e44be5b8ac",
+                  "occurrenceId": "19c146d9-446d-46c3-962e-9403f4e1236b",
+                  "displayText": "Karen Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". La declaración amplió el propósito del proyecto sin retirar su nombre ni sus canciones."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Grupo Hope conserva una trayectoria reconocible desde su debut como Hope Worship hasta su etapa de plataforma. Sus canciones, presentaciones y grabaciones enlazan la composición pastoral de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "ff6cc7f7-2781-4bc2-815c-85578461f837",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": " con instrumentistas, vocalistas de la agrupación e invitados de distintas épocas. La continuidad del catálogo bajo Grupo Hope y Hope W Music permite seguir esa evolución sin tratar cada formación o colaboración como un proyecto diferente."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Grupo Hope, conocido en sus primeros años como Hope Worship y acreditado en plataformas musicales como Hope W Music, es un proyecto dominicano de música cristiana y adoración impulsado por Junior Ponciano. Debutó en escena en 2018 como agrupación; después de desarrollar un repertorio propio con músicos y distintas voces, anunció en 2026 su consolidación como plataforma de adoración.\n\n**Los primeros años**\n\nHope Worship debutó en el congreso juvenil «Aviva Joven» de Santo Domingo Este en agosto de 2018. Ese diciembre, su página oficial ya difundía «Espíritu Santo» y dirigía al público a su video en YouTube. En febrero de 2019, el mismo canal publicó un video sobre la historia de la canción y presentó a Hope Worship junto a Ponciano como el grupo que la interpretaba. «Dios de Gloria» amplió su repertorio grabado en 2020.\n\nLa música nació alrededor de las canciones que Ponciano componía durante su actividad pastoral y de adoración. Su vínculo con «Somos Uno» dio al proyecto escenarios de encuentro juvenil; la agrupación actuó en las actividades del movimiento y en el «Tabernáculo de Adoración». El nombre Hope Worship siguió apareciendo en carteleras cristianas mientras Grupo Hope y Hope W Music identificaban sus videos y lanzamientos.\n\n**«Rodeado» y proyección**\n\nEn junio de 2022, Grupo Hope y «Tba Worship» presentaron «Rodeado», con Misael J y Carolina Ponciano como voces principales invitadas. Ponciano compuso la canción tras una experiencia de adoración; la grabación acreditó la producción musical a David Rosario, Dereck Cruz y el propio Ponciano, y el video fue realizado por Joseph Tavárez. La pieza llevó su música de congregación a una audiencia digital más amplia. El mismo año, Hope W Music recibió nominaciones de los «Premios AMCL» como artista revelación y por «Espíritu Santo».\n\n**La etapa de agrupación**\n\nEn mayo de 2023, al presentar «Monte Sinaí», Grupo Hope contaba con Esteban Ponciano al bajo y con Carolina Ponciano, Karol Michelle y Rut Senil en las voces. Ronny Ramírez escribió el tema, David Rosario hizo los arreglos y Agner Marte produjo el video. Los músicos lo grabaron en un ambiente semejante a un servicio religioso para facilitar su uso por otras congregaciones. Karol Michelle emprendió luego una carrera solista; su pertenencia anterior al grupo fue recordada en la prensa en 2024.\n\n**Colaboraciones y nuevas canciones**\n\nEn agosto de 2023, «Kadosh» reunió a Grupo Hope con Averly Morillo; los créditos del video atribuyen la composición a Junior Ponciano, Janiel Ponciano, Morillo y David Rosario. Después llegaron «Yeshua» y «Alfa & Omega» en 2024, esta última con Jordan Mateo y Ponciano. En 2025 el proyecto colaboró con Alison en «Lo llenas todo», una grabación en vivo acreditada también a Ponciano. La sucesión de intérpretes no borra la etapa de agrupación: muestra cómo una identidad musical compartida fue incorporando voces distintas.\n\n**Una plataforma de adoración**\n\nEl 3 de febrero de 2026, Grupo Hope anunció en su página oficial una nueva etapa como plataforma de adoración. Además de crear y difundir música congregacional, planteó acompañar espiritualmente, formar y dar visibilidad a nuevos adoradores. La actividad discográfica continuó bajo la identidad Hope W Music: en marzo publicó «Derrama Tu Aceite» con Misael J y Carolina Ponciano, y en agosto estrenó el video de «Te Mostraré Mi Gloria» con Carolina y Karen Ponciano. La declaración amplió el propósito del proyecto sin retirar su nombre ni sus canciones.\n\n**Legado**\n\nGrupo Hope conserva una trayectoria reconocible desde su debut como Hope Worship hasta su etapa de plataforma. Sus canciones, presentaciones y grabaciones enlazan la composición pastoral de Junior Ponciano con instrumentistas, vocalistas de la agrupación e invitados de distintas épocas. La continuidad del catálogo bajo Grupo Hope y Hope W Music permite seguir esa evolución sin tratar cada formación o colaboración como un proyecto diferente."
+    }
+  ],
+  "source_report": "docs/reports/editorial/grupo-hope-evolution-research-2026-11-07.md"
+}

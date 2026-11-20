@@ -1,0 +1,63 @@
+{
+  "url": "https://itunes.apple.com/lookup?id=1802416756&entity=song&country=us",
+  "accessed": "2026-10-20T13:06:12.844Z",
+  "data": {
+    "resultCount": 2,
+    "results": [
+      {
+        "wrapperType": "collection",
+        "collectionType": "Album",
+        "artistId": 1599213896,
+        "collectionId": 1802416756,
+        "artistName": "Dhariana \"La Coqueta\"",
+        "collectionName": "Emocion - Single",
+        "collectionCensoredName": "Emocion - Single",
+        "artistViewUrl": "https://music.apple.com/us/artist/dhariana-la-coqueta/1599213896?uo=4",
+        "collectionViewUrl": "https://music.apple.com/us/album/emocion-single/1802416756?uo=4",
+        "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/50/35/66/503566c6-ac43-552f-8fbf-fe9624b684dc/artwork.jpg/60x60bb.jpg",
+        "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/50/35/66/503566c6-ac43-552f-8fbf-fe9624b684dc/artwork.jpg/100x100bb.jpg",
+        "collectionPrice": 0.99,
+        "collectionExplicitness": "notExplicit",
+        "trackCount": 1,
+        "copyright": "℗ 2025 3513466 Records DK",
+        "country": "USA",
+        "currency": "USD",
+        "releaseDate": "2025-03-15T07:00:00Z",
+        "primaryGenreName": "Latin"
+      },
+      {
+        "wrapperType": "track",
+        "kind": "song",
+        "artistId": 1599213896,
+        "collectionId": 1802416756,
+        "trackId": 1802416757,
+        "artistName": "Dhariana \"La Coqueta\"",
+        "collectionName": "Emocion - Single",
+        "trackName": "Emocion",
+        "collectionCensoredName": "Emocion - Single",
+        "trackCensoredName": "Emocion",
+        "artistViewUrl": "https://music.apple.com/us/artist/dhariana-la-coqueta/1599213896?uo=4",
+        "collectionViewUrl": "https://music.apple.com/us/album/emocion/1802416756?i=1802416757&uo=4",
+        "trackViewUrl": "https://music.apple.com/us/album/emocion/1802416756?i=1802416757&uo=4",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/51/89/77/5189770f-d714-02c4-dcb3-f05e8b514b06/mzaf_3820040769575948716.plus.aac.p.m4a",
+        "artworkUrl30": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/50/35/66/503566c6-ac43-552f-8fbf-fe9624b684dc/artwork.jpg/30x30bb.jpg",
+        "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/50/35/66/503566c6-ac43-552f-8fbf-fe9624b684dc/artwork.jpg/60x60bb.jpg",
+        "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/50/35/66/503566c6-ac43-552f-8fbf-fe9624b684dc/artwork.jpg/100x100bb.jpg",
+        "collectionPrice": 0.99,
+        "trackPrice": 0.99,
+        "releaseDate": "2022-03-04T12:00:00Z",
+        "collectionExplicitness": "notExplicit",
+        "trackExplicitness": "notExplicit",
+        "discCount": 1,
+        "discNumber": 1,
+        "trackCount": 1,
+        "trackNumber": 1,
+        "trackTimeMillis": 212316,
+        "country": "USA",
+        "currency": "USD",
+        "primaryGenreName": "Latin",
+        "isStreamable": true
+      }
+    ]
+  }
+}

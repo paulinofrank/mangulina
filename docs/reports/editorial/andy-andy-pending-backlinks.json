@@ -1,0 +1,11 @@
+{
+  "target_artist_id":"78327502-74c8-4f19-9620-64cfc502ba1f",
+  "target_status":"draft",
+  "action":"Pending review at authorized artist publication; no changes to these documents",
+  "documents":[
+    {"owner":"Wason Brazobán","id":"2609abb2-c546-4490-9939-2c466a332305","locale":"es","revision":5,"context":"Ha escrito canciones para Anthony Santos, Zacarías Ferreira, Frank Reyes, Andy Andy, Monchy & Alexandra y otros"},
+    {"owner":"Wason Brazobán","id":"a4125353-bc60-4154-b1af-93411f3d3a61","locale":"en","revision":8,"context":"His compositions have been recorded by Anthony Santos, Zacarías Ferreira, Frank Reyes, Andy Andy, and Monchy & Alexandra"},
+    {"owner":"Chris Hierro","id":"817313ad-0e54-490b-b9c3-791cca525f56","locale":"en","revision":4,"context":"BMI listed his early writing, arranging and production credits in 2015 as Los Toros Band, Rubby Pérez, Andy Andy and Wason Brazobán"},
+    {"owner":"Chris Hierro","id":"b1a7ce87-5c75-4f87-9712-fe0379e3452c","locale":"es","revision":4,"context":"BMI enumeró en 2015 sus primeros créditos de composición, arreglos y producción: Los Toros Band, Rubby Pérez, Andy Andy y Wason Brazobán"}
+  ]
+}

@@ -1,0 +1,580 @@
+{
+  "date": "2026-11-07",
+  "scope": "Create Janiel Ponciano as one draft artist with published English and Spanish biographies. No release, discography, public profile publication, family relationship, member_of relationship or other artist biography changes.",
+  "artist": {
+    "id": "7f7cefd2-05e8-4581-89d6-04091c2ff114",
+    "name": "Janiel Ponciano",
+    "sort_name": "Ponciano, Janiel",
+    "slug": "janiel-ponciano",
+    "type": "solo_artist",
+    "status": "draft",
+    "stage_name": "Janiel Ponciano",
+    "aliases": [
+      "Janiel Fernando Ponciano Lebrón"
+    ],
+    "first_name": "Janiel",
+    "middle_name": "Fernando",
+    "last_name": "Ponciano",
+    "second_last_name": "Lebrón",
+    "gender": "male",
+    "primary_role": "musician",
+    "occupations": [
+      "bassist",
+      "singer",
+      "songwriter",
+      "producer"
+    ],
+    "instruments": [
+      "bass",
+      "voice"
+    ],
+    "primary_genre": "worship",
+    "genres": [],
+    "artist_tags": [
+      "christian"
+    ],
+    "facebook": "janiel.poncianolebron",
+    "instagram": "janielponciano",
+    "date_of_birth": null,
+    "birth_place": null,
+    "province": null,
+    "spotify": null,
+    "has_image": false
+  },
+  "documents": [
+    {
+      "owner_artist_id": "7f7cefd2-05e8-4581-89d6-04091c2ff114",
+      "locale": "en",
+      "expected_revision": 0,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Janiel Fernando Ponciano Lebrón is a Dominican Christian musician, singer and songwriter born on August 30. Known professionally as Janiel Ponciano, he plays bass and sings with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5bdcbc0d-24de-451d-abdd-4e40ab13b3d4",
+                  "occurrenceId": "ada8458a-bf73-406e-a479-9499899f7601",
+                  "displayText": "Barak"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", the worship band with which he has performed across the Americas and Europe."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Formation and Barak",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "A son of pastor Santiago Ponciano, Janiel grew up connected to the Iglesia Cristiana Tabernáculo de Adoración in Santo Domingo, the community in which "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5bdcbc0d-24de-451d-abdd-4e40ab13b3d4",
+                  "occurrenceId": "a05ec620-fd08-4a13-afd9-05f50d4bcfc2",
+                  "displayText": "Barak"
+                }
+              },
+              {
+                "type": "text",
+                "text": " developed. He joined the project after its initial formation and was a member by 2015. The band's own biography identifies him as bassist, vocalist and songwriter. With Angelo Frilop and Robert Green, he belongs to its artistic core; additional musicians have joined its live performances."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "During his tenure, "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5bdcbc0d-24de-451d-abdd-4e40ab13b3d4",
+                  "occurrenceId": "2f2dd688-9dba-41d1-853a-ff03c98b54af",
+                  "displayText": "Barak"
+                }
+              },
+              {
+                "type": "text",
+                "text": " received Latin Grammy nominations for «Generación Radical» in 2017 and «Fuego & Poder (Live)» in 2023, both in the Spanish-language Christian album category. Janiel took part in the band's international tours and its April 12, 2025 concert at Santo Domingo's Estadio Quisqueya, its first Dominican performance in eight years. Held days after the Jet Set tragedy, the concert also became an occasion for prayer and consolation."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Songwriting and production",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His writing also reaches other worship groups. He is credited on «Llena Este Lugar», recorded by "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "fdca10c2-9123-475a-a2fc-d0669e7697e9",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " with Mary Pagan in 2022. On "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "04788dac-8c1b-40ec-8c3e-c6a375838f20",
+                  "occurrenceId": "39022c83-0536-4994-b41a-2f446d3fd681",
+                  "displayText": "Grupo Hope"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s «Kadosh», featuring "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "548bc0df-b19a-43af-b5a4-798b8a401780",
+                  "occurrenceId": "c7d5879f-9aff-407e-b49c-23ad4ea5e478",
+                  "displayText": "Averly Morillo"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", he shares the writing credit with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "6697dec3-5b62-4ffb-bf62-047f46c6d4d0",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Averly Morillo and David Rosario. The 2026 "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "83025ca8-69b2-427d-b515-4bdbd0922679",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " recording «Uso Honorable» credits him alongside "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15ebe282-0d3d-47ed-8aaa-6c901dee5478",
+                  "occurrenceId": "b280ce80-3c86-4f39-bebb-56fa0d638886",
+                  "displayText": "Yuleisy Canela"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ef2dd5d6-6893-4e2b-ad13-ac8aa10c37de",
+                  "occurrenceId": "298ceddc-b9ed-4f94-8c9d-23be76154683",
+                  "displayText": "Ezequiel Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", David Rosario, Naomi Almonte, Luis Moreno and Cristian Rodríguez Armand."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2026 he wrote «Bondadoso Dios» with Angelo Frilop and Robert Green. Recorded live in the Dominican Republic, the song introduced "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5bdcbc0d-24de-451d-abdd-4e40ab13b3d4",
+                  "occurrenceId": "5852ac5c-1c2b-4e09-8138-039257739a8a",
+                  "displayText": "Barak"
+                }
+              },
+              {
+                "type": "text",
+                "text": "'s next project, «Iglesia». All three members are also credited with the recording's music production."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "His career joins bass and vocal performance within "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5bdcbc0d-24de-451d-abdd-4e40ab13b3d4",
+                  "occurrenceId": "0871ac21-6876-4142-9e0a-5e67519b4cd6",
+                  "displayText": "Barak"
+                }
+              },
+              {
+                "type": "text",
+                "text": " to songs taken up by other Dominican worship projects. That work connects an internationally touring band with the local musical community from which it emerged."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Janiel Fernando Ponciano Lebrón is a Dominican Christian musician, singer and songwriter born on August 30. Known professionally as Janiel Ponciano, he plays bass and sings with Barak, the worship band with which he has performed across the Americas and Europe.\n\n**Formation and Barak**\n\nA son of pastor Santiago Ponciano, Janiel grew up connected to the Iglesia Cristiana Tabernáculo de Adoración in Santo Domingo, the community in which Barak developed. He joined the project after its initial formation and was a member by 2015. The band's own biography identifies him as bassist, vocalist and songwriter. With Angelo Frilop and Robert Green, he belongs to its artistic core; additional musicians have joined its live performances.\n\nDuring his tenure, Barak received Latin Grammy nominations for «Generación Radical» in 2017 and «Fuego & Poder (Live)» in 2023, both in the Spanish-language Christian album category. Janiel took part in the band's international tours and its April 12, 2025 concert at Santo Domingo's Estadio Quisqueya, its first Dominican performance in eight years. Held days after the Jet Set tragedy, the concert also became an occasion for prayer and consolation.\n\n**Songwriting and production**\n\nHis writing also reaches other worship groups. He is credited on «Llena Este Lugar», recorded by Kabed with Mary Pagan in 2022. On Grupo Hope's «Kadosh», featuring Averly Morillo, he shares the writing credit with Junior Ponciano, Averly Morillo and David Rosario. The 2026 Kabed recording «Uso Honorable» credits him alongside Yuleisy Canela, Ezequiel Ponciano, David Rosario, Naomi Almonte, Luis Moreno and Cristian Rodríguez Armand.\n\nIn 2026 he wrote «Bondadoso Dios» with Angelo Frilop and Robert Green. Recorded live in the Dominican Republic, the song introduced Barak's next project, «Iglesia». All three members are also credited with the recording's music production.\n\n**Legacy**\n\nHis career joins bass and vocal performance within Barak to songs taken up by other Dominican worship projects. That work connects an internationally touring band with the local musical community from which it emerged."
+    },
+    {
+      "owner_artist_id": "7f7cefd2-05e8-4581-89d6-04091c2ff114",
+      "locale": "es",
+      "expected_revision": 0,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Janiel Fernando Ponciano Lebrón es un músico, cantante y compositor dominicano de música cristiana, nacido un 30 de agosto. Conocido como Janiel Ponciano, toca el bajo y aporta su voz a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5bdcbc0d-24de-451d-abdd-4e40ab13b3d4",
+                  "occurrenceId": "2c16e605-cff1-4598-bb8f-905d58e89901",
+                  "displayText": "Barak"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", agrupación con la que ha llevado la adoración dominicana a escenarios de América y Europa."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Formación y Barak",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hijo del pastor Santiago Ponciano, creció vinculado a la Iglesia Cristiana Tabernáculo de Adoración de Santo Domingo, el entorno donde se desarrolló "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5bdcbc0d-24de-451d-abdd-4e40ab13b3d4",
+                  "occurrenceId": "90198b67-a673-443b-ad3c-fdfa9646abfd",
+                  "displayText": "Barak"
+                }
+              },
+              {
+                "type": "text",
+                "text": ". Se incorporó al proyecto después de su formación inicial y ya integraba la banda en 2015. La propia agrupación lo presenta como bajista, vocalista y compositor. Junto a Angelo Frilop y Robert Green forma parte de su núcleo artístico, mientras otros músicos se han sumado a sus presentaciones en vivo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Durante su etapa en "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5bdcbc0d-24de-451d-abdd-4e40ab13b3d4",
+                  "occurrenceId": "8054e53e-bf57-4cc3-aca4-1f321ed459e1",
+                  "displayText": "Barak"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", la banda obtuvo nominaciones al Latin Grammy por «Generación Radical» en 2017 y «Fuego & Poder (Live)» en 2023, ambas en la categoría de álbum cristiano en español. Janiel participó en sus giras internacionales y en el concierto del 12 de abril de 2025 en el Estadio Quisqueya de Santo Domingo, regreso de la agrupación a los escenarios dominicanos tras ocho años. El encuentro tuvo lugar pocos días después de la tragedia del Jet Set y se convirtió también en una jornada de oración y consuelo."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Composición y producción",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trabajo como autor se extiende a otras agrupaciones de adoración. Figura entre los compositores de «Llena Este Lugar», grabada por "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "2eb537e1-1561-4a59-840f-84469c891fe5",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": " con Mary Pagan en 2022. En «Kadosh» de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "04788dac-8c1b-40ec-8c3e-c6a375838f20",
+                  "occurrenceId": "9e36801c-e6a6-464c-b9d9-a68c4ca509ea",
+                  "displayText": "Grupo Hope"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "548bc0df-b19a-43af-b5a4-798b8a401780",
+                  "occurrenceId": "807369fd-ca9c-4519-b535-ef8e5a8198f1",
+                  "displayText": "Averly Morillo"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", comparte composición con "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e897479f-94dd-47b5-af43-3a6dbfdac363",
+                  "occurrenceId": "5b08a3a1-c093-41ca-9a33-f86bd4e9836a",
+                  "displayText": "Junior Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", Averly Morillo y David Rosario. La grabación «Uso Honorable» de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "e6a27ceb-0e41-434e-b6aa-d1550c6d578b",
+                  "occurrenceId": "06f837a4-961c-438a-bc5d-fef2f2d36260",
+                  "displayText": "Kabed"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", publicada en 2026, lo acredita junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "15ebe282-0d3d-47ed-8aaa-6c901dee5478",
+                  "occurrenceId": "108882e3-98ab-42ad-842f-753b8477cd7a",
+                  "displayText": "Yuleisy Canela"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ef2dd5d6-6893-4e2b-ad13-ac8aa10c37de",
+                  "occurrenceId": "c8e805c2-6359-4525-b9e3-5801dcd63449",
+                  "displayText": "Ezequiel Ponciano"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", David Rosario, Naomi Almonte, Luis Moreno y Cristian Rodríguez Armand."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2026 escribió «Bondadoso Dios» junto a Angelo Frilop y Robert Green. El tema, grabado en vivo en la República Dominicana, presentó la siguiente producción de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5bdcbc0d-24de-451d-abdd-4e40ab13b3d4",
+                  "occurrenceId": "7a11fea9-9b3f-48aa-8402-97ef7afc0956",
+                  "displayText": "Barak"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", «Iglesia». Los tres integrantes también figuran como responsables de la producción musical de esa grabación."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trayectoria combina el trabajo instrumental y vocal dentro de "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "5bdcbc0d-24de-451d-abdd-4e40ab13b3d4",
+                  "occurrenceId": "de578ebf-9c2a-49fa-a5fa-a2a89875eabd",
+                  "displayText": "Barak"
+                }
+              },
+              {
+                "type": "text",
+                "text": " con composiciones que circulan entre otros proyectos de adoración dominicanos. Esa labor une el repertorio de una banda de alcance internacional con la comunidad musical de la que surgió."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "Janiel Fernando Ponciano Lebrón es un músico, cantante y compositor dominicano de música cristiana, nacido un 30 de agosto. Conocido como Janiel Ponciano, toca el bajo y aporta su voz a Barak, agrupación con la que ha llevado la adoración dominicana a escenarios de América y Europa.\n\n**Formación y Barak**\n\nHijo del pastor Santiago Ponciano, creció vinculado a la Iglesia Cristiana Tabernáculo de Adoración de Santo Domingo, el entorno donde se desarrolló Barak. Se incorporó al proyecto después de su formación inicial y ya integraba la banda en 2015. La propia agrupación lo presenta como bajista, vocalista y compositor. Junto a Angelo Frilop y Robert Green forma parte de su núcleo artístico, mientras otros músicos se han sumado a sus presentaciones en vivo.\n\nDurante su etapa en Barak, la banda obtuvo nominaciones al Latin Grammy por «Generación Radical» en 2017 y «Fuego & Poder (Live)» en 2023, ambas en la categoría de álbum cristiano en español. Janiel participó en sus giras internacionales y en el concierto del 12 de abril de 2025 en el Estadio Quisqueya de Santo Domingo, regreso de la agrupación a los escenarios dominicanos tras ocho años. El encuentro tuvo lugar pocos días después de la tragedia del Jet Set y se convirtió también en una jornada de oración y consuelo.\n\n**Composición y producción**\n\nSu trabajo como autor se extiende a otras agrupaciones de adoración. Figura entre los compositores de «Llena Este Lugar», grabada por Kabed con Mary Pagan en 2022. En «Kadosh» de Grupo Hope, con Averly Morillo, comparte composición con Junior Ponciano, Averly Morillo y David Rosario. La grabación «Uso Honorable» de Kabed, publicada en 2026, lo acredita junto a Yuleisy Canela, Ezequiel Ponciano, David Rosario, Naomi Almonte, Luis Moreno y Cristian Rodríguez Armand.\n\nEn 2026 escribió «Bondadoso Dios» junto a Angelo Frilop y Robert Green. El tema, grabado en vivo en la República Dominicana, presentó la siguiente producción de Barak, «Iglesia». Los tres integrantes también figuran como responsables de la producción musical de esa grabación.\n\n**Legado**\n\nSu trayectoria combina el trabajo instrumental y vocal dentro de Barak con composiciones que circulan entre otros proyectos de adoración dominicanos. Esa labor une el repertorio de una banda de alcance internacional con la comunidad musical de la que surgió."
+    }
+  ],
+  "field_evidence": {
+    "full_name": "ONAPI 2017 and SAYCO 2023 list Janiel Fernando Ponciano Lebrón / PONCIANO LEBRON JANIEL FERNANDO.",
+    "birthday": "Santiago Ponciano Facebook posts on 2014-08-30, 2015-08-30 and 2022-08-30 explicitly call Janiel his son and wish him happy birthday. Year unknown, so date_of_birth remains null.",
+    "birth_city": "No direct evidence of birthplace; Santo Domingo church and Dominican nationality do not establish birth city.",
+    "roles_and_genre": "Barak-supplied MultiTracks bio; 2026 Bondadoso Dios songwriting and production credits; Christian worship repertoire.",
+    "social_identity": "Barak official channel lists Instagram @janielponciano; Facebook page Janiel Ponciano Lebron identifies him as Barak member.",
+    "spotify": "No personal artist ID established; Barak and co-writer credits do not imply a solo artist page.",
+    "image": "No verified reusable portrait uploaded."
+  },
+  "corrections_to_submitted_sheet": [
+    "Uso Honorable was released 2026-04-10 in Shazam; seven writers, not three.",
+    "Llena Este Lugar has Janiel as a writer, but Secuencias lists Ezequiel too; no exclusive authorship claim.",
+    "Barak founding year and Janiel join year are not asserted without direct evidence.",
+    "No birth city or birth year inferred from Barak location or birthday posts."
+  ],
+  "sources": [
+    "https://www.onapi.gov.do/transparencia/index.php/institucional/publicaciones/3515-historico-de-publicaciones-de-registro/3517-historico-de-publicaciones-de-registro-2000-2019/407-2015-2019-pu/953-2019-pu?download=6110%3Apublicacion-15-de-marzo-2019",
+    "https://www.sayco.org/_files/ugd/733ded_d5db21634f7f41cbb913be11dd707a63.pdf",
+    "https://www.facebook.com/photo/?fbid=740417362726652",
+    "https://www.facebook.com/photo/?fbid=618552699679253",
+    "https://www.facebook.com/janiel.poncianolebron",
+    "https://www.instagram.com/janielponciano/",
+    "https://www.multitracks.com.br/artists/barak/biography/",
+    "https://www.diariolibre.com/revista/musica/2025/04/12/barak-se-presenta-tras-tragedia-en-discoteca-jet-set/3071674",
+    "https://www.latingrammy.com/en/artists/barak-33057/",
+    "https://www.grammy.com/news/2023-latin-grammys-complete-winners-nominees-nominations-list/",
+    "https://www.secuencias.com/songs/KABED/Favor-And-Gracia/Llena-Este-Lugar/overview/",
+    "https://www.youtube.com/watch?v=9hlJDW88NA8",
+    "https://www.youtube.com/watch?v=Lt7fd0yqOG0",
+    "https://www.shazam.com/song/1853885115/uso-honorable",
+    "https://radionotas.com/2026/10/07/barak-habla-en-su-nuevo-album-de-un-bondadoso-dios/"
+  ]
+}

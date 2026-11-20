@@ -1,0 +1,28 @@
+{
+ "artist":{
+  "name":"Lena Dardelet","stage_name":"Lena Dardelet","sort_name":"Dardelet, Lena","slug":"lena-dardelet",
+  "first_name":"Helena","middle_name":null,"last_name":"Dardelet","second_last_name":null,"aliases":["Helena Dardelet"],
+  "disambiguation":"French-Dominican singer-songwriter raised in Cabarete","type":"solo_artist","primary_role":"singer","occupations":["songwriter","musician"],"gender":"female",
+  "birth_place":"París","province":"Nacido en el Exterior","date_of_birth":null,"birth_year":null,
+  "primary_genre":"bachata","genres":["merengue","jazz"],"instruments":["voice"],"artist_tags":["secular"],
+  "facebook":"lenadardelet","instagram":"lenadardelet","youtube":"@LenaDardelet","spotify":"37orxD8Q5PDm53FazTRpP7","website":"https://linktr.ee/lenadardelet","status":"draft"
+ },
+ "bios":{
+  "es":[
+   ["","Lena Dardelet es una cantante, compositora y multiinstrumentista franco-dominicana nacida en París y criada en Cabarete. Conocida anteriormente como Helena Dardelet, desarrolla una propuesta que reúne bachata, merengue y formación jazzística, con canciones en español, francés e inglés."],
+   ["Cabarete y la formación en Montreal","Llegó a Cabarete durante sus primeros meses de vida y creció escuchando música dominicana. Posteriormente estudió música en Montreal, Canadá. La distancia respecto a la isla y su experiencia entre distintas culturas se convirtieron en elementos de su identidad artística. En 2018 presentó su primer EP, «Caja sin oxígeno»."],
+   ["Del jazz a los ritmos caribeños","En 2020 publicó «When the Sun», junto a [[mediopicky]], y «Bachaté», una bachata que combina el francés y el español con elementos contemporáneos. Su interpretación de «Juana Mecho» en «Dominicana’s Got Talent» quedó documentada por Color Visión en enero de 2021. Ese año lanzó «Hasta el final», una composición propia producida por Emmanuel Silverio y Joel Berrido, y «Me asomé al sol»."],
+   ["Los EP y las colaboraciones","El 18 de febrero de 2022 publicó el EP «Mírala Bailar», concebido como un homenaje a sus raíces caribeñas desde su perspectiva como mujer franco-dominicana. Incluye «Hasta el final», «Me asomé al sol» y «Moreno mío». En abril de 2024 presentó «Invierno y verano». Su catálogo también comprende «Ten Cuidao», con [[Inka]], y «Pa’ que bailemos», con [[Riccie Oriach]]."],
+   ["La etapa de «Lunes de Bachata»","En mayo de 2026 estrenó «Lunes de Bachata» junto al dúo Repike. El lanzamiento prolonga su exploración de la bachata desde una sensibilidad alternativa. Su actividad internacional comprende presentaciones en SXSW y en los escenarios neoyorquinos BAM y SOB’s, documentadas por su agencia de prensa."],
+   ["Legado","Su obra conecta la experiencia de crecer en Cabarete con una educación musical desarrollada en Canadá y una expresión multilingüe. La bachata y el merengue funcionan como puntos de encuentro entre su formación jazzística, la canción contemporánea y su vínculo con la cultura dominicana."]
+  ],
+  "en":[
+   ["","Lena Dardelet is a French-Dominican singer, songwriter and multi-instrumentalist born in Paris and raised in Cabarete. Previously known as Helena Dardelet, she brings together bachata, merengue and a background in jazz, writing and performing in Spanish, French and English."],
+   ["Cabarete and studies in Montreal","She moved to Cabarete during her first months of life and grew up listening to Dominican music. She later studied music in Montreal, Canada. Her experience of living between cultures, and the distance from the island, became elements of her artistic identity. In 2018 she released her first EP, «Caja sin oxígeno»."],
+   ["From jazz to Caribbean rhythms","In 2020 she released «When the Sun» with [[mediopicky]], followed by «Bachaté», a bachata combining French and Spanish with contemporary elements. Color Visión documented her performance of «Juana Mecho» on «Dominicana’s Got Talent» in January 2021. Later that year she released her own composition «Hasta el final», produced by Emmanuel Silverio and Joel Berrido, and «Me asomé al sol»."],
+   ["EPs and collaborations","Her EP «Mírala Bailar», released on February 18, 2022, pays tribute to her Caribbean roots from her perspective as a French-Dominican woman. It includes «Hasta el final», «Me asomé al sol» and «Moreno mío». She followed it with «Invierno y verano» in April 2024. Her catalog also includes «Ten Cuidao» with [[Inka]] and «Pa’ que bailemos» with [[Riccie Oriach]]."],
+   ["The «Lunes de Bachata» period","In May 2026 she released «Lunes de Bachata» with the duo Repike, extending her exploration of bachata through an alternative sensibility. Her international activity includes performances at SXSW and at New York venues BAM and SOB’s, documented by her press agency."],
+   ["Legacy","Her work connects her upbringing in Cabarete with musical studies in Canada and multilingual expression. Bachata and merengue provide meeting points between her jazz background, contemporary songwriting and her connection to Dominican culture."]
+  ]
+ }
+}

@@ -1,5 +1,6 @@
 import { cache } from "react";
 import { getSupabaseClient } from "@/lib/supabase";
+import { artistProfileTimeout } from "@/lib/artistProfileTimeout";
 import { getPublicReleaseCoverUrl } from "@/lib/releaseCover";
 
 export type ArtistAward = {
@@ -89,28 +90,41 @@ export type ArtistProfileData = {
 
 export const getArtistProfile = cache(async function getArtistProfile(slug: string) {
   const supabase = getSupabaseClient();
+  const signal = artistProfileTimeout();
 
-  const { data: publishedArtist, error: publishedArtistError } = await supabase
+  const { data: currentArtist, error: publishedArtistError } = await supabase
     .from("artists")
-    .select("id, type, ended, bio_en, bio_es, primary_genre, views, has_image, image_updated_at, date_of_death, death_year, instruments, formation_year, dissolution_year")
+    .select("id, slug, type, ended, bio_en, bio_es, primary_genre, views, has_image, image_updated_at, date_of_death, death_year, instruments, formation_year, dissolution_year")
     .eq("slug", slug)
     .eq("status", "published")
+    .abortSignal(signal)
     .maybeSingle();
 
-  if (publishedArtistError || !publishedArtist) {
-    if (publishedArtistError) {
-      console.error("getArtistProfile published artist check error:", publishedArtistError);
-    }
-    return null;
+  if (publishedArtistError) {
+    throw new Error("Unable to check public artist visibility.", { cause: publishedArtistError });
   }
+  let publishedArtist = currentArtist;
+  if (!publishedArtist) {
+    const historicalArtist = await supabase
+      .from("artists")
+      .select("id, slug, type, ended, bio_en, bio_es, primary_genre, views, has_image, image_updated_at, date_of_death, death_year, instruments, formation_year, dissolution_year")
+      .contains("slug_history", [slug])
+      .eq("status", "published")
+      .abortSignal(signal)
+      .maybeSingle();
+    if (historicalArtist.error) {
+      throw new Error("Unable to check public artist URL history.", { cause: historicalArtist.error });
+    }
+    publishedArtist = historicalArtist.data;
+  }
+  if (!publishedArtist) return null;
 
   const { data, error } = await supabase.rpc("get_artist_profile_page", {
-    artist_slug: slug,
-  });
+    artist_slug: publishedArtist.slug,
+  }).abortSignal(signal);
 
   if (error || !data) {
-    console.error("getArtistProfile error:", error);
-    return null;
+    throw new Error("Unable to load a confirmed public artist profile.", { cause: error });
   }
 
   return {
@@ -500,7 +514,7 @@ export async function getArtistDiscography(
   return Array.from(releases.values());
 }
 
-export async function getArtistMedia(artistId: string): Promise<ArtistMedia[]> {
+export async function getArtistMedia(artistId: string, signal: AbortSignal): Promise<ArtistMedia[]> {
   const supabase = getSupabaseClient();
   const baseFields =
     "id, artist_id, media_type, title, url, platform, external_id, thumbnail_url, published_date, is_official, is_featured, display_order, notes";
@@ -515,25 +529,18 @@ export async function getArtistMedia(artistId: string): Promise<ArtistMedia[]> {
       .order("is_featured", { ascending: false })
       .order("display_order", { ascending: true })
       .order("published_date", { ascending: false, nullsFirst: false })
-      .order("created_at", { ascending: true });
+      .order("created_at", { ascending: true })
+      .abortSignal(signal);
 
-  const { data, error } = await queryArtistMedia(`${baseFields}, ${youtubeFields}`);
-  const fallbackResponse = error ? await queryArtistMedia(baseFields) : null;
-  const resolvedData = fallbackResponse?.data ?? data;
-  const resolvedError = fallbackResponse?.error ?? null;
-
-  if (resolvedError) {
-    console.error("getArtistMedia error:", {
-      code: resolvedError.code,
-      message: resolvedError.message,
-      details: resolvedError.details,
-      hint: resolvedError.hint,
-    });
-
-    return [];
+  let response = await queryArtistMedia(`${baseFields}, ${youtubeFields}`);
+  if (response.error?.code === "42703") {
+    response = await queryArtistMedia(baseFields);
+  }
+  if (response.error) {
+    throw new Error("Unable to load artist media.", { cause: response.error });
   }
 
-  const rows = (resolvedData ?? []) as unknown as Partial<ArtistMedia>[];
+  const rows = (response.data ?? []) as unknown as Partial<ArtistMedia>[];
 
   return rows.map((item) => ({
     ...(item as Omit<

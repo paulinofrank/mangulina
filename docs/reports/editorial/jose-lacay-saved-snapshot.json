@@ -1,0 +1,617 @@
+{
+  "artists": [
+    {
+      "id": "072e44a9-8a54-4eee-a606-8162953f5154",
+      "mbid": null,
+      "name": "José Lacay",
+      "slug": "jose-lacay",
+      "type": "solo_artist",
+      "ended": false,
+      "views": 0,
+      "bio_en": null,
+      "bio_es": null,
+      "gender": "male",
+      "genres": [
+        "ballads-bolero",
+        "merengue",
+        "salsa"
+      ],
+      "status": "draft",
+      "aliases": [
+        "Jose Lacay",
+        "José Miguel Vásquez Lacay"
+      ],
+      "spotify": "3e2m8rnUL2tQVVus6u2k5L",
+      "website": null,
+      "youtube": null,
+      "facebook": null,
+      "province": "Distrito Nacional",
+      "birth_day": 19,
+      "has_image": true,
+      "instagram": null,
+      "last_name": null,
+      "sort_name": "Lacay, José",
+      "birth_year": 1947,
+      "created_at": "2026-10-19T13:17:14.195559+00:00",
+      "death_year": 2016,
+      "first_name": null,
+      "stage_name": "José Lacay",
+      "updated_at": "2026-10-19T13:17:58.329078+00:00",
+      "artist_tags": [
+        "secular"
+      ],
+      "birth_month": 3,
+      "birth_place": "Santo Domingo",
+      "instruments": [
+        "voice"
+      ],
+      "mb_metadata": {},
+      "middle_name": null,
+      "occupations": [],
+      "wikidata_id": null,
+      "primary_role": "singer",
+      "date_of_birth": "1947-03-19",
+      "date_of_death": "2016-11-14",
+      "primary_genre": "ballads",
+      "disambiguation": null,
+      "formation_year": null,
+      "dissolution_year": null,
+      "image_updated_at": "2026-10-19T13:17:58.279+00:00",
+      "second_last_name": null
+    },
+    {
+      "id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+      "mbid": null,
+      "name": "Rafael Solano",
+      "slug": "rafael-solano",
+      "type": "solo_artist",
+      "ended": false,
+      "views": 6,
+      "bio_en": "Rafael Leónidas Solano Sánchez is a Dominican composer, pianist, conductor and writer. He wrote Por Amor, which has gone further into the world than any other Dominican song, and he built the television programmes through which two generations of Dominican singers were first heard.\n\n**Puerto Plata**\n\nHe was born in Puerto Plata in 1931 and was treated as a prodigy by eleven, playing at the theatrical evenings his town put on. He came to the piano by way of the violin, the cello and the harmonium of the parish church, and in 1950 moved to the capital and enrolled at the National Conservatory.\n\nHe finished the whole course and then turned away from the concert career it pointed to, joining La Voz Dominicana, the country’s first television channel. He became one of its musical directors, working beside Italian, Cuban, Mexican and Argentine musicians who taught him orchestral arranging in practice. He later went to New York for private lessons with the American composer Hall Overton and study at the New School.\n\n**La Hora del Moro**\n\nBack in Santo Domingo he became a television producer, and in 1959 put La Hora del Moro on the air. Until then singing on Dominican television meant La Voz Dominicana, the station founded by the dictator’s brother; the new Sunday programme opened a second door.\n\nThe voices that came through it include Aníbal de Peña, Fernando Casado, Niní Cáffaro, Horacio Pichardo, Arístides Incháustegui, Julio César Defilló, Luchy Vicioso, José Lacay and Los Olmeños. With Nobel Alfonso he later remade the format as a daily show and renamed it El Show del Mediodía, which is still on the air in Santo Domingo.\n\nHe also created the Festival de la Voz, a talent competition that produced Fernando Villalona, Sergio Vargas, Adalgisa Pantaleón, Frank Valdez, Manny Oliva and Fausto Guillén. With Yaqui Núñez del Risco he produced Letra y Música, a nightly programme of music and opinion, and later Solano en Domingo and Solano Invita.\n\n**Por Amor**\n\nPor Amor won the first Dominican Song Festival sung by Niní Cáffaro. It has since been translated into several languages and recorded by Marco Antonio Muñiz, Tito Rodríguez, Jon Secada, Vikki Carr, the Mariachi Vargas and Plácido Domingo, which makes it the most widely travelled song the country has produced.\n\nThe rest of the catalogue runs past a hundred pieces. En la Oscuridad went out in the voice of Fernando Casado and later in those of Muñiz and Tito Rodríguez; En Ruinas was recorded by Felipe Pirela, Quiero Verte by Vicentico Valdés, Yo Soy Tu Enamorado again by Tito Rodríguez. Cada Vez Más, Confundidos, Mi Amor por Ti, Confesión de Amor, Perdidamente Enamorado, El Sonido de Tu Voz and Magia belong to the same body of work.\n\nHe set the words of René del Risco Bermudez for Una Primavera para el Mundo, and the lyrics of Yaqui Núñez del Risco for Pensándolo Bien.\n\n**Mangulina and Carnegie Hall**\n\nHe did not stay inside the bolero. Como Juan, Fandango, Güira y Tambora and Mocanita are folk pieces, and Dominicanita and Pensándolo Bien are bolemengues, all of them recorded in his own voice with his orchestra behind him. He made an album called A Bailar la Mangulina in 1970.\n\nThe instrumental records carried him abroad. Amorama, released in 1969, was recorded at Carnegie Hall.\n\n**The writing**\n\nHis column Solanismos ran in Listín Diario from 1975. He published Letra y Música in 1992, which he described in its prologue as autobiographical accounts of a Dominican musician rather than an autobiography, and in 2003 wrote El merengue, música y baile de la República Dominicana with the musicologist Catana Pérez de Cuello. That book won the national book fair prize in 2005. Música y Pensamiento followed in 2016.\n\n**The honours**\n\nHe served as Dominican ambassador and delegate to UNESCO in Paris between 1982 and 1986, and holds the Order of Merit of Duarte, Sánchez and Mella. He received the Gran Dorado in 1976 and El Soberano in 2005, the two highest awards in Dominican popular music, and in 2016 the Latin Recording Academy gave him its Musical Excellence Award.",
+      "bio_es": "Rafael Leónidas Solano Sánchez es un compositor, pianista, director de orquesta y escritor dominicano. Escribió Por Amor, que ha llegado más lejos en el mundo que ninguna otra canción dominicana, y armó los programas de televisión por los que se oyó por primera vez a dos generaciones de cantantes del país.\n\n**Puerto Plata**\n\nNació en Puerto Plata en 1931 y a los once años ya lo trataban de niño prodigio, presentándolo en las funciones teatrales de su pueblo. Llegó al piano pasando por el violín, el chelo y el armonio de la iglesia parroquial, y en 1950 se mudó a la capital y entró al Conservatorio Nacional.\n\nTerminó todos los cursos y entonces se desvió de la carrera de concierto a la que apuntaban, entrando a La Voz Dominicana, el primer canal de televisión del país. Llegó a ser uno de sus directores musicales, trabajando al lado de músicos italianos, cubanos, mexicanos y argentinos que le enseñaron arreglo orquestal en la práctica. Después se fue a Nueva York a tomar clases particulares con el compositor estadounidense Hall Overton y a estudiar en la New School.\n\n**La Hora del Moro**\n\nDe vuelta en Santo Domingo se hizo productor de televisión, y en 1959 puso al aire La Hora del Moro. Hasta entonces cantar en la televisión dominicana quería decir La Voz Dominicana, la emisora fundada por el hermano del dictador; aquel programa dominical abrió una segunda puerta.\n\nPor ahí salieron Aníbal de Peña, Fernando Casado, Niní Cáffaro, Horacio Pichardo, Arístides Incháustegui, Julio César Defilló, Luchy Vicioso, José Lacay y Los Olmeños. Con Nobel Alfonso rehízo después el formato en diario y lo rebautizó El Show del Mediodía, que sigue al aire en Santo Domingo.\n\nCreó además el Festival de la Voz, un concurso de donde salieron Fernando Villalona, Sergio Vargas, Adalgisa Pantaleón, Frank Valdez, Manny Oliva y Fausto Guillén. Con Yaqui Núñez del Risco produjo Letra y Música, programa nocturno diario de música y opinión, y más tarde Solano en Domingo y Solano Invita.\n\n**Por Amor**\n\nPor Amor ganó el I Festival de la Canción Dominicana en la voz de Niní Cáffaro. Desde entonces se ha traducido a varios idiomas y la han grabado Marco Antonio Muñiz, Tito Rodríguez, Jon Secada, Vikki Carr, el Mariachi Vargas y Plácido Domingo, lo que la convierte en la canción que más ha viajado de cuantas ha producido el país.\n\nEl resto del catálogo pasa del centenar de piezas. En la Oscuridad salió en la voz de Fernando Casado y después en las de Muñiz y Tito Rodríguez; En Ruinas la grabó Felipe Pirela, Quiero Verte Vicentico Valdés, y Yo Soy Tu Enamorado otra vez Tito Rodríguez. Cada Vez Más, Confundidos, Mi Amor por Ti, Confesión de Amor, Perdidamente Enamorado, El Sonido de Tu Voz y Magia pertenecen al mismo cuerpo de obra.\n\nLe puso música a los versos de René del Risco Bermudez en Una Primavera para el Mundo, y a la letra de Yaqui Núñez del Risco en Pensándolo Bien.\n\n**La mangulina y el Carnegie Hall**\n\nNo se quedó dentro del bolero. Como Juan, Fandango, Güira y Tambora y Mocanita son piezas folclóricas, y Dominicanita y Pensándolo Bien son bolemengues, todas grabadas en su propia voz y con su orquesta detrás. En 1970 hizo un disco titulado A Bailar la Mangulina.\n\nLos discos instrumentales lo sacaron del país. Amorama, publicado en 1969, se grabó en el Carnegie Hall.\n\n**La escritura**\n\nSu columna Solanismos salía en el Listín Diario desde 1975. Publicó Letra y Música en 1992, que él mismo describe en el prólogo como relatos autobiográficos de un músico dominicano y no como una autobiografía, y en 2003 escribió El merengue, música y baile de la República Dominicana junto a la musicóloga Catana Pérez de Cuello. Ese libro ganó el Premio Nacional Feria del Libro en 2005. Música y Pensamiento vino en 2016.\n\n**Los reconocimientos**\n\nFue embajador y delegado dominicano ante la Unesco en París entre 1982 y 1986, y tiene la Orden al Mérito de Duarte, Sánchez y Mella. Recibió El Gran Dorado en 1976 y El Soberano en 2005, los dos máximos galardones de la música popular dominicana, y en 2016 la Academia Latina de la Grabación le entregó su Premio a la Excelencia Musical.",
+      "gender": "male",
+      "genres": [
+        "bolero",
+        "merengue",
+        "folklore"
+      ],
+      "status": "published",
+      "aliases": null,
+      "spotify": null,
+      "website": null,
+      "youtube": null,
+      "facebook": null,
+      "province": "Puerto Plata",
+      "birth_day": 10,
+      "has_image": true,
+      "instagram": null,
+      "last_name": "Solano",
+      "sort_name": "Solano Sánchez, Rafael Leónidas",
+      "birth_year": 1931,
+      "created_at": "2026-05-24T01:19:44.699771+00:00",
+      "death_year": null,
+      "first_name": "Rafael",
+      "stage_name": null,
+      "updated_at": "2026-10-19T02:41:30.184874+00:00",
+      "artist_tags": [
+        "secular",
+        "legend"
+      ],
+      "birth_month": 4,
+      "birth_place": "San Felipe de Puerto Plata",
+      "instruments": [
+        "piano",
+        "violin",
+        "voice"
+      ],
+      "mb_metadata": {},
+      "middle_name": "Leónidas",
+      "occupations": [
+        "pianist",
+        "songwriter",
+        "conductor",
+        "writer"
+      ],
+      "wikidata_id": null,
+      "primary_role": "composer",
+      "date_of_birth": "1931-04-10",
+      "date_of_death": null,
+      "primary_genre": "ballads",
+      "disambiguation": "Composer of Por Amor, the Dominican song that travelled furthest; also a television producer and ambassador to UNESCO",
+      "formation_year": null,
+      "dissolution_year": null,
+      "image_updated_at": "2026-07-09T14:00:38.685+00:00",
+      "second_last_name": "Sánchez"
+    },
+    {
+      "id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+      "mbid": "6c08ef16-322b-4608-b014-bbfaab9ca6ca",
+      "name": "Jorge Taveras",
+      "slug": "jorge-taveras",
+      "type": "solo_artist",
+      "ended": true,
+      "views": 6,
+      "bio_en": "Jorge Edmundo Taveras Andújar was a Dominican pianist, arranger, producer and conductor. He worked behind other people’s records and in front of television house orchestras rather than under his own name, which is why his catalogue is a list of other artists — and a long one.\n\n**Ciudad Nueva**\n\nHe was born in Ciudad Nueva, Santo Domingo, in 1945, and began studying piano at the start of the fifties at the city’s elementary music school. In 1958 he joined a rock group led by Milton Peláez, and later entered the National Conservatory, where the company was serious instrumentalists.\n\nIn 1962 he took a job as pianist in the orchestra at the Hotel Europa, which was his first professional work and the room where he learned the trade. He also kept trying to become something else: he enrolled in civil engineering at the Madre y Maestra, then business administration at the Autonomous University, which he left when the April revolution of 1965 shut the country down, and then two more universities in Puerto Rico. He said afterwards that he had been through six of them trying to get a degree, and that the music kept pulling him back.\n\nWhile in Puerto Rico he enrolled at its conservatory instead, and came home at the end of 1966. He learned guitar, started going to the recording studios, and stopped trying to be anything other than a musician.\n\n**Los Caballeros Montecarlo**\n\nIn 1967 the executives of the tobacco company called him to Santiago to direct their band, Los Caballeros Montecarlo. He stayed eleven years, which is longer than most Dominican musicians of his generation stayed anywhere.\n\n**The house orchestras**\n\nIn 1973 he joined the television programme Nosotros a las 8 as director of its house orchestra, and began producing advertising jingles alongside it. He went on to direct the house orchestras of De Noche, Punto Final and El Show del Mediodía — the programme Rafael Solano had built — and produced the Sunday show Fantástico.\n\nHe was also the man promoters called when an international artist came to play the country and needed a band that could read anything on short notice.\n\n**The productions**\n\nThe records he worked on are where the career lives. He produced or arranged for Johnny Ventura, Wilfrido Vargas, Omar Franco, Olga Lara, Pochy y su Cocoband, Sonia Silvestre, José Antonio Rodríguez, Víctor Víctor, Miriam Cruz, Milly Quezada and Taty Salas, among others.\n\nThat is merengue, bachata, balada and nueva canción in the same working life, and it is why his name turns up in the credits of records that otherwise have nothing in common.\n\n**The festivals**\n\nHe took the same three roles — director, arranger and composer — to the OTI song festivals held in Mexico, Brazil and Puerto Rico, and to the Onda Nueva festival that Aldemaro Romero ran in Venezuela.\n\nHe died on 3 December 2021 in Orlando, Florida, at seventy-six.",
+      "bio_es": "Jorge Edmundo Taveras Andújar fue un pianista, arreglista, productor y director de orquesta dominicano. Trabajó detrás de los discos ajenos y al frente de las orquestas de planta de la televisión, y no bajo su propio nombre, razón por la cual su catálogo es una lista de otros artistas, y bastante larga.\n\n**Ciudad Nueva**\n\nNació en Ciudad Nueva, Santo Domingo, en 1945, y empezó a estudiar piano a principios de los cincuenta en la escuela elemental de música de la ciudad. En 1958 entró a un grupo de rock que dirigía Milton Peláez, y más adelante ingresó al Conservatorio Nacional, donde la compañía eran instrumentistas serios.\n\nEn 1962 tomó un puesto de pianista en la orquesta del hotel Europa, que fue su primer trabajo profesional y la sala donde aprendió el oficio. Siguió además intentando ser otra cosa: se inscribió en Ingeniería Civil en la Madre y Maestra, después en Administración de Empresas en la Autónoma, que dejó cuando estalló la Revolución de Abril de 1965 y el país se paralizó, y luego en dos universidades más en Puerto Rico. Él mismo contó después que pasó por seis tratando de hacerse de una carrera, y que la música lo halaba de vuelta.\n\nEstando en Puerto Rico se inscribió en cambio en su conservatorio, y regresó al país a finales de 1966. Aprendió guitarra, empezó a frecuentar los estudios de grabación, y dejó de intentar ser otra cosa que músico.\n\n**Los Caballeros Montecarlo**\n\nEn 1967 los ejecutivos de la tabacalera lo llamaron a Santiago para dirigir su banda, Los Caballeros Montecarlo. Se quedó once años, que es más de lo que la mayoría de los músicos dominicanos de su generación se quedaba en ningún sitio.\n\n**Las orquestas de planta**\n\nEn 1973 entró al programa de televisión Nosotros a las 8 como director de su orquesta de planta, y empezó en paralelo a producir jingles publicitarios. Después dirigió las orquestas de planta de De Noche, Punto Final y El Show del Mediodía —el programa que había armado Rafael Solano— y produjo el dominical Fantástico.\n\nEra además a quien llamaban los empresarios cuando venía un artista internacional a presentarse en el país y hacía falta una banda capaz de leer cualquier cosa con poco aviso.\n\n**Las producciones**\n\nLos discos en los que trabajó son donde vive la carrera. Produjo o arregló para Johnny Ventura, Wilfrido Vargas, Omar Franco, Olga Lara, Pochy y su Cocoband, Sonia Silvestre, José Antonio Rodríguez, Víctor Víctor, Miriam Cruz, Milly Quezada y Taty Salas, entre otros.\n\nEso es merengue, bachata, balada y nueva canción en una misma vida de trabajo, y es la razón por la que su nombre aparece en los créditos de discos que por lo demás no tienen nada que ver entre sí.\n\n**Los festivales**\n\nLlevó los mismos tres oficios —director, arreglista y compositor— a los festivales OTI de la canción celebrados en México, Brasil y Puerto Rico, y al festival de Onda Nueva que Aldemaro Romero organizaba en Venezuela.\n\nMurió el 3 de diciembre de 2021 en Orlando, Florida, a los setenta y seis años.",
+      "gender": "male",
+      "genres": [
+        "ballads"
+      ],
+      "status": "published",
+      "aliases": null,
+      "spotify": null,
+      "website": null,
+      "youtube": null,
+      "facebook": null,
+      "province": "Distrito Nacional",
+      "birth_day": 23,
+      "has_image": true,
+      "instagram": null,
+      "last_name": "Taveras",
+      "sort_name": "Taveras Andújar, Jorge Edmundo",
+      "birth_year": 1945,
+      "created_at": "2026-05-16T01:19:54.238088+00:00",
+      "death_year": 2021,
+      "first_name": "Jorge",
+      "stage_name": "Jorge Taveras",
+      "updated_at": "2026-10-19T11:05:47.819872+00:00",
+      "artist_tags": [
+        "secular",
+        "legend"
+      ],
+      "birth_month": 4,
+      "birth_place": "Ciudad Nueva, Santo Domingo",
+      "instruments": [
+        "piano",
+        "guitar"
+      ],
+      "mb_metadata": {
+        "id": "6c08ef16-322b-4608-b014-bbfaab9ca6ca",
+        "area": {
+          "id": "696cb3e0-5084-30ab-9916-65ece70adbf6",
+          "name": "Dominican Republic",
+          "type": "Country",
+          "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+          "life-span": {
+            "ended": null
+          },
+          "sort-name": "Dominican Republic"
+        },
+        "ipis": [
+          "00419014387"
+        ],
+        "name": "Jorge Taveras",
+        "type": "Person",
+        "score": 74,
+        "gender": "male",
+        "aliases": [
+          {
+            "name": "Jorge Edmundo Taveras Andújar",
+            "type": "Legal name",
+            "locale": null,
+            "primary": null,
+            "type-id": "d4dcd0c0-b341-3612-a332-c0ce797b25cf",
+            "end-date": null,
+            "sort-name": "Taveras Andújar, Jorge Edmundo",
+            "begin-date": null
+          }
+        ],
+        "country": "DO",
+        "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+        "end-area": {
+          "id": "ec1e55f4-03df-4ba1-a314-1ab959aa3fd6",
+          "name": "Orlando",
+          "type": "City",
+          "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+          "life-span": {
+            "ended": null
+          },
+          "sort-name": "Orlando"
+        },
+        "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+        "life-span": {
+          "end": "2021-12-03",
+          "begin": "1945-04-23",
+          "ended": true
+        },
+        "sort-name": "Taveras, Jorge",
+        "begin-area": {
+          "id": "a12fa9d0-fe6b-4e8e-a54e-0483b6fb6521",
+          "name": "Santo Domingo",
+          "type": "City",
+          "type-id": "6fd8f29a-3d0a-32fc-980d-ea697b69da78",
+          "life-span": {
+            "ended": null
+          },
+          "sort-name": "Santo Domingo"
+        }
+      },
+      "middle_name": "Edmundo",
+      "occupations": [
+        "arranger",
+        "conductor",
+        "composer",
+        "pianist",
+        "producer"
+      ],
+      "wikidata_id": null,
+      "primary_role": "musician",
+      "date_of_birth": "1945-04-23",
+      "date_of_death": "2021-12-03",
+      "primary_genre": "merengue",
+      "disambiguation": "Pianist, arranger and conductor; led the house orchestras of Dominican television and produced for a generation",
+      "formation_year": null,
+      "dissolution_year": null,
+      "image_updated_at": "2026-07-09T14:00:38.685+00:00",
+      "second_last_name": "Andújar"
+    }
+  ],
+  "documents": [
+    {
+      "id": "18c17748-ee5f-4908-8f55-d84e5be8c970",
+      "locale": "en",
+      "status": "published",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "José Lacay (born March 19, 1947, in Santo Domingo; died November 14, 2016) was a Dominican ballad and bolero singer associated with songs including «Marión» and «El motivo». He won the performer’s first prize at the fifth Dominican Song Festival in 1972 and worked in television, international festivals and tourist entertainment.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Training and television",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His early exposure came through «La Hora del Moro», the Rahintel television programme hosted by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                  "displayText": "Rafael Solano",
+                  "occurrenceId": "dd008fbe-50e7-48c6-b015-b15fb37054f3"
+                }
+              },
+              {
+                "text": ". He moved to New York in 1962 to study, taking singing lessons with pianist Gilberto Muñoz. He later continued his vocal training in Santo Domingo with soprano Ivonne Haza. In 1966 he made a professional television appearance on Myrta Silva’s «Una Hora Contigo» and subsequently toured with her.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Song festivals",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "After returning to the Dominican Republic in 1968, Lacay entered the festivals organised by «AMUCABA». In 1972 he won first place as a performer with «Llegó el invierno», written by Fernando and Ricardo Escovar. The song also earned the award for best arrangement, by ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                  "displayText": "Jorge Taveras",
+                  "occurrenceId": "eb4d6834-70c9-4c24-a713-22f0f271e8df"
+                }
+              },
+              {
+                "text": ". His career extended to festival appearances and performances in the Americas and Europe.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Repertoire and recordings",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "His remembered interpretations include «Marión», «El motivo», «Ya», «La copia» and «Amor desolado». Music platforms preserve the albums «Con Amor» and «Ese...es», along with his performance of «Después de hablar» on the compilation from the second Dominican Song Festival. Romantic song was central to his public identity, while contemporary accounts of his death also document merengue and salsa in his repertoire.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Stage revues and tourism",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lacay belonged to the solo singers’ roster of the «Ballet Folklórico Nacional», directed by Josefina Miniño. A bilingual singer, he performed in hotel and resort shows and presented his own musical revue, «Santo Domingo es así». These engagements formed another part of his work bringing Dominican music to international audiences.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lacay died on November 14, 2016, aged 69. Acroarte remembered his interpretive skill and his representation of the country at song festivals. His career connected the solo singer’s tradition with television and musical revues, leaving a repertoire remembered within Dominican popular song.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "revision": 1,
+      "created_at": "2026-10-19T13:18:04.507223+00:00",
+      "updated_at": "2026-10-19T13:18:04.507223+00:00",
+      "document_type": "artist_biography",
+      "schema_version": 1,
+      "owner_artist_id": "072e44a9-8a54-4eee-a606-8162953f5154"
+    },
+    {
+      "id": "f227a826-a986-4166-aae1-83c8a402c439",
+      "locale": "es",
+      "status": "published",
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "José Lacay (Santo Domingo, 19 de marzo de 1947–14 de noviembre de 2016) fue un cantante dominicano de balada y bolero, reconocido por canciones como «Marión» y «El motivo». Ganó como intérprete el V Festival de la Canción Dominicana en 1972 y desarrolló una carrera en la televisión, los festivales y los espectáculos turísticos.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Formación y televisión",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Su primera oportunidad artística llegó en «La Hora del Moro», programa de Rahintel conducido por ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                  "displayText": "Rafael Solano",
+                  "occurrenceId": "96552df2-f115-4dd2-b4d7-80021613320c"
+                }
+              },
+              {
+                "text": ". En 1962 se trasladó a Nueva York para estudiar y recibió clases de canto del pianista Gilberto Muñoz. Continuó su preparación vocal en Santo Domingo con la soprano Ivonne Haza. En 1966 se presentó profesionalmente en «Una Hora Contigo», de Myrta Silva, y posteriormente la acompañó en giras.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Los festivales de la canción",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Tras regresar al país en 1968, participó en los festivales organizados por «AMUCABA». En 1972 obtuvo el primer lugar como intérprete con «Llegó el invierno», de Fernando y Ricardo Escovar. La canción también recibió el premio al mejor arreglo, realizado por ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                  "displayText": "Jorge Taveras",
+                  "occurrenceId": "0709020e-7e9f-4a14-9a3f-3c70e8b8d33d"
+                }
+              },
+              {
+                "text": ". Su trayectoria incluyó participaciones en festivales y presentaciones en América y Europa.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Repertorio y grabaciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Además de «Marión» y «El motivo», entre sus interpretaciones recordadas figuran «Ya», «La copia» y «Amor desolado». Las plataformas musicales conservan los álbumes «Con Amor» y «Ese...es», así como su interpretación de «Después de hablar» en la recopilación del II Festival de la Canción Dominicana. Aunque se le asocia especialmente con la canción romántica, los testimonios contemporáneos de su fallecimiento también documentan merengue y salsa en su repertorio.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El escenario y el turismo",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Formó parte del elenco de cantantes solistas del «Ballet Folklórico Nacional», dirigido por Josefina Miniño. Como cantante bilingüe trabajó en espectáculos de hoteles y resorts y presentó su propia revista musical, «Santo Domingo es así». Esta faceta lo vinculó con la proyección de la música dominicana ante públicos internacionales.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Lacay falleció el 14 de noviembre de 2016, a los 69 años. Acroarte destacó su calidad interpretativa y su representación del país en festivales. Su trayectoria reúne la tradición del cantante solista, la televisión y la revista musical, con un repertorio que conserva un lugar en la memoria de la canción popular dominicana.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "revision": 1,
+      "created_at": "2026-10-19T13:18:23.2045+00:00",
+      "updated_at": "2026-10-19T13:18:23.2045+00:00",
+      "document_type": "artist_biography",
+      "schema_version": 1,
+      "owner_artist_id": "072e44a9-8a54-4eee-a606-8162953f5154"
+    }
+  ],
+  "relations": [
+    {
+      "id": "0178675c-1945-4ffa-bf6c-60340ae7f370",
+      "created_at": "2026-10-19T13:18:04.507223+00:00",
+      "updated_at": "2026-10-19T13:18:04.507223+00:00",
+      "entity_type": "artist",
+      "occurrence_id": "dd008fbe-50e7-48c6-b015-b15fb37054f3",
+      "target_artist_id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+      "editorial_document_id": "18c17748-ee5f-4908-8f55-d84e5be8c970"
+    },
+    {
+      "id": "9b2fc52c-2c39-4200-86ec-cd3fefdb805b",
+      "created_at": "2026-10-19T13:18:04.507223+00:00",
+      "updated_at": "2026-10-19T13:18:04.507223+00:00",
+      "entity_type": "artist",
+      "occurrence_id": "eb4d6834-70c9-4c24-a713-22f0f271e8df",
+      "target_artist_id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+      "editorial_document_id": "18c17748-ee5f-4908-8f55-d84e5be8c970"
+    },
+    {
+      "id": "956bffa3-61cc-423e-bea9-50d756ffc879",
+      "created_at": "2026-10-19T13:18:23.2045+00:00",
+      "updated_at": "2026-10-19T13:18:23.2045+00:00",
+      "entity_type": "artist",
+      "occurrence_id": "96552df2-f115-4dd2-b4d7-80021613320c",
+      "target_artist_id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+      "editorial_document_id": "f227a826-a986-4166-aae1-83c8a402c439"
+    },
+    {
+      "id": "6b795361-e6ef-496b-b1af-35e7fd4e058b",
+      "created_at": "2026-10-19T13:18:23.2045+00:00",
+      "updated_at": "2026-10-19T13:18:23.2045+00:00",
+      "entity_type": "artist",
+      "occurrence_id": "0709020e-7e9f-4a14-9a3f-3c70e8b8d33d",
+      "target_artist_id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+      "editorial_document_id": "f227a826-a986-4166-aae1-83c8a402c439"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "artist": {
+    "name": "Brettón",
+    "stage_name": "Brettón",
+    "sort_name": "Brettón",
+    "slug": "bretton",
+    "first_name": "Emmanuel",
+    "middle_name": null,
+    "last_name": "Bretón",
+    "second_last_name": null,
+    "aliases": [
+      "Emmanuel Bretón",
+      "Enmanuel Bretón",
+      "Bretton"
+    ],
+    "disambiguation": "Dominican singer-songwriter from Santiago de los Caballeros",
+    "type": "solo_artist",
+    "primary_role": "singer",
+    "occupations": [
+      "songwriter",
+      "producer"
+    ],
+    "gender": "male",
+    "birth_place": null,
+    "province": "Santiago",
+    "date_of_birth": "1981-06-25",
+    "birth_year": 1981,
+    "primary_genre": "fusion",
+    "genres": [
+      "rock",
+      "ballads"
+    ],
+    "instruments": [
+      "voice",
+      "guitar"
+    ],
+    "artist_tags": [
+      "secular"
+    ],
+    "facebook": "SoyBretton",
+    "instagram": "soybretton",
+    "youtube": "@soybretton",
+    "spotify": "4NF60hbzMzeKZsHBD8nLqm",
+    "website": "https://soybretton.com/",
+    "status": "draft"
+  },
+  "bios": {
+    "es": [
+      [
+        "",
+        "Brettón, nombre artístico de Emmanuel Bretón, es un cantante, compositor y productor dominicano nacido el 25 de junio de 1981 y oriundo de Santiago de los Caballeros. Su propuesta combina pop, rock y balada con una canción de autor centrada en las relaciones y los cambios personales. Además de su actividad musical, trabaja en diseño gráfico, fotografía y creación audiovisual."
+      ],
+      [
+        "La escena de Santiago",
+        "Creció en una familia de músicos y educadores y comenzó a acercarse a la música desde niño. En Santiago participó en proyectos como «Plasma» y «Punto G». Centro León documentó en 2018 una presentación suya en el Patio Caribeño: interpretó composiciones como «Momentos compartidos», «Transparente» y «Tu nombre», acompañado por otros músicos locales. También colaboró en grabaciones de [[Pat Pereyra]], entre ellas su producción «Mestura»."
+      ],
+      [
+        "De «Contraluz» a «Todo un Universo por Vivir»",
+        "En 2018 publicó «Contraluz», un EP de cinco canciones de su autoría producido por José Luis Freitas. En mayo de 2021 presentó su primer álbum de larga duración, «Todo un Universo por Vivir», realizado con Freitas para la «Fundación Revolución Sonora». Participaron [[Pat Pereyra]], [[Sabrina Estepan]], [[Janio Lora]] y Addy Núñez. Entre las canciones del proyecto figuran «A Contraluz», junto a [[Sabrina Estepan]], «Ruinas», con [[Pat Pereyra]], «Mala suerte» y «La piel que nos creamos»."
+      ],
+      [
+        "Canciones y trabajo audiovisual",
+        "En una entrevista de 2022 con LAUD explicó que la realización del álbum estuvo ligada a un proceso de confianza en su voz y sus composiciones. Su trabajo visual acompaña esa búsqueda: ha asumido tareas de dirección, guion y edición en sus propios videos, como «Nuestro amor», rodado en Bogotá. En 2024 publicó «Deseándonos ir» junto a [[Rose Mateo]], una balada sobre una pareja que decide separarse."
+      ],
+      [
+        "Una nueva etapa",
+        "En 2025 lanzó «Caso perdido» y «Qué bonito lo bonito» como anticipos de un nuevo proyecto discográfico. Su propia biografía los presenta como canciones de su autoría y autoproducidas. Su repertorio mantiene la atención en la intimidad de las relaciones, con arreglos que transitan entre la balada y el pop rock."
+      ],
+      [
+        "Legado",
+        "Su trayectoria enlaza la escena musical de Santiago con la producción independiente y el trabajo visual. Sus colaboraciones y grabaciones muestran una práctica en la que la escritura de canciones, la interpretación y la creación de imágenes forman parte de un mismo proyecto artístico."
+      ]
+    ],
+    "en": [
+      [
+        "",
+        "Brettón, the professional name of Emmanuel Bretón, is a Dominican singer, songwriter and producer born on June 25, 1981, and originally from Santiago de los Caballeros. His music brings pop, rock and romantic ballads into a songwriting practice concerned with relationships and personal change. He also works in graphic design, photography and audiovisual production."
+      ],
+      [
+        "Music in Santiago",
+        "Raised in a family of musicians and educators, he began exploring music in childhood. His early work included Santiago projects such as «Plasma» and «Punto G». In 2018 Centro León documented his performance in its Patio Caribeño, where he sang original pieces including «Momentos compartidos», «Transparente» and «Tu nombre» with other local musicians. He also contributed to recordings by [[Pat Pereyra]], including her production «Mestura»."
+      ],
+      [
+        "From «Contraluz» to a full-length album",
+        "His 2018 EP «Contraluz» contained five self-written songs produced by José Luis Freitas. In May 2021 he introduced his first full-length album, «Todo un Universo por Vivir», developed with Freitas for «Fundación Revolución Sonora». Its collaborators included [[Pat Pereyra]], [[Sabrina Estepan]], [[Janio Lora]] and Addy Núñez. The project includes «A Contraluz» with [[Sabrina Estepan]], «Ruinas» with [[Pat Pereyra]], «Mala suerte» and «La piel que nos creamos»."
+      ],
+      [
+        "Songs and their images",
+        "Speaking to LAUD in 2022, he described making the album as a process of learning to trust his singing and compositions. His visual work forms another part of that practice: he has directed, written and edited his own videos, including «Nuestro amor», filmed in Bogotá. In 2024 he joined [[Rose Mateo]] on «Deseándonos ir», a ballad about a couple choosing to separate."
+      ],
+      [
+        "A further recording project",
+        "In 2025 he released «Caso perdido» and «Qué bonito lo bonito» as previews of a new recording project. His own biography identifies both as self-written and self-produced. These songs continue his interest in intimate relationships, using arrangements that move between ballad and pop rock."
+      ],
+      [
+        "Legacy",
+        "His career connects Santiago's local music scene with independent recording and visual production. His collaborations and releases bring songwriting, performance and image-making together within a single artistic practice."
+      ]
+    ]
+  }
+}

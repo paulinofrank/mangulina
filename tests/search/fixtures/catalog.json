@@ -1,0 +1,185 @@
+{
+  "artists": [
+    {
+      "type": "artist",
+      "id": "8ed39044-69c5-4da0-b884-70ea5c337e59",
+      "title": "Jhoan Hernández",
+      "slug": "jhoan-hernandez",
+      "aliases": [
+        "Jhoan Hernandez"
+      ],
+      "status": "published",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    },
+    {
+      "type": "artist",
+      "id": "4f331050-2568-42a4-a73b-7f9a731f1df4",
+      "title": "Dalvin la Melodía",
+      "slug": "dalvin-la-melodia",
+      "aliases": [],
+      "status": "published",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    },
+    {
+      "type": "artist",
+      "id": "61781451-6220-4b5c-9074-9c1b6d2ec2ab",
+      "title": "Ada Betsabé",
+      "slug": "ada-betsabe",
+      "aliases": [],
+      "status": "published",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    },
+    {
+      "type": "artist",
+      "id": "5d8fb3d5-facf-4c54-b92c-518a7ec79d74",
+      "title": "Didi Hernández",
+      "slug": "didi-hernandez",
+      "aliases": [],
+      "status": "published",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    },
+    {
+      "type": "artist",
+      "id": "3dd4ffd4-6d58-4e78-b6d8-28f126eaed08",
+      "title": "BlackFox",
+      "slug": "blackfox",
+      "aliases": [],
+      "status": "needs_review",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    },
+    {
+      "type": "artist",
+      "id": "5b271d53-9c3e-4cc3-88a4-b94126604198",
+      "title": "Anmily",
+      "slug": "anmily",
+      "aliases": [],
+      "status": "published",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    },
+    {
+      "type": "artist",
+      "id": "30f61137-9e6b-472a-b4ef-b13aecae2d7a",
+      "title": "O.G. Black",
+      "slug": "o-g-black",
+      "aliases": [
+        "OG Black",
+        "El Francotirador"
+      ],
+      "status": "published",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    },
+    {
+      "type": "artist",
+      "id": "080c0205-8b66-4f16-915e-1d867acf82cc",
+      "title": "Maridalia Hernández",
+      "slug": "maridalia-hernandez",
+      "aliases": [],
+      "status": "published",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    },
+    {
+      "type": "artist",
+      "id": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+      "title": "Johnny Ventura",
+      "slug": "johnny-ventura",
+      "aliases": [
+        "El Caballo Mayor",
+        "El Padre del Merengue Moderno",
+        "El Merenguero del Siglo",
+        "El Señor del Merengue"
+      ],
+      "status": "published",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    },
+    {
+      "type": "artist",
+      "id": "629a7daa-5ab3-4b77-825f-6795b8c4a566",
+      "slug": "marcos-yaroide",
+      "title": "Marcos Yaroide",
+      "aliases": [],
+      "status": "published",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    },
+    {
+      "type": "artist",
+      "id": "bc2289d0-ae94-48b5-8eb9-7f0ae18b845a",
+      "title": "Miriam Cruz",
+      "slug": "miriam-cruz",
+      "aliases": [
+        "La Diva del Merengue"
+      ],
+      "status": "published",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    }
+  ],
+  "songs": [
+    {
+      "type": "song",
+      "id": "24f4ac3c-ee79-4000-a54f-4f9d2d0eaf22",
+      "title": "Camionero",
+      "slug": "camionero-ray-polanco",
+      "subtitle": null,
+      "year": 1986,
+      "cover_url": null
+    },
+    {
+      "type": "song",
+      "id": "cd872ce6-465f-415e-93fe-8592fff95ce1",
+      "title": "Obsesión",
+      "slug": "obsesion-vicente-pacheco-2024",
+      "subtitle": null,
+      "year": 2024,
+      "cover_url": null
+    },
+    {
+      "type": "song",
+      "id": "70ba38d1-1ff8-4939-af31-4f7865b5b761",
+      "title": "Obsesión",
+      "slug": "obsesion-natti-natasha",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    },
+    {
+      "type": "song",
+      "id": "5dea55a9-14c0-42a7-a329-289b4557cfcf",
+      "title": "Amor",
+      "slug": "amor-melody-astacio",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    },
+    {
+      "type": "song",
+      "id": "c26e096d-a22a-4ac4-a4dc-422ee6dc637e",
+      "title": "Amor",
+      "slug": "amor-niko-eme",
+      "subtitle": null,
+      "year": null,
+      "cover_url": null
+    }
+  ],
+  "releases": []
+}

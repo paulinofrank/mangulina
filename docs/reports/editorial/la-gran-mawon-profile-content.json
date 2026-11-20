@@ -1,0 +1,31 @@
+{
+  "artist": {
+    "birth_place": "Santo Domingo",
+    "province": "Distrito Nacional",
+    "formation_year": 2011,
+    "primary_genre": "fusion",
+    "genres": ["folklore", "reggae"],
+    "occupations": [],
+    "artist_tags": ["secular"],
+    "spotify": "6YLVFLxxNTruuMRMRCEN5Y",
+    "facebook": "LaGranMawon",
+    "instagram": "lagranmawon",
+    "youtube": "@LaGranMawon"
+  },
+  "bios": {
+    "es": [
+      [null, "La Gran Mawon es un colectivo musical dominicano de fusión afrocaribeña surgido en 2011 en la Zona Colonial de Santo Domingo. Su música combina ritmos afrodominicanos como el palo, el gagá, el congo y la sarandunga con reggae, rock y otros sonidos contemporáneos. El proyecto sitúa la herencia musical negra del país en el centro de su repertorio."],
+      ["De las plazas a la agrupación", "El grupo nació de sesiones nocturnas de improvisación en las plazas de la Zona Colonial. Entre sus integrantes originales más constantes estaban el guitarrista y compositor [[Mítiko]], el cantante Zahir y el MC Gato. La formación se amplió con el tiempo: sus entrevistas documentan la participación de voces, bajistas, bateristas y percusionistas en distintas etapas. En una entrevista de 2013, [[Mítiko]] explicó que «mawon» procede del criollo haitiano y alude a lo cimarrón; el colectivo adoptó esa idea como parte de su identidad artística."],
+      ["Primeras grabaciones", "«Fuego Petró», de 2013, fue su primer sencillo. En agosto de 2016 publicó «La Gran Mawon», una producción homónima de siete temas que incluye «La Culebra», canción asociada a la escritura de [[Mítiko]]. Al año siguiente la agrupación se presentó en Nueva York. En 2019 lanzó los sencillos «Melancolia Tropical» y «Candela Pa Lo Pie»; este último fue presentado como una mezcla de gagá y jazz."],
+      ["«Radio Katharsis» y escenarios", "Después de «Gana (sillita de guano)» (2020) y «Morena De Lu» (2021), publicó «Radio Katharsis» el 29 de septiembre de 2023. El álbum reúne diez canciones, entre ellas «Te Doy Seguro», con [[Vakeró]]. En febrero de 2024 La Gran Mawon participó en un encuentro sobre música afrodominicana en la Universidad Rutgers junto a [[Xiomara Fortuna]] y [[Yasser Tejeda]]. También actuó ese año en el festival «Isle of Light» en Santo Domingo."],
+      ["Legado", "Desde sus primeras improvisaciones hasta sus álbumes y presentaciones internacionales, La Gran Mawon ha trabajado los ritmos afrodominicanos como música viva. Su formación cambiante y sus grabaciones documentan una propuesta colectiva que conecta tradiciones del Caribe con la escena alternativa contemporánea de Santo Domingo."]
+    ],
+    "en": [
+      [null, "La Gran Mawon is a Dominican Afro-Caribbean fusion collective formed in Santo Domingo's Colonial Zone in 2011. Its music brings Afro-Dominican rhythms including palo, gagá, congo and sarandunga together with reggae, rock and other contemporary sounds. Black Dominican musical heritage is central to the group's repertoire."],
+      ["From jam sessions to a collective", "The band grew out of nighttime jam sessions in the public squares of the Colonial Zone. Its continuing original members included guitarist and composer [[Mítiko]], singer Zahir and MC Gato. The lineup later expanded, with the group's interviews documenting singers, bassists, drummers and percussionists across different periods. In a 2013 interview, [[Mítiko]] explained that «mawon» comes from Haitian Creole and evokes the maroon; the collective made that idea part of its artistic identity."],
+      ["Early recordings", "Its first single was «Fuego Petró» in 2013. In August 2016 the group released «La Gran Mawon», a seven-track self-titled record that includes «La Culebra», a song associated with [[Mítiko]]'s writing. The group performed in New York the following year. Its 2019 singles included «Melancolia Tropical» and «Candela Pa Lo Pie», the latter presented as a blend of gagá and jazz."],
+      ["«Radio Katharsis» and live work", "Following «Gana (sillita de guano)» in 2020 and «Morena De Lu» in 2021, La Gran Mawon released the ten-track album «Radio Katharsis» on September 29, 2023. The record includes «Te Doy Seguro» with [[Vakeró]]. In February 2024, the group joined [[Xiomara Fortuna]] and [[Yasser Tejeda]] for a Rutgers University event on Afro-Dominican music. It also performed at Santo Domingo's «Isle of Light» festival that year."],
+      ["Legacy", "From its first jam sessions through recorded albums and performances abroad, La Gran Mawon has treated Afro-Dominican rhythms as living music. Its changing lineup and recordings document a collective approach that connects Caribbean traditions with Santo Domingo's contemporary alternative scene."]
+    ]
+  }
+}

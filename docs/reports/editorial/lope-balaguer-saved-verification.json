@@ -1,0 +1,638 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "771e3bcf-396a-492a-833f-8afb45964520",
+        "name": "Lope Balaguer",
+        "sort_name": "Balaguer, Lope",
+        "type": "solo_artist",
+        "birth_year": 1925,
+        "death_year": 2015,
+        "created_at": "2026-10-25T12:45:18.14121+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": "José",
+        "middle_name": "Manuel",
+        "last_name": "López",
+        "second_last_name": "Balaguer",
+        "stage_name": "Lope Balaguer",
+        "date_of_birth": "1925-08-22",
+        "birth_place": "Santiago de los Caballeros",
+        "website": null,
+        "youtube": null,
+        "facebook": null,
+        "instagram": null,
+        "aliases": [
+          "José Manuel López Balaguer",
+          "El Cantantazo",
+          "El tenor de la juventud"
+        ],
+        "mbid": null,
+        "occupations": [],
+        "instruments": [
+          "voice"
+        ],
+        "genres": [
+          "ballads",
+          "merengue"
+        ],
+        "disambiguation": null,
+        "gender": "male",
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-25T12:45:18.14121+00:00",
+        "province": "Santiago",
+        "birth_day": 22,
+        "birth_month": 8,
+        "slug": "lope-balaguer",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": "2015-01-29",
+        "status": "draft",
+        "primary_genre": "bolero",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "5AeD3vYpEcUz3dxl5hDh6E"
+      },
+      {
+        "id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+        "name": "Joaquín Balaguer",
+        "slug": "joaquin-balaguer",
+        "status": "published"
+      },
+      {
+        "id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+        "name": "Jorge Taveras",
+        "slug": "jorge-taveras",
+        "status": "published"
+      },
+      {
+        "id": "dab6636c-21fd-4e34-a0a2-e59e9e147bbd",
+        "name": "Luis Kalaff",
+        "slug": "luis-kalaff",
+        "status": "published"
+      },
+      {
+        "id": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+        "name": "Manuel Troncoso",
+        "slug": "manuel-troncoso",
+        "status": "published"
+      },
+      {
+        "id": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+        "name": "Papa Molina",
+        "slug": "papa-molina",
+        "status": "published"
+      },
+      {
+        "id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+        "name": "Rafael Solano",
+        "slug": "rafael-solano",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "93464451-7750-4bae-b2b4-a714d6ce9312",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Lope Balaguer, the stage name of José Manuel López Balaguer, was a Dominican bolero and ballad singer known as «El Cantantazo». He was born on August 22, 1925, in Santiago de los Caballeros and died on January 29, 2015, in Santo Domingo. His voice became associated with several generations of Dominican romantic song.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "From radio to international stages",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "He began performing on Radio HIX in April 1940 while still a teenager. In 1944 he sang on La Voz del Yuna in Bonao with the Orquesta San José, and in 1945 he made his capital-city debut at Café Ariete on Calle El Conde. The magazine «HIL» called him «el tenor de la juventud».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "During the 1940s he performed in Cuba, where he adopted the name Lope Balaguer, and subsequently in Puerto Rico. His career also took him to Venezuela, Colombia, Central America, Haiti, the French Antilles, and the United States. Radio and performances with orchestras were central to his development as an interpreter.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Repertoire and recordings",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "He interpreted «Nunca te lo he dicho» by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+                    "displayText": "Papa Molina",
+                    "occurrenceId": "3c5f0fe9-e44a-40db-b455-f189649cd761"
+                  }
+                },
+                {
+                  "text": ", «Mi gloria» by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "dab6636c-21fd-4e34-a0a2-e59e9e147bbd",
+                    "displayText": "Luis Kalaff",
+                    "occurrenceId": "2256f6eb-3466-4c57-90a3-b5444d2ba9dc"
+                  }
+                },
+                {
+                  "text": ", and «Sígueme» by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+                    "displayText": "Manuel Troncoso",
+                    "occurrenceId": "e667cf54-0887-4c56-9d09-dae682899586"
+                  }
+                },
+                {
+                  "text": ". His remembered repertoire also includes «Arenas del desierto», «Serrana», «No me abandones», and «Mi padre», the latter written by Bobby Capó and regularly heard during Dominican Father’s Day celebrations.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In 1969 he recorded «El Lope Balaguer de hoy y de siempre» in Madrid with an orchestra directed by ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                    "displayText": "Rafael Solano",
+                    "occurrenceId": "0630cb8e-5993-41d8-919d-94a9b131c3ce"
+                  }
+                },
+                {
+                  "text": ". During 1976 and 1977 he worked in Buenos Aires on productions including «Algo contigo», «Aquellos años cuarenta», «Espectacular», and «Me siento bien contigo». The Dominican national archive preserves «Algo contigo» as a 1976 vinyl album containing ten recordings. In his later career he maintained a musical collaboration with ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                    "displayText": "Jorge Taveras",
+                    "occurrenceId": "5900afae-5e8c-4838-86a7-1f55929847d6"
+                  }
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Television and public life",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "He hosted a television program where he performed and gave space to other singers. A nephew of ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+                    "displayText": "Joaquín Balaguer",
+                    "occurrenceId": "db4d4b38-e66b-4158-bd55-81fb9928bbd3"
+                  }
+                },
+                {
+                  "text": ", he also served in a consular capacity in Taiwan. He was formerly married to Flor de Oro Trujillo and was married to Miriam Pérez at his death. Acroarte recognized his career with a Merit award in 2006.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "His repertoire preserved works by Dominican composers alongside songs from elsewhere in Latin America. The continued presence of «Mi padre», «Mi gloria», and his boleros in recordings, archives, and streaming catalogs documents his place in the memory of Dominican popular song.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "771e3bcf-396a-492a-833f-8afb45964520",
+        "created_at": "2026-10-25T12:45:18.649391+00:00",
+        "updated_at": "2026-10-25T12:45:18.649391+00:00",
+        "revision": 1
+      },
+      {
+        "id": "d56288fd-14d5-43f8-92ab-e4dacc19aac7",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Lope Balaguer, nombre artístico de José Manuel López Balaguer, fue un cantante dominicano de boleros y baladas conocido como «El Cantantazo». Nació el 22 de agosto de 1925 en Santiago de los Caballeros y falleció el 29 de enero de 2015 en Santo Domingo. Su voz quedó asociada a varias generaciones de la canción romántica dominicana.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "De la radio al escenario internacional",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Inició su actividad en Radio HIX en abril de 1940, todavía adolescente. En 1944 cantó en La Voz del Yuna, en Bonao, con la Orquesta San José, y en 1945 debutó en la capital en el Café Ariete, de la calle El Conde. La revista «HIL» lo distinguió como «el tenor de la juventud».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Durante los años cuarenta actuó en Cuba, donde adoptó el nombre de Lope Balaguer, y posteriormente en Puerto Rico. Su carrera lo llevó también a Venezuela, Colombia, Centroamérica, Haití, las Antillas francesas y los Estados Unidos. La radio y los espectáculos con orquesta fueron espacios centrales de su desarrollo como intérprete.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Repertorio y grabaciones",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Interpretó «Nunca te lo he dicho», de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+                    "displayText": "Papa Molina",
+                    "occurrenceId": "fc3fcc98-9f21-44d3-a9ed-2a2c27bb1fd9"
+                  }
+                },
+                {
+                  "text": "; «Mi gloria», de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "dab6636c-21fd-4e34-a0a2-e59e9e147bbd",
+                    "displayText": "Luis Kalaff",
+                    "occurrenceId": "b916e3ae-70dc-4517-89e9-8d53dcf339bc"
+                  }
+                },
+                {
+                  "text": "; y «Sígueme», de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+                    "displayText": "Manuel Troncoso",
+                    "occurrenceId": "86e2eefa-5dca-4c42-bca3-0787739690e7"
+                  }
+                },
+                {
+                  "text": ". Entre sus canciones recordadas figuran además «Arenas del desierto», «Serrana», «No me abandones» y «Mi padre», esta última de Bobby Capó y habitual en las celebraciones dominicanas del Día del Padre.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En 1969 grabó en Madrid «El Lope Balaguer de hoy y de siempre», con una orquesta dirigida por ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "ba42e200-51b0-437b-99ac-1daf39ade337",
+                    "displayText": "Rafael Solano",
+                    "occurrenceId": "abaefae3-9484-49ef-85e4-082e8136dba3"
+                  }
+                },
+                {
+                  "text": ". Durante 1976 y 1977 trabajó en Buenos Aires en producciones como «Algo contigo», «Aquellos años cuarenta», «Espectacular» y «Me siento bien contigo». El Archivo General de la Nación conserva «Algo contigo» como un disco de vinilo de 1976 con diez grabaciones. En su etapa posterior mantuvo una colaboración musical con ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "c958758c-a949-4bd9-963d-6d48bc750b60",
+                    "displayText": "Jorge Taveras",
+                    "occurrenceId": "bd13baee-2358-4164-b7ae-a3f154eea3e9"
+                  }
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Televisión y vida pública",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Tuvo un programa de televisión en el que cantaba y daba espacio a otros intérpretes. Fue sobrino de ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+                    "displayText": "Joaquín Balaguer",
+                    "occurrenceId": "690ca993-d783-4362-bbbb-7b05c0ef5121"
+                  }
+                },
+                {
+                  "text": " y desempeñó funciones consulares en Taiwán. Estuvo casado con Flor de Oro Trujillo y, al morir, con Miriam Pérez. Su carrera recibió un reconocimiento al Mérito de Acroarte en 2006.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su repertorio preservó obras de compositores dominicanos junto a canciones de otros países latinoamericanos. La continuidad de «Mi padre», «Mi gloria» y sus boleros en grabaciones, archivos y plataformas documenta su lugar en la memoria de la canción popular dominicana.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "771e3bcf-396a-492a-833f-8afb45964520",
+        "created_at": "2026-10-25T12:45:18.40326+00:00",
+        "updated_at": "2026-10-25T12:45:18.40326+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "69533eac-89eb-4851-990d-8cf0d0b2f25b",
+        "editorial_document_id": "d56288fd-14d5-43f8-92ab-e4dacc19aac7",
+        "occurrence_id": "fc3fcc98-9f21-44d3-a9ed-2a2c27bb1fd9",
+        "entity_type": "artist",
+        "target_artist_id": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+        "created_at": "2026-10-25T12:45:18.40326+00:00",
+        "updated_at": "2026-10-25T12:45:18.40326+00:00"
+      },
+      {
+        "id": "536872dc-9a33-4b0f-9e98-c78f3ed5108c",
+        "editorial_document_id": "d56288fd-14d5-43f8-92ab-e4dacc19aac7",
+        "occurrence_id": "b916e3ae-70dc-4517-89e9-8d53dcf339bc",
+        "entity_type": "artist",
+        "target_artist_id": "dab6636c-21fd-4e34-a0a2-e59e9e147bbd",
+        "created_at": "2026-10-25T12:45:18.40326+00:00",
+        "updated_at": "2026-10-25T12:45:18.40326+00:00"
+      },
+      {
+        "id": "3523320c-1fdb-40b1-9c11-5be53632d6bd",
+        "editorial_document_id": "d56288fd-14d5-43f8-92ab-e4dacc19aac7",
+        "occurrence_id": "86e2eefa-5dca-4c42-bca3-0787739690e7",
+        "entity_type": "artist",
+        "target_artist_id": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+        "created_at": "2026-10-25T12:45:18.40326+00:00",
+        "updated_at": "2026-10-25T12:45:18.40326+00:00"
+      },
+      {
+        "id": "5e4d6d88-3f04-4774-9e77-ed606ccbecff",
+        "editorial_document_id": "d56288fd-14d5-43f8-92ab-e4dacc19aac7",
+        "occurrence_id": "abaefae3-9484-49ef-85e4-082e8136dba3",
+        "entity_type": "artist",
+        "target_artist_id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+        "created_at": "2026-10-25T12:45:18.40326+00:00",
+        "updated_at": "2026-10-25T12:45:18.40326+00:00"
+      },
+      {
+        "id": "9729bfae-26eb-4729-a31d-90a9dd56fba9",
+        "editorial_document_id": "d56288fd-14d5-43f8-92ab-e4dacc19aac7",
+        "occurrence_id": "bd13baee-2358-4164-b7ae-a3f154eea3e9",
+        "entity_type": "artist",
+        "target_artist_id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+        "created_at": "2026-10-25T12:45:18.40326+00:00",
+        "updated_at": "2026-10-25T12:45:18.40326+00:00"
+      },
+      {
+        "id": "7736f29a-4016-4765-b1bd-e9694c172b7f",
+        "editorial_document_id": "d56288fd-14d5-43f8-92ab-e4dacc19aac7",
+        "occurrence_id": "690ca993-d783-4362-bbbb-7b05c0ef5121",
+        "entity_type": "artist",
+        "target_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+        "created_at": "2026-10-25T12:45:18.40326+00:00",
+        "updated_at": "2026-10-25T12:45:18.40326+00:00"
+      },
+      {
+        "id": "8b8d434c-044c-4701-bfcb-d5488c763813",
+        "editorial_document_id": "93464451-7750-4bae-b2b4-a714d6ce9312",
+        "occurrence_id": "3c5f0fe9-e44a-40db-b455-f189649cd761",
+        "entity_type": "artist",
+        "target_artist_id": "869ad9b6-a331-4277-af8a-bb7a4b1c1cdb",
+        "created_at": "2026-10-25T12:45:18.649391+00:00",
+        "updated_at": "2026-10-25T12:45:18.649391+00:00"
+      },
+      {
+        "id": "8dec59bc-f292-4ffb-85a3-672dc814d218",
+        "editorial_document_id": "93464451-7750-4bae-b2b4-a714d6ce9312",
+        "occurrence_id": "2256f6eb-3466-4c57-90a3-b5444d2ba9dc",
+        "entity_type": "artist",
+        "target_artist_id": "dab6636c-21fd-4e34-a0a2-e59e9e147bbd",
+        "created_at": "2026-10-25T12:45:18.649391+00:00",
+        "updated_at": "2026-10-25T12:45:18.649391+00:00"
+      },
+      {
+        "id": "afba93c3-d3de-4c1e-b881-e9fc52386751",
+        "editorial_document_id": "93464451-7750-4bae-b2b4-a714d6ce9312",
+        "occurrence_id": "e667cf54-0887-4c56-9d09-dae682899586",
+        "entity_type": "artist",
+        "target_artist_id": "27b584f9-de69-4b87-9ba5-2f09d24b8389",
+        "created_at": "2026-10-25T12:45:18.649391+00:00",
+        "updated_at": "2026-10-25T12:45:18.649391+00:00"
+      },
+      {
+        "id": "dbea6e74-12ef-4569-aabd-6002aa5b67a0",
+        "editorial_document_id": "93464451-7750-4bae-b2b4-a714d6ce9312",
+        "occurrence_id": "0630cb8e-5993-41d8-919d-94a9b131c3ce",
+        "entity_type": "artist",
+        "target_artist_id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+        "created_at": "2026-10-25T12:45:18.649391+00:00",
+        "updated_at": "2026-10-25T12:45:18.649391+00:00"
+      },
+      {
+        "id": "602cf2ce-89c7-4eb2-a154-3b9863df2abb",
+        "editorial_document_id": "93464451-7750-4bae-b2b4-a714d6ce9312",
+        "occurrence_id": "5900afae-5e8c-4838-86a7-1f55929847d6",
+        "entity_type": "artist",
+        "target_artist_id": "c958758c-a949-4bd9-963d-6d48bc750b60",
+        "created_at": "2026-10-25T12:45:18.649391+00:00",
+        "updated_at": "2026-10-25T12:45:18.649391+00:00"
+      },
+      {
+        "id": "16241359-b15e-4cff-9702-2dc52d7386a4",
+        "editorial_document_id": "93464451-7750-4bae-b2b4-a714d6ce9312",
+        "occurrence_id": "db4d4b38-e66b-4158-bd55-81fb9928bbd3",
+        "entity_type": "artist",
+        "target_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+        "created_at": "2026-10-25T12:45:18.649391+00:00",
+        "updated_at": "2026-10-25T12:45:18.649391+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-25T12:45:29.394Z",
+    "counts": {
+      "documents": 2,
+      "relations": 12,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

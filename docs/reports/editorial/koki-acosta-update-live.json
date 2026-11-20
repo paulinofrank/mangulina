@@ -1,0 +1,30 @@
+{
+  "refresh": {
+    "status": 200,
+    "body": {
+      "ok": true,
+      "revalidated": {
+        "artists": 1,
+        "songs": 0,
+        "releases": 0,
+        "allArtists": false
+      }
+    }
+  },
+  "pages": [
+    {
+      "path": "/es/artists/koki-acosta",
+      "status": 200,
+      "new_bio": true,
+      "old_title_absent": true,
+      "reference": true
+    },
+    {
+      "path": "/en/artists/koki-acosta",
+      "status": 200,
+      "new_bio": true,
+      "old_title_absent": true,
+      "reference": true
+    }
+  ]
+}

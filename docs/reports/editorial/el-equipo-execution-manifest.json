@@ -1,0 +1,5506 @@
+{
+  "approved_by": "Editor Yes! to 12-release, 108-track, 12-cover manifest, 2026-11-01",
+  "approved_proposal_sha256": "92ee3106a64dc48ec1880c2301ae02636b1951efe82c3b39ab41fb1b0fa85e6f",
+  "created_at": "2026-11-01T20:36:57.061Z",
+  "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+  "baseline": {
+    "artist": {
+      "id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "name": "El Equipo (de Dioni Fernández)",
+      "sort_name": "El Equipo (de Dioni Fernández)",
+      "type": "group",
+      "birth_year": 1952,
+      "death_year": null,
+      "created_at": "2026-05-16T01:19:53.822246+00:00",
+      "views": 21,
+      "wikidata_id": null,
+      "first_name": "José",
+      "middle_name": "Dionisio",
+      "last_name": "Fernández",
+      "second_last_name": "Zapata",
+      "stage_name": "Dioni Fernández y El Equipo",
+      "date_of_birth": "1952-03-24",
+      "birth_place": "Santo Domingo",
+      "website": null,
+      "youtube": "@dfestudio",
+      "facebook": "dionifernandezoficial",
+      "instagram": "dionifernandez_oficial",
+      "aliases": [
+        "Dioni Fernandez",
+        "El Equipo",
+        "Dioni Fernández y El Equipo"
+      ],
+      "mbid": "c83b46b3-91b5-4efa-aaa7-a7d18177bb6d",
+      "occupations": [
+        "bandleader",
+        "musician",
+        "arranger",
+        "composer",
+        "producer"
+      ],
+      "instruments": [
+        "piano",
+        "guitar"
+      ],
+      "genres": [
+        "merengue-orquesta"
+      ],
+      "disambiguation": "Merengue bandleader, pianist and arranger; El Equipo was the band the romantic-merengue singers came through",
+      "gender": "male",
+      "ended": false,
+      "mb_metadata": {
+        "id": "c83b46b3-91b5-4efa-aaa7-a7d18177bb6d",
+        "area": {
+          "id": "696cb3e0-5084-30ab-9916-65ece70adbf6",
+          "name": "Dominican Republic",
+          "type": "Country",
+          "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+          "life-span": {
+            "ended": null
+          },
+          "sort-name": "Dominican Republic"
+        },
+        "name": "Dioni Fernández y El Equipo",
+        "tags": [
+          {
+            "name": "merengue",
+            "count": 1
+          }
+        ],
+        "type": "Group",
+        "score": 74,
+        "country": "DO",
+        "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+        "life-span": {
+          "ended": null
+        },
+        "sort-name": "Fernández, Dioni y El Equipo"
+      },
+      "updated_at": "2026-11-01T18:58:16.806947+00:00",
+      "province": "Distrito Nacional",
+      "birth_day": 24,
+      "birth_month": 3,
+      "slug": "dioni-fernandez-y-el-equipo",
+      "primary_role": "singer",
+      "artist_tags": [
+        "secular",
+        "legend"
+      ],
+      "date_of_death": null,
+      "status": "published",
+      "primary_genre": "merengue",
+      "bio_en": "Dioni Fernández, born José Dionisio Fernández Zapata, is a Dominican bandleader, pianist, arranger and producer, and El Equipo is the orchestra he ran. Between them they trained most of the singers who defined merengue’s romantic decade.\n\n**A rock guitarist**\n\nHe started at sixteen playing guitar in a rock band called Hierro de Fuego, an uncommon point of entry into merengue that carried into the sound of his records.\n\nThen he did it the hard way round: an academy, a teacher, and five years of formal piano at the Conservatorio Nacional de Música. A Dominican dance-band leader with a conservatory training is rare, and a conservatory-trained leader who came up through rock is close to unique.\n\n**The emergency**\n\nHis entry into professional merengue was an accident. Félix del Rosario needed somebody to cover for the orchestra’s pianist, and Dioni was the substitute. He was kept on and stayed about three years — the most efficient audition in the history of the genre.\n\nWhen Bonny Cepeda resigned from Los Hijos del Rey, Dioni took over the direction and ran it for a couple of years. He had gone from emergency stand-in to running one of the country’s orchestras in a very short time.\n\n**El Equipo**\n\nIn 1980 he formed a band with Sandy Reyes — Sandy, Dioni y El Equipo — and this is where he became an arranger and producer rather than a hired player. El Guardia del Arsenal, La Mina de Amor and Pun Pun Pun come from that period.\n\nWhat it turned into was Dioni Fernández y El Equipo, and what that band did for Dominican music is not really about its own records. Almost every singer of the romantic merengue era went through it: Benny Sadel, Sergio Vargas, Pablo Martínez, Charlie Rodríguez, Kaki Vargas, Carlos David and Luis Manuel among them.\n\nMusicians of that generation put it plainly: working with Dioni was the passport. A musician who had done a season with El Equipo could go anywhere; one who had not still had something to prove.\n\n**What an arranger decides**\n\nHis arrangements are the reason. He writes the trumpets and the saxophones so that they answer each other rather than pile up, and the discipline is audible — every instrument where it belongs and nothing fighting for the same space.\n\nThat is a conservatory habit applied to a dance band, and it produced a house style that other producers copied. Thirteen recorded productions carry it, and so do the records he arranged for singers who had already left him.\n\nRunning a band is the other half of the job and the half nobody writes about: hiring, rehearsing, paying, keeping authority over a room of twelve people who all want a solo. He did that for decades without the band splitting, which in Dominican merengue is the rarer achievement.",
+      "bio_es": "Dioni Fernández, de nombre José Dionisio Fernández Zapata, es director, pianista, arreglista y productor dominicano, y El Equipo es la orquesta que dirigió. Entre los dos formaron a casi todos los cantantes que definieron la década romántica del merengue.\n\n**Un guitarrista de rock**\n\nEmpezó a los dieciséis tocando guitarra en una banda de rock llamada Hierro de Fuego, una puerta de entrada al merengue poco frecuente que se trasladó al sonido de sus discos.\n\nDespués lo hizo al revés de como se acostumbra: una academia, una maestra, y cinco años de piano formal en el Conservatorio Nacional de Música. Un director de orquesta bailable dominicano con formación de conservatorio es raro, y uno que además venga del rock es casi único.\n\n**La emergencia**\n\nSu entrada al merengue profesional fue un accidente. A Félix del Rosario le hacía falta alguien que cubriera al pianista de la orquesta, y Dioni fue el sustituto. Se quedó, y estuvo unos tres años: la audición más eficiente de la historia del género.\n\nCuando Bonny Cepeda renunció a Los Hijos del Rey, Dioni asumió la dirección y la llevó un par de años. Había pasado de suplente de emergencia a dirigir una de las orquestas del país en muy poco tiempo.\n\n**El Equipo**\n\nEn 1980 formó una banda con Sandy Reyes —Sandy, Dioni y El Equipo— y ahí es donde se hizo arreglista y productor en vez de músico contratado. El Guardia del Arsenal, La Mina de Amor y Pun Pun Pun salen de esa etapa.\n\nEn lo que se convirtió fue en Dioni Fernández y El Equipo, y lo que esa banda hizo por la música dominicana no tiene tanto que ver con sus propios discos. Por ahí pasó casi todo cantante de la época romántica del merengue: Benny Sadel, Sergio Vargas, Pablo Martínez, Charlie Rodríguez, Kaki Vargas, Carlos David y Luis Manuel, entre otros.\n\nLos músicos de esa generación lo dicen sin adornos: trabajar con Dioni era el pasaporte. Quien había hecho una temporada con El Equipo podía ir a cualquier parte; quien no la había hecho todavía tenía algo que demostrar.\n\n**Lo que decide un arreglista**\n\nLos arreglos son la razón. Escribe las trompetas y los saxofones para que se contesten y no para que se amontonen, y la disciplina se oye: cada instrumento en su sitio y ninguno peleando por el mismo espacio.\n\nEso es una costumbre de conservatorio aplicada a una banda de baile, y produjo un estilo de casa que otros productores copiaron. Trece producciones grabadas lo llevan, y también los discos que arregló para cantantes que ya se habían ido de su banda.\n\nDirigir una orquesta es la otra mitad del oficio y la mitad de la que nadie escribe: contratar, ensayar, pagar, y mantener la autoridad sobre un salón de doce personas que todas quieren un solo. Lo hizo durante décadas sin que la banda se partiera, que en el merengue dominicano es el logro más raro de los dos.",
+      "has_image": true,
+      "image_updated_at": "2026-11-01T17:50:15.972+00:00",
+      "formation_year": null,
+      "dissolution_year": null,
+      "spotify": "6gpiTm3vKuiZuFN3fOSlc3"
+    },
+    "releases": [],
+    "recordings": [],
+    "shared_recordings_count": 10
+  },
+  "releases": [
+    {
+      "id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "index": 0,
+      "year": 1981,
+      "title": "El Equipo (con Sandy Reyes)",
+      "slug": "el-equipo-con-sandy-reyes",
+      "after": {
+        "id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+        "title": "El Equipo (con Sandy Reyes)",
+        "slug": "el-equipo-con-sandy-reyes",
+        "type": "album",
+        "release_artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_year": 1981,
+        "year": 1981,
+        "date": "1981-01-01",
+        "label": "Karen Records",
+        "catalog_number": "KLP-59",
+        "country": "DO",
+        "status": "Official",
+        "has_cover_image": true,
+        "metadata": {
+          "format": "LP",
+          "catalog_number": "KLP-59",
+          "label": "Karen Records",
+          "apple_collection_id": 1624581277,
+          "spotify_album_id": null,
+          "discogs_master_id": null,
+          "discogs_release_id": 13604810,
+          "notes": "Álbum debut de la orquesta, catapultado por el megahito nacional «El Guardia del Arsenal».",
+          "cover_source": {
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/17/1b/e5/171be53a-02ac-7749-d4e1-f151f5d5aa99/5056495058502_1.jpg/1000x1000bb.jpg",
+            "sha256": "e57ea80c6a593c8adc51521a0df2da3e22f2d5358065c8a570d362555f66f7b8"
+          }
+        }
+      },
+      "cover": {
+        "source_file": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1981-1.jpg",
+        "sha256": "e57ea80c6a593c8adc51521a0df2da3e22f2d5358065c8a570d362555f66f7b8",
+        "sizes": [
+          150,
+          300
+        ]
+      }
+    },
+    {
+      "id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "index": 1,
+      "year": 1983,
+      "title": "Dioni Fernández Y El Equipo (con Charlie Rodríguez)",
+      "slug": "dioni-fernandez-y-el-equipo-con-charlie-rodriguez",
+      "after": {
+        "id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+        "title": "Dioni Fernández Y El Equipo (con Charlie Rodríguez)",
+        "slug": "dioni-fernandez-y-el-equipo-con-charlie-rodriguez",
+        "type": "album",
+        "release_artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_year": 1983,
+        "year": 1983,
+        "date": "1983-01-01",
+        "label": "Karen Records",
+        "catalog_number": "KLP 74",
+        "country": "DO",
+        "status": "Official",
+        "has_cover_image": true,
+        "metadata": {
+          "format": "LP",
+          "catalog_number": "KLP 74",
+          "label": "Karen Records",
+          "apple_collection_id": null,
+          "spotify_album_id": null,
+          "discogs_master_id": 2289247,
+          "discogs_release_id": 13381722,
+          "notes": "Producción consagratoria de Charlie Rodríguez; incluye «Mina de Amor», «Colorao» y «Moza (Rico y buen mozo)».",
+          "cover_source": {
+            "url": "https://i.discogs.com/xUsVH3sBxFUcNFh4xtegT4UiOXhL7XmHMbAf8kZ5ws8/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzgx/NzIyLTE1NTMxNDA1/MTItNjE1Ny5qcGVn.jpeg",
+            "sha256": "5b382b754d0f9b5b684b91b3b8895be4da85f59bd5b6e130640ab003deb698d0"
+          }
+        }
+      },
+      "cover": {
+        "source_file": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1983-2.jpg",
+        "sha256": "5b382b754d0f9b5b684b91b3b8895be4da85f59bd5b6e130640ab003deb698d0",
+        "sizes": [
+          150,
+          300
+        ]
+      }
+    },
+    {
+      "id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "index": 2,
+      "year": 1984,
+      "title": "Los Diseñadores",
+      "slug": "los-disenadores-el-equipo",
+      "after": {
+        "id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+        "title": "Los Diseñadores",
+        "slug": "los-disenadores-el-equipo",
+        "type": "album",
+        "release_artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_year": 1984,
+        "year": 1984,
+        "date": "1984-01-01",
+        "label": "Algar Records / Equipo Records",
+        "catalog_number": "ALG-48 / ER001",
+        "country": "DO",
+        "status": "Official",
+        "has_cover_image": true,
+        "metadata": {
+          "format": "LP",
+          "catalog_number": "ALG-48 / ER001",
+          "label": "Algar Records / Equipo Records",
+          "apple_collection_id": null,
+          "spotify_album_id": null,
+          "discogs_master_id": 1435462,
+          "discogs_release_id": 11327933,
+          "notes": "Álbum cumbre que proyectó a Sergio Vargas a la fama con «Los Diseñadores», junto a Charlie Rodríguez en «Cal y Arena».",
+          "cover_source": {
+            "url": "https://i.discogs.com/mzpjHNfYtFksl-Rd6GUPfyzOrf0YRoyyULLaEEmzWF4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMzI3/OTMzLTE2NDk0MjE4/NzMtOTI0OS5qcGVn.jpeg",
+            "sha256": "7447d78a1736b629cfa1f6088faef3bbba506cbdb45303534d883da5d912f384"
+          }
+        }
+      },
+      "cover": {
+        "source_file": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1984-3.jpg",
+        "sha256": "7447d78a1736b629cfa1f6088faef3bbba506cbdb45303534d883da5d912f384",
+        "sizes": [
+          150,
+          300
+        ]
+      }
+    },
+    {
+      "id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "index": 3,
+      "year": 1985,
+      "title": "Fiesta & Fiesta!",
+      "slug": "fiesta-fiesta-el-equipo",
+      "after": {
+        "id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+        "title": "Fiesta & Fiesta!",
+        "slug": "fiesta-fiesta-el-equipo",
+        "type": "album",
+        "release_artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_year": 1985,
+        "year": 1985,
+        "date": "1985-01-01",
+        "label": "Algar Records / Karen Records",
+        "catalog_number": "ALG-7427 / KLP-93",
+        "country": "DO",
+        "status": "Official",
+        "has_cover_image": true,
+        "metadata": {
+          "format": "LP",
+          "catalog_number": "ALG-7427 / KLP-93",
+          "label": "Algar Records / Karen Records",
+          "apple_collection_id": 1231883053,
+          "spotify_album_id": "1abQUEd8cKKsrMtWmppGVs",
+          "discogs_master_id": 1277222,
+          "discogs_release_id": null,
+          "notes": "Debut de Carlos David con El Equipo; incluye «Fiesta y Fiesta», «Caribe» y «Loco, Loco».",
+          "cover_source": {
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music127/v4/a3/b5/bb/a3b5bbac-b9ee-ad0d-eb52-aa1d1568accc/ALGAR-7427_Dioni.jpg/1000x1000bb.jpg",
+            "sha256": "3f9b43bec8c4b5afd962a928dd01f9b7ed6cf3098e3e5fc3e55bddec77182629"
+          }
+        }
+      },
+      "cover": {
+        "source_file": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1985-4.jpg",
+        "sha256": "3f9b43bec8c4b5afd962a928dd01f9b7ed6cf3098e3e5fc3e55bddec77182629",
+        "sizes": [
+          150,
+          300
+        ]
+      }
+    },
+    {
+      "id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "index": 4,
+      "year": 1986,
+      "title": "Pasa la Vida",
+      "slug": "pasa-la-vida-el-equipo",
+      "after": {
+        "id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+        "title": "Pasa la Vida",
+        "slug": "pasa-la-vida-el-equipo",
+        "type": "album",
+        "release_artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_year": 1986,
+        "year": 1986,
+        "date": "1986-01-01",
+        "label": "Algar Records / Karen Records",
+        "catalog_number": "ALGAR-5700 / KLP-106",
+        "country": "DO",
+        "status": "Official",
+        "has_cover_image": true,
+        "metadata": {
+          "format": "LP",
+          "catalog_number": "ALGAR-5700 / KLP-106",
+          "label": "Algar Records / Karen Records",
+          "apple_collection_id": 1231874297,
+          "spotify_album_id": "3D0zYnSb5satjADi3B2emx",
+          "discogs_master_id": 1539747,
+          "discogs_release_id": null,
+          "notes": "Grandes éxitos de Carlos David («Pasa la Vida», «Como Tú No Hay Dos») y la entrada de Pablo Martínez («La de Perder»).",
+          "cover_source": {
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/3c/6d/cf/3c6dcfdc-d8f4-62fb-1f5d-d0370fb1fc02/ALGAR-5700_Dioni.jpg/1000x1000bb.jpg",
+            "sha256": "3e2fd09bdda2deb64e8013b76946ffea95f4b2eb0471f12397020e8536a3315e"
+          }
+        }
+      },
+      "cover": {
+        "source_file": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1986-5.jpg",
+        "sha256": "3e2fd09bdda2deb64e8013b76946ffea95f4b2eb0471f12397020e8536a3315e",
+        "sizes": [
+          150,
+          300
+        ]
+      }
+    },
+    {
+      "id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "index": 5,
+      "year": 1988,
+      "title": "Dioni Fernández & El Equipo (El Cinturón del Taxi)",
+      "slug": "dioni-fernandez-el-equipo-el-cinturon-del-taxi",
+      "after": {
+        "id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+        "title": "Dioni Fernández & El Equipo (El Cinturón del Taxi)",
+        "slug": "dioni-fernandez-el-equipo-el-cinturon-del-taxi",
+        "type": "album",
+        "release_artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_year": 1988,
+        "year": 1988,
+        "date": "1988-01-01",
+        "label": "Karen Records",
+        "catalog_number": "KLP-119",
+        "country": "DO",
+        "status": "Official",
+        "has_cover_image": true,
+        "metadata": {
+          "format": "LP",
+          "catalog_number": "KLP-119",
+          "label": "Karen Records",
+          "apple_collection_id": 1646283762,
+          "spotify_album_id": "0J6SLWgljgMCxvtuwCCtlj",
+          "discogs_master_id": 2289250,
+          "discogs_release_id": null,
+          "notes": "Consagración vocal absoluta de Pablo Martínez con «El Cinturón del Taxi», «La Lloré» y «Si No Te Hubieras Ido».",
+          "cover_source": {
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/06/fa/ce/06facef3-e948-197d-77c8-55b9d0dc6275/5056495075646_1.jpg/1000x1000bb.jpg",
+            "sha256": "95dd5a859b6da51a6041f222df223458e602af50ca0dd3318c3a448447bb34a2"
+          }
+        }
+      },
+      "cover": {
+        "source_file": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1988-6.jpg",
+        "sha256": "95dd5a859b6da51a6041f222df223458e602af50ca0dd3318c3a448447bb34a2",
+        "sizes": [
+          150,
+          300
+        ]
+      }
+    },
+    {
+      "id": "e8870364-b333-48f7-a678-dce904034932",
+      "index": 6,
+      "year": 1988,
+      "title": "El Millonario",
+      "slug": "el-millonario-el-equipo",
+      "after": {
+        "id": "e8870364-b333-48f7-a678-dce904034932",
+        "title": "El Millonario",
+        "slug": "el-millonario-el-equipo",
+        "type": "album",
+        "release_artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_year": 1988,
+        "year": 1988,
+        "date": "1988-01-01",
+        "label": "Karen Records",
+        "catalog_number": "KLP-126",
+        "country": "DO",
+        "status": "Official",
+        "has_cover_image": true,
+        "metadata": {
+          "format": "LP",
+          "catalog_number": "KLP-126",
+          "label": "Karen Records",
+          "apple_collection_id": 1526734094,
+          "spotify_album_id": "6NSJ0np7ElUvogBCx4WFQ8",
+          "discogs_master_id": 1772630,
+          "discogs_release_id": null,
+          "notes": "Superproducción que contiene el himno «No Se Murió el Amor» y «El Millonario» interpretados por Pablo Martínez.",
+          "cover_source": {
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4d/28/d1/4d28d1da-147b-c5d2-c1ed-99f8b1ebb686/886296716043_1.jpg/1000x1000bb.jpg",
+            "sha256": "e30848bfd8f1202e765beabf9b833e357786c0fae7555e05d096c3cc9d2ad708"
+          }
+        }
+      },
+      "cover": {
+        "source_file": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1988-7.jpg",
+        "sha256": "e30848bfd8f1202e765beabf9b833e357786c0fae7555e05d096c3cc9d2ad708",
+        "sizes": [
+          150,
+          300
+        ]
+      }
+    },
+    {
+      "id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "index": 7,
+      "year": 1991,
+      "title": "Dioni Fernández",
+      "slug": "dioni-fernandez-el-equipo",
+      "after": {
+        "id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+        "title": "Dioni Fernández",
+        "slug": "dioni-fernandez-el-equipo",
+        "type": "album",
+        "release_artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_year": 1991,
+        "year": 1991,
+        "date": "1991-01-01",
+        "label": "Karen Records",
+        "catalog_number": "KLP-144",
+        "country": "DO",
+        "status": "Official",
+        "has_cover_image": true,
+        "metadata": {
+          "format": "LP",
+          "catalog_number": "KLP-144",
+          "label": "Karen Records",
+          "apple_collection_id": 1526723267,
+          "spotify_album_id": "2HhggWUu8ZMNWhNoeIWMBE",
+          "discogs_master_id": 3000326,
+          "discogs_release_id": null,
+          "notes": "Etapa que incluye «Por Retenerte» (con Kaki Vargas) y la jocosa «La Pulla» (con Pablito Barriga).",
+          "cover_source": {
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/bd/a8/ac/bda8acfc-a799-6705-5564-9fa3bc1d44b4/886296603701_1.jpg/1000x1000bb.jpg",
+            "sha256": "d3022d8697c5f0d7a78367e904aca58c00f4fc40a281bab03269b2751f1ad4a1"
+          }
+        }
+      },
+      "cover": {
+        "source_file": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1991-8.jpg",
+        "sha256": "d3022d8697c5f0d7a78367e904aca58c00f4fc40a281bab03269b2751f1ad4a1",
+        "sizes": [
+          150,
+          300
+        ]
+      }
+    },
+    {
+      "id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "index": 8,
+      "year": 1992,
+      "title": "Yo Soy Para Ti",
+      "slug": "yo-soy-para-ti-el-equipo",
+      "after": {
+        "id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+        "title": "Yo Soy Para Ti",
+        "slug": "yo-soy-para-ti-el-equipo",
+        "type": "album",
+        "release_artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_year": 1992,
+        "year": 1992,
+        "date": "1992-01-01",
+        "label": "Kubaney",
+        "catalog_number": "347-2T",
+        "country": "DO",
+        "status": "Official",
+        "has_cover_image": true,
+        "metadata": {
+          "format": "CD / LP",
+          "catalog_number": "347-2T",
+          "label": "Kubaney",
+          "apple_collection_id": null,
+          "spotify_album_id": null,
+          "discogs_master_id": 2289256,
+          "discogs_release_id": 18448867,
+          "notes": "Producción grabada para Kubaney con el sonido orquestal moderno de principios de los noventa.",
+          "cover_source": {
+            "url": "https://i.discogs.com/btrE_Pt3fro4GFwn2t5z43hBy1ZwaRBJImwcE6YR_xc/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NDQ4/ODY3LTE2MTkzMTc3/OTQtMzgwOC5qcGVn.jpeg",
+            "sha256": "3122821e241bb9305e8a7c694ebe0f79ce8f1540491d683a09f42c5d605d5e6c"
+          }
+        }
+      },
+      "cover": {
+        "source_file": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1992-9.jpg",
+        "sha256": "3122821e241bb9305e8a7c694ebe0f79ce8f1540491d683a09f42c5d605d5e6c",
+        "sizes": [
+          150,
+          300
+        ]
+      }
+    },
+    {
+      "id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "index": 9,
+      "year": 1994,
+      "title": "Homenaje A Julito Deschamps",
+      "slug": "homenaje-a-julito-deschamps-el-equipo",
+      "after": {
+        "id": "7b588977-ad10-411f-b266-6724954b8cbc",
+        "title": "Homenaje A Julito Deschamps",
+        "slug": "homenaje-a-julito-deschamps-el-equipo",
+        "type": "album",
+        "release_artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_year": 1994,
+        "year": 1994,
+        "date": "1994-01-01",
+        "label": "Kubaney",
+        "catalog_number": "CD 391-2",
+        "country": "DO",
+        "status": "Official",
+        "has_cover_image": true,
+        "metadata": {
+          "format": "CD",
+          "catalog_number": "CD 391-2",
+          "label": "Kubaney",
+          "apple_collection_id": null,
+          "spotify_album_id": null,
+          "discogs_master_id": null,
+          "discogs_release_id": 22050592,
+          "notes": "Tributo instrumental y vocal al legendario pianista y bolerista dominicano Julito Deschamps, con la voz de Eddy Rafael.",
+          "cover_source": {
+            "url": "https://i.discogs.com/cyG5HBQZhu2W0PX6tJ0vfIhzmFzPAGBMwHOdPyhxSRk/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NTkyLTE2NDQzNTQz/MjktNzg0My5qcGVn.jpeg",
+            "sha256": "5a66445c4570666a084282715e12167cc75f35195b33be55f2cd52c4b1bc4e52"
+          }
+        }
+      },
+      "cover": {
+        "source_file": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1994-10.jpg",
+        "sha256": "5a66445c4570666a084282715e12167cc75f35195b33be55f2cd52c4b1bc4e52",
+        "sizes": [
+          150,
+          300
+        ]
+      }
+    },
+    {
+      "id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "index": 10,
+      "year": 1994,
+      "title": "La Gota Fría",
+      "slug": "la-gota-fria-el-equipo",
+      "after": {
+        "id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+        "title": "La Gota Fría",
+        "slug": "la-gota-fria-el-equipo",
+        "type": "album",
+        "release_artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_year": 1994,
+        "year": 1994,
+        "date": "1994-01-01",
+        "label": "Kubaney",
+        "catalog_number": "387-2T",
+        "country": "DO",
+        "status": "Official",
+        "has_cover_image": true,
+        "metadata": {
+          "format": "CD",
+          "catalog_number": "387-2T",
+          "label": "Kubaney",
+          "apple_collection_id": null,
+          "spotify_album_id": null,
+          "discogs_master_id": 3096678,
+          "discogs_release_id": 22050670,
+          "notes": "Producción de adaptaciones caribeñas llevadas al merengue orquestal bailable.",
+          "cover_source": {
+            "url": "https://i.discogs.com/haXJjCaYprvjzwNLUtAkLdYxSixKoOvoX7qejKwV_Nc/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDUw/NjcwLTE2NDQzNTQz/NzQtMTQ3My5qcGVn.jpeg",
+            "sha256": "a9e1343163dc5bb9516d6965345751afc3b59ba45e1dc7ed5b785f4f193e6896"
+          }
+        }
+      },
+      "cover": {
+        "source_file": "docs\\reports\\editorial\\el-equipo-covers\\equipo-1994-11.jpg",
+        "sha256": "a9e1343163dc5bb9516d6965345751afc3b59ba45e1dc7ed5b785f4f193e6896",
+        "sizes": [
+          150,
+          300
+        ]
+      }
+    },
+    {
+      "id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "index": 11,
+      "year": 2007,
+      "title": "Juntos de Nuevo (con Charlie Rodríguez)",
+      "slug": "juntos-de-nuevo-con-charlie-rodriguez-el-equipo",
+      "after": {
+        "id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+        "title": "Juntos de Nuevo (con Charlie Rodríguez)",
+        "slug": "juntos-de-nuevo-con-charlie-rodriguez-el-equipo",
+        "type": "album",
+        "release_artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_year": 2007,
+        "year": 2007,
+        "date": "2007-01-01",
+        "label": "Mas Music",
+        "catalog_number": "CD 252656171",
+        "country": "DO",
+        "status": "Official",
+        "has_cover_image": true,
+        "metadata": {
+          "format": "CD",
+          "catalog_number": "CD 252656171",
+          "label": "Mas Music",
+          "apple_collection_id": 252656171,
+          "spotify_album_id": "4ESLwcC7OxOAZkIkp7Azyz",
+          "discogs_master_id": null,
+          "discogs_release_id": 18420625,
+          "notes": "Producción de reencuentro de Dioni Fernández con su icónico vocalista Charlie Rodríguez.",
+          "cover_source": {
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/8f/2d/e5/mzi.pldmmnyw.jpg/1000x1000bb.jpg",
+            "sha256": "f4b75465cfa8fb8f28a9a65698e394e6171a34075ced2e63f28545fdfc3e470c"
+          }
+        }
+      },
+      "cover": {
+        "source_file": "docs\\reports\\editorial\\el-equipo-covers\\equipo-2007-12.jpg",
+        "sha256": "f4b75465cfa8fb8f28a9a65698e394e6171a34075ced2e63f28545fdfc3e470c",
+        "sizes": [
+          150,
+          300
+        ]
+      }
+    }
+  ],
+  "release_artists": [
+    {
+      "id": "0aa22353-d65a-429e-b1c9-03bc2ef4023d",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "role": "primary",
+      "credited_as": "El Equipo",
+      "display_order": 0
+    },
+    {
+      "id": "4903512f-8e03-42ff-ade6-cd9c19651a3c",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+      "role": "primary",
+      "credited_as": "Dioni Fernández",
+      "display_order": 1
+    },
+    {
+      "id": "91016fbb-c442-4b77-a282-91e99c70c1da",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "artist_id": "49f8aae7-e066-4b01-a836-126082163c52",
+      "role": "primary",
+      "credited_as": "Sandy Reyes",
+      "display_order": 2
+    },
+    {
+      "id": "eaab32f9-a9dc-4081-b06a-9025d4749bea",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "role": "primary",
+      "credited_as": "El Equipo",
+      "display_order": 0
+    },
+    {
+      "id": "70709b58-3620-4929-abfe-a9f903fcdb95",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+      "role": "primary",
+      "credited_as": "Dioni Fernández",
+      "display_order": 1
+    },
+    {
+      "id": "6914848d-42d1-40a7-828b-2b259cdf3fff",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "primary",
+      "credited_as": "Charlie Rodríguez",
+      "display_order": 2
+    },
+    {
+      "id": "8b709b02-94df-4e42-a8eb-f1085663ff31",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "role": "primary",
+      "credited_as": "El Equipo",
+      "display_order": 0
+    },
+    {
+      "id": "e8d23e76-d2dc-4c8c-8ed1-f3202e9d3945",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+      "role": "primary",
+      "credited_as": "Dioni Fernández",
+      "display_order": 1
+    },
+    {
+      "id": "39e92a85-f85d-431c-891b-b774efdc3c1a",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "role": "primary",
+      "credited_as": "El Equipo",
+      "display_order": 0
+    },
+    {
+      "id": "fda5e520-5b82-4d0d-9ad1-a7faa6fa45de",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+      "role": "primary",
+      "credited_as": "Dioni Fernández",
+      "display_order": 1
+    },
+    {
+      "id": "f925962a-9031-4260-bdaa-ecee244b0fc8",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "role": "primary",
+      "credited_as": "El Equipo",
+      "display_order": 0
+    },
+    {
+      "id": "34adbb79-3ffe-462f-99f8-7f755a03bd72",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+      "role": "primary",
+      "credited_as": "Dioni Fernández",
+      "display_order": 1
+    },
+    {
+      "id": "88e9fee5-c4a9-48ef-bb2f-50f810d1cbe3",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "role": "primary",
+      "credited_as": "El Equipo",
+      "display_order": 0
+    },
+    {
+      "id": "18e7b562-5af7-4fbc-9bfd-befa06404e6e",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+      "role": "primary",
+      "credited_as": "Dioni Fernández",
+      "display_order": 1
+    },
+    {
+      "id": "3f61d407-3d68-4a23-9e27-2819cffe8590",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "role": "primary",
+      "credited_as": "El Equipo",
+      "display_order": 0
+    },
+    {
+      "id": "39602b63-c102-4d81-9992-79dfdd7f0dde",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+      "role": "primary",
+      "credited_as": "Dioni Fernández",
+      "display_order": 1
+    },
+    {
+      "id": "c45acec6-9e0d-4d3a-b1ff-6e912c04cdf6",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "role": "primary",
+      "credited_as": "El Equipo",
+      "display_order": 0
+    },
+    {
+      "id": "4aee6291-67ea-4a06-806d-f3a32a84309f",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+      "role": "primary",
+      "credited_as": "Dioni Fernández",
+      "display_order": 1
+    },
+    {
+      "id": "9cf04e1c-1adf-4bea-bfcc-27a5e8d26626",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "role": "primary",
+      "credited_as": "El Equipo",
+      "display_order": 0
+    },
+    {
+      "id": "df6776f0-1d49-4c7f-83e4-a39d70ea5046",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+      "role": "primary",
+      "credited_as": "Dioni Fernández",
+      "display_order": 1
+    },
+    {
+      "id": "ac152db6-192d-4e59-a4c4-9fcd115664dc",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "role": "primary",
+      "credited_as": "El Equipo",
+      "display_order": 0
+    },
+    {
+      "id": "8dfd9f5f-25a0-464d-a8fa-1552f48e9286",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+      "role": "primary",
+      "credited_as": "Dioni Fernández",
+      "display_order": 1
+    },
+    {
+      "id": "94092d43-b761-410e-bf9e-d43c0745510f",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "role": "primary",
+      "credited_as": "El Equipo",
+      "display_order": 0
+    },
+    {
+      "id": "c94dd886-01ac-4bf0-addf-0f2399427f4c",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+      "role": "primary",
+      "credited_as": "Dioni Fernández",
+      "display_order": 1
+    },
+    {
+      "id": "5c829f6e-9d5a-4213-9b08-0e3f65b6c92b",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "role": "primary",
+      "credited_as": "El Equipo",
+      "display_order": 0
+    },
+    {
+      "id": "89f1f5a0-a29d-424a-b985-d2c0a6381096",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "artist_id": "9c70e627-e1d1-438d-bd3d-2bad3c52c836",
+      "role": "primary",
+      "credited_as": "Dioni Fernández",
+      "display_order": 1
+    },
+    {
+      "id": "237dc3c4-c834-4dfc-8c79-e589cc791839",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "primary",
+      "credited_as": "Charlie Rodríguez",
+      "display_order": 2
+    }
+  ],
+  "recordings": [
+    {
+      "id": "c826c5f7-c589-4022-9df6-58f734da6a5f",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "title": "Moza",
+      "after": {
+        "id": "c826c5f7-c589-4022-9df6-58f734da6a5f",
+        "title": "Moza",
+        "slug": "el-equipo-moza-1983",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+        "duration": 278000,
+        "recording_year": 1983,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Tony Croatto",
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 1
+        }
+      }
+    },
+    {
+      "id": "f03b01b9-71e1-45bb-993e-87d336027d0f",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "title": "La Mujer Que A Mi Me Gusta",
+      "after": {
+        "id": "f03b01b9-71e1-45bb-993e-87d336027d0f",
+        "title": "La Mujer Que A Mi Me Gusta",
+        "slug": "el-equipo-la-mujer-que-a-mi-me-gusta-1983",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+        "duration": 267000,
+        "recording_year": 1983,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Benny González",
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 2
+        }
+      }
+    },
+    {
+      "id": "f9f30cbc-9b77-4dd4-8fef-4a4f03c2aa16",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "title": "El Merengue Es Un Abrazo",
+      "after": {
+        "id": "f9f30cbc-9b77-4dd4-8fef-4a4f03c2aa16",
+        "title": "El Merengue Es Un Abrazo",
+        "slug": "el-equipo-el-merengue-es-un-abrazo-1983",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+        "duration": 252000,
+        "recording_year": 1983,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Yaqui Núñez del Risco",
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 3
+        }
+      }
+    },
+    {
+      "id": "2f868949-b257-4034-b78b-0ff1b2a61a60",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "title": "Mina De Amor",
+      "after": {
+        "id": "2f868949-b257-4034-b78b-0ff1b2a61a60",
+        "title": "Mina De Amor",
+        "slug": "el-equipo-mina-de-amor-1983",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+        "duration": 251000,
+        "recording_year": 1983,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Luis Kalaff",
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 4
+        }
+      }
+    },
+    {
+      "id": "c58c4597-21f8-41e2-83c7-941715d6b92e",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "title": "Colorao",
+      "after": {
+        "id": "c58c4597-21f8-41e2-83c7-941715d6b92e",
+        "title": "Colorao",
+        "slug": "el-equipo-colorao-1983",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+        "duration": 278000,
+        "recording_year": 1983,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Luis Kalaff",
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 5
+        }
+      }
+    },
+    {
+      "id": "b57e3eed-f642-4cf4-956a-524c2e1d6c60",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "title": "Veneno",
+      "after": {
+        "id": "b57e3eed-f642-4cf4-956a-524c2e1d6c60",
+        "title": "Veneno",
+        "slug": "el-equipo-veneno-1983",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+        "duration": 306000,
+        "recording_year": 1983,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Fernando Echavarría",
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 6
+        }
+      }
+    },
+    {
+      "id": "9138aa3d-afa6-4bed-ba69-5b0e17e60190",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "title": "Queriendote Y Adorandote",
+      "after": {
+        "id": "9138aa3d-afa6-4bed-ba69-5b0e17e60190",
+        "title": "Queriendote Y Adorandote",
+        "slug": "el-equipo-queriendote-y-adorandote-1983",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+        "duration": 264000,
+        "recording_year": 1983,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 7
+        }
+      }
+    },
+    {
+      "id": "c6636d97-6130-4f4f-b5b4-21e2119b1ca2",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "title": "Ladrona",
+      "after": {
+        "id": "c6636d97-6130-4f4f-b5b4-21e2119b1ca2",
+        "title": "Ladrona",
+        "slug": "el-equipo-ladrona-1983",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+        "duration": 264000,
+        "recording_year": 1983,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Diego Verdaguer",
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 8
+        }
+      }
+    },
+    {
+      "id": "88e78d7a-5bba-4a16-b333-3ed85fcab0b1",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "title": "Los Diseñadores",
+      "after": {
+        "id": "88e78d7a-5bba-4a16-b333-3ed85fcab0b1",
+        "title": "Los Diseñadores",
+        "slug": "el-equipo-los-disenadores-1984",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+        "duration": 250000,
+        "recording_year": 1984,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Alberto «Beto» Vega",
+          "literal_lead_vocalist": "Sergio Vargas",
+          "original_position": 1
+        }
+      }
+    },
+    {
+      "id": "b3e6181c-a663-43c0-85d4-8d2fcb6baf33",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "title": "Me Aleje Llorando",
+      "after": {
+        "id": "b3e6181c-a663-43c0-85d4-8d2fcb6baf33",
+        "title": "Me Aleje Llorando",
+        "slug": "el-equipo-me-aleje-llorando-1984",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+        "duration": 255000,
+        "recording_year": 1984,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Sergio Vargas",
+          "original_position": 2
+        }
+      }
+    },
+    {
+      "id": "59103a6f-0955-40d7-ba6b-fec226ba63bf",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "title": "Oye Muchacha",
+      "after": {
+        "id": "59103a6f-0955-40d7-ba6b-fec226ba63bf",
+        "title": "Oye Muchacha",
+        "slug": "el-equipo-oye-muchacha-1984",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+        "duration": 260000,
+        "recording_year": 1984,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Carlos David",
+          "original_position": 3
+        }
+      }
+    },
+    {
+      "id": "586271c4-265e-413f-8c00-f47a354e1cb0",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "title": "Cal Y Arena",
+      "after": {
+        "id": "586271c4-265e-413f-8c00-f47a354e1cb0",
+        "title": "Cal Y Arena",
+        "slug": "el-equipo-cal-y-arena-1984",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+        "duration": 265000,
+        "recording_year": 1984,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Cheché Abreu",
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 4
+        }
+      }
+    },
+    {
+      "id": "10d95701-e490-46f1-a2c6-b0686841e02b",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "title": "Cuando Me Tocas",
+      "after": {
+        "id": "10d95701-e490-46f1-a2c6-b0686841e02b",
+        "title": "Cuando Me Tocas",
+        "slug": "el-equipo-cuando-me-tocas-1984",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+        "duration": 245000,
+        "recording_year": 1984,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Sergio Vargas",
+          "original_position": 5
+        }
+      }
+    },
+    {
+      "id": "a23c1380-7234-49b0-8092-96ffacda16fa",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "title": "El Doble Sentido",
+      "after": {
+        "id": "a23c1380-7234-49b0-8092-96ffacda16fa",
+        "title": "El Doble Sentido",
+        "slug": "el-equipo-el-doble-sentido-1984",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+        "duration": 255000,
+        "recording_year": 1984,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 6
+        }
+      }
+    },
+    {
+      "id": "aaaab226-e2cc-4597-8c41-e893488ce70d",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "title": "Telefono A Larga Distancia",
+      "after": {
+        "id": "aaaab226-e2cc-4597-8c41-e893488ce70d",
+        "title": "Telefono A Larga Distancia",
+        "slug": "el-equipo-telefono-a-larga-distancia-1984",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+        "duration": 250000,
+        "recording_year": 1984,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 7
+        }
+      }
+    },
+    {
+      "id": "01f1af2d-26ab-4dcf-a146-d9b3efc340e0",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "title": "Fiesta y Fiesta",
+      "after": {
+        "id": "01f1af2d-26ab-4dcf-a146-d9b3efc340e0",
+        "title": "Fiesta y Fiesta",
+        "slug": "el-equipo-fiesta-y-fiesta-1985",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+        "duration": 322493,
+        "recording_year": 1985,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Carlos David",
+          "original_position": 1
+        }
+      }
+    },
+    {
+      "id": "925dae85-4755-4065-82b3-45624a59c728",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "title": "Al Ritmo de la Noche",
+      "after": {
+        "id": "925dae85-4755-4065-82b3-45624a59c728",
+        "title": "Al Ritmo de la Noche",
+        "slug": "el-equipo-al-ritmo-de-la-noche-1985",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+        "duration": 320480,
+        "recording_year": 1985,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Carlos David",
+          "original_position": 2
+        }
+      }
+    },
+    {
+      "id": "2afa7aa5-8238-42a7-8763-803d8ec54dbf",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "title": "El Pescador de Baru",
+      "after": {
+        "id": "2afa7aa5-8238-42a7-8763-803d8ec54dbf",
+        "title": "El Pescador de Baru",
+        "slug": "el-equipo-el-pescador-de-baru-1985",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+        "duration": 266973,
+        "recording_year": 1985,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Orvis García",
+          "original_position": 3
+        }
+      }
+    },
+    {
+      "id": "ccf376bc-b355-47a3-bb88-6ab17ae19b1a",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "title": "Caribe",
+      "after": {
+        "id": "ccf376bc-b355-47a3-bb88-6ab17ae19b1a",
+        "title": "Caribe",
+        "slug": "el-equipo-caribe-1985",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+        "duration": 288827,
+        "recording_year": 1985,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Carlos David",
+          "original_position": 4
+        }
+      }
+    },
+    {
+      "id": "7b10f6dc-69e1-4374-ba0e-4b2a0503ec97",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "title": "Loco, Loco",
+      "after": {
+        "id": "7b10f6dc-69e1-4374-ba0e-4b2a0503ec97",
+        "title": "Loco, Loco",
+        "slug": "el-equipo-loco-loco-1985",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+        "duration": 246200,
+        "recording_year": 1985,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Carlos David",
+          "original_position": 5
+        }
+      }
+    },
+    {
+      "id": "674ae081-bc96-4f6f-995e-0a3f449a1218",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "title": "Como Es Posible",
+      "after": {
+        "id": "674ae081-bc96-4f6f-995e-0a3f449a1218",
+        "title": "Como Es Posible",
+        "slug": "el-equipo-como-es-posible-1985",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+        "duration": 257467,
+        "recording_year": 1985,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Carlos David",
+          "original_position": 6
+        }
+      }
+    },
+    {
+      "id": "c3debc26-0386-4dc9-95e1-23d319127f76",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "title": "Chispeando",
+      "after": {
+        "id": "c3debc26-0386-4dc9-95e1-23d319127f76",
+        "title": "Chispeando",
+        "slug": "el-equipo-chispeando-1985",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+        "duration": 224493,
+        "recording_year": 1985,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Orvis García",
+          "original_position": 7
+        }
+      }
+    },
+    {
+      "id": "8fa4272e-5363-43fd-8778-4cef2e88ae5c",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "title": "Nicanor",
+      "after": {
+        "id": "8fa4272e-5363-43fd-8778-4cef2e88ae5c",
+        "title": "Nicanor",
+        "slug": "el-equipo-nicanor-1985",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+        "duration": 242307,
+        "recording_year": 1985,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Orvis García",
+          "original_position": 8
+        }
+      }
+    },
+    {
+      "id": "a2728301-2315-4fb2-8a4b-6c9accc72da1",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "title": "Me Mantengo",
+      "after": {
+        "id": "a2728301-2315-4fb2-8a4b-6c9accc72da1",
+        "title": "Me Mantengo",
+        "slug": "el-equipo-me-mantengo-1985",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+        "duration": 259560,
+        "recording_year": 1985,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Carlos David",
+          "original_position": 9
+        }
+      }
+    },
+    {
+      "id": "865bd89f-41a5-4bdb-98dc-65cc229c6cbf",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "title": "Pasa la Vida",
+      "after": {
+        "id": "865bd89f-41a5-4bdb-98dc-65cc229c6cbf",
+        "title": "Pasa la Vida",
+        "slug": "el-equipo-pasa-la-vida-1986",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+        "duration": 283827,
+        "recording_year": 1986,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Carlos David",
+          "original_position": 1
+        }
+      }
+    },
+    {
+      "id": "d9a0a572-3b28-47b3-b802-105ed678332e",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "title": "Que Me Dice Usted",
+      "after": {
+        "id": "d9a0a572-3b28-47b3-b802-105ed678332e",
+        "title": "Que Me Dice Usted",
+        "slug": "el-equipo-que-me-dice-usted-1986",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+        "duration": 215147,
+        "recording_year": 1986,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Carlos David",
+          "original_position": 2
+        }
+      }
+    },
+    {
+      "id": "eee298d2-a9ae-46b4-95f6-32123416ce01",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "title": "La de Perder",
+      "after": {
+        "id": "eee298d2-a9ae-46b4-95f6-32123416ce01",
+        "title": "La de Perder",
+        "slug": "el-equipo-la-de-perder-1986",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+        "duration": 236320,
+        "recording_year": 1986,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 3
+        }
+      }
+    },
+    {
+      "id": "5c5d8a17-c0ff-4def-9a09-2649d21f1218",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "title": "Como Tu No Hay Dos",
+      "after": {
+        "id": "5c5d8a17-c0ff-4def-9a09-2649d21f1218",
+        "title": "Como Tu No Hay Dos",
+        "slug": "el-equipo-como-tu-no-hay-dos-1986",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+        "duration": 350773,
+        "recording_year": 1986,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Carlos David",
+          "original_position": 4
+        }
+      }
+    },
+    {
+      "id": "686dd8e9-a5aa-42ab-89cb-e1fbae4b9d06",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "title": "Sí Señor",
+      "after": {
+        "id": "686dd8e9-a5aa-42ab-89cb-e1fbae4b9d06",
+        "title": "Sí Señor",
+        "slug": "el-equipo-si-senor-1986",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+        "duration": 245107,
+        "recording_year": 1986,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 5
+        }
+      }
+    },
+    {
+      "id": "4aedd90c-0fb0-42af-a3df-7cdc5c7222ae",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "title": "Si Quieres",
+      "after": {
+        "id": "4aedd90c-0fb0-42af-a3df-7cdc5c7222ae",
+        "title": "Si Quieres",
+        "slug": "el-equipo-si-quieres-1986",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+        "duration": 245587,
+        "recording_year": 1986,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Carlos David",
+          "original_position": 6
+        }
+      }
+    },
+    {
+      "id": "11586c66-b901-45ff-9a9e-0a4e0964b002",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "title": "Te Espero",
+      "after": {
+        "id": "11586c66-b901-45ff-9a9e-0a4e0964b002",
+        "title": "Te Espero",
+        "slug": "el-equipo-te-espero-1986",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+        "duration": 247867,
+        "recording_year": 1986,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 7
+        }
+      }
+    },
+    {
+      "id": "6b3c3a17-c090-4110-a5a1-b2d8c3a9b247",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "title": "La Única",
+      "after": {
+        "id": "6b3c3a17-c090-4110-a5a1-b2d8c3a9b247",
+        "title": "La Única",
+        "slug": "el-equipo-la-unica-1986",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+        "duration": 314947,
+        "recording_year": 1986,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Carlos David",
+          "original_position": 8
+        }
+      }
+    },
+    {
+      "id": "86c70bb2-59d7-4512-b699-077140ebe79e",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "title": "El Teléfono",
+      "after": {
+        "id": "86c70bb2-59d7-4512-b699-077140ebe79e",
+        "title": "El Teléfono",
+        "slug": "el-equipo-el-telefono-1986",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+        "duration": 246147,
+        "recording_year": 1986,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 9
+        }
+      }
+    },
+    {
+      "id": "c44b71ea-3271-4eb3-b2eb-695eac433964",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "title": "El Cinturón Del Taxi",
+      "after": {
+        "id": "c44b71ea-3271-4eb3-b2eb-695eac433964",
+        "title": "El Cinturón Del Taxi",
+        "slug": "el-equipo-el-cinturon-del-taxi-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+        "duration": 277185,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 1
+        }
+      }
+    },
+    {
+      "id": "0d38bab0-a369-45de-a7ad-b989901f60a7",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "title": "La Llore",
+      "after": {
+        "id": "0d38bab0-a369-45de-a7ad-b989901f60a7",
+        "title": "La Llore",
+        "slug": "el-equipo-la-llore-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+        "duration": 263001,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 2
+        }
+      }
+    },
+    {
+      "id": "0af26cb8-b74e-41f2-8a7c-32375f603d15",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "title": "Si No Te Hubieras Ido",
+      "after": {
+        "id": "0af26cb8-b74e-41f2-8a7c-32375f603d15",
+        "title": "Si No Te Hubieras Ido",
+        "slug": "el-equipo-si-no-te-hubieras-ido-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+        "duration": 257097,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Marco Antonio Solís",
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 3
+        }
+      }
+    },
+    {
+      "id": "4dded2c8-e67c-45ff-9791-c3cd9a04c9df",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "title": "Pum Pum Pum Del Amor",
+      "after": {
+        "id": "4dded2c8-e67c-45ff-9791-c3cd9a04c9df",
+        "title": "Pum Pum Pum Del Amor",
+        "slug": "el-equipo-pum-pum-pum-del-amor-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+        "duration": 254302,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 4
+        }
+      }
+    },
+    {
+      "id": "7aafbf38-dfad-44b3-bb79-a2e3c644624b",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "title": "Casi Ya",
+      "after": {
+        "id": "7aafbf38-dfad-44b3-bb79-a2e3c644624b",
+        "title": "Casi Ya",
+        "slug": "el-equipo-casi-ya-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+        "duration": 274756,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 5
+        }
+      }
+    },
+    {
+      "id": "67c40786-4b53-4376-9317-7b1b5ee52928",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "title": "Yo Amo",
+      "after": {
+        "id": "67c40786-4b53-4376-9317-7b1b5ee52928",
+        "title": "Yo Amo",
+        "slug": "el-equipo-yo-amo-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+        "duration": 282175,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 6
+        }
+      }
+    },
+    {
+      "id": "001bd38c-0e85-495d-afc2-34f3e9df227d",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "title": "O Me Voy, O Me Quedo",
+      "after": {
+        "id": "001bd38c-0e85-495d-afc2-34f3e9df227d",
+        "title": "O Me Voy, O Me Quedo",
+        "slug": "el-equipo-o-me-voy-o-me-quedo-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+        "duration": 291709,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Marco Antonio Solís",
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 7
+        }
+      }
+    },
+    {
+      "id": "a85d89da-42c0-4cef-831b-00d7e7805064",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "title": "Dame Mas",
+      "after": {
+        "id": "a85d89da-42c0-4cef-831b-00d7e7805064",
+        "title": "Dame Mas",
+        "slug": "el-equipo-dame-mas-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+        "duration": 271961,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 8
+        }
+      }
+    },
+    {
+      "id": "1cbdb656-b5ca-4b68-8752-0570b032e35b",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "title": "A Tu Lado O Al Lado De Ella",
+      "after": {
+        "id": "1cbdb656-b5ca-4b68-8752-0570b032e35b",
+        "title": "A Tu Lado O Al Lado De Ella",
+        "slug": "el-equipo-a-tu-lado-o-al-lado-de-ella-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+        "duration": 324441,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 9
+        }
+      }
+    },
+    {
+      "id": "467bfaaa-c9c6-4a39-8be1-fb8a9fa6cd97",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "title": "El Millonario",
+      "after": {
+        "id": "467bfaaa-c9c6-4a39-8be1-fb8a9fa6cd97",
+        "title": "El Millonario",
+        "slug": "el-equipo-el-millonario-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "e8870364-b333-48f7-a678-dce904034932",
+        "duration": 269400,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 1
+        }
+      }
+    },
+    {
+      "id": "40ae7213-ed56-441b-a0cf-11714fad6c1d",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "title": "Hola, Cómo Estás",
+      "after": {
+        "id": "40ae7213-ed56-441b-a0cf-11714fad6c1d",
+        "title": "Hola, Cómo Estás",
+        "slug": "el-equipo-hola-como-estas-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "e8870364-b333-48f7-a678-dce904034932",
+        "duration": 298493,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 2
+        }
+      }
+    },
+    {
+      "id": "88072b68-1214-48eb-8986-e47069f37115",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "title": "No Se Murió el Amor",
+      "after": {
+        "id": "88072b68-1214-48eb-8986-e47069f37115",
+        "title": "No Se Murió el Amor",
+        "slug": "el-equipo-no-se-murio-el-amor-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "e8870364-b333-48f7-a678-dce904034932",
+        "duration": 335480,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 3
+        }
+      }
+    },
+    {
+      "id": "b3a83de5-d5ae-44ff-8df3-15045363d067",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "title": "Mi Corazón",
+      "after": {
+        "id": "b3a83de5-d5ae-44ff-8df3-15045363d067",
+        "title": "Mi Corazón",
+        "slug": "el-equipo-mi-corazon-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "e8870364-b333-48f7-a678-dce904034932",
+        "duration": 201613,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 4
+        }
+      }
+    },
+    {
+      "id": "8aa169ac-0e20-43b2-9ffd-bb2ac335f7b4",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "title": "Me Estremeces",
+      "after": {
+        "id": "8aa169ac-0e20-43b2-9ffd-bb2ac335f7b4",
+        "title": "Me Estremeces",
+        "slug": "el-equipo-me-estremeces-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "e8870364-b333-48f7-a678-dce904034932",
+        "duration": 260307,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 5
+        }
+      }
+    },
+    {
+      "id": "d4d0d931-2caf-437e-b816-260317ee3514",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "title": "Recomencemos",
+      "after": {
+        "id": "d4d0d931-2caf-437e-b816-260317ee3514",
+        "title": "Recomencemos",
+        "slug": "el-equipo-recomencemos-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "e8870364-b333-48f7-a678-dce904034932",
+        "duration": 292960,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 6
+        }
+      }
+    },
+    {
+      "id": "5227bcd6-8fba-456c-a127-2868c9136720",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "title": "En Bancarrota",
+      "after": {
+        "id": "5227bcd6-8fba-456c-a127-2868c9136720",
+        "title": "En Bancarrota",
+        "slug": "el-equipo-en-bancarrota-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "e8870364-b333-48f7-a678-dce904034932",
+        "duration": 294133,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 7
+        }
+      }
+    },
+    {
+      "id": "bc4d1b4b-73fb-43db-9cec-f9daeda8a7ac",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "title": "La Bamba",
+      "after": {
+        "id": "bc4d1b4b-73fb-43db-9cec-f9daeda8a7ac",
+        "title": "La Bamba",
+        "slug": "el-equipo-la-bamba-1988",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "e8870364-b333-48f7-a678-dce904034932",
+        "duration": 281693,
+        "recording_year": 1988,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablo Martínez",
+          "original_position": 8
+        }
+      }
+    },
+    {
+      "id": "7f6f9d90-bd6f-42b8-90ee-47b8c2826a02",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "title": "El Apretaito",
+      "after": {
+        "id": "7f6f9d90-bd6f-42b8-90ee-47b8c2826a02",
+        "title": "El Apretaito",
+        "slug": "el-equipo-el-apretaito-1991",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+        "duration": 252933,
+        "recording_year": 1991,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablito Barriga",
+          "original_position": 1
+        }
+      }
+    },
+    {
+      "id": "7e622371-df77-4121-9831-714853bf0a8b",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "title": "Tienes Tú",
+      "after": {
+        "id": "7e622371-df77-4121-9831-714853bf0a8b",
+        "title": "Tienes Tú",
+        "slug": "el-equipo-tienes-tu-1991",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+        "duration": 273267,
+        "recording_year": 1991,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Kaki Vargas",
+          "original_position": 2
+        }
+      }
+    },
+    {
+      "id": "eee1a649-364b-4ce7-831e-3b6bd83b21a0",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "title": "De Ella Sola",
+      "after": {
+        "id": "eee1a649-364b-4ce7-831e-3b6bd83b21a0",
+        "title": "De Ella Sola",
+        "slug": "el-equipo-de-ella-sola-1991",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+        "duration": 292867,
+        "recording_year": 1991,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Kaki Vargas",
+          "original_position": 3
+        }
+      }
+    },
+    {
+      "id": "941e405e-4fb1-44e9-a429-95081ffbd76d",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "title": "Quiéreme, Quiéreme",
+      "after": {
+        "id": "941e405e-4fb1-44e9-a429-95081ffbd76d",
+        "title": "Quiéreme, Quiéreme",
+        "slug": "el-equipo-quiereme-quiereme-1991",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+        "duration": 266360,
+        "recording_year": 1991,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Kaki Vargas",
+          "original_position": 4
+        }
+      }
+    },
+    {
+      "id": "7264ba28-d953-45a1-8695-6cd5cc03fb4e",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "title": "Escúchame",
+      "after": {
+        "id": "7264ba28-d953-45a1-8695-6cd5cc03fb4e",
+        "title": "Escúchame",
+        "slug": "el-equipo-escuchame-1991",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+        "duration": 286333,
+        "recording_year": 1991,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Kaki Vargas",
+          "original_position": 5
+        }
+      }
+    },
+    {
+      "id": "b1b7e7b6-2257-4d5d-8a04-3831b8183216",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "title": "Por Retenerte",
+      "after": {
+        "id": "b1b7e7b6-2257-4d5d-8a04-3831b8183216",
+        "title": "Por Retenerte",
+        "slug": "el-equipo-por-retenerte-1991",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+        "duration": 241640,
+        "recording_year": 1991,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Kaki Vargas",
+          "original_position": 6
+        }
+      }
+    },
+    {
+      "id": "69667c40-56c5-43a1-9126-bc8f28fef43e",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "title": "El Amor Es Como una Flor",
+      "after": {
+        "id": "69667c40-56c5-43a1-9126-bc8f28fef43e",
+        "title": "El Amor Es Como una Flor",
+        "slug": "el-equipo-el-amor-es-como-una-flor-1991",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+        "duration": 257693,
+        "recording_year": 1991,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Kaki Vargas",
+          "original_position": 7
+        }
+      }
+    },
+    {
+      "id": "25152783-3db1-4d18-af23-dde0cae3bced",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "title": "La Pulla",
+      "after": {
+        "id": "25152783-3db1-4d18-af23-dde0cae3bced",
+        "title": "La Pulla",
+        "slug": "el-equipo-la-pulla-1991",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+        "duration": 267453,
+        "recording_year": 1991,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Pablito Barriga",
+          "original_position": 8
+        }
+      }
+    },
+    {
+      "id": "a134441c-e7ff-47e0-a7ec-36ddac980035",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "title": "Yo Soy Para Ti",
+      "after": {
+        "id": "a134441c-e7ff-47e0-a7ec-36ddac980035",
+        "title": "Yo Soy Para Ti",
+        "slug": "el-equipo-yo-soy-para-ti-1992",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+        "duration": 255000,
+        "recording_year": 1992,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 1
+        }
+      }
+    },
+    {
+      "id": "258c70cf-049a-47c4-8709-f954e2bb2e78",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "title": "A Veces",
+      "after": {
+        "id": "258c70cf-049a-47c4-8709-f954e2bb2e78",
+        "title": "A Veces",
+        "slug": "el-equipo-a-veces-1992",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+        "duration": 260000,
+        "recording_year": 1992,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 2
+        }
+      }
+    },
+    {
+      "id": "f7fa92d3-6d05-491c-a5f7-064051688e72",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "title": "No Te Vayas Ahora",
+      "after": {
+        "id": "f7fa92d3-6d05-491c-a5f7-064051688e72",
+        "title": "No Te Vayas Ahora",
+        "slug": "el-equipo-no-te-vayas-ahora-1992",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+        "duration": 250000,
+        "recording_year": 1992,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 3
+        }
+      }
+    },
+    {
+      "id": "310c8dee-e8b0-4a51-a58e-de3eb20001e2",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "title": "Me Hace Falta Ella",
+      "after": {
+        "id": "310c8dee-e8b0-4a51-a58e-de3eb20001e2",
+        "title": "Me Hace Falta Ella",
+        "slug": "el-equipo-me-hace-falta-ella-1992",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+        "duration": 270000,
+        "recording_year": 1992,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 4
+        }
+      }
+    },
+    {
+      "id": "646ee431-a658-4dda-8eaf-df9e17e3c34a",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "title": "Demasiado",
+      "after": {
+        "id": "646ee431-a658-4dda-8eaf-df9e17e3c34a",
+        "title": "Demasiado",
+        "slug": "el-equipo-demasiado-1992",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+        "duration": 245000,
+        "recording_year": 1992,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 5
+        }
+      }
+    },
+    {
+      "id": "b979a88d-9178-4d4c-8130-95734b65a432",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "title": "Habra Mas Tiempo",
+      "after": {
+        "id": "b979a88d-9178-4d4c-8130-95734b65a432",
+        "title": "Habra Mas Tiempo",
+        "slug": "el-equipo-habra-mas-tiempo-1992",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+        "duration": 265000,
+        "recording_year": 1992,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 6
+        }
+      }
+    },
+    {
+      "id": "d7f9b9c0-5097-4358-8ca2-c92a8166bab6",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "title": "Miel De Abejas",
+      "after": {
+        "id": "d7f9b9c0-5097-4358-8ca2-c92a8166bab6",
+        "title": "Miel De Abejas",
+        "slug": "el-equipo-miel-de-abejas-1992",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+        "duration": 250000,
+        "recording_year": 1992,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 7
+        }
+      }
+    },
+    {
+      "id": "4033553b-5b38-4225-bbd9-8ce293949f89",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "title": "Voy Pa'lla",
+      "after": {
+        "id": "4033553b-5b38-4225-bbd9-8ce293949f89",
+        "title": "Voy Pa'lla",
+        "slug": "el-equipo-voy-pa-lla-1992",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+        "duration": 255000,
+        "recording_year": 1992,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 8
+        }
+      }
+    },
+    {
+      "id": "5d3d0607-cda4-43df-9b68-88d8be57dab3",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "title": "Me Moria Por Ella",
+      "after": {
+        "id": "5d3d0607-cda4-43df-9b68-88d8be57dab3",
+        "title": "Me Moria Por Ella",
+        "slug": "el-equipo-me-moria-por-ella-1992",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+        "duration": 275000,
+        "recording_year": 1992,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 9
+        }
+      }
+    },
+    {
+      "id": "11c42ca0-66d6-477a-ae15-31e22bde1d39",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "title": "Y Pa' Que Me Quejo",
+      "after": {
+        "id": "11c42ca0-66d6-477a-ae15-31e22bde1d39",
+        "title": "Y Pa' Que Me Quejo",
+        "slug": "el-equipo-y-pa-que-me-quejo-1992",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+        "duration": 252000,
+        "recording_year": 1992,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 10
+        }
+      }
+    },
+    {
+      "id": "9af4662e-2860-4079-ad79-b2ea461a293a",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "title": "Como Duele Una Traicion",
+      "after": {
+        "id": "9af4662e-2860-4079-ad79-b2ea461a293a",
+        "title": "Como Duele Una Traicion",
+        "slug": "el-equipo-como-duele-una-traicion-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+        "duration": 225000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 58,
+        "subgenre_id": null,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Julito Deschamps",
+          "literal_lead_vocalist": "Eddy Rafael",
+          "original_position": 1
+        }
+      }
+    },
+    {
+      "id": "4eda08f4-be68-4fae-b156-9add2abd38ce",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "title": "Que Me Importa",
+      "after": {
+        "id": "4eda08f4-be68-4fae-b156-9add2abd38ce",
+        "title": "Que Me Importa",
+        "slug": "el-equipo-que-me-importa-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+        "duration": 210000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 58,
+        "subgenre_id": null,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Julito Deschamps",
+          "literal_lead_vocalist": "Eddy Rafael",
+          "original_position": 2
+        }
+      }
+    },
+    {
+      "id": "da3d1cfd-75b5-44ca-baac-2b9443aebb56",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "title": "Poquita Fe",
+      "after": {
+        "id": "da3d1cfd-75b5-44ca-baac-2b9443aebb56",
+        "title": "Poquita Fe",
+        "slug": "el-equipo-poquita-fe-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+        "duration": 220000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 58,
+        "subgenre_id": null,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Bobby Capó",
+          "literal_lead_vocalist": "Eddy Rafael",
+          "original_position": 3
+        }
+      }
+    },
+    {
+      "id": "12ec747f-a6c0-41d5-8f11-5501bb73afac",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "title": "No Vale La Pena",
+      "after": {
+        "id": "12ec747f-a6c0-41d5-8f11-5501bb73afac",
+        "title": "No Vale La Pena",
+        "slug": "el-equipo-no-vale-la-pena-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+        "duration": 205000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 58,
+        "subgenre_id": null,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Julito Deschamps",
+          "literal_lead_vocalist": "Eddy Rafael",
+          "original_position": 4
+        }
+      }
+    },
+    {
+      "id": "f72226f6-7388-4d5b-9bdd-b54a205c3851",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "title": "Traiconera",
+      "after": {
+        "id": "f72226f6-7388-4d5b-9bdd-b54a205c3851",
+        "title": "Traiconera",
+        "slug": "el-equipo-traiconera-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+        "duration": 215000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 58,
+        "subgenre_id": null,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Julito Deschamps",
+          "literal_lead_vocalist": "Eddy Rafael",
+          "original_position": 5
+        }
+      }
+    },
+    {
+      "id": "23f35fbc-7ecb-423a-848b-94095694d33e",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "title": "Suplica",
+      "after": {
+        "id": "23f35fbc-7ecb-423a-848b-94095694d33e",
+        "title": "Suplica",
+        "slug": "el-equipo-suplica-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+        "duration": 230000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 58,
+        "subgenre_id": null,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Julito Deschamps",
+          "literal_lead_vocalist": "Eddy Rafael",
+          "original_position": 6
+        }
+      }
+    },
+    {
+      "id": "5dff10d6-d01d-40e9-bcac-88177da4c380",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "title": "Te Necesito",
+      "after": {
+        "id": "5dff10d6-d01d-40e9-bcac-88177da4c380",
+        "title": "Te Necesito",
+        "slug": "el-equipo-te-necesito-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+        "duration": 200000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 58,
+        "subgenre_id": null,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Julito Deschamps",
+          "literal_lead_vocalist": "Eddy Rafael",
+          "original_position": 7
+        }
+      }
+    },
+    {
+      "id": "58798976-7aa5-4e90-8b95-f70c3b360e35",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "title": "Que Te Vaya Bien",
+      "after": {
+        "id": "58798976-7aa5-4e90-8b95-f70c3b360e35",
+        "title": "Que Te Vaya Bien",
+        "slug": "el-equipo-que-te-vaya-bien-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+        "duration": 195000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 58,
+        "subgenre_id": null,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Julito Deschamps",
+          "literal_lead_vocalist": "Eddy Rafael",
+          "original_position": 8
+        }
+      }
+    },
+    {
+      "id": "170eae76-02b2-4ab2-bd14-76241717e000",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "title": "Yo Vivo Mi Vida",
+      "after": {
+        "id": "170eae76-02b2-4ab2-bd14-76241717e000",
+        "title": "Yo Vivo Mi Vida",
+        "slug": "el-equipo-yo-vivo-mi-vida-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+        "duration": 210000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 58,
+        "subgenre_id": null,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Julito Deschamps",
+          "literal_lead_vocalist": "Eddy Rafael",
+          "original_position": 9
+        }
+      }
+    },
+    {
+      "id": "0d8be094-df0b-404b-9208-a96655bc48be",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "title": "Sera Muy Fácil",
+      "after": {
+        "id": "0d8be094-df0b-404b-9208-a96655bc48be",
+        "title": "Sera Muy Fácil",
+        "slug": "el-equipo-sera-muy-facil-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+        "duration": 220000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 58,
+        "subgenre_id": null,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Julito Deschamps",
+          "literal_lead_vocalist": "Eddy Rafael",
+          "original_position": 10
+        }
+      }
+    },
+    {
+      "id": "1a0ef4e4-b03c-4f09-b827-a31851a4193c",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "title": "La Gota Fria",
+      "after": {
+        "id": "1a0ef4e4-b03c-4f09-b827-a31851a4193c",
+        "title": "La Gota Fria",
+        "slug": "el-equipo-la-gota-fria-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+        "duration": 255000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Emiliano Zuleta",
+          "literal_lead_vocalist": null,
+          "original_position": 1
+        }
+      }
+    },
+    {
+      "id": "95dedac3-da48-45ae-8c80-d730e78cb7c4",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "title": "Volviendome Tu",
+      "after": {
+        "id": "95dedac3-da48-45ae-8c80-d730e78cb7c4",
+        "title": "Volviendome Tu",
+        "slug": "el-equipo-volviendome-tu-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+        "duration": 260000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 2
+        }
+      }
+    },
+    {
+      "id": "775e34da-fa3d-4349-afa3-6dbc1a7ad6e2",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "title": "Que Manera De Quererte, Que Manera",
+      "after": {
+        "id": "775e34da-fa3d-4349-afa3-6dbc1a7ad6e2",
+        "title": "Que Manera De Quererte, Que Manera",
+        "slug": "el-equipo-que-manera-de-quererte-que-manera-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+        "duration": 250000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 3
+        }
+      }
+    },
+    {
+      "id": "049ce6d4-8927-4fa5-843b-a6dc0dd83e0e",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "title": "Tu Lo Mataste",
+      "after": {
+        "id": "049ce6d4-8927-4fa5-843b-a6dc0dd83e0e",
+        "title": "Tu Lo Mataste",
+        "slug": "el-equipo-tu-lo-mataste-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+        "duration": 245000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 4
+        }
+      }
+    },
+    {
+      "id": "c6f43c03-869a-4f58-9e1a-57d807c8f62d",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "title": "Amores Como El Nuestro",
+      "after": {
+        "id": "c6f43c03-869a-4f58-9e1a-57d807c8f62d",
+        "title": "Amores Como El Nuestro",
+        "slug": "el-equipo-amores-como-el-nuestro-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+        "duration": 265000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": "Omar Alfanno",
+          "literal_lead_vocalist": null,
+          "original_position": 5
+        }
+      }
+    },
+    {
+      "id": "dd2ca153-fd34-436e-9751-fd538fca4476",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "title": "Como Me Duele Amor",
+      "after": {
+        "id": "dd2ca153-fd34-436e-9751-fd538fca4476",
+        "title": "Como Me Duele Amor",
+        "slug": "el-equipo-como-me-duele-amor-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+        "duration": 255000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 6
+        }
+      }
+    },
+    {
+      "id": "d08d64eb-c2a0-4878-9976-4c438a0117d4",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "title": "La Cita",
+      "after": {
+        "id": "d08d64eb-c2a0-4878-9976-4c438a0117d4",
+        "title": "La Cita",
+        "slug": "el-equipo-la-cita-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+        "duration": 250000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 7
+        }
+      }
+    },
+    {
+      "id": "32ec985c-c0c3-4b67-89ac-c3d008f6056f",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "title": "La Fuentecita",
+      "after": {
+        "id": "32ec985c-c0c3-4b67-89ac-c3d008f6056f",
+        "title": "La Fuentecita",
+        "slug": "el-equipo-la-fuentecita-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+        "duration": 240000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 8
+        }
+      }
+    },
+    {
+      "id": "ec2de361-59ee-4386-933b-d0521b7f844d",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "title": "De Hoy A Mañana",
+      "after": {
+        "id": "ec2de361-59ee-4386-933b-d0521b7f844d",
+        "title": "De Hoy A Mañana",
+        "slug": "el-equipo-de-hoy-a-manana-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+        "duration": 255000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 9
+        }
+      }
+    },
+    {
+      "id": "335b9f5a-9d2e-4375-8cb4-fd88c71c0979",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "title": "Loco De Amor",
+      "after": {
+        "id": "335b9f5a-9d2e-4375-8cb4-fd88c71c0979",
+        "title": "Loco De Amor",
+        "slug": "el-equipo-loco-de-amor-1994",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+        "duration": 260000,
+        "recording_year": 1994,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": null,
+          "original_position": 10
+        }
+      }
+    },
+    {
+      "id": "24f8780c-21b5-4e5f-94a0-c28ed06f7096",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "title": "No Me Dejes",
+      "after": {
+        "id": "24f8780c-21b5-4e5f-94a0-c28ed06f7096",
+        "title": "No Me Dejes",
+        "slug": "el-equipo-no-me-dejes-2007",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+        "duration": 262960,
+        "recording_year": 2007,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 1
+        }
+      }
+    },
+    {
+      "id": "b3b06d2f-b9c8-4ff1-92f8-d205e4b9ece5",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "title": "Vuelve y Juega",
+      "after": {
+        "id": "b3b06d2f-b9c8-4ff1-92f8-d205e4b9ece5",
+        "title": "Vuelve y Juega",
+        "slug": "el-equipo-vuelve-y-juega-2007",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+        "duration": 249160,
+        "recording_year": 2007,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 2
+        }
+      }
+    },
+    {
+      "id": "c75ac5e2-217a-4b50-927c-a4af2cbecca2",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "title": "Buscando un Amor",
+      "after": {
+        "id": "c75ac5e2-217a-4b50-927c-a4af2cbecca2",
+        "title": "Buscando un Amor",
+        "slug": "el-equipo-buscando-un-amor-2007",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+        "duration": 267173,
+        "recording_year": 2007,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 3
+        }
+      }
+    },
+    {
+      "id": "1a708699-ea03-424c-9082-c3127ded89a8",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "title": "Vela Ve",
+      "after": {
+        "id": "1a708699-ea03-424c-9082-c3127ded89a8",
+        "title": "Vela Ve",
+        "slug": "el-equipo-vela-ve-2007",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+        "duration": 264147,
+        "recording_year": 2007,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 4
+        }
+      }
+    },
+    {
+      "id": "3349ad5e-ab92-4a52-b036-3e723974066e",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "title": "Biberón Vacio",
+      "after": {
+        "id": "3349ad5e-ab92-4a52-b036-3e723974066e",
+        "title": "Biberón Vacio",
+        "slug": "el-equipo-biberon-vacio-2007",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+        "duration": 255040,
+        "recording_year": 2007,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 5
+        }
+      }
+    },
+    {
+      "id": "9360de67-b50e-46c7-9fa4-8d0c150f3de4",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "title": "Lamento de Mi Corazón",
+      "after": {
+        "id": "9360de67-b50e-46c7-9fa4-8d0c150f3de4",
+        "title": "Lamento de Mi Corazón",
+        "slug": "el-equipo-lamento-de-mi-corazon-2007",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+        "duration": 278120,
+        "recording_year": 2007,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 6
+        }
+      }
+    },
+    {
+      "id": "0c143e8b-cb56-4700-90f7-dc22645a2901",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "title": "Paz en la Cama",
+      "after": {
+        "id": "0c143e8b-cb56-4700-90f7-dc22645a2901",
+        "title": "Paz en la Cama",
+        "slug": "el-equipo-paz-en-la-cama-2007",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+        "duration": 249360,
+        "recording_year": 2007,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 7
+        }
+      }
+    },
+    {
+      "id": "045022fb-84a6-4bc4-8425-7e34bff98a10",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "title": "Flor de Primavera",
+      "after": {
+        "id": "045022fb-84a6-4bc4-8425-7e34bff98a10",
+        "title": "Flor de Primavera",
+        "slug": "el-equipo-flor-de-primavera-2007",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+        "duration": 251240,
+        "recording_year": 2007,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 8
+        }
+      }
+    },
+    {
+      "id": "12e20e14-5b9f-4169-b982-e5bfaf32d294",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "title": "Quiero",
+      "after": {
+        "id": "12e20e14-5b9f-4169-b982-e5bfaf32d294",
+        "title": "Quiero",
+        "slug": "el-equipo-quiero-2007",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+        "duration": 232133,
+        "recording_year": 2007,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 9
+        }
+      }
+    },
+    {
+      "id": "3d9bf6d9-aaf2-45e4-9e07-e6325bd7998f",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "title": "Me Enamoré",
+      "after": {
+        "id": "3d9bf6d9-aaf2-45e4-9e07-e6325bd7998f",
+        "title": "Me Enamoré",
+        "slug": "el-equipo-me-enamore-2007",
+        "artist_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+        "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+        "duration": 250147,
+        "recording_year": 2007,
+        "recording_context": "secular",
+        "genre_id": 1,
+        "subgenre_id": 15,
+        "metadata": {
+          "source": "Official liner notes and releases",
+          "literal_composer": null,
+          "literal_lead_vocalist": "Charlie Rodríguez",
+          "original_position": 10
+        }
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "id": "29718c78-d309-40bb-9597-d4f2086fbf38",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "recording_id": "8ed8a819-235c-4087-a422-41c70109f8e5",
+      "disc_number": 1,
+      "track_number": 1,
+      "position": 1,
+      "title_override": "Yo Quisiera",
+      "length": 239412,
+      "metadata": {
+        "position": 1,
+        "is_shared": true
+      }
+    },
+    {
+      "id": "6f771fb3-e28f-4c25-ad3d-b6b387a6e008",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "recording_id": "0bc090da-4281-4ea3-a5ec-6302199b3058",
+      "disc_number": 1,
+      "track_number": 2,
+      "position": 2,
+      "title_override": "La Vencida",
+      "length": 323657,
+      "metadata": {
+        "position": 2,
+        "is_shared": true
+      }
+    },
+    {
+      "id": "ce389bf5-cd30-4eac-9a4e-2751a4bef31c",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "recording_id": "657ea1e7-5c27-4547-b115-7014f0f321f5",
+      "disc_number": 1,
+      "track_number": 3,
+      "position": 3,
+      "title_override": "La Carta",
+      "length": 235102,
+      "metadata": {
+        "position": 3,
+        "is_shared": true
+      }
+    },
+    {
+      "id": "1d3a9121-c3ee-497f-8cf9-0c1483f5d712",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "recording_id": "ab08c271-ebf8-4542-8f23-6581663db5a4",
+      "disc_number": 1,
+      "track_number": 4,
+      "position": 4,
+      "title_override": "El Guardia Del Arsenal",
+      "length": 244820,
+      "metadata": {
+        "position": 4,
+        "is_shared": true
+      }
+    },
+    {
+      "id": "3183803d-286d-4629-ab2d-c9b8982e9c07",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "recording_id": "c47e13b8-2277-4d7f-9706-b200bdd37b98",
+      "disc_number": 1,
+      "track_number": 5,
+      "position": 5,
+      "title_override": "De La Noche a La Mañana",
+      "length": 181812,
+      "metadata": {
+        "position": 5,
+        "is_shared": true
+      }
+    },
+    {
+      "id": "a11813fc-849e-4b63-9f86-8a0c967fbc44",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "recording_id": "958cba97-c069-4750-80fb-1a910337d500",
+      "disc_number": 1,
+      "track_number": 6,
+      "position": 6,
+      "title_override": "Sinfonia De Amor",
+      "length": 253440,
+      "metadata": {
+        "position": 6,
+        "is_shared": true
+      }
+    },
+    {
+      "id": "4c59d0ad-34c2-4495-821f-b58ae2730d78",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "recording_id": "94db2417-0445-4713-9bf8-554563534367",
+      "disc_number": 1,
+      "track_number": 7,
+      "position": 7,
+      "title_override": "La Integridad",
+      "length": 308532,
+      "metadata": {
+        "position": 7,
+        "is_shared": true
+      }
+    },
+    {
+      "id": "e09b2b6e-2baf-4db8-ac2b-8ae8b4465bc1",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "recording_id": "ecec1836-458d-42bf-bccb-e020aae28ba7",
+      "disc_number": 1,
+      "track_number": 8,
+      "position": 8,
+      "title_override": "Te Llegará Mi Olvido",
+      "length": 269296,
+      "metadata": {
+        "position": 8,
+        "is_shared": true
+      }
+    },
+    {
+      "id": "1fe0b610-723d-4648-9431-17b1509d591b",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "recording_id": "9ae6cfdb-0bfa-4bd6-9419-25ba88d6f774",
+      "disc_number": 1,
+      "track_number": 9,
+      "position": 9,
+      "title_override": "Yo Te Amo Más",
+      "length": 284056,
+      "metadata": {
+        "position": 9,
+        "is_shared": true
+      }
+    },
+    {
+      "id": "dc795e3f-d12c-40f2-8ad8-58d082d68ada",
+      "release_id": "0e502706-08c2-4d7a-899a-ebaef2ef53c2",
+      "recording_id": "8705b257-0b65-4506-ab65-128d48f0680b",
+      "disc_number": 1,
+      "track_number": 10,
+      "position": 10,
+      "title_override": "Acuérdate De Mi",
+      "length": 166322,
+      "metadata": {
+        "position": 10,
+        "is_shared": true
+      }
+    },
+    {
+      "id": "453d59b6-8c33-4072-ba7e-f8d62afdf243",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "recording_id": "c826c5f7-c589-4022-9df6-58f734da6a5f",
+      "disc_number": 1,
+      "track_number": 1,
+      "position": 1,
+      "title_override": "Moza",
+      "length": 278000,
+      "metadata": {
+        "position": 1,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "f507edae-b0f6-4d34-8285-81146bb67db9",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "recording_id": "f03b01b9-71e1-45bb-993e-87d336027d0f",
+      "disc_number": 1,
+      "track_number": 2,
+      "position": 2,
+      "title_override": "La Mujer Que A Mi Me Gusta",
+      "length": 267000,
+      "metadata": {
+        "position": 2,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "07ad0234-252b-4158-8010-a6156639ff4a",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "recording_id": "f9f30cbc-9b77-4dd4-8fef-4a4f03c2aa16",
+      "disc_number": 1,
+      "track_number": 3,
+      "position": 3,
+      "title_override": "El Merengue Es Un Abrazo",
+      "length": 252000,
+      "metadata": {
+        "position": 3,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "bdeee2ee-6372-4eb7-b59c-6446514269af",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "recording_id": "2f868949-b257-4034-b78b-0ff1b2a61a60",
+      "disc_number": 1,
+      "track_number": 4,
+      "position": 4,
+      "title_override": "Mina De Amor",
+      "length": 251000,
+      "metadata": {
+        "position": 4,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "0608fef5-2290-4205-aadf-b57b646cebf2",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "recording_id": "c58c4597-21f8-41e2-83c7-941715d6b92e",
+      "disc_number": 1,
+      "track_number": 5,
+      "position": 5,
+      "title_override": "Colorao",
+      "length": 278000,
+      "metadata": {
+        "position": 5,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "faa80062-5806-4541-988a-58b340bd5fc2",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "recording_id": "b57e3eed-f642-4cf4-956a-524c2e1d6c60",
+      "disc_number": 1,
+      "track_number": 6,
+      "position": 6,
+      "title_override": "Veneno",
+      "length": 306000,
+      "metadata": {
+        "position": 6,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "a46b4164-e1ae-4bb1-9e11-6be5ac40c5b4",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "recording_id": "9138aa3d-afa6-4bed-ba69-5b0e17e60190",
+      "disc_number": 1,
+      "track_number": 7,
+      "position": 7,
+      "title_override": "Queriendote Y Adorandote",
+      "length": 264000,
+      "metadata": {
+        "position": 7,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "6f9bb3cb-4545-4c3b-8627-cb3af8fa9936",
+      "release_id": "44366aaa-2b82-49dd-8069-a355d17315fe",
+      "recording_id": "c6636d97-6130-4f4f-b5b4-21e2119b1ca2",
+      "disc_number": 1,
+      "track_number": 8,
+      "position": 8,
+      "title_override": "Ladrona",
+      "length": 264000,
+      "metadata": {
+        "position": 8,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "9f703cb4-3e06-468c-b640-b705ca305247",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "recording_id": "88e78d7a-5bba-4a16-b333-3ed85fcab0b1",
+      "disc_number": 1,
+      "track_number": 1,
+      "position": 1,
+      "title_override": "Los Diseñadores",
+      "length": 250000,
+      "metadata": {
+        "position": 1,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "1484565c-2caa-4740-bdf4-7aa4a2df46d2",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "recording_id": "b3e6181c-a663-43c0-85d4-8d2fcb6baf33",
+      "disc_number": 1,
+      "track_number": 2,
+      "position": 2,
+      "title_override": "Me Aleje Llorando",
+      "length": 255000,
+      "metadata": {
+        "position": 2,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "f18fd2a3-05a4-4d59-af0d-45f5407977e2",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "recording_id": "59103a6f-0955-40d7-ba6b-fec226ba63bf",
+      "disc_number": 1,
+      "track_number": 3,
+      "position": 3,
+      "title_override": "Oye Muchacha",
+      "length": 260000,
+      "metadata": {
+        "position": 3,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "d87dc55c-af11-452c-b294-edf1b46a8477",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "recording_id": "586271c4-265e-413f-8c00-f47a354e1cb0",
+      "disc_number": 1,
+      "track_number": 4,
+      "position": 4,
+      "title_override": "Cal Y Arena",
+      "length": 265000,
+      "metadata": {
+        "position": 4,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "cd99ed4f-54ef-4505-9b14-eb7b1b8e65c4",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "recording_id": "10d95701-e490-46f1-a2c6-b0686841e02b",
+      "disc_number": 1,
+      "track_number": 5,
+      "position": 5,
+      "title_override": "Cuando Me Tocas",
+      "length": 245000,
+      "metadata": {
+        "position": 5,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "b5dac5c7-cce7-4a28-bde2-1b2d9f555e44",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "recording_id": "a23c1380-7234-49b0-8092-96ffacda16fa",
+      "disc_number": 1,
+      "track_number": 6,
+      "position": 6,
+      "title_override": "El Doble Sentido",
+      "length": 255000,
+      "metadata": {
+        "position": 6,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "9b3cfd6e-2a06-4caf-a642-6a0d07501746",
+      "release_id": "47d331ac-0ae6-4442-bc2d-1a392580170e",
+      "recording_id": "aaaab226-e2cc-4597-8c41-e893488ce70d",
+      "disc_number": 1,
+      "track_number": 7,
+      "position": 7,
+      "title_override": "Telefono A Larga Distancia",
+      "length": 250000,
+      "metadata": {
+        "position": 7,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "988a4ebf-8f3a-4a98-96a7-bcdaf6670dd4",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "recording_id": "01f1af2d-26ab-4dcf-a146-d9b3efc340e0",
+      "disc_number": 1,
+      "track_number": 1,
+      "position": 1,
+      "title_override": "Fiesta y Fiesta",
+      "length": 322493,
+      "metadata": {
+        "position": 1,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "08af9e28-c84d-4467-9e89-c8bd24cbaae5",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "recording_id": "925dae85-4755-4065-82b3-45624a59c728",
+      "disc_number": 1,
+      "track_number": 2,
+      "position": 2,
+      "title_override": "Al Ritmo de la Noche",
+      "length": 320480,
+      "metadata": {
+        "position": 2,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "56a86c3a-2667-4fa5-895e-13045f9ec2fe",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "recording_id": "2afa7aa5-8238-42a7-8763-803d8ec54dbf",
+      "disc_number": 1,
+      "track_number": 3,
+      "position": 3,
+      "title_override": "El Pescador de Baru",
+      "length": 266973,
+      "metadata": {
+        "position": 3,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "55b521dc-f9e3-4c6b-a918-a209d70e2332",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "recording_id": "ccf376bc-b355-47a3-bb88-6ab17ae19b1a",
+      "disc_number": 1,
+      "track_number": 4,
+      "position": 4,
+      "title_override": "Caribe",
+      "length": 288827,
+      "metadata": {
+        "position": 4,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "ab87c2c3-636d-40d6-98ef-594507853bf8",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "recording_id": "7b10f6dc-69e1-4374-ba0e-4b2a0503ec97",
+      "disc_number": 1,
+      "track_number": 5,
+      "position": 5,
+      "title_override": "Loco, Loco",
+      "length": 246200,
+      "metadata": {
+        "position": 5,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "914c3475-f8c6-4d78-acb1-d008fd5e15ae",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "recording_id": "674ae081-bc96-4f6f-995e-0a3f449a1218",
+      "disc_number": 1,
+      "track_number": 6,
+      "position": 6,
+      "title_override": "Como Es Posible",
+      "length": 257467,
+      "metadata": {
+        "position": 6,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "ad5bf364-2d8f-432a-b297-216c8fffe12a",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "recording_id": "c3debc26-0386-4dc9-95e1-23d319127f76",
+      "disc_number": 1,
+      "track_number": 7,
+      "position": 7,
+      "title_override": "Chispeando",
+      "length": 224493,
+      "metadata": {
+        "position": 7,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "93e98ea3-e07c-4da5-92ef-0b01386f9b77",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "recording_id": "8fa4272e-5363-43fd-8778-4cef2e88ae5c",
+      "disc_number": 1,
+      "track_number": 8,
+      "position": 8,
+      "title_override": "Nicanor",
+      "length": 242307,
+      "metadata": {
+        "position": 8,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "9a1f370c-8ac8-4b04-af90-b5e0d68eddde",
+      "release_id": "28693354-75c1-4c66-b9dd-ff952e35ea27",
+      "recording_id": "a2728301-2315-4fb2-8a4b-6c9accc72da1",
+      "disc_number": 1,
+      "track_number": 9,
+      "position": 9,
+      "title_override": "Me Mantengo",
+      "length": 259560,
+      "metadata": {
+        "position": 9,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "abac26bf-359a-4f60-b429-3e9325e950c3",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "recording_id": "865bd89f-41a5-4bdb-98dc-65cc229c6cbf",
+      "disc_number": 1,
+      "track_number": 1,
+      "position": 1,
+      "title_override": "Pasa la Vida",
+      "length": 283827,
+      "metadata": {
+        "position": 1,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "dff578c4-0239-40b8-809f-707bc3cfbffd",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "recording_id": "d9a0a572-3b28-47b3-b802-105ed678332e",
+      "disc_number": 1,
+      "track_number": 2,
+      "position": 2,
+      "title_override": "Que Me Dice Usted",
+      "length": 215147,
+      "metadata": {
+        "position": 2,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "5f3fd1d8-6ae0-4fb8-80e8-bc78025c7d0b",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "recording_id": "eee298d2-a9ae-46b4-95f6-32123416ce01",
+      "disc_number": 1,
+      "track_number": 3,
+      "position": 3,
+      "title_override": "La de Perder",
+      "length": 236320,
+      "metadata": {
+        "position": 3,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "d9d7cd0a-cb17-4bd0-acb3-738329cd032c",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "recording_id": "5c5d8a17-c0ff-4def-9a09-2649d21f1218",
+      "disc_number": 1,
+      "track_number": 4,
+      "position": 4,
+      "title_override": "Como Tu No Hay Dos",
+      "length": 350773,
+      "metadata": {
+        "position": 4,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "0bb5f2aa-ff4c-4d48-86be-54abab5d70f6",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "recording_id": "686dd8e9-a5aa-42ab-89cb-e1fbae4b9d06",
+      "disc_number": 1,
+      "track_number": 5,
+      "position": 5,
+      "title_override": "Sí Señor",
+      "length": 245107,
+      "metadata": {
+        "position": 5,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "1743d1be-88ae-4e48-b68e-36e83edfc695",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "recording_id": "4aedd90c-0fb0-42af-a3df-7cdc5c7222ae",
+      "disc_number": 1,
+      "track_number": 6,
+      "position": 6,
+      "title_override": "Si Quieres",
+      "length": 245587,
+      "metadata": {
+        "position": 6,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "95f83bbd-4177-428a-a0f3-f9bab3bc55e4",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "recording_id": "11586c66-b901-45ff-9a9e-0a4e0964b002",
+      "disc_number": 1,
+      "track_number": 7,
+      "position": 7,
+      "title_override": "Te Espero",
+      "length": 247867,
+      "metadata": {
+        "position": 7,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "bc782e40-a5d6-4daa-be38-94c48cb9eb55",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "recording_id": "6b3c3a17-c090-4110-a5a1-b2d8c3a9b247",
+      "disc_number": 1,
+      "track_number": 8,
+      "position": 8,
+      "title_override": "La Única",
+      "length": 314947,
+      "metadata": {
+        "position": 8,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "86d884f8-1d66-41fd-b39e-b7cc44783354",
+      "release_id": "6ca8fdff-aa25-43aa-8aff-758186629cba",
+      "recording_id": "86c70bb2-59d7-4512-b699-077140ebe79e",
+      "disc_number": 1,
+      "track_number": 9,
+      "position": 9,
+      "title_override": "El Teléfono",
+      "length": 246147,
+      "metadata": {
+        "position": 9,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "87500e53-0115-4867-b4fd-4436914a2ad7",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "recording_id": "c44b71ea-3271-4eb3-b2eb-695eac433964",
+      "disc_number": 1,
+      "track_number": 1,
+      "position": 1,
+      "title_override": "El Cinturón Del Taxi",
+      "length": 277185,
+      "metadata": {
+        "position": 1,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "88d587f0-3b43-40c8-8815-90d53f4cb03f",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "recording_id": "0d38bab0-a369-45de-a7ad-b989901f60a7",
+      "disc_number": 1,
+      "track_number": 2,
+      "position": 2,
+      "title_override": "La Llore",
+      "length": 263001,
+      "metadata": {
+        "position": 2,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "69d4de6c-ec89-444f-afe2-81d58b9f25ff",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "recording_id": "0af26cb8-b74e-41f2-8a7c-32375f603d15",
+      "disc_number": 1,
+      "track_number": 3,
+      "position": 3,
+      "title_override": "Si No Te Hubieras Ido",
+      "length": 257097,
+      "metadata": {
+        "position": 3,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "c895a40d-9fc4-4b7c-8e18-72fbf1b061ed",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "recording_id": "4dded2c8-e67c-45ff-9791-c3cd9a04c9df",
+      "disc_number": 1,
+      "track_number": 4,
+      "position": 4,
+      "title_override": "Pum Pum Pum Del Amor",
+      "length": 254302,
+      "metadata": {
+        "position": 4,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "0d23cd3e-5759-45f0-a0da-10fcaf30b3f5",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "recording_id": "7aafbf38-dfad-44b3-bb79-a2e3c644624b",
+      "disc_number": 1,
+      "track_number": 5,
+      "position": 5,
+      "title_override": "Casi Ya",
+      "length": 274756,
+      "metadata": {
+        "position": 5,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "769eba53-c769-44d7-985a-86d6040b560c",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "recording_id": "67c40786-4b53-4376-9317-7b1b5ee52928",
+      "disc_number": 1,
+      "track_number": 6,
+      "position": 6,
+      "title_override": "Yo Amo",
+      "length": 282175,
+      "metadata": {
+        "position": 6,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "e313c04d-37a4-49c3-b0ed-2a0fed28d243",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "recording_id": "001bd38c-0e85-495d-afc2-34f3e9df227d",
+      "disc_number": 1,
+      "track_number": 7,
+      "position": 7,
+      "title_override": "O Me Voy, O Me Quedo",
+      "length": 291709,
+      "metadata": {
+        "position": 7,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "3c17c8f4-5c97-4025-874e-bfac3ebcdcef",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "recording_id": "a85d89da-42c0-4cef-831b-00d7e7805064",
+      "disc_number": 1,
+      "track_number": 8,
+      "position": 8,
+      "title_override": "Dame Mas",
+      "length": 271961,
+      "metadata": {
+        "position": 8,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "4cc0f5e2-b5bc-4055-a0e8-e1e98787ddad",
+      "release_id": "830b1416-0e72-4565-b1ac-d6ec7f127800",
+      "recording_id": "1cbdb656-b5ca-4b68-8752-0570b032e35b",
+      "disc_number": 1,
+      "track_number": 9,
+      "position": 9,
+      "title_override": "A Tu Lado O Al Lado De Ella",
+      "length": 324441,
+      "metadata": {
+        "position": 9,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "e7236fd1-78be-48f6-827c-a9c29e1de58d",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "recording_id": "467bfaaa-c9c6-4a39-8be1-fb8a9fa6cd97",
+      "disc_number": 1,
+      "track_number": 1,
+      "position": 1,
+      "title_override": "El Millonario",
+      "length": 269400,
+      "metadata": {
+        "position": 1,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "5b225887-86ac-4ef7-8aec-8feef1f2610c",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "recording_id": "40ae7213-ed56-441b-a0cf-11714fad6c1d",
+      "disc_number": 1,
+      "track_number": 2,
+      "position": 2,
+      "title_override": "Hola, Cómo Estás",
+      "length": 298493,
+      "metadata": {
+        "position": 2,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "f084e080-da63-445a-81d0-5426eeb4115a",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "recording_id": "88072b68-1214-48eb-8986-e47069f37115",
+      "disc_number": 1,
+      "track_number": 3,
+      "position": 3,
+      "title_override": "No Se Murió el Amor",
+      "length": 335480,
+      "metadata": {
+        "position": 3,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "6f1bdf76-392d-49c1-8cd1-4c2977402720",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "recording_id": "b3a83de5-d5ae-44ff-8df3-15045363d067",
+      "disc_number": 1,
+      "track_number": 4,
+      "position": 4,
+      "title_override": "Mi Corazón",
+      "length": 201613,
+      "metadata": {
+        "position": 4,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "b891d84d-5e4c-4ce5-9f14-3494b0f7384f",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "recording_id": "8aa169ac-0e20-43b2-9ffd-bb2ac335f7b4",
+      "disc_number": 1,
+      "track_number": 5,
+      "position": 5,
+      "title_override": "Me Estremeces",
+      "length": 260307,
+      "metadata": {
+        "position": 5,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "47860830-60dd-474c-af3b-be5e612968f3",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "recording_id": "d4d0d931-2caf-437e-b816-260317ee3514",
+      "disc_number": 1,
+      "track_number": 6,
+      "position": 6,
+      "title_override": "Recomencemos",
+      "length": 292960,
+      "metadata": {
+        "position": 6,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "77e97010-9bb0-40e1-80cc-a2828e56b376",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "recording_id": "5227bcd6-8fba-456c-a127-2868c9136720",
+      "disc_number": 1,
+      "track_number": 7,
+      "position": 7,
+      "title_override": "En Bancarrota",
+      "length": 294133,
+      "metadata": {
+        "position": 7,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "3ec50dfd-54f3-4786-9a67-972b9a19dc31",
+      "release_id": "e8870364-b333-48f7-a678-dce904034932",
+      "recording_id": "bc4d1b4b-73fb-43db-9cec-f9daeda8a7ac",
+      "disc_number": 1,
+      "track_number": 8,
+      "position": 8,
+      "title_override": "La Bamba",
+      "length": 281693,
+      "metadata": {
+        "position": 8,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "aeb86be1-ea59-4c1f-8c33-5a54fd88f45d",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "recording_id": "7f6f9d90-bd6f-42b8-90ee-47b8c2826a02",
+      "disc_number": 1,
+      "track_number": 1,
+      "position": 1,
+      "title_override": "El Apretaito",
+      "length": 252933,
+      "metadata": {
+        "position": 1,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "8aab07c3-f48b-4e99-88bb-d265a4f6c6f1",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "recording_id": "7e622371-df77-4121-9831-714853bf0a8b",
+      "disc_number": 1,
+      "track_number": 2,
+      "position": 2,
+      "title_override": "Tienes Tú",
+      "length": 273267,
+      "metadata": {
+        "position": 2,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "2bdd1881-8585-4b33-9b6e-efb3391d5545",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "recording_id": "eee1a649-364b-4ce7-831e-3b6bd83b21a0",
+      "disc_number": 1,
+      "track_number": 3,
+      "position": 3,
+      "title_override": "De Ella Sola",
+      "length": 292867,
+      "metadata": {
+        "position": 3,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "d5bc328b-cf0e-48a8-b704-b2e41b8dee24",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "recording_id": "941e405e-4fb1-44e9-a429-95081ffbd76d",
+      "disc_number": 1,
+      "track_number": 4,
+      "position": 4,
+      "title_override": "Quiéreme, Quiéreme",
+      "length": 266360,
+      "metadata": {
+        "position": 4,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "a120bb8e-658e-4551-86b4-61f387c3dbc1",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "recording_id": "7264ba28-d953-45a1-8695-6cd5cc03fb4e",
+      "disc_number": 1,
+      "track_number": 5,
+      "position": 5,
+      "title_override": "Escúchame",
+      "length": 286333,
+      "metadata": {
+        "position": 5,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "9282e4c5-7eec-4d72-803b-a0a23e7c08c5",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "recording_id": "b1b7e7b6-2257-4d5d-8a04-3831b8183216",
+      "disc_number": 1,
+      "track_number": 6,
+      "position": 6,
+      "title_override": "Por Retenerte",
+      "length": 241640,
+      "metadata": {
+        "position": 6,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "c6bc6194-e59f-431e-820c-a3c42d19cb99",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "recording_id": "69667c40-56c5-43a1-9126-bc8f28fef43e",
+      "disc_number": 1,
+      "track_number": 7,
+      "position": 7,
+      "title_override": "El Amor Es Como una Flor",
+      "length": 257693,
+      "metadata": {
+        "position": 7,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "bc1e7f40-a385-4bc6-ae48-ebcf410ccd34",
+      "release_id": "4dfe7aaf-4020-482c-8180-6972346b05b2",
+      "recording_id": "25152783-3db1-4d18-af23-dde0cae3bced",
+      "disc_number": 1,
+      "track_number": 8,
+      "position": 8,
+      "title_override": "La Pulla",
+      "length": 267453,
+      "metadata": {
+        "position": 8,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "dda03e55-a29c-4c3c-954f-3368181b1524",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "recording_id": "a134441c-e7ff-47e0-a7ec-36ddac980035",
+      "disc_number": 1,
+      "track_number": 1,
+      "position": 1,
+      "title_override": "Yo Soy Para Ti",
+      "length": 255000,
+      "metadata": {
+        "position": 1,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "64d61167-2830-4204-9ce4-2f5a7ee6cafe",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "recording_id": "258c70cf-049a-47c4-8709-f954e2bb2e78",
+      "disc_number": 1,
+      "track_number": 2,
+      "position": 2,
+      "title_override": "A Veces",
+      "length": 260000,
+      "metadata": {
+        "position": 2,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "54640c61-271e-40b0-a986-e19120cae9c5",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "recording_id": "f7fa92d3-6d05-491c-a5f7-064051688e72",
+      "disc_number": 1,
+      "track_number": 3,
+      "position": 3,
+      "title_override": "No Te Vayas Ahora",
+      "length": 250000,
+      "metadata": {
+        "position": 3,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "4aef46d9-b1fd-4c8c-8da8-606d19763766",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "recording_id": "310c8dee-e8b0-4a51-a58e-de3eb20001e2",
+      "disc_number": 1,
+      "track_number": 4,
+      "position": 4,
+      "title_override": "Me Hace Falta Ella",
+      "length": 270000,
+      "metadata": {
+        "position": 4,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "f1bf2050-0b3e-4e66-8989-f2deea4b1b41",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "recording_id": "646ee431-a658-4dda-8eaf-df9e17e3c34a",
+      "disc_number": 1,
+      "track_number": 5,
+      "position": 5,
+      "title_override": "Demasiado",
+      "length": 245000,
+      "metadata": {
+        "position": 5,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "52d862e4-0d94-4391-8658-0171c2005a89",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "recording_id": "b979a88d-9178-4d4c-8130-95734b65a432",
+      "disc_number": 1,
+      "track_number": 6,
+      "position": 6,
+      "title_override": "Habra Mas Tiempo",
+      "length": 265000,
+      "metadata": {
+        "position": 6,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "68403240-f4f7-46e7-9e8b-5c105cb6d52f",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "recording_id": "d7f9b9c0-5097-4358-8ca2-c92a8166bab6",
+      "disc_number": 1,
+      "track_number": 7,
+      "position": 7,
+      "title_override": "Miel De Abejas",
+      "length": 250000,
+      "metadata": {
+        "position": 7,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "024e02fe-708d-4c34-afbc-c1f51dbdbf92",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "recording_id": "4033553b-5b38-4225-bbd9-8ce293949f89",
+      "disc_number": 1,
+      "track_number": 8,
+      "position": 8,
+      "title_override": "Voy Pa'lla",
+      "length": 255000,
+      "metadata": {
+        "position": 8,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "6a1de5a2-9c67-43fb-a414-ed0c623a9561",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "recording_id": "5d3d0607-cda4-43df-9b68-88d8be57dab3",
+      "disc_number": 1,
+      "track_number": 9,
+      "position": 9,
+      "title_override": "Me Moria Por Ella",
+      "length": 275000,
+      "metadata": {
+        "position": 9,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "3647fce1-725b-4e01-9305-fb9ae15bca3e",
+      "release_id": "3953f4ec-6885-4974-adcf-c3eba081a88a",
+      "recording_id": "11c42ca0-66d6-477a-ae15-31e22bde1d39",
+      "disc_number": 1,
+      "track_number": 10,
+      "position": 10,
+      "title_override": "Y Pa' Que Me Quejo",
+      "length": 252000,
+      "metadata": {
+        "position": 10,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "63bf34e1-4cf6-447a-9efc-1998039551a6",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "recording_id": "9af4662e-2860-4079-ad79-b2ea461a293a",
+      "disc_number": 1,
+      "track_number": 1,
+      "position": 1,
+      "title_override": "Como Duele Una Traicion",
+      "length": 225000,
+      "metadata": {
+        "position": 1,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "e48d5447-fca3-40af-ac65-dbe7dc89aa47",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "recording_id": "4eda08f4-be68-4fae-b156-9add2abd38ce",
+      "disc_number": 1,
+      "track_number": 2,
+      "position": 2,
+      "title_override": "Que Me Importa",
+      "length": 210000,
+      "metadata": {
+        "position": 2,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "cd602861-637b-44ec-ba15-9e5f365cc551",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "recording_id": "da3d1cfd-75b5-44ca-baac-2b9443aebb56",
+      "disc_number": 1,
+      "track_number": 3,
+      "position": 3,
+      "title_override": "Poquita Fe",
+      "length": 220000,
+      "metadata": {
+        "position": 3,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "730ae7d8-2e2a-4b84-a205-d02e717436eb",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "recording_id": "12ec747f-a6c0-41d5-8f11-5501bb73afac",
+      "disc_number": 1,
+      "track_number": 4,
+      "position": 4,
+      "title_override": "No Vale La Pena",
+      "length": 205000,
+      "metadata": {
+        "position": 4,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "9bca88a6-b326-4e4f-9aa9-0e73c2e8cd97",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "recording_id": "f72226f6-7388-4d5b-9bdd-b54a205c3851",
+      "disc_number": 1,
+      "track_number": 5,
+      "position": 5,
+      "title_override": "Traiconera",
+      "length": 215000,
+      "metadata": {
+        "position": 5,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "31d7cb32-9865-4c82-a994-671221d63e49",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "recording_id": "23f35fbc-7ecb-423a-848b-94095694d33e",
+      "disc_number": 1,
+      "track_number": 6,
+      "position": 6,
+      "title_override": "Suplica",
+      "length": 230000,
+      "metadata": {
+        "position": 6,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "21272091-fb7e-4fef-9eb2-b98a969752f3",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "recording_id": "5dff10d6-d01d-40e9-bcac-88177da4c380",
+      "disc_number": 1,
+      "track_number": 7,
+      "position": 7,
+      "title_override": "Te Necesito",
+      "length": 200000,
+      "metadata": {
+        "position": 7,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "b8e20b22-3b86-45fd-afa8-3b9c140e8009",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "recording_id": "58798976-7aa5-4e90-8b95-f70c3b360e35",
+      "disc_number": 1,
+      "track_number": 8,
+      "position": 8,
+      "title_override": "Que Te Vaya Bien",
+      "length": 195000,
+      "metadata": {
+        "position": 8,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "8503e726-0bbc-4f98-b6de-eeb68b076786",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "recording_id": "170eae76-02b2-4ab2-bd14-76241717e000",
+      "disc_number": 1,
+      "track_number": 9,
+      "position": 9,
+      "title_override": "Yo Vivo Mi Vida",
+      "length": 210000,
+      "metadata": {
+        "position": 9,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "42592082-0565-4177-b7e5-8e5e474ae7f5",
+      "release_id": "7b588977-ad10-411f-b266-6724954b8cbc",
+      "recording_id": "0d8be094-df0b-404b-9208-a96655bc48be",
+      "disc_number": 1,
+      "track_number": 10,
+      "position": 10,
+      "title_override": "Sera Muy Fácil",
+      "length": 220000,
+      "metadata": {
+        "position": 10,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "4da601e3-363d-4e4d-a514-1adc094d92c9",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "recording_id": "1a0ef4e4-b03c-4f09-b827-a31851a4193c",
+      "disc_number": 1,
+      "track_number": 1,
+      "position": 1,
+      "title_override": "La Gota Fria",
+      "length": 255000,
+      "metadata": {
+        "position": 1,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "e35bb914-9e6f-4871-bf4e-3b7e3415e727",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "recording_id": "95dedac3-da48-45ae-8c80-d730e78cb7c4",
+      "disc_number": 1,
+      "track_number": 2,
+      "position": 2,
+      "title_override": "Volviendome Tu",
+      "length": 260000,
+      "metadata": {
+        "position": 2,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "fa0caca0-3834-465f-900f-1a30167f346c",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "recording_id": "775e34da-fa3d-4349-afa3-6dbc1a7ad6e2",
+      "disc_number": 1,
+      "track_number": 3,
+      "position": 3,
+      "title_override": "Que Manera De Quererte, Que Manera",
+      "length": 250000,
+      "metadata": {
+        "position": 3,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "f5ab5f82-5c61-4c79-b65e-fd0d98ba5e10",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "recording_id": "049ce6d4-8927-4fa5-843b-a6dc0dd83e0e",
+      "disc_number": 1,
+      "track_number": 4,
+      "position": 4,
+      "title_override": "Tu Lo Mataste",
+      "length": 245000,
+      "metadata": {
+        "position": 4,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "0a1f57d3-0eb6-467e-8436-efe705788437",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "recording_id": "c6f43c03-869a-4f58-9e1a-57d807c8f62d",
+      "disc_number": 1,
+      "track_number": 5,
+      "position": 5,
+      "title_override": "Amores Como El Nuestro",
+      "length": 265000,
+      "metadata": {
+        "position": 5,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "21387c04-ffaa-4dc6-86e6-22502b1b16e8",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "recording_id": "dd2ca153-fd34-436e-9751-fd538fca4476",
+      "disc_number": 1,
+      "track_number": 6,
+      "position": 6,
+      "title_override": "Como Me Duele Amor",
+      "length": 255000,
+      "metadata": {
+        "position": 6,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "d352f159-02b1-4105-9bb8-9523b971acaa",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "recording_id": "d08d64eb-c2a0-4878-9976-4c438a0117d4",
+      "disc_number": 1,
+      "track_number": 7,
+      "position": 7,
+      "title_override": "La Cita",
+      "length": 250000,
+      "metadata": {
+        "position": 7,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "1991064b-4534-4a8a-80a8-519a7a7ee58b",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "recording_id": "32ec985c-c0c3-4b67-89ac-c3d008f6056f",
+      "disc_number": 1,
+      "track_number": 8,
+      "position": 8,
+      "title_override": "La Fuentecita",
+      "length": 240000,
+      "metadata": {
+        "position": 8,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "ac87597c-7363-4b68-b3c6-15b3f3ceb286",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "recording_id": "ec2de361-59ee-4386-933b-d0521b7f844d",
+      "disc_number": 1,
+      "track_number": 9,
+      "position": 9,
+      "title_override": "De Hoy A Mañana",
+      "length": 255000,
+      "metadata": {
+        "position": 9,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "a6325dec-9dc9-4815-86fb-d691e81547e9",
+      "release_id": "61d3d758-6085-4e87-89ff-2d1e246d5a6b",
+      "recording_id": "335b9f5a-9d2e-4375-8cb4-fd88c71c0979",
+      "disc_number": 1,
+      "track_number": 10,
+      "position": 10,
+      "title_override": "Loco De Amor",
+      "length": 260000,
+      "metadata": {
+        "position": 10,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "1c760b1c-34fe-426c-8505-7092ddabf1cd",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "recording_id": "24f8780c-21b5-4e5f-94a0-c28ed06f7096",
+      "disc_number": 1,
+      "track_number": 1,
+      "position": 1,
+      "title_override": "No Me Dejes",
+      "length": 262960,
+      "metadata": {
+        "position": 1,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "093372ce-9084-4d63-8cf3-bd23eb7b0a70",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "recording_id": "b3b06d2f-b9c8-4ff1-92f8-d205e4b9ece5",
+      "disc_number": 1,
+      "track_number": 2,
+      "position": 2,
+      "title_override": "Vuelve y Juega",
+      "length": 249160,
+      "metadata": {
+        "position": 2,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "a7465482-44f5-4c3a-835e-ef8569995124",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "recording_id": "c75ac5e2-217a-4b50-927c-a4af2cbecca2",
+      "disc_number": 1,
+      "track_number": 3,
+      "position": 3,
+      "title_override": "Buscando un Amor",
+      "length": 267173,
+      "metadata": {
+        "position": 3,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "83323bd5-9808-4be2-b59b-cf69cb172e10",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "recording_id": "1a708699-ea03-424c-9082-c3127ded89a8",
+      "disc_number": 1,
+      "track_number": 4,
+      "position": 4,
+      "title_override": "Vela Ve",
+      "length": 264147,
+      "metadata": {
+        "position": 4,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "2b3c2e63-412c-4145-9f6b-681565737fdb",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "recording_id": "3349ad5e-ab92-4a52-b036-3e723974066e",
+      "disc_number": 1,
+      "track_number": 5,
+      "position": 5,
+      "title_override": "Biberón Vacio",
+      "length": 255040,
+      "metadata": {
+        "position": 5,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "e77556ff-5cb9-4ca7-a12c-44b7fdbe7a21",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "recording_id": "9360de67-b50e-46c7-9fa4-8d0c150f3de4",
+      "disc_number": 1,
+      "track_number": 6,
+      "position": 6,
+      "title_override": "Lamento de Mi Corazón",
+      "length": 278120,
+      "metadata": {
+        "position": 6,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "b7c4ae37-7cac-4170-bea2-d3d0f8d80e6e",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "recording_id": "0c143e8b-cb56-4700-90f7-dc22645a2901",
+      "disc_number": 1,
+      "track_number": 7,
+      "position": 7,
+      "title_override": "Paz en la Cama",
+      "length": 249360,
+      "metadata": {
+        "position": 7,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "6df5a070-61b2-473b-b8f7-bc7143f040fe",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "recording_id": "045022fb-84a6-4bc4-8425-7e34bff98a10",
+      "disc_number": 1,
+      "track_number": 8,
+      "position": 8,
+      "title_override": "Flor de Primavera",
+      "length": 251240,
+      "metadata": {
+        "position": 8,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "ec6fd360-3c28-4500-afcd-8b76988590d6",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "recording_id": "12e20e14-5b9f-4169-b982-e5bfaf32d294",
+      "disc_number": 1,
+      "track_number": 9,
+      "position": 9,
+      "title_override": "Quiero",
+      "length": 232133,
+      "metadata": {
+        "position": 9,
+        "is_shared": false
+      }
+    },
+    {
+      "id": "9cb7f2b7-8c4d-4fda-9aad-a4bb02c1dfdb",
+      "release_id": "b5cbd991-a3a1-41f3-bfb3-fbbab137e224",
+      "recording_id": "3d9bf6d9-aaf2-45e4-9e07-e6325bd7998f",
+      "disc_number": 1,
+      "track_number": 10,
+      "position": 10,
+      "title_override": "Me Enamoré",
+      "length": 250147,
+      "metadata": {
+        "position": 10,
+        "is_shared": false
+      }
+    }
+  ],
+  "recording_credits": [
+    {
+      "id": "a78cad78-0695-4308-99f6-7c7e8e06dc07",
+      "recording_id": "c826c5f7-c589-4022-9df6-58f734da6a5f",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": "Tony Croatto"
+      }
+    },
+    {
+      "id": "827593e2-3b30-4544-b9df-b3acaee0d06a",
+      "recording_id": "f03b01b9-71e1-45bb-993e-87d336027d0f",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": "Benny González"
+      }
+    },
+    {
+      "id": "acd46562-40d7-4721-bf00-debd97f528a1",
+      "recording_id": "f9f30cbc-9b77-4dd4-8fef-4a4f03c2aa16",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": "Yaqui Núñez del Risco"
+      }
+    },
+    {
+      "id": "74430fee-56ad-4082-b2d4-0e56859987cb",
+      "recording_id": "2f868949-b257-4034-b78b-0ff1b2a61a60",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": "Luis Kalaff"
+      }
+    },
+    {
+      "id": "7edd4aef-2a66-4da0-bfea-cea68f393c5f",
+      "recording_id": "c58c4597-21f8-41e2-83c7-941715d6b92e",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": "Luis Kalaff"
+      }
+    },
+    {
+      "id": "270f5b75-38e5-46c8-8747-06d9400ba5f1",
+      "recording_id": "b57e3eed-f642-4cf4-956a-524c2e1d6c60",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": "Fernando Echavarría"
+      }
+    },
+    {
+      "id": "6eeb7605-ae8e-43a0-a86e-3d34046710d8",
+      "recording_id": "9138aa3d-afa6-4bed-ba69-5b0e17e60190",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "b2f15e40-9796-4a3d-a157-4ed62fd3ea2f",
+      "recording_id": "c6636d97-6130-4f4f-b5b4-21e2119b1ca2",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": "Diego Verdaguer"
+      }
+    },
+    {
+      "id": "94b1cdd1-00e3-4a54-8100-33c11d1dd253",
+      "recording_id": "88e78d7a-5bba-4a16-b333-3ed85fcab0b1",
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Sergio Vargas",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": "Alberto «Beto» Vega"
+      }
+    },
+    {
+      "id": "38a198a5-dba4-428e-a191-859dbe68f659",
+      "recording_id": "b3e6181c-a663-43c0-85d4-8d2fcb6baf33",
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Sergio Vargas",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "1994bfd3-f56b-4170-bad6-5cbc25960c7d",
+      "recording_id": "59103a6f-0955-40d7-ba6b-fec226ba63bf",
+      "artist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Carlos David",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "a207a911-733c-49b9-9fbc-eef74f4b482b",
+      "recording_id": "586271c4-265e-413f-8c00-f47a354e1cb0",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": "Cheché Abreu"
+      }
+    },
+    {
+      "id": "5df2a866-f7b3-495b-aa6a-59c7b8ad4bd6",
+      "recording_id": "10d95701-e490-46f1-a2c6-b0686841e02b",
+      "artist_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Sergio Vargas",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "da24458a-455c-4261-b0d0-05c956e21e22",
+      "recording_id": "a23c1380-7234-49b0-8092-96ffacda16fa",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "25fec7e8-7885-46ff-b053-15a2ccaf7c40",
+      "recording_id": "aaaab226-e2cc-4597-8c41-e893488ce70d",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "3de15773-9455-4fcf-860e-7adac033f9e7",
+      "recording_id": "01f1af2d-26ab-4dcf-a146-d9b3efc340e0",
+      "artist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Carlos David",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "20ce48d9-ef4f-43bc-8df2-9a876858e674",
+      "recording_id": "925dae85-4755-4065-82b3-45624a59c728",
+      "artist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Carlos David",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "90c351c0-0295-4854-9a9b-2e8423f28775",
+      "recording_id": "ccf376bc-b355-47a3-bb88-6ab17ae19b1a",
+      "artist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Carlos David",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "81a00894-d48e-4161-80cb-5998f1bdb850",
+      "recording_id": "7b10f6dc-69e1-4374-ba0e-4b2a0503ec97",
+      "artist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Carlos David",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "671c7cb4-8dc6-48ee-b7ad-485ba43aefc2",
+      "recording_id": "674ae081-bc96-4f6f-995e-0a3f449a1218",
+      "artist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Carlos David",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "ea43fb11-3942-4c20-b822-fe07e6af2da6",
+      "recording_id": "a2728301-2315-4fb2-8a4b-6c9accc72da1",
+      "artist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Carlos David",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "7b90bbea-9f90-4385-ad54-fe9db1f5e1c5",
+      "recording_id": "865bd89f-41a5-4bdb-98dc-65cc229c6cbf",
+      "artist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Carlos David",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "222f96ea-6661-4f58-b93d-aa6adfe17a8a",
+      "recording_id": "d9a0a572-3b28-47b3-b802-105ed678332e",
+      "artist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Carlos David",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "262c26ae-8851-4349-9b09-76ca1f6f2e73",
+      "recording_id": "eee298d2-a9ae-46b4-95f6-32123416ce01",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "960b8df9-e958-4143-9c1e-4b8fe86f84b3",
+      "recording_id": "5c5d8a17-c0ff-4def-9a09-2649d21f1218",
+      "artist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Carlos David",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "dc249bcb-bcc7-4678-a47b-e4ac74044c6d",
+      "recording_id": "686dd8e9-a5aa-42ab-89cb-e1fbae4b9d06",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "1fe05ae6-6bf4-4244-8be2-fd8b8cdfce1d",
+      "recording_id": "4aedd90c-0fb0-42af-a3df-7cdc5c7222ae",
+      "artist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Carlos David",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "277fc8dd-1991-42b4-b68c-68c48f3ded2d",
+      "recording_id": "11586c66-b901-45ff-9a9e-0a4e0964b002",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "779efdd6-3780-4e69-b39f-97dc1e3facae",
+      "recording_id": "6b3c3a17-c090-4110-a5a1-b2d8c3a9b247",
+      "artist_id": "9d885c35-ffe1-46ee-848a-76cbe55c6704",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Carlos David",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "c7c700fa-d914-4e5d-8b0a-c20cf3c84ae8",
+      "recording_id": "86c70bb2-59d7-4512-b699-077140ebe79e",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "8f28eafa-5a12-4cb4-ae7e-c0c462a88a05",
+      "recording_id": "c44b71ea-3271-4eb3-b2eb-695eac433964",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "6cd9fcee-5847-481f-b845-b78f34c14fc0",
+      "recording_id": "0d38bab0-a369-45de-a7ad-b989901f60a7",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "2ba74ab5-ccb6-41cc-8826-9608466b5e3c",
+      "recording_id": "0af26cb8-b74e-41f2-8a7c-32375f603d15",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": "Marco Antonio Solís"
+      }
+    },
+    {
+      "id": "88ac20c5-4227-497c-93b7-4b936eae9702",
+      "recording_id": "4dded2c8-e67c-45ff-9791-c3cd9a04c9df",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "f76e8a33-d3bb-4522-9ae9-593995f6a430",
+      "recording_id": "7aafbf38-dfad-44b3-bb79-a2e3c644624b",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "955c4065-40fc-4821-94c4-7e68708babaa",
+      "recording_id": "67c40786-4b53-4376-9317-7b1b5ee52928",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "2bb9116f-b23e-44e2-b630-46254034ef81",
+      "recording_id": "001bd38c-0e85-495d-afc2-34f3e9df227d",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": "Marco Antonio Solís"
+      }
+    },
+    {
+      "id": "b0c9a848-ac02-4ae5-a316-32f43c540f06",
+      "recording_id": "a85d89da-42c0-4cef-831b-00d7e7805064",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "37a4002f-2a9e-4bad-9af9-368d4e9ad70d",
+      "recording_id": "1cbdb656-b5ca-4b68-8752-0570b032e35b",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "78631b75-0983-4bd7-ac2d-9a158a4cf04a",
+      "recording_id": "467bfaaa-c9c6-4a39-8be1-fb8a9fa6cd97",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "37fa0cc0-0187-4df4-9273-cc724e6999ca",
+      "recording_id": "40ae7213-ed56-441b-a0cf-11714fad6c1d",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "971e3bc7-3dee-4e76-a062-f58e29c14eeb",
+      "recording_id": "88072b68-1214-48eb-8986-e47069f37115",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "113d63cf-623b-4607-83b2-9faa90480817",
+      "recording_id": "b3a83de5-d5ae-44ff-8df3-15045363d067",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "8b46e7e8-d27e-40f1-af51-03e0401dbb61",
+      "recording_id": "8aa169ac-0e20-43b2-9ffd-bb2ac335f7b4",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "6c1bcbc3-ae08-45ff-a053-8a253c4b42bc",
+      "recording_id": "d4d0d931-2caf-437e-b816-260317ee3514",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "5efce5e0-48fc-492e-a143-10fe9051ae14",
+      "recording_id": "5227bcd6-8fba-456c-a127-2868c9136720",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "68ec280c-0a21-4e9e-b88c-0c163fa2a850",
+      "recording_id": "bc4d1b4b-73fb-43db-9cec-f9daeda8a7ac",
+      "artist_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Pablo Martínez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "da937a5f-10af-4275-ab3d-8f386ddafbdb",
+      "recording_id": "7e622371-df77-4121-9831-714853bf0a8b",
+      "artist_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Kaki Vargas",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "42b795f9-da86-499d-bf4f-2c6f31a23156",
+      "recording_id": "eee1a649-364b-4ce7-831e-3b6bd83b21a0",
+      "artist_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Kaki Vargas",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "27047f36-ad8d-4154-86a0-2f6ef681f60b",
+      "recording_id": "941e405e-4fb1-44e9-a429-95081ffbd76d",
+      "artist_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Kaki Vargas",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "1077b340-a833-4299-8f30-2dc517f44d23",
+      "recording_id": "7264ba28-d953-45a1-8695-6cd5cc03fb4e",
+      "artist_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Kaki Vargas",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "93af3c55-5de9-49c8-99e8-060e99dc10ee",
+      "recording_id": "b1b7e7b6-2257-4d5d-8a04-3831b8183216",
+      "artist_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Kaki Vargas",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "54b903ba-10e0-4108-a351-6b7892542c41",
+      "recording_id": "69667c40-56c5-43a1-9126-bc8f28fef43e",
+      "artist_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Kaki Vargas",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "27c68156-f968-4d7e-8403-a6bcd0dfe692",
+      "recording_id": "24f8780c-21b5-4e5f-94a0-c28ed06f7096",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "e16af650-0721-4799-aba4-33c4695bad0e",
+      "recording_id": "b3b06d2f-b9c8-4ff1-92f8-d205e4b9ece5",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "06eacc27-060b-45f5-b137-c1acce07add6",
+      "recording_id": "c75ac5e2-217a-4b50-927c-a4af2cbecca2",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "e644922e-491b-46af-913a-197e9741b5ea",
+      "recording_id": "1a708699-ea03-424c-9082-c3127ded89a8",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "449bbee4-fd44-4547-a698-db293da80575",
+      "recording_id": "3349ad5e-ab92-4a52-b036-3e723974066e",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "b83efba1-bafb-4290-b54e-e1fef80e7b1d",
+      "recording_id": "9360de67-b50e-46c7-9fa4-8d0c150f3de4",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "58b2ca08-15da-4191-8f1f-8e230a7c2536",
+      "recording_id": "0c143e8b-cb56-4700-90f7-dc22645a2901",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "a51a4d67-6dc4-47b8-92f6-d614fdcdbfed",
+      "recording_id": "045022fb-84a6-4bc4-8425-7e34bff98a10",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "df9bc024-f23d-4169-87f0-1c0010551015",
+      "recording_id": "12e20e14-5b9f-4169-b982-e5bfaf32d294",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    },
+    {
+      "id": "45313159-6d63-491c-89bb-4d7eb26ea722",
+      "recording_id": "3d9bf6d9-aaf2-45e4-9e07-e6325bd7998f",
+      "artist_id": "5bb869a0-495d-4831-b44f-a6a9f074d3f7",
+      "role": "lead_performer",
+      "role_id": "c648475e-7d6a-4f08-9781-3f470b572537",
+      "credited_as": "Charlie Rodríguez",
+      "position": 1,
+      "display_order": 0,
+      "metadata": {
+        "role_name": "Voz principal",
+        "composer": null
+      }
+    }
+  ]
+}

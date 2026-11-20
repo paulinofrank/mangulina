@@ -70,13 +70,16 @@ test("subgenre filtering still works end to end", () => {
 test("existing genre data caches are preserved", () => {
   // Matched without the version suffix on purpose: the suffix exists to be
   // bumped when a cache needs busting, so pinning it here would make routine
-  // invalidation look like a regression. What must hold is that all four
-  // caches still exist under their own distinct keys.
-  assert.equal((genreApi.match(/unstable_cache\(/g) ?? []).length, 4, "all four genre caches remain");
+  // invalidation look like a regression. The original caches and the shared
+  // song-link destinations must exist under distinct keys.
+  assert.equal((genreApi.match(/unstable_cache\(/g) ?? []).length, 5, "genre caches and link destinations remain");
   assert.match(genreApi, /public-catalog-genre-v\d+/);
   assert.match(genreApi, /public-genre-artists-v\d+/);
   assert.match(genreApi, /public-top-genre-options-v\d+/);
   assert.match(genreApi, /public-genre-media-v\d+/);
+  assert.match(genreApi, /public-genre-destinations-v\d+/);
+  assert.match(genreApi, /revalidate: CATALOG_PROFILE_REVALIDATE_SECONDS, tags: \[PUBLIC_GENRE_CACHE_TAG\]/,
+    "link lookup must not shorten the song profile cache lifetime");
   // The subgenre endpoint reuses those caches rather than querying directly.
   assert.doesNotMatch(contextRoute, /getSupabaseClient|\.from\(/);
 });

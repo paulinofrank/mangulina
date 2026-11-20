@@ -1,0 +1,28 @@
+[
+  {
+    "id": "60466f4f-b7cb-439d-beda-2b210a893648",
+    "owner_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+    "locale": "en",
+    "revision": 3,
+    "status": "published",
+    "target_artist_id": "c0b238a9-4bc5-4236-bb76-90a18fd4ee1a",
+    "contexts": [
+      "The back cover separates the poetry from its musical settings and performances. It credits Cheo Zorrilla with both the music and performance of «Amor tardío»; Anthony Ríos with those roles on «Rosa silvestre»; and R. Bello with the music of «El pasado», sung by Omar Franco. It also documents «Amistad», composed by Anthony Ríos and sung by Lope Balaguer, and «Amor romántico», with music by Cheo Zorrilla and a performance by Gina D’Alessandro."
+    ],
+    "proposed_change": "Convert the verified Gina mention to a canonical artistReference when target publication and owner edits are authorized.",
+    "state": "Pending; artist draft and other owner outside creation scope."
+  },
+  {
+    "id": "af7226eb-bcd8-44ce-ad48-ea8d90b34068",
+    "owner_artist_id": "f01002fa-68e4-4fa9-a8cc-91ab9004cea9",
+    "locale": "es",
+    "revision": 3,
+    "status": "published",
+    "target_artist_id": "c0b238a9-4bc5-4236-bb76-90a18fd4ee1a",
+    "contexts": [
+      "La contraportada distingue al autor de los versos de quienes compusieron la música y de sus intérpretes. Acredita «Amor tardío» a Cheo Zorrilla como músico e intérprete; «Rosa silvestre» a Anthony Ríos en ambas funciones; y «El pasado» a R. Bello como autor de la música, con interpretación de Omar Franco. También documenta «Amistad», con música de Anthony Ríos y voz de Lope Balaguer, y «Amor romántico», con música de Cheo Zorrilla e interpretación de Gina D’Alessandro."
+    ],
+    "proposed_change": "Convert the verified Gina mention to a canonical artistReference when target publication and owner edits are authorized.",
+    "state": "Pending; artist draft and other owner outside creation scope."
+  }
+]

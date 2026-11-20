@@ -1,0 +1,20 @@
+[
+  {
+    "id": "da5c733d-836a-4b70-a060-0b9c5da8c6d3",
+    "name": "Riccie Oriach",
+    "slug": "riccie-oriach",
+    "status": "published"
+  },
+  {
+    "id": "be3bd870-e380-44a2-82c5-4849e2022f6e",
+    "name": "Inka",
+    "slug": "inka",
+    "status": "published"
+  },
+  {
+    "id": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+    "name": "mediopicky",
+    "slug": "mediopicky",
+    "status": "published"
+  }
+]

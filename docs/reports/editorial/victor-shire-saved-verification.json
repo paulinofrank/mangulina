@@ -1,0 +1,399 @@
+{
+  "snapshot": {
+    "artists": [
+      {
+        "id": "9092b9a2-0f15-41e7-9a53-c3c54c10b414",
+        "name": "Victor & Shire",
+        "sort_name": "Victor & Shire",
+        "type": "duo",
+        "birth_year": null,
+        "death_year": null,
+        "created_at": "2026-10-24T22:56:51.844523+00:00",
+        "views": 0,
+        "wikidata_id": null,
+        "first_name": null,
+        "middle_name": null,
+        "last_name": null,
+        "second_last_name": null,
+        "stage_name": null,
+        "date_of_birth": null,
+        "birth_place": null,
+        "website": null,
+        "youtube": null,
+        "facebook": null,
+        "instagram": null,
+        "aliases": [
+          "Víctor y Shire",
+          "Victor y Shire",
+          "Víctor & Shire",
+          "Victor Y Shire"
+        ],
+        "mbid": null,
+        "occupations": [],
+        "instruments": [
+          "voice"
+        ],
+        "genres": [
+          "bolero",
+          "bachata"
+        ],
+        "disambiguation": "Dominican romantic vocal duo formed by Víctor Rosario and Shire Baldera",
+        "gender": null,
+        "ended": null,
+        "mb_metadata": {},
+        "updated_at": "2026-10-24T22:56:51.844523+00:00",
+        "province": null,
+        "birth_day": null,
+        "birth_month": null,
+        "slug": "victor-shire",
+        "primary_role": "singer",
+        "artist_tags": [
+          "secular"
+        ],
+        "date_of_death": null,
+        "status": "draft",
+        "primary_genre": "ballads",
+        "bio_en": null,
+        "bio_es": null,
+        "has_image": false,
+        "image_updated_at": null,
+        "formation_year": null,
+        "dissolution_year": null,
+        "spotify": "4VnQJi0TMUQEHyScJDbqSn"
+      },
+      {
+        "id": "84aba9ce-ba69-4caa-b71b-2bedb2f848fc",
+        "name": "Daniel Santacruz",
+        "slug": "daniel-santacruz",
+        "status": "published"
+      }
+    ],
+    "documents": [
+      {
+        "id": "45c190b0-be0a-400a-b297-f47cdc055cb8",
+        "document_type": "artist_biography",
+        "locale": "en",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Victor & Shire is a Dominican romantic vocal duo comprising Víctor Rosario and Shire Baldera. They became known during the 1990s through a repertoire of ballads and boleros, later adding bachata. Their best-remembered songs include «Te felicito», «Qué hago yo», «Retorno», «Me haces tanta falta», and «Doblemente condenado».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Retorno and the Casandra Awards",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Their first release was «Retorno», which brought them recognition in the Dominican romantic music scene. In 1997 they received the Casandra Award for Revelation of the Year. Their emotional acceptance became a recurring subject in later retrospectives of the ceremony. Shire has described his voice as central to the duo’s ballads, while Víctor had a stronger affinity with merengue.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Recordings and repertoire",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Doblemente condenado» continued that stage of their career. The «J&N Records» edition available on digital platforms is dated February 3, 1998, and contains ten songs, including the title track, «Qué triste (Triste y bella)», «Siento (Hay algo en tu mirar)», «Si te sientes sola (Mai piu sola)», «Enséñame (A olvidarte)», and «Suéltame». Singer-songwriter ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "84aba9ce-ba69-4caa-b71b-2bedb2f848fc",
+                    "displayText": "Daniel Santacruz",
+                    "occurrenceId": "a467c22f-ef1a-4d50-ad6d-1314a3bf83eb"
+                  }
+                },
+                {
+                  "text": " has recalled that the duo recorded his first composition, «Siento».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Their digital catalog also preserves an appearance on «Duos bachateros Vol. 2», featuring a medley in tribute to El Jibarito. That contribution and their later work in bachata extend a career that was not limited to the 1998 album.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Individual careers and reunions",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "After their initial period together, both pursued individual activities. In a 2018 interview, Shire discussed his return with a repertoire combining pop ballads, bachata, and merengue. The duo later announced joint appearances: «Víctor y Shire: el reencuentro» was scheduled at Chao Café Teatro in August 2022, followed by another show announced at Lungomare on Santo Domingo’s waterfront in June 2024.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In March 2025, the four-track EP «Shire Love» appeared on Apple Music under the name «Victor Y Shire». It contains «Me haces tanta falta», «Qué hago yo», «Si tú volvieras», and «Tu Ausencia Victor». Its digital release date does not by itself establish that all four performances were recorded that year; the platform associates three of the songs with 1998.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legacy",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Victor & Shire belongs to the Dominican romantic duo scene of the 1990s. Their ballads, subsequent work in bachata, and later reunions document different stages of a partnership remembered both for its songs and its recognition at the Casandra Awards.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "9092b9a2-0f15-41e7-9a53-c3c54c10b414",
+        "created_at": "2026-10-24T22:56:52.136472+00:00",
+        "updated_at": "2026-10-24T22:56:52.136472+00:00",
+        "revision": 1
+      },
+      {
+        "id": "b4170e20-d290-4c37-9bb3-028659700a4e",
+        "document_type": "artist_biography",
+        "locale": "es",
+        "schema_version": 1,
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Victor & Shire es un dúo dominicano de canción romántica integrado por Víctor Rosario y Shire Baldera. Se dio a conocer durante la década de 1990 con un repertorio de baladas y boleros, al que posteriormente incorporó la bachata. Entre sus canciones más recordadas figuran «Te felicito», «Qué hago yo», «Retorno», «Me haces tanta falta» y «Doblemente condenado».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Retorno y los Premios Casandra",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Su primera producción fue «Retorno», con la que lograron difusión en la escena romántica dominicana. En 1997 recibieron el Premio Casandra como Revelación del Año. La emoción de ambos al recoger el galardón fue recordada años después en las retrospectivas de la premiación. Shire ha señalado que su voz tuvo un papel central en las baladas del proyecto, mientras que Víctor tenía una mayor afinidad con el merengue.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Grabaciones y repertorio",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "«Doblemente condenado» continuó esa etapa. La edición de «J&N Records» disponible en las plataformas está fechada el 3 de febrero de 1998 y reúne diez canciones, entre ellas el tema titular, «Qué triste (Triste y bella)», «Siento (Hay algo en tu mirar)», «Si te sientes sola (Mai piu sola)», «Enséñame (A olvidarte)» y «Suéltame». El cantautor ",
+                  "type": "text"
+                },
+                {
+                  "type": "artistReference",
+                  "attrs": {
+                    "artistId": "84aba9ce-ba69-4caa-b71b-2bedb2f848fc",
+                    "displayText": "Daniel Santacruz",
+                    "occurrenceId": "f8ddc0c3-feb3-448d-aaf5-0aada140e0bd"
+                  }
+                },
+                {
+                  "text": " ha recordado que el dúo grabó su primera composición, «Siento».",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "El catálogo digital también conserva su participación en «Duos bachateros Vol. 2», donde interpretan un popurrí de homenaje a El Jibarito. Esa presencia y sus trabajos posteriores en bachata amplían una trayectoria que no se limita al álbum de 1998.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Etapas individuales y reencuentros",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Después de su primera etapa conjunta, ambos desarrollaron actividades individuales. En una entrevista de 2018, Shire habló de su regreso con una propuesta que combinaba balada pop, bachata y merengue. El dúo volvió a anunciar presentaciones conjuntas: en agosto de 2022 se programó «Víctor y Shire: el reencuentro» en Chao Café Teatro, y en junio de 2024 se anunció otro espectáculo en Lungomare, en el malecón de Santo Domingo.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "En marzo de 2025 apareció en Apple Music el EP «Shire Love», acreditado a «Victor Y Shire», con cuatro temas: «Me haces tanta falta», «Qué hago yo», «Si tú volvieras» y «Tu Ausencia Victor». Su fecha de publicación digital no demuestra por sí sola que las cuatro interpretaciones fueran grabadas ese año; la propia plataforma asocia tres de las canciones con 1998.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Legado",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Victor & Shire forma parte de la escena de dúos románticos dominicanos de los años noventa. Su repertorio de baladas, el paso por la bachata y los posteriores reencuentros permiten seguir distintas etapas de una colaboración recordada tanto por sus canciones como por su reconocimiento en los Premios Casandra.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "status": "published",
+        "owner_artist_id": "9092b9a2-0f15-41e7-9a53-c3c54c10b414",
+        "created_at": "2026-10-24T22:56:51.96186+00:00",
+        "updated_at": "2026-10-24T22:56:51.96186+00:00",
+        "revision": 1
+      }
+    ],
+    "relations": [
+      {
+        "id": "89c67335-a4a7-4689-899d-95244ddbc895",
+        "editorial_document_id": "45c190b0-be0a-400a-b297-f47cdc055cb8",
+        "occurrence_id": "a467c22f-ef1a-4d50-ad6d-1314a3bf83eb",
+        "entity_type": "artist",
+        "target_artist_id": "84aba9ce-ba69-4caa-b71b-2bedb2f848fc",
+        "created_at": "2026-10-24T22:56:52.136472+00:00",
+        "updated_at": "2026-10-24T22:56:52.136472+00:00"
+      },
+      {
+        "id": "7b9b9959-8ff2-4999-a791-0739d7457609",
+        "editorial_document_id": "b4170e20-d290-4c37-9bb3-028659700a4e",
+        "occurrence_id": "f8ddc0c3-feb3-448d-aaf5-0aada140e0bd",
+        "entity_type": "artist",
+        "target_artist_id": "84aba9ce-ba69-4caa-b71b-2bedb2f848fc",
+        "created_at": "2026-10-24T22:56:51.96186+00:00",
+        "updated_at": "2026-10-24T22:56:51.96186+00:00"
+      }
+    ]
+  },
+  "integrity": {
+    "generatedAt": "2026-10-24T22:56:55.371Z",
+    "counts": {
+      "documents": 2,
+      "relations": 2,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 0
+    },
+    "findings": []
+  }
+}

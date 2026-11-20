@@ -1,0 +1,44 @@
+{
+  "fieldsMatchApprovedManifest": true,
+  "documentsMatchApprovedManifest": true,
+  "report": {
+    "generatedAt": "2026-10-15T22:06:49.206Z",
+    "counts": {
+      "documents": 2,
+      "relations": 0,
+      "blocking": 0,
+      "warning": 2,
+      "informational": 2
+    },
+    "findings": [
+      {
+        "documentId": "eefb5bc7-7685-407a-9f1e-58eb99157f4e",
+        "ownerArtistId": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+        "locale": "en",
+        "code": "draft_shadowing_public_compatibility",
+        "severity": "warning"
+      },
+      {
+        "documentId": "eefb5bc7-7685-407a-9f1e-58eb99157f4e",
+        "ownerArtistId": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+        "locale": "en",
+        "code": "legacy_compatibility_mismatch",
+        "severity": "informational"
+      },
+      {
+        "documentId": "7e4b417a-fb9a-4ac0-b3e9-ef6e27499339",
+        "ownerArtistId": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+        "locale": "es",
+        "code": "draft_shadowing_public_compatibility",
+        "severity": "warning"
+      },
+      {
+        "documentId": "7e4b417a-fb9a-4ac0-b3e9-ef6e27499339",
+        "ownerArtistId": "d3749b0e-ffa0-4e2e-907a-1242c21c4560",
+        "locale": "es",
+        "code": "legacy_compatibility_mismatch",
+        "severity": "informational"
+      }
+    ]
+  }
+}

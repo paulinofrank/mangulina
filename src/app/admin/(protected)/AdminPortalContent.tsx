@@ -202,6 +202,7 @@ function getToolKey(href: string): string {
   // Map href paths to translation keys
   const keyMap: Record<string, string> = {
     analytics: "analytics",
+    "catalog-statistics": "catalogStatistics",
     artists: "artists",
     releases: "releases",
     recordings: "recordings",

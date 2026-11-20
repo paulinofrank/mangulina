@@ -1,0 +1,53 @@
+{
+  "artist": {
+    "name": "Nathalie Hazim",
+    "stage_name": "Nathalie Hazim",
+    "sort_name": "Hazim, Nathalie",
+    "slug": "nathalie-hazim",
+    "type": "solo_artist",
+    "status": "draft",
+    "first_name": "Nathalie",
+    "middle_name": "Adjeir",
+    "last_name": "Hazim",
+    "second_last_name": "Guzmán",
+    "aliases": ["Nathalie Adjeir Hazim Guzmán"],
+    "birth_place": "Santo Domingo",
+    "province": "Distrito Nacional",
+    "date_of_birth": null,
+    "birth_year": null,
+    "date_of_death": null,
+    "death_year": null,
+    "gender": "female",
+    "primary_role": "singer",
+    "occupations": ["songwriter", "producer"],
+    "instruments": ["voice"],
+    "primary_genre": "ballads",
+    "genres": ["bolero", "merengue"],
+    "artist_tags": ["secular"],
+    "spotify": "1pgJnLaz9qEnErUwC0Tm16",
+    "facebook": "nathaliehazim",
+    "instagram": "nathaliehazim",
+    "youtube": "@nathaliehazim",
+    "website": "https://nathaliehazim.com/"
+  },
+  "bios": {
+    "es": [
+      [null, "Nathalie Adjeir Hazim Guzmán, conocida artísticamente como Nathalie Hazim, es una cantautora y productora musical dominicana nacida el 5 de noviembre en Santo Domingo. Su repertorio parte de la balada y el pop, y se extiende al bolero y al merengue. Desde su debut en 2012 ha publicado cuatro álbumes y desarrollado proyectos de producción musical y comunicación."],
+      ["Formación y primeros discos", "Estudió Comunicación Publicitaria y cursó cine en la New York Film Academy. De niña practicó ballet durante catorce años y comenzó a cantar en reuniones de amigos antes de actuar en público. En 2012 lanzó «El espejo de tus ojos», su primer sencillo; al año siguiente presentó el álbum homónimo, producido por Jim Papoulis y compuesto en buena parte por canciones propias. En 2013 participó en el homenaje a [[Luchy Vicioso]] de los «Premios Soberano»."],
+      [null, "Su segundo trabajo, «Te Cuento» (2017), fue producido por Kiko Cibrián y reunió seis canciones sobre la identidad, el amor propio y las relaciones. Le valió una nominación como Solista del Año en los «Premios Soberano» de 2018 y ganó la categoría World EP en los «Independent Music Awards» de ese año. La artista también desarrolla su trabajo a través de su sello «Malagana Records»."],
+      ["Composición, producción y bolero", "En 2020 lanzó «Más de lo que soñé», que coprodujo con Alexandro Seguí y Hafid Salazar y recibió un «Independent Music Award» a la Mejor Producción Musical Pop. Ese año vinculó el sencillo «Puertas adentro» a una iniciativa de ayuda alimentaria para familias dominicanas. En 2021 publicó «Amorosa», un álbum de trece boleros que recupera composiciones del cancionero dominicano."],
+      [null, "Su cuarto álbum, «Desde Cero» (2022), reunió once canciones originales en una propuesta de pop. La pintora Ada Balcácer creó una obra para su portada. En los conciertos de presentación del disco compartió escenario con [[Vickiana]]. En enero de 2025 lanzó «Amor bonito», su primera incursión discográfica en el merengue, y en noviembre presentó la balada «Y esto, ¿a quién se lo digo?»."],
+      ["Otros proyectos", "Además de la música, Hazim dirige la agencia de comunicación «Room Grupo Creativo». En 2025 estrenó «Cinco Palabras», un pódcast de conversaciones personales que inició una segunda temporada en 2026 a través de su canal de YouTube y otras plataformas."],
+      ["Legado", "Su obra reúne canciones de autor con nuevas lecturas del bolero dominicano. La producción de sus propios discos y sus proyectos de comunicación y ayuda comunitaria han acompañado una carrera centrada en la canción romántica."]
+    ],
+    "en": [
+      [null, "Nathalie Adjeir Hazim Guzmán, professionally known as Nathalie Hazim, is a Dominican singer-songwriter and music producer born on 5 November in Santo Domingo. Her repertoire is rooted in ballads and pop, with ventures into bolero and merengue. Since her 2012 debut, she has released four albums and developed projects in music production and communications."],
+      ["Training and first releases", "She studied advertising communications and took film courses at the New York Film Academy. As a child she practiced ballet for fourteen years, and she sang with friends before performing publicly. In 2012 she released her debut single, «El espejo de tus ojos»; the album of the same name followed in 2013. Produced by Jim Papoulis, it featured many of her own songs. In 2013 she took part in a «Premios Soberano» tribute to [[Luchy Vicioso]]."],
+      [null, "Her second release, «Te Cuento» (2017), was produced by Kiko Cibrián and brought together six songs about identity, self-acceptance and relationships. It brought her a 2018 «Premios Soberano» nomination for Soloist of the Year and won World EP at that year's «Independent Music Awards». She also runs her work through her label, «Malagana Records»."],
+      ["Songwriting, production and bolero", "In 2020 she released «Más de lo que soñé», co-producing it with Alexandro Seguí and Hafid Salazar. The song won an «Independent Music Award» for Best Pop Music Production. That year she linked her single «Puertas adentro» to a food-aid initiative for Dominican families. In 2021 she released «Amorosa», an album of thirteen boleros revisiting songs from the Dominican repertoire."],
+      [null, "Her fourth album, «Desde Cero» (2022), gathered eleven original songs in a pop setting; painter Ada Balcácer created artwork for its cover. She shared the stage with [[Vickiana]] during the album's concert presentations. In January 2025 Hazim released «Amor bonito», her first recorded venture into merengue, followed in November by the ballad «Y esto, ¿a quién se lo digo?»."],
+      ["Other projects", "Outside music, Hazim directs the communications agency «Room Grupo Creativo». She launched «Cinco Palabras», a podcast of personal conversations, in 2025. Its second season began in 2026 on her YouTube channel and other platforms."],
+      ["Legacy", "Her work combines original songs with fresh interpretations of Dominican bolero. Producing her own music and pursuing communications and community projects have accompanied a career centred on romantic song."]
+    ]
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "target_artist_name": "Los Hijos del Rey",
+  "target_status": "draft",
+  "action": "Pending review at authorized artist publication; no changes to these existing published documents per draft-artist exception and Supabase security gates",
+  "total_matching_documents": 32,
+  "documents": [
+    {
+      "owner": "Altamira Banda Show",
+      "owner_id": "e735658a-0cc6-4238-9cf9-e5bebad6724b",
+      "id": "1ac28ab2-0962-436d-8365-5839d3a56198",
+      "locale": "en",
+      "revision": 2,
+      "status": "published",
+      "context": "There was a fourth line to the same school. Los Hijos del Rey, fronted at the start by Fernando Villalona, worked out of Santo Domingo while Altamira Banda Show worked out of New York — the same idea, tried on both shores at once. Los Hijos del Rey got the long life; this band did not."
+    },
+    {
+      "owner": "Altamira Banda Show",
+      "owner_id": "e735658a-0cc6-4238-9cf9-e5bebad6724b",
+      "id": "d1a6b530-dc80-4eab-ba5e-4904abb90f71",
+      "locale": "es",
+      "revision": 2,
+      "status": "published",
+      "context": "Hubo una cuarta línea de la misma escuela. Los Hijos del Rey, con Fernando Villalona al frente al principio, trabajaba desde Santo Domingo mientras Altamira Banda Show trabajaba desde Nueva York: la misma idea, probada en las dos orillas a la vez. A Los Hijos del Rey les tocó la vida larga; a ésta no."
+    },
+    {
+      "owner": "Bonny Cepeda",
+      "owner_id": "bc4db4c6-c96f-4eb7-af95-ac637785c5bf",
+      "id": "e10dd243-8076-4973-97b1-83c9e615f88b",
+      "locale": "en",
+      "revision": 5,
+      "status": "published",
+      "context": "His twenties were a tour of the Dominican orchestra circuit. He started with Los Monjes in 1972, at eighteen, and the group lasted about a year. He played piano in Los Beduinos under Wilfrido Vargas, was a founding member of Los Hijos del Rey in the mid-1970s, formed Bonny con Kenton in 1978 with Tito and Luis Payano, passed briefly through the band of Fernando Villalona in 1979, and led a third project, La Gran Orquesta, from which his own musicians eventually expelled him. The pattern earned him a second nickname he has never entirely shaken: \"El Inestable,\" the unstable one."
+    },
+    {
+      "owner": "Bonny Cepeda",
+      "owner_id": "bc4db4c6-c96f-4eb7-af95-ac637785c5bf",
+      "id": "8d77d6da-fc7c-4d68-a3d0-5a606a1e6e36",
+      "locale": "es",
+      "revision": 4,
+      "status": "published",
+      "context": "Sus veinte años fueron un recorrido por el circuito orquestal dominicano. Empezó con Los Monjes en 1972, a los dieciocho, y el grupo duró cerca de un año. Tocó piano en Los Beduinos bajo Wilfrido Vargas, fue miembro fundador de Los Hijos del Rey a mediados de los setenta, formó Bonny con Kenton en 1978 junto a Tito y Luis Payano, pasó brevemente por la banda de Fernando Villalona en 1979 y dirigió un tercer proyecto, La Gran Orquesta, del que sus propios músicos terminaron expulsándolo. El patrón le ganó un segundo apodo que nunca se ha quitado del todo: \"El Inestable.\""
+    },
+    {
+      "owner": "Dioni Fernández y El Equipo",
+      "owner_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "id": "1971d182-412a-4686-95a9-babdec4cc738",
+      "locale": "en",
+      "revision": 6,
+      "status": "published",
+      "context": "When Bonny Cepeda resigned from Los Hijos del Rey, Dioni took over the direction and ran it for a couple of years. He had gone from emergency stand-in to running one of the country’s orchestras in a very short time."
+    },
+    {
+      "owner": "Dioni Fernández y El Equipo",
+      "owner_id": "fb2c703f-5362-47dd-ada0-7c6d5e106f3b",
+      "id": "0d0ef9ea-2fcb-438d-b169-d3052afe7b87",
+      "locale": "es",
+      "revision": 6,
+      "status": "published",
+      "context": "Cuando Bonny Cepeda renunció a Los Hijos del Rey, Dioni asumió la dirección y la llevó un par de años. Había pasado de suplente de emergencia a dirigir una de las orquestas del país en muy poco tiempo."
+    },
+    {
+      "owner": "Domingo Peguero",
+      "owner_id": "3a597a5e-8081-4304-a2cf-b7463e16ee70",
+      "id": "62b6f39b-760e-4154-be7f-2e330682d595",
+      "locale": "en",
+      "revision": 3,
+      "status": "published",
+      "context": "He joined «Los Hijos del Rey», working alongside Raulín Rosendo and Fernando Villalona. He received the nickname Oro Negro during that period. He subsequently led his own project, whose activity extended to Puerto Rico and the United States."
+    },
+    {
+      "owner": "Domingo Peguero",
+      "owner_id": "3a597a5e-8081-4304-a2cf-b7463e16ee70",
+      "id": "ca862f3d-290e-4ce5-b911-bdf8d3ac301c",
+      "locale": "es",
+      "revision": 3,
+      "status": "published",
+      "context": "Se incorporó a «Los Hijos del Rey», donde coincidió con Raulín Rosendo y Fernando Villalona. Durante esa etapa recibió el apodo Oro Negro. Posteriormente dirigió su propio proyecto, cuya actividad se extendió a Puerto Rico y a los Estados Unidos."
+    },
+    {
+      "owner": "Fernando Villalona",
+      "owner_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+      "id": "029ab794-f307-4ffa-ab6e-ce9a41084422",
+      "locale": "en",
+      "revision": 3,
+      "status": "published",
+      "context": "Los Hijos del Rey"
+    },
+    {
+      "owner": "Fernando Villalona",
+      "owner_id": "bc310977-31a9-41bb-9af2-7d3a0d7fabdd",
+      "id": "4b90cbf9-7a1e-4252-a2b1-2983f5184267",
+      "locale": "es",
+      "revision": 1,
+      "status": "published",
+      "context": "Los Hijos del Rey"
+    },
+    {
+      "owner": "Johnny Pacheco",
+      "owner_id": "e005898c-4fcc-45da-b857-c6775e92fa52",
+      "id": "607bbdab-28dd-4acf-b3a1-4bfc6ba90ada",
+      "locale": "en",
+      "revision": 4,
+      "status": "published",
+      "context": "In August 1976 the Fania All Stars played the Estadio Olímpico in Santo Domingo, with the Dominican band Los Hijos del Rey opening in front of twenty thousand people. The Fania road manager did not want the local group on stage. Tito Kenton, who danced in that band and would later lead Los Kenton, went to find Pacheco. Pacheco walked out before a crowd that had erupted believing Fania was starting, quieted it, and asked that the Dominicans be given their two numbers."
+    },
+    {
+      "owner": "Johnny Pacheco",
+      "owner_id": "e005898c-4fcc-45da-b857-c6775e92fa52",
+      "id": "b9cbd387-d954-4696-b1dd-2d5206447e2a",
+      "locale": "es",
+      "revision": 3,
+      "status": "published",
+      "context": "En agosto de 1976 la Fania All Stars se presentó en el Estadio Olímpico de Santo Domingo, con la orquesta dominicana Los Hijos del Rey abriendo delante de veinte mil personas. El encargado de la Fania no quería que el grupo local subiera. Tito Kenton, que bailaba en esa orquesta y más adelante dirigiría Los Kenton, fue a buscar a Pacheco. Pacheco salió delante de un público que había estallado creyendo que empezaba la Fania, lo calmó, y pidió que dejaran a los dominicanos hacer sus dos temas."
+    },
+    {
+      "owner": "July Mateo \"Rasputín\"",
+      "owner_id": "052b710d-e91f-41c6-94ac-480100f95f5b",
+      "id": "47385195-954b-4d6b-8f92-a764bfe7ea24",
+      "locale": "en",
+      "revision": 6,
+      "status": "published",
+      "context": "Through the late 1970s and into the 1980s Mateo worked as a trumpeter and arranger inside several of the orchestras that defined Dominican merengue in its most competitive period, among them Los Hijos del Rey, Los Kenton, and the orchestra of Wilfrido Vargas. This was the era when merengue was being rebuilt around tighter horn writing and faster tempos for an international audience, and Mateo spent it in exactly the seat where that rebuilding happened — arranging the brass lines rather than singing over them."
+    },
+    {
+      "owner": "July Mateo \"Rasputín\"",
+      "owner_id": "052b710d-e91f-41c6-94ac-480100f95f5b",
+      "id": "97faf784-b953-448e-a4d8-6e9e63c99428",
+      "locale": "es",
+      "revision": 5,
+      "status": "published",
+      "context": "Desde finales de los setenta y a lo largo de los ochenta, Mateo trabajó como trompetista y arreglista en varias de las orquestas que definieron el merengue dominicano en su período más competitivo, entre ellas Los Hijos del Rey, Los Kenton y la orquesta de Wilfrido Vargas. Fue la época en que el merengue se rearmó sobre secciones de metales más ajustadas y tempos más rápidos para un público internacional, y Mateo la vivió justo en el asiento donde ese trabajo ocurría: escribiendo los metales, no cantando encima de ellos."
+    },
+    {
+      "owner": "Kaki Vargas",
+      "owner_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+      "id": "f7e039e3-21e2-4390-a389-4623f1d2ad0d",
+      "locale": "en",
+      "revision": 2,
+      "status": "published",
+      "context": "He sang with Dioni Fernández y El Equipo, where he was the voice on Recomencemos, El Millonario and Pasada la Vida. He sang with Los Hijos del Rey. And he sang in his brother Sergio’s orchestra."
+    },
+    {
+      "owner": "Kaki Vargas",
+      "owner_id": "0a36ec1b-2de1-4890-95f2-57d6b19a1d69",
+      "id": "1650fe1f-06a1-4d80-94bc-548a2d4f4f05",
+      "locale": "es",
+      "revision": 2,
+      "status": "published",
+      "context": "Cantó con Dioni Fernández y El Equipo, donde fue la voz de Recomencemos, El Millonario y Pasada la Vida. Cantó con Los Hijos del Rey. Y cantó en la orquesta de su hermano Sergio."
+    },
+    {
+      "owner": "Los Beduinos",
+      "owner_id": "c2e192d4-f144-4f9a-8db4-b71f0cff391e",
+      "id": "81931ec7-7cb0-4804-a290-c9895ae81954",
+      "locale": "en",
+      "revision": 4,
+      "status": "published",
+      "context": "In mid-1976 younger orchestras began to appear around the band, among them «Los Hijos del Rey», which Jiménez directed at first. Jiménez left the company in 1977."
+    },
+    {
+      "owner": "Los Beduinos",
+      "owner_id": "c2e192d4-f144-4f9a-8db4-b71f0cff391e",
+      "id": "80fd333b-37ff-48a2-a768-faa0fbe253e7",
+      "locale": "es",
+      "revision": 4,
+      "status": "published",
+      "context": "A mediados de 1976 comenzaron a surgir orquestas más jóvenes en torno a la agrupación, entre ellas «Los Hijos del Rey», que Jiménez dirigió al principio. Jiménez salió de la empresa en 1977."
+    },
+    {
+      "owner": "Los Kenton",
+      "owner_id": "dc89c826-c298-48c8-aa05-50e77d85264a",
+      "id": "dfe4aa5b-3125-4142-81b6-21ebb3f93d71",
+      "locale": "en",
+      "revision": 2,
+      "status": "published",
+      "context": "Bonny, Los Hijos del Rey, and the Fania night"
+    },
+    {
+      "owner": "Los Kenton",
+      "owner_id": "dc89c826-c298-48c8-aa05-50e77d85264a",
+      "id": "ec08b08f-4d93-4739-9174-83bd3a50b151",
+      "locale": "es",
+      "revision": 2,
+      "status": "published",
+      "context": "Bonny, Los Hijos del Rey y la noche de la Fania"
+    },
+    {
+      "owner": "Luis \"Terror\" Días",
+      "owner_id": "99537a98-fb19-4487-814d-c60d91c4d10b",
+      "id": "246cf97b-45a9-4379-95be-b25bbb09877d",
+      "locale": "en",
+      "revision": 1,
+      "status": "published",
+      "context": "Mention of Los Hijos del Rey"
+    },
+    {
+      "owner": "Luis \"Terror\" Días",
+      "owner_id": "99537a98-fb19-4487-814d-c60d91c4d10b",
+      "id": "74991673-78a1-4b97-ba4a-9d2fecf13efe",
+      "locale": "es",
+      "revision": 1,
+      "status": "published",
+      "context": "Mention of Los Hijos del Rey"
+    },
+    {
+      "owner": "Pablo Martínez",
+      "owner_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "id": "c458bf37-1619-4427-a1ba-0a60c35f26f3",
+      "locale": "en",
+      "revision": 2,
+      "status": "published",
+      "context": "In 1985 he joined the orchestra of Dionis Fernández, and Dioni Fernández y El Equipo is the outfit he is still most closely identified with — La Mina is from that period. He also sang with Los Hijos del Rey, with Víctor Roque y La Gran Manzana, and with Parada Joven."
+    },
+    {
+      "owner": "Pablo Martínez",
+      "owner_id": "868b96d3-8a3d-4b7d-a6e4-0b2faa3c4c4a",
+      "id": "ae105491-9e5d-4e31-8f81-4b2b103c435f",
+      "locale": "es",
+      "revision": 2,
+      "status": "published",
+      "context": "En 1985 entró a la orquesta de Dionis Fernández, y Dioni Fernández y El Equipo es la agrupación con la que todavía se le identifica más de cerca; La Mina es de esa época. Cantó además con Los Hijos del Rey, con Víctor Roque y La Gran Manzana y con Parada Joven."
+    },
+    {
+      "owner": "Raulín Rosendo",
+      "owner_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+      "id": "9f6a7b27-ef5a-4077-8a09-9b8057572410",
+      "locale": "en",
+      "revision": 4,
+      "status": "published",
+      "context": "Los Hijos del Rey"
+    },
+    {
+      "owner": "Raulín Rosendo",
+      "owner_id": "faf3e4cb-808e-419c-87ff-5126eed85e73",
+      "id": "d445be0c-6eb2-42e3-a378-8b3885ecc973",
+      "locale": "es",
+      "revision": 2,
+      "status": "published",
+      "context": "Los Hijos del Rey"
+    },
+    {
+      "owner": "Rubby Pérez",
+      "owner_id": "cff70c92-8632-4c66-b5a0-81622c8128b0",
+      "id": "64d3ff4f-1d80-4278-8605-d38308c48be0",
+      "locale": "en",
+      "revision": 4,
+      "status": "published",
+      "context": "Los Hijos del Rey"
+    },
+    {
+      "owner": "Rubby Pérez",
+      "owner_id": "cff70c92-8632-4c66-b5a0-81622c8128b0",
+      "id": "8b6f272f-3d01-450c-9483-95cad02bc2af",
+      "locale": "es",
+      "revision": 1,
+      "status": "published",
+      "context": "Los Hijos del Rey"
+    },
+    {
+      "owner": "Sandy Reyes",
+      "owner_id": "49f8aae7-e066-4b01-a836-126082163c52",
+      "id": "940d0b4b-b8f0-4d76-9781-2ba3e0726800",
+      "locale": "en",
+      "revision": 2,
+      "status": "published",
+      "context": "He also sang with Los Hijos del Rey, and later cut a bachata album, Bachata de América, which put a merengue voice in a genre that in those years was only beginning to be treated as respectable."
+    },
+    {
+      "owner": "Sandy Reyes",
+      "owner_id": "49f8aae7-e066-4b01-a836-126082163c52",
+      "id": "944cbe54-35d1-4a05-b3e0-0fe99a6b107d",
+      "locale": "es",
+      "revision": 1,
+      "status": "published",
+      "context": "También cantó con Los Hijos del Rey, y más adelante grabó un disco de bachata, Bachata de América, que puso una voz de merengue en un género que apenas empezaba a ser tratado como respetable."
+    },
+    {
+      "owner": "Sergio Vargas",
+      "owner_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "id": "f2f83b8e-5386-4a86-b7c2-0f71a215dd92",
+      "locale": "en",
+      "revision": 3,
+      "status": "published",
+      "context": "Los Hijos del Rey"
+    },
+    {
+      "owner": "Sergio Vargas",
+      "owner_id": "059a9e99-5d11-433e-97b9-9c35e57908f1",
+      "id": "70d81dea-760c-42d4-9db5-afdabbd1e7e7",
+      "locale": "es",
+      "revision": 2,
+      "status": "published",
+      "context": "Los Hijos del Rey"
+    }
+  ]
+}

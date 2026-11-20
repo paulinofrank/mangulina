@@ -207,7 +207,7 @@
       "releaseYear": "Año de Publicación",
       "duration": "Duración",
       "views": "Vistas",
-      "genres": "Géneros",
+      "genres": "Género",
       "relatedSongs": "Canciones Relacionadas",
       "moreBy": "Más de {artist}",
       "aboutArtist": "Acerca del Artista",
@@ -451,6 +451,8 @@
       "medley": "Popurrí"
     },
     "workRoles": {
+      "musician": "Músico",
+      "backingVocals": "Coros",
       "composer": "Compositor",
       "songwriter": "Compositor de canciones",
       "lyricist": "Letrista",
@@ -1650,6 +1652,11 @@
         "eyebrow": "Enlaces",
         "description": "Aprueba enlaces de escucha oficiales para Spotify, Apple Music, YouTube, Deezer, TIDAL y más."
       },
+      "catalogStatistics": {
+        "title": "Estadísticas del catálogo",
+        "eyebrow": "Catálogo",
+        "description": "Consulta los conteos de artistas por clasificación, género principal, rol y estado de publicación."
+      },
       "editorialIntegrity": {
         "title": "Integridad Editorial",
         "eyebrow": "Salud del Ciclo de Vida",
@@ -1684,7 +1691,18 @@
     "workWorkspace": {
       "title": "Obras",
       "description": "Administra obras musicales, créditos de composición, evidencia y relaciones con grabaciones.",
-      "backToPortal": "Volver al Portal Administrativo"
+      "backToPortal": "Volver al Portal Administrativo",
+      "removeCredit": "Retirar crédito",
+      "removeNamedCredit": "Retirar crédito de {role} de {name}",
+      "unknownContributor": "Colaborador desconocido",
+      "removedCredit": "Retirado — historial conservado",
+      "removeCreditImpact": "Se retirará el crédito de esta obra y de sus apariciones públicas en {count, plural, one {# grabación vinculada} other {# grabaciones vinculadas}}. Se conservarán las fuentes y el historial editorial. El colaborador, la obra y las grabaciones permanecerán.",
+      "removalReason": "Motivo del retiro (obligatorio)",
+      "confirmRemoveCredit": "Confirmar retiro",
+      "cancelRemoval": "Cancelar",
+      "removingCredit": "Retirando…",
+      "creditRemoved": "Crédito de composición retirado. Fuentes e historial conservados.",
+      "removeFailed": "No se pudo retirar el crédito. Inténtalo de nuevo."
     },
     "recordingReview": {
       "title": "Revisión de Identidad de Grabaciones",
@@ -1834,8 +1852,10 @@
           "description": "Actividad de búsqueda en los últimos 7 días"
         },
         "topArtistViews": {
-          "title": "Top Vistas de Artistas - Últimos 7 Días",
-          "description": "Artistas con el mayor número de vistas de perfil. Úsalo para identificar interés emergente, destacar artistas en tendencia y planificar colecciones seleccionadas."
+          "title": "Perfiles de artistas más vistos",
+          "recent": "Últimos 7 días",
+          "lifetime": "Histórico",
+          "description": "Artistas ordenados por el número de vistas registradas en su perfil."
         },
         "topRecordingViews": {
           "title": "Top Vistas de Grabaciones - Últimos 7 Días",
@@ -2167,7 +2187,7 @@
       "sortByTitle": "Ordenar por Título",
       "sortByViews": "Ordenar por vistas",
       "loadingMore": "Cargando canciones…",
-      "showingRange": "Mostrando {start} a {end} de {total}",
+      "showingRange": "{start} a {end} de {total}",
       "sortAria": "Ordenar canciones del archivo",
       "allHeading": "Canciones y Grabaciones Dominicanas",
       "allIntro": "Explora grabaciones dominicanas por año, década, título o popularidad para recorrer canciones y publicaciones musicales del archivo de Mangulina.",

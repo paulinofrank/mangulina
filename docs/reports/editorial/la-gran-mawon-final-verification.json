@@ -1,0 +1,571 @@
+{
+  "artist": {
+    "id": "a7f7bc09-9356-41f0-9509-273b1724c452",
+    "name": "La Gran Mawon",
+    "sort_name": null,
+    "type": "group",
+    "birth_year": null,
+    "death_year": null,
+    "created_at": "2026-10-30T17:17:08.743525+00:00",
+    "views": 0,
+    "wikidata_id": null,
+    "first_name": null,
+    "middle_name": null,
+    "last_name": null,
+    "second_last_name": null,
+    "stage_name": "La Gran Mawon",
+    "date_of_birth": null,
+    "birth_place": "Santo Domingo",
+    "website": null,
+    "youtube": "@LaGranMawon",
+    "facebook": "LaGranMawon",
+    "instagram": "lagranmawon",
+    "aliases": null,
+    "mbid": null,
+    "occupations": [],
+    "instruments": [],
+    "genres": [
+      "folklore",
+      "reggae"
+    ],
+    "disambiguation": "Dominican Afro-Caribbean fusion collective formed in Santo Domingo in 2011",
+    "gender": null,
+    "ended": null,
+    "mb_metadata": {},
+    "updated_at": "2026-10-30T19:30:51.635826+00:00",
+    "province": "Distrito Nacional",
+    "birth_day": null,
+    "birth_month": null,
+    "slug": "la-gran-mawon",
+    "primary_role": "musician",
+    "artist_tags": [
+      "secular"
+    ],
+    "date_of_death": null,
+    "status": "draft",
+    "primary_genre": "fusion",
+    "bio_en": "La Gran Mawon is a Dominican Afro-Caribbean fusion collective formed in Santo Domingo's Colonial Zone in 2011. Its music brings Afro-Dominican rhythms including palo, gagá, congo and sarandunga together with reggae, rock and other contemporary sounds. Black Dominican musical heritage is central to the group's repertoire.\n\n**From jam sessions to a collective**\n\nThe band grew out of nighttime jam sessions in the public squares of the Colonial Zone. Its continuing original members included guitarist and composer Mítiko, singer Zahir and MC Gato. The lineup later expanded, with the group's interviews documenting singers, bassists, drummers and percussionists across different periods. In a 2013 interview, Mítiko explained that «mawon» comes from Haitian Creole and evokes the maroon; the collective made that idea part of its artistic identity.\n\n**Early recordings**\n\nIts first single was «Fuego Petró» in 2013. In August 2016 the group released «La Gran Mawon», a seven-track self-titled record that includes «La Culebra», a song associated with Mítiko's writing. The group performed in New York the following year. Its 2019 singles included «Melancolia Tropical» and «Candela Pa Lo Pie», the latter presented as a blend of gagá and jazz.\n\n**«Radio Katharsis» and live work**\n\nFollowing «Gana (sillita de guano)» in 2020 and «Morena De Lu» in 2021, La Gran Mawon released the ten-track album «Radio Katharsis» on September 29, 2023. The record includes «Te Doy Seguro» with Vakeró. In February 2024, the group joined Xiomara Fortuna and Yasser Tejeda for a Rutgers University event on Afro-Dominican music. It also performed at Santo Domingo's «Isle of Light» festival that year.\n\n**Legacy**\n\nFrom its first jam sessions through recorded albums and performances abroad, La Gran Mawon has treated Afro-Dominican rhythms as living music. Its changing lineup and recordings document a collective approach that connects Caribbean traditions with Santo Domingo's contemporary alternative scene.",
+    "bio_es": "La Gran Mawon es un colectivo musical dominicano de fusión afrocaribeña surgido en 2011 en la Zona Colonial de Santo Domingo. Su música combina ritmos afrodominicanos como el palo, el gagá, el congo y la sarandunga con reggae, rock y otros sonidos contemporáneos. El proyecto sitúa la herencia musical negra del país en el centro de su repertorio.\n\n**De las plazas a la agrupación**\n\nEl grupo nació de sesiones nocturnas de improvisación en las plazas de la Zona Colonial. Entre sus integrantes originales más constantes estaban el guitarrista y compositor Mítiko, el cantante Zahir y el MC Gato. La formación se amplió con el tiempo: sus entrevistas documentan la participación de voces, bajistas, bateristas y percusionistas en distintas etapas. En una entrevista de 2013, Mítiko explicó que «mawon» procede del criollo haitiano y alude a lo cimarrón; el colectivo adoptó esa idea como parte de su identidad artística.\n\n**Primeras grabaciones**\n\n«Fuego Petró», de 2013, fue su primer sencillo. En agosto de 2016 publicó «La Gran Mawon», una producción homónima de siete temas que incluye «La Culebra», canción asociada a la escritura de Mítiko. Al año siguiente la agrupación se presentó en Nueva York. En 2019 lanzó los sencillos «Melancolia Tropical» y «Candela Pa Lo Pie»; este último fue presentado como una mezcla de gagá y jazz.\n\n**«Radio Katharsis» y escenarios**\n\nDespués de «Gana (sillita de guano)» (2020) y «Morena De Lu» (2021), publicó «Radio Katharsis» el 29 de septiembre de 2023. El álbum reúne diez canciones, entre ellas «Te Doy Seguro», con Vakeró. En febrero de 2024 La Gran Mawon participó en un encuentro sobre música afrodominicana en la Universidad Rutgers junto a Xiomara Fortuna y Yasser Tejeda. También actuó ese año en el festival «Isle of Light» en Santo Domingo.\n\n**Legado**\n\nDesde sus primeras improvisaciones hasta sus álbumes y presentaciones internacionales, La Gran Mawon ha trabajado los ritmos afrodominicanos como música viva. Su formación cambiante y sus grabaciones documentan una propuesta colectiva que conecta tradiciones del Caribe con la escena alternativa contemporánea de Santo Domingo.",
+    "has_image": false,
+    "image_updated_at": null,
+    "formation_year": 2011,
+    "dissolution_year": null,
+    "spotify": "6YLVFLxxNTruuMRMRCEN5Y"
+  },
+  "documents": [
+    {
+      "id": "0e00fcdd-27d9-40b8-a76e-544a80a0967f",
+      "document_type": "artist_biography",
+      "locale": "en",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La Gran Mawon is a Dominican Afro-Caribbean fusion collective formed in Santo Domingo's Colonial Zone in 2011. Its music brings Afro-Dominican rhythms including palo, gagá, congo and sarandunga together with reggae, rock and other contemporary sounds. Black Dominican musical heritage is central to the group's repertoire.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "From jam sessions to a collective",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "The band grew out of nighttime jam sessions in the public squares of the Colonial Zone. Its continuing original members included guitarist and composer ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "c8d4ecd4-eb2c-4160-91d4-3aac6db44c96"
+                }
+              },
+              {
+                "text": ", singer Zahir and MC Gato. The lineup later expanded, with the group's interviews documenting singers, bassists, drummers and percussionists across different periods. In a 2013 interview, ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "b835246b-dc40-42c9-ad34-e3e2fe652ce8"
+                }
+              },
+              {
+                "text": " explained that «mawon» comes from Haitian Creole and evokes the maroon; the collective made that idea part of its artistic identity.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Early recordings",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Its first single was «Fuego Petró» in 2013. In August 2016 the group released «La Gran Mawon», a seven-track self-titled record that includes «La Culebra», a song associated with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "eae6e215-4f41-4d9d-8ecc-ed7b4c230b28"
+                }
+              },
+              {
+                "text": "'s writing. The group performed in New York the following year. Its 2019 singles included «Melancolia Tropical» and «Candela Pa Lo Pie», the latter presented as a blend of gagá and jazz.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Radio Katharsis» and live work",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Following «Gana (sillita de guano)» in 2020 and «Morena De Lu» in 2021, La Gran Mawon released the ten-track album «Radio Katharsis» on September 29, 2023. The record includes «Te Doy Seguro» with ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ec8ba439-3772-49ff-a218-05f5dc615763",
+                  "displayText": "Vakeró",
+                  "occurrenceId": "c8fd2357-341a-4980-8a0e-820646d66fd5"
+                }
+              },
+              {
+                "text": ". In February 2024, the group joined ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8e29188a-215b-4c6c-b34a-45b381765e46",
+                  "displayText": "Xiomara Fortuna",
+                  "occurrenceId": "b28f670b-5922-4d77-be2c-f4f930ff47cb"
+                }
+              },
+              {
+                "text": " and ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a3a0551d-7f39-42f3-b30b-05a9d3c83ab2",
+                  "displayText": "Yasser Tejeda",
+                  "occurrenceId": "62dc3742-dce9-4168-9619-97fb1ed0e56f"
+                }
+              },
+              {
+                "text": " for a Rutgers University event on Afro-Dominican music. It also performed at Santo Domingo's «Isle of Light» festival that year.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legacy",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "From its first jam sessions through recorded albums and performances abroad, La Gran Mawon has treated Afro-Dominican rhythms as living music. Its changing lineup and recordings document a collective approach that connects Caribbean traditions with Santo Domingo's contemporary alternative scene.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "a7f7bc09-9356-41f0-9509-273b1724c452",
+      "created_at": "2026-10-30T19:27:26.661144+00:00",
+      "updated_at": "2026-10-30T19:29:18.676285+00:00",
+      "revision": 2
+    },
+    {
+      "id": "6239c7bb-717a-46f0-a982-6f6520b03ff3",
+      "document_type": "artist_biography",
+      "locale": "es",
+      "schema_version": 1,
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "La Gran Mawon es un colectivo musical dominicano de fusión afrocaribeña surgido en 2011 en la Zona Colonial de Santo Domingo. Su música combina ritmos afrodominicanos como el palo, el gagá, el congo y la sarandunga con reggae, rock y otros sonidos contemporáneos. El proyecto sitúa la herencia musical negra del país en el centro de su repertorio.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "De las plazas a la agrupación",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "El grupo nació de sesiones nocturnas de improvisación en las plazas de la Zona Colonial. Entre sus integrantes originales más constantes estaban el guitarrista y compositor ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "f535e1ac-a733-4a38-9929-b15f33e69891"
+                }
+              },
+              {
+                "text": ", el cantante Zahir y el MC Gato. La formación se amplió con el tiempo: sus entrevistas documentan la participación de voces, bajistas, bateristas y percusionistas en distintas etapas. En una entrevista de 2013, ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "c152fdd6-e97f-4bdb-92f5-cd9c7f346460"
+                }
+              },
+              {
+                "text": " explicó que «mawon» procede del criollo haitiano y alude a lo cimarrón; el colectivo adoptó esa idea como parte de su identidad artística.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Primeras grabaciones",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Fuego Petró», de 2013, fue su primer sencillo. En agosto de 2016 publicó «La Gran Mawon», una producción homónima de siete temas que incluye «La Culebra», canción asociada a la escritura de ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+                  "displayText": "Mítiko",
+                  "occurrenceId": "eaea1b2a-7517-47f5-a6b0-2ff641e3d48e"
+                }
+              },
+              {
+                "text": ". Al año siguiente la agrupación se presentó en Nueva York. En 2019 lanzó los sencillos «Melancolia Tropical» y «Candela Pa Lo Pie»; este último fue presentado como una mezcla de gagá y jazz.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "«Radio Katharsis» y escenarios",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Después de «Gana (sillita de guano)» (2020) y «Morena De Lu» (2021), publicó «Radio Katharsis» el 29 de septiembre de 2023. El álbum reúne diez canciones, entre ellas «Te Doy Seguro», con ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "ec8ba439-3772-49ff-a218-05f5dc615763",
+                  "displayText": "Vakeró",
+                  "occurrenceId": "a665c93f-8fb5-4fe8-9eca-fb6b1e8a9600"
+                }
+              },
+              {
+                "text": ". En febrero de 2024 La Gran Mawon participó en un encuentro sobre música afrodominicana en la Universidad Rutgers junto a ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "8e29188a-215b-4c6c-b34a-45b381765e46",
+                  "displayText": "Xiomara Fortuna",
+                  "occurrenceId": "b4053b5a-040d-4e89-8169-d57e47460275"
+                }
+              },
+              {
+                "text": " y ",
+                "type": "text"
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "a3a0551d-7f39-42f3-b30b-05a9d3c83ab2",
+                  "displayText": "Yasser Tejeda",
+                  "occurrenceId": "70ef4e2f-67d3-4c8b-825a-6d6069ee0472"
+                }
+              },
+              {
+                "text": ". También actuó ese año en el festival «Isle of Light» en Santo Domingo.",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Legado",
+                "type": "text",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "text": "Desde sus primeras improvisaciones hasta sus álbumes y presentaciones internacionales, La Gran Mawon ha trabajado los ritmos afrodominicanos como música viva. Su formación cambiante y sus grabaciones documentan una propuesta colectiva que conecta tradiciones del Caribe con la escena alternativa contemporánea de Santo Domingo.",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      },
+      "status": "published",
+      "owner_artist_id": "a7f7bc09-9356-41f0-9509-273b1724c452",
+      "created_at": "2026-10-30T19:27:26.485762+00:00",
+      "updated_at": "2026-10-30T19:29:18.549668+00:00",
+      "revision": 2
+    }
+  ],
+  "relations": [
+    {
+      "id": "b0f08412-2823-4e88-814f-a4d2e9adf637",
+      "editorial_document_id": "6239c7bb-717a-46f0-a982-6f6520b03ff3",
+      "occurrence_id": "f535e1ac-a733-4a38-9929-b15f33e69891",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-30T19:29:18.549668+00:00",
+      "updated_at": "2026-10-30T19:29:18.549668+00:00"
+    },
+    {
+      "id": "fc44858e-d4f8-46a3-bd81-bd670c5bb269",
+      "editorial_document_id": "6239c7bb-717a-46f0-a982-6f6520b03ff3",
+      "occurrence_id": "c152fdd6-e97f-4bdb-92f5-cd9c7f346460",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-30T19:29:18.549668+00:00",
+      "updated_at": "2026-10-30T19:29:18.549668+00:00"
+    },
+    {
+      "id": "a41e5a6a-da4e-4225-8594-0319787c0a5d",
+      "editorial_document_id": "6239c7bb-717a-46f0-a982-6f6520b03ff3",
+      "occurrence_id": "eaea1b2a-7517-47f5-a6b0-2ff641e3d48e",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-30T19:29:18.549668+00:00",
+      "updated_at": "2026-10-30T19:29:18.549668+00:00"
+    },
+    {
+      "id": "4143f3d4-c70d-44d6-b37b-74c1d1c3ecc6",
+      "editorial_document_id": "6239c7bb-717a-46f0-a982-6f6520b03ff3",
+      "occurrence_id": "a665c93f-8fb5-4fe8-9eca-fb6b1e8a9600",
+      "entity_type": "artist",
+      "target_artist_id": "ec8ba439-3772-49ff-a218-05f5dc615763",
+      "created_at": "2026-10-30T19:29:18.549668+00:00",
+      "updated_at": "2026-10-30T19:29:18.549668+00:00"
+    },
+    {
+      "id": "54a6f4af-0836-4f95-be7f-bca9fa570ad2",
+      "editorial_document_id": "6239c7bb-717a-46f0-a982-6f6520b03ff3",
+      "occurrence_id": "b4053b5a-040d-4e89-8169-d57e47460275",
+      "entity_type": "artist",
+      "target_artist_id": "8e29188a-215b-4c6c-b34a-45b381765e46",
+      "created_at": "2026-10-30T19:29:18.549668+00:00",
+      "updated_at": "2026-10-30T19:29:18.549668+00:00"
+    },
+    {
+      "id": "3e052f0d-8ca1-46a1-b8fe-63ba85f59863",
+      "editorial_document_id": "6239c7bb-717a-46f0-a982-6f6520b03ff3",
+      "occurrence_id": "70ef4e2f-67d3-4c8b-825a-6d6069ee0472",
+      "entity_type": "artist",
+      "target_artist_id": "a3a0551d-7f39-42f3-b30b-05a9d3c83ab2",
+      "created_at": "2026-10-30T19:29:18.549668+00:00",
+      "updated_at": "2026-10-30T19:29:18.549668+00:00"
+    },
+    {
+      "id": "bd0ba4ec-ff67-4fb4-8d2e-21fb8fb01c61",
+      "editorial_document_id": "0e00fcdd-27d9-40b8-a76e-544a80a0967f",
+      "occurrence_id": "c8d4ecd4-eb2c-4160-91d4-3aac6db44c96",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-30T19:29:18.676285+00:00",
+      "updated_at": "2026-10-30T19:29:18.676285+00:00"
+    },
+    {
+      "id": "c376363e-9b7d-4575-8089-c1689f840753",
+      "editorial_document_id": "0e00fcdd-27d9-40b8-a76e-544a80a0967f",
+      "occurrence_id": "b835246b-dc40-42c9-ad34-e3e2fe652ce8",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-30T19:29:18.676285+00:00",
+      "updated_at": "2026-10-30T19:29:18.676285+00:00"
+    },
+    {
+      "id": "80051da9-06a2-4f3d-a05a-353b6ed14304",
+      "editorial_document_id": "0e00fcdd-27d9-40b8-a76e-544a80a0967f",
+      "occurrence_id": "eae6e215-4f41-4d9d-8ecc-ed7b4c230b28",
+      "entity_type": "artist",
+      "target_artist_id": "648cd724-dccf-4174-8d13-18b9cfd0ce1e",
+      "created_at": "2026-10-30T19:29:18.676285+00:00",
+      "updated_at": "2026-10-30T19:29:18.676285+00:00"
+    },
+    {
+      "id": "10b7f508-eba8-4217-a65c-a0001f3df161",
+      "editorial_document_id": "0e00fcdd-27d9-40b8-a76e-544a80a0967f",
+      "occurrence_id": "c8fd2357-341a-4980-8a0e-820646d66fd5",
+      "entity_type": "artist",
+      "target_artist_id": "ec8ba439-3772-49ff-a218-05f5dc615763",
+      "created_at": "2026-10-30T19:29:18.676285+00:00",
+      "updated_at": "2026-10-30T19:29:18.676285+00:00"
+    },
+    {
+      "id": "56c48429-b7bf-4fa9-a94c-c7ee9c8c0900",
+      "editorial_document_id": "0e00fcdd-27d9-40b8-a76e-544a80a0967f",
+      "occurrence_id": "b28f670b-5922-4d77-be2c-f4f930ff47cb",
+      "entity_type": "artist",
+      "target_artist_id": "8e29188a-215b-4c6c-b34a-45b381765e46",
+      "created_at": "2026-10-30T19:29:18.676285+00:00",
+      "updated_at": "2026-10-30T19:29:18.676285+00:00"
+    },
+    {
+      "id": "a54c6217-10ed-454c-8354-b8cbb6aa2867",
+      "editorial_document_id": "0e00fcdd-27d9-40b8-a76e-544a80a0967f",
+      "occurrence_id": "62dc3742-dce9-4168-9619-97fb1ed0e56f",
+      "entity_type": "artist",
+      "target_artist_id": "a3a0551d-7f39-42f3-b30b-05a9d3c83ab2",
+      "created_at": "2026-10-30T19:29:18.676285+00:00",
+      "updated_at": "2026-10-30T19:29:18.676285+00:00"
+    }
+  ],
+  "integrity": {
+    "generatedAt": "2026-10-30T19:31:31.333Z",
+    "counts": {
+      "documents": 2,
+      "relations": 12,
+      "blocking": 0,
+      "warning": 0,
+      "informational": 2
+    },
+    "findings": [
+      {
+        "documentId": "0e00fcdd-27d9-40b8-a76e-544a80a0967f",
+        "ownerArtistId": "a7f7bc09-9356-41f0-9509-273b1724c452",
+        "locale": "en",
+        "code": "legacy_compatibility_mismatch",
+        "severity": "informational"
+      },
+      {
+        "documentId": "6239c7bb-717a-46f0-a982-6f6520b03ff3",
+        "ownerArtistId": "a7f7bc09-9356-41f0-9509-273b1724c452",
+        "locale": "es",
+        "code": "legacy_compatibility_mismatch",
+        "severity": "informational"
+      }
+    ]
+  }
+}

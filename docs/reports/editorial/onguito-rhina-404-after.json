@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-24T01:52:16.331Z",
+  "results": [
+    {
+      "slug": "onguito-wa",
+      "publicRow": {
+        "id": "df5ef32e-ea15-4c22-a3c6-b9a1276b98ad",
+        "name": "Onguito Wa",
+        "slug": "onguito-wa",
+        "status": "published"
+      },
+      "rowError": null,
+      "rpcArtist": {
+        "id": "df5ef32e-ea15-4c22-a3c6-b9a1276b98ad",
+        "name": "Onguito Wa",
+        "slug": "onguito-wa"
+      },
+      "rpcError": null,
+      "url": "https://mangulina.do/es/artists/onguito-wa",
+      "httpStatus": 200,
+      "headers": {
+        "age": "0",
+        "x-vercel-cache": "MISS",
+        "x-nextjs-cache": null,
+        "x-nextjs-prerender": "1",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "title": "Onguito Wa - Biografía, canciones y discografía | Mangulina",
+      "hasNotFound": false
+    },
+    {
+      "slug": "rhina-ramirez",
+      "publicRow": {
+        "id": "307722e8-5902-41b4-a9b7-ae67d99c87c6",
+        "name": "Rhina Ramírez",
+        "slug": "rhina-ramirez",
+        "status": "published"
+      },
+      "rowError": null,
+      "rpcArtist": {
+        "id": "307722e8-5902-41b4-a9b7-ae67d99c87c6",
+        "name": "Rhina Ramírez",
+        "slug": "rhina-ramirez"
+      },
+      "rpcError": null,
+      "url": "https://mangulina.do/es/artists/rhina-ramirez",
+      "httpStatus": 200,
+      "headers": {
+        "age": "0",
+        "x-vercel-cache": "MISS",
+        "x-nextjs-cache": null,
+        "x-nextjs-prerender": "1",
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
+      "title": "Rhina Ramírez - Biografía, canciones y discografía | Mangulina",
+      "hasNotFound": false
+    }
+  ]
+}

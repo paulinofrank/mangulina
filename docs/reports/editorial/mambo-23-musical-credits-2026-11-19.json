@@ -1,0 +1,92 @@
+{
+  "batch": "mambo-23-musical-credits-2026-11-19",
+  "authorized_action": "Insert documented musical credits into existing EP recording, skip existing semantic credits",
+  "recording_id": "aa63e0e1-4a80-4788-88f5-b21d8aa0e470",
+  "work_id": "52a2a9fd-5902-41d0-b43f-c998bbf12b5f",
+  "evidence": [
+    "https://www.youtube.com/watch?v=K3S96fUGrEY",
+    "https://www.latingrammy.com/es/awards/categories/record-of-the-year/2024/"
+  ],
+  "existing": "Juan Luis Guerra lead performer; composer and lyricist on linked Work",
+  "proposed": [
+    {
+      "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+      "role": "arranger",
+      "detail": null,
+      "order": 2
+    },
+    {
+      "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+      "role": "producer",
+      "detail": null,
+      "order": 3
+    },
+    {
+      "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+      "role": "backing_vocalist",
+      "detail": null,
+      "order": 4
+    },
+    {
+      "artist_id": "10034596-47cb-46ba-9e80-9ea319a2c0df",
+      "role": "instrumentalist",
+      "detail": "Guitarra",
+      "order": 5
+    },
+    {
+      "artist_id": "6b6d24d4-c6fe-42d6-8937-2d2f9f6c9292",
+      "role": "producer",
+      "detail": null,
+      "order": 6
+    },
+    {
+      "artist_id": "6b6d24d4-c6fe-42d6-8937-2d2f9f6c9292",
+      "role": "backing_vocalist",
+      "detail": null,
+      "order": 7
+    },
+    {
+      "artist_id": "6b6d24d4-c6fe-42d6-8937-2d2f9f6c9292",
+      "role": "instrumentalist",
+      "detail": "Piano",
+      "order": 8
+    },
+    {
+      "artist_id": "25440b12-5934-472d-8a38-f425510ca379",
+      "role": "backing_vocalist",
+      "detail": null,
+      "order": 9
+    },
+    {
+      "artist_id": "58fef0f7-b2a4-42bb-ac8c-462dd66609e4",
+      "role": "instrumentalist",
+      "detail": "Saxofón tenor",
+      "order": 10
+    },
+    {
+      "artist_id": "5403936e-bc14-4959-8b10-7825fd94d027",
+      "role": "instrumentalist",
+      "detail": "Trombón",
+      "order": 11
+    }
+  ],
+  "pending": [
+    "Juan de la Cruz (Chocolate): tambora y bongó, identidad canónica pendiente",
+    "Luis Mojica: congas",
+    "Isidro Bobadilla: atabal y percusiones",
+    "Rafael Carrasco: güira",
+    "Ezequiel Francisco: batería",
+    "Jesús Alonso: trompeta",
+    "Ernesto Núñez: trompeta",
+    "Nayade Macea: saxofón alto",
+    "Willy Cruz: corno francés",
+    "Jeremías King: bajo",
+    "Juan Rizek: coros"
+  ],
+  "notes": [
+    "Patricio Bonilla currently draft; public feed excludes him",
+    "Generic Guitarra preserved as credit_detail; source does not specify electric or acoustic",
+    "Second recording has inconsistent duration; untouched",
+    "Engineering and beat programming excluded by editor"
+  ]
+}

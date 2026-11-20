@@ -1,0 +1,340 @@
+{
+  "scope": {
+    "artist": "La Barbie del Acordeón",
+    "artist_id": "9850f9ca-a099-4339-bfa5-cd32cee7d99b",
+    "action": "create draft artist and publish ES/EN biographies",
+    "discography": "not authorized"
+  },
+  "fields": {
+    "name": "La Barbie del Acordeón",
+    "slug": "la-barbie-del-acordeon",
+    "status": "draft",
+    "type": "solo_artist",
+    "stage_name": "La Barbie del Acordeón",
+    "first_name": "Danibel",
+    "last_name": "Bretón",
+    "second_last_name": "Bretón",
+    "date_of_birth": null,
+    "birth_year": 1997,
+    "birth_place": "San Ignacio de Sabaneta",
+    "province": "Santiago Rodríguez",
+    "gender": "female",
+    "primary_role": "musician",
+    "occupations": [
+      "accordionist",
+      "singer",
+      "songwriter"
+    ],
+    "instruments": [
+      "accordion",
+      "voice"
+    ],
+    "primary_genre": "merengue-perico-ripiao",
+    "genres": [],
+    "artist_tags": [
+      "secular"
+    ],
+    "facebook": "labarbiedelacordeonoficial",
+    "instagram": "labarbiedelacordeon",
+    "youtube": "@LaBarbieDelAcordeón",
+    "spotify": "3ZXwKszT5ol4HFIG25z1FM",
+    "website": null
+  },
+  "sources": [
+    {
+      "fact": "legal name",
+      "url": "https://api.rai.uapa.edu.do/server/api/core/bitstreams/6569a314-48f4-47b5-8b0d-447ac1b68c03/content",
+      "detail": "UAPA graduation program, page 12, entry 93"
+    },
+    {
+      "fact": "birthplace, birth year, training, first performance",
+      "url": "https://salsagoogle.com/danibel-breton-the-barbie-of-the-accordion-in-the-dominican-republic/"
+    },
+    {
+      "fact": "early career and debut song",
+      "url": "https://eldia.com.do/la-barbie-del-acordeon-proyecto-de-musica-tipica/"
+    },
+    {
+      "fact": "education and career interview",
+      "url": "https://bellerdigital.net/archivos/74728"
+    },
+    {
+      "fact": "collaboration with Fefita",
+      "url": "https://www.diariolibre.com/revista/musica/2022/02/21/fefita-la-grande-y-la-barbie-del-acordeon-lanza-tema/1663549"
+    },
+    {
+      "fact": "2023 US performances",
+      "url": "https://masvip.com.do/2023/12/30/la-barbie-del-acordeon-cierra-el-2023-por-todo-lo-alto-con-mas-de-200-presentaciones/"
+    },
+    {
+      "fact": "official profiles",
+      "url": "https://www.facebook.com/labarbiedelacordeonoficial"
+    },
+    {
+      "fact": "official profiles",
+      "url": "https://www.instagram.com/labarbiedelacordeon/"
+    },
+    {
+      "fact": "official channel",
+      "url": "https://www.youtube.com/@LaBarbieDelAcorde%C3%B3n"
+    },
+    {
+      "fact": "Spotify identity verified via track artist link",
+      "url": "https://open.spotify.com/artist/3ZXwKszT5ol4HFIG25z1FM"
+    },
+    {
+      "fact": "self birthday greeting dated November 12, 2022",
+      "url": "https://www.facebook.com/labarbiedelacordeonoficial/posts/pfbid0Gs61b1ECJpcu3Pv1r8uEDAD3hPJNuPSgtTqBEQyCY3X1seBCYGtzfrK65UGnP1gQl"
+    }
+  ],
+  "limitations": [
+    "One biographical source states 13 Nov 1997, while her own Facebook birthday greeting appears dated 12 Nov 2022. Exact day unresolved; date_of_birth remains null; 1997 supported by repeated age reporting.",
+    "No rights-cleared portrait supplied; image left empty.",
+    "No TikTok or website independently verified."
+  ],
+  "backward_reference_audit": "No structured biography mentions La Barbie del Acordeón or Danibel Bretón in current database.",
+  "biographies": {
+    "es": {
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La Barbie del Acordeón, nombre artístico de Danibel Bretón Bretón, es una acordeonista, cantante y compositora dominicana de merengue típico. Nació en 1997 en San Ignacio de Sabaneta, provincia Santiago Rodríguez. Desde 2018 desarrolla un proyecto propio como intérprete del acordeón y vocalista."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Formación y primeros escenarios",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su familia procede de La Breña, en Santiago Rodríguez, y se trasladó a Santo Domingo Este cuando ella era pequeña. Empezó a interesarse por el acordeón al observar las clases que Reyes Pilarte impartía a su padre, David Bretón. Comenzó a tocar alrededor de los trece años. Una de sus primeras presentaciones públicas fue como invitada de Bartolo Alvarado, El Ciego de Nagua, en Santiago Rodríguez."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Proyecto musical y grabaciones",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2018 presentó su proyecto de merengue típico y lanzó «Los hombres de ahora», una composición suya con arreglo de David Landestoy. A sus primeras interpretaciones se sumaron «Llegó la Barbie» y «Se murió Martín». Su catálogo digital incluye el álbum «Si te enamoras de mí» (2020), el concierto grabado «Concierto (Live)» (2020) y las colecciones «Merengues, Vol. 1» (2022) y «Merengues, Vol. 2» (2023)."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Colaboraciones y estudios",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "En 2022 grabó «El Consejo» junto a "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+                  "displayText": "Fefita la Grande",
+                  "occurrenceId": "b1fd5c24-ed73-461b-b212-fdebab30e71b"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", una colaboración entre dos generaciones del merengue típico. Ese año obtuvo el título de Derecho en la Universidad Abierta para Adultos. En 2023 actuó en escenarios de Estados Unidos, entre ellos el Lincoln Center de Nueva York."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legado",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Su trayectoria une la interpretación instrumental y vocal del merengue típico con la composición de repertorio propio. Su trabajo en grabaciones y escenarios ha dado visibilidad a una nueva generación de acordeonistas dominicanas."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "La Barbie del Acordeón, nombre artístico de Danibel Bretón Bretón, es una acordeonista, cantante y compositora dominicana de merengue típico. Nació en 1997 en San Ignacio de Sabaneta, provincia Santiago Rodríguez. Desde 2018 desarrolla un proyecto propio como intérprete del acordeón y vocalista.\n\n**Formación y primeros escenarios**\n\nSu familia procede de La Breña, en Santiago Rodríguez, y se trasladó a Santo Domingo Este cuando ella era pequeña. Empezó a interesarse por el acordeón al observar las clases que Reyes Pilarte impartía a su padre, David Bretón. Comenzó a tocar alrededor de los trece años. Una de sus primeras presentaciones públicas fue como invitada de Bartolo Alvarado, El Ciego de Nagua, en Santiago Rodríguez.\n\n**Proyecto musical y grabaciones**\n\nEn 2018 presentó su proyecto de merengue típico y lanzó «Los hombres de ahora», una composición suya con arreglo de David Landestoy. A sus primeras interpretaciones se sumaron «Llegó la Barbie» y «Se murió Martín». Su catálogo digital incluye el álbum «Si te enamoras de mí» (2020), el concierto grabado «Concierto (Live)» (2020) y las colecciones «Merengues, Vol. 1» (2022) y «Merengues, Vol. 2» (2023).\n\n**Colaboraciones y estudios**\n\nEn 2022 grabó «El Consejo» junto a Fefita la Grande, una colaboración entre dos generaciones del merengue típico. Ese año obtuvo el título de Derecho en la Universidad Abierta para Adultos. En 2023 actuó en escenarios de Estados Unidos, entre ellos el Lincoln Center de Nueva York.\n\n**Legado**\n\nSu trayectoria une la interpretación instrumental y vocal del merengue típico con la composición de repertorio propio. Su trabajo en grabaciones y escenarios ha dado visibilidad a una nueva generación de acordeonistas dominicanas."
+    },
+    "en": {
+      "document": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "La Barbie del Acordeón, the stage name of Danibel Bretón Bretón, is a Dominican accordionist, singer and songwriter in merengue típico. She was born in 1997 in San Ignacio de Sabaneta, Santiago Rodríguez province. Since 2018 she has led her own project as both accordion player and vocalist."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Training and first performances",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Her family came from La Breña in Santiago Rodríguez and moved to Santo Domingo Este when she was young. She became interested in the accordion while watching Reyes Pilarte teach her father, David Bretón. She began playing at about thirteen. One of her first public appearances was as a guest of Bartolo Alvarado, known as El Ciego de Nagua, in Santiago Rodríguez."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Her own project and recordings",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "She introduced her merengue típico project in 2018 and released «Los hombres de ahora», which she wrote and David Landestoy arranged. Early songs also included «Llegó la Barbie» and «Se murió Martín». Her digital catalogue includes «Si te enamoras de mí» (2020), the recorded concert «Concierto (Live)» (2020), and the collections «Merengues, Vol. 1» (2022) and «Merengues, Vol. 2» (2023)."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Collaborations and education",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "In 2022 she recorded «El Consejo» with "
+              },
+              {
+                "type": "artistReference",
+                "attrs": {
+                  "artistId": "9333da06-ad03-44eb-9b81-c21d0ccdd0ea",
+                  "displayText": "Fefita la Grande",
+                  "occurrenceId": "deff41fb-3efb-411d-856d-6c5319c138c4"
+                }
+              },
+              {
+                "type": "text",
+                "text": ", bringing together two generations of merengue típico musicians. That year she earned a law degree from the Universidad Abierta para Adultos. In 2023 she performed in the United States, including at New York's Lincoln Center."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Legacy",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Her career brings together instrumental and vocal performance of merengue típico with original songwriting. Through recordings and live performances, she has helped bring attention to a new generation of Dominican women accordionists."
+              }
+            ]
+          }
+        ]
+      },
+      "mirror": "La Barbie del Acordeón, the stage name of Danibel Bretón Bretón, is a Dominican accordionist, singer and songwriter in merengue típico. She was born in 1997 in San Ignacio de Sabaneta, Santiago Rodríguez province. Since 2018 she has led her own project as both accordion player and vocalist.\n\n**Training and first performances**\n\nHer family came from La Breña in Santiago Rodríguez and moved to Santo Domingo Este when she was young. She became interested in the accordion while watching Reyes Pilarte teach her father, David Bretón. She began playing at about thirteen. One of her first public appearances was as a guest of Bartolo Alvarado, known as El Ciego de Nagua, in Santiago Rodríguez.\n\n**Her own project and recordings**\n\nShe introduced her merengue típico project in 2018 and released «Los hombres de ahora», which she wrote and David Landestoy arranged. Early songs also included «Llegó la Barbie» and «Se murió Martín». Her digital catalogue includes «Si te enamoras de mí» (2020), the recorded concert «Concierto (Live)» (2020), and the collections «Merengues, Vol. 1» (2022) and «Merengues, Vol. 2» (2023).\n\n**Collaborations and education**\n\nIn 2022 she recorded «El Consejo» with Fefita la Grande, bringing together two generations of merengue típico musicians. That year she earned a law degree from the Universidad Abierta para Adultos. In 2023 she performed in the United States, including at New York's Lincoln Center.\n\n**Legacy**\n\nHer career brings together instrumental and vocal performance of merengue típico with original songwriting. Through recordings and live performances, she has helped bring attention to a new generation of Dominican women accordionists."
+    }
+  }
+}

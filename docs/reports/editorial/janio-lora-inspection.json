@@ -1,0 +1,67 @@
+{
+  "duplicates": [],
+  "targets": [
+    {
+      "id": "a0c641ff-4a9a-4171-a765-7bea47e623b6",
+      "name": "Alex Ferreira",
+      "slug": "alex-ferreira",
+      "status": "published"
+    },
+    {
+      "id": "f07fcc6b-a888-4e97-ac50-6ce6ea37a714",
+      "name": "El Prodigio",
+      "slug": "el-prodigio",
+      "status": "published"
+    },
+    {
+      "id": "3f8bafec-e5ee-415d-8405-9551cceeeb9b",
+      "name": "Johnny Ventura",
+      "slug": "johnny-ventura",
+      "status": "published"
+    },
+    {
+      "id": "f7ba4e8d-a761-45f2-8ead-2a5d1b405a5a",
+      "name": "mediopicky",
+      "slug": "mediopicky",
+      "status": "published"
+    },
+    {
+      "id": "ba42e200-51b0-437b-99ac-1daf39ade337",
+      "name": "Rafael Solano",
+      "slug": "rafael-solano",
+      "status": "published"
+    },
+    {
+      "id": "ec8ba439-3772-49ff-a218-05f5dc615763",
+      "name": "Vakeró",
+      "slug": "vakero",
+      "status": "published"
+    },
+    {
+      "id": "4b4bf9da-fe4a-4fc6-be40-1b1b5413dfb3",
+      "name": "Víctor Víctor",
+      "slug": "victor-victor",
+      "status": "published"
+    },
+    {
+      "id": "8e29188a-215b-4c6c-b34a-45b381765e46",
+      "name": "Xiomara Fortuna",
+      "slug": "xiomara-fortuna",
+      "status": "published"
+    }
+  ],
+  "genres": [
+    {
+      "slug": "merengue",
+      "name": "Merengue"
+    },
+    {
+      "slug": "fusion",
+      "name": "Fusion"
+    },
+    {
+      "slug": "rock",
+      "name": "Rock"
+    }
+  ]
+}
